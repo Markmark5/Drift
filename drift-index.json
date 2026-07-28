@@ -14,6 +14,20 @@
       "spec_version": "v3.13",
       "next_test": "FY26 trading update ~Jan-27",
       "url": "STAF.html"
+    },
+    {
+      "ticker": "FDM",
+      "company": "FDM Group (Holdings) plc",
+      "direction": "watch",
+      "headline": "Consultant count flat since October 2025 — the metric that led the collapse has stopped falling; profit hasn't turned yet.",
+      "trigger": "1-of-3",
+      "alert": false,
+      "rns_type": "AGM Statement",
+      "rns_date": "2026-05-21",
+      "build_date": "2026-07-28",
+      "spec_version": "v3.14",
+      "next_test": "H1 FY26 results, 3 Aug 2026",
+      "url": "FDM.html"
     }
   ]
 }
