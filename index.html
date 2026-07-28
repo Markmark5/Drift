@@ -122,8 +122,9 @@ body{background:var(--bg);font-family:var(--mono);color:var(--text-primary);font
       Click to choose the downloaded dashboard file (e.g. MTO.html)
     </div>
     <input type="file" id="up-file" accept=".html" style="display:none">
+    <div class="hint" id="up-found"></div>
 
-    <label>Index entry (paste the JSON snippet Claude gives you)</label>
+    <label>Index entry <span style="text-transform:none;font-weight:400;">(auto-read from the file when embedded; paste manually for older builds)</span></label>
     <textarea id="up-entry" placeholder='{
   "ticker": "MTO",
   "company": "Mitie Group PLC",
@@ -211,7 +212,30 @@ function tokForget(){
 document.getElementById('up-file').addEventListener('change',function(e){
   UPFILE=e.target.files[0]||null;
   var box=document.getElementById('up-filebox');
-  if(UPFILE){box.classList.add('hasfile');box.textContent='✓ '+UPFILE.name+' ('+Math.round(UPFILE.size/1024)+' KB)';}
+  var found=document.getElementById('up-found');
+  found.textContent='';found.style.color='';
+  if(UPFILE){
+    box.classList.add('hasfile');box.textContent='✓ '+UPFILE.name+' ('+Math.round(UPFILE.size/1024)+' KB)';
+    var r=new FileReader();
+    r.onload=function(){
+      var m=String(r.result).match(/<script[^>]*id=["']drift-entry["'][^>]*>([\s\S]*?)<\/script>/);
+      if(m){
+        try{
+          var entry=validateEntry(m[1].trim());
+          document.getElementById('up-entry').value=JSON.stringify(entry,null,2);
+          found.style.color='var(--green)';
+          found.textContent='✓ Embedded entry found: '+entry.ticker+' — '+({up:'Turning Up',down:'Turning Down',watch:'Stable — Watch'})[entry.direction]+' · '+entry.rns_type+' · build '+entry.build_date;
+        }catch(err){
+          found.style.color='var(--red)';
+          found.textContent='✗ Embedded entry found but invalid ('+err.message+') — fix the build or paste a corrected entry below.';
+        }
+      }else{
+        found.style.color='var(--amber)';
+        found.textContent='No embedded entry in this file (pre-v3.15 build) — paste the snippet below.';
+      }
+    };
+    r.readAsText(UPFILE);
+  }
   else{box.classList.remove('hasfile');box.textContent='Click to choose the downloaded dashboard file (e.g. MTO.html)';}
 });
 function setStatus(cls,msg){var s=document.getElementById('up-status');s.className='status '+cls;s.textContent=msg;}
