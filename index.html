@@ -8,20 +8,22 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 :root{
-  --bg:#000;--surface:#0a0a0a;--surface2:#111;--border:#2a2a38;--border-bright:#3a3a50;
+  --bg:#000;--surface:#0a0a0a;--surface2:#111;--surface3:#1a1a1a;--border:#2a2a38;--border-bright:#3a3a50;
   --text-primary:#f2f2f8;--text-secondary:#9a9ab5;--text-dim:#6a6a85;
   --green:#00d97e;--green-dim:#00d97e18;--green-mid:#00d97e44;
   --red:#ff4757;--red-dim:#ff475718;--red-mid:#ff475744;
   --amber:#ffb347;--amber-dim:#ffb34718;--amber-mid:#ffb34744;
-  --blue:#4a9eff;
+  --blue:#4a9eff;--blue-dim:#4a9eff22;--blue-mid:#4a9eff66;
   --mono:'Inter',sans-serif;
 }
 body{background:var(--bg);font-family:var(--mono);color:var(--text-primary);font-size:13px;min-height:100vh;
   background-image:radial-gradient(ellipse at 20% 0%,#1a1a2e 0%,transparent 55%),radial-gradient(ellipse at 80% 100%,#0d1a2e 0%,transparent 55%);}
 .topnav{position:sticky;top:0;z-index:100;background:var(--surface);border-bottom:1px solid var(--border);
-  padding:0 20px;display:flex;align-items:center;height:46px;}
+  padding:0 20px;display:flex;align-items:center;height:46px;gap:12px;}
 .brand{font-size:15px;font-weight:700;letter-spacing:-.02em;}
 .brand span{color:var(--green);}
+.navbtn{font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:5px 12px;
+  border-radius:3px;cursor:pointer;background:var(--blue-dim);color:var(--blue);border:1px solid var(--blue-mid);}
 .meta{margin-left:auto;font-size:10px;color:var(--text-dim);}
 .page{padding:16px;display:flex;flex-direction:column;gap:14px;max-width:1400px;margin:0 auto;}
 .section{background:var(--surface);border:1px solid var(--border);border-radius:6px;overflow:hidden;}
@@ -54,11 +56,38 @@ body{background:var(--bg);font-family:var(--mono);color:var(--text-primary);font
 .next b{color:var(--text-secondary);font-weight:600;}
 .open{margin-top:6px;font-size:10px;color:var(--blue);}
 .empty{padding:30px;text-align:center;color:var(--text-dim);font-size:12px;}
+.overlay{position:fixed;inset:0;background:#000000cc;z-index:300;display:none;align-items:flex-start;justify-content:center;padding:60px 16px;}
+.overlay.show{display:flex;}
+.modal{background:var(--surface2);border:1px solid var(--border-bright);border-radius:6px;width:100%;max-width:560px;padding:16px;}
+.modal h3{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);margin-bottom:12px;}
+.modal label{display:block;font-size:10px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--text-secondary);margin:12px 0 5px;}
+.modal input[type=text],.modal input[type=password],.modal textarea{
+  width:100%;background:var(--surface3);border:1px solid var(--border);border-radius:3px;color:var(--text-primary);
+  font-family:var(--mono);font-size:12px;padding:8px 10px;}
+.modal textarea{min-height:170px;resize:vertical;font-size:11px;line-height:1.5;}
+.modal input:focus,.modal textarea:focus{outline:none;border-color:var(--blue-mid);}
+.filebox{border:1px dashed var(--border-bright);border-radius:3px;padding:14px;text-align:center;color:var(--text-dim);
+  font-size:11px;cursor:pointer;background:var(--surface3);}
+.filebox.hasfile{border-color:var(--green-mid);color:var(--green);border-style:solid;}
+.btnrow{display:flex;gap:8px;margin-top:16px;}
+.btn{flex:1;padding:9px;border-radius:3px;font-family:var(--mono);font-size:10px;font-weight:700;
+  letter-spacing:.05em;text-transform:uppercase;cursor:pointer;}
+.btn-go{background:var(--blue-dim);color:var(--blue);border:1px solid var(--blue-mid);}
+.btn-cancel{background:transparent;color:var(--text-secondary);border:1px solid var(--border);}
+.btn:disabled{opacity:.4;cursor:not-allowed;}
+.status{margin-top:12px;font-size:11px;line-height:1.5;min-height:16px;}
+.status.ok{color:var(--green);} .status.err{color:var(--red);} .status.busy{color:var(--amber);}
+.tokenrow{display:flex;gap:8px;align-items:center;}
+.tokenrow input{flex:1;}
+.smallbtn{font-size:9px;font-weight:600;padding:6px 10px;border-radius:3px;cursor:pointer;
+  background:transparent;color:var(--text-dim);border:1px solid var(--border);white-space:nowrap;}
+.hint{font-size:10px;color:var(--text-dim);line-height:1.5;margin-top:5px;}
 </style>
 </head>
 <body>
 <div class="topnav">
   <div class="brand">Drift<span>Tracker</span></div>
+  <button class="navbtn" onclick="upOpen()">⬆ Upload build</button>
   <div class="meta" id="meta">loading…</div>
 </div>
 <div class="page">
@@ -75,10 +104,48 @@ body{background:var(--bg);font-family:var(--mono);color:var(--text-primary);font
     <div class="wall" id="wall"><div class="empty">Loading drift-index.json…</div></div>
   </div>
 </div>
+
+<div class="overlay" id="up-overlay">
+  <div class="modal">
+    <h3>⬆ Upload a drift build</h3>
+
+    <label>GitHub token</label>
+    <div class="tokenrow">
+      <input type="password" id="up-token" placeholder="ghp_… or github_pat_…">
+      <button class="smallbtn" onclick="tokSave()">Remember</button>
+      <button class="smallbtn" onclick="tokForget()">Forget</button>
+    </div>
+    <div class="hint">Needs Contents read/write on Markmark5/Drift. "Remember" stores it in this browser only.</div>
+
+    <label>Dashboard HTML file</label>
+    <div class="filebox" id="up-filebox" onclick="document.getElementById('up-file').click()">
+      Click to choose the downloaded dashboard file (e.g. MTO.html)
+    </div>
+    <input type="file" id="up-file" accept=".html" style="display:none">
+
+    <label>Index entry (paste the JSON snippet Claude gives you)</label>
+    <textarea id="up-entry" placeholder='{
+  "ticker": "MTO",
+  "company": "Mitie Group PLC",
+  "direction": "down",
+  ...
+}'></textarea>
+
+    <div class="btnrow">
+      <button class="btn btn-go" id="up-go" onclick="upPush()">Push to GitHub</button>
+      <button class="btn btn-cancel" onclick="upClose()">Cancel</button>
+    </div>
+    <div class="status" id="up-status"></div>
+  </div>
+</div>
+
 <script>
-var DATA=null,SORT='direction';
+var OWNER='Markmark5',REPO='Drift',BRANCH='main';
+var DATA=null,SORT='direction',UPFILE=null;
 var DIRLBL={up:'Turning Up',down:'Turning Down',watch:'Stable — Watch'};
 var DIRORD={down:0,watch:1,up:2};
+var MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+function fmtDate(d){var p=d.split('-');return p[2]+' '+MON[+p[1]-1]+' '+p[0].slice(2);}
 
 function load(){
   fetch('drift-index.json',{cache:'no-store'})
@@ -110,7 +177,7 @@ function render(){
       '<div class="co">'+x.company+'</div>'+
       '<div class="head">'+x.headline+'</div>'+
       '<div class="pills">'+alertPill+
-        '<span class="pill">'+x.rns_type+' · '+x.rns_date.slice(2).replace(/-/g,'/')+'</span>'+
+        '<span class="pill">'+x.rns_type+' · '+fmtDate(x.rns_date)+'</span>'+
         '<span class="pill">'+x.spec_version+'</span></div>'+
       (x.next_test&&x.next_test!=='—'?'<div class="next"><b>Next test:</b> '+x.next_test+'</div>':'')+
       '<div class="open">Open dashboard ↗</div>';
@@ -123,6 +190,125 @@ document.querySelectorAll('.sortbtn').forEach(function(b){
     b.classList.add('active');SORT=b.dataset.sort;if(DATA)render();
   };
 });
+
+/* ══ UPLOAD PANEL ══ */
+function upOpen(){
+  document.getElementById('up-overlay').classList.add('show');
+  var t=localStorage.getItem('drift_gh_token');
+  if(t)document.getElementById('up-token').value=t;
+  setStatus('','');
+}
+function upClose(){document.getElementById('up-overlay').classList.remove('show');}
+function tokSave(){
+  var t=document.getElementById('up-token').value.trim();
+  if(!t){setStatus('err','No token entered.');return;}
+  localStorage.setItem('drift_gh_token',t);setStatus('ok','Token remembered in this browser.');
+}
+function tokForget(){
+  localStorage.removeItem('drift_gh_token');
+  document.getElementById('up-token').value='';setStatus('ok','Token forgotten.');
+}
+document.getElementById('up-file').addEventListener('change',function(e){
+  UPFILE=e.target.files[0]||null;
+  var box=document.getElementById('up-filebox');
+  if(UPFILE){box.classList.add('hasfile');box.textContent='✓ '+UPFILE.name+' ('+Math.round(UPFILE.size/1024)+' KB)';}
+  else{box.classList.remove('hasfile');box.textContent='Click to choose the downloaded dashboard file (e.g. MTO.html)';}
+});
+function setStatus(cls,msg){var s=document.getElementById('up-status');s.className='status '+cls;s.textContent=msg;}
+
+var REQUIRED=['ticker','company','direction','headline','trigger','alert','rns_type','rns_date','build_date','spec_version','next_test','url'];
+function validateEntry(txt){
+  var e;
+  try{e=JSON.parse(txt);}catch(x){throw new Error('Entry is not valid JSON — '+x.message);}
+  if(Array.isArray(e)||typeof e!=='object')throw new Error('Entry must be a single {...} object.');
+  var missing=REQUIRED.filter(function(k){return !(k in e);});
+  if(missing.length)throw new Error('Entry missing field(s): '+missing.join(', '));
+  if(['up','down','watch'].indexOf(e.direction)<0)throw new Error('direction must be "up", "down" or "watch".');
+  if(!/^\d{4}-\d{2}-\d{2}$/.test(e.rns_date))throw new Error('rns_date must be YYYY-MM-DD.');
+  if(!/^\d{4}-\d{2}-\d{2}$/.test(e.build_date))throw new Error('build_date must be YYYY-MM-DD.');
+  return e;
+}
+
+function ghHeaders(tok){return {'Authorization':'Bearer '+tok,'Accept':'application/vnd.github+json'};}
+function ghGetSha(tok,path){
+  return fetch('https://api.github.com/repos/'+OWNER+'/'+REPO+'/contents/'+path+'?ref='+BRANCH,{headers:ghHeaders(tok)})
+    .then(function(r){
+      if(r.status===404)return null;
+      if(!r.ok)throw new Error('GitHub read failed on '+path+' ('+r.status+')');
+      return r.json().then(function(j){return j.sha;});
+    });
+}
+function ghPut(tok,path,b64,msg,sha){
+  var body={message:msg,content:b64,branch:BRANCH};
+  if(sha)body.sha=sha;
+  return fetch('https://api.github.com/repos/'+OWNER+'/'+REPO+'/contents/'+path,{
+    method:'PUT',headers:ghHeaders(tok),body:JSON.stringify(body)})
+    .then(function(r){
+      if(!r.ok)return r.json().then(function(j){throw new Error('GitHub write failed on '+path+' ('+r.status+'): '+(j.message||''));});
+      return r.json();
+    });
+}
+function toB64(str){
+  return btoa(unescape(encodeURIComponent(str)));
+}
+function fileToB64(file){
+  return new Promise(function(res,rej){
+    var r=new FileReader();
+    r.onload=function(){res(r.result.split(',')[1]);};
+    r.onerror=function(){rej(new Error('Could not read file.'));};
+    r.readAsDataURL(file);
+  });
+}
+
+function upPush(){
+  var tok=document.getElementById('up-token').value.trim();
+  var entryTxt=document.getElementById('up-entry').value.trim();
+  var go=document.getElementById('up-go');
+  if(!tok){setStatus('err','Enter your GitHub token first.');return;}
+  if(!UPFILE){setStatus('err','Choose the dashboard HTML file.');return;}
+  if(!entryTxt){setStatus('err','Paste the index entry.');return;}
+  var entry;
+  try{entry=validateEntry(entryTxt);}catch(e){setStatus('err','✗ '+e.message);return;}
+  var expectedName=entry.ticker+'.html';
+  if(UPFILE.name!==expectedName){
+    if(!confirm('File is named "'+UPFILE.name+'" but the entry is for '+entry.ticker+'.\nIt will be uploaded as '+expectedName+'. Continue?'))return;
+  }
+  if(entry.url!==expectedName)entry.url=expectedName;
+
+  go.disabled=true;
+  setStatus('busy','Reading current index…');
+  var htmlPath=expectedName;
+
+  fetch('https://api.github.com/repos/'+OWNER+'/'+REPO+'/contents/drift-index.json?ref='+BRANCH,{headers:ghHeaders(tok)})
+    .then(function(r){
+      if(!r.ok)throw new Error('Could not read drift-index.json ('+r.status+'). Check the token has Contents access to '+OWNER+'/'+REPO+'.');
+      return r.json();
+    })
+    .then(function(j){
+      var idx=JSON.parse(decodeURIComponent(escape(atob(j.content.replace(/\n/g,'')))));
+      var pos=-1;
+      idx.tickers.forEach(function(t,i){if(t.ticker===entry.ticker)pos=i;});
+      if(pos>=0)idx.tickers[pos]=entry; else idx.tickers.push(entry);
+      idx.updated=new Date().toISOString().slice(0,10);
+      var newIdxB64=toB64(JSON.stringify(idx,null,2));
+      setStatus('busy','Uploading '+htmlPath+'…');
+      return ghGetSha(tok,htmlPath)
+        .then(function(sha){return fileToB64(UPFILE).then(function(b64){
+          return ghPut(tok,htmlPath,b64,(sha?'Update ':'Add ')+htmlPath+' (drift build)',sha);});})
+        .then(function(){
+          setStatus('busy','Updating drift-index.json…');
+          return ghPut(tok,'drift-index.json',newIdxB64,'Index: '+entry.ticker+' '+entry.build_date,j.sha);
+        })
+        .then(function(){return pos>=0;});
+    })
+    .then(function(updated){
+      setStatus('ok','✓ Pushed. '+entry.ticker+' '+(updated?'updated':'added')+'. Pages refreshes in ~1 min — the wall will reload in 60s.');
+      setTimeout(function(){location.reload();},60000);
+    })
+    .catch(function(e){setStatus('err','✗ '+e.message);})
+    .finally(function(){go.disabled=false;});
+}
+
 load();
 </script>
 </body>
