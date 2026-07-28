@@ -28,6 +28,20 @@
       "spec_version": "v3.14",
       "next_test": "H1 FY26 results, 3 Aug 2026",
       "url": "FDM.html"
+    },
+    {
+      "ticker": "NWF",
+      "company": "NWF Group plc",
+      "direction": "up",
+      "headline": "FY26 PBT £12.5m beats the cut consensus by 21% inside a 5% down year; Fuels' rescue was oil-price timing, not margin.",
+      "trigger": "2-of-3 explained",
+      "alert": false,
+      "rns_type": "FY26 Final Results",
+      "rns_date": "2026-07-28",
+      "build_date": "2026-07-28",
+      "spec_version": "v3.14",
+      "next_test": "AGM 24 Sep 2026 — autumn heating-oil demand",
+      "url": "NWF.html"
     }
   ]
 }
