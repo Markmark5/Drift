@@ -79,8 +79,6 @@ body{background:var(--bg);font-family:var(--mono);color:var(--text-primary);font
 var DATA=null,SORT='direction';
 var DIRLBL={up:'Turning Up',down:'Turning Down',watch:'Stable — Watch'};
 var DIRORD={down:0,watch:1,up:2};
-var MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-function fmtDate(d){var p=d.split('-');return p[2]+' '+MON[+p[1]-1]+' '+p[0].slice(2);}
 
 function load(){
   fetch('drift-index.json',{cache:'no-store'})
@@ -112,7 +110,7 @@ function render(){
       '<div class="co">'+x.company+'</div>'+
       '<div class="head">'+x.headline+'</div>'+
       '<div class="pills">'+alertPill+
-        '<span class="pill">'+x.rns_type+' · '+fmtDate(x.rns_date)+'</span>'+
+        '<span class="pill">'+x.rns_type+' · '+x.rns_date.slice(2).replace(/-/g,'/')+'</span>'+
         '<span class="pill">'+x.spec_version+'</span></div>'+
       (x.next_test&&x.next_test!=='—'?'<div class="next"><b>Next test:</b> '+x.next_test+'</div>':'')+
       '<div class="open">Open dashboard ↗</div>';
