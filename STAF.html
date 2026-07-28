@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>STAF — Longitudinal Drift Tracker v3.13 (Audited)</title>
+<style>
+  :root{
+    --green:#1f7a4d; --red:#b3261e; --amber:#b0791a;
+    --amber-bg:#faeeda; --card:#f7f6f2; --line:#d8d5cc; --ink:#1a1a1a; --mute:#5c5a54;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0 auto; padding:28px 20px 80px; max-width:1800px; background:#fff; color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:14px; line-height:1.5;
+  }
+  h1{font-size:20px; margin:0 0 4px}
+  h2{font-size:16px; margin:0 0 10px; padding-bottom:6px; border-bottom:2px solid var(--ink)}
+  .sub{color:var(--mute); font-size:12.5px; margin-bottom:30px; max-width:1100px}
+  section{margin-bottom:30px}
+  table{border-collapse:collapse; width:100%; font-size:13px}
+  th,td{border:1px solid var(--line); padding:8px 9px; text-align:left; vertical-align:top}
+  th{background:#f2f1ec; font-weight:600}
+  .prose{max-width:1100px}
+  details{margin-top:16px; background:var(--card); border:1px solid var(--line); border-radius:10px; padding:10px 14px; max-width:1100px}
+  details summary{cursor:pointer; font-weight:600; font-size:13px}
+  details p{font-size:12.5px; line-height:1.55; margin:10px 0}
+  .meth{max-width:1100px; font-size:12px; color:var(--mute); line-height:1.55; margin-top:16px}
+
+  /* ---------- VERDICT CARD ---------- */
+  .verdict{display:flex; border:6px solid var(--green); border-radius:12px; overflow:hidden; margin-bottom:30px; max-width:1100px}
+  .rail{width:82px; flex:0 0 82px; background:#e3f0e8; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px; padding:20px 0}
+  .badge{width:36px; height:36px; border-radius:50%; border:2px solid var(--green); display:flex; align-items:center; justify-content:center}
+  .rail .lbl{writing-mode:vertical-rl; transform:rotate(180deg); text-transform:uppercase; letter-spacing:.14em; font-size:11px; font-weight:700; color:var(--green)}
+  .vbody{flex:1; padding:18px 20px}
+  .vhead{font-size:22px; font-weight:700; line-height:1.3; margin-bottom:12px}
+  .pills{display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin-bottom:16px; font-size:12px}
+  .pill{background:#eeece6; border-radius:999px; padding:3px 10px}
+  .dot{color:var(--mute)}
+  .bs{font-weight:600}
+  .grid2{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:14px}
+  .sc{background:var(--card); border-radius:10px; padding:10px 12px; font-size:12.5px; line-height:1.5}
+  .sc.amber{background:var(--amber-bg)}
+  .sc b{display:block; margin-bottom:3px; font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--mute)}
+  .vbody ul{margin:0; padding-left:18px; font-size:12.5px; line-height:1.55}
+  .vbody li{margin-bottom:6px}
+
+  /* ---------- §2 GRID ---------- */
+  .gridwrap{overflow-x:auto}
+  table.fg{table-layout:fixed; font-size:12.5px}
+  table.fg td,table.fg th{text-align:center; padding:7px 4px}
+  table.fg td.lab,table.fg th.lab{text-align:left}
+  .secbar{background:#ecebe5; font-weight:600; text-align:left!important; font-size:12.5px}
+  .strip td{padding:2px 4px!important; font-size:10.5px; color:var(--mute); background:#fbfbf9}
+  .val{font-weight:600}
+  .delta{font-size:11px; color:var(--mute); display:block; margin-top:2px}
+  .neg{color:var(--red)}
+  .bs-col{font-weight:700}
+  th.ph{cursor:pointer; user-select:none}
+  th.ph:hover{background:#e6e4dc}
+  .hl{background:#fff6d9!important}
+  .yb{background:#f2f1ec}
+
+  td[data-rowtype],th[data-rowtype]{cursor:pointer}
+  #text3 td.doc{cursor:pointer}
+  #text3 tr.changed{background:#f4f2ea}
+  .hlpink{background:#fdeaf1!important}
+  .csbar{background:#e9f5ee;border:2px solid var(--green);border-radius:10px;padding:14px 16px;font-size:13.5px;line-height:1.6}
+  .trail{font-size:10.5px;line-height:1.5;text-align:left;color:var(--ink)}
+  .trail .met{color:var(--green)} .trail .miss{color:var(--red)}
+  .doc2{display:block;font-size:11px;color:var(--mute)}
+  .row20{display:flex;gap:16px;align-items:stretch;flex-wrap:wrap;margin:18px 0;max-width:1500px}
+  .bridge{flex:1 1 0;min-width:340px;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff}
+  .bridge .bhead{background:#2b2a26;color:#fff;padding:11px 15px;font-size:16px;font-weight:700;text-transform:none;font-family:"Comic Sans MS","Comic Sans","Chalkboard SE","Segoe Print","Bradley Hand",cursive}
+  .bridge table{font-size:12.5px;border-collapse:collapse;width:100%}
+  .bridge td{border:none;border-top:1px solid var(--line);padding:9px 12px;vertical-align:top}
+  .blabel{font-family:"Comic Sans MS","Comic Sans","Chalkboard SE","Segoe Print","Bradley Hand",cursive;font-weight:700;font-size:15px;width:170px}
+  .bamt{font-weight:700;text-align:right;white-space:nowrap;width:70px}
+  .bg-g{background:#e9f5ee}.bg-a{background:#fdf4e3}.bg-r{background:#fdecea}
+  .bcap{background:#fafafa;border-top:1px solid var(--line);padding:9px 12px;font-size:11px;color:var(--mute);line-height:1.55}
+  .csbar{flex:1 1 0;min-width:340px;margin:0;padding:0;display:flex;flex-direction:column}
+  .csbar .csbarhead{background:#2b2a26;color:#fff;padding:11px 15px;font-size:16px;font-weight:700;font-family:"Comic Sans MS","Comic Sans","Chalkboard SE","Segoe Print","Bradley Hand",cursive;display:flex;align-items:center;gap:8px}
+  .csbar .csbarhead .em{font-size:22px}
+  .csbar .csbarbody{padding:14px 16px;flex:1;display:flex;align-items:center}
+
+  /* ---------- 💡 COMPANY-GUIDE DRAWER (verdict card) ---------- */
+  .cg{margin:0 0 14px;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  .cg>summary{list-style:none;cursor:pointer;background:#2b2a26;color:#fff;padding:11px 15px;font-family:"Comic Sans MS","Comic Sans","Chalkboard SE","Segoe Print","Bradley Hand",cursive;font-size:16px;display:flex;align-items:center;gap:8px}
+  .cg>summary::-webkit-details-marker{display:none}
+  .cg>summary .em{font-size:22px}
+  .cgbody{padding:13px 16px;font-size:12.5px;line-height:1.6}
+  .cgbody h4{font-family:"Comic Sans MS","Comic Sans","Chalkboard SE","Segoe Print","Bradley Hand",cursive;font-size:17px;font-weight:700;margin:12px 0 4px}
+  .cgbody h4:first-child{margin-top:0}
+  .cgbody .arg{font-style:italic;margin-top:12px}
+  .cgbody .vintage{color:var(--mute);font-size:11px;margin-top:8px}
+  @media(max-width:800px){.grid2{grid-template-columns:1fr}.verdict{flex-direction:column}.rail{width:100%;flex-direction:row;padding:10px}.rail .lbl{writing-mode:horizontal-tb;transform:none}}
+</style>
+</head>
+<body>
+
+<h1>STAF — Staffline Group plc</h1>
+<div class="sub">Longitudinal Drift Tracker v3.13 · Buy/Sell RNS: Unaudited Interim Results (H1 2026), 28 July 2026 · Prior build re-audited to v3.10 (Stages A–E); H1-26 folded in as an incremental read, deltas recomputed in code · Direction call: TURNING UP (firmly held — green-shoot 2-of-3 FIRED) · Next: FY26 trading update, ~Jan-27</div>
+
+<!-- ================= VERDICT ================= -->
+<div class="verdict">
+  <div class="rail">
+    <div class="badge">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1f7a4d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+    </div>
+    <div class="lbl">Turning Up</div>
+  </div>
+  <div class="vbody">
+    <div class="vhead">Green-shoot 2-of-3 FIRED on its own legs — anchored RAISE, Rank-1 reversal +6.3pp, accelerating exit rate. Call now firmly held. B/S watch shifts to receivables.</div>
+    <div class="pills">
+      <span class="pill">🟢 ALERT: green-shoot 2-of-3 fired · deterioration 0-of-3</span>
+      <span class="pill">H1 Interim Results</span>
+      <span class="pill">28-Jul-26</span>
+      <span class="pill">FY 31 Dec</span>
+      <span class="dot">•</span>
+      <span class="bs">🟡 receivables watch</span>
+    </div>
+    <details class="cg">
+      <summary><span class="em">💡</span> Idiot's guide to the company — What Staffline Group plc actually does</summary>
+      <div class="cgbody">
+        <h4>What it is</h4>
+        <p>Staffline is the UK's biggest supplier of blue-collar temps — the people who stack supermarket shelves, load lorries and pack warehouses. When a food or logistics firm needs 500 extra pairs of hands for the week before Christmas, Staffline finds them, employs them, pays them, and bills the client for the hours worked. It's headquartered in Nottingham and listed on London's junior market (AIM).</p>
+        <h4>How it makes money</h4>
+        <p>Two engines. The big one — roughly nine pounds in every ten of profit — is <b>GB temp staffing</b>: it charges the client a small margin on top of each worker's wage, so profit rises and falls with the sheer number of hours its temps clock. The small one is <b>Ireland</b>, where alongside temps it also places people into permanent jobs and pockets a one-off fee each time — a fee that dries up fast when employers get nervous, which makes it an early warning light for confidence.</p>
+        <h4>Who holds the purse strings</h4>
+        <p>A handful of giant customers. A single new logistics contract (with the Culina group, signed May-25) was big enough to move the whole company's numbers, which cuts both ways — one client leaving would hurt just as much.</p>
+        <h4>Recent shape</h4>
+        <p>Sold off its troubled PeoplePlus welfare-to-work arm, so today's business is a cleaner, thinner staffing pure-play. Profit has climbed three years running and the company has been buying back its own shares — the share count has shrunk about a quarter since 2023.</p>
+        <p class="arg"><i>The argument in one line: a cheap, cash-generative shelf-stacking machine grinding out steady profit upgrades that the share price has so far ignored — with the catch that all the eggs sit in one low-margin, big-customer basket.</i></p>
+        <p class="vintage">Stable facts only · as at 18-May-26 · updated only on a structural event</p>
+      </div>
+    </details>
+    <div class="grid2">
+      <div class="sc"><b>State</b>Accelerating through the half: hours +9.1% (4mo) → +10.7% (H1) → +16.1% (Jun); OP +57.6%; conversion 10.0% → 13.9%; Ireland perm +33.3%.</div>
+      <div class="sc"><b>Fired</b>Green-shoot 2-of-3: (1) G RAISE — "top end" anchored to £8.7–9.2m PBT + Rank-1 sequential reversal; (2) Text rising ⚪ → 🟢🟢. Rank-1's two-print 🔴 run formally reversed (+6.3pp). Deterioration 0-of-3.</div>
+      <div class="sc amber"><b>Caveat</b>Receivables +34% vs revenue +15% (Tier-2 met, growth-explained — one more period exhausts it); pre-IFRS16 net debt £(14.6)m vs £(5.7)m; June flattered by weather + World Cup (bounded, disclosed).</div>
+      <div class="sc"><b>Next</b>FY26 TU ~Jan-27: PBT vs the £9.2m top end; FY cash conversion vs the receivables build; Q4 peak hours vs +11.1% on the first hard Culina comp.</div>
+    </div>
+    <ul>
+      <li><b>Why the call is now firmly held:</b> the prior TURNING UP won by default (bear case lost a leg on cadence). This RNS strengthens the bull case independently — an anchored top-of-range RAISE (first numeric consensus range ever printed in an RNS: FY26 PBT £8.7–9.2m, top end +24% on FY25), Rank-1 reversing +6.3pp outside the ±2.0pp band, and a ~+13.9%† implied May–Jun run-rate that matches the C-series market surge almost 1:1.</li>
+      <li><b>The bridge echo:</b> conversion did the heavy lifting — GP +13.3% became OP +57.6% because the 2025 cost programmes held the office bill nearly flat while hours grew; the same gearing cuts equally hard in reverse if hours fade on H2's Culina-inclusive comps (base laps from Sep-26).</li>
+      <li><b>What flips it (FY26 TU):</b> a "towards the top end" walked back to "in line" is a CUT per lexicon; receivables outrunning revenue a second period fires Tier-2 unexplained; Q4 peak below ~+5% on the hard comp is genuine deceleration, not base effect.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ================= §1 LEDGER ================= -->
+<section>
+<h2>§1 Metric Ledger</h2>
+<table>
+<tr><th style="width:40px">Rank</th><th style="width:230px">Metric</th><th style="width:110px">Type</th><th>Why it leads for STAF</th><th style="width:150px">Cadence</th><th style="width:230px">Status this run</th></tr>
+<tr><td>1</td><td>Recruitment GB temporary hours worked (absolute m / YoY%)</td><td>Flow, period rate</td><td>Company's own primary operational KPI, quoted in every RNS in the window; c.90% of Group GP now flows from GB blue-collar temp; earliest print ahead of revenue/GP.</td><td>Every RNS; Q4 peak quantified at FY TU</td><td>Live — 🟢↗ REVERSED at H1-26 (+6.3pp); the two-print 🔴 run (H1-25 −4.8pp, FY25 −3.2pp) is closed</td></tr>
+<tr><td>2</td><td>Group Gross Profit (£m / YoY%)</td><td>Flow</td><td>Staffline's "net fee income" equivalent — true unit-economics line; revenue is inflated by GSV/agency mix.</td><td>H1/FY + partial-year TU%</td><td>Live — 🟢 accelerating, drivers broadening (six retenders, new wins)</td></tr>
+<tr><td>3</td><td>Recruitment Ireland permanent placement fees (YoY%)</td><td>Flow</td><td>Permanent-fee decisions front-run temp volumes as a white-collar confidence signal; most cyclical sub-unit.</td><td>H1/FY; AGM TU patchy (1 of 3)</td><td>Live — 🟢↗ +33.3% at H1-26 (+10.2pp), An Garda-driven; cadence intact</td></tr>
+<tr><td>4</td><td>Group Operating Profit (£m / YoY%)</td><td>Flow</td><td>Hard confirming metric — guidance is pinned to this line in every "in line with expectations" statement.</td><td>H1/FY/TU</td><td>Live — 🟢↗ +57.6% at H1-26; conversion 10.0% → 13.9%</td></tr>
+<tr><td>5</td><td>Net cash/(debt), pre-IFRS16 (£m)</td><td>Snapshot</td><td>Balance-sheet watch metric; newly relevant given the FY25 net-cash-to-net-debt move on a post-IFRS16 basis.</td><td>H1/FY/TU</td><td>Live — 🔴 £(14.6)m at H1-26, −£8.9m YoY; growth-explained working capital, watch</td></tr>
+</table>
+<div class="meth"><b>5 ranks = 5 grid blocks.</b> GB permanent fees is a proposed addition for the next build — the audit established four FY-grain prints (FY22 £3.9m +77%, FY23 £3.5m −10.3%, FY24 £3.7m +5.7%, FY25 £3.4m −8.1%), not two — not swapped in mid-run. Ireland temp hours (6.7m → 6.2m → 5.6m → 4.9m over FY22–FY25, falling every year, Q4-25 +2.4% the first turn) is a second proposed addition.</div>
+</section>
+
+<!-- ================= §2 GRID ================= -->
+<section>
+<h2>§2 Forward Grid — Ranks 1–5</h2>
+<div class="gridwrap">
+<table class="fg" id="fg">
+  <colgroup><col style="width:190px"><col span="9" style="width:auto"></colgroup>
+  <tr class="yb"><th class="lab"></th><th colspan="2">FY2022</th><th colspan="2">FY2023</th><th colspan="2">FY2024</th><th colspan="2">FY2025</th><th colspan="1">FY2026</th></tr>
+  <tr><th class="lab">Period</th>
+    <th class="ph" data-p="H1">H1</th><th class="ph" data-p="FY">FY</th>
+    <th class="ph" data-p="H1">H1</th><th class="ph" data-p="FY">FY</th>
+    <th class="ph" data-p="H1">H1</th><th class="ph" data-p="FY">FY</th>
+    <th class="ph" data-p="H1">H1</th><th class="ph" data-p="FY">FY</th>
+    <th class="ph" data-p="H1">H1</th></tr>
+
+  <!-- RANK 1 -->
+  <tr><td class="secbar" colspan="10">Rank 1 — Recruitment GB Temporary Hours Worked (flow — period rate, YoY%; absolute m at FY grain)</td></tr>
+  <tr class="strip"><td class="lab">basis</td><td>H1</td><td>FY, abs</td><td>H1</td><td>FY, abs</td><td>H1</td><td>FY, abs</td><td>H1</td><td>FY, abs</td><td>H1, abs</td></tr>
+  <tr>
+    <td class="lab">Value / Δ / Turn</td>
+    <td>—<span class="delta">not disclosed</span></td>
+    <td><span class="val">44.0m</span><span class="delta neg">−13.9% vs FY21 · 🔴↘</span></td>
+    <td>—<span class="delta">not disclosed</span></td>
+    <td><span class="val">41.4m</span><span class="delta neg">−5.9% · 🔴↘</span></td>
+    <td><span class="val">+9.2%</span><span class="delta">first H1 print · —</span></td>
+    <td><span class="val">45.6m</span><span class="delta">+10.1% · 🟢↗</span></td>
+    <td><span class="val">+4.4%</span><span class="delta neg">−4.8pp vs H1-24 · 🔴↘</span></td>
+    <td><span class="val">48.7m</span><span class="delta neg">+6.8%, −3.2pp vs FY24 · 🔴↘</span></td>
+    <td class="bs-col"><span class="val">23.8m · +10.7%</span><span class="delta">+6.3pp vs H1-25 · 🟢↗<br>Jun +16.1%</span></td>
+  </tr>
+  <tr class="strip"><td class="lab">Q4 peak (Q-grain)</td><td></td><td></td><td></td><td></td><td></td><td>Q4-24 +12.3%</td><td></td><td>Q4-25 +11.1%</td><td></td></tr>
+  <tr>
+    <td class="lab">Q4 Δ / Turn</td>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td><span class="delta">first Q4 print · —</span></td>
+    <td></td>
+    <td><span class="delta">−1.2pp, in ±5.0 band · 🟡→</span></td>
+    <td></td>
+  </tr>
+
+  <!-- RANK 2 -->
+  <tr><td class="secbar" colspan="10">Rank 2 — Group Gross Profit (flow, £m / YoY% — like-period-to-like-period, strictly within basis cohort)</td></tr>
+  <tr class="strip"><td class="lab">basis</td><td>A</td><td>A → Bʳ</td><td>A</td><td>B</td><td>B / Cʳ</td><td>C</td><td>C</td><td>C</td><td>C</td></tr>
+  <tr>
+    <td class="lab">Value / Δ / Turn</td>
+    <td><span class="val">£39.9m</span><span class="delta">first print · —</span></td>
+    <td><span class="val">£83.2m</span><span class="delta">+0.5% · 🟡→<br>restated £82.0mʳ</span></td>
+    <td><span class="val">£38.0m</span><span class="delta neg">−4.8% · 🔴↘</span></td>
+    <td><span class="val">£80.8m</span><span class="delta neg">−1.5% vs £82.0mʳ · 🔴↘</span></td>
+    <td><span class="val">£38.2m</span><span class="delta">+0.3% (basis B)<br>£31.2mʳ on basis C</span></td>
+    <td><span class="val">£70.8m</span><span class="delta">+10.3% · 🟢↗<br>£88.1m on basis B</span></td>
+    <td><span class="val">£33.1m</span><span class="delta">+6.1% vs £31.2mʳ · 🟢↗</span></td>
+    <td><span class="val">£78.3m</span><span class="delta">+10.6% · 🟢↗</span></td>
+    <td class="bs-col"><span class="val">£37.5m</span><span class="delta">+13.3% vs £33.1m · 🟢↗</span></td>
+  </tr>
+  <tr class="strip"><td class="lab">H2 derived (†)</td><td></td><td></td><td></td><td></td><td></td><td>H2-24† £39.6m</td><td></td><td>H2-25† £45.2m · +14.1% 🟢↗</td><td></td></tr>
+
+  <!-- RANK 3 -->
+  <tr><td class="secbar" colspan="10">Rank 3 — Recruitment Ireland Permanent Placement Fees (flow, YoY% — seasonally matched)</td></tr>
+  <tr class="strip"><td class="lab">basis</td><td>H1</td><td>FY</td><td>H1</td><td>FY</td><td>H1</td><td>FY</td><td>H1</td><td>FY</td><td>H1</td></tr>
+  <tr>
+    <td class="lab">Value / Δ / Turn</td>
+    <td>🟡<span class="delta">qualitative only</span></td>
+    <td><span class="val">+45%</span><span class="delta">first print · —</span></td>
+    <td>🟡<span class="delta">qualitative only</span></td>
+    <td><span class="val">−12%</span><span class="delta neg">−57pp vs FY22 · 🔴↘</span></td>
+    <td><span class="val">+30%</span><span class="delta">prior H1 qual. · —</span></td>
+    <td><span class="val">+38%</span><span class="delta">+50pp vs FY23 · 🟢↗</span></td>
+    <td><span class="val">+23.1%</span><span class="delta neg">−6.9pp vs H1-24 · 🔴↘</span></td>
+    <td><span class="val">+10.3%</span><span class="delta neg">−27.7pp vs FY24 · 🔴↘</span></td>
+    <td class="bs-col"><span class="val">+33.3%</span><span class="delta">+10.2pp vs H1-25 · 🟢↗</span></td>
+  </tr>
+
+  <!-- RANK 4 -->
+  <tr><td class="secbar" colspan="10">Rank 4 — Group Operating Profit (flow, £m / YoY% — like-period-to-like-period, strictly within basis cohort)</td></tr>
+  <tr class="strip"><td class="lab">basis</td><td>A</td><td>A</td><td>A</td><td>B</td><td>B / Cʳ</td><td>C</td><td>C</td><td>C</td><td>C</td></tr>
+  <tr>
+    <td class="lab">Value / Δ / Turn</td>
+    <td><span class="val">£4.0m</span><span class="delta neg">−13.0% vs H1-21 · 🔴↘</span></td>
+    <td><span class="val">£12.0m</span><span class="delta">+16.5% · 🟢↗</span></td>
+    <td><span class="val">£2.4m</span><span class="delta neg">−40.0% · 🔴↘</span></td>
+    <td><span class="val">£10.3m</span><span class="delta neg">−14.2% · 🔴↘</span></td>
+    <td><span class="val">£2.9m</span><span class="delta neg">−3.3% (basis B)<br>£2.4mʳ on basis C</span></td>
+    <td><span class="val">£10.1m</span><span class="delta">+40.3% vs £7.2mʳ · 🟢↗<br>£11.1m on basis B</span></td>
+    <td><span class="val">£3.7m</span><span class="delta">+54.2% vs £2.4mʳ · 🟢↗</span></td>
+    <td><span class="val">£13.0m</span><span class="delta">+31.3% vs £9.9m · 🟢↗</span></td>
+    <td class="bs-col"><span class="val">£5.2m</span><span class="delta">+57.6% vs £3.3m · 🟢↗<br>+40.5% vs £3.7m underlying</span></td>
+  </tr>
+  <tr class="strip"><td class="lab">H2 derived (†)</td><td></td><td></td><td></td><td></td><td></td><td>H2-24† £7.5m</td><td></td><td>H2-25† £9.3m · +24.0% 🟢↗</td><td></td></tr>
+
+  <!-- RANK 5 -->
+  <tr><td class="secbar" colspan="10">Rank 5 — Net Cash/(Debt), pre-IFRS16 (snapshot — position-to-position at own grain)</td></tr>
+  <tr class="strip"><td class="lab">basis</td><td>H1</td><td>FY</td><td>H1</td><td>FY</td><td>H1</td><td>FY</td><td>H1</td><td>FY</td><td>H1</td></tr>
+  <tr>
+    <td class="lab">Value / Δ / Turn</td>
+    <td><span class="val">£(9.7)m</span><span class="delta">first print · —</span></td>
+    <td><span class="val">£5.0m</span><span class="delta neg">−£1.9m vs FY21 · 🔴↘</span></td>
+    <td><span class="val">£(3.5)m</span><span class="delta">+£6.2m vs H1-22 · 🟢↗</span></td>
+    <td><span class="val">£3.8m</span><span class="delta neg">−£1.2m vs FY22 · 🔴↘</span></td>
+    <td><span class="val">£(9.2)m</span><span class="delta neg">−£5.7m vs H1-23 · 🔴↘</span></td>
+    <td><span class="val">£9.6m</span><span class="delta">+£5.8m vs FY23 · 🟢↗</span></td>
+    <td><span class="val">£(5.7)m</span><span class="delta">+£3.5m vs H1-24 · 🟢↗</span></td>
+    <td><span class="val">£1.5m</span><span class="delta neg">−£8.1m vs FY24 · 🔴↘</span></td>
+    <td class="bs-col"><span class="val">£(14.6)m</span><span class="delta neg">−£8.9m vs H1-25 · 🔴↘</span></td>
+  </tr>
+</table>
+</div>
+
+<details>
+<summary>Notes — Ranks 1–5</summary>
+<p><b>Rank 1 — GB hours.</b> Two consecutive seasonally-matched 🔴 (H1-25 −4.8pp, FY25 −3.2pp) stand after audit. Q-grain is <i>partially</i> available and is now scored: Q4-24 +12.3% and Q4-25 +11.1% give −1.2pp, inside the ±5.0 band → 🟡. The single logistics contract (Culina) secured 16-May-25 is on its third consecutive period as the stated driver — exhausted per the decomposition rule. <i>Yardstick (C-series, fires nothing):</i> broker notes size Culina at c.£45m sales / £1.7m GP / £0.7m EBIT in FY25, mobilised Aug-25 and fully ramped Sep-25 — so H1-26 laps a contract-free base and the comp hardens only in H2-26. Panmure also prints the one datapoint the RNSs omit: GB hours <b>−0.2% Dec-25 to Feb-26</b>, against UK hours +0.7% across 2025 — momentum cooled after the Q4 peak. Brokers state FY25 hours as +6.7%; the RNS says +6.8% and governs.</p>
+<p><b>Rank 2 — Group GP.</b> Three basis cohorts, never mixed in a scored delta: A = as-first-printed; B = restated to exclude discontinued activities (FY22 £83.2m → £82.0mʳ, a £1.2m move — <i>not</i> a £2.6m revenue-recognition correction, corrected at audit); C = continuing ex-PeoplePlus. H1-24 prints £38.2m on basis B and £31.2mʳ on basis C; the +6.1% is C-to-C. FY24 prints £88.1m (B, Feb-25 TU) and £70.8m (C, Apr-25 audited). H2† tie-outs: 78.3−33.1 = 45.2; 70.8−31.2 = 39.6; +14.1%.</p>
+<p><b>Rank 3 — Ireland perm fees.</b> FY23 <i>is</i> quantified (−12%, FY23 audited) — the prior build's "qualitative only" was wrong, and the chain is +45% → −12% → +38% → +10.3%. FY24 is therefore a +50pp 🟢, not a first print, and FY25's −27.7pp is a single 🔴 following a large 🟢 on a volatile, mean-reverting metric — not a 🔴🔴 decay. AGM-TU cadence is patchy (quantified at 1 of 3), so the May-26 qualitative treatment is a —, not a withhold.</p>
+<p><b>Rank 4 — Group OP.</b> FY25 labels the line "operating profit" where FY22–24 used "underlying operating profit"; FY24 wedge is £0.2m (Jan-26 TU fn3) — flagged, immaterial. Conversion improved H1→H2 in FY25 (GP +14.1% vs OP +24.0%). Basis B/C split mirrors Rank 2: H1-24 £2.9m (B) / £2.4mʳ (C); FY24 £11.1m (B) / £10.1m (C) / £9.9m (C, post-£0.2m non-underlying, the FY25 comparator).</p>
+<p><b>Rank 5 — Net cash.</b> FY24 pre-IFRS16: Feb-25 TU said £9.7m (provisional), Apr-25 audited said £9.6m — the later audited figure governs. On a post-IFRS16 basis the Group moved from net cash £4.9m (FY24) to net debt £(2.5)m (FY25) → ⛔ Tier-1. The Group's own preferred pre-IFRS16 measure stayed net cash at £1.5m and beat the £(2.7)m consensus.</p>
+</details>
+
+<details>
+<summary>Turn methodology &amp; restatement basis</summary>
+<p><b>Turn methodology.</b> Every Δ and turn arrow above was recomputed in one script from RNS-printed £m/percentage values (Stage C of the AUDIT), with the comparison basis hard-coded per metric type: <b>snapshot</b> metrics (Rank 5) compare position-to-position at their own disclosure grain (H1-vs-H1, FY-vs-FY); <b>flow</b> metrics (Ranks 2 and 4) compare like-period-to-like-period strictly within the same basis cohort (A = as-first-printed; B = restated ex-discontinued; C = continuing ex-PeoplePlus) — no cross-basis arithmetic is scored, and both cohort values are shown in the cell where the company printed both; <b>rate</b> metrics (Ranks 1 and 3) are scored on the seasonally-matched delta of the rate itself (H1-vs-H1, FY-vs-FY, Q4-vs-Q4), never sequentially H1-to-FY, and never on absolute level. Bands: H-grain ±2.0pp, Q-grain ±5.0pp. H2 derivations (†) are FY minus H1 within one cohort only, workings shown once per rank, second-route cross-check stated where available. Click any period header to highlight every column of that type.</p>
+<p><b>Restatement &amp; provenance.</b> ʳ sources: FY22 GP £83.2m → £82.0mʳ (restated ex-discontinued, FY23 results); H1-24 GP £31.2mʳ / OP £2.4mʳ and FY24 OP £7.2mʳ (continuing ex-PeoplePlus, restated in FY25-cycle documents); FY24 discontinued loss £12.4m → £14.9mʳ (FY25 prior-year adjustment — discontinued only, no scored cell touched). Later-audited-governs: FY24 net cash £9.7m (Feb-25 TU, provisional) → £9.6m (Apr-25 audited); FY25 OP £12.7m (Jan-26 TU) → £13.0m (Mar-26 audited). Missing-document provenance: the FY22 and FY23 trading updates announced by the Notices of 13-Jan-23 and 12-Jan-24 are absent from the project record → ⊘ columns. Buy/Sell column: AGM TU 18-May-26, rightmost, bold throughout the grid.</p>
+</details>
+</section>
+
+<!-- ================= §2.0 ================= -->
+<section>
+<h2>§2.0 Most-Recent-RNS Current-State Read</h2>
+<details>
+<summary>The four checks — workings behind the read</summary>
+<p class="prose" style="margin-top:10px"><b>Unaudited Interim Results (H1 2026), 28 July 2026</b> — scored four ways.</p>
+<table class="prose" style="max-width:1100px;background:#fff">
+<tr><th style="width:200px">Check</th><th>Read</th><th style="width:190px">Colour</th></tr>
+<tr><td><b>1. Sequential</b></td><td>vs AGM-26 TU (18-May): hours +9.1% (4mo) → +10.7% (H1) — the half accelerated <i>through</i> the TU's window; GP conversion 13.9% vs FY25's 16.6% is seasonal (H2-weighted), not a decline.</td><td>🟢 accelerating</td></tr>
+<tr><td><b>2. Same-type vs LY</b></td><td>H1 R vs H1 R: revenue +15.2% vs +8.7%; GP +13.3% vs +6.1%; OP £5.2m vs £3.3m; hours +10.7% vs +4.4% (+6.3pp, outside ±2.0 band); conversion 13.9% vs 10.0%. Every scored line accelerated vs the year-ago same-type document.</td><td>🟢 broad acceleration</td></tr>
+<tr><td><b>3. Derivable sub-period</b></td><td>4mo +9.1% (AGM TU) + H1 +10.7% ⇒ May–Jun ran ≈+13.9%† (derived, watch-flag); June reported +16.1%, final week +18.3%. Exit rate above the half average — front-loaded strength with an <i>accelerating</i> exit, the mirror of FY25's backward-loaded shape. June flattered by weather + World Cup (bounded, disclosed).</td><td>🟢 accelerating exit</td></tr>
+<tr><td><b>4. Guidance vs prior guide</b></td><td>"In line" (AGM-26) → <b>"towards the top end of market expectations"</b>, anchored: FY26 PBT £8.7–9.2m printed in the RNS — the first numeric consensus range ever carried in a STAF RNS. Top end = +24.3% on FY25's £7.4m. Anchored top-of-range = 🟢 RAISE, condition 1 fires.</td><td>🟢 RAISE — G fire</td></tr>
+</table>
+</details>
+
+<div class="row20">
+<div class="bridge">
+  <div class="bhead">🍺 IDIOT'S GUIDE TO THE PROFIT BEFORE TAX BRIDGE — why profit went up (£0.6m → £2.9m)</div>
+  <table>
+    <tr class="bg-g"><td class="blabel">📦 A heatwave, a World Cup, and 2.3 million extra hours</td><td class="bamt" style="color:var(--green)">+£0.8m</td><td>GB temps worked 23.8 million hours, up 10.7% — sunshine sold drinks, football sold crisps, and someone had to pack it all. By June the hours were running 16.1% up. Extra profit from the British side: £0.8m.</td></tr>
+    <tr class="bg-g"><td class="blabel">👮 Dublin's finest, on Staffline's books</td><td class="bamt" style="color:var(--green)">+£0.7m</td><td>Ireland's profit doubled from £0.7m to £1.4m — a third of the jump in one small division. The engine: 33.3% more fees for filling permanent jobs, with a contract recruiting for the Irish police doing much of the hiring.</td></tr>
+    <tr class="bg-g"><td class="blabel">🤝 No goodbye-money this year</td><td class="bamt" style="color:var(--green)">+£0.4m</td><td>Last year's first half carried £0.4m of redundancy payouts from the slim-down. This year: none. That saving lands straight in the profit line without anyone lifting a finger.</td></tr>
+    <tr class="bg-g"><td class="blabel">🏦 The bank's bill got smaller</td><td class="bamt" style="color:var(--green)">+£0.4m</td><td>Interest paid fell from £2.7m to £2.3m — the Bank of England cut rates from 4.75% to 3.75%, and Staffline chased customer payments in quicker, so less was borrowed against unpaid invoices for less of the time.</td></tr>
+  </table>
+  <div class="bcap"><b>So in one sentence:</b> a sun-and-football summer of extra hours, a doubling Irish desk, no redundancy cheques to write and a smaller interest bill turned £0.6m into £2.9m. <b>Profit falls when:</b> hours from September onwards get measured against months that already had the big logistics contract in them, the Irish police stop hiring, or rising unpaid customer invoices (£162m, up a third) force more borrowing and the bank's bill grows again.</div>
+</div>
+<div class="csbar"><div class="csbarhead"><span class="em">🌡️</span> CURRENT STATE — the read right now</div><div class="csbarbody"><div>🟢 <b>TURNING UP — firmly held.</b> The strongest RNS in the 17-document record: every scored line accelerated vs the same-type prior (hours +4.4% → +10.7%, GP +6.1% → +13.3%, OP +57.6%, conversion 10.0% → 13.9%), the exit rate accelerated through the half (May–Jun ≈+13.9%†, Jun +16.1%), Ireland perm re-quantified at +33.3%, and the guide moved from "in line" to an anchored "towards the top end" of £8.7–9.2m PBT — a 🟢 RAISE. Green-shoot 2-of-3 FIRED. ⚠️ Receivables +34% vs revenue +15% (Tier-2, growth-explained, one period of rope); June flattered by weather + World Cup.</div></div></div>
+</div>
+<details>
+<summary>Notes</summary>
+<p><b>Resulting current-state colour: 🟢, firmly held</b> — the first RNS in the record where the bull case strengthens independently rather than the bear case losing a leg. Front-loaded strength with an accelerating exit is the exact mirror of FY25's backward-loaded shape.</p>
+<p><b>Drivers at entry (decomposition rule):</b> An Garda contract enters as the named Ireland-perm driver — noted at entry (+33.3%, "much of the growth") so its roll-off can be netted; weather + World Cup is a bounded, disclosed flatterer of June's +16.1% and expires with the summer. Culina completes its exhausted arc: the H1-26 base was contract-free, and from Sep-26 the comp includes it — the H2 prints are the first clean test.</p>
+<p><b>B/S sweep (renders on hit):</b> receivables £162.0m vs £120.7m (+34.2%) against revenue +15.2% — Tier-2 technically met, analytically explained (June's hours surge sits in end-June debtors, sized by the company at c.£4.0m of net debt; weekly-paid temp growth is working-capital-hungry by construction). One more period of the gap exhausts the explanation. Going-concern wording is clean 18-month boilerplate; interest cover improving (EBITDA/finance charges ≈3.0x vs 1.9x LY, covenant floor 2.25x); no wedge — non-underlying charges £nil this half.</p>
+</details>
+</section>
+
+<section>
+<h2>C-series — Consensus Yardstick (fires nothing, seeds no table)</h2>
+<p class="prose">Broker notes and datablock are a yardstick only: they size G fires and beats/misses against the consensus <i>as at that RNS's date</i>. Neither the direction call nor the trigger count moves on anything below.</p>
+<table class="prose" style="max-width:1100px">
+<tr><th style="width:230px">Yardstick</th><th>Reading</th></tr>
+<tr><td><b>Consensus EPS track</b></td><td>3.2p (18-May-25) → 3.6p (24-May-25, post-Culina) → held flat 8 months → 4.2p (26-Jan-26, post-FY25 TU) → 5.4p (28-Mar-26, post-results) → 5.8p (23-May-26, post-AGM TU) → 5.8p latest. <b>Net +81.2%; last-4-week trend FLAT.</b> Three discrete upward steps, zero downward.</td></tr>
+<tr><td><b>Target price</b></td><td>60p held unbroken since 24-May-25 — through every EPS upgrade. 60p on 3.6p was 16.7x; 60p on 5.8p is 10.3x. The TP has not kept pace with earnings.</td></tr>
+<tr><td><b>Culina sizing</b></td><td>FY25: c.£45m sales, £1.7m GP, £0.7m EBIT. FY26 full-year effect: £100m revenue, £5m GP, £3.3m EBIT less £0.6m financing. Mobilised Aug-25, fully ramped Sep-25.</td></tr>
+<tr><td><b>Brokers' own bear case</b></td><td>A corporate broker declining to upgrade on the May-26 AGM TU cites: Culina/Hovis ramped only Sep-25 giving "a soft comparator"; "Ireland had a soft H1 25"; the business is "typically H2 weighted." Independent corroboration that +14.6%/+9.1% is flattered — it fires nothing.</td></tr>
+<tr><td><b>FY26 consensus range (in-RNS)</b></td><td>PBT £8.7–9.2m, printed in the H1-26 RNS itself — first in-document numeric consensus in the record. "Towards the top end" ⇒ ≥ c.£9m vs FY25 £7.4m (+24.3% at the top). Same two paid houses compile it; the standing discount applies.</td></tr>
+<tr><td><b>Data defect noted</b></td><td>The datablock's EBITDA line reads H1/H2 5.1 / −5.1 against an FY25 audited actual of £16.5m. Yardstick data error; ignored, and never eligible to seed a grid cell.</td></tr>
+</table>
+<details>
+<summary>Notes</summary>
+<p>The C-series' most useful signal is the <b>shape</b>, not the level: three step-upgrades and zero downgrades in fourteen months, with the target price frozen throughout — consensus earnings have moved and the rating has not. Read against the G-column record, which shows the same asymmetry (three RAISEs, zero CUTs) from the same two houses that compile the consensus. A second discount on the EPS track: the share count fell 27% over the window (166m → 121m), so part of the 3.2p → 5.8p move is buyback mechanics, not earnings.</p>
+</details>
+</section>
+
+<!-- ================= §3 TEXT + G ================= -->
+<section>
+<h2>§3 Text + G — Language Track</h2>
+<table id="text3">
+<tr><th style="width:90px">Date</th><th style="width:80px">Doc</th><th style="width:80px">G</th><th style="width:300px">Guide met?</th><th>Verbatim forward-guidance phrase</th><th style="width:70px">Score</th></tr>
+<tr><td>2022-08-02</td><td class="doc" data-rowtype="H1">FY22<span class="doc2">H1 R</span></td><td>flat</td><td class="trail">—</td><td>"continues to trade in line with expectations"</td><td>⚪</td></tr>
+<tr><td>2023-03-21</td><td class="doc" data-rowtype="FYR">FY22<span class="doc2">R</span></td><td>flat</td><td class="trail"><span class="met">Aug-22 "in line" (verbal): met — OP £12.0m "marginally ahead" (no consensus figure printed)</span></td><td>underlying operating profit "marginally ahead of market expectations"</td><td>🟢</td></tr>
+<tr class="changed"><td>2023-06-12</td><td class="doc" data-rowtype="AGM">FY23<span class="doc2">AGM</span></td><td>flat</td><td class="trail">—</td><td>"Trading in the current financial year is forecast to remain in line with expectations, <b>with management anticipating full year revenues to be H2-weighted in line with its historic trend</b>" (🟢 → 🔴)</td><td>🔴</td></tr>
+<tr><td>2023-08-01</td><td class="doc" data-rowtype="H1">FY23<span class="doc2">H1 R</span></td><td>flat</td><td class="trail">—</td><td>"the Board expects the Group's FY 2023 results to be in line with expectations"</td><td>⚪</td></tr>
+<tr class="changed"><td>2024-03-19</td><td class="doc" data-rowtype="FYR">FY23<span class="doc2">R</span></td><td>🟢 raise</td><td class="trail"><span class="met">Jun-23 "in line" (verbal): met<br>Aug-23 "in line" (verbal): met — OP £10.3m "slightly ahead" (no consensus figure printed)</span></td><td>"full year underlying operating profit slightly ahead of market expectations" (⚪ → 🟢)</td><td>🟢</td></tr>
+<tr><td>2024-05-22</td><td class="doc" data-rowtype="AGM">FY24<span class="doc2">AGM</span></td><td>flat</td><td class="trail">—</td><td>"on track to deliver results in line with management expectations"</td><td>⚪</td></tr>
+<tr><td>2024-07-30</td><td class="doc" data-rowtype="H1">FY24<span class="doc2">H1 R</span></td><td>flat</td><td class="trail">—</td><td>"Board expects FY 2024 underlying operating profit to be in line with expectations"</td><td>⚪</td></tr>
+<tr class="changed"><td>2025-02-04</td><td class="doc" data-rowtype="FYTU">FY24<span class="doc2">TU</span></td><td>🟢🟢 raise</td><td class="trail">—</td><td>underlying operating profit "exceeding market expectations" (🟢 → 🟢🟢)</td><td>🟢🟢</td></tr>
+<tr class="changed"><td>2025-04-08</td><td class="doc" data-rowtype="FYR">FY24<span class="doc2">R</span></td><td>flat</td><td class="trail"><span class="met">May-24 "in line" (verbal): met<br>Jul-24 "in line" (verbal): met<br>Feb-25 cons. OP £10.1m: +9.9% (£11.1m, basis B); audited C-basis £10.1m = 0.0% vs the reset consensus</span></td><td>"trading to remain in line with current management expectations for FY 2025" — beside a named NI-headwind caution, capped at 0, conflict noted (🟢🟢 → ⚪)</td><td>⚪</td></tr>
+<tr class="changed"><td>2025-05-21</td><td class="doc" data-rowtype="AGM">FY25<span class="doc2">AGM</span></td><td>🟢 raise</td><td class="trail">—</td><td>"on track to deliver results in line with recently revised management expectations"; new contract "materially enhanced the Board's expectations of Group performance over the next three years" (⚪ → 🟢)</td><td>🟢</td></tr>
+<tr class="changed"><td>2025-07-29</td><td class="doc" data-rowtype="H1">FY25<span class="doc2">H1 R</span></td><td>flat</td><td class="trail">—</td><td>"trading in FY 2025 remains in line with management expectations"</td><td>⚪</td></tr>
+<tr class="changed"><td>2026-01-20</td><td class="doc" data-rowtype="FYTU">FY25<span class="doc2">TU</span></td><td>🟢🟢🟢 raise</td><td class="trail">—</td><td>"FY 2025 results expected to be significantly ahead of market expectations" (⚪ → 🟢🟢🟢)</td><td>🟢🟢🟢</td></tr>
+<tr class="changed"><td>2026-03-24</td><td class="doc" data-rowtype="FYR">FY25<span class="doc2">R</span></td><td>flat</td><td class="trail"><span class="met">Apr-25 "in line" (verbal): met<br>May-25 raise, "recently revised expectations" (no figure): met<br>Jul-25 "in line" (verbal): met<br>Jan-26 cons. OP £11.9m / PBT £6.0m: OP +9.2% / PBT +23.3% (£13.0m / £7.4m); vs audited-stage reset cons. £12.7m / £7.1m: +2.4% / +4.2%</span></td><td>"the Board expects trading to continue in line with its expectations for the year ending 31 December 2026" (🟢🟢🟢 → ⚪)</td><td>⚪</td></tr>
+<tr><td>2026-05-18</td><td class="doc" data-rowtype="AGM">FY26<span class="doc2">AGM</span></td><td>flat</td><td class="trail">—</td><td>"the Board remains confident that, notwithstanding the ongoing challenging macro-economic backdrop, FY 2026 results will be in line with management expectations"</td><td>⚪</td></tr>
+<tr class="changed"><td>2026-07-28</td><td class="doc" data-rowtype="H1">FY26<span class="doc2">H1 R</span></td><td>🟢🟢 raise</td><td class="trail">—</td><td>"Staffline well positioned to deliver full year results <b>towards the top end of market expectations</b>… FY 2026 Profit before tax market expectations are in the range of £8.7m to £9.2m" — first numeric consensus range printed in an RNS; anchored top-of-range (⚪ → 🟢🟢)</td><td>🟢🟢</td></tr>
+</table>
+<details>
+<summary>Notes</summary>
+<p><b>G-scan credibility read:</b> three RAISEs in the trailing ~16 months (Feb-25, May-25, Jan-26), zero CUTs in the full window. Beat magnitude vs company-compiled consensus fell as the language escalated: FY23 "slightly ahead"; FY24 "exceeding" = +9.9% (£11.1m vs £10.1m); FY25 "significantly ahead" = +6.7% at the TU stage (£12.7m vs £11.9m). The FY25 audited-stage "significantly ahead" is measured against a consensus already reset to the TU's own actuals (£13.0m vs £12.7m = +2.4%) — circular, and read with a discount. Note also FY24 audited landed exactly on the £10.1m consensus it had already reset. <b>The consensus itself is the discount:</b> the RNS footnotes define it as "the mean average of <i>two</i> analyst estimates" — those two houses are Zeus ("contractually engaged and paid by Staffline") and Panmure Liberum ("acts as corporate broker… for which it receives compensation"). Per the data-integrity rule, a two-house consensus compiled by the company from its own paid brokers is management guidance laundered through the house notes. Every beat magnitude above (+9.9%, +6.7%, +2.4%) is measured against that, and the RAISE record carries the discount the arrangement earns. Recurring NI/interest-rate caution at FY24 TU, FY24 results and FY25 TU is calibration, not a fresh flag. Two rows were re-scored at audit: Jun-23 ⚪ → 🔴 (first H2-weighting flag, previously clipped from the quote) and May-25 🟢🟢 → 🟢 (no anchor phrase for the higher band). <b>Guide-met? trail read:</b> every FY resolution in the window lands met-or-beat, with in-year guides sitting well below the delivered outturn (FY25: Jan-26 guide still −9.2% on OP and −23.3% on PBT versus the final actual) — a conservative/sandbagging shape, but the denominator throughout is the two-paid-house consensus, so the reliability read carries the same discount as the RAISE record. <b>H1-26 update:</b> the Jul-26 RAISE is the first anchored to a numeric range printed in the RNS itself (PBT £8.7–9.2m — the same two-house consensus, now disclosed in-document rather than in broker notes); "towards the top end" therefore means ≥ c.£9m, +24% on FY25, and the fourth RAISE in ~18 months against zero CUTs.</p>
+</details>
+</section>
+
+<!-- ================= §4 DRIFT ================= -->
+<section>
+<h2>§4 · Drift — what they've gone quiet about</h2>
+<div class="sub" style="margin-bottom:12px">Which numbers get shared, hedged, or dropped, document by document — going quiet is the signal. (Framework: the disclosure matrix; Drift is trigger condition 3.)</div>
+<div class="gridwrap">
+<table id="drift">
+<tr>
+  <th style="width:200px">Metric</th>
+  <th class="ph" data-k="H1R">H1-22R</th>
+  <th class="ph" data-k="FYR">FY22R</th>
+  <th class="ph" data-k="FYTU">⊘ FYTU-23</th>
+  <th class="ph" data-k="AGM">AGM-23TU</th>
+  <th class="ph" data-k="H1R">H1-23R</th>
+  <th class="ph" data-k="FYTU">⊘ FYTU-24</th>
+  <th class="ph" data-k="FYR">FY23R</th>
+  <th class="ph" data-k="AGM">AGM-24TU</th>
+  <th class="ph" data-k="H1R">H1-24R</th>
+  <th class="ph" data-k="FYTU">FYTU-25</th>
+  <th class="ph" data-k="FYR">FY24R</th>
+  <th class="ph" data-k="AGM">AGM-25TU</th>
+  <th class="ph" data-k="H1R">H1-25R</th>
+  <th class="ph" data-k="FYTU">FYTU-26</th>
+  <th class="ph" data-k="FYR">FY25R</th>
+  <th class="ph" data-k="AGM">AGM-26TU</th>
+  <th class="ph" data-k="H1R">H1-26R</th>
+</tr>
+<tr><td>GB temp hours (YoY%/abs)</td>
+  <td>—</td><td>✅ 44.0m</td><td>⊘</td><td>🟡</td><td>—</td><td>⊘</td><td>✅ 41.4m</td><td>✅ 8.6%</td><td>✅ 9.2%</td><td>✅ 10%</td><td>✅ 45.6m</td><td>✅ 6.6%</td><td>✅ 4.4%</td><td>✅ 6.8%</td><td>✅ 48.7m</td><td>✅ 9.1%</td><td>✅ 23.8m/+10.7%</td></tr>
+<tr><td>GB Q4 peak hours (YoY%)</td>
+  <td>—</td><td>—</td><td>⊘</td><td>—</td><td>—</td><td>⊘</td><td>—</td><td>—</td><td>—</td><td>✅ 12.3%</td><td>—</td><td>—</td><td>—</td><td>✅ 11.1%</td><td>✅ 11.1%</td><td>—</td><td>—</td></tr>
+<tr><td>Group GP £m</td>
+  <td>✅ 39.9</td><td>✅ 83.2</td><td>⊘</td><td>🟡</td><td>✅ 38.0</td><td>⊘</td><td>✅ 80.8</td><td>🟡</td><td>✅ 38.2</td><td>✅ 88.1</td><td>✅ 70.8</td><td>✅ 6.2%</td><td>✅ 33.1</td><td>✅ 78.3</td><td>✅ 78.3</td><td>✅ 14.6%</td><td>✅ 37.5</td></tr>
+<tr><td>Ireland perm fees %</td>
+  <td>🟡</td><td>✅ +45%</td><td>⊘</td><td>🟡</td><td>🟡</td><td>⊘</td><td>✅ −12%</td><td>✅ +25%</td><td>✅ +30%</td><td>✅ +38%</td><td>✅ +38%</td><td>—</td><td>✅ +23.1%</td><td>✅ +10.3%</td><td>✅ +10.3%</td><td>—</td><td>✅ +33.3%</td></tr>
+<tr><td>Group OP £m</td>
+  <td>✅ 4.0</td><td>✅ 12.0</td><td>⊘</td><td>🟡</td><td>✅ 2.4</td><td>⊘</td><td>✅ 10.3</td><td>🟡</td><td>✅ 2.9</td><td>✅ 11.1</td><td>✅ 10.1</td><td>🟡</td><td>✅ 3.7</td><td>✅ 12.7</td><td>✅ 13.0</td><td>🟡</td><td>✅ 5.2</td></tr>
+<tr><td>Net cash pre-IFRS16 £m</td>
+  <td>✅ (9.7)</td><td>✅ 5.0</td><td>⊘</td><td>—</td><td>✅ (3.5)</td><td>⊘</td><td>✅ 3.8</td><td>—</td><td>✅ (9.2)</td><td>✅ 9.7</td><td>✅ 9.6</td><td>—</td><td>✅ (5.7)</td><td>✅ 1.5</td><td>✅ 1.5</td><td>—</td><td>✅ (14.6)</td></tr>
+<tr><td>GB permanent fees £m</td>
+  <td>—</td><td>✅ 3.9</td><td>⊘</td><td>—</td><td>—</td><td>⊘</td><td>✅ 3.5</td><td>—</td><td>—</td><td>—</td><td>✅ 3.7</td><td>—</td><td>—</td><td>—</td><td>✅ 3.4</td><td>—</td><td>✅ 1.8/+5.9%</td></tr>
+<tr><td>Ireland temp hours (m)</td>
+  <td>—</td><td>✅ 6.7</td><td>⊘</td><td>—</td><td>—</td><td>⊘</td><td>✅ 6.2</td><td>—</td><td>—</td><td>—</td><td>✅ 5.6</td><td>—</td><td>—</td><td>—</td><td>✅ 4.9</td><td>🟡</td><td>✅ 2.5</td></tr>
+</table>
+</div>
+<div class="meth">Period-type key — <b>H1R</b> H1 results · <b>FYR</b> FY results · <b>FYTU</b> FY trading update · <b>AGM</b> AGM trading update · <b>⊘</b> expected update not issued. Click any header to highlight every column of that type.</div>
+<details>
+<summary>Notes</summary>
+<p><b>Manifest 15 qualifying documents + 2 ⊘ = 17 Drift columns</b> (H1-26 Interim Results, 28-Jul-26, added as an incremental read). <b>First note, rightmost column (H1-26 R):</b> nothing withheld — a full-quantification column. Ireland perm fees re-quantified at H1 grain (+33.3%), continuing the green shoot; two disclosure <i>expansions</i>: GB hours absolute now printed at H1 grain (23.8m, first time) and a numeric consensus PBT range (£8.7–9.2m) printed inside an RNS for the first time — baseline for that habit starts today. Prior first-note (AGM-26 TU) retained below for the audit trail.</p>
+<p> (Corrected: the FY24 and FY25 cycles each issued a separate TU <i>and</i> results document — Feb-25/Apr-25 and Jan-26/Mar-26 — so the qualifying count is 14, not the 12 stated in the prior build.) The ⊘ columns are the FY22 and FY23 trading updates announced by the Notices of 13-Jan-23 and 12-Jan-24 (for 24-Jan-23 and 23-Jan-24) but absent from the record — expected updates not held, distinct from a withhold. <b>First note, rightmost column (AGM-26 TU):</b> Ireland perm fees qualitative ("buoyant permanent recruitment activity"). This is a <b>—</b>, not a ❌: the metric was quantified at only 1 of 3 prior AGM TUs (+25% at AGM-24, absent at AGM-23 and AGM-25), which is a patchy habit, not an established cadence — so Drift condition 3 does not fire, and the deterioration count falls to 1-of-3. Six cells were corrected at audit: FY23R Ireland perm 🟡→✅ (−12% is printed), H1-22R Ireland perm ✅→🟡 (the +113%/+111% figures are Group and GB, not Ireland), FY22R/FY23R GB perm —→✅, FY22R GB hours ⊘→✅ (44.0m is printed), AGM-26TU Ireland perm ❌→—.</p>
+</details>
+</section>
+
+<!-- ================= §5 C-SERIES MARKET BACKDROP ================= -->
+<section>
+<h2>§5 · C-series — UK temp market backdrop (REC/KPMG)</h2>
+<div class="sub" style="margin-bottom:12px">Yardstick only — fires nothing, seeds nothing. Monthly temp billings direction vs prior month (diffusion survey, ~400 UK agencies, S&amp;P Global). Direction/intensity only; index values not public. ᵈ = directly reported; unmarked = inferred from the reports' own "first rise since…" statements. Check the latest 2–3 months before every RNS — the only external read on the window each STAF update can't yet show.</div>
+<table class="prose" style="max-width:1100px;background:#fff" id="cseries">
+<tr><th style="width:100px">Month</th><th style="width:110px">Direction</th><th>Detail</th><th style="width:180px">STAF overlay</th></tr>
+<tr><td>Jul-24</td><td>🔴</td><td>Fell fractionally — firms not renewing expiring contracts ᵈ</td><td rowspan="2" style="background:#fdecea">H2-24 (FY24 +10.1% 🟢)</td></tr>
+<tr><td>Aug–Dec-24</td><td>🔴 ×5</td><td>Unbroken declines; Nov the fifth successive, post-Budget uncertainty ᵈ</td></tr>
+<tr><td>Jan–Jun-25</td><td>🔴 ×6</td><td>Declines throughout (established by Oct-25 being "first rise since Jun-24")</td><td style="background:#fdecea">H1-25 +4.4% (−4.8pp 🔴 fired)</td></tr>
+<tr><td>Jul–Aug-25</td><td>🔴 ×2</td><td>Declines continue</td><td rowspan="4" style="background:#fdecea">H2-25 (FY25 +6.8%, −3.2pp 🔴 fired; Q4 +11.1%)</td></tr>
+<tr><td>Sep-25</td><td>🔴🔴</td><td>Fell at a solid pace, quicker than August ᵈ</td></tr>
+<tr><td>Oct-25</td><td>🟢</td><td>Slight rise — first since Jun-24 ᵈ</td></tr>
+<tr><td>Nov–Dec-25</td><td>🔴 ×2</td><td>Renewed declines; Dec quicker but mild ᵈ</td></tr>
+<tr><td>Jan-26</td><td>🟢</td><td>Marginal rise; vacancies still falling, budgets squeezed ᵈ</td><td rowspan="5" style="background:#e9f5ee">H1-26 delivered: hours +10.7% (May–Jun ≈+13.9%†, Jun +16.1%) — the market surge converted ~1:1</td></tr>
+<tr><td>Feb-26</td><td>🔴</td><td>Declined modestly after January's uptick ᵈ</td></tr>
+<tr><td>Mar-26</td><td>🔴</td><td>Fell at a modest pace, slower than February ᵈ</td></tr>
+<tr><td>Apr-26</td><td>🟢</td><td>Fresh marginal increase — flexibility preference emerging ᵈ</td></tr>
+<tr><td>May–Jun-26</td><td>🟢🟢 → 🟢🟢🟢</td><td>Strongest rises in over three years, Blue Collar strongest category, second consecutive acceleration into a three-year high ᵈ</td></tr>
+</table>
+<details style="margin-top:14px">
+<summary>Notes</summary>
+<p><b>How to read it:</b> billings = hours × pay rate — STAF states pay rises pass through to customers and add no absolute gross profit, so only the hours share of a billings move converts; direction only, no magnitude read-across. The entire STAF drift record to Apr-26 sat against a market falling ~15+ consecutive months — every print was share-gain against a shrinking market, so the H1-25/FY25 Rank-1 fires read as outperformance-gap fading, not demand rolling over. The Apr→Jun-26 turn is the first market tailwind anywhere in the record and covers exactly the months the AGM TU couldn't show. Caveat: even at the Jun-26 high, total vacancies had fallen 32 straight months — substitution demand inside a shrinking market, reversible when confidence returns. Discrepancy on record: the Jan-26 report says "second rise since May-24", the Nov-25 report "first since Jun-24" — one month apart on the last 2024 uptick; shape unaffected. Sources: KPMG/REC UK Report on Jobs press releases, Jul-24→Jul-26 issues, read Jul-26.</p>
+<p>• A STAF deceleration landing while this column runs 🟢 is a far worse signal than the same print against 🔴 — score the market column before excusing or crediting any Rank-1 move.</p>
+</details>
+</section>
+
+<script>
+(function(){
+  var fg=document.getElementById('fg');
+  fg.querySelectorAll('th.ph').forEach(function(h){
+    h.addEventListener('click',function(){
+      var p=h.dataset.p, hs=Array.prototype.slice.call(fg.querySelectorAll('th.ph'));
+      var idx=hs.filter(function(x){return x.dataset.p===p;}).map(function(x){return x.cellIndex;});
+      var on=h.classList.contains('hl');
+      fg.querySelectorAll('.hl').forEach(function(c){c.classList.remove('hl');});
+      if(on) return;
+      fg.querySelectorAll('tr').forEach(function(r){
+        idx.forEach(function(i){ if(r.cells[i] && r.cells[i].colSpan===1) r.cells[i].classList.add('hl'); });
+      });
+    });
+  });
+  var dr=document.getElementById('drift');
+  dr.querySelectorAll('th.ph').forEach(function(h){
+    h.addEventListener('click',function(){
+      var k=h.dataset.k, hs=Array.prototype.slice.call(dr.querySelectorAll('th.ph'));
+      var idx=hs.filter(function(x){return x.dataset.k===k;}).map(function(x){return x.cellIndex;});
+      var on=h.classList.contains('hl');
+      dr.querySelectorAll('.hl').forEach(function(c){c.classList.remove('hl');});
+      if(on) return;
+      dr.querySelectorAll('tr').forEach(function(r){
+        idx.forEach(function(i){ if(r.cells[i]) r.cells[i].classList.add('hl'); });
+      });
+    });
+  });
+  var t3=document.getElementById('text3');
+  t3.querySelectorAll('td.doc').forEach(function(d){
+    d.addEventListener('click',function(){
+      var k=d.dataset.rowtype, on=d.classList.contains('hlpink');
+      t3.querySelectorAll('.hlpink').forEach(function(c){c.classList.remove('hlpink');});
+      if(on) return;
+      t3.querySelectorAll('td.doc').forEach(function(c){ if(c.dataset.rowtype===k) c.parentElement.querySelectorAll('td').forEach(function(x){x.classList.add('hlpink');}); });
+    });
+  });
+})();
+</script>
+</body>
+</html>
