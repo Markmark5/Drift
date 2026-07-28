@@ -42,6 +42,20 @@
       "spec_version": "v3.14",
       "next_test": "AGM 24 Sep 2026 — autumn heating-oil demand",
       "url": "NWF.html"
+    },
+    {
+      "ticker": "LUCE",
+      "company": "Luceco plc",
+      "direction": "up",
+      "headline": "FY27 guided above consensus — but the FY26 upgrade run stops at a held >£40m as Demand Flexibility economics reset.",
+      "trigger": "1 green-shoot",
+      "alert": false,
+      "rns_type": "H1 FY26 TU",
+      "rns_date": "2026-07-28",
+      "build_date": "2026-07-28",
+      "spec_version": "v3.10",
+      "next_test": "H1 results 22 Sep 2026 — DF economics quantified, CEO successor named",
+      "url": "LUCE.html"
     }
   ]
 }
