@@ -140,6 +140,20 @@
       "spec_version": "3.16",
       "next_test": "H1 FY27 (six months to Aug-26): Content Creation above £63.6m, and whether gross margin holds above 45%.",
       "url": "TUNE.html"
+    },
+    {
+      "ticker": "QTX",
+      "company": "Quartix Technologies plc",
+      "direction": "down",
+      "headline": "Leading KPIs confirmed lower at the interims while profit beat its own three-week-old estimate; guide held a third time — the raises have stopped.",
+      "trigger": "2-of-3 deterioration: Hard (leading-rank deceleration, 3 prints) + Text (08-Jul-26 −1, first H2-lean); Drift clean",
+      "alert": true,
+      "rns_type": "H1 Results",
+      "rns_date": "2026-07-27",
+      "build_date": "2026-07-29",
+      "spec_version": "v3.15",
+      "next_test": "Oct-26 Q3 TU: broker model needs a ~£1.2m Q3 ARR add — the test is now consensus-anchored.",
+      "url": "QTX.html"
     }
   ]
 }
