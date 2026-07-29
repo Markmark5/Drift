@@ -210,6 +210,20 @@
       "spec_version": "v3.16",
       "next_test": "Nov-26 H1: does H1 FY27 PBT confirm guided weak-then-recover, or undershoot £12–15m?",
       "url": "SFR.html"
+    },
+    {
+      "ticker": "GNS",
+      "company": "Genus plc",
+      "direction": "up",
+      "headline": "Fourth straight guide raise since Jan-25; FY26 PBT ≈£98m, moderately ahead of consensus; China JV proceeds cut leverage to ~0.4x.",
+      "trigger": "green-shoot mirror 2-of-3 (guide-raise sequence + rising language; balance-sheet mirror outside the count)",
+      "alert": true,
+      "rns_type": "FY26 Trading Update",
+      "rns_date": "2026-07-14",
+      "build_date": "2026-07-29",
+      "spec_version": "3.16",
+      "next_test": "FY26 prelim (10-Sep-26): resume China royalty-customer count, give H2 PIC/ABS splits, set pro-forma post-deconsolidation FY27 base.",
+      "url": "GNS.html"
     }
   ]
 }
