@@ -154,6 +154,20 @@
       "spec_version": "v3.15",
       "next_test": "Oct-26 Q3 TU: broker model needs a ~£1.2m Q3 ARR add — the test is now consensus-anchored.",
       "url": "QTX.html"
+    },
+    {
+      "ticker": "SOLI",
+      "company": "Solid State plc",
+      "direction": "up",
+      "headline": "FY26 beats consensus on revenue & profit; \"exceed\" FY27 guide issued; all three divisions grow; quality of earnings improving.",
+      "trigger": "2 of 3 green-shoot: Hard (rev + PBT growing 2+ prints + consensus beat) + Text (2 consecutive up-scores from trough); G RAISE on Buy/Sell RNS; Drift green shoots (OB re-quantified, 3-division disclosure expansion)",
+      "alert": true,
+      "rns_type": "FY Results",
+      "rns_date": "2026-06-29",
+      "build_date": "2026-07-27",
+      "spec_version": "v3.16",
+      "next_test": "H1 FY27 TU (Oct/Nov-26) & H1 R (Dec-26): OB >£90m; margin >7%; CAIN follow-on order; guide tone; AI component cost pressure vs opportunity.",
+      "url": "SOLI.html"
     }
   ]
 }
