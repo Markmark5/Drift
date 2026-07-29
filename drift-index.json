@@ -224,6 +224,20 @@
       "spec_version": "3.16",
       "next_test": "FY26 prelim (10-Sep-26): resume China royalty-customer count, give H2 PIC/ABS splits, set pro-forma post-deconsolidation FY27 base.",
       "url": "GNS.html"
+    },
+    {
+      "ticker": "CML",
+      "company": "CML Microsystems Plc",
+      "direction": "watch",
+      "headline": "Order-book disclosure and sequential revenue have turned up before the P&L — FY26's £1.93m trading loss is the printed bottom to test, not the direction.",
+      "trigger": "deterioration 3-of-3 (printed: Hard + Text/G + Drift) + green mirror 2-of-3 (live: sequential revenue + disclosure resumption)",
+      "alert": true,
+      "rns_type": "FY Results",
+      "rns_date": "2026-06-17",
+      "build_date": "2026-07-29",
+      "spec_version": "v3.16",
+      "next_test": "FY27 H1 (Nov-26): does revenue growth convert to a pre-exceptional operating profit, or does NRE-mix keep trading negative? Watch dividend cover.",
+      "url": "CML.html"
     }
   ]
 }
