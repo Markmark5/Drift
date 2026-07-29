@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-28",
+  "updated": "2026-07-29",
   "tickers": [
     {
       "ticker": "STAF",
@@ -56,6 +56,20 @@
       "spec_version": "v3.10",
       "next_test": "H1 results 22 Sep 2026 — DF economics quantified, CEO successor named",
       "url": "LUCE.html"
+    },
+    {
+      "ticker": "ANP",
+      "company": "Anpario plc",
+      "direction": "watch",
+      "headline": "Record FY25 everywhere — but the margin engine has stopped climbing, and Anpario has quietly stopped printing volumes and prices.",
+      "trigger": "Text + Drift (2 of 3); Hard/G watch-flagged",
+      "alert": true,
+      "rns_type": "AGM Statement",
+      "rns_date": "2026-06-18",
+      "build_date": "2026-07-28",
+      "spec_version": "3.16",
+      "next_test": "9 Sep 2026 interims — the printed H1 gross margin, and whether volumes and prices reappear.",
+      "url": "ANP.html"
     }
   ]
 }
