@@ -84,6 +84,20 @@
       "spec_version": "3.15",
       "next_test": "H1 26 organic vs 17%; net debt vs Kvadrant's £18m envelope; whether a quantified guide — or the H1 TU — returns.",
       "url": "ELIX.html"
+    },
+    {
+      "ticker": "MIDW",
+      "company": "Midwich Group plc",
+      "direction": "up",
+      "headline": "H1-26 delivers organic revenue and profit growth (+10% PBT) — the turn is now in the numbers; Middle East the one live H2 drag.",
+      "trigger": "green-shoot 2-of-3",
+      "alert": true,
+      "rns_type": "H1 TU",
+      "rns_date": "2026-07-21",
+      "build_date": "2026-07-28",
+      "spec_version": "3.16",
+      "next_test": "22 Sep H1 results confirming £10.6m PBT and organic-positive holding, plus a Middle East H2 read",
+      "url": "MIDW.html"
     }
   ]
 }
