@@ -106,6 +106,7 @@
   .vrow td{background:#fff}
   .vrow td.lab{text-align:left !important; color:var(--mute); font-style:italic; font-size:11.5px}
   .val{font-weight:700; display:block; font-size:13px}
+  .val .neg{color:var(--red)}
   .delta{display:block; font-size:11px; color:var(--mute); margin-top:2px}
   .delta.neg{color:var(--red)}
   td.bs-col{background:#fcfbf8 !important}
@@ -115,7 +116,7 @@
   tr.agg td{background:#fff; border-top:2px solid var(--ink); color:var(--mute); font-size:11.5px; padding:6px 4px}
   tr.agg td.lab{text-align:left !important; font-style:italic}
   tr.agg .aval{font-weight:700; color:var(--mute)}
-  tr.agg .anote{display:block; font-size:10.5px; margin-top:1px}
+  tr.agg .anote{display:inline; font-size:10.5px; margin-left:5px}
 
   /* ---------- RANK 1 ADDENDUM: CONTRACT WINS ---------- */
   h3.addh{
@@ -338,7 +339,7 @@
 
 <!-- ============ §2 GRID ============ -->
 <h2 class="wide">§2 · Unified Forward Grid</h2>
-<p class="lede">5 ranks = 5 grid blocks. Sub-period (half) spine, full lookback: 8 period columns, H2 FY22 → H1 FY26. Parent years sit on the aggregate row beneath each rank — transcribed from company-printed totals, never scored, no arrows. Click any period header to highlight every column of that type. Empty cells are unfilled grid slots — cadence information, not gaps.</p>
+<p class="lede">5 ranks = 5 grid blocks. ᶠ = comp sourced from the 12-Jul-22 H1 FY22 interims (H1 FY22 rev £22.8m · H2 FY22† £16.3m · order book May-22 £29.6m · net cash May-22 £4.2m) — figures folded in on operator instruction; manifest/Drift column update for that document pending. Sub-period (half) spine, full lookback: 8 period columns, H2 FY22 → H1 FY26. Parent years sit on the aggregate row beneath each rank — transcribed from company-printed totals, never scored, no arrows. Click any period header to highlight every column of that type. Empty cells are unfilled grid slots — cadence information, not gaps.</p>
 
 <div class="gridwrap">
 <table class="grid" id="g2">
@@ -375,33 +376,33 @@
     </tr>
     <tr class="agg">
       <td class="lab">FY-end position</td>
-      <td><span class="aval">24.4</span></td>
-      <td colspan="2"><span class="aval">29.2</span></td>
-      <td colspan="2"><span class="aval">38.5</span></td>
-      <td colspan="2"><span class="aval">26.5</span></td>
+      <td><span class="aval">24.4</span><span class="anote">+3.4%</span></td>
+      <td colspan="2"><span class="aval">29.2</span><span class="anote">+19.7%</span></td>
+      <td colspan="2"><span class="aval">38.5</span><span class="anote">+31.8%</span></td>
+      <td colspan="2"><span class="aval">26.5</span><span class="anote">−31.2%</span></td>
       <td><span class="aval">—</span></td>
     </tr>
 
     <!-- RANK 2 -->
-    <tr class="secbar"><td colspan="9">Rank 2 — Group revenue <span class="nat">· cumulative flow: like-period-to-like-period; HonH sequential is the primary trigger</span></td></tr>
+    <tr class="secbar"><td colspan="9">Rank 2 — Group revenue <span class="nat">· cumulative flow: seasonally matched, H1-vs-H1 / H2-vs-H2 (operator display override — sequential record retained in methodology)</span></td></tr>
     <tr class="strip"><td class="lab">Period</td><td>H2</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td class="bs-col">H1</td></tr>
     <tr class="vrow">
-      <td class="lab">£m · HonH sequential</td>
+      <td class="lab">£m · YoY like-for-like</td>
       <td><span class="val">—</span><span class="delta">no half split printed</span></td>
-      <td><span class="val">21.9</span><span class="delta">— · YoY —</span></td>
-      <td><span class="val">27.2†</span><span class="delta">+24.2% 🟢↗</span></td>
-      <td><span class="val">26.3</span><span class="delta neg">−3.3% 🔴↘ · YoY +20.1%</span></td>
-      <td><span class="val">29.5†</span><span class="delta">+12.2% 🟢↗</span></td>
-      <td><span class="val">35.5</span><span class="delta">+20.3% 🟢↗ · YoY +35.0%</span></td>
-      <td><span class="val">32.6†</span><span class="delta neg">−8.2% 🔴↘</span></td>
+      <td><span class="val">21.9 <span class="neg">(−3.9%ᶠ)</span></span><span class="delta">—</span></td>
+      <td><span class="val">27.2† (+66.9%ᶠ)</span><span class="delta">⚠️ base effect</span></td>
+      <td><span class="val">26.3 (+20.1%)</span><span class="delta">🟢↗ +24.0ppᶠ</span></td>
+      <td><span class="val">29.5† (+8.5%)</span><span class="delta">⚠️ n/m — base</span></td>
+      <td><span class="val">35.5 (+35.0%)</span><span class="delta">🟢↗ +14.9pp</span></td>
+      <td><span class="val">32.6† (+10.5%)</span><span class="delta">🟡→ +2.0pp</span></td>
       <td class="bs-col"><span class="val">❌</span><span class="delta">— (fwd £62.0m fn)</span></td>
     </tr>
     <tr class="agg">
       <td class="lab">FY aggregate</td>
       <td><span class="aval">39.1</span></td>
       <td colspan="2"><span class="aval">49.1</span><span class="anote">+25.6%</span></td>
-      <td colspan="2"><span class="aval">55.8</span><span class="anote">+13.6% · Δrate −11.9pp</span></td>
-      <td colspan="2"><span class="aval">68.1</span><span class="anote">+22.0% · Δrate +8.4pp · ⚠️ front-loaded — H2 governs</span></td>
+      <td colspan="2"><span class="aval">55.8</span><span class="anote">+13.6% · −11.9pp</span></td>
+      <td colspan="2"><span class="aval">68.1</span><span class="anote">+22.0% · +8.4pp · ⚠️ front-loaded — H2 governs</span></td>
       <td><span class="aval">—</span><span class="anote">guide £62.0m</span></td>
     </tr>
 
@@ -411,12 +412,12 @@
     <tr class="vrow">
       <td class="lab">£m · margin</td>
       <td><span class="val">—</span><span class="delta">no half split printed</span></td>
-      <td><span class="val">1.7ʳ</span><span class="delta">7.8%</span></td>
-      <td><span class="val">3.1†ʳ</span><span class="delta">11.4%</span></td>
-      <td><span class="val">2.8ʳ</span><span class="delta">10.6%</span></td>
-      <td><span class="val">3.4†ʳ</span><span class="delta">11.5%</span></td>
-      <td><span class="val">4.2</span><span class="delta">11.8% ʳ</span></td>
-      <td><span class="val">4.3†</span><span class="delta">13.2%</span></td>
+      <td><span class="val">1.7ʳ</span><span class="delta">margin 7.8%</span></td>
+      <td><span class="val">3.1†ʳ</span><span class="delta">margin 11.4%</span></td>
+      <td><span class="val">2.8ʳ (+64.7%)</span><span class="delta">margin 10.6%</span></td>
+      <td><span class="val">3.4†ʳ (+9.7%)</span><span class="delta">margin 11.5%</span></td>
+      <td><span class="val">4.2 (+50.0%)</span><span class="delta">margin 11.8% ʳ</span></td>
+      <td><span class="val">4.3† (+26.5%)</span><span class="delta">margin 13.2%</span></td>
       <td class="bs-col"><span class="val">❌</span><span class="delta neg">— (fwd £4.1m fn)</span></td>
     </tr>
     <tr class="agg">
@@ -451,10 +452,10 @@
     </tr>
     <tr class="agg">
       <td class="lab">FY-end position</td>
-      <td><span class="aval">4.3</span></td>
-      <td colspan="2"><span class="aval">4.6</span></td>
-      <td colspan="2"><span class="aval">9.6</span></td>
-      <td colspan="2"><span class="aval">14.1</span></td>
+      <td><span class="aval">4.3</span><span class="anote">−6.5%</span></td>
+      <td colspan="2"><span class="aval">4.6</span><span class="anote">+7.0%</span></td>
+      <td colspan="2"><span class="aval">9.6</span><span class="anote">+108.7%</span></td>
+      <td colspan="2"><span class="aval">14.1</span><span class="anote">+46.9%</span></td>
       <td><span class="aval">—</span><span class="anote">c.£3.3m programme drawdown guided</span></td>
     </tr>
 
@@ -468,8 +469,8 @@
       <td><span class="val">—</span><span class="delta">outside cadence</span></td>
       <td><span class="val">6.5</span><span class="delta">first print</span></td>
       <td><span class="val">6.7†</span><span class="delta">13.2 − 6.5</span></td>
-      <td><span class="val">5.7</span><span class="delta neg">−12.3% 🔴↘</span></td>
-      <td><span class="val">5.4†</span><span class="delta neg">−19.4% 🔴↘</span></td>
+      <td><span class="val">5.7 <span class="neg">(−12.3%)</span></span><span class="delta neg">🔴↘</span></td>
+      <td><span class="val">5.4† <span class="neg">(−19.4%)</span></span><span class="delta neg">🔴↘</span></td>
       <td class="bs-col"><span class="val">🟡</span><span class="delta neg">timing "unclear" 🔴</span></td>
     </tr>
     <tr class="agg">
@@ -538,7 +539,7 @@
 
 <details class="methoddrawer">
   <summary>Turn methodology &amp; restatement basis</summary>
-  <p><strong>Turn methodology.</strong> Every Δ, HonH, rate delta and Turn arrow in this grid is computed in one script, with the comparison basis hard-coded per metric type; the table transcribes script output. <strong>Snapshot metrics</strong> (order book, net cash) compare position-to-position at their own disclosure grain. <strong>Flow metrics</strong> (group revenue, adjusted EBITDA, energy revenue) compare like-period-to-like-period only — H1-vs-H1, FY-vs-FY, never H1-vs-9M. <strong>Sequential trigger (primary):</strong> at this H-grain, any negative HonH fires 🔴↘ on level regardless of year-comp; comp-flags annotate, never suppress. <strong>Rate trigger (secondary, banded):</strong> Δ(YoY rate) vs prior seasonally-matched period, H-grain ±2.0pp → 🟢↗ / 🟡→ / 🔴↘. Leading metrics are scored on direction of the company-reported delta vs the prior comparable print, never absolute level. First period in a series → —. Derived-only Turns (†) are watch flags until a reported sub-period corroborates; parent tie-out is arithmetic, not corroboration. <strong>Parent-vs-latest-sub-period divergence (v3.16):</strong> where a parent 🟢/🟡 contains a latest sub-period firing 🔴, the sub-period governs and the parent is flagged front/backward-loaded. <strong>Aggregate row (v3.16):</strong> parent years never occupy columns — they render on the aggregate row beneath each rank, transcribed from company-printed totals, never summed from the cells above, never scored, no arrows; the FY-grain Δrate values shown there (e.g. FY24 −11.9pp) are historical context only, their scored record retained in the chat build.</p>
+  <p><strong>Turn methodology.</strong> Every Δ, HonH, rate delta and Turn arrow in this grid is computed in one script, with the comparison basis hard-coded per metric type; the table transcribes script output. <strong>Snapshot metrics</strong> (order book, net cash) compare position-to-position at their own disclosure grain. <strong>Flow metrics</strong> (group revenue, adjusted EBITDA, energy revenue) compare like-period-to-like-period only — H1-vs-H1, FY-vs-FY, never H1-vs-9M. <strong>Sequential trigger (primary):</strong> at this H-grain, any negative HonH fires 🔴↘ on level regardless of year-comp; comp-flags annotate, never suppress. <strong>Operator display override:</strong> the revenue half-row displays seasonally matched YoY only (H1-vs-H1, H2-vs-H2); the sequential HonH record is unchanged and its fires stand — H1 FY24 −3.3% HonH (bounded, did not repeat) and <strong>H2 FY25 −8.2% HonH, a fired condition</strong>, carried by the aggregate row's ⚠️ front-loaded flag, §2.0 and the verdict. <strong>Rate trigger (secondary, banded):</strong> Δ(YoY rate) vs prior seasonally-matched period, H-grain ±2.0pp → 🟢↗ / 🟡→ / 🔴↘. Leading metrics are scored on direction of the company-reported delta vs the prior comparable print, never absolute level. First period in a series → —. Derived-only Turns (†) are watch flags until a reported sub-period corroborates; parent tie-out is arithmetic, not corroboration. <strong>Parent-vs-latest-sub-period divergence (v3.16):</strong> where a parent 🟢/🟡 contains a latest sub-period firing 🔴, the sub-period governs and the parent is flagged front/backward-loaded. <strong>Aggregate row (v3.16):</strong> parent years never occupy columns — they render on the aggregate row beneath each rank, transcribed from company-printed totals, never summed from the cells above, never scored, no arrows; the FY-grain Δrate values shown there (e.g. FY24 −11.9pp) are historical context only, their scored record retained in the chat build.</p>
   <p><strong>Derivations, workings shown once.</strong> <span class="rk">Revenue H2†</span> = FY − H1: FY23 49.1 − 21.9 = 27.2 · FY24 55.8 − 26.3 = 29.5 · FY25 68.1 − 35.5 = 32.6; FY25 second route: (43.4 − 23.6) + (26.4 − 12.6) − (1.7 − 0.7) intra-group = 32.6 ✓. <span class="rk">Adj EBITDA H2†</span> = FY − H1 on matching basis: FY23 4.8ʳ − 1.7ʳ = 3.1†ʳ (underlying basis) · FY24 6.2ʳ − 2.8ʳ = 3.4†ʳ (underlying basis — pre-restatement FY24 figure used so both terms share one basis; adjusted-basis H1 FY24 was never printed, so no adjusted-basis second route exists — flagged, not silently mixed) · FY25 8.5 − 4.2 = 4.3† (adjusted basis throughout). H2 margins: 3.1/27.2 = 11.4% · 3.4/29.5 = 11.5% · 4.3/32.6 = 13.2% — the 13.2% ties to the §2.0 check-3 figure ✓. Derived H2 cells carry no Turn arrows of their own beyond the approved sequential fires; derived-only reads are watch flags. <span class="rk">Energy H2†</span>: FY24 13.2 − 6.5 = 6.7 · FY25 11.1 − 5.7 = 5.4; H2onH2 −19.4% ✓.</p>
   <p><strong>Restatement &amp; provenance.</strong> <span class="rk">Order book (ʳ):</span> Dec-23 TU printed £28.6m and Dec-24 TU £37.8m; audited FRs print £29.2m and £38.5m — later audited figure governs. <span class="rk">Adj EBITDA (ʳ):</span> FY22–FY24 print "Underlying EBITDA" (SBP not excluded); FY25 prints "Adjusted EBITDA" (SBP excluded) — FY24 restated £6.2m → £6.3m; check: 6.2 + 0.107 SBP = 6.307 ✓; the aggregate row shows the restated 6.3ʳ, the H2† derivation uses the basis-matched 6.2ʳ. <span class="rk">Net cash:</span> Dec-22 TU printed £4.1m, audited FY22 FR £4.3m — audited governs. <span class="rk">Energy revenue:</span> pre-H1-FY24 columns are — not ❌ (sector taxonomy redefined at FY24; metric graduated into cadence Jul-24, a disclosure expansion). <span class="rk">Buy/Sell column:</span> the rightmost column (H1 FY26, the Buy/Sell RNS's own window) is bold per spec; it carries the May-26 AGM's disclosure state — the trailing-12-month exact figures live in the H2 FY25 / FY25 cells, every one verified directly from the Mar-26 FR.</p>
 </details>
