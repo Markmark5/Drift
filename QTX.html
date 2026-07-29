@@ -1,0 +1,318 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QTX — Longitudinal Drift Tracker (spec v3.13)</title>
+<style>
+body{background:#fff;color:#1a1a1a;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;margin:0;padding:26px 30px 80px;max-width:1800px}
+h1{font-size:22px;margin:0 0 3px}h2{font-size:18px;margin:40px 0 8px;padding-bottom:4px;border-bottom:2px solid #222}
+.sub{color:#555;font-size:12.5px;margin:0 0 8px;max-width:1100px}
+table{border-collapse:collapse;width:100%;margin:14px 0 6px;font-size:12px}
+th,td{border:1px solid #cfcfcf;padding:7px 8px;vertical-align:top}th{background:#f2f2f2;font-weight:600}
+section{margin-bottom:34px}
+.comic{font-family:"Comic Sans MS","Comic Sans","Chalkboard SE","Segoe Print","Bradley Hand",cursive}
+.darkbar{background:#2b2a26;color:#fff;padding:11px 15px;font-size:16px}
+.darkbar .em{font-size:22px;margin-right:6px}
+/* verdict */
+.verdict{display:flex;border:6px solid #c0392b;border-radius:12px;overflow:hidden;margin:16px 0 10px;max-width:1100px}
+.rail{width:82px;flex-shrink:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:16px 0;background:#fceceb}
+.badge{width:36px;height:36px;border-radius:50%;background:#c0392b;display:flex;align-items:center;justify-content:center}
+.vlabel{writing-mode:vertical-rl;transform:rotate(180deg);font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#791f1f}
+.vbody{flex:1;padding:18px 22px}.vhead{font-size:22px;font-weight:700;line-height:1.35;margin:0 0 8px}
+.pills{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:12px;color:#555;margin:0 0 14px}
+.pill{border:1px solid #ccc;border-radius:999px;padding:2px 10px;background:#f7f6f2;font-weight:600}
+.pill.alert{background:#fceceb;border-color:#e2b0ab;color:#791f1f}
+.vgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px 14px;font-size:13px;line-height:1.45;margin-bottom:6px}
+.vcard{background:#f7f6f2;border-radius:10px;padding:10px 12px}.vcard.cav{background:#faeeda}
+.vcard b{display:block;margin-bottom:2px}
+.vbul ul{margin:12px 0 4px;padding-left:20px}.vbul li{font-size:12.5px;line-height:1.55;margin-bottom:6px}
+/* company guide drawer */
+details.guide{margin:0 0 14px;padding:0;background:none;border:1px solid #cfcfcf;border-radius:10px;overflow:hidden}
+details.guide summary{list-style:none;cursor:pointer}
+details.guide summary::-webkit-details-marker{display:none}
+details.guide .gbody{padding:12px 16px;font-size:12.5px;line-height:1.6}
+details.guide .gbody h4{margin:10px 0 3px;font-size:17px;font-weight:700}
+/* generic drawers */
+details{margin:16px 0 6px;max-width:1100px;background:#f7f6f2;border-radius:10px;padding:10px 14px;font-size:12.5px;line-height:1.55}
+summary{cursor:pointer;font-weight:600}
+/* grid */
+#grid{table-layout:fixed;font-size:11.5px}
+#grid col.lab{width:170px}
+#grid td,#grid th{text-align:center;padding:7px 4px}
+#grid .yband th{background:#e8e8e8;font-weight:700}
+#grid .phead th{cursor:pointer;user-select:none}#grid .phead th:hover{background:#e2e8ee}
+#grid .secbar td{text-align:left;background:#2c3e50;color:#fff;font-weight:600;padding:6px 10px}
+#grid .strip td{padding:2px 3px;font-size:9.5px;color:#777;background:#fbfbfb}
+#grid .val td{background:#fff}
+#grid td.bs{font-weight:700}
+.pos{color:#27700a;font-weight:600}.neg{color:#a02222;font-weight:600}
+.hlg{background:#d6e8ff!important}
+/* §2.0 pair */
+.pair{display:flex;gap:18px;flex-wrap:wrap;margin:16px 0}
+.pair>div{flex:1 1 0;min-width:340px}
+.bridge{border:1px solid #cfcfcf;border-radius:10px;overflow:hidden}
+.bridge .rows{padding:0}
+.brow{display:flex;gap:10px;padding:9px 13px;border-top:1px solid #e4e2dc;font-size:12.5px;align-items:baseline}
+.brow .lab{font-weight:700;font-size:15px;flex:0 0 205px}
+.brow .amt{font-weight:700;flex:0 0 70px;text-align:right}
+.brow.g{background:#e9f5ee}.brow.r{background:#fdecea}.brow.a{background:#fdf4e3}
+.bcap{background:#fafafa;padding:9px 13px;font-size:11px;color:#555;border-top:1px solid #e4e2dc}
+.statebar{border:2px solid #c0392b;background:#fdecea;border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+.statebar .inner{padding:14px 16px;font-size:13.5px;line-height:1.6;display:flex;align-items:center;flex:1}
+/* text+G */
+#text3 td:nth-child(2){cursor:pointer}#text3 td:nth-child(2):hover{background:#fbe3ee}
+#text3 tr.chg{background:#fdf6e3}#text3 td.hlp{background:#fbd3e6!important}
+#text3 .trail{font-size:10.5px;text-align:left;line-height:1.5}
+#text3 .met{color:#27700a}#text3 .mis{color:#a02222}
+/* drift */
+#drift td,#drift th{text-align:center;font-size:10.5px;padding:5px 3px}
+#drift td.m,#drift th.m{text-align:left;font-weight:600;background:#f7f7f7;white-space:nowrap}
+#drift th.clk{cursor:pointer}#drift th.clk:hover{background:#e2e8ee}
+.legend{font-size:11.5px;color:#555;margin:8px 0;max-width:1100px}
+</style></head><body>
+<h1>Quartix Technologies plc (QTX) — Longitudinal Drift Tracker</h1>
+<p class="sub">Spec v3.13 · AIM software — subscription vehicle telematics · Buy/Sell RNS: Interim Results 27-Jul-26 · 33 qualifying RNSs Jul-21→Jul-26 · C-series yardstick: Cavendish note 27-Jul-26 (single-house, corporate broker — sizes, never fires) · Next: Q3 Trading Statement ~Oct-26 (the consensus-anchored test)</p>
+
+<section>
+<div class="verdict">
+ <div class="rail"><div class="badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 7 9 15 13 11 23 21"/><polyline points="15 21 23 21 23 13"/></svg></div><div class="vlabel">Turning Down</div></div>
+ <div class="vbody">
+  <div class="vhead">Leading KPIs confirmed lower at the interims while profit beat its own three-week-old estimate; guide held a third time — the raises have stopped.</div>
+  <div class="pills"><span class="pill alert">⚠ 2-of-3 DETERIORATION ALERT</span><span class="pill">H1 Results</span><span class="pill">27-Jul-26</span><span class="pill">FY 31 Dec</span>·<span>B/S: clean, net cash</span></div>
+
+  <details class="guide"><summary><div class="darkbar comic"><span class="em">💡</span>Idiot's guide to the company — What Quartix Technologies plc actually does</div></summary>
+   <div class="gbody">
+    <h4 class="comic">The box in the van</h4>
+    <p>Quartix sells a little black box that gets fitted in work vans and lorries and phones home with where the vehicle is, how it's being driven and when it moved. Small businesses — plumbers, builders, delivery firms — pay a monthly subscription to see all of that on a map and in reports. Around 343,000 vehicles across 33,500 businesses are on the meter, in the UK, France, the USA, Italy, Spain and Germany. It also now sells dashcams as an add-on to the same customers.</p>
+    <h4 class="comic">How the money works</h4>
+    <p>Nearly all the revenue (97%) is that monthly subscription — customers rarely buy the box, Quartix keeps owning it and takes it back or redeploys it when someone leaves. Once a box is in a van it just keeps billing, so the game is: fit more boxes, keep the customers you have, and nudge the price up a little each year. Founded 2001 in Wales by Andy Walters, who still runs it as Executive Chairman and is a major shareholder; listed on AIM.</p>
+    <h4 class="comic">Recent structural event</h4>
+    <p>In 2025 the accounting watchdog (FRC) asked questions and the company changed how it books the boxes: they're now counted as long-life company kit written off over seven years (IAS 16 — spreading the cost of the box over its whole working life) rather than expensed over the first contract. Past figures were restated; cash was never affected.</p>
+    <p><i>The investment argument in one line: a sticky subscription machine compounding at 11% a year with net cash and a founder back at the wheel — the question is whether the new-customer engine is now slowing.</i> <span style="color:#777">As at Jul-26.</span></p>
+   </div>
+  </details>
+
+  <div class="vgrid">
+   <div class="vcard"><b>State</b>Hard numbers record (rev +12%, PBT +21%); every leading rank lower — ARR growth 14→12→11%, subs −11%, NRR −0.4pp.</div>
+   <div class="vcard"><b>Fired</b>Hard (deceleration 3 prints, all leading ranks) + Text (08-Jul −1 first H2-lean); Drift clean.</div>
+   <div class="vcard cav"><b>Caveat</b>Q2 turns now rest on reported H1 parents but stay derived; "H2 started well" is a live offset.</div>
+   <div class="vcard"><b>Next</b>Oct-26 Q3 TU: broker model needs a ~£1.2m Q3 ARR add — the test is now consensus-anchored.</div>
+  </div>
+  <div class="vbul"><ul>
+   <li><b>Lead-lag:</b> at the Oct-23 CUT the new-subscriptions rollover was visible 12 months earlier; today's identical shape puts FY27 consensus (£43.8m) at risk before FY26's — see the bridge for what's carrying profit meanwhile.</li>
+   <li><b>Discounts:</b> UK NRR fell from a 100% base (now 99.4%, "some increased attrition") and the US base is shrinking −3% on "higher churn" — both named, neither one-off; the strong-comp explanation is exhausted after three periods.</li>
+   <li><b>What confirms it:</b> implied H2 needs £20.9m revenue (+13.6% YoY) and, per the house model (27-Jul-26 note), a +£2.5m H2 ARR add — a ~25% acceleration on H2-25 straight after H1's add fell 22% — all resting on the unquantified backlog; a walk to "broadly in line" at the Q3 TU completes the Oct-23 pattern.</li>
+  </ul></div>
+ </div>
+</div>
+</section>
+
+<section>
+<h2>§1 · Metric Ledger</h2>
+<table>
+<tr><th>Rank</th><th>Metric</th><th>Type</th><th>Why it leads for this ticker</th><th>Cadence</th><th>Status this run</th></tr>
+<tr><td>1</td><td>ARR in-period growth (£m, CC)</td><td>Flow, seasonally matched</td><td>Company's own label at every RNS since 2023: "ARR is the key forward-looking measure of growth"</td><td>Q since FY25; H/9M prior</td><td>🔴 decelerating, 3rd print</td></tr>
+<tr><td>2</td><td>New subscriptions (units)</td><td>Flow, like-period</td><td>Feeds ARR 1–2 quarters ahead (install→billing); led the Oct-23 warning</td><td>Q since 2025</td><td>🔴 two down-quarters, confirmed</td></tr>
+<tr><td>3</td><td>New customer acquisition</td><td>Flow, like-period</td><td>Management's stated growth engine at every turn since Oct-23</td><td>Q since 2025</td><td>🔴 −8% both quarters, confirmed</td></tr>
+<tr><td>4</td><td>NRR (TTM, %)</td><td>Rate ±2.0pp</td><td>Company KPI since FY24; captures the upsell/attrition mix ARR nets away</td><td>Q since 2025</td><td>🔴 first-ever decline, confirmed</td></tr>
+<tr><td>5</td><td>Revenue (£m)</td><td>H-flow, sequential + rate ±2.0pp</td><td>Earliest hard confirmation of ARR conversion; disclosed at H-grain only</td><td>H</td><td>🟢 accelerating</td></tr>
+</table>
+<div class="legend">Bands: H-grain ±2.0pp · Q-grain ±5.0pp. EPS not scored (lags; H1-26 reported EPS fell only on a prior-year tax adjustment). Proposed ledger change next build: ARR per vehicle — promoted into the company KPI table at these interims, baseline starts 27-Jul-26.</div>
+</section>
+
+<section>
+<h2>§2 · Unified Forward Grid — FY23→FY26 (17-cell quarter spine; earlier first prints held in rank notes)</h2>
+<table id="grid">
+<colgroup><col class="lab"><col span="16"></colgroup>
+<tr class="yband"><th></th><th colspan="4">FY23</th><th colspan="4">FY24</th><th colspan="4">FY25</th><th colspan="4">FY26</th></tr>
+<tr class="phead"><th>Metric</th><th data-q="Q1">Q1</th><th data-q="Q2">Q2</th><th data-q="Q3">Q3</th><th data-q="Q4">Q4</th><th data-q="Q1">Q1</th><th data-q="Q2">Q2</th><th data-q="Q3">Q3</th><th data-q="Q4">Q4</th><th data-q="Q1">Q1</th><th data-q="Q2">Q2</th><th data-q="Q3">Q3</th><th data-q="Q4">Q4</th><th data-q="Q1">Q1</th><th data-q="Q2">Q2</th><th data-q="Q3">Q3</th><th data-q="Q4">Q4</th></tr>
+
+<tr class="secbar"><td colspan="17">Rank 1 — ARR in-period growth (£m, constant currency) · cumulative flow, seasonally matched</td></tr>
+<tr class="strip"><td></td><td></td><td>H1</td><td>9M</td><td>FY</td><td></td><td>H1</td><td>9M</td><td>FY</td><td>Q</td><td>Q†</td><td>Q†</td><td>Q†</td><td>Q</td><td>Q†</td><td></td><td></td></tr>
+<tr class="val"><td>ARR growth</td><td></td><td>+2.1 YoY<br><span class="neg">🔴↘ vs +2.7</span></td><td>+2.1 YoY<br><span class="neg">🔴↘</span></td><td>+2.2 FY<br><span class="neg">🔴↘ vs +2.6</span></td><td></td><td>+2.04 H1<br><span class="pos">🟢↗</span></td><td>+2.7 9M<br><span class="pos">🟢↗ +60%</span></td><td>+3.5 FY<br><span class="pos">🟢↗ +67%</span></td><td>+2.0<br><span class="pos">🟢↗ +21%</span></td><td>+0.7†<br>—</td><td>+0.8†<br>—</td><td>+1.0†<br>—</td><td>+1.6<br><span class="neg">🔴↘ −20%</span></td><td class="bs">+0.5†<br><span class="neg">🔴↘ −29% ⚑</span></td><td></td><td></td></tr>
+
+<tr class="secbar"><td colspan="17">Rank 2 — New subscriptions (units) · period flow, like-period comparison</td></tr>
+<tr class="strip"><td></td><td></td><td>H1</td><td>9M</td><td>FY</td><td></td><td>H1</td><td></td><td>FY</td><td>Q</td><td>Q†</td><td></td><td>H2†</td><td>Q</td><td>Q†</td><td></td><td></td></tr>
+<tr class="val"><td>New subs</td><td></td><td>33,400<br><span class="pos">🟢 record</span></td><td>+4.3% YoY<br><span class="neg">🔴↘ vs +24%</span></td><td>64,373†<br>🟡→</td><td></td><td>~38,036<br><span class="pos">🟢↗ +13%</span></td><td></td><td>74,673<br><span class="pos">🟢↗ +16%</span></td><td>22,102<br><span class="pos">🟢↗ +19%</span></td><td>18,596†<br>—</td><td></td><td>38,878† H2<br>🟡→</td><td>19,301<br><span class="neg">🔴↘ −13%</span></td><td class="bs">16,925†<br><span class="neg">🔴↘ −9% ⚑</span></td><td></td><td></td></tr>
+
+<tr class="secbar"><td colspan="17">Rank 3 — New customer acquisition · period flow, like-period comparison</td></tr>
+<tr class="strip"><td></td><td></td><td></td><td></td><td>FY†</td><td></td><td></td><td></td><td>FY</td><td>Q</td><td>Q†</td><td></td><td>FY</td><td>Q</td><td>Q†</td><td></td><td></td></tr>
+<tr class="val"><td>New customers</td><td></td><td></td><td></td><td>5,768†<br><span class="neg">🔴↘ weakened</span></td><td></td><td></td><td></td><td>6,863<br><span class="pos">🟢↗ +19%</span></td><td>2,206<br><span class="pos">🟢↗ +18%</span></td><td>1,756†<br>—</td><td></td><td>7,501 FY<br><span class="pos">🟢↗ +9%</span></td><td>2,021<br><span class="neg">🔴↘ −8%</span></td><td class="bs">1,611†<br><span class="neg">🔴↘ −8% ⚑</span></td><td></td><td></td></tr>
+
+<tr class="secbar"><td colspan="17">Rank 4 — Net Revenue Retention (TTM %) · period rate, ±2.0pp band on Δ</td></tr>
+<tr class="strip"><td></td><td></td><td></td><td></td><td></td><td></td><td>H1</td><td></td><td>FY</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td></td><td></td></tr>
+<tr class="val"><td>NRR</td><td></td><td></td><td></td><td></td><td></td><td>98.9 (H)<br>— first print</td><td></td><td>95.7<br>—</td><td>96.3<br><span class="pos">🟢 +0.6</span></td><td>97.3<br><span class="pos">🟢 +1.0</span></td><td>97.3<br>🟡 0.0</td><td>98.1<br><span class="pos">🟢 +0.8</span></td><td>98.1<br>🟡 0.0</td><td class="bs">96.9<br><span class="neg">🔴↘ −1.2</span></td><td></td><td></td></tr>
+
+<tr class="secbar"><td colspan="17">Rank 5 — Revenue (£m) · H-grain flow, sequential HonH + seasonally-matched rate</td></tr>
+<tr class="strip"><td></td><td></td><td>H1</td><td></td><td>FY</td><td></td><td>H1ʳ</td><td></td><td>FYʳ</td><td></td><td>H1ʳ</td><td></td><td>FY / H2†</td><td></td><td>H1</td><td></td><td></td></tr>
+<tr class="val"><td>Revenue</td><td></td><td>14.6<br><span class="pos">🟢 +10%</span></td><td></td><td>29.9<br>🟡 +8.6%</td><td></td><td>16.1ʳ<br><span class="pos">🟢 +10%</span></td><td></td><td>31.8ʳ<br>🟡 +6%ʳ</td><td></td><td>17.3ʳ<br>🟡 +7.5%</td><td></td><td>35.7 / 18.4†<br><span class="pos">🟢↗ +12%</span></td><td></td><td class="bs">19.36<br><span class="pos">🟢↗ +12.1% · seq +5.4%</span></td><td></td><td></td></tr>
+</table>
+
+<details><summary>Turn methodology &amp; restatement basis</summary>
+<p>Every Δ and arrow transcribes one script (<code>turns.py</code>, md5-verified re-run) with comparison bases hard-coded per metric type: ARR in-period growth, new subscriptions and new customers are <b>flows</b> compared like-period-to-like-period only (Q1-vs-Q1, H1-vs-H1 — never H1-vs-9M), because Q1 carries ~75% of annual price indexation; NRR is a <b>rate</b> scored on seasonally-matched Δ against the ±2.0pp/±5.0pp bands; revenue is scored on <b>sequential HonH</b> as the primary trigger plus the seasonally-matched YoY rate; the subscription base is a <b>snapshot</b> compared position-to-position at its own disclosure grain. Any negative sequential print fires 🔴↘ on level regardless of year-comp; comp-flags annotate, never suppress. Derivations: Q2† = H1 − Q1, Q3† = 9M − H1, Q4† = FY − 9M, H2† = FY − H1; second route H2-25† 1.8 = Q3† + Q4† ✓. Q2-26† cells rest on H1 parents now <b>reported</b> at the 27-Jul-26 interims (previously company estimates), but remain derived (⚑) until a reported sub-period corroborates. Provenance: ʳ = IAS-16 restatement of FY24/H1-25 applied in the FY25 accounts and interims note 9 (later audited figure governs the 08-Jul "c." estimates — EBITDA £6.9m→£7.2m, adj EBIT £4.6m→£4.9m, FCF £2.6m→£3.0m); FY23 new-subs and new-customers values are back-derived from FY24's stated growth rates (†); the Buy/Sell (rightmost populated) column is bold. Lost-unit fees reclassified out of revenue (−£0.3m H1-25) under the same policy — no cross-basis arithmetic crosses that boundary unflagged.</p>
+</details>
+
+<details><summary>Notes — Ranks 1–5</summary>
+<p><b>R1 ARR growth:</b> first print FY21 (+£2.0m); TTM rate 14% (Dec-25) → 12% (Mar-26) → 11% (Jun-26) — inside the ±5pp band per print but three consecutive decelerations, the slow-bleed clause. £1.1m of Q1-26's +£1.6m was new business; the balance indexation (FY25 averaged 4.2%, FY26 ~3% YTD per the broker note — price is carrying a growing share of the add). The house quarterly ARR series (30.9→31.3→32.2→34.2→35.0→36.1→37.0→38.6→38.9) independently ties out every derived cell, including the Q2-26 +£0.3m level stall.</p>
+<p><b>R2 New subs:</b> Q2-26 QonQ −12% matches last year's −16% seasonal shape, so the YoY-matched −9% governs — still negative; H1 total confirmed at the interims.</p>
+<p><b>R3 New customers:</b> the &gt;700/month exit-rate flagged at FY24 has not been re-quantified since; £0.4m of H1-26 indirect-channel spend was judged inadequate-ROI and cut — a quality flag on this engine.</p>
+<p><b>R4 NRR:</b> the Jun-26 fall is the first decline in the series; interims add the mechanism — UK 100%→99.4% on "some increased attrition", US "higher churn". Bounded but no longer a base-effect story alone.</p>
+<p><b>R5 Revenue:</b> the one accelerating rank — banked ARR converting; implied H2-26 to hit consensus is £20.9m, +13.6% YoY, against decelerating leading flows: the risk is backward-loaded into H2.</p>
+</details>
+</section>
+
+<section>
+<h2>§2.0 · Most-recent-RNS current-state read — Interim Results, 27-Jul-26</h2>
+<details><summary>The four checks — workings behind the read</summary>
+<p><b>1 · Sequential:</b> revenue £19.36m, +5.4% HonH on H2-25† £18.4m; ARR add +£2.1m vs H2-25† +£1.8m raw — but H1 carries ~75% of annual indexation, so the seasonally-matched −22% vs H1-25 governs. Profit stack beat the company's own 08-Jul estimates three weeks later: EBITDA £7.2m vs £6.9m, adj EBIT £4.9m vs £4.6m, FCF £3.0m vs £2.6m.</p>
+<p><b>2 · Same-type vs 24-Jul-25 interims:</b> then — rev +10%, PBT +31%, every leading KPI accelerating, guidance raised. Now — rev +12%, PBT +21%, every leading KPI decelerating (ARR TTM 13%→11%, subs +7%→−11%, customers +13%→−8%, NRR 97.3→96.9), guidance held. Hard up, soft down: the wedge this framework exists to catch.</p>
+<p><b>3 · Sub-periods:</b> Q2-26† ARR +£0.5m (−29%), subs 16,925 (−9%), customers 1,611 (−8%) — second consecutive down-quarter on all three; parents now reported, ⚑ retained pending a reported sub-period. The strong-Q1-25-comp explanation is exhausted (third period, same explanation).</p>
+<p><b>4 · Guide vs prior guide:</b> "remains confident in delivering market expectations" (rev £40.3m / adj EBIT £10.1m / FCF £4.9m) = flat — third consecutive non-raise after four straight raises Jul-25→Jan-26. The 08-Jul "order backlog… improved performance in H2" framing is replaced by "the second half has started well" — a current-trading positive rather than a hope deferred. Consensus unchanged between the two notes. Yardstick (Cavendish, 27-Jul-26, corporate broker — single-house, management-adjacent): FY26E ARR £41.4m reiterated, requiring a +£2.5m H2 add (vs +£2.0m H2-25) with "Q3 growth is expected to accelerate due to a strong order backlog" — the acceleration claim is now consensus-anchored and falsifiable at the Q3 TU (~£1.2m Q3 add implied).</p>
+</details>
+
+<div class="pair">
+ <div class="bridge">
+  <div class="darkbar comic"><span class="em">🍺</span>IDIOT'S GUIDE TO THE PROFIT BEFORE TAX BRIDGE — why profit went up (£4.0m → £4.8m)</div>
+  <div class="rows">
+   <div class="brow g"><span class="lab comic">🚐 More vans on the meter</span><span class="amt" style="color:#27700a">+£1.9m</span><span>24,000 more trackers ticking away than a year ago, plus a roughly 3% price bump that stuck on nearly every bill — gross profit up £1.9m.</span></div>
+   <div class="brow r"><span class="lab comic">📣 A bigger megaphone</span><span class="amt" style="color:#a02222">−£1.0m</span><span>An extra £1.0m spent shouting for new customers. £0.4m of it went to middlemen who didn't bring enough business back, so that tap's been turned off for the rest of the year.</span></div>
+   <div class="brow a"><span class="lab comic">🍪 Back office on rations</span><span class="amt" style="color:#a02222">−£0.1m</span><span>Head-office costs crept up just £0.1m (2%) while revenue grew 12%. Someone's guarding the biscuit tin.</span></div>
+  </div>
+  <div class="bcap">So in one sentence: the subscription meter ran faster than the marketing bill grew, and the office kept its belt tight. Profit falls when: fewer new vans sign up than quietly leave, or the yearly price rises stop sticking.</div>
+ </div>
+ <div class="statebar">
+  <div class="darkbar comic"><span class="em">🌡️</span>CURRENT STATE — the read right now</div>
+  <div class="inner"><div>🔴 <b>TURNING DOWN (early, soft-signal-led)</b> — and <b>backward-loaded</b>: H1 profit is record and beat the company's own estimate, but it is carried by ARR banked in 2025 while every current-quarter leading flow fell — ARR add −29%†, subs −9%†, customers −8%†, NRR down for the first time with attrition now named in the UK and US. Guide held a third time by a serial raiser; implied H2 needs +13.6%.</div></div>
+ </div>
+</div>
+
+<details><summary>Notes</summary>
+<p>The reported tax charge doubled to £2.2m on a £1.1m prior-year adjustment from refiling FY24 under IAS 16 — reported EPS fell 5.51p vs 6.50p on this alone; PAT ex-adjustment £3.7m, +19%. Disclosed, bounded, not scored.</p>
+<p>Dividend cover (yardstick): rebased 10p DPS ≈ £4.9m against house FY26E FCF £4.7–4.9m — 1.0x cover; net cash and the progressive policy keep it off the sweep, but any FCF miss now pressures the cash balance or the policy.</p>
+<p>Basis watch: a further presentational restatement is pending — £0.9m of H1-25 distributor commissions reclassified COS→S&amp;M, FY25 restatement "in due course" — the third basis change in four years; gross-margin comparisons across 2025–26 carry ʳ until it lands. Broker decomposition: FY25 indexation averaged 4.2%, FY26 ~3% YTD with mid-single-digit rises still rolling through anniversaries — sizing how much ARR growth is price rather than units.</p>
+</details>
+</section>
+
+<section>
+<h2>§3 · Text + G — Language Track (full run, profit line; shaded rows = changed score; "Guide met?" resolves only at results rows)</h2>
+<table id="text3">
+<tr><th style="width:64px">Date</th><th style="width:70px">Doc</th><th style="width:74px">G</th><th style="width:230px">Guide met?</th><th>Verbatim forward-guidance phrase</th><th style="width:118px">Score</th></tr>
+<tr><td>Oct-21</td><td data-rowtype="Q3TU">FY21<br>Q3 TU</td><td>flat</td><td>–</td><td>"in line with current consensus market forecasts"</td><td>⚪</td></tr>
+<tr class="chg"><td>Jan-22</td><td data-rowtype="FYTU">FY21<br>YE-TU</td><td>🟢 RAISE</td><td>–</td><td>"Adjusted EBITDA is expected to be substantially ahead of those forecasts" (£5.7m vs £5.0m)</td><td>⚪ → 🟢🟢🟢 (cost-timing, discounted)</td></tr>
+<tr class="chg"><td>Feb-22</td><td data-rowtype="FYR">FY21<br>R</td><td>flat</td><td class="trail"><span class="met">Oct-21 £25.6m/£5.0m: rev 0% / EBITDA +14% (beat)</span><br><span class="met">Jan-22 £25.6m/£5.7m: rev 0% / EBITDA 0% (met)</span></td><td>"targeting annualised recurring revenue of at least £30.0m by the end of 2023"</td><td>🟢🟢 (floor)</td></tr>
+<tr class="chg"><td>Mar-22</td><td data-rowtype="AGM">FY22<br>AGM</td><td>flat</td><td>–</td><td>"consistent with meeting market expectations for the year"</td><td>⚪</td></tr>
+<tr><td>Jul-22</td><td data-rowtype="H1TU">FY22<br>H1 TU</td><td>flat</td><td>–</td><td>"revenue, adjusted EBITDA, and free cash flow to be in line with consensus market forecasts" (est £13.3m/£2.6m)</td><td>⚪</td></tr>
+<tr><td>Jul-22</td><td data-rowtype="H1R">FY22<br>H1 R</td><td>flat</td><td class="trail"><span class="met">Jul-22 est £13.3m/£2.6m: rev 0% / EBITDA −4% (met)</span></td><td>"confidence in achieving market expectations for the full year"</td><td>⚪</td></tr>
+<tr><td>Oct-22</td><td data-rowtype="Q3TU">FY22<br>Q3 TU</td><td>flat</td><td>–</td><td>"in line with current consensus market forecasts" (£27.4m/£5.7m)</td><td>⚪</td></tr>
+<tr><td>Jan-23</td><td data-rowtype="FYTU">FY22<br>YE-TU</td><td>flat</td><td>–</td><td>"revenue, adjusted EBITDA and free cash flow to be in line with consensus market forecasts" (£27.7m/£5.8m)</td><td>⚪</td></tr>
+<tr><td>Feb-23</td><td data-rowtype="FYR">FY22<br>R</td><td>flat</td><td class="trail"><span class="met">Mar-22 £27.4m/£5.8m: rev 0% / EBITDA +5% (met)</span><br><span class="met">Jan-23 £27.7m/£5.8m: rev −1% / EBITDA +5% (met)</span></td><td>"may not extrapolate to Q1 year on year performance due to an exceptionally higher March 2022"</td><td>⚪ (seasonal calibration)</td></tr>
+<tr><td>Mar-23</td><td data-rowtype="AGM">FY23<br>AGM</td><td>flat</td><td>–</td><td>"consistent with meeting market expectations for the year" (£30.8m/£6.2m)</td><td>⚪</td></tr>
+<tr><td>Jul-23</td><td data-rowtype="H1TU">FY23<br>H1 TU</td><td>flat</td><td>–</td><td>"confidence in achieving market expectations in 2023" (〃)</td><td>⚪</td></tr>
+<tr><td>Jul-23</td><td data-rowtype="H1R">FY23<br>H1 R</td><td>flat</td><td class="trail"><span class="met">Jul-23 est £14.6m/£2.7m: met</span></td><td>"positions Quartix optimistically for the rest of the year" — beside "adverse economic headwinds", attrition 13.5%</td><td>⚪ capped (named headwind)</td></tr>
+<tr class="chg"><td><b>Oct-23</b></td><td data-rowtype="TU">FY23<br>TU⚠</td><td><b>🔴 CUT</b></td><td>–</td><td>"does not now believe that the rate of growth has been sufficient to achieve current market expectations for revenue in 2023 or 2024… reduced… by approximately £0.9m and £2.6m" + supplementary dividend withdrawn</td><td>🔴🔴🔴</td></tr>
+<tr class="chg"><td>Dec-23</td><td data-rowtype="TU">FY23<br>TU</td><td>flat</td><td>–</td><td>"substantial, one time, non-cash impairment… (£2.5 million)"</td><td>🔴🔴</td></tr>
+<tr class="chg"><td>Jan-24</td><td data-rowtype="FYTU">FY23<br>YE-TU</td><td>flat</td><td>–</td><td>"confident of achieving market expectations for the new financial year" (FY24 £32.1m/£5.4m)</td><td>⚪</td></tr>
+<tr><td>Mar-24</td><td data-rowtype="FYR">FY23<br>R</td><td>flat</td><td class="trail"><span class="mis">Mar-23 £30.8m/£6.2m: rev −3% / EBITDA −13% (miss — cut Oct-23)</span><br><span class="met">Oct-23 cut ~£29.9m/£5.1m: rev 0% / EBITDA +6% (met)</span></td><td>"underpins our confidence for 2024 and beyond"</td><td>⚪</td></tr>
+<tr><td>Mar-24</td><td data-rowtype="AGM">FY24<br>AGM</td><td>flat</td><td>–</td><td>"consistent with meeting market expectations" — CFO resignation in the same RNS</td><td>⚪</td></tr>
+<tr class="chg"><td>Jul-24</td><td data-rowtype="H1TU">FY24<br>H1 TU</td><td>flat</td><td>–</td><td>"confident of meeting market expectations… with the potential for revenue to track slightly ahead" (est £16.0m/£2.6m)</td><td>🟢</td></tr>
+<tr class="chg"><td><b>Jul-24</b></td><td data-rowtype="H1R">FY24<br>H1 R</td><td><b>🟢 RAISE</b></td><td class="trail"><span class="met">Jul-24 est £16.0m/£2.6m: rev +1% / EBITDA +4% (met)</span></td><td>"both revenue and profit will moderately exceed market expectations"</td><td>🟢🟢</td></tr>
+<tr class="chg"><td>Oct-24</td><td data-rowtype="Q3TU">FY24<br>Q3 TU</td><td>flat</td><td>–</td><td>"confident of meeting market expectations for the year for both profit and free cashflow" (£32.9m/£5.8m)</td><td>⚪</td></tr>
+<tr class="chg"><td>Jan-25</td><td data-rowtype="FYTU">FY24<br>YE-TU</td><td>flat</td><td>–</td><td>"aims to achieve at least £3.5m in ARR growth during 2025"</td><td>🟢 (ARR floor; profit flat)</td></tr>
+<tr><td>Mar-25</td><td data-rowtype="FYR">FY24<br>R</td><td>flat</td><td class="trail"><span class="met">Jan-24 £32.1m/£5.4m: rev +1% / EBITDA +20% (beat)</span><br><span class="met">Oct-24 £32.9m/£5.8m: rev −2% / EBITDA +12% (beat)</span></td><td>"we will increase our recurring revenues and adjusted profit before tax by approximately 10%"</td><td>🟢</td></tr>
+<tr class="chg"><td>Mar-25</td><td data-rowtype="AGM">FY25<br>AGM</td><td>flat</td><td>–</td><td>"consistent with meeting market expectations for the year" (£36.0m/£7.2m)</td><td>⚪</td></tr>
+<tr><td>Apr-25</td><td data-rowtype="Q1TU">FY25<br>Q1 TU</td><td>flat</td><td>–</td><td>"Notwithstanding any unexpected impact of a potential trade war, we are confident of meeting market expectations" (〃)</td><td>⚪</td></tr>
+<tr class="chg"><td><b>Jul-25</b></td><td data-rowtype="H1TU">FY25<br>H1 TU</td><td><b>🟢 RAISE</b></td><td>–</td><td>"confident of achieving market expectations… and of being slightly ahead on free cashflow" (est £17.5m/£3.6m)</td><td>🟢</td></tr>
+<tr><td><b>Jul-25</b></td><td data-rowtype="H1R">FY25<br>H1 R</td><td><b>🟢 RAISE</b></td><td class="trail"><span class="met">Jul-25 est £17.5m/£3.6m: rev +1% / EBITDA +3% (met)</span></td><td>"both profit and cashflow will be slightly ahead of market expectations"</td><td>🟢</td></tr>
+<tr class="chg"><td><b>Oct-25</b></td><td data-rowtype="Q3TU">FY25<br>Q3 TU</td><td><b>🟢 RAISE</b></td><td>–</td><td>"now expects to slightly exceed the most-recently updated market estimates… outlook for 2026 has also improved further" (£36.0m/£7.5m)</td><td>🟢🟢</td></tr>
+<tr><td><b>Jan-26</b></td><td data-rowtype="FYTU">FY25<br>YE-TU</td><td><b>🟢 RAISE</b></td><td>–</td><td>"revenue and adjusted EBITDA… expected to be ahead of current market expectations" (£36.2m/£7.7m old policy)</td><td>🟢🟢</td></tr>
+<tr class="chg"><td>Mar-26</td><td data-rowtype="FYR">FY25<br>R</td><td>flat</td><td class="trail"><span class="mis">Apr-25 rev £36.0m: −1% (rev shy after "ahead" guides)</span><br><span class="met">Jan-26 "ahead" £36.2m rev: −1%; profit trail broken by IAS-16 policy change (EBITDA £13.2m restated — not comparable)</span><br><span class="met">Verbal "ahead": delivered on profit under both policies (met)</span></td><td>"significantly ahead of our expectations at the beginning of the year and stands us in excellent stead for further revenue growth in 2026"</td><td>🟢</td></tr>
+<tr class="chg"><td><b>Apr-26</b></td><td data-rowtype="Q1TU">FY26<br>Q1 TU</td><td>flat</td><td>–</td><td>"confident of achieving market expectations for the year" (£40.3m/£10.1m EBIT/£4.7m)</td><td>🟢 → ⚪</td></tr>
+<tr class="chg"><td><b>08-Jul-26</b></td><td data-rowtype="H1TU">FY26<br>H1 TU</td><td>flat</td><td>–</td><td>"good order backlog for installation in the second half and expect improved performance in H2… full year in line with market expectations" (est £19.4m/£6.9m/£4.6m; consensus FCF £4.7m→£4.9m)</td><td>⚪ → 🔴 (first H2-lean)</td></tr>
+<tr class="chg"><td><b>27-Jul-26</b></td><td data-rowtype="H1R">FY26<br>H1 R</td><td>flat</td><td class="trail"><span class="met">08-Jul est £19.4m/£6.9m/£4.6m/£2.6m: rev 0% / EBITDA +4% / EBIT +7% / FCF +15% (beat own 3-week-old estimate)</span></td><td>"The second half has started well… remains confident in delivering market expectations… we look to the remainder of the year, and 2027, with confidence"</td><td>🔴 → ⚪</td></tr>
+</table>
+<details><summary>Notes</summary>
+<p>The Guide-met trail reads: a conservative, sandbagging guider — every resolved guide since 2021 lands at or above the number except the single Oct-23 kitchen-sink cycle, and even own three-week-old estimates get beaten (Jul-26: profit +4–15%). So a merely-held guide from this company carries more negative information than its words; the FY23 pattern (in-line H1 → CUT at the Q3 TU) is the one to watch into Oct-26.</p>
+</details>
+</section>
+
+<section>
+<h2>§4 · Drift — what they've gone quiet about</h2>
+<p class="sub">Which numbers get shared, hedged, or dropped, document by document — going quiet is the signal (the framework's disclosure matrix; Drift is trigger condition 3). Click a header to highlight its period type.</p>
+<table id="drift">
+<tr>
+<th class="m">Metric</th>
+<th class="clk" data-k="H1R">Jul-21<br>H1R</th><th class="clk" data-k="Q3TU">Oct-21<br>Q3TU</th>
+<th class="clk" data-k="FYTU">Jan-22<br>FYTU</th><th class="clk" data-k="FYR">Feb-22<br>FYR</th><th class="clk" data-k="AGM">Mar-22<br>AGM</th><th class="clk" data-k="H1TU">Jul-22<br>H1TU</th><th class="clk" data-k="H1R">Jul-22<br>H1R</th><th class="clk" data-k="Q3TU">Oct-22<br>Q3TU</th>
+<th class="clk" data-k="FYTU">Jan-23<br>FYTU</th><th class="clk" data-k="FYR">Feb-23<br>FYR</th><th class="clk" data-k="AGM">Mar-23<br>AGM</th><th class="clk" data-k="H1TU">Jul-23<br>H1TU</th><th class="clk" data-k="H1R">Jul-23<br>H1R</th><th class="clk" data-k="TU">Oct-23<br>TU⚠</th><th class="clk" data-k="TU">Dec-23<br>TU</th>
+<th class="clk" data-k="FYTU">Jan-24<br>FYTU</th><th class="clk" data-k="FYR">Mar-24<br>FYR</th><th class="clk" data-k="AGM">Mar-24<br>AGM</th><th class="clk" data-k="H1TU">Jul-24<br>H1TU</th><th class="clk" data-k="H1R">Jul-24<br>H1R</th><th class="clk" data-k="Q3TU">Oct-24<br>Q3TU</th>
+<th class="clk" data-k="FYTU">Jan-25<br>FYTU</th><th class="clk" data-k="FYR">Mar-25<br>FYR</th><th class="clk" data-k="AGM">Mar-25<br>AGM</th><th class="clk" data-k="Q1TU">Apr-25<br>Q1TU</th><th class="clk" data-k="H1TU">Jul-25<br>H1TU</th><th class="clk" data-k="H1R">Jul-25<br>H1R</th><th class="clk" data-k="Q3TU">Oct-25<br>Q3TU</th>
+<th class="clk" data-k="FYTU">Jan-26<br>FYTU</th><th class="clk" data-k="FYR">Mar-26<br>FYR</th><th class="clk" data-k="Q1TU">Apr-26<br>Q1TU</th><th class="clk" data-k="H1TU">Jul-26<br>H1TU</th><th class="clk" data-k="H1R">Jul-26<br>H1R</th>
+</tr>
+<tr><td class="m">ARR level (£, CC)</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+<tr><td class="m">ARR in-period growth (£)</td><td>🟡</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+<tr><td class="m">New subscriptions</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+<tr><td class="m">New customers</td><td>—</td><td>—</td><td>—</td><td>🟡</td><td>—</td><td>—</td><td>🟡</td><td>—</td><td>—</td><td>🟡</td><td>—</td><td>—</td><td>🟡</td><td>🟡</td><td>—</td><td>🟡</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+<tr><td class="m">NRR (TTM %)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+<tr><td class="m">ARR per vehicle / employee</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✅ first</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✅ KPI</td></tr>
+<tr><td class="m">Attrition %</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>✅</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>🟡 "some increased"</td></tr>
+<tr><td class="m">Revenue / profit figures</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>🟡</td><td>🟡</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td></tr>
+<tr><td class="m">Consensus footnote</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>—</td><td>❌</td><td>—</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>✅</td></tr>
+<tr><td class="m">Dividend</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>❌ supp. withdrawn</td><td>—</td><td>🟡 "consider lower"</td><td>✅ cut</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>✅</td><td>—</td><td>✅ rebased 10p</td><td>✅ raised</td><td>—</td><td>✅</td><td>✅ 2.70p</td></tr>
+<tr><td class="m">Order backlog</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>🟡 "strong pipeline"</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>🟡 "significantly ahead"</td><td>🟡</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>🟡 "good"</td><td>— (H2 "started well")</td></tr>
+</table>
+<div class="legend">✅ quantified · 🟡 qualitative-only · ❌ withheld against established cadence · — structurally outside that doc-type's cadence. Manifest 33 qualifying documents = 33 columns. Every cell document-verified.</div>
+<details><summary>Notes</summary>
+<p><b>Latest column (27-Jul-26 H1 R):</b> nothing withheld and two expansions — ARR/vehicle and ARR/employee join the formal KPI table, and territory-level ARR-per-vehicle appears for the first time (green shoots with no history; baselines start today). Attrition returns after a two-and-a-half-year absence, but only qualitatively ("some increased attrition", UK; "higher churn", US) — the number left the KPI set with FY23 and has not come back: the one thing they quantify less as it worsens. The 08-Jul "order backlog" line did not carry into the interims, replaced by "the second half has started well" — a format shift, not a withhold, but the backlog remains the metric most worth asking them to quantify.</p>
+</details>
+</section>
+
+<script>
+(function(){
+ var g=document.getElementById('grid');
+ var phead=g.querySelector('.phead');
+ var active=null;
+ phead.querySelectorAll('th[data-q]').forEach(function(th){
+  th.addEventListener('click',function(){
+   var q=th.dataset.q,idxs=[],clear=(active===q);
+   Array.prototype.forEach.call(phead.children,function(c,i){if(c.dataset&&c.dataset.q===q)idxs.push(i);});
+   g.querySelectorAll('.hlg').forEach(function(e){e.classList.remove('hlg');});
+   if(!clear){idxs.forEach(function(i){g.querySelectorAll('tr').forEach(function(r){
+     if(r.classList.contains('secbar'))return;
+     var cell=r.children[i];if(cell)cell.classList.add('hlg');});});}
+   active=clear?null:q;
+  });
+ });
+ var t3=document.getElementById('text3'),a3=null;
+ t3.querySelectorAll('td[data-rowtype]').forEach(function(td){
+  td.addEventListener('click',function(){
+   var k=td.dataset.rowtype,clear=(a3===k);
+   t3.querySelectorAll('.hlp').forEach(function(e){e.classList.remove('hlp');});
+   if(!clear)t3.querySelectorAll('td[data-rowtype="'+k+'"]').forEach(function(e){e.classList.add('hlp');});
+   a3=clear?null:k;
+  });
+ });
+ var d=document.getElementById('drift'),rows=d.querySelectorAll('tr'),head=rows[0],ad=null;
+ head.querySelectorAll('th.clk').forEach(function(th){
+  th.addEventListener('click',function(){
+   var k=th.dataset.k,clear=(ad===k),idxs=[];
+   Array.prototype.forEach.call(head.children,function(c,i){if(c.dataset&&c.dataset.k===k)idxs.push(i);});
+   d.querySelectorAll('.hlg').forEach(function(e){e.classList.remove('hlg');});
+   if(!clear){idxs.forEach(function(i){rows.forEach(function(r){var c=r.children[i];if(c)c.classList.add('hlg');});});}
+   ad=clear?null:k;
+  });
+ });
+})();
+</script>
+<script type="application/json" id="drift-entry">{
+  "ticker": "QTX",
+  "company": "Quartix Technologies plc",
+  "direction": "down",
+  "headline": "Leading KPIs confirmed lower at the interims while profit beat its own three-week-old estimate; guide held a third time — the raises have stopped.",
+  "trigger": "2-of-3 deterioration: Hard (leading-rank deceleration, 3 prints) + Text (08-Jul-26 −1, first H2-lean); Drift clean",
+  "alert": true,
+  "rns_type": "H1 Results",
+  "rns_date": "2026-07-27",
+  "build_date": "2026-07-29",
+  "spec_version": "v3.15",
+  "next_test": "Oct-26 Q3 TU: broker model needs a ~£1.2m Q3 ARR add — the test is now consensus-anchored.",
+  "url": "QTX.html"
+}</script>
+</body></html>
