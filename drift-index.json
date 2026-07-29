@@ -252,6 +252,20 @@
       "spec_version": "v3.16",
       "next_test": "14 Sep 2026 HY26 results — confirms or breaks the read",
       "url": "DATA.html"
+    },
+    {
+      "ticker": "SNX",
+      "company": "Synectics plc",
+      "direction": "down",
+      "headline": "Guide cut: FY26 EBITDA halved to £4.1m. Order book down twice, then unmentioned in this RNS.",
+      "trigger": "3 of 3 — Hard/G (order book 2× fall + Mar-26 CUT) · Text (two consecutive prints ≤ −2) · Drift (order book withheld vs 3/3 AGM habit)",
+      "alert": true,
+      "rns_type": "AGM Trading Update",
+      "rns_date": "2026-05-18",
+      "build_date": "2026-07-29",
+      "spec_version": "v3.16",
+      "next_test": "H1 FY26 interims, August 2026.",
+      "url": "SNX.html"
     }
   ]
 }
