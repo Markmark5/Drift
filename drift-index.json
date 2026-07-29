@@ -168,6 +168,20 @@
       "spec_version": "v3.16",
       "next_test": "H1 FY27 TU (Oct/Nov-26) & H1 R (Dec-26): OB >£90m; margin >7%; CAIN follow-on order; guide tone; AI component cost pressure vs opportunity.",
       "url": "SOLI.html"
+    },
+    {
+      "ticker": "ALU",
+      "company": "The Alumasc Group plc",
+      "direction": "watch",
+      "headline": "Guide cut twice, but the second half turned: revenue grew, the profit decline shrank to a tenth, order book up 49%.",
+      "trigger": "3 of 3 deterioration conditions fired (two G cuts including the latest RNS; language at or below -1 for five consecutive prints; organic revenue growth and the UK market benchmark withheld against established FY-TU cadence). Green-shoot mirror fires 2 of 3. Direction held at watch because the parent-vs-latest-sub-period rule hands governance to H2 FY26, which beats the FY26 print by 19.1pp on profit.",
+      "alert": true,
+      "rns_type": "FY Trading Update",
+      "rns_date": "2026-07-17",
+      "build_date": "2026-07-28",
+      "spec_version": "v3.16",
+      "next_test": "Sep-2026 results: operating margin, organic growth, and the order book's stated basis.",
+      "url": "ALU.html"
     }
   ]
 }
