@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DSCV — Longitudinal Drift Tracker</title>
+<style>
+/* ─── RESET & BASE ─── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background: #fff;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 24px 20px 60px;
+}
+
+/* ─── TYPOGRAPHY ─── */
+h2 { font-size: 11px; font-weight: 700; letter-spacing: 0.10em; text-transform: uppercase; color: #555; margin-bottom: 14px; }
+h3 { font-size: 12px; font-weight: 700; color: #1a1a1a; }
+
+/* ─── SECTION SPACING ─── */
+.section { margin-bottom: 40px; }
+
+/* ─── VERDICT CARD ─── */
+.verdict-wrap {
+  border: 6px solid #2a7a44;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 1100px;
+  margin-bottom: 40px;
+  display: flex;
+}
+.verdict-rail {
+  width: 82px;
+  min-width: 82px;
+  background: #2a7a44;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 18px 8px;
+  gap: 10px;
+}
+.rail-badge {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rail-badge svg { width: 20px; height: 20px; stroke: #fff; stroke-width: 2.2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.rail-label {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 4px;
+}
+.verdict-body {
+  flex: 1;
+  padding: 20px 24px 20px;
+}
+.verdict-headline {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #111;
+  margin-bottom: 12px;
+}
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+.pill {
+  display: inline-block;
+  padding: 3px 9px;
+  border-radius: 4px;
+  font-size: 10.5px;
+  font-weight: 600;
+  border: 1px solid;
+}
+.pill-alerts  { background: #f0faf3; border-color: #7bc89b; color: #1a5c33; }
+.pill-type    { background: #f3f3f3; border-color: #ccc;    color: #444; }
+.pill-date    { background: #f3f3f3; border-color: #ccc;    color: #444; }
+.pill-fyend   { background: #f3f3f3; border-color: #ccc;    color: #444; }
+.pill-bs      { background: #f0faf3; border-color: #7bc89b; color: #1a5c33; }
+
+.soft-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.soft-card {
+  background: #f7f6f2;
+  border-radius: 6px;
+  padding: 10px 13px;
+  border: 1px solid #e8e6df;
+}
+.soft-card.amber { background: #faeeda; border-color: #e4c97a; }
+.soft-card-label { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: #888; margin-bottom: 3px; }
+.soft-card-value { font-size: 12px; font-weight: 600; color: #1a1a1a; }
+
+.verdict-bullets { margin-top: 12px; }
+.verdict-bullets li {
+  font-size: 12px;
+  line-height: 1.55;
+  padding: 5px 0 5px 16px;
+  position: relative;
+  color: #222;
+  border-top: 1px solid #ebebeb;
+}
+.verdict-bullets li:first-child { border-top: none; }
+.verdict-bullets li::before { content: '›'; position: absolute; left: 0; color: #2a7a44; font-weight: 700; }
+
+/* ─── §2.0 CURRENT-STATE BAR ─── */
+.current-state-bar {
+  background: #e9f5ee;
+  border: 2px solid #2a7a44;
+  border-radius: 10px;
+  padding: 14px 18px;
+  max-width: 1100px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+/* ─── §2.0 BRIDGE + BAR FLEX PAIR (v3.11) ─── */
+.s20-pair { display:flex; gap:18px; margin-bottom:16px; align-items:stretch; }
+.s20-pair > * { flex:1 1 0; min-width:340px; }
+.s20-pair .current-state-bar { margin-bottom:0; max-width:none; display:flex; flex-direction:column; padding:0; overflow:hidden; }
+.s20-pair .current-state-bar > .darkbar { margin:0; border-radius:8px 8px 0 0; flex:0 0 auto; }
+.s20-pair .current-state-bar > .bar-inner { flex:1 1 auto; display:flex; flex-direction:column; justify-content:center; padding:14px 18px; width:100%; box-sizing:border-box; }
+.s20-pair .current-state-bar > .bar-inner > .bar-text { display:block; }
+@media (max-width:820px){ .s20-pair{ flex-direction:column; } }
+
+.bridge { border:1px solid #dcdcd8; border-radius:10px; overflow:hidden; background:#fff; display:flex; flex-direction:column; }
+/* dark-bar family (v3.13) — 🍺 bridge · 💡 company · 🌡️ state — identical treatment */
+.darkbar { background:#2b2a26; color:#fff; padding:11px 15px; line-height:1.3;
+  font-family:"Comic Sans MS","Comic Sans","Chalkboard SE","Segoe Print","Bradley Hand",cursive;
+  font-size:16px; }
+.darkbar .db-emoji { font-size:22px; vertical-align:-2px; margin-right:4px; }
+.bridge-hd { background:#2b2a26; color:#fff; border-bottom:none; padding:11px 15px;
+  font-family:"Comic Sans MS","Comic Sans","Chalkboard SE","Segoe Print","Bradley Hand",cursive;
+  font-size:16px; line-height:1.3; }
+.bridge-hd .db-emoji { font-size:22px; vertical-align:-2px; margin-right:4px; }
+
+/* 💡 company-guide drawer (v3.13) */
+.company-drawer { margin:14px 0; border:1px solid #d8d6cd; border-radius:10px; overflow:hidden; }
+.company-drawer > summary { list-style:none; cursor:pointer; background:#2b2a26; color:#fff;
+  padding:11px 15px; font-family:"Comic Sans MS","Comic Sans","Chalkboard SE","Segoe Print","Bradley Hand",cursive;
+  font-size:16px; }
+.company-drawer > summary::-webkit-details-marker { display:none; }
+.company-drawer > summary .db-emoji { font-size:22px; vertical-align:-2px; margin-right:4px; }
+.company-body { padding:14px 16px; font-size:12.5px; line-height:1.6; color:#2a2a2a; background:#fff; }
+.company-body h4 { font-family:"Comic Sans MS","Comic Sans","Chalkboard SE","Segoe Print","Bradley Hand",cursive;
+  font-size:17px; font-weight:700; margin:12px 0 4px; color:#2b2a26; }
+.company-body h4:first-child { margin-top:0; }
+.company-body .vintage { font-size:10.5px; color:#999; margin-top:12px; }
+.bridge-row { display:grid; grid-template-columns: 1.15fr 0.55fr 2fr; gap:8px; align-items:center;
+  padding:9px 14px; border-bottom:1px solid #eee; font-size:12px; }
+.bridge-row .b-driver {
+  font-family:"Comic Sans MS","Comic Sans","Chalkboard SE","Segoe Print","Bradley Hand",cursive;
+  font-size:12.5px; font-weight:700; color:#222; }
+.bridge-row .b-contrib { font-weight:700; text-align:right; font-size:12.5px; }
+.bridge-row .b-clause { color:#333; line-height:1.45; }
+.bridge-row.t-green { background:#e9f5ee; } .bridge-row.t-green .b-contrib{ color:#1a5c33; }
+.bridge-row.t-red   { background:#fdecea; } .bridge-row.t-red .b-contrib{ color:#b52f2f; }
+.bridge-row.t-amber { background:#fdf4e3; } .bridge-row.t-amber .b-contrib{ color:#8a5a00; }
+.bridge-cap { background:#fafafa; padding:10px 14px; font-size:11px; color:#555; line-height:1.5; margin-top:auto; }
+
+/* ─── SPEC REFERENCE DRAWER (v3.11) ─── */
+.spec-drawer pre { white-space:pre-wrap; font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  font-size:11px; line-height:1.55; color:#2a2a2a; background:#f7f6f2; border:1px solid #e6e4dc;
+  border-radius:8px; padding:16px; max-width:1100px; overflow-x:auto; }
+
+/* ─── §1 LEDGER TABLE ─── */
+.ledger-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.ledger-table th {
+  background: #f3f3f1;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #555;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+.ledger-table td {
+  padding: 8px 10px;
+  border: 1px solid #e8e8e8;
+  vertical-align: top;
+  line-height: 1.45;
+}
+.ledger-table tr:nth-child(even) td { background: #fafafa; }
+.rank-badge {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2a7a44;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 20px;
+}
+.status-green { color: #2a7a44; font-weight: 700; }
+.status-red   { color: #b52f2f; font-weight: 700; }
+
+/* ─── §2 UNIFIED GRID ─── */
+.grid-wrap { overflow-x: auto; margin-bottom: 12px; }
+.fwd-grid {
+  border-collapse: collapse;
+  font-size: 11.5px;
+  table-layout: fixed;
+  min-width: 1400px;
+  width: 100%;
+}
+.fwd-grid colgroup col:first-child { width: 160px; }
+.fwd-grid colgroup col { width: 74px; }
+
+/* Year band row */
+.yr-band {
+  background: #f0f0ee;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #444;
+  text-align: center;
+  padding: 5px 4px;
+  border: 1px solid #ddd;
+}
+.yr-band-label { background: #e8e8e6; }
+
+/* Period header row */
+.period-hdr {
+  background: #f8f8f6;
+  font-size: 10px;
+  font-weight: 600;
+  color: #555;
+  text-align: center;
+  padding: 5px 4px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.15s;
+}
+.period-hdr:hover { background: #e8f0ec; }
+.period-hdr.hl { background: #c8e6d0; }
+.period-hdr.buy-sell { background: #dceee2; font-weight: 800; color: #1a5c33; }
+
+/* Metric section bar */
+.metric-section-bar td {
+  background: #2a7a44;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 7px 10px;
+  border: 1px solid #1d5c32;
+}
+.metric-nature {
+  font-size: 9.5px;
+  font-weight: 400;
+  opacity: 0.8;
+  margin-left: 6px;
+}
+
+/* Period strip row */
+.period-strip td {
+  background: #fafafa;
+  font-size: 9.5px;
+  color: #888;
+  text-align: center;
+  padding: 2px 2px;
+  border: 1px solid #e8e8e6;
+  font-style: italic;
+}
+.period-strip .lbl-cell { text-align: left; padding-left: 8px; color: #999; font-style: normal; font-size: 10px; }
+
+/* Value row */
+.val-row td {
+  text-align: center;
+  padding: 8px 4px;
+  border: 1px solid #e8e8e6;
+  vertical-align: middle;
+  line-height: 1.35;
+  background: #fff;
+}
+.val-row .lbl-cell {
+  text-align: left;
+  padding-left: 10px;
+  background: #fafaf8;
+  font-weight: 500;
+  font-size: 11.5px;
+  color: #222;
+}
+.val-row .buy-sell-col { font-weight: 800; border-left: 2px solid #2a7a44; border-right: 2px solid #2a7a44; }
+.delta-neg  { color: #b52f2f; font-size: 10.5px; }
+.delta-pos  { color: #2a7a44; font-size: 10.5px; }
+.delta-neu  { color: #888;    font-size: 10.5px; }
+.cell-absent { color: #ccc; font-size: 11px; }
+.cell-withheld { color: #b52f2f; font-size: 14px; }
+.derived-mark { color: #888; font-size: 9px; vertical-align: super; }
+.val-main { font-size: 12px; font-weight: 600; display: block; }
+
+/* Methodology paragraph */
+.methodology {
+  font-size: 11.5px;
+  color: #555;
+  line-height: 1.6;
+  max-width: 1100px;
+  background: #f9f9f7;
+  border: 1px solid #e8e8e4;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-top: 14px;
+}
+
+/* ─── DETAILS DRAWERS ─── */
+details {
+  background: #f7f6f2;
+  border: 1px solid #e4e2da;
+  border-radius: 10px;
+  margin-top: 14px;
+  max-width: 1100px;
+}
+details summary {
+  padding: 10px 14px;
+  font-size: 11.5px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #333;
+  list-style: none;
+}
+details summary::before { content: '▸ '; font-size: 10px; }
+details[open] summary::before { content: '▾ '; }
+.drawer-body { padding: 10px 16px 14px; font-size: 12px; line-height: 1.55; color: #333; }
+.drawer-body .rank-note { margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid #e8e6df; }
+.drawer-body .rank-note:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.drawer-body strong { color: #111; }
+
+/* ─── §3 TEXT+G ─── */
+.text-table { width: 100%; border-collapse: collapse; font-size: 11.5px; }
+.text-table th {
+  background: #f3f3f1;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #555;
+  padding: 7px 9px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+.text-table td {
+  padding: 7px 9px;
+  border: 1px solid #e8e8e8;
+  vertical-align: top;
+  line-height: 1.45;
+}
+.text-table tr.changed td { background: #fffbe8; }
+.text-table tr.buy-sell-row td { background: #f0faf4; border-bottom: 2px solid #2a7a44; }
+
+/* doc column click-highlight */
+.text-table tr.doc-hl td { background: #dceee2 !important; }
+
+.g-raise { color: #2a7a44; font-weight: 700; font-size: 13px; }
+.g-flat  { color: #888; font-size: 12px; }
+.g-none  { color: #ccc; }
+.score-cell { font-size: 14px; text-align: center; }
+
+.guide-trail { font-size: 10.5px; color: #555; line-height: 1.5; }
+.guide-trail .beat { color: #2a7a44; }
+.guide-trail .miss { color: #b52f2f; }
+
+/* ─── §4 DRIFT ─── */
+.drift-wrap { overflow-x: auto; }
+.drift-table { border-collapse: collapse; font-size: 11px; }
+.drift-table th {
+  background: #2a2a2a;
+  color: #fff;
+  font-size: 9.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 6px 7px;
+  border: 1px solid #444;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+}
+.drift-table th:first-child { text-align: left; background: #1a1a1a; }
+.drift-table th:hover { background: #3a5c46; }
+.drift-table th.drift-hl { background: #2a7a44; }
+
+.drift-table td {
+  padding: 6px 8px;
+  border: 1px solid #e4e4e2;
+  text-align: center;
+  font-size: 11px;
+  min-width: 62px;
+  vertical-align: middle;
+}
+.drift-table td:first-child {
+  text-align: left;
+  font-weight: 600;
+  background: #f9f9f7;
+  white-space: nowrap;
+  font-size: 11px;
+  min-width: 160px;
+}
+.drift-table tr:nth-child(even) td:not(:first-child) { background: #fafafa; }
+.cell-quant { color: #2a7a44; font-size: 13px; }
+.cell-qual  { color: #c07a10; font-size: 13px; }
+.cell-blank { color: #ddd; font-size: 13px; }
+.cell-na    { color: #e0e0e0; font-size: 11px; }
+
+.drift-table td.drift-col-hl { background: #d4ead9 !important; }
+.drift-table th.drift-col-hl { background: #2a7a44 !important; }
+
+/* sub-label in drift header */
+.drift-subtype { font-size: 8.5px; opacity: 0.7; display: block; font-weight: 400; margin-top: 2px; }
+
+/* ─── GENERAL TABLES ─── */
+.section-divider {
+  border: none;
+  border-top: 2px solid #e8e8e4;
+  margin: 36px 0;
+}
+.section-label {
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  color: #1a1a1a;
+  border-bottom: 2px solid #2a7a44;
+  padding-bottom: 8px;
+  margin-bottom: 18px;
+  display: block;
+}
+
+/* buy-sell column rightmost */
+.buy-sell-col-drift { border-left: 2px solid #2a7a44 !important; border-right: 2px solid #2a7a44 !important; }
+.newest-col { background: #f0faf4 !important; }
+
+/* B/B sub-row — thin, subordinate to the order book row */
+.bb-row td {
+  text-align: center;
+  padding: 4px 4px;
+  border: 1px solid #ece9e2;
+  background: #fdfcf9;
+  font-size: 10.5px;
+  color: #444;
+  vertical-align: middle;
+  line-height: 1.2;
+}
+.bb-row .lbl-cell {
+  text-align: left;
+  padding-left: 16px;
+  background: #f5f4f0;
+  font-weight: 500;
+  font-size: 10.5px;
+  color: #666;
+  font-style: italic;
+}
+.bb-row .buy-sell-col { font-weight: 700; border-left: 2px solid #2a7a44; border-right: 2px solid #2a7a44; }
+.bb-row .newest-col { background: #f0faf4 !important; }
+.bb-above { color: #2a7a44; font-weight: 700; }
+.bb-below { color: #b52f2f; font-weight: 700; }
+.bb-par   { color: #888; }
+</style>
+</head>
+<body>
+
+<!-- ════════════════════════════ VERDICT CARD ════════════════════════════ -->
+
+<div class="verdict-wrap">
+  <div class="verdict-rail">
+    <div class="rail-badge">
+      <svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+    </div>
+    <div class="rail-label">Turning Up</div>
+  </div>
+  <div class="verdict-body">
+    <div class="verdict-headline">Guide lifted to "tracking ahead" after one quarter — orders +31% organic, book-to-bill 1.15; first multi-signal green since recovery began</div>
+    <div class="pill-row">
+      <span class="pill pill-alerts">No alerts</span>
+      <span class="pill pill-type">· Q1 TU</span>
+      <span class="pill pill-date">· 24-Jul-26</span>
+      <span class="pill pill-fyend">· FY 31 Mar</span>
+      <span class="pill pill-bs">· B/S Clean</span>
+    </div>
+
+    <details class="company-drawer">
+      <summary><span class="db-emoji">💡</span>Idiot's guide to the company — What discoverIE Group plc actually does</summary>
+      <div class="company-body">
+        <h4>What it is</h4>
+        <p>discoverIE designs and makes bespoke electronic bits — sensors, connectors, magnetics, power supplies — that get buried inside other companies' industrial kit. It doesn't sell to you or me; it sells the fiddly custom components an equipment-maker can't easily buy off a shelf, which is why once its part is designed into a customer's product, it tends to stay there for that product's whole life.</p>
+        <h4>Where it's based</h4>
+        <p>UK-listed (FTSE 250), run from Guildford, but the real business is spread across mainland Europe, the UK, China, Sri Lanka, India and North America — around 4,600 staff in 21 countries.</p>
+        <h4>How the money works</h4>
+        <p>Two halves. <strong>Magnetics &amp; Controls</strong> and <strong>Sensing &amp; Connectivity</strong> — both making custom components aimed at markets set to grow for years whatever the economy does: industrial automation, medical, renewable energy, transport electrification, security. Growth comes two ways: winning new "design-ins" that lock a part into a customer's next product (organic), and buying up small specialist component makers to bolt on (acquisitions — 30 deals in 15 years). The order book and design-win pipeline are the tell for where organic sales go next.</p>
+        <h4>What changed lately</h4>
+        <p>A three-deal acquisition burst in FY27 — Storm (Dec-25), Trival (Apr-26) and 3Gmetalworx ($67.5m, announced May-26, awaiting regulatory clearance) — roughly £95m committed in six months, the largest such run in the Group's history, pushing borrowing up to about 2.2x a year’s profit before the planned pay-down to 1.8x.</p>
+        <p><em>The investment case in one line: a serial compounder that buys niche component specialists, embeds them in customers' products for the long haul, and funds the next deal from reliable cash — worth owning while design wins and the order book keep climbing and the debt keeps falling.</em></p>
+        <p class="vintage">As at 24-Jul-26 (Q1 FY27 TU). Stable facts — not updated by incremental reads unless a big shake-up (a takeover, a sale, a change in how the business is built) makes it stale.</p>
+      </div>
+    </details>
+
+    <div class="soft-grid">
+      <div class="soft-card">
+        <div class="soft-card-label">Current State</div>
+        <div class="soft-card-value">🟢 Turning Up — all Q-over-Q and YoY checks green</div>
+      </div>
+      <div class="soft-card">
+        <div class="soft-card-label">Fired</div>
+        <div class="soft-card-value">2-of-3: Condition 1 (G-RAISE Buy/Sell RNS) + Condition 2 (Text 🟢🟢)</div>
+      </div>
+      <div class="soft-card amber">
+        <div class="soft-card-label">Caveat</div>
+        <div class="soft-card-value">Orders +31% partly vs soft Q1 FY26 base (−4% CER prior year); broad-based but discount ~5pp for comp effect</div>
+      </div>
+      <div class="soft-card">
+        <div class="soft-card-label">Next</div>
+        <div class="soft-card-value">H1 FY27 TU (Oct-26): organic orders Q2 ≥+10%? Controls organic sales positive? Proforma gearing tracking to 1.8x?</div>
+      </div>
+    </div>
+    <ul class="verdict-bullets">
+      <li>Guide from "in line" (Jun-26) to "ahead" (Jul-26) in one quarter is the most rapid guide-raise in the trailing 4-year record; company is a conservative guider so this signal is high-credence.</li>
+      <li>Order-to-sales lead of 1–2 quarters: +31% organic orders sustained into Q2 could drive organic revenue ≥+10% by H2 FY27. Order book £165m (FY26-end) is first FY-to-FY increase since the FY23 peak.</li>
+      <li>Proforma gearing 2.2x (post-Trival + 3G) is the largest acquisition burst in Group history (£95m in 6 months); FY27 FCF delivery critical to reduce to guided 1.8x by Mar-27. Facility extended to May-30, covenant 3.5x — manageable but the first watch flag in an otherwise clean B/S.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ════════════════════════════ §1 LEDGER ════════════════════════════ -->
+
+<div class="section">
+  <span class="section-label">§1 — Metric Ledger</span>
+  <table class="ledger-table">
+    <thead>
+      <tr>
+        <th style="width:40px">Rank</th>
+        <th style="width:180px">Metric</th>
+        <th style="width:65px">Type</th>
+        <th>Why it leads for DSCV</th>
+        <th style="width:170px">Cadence</th>
+        <th style="width:140px">Status this run</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align:center"><span class="rank-badge">1</span></td>
+        <td><strong>Order book (£m)</strong></td>
+        <td>Snapshot · Leading</td>
+        <td>Company's own labelling in every RNS: "provides good visibility of demand." The order book captures customer intent 4–6 months ahead of revenue. FY26 £165m is the first FY-to-FY increase in 4 periods — cited in every qualifying RNS as the forward-demand anchor. Peaked at £257m Sep-22; trough £157m Sep-25; inflection confirmed Mar-26.</td>
+        <td>H1 R, FY R (£m value); Q1/H1/Q3/FY TUs (directional only)</td>
+        <td class="status-green">🟢↗ First FY-to-FY increase: £165m vs £161m. Q1 FY27 TU: "growing order book," B/B 1.15.</td>
+      </tr>
+      <tr>
+        <td style="text-align:center"><span class="rank-badge">2</span></td>
+        <td><strong>Organic orders growth (%&nbsp;YoY CER)</strong></td>
+        <td>Flow · Leading</td>
+        <td>Orders demonstrably led organic sales by 1–2 quarters in this cycle. Organic orders troughed at −6% (Q3 FY25) while organic sales were still −3%; orders then inflected to +15% Q4 FY25 before organic sales turned positive in Q1 FY26. Company repeatedly states "orders ahead of sales" as the primary directional signal. Disclosed every quarterly doc.</td>
+        <td>All qualifying docs; Q grain from Q1/Q3 TUs</td>
+        <td class="status-green">🟢🟢↗ +31% organic Q1 FY27. Q4 FY26 was +14%. Strongest single quarter in the record.</td>
+      </tr>
+      <tr>
+        <td style="text-align:center"><span class="rank-badge">3</span></td>
+        <td><strong>Organic revenue growth (%&nbsp;YoY CER)</strong></td>
+        <td>Flow · Coincident</td>
+        <td>Primary revenue KSI. Quarterly grain available. Sequential QonQ is the first hard confirmation a cyclical turn is becoming a sales reality. Q1 FY27 +6% organic follows Q4 FY26 +5% — consecutive quarterly improvement confirms the turn is translating from orders to revenue. Band: H-grain ±2pp.</td>
+        <td>All qualifying docs; Q grain from Q1/Q3 TUs</td>
+        <td class="status-green">🟢↗ +6% organic Q1 FY27, sequential improvement from +5% Q4 FY26.</td>
+      </tr>
+      <tr>
+        <td style="text-align:center"><span class="rank-badge">4</span></td>
+        <td><strong>Adjusted operating margin (%)</strong></td>
+        <td>Rate · Lagging-leading</td>
+        <td>10-year unbroken improvement KSI (or in-line in Covid year). A margin break before revenue recovery = structural cost discipline; margin fade inside organic recovery = investment drag or mix. FY26 is the first FY-to-FY decline (-0.5pp) in the record, explicitly attributed to deliberate investment (engineering/sales capacity, Thailand/India facilities). H1 FY26 14.0% shows the organic business remains ahead on a run-rate basis. Band H-grain ±2pp.</td>
+        <td>H1 R, FY R (value); TUs (directional only)</td>
+        <td class="status-red">🔴↘ FY26 13.8% vs FY25 14.3% (−0.5pp, first FY decline in 10+yrs). Investment-driven; annualised run-rate ahead per company. Q1 FY27 not disclosed.</td>
+      </tr>
+      <tr>
+        <td style="text-align:center"><span class="rank-badge">5</span></td>
+        <td><strong>Design wins ELV (£m new, period)</strong></td>
+        <td>Snapshot · Earliest-lead</td>
+        <td>Management's stated "key driver of future organic revenues." Leads sales by 12–24 months as wins convert through production launch. FY25 R: ">£350m" new wins. H1 FY26 R: £210m. FY26 R: "ahead of last year." The bank of unproduced wins built through destocking is now converting — the company explicitly noted this is driving the organic orders acceleration. Baseline for quantitative comparison starts at first print (FY23 R: £273m of new wins registered in the year, +11% YoY).</td>
+        <td>H1 R, FY R (£m or directional); TUs (qualitative only)</td>
+        <td class="status-green">🟢 Strong. FY26 R: new wins "ahead of last year." Bank converting into orders and revenue as destocking ends.</td>
+      </tr>
+    </tbody>
+  </table>
+  <details>
+    <summary>Notes — Ledger</summary>
+    <div class="drawer-body">Bands fixed for this run: H-grain ±2.0pp; Q-grain ±5.0pp. EPS not scored — margin and revenue are the cleaner lead indicators for this earnings-compounder. A proposed future addition: divisional order growth (M&C vs S&C split) as a Rank 6 candidate — the Controls/Magnetics divergence was material during the destocking cycle and worth tracking separately once the intra-divisional split is again the primary story.</div>
+  </details>
+</div>
+
+<!-- ════════════════════════════ §2 UNIFIED FORWARD GRID ════════════════════════════ -->
+
+<div class="section">
+  <span class="section-label">§2 — Forward Signals Grid · Q-Grain (17 cells) · FY23–FY27</span>
+  <div class="grid-wrap">
+  <table class="fwd-grid" id="fwdgrid">
+  <colgroup>
+    <col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col>
+  </colgroup>
+  <thead>
+    <!-- Year band row -->
+    <tr>
+      <td class="yr-band yr-band-label"></td>
+      <td class="yr-band" colspan="4">FY2023</td>
+      <td class="yr-band" colspan="4">FY2024</td>
+      <td class="yr-band" colspan="4">FY2025</td>
+      <td class="yr-band" colspan="4">FY2026</td>
+      <td class="yr-band" style="background:#c8e6d0;color:#1a5c33;font-weight:800">FY2027</td>
+    </tr>
+    <!-- Period header row -->
+    <tr>
+      <th class="period-hdr" style="text-align:left;background:#e8e8e6;cursor:default"></th>
+      <th class="period-hdr" data-ptype="Q1" onclick="hlCol(this)">Q1</th>
+      <th class="period-hdr" data-ptype="Q2" onclick="hlCol(this)">Q2†</th>
+      <th class="period-hdr" data-ptype="Q3" onclick="hlCol(this)">Q3</th>
+      <th class="period-hdr" data-ptype="Q4" onclick="hlCol(this)">Q4†</th>
+      <th class="period-hdr" data-ptype="Q1" onclick="hlCol(this)">Q1</th>
+      <th class="period-hdr" data-ptype="Q2" onclick="hlCol(this)">Q2†</th>
+      <th class="period-hdr" data-ptype="Q3" onclick="hlCol(this)">Q3</th>
+      <th class="period-hdr" data-ptype="Q4" onclick="hlCol(this)">Q4†</th>
+      <th class="period-hdr" data-ptype="Q1" onclick="hlCol(this)">Q1</th>
+      <th class="period-hdr" data-ptype="Q2" onclick="hlCol(this)">Q2†</th>
+      <th class="period-hdr" data-ptype="Q3" onclick="hlCol(this)">Q3</th>
+      <th class="period-hdr" data-ptype="Q4" onclick="hlCol(this)">Q4†</th>
+      <th class="period-hdr" data-ptype="Q1" onclick="hlCol(this)">Q1</th>
+      <th class="period-hdr" data-ptype="Q2" onclick="hlCol(this)">Q2†</th>
+      <th class="period-hdr" data-ptype="Q3" onclick="hlCol(this)">Q3</th>
+      <th class="period-hdr buy-sell" data-ptype="Q4" onclick="hlCol(this)">Q4†</th>
+      <th class="period-hdr buy-sell" style="background:#c8e6d0;color:#1a5c33;border:2px solid #2a7a44" data-ptype="Q1" onclick="hlCol(this)">Q1 ★</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <!-- ── RANK 1: ORDER BOOK ── -->
+    <tr class="metric-section-bar"><td colspan="18">Rank 1 — Order Book (£m) <span class="metric-nature">· Snapshot · position-to-position at H/FY disclosure grain</span></td></tr>
+    <tr class="period-strip">
+      <td class="lbl-cell">Period grain</td>
+      <td colspan="4" style="text-align:center;color:#aaa;font-style:italic">H/FY only · Q columns unfilled</td>
+      <td colspan="4" style="text-align:center;color:#aaa;font-style:italic">H/FY only · Q columns unfilled</td>
+      <td colspan="4" style="text-align:center;color:#aaa;font-style:italic">H/FY only · Q columns unfilled</td>
+      <td colspan="4" style="text-align:center;color:#aaa;font-style:italic">H/FY only · Q columns unfilled</td>
+      <td style="text-align:center;color:#aaa;font-style:italic">qual.</td>
+    </tr>
+    <tr class="val-row">
+      <td class="lbl-cell">Value / Turn</td>
+      <td><!-- Q1 FY23 -->
+        <span class="val-main">£240m</span>
+        <span class="delta-neu">Q1 TU · first print</span><br>
+        <span>—</span>
+      </td>
+      <td colspan="2" style="text-align:center;border:1px solid #e8e8e6"><!-- H1 FY23 cross two Q cols -->
+        <span class="val-main">£257m</span>
+        <span class="delta-neu">H1 · peak</span><br>
+        <span>—</span>
+      </td>
+      <td><!-- Q4 FY23 = FY23 -->
+        <span class="val-main">£223m</span>
+        <span class="delta-neg">FY · first FY</span><br>
+        <span>—</span>
+      </td>
+      <td><span class="cell-na">—</span></td>
+      <td colspan="2" style="text-align:center;border:1px solid #e8e8e6">
+        <span class="val-main">£203m</span>
+        <span class="delta-neg">H1 −£54m</span><br>
+        <span>🔴↘</span>
+      </td>
+      <td>
+        <span class="val-main">£175m</span>
+        <span class="delta-neg">FY −£48m</span><br>
+        <span>🔴↘</span>
+      </td>
+      <td><span class="cell-na">—</span></td>
+      <td colspan="2" style="text-align:center;border:1px solid #e8e8e6">
+        <span class="val-main">£163m</span>
+        <span class="delta-neg">H1 −£40m</span><br>
+        <span>🔴↘</span>
+      </td>
+      <td>
+        <span class="val-main">£161m</span>
+        <span class="delta-neg">FY −£14m</span><br>
+        <span>🔴↘</span>
+      </td>
+      <td><span class="cell-na">—</span></td>
+      <td colspan="2" style="text-align:center;border:1px solid #e8e8e6">
+        <span class="val-main">£157m</span>
+        <span class="delta-neg">H1 −£6m</span><br>
+        <span>🔴↘</span>
+      </td>
+      <td class="buy-sell-col">
+        <span class="val-main">£165m</span>
+        <span class="delta-pos">FY +£4m</span><br>
+        <span>🟢↗</span>
+      </td>
+      <td class="newest-col">
+        <span class="val-main">🟡</span>
+        <span class="delta-neu">qual.</span><br>
+        <span>B/B 1.15</span>
+      </td>
+    </tr>
+
+    <!-- ── BOOK-TO-BILL SUB-ROW (under Rank 1) ── -->
+    <!-- Stated values only — 7 data points from source documents; all blanks are verified absences -->
+    <!-- Col map: 0=lbl · 1=Q1FY23 · 2-3=Q2-Q3FY23(H1) · 4=Q4FY23 · 5=Q1FY24 · 6-7=Q2-Q3FY24 · 8=Q4FY24 -->
+    <!--          9=Q1FY25 · 10-11=Q2-Q3FY25(H1) · 12=Q4FY25 · 13=Q1FY26 · 14=Q2FY26 · 15=Q3FY26 · 16=Q4FY26(buy-sell) · 17=Q1FY27 -->
+    <!-- Sources: Jul-22 Q1TU · Oct-23 H1TU (Q1+Q2 FY24) · Jul-24 Q1TU · Dec-24 H1R · Feb-26 Q3TU · Jul-26 Q1TU -->
+    <tr class="bb-row">
+      <td class="lbl-cell">Book-to-bill</td>
+      <!-- FY23: Q1=1.09; Q2,Q3 (H1 span),Q4 = not stated -->
+      <td><span class="bb-above">1.09</span></td>
+      <td colspan="2" style="text-align:center;border:1px solid #ece9e2"><span class="bb-above">1.07</span><br><span style="font-size:9.5px;color:#aaa">H1 period</span></td>
+      <td><span class="bb-par" style="font-size:10px">—</span></td>
+      <!-- FY24: Q1=0.84; Q2=0.91 (exit ~1.0); Q3,Q4 not stated -->
+      <td><span class="bb-below">0.84</span></td>
+      <td colspan="2" style="text-align:center;border:1px solid #ece9e2"><span class="bb-below">0.91</span><br><span style="font-size:9.5px;color:#aaa">exit ~1.0</span></td>
+      <td><span class="bb-par" style="font-size:10px">—</span></td>
+      <!-- FY25: Q1=1.01; H1 period=0.98; Q3,Q4 not stated -->
+      <td><span class="bb-above">1.01</span></td>
+      <td colspan="2" style="text-align:center;border:1px solid #ece9e2"><span class="bb-par">0.98</span><br><span style="font-size:9.5px;color:#aaa">H1 period</span></td>
+      <td><span class="bb-par" style="font-size:10px">—</span></td>
+      <!-- FY26: Q1 not stated; Q2 not stated; Q3=1.03; Q4 (buy-sell col) not stated -->
+      <td><span class="bb-par" style="font-size:10px">—</span></td>
+      <td><span class="bb-par" style="font-size:10px">—</span></td>
+      <td><span class="bb-above">1.03</span></td>
+      <td class="buy-sell-col"><span class="bb-par" style="font-size:10px">—</span></td>
+      <!-- Q1 FY27 -->
+      <td class="newest-col"><span class="bb-above" style="font-size:12px">1.15</span></td>
+    </tr>
+
+    <!-- ── RANK 2: ORGANIC ORDERS ── -->
+    <tr class="metric-section-bar"><td colspan="18">Rank 2 — Organic Orders Growth (% YoY CER) <span class="metric-nature">· Flow · like-period-to-like-period · sequential QonQ fires 🔴 on negative</span></td></tr>
+    <tr class="period-strip">
+      <td class="lbl-cell">Period grain</td>
+      <td>Q1</td><td>Q2†</td><td>Q3</td><td>Q4†</td>
+      <td>Q1</td><td>Q2†</td><td>Q3</td><td>Q4†</td>
+      <td>Q1</td><td>Q2†</td><td>Q3</td><td>Q4†</td>
+      <td>Q1</td><td>Q2†</td><td>Q3</td><td>Q4†</td>
+      <td>Q1</td>
+    </tr>
+    <tr class="val-row">
+      <td class="lbl-cell">Organic orders %</td>
+      <td><span class="cell-na">—</span></td>
+      <td><span class="cell-na">—</span></td>
+      <td><span class="cell-na">—</span></td>
+      <td><span class="cell-na">—</span></td>
+      <!-- FY24 -->
+      <td><span class="cell-na">—</span><br><span class="delta-neu" style="font-size:10px">B/B qual.</span></td>
+      <td><span class="cell-na">—</span><br><span class="delta-neu" style="font-size:10px">qual.</span></td>
+      <td><span class="val-main">+3%</span><br><span>🟢↗</span></td>
+      <td><span class="cell-na">—</span><br><span style="font-size:9.5px;color:#b06000">unsourced · open item</span></td>
+      <!-- FY25 -->
+      <td><span class="val-main">+4%</span><br><span>🟢↗</span></td>
+      <td><span class="val-main">−2%<span class="derived-mark">†</span></span><br><span>🔴↘</span></td>
+      <td><span class="val-main">−6%</span><br><span>🔴↘</span></td>
+      <td><span class="val-main">+15%</span><br><span>🟢↗</span></td>
+      <!-- FY26 -->
+      <td><span class="val-main">−4%</span><br><span>🔴↘</span><br><span style="font-size:10px;color:#888">+2% ex-1 booking</span></td>
+      <td><span class="val-main">+8%</span><br><span>🟢↗</span></td>
+      <td><span class="val-main">+4%</span><br><span>🟢↗</span></td>
+      <td class="buy-sell-col"><span class="val-main">+14%</span><br><span>🟢↗</span></td>
+      <!-- Q1 FY27 -->
+      <td class="newest-col"><span class="val-main" style="color:#2a7a44;font-size:14px">+31%</span><br><span>🟢🟢↗</span></td>
+    </tr>
+
+    <!-- ── RANK 3: ORGANIC REVENUE ── -->
+    <tr class="metric-section-bar"><td colspan="18">Rank 3 — Organic Revenue Growth (% YoY CER) <span class="metric-nature">· Flow · sequential QonQ primary trigger</span></td></tr>
+    <tr class="period-strip">
+      <td class="lbl-cell">Period grain</td>
+      <td>Q1</td><td>Q2†</td><td>Q3</td><td>Q4†</td>
+      <td>Q1</td><td>Q2†</td><td>Q3</td><td>Q4†</td>
+      <td>Q1</td><td>Q2†</td><td>Q3</td><td>Q4†</td>
+      <td>Q1</td><td>Q2†</td><td>Q3</td><td>Q4†</td>
+      <td>Q1</td>
+    </tr>
+    <tr class="val-row">
+      <td class="lbl-cell">Organic revenue %</td>
+      <td><span class="val-main">+17%</span><br><span>— (first print)</span></td>
+      <td><span class="cell-na">—</span><br><span style="font-size:10px;color:#888">H1 +14%</span></td>
+      <td><span class="val-main">+5%</span><br><span>🔴↘</span></td>
+      <td><span class="cell-na">—</span></td>
+      <!-- FY24 -->
+      <td><span class="val-main">+3%</span><br><span>🟢↗</span></td>
+      <td><span class="val-main">−1%<span class="derived-mark">†</span></span><br><span>🔴↘</span></td>
+      <td><span class="val-main">−7%</span><br><span class="delta-neg">4m period</span><br><span>🔴↘</span></td>
+      <td><span class="val-main">+2%</span><br><span>🟢↗</span></td>
+      <!-- FY25 -->
+      <td><span class="val-main">−12%</span><br><span>🔴↘</span></td>
+      <td><span class="val-main">−7%<span class="derived-mark">†</span></span><br><span>🟢↗</span></td>
+      <td><span class="val-main">−3%</span><br><span>🟢↗</span></td>
+      <td><span class="val-main">−5%<span class="derived-mark">†</span></span><br><span>🔴↘</span></td>
+      <!-- FY26 -->
+      <td><span class="val-main">0%</span><br><span>🟢↗</span></td>
+      <td><span class="val-main">+1%<span class="derived-mark">†</span></span><br><span>🟢↗</span></td>
+      <td><span class="val-main">+1%</span><br><span>🟡→</span></td>
+      <td class="buy-sell-col"><span class="val-main">+5%</span><br><span>🟢↗</span></td>
+      <!-- Q1 FY27 -->
+      <td class="newest-col"><span class="val-main" style="color:#2a7a44">+6%</span><br><span>🟢↗</span></td>
+    </tr>
+
+    <!-- ── RANK 4: ADJUSTED OPERATING MARGIN ── -->
+    <tr class="metric-section-bar"><td colspan="18">Rank 4 — Adjusted Operating Margin (%) <span class="metric-nature">· Period rate · H1 vs H1 / FY vs FY · band ±2.0pp</span></td></tr>
+    <tr class="period-strip">
+      <td class="lbl-cell">Period grain</td>
+      <td colspan="2" style="text-align:center">H1 FY23</td><td colspan="2" style="text-align:center">FY23</td>
+      <td colspan="2" style="text-align:center">H1 FY24</td><td colspan="2" style="text-align:center">FY24</td>
+      <td colspan="2" style="text-align:center">H1 FY25</td><td colspan="2" style="text-align:center">FY25</td>
+      <td colspan="2" style="text-align:center">H1 FY26</td><td colspan="2" style="text-align:center">FY26</td>
+      <td style="text-align:center;color:#ccc;font-style:italic">n/a</td>
+    </tr>
+    <tr class="val-row">
+      <td class="lbl-cell">Adj. op. margin</td>
+      <td colspan="2" style="text-align:center;border:1px solid #e8e8e6">
+        <span class="val-main">11.7%</span><br><span>— (first H)</span>
+      </td>
+      <td colspan="2" style="text-align:center;border:1px solid #e8e8e6">
+        <span class="val-main">11.5%</span><br><span>— (first FY)</span>
+      </td>
+      <td colspan="2" style="text-align:center;border:1px solid #e8e8e6">
+        <span class="val-main">12.9%</span><br><span class="delta-pos">+1.2pp <span style="font-size:9px;color:#888">(+1.4 CER)</span></span><br><span>🟢↗</span>
+      </td>
+      <td colspan="2" style="text-align:center;border:1px solid #e8e8e6">
+        <span class="val-main">13.1%</span><br><span class="delta-pos">+1.6pp</span><br><span>🟢↗</span>
+      </td>
+      <td colspan="2" style="text-align:center;border:1px solid #e8e8e6">
+        <span class="val-main">13.8%</span><br><span class="delta-pos">+0.9pp</span><br><span>🟢↗</span>
+      </td>
+      <td colspan="2" style="text-align:center;border:1px solid #e8e8e6">
+        <span class="val-main">14.3%</span><br><span class="delta-pos">+1.2pp</span><br><span>🟢↗</span>
+      </td>
+      <td colspan="2" style="text-align:center;border:1px solid #e8e8e6">
+        <span class="val-main">14.0%</span><br><span class="delta-pos">+0.2pp</span><br><span>🟢↗</span>
+      </td>
+      <td colspan="2" class="buy-sell-col" style="text-align:center;border:1px solid #e8e8e6">
+        <span class="val-main">13.8%</span><br><span class="delta-neg">−0.5pp</span><br><span>🔴↘</span>
+      </td>
+      <td class="newest-col"><span class="cell-na">—</span><br><span style="font-size:10px;color:#aaa">TUs don't disclose</span></td>
+    </tr>
+
+    <!-- ── RANK 5: DESIGN WINS ELV ── -->
+    <tr class="metric-section-bar"><td colspan="18">Rank 5 — Design Wins ELV (£m new period value) <span class="metric-nature">· Snapshot · position / pipeline · H1 R / FY R grain</span></td></tr>
+    <tr class="period-strip">
+      <td class="lbl-cell">Period grain</td>
+      <td colspan="4" style="text-align:center;color:#aaa;font-style:italic">H/FY only</td>
+      <td colspan="4" style="text-align:center;color:#aaa;font-style:italic">H/FY only</td>
+      <td colspan="4" style="text-align:center;color:#aaa;font-style:italic">H/FY only</td>
+      <td colspan="4" style="text-align:center;color:#aaa;font-style:italic">H/FY only</td>
+      <td style="text-align:center;color:#aaa;font-style:italic">—</td>
+    </tr>
+    <tr class="val-row">
+      <td class="lbl-cell">ELV / Direction</td>
+      <td><span class="cell-na">—</span></td>
+      <td colspan="2" style="text-align:center;border:1px solid #e8e8e6">
+        <span class="val-main">+6%</span><br><span style="font-size:10px">H1 FY23 YoY</span><br><span>🟢↗</span>
+      </td>
+      <td>
+        <span class="val-main">£273m</span><br><span style="font-size:10px">FY new wins · +11% YoY</span><br><span>🟢↗</span>
+      </td>
+      <td><span class="cell-na">—</span></td>
+      <td colspan="2" style="text-align:center;border:1px solid #e8e8e6">
+        <span class="val-main">£190m</span><br><span style="font-size:10px">H1 · +23% YoY</span><br><span>🟢↗</span>
+      </td>
+      <td><span class="cell-na">—</span></td>
+      <td><span class="cell-na">—</span></td>
+      <td colspan="2" style="text-align:center;border:1px solid #e8e8e6">
+        <span class="val-main">£205m</span><br><span style="font-size:10px">H1 · +8%</span><br><span>🟢→</span>
+      </td>
+      <td>
+        <span class="val-main">&gt;£350m</span><br><span style="font-size:10px">FY · +5% · +30% 2yr</span><br><span>🟢↗</span>
+      </td>
+      <td><span class="cell-na">—</span></td>
+      <td colspan="2" style="text-align:center;border:1px solid #e8e8e6">
+        <span class="val-main">£210m</span><br><span style="font-size:10px">H1 · slight ↑</span><br><span>🟢→</span>
+      </td>
+      <td class="buy-sell-col">
+        <span class="val-main">Ahead</span><br><span style="font-size:10px">FY · vs LY</span><br><span>🟢↗</span>
+      </td>
+      <td class="newest-col"><span class="cell-na">—</span><br><span style="font-size:10px;color:#aaa">TU cadence</span></td>
+    </tr>
+
+  </tbody>
+  </table>
+  </div><!-- /grid-wrap -->
+
+  <details>
+    <summary>Turn methodology &amp; restatement basis</summary>
+    <div class="drawer-body">
+    <strong>Turn methodology.</strong> Rank 1 (Order book) is a snapshot metric — value compared position-to-position at its own disclosure grain (H1-vs-H1; FY-vs-FY); cross-type comparisons (H→FY) are not scored. Ranks 2 and 3 (organic orders and revenue %) are flow metrics — compared like-period-to-like-period only (Q1-vs-Q1, H1-vs-H1; never H1-vs-9M). Sequential QonQ is the primary trigger for these ranks: any negative sequential fires 🔴↘ regardless of year-comp; year-comp rate delta (±5pp Q-band) is secondary. Rank 4 (margin) is a period rate — H1-vs-H1 and FY-vs-FY only, band ±2.0pp; direction governs when inside band. Rank 5 (design wins) is a snapshot — direction vs prior same-type print. HARD GATE: no half or year is scored until its derivable quarters are computed with QonQ.<br><br>
+    <strong>Restatement &amp; provenance basis.</strong> Cells marked † are derived (Q2 = H1 − Q1; Q4 = FY − 9M), workings shown once, cross-verified where a second route exists (e.g. H2 − Q3). ʳ = restated cell. Later audited figures govern earlier "c." estimates; no cross-basis arithmetic without a flag (reported vs adjusted; M&amp;A first-time inclusion; perimeter changes). Order-book £m first print £240m (Q1 FY23 TU, Jun-22); £257m peak stated directly in H1 FY23 R; TU £m quantification lapsed after FY23, so Q1 FY27's qualitative book is a lapsed cadence, not a withhold. H1 FY24 margin delta shown reported (+1.2pp); company states +1.4pp CER. Rank 4 FY23 first print carries no prior comp. Q4 FY24 organic orders is an unsourced open item pending a located figure — shown blank, not derived. Buy/Sell (rightmost, Q1 FY27) column bold throughout the grid.
+    </div>
+  </details>
+
+  <details>
+    <summary>Notes — Ranks 1–5</summary>
+    <div class="drawer-body">
+      <div class="rank-note"><strong>Rank 1 — Order book:</strong> The £257m Sep-22 peak is stated directly in the H1 FY23 R ("record order book of £257m"); first print is £240m (Q1 FY23 TU, Jun-22). TUs quantified the £m book through FY23 but the habit lapsed thereafter — Q1 FY27 TU giving no £m value is a lapsed cadence, not a withhold; it confirms "strong order book" and B/B 1.15, a qualitative continuation of the upward turn. The £165m FY26 print is the first FY-to-FY increase in four periods, confirming the book has turned.</div>
+      <div class="rank-note"><strong>Rank 2 — Organic orders:</strong> Q1 FY26 organic orders were reported as −4% CER; the TU noted "+2% organically excluding one large booking" in the prior year. The −4% is used as the headline for like-for-like comparison. Q2 FY26† = +8% organic (H1 R confirmed). Q4 FY26 = +14% organic (FY26 R governs over Q4+FY TU's +15%). Q1 FY27's +31% is against a soft base (−4% prior year) — discount ~5pp for comp effect, still the strongest print in the record.</div>
+      <div class="rank-note"><strong>Rank 3 — Organic revenue:</strong> Q4 FY25† = −5% (H2 FY25 = −4% per FY25 R; Q3 = −3%; Q4 = 2×(−4)−(−3) = −5%). Note this is a slight worsening vs Q3, explained by M&C remaining −10% in Q4 FY25 (per FY25 FY TU) while S&C recovered (+5%). The aggregate was still improving on a rolling basis. Q4 FY26† = +5% organic (directly stated in both FY26 Q4+FY TU and FY26 R).</div>
+      <div class="rank-note"><strong>Rank 4 — Margin:</strong> FY26 13.8% is the first FY-vs-FY decline in the 10-year KSI record. The company attributes the −0.5pp to deliberate forward investment: +3.5% organic operating costs for engineering/sales resource and new manufacturing capacity (Thailand completed, India in progress). H2 FY26 derived at 13.6% — marginally below H1 FY26's 14.0%, confirming H2 carried the heavier investment spend. The company's "annualised run-rate including recent high-margin acquisitions ahead of last year" is forward-looking; the printed FY26 margin 🔴↘ is the scored signal.</div>
+      <div class="rank-note"><strong>Rank 5 — Design wins:</strong> No quantified ELV in FY26 R (qualitative "ahead of last year" only). First-time numeric baseline for comparison is H1 FY23 (+6% YoY). The bank of wins converting to revenue is the company's own explanation for the Q1 FY27 orders acceleration — making this the earliest-lead metric in the current recovery cycle.</div>
+    </div>
+  </details>
+</div>
+
+<!-- ════════════════════════════ §2.0 CURRENT STATE ════════════════════════════ -->
+
+<div class="section">
+  <span class="section-label">§2.0 — Most-Recent RNS · FY27 Q1 TU · 24-Jul-26 · Four Checks</span>
+
+  <details>
+    <summary>The four checks — workings behind the read</summary>
+    <div class="drawer-body" style="font-size:12.5px;line-height:1.6;max-width:1100px;color:#333">
+    <p style="margin-bottom:8px"><strong>Check 1 — Sequential (Q1 FY27 vs Q4 FY26):</strong> Organic revenue +6% vs +5% prior quarter 🟢. Organic orders +31% vs +14% prior quarter 🟢🟢. Book-to-bill 1.15 vs 1.03 prior quarter 🟢. All metrics improve sequentially.</p>
+    <p style="margin-bottom:8px"><strong>Check 2 — Same-type vs last year (Q1 FY27 vs Q1 FY26):</strong> Organic revenue +6% vs 0% prior year 🟢. Organic orders +31% vs −4% prior year 🟢🟢. Book-to-bill 1.15 vs 0.95 prior year (stated, H1 FY26 R) 🟢. Strong same-type improvement; base effect not fully benign (Q1 FY26 was soft) but growth is real.</p>
+    <p style="margin-bottom:8px"><strong>Check 3 — Sub-period derivations:</strong> Q1 FY27 is a single-quarter TU; no further intra-quarter derivation available from this document type. Cross-reference to Q4 FY26 done in Check 1. No backward-loading flag — the latest sub-period is the strongest print.</p>
+    <p><strong>Check 4 — Guidance vs prior guide:</strong> FY26 R (Jun-26) initiated FY27 guide: "full year adjusted earnings in line with Board expectations." Q1 FY27 TU (Jul-26): "full year adjusted earnings <em>tracking ahead</em> of Board's expectations." 🟢 G-column RAISE fired. One quarter into FY27, guide already lifted. Company is a conservative guider with a strong beat-and-raise track record — this signal is high-credence.</p>
+    </div>
+  </details>
+
+  <div class="s20-pair">
+
+    <div class="bridge">
+      <div class="bridge-hd"><span class="db-emoji">🍺</span>IDIOT'S GUIDE TO THE ADJUSTED PBT BRIDGE — why profit went up in FY26 (£49.9m → £51.9m, +4%)</div>
+      <div class="bridge-row t-green">
+        <div class="b-driver">🏭 Selling more, the hard way</div>
+        <div class="b-contrib">+£0.5m op. profit</div>
+        <div class="b-clause">Sales grew 5% to £443m, but day-to-day profit only crept up 1% to £61.0m — because they deliberately spent ahead, kitting out factories in Asia and hiring sales and engineering muscle in the US and Europe. Jam tomorrow: the investment lands now, the payback comes later.</div>
+      </div>
+      <div class="bridge-row t-amber">
+        <div class="b-driver">🔧 Building for a bigger tomorrow</div>
+        <div class="b-contrib">held it to +1%</div>
+        <div class="b-clause">That same spending is why the profit slice of each pound of sales dipped a touch (13.8%, down 0.4 of a point). It's a choice, not a stumble — they're buying capacity now to hit a 17%-margin goal by 2030, part-funded by squeezing costs elsewhere.</div>
+      </div>
+      <div class="bridge-row t-green">
+        <div class="b-driver">💸 The bank takes a smaller cut</div>
+        <div class="b-contrib">+3pts of PBT</div>
+        <div class="b-clause">Here's the lift: less money owed and falling interest rates meant a smaller bill for borrowed cash. That's what lifts whole-company profit up 4% when the shop-floor profit only rose 1% — the gap is pure interest saving. Net debt fell £14m to £80.5m over the year.</div>
+      </div>
+      <div class="bridge-row t-green">
+        <div class="b-driver">🪙 More left over per share</div>
+        <div class="b-contrib">EPS +4% → 40.3p</div>
+        <div class="b-clause">After a lighter interest and tax bill, each share earned 40.3p, up from 38.7p — the tenth straight year of earnings growth (14% a year averaged over the decade). Enough to nudge the dividend up 4% to 13.0p and still cover it three times over.</div>
+      </div>
+      <div class="bridge-cap">So in one sentence: they sold more and paid the bank less, so profit rose 4% even though they poured money into future growth that flattened this year's margin. Profit accelerates from here when: the Asia and US investment starts earning its keep, net debt keeps falling faster than rates, and the three new acquisitions (bought for £95m) bed in at their higher margins.</div>
+    </div>
+
+    <div class="current-state-bar">
+      <div class="darkbar"><span class="db-emoji">🌡️</span>CURRENT STATE — the read right now</div>
+      <div class="bar-inner"><div class="bar-text">🟢 <strong>TURNING UP — STABLE:</strong> Q1 FY27 fires all four §2.0 checks green: organic orders +31% (strongest quarter in the record), organic revenue +6% continuing sequential improvement from Q4 FY26, book-to-bill 1.15 — orders running materially ahead of sales — and the guide raised from "in line" to "tracking ahead" within a single quarter of the new financial year. No backward-loading detected; the latest print is the lead, not a fading aggregate.</div></div>
+    </div>
+
+  </div>
+
+  <details>
+    <summary>Notes — §2.0</summary>
+    <div class="drawer-body">The +31% organic orders figure is the headline but carries a comp-effect discount: Q1 FY26 organic orders were −4% CER (and "underlying +2% excl. one large booking"). Net of comp, underlying organic momentum is more like +20–25% — still the strongest underlying read since the FY23 peak cycle. The guide-raise is the more clean signal: there is no base-effect discount on a management earnings upgrade made after one quarter of trading.
+    </div>
+  </details>
+</div>
+
+<!-- ════════════════════════════ §3 TEXT + G ════════════════════════════ -->
+
+<div class="section">
+  <span class="section-label">§3 — Text + G · Language Track</span>
+  <p style="font-size:11.5px;color:#666;margin-bottom:10px">Click a Doc cell to highlight that row type. G column: guide fires vs company's own prior guide only — actuals-only triggers excluded.</p>
+
+  <table class="text-table" id="text3">
+    <thead>
+      <tr>
+        <th style="width:80px">Date</th>
+        <th style="width:90px">Doc</th>
+        <th style="width:55px">G</th>
+        <th style="width:110px">Guide Met?</th>
+        <th>Verbatim Forward-Guidance Phrase</th>
+        <th style="width:60px">Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr onclick="hlDocRow(this)"><td>Jul-22</td><td>FY23<br>Q1 TU</td><td class="g-none">—</td><td>—</td><td>"well positioned to make further progress"</td><td class="score-cell">⚪</td></tr>
+      <tr onclick="hlDocRow(this)"><td>Oct-22</td><td>FY23<br>H1 TU</td><td class="g-flat">flat</td><td>—</td><td>"on track to deliver full year underlying earnings in line with the Board's expectations"</td><td class="score-cell">⚪</td></tr>
+      <tr onclick="hlDocRow(this)"><td>Nov-22</td><td>FY23<br>H1 R</td><td class="g-flat">flat</td><td>—</td><td>"Group is on track to deliver full year underlying earnings in line with the Board's expectations. The second half has started well with continued organic sales growth"</td><td class="score-cell">⚪</td></tr>
+      <tr class="changed" onclick="hlDocRow(this)"><td>Jan-23</td><td>FY23<br>Q3 TU</td><td class="g-raise">🟢 RAISE</td><td>→ live</td><td>"Accordingly, the Group is on track to deliver full year underlying earnings <strong>ahead of the Board's expectations</strong>" — first raise of the FY23 guide cycle</td><td class="score-cell">🟢</td></tr>
+      <tr onclick="hlDocRow(this)"><td>Apr-23</td><td>FY23<br>FY TU</td><td class="g-flat">flat</td><td>→ live</td><td>"Group on track to deliver full year underlying earnings <strong>ahead of the Board's expectations</strong>"</td><td class="score-cell">🟢</td></tr>
+      <tr class="changed" onclick="hlDocRow(this)"><td>Jun-23</td><td>FY23<br>R</td><td class="g-raise">🟢 RAISE</td><td>
+        <div class="guide-trail">
+          <span class="beat">Jan-23: "ahead of Board" (raise) · Apr-23: reiterated → <em>met.</em> Adj. EPS +20%.</span>
+        </div>
+      </td><td>"The new financial year has started well with continued organic sales growth. Operating margin target raised to 15%." FY24 guide: "well positioned to make further progress."</td><td class="score-cell">🟢</td></tr>
+      <tr onclick="hlDocRow(this)"><td>Jul-23</td><td>FY24<br>Q1 TU</td><td class="g-flat">flat</td><td>—</td><td>"earnings for the Period being in line with the Board's expectations"</td><td class="score-cell">⚪</td></tr>
+      <tr class="changed" onclick="hlDocRow(this)"><td>Oct-23</td><td>FY24<br>H1 TU</td><td class="g-raise">🟢 RAISE</td><td>→ live</td><td>"on track to deliver full year underlying earnings in-line with the Board's <strong>recently upgraded expectations</strong>"</td><td class="score-cell">🟢</td></tr>
+      <tr onclick="hlDocRow(this)"><td>Dec-23</td><td>FY24<br>H1 R</td><td class="g-flat">flat</td><td>—</td><td>"on track to deliver full year underlying earnings in line with the Board's expectations." CEO: "remains on track… well positioned to continue making good progress"</td><td class="score-cell">⚪</td></tr>
+      <tr onclick="hlDocRow(this)"><td>Feb-24</td><td>FY24<br>Q3 TU</td><td class="g-flat">flat</td><td>—</td><td>"on track to deliver full year underlying earnings in-line with the Board's expectations." "Sales at the start of Q4 have returned to organic growth"</td><td class="score-cell">⚪</td></tr>
+      <tr onclick="hlDocRow(this)"><td>Apr-24</td><td>FY24<br>FY TU</td><td class="g-flat">flat</td><td>—</td><td>"on track to deliver growth in full year underlying earnings in-line with the Board's expectations"</td><td class="score-cell">⚪</td></tr>
+      <tr onclick="hlDocRow(this)"><td>Jun-24</td><td>FY24<br>R</td><td class="g-flat">flat</td><td>
+        <div class="guide-trail">
+          <span class="beat">H1 TU: "recently upgraded in-line" → <em>met.</em> Adj. EPS 36.8p (+5% growth).</span>
+        </div>
+      </td><td>"Expectations for the new year unchanged." "well positioned to make further good progress" FY25 guide initiated: in-line.</td><td class="score-cell">⚪</td></tr>
+      <tr onclick="hlDocRow(this)"><td>Jul-24</td><td>FY25<br>Q1 TU</td><td class="g-flat">flat</td><td>—</td><td>"Board's underlying earnings expectations for this year unchanged"</td><td class="score-cell">⚪</td></tr>
+      <tr onclick="hlDocRow(this)"><td>Oct-24</td><td>FY25<br>H1 TU</td><td class="g-flat">flat</td><td>—</td><td>"Group remains on-track with the Board's underlying earnings expectations for this financial year unchanged"</td><td class="score-cell">⚪</td></tr>
+      <tr onclick="hlDocRow(this)"><td>Dec-24</td><td>FY25<br>H1 R</td><td class="g-flat">flat</td><td>—</td><td>"On track to deliver full year underlying earnings in line with the Board's expectations." Controls "later-cycle businesses, is expected to follow"</td><td class="score-cell">⚪</td></tr>
+      <tr onclick="hlDocRow(this)"><td>Jan-25</td><td>FY25<br>Q3 TU</td><td class="g-flat">flat</td><td>—</td><td>"Group remains on-track to deliver full year underlying earnings in line with the Board's expectations"</td><td class="score-cell">⚪</td></tr>
+      <tr class="changed" onclick="hlDocRow(this)"><td>Apr-25</td><td>FY25<br>FY TU</td><td class="g-raise">🟢 RAISE</td><td>→ live</td><td>"underlying earnings for FY2024/25 expected to be <strong>slightly ahead of Board expectations</strong>"</td><td class="score-cell">🟢</td></tr>
+      <tr class="changed" onclick="hlDocRow(this)"><td>Jun-25</td><td>FY25<br>R</td><td class="g-raise">🟢 RAISE</td><td>
+        <div class="guide-trail">
+          <span class="beat">Apr-25: "slightly ahead" → <em>met.</em> Adj. EPS 38.7p. Margin target raised to 17%.</span>
+        </div>
+      </td><td>"Group is well placed to continue its resilient performance." FY26 guide: "full year adjusted earnings in line with Board expectations." Margin target upgraded 15%→17% by FY2029/30.</td><td class="score-cell">🟢 / ⚪</td></tr>
+      <tr onclick="hlDocRow(this)"><td>Jul-25</td><td>FY26<br>Q1 TU</td><td class="g-flat">flat</td><td>—</td><td>"The Board's expectations for adjusted earnings for FY2025/26 remain unchanged"</td><td class="score-cell">⚪</td></tr>
+      <tr onclick="hlDocRow(this)"><td>Oct-25</td><td>FY26<br>H1 TU</td><td class="g-flat">flat</td><td>—</td><td>"in line with the Board's adjusted earnings expectations for this financial year"</td><td class="score-cell">⚪</td></tr>
+      <tr onclick="hlDocRow(this)"><td>Dec-25</td><td>FY26<br>H1 R</td><td class="g-flat">flat</td><td>—</td><td>"On track to deliver full year adjusted earnings in line with the Board's expectations"</td><td class="score-cell">⚪</td></tr>
+      <tr onclick="hlDocRow(this)"><td>Feb-26</td><td>FY26<br>Q3 TU</td><td class="g-flat">flat</td><td>—</td><td>"Group remains on track to deliver full year adjusted earnings in line with the Board's expectations." Controls "showed an improved trend in sales from the first half"</td><td class="score-cell">⚪</td></tr>
+      <tr onclick="hlDocRow(this)"><td>Apr-26</td><td>FY26<br>Q4+FY TU</td><td class="g-flat">flat</td><td>—</td><td>"on-track to deliver another year of growth in adjusted earnings per share in-line with consensus market expectations" (consensus 40.1p cited — guide anchor shifted to consensus in this doc only)</td><td class="score-cell">⚪</td></tr>
+      <tr onclick="hlDocRow(this)"><td>Jun-26</td><td>FY26<br>R</td><td class="g-flat">flat</td><td>
+        <div class="guide-trail">
+          <span class="beat">FY26 guide series: "in line" (Jun-25) → reiterated × 4 → delivered.</span><br>
+          <span class="beat">Adj. EPS 40.3p vs consensus 40.1p (+0.5%); vs Board "in line" → <em>met.</em></span>
+        </div>
+      </td><td>"The outlook for the year ahead is positive with full year adjusted earnings in line with Board expectations. First quarter trading has started well with strong growth in orders." FY27 guide: "in line with Board expectations."</td><td class="score-cell">⚪</td></tr>
+      <tr class="buy-sell-row changed" onclick="hlDocRow(this)"><td><strong>Jul-26</strong></td><td><strong>FY27<br>Q1 TU ★</strong></td><td class="g-raise">🟢 RAISE</td><td>→ live</td><td><strong>"The positive outlook continues with full year adjusted earnings <strong style="color:#2a7a44">tracking ahead of the Board's expectations</strong>"</strong></td><td class="score-cell">🟢🟢</td></tr>
+    </tbody>
+  </table>
+
+  <details>
+    <summary>Notes — §3</summary>
+    <div class="drawer-body">Language pattern: discoverIE has issued three G-column RAISE signals in the trailing 4-year window — Jan-23 (FY23 guide, delivered), Oct-23 (H1 upgrade, delivered), Apr-25 (delivered). All three resolved as genuine beats. The Jul-26 RAISE is the fourth, issued after one quarter of FY27 — the earliest-in-year raise of the record. The series builds a credibility record: this is a conservative guider that raises only when it has real evidence. The Apr-26 Q4+FY TU used "consensus" (40.1p) rather than "Board's expectations" as its anchor — a minor disclosure pivot noted in Drift; the Q1 FY27 TU reverts to "Board's expectations." The shift was a single-document event.</div>
+  </details>
+</div>
+
+<!-- ════════════════════════════ §4 DRIFT MATRIX ════════════════════════════ -->
+
+<div class="section">
+  <span class="section-label">§4 · Drift — what they've gone quiet about · 25 Qualifying Docs</span>
+  <p style="font-size:11px;color:#888;margin:4px 0 10px;max-width:1100px">Which numbers get shared, hedged, or dropped, document by document — going quiet is the signal. (Framework: disclosure matrix; Drift is trigger condition 3.)</p>
+  <p style="font-size:11.5px;color:#666;margin-bottom:10px">Click a column header to highlight all columns of that period-type. ✅ quantified · 🟡 qualitative · ❌ withheld vs cadence · — cadence outside doc-type · ⊘ expected update not issued (none in this run)</p>
+
+  <div class="drift-wrap">
+  <table class="drift-table" id="drift">
+    <thead>
+      <tr>
+        <th>Metric</th>
+        <!-- FY23 -->
+        <th data-dtype="Q1TU" onclick="hlDrift(this)">Jul-22<span class="drift-subtype">Q1TU</span></th>
+        <th data-dtype="H1TU" onclick="hlDrift(this)">Oct-22<span class="drift-subtype">H1TU</span></th>
+        <th data-dtype="H1R" onclick="hlDrift(this)">Nov-22<span class="drift-subtype">H1R</span></th>
+        <th data-dtype="Q3TU" onclick="hlDrift(this)">Jan-23<span class="drift-subtype">Q3TU</span></th>
+        <th data-dtype="FYTU" onclick="hlDrift(this)">Apr-23<span class="drift-subtype">FYTU</span></th>
+        <th data-dtype="FYR" onclick="hlDrift(this)">Jun-23<span class="drift-subtype">FYR</span></th>
+        <!-- FY24 -->
+        <th data-dtype="Q1TU" onclick="hlDrift(this)">Jul-23<span class="drift-subtype">Q1TU</span></th>
+        <th data-dtype="H1TU" onclick="hlDrift(this)">Oct-23<span class="drift-subtype">H1TU</span></th>
+        <th data-dtype="H1R" onclick="hlDrift(this)">Dec-23<span class="drift-subtype">H1R</span></th>
+        <th data-dtype="Q3TU" onclick="hlDrift(this)">Feb-24<span class="drift-subtype">Q3TU</span></th>
+        <th data-dtype="FYTU" onclick="hlDrift(this)">Apr-24<span class="drift-subtype">FYTU</span></th>
+        <th data-dtype="FYR" onclick="hlDrift(this)">Jun-24<span class="drift-subtype">FYR</span></th>
+        <!-- FY25 -->
+        <th data-dtype="Q1TU" onclick="hlDrift(this)">Jul-24<span class="drift-subtype">Q1TU</span></th>
+        <th data-dtype="H1TU" onclick="hlDrift(this)">Oct-24<span class="drift-subtype">H1TU</span></th>
+        <th data-dtype="H1R" onclick="hlDrift(this)">Dec-24<span class="drift-subtype">H1R</span></th>
+        <th data-dtype="Q3TU" onclick="hlDrift(this)">Jan-25<span class="drift-subtype">Q3TU</span></th>
+        <th data-dtype="FYTU" onclick="hlDrift(this)">Apr-25<span class="drift-subtype">FYTU</span></th>
+        <th data-dtype="FYR" onclick="hlDrift(this)">Jun-25<span class="drift-subtype">FYR</span></th>
+        <!-- FY26 -->
+        <th data-dtype="Q1TU" onclick="hlDrift(this)">Jul-25<span class="drift-subtype">Q1TU</span></th>
+        <th data-dtype="H1TU" onclick="hlDrift(this)">Oct-25<span class="drift-subtype">H1TU</span></th>
+        <th data-dtype="H1R" onclick="hlDrift(this)">Dec-25<span class="drift-subtype">H1R</span></th>
+        <th data-dtype="Q3TU" onclick="hlDrift(this)">Feb-26<span class="drift-subtype">Q3TU</span></th>
+        <th data-dtype="FYTU" onclick="hlDrift(this)">Apr-26<span class="drift-subtype">Q4+FYTU</span></th>
+        <!-- FY27 -->
+        <th data-dtype="FYR" onclick="hlDrift(this)">Jun-26<span class="drift-subtype">FYR ★</span></th>
+        <th data-dtype="Q1TU" onclick="hlDrift(this)" style="background:#1a5c33">Jul-26<span class="drift-subtype">Q1TU ★</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Order book (£m)</td>
+        <td><span class="cell-quant">✅</span><br><small>£240m</small></td>
+        <td><span class="cell-quant">✅</span><br><small>£257m</small></td>
+        <td><span class="cell-quant">✅</span><br><small>£257m</small></td>
+        <td><span class="cell-quant">✅</span><br><small>£223m+</small></td>
+        <td><span class="cell-quant">✅</span><br><small>qual↑</small></td>
+        <td><span class="cell-quant">✅</span><br><small>£223m</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-qual">🟡</span><br><small>&gt;5m</small></td>
+        <td><span class="cell-quant">✅</span><br><small>£203m</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-qual">🟡</span><br><small>4.5m</small></td>
+        <td><span class="cell-quant">✅</span><br><small>£175m</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-quant">✅</span><br><small>£163m</small></td>
+        <td><span class="cell-quant">✅</span><br><small>+4%↑</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-quant">✅</span><br><small>£161m</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-qual">🟡</span><br><small>good</small></td>
+        <td><span class="cell-quant">✅</span><br><small>£157m</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-quant">✅</span><br><small>£165m</small></td>
+        <td><span class="cell-qual">🟡</span><br><small>B/B 1.15</small></td>
+      </tr>
+      <tr>
+        <td>Organic orders % YoY</td>
+        <td><span class="cell-qual">🟡</span></td>
+        <td><span class="cell-qual">🟡</span></td>
+        <td><span class="cell-quant">✅</span><br><small>div level</small></td>
+        <td><span class="cell-quant">✅</span><br><small>+3%</small></td>
+        <td><span class="cell-qual">🟡</span></td>
+        <td><span class="cell-quant">✅</span><br><small>div level</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-quant">✅</span><br><small>B/B ↑</small></td>
+        <td><span class="cell-quant">✅</span><br><small>+1% H1</small></td>
+        <td><span class="cell-quant">✅</span><br><small>+3%</small></td>
+        <td><span class="cell-qual">🟡</span></td>
+        <td><span class="cell-quant">✅</span><br><small>+2% org</small></td>
+        <td><span class="cell-quant">✅</span><br><small>+4%</small></td>
+        <td><span class="cell-quant">✅</span><br><small>+1% H1</small></td>
+        <td><span class="cell-quant">✅</span><br><small>+1%</small></td>
+        <td><span class="cell-quant">✅</span><br><small>−6%</small></td>
+        <td><span class="cell-quant">✅</span><br><small>+15% Q4</small></td>
+        <td><span class="cell-quant">✅</span><br><small>+2% FY</small></td>
+        <td><span class="cell-quant">✅</span><br><small>−4% CER</small></td>
+        <td><span class="cell-quant">✅</span><br><small>+8% Q2</small></td>
+        <td><span class="cell-quant">✅</span><br><small>+0.5% H1</small></td>
+        <td><span class="cell-quant">✅</span><br><small>+4%</small></td>
+        <td><span class="cell-quant">✅</span><br><small>+15% Q4</small></td>
+        <td><span class="cell-quant">✅</span><br><small>+5% FY</small></td>
+        <td><span class="cell-quant" style="color:#1a5c33;font-weight:700">✅</span><br><small>+31%</small></td>
+      </tr>
+      <tr>
+        <td>Organic revenue % YoY</td>
+        <td><span class="cell-qual">🟡</span></td>
+        <td><span class="cell-qual">🟡</span></td>
+        <td><span class="cell-quant">✅</span></td>
+        <td><span class="cell-quant">✅</span><br><small>+8% FY23</small></td>
+        <td><span class="cell-quant">✅</span><br><small>+8%</small></td>
+        <td><span class="cell-quant">✅</span><br><small>+10% FY</small></td>
+        <td><span class="cell-quant">✅</span><br><small>+3%</small></td>
+        <td><span class="cell-quant">✅</span><br><small>+1% H1</small></td>
+        <td><span class="cell-quant">✅</span><br><small>+1% H1</small></td>
+        <td><span class="cell-quant">✅</span><br><small>−7% 4m</small></td>
+        <td><span class="cell-quant">✅</span><br><small>−1% FY</small></td>
+        <td><span class="cell-quant">✅</span><br><small>+Q4+2%</small></td>
+        <td><span class="cell-quant">✅</span><br><small>−12%</small></td>
+        <td><span class="cell-quant">✅</span><br><small>−10% H1</small></td>
+        <td><span class="cell-quant">✅</span><br><small>−10% H1</small></td>
+        <td><span class="cell-quant">✅</span><br><small>−3%</small></td>
+        <td><span class="cell-quant">✅</span><br><small>Q4 S&C+5</small></td>
+        <td><span class="cell-quant">✅</span><br><small>−7% FY</small></td>
+        <td><span class="cell-quant">✅</span><br><small>0% in-line</small></td>
+        <td><span class="cell-quant">✅</span><br><small>Q2 +1%</small></td>
+        <td><span class="cell-quant">✅</span><br><small>+0.5% H1</small></td>
+        <td><span class="cell-quant">✅</span><br><small>+1%</small></td>
+        <td><span class="cell-quant">✅</span><br><small>+5% Q4</small></td>
+        <td><span class="cell-quant">✅</span><br><small>+2% FY</small></td>
+        <td><span class="cell-quant" style="color:#1a5c33;font-weight:700">✅</span><br><small>+6%</small></td>
+      </tr>
+      <tr>
+        <td>Adj. operating margin %</td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-quant">✅</span><br><small>11.7%</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-quant">✅</span><br><small>11.5%</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-qual">🟡</span><br><small>+100bp</small></td>
+        <td><span class="cell-quant">✅</span><br><small>12.9%</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-qual">🟡</span><br><small>H2&gt;H1</small></td>
+        <td><span class="cell-quant">✅</span><br><small>13.1%</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-qual">🟡</span><br><small>13.5% trk</small></td>
+        <td><span class="cell-quant">✅</span><br><small>13.8%</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-qual">🟡</span><br><small>H2&gt;13.8</small></td>
+        <td><span class="cell-quant">✅</span><br><small>14.3%</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-qual">🟡</span><br><small>on target</small></td>
+        <td><span class="cell-quant">✅</span><br><small>14.0%</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-qual">🟡</span><br><small>in-line</small></td>
+        <td><span class="cell-quant">✅</span><br><small>13.8%</small></td>
+        <td><span class="cell-na">—</span></td>
+      </tr>
+      <tr>
+        <td>Design wins ELV</td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-quant">✅</span><br><small>+6%</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-quant">✅</span><br><small>£273m new +11%</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-quant">✅</span><br><small>£190m +23%</small></td>
+        <td><span class="cell-quant">✅</span><br><small>£190m</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-quant">✅</span><br><small>£205m +8%</small></td>
+        <td><span class="cell-quant">✅</span><br><small>record ↑33% 2yr</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-qual">🟡</span></td>
+        <td><span class="cell-quant">✅</span><br><small>&gt;£350m</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-qual">🟡</span></td>
+        <td><span class="cell-quant">✅</span><br><small>£210m ↑</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-quant">✅</span><br><small>ahead LY</small></td>
+        <td><span class="cell-na">—</span></td>
+      </tr>
+      <tr>
+        <td>Gearing (ND/EBITDA)</td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-quant">✅</span><br><small>0.8x</small></td>
+        <td><span class="cell-quant">✅</span><br><small>c.0.9x</small></td>
+        <td><span class="cell-quant">✅</span><br><small>c.0.9x</small></td>
+        <td><span class="cell-quant">✅</span><br><small>0.7x</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-quant">✅</span><br><small>1.6x</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-qual">🟡</span><br><small>lower</small></td>
+        <td><span class="cell-quant">✅</span><br><small>1.5x</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-quant">✅</span><br><small>1.45x</small></td>
+        <td><span class="cell-quant">✅</span><br><small>1.45x</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-quant">✅</span><br><small>c.1.3x</small></td>
+        <td><span class="cell-quant">✅</span><br><small>1.3x</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-quant">✅</span><br><small>1.3x</small></td>
+        <td><span class="cell-quant">✅</span><br><small>1.3x</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-quant">✅</span><br><small>c.1.2x PF 1.7x</small></td>
+        <td><span class="cell-quant">✅</span><br><small>1.2x PF 2.2x</small></td>
+        <td><span class="cell-na">—</span></td>
+      </tr>
+      <tr>
+        <td>Adj. EPS (p)</td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-quant">✅</span><br><small>17.8p H1</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-quant">✅</span><br><small>35.2p FY</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-qual">🟡</span><br><small>record</small></td>
+        <td><span class="cell-quant">✅</span><br><small>19.2p H1</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-quant">✅</span><br><small>36.8p FY</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-quant">✅</span><br><small>18.4p H1</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-qual">🟡</span><br><small>slightly ahead</small></td>
+        <td><span class="cell-quant">✅</span><br><small>38.7p FY</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-quant">✅</span><br><small>19.5p H1</small></td>
+        <td><span class="cell-na">—</span></td>
+        <td><span class="cell-qual">🟡</span><br><small>in-line 40.1p C</small></td>
+        <td><span class="cell-quant">✅</span><br><small>40.3p FY</small></td>
+        <td><span class="cell-na">—</span></td>
+      </tr>
+      <tr>
+        <td>Revenue £m (reported)</td>
+        <td><span class="cell-qual">🟡</span></td>
+        <td><span class="cell-qual">🟡</span></td>
+        <td><span class="cell-quant">✅</span><br><small>£219.7m H1</small></td>
+        <td><span class="cell-qual">🟡</span><br><small>+16%</small></td>
+        <td><span class="cell-quant">✅</span><br><small>+16% FY</small></td>
+        <td><span class="cell-quant">✅</span><br><small>£448.9m</small></td>
+        <td><span class="cell-qual">🟡</span><br><small>+3%</small></td>
+        <td><span class="cell-qual">🟡</span><br><small>+4% CER</small></td>
+        <td><span class="cell-quant">✅</span><br><small>£222.0m H1</small></td>
+        <td><span class="cell-qual">🟡</span><br><small>−7%</small></td>
+        <td><span class="cell-qual">🟡</span><br><small>−3%</small></td>
+        <td><span class="cell-quant">✅</span><br><small>£437.0m</small></td>
+        <td><span class="cell-qual">🟡</span><br><small>−6%</small></td>
+        <td><span class="cell-qual">🟡</span><br><small>−4% CER</small></td>
+        <td><span class="cell-quant">✅</span><br><small>£211.1m H1</small></td>
+        <td><span class="cell-qual">🟡</span><br><small>flat CER</small></td>
+        <td><span class="cell-qual">🟡</span><br><small>−3%</small></td>
+        <td><span class="cell-quant">✅</span><br><small>£422.9m</small></td>
+        <td><span class="cell-qual">🟡</span><br><small>+3% CER</small></td>
+        <td><span class="cell-qual">🟡</span><br><small>+3% CER</small></td>
+        <td><span class="cell-quant">✅</span><br><small>£216.4m H1</small></td>
+        <td><span class="cell-qual">🟡</span><br><small>+5% CER</small></td>
+        <td><span class="cell-qual">🟡</span><br><small>+5% CER</small></td>
+        <td><span class="cell-quant">✅</span><br><small>£443.3m</small></td>
+        <td><span class="cell-quant">✅</span><br><small>+10% CER</small></td>
+      </tr>
+    </tbody>
+  </table>
+  </div><!-- /drift-wrap -->
+
+  <details>
+    <summary>Notes — Drift</summary>
+    <div class="drawer-body">
+      <strong>Rightmost column (Q1 FY27 TU — freshest disclosure signal):</strong> Order book is 🟡 qualitative (TUs quantified the £m book through FY23 — £240m Jul-22, £257m Oct-22 — but that habit lapsed after FY23, so the absence is a lapsed cadence, not a withhold; B/B 1.15 is the functional equivalent). Margin, EPS, and design wins are — (not in Q1 TU cadence; no established precedent for Q1 TU to carry these). Revenue is ✅ (+10% CER / +6% organic). Organic orders and revenue both ✅. Guide is ✅ raised. No ❌ withhold fires in this column.<br><br>
+      <strong>Disclosure pivot (Apr-26 Q4+FY TU):</strong> First time the company anchored its FY guide to "consensus" (40.1p cited) rather than "Board's expectations." The Q1 FY27 TU reverts to "Board's expectations." Single-doc event; noted but not scored as a condition.
+    </div>
+  </details>
+</div>
+
+<!-- ════════════════════════════ JAVASCRIPT ════════════════════════════ -->
+<script>
+// §2 grid: click period header → highlight all columns of that Q-type
+let lastPtype = null;
+function hlCol(th) {
+  const ptype = th.getAttribute('data-ptype');
+  const grid = document.getElementById('fwdgrid');
+  const hdrs = grid.querySelectorAll('.period-hdr');
+  // Collect col indices for this ptype
+  const idxs = [];
+  hdrs.forEach((h, i) => {
+    if (h.getAttribute('data-ptype') === ptype) idxs.push(i + 1); // +1 because col 0 is label
+  });
+  // Check if already highlighted → toggle off
+  const already = th.classList.contains('hl');
+  // Clear all
+  hdrs.forEach(h => h.classList.remove('hl'));
+  grid.querySelectorAll('tbody tr').forEach(row => {
+    row.querySelectorAll('td').forEach(td => td.classList.remove('hl'));
+  });
+  if (already) { lastPtype = null; return; }
+  // Highlight matching
+  hdrs.forEach((h, i) => {
+    if (h.getAttribute('data-ptype') === ptype) h.classList.add('hl');
+  });
+  grid.querySelectorAll('tbody tr').forEach(row => {
+    const cells = row.querySelectorAll('td');
+    idxs.forEach(idx => {
+      if (cells[idx]) cells[idx].classList.add('hl');
+    });
+  });
+  lastPtype = ptype;
+}
+
+// Drift matrix: click header → highlight all columns of that dtype
+let lastDtype = null;
+function hlDrift(th) {
+  const dtype = th.getAttribute('data-dtype');
+  const table = document.getElementById('drift');
+  const headers = table.querySelectorAll('thead th');
+  // Build matching col indices
+  const idxs = [];
+  headers.forEach((h, i) => {
+    if (h.getAttribute('data-dtype') === dtype) idxs.push(i);
+  });
+  const already = th.classList.contains('drift-hl');
+  // Clear all
+  headers.forEach(h => h.classList.remove('drift-hl'));
+  table.querySelectorAll('tbody td').forEach(td => td.classList.remove('drift-col-hl'));
+  if (already) { lastDtype = null; return; }
+  // Highlight
+  headers.forEach((h, i) => {
+    if (h.getAttribute('data-dtype') === dtype) h.classList.add('drift-hl');
+  });
+  table.querySelectorAll('tbody tr').forEach(row => {
+    const cells = row.querySelectorAll('td');
+    idxs.forEach(idx => {
+      if (cells[idx]) cells[idx].classList.add('drift-col-hl');
+    });
+  });
+  lastDtype = dtype;
+}
+
+// §3 Text+G: click row → highlight (Doc column type)
+let lastRow = null;
+function hlDocRow(tr) {
+  if (lastRow === tr) {
+    tr.classList.remove('doc-hl');
+    lastRow = null;
+    return;
+  }
+  if (lastRow) lastRow.classList.remove('doc-hl');
+  tr.classList.add('doc-hl');
+  lastRow = tr;
+}
+</script>
+
+<!-- ════════════════════════════ SPEC REFERENCE (v3.11) ════════════════════════════ -->
+
+<div class="section">
+  <details class="spec-drawer">
+    <summary>Workflow specification — Longitudinal Drift Tracker v3.11 (reference)</summary>
+    <div class="drawer-body">
+      <p style="font-size:11.5px;color:#666;margin-bottom:8px">The full framework this scorecard is built to. Reference only — it renders nothing and scores nothing.</p>
+      <pre>LONGITUDINAL DRIFT TRACKER — v3.11
+
+Purpose: detect direction-of-travel changes across a company&#x27;s full RNS history before they show in reported numbers. Multi-RNS turn detector, not a single-announcement scorer.
+
+Operating model: one project per ticker. Analysis runs IN CHAT in a single gated turn; the HTML is built only at GO, from chat-approved content, with no re-derivation. Thereafter the operator pastes each new RNS for an incremental read. A datablock, if supplied, is a consensus/C-series yardstick only — it never seeds a table.
+
+  • Soft signals lead, hard signals confirm, and the lag between them is the edge.
+  • The ticker&#x27;s key forward metric leads even the soft signals — and its disclosure breaks before its level does.
+  • The aggregate can hide the turn. A record half can be built on a fading quarter — the latest sub-period is scored separately, and before its parent.
+  • Sequential QonQ is the earliest hard-number turn signal in printed figures. YoY is 12–18 months late and is not used for scoring.
+  • A company&#x27;s own guide is the earliest number of all: a guide moved is a turn event in its own right.
+
+The most recent RNS is the deliverable&#x27;s centre of gravity: it is the Buy/Sell RNS, and the trailing 12 months must be exact.
+
+ARCHITECTURE
+Chat (turn 1): Manifest · Ledger · per-metric forward tables · §2.0 read · Text+G · Drift · B/S sweep · draft verdict — all correctable before commit.
+HTML (turn 2): Verdict card · §1 Ledger · §2 unified forward grid · §2.0 · §3 Text+G · §4 Drift matrix. Forward signals only; no backbone tables, no statutory columns.
+Statutory figures read directly from each H1/FY RNS where a wedge check needs them — never rendered as tables, never scored.
+
+TURN 1 — THE READ (fixed output order, then STOP)
+FY-label anchor: all period labels derive from the company&#x27;s own stated periods in the RNS, never from filenames or price data. A change in stated year-end is itself a Drift event (surfaced as the FY-end pill).
+Reading standard: every qualifying RNS — all narrative sections read in full; statutory tables/notes swept by targeted search. Grep alone is never a read. Confirm as a per-document METHOD LIST (FULL / NARR+SWEEP).
+Two-tier accuracy: older than 12 months = transcription grade; trailing 12 months = every figure verified directly, every derivable quarter computed, exact.
+
+1. Document Manifest — every file: date · label · qualifying vs noise (by CONTENT not title). Sets grid width: Q1/Q3 TUs present → 17-cell grid; absent → 9-cell.
+2. §1 Metric Ledger — 4–5 scored metrics ranked by lead time. Rank 1 is the ticker&#x27;s tell, cited with evidence. On quarterly disclosers, quarterly revenue qualifies. EPS never scored unless it demonstrably leads; statutory never scored. Bands: H-grain ±2.0pp · Q-grain ±5.0pp.
+3. §2 Per-metric forward tables — one block per pick, from first print, no truncation. Grid blocks = ledger rows. Rows: Value · Δ vs prior · Turn, plus period line. Withheld-against-cadence = ❌ (feeds Drift). Quarterly derivations Q2†=H1−Q1, Q4†=FY−9M, cross-verified. Turn arithmetic computed in ONE script, comparison basis hard-coded per metric type. Sequential trigger (Q-grain): any negative QonQ fires 🔴↘. Rate trigger (banded). Leading metrics scored on direction, never level. HARD GATE: no half/year scored until its derivable quarters are computed.
+4. §2.0 Most-recent-RNS current-state read — four checks: Sequential · Same-type-vs-last-year · Every derivable sub-period · Guidance-vs-prior-guide. Output: four reads (collapsed drawer) + Driver Bridge + single current-state bar (bridge left, bar right, 50/50).
+   Driver Bridge: decomposes the guided profit line for the Buy/Sell period. Verbatim header: &quot;🍺 IDIOT&#x27;S GUIDE TO THE [LINE] BRIDGE — why profit went [up/down] (£Xm → £Ym)&quot;. Max 4 rows: driver · signed contribution · tint · clause. Contributions only from figures printed in the RNS or grid; unquantified = n/q. Language: &quot;idiot&#x27;s guide&quot; register — everyday mechanism words (banned: comp, constant currency, structural, mix-shift, basis, gearing, operating line, drag, headwind, tailwind, leverage, run-rate, normalised, underlying), exact numbers, one wry aside, one vivid image, invented fresh from THIS company&#x27;s world. Caption: &quot;So in one sentence:&quot; + reversal conditions. Bridge explains fired conditions; never fires one, seeds nothing, counts toward nothing.
+   Current-state bar: ≤100 words carrying the resulting colour (🟢/🟡/🔴 TURNING UP / STABLE—WATCH / TURNING DOWN) + any load flag.
+5. §3 Text + G — merged table: Date · Doc · G · Guide met? · Verbatim phrase · Score. Every print (min 3yr) gets a row. G column fires vs the company&#x27;s own prior guide (🔴 CUT / 🟢 RAISE / flat / —). &quot;Guide met?&quot; resolves only at a results row, one trail line per guide vs the final actual (conservatism/rashness read). Score per lexicon, profit line, verbatim quote mandatory.
+6. §4 Drift — Disclosure Matrix. Every qualifying doc a column; manifest count = column count. Cells: ✅ quantified · 🟡 qualitative · ❌ verified blank vs cadence · ⊘ expected update not issued. Every cell document-verified. First note reserved for the rightmost column.
+7. Silent balance-sheet sweep (every results doc; renders on a hit). Tier 1 (⛔): net cash→net debt crossover; net debt rising 2+ periods without disclosed acquisition; going-concern escalation; covenant stress; ND/EBITDA ~2.5–3.0x. Tier 2 (note; 2+ = flag). Solvency grep. Wedge check adjusted vs statutory.
+8. Draft verdict — direction call · headline ≤25 words (a latest-RNS G fire leads) · meta row · Current State / Fired / Caveat / Next ≤18 words · bullets.
+
+PAUSE — reply AUDIT (Stages A–E) or GO.
+
+INFLECTION TRIGGER — 2 OF 3. Alert fires on 2+ conditions converging same direction. B/S outside the count; Tier-1 = automatic ⛔.
+Deterioration: 1. Hard/G — sequential QonQ decline; or 2+ consecutive 🔴; or half-vs-quarter divergence; or growth decelerating 2+; or margin compression; or a G CUT. 2. Text — falling 2+ prints or any ≤−1. 3. Drift — a leading metric withheld/qualitative vs cadence.
+Green-shoot mirror: sequential growth resuming / 2+ 🟢↗ / margin expanding / G RAISE · lexicon rising 2+ from 0 or below · dropped metric re-quantified.
+Single-condition fire = verdict note — except a G fire on the latest RNS, which always reaches the verdict.
+
+LEXICON (−3 to +3):
+🟢🟢🟢 &quot;materially/substantially ahead&quot;; guidance raised twice in window.
+🟢🟢 &quot;comfortably/well ahead&quot;, &quot;ahead of expectations&quot;, &quot;not less than £X&quot;, &quot;ahead of management&#x27;s expectations&quot;.
+🟢 &quot;slightly/marginally ahead&quot;, &quot;upper end of the range&quot;, &quot;confidence we will continue to grow&quot;.
+⚪ &quot;in line with market expectations&quot;, &quot;on track&quot;, flat reiteration.
+🔴 &quot;broadly in line&quot;; &quot;Board&#x27;s/management&#x27;s expectations&quot; replacing &quot;market&quot;; first &quot;second-half weighted&quot;; an update omitting an expectations anchor where prior ones carried one.
+🔴🔴 &quot;slightly below/short of&quot;; a named unresolved headwind in the growth-carrying line; previously-numeric guidance gone qualitative; in-line made conditional; an explicit pre-flagged down-year guide.
+🔴🔴🔴 &quot;below expectations&quot;, &quot;challenging conditions&quot;, explicit unflagged guidance cut.
+
+NOTES RULE: max ONE bullet per table, ONE sentence — except §2 (one sub-entry per rank), §2.0 and verdict (up to THREE on the Buy/Sell RNS). A note survives only if forward-looking AND concerns the trailing 12 months.
+
+DATA INTEGRITY: RNS governs external sources; later audited figure governs earlier &quot;c.&quot; estimate. Never invent/estimate/annualise/fill. Missing = —, never 0. Derived figures marked †, workings shown once, second-route cross-verification. Guides never converted to actuals. Broker/datablock = yardstick only.
+
+v3.11 CHANGES: added §2.0 Driver Bridge (≤4 rows, guided-line anchor, RNS-sourced contributions, six-month-clarity register with mandatory personality, banned-word self-search, verbatim 🍺 header, caption reversal conditions, 50/50 pairing with the bar, one card echo bullet). Turn-methodology paragraph and the four §2.0 checks demoted to collapsed drawers; ALL drawers closed by default. Comic hand font locked for bridge title + row labels only.</pre>
+    </div>
+  </details>
+</div>
+
+<script type="application/json" id="drift-entry">{"ticker": "DSCV", "company": "discoverIE Group plc", "direction": "up", "headline": "Guide lifted to \"tracking ahead\" after one quarter — orders +31% organic, book-to-bill 1.15; first multi-signal green since recovery began", "trigger": "2-of-3: Condition 1 (G-RAISE, Buy/Sell RNS) + Condition 2 (Text 🟢🟢, falling-to-rising 2 consecutive prints)", "alert": true, "rns_type": "Q1 TU", "rns_date": "2026-07-24", "build_date": "2026-07-29", "spec_version": "v3.16", "next_test": "H1 FY27 TU (Oct-26): organic orders Q2 ≥+10%? Controls organic sales positive? Proforma gearing tracking to 1.8x?", "url": "DSCV.html"}</script>
+</body>
+</html>
