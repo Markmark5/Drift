@@ -196,6 +196,20 @@
       "spec_version": "v3.16",
       "next_test": "H1 FY26 results (~Sep-26) must show organic revenue and adjusted EBITDA growth resuming to break the down-cycle.",
       "url": "W7L.html"
+    },
+    {
+      "ticker": "SFR",
+      "company": "Severfield plc",
+      "direction": "watch",
+      "headline": "Order books refilling hard and the FY27 guide reaffirmed — but profit's 71% off its FY24 peak and the recovery is management's own back-half promise, unproven.",
+      "trigger": "2 of 3 technically met (Hard: margin compression; Text) — operator-discounted, no alert",
+      "alert": false,
+      "rns_type": "AGM Trading Update",
+      "rns_date": "2026-07-29",
+      "build_date": "2026-07-29",
+      "spec_version": "v3.16",
+      "next_test": "Nov-26 H1: does H1 FY27 PBT confirm guided weak-then-recover, or undershoot £12–15m?",
+      "url": "SFR.html"
     }
   ]
 }
