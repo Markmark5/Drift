@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AJ Bell (AJB) — Longitudinal Drift Tracker</title>
+<style>
+  :root{
+    --green:#1a7a3c; --green-bg:#eaf5ee;
+    --amber:#a8720a; --amber-bg:#faeeda;
+    --red:#b3261e; --red-bg:#fbeceb;
+    --ink:#1c1c1c; --sub:#5a5a5a; --line:#dcdad4;
+    --paper:#ffffff; --panel:#f7f6f2;
+    --mono:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;
+  }
+  *{box-sizing:border-box;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    max-width:1800px; margin:0 auto; padding:28px 32px 80px;
+    line-height:1.5;
+  }
+  h1{font-size:22px; margin:0 0 4px;}
+  .subhead{color:var(--sub); font-size:13.5px; margin:0 0 28px;}
+  section{margin-bottom:34px;}
+  h2{font-size:16px; border-bottom:1px solid var(--line); padding-bottom:8px; margin:0 0 16px;}
+  table{border-collapse:collapse; width:100%; font-size:13px;}
+  th,td{border:1px solid var(--line); padding:8px 9px; text-align:left; vertical-align:top;}
+  th{background:var(--panel); font-weight:600; font-size:12px;}
+  .prose{max-width:1100px;}
+  code{font-family:var(--mono); font-size:12px;}
+
+  /* ===== VERDICT CARD ===== */
+  .verdict-wrap{max-width:1100px;}
+  .verdict-card{
+    display:flex; border-radius:12px; overflow:hidden;
+    border:6px solid var(--green); background:var(--paper);
+  }
+  .verdict-card.tier1{border-color:var(--red);}
+  .rail{
+    width:82px; flex:0 0 82px; background:var(--green-bg);
+    display:flex; flex-direction:column; align-items:center; justify-content:flex-start;
+    padding:18px 0; gap:14px; position:relative;
+  }
+  .badge{
+    width:36px; height:36px; border-radius:50%; background:var(--paper);
+    display:flex; align-items:center; justify-content:center;
+    border:2px solid var(--green);
+  }
+  .rail-label{
+    writing-mode:vertical-rl; transform:rotate(180deg);
+    letter-spacing:2px; font-size:11px; font-weight:700; color:var(--green);
+    text-transform:uppercase;
+  }
+  .card-body{flex:1; padding:20px 24px;}
+  .headline{font-size:22px; font-weight:700; margin:0 0 12px; line-height:1.3;}
+  .meta-row{display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-bottom:16px; font-size:12.5px;}
+  .pill{background:var(--panel); border:1px solid var(--line); border-radius:20px; padding:4px 12px; font-weight:600;}
+  .pill.alerts{background:var(--green-bg); color:var(--green); border-color:var(--green);}
+  .dot{color:var(--sub);}
+  .bs-tag{font-weight:600; color:var(--green);}
+  .grid2x2{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:14px;}
+  .soft-card{background:var(--panel); border-radius:10px; padding:12px 14px; font-size:12.5px; line-height:1.55;}
+  .soft-card.caveat{background:var(--amber-bg);}
+  .soft-card .lbl{font-weight:700; text-transform:uppercase; font-size:10.5px; letter-spacing:.5px; color:var(--sub); display:block; margin-bottom:4px;}
+  .card-bullets{font-size:12.5px; line-height:1.6; margin:0; padding-left:18px;}
+  .card-bullets li{margin-bottom:4px;}
+
+  /* ===== §2 GRID ===== */
+  .gridwrap{overflow-x:auto;}
+  table.spine{table-layout:fixed; width:100%; min-width:1500px;}
+  table.spine col.lbl{width:170px;}
+  table.spine th, table.spine td{padding:5px 4px; text-align:center; font-size:11.5px;}
+  table.spine th.fy-band{background:#ece9e2; font-weight:700; font-size:11px;}
+  table.spine th.qtr-head{background:var(--panel); cursor:pointer; user-select:none; font-size:11px;}
+  table.spine th.qtr-head:hover{background:#eee9dd;}
+  table.spine th.qtr-head.hl{background:#dfe9e2;}
+  tr.section-bar td{background:#efece4; font-weight:700; text-align:left; font-size:12.5px; padding:8px;}
+  tr.section-bar .nature{font-weight:400; color:var(--sub); font-size:11px;}
+  tr.period-strip td{padding:2px 4px; font-size:9.5px; color:var(--sub); background:var(--paper); border-top:none;}
+  tr.value-row td{background:var(--paper);}
+  .val{font-weight:600; font-size:12.5px;}
+  .delta{font-size:10.5px; color:var(--sub);}
+  .delta.neg{color:var(--red);}
+  .delta.pos{color:var(--green);}
+  .bsell{font-weight:700; background:#f4f7f5 !important;}
+  .lblcell{text-align:left !important; font-weight:600; font-size:12px; background:var(--panel);}
+  details.notes{margin-top:16px; background:var(--panel); border-radius:10px; padding:4px 14px;}
+  details.notes summary{cursor:pointer; font-weight:600; padding:10px 0; font-size:13px;}
+  details.notes .rank-entry{font-size:12.5px; line-height:1.55; padding:8px 0; border-top:1px solid var(--line);}
+  details.notes .rank-entry:first-of-type{border-top:none;}
+  .methodology{font-size:12px; color:var(--sub); max-width:1100px; margin-top:16px; line-height:1.6;}
+
+  /* ===== §2.0 four-checks ===== */
+  .checks{display:grid; grid-template-columns:repeat(4,1fr); gap:12px;}
+  .check-card{border:1px solid var(--line); border-radius:10px; padding:14px; font-size:12.5px; line-height:1.55;}
+  .check-card .num{font-size:11px; font-weight:700; color:var(--sub); text-transform:uppercase; letter-spacing:.5px;}
+  .check-card .verdict{font-weight:700; margin-top:6px;}
+  .g{color:var(--green);} .r{color:var(--red);} .a{color:var(--amber);}
+
+  /* ===== §3 Text+G ===== */
+  table#text3 td.g-raise{color:var(--green); font-weight:700;}
+  table#text3 td.g-cut{color:var(--red); font-weight:700;}
+  table#text3 tr.changed td{background:#f6f4ec;}
+  table#text3 td.doc-cell{cursor:pointer;}
+  table#text3 td.doc-cell.hl{background:#fbe9ee;}
+  table#text3 .quote{font-style:italic; color:#333;}
+
+  /* ===== §4 Drift ===== */
+  table#drift th{cursor:pointer;}
+  table#drift th.hl{background:#dfe9e2;}
+  table#drift td.chk{text-align:center; font-size:13px;}
+  table#drift td.chk.na{color:#bbb;}
+  table#drift td.chk.qual{color:var(--amber); font-weight:700;}
+
+  .note-flag{background:var(--amber-bg); border-left:3px solid var(--amber); padding:8px 12px; font-size:12px; margin-top:10px; border-radius:4px;}
+  footer.src{font-size:11px; color:var(--sub); border-top:1px solid var(--line); padding-top:14px; margin-top:40px;}
+
+  /* ===== v3.16 DARK-PANEL FAMILY (Caveat bold, embedded) ===== */
+  @font-face{font-family:'Caveat';src:url(data:font/woff2;base64,d09GMgABAAAAAEgsABAAAAAAjSgAAEfKAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGmQbnngcgQIGYD9TVEFUKgCBXBEICoHqSIGpNwE2AiQDgzYLgV4ABCAFg0YHIAwHG59qsyM0bBwAbya8IaKalNgopNGKVHHwf0rQbIzNk2dm1RvRhYlGGacDUd0jF6acyLGgi/c57ogQfhxNexfY522/hfcKCtf89ZOP88tYpztLz9IZ2DbyJyd5h6e5/dvduzVrtjFqG6ONscFG6qLJkkpBIk1oExUDBbEQCSMKo75R/c20sM2wQNkKNuDZtI7p53/v46HnUP9dtlhClk0BHrvLC7SphH1e6qaiNYcFu90TpZqAJNT/6dTCVq+k84mMJwqgnAKglAtMfp47dVlo7QgAQTLCl367Lekwl9VMu9f+T3VbX1Vt15vWtAgoRJ0RBZ8ENxIxMTNm532J/P/l9H13O297yxuebH4ZZhCDa1/9v8vOI84RaUS/rHKyzPZ7G2/BjDSDkA2m9ARUYnBwapdNSgH8a3ghuI7H43K58nIyibxEKpGTSCVSTSYNIz9BoixCIkVrr7a9LhsJZjAjuFI1X63YOoXcevqPXYkdd4d2wx0WIyhcAo8SOGYW3znzTXg+Zyn1G4/S41R7w7AGFrDtUrT+kqz5VhT3uJzc0D1x2TruZTcABbAS3CmgJYzX51ua0lnJvbLUBqBbYQ4Ka4Ss/kiOdkY6r2bddnTnskrTuu0b+b3oRk5RaoGBoUG1jy5F665zD1N6Z+kYB4bgABRaGg8LoKGwExzAwwO5LW771mOIiETm9l9iz/vxKlbckA7uEAZJj7/1x3K8ASjLp66YO9x+xWNo2fTXSvf/znCgggJq7G0BOABQAe8RNLirDoVdS0C1NHTLYm15eNaGrbUntGIS68LVuvOww0mtjMx685FRHZlk+BdkOg+JAbSbTeU4QAMBACT0yPWhfBwg+s2HICThXqfyhv+Dt0bfi4uzGZXEK1B/tBu9BGvhW6wI+4hPwK8hCAnLCN+JXaRhpANkb/Iaih2liyqlnqPeof61oloJrIRWFqsYq3KrSVbzrC5Y3bP6TGPR3GgKWggtiVZKa6StoB2hnaX9pQuxx2DQKZqBgyKZTQwHTnsuutJLx1W9Hb4G9cvohhCrT1KKZps+/yjY/CCN9tYBRuZ+eW1mf3+AdLjaqS6QDLLhYEMADK089CnefPjyo5by+KEm6Z3jz5VLznhrnggmxoi9leSL06eocLq+DibkrbMVNimbD/pciF4fxVOflBTN0DzFDxUStfcAb+nlD29RWGi1Mz0D458msGArGEk7gj0W+V+0Ws83JJhGEHS2bMTXYF7dl750nav2wAZKClxE1dzcSLmKLqJLqJME0r0cEaLl1MvGua+eeVY+7wUz7aA52uZOR9QAvvP7O8nowL2h7M/Xz9YEwuThZ3lRJOc7C03iUmZ1WuMyGIQ5iIdndPUWZm/VrZCe5cBdwhZCjdGkJ00ZsIIvwXYoqapwqApHioMGA9iAFLmESo/wOu35bkuALuQmPoYNDDpmafxLGxvFM2ZKzIBksFkRVZJwKmXvCmYAWVNGsEoY5YmBhkwNwYyhHYy9PyvqpKzodppdIEF4WPTT0aX23hasVuJh8bKEnmIIgiojtytOZ0LOvBFYxMkPNlXCBHDiWITQROkZYUTAfEgMZQi5Dkecs8AN2sGY1MpZJABAAeke+YbhqNagF1xhWkLfIm7LImIzAAZLcLrUILhEUhqaWoEvJAArHWS3zwx6jIzPlgh7XlVC2WUqEYjK5v684lZgR/w++a9dfp6wRdZphUptmyFsSjCET7XrjuP5JV7E1cwNjyCIfMxY88Z1XB581uIJ5iSLVgug1lnzFr+s0UrwNhl7A+eaaCj6KAtMBx4utcEcy34u6gIYGOVjTPUxiCQazE5yET7c+nElx9jfB3niX+owVc4hmc8CRj90p/kwmRCDVfwurQLC3QtCaRKJPRY+Zug9U5xNQOYAwrCp4ZWm3ZLfW81r6ec1GiUhmz8/Q3ZCPILWSztTkRWCAVoliqfWaFMlFtptPSd4BTNrU2Wrr0sDRApH/9eRp7KCxwgCavGda/FMoYC2U6pTt/Nruk6ntKS5kOJczjCplW3YqW59TTX0GRblVLrOH9hZ1CHws7KyIPh5G6qTLMnHlMCHLIqiKERRgKKoXOYKXIqC1Vv6TSPqo6r1WksXNEZrmbqNdUEwObJKGShx0YZkFLgwIKCkrLiAbrhkRZutmY0F5vSkpf71+qQsLdcqXkTKoU1v+3OTXpJecz4pM0eYZ01PUFcyqtg7x+OmJ89OLiERpGM3GV1Zshg50J8I7khCOg/Dh4syt3Fl8lGN6zc4y5NKdwVukxV38QnuO0fVHowvUpNVsrcC1tFCtHpEed7cE15yv0BprtXyg30TYqF9ZFuAdwBWnYjFh611Us4gZ7BJ1b2Tctg15N6In23+0q1t4kbyHd960NyQqIlAwTDXzNkWaoPJXwMo/f4+YV1vLvMyxkKAj3rv4Ds5V03dPUgpoUR73Pe86EpBDffz6vtDTqwAPvLX/46IwPjNfTAAec4EAAS/v3ncksx7L05cD6CaaG+UHhwiPOTwoTNcGvkXAQnco+JeMhMAQiic4TxwXWkHuT3lV34+jzSNzHzDdnpUFwfa6EMnwyoBBhRib/2oJMkxwRSr7PSyD5X8r5GPJuVPLVmuiTWjI1UoU4F/u9Lqu59WeymBB7NYFgBA4S2VFbUAvH+p0wQLFyJdngIREiQyyGQxRqgoZpFyZMkWJl8co3hjRStmy469/k0xCsXKlSwJRqmKh4mMmwgAuHPOVYDrBzzePz05/m36X44LepVH36OGo5uXRXZQMleUngXIfl/chfRO1zLYNbNVX0N36xvqRl60V3lQ+iIcs52pej/O++miuIXldRESFmRm60QeYxfkS9xjRCPF3JE8fpXSIyutyaz2to9VMseGKllejCYdK0fCDqRmGscmuDKTGX60wJwxWmlabIAwarlDj4OAvdwhvtmW1RR/wM/HUJSYkhTvXBFtZ+tvOz6cTaWKtNRwYVxBjaba03aIqCH22ePKFpjCHO35jo7RuRmHVTY2Xl4jgxmu4Rtrvm0qjxHuwuaEft8Tg/mNoUlgRaS3Kjcjgx0QrrV5SxSfi60BkAgotyfMsJm9eZerfjOPRhgUygAwmZmXysC7+kldIg/atVot0QDm9rllheM8iqPL41BW1F/aq+FKaQ75YjwPWNuxiWdXp3UnwwsryIoNbVKUMEABfUo1AqXcHc/B9TsNRRtItHmViKZo4JFsD7E787wpznb1ToSLyKkdCHN24iFQwHigbdua0Ig3v8g0x1mwipCm6Lk5nG+tHyTrSS4+39aw5QZ+zUDpPlDA8y/W1yAihlhszWsi/WeWehGu6xS2HjL0N3mXXaUZZjhMAkkprAPRp/JX6yASkXIogqCzuT0bfYM3bzqI9TlYlsbqMA6lDBgr1iHXqnkv56K/adMUSbKPchUyZgfMEJp+X0qFPT55T6JZAxEQUrTmlzGAqq9RIAKHRnm7OrgBqF6A7MkYLzJNMrdq96hA4CBCmMt1UDRVvCuiA+JdaO+67qZXi7KFnsHKTCqCVDfJT6WPUvXmwYtz5wIoizRNyZ3cCqvgpzURpC1S9Gui6i+Zn+EBUDdR/WaRAShXs1mqDorocgytJPO5VSKURYmVqJlAm1KT46cQIELoML+2ppQEiZbdviGveyddh1IqISUCsETkx4js9tKcZwzG8GFnKdJ0w1DzZo7GIz21I51FOrMs2bFwq5OvIBbcFMzuwkPRMxOjWgNCO3sdpPuWOTRNb34V5jBI14VUmDdMayz7UE+ujTvJOs42IgQOrkGymWsKTIC643YWCwlM+3U/IpEx9Onup7ZSxKl5G6Ofb0qRT29elnaDlpdG2NjaVAARx8emS8+37Zao9dURp+oucNFvCeOqdvmbfNK4DlaD2/QoRRsnc8TtTcw6Ivf2uxYoS5iJiZqyf8uGLdqIBaMO9O9ZCkQTomnw0wo57CPzdrn9SNQgnaWIGI/Nq9SADla6Rv328+/zT1VU5K+qUY5Ev9L9/f2AHJsMpkckfiqaiCS2a5oMyvPKrsl8ANwG6Toibpkf6O5GRJqipTgbgRpbI2JF4BwRQLICthRxYZlIjYCd1ci051VRq6hMtLVNFElT12G0NazYVwK1RbS46gzvYfFmwM0oNyF8xJ/sifu83a/1b6gh4XCp3r3Z8sHN1Au2myTfRwKeFwhdfv0QNIABIALG7qyH15dvMkdNkcNVkQlvm0NEXIGACp4c2MHVc1+MlB6OgHmVsRUY0W4ECGD9C4c2JucTpTopOKyn0AZI5yOV6T7ImEPbWeSpYDZWEYBBnLdGiAhHoBsDd+/hWhU4fPZpR/VbUYhowAox25+qyEWGg0RUCs640vrS3O5xoZVSKxDNnaC1Bl7FROjFrp5f1Lm0pqzeumTJFy0+Mi1VjtW3YP4Ug6ZVOc129iW0m9vBzoWqf+6S//LCyd6T3NHLhpbON9xPWtIECtfkpg2q+0TGceIjYynvYHBq+sfLD/Gj0VfOgtGWrQNOo2YHgmURBj9c0hIJYLvszHKzryxLmn7w3Nke4LSBfeGcT6+UYTrPKkkO4Txibj3sVquRchxgEFM5+0TryHzLQetGtygCntXYfArUzokS5igQ/TwXpjrhtYJHdf7Wdb5BjHkhZjRC7NCbfNozxFiMG6UGWZl0kPpAyjDoW2kyzcKPmYfYYG12ECRQRPadPx85aeZN3QMO06mUdyb8VH7y+vqZWxn4BvZC4ptRcEHLPEEStGv5swnzd1Lm6o80GxP5RDmd452VRU6azcHowo8GnFIbcXmErk9hckUbKYguHawCBYT0Vru52k9s9p5gd+160t8k0eXnUpMFrX853i2WF5948KjxRe9fvRTheDfds/S8Nc1AMOBl2zYVnplpHVdiBmXmxYQwYrnrbj07RQWGnQJnvNU3FR+3rMj1WqSE1tBVuMfA4WG6ees6s530GwskHCKf1aKt6LBhvV4b8W9fFXNMtL63edwgN0sRKw7uBhd5ly1EkrnFk5SyOX5xEmkbEyjJoyWkxmJCGjhufRVfQNNW1e/NC5EyEC0rfXonadDimELuEkDPmGHntnfV53mrRfSj7/PIIg4MvTFMPTRa0ERaGscqsSZMA0EQKUSynA4xRkqzQVJv83ZJFKu7HW3twJk4SjEnYOF2TAwkPaswZIA+Bx/inSjZJmFNABieXSDTaI+jo3OhNeIOSOXVdGMz0tjhXJFGLfLKMOhms1WjYjYQknawp2IcGxkjFhWMOGvBzfGnuq9ziTMYx2jNtoDVCLPyuTgQTjZIzyz/fJ0fE83N1Dj54Syi0u7PzaWlpZlKnbvko2FlbNq4Zz4d7KekaYdwYGZ/yrKd/K0F6dmaUKhm735hflj+cZgfFfPXWK1WBmlB5wXR25qwa7fXdcaYMUBmN5aWT6RHI95DJqUtrafylaXqfTs+9X/rT4bHzAh0EsKLfyKTlLnRaqzwDfqNfUKCtNsX4bo7GrtuTpSK+PsqrP31J8XyYhO2sl0jJX9p7ngh4tOw2N6WCO9CJEkPqwXa5GtfQxJ4K4hfxCCxailETXnzybcQpFu2PjJt3Ytim2kaKcO/8d4wrMOvzqkGnds/wigWUGAmoigq109yi32Fo9RYA8f/xmje5tG7k2R18BMGplJkH4xaMJvRueEwAzbM0WZAiADSvM9muOiR8z59fDU9cikl8qKC87t+DpPiBd8B98pwO4SvHkBnbr+zLC3FghlKjQQQhXs8NpQJs5tfP2goqgDvLDNDoFpNRo/A9QZZiKZzqzKEbdZmxan5Ze4LjU1FXqi1cV2GaU15m88P5SSyyN9twrlHswzP3JtsFD2Qa6CtnEEFt8OArAae/8QEAHHtYUa4b3VCDQ2AZFCduQK2qIiO7kHmkYdnN0fgeK8mmc/D73AiiD3DHqmWVK+IAI1wtMt9fE0Ot3eES5FWAmaVzzsV071sqgYvi17EFp4L617Lr854dTti1/knDg+sLjzN6akSZztSDoFR2BljpPR5hBvmwHIHr2vJFphMAHfQ0sxSjUSGtSSt1W+Tg1gIWEZB2KEeeMh6sSIuCUUA5zcS73om14rTU0lxmxkyH7FAY8mvkeZRgVVRwR/j1KuKI39ncHB4IMK9YqiRSyXJbJeg36pRO3sYze1ntoqet5joXEi36YSIIgpjjfDYOcxwPgxLlGGIXuTt93ZWQnB7z4Qh2mTWaJ6dNYkA1+klK1QKRayEhcuskoPNEAxMo4JxZiqKD+l6gJBXjF75MbRd5Mz6L1CTJQ5gTKMBBB3Ad7KWrQz5IqZKbFWZgwMKZ+hZ8Y7mrYryaIyXTa1QU9lZcKt3Ojub4HYDIKLCcGVjq6KZ4Rwf3NRgtfoeJ1Y0uRnmi7BqAp1luYw3tT+KZkrYAF+DcwUzuINnBFVVRi80J5z3N8sIOdFnojQQqXUw36TjaQG0k620BJ2FU0NCi8WrbOrYQPkntk1hIGcb5BKhbtJMcoiEbFE9hfcALAD9lXjo2BiCH3Ex0ac6i9VDFG2+pzQzFWmOMOuIVR63PecvIsKSkCSBugJll8Lc+nH3xbiqgoaS+qWE/G8EC0DS/qrpNFPxyc1WfYao9mKWYZEjAEChPNS1LJxzWTB8AkM+0TSyjGSktbWIi1wbQVDol2VzrdCnCijPvjHgEXpLT/uEomQgjxdW5ir1t9xYYTPxfZCmFOauM6erbd6rUpo6hE0MsxFtfhoZEGnUwwzijZIR26c67OiLrDIxDaqytZXfCnRkmbBbMADMKDpzDwcLY4dIlS/mzOHO21SVa72UIguszvJYxXHERYxYHBHCc4/OjCfAvSnD3yNIgC8ccOKyWG+FrlJEUfvkHKJuNzybSTaZu/x6a25yYTWy0mzmYnlDWkQci5RLKJFL1QMRIJcQuX6wQJOjZGBg0bIQQce3ajwFBgOJxXije9w5IlhODH/O/kysLWnsbDb7NXPmCml6qUmA7Mz8rEJHKjVHQJTnNut96isPL4ruayfepO9Ry0pj37xN9EHRqSmPzpOEa1Q8rDA2vZPyGuDcc8cG1w3eIa2fI2vO0x/LMubXJgfDDBNGDNFG6yuDF7azI4P0V0xcbOuUSP+aE2K5T7GS7q375xVXJ9RUPhAbsk6Jlx/kJuBG1pNiHyvQzKcZhAjynZjlv0bsvtGYMauSWXygEFlBojxNhrlZ7EesN7xS5LElzoocQ7qCp1VCkZKM7hqYIZQvfYEZW7mZ53hIhkG027OKgWx4qvpmADwkP7AcHYWJB8pX4dVHYNjDMR0A2lI9Hyt4wo8SR1XaV8CeZ33ecy4H5/2c3isaR/NxlZvylGgdpMHKOa41PaeNC+8A8gBqe1DiJib1yEyMht1ZiU8nYaG+almdCL9F0Xcc6rwU4bJXmq+ah+XWjJYPEqoLt56B/ES1pooIrtkPBXPRUAmy57uQpGqwtgpMv0+trt+XoNtoLkbnJlvqQiJGLdQMIKERV6EfD4aKrYRzQloNEg2MoFx6SXwDskR1Neo594E1UQYJzqtdVVMf9VHzxGms79b8NLi32ViCaOFHXzjr2+ptxcjYunhfxSrpTSA6MU0uwmmIpawZ+04+Qj3RwuTKYNnFiJ76xOENJx2NN+GcFJl5/T4Yf3Ua4T1xs1EiAJ7x+KUpvx+BMh4S+8Nbst9YmPhyQAYpKZ4ldZhrvVFtnJZNYAY6lLr0f3XPFXDbY5VfcpGBxFJZUFfvSVfKVnFmU5UDPdlMZFDKPXUTo1AuHNVdMKF69wudgy33NQOweBko11tNcIjISEYf2CHERACXym9SCUKNdiu8PXOidEBd3b85ESKoxpN2sT49H8a8PJhqgTLFylEwQHHPFJ0nWoUGSKvPlYY4PVetKIOcvt/nSJgf3UXXmfEBt7wQh81oufDpi7jnEionhJXpQnfYX06pJzptMIqig5W1n3GmGUJYjfMIIHUegRgVzImEpBJxo8KIKWnD2G7hc8scHq7qdm4KZ4ubQazSPdOe8GWjKbS3yntW7Wi/rCgAPnRDgQpO9KFRdtOyQypUxB3s1FzQ3ouyvmWiZ5HsqAiQUzLsj8dhAzkWyYlQBTl1nSVOoFJVWFrgH8mfeX7rZca8GMVwWMMp8nxsex+SXwvp+z5hQGODDVyPlqokSXTaVVykemkIi/RBBy87KvSjuosM+nGPhEubqlNo3ydnrO6+ititetr6znjaJULQRY48xV6rxW3zN7oYVZNVIEtm0zxpmFvYmlmiArcnWEvYWoGWD7Z99xM1pug6O287lTsCH+XyONel0OJRIgzd0jvWVkxfU3gNOQMZb7JuAZcZGo/H7x8XuDgUJfWNieHXYqGgJUUC5Ac2I9cvKKthEcDY0BOnlTGYTbaGzZlpvE8Vbpfi4R66qaLCNEh62RFnjrMmbHxWLoQgB9DeW3GwY12bsMqsvFYe2rqWqgIH0cuFFKs+vxctNtmIyCkehN5pYLsovIFaotfZHjxJtQSsifeDPKbcrRZRQJKAHuxkPS9npmr/4sUqOJ+d7ZDMcAnI39rofeSlLndxk6g2jrcsJvIiLrix5+TE6VG4Itha7VGdatVEyIq03730UN1sasEGur3ErxcIPMkpOa9QdcB7O71d1aGQk/s6WIpZx4n43OhF8huSzehnEWcDbgKbWQrNrzkMCgy1OTeW2O6d0WUhRes+VZ5Iy2da3fyyAmszuMgfz/fCZNcnZwwtUSKm3tlkGJczVAwu36ZJXC6cqLfissAX/q8gWsclDzBKqHD2AnpIzjeGa4+0g56/+3N8USrvLSbnlTG2FWK/jhnzQKNrotfeJb2+cr4SMUPNeY6uzN+Zfo3FesIA9vbDNFwBYUEHyHWXTHjHPgTaFE0EPKIyMdUdlEzbEdyOJc9XPG1GtWaYyvo7ySQD3T0smh/IIedrHbAMqYbgtD4gQ8+K30H4AbQ3LFAAimPPgs4evfL6IbTh02aZY7nu0XvvE+c/4Ol0vFjjklW/2poSVBqGEgcHuiVh4MZUV3/4ss/8cRQmntvET/90RmQg18Aesdih9C84apAFwyOlkl+WVO4VJufROaiQIEoEm/oZm/r4lqyZxsaKr+2oqGZ2xlEu6M5mMkdKUpL5TWM1G8U3aP1UvlJgX5mMwQf8jtgZRQI6liqYi6tfovz0507P9y7Ld8xKzEQ0ApLkuSwCOqelVrYLOKrVlgVU+cqsw0CjzeGarYPUAyUgpDTVLyig5EcBDcUK10a0zKCsTL+IR1ugn8OEKO0fG93OdpsnED1rmspWdfHCog5QPAqRHkTk/NdzUyHUfcdN0O8QW8Kn/SPfQFOC2tiGnOr9UqgQFnnJxIf+QiuijnQpqW8Sxx7DvAsPKPRQG+GTMNBWI+DYNz/JgE30v6aafNo101C1JB4kDXO6XSnGj4SW2p3mLV8MvXo8w1A2if9T80r1UJ1EfhMetamBKUg8YWmls4tHIWYYmkhKmdjB0qUoDXPmc1khXcr5GMVjKTZtfRhkEyjWInNQobL6YJtecMNLtCqCqvuDO5bFUSVtjYVReGZRJyIsa57V723pdRdY9Df5bMRwcnXiUUrNnB6CZgZPdKSAxrxO1SvoXpcCvPAQj6mj3qWAw43Doncj47LmY4sA+Z6Mr5xSncqzny4rfOxL2770wNRmmLk0977P8xmTmaH/vb1Kdd/s+QpTlVFMFUAMTcuhToztgRqnc4kBy8X67CbNtRQHhDCviVv4EdRqleUoX1hOIijhhAKb0y2H9fXzAyHg1a2r/AGr/LAXm2+D/Q/rVA1It9qj8Tal9H7cRfGUZSLgSeBW9kLjT0rgBrszSNslm0Q3RpsP0wjzaEpJ5i75++lWNa5AKDr1f3hoClyuFO3150mVeV6+BOwki7r7jtWlhsrDi1m4aKz5em5qIKlLR7yxWH2d/unrvGdlzDKMjl8V+M7/O27iTIY5Dv1zu+iExmAyowjGf7b103/2MCBaZ0c6R85ZCKpCCHCU1SpukGKzLZm4GwR2jruZAMtpzuZ0qOz9tIWSoR5MCvw9hqkAzkLph1rljn4M61zI4/aI2nHme81XQzDl/KRWU1qBVPQVNx08bbuHbLGo+NHgzNklRxf91SqwBB6nPXif6tBI6bG01yWNQg+CKrDDdmA1PKhAIqUXzoRunLj/1rFHsNLa0jmTbtfT1a5xf/K7RWdTeUgh3LM/wRfDYxEXFBebEcDaG8rKkN+g6uj9a9VDzJbvc//G+2wVBvsH6uOF9xvn+sKe0clBoSs3KtJvjhVe5/E42W4OZGRcudrerLc//pgCV57dXZupdi+2hctN4ZNPuHtp+WBr+5CUN0L/GLvzjGdV6vfuaq3q9N/l3NaPG2fMLICjOrWyDtKK+rUXnWefg/oELkBurOc/xaJ1RUTn9ij61Lk3/HvglfvmO/GPAnp53K46tz0895HRO9s+2NPSyiCdoa+N9U+f2nzJQtq9k0ly8iCIi3nr+ZuZ109Jm7LuaMTTDIeZ5ljKQarKV7Z3LN03R3cwF271zZ6Qc4R2t72O5ipc/wtNYT9mg/u061EhQ31nEsMAGXPUKqYQEHo1uy3UEunD/6/CzDmJZ1V3tsKvh1OKy3Ph0h4Euj4h1Awr5cU8FDkFII9eRBrsTUqU/pDYyQnHt5Prm2Vvd1WTgXVXyV/3zIsRR3yj9ZAI6YZjWqxqqcJu6hIAm/fgj8d9/b8/VfgY0LHfy1A9GL9Y50L+g6D/fOzZwskZAkIAoHEkvVr5cNSdZuavoQ7GrjipI7ETKTN8lh1GIq0sieY/ff/bJdzrZDiYXG6CgwllVmy3X7PCs404lYtXw1yNfY0ww4vJv8tE+bhx/zeArr4jz/5/f9IINRM+24eLzq+9eayz5otMEb9qfR2Ju4OZamRjZj83Sgl5PFbqTnTEYkuT+WI2ywEuPkR6nHutkTS1JygMy24DeNrAldVnykH0E2rOU2mUdwbAxdZMiqEhowCe7GEwzcMwJll4Gpw2rn2+Itp5mpebufv4ZgtK7mo0Cw6mb4/BZRB7ksaEHIm5NFnUbkrVhNlZXLM9x7qlXbiXrMISUDh8YgN2AaKfRBosVgUMYGFO9OnjYQB8abygXT9q7J5xuVMA8jNtyaKQtS57dcRrPoMAXztf49555/3T1Vmjz874qYJDtyikHh1+HYDTrgq2gzvqp5Vei7rzoDct5Btr3UPfUqLH6Wr9EDdNR1Dbfet1sDbYa85svFOPSeO8FAHjk6bJHxIL3rys9Im8xW4B6BTLejTm7duTVT53xtcsrppFunKTQ6uZXLPuSvjdd+BygTju+ef/Hi3T/88qKzwR/F12KV3fr/UH7N7y2K7pIr4/vqbnQOJxQqKz8edATPlLobRQmCzJp2leLsNW8PQEVcMkKWCJ8RV/Lnt4TNLYpjkHpp8bj353Dnn1Jb136xFGpMdDazYVYL89Fza0B7MHf5n9AsOXeCYT9WyyF7Ij1IarXTcXZkqx9TK8Fr8YAhROjP32we5IWKD9ogVvXR7eaAfcNNlkh7K9EpVlZS4AmKnunVzPNkcUlR/xRzOfbdYbGg+9bwAZvWUZic2XocG12brhWXZi745eb7AdLhhquL+hZe6tkxFZV/+PZamYJVqMnYW/vp7nXy20kUaPH7yqrTBiks4B9aIdMHECHQmeyAWEYdGWbYc+ZBxqANOJY0flKU4Sp3ppRjjWJn3MGfZouGVeT2oImZuvfbLQ/ci2Thy7mhukhmWlm1dI534hOYoeZCCPnY5EanJR9bxDDBni1MtlZn1GVmi14hg5F3hFaTMRMUJkSVebkLyIFwD6T1d4yr4yLwcY4cdHnyI27RsFlg1fZWehW3Gb3IbszY6aZ09Uo0n7Q2nGDnfx4HYqfa/NjKHKo33O3SNzcma373dJfZ5L11DVfPGi38cXhtiNYuYBRj1hzhHMk7j1mUcSme7d6KBufxLUPKMsjg4WJwFFDv7TrdFyP6KSO1r4hqV3fC0GBAjEE/0TofezzLTHgwDigNzBNKj8CN+eLLAslxh/FUMwdVvkBl+INIxSAWm7t23CRJvwJX+8qSjZ3noP5evPmxXUVDlzdydKiJZb32eqAisIC4gBWzHD2mJ03vxVHul9xrdTUu+eXc6EeMCUpX8corgTKXTAWvnu4QDf69iLQbDNrdBadPG6I4+SvGLufH9zbtAH/l2+762zNjZhf6XwomyryFDuTnTU5BwYm4kTLGpE6ytdIyoPFWtugIaPc9WYUW70RvuqAv8hN1x8dfACS31h30TAan/CjHPzHyr1Qq4S6K0g+UxRJPY+zyNQTaRc2pXzLnXR+eoAgJejNaP9X9PTdA9ClO+7d7g3soCzFu80DBKAaEk5RnzyWNZ8WLb7rj5eVGcRp4iyL3i8vBVUfjuQWKEDlxZVCCcFX4EAgyAGs048sBOMHXEiLoaiRzEBJG6PKX0KiaXG4BDimLujI3iaw43EOyggQOx3ybIJAEySL3XOq2Ikl3Xsn/Ycc89V8Hlh/IhNER1LCHBhMr7+kef/M75KQ/eUPKNbmaDe2vB692FGvpLk5pgMEe/KzNyofw9NPuLTy5sKZy2/QfGTVsS9JdgsDZ4xxAHLhya4TYQ5UvDTh3O+Psu3eCcOHA4cT3tNtVKyRGRU4x5MR8EYeSwFoClOzCKATj8w6IT4FcJqSz91jPAMInyb24Uvzao8vG3b2SSAsHFvZUvi7AFD4KJlEDO2hFEZz671cgmljdG4w8ePbI6JjO3Xare7cUbdc/bV4C+DnpHyS7OK2fQo2zLxLKa5caMJ4JzYOFC8YuJ90h/X0GuFGzn+jgcSXC8B68S3vz3/O3H+vf/8dIaZqXvk7iabVOisH5GS6haszAkcMYv5IDHDxrqw7lSFkyENr9evnnTg6w7PMHnquux1ittHKcSZe9Z5RNEnTRw1iRVB184bqRP2OcUvn/hFIg3TVkrjMt31yLtT8XZWVIN1/E3h9R+5GVMFc5KFijnSclAc43/XSVPnMSL7M199E6AP0wfo9pqngm07S6PNBZl0PkjFh9eLojJKIXYoXlTBy1AxghX5t9ejBBLEJpCZzbpVwisjBLQQmoqy+YSTX7fKptR3WWS1xeG7eztdG51IjEBj6MRVfkNZYq/LnOSveqcUcWvVEgrYI7ZssGaGThyhAwD+zAiQRPjxppu8/g+w750YaqbqxyIGK50kEu8WkV6UroyDXgmZZz4cWuo+s+j+5CI2IgF7arvqEreNSrTxIgCS938HeZH0SAaDq0pM1IJyX+qk2JsWt4VbiJQwAn67TJoNjSt3TmarTCUbdkVnEx3WCYaVMdyxpk4Tim9UEb4j6aXrg2nF3tFLMPi3evue8543lmis7wiHuEEhM/HsIfp9aVBbc6h8+2tFk2dHjK/kzZg2rtp8KS/6MPL58L7iudOYaoHen+wLXsU+2q0uboTljEgVye8bIqZhYPD4aT/xrOiXritYKomLz6hAW7KJaUglgwiMu+mNY2Jqfb5qiej98sAcCtPrgkdx741CVs2S4M8S3kj4xTvGsjffwy8oa8mNKQtNIeom+5hpa61N7snSCb/09pooO71bnEc9KavbYQpYHuA3grq36B5eKTUH8VXCcHtDBsEp3kHjd5XZxe9NdniVSdzxy1MLdWsrD698sWbmjZOfhq2iz5e2FeWVq8ftjjePM6m/XE3Y+nFjAueW3md/TMjgv9aM7Df/1T9fb2P1b/rQ+Pkjtei/9LWn+9SApOLEAU7eipefqnzHfe3tn1p6vMSAjZqgILkOhouezbz2bRJrzt/KtSdSftcZ+moYAGJAYy/TOKZwbQGo/+7smifQvGrbm4EQV8/8q5RFWuefQgBeihR9epKGE5gCbnvhr5SEn8tl7e4YsynYFFgytKmnPzPL/xq4782ooNB/BZWNzkedDo/mnfV0v82dWIVG20EsB8rYOnUCsC1/oz0PmUMoepxTF+RdV1LQh7sGLE1nRnumP13p/BFdfVl0uBGg8oXzs3dLPcdU5J68ojvxBLfFA+uBc2Us8CQgSBEKZ3DyMm0SxakuCaJ82w8VsxHyOrHO0c8+gR06YXq3C6BNml9GcAo2fwNBHYrGyctnlltBrEaveyYxv/V4P5KpemRrV4oO7JwdFc9bsZQT6T9dFAJw2I5iU5HGLQXAndFqW6eI0RqN1yA3AxAC1Epbym50zR2CajRrpF+4ltsyMsc3hxFKZp9JjLSO/BpKFmBQNa6WGMNHIwljXVGyApWas8acXNNlE/A57c1N0jvj+W7GykcFEwIoC4Kk4W6GekvN+E6R+h8J+29vs4qAFbrag69Bh0L8vBm2IynOnkwdYzEKZ/efKbon0aVdn165803MDb+5UWc8rTwIBqLaZ45DC1VbcSQHu+Va0GlzXyqZRctSzsgRM8qc+920phaJiSrW/bb6Vh1pu7aCQ/DFv07qeiKcwMthZBEoQl/e9YIr/3+81eZdLB1r42yjiV6oFU2Ve1HCBUZxnDCsrzeICH1fBn1aP3vGdjB+upTQXZY7Mv8QnCm7PXKNd+4BNdrFYUQPaHGDFyb6unGUsMxrMwP4CRLX+BdddBD+oyLo3YJsWnXOmXiwBDeN9aB2iir+zIKVzf0iLF+jnEuO1mxhohogVnDAUpFcxxMRgbVQ/Mp3ro0gFkcSBsAAb4I/hPnDbBLrLoy6039jBxOweirIZO6oF8AP8Qyq0Of54YlYhFK9eoiKFHKKf28RHOrap1R5ztzh4ysBZZwC9n2IcuS607nLfLfozNW4UmOGWTqnI080uRDPUG+nLHyRyi6T+6QtXDRh+JeIfU4IqPJVx5c3MztxibpQy7yy37F5Tp+10aqvoiu55J0ZIujNqvIrl1dsz3q0MogpCyH3tfQNrd/uazKFRVUkRGzf+XN39/mG9IVXV8h0qB1x1dJG7uJWgkvz+0MmuEAfjwMTOcqNENbL9X8dteKaH3IYB+vYxjsvF4Ye/i1Wr16swp04s91CuVh6k8KH7ej2yT6HoPe5WIMx24OTn36hyW57aHTHH6KV9NyBYzfAE8wrfUytO4qVImiGVDhWLbNqDwcmpcPjNUFjxrucB3As0es0v3WPFdGoSbxxUgTKqLYNUPZjM3ohUJW5CclUTV9ulJA6ylP2OoS7d+q7OyNPVq3rjBC6MLm0Y72Y6pq2G+IFCMt7mHXpFXAHPdoUIhzOiBJHFylrvl5tJX7KoAIdwL+pTJJlEWE6hlnHu2KjZcnzlG2f+epXcdOFl+Hqb42vNKUVE+upZY6zoyAE7OB/RZuMR86HgyrWkUZL2jAE1+y4hr/yxWxzitrzlASXwY/hfxKMXjKTHyyJfdcXWUqhh/qiSSfEYeIU++R5sXgtYuDyorfGbay5kvLq2srasJbBAVZ0lc1qGx6QsC9oYAe3mx+RMixFbSy6crQsUzr+33Or8BHmdvzlmsrHVOZpTpbiWeXr1xptO7bCx50YSBNeylydQKCczy6LjPvs7F1lD9pro7vu53m5+aMQP7Z0GM4T4Sc6164gsa7DBQpfG+2NiMfji92qdiWlWLMPnermG0sOLIjYsZBOoIBhTYpJeZEimvgCCnrXFbRj0BqCrMl+9XIcaF2EQD7302XqUOVikzW6Xss+yUehGVoZrZtnZOPjOESlHcThEZKQMYyqAVdP7Dmb6vP3cYHIf+sOa5fUWd4rurOpyO3eL62e9XJ8yu2uuEdx18Hq1HEk7eFdN0fpKyZwcALp2YTQceXds/wMobaWuj/8mIAQtxDp8cUkwnU+/cdh8Q2/x0uWOoEZzunU7CVlXIfwq8tsVxxwzf8/+U9yciePOI50YVnX1k8OCfbxT2C/UlkMsFhXOJqgZ9z5U7GzfzhgGYXMDm2LMppMnbeiW2NHnCloIK7SA81Ur/g/C+uM/sOGaAFcCrWVS3M9sA/kMmpKHJREE4pGu5WwODtQ6vuttstr/PqVvbbKdYEc/2TjtP+SVvX34Zhdj2ezCqU7Vy5vzLN+fAuoLsTqQG0JeSEDc/1FpMceXlW0srtmUuYuq5i5/n0Q8s30FiiWmHU1W0xmfMzSruGj5uOxLYfxaNu94N/8GavXTf98buj0isiNM8NBHVLeJaVYCD0TZgWUBY0suzvMc83bWSNtCHEqTSTc3EhlOMSdFlvEkZsh+PLzw/aVZVrbyuGJM9eFHE+za2kFNhPrShM3FuQ9NhUoGae3WOrCTcVwN1M5C3i0pcuWmlP3leLJvqCNLLm3tzI4jmCz4+YhNkwhELPkWAiERliUL9DztG8x4n6iOAqCmprqh1SrPL5rBQvCkgDlvUeLEUiQQzIg//waTbbjvwQ+vIyrYxGr/HTV5V/s3Wf/G1ycM59rG7p7KqaKiPKB52NjL+DO8JajjGPhSV1WqlE5VWubQvkEuqg6Y4sXnbbIdU1HMx5FfmUvcphdM4Sc8QvLs0FjowDYK+2w7g3ekyOkjjSynL5mXJP8eIGCPbzIc62jESkVoWIOfUfNwLIzPpRSYbsoz43NMK8tU4wzBT0uGdzug1NKcbjs3EVqm3MlrzDwK6JSJ5i8s58Byf818qAdRqcO9wIsBEDADS0NoQ6AfrzVywGnYqErDehkbLyAB58nlh7a3TwYEzPyXYHIYzgzrrbp26HQL2E1UcM3+HgKIlu5N2/IVMvciIUg8AV8YPL+bVZFEKEBMyZTqLuJeXA4x+CQaB+7f+8/MvTO64T9k7J96Dc2MPYYILXdnvpNFgsnKcebUsuBFkP2JjKspzKNKH76Ngz4eAO8kZimpOZCKRcjXqlIIS69crrjDHmyZEnMPq/zHPDl2c4KrYUQyc/iGPei168xrf4WMBgOqoDJO9ATlV8rKq/CTz1bdw6Xkxlr734LhSHuH51tLr1JmqiZGIBLbvnU8T991yVXZeO3gFl7QbWgVe/k2TXWlsTTdi8b9KwZmDQl+FWEKul3wJeoSoNXYXYqoR9ADBAG3x9SXo09/DHvzyRd+zgUROUfzAOLMfu3ntadQhMl0ilKrdB6z4OcUy2RAQqIA4QdDA5h1V1Rj+fzS5LKyinjx1ARPwJQYeQ3wxxboxf5ABOEceDO0wgMryFidMVihROEnRcv+xDHEUhMK/fhF/m07rUL+OlgDVjZEeKO6IGMligNV+QMTsiYCYn2UGXbLvSq5lomji1qWG7Y2jq19c14Zluppf6Lz7WjCxmuP1wqGMRDxLKyfKX8w9abrJAccb16xbzLvRMWNguAURJAnfvhTCIFhOM6t8TxUMzlWIx8xzUodv2tTGbRNVNNKU5P9tgn7mBdnBN8pdnzl0BVMQWxJe3wvsF5L23XDtjmuJ1CWQlv+oQUft9jsMU7ZywnPFI+001N2KHpkW5lqypHhUClS40cPRjc/KmgprKsYk3AxGZ5HeN7rHz1purdYNCefoehdhTmypwJIp20xengtTb7GCQmnmMOHS4aOF0eJFqbGd4k36jbude0s+71TAanj0iN0E+bP5UG8TPi8xdUeOdpw6geO47o5d4T2yJrdAkfb75zIYYAODS2vmcHaKXAw3LoUzGfb1+AxzAQB8lksFa+d4BInO3OAm07nVaXPArYRJwIQI1qJ16KJzIO1+25B8Q3vqurJkgo1Dv+diNlUQt+Kh5mxd/YisCFWTWssyD2vEJNPBUeV4XqK50WZHtdmpjiZrnvWhWX3IzCP+PC/Np3vGkEoJWxeu8z4esaF33w2WBeu9/abA/NpMUh+ePuPXTK42F4gM90JvGk7hT6YxkA4SI1NPLMl8lZfncgmEmOcVW2dgjeudT+znnpWzDiV0dVeraXXWkZHWvT4MF+eWWLHLBK52avPfOvvlaej4LNgcP03lmBciftzqnatwBc4Rx+kHmoIiOPx4IxosuxFJBQFd2TRfsQCe/foGJnTYcdVRvXy/RqXaDcj0uPi8/dJnTWevlaT7EOm2BrdjCWiiMpyI9xR6au+PKUbnO/E713KmmnNdv1zD0/mo13fxHMdSS8AahQYdb2iKgj7qGgdF1BDwKJGIic7LdNjgMtHQi0cfl0mfy4cp3FCV2qZe8moDABpSmsl/eVFNnXKCylDx5dlJn0UraAjzSRMybVsFRGMgaFBSe2lsZSakB0Nenv3s4kXwELstMa9dYCzNZM383ObFhvmTI6jsoOmc8Xhfq7W5ez9N96xgEcgjQhZRrF7iekq6fZspPNuXjaKZkmmjpUjZLC+dykSEI3ho/H75C+m4lTLDUqEtkWHopUF/vN1V08pRFfr5Lwq2T96+nwRGOLa2x0tJmPZ4dtmF1MdRHz8AII8BhpOHNYpGPaum+j3qdmHC5iaQ0bMxyGMf76qjmG3x2wRIK/h6YmkXmSkPEp/V6OMVXMMeecSOHr015dNecQZefY+D+2XtiWy1GrL/MozZ5u/M4dF3sUolYyPwTiUIYHlqReOAkHqgM+2Kk3IL4Ixd2JPcnsMYbl68ZfBUx7SLR3NDo1D8dMY3GCxU6zaXvSRrERlxSJlXdrlLWVGIfgRvuxcDichAum1pIu7qtdRaaMh6Si2bYQBaoiu9bcNDelS12i0kZ1EoeCLuzpLfMcNuf9mjOniaPzt+ZBssbCNoqxaWT82JiWV7cfLfWZwEkI4VizEVxLsV+7TiK+5THnASrxqHzqDBrx1vPVxqrKrEIehDg0rnjccNJI6N1CRjAEmrjDrAyiKYyDdtYtRekQ7kBgFYHcbrEle5bf4FjeJliLD1D486j4lWpjyddoLwLGyuwHTbXRa7w7CXp+YZvQnC3Et3p30mznDV00howgirnZjcxMmAavMQ29yZtXy5KcL6cMeOcTbKmNXnI/L8PNH9mmZd0/K/lxrKIzhRQS8/EMC3v7ZowvQC9Mb8xWU0a2hIq9iYTlho5RG+nmKUDK2LRS1s5LQwV7bUlMYSMiapuqylhLnj7tyO/K6+ojmw/chZfJbw4eCbSnzh4awJxxx66xf/mjMM1E85rTnPb/Ob2ABCGYxw3Y2RugWbVRP4XUMfpaTz2BAxRkgn0FeakyiUI2zGzxdSZDJU8p18vRBStRoELhSmbngT5qGkWRa0sY3HDo+oQ0CgULFPDzZMcIhNzKLAyjbUhiNkOY7Gq4f44HnehMR7NZgTgNZoNCpihjWo58AiVVvnc5ULvuDGKrl836B8Dk+HBSj6DXs/l0YSKj5GqDBv3Tot/tblgiRYsjsbhdvg4hHjFTDm8oLHlwYERVJ1hJ8BJxnSUFUNS+AEGbZUagH7/I2/ARD3I1GqtY3pPOiXe4HgviajrdLhWUei2N7Xow3SLYReGA0oevU74RtM166w1Ouky6YRaC5jc+mbbwoZgjBtynzj2nIDDF/f6/WoB4CTYxFVMbk/c6g0+APNpNoXtFcfXwmHiQc+RkmulC/eLjccvZ8M/vvx0nZ0/db7+g4RIEOFRt/RzBTWtB1ScmcNj1H3sv52ZvulJZMzwlyGtOb2H27U4EiLN1p8DSexyTt0pyMIIKLBT42o7G0s2InIrinC6R5Paxo3POLt5uxnBKp9l01bWcqNcE4pOFELAlPo/v7/f2mEzEssmHtQ0rP2eUH9Xu3ny2AhS3CRA0bXF1F0IdGH3yzeJqeWvSN+hi9XUyWEO3I/lgQr07qsxLJ/AGIza9K/5cvF+OgeGuYaPwGVsfvtcAVYYTxmX2b997IVrYcOjswclB/7bf+NRv7LLInKUgDuolcoBH8b2iptbZBzdAi9o5/kqJURpua0CAG53Yq711zCmMabZU7OJXWvSGgLXdeKBpMdT6397y4ScFujKpRcLzv3NzpRydByLJhndT77PP+gLnHBSezWh62h797YDsNYkRv25Sx5wWr2yAHR3YGmz68H6qbKsQ1P94M1xnxFIRZKh+HsswPv1ZGeubeu7dJWFOCpuF4I3N5j8pMtdUx2gqp+GZ0zdN/YJ0DhZRRmugYPSIi4svTp57UlTm9aEwZc+T1RE5ZLwg1GZYVvtTJdCh0sDEueEjPK7KtGaAdujRAgRcsf0muUM9ho8KwjcZcpycLT6o1wR9QUJcIpzOVSRZC8tyeYZWIdg+Ir2uPCY9UkINL8h6qqeOX4/4+3dBYHD5n3T7U/TlFQVrCdsKfmBoLkzCohNmzteeKTNMh7JSiKzf7QXw0Yc3F3LDnnjsOARaNNyjqqaUk0uy6GFzKdqX3zMWJ982JkzVgFmW9T6K3L1idN/k2JX9Wk1VElv8PglzJNn+Ml5V045E8UubxgASkTMRKN1VHn8QiIFAPMojsOlqa1P35ZFlT4Ku2dEGjoX1f1vwcfO2p8qZnunM//54mD1S/9zEa9OhD3QiW1yMfWnCrncLrqr2p8v+W55b+KH2o1WovFQKpNBkteQCWDq1Y3e7y4w0KgGAH2d320Sk78IhEhf9A/1/shp8tbcOAkwqcUewCiATljGBSg4nFtbhCeAV89JWg/V4APykAOT5Mb1beQ6HIvoQ4Nreu5VBvvGkufogBtwWtaZwqJusyWSNCQfxkISua2MCPJDipCCkFlawWKNhm5WOGco0X/dHlSg2ApWLCYRRGFLevmthLoHnYyflingxlQpyFElDMZFVLjnD2IAC5SQUlzh/ritVjSJFuxZ4bDsqH0ZRdXR0g/YXuhlKVMU6QSC370xa3lhj/XgPeIEZNlHkN4YChK4wc9zT374UQBFLeakgjM8dDLQy+U/2IlLl1YWZsT4Vp7hzZqAwRit/D4ortn1nGpOrCYFH7klgW1VOJm67Hs45Z6f3wfMml8neQ8DLq+ZRkeW/54myVhecuLYaRV3P9wXOmi/5a81jBC4zbqLKTx4JFLpyykH7fMl/u7X+PfC+co1cA2DdPGzSLGGUKME+nA2JESnZQAT3Ntra1ZWnDjuP3PxDMIet54axLScofJpVIJ6xim6r2LBM26NFxyC5uFRgAFYC3pq377LSHzJhfRxIB0ngPapayCAXjJATcyZLIf+SFxMZEryW+8M6CcO8ib/u+HCNish5+N0Zqy7+aq0EcMd80J6bG7c5Gynd1fwm+2EExZ2ox6TVK/aAT+x4Gj2rLGWWSQfAA2bEQwxlEbewrubl4FRMo53KJ/aXcC1LHjzUv1yyyfwDbmwZoIR7fmLDR0mOoMOw9VmYoJGN6Rs0TfvVAh4hOpaGohdr0EemafIogGOP1N31aSe8xN+r5htQieVEfr1VyQH4Zg0rv7DBVpO0Gu/ie9PquJylmoTnt6thMorGwfGYu8kzzFk/BaWxshuArqAG52HX1NCUMH09E0E3BMcNG/UMQVw1Qn/A61wg0rqEOplrBApHUGblBkLNtkm1BoYjBhxH0CG/VnmfhW3GbcIz1bhNYGNbGx7EGCZI6GQW0NnjeTjfut7TZMbqLIfugLYherGo7eA+qQvvb/XFtNXKkdnqgQIRlk13apd+bmdlxAYNG+41ueMolkVynQHnkUsOVI47SDS0B3nHoOzjcFf+4Oy45y0sMGvyin0ULBZoyRAE4o/OmGry1EHUg2tL1JhrRthUSKsQn2cNi50jiiEe+LI21NV1fAyarpzR6F1DQI//McsyKJ5Al3W3SCfLgJCROU0+DgCGJotewp+spGHHT9lj0FHiXNyPASlCG+4D1HMINZs0dQTCRrr9GyfsIumjR/XwEpe4zcNMkONtP/TBTfBIB7fsn3RfkgAbzmdK+p1Y/Wc7EOZf3898a6JtgF/PCl/UaFSs8VBMgijF34kE5BUttUPE4Kusvko6++nSWqW/mHV7poZhDUii1cqsBCGomQzZ7ekAeRCoAkv1N7d5B5yKVaOyFT1dtm4wpgRzXR/lqPCNptk63KfNtE8Q5dxdPQBA5uHHmrk4MRGV1uFJ6nPybY1oz+r2bPQUeTIh3oeGrkVQjgqoMV43BGoMakPnBaEghausdJx1xdpdBNDmE2a4aLyik4O2YtBKK6EAlA1QK7z1D+LK8k0yKbCd/lVtuOWOa2XpNTV496CuGa0DHtoR2owqnWO6/2TSWL/Jw42+8+/lzYiN5pIAznXLt7Y5vV1obFssp8TpPBnx0CVQCxLYg4kPOHE6YGyVSGkISwGOfZL6PdhwKOTnpUQsacuADAMppKhmMsqHqwYwrcTOznXicgKqDEJf1hPITnJcd0oUl892IkZRwkoKeCY78/SJyPPmjrYnV3vB4LqQJZQPNVt7KQTmInm4CMBAjEd7bwaRIASUgsG1oZ2oHxmK6PtPv1GkAffguQpPjbkJSM97+tMPM1dUgMM7fsYFujyPilMj6MVVKzZ7cQuNWx6EQQRxEAnaBe/Bv81zD4vwyYat7/5KyOUPPFJCSO+IWBX6n0PB4ETKeTq9tsDb7Mfjoa7R9lo7TSoLLsUTPBPj490gttw1YliqW8ISLISMa4dAXckaqyITA4u2Opxov3K1UIkonF1Y9RNY1qgbE/Jzn7YINPZmWz1HQG5jdzOaxFb+C5nMKif+T4s3Daw4lNlO9gqk52MkYe6Rl2NDjnuXChnWXJ66fDzxEUp8INN5k1Dm69NBFhyJOPEMS2w2Lo+ksrNrH4IzLIibYYifjSA7BgREQdfALRiuv/wMisCOwHsR+M9iPjEb1xPDfjLw4xSdqd7yMUuhiD451Z0d65Dut0CZOGFVv4oN8E4jyO4lQEaBhIFb15hZHMa8y7101ew7APxatdou2C6Sq1eRGjq5/IBV9A83CFY20VyYj2FcAlPp49ukgm7Kue8peOYq+m/FxuUaRIdEABPgCCZ0vfu3l67y6/Nes+QV0VsKNUgoTs8RLO5666iAFAYFb40z0Gh4nD/9EHhPxgtROldxL1WYF4+NcFyzxmFexVxRBqFRFDr7yshPDHySQfZOWJk1N/IFLWeCY+zIZs2iBTygzrl9XCUaXLF3vB0a4mbhBnuvtjNNkJuf39nOmu5B6C29zthe3xV7XevaGfcEJHvkgexpI8qegYlLYp5rduIzjFwg61tIAOqc0ydUwj0b973rSIt+4c8CIcjfYzM6hGxDowHcYbQbcixkzCrr95OqU+lTWZQ1z7rUDdIeEkVnhU9dEzx9ZK8JzEwSFZTOrzlvrScc2fyIJV3MdT2j4kxFkWy0dW13oNrMRQI/ZzUB1JSAM/qfO3UrV991ARGtya8W7sWxfCIZBgCt///oo/bVL7ZkzrdMejCi1kMiq8jcGz70rmNdgiKWfL3m3/hwLhl4eyGYDUbdasxZvUgtdZLQ9ru4cvkH/obIi8nyyOcPRuX7SzRZD5C0A1rXmRQxk49ZucnRSRfi/d+BZUA2Uxzm+J2esm1CLwIiDxajLhj+zUQ7mTpn7IiZ2zKlzMhH37RT3EMSg7yjxvTn9kT10K12I8Hg3sCdZr8ySbzwkt9RAjl+VJKR8LX+zHY+id2SXpnkN4ImRG2tCUkcNx9XtOMyxOhL3rO3RmA4sswtSt97hM7dYRpyDcft7xmZnxHU5rz6Z0r+08gyHRHnbCExKyL7hgLeVqpZ1qAo6Yw9k+uGcbNw7VsWbFtm3mmVXAC6fCgnj9x5IVleXCWo36nGMssvDuk0YXTE7eyZ0M5yppYVtnk5Jp6PU1RArxXso/IT+18tp5GsWuzPDwC4tHyw4g+C+zm/Jw7SDYHq6cu/5h52mAQO7f658y2YtQfnn/cy6X7RjV7bxOGz8mwv/D8HoNrCxIzyZyVBX/Ika2dfqoxRsW1qNnk5pjdTwcL5krscbUamv/lBi4P2P6fDuHfr5hiH+h7Wb//pqFqcHny+o3d8WA7B7eetRfOGWg6FrqgEcVua0xzhbH3YlguTIMXn2ovu5eNB9OCpq8ZRMbFzxhsXPm4M9XijRg79U3gX4PgbHMCDovdgNms9OG7Cv/24iMTW/cMNqa5z/Yae3rMJaB+/OTmNHviFiKIvQNj/WmLgR2B+Nufuxn8z/h6DT9BzwWXAQASa06eIdeHCNODfgsf6F7/UFC+5vvRPPQpTd+UtmNe4grvE3Ft5G8VSJ88C6qffzK2RuJskGyukH/K6Irg3cidk6Z36TlvVI1W9sncXNI5qRN9dTDKPDghun+qKpDVPTGHGpJfQMOaKBHVTkqMSXK0sqllsETk/cZ2RWKH4JmA2XlL5EkuVULDsymUVLGeYouIpiq0uAnD7LGGzJW+ZhM7QdJb/DPw7orEjBjuioiPmdsSStmjpuqYO2NkRRe1wsLG2ZdFlr3rHhTrOxiWBG8nPcSFVm+F/3ap0Os42C24HCLNoyMKQhXuWus1iehaMKSR0QEIGCarau2/0EcC9G74yfk3KW6lWnVXQPGMJMtfEMm+KLBJ9ZWUZYfJrnvduXHEI0YJNl6PbkqR8o9DspbE9wME4VD0HI2g2HIyS2XcwZOftwRhB5IPw7JIcLQBqDHufiLGgVaLUeOUK5MlXSXgSet+Ld3BiTqycslaGas8z6pyILr9E4X4yy1erav18JedOReBu/fxKpZPvb2RRzFNQadvLmUbISqx4N9U6JVIukiN3dsZZnYrzy2YNvby7BSeqdfKCXyRDVsmMIH3lBJidRNMN9QLarmD4dX3NlITFODk+eIGhywiHXPTOTvw8H6CvUXJayoZ6cUr/VmTUXf27e4VtAAA=) format('woff2');font-weight:700;font-style:normal;}
+  .darkbar{background:#2b2a26; color:#fff; padding:8px 15px; display:flex; align-items:center; gap:10px;}
+  .darkbar .cav{font-family:'Caveat',cursive; font-weight:700; font-weight:700;}
+  .darkbar .emoji{font-size:22px; line-height:1;}
+
+  /* company-guide drawer */
+  details.company-guide{margin:14px 0; border-radius:10px; overflow:hidden; border:1px solid var(--line);}
+  details.company-guide summary{list-style:none; cursor:pointer;}
+  details.company-guide summary::-webkit-details-marker{display:none;}
+  details.company-guide summary .cav{font-size:24px;}
+  details.company-guide .cg-body{padding:14px 18px; font-size:12.5px; line-height:1.6; background:var(--paper);}
+  details.company-guide .cg-body h4{font-family:'Caveat',cursive; font-weight:700; font-weight:700; font-size:22px; margin:12px 0 4px; color:var(--ink);}
+  details.company-guide .cg-body h4:first-child{margin-top:0;}
+  details.company-guide .cg-body .vintage{color:var(--sub); font-size:11px; margin-top:12px;}
+
+  /* §2.0 bridge + state bar flex row */
+  .s20-row{display:flex; gap:16px; align-items:stretch; margin:16px 0; max-width:1100px;}
+  .bridge{flex:1 1 55%; border:1px solid var(--line); border-radius:10px; overflow:hidden; display:flex; flex-direction:column;}
+  .bridge .darkbar .cav{font-size:20px;}
+  .bridge-rows{flex:1;}
+  .bridge-row{display:grid; grid-template-columns:auto 70px 1fr; gap:10px; align-items:center; padding:9px 14px; border-bottom:1px solid var(--line); font-size:12.5px;}
+  .bridge-row .rl{font-family:'Caveat',cursive; font-weight:700; font-weight:700; font-size:19px;}
+  .bridge-row .rc{font-weight:700; text-align:right; font-size:13px;}
+  .bridge-row.pos{background:#e9f5ee;} .bridge-row.pos .rc{color:var(--green);}
+  .bridge-row.neg{background:#fdecea;} .bridge-row.neg .rc{color:var(--red);}
+  .bridge-row.amb{background:#fdf4e3;} .bridge-row.amb .rc{color:var(--amber);}
+  .bridge-cap{padding:9px 14px; font-size:11px; color:var(--sub); background:#fafafa; line-height:1.5;}
+  .state-bar{flex:1 1 45%; border-radius:10px; overflow:hidden; display:flex; flex-direction:column; border:2px solid var(--green); background:var(--green-bg);}
+  .state-bar.up{border-color:var(--green); background:#e9f5ee;}
+  .state-bar.watch{border-color:var(--amber); background:#fdf4e3;}
+  .state-bar.down{border-color:var(--red); background:#fdecea;}
+  .state-bar .darkbar .cav{font-size:20px;}
+  .state-bar .sb-inner{flex:1; display:flex; align-items:center; padding:16px; font-size:13px; line-height:1.55;}
+
+</style>
+</head>
+<body>
+
+<h1>AJ Bell plc (AJB) — Longitudinal Drift Tracker</h1>
+<p class="subhead">v3.16 · Window: Q3 FY22 (Jul-2022) → Q3 FY26 (Jul-2026) · 24 RNS documents · Limited mode (no datablock supplied)</p>
+
+<!-- ===================== VERDICT CARD ===================== -->
+<section>
+<div class="verdict-wrap">
+  <div class="verdict-card">
+    <div class="rail">
+      <div class="badge">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1a7a3c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 6"></polyline><polyline points="14 6 21 6 21 13"></polyline></svg>
+      </div>
+      <div class="rail-label">TURNING UP</div>
+    </div>
+    <div class="card-body">
+      <div class="headline">Q3 TU prints record £3.0bn net inflows (+43% YoY), third straight sequential rise; H1's guidance RAISE stands; MPS fee cut pre-announces an FY27 margin headwind.</div>
+      <div class="meta-row">
+        <span class="pill alerts">2/3 fired</span>
+        <span class="dot">·</span>
+        <span class="pill">Q3 TU (Buy/Sell)</span>
+        <span class="dot">·</span>
+        <span class="pill">23-Jul-26</span>
+        <span class="dot">·</span>
+        <span class="bs-tag">B/S clean</span>
+      </div>
+      <details class="company-guide">
+        <summary class="darkbar"><span class="emoji">💡</span><span class="cav">Idiot's guide to the company — What AJ Bell plc actually does</span></summary>
+        <div class="cg-body">
+          <h4>What it is</h4>
+          One of the UK's biggest investment platforms — think of it as the shop and the shelves where people keep their pensions, ISAs and share dealing accounts. You put your money in, AJ Bell holds it, lets you buy funds and shares, and takes a small slice for running the place.
+          <h4>Where it's based</h4>
+          Manchester, with offices in London and Bristol. Listed on the London Stock Exchange, in the FTSE 250. Founded 1995 by Andy Bell; run today by CEO Michael Summersgill (took over Oct-2022) and CFO Peter Birch.
+          <h4>How it makes money</h4>
+          Two tolls on the money it holds. The big one is a small annual percentage on everyone's assets (the "ad valorem" charge) — more assets, more fee, so record inflows matter enormously. On top, a cut every time customers trade, plus a chunky slug of interest earned on the cash sitting in accounts. Two front doors: the <em>Advised</em> side (financial advisers using it for clients) and the bigger, faster-growing <em>D2C</em> side (ordinary people via the AJ Bell app and Dodl). A separate arm, AJ Bell Investments, runs its own cheap funds and model portfolios (MPS) and earns a management fee on those.
+          <h4>Recent structural events</h4>
+          Sold its Platinum SIPP/SSAS business (completed Nov-2025, £21.4m disposal gain). Cutting its core MPS management charge 0.15%→0.12% from 1-Oct-2026 to stay the cheapest option.
+          <p style="font-style:italic;">The argument in one line: a low-cost, scale-driven platform compounding customers and assets faster than it adds cost — where the fee it charges on a swelling asset base is the whole engine.</p>
+          <p class="vintage">As at H1 FY26 (21-May-26).</p>
+        </div>
+      </details>
+      <div class="grid2x2">
+        <div class="soft-card"><span class="lbl">State</span>4 of 5 ranked metrics 🟢; revenue margin 🟡 (+1.0bps, inside ±2.0 band); PBT margin 🟡 (43.2%, −1.7pp).</div>
+        <div class="soft-card"><span class="lbl">Fired</span>Sequential growth resuming/accelerating (record £3.0bn Q3, third straight rise, all reported figures) + G-RAISE at H1 (May-26).</div>
+        <div class="soft-card caveat"><span class="lbl">Caveat</span>PBT margin's 2-period H-on-H slide (46.8→44.9→43.2%) not yet turned; deliberate reinvestment, revenue margin rose through it.</div>
+        <div class="soft-card"><span class="lbl">Next</span>Oct FY TU: Q4 inflows vs summer-trough norm, customer-add pace after Q3's −11k dip; Dec-26: does sandbag #3 arrive, now with a real anchor (MPS 0.15%→0.12% cut from 1-Oct-26)?</div>
+      </div>
+      <ul class="card-bullets">
+        <li>Serial guide-beater: Dec-24 and Dec-25 both guided revenue margin to "moderate slightly"; both reversed to RAISE by the following May — the Dec caution carries a sandbagging discount.</li>
+        <li>Reg-capital surplus (222%→206%→157%) and cash (£197m→£188m→£168m) both drift down two periods running, wholly explained by buybacks + 21-year dividend streak — logged, not fired.</li>
+        <li>Retention rate ticked up 94.1%→94.6% (FY25→H1FY26) with continuous disclosure — a minor confirming green shoot, not a disclosure event.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ===================== §1 LEDGER ===================== -->
+<section>
+<h2>§1 · Metric Ledger</h2>
+<table>
+<tr><th style="width:32px;">Rank</th><th>Metric</th><th style="width:80px;">Type</th><th>Why it leads for this ticker</th><th style="width:110px;">Cadence</th><th style="width:70px;">Status</th></tr>
+<tr><td>1</td><td><strong>Platform net inflows (£bn)</strong></td><td>Flow</td><td>AJB's own lead bullet in all 23 documents without exception — first hard number under "Platform business" in every TU and every Results doc; drives AUA and, via revenue margin, revenue. The ticker's tell.</td><td>Quarterly (direct print)</td><td>🟢</td></tr>
+<tr><td>2</td><td><strong>Revenue margin</strong> — revenue per £AUA, bps (company's own labelled KPI)</td><td>Rate</td><td>The one number AJB explicitly guides every single H1/FY release without exception — a guide moved is a turn event in its own right; leads revenue and PBT margin by a full cycle.</td><td>H1/FY only</td><td>🟢</td></tr>
+<tr><td>3</td><td><strong>Platform AUA, closing (£bn)</strong></td><td>Snapshot</td><td>Confirming metric — net inflows + market movement; "record AUA" is the other permanent headline in every document.</td><td>Quarterly</td><td>🟢</td></tr>
+<tr><td>4</td><td><strong>AJ Bell Investments — AUM / net inflows (£bn)</strong></td><td>Flow + snapshot</td><td>Distinct growth engine, always broken out under its own heading; second, faster-compounding leading indicator management treats separately from the platform.</td><td>Quarterly</td><td>🟢 (decelerating % growth — watch)</td></tr>
+<tr><td>5</td><td><strong>Platform customers, closing (k)</strong></td><td>Snapshot</td><td>Organic-growth confirming metric, printed every quarter; basis for the retention-rate cross-check.</td><td>Quarterly</td><td>🟢</td></tr>
+</table>
+<p class="methodology">Band decisions: rate metrics (revenue margin, PBT margin) — H-grain ±2.0bps, held constant this run (bps used in place of pp since AJB's own KPI is bps-denominated). Flow/snapshot metrics scored on the sequential-decline / YoY-like-for-like rules, not a banded rate test. <strong>Proposed ledger change (flagged, not swapped mid-run):</strong> Underlying PBT margin shows a genuine two-period H-on-H deceleration that a Rank-6 slot would isolate explicitly rather than leaving folded into the B/S sweep.</p>
+</section>
+
+<!-- ===================== §2 GRID ===================== -->
+<section>
+<h2>§2 · Unified Forward Grid</h2>
+<div class="gridwrap">
+<table class="spine" id="grid">
+<colgroup>
+<col class="lbl">
+<col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col>
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th class="fy-band" colspan="2">FY22</th>
+<th class="fy-band" colspan="4">FY23</th>
+<th class="fy-band" colspan="4">FY24</th>
+<th class="fy-band" colspan="4">FY25</th>
+<th class="fy-band" colspan="3">FY26</th>
+</tr>
+<tr>
+<th></th>
+<th class="qtr-head" data-q="Q3">Q3</th><th class="qtr-head" data-q="Q4">Q4</th>
+<th class="qtr-head" data-q="Q1">Q1</th><th class="qtr-head" data-q="Q2">Q2</th><th class="qtr-head" data-q="Q3">Q3</th><th class="qtr-head" data-q="Q4">Q4</th>
+<th class="qtr-head" data-q="Q1">Q1</th><th class="qtr-head" data-q="Q2">Q2</th><th class="qtr-head" data-q="Q3">Q3</th><th class="qtr-head" data-q="Q4">Q4</th>
+<th class="qtr-head" data-q="Q1">Q1</th><th class="qtr-head" data-q="Q2">Q2</th><th class="qtr-head" data-q="Q3">Q3</th><th class="qtr-head" data-q="Q4">Q4</th>
+<th class="qtr-head" data-q="Q1">Q1</th><th class="qtr-head" data-q="Q2">Q2</th><th class="qtr-head" data-q="Q3">Q3</th>
+</tr>
+</thead>
+<tbody>
+
+<!-- RANK 1 -->
+<tr class="section-bar"><td colspan="18">Rank 1 · Platform net inflows (£bn) <span class="nature">— flow, sequential QonQ, seasonally comp-flagged (Q2=tax-year-end spike, Q4=summer trough)</span></td></tr>
+<tr class="period-strip"><td>disclosure grain →</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td></tr>
+<tr class="value-row">
+<td class="lblcell">Net inflows</td>
+<td><div class="val">1.6</div><div class="delta">—</div></td>
+<td><div class="val">1.2</div><div class="delta neg">🔴↘ −0.4</div></td>
+<td><div class="val">0.8</div><div class="delta neg">🔴↘ −0.4</div></td>
+<td><div class="val">1.2</div><div class="delta pos">🟢↗ +0.4</div></td>
+<td><div class="val">1.1</div><div class="delta neg">🔴↘ −0.1</div></td>
+<td><div class="val">1.1</div><div class="delta">🟡→ 0.0</div></td>
+<td><div class="val">1.3</div><div class="delta pos">🟢↗ +0.2</div></td>
+<td><div class="val">1.6</div><div class="delta pos">🟢↗ +0.3</div></td>
+<td><div class="val">1.7</div><div class="delta pos">🟢↗ +0.1</div></td>
+<td><div class="val">1.5†</div><div class="delta neg">🔴↘ −0.2</div></td>
+<td><div class="val">1.4</div><div class="delta neg">🔴↘ −0.1</div></td>
+<td><div class="val">1.9</div><div class="delta pos">🟢↗ +0.5</div></td>
+<td><div class="val">2.1ʳ</div><div class="delta pos">🟢↗ +0.2</div></td>
+<td><div class="val">1.7†</div><div class="delta neg">🔴↘ −0.4</div></td>
+<td><div class="val">1.5</div><div class="delta neg">🔴↘ −0.2</div></td>
+<td><div class="val">2.7</div><div class="delta pos">🟢↗ +1.2</div></td>
+<td class="bsell"><div class="val">3.0</div><div class="delta pos">🟢↗ +0.3 record</div></td>
+</tr>
+
+<!-- RANK 2 -->
+<tr class="section-bar"><td colspan="18">Rank 2 · Revenue margin (bps, revenue per £AUA) <span class="nature">— rate, H1/FY only, ±2.0bps band, FY-vs-FY / H1-vs-H1 seasonally matched</span></td></tr>
+<tr class="period-strip"><td>disclosure grain →</td><td>—</td><td>FY</td><td>—</td><td>H1</td><td>—</td><td>FY</td><td>—</td><td>H1</td><td>—</td><td>FY</td><td>—</td><td>H1</td><td>—</td><td>FY</td><td>—</td><td>H1</td><td class="bsell">—</td></tr>
+<tr class="value-row">
+<td class="lblcell">Revenue margin</td>
+<td>—</td>
+<td><div class="val">22.6</div><div class="delta">—</div></td>
+<td>—</td>
+<td><div class="val">29.0</div><div class="delta pos">🟢↗ +8.7</div></td>
+<td>—</td>
+<td><div class="val">29.8</div><div class="delta pos">🟢↗ +7.2</div></td>
+<td>—</td>
+<td><div class="val">32.3</div><div class="delta pos">🟢↗ +3.3</div></td>
+<td>—</td>
+<td><div class="val">31.6</div><div class="delta">🟡→ +1.8</div></td>
+<td>—</td>
+<td><div class="val">32.4</div><div class="delta">🟡→ +0.1</div></td>
+<td>—</td>
+<td><div class="val">32.3</div><div class="delta">🟡→ +0.7</div></td>
+<td>—</td>
+<td><div class="val">33.4</div><div class="delta">🟡→ +1.0</div></td>
+<td class="bsell">—</td>
+</tr>
+
+<!-- RANK 3 -->
+<tr class="section-bar"><td colspan="18">Rank 3 · Platform AUA, closing (£bn) <span class="nature">— snapshot, position-to-position, own disclosure grain</span></td></tr>
+<tr class="period-strip"><td>disclosure grain →</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td></tr>
+<tr class="value-row">
+<td class="lblcell">Platform AUA</td>
+<td><div class="val">63.5</div><div class="delta">—</div></td>
+<td><div class="val">64.1</div><div class="delta pos">🟢↗</div></td>
+<td><div class="val">66.3</div><div class="delta pos">🟢↗</div></td>
+<td><div class="val">68.6</div><div class="delta pos">🟢↗</div></td>
+<td><div class="val">69.8</div><div class="delta pos">🟢↗</div></td>
+<td><div class="val">70.9</div><div class="delta pos">🟢↗</div></td>
+<td><div class="val">76.2</div><div class="delta pos">🟢↗</div></td>
+<td><div class="val">80.3</div><div class="delta pos">🟢↗</div></td>
+<td><div class="val">83.7</div><div class="delta pos">🟢↗</div></td>
+<td><div class="val">86.5</div><div class="delta pos">🟢↗</div></td>
+<td><div class="val">89.5</div><div class="delta pos">🟢↗</div></td>
+<td><div class="val">90.4</div><div class="delta pos">🟢↗</div></td>
+<td><div class="val">96.1</div><div class="delta pos">🟢↗</div></td>
+<td><div class="val">103.3</div><div class="delta pos">🟢↗</div></td>
+<td><div class="val">108.0</div><div class="delta pos">🟢↗</div></td>
+<td><div class="val">108.7</div><div class="delta pos">🟢↗</div></td>
+<td class="bsell"><div class="val">121.5</div><div class="delta pos">🟢↗</div></td>
+</tr>
+
+<!-- RANK 4 -->
+<tr class="section-bar"><td colspan="18">Rank 4 · AJ Bell Investments — AUM closing (£bn) <span class="nature">— snapshot; QonQ % shown due to base-effect deceleration watch</span></td></tr>
+<tr class="period-strip"><td>disclosure grain →</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td></tr>
+<tr class="value-row">
+<td class="lblcell">AJBI AUM</td>
+<td><div class="val">2.5</div><div class="delta">—</div></td>
+<td><div class="val">2.8</div><div class="delta pos">🟢↗ +12%</div></td>
+<td><div class="val">3.4</div><div class="delta pos">🟢↗ +21%</div></td>
+<td><div class="val">3.9</div><div class="delta pos">🟢↗ +15%</div></td>
+<td><div class="val">4.3</div><div class="delta pos">🟢↗ +10%</div></td>
+<td><div class="val">4.7</div><div class="delta pos">🟢↗ +9%</div></td>
+<td><div class="val">5.2</div><div class="delta pos">🟢↗ +11%</div></td>
+<td><div class="val">5.8</div><div class="delta pos">🟢↗ +12%</div></td>
+<td><div class="val">6.3</div><div class="delta pos">🟢↗ +9%</div></td>
+<td><div class="val">6.8</div><div class="delta pos">🟢↗ +8%</div></td>
+<td><div class="val">7.2</div><div class="delta pos">🟢↗ +6%</div></td>
+<td><div class="val">7.5</div><div class="delta pos">🟢↗ +4%</div></td>
+<td><div class="val">8.1</div><div class="delta pos">🟢↗ +8%</div></td>
+<td><div class="val">8.9</div><div class="delta pos">🟢↗ +10%</div></td>
+<td><div class="val">9.5</div><div class="delta pos">🟢↗ +7%</div></td>
+<td><div class="val">9.8</div><div class="delta pos">🟢↗ +3%</div></td>
+<td class="bsell"><div class="val">11.4</div><div class="delta pos">🟢↗ +16%</div></td>
+</tr>
+
+<!-- RANK 5 -->
+<tr class="section-bar"><td colspan="18">Rank 5 · Platform customers, closing (k) <span class="nature">— snapshot, own disclosure grain</span></td></tr>
+<tr class="period-strip"><td>disclosure grain →</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td></tr>
+<tr class="value-row">
+<td class="lblcell">Customers</td>
+<td><div class="val">417.5</div><div class="delta">—</div></td>
+<td><div class="val">425.7</div><div class="delta pos">🟢↗</div></td>
+<td><div class="val">434.4</div><div class="delta pos">🟢↗</div></td>
+<td><div class="val">455.0</div><div class="delta pos">🟢↗</div></td>
+<td><div class="val">465.6</div><div class="delta pos">🟢↗</div></td>
+<td><div class="val">476.5</div><div class="delta pos">🟢↗</div></td>
+<td><div class="val">484</div><div class="delta pos">🟢↗</div></td>
+<td><div class="val">503</div><div class="delta pos">🟢↗</div></td>
+<td><div class="val">528</div><div class="delta pos">🟢↗</div></td>
+<td><div class="val">542</div><div class="delta pos">🟢↗</div></td>
+<td><div class="val">561</div><div class="delta pos">🟢↗</div></td>
+<td><div class="val">593</div><div class="delta pos">🟢↗</div></td>
+<td><div class="val">620</div><div class="delta pos">🟢↗</div></td>
+<td><div class="val">644</div><div class="delta pos">🟢↗</div></td>
+<td><div class="val">673</div><div class="delta pos">🟢↗</div></td>
+<td><div class="val">723</div><div class="delta pos">🟢↗</div></td>
+<td class="bsell"><div class="val">762</div><div class="delta pos">🟢↗</div></td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+<details class="notes">
+<summary>Notes — Ranks 1–5</summary>
+<div class="rank-entry"><strong>Rank 1 (Net inflows):</strong> Q3FY25 shown on underlying basis (2.1) — excludes a one-off +£0.4bn D2C migration from a third-party SIPP exit; FY25 underlying total ties to 7.1bn exactly. Q4FY22 and Q4FY25 (†) are derived (FY − 9M), each cross-verified via the advised+D2C quarterly roll-forward disclosed in the following Q1 TU; the Jul-26 Q3 TU's own printed quarterly appendix ties out the Q4FY25→Q3FY26 run exactly (1.7 → 1.5 → 2.7-basis quarters), clearing the derived-only watch flags. Q3FY26 £3.0bn is a new series record, third consecutive sequential rise.</div>
+<div class="rank-entry"><strong>Rank 2 (Revenue margin):</strong> never printed at Q1/Q3 grain — structurally outside TU cadence (❌ cells are not withholds). Eight consecutive prints, zero declines, despite two consecutive years of company guidance warning of "moderation" — the calibration point of this run.</div>
+<div class="rank-entry"><strong>Rank 3 (AUA):</strong> pure confirming metric, monotonic across the full window — no independent signal beyond corroborating Rank 1.</div>
+<div class="rank-entry"><strong>Rank 4 (AJBI AUM):</strong> monotonic 🟢 but QonQ % growth has decelerated from +21% to +3% — normal base maturation on a series that has nearly quadrupled; watch-flagged, not fired — reversed at Q3FY26: +16% QoQ to £11.4bn on a record £0.8bn net-inflow quarter (2× YoY), the watch flag is cleared.</div>
+<div class="rank-entry"><strong>Rank 5 (Customers):</strong> 16 consecutive 🟢, accelerating into the latest print — Q2FY26's +50k remains the largest single-quarter add; Q3FY26 +39k is the first sequential softening in adds since Q1 (Q2 tax-year-end comp-flagged) — level still 🟢↗, adds pace to re-check at the Oct FY TU.</div>
+</details>
+
+<details class="notes">
+<summary>Turn methodology &amp; restatement basis</summary>
+<div class="rank-entry">Every Δ and Turn arrow above is computed in one script with the comparison basis hard-coded per metric type — snapshot metrics (AUA, AUM, customers) compare position-to-position at their own disclosure grain; flow metrics (net inflows) compare sequential quarter-to-quarter, with AJB's structural seasonality (Q2 tax-year-end spike, Q4 summer trough) comp-flagged rather than suppressed; rate metrics (revenue margin) compare seasonally-matched same-half/same-FY prints against a ±2.0bps band.</div>
+<div class="rank-entry"><strong>Restatement / provenance:</strong> † marks a derived cell (FY − 9M workings shown once in the Ranks 1–5 notes, second-route cross-verified; the Q4FY25→Q3FY26 derived run is now printed-appendix corroborated by the Jul-26 TU). ʳ marks a basis-restated cell (Q3FY25 net inflows shown underlying, excluding the +£0.4bn one-off D2C migration). ❌ marks a structurally-absent cell at that grain (revenue margin never prints at Q1/Q3). The later audited figure governs any company "c." estimate. The Buy/Sell (rightmost) column is bold.</div>
+</details>
+</section>
+
+<!-- ===================== §2.0 ===================== -->
+<section>
+<h2>§2.0 · Most-Recent-RNS Current-State Read — Q3 FY26 TU (23-Jul-26, Buy/Sell)</h2>
+<details class="notes">
+<summary>The four checks — workings behind the read</summary>
+<div class="rank-entry"><strong>1 · Sequential —</strong> Net inflows £2.7bn (Q2) → £3.0bn, third consecutive sequential rise, new series record. AJBI net inflows £0.8bn record. Customer adds +50k → +39k (only sequential softening, Q2 comp-flagged). <strong>🟢 Record, accelerating.</strong></div>
+<div class="rank-entry"><strong>2 · Same-type-vs-last-year —</strong> Vs Jul-25 Q3 TU: net inflows +43% (vs 2.1 underlying), gross +50%, AJBI net inflows +100%, customers +23% YoY (vs +12% at H1 — organic growth accelerating at yearly grain too), AUA +26%. <strong>🟢 Broad acceleration.</strong></div>
+<div class="rank-entry"><strong>3 · Sub-periods —</strong> Native quarterly print — nothing to derive. Split: D2C carries the flow (£2.4bn of £3.0bn, record); advised net steady at £0.6bn with record £2.3bn gross. RNS appendix corroborates the record's derived Q4FY25/Q1FY26 cells exactly. <strong>🟢 Corroborated.</strong></div>
+<div class="rank-entry"><strong>4 · Guidance-vs-prior-guide —</strong> No expectations anchor — structural for Q3 TUs, per all four in the run. <strong>G = flat.</strong> One forward item: MPS charge cut 0.15%→0.12% from 1-Oct-26 — a pre-announced, quantifiable FY27 revenue-margin reinvestment. <strong>⚪ Flat (anchor structurally absent).</strong></div>
+</details>
+
+<div class="s20-row">
+  <div class="bridge">
+    <div class="darkbar"><span class="emoji">🍺</span><span class="cav">IDIOT'S GUIDE TO THE PROFIT BRIDGE — why profit went up (£68.6m → £79.0m)</span></div>
+    <div class="bridge-rows">
+      <div class="bridge-row pos">
+        <span class="rl">💷 A fatter pot to skim</span>
+        <span class="rc">+£29.8m</span>
+        <span style="font-weight:400;">Sales rose £153.2m → £183.0m. Most of it is the little annual percentage AJ Bell takes on everyone's savings — the pot swelled to £108.7bn, so the same tiny slice cuts a much bigger cake. The slice itself even got a touch thicker (33.4p per £1,000 held, up from 32.4p).</span>
+      </div>
+      <div class="bridge-row pos">
+        <span class="rl">🎰 Jumpy markets, busy tills</span>
+        <span class="rc">n/q</span>
+        <span style="font-weight:400;">Tariff chaos and Budget nerves had customers buying and selling far more than usual — and AJ Bell clips a small fee off every single trade. Folded inside the £29.8m above; the company named it as a driver but didn't print its own number.</span>
+      </div>
+      <div class="bridge-row neg">
+        <span class="rl">📣 Shouting costs money</span>
+        <span class="rc">n/q</span>
+        <span style="font-weight:400;">The advertising and brand blitz that pulled in a record 79,000 new customers — this bill is guided to grow 28–30% across the full year, the fastest-rising cost in the shop, and they've said it'll run even harder in the second half because it's working.</span>
+      </div>
+      <div class="bridge-row neg">
+        <span class="rl">🔧 Feeding the machine</span>
+        <span class="rc">n/q</span>
+        <span style="font-weight:400;">Building the app and running the back office — tech spend guided up 20–22% for the year, everyday running costs up a calmer 7–9%. All the cost lines together ate £19.4m of the sales gain, which is why profit grew 15% while sales grew 19%.</span>
+      </div>
+    </div>
+    <div class="bridge-cap">So in one sentence: the savings pot they clip a percentage from got much bigger and busier, earning £29.8m more — then they poured nearly two-thirds of that into adverts and engineers, and still banked an extra £10.4m. Profit climbs faster when: the ad blitz eases off (they've told you it won't yet — each pound spent brings in customers worth more than a pound), and falls if jumpy markets calm down and the trading tills go quiet.</div>
+  </div>
+  <div class="state-bar up">
+    <div class="darkbar"><span class="emoji">🌡️</span><span class="cav">CURRENT STATE — the read right now</span></div>
+    <div class="sb-inner"><div>🟢 <strong>TURNING UP (held).</strong> No backward-loaded flag — the latest quarter is the strongest flow print in the series, on reported not derived figures. Note: AUA's +12% quarter includes £9.8bn (9% of opening) favourable market movement — flows are the signal, the AUA level flatters.</div></div>
+  </div>
+</div>
+</section>
+
+<!-- ===================== §3 TEXT+G ===================== -->
+<section>
+<h2>§3 · Text + G — Language Track (24/24 documents)</h2>
+<table id="text3">
+<tr><th style="width:75px;">Date</th><th class="doc-cell" style="width:130px;">Doc</th><th style="width:65px;">G</th><th>Verbatim forward-guidance phrase</th><th style="width:55px;">Score</th></tr>
+<tr><td>Jul-22</td><td class="doc-cell">Q3 TU</td><td>flat</td><td class="quote">"our long-term growth prospects remain strong … well positioned to continue growing the business and increasing our market share"</td><td>⚪</td></tr>
+<tr class="changed"><td>Dec-22</td><td class="doc-cell">FY Results</td><td class="g-raise">🟢 RAISE</td><td class="quote">"Our PBT margins are expected to increase in FY23"</td><td>0 → 🟢🟢</td></tr>
+<tr><td>Jan-23</td><td class="doc-cell">Q1 TU</td><td>flat</td><td class="quote">"We remain positive about the growth prospects … very well positioned to continue growing our market share"</td><td>⚪</td></tr>
+<tr><td>Apr-23</td><td class="doc-cell">Q2 TU</td><td>flat</td><td class="quote">"continuing to capitalise on the long-term growth opportunity ahead of us in both the advised and D2C markets"</td><td>⚪</td></tr>
+<tr><td>May-23</td><td class="doc-cell">H1 Results</td><td>flat</td><td class="quote">"we expect full-year revenue margins to be similar to those achieved in the first half … a slight compression in revenue margins beyond FY23" <em>(never materialised)</em></td><td>⚪</td></tr>
+<tr><td>Jul-23</td><td class="doc-cell">Q3 TU</td><td>flat</td><td class="quote">"significant opportunities for growth … well positioned to capitalise on these" <em>(first "moderation in [advised] transfer activity" — operational, not profit-line)</em></td><td>⚪</td></tr>
+<tr><td>Oct-23</td><td class="doc-cell">FY TU</td><td>flat</td><td class="quote">"The long-term growth drivers of the investment platform market remain strong"</td><td>⚪</td></tr>
+<tr><td>Dec-23</td><td class="doc-cell">FY Results</td><td>flat</td><td class="quote">"we expect this [cost] growth rate to moderate to around 15% … lower levels of cost growth in the medium term"</td><td>⚪</td></tr>
+<tr><td>Jan-24</td><td class="doc-cell">Q1 TU</td><td>flat</td><td class="quote">"this strong start to the year provides good momentum … we remain focused on the long-term growth opportunity"</td><td>⚪</td></tr>
+<tr><td>Apr-24</td><td class="doc-cell">Q2 TU</td><td>flat</td><td class="quote">"the growth opportunity for the platform market remains significant … supporting our long-term growth ambitions"</td><td>⚪</td></tr>
+<tr class="changed"><td>May-24</td><td class="doc-cell">H1 Results</td><td class="g-raise">🟢 RAISE</td><td class="quote">"both revenue and PBT will be higher than we had anticipated back in December" <em>(H1 margins flagged elevated, H2 moderation comp-flagged, not a cut)</em></td><td>0 → 🟢🟢</td></tr>
+<tr><td>Jul-24</td><td class="doc-cell">Q3 TU</td><td>flat</td><td class="quote">"We enter the final quarter … with strong momentum … an excellent position to capture further market share gains"</td><td>⚪</td></tr>
+<tr><td>Oct-24</td><td class="doc-cell">FY TU</td><td>flat</td><td class="quote">"the upcoming Budget has introduced unhelpful uncertainty, we remain positive about the outlook"</td><td>⚪</td></tr>
+<tr class="changed"><td>Dec-24</td><td class="doc-cell">FY Results</td><td class="g-cut">🔴 CUT</td><td class="quote">"In FY25, we expect our revenue margins to moderate slightly … sustainable beyond 2025" <em>(serial-sandbag #1 — subsequently beaten)</em></td><td>0 → 🔴</td></tr>
+<tr><td>Jan-25</td><td class="doc-cell">Q1 TU</td><td>flat</td><td class="quote">"The strong start to the year positions us well … well-placed to continue our strong growth" <em>(pre-Budget withdrawals "normalised quickly")</em></td><td>⚪</td></tr>
+<tr><td>Apr-25</td><td class="doc-cell">Q2 TU</td><td>flat</td><td class="quote">"There remains a significant structural growth opportunity … to drive long-term growth" <em>(post-quarter tariff volatility named, framed as raising trading activity)</em></td><td>⚪</td></tr>
+<tr class="changed"><td>May-25</td><td class="doc-cell">H1 Results</td><td class="g-raise">🟢 RAISE</td><td class="quote">"full-year revenue and PBT anticipated to be higher than that previously guided … higher cost guidance … more than offset by increases to full-year revenue margin guidance"</td><td>0 → 🟢🟢</td></tr>
+<tr><td>Jul-25</td><td class="doc-cell">Q3 TU</td><td>flat</td><td class="quote">"We enter the final quarter with strong momentum which underpins our confidence in the full year performance"</td><td>⚪</td></tr>
+<tr><td>Oct-25</td><td class="doc-cell">FY TU</td><td>flat</td><td class="quote">"Speculation over pension taxation ahead of the November Budget … creates damaging uncertainty for customers and advisers" <em>(recurring seasonal Budget caution — calibration, not a first flag)</em></td><td>⚪</td></tr>
+<tr class="changed"><td>Dec-25</td><td class="doc-cell">FY Results</td><td class="g-cut">🔴 CUT</td><td class="quote">"In FY26, we expect our revenue margins to moderate slightly … PBT margin expansion beyond FY26" <em>(serial-sandbag #2 — already reversed by H1FY26)</em></td><td>0 → 🔴</td></tr>
+<tr><td>Jan-26</td><td class="doc-cell">Q1 TU</td><td>flat</td><td class="quote">"We have started the year with strong momentum … well-placed to deliver on this opportunity" <em>(Budget-driven +£500m pension withdrawals — recurring/seasonal, calibrated)</em></td><td>⚪</td></tr>
+<tr><td>Apr-26</td><td class="doc-cell">Q2 TU</td><td>flat</td><td class="quote">"position us well to continue to invest for long-term, sustainable growth" <em>(record 50k customers / £2.7bn net inflows)</em></td><td>⚪</td></tr>
+<tr class="changed"><td>May-26</td><td class="doc-cell">H1 Results</td><td class="g-raise">🟢 RAISE</td><td class="quote">"We now expect full-year revenue margin, PBT and PBT margin to be higher than previously guided"</td><td>0 → 🟢🟢</td></tr>
+<tr><td>Jul-26</td><td class="doc-cell bsell">Q3 TU — <strong>Buy/Sell</strong></td><td>flat</td><td class="quote">"We have entered the final quarter with strong momentum … positions us well to continue increasing our share of this fast-growing market" <em>(same boilerplate family as Jul-23/24/25 — calibrated)</em></td><td>⚪</td></tr>
+</table>
+<p class="methodology"><strong>G-column credibility scan:</strong> every "moderate slightly" December guide since FY24 has been beaten by the following May — a three-year serial-sandbag pattern that discounts the CUTs and credits the latest RAISE. No Text score ≤ −1 anywhere in the 24-print run; the Text leg of the 2-of-3 trigger never independently fires this run.</p>
+</section>
+
+<!-- ===================== §4 DRIFT ===================== -->
+<section>
+<h2>§4 · Drift — what they've gone quiet about</h2>
+<p class="methodology" style="margin-top:-8px;margin-bottom:14px;">Which numbers get shared, hedged, or dropped, document by document — going quiet is the signal (framework: disclosure matrix; Drift is trigger condition 3).</p>
+<p class="methodology">Manifest count = 24. Drift column count = 24. Match confirmed. Click a column header to highlight every column sharing that period-type key.</p>
+<div class="gridwrap">
+<table id="drift">
+<tr>
+<th>Metric</th>
+<th data-type="Q3TU">Q3TU<br>Jul22</th><th data-type="FYR">FYR<br>Dec22</th>
+<th data-type="Q1TU">Q1TU<br>Jan23</th><th data-type="Q2TU">Q2TU<br>Apr23</th><th data-type="H1R">H1R<br>May23</th><th data-type="Q3TU">Q3TU<br>Jul23</th><th data-type="FYTU">FYTU<br>Oct23</th><th data-type="FYR">FYR<br>Dec23</th>
+<th data-type="Q1TU">Q1TU<br>Jan24</th><th data-type="Q2TU">Q2TU<br>Apr24</th><th data-type="H1R">H1R<br>May24</th><th data-type="Q3TU">Q3TU<br>Jul24</th><th data-type="FYTU">FYTU<br>Oct24</th><th data-type="FYR">FYR<br>Dec24</th>
+<th data-type="Q1TU">Q1TU<br>Jan25</th><th data-type="Q2TU">Q2TU<br>Apr25</th><th data-type="H1R">H1R<br>May25</th><th data-type="Q3TU">Q3TU<br>Jul25</th><th data-type="FYTU">FYTU<br>Oct25</th><th data-type="FYR">FYR<br>Dec25</th>
+<th data-type="Q1TU">Q1TU<br>Jan26</th><th data-type="Q2TU">Q2TU<br>Apr26</th><th data-type="H1R">H1R<br>May26</th><th data-type="Q3TU">Q3TU<br>Jul26</th>
+</tr>
+<tr><td>Net inflows</td>
+<td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td>
+<td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td>
+<td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td>
+<td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td>
+</tr>
+<tr><td>Revenue margin</td>
+<td class="chk na">—</td><td class="chk">✅</td><td class="chk na">—</td><td class="chk na">—</td><td class="chk">✅</td><td class="chk na">—</td><td class="chk na">—</td><td class="chk">✅</td>
+<td class="chk na">—</td><td class="chk na">—</td><td class="chk">✅</td><td class="chk na">—</td><td class="chk na">—</td><td class="chk">✅</td>
+<td class="chk na">—</td><td class="chk na">—</td><td class="chk">✅</td><td class="chk na">—</td><td class="chk na">—</td><td class="chk">✅</td>
+<td class="chk na">—</td><td class="chk na">—</td><td class="chk">✅</td><td class="chk na">—</td>
+</tr>
+<tr><td>AUA</td>
+<td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td>
+<td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td>
+<td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td>
+<td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td>
+</tr>
+<tr><td>AJBI AUM</td>
+<td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk qual">🟡</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td>
+<td class="chk">✅</td><td class="chk">✅</td><td class="chk qual">🟡</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td>
+<td class="chk">✅</td><td class="chk">✅</td><td class="chk qual">🟡</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td>
+<td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td>
+</tr>
+<tr><td>Customers</td>
+<td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td>
+<td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td>
+<td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td>
+<td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td>
+</tr>
+<tr><td>Retention rate</td>
+<td class="chk na">—</td><td class="chk">✅</td><td class="chk na">—</td><td class="chk qual">🟡</td><td class="chk">✅</td><td class="chk na">—</td><td class="chk na">—</td><td class="chk">✅</td>
+<td class="chk na">—</td><td class="chk na">—</td><td class="chk">✅</td><td class="chk na">—</td><td class="chk na">—</td><td class="chk">✅</td>
+<td class="chk na">—</td><td class="chk na">—</td><td class="chk">✅</td><td class="chk na">—</td><td class="chk na">—</td><td class="chk">✅</td>
+<td class="chk na">—</td><td class="chk na">—</td><td class="chk">✅</td><td class="chk na">—</td>
+</tr>
+</table>
+</div>
+<details class="notes">
+<summary>Notes</summary>
+<div class="rank-entry">First note (latest column, Q3TU Jul26): nothing withheld, nothing newly qualitative; disclosure expansion — advised-vs-D2C customer split newly headlined in the bullets (previously table-only), start date Jul-26. Prior latest-column note (H1FY26): retention rate 94.1%→94.6% (FY25→H1FY26), disclosed continuously — a minor confirming green shoot, not a disclosure event. AJBI AUM's 🟡 cells mark periods where AUM was quantified but the net-inflow sub-figure wasn't separately headlined that period (level-of-detail choice, not a cadence break — AUM itself is never missing).</div>
+</details>
+</section>
+
+<!-- ===================== B/S SWEEP + VERDICT NARRATIVE ===================== -->
+<section>
+<h2>Balance-sheet sweep &amp; verdict detail</h2>
+<div class="prose" style="font-size:13px; line-height:1.6;">
+<p><strong>Solvency grep:</strong> clean across all 8 results documents — no going-concern qualification, no material uncertainty, no covenant language beyond boilerplate ICARA text; AJB carries no debt facility. <strong>Tier 1:</strong> none. <strong>Tier 2:</strong> none fired (2+ required) — logged only: regulatory capital surplus has fallen every year disclosed (222%→206%→157%, FY23–FY25) and cash balances have dipped two periods running (£196.7m→£188.2m→£167.6m), both consistently attributed to accelerating shareholder distributions (buybacks plus a 21-year unbroken dividend-growth streak) rather than earnings or liquidity stress — both remain comfortably above stated requirements.</p>
+<p><strong>Wedge check:</strong> H1FY26 is the only period with a statutory/underlying split — statutory PBT £92.8m vs underlying £79.0m, the gap a £13.8m net exceptional gain from the completed Platinum SIPP/SSAS disposal (profit on disposal £21.4m). One-off, fully disclosed, closing — nothing rendered. FY24 (£6.2m one-off customer-redress provision) and FY25 (£1.1m disposal transaction costs) exceptional items were each one-off and non-recurring.</p>
+</div>
+<div class="note-flag">No B/S flag, no Tier-1 overlay. No leadership transition inside the recent window (Andy Bell → Michael Summersgill handover completed Oct-2022, fully absorbed at the manifest's start).</div>
+</section>
+
+<footer class="src">Built from 24 AJ Bell plc RNS documents (21-Jul-2022 → 23-Jul-2026); Q3 FY26 TU folded in as an incremental read, chat-approved content only, no re-derivation at build. Limited mode — no ShareScope/consensus datablock supplied this run.</footer>
+
+<script>
+(function(){
+  // Quarter-header click-highlight on the §2 grid — matches ALL columns of that quarter type
+  var qHeads = document.querySelectorAll('table.spine th.qtr-head');
+  var grid = document.getElementById('grid');
+  qHeads.forEach(function(h, idx){
+    h.addEventListener('click', function(){
+      var q = h.getAttribute('data-q');
+      var active = h.classList.contains('hl');
+      qHeads.forEach(function(x){ x.classList.remove('hl'); });
+      // column index within the header row (1-based, offset by 1 for label col)
+      var allHeads = Array.prototype.slice.call(qHeads);
+      if(!active){
+        allHeads.forEach(function(x, i){
+          if(x.getAttribute('data-q') === q){ x.classList.add('hl'); }
+        });
+      }
+    });
+  });
+
+  // Drift matrix: click a header, highlight every column sharing that period-type key
+  var driftHeads = document.querySelectorAll('#drift th[data-type]');
+  driftHeads.forEach(function(h){
+    h.addEventListener('click', function(){
+      var t = h.getAttribute('data-type');
+      var active = h.classList.contains('hl');
+      driftHeads.forEach(function(x){ x.classList.remove('hl'); });
+      if(!active){
+        driftHeads.forEach(function(x){ if(x.getAttribute('data-type')===t){ x.classList.add('hl'); } });
+      }
+    });
+  });
+
+  // Text+G Doc-column pink click-highlight
+  var docCells = document.querySelectorAll('#text3 td.doc-cell');
+  docCells.forEach(function(c){
+    c.addEventListener('click', function(){ c.classList.toggle('hl'); });
+  });
+})();
+</script>
+
+<script type="application/json" id="drift-entry">{
+  "ticker": "AJB",
+  "company": "AJ Bell plc",
+  "direction": "up",
+  "headline": "Q3 TU prints record £3.0bn net inflows (+43% YoY), third straight sequential rise; H1's guidance RAISE stands; MPS fee cut pre-announces an FY27 margin headwind.",
+  "trigger": "2-of-3 (green-shoot): sequential growth resuming/accelerating + G-RAISE at H1 (May-26)",
+  "alert": true,
+  "rns_type": "Q3 TU",
+  "rns_date": "2026-07-23",
+  "build_date": "2026-07-29",
+  "spec_version": "v3.16",
+  "next_test": "Oct FY TU: Q4 inflows vs summer-trough norm, customer-add pace after Q3's −11k dip; Dec-26: does sandbag #3 arrive, now with a real anchor (MPS 0.15%→0.12% cut from 1-Oct-26)?",
+  "url": "AJB.html"
+}</script>
+
+</body>
+</html>
