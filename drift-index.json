@@ -182,6 +182,20 @@
       "spec_version": "v3.16",
       "next_test": "Sep-2026 results: operating margin, organic growth, and the order book's stated basis.",
       "url": "ALU.html"
+    },
+    {
+      "ticker": "W7L",
+      "company": "Warpaint London plc",
+      "direction": "down",
+      "headline": "First guidance cut in four years was itself missed; latest AGM withholds its usual H1 sales figure while claiming expectations unchanged.",
+      "trigger": "Hard/G decline + explicit guidance CUT (condition 1) and language falling from repeated highs to -3 (condition 2) = 2-of-3; Drift AGM-disclosure withhold corroborates as watch-flag.",
+      "alert": true,
+      "rns_type": "AGM Statement",
+      "rns_date": "2026-06-16",
+      "build_date": "2026-07-29",
+      "spec_version": "v3.16",
+      "next_test": "H1 FY26 results (~Sep-26) must show organic revenue and adjusted EBITDA growth resuming to break the down-cycle.",
+      "url": "W7L.html"
     }
   ]
 }
