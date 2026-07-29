@@ -126,6 +126,20 @@
       "spec_version": "v3.16",
       "next_test": "H1 FY27 TU (Oct-26): organic orders Q2 ≥+10%? Controls organic sales positive? Proforma gearing tracking to 1.8x?",
       "url": "DSCV.html"
+    },
+    {
+      "ticker": "TUNE",
+      "company": "Focusrite plc",
+      "direction": "watch",
+      "headline": "Revenue turned down in the latest half while profit and margin held — one leg each way, neither side converging to an alert.",
+      "trigger": "Deterioration 1 of 3 — parent-vs-latest-sub-period divergence only (v3.16; print-corroborated at Rank 4 by the Mar-26 TU, watch-flagged at Rank 1). Text did not fire. Drift did not fire: the ADAM Audio candidate is not a ledger metric, is qualitative not blank, and is explained. Green-shoot mirror 1 of 3. No alert. Audited 28 Jul 2026: prior Drift leg withdrawn, five grid/trail cells corrected, no arrow changed.",
+      "alert": false,
+      "rns_type": "Final Results",
+      "rns_date": "2026-06-29",
+      "build_date": "2026-07-28",
+      "spec_version": "3.16",
+      "next_test": "H1 FY27 (six months to Aug-26): Content Creation above £63.6m, and whether gross margin holds above 45%.",
+      "url": "TUNE.html"
     }
   ]
 }
