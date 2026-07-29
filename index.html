@@ -56,10 +56,14 @@ body{background:var(--bg);font-family:var(--mono);color:var(--text-primary);font
 .next b{color:var(--text-secondary);font-weight:600;}
 .open{margin-top:6px;font-size:10px;color:var(--blue);}
 .empty{padding:30px;text-align:center;color:var(--text-dim);font-size:12px;}
-.overlay{position:fixed;inset:0;background:#000000cc;z-index:300;display:none;align-items:flex-start;justify-content:center;padding:60px 16px;}
+.overlay{position:fixed;inset:0;z-index:300;display:none;align-items:flex-start;justify-content:center;padding:60px 16px;pointer-events:none;}
 .overlay.show{display:flex;}
-.modal{background:var(--surface2);border:1px solid var(--border-bright);border-radius:6px;width:100%;max-width:560px;padding:16px;}
-.modal h3{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);margin-bottom:12px;}
+.modal{background:var(--surface2);border:1px solid var(--border-bright);border-radius:6px;width:100%;max-width:560px;padding:16px;
+  pointer-events:auto;box-shadow:0 8px 40px #000000dd;position:relative;}
+.modal h3{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);margin-bottom:12px;
+  cursor:move;user-select:none;padding-right:24px;}
+.modal-x{position:absolute;top:10px;right:12px;cursor:pointer;color:var(--text-dim);font-size:14px;line-height:1;}
+.modal-x:hover{color:var(--text-primary);}
 .modal label{display:block;font-size:10px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--text-secondary);margin:12px 0 5px;}
 .modal input[type=text],.modal input[type=password],.modal textarea{
   width:100%;background:var(--surface3);border:1px solid var(--border);border-radius:3px;color:var(--text-primary);
@@ -106,8 +110,9 @@ body{background:var(--bg);font-family:var(--mono);color:var(--text-primary);font
 </div>
 
 <div class="overlay" id="up-overlay">
-  <div class="modal">
-    <h3>⬆ Upload a drift build</h3>
+  <div class="modal" id="up-modal">
+    <span class="modal-x" onclick="upClose()">✕</span>
+    <h3 id="up-drag">⬆ Upload a drift build <span style="color:var(--text-dim);font-weight:400;">(drag to move)</span></h3>
 
     <label>GitHub token</label>
     <div class="tokenrow">
@@ -326,12 +331,33 @@ function upPush(){
         .then(function(){return pos>=0;});
     })
     .then(function(updated){
-      setStatus('ok','✓ Pushed. '+entry.ticker+' '+(updated?'updated':'added')+'. Pages refreshes in ~1 min — the wall will reload in 60s.');
-      setTimeout(function(){location.reload();},60000);
+      setStatus('ok','✓ Pushed. '+entry.ticker+' '+(updated?'updated':'added')+'. You can close this — the wall will refresh itself when Pages has rebuilt (~1 min).');
+      setTimeout(function(){load();},65000);
+      setTimeout(function(){load();},150000);
     })
     .catch(function(e){setStatus('err','✗ '+e.message);})
     .finally(function(){go.disabled=false;});
 }
+
+/* drag the modal by its header */
+(function(){
+  var modal=document.getElementById('up-modal');
+  var handle=document.getElementById('up-drag');
+  var sx=0,sy=0,ox=0,oy=0,dragging=false;
+  handle.addEventListener('mousedown',function(e){
+    dragging=true;sx=e.clientX;sy=e.clientY;
+    var r=modal.getBoundingClientRect();ox=r.left;oy=r.top;
+    modal.style.position='fixed';modal.style.margin='0';
+    modal.style.left=ox+'px';modal.style.top=oy+'px';modal.style.maxWidth='560px';modal.style.width=r.width+'px';
+    e.preventDefault();
+  });
+  document.addEventListener('mousemove',function(e){
+    if(!dragging)return;
+    modal.style.left=(ox+e.clientX-sx)+'px';
+    modal.style.top=Math.max(0,(oy+e.clientY-sy))+'px';
+  });
+  document.addEventListener('mouseup',function(){dragging=false;});
+})();
 
 load();
 </script>
