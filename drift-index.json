@@ -238,6 +238,20 @@
       "spec_version": "v3.16",
       "next_test": "FY27 H1 (Nov-26): does revenue growth convert to a pre-exceptional operating profit, or does NRE-mix keep trading negative? Watch dividend cover.",
       "url": "CML.html"
+    },
+    {
+      "ticker": "DATA",
+      "company": "GlobalData plc",
+      "direction": "down",
+      "headline": "Soft-guide to low-end EBITDA consensus, and Healthcare's order book turning negative — the leading metric is fading a year ahead of the still-resilient +13% reported optical.",
+      "trigger": "2-of-3 deterioration fired undiscounted: G CUT (FY26 EBITDA to low-end consensus) + Text -2 (first negative in window). Supporting hard signal: Healthcare CFR -1% (single print, not an independent fire)",
+      "alert": true,
+      "rns_type": "H1 Trading Update",
+      "rns_date": "2026-07-09",
+      "build_date": "2026-07-29",
+      "spec_version": "v3.16",
+      "next_test": "14 Sep 2026 HY26 results — confirms or breaks the read",
+      "url": "DATA.html"
     }
   ]
 }
