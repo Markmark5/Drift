@@ -112,6 +112,20 @@
       "spec_version": "v3.14",
       "next_test": "H1 FY26 interims, late Sept 2026 — first reported test of a 31% revenue step.",
       "url": "BILN.html"
+    },
+    {
+      "ticker": "DSCV",
+      "company": "discoverIE Group plc",
+      "direction": "up",
+      "headline": "Guide lifted to \"tracking ahead\" after one quarter — orders +31% organic, book-to-bill 1.15; first multi-signal green since recovery began",
+      "trigger": "2-of-3: Condition 1 (G-RAISE, Buy/Sell RNS) + Condition 2 (Text 🟢🟢, falling-to-rising 2 consecutive prints)",
+      "alert": true,
+      "rns_type": "Q1 TU",
+      "rns_date": "2026-07-24",
+      "build_date": "2026-07-29",
+      "spec_version": "v3.16",
+      "next_test": "H1 FY27 TU (Oct-26): organic orders Q2 ≥+10%? Controls organic sales positive? Proforma gearing tracking to 1.8x?",
+      "url": "DSCV.html"
     }
   ]
 }
