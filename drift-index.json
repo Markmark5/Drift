@@ -241,16 +241,16 @@
     },
     {
       "ticker": "DATA",
-      "company": "GlobalData plc",
+      "company": "GlobalData Plc",
       "direction": "down",
-      "headline": "Soft-guide to low-end EBITDA consensus, and Healthcare's order book turning negative — the leading metric is fading a year ahead of the still-resilient +13% reported optical.",
-      "trigger": "2-of-3 deterioration fired undiscounted: G CUT (FY26 EBITDA to low-end consensus) + Text -2 (first negative in window). Supporting hard signal: Healthcare CFR -1% (single print, not an independent fire)",
+      "headline": "Underlying growth frozen at +1% three halves straight; EBITDA anchored to consensus low end, not the towards 40% recovery target.",
+      "trigger": "Conditions 1 and 2 fired: Revenue Δrate -9.1pp H1-vs-H1; Text score -5 on latest RNS",
       "alert": true,
-      "rns_type": "H1 Trading Update",
+      "rns_type": "H1 TU",
       "rns_date": "2026-07-09",
-      "build_date": "2026-07-29",
-      "spec_version": "v3.16",
-      "next_test": "14 Sep 2026 HY26 results — confirms or breaks the read",
+      "build_date": "2026-07-30",
+      "spec_version": "v4.0",
+      "next_test": "Sep-26 HY26 Full Results — watch underlying revenue vs +1%, H2 EBITDA vs implied £71.6m, Healthcare CFR",
       "url": "DATA.html"
     },
     {
