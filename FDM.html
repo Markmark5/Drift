@@ -48,16 +48,35 @@ details summary{cursor:pointer;font-weight:600}
 .cgh:first-child{margin-top:0}
 .cgarg{font-style:italic;margin-top:12px}
 .vintage{color:#888;font-size:11px;margin-top:8px}
-/* unified grid */
-#grid2{table-layout:fixed}
-.yband th{background:#f0efe9;font-size:12px;letter-spacing:.5px}
-.phead th{cursor:pointer;user-select:none}
-.phead th.hl, td.hl, #drift th.hl, #drift td.hl, #text3 td.hl, #text3 th.hl{background:#fbeed3}
-.secbar td{background:#efeee8;text-align:left;font-weight:700;padding:8px 10px}
-.secbar span{font-weight:400;color:#555;font-size:12px}
-.pstrip td{padding:2px 4px;font-size:10px;color:#666;background:#fcfbf8}
-.val{font-size:13px}
-.val .d{display:block;font-size:11.5px;margin-top:2px}
+/* ==== §2 GRID SKIN — LOCKED v4.0 ==== */
+.gridwrap{overflow-x:auto;margin-bottom:16px}
+table.grid{table-layout:fixed;width:100%;min-width:1000px;border-collapse:collapse;font-size:12.5px}
+table.grid th,table.grid td{border:1px solid var(--line);text-align:center;padding:7px 4px;vertical-align:top}
+table.grid col.lab{width:190px}
+table.grid col.per{width:calc((100% - 190px)/9)}
+.yband{background:#efede7;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:700}
+th.phead{cursor:pointer;user-select:none;font-size:11.5px;background:var(--soft)}
+th.phead:hover{background:#eceae4}
+th.phead.hl{background:#fbeed3}
+th.lab,td.lab{text-align:left !important}
+.secbar td{background:var(--ink);color:#fff;text-align:left !important;font-size:11.5px;letter-spacing:.07em;font-weight:700;padding:7px 9px}
+.secbar .nat{font-weight:400;letter-spacing:.02em;color:#c9c6bd;text-transform:none}
+.strip td{padding:2px 4px;font-size:10px;color:var(--mute,#5f5c54);background:#fbfaf7;letter-spacing:.05em}
+.strip td.lab{font-style:italic}
+.vrow td{background:#fff}
+.vrow td.lab{color:var(--mute,#5f5c54);font-style:italic;font-size:11.5px}
+.val{font-weight:700;display:block;font-size:13px}
+.val .neg{color:var(--redb)}
+.delta{display:block;font-size:11px;color:var(--mute,#5f5c54);margin-top:2px}
+.delta.neg{color:var(--redb)}
+tr.agg td{background:#fff;border-top:2px solid var(--ink);color:var(--mute,#5f5c54);font-size:11.5px;padding:6px 4px}
+tr.agg td.lab{font-style:italic}
+tr.agg .aval{font-weight:700;color:var(--mute,#5f5c54)}
+tr.agg .anote{display:inline;font-size:10.5px;margin-left:5px}
+td.bs-col{background:#fcfbf8 !important}
+td.bs-col .val{font-weight:800}
+th.bs-col{font-weight:800}
+td.hl,#drift td.hl,#text3 td.hl,#text3 th.hl,#drift th.hl{background:#fbeed3}
 .bscol{font-weight:700}
 /* §2.0 flex row */
 .row20{display:flex;gap:18px;align-items:stretch;margin:0 0 16px;flex-wrap:wrap}
@@ -70,13 +89,13 @@ details summary{cursor:pointer;font-weight:600}
 .brow.g .bcon{color:var(--grnb)} .brow.r .bcon{color:var(--redb)} .brow.a .bcon{color:var(--amber)}
 .bcap{background:#fafafa;border-top:1px solid var(--line);padding:10px 12px;font-size:11px;color:#555;line-height:1.55}
 .statebar{flex:1 1 420px;border:2px solid var(--amber);background:var(--amb);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
-.statebar .inner{padding:14px 16px;font-size:13px;line-height:1.6;display:flex;align-items:center;flex:1}
+.statebar .inner{padding:14px 16px;font-size:13px;line-height:1.6;display:flex;align-items:flex-start;flex:1}
 #drift{font-size:12px}
 #drift th{cursor:pointer}
 #drift td:first-child,#grid2 td:first-child,#grid2 th:first-child{text-align:left}
 #text3 td.phrase{text-align:left}
 #text3 td.gm{text-align:left;font-size:10.5px;line-height:1.45}
-#text3 tr.chg td{background:#f5efe2}
+#text3 tr.chg td{background:#faf8f5}
 #text3 td.doccell{cursor:pointer;background:#fdf1f4;font-size:11.5px;line-height:1.25}
 .met{color:var(--grnb)} .miss{color:var(--redb)}
 </style>
@@ -137,7 +156,7 @@ details summary{cursor:pointer;font-weight:600}
 <table>
 <tr><th>Rank</th><th>Metric</th><th>Type</th><th style="text-align:left">Why it leads for FDM</th><th>Cadence</th><th>Status this run</th></tr>
 <tr><td>1</td><td>Consultants assigned to clients</td><td>Snapshot</td><td style="text-align:left">Revenue = deployed heads × day rate; disclosed in every RNS; led the FY23–25 revenue collapse by 2–3 quarters; the company's own headline metric and the house broker's stated lead indicator</td><td>Every RNS (~4-monthly)</td><td>Turning: flat Oct-25→Dec-25; −2.1% to Apr-26 vs −8.2% same span prior year</td></tr>
-<tr><td>2</td><td>Coaching completions &amp; consultants in training</td><td>Flow (supply)</td><td style="text-align:left">Management commits training capacity ahead of expected demand; the Nov-25 "cautiously increased" volume in training is the first supply expansion since 2022 — the earliest management-action signal in the record</td><td>H1/FY quantified; TU qualitative</td><td>Group still down (828 vs 877); North America H2 218 vs H1 114 — first printed reversal</td></tr>
+<tr><td>2</td><td>Coaching completions &amp; consultants in training</td><td>Flow (supply)</td><td style="text-align:left">Management commits training capacity ahead of expected demand; the Nov-25 "cautiously increased" volume in training is the first supply expansion since 2022 — the earliest management-action signal in the record</td><td>H1/FY quantified; TU qualitative</td><td>Group still down (828 vs 877); H2 FY25 −1.7% like-period; NA H2 218 vs H1 114 — printed sub-period corroboration of Nov-25 training expansion</td></tr>
 <tr><td>3</td><td>Revenue</td><td>Flow</td><td style="text-align:left">Lags ranks 1–2 but earliest hard P&amp;L line; HonH sequential is the printed-figure turn test</td><td>H1/FY + FY TU pre-release</td><td>Still falling: H2 FY25 £80.4m†, −17.4% HonH</td></tr>
 <tr><td>4</td><td>Adjusted PBT</td><td>Flow</td><td style="text-align:left">Operational scalability amplifies revenue turns at the profit line; the guide anchors here (FY25 range £13.5–14.4m)</td><td>H1/FY</td><td>H2 FY25 £4.7m†, near-breakeven 5.8% margin</td></tr>
 <tr><td>5</td><td>Consultant utilisation rate</td><td>Rate</td><td style="text-align:left">Slack indicator: the 97.5%→92.8% fall led the FY24 profit collapse; recovery above ~93% would confirm demand absorbing supply</td><td>H1/FY</td><td>Flat: 92.7% FY25 vs 92.9% FY24 (inside ±2.0pp band)</td></tr>
@@ -146,92 +165,227 @@ details summary{cursor:pointer;font-weight:600}
 Bands: H-grain rate ±2.0pp; no quarterly financials exist, so no Q-grain band is set this run. Proposed ledger change for the next build: new clients secured (74→47→52→45) tracks demand breadth and is quantified at every H1/FY — candidate rank-5 swap against utilisation.
 </details>
 
-<!-- ================= §2 UNIFIED FORWARD GRID ================= -->
-<h2>§2 · Unified Forward Grid — H-grain spine (9-cell: 1 label + 8 H1/FY columns, plus H1 FY26 to date)</h2>
-<table id="grid2">
-<colgroup><col style="width:190px"><col span="9" style="width:calc((100% - 190px)/9)"></colgroup>
-<tr class="yband"><th></th><th colspan="2">FY22</th><th colspan="2">FY23</th><th colspan="2">FY24</th><th colspan="2">FY25</th><th>FY26</th></tr>
-<tr class="phead"><th>Period</th><th data-p="H1">H1</th><th data-p="H2">H2</th><th data-p="H1">H1</th><th data-p="H2">H2</th><th data-p="H1">H1</th><th data-p="H2">H2</th><th data-p="H1">H1</th><th data-p="H2">H2</th><th data-p="H1">H1 (to date)</th></tr>
+<!-- ================= §2 UNIFIED FORWARD GRID v4.0 ================= -->
+<h2>§2 · Unified Forward Grid</h2>
+<p class="subnote">H-grain spine · FY22–FY25 · 8 sub-period columns (H1/H2) · Buy/Sell column bold · click any period header to highlight that half across all ranks</p>
+<div class="gridwrap">
+<table class="grid" id="grid2">
+<colgroup>
+  <col class="lab">
+  <col class="per"><col class="per">
+  <col class="per"><col class="per">
+  <col class="per"><col class="per">
+  <col class="per"><col class="per">
+  <col class="per bs-col">
+</colgroup>
+<!-- Year band -->
+<tr class="yband">
+  <th class="lab"></th>
+  <th colspan="2">FY 2022</th>
+  <th colspan="2">FY 2023</th>
+  <th colspan="2">FY 2024</th>
+  <th colspan="2">FY 2025</th>
+  <th colspan="1">FY 2026</th>
+</tr>
+<!-- Period header -->
+<tr>
+  <th class="lab"></th>
+  <th class="phead" data-p="H1">H1</th>
+  <th class="phead" data-p="H2">H2</th>
+  <th class="phead" data-p="H1">H1</th>
+  <th class="phead" data-p="H2">H2</th>
+  <th class="phead" data-p="H1">H1</th>
+  <th class="phead" data-p="H2">H2</th>
+  <th class="phead" data-p="H1">H1</th>
+  <th class="phead" data-p="H2">H2 †</th>
+  <th class="phead bs-col" data-p="H1">H1</th>
+</tr>
 
-<tr class="secbar"><td colspan="10">Rank 1 — Consultants assigned to clients <span>· snapshot, position-to-position at its own ~4-monthly disclosure grain</span></td></tr>
-<tr class="pstrip"><td></td><td>Jun-22</td><td>Oct / Dec-22</td><td>Apr / Jun-23</td><td>Oct / Dec-23</td><td>Apr / Jun-24</td><td>Oct / Dec-24</td><td>Apr / Jun-25</td><td>Oct / Dec-25</td><td>Apr-26</td></tr>
-<tr><td>Value · Δ seq · Turn</td>
-<td class="val">4,703<span class="d">—</span></td>
-<td class="val">5,014 / 4,905<span class="d"><span class="neg">−2.2%</span> 🔴↘</span></td>
-<td class="val">4,774 / 4,602<span class="d"><span class="neg">−3.6%</span> 🔴↘</span></td>
-<td class="val">4,136 / 3,892<span class="d"><span class="neg">−5.9%</span> 🔴↘</span></td>
-<td class="val">3,543 / 3,469<span class="d"><span class="neg">−2.1%</span> 🔴↘</span></td>
-<td class="val">2,906 / 2,578<span class="d"><span class="neg">−11.3%</span> 🔴↘</span></td>
-<td class="val">2,366 / 2,173<span class="d"><span class="neg">−8.2%</span> 🔴↘</span></td>
-<td class="val">2,003 / 2,003<span class="d">0.0% 🟡→</span></td>
-<td class="val bscol">1,961<span class="d"><span class="neg">−2.1%</span> 🟡→</span></td></tr>
+<!-- ===== RANK 1 — Consultants assigned (SNAPSHOT) ===== -->
+<tr class="secbar"><td colspan="9">Rank 1 — Consultants assigned to clients <span class="nat">· snapshot — position-to-position at own ~4-monthly disclosure grain</span></td></tr>
+<tr class="strip">
+  <td class="lab">Position at</td>
+  <td>Jun-22</td><td>Dec-22</td>
+  <td>Jun-23</td><td>Dec-23</td>
+  <td>Jun-24</td><td>Dec-24</td>
+  <td>Jun-25</td><td>Dec-25</td>
+  <td class="bs-col">Apr-26</td>
+</tr>
+<tr class="vrow">
+  <td class="lab">Value · Δ seq · Turn</td>
+  <!-- H1 FY22 — first in series -->
+  <td><span class="val">4,703</span><span class="delta">—</span></td>
+  <!-- H2 FY22 -->
+  <td><span class="val">4,905</span><span class="delta neg">−2.2% 🔴↘</span></td>
+  <!-- H1 FY23 -->
+  <td><span class="val">4,602</span><span class="delta neg">−6.2% 🔴↘</span></td>
+  <!-- H2 FY23 -->
+  <td><span class="val">3,892</span><span class="delta neg">−15.5% 🔴↘</span></td>
+  <!-- H1 FY24 -->
+  <td><span class="val">3,469</span><span class="delta neg">−10.9% 🔴↘</span></td>
+  <!-- H2 FY24 -->
+  <td><span class="val">2,578</span><span class="delta neg">−25.7% 🔴↘</span></td>
+  <!-- H1 FY25 -->
+  <td><span class="val">2,173</span><span class="delta neg">−15.7% 🔴↘</span></td>
+  <!-- H2 FY25 -->
+  <td><span class="val">2,003</span><span class="delta">−7.8% 🟡→</span></td>
+  <!-- H1 FY26 BS -->
+  <td class="bs-col"><span class="val">1,961</span><span class="delta neg">−2.1% 🟡→</span></td>
+</tr>
+<tr class="agg">
+  <td class="lab">FY-end position</td>
+  <td colspan="2"><span class="aval">4,905</span><span class="anote">—</span></td>
+  <td colspan="2"><span class="aval">3,892</span><span class="anote">−20.7%</span></td>
+  <td colspan="2"><span class="aval">2,578</span><span class="anote">−33.8%</span></td>
+  <td colspan="2"><span class="aval">2,003</span><span class="anote">−22.3%</span></td>
+  <td colspan="1"><span class="aval">1,961</span><span class="anote">—</span></td>
+</tr>
 
-<tr class="secbar"><td colspan="10">Rank 2 — Coaching completions <span>· cumulative flow, like-period comparison (H1-vs-H1, FY-vs-FY)</span></td></tr>
-<tr class="pstrip"><td></td><td>H1</td><td>FY</td><td>H1</td><td>FY</td><td>H1</td><td>FY</td><td>H1</td><td>FY</td><td>—</td></tr>
-<tr><td>Value · Δ like-period · Turn</td>
-<td class="val">1,584<span class="d">+55% 🟢↗</span></td>
-<td class="val">3,179<span class="d">+32% 🟢↗</span></td>
-<td class="val">911<span class="d"><span class="neg">−43%</span> 🔴↘</span></td>
-<td class="val">1,338<span class="d"><span class="neg">−58%</span> 🔴↘</span></td>
-<td class="val">466<span class="d"><span class="neg">−49%</span> 🔴↘</span></td>
-<td class="val">877<span class="d"><span class="neg">−35%</span> 🔴↘</span></td>
-<td class="val">424<span class="d"><span class="neg">−9%</span> 🔴↘</span></td>
-<td class="val">828<span class="d"><span class="neg">−6%</span> 🔴↘</span></td>
-<td class="val bscol">—</td></tr>
+<!-- ===== RANK 2 — Coaching completions (FLOW) ===== -->
+<tr class="secbar"><td colspan="9">Rank 2 — Coaching completions <span class="nat">· cumulative flow, like-period comparison (H1-vs-H1, FY-vs-FY)</span></td></tr>
+<tr class="strip">
+  <td class="lab">Period</td>
+  <td>H1</td><td>H2 †</td>
+  <td>H1</td><td>H2 †</td>
+  <td>H1</td><td>H2 †</td>
+  <td>H1</td><td>H2 †</td>
+  <td class="bs-col">—</td>
+</tr>
+<tr class="vrow">
+  <td class="lab">Completions · (YoY%) · Turn</td>
+  <!-- H1 FY22 — first, no prior -->
+  <td><span class="val">1,584</span><span class="delta">—</span></td>
+  <!-- H2 FY22 † -->
+  <td><span class="val">1,595 †</span><span class="delta">—</span></td>
+  <!-- H1 FY23 -->
+  <td><span class="val">911 <span class="neg">(−42.5%)</span></span><span class="delta neg">🔴↘</span></td>
+  <!-- H2 FY23 † -->
+  <td><span class="val">427 † <span class="neg">(−73.2%)</span></span><span class="delta neg">🔴↘</span></td>
+  <!-- H1 FY24 -->
+  <td><span class="val">466 <span class="neg">(−48.8%)</span></span><span class="delta neg">🔴↘</span></td>
+  <!-- H2 FY24 † -->
+  <td><span class="val">411 † <span class="neg">(−3.7%)</span></span><span class="delta neg">🔴↘</span></td>
+  <!-- H1 FY25 -->
+  <td><span class="val">424 <span class="neg">(−9.0%)</span></span><span class="delta neg">🔴↘</span></td>
+  <!-- H2 FY25 † -->
+  <td><span class="val">404 † <span class="neg">(−1.7%)</span></span><span class="delta neg">🔴↘</span></td>
+  <!-- H1 FY26 BS -->
+  <td class="bs-col"><span class="val">—</span><span class="delta">outside cadence</span></td>
+</tr>
+<tr class="agg">
+  <td class="lab">FY total</td>
+  <td colspan="2"><span class="aval">3,179</span><span class="anote">—</span></td>
+  <td colspan="2"><span class="aval">1,338</span><span class="anote">−57.9%</span></td>
+  <td colspan="2"><span class="aval">877</span><span class="anote">−34.5%</span></td>
+  <td colspan="2"><span class="aval">828</span><span class="anote">−5.6%</span></td>
+  <td colspan="1"><span class="aval">—</span></td>
+</tr>
 
-<tr class="secbar"><td colspan="10">Rank 3 — Revenue £m <span>· cumulative flow, like-period Δ scored; HonH sequential shown as the printed-figure turn test</span></td></tr>
-<tr class="pstrip"><td></td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>—</td></tr>
-<tr><td>Value · Δ like / seq · Turn</td>
-<td class="val">152.8<span class="d">+16% · — 🟢↗</span></td>
-<td class="val dercell">177.2†<span class="d">+23%(FY) · +16.0% 🟢↗</span></td>
-<td class="val">179.9<span class="d">+17.7% · +1.5% 🟡→</span></td>
-<td class="val dercell">154.1†<span class="d"><span class="neg">−13.0% · −14.3%</span> 🔴↘</span></td>
-<td class="val">140.2<span class="d"><span class="neg">−22.1% · −9.0%</span> 🔴↘</span></td>
-<td class="val dercell">117.5†<span class="d"><span class="neg">−23.8% · −16.2%</span> 🔴↘</span></td>
-<td class="val">97.3<span class="d"><span class="neg">−30.6% · −17.2%</span> 🔴↘</span></td>
-<td class="val dercell">80.4†<span class="d"><span class="neg">−31.6% · −17.4%</span> 🔴↘</span></td>
-<td class="val bscol">—</td></tr>
+<!-- ===== RANK 3 — Revenue (FLOW) ===== -->
+<tr class="secbar"><td colspan="9">Rank 3 — Revenue £m <span class="nat">· cumulative flow — like-period YoY displayed; rate-change pp scored; H2 derived †</span></td></tr>
+<tr class="strip">
+  <td class="lab">Period</td>
+  <td>H1</td><td>H2 †</td>
+  <td>H1</td><td>H2 †</td>
+  <td>H1</td><td>H2 †</td>
+  <td>H1</td><td>H2 †</td>
+  <td class="bs-col">—</td>
+</tr>
+<tr class="vrow">
+  <td class="lab">£m · (YoY%) · pp</td>
+  <!-- H1 FY22 — first, no prior -->
+  <td><span class="val">152.8</span><span class="delta">—</span></td>
+  <!-- H2 FY22 † -->
+  <td><span class="val">177.2 †</span><span class="delta">—</span></td>
+  <!-- H1 FY23 — first H1 comp, no prior rate -->
+  <td><span class="val">179.9 (+17.7%)</span><span class="delta">— first 🟢↗</span></td>
+  <!-- H2 FY23 † — first H2 comp, no prior rate -->
+  <td><span class="val">154.1 † <span class="neg">(−13.0%)</span></span><span class="delta">— first 🔴↘</span></td>
+  <!-- H1 FY24 -->
+  <td><span class="val">140.2 <span class="neg">(−22.1%)</span></span><span class="delta neg">−39.8pp 🔴↘</span></td>
+  <!-- H2 FY24 † -->
+  <td><span class="val">117.5 † <span class="neg">(−23.8%)</span></span><span class="delta neg">−10.8pp 🔴↘</span></td>
+  <!-- H1 FY25 -->
+  <td><span class="val">97.3 <span class="neg">(−30.6%)</span></span><span class="delta neg">−8.5pp 🔴↘</span></td>
+  <!-- H2 FY25 † -->
+  <td><span class="val">80.4 † <span class="neg">(−31.6%)</span></span><span class="delta neg">−7.8pp 🔴↘</span></td>
+  <!-- H1 FY26 BS -->
+  <td class="bs-col"><span class="val">—</span><span class="delta">outside cadence</span></td>
+</tr>
+<tr class="agg">
+  <td class="lab">FY total £m</td>
+  <td colspan="2"><span class="aval">330.0</span><span class="anote">—</span></td>
+  <td colspan="2"><span class="aval">334.0</span><span class="anote">+1.2%</span></td>
+  <td colspan="2"><span class="aval">257.7</span><span class="anote">−22.8%</span></td>
+  <td colspan="2"><span class="aval">177.7</span><span class="anote">−31.0%</span></td>
+  <td colspan="1"><span class="aval">—</span></td>
+</tr>
 
-<tr class="secbar"><td colspan="10">Rank 4 — Adjusted PBT £m <span>· cumulative flow, like-period comparison</span></td></tr>
-<tr class="pstrip"><td></td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2† ᵇ</td><td>—</td></tr>
-<tr><td>Value · Δ like-period · Turn</td>
-<td class="val">25.0<span class="d">+14% 🟢↗</span></td>
-<td class="val dercell">27.0†<span class="d">+11%(FY) 🟢↗</span></td>
-<td class="val">26.0<span class="d">+4% 🟡→</span></td>
-<td class="val dercell">24.2†<span class="d"><span class="neg">−10.4%</span> 🔴↘</span></td>
-<td class="val">17.7<span class="d"><span class="neg">−31.9%</span> 🔴↘</span></td>
-<td class="val dercell">16.3†<span class="d"><span class="neg">−32.6%</span> 🔴↘</span></td>
-<td class="val">9.0<span class="d"><span class="neg">−49.2%</span> 🔴↘</span></td>
-<td class="val dercell">4.7†<span class="d"><span class="neg">−71.2%</span> 🔴↘</span></td>
-<td class="val bscol">—</td></tr>
+<!-- ===== RANK 4 — Adjusted PBT (EBITDA-type: margin line 2) ===== -->
+<tr class="secbar"><td colspan="9">Rank 4 — Adjusted PBT £m <span class="nat">· flow — like-period YoY displayed; rate-change pp scored; margin on line 2; H2 derived † ; ᵇ FY25 adjustment perimeter widened</span></td></tr>
+<tr class="strip">
+  <td class="lab">Period</td>
+  <td>H1</td><td>H2 †</td>
+  <td>H1</td><td>H2 †</td>
+  <td>H1</td><td>H2 †</td>
+  <td>H1</td><td>H2 † ᵇ</td>
+  <td class="bs-col">—</td>
+</tr>
+<tr class="vrow">
+  <td class="lab">£m · (YoY%) · margin · pp</td>
+  <!-- H1 FY22 -->
+  <td><span class="val">25.0</span><span class="delta">margin 16.4%<br>—</span></td>
+  <!-- H2 FY22 † -->
+  <td><span class="val">27.0 †</span><span class="delta">margin 15.2%<br>—</span></td>
+  <!-- H1 FY23 — first comp, no prior rate -->
+  <td><span class="val">26.0 (+4.0%)</span><span class="delta">margin 14.5%<br>— first 🟡→</span></td>
+  <!-- H2 FY23 † -->
+  <td><span class="val">24.2 † <span class="neg">(−10.4%)</span></span><span class="delta">margin 15.7%<br>— first 🔴↘</span></td>
+  <!-- H1 FY24 -->
+  <td><span class="val">17.7 <span class="neg">(−31.9%)</span></span><span class="delta neg">margin 12.6%<br>−35.9pp 🔴↘</span></td>
+  <!-- H2 FY24 † -->
+  <td><span class="val">16.3 † <span class="neg">(−32.6%)</span></span><span class="delta neg">margin 13.9%<br>−22.2pp 🔴↘</span></td>
+  <!-- H1 FY25 -->
+  <td><span class="val">9.0 <span class="neg">(−49.2%)</span></span><span class="delta neg">margin 9.2%<br>−17.3pp 🔴↘</span></td>
+  <!-- H2 FY25 † -->
+  <td><span class="val">4.7 † <span class="neg">(−71.2%)</span></span><span class="delta neg">margin 5.8%<br>−38.6pp 🔴↘</span></td>
+  <!-- H1 FY26 BS -->
+  <td class="bs-col"><span class="val">—</span><span class="delta">outside cadence</span></td>
+</tr>
+<tr class="agg">
+  <td class="lab">FY total £m · margin</td>
+  <td colspan="2"><span class="aval">52.0</span><span class="anote">— · margin 15.8%</span></td>
+  <td colspan="2"><span class="aval">50.2</span><span class="anote">−3.5% · margin 15.0%</span></td>
+  <td colspan="2"><span class="aval">34.0</span><span class="anote">−32.3% · margin 13.2%</span></td>
+  <td colspan="2"><span class="aval">13.7</span><span class="anote">−59.7% · margin 7.7%</span></td>
+  <td colspan="1"><span class="aval">—</span></td>
+</tr>
 
-<tr class="secbar"><td colspan="10">Rank 5 — Consultant utilisation rate % <span>· period rate, seasonally matched (H1-vs-H1, FY-vs-FY), band ±2.0pp</span></td></tr>
-<tr class="pstrip"><td></td><td>H1</td><td>FY</td><td>H1</td><td>FY</td><td>H1</td><td>FY</td><td>H1</td><td>FY</td><td>—</td></tr>
-<tr><td>Value · Δpp matched · Turn</td>
-<td class="val">97.6<span class="d">+0.7pp 🟡→</span></td>
-<td class="val">97.5<span class="d">+0.2pp 🟡→</span></td>
-<td class="val">93.4<span class="d"><span class="neg">−4.2pp</span> 🔴↘</span></td>
-<td class="val">92.8<span class="d"><span class="neg">−4.7pp</span> 🔴↘</span></td>
-<td class="val">91.5<span class="d">−1.9pp 🟡→</span></td>
-<td class="val">92.9<span class="d">+0.1pp 🟡→</span></td>
-<td class="val">91.6<span class="d">+0.1pp 🟡→</span></td>
-<td class="val">92.7<span class="d">−0.2pp 🟡→</span></td>
-<td class="val bscol">—</td></tr>
+<!-- ===== RANK 5 — Utilisation (RATE, ±2.0pp band) ===== -->
+<tr class="secbar"><td colspan="10">Rank 5 — Consultant utilisation rate % <span class="nat">· period rate, seasonally matched (H1-vs-H1, FY-vs-FY), band ±2.0pp</span></td></tr>
+<tr class="strip">
+  <td class="lab">Period</td>
+  <td>H1</td><td>FY</td>
+  <td>H1</td><td>FY</td>
+  <td>H1</td><td>FY</td>
+  <td>H1</td><td>FY</td>
+  <td class="bs-col">—</td>
+</tr>
+<tr class="vrow">
+  <td class="lab">% · Δpp matched · Turn</td>
+  <td><span class="val">97.6</span><span class="delta">—</span></td>
+  <td><span class="val">97.5</span><span class="delta">—</span></td>
+  <td><span class="val">93.4</span><span class="delta neg">−4.2pp 🔴↘</span></td>
+  <td><span class="val">92.8</span><span class="delta neg">−4.7pp 🔴↘</span></td>
+  <td><span class="val">91.5</span><span class="delta">−1.9pp 🟡→</span></td>
+  <td><span class="val">92.9</span><span class="delta">+0.1pp 🟡→</span></td>
+  <td><span class="val">91.6</span><span class="delta">+0.1pp 🟡→</span></td>
+  <td><span class="val">92.7</span><span class="delta">−0.2pp 🟡→</span></td>
+  <td class="bs-col"><span class="val">—</span><span class="delta">outside cadence</span></td>
+</tr>
+
 </table>
-
-<details><summary>Turn methodology &amp; restatement basis</summary>
-Every Δ and Turn arrow in the grid is computed in one script with the comparison rule hard-coded per metric type. <b>Snapshot</b> (Rank 1, consultants assigned) compares position-to-position at its own ~4-monthly disclosure grain. <b>Flow</b> (Ranks 2–4: coaching completions, revenue, adjusted PBT) compares like-period-to-like-period only — H1-vs-H1 and FY-vs-FY, never H1-vs-9M. <b>Rate</b> (Rank 5, utilisation) compares seasonally-matched periods against a ±2.0pp H-grain band → 🟢↗ / 🟡→ / 🔴↘. Revenue additionally carries sequential HonH as the earliest printed-figure turn test: any negative sequential fires 🔴 on level regardless of the year comparison, with comparison flags annotating and never suppressing.<br><br>
-<b>Derivations (†).</b> H2 = FY − H1, workings once: revenue 330.0−152.8=177.2, 334.0−179.9=154.1, 257.7−140.2=117.5, 177.7−97.3=80.4; adjusted PBT 52.0−25.0=27.0, 50.2−26.0=24.2, 34.0−17.7=16.3, 13.7−9.0=4.7. FDM prints no quarterly or 9M figures, so no second derivation route exists — all derived Turns are therefore watch flags until a reported sub-period corroborates.<br><br>
-<b>Basis and provenance.</b> ᵇ FY25 adjusted PBT: the adjustment perimeter widened in FY25 to exclude the £3.3m EMEA goodwill and asset impairment (2024: £nil) alongside share-plan expense and exceptional costs — a definitional change flagged per cell; no restatements (ʳ) arise in the record. The later audited figure governs each company "c." estimate: FY22 TU £330m → audited £330.0m; FY23 TU £334m → audited £334.0m; FY24 TU £258m → audited £257.7m; FY25 TU £178m → audited £177.7m. No documents are missing from the chain. The rightmost column is the Buy/Sell column (AGM, 21 May 2026) and is bold; its only grid entry is the Rank-1 snapshot, because the AGM carries no revenue or profit sub-period. Empty FY26 cells are unfilled grid slots — cadence information, not gaps.
-</details>
-
-<details><summary>Notes — Ranks 1–5</summary>
-<b>Rank 1.</b> Oct-25→Dec-25 = 0.0%, the first non-negative print since Oct-22; Apr-26 −2.1% against −8.2% and −9.0% at the same seasonal point in the two prior years — stabilisation, not yet growth.<br><br>
-<b>Rank 2.</b> North America coached 218 in H2-25 against 114 in H1-25, the company tying it to increased client demand late in the year — the first printed sub-period reversal in a scored metric; group-grain remains negative (H2† 404 vs H1 424), so this corroborates the Nov-25 training expansion without firing a group condition.<br><br>
-<b>Rank 3.</b> Six consecutive negative sequential halves with no deceleration at H-grain — the aggregate lags Rank 1 badly; H1-26 revenue above £80.4m† is the confirming print.<br><br>
-<b>Rank 4.</b> H2 FY25† margin 5.8% against H1 FY25's 9.2% — the latest sub-period is the weakest of the record, so FY25's £13.7m is backward-loaded and the exit rate into FY26 is the H2 figure, not the year.<br><br>
-<b>Rank 5.</b> Four consecutive prints at ~92% — slack held constant while volume shrank; a move above ~93% is the confirming rate signal.
-</details>
+</div>
 
 <!-- ================= §2.0 ================= -->
 <h2>§2.0 · Most-recent-RNS current-state read — AGM Statement, 21 May 2026 (Buy/Sell RNS)</h2>
@@ -252,7 +406,16 @@ Every Δ and Turn arrow in the grid is computed in one script with the compariso
   </div>
   <div class="statebar">
     <div class="darkbar"><span class="em">🌡️</span> CURRENT STATE — the read right now</div>
-    <div class="inner"><div>🟡 <b>STABLE — WATCH.</b> The metric that led FDM's collapse has stopped falling: consultants placed were flat at 2,003 from October to December 2025, then slipped just 2.1% to 1,961 by April 2026 against 8.2% over the same stretch a year earlier. Language has risen four prints running from a −3 floor, and the FY26 guide has now been reiterated three times. But no hard number has turned: revenue fell for a sixth straight half, and ⚠️ H2 FY25 profit of £4.7m† on a 5.8% margin means FY25's £13.7m was backward-loaded.</div></div>
+    <div class="inner"><div>
+      <div style="font-weight:700;margin-bottom:8px">🟡 STABLE — WATCH</div>
+      <ul style="margin:0;padding-left:18px;line-height:1.65">
+        <li>Consultants flat at 2,003 Oct→Dec-25; slipped 2.1% to 1,961 by Apr-26 vs 8.2% over the same span a year earlier.</li>
+        <li>Language risen four consecutive prints from a −3 floor — longest rising run in the record.</li>
+        <li>FY26 guide reiterated three times without revision.</li>
+        <li>No hard number has turned yet: revenue fell for a sixth straight half.</li>
+        <li>⚠️ H2 FY25 profit £4.7m† on a 5.8% margin — FY25's £13.7m was backward-loaded; this is the true run-rate entering FY26.</li>
+      </ul>
+    </div></div>
   </div>
 </div>
 
@@ -317,16 +480,38 @@ Latest column (AGM May-26): no metric newly withheld against cadence, and cash c
 
 <script>
 (function(){
-  var g=document.getElementById('grid2'),phead=g.querySelector('.phead'),pcells=phead.querySelectorAll('th[data-p]'),active=null;
-  function clearG(){g.querySelectorAll('.hl').forEach(function(e){e.classList.remove('hl');});}
-  pcells.forEach(function(th){th.addEventListener('click',function(){
-    var p=th.getAttribute('data-p'),same=(active===p);clearG();if(same){active=null;return;}
-    active=p;var idxs=[];pcells.forEach(function(t,i){if(t.getAttribute('data-p')===p)idxs.push(i+1);});
-    idxs.forEach(function(ci){phead.children[ci].classList.add('hl');
-      g.querySelectorAll('tr').forEach(function(r){
-        if(r.classList.contains('yband')||r.classList.contains('secbar'))return;
-        if(r.children[ci])r.children[ci].classList.add('hl');});});
-  });});
+  // §2 grid: click period header highlights ALL columns of that half type (H1 or H2)
+  // Uses data-p on th.phead; skips rows with colspan (agg, secbar, yband)
+  (function(){
+    var g=document.getElementById('grid2');
+    if(!g)return;
+    var allPheads=g.querySelectorAll('th.phead[data-p]');
+    var active=null;
+    function clearG(){g.querySelectorAll('.hl').forEach(function(e){e.classList.remove('hl');});}
+    allPheads.forEach(function(th){
+      th.addEventListener('click',function(){
+        var p=th.getAttribute('data-p'),same=(active===p);
+        clearG();if(same){active=null;return;}
+        active=p;
+        // find ALL column indices that carry this data-p
+        var pheadRow=th.parentElement;
+        var idxs=[];
+        Array.prototype.forEach.call(pheadRow.children,function(t,i){
+          if(t.getAttribute&&t.getAttribute('data-p')===p)idxs.push(i);
+        });
+        // highlight header cells
+        idxs.forEach(function(ci){pheadRow.children[ci].classList.add('hl');});
+        // highlight data rows — skip any row that has a colspan cell (agg/secbar/yband)
+        g.querySelectorAll('tr').forEach(function(r){
+          if(r===pheadRow)return;
+          var hasColspan=false;
+          Array.prototype.forEach.call(r.children,function(c){if(c.colSpan>1)hasColspan=true;});
+          if(hasColspan)return;
+          idxs.forEach(function(ci){if(r.children[ci])r.children[ci].classList.add('hl');});
+        });
+      });
+    });
+  })();
   var t3=document.getElementById('text3'),t3a=null;
   t3.querySelectorAll('td.doccell').forEach(function(td){td.addEventListener('click',function(){
     var k=td.getAttribute('data-rowtype'),same=(t3a===k);
