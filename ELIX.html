@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ELIX — Longitudinal Drift Tracker v3.15</title>
+<title>ELIX — Longitudinal Drift Tracker v4.0</title>
 <style>
   @font-face{
     font-family:'Caveat';
@@ -82,26 +82,35 @@
   .lt td.c,.lt th.c{text-align:center;}
 
   /* ---------- §2 unified grid ---------- */
-  .gridwrap{overflow-x:auto; border:1px solid var(--line);}
-  table.g2{table-layout:fixed; min-width:1000px; font-size:12px;}
-  table.g2 col.lab{width:150px;}
-  table.g2 th,table.g2 td{border:1px solid var(--hair);}
-  table.g2 .yb th{background:#f0f0ee; font-weight:700; font-size:11px; text-align:center; padding:5px 2px; border-color:var(--line);}
-  table.g2 .yb th.lab{background:#eaeae7; text-align:left; padding-left:10px;}
-  table.g2 .ph th{font-size:11px; font-weight:600; text-align:center; padding:6px 2px; background:#f7f7f5; cursor:pointer; user-select:none;}
-  table.g2 .ph th.lab{background:#eaeae7; cursor:default; text-align:left; padding-left:10px;}
-  table.g2 .ph th:hover:not(.lab){background:#e7eef4;}
-  .secbar td{background:#efeee9; font-weight:700; padding:8px 10px; font-size:12px; border-color:var(--line);}
-  .secbar td .nat{font-weight:400; color:var(--mut); font-size:11px; margin-left:8px;}
-  .strip th,.strip td{padding:2px 2px !important; font-size:9.5px; color:var(--mut); text-align:center; background:#fcfcfb;}
-  .strip td.lab{text-align:left; padding-left:10px !important; color:#888;}
-  .vrow td{padding:7px 3px; text-align:center; background:var(--white); line-height:1.3;}
-  .vrow td.lab{text-align:left; padding-left:10px; color:var(--mut); font-size:11px; background:#fafafa;}
-  .vrow td .val{font-weight:600; font-size:12px; display:block;}
-  .vrow td .dd{font-size:10.5px; color:var(--mut); display:block; margin-top:1px;}
-  .vrow td .dd.neg{color:var(--red);}
-  .vrow td.bs{font-weight:800;} .vrow td.bs .val{font-weight:800;}
-  .hl{background:#fff7dc !important;}
+  /* ==== §2 GRID SKIN — LOCKED v4.0 ==== */
+  .gridwrap{overflow-x:auto; margin-bottom:16px; border:1px solid var(--line);}
+  table.grid{table-layout:fixed; width:100%; min-width:1000px; border-collapse:collapse; font-size:12.5px;}
+  table.grid th, table.grid td{border:1px solid var(--line); text-align:center; padding:7px 4px; vertical-align:top;}
+  table.grid col.lab{width:190px;}
+  table.grid col.per{width:calc((100% - 190px)/8);}
+  .yband{background:#efede7; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; font-weight:700;}
+  th.phead{cursor:pointer; user-select:none; font-size:11.5px; background:var(--paper, #f7f6f2);}
+  th.phead:hover{background:#eceae4;}
+  th.lab, td.lab{text-align:left !important;}
+  .secbar td{background:var(--ink,#1a1a1a); color:#fff; text-align:left !important;
+   font-size:11.5px; letter-spacing:.07em; font-weight:700; padding:7px 9px;}
+  .secbar .nat{font-weight:400; letter-spacing:.02em; color:#c9c6bd; text-transform:none;}
+  .strip td{padding:2px 4px; font-size:10px; color:var(--mut); background:#fbfaf7; letter-spacing:.05em;}
+  .strip td.lab{font-style:italic;}
+  .vrow td{background:#fff;}
+  .vrow td.lab{color:var(--mut); font-style:italic; font-size:11.5px;}
+  .val{font-weight:700; display:block; font-size:13px;}
+  .val .neg{color:var(--red);}
+  .delta{display:block; font-size:11px; color:var(--mut); margin-top:2px;}
+  .delta.neg{color:var(--red);}
+  tr.agg td{background:#fff; border-top:2px solid var(--ink,#1a1a1a); color:var(--mut); font-size:11.5px; padding:6px 4px;}
+  tr.agg td.lab{font-style:italic;}
+  tr.agg .aval{font-weight:700; color:var(--mut);}
+  tr.agg .anote{display:inline; font-size:10.5px; margin-left:5px;}
+  td.bs-col{background:#fcfbf8 !important;}
+  td.bs-col .val{font-weight:800;}
+  th.bs-col{font-weight:800;}
+  .hl{background:#fff6d9 !important;}
   .g-up{color:var(--green);} .g-fl{color:var(--amber);} .g-dn{color:var(--red);}
 
   details.drawer{max-width:1100px; margin:14px 0 0; background:var(--card); border-radius:10px;}
@@ -247,103 +256,323 @@
   <h2 class="sec"><span class="en">§2</span>Forward Grid</h2>
   <div class="sub">All five scored metrics on a shared 8-column H1/FY spine, date order from first print (H1 22). <code>†</code> derived (FY−H1, single route — watch) · <code>ʳ</code> restated print · Buy/Sell (FY25) column bold. Click a period header (H1 / FY) to highlight every column of that type.</div>
   <div class="gridwrap">
-    <table class="g2" id="g2">
-      <colgroup><col class="lab"><col><col><col><col><col><col><col><col></colgroup>
+    <table class="grid" id="g2">
+      <!-- 9 columns: 1 label + 8 sub-period (H1/H2 pairs × 4 years) -->
+      <colgroup>
+        <col class="lab">
+        <col class="per"><col class="per"><!-- FY22 H1/H2 -->
+        <col class="per"><col class="per"><!-- FY23 H1/H2 -->
+        <col class="per"><col class="per"><!-- FY24 H1/H2 -->
+        <col class="per bs-col"><col class="per bs-col"><!-- FY25 H1/H2 (Buy/Sell) -->
+      </colgroup>
       <thead>
-        <tr class="yb">
+        <!-- Tier 1: fiscal-year band -->
+        <tr class="yband">
           <th class="lab">Metric / period</th>
-          <th colspan="2">FY22</th><th colspan="2">FY23</th><th colspan="2">FY24</th><th colspan="2">FY25</th>
+          <th colspan="2">FY22</th>
+          <th colspan="2">FY23</th>
+          <th colspan="2">FY24</th>
+          <th colspan="2" style="background:#e8edea; color:#1e7a45;">FY25 ◀ Buy/Sell</th>
         </tr>
-        <tr class="ph">
-          <th class="lab">click period →</th>
-          <th data-p="H1">H1&nbsp;22</th><th data-p="FY">FY22</th>
-          <th data-p="H1">H1&nbsp;23</th><th data-p="FY">FY23</th>
-          <th data-p="H1">H1&nbsp;24</th><th data-p="FY">FY24</th>
-          <th data-p="H1">H1&nbsp;25</th><th data-p="FY">FY25</th>
+        <!-- Tier 2: sub-period headers -->
+        <tr>
+          <th class="lab" style="cursor:default; font-size:10px; color:var(--mut);">click H1 or H2† to highlight ↓</th>
+          <th class="phead" data-p="H1">H1&nbsp;22</th>
+          <th class="phead" data-p="H2">H2†&nbsp;22</th>
+          <th class="phead" data-p="H1">H1&nbsp;23</th>
+          <th class="phead" data-p="H2">H2†&nbsp;23</th>
+          <th class="phead" data-p="H1">H1&nbsp;24</th>
+          <th class="phead" data-p="H2">H2†&nbsp;24</th>
+          <th class="phead bs-col" data-p="H1">H1&nbsp;25</th>
+          <th class="phead bs-col" data-p="H2">H2†&nbsp;25</th>
         </tr>
       </thead>
       <tbody>
-        <!-- RANK 1 -->
-        <tr class="secbar"><td colspan="9">Rank 1 · Organic revenue growth %<span class="nat">period rate — seasonally matched Δ, ±2.0pp band</span></td></tr>
-        <tr class="strip"><td class="lab">disclosure</td><td data-p="H1">H1</td><td data-p="FY">FY</td><td data-p="H1">H1</td><td data-p="FY">FY</td><td data-p="H1">H1</td><td data-p="FY">FY</td><td data-p="H1">H1</td><td data-p="FY">FY</td></tr>
+
+        <!-- ═══════════════════════════════════════════
+             RANK 1 — Organic revenue growth %
+             Rate — H1 and FY printed; H2 not disclosed
+             Seasonally matched Δ, ±2.0pp band
+             ═══════════════════════════════════════════ -->
+        <tr class="secbar"><td colspan="9">Rank 1 — Organic revenue growth %<span class="nat">· period rate · seasonally matched Δ · ±2.0pp band · H2 not disclosed or derivable</span></td></tr>
+        <tr class="strip">
+          <td class="lab">Period</td>
+          <td data-p="H1">H1</td><td data-p="H2">H2</td>
+          <td data-p="H1">H1</td><td data-p="H2">H2</td>
+          <td data-p="H1">H1</td><td data-p="H2">H2</td>
+          <td data-p="H1">H1</td><td data-p="H2">H2</td>
+        </tr>
         <tr class="vrow">
-          <td class="lab">value / Δ·turn</td>
-          <td data-p="H1"><span class="val">8%</span><span class="dd">— —</span></td>
-          <td data-p="FY"><span class="val">18%</span><span class="dd">— —</span></td>
-          <td data-p="H1"><span class="val">14%</span><span class="dd">+6pp 🟢↗</span></td>
-          <td data-p="FY"><span class="val">15%</span><span class="dd neg">−3pp 🔴↘</span></td>
-          <td data-p="H1"><span class="val">14%</span><span class="dd">±0pp 🟡→</span></td>
-          <td data-p="FY"><span class="val">13%</span><span class="dd neg">−2pp 🔴↘</span></td>
-          <td data-p="H1"><span class="val">17%</span><span class="dd">+3pp 🟢↗</span></td>
-          <td data-p="FY" class="bs"><span class="val">15.3%</span><span class="dd">+2.3pp 🟢↗</span></td>
+          <td class="lab">% · pp · turn</td>
+          <!-- FY22 -->
+          <td data-p="H1"><span class="val">8%</span><span class="delta">— first</span></td>
+          <td data-p="H2"><span class="val">—</span><span class="delta">outside cadence</span></td>
+          <!-- FY23 -->
+          <td data-p="H1"><span class="val">14%</span><span class="delta g-up">+6pp 🟢↗</span></td>
+          <td data-p="H2"><span class="val">—</span><span class="delta">outside cadence</span></td>
+          <!-- FY24 -->
+          <td data-p="H1"><span class="val">14%</span><span class="delta g-fl">±0pp 🟡→</span></td>
+          <td data-p="H2"><span class="val">—</span><span class="delta">outside cadence</span></td>
+          <!-- FY25 (Buy/Sell) -->
+          <td data-p="H1" class="bs-col"><span class="val">17%</span><span class="delta g-up">+3pp 🟢↗</span></td>
+          <td data-p="H2" class="bs-col"><span class="val">—</span><span class="delta">outside cadence</span></td>
         </tr>
-        <!-- RANK 2 -->
-        <tr class="secbar"><td colspan="9">Rank 2 · Total revenue (£m)<span class="nat">cumulative flow — Δ = YoY growth; turn = acceleration vs prior same-type growth, ±2.0pp</span></td></tr>
-        <tr class="strip"><td class="lab">disclosure</td><td data-p="H1">H1</td><td data-p="FY">FY</td><td data-p="H1">H1</td><td data-p="FY">FY</td><td data-p="H1">H1</td><td data-p="FY">FY</td><td data-p="H1">H1</td><td data-p="FY">FY</td></tr>
+        <tr class="agg">
+          <td class="lab">FY organic %</td>
+          <td></td><td><span class="aval">18%</span></td>
+          <td></td><td><span class="aval">15%</span></td>
+          <td></td><td><span class="aval">13%</span></td>
+          <td></td><td><span class="aval">15.3%</span></td>
+        </tr>
+
+        <!-- ═══════════════════════════════════════════
+             RANK 2 — Total revenue (£m)
+             Cumulative flow · YoY on line 1 · accel turn · ±2.0pp
+             H1 printed; H2† = FY − H1 (single route); FY on agg row
+             Seasonally matched: H1 vs H1, H2 vs H2
+             ═══════════════════════════════════════════ -->
+        <tr class="secbar"><td colspan="9">Rank 2 — Total revenue (£m)<span class="nat">· cumulative flow · YoY% · accel turn ±2.0pp · H2† = FY−H1, single route</span></td></tr>
+        <tr class="strip">
+          <td class="lab">Period</td>
+          <td data-p="H1">H1</td><td data-p="H2">H2†</td>
+          <td data-p="H1">H1</td><td data-p="H2">H2†</td>
+          <td data-p="H1">H1</td><td data-p="H2">H2†</td>
+          <td data-p="H1">H1</td><td data-p="H2">H2†</td>
+        </tr>
         <tr class="vrow">
-          <td class="lab">value / growth·turn</td>
-          <td data-p="H1"><span class="val">33.4</span><span class="dd">+39% —</span></td>
-          <td data-p="FY"><span class="val">70.7<sup>ʳ</sup></span><span class="dd">+40% —</span></td>
-          <td data-p="H1"><span class="val">41.1<sup>ʳ</sup></span><span class="dd neg">+23% 🔴↘</span></td>
-          <td data-p="FY"><span class="val">85.9</span><span class="dd neg">+20% 🔴↘</span></td>
-          <td data-p="H1"><span class="val">53.0</span><span class="dd">+28% 🟢↗</span></td>
-          <td data-p="FY"><span class="val">111.3</span><span class="dd">+30% 🟢↗</span></td>
-          <td data-p="H1"><span class="val">71.4</span><span class="dd">+35% 🟢↗</span></td>
-          <td data-p="FY" class="bs"><span class="val">149.6</span><span class="dd">+34% 🟢↗</span></td>
+          <td class="lab">£m · (YoY%) · accel</td>
+          <!-- FY22: H1 and H2 both first prints -->
+          <td data-p="H1">
+            <span class="val">33.4 (+39%)</span>
+            <span class="delta">— first</span>
+          </td>
+          <td data-p="H2">
+            <span class="val">37.3†</span>
+            <span class="delta">— first H2</span>
+          </td>
+          <!-- FY23: H1 23 vs H1 22 = +23%, accel vs +39% → −16pp; H2 23 = first H2 comp -->
+          <td data-p="H1">
+            <span class="val">41.1ʳ <span class="neg">(+23%)</span></span>
+            <span class="delta neg">−16pp 🔴↘</span>
+          </td>
+          <td data-p="H2">
+            <span class="val">44.3†ʳ (+19%)</span>
+            <span class="delta">— first H2 comp</span>
+          </td>
+          <!-- FY24 -->
+          <td data-p="H1">
+            <span class="val">53.0 (+29%)</span>
+            <span class="delta g-up">+6pp 🟢↗</span>
+          </td>
+          <td data-p="H2">
+            <span class="val">58.3† (+30%)</span>
+            <span class="delta g-up">+10pp 🟢↗</span>
+          </td>
+          <!-- FY25 (Buy/Sell) -->
+          <td data-p="H1" class="bs-col">
+            <span class="val">71.4 (+35%)</span>
+            <span class="delta g-up">+6pp 🟢↗</span>
+          </td>
+          <td data-p="H2" class="bs-col">
+            <span class="val">78.2†ʳ (+34%)</span>
+            <span class="delta g-up">+4pp 🟢↗</span>
+          </td>
         </tr>
-        <tr class="vrow" style="background:#fbfbf8;">
-          <td class="lab">H2† (FY−H1)</td>
-          <td data-p="H1"></td>
-          <td data-p="FY"><span class="val">37.3†</span></td>
-          <td data-p="H1"></td>
-          <td data-p="FY"><span class="val">44.3†</span></td>
-          <td data-p="H1"></td>
-          <td data-p="FY"><span class="val">58.3†</span></td>
-          <td data-p="H1"></td>
-          <td data-p="FY" class="bs"><span class="val">78.2†</span><span class="dd">+34% HonH</span></td>
+        <tr class="agg">
+          <td class="lab">FY revenue</td>
+          <td colspan="2"><span class="aval">70.7ʳ</span><span class="anote">+40% · —</span></td>
+          <td colspan="2"><span class="aval">85.9</span><span class="anote">+20% · −20pp</span></td>
+          <td colspan="2"><span class="aval">111.3</span><span class="anote">+30% · +10pp</span></td>
+          <td colspan="2"><span class="aval">149.6</span><span class="anote">+34% · +4pp</span></td>
         </tr>
-        <!-- RANK 3 -->
-        <tr class="secbar"><td colspan="9">Rank 3 · Adjusted EBITDA margin %<span class="nat">rate — seasonally matched Δ, ±2.0pp band</span></td></tr>
-        <tr class="strip"><td class="lab">disclosure</td><td data-p="H1">H1</td><td data-p="FY">FY</td><td data-p="H1">H1</td><td data-p="FY">FY</td><td data-p="H1">H1</td><td data-p="FY">FY</td><td data-p="H1">H1</td><td data-p="FY">FY</td></tr>
+
+        <!-- ═══════════════════════════════════════════
+             RANK 3 — Adjusted EBITDA margin %
+             Rate · H1 and H2† implied · seasonally matched Δ · ±2.0pp
+             H2† derived from EBITDA†/revenue†; FY printed
+             ═══════════════════════════════════════════ -->
+        <tr class="secbar"><td colspan="9">Rank 3 — Adjusted EBITDA margin %<span class="nat">· period rate · H1 printed · H2† implied from EBITDA†/rev† (approx) · FY printed on agg row</span></td></tr>
+        <tr class="strip">
+          <td class="lab">Period</td>
+          <td data-p="H1">H1</td><td data-p="H2">H2†</td>
+          <td data-p="H1">H1</td><td data-p="H2">H2†</td>
+          <td data-p="H1">H1</td><td data-p="H2">H2†</td>
+          <td data-p="H1">H1</td><td data-p="H2">H2†</td>
+        </tr>
         <tr class="vrow">
-          <td class="lab">value / Δ·turn</td>
-          <td data-p="H1"><span class="val">31%</span><span class="dd">— —</span></td>
-          <td data-p="FY"><span class="val">29%</span><span class="dd">— —</span></td>
-          <td data-p="H1"><span class="val">30%</span><span class="dd">−1.0pp 🟡→</span></td>
-          <td data-p="FY"><span class="val">29.6%<sup>ʳ</sup></span><span class="dd">+0.6pp 🟡→</span></td>
-          <td data-p="H1"><span class="val">28.5%<sup>ʳ</sup></span><span class="dd">−1.5pp 🟡→</span></td>
-          <td data-p="FY"><span class="val">28.0%</span><span class="dd">−1.6pp 🟡→</span></td>
-          <td data-p="H1"><span class="val">30.0%</span><span class="dd">+1.5pp 🟡→</span></td>
-          <td data-p="FY" class="bs"><span class="val">29.6%</span><span class="dd">+1.6pp 🟡→</span></td>
+          <td class="lab">% · pp · turn</td>
+          <!-- FY22: H1=31%, H2† implied ≈27.1% (approx from rounded FY margin) -->
+          <td data-p="H1">
+            <span class="val">31%</span>
+            <span class="delta">— first</span>
+          </td>
+          <td data-p="H2">
+            <span class="val">27.1%†</span>
+            <span class="delta">— first H2</span>
+          </td>
+          <!-- FY23: H1=30% (Δ vs 31% = −1pp 🟡); H2†=29.6% (Δ vs 27.1% = +2.5pp 🟢↗) -->
+          <td data-p="H1">
+            <span class="val">30%</span>
+            <span class="delta g-fl">−1.0pp 🟡→</span>
+          </td>
+          <td data-p="H2">
+            <span class="val">29.6%†ʳ</span>
+            <span class="delta g-up">+2.5pp 🟢↗</span>
+          </td>
+          <!-- FY24: H1=28.5%ʳ (Δ vs 30% = −1.5pp 🟡); H2†≈27.6% (Δ vs 29.6% = −2.0pp 🟡→ borderline) -->
+          <td data-p="H1">
+            <span class="val">28.5%ʳ</span>
+            <span class="delta g-fl">−1.5pp 🟡→</span>
+          </td>
+          <td data-p="H2">
+            <span class="val">27.6%†</span>
+            <span class="delta g-fl">−2.0pp 🟡→</span>
+          </td>
+          <!-- FY25: H1=30.0% (Δ vs 28.5% = +1.5pp 🟡); H2†≈29.2% (Δ vs 27.6% = +1.6pp 🟡) -->
+          <td data-p="H1" class="bs-col">
+            <span class="val">30.0%</span>
+            <span class="delta g-fl">+1.5pp 🟡→</span>
+          </td>
+          <td data-p="H2" class="bs-col">
+            <span class="val">29.2%†</span>
+            <span class="delta g-fl">+1.6pp 🟡→</span>
+          </td>
         </tr>
-        <!-- RANK 4 -->
-        <tr class="secbar"><td colspan="9">Rank 4 · Adjusted PBT (£m)<span class="nat">flow — notes-level print every period since H1 22; headline from FY24 R</span></td></tr>
-        <tr class="strip"><td class="lab">disclosure</td><td data-p="H1">H1</td><td data-p="FY">FY</td><td data-p="H1">H1</td><td data-p="FY">FY</td><td data-p="H1">H1</td><td data-p="FY">FY</td><td data-p="H1">H1</td><td data-p="FY">FY</td></tr>
+        <tr class="agg">
+          <td class="lab">FY adj EBITDA margin</td>
+          <td colspan="2"><span class="aval">29%</span></td>
+          <td colspan="2"><span class="aval">29.6%ʳ</span></td>
+          <td colspan="2"><span class="aval">28.0%</span></td>
+          <td colspan="2"><span class="aval">29.6%</span></td>
+        </tr>
+
+        <!-- ═══════════════════════════════════════════
+             RANK 4 — Adjusted PBT (£m)
+             Flow · YoY on line 1 · accel turn · ±2.0pp
+             H1 printed (notes since H1 22; headline from FY24 R)
+             H2† = FY − H1 · FY on agg row
+             Seasonally matched H1-vs-H1, H2-vs-H2
+             ═══════════════════════════════════════════ -->
+        <tr class="secbar"><td colspan="9">Rank 4 — Adjusted PBT (£m)<span class="nat">· cumulative flow · YoY% · accel turn ±2.0pp · H2† = FY−H1 single route · notes-level H1 22–H1 24; headline from FY24 R</span></td></tr>
+        <tr class="strip">
+          <td class="lab">Period</td>
+          <td data-p="H1">H1</td><td data-p="H2">H2†</td>
+          <td data-p="H1">H1</td><td data-p="H2">H2†</td>
+          <td data-p="H1">H1</td><td data-p="H2">H2†</td>
+          <td data-p="H1">H1</td><td data-p="H2">H2†</td>
+        </tr>
         <tr class="vrow">
-          <td class="lab">value / growth·turn</td>
-          <td data-p="H1"><span class="val">9.8</span><span class="dd">— —</span></td>
-          <td data-p="FY"><span class="val">19.3</span><span class="dd">— —</span></td>
-          <td data-p="H1"><span class="val">11.8</span><span class="dd">+21% —</span></td>
-          <td data-p="FY"><span class="val">24.4</span><span class="dd">+27% —</span></td>
-          <td data-p="H1"><span class="val">14.5</span><span class="dd">+23% 🟢↗</span></td>
-          <td data-p="FY"><span class="val">29.7</span><span class="dd neg">+22% 🔴↘</span></td>
-          <td data-p="H1"><span class="val">20.1</span><span class="dd">+38% 🟢↗</span></td>
-          <td data-p="FY" class="bs"><span class="val">41.0</span><span class="dd">+38% 🟢↗</span></td>
+          <td class="lab">£m · (YoY%) · accel</td>
+          <!-- FY22 -->
+          <td data-p="H1">
+            <span class="val">9.8</span>
+            <span class="delta">— first</span>
+          </td>
+          <td data-p="H2">
+            <span class="val">9.5†</span>
+            <span class="delta">— first H2</span>
+          </td>
+          <!-- FY23: H1=11.8 (+20%), first H1 comp; H2=12.6 (+33%), first H2 comp -->
+          <td data-p="H1">
+            <span class="val">11.8 (+20%)</span>
+            <span class="delta">— first H1 comp</span>
+          </td>
+          <td data-p="H2">
+            <span class="val">12.6† (+33%)</span>
+            <span class="delta">— first H2 comp</span>
+          </td>
+          <!-- FY24: H1=14.5 (+23%), vs H1 23 +20% → +3pp 🟢↗; H2=15.2 (+20%), vs H2 23 +33% → −13pp 🔴↘ -->
+          <td data-p="H1">
+            <span class="val">14.5 (+23%)</span>
+            <span class="delta g-up">+3pp 🟢↗</span>
+          </td>
+          <td data-p="H2">
+            <span class="val">15.2† (+20%)</span>
+            <span class="delta neg">−13pp 🔴↘</span>
+          </td>
+          <!-- FY25: H1=20.1 (+38%), vs H1 24 +23% → +15pp 🟢↗; H2=20.9 (+38%), vs H2 24 +20% → +18pp 🟢↗ -->
+          <td data-p="H1" class="bs-col">
+            <span class="val">20.1 (+38%)</span>
+            <span class="delta g-up">+15pp 🟢↗</span>
+          </td>
+          <td data-p="H2" class="bs-col">
+            <span class="val">20.9† (+38%)</span>
+            <span class="delta g-up">+18pp 🟢↗</span>
+          </td>
         </tr>
-        <!-- RANK 5 -->
-        <tr class="secbar"><td colspan="9">Rank 5 · Net cash / (debt) (£m)<span class="nat">snapshot — position-to-position, ±£2.0m dead-band</span></td></tr>
-        <tr class="strip"><td class="lab">disclosure</td><td data-p="H1">H1</td><td data-p="FY">FY</td><td data-p="H1">H1</td><td data-p="FY">FY</td><td data-p="H1">H1</td><td data-p="FY">FY</td><td data-p="H1">H1</td><td data-p="FY">FY</td></tr>
+        <tr class="agg">
+          <td class="lab">FY adj PBT</td>
+          <td colspan="2"><span class="aval">19.3</span><span class="anote">—</span></td>
+          <td colspan="2"><span class="aval">24.4</span><span class="anote">+27% · —</span></td>
+          <td colspan="2"><span class="aval">29.7</span><span class="anote">+22% · −5pp</span></td>
+          <td colspan="2"><span class="aval">41.0</span><span class="anote">+38% · +16pp</span></td>
+        </tr>
+
+        <!-- ═══════════════════════════════════════════
+             RANK 5 — Net cash / (debt) (£m)
+             Snapshot · position-to-position · ±£2.0m dead-band
+             Both H1 and H2 (=FY-end) are real reported positions
+             YoY renders only on aggregate row
+             ═══════════════════════════════════════════ -->
+        <tr class="secbar"><td colspan="9">Rank 5 — Net cash / (debt) (£m)<span class="nat">· snapshot · position-to-position · ±£2.0m dead-band · YoY on aggregate row only</span></td></tr>
+        <tr class="strip">
+          <td class="lab">Position at</td>
+          <td data-p="H1">Jun-22</td><td data-p="H2">Dec-22</td>
+          <td data-p="H1">Jun-23</td><td data-p="H2">Dec-23</td>
+          <td data-p="H1">Jun-24</td><td data-p="H2">Dec-24</td>
+          <td data-p="H1">Jun-25</td><td data-p="H2">Dec-25</td>
+        </tr>
         <tr class="vrow">
-          <td class="lab">value / Δ·turn</td>
-          <td data-p="H1"><span class="val">11.1</span><span class="dd">— —</span></td>
-          <td data-p="FY"><span class="val">20.4</span><span class="dd">+9.3 🟢↗</span></td>
-          <td data-p="H1"><span class="val">19.5</span><span class="dd">−0.9 🟡→</span></td>
-          <td data-p="FY"><span class="val">18.1</span><span class="dd">−1.4 🟡→</span></td>
-          <td data-p="H1"><span class="val">22.1</span><span class="dd">+4.0 🟢↗</span></td>
-          <td data-p="FY"><span class="val">7.5</span><span class="dd neg">−14.6 🔴↘</span></td>
-          <td data-p="H1"><span class="val">(6.8)</span><span class="dd neg">−14.3 🔴↘</span></td>
-          <td data-p="FY" class="bs"><span class="val">(24.1)</span><span class="dd neg">−17.3 🔴↘</span></td>
+          <td class="lab">£m · Δ · turn</td>
+          <!-- Jun-22: first print -->
+          <td data-p="H1">
+            <span class="val">11.1</span>
+            <span class="delta">— first</span>
+          </td>
+          <!-- Dec-22: +9.3 vs Jun-22 -->
+          <td data-p="H2">
+            <span class="val">20.4</span>
+            <span class="delta g-up">+9.3 🟢↗</span>
+          </td>
+          <!-- Jun-23: −0.9 vs Dec-22 -->
+          <td data-p="H1">
+            <span class="val">19.5</span>
+            <span class="delta g-fl">−0.9 🟡→</span>
+          </td>
+          <!-- Dec-23: −1.4 vs Jun-23 -->
+          <td data-p="H2">
+            <span class="val">18.1</span>
+            <span class="delta g-fl">−1.4 🟡→</span>
+          </td>
+          <!-- Jun-24: +4.0 vs Dec-23 -->
+          <td data-p="H1">
+            <span class="val">22.1</span>
+            <span class="delta g-up">+4.0 🟢↗</span>
+          </td>
+          <!-- Dec-24: −14.6 vs Jun-24 -->
+          <td data-p="H2">
+            <span class="val">7.5</span>
+            <span class="delta neg">−14.6 🔴↘</span>
+          </td>
+          <!-- Jun-25: −14.3 vs Dec-24 -->
+          <td data-p="H1" class="bs-col">
+            <span class="val">(6.8)</span>
+            <span class="delta neg">−14.3 🔴↘</span>
+          </td>
+          <!-- Dec-25: −17.3 vs Jun-25 -->
+          <td data-p="H2" class="bs-col">
+            <span class="val">(24.1)</span>
+            <span class="delta neg">−17.3 🔴↘</span>
+          </td>
         </tr>
+        <tr class="agg">
+          <td class="lab">FY-end position (YoY)</td>
+          <td></td><td><span class="aval">20.4</span><span class="anote">+9.3</span></td>
+          <td></td><td><span class="aval">18.1</span><span class="anote">−2.3</span></td>
+          <td></td><td><span class="aval">7.5</span><span class="anote">−10.6</span></td>
+          <td></td><td><span class="aval">(24.1)</span><span class="anote">−31.6</span></td>
+        </tr>
+
       </tbody>
     </table>
   </div>
@@ -351,7 +580,7 @@
   <details class="drawer">
     <summary>Turn methodology &amp; restatement basis</summary>
     <div class="dc">
-      <p><b>One script, bases hard-coded per metric type.</b> <b>Snapshot</b> (net cash/debt): position-to-position at its own disclosure grain, ±£2.0m dead-band on Δ. <b>Flow</b> (revenue, adjusted PBT): like-period only (H1-vs-H1, FY-vs-FY — never H1-vs-9M); Δ shown is the YoY growth; the turn is the change in that growth vs the prior same-type print, ±2.0pp band — direction and acceleration, never absolute level. <b>Rate</b> (organic %, EBITDA margin): seasonally-matched Δ, ±2.0pp band: ≥+2.0pp → 🟢↗, inside band → 🟡→, ≤−2.0pp → 🔴↘. No Q1/Q3 disclosure exists, so no sequential QonQ trigger applies; derived H2 halves are single-route (FY−H1, no corroborating quarter route) and remain watch flags.</p>
+      <p><b>One script, bases hard-coded per metric type (v4.0 display basis).</b> <b>Snapshot</b> (net cash/debt): position-to-position at its own disclosure grain, ±£2.0m dead-band on Δ; YoY rendered only on the aggregate row. <b>Flow</b> (revenue, adjusted PBT): seasonally matched YoY displayed (H1-vs-H1 / FY-vs-FY — never H1-vs-9M); YoY% brackets the value on line 1 (negative YoY in red); line 2 = emoji + pp (the Δrate vs prior same-type, ±2.0pp band). Raw HonH is computed and retained in this drawer, not displayed in cells. <b>Rate</b> (organic %, EBITDA margin): seasonally-matched Δ, ±2.0pp band: ≥+2.0pp → 🟢↗, inside band → 🟡→, ≤−2.0pp → 🔴↘; no Δrate label in cells — pp is the unit. ELIX is an H-reporter (no Q1/Q3 disclosure), so no sequential QonQ trigger applies; derived H2 halves are single-route (FY−H1) and remain watch flags.</p>
       <p><b>Restatements &amp; provenance (ʳ).</b> FY22 revenue: first-printed £70.7m, restated £71.7m at FY23 R (reimbursable expenses reclassified into revenue) — FY23's +20% is the company's own restated-basis figure. H1 23 revenue: first-printed £41.1m, restated £41.6m at H1 24 R (same reclass); H2 23† = 85.9 − 41.6 (restated pair); H2 22† = 70.7 − 33.4 (as-printed pair — single basis, no cross-basis arithmetic). FY23 margin: first-printed "30%", refined to 29.6% in the FY24 R headline (company moved to 1dp); H1 24 margin: first-printed "29%", restated 28.5% at H1 25 R. Grid shows the finest/restated print flagged ʳ; the Drift matrix shows each document's own print. H2 25† (£78.2m) includes TRC from 19 Sep 2025 — not like-for-like, acquired share not split in the RNS. Adjusted PBT values H1 22–H1 24 are taken from each document's note reconciliation (9.792 / 19.259 / 11.804 / 24.388 / 14.543 £m). Buy/Sell column figures re-verified against the 20 Apr 2026 RNS. Guide provenance: the Feb-25 TU cites a "£108–111m" guidance range issued in a document not in this project (between Sep-24 and Feb-25, most plausibly at the Oct-24 Hypothesis acquisition) — carried in the Guide-met trail with an [ext] flag.</p>
     </div>
   </details>
@@ -570,7 +799,7 @@
   </details>
 
   <div class="foot">
-    ELIX · Longitudinal Drift Tracker v3.15 · Buy/Sell RNS: FY25 Final, 20 Apr 2026 · FY-end 31 Dec · Forward signals only; statutory columns and backbone tables excluded by design. Rebuilt from the v3.7 record after a full Stage A–E audit: 13 defects/corrections applied (2 arithmetic, 4 Drift cells, 7 arrows under the deterministic flow rule, 1 lexicon score, wedge upgraded to verdict bullet); direction call unchanged. v3.15: drift-entry block embedded; alert state restated to true on the Tier-1 flag per the block contract (2-of-3 count remains nil).
+    ELIX · Longitudinal Drift Tracker v4.0 · Buy/Sell RNS: FY25 Final, 20 Apr 2026 · FY-end 31 Dec · Forward signals only; statutory columns and backbone tables excluded by design. Rebuilt from the v3.7 record after a full Stage A–E audit: 13 defects/corrections applied (2 arithmetic, 4 Drift cells, 7 arrows under the deterministic flow rule, 1 lexicon score, wedge upgraded to verdict bullet); direction call unchanged. v3.15: drift-entry block embedded. v4.0: §2 grid rebuilt to Appendix B locked skin (v4.0); YoY-beside-value cell format; snapshot YoY confined to aggregate row; Δrate label dropped from all cells; HonH retained in methodology drawer.
   </div>
 
 </div>
@@ -579,15 +808,22 @@
 (function(){
   var g2 = document.getElementById('g2');
   if(g2){
-    var ph = g2.querySelector('tr.ph');
-    ph.querySelectorAll('th[data-p]').forEach(function(th){
+    // Highlight every cell and header sharing the clicked data-p (H1 or H2)
+    // Skip colspan aggregate rows per spec
+    g2.querySelectorAll('th.phead[data-p]').forEach(function(th){
       th.addEventListener('click', function(){
         var p = th.getAttribute('data-p');
         var on = g2.getAttribute('data-active') === p;
         g2.querySelectorAll('.hl').forEach(function(c){c.classList.remove('hl');});
         if(on){ g2.removeAttribute('data-active'); return; }
         g2.setAttribute('data-active', p);
-        g2.querySelectorAll('[data-p="'+p+'"]').forEach(function(c){c.classList.add('hl');});
+        // Highlight all th and td with this data-p
+        g2.querySelectorAll('[data-p="'+p+'"]').forEach(function(c){
+          // Skip cells inside agg rows (they use colspan and don't map to a column)
+          if(!c.closest('tr.agg')){
+            c.classList.add('hl');
+          }
+        });
       });
     });
   }
@@ -632,7 +868,7 @@
   "rns_type": "FY Results",
   "rns_date": "2026-04-20",
   "build_date": "2026-07-28",
-  "spec_version": "3.15",
+  "spec_version": "4.0",
   "next_test": "H1 26 organic vs 17%; net debt vs Kvadrant's £18m envelope; whether a quantified guide — or the H1 TU — returns.",
   "url": "ELIX.html"
 }
