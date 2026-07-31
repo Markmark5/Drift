@@ -32,15 +32,15 @@
     {
       "ticker": "NWF",
       "company": "NWF Group plc",
-      "direction": "up",
-      "headline": "FY26 PBT £12.5m beats the cut consensus by 21% inside a 5% down year; Fuels' rescue was oil-price timing, not margin.",
-      "trigger": "2-of-3 explained",
+      "direction": "watch",
+      "headline": "FY26 PBT £12.5m beats the cut consensus by 21% inside a 5% down year; Fuels’ rescue was oil-price timing, not margin.",
+      "trigger": "Latest print 1-of-3 (Text −2, conditional flat FY27 guide); Nov-25 2-of-3 (G CUT + Text −3) explained; hard condition restated out under v4.0 H1/H2 spine",
       "alert": false,
-      "rns_type": "FY26 Final Results",
+      "rns_type": "FY Results",
       "rns_date": "2026-07-28",
       "build_date": "2026-07-28",
-      "spec_version": "v3.14",
-      "next_test": "AGM 24 Sep 2026 — autumn heating-oil demand",
+      "spec_version": "v4.0",
+      "next_test": "AGM 24 Sep 2026: autumn heating-oil demand, and any Food acquisition.",
       "url": "NWF.html"
     },
     {
