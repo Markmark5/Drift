@@ -294,6 +294,20 @@
       "spec_version": "v3.10 base + §2 grid v4.0",
       "next_test": "Sep H1 R: PBT vs ~£3.0m consensus anchor, margin read, and any hard pipeline number decide the call.",
       "url": "CHH.html"
+    },
+    {
+      "ticker": "FNX",
+      "company": "Fonix plc",
+      "direction": "up",
+      "headline": "FY26 GP +12.7% with a beat — H2 accelerated sharply, guidance raised, and five international markets now in build. Alert fired.",
+      "trigger": "2 of 3: Hard (H2 FY26 GP Deltarate +16.0pp) + G RAISE (slightly ahead of market expectations vs stated consensus GP £20.5m / EBITDA £16.0m)",
+      "alert": true,
+      "rns_type": "FY TU",
+      "rns_date": "2026-07-23",
+      "build_date": "2026-07-31",
+      "spec_version": "v4.5",
+      "next_test": "FY26 Final Results 22-Sep-26: adj PBT, EPS, underlying cash FY26 — confirm re-rate or one-year bounce",
+      "url": "FNX.html"
     }
   ]
 }
