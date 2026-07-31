@@ -86,6 +86,9 @@
   #grid th.per-head{background:#f2f1ed;text-align:center;font-size:12px;cursor:pointer;user-select:none;}
   #grid th.per-head:hover{background:#e8e6df;}
   #grid th.per-head.active-col{background:#d9e6d9;}
+  #grid td.val.active-col{background:#eef6ea !important;}
+  #grid td.val.bs.active-col{background:#e2f0dc !important;}
+  #grid .strip td.active-col{background:#e2ecdd;}
   #grid td.lab{font-weight:600;font-size:12px;vertical-align:middle;}
   .sec-bar td{background:var(--ink);color:#fff;font-weight:700;font-size:13px;padding:8px 12px;}
   .sec-bar .nature{font-weight:400;font-size:11px;color:#cfcfcf;margin-left:8px;}
@@ -250,34 +253,35 @@
 </tr>
 </thead>
 <tbody>
-<tr class="sec-bar"><td colspan="10">Rank 1 · &quot;Order books&quot; language<span class="nature">snapshot / qualitative</span></td></tr>
+<tr class="sec-bar"><td colspan="10">Rank 1 · &quot;Order books&quot; language<span class="nature">snapshot · qualitative</span></td></tr>
 <tr class="strip"><td></td><td>H1</td><td>H2</td><td>H1</td><td>H2</td><td>H1</td><td>H2</td><td>H1</td><td>H2</td><td>H1</td></tr>
-<tr><td class="lab"></td><td class="val"><div class="v">"very strong" —</div></td><td class="val"></td><td class="val"><div class="v">"strong" 🟡→</div></td><td class="val"></td><td class="val"><div class="v">"steady" 🟡→</div></td><td class="val"></td><td class="val"><div class="v">"steady" 🟢↗</div><div class="d">revived</div></td><td class="val"></td><td class="val bs"><div class="v">— (TU) —</div></td></tr>
+<tr><td class="lab"></td><td class="val"><span class="v">"very strong"</span><span class="d">—</span></td><td class="val"></td><td class="val"><span class="v">"strong"</span><span class="d">→ 🟡</span></td><td class="val"></td><td class="val"><span class="v">"steady"</span><span class="d">→ 🟡</span></td><td class="val"></td><td class="val"><span class="v">"steady"</span><span class="d">↗ 🟢 revived</span></td><td class="val"></td><td class="val bs"><span class="v">— (TU)</span><span class="d">outside cadence</span></td></tr>
 <tr class="agg"><td class="lab">Presence</td><td colspan="9">Present in every H1 results doc (H1-22/23/24/25); absent from FY R &amp; AGMs by cadence. H1-25 revival = green shoot.</td></tr>
-<tr class="sec-bar"><td colspan="10">Rank 2 · Organic revenue growth %<span class="nature">period rate — seasonally matched</span></td></tr>
-<tr class="strip"><td></td><td>H1</td><td>H2</td><td>H1</td><td>H2</td><td>H1</td><td>H2</td><td>H1</td><td>H2†</td><td>H1</td></tr>
-<tr><td class="lab"></td><td class="val"><div class="v">+27.9 —</div></td><td class="val"></td><td class="val"><div class="v">+2.3 🔴↘</div><div class="d">Δ−25.6pp</div></td><td class="val"></td><td class="val"><div class="v">−1.2 🔴↘</div><div class="d">Δ−3.5pp</div></td><td class="val"></td><td class="val"><div class="v">−3.5 🔴↘</div><div class="d">Δ−2.3pp</div></td><td class="val"><div class="v">c.+0.5† 🟢</div></td><td class="val bs"><div class="v">+~2 🟢↗</div><div class="d">Δ+5.5pp</div></td></tr>
-<tr class="agg"><td class="lab">FY (transcribed)</td><td colspan="2">FY22 +20.7</td><td colspan="2">FY23 +0.8</td><td colspan="2">FY24 −1.4</td><td colspan="2">FY25 −1.5</td><td colspan="1">—</td></tr>
-<tr class="sec-bar"><td colspan="10">Rank 3 · Gross margin %<span class="nature">period rate — seasonally matched</span></td></tr>
-<tr class="strip"><td></td><td>H1</td><td>H2</td><td>H1</td><td>H2</td><td>H1</td><td>H2</td><td>H1</td><td>H2†</td><td>H1</td></tr>
-<tr><td class="lab"></td><td class="val"><div class="v">14.9 —</div></td><td class="val"></td><td class="val"><div class="v">16.3 🟡→</div><div class="d">Δ+1.4pp</div></td><td class="val"></td><td class="val"><div class="v">17.3 🟡→</div><div class="d">Δ+1.0pp</div></td><td class="val"></td><td class="val"><div class="v">17.7 🟡→</div><div class="d">Δ+0.4pp</div></td><td class="val"><div class="v">17.7† 🟡→</div></td><td class="val bs"><div class="v">~17.5 🟡→</div><div class="d">Δ−0.2pp</div></td></tr>
-<tr class="agg"><td class="lab">FY (transcribed)</td><td colspan="2">FY22 15.3</td><td colspan="2">FY23 16.8</td><td colspan="2">FY24 17.8</td><td colspan="2">FY25 17.7</td><td colspan="1">—</td></tr>
-<tr class="sec-bar"><td colspan="10">Rank 4 · Adjusted PBT (£m)<span class="nature">cumulative flow — H1-vs-H1</span></td></tr>
-<tr class="strip"><td></td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td></tr>
-<tr><td class="lab"></td><td class="val"><div class="v">19.2 —</div></td><td class="val"><div class="v">26.0†</div></td><td class="val"><div class="v">21.8 🟢↗</div><div class="d">+14%</div></td><td class="val"><div class="v">28.2†</div></td><td class="val"><div class="v">17.2 🔴↘</div><div class="d">−21%</div></td><td class="val"><div class="v">21.1†</div></td><td class="val"><div class="v">9.6 🔴↘</div><div class="d">−44%</div></td><td class="val"><div class="v">20.9† 🟢</div></td><td class="val bs"><div class="v">10.6 🟢↗</div><div class="d">+10%</div></td></tr>
-<tr class="agg"><td class="lab">FY (transcribed)</td><td colspan="2">FY22 45.2</td><td colspan="2">FY23 50.0</td><td colspan="2">FY24 38.3</td><td colspan="2">FY25 30.5</td><td colspan="1">—</td></tr>
-<tr class="sec-bar"><td colspan="10">Rank 5 · Adj. net debt / leverage (x)<span class="nature">snapshot — lower is better</span></td></tr>
+<tr class="sec-bar"><td colspan="10">Rank 2 · Organic revenue growth %<span class="nature">period rate · seasonally matched H1-vs-H1</span></td></tr>
 <tr class="strip"><td></td><td>H1</td><td>H2</td><td>H1</td><td>H2</td><td>H1</td><td>H2</td><td>H1</td><td>H2</td><td>H1</td></tr>
-<tr><td class="lab"></td><td class="val"><div class="v">2.1 —</div></td><td class="val"><div class="v">1.6 🟢↗</div><div class="d">−0.5</div></td><td class="val"><div class="v">1.5 🟡→</div><div class="d">−0.1</div></td><td class="val"><div class="v">1.1 🟢↗</div><div class="d">−0.4</div></td><td class="val"><div class="v">2.0 🔴↘</div><div class="d">+0.9</div></td><td class="val"><div class="v">2.0 🟡→</div><div class="d">0.0</div></td><td class="val"><div class="v">2.5 🔴↘</div><div class="d">+0.5</div></td><td class="val"><div class="v">2.17 🟢↗</div><div class="d">−0.33</div></td><td class="val bs"><div class="v">2.3 🟢↗</div><div class="d">−0.2</div></td></tr>
-<tr class="agg"><td class="lab">FY year-end</td><td colspan="2">FY22 1.6</td><td colspan="2">FY23 1.1</td><td colspan="2">FY24 2.0</td><td colspan="2">FY25 2.17</td><td colspan="1">→2.0 gd</td></tr>
+<tr><td class="lab"></td><td class="val"><span class="v">+27.9%</span><span class="d">—</span></td><td class="val"></td><td class="val"><span class="v">+2.3%</span><span class="d neg">🔴↘ 25.6pp</span></td><td class="val"></td><td class="val"><span class="v">−1.2%</span><span class="d neg">🔴↘ 3.5pp</span></td><td class="val"></td><td class="val"><span class="v">−3.5%</span><span class="d neg">🔴↘ 2.3pp</span></td><td class="val"></td><td class="val bs"><span class="v">+~2%</span><span class="d">🟢↗ 5.5pp</span></td></tr>
+<tr class="agg"><td class="lab">FY organic</td><td colspan="2">FY22 +20.7%</td><td colspan="2">FY23 +0.8%</td><td colspan="2">FY24 −1.4%</td><td colspan="2">FY25 −1.5% · <b>H2 +0.8%ᶜ</b></td><td colspan="1">—</td></tr>
+<tr class="sec-bar"><td colspan="10">Rank 3 · Gross margin %<span class="nature">period rate · seasonally matched H1-vs-H1</span></td></tr>
+<tr class="strip"><td></td><td>H1</td><td>H2</td><td>H1</td><td>H2</td><td>H1</td><td>H2</td><td>H1</td><td>H2</td><td>H1</td></tr>
+<tr><td class="lab"></td><td class="val"><span class="v">14.9%</span><span class="d">—</span></td><td class="val"></td><td class="val"><span class="v">16.3%</span><span class="d">🟡→ 1.4pp</span></td><td class="val"></td><td class="val"><span class="v">17.3%</span><span class="d">🟡→ 1.0pp</span></td><td class="val"></td><td class="val"><span class="v">17.7%</span><span class="d">🟡→ 0.4pp</span></td><td class="val"></td><td class="val bs"><span class="v">~17.5%</span><span class="d neg">🟡→ 0.2pp</span></td></tr>
+<tr class="agg"><td class="lab">FY margin</td><td colspan="2">FY22 15.3%</td><td colspan="2">FY23 16.8%</td><td colspan="2">FY24 17.8%</td><td colspan="2">FY25 17.7%</td><td colspan="1">—</td></tr>
+<tr class="sec-bar"><td colspan="10">Rank 4 · Adjusted PBT (£m)<span class="nature">cumulative flow · like-period YoY both halves · H2† derived, arrows watch-flagged</span></td></tr>
+<tr class="strip"><td></td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td></tr>
+<tr><td class="lab"></td><td class="val"><span class="v">19.2</span><span class="d">—</span></td><td class="val"><span class="v">26.0†</span><span class="d">—</span></td><td class="val"><span class="v">21.8 (+14%)</span><span class="d">🟢↗</span></td><td class="val"><span class="v">28.2† (+8%)</span><span class="d">🟢↗ watch</span></td><td class="val"><span class="v">17.2 <span class="neg">(−21%)</span></span><span class="d">🔴↘</span></td><td class="val"><span class="v">21.1† <span class="neg">(−25%)</span></span><span class="d neg">🔴↘ watch</span></td><td class="val"><span class="v">9.6 <span class="neg">(−44%)</span></span><span class="d">🔴↘</span></td><td class="val"><span class="v">20.9† <span class="neg">(−1%)</span></span><span class="d">🟡→ watch</span></td><td class="val bs"><span class="v">10.6 (+10%)</span><span class="d">🟢↗</span></td></tr>
+<tr class="agg"><td class="lab">FY (transcribed)</td><td colspan="2">FY22 45.2</td><td colspan="2">FY23 50.0 (+11%)</td><td colspan="2">FY24 38.3 (−23%)</td><td colspan="2">FY25 30.5 (−20%)</td><td colspan="1">—</td></tr>
+<tr class="sec-bar"><td colspan="10">Rank 5 · Adj. net debt / leverage (x)<span class="nature">snapshot · lower is better · seq Δ in cells, YoY on aggregate</span></td></tr>
+<tr class="strip"><td></td><td>H1</td><td>H2</td><td>H1</td><td>H2</td><td>H1</td><td>H2</td><td>H1</td><td>H2</td><td>H1</td></tr>
+<tr><td class="lab"></td><td class="val"><span class="v">2.1</span><span class="d">—</span></td><td class="val"><span class="v">1.6</span><span class="d">−0.5 🟢</span></td><td class="val"><span class="v">1.5</span><span class="d">−0.1 🟡</span></td><td class="val"><span class="v">1.1</span><span class="d">−0.4 🟢</span></td><td class="val"><span class="v">2.0</span><span class="d neg">+0.9 🔴</span></td><td class="val"><span class="v">2.0</span><span class="d">0.0 🟡</span></td><td class="val"><span class="v">2.5</span><span class="d neg">+0.5 🔴</span></td><td class="val"><span class="v">2.17</span><span class="d">−0.33 🟢</span></td><td class="val bs"><span class="v">2.3</span><span class="d">−0.2 🟢</span></td></tr>
+<tr class="agg"><td class="lab">FY-end · YoY</td><td colspan="2">1.6x</td><td colspan="2">1.1x (−31%)</td><td colspan="2">2.0x (+82%)</td><td colspan="2">2.17x (+8%)</td><td colspan="1">→2.0 gd</td></tr>
 </tbody></table></div>
+<div class="subnote">Markers: † derived (£ flow, FY−H1) · <b>ᶜ</b> company-stated reported-cc basis (not organic — different measure, shown for the H2 turn) · <b>pp</b> = change in the rate vs the prior seasonally-matched half (rate rows only). Snapshot rows (Ranks 1, 5) show sequential Δ in cells; YoY sits on the aggregate row. Click any period header to highlight that column across all ranks.</div>
 <details class="drawer">
 <summary>Notes — Ranks 1–5</summary>
 <div class="drawer-body">
 <div class="rk"><b>Rank 1 — Order books</b>Revived at H1-25 ("steady order books at the start of the second half") after the FY24→H1-25 profit trough — a Rank-1 re-quantification and the earliest soft-signal of the turn. Absent from the July TU only because TUs sit outside the H1-results habit (—, not a withhold).</div>
 <div class="rk"><b>Rank 2 — Organic revenue</b>H1-26 +~2% (cc) is the first reported organic-positive H1 since H1-23, corroborating the derived H2-25† c.+0.5%. Watch the Middle East drag on H2-26 — the region was H2-weighted in 2025.</div>
 <div class="rk"><b>Rank 3 — Gross margin</b>Structural climb has plateaued at record ~17.7%; H1-26 "slightly lower" on Middle East loss + UK mix. Direction, not level, is the signal — a genuine soft spot inside an otherwise-up print.</div>
-<div class="rk"><b>Rank 4 — Adjusted PBT</b>+10% H1-vs-H1 (ex-Middle East/exited +20%) confirms the operational-gearing recovery the order-book revival flagged. H2† tie-outs are arithmetic (FY−H1), not corroboration — the H1-26 print is the corroboration.</div>
+<div class="rk"><b>Rank 4 — Adjusted PBT</b>+10% H1-vs-H1 (ex-Middle East/exited +20%) confirms the operational-gearing recovery the order-book revival flagged. On the row's H2-vs-H2 basis H2-25 was −1% (flat, 🟡→ watch), not a green print — the sequential step up from the £9.6m H1 trough is a separate read carried in §2.0, not a YoY score. H2† cells are derived (FY−H1), so their arrows are watch-flags; the H1-26 print is the corroboration.</div>
 <div class="rk"><b>Rank 5 — Leverage</b>2.3x at H1-26 vs 2.5x H1-25, guided ~2.0x year-end — the second consecutive improving period, brushing but never breaching the 2.5–3.0x watch band. Covenant cap 3.0x.</div>
 </div>
 </details>
@@ -287,7 +291,7 @@
 <div class="drawer-body">
 <p><b>Comparison bases (hard-coded per metric type):</b> snapshot metrics (order books, leverage) compare position-to-position at their own disclosure grain; flow metrics (Adj PBT) compare like-period-to-like-period only (H1-vs-H1, never H1-vs-9M); rate metrics (organic revenue, gross margin) are seasonally matched (H1-vs-H1, FY-vs-FY). No sequential QonQ trigger — MIDW is a half-year reporter, so the half is the finest grain and H2 is derived (†).</p>
 <p><b>Band:</b> H-grain rate ±2.0pp → 🟢↗ / 🟡→ / 🔴↘. Leadership metrics scored on direction of the company-reported delta vs the prior comparable print, never absolute level.</p>
-<p><b>Derived figures (†):</b> H2 = FY − H1, workings shown once per block. H2-25† organic (c.+0.5%) and PBT (≈£20.9m) were watch-flags until the 21 Jul 2026 H1 TU printed H1-26 figures corroborating the turn — now promoted from watch to confirmed.</p>
+<p><b>Derived figures (†):</b> H2 = FY − H1, workings shown once per block. Both halves of flow metrics now carry like-period YoY (H1-vs-H1, H2-vs-H2); H2 arrows are watch-flags because the figure is derived. On the H2-vs-H2 basis H2-25 PBT was −1% (£20.9m vs £21.1m) — flat, 🟡→, not an up-print; the earlier turn read rested on the sequential recovery from the £9.6m H1 trough (a §2.0 observation) and was confirmed by the printed H1-26 +10%, not by an H2-25 YoY score.</p>
 <p><b>Restatements &amp; provenance (ʳ / basis):</b> FY25 continuing-basis revenue £1,270.8m excludes exited Swiss MobilePro + a small N.Am unit; FY24 revenue comparator restated £1,317.0m → £1,289.5m and adj PBT restated to £39.1m continuing (£38.3m as originally reported — the figure used in the FY aggregate row, per each year's own first print). H1-26 organic shown at cc proxy (+~2%) pending the audited split at 22 Sep H1 results. Buy/Sell column = H1-26 (rightmost), bold.</p>
 </div>
 </details>
@@ -534,43 +538,78 @@
       });
     });
   }
-  wire('#grid th.per-head');
-  // drift: highlight header + body column cells sharing period-type
-  var dh=document.querySelectorAll('#drift th.pk');
-  dh.forEach(function(h){
-    h.addEventListener('click',function(){
-      var t=h.getAttribute('data-pt');
-      var on=h.classList.contains('active-col');
-      document.querySelectorAll('#drift .active-col').forEach(function(x){x.classList.remove('active-col');});
-      if(on) return;
-      var idxs=[];
-      dh.forEach(function(x,i){ if(x.getAttribute('data-pt')===t){x.classList.add('active-col');} });
-      // map header cells to column index (offset by 1 for metric col)
-      var headRow=document.querySelector('#drift thead tr');
-      var cells=headRow.querySelectorAll('th');
-      var cols=[];
-      cells.forEach(function(c,i){ if(i>0 && c.getAttribute('data-pt')===t) cols.push(i); });
-      document.querySelectorAll('#drift tbody tr').forEach(function(r){
-        var tds=r.children;
-        cols.forEach(function(ci){ if(tds[ci]) tds[ci].classList.add('active-col'); });
+  // ===== §2 grid: highlight the WHOLE column by period-type, skipping colspan rows =====
+  (function(){
+    var grid=document.getElementById('grid');
+    if(!grid) return;
+    var perHeads=grid.querySelectorAll('th.per-head');
+    perHeads.forEach(function(h,pi){ h.setAttribute('data-colidx', pi+1); });
+    function clearGrid(){ grid.querySelectorAll('.active-col').forEach(function(x){x.classList.remove('active-col');}); }
+    perHeads.forEach(function(h){
+      h.addEventListener('click',function(){
+        var t=h.getAttribute('data-pt');
+        var on=h.classList.contains('active-col');
+        clearGrid();
+        if(on) return;
+        var cols=[];
+        perHeads.forEach(function(x){
+          if(x.getAttribute('data-pt')===t){ x.classList.add('active-col'); cols.push(parseInt(x.getAttribute('data-colidx'),10)); }
+        });
+        grid.querySelectorAll('tbody tr').forEach(function(r){
+          if(r.classList.contains('sec-bar')||r.classList.contains('agg')) return;
+          var tds=r.children;
+          cols.forEach(function(ci){ if(tds[ci] && !tds[ci].hasAttribute('colspan')) tds[ci].classList.add('active-col'); });
+        });
       });
     });
-  });
-  // text+G row highlight
-  document.querySelectorAll('#text3 td.doc-cell').forEach(function(c){
-    c.addEventListener('click',function(){
-      var row=c.closest('tr'); var on=row.classList.contains('hl');
-      document.querySelectorAll('#text3 tr').forEach(function(r){r.classList.remove('hl');});
-      if(!on) row.classList.add('hl');
+  })();
+
+  // ===== §4 drift: highlight whole column by period-type =====
+  (function(){
+    var drift=document.getElementById('drift');
+    if(!drift) return;
+    var dh=drift.querySelectorAll('th.pk');
+    var headRow=drift.querySelector('thead tr');
+    var headCells=headRow.querySelectorAll('th');
+    function clearD(){ drift.querySelectorAll('.active-col').forEach(function(x){x.classList.remove('active-col');}); }
+    dh.forEach(function(h){
+      h.addEventListener('click',function(){
+        var t=h.getAttribute('data-pt');
+        var on=h.classList.contains('active-col');
+        clearD();
+        if(on) return;
+        var cols=[];
+        headCells.forEach(function(c,i){ if(i>0 && c.getAttribute('data-pt')===t){ c.classList.add('active-col'); cols.push(i); } });
+        drift.querySelectorAll('tbody tr').forEach(function(r){
+          var tds=r.children;
+          cols.forEach(function(ci){ if(tds[ci]) tds[ci].classList.add('active-col'); });
+        });
+      });
     });
-  });
+  })();
+
+  // ===== §3 Text+G: click a Doc cell -> highlight EVERY row of that doc period-type =====
+  (function(){
+    var t3=document.getElementById('text3');
+    if(!t3) return;
+    var cells=t3.querySelectorAll('td.doc-cell');
+    cells.forEach(function(c){
+      c.addEventListener('click',function(){
+        var pt=c.getAttribute('data-pt');
+        var wasOn=c.closest('tr').classList.contains('hl');
+        t3.querySelectorAll('tr.hl').forEach(function(r){r.classList.remove('hl');});
+        if(wasOn) return;
+        cells.forEach(function(x){ if(x.getAttribute('data-pt')===pt) x.closest('tr').classList.add('hl'); });
+      });
+    });
+  })();
 })();
 </script>
 
 <script type="application/json" id="spec-log-v3.16">{"version":"3.16","changed":"§2 columns are sub-periods only; parent periods moved to a colspan-merged aggregate row beneath (transcribed not summed, never scored, no arrows); non-standard company aggregates as sub-span cells. Fixed-width spine (8/16) replaced by full-lookback width under the 4-year upload ceiling. Half-vs-quarter divergence generalised to parent-vs-latest-sub-period (newest wins; parent flagged front/backward-loaded) with a derived-†-needs-print-corroboration guard.","added":"Out-of-window calibration rule in the ledger. Explicit ban on three-tier stacking for quarterly reporters.","net_rendered_elements":"+1 row per rank; +0 columns of information (H2 was previously derivable but invisible)."}</script>
 
 <script type="application/json" id="drift-entry">
-{"ticker":"MIDW","company":"Midwich Group plc","direction":"up","headline":"H1-26 delivers organic revenue and profit growth (+10% PBT) — the turn is now in the numbers; Middle East the one live H2 drag.","trigger":"green-shoot 2-of-3","alert":true,"rns_type":"H1 TU","rns_date":"2026-07-21","build_date":"2026-07-28","spec_version":"3.16","next_test":"22 Sep H1 results confirming £10.6m PBT and organic-positive holding, plus a Middle East H2 read","url":"MIDW.html"}
+{"ticker":"MIDW","company":"Midwich Group plc","direction":"up","headline":"H1-26 delivers organic revenue and profit growth (+10% PBT) — the turn is now in the numbers; Middle East the one live H2 drag.","trigger":"green-shoot 2-of-3","alert":true,"rns_type":"H1 TU","rns_date":"2026-07-21","build_date":"2026-07-28","spec_version":"4.0","next_test":"22 Sep H1 results confirming £10.6m PBT and organic-positive holding, plus a Middle East H2 read","url":"MIDW.html"}
 </script>
 
 </body>
