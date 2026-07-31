@@ -280,6 +280,20 @@
       "spec_version": "v3.16",
       "next_test": "Oct FY TU: Q4 inflows vs summer-trough norm, customer-add pace after Q3's −11k dip; Dec-26: does sandbag #3 arrive, now with a real anchor (MPS 0.15%→0.12% cut from 1-Oct-26)?",
       "url": "AJB.html"
+    },
+    {
+      "ticker": "CHH",
+      "company": "Churchill China plc",
+      "direction": "watch",
+      "headline": "H1'26 revenue −2.9% misses the confirming turn but nearly closes the decline; cash surges — a bottoming print with a new Q4-dependency flag.",
+      "trigger": "Deterioration 2-of-3 technically met (margin compression, 3 consecutive 🔴, + Text falling 2 prints) — heavily discounted as a stabilising base; no undiscounted fire.",
+      "alert": false,
+      "rns_type": "H1 TU",
+      "rns_date": "2026-07-31",
+      "build_date": "2026-07-31",
+      "spec_version": "v3.10 base + §2 grid v4.0",
+      "next_test": "Sep H1 R: PBT vs ~£3.0m consensus anchor, margin read, and any hard pipeline number decide the call.",
+      "url": "CHH.html"
     }
   ]
 }
