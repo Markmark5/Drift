@@ -218,6 +218,40 @@ td.neg { color: #c0392b; }
 .rank-section-bar span { font-weight: 400; opacity: .75; font-size: .78rem; margin-left: 8px; }
 .period-strip td { background: #e8edf2 !important; font-size: .72rem; color: #555; padding: 2px 6px !important; font-style: italic; font-weight: 600; }
 
+
+/* ==== §2 GRID SKIN — LOCKED v4.0 (identical across projects) ==== */
+/* Requires page-level vars: --red:#b3261e --green:#1e7a45 --amber:#9a6a00
+   --line:#d8d5cf --ink:#16150f --mute:#5f5c54 --paper:#f7f6f2 */
+:root{--red:#b3261e; --green:#1e7a45; --amber:#9a6a00; --line:#d8d5cf; --ink:#16150f; --mute:#5f5c54; --paper:#f7f6f2}
+.gridwrap{overflow-x:auto; margin-bottom:16px}
+table.grid{table-layout:fixed; width:100%; min-width:1000px; border-collapse:collapse; font-size:12.5px}
+table.grid th, table.grid td{border:1px solid var(--line); text-align:center; padding:7px 4px; vertical-align:top}
+table.grid col.lab{width:190px}
+table.grid col.per{width:calc((100% - 190px)/8)}   /* 8 = period column count */
+.yband{background:#efedE7; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; font-weight:700}
+th.phead{cursor:pointer; user-select:none; font-size:11.5px; background:var(--paper)}
+th.phead:hover{background:#eceae4}
+th.lab, td.lab{text-align:left !important}
+.secbar td{background:var(--ink); color:#fff; text-align:left !important;
+  font-size:11.5px; letter-spacing:.07em; font-weight:700; padding:7px 9px}
+.secbar .nat{font-weight:400; letter-spacing:.02em; color:#c9c6bd; text-transform:none}
+.strip td{padding:2px 4px; font-size:10px; color:var(--mute); background:#fbfaf7; letter-spacing:.05em}
+.strip td.lab{font-style:italic}
+.vrow td{background:#fff}
+.vrow td.lab{color:var(--mute); font-style:italic; font-size:11.5px}
+.val{font-weight:700; display:block; font-size:13px}
+.val .neg{color:var(--red)}
+.delta{display:block; font-size:11px; color:var(--mute); margin-top:2px}
+.delta.neg{color:var(--red)}
+tr.agg td{background:#fff; border-top:2px solid var(--ink); color:var(--mute); font-size:11.5px; padding:6px 4px}
+tr.agg td.lab{font-style:italic}
+tr.agg .aval{font-weight:700; color:var(--mute)}
+tr.agg .anote{display:inline; font-size:10.5px; margin-left:5px}
+td.bs-col{background:#fcfbf8 !important}
+td.bs-col .val{font-weight:800}
+th.bs-col{font-weight:800}
+.hl{background:#fff6d9 !important}
+
 /* ─── DERIVED BOOK-TO-BILL STRIP (non-scored, watch-flag) ── */
 .derived-strip-bar {
   background: #6b6b6b;
@@ -304,7 +338,7 @@ details b { font-weight: 700; display: block; margin-top: 6px; margin-bottom: 2p
 <body>
 
 <div class="page-title">SOLI — Solid State plc</div>
-<div class="page-sub">Longitudinal Drift Tracker · v3.16 · FY-end 31 Mar · Buy/Sell RNS: FY26 Final Results 29-Jun-26 · Appendix A audit applied (9 corrections) · Caveat dark-panel family · book-to-bill strip · drift-entry embedded · numbers unchanged</div>
+<div class="page-sub">Longitudinal Drift Tracker · v4.1 · FY-end 31 Mar · Buy/Sell RNS: FY26 Final Results 29-Jun-26 · Appendix A audit applied (9 corrections) · Caveat dark-panel family · book-to-bill strip · drift-entry embedded · numbers unchanged</div>
 
 <!-- ══════════════════════════════════════════════════════════
      🏁 VERDICT CARD
@@ -438,326 +472,153 @@ details b { font-weight: 700; display: block; margin-top: 6px; margin-bottom: 2p
      §2 UNIFIED FORWARD GRID
 ══════════════════════════════════════════════════════════ -->
 <div class="section">
-<div class="section-header"><h2>§2 · Unified Forward Grid — 9-cell H/FY spine (H-grain reporter)</h2></div>
+<div class="section-header"><h2>§2 · Unified Forward Grid — half-grain spine, 8 sub-period columns (H-grain reporter)</h2></div>
 
 <details><summary>Turn methodology &amp; restatement basis</summary><div class="drawer-inner">
-  <p><b>Turn methodology:</b> Snapshot metrics (order book, net debt) compare position-to-position at their own disclosure grain, newest vs prior disclosed. Flow metrics (revenue, adj PBT) compare like-period-to-like-period only: H1 vs H1 prior year, FY vs FY prior year — never H1 vs FY. Rate metric (adj op margin) compared H1 vs H1, FY vs FY. Sequential trigger not applicable at H-grain (no Q1/Q3). Rate trigger: Δ(same-period rate) vs prior same-period ±2.0pp → 🟢↗ / 🟡→ / 🔴↘. † = derived (FY − H1); watch flags until sub-period reported.</p>
+  <p><b>Turn methodology (v4.1 display basis):</b> Columns are sub-periods only (H1 / H2†); full years render on the non-scored aggregate row beneath each rank — transcribed, never summed, no arrows. Snapshot metrics (order book, net debt) compare position-to-position at their own disclosure grain, newest vs prior disclosed; snapshot YoY renders solely on the aggregate row. Flow metrics (revenue, adj PBT) display seasonally matched YoY (H1-vs-H1 / H2-vs-H2); the banded Δrate is the scored element — the emoji alone carries the score, the pp record lives here. Rate metric (adj op margin) H1-vs-H1, band ±2.0pp; H2 margin structurally outside disclosure cadence. Raw HonH is computed in script and retained here, never displayed in cells. Sequential trigger not applicable at H-grain. † = derived (FY − H1); watch flags until a reported sub-period corroborates.</p>
+  <p><b>FY-grain score record (restated to v4.1 banded Δrate — aggregates are never scored on the grid; retained here for audit only):</b> Revenue FY23 — (base) · FY24 🔴↘ (−19.7pp) · FY25 🔴↘ (−52.5pp) · FY26 🟢↗ (+46.6pp). Adj PBT FY23 — · FY24 🔴↘ (−5.6pp) · FY25 🔴↘ (−112.3pp) · FY26 🟢↗ (+139.9pp). Margin FY24 🟡→ (+1.2pp) · FY25 🔴↘ (−5.6pp) · FY26 🟡→ (+1.4pp). OB FY-end YoY direction: FY23 🟢↗ (+29.5%) · FY24 🔴↘ (−23.2%) · FY25 🟢↗ (+13.9%) · FY26 🟡→ (+0.8%). ND FY-end: FY23 🔴↘ᶜ · FY24 🟢↗ · FY25 🔴↘ᵈ · FY26 🟢↗. FY24's banded fires carry the same Custom Power comp discount as the H-grain cells. Pre-v4.0 renderings (direction-of-growth basis: rev/PBT FY24 🟢↗) superseded by this restatement. Margin pp record (H1 grain): FY24 −0.1pp 🟡→ · FY25 −4.1pp 🔴↘ · FY26 +1.4pp 🟡→.</p>
+  <p><b>FY24 deceleration fires (context-discounted):</b> REV H1 FY24 (−2.5pp), REV H2 FY24† (−35.0pp) and PBT H1 FY24 (−20.3pp) fire 🔴↘ under the v4.1 banded Δrate — technically met, analytically explained: FY24 laps FY23 comps inflated by Custom Power first-time consolidation (Oct-22), and absolute growth remained strongly positive throughout. Previously rendered 🟢↗ under the pre-v4.0 direction-of-growth basis. Annotated, not suppressed, per the context-discount rule; no current fired condition rests on these cells.</p>
+  <p><b>v4.1 display derivations (computed in code from audited prints):</b> H2 YoY chain uses H2 FY22† bases (rev 45.6 = 85.0−39.4; PBT 3.93 = 7.2−3.27): H2 rev YoY +47.1%†/+12.1%/−15.8%/+8.1%; H2 PBT YoY +41.7%†/+49.0%/−69.9%/+48.0%. Snapshot aggregate YoY: OB +29.5%/−23.2%/+13.9%/+0.8% (FY22 base 89.7); ND +55.8%/−42.0%/+57.4%/−43.2% (FY22 base 5.2).</p>
   <p><b>Derivation cross-verification:</b> H2† = FY − H1; second route: H1 confirmed from interim RNS exact figure, FY from results RNS exact figure. H2 FY23† £67.1m company-corroborated (FY23 R prints "second half revenues of £67.1m").</p>
   <p><b>Restatement / provenance:</b> ᵃ Oct-23 OB (£108.6m at 31 Oct) is the post-period figure disclosed in H1 FY24 R, used on a forward-facing basis consistent with Nov-22/Nov-24. ᵇ FY26 OB £102.4m at 31 May carries no NSPA orders (FY25 £101.6m included £19.0m NSPA carryover) — first like-for-like beat of FY25. ᶜ H1 FY23 net debt £16.1m reflects Custom Power M&amp;A (£15m new debt + £14.4m deferred consideration) — like-for-like bank-only net cash £1.7m. ᵈ FY25 net debt rise: Gateway £1.4m + Q-Par £0.7m bolt-ons + ICS capex, all disclosed/bounded. Later audited figure governs any prior "c." estimate. Buy/Sell (rightmost) column bold throughout. Power revenue three-division split first disclosed FY26 R (FY25 restated £27.5m from within Systems £69.8m; tie-out 42.3+27.5=69.8).</p>
   <p>H-grain reporter — no Q1/Q3 TUs in record. Grid starts at first print for each metric.</p>
   <p><b>Book-to-bill strip (derived, non-scored):</b> orders received = closing FY order book − opening FY order book + FY revenue; book-to-bill = orders received ÷ revenue. FY-end order-book snapshots (~31 May) against 31-Mar revenue years — ~2-month timing mismatch. <sup>ᵉ</sup> FY23/FY25 basis-contaminated by acquisition-added order book (Custom Power; Gateway/Q-Par) — soft. FY26 understated on a like-for-like basis (revenue includes £23.3m NSPA backlog delivery; closing book excludes NSPA). Watch-flag only — corroborates Rank 1, counts toward nothing in the 2-of-3.</p>
 </div></details>
 
-<!-- RANK 1: ORDER BOOK -->
-<div class="grid-section">
-<div class="rank-section-bar">Rank 1 — Open Order Book (£m) <span>Snapshot · position-to-position at disclosure grain</span></div>
-<div class="table-wrap">
-<table id="grid-r1" style="table-layout:fixed">
-  <colgroup>
-    <col style="width:140px">
-    <col><col><col><col><col><col><col><col>
-  </colgroup>
-  <thead>
-    <tr class="year-band">
-      <th></th>
-      <th colspan="2">FY23</th>
-      <th colspan="2">FY24</th>
-      <th colspan="2">FY25</th>
-      <th colspan="2">FY26</th>
-    </tr>
-    <tr id="period-hdr-r1">
-      <th></th>
-      <th data-qtype="H1R">H1 R</th><th data-qtype="FYR">FY R</th>
-      <th data-qtype="H1R">H1 R</th><th data-qtype="FYR">FY R</th>
-      <th data-qtype="H1R">H1 R</th><th data-qtype="FYR">FY R</th>
-      <th data-qtype="H1R">H1 R</th><th data-qtype="FYR" class="buysell">FY R ★</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="period-strip">
-      <td class="label-col">Disclosure date</td>
-      <td>Nov-22</td><td>May-23</td>
-      <td>Oct-23</td><td>May-24</td>
-      <td>Nov-24</td><td>May-25</td>
-      <td>Nov-25</td><td class="buysell">May-26</td>
-    </tr>
-    <tr>
-      <td class="label-col">OB (£m)</td>
-      <td>117.8</td><td>116.2</td>
-      <td>108.6<sup>ᵃ</sup></td><td>89.2</td>
-      <td>85.5</td><td>101.6</td>
-      <td>97.0</td><td class="buysell">102.4<sup>ᵇ</sup></td>
-    </tr>
-    <tr>
-      <td class="label-col">Δ vs prior</td>
-      <td>+28.1 (+31.3%)</td><td class="neg">−1.6 (−1.4%)</td>
-      <td class="neg">−7.6 (−6.5%)</td><td class="neg">−19.4 (−17.9%)</td>
-      <td class="neg">−3.7 (−4.1%)</td><td>+16.1 (+18.8%)</td>
-      <td class="neg">−4.6 (−4.5%)</td><td class="buysell">+5.4 (+5.6%)</td>
-    </tr>
-    <tr>
-      <td class="label-col">Turn</td>
-      <td>🟢↗</td><td>🟡→</td>
-      <td>🔴↘</td><td>🔴↘</td>
-      <td>🟡→</td><td>🟢↗</td>
-      <td>🟡→</td><td class="buysell">🟢↗</td>
-    </tr>
-  </tbody>
+<!-- §2 UNIFIED GRID — v4.1 Appendix B Template A (H-reporter) -->
+<div class="gridwrap">
+<table class="grid" id="grid2">
+<colgroup><col class="lab"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"></colgroup>
+<thead>
+<tr class="yband"><th></th><th colspan="2">FY23</th><th colspan="2">FY24</th><th colspan="2">FY25</th><th colspan="2">FY26</th></tr>
+<tr id="phead-row">
+<th class="lab"></th>
+<th class="phead" data-p="H1">H1</th><th class="phead" data-p="H2">H2</th>
+<th class="phead" data-p="H1">H1</th><th class="phead" data-p="H2">H2</th>
+<th class="phead" data-p="H1">H1</th><th class="phead" data-p="H2">H2</th>
+<th class="phead" data-p="H1">H1</th><th class="phead bs-col" data-p="H2">H2 ★</th>
+</tr>
+</thead>
+<tbody>
+
+<!-- RANK 1 -->
+<tr class="secbar"><td colspan="9">Rank 1 — Open Order Book (£m) <span class="nat">· arrow = up or down since the last print</span></td></tr>
+<tr class="strip"><td class="lab">Position at</td><td>Nov-22</td><td>May-23</td><td>Oct-23ᵃ</td><td>May-24</td><td>Nov-24</td><td>May-25</td><td>Nov-25</td><td>May-26</td></tr>
+<tr class="vrow"><td class="lab">£m · Δ vs prior print</td>
+<td><span class="val">117.8</span><span class="delta">+28.1 (+31.3%) 🟢↗</span></td>
+<td><span class="val">116.2</span><span class="delta neg">−1.6 (−1.4%) 🟡→</span></td>
+<td><span class="val">108.6<sup>ᵃ</sup></span><span class="delta neg">−7.6 (−6.5%) 🔴↘</span></td>
+<td><span class="val">89.2</span><span class="delta neg">−19.4 (−17.9%) 🔴↘</span></td>
+<td><span class="val">85.5</span><span class="delta neg">−3.7 (−4.1%) 🟡→</span></td>
+<td><span class="val">101.6</span><span class="delta">+16.1 (+18.8%) 🟢↗</span></td>
+<td><span class="val">97.0</span><span class="delta neg">−4.6 (−4.5%) 🟡→</span></td>
+<td class="bs-col"><span class="val">102.4<sup>ᵇ</sup></span><span class="delta">+5.4 (+5.6%) 🟢↗</span></td>
+</tr>
+<tr class="agg"><td class="lab">FY-end position</td><td colspan="2"><span class="aval">116.2</span><span class="anote">+29.5%</span></td><td colspan="2"><span class="aval">89.2</span><span class="anote" style="color:var(--red)">−23.2%</span></td><td colspan="2"><span class="aval">101.6</span><span class="anote">+13.9%</span></td><td colspan="2"><span class="aval">102.4</span><span class="anote">+0.8%</span></td></tr>
+
+<!-- RANK 2 -->
+<tr class="secbar"><td colspan="9">Rank 2 — Group Revenue (£m) <span class="nat">· 🟢↗ growing faster than last year · 🟡→ ~ the same pace · 🔴↘ shrinking or clearly slowing</span></td></tr>
+<tr class="strip"><td class="lab">Period</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td></tr>
+<tr class="vrow"><td class="lab">£m · YoY same-half</td>
+<td><span class="val">59.4 (+50.8%)</span><span class="delta">—</span></td>
+<td><span class="val">67.1† (+47.1%†)</span><span class="delta">—</span></td>
+<td><span class="val">88.1 (+48.3%)</span><span class="delta">🔴↘</span></td>
+<td><span class="val">75.2† (+12.1%)</span><span class="delta">🔴↘†</span></td>
+<td><span class="val">61.8 <span class="neg">(−29.9%)</span></span><span class="delta">🔴↘</span></td>
+<td><span class="val">63.3† <span class="neg">(−15.8%)</span></span><span class="delta">🔴↘†</span></td>
+<td><span class="val">85.7 (+38.7%)</span><span class="delta">🟢↗</span></td>
+<td class="bs-col"><span class="val">68.4† (+8.1%)</span><span class="delta">🟢↗†</span></td>
+</tr>
+<tr class="agg"><td class="lab">FY aggregate</td><td colspan="2"><span class="aval">126.5</span><span class="anote">+48.8%</span></td><td colspan="2"><span class="aval">163.3</span><span class="anote">+29.1%</span></td><td colspan="2"><span class="aval">125.1</span><span class="anote" style="color:var(--red)">−23.4%</span></td><td colspan="2"><span class="aval">154.1</span><span class="anote">+23.2%</span></td></tr>
+
+<!-- RANK 3 -->
+<tr class="secbar"><td colspan="9">Rank 3 — Adj Operating Margin (%) <span class="nat">· margin arrow = up or down vs last year</span></td></tr>
+<tr class="strip"><td class="lab">Period</td><td>H1</td><td>—</td><td>H1</td><td>—</td><td>H1</td><td>—</td><td>H1</td><td>—</td></tr>
+<tr class="vrow"><td class="lab">% · vs prior H1</td>
+<td><span class="val">9.3%</span><span class="delta">—</span></td>
+<td><span class="val">—</span><span class="delta">outside cadence</span></td>
+<td><span class="val">9.2%</span><span class="delta">🟡→</span></td>
+<td><span class="val">—</span><span class="delta">outside cadence</span></td>
+<td><span class="val">5.1%</span><span class="delta">🔴↘</span></td>
+<td><span class="val">—</span><span class="delta">outside cadence</span></td>
+<td><span class="val">6.5%</span><span class="delta">🟡→</span></td>
+<td class="bs-col"><span class="val">—</span><span class="delta">outside cadence</span></td>
+</tr>
+<tr class="agg"><td class="lab">FY margin</td><td colspan="2"><span class="aval">9.2%</span><span class="anote"></span></td><td colspan="2"><span class="aval">10.4%</span><span class="anote"></span></td><td colspan="2"><span class="aval">4.8%</span><span class="anote"></span></td><td colspan="2"><span class="aval">6.2%</span><span class="anote"></span></td></tr>
+
+<!-- RANK 4 -->
+<tr class="secbar"><td colspan="9">Rank 4 — Adj PBT (£m) <span class="nat">· 🟢↗ growing faster than last year · 🟡→ ~ the same pace · 🔴↘ shrinking or clearly slowing</span></td></tr>
+<tr class="strip"><td class="lab">Period</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td></tr>
+<tr class="vrow"><td class="lab">£m · YoY same-half</td>
+<td><span class="val">5.23 (+59.9%)</span><span class="delta">—</span></td>
+<td><span class="val">5.57† (+41.7%†)</span><span class="delta">—</span></td>
+<td><span class="val">7.3 (+39.6%)</span><span class="delta">🔴↘</span></td>
+<td><span class="val">8.3† (+49.0%)</span><span class="delta">🟢↗†</span></td>
+<td><span class="val">2.5 <span class="neg">(−65.8%)</span></span><span class="delta">🔴↘</span></td>
+<td><span class="val">2.5† <span class="neg">(−69.9%)</span></span><span class="delta">🔴↘†</span></td>
+<td><span class="val">4.9 (+96.0%)</span><span class="delta">🟢↗</span></td>
+<td class="bs-col"><span class="val">3.7† (+48.0%)</span><span class="delta">🟢↗†</span></td>
+</tr>
+<tr class="agg"><td class="lab">FY aggregate</td><td colspan="2"><span class="aval">10.8</span><span class="anote">+50.0%</span></td><td colspan="2"><span class="aval">15.6</span><span class="anote">+44.4%</span></td><td colspan="2"><span class="aval">5.0</span><span class="anote" style="color:var(--red)">−67.9%</span></td><td colspan="2"><span class="aval">8.6</span><span class="anote">+72.0%</span></td></tr>
+
+<!-- RANK 5 -->
+<tr class="secbar"><td colspan="9">Rank 5 — Net Debt (£m) <span class="nat">· arrow = up or down since the last print · excl IFRS16; incl deferred consideration</span></td></tr>
+<tr class="strip"><td class="lab">Position at</td><td>Sep-22</td><td>Mar-23</td><td>Sep-23</td><td>Mar-24</td><td>Sep-24</td><td>Mar-25</td><td>Sep-25</td><td>Mar-26</td></tr>
+<tr class="vrow"><td class="lab">£m · Δ vs prior print</td>
+<td><span class="val">16.1<sup>ᶜ</sup></span><span class="delta">+10.9 (+209.6%) 🔴↘</span></td>
+<td><span class="val">8.1</span><span class="delta neg">−8.0 (−49.7%) 🟢↗</span></td>
+<td><span class="val">3.9</span><span class="delta neg">−4.2 (−51.9%) 🟢↗</span></td>
+<td><span class="val">4.7</span><span class="delta">+0.8 (+20.5%) 🟡→</span></td>
+<td><span class="val">2.0</span><span class="delta neg">−2.7 (−57.4%) 🟢↗</span></td>
+<td><span class="val">7.4<sup>ᵈ</sup></span><span class="delta">+5.4 (+270.0%) 🔴↘</span></td>
+<td><span class="val">7.1</span><span class="delta neg">−0.3 (−4.1%) 🟡→</span></td>
+<td class="bs-col"><span class="val">4.2</span><span class="delta neg">−2.9 (−40.8%) 🟢↗</span></td>
+</tr>
+<tr class="agg"><td class="lab">FY-end position</td><td colspan="2"><span class="aval">8.1</span><span class="anote" style="color:var(--red)">+55.8%</span></td><td colspan="2"><span class="aval">4.7</span><span class="anote">−42.0%</span></td><td colspan="2"><span class="aval">7.4</span><span class="anote" style="color:var(--red)">+57.4%</span></td><td colspan="2"><span class="aval">4.2</span><span class="anote">−43.2%</span></td></tr>
+
+</tbody>
 </table>
-</div>
-<details><summary>Notes — Rank 1</summary><div class="drawer-inner">
-<p><sup>ᵃ</sup> Oct-23 post-period figure disclosed in H1 FY24 R (£99.7m at 30 Sep; £108.6m at 31 Oct). Forward-facing date used consistently with Nov-22 (£117.8m) and Nov-24 (£85.5m).</p>
-<p><sup>ᵇ</sup> FY26 May-26 footnote: "31 May 2026 included no NSPA orders (2025: £19.0m)." On a like-for-like basis the FY26 OB is materially stronger than FY25's £101.6m — FY25 included £19.0m of NSPA carryover subsequently delivered; FY26 has no equivalent large single order embedded, making the underlying OB breadth improvements more evident. First OB to beat FY25 on a like-for-like basis. What to watch: H1 FY27 OB — confirming breadth above £90m ex-CAIN initial order will verify the structural improvement.</p>
-</div></details>
 </div>
 
-<!-- RANK 2: REVENUE -->
-<div class="grid-section">
-<div class="rank-section-bar">Rank 2 — Group Revenue (£m) <span>Flow · H1 vs H1 prior year; FY vs FY prior year</span></div>
-<div class="table-wrap">
-<table id="grid-r2" style="table-layout:fixed">
-  <colgroup>
-    <col style="width:140px">
-    <col><col><col><col><col><col><col><col>
-  </colgroup>
-  <thead>
-    <tr class="year-band">
-      <th></th>
-      <th colspan="2">FY23</th>
-      <th colspan="2">FY24</th>
-      <th colspan="2">FY25</th>
-      <th colspan="2">FY26</th>
-    </tr>
-    <tr id="period-hdr-r2">
-      <th></th>
-      <th data-qtype="H1">H1</th><th data-qtype="FY">FY</th>
-      <th data-qtype="H1">H1</th><th data-qtype="FY">FY</th>
-      <th data-qtype="H1">H1</th><th data-qtype="FY">FY</th>
-      <th data-qtype="H1">H1</th><th data-qtype="FY" class="buysell">FY ★</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="period-strip">
-      <td class="label-col">Period</td>
-      <td>H1 FY23</td><td>FY23</td>
-      <td>H1 FY24</td><td>FY24</td>
-      <td>H1 FY25</td><td>FY25</td>
-      <td>H1 FY26</td><td class="buysell">FY26</td>
-    </tr>
-    <tr>
-      <td class="label-col">Revenue (£m)</td>
-      <td>59.4</td><td>126.5</td>
-      <td>88.1</td><td>163.3</td>
-      <td>61.8</td><td>125.1</td>
-      <td>85.7</td><td class="buysell">154.1</td>
-    </tr>
-    <tr>
-      <td class="label-col">Δ vs same prior</td>
-      <td>+20.0 (+50.8%)</td><td>+41.5 (+48.8%)</td>
-      <td>+28.7 (+48.3%)</td><td>+36.8 (+29.1%)</td>
-      <td class="neg">−26.3 (−29.9%)</td><td class="neg">−38.2 (−23.4%)</td>
-      <td>+23.9 (+38.7%)</td><td class="buysell">+29.0 (+23.2%)</td>
-    </tr>
-    <tr>
-      <td class="label-col">Turn</td>
-      <td>🟢↗</td><td>🟢↗</td>
-      <td>🟢↗</td><td>🟢↗</td>
-      <td>🔴↘</td><td>🔴↘</td>
-      <td>🟢↗</td><td class="buysell">🟢↗</td>
-    </tr>
-    <tr>
-      <td class="label-col">H2 derived†</td>
-      <td colspan="2" class="derived">H2 FY23†: 67.1<br><small>126.5−59.4</small></td>
-      <td colspan="2" class="derived">H2 FY24†: 75.2<br><small>163.3−88.1</small></td>
-      <td colspan="2" class="derived">H2 FY25†: 63.3<br><small>125.1−61.8</small></td>
-      <td colspan="2" class="derived buysell">H2 FY26†: 68.4<br><small>154.1−85.7</small></td>
-    </tr>
-    <tr>
-      <td class="label-col">H2 vs H2 prior†</td>
-      <td colspan="2" class="derived">H2 FY22: 45.6 (base)</td>
-      <td colspan="2" class="derived">+8.1 (+12.1%) 🟢↗</td>
-      <td colspan="2" class="derived">−11.9 (−15.8%) 🔴↘</td>
-      <td colspan="2" class="derived buysell">+5.1 (+8.1%) 🟢↗</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-<details><summary>Notes — Rank 2</summary><div class="drawer-inner">
-<p>FY26 is H1-loaded (£85.7m H1 vs £68.4m† H2), caused by the disclosed and bounded £23.3m NSPA communications delivery in H1. Not a quality deterioration — H2 FY26† of £68.4m is +8.1% on H2 FY25† of £63.3m, confirming underlying growth in both halves. The H1/H2 pattern is structurally driven by lumpy comms contracts (same effect in H1 FY24 with £23.4m NATO delivery). Watch: CAIN ($10.8m initial shipped Q1 FY27) + sustained OB will determine whether H1 FY27 maintains comms-weighted loading.</p>
+<details><summary>Notes — Ranks 1–5</summary><div class="drawer-inner">
+<p><b>Rank 1 — Order Book.</b> <sup>ᵃ</sup> Oct-23 post-period figure disclosed in H1 FY24 R (£99.7m at 30 Sep; £108.6m at 31 Oct); forward-facing date used consistently with Nov-22/Nov-24. <sup>ᵇ</sup> May-26 book carries no NSPA orders (FY25: £19.0m NSPA carryover) — first like-for-like beat of FY25. Watch: H1 FY27 OB breadth above £90m ex-CAIN initial confirms the structural improvement.</p>
+<p><b>Rank 2 — Revenue.</b> FY26 is H1-loaded (£85.7m vs £68.4m†), caused by the disclosed, bounded £23.3m NSPA delivery in H1. H2 FY26† +8.1% on H2 FY25† confirms growth in both halves — not a quality deterioration. Watch: whether CAIN follow-on maintains comms-weighted H1 loading in FY27.</p>
+<p><b>Rank 3 — Margin.</b> Mid-term target ~10% (peak 10.4% FY24); FY26 6.2% includes ~£3.3m performance-related overhead (nil FY25) and ICS underutilisation. H2 margin structurally outside the company's disclosure cadence (H1/FY prints only). Watch: pace of ICS utilisation ramp into H2 FY27.</p>
+<p><b>Rank 4 — Adj PBT.</b> H2 FY26† £3.7m vs H2 FY25† £2.5m = +48%. FY26 beat pre-results consensus +8.9% (£8.6m vs £7.9m). Adjusting items £4.7m→£2.8m (no impairment) — earnings quality improving. 2030 target ≥20p adj EPS (FY26: 11.0p).</p>
+<p><b>Rank 5 — Net Debt.</b> <sup>ᶜ</sup> H1 FY23 spike: Custom Power M&amp;A (£15m new debt + £14.4m deferred consideration) — basis change, not deterioration; like-for-like bank-only net cash £1.7m. <sup>ᵈ</sup> FY25 rise: Gateway/Q-Par bolt-ons + ICS capex, disclosed/bounded. FY26: £15m RCF to May-28; ~0.4× ND/EBITDA. Second consecutive falling print — green-shoot trajectory.</p>
 </div></details>
-</div>
 
-<!-- RANK 3: ADJ OPERATING MARGIN -->
-<div class="grid-section">
-<div class="rank-section-bar">Rank 3 — Adj Operating Margin (%) <span>Period rate · H1 vs H1; FY vs FY · band ±2.0pp</span></div>
-<div class="table-wrap">
-<table id="grid-r3" style="table-layout:fixed">
-  <colgroup>
-    <col style="width:140px">
-    <col><col><col><col><col><col><col><col>
-  </colgroup>
-  <thead>
-    <tr class="year-band">
-      <th></th>
-      <th colspan="2">FY23</th>
-      <th colspan="2">FY24</th>
-      <th colspan="2">FY25</th>
-      <th colspan="2">FY26</th>
-    </tr>
-    <tr>
-      <th></th>
-      <th>H1</th><th>FY</th>
-      <th>H1</th><th>FY</th>
-      <th>H1</th><th>FY</th>
-      <th>H1</th><th class="buysell">FY ★</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="label-col">Adj op margin</td>
-      <td>9.3%</td><td>9.2%</td>
-      <td>9.2%</td><td>10.4%</td>
-      <td>5.1%</td><td>4.8%</td>
-      <td>6.5%</td><td class="buysell">6.2%</td>
-    </tr>
-    <tr>
-      <td class="label-col">Δ vs same prior</td>
-      <td>(base H1)</td><td>(base FY)</td>
-      <td>−0.1pp</td><td>+1.2pp</td>
-      <td class="neg">−4.1pp</td><td class="neg">−5.6pp</td>
-      <td>+1.4pp</td><td class="buysell">+1.4pp</td>
-    </tr>
-    <tr>
-      <td class="label-col">Turn</td>
-      <td>—</td><td>—</td>
-      <td>🟡→</td><td>🟡→</td>
-      <td>🔴↘</td><td>🔴↘</td>
-      <td>🟡→</td><td class="buysell">🟡→</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-<details><summary>Notes — Rank 3</summary><div class="drawer-inner">
-<p>Mid-term target ~10% (FY24 peak 10.4%). Current trajectory recovery underway but slow. FY26 6.2% includes ~£3.3m performance-related overhead (nil in FY25) and ICS facility underutilisation drag; on an underlying basis the trajectory is modestly ahead of reported. Gap to 10% = 3.8pp; management guided broadly stable margins in FY27 as investment continues. Pace of ICS utilisation ramp and H2 FY27 margin read are the next inflection signals.</p>
-</div></details>
-</div>
-
-<!-- RANK 4: ADJ PBT -->
-<div class="grid-section">
-<div class="rank-section-bar">Rank 4 — Adj PBT (£m) <span>Flow · H1 vs H1; FY vs FY</span></div>
-<div class="table-wrap">
-<table id="grid-r4" style="table-layout:fixed">
-  <colgroup>
-    <col style="width:140px">
-    <col><col><col><col><col><col><col><col>
-  </colgroup>
-  <thead>
-    <tr class="year-band">
-      <th></th>
-      <th colspan="2">FY23</th>
-      <th colspan="2">FY24</th>
-      <th colspan="2">FY25</th>
-      <th colspan="2">FY26</th>
-    </tr>
-    <tr>
-      <th></th>
-      <th>H1</th><th>FY</th>
-      <th>H1</th><th>FY</th>
-      <th>H1</th><th>FY</th>
-      <th>H1</th><th class="buysell">FY ★</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="label-col">Adj PBT (£m)</td>
-      <td>5.23</td><td>10.8</td>
-      <td>7.3</td><td>15.6</td>
-      <td>2.5</td><td>5.0</td>
-      <td>4.9</td><td class="buysell">8.6</td>
-    </tr>
-    <tr>
-      <td class="label-col">Δ vs same prior</td>
-      <td>+1.96 (+59.9%)</td><td>+3.60 (+50.0%)</td>
-      <td>+2.07 (+39.6%)</td><td>+4.80 (+44.4%)</td>
-      <td class="neg">−4.80 (−65.8%)</td><td class="neg">−10.6 (−67.9%)</td>
-      <td>+2.40 (+96.0%)</td><td class="buysell">+3.60 (+72.0%)</td>
-    </tr>
-    <tr>
-      <td class="label-col">Turn</td>
-      <td>🟢↗</td><td>🟢↗</td>
-      <td>🟢↗</td><td>🟢↗</td>
-      <td>🔴↘</td><td>🔴↘</td>
-      <td>🟢↗</td><td class="buysell">🟢↗</td>
-    </tr>
-    <tr>
-      <td class="label-col">H2 derived†</td>
-      <td colspan="2" class="derived">H2 FY23†: £5.57m<br><small>10.8−5.23</small></td>
-      <td colspan="2" class="derived">H2 FY24†: £8.3m<br><small>15.6−7.3</small></td>
-      <td colspan="2" class="derived">H2 FY25†: £2.5m<br><small>5.0−2.5</small></td>
-      <td colspan="2" class="derived buysell">H2 FY26†: £3.7m<br><small>8.6−4.9</small></td>
-    </tr>
-  </tbody>
-</table>
-</div>
-<details><summary>Notes — Rank 4</summary><div class="drawer-inner">
-<p>H2 FY26† adj PBT: £3.7m vs H2 FY25†: £2.5m = +48% — healthy underlying H2 despite the H1 loading effect. FY26 adj PBT vs pre-results consensus: £8.6m vs £7.9m = +8.9% beat. Adjusting items fell from £4.7m (FY25, inc £2.7m Custom Power impairment) to £2.8m (FY26, no impairment) — earnings quality improving. 2030 target: ≥20p adj EPS (FY26: 11.0p, base re-established).</p>
-</div></details>
-</div>
-
-<!-- RANK 5: NET DEBT -->
-<div class="grid-section">
-<div class="rank-section-bar">Rank 5 — Net Debt (£m) <span>Snapshot · position-to-position · excl IFRS16; incl deferred consideration</span></div>
-<div class="table-wrap">
-<table id="grid-r5" style="table-layout:fixed">
-  <colgroup>
-    <col style="width:140px">
-    <col><col><col><col><col><col><col><col>
-  </colgroup>
-  <thead>
-    <tr class="year-band">
-      <th></th>
-      <th colspan="2">FY23</th>
-      <th colspan="2">FY24</th>
-      <th colspan="2">FY25</th>
-      <th colspan="2">FY26</th>
-    </tr>
-    <tr>
-      <th></th>
-      <th>H1</th><th>FY</th>
-      <th>H1</th><th>FY</th>
-      <th>H1</th><th>FY</th>
-      <th>H1</th><th class="buysell">FY ★</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="label-col">Net Debt (£m)</td>
-      <td>16.1<sup>ᶜ</sup></td><td>8.1</td>
-      <td>3.9</td><td>4.7</td>
-      <td>2.0</td><td>7.4</td>
-      <td>7.1</td><td class="buysell">4.2</td>
-    </tr>
-    <tr>
-      <td class="label-col">Δ vs prior</td>
-      <td class="neg">+10.9 ↑</td><td>−8.0</td>
-      <td>−4.2</td><td>+0.8</td>
-      <td>−2.7</td><td class="neg">+5.4 ↑</td>
-      <td>−0.3</td><td class="buysell">−2.9</td>
-    </tr>
-    <tr>
-      <td class="label-col">Turn</td>
-      <td>🔴↘<sup>ᶜ</sup></td><td>🟢↗</td>
-      <td>🟢↗</td><td>🟡→</td>
-      <td>🟢↗</td><td>🔴↘<sup>ᵈ</sup></td>
-      <td>🟡→</td><td class="buysell">🟢↗</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-<details><summary>Notes — Rank 5</summary><div class="drawer-inner">
-<p><sup>ᶜ</sup> H1 FY23 spike: Custom Power acquisition funded £15m new debt + £14.4m deferred consideration — M&A basis change, not operational deterioration. Like-for-like bank debt only: net cash £1.7m at Sep-22. <sup>ᵈ</sup> FY25 increase: Gateway £1.4m + Q-Par £0.7m bolt-ons + ICS capex; all disclosed and bounded. FY26 position: £4.2m = cash £6.6m minus borrowings £10.2m minus deferred consid £0.6m. New £15m RCF committed May-28 (Lloyds/Comerica); leverage ~0.4× ND/EBITDA — ample headroom. Net debt falling for second consecutive print: green-shoot trajectory.</p>
-</div></details>
-</div>
+<script>
+(function(){
+  var tbl = document.getElementById('grid2');
+  if(!tbl) return;
+  var pheads = tbl.querySelectorAll('#phead-row th.phead');
+  var active = null;
+  pheads.forEach(function(th){
+    th.addEventListener('click', function(){
+      var p = th.getAttribute('data-p');
+      var clear = (active === p);
+      active = clear ? null : p;
+      // clear all
+      tbl.querySelectorAll('.hl').forEach(function(el){ el.classList.remove('hl'); });
+      if(clear) return;
+      // column indices (1-based within row) for this period type
+      var idxs = [];
+      pheads.forEach(function(h,i){ if(h.getAttribute('data-p')===p) idxs.push(i+1); });
+      // highlight matching headers
+      pheads.forEach(function(h){ if(h.getAttribute('data-p')===p) h.classList.add('hl'); });
+      // highlight body cells, skipping any row containing a colspan cell
+      tbl.querySelectorAll('tbody tr').forEach(function(row){
+        var cells = row.querySelectorAll('td');
+        var hasColspan = false;
+        cells.forEach(function(td){ if(td.hasAttribute('colspan')) hasColspan = true; });
+        if(hasColspan) return;
+        idxs.forEach(function(i){ if(cells[i]) cells[i].classList.add('hl'); });
+      });
+    });
+  });
+})();
+</script>
 
 <!-- Derived book-to-bill strip (non-scored) -->
 <div class="derived-strip-bar">Derived — Book-to-Bill<sup>†</sup> <span>Orders received ÷ revenue · &gt;1.0 = book growing · NOT scored, corroborates Rank 1 · FY-grain only</span></div>
@@ -811,11 +672,11 @@ H-grain reporter — no Q1/Q3 TUs in record. Grid starts at first print for each
 <div class="section">
 <div class="section-header"><h2>§2.0 · Most-Recent-RNS Current-State Read — FY26 R (29-Jun-26)</h2></div>
 
-<details><summary>The four checks — workings behind the read</summary><div class="drawer-inner">
-  <p><b>Check 1 — Sequential (FY26 vs H1 FY26):</b> Revenue H2†: £68.4m vs H1: £85.7m — expected sequential dip, fully explained by H1 NSPA delivery (£23.3m). Adj PBT H2†: £3.7m vs H1: £4.9m — same cause. Order book Nov-25→May-26: £97.0m→£102.4m — building. Sequential: 🟡→ — H1-loaded by disclosed/bounded comms contract; H2 trajectory healthy.</p>
-  <p><b>Check 2 — Same-type vs last year (FY26 vs FY25):</b> Revenue +23.2%, adj margin +1.4pp, adj PBT +72%, net debt −43% — all metrics improve. Both consensus beats. 🟢↗ across the board.</p>
-  <p><b>Check 3 — Derivable sub-periods:</b> H2 FY26†: £68.4m vs H2 FY25†: £63.3m = +8.1%. H2 adj PBT†: £3.7m vs £2.5m = +48%. Both halves growing year-on-year — aggregate confirmed, not backward-loaded.</p>
-  <p><b>Check 4 — Guidance vs consensus:</b> Pre-results consensus rev £151.6m / adj PBT £7.9m. Actual: £154.1m / £8.6m. Beats: +1.6% / +8.9%. FY27 guide: "expect to exceed" consensus (£152.5m / £8.1m). 🟢 RAISE.</p>
+<details open><summary>The four checks — workings behind the read</summary><div class="drawer-inner">
+  <p><b>Check 1 — Sequential (latest sub-period vs the one before):</b> H2 FY26† rev £68.4m vs H1 £85.7m — expected sequential dip, fully explained by the H1 NSPA delivery (£23.3m). Adj PBT H2† £3.7m vs H1 £4.9m — same cause. Order book Nov-25→May-26: £97.0m→£102.4m — building. Sequential: 🟡→ — H1-loaded by a disclosed, bounded contract; H2 trajectory healthy.</p>
+  <p><b>Check 2 — Same-type vs last year (FY26 R vs FY25 R):</b> Revenue +23.2%, adj margin +1.4pp, adj PBT +72%, net debt −43% — every ledger metric improves; both consensus beats. 🟢↗ across the board — turn, not base effect.</p>
+  <p><b>Check 3 — Every derivable sub-period (H2† = FY − H1):</b> H2 FY26† rev £68.4m vs H2 FY25† £63.3m = +8.1% 🟢↗†; H2 adj PBT† £3.7m vs £2.5m = +48% 🟢↗†. Parent-vs-latest-sub-period: no divergence — the parent 🟢 is confirmed by its latest sub-period, not masked by it; front-loaded flag noted (NSPA), backward-loading absent. H2 fires are derived-† watch flags pending a printed H2/TU corroboration.</p>
+  <p><b>Check 4 — Guidance vs prior guide (sized vs consensus):</b> Prior guide: "confident in meeting" FY26 consensus (Dec-25). New: delivered £154.1m/£8.6m vs pre-results C £151.6m/£7.9m (+1.6%/+8.9%), and FY27 set at "expect to exceed" C £152.5m/£8.1m. Guide moved up on both anchor and delivery. 🟢 RAISE — fires condition 1 (mirror).</p>
 </div></details>
 
 <div class="bridge-bar-row">
@@ -843,7 +704,14 @@ H-grain reporter — no Q1/Q3 TUs in record. Grid starts at first print for each
   <div class="current-state-bar">
   <div class="current-state-header">🌡️ CURRENT STATE — the read right now</div>
   <div class="current-state-body"><div>
-  🟢 <b>TURNING UP — STABLE IN GROWTH.</b> FY26 beats consensus on both revenue (+1.6%) and adj PBT (+8.9%); all three divisions grow for the first time since FY24; order book £102.4m (ex-NSPA) is structurally stronger than FY25's equivalent; adj PBT +72% YoY; net debt falling to £4.2m; FY27 guide set at "exceed." H1-loaded by disclosed NSPA delivery but H2 delivers genuine YoY improvement — aggregate 🟢 confirmed by both halves growing. ⚠️ UK Defence Investment Plan timing uncertainty flagged by management; AI-demand component lead-time extension is both risk and opportunity in FY27.
+  <div style="margin-bottom:6px">🟢 <b>TURNING UP — STABLE IN GROWTH.</b></div>
+  <ul style="margin:0; padding-left:18px; list-style:disc">
+    <li>FY26 beats consensus on both revenue (+1.6%) and adj PBT (+8.9%); FY27 guide set at "exceed."</li>
+    <li>All three divisions grow for the first time since FY24; adj PBT +72% YoY.</li>
+    <li>Order book £102.4m (ex-NSPA) structurally stronger than FY25's equivalent; net debt falling to £4.2m.</li>
+    <li>H1-loaded by disclosed NSPA delivery, but H2 delivers genuine YoY improvement — aggregate 🟢 confirmed by both halves growing.</li>
+    <li>⚠️ UK Defence Investment Plan timing uncertainty flagged by management; AI-demand component lead-time extension is both risk and opportunity in FY27.</li>
+  </ul>
   </div></div>
   </div>
 </div>
@@ -1240,36 +1108,7 @@ H-grain reporter — no Q1/Q3 TUs in record. Grid starts at first print for each
 </div>
 
 <script>
-// ── Quarter-type click-highlight for §2 grids ──────────────────
-['period-hdr-r1','period-hdr-r2'].forEach(function(headerId) {
-  const hdr = document.getElementById(headerId);
-  if(!hdr) return;
-  const table = hdr.closest('table');
-  hdr.querySelectorAll('th[data-qtype]').forEach(function(th, colIdx) {
-    th.style.cursor = 'pointer';
-    th.addEventListener('click', function() {
-      const qtype = th.dataset.qtype;
-      const isActive = th.classList.contains('active-col');
-      // Clear all
-      table.querySelectorAll('th.active-col, td.col-highlight').forEach(el => {
-        el.classList.remove('active-col','col-highlight');
-      });
-      if(isActive) return;
-      // Find all th with same qtype in this header row
-      const matchCols = [];
-      hdr.querySelectorAll('th').forEach(function(h, i) {
-        if(h.dataset.qtype === qtype) { matchCols.push(i); h.classList.add('active-col'); }
-      });
-      // Highlight matching columns in all rows (col index = matchCols[i] + 1 because first col is label)
-      table.querySelectorAll('tbody tr').forEach(function(row) {
-        matchCols.forEach(function(ci) {
-          const cell = row.cells[ci+1]; // +1 for label col
-          if(cell) cell.classList.add('col-highlight');
-        });
-      });
-    });
-  });
-});
+// ── §2 grid click-highlight now lives in the scoped #grid2 script above ──
 
 // ── Drift: click header to highlight all columns of same dtype ──
 (function() {
@@ -1329,7 +1168,7 @@ H-grain reporter — no Q1/Q3 TUs in record. Grid starts at first print for each
   "rns_type": "FY Results",
   "rns_date": "2026-06-29",
   "build_date": "2026-07-27",
-  "spec_version": "v3.16",
+  "spec_version": "v4.1",
   "next_test": "H1 FY27 TU (Oct/Nov-26) & H1 R (Dec-26): OB >£90m; margin >7%; CAIN follow-on order; guide tone; AI component cost pressure vs opportunity.",
   "url": "SOLI.html"
 }
