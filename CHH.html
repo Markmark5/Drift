@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CHH — Longitudinal Drift Tracker</title>
+<style>
+  :root{
+    --green:#1a8f4c; --green-tint:#e9f5ee; --green-soft:#f0f8f3;
+    --red:#c8352b; --red-tint:#fdecea;
+    --amber:#d99414; --amber-tint:#fdf4e3; --caveat:#faeeda;
+    --ink:#1c1e21; --mute:#5c6169; --line:#d9dce1; --line2:#e9ebee;
+    --card:#f7f6f2; --hl:#fff6cc;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0; background:#fff; color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:15px; line-height:1.5;
+  }
+  .wrap{max-width:1800px; margin:0 auto; padding:26px 22px 80px;}
+  .prose{max-width:1100px;}
+  h2.sec{
+    font-size:13px; letter-spacing:.10em; text-transform:uppercase;
+    color:var(--mute); font-weight:700; margin:0 0 12px;
+    padding-bottom:7px; border-bottom:1px solid var(--line);
+  }
+  section{margin-top:30px;}
+  .sub{color:var(--mute); font-size:13px; margin:2px 0 14px; max-width:1100px;}
+  .emoji{font-family:-apple-system,"Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji",sans-serif;}
+
+  /* ---------- VERDICT CARD ---------- */
+  .verdict{
+    display:flex; border:6px solid var(--amber);
+    border-radius:12px; overflow:hidden; max-width:1100px;
+    background:#fff;
+  }
+  .verdict.dir-up{border-color:var(--green);}
+  .verdict.dir-down{border-color:var(--red);}
+  .verdict.dir-watch{border-color:var(--amber);}
+  .rail{
+    width:82px; flex:0 0 82px; background:var(--amber-tint);
+    display:flex; flex-direction:column; align-items:center; justify-content:flex-start;
+    padding:16px 0; gap:14px;
+  }
+  .dir-up .rail{background:var(--green-tint);}
+  .dir-down .rail{background:var(--red-tint);}
+  .badge{
+    width:36px; height:36px; border-radius:50%; background:#fff;
+    display:flex; align-items:center; justify-content:center;
+    border:1.5px solid var(--amber);
+  }
+  .dir-up .badge{border-color:var(--green);}
+  .dir-down .badge{border-color:var(--red);}
+  .badge svg{width:20px; height:20px;}
+  .raillabel{
+    writing-mode:vertical-rl; text-orientation:mixed; transform:rotate(180deg);
+    text-transform:uppercase; letter-spacing:.16em; font-weight:700; font-size:12px;
+    color:var(--amber);
+  }
+  .dir-up .raillabel{color:var(--green);}
+  .dir-down .raillabel{color:var(--red);}
+  .vbody{flex:1; padding:18px 20px 20px;}
+  .headline{font-size:22px; font-weight:700; line-height:1.28; margin:0 0 14px;}
+  .meta{display:flex; flex-wrap:wrap; gap:7px; align-items:center; margin-bottom:16px;}
+  .pill{
+    font-size:11.5px; font-weight:600; padding:3px 9px; border-radius:999px;
+    background:#eceef1; color:#3a3f45; white-space:nowrap;
+  }
+  .pill.alert{background:#fbe6b8; color:#7a5405;}
+  .pill.bs{background:#e6f2ea; color:#1a6b3d;}
+  .dot{color:var(--line); font-weight:700;}
+  .grid2{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:14px;}
+  .scard{background:var(--card); border-radius:8px; padding:10px 12px;}
+  .scard.caveat{background:var(--caveat);}
+  .scard .k{font-size:10.5px; letter-spacing:.07em; text-transform:uppercase; color:var(--mute); font-weight:700; margin-bottom:3px;}
+  .scard .v{font-size:13px; line-height:1.42;}
+  .vbullets{margin:0; padding-left:18px;}
+  .vbullets li{font-size:13px; line-height:1.5; margin-bottom:7px;}
+  .vbullets li:last-child{margin-bottom:0;}
+
+  /* ---------- LEDGER ---------- */
+  table{border-collapse:collapse; width:100%;}
+  .ledger{max-width:1100px; font-size:13px;}
+  .ledger th,.ledger td{border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top;}
+  .ledger th{background:var(--card); font-weight:700; font-size:11.5px; letter-spacing:.03em; text-transform:uppercase; color:var(--mute);}
+  .ledger .rk{font-weight:700; text-align:center; width:38px;}
+  .ledger .st{white-space:nowrap; font-size:12px;}
+
+  /* ---------- §2 UNIFIED GRID ---------- */
+  .gridwrap{overflow-x:auto; border:1px solid var(--line);}
+  table.fg{table-layout:fixed; width:100%; min-width:920px; font-size:12.5px;}
+  table.fg col.lab{width:150px;}
+  table.fg th,table.fg td{border:1px solid var(--line2); text-align:center;}
+  table.fg .yrband th{
+    background:var(--card); font-weight:700; font-size:11.5px; color:var(--mute);
+    padding:6px 4px; letter-spacing:.04em; border-bottom:1px solid var(--line);
+  }
+  table.fg .perrow th{
+    background:#fcfcfb; font-weight:600; font-size:11px; color:#3a3f45;
+    padding:7px 4px; cursor:pointer; user-select:none;
+  }
+  table.fg .perrow th.lab,table.fg .yrband th.lab{background:var(--card); text-align:left; padding-left:12px; cursor:default;}
+  table.fg th.perhl{background:var(--hl)!important;}
+  table.fg td.colhl{background:#fffdf0;}
+  .secbar td{
+    background:#f2f1ec; text-align:left; padding:8px 12px; border-top:1px solid var(--line);
+  }
+  .secbar .rname{font-weight:700; font-size:12.5px;}
+  .secbar .rnat{color:var(--mute); font-weight:500; font-size:11.5px; margin-left:8px;}
+  .perstrip td{
+    background:#fafaf8; font-size:10px; color:var(--mute); font-weight:600;
+    padding:2px 4px; text-transform:uppercase; letter-spacing:.03em;
+  }
+  .perstrip td.lab{background:#fafaf8; text-align:left; padding-left:12px;}
+  .valrow td{padding:9px 4px; background:#fff; line-height:1.32;}
+  .valrow td.lab{text-align:left; padding-left:12px; color:var(--mute); font-size:11px; font-weight:600;}
+  .valrow .val{font-weight:600; font-size:13px; display:block;}
+  .valrow .dl{font-size:11px; display:block; margin-top:1px; color:var(--mute);}
+  .valrow .dl.neg{color:var(--red);}
+  .valrow .dl.pos{color:var(--green);}
+  td.bscol .val,td.bscol .dl{font-weight:800;}
+  td.bscol{background:#fffdf7;}
+  .wf{font-style:italic;}
+
+  /* notes drawer */
+  details.notes{max-width:1100px; margin-top:16px; background:var(--card); border-radius:10px; border:1px solid var(--line2);}
+  details.notes>summary{
+    cursor:pointer; padding:11px 15px; font-weight:700; font-size:12.5px; color:#3a3f45;
+    letter-spacing:.03em; list-style:none;
+  }
+  details.notes>summary::-webkit-details-marker{display:none;}
+  details.notes>summary::before{content:"▸ "; color:var(--mute);}
+  details.notes[open]>summary::before{content:"▾ ";}
+  .notesbody{padding:2px 16px 14px; font-size:12.5px; line-height:1.55;}
+  .notesbody p{margin:0 0 9px;}
+  .notesbody b{color:var(--ink);}
+
+  .methodp{max-width:1100px; font-size:12px; color:var(--mute); line-height:1.55; margin-top:14px; padding:12px 14px; background:var(--green-soft); border-radius:8px;}
+
+  /* ---------- §2.0 CURRENT-STATE BAR ---------- */
+  .csbar{
+    max-width:1100px; border:2px solid var(--amber); background:var(--amber-tint);
+    border-radius:10px; padding:15px 17px; font-size:14.5px; line-height:1.5; margin-top:16px;
+  }
+  .csbar.up{border-color:var(--green); background:var(--green-tint);}
+  .csbar.down{border-color:var(--red); background:var(--red-tint);}
+  .csbar .cstag{font-weight:800; letter-spacing:.04em;}
+  .checks{max-width:1100px; margin-bottom:4px;}
+  .checks .ck{padding:11px 0; border-bottom:1px solid var(--line2);}
+  .checks .ck:last-child{border-bottom:none;}
+  .checks .ckh{font-weight:700; font-size:13px; margin-bottom:3px;}
+  .checks .ckb{font-size:13px; color:#33373d; line-height:1.5;}
+
+  /* ---------- TEXT+G ---------- */
+  .t3wrap{overflow-x:auto; border:1px solid var(--line);}
+  table.t3{font-size:12.5px; min-width:820px; width:100%;}
+  table.t3 th,table.t3 td{border:1px solid var(--line2); padding:7px 9px; vertical-align:top; text-align:left;}
+  table.t3 th{background:var(--card); font-weight:700; font-size:11px; letter-spacing:.03em; text-transform:uppercase; color:var(--mute);}
+  table.t3 td.dc{cursor:pointer; white-space:nowrap; font-weight:600; font-size:11.5px; line-height:1.3;}
+  table.t3 td.dc .dl2{display:block; color:var(--mute); font-weight:500;}
+  table.t3 td.gc{text-align:center; white-space:nowrap; font-weight:600; font-size:11.5px;}
+  table.t3 td.gm{font-size:10.5px; line-height:1.5; color:#33373d;}
+  table.t3 td.sc{text-align:center; white-space:nowrap; font-size:14px;}
+  table.t3 td.ph{font-size:12px; line-height:1.4;}
+  table.t3 tr.rowhl td{background:#fff0f4;}
+  table.t3 tr.changed td{background:#f4f1fb;}
+  table.t3 tr.changed.rowhl td{background:#fbeef4;}
+  .gc.cut{color:var(--red);} .gc.raise{color:var(--green);}
+  .miss{color:var(--red);} .met{color:var(--green);}
+
+  /* ---------- DRIFT ---------- */
+  .dwrap{overflow-x:auto; border:1px solid var(--line);}
+  table.drift{table-layout:fixed; min-width:1500px; width:100%; font-size:11px;}
+  table.drift col.dlab{width:118px;}
+  table.drift th,table.drift td{border:1px solid var(--line2); text-align:center; padding:5px 3px;}
+  table.drift thead th{background:var(--card); cursor:pointer; user-select:none; font-weight:700; line-height:1.25; font-size:10px;}
+  table.drift thead th.dlab{background:var(--card); text-align:left; padding-left:10px; cursor:default;}
+  table.drift thead th .dt{display:block; font-weight:700;}
+  table.drift thead th .kt{display:block; color:var(--mute); font-weight:600; font-size:9px; margin-top:1px;}
+  table.drift td.rlab{text-align:left; padding-left:10px; font-weight:600; background:#fcfcfb; font-size:11px;}
+  table.drift td .emoji{font-size:12px;}
+  table.drift td .qv{display:block; font-size:9px; color:var(--mute); margin-top:1px;}
+  table.drift th.colhl,table.drift td.colhl{background:#fffdf0;}
+  table.drift thead th.colhl{background:var(--hl);}
+
+  .legend{font-size:11.5px; color:var(--mute); margin-top:10px; max-width:1100px; line-height:1.7;}
+  .legend .emoji{font-size:13px;}
+  .foot{margin-top:40px; padding-top:16px; border-top:1px solid var(--line); font-size:11px; color:var(--mute); max-width:1100px;}
+  @media (max-width:640px){
+    .wrap{padding:16px 12px 60px;}
+    .grid2{grid-template-columns:1fr;}
+    .headline{font-size:19px;}
+    .verdict{flex-direction:row;}
+    .rail{width:60px; flex-basis:60px;}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;}}
+
+  /* ==== §2 GRID SKIN — LOCKED v4.0 ==== */
+  .gridwrap{overflow-x:auto; margin-bottom:16px}
+  table.grid{table-layout:fixed; width:100%; min-width:1000px; border-collapse:collapse; font-size:12.5px}
+  table.grid th, table.grid td{border:1px solid var(--line); text-align:center; padding:7px 4px; vertical-align:top}
+  table.grid col.glab{width:190px}
+  table.grid col.per{width:calc((100% - 190px)/9)}
+  .yband th{background:#efede7; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; font-weight:700}
+  table.grid th.phead{cursor:pointer; user-select:none; font-size:11.5px; background:var(--paper, #f7f6f2)}
+  table.grid th.phead:hover{background:#eceae4}
+  table.grid th.glab, table.grid td.glab{text-align:left !important}
+  .secbar2 td{background:var(--ink,#16150f); color:#fff; text-align:left !important; font-size:11.5px; letter-spacing:.07em; font-weight:700; padding:7px 9px}
+  .secbar2 .nat{font-weight:400; letter-spacing:.02em; color:#c9c6bd; text-transform:none}
+  .strip td{padding:2px 4px; font-size:10px; color:var(--mute); background:#fbfaf7; letter-spacing:.05em}
+  .strip td.glab{font-style:italic}
+  .vrow td{background:#fff}
+  .vrow td.glab{color:var(--mute); font-style:italic; font-size:11.5px}
+  table.grid .val{font-weight:700; display:block; font-size:13px}
+  table.grid .val .neg{color:var(--red)}
+  table.grid .delta{display:block; font-size:11px; color:var(--mute); margin-top:2px}
+  table.grid .delta.neg{color:var(--red)}
+  tr.agg td{background:#fff; border-top:2px solid var(--ink,#16150f); color:var(--mute); font-size:11.5px; padding:6px 4px}
+  tr.agg td.glab{font-style:italic}
+  tr.agg .aval{font-weight:700; color:var(--mute)}
+  tr.agg .anote{display:inline; font-size:10.5px; margin-left:5px}
+  table.grid td.bs-col{background:#fcfbf8 !important}
+  table.grid td.bs-col .val{font-weight:800}
+  table.grid th.bs-col{font-weight:800}
+  table.grid .hl{background:#fff6d9 !important}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ============ VERDICT CARD ============ -->
+  <section style="margin-top:4px;">
+    <div class="verdict dir-watch">
+      <div class="rail">
+        <div class="badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#d99414" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line></svg>
+        </div>
+        <div class="raillabel">Stable — Watch</div>
+      </div>
+      <div class="vbody">
+        <div class="headline">H1&#39;26 revenue −2.9% misses the confirming turn but nearly closes the decline; cash surges — a bottoming print with a new Q4-dependency flag.</div>
+        <div class="meta">
+          <span class="pill alert"><span class="emoji">⚠️</span> deterioration 2-of-3 technically met · discounted</span>
+          <span class="dot">·</span>
+          <span class="pill">RNS: H1 TU</span>
+          <span class="pill">31 Jul 2026</span>
+          <span class="pill">FY 31 Dec</span>
+          <span class="dot">·</span>
+          <span class="pill bs">B/S: ungeared, div cut</span>
+        </div>
+        <div class="grid2">
+          <div class="scard">
+            <div class="k">Current State</div>
+            <div class="v">H1&#39;26 revenue £37.4m, −2.9% YoY — still falling but a third straight deceleration (🟢↗ +2.3pp); net cash £8.8m, +57% YoY.</div>
+          </div>
+          <div class="scard">
+            <div class="k">Fired</div>
+            <div class="v">Deterioration 2-of-3 (margin compression, 3 consecutive 🔴 + Text falling 2 prints) — technically met, heavily discounted as a stabilising base.</div>
+          </div>
+          <div class="scard caveat">
+            <div class="k">Caveat</div>
+            <div class="v">&ldquo;Significance of the final quarter&rdquo; echoes Sep&#39;24&#39;s year-end dependency — the phrase that preceded the Nov&#39;24 warning.</div>
+          </div>
+          <div class="scard">
+            <div class="k">Next</div>
+            <div class="v">Sep H1 R: PBT vs ~£3.0m consensus anchor, margin read, and any hard pipeline number decide the call.</div>
+          </div>
+        </div>
+        <ul class="vbullets">
+          <li>The derived H2&#39;25 revenue turn (+0.3%) was <b>not confirmed</b> — H1&#39;26 printed −2.9% — but the decline has decelerated three straight prints (−7.8% → −5.2% → −2.9%); the watch flag stands, weakened.</li>
+          <li>No pipeline mention at all in the Jul&#39;26 TU — the positive Rank-1 tone from Feb/Apr&#39;26 goes stale, not cured; a hard number at the Sep H1 R remains the highest-value confirming print available.</li>
+          <li>Consensus yardstick (Panmure Liberum initiation, Jun&#39;26 — single-house, corporate broker): FY26E revenue £77.8m now needs H2 ≈ £40.4m (+6.9% on H2&#39;25†); house revenue at risk even if the £6.1m PBT survives on yields. Modelled £0.5m FY26 exceptionals remain unannounced — watch underlying-vs-reported wording in September.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ §1 LEDGER ============ -->
+  <section>
+    <h2 class="sec">§1 · Metric Ledger</h2>
+    <table class="ledger">
+      <thead><tr><th class="rk">#</th><th>Metric</th><th>Type</th><th>Why it leads for CHH</th><th>Cadence</th><th>Status this run</th></tr></thead>
+      <tbody>
+        <tr><td class="rk">1</td><td><b>Order book / pipeline</b></td><td>Snapshot</td><td>The company&#39;s own repeated forward-demand language — named in nearly every doc 2022–Sep&#39;24; quantified once (£7.2m→£2.8m). Its quantification stopped exactly as news turned.</td><td>H1/FY (irregular)</td><td class="st">Not mentioned Jul&#39;26 — stale <span class="emoji">🟡</span></td></tr>
+        <tr><td class="rk">2</td><td><b>PBT margin</b> (rate)</td><td>Rate, H-grain</td><td>Management narrates yields / factory performance ahead of revealing the profit figure — the rate primes the number.</td><td>H1/FY</td><td class="st"><span class="emoji">🔴</span> 3 consecutive</td></tr>
+        <tr><td class="rk">3</td><td><b>Revenue</b></td><td>Flow, H1/FY</td><td>Earliest hard confirming number; sequential H-on-H; lags order book / margin narrative but leads the profit bridge.</td><td>H1/FY</td><td class="st">level negative; Δrate <span class="emoji">🟢</span> 2 of last 3</td></tr>
+        <tr><td class="rk">4</td><td><b>PBT (£)</b></td><td>Flow, H1/FY</td><td>The ultimate lagging hard print — hard-gated, always scored.</td><td>H1/FY</td><td class="st"><span class="emoji">🔴</span> 3 consecutive</td></tr>
+        <tr><td class="rk">5</td><td><b>Net cash &amp; deposits</b></td><td>Snapshot</td><td>Quantified every period; tied by management to dividend policy and capex capacity.</td><td>H1/FY</td><td class="st"><span class="emoji">🟢</span> 2 consecutive</td></tr>
+      </tbody>
+    </table>
+    <p class="sub" style="margin-top:10px;"><b>Bands:</b> H-grain rate ±2.0pp. No Q-grain (no quarterly discloser → 9-cell H-grid). EPS unscored (mechanically follows PBT). Statutory PBT/EPS read directly for wedge check only, never tabled. <b>Proposed ledger change (flag, not applied):</b> the derived H2 sub-period (FY − H1) is doing real work this run and should become a permanent computed overlay on Ranks 2–4.</p>
+  </section>
+
+  <!-- ============ §2 UNIFIED FORWARD GRID ============ -->
+  <section>
+    <h2 class="sec">§2 · Unified Forward Grid</h2>
+        <p class="sub">v4.0 sub-period spine: 9 half columns (H1&#39;22 → H1&#39;26), H2 derived †; FY totals on the unscored aggregate row beneath — the parent never governs. Flow cells: value + (YoY%, seasonally matched); line 2 = banded Δrate score (±2.0pp → 🟢↗ / 🟡→ / 🔴↘). Snapshots: sequential Δ in cells, YoY on the aggregate row. † derived · ʳ restated · ˢ arrow scored on the seasonally matched comparison · Buy/Sell column bold. Click a period header to highlight all columns of that type.</p>
+    <div class="gridwrap">
+      <table class="grid" id="fg">
+        <colgroup><col class="glab"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"></colgroup>
+        <thead>
+          <tr class="yband"><th class="glab"></th><th colspan="2">FY22</th><th colspan="2">FY23</th><th colspan="2">FY24</th><th colspan="2">FY25</th><th>FY26</th></tr>
+          <tr class="perrow2"><th class="glab">Metric</th>
+            <th class="phead" data-p="H1">H1&#39;22</th><th class="phead" data-p="H2">H2&#39;22†</th>
+            <th class="phead" data-p="H1">H1&#39;23</th><th class="phead" data-p="H2">H2&#39;23†</th>
+            <th class="phead" data-p="H1">H1&#39;24</th><th class="phead" data-p="H2">H2&#39;24†</th>
+            <th class="phead" data-p="H1">H1&#39;25</th><th class="phead" data-p="H2">H2&#39;25†</th>
+            <th class="phead bs-col" data-p="H1">H1&#39;26</th></tr>
+        </thead>
+        <tbody>
+          <!-- RANK 1 -->
+          <tr class="secbar2"><td colspan="10">Rank 1 — Order book / pipeline <span class="nat">· snapshot — company qualitative, quantified once</span></td></tr>
+          <tr class="strip"><td class="glab">disclosure</td><td>qual</td><td>qual</td><td>qual</td><td>qual</td><td>—</td><td>✅ £</td><td>—</td><td>qual</td><td>—</td></tr>
+          <tr class="vrow">
+            <td class="glab">status · Δ vs prior print</td>
+            <td><span class="val">strongest</span></td>
+            <td><span class="val">above norm</span><span class="delta">reducing</span></td>
+            <td><span class="val">normalised</span></td>
+            <td><span class="val">↓ to 2019</span><span class="delta neg">🔴↘</span></td>
+            <td><span class="val">—</span><span class="delta">outside cadence</span></td>
+            <td><span class="val">£2.8m†ᶜ</span><span class="delta neg">🔴↘</span></td>
+            <td><span class="val">—</span><span class="delta">outside cadence</span></td>
+            <td><span class="val">ahead PY</span><span class="delta">🟢↗ wf</span></td>
+            <td class="bs-col"><span class="val">—</span><span class="delta">not mentioned</span></td>
+          </tr>
+          <tr class="agg"><td class="glab">FY-end position</td><td colspan="2"><span class="aval">above norm, reducing</span></td><td colspan="2"><span class="aval">↓ to 2019 levels</span></td><td colspan="2"><span class="aval">£2.8m†ᶜ</span></td><td colspan="2"><span class="aval">ahead of prior year (qual)</span></td><td><span class="aval">—</span></td></tr>
+
+          <!-- RANK 2 -->
+          <tr class="secbar2"><td colspan="10">Rank 2 — PBT margin <span class="nat">· period rate (±2.0pp band, seasonally matched H1-vs-H1 / H2†-vs-H2†)</span></td></tr>
+          <tr class="strip"><td class="glab">period</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td></tr>
+          <tr class="vrow">
+            <td class="glab">margin %</td>
+            <td><span class="val">8.2%</span><span class="delta">—</span></td>
+            <td><span class="val">13.9%†</span><span class="delta">—</span></td>
+            <td><span class="val">11.4%ʳ</span><span class="delta">🟢↗ +3.2pp</span></td>
+            <td><span class="val">15.1%†</span><span class="delta">🟡→ +1.2pp</span></td>
+            <td><span class="val">11.8%</span><span class="delta">🟡→ +0.4pp</span></td>
+            <td><span class="val">9.8%†</span><span class="delta neg">🔴↘ −5.3pp wf</span></td>
+            <td><span class="val">8.1%</span><span class="delta neg">🔴↘ −3.7pp</span></td>
+            <td><span class="val">7.7%†</span><span class="delta neg">🔴↘ −2.1pp wf</span></td>
+            <td class="bs-col"><span class="val">—</span><span class="delta">TU: no figure</span></td>
+          </tr>
+          <tr class="agg"><td class="glab">FY margin</td><td colspan="2"><span class="aval">11.0%</span></td><td colspan="2"><span class="aval">13.1%</span><span class="anote">+2.1pp</span></td><td colspan="2"><span class="aval">10.9%</span><span class="anote">−2.2pp</span></td><td colspan="2"><span class="aval">7.9%</span><span class="anote">−3.0pp</span></td><td><span class="aval">—</span></td></tr>
+
+          <!-- RANK 3 -->
+          <tr class="secbar2"><td colspan="10">Rank 3 — Revenue <span class="nat">· flow — seasonally matched YoY displayed, banded Δrate scored</span></td></tr>
+          <tr class="strip"><td class="glab">period</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td></tr>
+          <tr class="vrow">
+            <td class="glab">£m (YoY)</td>
+            <td><span class="val">41.4</span><span class="delta">—</span></td>
+            <td><span class="val">41.1†</span><span class="delta">—</span></td>
+            <td><span class="val">44.0 (+6.3%)</span><span class="delta">—</span></td>
+            <td><span class="val">38.3† <span class="neg">(−6.8%)</span></span><span class="delta">—</span></td>
+            <td><span class="val">40.6 <span class="neg">(−7.8%)</span></span><span class="delta neg">🔴↘ −14.1pp</span></td>
+            <td><span class="val">37.7† <span class="neg">(−1.6%)</span></span><span class="delta">🟢↗ +5.2pp wf</span></td>
+            <td><span class="val">38.5 <span class="neg">(−5.2%)</span></span><span class="delta">🟢↗ +2.6pp</span></td>
+            <td><span class="val">37.8† (+0.3%)</span><span class="delta">🟡→ +1.9pp wf</span></td>
+            <td class="bs-col"><span class="val">37.4 <span class="neg">(−2.9%)</span></span><span class="delta">🟢↗ +2.3pp</span></td>
+          </tr>
+          <tr class="agg"><td class="glab">FY revenue</td><td colspan="2"><span class="aval">82.5</span></td><td colspan="2"><span class="aval">82.3ʳ</span><span class="anote">−0.2%</span></td><td colspan="2"><span class="aval">78.3</span><span class="anote">−4.9%</span></td><td colspan="2"><span class="aval">76.3</span><span class="anote">−2.6%</span></td><td><span class="aval">—</span></td></tr>
+
+          <!-- RANK 4 -->
+          <tr class="secbar2"><td colspan="10">Rank 4 — PBT <span class="nat">· flow — seasonally matched YoY displayed, banded Δrate scored</span></td></tr>
+          <tr class="strip"><td class="glab">period</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td></tr>
+          <tr class="vrow">
+            <td class="glab">£m (YoY)</td>
+            <td><span class="val">3.4</span><span class="delta">—</span></td>
+            <td><span class="val">5.7†</span><span class="delta">—</span></td>
+            <td><span class="val">5.0 (4.7ʳ) (+47%)</span><span class="delta">—</span></td>
+            <td><span class="val">5.8† (+1.8%)</span><span class="delta">—</span></td>
+            <td><span class="val">4.8 (+2.5%ʳ)</span><span class="delta neg">🔴↘ −44.6pp</span></td>
+            <td><span class="val">3.7† <span class="neg">(−36.2%)</span></span><span class="delta neg">🔴↘ −38.0pp wf</span></td>
+            <td><span class="val">3.1 <span class="neg">(−35.4%)</span></span><span class="delta neg">🔴↘ −37.9pp</span></td>
+            <td><span class="val">2.9† <span class="neg">(−21.6%)</span></span><span class="delta">🟢↗ +14.6pp wf</span></td>
+            <td class="bs-col"><span class="val">—</span><span class="delta">TU: no figure</span></td>
+          </tr>
+          <tr class="agg"><td class="glab">FY PBT</td><td colspan="2"><span class="aval">9.1</span></td><td colspan="2"><span class="aval">10.8</span><span class="anote">+19%ʰ</span></td><td colspan="2"><span class="aval">8.5</span><span class="anote">−21%</span></td><td colspan="2"><span class="aval">6.0</span><span class="anote">−29%</span></td><td><span class="aval">—</span></td></tr>
+
+          <!-- RANK 5 -->
+          <tr class="secbar2"><td colspan="10">Rank 5 — Net cash &amp; deposits <span class="nat">· snapshot (sequential Δ in cells; YoY on aggregate row) · B/S — outside 2-of-3 count</span></td></tr>
+          <tr class="strip"><td class="glab">position at</td><td>Jun-22</td><td>Dec-22</td><td>Jun-23</td><td>Dec-23</td><td>Jun-24</td><td>Dec-24</td><td>Jun-25</td><td>Dec-25</td><td>Jun-26</td></tr>
+          <tr class="vrow">
+            <td class="glab">£m · seq Δ · arrowˢ</td>
+            <td><span class="val">15.7</span><span class="delta">—</span></td>
+            <td><span class="val">14.7</span><span class="delta neg">−1.0 (−6%)</span></td>
+            <td><span class="val">9.9</span><span class="delta neg">−4.8 (−33%) 🔴↘ˢ</span></td>
+            <td><span class="val">13.9</span><span class="delta">+4.0 (+40%) 🔴↘ˢ</span></td>
+            <td><span class="val">7.8</span><span class="delta neg">−6.1 (−44%) 🔴↘ˢ</span></td>
+            <td><span class="val">10.1</span><span class="delta">+2.3 (+30%) 🔴↘ˢ</span></td>
+            <td><span class="val">5.6</span><span class="delta neg">−4.5 (−45%) 🔴↘ˢ</span></td>
+            <td><span class="val">10.8</span><span class="delta">+5.2 (+93%) 🟢↗ˢ</span></td>
+            <td class="bs-col"><span class="val">8.8</span><span class="delta neg">−2.0 (−19%) 🟢↗ˢ</span></td>
+          </tr>
+          <tr class="agg"><td class="glab">FY-end position</td><td colspan="2"><span class="aval">14.7</span></td><td colspan="2"><span class="aval">13.9</span><span class="anote">−5.4%</span></td><td colspan="2"><span class="aval">10.1</span><span class="anote">−27%</span></td><td colspan="2"><span class="aval">10.8</span><span class="anote">+6.9%</span></td><td><span class="aval">—</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <details class="notes">
+      <summary>Turn methodology &amp; restatement basis</summary>
+      <div class="notesbody">
+        <p><b>Turn methodology (v4.0 display basis).</b> Every YoY, Δrate and arrow is computed in one script, comparison basis hard-coded per metric type: <b>flow</b> (revenue, PBT) displays seasonally matched YoY (H1-vs-H1, H2†-vs-H2†); the scored element is the banded Δrate — the change in that YoY vs the prior seasonally matched period, ±2.0pp H-grain band → 🟢↗ / 🟡→ / 🔴↘. Raw HonH is computed in script and retained here, never displayed: H1&#39;26 vs H2&#39;25† = −1.1%; H2&#39;25† vs H1&#39;25 = −1.8%. <b>Rate</b> (margin) = seasonally matched Δpp against the same band. <b>Snapshot</b> (order book, net cash) = position-to-position; cells carry sequential Δ per the B.4 template; ˢ arrows score the seasonally matched comparison (H1-vs-H1 / FY-vs-FY) because CHH cash phases seasonally — H1 dips every year (sequential and seasonal signs disagree at H1&#39;26: seq −£2.0m, YoY +57%; both shown). YoY for snapshots renders only on the aggregate row. Aggregate rows are transcribed company prints, never summed, never scored — the parent never governs. Derived-only arrows (†) are watch flags (wf) until a reported sub-period corroborates.</p>
+        <p><b>Arrow semantics changed vs the v3.10 build:</b> flow arrows now mark rate-of-change (deceleration of decline scores 🟢↗ even at a negative level — the level&#39;s sign lives in the red YoY brackets). The verdict card and §2.0 bar were reworded 31 Jul 2026 to the v4.0 basis (hard condition rests on margin compression + Text); full reconciliation of all sections lands at the Sep&#39;26 H1 Results rebuild.</p>
+        <p><b>Provenance:</b> ᶜ £2.8m is the 2024 year-start book (vs £7.2m at 2023 start), disclosed to explain the revenue fall. ʰ FY&#39;23 dual basis: +12.4% vs statutory FY22 / +18.7% vs adjusted FY22, both company-disclosed. ʳ H1&#39;23 restated in the H1&#39;24 doc (£4.9m→£4.5m op profit; £5.0m→£4.7m PBT); H1&#39;24 PBT YoY (+2.5%) and H2&#39;23† (£5.8m) are on the restated basis. H2&#39;22† £41.1m cross-verifies against the company&#39;s direct disclosure in the Jan&#39;24 TU (second route). Later audited figures govern earlier &ldquo;c.&rdquo; estimates. Buy/Sell column: H1 TU, 31 Jul 2026.</p>
+      </div>
+    </details>
+
+
+    <details class="notes">
+      <summary>Notes — Ranks 1–5</summary>
+      <div class="notesbody">
+        <p><b>Rank 1 —</b> The withhold finding is narrower than a full blackout: commentary ran continuously (Nov&#39;24 negative order-intake → Feb&#39;26/Apr&#39;26 &ldquo;pipeline ahead of / stronger than prior year&rdquo;), with one clean cadence withhold at Feb&#39;25. It is the <em>quantification</em> that stopped after Sep&#39;24 — so a returning hard number is the confirming signal to watch, not returning language.</p>
+        <p><b>Rank 2 —</b> Derived H2 margin decelerated its YoY decline: H2&#39;24 9.8% → H2&#39;25 7.7% (Δ −2.1pp) vs H1&#39;25&#39;s Δ −3.7pp. The compression is front-loaded, not backward-loaded — the FY aggregate reads worse than the exit rate.</p>
+        <p><b>Rank 3 —</b> Derived H2&#39;25 revenue turn (+0.3% YoY) was <b>not confirmed</b> by H1&#39;26 (£37.4m, −2.9%) — watch flag stands, weakened; the decline has decelerated three consecutive prints (−7.8% → −5.2% → −2.9%). H2&#39;22 £41.1m cross-verifies exactly against the Jan&#39;24 TU.</p>
+        <p><b>Rank 4 —</b> Derived H2 PBT (restated-H1 basis): H2&#39;24 £3.7m → H2&#39;25 £2.9m = −21.6% YoY, materially less severe than H1&#39;25&#39;s −35.4% — same front-loaded pattern as margin.</p>
+        <p><b>Rank 5 —</b> Never crossed to net debt; ungeared throughout, no covenants. H1&#39;26 £8.8m (+57% vs H1&#39;25 £5.6m) is the second consecutive green and the first hard figure ever quantified at TU grain — the strongest line in the record. B/S item — informs current state, excluded from the 2-of-3 count.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ §2.0 CURRENT STATE ============ -->
+  <section>
+    <h2 class="sec">§2.0 · Most-Recent-RNS Current-State Read</h2>
+    <p class="sub">Buy/Sell RNS: <b>H1 Trading Update, 31 Jul 2026</b> (revenue &amp; cash quantified). Trailing hard anchor: <b>Final Results, 13 Apr 2026 (FY25)</b>. H1 Results due early Sep&#39;26.</p>
+    <div class="checks">
+      <div class="ck"><div class="ckh">1 · Sequential (H1 TU Jul&#39;26 vs AGM May&#39;26)</div><div class="ckb">Consistent, now quantified — the AGM&#39;s &ldquo;broadly in line&rdquo; resolves to revenue <b>£37.4m vs H1&#39;25 £38.5m = −2.9% YoY</b>. No surprise, but no growth either.</div></div>
+      <div class="ck"><div class="ckh">2 · Same-type-vs-last-year (Jul&#39;26 TU vs Jul&#39;25 TU)</div><div class="ckb">Night and day — Jul&#39;25 was the profit warning (&ldquo;materially below target&rdquo;); Jul&#39;26 is a stabilisation statement. Tone recovery confirmed at the same calendar point.</div></div>
+      <div class="ck"><div class="ckh">3 · Every derivable sub-period</div><div class="ckb">None derivable — the TU carries no PBT, margin or EBITDA figure (consistent with H1-TU cadence: —, not ❌). The derived H2&#39;25 turn (+0.3%) is <b>not confirmed</b> by H1&#39;26&#39;s −2.9% — watch flag stands, weakened.</div></div>
+      <div class="ck"><div class="ckh">4 · Guidance-vs-prior-guide</div><div class="ckb">No numeric guide; &ldquo;in line with the <b>Board&#39;s</b> expectations&rdquo; — verbal reiteration, <b>G = flat</b>, no fire. Against the consensus yardstick it runs light: FY26E £77.8m implied H1 ≈ flat on £38.5m; £37.4m leaves H2 needing ~£40.4m (+6.9% on H2&#39;25†). The ~£3.0m H1 PBT anchor resolves in September.</div></div>
+    </div>
+    <div class="csbar" role="note">
+      <span class="cstag"><span class="emoji">🟡</span> STABLE — WATCH.</span> Confirmation missed: H1&#39;26 revenue −2.9% <span class="emoji">⚠️</span>, still a negative print, killing the clean green-shoot confirmation — yet the decline has nearly closed to zero (Δrate 🟢↗ +2.3pp) and cash (+57% YoY) plus first-time TU quantification are green <span class="emoji">🟢</span>. Deterioration 2-of-3 technically fires (margin compression, 3 consecutive <span class="emoji">🔴</span>, + Text falling 2 prints) with a heavy stabilisation discount — a bottoming print, not a re-warning. The new &ldquo;significance of the final quarter&rdquo; phrase is the sentence to watch: it echoes Sep&#39;24&#39;s year-end dependency, the pattern that preceded the Nov&#39;24 warning.
+    </div>
+    <details class="notes">
+      <summary>Notes — §2.0</summary>
+      <div class="notesbody">
+        <p><b>Buy/Sell figures re-verified exact</b> against the 31-Jul-26 RNS: H1&#39;26 revenue £37.4m (H1 2025: £38.5m); cash £8.8m (30 Jun 2025: £5.6m). FY&#39;25 backbone previously verified against the 13-Apr-26 RNS (£76.3m / £6.0m / £10.8m / £9.4m EBITDA / 39.7p EPS).</p>
+        <p><b>What flips it (Sep H1 R):</b> PBT ≥ ~£3.0m consensus anchor + Board&#39;s→market anchor restored = base confirmed; PBT materially below £3.0m, or the Q4-dependency language deepening, = the Nov&#39;24 pattern repeating and the call goes TURNING DOWN. A hard pipeline number upgrades Rank 1 either way.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ §3 TEXT + G ============ -->
+  <section>
+    <h2 class="sec">§3 · Text + G — Language Track</h2>
+    <p class="sub">Every print in the window. Score at the profit line, emoji-only. <b>G</b> = guidance trigger vs the company&#39;s own prior guide. <b>Guide met?</b> resolves only at FY Results rows. Changed-score rows shaded. Click a Doc cell to highlight that doc type.</p>
+    <div class="t3wrap">
+      <table class="t3" id="text3">
+        <thead><tr><th style="width:118px">Date · Doc</th><th style="width:70px">G</th><th style="width:190px">Guide met? (resolves at FY R)</th><th>Verbatim forward-guidance phrase</th><th style="width:52px">Score</th></tr></thead>
+        <tbody>
+          <tr data-rt="AGM"><td class="dc">Jun-22<span class="dl2">AGM</span></td><td class="gc">—</td><td class="gm">—</td><td class="ph">&ldquo;order book remains healthy… confident in our ability to deliver an improved year on year performance&rdquo;</td><td class="sc"><span class="emoji">🟢</span></td></tr>
+          <tr data-rt="H1TU"><td class="dc">Jul-22<span class="dl2">H1 TU</span></td><td class="gc">flat</td><td class="gm">—</td><td class="ph">&ldquo;no change in trading performance… demand levels remain strong&rdquo;</td><td class="sc"><span class="emoji">⚪</span></td></tr>
+          <tr data-rt="H1R"><td class="dc">Sep-22<span class="dl2">H1 R</span></td><td class="gc">flat</td><td class="gm">—</td><td class="ph">&ldquo;well positioned to continue to grow in line with our established strategy&rdquo;; record order books</td><td class="sc"><span class="emoji">🟢🟢</span></td></tr>
+          <tr data-rt="FYTU" class="changed"><td class="dc">Jan-23<span class="dl2">FY TU</span></td><td class="gc raise">🟢 RAISE</td><td class="gm">—</td><td class="ph">PBT &ldquo;will be at the <b>upper end of analyst expectations</b>&rdquo; (range £8.0–8.8m)</td><td class="sc"><span class="emoji">🟢🟢</span></td></tr>
+          <tr data-rt="FYR"><td class="dc">Apr-23<span class="dl2">FY R</span></td><td class="gc">flat</td><td class="gm"><b>FY22 resolves:</b> <span class="met">Jan-23 £8.0–8.8m: PBT +3.4% vs top (beat)</span></td><td class="ph">&ldquo;2023 has started well, Q1 targets met&rdquo;</td><td class="sc"><span class="emoji">🟢</span></td></tr>
+          <tr data-rt="AGM" class="changed"><td class="dc">Jun-23<span class="dl2">AGM</span></td><td class="gc">flat</td><td class="gm">—</td><td class="ph">&ldquo;trading remains <b>in line with our expectations</b>… on track to achieve full year profit expectations&rdquo;</td><td class="sc"><span class="emoji">⚪</span></td></tr>
+          <tr data-rt="H1TU" class="changed"><td class="dc">Jul-23<span class="dl2">H1 TU</span></td><td class="gc">flat</td><td class="gm">—</td><td class="ph">&ldquo;trading remained in line with <b>the Board&#39;s expectations</b>&rdquo; <span style="color:var(--red)">(market→Board switch)</span></td><td class="sc"><span class="emoji">🔴</span></td></tr>
+          <tr data-rt="H1R"><td class="dc">Sep-23<span class="dl2">H1 R</span></td><td class="gc">flat</td><td class="gm">—</td><td class="ph">&ldquo;good position to meet <b>the Board&#39;s</b> profit expectations for the full year&rdquo;</td><td class="sc"><span class="emoji">🔴</span></td></tr>
+          <tr data-rt="FYTU" class="changed"><td class="dc">Jan-24<span class="dl2">FY TU</span></td><td class="gc">flat</td><td class="gm">—</td><td class="ph">&ldquo;in line with analyst forecasts… <b>particularly pleasing given a more challenging sales backdrop in H2</b>&rdquo;</td><td class="sc"><span class="emoji">🔴🔴</span></td></tr>
+          <tr data-rt="FYR" class="changed"><td class="dc">Apr-24<span class="dl2">FY R</span></td><td class="gc">flat</td><td class="gm"><b>FY23 resolves:</b> <span class="met">Jan-24 (verbal): met</span></td><td class="ph">&ldquo;2024 Q1 in line with expectations&rdquo;</td><td class="sc"><span class="emoji">⚪</span></td></tr>
+          <tr data-rt="AGM" class="changed"><td class="dc">Jun-24<span class="dl2">AGM</span></td><td class="gc">flat</td><td class="gm">—</td><td class="ph">&ldquo;trading remains <b>broadly in line with management&#39;s expectations</b>… Board&#39;s expectations unchanged&rdquo;</td><td class="sc"><span class="emoji">🔴🔴</span></td></tr>
+          <tr data-rt="H1R"><td class="dc">Sep-24<span class="dl2">H1 R</span></td><td class="gc">flat</td><td class="gm">—</td><td class="ph">&ldquo;<b>broadly in line</b> with expectations… <b>remain dependent</b> on stronger demand in the final four months&rdquo;</td><td class="sc"><span class="emoji">🔴🔴</span></td></tr>
+          <tr data-rt="TU" class="changed"><td class="dc">Nov-24<span class="dl2">TU</span></td><td class="gc cut">🔴 CUT</td><td class="gm">—</td><td class="ph">profitability &ldquo;<b>materially below market expectations</b>&rdquo;; FY25 profit &ldquo;reduced from current market expectations&rdquo;</td><td class="sc"><span class="emoji">🔴🔴🔴</span></td></tr>
+          <tr data-rt="FYTU" class="changed"><td class="dc">Feb-25<span class="dl2">FY TU</span></td><td class="gc">flat</td><td class="gm">—</td><td class="ph">&ldquo;met the Company and market&#39;s expectations… <b>no change to the guidance issued in November</b>&rdquo; (£8.5m)</td><td class="sc"><span class="emoji">⚪</span></td></tr>
+          <tr data-rt="FYR" class="changed"><td class="dc">Apr-25<span class="dl2">FY R</span></td><td class="gc">—</td><td class="gm"><b>FY24 resolves:</b> <span class="met">Jun-24 (verbal): superseded · Nov-24 (verbal cut): superseded · Feb-25 £8.5m: PBT +0.0% (met)</span></td><td class="ph">Outlook &ldquo;more uncertain&rdquo; on new installations; healthy replacement business expected to continue</td><td class="sc"><span class="emoji">🔴</span></td></tr>
+          <tr data-rt="AGM"><td class="dc">May-25<span class="dl2">AGM</span></td><td class="gc">—</td><td class="gm">—</td><td class="ph">&ldquo;hospitality markets remain <b>under pressure</b>… confident in the medium term&rdquo;</td><td class="sc"><span class="emoji">🔴</span></td></tr>
+          <tr data-rt="TU" class="changed"><td class="dc">Jul-25<span class="dl2">TU</span></td><td class="gc cut">🔴 CUT</td><td class="gm">—</td><td class="ph">&ldquo;May and particularly June was <b>materially below target</b>… revenue and profits significantly below the prior year&rdquo;</td><td class="sc"><span class="emoji">🔴🔴🔴</span></td></tr>
+          <tr data-rt="H1R" class="changed"><td class="dc">Sep-25<span class="dl2">H1 R</span></td><td class="gc">flat</td><td class="gm">—</td><td class="ph">&ldquo;performance… <b>below that initially expected</b>, as highlighted in our July trading update&rdquo;</td><td class="sc"><span class="emoji">🔴🔴</span></td></tr>
+          <tr data-rt="FYTU" class="changed"><td class="dc">Feb-26<span class="dl2">FY TU</span></td><td class="gc">flat</td><td class="gm">—</td><td class="ph">&ldquo;second half… <b>met its expectations</b>… PBT in line with market expectations&rdquo; (£6.0m)</td><td class="sc"><span class="emoji">🟢</span></td></tr>
+          <tr data-rt="FYR"><td class="dc">Apr-26<span class="dl2">FY R</span></td><td class="gc">flat</td><td class="gm"><b>FY25 resolves:</b> <span class="met">May-25 (verbal): superseded · Jul-25 (verbal cut): superseded · Feb-26 £6.0m: PBT +0.0% (met)</span></td><td class="ph">&ldquo;traded in line with the expectations we set in July… second half showed <b>early signs of improved trading</b> in mainland Europe&rdquo;</td><td class="sc"><span class="emoji">🟢</span></td></tr>
+          <tr data-rt="AGM" class="changed"><td class="dc">May-26<span class="dl2">AGM</span></td><td class="gc">flat</td><td class="gm">—</td><td class="ph">&ldquo;hospitality sales remain <b>broadly in line</b> with expectations… confident in our long-term outlook&rdquo;</td><td class="sc"><span class="emoji">🔴</span></td></tr>
+          <tr data-rt="H1TU" class="changed"><td class="dc">Jul-26<span class="dl2">H1 TU</span></td><td class="gc">flat</td><td class="gm">— <span style="color:var(--mute)">(guide live)</span></td><td class="ph">&ldquo;remained in line with <b>the Board&#39;s expectations</b>… sales visibility remains limited… <b>recognising the significance of the final quarter</b>… Middle East continues to present a risk&rdquo;</td><td class="sc"><span class="emoji">🔴🔴</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <details class="notes">
+      <summary>Notes — §3</summary>
+      <div class="notesbody">
+        <p><b>G-fires this run:</b> 1× 🟢 RAISE (Jan&#39;23), 2× 🔴 CUT (Nov&#39;24, Jul&#39;25). The &ldquo;market&rdquo;→&ldquo;Board&#39;s/management&#39;s expectations&rdquo; switch across 2023–24 is a sustained negative framing shift, scored negative throughout.</p>
+        <p><b>Jul-26 scoring:</b> Board&#39;s-expectations anchor (habitual at H1 TUs since Jul-23 — partly calibration) + a new Q4-dependency flag (&ldquo;significance of the final quarter&rdquo;, echoing Sep-24&#39;s &ldquo;dependent on the final four months&rdquo;) + a named unresolved headwind → −2. Text now falling two consecutive prints (Apr 🟢 → May 🔴 → Jul 🔴🔴) — Text condition technically fires.</p>
+        <p><b>Guide-vs-outturn read:</b> a serial <em>exact-meeter</em> once numerically anchored — never misses its own final numeric guide (FY22 beat; FY23/24/25 all met at ~0%). Caveat: the anchor itself was reset downward twice in 18 months (Nov&#39;24, Jul&#39;25) before being met — reliability is against a moving target, not a fixed one.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ §4 DRIFT ============ -->
+  <section>
+    <h2 class="sec">§4 · Drift — Disclosure Matrix</h2>
+    <p class="sub">22 qualifying columns = manifest qualifying count (6 noise docs excluded). <span class="emoji">✅</span> quantified · <span class="emoji">🟡</span> qualitative-only · <span class="emoji">❌</span> withheld against cadence · — structurally outside that doc-type. Click a header to highlight all columns of that period type.</p>
+    <div class="dwrap">
+      <table class="drift" id="drift">
+        <colgroup><col class="dlab"><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col></colgroup>
+        <thead><tr>
+          <th class="dlab">Metric</th>
+          <th data-rt="AGM"><span class="dt">Jun-22</span><span class="kt">AGM</span></th>
+          <th data-rt="H1TU"><span class="dt">Jul-22</span><span class="kt">H1TU</span></th>
+          <th data-rt="H1R"><span class="dt">Sep-22</span><span class="kt">H1R</span></th>
+          <th data-rt="FYTU"><span class="dt">Jan-23</span><span class="kt">FYTU</span></th>
+          <th data-rt="FYR"><span class="dt">Apr-23</span><span class="kt">FYR</span></th>
+          <th data-rt="AGM"><span class="dt">Jun-23</span><span class="kt">AGM</span></th>
+          <th data-rt="H1TU"><span class="dt">Jul-23</span><span class="kt">H1TU</span></th>
+          <th data-rt="H1R"><span class="dt">Sep-23</span><span class="kt">H1R</span></th>
+          <th data-rt="FYTU"><span class="dt">Jan-24</span><span class="kt">FYTU</span></th>
+          <th data-rt="FYR"><span class="dt">Apr-24</span><span class="kt">FYR</span></th>
+          <th data-rt="AGM"><span class="dt">Jun-24</span><span class="kt">AGM</span></th>
+          <th data-rt="H1R"><span class="dt">Sep-24</span><span class="kt">H1R</span></th>
+          <th data-rt="TU"><span class="dt">Nov-24</span><span class="kt">TU</span></th>
+          <th data-rt="FYTU"><span class="dt">Feb-25</span><span class="kt">FYTU</span></th>
+          <th data-rt="FYR"><span class="dt">Apr-25</span><span class="kt">FYR</span></th>
+          <th data-rt="AGM"><span class="dt">May-25</span><span class="kt">AGM</span></th>
+          <th data-rt="TU"><span class="dt">Jul-25</span><span class="kt">TU</span></th>
+          <th data-rt="H1R"><span class="dt">Sep-25</span><span class="kt">H1R</span></th>
+          <th data-rt="FYTU"><span class="dt">Feb-26</span><span class="kt">FYTU</span></th>
+          <th data-rt="FYR"><span class="dt">Apr-26</span><span class="kt">FYR</span></th>
+          <th data-rt="AGM"><span class="dt">May-26</span><span class="kt">AGM</span></th>
+          <th data-rt="H1TU"><span class="dt">Jul-26</span><span class="kt">H1TU</span></th>
+        </tr></thead>
+        <tbody>
+          <tr><td class="rlab">Order book</td>
+            <td data-rt="AGM"><span class="emoji">🟡</span></td><td data-rt="H1TU"><span class="emoji">🟡</span></td><td data-rt="H1R"><span class="emoji">🟡</span></td><td data-rt="FYTU"><span class="emoji">🟡</span></td><td data-rt="FYR"><span class="emoji">🟡</span></td><td data-rt="AGM"><span class="emoji">—</span></td><td data-rt="H1TU"><span class="emoji">—</span></td><td data-rt="H1R"><span class="emoji">🟡</span></td><td data-rt="FYTU"><span class="emoji">—</span></td><td data-rt="FYR"><span class="emoji">🟡</span></td><td data-rt="AGM"><span class="emoji">—</span></td><td data-rt="H1R"><span class="emoji">✅</span><span class="qv">£2.8m</span></td><td data-rt="TU"><span class="emoji">🟡</span><span class="qv">neg</span></td><td data-rt="FYTU"><span class="emoji">❌</span></td><td data-rt="FYR"><span class="emoji">🟡</span></td><td data-rt="AGM"><span class="emoji">🟡</span></td><td data-rt="TU"><span class="emoji">🟡</span></td><td data-rt="H1R"><span class="emoji">🟡</span></td><td data-rt="FYTU"><span class="emoji">🟡</span><span class="qv">+</span></td><td data-rt="FYR"><span class="emoji">🟡</span><span class="qv">+</span></td><td data-rt="AGM"><span class="emoji">—</span></td><td data-rt="H1TU"><span class="emoji">—</span></td>
+          </tr>
+          <tr><td class="rlab">Revenue</td>
+            <td data-rt="AGM"><span class="emoji">—</span></td><td data-rt="H1TU"><span class="emoji">🟡</span></td><td data-rt="H1R"><span class="emoji">✅</span></td><td data-rt="FYTU"><span class="emoji">✅</span></td><td data-rt="FYR"><span class="emoji">✅</span></td><td data-rt="AGM"><span class="emoji">🟡</span></td><td data-rt="H1TU"><span class="emoji">🟡</span></td><td data-rt="H1R"><span class="emoji">✅</span></td><td data-rt="FYTU"><span class="emoji">✅</span></td><td data-rt="FYR"><span class="emoji">✅</span></td><td data-rt="AGM"><span class="emoji">🟡</span></td><td data-rt="H1R"><span class="emoji">✅</span></td><td data-rt="TU"><span class="emoji">🟡</span></td><td data-rt="FYTU"><span class="emoji">✅</span></td><td data-rt="FYR"><span class="emoji">✅</span></td><td data-rt="AGM"><span class="emoji">🟡</span></td><td data-rt="TU"><span class="emoji">🟡</span></td><td data-rt="H1R"><span class="emoji">✅</span></td><td data-rt="FYTU"><span class="emoji">✅</span><span class="qv">c.76</span></td><td data-rt="FYR"><span class="emoji">✅</span></td><td data-rt="AGM"><span class="emoji">—</span></td><td data-rt="H1TU"><span class="emoji">✅</span><span class="qv">37.4</span></td>
+          </tr>
+          <tr><td class="rlab">Op profit / PBT</td>
+            <td data-rt="AGM"><span class="emoji">—</span></td><td data-rt="H1TU"><span class="emoji">—</span></td><td data-rt="H1R"><span class="emoji">✅</span></td><td data-rt="FYTU"><span class="emoji">🟡</span></td><td data-rt="FYR"><span class="emoji">✅</span></td><td data-rt="AGM"><span class="emoji">🟡</span></td><td data-rt="H1TU"><span class="emoji">🟡</span></td><td data-rt="H1R"><span class="emoji">✅</span></td><td data-rt="FYTU"><span class="emoji">🟡</span></td><td data-rt="FYR"><span class="emoji">✅</span></td><td data-rt="AGM"><span class="emoji">🟡</span></td><td data-rt="H1R"><span class="emoji">✅</span></td><td data-rt="TU"><span class="emoji">🟡</span></td><td data-rt="FYTU"><span class="emoji">✅</span><span class="qv">8.5</span></td><td data-rt="FYR"><span class="emoji">✅</span></td><td data-rt="AGM"><span class="emoji">🟡</span></td><td data-rt="TU"><span class="emoji">🟡</span></td><td data-rt="H1R"><span class="emoji">✅</span></td><td data-rt="FYTU"><span class="emoji">✅</span><span class="qv">6.0</span></td><td data-rt="FYR"><span class="emoji">✅</span></td><td data-rt="AGM"><span class="emoji">—</span></td><td data-rt="H1TU"><span class="emoji">🟡</span></td>
+          </tr>
+          <tr><td class="rlab">EPS</td>
+            <td data-rt="AGM"><span class="emoji">—</span></td><td data-rt="H1TU"><span class="emoji">—</span></td><td data-rt="H1R"><span class="emoji">✅</span></td><td data-rt="FYTU"><span class="emoji">—</span></td><td data-rt="FYR"><span class="emoji">✅</span></td><td data-rt="AGM"><span class="emoji">—</span></td><td data-rt="H1TU"><span class="emoji">—</span></td><td data-rt="H1R"><span class="emoji">✅</span></td><td data-rt="FYTU"><span class="emoji">—</span></td><td data-rt="FYR"><span class="emoji">✅</span></td><td data-rt="AGM"><span class="emoji">—</span></td><td data-rt="H1R"><span class="emoji">✅</span></td><td data-rt="TU"><span class="emoji">—</span></td><td data-rt="FYTU"><span class="emoji">—</span></td><td data-rt="FYR"><span class="emoji">✅</span></td><td data-rt="AGM"><span class="emoji">—</span></td><td data-rt="TU"><span class="emoji">—</span></td><td data-rt="H1R"><span class="emoji">✅</span></td><td data-rt="FYTU"><span class="emoji">—</span></td><td data-rt="FYR"><span class="emoji">✅</span></td><td data-rt="AGM"><span class="emoji">—</span></td><td data-rt="H1TU"><span class="emoji">—</span></td>
+          </tr>
+          <tr><td class="rlab">Dividend</td>
+            <td data-rt="AGM"><span class="emoji">—</span></td><td data-rt="H1TU"><span class="emoji">—</span></td><td data-rt="H1R"><span class="emoji">✅</span></td><td data-rt="FYTU"><span class="emoji">—</span></td><td data-rt="FYR"><span class="emoji">✅</span></td><td data-rt="AGM"><span class="emoji">—</span></td><td data-rt="H1TU"><span class="emoji">—</span></td><td data-rt="H1R"><span class="emoji">✅</span></td><td data-rt="FYTU"><span class="emoji">—</span></td><td data-rt="FYR"><span class="emoji">✅</span></td><td data-rt="AGM"><span class="emoji">—</span></td><td data-rt="H1R"><span class="emoji">✅</span></td><td data-rt="TU"><span class="emoji">—</span></td><td data-rt="FYTU"><span class="emoji">—</span></td><td data-rt="FYR"><span class="emoji">✅</span></td><td data-rt="AGM"><span class="emoji">—</span></td><td data-rt="TU"><span class="emoji">—</span></td><td data-rt="H1R"><span class="emoji">✅</span></td><td data-rt="FYTU"><span class="emoji">—</span></td><td data-rt="FYR"><span class="emoji">✅</span></td><td data-rt="AGM"><span class="emoji">—</span></td><td data-rt="H1TU"><span class="emoji">—</span></td>
+          </tr>
+          <tr><td class="rlab">Net cash</td>
+            <td data-rt="AGM"><span class="emoji">—</span></td><td data-rt="H1TU"><span class="emoji">—</span></td><td data-rt="H1R"><span class="emoji">✅</span></td><td data-rt="FYTU"><span class="emoji">—</span></td><td data-rt="FYR"><span class="emoji">✅</span></td><td data-rt="AGM"><span class="emoji">—</span></td><td data-rt="H1TU"><span class="emoji">—</span></td><td data-rt="H1R"><span class="emoji">✅</span></td><td data-rt="FYTU"><span class="emoji">—</span></td><td data-rt="FYR"><span class="emoji">✅</span></td><td data-rt="AGM"><span class="emoji">—</span></td><td data-rt="H1R"><span class="emoji">✅</span></td><td data-rt="TU"><span class="emoji">—</span></td><td data-rt="FYTU"><span class="emoji">—</span></td><td data-rt="FYR"><span class="emoji">✅</span></td><td data-rt="AGM"><span class="emoji">—</span></td><td data-rt="TU"><span class="emoji">—</span></td><td data-rt="H1R"><span class="emoji">✅</span></td><td data-rt="FYTU"><span class="emoji">✅</span><span class="qv">10.8</span></td><td data-rt="FYR"><span class="emoji">✅</span></td><td data-rt="AGM"><span class="emoji">—</span></td><td data-rt="H1TU"><span class="emoji">✅</span><span class="qv">8.8</span></td>
+          </tr>
+          <tr><td class="rlab">EBITDA</td>
+            <td data-rt="AGM"><span class="emoji">—</span></td><td data-rt="H1TU"><span class="emoji">—</span></td><td data-rt="H1R"><span class="emoji">—</span></td><td data-rt="FYTU"><span class="emoji">—</span></td><td data-rt="FYR"><span class="emoji">—</span></td><td data-rt="AGM"><span class="emoji">—</span></td><td data-rt="H1TU"><span class="emoji">—</span></td><td data-rt="H1R"><span class="emoji">—</span></td><td data-rt="FYTU"><span class="emoji">—</span></td><td data-rt="FYR"><span class="emoji">—</span></td><td data-rt="AGM"><span class="emoji">—</span></td><td data-rt="H1R"><span class="emoji">—</span></td><td data-rt="TU"><span class="emoji">—</span></td><td data-rt="FYTU"><span class="emoji">—</span></td><td data-rt="FYR"><span class="emoji">✅</span><span class="qv">new</span></td><td data-rt="AGM"><span class="emoji">—</span></td><td data-rt="TU"><span class="emoji">—</span></td><td data-rt="H1R"><span class="emoji">✅</span></td><td data-rt="FYTU"><span class="emoji">—</span></td><td data-rt="FYR"><span class="emoji">✅</span></td><td data-rt="AGM"><span class="emoji">—</span></td><td data-rt="H1TU"><span class="emoji">—</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="legend">
+      <b>First note (latest column, Jul-26 H1 TU):</b> revenue and net cash <b>quantified at TU grain for the first time in the record</b> (prior H1 TUs qualitative-only) — a disclosure expansion, mildly green. Order book unmentioned (—, structural at TU grain); PBT qualitative as usual.<br>
+      <b>Key findings:</b> Order-book <em>quantification</em> stopped after Sep-24 (£2.8m, last hard number); one clean withhold (Feb-25 FYTU) against established FY-TU cadence; commentary otherwise continuous, turning positive from Feb-26. · EBITDA is a disclosure <em>expansion</em> (first Apr-25), not a withdrawal. · Revenue / PBT / EPS / Dividend / Net cash: no withholds at their proper H1R/FYR/FYTU grain.
+    </div>
+  </section>
+
+  <div class="foot">
+    CHH · Churchill China plc (AIM) · Longitudinal Drift Tracker v3.10 · Forward signals only — no backbone or statutory tables rendered. All figures RNS-sourced; base build audited (Stages A–E); H1&#39;26 TU cells added by incremental read, 31 Jul 2026. B/S sweep: net-cash / ungeared throughout, no going-concern or covenant flags; dividend cut + prior 5-print cash decline = two Tier-2 notes (cash leg since reversed). Turn 🔴 means slowing/falling, not bad.
+  </div>
+
+</div>
+
+<script>
+(function(){
+  // §2 grid v4.0: click period header highlights all columns of that period type (colspan rows skipped)
+  var fg=document.getElementById('fg');
+  if(fg){
+    var perHeaders=fg.querySelectorAll('.perrow2 th[data-p]');
+    var activePer=null;
+    perHeaders.forEach(function(th){
+      th.addEventListener('click',function(){
+        var per=th.getAttribute('data-p');
+        var clearing=(activePer===per);
+        fg.querySelectorAll('.perrow2 th.hl').forEach(function(h){h.classList.remove('hl');});
+        fg.querySelectorAll('td.hl').forEach(function(c){c.classList.remove('hl');});
+        if(clearing){activePer=null;return;}
+        activePer=per;
+        var idxs=[];
+        fg.querySelectorAll('.perrow2 th').forEach(function(h,i){ if(h.getAttribute('data-p')===per){h.classList.add('hl'); idxs.push(i);} });
+        fg.querySelectorAll('tbody tr').forEach(function(tr){
+          var hasSpan=Array.prototype.some.call(tr.children,function(c){return c.colSpan>1;});
+          if(hasSpan) return; // aggregate/secbar rows skipped
+          var cells=tr.children;
+          idxs.forEach(function(i){ if(cells[i]) cells[i].classList.add('hl'); });
+        });
+      });
+    });
+  }
+
+  // §3 Text+G: click Doc cell highlights all rows of that doc type
+  var t3=document.getElementById('text3');
+  if(t3){
+    var activeRt=null;
+    t3.querySelectorAll('td.dc').forEach(function(td){
+      td.addEventListener('click',function(){
+        var tr=td.parentElement; var rt=tr.getAttribute('data-rt');
+        var clearing=(activeRt===rt);
+        t3.querySelectorAll('tr.rowhl').forEach(function(r){r.classList.remove('rowhl');});
+        if(clearing){activeRt=null;return;}
+        activeRt=rt;
+        t3.querySelectorAll('tbody tr').forEach(function(r){ if(r.getAttribute('data-rt')===rt) r.classList.add('rowhl'); });
+      });
+    });
+  }
+
+  // §4 Drift: click header highlights every column sharing the period-type key
+  var drift=document.getElementById('drift');
+  if(drift){
+    var heads=drift.querySelectorAll('thead th[data-rt]');
+    var activeD=null;
+    heads.forEach(function(th){
+      th.addEventListener('click',function(){
+        var rt=th.getAttribute('data-rt');
+        var clearing=(activeD===rt);
+        drift.querySelectorAll('.colhl').forEach(function(c){c.classList.remove('colhl');});
+        if(clearing){activeD=null;return;}
+        activeD=rt;
+        drift.querySelectorAll('[data-rt="'+rt+'"]').forEach(function(c){ c.classList.add('colhl'); });
+      });
+    });
+  }
+})();
+</script>
+<script type="application/json" id="drift-entry">{"ticker": "CHH", "company": "Churchill China plc", "direction": "watch", "headline": "H1'26 revenue −2.9% misses the confirming turn but nearly closes the decline; cash surges — a bottoming print with a new Q4-dependency flag.", "trigger": "Deterioration 2-of-3 technically met (margin compression, 3 consecutive 🔴, + Text falling 2 prints) — heavily discounted as a stabilising base; no undiscounted fire.", "alert": false, "rns_type": "H1 TU", "rns_date": "2026-07-31", "build_date": "2026-07-31", "spec_version": "v3.10 base + §2 grid v4.0", "next_test": "Sep H1 R: PBT vs ~£3.0m consensus anchor, margin read, and any hard pipeline number decide the call.", "url": "CHH.html"}</script>
+</body>
+</html>
