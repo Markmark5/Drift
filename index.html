@@ -195,26 +195,39 @@ function load(){
 }
 var CH={g:'g',a:'a',r:'r',x:'x'};
 function esc(s){return String(s).replace(/[&<>]/g,function(m){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[m];});}
+var GRIDN=12;
+function fit(s){ /* rigid width: keep rightmost GRIDN, pad left with blanks */
+  s=String(s);
+  if(s.length>GRIDN)return s.slice(s.length-GRIDN);
+  while(s.length<GRIDN)s='-'+s;
+  return s;
+}
+function fitArr(a){
+  a=(a||[]).slice();
+  if(a.length>GRIDN)return a.slice(a.length-GRIDN);
+  while(a.length<GRIDN)a.unshift('');
+  return a;
+}
 function gridHTML(x){
   var gr=x.grid;
   if(!gr||!gr.rows||!gr.rows.length)return '';
   var labs=gr.labels||[];
-  var n=gr.rows[0].length;
-  for(var i=0;i<gr.rows.length;i++){if(gr.rows[i].length!==n)return '';}
+  var n=GRIDN;
   var labw=0;labs.forEach(function(l){if(String(l).length>labw)labw=String(l).length;});
   var w=Math.max(17,labw*6+3);
   var out='<div class="gB">';
   gr.rows.forEach(function(row,ri){
+    var rw=fit(row);
     out+='<div class="grow"><span class="lab" style="width:'+w+'px">'+esc(labs[ri]||('R'+(ri+1)))+'</span><div class="bars">';
     for(var k=0;k<n;k++){
-      var ch=CH[row.charAt(k)]||'';
+      var ch=CH[rw.charAt(k)]||'';
       out+='<i class="b '+ch+(k===n-1?' last':'')+'"></i>';
     }
     out+='</div></div>';
   });
-  if(gr.periods&&gr.periods.length===n){
+  if(gr.periods&&gr.periods.length){
     out+='<div class="axis"><span class="sp" style="width:'+(w+6)+'px"></span>';
-    gr.periods.forEach(function(p){out+='<span class="c">'+esc(p)+'</span>';});
+    fitArr(gr.periods).forEach(function(p){out+='<span class="c">'+esc(p)+'</span>';});
     out+='</div>';
   }
   if(gr.note)out+='<div class="rowkey">'+esc(gr.note)+'</div>';
@@ -333,13 +346,13 @@ function validateEntry(txt){
   if(e.grid){
     if(!e.grid.rows||!e.grid.rows.length)throw new Error('grid present but grid.rows is empty.');
     var n=e.grid.rows[0].length;
-    if(n<1||n>16)throw new Error('grid rows must be 1-16 characters (got '+n+').');
+    if(n<1||n>24)throw new Error('grid rows must be 1-24 characters (got '+n+'); the wall renders the rightmost 12.');
     for(var i=0;i<e.grid.rows.length;i++){
       if(e.grid.rows[i].length!==n)throw new Error('grid row '+(i+1)+' is '+e.grid.rows[i].length+' chars, expected '+n+'.');
       if(/[^garx-]/.test(e.grid.rows[i]))throw new Error('grid row '+(i+1)+' has characters outside g/a/r/x/-.');
     }
     if(e.grid.labels&&e.grid.labels.length!==e.grid.rows.length)throw new Error('grid.labels count must match grid.rows count.');
-    if(e.grid.periods&&e.grid.periods.length!==n)throw new Error('grid.periods count must equal row length.');
+    if(e.grid.periods&&e.grid.periods.length!==n)throw new Error('grid.periods count ('+e.grid.periods.length+') must equal row length ('+n+').');
   }
   return e;
 }
