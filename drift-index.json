@@ -113,7 +113,7 @@
       "next_test": "H1 FY26 interims, late Sept 2026 — first reported test of a 31% revenue step.",
       "url": "BILN.html",
       "grid": {
-        "note": "Rows = ranks 1-5 at half-year grain. 8 halves, newest right.",
+        "note": "Rows = ranks 1-5 · half-year grain · newest right (Buy/Sell)",
         "labels": [
           "R1",
           "R2",
@@ -122,6 +122,10 @@
           "R5"
         ],
         "periods": [
+          "",
+          "",
+          "",
+          "",
           "H1",
           "H2",
           "H1",
@@ -132,11 +136,11 @@
           "H2"
         ],
         "rows": [
-          "--a-gara",
-          "-------a",
-          "--ggaarr",
-          "----rrrg",
-          "----rrrr"
+          "------a-gara",
+          "-----------a",
+          "------ggaarr",
+          "--------rrrg",
+          "--------rrrr"
         ]
       }
     },
@@ -280,7 +284,7 @@
       "next_test": "Sep-26 HY26 Full Results — watch underlying revenue vs +1%, H2 EBITDA vs implied £71.6m, Healthcare CFR",
       "url": "DATA.html",
       "grid": {
-        "note": "Rows = ranks 1-5 at half-year grain. 9 halves, newest right.",
+        "note": "Rows = ranks 1-5 · half-year grain · newest right (Buy/Sell)",
         "labels": [
           "R1",
           "R2",
@@ -289,6 +293,9 @@
           "R5"
         ],
         "periods": [
+          "",
+          "",
+          "",
           "H1",
           "H2",
           "H1",
@@ -300,11 +307,11 @@
           "H1"
         ],
         "rows": [
-          "-grgrgrgr",
-          "----raggr",
-          "--gggarra",
-          "----aaara",
-          "----rrrrg"
+          "----grgrgrgr",
+          "-------raggr",
+          "-----gggarra",
+          "-------aaara",
+          "-------rrrrg"
         ]
       }
     },
