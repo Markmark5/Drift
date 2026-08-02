@@ -86,6 +86,9 @@ body{background:var(--bg);font-family:var(--mono);color:var(--text-primary);font
 .pips .ptxt.r{color:var(--red);}
 .pips .ptxt.g{color:var(--green);}
 .pips .ptxt.a{color:var(--amber);}
+.tier1{display:inline-flex;align-items:center;gap:3px;font-size:8.5px;font-weight:700;letter-spacing:.05em;
+  text-transform:uppercase;background:var(--red-dim);border:1px solid var(--red-mid);color:var(--red);
+  border-radius:3px;padding:2px 6px;margin-left:auto;white-space:nowrap;}
 .overlay{position:fixed;inset:0;z-index:300;display:none;align-items:flex-start;justify-content:center;padding:60px 16px;pointer-events:none;}
 .overlay.show{display:flex;}
 .modal{background:var(--surface2);border:1px solid var(--border-bright);border-radius:6px;width:100%;max-width:560px;padding:16px;
@@ -237,7 +240,8 @@ function pipHTML(x){
   if(typeof x.fired!=='number'||typeof x.fired_of!=='number'){
     var m=String(x.trigger||'').match(/(\d+)\s*[-\s]?of[-\s]?\s*(\d+)/i);
     if(m){var f=+m[1],fo=+m[2];if(fo>0&&fo<=8&&f<=fo)return pips(x,f,fo);}
-    return x.trigger?'<div class="trigfall">'+esc(x.trigger)+'</div>':'';
+    var t=x.tier1===true?'<div class="pips"><span class="tier1" style="margin-left:0">⛔ Tier-1</span></div>':'';
+    return t+(x.trigger?'<div class="trigfall">'+esc(x.trigger)+'</div>':'');
   }
   return pips(x,x.fired,x.fired_of);
 }
@@ -245,7 +249,9 @@ function pips(x,f,fo){
   var cls=x.direction==='up'?'g':(x.direction==='watch'?'a':'r');
   var out='<div class="pips"><div class="pipset">';
   for(var i=0;i<fo;i++)out+='<i class="p'+(i<f?' '+cls:'')+'"></i>';
-  out+='</div><span class="ptxt '+cls+'">'+f+' of '+fo+' fired</span></div>';
+  out+='</div><span class="ptxt '+cls+'">'+f+' of '+fo+' fired</span>';
+  if(x.tier1===true)out+='<span class="tier1" title="Tier-1 balance-sheet flag">⛔ Tier-1</span>';
+  out+='</div>';
   return out;
 }
 function render(){
