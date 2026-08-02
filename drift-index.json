@@ -111,7 +111,34 @@
       "build_date": "2026-07-29",
       "spec_version": "v3.16",
       "next_test": "H1 FY26 interims, late Sept 2026 — first reported test of a 31% revenue step.",
-      "url": "BILN.html"
+      "url": "BILN.html",
+      "grid": {
+        "note": "Rows = ranks 1-5 at half-year grain. 8 halves, newest right.",
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2"
+        ],
+        "rows": [
+          "--a-gara",
+          "-------a",
+          "--ggaarr",
+          "----rrrg",
+          "----rrrr"
+        ]
+      }
     },
     {
       "ticker": "DSCV",
@@ -251,7 +278,35 @@
       "build_date": "2026-07-30",
       "spec_version": "v4.0",
       "next_test": "Sep-26 HY26 Full Results — watch underlying revenue vs +1%, H2 EBITDA vs implied £71.6m, Healthcare CFR",
-      "url": "DATA.html"
+      "url": "DATA.html",
+      "grid": {
+        "note": "Rows = ranks 1-5 at half-year grain. 9 halves, newest right.",
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1"
+        ],
+        "rows": [
+          "-grgrgrgr",
+          "----raggr",
+          "--gggarra",
+          "----aaara",
+          "----rrrrg"
+        ]
+      }
     },
     {
       "ticker": "SNX",
@@ -344,4 +399,4 @@
       }
     }
   ]
-    }
+}
