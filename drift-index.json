@@ -323,6 +323,40 @@
       "next_test": "BWY FY26 TU 11 Aug 26; PSN H1 R (Aug); BTRW FY26 R 16 Sep 26",
       "url": "Housebuilders Sector.html",
       "companies_fired": 3
+    },
+    {
+      "ticker": "HOUSEBUILDERS",
+      "kind": "sector",
+      "company": "UK Listed Housebuilders (BTRW · PSN · TW · BKG · BWY)",
+      "direction": "down",
+      "headline": "Three of five cut guidance inside five months — TW's completions-and-dividend cut is the sector's confirming print.",
+      "trigger": "3-of-5 sector: TW (G CUT + Text -2 + margin compression) + BKG (G CUT + H2 PBT -22% + five sequential fwd-sales declines) + BTRW (outlet guide CUT)",
+      "fired": 3,
+      "fired_of": 5,
+      "alert": true,
+      "rns_type": "H1 R",
+      "rns_date": "2026-07-31",
+      "build_date": "2026-08-02",
+      "spec_version": "v4.6-S",
+      "next_test": "BWY FY26 TU 11 Aug 26; PSN H1 R (Aug); BTRW FY26 R 16 Sep 26",
+      "url": "Housebuilders-Sector.html",
+      "grid": {
+        "note": "Rows = each company's Rank 1 (net private reservations / outlet / week). 12 most recent prints, newest right.",
+        "labels": [
+          "BTRW",
+          "PSN",
+          "TW",
+          "BKG",
+          "BWY"
+        ],
+        "rows": [
+          "-gggg-ggaaga",
+          "-ggg-gaagaag",
+          "rggggggrrarr",
+          "-r-r-raa-rar",
+          "gggggggggrrr"
+        ]
+      }
     }
   ]
 }
