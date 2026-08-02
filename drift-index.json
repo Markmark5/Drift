@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-01",
+  "updated": "2026-08-02",
   "tickers": [
     {
       "ticker": "STAF",
@@ -308,6 +308,21 @@
       "spec_version": "v4.5",
       "next_test": "FY26 Final Results 22-Sep-26: adj PBT, EPS, underlying cash FY26 — confirm re-rate or one-year bounce",
       "url": "FNX.html"
+    },
+    {
+      "ticker": "Housebuilders Sector",
+      "company": "UK Listed Housebuilders (BTRW · PSN · TW · BKG · BWY)",
+      "direction": "down",
+      "headline": "Three of five cut guidance inside five months — TW's completions-and-dividend cut is the sector's confirming print.",
+      "trigger": "3-of-5 sector: TW (G CUT + Text -2 + margin compression) + BKG (G CUT + H2 PBT -22% + five sequential fwd-sales declines) + BTRW (outlet guide CUT)",
+      "alert": true,
+      "rns_type": "H1 R",
+      "rns_date": "2026-07-31",
+      "build_date": "2026-08-01",
+      "spec_version": "v4.5-S",
+      "next_test": "BWY FY26 TU 11 Aug 26; PSN H1 R (Aug); BTRW FY26 R 16 Sep 26",
+      "url": "Housebuilders Sector.html",
+      "companies_fired": 3
     }
   ]
 }
