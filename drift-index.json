@@ -123,9 +123,6 @@
         ],
         "periods": [
           "",
-          "",
-          "",
-          "",
           "H1",
           "H2",
           "H1",
@@ -136,11 +133,11 @@
           "H2"
         ],
         "rows": [
-          "------a-gara",
-          "-----------a",
-          "------ggaarr",
-          "--------rrrg",
-          "--------rrrr"
+          "---a-gara",
+          "--------a",
+          "---ggaarr",
+          "-----rrrg",
+          "-----rrrr"
         ]
       }
     },
@@ -293,9 +290,6 @@
           "R5"
         ],
         "periods": [
-          "",
-          "",
-          "",
           "H1",
           "H2",
           "H1",
@@ -307,11 +301,11 @@
           "H1"
         ],
         "rows": [
-          "----grgrgrgr",
-          "-------raggr",
-          "-----gggarra",
-          "-------aaara",
-          "-------rrrrg"
+          "-grgrgrgr",
+          "----raggr",
+          "--gggarra",
+          "----aaara",
+          "----rrrrg"
         ]
       }
     },
@@ -388,7 +382,7 @@
       "next_test": "BWY FY26 TU 11 Aug 26; PSN H1 R (Aug); BTRW FY26 R 16 Sep 26",
       "url": "Housebuilders-Sector.html",
       "grid": {
-        "note": "Rows = each company's Rank 1 (net private reservations / outlet / week). 12 most recent prints, newest right.",
+        "note": "Rows = each company's Rank 1 (net private reservations / outlet / week). 9 most recent prints, newest right.",
         "labels": [
           "BTRW",
           "PSN",
@@ -397,11 +391,11 @@
           "BWY"
         ],
         "rows": [
-          "-gggg-ggaaga",
-          "-ggg-gaagaag",
-          "rggggggrrarr",
-          "-r-r-raa-rar",
-          "gggggggggrrr"
+          "gg-ggaaga",
+          "g-gaagaag",
+          "ggggrrarr",
+          "r-raa-rar",
+          "ggggggrrr"
         ]
       }
     }
