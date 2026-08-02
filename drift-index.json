@@ -99,7 +99,36 @@
       "build_date": "2026-07-28",
       "spec_version": "v4.0",
       "next_test": "AGM 24 Sep 2026: autumn heating-oil demand, and any Food acquisition.",
-      "url": "NWF.html"
+      "url": "NWF.html",
+      "kind": "ticker",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2"
+        ],
+        "rows": [
+          "---rrgrrg",
+          "---rrggrg",
+          "---graara",
+          "---rrggrg",
+          "--grrgrrg"
+        ],
+        "note": "Rows = ranks 1-5 · half-year grain · newest right (Buy/Sell)"
+      }
     },
     {
       "ticker": "LUCE",
@@ -313,7 +342,36 @@
       "build_date": "2026-07-27",
       "spec_version": "v4.1",
       "next_test": "H1 FY27 TU (Oct/Nov-26) & H1 R (Dec-26): OB >£90m; margin >7%; CAIN follow-on order; guide tone; AI component cost pressure vs opportunity.",
-      "url": "SOLI.html"
+      "url": "SOLI.html",
+      "kind": "ticker",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2"
+        ],
+        "rows": [
+          "-garragag",
+          "---rrrrgg",
+          "---a-r-a-",
+          "---rgrrgg",
+          "-rggagrag"
+        ],
+        "note": "Rows = ranks 1-5 · half-year grain · newest right (Buy/Sell)"
+      }
     },
     {
       "ticker": "ALU",
@@ -473,7 +531,36 @@
       "build_date": "2026-07-29",
       "spec_version": "v3.16",
       "next_test": "H1 FY26 interims, August 2026.",
-      "url": "SNX.html"
+      "url": "SNX.html",
+      "kind": "ticker",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1"
+        ],
+        "rows": [
+          "-gggggrrr",
+          "--rggggax",
+          "----gaggx",
+          "-rrggggga",
+          "------rra"
+        ],
+        "note": "Rows = ranks 1-5 · half-year grain · newest right (Buy/Sell)"
+      }
     },
     {
       "ticker": "AJB",
