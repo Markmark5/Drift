@@ -195,7 +195,7 @@ function load(){
 }
 var CH={g:'g',a:'a',r:'r',x:'x'};
 function esc(s){return String(s).replace(/[&<>]/g,function(m){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[m];});}
-var GRIDN=12;
+var GRIDN=9;
 function fit(s){ /* rigid width: keep rightmost GRIDN, pad left with blanks */
   s=String(s);
   if(s.length>GRIDN)return s.slice(s.length-GRIDN);
@@ -346,7 +346,7 @@ function validateEntry(txt){
   if(e.grid){
     if(!e.grid.rows||!e.grid.rows.length)throw new Error('grid present but grid.rows is empty.');
     var n=e.grid.rows[0].length;
-    if(n<1||n>24)throw new Error('grid rows must be 1-24 characters (got '+n+'); the wall renders the rightmost 12.');
+    if(n<1||n>24)throw new Error('grid rows must be 1-24 characters (got '+n+'); the wall renders the rightmost 9.');
     for(var i=0;i<e.grid.rows.length;i++){
       if(e.grid.rows[i].length!==n)throw new Error('grid row '+(i+1)+' is '+e.grid.rows[i].length+' chars, expected '+n+'.');
       if(/[^garx-]/.test(e.grid.rows[i]))throw new Error('grid row '+(i+1)+' has characters outside g/a/r/x/-.');
