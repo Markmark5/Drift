@@ -419,16 +419,47 @@
     {
       "ticker": "DATA",
       "company": "GlobalData Plc",
+      "kind": "ticker",
       "direction": "down",
       "headline": "Underlying growth frozen at +1% three halves straight; EBITDA anchored to consensus low end, not the towards 40% recovery target.",
       "trigger": "Conditions 1 and 2 fired: Revenue Δrate -9.1pp H1-vs-H1; Text score -5 on latest RNS",
       "alert": true,
+      "fired": 2,
+      "fired_of": 3,
       "rns_type": "H1 TU",
       "rns_date": "2026-07-09",
       "build_date": "2026-07-30",
-      "spec_version": "v4.0",
+      "spec_version": "v4.6",
       "next_test": "Sep-26 HY26 Full Results — watch underlying revenue vs +1%, H2 EBITDA vs implied £71.6m, Healthcare CFR",
-      "url": "DATA.html"
+      "url": "DATA.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H1FY22",
+          "H2FY22",
+          "H1FY23",
+          "H2FY23",
+          "H1FY24",
+          "H2FY24",
+          "H1FY25",
+          "H2FY25",
+          "H1FY26"
+        ],
+        "rows": [
+          "-grgrgrgr",
+          "--ggraggr",
+          "--gggarra",
+          "-grraaara",
+          "--ggrrrrg"
+        ],
+        "note": "R1 CFR/IFR · R2 Revenue · R3 EBITDA margin · R4 Value renewal rate · R5 Adj. EBITDA £m — H-reporter halves, rightmost cell = Buy/Sell H1 FY26 (H1 TU 09-Jul-26)"
+      }
     },
     {
       "ticker": "SNX",
