@@ -51,6 +51,7 @@ body{background:var(--bg);font-family:var(--mono);color:var(--text-primary);font
 .pills{display:flex;gap:5px;flex-wrap:wrap;font-size:9px;font-weight:600;letter-spacing:.03em;}
 .pill{border:1px solid var(--border);border-radius:3px;padding:2px 7px;color:var(--text-dim);text-transform:uppercase;white-space:nowrap;}
 .pill.alert-up{background:var(--green-dim);border-color:var(--green-mid);color:var(--green);}
+.pill.rns{background:var(--blue-dim);border-color:var(--blue-mid);color:var(--blue);font-weight:700;}
 .pill.alert-down{background:var(--red-dim);border-color:var(--red-mid);color:var(--red);}
 .next{margin-top:8px;font-size:10px;color:var(--text-dim);}
 .next b{color:var(--text-secondary);font-weight:600;}
@@ -73,6 +74,8 @@ body{background:var(--bg);font-family:var(--mono);color:var(--text-primary);font
 .gB .axis .sp{flex:none;}
 .gB .axis span.c{flex:1;font-size:6.5px;color:#4a4a60;text-align:center;letter-spacing:.02em;}
 .rowkey{font-size:8px;color:#4a4a60;margin-top:4px;line-height:1.4;}
+.trigfall{font-size:9.5px;color:var(--text-dim);line-height:1.45;margin:8px 0 2px;letter-spacing:.01em;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
 .pips{display:flex;align-items:center;gap:6px;margin:8px 0 2px;}
 .pips .pipset{display:flex;gap:3px;}
 .pips .p{width:13px;height:5px;border-radius:1px;background:#22222c;}
@@ -218,12 +221,18 @@ function gridHTML(x){
   return out+'</div>';
 }
 function pipHTML(x){
-  if(typeof x.fired!=='number'||typeof x.fired_of!=='number')
-    return x.alert?'<div class="pips"><span class="ptxt '+(x.direction==='up'?'g':'r')+'">⛳ '+esc(x.trigger)+'</span></div>':'';
+  if(typeof x.fired!=='number'||typeof x.fired_of!=='number'){
+    var m=String(x.trigger||'').match(/(\d+)\s*[-\s]?of[-\s]?\s*(\d+)/i);
+    if(m){var f=+m[1],fo=+m[2];if(fo>0&&fo<=8&&f<=fo)return pips(x,f,fo);}
+    return x.trigger?'<div class="trigfall">'+esc(x.trigger)+'</div>':'';
+  }
+  return pips(x,x.fired,x.fired_of);
+}
+function pips(x,f,fo){
   var cls=x.direction==='up'?'g':(x.direction==='watch'?'a':'r');
   var out='<div class="pips"><div class="pipset">';
-  for(var i=0;i<x.fired_of;i++)out+='<i class="p'+(i<x.fired?' '+cls:'')+'"></i>';
-  out+='</div><span class="ptxt '+cls+'">'+x.fired+' of '+x.fired_of+' fired</span></div>';
+  for(var i=0;i<fo;i++)out+='<i class="p'+(i<f?' '+cls:'')+'"></i>';
+  out+='</div><span class="ptxt '+cls+'">'+f+' of '+fo+' fired</span></div>';
   return out;
 }
 function render(){
@@ -244,12 +253,12 @@ function render(){
       '<div class="card-top"><span class="tick'+(x.ticker.length>6?' long':'')+'">'+x.ticker+
         (x.kind==='sector'?'<span class="kindtag">Sector</span>':'')+
         '</span><span class="dir">'+DIRLBL[x.direction]+'</span></div>'+
-      '<div class="co">'+x.company+'</div>'+
+      (x.kind==='sector'?'':'<div class="co">'+x.company+'</div>')+
       gridHTML(x)+
       pipHTML(x)+
       '<div class="head">'+x.headline+'</div>'+
       '<div class="pills">'+
-        '<span class="pill">'+x.rns_type+' · '+fmtDate(x.rns_date)+'</span>'+
+        '<span class="pill rns">'+x.rns_type+' · '+fmtDate(x.rns_date)+'</span>'+
         '<span class="pill">'+x.spec_version+'</span></div>'+
       (x.next_test&&x.next_test!=='—'?'<div class="next"><b>Next test:</b> '+x.next_test+'</div>':'')+
       '<div class="open">Open dashboard ↗</div>';
