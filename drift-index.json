@@ -13,7 +13,36 @@
       "build_date": "2026-07-31",
       "spec_version": "v4.2",
       "next_test": "FY26 TU ~Jan-27: PBT vs the £9.2m top end; FY cash conversion vs the receivables build; Q4 peak hours vs +11.1% on the first hard Culina comp.",
-      "url": "STAF.html"
+      "url": "STAF.html",
+      "kind": "ticker",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1"
+        ],
+        "rows": [
+          "-r-g-grrg",
+          "--r---ggg",
+          "a-ar-grrg",
+          "r-r---ggg",
+          "-grgrgrgr"
+        ],
+        "note": "Rows = ranks 1-5 · half-year grain · newest right (Buy/Sell)"
+      }
     },
     {
       "ticker": "FDM",
@@ -27,7 +56,36 @@
       "build_date": "2026-07-30",
       "spec_version": "v4.0",
       "next_test": "H1 FY26 results, 3 August 2026 — the confirming or breaking print.",
-      "url": "FDM.html"
+      "url": "FDM.html",
+      "kind": "ticker",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1"
+        ],
+        "rows": [
+          "-rrrrrraa",
+          "--rrrrrr-",
+          "--grrrrr-",
+          "--arrrrr-",
+          "--rraaaa-"
+        ],
+        "note": "Rows = ranks 1-5 · half-year grain · newest right (Buy/Sell)"
+      }
     },
     {
       "ticker": "NWF",
@@ -55,7 +113,36 @@
       "build_date": "2026-07-31",
       "spec_version": "v4.0",
       "next_test": "H1 results 22 Sep 2026 — DF economics quantified, CEO successor named.",
-      "url": "LUCE.html"
+      "url": "LUCE.html",
+      "kind": "ticker",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q1",
+          "Q2"
+        ],
+        "rows": [
+          "aagaagggg",
+          "-gg-ggggg",
+          "gaggggggg",
+          "grgrrgrgg",
+          "--------a"
+        ],
+        "note": "Rows = ranks 1-5 · quarter grain · newest right (Buy/Sell)"
+      }
     },
     {
       "ticker": "ANP",
@@ -383,7 +470,36 @@
       "build_date": "2026-07-31",
       "spec_version": "v3.10 base + §2 grid v4.0",
       "next_test": "Sep H1 R: PBT vs ~£3.0m consensus anchor, margin read, and any hard pipeline number decide the call.",
-      "url": "CHH.html"
+      "url": "CHH.html",
+      "kind": "ticker",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1"
+        ],
+        "rows": [
+          "---r-r-g-",
+          "--gaarrr-",
+          "----rggag",
+          "----rrrg-",
+          "--rrrrrgg"
+        ],
+        "note": "Rows = ranks 1-5 · half-year grain · newest right (Buy/Sell)"
+      }
     },
     {
       "ticker": "FNX",
@@ -397,7 +513,36 @@
       "build_date": "2026-07-31",
       "spec_version": "v4.5",
       "next_test": "FY26 Final Results 22-Sep-26: adj PBT, EPS, underlying cash FY26 — confirm re-rate or one-year bounce",
-      "url": "FNX.html"
+      "url": "FNX.html",
+      "kind": "ticker",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2"
+        ],
+        "rows": [
+          "-ggggrrag",
+          "-gagaaaag",
+          "-ggggrrr-",
+          "-ggggrrr-",
+          "-aaaaagaa"
+        ],
+        "note": "Rows = ranks 1-5 · half-year grain · newest right (Buy/Sell)"
+      }
     },
     {
       "ticker": "HOUSEBUILDERS",
