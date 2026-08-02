@@ -150,9 +150,7 @@ th.bs-col{font-weight:800}
 .g-raise{color:var(--green);font-weight:700;}
 .g-cut{color:var(--red);font-weight:700;}
 .g-flat{color:var(--mute);font-size:11px;}
-.guide-trail{font-size:10.5px;line-height:1.5;margin-top:4px;padding-top:4px;border-top:1px dotted var(--line);}
-.guide-trail .met{color:var(--green);}
-.guide-trail .miss{color:var(--red);}
+
 
 /* =========================================================
    §4 DRIFT MATRIX
@@ -293,25 +291,7 @@ th.bs-col{font-weight:800}
 <!-- ===== §2 UNIFIED FORWARD GRID ===== -->
 <h2>§2 · Forward Grid — All Scored Metrics</h2>
 
-<details>
-<summary>Turn methodology &amp; restatement basis</summary>
-<div class="drawer-body">
-<strong>Comparison basis (hard-coded per metric type):</strong><br>
-<em>Flow metrics</em> (Revenue, EBITDA): seasonally matched YoY displayed (H1-vs-H1, H2-vs-H2); raw HonH computed but retained here, not displayed in cells. Δrate = change in YoY rate vs prior same-season print. Band ±2.0pp.<br>
-<em>Snapshot metrics</em> (CFR/IFR, Value Renewal Rate): position-to-position sequential Δ scored; YoY rendered on aggregate row only.<br>
-<em>H-reporter</em>: H1 = printed; H2 = FY − H1 (derived, †). No Q1/Q3 data available; H1 is finest grain.<br><br>
-<strong>Derivations (second-route cross-verified):</strong><br>
-H2 FY22 = £243.2m − £111.9m = £131.3m† ✓ | H2 FY23 = £273.1m − £135.9m = £137.2m† ✓<br>
-H2 FY24 = £285.5m − £139.6m = £145.9m† ✓ | H2 FY25 = £322.1m − £156.5m = £165.6m† ✓<br>
-EBITDA: H2 FY22=£47.4m†, H2 FY23=£57.3m†, H2 FY24=£59.0m†, H2 FY25=£58.1m†. All FY tie-outs confirmed ✓.<br><br>
-<strong>Restatement notes:</strong><br>
-ʳ IFR→CFR basis change: IFR (pre-FY24) = invoiced-only; CFR (FY24 onward) = invoiced + contracted-not-yet-invoiced. Dec-23 CFR restated = £153.4m (vs IFR £135.2m). Jun-24 cell uses IFR definition (HY24R did not restate); cross-basis vs CFR Dec-24 (flagged ʳ).<br>
-ʳ VRR definition change between HY23R and FY23R: old = gross upsell-inclusive (~100% achievable); new = net retention. Scores within-definition only.<br><br>
-<strong>H1 FY26 provenance:</strong> all H1 FY26 figures are "c." estimates from the 09-Jul-26 TU (reported, not audited). Revenue c.+3%; EBITDA c.+4–5% (midpoint used); CFR c.+6% reported.<br>
-<strong>Buy/Sell column:</strong> H1 FY26 (rightmost) — bold, bs-col tint.<br>
-<strong>Derived-only turn watch:</strong> H2 FY22–FY25 are derived (†); their arrows are watch flags until a subsequent printed sub-period corroborates. The H1 FY26 c. figures are reported (TU) but not audited.
-</div>
-</details>
+
 
 <div class="gridwrap">
 <table class="grid" id="fwdgrid">
@@ -342,7 +322,7 @@ EBITDA: H2 FY22=£47.4m†, H2 FY23=£57.3m†, H2 FY24=£59.0m†, H2 FY25=£58
   <th class="phead" data-p="H2">H2†</th>
   <th class="phead" data-p="H1">H1</th>
   <th class="phead" data-p="H2">H2†</th>
-  <th class="phead bs-col" data-p="H1">H1</th>
+  <th class="phead bs-col" data-p="H1">⭐ H1 TU<br><small style="font-weight:400;font-size:10px;">Jul-26</small></th>
 </tr>
 </thead>
 <tbody>
@@ -369,8 +349,8 @@ EBITDA: H2 FY22=£47.4m†, H2 FY23=£57.3m†, H2 FY24=£59.0m†, H2 FY25=£58
   <td><span class="val">£135.2m</span><span class="delta">+£12.3m (+10.0%) 🟢↗</span></td>
   <!-- H1 FY24: IFR Jun-24 vs IFR Dec-23. ʳ cross-basis note -->
   <td><span class="val">£125.9mʳ</span><span class="delta">−£9.3m (−6.9%) 🔴↘</span></td>
-  <!-- H2 FY24: CFR Dec-24 vs CFR Dec-23-restated 153.4 -->
-  <td><span class="val">£171.4mʳ</span><span class="delta">+£18.0m (+11.7%) 🟢↗</span></td>
+  <!-- H2 FY24: CFR Dec-24 vs IFR Jun-24 — true sequential, cross-basis IFR→CFR (ʳ) -->
+  <td><span class="val">£171.4mʳ</span><span class="delta">+£45.5mʳ (+36.1%) 🟢↗<br><span style="font-size:10px">cross-basis IFR→CFR</span></span></td>
   <!-- H1 FY25: CFR Jun-25 vs CFR Dec-24 -->
   <td><span class="val">£157.4m</span><span class="delta">−£14.0m (−8.2%) 🔴↘</span></td>
   <!-- H2 FY25: CFR Dec-25 vs CFR Jun-25 -->
@@ -409,10 +389,10 @@ EBITDA: H2 FY22=£47.4m†, H2 FY23=£57.3m†, H2 FY24=£59.0m†, H2 FY25=£58
   <td><span class="val">£111.9m<br>(—)</span><span class="delta">— first print</span></td>
   <!-- H2 FY22†: first H2 in window -->
   <td><span class="val">£131.3m†<br>(—)</span><span class="delta">— first print</span></td>
-  <!-- H1 FY23: +21.4% YoY vs H1 FY22. No prior H1 YoY → — for Δrate -->
-  <td><span class="val">£135.9m<br><span class="pos">(+21.4%)</span></span><span class="delta">— first comp</span></td>
-  <!-- H2 FY23†: +4.5% YoY vs H2 FY22 -->
-  <td><span class="val">£137.2m†<br><span class="pos">(+4.5%)</span></span><span class="delta">— first comp</span></td>
+  <!-- H1 FY23: +21.4% YoY vs H1 FY22. First comp — direction only -->
+  <td><span class="val">£135.9m<br><span class="pos">(+21.4%)</span></span><span class="delta">🟢↗ first comp</span></td>
+  <!-- H2 FY23†: +4.5% YoY vs H2 FY22. First comp — direction only -->
+  <td><span class="val">£137.2m†<br><span class="pos">(+4.5%)</span></span><span class="delta">🟢↗ first comp</span></td>
   <!-- H1 FY24: +2.7% YoY vs H1 FY23. Δrate = 2.7-21.4 = -18.7pp 🔴↘ -->
   <td><span class="val">£139.6m<br><span class="pos">(+2.7%)</span></span><span class="delta">🔴↘ −18.7pp</span></td>
   <!-- H2 FY24†: +6.3% YoY vs H2 FY23. Δrate = 6.3-4.5 = +1.8pp 🟡→ -->
@@ -479,11 +459,11 @@ EBITDA: H2 FY22=£47.4m†, H2 FY23=£57.3m†, H2 FY24=£59.0m†, H2 FY25=£58
   <!-- H1 FY22: 100% old def, first print -->
   <td><span class="val">100%ʳ</span><span class="delta">— first print (old def)</span></td>
   <!-- H2 FY22: 101% old def, Δ vs Jun-22 +1pp -->
-  <td><span class="val">101%ʳ</span><span class="delta">+1pp (old def)</span></td>
+  <td><span class="val">101%ʳ</span><span class="delta">+1pp 🟢↗ (old def)</span></td>
   <!-- H1 FY23: 99% old def, Δ vs Dec-22 -2pp -->
-  <td><span class="val">99%ʳ</span><span class="delta">−2pp (old def)</span></td>
-  <!-- H2 FY23: 94% NEW def, Δ vs Jun-23 old-def not comparable. Def changed. -->
-  <td><span class="val">94%ʳ</span><span class="delta">def. changed — not comp.</span></td>
+  <td><span class="val">99%ʳ</span><span class="delta">−2pp 🔴↘ (old def)</span></td>
+  <!-- H2 FY23: 94% NEW def. Direction down on both bases; pp omitted (def change). -->
+  <td><span class="val">94%ʳ</span><span class="delta neg">🔴↘ def. change</span></td>
   <!-- H1 FY24: qualitative only (first H1 cadence break) -->
   <td><span class="val">🟡</span><span class="delta">qualitative "consistent"</span></td>
   <!-- H2 FY24: 93%, Δ vs Dec-23 new def -1pp -->
@@ -525,10 +505,10 @@ EBITDA: H2 FY22=£47.4m†, H2 FY23=£57.3m†, H2 FY24=£59.0m†, H2 FY25=£58
   <td><span class="val">£39.0m (—)</span><span class="delta">— first print</span></td>
   <!-- H2 FY22†: 47.4m, no prior H2 -->
   <td><span class="val">£47.4m† (—)</span><span class="delta">— first print</span></td>
-  <!-- H1 FY23: 53.5m +37.2%. No prior H1 YoY → first comp -->
-  <td><span class="val">£53.5m <span class="pos">(+37.2%)</span></span><span class="delta">— first comp</span></td>
-  <!-- H2 FY23†: 57.3m +20.9% -->
-  <td><span class="val">£57.3m† <span class="pos">(+20.9%)</span></span><span class="delta">— first comp</span></td>
+  <!-- H1 FY23: 53.5m +37.2%. First comp — direction only -->
+  <td><span class="val">£53.5m <span class="pos">(+37.2%)</span></span><span class="delta">🟢↗ first comp</span></td>
+  <!-- H2 FY23†: 57.3m +20.9%. First comp — direction only -->
+  <td><span class="val">£57.3m† <span class="pos">(+20.9%)</span></span><span class="delta">🟢↗ first comp</span></td>
   <!-- H1 FY24: 57.8m +8.0%. Δrate = 8.0-37.2 = -29.1pp 🔴↘ -->
   <td><span class="val">£57.8m <span class="pos">(+8.0%)</span></span><span class="delta neg">🔴↘ −29.1pp</span></td>
   <!-- H2 FY24†: 59.0m +3.0%. Δrate = 3.0-20.9 = -17.9pp 🔴↘ -->
@@ -554,13 +534,182 @@ EBITDA: H2 FY22=£47.4m†, H2 FY23=£57.3m†, H2 FY24=£59.0m†, H2 FY25=£58
 </div><!-- end .gridwrap -->
 
 <details>
+<summary>🔲 Card strip — wall preview &amp; index entry</summary>
+<div class="drawer-body">
+<style>
+.strip-wrap{overflow-x:auto;margin-bottom:14px;}
+.strip-tbl{border-collapse:collapse;font-size:12px;font-family:system-ui,sans-serif;}
+.strip-tbl th,.strip-tbl td{border:1px solid #d8d5cf;padding:5px 8px;text-align:center;min-width:52px;}
+.strip-tbl th{background:#efede7;font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;font-weight:700;}
+.strip-tbl td.rlabel{text-align:left;font-weight:700;font-size:11.5px;background:#f7f6f2;min-width:48px;}
+.sc-g{background:#e9f5ee;color:#1e7a45;font-weight:700;font-size:13px;}
+.sc-r{background:#fdecea;color:#b3261e;font-weight:700;font-size:13px;}
+.sc-a{background:#fdf4e3;color:#9a6a00;font-weight:700;font-size:13px;}
+.sc-x{background:#f0f0ee;color:#5f5c54;font-size:13px;}
+.sc-blank{background:#f7f6f2;color:#d0cdc6;font-size:13px;}
+.strip-tbl td.bs-cell{outline:2px solid #16150f;outline-offset:-2px;}
+</style>
+
+<div class="strip-wrap">
+<table class="strip-tbl">
+<thead>
+<tr>
+  <th>Rank</th>
+  <th>H1 FY22</th><th>H2 FY22</th>
+  <th>H1 FY23</th><th>H2 FY23</th>
+  <th>H1 FY24</th><th>H2 FY24</th>
+  <th>H1 FY25</th><th>H2 FY25</th>
+  <th class="bs-cell">⭐ H1 FY26</th>
+</tr>
+</thead>
+<tbody>
+<tr><!-- R1: -grgrgrgr -->
+  <td class="rlabel">R1</td>
+  <td class="sc-blank">—</td>
+  <td class="sc-g">🟢↗</td>
+  <td class="sc-r">🔴↘</td>
+  <td class="sc-g">🟢↗</td>
+  <td class="sc-r">🔴↘</td>
+  <td class="sc-g">🟢↗</td>
+  <td class="sc-r">🔴↘</td>
+  <td class="sc-g">🟢↗</td>
+  <td class="sc-r bs-cell">🔴↘</td>
+</tr>
+<tr><!-- R2: --ggraggr -->
+  <td class="rlabel">R2</td>
+  <td class="sc-blank">—</td>
+  <td class="sc-blank">—</td>
+  <td class="sc-g">🟢↗</td>
+  <td class="sc-g">🟢↗</td>
+  <td class="sc-r">🔴↘</td>
+  <td class="sc-a">🟡→</td>
+  <td class="sc-g">🟢↗</td>
+  <td class="sc-g">🟢↗</td>
+  <td class="sc-r bs-cell">🔴↘</td>
+</tr>
+<tr><!-- R3: --gggarra -->
+  <td class="rlabel">R3</td>
+  <td class="sc-blank">—</td>
+  <td class="sc-blank">—</td>
+  <td class="sc-g">🟢↗</td>
+  <td class="sc-g">🟢↗</td>
+  <td class="sc-g">🟢↗</td>
+  <td class="sc-a">🟡→</td>
+  <td class="sc-r">🔴↘</td>
+  <td class="sc-r">🔴↘</td>
+  <td class="sc-a bs-cell">🟡→</td>
+</tr>
+<tr><!-- R4: -grraaara -->
+  <td class="rlabel">R4</td>
+  <td class="sc-blank">—</td>
+  <td class="sc-g">🟢↗</td>
+  <td class="sc-r">🔴↘</td>
+  <td class="sc-r">🔴↘</td>
+  <td class="sc-a">🟡→</td>
+  <td class="sc-a">🟡→</td>
+  <td class="sc-a">🟡→</td>
+  <td class="sc-r">🔴↘</td>
+  <td class="sc-a bs-cell">🟡→</td>
+</tr>
+<tr><!-- R5: --ggrrrrg -->
+  <td class="rlabel">R5</td>
+  <td class="sc-blank">—</td>
+  <td class="sc-blank">—</td>
+  <td class="sc-g">🟢↗</td>
+  <td class="sc-g">🟢↗</td>
+  <td class="sc-r">🔴↘</td>
+  <td class="sc-r">🔴↘</td>
+  <td class="sc-r">🔴↘</td>
+  <td class="sc-r">🔴↘</td>
+  <td class="sc-g bs-cell">🟢↗</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="font-size:11px;color:#5f5c54;margin-bottom:10px;line-height:1.5;">
+<strong>Rows:</strong> R1 CFR/IFR · R2 Revenue · R3 EBITDA margin · R4 Value renewal rate · R5 Adj. EBITDA £m. Cells transcribe the §2 grid's value rows at half grain; aggregate rows are never encoded. Rightmost cell (⭐) is always the Buy/Sell column — H1 FY26 (H1 TU, 09-Jul-26).<br>
+<strong>Encoding:</strong> <code>g</code>&nbsp;🟢↗ · <code>a</code>&nbsp;🟡→ · <code>r</code>&nbsp;🔴↘ · <code>x</code>&nbsp;❌&nbsp;withheld · <code>-</code>&nbsp;no score (outside cadence, no comparator yet, or before the record starts).<br>
+<strong>R4 qualitative-ladder mapping:</strong> VRR is disclosed as a precise % in H1 R and FY R, but as direction words only in TUs. Cells reading "consistent" or "broadly consistent" are qualitative-only disclosure (🟡 in the grid) and encode as <code>a</code>&nbsp;🟡→ — the company confirmed direction without quantifying, which is a flat read, not an absence. The Jun-26 TU's "~89%, broadly consistent with FY25" is likewise flat against the Dec-25 print and encodes <code>a</code>. The Dec-23 cell is a definition change (old gross-upsell basis → new net-retention basis) and is not comparable, so encodes <code>-</code> despite carrying a printed figure.
+</p>
+
+<p style="font-size:11px;font-weight:700;color:#16150f;margin-bottom:4px;">drift-entry JSON:</p>
+<pre style="background:#f0f0ee;padding:10px;border-radius:6px;font-size:11px;overflow-x:auto;user-select:all;">{
+  "ticker": "DATA",
+  "company": "GlobalData Plc",
+  "kind": "ticker",
+  "direction": "down",
+  "headline": "Underlying growth frozen at +1% three halves straight; EBITDA anchored to consensus low end, not the towards 40% recovery target.",
+  "trigger": "Conditions 1 and 2 fired: Revenue Δrate -9.1pp H1-vs-H1; Text score -5 on latest RNS",
+  "alert": true,
+  "fired": 2,
+  "fired_of": 3,
+  "rns_type": "H1 TU",
+  "rns_date": "2026-07-09",
+  "build_date": "2026-07-30",
+  "spec_version": "v4.6",
+  "next_test": "Sep-26 HY26 Full Results — watch underlying revenue vs +1%, H2 EBITDA vs implied £71.6m, Healthcare CFR",
+  "url": "DATA.html",
+  "grid": {
+    "labels": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5"
+    ],
+    "periods": [
+      "H1FY22",
+      "H2FY22",
+      "H1FY23",
+      "H2FY23",
+      "H1FY24",
+      "H2FY24",
+      "H1FY25",
+      "H2FY25",
+      "H1FY26"
+    ],
+    "rows": [
+      "-grgrgrgr",
+      "--ggraggr",
+      "--gggarra",
+      "-grraaara",
+      "--ggrrrrg"
+    ],
+    "note": "R1 CFR/IFR · R2 Revenue · R3 EBITDA margin · R4 Value renewal rate · R5 Adj. EBITDA £m — H-reporter halves, rightmost cell = Buy/Sell H1 FY26 (H1 TU 09-Jul-26)"
+  }
+}</pre>
+</div>
+</details>
+
+
+<details>
 <summary>Notes — Ranks 1–5</summary>
 <div class="drawer-body">
+<p><strong>Rank 1 — basis change (ʳ):</strong> The Dec-24 sequential (+£45.5m, +36.1%) spans the IFR→CFR definition change and is not like-for-like — Jun-24 is IFR (invoiced only), Dec-24 is CFR (invoiced + contracted-not-yet-invoiced). On a consistent CFR basis, Dec-24 £171.4m vs Dec-23 restated £153.4m is +11.7% year-on-year, underlying +4%. The company did not restate Jun-24 onto the CFR basis, so no like-for-like sequential exists for that step. Direction is 🟢↗ on either basis.</p>
 <p><strong>Rank 1 — CFR/IFR:</strong> Jun seasonal dips vs Dec are structural (annual subscription renewals concentrate in Q4). Signal is Jun-to-Jun underlying trend: +13% (Jun-22 old def) → +9% (Jun-23 old def) → +3% (Jun-25 new def) → +1% (Jun-26 new def). Healthcare CFR underlying turned −1% at Jun-26 — first negative in the visible window; watch whether it corroborates at HY26 Full Results (Sep-26).</p>
 <p><strong>Rank 2 — Revenue:</strong> H1 FY24 −18.7pp Δrate is partly an M&A base-effect (FY23 H1 benefited from Life Sciences/LMC/MBI/TS Lombard first-time inclusions cycling into the prior-year base). H1 FY26 −9.1pp Δrate: same pattern — H1 FY25 benefited from first-time inclusion of four Q4-FY24 acquisitions; H1 FY26 is lapping that base at lower M&A contribution. Underlying +1% both halves — organic engine unchanged.</p>
 <p><strong>Rank 3 — Margin:</strong> H1 FY24 Δ margin +2.03pp scores 🟢↗ — at the ±2.0pp boundary exactly. H1 FY25 −8.1pp and H2 FY25 −5.4pp are the most material compression since IPO, driven by cost investment (sales transformation, duplicated corporate costs for Healthcare arm post-Inflexion, six acquisitions before synergies). Management: cost synergies "largely complete by Dec-25." H2 FY26 implied margin from consensus low end ≈ 36% — still below FY23/FY24 norm of ~41%.</p>
 <p><strong>Rank 4 — VRR:</strong> Old definition (HY22R–HY23R): gross upsell-inclusive; values above 100% achievable. New definition (FY23R onward): net retention only. Scores within-definition only: Dec-24 vs Dec-23 −1pp 🟡→; Dec-25 vs Dec-24 −4pp 🔴↘. HY24R was the first H1 Results to go qualitative on VRR — a disclosure cadence break worth monitoring. No improvement from Dec-25 (~89%) to Jun-26 (~89%).</p>
 <p><strong>Rank 5 — EBITDA £m:</strong> H1 FY26 c.£54.4m (+4.5% YoY) is still below H1 FY24's £57.8m in absolute terms. The 🟢↗ is a trough-base bounce. Full-year "low end of consensus" (£126m) implies H2 FY26 EBITDA of c.£71.6m — +23% on H2 FY25† £58.1m — and a H2 EBITDA margin of ~36%; neither has been seen in this window.</p>
+</div>
+</details>
+<details>
+<summary>Turn methodology &amp; restatement basis</summary>
+<div class="drawer-body">
+<strong>Comparison basis (hard-coded per metric type):</strong><br>
+<em>Flow metrics</em> (Revenue, EBITDA): seasonally matched YoY displayed (H1-vs-H1, H2-vs-H2); raw HonH computed but retained here, not displayed in cells. Δrate = change in YoY rate vs prior same-season print. Band ±2.0pp.<br>
+<em>Snapshot metrics</em> (CFR/IFR, Value Renewal Rate): position-to-position sequential Δ scored; YoY rendered on aggregate row only.<br>
+<em>H-reporter</em>: H1 = printed; H2 = FY − H1 (derived, †). No Q1/Q3 data available; H1 is finest grain.<br><br>
+<strong>Derivations (second-route cross-verified):</strong><br>
+H2 FY22 = £243.2m − £111.9m = £131.3m† ✓ | H2 FY23 = £273.1m − £135.9m = £137.2m† ✓<br>
+H2 FY24 = £285.5m − £139.6m = £145.9m† ✓ | H2 FY25 = £322.1m − £156.5m = £165.6m† ✓<br>
+EBITDA: H2 FY22=£47.4m†, H2 FY23=£57.3m†, H2 FY24=£59.0m†, H2 FY25=£58.1m†. All FY tie-outs confirmed ✓.<br><br>
+<strong>Restatement notes:</strong><br>
+ʳ IFR→CFR basis change: IFR (pre-FY24) = invoiced-only; CFR (FY24 onward) = invoiced + contracted-not-yet-invoiced. Dec-23 CFR restated = £153.4m (vs IFR £135.2m). Jun-24 cell uses IFR definition (HY24R did not restate); cross-basis vs CFR Dec-24 (flagged ʳ).<br>
+ʳ VRR definition change between HY23R and FY23R: old = gross upsell-inclusive (~100% achievable); new = net retention. Scores within-definition only.<br><br>
+<strong>H1 FY26 provenance:</strong> all H1 FY26 figures are "c." estimates from the 09-Jul-26 TU (reported, not audited). Revenue c.+3%; EBITDA c.+4–5% (midpoint used); CFR c.+6% reported.<br>
+<strong>Buy/Sell column:</strong> H1 FY26 (rightmost) — bold, bs-col tint.<br>
+<strong>Derived-only turn watch:</strong> H2 FY22–FY25 are derived (†); their arrows are watch flags until a subsequent printed sub-period corroborates. The H1 FY26 c. figures are reported (TU) but not audited.
 </div>
 </details>
 
@@ -643,7 +792,7 @@ EBITDA: H2 FY22=£47.4m†, H2 FY23=£57.3m†, H2 FY24=£59.0m†, H2 FY25=£58
 
 <!-- ===== §3 TEXT+G LANGUAGE TRACK ===== -->
 <h2>§3 · Text + G — Language Track</h2>
-<p style="font-size:11.5px;color:var(--mute);margin-bottom:8px;">Every qualifying doc · G = guidance trigger (CUT/RAISE/flat) · Guide met? resolves at the subsequent results print · Score per lexicon (−3 to +3). Changed-score rows shaded. Click Doc column to highlight that doc's row.</p>
+<p style="font-size:11.5px;color:var(--mute);margin-bottom:8px;">Every qualifying doc · G = guidance trigger (CUT/RAISE/flat) · Score per lexicon (−3 to +3). Changed-score rows shaded. Click Doc column to highlight that doc's row.</p>
 
 <table class="text-table" id="text3">
 <thead>
@@ -651,7 +800,6 @@ EBITDA: H2 FY22=£47.4m†, H2 FY23=£57.3m†, H2 FY24=£59.0m†, H2 FY25=£58
   <th style="width:72px">Date</th>
   <th style="width:100px">Doc</th>
   <th style="width:50px">G</th>
-  <th style="width:140px">Guide met?</th>
   <th>Verbatim forward-guidance phrase</th>
   <th style="width:48px">Score</th>
 </tr>
@@ -662,7 +810,6 @@ EBITDA: H2 FY22=£47.4m†, H2 FY23=£57.3m†, H2 FY24=£59.0m†, H2 FY25=£58
   <td>Aug-22</td>
   <td class="doc-cell" data-rowtype="HY22R" data-doctype="H1R">FY22<br>H1 R</td>
   <td class="g-flat">flat</td>
-  <td>—</td>
   <td>"…the must-have intelligence we provide our clients gives us confidence in our growth prospects for the second half of the year and beyond."</td>
   <td>⚪ 0</td>
 </tr>
@@ -671,10 +818,6 @@ EBITDA: H2 FY22=£47.4m†, H2 FY23=£57.3m†, H2 FY24=£59.0m†, H2 FY25=£58
   <td>Jan-23</td>
   <td class="doc-cell" data-rowtype="FY22TU" data-doctype="FYTU">FY22<br>FY TU</td>
   <td class="g-raise">🟢 RAISE</td>
-  <td class="guide-trail">
-    <span class="met">✅ FY22 actual beat top-end: Rev £243.2m (vs range £235m–£241m); EBITDA £86.4m (vs £83m–£84m).</span><br>
-    <span class="met">✅ FY23 outlook: "materially ahead" — see Jan-23 guide resolution in FY23 R row.</span>
-  </td>
   <td>"A strong FY2022 performance; ahead of the top-end of the range of analysts' forecasts… management now expects revenue to be ahead and adjusted EBITDA to be materially ahead of expectations for FY2023."</td>
   <td>🟢🟢🟢 +3</td>
 </tr>
@@ -683,9 +826,6 @@ EBITDA: H2 FY22=£47.4m†, H2 FY23=£57.3m†, H2 FY24=£59.0m†, H2 FY25=£58
   <td>Feb-23</td>
   <td class="doc-cell" data-rowtype="FY22R" data-doctype="FYR">FY22<br>FY R</td>
   <td class="g-flat">flat</td>
-  <td class="guide-trail">
-    <span class="met">✅ Jan-23 FY23 guide ("ahead and materially ahead"): FY23 actual Rev £273.1m vs range £266m–£276m (met); EBITDA £110.8m vs £97m–£101m (materially beat +10%).</span>
-  </td>
   <td>"Strong momentum with &gt;80% visibility on FY23 revenue and accelerating towards 40% Adjusted EBITDA margin."</td>
   <td>🟢🟢 +2</td>
 </tr>
@@ -694,7 +834,6 @@ EBITDA: H2 FY22=£47.4m†, H2 FY23=£57.3m†, H2 FY24=£59.0m†, H2 FY25=£58
   <td>Apr-23</td>
   <td class="doc-cell" data-rowtype="AGM23" data-doctype="AGMTU">FY23<br>AGM TU</td>
   <td class="g-flat">flat</td>
-  <td>—</td>
   <td>"Group revenue, supported by healthy renewal rates, continues to grow strongly and in line with market consensus. The significant operating leverage in our platform is coming through as expected and currently margin is progressing well."</td>
   <td>⚪ 0</td>
 </tr>
@@ -703,7 +842,6 @@ EBITDA: H2 FY22=£47.4m†, H2 FY23=£57.3m†, H2 FY24=£59.0m†, H2 FY25=£58
   <td>Jul-23</td>
   <td class="doc-cell" data-rowtype="HY23R" data-doctype="H1R">FY23<br>H1 R</td>
   <td class="g-flat">flat</td>
-  <td>—</td>
   <td>"Expect to deliver results in line with increased market expectations for FY 2023." <em>(Consensus had already been raised — "increased" anchors to a higher bar.)</em></td>
   <td>🟢 +1</td>
 </tr>
@@ -712,9 +850,6 @@ EBITDA: H2 FY22=£47.4m†, H2 FY23=£57.3m†, H2 FY24=£59.0m†, H2 FY25=£58
   <td>Jan-24</td>
   <td class="doc-cell" data-rowtype="FY23TU" data-doctype="FYTU">FY23<br>FY TU</td>
   <td class="g-flat">flat</td>
-  <td class="guide-trail">
-    <span class="met">✅ FY23 actual: Rev £273.1m (c.£273m guide); EBITDA £110.8m — in line with growth guided.</span>
-  </td>
   <td>"For FY2023, the Group expects to deliver Group revenue of c.£273m… and Adjusted EBITDA and margin growth."</td>
   <td>⚪ 0</td>
 </tr>
@@ -723,7 +858,6 @@ EBITDA: H2 FY22=£47.4m†, H2 FY23=£57.3m†, H2 FY24=£59.0m†, H2 FY25=£58
   <td>Mar-24</td>
   <td class="doc-cell" data-rowtype="FY23R" data-doctype="FYR">FY23<br>FY R</td>
   <td class="g-flat">flat</td>
-  <td>—</td>
   <td>"Steadily progressing to 45% Adjusted EBITDA margin over the course of the plan period and reinvesting into the Growth Transformation Plan; targeting high single to double-digit organic revenue growth."</td>
   <td>🟢🟢 +2</td>
 </tr>
@@ -732,7 +866,6 @@ EBITDA: H2 FY22=£47.4m†, H2 FY23=£57.3m†, H2 FY24=£59.0m†, H2 FY25=£58
   <td>Jul-24</td>
   <td class="doc-cell" data-rowtype="HY24R" data-doctype="H1R">FY24<br>H1 R</td>
   <td class="g-flat">flat</td>
-  <td>—</td>
   <td>"We remain on track to deliver results in line with our expectations for the full year."</td>
   <td>⚪ 0</td>
 </tr>
@@ -741,7 +874,6 @@ EBITDA: H2 FY22=£47.4m†, H2 FY23=£57.3m†, H2 FY24=£59.0m†, H2 FY25=£58
   <td>Nov-24</td>
   <td class="doc-cell" data-rowtype="FY24TUa" data-doctype="FYTU">FY24<br>FY TU</td>
   <td class="g-flat">flat</td>
-  <td>—</td>
   <td>"Having entered the second half of 2024 in a strong financial position, the Group continues to trade in line with FY24 expectations."</td>
   <td>⚪ 0</td>
 </tr>
@@ -750,9 +882,6 @@ EBITDA: H2 FY22=£47.4m†, H2 FY23=£57.3m†, H2 FY24=£59.0m†, H2 FY25=£58
   <td>Jan-25</td>
   <td class="doc-cell" data-rowtype="FY24TUb" data-doctype="FYTU">FY24<br>FY TU</td>
   <td class="g-flat">flat</td>
-  <td class="guide-trail">
-    <span class="met">✅ FY24: Rev £285.5m (vs c.£286m — in line); EBITDA £116.8m (vs consensus £116.1m–£117.5m — in line).</span>
-  </td>
   <td>"For FY24, the Group expects to report Group revenue of c.£286m… and Adjusted EBITDA is also expected to be in line with market expectations."</td>
   <td>⚪ 0</td>
 </tr>
@@ -761,7 +890,6 @@ EBITDA: H2 FY22=£47.4m†, H2 FY23=£57.3m†, H2 FY24=£59.0m†, H2 FY25=£58
   <td>Mar-25</td>
   <td class="doc-cell" data-rowtype="FY24R" data-doctype="FYR">FY24<br>FY R</td>
   <td class="g-flat">flat</td>
-  <td>—</td>
   <td>"…remain on track to progress towards 45% Adjusted EBITDA margin over the course of the plan period and maintain our ambition of high single to double-digit underlying organic revenue growth."</td>
   <td>🟢 +1</td>
 </tr>
@@ -770,7 +898,6 @@ EBITDA: H2 FY22=£47.4m†, H2 FY23=£57.3m†, H2 FY24=£59.0m†, H2 FY25=£58
   <td>Jul-25</td>
   <td class="doc-cell" data-rowtype="HY25TU" data-doctype="H1TU">FY25<br>H1 TU</td>
   <td class="g-flat">flat</td>
-  <td>—</td>
   <td>"Ongoing investment in key Growth Transformation Plan initiatives…has meant that organic Adjusted EBITDA margin has declined by 3ppts for H1, with recent M&amp;A diluting the margin further. We expect to regain this margin through the second half." <em>(Mid-year reset acknowledges underperformance.)</em></td>
   <td>🔴 −1</td>
 </tr>
@@ -779,7 +906,6 @@ EBITDA: H2 FY22=£47.4m†, H2 FY23=£57.3m†, H2 FY24=£59.0m†, H2 FY25=£58
   <td>Aug-25</td>
   <td class="doc-cell" data-rowtype="HY25R" data-doctype="H1R">FY25<br>H1 R</td>
   <td class="g-flat">flat</td>
-  <td>—</td>
   <td>"The Board expects to regain Adjusted EBITDA margin in the second half, driven by operational improvements and M&amp;A contributions."</td>
   <td>⚪ 0</td>
 </tr>
@@ -788,9 +914,6 @@ EBITDA: H2 FY22=£47.4m†, H2 FY23=£57.3m†, H2 FY24=£59.0m†, H2 FY25=£58
   <td>Jan-26</td>
   <td class="doc-cell" data-rowtype="FY25TU" data-doctype="FYTU">FY25<br>FY TU</td>
   <td class="g-flat">flat</td>
-  <td class="guide-trail">
-    <span class="met">✅ FY25: Rev £322.1m (c.£322m — met); EBITDA £110.2m (c.£110m — met).</span>
-  </td>
   <td>"We enter 2026 in a strong position with the launch of several AI enabled solutions…remain well positioned to drive value for our customers and shareholders in 2026 and beyond."</td>
   <td>⚪ 0</td>
 </tr>
@@ -799,16 +922,14 @@ EBITDA: H2 FY22=£47.4m†, H2 FY23=£57.3m†, H2 FY24=£59.0m†, H2 FY25=£58
   <td>Mar-26</td>
   <td class="doc-cell" data-rowtype="FY25R" data-doctype="FYR">FY25<br>FY R</td>
   <td class="g-flat">flat</td>
-  <td>—</td>
   <td>"Recover Adjusted EBITDA margins towards 40%, leading to high cash conversion… Driving our underlying revenue growth to mid-single digits… We enter 2026 with c.80% of analyst revenue consensus already contracted, providing visibility with a strengthened platform and team focused on execution." <em>(45% margin target quietly retired to 40%; high-single/double-digit growth ambition reset to mid-single digits — effective de-facto step-down in both targets. Strong visibility claim partially offsets. Scored net +1.)</em></td>
   <td>🟢 +1</td>
 </tr>
 
 <tr class="score-change">
-  <td>Jul-26</td>
+  <td>⭐ Jul-26</td>
   <td class="doc-cell" data-rowtype="HY26TU" data-doctype="H1TU">FY26<br>H1 TU</td>
   <td class="g-flat">flat</td>
-  <td>—</td>
   <td>"H1 2026 has been a period of progress, albeit one where the pace of revenue growth has been challenging. The underlying revenue growth rate of approximately 1% requires greater consistency in performance from our sales investments to accelerate. Demand across all our end markets remains robust, albeit within a challenging macro-economic environment. The Group expects full year Adjusted EBITDA at the low end of consensus, reflecting planned actions in the second half to accelerate margin." <em>(Consensus range £126m–£134m; low end = £126m; towards-40% trajectory implies c.£134m. Named macro headwind alongside an in-line claim. Scored on the heaviest phrase.)</em></td>
   <td>🔴🔴 −2</td>
 </tr>
@@ -848,7 +969,7 @@ EBITDA: H2 FY22=£47.4m†, H2 FY23=£57.3m†, H2 FY24=£59.0m†, H2 FY25=£58
   <th data-dtype="H1R">Aug-25<br><small>H1 R</small></th>
   <th data-dtype="FYTU">Jan-26<br><small>FY TU</small></th>
   <th data-dtype="FYR">Mar-26<br><small>FY R</small></th>
-  <th data-dtype="H1TU">Jul-26<br><small>H1 TU ★</small></th>
+  <th data-dtype="H1TU">⭐ Jul-26<br><small>H1 TU</small></th>
 </tr>
 </thead>
 <tbody>
@@ -1129,16 +1250,47 @@ EBITDA: H2 FY22=£47.4m†, H2 FY23=£57.3m†, H2 FY24=£59.0m†, H2 FY25=£58
 {
   "ticker": "DATA",
   "company": "GlobalData Plc",
+  "kind": "ticker",
   "direction": "down",
   "headline": "Underlying growth frozen at +1% three halves straight; EBITDA anchored to consensus low end, not the towards 40% recovery target.",
   "trigger": "Conditions 1 and 2 fired: Revenue Δrate -9.1pp H1-vs-H1; Text score -5 on latest RNS",
   "alert": true,
+  "fired": 2,
+  "fired_of": 3,
   "rns_type": "H1 TU",
   "rns_date": "2026-07-09",
   "build_date": "2026-07-30",
-  "spec_version": "v4.0",
+  "spec_version": "v4.6",
   "next_test": "Sep-26 HY26 Full Results — watch underlying revenue vs +1%, H2 EBITDA vs implied £71.6m, Healthcare CFR",
-  "url": "DATA.html"
+  "url": "DATA.html",
+  "grid": {
+    "labels": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5"
+    ],
+    "periods": [
+      "H1FY22",
+      "H2FY22",
+      "H1FY23",
+      "H2FY23",
+      "H1FY24",
+      "H2FY24",
+      "H1FY25",
+      "H2FY25",
+      "H1FY26"
+    ],
+    "rows": [
+      "-grgrgrgr",
+      "--ggraggr",
+      "--gggarra",
+      "-grraaara",
+      "--ggrrrrg"
+    ],
+    "note": "R1 CFR/IFR · R2 Revenue · R3 EBITDA margin · R4 Value renewal rate · R5 Adj. EBITDA £m — H-reporter halves, rightmost cell = Buy/Sell H1 FY26 (H1 TU 09-Jul-26)"
+  }
 }
 </script>
 
