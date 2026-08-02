@@ -74,16 +74,47 @@
     {
       "ticker": "ELIX",
       "company": "Elixirr International plc",
+      "kind": "ticker",
       "direction": "up",
       "headline": "FY25 record — revenue +34%, EBITDA +42%, margin 29.6%, organic re-accelerated to 15.3%; the only shadow is a funded £24.1m net-debt swing.",
-      "trigger": "Green-shoot condition 1 only (single condition, no 2-of-3): organic +2.3pp and four consecutive 🟢↗ revenue growth accelerations. ⛔ Tier-1 balance-sheet flag: net cash→net debt crossover (first H1 25, £24.1m at FY25), acquisition-funded and covenant-clean.",
+      "trigger": "Green-shoot condition 1 only (no 2-of-3): organic +2.3pp, four consecutive 🟢↗ revenue accelerations. ⛔ Tier-1: net cash→net debt crossover, acquisition-funded, covenant-clean.",
       "alert": true,
+      "fired": 1,
+      "fired_of": 3,
       "rns_type": "FY Results",
       "rns_date": "2026-04-20",
-      "build_date": "2026-07-28",
-      "spec_version": "4.0",
+      "build_date": "2026-08-02",
+      "spec_version": "4.6",
       "next_test": "H1 26 organic vs 17%; net debt vs Kvadrant's £18m envelope; whether a quantified guide — or the H1 TU — returns.",
-      "url": "ELIX.html"
+      "url": "ELIX.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "",
+          "",
+          "",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2"
+        ],
+        "rows": [
+          "---grargg",
+          "---r-gggg",
+          "---agaaaa",
+          "-----grgg",
+          "--gaagrrr"
+        ],
+        "note": "Rows are the five ledger ranks in rank order, right-anchored on the FY25 Buy/Sell column."
+      }
     },
     {
       "ticker": "MIDW",
