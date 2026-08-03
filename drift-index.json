@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-02",
+  "updated": "2026-08-03",
   "tickers": [
     {
       "ticker": "STAF",
@@ -588,10 +588,12 @@
       "rns_type": "H1 TU",
       "rns_date": "2026-07-31",
       "build_date": "2026-07-31",
-      "spec_version": "v3.10 base + §2 grid v4.0",
+      "spec_version": "v4.6",
       "next_test": "Sep H1 R: PBT vs ~£3.0m consensus anchor, margin read, and any hard pipeline number decide the call.",
       "url": "CHH.html",
       "kind": "ticker",
+      "fired": 2,
+      "fired_of": 3,
       "grid": {
         "labels": [
           "R1",
@@ -601,24 +603,24 @@
           "R5"
         ],
         "periods": [
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1"
+          "H1'22",
+          "H2'22†",
+          "H1'23",
+          "H2'23†",
+          "H1'24",
+          "H2'24†",
+          "H1'25",
+          "H2'25†",
+          "⭐H1'26"
         ],
         "rows": [
-          "---r-r-g-",
+          "aaaa-a-a-",
           "--gaarrr-",
-          "----rggag",
-          "----rrrg-",
-          "--rrrrrgg"
+          "--rrrggag",
+          "--rrrrrg-",
+          "-rrrrrrgg"
         ],
-        "note": "Rows = ranks 1-5 · half-year grain · newest right (Buy/Sell)"
+        "note": "One row per ledger rank (R1–R5) at half-period grain; rightmost cell = Buy/Sell H1'26 TU 31 Jul 2026. g=🟢↗ a=🟡→ r=🔴↘ x=❌withheld -=outside cadence/no comparator/first print. H1'22/H2'22: YoY% now shown, arrow — (first scored print)."
       }
     },
     {
