@@ -194,16 +194,16 @@
       "company": "Elixirr International plc",
       "kind": "ticker",
       "direction": "up",
-      "headline": "FY25 record — revenue +34%, EBITDA +42%, margin 29.6%, organic re-accelerated to 15.3%; the only shadow is a funded £24.1m net-debt swing.",
-      "trigger": "Green-shoot condition 1 only (no 2-of-3): organic +2.3pp, four consecutive 🟢↗ revenue accelerations. ⛔ Tier-1: net cash→net debt crossover, acquisition-funded, covenant-clean.",
+      "headline": "H1 26 record — £89.0m (+25%), margin 31.0% — but growth decelerates 10pp, organic goes unstated, and the guide anchor disappears.",
+      "trigger": "No 2-of-3. Green-shoot condition 1 (FY25 actuals) stands; deterioration condition 2 technically met at the latest print (Text −1, no expectations anchor) — single condition, annotated. ⛔ Tier-1: net debt £24.1m (Dec-25), acquisition-funded, untested in this TU.",
       "alert": true,
       "fired": 1,
       "fired_of": 3,
-      "rns_type": "FY Results",
-      "rns_date": "2026-04-20",
-      "build_date": "2026-08-02",
+      "rns_type": "H1 Trading Update",
+      "rns_date": "2026-08-03",
+      "build_date": "2026-08-03",
       "spec_version": "4.6",
-      "next_test": "H1 26 organic vs 17%; net debt vs Kvadrant's £18m envelope; whether a quantified guide — or the H1 TU — returns.",
+      "next_test": "Sep-26 interims: organic vs 17% is decisive — below ~14%, or withheld again, flips the call. Jun-26 net debt vs £18m Kvadrant envelope.",
       "url": "ELIX.html",
       "grid": {
         "labels": [
@@ -216,22 +216,22 @@
         "periods": [
           "",
           "",
-          "",
           "H1",
           "H2",
           "H1",
           "H2",
           "H1",
-          "H2"
+          "H2",
+          "H1"
         ],
         "rows": [
-          "---grargg",
-          "---r-gggg",
-          "---agaaaa",
-          "-----grgg",
-          "--gaagrrr"
+          "--grargg-",
+          "--r-ggggr",
+          "--agaaaaa",
+          "----grgg-",
+          "-gaagrrr-"
         ],
-        "note": "Rows are the five ledger ranks in rank order, right-anchored on the FY25 Buy/Sell column."
+        "note": "Rows are the five ledger ranks in rank order, right-anchored on the ⭐ H1 26 TU Buy/Sell column; R1 renders H1/FY under B.2a."
       }
     },
     {
