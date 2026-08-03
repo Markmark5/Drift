@@ -699,6 +699,51 @@
           "ggggggrrr"
         ]
       }
+    },
+    {
+      "ticker": "SAAS",
+      "company": "Microlise Group plc",
+      "kind": "ticker",
+      "direction": "down",
+      "headline": "Third effective guide-down as consensus falls again; first printed revenue decline; margin recovering off the H2 floor.",
+      "trigger": "2-of-3 deterioration — Hard/G + Text + Drift all fired",
+      "alert": true,
+      "fired": 3,
+      "fired_of": 3,
+      "rns_type": "H1 TU",
+      "rns_date": "2026-08-03",
+      "build_date": "2026-08-03",
+      "spec_version": "v4.6",
+      "next_test": "Interim results late Sep-26 — subscriptions test, statutory wedge, NRR at printed grain",
+      "url": "SAAS.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H1",
+          "FY",
+          "H1",
+          "FY",
+          "H1",
+          "FY",
+          "H1",
+          "FY",
+          "H1"
+        ],
+        "rows": [
+          "-aaagarrr",
+          "-------ra",
+          "-------rr",
+          "----ggrrr",
+          "----gagrr"
+        ],
+        "note": "Rows = ledger ranks R1-R5 at H1/FY sub-period grain, right-anchored on the H1 FY26 Buy/Sell."
+      }
     }
   ]
 }
