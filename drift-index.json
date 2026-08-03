@@ -178,15 +178,46 @@
     {
       "ticker": "ANP",
       "company": "Anpario plc",
+      "kind": "ticker",
       "direction": "watch",
       "headline": "Record FY25 everywhere — but the margin engine has stopped climbing, and Anpario has quietly stopped printing volumes and prices.",
       "trigger": "Text + Drift (2 of 3); Hard/G watch-flagged",
       "alert": true,
+      "fired": 2,
+      "fired_of": 3,
       "rns_type": "AGM Statement",
       "rns_date": "2026-06-18",
       "build_date": "2026-07-28",
-      "spec_version": "4.0",
+      "spec_version": "4.6",
       "next_test": "9 Sep 2026 interims — the printed H1 gross margin, and whether volumes and prices reappear.",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1"
+        ],
+        "rows": [
+          "rraggagga",
+          "--rrggxx-",
+          "--ggrrgx-",
+          "--ragggra",
+          "--rggggra"
+        ],
+        "note": "One row per ledger rank; R1/R4/R5 at H1/H2 grain, R2/R3 at B.2a reduced H1/FY grain (FY cell scored). Rightmost cell = Buy/Sell (H1 FY26 AGM)."
+      },
       "url": "ANP.html"
     },
     {
