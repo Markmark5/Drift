@@ -48,17 +48,17 @@
       "ticker": "FDM",
       "company": "FDM Group (Holdings) plc",
       "kind": "ticker",
-      "direction": "watch",
-      "headline": "Consultant count flat since October 2025 — the metric that led the collapse has stopped falling; profit hasn't turned yet.",
-      "trigger": "green-shoot condition 2 — language rising four consecutive prints from −3 floor",
-      "alert": false,
-      "fired": 1,
+      "direction": "up",
+      "headline": "First consultant increase since the 2023 downturn — 2,042, up 2% sequentially, coaching +50%; the turn the framework was built to catch.",
+      "trigger": "green-shoot conditions 1+2 — hard sequential turn in rank-1 plus five consecutive rising language prints",
+      "alert": true,
+      "fired": 2,
       "fired_of": 3,
-      "rns_type": "AGM Statement",
-      "rns_date": "2026-05-21",
-      "build_date": "2026-08-02",
+      "rns_type": "H1 Results",
+      "rns_date": "2026-08-03",
+      "build_date": "2026-08-03",
       "spec_version": "v4.6",
-      "next_test": "H1 FY26 results, 3 August 2026 — the confirming or breaking print.",
+      "next_test": "Nov-26 TU — consultants above 2,042 with guide held makes three confirming prints running.",
       "url": "FDM.html",
       "grid": {
         "labels": [
@@ -80,13 +80,13 @@
           "H1FY26"
         ],
         "rows": [
-          "-rrrrrraa",
-          "--rrrrrr-",
-          "--grrrrr-",
-          "--arrrrr-",
-          "--rraaaa-"
+          "-rrrrrrag",
+          "--rrrrrrg",
+          "--grrrrrg",
+          "--arrrrrg",
+          "--rraaaaa"
         ],
-        "note": "One row per ledger rank (R1–R5) at H-grain sub-period; rightmost cell = Buy/Sell (AGM May-26 / Apr-26 consultant snapshot); g=🟢↗ a=🟡→ r=🔴↘ x=❌ -=no score"
+        "note": "One row per ledger rank (R1–R5) at H-grain sub-period; rightmost cell = Buy/Sell (H1 FY26 Results, 3 Aug 2026); g=🟢↗ a=🟡→ r=🔴↘ x=❌ -=no score"
       }
     },
     {
