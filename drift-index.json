@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-03",
+  "updated": "2026-08-04",
   "tickers": [
     {
       "ticker": "STAF",
@@ -866,6 +866,51 @@
         "note": "One row per ledger rank (R1 LFL, R2 UOP, R3 margin, R4 vitality, R5 cash conv.), §2 half/4M sub-period grain, right-anchored on the 4M FY26 Buy/Sell column."
       },
       "url": "GEN.html"
+    },
+    {
+      "ticker": "ZOO",
+      "company": "ZOO Digital Group plc",
+      "kind": "ticker",
+      "direction": "watch",
+      "headline": "Restructuring delivered the profit; revenue must deliver the next leg, and the cost lever is now spent",
+      "trigger": "1 of 3 — Text fires green-shoot alone (lexicon rising four prints from below zero). Condition 1 fires in both directions simultaneously; Condition 3 watch only.",
+      "alert": false,
+      "fired": 1,
+      "fired_of": 3,
+      "rns_type": "FY Results",
+      "rns_date": "2026-07-30",
+      "build_date": "2026-08-04",
+      "spec_version": "v4.7",
+      "next_test": "Sep-26 AGM: does localisation's sequential turn hold and media services stabilise?",
+      "url": "ZOO.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2"
+        ],
+        "rows": [
+          "---rrggra",
+          "---rrggrr",
+          "-ggrrgggg",
+          "-agrrggga",
+          "rgggrrrrg"
+        ],
+        "note": "R1 localisation, R2 media services, R3 adj EBITDA, R4 gross margin, R5 net cash. Ranks 1-4 at half grain; R5 at H1/FY-end grain, so its cells align to the same columns but read Sep-21 through Mar-26."
+      }
     }
   ]
 }
