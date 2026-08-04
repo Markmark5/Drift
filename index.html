@@ -27,8 +27,13 @@ body{background:var(--bg);font-family:var(--mono);color:var(--text-primary);font
 .meta{margin-left:auto;font-size:10px;color:var(--text-dim);}
 .epi{padding:24px 20px;text-align:center;border-bottom:1px solid var(--border);
   background:linear-gradient(180deg,#16161f 0%,#0d0d14 55%,var(--surface) 100%);}
-.epi p{font-size:26px;font-weight:600;letter-spacing:-.02em;line-height:1.35;max-width:900px;margin:0 auto;}
-.epi .g{color:var(--green);} .epi .r{color:var(--red);} .epi .a{color:var(--amber);}
+.epi p{font-size:26px;font-weight:600;letter-spacing:-.02em;line-height:1.55;max-width:900px;margin:0 auto;}
+.epi .r{color:var(--red);}
+.epi .hl{padding:2px 9px;border-radius:3px 0 0 3px;font-weight:700;color:#fff;
+  background:linear-gradient(90deg,#ff0a78 0%,#ff0a78 62%,#ff0a7800 100%);
+  -webkit-box-decoration-break:clone;box-decoration-break:clone;}
+.epi .mark{background:linear-gradient(180deg,transparent 50%, #ffb347cc 50%, #ffb347cc 94%, transparent 94%);
+  padding:0 4px;border-radius:2px;}
 @media (max-width:640px){.epi{padding:18px 14px;} .epi p{font-size:19px;}}
 .page{padding:16px;display:flex;flex-direction:column;gap:14px;max-width:1400px;margin:0 auto;}
 .section{background:var(--surface);border:1px solid var(--border);border-radius:6px;overflow:hidden;}
@@ -132,7 +137,7 @@ body{background:var(--bg);font-family:var(--mono);color:var(--text-primary);font
   <button class="navbtn" onclick="upOpen()">⬆ Upload build</button>
   <div class="meta" id="meta">loading…</div>
 </div>
-<div class="epi"><p><span class="g">Soft signals lead</span>, <span class="r">hard signals confirm</span>, and the lag between them is <span class="a">the edge</span>.</p></div>
+<div class="epi"><p><span class="hl">Soft signals lead</span>, <span class="r">hard signals confirm</span>, and the lag between them is <span class="mark">the edge</span>.</p></div>
 <div class="page">
   <div class="section">
     <div class="section-hdr">
