@@ -338,16 +338,47 @@
     {
       "ticker": "TUNE",
       "company": "Focusrite plc",
+      "kind": "ticker",
       "direction": "watch",
       "headline": "Revenue turned down in the latest half while profit and margin held — one leg each way, neither side converging to an alert.",
-      "trigger": "Deterioration 1 of 3 — parent-vs-latest-sub-period divergence only (v3.16; print-corroborated at Rank 4 by the Mar-26 TU, watch-flagged at Rank 1). Text did not fire. Drift did not fire: the ADAM Audio candidate is not a ledger metric, is qualitative not blank, and is explained. Green-shoot mirror 1 of 3. No alert. Audited 28 Jul 2026: prior Drift leg withdrawn, five grid/trail cells corrected, no arrow changed.",
+      "trigger": "Deterioration 1 of 3 — parent-vs-latest-sub-period divergence only (print-corroborated at Rank 4 by the Mar-26 TU, watch-flagged at Rank 1). Text did not fire. Drift did not fire: the ADAM Audio candidate is not a ledger metric, is qualitative not blank, and is explained. Green-shoot mirror 1 of 3. No alert.",
       "alert": false,
+      "fired": 1,
+      "fired_of": 3,
       "rns_type": "Final Results",
       "rns_date": "2026-06-29",
       "build_date": "2026-07-28",
-      "spec_version": "3.16",
+      "spec_version": "4.7",
       "next_test": "H1 FY27 (six months to Aug-26): Content Creation above £63.6m, and whether gross margin holds above 45%.",
-      "url": "TUNE.html"
+      "url": "TUNE.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1"
+        ],
+        "rows": [
+          "----rrggr",
+          "----rrrrg",
+          "--agrrrgg",
+          "----rrggr",
+          "----rrggg"
+        ],
+        "note": "One row per ledger rank, half-grain, right-anchored on the Jun-26 Buy/Sell half (Feb-26). Rank 2 is Audio Reproduction revenue, promoted at the v4.7 build."
+      }
     },
     {
       "ticker": "QTX",
