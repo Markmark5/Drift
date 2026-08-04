@@ -110,7 +110,7 @@
     background:var(--red-tint);display:flex;flex-direction:column;}
   .statebar .darkbar{background:var(--dark);}
   .statebar .sb-body{padding:14px 16px;font-size:13.5px;line-height:1.5;
-    display:flex;align-items:center;flex:1;}
+    display:block;flex:1;}
   .statebar .sb-inner b{font-weight:700;}
 
   @media(max-width:640px){
@@ -129,7 +129,7 @@
   table.grid{table-layout:fixed; width:100%; min-width:1000px; border-collapse:collapse; font-size:12.5px}
   table.grid th, table.grid td{border:1px solid var(--line); text-align:center; padding:7px 4px; vertical-align:top}
   table.grid col.lab{width:190px}
-  table.grid col.per{width:calc((100% - 190px)/8)} /* N=8 period columns */
+  table.grid col.per{width:calc((100% - 190px)/9)} /* N=9 period columns */
   .yband{background:#efedE7; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; font-weight:700}
   th.phead{cursor:pointer; user-select:none; font-size:11.5px; background:#f7f6f2}
   th.phead:hover{background:#eceae4}
@@ -207,130 +207,184 @@
     </ul>
   </div>
 </div>
-<!-- ============ §1 LEDGER ============ -->
+<!-- ============ §1 LEDGER (v4.7) ============ -->
 <div class="sec">
 <h2 class="section">§1 · Metric Ledger</h2>
-<p class="section-sub">Scored metrics, ranked by lead time. Rank 1 is the ticker's tell.</p>
+<p class="section-sub"><b>Router: H-reporter — Rule Set H applies.</b> No Q1/Q3 trading updates anywhere in the record, so the half is the finest grain. Scored metrics ranked by lead time; Rank 1 is the ticker's tell.</p>
 <table>
-<thead><tr><th>Rank</th><th>Metric</th><th>Type</th><th>Why it leads for this ticker</th><th>Cadence</th><th>Status this run</th></tr></thead>
+<thead><tr><th>Rank</th><th>Metric</th><th>Type</th><th>Grain</th><th>Why it leads for this ticker</th><th>Cadence</th><th>Status this run</th></tr></thead>
 <tbody>
-<tr><td><b>1</b></td><td>Adjusted EBITDA (H1 &amp; H2, like-half)</td><td>Rate / flow</td><td>Company's own repeated wording calls adjusted EBITDA the "key indicator … more closely aligned to the underlying performance" — earliest hard read before FX and one-off noise.</td><td>Semi-annual (H1R + audited FY)</td><td class="neg">🔴 two negative halves (H1 −5.3%, H2 −22.8%)</td></tr>
-<tr><td><b>2</b></td><td>Revenue, like-for-like ex-M&amp;A</td><td>Flow</td><td>Only clean read on organic momentum once acquisitions enter the numbers; company discloses the like-for-like figure at H1 and FY.</td><td>Semi-annual</td><td class="neg">🔴 organic −8.2% FY25; H1 −5.7%, H2 flat</td></tr>
-<tr><td><b>3</b></td><td>Gross margin % (H1-vs-H1)</td><td>Rate</td><td>Company's own "Xth year in a row margin improved" framing makes it a self-declared KPI and the main profit-protection lever it cites.</td><td>Semi-annual</td><td class="pos">🟢 still expanding — 5 straight years (FY25 42.6%)</td></tr>
-<tr><td><b>4</b></td><td>Full-year revenue &amp; Adj EBITDA guide (vs prior guide)</td><td>Guide</td><td>Numeric FY guidance issued at TU/H1R cadence; the guide-to-guide delta is the earliest visible management view of the full year.</td><td>Ad hoc (TU/H1R)</td><td class="neg">🔴🔴🔴 CUT (Sep-25), then missed even the cut range</td></tr>
-<tr><td><b>5</b></td><td>AGM H1 sales disclosure (quantified vs qualitative)</td><td>Disclosure</td><td>2022–25 AGMs each quantified H1 sales (four straight years); disclosure, not just level, is diagnostic — "disclosure breaks before level."</td><td>Semi-annual (AGM)</td><td class="neg">❌ withheld at Jun-26 — first qualitative-only H1 AGM in the record</td></tr>
+<tr><td><b>1</b></td><td>Full-year guide (revenue &amp; Adj EBITDA) vs prior guide</td><td>Guide</td><td>Guide series (half-mapped)</td><td><b>Demonstrated lead:</b> the Dec-24 switch from "ahead" to "in line" preceded the first hard-number fall (Sep-25 H1) by roughly nine months, with the shares still near highs. The company's own guide moved before any printed figure did.</td><td>Ad hoc (TU / H1R / AGM)</td><td class="neg">🔴🔴🔴 CUT (Sep-25), then missed even the cut range</td></tr>
+<tr><td><b>2</b></td><td>Adjusted EBITDA</td><td>Flow</td><td>H1 / H2 (H2 derived †)</td><td>Company's own repeated wording calls adjusted EBITDA the measure "closer to the underlying cash flow performance of the business, which is regularly monitored and measured by management" — earliest hard read before FX and one-off noise.</td><td>Semi-annual (H1R + audited FY)</td><td class="neg">🔴 two negative halves (H1 −5.3%, H2 −22.8%)</td></tr>
+<tr><td><b>3</b></td><td>Revenue (like-for-like ex-M&amp;A where acquired)</td><td>Flow</td><td>H1 / H2 (H2 derived †)</td><td>Only clean read on organic momentum once acquisitions enter the numbers; the company itself discloses the like-for-like split at H1 and FY.</td><td>Semi-annual</td><td class="neg">🔴 organic −8.2% FY25; H1 −5.7%, H2 flat</td></tr>
+<tr><td><b>4</b></td><td>Gross margin %</td><td>Rate metric</td><td>H1 / H2 (H2 derived †)</td><td>Company's own "fifth year running gross margin has improved" framing makes it a self-declared KPI and the main profit-protection lever it names.</td><td>Semi-annual</td><td class="amber">🟡 expansion stalling — H2 FY25 only +0.3pp vs H1's +2.5pp</td></tr>
+<tr><td><b>5</b></td><td>AGM H1 sales disclosure (quantified vs qualitative)</td><td>Disclosure</td><td>AGM (H1 slot)</td><td>2022–25 AGMs each quantified H1 sales (four straight years); disclosure, not just level, is diagnostic — disclosure breaks before level does.</td><td>Annual (AGM)</td><td class="neg">❌ withheld at Jun-26 — first qualitative-only H1 AGM in the record</td></tr>
 </tbody>
 </table>
-<p class="section-sub" style="margin-top:10px;">Bands: H-grain rate ±2.0pp (constant this run — the finest disclosed grain is the half; H2 is now reported from the audited annuals, so both halves are scored). Order book was quantified once (H1 FY22, £12.9m) and never again — not a habitual disclosure, so not scored despite sector convention.</p>
+<p class="section-sub" style="margin-top:10px;"><b>Bands (stated per ticker, never inherited across types):</b> flow metrics (Ranks 2–3) H-grain rate ±2.0pp · rate metric (Rank 4, gross margin) ±1.0pp on the pp move itself. Order book was quantified once (H1 FY22, £12.9m) and never again — not a habitual disclosure, so not scored despite sector convention. Cash is the company's own third stated focus but rises throughout and lags, so it is not scored.</p>
 </div>
 
-<!-- ============ §2 UNIFIED FORWARD GRID (v4.0 locked skin) ============ -->
+<!-- ============ §2 UNIFIED FORWARD GRID (v4.7) ============ -->
 <div class="sec">
 <h2 class="section">§2 · Unified Forward Grid</h2>
-<p class="section-sub">Half-year spine · H2 reported from audited annuals · sub-period columns scored, full-year aggregate rows muted &amp; never scored · Buy/Sell column bold · click a period header to highlight that half across all years.</p>
+<p class="section-sub">Half-year spine, full lookback · 9 sub-period columns · H2 derived from audited annuals † · full-year aggregate rows muted and never scored · ⭐ marks the Buy/Sell RNS · click a period header to highlight that half across all years.</p>
 <div class="gridwrap">
 <table class="grid" id="grid2">
-<colgroup><col class="lab"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"></colgroup>
+<colgroup><col class="lab"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"></colgroup>
 <thead>
-<tr><th class="lab" rowspan="2"></th><th class="yband" colspan="2">FY22</th><th class="yband" colspan="2">FY23</th><th class="yband" colspan="2">FY24</th><th class="yband" colspan="2">FY25</th></tr>
-<tr><th class="phead" data-p="H1">H1</th><th class="phead" data-p="H2">H2</th><th class="phead" data-p="H1">H1</th><th class="phead" data-p="H2">H2</th><th class="phead" data-p="H1">H1</th><th class="phead" data-p="H2">H2</th><th class="phead bs-col" data-p="H1">H1</th><th class="phead bs-col" data-p="H2">H2</th></tr>
+<tr><th class="lab" rowspan="2"></th><th class="yband" colspan="2">FY22</th><th class="yband" colspan="2">FY23</th><th class="yband" colspan="2">FY24</th><th class="yband" colspan="2">FY25</th><th class="yband bs-col" colspan="1">FY26</th></tr>
+<tr><th class="phead" data-p="H1">H1</th><th class="phead" data-p="H2">H2</th><th class="phead" data-p="H1">H1</th><th class="phead" data-p="H2">H2</th><th class="phead" data-p="H1">H1</th><th class="phead" data-p="H2">H2</th><th class="phead" data-p="H1">H1</th><th class="phead" data-p="H2">H2</th><th class="phead bs-col" data-p="H1">⭐ AGM<br>Jun-26</th></tr>
 </thead>
 <tbody>
 
-<!-- ===== RANK 1 — Adjusted EBITDA ===== -->
-<tr class="secbar"><td colspan="9">Rank 1 — Adjusted EBITDA <span class="nat">· 🟢↗ growing faster than last year · 🟡→ ~ the same pace · 🔴↘ shrinking or clearly slowing</span></td></tr>
-<tr class="strip"><td class="lab">Period</td><td>H1</td><td>H2</td><td>H1</td><td>H2</td><td>H1</td><td>H2</td><td>H1</td><td>H2</td></tr>
-<tr class="vrow"><td class="lab">£m · YoY like-for-like</td>
-<td><span class="val">4.4</span><span class="delta">—</span></td>
-<td><span class="val">7.5</span><span class="delta">—</span></td>
-<td><span class="val">7.9 (+79.5%)</span><span class="delta">🟢↗</span></td>
-<td><span class="val">13.1 (+74.7%)</span><span class="delta">🟢↗</span></td>
-<td><span class="val">11.4 (+44.3%)</span><span class="delta">🟢↗</span></td>
-<td><span class="val">13.6 (+3.8%)</span><span class="delta">🟢↗</span></td>
-<td class="bs-col"><span class="val">10.8 <span class="neg">(−5.3%)</span></span><span class="delta neg">🔴↘</span></td>
-<td class="bs-col"><span class="val">10.5 <span class="neg">(−22.8%)</span></span><span class="delta neg">🔴↘</span></td>
-</tr>
-<tr class="agg"><td class="lab">FY (audited, not scored)</td>
-<td colspan="2"><span class="aval">11.9</span><span class="anote">+54.5% · —</span></td>
-<td colspan="2"><span class="aval">21.0</span><span class="anote">+76.5%</span></td>
-<td colspan="2"><span class="aval">25.0<sup>ʳ</sup></span><span class="anote">+19.0%</span></td>
-<td colspan="2"><span class="aval">21.3<sup>ʳ</sup></span><span class="anote">−14.8%</span></td>
+<!-- ===== RANK 1 — Guide ===== -->
+<tr class="secbar"><td colspan="10">Rank 1 — Full-year guide (revenue &amp; Adj EBITDA) <span class="nat">· 🟢↗ guide raised · 🟡→ guide held · 🔴↘ guide cut</span></td></tr>
+<tr class="strip"><td class="lab">Guide event</td><td>Jun-22 AGM</td><td>Sep-22 TU · Jan-23</td><td>Jun-23 TU</td><td>Nov-23 · Jan-24</td><td>Jun-24 AGM</td><td>Sep-24 · Dec-24</td><td>Jun-25 AGM</td><td>Sep-25 H1R</td><td class="bs-col">Jun-26 AGM</td></tr>
+<tr class="vrow"><td class="lab">guide move</td>
+<td><span class="val">held</span><span class="delta">🟡→</span></td>
+<td><span class="val">raised</span><span class="delta">🟢↗</span></td>
+<td><span class="val">raised</span><span class="delta">🟢↗</span></td>
+<td><span class="val">raised</span><span class="delta">🟢↗</span></td>
+<td><span class="val">held</span><span class="delta">🟡→</span></td>
+<td><span class="val">cut</span><span class="delta neg">🔴↘</span></td>
+<td><span class="val">held</span><span class="delta">🟡→</span></td>
+<td><span class="val">cut</span><span class="delta neg">🔴↘</span></td>
+<td class="bs-col"><span class="val">🟡</span><span class="delta">qualitative</span></td>
 </tr>
 
-<!-- ===== RANK 2 — Revenue ===== -->
-<tr class="secbar"><td colspan="9">Rank 2 — Revenue (LFL ex-M&amp;A where acquired) <span class="nat">· 🟢↗ growing faster than last year · 🟡→ ~ the same pace · 🔴↘ shrinking or clearly slowing</span></td></tr>
-<tr class="strip"><td class="lab">Period</td><td>H1</td><td>H2</td><td>H1</td><td>H2</td><td>H1</td><td>H2</td><td>H1</td><td>H2</td></tr>
-<tr class="vrow"><td class="lab">£m · YoY like-for-like</td>
-<td><span class="val">25.2</span><span class="delta">—</span></td>
-<td><span class="val">38.9</span><span class="delta">—</span></td>
-<td><span class="val">36.7 (+45.6%)</span><span class="delta">🟢↗</span></td>
-<td><span class="val">52.9 (+36.0%)</span><span class="delta">🟢↗</span></td>
-<td><span class="val">45.8 (+24.8%)</span><span class="delta">🟢↗</span></td>
-<td><span class="val">55.8 (+5.5%)</span><span class="delta">🟢↗</span></td>
-<td class="bs-col"><span class="val">43.2<sup>LFL</sup> <span class="neg">(−5.7%)</span></span><span class="delta neg">🔴↘</span></td>
-<td class="bs-col"><span class="val">55.8 (0.0%)</span><span class="delta">🟡→</span></td>
+<!-- ===== RANK 2 — Adjusted EBITDA ===== -->
+<tr class="secbar"><td colspan="10">Rank 2 — Adjusted EBITDA <span class="nat">· 🟢↗ growing faster than last year · 🟡→ ~ the same pace · 🔴↘ shrinking or clearly slowing</span></td></tr>
+<tr class="strip"><td class="lab">Period</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td class="bs-col">H1</td></tr>
+<tr class="vrow"><td class="lab">£m · YoY</td>
+<td><span class="val">4.4</span><span class="delta">—</span></td>
+<td><span class="val">7.5†</span><span class="delta">—</span></td>
+<td><span class="val">7.9 (+79.5%)</span><span class="delta">🟢↗</span></td>
+<td><span class="val">13.1† (+74.7%)</span><span class="delta">🟢↗</span></td>
+<td><span class="val">11.4 (+44.3%)</span><span class="delta">🟢↗</span></td>
+<td><span class="val">13.6† (+3.8%)</span><span class="delta">🟢↗</span></td>
+<td><span class="val">10.8 <span class="neg">(−5.3%)</span></span><span class="delta neg">🔴↘</span></td>
+<td><span class="val">10.5† <span class="neg">(−22.8%)</span></span><span class="delta neg">🔴↘</span></td>
+<td class="bs-col"><span class="val">—</span><span class="delta">outside cadence</span></td>
 </tr>
-<tr class="agg"><td class="lab">FY (audited, not scored)</td>
+<tr class="agg"><td class="lab">FY aggregate</td>
+<td colspan="2"><span class="aval">11.9</span><span class="anote">+54.5%</span></td>
+<td colspan="2"><span class="aval">21.0</span><span class="anote">+76.5%</span></td>
+<td colspan="2"><span class="aval">25.0ʳ</span><span class="anote">+19.0%</span></td>
+<td colspan="2"><span class="aval">21.3ʳ</span><span class="anote">−14.8%</span></td>
+<td colspan="1"><span class="aval">—</span></td>
+</tr>
+
+<!-- ===== RANK 3 — Revenue ===== -->
+<tr class="secbar"><td colspan="10">Rank 3 — Revenue (like-for-like ex-M&amp;A where acquired) <span class="nat">· 🟢↗ growing faster than last year · 🟡→ ~ the same pace · 🔴↘ shrinking or clearly slowing</span></td></tr>
+<tr class="strip"><td class="lab">Period</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1 LFL</td><td>H2†</td><td class="bs-col">H1</td></tr>
+<tr class="vrow"><td class="lab">£m · YoY</td>
+<td><span class="val">25.2</span><span class="delta">—</span></td>
+<td><span class="val">38.9†</span><span class="delta">—</span></td>
+<td><span class="val">36.7 (+45.6%)</span><span class="delta">🟢↗</span></td>
+<td><span class="val">52.9† (+36.0%)</span><span class="delta">🟢↗</span></td>
+<td><span class="val">45.8 (+24.8%)</span><span class="delta">🟢↗</span></td>
+<td><span class="val">55.8† (+5.5%)</span><span class="delta">🟢↗</span></td>
+<td><span class="val">43.2 <span class="neg">(−5.7%)</span></span><span class="delta neg">🔴↘</span></td>
+<td><span class="val">55.8† (0.0%)</span><span class="delta">🟡→</span></td>
+<td class="bs-col"><span class="val">❌</span><span class="delta neg">withheld 🔴</span></td>
+</tr>
+<tr class="agg"><td class="lab">FY aggregate</td>
 <td colspan="2"><span class="aval">64.1</span><span class="anote">+28.2%</span></td>
 <td colspan="2"><span class="aval">89.6</span><span class="anote">+39.8%</span></td>
 <td colspan="2"><span class="aval">101.6</span><span class="anote">+13.4%</span></td>
-<td colspan="2"><span class="aval">105.1</span><span class="anote">+3.4% · LFL ex-BA £93.3m −8.2%</span></td>
+<td colspan="2"><span class="aval">105.1</span><span class="anote">+3.4% · LFL 93.3 −8.2%</span></td>
+<td colspan="1"><span class="aval">—</span></td>
 </tr>
 
-<!-- ===== RANK 3 — Gross Margin ===== -->
-<tr class="secbar"><td colspan="9">Rank 3 — Gross margin % <span class="nat">· 🟢↗ wider margin than last year · 🟡→ ~ flat · 🔴↘ narrower margin</span></td></tr>
-<tr class="strip"><td class="lab">Position at</td><td>H1</td><td>—</td><td>H1</td><td>—</td><td>H1</td><td>—</td><td>H1</td><td>—</td></tr>
+<!-- ===== RANK 4 — Gross margin ===== -->
+<tr class="secbar"><td colspan="10">Rank 4 — Gross margin % <span class="nat">· 🟢↗ wider margin than last year · 🟡→ ~ flat · 🔴↘ narrower margin</span></td></tr>
+<tr class="strip"><td class="lab">Period</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td class="bs-col">H1</td></tr>
 <tr class="vrow"><td class="lab">% · margin Δ</td>
 <td><span class="val">39.0%</span><span class="delta">—</span></td>
-<td><span class="val">—</span><span class="delta">outside cadence</span></td>
-<td><span class="val">39.1%</span><span class="delta">🟡→ +0.1pp</span></td>
-<td><span class="val">—</span><span class="delta">outside cadence</span></td>
-<td><span class="val">42.5%</span><span class="delta">🟢↗ +3.4pp</span></td>
-<td><span class="val">—</span><span class="delta">outside cadence</span></td>
-<td class="bs-col"><span class="val">45.0%</span><span class="delta">🟢↗ +2.5pp</span></td>
-<td class="bs-col"><span class="val">—</span><span class="delta">outside cadence</span></td>
+<td><span class="val">34.7%†</span><span class="delta">—</span></td>
+<td><span class="val">39.1%</span><span class="delta">+0.1pp 🟡→</span></td>
+<td><span class="val">40.5%†</span><span class="delta">+5.7pp 🟢↗</span></td>
+<td><span class="val">42.5%</span><span class="delta">+3.4pp 🟢↗</span></td>
+<td><span class="val">40.1%†</span><span class="delta">−0.3pp 🟡→</span></td>
+<td><span class="val">45.0%</span><span class="delta">+2.5pp 🟢↗</span></td>
+<td><span class="val">40.5%†</span><span class="delta">+0.3pp 🟡→</span></td>
+<td class="bs-col"><span class="val">🟡</span><span class="delta">qualitative</span></td>
 </tr>
-<tr class="agg"><td class="lab">FY (audited)</td>
+<tr class="agg"><td class="lab">FY aggregate</td>
 <td colspan="2"><span class="aval">36.4%</span></td>
-<td colspan="2"><span class="aval">39.9%</span></td>
-<td colspan="2"><span class="aval">41.2%</span></td>
-<td colspan="2"><span class="aval">42.6%</span><span class="anote">+1.4pp — 5th year up</span></td>
-</tr>
-
-<!-- ===== RANK 4 — Guide ===== -->
-<tr class="secbar"><td colspan="9">Rank 4 — Full-year guide (revenue &amp; Adj EBITDA) <span class="nat">· guide vs prior guide · G-arrow = direction vs prior guide</span></td></tr>
-<tr class="strip"><td class="lab">Doc / date</td><td colspan="2">Jan-23 FYTU</td><td colspan="2">Jan-24 FYTU</td><td colspan="2">Dec-24 TU → Apr-25 R</td><td colspan="2">Sep-25 H1R → Apr-26 R</td></tr>
-<tr class="vrow"><td class="lab">Rev guide · EBITDA guide · G</td>
-<td colspan="2" style="text-align:left;font-size:12px;line-height:1.5;">Rev ≥£61m · EBITDA ~£11.8m<br><span style="color:var(--green)">🟢 RAISE · beat (£64.1m / £11.9m)</span></td>
-<td colspan="2" style="text-align:left;font-size:12px;line-height:1.5;">Rev ≥£85m · PBT ≥£16m<br><span style="color:var(--green)">🟢 RAISE · beat (£89.6m / £18.1m)</span></td>
-<td colspan="2" style="text-align:left;font-size:12px;line-height:1.5;">Dec-24: "in line" — first non-ahead<br><span style="color:var(--red)">🔴 soft CUT · met (£101.6m / £24.6m adj PBT)</span></td>
-<td colspan="2" class="bs-col" style="text-align:left;font-size:12px;line-height:1.5;">Sep-25: £107–112m · £23.5–25.5m EBITDA<br><span style="color:var(--red)">🔴🔴🔴 CUT · <b>MISSED</b> (£105.1m / £21.3m — below low end)</span></td>
+<td colspan="2"><span class="aval">39.9%</span><span class="anote">+3.5pp</span></td>
+<td colspan="2"><span class="aval">41.2%</span><span class="anote">+1.3pp</span></td>
+<td colspan="2"><span class="aval">42.6%</span><span class="anote">+1.4pp · 5th year up</span></td>
+<td colspan="1"><span class="aval">—</span></td>
 </tr>
 
 <!-- ===== RANK 5 — AGM disclosure ===== -->
-<tr class="secbar"><td colspan="9">Rank 5 — AGM H1 sales disclosure <span class="nat">· quantified ✅ · qualitative-only 🟡 · withheld ❌</span></td></tr>
-<tr class="strip"><td class="lab">AGM date</td><td colspan="2">Jun-22</td><td colspan="2">Jun-23</td><td colspan="2">Jun-24</td><td colspan="2" class="bs-col">Jun-25 → Jun-26</td></tr>
+<tr class="secbar"><td colspan="10">Rank 5 — AGM H1 sales disclosure <span class="nat">· 🟢↗ figure given · 🟡→ direction only · 🔴↘ figure withheld</span></td></tr>
+<tr class="strip"><td class="lab">AGM</td><td>Jun-22</td><td>—</td><td>Jun-23</td><td>—</td><td>Jun-24</td><td>—</td><td>Jun-25</td><td>—</td><td class="bs-col">Jun-26</td></tr>
 <tr class="vrow"><td class="lab">H1 sales figure</td>
-<td colspan="2" style="text-align:center;font-size:12px;"><span class="val">✅</span><span class="delta">&gt;£24m</span></td>
-<td colspan="2" style="text-align:center;font-size:12px;"><span class="val">✅</span><span class="delta">&gt;£36m</span></td>
-<td colspan="2" style="text-align:center;font-size:12px;"><span class="val">✅</span><span class="delta">~£46m</span></td>
-<td class="bs-col" style="text-align:center;font-size:12px;"><span class="val">✅</span><span class="delta">£50–52m</span></td>
-<td class="bs-col" style="text-align:center;font-size:12px;"><span class="val neg">❌</span><span class="delta neg">no figure · habit broken</span></td>
+<td><span class="val">&gt;£24m</span><span class="delta">🟢↗ given</span></td>
+<td><span class="val">—</span><span class="delta">outside cadence</span></td>
+<td><span class="val">&gt;£36m</span><span class="delta">🟢↗ given</span></td>
+<td><span class="val">—</span><span class="delta">outside cadence</span></td>
+<td><span class="val">~£46m</span><span class="delta">🟢↗ given</span></td>
+<td><span class="val">—</span><span class="delta">outside cadence</span></td>
+<td><span class="val">£50–52m</span><span class="delta">🟢↗ given</span></td>
+<td><span class="val">—</span><span class="delta">outside cadence</span></td>
+<td class="bs-col"><span class="val">❌</span><span class="delta neg">withheld 🔴</span></td>
 </tr>
 
 </tbody>
 </table>
 </div>
+
+<!-- 🔲 CARD STRIP DRAWER (first under the grid, per v4.6 order) -->
+<details>
+<summary>🔲 Card strip — wall preview &amp; index entry</summary>
+<div class="inner">
+<table style="border-collapse:separate;border-spacing:3px;margin:6px 0 12px;">
+<tr><td style="font-size:10.5px;color:#5f5c54;padding:2px 6px 2px 0;border:none;">&nbsp;</td><td style="border:none;font-size:9.5px;color:#5f5c54;text-align:center;padding:0;">H1</td><td style="border:none;font-size:9.5px;color:#5f5c54;text-align:center;padding:0;">H2</td><td style="border:none;font-size:9.5px;color:#5f5c54;text-align:center;padding:0;">H1</td><td style="border:none;font-size:9.5px;color:#5f5c54;text-align:center;padding:0;">H2</td><td style="border:none;font-size:9.5px;color:#5f5c54;text-align:center;padding:0;">H1</td><td style="border:none;font-size:9.5px;color:#5f5c54;text-align:center;padding:0;">H2</td><td style="border:none;font-size:9.5px;color:#5f5c54;text-align:center;padding:0;">H1</td><td style="border:none;font-size:9.5px;color:#5f5c54;text-align:center;padding:0;">H2</td><td style="border:none;font-size:9.5px;color:#5f5c54;text-align:center;padding:0;">H1</td></tr>
+<tr><td style="font-size:10.5px;font-weight:700;padding:2px 6px 2px 0;border:none;white-space:nowrap;">R1 guide</td><td style="background:#fdf4e3;border:1px solid #d8d5cf;width:22px;height:18px;"></td><td style="background:#e9f5ee;border:1px solid #d8d5cf;"></td><td style="background:#e9f5ee;border:1px solid #d8d5cf;"></td><td style="background:#e9f5ee;border:1px solid #d8d5cf;"></td><td style="background:#fdf4e3;border:1px solid #d8d5cf;"></td><td style="background:#fdecea;border:1px solid #d8d5cf;"></td><td style="background:#fdf4e3;border:1px solid #d8d5cf;"></td><td style="background:#fdecea;border:1px solid #d8d5cf;"></td><td style="background:#fdf4e3;border:2px solid #16150f;"></td></tr>
+<tr><td style="font-size:10.5px;font-weight:700;padding:2px 6px 2px 0;border:none;white-space:nowrap;">R2 EBITDA</td><td style="background:#f2f1ee;border:1px solid #d8d5cf;height:18px;"></td><td style="background:#f2f1ee;border:1px solid #d8d5cf;"></td><td style="background:#e9f5ee;border:1px solid #d8d5cf;"></td><td style="background:#e9f5ee;border:1px solid #d8d5cf;"></td><td style="background:#e9f5ee;border:1px solid #d8d5cf;"></td><td style="background:#e9f5ee;border:1px solid #d8d5cf;"></td><td style="background:#fdecea;border:1px solid #d8d5cf;"></td><td style="background:#fdecea;border:1px solid #d8d5cf;"></td><td style="background:#f2f1ee;border:2px solid #16150f;"></td></tr>
+<tr><td style="font-size:10.5px;font-weight:700;padding:2px 6px 2px 0;border:none;white-space:nowrap;">R3 revenue</td><td style="background:#f2f1ee;border:1px solid #d8d5cf;height:18px;"></td><td style="background:#f2f1ee;border:1px solid #d8d5cf;"></td><td style="background:#e9f5ee;border:1px solid #d8d5cf;"></td><td style="background:#e9f5ee;border:1px solid #d8d5cf;"></td><td style="background:#e9f5ee;border:1px solid #d8d5cf;"></td><td style="background:#e9f5ee;border:1px solid #d8d5cf;"></td><td style="background:#fdecea;border:1px solid #d8d5cf;"></td><td style="background:#fdf4e3;border:1px solid #d8d5cf;"></td><td style="background:#3b3a35;border:2px solid #16150f;"></td></tr>
+<tr><td style="font-size:10.5px;font-weight:700;padding:2px 6px 2px 0;border:none;white-space:nowrap;">R4 margin</td><td style="background:#f2f1ee;border:1px solid #d8d5cf;height:18px;"></td><td style="background:#f2f1ee;border:1px solid #d8d5cf;"></td><td style="background:#fdf4e3;border:1px solid #d8d5cf;"></td><td style="background:#e9f5ee;border:1px solid #d8d5cf;"></td><td style="background:#e9f5ee;border:1px solid #d8d5cf;"></td><td style="background:#fdf4e3;border:1px solid #d8d5cf;"></td><td style="background:#e9f5ee;border:1px solid #d8d5cf;"></td><td style="background:#fdf4e3;border:1px solid #d8d5cf;"></td><td style="background:#fdf4e3;border:2px solid #16150f;"></td></tr>
+<tr><td style="font-size:10.5px;font-weight:700;padding:2px 6px 2px 0;border:none;white-space:nowrap;">R5 AGM disc.</td><td style="background:#e9f5ee;border:1px solid #d8d5cf;height:18px;"></td><td style="background:#f2f1ee;border:1px solid #d8d5cf;"></td><td style="background:#e9f5ee;border:1px solid #d8d5cf;"></td><td style="background:#f2f1ee;border:1px solid #d8d5cf;"></td><td style="background:#e9f5ee;border:1px solid #d8d5cf;"></td><td style="background:#f2f1ee;border:1px solid #d8d5cf;"></td><td style="background:#e9f5ee;border:1px solid #d8d5cf;"></td><td style="background:#f2f1ee;border:1px solid #d8d5cf;"></td><td style="background:#3b3a35;border:2px solid #16150f;"></td></tr>
+</table>
+<p style="font-size:11px;color:#5f5c54;margin:0 0 10px;">Nine cells, right-anchored on the ⭐ Buy/Sell column (outlined). 🟩 g = 🟢↗ · 🟨 a = 🟡→ or qualitative-only · 🟥 r = 🔴↘ · ⬛ x = ❌ withheld · ⬜ − = no score in that slot. <b>R5 mapping (qualitative ladder):</b> figure given → g · direction only → a · figure withheld → x · no AGM that half → −.</p>
+<pre style="font-size:10.5px;background:#fff;border:1px solid #d8d5cf;border-radius:6px;padding:10px;overflow-x:auto;white-space:pre-wrap;line-height:1.4;">{
+  "ticker": "W7L",
+  "company": "Warpaint London plc",
+  "kind": "ticker",
+  "direction": "down",
+  "headline": "First guidance cut in four years was itself missed; latest AGM withholds its usual H1 sales figure while claiming expectations unchanged.",
+  "trigger": "Hard/G — guide CUT (Sep-25) missed on audited outturn, two negative EBITDA halves (H1 -5.3%, H2 -22.8%), organic revenue -8.2%; Text — language fell from repeated highs to -3. Drift AGM-disclosure withhold corroborates as watch-flag.",
+  "alert": true,
+  "fired": 2,
+  "fired_of": 3,
+  "rns_type": "AGM Statement",
+  "rns_date": "2026-06-16",
+  "build_date": "2026-08-04",
+  "spec_version": "v4.7",
+  "next_test": "H1 FY26 results (~Sep-26) must show organic revenue and adjusted EBITDA growth resuming to break the down-cycle.",
+  "url": "W7L.html",
+  "grid": {
+    "labels": ["R1","R2","R3","R4","R5"],
+    "periods": ["H1","H2","H1","H2","H1","H2","H1","H2","H1"],
+    "rows": ["agggarara","--ggggrr-","--ggggrax","--aggagaa","g-g-g-g-x"],
+    "note": "R1 guide · R2 adjusted EBITDA · R3 revenue (LFL) · R4 gross margin · R5 AGM H1 sales disclosure"
+  }
+}</pre>
+</div>
+</details>
 
 <!-- §2 notes drawer -->
 <details>
 <summary>Notes — Ranks 1–5</summary>
 <div class="inner">
-<p><b>Rank 1 (Adj EBITDA):</b> the audited annuals reveal the real story is in <b>H2</b>: H2 FY25 adjusted EBITDA fell <b>−22.8%</b> (£13.6m→£10.5m), four times worse than the H1 −5.3%. The parent-vs-latest-sub-period divergence is now confirmed <b>reported</b>, not a derived watch-flag. Adjusted PBT told a harsher H1 story still (£4.8m vs £11.0m, −56%), the £3.9m one-off bargain-purchase gain flattering statutory PBT above adjusted — the only such inversion in the record.</p>
-<p><b>Rank 2 (revenue):</b> the −5.7% H1 organic decline is the company's own like-for-like figure; the audited full year confirms organic revenue fell <b>−8.2%</b> (£93.3m vs £101.6m) with H2 revenue exactly flat (£55.8m, all acquisition) — the growth engine stalled completely in H2. Watch H1 FY26 for whether organic turns back positive.</p>
-<p><b>Rank 3 (gross margin):</b> the sole metric still rising — <b>five</b> straight audited years of improvement (36.4→39.9→41.2→42.6%); a break here would remove the last soft support.</p>
-<p><b>Rank 4 (guide):</b> a serial beater cutting guidance and then missing the cut is a two-step credibility event, not one soft print — see the §3 "Guide met?" trail.</p>
-<p><b>Rank 5 (AGM disclosure):</b> single withhold = watch-flag, not a full fire on its own; it corroborates the hard/G and language fires rather than being decisive.</p>
+<p><b>Rank 1 (guide):</b> promoted to Rank 1 this build on measured lead — the Dec-24 "ahead"→"in line" switch preceded the first hard-number fall by about nine months. A serial beater that cuts and then misses the cut has spent its credibility; read the next reiteration with that discount.</p>
+<p><b>Rank 2 (Adj EBITDA):</b> the audited annuals put the real damage in <b>H2</b>: H2 FY25 fell −22.8% (£13.6m→£10.5m), four times worse than H1's −5.3%. Adjusted PBT was harsher still (£4.8m vs £11.0m, −56%), the £3.9m one-off bargain-purchase gain flattering statutory PBT above adjusted — the only such inversion in the record.</p>
+<p><b>Rank 3 (revenue):</b> FY25's £105.1m headline was entirely acquisition — organic fell −8.2% (£93.3m vs £101.6m) with H2 exactly flat. Watch H1 FY26 for whether organic turns positive; two acquisitions now flatter the headline all year.</p>
+<p><b>Rank 4 (gross margin, rate metric):</b> <b>deceleration recorded, not coloured:</b> the H1 pp move ran +3.4pp (FY24) → +2.5pp (FY25), and the derived H2 move only +0.3pp against H1's +2.5pp. Expansion is stalling in the second half — this feeds the "decelerating 2+ periods" clause of trigger condition 1 rather than recolouring any cell. H2 margin sits structurally ~4–5pp below H1 on the lower-margin gifting mix.</p>
+<p><b>Rank 5 (AGM disclosure):</b> single withhold = watch-flag, not a full fire on its own; it corroborates the Hard/G and language fires rather than being decisive.</p>
 </div>
 </details>
 
@@ -338,15 +392,19 @@
 <details>
 <summary>Turn methodology &amp; restatement basis</summary>
 <div class="inner">
-<p><b>Comparison bases (hard-coded per metric type):</b> flow metrics (revenue, adj EBITDA) compared like-half to like-half only — H1-vs-H1 and H2-vs-H2, never across grains; rate metrics (gross margin) compared seasonally matched H1-vs-H1; no snapshot metric is scored (order book quantified only once). No quarter figures are disclosed anywhere in the record, so the half is the finest grain. <b>H2 is now reported</b>, computed as audited FY − reported H1 from the four audited annual results RNSs (FY22–FY25) now in the record — the derived† watch-flag no longer applies.</p>
-<p><b>H2 computation &amp; second route:</b> H2 FY25 revenue = audited FY £105.1m − reported H1 £49.3m = £55.8m, exactly flat (0.0%) vs H2 FY24 £55.8m. H2 FY25 adjusted EBITDA = audited FY £21.3m − reported H1 £10.8m = £10.5m, −22.8% vs H2 FY24 £13.6m. Both cross-tie to the audited P&amp;L and the FY YoY figures (FY25 EBITDA −14.8%, sitting between the H1 −5.3% and H2 −22.8% as it must). The parent-vs-latest-sub-period divergence (FY headline vs the collapsing H2) is a <b>firm fire</b> now that H2 is printed, not a watch-flag.</p>
-<p><b>Restatement / basis flags:</b> <sup>r</sup> adjusted-EBITDA definition changed twice — FY24 restated to £25.0m (added back acquisition-related expenses); FY25 £21.3m is on the further-revised basis (adjusted for SBP, gain on bargain purchase, and exceptional items). FY24-vs-FY25 EBITDA YoY (−14.8%) is therefore like-for-like on the latest basis. <sup>LFL</sup> FY25 audited revenue £105.1m includes £11.8m Brand Architekts; the like-for-like £93.3m strips it (company-disclosed). H1 FY24 statutory PBT locked at £10.9m (headline governs over the £10.8m bridge rounding).</p>
-<p><b>Provenance — now resolved:</b> the four audited annual results RNSs (FY22 26-Apr-23, FY23 24-Apr-24, FY24 29-Apr-25, FY25 29-Apr-26) are now in the record, so all full-year actuals are sourced from audited accounts, not transcribed from pre-close TU commentary. Where audited figures differ from the earlier TU estimates, audited governs: FY24 revenue £101.6m (not the TU's "~£102m"); FY25 adjusted EBITDA £21.3m (below the Feb-26 TU's "~£22m").</p>
-<p><b>Display basis &amp; pp record (v4.1):</b> flow-metric cells (Ranks 1–2) show the seasonally-matched YoY% beside the value on line 1 and the banded score emoji alone on line 2 — no Δrate pp label renders in flow cells. The margin rank (Rank 3) is a rate metric, so its margin Δ in pp is the scored value and stays on line 2 with the emoji, per the EBITDA/rate cell template. Flow Δrate pp record, retained here (never shown in flow cells): Rank 1 EBITDA Δrate H2 FY24 +0.5pp, H1 FY25 −2.1pp, H2 FY25 −19.0pp; Rank 2 revenue Δrate H2 FY24 −8.5pp, H1 FY25 (LFL) −19.3pp, H2 FY25 −5.5pp. Band: H-grain rate ±2.0pp. Raw HonH is computed in script and retained here, never displayed in flow cells.</p>
-<p><b>Buy/Sell column:</b> H1 FY26 has no reported figures — the Jun-26 AGM gave no H1 sales number — so the rightmost sub-period columns are empty (a verified withhold, not a gap).</p>
+<p><b>Router:</b> H-reporter — Rule Set H applies. No Q1/Q3 trading updates exist anywhere in the record, so the half is the finest grain and no quarter arithmetic is possible.</p>
+<p><b>Comparison bases (hard-coded per metric type):</b> flow metrics (Ranks 2–3) compare YEAR-ON-YEAR, H1-vs-H1 and H2-vs-H2, with the banded RATE CHANGE (Δrate) as the scored element; the rate metric (Rank 4, gross margin) compares YEAR-ON-YEAR on the pp move directly — the pp change is the score, never the input to a Δrate. No snapshot metric is scored (order book quantified only once). SEQUENTIAL is computed in script and retained here, never displayed in cells.</p>
+<p><b>Grain per rank (transcribed from the §1 ledger, never re-decided at build time):</b> Ranks 2–4 render H1/H2 with H2 derived †; none qualifies for the B.2a reduced-grain rule, since H2 is derivable in every year of the record. Rank 1 is a guide series mapped to the half in which each guide event fell; Rank 5 is a disclosure ladder at AGM cadence.</p>
+<p><b>H2 derivation &amp; second route:</b> H2 revenue FY25 = audited FY £105.1m − reported H1 £49.3m = £55.8m, exactly flat vs H2 FY24 £55.8m. H2 adjusted EBITDA FY25 = £21.3m − £10.8m = £10.5m, −22.8% vs H2 FY24 £13.6m. H2 gross margin is derived from printed FY and H1 revenue and margin (H2 gross profit = FY gross profit − H1 gross profit, over H2 revenue): FY22 34.7%, FY23 40.5%, FY24 40.1%, FY25 40.5%. All tie out against the audited P&amp;L and the FY YoY figures (FY25 EBITDA −14.8% sits between H1 −5.3% and H2 −22.8% as it must). The parent-vs-latest-sub-period divergence (FY headline vs the collapsing H2) is a <b>firm fire</b>, corroborated by printed audited full-year figures.</p>
+<p><b>Bands:</b> flow ±2.0pp (Δrate) · rate metric ±1.0pp (pp move). Stated separately per type; never inherited.</p>
+<p><b>Δrate record (flow ranks, never rendered in cells):</b> Rank 2 EBITDA H2 FY24 +0.5pp, H1 FY25 −2.1pp, H2 FY25 −19.0pp; Rank 3 revenue H2 FY24 −8.5pp, H1 FY25 (LFL) −19.3pp, H2 FY25 −5.5pp.</p>
+<p><b>Restatement / basis flags:</b> ʳ adjusted-EBITDA definition changed twice — FY24 restated to £25.0m (acquisition-related expenses added back); FY25 £21.3m on the further-revised basis (SBP, gain on bargain purchase, exceptional items). FY24-vs-FY25 EBITDA YoY (−14.8%) is therefore like-for-like on the latest basis. FY25 audited revenue £105.1m includes £11.8m Brand Architekts; the like-for-like £93.3m strips it (company-disclosed). H1 FY24 statutory PBT locked at £10.9m (headline governs over the £10.8m bridge rounding).</p>
+<p><b>Provenance:</b> all four audited annual results RNSs are in the record (FY22 26-Apr-23, FY23 24-Apr-24, FY24 29-Apr-25, FY25 29-Apr-26), so full-year actuals come from audited accounts, not pre-close TU commentary. Where they differ, audited governs: FY24 revenue £101.6m (not "~£102m"); FY25 adjusted EBITDA £21.3m (below the Feb-26 TU's "~£22m").</p>
+<p><b>Buy/Sell column:</b> the ⭐ FY26 H1 column is the Jun-26 AGM. It printed no H1 figures, so revenue and the AGM sales figure show ❌ withheld against established cadence, margin and guide show 🟡 qualitative-only, and adjusted EBITDA shows — (structurally outside AGM cadence in every year of the record).</p>
 </div>
 </details>
 </div>
+
 <!-- ============ §2.0 CURRENT-STATE READ ============ -->
 <div class="sec">
 <h2 class="section">§2.0 · Most-Recent-RNS Current-State Read</h2>
@@ -367,40 +425,30 @@
   <div class="bridge">
     <div class="darkbar"><span class="emoji">🍺</span><span class="t">IDIOT'S GUIDE TO THE PROFIT BRIDGE — why profit went down (£10.8m → £6.4m)</span></div>
     <div class="brows">
-      <div class="brow g">
-        <div class="bl">📦 More stuff off the shelves</div>
-        <div class="bc">+£1.4m</div>
-        <div class="bcl">They shifted more lipstick and mascara than the same six months last year. This is the honest, boring engine of the business doing exactly what it's meant to — no tricks, just more product sold, more money in.</div>
-      </div>
-      <div class="brow g">
-        <div class="bl">💰 Charging a bit more, keeping more of it</div>
-        <div class="bc">+£1.2m</div>
-        <div class="bcl">On every pound of product sold, more of it stuck as profit than before — better sourcing from the factories and a small price rise meant the stuff they sold was simply worth more to them than it used to be.</div>
-      </div>
-      <div class="brow r">
-        <div class="bl">🧾 The wage bill and the bigger American road-crew</div>
-        <div class="bc">−£2.7m</div>
-        <div class="bcl">Running the shop got dearer. More salaries, higher business rates, marketing spend, and a beefed-up US sales team hired to chase bigger customers — all money spent now in the hope it pays off later, but a real bite out of profit today.</div>
-      </div>
       <div class="brow r">
         <div class="bl">💱 A currency bet gone sour</div>
         <div class="bc">−£5.4m</div>
-        <div class="bcl">This is the villain. Warpaint buys stock in US dollars and places bets months ahead to lock in exchange rates. Those bets moved the wrong way and showed a £4.6m loss — but here's the catch: most of it (£2.7m) is only on paper, an IOU that hasn't actually left the bank account and could swing back. It flatters nothing and hurts the headline, but it isn't cash out the door yet.</div>
+        <div class="bcl">This is the villain. Warpaint buys its stock in US dollars and places bets months ahead to lock in the exchange rate. Those bets moved the wrong way and showed a £4.6m loss — but here's the catch: most of it (£2.7m) is only on paper, an IOU that hasn't actually left the bank account and could swing back.</div>
       </div>
       <div class="brow g">
         <div class="bl">🎉 The "we bought it cheap" windfall</div>
         <div class="bc">+£3.9m</div>
-        <div class="bcl">When they bought Brand Architekts, its bits and pieces were worth more on paper than the price paid — so the accountants hand you an instant one-off gain, like finding a tenner in a coat you bought at a jumble sale. Nice, but it happens once and never again.</div>
+        <div class="bcl">When they bought Brand Architekts, its bits and pieces were worth more on paper than the price paid — so the accountants hand over an instant one-off gain, like finding a tenner in the pocket of a coat you got at a jumble sale. Nice, but it happens once and never again.</div>
       </div>
       <div class="brow r">
-        <div class="bl">🧻 The bill for doing the deal</div>
-        <div class="bc">−£1.3m</div>
-        <div class="bcl">Lawyers, bankers and advisers don't buy a company for you out of kindness. One-off fees for getting the Brand Architekts deal over the line — gone as soon as it's done.</div>
+        <div class="bl">🧾 The wage bill and the bigger American road-crew</div>
+        <div class="bc">−£2.7m</div>
+        <div class="bcl">Running the shop got dearer. More salaries, higher business rates, marketing spend, and a beefed-up US sales team hired to chase bigger customers — money spent now in the hope it pays off later, but a real bite out of profit today.</div>
+      </div>
+      <div class="brow g">
+        <div class="bl">📦 The tills actually rang louder</div>
+        <div class="bc">+£2.6m</div>
+        <div class="bcl">They shifted more lipstick and mascara than the same six months last year (+£1.4m), and kept more of every pound taken (+£1.2m) after better factory prices and a small price rise. The boring engine of the business did its job.</div>
       </div>
     </div>
     <div class="bcap">
-      <b>So in one sentence:</b> the real shop — more sold, at fatter margins — actually grew, but a soured currency bet (mostly still just paper) and the one-off racket of buying a company dragged the printed number down, with a lucky accounting windfall from that same deal quietly filling part of the hole.<br><br>
-      <b>Profit goes back up when:</b> the currency bets either come good or roll off the books, the one-off deal costs stop recurring (they're already behind them), and the steady growth in volume and margin — both still pointing up — gets to shine through without the noise sitting on top of it.
+      <b>So in one sentence:</b> the real shop — more sold, at fatter margins — actually grew, but a soured currency bet (mostly still just paper) plus the one-off racket of buying a company, £1.3m of it in adviser fees alone, dragged the printed number down, with a lucky accounting windfall from that same deal quietly filling part of the hole.<br><br>
+      <b>Profit goes back up when:</b> the currency bets either come good or roll off the books, the one-off deal costs stop recurring (they're already behind them), and the steady growth in what's sold and what's kept gets to shine through without the noise sitting on top of it.
     </div>
   </div>
 
@@ -408,7 +456,17 @@
   <div class="statebar">
     <div class="darkbar"><span class="emoji">🌡️</span><span class="t">CURRENT STATE — the read right now</span></div>
     <div class="sb-body"><div class="sb-inner">
-      <b>🔴 TURNING DOWN.</b> Audited FY25 confirms the turn deepened in H2: H2 adjusted EBITDA −22.8% vs H1 −5.3%, H2 revenue flat. FY25 missed even its own cut guide (EBITDA £21.3m, below the £23.5m low end). The Buy/Sell AGM (Jun-26) withholds its usual H1 sales figure for the first time in four years while reiterating unchanged expectations and flagging a tentative Q2 improvement. ⚠️ Backward-loaded: FY25's record-looking £105.1m revenue was entirely the Brand Architekts acquisition — organic revenue fell −8.2%.
+      <b>🔴 TURNING DOWN</b>
+      <ul style="margin:8px 0 0;padding-left:18px;font-size:13px;line-height:1.5;">
+        <li style="margin:4px 0;">H2 FY25 adjusted EBITDA −22.8%, four times worse than H1's −5.3%.</li>
+        <li style="margin:4px 0;">FY25 missed its own cut guide: EBITDA £21.3m, below the £23.5m floor.</li>
+        <li style="margin:4px 0;">Organic revenue fell −8.2%; the £105.1m record was entirely acquisition.</li>
+        <li style="margin:4px 0;">Margin expansion stalling — H2 only +0.3pp against H1's +2.5pp.</li>
+        <li style="margin:4px 0;">Buy/Sell AGM withheld its usual H1 sales figure — four-year habit broken.</li>
+        <li style="margin:4px 0;">Guide held at "expectations unchanged", but with no number attached.</li>
+        <li style="margin:4px 0;">⚠️ 2026 is loaded onto H2 — Rossmann, Walmart and Ulta must all land.</li>
+        <li style="margin:4px 0;">⚠️ FX hedges could bounce statutory profit mechanically, masking flat trading.</li>
+      </ul>
     </div></div>
   </div>
 </div>
@@ -427,29 +485,29 @@
 <h2 class="section">§3 · Text + G — Language Track</h2>
 <p class="section-sub">Every print in the window. G = guidance trigger fired against the company's own prior guide. Click a Doc-type to highlight matching rows.</p>
 <table id="text3">
-<thead><tr><th>Date</th><th>Doc</th><th>G</th><th>Guide met?</th><th>Verbatim forward-guidance phrase</th><th>Score</th></tr></thead>
+<thead><tr><th>Date</th><th>Doc</th><th>G</th><th>Verbatim forward-guidance phrase</th><th>Score</th></tr></thead>
 <tbody>
-<tr data-rowtype="AGM"><td>27 Jun 22</td><td>FY22<br>AGM</td><td>flat</td><td>—</td><td>"H1 sales … in excess of £24m … ahead of the board's expectations … confident the Group will continue to perform well"</td><td class="pos">🟢</td></tr>
-<tr data-rowtype="TU"><td>08 Sep 22</td><td>FY22<br>TU</td><td class="pos">🟢 RAISE</td><td>—</td><td>"now expected to be ahead of market expectations"</td><td class="pos">🟢🟢</td></tr>
-<tr data-rowtype="H1R"><td>21 Sep 22</td><td>FY22<br>H1 R</td><td>flat</td><td>—</td><td>"expected to remain second half weighted"</td><td>⚪</td></tr>
-<tr data-rowtype="FYTU"><td>11 Jan 23</td><td>FY22<br>YE-TU</td><td class="pos">🟢 RAISE</td><td>— (pre-close; resolves at Apr-23 R)</td><td>"exceeded previous expectations … ahead of current market expectations and the board's previous guidance"</td><td class="pos">🟢🟢🟢</td></tr>
-<tr data-rowtype="FYR"><td>26 Apr 23</td><td>FY22<br>R</td><td>flat</td><td>FY22 audited: rev £64.1m, adj EBITDA £11.9m (vs ~£11.8m guide), stat PBT £7.7m <b>(beat)</b></td><td>"record year … strong growth in sales, margins and profit before tax"</td><td class="pos">🟢</td></tr>
-<tr data-rowtype="TU"><td>15 Jun 23</td><td>FY23<br>TU</td><td class="pos">🟢 RAISE</td><td>—</td><td>"full year 2023 performance will be significantly ahead of its prior expectations"</td><td class="pos">🟢🟢🟢</td></tr>
-<tr data-rowtype="AGM"><td>28 Jun 23</td><td>FY23<br>AGM</td><td>flat</td><td>—</td><td>"continues to trade strongly … margins … ahead of those achieved in 2022"</td><td class="pos">🟢</td></tr>
-<tr data-rowtype="H1R"><td>20 Sep 23</td><td>FY23<br>H1 R</td><td>flat</td><td>—</td><td>"sales are expected to again be second half weighted"</td><td>⚪</td></tr>
-<tr data-rowtype="TU"><td>10 Nov 23</td><td>FY23<br>TU</td><td class="pos">🟢 RAISE</td><td>—</td><td>"now expected to be ahead of market expectations … PBT … in excess of £16 million"</td><td class="pos">🟢🟢🟢</td></tr>
-<tr data-rowtype="FYTU"><td>12 Jan 24</td><td>FY23<br>YE-TU</td><td class="pos">🟢 RAISE</td><td>— (pre-close; resolves at Apr-24 R)</td><td>"exceeded previous expectations … ahead of current market expectations and the board's previous guidance … not less than £18 million"</td><td class="pos">🟢🟢🟢</td></tr>
-<tr data-rowtype="FYR"><td>24 Apr 24</td><td>FY23<br>R</td><td>flat</td><td>FY23 audited: rev £89.6m, adj EBITDA £21.0m, stat PBT £18.1m (vs "not less than £18m") <b>(beat)</b></td><td>"another record year … significantly ahead of 2022 … third year running gross margin has improved"</td><td class="pos">🟢</td></tr>
-<tr data-rowtype="AGM"><td>26 Jun 24</td><td>FY24<br>AGM</td><td>flat</td><td>—</td><td>"continues to trade strongly … margins … ahead of those achieved in 2023"</td><td class="pos">🟢</td></tr>
-<tr data-rowtype="H1R"><td>17 Sep 24</td><td>FY24<br>H1 R</td><td>flat</td><td>—</td><td>"confidence that full year expectations will be met" (note: "met", not "ahead")</td><td>⚪</td></tr>
-<tr data-rowtype="TU" style="background:#fdf4e3;"><td>05 Dec 24</td><td>FY24<br>TU</td><td class="neg">🔴 CUT (soft)</td><td>—</td><td>"the board expects the results … to be <b>in line with</b> its expectations" (first "in line" after four straight "ahead")</td><td class="neg">🔴</td></tr>
-<tr data-rowtype="FYTU" style="background:#fdf4e3;"><td>06 Feb 25</td><td>FY24<br>YE-TU</td><td>flat</td><td>— (pre-close; resolves at Apr-25 R)</td><td>"despite ongoing consumer spending headwinds" (first named headwind beside figures)</td><td class="neg">🔴</td></tr>
-<tr data-rowtype="FYR"><td>29 Apr 25</td><td>FY24<br>R</td><td>flat</td><td>FY24 audited: rev £101.6m, adj EBITDA £25.0m, adj PBT £24.6m / stat PBT £23.8m vs Dec-24 "in line" <b>(met)</b></td><td>"another record year … fourth year running gross margin has improved"</td><td class="pos">🟢</td></tr>
-<tr data-rowtype="AGM" style="background:#fdf4e3;"><td>17 Jun 25</td><td>FY25<br>AGM</td><td>flat</td><td>—</td><td>"remains confident that the Group will meet market expectations" + named US-tariff slowdown</td><td class="neg">🔴</td></tr>
-<tr data-rowtype="H1R" style="background:#fdecea;"><td>10 Sep 25</td><td>FY25<br>H1 R</td><td class="neg">🔴🔴🔴 CUT</td><td>—</td><td>"we are disappointed to be lowering our expectations for the full year" — FY cut to £107–112m rev / £23.5–25.5m EBITDA</td><td class="neg">🔴🔴🔴</td></tr>
-<tr data-rowtype="FYTU" style="background:#fdecea;"><td>09 Feb 26</td><td>FY25<br>YE-TU</td><td>flat</td><td>— (pre-close; resolves at Apr-26 R)</td><td>"2025 results being heavily impacted … very challenging macroeconomic environment"</td><td class="neg">🔴🔴</td></tr>
-<tr data-rowtype="FYR" style="background:#fdecea;"><td>29 Apr 26</td><td>FY25<br>R</td><td>flat</td><td>FY25 audited: rev £107–112m→<b>£105.1m</b> (−1.8% vs low), EBITDA £23.5–25.5m→<b>£21.3m</b> (−9.4% vs low) <b class="neg">(MISSED — first miss in the record; EBITDA below even the Feb-26 ~£22m estimate)</b></td><td>"Adjusted EBITDA of £21.3 million … despite the headwinds experienced" (statutory PBT £18.1m, −24% YoY)</td><td class="neg">🔴🔴</td></tr>
-<tr data-rowtype="AGM"><td>16 Jun 26</td><td>FY26<br>AGM</td><td>flat</td><td>— (live)</td><td>"expectations for the full year remain unchanged … Q2 so far has been more encouraging" (no H1 figure given)</td><td>⚪</td></tr>
+<tr data-rowtype="AGM"><td>27 Jun 22</td><td>FY22<br>AGM</td><td>flat</td><td>"H1 sales … in excess of £24m … ahead of the board's expectations … confident the Group will continue to perform well"</td><td class="pos">🟢</td></tr>
+<tr data-rowtype="TU"><td>08 Sep 22</td><td>FY22<br>TU</td><td class="pos">🟢 RAISE</td><td>"now expected to be ahead of market expectations"</td><td class="pos">🟢🟢</td></tr>
+<tr data-rowtype="H1R"><td>21 Sep 22</td><td>FY22<br>H1 R</td><td>flat</td><td>"expected to remain second half weighted"</td><td>⚪</td></tr>
+<tr data-rowtype="FYTU"><td>11 Jan 23</td><td>FY22<br>YE-TU</td><td class="pos">🟢 RAISE</td><td>"exceeded previous expectations … ahead of current market expectations and the board's previous guidance"</td><td class="pos">🟢🟢🟢</td></tr>
+<tr data-rowtype="FYR"><td>26 Apr 23</td><td>FY22<br>R</td><td>flat</td><td>"record year … strong growth in sales, margins and profit before tax"</td><td class="pos">🟢</td></tr>
+<tr data-rowtype="TU"><td>15 Jun 23</td><td>FY23<br>TU</td><td class="pos">🟢 RAISE</td><td>"full year 2023 performance will be significantly ahead of its prior expectations"</td><td class="pos">🟢🟢🟢</td></tr>
+<tr data-rowtype="AGM"><td>28 Jun 23</td><td>FY23<br>AGM</td><td>flat</td><td>"continues to trade strongly … margins … ahead of those achieved in 2022"</td><td class="pos">🟢</td></tr>
+<tr data-rowtype="H1R"><td>20 Sep 23</td><td>FY23<br>H1 R</td><td>flat</td><td>"sales are expected to again be second half weighted"</td><td>⚪</td></tr>
+<tr data-rowtype="TU"><td>10 Nov 23</td><td>FY23<br>TU</td><td class="pos">🟢 RAISE</td><td>"now expected to be ahead of market expectations … PBT … in excess of £16 million"</td><td class="pos">🟢🟢🟢</td></tr>
+<tr data-rowtype="FYTU"><td>12 Jan 24</td><td>FY23<br>YE-TU</td><td class="pos">🟢 RAISE</td><td>"exceeded previous expectations … ahead of current market expectations and the board's previous guidance … not less than £18 million"</td><td class="pos">🟢🟢🟢</td></tr>
+<tr data-rowtype="FYR"><td>24 Apr 24</td><td>FY23<br>R</td><td>flat</td><td>"another record year … significantly ahead of 2022 … third year running gross margin has improved"</td><td class="pos">🟢</td></tr>
+<tr data-rowtype="AGM"><td>26 Jun 24</td><td>FY24<br>AGM</td><td>flat</td><td>"continues to trade strongly … margins … ahead of those achieved in 2023"</td><td class="pos">🟢</td></tr>
+<tr data-rowtype="H1R"><td>17 Sep 24</td><td>FY24<br>H1 R</td><td>flat</td><td>"confidence that full year expectations will be met" (note: "met", not "ahead")</td><td>⚪</td></tr>
+<tr data-rowtype="TU" style="background:#fdf4e3;"><td>05 Dec 24</td><td>FY24<br>TU</td><td class="neg">🔴 CUT (soft)</td><td>"the board expects the results … to be <b>in line with</b> its expectations" (first "in line" after four straight "ahead")</td><td class="neg">🔴</td></tr>
+<tr data-rowtype="FYTU" style="background:#fdf4e3;"><td>06 Feb 25</td><td>FY24<br>YE-TU</td><td>flat</td><td>"despite ongoing consumer spending headwinds" (first named headwind beside figures)</td><td class="neg">🔴</td></tr>
+<tr data-rowtype="FYR"><td>29 Apr 25</td><td>FY24<br>R</td><td>flat</td><td>"another record year … fourth year running gross margin has improved"</td><td class="pos">🟢</td></tr>
+<tr data-rowtype="AGM" style="background:#fdf4e3;"><td>17 Jun 25</td><td>FY25<br>AGM</td><td>flat</td><td>"remains confident that the Group will meet market expectations" + named US-tariff slowdown</td><td class="neg">🔴</td></tr>
+<tr data-rowtype="H1R" style="background:#fdecea;"><td>10 Sep 25</td><td>FY25<br>H1 R</td><td class="neg">🔴🔴🔴 CUT</td><td>"we are disappointed to be lowering our expectations for the full year" — FY cut to £107–112m rev / £23.5–25.5m EBITDA</td><td class="neg">🔴🔴🔴</td></tr>
+<tr data-rowtype="FYTU" style="background:#fdecea;"><td>09 Feb 26</td><td>FY25<br>YE-TU</td><td>flat</td><td>"2025 results being heavily impacted … very challenging macroeconomic environment"</td><td class="neg">🔴🔴</td></tr>
+<tr data-rowtype="FYR" style="background:#fdecea;"><td>29 Apr 26</td><td>FY25<br>R</td><td>flat</td><td>"Adjusted EBITDA of £21.3 million … despite the headwinds experienced" (statutory PBT £18.1m, −24% YoY)</td><td class="neg">🔴🔴</td></tr>
+<tr data-rowtype="AGM"><td>⭐ 16 Jun 26</td><td>FY26<br>AGM</td><td>flat</td><td>"expectations for the full year remain unchanged … Q2 so far has been more encouraging" (no H1 figure given)</td><td>⚪</td></tr>
 </tbody>
 </table>
 <p class="section-sub" style="margin-top:10px;">Conservatism read: FY22–24 is a clean run of beats — a classic under-promise / over-deliver guider. FY25 breaks it decisively: a cut that was then missed. The Jun-26 guarded reiteration ("unchanged", no number) sits on top of that broken streak, so its ⚪ carries less benefit-of-the-doubt than the same words would have a year earlier.</p>
@@ -482,7 +540,7 @@
 <th class="dh" data-pt="H1R" style="cursor:pointer;">Sep-25<br><span style="font-weight:400;">H1R</span></th>
 <th class="dh" data-pt="FYTU" style="cursor:pointer;">Feb-26<br><span style="font-weight:400;">FYTU</span></th>
 <th class="dh" data-pt="FYR" style="cursor:pointer;background:#eef4ff;">Apr-26<br><span style="font-weight:400;">R</span></th>
-<th class="dh" data-pt="AGM" style="cursor:pointer;background:#fdecea;">Jun-26<br><span style="font-weight:400;">AGM</span></th>
+<th class="dh" data-pt="AGM" style="cursor:pointer;background:#fdecea;">⭐ Jun-26<br><span style="font-weight:400;">AGM</span></th>
 </tr></thead>
 <tbody>
 <tr><td>Revenue (period/FY)</td><td class="AGM">✅</td><td class="TU">✅</td><td class="H1R">✅</td><td class="FYTU">✅</td><td class="FYR">✅</td><td class="TU">✅</td><td class="AGM">✅</td><td class="H1R">✅</td><td class="TU">✅</td><td class="FYTU">✅</td><td class="FYR">✅</td><td class="AGM">✅</td><td class="H1R">✅</td><td class="TU">🟡</td><td class="FYTU">✅</td><td class="FYR">✅</td><td class="AGM">✅</td><td class="H1R">✅</td><td class="FYTU">✅</td><td class="FYR">✅</td><td class="AGM" style="background:#fdecea;">🟡<br><span style="font-size:10px;">no £</span></td></tr>
@@ -506,9 +564,9 @@
 
 <script>
 (function(){
-  // §2 grid v4.0: highlight all columns of a period type (H1/H2)
-  // phead headers are in a row that has NO label th, so their index 0-7
-  // maps to vrow children 1-8 (child 0 is the label td) — add +1 offset
+  // §2 grid v4.7: highlight all columns of a period type (H1/H2)
+  // phead headers sit in a row with no label th, so index 0-8
+  // maps to vrow children 1-9 (child 0 is the label td) — add +1 offset
   var grid = document.getElementById('grid2');
   if(grid){
     var phs = Array.from(grid.querySelectorAll('th.phead'));
@@ -570,16 +628,25 @@
 {
   "ticker": "W7L",
   "company": "Warpaint London plc",
+  "kind": "ticker",
   "direction": "down",
   "headline": "First guidance cut in four years was itself missed; latest AGM withholds its usual H1 sales figure while claiming expectations unchanged.",
-  "trigger": "Hard-number decline now incl. reported H2 FY25 adj EBITDA -22.8% and full-year profit fall + explicit guidance CUT missed on audited outturn (condition 1); language falling from repeated highs to -3 (condition 2) = 2-of-3 undiscounted; Drift AGM-disclosure withhold corroborates.",
+  "trigger": "Hard/G — guide CUT (Sep-25) missed on audited outturn, two negative EBITDA halves (H1 -5.3%, H2 -22.8%), organic revenue -8.2%; Text — language fell from repeated highs to -3. Drift AGM-disclosure withhold corroborates as watch-flag.",
   "alert": true,
+  "fired": 2,
+  "fired_of": 3,
   "rns_type": "AGM Statement",
   "rns_date": "2026-06-16",
-  "build_date": "2026-07-29",
-  "spec_version": "v4.1",
+  "build_date": "2026-08-04",
+  "spec_version": "v4.7",
   "next_test": "H1 FY26 results (~Sep-26) must show organic revenue and adjusted EBITDA growth resuming to break the down-cycle.",
-  "url": "W7L.html"
+  "url": "W7L.html",
+  "grid": {
+    "labels": ["R1","R2","R3","R4","R5"],
+    "periods": ["H1","H2","H1","H2","H1","H2","H1","H2","H1"],
+    "rows": ["agggarara","--ggggrr-","--ggggrax","--aggagaa","g-g-g-g-x"],
+    "note": "R1 guide \u00b7 R2 adjusted EBITDA \u00b7 R3 revenue (LFL) \u00b7 R4 gross margin \u00b7 R5 AGM H1 sales disclosure"
+  }
 }
 </script>
 
