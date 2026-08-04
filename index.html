@@ -25,8 +25,10 @@ body{background:var(--bg);font-family:var(--mono);color:var(--text-primary);font
 .navbtn{font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:5px 12px;
   border-radius:3px;cursor:pointer;background:var(--blue-dim);color:var(--blue);border:1px solid var(--blue-mid);}
 .meta{margin-left:auto;font-size:10px;color:var(--text-dim);}
-.epi{padding:24px 20px;text-align:center;border-bottom:1px solid var(--border);
-  background:linear-gradient(180deg,#16161f 0%,#0d0d14 55%,var(--surface) 100%);}
+.epiwrap{max-width:1400px;margin:0 auto;padding:16px 16px 0;}
+.epi{padding:24px 20px 30px;text-align:center;margin-bottom:-14px;
+  border:1px solid var(--border);border-bottom:none;border-radius:6px 6px 0 0;
+  background:linear-gradient(180deg,#16161f 0%,#111119 60%,var(--surface2) 100%);}
 .epi p{font-size:26px;font-weight:600;letter-spacing:-.02em;line-height:1.55;max-width:900px;margin:0 auto;}
 .epi .r{color:var(--red);}
 .epi .hl{padding:2px 9px;border-radius:3px 0 0 3px;font-weight:700;color:#fff;
@@ -34,9 +36,10 @@ body{background:var(--bg);font-family:var(--mono);color:var(--text-primary);font
   -webkit-box-decoration-break:clone;box-decoration-break:clone;}
 .epi .mark{background:linear-gradient(180deg,transparent 50%, #ffb347cc 50%, #ffb347cc 94%, transparent 94%);
   padding:0 4px;border-radius:2px;}
-@media (max-width:640px){.epi{padding:18px 14px;} .epi p{font-size:19px;}}
+@media (max-width:640px){.epiwrap{padding:12px 12px 0;} .epi{padding:18px 14px;} .epi p{font-size:19px;}}
 .page{padding:16px;display:flex;flex-direction:column;gap:14px;max-width:1400px;margin:0 auto;}
 .section{background:var(--surface);border:1px solid var(--border);border-radius:6px;overflow:hidden;}
+.page > .section:first-child{border-radius:0 0 6px 6px;}
 .section-hdr{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;
   border-bottom:1px solid var(--border);background:var(--surface2);}
 .section-title{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-secondary);}
@@ -137,7 +140,7 @@ body{background:var(--bg);font-family:var(--mono);color:var(--text-primary);font
   <button class="navbtn" onclick="upOpen()">⬆ Upload build</button>
   <div class="meta" id="meta">loading…</div>
 </div>
-<div class="epi"><p><span class="hl">Soft signals lead</span>, <span class="r">hard signals confirm</span>, and the lag between them is <span class="mark">the edge</span>.</p></div>
+<div class="epiwrap"><div class="epi"><p><span class="hl">Soft signals lead</span>, <span class="r">hard signals confirm</span>, and the lag between them is <span class="mark">the edge</span>.</p></div></div>
 <div class="page">
   <div class="section">
     <div class="section-hdr">
