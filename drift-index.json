@@ -1184,6 +1184,51 @@
         ],
         "note": "One row per ledger rank at half-year grain; rightmost cell is the 28 Jul 2026 H1 trading update."
       }
+    },
+    {
+      "ticker": "SYS",
+      "company": "SysGroup plc",
+      "kind": "ticker",
+      "direction": "up",
+      "headline": "Board guides FY27 to exceed expectations after a 26% profit rebound - but every pound of that growth came from low-margin resale.",
+      "trigger": "2 of 3 green-shoot conditions converging",
+      "alert": true,
+      "fired": 2,
+      "fired_of": 3,
+      "rns_type": "FY R",
+      "rns_date": "2026-07-08",
+      "build_date": "2026-08-05",
+      "spec_version": "4.8",
+      "next_test": "H1 FY27, around Dec-26 - does Managed IT Services gross margin stop falling?",
+      "url": "SYS.html",
+      "grid": {
+        "rows": [
+          "gggrragar",
+          "aggrrggrg",
+          "gggrrraga",
+          "ggrrragrg",
+          "grraragar"
+        ],
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H2FY22",
+          "H1FY23",
+          "H2FY23",
+          "H1FY24",
+          "H2FY24",
+          "H1FY25",
+          "H2FY25",
+          "H1FY26",
+          "H2FY26"
+        ],
+        "note": "One row per ledger rank, R1-R5, at half grain; rightmost cell is the Buy/Sell column H2 FY26."
+      }
     }
   ]
 }
