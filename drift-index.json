@@ -1094,6 +1094,51 @@
         ],
         "note": "One row per ledger rank at quarter grain; rightmost cell = H1 FY26 Report, 15-Jul-26."
       }
+    },
+    {
+      "ticker": "FRP",
+      "company": "FRP Advisory Group plc",
+      "kind": "ticker",
+      "direction": "watch",
+      "headline": "Record year, cleanly delivered — but growth, margin and cash conversion all reset lower, and the second half has not grown in two years.",
+      "trigger": "Condition 1 only (two-year stacked growth red in both FY26 halves); Drift un-fired by restored disclosure; one Tier-2 note (WIP outrunning revenue)",
+      "alert": false,
+      "fired": 1,
+      "fired_of": 3,
+      "rns_type": "FY Results",
+      "rns_date": "2026-07-22",
+      "build_date": "2026-08-05",
+      "spec_version": "v4.8",
+      "next_test": "H1 FY27 TU, Nov-26: WIP versus revenue, appointment count, Partners above 104.",
+      "url": "FRP.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H2"
+        ],
+        "rows": [
+          "---g-r-g-",
+          "-aaggrraa",
+          "-------rr",
+          "-----grrg",
+          "-arggggrg"
+        ],
+        "note": "Rows are ledger ranks 1-5 at half grain; rightmost cell is the FY26 Full Year Results."
+      }
     }
   ]
 }
