@@ -1229,6 +1229,51 @@
         ],
         "note": "One row per ledger rank, R1-R5, at half grain; rightmost cell is the Buy/Sell column H2 FY26."
       }
+    },
+    {
+      "ticker": "BGO",
+      "company": "Bango plc",
+      "kind": "ticker",
+      "direction": "up",
+      "headline": "ARR's engine refilling two halves running, NRR's first rise since 2023, Cash EBITDA positive - but the second half of FY25 went backwards.",
+      "trigger": "Green 2-of-3 - ARR engine refilling + margin expansion; lexicon rising -1 to 0 to +1",
+      "alert": true,
+      "fired": 2,
+      "fired_of": 3,
+      "rns_type": "H1 TU",
+      "rns_date": "2026-07-09",
+      "build_date": "2026-08-05",
+      "spec_version": "v4.7",
+      "next_test": "Sept H1 results: printed Cash EBITDA, Subscriptions vs 2H25's $0.4M add, gross margin vs 84%.",
+      "url": "BGO.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1"
+        ],
+        "rows": [
+          "---ggrrgg",
+          "-----rrrg",
+          "--------g",
+          "----g-rra",
+          "-----r-rr"
+        ],
+        "note": "Rows are ledger ranks 1-5 at half grain; rightmost cell is the 09-Jul-26 H1 trading update."
+      }
     }
   ]
 }
