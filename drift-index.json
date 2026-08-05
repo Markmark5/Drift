@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-04",
+  "updated": "2026-08-05",
   "tickers": [
     {
       "ticker": "STAF",
@@ -972,6 +972,51 @@
           "rgggrrrrg"
         ],
         "note": "R1 localisation, R2 media services, R3 adj EBITDA, R4 gross margin, R5 net cash. Ranks 1-4 at half grain; R5 at H1/FY-end grain, so its cells align to the same columns but read Sep-21 through Mar-26."
+      }
+    },
+    {
+      "ticker": "FOUR",
+      "company": "4imprint Group plc",
+      "kind": "ticker",
+      "direction": "watch",
+      "headline": "Guide restored above consensus at $130m, and the demand side turned first — the profit fall is an import-tax bill, not a broken business.",
+      "trigger": "Hard/G fired alone and on the lagging rank: seven consecutive red turns on adjusted profit before tax plus a first gross margin red discounted to a disclosed, bounded tariff event one period old. Language fired at Mar-26 and May-26 and reversed at this RNS; the FY25 Drift withhold was answered by re-quantification at finer grain. No two conditions converge.",
+      "alert": false,
+      "fired": 1,
+      "fired_of": 3,
+      "rns_type": "H1 Results",
+      "rns_date": "2026-08-05",
+      "build_date": "2026-08-05",
+      "spec_version": "v4.7",
+      "next_test": "FY26 results, March 2027: a second consecutive gross margin fall on the same tariff explanation would exhaust the discount and turn the read down.",
+      "url": "FOUR.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1"
+        ],
+        "rows": [
+          "--rrrrrxg",
+          "--rrrrrra",
+          "aaggggaar",
+          "ggarrraaa",
+          "--rrrrrrr"
+        ],
+        "note": "Rows are the five ledger ranks in rank order at half-year grain, right-anchored on the H1 results of 5 August 2026."
       }
     }
   ]
