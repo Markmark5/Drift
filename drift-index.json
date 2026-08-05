@@ -558,16 +558,47 @@
     {
       "ticker": "CML",
       "company": "CML Microsystems Plc",
+      "kind": "ticker",
       "direction": "watch",
-      "headline": "Order-book disclosure and sequential revenue have turned up before the P&L — FY26's £1.93m trading loss is the printed bottom to test, not the direction.",
+      "headline": "Order book and destocking have turned before the P&L — but FY26's rebound came at a 59.7% margin, the worst half on record.",
       "trigger": "deterioration 3-of-3 (printed: Hard + Text/G + Drift) + green mirror 2-of-3 (live: sequential revenue + disclosure resumption)",
       "alert": true,
+      "fired": 3,
+      "fired_of": 3,
       "rns_type": "FY Results",
       "rns_date": "2026-06-17",
-      "build_date": "2026-07-29",
-      "spec_version": "v3.16",
-      "next_test": "FY27 H1 (Nov-26): does revenue growth convert to a pre-exceptional operating profit, or does NRE-mix keep trading negative? Watch dividend cover.",
-      "url": "CML.html"
+      "build_date": "2026-08-05",
+      "spec_version": "v4.7",
+      "next_test": "FY27 H1 (Nov-26): revenue growth converting to pre-exceptional operating profit at a recovering margin; and whether GNSS has moved from design fees to product shipment — no transition date disclosed.",
+      "url": "CML.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2"
+        ],
+        "rows": [
+          "-ggaxxagg",
+          "---ragrrg",
+          "-aaarrarr",
+          "-aaaarrrg",
+          "---arrrrr"
+        ],
+        "note": "R1 order book/intake · R2 revenue · R3 gross margin · R4 inventory/revenue · R5 PfO pre-exceptional. Halves, oldest left; rightmost = FY26 H2 (Buy/Sell)."
+      }
     },
     {
       "ticker": "DATA",
