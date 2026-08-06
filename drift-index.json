@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-05",
+  "updated": "2026-08-06",
   "tickers": [
     {
       "ticker": "STAF",
@@ -1274,6 +1274,21 @@
         ],
         "note": "Rows are ledger ranks 1-5 at half grain; rightmost cell is the 09-Jul-26 H1 trading update."
       }
+    },
+    {
+      "ticker": "Housebuilders Sector",
+      "company": "UK Listed Housebuilders (BTRW · PSN · TW · BKG · BWY)",
+      "direction": "down",
+      "headline": "Three of five cut guidance; PSN's net-debt crossover and first margin fall remove the sector's last clean grower.",
+      "trigger": "3-of-5 sector: TW (G CUT + Text -2 + margin compression) + BKG (G CUT + H2 PBT -22% + seven sequential fwd-sales declines) + BTRW (outlet guide CUT). PSN ⛔ net-debt crossover = verdict flag, not a fired condition.",
+      "alert": true,
+      "rns_type": "H1 R",
+      "rns_date": "2026-08-06",
+      "build_date": "2026-08-06",
+      "spec_version": "v4.5-S",
+      "next_test": "BWY FY26 TU (Aug 26); BTRW FY26 R 16 Sep 26; PSN Q3 TU (Nov 26)",
+      "url": "Housebuilders-Sector.html",
+      "companies_fired": 3
     }
   ]
 }
