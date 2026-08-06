@@ -201,7 +201,7 @@ var MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'
 function fmtDate(d){var p=d.split('-');return p[2]+' '+MON[+p[1]-1]+' '+p[0].slice(2);}
 
 function load(){
-  fetch('drift-index.json',{cache:'no-store'})
+  fetch('drift-index.json?t='+Date.now(),{cache:'no-store'})
     .then(function(r){if(!r.ok)throw new Error(r.status);return r.json();})
     .then(function(j){DATA=j;render();})
     .catch(function(e){
@@ -281,7 +281,7 @@ function render(){
   t.forEach(function(x){
     var c=document.createElement('div');
     c.className='card '+x.direction;
-    c.onclick=function(){window.open(x.url,'drift_'+x.ticker,'width=1500,height=950,scrollbars=yes');};
+    c.onclick=function(){window.open(x.url+'?t='+Date.now(),'drift_'+x.ticker,'width=1500,height=950,scrollbars=yes');};
     c.innerHTML=
       '<div class="card-top"><span class="tick'+(x.ticker.length>6?' long':'')+'">'+x.ticker+
         (x.kind==='sector'?'<span class="kindtag">Sector</span>':'')+
