@@ -324,15 +324,46 @@
     {
       "ticker": "DSCV",
       "company": "discoverIE Group plc",
+      "kind": "ticker",
       "direction": "up",
       "headline": "Guide lifted to \"tracking ahead\" after one quarter — orders +31% organic, book-to-bill 1.15; first multi-signal green since recovery began",
-      "trigger": "2-of-3: Condition 1 (G-RAISE, Buy/Sell RNS) + Condition 2 (Text 🟢🟢, falling-to-rising 2 consecutive prints)",
+      "trigger": "2-of-3: Condition 1 (G-RAISE on Buy/Sell RNS, LEAD metric) + Condition 2 (Text rising 2 consecutive prints)",
       "alert": true,
+      "fired": 2,
+      "fired_of": 3,
       "rns_type": "Q1 TU",
       "rns_date": "2026-07-24",
-      "build_date": "2026-07-29",
-      "spec_version": "v3.16",
-      "next_test": "H1 FY27 TU (Oct-26): organic orders Q2 ≥+10%? Controls organic sales positive? Proforma gearing tracking to 1.8x?",
+      "build_date": "2026-08-06",
+      "spec_version": "4.8",
+      "next_test": "H1 FY27 TU (Oct-26): organic orders Q2 >=+10%? Controls organic sales positive? Proforma gearing tracking to 1.8x?",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "Q1FY25",
+          "Q2FY25",
+          "Q3FY25",
+          "Q4FY25",
+          "Q1FY26",
+          "Q2FY26",
+          "Q3FY26",
+          "Q4FY26",
+          "Q1FY27"
+        ],
+        "rows": [
+          "grrgrgggg",
+          "grrgrgagg",
+          "-rrr-rrga",
+          "rggrggagg",
+          "ggggggrr-"
+        ],
+        "note": "One row per ledger rank, R1-R5, right-anchored on the Q1 FY27 Buy/Sell print."
+      },
       "url": "DSCV.html"
     },
     {
