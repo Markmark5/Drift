@@ -140,6 +140,46 @@ details.d .dbody p { margin:8px 0; }
 .legend { font-size:11px; color:#6b6a63; margin-top:8px; }
 @media (max-width:820px){ .s20row{flex-direction:column;} .grid2{grid-template-columns:1fr;} .wrap{padding:18px 14px 60px;} }
 @media (prefers-reduced-motion: reduce){ *{scroll-behavior:auto;} }
+
+/* ---- 6.3a trigger lights ---- */
+.lights{background:#2b2a26;border-radius:12px;padding:12px 13px;max-width:1100px;display:flex;flex-wrap:wrap;gap:10px;align-items:stretch;margin:12px 0}
+.lamp{position:relative;flex:1 1 200px;background:#3b3934;border-radius:8px;padding:10px 11px 9px;min-width:190px}
+.lamp .bulb{display:block;width:28px;height:28px;border-radius:50%;margin-bottom:6px;border:2px solid rgba(255,255,255,.35);box-shadow:0 0 0 4px rgba(255,255,255,.08)}
+.lamp.fired-g .bulb{background:#21d05e}
+.lamp.fired-r .bulb{background:#ff3b30}
+.lamp.amber{background:#333129}
+.lamp.amber .bulb{background:#ffb020}
+.lamp.unlit{background:#333129}
+.lamp.unlit .bulb{background:#57544c}
+.lamp .lname{display:block;font-size:15.5px;font-weight:700;color:#fff;margin-bottom:3px}
+.lamp.amber .lname,.lamp.unlit .lname{color:#a8a49a}
+.lamp .lreason{display:block;font-size:11.5px;color:#c9c6bd;line-height:1.4}
+.lamp .ldate{position:absolute;top:8px;right:10px;font-size:11px;color:#c9c6bd}
+.lamp .ldate.dim{color:#8d8981}
+.tally{flex:0 0 78px;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.tally .tnum{font-size:26px;font-weight:700;color:#fff}
+.tally .tlab{font-size:10.5px;letter-spacing:.14em;color:#c9c6bd}
+.bstrip{flex:1 1 100%;border:1px dashed rgba(255,255,255,.3);border-radius:8px;padding:8px 11px;display:flex;align-items:center;gap:10px}
+.bsbulb{width:20px;height:20px;border-radius:50%;flex:0 0 20px}
+.bsbulb.g{background:#21d05e}.bsbulb.a{background:#ffb020}.bsbulb.r{background:#ff3b30}
+.bsverdict{font-size:13px;font-weight:700;color:#fff}
+.bsfixed{font-size:10.5px;color:#c9c6bd;margin-left:auto}
+/* ---- 6.3b box skin ---- */
+:root{--green2:#3fae72;--red2:#d9564d;--amber2:#d9a441}
+.qcard{background:#f2f1ec;border:none;border-top:3px solid var(--green2);border-radius:0 0 10px 10px;padding:12px 15px 13px}
+.qcard .k{font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:#5f5c54}
+.qcard .hd{font-size:19px;font-weight:700;margin:2px 0 3px}
+.qcard .v{font-size:13px;line-height:1.45}
+.qcard.caveat-amber{background:#f2f1ec}
+
+#text3 tr.early{display:none}
+#text3.showall tr.early{display:table-row}
+#text3 tr.exp td{cursor:pointer;background:#f2f1ec;font-size:11.5px;color:#5f5c54;text-align:left;padding:6px 10px}
+#text3 tr.exp td:hover{background:#eceae4}
+
+.statebar .barlead{font-size:13.5px;margin:0 0 7px}
+.statebar ul.barbul{margin:0;padding-left:18px;list-style:disc}
+.statebar ul.barbul li{font-size:13px;line-height:1.5;margin-bottom:4px}
 </style>
 </head>
 <body>
@@ -155,11 +195,17 @@ details.d .dbody p { margin:8px 0; }
   <div class="body">
     <div class="headline">Fourth straight guide raise since Jan-25; FY26 PBT &asymp;&pound;98m, moderately ahead of consensus; China JV proceeds cut leverage to ~0.4x.</div>
     <div class="pillrow">
-      <span class="pill alert">Alert: green-shoot 2-of-3</span>
-      <span class="pill">RNS: FY26 Trading Update</span>
-      <span class="pill">Date: 14-Jul-26</span>
+      <span class="pill">FY26 Trading Update &middot; 14 Jul 2026</span>
       <span class="pill">FY 30 Jun</span>
-      <span class="pill dot">B/S: leverage ~0.4x</span>
+      <span class="pill dot">B/S: net cash bound</span>
+    </div>
+
+    <div class="lights">
+      <div class="lamp fired-g"><span class="ldate">Jan-25 &rarr;</span><span class="bulb"></span><span class="lname">Numbers &amp; guide</span><span class="lreason">Fourth consecutive guide raise; ABS profit accelerating three straight prints</span></div>
+      <div class="lamp fired-g"><span class="ldate">Nov-25 &middot; Jan-26</span><span class="bulb"></span><span class="lname">Language</span><span class="lreason">Two consecutive rises to &ldquo;moderately above the top-end&rdquo;</span></div>
+      <div class="lamp amber"><span class="ldate dim">Feb-26</span><span class="bulb"></span><span class="lname">Disclosure</span><span class="lreason">Rank 2 count withheld once against a three-print habit &mdash; watch</span></div>
+      <div class="tally"><span class="tnum">2/3</span><span class="tlab">FIRED</span></div>
+      <div class="bstrip"><span class="bsbulb g"></span><span class="bsverdict">Clean &mdash; leverage ~0.4x</span><span class="bsfixed">Sweep sits outside the 2-of-3 count</span></div>
     </div>
 
     <details class="company">
@@ -179,16 +225,16 @@ details.d .dbody p { margin:8px 0; }
     </details>
 
     <div class="grid2">
-      <div class="qcard"><div class="k">Current State</div><div class="v">PIC and ABS both delivering H2 growth; four straight guide raises since Jan-25; balance sheet transformed by China JV proceeds.</div></div>
-      <div class="qcard"><div class="k">Fired</div><div class="v">Green-shoot mirror &mdash; 2 of 3: guide-raise sequence (Jul-26) &middot; rising language (last fired Jan-26). Balance-sheet mirror 2.0x&rarr;0.4x noted outside the count.</div></div>
-      <div class="qcard caveat-amber"><div class="k">Caveat</div><div class="v">PIC China new-royalty-customer count &mdash; the ticker's own long-lead KPI &mdash; absent from H1 FY26 results after three straight results docs carried it. Single-withhold watch flag, not fired (royalty revenue still accelerating).</div></div>
-      <div class="qcard"><div class="k">Next</div><div class="v">FY26 prelim (10-Sep-26): resume China royalty-customer count, give H2 PIC/ABS splits, set pro-forma post-deconsolidation FY27 base.</div></div>
+      <div class="qcard"><div class="k">Current state</div><div class="hd">&asymp;&pound;98m</div><div class="v">FY26 PBT moderately ahead of consensus; PIC and ABS both growing in H2; fourth straight raise against the company&rsquo;s own anchor.</div></div>
+      <div class="qcard"><div class="k">Warning you get</div><div class="hd">~18&ndash;24 months</div><div class="v">China royalty-customer wins lead segment profit by ~18&ndash;24 months on the company&rsquo;s own timeline &mdash; and that count is currently dark.</div></div>
+      <div class="qcard"><div class="k">Argues against</div><div class="hd">One-off heavy</div><div class="v">The &pound;5.6m milestone won&rsquo;t repeat and the leverage collapse is proceeds-driven; strip both and FY27 needs organic growth just to stand still.</div></div>
+      <div class="qcard"><div class="k">Next test</div><div class="hd">10 Sep 2026</div><div class="v">FY26 prelim: resume the China royalty-customer count and set the pro-forma post-deconsolidation FY27 base.</div></div>
     </div>
 
     <ul class="bullets">
-      <li>Lead-lag: PIC China royalty-customer wins lead segment profit by ~18&ndash;24 months on the company's own stated timeline &mdash; the current KPI silence obscures whether that pipeline is still building.</li>
-      <li>The leverage collapse (2.0x&rarr;0.4x) is China-JV-proceeds-driven, not organic &mdash; a one-off, non-repeating step in FY27.</li>
-      <li>What flips it: if the Sep-26 prelim fails to resume the China royalty-customer disclosure <em>and</em> North America PIC disease softness persists into H1 FY27, the withheld-KPI note escalates from watch to a fired Drift condition.</li>
+      <li>The measured lead comes from the FY23&ndash;24 China turn: wins collapsed first, segment profit followed &mdash; the current KPI silence obscures whether that pipeline is still building.</li>
+      <li>The PIC China new-royalty-customer count is absent from H1 FY26 results after three straight results docs carried it &mdash; single withhold, royalty revenue still accelerating.</li>
+      <li>What flips it: if the Sep-26 prelim fails to resume the China royalty-customer disclosure <em>and</em> North America PIC disease softness persists into H1 FY27, the watch flag becomes a fired Drift condition.</li>
     </ul>
   </div>
 </div>
@@ -197,6 +243,7 @@ details.d .dbody p { margin:8px 0; }
 <div class="sec-wrap">
 <h2 class="sec">&sect;1 &middot; Metric Ledger</h2>
 <p class="sec-sub">Scored metrics, ranked by lead time. Band decisions: H-grain rate &plusmn;2.0pp (constant this run). No Q-grain metrics &mdash; no quarter disclosure.</p>
+<details class="d2top"><summary>&sect;1 ledger &mdash; the five ranked metrics, roles and backtest</summary><div class="d2body">
 <table class="ledger">
 <thead><tr><th style="width:34px;">Rank</th><th>Metric</th><th>Type</th><th>Why it leads for GNS</th><th>Cadence</th><th>Status this run</th></tr></thead>
 <tbody>
@@ -208,66 +255,73 @@ details.d .dbody p { margin:8px 0; }
 </tbody>
 </table>
 <p class="legend">Proposed ledger change (next build, not swapped mid-run): PRP/PRRS regulatory-approval cadence shows real optionality signal but is binary/event-driven, not a rate &mdash; add as a watch once commercialisation revenue begins.</p>
+</div></details>
 </div>
-
-<div class="sec-wrap"><h2 class="sec">&sect;2 &middot; Unified Forward Grid</h2><p class="sec-sub">One spine &middot; H-reporter &middot; H1 and H2 both scored (banded &plusmn;2.0pp H-vs-same-H); FY printed as muted sub-row beneath each year-pair. Rightmost scored col (H1 FY26) bold. Click a period header to highlight all columns of that type; click again to clear. &#697; restated basis from H1 FY24.</p>
+<div class="sec-wrap"><h2 class="sec">&sect;2 &middot; Unified Forward Grid</h2><p class="sec-sub">One shared spine, all five ranks. Click a period header to highlight every column of that type; click again to clear. Workings, notes and the card strip are in the drawer beneath.</p>
 
 <style>
-/* Appendix B skin v4.0 — locked */
+/* ==== §2 GRID SKIN — LOCKED v4.0 (identical across projects) ==== */
 :root{--red:#b3261e;--green:#1e7a45;--amber:#9a6a00;--line:#d8d5cf;--ink:#16150f;--mute:#5f5c54;--paper:#f7f6f2}
-.gridwrap{overflow-x:auto;margin-bottom:16px}
-table.grid{table-layout:fixed;width:100%;min-width:900px;border-collapse:collapse;font-size:12.5px}
-table.grid th,table.grid td{border:1px solid var(--line);text-align:center;padding:7px 4px;vertical-align:top}
-table.grid col.lab{width:180px}
-table.grid col.per{width:calc((100% - 180px)/8)}
-.yband{background:#efeDE7;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:700}
-th.phead{cursor:pointer;user-select:none;font-size:11px;background:var(--paper)}
+.gridwrap{overflow-x:auto; margin-bottom:16px}
+table.grid{table-layout:fixed; width:100%; min-width:1000px; border-collapse:collapse; font-size:12.5px}
+table.grid th, table.grid td{border:1px solid var(--line); text-align:center; padding:7px 4px; vertical-align:top}
+table.grid col.lab{width:190px}
+table.grid col.per{width:calc((100% - 190px)/8)}
+.yband{background:#efedE7; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; font-weight:700}
+th.phead{cursor:pointer; user-select:none; font-size:11.5px; background:var(--paper)}
 th.phead:hover{background:#eceae4}
-th.phead .pdate{display:block;font-size:9.5px;font-weight:400;color:var(--mute);margin-top:1px;letter-spacing:0}
-th.lab,td.lab{text-align:left !important}
-.secbar td{background:var(--ink);color:#fff;text-align:left !important;font-size:11.5px;letter-spacing:.07em;font-weight:700;padding:7px 9px}
-.secbar .nat{font-weight:400;letter-spacing:.02em;color:#c9c6bd;text-transform:none}
-.strip td{padding:2px 4px;font-size:10px;color:var(--mute);background:#fbfaf7;letter-spacing:.05em}
+th.lab, td.lab{text-align:left !important}
+.secbar td{background:var(--ink); color:#fff; text-align:left !important;
+  font-size:11.5px; letter-spacing:.07em; font-weight:700; padding:7px 9px}
+.secbar .nat{font-weight:400; letter-spacing:.02em; color:#c9c6bd; text-transform:none}
+.strip td{padding:2px 4px; font-size:10px; color:var(--mute); background:#fbfaf7; letter-spacing:.05em}
 .strip td.lab{font-style:italic}
 .vrow td{background:#fff}
-.vrow td.lab{color:var(--mute);font-style:italic;font-size:11.5px}
-.val{font-weight:700;display:block;font-size:13px}
+.vrow td.lab{color:var(--mute); font-style:italic; font-size:11.5px}
+.val{font-weight:700; display:block; font-size:13px}
 .val .neg{color:var(--red)}
-.delta{display:block;font-size:11px;color:var(--mute);margin-top:2px}
+.delta{display:block; font-size:11px; color:var(--mute); margin-top:2px}
 .delta.neg{color:var(--red)}
-/* FY muted sub-row */
-tr.fyrow td{background:#f5f4f0;border-top:1px dashed #ccc;color:var(--mute);font-size:11px;padding:3px 4px;font-style:italic}
-tr.fyrow td.lab{font-size:10.5px}
-tr.fyrow .fval{font-weight:600;color:var(--mute)}
-tr.fyrow .fnote{font-size:10px;color:#9b9891;margin-left:3px}
-/* aggregate outer row */
-tr.agg td{background:#fff;border-top:2px solid var(--ink);color:var(--mute);font-size:11.5px;padding:6px 4px}
+tr.agg td{background:#fff; border-top:2px solid var(--ink); color:var(--mute); font-size:11.5px; padding:6px 4px}
 tr.agg td.lab{font-style:italic}
-tr.agg .aval{font-weight:700;color:var(--mute)}
-tr.agg .anote{display:inline;font-size:10.5px;margin-left:5px}
+tr.agg .aval{font-weight:700; color:var(--mute)}
+tr.agg .anote{display:inline; font-size:10.5px; margin-left:5px}
 td.bs-col{background:#fcfbf8 !important}
 td.bs-col .val{font-weight:800}
 th.bs-col{font-weight:800}
 .hl{background:#fff6d9 !important}
-/* H2 derived col — slightly warmer tint */
-th.h2head{background:#f8f7f2}
-td.h2cell{background:#faf9f5}
+/* — operator-directed extension: announcement date beneath each period header — */
+th.phead .pdate{display:block;font-size:9.5px;font-weight:400;color:var(--mute);margin-top:1px;letter-spacing:0}
+/* — §2 drawers, two-tier skin per 6.1 — */
+details.d2top{border:1px solid #c6c2b9;background:var(--paper);border-radius:10px;margin-top:16px}
+details.d2top>summary{font-size:14px;padding:13px;cursor:pointer;font-weight:600}
+details.d2top .d2body{padding:0 13px 13px}
+details.d2sub{background:#fff;border:1px solid var(--line);border-radius:6px;margin-top:12px}
+details.d2sub>summary{font-size:12.5px;padding:9px;cursor:pointer}
+details.d2sub .d2body{padding:0 9px 9px;font-size:12.5px;line-height:1.55}
+details.d2sub .d2body p{font-size:12.5px;line-height:1.55}
+/* — card strip — */
+table.cstrip{border-collapse:collapse;font-size:11px;margin:4px 0 10px}
+table.cstrip td{border:1px solid var(--line);width:26px;height:22px;text-align:center;padding:0}
+table.cstrip td.slab{width:34px;font-weight:700;background:var(--paper);color:var(--mute)}
+table.cstrip td.g{background:#1e7a45;color:#fff}
+table.cstrip td.a{background:#e0a800;color:#fff}
+table.cstrip td.r{background:#b3261e;color:#fff}
+table.cstrip td.x{background:#5f5c54;color:#fff}
+table.cstrip td.n{background:#efedE7;color:#b3b0a8}
+table.cstrip td.bscell{outline:2px solid var(--ink);outline-offset:-2px}
+pre.jsonbox{background:#fbfaf7;border:1px solid var(--line);border-radius:4px;padding:9px;font-size:11px;overflow-x:auto;white-space:pre-wrap;word-break:break-word}
 </style>
 
 <div class="gridwrap"><table class="grid" id="grid">
 <colgroup>
   <col class="lab">
-  <col class="per"><!-- H1 FY23 -->
-  <col class="per"><!-- H2† FY23 -->
-  <col class="per"><!-- H1 FY24 -->
-  <col class="per"><!-- H2† FY24 -->
-  <col class="per"><!-- H1 FY25 -->
-  <col class="per"><!-- H2† FY25 -->
-  <col class="per"><!-- H1 FY26 BS -->
-  <col class="per"><!-- H2 FY26 -->
+  <col class="per"><col class="per">
+  <col class="per"><col class="per">
+  <col class="per"><col class="per">
+  <col class="per"><col class="per">
 </colgroup>
 
-<!-- Year band -->
 <tr class="yband">
   <th class="lab"></th>
   <th colspan="2">FY23</th>
@@ -276,206 +330,191 @@ td.h2cell{background:#faf9f5}
   <th colspan="2">FY26</th>
 </tr>
 
-<!-- Period headers with dates -->
 <tr>
   <th class="lab"></th>
-  <th class="phead" data-p="H1">H1<span class="pdate">Dec-22</span></th>
-  <th class="phead h2head" data-p="H2">H2†<span class="pdate">Jun-23</span></th>
-  <th class="phead" data-p="H1">H1<span class="pdate">Dec-23</span></th>
-  <th class="phead h2head" data-p="H2">H2†<span class="pdate">Jun-24</span></th>
-  <th class="phead" data-p="H1">H1<span class="pdate">Dec-24</span></th>
-  <th class="phead h2head" data-p="H2">H2†<span class="pdate">Jun-25</span></th>
-  <th class="phead bs-col" data-p="H1">H1<span class="pdate">Dec-25</span></th>
-  <th class="phead h2head" data-p="H2">H2<span class="pdate">Jun-26</span></th>
+  <th class="phead" data-p="H1">H1<span class="pdate">Feb-23</span></th>
+  <th class="phead" data-p="H2">H2&dagger;<span class="pdate">Sep-23</span></th>
+  <th class="phead" data-p="H1">H1<span class="pdate">Feb-24</span></th>
+  <th class="phead" data-p="H2">H2&dagger;<span class="pdate">Sep-24</span></th>
+  <th class="phead" data-p="H1">H1<span class="pdate">Feb-25</span></th>
+  <th class="phead" data-p="H2">H2&dagger;<span class="pdate">Sep-25</span></th>
+  <th class="phead" data-p="H1">H1<span class="pdate">Feb-26</span></th>
+  <th class="phead bs-col" data-p="H2">&#11088; H2 &middot; FY TU<span class="pdate">Jul-26</span></th>
 </tr>
 
 <!-- ===== RANK 1 ===== -->
-<tr class="secbar"><td colspan="9">Rank 1 &middot; PIC royalty revenue growth (constant currency) <span class="nat">&middot; period rate &middot; H1 scored &plusmn;2.0pp; H2 rate not printed &mdash; col shows &mdash;</span></td></tr>
+<tr class="secbar"><td colspan="9">Rank 1 &mdash; PIC royalty revenue growth, constant currency % <span class="nat">&middot; half-year and full-year both scored &middot; arrow = up or down versus the same period last year, band 2 points</span></td></tr>
 <tr class="strip">
-  <td class="lab">rate · Δpp H1-vs-H1</td>
-  <td>H1 FY23</td><td class="h2head">H2 FY23</td>
-  <td>H1 FY24</td><td class="h2head">H2 FY24</td>
-  <td>H1 FY25</td><td class="h2head">H2 FY25</td>
-  <td>H1 FY26</td><td class="h2head">H2 FY26</td>
+  <td class="lab">Period</td>
+  <td>H1</td><td>FY</td>
+  <td>H1</td><td>FY</td>
+  <td>H1</td><td>FY</td>
+  <td>H1</td><td>FY</td>
 </tr>
 <tr class="vrow">
-  <td class="lab">cc growth · Δpp</td>
+  <td class="lab">% &middot; vs same period last year</td>
   <td><span class="val">+14%</span><span class="delta">&mdash;</span></td>
-  <td class="h2cell"><span class="val">&mdash;</span><span class="delta">not printed</span></td>
-  <td><span class="val">+2%</span><span class="delta neg">&minus;12pp &#128308;&#8600;</span></td>
-  <td class="h2cell"><span class="val">&mdash;</span><span class="delta">not printed</span></td>
-  <td><span class="val">+5%</span><span class="delta">+3pp &#128994;&#8599;</span></td>
-  <td class="h2cell"><span class="val">&mdash;</span><span class="delta">not printed</span></td>
-  <td class="bs-col"><span class="val">+7%</span><span class="delta">+2pp &#128994;&#8599;</span></td>
-  <td class="h2cell"><span class="val">&mdash;</span><span class="delta">not printed</span></td>
+  <td><span class="val">+10%</span><span class="delta">&mdash;</span></td>
+  <td><span class="val">+2%</span><span class="delta neg">&#128308;&#8600;</span></td>
+  <td><span class="val">+4%</span><span class="delta neg">&#128308;&#8600;</span></td>
+  <td><span class="val">+5%</span><span class="delta">&#128994;&#8599;</span></td>
+  <td><span class="val">+5%</span><span class="delta">&#128993;&#8594;</span></td>
+  <td><span class="val">+7%</span><span class="delta">&#128994;&#8599;</span></td>
+  <td class="bs-col"><span class="val">&mdash;</span><span class="delta">not yet printed</span></td>
 </tr>
-<tr class="fyrow">
-  <td class="lab">FY rate (ref)</td>
-  <td colspan="2"><span class="fval">+10%</span></td>
-  <td colspan="2"><span class="fval">+4%</span></td>
-  <td colspan="2"><span class="fval">+5%</span></td>
-  <td colspan="2"><span class="fval">&mdash;</span><span class="fnote">not yet</span></td>
-</tr>
-
 <!-- ===== RANK 2 ===== -->
-<tr class="secbar"><td colspan="9">Rank 2 &middot; PIC China new royalty-customer wins (cumulative count) <span class="nat">&middot; snapshot &middot; position-to-position &middot; results-doc cadence</span></td></tr>
+<tr class="secbar"><td colspan="9">Rank 2 &mdash; PIC China new royalty customers, cumulative count <span class="nat">&middot; arrow = up or down since the last print</span></td></tr>
 <tr class="strip">
-  <td class="lab">count · sequential Δ</td>
-  <td>H1 FY23</td><td class="h2head">H2 FY23</td>
-  <td>H1 FY24</td><td class="h2head">FY24</td>
-  <td>H1 FY25</td><td class="h2head">FY25</td>
-  <td>H1 FY26</td><td class="h2head">FY26</td>
+  <td class="lab">Position at</td>
+  <td>Dec-22</td><td>Jun-23</td>
+  <td>Dec-23</td><td>Jun-24</td>
+  <td>Dec-24</td><td>Jun-25</td>
+  <td>Dec-25</td><td>Jun-26</td>
 </tr>
 <tr class="vrow">
-  <td class="lab">count · &Delta; vs prior print</td>
-  <td><span class="val">&mdash;</span><span class="delta">no cadence</span></td>
-  <td class="h2cell"><span class="val">&mdash;</span><span class="delta">no cadence</span></td>
+  <td class="lab">count &middot; &Delta; vs prior print</td>
+  <td><span class="val">&mdash;</span><span class="delta">outside cadence</span></td>
+  <td><span class="val">&mdash;</span><span class="delta">outside cadence</span></td>
   <td><span class="val">&#128993;</span><span class="delta">qualitative</span></td>
-  <!-- FY24 = first quantified print (Sep-24 FYR) — H2 col carries it as printed -->
-  <td class="h2cell"><span class="val">13</span><span class="delta">&#8599; first print</span></td>
+  <td><span class="val">13</span><span class="delta">first print</span></td>
   <td><span class="val">20</span><span class="delta">+7 &#128994;&#8599;</span></td>
-  <!-- FY25 end = 25 -->
-  <td class="h2cell"><span class="val">25</span><span class="delta">+5 &#128994;&#8599;</span></td>
-  <td class="bs-col"><span class="val">&#10060;</span><span class="delta neg">withheld &#128308;</span></td>
-  <td class="h2cell"><span class="val">&mdash;</span><span class="delta">no data</span></td>
+  <td><span class="val">25</span><span class="delta">+5 &#128994;&#8599;</span></td>
+  <td><span class="val">&#10060;</span><span class="delta neg">withheld &#128308;</span></td>
+  <td class="bs-col"><span class="val">&mdash;</span><span class="delta">outside cadence</span></td>
 </tr>
-<tr class="fyrow">
-  <td class="lab">FY end-position (ref)</td>
-  <td colspan="2"><span class="fval">&mdash;</span></td>
-  <td colspan="2"><span class="fval">13</span><span class="fnote">Sep-24</span></td>
-  <td colspan="2"><span class="fval">25</span><span class="fnote">Sep-25</span></td>
-  <td colspan="2"><span class="fval">&mdash;</span><span class="fnote">watch</span></td>
+<tr class="agg">
+  <td class="lab">FY-end position</td>
+  <td colspan="2"><span class="aval">&mdash;</span></td>
+  <td colspan="2"><span class="aval">13</span></td>
+  <td colspan="2"><span class="aval">25</span><span class="anote">+92%</span></td>
+  <td colspan="2"><span class="aval">&mdash;</span></td>
 </tr>
 
 <!-- ===== RANK 3 ===== -->
-<tr class="secbar"><td colspan="9">Rank 3 &middot; Net debt / adjusted EBITDA <span class="nat">&middot; snapshot &middot; H1 = Dec position; H2 = Jun FY-end (printed, not derived) &middot; sequential &Delta;</span></td></tr>
+<tr class="secbar"><td colspan="9">Rank 3 &mdash; Net debt to adjusted EBITDA, &times; <span class="nat">&middot; arrow = up or down since the last print</span></td></tr>
 <tr class="strip">
-  <td class="lab">ratio · sequential Δ</td>
-  <td>Dec-22</td><td class="h2head">Jun-23</td>
-  <td>Dec-23</td><td class="h2head">Jun-24</td>
-  <td>Dec-24</td><td class="h2head">Jun-25</td>
-  <td>Dec-25</td><td class="h2head">Jun-26</td>
+  <td class="lab">Position at</td>
+  <td>Dec-22</td><td>Jun-23</td>
+  <td>Dec-23</td><td>Jun-24</td>
+  <td>Dec-24</td><td>Jun-25</td>
+  <td>Dec-25</td><td>Jun-26</td>
 </tr>
 <tr class="vrow">
-  <td class="lab">ratio · &Delta; vs prior print</td>
+  <td class="lab">&times; &middot; &Delta; vs prior print</td>
   <td><span class="val">1.8x</span><span class="delta">&mdash;</span></td>
-  <td class="h2cell"><span class="val">1.6x</span><span class="delta">&minus;0.2 &#128994;&#8599;</span></td>
-  <td><span class="val">2.1x</span><span class="delta">+0.5 &#128308;&#8600;</span></td>
-  <td class="h2cell"><span class="val">2.0x</span><span class="delta">&minus;0.1 &#128993;&#8594;</span></td>
+  <td><span class="val">1.6x</span><span class="delta">&minus;0.2 &#128994;&#8599;</span></td>
+  <td><span class="val">2.1x</span><span class="delta neg">+0.5 &#128308;&#8600;</span></td>
   <td><span class="val">2.0x</span><span class="delta">&minus;0.1 &#128993;&#8594;</span></td>
-  <td class="h2cell"><span class="val">1.5x</span><span class="delta">&minus;0.5 &#128994;&#8599;</span></td>
-  <td class="bs-col"><span class="val">1.4x</span><span class="delta">&minus;0.6 &#128994;&#8599;</span></td>
-  <td class="h2cell"><span class="val">~0.4x</span><span class="delta">&minus;1.1 &#128994;&#8599;&dagger;</span></td>
+  <td><span class="val">2.0x</span><span class="delta">0.0 &#128993;&#8594;</span></td>
+  <td><span class="val">1.5x</span><span class="delta">&minus;0.5 &#128994;&#8599;</span></td>
+  <td><span class="val">1.4x</span><span class="delta">&minus;0.1 &#128993;&#8594;</span></td>
+  <td class="bs-col"><span class="val">~0.4x&dagger;</span><span class="delta">&minus;1.0 &#128994;&#8599;</span></td>
 </tr>
-<tr class="fyrow">
-  <td class="lab">FY-end (= H2 col; ref echo)</td>
-  <td colspan="2"><span class="fval">1.6x</span></td>
-  <td colspan="2"><span class="fval">2.0x</span></td>
-  <td colspan="2"><span class="fval">1.5x</span></td>
-  <td colspan="2"><span class="fval">~0.4x</span><span class="fnote">TU est&dagger;</span></td>
+<tr class="agg">
+  <td class="lab">FY-end position</td>
+  <td colspan="2"><span class="aval">1.6x</span></td>
+  <td colspan="2"><span class="aval">2.0x</span></td>
+  <td colspan="2"><span class="aval">1.5x</span></td>
+  <td colspan="2"><span class="aval">~0.4x&dagger;</span></td>
 </tr>
 
 <!-- ===== RANK 4 ===== -->
-<tr class="secbar"><td colspan="9">Rank 4 &middot; ABS adjusted operating profit incl JVs (&pound;m, restated&#697;) <span class="nat">&middot; cumulative flow &middot; H1-vs-H1 and H2†-vs-H2† &middot; Δrate banded &plusmn;2.0pp</span></td></tr>
+<tr class="secbar"><td colspan="9">Rank 4 &mdash; ABS adjusted operating profit including JVs, &pound;m <span class="nat">&middot; &#128994;&#8599; growing faster than last year &middot; &#128993;&#8594; about the same pace &middot; &#128308;&#8600; shrinking or clearly slowing</span></td></tr>
 <tr class="strip">
-  <td class="lab">&pound;m · (YoY%) · Δpp</td>
-  <td>H1 FY23</td><td class="h2head">H2† FY23</td>
-  <td>H1 FY24</td><td class="h2head">H2† FY24</td>
-  <td>H1 FY25</td><td class="h2head">H2† FY25</td>
-  <td>H1 FY26</td><td class="h2head">H2† FY26</td>
+  <td class="lab">Period</td>
+  <td>H1</td><td>H2&dagger;</td>
+  <td>H1</td><td>H2&dagger;</td>
+  <td>H1</td><td>H2&dagger;</td>
+  <td>H1</td><td>H2&dagger;</td>
 </tr>
 <tr class="vrow">
-  <td class="lab">&pound;m · (YoY%) · &Delta;pp</td>
-  <!-- H1 FY23: first in series -->
+  <td class="lab">&pound;m &middot; vs same period last year</td>
   <td><span class="val">10.1&#697;</span><span class="delta">&mdash;</span></td>
-  <!-- H2† FY23 = 18.7 - 10.1 = 8.6; first in H2 series -->
-  <td class="h2cell"><span class="val">8.6&#697;&dagger;</span><span class="delta">&mdash;</span></td>
-  <!-- H1 FY24: 7.3 vs 10.1 = -27.7% -->
+  <td><span class="val">8.6&#697;&dagger;</span><span class="delta">&mdash;</span></td>
   <td><span class="val">7.3 <span class="neg">(&minus;27.7%)</span></span><span class="delta neg">&#128308;&#8600;</span></td>
-  <!-- H2† FY24 = 14.0 - 7.3 = 6.7; vs 8.6 = -22.1% -->
-  <td class="h2cell"><span class="val">6.7† <span class="neg">(&minus;22.1%)</span></span><span class="delta neg">&#128308;&#8600;</span></td>
-  <!-- H1 FY25: 8.6 vs 7.3 = +17.8% -->
+  <td><span class="val">6.7&dagger; <span class="neg">(&minus;22.1%)</span></span><span class="delta neg">&#128308;&#8600;</span></td>
   <td><span class="val">8.6 (+17.8%)</span><span class="delta">&#128994;&#8599;</span></td>
-  <!-- H2† FY25 = 19.5 - 8.6 = 10.9; vs 6.7 = +62.7% -->
-  <td class="h2cell"><span class="val">10.9† (+62.7%)</span><span class="delta">&#128994;&#8599;</span></td>
-  <!-- H1 FY26 BS: 10.9 vs 8.6 = +26.7% -->
-  <td class="bs-col"><span class="val">10.9 (+26.7%)</span><span class="delta">&#128994;&#8599;</span></td>
-  <!-- H2† FY26: not yet available -->
-  <td class="h2cell"><span class="val">&mdash;</span><span class="delta">not yet</span></td>
+  <td><span class="val">10.9&dagger; (+62.7%)</span><span class="delta">&#128994;&#8599;</span></td>
+  <td><span class="val">10.9 (+26.7%)</span><span class="delta">&#128994;&#8599;</span></td>
+  <td class="bs-col"><span class="val">&mdash;</span><span class="delta">not yet printed</span></td>
 </tr>
-<tr class="fyrow">
-  <td class="lab">FY total (ref)</td>
-  <td colspan="2"><span class="fval">18.7&#697;</span></td>
-  <td colspan="2"><span class="fval">14.0</span></td>
-  <td colspan="2"><span class="fval">19.5</span></td>
-  <td colspan="2"><span class="fval">&mdash;</span><span class="fnote">H1 only</span></td>
+<tr class="agg">
+  <td class="lab">FY total</td>
+  <td colspan="2"><span class="aval">18.7&#697;</span></td>
+  <td colspan="2"><span class="aval">14.0</span><span class="anote">&minus;25.1%</span></td>
+  <td colspan="2"><span class="aval">19.5</span><span class="anote">+39.3%</span></td>
+  <td colspan="2"><span class="aval">&mdash;</span></td>
 </tr>
 
 <!-- ===== RANK 5 ===== -->
-<tr class="secbar"><td colspan="9">Rank 5 &middot; Group revenue (&pound;m) <span class="nat">&middot; cumulative flow &middot; H1-vs-H1 and H2†-vs-H2† &middot; Δrate banded &plusmn;2.0pp</span></td></tr>
+<tr class="secbar"><td colspan="9">Rank 5 &mdash; Group revenue, &pound;m <span class="nat">&middot; &#128994;&#8599; growing faster than last year &middot; &#128993;&#8594; about the same pace &middot; &#128308;&#8600; shrinking or clearly slowing</span></td></tr>
 <tr class="strip">
-  <td class="lab">&pound;m · (YoY%) · Δpp</td>
-  <td>H1 FY23</td><td class="h2head">H2† FY23</td>
-  <td>H1 FY24</td><td class="h2head">H2† FY24</td>
-  <td>H1 FY25</td><td class="h2head">H2† FY25</td>
-  <td>H1 FY26</td><td class="h2head">H2† FY26</td>
+  <td class="lab">Period</td>
+  <td>H1</td><td>H2&dagger;</td>
+  <td>H1</td><td>H2&dagger;</td>
+  <td>H1</td><td>H2&dagger;</td>
+  <td>H1</td><td>H2&dagger;</td>
 </tr>
 <tr class="vrow">
-  <td class="lab">&pound;m · (YoY%) · &Delta;pp</td>
-  <!-- H1 FY23: first -->
+  <td class="lab">&pound;m &middot; vs same period last year</td>
   <td><span class="val">350.2</span><span class="delta">&mdash;</span></td>
-  <!-- H2† FY23 = 689.7 - 350.2 = 339.5; first in H2 series -->
-  <td class="h2cell"><span class="val">339.5†</span><span class="delta">&mdash;</span></td>
-  <!-- H1 FY24: 333.6 vs 350.2 = -4.7% -->
+  <td><span class="val">339.5&dagger;</span><span class="delta">&mdash;</span></td>
   <td><span class="val">333.6 <span class="neg">(&minus;4.7%)</span></span><span class="delta neg">&#128308;&#8600;</span></td>
-  <!-- H2† FY24 = 668.8 - 333.6 = 335.2; vs 339.5 = -1.3% -->
-  <td class="h2cell"><span class="val">335.2† <span class="neg">(&minus;1.3%)</span></span><span class="delta">&#128993;&#8594;</span></td>
-  <!-- H1 FY25: 336.4 vs 333.6 = +0.8% -->
+  <td><span class="val">335.2&dagger; <span class="neg">(&minus;1.3%)</span></span><span class="delta">&#128993;&#8594;</span></td>
   <td><span class="val">336.4 (+0.8%)</span><span class="delta">&#128993;&#8594;</span></td>
-  <!-- H2† FY25 = 672.8 - 336.4 = 336.4; vs 335.2 = +0.4% -->
-  <td class="h2cell"><span class="val">336.4† (+0.4%)</span><span class="delta">&#128993;&#8594;</span></td>
-  <!-- H1 FY26 BS: 335.6 vs 336.4 = -0.2% -->
-  <td class="bs-col"><span class="val">335.6 <span class="neg">(&minus;0.2%)</span></span><span class="delta">&#128993;&#8594;</span></td>
-  <!-- H2† FY26: not yet -->
-  <td class="h2cell"><span class="val">&mdash;</span><span class="delta">not yet</span></td>
+  <td><span class="val">336.4&dagger; (+0.4%)</span><span class="delta">&#128993;&#8594;</span></td>
+  <td><span class="val">335.6 <span class="neg">(&minus;0.2%)</span></span><span class="delta">&#128993;&#8594;</span></td>
+  <td class="bs-col"><span class="val">&mdash;</span><span class="delta">not yet printed</span></td>
 </tr>
-<tr class="fyrow">
-  <td class="lab">FY total (ref)</td>
-  <td colspan="2"><span class="fval">689.7</span></td>
-  <td colspan="2"><span class="fval">668.8</span></td>
-  <td colspan="2"><span class="fval">672.8</span></td>
-  <td colspan="2"><span class="fval">&mdash;</span><span class="fnote">H1 only</span></td>
+<tr class="agg">
+  <td class="lab">FY total</td>
+  <td colspan="2"><span class="aval">689.7</span></td>
+  <td colspan="2"><span class="aval">668.8</span><span class="anote">&minus;3.0%</span></td>
+  <td colspan="2"><span class="aval">672.8</span><span class="anote">+0.6%</span></td>
+  <td colspan="2"><span class="aval">&mdash;</span></td>
 </tr>
 
 </table></div>
 
-<p class="legend">&#697; restated: segment comparatives restated at H1 FY24 (product-development costs reallocated from R&amp;D). &dagger; derived (FY&minus;H1) or TU estimate — later audited figure governs; watch-flagged until a printed sub-period corroborates. &#10060; withheld against cadence. &#128993; qualitative-only. &mdash; outside cadence or first in series. FY rows transcribed from company-printed totals, muted, never scored.</p>
+<p class="legend">&#11088; Buy/Sell column &middot; &dagger; derived or unaudited estimate &middot; &#697; restated basis &middot; &#10060; withheld against cadence &middot; &#128993; qualitative only &middot; &mdash; outside cadence or first in series. FY rows transcribed from company-printed totals &mdash; never summed, never scored, no arrows.</p>
 
-<details class="d"><summary>Notes &mdash; Ranks 1&ndash;5</summary><div class="dbody">
-<p><b>Rank 1 (PIC royalty revenue):</b> H2 rate never printed by the company — H2 col correctly shows &mdash; throughout. FY reference sub-row confirms the H1 signal held for the full year in FY25 (+5% H1 = +5% FY). The +2% H1 FY24 trough coincided with the guidance-cut era; reacceleration to +7% cc at H1 FY26 (China +51% cc) is the cleanest confirmation the royalty engine is re-firing — watch whether it holds ex-China post-deconsolidation.</p>
-<p><b>Rank 2 (China royalty-customer count):</b> cadence established at results-doc grain from Sep-24. H2 col carries the FY-end position (the only print at that grain). Watch flag turns on the Sep-26 prelim — resumed count clears it; second consecutive omission fires the Drift condition.</p>
-<p><b>Rank 3 (leverage):</b> H2 col = FY-end position, printed not derived; no &dagger; on the H2 cells (FY26 H2 carries &dagger; because ~0.4x is a TU estimate). Dec-23 spike to 2.1x self-corrected. FY26 ~0.4x is a China-JV-proceeds step-change — FY27 organic run-rate is the number to watch.</p>
-<p><b>Rank 4 (ABS AOP):</b> H2† = FY&minus;H1 in all years. Two &#128308; (H1/H2 FY24) then three &#128994; (H1/H2 FY25, H1 FY26) — hard-number-confirmed turn. H2 FY25 +62.7% reflects the back-half weighting of VAP savings. Basis: adjusted operating profit including JVs throughout.</p>
-<p><b>Rank 5 (revenue):</b> H2† = FY&minus;H1. Revenue flat within &plusmn;1% for four consecutive H1s and three H2s — profit growth is all margin, no top-line volume. FY25 £672.8m (the 687.4 in the Sep-25 prelim is non-current assets). Revenue is the confirmer, not the leader.</p>
+<details class="d2top"><summary>&sect;2 workings</summary><div class="d2body">
+
+<details class="d2sub"><summary>&#128306; Card strip &mdash; wall preview &amp; index entry</summary><div class="d2body">
+<table class="cstrip">
+<tr><td class="slab">R1</td><td class="n">&nbsp;</td><td class="n">&nbsp;</td><td class="n">&nbsp;</td><td class="r">&nbsp;</td><td class="r">&nbsp;</td><td class="g">&nbsp;</td><td class="a">&nbsp;</td><td class="g">&nbsp;</td><td class="n bscell">&nbsp;</td></tr>
+<tr><td class="slab">R2</td><td class="n">&nbsp;</td><td class="n">&nbsp;</td><td class="n">&nbsp;</td><td class="a">&nbsp;</td><td class="n">&nbsp;</td><td class="g">&nbsp;</td><td class="g">&nbsp;</td><td class="x">&nbsp;</td><td class="n bscell">&nbsp;</td></tr>
+<tr><td class="slab">R3</td><td class="n">&nbsp;</td><td class="n">&nbsp;</td><td class="g">&nbsp;</td><td class="r">&nbsp;</td><td class="a">&nbsp;</td><td class="a">&nbsp;</td><td class="g">&nbsp;</td><td class="a">&nbsp;</td><td class="g bscell">&nbsp;</td></tr>
+<tr><td class="slab">R4</td><td class="n">&nbsp;</td><td class="n">&nbsp;</td><td class="n">&nbsp;</td><td class="r">&nbsp;</td><td class="r">&nbsp;</td><td class="g">&nbsp;</td><td class="g">&nbsp;</td><td class="g">&nbsp;</td><td class="n bscell">&nbsp;</td></tr>
+<tr><td class="slab">R5</td><td class="n">&nbsp;</td><td class="n">&nbsp;</td><td class="n">&nbsp;</td><td class="r">&nbsp;</td><td class="a">&nbsp;</td><td class="a">&nbsp;</td><td class="a">&nbsp;</td><td class="a">&nbsp;</td><td class="n bscell">&nbsp;</td></tr>
+</table>
+<p style="font-size:11.5px;color:#5f5c54;margin:0 0 8px">Nine cells per row, built right-to-left from the Buy/Sell column (outlined, = the &#11088; Jul-26 TU grid column). Left cell padded blank &mdash; the record opens at H1&nbsp;FY23. <b>g</b> 🟢↗ &middot; <b>a</b> 🟡→ or qualitative-only &middot; <b>r</b> 🔴↘ &middot; <b>x</b> ❌ withheld &middot; blank = no score in that slot.</p>
+<p style="font-size:11.5px;color:#5f5c54;margin:0 0 4px"><b>Pending operator decision &mdash; not yet written to the embedded entry:</b> the <code>grid</code> and <code>lights</code> fields required at 6.8 are absent from the current <code>drift-entry</code> block (built at spec 3.16). The strip above is rendered from the grid but has not yet been transcribed into the JSON; that transcription is scheduled with the drift-entry update.</p>
 </div></details>
 
-<details class="d"><summary>Turn methodology &amp; restatement basis</summary><div class="dbody">
-<p><b>Comparison bases:</b> Rank 1 rate — H1-vs-H1; H2 not printed so no H2 comparison. Ranks 2/3 (snapshot) — position-to-position sequential at own disclosure grain. Ranks 4/5 (flow) — H1-vs-H1 and H2†-vs-H2† like-period; never sequential HonH. Δrate banded &plusmn;2.0pp. First in series &rarr; &mdash;.</p>
-<p><b>Derived H2† workings:</b> H2 FY23 ABS = 18.7&minus;10.1 = 8.6; H2 FY24 ABS = 14.0&minus;7.3 = 6.7; H2 FY25 ABS = 19.5&minus;8.6 = 10.9. H2 FY23 Rev = 689.7&minus;350.2 = 339.5; H2 FY24 Rev = 668.8&minus;333.6 = 335.2; H2 FY25 Rev = 672.8&minus;336.4 = 336.4. Second route for Rank 2: 13+12=25 and 20+5=25 &#10003;. No second route for &pound;m flows (no Q figures).</p>
-<p><b>Rank 3 exception:</b> H2 = FY-end leverage ratio, printed directly in each FY results doc — not derived, no &dagger; (except FY26 H2 which is the unaudited Jul-26 TU estimate).</p>
-<p><b>Restatement (&#697;):</b> PIC and ABS comparatives restated at H1 FY24. All pre-restatement figures use restated values: ABS H1 FY23&#697; = 10.1, ABS H2 FY23&#697; = 8.6, ABS FY23&#697; = 18.7.</p>
-<p><b>FY sub-rows:</b> transcribed from company-printed totals, never summed, never scored, no arrows. They exist so the shape of each year is legible without arithmetic.</p>
-<p><b>Buy/Sell column:</b> H1 FY26 (Dec-25; Feb-26 H1R). Trailing-12-month-verified. FY26 H2 col carries TU estimates where available (Jul-26); later audited prelim governs.</p>
+<details class="d2sub"><summary>Notes &mdash; Ranks 1&ndash;5</summary><div class="d2body">
+<p><b>Rank 1 &mdash; PIC royalty revenue growth.</b> The H2 rate is never printed and cannot be derived, so this rank runs at half-year/full-year grain. The FY cells now sit in-grid beside their halves: FY25 confirms the H1 signal held all year (+5% at H1, +5% at FY), while FY24 (+4% after +10%) prints the full-year decel the H1 read had already flagged six months earlier. Reacceleration to +7% at H1 FY26, with China +51%, is the cleanest evidence the royalty engine is re-firing; the open question is whether it holds ex-China once PIC China deconsolidates.</p>
+<p><b>Rank 2 &mdash; PIC China new royalty customers.</b> Cadence established at results-document grain from Sep-24 across three consecutive prints. The Feb-26 blank is a verified withhold, not a missed read. Sep-26 settles it: a resumed count clears the flag, a second omission fires the disclosure condition.</p>
+<p><b>Rank 3 &mdash; Net debt to adjusted EBITDA.</b> The Dec-23 spike self-corrected within two prints. The Jun-26 reading is a China-JV-proceeds step change, not organic deleveraging &mdash; the number that matters is the FY27 organic position once the proceeds are spent or returned.</p>
+<p><b>Rank 4 &mdash; ABS adjusted operating profit.</b> Two red prints then three green: a turn confirmed in hard numbers, not merely in guidance. The H2 FY25 figure reflects the back-half weighting of the cost programme. Basis is adjusted operating profit including joint ventures throughout, matching the FY row.</p>
+<p><b>Rank 5 &mdash; Group revenue.</b> Four consecutive H1s and three H2s inside &plusmn;1%. Profit growth to date is margin, not volume. Revenue confirms; it does not lead, and on this record it has never led.</p>
+</div></details>
+
+<details class="d2sub"><summary>Turn methodology &amp; restatement basis</summary><div class="d2body">
+<p><b>Comparison basis per rank.</b> Rank 1 rate metric: the pp move year-on-year, directly &mdash; H1 against H1 and FY against FY. Ranks 2 and 3 snapshots: sequential &Delta; against the immediately prior print at own disclosure grain. Ranks 4 and 5 flows: year-on-year, H1 against H1 and H2&dagger; against H2&dagger;. No sequential comparison renders in any flow cell. First period in a series renders &mdash;.</p>
+<p><b>Display basis.</b> H-grain flow cells show the year-on-year move on line 1; the emoji alone carries the score on line 2. The pp values behind Rank 1's arrows are retained here and never rendered in cells. Half-year: FY24 &minus;12pp, FY25 +3pp, FY26 +2pp. Full-year: FY24 &minus;6pp, FY25 +1pp. Band &plusmn;2.0pp throughout. H1 FY26 sits exactly at the band edge and is scored green on the boundary; FY25 at +1pp sits inside the band and is scored amber.</p>
+<p><b>Stated unit per rank.</b> Rank 1 %, Rank 2 count, Rank 3 &times;, Rank 4 &pound;m, Rank 5 &pound;m. Each is carried identically by the section bar, the row label and the rendered values.</p>
+<p><b>Derived cells (&dagger;) and workings.</b> ABS: H2 FY23 = 18.7 &minus; 10.1 = 8.6; H2 FY24 = 14.0 &minus; 7.3 = 6.7; H2 FY25 = 19.5 &minus; 8.6 = 10.9. Revenue: H2 FY23 = 689.7 &minus; 350.2 = 339.5; H2 FY24 = 668.8 &minus; 333.6 = 335.2; H2 FY25 = 672.8 &minus; 336.4 = 336.4. The Jun-26 leverage figure is an unaudited trading-update estimate; the audited FY26 preliminary governs when issued. Derived sub-period turns are watch flags until a printed sub-period corroborates.</p>
+<p><b>Second-route cross-verification.</b> Rank 2 ties both ways: 13 at Jun-24 plus 12 wins in FY25 equals 25 at Jun-25; 20 at Dec-24 plus 5 equals 25. No second route exists for the &pound;m flows &mdash; no quarterly figures are published.</p>
+<p><b>Rank 3 exception.</b> The H2 columns carry the June period-end ratio as printed in each full-year document. These are not derived and carry no &dagger;, with the single exception of Jun-26, which is a trading-update estimate.</p>
+<p><b>Restatement (&#697;).</b> PIC and ABS comparatives were restated at H1 FY24 when product-development costs were reallocated out of research and development into the divisions. All pre-restatement segment figures in this grid use the restated values: ABS H1 FY23 10.1, ABS H2 FY23 8.6, ABS FY23 18.7. No cross-basis arithmetic is performed without this flag.</p>
+<p><b>Rule applied.</b> Ranks 2&ndash;5 render under the default H1/H2 spine with the full-year figure on the muted aggregate row. <b>Rank 1 renders under the reduced-grain rule, operator-confirmed:</b> the company never prints an H2 royalty growth rate, and an H2 rate cannot be derived from a pair of rates, so the metric renders at H1/FY grain &mdash; both cells scored year-on-year, no separate aggregate row. Its second column in each year-band is the full year, not a half; the period strip is where that distinction is visible. Mixed grains within one grid are correct, not an inconsistency. Aggregate rows are transcribed from company-printed totals, never summed from the cells above, never scored.</p>
+<p><b>Buy/Sell column.</b> Marked &#11088;. Figures in the trailing twelve months are verified directly against the source announcement.</p>
+</div></details>
+
 </div></details>
 </div>
 <div class="sec-wrap"><h2 class="sec">&sect;2.0 &middot; Buy/Sell Current-State Read</h2><p class="sec-sub">The newest RNS (FY26 Trading Update, 14-Jul-26) scored four ways. Bridge and state bar below; workings in the drawer.</p>
-<details class="d"><summary>The four checks &mdash; workings behind the read</summary><div class="dbody">
-<p><b>1. Sequential (H2 FY26 vs H1 FY26):</b> FY26 PBT &asymp;&pound;98m incl BCA vs H1 &pound;55.7m incl BCA (Feb-26 actual, governing the Jan-26 &pound;55.6m guide) &rArr; implied H2 &asymp;&pound;42.3m. Ex-BCA: FY26 &asymp;&pound;92.4m, H1 &pound;50.1m &rArr; H2 &asymp;&pound;42.3m. H2 seasonally lower than H1 is GNS's normal H1-weighting &mdash; not a fresh decel; H2 profit growth described as "double-digit" (ABS) and "strong" (PIC).</p>
-<p><b>2. Same-type-vs-last-year (FY26 TU vs FY25 TU):</b> FY25 TU guided "at least &pound;72m" incl milestone; FY26 TU &pound;98m incl milestone &mdash; +36% on the same disclosure type. Clear acceleration.</p>
-<p><b>3. Every derivable sub-period:</b> H2 FY26 (derived&dagger;, narrative-only) shows PIC and ABS both growing, with one named bounded headwind each &mdash; North America PIC customer disease; ABS softer demand / adverse dairy-price mix &mdash; both explicitly offset (Asia+LatAm; VAP). Context-discounted.</p>
-<p><b>4. Guidance-vs-prior-guide:</b> Nov-25 "modestly ahead of midpoint" (&pound;80.5m mid) &rarr; Jan-26 "moderately above top-end" (ex-BCA, &pound;83.6m mid) &rarr; Feb-26 "in-line" (basis change: PIC China deconsolidation, discounted) &rarr; Jul-26 "moderately ahead of consensus" &pound;95.5m mid, landing &pound;98m. Fourth consecutive raise/beat net of deconsolidation optics.</p>
-</div></details>
-
 <div class="s20row">
   <div class="bridge">
     <div class="darkbar hd"><span class="emoji">&#127866;</span><span class="t">IDIOT'S GUIDE TO THE PROFIT BRIDGE &mdash; why profit went up (&pound;74.3m &rarr; &pound;98m)</span></div>
@@ -489,23 +528,67 @@ td.h2cell{background:#faf9f5}
   </div>
   <div class="statebar">
     <div class="darkbar hd"><span class="emoji">&#127777;</span><span class="t">CURRENT STATE &mdash; the read right now</span></div>
-    <div class="inner"><div>&#128994; <b>TURNING UP.</b> The FY26 TU delivers the fourth straight guide raise/beat in nine months, PIC and ABS both growing in H2, and leverage collapsing to ~0.4x on China-JV proceeds &mdash; a genuinely de-risked balance sheet. One named, bounded headwind in each segment (North America pig disease; soft dairy demand/mix) is explicitly offset, not fresh deterioration. &#9888;&#65039; Watch: the PIC China new-royalty-customer count &mdash; the ticker's own long-lead KPI &mdash; dropped out of the H1 FY26 results after three straight results docs carried it.</div></div>
+    <div class="inner"><div>
+<p class="barlead">&#128994; <b>TURNING UP.</b></p>
+<ul class="barbul">
+<li>FY26 PBT &asymp;&pound;98m against a &pound;95.5m consensus midpoint &mdash; moderately ahead.</li>
+<li>Fourth straight guide raise in nine months; the Jul-26 TU caps the run.</li>
+<li>PIC and ABS both grew in H2; ABS delivered double-digit profit growth on VAP.</li>
+<li>Numbers &amp; guide fired green from Jan-25; language fired Nov-25 and Jan-26.</li>
+<li>Leverage 1.4x to ~0.4x on China JV proceeds &mdash; noted outside the 2-of-3 count.</li>
+<li>No parent-vs-sub-period divergence; lighter H2 is the normal H1 weighting.</li>
+<li>&#9888;&#65039; PIC China royalty-customer count withheld at Feb-26 after three straight prints.</li>
+<li>&#9888;&#65039; North America PIC customer disease and softer dairy demand named, unresolved.</li>
+<li>&#9888;&#65039; The &pound;5.6m BCA milestone is one-off &mdash; FY27 needs organic growth to stand still.</li>
+</ul>
+</div></div>
   </div>
 </div>
 
-<details class="d"><summary>&sect;2.0 notes</summary><div class="dbody">
+<details class="d2top"><summary>&sect;2.0 workings</summary><div class="d2body"><details class="d2sub"><summary>The four checks &mdash; workings behind the read</summary><div class="dbody">
+<p><b>1. Sequential (H2 FY26 vs H1 FY26):</b> FY26 PBT &asymp;&pound;98m incl BCA vs H1 &pound;55.7m incl BCA (Feb-26 actual, governing the Jan-26 &pound;55.6m guide) &rArr; implied H2 &asymp;&pound;42.3m. Ex-BCA: FY26 &asymp;&pound;92.4m, H1 &pound;50.1m &rArr; H2 &asymp;&pound;42.3m. H2 seasonally lower than H1 is GNS's normal H1-weighting &mdash; not a fresh decel; H2 profit growth described as "double-digit" (ABS) and "strong" (PIC).</p>
+<p><b>2. Same-type-vs-last-year (FY26 TU vs FY25 TU):</b> FY25 TU guided "at least &pound;72m" incl milestone; FY26 TU &pound;98m incl milestone &mdash; +36% on the same disclosure type. Clear acceleration.</p>
+<p><b>3. Every derivable sub-period:</b> H2 FY26 (derived&dagger;, narrative-only) shows PIC and ABS both growing, with one named bounded headwind each &mdash; North America PIC customer disease; ABS softer demand / adverse dairy-price mix &mdash; both explicitly offset (Asia+LatAm; VAP). Context-discounted.</p>
+<p><b>4. Guidance-vs-prior-guide:</b> Nov-25 "modestly ahead of midpoint" (&pound;80.5m mid) &rarr; Jan-26 "moderately above top-end" (ex-BCA, &pound;83.6m mid) &rarr; Feb-26 "in-line" (basis change: PIC China deconsolidation, discounted) &rarr; Jul-26 "moderately ahead of consensus" &pound;95.5m mid, landing &pound;98m. Fourth consecutive raise/beat net of deconsolidation optics.</p>
+</div></details><details class="d2sub"><summary>&sect;2.0 notes</summary><div class="dbody">
 <p><b>One-off discipline:</b> the &pound;5.6m BCA milestone is disclosed and bounded; the underlying guide-raise sequence and organic PIC/ABS growth stand independent of it (ex-milestone FY26 &asymp;&pound;92.4m still ahead of the &pound;95.5m-incl consensus base once the milestone is added back).</p>
 <p><b>Basis watch:</b> from FY26 H2, PIC China is a 49% equity stake, not consolidated revenue &mdash; the Sep-26 prelim must give the pro-forma FY27 base so the "significant growth" language can be judged on a like-for-like perimeter.</p>
 </div></details>
+<details class="d2sub"><summary>Balance-sheet sweep</summary><div class="d2body">
+<p><b>Result: clean.</b> No Tier-1 condition. Net debt falling for four consecutive prints to ~&pound;0.4x&dagger; adjusted EBITDA at Jun-26 on China-JV proceeds (~&pound;111m gross cash) &mdash; a green-shoot mirror, recorded here and on the card strip, outside the 2-of-3 count.</p>
+<p><b>Wedge check:</b> exceptional items narrowing &mdash; FY25 &pound;11.4m net expense against FY24 &pound;24.6m; the adjusted-vs-statutory wedge is closing, renders nothing.</p>
+<p><b>Solvency grep:</b> going-concern and covenant language boilerplate throughout the trailing window; no escalation. Dividend progressive and re-based to a stated 30&ndash;40% payout policy at H1 FY26 &mdash; a policy clarification, not a cut.</p>
+<p><b>Tier-2:</b> none open. Russian entities carry a disclosed deconsolidation risk of up to &pound;20.1m (contingency note, not a fired condition).</p>
+</div></details>
+<details class="d2sub"><summary>Trigger detail &amp; audit record</summary><div class="d2body">
+<p><b>Condition 1 &mdash; Numbers &amp; guide: FIRED (green-shoot), Jan-25 onward.</b> G-column RAISE at Jul-26 caps a four-raise run (Jan-25, Nov-25, Jan-26, Jul-26); Rank 4 ABS profit shows three consecutive &#128994;&#8599; hard prints. Full weight &mdash; carries a LEAD metric and a G event.</p>
+<p><b>Condition 2 &mdash; Language: FIRED (green-shoot), Nov-25 &middot; Jan-26.</b> Lexicon rose two consecutive prints from &#9898; (Sep-25) to &#128994;&#128994; (Nov-25) to &#128994;&#128994;&#128994; (Jan-26). The Feb-26 &#9898; is a disclosed basis change (PIC China deconsolidation), annotated, not a break.</p>
+<p><b>Condition 3 &mdash; Disclosure: NOT COUNTED (amber).</b> Rank 2 withheld once at Feb-26 against a three-print cadence; single withhold beside accelerating royalty revenue = watch flag per the withhold-rigour rule. Points against the direction call and is carried on the card.</p>
+<p><b>Count: 2 of 3, alert stands.</b> Balance-sheet mirror (2.0x&rarr;~0.4x) sits outside the count.</p>
+<p><b>Audit record.</b> First build audited twice. 2nd audit (Aug-26): 11 defects corrected &mdash; materially, the trigger count restated 3-of-3&rarr;2-of-3 (leverage mirror moved outside the count), Rank 1 currency basis +6%&rarr;+7% cc, &sect;2.0 guide-vs-actual substitution, one banned bridge word. A subsequent targeted rank check corrected FY25 Group revenue &pound;687.1m&rarr;&pound;672.8m (the 687.4 in the source is non-current assets) with one arrow change (H2 FY25 revenue &#128994;&rarr;&#128993;). Direction call unchanged throughout.</p>
+</div></details>
+</div></details>
 </div>
-<div class="sec-wrap"><h2 class="sec">&sect;3 &middot; Text + G &mdash; Language Track</h2><p class="sec-sub">Every print in the window. G = guidance trigger fired vs the company's own prior guide. "Guide met?" resolves only at a results row (FY R, or H1 R for half-year guides). Changed-score rows shaded. Click a Doc cell to highlight all rows of that period-type.</p><table class="textg" id="text3"><thead><tr><th style="width:74px;">Date</th><th style="width:78px;">Doc</th><th style="width:70px;">G</th><th style="width:150px;">Guide met?</th><th>Verbatim forward-guidance phrase</th><th style="width:70px;">Score</th></tr></thead><tbody><tr data-rowtype="R"><td>Sep-22</td><td class="doccell">FY22<br>R</td><td class="g">flat</td><td>&mdash; (resolves FY22, pre-window base)</td><td>“medium-term growth expectations remain unchanged”</td><td class="score">&#9898;</td></tr><tr data-rowtype="AGM"><td>Nov-22</td><td class="doccell">FY23<br>AGM</td><td class="g">flat</td><td>&mdash;</td><td>“in line with the Board&rsquo;s expectations&hellip; performance weighted to the second half”</td><td class="score">&#128308;</td></tr><tr data-rowtype="H1R"><td>Feb-23</td><td class="doccell">FY23<br>H1 R</td><td class="g">flat</td><td>&mdash;</td><td>“Board&rsquo;s expectations for the 2023 fiscal year remain unchanged”</td><td class="score">&#9898;</td></tr><tr class="changed" data-rowtype="TU"><td>May-23</td><td class="doccell">FY23<br>TU</td><td class="g">&#128308; CUT</td><td>&mdash;</td><td>“profit before tax will now be lower than its previous expectations for the full year”</td><td class="score">&#128308;&#128308;&#128308;</td></tr><tr class="changed" data-rowtype="R"><td>Sep-23</td><td class="doccell">FY23<br>R</td><td class="g">flat</td><td><span class='trail'>Nov-22 in-line (n/q): met (qual)<br>May-23 cut (n/q): met revised</span></td><td>“modest growth in adjusted profit before tax in actual currency for fiscal year 2024”</td><td class="score">&#9898;</td></tr><tr class="changed" data-rowtype="AGM"><td>Nov-23</td><td class="doccell">FY24<br>AGM</td><td class="g">flat</td><td>&mdash;</td><td>“in-line with market expectations&hellip; phasing expected to be second-half weighted”</td><td class="score">&#128308;</td></tr><tr class="changed" data-rowtype="TU"><td>Feb-24</td><td class="doccell">FY24<br>TU</td><td class="g">flat</td><td>&mdash;</td><td>“fiscal year 2024 adjusted profit before tax to be not less than &pound;58m”</td><td class="score">&#128994;&#128994;</td></tr><tr class="changed" data-rowtype="H1R"><td>Feb-24</td><td class="doccell">FY24<br>H1 R</td><td class="g">flat</td><td>&mdash;</td><td>“not less than &pound;58m&hellip; committed to strong profit growth in the medium-term”</td><td class="score">&#9898;</td></tr><tr class="changed" data-rowtype="TU"><td>Jul-24</td><td class="doccell">FY24<br>TU</td><td class="g">flat</td><td>&mdash;</td><td>“ABS volumes and adjusted operating profit in FY25 expected to be lower than previously assumed”</td><td class="score">&#128308;&#128308;</td></tr><tr class="changed" data-rowtype="R"><td>Sep-24</td><td class="doccell">FY24<br>R</td><td class="g">flat</td><td><span class='trail'>Feb-24 &pound;58m floor &rarr; actual &pound;59.8m: <span class='beat'>+3.1% (met)</span><br>Jul-24 &pound;58&ndash;61m &rarr; &pound;59.8m: <span class='beat'>in-range (met)</span></span></td><td>“significant growth in Group adjusted profit before tax in constant currency, in-line with market expectations”</td><td class="score">&#9898;</td></tr><tr data-rowtype="AGM"><td>Nov-24</td><td class="doccell">FY25<br>AGM</td><td class="g">flat</td><td>&mdash;</td><td>“in-line with market expectations for the 2025 financial year. This includes an expected currency headwind of &pound;8m to &pound;9m in the 2025 financial year, as previously indicated”</td><td class="score">&#9898;</td></tr><tr class="changed" data-rowtype="TU"><td>Jan-25</td><td class="doccell">FY25<br>H1 TU</td><td class="g">&#128994; RAISE</td><td>&mdash;</td><td>“ahead of expectations&hellip; top-end of the range of market expectations”</td><td class="score">&#128994;&#128994;</td></tr><tr class="changed" data-rowtype="H1R"><td>Feb-25</td><td class="doccell">FY25<br>H1 R</td><td class="g">flat</td><td><span class='trail'>Jan-25 H1 &ge;&pound;35m &rarr; &pound;35.4m: <span class='beat'>+1% (met)</span></span></td><td>“Outlook in-line with market expectations”</td><td class="score">&#9898;</td></tr><tr class="changed" data-rowtype="TU"><td>Jul-25</td><td class="doccell">FY25<br>TU</td><td class="g">flat</td><td>&mdash;</td><td>“at least &pound;72m&hellip; at least &pound;68m [ex-milestone], in-line with expectations”</td><td class="score">&#128994;</td></tr><tr class="changed" data-rowtype="R"><td>Sep-25</td><td class="doccell">FY25<br>R</td><td class="g">flat</td><td><span class='trail'>Jul-25 &pound;68m floor (ex) &rarr; &pound;70.6m: <span class='beat'>+3.8% (met)</span><br>Jul-25 &pound;72m floor (incl) &rarr; &pound;74.3m: <span class='beat'>+3.2% (met)</span></span></td><td>“significant growth&hellip; in line with current market expectations”</td><td class="score">&#9898;</td></tr><tr class="changed" data-rowtype="AGM"><td>Nov-25</td><td class="doccell">FY26<br>AGM</td><td class="g">&#128994; RAISE</td><td>&mdash;</td><td>“modestly ahead of the midpoint of current market expectations”</td><td class="score">&#128994;&#128994;</td></tr><tr class="changed" data-rowtype="TU"><td>Jan-26</td><td class="doccell">FY26<br>H1 TU</td><td class="g">&#128994; RAISE</td><td>&mdash;</td><td>“moderately above the top-end of current market expectations”</td><td class="score">&#128994;&#128994;&#128994;</td></tr><tr class="changed" data-rowtype="H1R"><td>Feb-26</td><td class="doccell">FY26<br>H1 R</td><td class="g">flat</td><td>&mdash; (guide live)</td><td>“Incorporating PIC China deconsolidation&hellip; in-line with current market expectations”</td><td class="score">&#9898;</td></tr><tr class="changed" data-rowtype="TU"><td>Jul-26</td><td class="doccell">FY26<br>TU</td><td class="g">&#128994; RAISE</td><td>&mdash; (resolves Sep-26)</td><td>“moderately ahead of market consensus&hellip; approximately &pound;98m”</td><td class="score">&#128994;&#128994;</td></tr></tbody></table><p class="legend">G column is the sole fired-guidance record. Scan: 1 CUT (May-23, external China shock), 4 RAISEs (Jan-25, Nov-25, Jan-26, Jul-26). Guide-vs-outturn: consistent small beats (+1% to +9%) against management&rsquo;s own successive floors &mdash; a reliable, mildly conservative guider. The single Feb-26 "in-line" flat is explained by the disclosed deconsolidation, not trading softness.</p></div>
-<div class="sec-wrap" id="drift"><h2 class="sec">&sect;4 &middot; Drift &mdash; what they&rsquo;ve gone quiet about</h2><p class="sec-sub">Which numbers get shared, hedged, or dropped, document by document &mdash; going quiet is the signal (the disclosure matrix; Drift = trigger condition 3). 41 distinct RNS events (42 files &minus; 1 superseded original interim). Click a column header to highlight every column of that period-type. &#9989; quantified &middot; &#128993; qualitative-only &middot; &#10060; withheld vs cadence &middot; &mdash; structurally outside that doc-type / noise &middot; &#8709; expected-not-issued.</p><div style="overflow-x:auto;"><table class="gridtable" id="drifttable" style="table-layout:auto; font-size:9.5px; min-width:1600px;"><tr class="perrow"><th class="lbl" style="width:150px; position:sticky; left:0; background:#f6f5f0; z-index:2;">Metric \ RNS</th><th data-dtype="noise" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>02-Aug-22</div><div style="color:#888;">Broker</div></th><th data-dtype="FYR" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>08-Sep-22</div><div style="color:#888;">FYR</div></th><th data-dtype="noise" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>14-Oct-22</div><div style="color:#888;">AR</div></th><th data-dtype="noise" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>03-Nov-22</div><div style="color:#888;">Visit</div></th><th data-dtype="AGM" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>23-Nov-22</div><div style="color:#888;">AGM</div></th><th data-dtype="noise" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>23-Nov-22</div><div style="color:#888;">AGMres</div></th><th data-dtype="noise" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>23-Feb-23</div><div style="color:#888;">CEOret</div></th><th data-dtype="H1R" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>23-Feb-23</div><div style="color:#888;">H1R</div></th><th data-dtype="noise" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>03-Apr-23</div><div style="color:#888;">CEOdes</div></th><th data-dtype="noise" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>02-May-23</div><div style="color:#888;">ShAwd</div></th><th data-dtype="TU" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>16-May-23</div><div style="color:#888;">TU</div></th><th data-dtype="noise" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>05-Jun-23</div><div style="color:#888;">List</div></th><th data-dtype="FYR" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>07-Sep-23</div><div style="color:#888;">FYR</div></th><th data-dtype="noise" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>05-Oct-23</div><div style="color:#888;">PRRSco</div></th><th data-dtype="noise" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>13-Oct-23</div><div style="color:#888;">AR</div></th><th data-dtype="AGM" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>22-Nov-23</div><div style="color:#888;">AGM</div></th><th data-dtype="noise" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>12-Dec-23</div><div style="color:#888;">NED</div></th><th data-dtype="TU" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>15-Feb-24</div><div style="color:#888;">TU</div></th><th data-dtype="H1R" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>22-Feb-24</div><div style="color:#888;">H1R</div></th><th data-dtype="TU" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>17-Jul-24</div><div style="color:#888;">TU</div></th><th data-dtype="FYR" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>05-Sep-24</div><div style="color:#888;">FYR</div></th><th data-dtype="noise" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>14-Oct-24</div><div style="color:#888;">AR</div></th><th data-dtype="noise" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>22-Oct-24</div><div style="color:#888;">CFOret</div></th><th data-dtype="AGM" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>20-Nov-24</div><div style="color:#888;">AGM</div></th><th data-dtype="H1TU" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>15-Jan-25</div><div style="color:#888;">H1TU</div></th><th data-dtype="noise" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>26-Feb-25</div><div style="color:#888;">NEDret</div></th><th data-dtype="H1R" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>27-Feb-25</div><div style="color:#888;">H1R</div></th><th data-dtype="noise" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>13-Mar-25</div><div style="color:#888;">CFOdes</div></th><th data-dtype="noise" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>30-Apr-25</div><div style="color:#888;">FDA</div></th><th data-dtype="noise" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>09-May-25</div><div style="color:#888;">Advis</div></th><th data-dtype="TU" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>15-Jul-25</div><div style="color:#888;">TU</div></th><th data-dtype="noise" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>04-Sep-25</div><div style="color:#888;">ChinaJV</div></th><th data-dtype="FYR" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>04-Sep-25</div><div style="color:#888;">FYR</div></th><th data-dtype="noise" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>08-Sep-25</div><div style="color:#888;">List</div></th><th data-dtype="AGM" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>19-Nov-25</div><div style="color:#888;">AGM</div></th><th data-dtype="noise" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>19-Nov-25</div><div style="color:#888;">NED</div></th><th data-dtype="H1TU" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>16-Jan-26</div><div style="color:#888;">H1TU</div></th><th data-dtype="noise" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>23-Jan-26</div><div style="color:#888;">CanPRP</div></th><th data-dtype="noise" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>02-Feb-26</div><div style="color:#888;">JVdone</div></th><th data-dtype="H1R" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>26-Feb-26</div><div style="color:#888;">H1R</div></th><th data-dtype="TU" class="dhdr" style="white-space:nowrap; padding:3px 2px; font-size:8.5px;"><div>14-Jul-26</div><div style="color:#888;">TU</div></th></tr><tr><td class="lbl" style="position:sticky; left:0; background:#faf9f5; z-index:1; font-size:10px;">PIC royalty revenue</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc ok">&#9989;</td><td class="dc q">&#128993;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc q">&#128993;</td></tr><tr><td class="lbl" style="position:sticky; left:0; background:#faf9f5; z-index:1; font-size:10px;">PIC China new-cust count</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc q">&#128993;</td><td class="dc q">&#128993;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc wh">&#10060;</td><td class="dc dash">&mdash;</td></tr><tr><td class="lbl" style="position:sticky; left:0; background:#faf9f5; z-index:1; font-size:10px;">Net debt / EBITDA</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td></tr><tr><td class="lbl" style="position:sticky; left:0; background:#faf9f5; z-index:1; font-size:10px;">ABS adj operating profit</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc ok">&#9989;</td><td class="dc q">&#128993;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc q">&#128993;</td></tr><tr><td class="lbl" style="position:sticky; left:0; background:#faf9f5; z-index:1; font-size:10px;">Group revenue</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td></tr><tr><td class="lbl" style="position:sticky; left:0; background:#faf9f5; z-index:1; font-size:10px;">China pig price (RMB/kg)</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc q">&#128993;</td><td class="dc q">&#128993;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td></tr><tr><td class="lbl" style="position:sticky; left:0; background:#faf9f5; z-index:1; font-size:10px;">Dividend per share</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td></tr><tr><td class="lbl" style="position:sticky; left:0; background:#faf9f5; z-index:1; font-size:10px;">PBT guide / floor</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td></tr></table></div><style>
+<div class="sec-wrap"><h2 class="sec">&sect;3 &middot; Text + G &mdash; Language Track</h2><p class="sec-sub">Every print in the window. G = guidance trigger fired vs the company's own prior guide. Context records the anchor, caveats and what the outturn later showed (outturns resolve at results rows). Changed-score rows shaded. Click a Doc cell to highlight all rows of that period-type.</p><table class="textg" id="text3"><thead><tr><th style="width:74px;">Date</th><th style="width:78px;">Doc</th><th style="width:70px;">G</th><th style="width:150px;">Context</th><th>Verbatim forward-guidance phrase</th><th style="width:70px;">Score</th></tr></thead><tbody><tr class="exp"><td colspan="6" id="t3exp" onclick="t3tog()">&#9656; Show 11 earlier prints &mdash; Sep-22 to Nov-24</td></tr><tr class="early" data-rowtype="R"><td>Sep-22</td><td class="doccell">FY22<br>R</td><td class="g">flat</td><td>&mdash; (resolves FY22, pre-window base)</td><td>“medium-term growth expectations remain unchanged”</td><td class="score">&#9898;</td></tr><tr class="early" data-rowtype="AGM"><td>Nov-22</td><td class="doccell">FY23<br>AGM</td><td class="g">flat</td><td>&mdash;</td><td>“in line with the Board&rsquo;s expectations&hellip; performance weighted to the second half”</td><td class="score">&#128308;</td></tr><tr class="early" data-rowtype="H1R"><td>Feb-23</td><td class="doccell">FY23<br>H1 R</td><td class="g">flat</td><td>&mdash;</td><td>“Board&rsquo;s expectations for the 2023 fiscal year remain unchanged”</td><td class="score">&#9898;</td></tr><tr class="early changed" data-rowtype="TU"><td>May-23</td><td class="doccell">FY23<br>TU</td><td class="g">&#128308; CUT</td><td>&mdash;</td><td>“profit before tax will now be lower than its previous expectations for the full year”</td><td class="score">&#128308;&#128308;&#128308;</td></tr><tr class="early changed" data-rowtype="R"><td>Sep-23</td><td class="doccell">FY23<br>R</td><td class="g">flat</td><td><span class='trail'>Nov-22 in-line (n/q): met (qual)<br>May-23 cut (n/q): met revised</span></td><td>“modest growth in adjusted profit before tax in actual currency for fiscal year 2024”</td><td class="score">&#9898;</td></tr><tr class="early changed" data-rowtype="AGM"><td>Nov-23</td><td class="doccell">FY24<br>AGM</td><td class="g">flat</td><td>&mdash;</td><td>“in-line with market expectations&hellip; phasing expected to be second-half weighted”</td><td class="score">&#128308;</td></tr><tr class="early changed" data-rowtype="TU"><td>Feb-24</td><td class="doccell">FY24<br>TU</td><td class="g">flat</td><td>&mdash;</td><td>“fiscal year 2024 adjusted profit before tax to be not less than &pound;58m”</td><td class="score">&#128994;&#128994;</td></tr><tr class="early changed" data-rowtype="H1R"><td>Feb-24</td><td class="doccell">FY24<br>H1 R</td><td class="g">flat</td><td>&mdash;</td><td>“not less than &pound;58m&hellip; committed to strong profit growth in the medium-term”</td><td class="score">&#9898;</td></tr><tr class="early changed" data-rowtype="TU"><td>Jul-24</td><td class="doccell">FY24<br>TU</td><td class="g">flat</td><td>&mdash;</td><td>“ABS volumes and adjusted operating profit in FY25 expected to be lower than previously assumed”</td><td class="score">&#128308;&#128308;</td></tr><tr class="early changed" data-rowtype="R"><td>Sep-24</td><td class="doccell">FY24<br>R</td><td class="g">flat</td><td><span class='trail'>Feb-24 &pound;58m floor &rarr; actual &pound;59.8m: <span class='beat'>+3.1% (met)</span><br>Jul-24 &pound;58&ndash;61m &rarr; &pound;59.8m: <span class='beat'>in-range (met)</span></span></td><td>“significant growth in Group adjusted profit before tax in constant currency, in-line with market expectations”</td><td class="score">&#9898;</td></tr><tr class="early" data-rowtype="AGM"><td>Nov-24</td><td class="doccell">FY25<br>AGM</td><td class="g">flat</td><td>&mdash;</td><td>“in-line with market expectations for the 2025 financial year. This includes an expected currency headwind of &pound;8m to &pound;9m in the 2025 financial year, as previously indicated”</td><td class="score">&#9898;</td></tr><tr class="changed" data-rowtype="TU"><td>Jan-25</td><td class="doccell">FY25<br>H1 TU</td><td class="g">&#128994; RAISE</td><td>&mdash;</td><td>“ahead of expectations&hellip; top-end of the range of market expectations”</td><td class="score">&#128994;&#128994;</td></tr><tr class="changed" data-rowtype="H1R"><td>Feb-25</td><td class="doccell">FY25<br>H1 R</td><td class="g">flat</td><td><span class='trail'>Jan-25 H1 &ge;&pound;35m &rarr; &pound;35.4m: <span class='beat'>+1% (met)</span></span></td><td>“Outlook in-line with market expectations”</td><td class="score">&#9898;</td></tr><tr class="changed" data-rowtype="TU"><td>Jul-25</td><td class="doccell">FY25<br>TU</td><td class="g">flat</td><td>&mdash;</td><td>“at least &pound;72m&hellip; at least &pound;68m [ex-milestone], in-line with expectations”</td><td class="score">&#128994;</td></tr><tr class="changed" data-rowtype="R"><td>Sep-25</td><td class="doccell">FY25<br>R</td><td class="g">flat</td><td><span class='trail'>Jul-25 &pound;68m floor (ex) &rarr; &pound;70.6m: <span class='beat'>+3.8% (met)</span><br>Jul-25 &pound;72m floor (incl) &rarr; &pound;74.3m: <span class='beat'>+3.2% (met)</span></span></td><td>“significant growth&hellip; in line with current market expectations”</td><td class="score">&#9898;</td></tr><tr class="changed" data-rowtype="AGM"><td>Nov-25</td><td class="doccell">FY26<br>AGM</td><td class="g">&#128994; RAISE</td><td>&mdash;</td><td>“modestly ahead of the midpoint of current market expectations”</td><td class="score">&#128994;&#128994;</td></tr><tr class="changed" data-rowtype="TU"><td>Jan-26</td><td class="doccell">FY26<br>H1 TU</td><td class="g">&#128994; RAISE</td><td>&mdash;</td><td>“moderately above the top-end of current market expectations”</td><td class="score">&#128994;&#128994;&#128994;</td></tr><tr class="changed" data-rowtype="H1R"><td>Feb-26</td><td class="doccell">FY26<br>H1 R</td><td class="g">flat</td><td>&mdash; (guide live)</td><td>“Incorporating PIC China deconsolidation&hellip; in-line with current market expectations”</td><td class="score">&#9898;</td></tr><tr class="changed" data-rowtype="TU"><td>Jul-26</td><td class="doccell">FY26<br>TU</td><td class="g">&#128994; RAISE</td><td>&mdash; (resolves Sep-26)</td><td>“moderately ahead of market consensus&hellip; approximately &pound;98m”</td><td class="score">&#128994;&#128994;</td></tr></tbody></table>
+<details class="d2top"><summary>&sect;3 workings</summary><div class="d2body"><details class="d2sub"><summary>Notes &mdash; &sect;3</summary><div class="d2body"><p class="legend">G column is the sole fired-guidance record. Scan: 1 CUT (May-23, external China shock), 4 RAISEs (Jan-25, Nov-25, Jan-26, Jul-26). Guide-vs-outturn: consistent small beats (+1% to +9%) against management&rsquo;s own successive floors &mdash; a reliable, mildly conservative guider. The single Feb-26 "in-line" flat is explained by the disclosed deconsolidation, not trading softness.</p></div></details>
+<details class="d2sub"><summary>Guidance passages &mdash; trailing 12 months, verbatim</summary><div class="d2body">
+<p><b>15-Jul-25 &middot; FY25 TU &middot; outlook:</b> &ldquo;Excluding the PRP milestone receipt, FY25 adjusted PBT to be at least &pound;68m in actual currency, in-line with expectations &hellip; Including the PRP milestone receipt, FY25 adjusted PBT to be at least &pound;72m in actual currency.&rdquo; Floor language on both bases; anchor = market expectations.</p>
+<p><b>04-Sep-25 &middot; FY25 R &middot; outlook:</b> &ldquo;significant growth in Group adjusted profit before tax &hellip; in line with current market expectations&rdquo;; VAP Phase 3 &ldquo;annualised adjusted operating profit benefit of approximately &pound;9m, with an estimated &pound;6m expected to be realised in FY26.&rdquo; Anchor present; FY26 guide seeded.</p>
+<p><b>19-Nov-25 &middot; FY26 AGM &middot; outlook:</b> &ldquo;Genus has had a strong start to the year and the Board expects Group FY26 adjusted profit before tax to be modestly ahead of the midpoint of current market expectations.&rdquo; Midpoint anchor stated; every region growing royalty revenue.</p>
+<p><b>16-Jan-26 &middot; FY26 H1 TU &middot; outlook:</b> &ldquo;The Board now expects Group FY26 adjusted profit before tax (excluding the BCA milestone payment) to be moderately above the top-end of current market expectations&rdquo;; H1 &ldquo;approximately &pound;55.6m&rdquo; incl BCA. Top-end anchor; ex-milestone basis made explicit.</p>
+<p><b>26-Feb-26 &middot; FY26 H1 R &middot; outlook:</b> &ldquo;Incorporating PIC China deconsolidation, outlook in-line with market expectations &hellip; Continued good momentum across the business; broadly neutral currency impact expected in FY26 H2.&rdquo; Flat on a changed perimeter &mdash; the &ldquo;in-line&rdquo; reflects re-based consensus, not softening.</p>
+<p><b>14-Jul-26 &middot; FY26 TU &middot; outlook:</b> &ldquo;the Group now anticipates FY26 results to be moderately ahead of market consensus with adjusted profit before tax of approximately &pound;98m in actual currency, including the final &pound;5.6m milestone payment.&rdquo; Consensus anchor with the one-off named inside the number.</p>
+<p><i>Entries roll forward as documents age out of the trailing window; aged-out entries are deleted, not summarised.</i></p>
+</div></details></div></details>
+</div>
+<div class="sec-wrap" id="drift"><h2 class="sec">&sect;4 &middot; Drift &mdash; what they&rsquo;ve gone quiet about</h2><p class="sec-sub">Which numbers get shared, hedged, or dropped, document by document &mdash; going quiet is the signal. Columns are the 19 qualifying documents only: results and trading updates, AGM statements included where they carry trading content. Corporate and regulatory announcements are noise and never occupy a column. Click a header to highlight every column of that document type.</p><div style="overflow-x:auto;"><table class="gridtable" id="drifttable" style="table-layout:auto; font-size:10px; min-width:1000px;"><tr class="perrow"><th class="lbl" style="width:180px; position:sticky; left:0; background:#f6f5f0; z-index:2;">Metric \ RNS</th><th data-dtype="FY R" class="dhdr" style="white-space:nowrap; padding:4px 3px; font-size:9px;">08-Sep-22<br><span style="font-size:8px;color:#5f5c54">FY R</span></th><th data-dtype="AGM" class="dhdr" style="white-space:nowrap; padding:4px 3px; font-size:9px;">23-Nov-22<br><span style="font-size:8px;color:#5f5c54">AGM</span></th><th data-dtype="H1 R" class="dhdr" style="white-space:nowrap; padding:4px 3px; font-size:9px;">23-Feb-23<br><span style="font-size:8px;color:#5f5c54">H1 R</span></th><th data-dtype="YE-TU" class="dhdr" style="white-space:nowrap; padding:4px 3px; font-size:9px;">16-May-23<br><span style="font-size:8px;color:#5f5c54">YE-TU</span></th><th data-dtype="FY R" class="dhdr" style="white-space:nowrap; padding:4px 3px; font-size:9px;">07-Sep-23<br><span style="font-size:8px;color:#5f5c54">FY R</span></th><th data-dtype="AGM" class="dhdr" style="white-space:nowrap; padding:4px 3px; font-size:9px;">22-Nov-23<br><span style="font-size:8px;color:#5f5c54">AGM</span></th><th data-dtype="H1 TU" class="dhdr" style="white-space:nowrap; padding:4px 3px; font-size:9px;">15-Feb-24<br><span style="font-size:8px;color:#5f5c54">H1 TU</span></th><th data-dtype="H1 R" class="dhdr" style="white-space:nowrap; padding:4px 3px; font-size:9px;">22-Feb-24<br><span style="font-size:8px;color:#5f5c54">H1 R</span></th><th data-dtype="YE-TU" class="dhdr" style="white-space:nowrap; padding:4px 3px; font-size:9px;">17-Jul-24<br><span style="font-size:8px;color:#5f5c54">YE-TU</span></th><th data-dtype="FY R" class="dhdr" style="white-space:nowrap; padding:4px 3px; font-size:9px;">05-Sep-24<br><span style="font-size:8px;color:#5f5c54">FY R</span></th><th data-dtype="AGM" class="dhdr" style="white-space:nowrap; padding:4px 3px; font-size:9px;">20-Nov-24<br><span style="font-size:8px;color:#5f5c54">AGM</span></th><th data-dtype="H1 TU" class="dhdr" style="white-space:nowrap; padding:4px 3px; font-size:9px;">15-Jan-25<br><span style="font-size:8px;color:#5f5c54">H1 TU</span></th><th data-dtype="H1 R" class="dhdr" style="white-space:nowrap; padding:4px 3px; font-size:9px;">27-Feb-25<br><span style="font-size:8px;color:#5f5c54">H1 R</span></th><th data-dtype="YE-TU" class="dhdr" style="white-space:nowrap; padding:4px 3px; font-size:9px;">15-Jul-25<br><span style="font-size:8px;color:#5f5c54">YE-TU</span></th><th data-dtype="FY R" class="dhdr" style="white-space:nowrap; padding:4px 3px; font-size:9px;">04-Sep-25<br><span style="font-size:8px;color:#5f5c54">FY R</span></th><th data-dtype="AGM" class="dhdr" style="white-space:nowrap; padding:4px 3px; font-size:9px;">19-Nov-25<br><span style="font-size:8px;color:#5f5c54">AGM</span></th><th data-dtype="H1 TU" class="dhdr" style="white-space:nowrap; padding:4px 3px; font-size:9px;">16-Jan-26<br><span style="font-size:8px;color:#5f5c54">H1 TU</span></th><th data-dtype="H1 R" class="dhdr" style="white-space:nowrap; padding:4px 3px; font-size:9px;">26-Feb-26<br><span style="font-size:8px;color:#5f5c54">H1 R</span></th><th data-dtype="YE-TU" class="dhdr" style="white-space:nowrap; padding:4px 3px; font-size:9px; background:#fcfbf8; font-weight:800;">&#11088; 14-Jul-26<br><span style="font-size:8px;color:#5f5c54">YE-TU</span></th></tr><tr><td class="lbl" style="position:sticky; left:0; background:#faf9f5; z-index:1; font-size:10px;">PIC royalty revenue</td><td class="dc ok">&#9989;</td><td class="dc q">&#128993;</td><td class="dc ok">&#9989;</td><td class="dc q">&#128993;</td><td class="dc ok">&#9989;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td></tr><tr><td class="lbl" style="position:sticky; left:0; background:#faf9f5; z-index:1; font-size:10px;">PIC China new-cust count</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc q">&#128993;</td><td class="dc q">&#128993;</td><td class="dc ok">&#9989;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc wh">&#10060;</td><td class="dc dash">&mdash;</td></tr><tr><td class="lbl" style="position:sticky; left:0; background:#faf9f5; z-index:1; font-size:10px;">Net debt / EBITDA</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td></tr><tr><td class="lbl" style="position:sticky; left:0; background:#faf9f5; z-index:1; font-size:10px;">ABS adj operating profit</td><td class="dc ok">&#9989;</td><td class="dc q">&#128993;</td><td class="dc ok">&#9989;</td><td class="dc q">&#128993;</td><td class="dc ok">&#9989;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc q">&#128993;</td><td class="dc ok">&#9989;</td><td class="dc q">&#128993;</td><td class="dc q">&#128993;</td><td class="dc ok">&#9989;</td><td class="dc qual">&#128993;</td><td class="dc ok">&#9989;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc q">&#128993;</td></tr><tr><td class="lbl" style="position:sticky; left:0; background:#faf9f5; z-index:1; font-size:10px;">Group revenue</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td></tr><tr><td class="lbl" style="position:sticky; left:0; background:#faf9f5; z-index:1; font-size:10px;">China pig price (RMB/kg)</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc qual">&#128993;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc q">&#128993;</td><td class="dc dash">&mdash;</td></tr><tr><td class="lbl" style="position:sticky; left:0; background:#faf9f5; z-index:1; font-size:10px;">Dividend per share</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td><td class="dc dash">&mdash;</td><td class="dc ok">&#9989;</td><td class="dc dash">&mdash;</td></tr><tr><td class="lbl" style="position:sticky; left:0; background:#faf9f5; z-index:1; font-size:10px;">PBT guide / floor</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td><td class="dc ok">&#9989;</td></tr></table></div><style>
 #drifttable .dc{text-align:center; padding:4px 2px; border:1px solid #eee;}
 #drifttable .dc.wh{background:#fdecea;}
 #drifttable .dc.circ{background:#fff6d6;}
 #drifttable td.hl, #drifttable th.hl{background:#fff6d6 !important;}
 #drifttable .dhdr{cursor:pointer;}
-</style><p class="legend"><b>Freshest signal (rightmost, 14-Jul-26 TU):</b> nothing newly withheld here &mdash; TUs structurally carry only guide/leverage. <b>The live Drift finding sits one column left:</b> at H1 FY26 R (26-Feb-26) the PIC China new-royalty-customer count is &#10060; withheld against results-doc cadence (carried Sep-24/13 &rarr; Feb-25/20 &rarr; Sep-25/25, then dropped). One withhold + no falling level (royalty revenue accelerating) = <b>watch flag, not fired</b>. China pig price trending out of disclosure since FY25 is market-stabilisation (&#128993;&rarr;&mdash;), not a withhold. Restatement&#697; (PIC/ABS product-development reallocation) at H1 FY24; structural deconsolidation of PIC China from 31-Jan-26.</p></div>
+</style><details class="d2top"><summary>&sect;4 workings</summary><div class="d2body"><details class="d2sub"><summary>Notes &mdash; &sect;4</summary><div class="d2body"><p><b>Freshest signal (rightmost, 14-Jul-26 TU):</b> nothing newly withheld &mdash; TUs structurally carry only the guide, leverage and qualitative segment commentary. <b>The live finding sits one column left:</b> at 26-Feb-26 the PIC China new-royalty-customer count is &#10060; withheld against an established results-doc cadence (Sep-24 &rarr; 13, Feb-25 &rarr; 20, Sep-25 &rarr; 25, then dropped). One withhold with no falling level &mdash; royalty revenue still accelerating &mdash; is a <b>watch flag, not fired</b>. Restatement&#697; (PIC/ABS product-development reallocation) at H1 FY24; PIC China deconsolidated from 31-Jan-26.</p>
+<p><i>Stage B audit, Aug-26 &mdash; all 152 cells re-verified against source across 19 document reads; 16 cells changed.</i> The dominant correction was 🟡&rarr;&mdash;: royalty revenue, ABS profit and pig price were carrying qualitative marks in trading updates that never mention them, which overstated the disclosure baseline and would have made a future omission look like a withhold when nothing had ever been established. Two corrections ran the other way: 22-Feb-24 pig price is quantified (15 RMB/kg) not qualitative, and 07-Sep-23 is qualitative not quantified. 15-Jul-25 ABS profit is qualitative &mdash; the &pound;8.5m figure printed there is the VAP benefit, not the segment profit. <b>No fired condition changed;</b> the Rank 2 cadence and its single &#10060; are re-confirmed from source.</p></div></details></div></details></div>
 <script>
 (function(){
   // §2 grid: click period header highlights all cols of that type
@@ -623,6 +706,11 @@ td.h2cell{background:#faf9f5}
     tbl.querySelectorAll('.hl').forEach(function(el){ el.classList.remove('hl'); });
   }
 })();
+</script>
+<script>
+function t3tog(){var t=document.getElementById('text3');t.classList.toggle('showall');
+var e=document.getElementById('t3exp');
+e.innerHTML=t.classList.contains('showall')?'&#9662; Hide earlier prints':'&#9656; Show 11 earlier prints &mdash; Sep-22 to Nov-24';}
 </script>
 </body>
 </html>
