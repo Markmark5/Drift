@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DSCV — Longitudinal Drift Tracker</title>
 <style>
-:root{ --red:#b3261e; --green:#1e7a45; --amber:#9a6a00;
+:root{ --green2:#2a7a44; --red2:#c0392b; --amber2:#b8860b; --muted:#6b6862; --red:#b3261e; --green:#1e7a45; --amber:#9a6a00;
   --line:#d8d5cf; --ink:#16150f; --mute:#5f5c54; --paper:#f7f6f2; }
 
 /* ─── RESET & BASE ─── */
@@ -182,7 +182,53 @@ th.bs-col{font-weight:800}
 #drift-json{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:10.5px;background:#fff;
   border:1px solid #e0ded6;border-radius:6px;padding:10px;white-space:pre-wrap;word-break:break-all;user-select:all}
 
-/* ─── §2.0 BRIDGE + BAR FLEX PAIR (v3.11) ─── */
+
+/* ═══ v5.0 TRIGGER LIGHTS (6.3a) ═══ */
+.lights{background:#2b2a26;border-radius:12px;padding:12px 13px;max-width:1100px;margin:12px 0}
+.lights-row{display:flex;gap:10px;align-items:stretch}
+.lamp{flex:1 1 0;border-radius:9px;padding:9px 11px;position:relative}
+.lamp.fired{background:#3b3934}
+.lamp.dim{background:#333129}
+.lamp .bulb{width:28px;height:28px;border-radius:50%;display:block;margin-bottom:7px}
+.b-red{background:#ff3b30;border:2px solid #ff6b62;box-shadow:0 0 0 4px rgba(255,59,48,.18)}
+.b-green{background:#21d05e;border:2px solid #55e087;box-shadow:0 0 0 4px rgba(33,208,94,.18)}
+.b-amber{background:#ffb020;border:2px solid #ffc65c;box-shadow:0 0 0 4px rgba(255,176,32,.18)}
+.b-off{background:#57544c;border:2px solid #6d6a61;box-shadow:0 0 0 4px rgba(87,84,76,.15)}
+.lamp .lname{font-size:15.5px;font-weight:700;color:#fff;line-height:1.2}
+.lamp.dim .lname{color:#a8a49a}
+.lamp .lreason{font-size:11.5px;color:#c9c6bd;margin-top:4px;line-height:1.35}
+.lamp.dim .lreason{color:#8d8981}
+.lamp .ldate{position:absolute;top:9px;right:11px;font-size:11px;color:#c9c6bd}
+.lamp.dim .ldate{color:#8d8981}
+.tally{flex:0 0 74px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.tally .tn{font-size:26px;font-weight:700;color:#fff;line-height:1}
+.tally .tl{font-size:10.5px;letter-spacing:.14em;color:#c9c6bd;margin-top:3px}
+.bsstrip{margin-top:10px;border:1px dashed #57544c;border-radius:9px;padding:8px 11px;display:flex;align-items:center;gap:10px}
+.bsstrip .bulb{width:20px;height:20px;border-radius:50%;flex:0 0 20px}
+.bsstrip .bstext{font-size:12.5px;color:#fff;font-weight:600}
+.bsstrip .bssub{font-size:11px;color:#8d8981;margin-top:2px}
+
+/* ═══ v5.0 FOUR BOXES (6.3b) ═══ */
+.boxes{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0;max-width:1100px}
+.vbox{background:#f2f1ec;border:none;border-radius:0 0 10px 10px;padding:12px 15px 13px;border-top:3px solid var(--green2)}
+.vbox .blabel{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted,#6b6862)}
+.vbox .bhead{font-size:19px;font-weight:700;margin:3px 0 4px;color:#16150f}
+.vbox .bsent{font-size:13px;line-height:1.45;color:#33312b}
+
+/* ═══ v5.0 TWO-TIER DRAWERS (6.1) ═══ */
+details.top{border:1px solid #c6c2b9;background:var(--paper);border-radius:10px;margin-top:14px;max-width:1100px}
+details.top>summary{font-size:14px;padding:13px;cursor:pointer;font-weight:600}
+details.top .drawer-body{font-size:12.5px;line-height:1.55;padding:0 13px 13px}
+details.sub{background:#fff;border:1px solid var(--line);border-radius:8px;margin-top:12px}
+details.sub>summary{font-size:12.5px;padding:9px;cursor:pointer}
+details.sub .drawer-body{font-size:12.5px;line-height:1.55;padding:0 9px 9px}
+
+/* ═══ v5.0 §3 TRAILING-WINDOW COLLAPSE (6.7) ═══ */
+#text3.collapsed tr.older{display:none}
+tr.expander td{background:#f2f1ec;cursor:pointer;font-size:11.5px;color:#5f5c54;padding:7px 9px;text-align:left;letter-spacing:.02em}
+tr.expander td:hover{background:#eceae4}
+
+/* ─── §2.0 BRIDGE + BAR FLEX PAIR ─── */
 .s20-pair { display:flex; gap:18px; margin-bottom:16px; align-items:stretch; }
 .s20-pair > * { flex:1 1 0; min-width:340px; }
 .s20-pair .current-state-bar { margin-bottom:0; max-width:none; display:flex; flex-direction:column; padding:0; overflow:hidden; }
@@ -195,23 +241,23 @@ th.bs-col{font-weight:800}
 /* dark-bar family (v3.13) — 🍺 bridge · 💡 company · 🌡️ state — identical treatment */
 .darkbar { background:#2b2a26; color:#fff; padding:11px 15px; line-height:1.3;
   font-family:"Comic Sans MS","Comic Sans","Chalkboard SE","Segoe Print","Bradley Hand",cursive;
-  font-size:16px; }
+  font-size:20px; }
 .darkbar .db-emoji { font-size:22px; vertical-align:-2px; margin-right:4px; }
 .bridge-hd { background:#2b2a26; color:#fff; border-bottom:none; padding:11px 15px;
   font-family:"Comic Sans MS","Comic Sans","Chalkboard SE","Segoe Print","Bradley Hand",cursive;
-  font-size:16px; line-height:1.3; }
+  font-size:20px; line-height:1.3; }
 .bridge-hd .db-emoji { font-size:22px; vertical-align:-2px; margin-right:4px; }
 
 /* 💡 company-guide drawer (v3.13) */
 .company-drawer { margin:14px 0; border:1px solid #d8d6cd; border-radius:10px; overflow:hidden; }
 .company-drawer > summary { list-style:none; cursor:pointer; background:#2b2a26; color:#fff;
   padding:11px 15px; font-family:"Comic Sans MS","Comic Sans","Chalkboard SE","Segoe Print","Bradley Hand",cursive;
-  font-size:16px; }
+  font-size:24px; }
 .company-drawer > summary::-webkit-details-marker { display:none; }
 .company-drawer > summary .db-emoji { font-size:22px; vertical-align:-2px; margin-right:4px; }
 .company-body { padding:14px 16px; font-size:12.5px; line-height:1.6; color:#2a2a2a; background:#fff; }
 .company-body h4 { font-family:"Comic Sans MS","Comic Sans","Chalkboard SE","Segoe Print","Bradley Hand",cursive;
-  font-size:17px; font-weight:700; margin:12px 0 4px; color:#2b2a26; }
+  font-size:22px; font-weight:700; margin:12px 0 4px; color:#2b2a26; }
 .company-body h4:first-child { margin-top:0; }
 .company-body .vintage { font-size:10.5px; color:#999; margin-top:12px; }
 .bridge-row { display:grid; grid-template-columns: 1.15fr 0.55fr 2fr; gap:8px; align-items:center;
@@ -545,12 +591,38 @@ details[open] summary::before { content: '▾ '; }
   <div class="verdict-body">
     <div class="verdict-headline">Guide lifted to "tracking ahead" after one quarter — orders +31% organic, book-to-bill 1.15; first multi-signal green since recovery began</div>
     <div class="pill-row">
-      <span class="pill pill-alerts">2 of 3 fired</span>
-      <span class="pill pill-type">· Q1 TU</span>
-      <span class="pill pill-date">· 24-Jul-26</span>
-      <span class="pill pill-fyend">· FY 31 Mar</span>
-      <span class="pill pill-bs">· B/S Clean</span>
+      <span class="pill pill-type">Q1 TU · 24 Jul 2026</span>
+      <span class="pill pill-fyend">· FY-end 31 Mar</span>
+      <span class="pill pill-bs">· B/S clean</span>
     </div>
+    <div class="lights">
+      <div class="lights-row">
+        <div class="lamp fired">
+          <span class="ldate">Jul-26</span>
+          <span class="bulb b-green"></span>
+          <div class="lname">Numbers &amp; guide</div>
+          <div class="lreason">Guide moved to "tracking ahead"; orders +31%, spread widest on record</div>
+        </div>
+        <div class="lamp fired">
+          <span class="ldate">Jun-26 · Jul-26</span>
+          <span class="bulb b-green"></span>
+          <div class="lname">Language</div>
+          <div class="lreason">Second consecutive rising print; in-line lifted to ahead</div>
+        </div>
+        <div class="lamp dim">
+          <span class="bulb b-off"></span>
+          <div class="lname">Disclosure</div>
+          <div class="lreason">No ranked metric withheld against established cadence</div>
+        </div>
+        <div class="tally"><div class="tn">2/3</div><div class="tl">FIRED</div></div>
+      </div>
+      <div class="bsstrip">
+        <span class="bulb b-green"></span>
+        <div><div class="bstext">Clean · debt falling, 1.2x</div>
+        <div class="bssub">Sweep sits outside the 2-of-3 count</div></div>
+      </div>
+    </div>
+
 
     <details class="company-drawer">
       <summary><span class="db-emoji">💡</span>Idiot's guide to the company — What discoverIE Group plc actually does</summary>
@@ -568,23 +640,11 @@ details[open] summary::before { content: '▾ '; }
       </div>
     </details>
 
-    <div class="soft-grid">
-      <div class="soft-card">
-        <div class="soft-card-label">Current State</div>
-        <div class="soft-card-value">🟢 Turning Up — all Q-over-Q and YoY checks green</div>
-      </div>
-      <div class="soft-card">
-        <div class="soft-card-label">Fired</div>
-        <div class="soft-card-value">2-of-3: Condition 1 (G-RAISE Buy/Sell RNS) + Condition 2 (Text 🟢🟢)</div>
-      </div>
-      <div class="soft-card amber">
-        <div class="soft-card-label">Caveat</div>
-        <div class="soft-card-value">Orders +31% partly vs soft Q1 FY26 base (−4% CER prior year); broad-based but discount ~5pp for comp effect</div>
-      </div>
-      <div class="soft-card">
-        <div class="soft-card-label">Next</div>
-        <div class="soft-card-value">H1 FY27 TU (Oct-26): organic orders Q2 ≥+10%? Controls organic sales positive? Proforma gearing tracking to 1.8x?</div>
-      </div>
+    <div class="boxes">
+      <div class="vbox"><div class="blabel">Current state</div><div class="bhead">Tracking ahead</div><div class="bsent">Guide lifted from in-line after a single quarter of FY27, against the company's own Board anchor. No numeric target restated.</div></div>
+      <div class="vbox"><div class="blabel">Warning you get</div><div class="bhead">3–4 quarters</div><div class="bsent">Organic orders turned down that far ahead of revenue at the FY24–25 turn. They now read +31%, the strongest quarter in the record.</div></div>
+      <div class="vbox"><div class="blabel">Argues against</div><div class="bhead">Soft base</div><div class="bsent">+31% laps a −4% Q1 FY26. Three acquisitions worth £95m are still bedding in, and borrowing sits above the target range.</div></div>
+      <div class="vbox"><div class="blabel">Next test</div><div class="bhead">Oct-26</div><div class="bsent">H1 FY27 TU: is Q2 organic orders growth still double-digit, are Controls sales positive, is borrowing tracking to 1.8x?</div></div>
     </div>
     <ul class="verdict-bullets">
       <li>Guide from "in line" (Jun-26) to "ahead" (Jul-26) in one quarter is the most rapid guide-raise in the trailing 4-year record; company is a conservative guider so this signal is high-credence.</li>
@@ -598,6 +658,8 @@ details[open] summary::before { content: '▾ '; }
 
 <div class="section">
   <span class="section-label">§1 — Metric Ledger</span>
+  <details class="top"><summary>The metric ledger — ranks, roles and why each earned its place</summary>
+    <div class="drawer-body">
   <p style="font-size:11.5px;color:#666;margin:0 0 10px;max-width:1100px">Ranks earned by backtest against this company's own turns, not by sector habit. Roles: <strong>LEAD</strong> moved before the guided line at a documented turn · <strong>CONFIRM</strong> moves with or just after it.</p>
   <table class="ledger-table">
     <thead><tr><th style="width:40px">Rank</th><th style="width:170px">Metric</th><th style="width:120px">Type &amp; grain</th><th style="width:70px">Role</th><th>Why it earned the rank</th><th style="width:150px">Cadence</th><th style="width:150px">Status this run</th></tr></thead>
@@ -613,6 +675,9 @@ details[open] summary::before { content: '▾ '; }
     </tbody>
   </table>
   <p style="font-size:11px;color:#777;margin-top:10px;max-width:1100px"><strong>Measured lead.</strong> At the FY24–25 downturn, organic orders fell three to four quarters before organic revenue did, and book-to-bill crossed 1.0 first. Both are scored LEAD on that evidence.</p>
+
+    </div>
+  </details>
 
 <!-- ════════════════════════════ §2 UNIFIED FORWARD GRID ════════════════════════════ -->
 
@@ -655,7 +720,15 @@ details[open] summary::before { content: '▾ '; }
   </div>
 
 
-  <details>
+  
+
+  
+
+  
+
+  <details class="top"><summary>§2 workings — card strip, rank notes, turn methodology</summary>
+    <div class="drawer-body">
+<details class="sub">
     <summary>🔲 Card strip — wall preview &amp; index entry</summary>
     <div class="drawer-body">
       <table class="cardstrip"><tr><td class="lb"></td><td class="pl">Q1<br>FY25</td><td class="pl">Q2<br>FY25</td><td class="pl">Q3<br>FY25</td><td class="pl">Q4<br>FY25</td><td class="pl">Q1<br>FY26</td><td class="pl">Q2<br>FY26</td><td class="pl">Q3<br>FY26</td><td class="pl">Q4<br>FY26</td><td class="pl">Q1<br>FY27</td></tr><tr><td class="lb">R1</td><td class="cs-g">🟢</td><td class="cs-r">🔴</td><td class="cs-r">🔴</td><td class="cs-g">🟢</td><td class="cs-r">🔴</td><td class="cs-g">🟢</td><td class="cs-g">🟢</td><td class="cs-g">🟢</td><td class="cs-g bsc">🟢</td></tr><tr><td class="lb">R2</td><td class="cs-g">🟢</td><td class="cs-r">🔴</td><td class="cs-r">🔴</td><td class="cs-g">🟢</td><td class="cs-r">🔴</td><td class="cs-g">🟢</td><td class="cs-a">🟡</td><td class="cs-g">🟢</td><td class="cs-g bsc">🟢</td></tr><tr><td class="lb">R3</td><td class="cs-n"></td><td class="cs-r">🔴</td><td class="cs-r">🔴</td><td class="cs-r">🔴</td><td class="cs-n"></td><td class="cs-r">🔴</td><td class="cs-r">🔴</td><td class="cs-g">🟢</td><td class="cs-a bsc">🟡</td></tr><tr><td class="lb">R4</td><td class="cs-r">🔴</td><td class="cs-g">🟢</td><td class="cs-g">🟢</td><td class="cs-r">🔴</td><td class="cs-g">🟢</td><td class="cs-g">🟢</td><td class="cs-a">🟡</td><td class="cs-g">🟢</td><td class="cs-g bsc">🟢</td></tr><tr><td class="lb">R5</td><td class="cs-g">🟢</td><td class="cs-g">🟢</td><td class="cs-g">🟢</td><td class="cs-g">🟢</td><td class="cs-g">🟢</td><td class="cs-g">🟢</td><td class="cs-r">🔴</td><td class="cs-r">🔴</td><td class="cs-n bsc"></td></tr></table>
@@ -670,11 +743,12 @@ details[open] summary::before { content: '▾ '; }
  "alert": true,
  "fired": 2,
  "fired_of": 3,
+ "lights": "gg-",
  "rns_type": "Q1 TU",
  "rns_date": "2026-07-24",
  "build_date": "2026-08-06",
- "spec_version": "4.8",
- "next_test": "H1 FY27 TU (Oct-26): organic orders Q2 >=+10%? Controls organic sales positive? Proforma gearing tracking to 1.8x?",
+ "spec_version": "5.1",
+ "next_test": "H1 FY27 TU (Oct-26): is Q2 organic orders growth still double-digit, are Controls sales positive, is borrowing tracking to 1.8x?",
  "grid": {
   "labels": [
    "R1",
@@ -684,15 +758,15 @@ details[open] summary::before { content: '▾ '; }
    "R5"
   ],
   "periods": [
-   "Q1FY25",
-   "Q2FY25",
-   "Q3FY25",
-   "Q4FY25",
-   "Q1FY26",
-   "Q2FY26",
-   "Q3FY26",
-   "Q4FY26",
-   "Q1FY27"
+   "Q1 25",
+   "Q2 25",
+   "Q3 25",
+   "Q4 25",
+   "Q1 26",
+   "Q2 26",
+   "Q3 26",
+   "Q4 26",
+   "Q1 27"
   ],
   "rows": [
    "grrgrgggg",
@@ -701,14 +775,12 @@ details[open] summary::before { content: '▾ '; }
    "rggrggagg",
    "ggggggrr-"
   ],
-  "note": "One row per ledger rank, R1-R5, right-anchored on the Q1 FY27 Buy/Sell print."
+  "note": "One row per ledger rank at quarter grain; rightmost cell is the 24 Jul 2026 Q1 trading update."
  },
  "url": "DSCV.html"
 }</div>
     </div>
-  </details>
-
-  <details>
+  </details><details class="sub">
     <summary>Notes — Ranks 1–5</summary>
     <div class="drawer-body">
       <div class="rank-note"><strong>Rank 1 — Organic orders:</strong> +31% in Q1 FY27 is the strongest quarter in the record and the fourth consecutive rise; orders turned negative in FY24 a full three to four quarters before organic revenue did, which is what earns this the LEAD role and Rank 1.</div>
@@ -717,14 +789,14 @@ details[open] summary::before { content: '▾ '; }
       <div class="rank-note"><strong>Rank 4 — Organic revenue:</strong> Q2 and Q4 FY25 are directly reported (−7%, −4%), not derived — daggers removed at the R2 audit. +6% follows +5%, a second consecutive quarterly improvement — the orders lead is now translating into sales, which is what CONFIRM means here.</div>
       <div class="rank-note"><strong>Rank 5 — Adjusted operating margin:</strong> fell to 13.8% in FY26 while orders ran +31%, so it pointed the wrong way at the live turn. Scored, but the MISLED verdict bars it from a higher rank and it never signals alone.</div>
     </div>
-  </details>
-
-  <details>
+  </details><details class="sub">
     <summary>Turn methodology &amp; restatement basis</summary>
     <div class="drawer-body">
       <strong>Router and comparison basis.</strong> Q-reporter — Rule Set Q applies. Ranks 1 and 4 are FLOW at quarter grain, scored SEQUENTIAL; the YEAR-ON-YEAR comparison is computed and retained here but never displayed. Ranks 2 and 5 are RATE METRICS, scored on the pp move YEAR-ON-YEAR directly (bands: 0.05 points for book-to-bill, 2.0 points for margin). Rank 3 is a SNAPSHOT, scored on the sequential change at its own disclosure grain, with year-on-year rendering only on the aggregate row. All five render under the Appendix B default rule; no reduced-grain or qualitative-ladder rank in this build. No pp values render in cells — the emoji alone carries the score.<br><br>
       <strong>Mixed cadence.</strong> Ranks 3 and 5 print at half and full-year grain against a quarterly spine; they keep their own grain and render at the columns where they print, with — elsewhere. These gaps are cadence, not absence.<br><br>
       <strong>Restatement &amp; provenance.</strong> Cells marked † are derived (Q2 = H1 − Q1; Q4 = FY − 9M), workings shown once, cross-verified by a second route where one exists. ʳ = restated. Later audited figures govern earlier "c." estimates. No cross-basis arithmetic without a flag (reported versus adjusted, constant-currency versus reported, first-time inclusion of an acquired business). H1 FY24 margin move is shown reported (+1.2pp); the company states +1.4pp at constant currency. Q4 FY24 organic orders is an unsourced open item — shown blank, never derived. Rank 2 is derived † from two printed series on the same basis (organic, constant currency), so no basis break arises; book-to-bill sits beneath it as an unscored WATCH sub-row. Full-year trading updates have never carried it, so those cells are cadence (—); the single ❌ is the Oct-25 H1 TU, which dropped it after Oct-22, Oct-23 and Oct-24 all carried it. Half and full-year readings sit on the aggregate row, never in quarter columns. FY24 is flagged ʳ: the FY24 prelims print 0.90 while later documents cite 0.89 for the same year. Design wins (ELV) was demoted to WATCH at the v4.8 ledger rebuild: habitually printed and informative, but it never led a turn in this record. It is unscored, holds no grid block, and appears as a Drift row only.
+    </div>
+  </details>
     </div>
   </details>
 
@@ -733,15 +805,7 @@ details[open] summary::before { content: '▾ '; }
 <div class="section">
   <span class="section-label">§2.0 — Most-Recent RNS · FY27 Q1 TU · 24-Jul-26 · Four Checks</span>
 
-  <details>
-    <summary>The four checks — workings behind the read</summary>
-    <div class="drawer-body" style="font-size:12.5px;line-height:1.6;max-width:1100px;color:#333">
-    <p style="margin-bottom:8px"><strong>Check 1 — Sequential (Q1 FY27 vs Q4 FY26):</strong> Organic revenue +6% vs +5% prior quarter 🟢. Organic orders +31% vs +14% prior quarter 🟢🟢. Book-to-bill 1.15 vs 1.03 prior quarter 🟢. All metrics improve sequentially.</p>
-    <p style="margin-bottom:8px"><strong>Check 2 — Same-type vs last year (Q1 FY27 vs Q1 FY26):</strong> Organic revenue +6% vs 0% prior year 🟢. Organic orders +31% vs −4% prior year 🟢🟢. Book-to-bill 1.15 vs 0.95 prior year (stated, H1 FY26 R) 🟢. Strong same-type improvement; base effect not fully benign (Q1 FY26 was soft) but growth is real.</p>
-    <p style="margin-bottom:8px"><strong>Check 3 — Sub-period derivations:</strong> Q1 FY27 is a single-quarter TU; no further intra-quarter derivation available from this document type. Cross-reference to Q4 FY26 done in Check 1. No backward-loading flag — the latest sub-period is the strongest print.</p>
-    <p><strong>Check 4 — Guidance vs prior guide:</strong> FY26 R (Jun-26) initiated FY27 guide: "full year adjusted earnings in line with Board expectations." Q1 FY27 TU (Jul-26): "full year adjusted earnings <em>tracking ahead</em> of Board's expectations." 🟢 G-column RAISE fired. One quarter into FY27, guide already lifted. Company is a conservative guider with a strong beat-and-raise track record — this signal is high-credence.</p>
-    </div>
-  </details>
+  
 
   <div class="s20-pair">
 
@@ -772,17 +836,52 @@ details[open] summary::before { content: '▾ '; }
 
     <div class="current-state-bar">
       <div class="darkbar"><span class="db-emoji">🌡️</span>CURRENT STATE — the read right now</div>
-      <div class="bar-inner"><div class="bar-text">🟢 <strong>TURNING UP — STABLE:</strong> Q1 FY27 fires all four §2.0 checks green: organic orders +31% (strongest quarter in the record), organic revenue +6% continuing sequential improvement from Q4 FY26, book-to-bill 1.15 — orders running materially ahead of sales — and the guide raised from "in line" to "tracking ahead" within a single quarter of the new financial year. No backward-loading detected; the latest print is the lead, not a fading aggregate.</div></div>
+      <div class="bar-inner"><div class="bar-text">
+        <div style="font-weight:700;color:#1a5c33;margin-bottom:7px">🟢 TURNING UP</div>
+        <ul style="margin:0;padding-left:18px;font-size:13px;line-height:1.5">
+          <li style="margin-bottom:4px">Organic orders +31% in Q1 FY27 — strongest quarter anywhere in the record.</li>
+          <li style="margin-bottom:4px">Orders-minus-sales spread +25pp, the widest reading the series has produced.</li>
+          <li style="margin-bottom:4px">Organic revenue +6%, a second consecutive quarterly improvement on +5%.</li>
+          <li style="margin-bottom:4px">Guide moved "in line" to "tracking ahead" after one quarter of FY27.</li>
+          <li style="margin-bottom:4px">Book-to-bill 1.15, the highest print in the four-year record.</li>
+          <li style="margin-bottom:4px">No front- or backward-loading: latest sub-period leads, parent does not override.</li>
+          <li style="margin-bottom:4px">⚠️ +31% laps a −4% Q1 FY26 base; discount roughly five points for that.</li>
+          <li style="margin-bottom:4px">⚠️ 3Gmetalworx still awaiting regulatory clearance; proforma borrowing 2.2x, above target range.</li>
+        </ul>
+      </div></div>
     </div>
 
   </div>
 
-  <details>
+  
+</div>
+
+  <details class="top"><summary>§2.0 workings — the four checks, notes, sweep, trigger detail</summary>
+    <div class="drawer-body">
+<details class="sub">
+    <summary>The four checks — workings behind the read</summary>
+    <div class="drawer-body" style="font-size:12.5px;line-height:1.6;max-width:1100px;color:#333">
+    <p style="margin-bottom:8px"><strong>Check 1 — Sequential (Q1 FY27 vs Q4 FY26):</strong> Organic revenue +6% vs +5% prior quarter 🟢. Organic orders +31% vs +14% prior quarter 🟢🟢. Book-to-bill 1.15 vs 1.03 prior quarter 🟢. All metrics improve sequentially.</p>
+    <p style="margin-bottom:8px"><strong>Check 2 — Same-type vs last year (Q1 FY27 vs Q1 FY26):</strong> Organic revenue +6% vs 0% prior year 🟢. Organic orders +31% vs −4% prior year 🟢🟢. Book-to-bill 1.15 vs 0.95 prior year (stated, H1 FY26 R) 🟢. Strong same-type improvement; base effect not fully benign (Q1 FY26 was soft) but growth is real.</p>
+    <p style="margin-bottom:8px"><strong>Check 3 — Sub-period derivations:</strong> Q1 FY27 is a single-quarter TU; no further intra-quarter derivation available from this document type. Cross-reference to Q4 FY26 done in Check 1. No backward-loading flag — the latest sub-period is the strongest print.</p>
+    <p><strong>Check 4 — Guidance vs prior guide:</strong> FY26 R (Jun-26) initiated FY27 guide: "full year adjusted earnings in line with Board expectations." Q1 FY27 TU (Jul-26): "full year adjusted earnings <em>tracking ahead</em> of Board's expectations." 🟢 G-column RAISE fired. One quarter into FY27, guide already lifted. Company is a conservative guider with a strong beat-and-raise track record — this signal is high-credence.</p>
+    </div>
+  </details><details class="sub">
     <summary>Notes — §2.0</summary>
     <div class="drawer-body">The +31% organic orders figure is the headline but carries a comp-effect discount: Q1 FY26 organic orders were −4% CER (and "underlying +2% excl. one large booking"). Net of comp, underlying organic momentum is more like +20–25% — still the strongest underlying read since the FY23 peak cycle. The guide-raise is the more clean signal: there is no base-effect discount on a management earnings upgrade made after one quarter of trading.
     </div>
+  </details><details class="sub"><summary>Balance-sheet sweep</summary><div class="drawer-body">
+No Tier-1 condition. Net debt has fallen for eight consecutive quarters to £80.5m (1.2x), the FY24 step-up to £104.0m being fully explained by five disclosed acquisitions. The £240m facility runs to May-2030 with an £80m accordion; the leverage covenant was raised to 3.5x at the Nov-25 renewal specifically to allow temporary operation above the 1.5–2.0x target range, and interest cover is 9.6x against a &gt;4.0x covenant. Going-concern wording is boilerplate: reverse stress testing puts a breach beyond a fall in margin below 6.3% against 13.8% actual. One Tier-2 watch: proforma borrowing including Trival and 3Gmetalworx is 2.2x, above the target range, guided back to 1.8x by Mar-27. Wedge check: adjusted-to-statutory gap stable and explained by acquisition amortisation — no verdict bullet. Green-shoot mirrors present: borrowing falling two-plus periods, dividend raised 4%.
+</div></details>
+<details class="sub"><summary>Trigger detail &amp; audit record</summary><div class="drawer-body">
+<strong>Condition 1 — Numbers &amp; guide: FIRED, green-shoot mirror, Jul-26.</strong> A G-column RAISE on the Buy/Sell RNS: "in line" lifted to "tracking ahead of the Board's expectations". Carries full weight — it includes LEAD metrics (organic orders +31%, spread +25pp), so no confirmation-only discount applies.<br><br>
+<strong>Condition 2 — Language: FIRED, green-shoot mirror, Jun-26 · Jul-26.</strong> Lexicon rising two consecutive prints from a neutral base: Jun-26 in-line with the Q1 strength already visible in the same sentence, then Jul-26 ahead. Deliberate double-count with the G fire is by design — a guide move is both a number event and a language event.<br><br>
+<strong>Condition 3 — Disclosure: NOT FIRED.</strong> No ranked metric is withheld against an established cadence. The Rank 3 order book is qualitative at Q1 FY27, but trading updates stopped carrying the £m figure after FY23, so that is lapsed cadence, not a withhold. The single ❌ in the record is book-to-bill at the Oct-25 H1 TU — a WATCH metric, which never counts toward the 2-of-3.<br><br>
+<strong>Count: 2 of 3, converging upward, undiscounted → alert.</strong> The balance-sheet sweep sits outside the count.
+</div></details>
+
+    </div>
   </details>
-</div>
 
 <!-- ════════════════════════════ §3 TEXT + G ════════════════════════════ -->
 
@@ -790,7 +889,7 @@ details[open] summary::before { content: '▾ '; }
   <span class="section-label">§3 — Text + G · Language Track</span>
   <p style="font-size:11.5px;color:#666;margin-bottom:10px">Click a Doc cell to highlight that row type. G column: guide fires vs company's own prior guide only — actuals-only triggers excluded.</p>
 
-  <table class="text-table" id="text3">
+  <table class="text-table collapsed" id="text3">
     <thead>
       <tr>
         <th style="width:80px">Date</th>
@@ -802,21 +901,23 @@ details[open] summary::before { content: '▾ '; }
       </tr>
     </thead>
     <tbody>
-      <tr onclick="hlDocRow(this)"><td>Jul-22</td><td>FY23<br>Q1 TU</td><td class="g-none">—</td><td>"well positioned to make further progress"</td><td style="font-size:11px;color:#555;line-height:1.45">No expectations anchor in the sentence — progress language only. Order book a record £240m, book-to-bill 1.09. Outturn: FY23 delivered ahead.</td><td class="score-cell">⚪</td></tr>
-      <tr onclick="hlDocRow(this)"><td>Oct-22</td><td>FY23<br>H1 TU</td><td class="g-flat">flat</td><td>"on track to deliver full year underlying earnings in line with the Board's expectations"</td><td style="font-size:11px;color:#555;line-height:1.45">Anchor present and explicit: Board's expectations. Record order book £257m, B/B 1.07. Demand described as stronger than expected.</td><td class="score-cell">⚪</td></tr>
-      <tr onclick="hlDocRow(this)"><td>Nov-22</td><td>FY23<br>H1 R</td><td class="g-flat">flat</td><td>"Group is on track to deliver full year underlying earnings in line with the Board's expectations. The second half has started well with continued organic sales growth"</td><td style="font-size:11px;color:#555;line-height:1.45">H1 results reiteration of the Oct-22 guide; no change to the numeric position. Adjusted operating margin 11.7%.</td><td class="score-cell">⚪</td></tr>
-      <tr class="changed" onclick="hlDocRow(this)"><td>Jan-23</td><td>FY23<br>Q3 TU</td><td class="g-raise">🟢 RAISE</td><td>"Accordingly, the Group is on track to deliver full year underlying earnings <strong>ahead of the Board's expectations</strong>" — first raise of the FY23 guide cycle</td><td style="font-size:11px;color:#555;line-height:1.45">First raise of the FY23 cycle — moves from in-line to ahead of the Board. Caveat: order book already described as providing visibility, so the raise leans on backlog not new demand. Outturn: met, adj. EPS +20%.</td><td class="score-cell">🟢</td></tr>
-      <tr onclick="hlDocRow(this)"><td>Apr-23</td><td>FY23<br>FY TU</td><td class="g-flat">flat</td><td>"Group on track to deliver full year underlying earnings <strong>ahead of the Board's expectations</strong>"</td><td style="font-size:11px;color:#555;line-height:1.45">Reiterates the Jan-23 raise rather than adding to it. Scored as a hold, not a second raise.</td><td class="score-cell">🟢</td></tr>
-      <tr class="changed" onclick="hlDocRow(this)"><td>Jun-23</td><td>FY23<br>R</td><td class="g-raise">🟢 RAISE</td><td>"The new financial year has started well with continued organic sales growth. Operating margin target raised to 15%." FY24 guide: "well positioned to make further progress."</td><td style="font-size:11px;color:#555;line-height:1.45">FY23 results confirm the raised guide delivered, and open FY24 on an ahead footing. Design wins £273m, +11%.</td><td class="score-cell">🟢</td></tr>
-      <tr onclick="hlDocRow(this)"><td>Jul-23</td><td>FY24<br>Q1 TU</td><td class="g-flat">flat</td><td>"earnings for the Period being in line with the Board's expectations"</td><td style="font-size:11px;color:#555;line-height:1.45">In-line reiteration. First signs of customer destocking named in the same document — conflict noted, score capped.</td><td class="score-cell">⚪</td></tr>
-      <tr class="changed" onclick="hlDocRow(this)"><td>Oct-23</td><td>FY24<br>H1 TU</td><td class="g-raise">🟢 RAISE</td><td>"on track to deliver full year underlying earnings in-line with the Board's <strong>recently upgraded expectations</strong>"</td><td style="font-size:11px;color:#555;line-height:1.45">Upgrade at H1 FY24 on margin strength, not volume: organic orders still negative, B/B 0.84 in Q1 rising to 0.91 in Q2. A raise resting on cost, with the demand line deteriorating underneath.</td><td class="score-cell">🟢</td></tr>
-      <tr onclick="hlDocRow(this)"><td>Dec-23</td><td>FY24<br>H1 R</td><td class="g-flat">flat</td><td>"on track to deliver full year underlying earnings in line with the Board's expectations." CEO: "remains on track… well positioned to continue making good progress"</td><td style="font-size:11px;color:#555;line-height:1.45">H1 results hold the upgraded guide. Margin 12.9% reported (+1.4pp at constant currency).</td><td class="score-cell">⚪</td></tr>
-      <tr onclick="hlDocRow(this)"><td>Feb-24</td><td>FY24<br>Q3 TU</td><td class="g-flat">flat</td><td>"on track to deliver full year underlying earnings in-line with the Board's expectations." "Sales at the start of Q4 have returned to organic growth"</td><td style="font-size:11px;color:#555;line-height:1.45">In-line held while organic sales fall 7% in the period; first orders growth since Sep-22 (+3%) cited as the offset.</td><td class="score-cell">⚪</td></tr>
-      <tr onclick="hlDocRow(this)"><td>Apr-24</td><td>FY24<br>FY TU</td><td class="g-flat">flat</td><td>"on track to deliver growth in full year underlying earnings in-line with the Board's expectations"</td><td style="font-size:11px;color:#555;line-height:1.45">Full-year guide held. Organic sales for the year 2% lower; acquisitions carrying reported growth.</td><td class="score-cell">⚪</td></tr>
-      <tr onclick="hlDocRow(this)"><td>Jun-24</td><td>FY24<br>R</td><td class="g-flat">flat</td><td>"Expectations for the new year unchanged." "well positioned to make further good progress" FY25 guide initiated: in-line.</td><td style="font-size:11px;color:#555;line-height:1.45">FY24 results in line. Net debt steps up to £104.0m on five acquisitions — disclosed, so no sweep flag.</td><td class="score-cell">⚪</td></tr>
-      <tr onclick="hlDocRow(this)"><td>Jul-24</td><td>FY25<br>Q1 TU</td><td class="g-flat">flat</td><td>"Board's underlying earnings expectations for this year unchanged"</td><td style="font-size:11px;color:#555;line-height:1.45">In-line reiteration with organic sales 12% lower — the trough quarter. No book-to-bill printed in this update.</td><td class="score-cell">⚪</td></tr>
-      <tr onclick="hlDocRow(this)"><td>Oct-24</td><td>FY25<br>H1 TU</td><td class="g-flat">flat</td><td>"Group remains on-track with the Board's underlying earnings expectations for this financial year unchanged"</td><td style="font-size:11px;color:#555;line-height:1.45">H1 guide held; organic orders +1% for the half, B/B recovering to 0.98 from 0.89. Sales still negative at −7% in Q2.</td><td class="score-cell">⚪</td></tr>
-      <tr onclick="hlDocRow(this)"><td>Dec-24</td><td>FY25<br>H1 R</td><td class="g-flat">flat</td><td>"On track to deliver full year underlying earnings in line with the Board's expectations." Controls "later-cycle businesses, is expected to follow"</td><td style="font-size:11px;color:#555;line-height:1.45">H1 results reiterate. Organic orders +1%, organic sales −10%. Deleveraging under way.</td><td class="score-cell">⚪</td></tr>
+      <tr class="expander" onclick="toggleOlder()"><td colspan="6" id="expLabel">▸ Show 15 earlier prints — Jul-22 to Dec-24</td></tr>
+      
+      <tr class="older" onclick="hlDocRow(this)"><td>Jul-22</td><td>FY23<br>Q1 TU</td><td class="g-none">—</td><td>"well positioned to make further progress"</td><td style="font-size:11px;color:#555;line-height:1.45">No expectations anchor in the sentence — progress language only. Order book a record £240m, book-to-bill 1.09. Outturn: FY23 delivered ahead.</td><td class="score-cell">⚪</td></tr>
+      <tr class="older" onclick="hlDocRow(this)"><td>Oct-22</td><td>FY23<br>H1 TU</td><td class="g-flat">flat</td><td>"on track to deliver full year underlying earnings in line with the Board's expectations"</td><td style="font-size:11px;color:#555;line-height:1.45">Anchor present and explicit: Board's expectations. Record order book £257m, B/B 1.07. Demand described as stronger than expected.</td><td class="score-cell">⚪</td></tr>
+      <tr class="older" onclick="hlDocRow(this)"><td>Nov-22</td><td>FY23<br>H1 R</td><td class="g-flat">flat</td><td>"Group is on track to deliver full year underlying earnings in line with the Board's expectations. The second half has started well with continued organic sales growth"</td><td style="font-size:11px;color:#555;line-height:1.45">H1 results reiteration of the Oct-22 guide; no change to the numeric position. Adjusted operating margin 11.7%.</td><td class="score-cell">⚪</td></tr>
+      <tr class="older changed" onclick="hlDocRow(this)"><td>Jan-23</td><td>FY23<br>Q3 TU</td><td class="g-raise">🟢 RAISE</td><td>"Accordingly, the Group is on track to deliver full year underlying earnings <strong>ahead of the Board's expectations</strong>" — first raise of the FY23 guide cycle</td><td style="font-size:11px;color:#555;line-height:1.45">First raise of the FY23 cycle — moves from in-line to ahead of the Board. Caveat: order book already described as providing visibility, so the raise leans on backlog not new demand. Outturn: met, adj. EPS +20%.</td><td class="score-cell">🟢</td></tr>
+      <tr class="older" onclick="hlDocRow(this)"><td>Apr-23</td><td>FY23<br>FY TU</td><td class="g-flat">flat</td><td>"Group on track to deliver full year underlying earnings <strong>ahead of the Board's expectations</strong>"</td><td style="font-size:11px;color:#555;line-height:1.45">Reiterates the Jan-23 raise rather than adding to it. Scored as a hold, not a second raise.</td><td class="score-cell">🟢</td></tr>
+      <tr class="older changed" onclick="hlDocRow(this)"><td>Jun-23</td><td>FY23<br>R</td><td class="g-raise">🟢 RAISE</td><td>"The new financial year has started well with continued organic sales growth. Operating margin target raised to 15%." FY24 guide: "well positioned to make further progress."</td><td style="font-size:11px;color:#555;line-height:1.45">FY23 results confirm the raised guide delivered, and open FY24 on an ahead footing. Design wins £273m, +11%.</td><td class="score-cell">🟢</td></tr>
+      <tr class="older" onclick="hlDocRow(this)"><td>Jul-23</td><td>FY24<br>Q1 TU</td><td class="g-flat">flat</td><td>"earnings for the Period being in line with the Board's expectations"</td><td style="font-size:11px;color:#555;line-height:1.45">In-line reiteration. First signs of customer destocking named in the same document — conflict noted, score capped.</td><td class="score-cell">⚪</td></tr>
+      <tr class="older changed" onclick="hlDocRow(this)"><td>Oct-23</td><td>FY24<br>H1 TU</td><td class="g-raise">🟢 RAISE</td><td>"on track to deliver full year underlying earnings in-line with the Board's <strong>recently upgraded expectations</strong>"</td><td style="font-size:11px;color:#555;line-height:1.45">Upgrade at H1 FY24 on margin strength, not volume: organic orders still negative, B/B 0.84 in Q1 rising to 0.91 in Q2. A raise resting on cost, with the demand line deteriorating underneath.</td><td class="score-cell">🟢</td></tr>
+      <tr class="older" onclick="hlDocRow(this)"><td>Dec-23</td><td>FY24<br>H1 R</td><td class="g-flat">flat</td><td>"on track to deliver full year underlying earnings in line with the Board's expectations." CEO: "remains on track… well positioned to continue making good progress"</td><td style="font-size:11px;color:#555;line-height:1.45">H1 results hold the upgraded guide. Margin 12.9% reported (+1.4pp at constant currency).</td><td class="score-cell">⚪</td></tr>
+      <tr class="older" onclick="hlDocRow(this)"><td>Feb-24</td><td>FY24<br>Q3 TU</td><td class="g-flat">flat</td><td>"on track to deliver full year underlying earnings in-line with the Board's expectations." "Sales at the start of Q4 have returned to organic growth"</td><td style="font-size:11px;color:#555;line-height:1.45">In-line held while organic sales fall 7% in the period; first orders growth since Sep-22 (+3%) cited as the offset.</td><td class="score-cell">⚪</td></tr>
+      <tr class="older" onclick="hlDocRow(this)"><td>Apr-24</td><td>FY24<br>FY TU</td><td class="g-flat">flat</td><td>"on track to deliver growth in full year underlying earnings in-line with the Board's expectations"</td><td style="font-size:11px;color:#555;line-height:1.45">Full-year guide held. Organic sales for the year 2% lower; acquisitions carrying reported growth.</td><td class="score-cell">⚪</td></tr>
+      <tr class="older" onclick="hlDocRow(this)"><td>Jun-24</td><td>FY24<br>R</td><td class="g-flat">flat</td><td>"Expectations for the new year unchanged." "well positioned to make further good progress" FY25 guide initiated: in-line.</td><td style="font-size:11px;color:#555;line-height:1.45">FY24 results in line. Net debt steps up to £104.0m on five acquisitions — disclosed, so no sweep flag.</td><td class="score-cell">⚪</td></tr>
+      <tr class="older" onclick="hlDocRow(this)"><td>Jul-24</td><td>FY25<br>Q1 TU</td><td class="g-flat">flat</td><td>"Board's underlying earnings expectations for this year unchanged"</td><td style="font-size:11px;color:#555;line-height:1.45">In-line reiteration with organic sales 12% lower — the trough quarter. No book-to-bill printed in this update.</td><td class="score-cell">⚪</td></tr>
+      <tr class="older" onclick="hlDocRow(this)"><td>Oct-24</td><td>FY25<br>H1 TU</td><td class="g-flat">flat</td><td>"Group remains on-track with the Board's underlying earnings expectations for this financial year unchanged"</td><td style="font-size:11px;color:#555;line-height:1.45">H1 guide held; organic orders +1% for the half, B/B recovering to 0.98 from 0.89. Sales still negative at −7% in Q2.</td><td class="score-cell">⚪</td></tr>
+      <tr class="older" onclick="hlDocRow(this)"><td>Dec-24</td><td>FY25<br>H1 R</td><td class="g-flat">flat</td><td>"On track to deliver full year underlying earnings in line with the Board's expectations." Controls "later-cycle businesses, is expected to follow"</td><td style="font-size:11px;color:#555;line-height:1.45">H1 results reiterate. Organic orders +1%, organic sales −10%. Deleveraging under way.</td><td class="score-cell">⚪</td></tr>
       <tr onclick="hlDocRow(this)"><td>Jan-25</td><td>FY25<br>Q3 TU</td><td class="g-flat">flat</td><td>"Group remains on-track to deliver full year underlying earnings in line with the Board's expectations"</td><td style="font-size:11px;color:#555;line-height:1.45">In-line held. B/B 1.01, the first reading above par in two years; orders −6% against a strong prior-year comparator.</td><td class="score-cell">⚪</td></tr>
       <tr class="changed" onclick="hlDocRow(this)"><td>Apr-25</td><td>FY25<br>FY TU</td><td class="g-raise">🟢 RAISE</td><td>"underlying earnings for FY2024/25 expected to be <strong>slightly ahead of Board expectations</strong>"</td><td style="font-size:11px;color:#555;line-height:1.45">Raise on Q4 strength: orders +15% organically, +11% sequentially. Sales still −4% organically — the raise leads the sales line.</td><td class="score-cell">🟢</td></tr>
       <tr class="changed" onclick="hlDocRow(this)"><td>Jun-25</td><td>FY25<br>R</td><td class="g-raise">🟢 RAISE</td><td>"Group is well placed to continue its resilient performance." FY26 guide: "full year adjusted earnings in line with Board expectations." Margin target upgraded 15%→17% by FY2029/30.</td><td style="font-size:11px;color:#555;line-height:1.45">FY25 results confirm the Apr-25 raise delivered and open FY26 in line. Margin 14.3%.</td><td class="score-cell">🟢 / ⚪</td></tr>
@@ -830,14 +931,18 @@ details[open] summary::before { content: '▾ '; }
     </tbody>
   </table>
 
-  <details>
-    <summary>Notes — §3</summary>
-    <div class="drawer-body">Guide-vs-outturn credibility: scanning the G column against what followed, every raise in the window resolved as a genuine beat — Jan-23 (FY23, met, adj. EPS +20%), Oct-23 (H1 FY24 upgrade, met), Apr-25 (FY25, met). No guide in the record was cut or quietly walked back. The Jul-26 RAISE is the fourth and the earliest-in-year of the record, so it carries the credit that history earns rather than a discount. The series builds a credibility record: this is a conservative guider that raises only when it has real evidence. The Apr-26 Q4+FY TU used "consensus" (40.1p) rather than "Board's expectations" as its anchor — a minor disclosure pivot noted in Drift; the Q1 FY27 TU reverts to "Board's expectations." The shift was a single-document event.</div>
-  </details>
+  
 </div>
 
 
-  <details>
+  
+
+  <details class="top"><summary>§3 workings — notes and guidance passages</summary>
+    <div class="drawer-body">
+<details class="sub">
+    <summary>Notes — §3</summary>
+    <div class="drawer-body">Guide-vs-outturn credibility: scanning the G column against what followed, every raise in the window resolved as a genuine beat — Jan-23 (FY23, met, adj. EPS +20%), Oct-23 (H1 FY24 upgrade, met), Apr-25 (FY25, met). No guide in the record was cut or quietly walked back. The Jul-26 RAISE is the fourth and the earliest-in-year of the record, so it carries the credit that history earns rather than a discount. The series builds a credibility record: this is a conservative guider that raises only when it has real evidence. The Apr-26 Q4+FY TU used "consensus" (40.1p) rather than "Board's expectations" as its anchor — a minor disclosure pivot noted in Drift; the Q1 FY27 TU reverts to "Board's expectations." The shift was a single-document event.</div>
+  </details><details class="sub">
     <summary>Guidance passages — fuller verbatim text, trailing 12 months</summary>
     <div class="drawer-body">
       <p style="font-size:11px;color:#777;margin-bottom:10px">The sentence carrying the anchor or guide, plus surrounding qualifiers, for every qualifying document in the trailing twelve months. This is the comparison set for scoring the next incremental read — prior wording verbatim, not paraphrase. Entries roll forward and are deleted, not summarised, as documents age out.</p>
@@ -870,6 +975,8 @@ details[open] summary::before { content: '▾ '; }
         <div style="font-size:12px;line-height:1.55;color:#222">"The positive outlook continues with full year adjusted earnings tracking ahead of the Board's expectations."</div>
       </div>
       <p style="font-size:11px;color:#777;font-style:italic;margin-top:4px">Editorial note: no document in this window omits an expectations anchor. The Apr-26 update is the only one anchored to consensus rather than the Board — the switch is recorded in that row's Context cell. An absence note describes a whole document and is only as good as the capture; each of the seven above was re-opened at source for this build.</p>
+    </div>
+  </details>
     </div>
   </details>
 
@@ -1147,13 +1254,7 @@ details[open] summary::before { content: '▾ '; }
   </table>
   </div><!-- /drift-wrap -->
 
-  <details>
-    <summary>Notes — Drift</summary>
-    <div class="drawer-body">
-      <strong>Rightmost column (Q1 FY27 TU — freshest disclosure signal):</strong> Order book is 🟡 qualitative (TUs quantified the £m book through FY23 — £240m Jul-22, £257m Oct-22 — but that habit lapsed after FY23, so the absence is a lapsed cadence, not a withhold; B/B 1.15 is the functional equivalent). Margin, EPS, and design wins are — (not in Q1 TU cadence; no established precedent for Q1 TU to carry these). Revenue is ✅ (+10% CER / +6% organic). Organic orders and revenue both ✅. Guide is ✅ raised. No ❌ withhold fires in this column.<br><br>
-      <strong>Disclosure pivot (Apr-26 Q4+FY TU):</strong> First time the company anchored its FY guide to "consensus" (40.1p cited) rather than "Board's expectations." The Q1 FY27 TU reverts to "Board's expectations." Single-doc event; noted but not scored as a condition.
-    </div>
-  </details>
+  
 </div>
 
 <!-- ════════════════════════════ JAVASCRIPT ════════════════════════════ -->
@@ -1209,9 +1310,20 @@ function hlDrift(th) {
   lastDtype = dtype;
 }
 
+
+function toggleOlder(){
+  const tb=document.getElementById('text3');
+  const lab=document.getElementById('expLabel');
+  const open=!tb.classList.contains('collapsed');
+  if(open){tb.classList.add('collapsed');lab.textContent='▸ Show 15 earlier prints — Jul-22 to Dec-24';}
+  else{tb.classList.remove('collapsed');lab.textContent='▾ Hide 15 earlier prints — Jul-22 to Dec-24';}
+}
+
 // §3 Text+G: click row → highlight (Doc column type)
 let lastRow = null;
 function hlDocRow(tr) {
+  if (tr.classList.contains('older')) { const tb=document.getElementById('text3');
+    if (tb.classList.contains('collapsed')) toggleOlder(); }
   if (lastRow === tr) {
     tr.classList.remove('doc-hl');
     lastRow = null;
@@ -1226,70 +1338,21 @@ function hlDocRow(tr) {
 <!-- ════════════════════════════ SPEC REFERENCE (v3.11) ════════════════════════════ -->
 
 <div class="section">
-  <details class="spec-drawer">
-    <summary>Workflow specification — Longitudinal Drift Tracker v3.11 (reference)</summary>
+  
+
+  <details class="top"><summary>§4 workings — notes</summary>
     <div class="drawer-body">
-      <p style="font-size:11.5px;color:#666;margin-bottom:8px">The full framework this scorecard is built to. Reference only — it renders nothing and scores nothing.</p>
-      <pre>LONGITUDINAL DRIFT TRACKER — v3.11
-
-Purpose: detect direction-of-travel changes across a company&#x27;s full RNS history before they show in reported numbers. Multi-RNS turn detector, not a single-announcement scorer.
-
-Operating model: one project per ticker. Analysis runs IN CHAT in a single gated turn; the HTML is built only at GO, from chat-approved content, with no re-derivation. Thereafter the operator pastes each new RNS for an incremental read. A datablock, if supplied, is a consensus/C-series yardstick only — it never seeds a table.
-
-  • Soft signals lead, hard signals confirm, and the lag between them is the edge.
-  • The ticker&#x27;s key forward metric leads even the soft signals — and its disclosure breaks before its level does.
-  • The aggregate can hide the turn. A record half can be built on a fading quarter — the latest sub-period is scored separately, and before its parent.
-  • Sequential QonQ is the earliest hard-number turn signal in printed figures. YoY is 12–18 months late and is not used for scoring.
-  • A company&#x27;s own guide is the earliest number of all: a guide moved is a turn event in its own right.
-
-The most recent RNS is the deliverable&#x27;s centre of gravity: it is the Buy/Sell RNS, and the trailing 12 months must be exact.
-
-ARCHITECTURE
-Chat (turn 1): Manifest · Ledger · per-metric forward tables · §2.0 read · Text+G · Drift · B/S sweep · draft verdict — all correctable before commit.
-HTML (turn 2): Verdict card · §1 Ledger · §2 unified forward grid · §2.0 · §3 Text+G · §4 Drift matrix. Forward signals only; no backbone tables, no statutory columns.
-Statutory figures read directly from each H1/FY RNS where a wedge check needs them — never rendered as tables, never scored.
-
-TURN 1 — THE READ (fixed output order, then STOP)
-FY-label anchor: all period labels derive from the company&#x27;s own stated periods in the RNS, never from filenames or price data. A change in stated year-end is itself a Drift event (surfaced as the FY-end pill).
-Reading standard: every qualifying RNS — all narrative sections read in full; statutory tables/notes swept by targeted search. Grep alone is never a read. Confirm as a per-document METHOD LIST (FULL / NARR+SWEEP).
-Two-tier accuracy: older than 12 months = transcription grade; trailing 12 months = every figure verified directly, every derivable quarter computed, exact.
-
-1. Document Manifest — every file: date · label · qualifying vs noise (by CONTENT not title). Sets grid width: Q1/Q3 TUs present → 17-cell grid; absent → 9-cell.
-2. §1 Metric Ledger — 4–5 scored metrics ranked by lead time. Rank 1 is the ticker&#x27;s tell, cited with evidence. On quarterly disclosers, quarterly revenue qualifies. EPS never scored unless it demonstrably leads; statutory never scored. Bands: H-grain ±2.0pp · Q-grain ±5.0pp.
-3. §2 Per-metric forward tables — one block per pick, from first print, no truncation. Grid blocks = ledger rows. Rows: Value · Δ vs prior · Turn, plus period line. Withheld-against-cadence = ❌ (feeds Drift). Quarterly derivations Q2†=H1−Q1, Q4†=FY−9M, cross-verified. Turn arithmetic computed in ONE script, comparison basis hard-coded per metric type. Sequential trigger (Q-grain): any negative QonQ fires 🔴↘. Rate trigger (banded). Leading metrics scored on direction, never level. HARD GATE: no half/year scored until its derivable quarters are computed.
-4. §2.0 Most-recent-RNS current-state read — four checks: Sequential · Same-type-vs-last-year · Every derivable sub-period · Guidance-vs-prior-guide. Output: four reads (collapsed drawer) + Driver Bridge + single current-state bar (bridge left, bar right, 50/50).
-   Driver Bridge: decomposes the guided profit line for the Buy/Sell period. Verbatim header: &quot;🍺 IDIOT&#x27;S GUIDE TO THE [LINE] BRIDGE — why profit went [up/down] (£Xm → £Ym)&quot;. Max 4 rows: driver · signed contribution · tint · clause. Contributions only from figures printed in the RNS or grid; unquantified = n/q. Language: &quot;idiot&#x27;s guide&quot; register — everyday mechanism words (banned: comp, constant currency, structural, mix-shift, basis, gearing, operating line, drag, headwind, tailwind, leverage, run-rate, normalised, underlying), exact numbers, one wry aside, one vivid image, invented fresh from THIS company&#x27;s world. Caption: &quot;So in one sentence:&quot; + reversal conditions. Bridge explains fired conditions; never fires one, seeds nothing, counts toward nothing.
-   Current-state bar: ≤100 words carrying the resulting colour (🟢/🟡/🔴 TURNING UP / STABLE—WATCH / TURNING DOWN) + any load flag.
-5. §3 Text + G — merged table: Date · Doc · G · Guide met? · Verbatim phrase · Score. Every print (min 3yr) gets a row. G column fires vs the company&#x27;s own prior guide (🔴 CUT / 🟢 RAISE / flat / —). &quot;Guide met?&quot; resolves only at a results row, one trail line per guide vs the final actual (conservatism/rashness read). Score per lexicon, profit line, verbatim quote mandatory.
-6. §4 Drift — Disclosure Matrix. Every qualifying doc a column; manifest count = column count. Cells: ✅ quantified · 🟡 qualitative · ❌ verified blank vs cadence · ⊘ expected update not issued. Every cell document-verified. First note reserved for the rightmost column.
-7. Silent balance-sheet sweep (every results doc; renders on a hit). Tier 1 (⛔): net cash→net debt crossover; net debt rising 2+ periods without disclosed acquisition; going-concern escalation; covenant stress; ND/EBITDA ~2.5–3.0x. Tier 2 (note; 2+ = flag). Solvency grep. Wedge check adjusted vs statutory.
-8. Draft verdict — direction call · headline ≤25 words (a latest-RNS G fire leads) · meta row · Current State / Fired / Caveat / Next ≤18 words · bullets.
-
-PAUSE — reply AUDIT (Stages A–E) or GO.
-
-INFLECTION TRIGGER — 2 OF 3. Alert fires on 2+ conditions converging same direction. B/S outside the count; Tier-1 = automatic ⛔.
-Deterioration: 1. Hard/G — sequential QonQ decline; or 2+ consecutive 🔴; or half-vs-quarter divergence; or growth decelerating 2+; or margin compression; or a G CUT. 2. Text — falling 2+ prints or any ≤−1. 3. Drift — a leading metric withheld/qualitative vs cadence.
-Green-shoot mirror: sequential growth resuming / 2+ 🟢↗ / margin expanding / G RAISE · lexicon rising 2+ from 0 or below · dropped metric re-quantified.
-Single-condition fire = verdict note — except a G fire on the latest RNS, which always reaches the verdict.
-
-LEXICON (−3 to +3):
-🟢🟢🟢 &quot;materially/substantially ahead&quot;; guidance raised twice in window.
-🟢🟢 &quot;comfortably/well ahead&quot;, &quot;ahead of expectations&quot;, &quot;not less than £X&quot;, &quot;ahead of management&#x27;s expectations&quot;.
-🟢 &quot;slightly/marginally ahead&quot;, &quot;upper end of the range&quot;, &quot;confidence we will continue to grow&quot;.
-⚪ &quot;in line with market expectations&quot;, &quot;on track&quot;, flat reiteration.
-🔴 &quot;broadly in line&quot;; &quot;Board&#x27;s/management&#x27;s expectations&quot; replacing &quot;market&quot;; first &quot;second-half weighted&quot;; an update omitting an expectations anchor where prior ones carried one.
-🔴🔴 &quot;slightly below/short of&quot;; a named unresolved headwind in the growth-carrying line; previously-numeric guidance gone qualitative; in-line made conditional; an explicit pre-flagged down-year guide.
-🔴🔴🔴 &quot;below expectations&quot;, &quot;challenging conditions&quot;, explicit unflagged guidance cut.
-
-NOTES RULE: max ONE bullet per table, ONE sentence — except §2 (one sub-entry per rank), §2.0 and verdict (up to THREE on the Buy/Sell RNS). A note survives only if forward-looking AND concerns the trailing 12 months.
-
-DATA INTEGRITY: RNS governs external sources; later audited figure governs earlier &quot;c.&quot; estimate. Never invent/estimate/annualise/fill. Missing = —, never 0. Derived figures marked †, workings shown once, second-route cross-verification. Guides never converted to actuals. Broker/datablock = yardstick only.
-
-v3.11 CHANGES: added §2.0 Driver Bridge (≤4 rows, guided-line anchor, RNS-sourced contributions, six-month-clarity register with mandatory personality, banned-word self-search, verbatim 🍺 header, caption reversal conditions, 50/50 pairing with the bar, one card echo bullet). Turn-methodology paragraph and the four §2.0 checks demoted to collapsed drawers; ALL drawers closed by default. Comic hand font locked for bridge title + row labels only.</pre>
+<details class="sub">
+    <summary>Notes — Drift</summary>
+    <div class="drawer-body">
+      <strong>Rightmost column (Q1 FY27 TU — freshest disclosure signal):</strong> Order book is 🟡 qualitative (TUs quantified the £m book through FY23 — £240m Jul-22, £257m Oct-22 — but that habit lapsed after FY23, so the absence is a lapsed cadence, not a withhold; B/B 1.15 is the functional equivalent). Margin, EPS, and design wins are — (not in Q1 TU cadence; no established precedent for Q1 TU to carry these). Revenue is ✅ (+10% CER / +6% organic). Organic orders and revenue both ✅. Guide is ✅ raised. No ❌ withhold fires in this column.<br><br>
+      <strong>Disclosure pivot (Apr-26 Q4+FY TU):</strong> First time the company anchored its FY guide to "consensus" (40.1p cited) rather than "Board's expectations." The Q1 FY27 TU reverts to "Board's expectations." Single-doc event; noted but not scored as a condition.
+    </div>
+  </details>
     </div>
   </details>
 </div>
 
-<script type="application/json" id="drift-entry">{"ticker":"DSCV","company":"discoverIE Group plc","kind":"ticker","direction":"up","headline":"Guide lifted to \"tracking ahead\" after one quarter — orders +31% organic, book-to-bill 1.15; first multi-signal green since recovery began","trigger":"2-of-3: Condition 1 (G-RAISE on Buy/Sell RNS, LEAD metric) + Condition 2 (Text rising 2 consecutive prints)","alert":true,"fired":2,"fired_of":3,"rns_type":"Q1 TU","rns_date":"2026-07-24","build_date":"2026-08-06","spec_version":"4.8","next_test":"H1 FY27 TU (Oct-26): organic orders Q2 >=+10%? Controls organic sales positive? Proforma gearing tracking to 1.8x?","grid":{"labels":["R1","R2","R3","R4","R5"],"periods":["Q1FY25","Q2FY25","Q3FY25","Q4FY25","Q1FY26","Q2FY26","Q3FY26","Q4FY26","Q1FY27"],"rows":["grrgrgggg","grrgrgagg","-rrr-rrga","rggrggagg","ggggggrr-"],"note":"One row per ledger rank, R1-R5, right-anchored on the Q1 FY27 Buy/Sell print."},"url":"DSCV.html"}</script>
+<script type="application/json" id="drift-entry">{"ticker":"DSCV","company":"discoverIE Group plc","kind":"ticker","direction":"up","headline":"Guide lifted to \"tracking ahead\" after one quarter — orders +31% organic, book-to-bill 1.15; first multi-signal green since recovery began","trigger":"2-of-3: Condition 1 (G-RAISE on Buy/Sell RNS, LEAD metric) + Condition 2 (Text rising 2 consecutive prints)","alert":true,"fired":2,"fired_of":3,"lights":"gg-","rns_type":"Q1 TU","rns_date":"2026-07-24","build_date":"2026-08-06","spec_version":"5.1","next_test":"H1 FY27 TU (Oct-26): is Q2 organic orders growth still double-digit, are Controls sales positive, is borrowing tracking to 1.8x?","grid":{"labels":["R1","R2","R3","R4","R5"],"periods":["Q1 25","Q2 25","Q3 25","Q4 25","Q1 26","Q2 26","Q3 26","Q4 26","Q1 27"],"rows":["grrgrgggg","grrgrgagg","-rrr-rrga","rggrggagg","ggggggrr-"],"note":"One row per ledger rank at quarter grain; rightmost cell is the 24 Jul 2026 Q1 trading update."},"url":"DSCV.html"}</script>
 </body>
 </html>
