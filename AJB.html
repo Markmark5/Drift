@@ -35,7 +35,7 @@
     display:flex; border-radius:12px; overflow:hidden;
     border:6px solid var(--green); background:var(--paper);
   }
-  .verdict-card.tier1{border-color:var(--red);}
+  .verdict-card.tier1flag .rail{background:var(--red-bg);} .verdict-card.tier1flag .rail::after{content:"⛔"; position:absolute; bottom:14px; font-size:20px;}
   .rail{
     width:82px; flex:0 0 82px; background:var(--green-bg);
     display:flex; flex-direction:column; align-items:center; justify-content:flex-start;
@@ -55,13 +55,10 @@
   .headline{font-size:22px; font-weight:700; margin:0 0 12px; line-height:1.3;}
   .meta-row{display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-bottom:16px; font-size:12.5px;}
   .pill{background:var(--panel); border:1px solid var(--line); border-radius:20px; padding:4px 12px; font-weight:600;}
-  .pill.alerts{background:var(--green-bg); color:var(--green); border-color:var(--green);}
   .dot{color:var(--sub);}
   .bs-tag{font-weight:600; color:var(--green);}
   .grid2x2{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:14px;}
-  .soft-card{background:var(--panel); border-radius:10px; padding:12px 14px; font-size:12.5px; line-height:1.55;}
-  .soft-card.caveat{background:var(--amber-bg);}
-  .soft-card .lbl{font-weight:700; text-transform:uppercase; font-size:10.5px; letter-spacing:.5px; color:var(--sub); display:block; margin-bottom:4px;}
+  .soft-card .lbl{font-weight:600; text-transform:uppercase; font-size:13px; letter-spacing:.06em; color:var(--sub); display:block; margin-bottom:4px;}
   .card-bullets{font-size:12.5px; line-height:1.6; margin:0; padding-left:18px;}
   .card-bullets li{margin-bottom:4px;}
 
@@ -148,7 +145,65 @@
   .state-bar.watch{border-color:var(--amber); background:#fdf4e3;}
   .state-bar.down{border-color:var(--red); background:#fdecea;}
   .state-bar .darkbar .cav{font-size:20px;}
-  .state-bar .sb-inner{flex:1; display:flex; align-items:center; padding:16px; font-size:13px; line-height:1.55;}
+  .state-bar .sb-inner{flex:1; padding:14px 16px; font-size:13px; line-height:1.55;}
+  .sb-lead{font-weight:700; margin:0 0 8px; font-size:13.5px;}
+  .sb-bullets{margin:0; padding-left:18px; font-size:13px; line-height:1.5;}
+  .sb-bullets li{margin-bottom:4px;}
+
+
+  /* ===== v5.1 VERDICT CARD, LIGHTS, BOXES, DRAWERS ===== */
+  .verdict-card{border:6px solid var(--green); border-radius:12px; overflow:hidden;}
+  .verdict-card.down{border-color:var(--red);} .verdict-card.watch{border-color:var(--amber);}
+  /* trigger lights */
+  .lights{background:#2b2a26; border-radius:12px; padding:12px 13px; max-width:1100px; margin:0 0 14px;}
+  .lampsrow{display:flex; gap:14px; align-items:stretch;}
+  .lamps{display:grid; grid-template-columns:repeat(3,1fr); gap:10px; flex:1;}
+  .lamp{background:#333129; border-radius:9px; padding:10px 12px; position:relative;}
+  .lamp.lit{background:#3b3934;}
+  .lamp .bulb{width:28px; height:28px; border-radius:50%; background:#57544c; border:2px solid #6b675e; box-shadow:0 0 0 4px rgba(255,255,255,.06); margin-bottom:8px;}
+  .lamp.red .bulb{background:#ff3b30; border-color:#ff6f66;}
+  .lamp.green .bulb{background:#21d05e; border-color:#5ee08d;}
+  .lamp.amber .bulb{background:#ffb020; border-color:#ffc75c;}
+  .lamp .lname{font-size:15.5px; font-weight:700; color:#a8a49a; line-height:1.2;}
+  .lamp.lit .lname{color:#fff;}
+  .lamp .lreason{font-size:11.5px; color:#c9c6bd; line-height:1.4; margin-top:4px;}
+  .lamp .ldate{position:absolute; top:9px; right:11px; font-size:11px; color:#c9c6bd;}
+  .lamp.amber .ldate, .lamp:not(.lit) .ldate{color:#8d8981;}
+  .tally{display:flex; flex-direction:column; align-items:center; justify-content:center; padding:0 6px 0 10px; border-left:1px solid #4a473f; min-width:64px;}
+  .tally .n{font-size:26px; font-weight:700; color:#fff; line-height:1;}
+  .tally .f{font-size:10.5px; letter-spacing:.12em; color:#c9c6bd; margin-top:4px;}
+  .bsstrip{margin-top:11px; border-top:1px dashed #57544c; padding-top:10px; display:flex; align-items:center; gap:10px;}
+  .bsstrip .bulb{width:20px; height:20px; border-radius:50%; background:#21d05e; border:2px solid #5ee08d; flex:none;}
+  .bsstrip .bt{font-size:12.5px; color:#fff; font-weight:600;}
+  .bsstrip .bsub{font-size:11px; color:#8d8981; margin-left:auto;}
+  /* four boxes */
+  .grid2x2 .soft-card{background:#f2f1ec; border:none; border-top:3px solid var(--green); border-radius:0 0 10px 10px; padding:12px 15px 13px;}
+  .verdict-card.down .grid2x2 .soft-card{border-top-color:var(--red);}
+  .verdict-card.watch .grid2x2 .soft-card{border-top-color:var(--amber);}
+  .soft-card .bhead{font-size:19px; font-weight:700; line-height:1.2; margin:2px 0 5px;}
+  .soft-card .bsent{font-size:13px; line-height:1.45;}
+  /* two-tier drawers */
+  details.tier1{border:1px solid #c6c2b9; background:var(--paper); border-radius:10px; margin-top:16px; padding:0 13px;}
+  details.tier1 > summary{cursor:pointer; font-size:14px; font-weight:600; padding:13px 0;}
+  details.tier1 details.tier2{background:#fff; border:1px solid var(--line); border-radius:8px; margin:12px 0; padding:0 12px;}
+  details.tier1 details.tier2 > summary{cursor:pointer; font-size:12.5px; font-weight:600; padding:9px 0;}
+  details.tier1 .dbody{font-size:12.5px; line-height:1.55; padding-bottom:12px;}
+  details.tier2 .dbody{padding-bottom:10px;}
+  /* card strip */
+  .stripwrap{display:inline-block;}
+  .striprow{display:flex; align-items:center; gap:3px; margin-bottom:3px;}
+  .striprow .rlab{width:28px; font-size:11px; color:var(--sub); font-weight:600;}
+  .cell{width:26px; height:22px; border-radius:3px; display:flex; align-items:center; justify-content:center; font-size:10px; color:#fff; background:#ddd;}
+  .cell.g{background:#1e7a45;} .cell.r{background:#b3261e;} .cell.a{background:#c99a1e;}
+  .cell.x{background:#8d8981;} .cell.dash{background:#e6e3dc;}
+  .cell.bs{outline:2px solid #16150f; outline-offset:1px;}
+  .stripper{font-size:10px; color:var(--sub); margin-left:31px;}
+  pre.entry{background:#f7f6f2; border:1px solid var(--line); border-radius:6px; padding:10px; font-size:11px; overflow-x:auto; white-space:pre-wrap; user-select:all;}
+  /* §3 collapse */
+  #text3 tr.early{display:none;}
+  #text3.showearly tr.early{display:table-row;}
+  tr.expander td{background:#efece4; cursor:pointer; font-size:12px; font-weight:600; text-align:left; padding:8px 10px;}
+  tr.expander td:hover{background:#e6e2d8;}
 
 </style>
 </head>
@@ -160,7 +215,7 @@
 <!-- ===================== VERDICT CARD ===================== -->
 <section>
 <div class="verdict-wrap">
-  <div class="verdict-card">
+  <div class="verdict-card up">
     <div class="rail">
       <div class="badge">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1a7a3c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 6"></polyline><polyline points="14 6 21 6 21 13"></polyline></svg>
@@ -168,16 +223,44 @@
       <div class="rail-label">TURNING UP</div>
     </div>
     <div class="card-body">
-      <div class="headline">Q3 TU prints record £3.0bn net inflows (+43% YoY), third straight sequential rise; H1's guidance RAISE stands; MPS fee cut pre-announces an FY27 margin headwind.</div>
+      <div class="headline">Q3 TU prints record £3.0bn net inflows (+43% YoY), third straight sequential rise; H1's guidance RAISE stands undisturbed.</div>
       <div class="meta-row">
-        <span class="pill alerts">2/3 fired</span>
+        <span class="pill">Q3 Trading Update · 23 Jul 2026</span>
         <span class="dot">·</span>
-        <span class="pill">Q3 TU (Buy/Sell)</span>
-        <span class="dot">·</span>
-        <span class="pill">23-Jul-26</span>
+        <span class="pill">FY-end 30 Sep</span>
         <span class="dot">·</span>
         <span class="bs-tag">B/S clean</span>
       </div>
+
+      <div class="lights">
+        <div class="lampsrow">
+        <div class="lamps">
+          <div class="lamp lit green">
+            <span class="ldate">May-26 · Jul-26</span>
+            <div class="bulb"></div>
+            <div class="lname">Numbers &amp; guide</div>
+            <div class="lreason">Record £3.0bn quarter, third straight rise; guide raised at H1</div>
+          </div>
+          <div class="lamp">
+            <div class="bulb"></div>
+            <div class="lname">Language</div>
+            <div class="lreason">No print at or below −1 in 24; tone flat and calibrated</div>
+          </div>
+          <div class="lamp">
+            <div class="bulb"></div>
+            <div class="lname">Disclosure</div>
+            <div class="lreason">Nothing withheld; advised/D2C split newly headlined</div>
+          </div>
+        </div>
+        <div class="tally"><span class="n">1/3</span><span class="f">FIRED</span></div>
+        </div>
+        <div class="bsstrip" style="width:100%;">
+          <span class="bulb"></span>
+          <span class="bt">Clean · net cash, no debt</span>
+          <span class="bsub">Sweep sits outside the 2-of-3 count</span>
+        </div>
+      </div>
+
       <details class="company-guide">
         <summary class="darkbar"><span class="emoji">💡</span><span class="cav">Idiot's guide to the company — What AJ Bell plc actually does</span></summary>
         <div class="cg-body">
@@ -193,16 +276,18 @@
           <p class="vintage">As at H1 FY26 (21-May-26).</p>
         </div>
       </details>
+
       <div class="grid2x2">
-        <div class="soft-card"><span class="lbl">State</span>4 of 5 ranked metrics 🟢; revenue margin 🟡 (+1.0bps, inside ±2.0 band); PBT margin 🟡 (43.2%, −1.7pp).</div>
-        <div class="soft-card"><span class="lbl">Fired</span>Sequential growth resuming/accelerating (record £3.0bn Q3, third straight rise, all reported figures) + G-RAISE at H1 (May-26).</div>
-        <div class="soft-card caveat"><span class="lbl">Caveat</span>PBT margin's 2-period H-on-H slide (46.8→44.9→43.2%) not yet turned; deliberate reinvestment, revenue margin rose through it.</div>
-        <div class="soft-card"><span class="lbl">Next</span>Oct FY TU: Q4 inflows vs summer-trough norm, customer-add pace after Q3's −11k dip; Dec-26: does sandbag #3 arrive, now with a real anchor (MPS 0.15%→0.12% cut from 1-Oct-26)?</div>
+        <div class="soft-card"><span class="lbl">Current state</span><div class="bhead">Ahead of guide</div><div class="bsent">Every flow metric at a record; revenue margin 33.4bps sits above the raised FY26 guide set in May.</div></div>
+        <div class="soft-card"><span class="lbl">Warning you get</span><div class="bhead">One to two quarters</div><div class="bsent">Net inflows turned two quarters before revenue margin at both prior turns; it is now at a series high.</div></div>
+        <div class="soft-card"><span class="lbl">Argues against</span><div class="bhead">Markets did the lifting</div><div class="bsent">£9.8bn of the £12.8bn AUA rise was market movement, and the MPS fee cut trims margin from October.</div></div>
+        <div class="soft-card"><span class="lbl">Next test</span><div class="bhead">Oct-26 FY TU</div><div class="bsent">Q4 net inflows against the summer-trough habit, and whether customer adds recover from Q3's 39k.</div></div>
       </div>
+
       <ul class="card-bullets">
-        <li>Serial guide-beater: Dec-24 and Dec-25 both guided revenue margin to "moderate slightly"; both reversed to RAISE by the following May — the Dec caution carries a sandbagging discount.</li>
-        <li>Reg-capital surplus (222%→206%→157%) and cash (£197m→£188m→£168m) both drift down two periods running, wholly explained by buybacks + 21-year dividend streak — logged, not fired.</li>
-        <li>Retention rate ticked up 94.1%→94.6% (FY25→H1FY26) with continuous disclosure — a minor confirming green shoot, not a disclosure event.</li>
+        <li>Measured lead rests on two turns only (FY24 and FY25 margin guides) — a two-point calibration, and both were company sandbags rather than trading turns.</li>
+        <li>Flips down if Q4 net inflows print below ~£1.7bn, or if Dec-26 walks the FY27 revenue-margin guide back beyond the MPS cut's disclosed effect.</li>
+        <li>Reg-capital surplus (222%→206%→157%) and cash (£197m→£188m→£168m) both fall two periods running — buyback-and-dividend driven, logged not fired.</li>
       </ul>
     </div>
   </div>
@@ -212,6 +297,9 @@
 <!-- ===================== §1 LEDGER ===================== -->
 <section>
 <h2>§1 · Metric Ledger</h2>
+<details class="tier1">
+<summary>The metric ledger — five ranks, roles and why each was chosen</summary>
+<div class="dbody">
 <table>
 <tr><th style="width:32px;">Rank</th><th>Metric</th><th style="width:80px;">Type</th><th>Why it leads for this ticker</th><th style="width:110px;">Cadence</th><th style="width:70px;">Status</th></tr>
 <tr><td>1</td><td><strong>Platform net inflows (£bn)</strong></td><td>Flow</td><td>AJB's own lead bullet in all 23 documents without exception — first hard number under "Platform business" in every TU and every Results doc; drives AUA and, via revenue margin, revenue. The ticker's tell.</td><td>Quarterly (direct print)</td><td>🟢</td></tr>
@@ -221,6 +309,8 @@
 <tr><td>5</td><td><strong>Platform customers, closing (k)</strong></td><td>Snapshot</td><td>Organic-growth confirming metric, printed every quarter; basis for the retention-rate cross-check.</td><td>Quarterly</td><td>🟢</td></tr>
 </table>
 <p class="methodology">Band decisions: rate metrics (revenue margin, PBT margin) — H-grain ±2.0bps, held constant this run (bps used in place of pp since AJB's own KPI is bps-denominated). Flow/snapshot metrics scored on the sequential-decline / YoY-like-for-like rules, not a banded rate test. <strong>Proposed ledger change (flagged, not swapped mid-run):</strong> Underlying PBT margin shows a genuine two-period H-on-H deceleration that a Rank-6 slot would isolate explicitly rather than leaving folded into the B/S sweep.</p>
+</div>
+</details>
 </section>
 
 <!-- ===================== §2 GRID ===================== -->
@@ -247,7 +337,7 @@
 <th class="qtr-head" data-q="Q1">Q1</th><th class="qtr-head" data-q="Q2">Q2</th><th class="qtr-head" data-q="Q3">Q3</th><th class="qtr-head" data-q="Q4">Q4</th>
 <th class="qtr-head" data-q="Q1">Q1</th><th class="qtr-head" data-q="Q2">Q2</th><th class="qtr-head" data-q="Q3">Q3</th><th class="qtr-head" data-q="Q4">Q4</th>
 <th class="qtr-head" data-q="Q1">Q1</th><th class="qtr-head" data-q="Q2">Q2</th><th class="qtr-head" data-q="Q3">Q3</th><th class="qtr-head" data-q="Q4">Q4</th>
-<th class="qtr-head" data-q="Q1">Q1</th><th class="qtr-head" data-q="Q2">Q2</th><th class="qtr-head" data-q="Q3">Q3</th>
+<th class="qtr-head" data-q="Q1">Q1</th><th class="qtr-head" data-q="Q2">Q2</th><th class="qtr-head bsell" data-q="Q3">⭐ Q3 TU<br>Jul-26</th>
 </tr>
 </thead>
 <tbody>
@@ -376,32 +466,91 @@
 </table>
 </div>
 
-<details class="notes">
+<details class="tier1">
+<summary>§2 workings — card strip, rank notes, turn methodology</summary>
+<div class="dbody">
+
+<details class="tier2">
+<summary>🔲 Card strip — wall preview &amp; index entry</summary>
+<div class="dbody">
+<div class="stripwrap"><div class="striprow"><span class="rlab">R1</span><span class="cell g">g</span><span class="cell r">r</span><span class="cell r">r</span><span class="cell g">g</span><span class="cell g">g</span><span class="cell r">r</span><span class="cell r">r</span><span class="cell g">g</span><span class="cell g bs">g</span></div><div class="striprow"><span class="rlab">R2</span><span class="cell dash"></span><span class="cell a">a</span><span class="cell dash"></span><span class="cell a">a</span><span class="cell dash"></span><span class="cell a">a</span><span class="cell dash"></span><span class="cell a">a</span><span class="cell dash bs"></span></div><div class="striprow"><span class="rlab">R3</span><span class="cell g">g</span><span class="cell g">g</span><span class="cell g">g</span><span class="cell g">g</span><span class="cell g">g</span><span class="cell g">g</span><span class="cell g">g</span><span class="cell g">g</span><span class="cell g bs">g</span></div><div class="striprow"><span class="rlab">R4</span><span class="cell g">g</span><span class="cell g">g</span><span class="cell g">g</span><span class="cell g">g</span><span class="cell g">g</span><span class="cell g">g</span><span class="cell g">g</span><span class="cell g">g</span><span class="cell g bs">g</span></div><div class="striprow"><span class="rlab">R5</span><span class="cell g">g</span><span class="cell g">g</span><span class="cell g">g</span><span class="cell g">g</span><span class="cell g">g</span><span class="cell g">g</span><span class="cell g">g</span><span class="cell g">g</span><span class="cell g bs">g</span></div><div class="stripper">24Q3 24Q4 25Q1 25Q2 25Q3 25Q4 26Q1 26Q2 26Q3</div></div>
+<p style="font-size:11.5px; color:var(--sub); margin:10px 0 4px;">One row per ledger rank in rank order; cells transcribe the §2 grid's value rows. Rightmost cell (outlined) is the Buy/Sell Q3 FY26 column. Rank 2's dashes are the quarters where revenue margin structurally does not print.</p>
+<pre class="entry">{
+  "ticker": "AJB",
+  "company": "AJ Bell plc",
+  "kind": "ticker",
+  "direction": "up",
+  "headline": "Q3 TU prints record £3.0bn net inflows (+43% YoY), third straight sequential rise; H1's guidance RAISE stands undisturbed.",
+  "trigger": "Condition 1 only (green-shoot mirror): sequential growth accelerating to a record + G-RAISE at H1 May-26. Conditions 2 and 3 unlit.",
+  "alert": false,
+  "fired": 1,
+  "fired_of": 3,
+  "lights": "g--",
+  "rns_type": "Q3 TU",
+  "rns_date": "2026-07-23",
+  "build_date": "2026-07-29",
+  "spec_version": "v5.1",
+  "next_test": "Oct-26 FY TU: Q4 net inflows against the summer-trough habit, and whether customer adds recover from Q3's 39k.",
+  "url": "AJB.html",
+  "grid": {
+    "labels": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5"
+    ],
+    "periods": [
+      "Q3 24",
+      "Q4 24",
+      "Q1 25",
+      "Q2 25",
+      "Q3 25",
+      "Q4 25",
+      "Q1 26",
+      "Q2 26",
+      "Q3 26"
+    ],
+    "rows": [
+      "grrggrrgg",
+      "-a-a-a-a-",
+      "ggggggggg",
+      "ggggggggg",
+      "ggggggggg"
+    ],
+    "note": "One row per ledger rank in rank order; rightmost cell is the Buy/Sell Q3 FY26 column."
+  }
+}</pre>
+</div>
+</details>
+
+<details class="tier2">
 <summary>Notes — Ranks 1–5</summary>
+<div class="dbody">
 <div class="rank-entry"><strong>Rank 1 (Net inflows):</strong> Q3FY25 shown on underlying basis (2.1) — excludes a one-off +£0.4bn D2C migration from a third-party SIPP exit; FY25 underlying total ties to 7.1bn exactly. Q4FY22 and Q4FY25 (†) are derived (FY − 9M), each cross-verified via the advised+D2C quarterly roll-forward disclosed in the following Q1 TU; the Jul-26 Q3 TU's own printed quarterly appendix ties out the Q4FY25→Q3FY26 run exactly (1.7 → 1.5 → 2.7-basis quarters), clearing the derived-only watch flags. Q3FY26 £3.0bn is a new series record, third consecutive sequential rise.</div>
 <div class="rank-entry"><strong>Rank 2 (Revenue margin):</strong> never printed at Q1/Q3 grain — structurally outside TU cadence (❌ cells are not withholds). Eight consecutive prints, zero declines, despite two consecutive years of company guidance warning of "moderation" — the calibration point of this run.</div>
 <div class="rank-entry"><strong>Rank 3 (AUA):</strong> pure confirming metric, monotonic across the full window — no independent signal beyond corroborating Rank 1.</div>
 <div class="rank-entry"><strong>Rank 4 (AJBI AUM):</strong> monotonic 🟢 but QonQ % growth has decelerated from +21% to +3% — normal base maturation on a series that has nearly quadrupled; watch-flagged, not fired — reversed at Q3FY26: +16% QoQ to £11.4bn on a record £0.8bn net-inflow quarter (2× YoY), the watch flag is cleared.</div>
 <div class="rank-entry"><strong>Rank 5 (Customers):</strong> 16 consecutive 🟢, accelerating into the latest print — Q2FY26's +50k remains the largest single-quarter add; Q3FY26 +39k is the first sequential softening in adds since Q1 (Q2 tax-year-end comp-flagged) — level still 🟢↗, adds pace to re-check at the Oct FY TU.</div>
+</div>
 </details>
 
-<details class="notes">
+<details class="tier2">
 <summary>Turn methodology &amp; restatement basis</summary>
+<div class="dbody">
 <div class="rank-entry">Every Δ and Turn arrow above is computed in one script with the comparison basis hard-coded per metric type — snapshot metrics (AUA, AUM, customers) compare position-to-position at their own disclosure grain; flow metrics (net inflows) compare sequential quarter-to-quarter, with AJB's structural seasonality (Q2 tax-year-end spike, Q4 summer trough) comp-flagged rather than suppressed; rate metrics (revenue margin) compare seasonally-matched same-half/same-FY prints against a ±2.0bps band.</div>
 <div class="rank-entry"><strong>Restatement / provenance:</strong> † marks a derived cell (FY − 9M workings shown once in the Ranks 1–5 notes, second-route cross-verified; the Q4FY25→Q3FY26 derived run is now printed-appendix corroborated by the Jul-26 TU). ʳ marks a basis-restated cell (Q3FY25 net inflows shown underlying, excluding the +£0.4bn one-off D2C migration). ❌ marks a structurally-absent cell at that grain (revenue margin never prints at Q1/Q3). The later audited figure governs any company "c." estimate. The Buy/Sell (rightmost) column is bold.</div>
+</div>
+</details>
+
+</div>
 </details>
 </section>
 
 <!-- ===================== §2.0 ===================== -->
 <section>
 <h2>§2.0 · Most-Recent-RNS Current-State Read — Q3 FY26 TU (23-Jul-26, Buy/Sell)</h2>
-<details class="notes">
-<summary>The four checks — workings behind the read</summary>
-<div class="rank-entry"><strong>1 · Sequential —</strong> Net inflows £2.7bn (Q2) → £3.0bn, third consecutive sequential rise, new series record. AJBI net inflows £0.8bn record. Customer adds +50k → +39k (only sequential softening, Q2 comp-flagged). <strong>🟢 Record, accelerating.</strong></div>
-<div class="rank-entry"><strong>2 · Same-type-vs-last-year —</strong> Vs Jul-25 Q3 TU: net inflows +43% (vs 2.1 underlying), gross +50%, AJBI net inflows +100%, customers +23% YoY (vs +12% at H1 — organic growth accelerating at yearly grain too), AUA +26%. <strong>🟢 Broad acceleration.</strong></div>
-<div class="rank-entry"><strong>3 · Sub-periods —</strong> Native quarterly print — nothing to derive. Split: D2C carries the flow (£2.4bn of £3.0bn, record); advised net steady at £0.6bn with record £2.3bn gross. RNS appendix corroborates the record's derived Q4FY25/Q1FY26 cells exactly. <strong>🟢 Corroborated.</strong></div>
-<div class="rank-entry"><strong>4 · Guidance-vs-prior-guide —</strong> No expectations anchor — structural for Q3 TUs, per all four in the run. <strong>G = flat.</strong> One forward item: MPS charge cut 0.15%→0.12% from 1-Oct-26 — a pre-announced, quantifiable FY27 revenue-margin reinvestment. <strong>⚪ Flat (anchor structurally absent).</strong></div>
-</details>
+
 
 <div class="s20-row">
   <div class="bridge">
@@ -432,9 +581,66 @@
   </div>
   <div class="state-bar up">
     <div class="darkbar"><span class="emoji">🌡️</span><span class="cav">CURRENT STATE — the read right now</span></div>
-    <div class="sb-inner"><div>🟢 <strong>TURNING UP (held).</strong> No backward-loaded flag — the latest quarter is the strongest flow print in the series, on reported not derived figures. Note: AUA's +12% quarter includes £9.8bn (9% of opening) favourable market movement — flows are the signal, the AUA level flatters.</div></div>
+    <div class="sb-inner"><div>
+      <p class="sb-lead">🟢 TURNING UP — held</p>
+      <ul class="sb-bullets">
+        <li>Net inflows £3.0bn, a series record, third consecutive sequential rise.</li>
+        <li>Revenue margin 33.4bps sits above the FY26 guide raised in May.</li>
+        <li>Fired: G-RAISE 21-May-26, plus record £3.0bn quarter on 23-Jul-26.</li>
+        <li>Derived Q4FY25 and Q1FY26 cells now corroborated by the printed quarterly appendix.</li>
+        <li>AJBI watch flag cleared: £11.4bn AUM, record £0.8bn net inflows, double last year.</li>
+        <li>No front- or backward-loaded flag; latest quarter is the strongest flow print.</li>
+        <li>⚠️ AUA's £12.8bn rise is £9.8bn market movement — the level flatters, flows are the signal.</li>
+        <li>⚠️ Customer adds slowed 50k to 39k, first sequential softening since Q1.</li>
+        <li>⚠️ MPS charge cut 0.15% to 0.12% from 1-Oct-26 trims revenue margin into FY27.</li>
+      </ul>
+    </div></div>
   </div>
 </div>
+<details class="tier1">
+<summary>§2.0 workings — the four checks, notes, balance-sheet sweep, trigger detail</summary>
+<div class="dbody">
+
+<details class="tier2">
+<summary>The four checks — workings behind the read</summary>
+<div class="dbody">
+<div class="rank-entry"><strong>1 · Sequential —</strong> Net inflows £2.7bn (Q2) → £3.0bn, third consecutive sequential rise, new series record. AJBI net inflows £0.8bn record. Customer adds +50k → +39k (only sequential softening, Q2 comp-flagged). <strong>🟢 Record, accelerating.</strong></div>
+<div class="rank-entry"><strong>2 · Same-type-vs-last-year —</strong> Vs Jul-25 Q3 TU: net inflows +43% (vs 2.1 underlying), gross +50%, AJBI net inflows +100%, customers +23% YoY (vs +12% at H1 — organic growth accelerating at yearly grain too), AUA +26%. <strong>🟢 Broad acceleration.</strong></div>
+<div class="rank-entry"><strong>3 · Sub-periods —</strong> Native quarterly print — nothing to derive. Split: D2C carries the flow (£2.4bn of £3.0bn, record); advised net steady at £0.6bn with record £2.3bn gross. RNS appendix corroborates the record's derived Q4FY25/Q1FY26 cells exactly. <strong>🟢 Corroborated.</strong></div>
+<div class="rank-entry"><strong>4 · Guidance-vs-prior-guide —</strong> No expectations anchor — structural for Q3 TUs, per all four in the run. <strong>G = flat.</strong> One forward item: MPS charge cut 0.15%→0.12% from 1-Oct-26 — a pre-announced, quantifiable FY27 revenue-margin reinvestment. <strong>⚪ Flat (anchor structurally absent).</strong></div>
+</div>
+</details>
+
+<details class="tier2">
+<summary>Notes — §2.0</summary>
+<div class="dbody">
+<div class="rank-entry">The Driver Bridge anchors on H1 FY26 (21-May-26), the most recent results document — the Buy/Sell Q3 TU carries no profit line to decompose. Contributions are transcribed from that RNS; the three cost rows are guided percentages, not printed absolutes, hence n/q.</div>
+</div>
+</details>
+
+<details class="tier2">
+<summary>Balance-sheet sweep</summary>
+<div class="dbody">
+<div class="prose" style="font-size:13px; line-height:1.6;">
+<p><strong>Solvency grep:</strong> clean across all 8 results documents — no going-concern qualification, no material uncertainty, no covenant language beyond boilerplate ICARA text; AJB carries no debt facility. <strong>Tier 1:</strong> none. <strong>Tier 2:</strong> none fired (2+ required) — logged only: regulatory capital surplus has fallen every year disclosed (222%→206%→157%, FY23–FY25) and cash balances have dipped two periods running (£196.7m→£188.2m→£167.6m), both consistently attributed to accelerating shareholder distributions (buybacks plus a 21-year unbroken dividend-growth streak) rather than earnings or liquidity stress — both remain comfortably above stated requirements.</p>
+<p><strong>Wedge check:</strong> H1FY26 is the only period with a statutory/underlying split — statutory PBT £92.8m vs underlying £79.0m, the gap a £13.8m net exceptional gain from the completed Platinum SIPP/SSAS disposal (profit on disposal £21.4m). One-off, fully disclosed, closing — nothing rendered. FY24 (£6.2m one-off customer-redress provision) and FY25 (£1.1m disposal transaction costs) exceptional items were each one-off and non-recurring.</p>
+</div>
+<div class="note-flag">No B/S flag, no Tier-1 overlay. No leadership transition inside the recent window (Andy Bell → Michael Summersgill handover completed Oct-2022, fully absorbed at the manifest's start).</div>
+</div>
+</details>
+
+<details class="tier2">
+<summary>Trigger detail &amp; audit record</summary>
+<div class="dbody">
+<div class="rank-entry"><strong>Condition 1 — Numbers &amp; guide: FIRED, green-shoot mirror.</strong> Two routes, either sufficient: sequential growth accelerating to a series-record £3.0bn (Jul-26, third consecutive rise, all reported figures now the Q3 appendix corroborates the previously-derived cells); and a G-column RAISE at H1 (May-26). Full weight — Rank 1 is a LEAD metric, not confirmation-only.</div>
+<div class="rank-entry"><strong>Condition 2 — Language: NOT FIRED.</strong> No print at or below −1 anywhere in the 24-document run, and no falling run of 2+ consecutive prints. The December "moderate slightly" guides score 🔴 but are single prints reversed by the following May.</div>
+<div class="rank-entry"><strong>Condition 3 — Disclosure: NOT FIRED.</strong> No ranked metric withheld or gone qualitative against established cadence in the Buy/Sell document or the trailing window; no ⊘ dropped updates. Jul-26 carries a disclosure expansion (advised-vs-D2C customer split newly headlined), which is a green shoot with no history rather than a fire.</div>
+<div class="rank-entry"><strong>Count: 1 of 3.</strong> A single-condition fire is a verdict note, not an alert — and the G fire sits on May-26, not the latest RNS, so the latest-RNS carve-out does not apply. <code>alert: false</code>. Balance-sheet sweep clean, outside the count.</div>
+</div>
+</details>
+
+</div>
+</details>
 </section>
 
 <!-- ===================== §3 TEXT+G ===================== -->
@@ -442,20 +648,21 @@
 <h2>§3 · Text + G — Language Track (24/24 documents)</h2>
 <table id="text3">
 <tr><th style="width:75px;">Date</th><th class="doc-cell" style="width:130px;">Doc</th><th style="width:65px;">G</th><th>Verbatim forward-guidance phrase</th><th style="width:55px;">Score</th></tr>
-<tr><td>Jul-22</td><td class="doc-cell">Q3 TU</td><td>flat</td><td class="quote">"our long-term growth prospects remain strong … well positioned to continue growing the business and increasing our market share"</td><td>⚪</td></tr>
-<tr class="changed"><td>Dec-22</td><td class="doc-cell">FY Results</td><td class="g-raise">🟢 RAISE</td><td class="quote">"Our PBT margins are expected to increase in FY23"</td><td>0 → 🟢🟢</td></tr>
-<tr><td>Jan-23</td><td class="doc-cell">Q1 TU</td><td>flat</td><td class="quote">"We remain positive about the growth prospects … very well positioned to continue growing our market share"</td><td>⚪</td></tr>
-<tr><td>Apr-23</td><td class="doc-cell">Q2 TU</td><td>flat</td><td class="quote">"continuing to capitalise on the long-term growth opportunity ahead of us in both the advised and D2C markets"</td><td>⚪</td></tr>
-<tr><td>May-23</td><td class="doc-cell">H1 Results</td><td>flat</td><td class="quote">"we expect full-year revenue margins to be similar to those achieved in the first half … a slight compression in revenue margins beyond FY23" <em>(never materialised)</em></td><td>⚪</td></tr>
-<tr><td>Jul-23</td><td class="doc-cell">Q3 TU</td><td>flat</td><td class="quote">"significant opportunities for growth … well positioned to capitalise on these" <em>(first "moderation in [advised] transfer activity" — operational, not profit-line)</em></td><td>⚪</td></tr>
-<tr><td>Oct-23</td><td class="doc-cell">FY TU</td><td>flat</td><td class="quote">"The long-term growth drivers of the investment platform market remain strong"</td><td>⚪</td></tr>
-<tr><td>Dec-23</td><td class="doc-cell">FY Results</td><td>flat</td><td class="quote">"we expect this [cost] growth rate to moderate to around 15% … lower levels of cost growth in the medium term"</td><td>⚪</td></tr>
-<tr><td>Jan-24</td><td class="doc-cell">Q1 TU</td><td>flat</td><td class="quote">"this strong start to the year provides good momentum … we remain focused on the long-term growth opportunity"</td><td>⚪</td></tr>
-<tr><td>Apr-24</td><td class="doc-cell">Q2 TU</td><td>flat</td><td class="quote">"the growth opportunity for the platform market remains significant … supporting our long-term growth ambitions"</td><td>⚪</td></tr>
-<tr class="changed"><td>May-24</td><td class="doc-cell">H1 Results</td><td class="g-raise">🟢 RAISE</td><td class="quote">"both revenue and PBT will be higher than we had anticipated back in December" <em>(H1 margins flagged elevated, H2 moderation comp-flagged, not a cut)</em></td><td>0 → 🟢🟢</td></tr>
-<tr><td>Jul-24</td><td class="doc-cell">Q3 TU</td><td>flat</td><td class="quote">"We enter the final quarter … with strong momentum … an excellent position to capture further market share gains"</td><td>⚪</td></tr>
-<tr><td>Oct-24</td><td class="doc-cell">FY TU</td><td>flat</td><td class="quote">"the upcoming Budget has introduced unhelpful uncertainty, we remain positive about the outlook"</td><td>⚪</td></tr>
-<tr class="changed"><td>Dec-24</td><td class="doc-cell">FY Results</td><td class="g-cut">🔴 CUT</td><td class="quote">"In FY25, we expect our revenue margins to moderate slightly … sustainable beyond 2025" <em>(serial-sandbag #1 — subsequently beaten)</em></td><td>0 → 🔴</td></tr>
+<tr class="expander" id="t3exp"><td colspan="5">▸ Show 14 earlier prints — Jul-22 to Dec-24</td></tr>
+<tr class="early"><td>Jul-22</td><td class="doc-cell">Q3 TU</td><td>flat</td><td class="quote">"our long-term growth prospects remain strong … well positioned to continue growing the business and increasing our market share"</td><td>⚪</td></tr>
+<tr class="early changed"><td>Dec-22</td><td class="doc-cell">FY Results</td><td class="g-raise">🟢 RAISE</td><td class="quote">"Our PBT margins are expected to increase in FY23"</td><td>0 → 🟢🟢</td></tr>
+<tr class="early"><td>Jan-23</td><td class="doc-cell">Q1 TU</td><td>flat</td><td class="quote">"We remain positive about the growth prospects … very well positioned to continue growing our market share"</td><td>⚪</td></tr>
+<tr class="early"><td>Apr-23</td><td class="doc-cell">Q2 TU</td><td>flat</td><td class="quote">"continuing to capitalise on the long-term growth opportunity ahead of us in both the advised and D2C markets"</td><td>⚪</td></tr>
+<tr class="early"><td>May-23</td><td class="doc-cell">H1 Results</td><td>flat</td><td class="quote">"we expect full-year revenue margins to be similar to those achieved in the first half … a slight compression in revenue margins beyond FY23" <em>(never materialised)</em></td><td>⚪</td></tr>
+<tr class="early"><td>Jul-23</td><td class="doc-cell">Q3 TU</td><td>flat</td><td class="quote">"significant opportunities for growth … well positioned to capitalise on these" <em>(first "moderation in [advised] transfer activity" — operational, not profit-line)</em></td><td>⚪</td></tr>
+<tr class="early"><td>Oct-23</td><td class="doc-cell">FY TU</td><td>flat</td><td class="quote">"The long-term growth drivers of the investment platform market remain strong"</td><td>⚪</td></tr>
+<tr class="early"><td>Dec-23</td><td class="doc-cell">FY Results</td><td>flat</td><td class="quote">"we expect this [cost] growth rate to moderate to around 15% … lower levels of cost growth in the medium term"</td><td>⚪</td></tr>
+<tr class="early"><td>Jan-24</td><td class="doc-cell">Q1 TU</td><td>flat</td><td class="quote">"this strong start to the year provides good momentum … we remain focused on the long-term growth opportunity"</td><td>⚪</td></tr>
+<tr class="early"><td>Apr-24</td><td class="doc-cell">Q2 TU</td><td>flat</td><td class="quote">"the growth opportunity for the platform market remains significant … supporting our long-term growth ambitions"</td><td>⚪</td></tr>
+<tr class="early changed"><td>May-24</td><td class="doc-cell">H1 Results</td><td class="g-raise">🟢 RAISE</td><td class="quote">"both revenue and PBT will be higher than we had anticipated back in December" <em>(H1 margins flagged elevated, H2 moderation comp-flagged, not a cut)</em></td><td>0 → 🟢🟢</td></tr>
+<tr class="early"><td>Jul-24</td><td class="doc-cell">Q3 TU</td><td>flat</td><td class="quote">"We enter the final quarter … with strong momentum … an excellent position to capture further market share gains"</td><td>⚪</td></tr>
+<tr class="early"><td>Oct-24</td><td class="doc-cell">FY TU</td><td>flat</td><td class="quote">"the upcoming Budget has introduced unhelpful uncertainty, we remain positive about the outlook"</td><td>⚪</td></tr>
+<tr class="early changed"><td>Dec-24</td><td class="doc-cell">FY Results</td><td class="g-cut">🔴 CUT</td><td class="quote">"In FY25, we expect our revenue margins to moderate slightly … sustainable beyond 2025" <em>(serial-sandbag #1 — subsequently beaten)</em></td><td>0 → 🔴</td></tr>
 <tr><td>Jan-25</td><td class="doc-cell">Q1 TU</td><td>flat</td><td class="quote">"The strong start to the year positions us well … well-placed to continue our strong growth" <em>(pre-Budget withdrawals "normalised quickly")</em></td><td>⚪</td></tr>
 <tr><td>Apr-25</td><td class="doc-cell">Q2 TU</td><td>flat</td><td class="quote">"There remains a significant structural growth opportunity … to drive long-term growth" <em>(post-quarter tariff volatility named, framed as raising trading activity)</em></td><td>⚪</td></tr>
 <tr class="changed"><td>May-25</td><td class="doc-cell">H1 Results</td><td class="g-raise">🟢 RAISE</td><td class="quote">"full-year revenue and PBT anticipated to be higher than that previously guided … higher cost guidance … more than offset by increases to full-year revenue margin guidance"</td><td>0 → 🟢🟢</td></tr>
@@ -465,8 +672,24 @@
 <tr><td>Jan-26</td><td class="doc-cell">Q1 TU</td><td>flat</td><td class="quote">"We have started the year with strong momentum … well-placed to deliver on this opportunity" <em>(Budget-driven +£500m pension withdrawals — recurring/seasonal, calibrated)</em></td><td>⚪</td></tr>
 <tr><td>Apr-26</td><td class="doc-cell">Q2 TU</td><td>flat</td><td class="quote">"position us well to continue to invest for long-term, sustainable growth" <em>(record 50k customers / £2.7bn net inflows)</em></td><td>⚪</td></tr>
 <tr class="changed"><td>May-26</td><td class="doc-cell">H1 Results</td><td class="g-raise">🟢 RAISE</td><td class="quote">"We now expect full-year revenue margin, PBT and PBT margin to be higher than previously guided"</td><td>0 → 🟢🟢</td></tr>
-<tr><td>Jul-26</td><td class="doc-cell bsell">Q3 TU — <strong>Buy/Sell</strong></td><td>flat</td><td class="quote">"We have entered the final quarter with strong momentum … positions us well to continue increasing our share of this fast-growing market" <em>(same boilerplate family as Jul-23/24/25 — calibrated)</em></td><td>⚪</td></tr>
+<tr><td>⭐ Jul-26</td><td class="doc-cell bsell">Q3 TU — <strong>Buy/Sell</strong></td><td>flat</td><td class="quote">"We have entered the final quarter with strong momentum … positions us well to continue increasing our share of this fast-growing market" <em>(same boilerplate family as Jul-23/24/25 — calibrated)</em></td><td>⚪</td></tr>
 </table>
+<details class="tier1">
+<summary>§3 workings — notes &amp; guidance passages</summary>
+<div class="dbody">
+<details class="tier2"><summary>Notes — §3</summary><div class="dbody">
+<div class="rank-entry">Scores are transitions read off the immediately preceding row, per the framework's worked example — not the last non-zero score. Every flat reiteration scores ⚪ and resets the baseline, which is why each fired row reads 0 → X.</div>
+</div></details>
+<details class="tier2"><summary>Guidance passages — trailing 12 months, verbatim</summary><div class="dbody">
+<div class="rank-entry"><strong>Q3 TU · 23-Jul-26 · CEO statement.</strong> "We have entered the final quarter with strong momentum. The UK platform market continues to benefit from structural growth drivers as more individuals take responsibility for their long-term financial futures. Our continued investment in brand and propositions, combined with the strength of our dual-channel strategy, positions us well to continue increasing our share of this fast-growing market." <em>Editorial note: no expectations anchor anywhere in the document — structural for AJB Q3 TUs, all four in the record behave identically.</em></div>
+<div class="rank-entry"><strong>H1 Results · 21-May-26 · Outlook.</strong> "We now expect full-year revenue margin, PBT and PBT margin to be higher than previously guided", with PBT margin stated above 40% against a prior 39–40% guide. Cost guides restated in the same passage: distribution +28–30%, technology +20–22%, operational and support +7–9%. Medium-term caveat carried alongside: revenue margin expected to moderate over time as pricing is reinvested and cash and overseas dealing normalise.</div>
+<div class="rank-entry"><strong>Q2 TU · 23-Apr-26.</strong> "position us well to continue to invest for long-term, sustainable growth", set beside record 50,000 customer additions and £2.7bn net inflows. No expectations anchor — consistent with the Q2 TU habit.</div>
+<div class="rank-entry"><strong>Q1 TU · 22-Jan-26.</strong> "We have started the year with strong momentum … well-placed to deliver on this opportunity", with Budget-driven pension withdrawals of c.£500m named and framed as a known seasonal effect. No expectations anchor.</div>
+<div class="rank-entry"><strong>FY Results · 04-Dec-25 · Outlook.</strong> "In FY26, we expect our revenue margins to moderate slightly", with PBT margin expansion deferred to "beyond FY26". Scored 🔴 as a guide lowered against the prior H1 raise; the Context is that this is the second consecutive December to guide this way and the second to be reversed by the following May.</div>
+</div></details>
+</div>
+</details>
+
 <p class="methodology"><strong>G-column credibility scan:</strong> every "moderate slightly" December guide since FY24 has been beaten by the following May — a three-year serial-sandbag pattern that discounts the CUTs and credits the latest RAISE. No Text score ≤ −1 anywhere in the 24-print run; the Text leg of the 2-of-3 trigger never independently fires this run.</p>
 </section>
 
@@ -483,7 +706,7 @@
 <th data-type="Q1TU">Q1TU<br>Jan23</th><th data-type="Q2TU">Q2TU<br>Apr23</th><th data-type="H1R">H1R<br>May23</th><th data-type="Q3TU">Q3TU<br>Jul23</th><th data-type="FYTU">FYTU<br>Oct23</th><th data-type="FYR">FYR<br>Dec23</th>
 <th data-type="Q1TU">Q1TU<br>Jan24</th><th data-type="Q2TU">Q2TU<br>Apr24</th><th data-type="H1R">H1R<br>May24</th><th data-type="Q3TU">Q3TU<br>Jul24</th><th data-type="FYTU">FYTU<br>Oct24</th><th data-type="FYR">FYR<br>Dec24</th>
 <th data-type="Q1TU">Q1TU<br>Jan25</th><th data-type="Q2TU">Q2TU<br>Apr25</th><th data-type="H1R">H1R<br>May25</th><th data-type="Q3TU">Q3TU<br>Jul25</th><th data-type="FYTU">FYTU<br>Oct25</th><th data-type="FYR">FYR<br>Dec25</th>
-<th data-type="Q1TU">Q1TU<br>Jan26</th><th data-type="Q2TU">Q2TU<br>Apr26</th><th data-type="H1R">H1R<br>May26</th><th data-type="Q3TU">Q3TU<br>Jul26</th>
+<th data-type="Q1TU">Q1TU<br>Jan26</th><th data-type="Q2TU">Q2TU<br>Apr26</th><th data-type="H1R">H1R<br>May26</th><th data-type="Q3TU" class="bsell">⭐ Q3TU<br>Jul26</th>
 </tr>
 <tr><td>Net inflows</td>
 <td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td><td class="chk">✅</td>
@@ -523,23 +746,18 @@
 </tr>
 </table>
 </div>
-<details class="notes">
-<summary>Notes</summary>
+<details class="tier1">
+<summary>§4 workings — notes</summary>
+<div class="dbody">
 <div class="rank-entry">First note (latest column, Q3TU Jul26): nothing withheld, nothing newly qualitative; disclosure expansion — advised-vs-D2C customer split newly headlined in the bullets (previously table-only), start date Jul-26. Prior latest-column note (H1FY26): retention rate 94.1%→94.6% (FY25→H1FY26), disclosed continuously — a minor confirming green shoot, not a disclosure event. AJBI AUM's 🟡 cells mark periods where AUM was quantified but the net-inflow sub-figure wasn't separately headlined that period (level-of-detail choice, not a cadence break — AUM itself is never missing).</div>
+</div>
 </details>
 </section>
 
-<!-- ===================== B/S SWEEP + VERDICT NARRATIVE ===================== -->
-<section>
-<h2>Balance-sheet sweep &amp; verdict detail</h2>
-<div class="prose" style="font-size:13px; line-height:1.6;">
-<p><strong>Solvency grep:</strong> clean across all 8 results documents — no going-concern qualification, no material uncertainty, no covenant language beyond boilerplate ICARA text; AJB carries no debt facility. <strong>Tier 1:</strong> none. <strong>Tier 2:</strong> none fired (2+ required) — logged only: regulatory capital surplus has fallen every year disclosed (222%→206%→157%, FY23–FY25) and cash balances have dipped two periods running (£196.7m→£188.2m→£167.6m), both consistently attributed to accelerating shareholder distributions (buybacks plus a 21-year unbroken dividend-growth streak) rather than earnings or liquidity stress — both remain comfortably above stated requirements.</p>
-<p><strong>Wedge check:</strong> H1FY26 is the only period with a statutory/underlying split — statutory PBT £92.8m vs underlying £79.0m, the gap a £13.8m net exceptional gain from the completed Platinum SIPP/SSAS disposal (profit on disposal £21.4m). One-off, fully disclosed, closing — nothing rendered. FY24 (£6.2m one-off customer-redress provision) and FY25 (£1.1m disposal transaction costs) exceptional items were each one-off and non-recurring.</p>
-</div>
-<div class="note-flag">No B/S flag, no Tier-1 overlay. No leadership transition inside the recent window (Andy Bell → Michael Summersgill handover completed Oct-2022, fully absorbed at the manifest's start).</div>
-</section>
+
 
 <footer class="src">Built from 24 AJ Bell plc RNS documents (21-Jul-2022 → 23-Jul-2026); Q3 FY26 TU folded in as an incremental read, chat-approved content only, no re-derivation at build. Limited mode — no ShareScope/consensus datablock supplied this run.</footer>
+<p style="font-size:11.5px; color:var(--sub); margin-top:10px;">📇 drift-entry embedded — AJB · up · Q3 TU 2026-07-23 · lights [g--] 1/3 · strip 5×9 — matches verdict card.</p>
 
 <script>
 (function(){
@@ -574,10 +792,35 @@
     });
   });
 
-  // Text+G Doc-column pink click-highlight
+  // §3 trailing-window expander
+  var t3 = document.getElementById('text3');
+  var exp = document.getElementById('t3exp');
+  if(exp){
+    exp.addEventListener('click', function(){
+      var open = t3.classList.toggle('showearly');
+      exp.firstElementChild.textContent = (open ? '▾ Hide ' : '▸ Show ') +
+        t3.querySelectorAll('tr.early').length + ' earlier prints — Jul-22 to Dec-24';
+    });
+  }
+
+  // Text+G Doc-column pink click-highlight — opens the expander if matches are hidden
   var docCells = document.querySelectorAll('#text3 td.doc-cell');
   docCells.forEach(function(c){
-    c.addEventListener('click', function(){ c.classList.toggle('hl'); });
+    c.addEventListener('click', function(){
+      var label = c.textContent.replace(/\s+/g,' ').trim();
+      var on = !c.classList.contains('hl');
+      docCells.forEach(function(x){ x.classList.remove('hl'); });
+      if(on){
+        var hiddenMatch = false;
+        docCells.forEach(function(x){
+          if(x.textContent.replace(/\s+/g,' ').trim() === label){
+            x.classList.add('hl');
+            if(x.closest('tr').classList.contains('early')){ hiddenMatch = true; }
+          }
+        });
+        if(hiddenMatch && !t3.classList.contains('showearly')){ exp.click(); }
+      }
+    });
   });
 })();
 </script>
@@ -585,16 +828,48 @@
 <script type="application/json" id="drift-entry">{
   "ticker": "AJB",
   "company": "AJ Bell plc",
+  "kind": "ticker",
   "direction": "up",
-  "headline": "Q3 TU prints record £3.0bn net inflows (+43% YoY), third straight sequential rise; H1's guidance RAISE stands; MPS fee cut pre-announces an FY27 margin headwind.",
-  "trigger": "2-of-3 (green-shoot): sequential growth resuming/accelerating + G-RAISE at H1 (May-26)",
-  "alert": true,
+  "headline": "Q3 TU prints record £3.0bn net inflows (+43% YoY), third straight sequential rise; H1's guidance RAISE stands undisturbed.",
+  "trigger": "Condition 1 only (green-shoot mirror): sequential growth accelerating to a record + G-RAISE at H1 May-26. Conditions 2 and 3 unlit.",
+  "alert": false,
+  "fired": 1,
+  "fired_of": 3,
+  "lights": "g--",
   "rns_type": "Q3 TU",
   "rns_date": "2026-07-23",
   "build_date": "2026-07-29",
-  "spec_version": "v3.16",
-  "next_test": "Oct FY TU: Q4 inflows vs summer-trough norm, customer-add pace after Q3's −11k dip; Dec-26: does sandbag #3 arrive, now with a real anchor (MPS 0.15%→0.12% cut from 1-Oct-26)?",
-  "url": "AJB.html"
+  "spec_version": "v5.1",
+  "next_test": "Oct-26 FY TU: Q4 net inflows against the summer-trough habit, and whether customer adds recover from Q3's 39k.",
+  "url": "AJB.html",
+  "grid": {
+    "labels": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5"
+    ],
+    "periods": [
+      "Q3 24",
+      "Q4 24",
+      "Q1 25",
+      "Q2 25",
+      "Q3 25",
+      "Q4 25",
+      "Q1 26",
+      "Q2 26",
+      "Q3 26"
+    ],
+    "rows": [
+      "grrggrrgg",
+      "-a-a-a-a-",
+      "ggggggggg",
+      "ggggggggg",
+      "ggggggggg"
+    ],
+    "note": "One row per ledger rank in rank order; rightmost cell is the Buy/Sell Q3 FY26 column."
+  }
 }</script>
 
 </body>
