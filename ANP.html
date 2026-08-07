@@ -50,10 +50,38 @@ details .dbody p{margin:9px 0;} details .dbody b{font-weight:700;}
  background:#fff;white-space:nowrap;}
 .pill.alert{background:var(--amberT);border-color:var(--amber);font-weight:700;}
 .dot{color:var(--muted);font-size:13px;}
+/* ---------- TRIGGER TRAFFIC LIGHTS ---------- */
+.lights{display:flex;flex-wrap:wrap;align-items:stretch;gap:9px;background:var(--dark);
+ border-radius:12px;padding:12px 13px;margin:0 0 14px;max-width:1100px;}
+.lamp{display:flex;align-items:center;gap:11px;background:#3b3934;border-radius:10px;
+ padding:10px 14px;flex:1 1 210px;}
+.lamp.off{background:#333129;}
+.lamp{position:relative;}
+.lamp .dt{position:absolute;top:7px;right:11px;font-size:11px;color:#c9c6bd;
+ letter-spacing:.02em;white-space:nowrap;}
+.lamp.off .dt{color:#8d8981;}
+.bulb{width:28px;height:28px;border-radius:50%;flex:0 0 28px;background:#57544c;
+ border:2px solid rgba(255,255,255,.14);}
+.bulb.r{background:#ff3b30;border-color:#ff8078;box-shadow:0 0 0 4px rgba(255,59,48,.22);}
+.bulb.g{background:#21d05e;border-color:#7cf0a6;box-shadow:0 0 0 4px rgba(33,208,94,.22);}
+.bulb.a{background:#ffb020;border-color:#ffd67e;box-shadow:0 0 0 4px rgba(255,176,32,.22);}
+.lamp .nm{font-size:15.5px;font-weight:700;color:#fff;line-height:1.2;letter-spacing:-.01em;}
+.lamp.off .nm{color:#a8a49a;}
+.lamp .st{font-size:11.5px;color:#c9c6bd;margin-top:3px;line-height:1.3;}
+.lamp.off .st{color:#8d8981;}
+.tally{display:flex;flex-direction:column;justify-content:center;align-items:center;
+ padding:8px 16px;color:#fff;flex:0 0 auto;}
+.tally .big{font-size:26px;font-weight:700;line-height:1;}
+.tally .lb{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:#c9c6bd;margin-top:4px;}
+.lamp.bsl{flex:1 1 100%;background:none;border:1px dashed #56534b;padding:8px 14px;}
+.lamp.bsl .bulb{width:20px;height:20px;flex:0 0 20px;}
+.lamp.bsl .nm{font-size:13px;}
 .bs{font-size:11.5px;color:var(--muted);}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:16px;max-width:1100px;}
-.soft{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:11px 13px;}
-.soft.caveat{background:var(--caveatT);}
+.soft{background:#f2f1ec;border:0;border-top:3px solid var(--amber2);
+ border-radius:0 0 10px 10px;padding:12px 15px 13px;}
+.card.up .soft{border-top-color:var(--green2);} .card.down .soft{border-top-color:var(--red2);}
+.soft .hd{font-size:19px;font-weight:700;letter-spacing:-.01em;line-height:1.15;margin:5px 0 4px;}
 .soft .k{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);
  font-weight:700;margin-bottom:4px;}
 .soft .v{font-size:13px;line-height:1.45;}
@@ -91,6 +119,12 @@ th.lab, td.lab{text-align:left !important}
 .secbar .nat{font-weight:400; letter-spacing:.02em; color:#c9c6bd; text-transform:none}
 .strip td{padding:2px 4px; font-size:10px; color:var(--mute); background:#fbfaf7; letter-spacing:.05em}
 .strip td.lab{font-style:italic}
+/* ---------- DRAWER HIERARCHY ---------- */
+details.big{border:1px solid #c6c2b9;background:var(--paper);}
+details.big>summary{font-size:14px;padding:13px 16px;}
+details.big>.dbody{padding:4px 18px 18px;}
+details.big details{background:#fff;border:1px solid var(--line);margin-top:12px;}
+details.big details>summary{font-size:12.5px;padding:9px 13px;}
 .vrow td{background:#fff}
 .vrow td.lab{color:var(--mute); font-style:italic; font-size:11.5px}
 .val{font-weight:700; display:block; font-size:13px}
@@ -136,6 +170,11 @@ table#text3 td.trail .met{color:var(--green);} table#text3 td.trail .miss{color:
 table#text3 td.q{font-size:12px;}
 table#text3 td.cx{font-size:11px;color:#4a473f;line-height:1.4;text-align:left;}
 table#text3 td.g,table#text3 td.sc{white-space:nowrap;font-size:11.5px;}
+table#text3 tr.old{display:none;}
+table#text3.showold tr.old{display:table-row;}
+table#text3 tr.xpand td{background:#f5f3ec;cursor:pointer;font-size:11.5px;font-weight:700;
+ color:#5f5c54;padding:6px 9px;text-align:left;user-select:none;}
+table#text3 tr.xpand td:hover{background:#eceae1;}
 /* ---------- §4 ---------- */
 table#drift{table-layout:fixed;font-size:10.5px;}
 table#drift th,table#drift td{padding:7px 2px;text-align:center;}
@@ -159,12 +198,26 @@ table#drift td.bscol{font-weight:700;}
   <p class="headline">Record FY25 everywhere &mdash; but the margin engine has stopped climbing,
    and Anpario has quietly stopped printing volumes and prices.</p>
   <div class="pills">
-   <span class="pill alert">&#9888;&#65039; 2 of 3</span>
-   <span class="pill">AGM Statement</span>
-   <span class="pill">18 Jun 2026</span>
+   <span class="pill">AGM Statement &middot; 18 Jun 2026</span>
    <span class="pill">FY 31 Dec</span>
    <span class="dot">&bull;</span>
    <span class="bs">B/S: net cash, clean</span>
+  </div>
+
+  <div class="lights">
+   <div class="lamp off"><span class="dt">Mar-26</span><span class="bulb a"></span><div>
+    <div class="nm">Numbers &amp; guide</div>
+    <div class="st">Watch-flagged &mdash; reds rest on derived halves</div></div></div>
+   <div class="lamp"><span class="dt">Mar-26</span><span class="bulb r"></span><div>
+    <div class="nm">Language</div>
+    <div class="st">Fired &mdash; scored &minus;1</div></div></div>
+   <div class="lamp"><span class="dt">Sep-25 &middot; Mar-26</span><span class="bulb r"></span><div>
+    <div class="nm">Disclosure</div>
+    <div class="st">Fired &mdash; Rank&nbsp;2 withheld twice</div></div></div>
+   <div class="tally"><span class="big">2/3</span><span class="lb">fired</span></div>
+   <div class="lamp bsl"><span class="bulb g"></span><div>
+    <div class="nm">Balance sheet &mdash; clean &middot; net cash</div>
+    <div class="st">Sweep sits outside the 2-of-3 count</div></div></div>
   </div>
 
   <details class="guide">
@@ -203,14 +256,18 @@ table#drift td.bscol{font-weight:700;}
   </details>
 
   <div class="grid2">
-   <div class="soft"><div class="k">Current state</div><div class="v">Revenue and profit ahead of prior year,
-     in line with consensus; margins level with H2 2025, not H1.</div></div>
-   <div class="soft"><div class="k">Fired</div><div class="v">Text (31 Mar 26, &minus;1) and Drift (volumes
-     withheld twice, unexplained). Condition 1 watch-flagged only.</div></div>
-   <div class="soft caveat"><div class="k">Caveat</div><div class="v">Every numeric guide in the record was
-     beaten; the one June consensus anchor by 26.9% on EBITDA.</div></div>
-   <div class="soft"><div class="k">Next</div><div class="v">9 Sep 2026 interims &mdash; the printed H1 gross
-     margin, and whether volumes and prices reappear.</div></div>
+   <div class="soft"><div class="k">Current state</div><div class="hd">In line</div>
+    <div class="v">Ahead of prior year, but only in line with &pound;10.3m consensus. Margins level with
+    H2&nbsp;2025, not H1.</div></div>
+   <div class="soft"><div class="k">Warning you get</div><div class="hd">12 months</div>
+    <div class="v">Gross margin turned a year before revenue at the last turn. Flat this print &mdash; the
+    clock has started.</div></div>
+   <div class="soft"><div class="k">Argues against</div><div class="hd">Beaten every time</div>
+    <div class="v">Every numeric guide in the record was beaten &mdash; the one June consensus anchor by
+    26.9% on EBITDA.</div></div>
+   <div class="soft"><div class="k">Next test</div><div class="hd">9 Sep 2026</div>
+    <div class="v">Interims &mdash; the printed H1 gross margin, and whether volumes and prices
+    reappear.</div></div>
   </div>
 
   <ul class="cardbul">
@@ -233,6 +290,7 @@ table#drift td.bscol{font-weight:700;}
 </div>
 <div class="sect"></div>
 <h2 class="sec">&sect;1 &middot; Metric ledger</h2>
+<details class="big"><summary>&sect;1 &mdash; the five ranked metrics, and why each earned its rank</summary><div class="dbody">
 <p class="subnote">Ranked by lead time. Bands constant this run: H-grain rate &plusmn;2.0pp; no Q-grain band &mdash;
 the company prints no quarters. Statutory metrics never scored; EPS not scored.</p>
 <table>
@@ -275,6 +333,7 @@ aggregate figure &mdash; transcribed, not scored.</td></tr>
 not swapped mid-run:</b> promote like-for-like (organic) revenue growth % to a scored rank &mdash; it separated
 materially from headline revenue in FY25 (+12.5% against +23.5%), and from FY26, with Bio-Vet fully lapped, it is the
 only basis on which the record is comparable. Three prints only, so it stays a note this run.</p>
+</div></details>
 <h2 class="sec">&sect;2 &middot; Unified forward grid</h2>
 <p class="subnote">H-grain reporter &mdash; no quarters anywhere in the record. <b>Cell format:</b> flow cells show value + (YoY%) on line&nbsp;1, emoji + pp on line&nbsp;2; the pp is the <b>RATE CHANGE</b> (&Delta;rate) &mdash; the change in the YEAR-ON-YEAR figure between consecutive like periods, banded &plusmn;2.0pp. The three comparison bases are SEQUENTIAL, YEAR-ON-YEAR and RATE CHANGE; no other terms are used. &#11088; marks the Buy/Sell RNS. <b>Click any period header to highlight every column of that type.</b> &dagger; derived &middot; <sup>r</sup> restated &middot; rightmost = Buy/Sell.</p>
 <div class="gridwrap">
@@ -301,7 +360,7 @@ only basis on which the record is comparable. Three prints only, so it stays a n
 <tr class="agg"><td class="lab">FY aggregate</td><td colspan="2"><span class="aval">5,208</span><span class="anote">&minus;25.4% &middot; &minus;15.9pp</span></td><td colspan="2"><span class="aval">4,463</span><span class="anote">&minus;14.3% &middot; +11.1pp</span></td><td colspan="2"><span class="aval">6,985</span><span class="anote">+56.5% &middot; +70.8pp</span></td><td colspan="2"><span class="aval">9,643</span><span class="anote">+38.1% &middot; &minus;18.5pp</span></td><td><span class="aval">&mdash;</span></td></tr>
 </table>
 </div>
-
+<details class="big"><summary>&sect;2 workings &mdash; card strip, rank notes, turn methodology</summary><div class="dbody">
 <style>#cardstrip table{border-collapse:collapse;margin:6px 0 10px}#cardstrip td{width:30px;height:26px;border:1px solid #d8d5cf;text-align:center;font-size:12px;font-weight:700;padding:0}#cardstrip td.lbl{width:34px;background:#f7f6f2;color:#5f5c54;font-weight:700}#cardstrip td.per{height:16px;font-size:9px;color:#5f5c54;font-weight:400;background:#fbfaf7}#cardstrip td.bs{outline:2px solid #16150f;outline-offset:-2px}</style><details><summary>&#128306; Card strip &mdash; wall preview &amp; index entry</summary><div class="dbody"><div id="cardstrip"><table><tr><td class="lbl"></td><td class="per">H1</td><td class="per">H2</td><td class="per">H1</td><td class="per">H2</td><td class="per">H1</td><td class="per">H2</td><td class="per">H1</td><td class="per">H2</td><td class="per bs">H1</td></tr><tr><td class="lbl">R1</td><td class="" style="background:#fdecea;color:#b3261e">&#128308;</td><td class="" style="background:#fdecea;color:#b3261e">&#128308;</td><td class="" style="background:#fdf4e3;color:#9a6a00">&#128993;</td><td class="" style="background:#e9f5ee;color:#1e7a45">&#128994;</td><td class="" style="background:#e9f5ee;color:#1e7a45">&#128994;</td><td class="" style="background:#fdf4e3;color:#9a6a00">&#128993;</td><td class="" style="background:#e9f5ee;color:#1e7a45">&#128994;</td><td class="" style="background:#e9f5ee;color:#1e7a45">&#128994;</td><td class="bs" style="background:#fdf4e3;color:#9a6a00">&#128993;</td></tr><tr><td class="lbl">R2</td><td class="" style="background:#ffffff;color:#d8d5cf"></td><td class="" style="background:#ffffff;color:#d8d5cf"></td><td class="" style="background:#fdecea;color:#b3261e">&#128308;</td><td class="" style="background:#fdecea;color:#b3261e">&#128308;</td><td class="" style="background:#e9f5ee;color:#1e7a45">&#128994;</td><td class="" style="background:#e9f5ee;color:#1e7a45">&#128994;</td><td class="" style="background:#f0f0f0;color:#8a8a8a">&#10060;</td><td class="" style="background:#f0f0f0;color:#8a8a8a">&#10060;</td><td class="bs" style="background:#ffffff;color:#d8d5cf"></td></tr><tr><td class="lbl">R3</td><td class="" style="background:#ffffff;color:#d8d5cf"></td><td class="" style="background:#ffffff;color:#d8d5cf"></td><td class="" style="background:#e9f5ee;color:#1e7a45">&#128994;</td><td class="" style="background:#e9f5ee;color:#1e7a45">&#128994;</td><td class="" style="background:#fdecea;color:#b3261e">&#128308;</td><td class="" style="background:#fdecea;color:#b3261e">&#128308;</td><td class="" style="background:#e9f5ee;color:#1e7a45">&#128994;</td><td class="" style="background:#f0f0f0;color:#8a8a8a">&#10060;</td><td class="bs" style="background:#ffffff;color:#d8d5cf"></td></tr><tr><td class="lbl">R4</td><td class="" style="background:#ffffff;color:#d8d5cf"></td><td class="" style="background:#ffffff;color:#d8d5cf"></td><td class="" style="background:#fdecea;color:#b3261e">&#128308;</td><td class="" style="background:#fdf4e3;color:#9a6a00">&#128993;</td><td class="" style="background:#e9f5ee;color:#1e7a45">&#128994;</td><td class="" style="background:#e9f5ee;color:#1e7a45">&#128994;</td><td class="" style="background:#e9f5ee;color:#1e7a45">&#128994;</td><td class="" style="background:#fdecea;color:#b3261e">&#128308;</td><td class="bs" style="background:#fdf4e3;color:#9a6a00">&#128993;</td></tr><tr><td class="lbl">R5</td><td class="" style="background:#ffffff;color:#d8d5cf"></td><td class="" style="background:#ffffff;color:#d8d5cf"></td><td class="" style="background:#fdecea;color:#b3261e">&#128308;</td><td class="" style="background:#e9f5ee;color:#1e7a45">&#128994;</td><td class="" style="background:#e9f5ee;color:#1e7a45">&#128994;</td><td class="" style="background:#e9f5ee;color:#1e7a45">&#128994;</td><td class="" style="background:#e9f5ee;color:#1e7a45">&#128994;</td><td class="" style="background:#fdecea;color:#b3261e">&#128308;</td><td class="bs" style="background:#fdf4e3;color:#9a6a00">&#128993;</td></tr></table><p style="font-size:11px;color:#5f5c54">Nine rigid cells per rank, rightmost outlined = the Buy/Sell column (H1&nbsp;FY26 AGM). Encoding: <b>g</b>&#128994;&#8599; &middot; <b>a</b>&#128993; &middot; <b>r</b>&#128308;&#8600; &middot; <b>x</b>&#10060; withheld &middot; <b>&minus;</b> no score in that slot (first print, or outside cadence). <b>Ranks&nbsp;2&ndash;3 are B.2a reduced grain:</b> their cells read H1, FY, H1, FY&hellip; not H1/H2 &mdash; the FY cell is scored, and the empty trailing cell is the AGM Buy/Sell slot (volumes/prices outside AGM cadence). Ranks&nbsp;4&ndash;5 Buy/Sell cell is <b>a</b> &mdash; direction (&ldquo;ahead of prior year&rdquo;) without a figure. Transcribed from the &sect;2 value rows above; aggregate rows are never encoded.</p><pre style="font-size:10.5px;background:#f7f6f2;border:1px solid #d8d5cf;border-radius:8px;padding:10px;overflow-x:auto;white-space:pre;user-select:all">{
  "ticker": "ANP",
  "company": "Anpario plc",
@@ -347,6 +406,7 @@ only basis on which the record is comparable. Three prints only, so it stays a n
  },
  "url": "ANP.html"
 }</pre></div></div></details>
+
 <details><summary>Notes &mdash; Ranks 1&ndash;5</summary><div class="dbody">
 <p><b>Rank 1 &mdash; Gross margin.</b> The H1&nbsp;FY26 cell is the company&rsquo;s own words, not a printed figure:
 margins are stated as level with <b>H2 2025 (50.48%&dagger;)</b>, roughly 0.9pp below the seasonally-matched
@@ -451,54 +511,9 @@ guide&rsquo;s own document. This is a provenance gap, not a missed update, and i
 quantifies only the 31 May cash position and the buyback. Its grid cells are therefore qualitative and fire nothing on
 the actuals triggers.</p>
 </div></details>
-
+</div></details>
 <h2 class="sec">&sect;2.0 &middot; Most-recent-RNS current-state read &mdash; 18 Jun 2026, AGM Statement</h2>
 <p class="subnote">The Buy/Sell RNS, scored four ways. Workings sit in the drawer; the bridge and the state bar are the read.</p>
-
-<details><summary>The four checks &mdash; workings behind the read</summary><div class="dbody">
-<p><b>1 &mdash; Sequential (newest period against the one immediately before it).</b> The RNS prints no revenue or
-profit figure. What can be compared: <b>gross margin (Rank&nbsp;1)</b> is stated as level with <b>H2 2025 =
-50.5%&dagger;</b> &mdash; sequentially flat against the immediately preceding half, and against the seasonally-matched
-H1&nbsp;FY25 of 51.4% it is roughly 0.9pp lower, the first non-rise in six prints. <b>Cash</b> &pound;12.4m
-(31 Dec 25) &rarr; <b>&pound;10.9m (31 May 26)</b> = &minus;&pound;1.5m, of which <b>&pound;1.1m is buyback</b>;
-excluding the buyback the operating drawdown is &minus;&pound;0.4m. <b>Revenue and profit:</b> qualitative only,
-&ldquo;ahead of prior year&rdquo;.</p>
-<p><b>2 &mdash; Same type against last year (Jun-26 AGM against Jun-25 AGM).</b> Language: Jun-25 &ldquo;a
-<b>strong</b> sales performance in the first half&rdquo; &rarr; Jun-26 &ldquo;a <b>good</b> start to the year&rdquo;
-&mdash; a one-notch step down in this Chairman&rsquo;s own two-year habit. Guidance stance identical: both anchor to a
-footnoted analyst consensus and claim conformity; no cut, no raise. Cash at the same date &pound;9.0m (31 May 25)
-&rarr; <b>&pound;10.9m (31 May 26)</b>, <b>+&pound;1.9m year on year</b> despite &pound;1.1m of buyback, so
-+&pound;3.0m before it; the December-to-May drawdown is identical at &minus;&pound;1.5m both years, but this year it is
-buyback rather than working capital &mdash; a genuine improvement. New in Jun-26 and absent in Jun-25: named
-raw-material inflation in the acid-based eubiotic range, <i>&ldquo;which represents around 20% of sales&rdquo;</i>;
-higher logistics costs initially absorbed on goods in transit; and a &pound;3.0m buyback programme with &pound;2.0m
-spent across 365,982 shares (&asymp;546.5p average&dagger;, against 336p for the small FY25 treasury purchase).
-Base-effect test: Jun-25&rsquo;s consensus of &pound;7.6m EBITDA resolved to &pound;9.643m &mdash; <b>a 26.88%
-beat</b> &mdash; so Jun-26&rsquo;s identical &ldquo;in line with consensus&rdquo; carries a demonstrated positive
-discount, not a negative one.</p>
-<p><b>3 &mdash; Every derivable sub-period.</b> The Buy/Sell RNS carries no period figure beyond the 31 May cash
-snapshot, so nothing is derivable from it. The mandatory sub-period check therefore runs on the latest full record,
-H2&nbsp;FY25&dagger; (second-route verified in the methodology drawer): revenue <b>&pound;24.451m, +15.32% &rarr;
-&#128308;</b> against H2&nbsp;FY24&rsquo;s +34.83%, which the FY25 &#128993; aggregate hides; adjusted EBITDA
-<b>&pound;5.552m, +29.03% &rarr; &#128308;</b> against +68.22%; gross margin <b>50.48%&dagger;, +4.05pp &rarr;
-&#128994;</b> but sequentially 0.9pp below H1&nbsp;FY25 &mdash; <b>and that is the level the company now says
-H1&nbsp;FY26 matches</b>; organic revenue roughly &pound;20.8m, <b>+9.4%</b> against H1&nbsp;FY25&rsquo;s +16%.
-All derived-only, so all watch flags, not counted fires &mdash; and all pointing the same way as the Text and Drift
-fires.</p>
-<p><b>4 &mdash; Guidance against prior guide, sized against consensus.</b> Prior guide (Jan-26 update): FY25 revenue
-approximately &pound;47.1m, adjusted EBITDA <b>not less than &pound;9.4m</b> &mdash; delivered &pound;47.175m /
-&pound;9.643m, the floor beaten by <b>+2.59%</b>. Current guide (Jun-26 AGM): conformity with consensus of
-<b>Revenue &pound;50.3m &middot; Adjusted EBITDA &pound;10.3m &middot; net cash &pound;16.9m</b>, which is
-<b>+6.62% revenue and +6.81% EBITDA</b> on FY25 &mdash; a materially slower year than FY25&rsquo;s +23.5% / +38.1%,
-and it is the market&rsquo;s number the company has adopted rather than one of its own. <b>G = flat</b>: no cut, no
-raise, and the first June in three years without a subsequent upward revision yet in the record. Yardstick caution:
-consensus net cash of &pound;16.9m sits &pound;6.0m above the 31 May position, and with roughly &pound;1.80m&dagger;
-of final dividend (8.9p on 20,595,829 shares outstanding, less the 365,982 since repurchased) and about &pound;1.0m of
-residual buyback still to pay, it implies <b>roughly &pound;8.8m&dagger; of net cash generation over seven months</b>
-against FY25&rsquo;s full-year net operating cash inflow of &pound;5.9m. Consensus is a yardstick only and fires
-nothing.</p>
-</div></details>
-
 <div class="row20">
  <div class="bridge">
   <div class="darkbar"><span class="em">&#127866;</span>
@@ -546,6 +561,50 @@ nothing.</p>
   </div></div>
  </div>
 </div>
+<details class="big"><summary>&sect;2.0 workings &mdash; the four checks, notes, balance-sheet sweep, trigger detail</summary><div class="dbody">
+<details><summary>The four checks &mdash; workings behind the read</summary><div class="dbody">
+<p><b>1 &mdash; Sequential (newest period against the one immediately before it).</b> The RNS prints no revenue or
+profit figure. What can be compared: <b>gross margin (Rank&nbsp;1)</b> is stated as level with <b>H2 2025 =
+50.5%&dagger;</b> &mdash; sequentially flat against the immediately preceding half, and against the seasonally-matched
+H1&nbsp;FY25 of 51.4% it is roughly 0.9pp lower, the first non-rise in six prints. <b>Cash</b> &pound;12.4m
+(31 Dec 25) &rarr; <b>&pound;10.9m (31 May 26)</b> = &minus;&pound;1.5m, of which <b>&pound;1.1m is buyback</b>;
+excluding the buyback the operating drawdown is &minus;&pound;0.4m. <b>Revenue and profit:</b> qualitative only,
+&ldquo;ahead of prior year&rdquo;.</p>
+<p><b>2 &mdash; Same type against last year (Jun-26 AGM against Jun-25 AGM).</b> Language: Jun-25 &ldquo;a
+<b>strong</b> sales performance in the first half&rdquo; &rarr; Jun-26 &ldquo;a <b>good</b> start to the year&rdquo;
+&mdash; a one-notch step down in this Chairman&rsquo;s own two-year habit. Guidance stance identical: both anchor to a
+footnoted analyst consensus and claim conformity; no cut, no raise. Cash at the same date &pound;9.0m (31 May 25)
+&rarr; <b>&pound;10.9m (31 May 26)</b>, <b>+&pound;1.9m year on year</b> despite &pound;1.1m of buyback, so
++&pound;3.0m before it; the December-to-May drawdown is identical at &minus;&pound;1.5m both years, but this year it is
+buyback rather than working capital &mdash; a genuine improvement. New in Jun-26 and absent in Jun-25: named
+raw-material inflation in the acid-based eubiotic range, <i>&ldquo;which represents around 20% of sales&rdquo;</i>;
+higher logistics costs initially absorbed on goods in transit; and a &pound;3.0m buyback programme with &pound;2.0m
+spent across 365,982 shares (&asymp;546.5p average&dagger;, against 336p for the small FY25 treasury purchase).
+Base-effect test: Jun-25&rsquo;s consensus of &pound;7.6m EBITDA resolved to &pound;9.643m &mdash; <b>a 26.88%
+beat</b> &mdash; so Jun-26&rsquo;s identical &ldquo;in line with consensus&rdquo; carries a demonstrated positive
+discount, not a negative one.</p>
+<p><b>3 &mdash; Every derivable sub-period.</b> The Buy/Sell RNS carries no period figure beyond the 31 May cash
+snapshot, so nothing is derivable from it. The mandatory sub-period check therefore runs on the latest full record,
+H2&nbsp;FY25&dagger; (second-route verified in the methodology drawer): revenue <b>&pound;24.451m, +15.32% &rarr;
+&#128308;</b> against H2&nbsp;FY24&rsquo;s +34.83%, which the FY25 &#128993; aggregate hides; adjusted EBITDA
+<b>&pound;5.552m, +29.03% &rarr; &#128308;</b> against +68.22%; gross margin <b>50.48%&dagger;, +4.05pp &rarr;
+&#128994;</b> but sequentially 0.9pp below H1&nbsp;FY25 &mdash; <b>and that is the level the company now says
+H1&nbsp;FY26 matches</b>; organic revenue roughly &pound;20.8m, <b>+9.4%</b> against H1&nbsp;FY25&rsquo;s +16%.
+All derived-only, so all watch flags, not counted fires &mdash; and all pointing the same way as the Text and Drift
+fires.</p>
+<p><b>4 &mdash; Guidance against prior guide, sized against consensus.</b> Prior guide (Jan-26 update): FY25 revenue
+approximately &pound;47.1m, adjusted EBITDA <b>not less than &pound;9.4m</b> &mdash; delivered &pound;47.175m /
+&pound;9.643m, the floor beaten by <b>+2.59%</b>. Current guide (Jun-26 AGM): conformity with consensus of
+<b>Revenue &pound;50.3m &middot; Adjusted EBITDA &pound;10.3m &middot; net cash &pound;16.9m</b>, which is
+<b>+6.62% revenue and +6.81% EBITDA</b> on FY25 &mdash; a materially slower year than FY25&rsquo;s +23.5% / +38.1%,
+and it is the market&rsquo;s number the company has adopted rather than one of its own. <b>G = flat</b>: no cut, no
+raise, and the first June in three years without a subsequent upward revision yet in the record. Yardstick caution:
+consensus net cash of &pound;16.9m sits &pound;6.0m above the 31 May position, and with roughly &pound;1.80m&dagger;
+of final dividend (8.9p on 20,595,829 shares outstanding, less the 365,982 since repurchased) and about &pound;1.0m of
+residual buyback still to pay, it implies <b>roughly &pound;8.8m&dagger; of net cash generation over seven months</b>
+against FY25&rsquo;s full-year net operating cash inflow of &pound;5.9m. Consensus is a yardstick only and fires
+nothing.</p>
+</div></details>
 
 <details><summary>Notes &mdash; &sect;2.0</summary><div class="dbody">
 <p>The single most decision-relevant number in the next RNS is the printed H1&nbsp;FY26 gross margin &mdash; every
@@ -557,103 +616,7 @@ same &ldquo;we put prices up&rdquo; explanation would exhaust it.</p>
 final dividend and about &pound;1.0m of buyback still to pay &mdash; a yardstick worth watching at the interims,
 firing nothing.</p>
 </div></details>
-<h2 class="sec">&sect;3 &middot; Text + G &mdash; language track</h2>
-<p class="subnote">Every print in the window, reiterations included &mdash; the unbroken run calibrates the company&rsquo;s voice. Scored at the profit line; verbatim quotes. <b>Click any Doc cell to highlight every row of that document type.</b> Rows where the score moved are shaded. The G column is the sole fired-guidance record; credibility is read informally down G against actuals. Each row carries a <b>Context</b> column &mdash; paraphrase, not quotation &mdash; recording the anchor, any caveat, the guide numbers and what the outturn later showed. Fuller verbatim passages for the trailing&nbsp;12&nbsp;months sit in the drawer below.</p>
-<table id="text3"><tr><th style="width:78px">Date</th><th style="width:66px">Doc</th><th style="width:82px">G</th><th>Verbatim forward-guidance phrase</th><th style="width:300px">Context</th><th style="width:74px">Score</th></tr>
-<tr data-rowtype="H1R"><td>14 Sep 22</td><td class="doc" data-rowtype="H1R">FY22<br>H1 R</td><td class="g">&mdash;</td><td class="q">&ldquo;Maintaining profitability at the same level of last year is going to be challenging&rdquo;</td><td class="cx">No expectations anchor. Chair flags matching last year&rsquo;s profit as &ldquo;challenging&rdquo; &mdash; the downturn&rsquo;s first verbal warning. Outturn: FY22 EBITDA fell to &pound;5.21m.</td><td class="sc">&#128308;&#128308;</td></tr>
-<tr class="chg" data-rowtype="FYTU"><td>09 Jan 23</td><td class="doc" data-rowtype="FYTU">FY22<br>YE-TU</td><td class="g">&#128308; CUT</td><td class="q">&ldquo;adjusted EBITDA<sup>1</sup> to be not less than &pound;5m&rdquo;</td><td class="cx">Numeric guide <i>cut</i>: floor set at &pound;5m EBITDA on sales &ge;&pound;33m, below the prior run-rate. Outturn: &pound;5.21m &mdash; just cleared the floor.</td><td class="sc">&#128308;&#128308;&#128308;</td></tr>
-<tr data-rowtype="FYR"><td>22 Mar 23</td><td class="doc" data-rowtype="FYR">FY22<br>R</td><td class="g">&mdash;</td><td class="q">&ldquo;The year has started weaker than anticipated, at similar levels to the final quarter&rdquo;</td><td class="cx">No expectations anchor; a prior-period comparator (&ldquo;final quarter&rdquo;). Signals the weak run continues into FY23. Outturn: FY23 EBITDA &pound;4.46m, down again.</td><td class="sc">&#128308;&#128308;&#128308;</td></tr>
-<tr class="chg" data-rowtype="AGM"><td>29 Jun 23</td><td class="doc" data-rowtype="AGM">FY23<br>AGM</td><td class="g">flat</td><td class="q">&ldquo;the outlook for the Company&rsquo;s 2023 financial year remains in line with market expectations&rdquo;</td><td class="cx">Market-expectations anchor intact, reiterated. First clean &ldquo;in line&rdquo; after two down prints. Outturn: met.</td><td class="sc">&#9898;</td></tr>
-<tr class="chg" data-rowtype="H1R"><td>13 Sep 23</td><td class="doc" data-rowtype="H1R">FY23<br>H1 R</td><td class="g">&mdash;</td><td class="q">&ldquo;sales growth will return as the year progresses and into 2024&rdquo;</td><td class="cx">No anchor; a forward promise (&ldquo;growth will return&rdquo;) with no number. Interim trading still soft. Outturn: recovery began in H2 FY23.</td><td class="sc">&#128308;</td></tr>
-<tr class="chg" data-rowtype="FYTU"><td>24 Jan 24</td><td class="doc" data-rowtype="FYTU">FY23<br>YE-TU</td><td class="g">&#128994; RAISE</td><td class="q">&ldquo;adjusted EBITDA<sup>1</sup> is now expected to be ahead of current market expectations&rdquo;</td><td class="cx">Numeric guide <i>raised</i>: EBITDA now &ldquo;ahead&rdquo;, floor &ge;&pound;4.4m on sales &ge;&pound;30.8m. Outturn: &pound;4.46m / &pound;31.0m &mdash; beaten by +1.4% / +0.6%.</td><td class="sc">&#128994;&#128994;</td></tr>
-<tr class="chg" data-rowtype="FYR"><td>20 Mar 24</td><td class="doc" data-rowtype="FYR">FY23<br>R</td><td class="g">&mdash;</td><td class="q">&ldquo;The year has started well continuing from the final quarter of last year&rdquo;</td><td class="cx">No anchor; prior-period comparator, but positive (&ldquo;started well&rdquo;). Confirms the turn. Outturn: FY24 accelerated.</td><td class="sc">&#128994;</td></tr>
-<tr class="chg" data-rowtype="AGM"><td>25 Jun 24</td><td class="doc" data-rowtype="AGM">FY24<br>AGM</td><td class="g">flat</td><td class="q">&ldquo;we are confident of achieving market expectations for the full year&rdquo;</td><td class="cx">Market-expectations anchor, confident tone. No consensus footnote printed this year &mdash; June evidence starts a year later than it looks. Outturn: met.</td><td class="sc">&#9898;</td></tr>
-<tr class="chg" data-rowtype="H1R"><td>11 Sep 24</td><td class="doc" data-rowtype="H1R">FY24<br>H1 R</td><td class="g">&mdash;</td><td class="q">&ldquo;Strong start to the second half of the year with an acceleration in sales&rdquo;</td><td class="cx">No anchor; a positive current-trading line (&ldquo;acceleration in sales&rdquo;). Bio-Vet acquired 30 Sep 24. Outturn: strong H2.</td><td class="sc">&#128994;</td></tr>
-<tr class="chg" data-rowtype="FYTU"><td>10 Jan 25</td><td class="doc" data-rowtype="FYTU">FY24<br>YE-TU</td><td class="g">&#128994; RAISE</td><td class="q">&ldquo;will result in adjusted EBITDA being ahead of current market expectations&rdquo;</td><td class="cx">Numeric guide <i>raised</i>: EBITDA &ldquo;ahead&rdquo;; rev &asymp;&pound;37.5m vs consensus &pound;35.25m / &pound;5.7m / &pound;7.2m. Outturn: &pound;38.2m / &pound;7.0m &mdash; beaten.</td><td class="sc">&#128994;&#128994;</td></tr>
-<tr data-rowtype="TU"><td>26 Mar 25</td><td class="doc" data-rowtype="TU">FY24<br>TU</td><td class="g">&#128994; RAISE</td><td class="q">&ldquo;revenue for the Group of &pound;38.2m (2023: &pound;31.0m), adjusted EBITDA<sup>1</sup> of &pound;7.0m&rdquo;</td><td class="cx">Near-final actuals released early (audit unfinished): rev &pound;38.2m, EBITDA &pound;7.0m, net cash &pound;10.5m. A de-facto raise. Outturn: confirmed at FY24 R.</td><td class="sc">&#128994;&#128994;</td></tr>
-<tr class="chg" data-rowtype="FYR"><td>31 Mar 25</td><td class="doc" data-rowtype="FYR">FY24<br>R</td><td class="g">&mdash;</td><td class="q">&ldquo;There has been a strong start to the year&rdquo;</td><td class="cx">No anchor; positive current-trading (&ldquo;strong start&rdquo;). Outturn: FY25 continued the momentum.</td><td class="sc">&#128994;</td></tr>
-<tr class="chg" data-rowtype="AGM"><td>19 Jun 25</td><td class="doc" data-rowtype="AGM">FY25<br>AGM</td><td class="g">flat</td><td class="q">&ldquo;we are confident of achieving market expectations* for the full year&rdquo;</td><td class="cx">Market-expectations anchor (asterisked to consensus &pound;44.8m / &pound;7.6m / &pound;11.9m), confident. Geopolitical caveat noted but not sized. Outturn: FY25 beat.</td><td class="sc">&#9898;</td></tr>
-<tr class="chg" data-rowtype="H1R"><td>10 Sep 25</td><td class="doc" data-rowtype="H1R">FY25<br>H1 R</td><td class="g">&mdash;</td><td class="q">&ldquo;The second half has started well continuing the momentum from the first&rdquo;</td><td class="cx">No anchor; positive current-trading (&ldquo;second half started well&rdquo;). H1 EBITDA &pound;3.30m. Outturn: FY25 record.</td><td class="sc">&#128994;</td></tr>
-<tr class="chg" data-rowtype="FYTU"><td>19 Jan 26</td><td class="doc" data-rowtype="FYTU">FY25<br>YE-TU</td><td class="g">&#128994; RAISE</td><td class="q">&ldquo;adjusted EBITDA being ahead of current market expectations* and not less than &pound;9.4m&rdquo;</td><td class="cx">Numeric guide <i>raised</i>: EBITDA &ldquo;ahead&rdquo; and &ldquo;not less than &pound;9.4m&rdquo;; rev &asymp;&pound;47.1m vs consensus &pound;45.5m / &pound;8.2m / &pound;12.0m. Outturn: &pound;9.64m / &pound;47.2m &mdash; beaten.</td><td class="sc">&#128994;&#128994;</td></tr>
-<tr class="chg" data-rowtype="FYR"><td>31 Mar 26</td><td class="doc" data-rowtype="FYR">FY25<br>R</td><td class="g">&mdash;</td><td class="q">&ldquo;in line with the strong Q1 performance in the prior year&rdquo;</td><td class="cx">Anchor switched: &ldquo;in line with market expectations&rdquo; replaced by trading merely level with a <i>high prior-year Q1</i>. Iran/Persian Gulf logistics disruption named but pipeline called &ldquo;healthy&rdquo;. The comparator swap is the score.</td><td class="sc">&#128308;</td></tr>
-<tr class="chg" data-rowtype="AGM"><td style="font-weight:700">&#11088; 18 Jun 26</td><td class="doc" data-rowtype="AGM">FY26<br>AGM</td><td class="g">flat</td><td class="q">&ldquo;ahead of prior year and in line with full year analyst consensus expectations&rdquo;</td><td class="cx">Consensus-expectations anchor intact (&pound;50.3m / &pound;10.3m / &pound;16.9m). &ldquo;Ahead of prior year&rdquo; but only &ldquo;in line&rdquo; with consensus. Cost pressure stated as passed on, in the cost line not the growth line.</td><td class="sc">&#9898;</td></tr>
-</table>
 
-<details><summary>Notes &mdash; &sect;3</summary><div class="dbody">
-<p><b>The two contested scores.</b> <b>31 Mar 26 (&#128308;, operator-set):</b> the score rests on the anchor switch
-alone &mdash; three years of &ldquo;strong start to trading&rdquo; / &ldquo;strong start to the year&rdquo; replaced by
-trading merely level with a high prior-year quarter, a prior-period comparator substituted for an expectations-style
-one. The named Iran / Persian Gulf logistics disruption is recorded as a noted conflict alongside the same
-document&rsquo;s &ldquo;pipeline is healthy&rdquo; confidence, not as a second notch. <b>18 Jun 26 (&#9898;):</b> an
-in-line reiteration with the expectations anchor intact; the named cost pressures sit in the cost line, not the
-growth-carrying line, and are stated as passed on, so the cap-at-zero rule does not bite and no &#128308; trigger
-applies. The margin-comparator switch is recorded as a Rank-1 and Drift signal rather than double-counted as
-language.</p>
-<p><b>Guidance-versus-outturn credibility &mdash; the scan down G against actuals.</b> Fourteen resolved guides, zero
-misses on any <i>numeric</i> guide. January floors are near-final numbers, beaten by +0.31%, +0.64% and +0.16% on
-revenue and +4.16%, +1.43% and +2.59% on EBITDA &mdash; conservative and reliable. The single <b>June</b> consensus
-anchor in the record resolved to a <b>+26.88% EBITDA beat</b>; the 25 Jun 2024 AGM carried no consensus footnote at
-all, so the June-anchored evidence is <b>one year deep</b>, not two &mdash; the +22.54% belongs to the January anchor
-in the FY24 cycle. Only the two purely verbal guides ever missed, both in the 2022&ndash;23 downturn. This board
-under-promises, and does so most at the June AGM &mdash; the strongest single counterweight to the fired
-conditions.</p>
-<p><b>Condition 2 test.</b> The limb is &ldquo;falling 2+ consecutive prints, <i>or any print &le; &minus;1</i>&rdquo;.
-Trailing-twelve-month prints: Sep-25 +1 &rarr; Jan-26 +2 &rarr; <b>Mar-26 &minus;1</b> &rarr; Jun-26 0. The
-&minus;1 satisfies the second limb; the first limb was never met. Not a recurring seasonal caution &mdash; Mar-24 and
-Mar-25 both scored +1.</p>
-</div></details>
-<style>.gp{border:1px solid #d8d5cf;border-radius:8px;padding:10px 12px;margin:8px 0;background:#fbfaf7}.gph{font-size:11.5px;color:#2b2a26;margin-bottom:4px}.gpsec{color:#5f5c54;font-style:italic;margin-left:6px}.gpb{font-size:11.5px;line-height:1.5;color:#3d3a34;margin:0}</style><details><summary>Guidance passages &mdash; fuller verbatim, trailing 12 months</summary><div class="dbody"><p style="font-size:11px;color:#5f5c54">Five qualifying documents in the twelve months to the Buy/Sell AGM, each with the sentence carrying the anchor or guide plus its surrounding qualifiers, tagged by document, date and section. This is the comparison set for incremental Text scoring; observed absences are in <i>editorial italics</i>. Entries roll forward as documents age out of the window.</p><div class="gp"><div class="gph"><b>19 Jun 25</b> &middot; FY25 AGM <span class="gpsec">Chair statement</span></div><p class="gpb">&ldquo;We have had a strong sales performance in the first half of the year as our business development initiatives deliver and the global agriculture market improves. As such, we are confident of achieving market expectations* for the full year. There are challenges to navigate, however, and the current geopolitical environment makes it difficult to predict if and how our markets could be affected, but our geographic and product diversity gives us resilience.&rdquo; <i>Footnote: analyst consensus for FY25 immediately prior was revenue &pound;44.8m, EBITDA &pound;7.6m, net cash &pound;11.9m.</i></p></div><div class="gp"><div class="gph"><b>10 Sep 25</b> &middot; H1 FY25 interims <span class="gpsec">Outlook</span></div><p class="gpb">&ldquo;The second half has started well continuing the momentum from the first and we are confident of building on this platform for the remainder of this year and into the next.&rdquo; Chairman&rsquo;s close: &ldquo;The Group has made a strong start to the second half, and we are confident of building on this momentum.&rdquo; Adjusted EBITDA for the half was &pound;3.302m (H1 2024: &pound;1.944m). No numeric full-year guide is given; the anchor is current-trading language only, with no expectations reference in the outlook paragraph.</p></div><div class="gp"><div class="gph"><b>19 Jan 26</b> &middot; FY25 YE trading update <span class="gpsec">Trading update</span></div><p class="gpb">&ldquo;This strong performance in revenue combined with the Group&rsquo;s high operational gearing, will result in adjusted EBITDA being ahead of current market expectations* and not less than &pound;9.4m (2024: &pound;7.0m). The results include a full-year contribution from Bio-Vet.&rdquo; Highlights: revenue &asymp;&pound;47.1m (up 23%), net cash &pound;12.4m. <i>Footnote: analyst consensus for FY25 immediately prior was revenue &pound;45.5m, adjusted EBITDA &pound;8.2m, net cash &pound;12.0m &mdash; so the &ldquo;not less than &pound;9.4m&rdquo; floor sits &pound;1.2m above consensus.</i></p></div><div class="gp"><div class="gph"><b>31 Mar 26</b> &middot; FY25 final results <span class="gpsec">Outlook &amp; CEO</span></div><p class="gpb">Outlook bullet: &ldquo;Trading to date in the current year is in line with the strong Q1 performance in the prior year.&rdquo; CEO: &ldquo;The current year has started inline against a high comparator through Q1 last year, and we are confident of making good progress&hellip; as our pipeline is healthy.&rdquo; Separately: &ldquo;We are monitoring the impact of the conflict in Iran, which has affected shipping and logistics into parts of the Persian Gulf region.&rdquo; <i>Editorial: no &ldquo;market expectations&rdquo; anchor anywhere in the document &mdash; the first results doc in the record to compare current trading only to a prior-year quarter.</i></p></div><div class="gp"><div class="gph"><b>18 Jun 26</b> &middot; FY26 AGM (Buy/Sell) <span class="gpsec">Chair statement</span></div><p class="gpb">&ldquo;The Group has made a good start to the year with revenue and profit performance ahead of prior year and in line with full year analyst consensus expectations1, despite well-reported geopolitical and related economic conditions. We are particularly encouraged by a strong trading performance in the Middle-East&hellip; Growth has also continued at pace in the US.&rdquo; On costs: &ldquo;Following the onset of recent disruptions, the Group initially absorbed increases&hellip;&rdquo; then passed them on. <i>Footnote 1: consensus revenue &pound;50.3m, EBITDA &pound;10.3m, net cash &pound;16.9m.</i></p></div></div></details>
-<h2 class="sec">&sect;4 &middot; Drift &mdash; what they&rsquo;ve gone quiet about</h2>
-<p class="subnote">Which numbers get shared, hedged, or dropped, document by document &mdash; going quiet is the signal. This is the disclosure matrix; Drift is trigger condition&nbsp;3. Manifest qualifying count 17 = Drift columns 17; &#8709; columns 0. <b>Click any column header to highlight every column of that period type.</b></p>
-<table id="drift"><colgroup><col style="width:168px"><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col></colgroup>
-<tr><th class="lab">Metric</th><th class="c" data-k="H1R">14 Sep 22<span class="key">H1R</span></th><th class="c" data-k="FYTU">09 Jan 23<span class="key">FYTU</span></th><th class="c" data-k="FYR">22 Mar 23<span class="key">FYR</span></th><th class="c" data-k="AGM">29 Jun 23<span class="key">AGM</span></th><th class="c" data-k="H1R">13 Sep 23<span class="key">H1R</span></th><th class="c" data-k="FYTU">24 Jan 24<span class="key">FYTU</span></th><th class="c" data-k="FYR">20 Mar 24<span class="key">FYR</span></th><th class="c" data-k="AGM">25 Jun 24<span class="key">AGM</span></th><th class="c" data-k="H1R">11 Sep 24<span class="key">H1R</span></th><th class="c" data-k="FYTU">10 Jan 25<span class="key">FYTU</span></th><th class="c" data-k="TU">26 Mar 25<span class="key">TU</span></th><th class="c" data-k="FYR">31 Mar 25<span class="key">FYR</span></th><th class="c" data-k="AGM">19 Jun 25<span class="key">AGM</span></th><th class="c" data-k="H1R">10 Sep 25<span class="key">H1R</span></th><th class="c" data-k="FYTU">19 Jan 26<span class="key">FYTU</span></th><th class="c" data-k="FYR">31 Mar 26<span class="key">FYR</span></th><th class="c" data-k="AGM">&#11088; 18 Jun 26<span class="key">AGM</span></th></tr>
-<tr><td class="lab"><b>R1</b> Gross margin %</td><td>&#9989;41.9</td><td>&#128993;</td><td>&#9989;42.7</td><td>&#128993;</td><td>&#9989;43.9</td><td>&#128993;</td><td>&#9989;45.0</td><td>&#128993;</td><td>&#9989;47.5</td><td>&mdash;</td><td>&mdash;</td><td>&#9989;46.9</td><td>&#10060;</td><td>&#9989;51.4</td><td>&mdash;</td><td>&#9989;50.9</td><td class="bscol">&#128993;</td></tr>
-<tr><td class="lab"><b>R2</b> Volume growth %</td><td>&#9989;&minus;6</td><td>&mdash;</td><td>&#9989;&minus;11</td><td>&mdash;</td><td>&#9989;&minus;26</td><td>&mdash;</td><td>&#9989;&minus;23</td><td>&mdash;</td><td>&#9989;+20</td><td>&mdash;</td><td>&mdash;</td><td>&#9989;+27<sup>r</sup></td><td>&mdash;</td><td>&#10060;</td><td>&mdash;</td><td>&#10060;</td><td class="bscol">&mdash;</td></tr>
-<tr><td class="lab"><b>R3</b> ASP / tonne %</td><td>&#9989;+10</td><td>&mdash;</td><td>&#9989;+11</td><td>&mdash;</td><td>&#9989;+25</td><td>&mdash;</td><td>&#9989;+23</td><td>&mdash;</td><td>&#9989;&minus;7</td><td>&mdash;</td><td>&mdash;</td><td>&#9989;&minus;9</td><td>&mdash;</td><td>&#9989;+28<sup>r</sup></td><td>&mdash;</td><td>&#10060;</td><td class="bscol">&mdash;</td></tr>
-<tr><td class="lab"><b>R4</b> Revenue</td><td>&#9989;16.5</td><td>&#9989;&ge;33.0</td><td>&#9989;33.1</td><td>&#128993;</td><td>&#9989;15.3</td><td>&#9989;&ge;30.8</td><td>&#9989;31.0</td><td>&#128993;</td><td>&#9989;17.0</td><td>&#9989;&asymp;37.5</td><td>&#9989;38.2</td><td>&#9989;38.2</td><td>&#128993;</td><td>&#9989;22.7</td><td>&#9989;&asymp;47.1</td><td>&#9989;47.2</td><td class="bscol">&#128993;</td></tr>
-<tr><td class="lab"><b>R5</b> Adjusted EBITDA</td><td>&#9989;3.0</td><td>&#9989;&ge;5.0</td><td>&#9989;5.2</td><td>&#128993;</td><td>&#9989;1.9</td><td>&#9989;&ge;4.4</td><td>&#9989;4.5</td><td>&#128993;</td><td>&#9989;2.7</td><td>&#128993;</td><td>&#9989;7.0</td><td>&#9989;7.0</td><td>&#128993;</td><td>&#9989;4.1</td><td>&#9989;&ge;9.4</td><td>&#9989;9.6</td><td class="bscol">&#128993;</td></tr>
-<tr><td class="lab">Like-for-like revenue</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&#9989;36.0</td><td>&mdash;</td><td>&#9989;19.7</td><td>&#128993;</td><td>&#9989;40.5</td><td class="bscol">&mdash;</td></tr>
-<tr><td class="lab">Segment revenue / growth</td><td>&#9989;</td><td>&#128993;</td><td>&#9989;</td><td>&#128993;</td><td>&#9989;</td><td>&#128993;</td><td>&#9989;</td><td>&#128993;</td><td>&#9989;</td><td>&#128993;</td><td>&mdash;</td><td>&#9989;</td><td>&#128993;</td><td>&#9989;</td><td>&#128993;</td><td>&#9989;</td><td class="bscol">&#128993;</td></tr>
-<tr><td class="lab">Net cash / cash balance</td><td>&#9989;13.3</td><td>&#9989;13.6</td><td>&#9989;13.6</td><td>&mdash;</td><td>&#9989;7.3</td><td>&#9989;10.6</td><td>&#9989;10.6</td><td>&#9989;12.2</td><td>&#9989;13.5</td><td>&#9989;10.5</td><td>&#9989;10.5</td><td>&#9989;10.5</td><td>&#9989;9.0</td><td>&#9989;11.1</td><td>&#9989;12.4</td><td>&#9989;12.4</td><td class="bscol">&#9989;10.9</td></tr>
-<tr><td class="lab">Dividend per share</td><td>&#9989;3.15</td><td>&mdash;</td><td>&#9989;10.5</td><td>&mdash;</td><td>&#9989;3.20</td><td>&mdash;</td><td>&#9989;10.7</td><td>&mdash;</td><td>&#9989;3.25</td><td>&mdash;</td><td>&mdash;</td><td>&#9989;11.25</td><td>&mdash;</td><td>&#9989;3.60</td><td>&mdash;</td><td>&#9989;12.50</td><td class="bscol">&mdash;</td></tr>
-<tr><td class="lab">Consensus anchor (&pound;)</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&#9989;</td><td>&mdash;</td><td>&mdash;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&mdash;</td><td class="bscol">&#9989;</td></tr>
-<tr><td class="lab">Buyback</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&#9989;0.1</td><td class="bscol">&#9989;2.0/3.0</td></tr>
-</table>
-<p class="legend">&#9989; quantified &middot; &#128993; qualitative only &middot; &#10060; verified blank against established cadence &middot; &mdash; structurally outside that document type&rsquo;s cadence &middot; &#8709; expected update not issued (none in this record) &middot; <sup>r</sup> restated or re-based. Period-type key: H1R &middot; FYTU &middot; FYR &middot; AGM &middot; TU.</p>
-
-<details><summary>Notes &mdash; &sect;4</summary><div class="dbody">
-<p><b>First note, reserved for the rightmost column (18 Jun 2026).</b> Gross margin returns to the page after being
-absent from the three preceding interim communications &mdash; one of them (Jun-25) a verified blank against the AGM
-habit, two of them outside a patchy update habit &mdash; and it returns <b>qualitatively, benchmarked against
-H2&nbsp;2025 rather than the matched H1&nbsp;2025</b>. A green shoot on disclosure and a &#128308; on comparator.</p>
-<p><b>The fired cells.</b> Rank&nbsp;2: six consecutive quantifications at H1-R and FY-R grain, then two consecutive
-verified blanks &mdash; cadence unambiguously established, so this alone carries condition&nbsp;3. Rank&nbsp;3: seven
-consecutive, then one blank &mdash; watch, supporting. Both verified by full-text search of the two 2025-cycle
-documents, not inferred from document-type habit.</p>
-<p><b>Rank 1&rsquo;s soft cells.</b> The update-grain margin habit is genuinely patchy &mdash; present Jan-23 and
-Jan-24, absent Jan-25 and Jan-26, two on and two off &mdash; so those two resolve to &ldquo;&mdash;&rdquo;, not
-&#10060;. The AGM-grain habit is three of four, so Jun-25&rsquo;s blank is scored &#10060; on that basis.
-<b>No fired condition rests on any of them.</b></p>
-<p><b>Disclosure expansions, dated (green shoots).</b> 31 May cash at the AGM from <b>Jun-2024</b>; footnoted analyst
-consensus at update and AGM grain from <b>Jan-2025</b>; like-for-like revenue from <b>Mar-2025</b> &mdash; a
-first-ever quantification, so its baseline starts that day with no history to judge it against; buyback from
-<b>Mar-2026</b>, scaled up in the Buy/Sell RNS. Consensus is disclosed at update and AGM grain but never in the Final
-Results &mdash; a stable asymmetry, not a withhold.</p>
-<p><b>Basis and provenance.</b> Net cash carries a perimeter change across the record: including short-term
-investments (FY22, FY23), including short-term investments (FY24), then cash and cash equivalents alone (H1&nbsp;FY25,
-FY25). Immaterial at FY25, flagged nonetheless. The Jun-23 AGM cell is &ldquo;&mdash;&rdquo;, not &#10060;: the AGM
-cash habit begins Jun-24, and there was no cadence to withhold against. Likewise the Jun-26 like-for-like cell &mdash;
-that metric has only ever appeared in FY-R and H1-R documents. The AGM-grain dividend figure is published in the
-Result-of-AGM announcements, which the manifest classifies as noise, so those cells read &ldquo;&mdash;&rdquo;.</p>
-<p><b>Cadence breaks and format shifts.</b> Nominated adviser and broker changed from Peel Hunt to Shore Capital in
-2023. A new document type appeared in Mar-2025 &mdash; an update on the timing of the full-year results, issued
-because the auditors asked for more time; publication moved from 26 March to no later than 2 April and landed on
-31 March. Not repeated in the FY25 cycle. Results dates: 22 Mar 2023, 20 Mar 2024, 31 Mar 2025 (delayed), 31 Mar 2026
-&mdash; now stable at end-March. Document titles shifted from &ldquo;Half-year Report&rdquo; to &ldquo;Interim
-results&rdquo; from 2024, which is cosmetic.</p>
-</div></details>
-
-<h2 class="sec">Balance-sheet sweep</h2>
 <details><summary>Silent balance-sheet sweep &mdash; renders on a hit only</summary><div class="dbody">
 <p><b>Tier 1: nothing.</b> Net cash throughout the record; no borrowings; net finance <i>income</i> of &pound;109k in
 FY25. No crossover to net debt, no covenant stress, no facility maturity issue. Going-concern search returned 15&ndash;16
@@ -679,7 +642,6 @@ with &pound;2.0m already spent; net cash rebuilt from &pound;10.5m to &pound;12.
 consideration; effective tax rate down to 15.4% (2024: 20.6%) on Patent Box growth.</p>
 </div></details>
 
-<h2 class="sec">Inflection trigger &mdash; 2 of 3</h2>
 <details><summary>Trigger detail &amp; audit record</summary><div class="dbody">
 <p><b>&#9989; Condition 2 &mdash; Text.</b> 31 Mar 26 scored &minus;1, inside the trailing-twelve-month window, which
 satisfies the &ldquo;any print &le; &minus;1&rdquo; limb. Not a recurring seasonal caution.</p>
@@ -713,7 +675,106 @@ Anpario prints neither, anywhere in the record, so the nine-cell H-grid plus the
 available &mdash; the sequential trigger, which is the earliest hard-number signal the framework has, cannot run on
 this ticker at all.</p>
 </div></details>
+</div></details>
+<h2 class="sec">&sect;3 &middot; Text + G &mdash; language track</h2>
+<p class="subnote">Every print in the window, reiterations included &mdash; the unbroken run calibrates the company&rsquo;s voice. Scored at the profit line; verbatim quotes. <b>Click any Doc cell to highlight every row of that document type.</b> Rows where the score moved are shaded. The G column is the sole fired-guidance record; credibility is read informally down G against actuals. Each row carries a <b>Context</b> column &mdash; paraphrase, not quotation &mdash; recording the anchor, any caveat, the guide numbers and what the outturn later showed. Fuller verbatim passages for the trailing&nbsp;12&nbsp;months sit in the drawer below.</p>
+<table id="text3"><tr><th style="width:78px">Date</th><th style="width:66px">Doc</th><th style="width:82px">G</th><th>Verbatim forward-guidance phrase</th><th style="width:300px">Context</th><th style="width:74px">Score</th></tr>
+<tr class="xpand"><td colspan="6" id="t3bar">&#9656; Show 9 earlier prints &mdash; Sep 2022 to Sep 2024</td></tr>
+<tr class="old" data-rowtype="H1R"><td>14 Sep 22</td><td class="doc" data-rowtype="H1R">FY22<br>H1 R</td><td class="g">&mdash;</td><td class="q">&ldquo;Maintaining profitability at the same level of last year is going to be challenging&rdquo;</td><td class="cx">No expectations anchor. Chair flags matching last year&rsquo;s profit as &ldquo;challenging&rdquo; &mdash; the downturn&rsquo;s first verbal warning. Outturn: FY22 EBITDA fell to &pound;5.21m.</td><td class="sc">&#128308;&#128308;</td></tr>
+<tr class="chg old" data-rowtype="FYTU"><td>09 Jan 23</td><td class="doc" data-rowtype="FYTU">FY22<br>YE-TU</td><td class="g">&#128308; CUT</td><td class="q">&ldquo;adjusted EBITDA<sup>1</sup> to be not less than &pound;5m&rdquo;</td><td class="cx">Numeric guide <i>cut</i>: floor set at &pound;5m EBITDA on sales &ge;&pound;33m, below the prior run-rate. Outturn: &pound;5.21m &mdash; just cleared the floor.</td><td class="sc">&#128308;&#128308;&#128308;</td></tr>
+<tr class="old" data-rowtype="FYR"><td>22 Mar 23</td><td class="doc" data-rowtype="FYR">FY22<br>R</td><td class="g">&mdash;</td><td class="q">&ldquo;The year has started weaker than anticipated, at similar levels to the final quarter&rdquo;</td><td class="cx">No expectations anchor; a prior-period comparator (&ldquo;final quarter&rdquo;). Signals the weak run continues into FY23. Outturn: FY23 EBITDA &pound;4.46m, down again.</td><td class="sc">&#128308;&#128308;&#128308;</td></tr>
+<tr class="chg old" data-rowtype="AGM"><td>29 Jun 23</td><td class="doc" data-rowtype="AGM">FY23<br>AGM</td><td class="g">flat</td><td class="q">&ldquo;the outlook for the Company&rsquo;s 2023 financial year remains in line with market expectations&rdquo;</td><td class="cx">Market-expectations anchor intact, reiterated. First clean &ldquo;in line&rdquo; after two down prints. Outturn: met.</td><td class="sc">&#9898;</td></tr>
+<tr class="chg old" data-rowtype="H1R"><td>13 Sep 23</td><td class="doc" data-rowtype="H1R">FY23<br>H1 R</td><td class="g">&mdash;</td><td class="q">&ldquo;sales growth will return as the year progresses and into 2024&rdquo;</td><td class="cx">No anchor; a forward promise (&ldquo;growth will return&rdquo;) with no number. Interim trading still soft. Outturn: recovery began in H2 FY23.</td><td class="sc">&#128308;</td></tr>
+<tr class="chg old" data-rowtype="FYTU"><td>24 Jan 24</td><td class="doc" data-rowtype="FYTU">FY23<br>YE-TU</td><td class="g">&#128994; RAISE</td><td class="q">&ldquo;adjusted EBITDA<sup>1</sup> is now expected to be ahead of current market expectations&rdquo;</td><td class="cx">Numeric guide <i>raised</i>: EBITDA now &ldquo;ahead&rdquo;, floor &ge;&pound;4.4m on sales &ge;&pound;30.8m. Outturn: &pound;4.46m / &pound;31.0m &mdash; beaten by +1.4% / +0.6%.</td><td class="sc">&#128994;&#128994;</td></tr>
+<tr class="chg old" data-rowtype="FYR"><td>20 Mar 24</td><td class="doc" data-rowtype="FYR">FY23<br>R</td><td class="g">&mdash;</td><td class="q">&ldquo;The year has started well continuing from the final quarter of last year&rdquo;</td><td class="cx">No anchor; prior-period comparator, but positive (&ldquo;started well&rdquo;). Confirms the turn. Outturn: FY24 accelerated.</td><td class="sc">&#128994;</td></tr>
+<tr class="chg old" data-rowtype="AGM"><td>25 Jun 24</td><td class="doc" data-rowtype="AGM">FY24<br>AGM</td><td class="g">flat</td><td class="q">&ldquo;we are confident of achieving market expectations for the full year&rdquo;</td><td class="cx">Market-expectations anchor, confident tone. No consensus footnote printed this year &mdash; June evidence starts a year later than it looks. Outturn: met.</td><td class="sc">&#9898;</td></tr>
+<tr class="chg old" data-rowtype="H1R"><td>11 Sep 24</td><td class="doc" data-rowtype="H1R">FY24<br>H1 R</td><td class="g">&mdash;</td><td class="q">&ldquo;Strong start to the second half of the year with an acceleration in sales&rdquo;</td><td class="cx">No anchor; a positive current-trading line (&ldquo;acceleration in sales&rdquo;). Bio-Vet acquired 30 Sep 24. Outturn: strong H2.</td><td class="sc">&#128994;</td></tr>
+<tr class="chg" data-rowtype="FYTU"><td>10 Jan 25</td><td class="doc" data-rowtype="FYTU">FY24<br>YE-TU</td><td class="g">&#128994; RAISE</td><td class="q">&ldquo;will result in adjusted EBITDA being ahead of current market expectations&rdquo;</td><td class="cx">Numeric guide <i>raised</i>: EBITDA &ldquo;ahead&rdquo;; rev &asymp;&pound;37.5m vs consensus &pound;35.25m / &pound;5.7m / &pound;7.2m. Outturn: &pound;38.2m / &pound;7.0m &mdash; beaten.</td><td class="sc">&#128994;&#128994;</td></tr>
+<tr data-rowtype="TU"><td>26 Mar 25</td><td class="doc" data-rowtype="TU">FY24<br>TU</td><td class="g">&#128994; RAISE</td><td class="q">&ldquo;revenue for the Group of &pound;38.2m (2023: &pound;31.0m), adjusted EBITDA<sup>1</sup> of &pound;7.0m&rdquo;</td><td class="cx">Near-final actuals released early (audit unfinished): rev &pound;38.2m, EBITDA &pound;7.0m, net cash &pound;10.5m. A de-facto raise. Outturn: confirmed at FY24 R.</td><td class="sc">&#128994;&#128994;</td></tr>
+<tr class="chg" data-rowtype="FYR"><td>31 Mar 25</td><td class="doc" data-rowtype="FYR">FY24<br>R</td><td class="g">&mdash;</td><td class="q">&ldquo;There has been a strong start to the year&rdquo;</td><td class="cx">No anchor; positive current-trading (&ldquo;strong start&rdquo;). Outturn: FY25 continued the momentum.</td><td class="sc">&#128994;</td></tr>
+<tr class="chg" data-rowtype="AGM"><td>19 Jun 25</td><td class="doc" data-rowtype="AGM">FY25<br>AGM</td><td class="g">flat</td><td class="q">&ldquo;we are confident of achieving market expectations* for the full year&rdquo;</td><td class="cx">Market-expectations anchor (asterisked to consensus &pound;44.8m / &pound;7.6m / &pound;11.9m), confident. Geopolitical caveat noted but not sized. Outturn: FY25 beat.</td><td class="sc">&#9898;</td></tr>
+<tr class="chg" data-rowtype="H1R"><td>10 Sep 25</td><td class="doc" data-rowtype="H1R">FY25<br>H1 R</td><td class="g">&mdash;</td><td class="q">&ldquo;The second half has started well continuing the momentum from the first&rdquo;</td><td class="cx">No anchor; positive current-trading (&ldquo;second half started well&rdquo;). H1 EBITDA &pound;3.30m. Outturn: FY25 record.</td><td class="sc">&#128994;</td></tr>
+<tr class="chg" data-rowtype="FYTU"><td>19 Jan 26</td><td class="doc" data-rowtype="FYTU">FY25<br>YE-TU</td><td class="g">&#128994; RAISE</td><td class="q">&ldquo;adjusted EBITDA being ahead of current market expectations* and not less than &pound;9.4m&rdquo;</td><td class="cx">Numeric guide <i>raised</i>: EBITDA &ldquo;ahead&rdquo; and &ldquo;not less than &pound;9.4m&rdquo;; rev &asymp;&pound;47.1m vs consensus &pound;45.5m / &pound;8.2m / &pound;12.0m. Outturn: &pound;9.64m / &pound;47.2m &mdash; beaten.</td><td class="sc">&#128994;&#128994;</td></tr>
+<tr class="chg" data-rowtype="FYR"><td>31 Mar 26</td><td class="doc" data-rowtype="FYR">FY25<br>R</td><td class="g">&mdash;</td><td class="q">&ldquo;in line with the strong Q1 performance in the prior year&rdquo;</td><td class="cx">Anchor switched: &ldquo;in line with market expectations&rdquo; replaced by trading merely level with a <i>high prior-year Q1</i>. Iran/Persian Gulf logistics disruption named but pipeline called &ldquo;healthy&rdquo;. The comparator swap is the score.</td><td class="sc">&#128308;</td></tr>
+<tr class="chg" data-rowtype="AGM"><td style="font-weight:700">&#11088; 18 Jun 26</td><td class="doc" data-rowtype="AGM">FY26<br>AGM</td><td class="g">flat</td><td class="q">&ldquo;ahead of prior year and in line with full year analyst consensus expectations&rdquo;</td><td class="cx">Consensus-expectations anchor intact (&pound;50.3m / &pound;10.3m / &pound;16.9m). &ldquo;Ahead of prior year&rdquo; but only &ldquo;in line&rdquo; with consensus. Cost pressure stated as passed on, in the cost line not the growth line.</td><td class="sc">&#9898;</td></tr>
+</table>
+<details class="big"><summary>&sect;3 workings &mdash; notes and fuller guidance passages</summary><div class="dbody">
+<details><summary>Notes &mdash; &sect;3</summary><div class="dbody">
+<p><b>The two contested scores.</b> <b>31 Mar 26 (&#128308;, operator-set):</b> the score rests on the anchor switch
+alone &mdash; three years of &ldquo;strong start to trading&rdquo; / &ldquo;strong start to the year&rdquo; replaced by
+trading merely level with a high prior-year quarter, a prior-period comparator substituted for an expectations-style
+one. The named Iran / Persian Gulf logistics disruption is recorded as a noted conflict alongside the same
+document&rsquo;s &ldquo;pipeline is healthy&rdquo; confidence, not as a second notch. <b>18 Jun 26 (&#9898;):</b> an
+in-line reiteration with the expectations anchor intact; the named cost pressures sit in the cost line, not the
+growth-carrying line, and are stated as passed on, so the cap-at-zero rule does not bite and no &#128308; trigger
+applies. The margin-comparator switch is recorded as a Rank-1 and Drift signal rather than double-counted as
+language.</p>
+<p><b>Guidance-versus-outturn credibility &mdash; the scan down G against actuals.</b> Fourteen resolved guides, zero
+misses on any <i>numeric</i> guide. January floors are near-final numbers, beaten by +0.31%, +0.64% and +0.16% on
+revenue and +4.16%, +1.43% and +2.59% on EBITDA &mdash; conservative and reliable. The single <b>June</b> consensus
+anchor in the record resolved to a <b>+26.88% EBITDA beat</b>; the 25 Jun 2024 AGM carried no consensus footnote at
+all, so the June-anchored evidence is <b>one year deep</b>, not two &mdash; the +22.54% belongs to the January anchor
+in the FY24 cycle. Only the two purely verbal guides ever missed, both in the 2022&ndash;23 downturn. This board
+under-promises, and does so most at the June AGM &mdash; the strongest single counterweight to the fired
+conditions.</p>
+<p><b>Condition 2 test.</b> The limb is &ldquo;falling 2+ consecutive prints, <i>or any print &le; &minus;1</i>&rdquo;.
+Trailing-twelve-month prints: Sep-25 +1 &rarr; Jan-26 +2 &rarr; <b>Mar-26 &minus;1</b> &rarr; Jun-26 0. The
+&minus;1 satisfies the second limb; the first limb was never met. Not a recurring seasonal caution &mdash; Mar-24 and
+Mar-25 both scored +1.</p>
+</div></details>
 
+<style>.gp{border:1px solid #d8d5cf;border-radius:8px;padding:10px 12px;margin:8px 0;background:#fbfaf7}.gph{font-size:11.5px;color:#2b2a26;margin-bottom:4px}.gpsec{color:#5f5c54;font-style:italic;margin-left:6px}.gpb{font-size:11.5px;line-height:1.5;color:#3d3a34;margin:0}</style><details><summary>Guidance passages &mdash; fuller verbatim, trailing 12 months</summary><div class="dbody"><p style="font-size:11px;color:#5f5c54">Five qualifying documents in the twelve months to the Buy/Sell AGM, each with the sentence carrying the anchor or guide plus its surrounding qualifiers, tagged by document, date and section. This is the comparison set for incremental Text scoring; observed absences are in <i>editorial italics</i>. Entries roll forward as documents age out of the window.</p><div class="gp"><div class="gph"><b>19 Jun 25</b> &middot; FY25 AGM <span class="gpsec">Chair statement</span></div><p class="gpb">&ldquo;We have had a strong sales performance in the first half of the year as our business development initiatives deliver and the global agriculture market improves. As such, we are confident of achieving market expectations* for the full year. There are challenges to navigate, however, and the current geopolitical environment makes it difficult to predict if and how our markets could be affected, but our geographic and product diversity gives us resilience.&rdquo; <i>Footnote: analyst consensus for FY25 immediately prior was revenue &pound;44.8m, EBITDA &pound;7.6m, net cash &pound;11.9m.</i></p></div><div class="gp"><div class="gph"><b>10 Sep 25</b> &middot; H1 FY25 interims <span class="gpsec">Outlook</span></div><p class="gpb">&ldquo;The second half has started well continuing the momentum from the first and we are confident of building on this platform for the remainder of this year and into the next.&rdquo; Chairman&rsquo;s close: &ldquo;The Group has made a strong start to the second half, and we are confident of building on this momentum.&rdquo; Adjusted EBITDA for the half was &pound;3.302m (H1 2024: &pound;1.944m). No numeric full-year guide is given; the anchor is current-trading language only, with no expectations reference in the outlook paragraph.</p></div><div class="gp"><div class="gph"><b>19 Jan 26</b> &middot; FY25 YE trading update <span class="gpsec">Trading update</span></div><p class="gpb">&ldquo;This strong performance in revenue combined with the Group&rsquo;s high operational gearing, will result in adjusted EBITDA being ahead of current market expectations* and not less than &pound;9.4m (2024: &pound;7.0m). The results include a full-year contribution from Bio-Vet.&rdquo; Highlights: revenue &asymp;&pound;47.1m (up 23%), net cash &pound;12.4m. <i>Footnote: analyst consensus for FY25 immediately prior was revenue &pound;45.5m, adjusted EBITDA &pound;8.2m, net cash &pound;12.0m &mdash; so the &ldquo;not less than &pound;9.4m&rdquo; floor sits &pound;1.2m above consensus.</i></p></div><div class="gp"><div class="gph"><b>31 Mar 26</b> &middot; FY25 final results <span class="gpsec">Outlook &amp; CEO</span></div><p class="gpb">Outlook bullet: &ldquo;Trading to date in the current year is in line with the strong Q1 performance in the prior year.&rdquo; CEO: &ldquo;The current year has started inline against a high comparator through Q1 last year, and we are confident of making good progress&hellip; as our pipeline is healthy.&rdquo; Separately: &ldquo;We are monitoring the impact of the conflict in Iran, which has affected shipping and logistics into parts of the Persian Gulf region.&rdquo; <i>Editorial: no &ldquo;market expectations&rdquo; anchor anywhere in the document &mdash; the first results doc in the record to compare current trading only to a prior-year quarter.</i></p></div><div class="gp"><div class="gph"><b>18 Jun 26</b> &middot; FY26 AGM (Buy/Sell) <span class="gpsec">Chair statement</span></div><p class="gpb">&ldquo;The Group has made a good start to the year with revenue and profit performance ahead of prior year and in line with full year analyst consensus expectations1, despite well-reported geopolitical and related economic conditions. We are particularly encouraged by a strong trading performance in the Middle-East&hellip; Growth has also continued at pace in the US.&rdquo; On costs: &ldquo;Following the onset of recent disruptions, the Group initially absorbed increases&hellip;&rdquo; then passed them on. <i>Footnote 1: consensus revenue &pound;50.3m, EBITDA &pound;10.3m, net cash &pound;16.9m.</i></p></div></div></details>
+</div></details>
+<h2 class="sec">&sect;4 &middot; Drift &mdash; what they&rsquo;ve gone quiet about</h2>
+<p class="subnote">Which numbers get shared, hedged, or dropped, document by document &mdash; going quiet is the signal. This is the disclosure matrix; Drift is trigger condition&nbsp;3. Manifest qualifying count 17 = Drift columns 17; &#8709; columns 0. <b>Click any column header to highlight every column of that period type.</b></p>
+<table id="drift"><colgroup><col style="width:168px"><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col></colgroup>
+<tr><th class="lab">Metric</th><th class="c" data-k="H1R">14 Sep 22<span class="key">H1R</span></th><th class="c" data-k="FYTU">09 Jan 23<span class="key">FYTU</span></th><th class="c" data-k="FYR">22 Mar 23<span class="key">FYR</span></th><th class="c" data-k="AGM">29 Jun 23<span class="key">AGM</span></th><th class="c" data-k="H1R">13 Sep 23<span class="key">H1R</span></th><th class="c" data-k="FYTU">24 Jan 24<span class="key">FYTU</span></th><th class="c" data-k="FYR">20 Mar 24<span class="key">FYR</span></th><th class="c" data-k="AGM">25 Jun 24<span class="key">AGM</span></th><th class="c" data-k="H1R">11 Sep 24<span class="key">H1R</span></th><th class="c" data-k="FYTU">10 Jan 25<span class="key">FYTU</span></th><th class="c" data-k="TU">26 Mar 25<span class="key">TU</span></th><th class="c" data-k="FYR">31 Mar 25<span class="key">FYR</span></th><th class="c" data-k="AGM">19 Jun 25<span class="key">AGM</span></th><th class="c" data-k="H1R">10 Sep 25<span class="key">H1R</span></th><th class="c" data-k="FYTU">19 Jan 26<span class="key">FYTU</span></th><th class="c" data-k="FYR">31 Mar 26<span class="key">FYR</span></th><th class="c" data-k="AGM">&#11088; 18 Jun 26<span class="key">AGM</span></th></tr>
+<tr><td class="lab"><b>R1</b> Gross margin %</td><td>&#9989;41.9</td><td>&#128993;</td><td>&#9989;42.7</td><td>&#128993;</td><td>&#9989;43.9</td><td>&#128993;</td><td>&#9989;45.0</td><td>&#128993;</td><td>&#9989;47.5</td><td>&mdash;</td><td>&mdash;</td><td>&#9989;46.9</td><td>&#10060;</td><td>&#9989;51.4</td><td>&mdash;</td><td>&#9989;50.9</td><td class="bscol">&#128993;</td></tr>
+<tr><td class="lab"><b>R2</b> Volume growth %</td><td>&#9989;&minus;6</td><td>&mdash;</td><td>&#9989;&minus;11</td><td>&mdash;</td><td>&#9989;&minus;26</td><td>&mdash;</td><td>&#9989;&minus;23</td><td>&mdash;</td><td>&#9989;+20</td><td>&mdash;</td><td>&mdash;</td><td>&#9989;+27<sup>r</sup></td><td>&mdash;</td><td>&#10060;</td><td>&mdash;</td><td>&#10060;</td><td class="bscol">&mdash;</td></tr>
+<tr><td class="lab"><b>R3</b> ASP / tonne %</td><td>&#9989;+10</td><td>&mdash;</td><td>&#9989;+11</td><td>&mdash;</td><td>&#9989;+25</td><td>&mdash;</td><td>&#9989;+23</td><td>&mdash;</td><td>&#9989;&minus;7</td><td>&mdash;</td><td>&mdash;</td><td>&#9989;&minus;9</td><td>&mdash;</td><td>&#9989;+28<sup>r</sup></td><td>&mdash;</td><td>&#10060;</td><td class="bscol">&mdash;</td></tr>
+<tr><td class="lab"><b>R4</b> Revenue</td><td>&#9989;16.5</td><td>&#9989;&ge;33.0</td><td>&#9989;33.1</td><td>&#128993;</td><td>&#9989;15.3</td><td>&#9989;&ge;30.8</td><td>&#9989;31.0</td><td>&#128993;</td><td>&#9989;17.0</td><td>&#9989;&asymp;37.5</td><td>&#9989;38.2</td><td>&#9989;38.2</td><td>&#128993;</td><td>&#9989;22.7</td><td>&#9989;&asymp;47.1</td><td>&#9989;47.2</td><td class="bscol">&#128993;</td></tr>
+<tr><td class="lab"><b>R5</b> Adjusted EBITDA</td><td>&#9989;3.0</td><td>&#9989;&ge;5.0</td><td>&#9989;5.2</td><td>&#128993;</td><td>&#9989;1.9</td><td>&#9989;&ge;4.4</td><td>&#9989;4.5</td><td>&#128993;</td><td>&#9989;2.7</td><td>&#128993;</td><td>&#9989;7.0</td><td>&#9989;7.0</td><td>&#128993;</td><td>&#9989;4.1</td><td>&#9989;&ge;9.4</td><td>&#9989;9.6</td><td class="bscol">&#128993;</td></tr>
+<tr><td class="lab">Like-for-like revenue</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&#9989;36.0</td><td>&mdash;</td><td>&#9989;19.7</td><td>&#128993;</td><td>&#9989;40.5</td><td class="bscol">&mdash;</td></tr>
+<tr><td class="lab">Segment revenue / growth</td><td>&#9989;</td><td>&#128993;</td><td>&#9989;</td><td>&#128993;</td><td>&#9989;</td><td>&#128993;</td><td>&#9989;</td><td>&#128993;</td><td>&#9989;</td><td>&#128993;</td><td>&mdash;</td><td>&#9989;</td><td>&#128993;</td><td>&#9989;</td><td>&#128993;</td><td>&#9989;</td><td class="bscol">&#128993;</td></tr>
+<tr><td class="lab">Net cash / cash balance</td><td>&#9989;13.3</td><td>&#9989;13.6</td><td>&#9989;13.6</td><td>&mdash;</td><td>&#9989;7.3</td><td>&#9989;10.6</td><td>&#9989;10.6</td><td>&#9989;12.2</td><td>&#9989;13.5</td><td>&#9989;10.5</td><td>&#9989;10.5</td><td>&#9989;10.5</td><td>&#9989;9.0</td><td>&#9989;11.1</td><td>&#9989;12.4</td><td>&#9989;12.4</td><td class="bscol">&#9989;10.9</td></tr>
+<tr><td class="lab">Dividend per share</td><td>&#9989;3.15</td><td>&mdash;</td><td>&#9989;10.5</td><td>&mdash;</td><td>&#9989;3.20</td><td>&mdash;</td><td>&#9989;10.7</td><td>&mdash;</td><td>&#9989;3.25</td><td>&mdash;</td><td>&mdash;</td><td>&#9989;11.25</td><td>&mdash;</td><td>&#9989;3.60</td><td>&mdash;</td><td>&#9989;12.50</td><td class="bscol">&mdash;</td></tr>
+<tr><td class="lab">Consensus anchor (&pound;)</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&#9989;</td><td>&mdash;</td><td>&mdash;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&mdash;</td><td class="bscol">&#9989;</td></tr>
+<tr><td class="lab">Buyback</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&#9989;0.1</td><td class="bscol">&#9989;2.0/3.0</td></tr>
+</table>
+<p class="legend">&#9989; quantified &middot; &#128993; qualitative only &middot; &#10060; verified blank against established cadence &middot; &mdash; structurally outside that document type&rsquo;s cadence &middot; &#8709; expected update not issued (none in this record) &middot; <sup>r</sup> restated or re-based. Period-type key: H1R &middot; FYTU &middot; FYR &middot; AGM &middot; TU.</p>
+<details class="big"><summary>&sect;4 workings &mdash; disclosure notes</summary><div class="dbody">
+<details><summary>Notes &mdash; &sect;4</summary><div class="dbody">
+<p><b>First note, reserved for the rightmost column (18 Jun 2026).</b> Gross margin returns to the page after being
+absent from the three preceding interim communications &mdash; one of them (Jun-25) a verified blank against the AGM
+habit, two of them outside a patchy update habit &mdash; and it returns <b>qualitatively, benchmarked against
+H2&nbsp;2025 rather than the matched H1&nbsp;2025</b>. A green shoot on disclosure and a &#128308; on comparator.</p>
+<p><b>The fired cells.</b> Rank&nbsp;2: six consecutive quantifications at H1-R and FY-R grain, then two consecutive
+verified blanks &mdash; cadence unambiguously established, so this alone carries condition&nbsp;3. Rank&nbsp;3: seven
+consecutive, then one blank &mdash; watch, supporting. Both verified by full-text search of the two 2025-cycle
+documents, not inferred from document-type habit.</p>
+<p><b>Rank 1&rsquo;s soft cells.</b> The update-grain margin habit is genuinely patchy &mdash; present Jan-23 and
+Jan-24, absent Jan-25 and Jan-26, two on and two off &mdash; so those two resolve to &ldquo;&mdash;&rdquo;, not
+&#10060;. The AGM-grain habit is three of four, so Jun-25&rsquo;s blank is scored &#10060; on that basis.
+<b>No fired condition rests on any of them.</b></p>
+<p><b>Disclosure expansions, dated (green shoots).</b> 31 May cash at the AGM from <b>Jun-2024</b>; footnoted analyst
+consensus at update and AGM grain from <b>Jan-2025</b>; like-for-like revenue from <b>Mar-2025</b> &mdash; a
+first-ever quantification, so its baseline starts that day with no history to judge it against; buyback from
+<b>Mar-2026</b>, scaled up in the Buy/Sell RNS. Consensus is disclosed at update and AGM grain but never in the Final
+Results &mdash; a stable asymmetry, not a withhold.</p>
+<p><b>Basis and provenance.</b> Net cash carries a perimeter change across the record: including short-term
+investments (FY22, FY23), including short-term investments (FY24), then cash and cash equivalents alone (H1&nbsp;FY25,
+FY25). Immaterial at FY25, flagged nonetheless. The Jun-23 AGM cell is &ldquo;&mdash;&rdquo;, not &#10060;: the AGM
+cash habit begins Jun-24, and there was no cadence to withhold against. Likewise the Jun-26 like-for-like cell &mdash;
+that metric has only ever appeared in FY-R and H1-R documents. The AGM-grain dividend figure is published in the
+Result-of-AGM announcements, which the manifest classifies as noise, so those cells read &ldquo;&mdash;&rdquo;.</p>
+<p><b>Cadence breaks and format shifts.</b> Nominated adviser and broker changed from Peel Hunt to Shore Capital in
+2023. A new document type appeared in Mar-2025 &mdash; an update on the timing of the full-year results, issued
+because the auditors asked for more time; publication moved from 26 March to no later than 2 April and landed on
+31 March. Not repeated in the FY25 cycle. Results dates: 22 Mar 2023, 20 Mar 2024, 31 Mar 2025 (delayed), 31 Mar 2026
+&mdash; now stable at end-March. Document titles shifted from &ldquo;Half-year Report&rdquo; to &ldquo;Interim
+results&rdquo; from 2024, which is cosmetic.</p>
+</div></details>
+</div></details>
 <script>
 (function(){
   // §2 grid: click a period header -> highlight EVERY column of that period type
@@ -737,7 +798,14 @@ this ticker at all.</p>
   }
   // §3 Text+G: click a Doc cell -> highlight WHOLE ROW for every matching doc type
   var t3=document.getElementById('text3');
+  function setbar(){
+    var b=document.getElementById('t3bar'); if(!b) return;
+    var open=t3.classList.contains('showold');
+    b.innerHTML=(open?'\u25be Hide the 9 earlier prints':'\u25b8 Show 9 earlier prints \u2014 Sep 2022 to Sep 2024');
+  }
   if(t3){
+    var bar=document.getElementById('t3bar');
+    if(bar){bar.addEventListener('click',function(){t3.classList.toggle('showold');setbar();});}
     t3.querySelectorAll('td.doc').forEach(function(td){
       td.addEventListener('click',function(){
         var k=td.getAttribute('data-rowtype');
@@ -748,9 +816,12 @@ this ticker at all.</p>
         });
         if(on) return;
         // highlight every td in every row whose data-rowtype matches
-        t3.querySelectorAll('tr[data-rowtype="'+k+'"]').forEach(function(r){
+        var m=t3.querySelectorAll('tr[data-rowtype="'+k+'"]');
+        m.forEach(function(r){
+          if(r.classList.contains('old')) t3.classList.add('showold');
           r.querySelectorAll('td').forEach(function(c){c.classList.add('hl');});
         });
+        if(t3.classList.contains('showold')) setbar();
       });
     });
   }
@@ -782,6 +853,6 @@ this ticker at all.</p>
 })();
 </script>
 <script type="application/json" id="drift-entry">
-{"ticker":"ANP","company":"Anpario plc","kind":"ticker","direction":"watch","headline":"Record FY25 everywhere \u2014 but the margin engine has stopped climbing, and Anpario has quietly stopped printing volumes and prices.","trigger":"Text + Drift (2 of 3); Hard/G watch-flagged","alert":true,"fired":2,"fired_of":3,"rns_type":"AGM Statement","rns_date":"2026-06-18","build_date":"2026-07-28","spec_version":"4.8","next_test":"9 Sep 2026 interims \u2014 the printed H1 gross margin, and whether volumes and prices reappear.","grid":{"labels":["R1","R2","R3","R4","R5"],"periods":["H1","H2","H1","H2","H1","H2","H1","H2","H1"],"rows":["rraggagga","--rrggxx-","--ggrrgx-","--ragggra","--rggggra"],"note":"One row per ledger rank; R1/R4/R5 at H1/H2 grain, R2/R3 at B.2a reduced H1/FY grain (FY cell scored). Rightmost cell = Buy/Sell (H1 FY26 AGM)."},"url":"ANP.html"}
+{"ticker":"ANP","company":"Anpario plc","kind":"ticker","direction":"watch","headline":"Record FY25 everywhere \u2014 but the margin engine has stopped climbing, and Anpario has quietly stopped printing volumes and prices.","trigger":"Text + Drift (2 of 3); Hard/G watch-flagged","alert":true,"fired":2,"fired_of":3,"lights":"arr","rns_type":"AGM Statement","rns_date":"2026-06-18","build_date":"2026-07-28","spec_version":"4.8","next_test":"9 Sep 2026 interims \u2014 the printed H1 gross margin, and whether volumes and prices reappear.","grid":{"labels":["R1","R2","R3","R4","R5"],"periods":["H1","H2","H1","H2","H1","H2","H1","H2","H1"],"rows":["rraggagga","--rrggxx-","--ggrrgx-","--ragggra","--rggggra"],"note":"One row per ledger rank; R1/R4/R5 at H1/H2 grain, R2/R3 at B.2a reduced H1/FY grain (FY cell scored). Rightmost cell = Buy/Sell (H1 FY26 AGM)."},"url":"ANP.html"}
 </script>
 </body></html>
