@@ -1366,6 +1366,52 @@
         ],
         "note": "One row per ledger rank, rank order, right-anchored on the H1 2026 Buy/Sell column."
       }
+    },
+    {
+      "ticker": "TRCS",
+      "company": "Tracsis plc",
+      "kind": "ticker",
+      "direction": "watch",
+      "headline": "Margin turning up and portfolio remade, but consensus implies a flat H2 after a first half up 31%.",
+      "trigger": "Numbers & guide fired green — two consecutive green halves on margin and adjusted EBITDA, print-corroborated at H1 FY26.",
+      "alert": false,
+      "fired": 1,
+      "fired_of": 3,
+      "lights": "g--",
+      "rns_type": "Events Disposal",
+      "rns_date": "2026-08-03",
+      "build_date": "2026-08-07",
+      "spec_version": "5.0",
+      "next_test": "FY26 trading update, 27 August 2026 — whether \"in line\" survives contact with a full-year number.",
+      "url": "TRCS.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H1 FY22",
+          "H2 FY22",
+          "H1 FY23",
+          "H2 FY23",
+          "H1 FY24",
+          "H2 FY24",
+          "H1 FY25",
+          "H2 FY25",
+          "H1 FY26"
+        ],
+        "rows": [
+          "aggarrggr",
+          "--rg--aga",
+          "rrrarrrgg",
+          "--grrrgag",
+          "--garrrgg"
+        ],
+        "note": "One row per ledger rank, rank order, right-anchored on H1 FY26."
+      }
     }
   ]
 }
