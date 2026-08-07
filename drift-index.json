@@ -364,11 +364,12 @@
       "alert": true,
       "fired": 2,
       "fired_of": 3,
+      "lights": "gg-",
       "rns_type": "Q1 TU",
       "rns_date": "2026-07-24",
       "build_date": "2026-08-06",
-      "spec_version": "4.8",
-      "next_test": "H1 FY27 TU (Oct-26): organic orders Q2 >=+10%? Controls organic sales positive? Proforma gearing tracking to 1.8x?",
+      "spec_version": "5.1",
+      "next_test": "H1 FY27 TU (Oct-26): is Q2 organic orders growth still double-digit, are Controls sales positive, is borrowing tracking to 1.8x?",
       "grid": {
         "labels": [
           "R1",
@@ -378,15 +379,15 @@
           "R5"
         ],
         "periods": [
-          "Q1FY25",
-          "Q2FY25",
-          "Q3FY25",
-          "Q4FY25",
-          "Q1FY26",
-          "Q2FY26",
-          "Q3FY26",
-          "Q4FY26",
-          "Q1FY27"
+          "Q1 25",
+          "Q2 25",
+          "Q3 25",
+          "Q4 25",
+          "Q1 26",
+          "Q2 26",
+          "Q3 26",
+          "Q4 26",
+          "Q1 27"
         ],
         "rows": [
           "grrgrgggg",
@@ -395,7 +396,7 @@
           "rggrggagg",
           "ggggggrr-"
         ],
-        "note": "One row per ledger rank, R1-R5, right-anchored on the Q1 FY27 Buy/Sell print."
+        "note": "One row per ledger rank at quarter grain; rightmost cell is the 24 Jul 2026 Q1 trading update."
       },
       "url": "DSCV.html"
     },
