@@ -42,7 +42,9 @@
           "-grgrgrgr"
         ],
         "note": "Rows = ranks 1-5 · half-year grain · newest right (Buy/Sell)"
-      }
+      },
+      "fired": 2,
+      "fired_of": 3
     },
     {
       "ticker": "FDM",
@@ -130,7 +132,9 @@
           "--grrgrrg"
         ],
         "note": "Rows = ranks 1-5 · half-year grain · newest right (Buy/Sell)"
-      }
+      },
+      "fired": 1,
+      "fired_of": 3
     },
     {
       "ticker": "LUCE",
@@ -173,7 +177,9 @@
           "--------a"
         ],
         "note": "Rows = ranks 1-5 · quarter grain · newest right (Buy/Sell)"
-      }
+      },
+      "fired": 2,
+      "fired_of": 3
     },
     {
       "ticker": "ANP",
@@ -352,7 +358,9 @@
           "-----rrrg",
           "-----rrrr"
         ]
-      }
+      },
+      "fired": 3,
+      "fired_of": 3
     },
     {
       "ticker": "DSCV",
@@ -532,7 +540,9 @@
           "-rggagrag"
         ],
         "note": "Rows = ranks 1-5 · half-year grain · newest right (Buy/Sell)"
-      }
+      },
+      "fired": 2,
+      "fired_of": 3
     },
     {
       "ticker": "ALU",
@@ -846,7 +856,9 @@
           "------rra"
         ],
         "note": "Rows = ranks 1-5 · half-year grain · newest right (Buy/Sell)"
-      }
+      },
+      "fired": 3,
+      "fired_of": 3
     },
     {
       "ticker": "AJB",
@@ -980,7 +992,9 @@
           "-aaaaagaa"
         ],
         "note": "Rows = ranks 1-5 · half-year grain · newest right (Buy/Sell)"
-      }
+      },
+      "fired": 2,
+      "fired_of": 3
     },
     {
       "ticker": "SAAS",
