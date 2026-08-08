@@ -682,7 +682,38 @@
       "build_date": "2026-07-29",
       "spec_version": "3.16",
       "next_test": "FY26 prelim (10-Sep-26): resume China royalty-customer count, give H2 PIC/ABS splits, set pro-forma post-deconsolidation FY27 base.",
-      "url": "GNS.html"
+      "url": "GNS.html",
+      "kind": "ticker",
+      "fired": 2,
+      "fired_of": 3,
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2",
+          "H1",
+          "H2"
+        ],
+        "rows": [
+          "---rrgag-",
+          "---a-ggx-",
+          "--graagag",
+          "---rrggg-",
+          "---raaaa-"
+        ],
+        "note": "Rows = ranks 1-5 · half-year grain · newest right (Buy/Sell)"
+      }
     },
     {
       "ticker": "CML",
@@ -949,40 +980,6 @@
           "-aaaaagaa"
         ],
         "note": "Rows = ranks 1-5 · half-year grain · newest right (Buy/Sell)"
-      }
-    },
-    {
-      "ticker": "HOUSEBUILDERS",
-      "kind": "sector",
-      "company": "UK Listed Housebuilders (BTRW · PSN · TW · BKG · BWY)",
-      "direction": "down",
-      "headline": "Three of five cut guidance inside five months — TW's completions-and-dividend cut is the sector's confirming print.",
-      "trigger": "3-of-5 sector: TW (G CUT + Text -2 + margin compression) + BKG (G CUT + H2 PBT -22% + five sequential fwd-sales declines) + BTRW (outlet guide CUT)",
-      "fired": 3,
-      "fired_of": 5,
-      "alert": true,
-      "rns_type": "H1 R",
-      "rns_date": "2026-07-31",
-      "build_date": "2026-08-02",
-      "spec_version": "v4.6-S",
-      "next_test": "BWY FY26 TU 11 Aug 26; PSN H1 R (Aug); BTRW FY26 R 16 Sep 26",
-      "url": "Housebuilders-Sector.html",
-      "grid": {
-        "note": "Rows = each company's Rank 1 (net private reservations / outlet / week). 9 most recent prints, newest right.",
-        "labels": [
-          "BTRW",
-          "PSN",
-          "TW",
-          "BKG",
-          "BWY"
-        ],
-        "rows": [
-          "gg-ggaaga",
-          "g-gaagaag",
-          "ggggrrarr",
-          "r-raa-rar",
-          "ggggggrrr"
-        ]
       }
     },
     {
@@ -1437,21 +1434,6 @@
       }
     },
     {
-      "ticker": "Housebuilders Sector",
-      "company": "UK Listed Housebuilders (BTRW · PSN · TW · BKG · BWY)",
-      "direction": "down",
-      "headline": "Three of five cut guidance; PSN's net-debt crossover and first margin fall remove the sector's last clean grower.",
-      "trigger": "3-of-5 sector: TW (G CUT + Text -2 + margin compression) + BKG (G CUT + H2 PBT -22% + seven sequential fwd-sales declines) + BTRW (outlet guide CUT). PSN ⛔ net-debt crossover = verdict flag, not a fired condition.",
-      "alert": true,
-      "rns_type": "H1 R",
-      "rns_date": "2026-08-06",
-      "build_date": "2026-08-06",
-      "spec_version": "v4.5-S",
-      "next_test": "BWY FY26 TU (Aug 26); BTRW FY26 R 16 Sep 26; PSN Q3 TU (Nov 26)",
-      "url": "Housebuilders-Sector.html",
-      "companies_fired": 3
-    },
-    {
       "ticker": "CNS",
       "company": "Corero Network Security plc",
       "kind": "ticker",
@@ -1588,6 +1570,41 @@
         "note": "R1 Direct, R2 Adj EBITDA, R3 Indirect, R4 Total, R5 EBITDA margin (ledger order); newest 9 of 10 half columns; flow ranks unscored at Mar-25/Sep-25 (first-YoY on new Sep grain); R5 rate metric scores pp YoY directly so keeps them."
       },
       "tier1": true
+    },
+    {
+      "ticker": "HOUSEBUILDERS",
+      "company": "UK Listed Housebuilders (BTRW · PSN · TW · BKG · BWY)",
+      "direction": "down",
+      "headline": "Three of five cut guidance; PSN's net-debt crossover and first margin fall remove the sector's last clean grower.",
+      "trigger": "3-of-5 sector: TW (G CUT + Text -2 + margin compression) + BKG (G CUT + H2 PBT -22% + seven sequential fwd-sales declines) + BTRW (outlet guide CUT). PSN ⛔ net-debt crossover = verdict flag, not a fired condition.",
+      "alert": true,
+      "rns_type": "H1 R",
+      "rns_date": "2026-08-06",
+      "build_date": "2026-08-06",
+      "spec_version": "v4.5-S",
+      "next_test": "BWY FY26 TU (Aug 26); BTRW FY26 R 16 Sep 26; PSN Q3 TU (Nov 26)",
+      "url": "Housebuilders-Sector.html",
+      "companies_fired": 3,
+      "kind": "sector",
+      "fired": 3,
+      "fired_of": 5,
+      "grid": {
+        "note": "Rows = each company's Rank 1 (net private reservations / outlet / week). 9 most recent prints, newest right.",
+        "labels": [
+          "BTRW",
+          "PSN",
+          "TW",
+          "BKG",
+          "BWY"
+        ],
+        "rows": [
+          "gg-ggaaga",
+          "g-gaagaag",
+          "ggggrrarr",
+          "r-raa-rar",
+          "ggggggrrr"
+        ]
+      }
     }
   ]
 }
