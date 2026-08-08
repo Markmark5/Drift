@@ -40,7 +40,7 @@ table.grid .val{font-weight:700;display:block;font-size:13px;color:#16150f}
 table.grid .val .neg{color:#b3261e}
 table.grid .delta{display:block;font-size:11px;color:#5f5c54;margin-top:2px}
 table.grid .delta.neg{color:#b3261e}
-table.grid tr.agg td{background:#fff;border-top:2px solid #16150f;color:#5f5c54;font-size:11.5px;padding:6px 4px}
+table.grid tr.agg td{background:#fdfdfb;border-top:2px solid #16150f;color:#5f5c54;font-size:11.5px;padding:6px 4px}
 table.grid tr.agg td.lab{font-style:italic}
 table.grid tr.agg .aval{font-weight:700;color:#5f5c54}
 table.grid tr.agg .anote{display:inline;font-size:10.5px;margin-left:5px}
@@ -103,6 +103,22 @@ table.grid .hl{background:#fff6d9 !important}
 .bs-strip .bulb{width:18px;height:18px;flex:0 0 18px;box-shadow:none;border-width:2px}
 .bs-strip-text{font-size:12px;color:#fff;font-weight:700}
 .bs-strip-sub{font-size:10.5px;color:#8d8981;margin-top:2px}
+
+/* ── verdict-card narrow drawer (part of the card, not one of the five) ── */
+details.card-drawer{
+  border:1px solid #c6c2b9;border-radius:9px;background:#faf9f5;
+  margin-top:12px;max-width:760px}
+details.card-drawer>summary{
+  font-size:12.5px;font-weight:700;color:#5f5c54;padding:9px 12px;
+  cursor:pointer;list-style:none;letter-spacing:.02em;line-height:1.35}
+details.card-drawer>summary::before{content:"▸ "}
+details.card-drawer[open]>summary::before{content:"▾ "}
+details.card-drawer .card-drawer-body{
+  padding:2px 14px 13px;font-size:12px;line-height:1.6;color:#16150f;
+  border-top:1px solid #e5e2da;margin-top:2px}
+details.card-drawer .card-drawer-body p{margin-bottom:9px}
+details.card-drawer .card-drawer-body p:last-child{margin-bottom:0}
+details.card-drawer .card-drawer-body strong{color:#16150f}
 
 /* ── FOUR BOXES ───────────────────────────────────────────── */
 .four-boxes{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px}
@@ -337,8 +353,8 @@ table.t3-open tr.t3-early{display:table-row}
       </div>
       <div class="fbox">
         <div class="fbox-label">Next test</div>
-        <div class="fbox-headline">H2 FY26 R</div>
-        <div class="fbox-sentence">Revenue ≥£30m, EBITDA positive, cash ≥£14m, coverage % re-quantified → 🟢. Orderbook &lt;£40m or cash &lt;£10m → 🔴.</div>
+        <div class="fbox-headline">Jan-27 TU</div>
+        <div class="fbox-sentence">Orderbook printed early = strength; absent = weakness, deferred to Apr-27. Then H2 revenue ≥£30m, cash ≥£14m, coverage % restored → 🟢.</div>
       </div>
     </div>
 
@@ -351,6 +367,22 @@ table.t3-open tr.t3-early{display:table-row}
     <p style="font-size:0.7rem;color:var(--c-muted);line-height:1.55;margin:12px 0 0;padding-top:9px;border-top:1px solid #e5e3dc;max-width:1100px;">
       <strong>Audit provenance:</strong> rebuilt 23-Jul-26 following a full Appendix A audit (Stages A–E) re-read against all 18 project RNSs. 11 corrections applied: manifest 16→13 qualifying docs (three AGM notices carry no forward content); Rank-5 Drift condition <em>retracted</em> on the cadence test (a retraction later found to be itself erroneous — see Aug-26 correction below); Jul-25 G reclassified flat→🟢 RAISE (raised floor); cash pill corrected to the trailing-12-month window; orderbook decline run corrected five→four; three rendered percentages recomputed. <strong>Aug-26 correction:</strong> the audit's Rank-5 Drift retraction was itself found to rest on a grain error (cadence tested across document types instead of within them); coverage % restored to Rank 5, Proposals moved to watchlist, and the trigger restated at 3/3 — direction call unchanged.
     </p>
+    <details class="card-drawer">
+      <summary>📘 Why £65m today is worth more than £71m in 2024 — what changed in how contracts are counted</summary>
+      <div class="card-drawer-body"><p style="margin-bottom:10px;"><strong>Two stages of commercial commitment.</strong> When a pharma company decides to run a human challenge trial, the relationship with hVIVO passes through two contractual stages before a trial commences. The first is a <strong>Start-Up Agreement (SUA)</strong>, which covers early preparatory work — challenge agent supply, protocol development, regulatory submission prep, site set-up. Real money, real obligations, but only for the front-end work. The main trial — quarantine, inoculation, dosing, data collection — is then contracted separately under a full <strong>Clinical Trial Agreement (CTA)</strong>, which carries the bulk of the revenue.</p>
+
+        <p style="margin-bottom:10px;"><strong>Why cancellation risk differs.</strong> If a pharma client pulls out at SUA stage — before the CTA is signed — they pay for work done to date under the SUA but have no obligation for the main trial revenue. The client's sunk cost is low and their optionality is high. At CTA stage the calculation reverses: the client has committed to the full programme, typically paid a non-refundable quarantine booking fee, and faces a materially higher financial penalty to cancel. CTA-stage cancellation risk is meaningfully lower, though not zero — FY25 demonstrated that even CTAs can be terminated.</p>
+
+        <p style="margin-bottom:10px;"><strong>What hVIVO was reporting up to end-2025.</strong> The "weighted contracted orderbook" figures reported through Dec-24 (e.g. £80m Dec-23, £71m Jun-24, £67m Dec-24) included both SUA-stage and CTA-stage work. The company applied a weighting to reflect differing confidence levels, but the methodology wasn't disclosed in enough detail for an outsider to strip out the SUA component. In the FY25 results (Apr-26), hVIVO changed the definition: <em>"Going forwards, only full Clinical Trial Agreements (CTAs) will be announced and included in our orderbook, instead of Start-Up Agreements (SUAs), where there remains a higher risk of trial cancellations."</em> They simultaneously restated Dec-24 from £67m to £43.5m on the new CTA-only basis — a <strong>£23.5m reduction, roughly a third</strong> of the old reported figure.</p>
+
+        <p style="margin-bottom:10px;"><strong>Connection to the FY25 guide blowup.</strong> The May-25 cancellations that triggered the £73m → £47m guide cut were described as "a significant HCT contract cancellation alongside a postponement and a smaller study cancellation." The record strongly implies these were at least partly SUA-stage or early-CTA work where clients retained cheap optionality to exit. That is the mechanism: SUA-stage entries look like contracted revenue but carry embedded client optionality that only shows up when macro conditions deteriorate.</p>
+
+        <p style="margin-bottom:10px;"><strong>What this means for the Jun-26 £65m.</strong> The Jun-26 figure is entirely CTA-only. Every contract in that number has crossed the threshold to a full Clinical Trial Agreement, with the client committed to the main programme and the non-refundable fee typically paid. Comparing it to the old-methodology Jun-24 £71m as if they're the same thing is like comparing a signed, deposit-paid order to a book that includes letters of intent and provisional bookings. The £65m is a better quality indicator of real forward revenue than the £71m was, even though it's nominally smaller and the business was presumably in better underlying health in mid-2024.</p>
+
+        <p style="color:var(--c-muted);font-size:0.74rem;"><strong>Residual watch.</strong> Only two data points exist on the CTA-only basis (Dec-25: £30m; Jun-26: £65m). The key test over the next two to three reporting periods is whether the new definition holds clean — i.e. whether some new form of early-stage commitment gradually re-enters how management communicates pipeline. Proposal volumes up 45% YoY represent the pre-SUA funnel; the conversion rate from proposals → SUAs → CTAs is the number to watch.</p>
+      </div>
+    </details>
+
   </div>
 </div>
 
@@ -366,7 +398,7 @@ table.t3-open tr.t3-early{display:table-row}
     <div style="font-size:0.78rem;font-weight:700;color:#8a5a0b;letter-spacing:0.03em;margin-bottom:7px;">⚠️ STANDING LIMITATION &amp; OPERATOR REMINDER — CONTRACT CONCENTRATION</div>
     <p style="font-size:0.79rem;line-height:1.6;margin:0 0 9px;"><strong>What the record actually shows.</strong> Nothing in the <em>disclosed</em> leading metrics caught the May-25 guide cut in advance. At Dec-24 the orderbook was £67m, coverage was "70% of 2025 contracted ex-ILiAD", and the pipeline was described as a record. The earliest visible signal in the entire record was the <strong>derived H2 FY24 revenue decline of −5.6%</strong> — hidden inside a headline record year (FY24 +11.9%) and only surfaced by FY-minus-H1 derivation.</p>
     <p style="font-size:0.79rem;line-height:1.6;margin:0 0 9px;"><strong>Why.</strong> For a milestone-billed HCT model the cliff risk lives in <em>contract concentration</em> — a single large cancellation moves the guide by a third. hVIVO has never disclosed orderbook composition at a grain the framework can score: no top-client %, no largest-contract value, no HCT-vs-other split within the orderbook. The tracker is therefore structurally blind to the exact risk that caused the drawdown. Proposals, coverage % and even the orderbook level are all aggregates that a concentrated book can carry right up to the cancellation.</p>
-    <p style="font-size:0.79rem;line-height:1.6;margin:0;background:#fff;border-left:3px solid #c47f17;padding:9px 12px;"><strong>Standing instruction — fires at every incremental read.</strong> On each new RNS pasted into this project, before any other output, check for and flag on sight: (1) any <strong>concentration disclosure</strong> — top-client %, largest-contract value, orderbook composition, HCT-vs-other split, or a named single contract material to guidance; (2) any <strong>single-contract cancellation, postponement or deferral</strong>, however framed; (3) any <strong>derived sub-period</strong> (H2 = FY − H1) that falls while the aggregate rises — the FY24 pattern; (4) the <strong>proposals-vs-orderbook wedge</strong> re-opening; (5) <strong>contracted coverage % (now Rank 5) re-quantified</strong> — a ranked green shoot, flag immediately — <em>or</em> proposals (watchlist) disclosure going qualitative/silent (red). Each of these must be raised explicitly in the incremental read, whether or not it changes the direction call.</p>
+    <p style="font-size:0.79rem;line-height:1.6;margin:0;background:#fff;border-left:3px solid #c47f17;padding:9px 12px;"><strong>Standing instruction — fires at every incremental read.</strong> On each new RNS pasted into this project, before any other output, check for and flag on sight: (1) any <strong>concentration disclosure</strong> — top-client %, largest-contract value, orderbook composition, HCT-vs-other split, or a named single contract material to guidance; (2) any <strong>single-contract cancellation, postponement or deferral</strong>, however framed; (3) any <strong>derived sub-period</strong> (H2 = FY − H1) that falls while the aggregate rises — the FY24 pattern; (4) the <strong>proposals-vs-orderbook wedge</strong> re-opening; (5) <strong>contracted coverage % (now Rank 5) re-quantified</strong> — a ranked green shoot, flag immediately — <em>or</em> proposals (watchlist) disclosure going qualitative/silent (red); (6) <strong>the Jan-27 orderbook test.</strong> The Jan-26 policy restricted orderbook disclosure to FY and H1 <em>results</em>, then Jul-26 overrode it the moment the number doubled. Disclosure here is demonstrably asymmetric, so <strong>silence is evidence</strong>: an orderbook figure in the Jan-27 trading update reads as strength and is expected if the book is still building; its absence reads as weakness and defers the reading to 15 Apr 27. Flag whichever occurs, and treat a ⊘ against a build-phase expectation as a fired condition in its own right. The same logic applies to coverage % — at 90% contracted it is a boast, and it should reappear when it reads well; (7) <strong>contract-award RNSs.</strong> Noise for row purposes, but log each on arrival in the contract-award drawer — client, nature, phasing, and <em>whether a value is given</em>. Since Apr-26 hVIVO has stopped disclosing award values, so a running bookings total is not available; the return of a headline value would itself be a green shoot and must be flagged, as would any further award arriving as <em>RNS Non-Regulatory</em>. Each of these must be raised explicitly in the incremental read, whether or not it changes the direction call.</p>
   </div>
       <p style="font-size:12px;color:var(--mute);margin:10px 0;">Band: H-grain rate ±2.0pp · No Q-grain data available (9-cell H-grid applies)</p>
       <table class="ledger-table">
@@ -474,6 +506,26 @@ table.t3-open tr.t3-early{display:table-row}
 <td><span class="val">30</span><span class="delta neg">−13 (vs Dec-24 43.5ʳ) 🔴↘</span></td>
 <td class="bs-col"><span class="val">65</span><span class="delta">+35 (vs Dec-25 30) 🟢↗</span></td>
 <td><span class="val">—</span><span class="delta">—</span></td>
+</tr>
+    <tr class="agg b2b-row"><td class="lab">net book-to-bill †<br><span style="font-size:9.5px;font-style:normal;">derived · watch-flag</span></td>
+<td class=""><span class="aval" style="color:#5f5c54;">1.07x†</span></td>
+<td class=""><span class="aval" style="color:#5f5c54;">1.07x†</span></td>
+<td class=""><span class="aval" style="color:#b3261e;">0.75x†</span><span class="anote" style="display:block;margin:2px 0 0;font-size:9.5px;">first sub-1.0x</span></td>
+<td class=""><span class="aval" style="color:#b3261e;">0.79x†</span></td>
+<td class=""><span class="aval" style="color:#b3261e;">−0.12x†</span><span class="anote" style="display:block;margin:2px 0 0;font-size:9.5px;">cancellations &gt; wins</span></td>
+<td class=""><span class="aval" style="color:#b3261e;">0.71x†</span><span class="anote" style="display:block;margin:2px 0 0;font-size:9.5px;">ʳ CTA basis</span></td>
+<td class="bs-col"><span class="aval" style="color:#1e7a45;">3.15x†</span><span class="anote" style="display:block;margin:2px 0 0;font-size:9.5px;">CTA basis</span></td>
+<td class="cell-empty">—</td>
+</tr>
+    <tr class="agg req-row"><td class="lab">bookings: required vs won †<br><span style="font-size:9.5px;font-style:normal;">= FY revenue guide</span></td>
+<td class="cell-empty">—</td>
+<td class="cell-empty">—</td>
+<td class="cell-empty">—</td>
+<td><span class="aval" style="color:#5f5c54;">£62.0m</span><span class="anote" style="display:block;margin:2px 0 0;font-size:9.5px;color:#b3261e;">won £49.7m · −£12.3m</span></td>
+<td class="cell-empty">—</td>
+<td><span class="aval" style="color:#5f5c54;">£73.0m</span><span class="anote" style="display:block;margin:2px 0 0;font-size:9.5px;color:#b3261e;">won £9.8m · −£63.2m</span></td>
+<td class="bs-col"><span class="aval" style="color:#5f5c54;">£50.5m</span><span class="anote" style="display:block;margin:2px 0 0;font-size:9.5px;color:#1e7a45;">won £51.3m in H1 · +£0.8m</span></td>
+<td class="cell-empty">—</td>
 </tr>
 
     <tr class="secbar"><td colspan="9">Rank 2 — EBITDA Margin % (pre-exceptionals) <span class="nat">· arrow shows the move vs the same period last year (band 2 points)</span></td></tr>
@@ -591,7 +643,7 @@ table.t3-open tr.t3-early{display:table-row}
  "rns_date": "2026-07-23",
  "build_date": "2026-08-08",
  "spec_version": "5.1",
- "next_test": "H2 FY26 R: revenue ≥£30m, EBITDA positive, cash ≥£14m → 🟢. Orderbook &lt;£40m or cash &lt;£10m → 🔴.",
+ "next_test": "Jan-27 TU: orderbook printed early reads as strength, absent reads as weakness (deferred to 15 Apr 27); then H2 revenue ≥£30m, cash ≥£14m, coverage % restored → 🟢.",
  "url": "HVO_DriftTracker_v5.1.html",
  "grid": {
   "labels": [
@@ -627,6 +679,9 @@ table.t3-open tr.t3-early{display:table-row}
     <summary>Notes — Ranks 1–5</summary>
     <div class="notes-inner">
       <div class="rank-entry"><strong>Rank 1 — Orderbook:</strong> Jun-26 £65m vs Dec-25 £30m is +117% — strongest single-period gain in the record. Both figures are on the new CTA-only basis (SUAs excluded from Dec-25 onwards); cross-comparison with pre-Dec-25 figures (e.g. Jun-24 £71m on old basis) requires a basis flag. Dec-24 restated to £43.5m in FY25 R for comparability. Jun-26 🟢 is a watch flag — first single print on the new basis; a second sequential 🟢 at Dec-26 would confirm turning up.</div>
+      <div class="rank-entry"><strong>Rank 1 derived line — net book-to-bill †:</strong> <strong>(closing orderbook − opening orderbook + revenue delivered) ÷ revenue delivered</strong>, both inputs printed in the RNS, no new data. Below 1.0x the book is shrinking faster than it is being replaced. It is <em>net</em>, not gross — cancellations are inside the numerator, which is why H1 FY25 prints negative (−0.12x): in that half, cancelled and postponed work exceeded everything newly signed. <strong>This is the earliest signal in the record.</strong> Book-to-bill first fell below 1.0x at Jun-24 (0.75x) — roughly eleven months before the May-25 guide cut — while the same document was reporting record H1 revenue, an £71m orderbook and 100% of FY24 contracted. The orderbook <em>level</em> looked healthy because delivery was strong; the replacement rate had already failed. Compare the measured leads: coverage % level ~1 month, orderbook position 6–18 months, book-to-bill ~11 months with a cleaner mechanism. <strong>Basis break:</strong> FY25 and H1 FY26 sit on the CTA-only definition (FY25 uses the restated £43.5m opening, marked ʳ); everything earlier is old-basis SUA+CTA. The two runs are not comparable to each other and no cross-rebase trend should be read. <strong>Benchmark, yardstick only:</strong> management set book-to-bill targets of &gt;1.0x for 2026 and &gt;1.2x consistently at the June-26 Capital Markets Day — sourced from a broker note reproducing a company slide, not from an RNS, so it sizes the H1 FY26 3.15x but fires nothing. <strong>Watch-flag:</strong> derived-only, so per the framework it corroborates rather than signals until a printed sub-period supports it; the Dec-26 print is the first chance to confirm whether 3.15x was a single catch-up half or a sustained replacement rate.</div>
+      <div class="rank-entry"><strong>Rank 1 derived line — bookings required vs won †:</strong> <strong>To hold the orderbook flat, new CTAs must at least equal the year's revenue</strong> — so the required bookings figure <em>is</em> the full-year revenue guide, and required book-to-bill is 1.00x by definition. What makes it useful is that the guide is published in January and the answer arrives within two prints, so the year is testable from the start. <strong>FY24:</strong> £62m required, £49.7m won — £12.3m short, and by the July update the H1 rate of 0.75x already implied a required H2 rate of 1.34x to close it. <strong>FY25:</strong> £73m required against £9.8m won — a £63m miss, because the May-25 cancellations pulled work back out of the book. <strong>FY26:</strong> the high-single-digit guide implies ≈£50.5m required; H1 alone won £51.3m, so <strong>the full-year replacement requirement is already met at the half</strong>. On zero further H2 bookings the year still lands at ≈1.02x with a Dec-26 book of ≈£30.8m. Everything H2 signs is therefore accretive to 2027–28 rather than plugging 2026 — and a sub-1.0x FY26 now needs an actual reversal, i.e. cancellations, not merely a quiet half. <strong>Caveat:</strong> the £50.5m required figure rests on a growth-rate guide, not a printed absolute; per the framework a stated rate is rounded and the requirement moves with it. Coverage % is withheld, so the burn-off split behind it cannot be checked.</div>
+      <div class="rank-entry" style="border-left:3px solid var(--amber);padding-left:10px;background:#fffdf5;"><strong>⚠️ Open item — partially closed Aug-26.</strong> Four contract-award RNSs are now held: the £11.5m RSV win (Dec-24), Traws Pharma (14 Apr 26), ILiAD Biotechnologies (22 Apr 26) and Decoy Therapeutics (1 Jun 26) — logged in the contract-award drawer above. They identify what built the orderbook from £30m to £65m, and confirm that the long-pending ILiAD Phase III finally converted. <strong>Correction:</strong> this note previously stated that collecting awards would permit a running bookings total between orderbook prints. It does not — <em>none of the 2026 awards discloses a value</em>, where the Dec-24 award led its headline with one. The intra-period quantified read does not exist, and the twice-yearly orderbook print remains the only source. <strong>Still open:</strong> the Jan-25 TU footnotes 2025/2026 outlook and orderbook to the same-day CRS acquisition RNS, which is absent; if that document carried the Dec-24 £67m then FY24's 0.79x book-to-bill was computable on 29 Jan 25 rather than 10 Apr 25 — ten weeks earlier, on a second consecutive sub-1.0x print.</div>
       <div class="rank-entry"><strong>Rank 2 — EBITDA Margin:</strong> H2 FY25 derived margin = −7.1% (£−1.60m / £22.6m); the FY25 aggregate 3.0% is a backward-loaded read — positive H1 carries a loss-making H2. H2 FY24 derived 28.3% (audit tie: FY24 £16.415m − H1 £8.734m = £7.681m / 27.09m). H1 FY26 margin negative mid-single digit per management; exact figure to be confirmed at H1 FY26 R. FY25 adj EPS −0.41p vs statutory EPS −0.87p — wedge accounted for by £1.4m exceptional acq/restructuring costs; bounded and one-off.</div>
       <div class="rank-entry"><strong>Rank 3 — Revenue:</strong> H2 FY24 derived −5.6% YoY (vs H2 FY23) was the earliest hard-number signal of slowdown in the back-book, hidden by the FY24 aggregate +11.9%. H1 FY25 £24.2m includes £5.5m CRS and Cryostore; organic-only H1 FY25 ≈£18.7m = −47% vs H1 FY24 organic. H2 FY26 implied ≈£34.2m to deliver high-SD growth vs H2 FY25 £22.6m — +51% delivery requirement now covered by the £65m contracted orderbook.</div>
       <div class="rank-entry"><strong>Rank 4 — Cash:</strong> Dec-24→Jun-25 drawdown of £20.9m included CRS acquisition (€10m / ~£8.5m) + Cryostore (£3.2m) + operating shortfall. Jun-26 £13m vs Dec-25 £14.3m = only −£1.3m sequential — best period-to-period cash performance since Dec-24, attributed to positive working capital inflows from new contract wins. No debt; no covenant; no going-concern flag in FY25 R audit note.</div>
@@ -635,27 +690,108 @@ table.t3-open tr.t3-early{display:table-row}
       <div class="rank-entry" style="border-left:3px solid var(--amber);padding-left:10px;background:#fffdf5;"><strong>⚠️ Watchlist — Proposals / RFP Flow (pre-SUA funnel).</strong> Moved from Rank 5 to watchlist Aug-26 when Contracted Coverage % was restored (the demotion that vacated the rank rested on a grain error, since corrected). Everything previously established about this metric carries over unchanged: it is <strong>context, not a trigger</strong> — it printed 🟢 continuously across the 18p→5p drawdown, including "sales pipeline at a record level" in the same RNS as the £73m→£47m cut, so a positive print alone counts for nothing. What carries information: (i) <strong>the conversion wedge</strong> — proposals up while the orderbook stalls or falls was the FY25 pattern (funnel full, nothing signing); both up is the Jul-26 pattern (funnel converting); a re-opening wedge at Dec-26 is early warning the H2 ≈£34m is not landing and would print while revenue still reads "in line"; (ii) <strong>a dropped or thinned print</strong> — group-level quantification only began Jul-25, exactly when the orderbook story turned bad, so disclosure fading again as the orderbook recovers would complete a tell-tale round trip. <strong>Standing flag (unchanged from the previous build): on every new RNS pasted, the wedge and the disclosure state of this metric are checked and raised on sight, whether or not they move the direction call.</strong></div>
     </div>
   </details>
-      <details class="sub" >
-      <summary style="font-size:0.74rem;font-weight:700;color:var(--c-watch);padding:9px 14px;cursor:pointer;list-style:none;letter-spacing:0.04em;">▸ &nbsp;Why the Jun-26 orderbook quality differs from the Jun-24 figure — SUAs vs CTAs explained</summary>
-      <div style="padding:12px 16px 16px;font-size:0.79rem;line-height:1.62;color:var(--c-text);">
-
-        <p style="margin-bottom:10px;"><strong>Two stages of commercial commitment.</strong> When a pharma company decides to run a human challenge trial, the relationship with hVIVO passes through two contractual stages before a trial commences. The first is a <strong>Start-Up Agreement (SUA)</strong>, which covers early preparatory work — challenge agent supply, protocol development, regulatory submission prep, site set-up. Real money, real obligations, but only for the front-end work. The main trial — quarantine, inoculation, dosing, data collection — is then contracted separately under a full <strong>Clinical Trial Agreement (CTA)</strong>, which carries the bulk of the revenue.</p>
-
-        <p style="margin-bottom:10px;"><strong>Why cancellation risk differs.</strong> If a pharma client pulls out at SUA stage — before the CTA is signed — they pay for work done to date under the SUA but have no obligation for the main trial revenue. The client's sunk cost is low and their optionality is high. At CTA stage the calculation reverses: the client has committed to the full programme, typically paid a non-refundable quarantine booking fee, and faces a materially higher financial penalty to cancel. CTA-stage cancellation risk is meaningfully lower, though not zero — FY25 demonstrated that even CTAs can be terminated.</p>
-
-        <p style="margin-bottom:10px;"><strong>What hVIVO was reporting up to end-2025.</strong> The "weighted contracted orderbook" figures reported through Dec-24 (e.g. £80m Dec-23, £71m Jun-24, £67m Dec-24) included both SUA-stage and CTA-stage work. The company applied a weighting to reflect differing confidence levels, but the methodology wasn't disclosed in enough detail for an outsider to strip out the SUA component. In the FY25 results (Apr-26), hVIVO changed the definition: <em>"Going forwards, only full Clinical Trial Agreements (CTAs) will be announced and included in our orderbook, instead of Start-Up Agreements (SUAs), where there remains a higher risk of trial cancellations."</em> They simultaneously restated Dec-24 from £67m to £43.5m on the new CTA-only basis — a <strong>£23.5m reduction, roughly a third</strong> of the old reported figure.</p>
-
-        <p style="margin-bottom:10px;"><strong>Connection to the FY25 guide blowup.</strong> The May-25 cancellations that triggered the £73m → £47m guide cut were described as "a significant HCT contract cancellation alongside a postponement and a smaller study cancellation." The record strongly implies these were at least partly SUA-stage or early-CTA work where clients retained cheap optionality to exit. That is the mechanism: SUA-stage entries look like contracted revenue but carry embedded client optionality that only shows up when macro conditions deteriorate.</p>
-
-        <p style="margin-bottom:10px;"><strong>What this means for the Jun-26 £65m.</strong> The Jun-26 figure is entirely CTA-only. Every contract in that number has crossed the threshold to a full Clinical Trial Agreement, with the client committed to the main programme and the non-refundable fee typically paid. Comparing it to the old-methodology Jun-24 £71m as if they're the same thing is like comparing a signed, deposit-paid order to a book that includes letters of intent and provisional bookings. The £65m is a better quality indicator of real forward revenue than the £71m was, even though it's nominally smaller and the business was presumably in better underlying health in mid-2024.</p>
-
-        <p style="color:var(--c-muted);font-size:0.74rem;"><strong>Residual watch.</strong> Only two data points exist on the CTA-only basis (Dec-25: £30m; Jun-26: £65m). The key test over the next two to three reporting periods is whether the new definition holds clean — i.e. whether some new form of early-stage commitment gradually re-enters how management communicates pipeline. Proposal volumes up 45% YoY represent the pre-SUA funnel; the conversion rate from proposals → SUAs → CTAs is the number to watch.</p>
-      </div>
-    </details>
+      
+            <details class="sub">
+        <summary>📄 Contract awards — the intra-period orderbook build (and why it cannot be totalled)</summary>
+        <div class="notes-inner">
+          <p style="font-size:11px;color:#5f5c54;margin-bottom:10px;">Contract-award RNSs are noise for row purposes and never seed a cell. They are logged here because they are the only visible account of <em>what</em> built the orderbook between the twice-yearly prints — though, as below, not <em>by how much</em>.</p>
+          <div style="overflow-x:auto;">
+          <table style="width:100%;border-collapse:collapse;font-size:11px;min-width:560px;">
+            <thead><tr style="background:#efedE7;">
+              <th style="padding:6px 5px;text-align:left;border:1px solid #d8d5cf;">Date</th>
+              <th style="padding:6px 5px;text-align:left;border:1px solid #d8d5cf;">Client</th>
+              <th style="padding:6px 5px;text-align:left;border:1px solid #d8d5cf;">Nature</th>
+              <th style="padding:6px 5px;text-align:left;border:1px solid #d8d5cf;">Value</th>
+              <th style="padding:6px 5px;text-align:left;border:1px solid #d8d5cf;">Revenue phasing as stated</th>
+            </tr></thead>
+            <tbody>
+              <tr><td style="padding:5px;border:1px solid #d8d5cf;white-space:nowrap;">10 Dec 24</td><td style="padding:5px;border:1px solid #d8d5cf;">Undisclosed top-tier pharma</td><td style="padding:5px;border:1px solid #d8d5cf;">RSV HCT, repeat client</td><td style="padding:5px;border:1px solid #d8d5cf;color:#1e7a45;font-weight:700;">£11.5m — in the headline</td><td style="padding:5px;border:1px solid #d8d5cf;">—</td></tr>
+              <tr><td style="padding:5px;border:1px solid #d8d5cf;white-space:nowrap;">14 Apr 26</td><td style="padding:5px;border:1px solid #d8d5cf;">Traws Pharma (NASDAQ: TRAW)</td><td style="padding:5px;border:1px solid #d8d5cf;">CTA · Influenza HCT, Phase 2a, TXM</td><td style="padding:5px;border:1px solid #d8d5cf;color:#b3261e;font-weight:700;">not disclosed</td><td style="padding:5px;border:1px solid #d8d5cf;">commences H1 26; majority recognised 2026</td></tr>
+              <tr><td style="padding:5px;border:1px solid #d8d5cf;white-space:nowrap;">22 Apr 26</td><td style="padding:5px;border:1px solid #d8d5cf;"><strong>ILiAD Biotechnologies</strong></td><td style="padding:5px;border:1px solid #d8d5cf;">World-first pivotal <strong>Phase III</strong> HCT · BPZE1 pertussis · &gt;500 participants</td><td style="padding:5px;border:1px solid #d8d5cf;color:#b3261e;font-weight:700;">not disclosed — &ldquo;largest value HCT to date&rdquo;</td><td style="padding:5px;border:1px solid #d8d5cf;">recognition from H1 26; majority 2026 and 2027</td></tr>
+              <tr><td style="padding:5px;border:1px solid #d8d5cf;white-space:nowrap;">1 Jun 26</td><td style="padding:5px;border:1px solid #d8d5cf;">Decoy Therapeutics</td><td style="padding:5px;border:1px solid #d8d5cf;">Consultancy · D-MAV respiratory antivirals · <em>RNS Non-Regulatory</em></td><td style="padding:5px;border:1px solid #d8d5cf;color:#b3261e;font-weight:700;">not disclosed</td><td style="padding:5px;border:1px solid #d8d5cf;">follow-on studies subject to Decoy financing</td></tr>
+            </tbody>
+          </table>
+          </div>
+          <p style="font-size:11px;line-height:1.6;margin-top:11px;"><strong>The ILiAD conversion is the substantive event.</strong> This is the contract hVIVO had been explicitly carving <em>out</em> of its coverage figure since Apr-25 — &ldquo;70% of 2025 revenue guidance already contracted, <em>excluding potential ILiAD Phase III HCT</em>&rdquo;. It stood as a named pending item for a full year and signed 22 Apr 26. A material part of the Jun-26 £65m is therefore a contract whose absence was previously a stated caveat on the coverage number, and its phasing (2026 <em>and</em> 2027) is consistent with the deferral language in the Jul-26 update.</p>
+          <p style="font-size:11px;line-height:1.6;"><strong>Why a running bookings total is not available — correcting an earlier note.</strong> An earlier build of this tracker recorded that collecting contract awards would allow bookings to be totalled between orderbook prints. That is wrong and these documents show why: <strong>none of the 2026 awards discloses a value.</strong> At Dec-24 the award value led the headline (&ldquo;£11.5 million RSV contract&rdquo;); at Apr-26, on what the company itself calls its largest-ever HCT, the disclosure is a superlative and a phasing statement. The awards establish <em>what</em> built the book and roughly <em>when</em> it converts — never <em>how much</em>. The orderbook print remains the only quantified read, and it arrives twice a year.</p>
+          <p style="font-size:11px;line-height:1.6;"><strong>Pattern.</strong> This is the third quantification withdrawn in the same window: contracted coverage % (Rank 5, fired), orderbook reporting cadence (narrowed then overridden), and now contract-award values. Each converted a number into an adjective, and each did so while the orderbook was under pressure. None of the three was explained.</p>
+        </div>
+      </details>
+      <details class="sub">
+        <summary>📅 Book-to-bill against the record — signal date vs disclosure date</summary>
+        <div class="notes-inner">
+          <p style="font-size:11px;color:#5f5c54;margin-bottom:10px;">What the replacement rate was doing, set against what the company said on the day it became computable. <strong>Disclosure date is the column that matters</strong> — the period end is when the signal existed, the disclosure date is when anyone outside could see it. Price column is approximate, for orientation only; it is not data the framework scores.</p>
+          <div style="overflow-x:auto;">
+          <table style="width:100%;border-collapse:collapse;font-size:11px;min-width:640px;">
+            <thead><tr style="background:#efedE7;">
+              <th style="padding:6px 5px;text-align:left;border:1px solid #d8d5cf;">Period end</th>
+              <th style="padding:6px 5px;border:1px solid #d8d5cf;">B2B</th>
+              <th style="padding:6px 5px;text-align:left;border:1px solid #d8d5cf;">Disclosed</th>
+              <th style="padding:6px 5px;text-align:left;border:1px solid #d8d5cf;">RNS</th>
+              <th style="padding:6px 5px;text-align:left;border:1px solid #d8d5cf;">What that RNS said</th>
+              <th style="padding:6px 5px;border:1px solid #d8d5cf;">Inputs</th>
+              <th style="padding:6px 5px;border:1px solid #d8d5cf;">Px</th>
+            </tr></thead>
+            <tbody><tr>
+            <td style="white-space:nowrap;">Dec-23</td>
+            <td style="text-align:center;color:#1e7a45;font-weight:700;">1.07x†</td>
+            <td style="white-space:nowrap;">30 Jan 24</td>
+            <td style="white-space:nowrap;font-size:10.5px;">FY23 YE-TU</td>
+            <td>£80m (Dec-22: £76m) · <em>90% of 2024 contracted, good visibility into 2025</em> · first £62m guide · dividend initiated · £100m-by-2028 target</td>
+            <td style="font-size:10px;color:#5f5c54;white-space:nowrap;">single</td>
+            <td style="text-align:right;font-size:10.5px;white-space:nowrap;">—</td>
+          </tr><tr>
+            <td style="white-space:nowrap;">Jun-24</td>
+            <td style="text-align:center;color:#b3261e;font-weight:700;"><strong>0.75x</strong>†</td>
+            <td style="white-space:nowrap;"><strong>17 Jul 24</strong></td>
+            <td style="white-space:nowrap;font-size:10.5px;">FY24 H1 TU</td>
+            <td>£71m (Jun-23: £78m) · <em>100% of FY24 contracted, good visibility into 2025</em> · guide reaffirmed, margins &ldquo;upper end&rdquo;</td>
+            <td style="font-size:10px;color:#5f5c54;white-space:nowrap;">two-doc</td>
+            <td style="text-align:right;font-size:10.5px;white-space:nowrap;"><strong>peak ≈30p</strong></td>
+          </tr><tr>
+            <td style="white-space:nowrap;">Dec-24</td>
+            <td style="text-align:center;color:#b3261e;font-weight:700;">0.79x†</td>
+            <td style="white-space:nowrap;">10 Apr 25</td>
+            <td style="white-space:nowrap;font-size:10.5px;">FY24 R</td>
+            <td>£67m (Dec-23: £80m) · <em>70% of 2025 contracted ex-ILiAD</em> · <strong>guide raised £62.7m → £73m</strong> · margins mid-high teens</td>
+            <td style="font-size:10px;color:#5f5c54;white-space:nowrap;">single</td>
+            <td style="text-align:right;font-size:10.5px;white-space:nowrap;">≈18p</td>
+          </tr><tr>
+            <td style="white-space:nowrap;">Jun-25</td>
+            <td style="text-align:center;color:#b3261e;font-weight:700;"><strong>−0.12x</strong>†</td>
+            <td style="white-space:nowrap;">22 Jul 25</td>
+            <td style="white-space:nowrap;font-size:10.5px;">FY25 H1 TU</td>
+            <td>£40m (Jun-24: £71m) · loss floor raised mid→low single digit · <strong>coverage % first withheld</strong></td>
+            <td style="font-size:10px;color:#5f5c54;white-space:nowrap;">two-doc</td>
+            <td style="text-align:right;font-size:10.5px;white-space:nowrap;">≈10p</td>
+          </tr><tr>
+            <td style="white-space:nowrap;">Dec-25</td>
+            <td style="text-align:center;color:#b3261e;font-weight:700;">0.71x†</td>
+            <td style="white-space:nowrap;">15 Apr 26</td>
+            <td style="white-space:nowrap;font-size:10.5px;">FY25 R</td>
+            <td>£30m (Dec-24: £43.5m restated) · orderbook rebased to CTA-only · coverage % withheld at FY grain</td>
+            <td style="font-size:10px;color:#5f5c54;white-space:nowrap;">single ʳ</td>
+            <td style="text-align:right;font-size:10.5px;white-space:nowrap;">≈8p</td>
+          </tr><tr>
+            <td style="white-space:nowrap;">Jun-26</td>
+            <td style="text-align:center;color:#1e7a45;font-weight:700;"><strong>3.15x</strong>†</td>
+            <td style="white-space:nowrap;">23 Jul 26</td>
+            <td style="white-space:nowrap;font-size:10.5px;">FY26 H1 TU ⭐</td>
+            <td>£65m (Dec-25: £30m) · <em>&ldquo;more than doubled&rdquo;</em> · proposals +c.45% · guide &ldquo;broadly in line&rdquo; with deferrals into 2027</td>
+            <td style="font-size:10px;color:#5f5c54;white-space:nowrap;">two-doc</td>
+            <td style="text-align:right;font-size:10.5px;white-space:nowrap;">≈7p</td>
+          </tr></tbody>
+          </table>
+          </div>
+          <p style="font-size:11px;line-height:1.6;margin-top:11px;"><strong>Computability.</strong> FY readings need <em>one document</em>: the company prints the closing orderbook with the prior-December comparator in the same highlights bullet, and revenue alongside it — so the Dec-23 1.07x was fully derivable from the 30 Jan 24 highlights alone. H1 readings need <em>two</em>: the July updates give the year-ago comparator (Jun-23, Jun-24) rather than the sequential December opening, so the prior FY figure has to be carried forward. Nothing here required data the company withheld.</p>
+          <p style="font-size:11px;line-height:1.6;"><strong>The two stale prints.</strong> Dec-24 and Dec-25 reached the market on 10 Apr 25 and 15 Apr 26 — three and a half months after the period end, because the FY orderbook only appears with the annual results. The December readings are therefore structurally late and the June readings are the usable ones. Dec-24&rsquo;s 0.79x — a second consecutive sub-1.0x — was disclosed <em>in the same document that raised guidance to £73m</em>. The cut followed seven weeks later.</p>
+          <p style="font-size:11px;line-height:1.6;"><strong>Basis break.</strong> The last two rows sit on the CTA-only definition; the first four are old-basis SUA+CTA. Ratios are not comparable across the rebase, and the &gt;1.0x / &gt;1.2x management targets apply to the CTA-only basis only.</p>
+        </div>
+      </details>
       <details class="sub">
         <summary>Turn methodology &amp; restatement basis</summary>
         <div class="notes-inner"><div class="method-box">
-    <strong>Turn methodology:</strong> Orderbook and cash (snapshot metrics) compare position-to-position at the same disclosure grain — Jun-end vs Jun-end, Dec-end vs Dec-end; flow metrics compared like-period-to-like-period only (H1 vs H1, FY vs FY; never H1 vs FY or H1 vs H2). EBITDA margin is a period rate — H1 vs H1, FY vs FY, with the ±2.0pp band applied to the Δ(rate) between seasonally-matched periods. H2 EBITDA and revenue derived as FY minus H1 and marked †; cross-verified via H1+H2=FY identity. A derived figure in an aggregate period that is positive while a derived sub-period is negative flags the aggregate as backward-loaded (FY25 EBITDA: 3.0% aggregate, H2 = −7.1%). Turn arrows from script only; no arrows by eye.
+    <strong>Turn methodology:</strong> Orderbook and cash (snapshot metrics) compare position-to-position at the same disclosure grain — Jun-end vs Jun-end, Dec-end vs Dec-end; flow metrics compared like-period-to-like-period only (H1 vs H1, FY vs FY; never H1 vs FY or H1 vs H2). EBITDA margin is a period rate — H1 vs H1, FY vs FY, with the ±2.0pp band applied to the Δ(rate) between seasonally-matched periods. H2 EBITDA and revenue derived as FY minus H1 and marked †; cross-verified via H1+H2=FY identity. A derived figure in an aggregate period that is positive while a derived sub-period is negative flags the aggregate as backward-loaded (FY25 EBITDA: 3.0% aggregate, H2 = −7.1%). Turn arrows from script only; no arrows by eye. <strong>Net book-to-bill</strong> renders as a derived line under Rank 1, not a ranked metric: it is unscored, carries no turn arrow, and never counts toward the 2-of-3. Values below 1.0x render red as a display of level, not as a score. Workings: (close − open + revenue) ÷ revenue, per period, both inputs printed; FY25 uses the restated £43.5m Dec-24 opening (ʳ) so both its endpoints sit on the CTA-only basis. <strong>Bookings required vs won</strong> is the same identity read forward: required bookings = FY revenue guidance (because bookings must equal revenue for the book to hold flat), compared with bookings actually won in the year. Both lines are derived, unscored, carry no turn arrow and count toward nothing.
   </div><p style="font-size:11.5px;margin-top:8px;"><strong>Rate-metric pp moves (Rank 2), retained here per B.5 — never rendered in cells:</strong> H1 FY24 +5.4pp · FY24 +2.9pp · H1 FY25 −12.0pp · FY25 −23.2pp · H1 FY26 ~−17pp · H2 FY24† +1.1pp vs H2 FY23. Band ±2.0pp. <strong>Snapshot Δ (Ranks 1, 4)</strong> render in-cell as absolute moves only; no percentage is derived at build. <strong>Display basis:</strong> flow cells show the year-on-year comparison; the sequential comparison is computed and retained but never displayed.</p></div>
       </details>
     </div>
@@ -710,6 +846,7 @@ table.t3-open tr.t3-early{display:table-row}
           <li>Cash £13m, only −£1.3m sequential — best period-to-period since Dec-24; positive WC inflows</li>
           <li>Guide held ("broadly in line") but H2 profile softened by acknowledged deferrals into 2027</li>
           <li>Coverage % withheld again vs Jul-24 habit — third H1 TU running; Drift condition live</li>
+          <li>Net book-to-bill 3.15x† in H1 — first reading above 1.0x since Dec-23; derived, watch-flag</li>
           <li>Proposals +c.45% YoY — funnel converting (proposals 🟢 + orderbook 🟢 = wedge closed)</li>
           <li>⚠️ H2 requires ≈£34m vs H2 FY25 £22.6m — +51% delivery, contracted but back-loaded</li>
           <li>⚠️ Dividend suspended FY25; cash £13m with no visible reinstatement path before FY27</li>
@@ -918,7 +1055,7 @@ table.t3-open tr.t3-early{display:table-row}
 <div class="section">
   <div class="section-title">§4 · Drift — what they've gone quiet about</div>
   <p style="font-size:11px;color:var(--mute);margin-bottom:8px;">Which numbers get shared, hedged, or dropped, document by document — going quiet is the signal</p>
-  <p style="font-size:11px;color:var(--mute);margin-bottom:8px;">Click a column header to highlight all columns of that period-type. ✅ quantified · 🟡 qualitative · ❌ withheld vs cadence · — outside cadence · ⊘ expected update not issued/unavailable · <sup>b</sup> basis flag · <sup>d</sup> company-announced cadence change · <sup>o</sup> open item</p>
+  <p style="font-size:11px;color:var(--mute);margin-bottom:8px;">Click a column header to highlight all columns of that period-type. ✅ quantified · 🟡 qualitative · ❌ withheld vs cadence · — outside cadence · ⊘ expected update not issued/unavailable · <sup>b</sup> basis flag · <sup>d</sup> company-announced cadence change · <sup>a</sup> asymmetric disclosure — stated cadence overridden in the favourable direction · <sup>o</sup> open item</p>
 
   <div id="drift-wrap">
   <table id="drift">
@@ -1069,7 +1206,23 @@ table.t3-open tr.t3-early{display:table-row}
         <td class="dcell-none">—</td>
         <td class="dcell-no">❌ narrowed<sup style="font-size:0.55rem;">d</sup></td>
         <td class="dcell-ok">✅ FY/H1 only</td>
-        <td class="dcell-ok">✅ FY/H1 only</td>
+        <td class="dcell-q" style="background:#f0eeff;font-weight:700;">⚠️ off-policy<sup style="font-size:0.55rem;">a</sup></td>
+      </tr>
+      <tr>
+        <td>Contract-award values</td>
+        <td class="dcell-none">—</td>
+        <td class="dcell-none">—</td>
+        <td class="dcell-none">—</td>
+        <td class="dcell-none">—</td>
+        <td class="dcell-ok">✅ £11.5m</td>
+        <td class="dcell-none">—</td>
+        <td class="dcell-none">—</td>
+        <td class="dcell-none">—</td>
+        <td class="dcell-none">—</td>
+        <td class="dcell-none">—</td>
+        <td class="dcell-none">—</td>
+        <td class="dcell-miss">❌ Traws/ILiAD n/v</td>
+        <td class="dcell-miss" style="background:#f0eeff;font-weight:700;">❌ Decoy n/v</td>
       </tr>
     </tbody>
   </table>
@@ -1082,7 +1235,7 @@ table.t3-open tr.t3-early{display:table-row}
       <details>
     <summary>Notes — §4</summary>
     <div class="notes-inner">
-      <strong>First note (rightmost column — H1 FY26 TU, Jul-26):</strong> Orderbook £65m re-quantified — first positive movement and first reading on the new CTA-only basis exceeding the prior high (£40m Jun-25). Revenue and cash quantified as expected. EBITDA margin disclosed qualitatively ("negative mid-single digit") — note this is not a ❌ as a qualitative disclosure is consistent with H1 TU cadence for unaudited periods. Contracted coverage % withheld again — <strong>❌, not —</strong>. Corrected Aug-26: the earlier build restated these cells on a grain error (it tested YE-TU documents against results documents). Like-for-like the habit is unbroken then stops at every grain: FY results Apr-24 90% and Apr-25 70% → Apr-26 dropped; H1 results Sep-24 100% → Sep-25 dropped; H1 TU Jul-24 100% → Jul-25 and Jul-26 dropped. Only the YE-TU grain is genuinely patchy (Jan-24 quantified, Jan-25 qualitative), so Jan-26 stays —. The withhold is real and unexplained, and with coverage % restored to Rank 5 (Aug-26) it fires Drift condition 3 — the trigger stands at 3 of 3. Dividend: not addressed (consistent with FY25 suspension, no new announcement expected until FY26 R). Orderbook criteria change (SUA exclusion, effective Dec-25) was disclosed in FY25 R Apr-26 — the Dec-24 figure was restated to £43.5m for comparability in that same document. Separately, the Jan-26 YE-TU announced a <strong>narrowing of orderbook disclosure cadence</strong> ("an update on its orderbook at both full year and half-year results going forward") — a company-stated removal of the metric from trading updates, now carried as its own Drift row.
+      <strong>First note (rightmost column — H1 FY26 TU, Jul-26):</strong> Orderbook £65m re-quantified — first positive movement and first reading on the new CTA-only basis exceeding the prior high (£40m Jun-25). Revenue and cash quantified as expected. EBITDA margin disclosed qualitatively ("negative mid-single digit") — note this is not a ❌ as a qualitative disclosure is consistent with H1 TU cadence for unaudited periods. Contracted coverage % withheld again — <strong>❌, not —</strong>. Corrected Aug-26: the earlier build restated these cells on a grain error (it tested YE-TU documents against results documents). Like-for-like the habit is unbroken then stops at every grain: FY results Apr-24 90% and Apr-25 70% → Apr-26 dropped; H1 results Sep-24 100% → Sep-25 dropped; H1 TU Jul-24 100% → Jul-25 and Jul-26 dropped. Only the YE-TU grain is genuinely patchy (Jan-24 quantified, Jan-25 qualitative), so Jan-26 stays —. The withhold is real and unexplained, and with coverage % restored to Rank 5 (Aug-26) it fires Drift condition 3 — the trigger stands at 3 of 3. Dividend: not addressed (consistent with FY25 suspension, no new announcement expected until FY26 R). Orderbook criteria change (SUA exclusion, effective Dec-25) was disclosed in FY25 R Apr-26 — the Dec-24 figure was restated to £43.5m for comparability in that same document. Separately, the Jan-26 YE-TU announced a <strong>narrowing of orderbook disclosure cadence</strong> ("an update on its orderbook at both full year and half-year results going forward") — a company-stated removal of the metric from trading updates, now carried as its own Drift row. <strong>That policy was then overridden at Jul-26 (⚠️ off-policy).</strong> The H1 FY26 document is a trading update, not results, yet it led its headline with &ldquo;Orderbook has more than doubled to £65 million&rdquo;. The stated cadence was narrowed while the number was falling (Jan-26, orderbook £30m) and set aside as soon as it doubled. This is not a rule breach — a company may always disclose more — but it is asymmetric, and it has a practical consequence for the next read: <strong>silence cannot be treated as neutral.</strong> If the Dec-26 orderbook is strong, expect it early, in the Jan-27 trading update. If it is weak, expect to wait for the April FY results — and read the wait as information in its own right.
     </div>
   </details>
     </div>
@@ -1199,7 +1352,7 @@ document.addEventListener('DOMContentLoaded',function(){
  "rns_date": "2026-07-23",
  "build_date": "2026-08-08",
  "spec_version": "5.1",
- "next_test": "H2 FY26 R: revenue ≥£30m, EBITDA positive, cash ≥£14m → 🟢. Orderbook <£40m or cash <£10m → 🔴.",
+ "next_test": "Jan-27 TU: orderbook printed early reads as strength, absent reads as weakness (deferred to 15 Apr 27); then H2 revenue ≥£30m, cash ≥£14m, coverage % restored → 🟢.",
  "url": "HVO_DriftTracker_v5.1.html",
  "grid": {
   "labels": [
