@@ -1651,6 +1651,52 @@
         ],
         "note": "Half grain incl. derived H2 (FY − H1); R1 Sales Bookings, R2 Backlog, R3 Adj EBITDA margin, R4 Revenue, R5 Net Cash; x = withheld."
       }
+    },
+    {
+      "ticker": "HVO",
+      "company": "hVIVO plc",
+      "kind": "ticker",
+      "direction": "watch",
+      "headline": "H1 FY26 revenue down −33% but orderbook more than doubled — the first concrete leading reversal after four consecutive declines.",
+      "trigger": "3 of 3 deterioration conditions fired (Hard/G, Text, Drift — coverage % restored to Rank 5)",
+      "alert": true,
+      "fired": 3,
+      "fired_of": 3,
+      "lights": "rrr",
+      "rns_type": "H1 Trading Update",
+      "rns_date": "2026-07-23",
+      "build_date": "2026-08-08",
+      "spec_version": "5.1",
+      "next_test": "H2 FY26 R: revenue ≥£30m, EBITDA positive, cash ≥£14m → 🟢. Orderbook <£40m or cash <£10m → 🔴.",
+      "url": "HVO_DriftTracker_v5.1.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "-",
+          "-",
+          "H1 23",
+          "FY 23",
+          "H1 24",
+          "FY 24",
+          "H1 25",
+          "FY 25",
+          "H1 26"
+        ],
+        "rows": [
+          "----rrrrg",
+          "----ggrrr",
+          "----ggrrr",
+          "----ggrrr",
+          "----gaxxx"
+        ],
+        "note": "Ranks 1–5: orderbook, EBITDA margin, revenue, cash, contracted coverage %"
+      }
     }
   ]
 }
