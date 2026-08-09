@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IGP · Longitudinal Drift Tracker</title>
+<style>
+  :root{
+    --ink:#1a1a1a; --mut:#5c5c5c; --line:#d8d8d8; --hair:#ececec;
+    --grn:#1a7f4b; --grn-t:#e7f4ec; --red:#c0392b; --red-t:#fbecea;
+    --amb2:#d9a13b; --amb:#b9821a; --amb-t:#faeeda; --card:#f7f6f2; --bs:#f0efe9;
+    --hl:#fff7d6; --hlpink:#fdeaf1;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#fff;color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:14px;line-height:1.5;}
+  .wrap{max-width:1800px;margin:0 auto;padding:34px 30px 80px;}
+  .prose{max-width:1100px;}
+  h2.sec{font-size:13px;letter-spacing:.09em;text-transform:uppercase;color:var(--mut);
+    margin:38px 0 14px;font-weight:700;border-bottom:1px solid var(--line);padding-bottom:7px;}
+  h2.sec:first-of-type{margin-top:30px;}
+  p{margin:.5em 0;}
+  .small{font-size:12.5px;color:var(--mut);}
+  table{border-collapse:collapse;width:100%;}
+  th,td{border:1px solid var(--line);padding:8px 9px;text-align:left;vertical-align:top;}
+  th{background:#fafafa;font-weight:700;font-size:12.5px;}
+  .center{text-align:center;}
+  details{background:var(--card);border:1px solid var(--line);border-radius:10px;
+    margin-top:16px;padding:2px 14px;}
+  details summary{cursor:pointer;font-weight:700;font-size:12.5px;padding:10px 0;color:var(--mut);
+    letter-spacing:.04em;text-transform:uppercase;}
+  details[open] summary{border-bottom:1px solid var(--hair);margin-bottom:8px;}
+  details .body{font-size:12.5px;line-height:1.55;padding:2px 0 12px;}
+  details .body b{display:block;margin-top:9px;}
+
+  /* ---- VERDICT CARD ---- */
+  .vcard{display:flex;border:6px solid var(--amb);border-radius:12px;overflow:hidden;
+    max-width:1100px;background:#fff;margin-top:4px;}
+  .vcard .rail{width:82px;flex:0 0 82px;background:var(--amb-t);display:flex;flex-direction:column;
+    align-items:center;justify-content:space-between;padding:16px 0;}
+  .vcard .badge{width:36px;height:36px;border-radius:50%;border:2px solid var(--amb);
+    display:flex;align-items:center;justify-content:center;background:#fff;}
+  .vcard .rlabel{writing-mode:vertical-rl;transform:rotate(180deg);text-transform:uppercase;
+    letter-spacing:.16em;font-size:12px;font-weight:800;color:var(--amb);}
+  .vcard .vbody{padding:18px 22px 20px;flex:1;min-width:0;}
+  .vhead{font-size:22px;font-weight:700;line-height:1.32;margin:2px 0 14px;}
+  .pillrow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:16px;}
+  .pill{font-size:11.5px;font-weight:600;padding:4px 10px;border-radius:999px;
+    background:#f0f0f0;color:#333;white-space:nowrap;}
+  .pill.alert{background:var(--amb-t);color:#8a5d00;}
+  .pill.bs{background:var(--grn-t);color:#155f38;}
+  .dot{width:4px;height:4px;border-radius:50%;background:#bbb;}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:4px;}
+  .sc{background:var(--card);border-radius:10px;padding:11px 13px;}
+  .sc.caveat{background:var(--amb-t);}
+  .sc .k{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);
+    font-weight:700;margin-bottom:3px;}
+  .sc .v{font-size:13px;line-height:1.4;}
+  .vbul{margin:14px 0 0;padding:0;list-style:none;}
+  .vbul li{position:relative;padding-left:16px;margin:8px 0;font-size:13px;line-height:1.5;}
+  .vbul li:before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;
+    border-radius:50%;background:var(--amb);}
+
+  /* ==== §2 GRID SKIN — LOCKED v4.0 (Appendix B.1) ==== */
+  .aggrow td{background:#fff;border-top:2px solid var(--ink);color:var(--mut);font-size:11.5px;padding:6px 4px;}
+  .aggrow td.lab{font-style:italic;}
+  .aval{font-weight:700;color:var(--mut);}
+  .anote{display:inline;font-size:10.5px;margin-left:5px;}
+  .anote.neg{color:var(--red);}
+  .anote.g{color:var(--grn);}
+  .gridwrap{overflow-x:auto; margin-bottom:16px}
+  table.fg{table-layout:fixed; width:100%; min-width:1000px; border-collapse:collapse; font-size:12.5px}
+  table.fg th, table.fg td{border:1px solid var(--line); text-align:center; padding:7px 4px; vertical-align:top}
+  table.fg col.lab{width:190px}
+  table.fg .yrband th{background:#efedE7; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; font-weight:700}
+  table.fg .perhead th{cursor:pointer; user-select:none; font-size:11.5px; background:var(--paper)}
+  table.fg .perhead th:hover{background:#eceae4}
+  table.fg th.lab, table.fg td.lab{text-align:left !important}
+  .secbar td{background:var(--ink); color:#fff; text-align:left !important;
+    font-size:11.5px; letter-spacing:.07em; font-weight:700; padding:7px 9px}
+  .secbar .nat{font-weight:400; letter-spacing:.02em; color:#c9c6bd; text-transform:none}
+  .strip td{padding:2px 4px; font-size:10px; color:var(--mut); background:#fbfaf7; letter-spacing:.05em}
+  .strip td.lab{font-style:italic}
+  .vrow td{background:#fff}
+  .vrow td.lab{color:var(--mut); font-style:italic; font-size:11.5px}
+  .vrow .val{font-weight:700; display:block; font-size:13px}
+  .vrow .val .neg{color:var(--red)}
+  .vrow .delta{display:block; font-size:11px; color:var(--mut); margin-top:2px}
+  .vrow .delta.neg{color:var(--red)}
+  td.bs{background:#fcfbf8 !important}
+  td.bs .val{font-weight:800}
+  th.bs{font-weight:800}
+    /* ---- Text+G ---- */
+  #text3 td.doc{cursor:pointer;}
+  #text3 tr[data-rowtype].hlrow td{background:var(--hlpink);}
+  #text3 tr.changed td{background:#fbfaf5;}
+  .gcell{font-weight:700;white-space:nowrap;}
+  .qt{font-style:italic;color:#333;}
+
+  /* ---- Drift ---- */
+  #drift{font-size:12px;}
+  #drift th.dh{cursor:pointer;text-align:center;font-size:10.5px;line-height:1.3;white-space:nowrap;}
+  #drift th.dh:hover{background:#f0eee8;}
+  #drift td{text-align:center;}
+  #drift td.m{text-align:left;font-weight:600;font-size:11.5px;}
+  #drift col.mcol{width:150px;}
+  #drift td.hlc,#drift th.hlc{background:var(--hl)!important;}
+  #drift .key{font-weight:400;color:var(--mut);font-size:9.5px;display:block;}
+  #drift col.sep{border-left:2px solid var(--amb);}
+  #drift td.sep,#drift th.bsx{border-left:2px solid var(--amb);}
+  #drift th.bsx{background:#fdf9f0;}
+  .lead{max-width:1100px;font-size:13.5px;color:#333;}
+  /* ---- §2.0 current-state bar ---- */
+  .csbar{max-width:1100px;border-radius:10px;padding:15px;margin-top:12px;font-size:13.5px;line-height:1.5;}
+  .csbar.amb{background:#fdf4e3;border:2px solid var(--amb);}
+  .csbar.grn{background:#e9f5ee;border:2px solid var(--grn);}
+  .csbar.red{background:#fdecea;border:2px solid var(--red);}
+  details.d1{border:1px solid #c6c2b9;background:var(--paper);border-radius:10px;margin-top:16px;max-width:1800px;}
+  details.d1>summary{font-size:14px;padding:13px;cursor:pointer;font-weight:700;list-style:none;}
+  details.d1>summary::-webkit-details-marker{display:none;}
+  details.d1>summary:before{content:"\25B8 ";color:var(--mut);}
+  details.d1[open]>summary:before{content:"\25BE ";}
+  details.d1>.d1body{padding:0 13px 13px;font-size:12.5px;line-height:1.55;}
+  details.d2{border:1px solid var(--line);background:#fff;border-radius:8px;margin-top:12px;}
+  details.d2>summary{font-size:12.5px;padding:9px;cursor:pointer;font-weight:600;list-style:none;}
+  details.d2>summary::-webkit-details-marker{display:none;}
+  details.d2>summary:before{content:"\25B8 ";color:var(--mut);}
+  details.d2[open]>summary:before{content:"\25BE ";}
+  details.d2>.d2body{padding:0 10px 10px;font-size:12.5px;line-height:1.55;}
+  tr.oldrow{display:none;}
+  #text3.showall tr.oldrow{display:table-row;}
+  tr.expander td{background:#f2f1ec;cursor:pointer;font-size:12px;font-weight:600;padding:7px 9px;text-align:left;color:var(--mut);}
+  td.ctx{font-size:11.5px;color:#444;line-height:1.45;}
+  .flex20{display:flex;gap:14px;align-items:flex-start;flex-wrap:wrap;margin-top:14px;}
+  .flex20>.brg{flex:1 1 420px;}
+  .flex20>.csbar{flex:1 1 460px;margin-top:0;}
+  .brg{border:1px solid var(--line);border-radius:10px;overflow:hidden;}
+  .brg table{width:100%;border-collapse:collapse;}
+  .brg td{padding:9px 11px;font-size:12.5px;vertical-align:top;border-top:1px solid var(--line);}
+  .brg td.dl{font-weight:700;font-size:19px;width:33%;}
+  .brg td.cn{font-weight:700;text-align:right;width:64px;white-space:nowrap;}
+  .brg tr.gn{background:#e9f5ee;} .brg tr.rd{background:#fdecea;} .brg tr.am{background:#fdf4e3;}
+  .brg .cap{background:#fafafa;padding:10px 11px;font-size:11px;color:var(--mut);line-height:1.5;border-top:1px solid var(--line);}
+  /* ---- dark-panel instrument family ---- */
+  .dkbar{background:#2b2a26;color:#fff;padding:8px 15px;font-weight:700;font-size:20px;font-family:'Caveat','Comic Sans MS','Chalkboard SE',cursive;
+    display:flex;align-items:center;gap:9px;}
+  .dkbar .emj{font-size:22px;}
+  .csbar{max-width:1100px;border-radius:10px;overflow:hidden;margin-top:14px;}
+  .csbar.amb{border:2px solid var(--amb);}
+  .csbar .csbody{background:#fdf4e3;padding:14px 16px;}
+  .csbar .lead{font-weight:700;font-size:14px;margin:0 0 8px;}
+  .csbar ul{margin:0;padding-left:18px;}
+  .csbar li{font-size:13px;line-height:1.5;margin:4px 0;}
+  /* ---- trigger lights ---- */
+  .lights{background:#2b2a26;border-radius:12px;padding:12px 13px;max-width:1100px;margin:12px 0;
+    display:flex;gap:10px;align-items:stretch;}
+  .lamp{flex:1;background:#333129;border-radius:9px;padding:9px 11px;position:relative;}
+  .lamp.fired{background:#3b3934;}
+  .bulb{width:28px;height:28px;border-radius:50%;border:2px solid rgba(255,255,255,.25);
+    box-shadow:0 0 0 4px rgba(255,255,255,.06);margin-bottom:7px;}
+  .bulb.red{background:#ff3b30;} .bulb.grn{background:#21d05e;}
+  .bulb.amb{background:#ffb020;} .bulb.off{background:#57544c;}
+  .lname{font-size:15.5px;font-weight:700;color:#fff;}
+  .lamp.unlit .lname{color:#a8a49a;}
+  .lreason{font-size:11.5px;color:#c9c6bd;margin-top:3px;line-height:1.35;}
+  .lamp.unlit .lreason{color:#8d8981;}
+  .ldate{position:absolute;top:9px;right:11px;font-size:11px;color:#c9c6bd;}
+  .lamp.unlit .ldate{color:#8d8981;}
+  .tally{width:96px;text-align:center;align-self:center;}
+  .tally .n{font-size:26px;font-weight:700;color:#fff;}
+  .tally .f{font-size:10.5px;letter-spacing:.14em;color:#c9c6bd;}
+  .bsstrip{border-top:1px dashed #57544c;margin-top:11px;padding-top:10px;display:flex;
+    align-items:center;gap:10px;}
+  .bsstrip .bulb{width:20px;height:20px;margin:0;}
+  .bsstrip .t1{font-size:13px;color:#fff;font-weight:600;}
+  .bsstrip .t2{font-size:11px;color:#8d8981;}
+  /* ---- four boxes ---- */
+  .boxes{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:14px;}
+  .bx{background:#f2f1ec;border-radius:0 0 10px 10px;padding:12px 15px 13px;border-top:3px solid var(--amb2);}
+  .bx .k{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);}
+  .bx .hd{font-size:19px;font-weight:700;margin:3px 0 4px;}
+  .bx .s{font-size:13px;line-height:1.45;}
+  .foot{max-width:1100px;font-size:11.5px;color:var(--mut);margin-top:26px;border-top:1px solid var(--hair);padding-top:12px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ================= VERDICT CARD ================= -->
+  <div class="vcard">
+    <div class="rail">
+      <div class="badge">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#b9821a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line></svg>
+      </div>
+      <div class="rlabel">Stable&nbsp;·&nbsp;Watch</div>
+      <div style="width:36px;"></div>
+    </div>
+    <div class="vbody">
+      <div class="vhead">Third down year delivered against a bar cut in March — but deferred revenue, the metric that led both turns, is still falling.</div>
+      <div class="pillrow">
+        <span class="pill">FY Final Results · 23 Jun 2026</span><span class="dot"></span>
+        <span class="pill">FY 31 Mar</span><span class="dot"></span>
+        <span class="pill bs">Net cash · debt-free</span>
+      </div>
+
+      <div class="lights">
+        <div class="lamp fired"><div class="ldate">Mar-26</div><div class="bulb red"></div><div class="lname">Numbers &amp; guide</div><div class="lreason">Guide cut 8–9%; three consecutive down halves on revenue and PBT</div></div>
+        <div class="lamp unlit"><div class="bulb off"></div><div class="lname">Language</div><div class="lreason">Anchored reiterations throughout; no print at or below −1</div></div>
+        <div class="lamp fired"><div class="ldate">Jun-25 →</div><div class="bulb grn"></div><div class="lname">Disclosure</div><div class="lreason">Recurring re-quantified from Jun-25 after the FY24 withhold; now the headline metric</div></div>
+        <div class="tally"><div class="n">2/3</div><div class="f">FIRED</div></div>
+      </div>
+      <div class="lights" style="padding-top:0;margin-top:-8px;">
+        <div class="bsstrip" style="width:100%;"><div class="bulb grn"></div><div><div class="t1">Clean · net cash £20.0m</div><div class="t2">Sweep sits outside the 2-of-3 count</div></div></div>
+      </div>
+
+      <details class="d1" style="margin-top:12px;"><summary class="dkbar" style="border-radius:9px;font-size:24px;font-family:'Comic Sans MS','Chalkboard SE',cursive;"><span class="emj">💡</span><span>Idiot's guide to the company — What Intercede actually does</span></summary><div class="d1body">
+        <p><b>What it is.</b> Intercede sells software that hands out and manages digital ID credentials — the certificate on the smart card or phone that proves you are who you say you are before a door, a network or a file opens. The core product is MyID CMS.</p>
+        <p><b>Where it is.</b> Head office in Lutterworth, Leicestershire, with a US office in Reston, Virginia. About 111 staff. Roughly 82% of sales are American.</p>
+        <p><b>How the money arrives.</b> Three streams. <b>Licences</b> — a big one-off fee when a customer first buys, or expands, the right to use the software; lumpy, high margin, and entirely in the customer's gift as to timing. <b>Professional services</b> — day-rate work installing it; follows the licences a few months behind. <b>Support and maintenance</b> — an annual fee to keep it patched and supported, which renews on its own and now covers about two-thirds of sales. The first stream decides whether a year is good; the third decides whether a bad year still pays the bills.</p>
+        <p><b>Who controls the timing.</b> Mostly US federal agencies and defence contractors. They rarely cancel, but they can sit on a purchase order for months, which is precisely what happened in the year to March 2026.</p>
+        <p><b>Recent event.</b> Bought Authlogics in October 2022 for £2m to add password and multi-factor products. Nothing since, though £20m of cash sits waiting and management says it looked at 25 targets last year.</p>
+        <p><i>The argument: a small, debt-free company selling something governments are obliged to buy, currently priced for the delay rather than the demand — provided the delayed orders actually turn up.</i></p>
+        <p class="small" style="color:var(--mut);">As at FY26 results, 23 June 2026.</p>
+      </div></details>
+
+      <div class="boxes">
+        <div class="bx"><div class="k">Current state</div><div class="hd">Met the cut bar</div><div class="s">FY26 £17.2m against £17.0m guided in March; profit landed modestly ahead of the reset, and no fresh cut was issued.</div></div>
+        <div class="bx"><div class="k">Warning you get</div><div class="hd">~9 months</div><div class="s">Deferred revenue stalled at Jun-25, nine months before the March cut. It is still falling: −8.2% at FY26.</div></div>
+        <div class="bx"><div class="k">Argues against</div><div class="hd">Guide record is good</div><div class="s">Every guide before FY26 was met; the one miss was pre-explained by US procurement delay, and cash rose throughout.</div></div>
+        <div class="bx"><div class="k">Next test</div><div class="hd">Nov-26</div><div class="s">H1 FY27 results: deferred revenue back above £6.15m and a positive operating cash half would confirm the trough.</div></div>
+      </div>
+
+      <ul class="vbul">
+        <li><b>Why the lead is nine months, not five:</b> at the FY25 results the renewal book stopped growing (+2.9%) while revenue still looked fine — the same stall preceded the FY23 up-turn in mirror image, and on that precedent the book turns before the P&L does.</li>
+        <li>The two lit lamps point in <b>opposite directions</b> — Numbers red (Mar-26 cut), Disclosure green (re-quantification and expanding disclosure from Jun-25) — so they do not converge and no alert fires. The FY24 withhold remains on the record as the historical deterioration fire the green shoot reversed.</li>
+        <li><b>What flips it:</b> deferred revenue rising at Nov-26 flips the read up; a fourth down half, a trimmed £21m FY27 target, or deferred falling again flips it down.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ================= §1 LEDGER ================= -->
+  <h2 class="sec">§1 · Metric Ledger</h2>
+  <details class="d1"><summary>Metric ledger — 5 scored ranks, roles and backtest evidence</summary><div class="d1body">
+<p class="small">5 scored metrics, ranked by measured lead at this record's two documented turns (up-turn: Jan-23→Mar-24 raise cycle; down-turn: Mar-26 CUT). Roles per backtest: LEAD = moved before the guided line · CONFIRM = moves with it · WATCH = unscored. Bands: H-grain ±2.0pp; absolute band ‡ = 10% of series peak. Single-cycle calibration — all ranks provisional until the FY27 out-of-sample test.</p>
+  <table>
+    <thead><tr><th style="width:36px;">Rank</th><th style="width:180px;">Metric</th><th style="width:100px;">Type · Role</th><th>Backtest evidence (why it leads here)</th><th style="width:110px;">Cadence</th><th style="width:150px;">Status this run</th></tr></thead>
+    <tbody>
+      <tr><td class="center">1</td><td><b>Deferred revenue</b> (total, £000)</td><td>Snapshot · <b>LEAD</b></td><td>LED both turns: +40% at Jun-23 (~5mo before raises); growth stalled +13%→+2% at Jun-25, ~9 months before the Mar-26 cut — the "delayed renewals" behind the warning showed here first.</td><td>H1 + FY (B/S)</td><td><span class="r">🔴</span> falling both grains — not yet turned</td></tr>
+      <tr><td class="center">2</td><td><b>Operating cash flow</b> (£m)</td><td>Flow · <b>LEAD</b></td><td>LED both turns: £0.1m→£2.9m at Jun-23; −70% at Jun-25 (~9mo pre-cut). Caveat: FY24 base inflated by the one-off order's working-capital swing — conflict stated.</td><td>H1 + FY</td><td><span class="a">🟡</span> H1 recovered; H2† fell again</td></tr>
+      <tr><td class="center">3</td><td><b>Total revenue</b> (£m)</td><td>Flow · <b>LEAD</b></td><td>LED the down-turn: H1 FY26 −3.9% (Oct-25 TU) ~5 months before the cut. Coincident at the up-turn (guides led). Earliest pre-announced hard number.</td><td>H1 + FY</td><td><span class="a">🟡</span> H2 decline shallowed to −1.9%</td></tr>
+      <tr><td class="center">4</td><td><b>Adjusted EBITDA</b> (£m)</td><td>Flow · CONFIRM</td><td>Moves with revenue as its amplifier; the guided/consensus line. Corroborates, never signals alone.</td><td>H1 + FY</td><td><span class="a">🟡</span> H2† flat YoY (0.0%)</td></tr>
+      <tr><td class="center">5</td><td><b>PBT</b> (£m)</td><td>Flow · CONFIRM</td><td>Confirms EBITDA net of D&amp;A/SBP. Same print dates; no independent lead.</td><td>H1 + FY</td><td><span class="r">🔴</span> H2† −17.2%, still falling</td></tr>
+      <tr><td class="center" style="color:var(--mut);">W</td><td style="color:var(--mut);"><b>Recurring rev / ARR</b></td><td style="color:var(--mut);">Snapshot · WATCH</td><td style="color:var(--mut);">MISLED at the down-turn — rose 44%→60%→66% through it, zero warning. Company headline metric ≠ lead. Tracked in Drift; flaggable to verdict as counter-signal.</td><td style="color:var(--mut);">FY</td><td style="color:var(--mut);">🟢 rising (counter-signal)</td></tr>
+      <tr><td class="center" style="color:var(--mut);">W</td><td style="color:var(--mut);"><b>Gross cash</b></td><td style="color:var(--mut);">Snapshot · WATCH</td><td style="color:var(--mut);">Rose through the downturn — counter-signal, not a tell. Stays in the B/S sweep and Drift.</td><td style="color:var(--mut);">H1 + FY</td><td style="color:var(--mut);">🟢 £20.0m, debt-free</td></tr>
+    </tbody>
+  </table>
+  <p class="small" style="margin-top:8px;"><b>Ledger change applied this build (was proposed last build):</b> deferred revenue and operating cash flow promoted on backtest evidence; recurring revenue and gross cash demoted to WATCH (both misled at the down-turn). Measured lead for the verdict: <b>~9 months</b> (deferred, Jun-25 stall → Mar-26 cut). <b>Basis log:</b> R1 rebased from current-only to total deferred (current + non-current — the company\u2019s own headline basis, £7.5/8.6/8.8/8.1m) at the R1+R2 audit; signal unchanged (+13.9% \u2192 +2.9% stall \u2192 \u22128.2%). R2 rebuilt from exact statement £000 (H2\u2020 FY26 YoY corrected \u221242.4% \u2192 \u221241.4%); FY23/FY24 H1 cells re-sourced from statements (2,118 / 1,704) after an availability-test fail on narrative figures.</p>
+  </div></details>
+
+  <!-- ================= §2 UNIFIED GRID ================= -->
+  <h2 class="sec">§2 · Unified Forward Grid — H1/H2† spine, FY on muted aggregate rows (5 ranks = 5 blocks)</h2>
+  <p class="small">One shared spine: 8 half columns (H1 / H2† per FY), FY23 → FY26. Flow H2† = FY − H1, derived, cross-checked. Snapshot (Rank 1) shows half-end positions. FY values sit on the muted row beneath each rank — transcribed company prints, never scored. ⭐ column = Buy/Sell. ‡ = absolute-band score (zero-crossing guard, band ≈ 10% of series peak). Click H1 / H2 to highlight all columns of that type.</p>
+  <div class="gridwrap">
+  <table class="fg" id="fg">
+    <colgroup><col class="lab"><col><col><col><col><col><col><col><col></colgroup>
+    <thead>
+      <tr class="yrband">
+        <th class="lab"></th>
+        <th colspan="2">FY23</th><th colspan="2">FY24</th><th colspan="2">FY25</th><th colspan="2">FY26</th>
+      </tr>
+      <tr class="perhead">
+        <th class="lab">Metric</th>
+        <th data-per="H1">H1</th><th data-per="H2">H2†</th>
+        <th data-per="H1">H1</th><th data-per="H2">H2†</th>
+        <th data-per="H1">H1</th><th data-per="H2">H2†</th>
+        <th data-per="H1">H1</th><th data-per="H2">⭐ H2†</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- RANK 1 · DEFERRED REVENUE -->
+      <tr class="secbar"><td colspan="9">Rank 1 · Deferred revenue (total, £000) <span class="nat">— snapshot · LEAD · half-end positions, current + non-current (the company's own headline basis); saw-tooth is seasonal (Mar renewals) — the tell is the FY row's YoY</span></td></tr>
+      <tr class="strip"><td class="lab">position at</td><td>Sep-22</td><td>Mar-23</td><td>Sep-23</td><td>Mar-24</td><td>Sep-24</td><td>Mar-25</td><td>Sep-25</td><td>Mar-26</td></tr>
+      <tr class="vrow">
+        <td class="lab">£000 · Δ vs prior print</td>
+        <td><span class="val">4,353</span><span class="delta">—</span></td>
+        <td><span class="val">7,537</span><span class="delta g">+3,184 ↗</span></td>
+        <td><span class="val">5,423</span><span class="delta neg">−2,114 ↘</span></td>
+        <td><span class="val">8,584</span><span class="delta g">+3,161 ↗</span></td>
+        <td><span class="val">6,324</span><span class="delta neg">−2,260 ↘</span></td>
+        <td><span class="val">8,830</span><span class="delta g">+2,506 ↗</span></td>
+        <td><span class="val">6,154</span><span class="delta neg">−2,676 ↘</span></td>
+        <td class="bs"><span class="val">8,105</span><span class="delta neg">+1,951 ↗ weak refill</span></td>
+      </tr>
+      <tr class="aggrow"><td class="lab">FY-end position · YoY</td><td colspan="2"><span class="aval">7,537</span> <span class="anote">—</span></td><td colspan="2"><span class="aval">8,584</span> <span class="anote g">+13.9%</span></td><td colspan="2"><span class="aval">8,830</span> <span class="anote">+2.9% stall</span></td><td colspan="2"><span class="aval">8,105</span> <span class="anote neg">−8.2%</span></td></tr>
+
+      <!-- RANK 2 · OPERATING CASH FLOW -->
+      <tr class="secbar"><td colspan="9">Rank 2 · Operating cash flow (£000) <span class="nat">— flow · LEAD · 🟢↗ better than same half last year · 🔴↘ worse · ‡ absolute band ±£963k (10% of series peak) where a base is negative or near zero</span></td></tr>
+      <tr class="strip"><td class="lab">period</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td></tr>
+      <tr class="vrow">
+        <td class="lab">£000 · vs same half last year</td>
+        <td><span class="val">2,118</span><span class="delta">—</span></td>
+        <td><span class="val">744†</span><span class="delta">—</span></td>
+        <td><span class="val">1,704</span><span class="delta">−414 🟡→</span></td>
+        <td><span class="val">7,925†‡</span><span class="delta g">+7,181 🟢↗</span></td>
+        <td><span class="val">(412)‡</span><span class="delta neg">−2,116 🔴↘</span></td>
+        <td><span class="val">3,289†</span><span class="delta neg">(−58.5%) 🔴↘</span></td>
+        <td><span class="val">1,165‡</span><span class="delta g">+1,577 🟢↗</span></td>
+        <td class="bs"><span class="val">1,926†</span><span class="delta neg">(−41.4%) 🔴↘</span></td>
+      </tr>
+      <tr class="aggrow"><td class="lab">FY · YoY</td><td colspan="2"><span class="aval">2,862</span> <span class="anote">—</span></td><td colspan="2"><span class="aval">9,629</span> <span class="anote">+236%</span></td><td colspan="2"><span class="aval">2,877</span> <span class="anote neg">−70.1%</span></td><td colspan="2"><span class="aval">3,091</span> <span class="anote g">+7.4%</span></td></tr>
+
+      <!-- RANK 3 · TOTAL REVENUE -->
+      <tr class="secbar"><td colspan="9">Rank 3 · Total revenue (£000) <span class="nat">— flow · LEAD · 🟢↗ growing faster than last year · 🟡→ about the same pace · 🔴↘ shrinking or clearly slowing</span></td></tr>
+      <tr class="strip"><td class="lab">period</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td></tr>
+      <tr class="vrow">
+        <td class="lab">£000 · (YoY%)</td>
+        <td><span class="val">6,065</span><span class="delta">—</span></td>
+        <td><span class="val">6,045†</span><span class="delta">—</span></td>
+        <td><span class="val">6,993 (+15.3%)</span><span class="delta g">🟢↗</span></td>
+        <td><span class="val">12,970† (+114.6%)</span><span class="delta g">🟢↗ one-off</span></td>
+        <td><span class="val">8,542 (+22.2%)</span><span class="delta g">🟢↗</span></td>
+        <td><span class="val">9,172† <span class="neg">(−29.3%)</span></span><span class="delta neg">🔴↘ vs one-off base</span></td>
+        <td><span class="val">8,212 <span class="neg">(−3.9%)</span></span><span class="delta neg">🔴↘ clean LFL</span></td>
+        <td class="bs"><span class="val">8,944† <span class="neg">(−2.5%)</span></span><span class="delta">🟡→ stabilising</span></td>
+      </tr>
+      <tr class="aggrow"><td class="lab">FY · YoY</td><td colspan="2"><span class="aval">12,110</span> <span class="anote">—</span></td><td colspan="2"><span class="aval">19,963</span> <span class="anote g">+64.8%</span></td><td colspan="2"><span class="aval">17,714</span> <span class="anote neg">−11.3%</span></td><td colspan="2"><span class="aval">17,156</span> <span class="anote neg">−3.2%</span></td></tr>
+
+      <!-- RANK 4 · ADJ EBITDA -->
+      <tr class="secbar"><td colspan="9">Rank 4 · Adjusted EBITDA (£m) <span class="nat">— flow · CONFIRM · non-IFRS: company discloses to one decimal only, no exact figure exists — ◊ = precision floor, score cannot be asserted inside rounding</span></td></tr>
+      <tr class="strip"><td class="lab">period</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td></tr>
+      <tr class="vrow">
+        <td class="lab">£m · (YoY%)</td>
+        <td><span class="val">1.0</span><span class="delta">—</span></td>
+        <td><span class="val">0.3†◊</span><span class="delta">—</span></td>
+        <td><span class="val">1.5 (+50.0%)</span><span class="delta g">🟢↗</span></td>
+        <td><span class="val">4.7†‡</span><span class="delta g">+4.4 🟢↗</span></td>
+        <td><span class="val">1.8 (+20.0%)</span><span class="delta g">🟢↗</span></td>
+        <td><span class="val">2.7† <span class="neg">(−42.6%)</span></span><span class="delta neg">🔴↘</span></td>
+        <td><span class="val">1.3 <span class="neg">(−27.8%)</span></span><span class="delta neg">🔴↘</span></td>
+        <td class="bs"><span class="val">2.7†◊ (0.0%)</span><span class="delta">🟡→ within rounding</span></td>
+      </tr>
+      <tr class="aggrow"><td class="lab">FY · YoY</td><td colspan="2"><span class="aval">1.3</span> <span class="anote">—</span></td><td colspan="2"><span class="aval">6.2</span> <span class="anote g">+377%</span></td><td colspan="2"><span class="aval">4.5</span> <span class="anote neg">−27.4%</span></td><td colspan="2"><span class="aval">4.0</span> <span class="anote neg">−11.1%</span></td></tr>
+
+      <!-- RANK 5 · PBT -->
+      <tr class="secbar"><td colspan="9">Rank 5 · PBT (£000) <span class="nat">— flow · CONFIRM · statutory profit before tax, exact from the income statement; ‡ absolute band where the base is near zero</span></td></tr>
+      <tr class="strip"><td class="lab">period</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td></tr>
+      <tr class="vrow">
+        <td class="lab">£000 · (YoY%)</td>
+        <td><span class="val">617</span><span class="delta">—</span></td>
+        <td><span class="val">9†‡</span><span class="delta">—</span></td>
+        <td><span class="val">1,097 (+77.8%)</span><span class="delta g">🟢↗</span></td>
+        <td><span class="val">4,498†‡</span><span class="delta g">+4,489 🟢↗</span></td>
+        <td><span class="val">1,665 (+51.8%)</span><span class="delta g">🟢↗</span></td>
+        <td><span class="val">2,928† <span class="neg">(−34.9%)</span></span><span class="delta neg">🔴↘</span></td>
+        <td><span class="val">1,259 <span class="neg">(−24.4%)</span></span><span class="delta neg">🔴↘</span></td>
+        <td class="bs"><span class="val">2,467† <span class="neg">(−15.7%)</span></span><span class="delta neg">🔴↘</span></td>
+      </tr>
+      <tr class="aggrow"><td class="lab">FY · YoY</td><td colspan="2"><span class="aval">626</span> <span class="anote">—</span></td><td colspan="2"><span class="aval">5,595</span> <span class="anote g">+794%</span></td><td colspan="2"><span class="aval">4,593</span> <span class="anote neg">−17.9%</span></td><td colspan="2"><span class="aval">3,726</span> <span class="anote neg">−18.9%</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p class="small" style="margin-top:16px;"><b>Revenue by type (FY results RNS, £m)</b> — the decomposition behind the aggregate. Licence is the lumpy line that drives the P&L on a fixed cost base.</p>
+  <table style="max-width:620px;">
+    <thead><tr><th style="text-align:left;">Revenue type</th><th>FY24</th><th>FY25</th><th>FY26</th><th>FY26 Δ</th></tr></thead>
+    <tbody>
+      <tr><td style="text-align:left;">Software licences</td><td>7.7</td><td>2.5</td><td>3.2</td><td class="g">+29% ↗</td></tr>
+      <tr><td style="text-align:left;">Professional services</td><td>3.6</td><td>5.0</td><td>3.3</td><td class="r">−34% ↘</td></tr>
+      <tr><td style="text-align:left;">Support &amp; maintenance (recurring)</td><td>8.7</td><td>10.2</td><td>10.6</td><td class="g">+4% ↗</td></tr>
+    </tbody>
+  </table>
+  <p class="small" style="margin-top:6px;"><b>Green shoot:</b> licences grew +29% — the first rise since the FY24 collapse (FY24 held a one-off large perpetual order), and the $3.6m post-year-end US Federal upsell lands in FY27 licence. <b>Caution:</b> licences still &lt;half FY24; services rolled off a completed implementation; recurring does the defensive work but can't drive upside alone.</p>
+  <details class="d1"><summary>§2 workings — notes, revenue decomposition, turn methodology &amp; basis</summary><div class="d1body">
+  <details class="d1"><summary>🔲 Card strip — wall preview &amp; index entry</summary><div class="d1body">
+    <table style="max-width:520px;border-collapse:collapse;">
+      <tr><td style="border:none;font-size:11px;color:var(--mut);padding:2px 6px 2px 0;"></td><td style="border:none;font-size:9.5px;color:var(--mut);text-align:center;padding:2px;">--</td><td style="border:none;font-size:9.5px;color:var(--mut);text-align:center;padding:2px;">H1 23</td><td style="border:none;font-size:9.5px;color:var(--mut);text-align:center;padding:2px;">H2 23</td><td style="border:none;font-size:9.5px;color:var(--mut);text-align:center;padding:2px;">H1 24</td><td style="border:none;font-size:9.5px;color:var(--mut);text-align:center;padding:2px;">H2 24</td><td style="border:none;font-size:9.5px;color:var(--mut);text-align:center;padding:2px;">H1 25</td><td style="border:none;font-size:9.5px;color:var(--mut);text-align:center;padding:2px;">H2 25</td><td style="border:none;font-size:9.5px;color:var(--mut);text-align:center;padding:2px;">H1 26</td><td style="border:none;font-size:9.5px;color:var(--mut);text-align:center;padding:2px;">H2 26</td></tr><tr><td style="border:none;font-size:11px;font-weight:700;padding:2px 6px 2px 0;">R1</td><td style="background:#e8e6e0;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#e8e6e0;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#21d05e;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#ff3b30;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#21d05e;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#ff3b30;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#21d05e;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#ff3b30;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#21d05e;border:2px solid #16150f;width:26px;height:18px;"></td></tr><tr><td style="border:none;font-size:11px;font-weight:700;padding:2px 6px 2px 0;">R2</td><td style="background:#e8e6e0;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#e8e6e0;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#e8e6e0;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#ffb020;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#21d05e;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#ff3b30;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#ff3b30;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#21d05e;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#ff3b30;border:2px solid #16150f;width:26px;height:18px;"></td></tr><tr><td style="border:none;font-size:11px;font-weight:700;padding:2px 6px 2px 0;">R3</td><td style="background:#e8e6e0;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#e8e6e0;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#e8e6e0;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#21d05e;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#21d05e;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#21d05e;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#ff3b30;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#ff3b30;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#ffb020;border:2px solid #16150f;width:26px;height:18px;"></td></tr><tr><td style="border:none;font-size:11px;font-weight:700;padding:2px 6px 2px 0;">R4</td><td style="background:#e8e6e0;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#e8e6e0;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#e8e6e0;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#21d05e;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#21d05e;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#21d05e;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#ff3b30;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#ff3b30;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#ffb020;border:2px solid #16150f;width:26px;height:18px;"></td></tr><tr><td style="border:none;font-size:11px;font-weight:700;padding:2px 6px 2px 0;">R5</td><td style="background:#e8e6e0;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#e8e6e0;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#e8e6e0;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#21d05e;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#21d05e;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#21d05e;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#ff3b30;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#ff3b30;border:1px solid #fff;width:26px;height:18px;"></td><td style="background:#ff3b30;border:2px solid #16150f;width:26px;height:18px;"></td></tr>
+    </table>
+    <p class="small" style="margin-top:8px;">Nine cells, rightmost = Buy/Sell (H2 FY26). Leftmost padded — the record starts at H1 FY23. Encoding: g 🟢↗ · a 🟡→ · r 🔴↘ · x ❌ withheld · – no score in that slot.</p>
+    <pre style="background:#f7f6f2;border:1px solid var(--line);border-radius:8px;padding:10px;font-size:11px;overflow-x:auto;white-space:pre-wrap;">{
+  "ticker": "IGP",
+  "company": "Intercede Group plc",
+  "kind": "ticker",
+  "direction": "watch",
+  "headline": "Third down year delivered against a bar cut in March — but deferred revenue, the metric that led both turns, is still falling.",
+  "trigger": "Numbers & guide fired red (Mar-26 cut); Disclosure fired green (re-quantification from Jun-25) — opposite directions, no convergence.",
+  "alert": false,
+  "fired": 2,
+  "fired_of": 3,
+  "lights": "r-g",
+  "rns_type": "FY Final Results",
+  "rns_date": "2026-06-23",
+  "build_date": "2026-08-09",
+  "spec_version": "v5.1",
+  "next_test": "H1 FY27 results (Nov-26): deferred revenue back above £6.15m and a positive operating cash half would confirm the trough.",
+  "url": "IGP_drift_tracker.html",
+  "grid": {
+    "labels": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5"
+    ],
+    "periods": [
+      "--",
+      "H1 23",
+      "H2 23",
+      "H1 24",
+      "H2 24",
+      "H1 25",
+      "H2 25",
+      "H1 26",
+      "H2 26"
+    ],
+    "rows": [
+      "--grgrgrg",
+      "---agrrgr",
+      "---gggrra",
+      "---gggrra",
+      "---gggrrr"
+    ],
+    "note": "Ranks 1-5 at half grain, H1/H2† FY23-FY26; leftmost cell padded (record starts H1 FY23)."
+  }
+}</pre>
+  </div></details>
+
+    <details class="d2"><summary>Notes — Ranks 1–5</summary><div class="d2body">
+      <b>Rank 1 · Recurring revenue.</b> One basis: recurring revenue £, with the company's own % series 44% (FY24) → 60% (FY25) → 66% (FY26). FY25 also quoted as ARR run-rate £10.6m and, at the Apr-25 TU, recurring S&amp;M+subscription £10.2m/58% (recognised) — same trajectory, slightly different definitions; basis footnote, not a break. Rising every year is the counter-signal to the revenue turn.
+      <b>Rank 2 · Total revenue.</b> The clean turn is H1 FY26 −3.9% — the first like-for-like declining half, with no one-off in the H1 FY25 comparator. The FY25 (−11.5%) and FY26 (−2.8%) headline declines are inflated by the FY24 base, which carried a $6.6m perpetual licence flagged "exceptional / one-off". Derived H2: FY23 £6.0m · FY24 £13.0m (one-off-loaded) · FY25 £9.16m (−29.5% vs one-off base) · <b>FY26 £8.99m (−1.9%, H2 stabilised)</b>.
+      <b>Rank 3 · Adjusted EBITDA.</b> Operational gearing amplifies the revenue turn both ways — +377% into the FY24 peak, then three down prints. FY26 £4.0m modestly beat the March cut range (implied £3.8–3.9m).
+      <b>Rank 4 · PBT.</b> Tracks EBITDA; the FY24 £5.6m peak is the one-off high-water mark. Wedge to statutory is small and stable (D&amp;A + share-based ≈ £0.3m), non-widening.
+      <b>Rank 5 · Gross cash.</b> Saw-tooths within each year (H1 pays out, FY refills) but the FY-to-FY trend is straight up: £8.3m → £17.2m → £18.7m → £20.0m, debt-free throughout. H1 FY25 operating cash flow was −£0.4m for one half; reverted to +£1.2m (H1 FY26) and +£3.1m (FY26).
+    </div></details>
+    <details class="d2"><summary>Turn methodology &amp; restatement basis</summary><div class="d2body"><p class="lead" style="margin-top:14px;"><b>Turn methodology.</b> Every Δ and arrow computed in one script, comparison basis hard-coded per metric type: <b>snapshot</b> metrics (recurring revenue, gross cash) compare position-to-position at their own disclosure grain; <b>flow</b> metrics (revenue, EBITDA, PBT) compare like-period-to-like-period only (H1-vs-H1, FY-vs-FY, never H1-vs-FY). Rate trigger banded at ±2.0pp on the H-grain: <span class="g">🟢↗</span> above +2 / <span class="a">🟡→</span> within band / <span class="r">🔴↘</span> below −2. First period in a series → —. No standalone quarters exist (H-reporter), so the hard gate is satisfied by H2 = FY − H1 derivations, all cross-checked.</p>
+      <p><b>Units, per rank:</b> R1 deferred revenue £000 (total = current + non-current, the company's headline basis) · R2 operating cash flow £000 (exact, cash-flow statement) · R3 total revenue £000 (exact, income statement) · R4 adjusted EBITDA £m one decimal (non-IFRS — no exact figure is disclosed anywhere; availability-tested) · R5 PBT £000 (exact, income statement).</p>
+      <p><b>Markers:</b> † derived (H2† = FY − H1, every derivation same-basis, same-precision, cross-checked) · ‡ absolute-band score where the base is negative or near zero (R2 band ±£963k = 10% of the 9,629 peak; R5 FY23 H2† = £9k) · ◊ precision floor — R4 only, where the rounding (±£0.05m) is wider than the ±2.0pp band once differenced twice, so the FY26 H2† "0.0%" cannot be asserted and is scored amber.</p>
+      <p><b>Basis log (applied at the R1–R2 and R3–R5 audits):</b> R1 rebased from current-only to total deferred revenue — signal unchanged (+13.9% → +2.9% stall → −8.2%). R2, R3 and R5 rebuilt from exact statement £000 after an availability-test failure on narrative-rounded figures; five rendered percentages corrected (R3 H1 FY24 +14.8→+15.3%, R3 H2† FY26 −1.9→−2.5%, R5 H2† FY25 −35.6→−34.9%, R5 H2† FY26 −17.2→−15.7%, R5 FY26 −19.6→−18.9%). Company-stated-rate reconciliation: H1 FY24 "15%" now matches at +15.3%. No fired condition, trigger count or direction call changed.</p>
+    </div></details>
+  </div></details>
+
+  <!-- ================= §2.0 ================= -->
+  <h2 class="sec">§2.0 · Most-recent-RNS current-state read — FY26 Final Results (23 Jun 2026)</h2>
+  <div class="flex20">
+  <div class="brg">
+    <div class="dkbar"><span class="emj">🍺</span><span>IDIOT'S GUIDE TO THE EBITDA BRIDGE — why profit went down (£4.5m → £4.0m)</span></div>
+    <table>
+      <tr class="rd"><td class="dl">🚦 The queue at the till</td><td class="cn" style="color:var(--red);">−£0.5m</td><td>Buyers didn't stop wanting it — they stopped signing. Big American government orders sat in procurement while the year ran out. Every pound of that lands straight on profit, because the software costs almost nothing to copy.</td></tr>
+      <tr class="am"><td class="dl">📦 Somebody else's kit</td><td class="cn" style="color:var(--amb);">−£0.2m</td><td>Some deals came with hardware bought in and passed on at little or no markup. £0.7m of it this year against £0.5m last. More sales, thinner slice.</td></tr>
+      <tr class="rd"><td class="dl">💸 Wages went up anyway</td><td class="cn" style="color:var(--red);">−£0.1m</td><td>Costs rose 0.7% — pay rises and bonuses for a headcount that barely moved (111 people, was 113). Small, but it lands in a year when the money coming in shrank.</td></tr>
+      <tr class="gn"><td class="dl">🔑 Keys still selling</td><td class="cn" style="color:var(--grn);">+£0.3m</td><td>Licence sales actually grew 29% to £3.2m, and the renewal book ticked up to £10.6m. The part that repeats every year did its job while the lumpy part misfired.</td></tr>
+    </table>
+    <div class="cap"><b>So in one sentence:</b> orders were postponed, not cancelled — and on a cost base that barely flexes, a delayed signature is a missing profit. <b>Profit goes back up when:</b> the parked American orders sign, licence revenue climbs above £3.2m, and the renewal book starts growing again instead of shrinking.</div>
+  </div>
+  <div class="csbar amb">
+    <div class="dkbar"><span class="emj">🌡️</span><span>CURRENT STATE — the read right now</span></div>
+    <div class="csbody">
+      <p class="lead">🟡 STABLE–WATCH — stabilising off a down leg, but the earliest leads have not confirmed.</p>
+      <ul>
+        <li>FY26 revenue £17,156k, −3.2%: a third down year, but H2† −2.5% vs H1 −3.9%.</li>
+        <li>Guide met at the reset bar, not re-cut: £17.2m vs £17.0m guided in March.</li>
+        <li>Rank 1 deferred revenue £8.11m, −8.2% — the 9-month lead is still red.</li>
+        <li>Rank 2 H2† operating cash £1,926k, −41.4% — second-half cash generation fell again.</li>
+        <li>Licence revenue +29% to £3.2m: first rise since the FY24 collapse.</li>
+        <li>Cash £20.0m, debt-free, up a third straight year — the counter-signal holds.</li>
+        <li>Backward-loaded flag: no — H2 was the stronger half, aggregate is back-loaded-recovering.</li>
+        <li>⚠️ $3.6m post-year-end upsell is a perpetual licence — helps FY27 revenue, not the ARR base.</li>
+        <li>⚠️ US concentration rose to 82% of revenue; the diversification narrative went backwards.</li>
+        <li>⚠️ FY27 £21m implies +22% growth against a book that has fallen three years.</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  <details class="d1"><summary>§2.0 workings — the four checks, broker yardstick &amp; balance-sheet sweep</summary><div class="d1body">
+    <details class="d2"><summary>The four checks — workings behind the read</summary><div class="d2body"><div class="grid2" style="max-width:1100px;">
+    <div class="sc"><div class="k">1 · Sequential (FY26 vs H1 FY26)</div><div class="v">Derived H2 £8.99m vs H1 £8.21m — up half-on-half (normal seasonality). Vs H2 FY25 (£9.16m): −1.9%. Turn <b>decelerating / stabilising</b>, not deepening.</div></div>
+    <div class="sc"><div class="k">2 · Same-type vs last year (FY26 R vs FY25 R)</div><div class="v">Revenue −2.8%, Adj EBITDA −11.1%, PBT −19.6% — all 🔴, third down profit year, but against a FY24 one-off-distorted base and an already-cut FY26 bar.</div></div>
+    <div class="sc"><div class="k">3 · Derived sub-period (H2 FY26)</div><div class="v">£8.99m, −1.9% YoY (amber) — far shallower than H1's −3.9%, corroborating "order intake improved in H2". Watch flag until H1 FY27 reports.</div></div>
+    <div class="sc"><div class="k">4 · Guidance vs prior guide</div><div class="v">Landed <b>modestly ahead of the March cut</b>: revenue £17.2m (top of −8/−9% range), Adj EBITDA £4.0m (beat implied £3.8–3.9m), cash £20.0m (top of +3/+5%). No fresh cut; FY27 £21m reaffirmed.</div></div>
+  </div></div></details>
+    <details class="d2">
+    <summary>Broker track — Cavendish (C-series yardstick, sizes the guide moves; never scored)</summary>
+    <div class="d2body">
+      Cavendish is the house broker (Corp/NOMAD) — a single-house "consensus" is management guidance laundered through the house note, so its RAISE/CUT sizes a move but fires nothing. <b>FY26E revenue trail:</b> £18.7m (Nov-25) → cut to £17.0m (Mar-26, −9%) → £17.2m (Apr-26) → £17.2m actual (Jun-26). <b>FY26E adj EBITDA:</b> £4.6m → £3.8m (Mar-26, −18%) → £4.0m actual (beat the cut). <b>FY26E adj EPS:</b> raised 5.5→5.9p (Nov-25), cut 5.9→4.9p (Mar-26), 5.1p actual. <b>Target price:</b> held 225p through Nov-25, <b>cut 225→180p at the Mar-26 profit warning</b>, then reiterated 180p at every subsequent note (Apr, Apr, May, Jun) even as the shares fell to 78p then recovered to 120p. The TP cut coincides with — does not lead — the company's own Mar-26 guide cut; the broker followed the RNS. <b>Jun-26 finals: the EPS "upgrade" (FY27E 5.7→6.1p, FY28E 7.2→7.6p) is NOT a company guide raise and was not in the RNS</b> — it is a Cavendish model change, explicitly "lifted by an increase in interest receivable" on the growing cash pile, with FY27/28 revenue, EBIT and EBITDA held flat. It fires nothing and is not a green-shoot G event; the company's finals reiterated FY27/28 only qualitatively. Post-warning the house stayed BUY throughout, so its 180p reiteration carries the discount a house-broker record earns.
+    </div>
+  </details>
+    <details class="d2"><summary>Balance-sheet sweep</summary><div class="d2body"><p>Clean. Net cash £20.0m at 31 Mar 2026 (FY25: £18.7m), debt-free throughout the record; no Tier-1 condition. Going-concern wording is boilerplate; no covenant, material-uncertainty or key-audit-matter hits. Wedge check: adjusted-to-statutory difference small and stable (≈£0.3–0.5m of D&amp;A and share-based charges), non-widening. Tier-2 watch: a £1.8m cash-settled share-based payment outflow in FY26 and deferred revenue falling two years (£8.8m → £8.1m) — one Tier-2 item plus a disclosure-quality flag, below the two-or-more threshold. Green-shoot mirror: cash rose again despite the profit decline. Sweep sits outside the 2-of-3 count.</p></div></details>
+  </div></details>
+
+  <!-- ================= §3 TEXT + G ================= -->
+  <h2 class="sec">§3 · Text + G — Language Track</h2>
+  <p class="small">Every print in the window, reiterations included — the unbroken run calibrates the company's voice. Scored at the profit/expectations line, verbatim, against the company's own prior guide. <b>Context</b> is paraphrase, never quotation: the anchor used or absent, the guide numbers, what the outturn later showed. Rows within 18 months of the Buy/Sell RNS show on load; earlier rows sit behind the expander and are fully scored. Click a Doc cell to highlight all rows of that type.</p>
+  <table id="text3">
+    <thead><tr><th style="width:58px;">Date</th><th style="width:66px;">Doc</th><th style="width:82px;">G</th><th style="width:34%;">Verbatim forward-guidance phrase</th><th>Context</th><th style="width:52px;">Score</th></tr></thead>
+    <tbody>
+      <tr class="expander" id="tx-exp"><td colspan="6">▸ Show 13 earlier prints — Oct-22 to Apr-25</td></tr>
+      <tr class="oldrow" data-rowtype="H1TU"><td>Oct-22</td><td class="doc"><span class="yr">FY23</span><span class="pt">H1 TU</span></td><td class="gcell">flat</td><td class="qt">"in line with management expectations"</td><td class="ctx">H1 TU; anchor = management, not market — the house habit at October TUs. No numbers given. FY23 later delivered ahead.</td><td class="center">⚪</td></tr>
+      <tr class="oldrow" data-rowtype="H1R"><td>Nov-22</td><td class="doc"><span class="yr">FY23</span><span class="pt">H1 R</span></td><td class="gcell">flat</td><td class="qt">"outlook for the second half of FY23 continues to remain in line with management's expectations"</td><td class="ctx">Interim results. Reiteration; H2-weighting implicit but not new. Deferred revenue already refilling (£4.35m).</td><td class="center">⚪</td></tr>
+      <tr class="changed oldrow" data-rowtype="FYTU"><td>Jan-23</td><td class="doc"><span class="yr">FY23</span><span class="pt">TU</span></td><td class="gcell"><span class="g">🟢 RAISE</span></td><td class="qt">"revenue now expected to be approximately 5-8% ahead of market forecasts… results materially ahead"</td><td class="ctx">Unscheduled raise TU. First numeric anchor of the cycle; switches to <i>market</i> forecasts. Outturn FY23 £12.11m, met.</td><td class="center">🟢🟢🟢</td></tr>
+      <tr class="oldrow" data-rowtype="FYTU"><td>Apr-23</td><td class="doc"><span class="yr">FY23</span><span class="pt">YE-TU</span></td><td class="gcell">flat</td><td class="qt">"ahead of market forecasts" (reconfirm)</td><td class="ctx">Year-end TU. Holds the January raise unchanged; no new figure. Ditto of the prior guide.</td><td class="center">🟢🟢</td></tr>
+      <tr class="changed oldrow" data-rowtype="FYR"><td>Jun-23</td><td class="doc"><span class="yr">FY23</span><span class="pt">R</span></td><td class="gcell">—</td><td class="qt">"good visibility on the pipeline… focus is on 'growth'"</td><td class="ctx">FY23 results. No numeric forward guide — pipeline language only. Deferred rev +40% and op cash £2.9m both printed here: the up-turn LEADs.</td><td class="center">⚪</td></tr>
+      <tr class="oldrow" data-rowtype="H1TU"><td>Oct-23</td><td class="doc"><span class="yr">FY24</span><span class="pt">H1 TU</span></td><td class="gcell">flat</td><td class="qt">"revenues grew, across all segments… in line with management expectations"</td><td class="ctx">H1 TU. Management anchor again (habit, not signal). No raise language in this document — the raise came three weeks later.</td><td class="center">⚪</td></tr>
+      <tr class="changed oldrow" data-rowtype="H1R"><td>Nov-23</td><td class="doc"><span class="yr">FY24</span><span class="pt">H1 R</span></td><td class="gcell"><span class="g">🟢 RAISE</span></td><td class="qt">"results for the year ending 31 March 2024 are now expected to be ahead of previous market expectations"</td><td class="ctx">Interim results. The genuine raise event; anchored to market. Followed by further raises Dec-23/Jan-24 (TUs not in project set).</td><td class="center">🟢🟢</td></tr>
+      <tr class="oldrow" data-rowtype="FYTU"><td>Mar-24</td><td class="doc"><span class="yr">FY24</span><span class="pt">Orders-TU</span></td><td class="gcell"><span class="g">🟢 RAISE</span></td><td class="qt">"ahead of market expectations for FY24… our third raise in so many months"</td><td class="ctx">Contract-orders TU carrying guidance. Company counts three raises in the cycle. FY24 £19.96m delivered — all met.</td><td class="center">🟢🟢🟢</td></tr>
+      <tr class="oldrow" data-rowtype="FYTU"><td>Apr-24</td><td class="doc"><span class="yr">FY24</span><span class="pt">YE-TU</span></td><td class="gcell">flat</td><td class="qt">"revenues… approximately £20m… improved profitability" (reconfirm)</td><td class="ctx">Year-end TU. First hard revenue figure for FY24; outturn 19,963 — on the nose.</td><td class="center">🟢🟢</td></tr>
+      <tr class="oldrow" data-rowtype="FYR"><td>Jun-24</td><td class="doc"><span class="yr">FY24</span><span class="pt">R</span></td><td class="gcell">—</td><td class="qt">"good visibility on the pipeline… focus is on growth"</td><td class="ctx">FY24 results. No numeric guide. The $6.6m one-off perpetual licence is flagged exceptional but the base is not reset for FY25 — the omission that made FY25 look worse than it was.</td><td class="center">⚪</td></tr>
+      <tr class="changed oldrow" data-rowtype="H1TU"><td>Oct-24</td><td class="doc"><span class="yr">FY25</span><span class="pt">H1 TU</span></td><td class="gcell">flat</td><td class="qt">"in line with management expectations"</td><td class="ctx">H1 TU. Management anchor — third consecutive October using it; calibration, not a first flag.</td><td class="center">⚪</td></tr>
+      <tr class="oldrow" data-rowtype="H1R"><td>Nov-24</td><td class="doc"><span class="yr">FY25</span><span class="pt">H1 R</span></td><td class="gcell">flat</td><td class="qt">"on track to meet market expectations for the year ending 31 March 2025"</td><td class="ctx">Interim results. Back to market anchor. Op cash went negative (−£412k) in this half — the earliest LEAD amber, unremarked in the narrative.</td><td class="center">⚪</td></tr>
+      <tr class="oldrow" data-rowtype="FYTU"><td>Apr-25</td><td class="doc"><span class="yr">FY25</span><span class="pt">YE-TU</span></td><td class="gcell">flat</td><td class="qt">"£17.7m… 11.4% lower than FY24, the previous year benefiting from an exceptional… order"</td><td class="ctx">Year-end TU. Decline pre-explained by the one-off base — a legitimate bounded-event discount, stated by the company itself.</td><td class="center">⚪</td></tr>
+      <tr data-rowtype="FYR"><td>Jun-25</td><td class="doc"><span class="yr">FY25</span><span class="pt">R</span></td><td class="gcell">flat</td><td class="qt">"Current trading is in line with Board expectations"</td><td class="ctx">FY25 results. <b>Board</b> replaces market — scored negative by lexicon, but note both LEADs turned in this same document: deferred growth stalled to +2.9% and op cash fell 70%.</td><td class="center">⚪</td></tr>
+      <tr data-rowtype="H1TU"><td>Oct-25</td><td class="doc"><span class="yr">FY26</span><span class="pt">H1 TU</span></td><td class="gcell">flat</td><td class="qt">"full-year financial performance will be in line with current market expectations¹"</td><td class="ctx">¹Footnote anchors £18.7m revenue / £4.6m adj EBITDA. Explicit consensus anchor → ⚪ by lexicon. But H1 revenue had already turned −3.9%: the word held while the number moved. *operator-override available.</td><td class="center">⚪*</td></tr>
+      <tr data-rowtype="H1R"><td>Nov-25</td><td class="doc"><span class="yr">FY26</span><span class="pt">H1 R</span></td><td class="gcell">flat</td><td class="qt">"positioning us… to meet full-year financial expectations in line with current market consensus²"</td><td class="ctx">²£18.7m / £4.6m adj PBT. <i>Positioning to meet</i> is process language on a back-end-loaded year — accurate rather than evasive, but the guide it defends was missed by ~9% at the profit line.</td><td class="center">⚪*</td></tr>
+      <tr class="changed" data-rowtype="FYTU"><td>Mar-26</td><td class="doc"><span class="yr">FY26</span><span class="pt">YE-TU</span></td><td class="gcell"><span class="r">🔴 CUT</span></td><td class="qt">"full-year revenue is anticipated to be approximately 8-9% below current market expectations… adjusted EBITDA… approximately 15-18% below"</td><td class="ctx">Profit warning. Cause given: US Federal procurement disruption plus Middle East uncertainty. FY27/28 explicitly left unchanged. The unambiguous language event of the record.</td><td class="center">🔴🔴🔴</td></tr>
+      <tr data-rowtype="FYTU"><td>Apr-26</td><td class="doc"><span class="yr">FY26</span><span class="pt">YE-TU</span></td><td class="gcell">flat</td><td class="qt">"revenues for FY26 of approximately £17.2m… in line with expectations" (vs cut guide)</td><td class="ctx">Year-end TU, measured against the reset bar. Also confirms 66% recurring (£11.4m) and £20.0m cash — the counter-signals.</td><td class="center">🔴</td></tr>
+      <tr class="changed" data-rowtype="FYR"><td>⭐ Jun-26</td><td class="doc"><span class="yr">FY26</span><span class="pt">R (B/S)</span></td><td class="gcell">flat</td><td class="qt">"Trading year to date has been in line with the Board's expectations…… the Board is confident that the Group is well positioned"</td><td class="ctx">⭐ Buy/Sell. Board anchor again. FY27 guide qualitative only. Delivered £17,156k / £3,726k PBT — modestly ahead of the March cut.</td><td class="center">⚪</td></tr>
+    </tbody>
+  </table>
+
+  <details class="d1"><summary>§3 workings — guidance passages, guide-met trail &amp; calibration notes</summary><div class="d1body">
+    <details class="d2"><summary>Guide met? — guidance-accuracy trail (resolves at results rows)</summary><div class="d2body">
+      <p>Held here as background rather than a table column: each guide measured against the <b>final delivered actual</b>, never the next guide. Interim/TU rows are unresolved until their results row.</p>
+      <p><b>FY23 R (Jun-23)</b> — Jan "5–8% ahead": met ✅.<br>
+      <b>FY24 R (Jun-24)</b> — Nov "ahead": met ✅ · Apr £20m: rev 0% ✅ (19,963).<br>
+      <b>FY25 R (Jun-25)</b> — Nov "on track": met ✅ · Apr £17.7m: rev 0% ✅ (17,714).<br>
+      <b>FY26 R (Jun-26)</b> — Oct/Nov £18.7m / £4.6m: <span class="r">rev −8% / PBT −9% ❌</span> · Mar £17.0m / £3.8m: <span class="g">rev +1% / EBITDA +5% ✅</span> · Apr £17.2m: <span class="g">rev 0% ✅</span>.</p>
+      <p><b>Credibility read:</b> one genuine ~9% miss on the original FY26 guide, then a cut they beat — mild sandbagging at the reset, not serial over-promising. FY23–FY25 trails are clean. The language lagged the miss: "in line / positioning to meet" held at Oct/Nov while the number had already turned.</p>
+    </div></details>
+    <details class="d2"><summary>Guidance passages — fuller verbatim, trailing 12 months</summary><div class="d2body">
+      <p><b>Oct-25 · H1 FY26 TU:</b> "full-year financial performance will be in line with current market expectations¹" — footnoted ¹ to £18.7m revenue / £4.6m adjusted EBITDA. No H2-weighting caveat appears anywhere in the document. <span style="color:var(--mut);font-style:italic;">(short entry retained; superseded three weeks later by the fuller interim statement below)</span></p>
+      <p><b>Nov-25 · H1 FY26 R, CEO statement:</b> "The Group has delivered resilient performance, remaining firmly aligned with its strategic objectives of diversifying revenue streams, profitability, and generating strong cash flows despite the unusual market delays experienced this period… As we enter the second half of FY26, we do so with a robust, geographically diversified pipeline, positioning us, we believe, to meet full-year financial expectations in line with current market consensus²." Footnote ²: "the Board understands market expectations for FY26 to be revenues of £18.7m and adjusted pre-tax profits of £4.6m." <span style="color:var(--mut);font-style:italic;">Note "we believe" inside the positioning clause, and the anchor basis shifting to PBT from Oct's EBITDA.</span></p>
+      <p><b>Mar-26 · FY26 YE-TU:</b> "Whilst the Group's ARR momentum is encouraging, full-year revenue is anticipated to be approximately 8-9% below current market expectations*. This reflects procurement delays, particularly in the United States, and customer purchasing deferrals attributable to heightened geopolitical uncertainty, including the ongoing Middle East conflict. Critically, these opportunities are delayed, not lost… The revenue shortfall flows through to adjusted EBITDA, which is expected to be approximately 15-18% below current market expectations*… cash balances at year-end expected approximately 3-5% ahead… Intercede reaffirms its FY27 revenue target of £21 million, reflecting management's confidence that the FY26 revenue delays represent timing shifts rather than fundamental demand weakness."</p>
+      <p><b>Apr-26 · FY26 YE-TU:</b> "Subject to completion of the year-end audit, the Group delivered revenues for FY26 of approximately £17.2m (2025: £17.7m), representing a decrease of 2.8% year-on-year. On a constant currency basis, Group revenues declined by 0.5%, with subscription revenue increasing by c17.6% and now totalling £2.0m… Recurring revenues from support &amp; maintenance, and subscriptions amounted to approximately £11.4m, representing c66% of total revenues… As at 31 March 2026, the Group held gross cash balances of £20.0m (2025: £18.7m). The Group continues to maintain a debt-free balance sheet."</p>
+      <p><b>Jun-26 · FY26 R (⭐ B/S), Outlook:</b> "Procurement delays and extended customer decision-making cycles affected revenue timing at the end of the financial year; however, underlying demand for the Group's solutions remained strong, with growing presales activity combined with increased deployment activity as customer procurement cycles progress. As the Group enters FY27, it does so from a position of financial strength, with a robust balance sheet, no debt and a resilient pipeline. Trading year to date has been in line with the Board's expectations… the Board is confident that the Group is well positioned to convert these opportunities and deliver sustainable long-term value for shareholders." <span style="color:var(--mut);font-style:italic;">Editorial: no numeric FY27 guide appears anywhere in the RNS — the £21m target lives in the Mar-26 TU only.</span></p>
+    </div></details>
+    <details class="d2"><summary>Notes — calibration</summary><div class="d2body">
+      <p>Intercede was a serial RAISE-then-deliver company FY23–FY24 (raises Nov-23 → Mar-24, all met — RAISEs earn credit, not discount; the Dec-23/Jan-24/Jan-25/Mar-25 interim raise TUs referenced in later documents are not in the project set). The Oct-25 / Nov-25 rows carry an explicit consensus anchor → per lexicon they are ⚪ reiterations, <b>not 🔴</b>; the <span class="r">*</span> marks an operator-available override, since both were held while H1 revenue had already turned −3.9%. FY23 and FY24 results carried no expectations anchor at all — Jun-25's "Board expectations" is the first anchor ever used at a results document (baseline starts that day, not a switch), so no anchor-switch score applies at this doc-type; the Board-vs-market distinction is scored only where TUs are the comparator. October "management expectations" is a three-year habit — calibration, not a first flag.</p>
+    </div></details>
+  </div></details>
+
+  <!-- ================= §4 DRIFT ================= -->
+  <h2 class="sec">§4 · Drift — Disclosure Matrix</h2>
+  <p class="small">Qualifying documents as columns, oldest → newest; the amber divider marks the start of the FY26 Buy/Sell window. Click a period-type header to highlight every column of that type. ✅ quantified · 🟡 qualitative · ❌ withheld vs cadence · — structurally outside doc-type · ⊘ expected update not issued.</p>
+  <div class="gridwrap">
+  <table id="drift">
+    <colgroup><col class="mcol"><col><col><col><col><col><col><col><col><col><col class="sep"><col><col><col><col><col></colgroup>
+    <thead>
+      <tr>
+        <th class="m">Metric</th>
+        <th class="dh" data-key="H1TU">Oct-22<span class="key">H1TU</span></th>
+        <th class="dh" data-key="H1R">Nov-22<span class="key">H1R</span></th>
+        <th class="dh" data-key="FYTU">Jan/Apr-23<span class="key">FYTU</span></th>
+        <th class="dh" data-key="FYR">Jun-23<span class="key">FYR</span></th>
+        <th class="dh" data-key="H1">Oct/Nov-23<span class="key">H1</span></th>
+        <th class="dh" data-key="FYTU">Mar/Apr-24<span class="key">FYTU</span></th>
+        <th class="dh" data-key="FYR">Jun-24<span class="key">FYR</span></th>
+        <th class="dh" data-key="H1">Oct/Nov-24<span class="key">H1</span></th>
+        <th class="dh" data-key="FYTU">Apr-25<span class="key">FYTU</span></th>
+        <th class="dh" data-key="FYR">Jun-25<span class="key">FYR</span></th>
+        <th class="dh bsx" data-key="H1TU">Oct-25<span class="key">H1TU</span></th>
+        <th class="dh bsx" data-key="H1R">Nov-25<span class="key">H1R</span></th>
+        <th class="dh bsx" data-key="FYTU">Mar-26<span class="key">FYTU</span></th>
+        <th class="dh bsx" data-key="FYTU">Apr-26<span class="key">FYTU</span></th>
+        <th class="dh bsx" data-key="FYR">Jun-26<span class="key">FYR B/S</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="m">Deferred revenue <b>(R1)</b></td><td>—</td><td>✅ 4.35</td><td>—</td><td>✅ 7.54</td><td>✅ 5.42</td><td>—</td><td>✅ 8.58</td><td>✅ 6.32</td><td>—</td><td>✅ 8.83</td><td class="sep">—</td><td>✅ 6.15</td><td>—</td><td>—</td><td>✅ 8.11</td></tr>
+      <tr><td class="m">Operating cash flow <b>(R2)</b></td><td>—</td><td>✅ 2.12</td><td>—</td><td>✅ 2.86</td><td>✅ 1.70</td><td>—</td><td>✅ 9.63</td><td>✅ (0.41)</td><td>—</td><td>✅ 2.88</td><td class="sep">—</td><td>✅ 1.17</td><td>—</td><td>—</td><td>✅ 3.09</td></tr>
+      <tr><td class="m">Recurring rev / ARR</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>❌</td><td>—</td><td>✅ 10.2/58%</td><td>✅ 10.6</td><td class="sep">🟡</td><td>🟡</td><td>🟡</td><td>✅</td><td>✅ 11.4/66%</td></tr>
+      <tr><td class="m">Total revenue</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td class="sep">✅ 8.21</td><td>✅ 8.21</td><td>🟡 (−8/9%)</td><td>✅ 17.2</td><td>✅ 17.2</td></tr>
+      <tr><td class="m">Adj EBITDA</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>🟡</td><td>✅</td><td class="sep">—</td><td>✅ 1.3</td><td>🟡 (−15/18%)</td><td>🟡</td><td>✅ 4.0</td></tr>
+      <tr><td class="m">PBT</td><td>—</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>🟡</td><td>✅</td><td>—</td><td>🟡</td><td>✅</td><td class="sep">—</td><td>✅ 1.3</td><td>—</td><td>—</td><td>✅ 3.7</td></tr>
+      <tr><td class="m">Gross cash</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td class="sep">✅ 17.8</td><td>✅ 17.8</td><td>🟡 (+3/5%)</td><td>✅ 20.0</td><td>✅ 20.0</td></tr>
+      <tr><td class="m">Subscription split</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="sep">✅ new</td><td>✅</td><td>—</td><td>✅ 2.0</td><td>✅ 2.0</td></tr>
+      <tr><td class="m">Consensus anchor</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>🟡</td><td>—</td><td class="sep">✅ 18.7/4.6</td><td>✅ 18.7/4.6</td><td>✅ 18.7/4.6/19.0</td><td>—</td><td>🟡</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <details class="d1"><summary>§4 workings — notes, Drift</summary><div class="d1body">
+    <details class="d2"><summary>Notes — Drift</summary><div class="d2body">
+      <p><b>Freshest column (Jun-26, FY26 R ⭐):</b> nothing newly withheld. Recurring quantified at £11.4m / 66%, subscription split at £2.0m, deferred and operating cash both printed in full. The rightmost column is clean.</p>
+      <p><b>Cadence finding — the leads print only at results.</b> Rank 1 (deferred revenue) and Rank 2 (operating cash flow) appear at every H1 R and FY R and at <i>no</i> trading update, because neither a balance sheet nor a cash-flow statement is published with a TU. This is structural (—), not withholding — but it is the single most useful line in this matrix: it means IGP's earliest warning can only ever arrive in <b>June or November</b>, never at the March or April year-end updates. The Mar-26 cut was the first the market heard of a deterioration the June-25 accounts had already shown.</p>
+      <p><b>The one deterioration fire:</b> recurring revenue was quantified at FY23 results, then <b>❌ withheld at FY24 results</b> (Jun-24) against that habit, unexplained — recorded as the historical Drift fire. It was re-quantified from FY25 onward and now leads the headlines, so the live state of this axis is the <b>green-shoot mirror</b>, which is what the Disclosure lamp reports.</p>
+      <p><b>Disclosure expansions:</b> group ARR first quantified Jun-25; subscription-licence split first quantified Oct-25 (baseline starts that day); constant-currency revenue first given Apr-25 and repeated since. <b>Consensus-anchor basis wobble:</b> the £4.6m anchor is labelled adjusted EBITDA at Oct-25 and Mar-26 but adjusted PBT at Nov-25 — same figure, shifting basis; single-house consensus, yardstick only.</p>
+      <p><b>Watch for the next column:</b> the £21m FY27 target appears only in the Mar-26 TU and is absent from the FY26 results RNS. If the Oct-26 H1 TU does not restate it, that is a forward number dropped against a stated habit — a Drift fire in its own right.</p>
+    </div></details>
+  </div></details>
+
+  <div class="foot">
+    Balance-sheet sweep: solvency grep clean across all results docs — going-concern boilerplate only, no material uncertainty, no covenants (debt-free). Wedge (adjusted vs statutory) modest and stable, non-widening → nothing fires. Green-shoot mirror: net cash throughout, rising £8.3m → £20.0m. No Tier-1 flag, no ⛔. · Structural note: 19 qualifying docs are shown across 15 Drift columns — four adjacent TU/pre-close pairs (Jan/Apr-23, Oct/Nov-23, Mar/Apr-24, Oct/Nov-24) are merged for width; no cell state is lost, but strict one-doc-per-column would render 19. · Open item: the 21 Apr 2026 post-year-end orders RNS (c.$3.8m incl. $3.6m US Federal perpetual upsell) is referenced in the FY26 accounts but not in the project set — informs a note, seeds no row.
+  </div>
+
+</div>
+
+<script>
+(function(){
+  // §2 grid: click a period header (H1/FY) -> highlight all columns of that type
+  var fg=document.getElementById('fg');
+  if(fg){
+    var perRow=fg.querySelector('.perhead');
+    var heads=perRow.querySelectorAll('th');
+    var activePer=null;
+    heads.forEach(function(th,ci){
+      var per=th.getAttribute('data-per');
+      if(!per)return;
+      th.addEventListener('click',function(){
+        var on=(activePer!==per);
+        // clear
+        fg.querySelectorAll('td.hlq,th.hlq').forEach(function(c){c.classList.remove('hlq');});
+        activePer=null;
+        if(on){
+          activePer=per;
+          // for each body row, highlight cells whose column index matches a header of this per
+          var colIdx=[];
+          heads.forEach(function(h,i){ if(h.getAttribute('data-per')===per) colIdx.push(i); });
+          fg.querySelectorAll('tbody tr').forEach(function(tr){
+            if(tr.querySelector('[colspan]'))return;
+            var cells=tr.children;
+            colIdx.forEach(function(i){ if(cells[i]) cells[i].classList.add('hlq'); });
+          });
+          colIdx.forEach(function(i){ if(heads[i]) heads[i].classList.add('hlq'); });
+        }
+      });
+    });
+  }
+
+  // §3 Text+G: click Doc cell -> highlight all rows of that rowtype
+  var t3=document.getElementById('text3');
+  if(t3){
+    var activeType=null;
+    t3.querySelectorAll('td.doc').forEach(function(td){
+      td.addEventListener('click',function(){
+        var tr=td.parentElement, type=tr.getAttribute('data-rowtype');
+        var on=(activeType!==type);
+        t3.querySelectorAll('tr.hlrow').forEach(function(r){r.classList.remove('hlrow');});
+        activeType=null;
+        if(on){
+          activeType=type;
+          var matches=t3.querySelectorAll('tr[data-rowtype="'+type+'"]');
+          var hiddenHit=false;
+          matches.forEach(function(r){r.classList.add('hlrow'); if(r.classList.contains('oldrow'))hiddenHit=true;});
+          if(hiddenHit && !t3.classList.contains('showall')){
+            t3.classList.add('showall');
+            var ex=document.getElementById('tx-exp');
+            if(ex) ex.firstElementChild.textContent='\u25BE Hide earlier prints';
+          }
+        }
+      });
+    });
+  }
+
+  // §4 Drift: click a period-type header -> highlight every column sharing that key (both tables)
+  function wireDrift(tableId,thClass){
+    var tb=document.getElementById(tableId);
+    if(!tb)return;
+    var active=null;
+    var ths=tb.querySelectorAll('th.'+thClass);
+    ths.forEach(function(th,idx){
+      // compute column index within its row
+      var ci=Array.prototype.indexOf.call(th.parentElement.children,th);
+      th.setAttribute('data-ci',ci);
+    });
+    ths.forEach(function(th){
+      th.addEventListener('click',function(){
+        var key=th.getAttribute('data-key');
+        var on=(active!==key);
+        tb.querySelectorAll('.hlc').forEach(function(c){c.classList.remove('hlc');});
+        active=null;
+        if(on){
+          active=key;
+          var idxs=[];
+          ths.forEach(function(h){ if(h.getAttribute('data-key')===key) idxs.push(parseInt(h.getAttribute('data-ci'))); });
+          idxs.forEach(function(i){ if(th.parentElement.children[i]) th.parentElement.children[i].classList.add('hlc'); });
+          tb.querySelectorAll('tbody tr').forEach(function(tr){
+            idxs.forEach(function(i){ if(tr.children[i]) tr.children[i].classList.add('hlc'); });
+          });
+        }
+      });
+    });
+  }
+  wireDrift('drift','dh');
+})();
+</script>
+<script>
+(function(){
+  var t=document.getElementById('text3'); if(!t) return;
+  var ex=document.getElementById('tx-exp'); if(!ex) return;
+  var nOld=13;
+  function label(open){
+    return open ? '\u25BE Hide earlier prints'
+                : '\u25B8 Show '+nOld+' earlier prints \u2014 Oct-22 to Apr-25';
+  }
+  ex.addEventListener('click',function(){
+    var on=t.classList.toggle('showall');
+    ex.firstElementChild.textContent=label(on);
+  });
+  ex.firstElementChild.textContent=label(false);
+})();
+</script>
+<script type="application/json" id="drift-entry">{
+  "ticker": "IGP",
+  "company": "Intercede Group plc",
+  "kind": "ticker",
+  "direction": "watch",
+  "headline": "Third down year delivered against a bar cut in March — but deferred revenue, the metric that led both turns, is still falling.",
+  "trigger": "Numbers & guide fired red (Mar-26 cut); Disclosure fired green (re-quantification from Jun-25) — opposite directions, no convergence.",
+  "alert": false,
+  "fired": 2,
+  "fired_of": 3,
+  "lights": "r-g",
+  "rns_type": "FY Final Results",
+  "rns_date": "2026-06-23",
+  "build_date": "2026-08-09",
+  "spec_version": "v5.1",
+  "next_test": "H1 FY27 results (Nov-26): deferred revenue back above £6.15m and a positive operating cash half would confirm the trough.",
+  "url": "IGP_drift_tracker.html",
+  "grid": {
+    "labels": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5"
+    ],
+    "periods": [
+      "--",
+      "H1 23",
+      "H2 23",
+      "H1 24",
+      "H2 24",
+      "H1 25",
+      "H2 25",
+      "H1 26",
+      "H2 26"
+    ],
+    "rows": [
+      "--grgrgrg",
+      "---agrrgr",
+      "---gggrra",
+      "---gggrra",
+      "---gggrrr"
+    ],
+    "note": "Ranks 1-5 at half grain, H1/H2† FY23-FY26; leftmost cell padded (record starts H1 FY23)."
+  }
+}</script>
+</body>
+</html>
