@@ -1805,6 +1805,53 @@
         ],
         "note": "R1 inventories · R2 cash conversion · R3 net debt before leases · R4 adjusted EBITDA · R5 adjusted EBITDA margin"
       }
+    },
+    {
+      "ticker": "MBH",
+      "company": "Michelmersh Brick Holdings PLC",
+      "kind": "ticker",
+      "direction": "down",
+      "headline": "Net cash became net debt as margin fell a fifth straight year; “in line” now means brokers’ twelve per cent growth.",
+      "trigger": "3 of 3 fired — margin down five years and net position red two halves, six consecutive negative language prints, leverage policy withheld two years",
+      "alert": true,
+      "fired": 3,
+      "fired_of": 3,
+      "lights": "rrr",
+      "tier1": true,
+      "rns_type": "AGM Statement",
+      "rns_date": "2026-05-21",
+      "build_date": "2026-08-10",
+      "spec_version": "v5.1a",
+      "next_test": "Early Sep 2026 — whether stock falls below £18.9m and whether H1 supports the £14m of full-year EBITDA that “in line” now points at.",
+      "url": "MBH.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H2 21",
+          "H1 22",
+          "H2 22",
+          "H1 23",
+          "H2 23",
+          "H1 24",
+          "H2 24",
+          "H1 25",
+          "H2 25"
+        ],
+        "rows": [
+          "rgrrrraar",
+          "rrgraarra",
+          "agarrrggr",
+          "ggaaargrr",
+          "rrgarrrag"
+        ],
+        "note": "R1 inventories · R2 adjusted EBITDA margin · R3 cash conversion · R4 net cash/(net debt) · R5 adjusted EBITDA"
+      }
     }
   ]
 }
