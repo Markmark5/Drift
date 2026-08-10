@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-09",
+  "updated": "2026-08-10",
   "tickers": [
     {
       "ticker": "STAF",
@@ -1183,14 +1183,15 @@
       "kind": "ticker",
       "direction": "watch",
       "headline": "Guide restored above consensus at $130m, and the demand side turned first — the profit fall is an import-tax bill, not a broken business.",
-      "trigger": "Hard/G fired alone and on the lagging rank: seven consecutive red turns on adjusted profit before tax plus a first gross margin red discounted to a disclosed, bounded tariff event one period old. Language fired at Mar-26 and May-26 and reversed at this RNS; the FY25 Drift withhold was answered by re-quantification at finer grain. No two conditions converge.",
+      "trigger": "Hard/G fired alone and on the lagging rank: seven consecutive red turns on adjusted profit before tax plus a first gross margin red discounted to a disclosed, bounded tariff event one period old. Language fired at Mar-26 and May-26 and reversed at this RNS; the FY25 Drift withhold was answered by re-quantification at finer grain. Disclosure fired the green-shoot mirror at this RNS on two limbs — dropped metric re-quantified at finer grain, dropped numeric guide resumed. Two conditions fired in opposite directions, so nothing converges and no alert follows.",
       "alert": false,
-      "fired": 1,
+      "fired": 2,
       "fired_of": 3,
+      "lights": "rag",
       "rns_type": "H1 Results",
       "rns_date": "2026-08-05",
       "build_date": "2026-08-05",
-      "spec_version": "v4.7",
+      "spec_version": "v5.1",
       "next_test": "FY26 results, March 2027: a second consecutive gross margin fall on the same tariff explanation would exhaust the discount and turn the read down.",
       "url": "FOUR.html",
       "grid": {
@@ -1202,15 +1203,15 @@
           "R5"
         ],
         "periods": [
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1"
+          "H1 22",
+          "H2 22",
+          "H1 23",
+          "H2 23",
+          "H1 24",
+          "H2 24",
+          "H1 25",
+          "H2 25",
+          "H1 26"
         ],
         "rows": [
           "--rrrrrxg",
