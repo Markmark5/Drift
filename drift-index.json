@@ -954,17 +954,20 @@
     {
       "ticker": "FNX",
       "company": "Fonix plc",
+      "kind": "ticker",
       "direction": "up",
-      "headline": "FY26 GP +12.7% with a beat — H2 accelerated sharply, guidance raised, and five international markets now in build. Alert fired.",
-      "trigger": "2 of 3: Hard (H2 FY26 GP Deltarate +16.0pp) + G RAISE (slightly ahead of market expectations vs stated consensus GP £20.5m / EBITDA £16.0m)",
+      "headline": "FY26 GP +12.7% with a beat — H2 accelerated sharply, guidance raised, and five international markets now in build.",
+      "trigger": "2 of 3 green-shoot: Numbers & guide (H2 FY26 GP Δrate +16.0pp and G RAISE) + Disclosure (TPV re-quantified, H1 TU cadence resumed)",
       "alert": true,
+      "fired": 2,
+      "fired_of": 3,
+      "lights": "g-g",
       "rns_type": "FY TU",
       "rns_date": "2026-07-23",
-      "build_date": "2026-07-31",
-      "spec_version": "v4.5",
-      "next_test": "FY26 Final Results 22-Sep-26: adj PBT, EPS, underlying cash FY26 — confirm re-rate or one-year bounce",
+      "build_date": "2026-08-10",
+      "spec_version": "v5.1",
+      "next_test": "FY26 Final Results 22-Sep-26 — adj PBT, EPS and underlying cash confirm the re-rate or expose a one-year bounce",
       "url": "FNX.html",
-      "kind": "ticker",
       "grid": {
         "labels": [
           "R1",
@@ -974,15 +977,15 @@
           "R5"
         ],
         "periods": [
-          "H2",
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1",
-          "H2"
+          "H2 22",
+          "H1 23",
+          "H2 23",
+          "H1 24",
+          "H2 24",
+          "H1 25",
+          "H2 25",
+          "H1 26",
+          "H2 26"
         ],
         "rows": [
           "-ggggrrag",
@@ -991,10 +994,8 @@
           "-ggggrrr-",
           "-aaaaagaa"
         ],
-        "note": "Rows = ranks 1-5 · half-year grain · newest right (Buy/Sell)"
-      },
-      "fired": 2,
-      "fired_of": 3
+        "note": "Five ledger ranks, H1/H2 sub-periods, right-anchored on the FY26 FY TU."
+      }
     },
     {
       "ticker": "SAAS",
