@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-10",
+  "updated": "2026-08-11",
   "tickers": [
     {
       "ticker": "STAF",
@@ -1093,16 +1093,17 @@
       "company": "Genuit Group plc",
       "kind": "ticker",
       "direction": "down",
-      "headline": "GEN: 4M FY26 LFL -8.7% and a lower-end floor guide fire the turn — acquisitions masking a sharp demand reversal",
-      "trigger": "G-column CUT (May-26 TU); Vitality disclosure fired (three consecutive FY withholds). 1-of-3 trigger count.",
-      "alert": false,
-      "fired": 1,
+      "headline": "All three conditions fire: LFL negative two prints running, vitality now withheld at H1 too",
+      "trigger": "Cond 1 hard (2 consecutive red on Rank 1) · Cond 2 text (-2) · Cond 3 drift (R4 withheld)",
+      "alert": true,
+      "fired": 3,
       "fired_of": 3,
-      "rns_type": "AGM TU",
-      "rns_date": "2026-05-22",
-      "build_date": "2026-08-03",
-      "spec_version": "v4.6",
-      "next_test": "H1 FY26 R, 11 August 2026 — LFL, H1 UOP vs £44.6m, Vitality disclosure",
+      "lights": "rrr",
+      "rns_type": "H1 R",
+      "rns_date": "2026-08-11",
+      "build_date": "2026-08-11",
+      "spec_version": "v5.1",
+      "next_test": "Nov-2026 trading update — does the May–June LFL recovery hold, and does vitality return",
       "grid": {
         "labels": [
           "R1",
@@ -1112,24 +1113,24 @@
           "R5"
         ],
         "periods": [
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "4M"
+          "H1 22",
+          "H2 22",
+          "H1 23",
+          "H2 23",
+          "H1 24",
+          "H2 24",
+          "H1 25",
+          "H2 25",
+          "H1 26"
         ],
         "rows": [
           "rrrrrggar",
-          "-rgrrgga-",
-          "rgaaaara-",
-          "--rxrxrx-",
-          "------r--"
+          "-rgrrggar",
+          "rgaaaaraa",
+          "--rxrxrxx",
+          "------r-g"
         ],
-        "note": "One row per ledger rank (R1 LFL, R2 UOP, R3 margin, R4 vitality, R5 cash conv.), §2 half/4M sub-period grain, right-anchored on the 4M FY26 Buy/Sell column."
+        "note": "R1 LFL · R2 UOP · R3 margin · R4 vitality · R5 cash conv., half grain, right-anchored on H1 FY26."
       },
       "url": "GEN.html"
     },
