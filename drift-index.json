@@ -56,10 +56,11 @@
       "alert": true,
       "fired": 2,
       "fired_of": 3,
+      "lights": "gg-",
       "rns_type": "H1 Results",
       "rns_date": "2026-08-03",
       "build_date": "2026-08-03",
-      "spec_version": "v4.6",
+      "spec_version": "v5.3b",
       "next_test": "Nov-26 TU — consultants above 2,042 with guide held makes three confirming prints running.",
       "url": "FDM.html",
       "grid": {
@@ -89,6 +90,24 @@
           "--rraaaaa"
         ],
         "note": "One row per ledger rank (R1–R5) at H-grain sub-period; rightmost cell = Buy/Sell (H1 FY26 Results, 3 Aug 2026); g=🟢↗ a=🟡→ r=🔴↘ x=❌ -=no score"
+      },
+      "trend": {
+        "mode": "share",
+        "cells": "r-r",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": -6.5
+          },
+          {
+            "m": "EBITDA",
+            "gap": null
+          },
+          {
+            "m": "PBT",
+            "gap": -14.8
+          }
+        ]
       }
     },
     {
