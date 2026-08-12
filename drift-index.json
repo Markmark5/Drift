@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-11",
+  "updated": "2026-08-12",
   "tickers": [
     {
       "ticker": "STAF",
@@ -1853,6 +1853,70 @@
           "rrgarrrag"
         ],
         "note": "R1 inventories · R2 adjusted EBITDA margin · R3 cash conversion · R4 net cash/(net debt) · R5 adjusted EBITDA"
+      }
+    },
+    {
+      "ticker": "CER",
+      "company": "Cerillion plc",
+      "kind": "ticker",
+      "direction": "down",
+      "headline": "Profit halved on the same explanation as last year, and the back half must now carry two-thirds of the year.",
+      "trigger": "Margin compression plus growth decelerating three prints, alongside language falling two consecutive prints with the in-line guide made conditional on orders not yet won.",
+      "alert": true,
+      "fired": 2,
+      "fired_of": 3,
+      "lights": "rra",
+      "rns_type": "Interim Results",
+      "rns_date": "2026-06-01",
+      "build_date": "2026-08-11",
+      "spec_version": "5.3a",
+      "next_test": "Full-year trading update, late Oct 2026. Whether Omantel's licence fee was counted by 30 September — and, before then, whether any new contract win is announced at all.",
+      "url": "CER.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H1 22",
+          "H2 22",
+          "H1 23",
+          "H2 23",
+          "H1 24",
+          "H2 24",
+          "H1 25",
+          "H2 25",
+          "H1 26"
+        ],
+        "rows": [
+          "-r-g-r-r-",
+          "agr-rggrg",
+          "--grrgrgg",
+          "grggagagr",
+          "--arrarar"
+        ],
+        "note": "R1 initial licence fees, R2 near-term contracted revenue, R3 new orders, R4 adjusted EBITDA margin, R5 revenue."
+      },
+      "trend": {
+        "mode": "share",
+        "cells": "rrr",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": -15.9
+          },
+          {
+            "m": "EBITDA",
+            "gap": -24.7
+          },
+          {
+            "m": "PBT",
+            "gap": -26.1
+          }
+        ]
       }
     }
   ]
