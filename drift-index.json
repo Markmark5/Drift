@@ -2047,6 +2047,70 @@
           }
         ]
       }
+    },
+    {
+      "ticker": "DEBS",
+      "company": "Debenhams Group plc",
+      "kind": "ticker",
+      "direction": "up",
+      "headline": "Serial guidance upgrades delivered — FY26 Adjusted EBITDA £53.3m (+35%), every brand profitable, and GMV returned to growth in Q1 FY27.",
+      "trigger": "Green-shoot 2-of-3 met — all three conditions fired green, undiscounted",
+      "alert": true,
+      "fired": 3,
+      "fired_of": 3,
+      "lights": "ggg",
+      "rns_type": "Trading Update",
+      "rns_date": "2026-07-14",
+      "build_date": "2026-08-08",
+      "spec_version": "v5.3d",
+      "next_test": "H1 FY27 results (Sep-26): whether EBITDA converts to operating profit as the CEO flagged, and whether Q1's +0.5% GMV growth holds.",
+      "url": "DEBS_drift_tracker_v53d.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "-",
+          "-",
+          "FY 24",
+          "H1 25",
+          "FY 25",
+          "H1 26",
+          "FY 26",
+          "FY 26",
+          "Q1 27"
+        ],
+        "rows": [
+          "--aagrrrg",
+          "---gggaa-",
+          "--a-aagg-",
+          "--a-a-aa-",
+          "--rrgrgg-"
+        ],
+        "note": "Five ranked metrics at H-grain; two left-pad blanks precede the record."
+      },
+      "trend": {
+        "mode": "growth",
+        "cells": "-g-",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": null
+          },
+          {
+            "m": "EBITDA",
+            "gap": 64.4
+          },
+          {
+            "m": "PBT",
+            "gap": null
+          }
+        ]
+      }
     }
   ]
 }
