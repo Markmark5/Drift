@@ -728,12 +728,12 @@
       "rns_type": "FY26 Trading Update",
       "rns_date": "2026-07-14",
       "build_date": "2026-07-29",
-      "spec_version": "3.16",
+      "spec_version": "5.3",
       "next_test": "FY26 prelim (10-Sep-26): resume China royalty-customer count, give H2 PIC/ABS splits, set pro-forma post-deconsolidation FY27 base.",
       "url": "GNS.html",
-      "kind": "ticker",
       "fired": 2,
       "fired_of": 3,
+      "lights": "gga",
       "grid": {
         "labels": [
           "R1",
@@ -743,15 +743,15 @@
           "R5"
         ],
         "periods": [
-          "",
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1",
-          "H2"
+          "H2 22",
+          "H1 23",
+          "H2 23",
+          "H1 24",
+          "H2 24",
+          "H1 25",
+          "H2 25",
+          "H1 26",
+          "H2 26"
         ],
         "rows": [
           "---rrgag-",
@@ -760,7 +760,25 @@
           "---rrggg-",
           "---raaaa-"
         ],
-        "note": "Rows = ranks 1-5 · half-year grain · newest right (Buy/Sell)"
+        "note": "Five ranked metrics at half-year grain; Rank 1 renders full-year in each second slot (reduced-grain rule)."
+      },
+      "trend": {
+        "mode": "growth",
+        "cells": "agg",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": -0.2
+          },
+          {
+            "m": "EBITDA",
+            "gap": 17
+          },
+          {
+            "m": "PBT",
+            "gap": 27.5
+          }
+        ]
       }
     },
     {
