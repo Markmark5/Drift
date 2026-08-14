@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-12",
+  "updated": "2026-08-14",
   "tickers": [
     {
       "ticker": "STAF",
@@ -433,15 +433,16 @@
       "kind": "ticker",
       "direction": "watch",
       "headline": "Revenue turned down in the latest half while profit and margin held — one leg each way, neither side converging to an alert.",
-      "trigger": "Deterioration 1 of 3 — parent-vs-latest-sub-period divergence only (print-corroborated at Rank 4 by the Mar-26 TU, watch-flagged at Rank 1). Text did not fire. Drift did not fire: the ADAM Audio candidate is not a ledger metric, is qualitative not blank, and is explained. Green-shoot mirror 1 of 3. No alert.",
+      "trigger": "Deterioration 1 of 3 — parent-vs-latest-sub-period divergence only (print-corroborated at Rank 4 by the Mar-26 TU, watch-flagged at Rank 1). Language did not fire. Disclosure did not fire: the ADAM Audio candidate is not a ledger metric, is qualitative not blank, and is explained. Green-shoot mirror 1 of 3. No alert.",
       "alert": false,
       "fired": 1,
       "fired_of": 3,
+      "lights": "r--",
       "rns_type": "Final Results",
       "rns_date": "2026-06-29",
       "build_date": "2026-07-28",
-      "spec_version": "4.7",
-      "next_test": "H1 FY27 (six months to Aug-26): Content Creation above £63.6m, and whether gross margin holds above 45%.",
+      "spec_version": "5.3b",
+      "next_test": "AGM statement 4 Aug 2026 — first FY27 guide language; then the half to Aug-26: Content Creation above £63.6m and gross margin holding 45%.",
       "url": "TUNE.html",
       "grid": {
         "labels": [
@@ -452,15 +453,15 @@
           "R5"
         ],
         "periods": [
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1"
+          "H1 22",
+          "H2 22",
+          "H1 23",
+          "H2 23",
+          "H1 24",
+          "H2 24",
+          "H1 25",
+          "H2 25",
+          "H1 26"
         ],
         "rows": [
           "----rrggr",
@@ -469,7 +470,25 @@
           "----rrggr",
           "----rrggg"
         ],
-        "note": "One row per ledger rank, half-grain, right-anchored on the Jun-26 Buy/Sell half (Feb-26). Rank 2 is Audio Reproduction revenue, promoted at the v4.7 build."
+        "note": "One row per ledger rank, half-grain, right-anchored on the Feb-26 Buy/Sell half. Rank 2 is Audio Reproduction revenue, promoted at the v4.7 build."
+      },
+      "trend": {
+        "mode": "growth",
+        "cells": "rr-",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": -9.7
+          },
+          {
+            "m": "EBITDA",
+            "gap": -10.1
+          },
+          {
+            "m": "PBT",
+            "gap": null
+          }
+        ]
       }
     },
     {
