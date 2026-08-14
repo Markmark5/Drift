@@ -48,6 +48,14 @@ body{background:var(--bg);font-family:var(--mono);color:var(--text-primary);font
 .sortbtn{font-size:9px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;
   border-radius:3px;cursor:pointer;color:var(--text-secondary);background:transparent;border:1px solid var(--border);}
 .sortbtn.active{color:var(--text-primary);border-color:var(--border-bright);background:#ffffff08;}
+.srch{margin-left:auto;display:flex;align-items:center;gap:6px;}
+.srch input{background:var(--surface2);border:1px solid var(--border);border-radius:3px;color:var(--text-primary);
+  font-family:var(--mono);font-size:11px;padding:4px 10px;width:150px;outline:none;}
+.srch input:focus{border-color:var(--border-bright);}
+.srch input::placeholder{color:var(--text-dim);}
+.srch .clr{font-size:11px;color:var(--text-dim);cursor:pointer;padding:0 4px;visibility:hidden;}
+.srch .clr.on{visibility:visible;}
+.srch .clr:hover{color:var(--text-primary);}
 .wall{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;padding:14px;}
 .card{background:var(--surface2);border:1px solid var(--border);border-radius:0 6px 6px 0;padding:12px 14px;
   cursor:pointer;transition:border-color .15s;}
@@ -151,6 +159,10 @@ body{background:var(--bg);font-family:var(--mono);color:var(--text-primary);font
       <button class="sortbtn active" data-sort="direction">Direction</button>
       <button class="sortbtn" data-sort="build">Latest build</button>
       <button class="sortbtn" data-sort="ticker">A–Z</button>
+      <span class="srch">
+        <input id="q" type="text" placeholder="Search ticker…" autocomplete="off">
+        <span class="clr" id="qclr" onclick="qClear()">✕</span>
+      </span>
     </div>
     <div class="wall" id="wall"><div class="empty">Loading drift-index.json…</div></div>
   </div>
@@ -268,14 +280,19 @@ function pips(x,f,fo){
   out+='</div>';
   return out;
 }
+var Q='';
+function qClear(){document.getElementById('q').value='';Q='';document.getElementById('qclr').className='clr';render();}
 function render(){
   var t=DATA.tickers.slice();
+  if(Q){t=t.filter(function(x){
+    return (x.ticker||'').toUpperCase().indexOf(Q)>-1 || (x.company||'').toUpperCase().indexOf(Q)>-1;});}
   if(SORT==='direction')t.sort(function(a,b){return DIRORD[a.direction]-DIRORD[b.direction]||a.ticker.localeCompare(b.ticker);});
   if(SORT==='build')t.sort(function(a,b){return b.build_date.localeCompare(a.build_date);});
   if(SORT==='ticker')t.sort(function(a,b){return a.ticker.localeCompare(b.ticker);});
   var n={up:0,down:0,watch:0};
   t.forEach(function(x){n[x.direction]++;});
-  document.getElementById('summary').textContent=t.length+' tickers · '+n.down+' down · '+n.watch+' watch · '+n.up+' up';
+  document.getElementById('summary').textContent=t.length+(Q?' of '+DATA.tickers.length:'')+' tickers · '+n.down+' down · '+n.watch+' watch · '+n.up+' up';
+  if(Q&&!t.length){document.getElementById('wall').innerHTML='<div class="empty">No ticker matching "'+Q+'"</div>';return;}
   document.getElementById('meta').textContent='index updated '+DATA.updated;
   var w=document.getElementById('wall');w.innerHTML='';
   t.forEach(function(x){
@@ -298,6 +315,12 @@ function render(){
     w.appendChild(c);
   });
 }
+document.getElementById('q').addEventListener('input',function(e){
+  Q=(e.target.value||'').trim().toUpperCase();
+  document.getElementById('qclr').className='clr'+(Q?' on':'');
+  if(DATA)render();
+});
+document.getElementById('q').addEventListener('keydown',function(e){if(e.key==='Escape')qClear();});
 document.querySelectorAll('.sortbtn').forEach(function(b){
   b.onclick=function(){
     document.querySelectorAll('.sortbtn').forEach(function(x){x.classList.remove('active');});
