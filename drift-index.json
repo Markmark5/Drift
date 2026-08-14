@@ -4,17 +4,20 @@
     {
       "ticker": "STAF",
       "company": "Staffline Group plc",
+      "kind": "ticker",
       "direction": "up",
-      "headline": "Green-shoot 2-of-3 FIRED on its own legs — anchored RAISE, Rank-1 reversal +6.3pp, accelerating exit rate. Call now firmly held. B/S watch shifts to receivables.",
-      "trigger": "green-shoot 2-of-3: G-column RAISE (anchored top-of-range, FY26 PBT £8.7–9.2m) + Rank-1 sequential reversal; Text ⚪→🟢🟢",
+      "headline": "Anchored RAISE to the top of a printed £8.7–9.2m range, Rank-1 reversing +6.3pp, exit rate accelerating. Firmly held.",
+      "trigger": "Green-shoot: G-column RAISE anchored to an in-RNS consensus range, plus Rank-1 seasonally-matched reversal +6.3pp; Language ⚪→🟢🟢",
       "alert": true,
+      "fired": 2,
+      "fired_of": 3,
+      "lights": "gg-",
       "rns_type": "H1 Interim Results",
       "rns_date": "2026-07-28",
-      "build_date": "2026-07-31",
-      "spec_version": "v4.2",
-      "next_test": "FY26 TU ~Jan-27: PBT vs the £9.2m top end; FY cash conversion vs the receivables build; Q4 peak hours vs +11.1% on the first hard Culina comp.",
+      "build_date": "2026-08-14",
+      "spec_version": "v5.3",
+      "next_test": "FY26 trading update ~Jan-27: PBT against the £9.2m top end, Q4 peak hours against +11.1%, and whether the year-end cash print clears the payroll-timing quirk.",
       "url": "STAF.html",
-      "kind": "ticker",
       "grid": {
         "labels": [
           "R1",
@@ -24,15 +27,15 @@
           "R5"
         ],
         "periods": [
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1"
+          "H1 22",
+          "H2 22",
+          "H1 23",
+          "H2 23",
+          "H1 24",
+          "H2 24",
+          "H1 25",
+          "H2 25",
+          "H1 26"
         ],
         "rows": [
           "-r-g-grrg",
@@ -41,10 +44,26 @@
           "r-r---ggg",
           "-grgrgrgr"
         ],
-        "note": "Rows = ranks 1-5 · half-year grain · newest right (Buy/Sell)"
+        "note": "Ranks 1–5 at grid sub-period grain; R1 and R3 render H1/FY under B.2a, so their even cells are FY."
       },
-      "fired": 2,
-      "fired_of": 3
+      "trend": {
+        "mode": "share",
+        "cells": "agg",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": -0.9
+          },
+          {
+            "m": "EBITDA",
+            "gap": 6.7
+          },
+          {
+            "m": "PBT",
+            "gap": 23.8
+          }
+        ]
+      }
     },
     {
       "ticker": "FDM",
