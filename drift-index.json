@@ -1159,7 +1159,25 @@
       "rns_type": "H1 R",
       "rns_date": "2026-08-11",
       "build_date": "2026-08-11",
-      "spec_version": "v5.1",
+      "spec_version": "v5.3",
+      "trend": {
+        "mode": "share",
+        "cells": "a-r",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": -1.4
+          },
+          {
+            "m": "EBITDA",
+            "gap": null
+          },
+          {
+            "m": "PBT",
+            "gap": -2.7
+          }
+        ]
+      },
       "next_test": "Nov-2026 trading update — does the May–June LFL recovery hold, and does vitality return",
       "grid": {
         "labels": [
