@@ -1058,8 +1058,8 @@
       "lights": "g-g",
       "rns_type": "FY TU",
       "rns_date": "2026-07-23",
-      "build_date": "2026-08-10",
-      "spec_version": "v5.1",
+      "build_date": "2026-08-14",
+      "spec_version": "v5.3b",
       "next_test": "FY26 Final Results 22-Sep-26 — adj PBT, EPS and underlying cash confirm the re-rate or expose a one-year bounce",
       "url": "FNX.html",
       "grid": {
@@ -1089,6 +1089,24 @@
           "-aaaaagaa"
         ],
         "note": "Five ledger ranks, H1/H2 sub-periods, right-anchored on the FY26 FY TU."
+      },
+      "trend": {
+        "mode": "growth",
+        "cells": "agr",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": -2.5
+          },
+          {
+            "m": "EBITDA",
+            "gap": 6.3
+          },
+          {
+            "m": "PBT",
+            "gap": -4.4
+          }
+        ]
       }
     },
     {
