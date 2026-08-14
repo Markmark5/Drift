@@ -232,8 +232,8 @@
       "lights": "arr",
       "rns_type": "AGM Statement",
       "rns_date": "2026-06-18",
-      "build_date": "2026-07-28",
-      "spec_version": "4.8",
+      "build_date": "2026-08-13",
+      "spec_version": "5.3",
       "next_test": "9 Sep 2026 interims — the printed H1 gross margin, and whether volumes and prices reappear.",
       "grid": {
         "labels": [
@@ -244,15 +244,15 @@
           "R5"
         ],
         "periods": [
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1"
+          "H1 22",
+          "H2 22",
+          "H1 23",
+          "H2 23",
+          "H1 24",
+          "H2 24",
+          "H1 25",
+          "H2 25",
+          "H1 26"
         ],
         "rows": [
           "rraggagga",
@@ -261,9 +261,27 @@
           "--ragggra",
           "--rggggra"
         ],
-        "note": "One row per ledger rank; R1/R4/R5 at H1/H2 grain, R2/R3 at B.2a reduced H1/FY grain (FY cell scored). Rightmost cell = Buy/Sell (H1 FY26 AGM)."
+        "note": "One row per ledger rank; R1/R4/R5 at H1/H2 grain, R2/R3 at B.2a reduced H1/FY grain. Rightmost cell = Buy/Sell (H1 FY26 AGM)."
       },
-      "url": "ANP.html"
+      "url": "ANP.html",
+      "trend": {
+        "mode": "growth",
+        "cells": "ggg",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": 8.7
+          },
+          {
+            "m": "EBITDA",
+            "gap": 22.2
+          },
+          {
+            "m": "PBT",
+            "gap": 34.4
+          }
+        ]
+      }
     },
     {
       "ticker": "ELIX",
