@@ -7,7 +7,7 @@
 .cav{font-family:'Caveat',cursive;font-weight:700}
 :root{--red:#b3261e;--green:#1e7a45;--amber:#9a6a00;--line:#d8d5cf;
  --ink:#16150f;--mute:#5f5c54;--paper:#f7f6f2;
- --red2:#d4635c;--green2:#4a9e70;--amber2:#c79a3a}
+ --red2:#d94436;--green2:#2f9e5c;--amber2:#c98f16;--muted:#6b6860}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:#fff;color:var(--ink);font-size:13.5px;line-height:1.6;padding:0 0 60px;
  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
@@ -17,70 +17,96 @@ h2.sec{font-size:15px;font-weight:700;margin:30px 0 10px;padding-bottom:6px;
  border-bottom:2px solid var(--ink);max-width:1800px}
 .sub{font-size:12px;color:var(--mute);margin:-4px 0 14px;max-width:1100px}
 
-/* ── verdict card ─── */
-.vcard{border:6px solid var(--red);border-radius:12px;overflow:hidden;margin:34px 0;max-width:1100px}
-.vcard.up{border-color:var(--green)} .vcard.watch{border-color:var(--amber)}
-.vflex{display:flex;align-items:stretch}
-.vrail{width:82px;background:var(--red);display:flex;flex-direction:column;align-items:center;
- justify-content:center;gap:12px;padding:20px 0;flex-shrink:0}
-.vcard.up .vrail{background:var(--green)} .vcard.watch .vrail{background:var(--amber)}
-.vbadge{width:36px;height:36px;border-radius:50%;border:2px solid rgba(255,255,255,.6);
- display:flex;align-items:center;justify-content:center}
-.vlabel{writing-mode:vertical-rl;transform:rotate(180deg);color:#fff;font-size:9.5px;
- letter-spacing:.18em;text-transform:uppercase;font-weight:700}
-.vbody{padding:22px 24px;flex:1;min-width:0}
-.vhead{font-size:22px;font-weight:700;line-height:1.25;margin-bottom:12px}
-.vpills{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:14px}
-.pill{font-size:11px;font-weight:600;padding:3px 9px;border-radius:20px;
- background:var(--paper);border:1px solid var(--line);color:var(--mute)}
-.pdot{color:var(--mute);font-weight:700}
+/* ==== VERDICT CARD — LOCKED v5.3a (Appendix E, verbatim) ==== */
+.card{display:flex;border:6px solid var(--red2);border-radius:12px;overflow:hidden;
+  max-width:1180px;margin:0 0 30px;background:#fff}
+.card.up{border-color:var(--green2)}
+.card.watch{border-color:var(--amber2)}
+.rail{width:82px;flex:0 0 82px;background:#fdecea;display:flex;flex-direction:column;
+  align-items:center;justify-content:flex-start;padding:18px 0;gap:14px;position:relative}
+.card.up .rail{background:#e9f5ee}
+.card.watch .rail{background:#fdf4e3}
+.badge{width:36px;height:36px;border-radius:50%;border:2px solid var(--red2);
+  display:flex;align-items:center;justify-content:center;background:#fff}
+.card.up .badge{border-color:var(--green2)}
+.card.watch .badge{border-color:var(--amber2)}
+.raillab{writing-mode:vertical-rl;text-orientation:mixed;text-transform:uppercase;
+  letter-spacing:.18em;font-size:10.5px;font-weight:700;color:var(--red2)}
+.card.up .raillab{color:var(--green2)}
+.card.watch .raillab{color:var(--amber2)}
+.tier1{position:absolute;bottom:14px;font-size:18px}
+.cbody{flex:1;padding:20px 22px 22px;min-width:0}
+.chead{font-size:22px;font-weight:700;line-height:1.25;margin:0 0 12px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:14px}
+.pill{background:var(--paper);border:1px solid var(--line);border-radius:999px;
+  padding:4px 11px;font-size:11.5px;color:var(--mute);white-space:nowrap}
+.dot{color:var(--line)}
 
 /* trigger lights */
-.lights{background:#2b2a26;border-radius:12px;padding:12px 13px;max-width:1100px;margin-bottom:14px}
-.lrow{display:flex;gap:10px;align-items:stretch}
-.lamp{flex:1;border-radius:9px;padding:9px 11px;position:relative}
-.lamp .bulb{width:28px;height:28px;border-radius:50%;margin-bottom:7px}
-.lamp .lname{font-size:15.5px;font-weight:700;line-height:1.2}
-.lamp .lwhy{font-size:11.5px;line-height:1.35;margin-top:3px}
-.lamp .ldate{position:absolute;top:9px;right:11px;font-size:11px}
-.lamp.fired{background:#3b3934} .lamp.fired .lname{color:#fff}
-.lamp.fired .lwhy,.lamp.fired .ldate{color:#c9c6bd}
-.lamp.off{background:#333129} .lamp.off .lname{color:#a8a49a}
-.lamp.off .lwhy,.lamp.off .ldate{color:#8d8981}
-.bulb.r{background:#ff3b30;border:2px solid #ff6b63;box-shadow:0 0 0 4px rgba(255,59,48,.18)}
-.bulb.g{background:#21d05e;border:2px solid #55e087;box-shadow:0 0 0 4px rgba(33,208,94,.18)}
-.bulb.a{background:#ffb020;border:2px solid #ffc75c;box-shadow:0 0 0 4px rgba(255,176,32,.18)}
-.bulb.o{background:#57544c;border:2px solid #6b675e}
-.tally{display:flex;flex-direction:column;align-items:center;justify-content:center;
- padding:0 6px 0 12px;min-width:70px}
-.tally .n{font-size:26px;font-weight:700;color:#fff;line-height:1}
-.tally .f{font-size:10.5px;letter-spacing:.14em;color:#c9c6bd;margin-top:3px}
-.bsstrip{border-top:1px dashed #57544c;margin-top:11px;padding-top:10px;display:flex;
- align-items:center;gap:10px}
-.bsstrip .bulb20{width:20px;height:20px;border-radius:50%;flex-shrink:0}
-.bsstrip .bt{font-size:12.5px;color:#fff;font-weight:600}
-.bsstrip .bs2{font-size:11px;color:#8d8981}
+.lights{background:#2b2a26;border-radius:12px;padding:12px 13px;max-width:1100px;
+  display:flex;gap:10px;align-items:stretch;flex-wrap:wrap}
+.lamp{flex:1 1 200px;background:#3b3934;border-radius:9px;padding:10px 11px;
+  position:relative;min-width:190px}
+.lamp.off,.lamp.amb{background:#333129}
+.bulb{width:28px;height:28px;border-radius:50%;margin-bottom:7px;
+  border:2px solid rgba(255,255,255,.28);box-shadow:0 0 0 4px rgba(255,255,255,.07)}
+.b-r{background:#ff3b30} .b-g{background:#21d05e} .b-a{background:#ffb020} .b-o{background:#57544c}
+.lname{font-size:15.5px;font-weight:700;color:#fff;line-height:1.15}
+.lamp.off .lname,.lamp.amb .lname{color:#a8a49a}
+.lreason{font-size:11.5px;color:#c9c6bd;margin-top:4px;line-height:1.35}
+.ldate{position:absolute;top:10px;right:11px;font-size:11px;color:#c9c6bd}
+.lamp.off .ldate,.lamp.amb .ldate{color:#8d8981}
+.tally{flex:0 0 78px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.tally b{font-size:26px;font-weight:700;color:#fff;line-height:1}
+.tally span{font-size:10.5px;letter-spacing:.14em;color:#c9c6bd;margin-top:4px}
 
-/* company guide */
-.gbar{background:#2b2a26;color:#fff;padding:8px 15px;border-radius:8px 8px 0 0;cursor:pointer;
- display:flex;align-items:center;gap:9px}
-.gbar .e{font-size:22px} .gbar .t{font-size:24px}
-.gbody{background:#f9f8f5;border:1px solid var(--line);border-top:none;border-radius:0 0 8px 8px;
- padding:16px 18px;font-size:13px;line-height:1.65;display:none}
-.gbody.open{display:block}
-.gh{font-family:'Caveat',cursive;font-weight:700;font-size:22px;display:block;margin:12px 0 3px}
-.gh:first-child{margin-top:0}
+/* balance-sheet strip — hosts the Trend Watch panel per Appendix C */
+.bstrip{margin-top:10px;border:1px dashed #57544c;border-radius:9px;padding:9px 11px;
+  display:flex;align-items:stretch;gap:10px}
+.bsweep{flex:1;display:flex;align-items:center;gap:10px;padding-right:14px;min-width:230px}
+.bbulb{width:20px;height:20px;border-radius:50%;flex:0 0 20px;border:2px solid rgba(255,255,255,.25)}
+.bstrip .t{font-size:13px;color:#fff;font-weight:600}
+.bstrip .s{font-size:11px;color:#c9c6bd;margin-top:2px}
+
+/* ==== TREND WATCH PANEL — LOCKED v5.3 (Appendix C, verbatim) ==== */
+.tw{flex:1;border-left:1px dashed #57544c;padding-left:16px;min-width:0}
+.tw .plab{font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:#8d8981;font-weight:700}
+.tw .dset{display:flex;gap:20px;margin-top:8px}
+.tw .dcell{text-align:center;width:88px}
+.tw .dnm{font-size:9px;letter-spacing:.1em;color:#8d8981;margin-bottom:2px}
+.tw .dfig{font-size:11px;font-weight:700;margin-top:2px}
+.tw .dtrend{font-size:9px;color:#c9c6bd;margin-top:2px}
+.tw .dfc{font-size:8.5px;color:#6d6a62}
+@media(max-width:760px){
+  .tw{border-left:none;border-top:1px dashed #57544c;padding-left:0;padding-top:10px;margin-top:2px}
+  .tw .dset{justify-content:space-between;gap:8px}
+  .tw .dcell{width:32%}
+}
+.twnone{font-size:11px;color:#8d8981;margin-top:10px;line-height:1.45;font-style:italic}
+
+/* company-guide drawer — part of the card, not one of the page's five */
+details.guide{margin:14px 0;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+details.guide>summary{background:#2b2a26;color:#fff;padding:8px 15px;cursor:pointer;
+  list-style:none;font-family:'Caveat',"Comic Sans MS",cursive;font-weight:700;font-size:24px}
+details.guide>summary::-webkit-details-marker{display:none}
+details.guide>summary .em{font-size:22px;margin-right:6px}
+.gbody{padding:14px 16px;font-size:12.5px;line-height:1.55}
+.gbody h4{font-family:'Caveat',"Comic Sans MS",cursive;font-weight:700;font-size:22px;margin:12px 0 4px}
+.gbody h4:first-child{margin-top:0}
+.gbody .vintage{color:var(--muted);font-size:11px;margin-top:12px}
 
 /* four boxes */
-.boxes{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+.boxes{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 14px}
 .box{background:#f2f1ec;border-radius:0 0 10px 10px;border-top:3px solid var(--red2);
- padding:12px 15px 13px}
-.vcard.up .box{border-top-color:var(--green2)} .vcard.watch .box{border-top-color:var(--amber2)}
-.blabel{font-size:13px;text-transform:uppercase;letter-spacing:.09em;color:var(--mute);font-weight:600}
-.bhead{font-size:19px;font-weight:700;line-height:1.2;margin:3px 0 4px}
-.btext{font-size:13px;line-height:1.45}
-.vb{margin-top:12px;padding-left:18px;font-size:13px;line-height:1.6}
-.vb li{margin-bottom:5px}
+  padding:12px 15px 13px}
+.card.up .box{border-top-color:var(--green2)}
+.card.watch .box{border-top-color:var(--amber2)}
+.box .lb{font-size:13px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted)}
+.box .hl2{font-size:19px;font-weight:700;margin:3px 0 4px}
+.box p{font-size:13px;line-height:1.45;margin:0}
+.cbul{margin:0;padding-left:18px;font-size:13px}
+.cbul li{margin-bottom:6px}
 
 /* drawers: two tiers */
 details.top{border:1px solid #c6c2b9;border-radius:10px;background:var(--paper);
@@ -171,80 +197,123 @@ td.bs-col .val{font-weight:800}
 th.bs-col{font-weight:800}
 </style></head><body><div class="wrap">
 
-<div class="vcard">
-<div class="vflex">
- <div class="vrail">
-  <div class="vbadge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-   stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-   <polyline points="22 17 13.5 8.5 8.5 13.5 2 7"/><polyline points="16 17 22 17 22 11"/></svg></div>
-  <div class="vlabel">Turning Down</div>
+<div class="card down">
+ <div class="rail">
+  <div class="badge">
+   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d94436" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg>
+  </div>
+  <div class="raillab">Turning down</div>
  </div>
- <div class="vbody">
-  <div class="vhead">All three conditions fire: like-for-like negative two prints running, and vitality has now gone dark at H1 too</div>
-  <div class="vpills">
-   <span class="pill">H1 Results · 11 Aug 2026</span>
+ <div class="cbody">
+  <h1 class="chead">All three conditions fire: like-for-like negative two prints running, and vitality has now gone dark at half year too</h1>
+
+  <div class="pills">
+   <span class="pill">Interim Results · 11 Aug 2026</span>
    <span class="pill">FY-end 31 Dec</span>
-   <span class="pdot">·</span>
-   <span class="pill">B/S: leverage 1.6×</span>
+   <span class="dot">·</span>
+   <span class="pill">B/S: leverage rising</span>
   </div>
 
   <div class="lights">
-   <div class="lrow">
-    <div class="lamp fired"><div class="ldate">May-26 →</div><div class="bulb r"></div>
-     <div class="lname">Numbers &amp; guide</div>
-     <div class="lwhy">Rank 1 red two prints running; H1 profit down 1.6%</div></div>
-    <div class="lamp fired"><div class="ldate">Nov-25 →</div><div class="bulb r"></div>
-     <div class="lname">Language</div>
-     <div class="lwhy">"Challenging conditions" named, expected to persist all year</div></div>
-    <div class="lamp fired"><div class="ldate">Mar-24 →</div><div class="bulb r"></div>
-     <div class="lname">Disclosure</div>
-     <div class="lwhy">Vitality withheld at H1 for the first time in the record</div></div>
-    <div class="tally"><div class="n">3/3</div><div class="f">FIRED</div></div>
+   <div class="lamp">
+    <div class="ldate">May-26 →</div>
+    <div class="bulb b-r"></div>
+    <div class="lname">Numbers &amp; guide</div>
+    <div class="lreason">Rank 1 red two prints running; half-year profit down 1.6%</div>
    </div>
-   <div class="bsstrip">
-    <div class="bulb20" style="background:#ffb020;border:2px solid #ffc75c"></div>
-    <div><div class="bt">Watch — leverage 1.6×, rising</div>
-    <div class="bs2">Sweep sits outside the 2-of-3 count</div></div>
+   <div class="lamp">
+    <div class="ldate">Nov-25 →</div>
+    <div class="bulb b-r"></div>
+    <div class="lname">Language</div>
+    <div class="lreason">Challenging conditions named, expected to persist all year</div>
+   </div>
+   <div class="lamp">
+    <div class="ldate">Mar-24 →</div>
+    <div class="bulb b-r"></div>
+    <div class="lname">Disclosure</div>
+    <div class="lreason">Vitality withheld at half year for the first time</div>
+   </div>
+   <div class="tally"><b>3/3</b><span>FIRED</span></div>
+
+   <div class="bstrip" style="flex-basis:100%">
+    <div class="bsweep">
+     <div class="bbulb b-a"></div>
+     <div><div class="t">Watch — leverage up, wedge widening</div>
+      <div class="s">Sweep sits outside the 2-of-3 count</div></div>
+    </div>
+    <div class="tw">
+     <div class="plab">TREND WATCH · H1% VS 3YR% · FC AUG-26</div>
+     <div class="dset">
+      <div class="dcell"><div class="dnm">REVENUE</div>
+       <svg width="50" height="50" viewBox="0 0 42 42">
+        <circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/>
+        <circle cx="21" cy="21" r="15.915" fill="none" stroke="#d9c62f" stroke-width="5"
+         stroke-dasharray="15 100" transform="rotate(-144 21 21)" stroke-linecap="round"/>
+        <line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/>
+       </svg>
+       <div class="dfig" style="color:#e8d44a">-1.4pp</div>
+       <div class="dtrend">48.6 vs 50.0</div><div class="dfc"></div></div>
+      <div class="dcell"><div class="dnm">EBITDA</div>
+       <svg width="50" height="50" viewBox="0 0 42 42">
+        <circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/>
+        <line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/>
+       </svg>
+       <div class="dfig" style="color:#6d6a62">n/a</div>
+       <div class="dtrend">no printed basis</div><div class="dfc"></div></div>
+      <div class="dcell"><div class="dnm">PBT</div>
+       <svg width="50" height="50" viewBox="0 0 42 42">
+        <circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/>
+        <circle cx="21" cy="21" r="15.915" fill="none" stroke="#ff3b30" stroke-width="5"
+         stroke-dasharray="25 100" transform="rotate(-180 21 21)" stroke-linecap="round"/>
+        <line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/>
+       </svg>
+       <div class="dfig" style="color:#ff6b63">-2.7pp</div>
+       <div class="dtrend">45.4 vs 48.1</div><div class="dfc"></div></div>
+     </div>
+    </div>
    </div>
   </div>
 
-  <div class="gbar"><span class="e cav">💡</span>
-   <span class="t cav">Idiot's guide to the company — What Genuit Group plc actually does</span></div>
-  <div class="gbody">
-   <span class="gh">What it is</span>
-   Genuit makes the pipes, drains, gutters, ducting and ventilation units that get buried in walls, under floors and beneath roads. Head office in Leeds, listed in London as GEN, about £600m of sales a year and roughly 3,300 staff. If you have ever heard of Polypipe, that is the same company under an older name.
-   <span class="gh">How it makes money</span>
-   Two halves since the start of 2026. <b>Water</b> is around 70% of sales — plastic pipes and drainage sold to housebuilders, commercial developers and the water utilities. <b>Climate</b> is the other 30% — ventilation units (Nuaire, Monodraught), underfloor heating (Nu-Heat, Omnie) and magnetic filters that keep central heating systems clean (Adey). Customers are builders, installers and merchants, so sales follow how much building work is actually happening.
-   <span class="gh">Who controls what</span>
-   Joe Vorih has been chief executive since 2023, Tim Pullen is finance director. Their plan leans on two things: selling more products that help customers meet tightening environmental rules, and an in-house efficiency programme called the Genuit Business System that squeezes cost out of the factories. That programme is why profit margins held up through two years of falling volumes.
-   <span class="gh">Recent structural events</span>
-   Seven businesses bought since 2021, most recently Monodraught and Davidson in the second half of 2025. Each purchase adds sales that were not there the year before, which is why reported growth and underlying growth now say very different things. The reporting structure has also been reshuffled twice, so older segment figures do not line up with today's.
-   <p style="font-style:italic;color:var(--mute);margin-top:10px;font-size:12.5px">A steady, unglamorous business selling into UK construction, with a genuine self-help story on margins — the open question is whether cost discipline can keep offsetting a demand downturn that has now lasted three years.</p>
-   <p style="font-size:11px;color:var(--mute);margin-top:4px">As at August 2026</p>
-  </div>
+  <details class="guide">
+   <summary><span class="em">💡</span>Idiot's guide to the company — What Genuit Group plc actually does</summary>
+   <div class="gbody">
+    <h4>What it is</h4>
+    <p>Genuit makes the pipes, drains, gutters, ducting and ventilation units that get buried in walls, under floors and beneath roads. Head office in Leeds, listed in London as GEN, around £600m of sales a year and roughly 3,300 staff. If the name Polypipe rings a bell, that is the same company under an older badge.</p>
+    <h4>Where it's based</h4>
+    <p>Almost entirely the United Kingdom, with small operations in Ireland and Italy. That matters more than it sounds: when British housebuilding stalls, there is no other geography to lean on.</p>
+    <h4>How it makes money</h4>
+    <p><b>Water</b> is around seventy per cent of sales — plastic pipes and drainage sold to housebuilders, commercial developers and the water utilities. <b>Climate</b> is the rest — ventilation units, underfloor heating, and magnetic filters that keep central heating systems clean.</p>
+    <p><b>Who controls the price.</b> Genuit does, but only up to a point and only slowly. Its biggest raw material is polymer, priced off oil, and when that jumps the company has to go to merchants and builders and ask for more. That took until May this year, which is why the first half looked so much worse than the last two months of it.</p>
+    <h4>What's changed recently</h4>
+    <p>Seven businesses bought since 2021, most recently Monodraught and Davidson in late 2025. Each one adds sales that were not there the year before, which is why the headline sales figure and the like-for-like one now tell very different stories. The reporting structure has been reshuffled twice, so older divisional figures do not line up with today's.</p>
+    <p class="vintage"><em>The bet, in one line: an unglamorous business with a real cost-discipline story, betting that self-help can outlast a British construction downturn now into its third year.</em></p>
+    <p class="vintage">Stable facts, as at 11 August 2026.</p>
+   </div>
+  </details>
 
   <div class="boxes">
-   <div class="box"><div class="blabel">Current state</div>
-    <div class="bhead">−4.8% LFL</div>
-    <div class="btext">Profit £43.9m, down 1.6%. Reported revenue rose 3.4% only because the 2025 acquisitions filled the hole.</div></div>
-   <div class="box"><div class="blabel">Warning you get</div>
-    <div class="bhead">About 10 months</div>
-    <div class="btext">Like-for-like turned negative at May-23 while profit guidance was still being raised; profit first fell at FY23. It is negative again now.</div></div>
-   <div class="box"><div class="blabel">Argues against</div>
-    <div class="bhead">May–June turned positive</div>
-    <div class="btext">Like-for-like ran about +3.1% in May and June as price rises landed, versus −8.7% over the first four months. Guidance held.</div></div>
-   <div class="box"><div class="blabel">Next test</div>
-    <div class="bhead">Nov-2026 TU</div>
-    <div class="btext">Does the May–June recovery hold through the second half, and does the vitality figure come back.</div></div>
+   <div class="box"><div class="lb">Current state</div>
+    <div class="hl2">−4.8% like-for-like</div>
+    <p>Profit £43.9m, down 1.6%. Reported sales rose 3.4% only because the businesses bought last autumn filled the hole.</p></div>
+   <div class="box"><div class="lb">Warning you get</div>
+    <div class="hl2">About 10 months</div>
+    <p>Like-for-like turned negative in May 2023; profit did not fall until the December 2023 year end. It is negative again now.</p></div>
+   <div class="box"><div class="lb">Argues against</div>
+    <div class="hl2">May and June turned positive</div>
+    <p>Like-for-like ran roughly +3.1% across the last two months as price rises landed, against −8.7% over the first four. Guidance held.</p></div>
+   <div class="box"><div class="lb">Next test</div>
+    <div class="hl2">Nov-2026</div>
+    <p>Whether the May–June recovery survives the second half, and whether the vitality figure comes back into print.</p></div>
   </div>
 
-  <ul class="vb">
-   <li>The lead metric has form: it went negative ten months before profit fell at the last turn, and management kept raising guidance across that gap.</li>
-   <li>Reported margin fell 70bps but like-for-like margin fell 140bps — the acquired Davidson business, at over 20% margin, is flattering the headline.</li>
-   <li>Flips back up if the November update shows like-for-like positive and vitality re-quantified; breaks further if May–June proves to be a price-rise sugar rush.</li>
+  <ul class="cbul">
+   <li>The lead metric has form here: it went negative roughly ten months before profit fell at the last turn, and management raised guidance twice across that gap.</li>
+   <li>Reported margin fell 70bps but like-for-like margin fell 140bps — Davidson, earning over 20%, is flattering the headline while the underlying business gives ground.</li>
+   <li>Flips back up if November shows like-for-like positive and vitality re-quantified; breaks further if May and June prove to be a one-off price-rise sugar rush.</li>
   </ul>
  </div>
-</div>
 </div>
 
 <h2 class="sec">§1 · Metric Ledger</h2>
@@ -355,7 +424,25 @@ font-size:10.5px;overflow-x:auto;white-space:pre-wrap;word-break:break-word">{
   "rns_type": "H1 R",
   "rns_date": "2026-08-11",
   "build_date": "2026-08-11",
-  "spec_version": "v5.1",
+  "spec_version": "v5.3",
+  "trend": {
+    "mode": "share",
+    "cells": "a-r",
+    "rows": [
+      {
+        "m": "REV",
+        "gap": -1.4
+      },
+      {
+        "m": "EBITDA",
+        "gap": null
+      },
+      {
+        "m": "PBT",
+        "gap": -2.7
+      }
+    ]
+  },
   "next_test": "Nov-2026 trading update — does the May–June LFL recovery hold, and does vitality return",
   "grid": {
     "labels": [
@@ -634,7 +721,7 @@ document and confirm the number is in it</i>, not recompute.</li>
 <h2 class="sec">§2.0 · Current-state read — ⭐ H1 FY26 Results, 11 August 2026</h2>
 <div class="f20">
  <div class="bwrap">
-  <div class="dbar"><span class="e">🍺</span> <span class="t cav">IDIOT'S GUIDE TO THE UNDERLYING OPERATING PROFIT BRIDGE — why profit went down (£44.6m → £43.9m)</span></div>
+  <div class="dbar"><span class="e">🍺</span> <span class="t cav">IDIOT'S GUIDE TO THE PROFIT BRIDGE — why profit went down (£44.6m → £43.9m)</span></div>
   <table class="br">
    <tr class="r"><td class="bd">🌧️ A washout, then a war</td><td class="bc" style="color:var(--red)">−£6m</td>
     <td class="bl">Rain kept sites shut through January and February, then the Middle East conflict pushed polymer and freight costs up from March. Volumes through the first four months were nearly a tenth below last year.</td></tr>
@@ -689,6 +776,61 @@ document and confirm the number is in it</i>, not recompute.</li>
 <li>Not a tier-one flag: the rise is fully explained by the Monodraught and Davidson acquisitions in the second half of 2025, both disclosed, and the company describes leverage as well within its target range. Tier one requires net debt rising without a disclosed acquisition.</li>
 <li><b>Adjusted-to-statutory wedge is widening and is a verdict-level concern.</b> Underlying operating profit £43.9m against statutory £26.2m — a gap of £17.7m, versus £7.1m at H1 FY25. Statutory profit fell 30.1% while underlying fell 1.6%. The charges are described as business transformation and simplification. A wedge that widens for a second consecutive period stops being one-off.</li>
 <li>Interest cover, covenants and going concern: no escalation beyond boilerplate. Dividend held at 4.2p, progressive policy reaffirmed. Cash conversion improving. No tier-two conditions met beyond the wedge.</li></ul>
+</details>
+<details class="sub"><summary>Trend Watch workings</summary>
+<b>Mode and status</b>
+<ul>
+<li><b>Share mode</b> — the Buy/Sell document is a half-year result, so the question is what share of the full-year forecast has been banked by the half, measured against the company's own three-year average for the same point. Sign convention: delivered minus required, so a negative gap means behind.</li>
+<li>Forecast vintage 11 August 2026, supplied after these results and therefore current. The earlier block dated 7 August predated the RNS and was not used.</li>
+</ul>
+<b>Workings</b>
+<table style="width:100%;border-collapse:collapse;font-size:11.5px;margin-top:8px">
+<thead><tr style="background:var(--paper)">
+<th style="border:1px solid var(--line);padding:5px;text-align:left">Metric</th>
+<th style="border:1px solid var(--line);padding:5px;text-align:left">Basis</th>
+<th style="border:1px solid var(--line);padding:5px">Actual</th>
+<th style="border:1px solid var(--line);padding:5px">FY1 fc</th>
+<th style="border:1px solid var(--line);padding:5px">Share</th>
+<th style="border:1px solid var(--line);padding:5px;text-align:left">Norm and the years it averages</th>
+<th style="border:1px solid var(--line);padding:5px">Gap</th>
+<th style="border:1px solid var(--line);padding:5px">Ranked?</th></tr></thead>
+<tbody>
+<tr><td style="border:1px solid var(--line);padding:5px">REVENUE</td>
+<td style="border:1px solid var(--line);padding:5px">Reported, group</td>
+<td style="border:1px solid var(--line);padding:5px;text-align:center">£307.8m</td>
+<td style="border:1px solid var(--line);padding:5px;text-align:center">£633m</td>
+<td style="border:1px solid var(--line);padding:5px;text-align:center">48.63%</td>
+<td style="border:1px solid var(--line);padding:5px"><b>49.99%</b> — FY23 51.97, FY24 48.53, FY25 49.46. Halves 304.8/272.4/297.8 over full years 586.5/561.3/602.1, all as printed and tied to the §2 source table.</td>
+<td style="border:1px solid var(--line);padding:5px;text-align:center;color:#9a6a00"><b>−1.4pp</b><br><span style="font-size:9.5px">amber</span></td>
+<td style="border:1px solid var(--line);padding:5px;text-align:center">No — Rank 1 is like-for-like growth, not reported revenue. This row is its own audit trail.</td></tr>
+<tr><td style="border:1px solid var(--line);padding:5px">EBITDA</td>
+<td style="border:1px solid var(--line);padding:5px">—</td>
+<td style="border:1px solid var(--line);padding:5px;text-align:center">n/a</td>
+<td style="border:1px solid var(--line);padding:5px;text-align:center">£126.4m</td>
+<td style="border:1px solid var(--line);padding:5px;text-align:center">n/a</td>
+<td style="border:1px solid var(--line);padding:5px"><b>No norm available.</b> Genuit prints no EBITDA series. The only EBITDA it publishes is the pro-forma figure inside the leverage note, struck as though acquisitions were owned for the full year, so it is not comparable period to period. A datablock's own sub-period split is never used as a norm.</td>
+<td style="border:1px solid var(--line);padding:5px;text-align:center">n/a<br><span style="font-size:9.5px;color:var(--mute)">no printed basis</span></td>
+<td style="border:1px solid var(--line);padding:5px;text-align:center">No</td></tr>
+<tr><td style="border:1px solid var(--line);padding:5px">PBT</td>
+<td style="border:1px solid var(--line);padding:5px">Underlying, group</td>
+<td style="border:1px solid var(--line);padding:5px;text-align:center">£36.8m</td>
+<td style="border:1px solid var(--line);padding:5px;text-align:center">£81m</td>
+<td style="border:1px solid var(--line);padding:5px;text-align:center">45.43%</td>
+<td style="border:1px solid var(--line);padding:5px"><b>48.09%</b> — FY23 50.06, FY24 47.41, FY25 46.80. Underlying profit before tax as printed: halves 40.3/37.6/38.8 over full years 80.5/79.3/82.9.</td>
+<td style="border:1px solid var(--line);padding:5px;text-align:center;color:#b3261e"><b>−2.7pp</b><br><span style="font-size:9.5px">red</span></td>
+<td style="border:1px solid var(--line);padding:5px;text-align:center">No</td></tr>
+</tbody></table>
+<b>Basis check on the forecast</b>
+<ul>
+<li>The block's historic profit-before-tax rows are struck on a <b>statutory</b> basis — its FY25 halves of 31.7 and 35.7 match Genuit's printed statutory figures, not the underlying 38.8 and 44.1. The forecast, however, is £81m against an underlying FY25 outturn of £82.9m and a statutory £67.4m, so the forecast is unambiguously on an underlying basis.</li>
+<li>The norm is therefore built from underlying halves and compared against an underlying forecast. Bases match and the gap stands. Had the forecast been statutory this row would render n/a rather than being approximated across the break.</li>
+</ul>
+<b>Reading the two live rows</b>
+<ul>
+<li>Revenue is amber at −1.4pp: the half banked 48.6% of the forecast year against a 50.0% habit. Slightly light, inside the band, and consistent with a first half hit by weather and cost inflation before May's price rises landed.</li>
+<li>Profit before tax is red at −2.7pp: 45.4% banked against a 48.1% habit. The shortfall is wider than revenue's because margin fell as well as volume, so the profit line is further behind the year than the top line is. For the forecast to hold, the second half has to deliver 54.6% of full-year profit — more than any second half in the three-year record.</li>
+<li>That is the arithmetic case for the second-half margin recovery management has guided to. It does not judge whether the recovery happens; it states what has to happen. The panel fires nothing and sits outside the 2-of-3 count.</li>
+</ul>
 </details>
 <details class="sub"><summary>Trigger detail &amp; audit record</summary>
 <b>Condition 1 — numbers and guide: FIRED (deterioration)</b>
@@ -804,7 +946,7 @@ Every cell verified against its source document rather than inferred from docume
 
 </div>
 <script type="application/json" id="drift-entry">
-{"ticker": "GEN", "company": "Genuit Group plc", "kind": "ticker", "direction": "down", "headline": "All three conditions fire: LFL negative two prints running, vitality now withheld at H1 too", "trigger": "Cond 1 hard (2 consecutive red on Rank 1) · Cond 2 text (-2) · Cond 3 drift (R4 withheld)", "alert": true, "fired": 3, "fired_of": 3, "lights": "rrr", "rns_type": "H1 R", "rns_date": "2026-08-11", "build_date": "2026-08-11", "spec_version": "v5.1", "next_test": "Nov-2026 trading update — does the May–June LFL recovery hold, and does vitality return", "grid": {"labels": ["R1", "R2", "R3", "R4", "R5"], "periods": ["H1 22", "H2 22", "H1 23", "H2 23", "H1 24", "H2 24", "H1 25", "H2 25", "H1 26"], "rows": ["rrrrrggar", "-rgrrggar", "rgaaaaraa", "--rxrxrxx", "------r-g"], "note": "R1 LFL · R2 UOP · R3 margin · R4 vitality · R5 cash conv., half grain, right-anchored on H1 FY26."}, "url": "GEN.html"}
+{"ticker": "GEN", "company": "Genuit Group plc", "kind": "ticker", "direction": "down", "headline": "All three conditions fire: LFL negative two prints running, vitality now withheld at H1 too", "trigger": "Cond 1 hard (2 consecutive red on Rank 1) · Cond 2 text (-2) · Cond 3 drift (R4 withheld)", "alert": true, "fired": 3, "fired_of": 3, "lights": "rrr", "rns_type": "H1 R", "rns_date": "2026-08-11", "build_date": "2026-08-11", "spec_version": "v5.3", "trend": {"mode": "share", "cells": "a-r", "rows": [{"m": "REV", "gap": -1.4}, {"m": "EBITDA", "gap": null}, {"m": "PBT", "gap": -2.7}]}, "next_test": "Nov-2026 trading update — does the May–June LFL recovery hold, and does vitality return", "grid": {"labels": ["R1", "R2", "R3", "R4", "R5"], "periods": ["H1 22", "H2 22", "H1 23", "H2 23", "H1 24", "H2 24", "H1 25", "H2 25", "H1 26"], "rows": ["rrrrrggar", "-rgrrggar", "rgaaaaraa", "--rxrxrxx", "------r-g"], "note": "R1 LFL · R2 UOP · R3 margin · R4 vitality · R5 cash conv., half grain, right-anchored on H1 FY26."}, "url": "GEN.html"}
 </script>
 <script>
 document.querySelectorAll('table.grid').forEach(function(tb){
@@ -848,7 +990,6 @@ document.querySelectorAll('table.dr').forEach(function(tb){
    var c=r.querySelectorAll('td');
    idx.forEach(function(i){if(c[i])c[i].classList.add('hl')});});});});});
 
-document.querySelectorAll('.gbar').forEach(function(b){
- b.addEventListener('click',function(){b.nextElementSibling.classList.toggle('open')});});
+
 </script>
 </body></html>
