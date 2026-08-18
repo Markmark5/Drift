@@ -2195,6 +2195,70 @@
         ],
         "note": "Ranks 1-5 at half grain; rightmost cell is the Aug-26 trading update, which quantifies nothing."
       }
+    },
+    {
+      "ticker": "CHRT",
+      "company": "Cohort plc",
+      "kind": "ticker",
+      "direction": "watch",
+      "headline": "May-26 guide RAISE confirmed at a record FY26 — but S&E's order book fell 6% and Group revenue growth decelerated 20 points.",
+      "trigger": "1 of 3: Numbers & guide green (G RAISE May-26); Language amber; Disclosure unlit",
+      "alert": false,
+      "fired": 1,
+      "fired_of": 3,
+      "lights": "ga-",
+      "rns_type": "FY R",
+      "rns_date": "2026-07-15",
+      "build_date": "2026-08-18",
+      "spec_version": "5.3e",
+      "next_test": "H1 FY27 results ~Dec-26: S&E order book above £389.3m and intake ex-Saab above H1 revenue",
+      "url": "CHRT.html",
+      "trend": {
+        "mode": "growth",
+        "cells": "g-g",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": 10.9
+          },
+          {
+            "m": "EBITDA",
+            "gap": null
+          },
+          {
+            "m": "PBT",
+            "gap": 26.3
+          }
+        ]
+      },
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "",
+          "H1 23",
+          "FY 23",
+          "H1 24",
+          "FY 24",
+          "H1 25",
+          "FY 25",
+          "H1 26",
+          "FY 26"
+        ],
+        "rows": [
+          "--rggrrra",
+          "---grgrgr",
+          "--aaagrra",
+          "----rggrr",
+          "--aaagaaa"
+        ],
+        "note": "Ranks 1-5, H1/FY reduced-grain columns FY23-FY26, right-anchored on FY26 Final; cell 1 pads blank"
+      }
     }
   ]
 }
