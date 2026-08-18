@@ -6,11 +6,14 @@
 <title>MTEC — Longitudinal Drift Tracker</title>
 <style>
   :root{
-    --ink:#1a1a1a; --muted:#5b5b5b; --line:#d9d9d9; --line2:#ececec;
-    --green:#1f8b4c; --green-tint:#e9f5ee; --green-b:#1f8b4c;
-    --amber:#c98a12; --amber-tint:#fdf4e3; --amber-b:#c98a12; --caveat:#faeeda;
-    --red:#c0392b; --red-tint:#fdecea; --red-b:#c0392b;
-    --card:#f7f6f2; --hl:#fff6d6; --hlpink:#fde8ef;
+    /* Appendix E.1 — page-level variables the card requires */
+    --red:#b3261e; --green:#1e7a45; --amber:#9a6a00;
+    --red2:#d94436; --green2:#2f9e5c; --amber2:#c98f16;
+    --line:#d8d5cf; --ink:#16150f; --mute:#5f5c54; --paper:#f7f6f2; --muted:#6b6860;
+    /* page extras (not card-owned) */
+    --line2:#ececec; --green-tint:#e9f5ee; --green-b:#1f8b4c;
+    --amber-tint:#fdf4e3; --amber-b:#c98a12; --red-tint:#fdecea; --red-b:#c0392b;
+    --hl:#fff6d9; --hlpink:#fde8ef;
   }
   *{box-sizing:border-box;}
   body{
@@ -26,37 +29,107 @@
   .subtle{color:var(--muted);}
   .mono{font-variant-numeric:tabular-nums;}
 
-  /* ---------- VERDICT CARD ---------- */
-  .verdict{
-    display:flex; border:6px solid var(--amber-b); border-radius:12px; overflow:hidden;
-    max-width:1100px; margin:6px 0 10px; background:#fff;
+  /* ==== VERDICT CARD — LOCKED v5.3d (Appendix E.2, copied whole) ==== */
+  .card{display:flex;border:6px solid var(--dir);border-radius:12px;overflow:hidden;
+    max-width:1180px;margin:0 0 30px;background:#fff}
+  .card.up{--dir:#2f9e5c}
+  .card.watch{--dir:#c98f16}
+  .card.down{--dir:#d94436}
+
+  .rail{width:82px;flex:0 0 82px;background:var(--dir);color:#fff;display:flex;
+    flex-direction:column;align-items:center;justify-content:flex-start;
+    padding:16px 6px;gap:12px;position:relative}
+  .badge{width:36px;height:36px;border-radius:50%;border:2px solid #fff;
+    display:flex;align-items:center;justify-content:center;flex:0 0 36px}
+  .railtkr{writing-mode:vertical-rl;transform:rotate(180deg);text-transform:uppercase;
+    letter-spacing:.12em;font-size:19px;font-weight:700;color:#fff;flex:0 0 auto}
+  .raillab{writing-mode:vertical-rl;transform:rotate(180deg);text-transform:uppercase;
+    letter-spacing:.16em;font-size:14px;font-weight:600;color:rgba(255,255,255,.9);flex:0 0 auto}
+  .railco{writing-mode:vertical-rl;transform:rotate(180deg);letter-spacing:.07em;
+    font-size:13.5px;font-weight:500;color:rgba(255,255,255,.85);flex:0 0 auto;
+    max-height:260px;overflow:hidden}
+  .railgap{flex:1 1 auto;min-height:26px}
+  .tier1{position:absolute;bottom:14px;font-size:18px}
+
+  .cbody{flex:1;padding:20px 22px 22px;min-width:0}
+  .chead{font-size:22px;font-weight:700;line-height:1.25;margin:0 0 12px}
+  .pills{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:14px}
+  .pill{background:var(--paper);border:1px solid var(--line);border-radius:999px;
+    padding:4px 11px;font-size:11.5px;color:var(--mute);white-space:nowrap}
+  .dot{color:var(--line)}
+
+  /* trigger lights */
+  .lights{background:#2b2a26;border-radius:12px;padding:12px 13px;max-width:1100px;
+    display:flex;gap:10px;align-items:stretch;flex-wrap:wrap}
+  .lamp{flex:1 1 200px;background:#3b3934;border-radius:9px;padding:10px 11px;
+    position:relative;min-width:190px}
+  .lamp.off,.lamp.amb{background:#333129}
+  .bulb{width:28px;height:28px;border-radius:50%;margin-bottom:7px;
+    border:2px solid rgba(255,255,255,.28);box-shadow:0 0 0 4px rgba(255,255,255,.07)}
+  .b-r{background:#ff3b30} .b-g{background:#21d05e} .b-a{background:#ffb020} .b-o{background:#57544c}
+  .lname{font-size:15.5px;font-weight:700;color:#fff;line-height:1.15}
+  .lamp.off .lname,.lamp.amb .lname{color:#a8a49a}
+  .lreason{font-size:11.5px;color:#c9c6bd;margin-top:4px;line-height:1.35}
+  .ldate{position:absolute;top:10px;right:11px;font-size:11px;color:#c9c6bd}
+  .lamp.off .ldate,.lamp.amb .ldate{color:#8d8981}
+  .tally{flex:0 0 78px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+  .tally b{font-size:26px;font-weight:700;color:#fff;line-height:1}
+  .tally span{font-size:10.5px;letter-spacing:.14em;color:#c9c6bd;margin-top:4px}
+
+  /* balance-sheet strip — hosts the Trend Watch panel per Appendix C */
+  .bstrip{margin-top:10px;border:1px dashed #57544c;border-radius:9px;padding:9px 11px;
+    display:flex;align-items:stretch;gap:10px}
+  .bsweep{flex:1;display:flex;align-items:center;gap:10px;padding-right:14px;min-width:230px}
+  .bbulb{width:20px;height:20px;border-radius:50%;flex:0 0 20px;border:2px solid rgba(255,255,255,.25)}
+  .bstrip .t{font-size:13px;color:#fff;font-weight:600}
+  .bstrip .s{font-size:11px;color:#c9c6bd;margin-top:2px}
+
+  /* company-guide drawer — part of the card, not one of the page's five */
+  details.guide{margin:14px 0;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  details.guide>summary{background:#2b2a26;color:#fff;padding:8px 15px;cursor:pointer;
+    list-style:none;font-family:'Caveat',"Comic Sans MS",cursive;font-weight:700;font-size:24px}
+  details.guide>summary::-webkit-details-marker{display:none}
+  details.guide>summary .em{font-size:22px;margin-right:6px}
+  .gbody{padding:14px 16px;font-size:12.5px;line-height:1.55}
+  .gbody h4{font-family:'Caveat',"Comic Sans MS",cursive;font-weight:700;font-size:22px;margin:12px 0 4px}
+  .gbody h4:first-child{margin-top:0}
+  .gbody .vintage{color:var(--muted);font-size:11px;margin-top:12px}
+
+  /* four boxes */
+  .boxes{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 14px}
+  .box{background:#f2f1ec;border-radius:0 0 10px 10px;border-top:3px solid var(--dir);
+    padding:12px 15px 13px}
+  .box .lb{font-size:13px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted)}
+  .box .hl2{font-size:19px;font-weight:700;margin:3px 0 4px}
+  .box p{font-size:13px;line-height:1.45;margin:0}
+  .cbul{margin:0;padding-left:18px;font-size:13px}
+  .cbul li{margin-bottom:6px}
+
+  @media(max-width:760px){
+    .boxes{grid-template-columns:1fr}
+    .card{flex-direction:column}
+    .rail{width:100%;flex-direction:row;padding:10px;align-items:center;gap:10px}
+    .railtkr,.raillab,.railco{writing-mode:horizontal-tb;transform:none;max-height:none}
+    .railgap{display:none}
+    .bstrip{flex-direction:column}
+    .bsweep{min-width:0;padding-right:0}
   }
-  .verdict .rail{
-    width:82px; flex:0 0 82px; background:var(--amber-tint);
-    display:flex; flex-direction:column; align-items:center; justify-content:space-between;
-    padding:16px 0;
+
+  /* ==== TREND WATCH PANEL — LOCKED v5.3 (Appendix C.1, copied whole) ==== */
+  .tw{flex:1; border-left:1px dashed #57544c; padding-left:16px; min-width:0}
+  .tw .plab{font-size:9.5px; letter-spacing:.14em; text-transform:uppercase;
+   color:#8d8981; font-weight:700}
+  .tw .dset{display:flex; gap:20px; margin-top:8px}
+  .tw .dcell{text-align:center; width:88px}
+  .tw .dnm{font-size:9px; letter-spacing:.1em; color:#8d8981; margin-bottom:2px}
+  .tw .dfig{font-size:11px; font-weight:700; margin-top:2px}
+  .tw .dtrend{font-size:9px; color:#c9c6bd; margin-top:2px}
+  .tw .dfc{font-size:8.5px; color:#6d6a62}
+  @media(max-width:760px){
+   .tw{border-left:none;border-top:1px dashed #57544c;padding-left:0;padding-top:10px;margin-top:2px}
+   .tw .dset{justify-content:space-between;gap:8px}
+   .tw .dcell{width:32%}
   }
-  .verdict .badge{width:36px; height:36px; border-radius:50%; border:2px solid var(--amber-b);
-    display:flex; align-items:center; justify-content:center;}
-  .verdict .rail .vlabel{writing-mode:vertical-rl; transform:rotate(180deg);
-    text-transform:uppercase; letter-spacing:.18em; font-weight:800; font-size:12px; color:var(--amber-b);}
-  .verdict .body{flex:1; padding:18px 22px 20px;}
-  .verdict .headline{font-size:22px; font-weight:700; line-height:1.32; margin:2px 0 14px;}
-  .pillrow{display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:16px;}
-  .pill{border:1px solid var(--line); border-radius:999px; padding:3px 11px; font-size:12px;
-    color:var(--ink); background:#fafafa; white-space:nowrap;}
-  .pill.alert{background:#fdecea; border-color:#f0c3bd; color:#a5271b; font-weight:600;}
-  .pill.bs{background:var(--green-tint); border-color:#bfe3cd; color:#186b3b;}
-  .dot{color:var(--line); padding:0 2px;}
-  .grid2{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:14px;}
-  .scard{border:1px solid var(--line2); border-radius:8px; padding:11px 13px; background:#fbfbfa;}
-  .scard.caveat{background:var(--caveat); border-color:#ecd9b0;}
-  .scard .k{font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted);
-    font-weight:700; margin-bottom:4px;}
-  .scard .v{font-size:13px; line-height:1.42;}
-  .vbullets{margin:6px 0 0; padding-left:0; list-style:none;}
-  .vbullets li{position:relative; padding-left:18px; margin:9px 0; font-size:13px; line-height:1.5;}
-  .vbullets li::before{content:"▸"; position:absolute; left:0; color:var(--amber-b); font-size:12px; top:1px;}
 
   /* ---------- LEDGER ---------- */
   table{border-collapse:collapse; width:100%; font-size:13px;}
@@ -65,33 +138,6 @@
   .ledger th{background:#f4f4f2; font-weight:700; font-size:11.5px; letter-spacing:.03em; text-transform:uppercase; color:#3a3a3a;}
   .ledger td.rank{font-weight:800; text-align:center; width:38px;}
   .st-red{color:var(--red); font-weight:600;} .st-green{color:var(--green); font-weight:600;}
-
-  /* ---------- §2 UNIFIED GRID ---------- */
-  .gridwrap{overflow-x:auto; max-width:100%;}
-  table.fgrid{table-layout:fixed; width:100%; min-width:920px; border:1px solid var(--line);}
-  table.fgrid col.lab{width:150px;}
-  table.fgrid col.q{width:calc((100% - 150px)/8);}
-  table.fgrid th,table.fgrid td{border:1px solid var(--line2); text-align:center; padding:7px 4px;}
-  table.fgrid thead .yband th{background:#eef0ee; font-weight:800; font-size:11px; letter-spacing:.02em; color:#33413a; border-bottom:1px solid var(--line);}
-  table.fgrid thead .prow th{background:#f6f7f6; font-weight:700; font-size:11.5px; color:#3a3a3a; cursor:pointer; user-select:none;}
-  table.fgrid thead .prow th.lab{cursor:default; text-align:left; padding-left:10px;}
-  table.fgrid thead .prow th:hover:not(.lab){background:#eaeee9;}
-  .secbar td{background:#f2f1ec; text-align:left; padding:9px 10px; border-top:1px solid var(--line);}
-  .secbar .rtitle{font-weight:800; font-size:12.5px;}
-  .secbar .rnat{color:var(--muted); font-weight:500; font-size:11.5px;}
-  tr.strip td{padding:2px 4px; font-size:10px; color:var(--muted); background:#fcfcfb; letter-spacing:.02em;}
-  tr.strip td.lab{text-align:left; padding-left:10px; font-style:italic;}
-  tr.valrow td{background:#fff; font-variant-numeric:tabular-nums;}
-  tr.valrow td.lab{text-align:left; padding-left:10px; color:var(--muted); font-size:11px; font-weight:600;}
-  .val{font-weight:700; font-size:13px; display:block; line-height:1.25;}
-  .chg{font-size:10.5px; display:block; line-height:1.3; margin-top:1px;}
-  .chg .neg{color:var(--red);}
-  .t-up{color:var(--green);} .t-flat{color:var(--amber);} .t-dn{color:var(--red);}
-  td.bs{background:#fcfbf5 !important; box-shadow:inset 0 0 0 2px #efe4b8;}
-  td.bs .val{font-weight:800;}
-  .withheld{color:var(--red); font-weight:800; font-size:15px;}
-  sup.flag{color:var(--muted); font-weight:600; font-size:9px;}
-  td.qhl{background:#fff6d6 !important;}
 
   /* ---------- §2.0 BAR ---------- */
   .checks{max-width:1100px; margin:4px 0 0;}
@@ -134,16 +180,16 @@
   table#drift thead th:hover:not(.lab){background:#eaeee9;}
   table#drift td.mlab{text-align:left; padding-left:8px; font-weight:700; background:#fafafa; font-size:11px;}
   table#drift td .v{display:block; font-size:9px; color:var(--muted); margin-top:1px;}
-  table#drift td.qhl{background:#fff6d6 !important;}
+  table#drift td.hl{background:#fff6d6 !important;}
   tr.bbrow td{padding:3px 4px; font-size:10.5px; color:#4a4a4a; background:#fbfbf8; font-variant-numeric:tabular-nums;}
   tr.bbrow td.lab{text-align:left; padding-left:10px; font-style:italic; color:var(--muted);}
   tr.bbrow .lo{color:var(--red); font-weight:700;}
   tr.bbrow .hi{color:var(--green); font-weight:700;}
   /* award RNS (blue, thin) */
   :root{--blue:#1d5fa8; --blue-tint:#eaf2fb; --blue-b:#7fa8d9;}
-  table.fgrid col.aw{width:78px;}
-  table.fgrid th.aw, table.fgrid td.aw{background:var(--blue-tint) !important; border-left:1px solid var(--blue-b); border-right:1px solid var(--blue-b);}
-  table.fgrid thead .prow th.aw{color:var(--blue); font-size:10.5px;}
+  table.grid col.aw{width:78px;}
+  table.grid th.aw, table.grid td.aw{background:var(--blue-tint) !important; border-left:1px solid var(--blue-b); border-right:1px solid var(--blue-b);}
+  table.grid thead .prow th.aw{color:var(--blue); font-size:10.5px;}
   td.aw .val{font-size:11.5px; color:var(--blue);}
   td.aw .chg{color:var(--blue);}
   table#drift col.aw{width:58px;}
@@ -151,7 +197,7 @@
   table#drift th.aw .dt, table#drift th.aw .key{color:var(--blue);}
   table.textg tr.awrow td{background:var(--blue-tint);}
   table.textg tr.awrow td.doc .fy{color:var(--blue);}
-  .cok{color:var(--green);} .cq{color:var(--amber);} .cno{color:var(--red); font-weight:800;} .cna{color:var(--line);}
+  .cok{color:var(--green);} .cqual{color:var(--amber);} .cq{color:var(--amber);} .cno{color:var(--red); font-weight:800;} .cna{color:var(--line);}
 
   details{max-width:1100px; margin:14px 0 0; border:1px solid var(--line2); border-radius:10px; background:var(--card);}
   details.wide{max-width:1400px;}
@@ -167,33 +213,6 @@
   /* ===== v5.1 CARD, DRAWERS, DARK-PANEL FAMILY ===== */
   :root{--green2:#3aa86a; --red2:#d4695c; --amber2:#e0aa4a;}
   .cav{font-family:"Caveat","Comic Sans MS","Chalkboard SE",cursive; letter-spacing:.01em;}
-  /* trigger lights */
-  .lights{background:#2b2a26; border-radius:12px; padding:12px 13px; max-width:1100px; margin:0 0 14px;
-    display:flex; gap:10px; align-items:stretch; flex-wrap:wrap;}
-  .lamp{flex:1 1 210px; border-radius:9px; padding:9px 11px 10px; position:relative; min-width:200px;}
-  .lamp.on{background:#3b3934;} .lamp.off{background:#333129;}
-  .lamp .bulb{width:28px; height:28px; border-radius:50%; display:inline-block; vertical-align:middle;
-    border:2px solid rgba(255,255,255,.35); box-shadow:0 0 0 4px rgba(255,255,255,.07); margin-right:9px;}
-  .b-red{background:#ff3b30;} .b-green{background:#21d05e;} .b-amber{background:#ffb020;} .b-off{background:#57544c;}
-  .lamp .nm{font-size:15.5px; font-weight:700; color:#fff; display:inline-block; vertical-align:middle;}
-  .lamp.off .nm{color:#a8a49a;}
-  .lamp .rsn{font-size:11.5px; color:#c9c6bd; margin-top:6px; line-height:1.35;}
-  .lamp.off .rsn{color:#8d8981;}
-  .lamp .fdate{position:absolute; top:9px; right:11px; font-size:11px; color:#c9c6bd;}
-  .lamp.off .fdate, .lamp.amberlamp .fdate{color:#8d8981;}
-  .tally{flex:0 0 84px; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:4px 0;}
-  .tally .n{font-size:26px; font-weight:700; color:#fff; line-height:1;}
-  .tally .lb{font-size:10.5px; letter-spacing:.14em; color:#c9c6bd; margin-top:4px;}
-  .bsstrip{flex:1 1 100%; border:1px dashed #6b6860; border-radius:9px; padding:8px 11px; display:flex; align-items:center; gap:10px;}
-  .bsstrip .bulb{width:20px; height:20px;}
-  .bsstrip .txt{font-size:12.5px; color:#fff; font-weight:600;}
-  .bsstrip .sub2{font-size:11px; color:#8d8981; display:block; font-weight:400; margin-top:2px;}
-  /* four boxes */
-  .boxes{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:14px 0 4px;}
-  .bx{background:#f2f1ec; border-radius:0 0 10px 10px; padding:12px 15px 13px; border-top:3px solid var(--amber2);}
-  .bx .k{font-size:13px; text-transform:uppercase; letter-spacing:.07em; color:var(--muted); font-weight:700;}
-  .bx .hd{font-size:19px; font-weight:700; margin:3px 0 4px; line-height:1.25;}
-  .bx .sn{font-size:13px; line-height:1.45;}
   /* dark panel family */
   .dbar{background:#2b2a26; color:#fff; padding:8px 15px; display:flex; align-items:center; gap:9px;}
   .dbar .t{font-size:20px; font-weight:700; line-height:1.25;} .dbar .em{font-size:22px; line-height:1;}
@@ -212,7 +231,7 @@
   .bridge .brow>div.ct{font-size:14px; font-weight:700; text-align:right; font-variant-numeric:tabular-nums;}
   .tg{background:#e9f5ee;} .tr2{background:#fdecea;} .ta{background:#fdf4e3;}
   .bridge .cap{padding:10px 13px; background:#fafafa; font-size:11px; color:var(--muted); line-height:1.5;}
-  .csbar2{flex:1 1 380px; border:2px solid var(--amber-b); background:var(--amber-tint); border-radius:10px; overflow:hidden;}
+  .csbar2{flex:1 1 380px; border:2px solid var(--green-b); background:var(--green-tint); border-radius:10px; overflow:hidden;}
   .csbar2 .inner{padding:13px 16px;}
   .csbar2 ul{margin:8px 0 0; padding-left:18px;}
   .csbar2 li{font-size:13px; line-height:1.5; margin:4px 0;}
@@ -233,34 +252,50 @@
   tr.older{display:none;} table.textg.showall tr.older{display:table-row;}
   tr.expander td{background:#f4f4f2; cursor:pointer; font-weight:700; font-size:11.5px; color:#3a3a3a; text-align:left;}
 
-  /* ===== §2 GRID SKIN — Appendix B.1 locked palette (v5.1) ===== */
-  .fgrid{--red:#b3261e; --green:#1e7a45; --amber:#9a6a00;
-         --line:#d8d5cf; --ink:#16150f; --mute:#5f5c54; --paper:#f7f6f2;}
-  table.fgrid{border:1px solid var(--line);}
-  table.fgrid th, table.fgrid td{border:1px solid var(--line);}
-  table.fgrid thead .yband th{background:#efedE7; color:var(--ink); font-size:10.5px;
-    letter-spacing:.1em; text-transform:uppercase; font-weight:700; border-bottom:1px solid var(--line);}
-  table.fgrid thead .prow th{background:var(--paper); color:var(--ink); font-size:11.5px;}
-  table.fgrid thead .prow th:hover:not(.lab){background:#eceae4;}
-  .fgrid .secbar td{text-align:left !important; background:var(--ink); border-top:1px solid var(--line); padding:7px 9px;}
-  .fgrid .secbar .rtitle{color:#fff; font-size:11.5px; letter-spacing:.07em; font-weight:700; text-transform:uppercase;}
-  .fgrid .secbar .rnat{color:#c9c6bd; font-weight:400; letter-spacing:.02em; text-transform:none;}
-  .fgrid tr.strip td{background:#fbfaf7; color:var(--mute); letter-spacing:.05em;}
-  .fgrid tr.valrow td{background:#fff;}
-  .fgrid tr.valrow td.lab{color:var(--mute); font-style:italic; font-size:11.5px; font-weight:400;}
-  .fgrid .chg{color:var(--mute);}
-  .fgrid .chg .neg, .fgrid .val .neg{color:var(--red);}
-  .fgrid .t-up{color:var(--green);} .fgrid .t-flat{color:var(--amber);} .fgrid .t-dn{color:var(--red);}
-  .fgrid .withheld{color:var(--red);}
-  .fgrid tr.bbrow td{background:#fbfaf7; color:var(--mute);}
-  .fgrid tr.bbrow .lo{color:var(--red);} .fgrid tr.bbrow .hi{color:var(--green);}
-  .fgrid td.bs{background:#fcfbf8 !important; box-shadow:none; border-top:2px solid var(--ink);}
-  .fgrid td.bs .val{font-weight:800;}
-  .fgrid td.qhl, .fgrid th.qhl{background:#fff6d9 !important;}
-  .fgrid sup.flag{color:var(--mute);}
-  .fgrid tr.agg td{background:#fff; border-top:2px solid var(--ink); color:var(--mute); font-size:11.5px; padding:6px 4px;}
-  .fgrid tr.agg td.lab{font-style:italic; font-weight:400;}
-  .fgrid tr.agg .chg{font-size:11.5px; color:var(--mute);}
+  /* ==== §2 GRID SKIN — LOCKED v4.0 (Appendix B.1, copied whole) ==== */
+  .gridwrap{overflow-x:auto; margin-bottom:16px}
+  table.grid{table-layout:fixed; width:100%; min-width:1000px; border-collapse:collapse; font-size:12.5px}
+  table.grid th, table.grid td{border:1px solid var(--line); text-align:center; padding:7px 4px; vertical-align:top}
+  table.grid col.lab{width:190px}
+  table.grid col.per{width:calc((100% - 190px)/12)} /* {N} = period column count */
+  .yband{background:#efedE7; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; font-weight:700}
+  th.phead{cursor:pointer; user-select:none; font-size:11.5px; background:var(--paper)}
+  th.phead:hover{background:#eceae4}
+  th.lab, td.lab{text-align:left !important}
+  .secbar td{background:var(--ink); color:#fff; text-align:left !important;
+   font-size:11.5px; letter-spacing:.07em; font-weight:700; padding:7px 9px}
+  .secbar .nat{font-weight:400; letter-spacing:.02em; color:#c9c6bd; text-transform:none}
+  .strip td{padding:2px 4px; font-size:10px; color:var(--mute); background:#fbfaf7; letter-spacing:.05em}
+  .strip td.lab{font-style:italic}
+  .vrow td{background:#fff}
+  .vrow td.lab{color:var(--mute); font-style:italic; font-size:11.5px}
+  .val{font-weight:700; display:block; font-size:13px}
+  .val .neg{color:var(--red)}
+  .delta{display:block; font-size:11px; color:var(--mute); margin-top:2px}
+  .delta.neg{color:var(--red)}
+  tr.agg td{background:#fff; border-top:2px solid var(--ink); color:var(--mute); font-size:11.5px; padding:6px 4px}
+  tr.agg td.lab{font-style:italic}
+  tr.agg .aval{font-weight:700; color:var(--mute)}
+  tr.agg .anote{display:inline; font-size:10.5px; margin-left:5px}
+  td.bs-col{background:#fcfbf8 !important}
+  td.bs-col .val{font-weight:800}
+  th.bs-col{font-weight:800}
+  .hl{background:#fff6d9 !important}
+
+  /* page-level additions outside Appendix B (annotation column, b:b strip, markers) */
+  .t-up{color:var(--green)} .t-flat{color:var(--amber)} .t-dn{color:var(--red)}
+  .withheld{color:var(--red); font-weight:800; font-size:15px}
+  sup.flag{color:var(--mute); font-weight:600; font-size:9px}
+  table.grid col.aw{width:78px}
+  table.grid th.aw, table.grid td.aw{background:#eaf2fb !important; border-left:1px solid #7fa8d9; border-right:1px solid #7fa8d9}
+  table.grid thead .prow th.aw{color:#1d5fa8; font-size:10.5px}
+  td.aw .val{font-size:11.5px; color:#1d5fa8}
+  td.aw .delta{color:#1d5fa8}
+  tr.bbrow td{padding:3px 4px; font-size:10.5px; color:var(--mute); background:#fbfaf7; font-variant-numeric:tabular-nums}
+  tr.bbrow td.lab{font-style:italic}
+  tr.bbrow .lo{color:var(--red); font-weight:700}
+  tr.bbrow .hi{color:var(--green); font-weight:700}
+
   .top{font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); font-weight:700;}
   .tick{font-size:26px; font-weight:800; letter-spacing:-.01em; margin:2px 0 0;}
   .tick .sub{font-size:13px; font-weight:600; color:var(--muted); letter-spacing:0; text-transform:none;}
@@ -269,85 +304,127 @@
 <body>
 <div class="wrap">
 
-  <div class="top">Longitudinal Drift Tracker · v5.1</div>
+  <div class="top">Longitudinal Drift Tracker · v5.3e</div>
   <div class="tick">Made Tech Group plc <span class="sub">AIM: MTEC · digital/data/tech services to UK public sector</span></div>
 
-  <!-- ============ VERDICT CARD ============ -->
-  <div class="verdict">
+  <!-- ============ VERDICT CARD — Appendix E ============ -->
+  <div class="card up">
     <div class="rail">
       <div class="badge">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c98a12" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
       </div>
-      <div class="vlabel">Stable — Watch</div>
-      <div style="font-size:10px;color:#c98a12;font-weight:700;">⚠️</div>
+      <div class="raillab">Turning up</div>
+      <div class="railgap"></div>
+      <div class="railtkr">MTEC</div>
+      <div class="railco">Made Tech Group plc</div>
+      <div class="railgap"></div>
     </div>
-    <div class="body">
-      <div class="headline">Every hard metric is accelerating and bookings quantified mid-cycle show a strong H2 recovery — but the FY total and backlog are still unprinted.</div>
-      <div class="pillrow">
-        <span class="pill">FY Trading Update · 30 Jun 2026</span>
+    <div class="cbody">
+      <h1 class="chead">FY27 guidance raised above consensus on a record £40m award, and the withheld backlog returns at c.£115m — the disclosure gap closed upward.</h1>
+
+      <div class="pills">
+        <span class="pill">Contract Award &amp; FY27 Guide · 18 Aug 2026</span>
         <span class="pill">FY-end 31 May</span>
-        <span class="dot">•</span>
-        <span class="pill bs">Clean · net cash</span>
+        <span class="dot">·</span>
+        <span class="pill">B/S: Clean · net cash</span>
       </div>
 
       <div class="lights">
-        <div class="lamp on">
-          <span class="fdate">Jun-26</span>
-          <span class="bulb b-green"></span><span class="nm">Numbers &amp; guide</span>
-          <div class="rsn">Guide raised again; revenue +27%, margin +250bps, third straight beat.</div>
+        <div class="lamp">
+          <div class="ldate">Jun-26 · Aug-26</div>
+          <div class="bulb b-g"></div>
+          <div class="lname">Numbers &amp; guide</div>
+          <div class="lreason">Second 2026 raise: FY27 guided £63–66m against £60.3m consensus.</div>
         </div>
         <div class="lamp off">
-          <span class="bulb b-off"></span><span class="nm">Language</span>
-          <div class="rsn">Positive every print since Jun-24, but no two-print rise from zero.</div>
+          <div class="bulb b-o"></div>
+          <div class="lname">Language</div>
+          <div class="lreason">Positive throughout, but no two-print rise from zero or below.</div>
         </div>
-        <div class="lamp on">
-          <span class="fdate">Jun-26</span>
-          <span class="bulb b-red"></span><span class="nm">Disclosure</span>
-          <div class="rsn">Backlog unquantified against a six-print habit; no FY26 bookings total.</div>
+        <div class="lamp">
+          <div class="ldate">Aug-26</div>
+          <div class="bulb b-g"></div>
+          <div class="lname">Disclosure</div>
+          <div class="lreason">Withheld backlog re-quantified at record c.£115m after two documents dark.</div>
         </div>
-        <div class="tally"><div class="n">2/3</div><div class="lb">FIRED</div></div>
-        <div class="bsstrip">
-          <span class="bulb b-green"></span>
-          <span class="txt">Clean · net cash<span class="sub2">Sweep sits outside the 2-of-3 count</span></span>
+        <div class="tally"><b>2/3</b><span>FIRED</span></div>
+        <div class="bstrip" style="flex-basis:100%">
+          <div class="bsweep">
+            <div class="bbulb b-g"></div>
+            <div><div class="t">Clean · net cash</div>
+              <div class="s">Sweep sits outside the 2-of-3 count</div></div>
+          </div>
+          <div class="tw">
+            <div class="plab">TREND WATCH · FY1 FC (AUG-26) VS H2 (Y-ON-Y) GROWTH · PRE-RNS</div>
+            <div class="dset">
+   <div class="dcell"><div class="dnm">REVENUE</div>
+   <svg width="50" height="50" viewBox="0 0 42 42">
+   <circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/>
+   <circle cx="21" cy="21" r="15.915" fill="none" stroke="#21d05e" stroke-width="5"
+    stroke-dasharray="62 100" transform="rotate(-90 21 21)" stroke-linecap="round"/>
+   <line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/>
+   </svg>
+   <div class="dfig" style="color:#7bd88f">+24.0pp</div>
+   <div class="dtrend">+27.5% → <b>+26.4%</b></div><div class="dfc">fc +2.4%</div></div>
+   <div class="dcell"><div class="dnm">EBITDA</div>
+   <svg width="50" height="50" viewBox="0 0 42 42">
+   <circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/>
+   <circle cx="21" cy="21" r="15.915" fill="none" stroke="#21d05e" stroke-width="5"
+    stroke-dasharray="83 100" transform="rotate(-90 21 21)" stroke-linecap="round"/>
+   <line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/>
+   </svg>
+   <div class="dfig" style="color:#7bd88f">+104.2pp</div>
+   <div class="dtrend">+33.3% → <b>+105.9%</b></div><div class="dfc">fc +1.7%</div></div>
+   <div class="dcell"><div class="dnm">PBT</div>
+   <svg width="50" height="50" viewBox="0 0 42 42">
+   <circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/>
+   <line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/>
+   </svg>
+   <div class="dfig" style="color:#6d6a62">n/a</div>
+   <div class="dtrend">FY26 PBT unprinted</div><div class="dfc"></div></div>
+            </div>
+          </div>
         </div>
       </div>
 
       <details class="guide">
-        <summary><span class="em" style="font-size:22px;">💡</span> <span class="cav">Idiot's guide to the company — What Made Tech actually does</span></summary>
+        <summary><span class="em">💡</span>Idiot's guide to the company — What Made Tech actually does</summary>
         <div class="gbody">
-          <div class="gh cav">What they sell</div>
+          <h4>What it is</h4>
           <p>Made Tech builds and runs the digital plumbing of British government — the websites you use to renew something, the case systems caseworkers type into, the data platforms behind them. Founded 2008, floated on AIM in 2021.</p>
-          <div class="gh cav">Where they are</div>
+          <h4>Where it's based</h4>
           <p>London head office, with people in Manchester and Bristol and a lot of the work done sitting inside client buildings.</p>
-          <div class="gh cav">How the money arrives</div>
+          <h4>How it makes money</h4>
           <p>They sell their people's time. Departments buy through government purchasing frameworks, sign up for a few years, and pay largely by the day. Two consequences: growth needs bodies, and every contract eventually runs out and has to be won again. That second one is why the order book matters more here than the sales line.</p>
-          <p>Their own staff cost less than hired-in contractors, so the more work their employees do rather than freelancers, the more of each pound survives to profit. That single swap is most of the margin story of the last two years.</p>
-          <div class="gh cav">Recent changes worth knowing</div>
-          <p>A new finance chief arrived March 2026 — the second in three years. The government's June 2025 Spending Review released department money from April 2026, which is fresh demand arriving just after a thin year for orders.</p>
-          <p><em>The investment argument in one line: a re-rated services business whose profits are rising much faster than its sales, where the only real question is whether the order book refills fast enough to keep it going.</em></p>
-          <p class="subtle" style="font-size:11px;">As at the FY26 Trading Update, 30 June 2026.</p>
+          <p><b>Who controls the price.</b> Departments do, through competitive framework bidding. Made Tech's lever is cost, not price: its own staff cost less than hired-in contractors, so the more work employees do rather than freelancers, the more of each pound survives to profit. That single swap is most of the margin story of the last two years.</p>
+          <h4>What's changed recently</h4>
+          <p>A new finance chief arrived March 2026 — the second in three years. The government's June 2025 Spending Review released department money from April 2026, and in August 2026 the company won the largest contract in its history, worth c.£40m over four years.</p>
+          <p class="vintage"><em>The bet, in one line: a re-rated services business whose profits are rising much faster than its sales, where the only real question is whether the order book refills fast enough to keep it going.</em></p>
+          <p class="vintage">Stable facts, as at 18 August 2026.</p>
         </div>
       </details>
 
       <div class="boxes">
-        <div class="bx"><div class="k">Current state</div><div class="hd">Beat, third time</div>
-          <div class="sn">FY26 revenue £58.9m and EBITDA £5.9m both cleared a thrice-raised consensus; margin c.10.0%, ahead of the company's own indicated guidance.</div></div>
-        <div class="bx"><div class="k">Warning you get</div><div class="hd">~3 months</div>
-          <div class="sn">Bookings weakened at Feb-23; the cut landed May-23 — against revenue the lead ran a year. Now recovering, full-year total still unprinted.</div></div>
-        <div class="bx"><div class="k">Argues against</div><div class="hd">Beaten every time</div>
-          <div class="sn">Every guide since Jun-24 was met or beaten, and the April award RNS quantified the bookings recovery the withhold appeared to hide.</div></div>
-        <div class="bx"><div class="k">Next test</div><div class="hd">Sep 2026</div>
-          <div class="sn">FY26 results must print the bookings total and year-end backlog against £92.2m. Near £80m clears the watch; another withhold converts it.</div></div>
+        <div class="box"><div class="lb">Current state</div><div class="hl2">Raised twice in 2026</div>
+          <p>FY27 now guided to £63–66m revenue and £6.3–6.6m EBITDA, against consensus of £60.3m and £6.0m set weeks earlier.</p></div>
+        <div class="box"><div class="lb">Warning you get</div><div class="hl2">~3 months</div>
+          <p>Bookings weakened at Feb-23, the cut landed May-23. The same metric family now points the other way: backlog at a record c.£115m.</p></div>
+        <div class="box"><div class="lb">Argues against</div>
+          <p>One consortium award carries the upgrade, revenue starts only in FY27 with the weight in FY28, and no FY26 bookings total has ever been printed.</p></div>
+        <div class="box"><div class="lb">Next test</div><div class="hl2">Sep 2026</div>
+          <p>FY26 final results must print the bookings total and confirm the backlog basis, with promised further colour on the FY27 outlook.</p></div>
       </div>
 
-      <ul class="vbullets">
-        <li><strong>Why the lead matters here:</strong> at the FY23 turn bookings moved first, the guide cut followed, and revenue only fell a year later — the same ordering that now makes an unprinted bookings total worth more than a strong profit print.</li>
-        <li><strong>Earnings quality improving underneath:</strong> statutory PBT has been positive four consecutive periods (H1 FY25 +£0.4m, FY25 +£2.0m, H1 FY26 +£1.3m) after two years of statutory losses beside profitable adjusted figures — the wedge is closing, not widening.</li>
-        <li><strong>Second finance chief in three years</strong> (Lovegrove→Elton early 2024; Elton→Swinyard Mar 2026), the latest arriving three months before this RNS. No disruption evident yet — track into September.</li>
+      <ul class="cbul">
+        <li><strong>The withhold resolved upward, which is the outcome the amber verdict was holding open:</strong> backlog was dark from Feb-26's £74.4m through two documents, and returns at c.£115m — above the previous record £92.2m and +c.£40.6m on the last print.</li>
+        <li><strong>Green convergence, so the alert is a green-shoot one:</strong> a G-column raise and a re-quantified dropped metric both fired green on the same document. Read it against the record — this guide has been met or beaten every time since Jun-24.</li>
+        <li><strong>What would break it:</strong> a September bookings total implying FY26 book-to-bill materially below 1.0x, or a backlog basis that turns out to include consortium work Made Tech does not control.</li>
       </ul>
     </div>
   </div>
-  <div class="footnote">Direction is amber with a green-ward tilt: actuals are the strongest in the record and the rank-1 bookings signal recovered mid-period per the Apr-26 quantification, but the FY26 bookings total and the backlog position (last seen −7.9% at Feb-26) remain unprinted against cadence. STABLE—WATCH holds until September prints both.</div>
+
+  <div class="footnote prose" style="margin:0 0 30px;">Direction turns up: two conditions fired green on the same document — a numeric FY27 guide above consensus and the re-quantification of a metric withheld through two prior documents, at a record level. The residual watch is narrow: FY26 bookings have still never been totalled, and the £40m award's revenue is weighted to FY28.</div>
 
   <!-- ============ §1 LEDGER ============ -->
   <h2 class="sec"><span class="n">§1</span> &nbsp;Metric Ledger</h2>
@@ -391,190 +468,196 @@
   </div></details>
 
   <!-- ============ §2 UNIFIED FORWARD GRID ============ -->
-  <h2 class="sec"><span class="n">§2</span> &nbsp;Unified Forward Grid <span class="subtle" style="text-transform:none;letter-spacing:0;font-weight:400;">· H1 / H2† spine, 11 columns · FY on muted aggregate rows · H2 derived (FY − H1), watch-flag grade</span></h2>
+  <h2 class="sec"><span class="n">§2</span> &nbsp;Unified Forward Grid <span class="subtle" style="text-transform:none;letter-spacing:0;font-weight:400;">· H1 / H2† spine, 12 columns · FY on muted aggregate rows · H2 derived (FY − H1), watch-flag grade</span></h2>
   <div class="gridwrap">
-    <table class="fgrid">
+    <table class="grid">
       <colgroup>
-        <col class="lab"><col class="q"><col class="q"><col class="q"><col class="q"><col class="q"><col class="q"><col class="q"><col class="q"><col class="q"><col class="aw"><col class="q">
+        <col class="lab"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="aw"><col class="per"><col class="per">
       </colgroup>
       <thead>
         <tr class="yband">
-          <th></th><th colspan="2">FY22</th><th colspan="2">FY23</th><th colspan="2">FY24</th><th colspan="2">FY25</th><th colspan="3">FY26</th>
+          <th></th><th colspan="2">FY22</th><th colspan="2">FY23</th><th colspan="2">FY24</th><th colspan="2">FY25</th><th colspan="3">FY26</th><th>FY27</th>
         </tr>
         <tr class="prow">
-          <th class="lab">Metric</th>
-          <th data-p="H1">H1 FY22</th><th data-p="H2">H2 FY22†</th>
-          <th data-p="H1">H1 FY23</th><th data-p="H2">H2 FY23†</th>
-          <th data-p="H1">H1 FY24</th><th data-p="H2">H2 FY24†</th>
-          <th data-p="H1">H1 FY25</th><th data-p="H2">H2 FY25†</th>
-          <th data-p="H1">H1 FY26</th>
-          <th data-p="AWD" class="aw">Apr-26 award</th>
-          <th data-p="H2">⭐ H2 FY26† · FY TU Jun-26</th>
+          <th class="lab phead" style="cursor:default">Metric</th>
+          <th class="phead" data-p="H1">H1 FY22</th><th class="phead" data-p="H2">H2 FY22†</th>
+          <th class="phead" data-p="H1">H1 FY23</th><th class="phead" data-p="H2">H2 FY23†</th>
+          <th class="phead" data-p="H1">H1 FY24</th><th class="phead" data-p="H2">H2 FY24†</th>
+          <th class="phead" data-p="H1">H1 FY25</th><th class="phead" data-p="H2">H2 FY25†</th>
+          <th class="phead" data-p="H1">H1 FY26</th>
+          <th class="phead" data-p="AWD" class="aw">Apr-26 award</th>
+          <th class="phead" data-p="H2">H2 FY26† · FY TU Jun-26</th>
+          <th class="phead bs-col" data-p="CA">⭐ CA · Aug-26</th>
         </tr>
       </thead>
       <tbody>
 
         <!-- RANK 1 -->
-        <tr class="secbar"><td colspan="12"><span class="rtitle">Rank 1 · Sales Bookings</span> &nbsp;<span class="rnat">— cumulative flow, period awards (£m) · scored H1-vs-H1, H2-vs-H2</span></td></tr>
-        <tr class="strip"><td class="lab">period</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td class="aw">YTD</td><td>H2†</td></tr>
-        <tr class="valrow">
+        <tr class="secbar"><td colspan="13">Rank 1 · Sales Bookings <span class="nat">— cumulative flow, period awards (£m) · scored H1-vs-H1, H2-vs-H2</span></td></tr>
+        <tr class="strip"><td class="lab">period</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td class="aw">YTD</td><td>H2†</td><td>current</td></tr>
+        <tr class="vrow">
           <td class="lab">Value / Δ(YoY)</td>
-          <td><span class="val">£26.5m</span><span class="chg">—</span></td>
-          <td><span class="val">£24.6m<sup class="flag">†</sup></span><span class="chg">—</span></td>
-          <td><span class="val">£32.6m</span><span class="chg"><span class="t-up">🟢↗</span> +23.0%</span></td>
-          <td><span class="val">£37.3m<sup class="flag">†</sup></span><span class="chg"><span class="t-up">🟢↗</span> +51.6%</span></td>
-          <td><span class="val">£12.6m</span><span class="chg"><span class="t-dn">🔴↘</span> <span class="neg">−61.3%</span></span></td>
-          <td><span class="val">£23.4m<sup class="flag">†</sup></span><span class="chg"><span class="t-dn">🔴↘</span> <span class="neg">−37.3%</span></span></td>
-          <td><span class="val">£42.0m</span><span class="chg"><span class="t-up">🟢↗</span> +233%</span></td>
-          <td><span class="val">£40.1m<sup class="flag">†</sup></span><span class="chg"><span class="t-up">🟢↗</span> +71.4%</span></td>
-          <td><span class="val">£13.4m<sup class="flag">g</sup></span><span class="chg"><span class="t-dn">🔴↘</span> <span class="neg">−68.1%</span></span></td>
-          <td class="aw"><span class="val">£54m<sup class="flag">y</sup></span><span class="chg">🟢↗ H2-td £41m</span></td>
-          <td><span class="withheld">❌</span><span class="chg"><span class="neg">withheld</span></span></td>
+          <td><span class="val">£26.5m</span><span class="delta">—</span></td>
+          <td><span class="val">£24.6m<sup class="flag">†</sup></span><span class="delta">—</span></td>
+          <td><span class="val">£32.6m</span><span class="delta"><span class="t-up">🟢↗</span> +23.0%</span></td>
+          <td><span class="val">£37.3m<sup class="flag">†</sup></span><span class="delta"><span class="t-up">🟢↗</span> +51.6%</span></td>
+          <td><span class="val">£12.6m</span><span class="delta"><span class="t-dn">🔴↘</span> <span class="neg">−61.3%</span></span></td>
+          <td><span class="val">£23.4m<sup class="flag">†</sup></span><span class="delta"><span class="t-dn">🔴↘</span> <span class="neg">−37.3%</span></span></td>
+          <td><span class="val">£42.0m</span><span class="delta"><span class="t-up">🟢↗</span> +233%</span></td>
+          <td><span class="val">£40.1m<sup class="flag">†</sup></span><span class="delta"><span class="t-up">🟢↗</span> +71.4%</span></td>
+          <td><span class="val">£13.4m<sup class="flag">g</sup></span><span class="delta"><span class="t-dn">🔴↘</span> <span class="neg">−68.1%</span></span></td>
+          <td class="aw"><span class="val">£54m<sup class="flag">y</sup></span><span class="delta">🟢↗ H2-td £41m</span></td>
+          <td><span class="withheld">❌</span><span class="delta"><span class="neg">withheld</span></span></td>
+          <td class="bs-col"><span class="val">🟡</span><span class="delta">qualitative</span></td>
         </tr>
         <tr class="bbrow">
           <td class="lab">book-to-bill†</td>
-          <td>2.27x</td><td>1.40x</td><td>1.58x</td><td class="hi">1.90x</td><td class="lo">0.66x</td><td>1.20x</td><td class="hi">1.93x</td><td class="hi">1.63x</td><td class="lo">0.48x</td><td class="aw">—</td><td class="aw" style="background:#fff !important;">≥1.32x<sup class="flag">y</sup></td>
+          <td>2.27x</td><td>1.40x</td><td>1.58x</td><td class="hi">1.90x</td><td class="lo">0.66x</td><td>1.20x</td><td class="hi">1.93x</td><td class="hi">1.63x</td><td class="lo">0.48x</td><td class="aw">—</td><td class="aw" style="background:#fff !important;">≥1.32x<sup class="flag">y</sup></td><td style="font-style:italic;">~0.62x<sup class="flag">gd</sup></td>
         </tr>
-        <tr class="agg valrow">
+        <tr class="agg">
           <td class="lab">FY aggregate · b:b</td>
-          <td colspan="2"><span class="chg">£51.1m · — · <strong>1.74x</strong></span></td>
-          <td colspan="2"><span class="chg">£69.9m · +36.8% · <strong>1.74x</strong></span></td>
-          <td colspan="2"><span class="chg">£36.0m · −48.5% · <strong class="lo" style="color:var(--red);">0.93x</strong></span></td>
-          <td colspan="2"><span class="chg">£82.1m · +128% · <strong class="hi" style="color:var(--green);">1.77x</strong></span></td>
-          <td colspan="3"><span class="chg"><span class="neg">❌ withheld</span> · b:b <strong>≥0.92x</strong> (£54m YTD floor)</span></td>
+          <td colspan="2"><span class="delta">£51.1m · — · <strong>1.74x</strong></span></td>
+          <td colspan="2"><span class="delta">£69.9m · +36.8% · <strong>1.74x</strong></span></td>
+          <td colspan="2"><span class="delta">£36.0m · −48.5% · <strong class="lo" style="color:var(--red);">0.93x</strong></span></td>
+          <td colspan="2"><span class="delta">£82.1m · +128% · <strong class="hi" style="color:var(--green);">1.77x</strong></span></td>
+          <td colspan="3"><span class="delta"><span class="neg">❌ withheld</span> · b:b <strong>≥0.92x</strong> (£54m YTD floor)</span></td><td><span class="delta" style="font-style:italic;">b:b <strong>~0.62x</strong><sup class="flag">gd</sup><br>award alone</span></td>
         </tr>
-        <tr class="valrow" style="border-top:none;">
-          <td class="lab" style="color:#16150f;font-weight:700;font-style:normal;">⭐ FY26 TU · Jun-26</td>
-          <td colspan="11" class="bs" style="text-align:left;padding-left:14px;">
+        <tr class="vrow" style="border-top:none;">
+          <td class="lab" style="color:#16150f;font-weight:700;font-style:normal;">FY26 TU · Jun-26</td>
+          <td colspan="12" class="bs-col" style="text-align:left;padding-left:14px;">
             <span class="withheld">❌ withheld</span> &nbsp;<span class="subtle">— FY26 TU (30 Jun 2026) gives only "Sales Bookings momentum"; no FY26 total printed anywhere, so H2 FY26† is underivable. Discount: the 15 Apr 26 contract RNS (noise doc) quantified YTD bookings at £54m incl. c.£41m in H2-to-date — H2 FY25's full £40.1m already matched with ~6 weeks left. Cadence break real; "went dark as signal turned" read discounted.</span>
           </td>
         </tr>
 
         <!-- RANK 2 -->
-        <tr class="secbar"><td colspan="12"><span class="rtitle">Rank 2 · Contracted Backlog</span> &nbsp;<span class="rnat">— snapshot, position at period end (£m) · Δ vs prior print; YoY on the FY row only</span></td></tr>
-        <tr class="strip"><td class="lab">position at</td><td>Nov-21</td><td>May-22</td><td>Nov-22</td><td>May-23</td><td>Nov-23</td><td>May-24</td><td>Nov-24</td><td>May-25</td><td>Nov-25</td><td class="aw">Apr-26</td><td>May-26</td></tr>
-        <tr class="valrow">
+        <tr class="secbar"><td colspan="13">Rank 2 · Contracted Backlog <span class="nat">— snapshot, position at period end (£m) · Δ vs prior print; YoY on the FY row only</span></td></tr>
+        <tr class="strip"><td class="lab">position at</td><td>Nov-21</td><td>May-22</td><td>Nov-22</td><td>May-23</td><td>Nov-23</td><td>May-24</td><td>Nov-24</td><td>May-25</td><td>Nov-25</td><td class="aw">Apr-26</td><td>May-26</td><td>Aug-26</td></tr>
+        <tr class="vrow">
           <td class="lab">Value / Δ vs prior print</td>
-          <td><span class="val">£31.3m</span><span class="chg">—</span></td>
-          <td><span class="val">£38.2m</span><span class="chg"><span class="t-up">🟢↗</span> +£6.9m</span></td>
-          <td><span class="val">£47.8m</span><span class="chg"><span class="t-up">🟢↗</span> +£9.6m</span></td>
-          <td><span class="val">£67.9m</span><span class="chg"><span class="t-up">🟢↗</span> +£20.1m</span></td>
-          <td><span class="val">£61.3m<sup class="flag">r</sup></span><span class="chg"><span class="t-dn">🔴↘</span> <span class="neg">−£6.6m</span></span></td>
-          <td><span class="val">£65.6m<sup class="flag">r</sup></span><span class="chg"><span class="t-up">🟢↗</span> +£4.3m</span></td>
-          <td><span class="val">£80.8m</span><span class="chg"><span class="t-up">🟢↗</span> +£20.2m<sup class="flag">r</sup></span></td>
-          <td><span class="val">£92.2m</span><span class="chg"><span class="t-up">🟢↗</span> +£11.4m</span></td>
-          <td><span class="val">£74.4m</span><span class="chg"><span class="t-dn">🔴↘</span> <span class="neg">−£17.8m</span></span></td>
+          <td><span class="val">£31.3m</span><span class="delta">—</span></td>
+          <td><span class="val">£38.2m</span><span class="delta"><span class="t-up">🟢↗</span> +£6.9m</span></td>
+          <td><span class="val">£47.8m</span><span class="delta"><span class="t-up">🟢↗</span> +£9.6m</span></td>
+          <td><span class="val">£67.9m</span><span class="delta"><span class="t-up">🟢↗</span> +£20.1m</span></td>
+          <td><span class="val">£61.3m<sup class="flag">r</sup></span><span class="delta"><span class="t-dn">🔴↘</span> <span class="neg">−£6.6m</span></span></td>
+          <td><span class="val">£65.6m<sup class="flag">r</sup></span><span class="delta"><span class="t-up">🟢↗</span> +£4.3m</span></td>
+          <td><span class="val">£80.8m</span><span class="delta"><span class="t-up">🟢↗</span> +£20.2m<sup class="flag">r</sup></span></td>
+          <td><span class="val">£92.2m</span><span class="delta"><span class="t-up">🟢↗</span> +£11.4m</span></td>
+          <td><span class="val">£74.4m</span><span class="delta"><span class="t-dn">🔴↘</span> <span class="neg">−£17.8m</span></span></td>
           <td class="aw"><span class="val">—</span></td>
-          <td><span class="withheld">❌</span><span class="chg"><span class="neg">withheld</span></span></td>
+          <td><span class="withheld">❌</span><span class="delta"><span class="neg">withheld</span></span></td>
+          <td class="bs-col"><span class="val">c.£115m</span><span class="delta"><span class="t-up">🟢↗</span> +c.£40.6m</span></td>
         </tr>
-        <tr class="agg valrow">
+        <tr class="agg">
           <td class="lab">FY-end · YoY</td>
-          <td colspan="2"><span class="chg">£38.2m · —</span></td>
-          <td colspan="2"><span class="chg">£67.9m · +77.7%</span></td>
-          <td colspan="2"><span class="chg">£65.6m<sup class="flag">r</sup> · <span class="neg">−3.4%</span></span></td>
-          <td colspan="2"><span class="chg">£92.2m · +52.1%<sup class="flag">r</sup> (vs rebased £60.6m)</span></td>
-          <td colspan="3"><span class="chg"><span class="neg">❌ withheld</span> — last print £74.4m, Nov-25</span></td>
+          <td colspan="2"><span class="delta">£38.2m · —</span></td>
+          <td colspan="2"><span class="delta">£67.9m · +77.7%</span></td>
+          <td colspan="2"><span class="delta">£65.6m<sup class="flag">r</sup> · <span class="neg">−3.4%</span></span></td>
+          <td colspan="2"><span class="delta">£92.2m · +52.1%<sup class="flag">r</sup> (vs rebased £60.6m)</span></td>
+          <td colspan="3"><span class="delta"><span class="neg">❌ withheld</span> — re-quantified Aug-26</span></td><td><span class="delta">c.£115m · +24.7% vs FY25</span></td>
         </tr>
-        <tr class="valrow" style="border-top:none;">
-          <td class="lab" style="color:#16150f;font-weight:700;font-style:normal;">⭐ FY26 TU · Jun-26</td>
-          <td colspan="11" class="bs" style="text-align:left;padding-left:14px;">
-            <span class="withheld">❌ withheld</span> &nbsp;<span class="subtle">— described only as "a healthy Contracted Backlog"; no figure. Withheld alongside rank-1, with no AWD-style discount.</span>
+        <tr class="vrow" style="border-top:none;">
+          <td class="lab" style="color:#16150f;font-weight:700;font-style:normal;">FY26 TU · Jun-26</td>
+          <td colspan="12" class="bs-col" style="text-align:left;padding-left:14px;">
+            <span class="val" style="display:inline;">c.£115m</span> &nbsp;<span class="delta" style="display:inline;"><span class="t-up">🟢↗</span> +c.£40.6m vs last print (Nov-25) · +24.7% vs FY25 £92.2m</span> &nbsp;<span class="subtle">— <strong>re-quantified 18 Aug 2026</strong> after two documents of withhold; the Jun-26 TU's "healthy Contracted Backlog" now carries a number, and it is the highest in the record.</span>
           </td>
         </tr>
 
         <!-- RANK 3 -->
-        <tr class="secbar"><td colspan="12"><span class="rtitle">Rank 3 · Adjusted EBITDA margin</span> &nbsp;<span class="rnat">— period rate, seasonally matched (H1-vs-H1, H2-vs-H2) · band ±2.0pp</span></td></tr>
-        <tr class="strip"><td class="lab">period</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td class="aw">YTD</td><td>H2†</td></tr>
-        <tr class="valrow">
+        <tr class="secbar"><td colspan="13">Rank 3 · Adjusted EBITDA margin <span class="nat">— period rate, seasonally matched (H1-vs-H1, H2-vs-H2) · band ±2.0pp</span></td></tr>
+        <tr class="strip"><td class="lab">period</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td class="aw">YTD</td><td>H2†</td><td>current</td></tr>
+        <tr class="vrow">
           <td class="lab">Value / Δ(YoY rate)</td>
-          <td><span class="val">10.1%</span><span class="chg">—</span></td>
-          <td><span class="val">8.2%<sup class="flag">†◊</sup></span><span class="chg">—</span></td>
-          <td><span class="val">2.5%<sup class="flag">r</sup></span><span class="chg"><span class="t-dn">🔴↘</span> <span class="neg">−7.6pp</span></span></td>
-          <td><span class="val">5.1%<sup class="flag">†</sup></span><span class="chg"><span class="t-dn">🔴↘</span> <span class="neg">−3.1pp</span></span></td>
-          <td><span class="val">7.3%</span><span class="chg"><span class="t-up">🟢↗</span> +4.8pp</span></td>
-          <td><span class="val">5.1%<sup class="flag">†</sup></span><span class="chg"><span class="t-flat">🟡→</span> 0.0pp</span></td>
-          <td><span class="val">8.2%</span><span class="chg"><span class="t-flat">🟡→</span> +0.9pp</span></td>
-          <td><span class="val">6.9%<sup class="flag">†</sup></span><span class="chg"><span class="t-flat">🟡→</span> +1.8pp</span></td>
-          <td><span class="val">8.7%</span><span class="chg"><span class="t-flat">🟡→</span> +0.5pp</span></td>
+          <td><span class="val">10.1%</span><span class="delta">—</span></td>
+          <td><span class="val">8.2%<sup class="flag">†◊</sup></span><span class="delta">—</span></td>
+          <td><span class="val">2.5%<sup class="flag">r</sup></span><span class="delta"><span class="t-dn">🔴↘</span> <span class="neg">−7.6pp</span></span></td>
+          <td><span class="val">5.1%<sup class="flag">†</sup></span><span class="delta"><span class="t-dn">🔴↘</span> <span class="neg">−3.1pp</span></span></td>
+          <td><span class="val">7.3%</span><span class="delta"><span class="t-up">🟢↗</span> +4.8pp</span></td>
+          <td><span class="val">5.1%<sup class="flag">†</sup></span><span class="delta"><span class="t-flat">🟡→</span> 0.0pp</span></td>
+          <td><span class="val">8.2%</span><span class="delta"><span class="t-flat">🟡→</span> +0.9pp</span></td>
+          <td><span class="val">6.9%<sup class="flag">†</sup></span><span class="delta"><span class="t-flat">🟡→</span> +1.8pp</span></td>
+          <td><span class="val">8.7%</span><span class="delta"><span class="t-flat">🟡→</span> +0.5pp</span></td>
           <td class="aw"><span class="val">—</span></td>
-          <td><span class="val">11.3%<sup class="flag">†</sup></span><span class="chg"><span class="t-up">🟢↗</span> +4.4pp</span></td>
+          <td><span class="val">11.3%<sup class="flag">†</sup></span><span class="delta"><span class="t-up">🟢↗</span> +4.4pp</span></td>
+          <td class="bs-col"><span class="val">—</span></td>
         </tr>
-        <tr class="agg valrow">
+        <tr class="agg">
           <td class="lab">FY margin · Δ</td>
-          <td colspan="2"><span class="chg">9.0% · —</span></td>
-          <td colspan="2"><span class="chg">3.8% · <span class="neg">−5.3pp</span></span></td>
-          <td colspan="2"><span class="chg">6.2% · +2.4pp</span></td>
-          <td colspan="2"><span class="chg">7.5% · +1.3pp</span></td>
-          <td colspan="3"><span class="chg">c.10.0% · +2.5pp</span></td>
+          <td colspan="2"><span class="delta">9.0% · —</span></td>
+          <td colspan="2"><span class="delta">3.8% · <span class="neg">−5.3pp</span></span></td>
+          <td colspan="2"><span class="delta">6.2% · +2.4pp</span></td>
+          <td colspan="2"><span class="delta">7.5% · +1.3pp</span></td>
+          <td colspan="3"><span class="delta">c.10.0% · +2.5pp</span></td><td><span class="delta">—</span></td>
         </tr>
-        <tr class="valrow" style="border-top:none;">
-          <td class="lab" style="color:#16150f;font-weight:700;font-style:normal;">⭐ FY26 TU · Jun-26</td>
-          <td colspan="11" class="bs" style="text-align:left;padding-left:14px;">
-            <span class="val" style="display:inline;">c.10.0%</span> &nbsp;<span class="chg" style="display:inline;"><span class="t-up">🟢↗</span> +2.5pp vs FY25</span> &nbsp;<span class="subtle">— "delivered ahead of previously indicated guidance"; implied H2 exit rate 11.3%†</span>
+        <tr class="vrow" style="border-top:none;">
+          <td class="lab" style="color:#16150f;font-weight:700;font-style:normal;">FY26 TU · Jun-26</td>
+          <td colspan="12" class="bs-col" style="text-align:left;padding-left:14px;">
+            <span class="val" style="display:inline;">c.10.0%</span> &nbsp;<span class="delta" style="display:inline;"><span class="t-up">🟢↗</span> +2.5pp vs FY25</span> &nbsp;<span class="subtle">— "delivered ahead of previously indicated guidance"; implied H2 exit rate 11.3%†</span>
           </td>
         </tr>
 
         <!-- RANK 4 -->
-        <tr class="secbar"><td colspan="12"><span class="rtitle">Rank 4 · Revenue</span> &nbsp;<span class="rnat">— cumulative flow, seasonally matched (£m) · scored H1-vs-H1, H2-vs-H2</span></td></tr>
-        <tr class="strip"><td class="lab">period</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td class="aw">YTD</td><td>H2†</td></tr>
-        <tr class="valrow">
+        <tr class="secbar"><td colspan="13">Rank 4 · Revenue <span class="nat">— cumulative flow, seasonally matched (£m) · scored H1-vs-H1, H2-vs-H2</span></td></tr>
+        <tr class="strip"><td class="lab">period</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td class="aw">YTD</td><td>H2†</td><td>current</td></tr>
+        <tr class="vrow">
           <td class="lab">Value / Δ(YoY)</td>
-          <td><span class="val">£11.7m</span><span class="chg">—</span></td>
-          <td><span class="val">£17.6m<sup class="flag">†</sup></span><span class="chg">—</span></td>
-          <td><span class="val">£20.6m</span><span class="chg"><span class="t-up">🟢↗</span> +76.1%</span></td>
-          <td><span class="val">£19.6m<sup class="flag">†</sup></span><span class="chg"><span class="t-up">🟢↗</span> +11.4%</span></td>
-          <td><span class="val">£19.1m</span><span class="chg"><span class="t-dn">🔴↘</span> <span class="neg">−7.3%</span></span></td>
-          <td><span class="val">£19.5m<sup class="flag">†</sup></span><span class="chg"><span class="t-dn">🔴↘</span> <span class="neg">−0.5%</span></span></td>
-          <td><span class="val">£21.8m</span><span class="chg"><span class="t-up">🟢↗</span> +14.1%</span></td>
-          <td><span class="val">£24.6m<sup class="flag">†</sup></span><span class="chg"><span class="t-up">🟢↗</span> +26.2%</span></td>
-          <td><span class="val">£27.8m</span><span class="chg"><span class="t-up">🟢↗</span> +27.5%</span></td>
+          <td><span class="val">£11.7m</span><span class="delta">—</span></td>
+          <td><span class="val">£17.6m<sup class="flag">†</sup></span><span class="delta">—</span></td>
+          <td><span class="val">£20.6m</span><span class="delta"><span class="t-up">🟢↗</span> +76.1%</span></td>
+          <td><span class="val">£19.6m<sup class="flag">†</sup></span><span class="delta"><span class="t-up">🟢↗</span> +11.4%</span></td>
+          <td><span class="val">£19.1m</span><span class="delta"><span class="t-dn">🔴↘</span> <span class="neg">−7.3%</span></span></td>
+          <td><span class="val">£19.5m<sup class="flag">†</sup></span><span class="delta"><span class="t-dn">🔴↘</span> <span class="neg">−0.5%</span></span></td>
+          <td><span class="val">£21.8m</span><span class="delta"><span class="t-up">🟢↗</span> +14.1%</span></td>
+          <td><span class="val">£24.6m<sup class="flag">†</sup></span><span class="delta"><span class="t-up">🟢↗</span> +26.2%</span></td>
+          <td><span class="val">£27.8m</span><span class="delta"><span class="t-up">🟢↗</span> +27.5%</span></td>
           <td class="aw"><span class="val">—</span></td>
-          <td><span class="val">£31.1m<sup class="flag">†</sup></span><span class="chg"><span class="t-up">🟢↗</span> +26.4%</span></td>
+          <td><span class="val">£31.1m<sup class="flag">†</sup></span><span class="delta"><span class="t-up">🟢↗</span> +26.4%</span></td>
+          <td class="bs-col"><span class="val">—</span></td>
         </tr>
-        <tr class="agg valrow">
+        <tr class="agg">
           <td class="lab">FY aggregate</td>
-          <td colspan="2"><span class="chg">£29.3m · —</span></td>
-          <td colspan="2"><span class="chg">£40.2m · +37.2%</span></td>
-          <td colspan="2"><span class="chg">£38.6m · <span class="neg">−4.0%</span></span></td>
-          <td colspan="2"><span class="chg">£46.4m · +20.2%</span></td>
-          <td colspan="3"><span class="chg">£58.9m · +26.9%</span></td>
+          <td colspan="2"><span class="delta">£29.3m · —</span></td>
+          <td colspan="2"><span class="delta">£40.2m · +37.2%</span></td>
+          <td colspan="2"><span class="delta">£38.6m · <span class="neg">−4.0%</span></span></td>
+          <td colspan="2"><span class="delta">£46.4m · +20.2%</span></td>
+          <td colspan="3"><span class="delta">£58.9m · +26.9%</span></td><td><span class="delta">guide £63–66m</span></td>
         </tr>
-        <tr class="valrow" style="border-top:none;">
-          <td class="lab" style="color:#16150f;font-weight:700;font-style:normal;">⭐ FY26 TU · Jun-26</td>
-          <td colspan="11" class="bs" style="text-align:left;padding-left:14px;">
-            <span class="val" style="display:inline;">£58.9m</span> &nbsp;<span class="chg" style="display:inline;"><span class="t-up">🟢↗</span> +26.9% vs FY25</span> &nbsp;<span class="subtle">— above upgraded consensus (£57.5m); implied H2 £31.1m†, no back-loading</span>
+        <tr class="vrow" style="border-top:none;">
+          <td class="lab" style="color:#16150f;font-weight:700;font-style:normal;">FY26 TU · Jun-26</td>
+          <td colspan="12" class="bs-col" style="text-align:left;padding-left:14px;">
+            <span class="val" style="display:inline;">£58.9m</span> &nbsp;<span class="delta" style="display:inline;"><span class="t-up">🟢↗</span> +26.9% vs FY25</span> &nbsp;<span class="subtle">— above upgraded consensus (£57.5m); implied H2 £31.1m†, no back-loading</span>
           </td>
         </tr>
 
         <!-- RANK 5 -->
-        <tr class="secbar"><td colspan="12"><span class="rtitle">Rank 5 · Net Cash</span> &nbsp;<span class="rnat">— snapshot, position at period end (£m) · Δ vs prior print; YoY on the FY row only</span></td></tr>
-        <tr class="strip"><td class="lab">position at</td><td>Nov-21</td><td>May-22</td><td>Nov-22</td><td>May-23</td><td>Nov-23</td><td>May-24</td><td>Nov-24</td><td>May-25</td><td>Nov-25</td><td class="aw">Apr-26</td><td>May-26</td></tr>
-        <tr class="valrow">
+        <tr class="secbar"><td colspan="13">Rank 5 · Net Cash <span class="nat">— snapshot, position at period end (£m) · Δ vs prior print; YoY on the FY row only</span></td></tr>
+        <tr class="strip"><td class="lab">position at</td><td>Nov-21</td><td>May-22</td><td>Nov-22</td><td>May-23</td><td>Nov-23</td><td>May-24</td><td>Nov-24</td><td>May-25</td><td>Nov-25</td><td class="aw">Apr-26</td><td>May-26</td><td>Aug-26</td></tr>
+        <tr class="vrow">
           <td class="lab">Value / Δ vs prior print</td>
-          <td><span class="val">£11.1m</span><span class="chg">—</span></td>
-          <td><span class="val">£12.3m</span><span class="chg"><span class="t-up">🟢↗</span> +£1.2m</span></td>
-          <td><span class="val">£9.0m</span><span class="chg"><span class="t-dn">🔴↘</span> <span class="neg">−£3.3m</span></span></td>
-          <td><span class="val">£8.5m</span><span class="chg"><span class="t-dn">🔴↘</span> <span class="neg">−£0.5m</span></span></td>
-          <td><span class="val">£7.9m</span><span class="chg"><span class="t-dn">🔴↘</span> <span class="neg">−£0.6m</span></span></td>
-          <td><span class="val">£7.6m</span><span class="chg"><span class="t-dn">🔴↘</span> <span class="neg">−£0.3m</span></span></td>
-          <td><span class="val">£9.1m</span><span class="chg"><span class="t-up">🟢↗</span> +£1.5m</span></td>
-          <td><span class="val">£10.4m</span><span class="chg"><span class="t-up">🟢↗</span> +£1.3m</span></td>
-          <td><span class="val">£11.9m</span><span class="chg"><span class="t-up">🟢↗</span> +£1.5m</span></td>
+          <td><span class="val">£11.1m</span><span class="delta">—</span></td>
+          <td><span class="val">£12.3m</span><span class="delta"><span class="t-up">🟢↗</span> +£1.2m</span></td>
+          <td><span class="val">£9.0m</span><span class="delta"><span class="t-dn">🔴↘</span> <span class="neg">−£3.3m</span></span></td>
+          <td><span class="val">£8.5m</span><span class="delta"><span class="t-dn">🔴↘</span> <span class="neg">−£0.5m</span></span></td>
+          <td><span class="val">£7.9m</span><span class="delta"><span class="t-dn">🔴↘</span> <span class="neg">−£0.6m</span></span></td>
+          <td><span class="val">£7.6m</span><span class="delta"><span class="t-dn">🔴↘</span> <span class="neg">−£0.3m</span></span></td>
+          <td><span class="val">£9.1m</span><span class="delta"><span class="t-up">🟢↗</span> +£1.5m</span></td>
+          <td><span class="val">£10.4m</span><span class="delta"><span class="t-up">🟢↗</span> +£1.3m</span></td>
+          <td><span class="val">£11.9m</span><span class="delta"><span class="t-up">🟢↗</span> +£1.5m</span></td>
           <td class="aw"><span class="val">—</span></td>
-          <td><span class="val">£14.5m</span><span class="chg"><span class="t-up">🟢↗</span> +£2.6m</span></td>
+          <td><span class="val">£14.5m</span><span class="delta"><span class="t-up">🟢↗</span> +£2.6m</span></td>
+          <td class="bs-col"><span class="val">—</span></td>
         </tr>
-        <tr class="agg valrow">
+        <tr class="agg">
           <td class="lab">FY-end · YoY</td>
-          <td colspan="2"><span class="chg">£12.3m · —</span></td>
-          <td colspan="2"><span class="chg">£8.5m · <span class="neg">−30.9%</span></span></td>
-          <td colspan="2"><span class="chg">£7.6m · <span class="neg">−10.6%</span></span></td>
-          <td colspan="2"><span class="chg">£10.4m · +36.8%</span></td>
-          <td colspan="3"><span class="chg">£14.5m · +39.4%</span></td>
+          <td colspan="2"><span class="delta">£12.3m · —</span></td>
+          <td colspan="2"><span class="delta">£8.5m · <span class="neg">−30.9%</span></span></td>
+          <td colspan="2"><span class="delta">£7.6m · <span class="neg">−10.6%</span></span></td>
+          <td colspan="2"><span class="delta">£10.4m · +36.8%</span></td>
+          <td colspan="3"><span class="delta">£14.5m · +39.4%</span></td><td><span class="delta">—</span></td>
         </tr>
-        <tr class="valrow" style="border-top:none;">
-          <td class="lab" style="color:#16150f;font-weight:700;font-style:normal;">⭐ FY26 TU · Jun-26</td>
-          <td colspan="11" class="bs" style="text-align:left;padding-left:14px;">
-            <span class="val" style="display:inline;">£14.5m</span> &nbsp;<span class="chg" style="display:inline;"><span class="t-up">🟢↗</span> +£2.6m vs prior print (Nov-25) · +£4.1m vs FY25</span> &nbsp;<span class="subtle">— ahead of consensus (£13.5m); debt-free</span>
+        <tr class="vrow" style="border-top:none;">
+          <td class="lab" style="color:#16150f;font-weight:700;font-style:normal;">FY26 TU · Jun-26</td>
+          <td colspan="12" class="bs-col" style="text-align:left;padding-left:14px;">
+            <span class="val" style="display:inline;">£14.5m</span> &nbsp;<span class="delta" style="display:inline;"><span class="t-up">🟢↗</span> +£2.6m vs prior print (Nov-25) · +£4.1m vs FY25</span> &nbsp;<span class="subtle">— ahead of consensus (£13.5m); debt-free</span>
           </td>
         </tr>
 
@@ -586,32 +669,32 @@
 
     <details class="sub"><summary>🔲 Card strip — wall preview &amp; index entry</summary><div class="notes">
             <table class="cstrip"><tbody>
-        <tr><td class="lb">R1</td><td class="cs-n">-</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-r">r</td><td class="cs-r">r</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-r">r</td><td class="cs-x bsc">x</td></tr>
-        <tr><td class="lb">R2</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-r">r</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-r">r</td><td class="cs-x bsc">x</td></tr>
-        <tr><td class="lb">R3</td><td class="cs-n">-</td><td class="cs-r">r</td><td class="cs-r">r</td><td class="cs-g">g</td><td class="cs-a">a</td><td class="cs-a">a</td><td class="cs-a">a</td><td class="cs-a">a</td><td class="cs-g bsc">g</td></tr>
-        <tr><td class="lb">R4</td><td class="cs-n">-</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-r">r</td><td class="cs-r">r</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-g bsc">g</td></tr>
-        <tr><td class="lb">R5</td><td class="cs-g">g</td><td class="cs-r">r</td><td class="cs-r">r</td><td class="cs-r">r</td><td class="cs-r">r</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-g bsc">g</td></tr>
+        <tr><td class="lb">R1</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-r">r</td><td class="cs-r">r</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-r">r</td><td class="cs-x">x</td><td class="cs-a bsc">a</td></tr>
+        <tr><td class="lb">R2</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-r">r</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-r">r</td><td class="cs-x">x</td><td class="cs-g bsc">g</td></tr>
+        <tr><td class="lb">R3</td><td class="cs-r">r</td><td class="cs-r">r</td><td class="cs-g">g</td><td class="cs-a">a</td><td class="cs-a">a</td><td class="cs-a">a</td><td class="cs-a">a</td><td class="cs-g">g</td><td class="cs-n bsc">-</td></tr>
+        <tr><td class="lb">R4</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-r">r</td><td class="cs-r">r</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-n bsc">-</td></tr>
+        <tr><td class="lb">R5</td><td class="cs-r">r</td><td class="cs-r">r</td><td class="cs-r">r</td><td class="cs-r">r</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-n bsc">-</td></tr>
       </tbody></table>
-      <p class="subtle" style="font-size:11.5px;">Nine cells at half grain, H2 FY22 → H2 FY26, right-anchored on the Buy/Sell column (outlined). Cells transcribe the §2 grid's value rows; H2 cells are derived † and the blue AWD annotation column is not encoded.</p>
+      <p class="subtle" style="font-size:11.5px;">Nine cells, H1 FY23 → the 18 Aug 26 award RNS, right-anchored on the Buy/Sell column (outlined); the strip shifted one cell left as the new document entered. Cells transcribe the §2 grid's value rows; H2 cells are derived † and the blue AWD annotation column is not encoded.</p>
       <pre class="jsonbox" id="entrycopy"></pre>
     </div></details>
 
     <details class="sub"><summary>Notes — Ranks 1–5</summary><div class="notes">
-      <p><span class="rk">Rank 1 (Sales Bookings).</span> The FY-TU withhold stands (no FY26 total exists), but its force is discounted: the 15 Apr 26 GDS contract RNS quantified YTD bookings at £54m — c.£41m in H2-to-date, already matching H2 FY25's full £40.1m with ~6 weeks left — so the rank-1 signal flipped from collapse to recovery mid-period, and Feb-26's "significant uptick in H2 to date" is corroborated. FY-vs-FY (vs £82.1m) remains open until September — and on the new spine the withhold is now a visible hole: H2 FY26 is the only underivable half in a nine-half run.</p>
-      <p><span class="rk">Rank 2 (Contracted Backlog).</span> H1 FY26 backlog fell −7.9% YoY — its steepest decline and first H1-vs-H1 down-print (FY24 year-end was −3%); the FY26 TU then withholds. Management frames the H1 fall as "timing of large contract awards in the prior year" — a same-explanation defence that will be exhausted if repeated at September's FY results.</p>
+      <p><span class="rk">Rank 1 (Sales Bookings).</span> The FY-TU withhold stands (no FY26 total exists), but its force is discounted: the 15 Apr 26 GDS contract RNS quantified YTD bookings at £54m — c.£41m in H2-to-date, already matching H2 FY25's full £40.1m with ~6 weeks left — so the rank-1 signal flipped from collapse to recovery mid-period, and Feb-26's "significant uptick in H2 to date" is corroborated. FY-vs-FY (vs £82.1m) remains open until September — and on the new spine the withhold is now a visible hole: H2 FY26 is the only underivable half in a nine-half run. Forward: the c.£40m award books in FY27 and alone implies ~0.62x against guided revenue, so a normal run-rate of other wins would put FY27 back above the 1.0x line that FY26 barely held, and possibly near FY25's 1.77x.</p>
+      <p><span class="rk">Rank 2 (Contracted Backlog).</span> H1 FY26 backlog fell −7.9% YoY — its steepest decline and first H1-vs-H1 down-print (FY24 year-end was −3%) — and the FY26 TU then withheld it. The 18 Aug 26 award RNS restores it at c.£115m, a record. Note the basis question for September: c.£115m is a "current" figure at an interim date and includes the consortium award, so it is not yet like-for-like with a May year-end print. Management frames the H1 fall as "timing of large contract awards in the prior year" — a same-explanation defence that will be exhausted if repeated at September's FY results.</p>
       <p><span class="rk">Rank 3 (Adj EBITDA margin).</span> The only rank fully quantified on the Buy/Sell RNS and it is unambiguously up (c.10.0%, +250bps). The H1 FY26 🟡 is a within-band read (+0.5pp), not a stall — and the derived H2 FY26 exit rate of 11.3%† (+4.4pp, the largest rate gain in the record) sits well above the 10.0% full-year print.</p>
       <p><span class="rk">Rank 4 (Revenue).</span> Confirms the profit story with a two-period lag as expected — the FY23 dip (H1 FY24 / FY24 red) trailed the FY23 bookings/backlog turn by ~12 months, the textbook lag this tracker exists to catch. The derived halves sharpen it: H2 FY24 revenue was flat (−0.5%) while H2 FY24 bookings fell −37% — the order metrics were already recovering into FY25 before revenue confirmed.</p>
       <p><span class="rk">Rank 5 (Net Cash).</span> Five consecutive drawdowns (FY22→FY24, funding IPO-era IP investment) reversed to five consecutive builds from H1 FY25 — a clean confirmation the cost-base reset took hold.</p>
     </div></details>
 
     <details class="sub"><summary>Turn methodology &amp; restatement basis</summary><div class="methp">
-    <strong>Turn methodology.</strong> Every Δ and arrow is computed in one script with the comparison basis hard-coded per metric type. <em>Sales Bookings</em> and <em>Revenue</em> are flows, compared like-period-to-like-period only (H1-vs-H1, FY-vs-FY) — the H1→FY step within a year is a seasonal build, not a scored turn. <em>Contracted Backlog</em> and <em>Net Cash</em> are snapshots, compared position-to-position at their own disclosure grain. <em>Adjusted EBITDA margin</em> is a rate, seasonally matched, banded at ±2.0pp (🟢 above / 🟡 within / 🔴 below). The spine is H1 / H2†: MTEC prints H1 and FY only, so every H2 cell is derived as FY − H1 (both inputs exact, same basis) and carries †. No printed sub-period exists to corroborate an H2, so per the derived-only rule an H2 turn is a watch-flag until an H1 print confirms the direction — no condition in this build fires on an H2 cell alone. FY totals sit on the muted aggregate rows, transcribed from company prints, never summed from cells, never scored. H1 FY22 comparatives (revenue £11.7m, bookings £26.5m, backlog £31.3m, cash £11.1m, margin 10.1%) are taken from the Feb-23 H1 results table. Company-rate note: MTEC states H1 FY23 bookings +24%; the printed levels (£32.6m / £26.5m) compute to +23.0% — input rounding, levels govern. <em>Rank 3 derivation basis:</em> H2 margins are derived as (FY Adjusted EBITDA − H1 Adjusted EBITDA) ÷ H2 revenue†, with FY25 taken at the audited £3.5m (the Jun-25 TU's c.£3.4m is superseded — later governs earlier) and FY22 at the exact £2,649k from the FY22 statements. H1 FY22 Adjusted EBITDA is available only as narrative £1.2m, so H2 FY22† mixes an exact full year with a rounded half — a precision-basis break, marked ◊ and carried unscored (it is the first period in the series and has no comparator regardless). Every other H2 margin derives from £0.1m-rounded inputs whose implied uncertainty (±0.5–0.9pp) sits inside the ±2.0pp band, so no further ◊ applies. <em>Basis change not affecting a rank:</em> Sep-25 restated FY24 gross profit and gross margin (£14.0m/36.3% to £13.2m/34.2%) to include the full cost of delivery consultants; gross margin is not a ranked metric and Adjusted EBITDA margin is unaffected. Flags: <sup class="flag">r</sup> restated — the FY24 backlog rebase (−£5.0m for prior-period contract expiries, per the Feb-25 footnote) applies to <em>both</em> FY24 halves: FY24 £65.6m as printed becomes £60.6m restated, and H1 FY24 £61.3m as printed becomes £56.3m restated (Feb-25 prints the £56.3m comparative). Cells carry the figure as printed at the time, with each comparison run on a single consistent basis: FY24-vs-FY23 uses printed-vs-printed (£65.6m vs £67.9m, −3.4%, matching the company's "only 3% down"), while H1 FY25 and FY25 are compared to the restated £56.3m / £60.6m (+£20.2m; +52.1%, matching the company's stated 44% and 52%). No comparison mixes the two bases. H1 FY23 EBITDA margin carried at the Feb-24 restated 2.5% (originally printed 2.4%), Δ −7.6pp vs the H1 FY22 10.1% seasonal comp; <sup class="flag">g</sup> gross figure (from Dec-25 the company splits gross vs net bookings — H1 FY26 gross £13.4m / net £9.9m after £3.5m lapsed; the grid uses gross throughout for like-for-like). <em>Book-to-bill</em>† = gross Sales Bookings ÷ revenue, same period — a derived watch ratio, never scored (both inputs already scored separately); &gt;1x funds future growth, &lt;1x consumes backlog; half-by-half in the thin row (H2 FY26 ≥1.32x = £41m H2-td ÷ £31.1m†), full-year on the R1 aggregate row (FY26 ≥0.92x = £54m YTD ÷ £58.9m); both FY26 figures are floors since post-15-Apr bookings are unprinted. <sup class="flag">y</sup> YTD figure at 15 Apr 2026 (contract-award RNS, blue column) — mid-period, not a like-period comp; annotation only, never scored. ❌ = verified withhold against established cadence.
+    <strong>Turn methodology.</strong> Every Δ and arrow is computed in one script with the comparison basis hard-coded per metric type. <em>Sales Bookings</em> and <em>Revenue</em> are flows, compared like-period-to-like-period only (H1-vs-H1, FY-vs-FY) — the H1→FY step within a year is a seasonal build, not a scored turn. <em>Contracted Backlog</em> and <em>Net Cash</em> are snapshots, compared position-to-position at their own disclosure grain. <em>Adjusted EBITDA margin</em> is a rate, seasonally matched, banded at ±2.0pp (🟢 above / 🟡 within / 🔴 below). The spine is H1 / H2†: MTEC prints H1 and FY only, so every H2 cell is derived as FY − H1 (both inputs exact, same basis) and carries †. No printed sub-period exists to corroborate an H2, so per the derived-only rule an H2 turn is a watch-flag until an H1 print confirms the direction — no condition in this build fires on an H2 cell alone. FY totals sit on the muted aggregate rows, transcribed from company prints, never summed from cells, never scored. H1 FY22 comparatives (revenue £11.7m, bookings £26.5m, backlog £31.3m, cash £11.1m, margin 10.1%) are taken from the Feb-23 H1 results table. Company-rate note: MTEC states H1 FY23 bookings +24%; the printed levels (£32.6m / £26.5m) compute to +23.0% — input rounding, levels govern. <em>Rank 3 derivation basis:</em> H2 margins are derived as (FY Adjusted EBITDA − H1 Adjusted EBITDA) ÷ H2 revenue†, with FY25 taken at the audited £3.5m (the Jun-25 TU's c.£3.4m is superseded — later governs earlier) and FY22 at the exact £2,649k from the FY22 statements. H1 FY22 Adjusted EBITDA is available only as narrative £1.2m, so H2 FY22† mixes an exact full year with a rounded half — a precision-basis break, marked ◊ and carried unscored (it is the first period in the series and has no comparator regardless). Every other H2 margin derives from £0.1m-rounded inputs whose implied uncertainty (±0.5–0.9pp) sits inside the ±2.0pp band, so no further ◊ applies. <em>Basis change not affecting a rank:</em> Sep-25 restated FY24 gross profit and gross margin (£14.0m/36.3% to £13.2m/34.2%) to include the full cost of delivery consultants; gross margin is not a ranked metric and Adjusted EBITDA margin is unaffected. Flags: <sup class="flag">r</sup> restated — the FY24 backlog rebase (−£5.0m for prior-period contract expiries, per the Feb-25 footnote) applies to <em>both</em> FY24 halves: FY24 £65.6m as printed becomes £60.6m restated, and H1 FY24 £61.3m as printed becomes £56.3m restated (Feb-25 prints the £56.3m comparative). Cells carry the figure as printed at the time, with each comparison run on a single consistent basis: FY24-vs-FY23 uses printed-vs-printed (£65.6m vs £67.9m, −3.4%, matching the company's "only 3% down"), while H1 FY25 and FY25 are compared to the restated £56.3m / £60.6m (+£20.2m; +52.1%, matching the company's stated 44% and 52%). No comparison mixes the two bases. H1 FY23 EBITDA margin carried at the Feb-24 restated 2.5% (originally printed 2.4%), Δ −7.6pp vs the H1 FY22 10.1% seasonal comp; <sup class="flag">g</sup> gross figure (from Dec-25 the company splits gross vs net bookings — H1 FY26 gross £13.4m / net £9.9m after £3.5m lapsed; the grid uses gross throughout for like-for-like). <em>Book-to-bill</em>† = gross Sales Bookings ÷ revenue, same period — a derived watch ratio, never scored (both inputs already scored separately); &gt;1x funds future growth, &lt;1x consumes backlog; half-by-half in the thin row (H2 FY26 ≥1.32x = £41m H2-td ÷ £31.1m†), full-year on the R1 aggregate row (FY26 ≥0.92x = £54m YTD ÷ £58.9m); both FY26 figures are floors since post-15-Apr bookings are unprinted. <em>Forward figure, FY27:</em> the c.£40m award of 18 Aug 2026 books in FY27, not FY26 — the RNS gives no split by year, so it cannot be spread. Against the guided FY27 revenue midpoint of c.£64.5m (£63–66m range) that single award contributes <strong>~0.62x</strong> before any other bookings in the year. Marked <sup class="flag">gd</sup>: it rests on a company guide rather than a printed revenue level, so like the FY27 revenue guide beside it, it is <strong>rendered italic, scored nothing and counted nowhere</strong>. Guides are never converted to actuals; the outturn will land beside it in September and at the FY27 results. <sup class="flag">gd</sup> guide-based forward figure — computed against a guided range, never a printed level; unscored. <sup class="flag">y</sup> YTD figure at 15 Apr 2026 (contract-award RNS, blue column) — mid-period, not a like-period comp; annotation only, never scored. ❌ = verified withhold against established cadence.
   </div></details>
 
   </div></details>
 
   <!-- ============ §2.0 ============ -->
-  <h2 class="sec"><span class="n">§2.0</span> &nbsp;Most-Recent-RNS Current-State Read <span class="subtle" style="text-transform:none;letter-spacing:0;font-weight:400;">· FY26 Full Year Trading Update, 30 Jun 2026</span></h2>
+  <h2 class="sec"><span class="n">§2.0</span> &nbsp;Most-Recent-RNS Current-State Read <span class="subtle" style="text-transform:none;letter-spacing:0;font-weight:400;">· Contract Award &amp; FY27 Guidance Upgrade, 18 Aug 2026</span></h2>
   <div class="row20">
 
     <div class="bridge">
@@ -626,23 +709,24 @@
     <div class="csbar2">
       <div class="dbar"><span class="em">🌡️</span><span class="t cav">CURRENT STATE — the read right now</span></div>
       <div class="inner">
-        <div style="font-weight:800; color:var(--amber-b);">🟡 STABLE — WATCH</div>
+        <div style="font-weight:800; color:var(--green-b);">🟢 TURNING UP</div>
         <ul>
-          <li>FY26 revenue £58.9m, EBITDA £5.9m — both beat a thrice-raised consensus.</li>
-          <li>Margin c.10.0%, ahead of the company's own indicated guidance.</li>
-          <li>Guide raised again on this RNS: "ahead of recently upgraded market expectations".</li>
-          <li>Bookings and backlog carry no FY26 figure — first FY-TU withhold of either.</li>
-          <li>Apr-26 award RNS: bookings £54m year-to-date, c.£41m of it in H2.</li>
-          <li>Implied H2 revenue £31.1m and EBITDA £3.5m — no back-loading of the year.</li>
-          <li>⚠️ Backlog dark since Feb-26's £74.4m, its steepest fall in the record.</li>
-          <li>⚠️ FY27 consensus set at £60.3m — barely above FY26, cover unproven.</li>
+          <li>FY27 guide raised to £63–66m revenue, £6.3–6.6m EBITDA — above £60.3m / £6.0m consensus.</li>
+          <li>Single award of c.£40m to Made Tech over four years, its largest ever.</li>
+          <li>Contracted Backlog re-quantified at c.£115m after two documents of withhold.</li>
+          <li>That is +c.£40.6m on the Nov-25 print and +24.7% on the FY25 record £92.2m.</li>
+          <li>H2 FY26 bookings acceleration reconfirmed, still without a full-year total.</li>
+          <li>Award alone implies FY27 book-to-bill ~0.62x before any other wins — restocking year.</li>
+          <li>Second guidance upgrade of 2026; every guide since Jun-24 met or beaten.</li>
+          <li>⚠️ Award revenue starts FY27, weighted to FY28 — little immediate P&amp;L effect.</li>
+          <li>⚠️ Consortium award: Made Tech's share stated, but delivery control is shared.</li>
         </ul>
       </div>
     </div>
 
   </div>
 
-  <details class="top1"><summary>§2.0 workings — the four checks · notes · balance-sheet sweep · trigger detail</summary><div class="notes">
+  <details class="top1"><summary>§2.0 workings — the four checks · notes · balance-sheet sweep · Trend Watch workings · trigger detail</summary><div class="notes">
 
     <details class="sub"><summary>The four checks — workings behind the read</summary><div class="notes"><div class="checks">
     <ol>
@@ -663,12 +747,29 @@
       <p><span class="rk">Wedge check (green shoot).</span> The adjusted-to-statutory PBT wedge has closed steadily since H1 FY25 — statutory PBT turned positive (H1 FY25 +£0.4m, FY25 +£2.0m, H1 FY26 +£1.3m) and has stayed positive four consecutive periods after two years of statutory losses beside profitable adjusted figures, as share-based-payment intensity falls with post-IPO maturity.</p>
     </div></details>
 
+    <details class="sub"><summary>Trend Watch workings</summary><div class="notes">
+      <p><span class="rk">Panel state: rendered under operator override, labelled pre-RNS.</span> The ShareScope block's latest snapshot is dated 14 Aug 2026 and the Buy/Sell RNS is 18 Aug 2026, so the block is stale under 5.3a and would default to "no consensus data". The operator has directed that it be used with a pre-RNS label, and the panel header carries that label. The staleness is four days but material rather than technical: the block's FY27 revenue forecast of £60.3m is precisely the figure the 18 Aug RNS raised above (to £63–66m), so <strong>the required-growth column below is the pre-upgrade bar, not the current one</strong>. Against the raised guide the required growth would be +7.0% to +12.1% on revenue and +6.8% to +11.9% on EBITDA, narrowing both gaps by roughly 5–10pp without changing either colour.</p>
+      <p><span class="rk">Mode, had the block been current.</span> GROWTH mode. The Buy/Sell RNS quantifies no period figure, so under the numbers-light rule the last quantified reading carries forward — the FY26 full-year trading update, a full-year document. Comparator is the latest completed sub-period, H2 FY26†, never the blended full year.</p>
+      <table class="ledger" style="max-width:100%; margin:10px 0;">
+        <thead><tr><th>Metric</th><th>Basis</th><th>H1 → H2 FY26† growth</th><th>Prior-year comparator</th><th>FY1 fc &amp; date</th><th>Required growth</th><th>Gap</th><th>Ranked in §2?</th></tr></thead>
+        <tbody>
+          <tr><td>REVENUE</td><td>Reported</td><td>+27.5% → <strong>+26.4%</strong> (£31.1m† vs £24.6m†)</td><td>H2 FY25† £24.6m (FY25 £46.4m − H1 £21.8m, both printed)</td><td>£60.3m · 14 Aug 26 <em>(pre-RNS)</em></td><td>+2.4% on FY26 £58.9m</td><td><strong>+24.0pp</strong> (green, clips at two o'clock)</td><td>Y — ties out to Rank 4</td></tr>
+          <tr><td>EBITDA</td><td>Adjusted</td><td>+33.3% → <strong>+105.9%</strong> (£3.5m† vs £1.7m†)</td><td>H2 FY25† £1.7m (FY25 £3.5m − H1 £1.8m, both printed)</td><td>£6.0m · 14 Aug 26 <em>(pre-RNS)</em></td><td>+1.7% on FY26 £5.9m</td><td><strong>+104.2pp</strong> (green, clips)</td><td>Y — margin ranked at 3; levels from §2.0</td></tr>
+          <tr><td>PBT</td><td>Statutory</td><td>n/a</td><td>H2 FY25† £1.5m</td><td>£5.7m · 14 Aug 26 <em>(pre-RNS)</em></td><td>n/a</td><td><strong>n/a</strong> — FY26 PBT unprinted</td><td>N — this table is its only audit trail</td></tr>
+        </tbody>
+      </table>
+      <p><span class="rk">Norm rule applied, and a corrupt row found.</span> Only the forecast would have come from the block; every actual and comparator above comes from the company's printed history. That discipline earns its keep here — the block's EBITDA sub-period row for FY25 reads H1 £0.8m / H2 £3.5m, but the printed H1 FY25 Adjusted EBITDA is £1.8m and £3.5m is the <em>full-year</em> figure. Taking the split from the block would have produced an H2 of £3.5m against a true £1.7m and halved the growth reading, silently. The PBT and revenue rows in the block reconcile to the record; the EBITDA row does not.</p>
+      <p><span class="rk">Reading.</span> Both computable metrics sit far above their thresholds — the second half of FY26 grew an order of magnitude faster than the forecast requires of FY27, which is the arithmetic behind the low FY27 bar rather than an independent finding. Note also that the block's own metadata is behind the record: it carries "next year end 31/5/26", a year that closed and was reported in June.</p>
+      <p><span class="rk">Refresh.</span> A snapshot dated on or after 18 Aug 2026 replaces the forecast column only; every actual and comparator above comes from the printed record and is unaffected. The pre-RNS label comes off in the same edit.</p>
+    </div></details>
+
     <details class="sub"><summary>Trigger detail &amp; audit record</summary><div class="notes">
-      <p><span class="rk">Condition 1 — Numbers &amp; guide (fired, green-shoot mirror, Jun-26).</span> G-column RAISE on the Buy/Sell RNS, alongside margin expansion (+250bps) and sequential growth on every disclosed metric. Full weight: a G event, not a confirmation-only fire.</p>
+      <p><span class="rk">Condition 1 — Numbers &amp; guide (fired, green-shoot mirror, Jun-26 · Aug-26).</span> Two G-column RAISEs in the window: the FY26 TU (ahead of upgraded expectations, margin +250bps) and the 18 Aug 26 award RNS, which puts a numeric FY27 range above the stated £60.3m / £6.0m consensus. Full weight — G events, not confirmation-only fires.</p>
       <p><span class="rk">Condition 2 — Language (not fired).</span> The Lexicon run is positive at every print since Jun-24, but the mirror needs a rise across two consecutive prints from zero or below; Sep-25 ⚪ → Dec-25 🟢🟢🟢 → Feb-26 🟢🟢 is one rise, then a step down. No fire in either direction.</p>
-      <p><span class="rk">Condition 3 — Disclosure (fired, deterioration, Jun-26).</span> Contracted Backlog withheld against a habit quantified in every FY trading update since Aug-22, with no FY26 bookings total either. The bookings half of this fire is discounted by the 15 Apr 26 award RNS (£54m year-to-date); the backlog half carries no discount and is what keeps the lamp red rather than amber.</p>
-      <p><span class="rk">Count and direction.</span> Two lamps lit, in opposite directions, so no 2-of-3 convergence and no alert. The card border, rail and verdict stay amber: hard actuals accelerating against a leading-indicator disclosure break is exactly the tension STABLE—WATCH exists to hold.</p>
+      <p><span class="rk">Condition 3 — Disclosure (fired, green-shoot mirror, Aug-26).</span> The 18 Aug 26 RNS re-quantifies Contracted Backlog at c.£115m, the green-shoot mirror of the condition that fired red on 30 Jun 26 — a dropped metric restored, and at the highest level in the record. The Jun-26 withhold is not erased: it stands as a two-document gap, and the FY26 bookings total has still never been printed. But the lamp reports the latest fire and its direction, and that fire is green.</p>
+      <p><span class="rk">Count and direction.</span> Two lamps lit, both green, on the same document — 2-of-3 convergence in the same direction, so the alert fires as a green-shoot alert. Direction turns up. Note what changed and what did not: no scored figure in the §2 grid moved except the re-quantified backlog cell; the turn is carried by a guide and a disclosure event, which is precisely the sequence this framework is built to catch ahead of the reported numbers.</p>
       <p><span class="rk">Audit record.</span> Appendix A Stages A–E run 8 Aug 2026 against source: eight defects found and corrected (Drift column count, Feb-23 EBITDA transcription, H1 FY23 margin comparison basis and restated value, backlog rebase-crossing delta, net-cash Buy/Sell basis, Feb-26 consensus denominator, and a "first negative-YoY backlog print" claim restated in three places). No arrow, trigger or direction changed.</p>
+      <p><span class="rk">Incremental read, 18 Aug 2026.</span> New qualifying document (contract award carrying a numeric FY27 guide — qualifies on content, not title). Added: §2 Aug-26 column, §4 Drift column, §3 Text+G row. Rank 2 re-quantified c.£115m; ranks 3–5 carry no figure in this document type. Guidance figures are a guide, never an actual, so the FY27 range sits on the aggregate row as a guide note and seeds no scored cell.</p>
     </div></details>
 
   </div></details>
@@ -697,7 +798,8 @@
         <tr data-rowtype="tu" class="shade"><td>10 Dec 25</td><td class="doc"><span class="fy">FY26</span><span class="dt">H1 TU</span></td><td class="g-raise">🟢 RAISE</td><td class="phrase">"Board now expects trading for FY26 to be significantly ahead of current market expectations, with revenue expected to be c.10% higher"</td><td class="trail">H1 TU. Strongest language in the record; revenue guided c.10% above £50.1m. Bookings described only as softer — no figure, the first hedge.</td><td class="score">🟢🟢🟢</td></tr>
         <tr data-rowtype="h1r"><td>26 Feb 26</td><td class="doc"><span class="fy">FY26</span><span class="dt">H1 R</span></td><td class="g-raise">🟢 RAISE</td><td class="phrase">"trading ahead of recently upgraded expectations"; "Board anticipates that Adjusted EBITDA will be materially ahead of current market expectations"</td><td class="trail">H1 FY26. EBITDA raise printed beside bookings −68% and backlog −7.9%; consensus EBITDA lifted to £4.8m. Guide and leading metrics point opposite ways.</td><td class="score">🟢🟢</td></tr>
         <tr data-rowtype="awd" class="awrow"><td>15 Apr 26</td><td class="doc"><span class="fy">FY26</span><span class="dt">AWD</span></td><td class="g-flat">flat</td><td class="phrase">"year-to-date Sales Bookings have increased materially to £54 million, including approximately £41 million of new Sales Bookings secured so far in the second half … supports current expectations for FY26 and enhances revenue visibility for FY27"</td><td class="trail">Contract-award RNS, noise-class. First quantification of bookings in that document type; the guide is reiterated, not moved, so no G event. <strong>Implied book-to-bill†:</strong> H2-to-date £41m ÷ implied H2 revenue £31.1m = <strong>≥1.32x</strong>, against 0.48x at H1 FY26 and 1.63x in H2 FY25; full-year £54m ÷ £58.9m = ≥0.92x. Both are floors — post-15-Apr bookings unprinted. Annotation only, never scored.</td><td class="score">🟢</td></tr>
-        <tr data-rowtype="tu" class="shade"><td>⭐ 30 Jun 26</td><td class="doc"><span class="fy">FY26</span><span class="dt">TU</span></td><td class="g-raise">🟢 RAISE</td><td class="phrase">"FY26 expected to be ahead of recently upgraded market expectations"; margin "delivered ahead of previously indicated guidance"</td><td class="trail">Dec-25 "c.10% above £50.1m" (≈£55.1m): rev <span class="met">+6.9%</span> (beat)<br>Feb-26 "materially ahead" EBITDA: £5.9m vs £4.8m consensus at that date <span class="met">(+23%, beat)</span><br>Buy/Sell RNS. Raise delivered while both order metrics go unquantified — the guide and the disclosure disagree.</td><td class="score">🟢🟢</td></tr>
+        <tr data-rowtype="tu" class="shade"><td>30 Jun 26</td><td class="doc"><span class="fy">FY26</span><span class="dt">TU</span></td><td class="g-raise">🟢 RAISE</td><td class="phrase">"FY26 expected to be ahead of recently upgraded market expectations"; margin "delivered ahead of previously indicated guidance"</td><td class="trail">Dec-25 "c.10% above £50.1m" (≈£55.1m): rev <span class="met">+6.9%</span> (beat)<br>Feb-26 "materially ahead" EBITDA: £5.9m vs £4.8m consensus at that date <span class="met">(+23%, beat)</span><br>Buy/Sell RNS. Raise delivered while both order metrics go unquantified — the guide and the disclosure disagree.</td><td class="score">🟢🟢</td></tr>
+        <tr data-rowtype="ca"><td>⭐ 18 Aug 26</td><td class="doc"><span class="fy">FY27</span><span class="dt">CA</span></td><td class="g-raise">🟢 RAISE</td><td class="phrase">"now expects revenue for FY27 to be in the range of £63 million to £66 million …… ahead of current market expectations"</td><td class="trail">Contract award carrying a numeric FY27 guide, so it qualifies on content. Prior guide was consensus £60.3m / £6.0m; the new range lifts revenue +4.5% to +9.5% and EBITDA to £6.3–6.6m. Second upgrade of 2026. Backlog re-quantified at c.£115m after two documents of withhold — the metric returns at a record level.</td><td class="score">🟢🟢</td></tr>
       </tbody>
     </table>
   </div>
@@ -716,11 +818,11 @@
   </div></details>
 
   <!-- ============ §4 DRIFT ============ -->
-  <h2 class="sec"><span class="n">§4</span> &nbsp;Drift — Disclosure Matrix <span class="subtle" style="text-transform:none;letter-spacing:0;font-weight:400;">· 15 qualifying documents = 15 columns · +1 award RNS (blue, AWD)</span></h2>
+  <h2 class="sec"><span class="n">§4</span> &nbsp;Drift — Disclosure Matrix <span class="subtle" style="text-transform:none;letter-spacing:0;font-weight:400;">· 16 qualifying documents = 16 columns · +1 annotation RNS (blue, AWD)</span></h2>
   <div class="driftwrap">
     <table id="drift">
       <colgroup>
-        <col class="lab"><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col class="aw">
+        <col class="lab"><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col class="aw"><col>
       </colgroup>
       <thead>
         <tr>
@@ -740,7 +842,8 @@
           <th data-k="H1TU">Dec 25<span class="dt">FY26</span><span class="key">H1TU</span></th>
           <th data-k="H1R">Feb 26<span class="dt">FY26</span><span class="key">H1R</span></th>
           <th data-k="AWD" class="aw">Apr 26<span class="dt">FY26</span><span class="key">AWD</span></th>
-          <th data-k="FYTU">⭐ Jun 26<span class="dt">FY26</span><span class="key">FYTU</span></th>
+          <th data-k="FYTU">Jun 26<span class="dt">FY26</span><span class="key">FYTU</span></th>
+          <th data-k="CA">⭐ Aug 26<span class="dt">FY27</span><span class="key">CA</span></th>
         </tr>
       </thead>
       <tbody>
@@ -761,7 +864,7 @@
           <td data-k="H1TU"><span class="cq">🟡</span><span class="v">"softer"</span></td>
           <td data-k="H1R"><span class="cok">✅</span><span class="v">13.4</span></td>
           <td data-k="AWD" class="aw"><span class="cok">✅</span><span class="v">54 ytd</span></td>
-          <td data-k="FYTU"><span class="cno">❌</span></td>
+          <td data-k="FYTU"><span class="cno">❌</span></td><td data-k="CA"><span class="cqual">🟡</span></td>
         </tr>
         <tr>
           <td class="mlab">Contracted Backlog</td>
@@ -780,7 +883,7 @@
           <td data-k="H1TU"><span class="cok">✅</span><span class="v">74.0</span></td>
           <td data-k="H1R"><span class="cok">✅</span><span class="v">74.4</span></td>
           <td data-k="AWD" class="aw"><span class="cna">—</span></td>
-          <td data-k="FYTU"><span class="cno">❌</span></td>
+          <td data-k="FYTU"><span class="cno">❌</span></td><td data-k="CA"><span class="cok">✅</span><span class="v">c.115</span></td>
         </tr>
         <tr>
           <td class="mlab">Adj EBITDA</td>
@@ -799,7 +902,7 @@
           <td data-k="H1TU"><span class="cok">✅</span><span class="v">2.4</span></td>
           <td data-k="H1R"><span class="cok">✅</span><span class="v">2.4</span></td>
           <td data-k="AWD" class="aw"><span class="cna">—</span></td>
-          <td data-k="FYTU"><span class="cok">✅</span><span class="v">5.9</span></td>
+          <td data-k="FYTU"><span class="cok">✅</span><span class="v">5.9</span></td><td data-k="CA"><span class="cna">—</span></td>
         </tr>
         <tr>
           <td class="mlab">Revenue</td>
@@ -818,7 +921,7 @@
           <td data-k="H1TU"><span class="cok">✅</span><span class="v">c.27.7</span></td>
           <td data-k="H1R"><span class="cok">✅</span><span class="v">27.8</span></td>
           <td data-k="AWD" class="aw"><span class="cna">—</span></td>
-          <td data-k="FYTU"><span class="cok">✅</span><span class="v">58.9</span></td>
+          <td data-k="FYTU"><span class="cok">✅</span><span class="v">58.9</span></td><td data-k="CA"><span class="cna">—</span></td>
         </tr>
         <tr>
           <td class="mlab">Net Cash</td>
@@ -837,7 +940,7 @@
           <td data-k="H1TU"><span class="cok">✅</span><span class="v">11.9</span></td>
           <td data-k="H1R"><span class="cok">✅</span><span class="v">11.9</span></td>
           <td data-k="AWD" class="aw"><span class="cna">—</span></td>
-          <td data-k="FYTU"><span class="cok">✅</span><span class="v">14.5</span></td>
+          <td data-k="FYTU"><span class="cok">✅</span><span class="v">14.5</span></td><td data-k="CA"><span class="cna">—</span></td>
         </tr>
       </tbody>
     </table>
@@ -845,7 +948,7 @@
   <div class="footnote">Key: <span class="cok">✅</span> quantified · <span class="cq">🟡</span> qualitative-only · <span class="cno">❌</span> verified blank against established cadence · <span class="cna">—</span> structurally outside that doc-type's cadence. Blue AWD column = contract-award RNS (noise-class, operator-added; annotation only, no cadence baseline). Click any header to highlight every column of that period-type.</div>
   <details class="top1"><summary>§4 workings — notes</summary><div class="notes">
     <details class="sub"><summary>Notes — §4</summary><div class="notes">
-      <p><span class="rk">First note (Jun-26, rightmost).</span> Sales Bookings and Contracted Backlog both ❌ — no FY26 totals printed. Annotation (15 Apr 26 contract RNS, noise doc): YTD bookings quantified at £54m (c.£41m H2-to-date), a first-ever quantification in that doc type — so bookings were disclosed mid-cycle at a recovered level 2.5 months before the TU, discounting the withhold's "dark as the signal turned" read. Backlog carries no such discount: unquantified since Feb-26 (£74.4m) and now the sharper withhold of the two.</p>
+      <p><span class="rk">First note (Jun-26, rightmost).</span> Sales Bookings and Contracted Backlog both ❌ — no FY26 totals printed. Annotation (15 Apr 26 contract RNS, noise doc): YTD bookings quantified at £54m (c.£41m H2-to-date), a first-ever quantification in that doc type — so bookings were disclosed mid-cycle at a recovered level 2.5 months before the TU, discounting the withhold's "dark as the signal turned" read. Backlog carried no such discount until 18 Aug 26, when it was re-quantified at c.£115m — a dropped metric restored, and the green-shoot mirror of the Jun-26 fire. Bookings remain un-totalled for FY26, described only qualitatively in the new document.</p>
       <p><span class="rk">Cadence expansion (Nov-24).</span> The AGM Statement was the first AGM RNS to carry quantified guidance language — a disclosure expansion vs the pure-procedure AGMs of Oct-22, Oct-23, Nov-25. It did not repeat at Nov-25 (procedural only), so it was event-driven, not a settled new habit; Nov-25's silence is therefore no ❌.</p>
     </div></details>
   </div></details>
@@ -857,7 +960,7 @@
 <script>
 (function(){
   // §2 grid: click a period header -> highlight all columns of that period type (H1 or FY)
-  var fgrid = document.querySelector('table.fgrid');
+  var fgrid = document.querySelector('table.grid');
   if(fgrid){
     var prow = fgrid.querySelector('thead .prow');
     var headers = Array.prototype.slice.call(prow.querySelectorAll('th')).filter(function(th){return !th.classList.contains('lab');});
@@ -866,20 +969,20 @@
         var p = th.getAttribute('data-p');
         var already = th.classList.contains('active');
         // clear
-        fgrid.querySelectorAll('td.qhl, th.qhl').forEach(function(c){c.classList.remove('qhl');});
+        fgrid.querySelectorAll('td.hl, th.hl').forEach(function(c){c.classList.remove('hl');});
         headers.forEach(function(h){h.classList.remove('active');});
         if(already) return;
         th.classList.add('active');
         // column index among the 8 data columns (idx). Highlight matching data-p headers + their cells.
         var matchCols = [];
-        headers.forEach(function(h,i){ if(h.getAttribute('data-p')===p){ matchCols.push(i); h.classList.add('qhl'); } });
+        headers.forEach(function(h,i){ if(h.getAttribute('data-p')===p){ matchCols.push(i); h.classList.add('hl'); } });
         // body rows: valrow + strip (skip secbar/colspan rows and the Buy/Sell colspan rows)
         fgrid.querySelectorAll('tbody tr').forEach(function(tr){
           if(tr.classList.contains('secbar')) return;
           var cells = tr.querySelectorAll('td');
           // first cell is label; data cells follow. Only rows with 9 cells (label+8) qualify.
-          if(cells.length===12){
-            matchCols.forEach(function(ci){ cells[ci+1].classList.add('qhl'); });
+          if(cells.length===13){
+            matchCols.forEach(function(ci){ cells[ci+1].classList.add('hl'); });
           }
         });
       });
@@ -894,10 +997,10 @@
       th.addEventListener('click', function(){
         var k = th.getAttribute('data-k');
         var already = th.classList.contains('active');
-        drift.querySelectorAll('.qhl').forEach(function(c){c.classList.remove('qhl');});
+        drift.querySelectorAll('.hl').forEach(function(c){c.classList.remove('hl');});
         dheaders.forEach(function(h){h.classList.remove('active');});
         if(already) return;
-        drift.querySelectorAll('[data-k="'+k+'"]').forEach(function(c){ c.classList.add('qhl'); c.classList.add('active'); });
+        drift.querySelectorAll('[data-k="'+k+'"]').forEach(function(c){ c.classList.add('hl'); c.classList.add('active'); });
       });
     });
   }
@@ -943,18 +1046,18 @@
  "ticker": "MTEC",
  "company": "Made Tech Group plc",
  "kind": "ticker",
- "direction": "watch",
- "headline": "Every hard metric is accelerating and bookings quantified mid-cycle show a strong H2 recovery — but the FY total and backlog are still unprinted.",
- "trigger": "Disclosure fired on the Buy/Sell RNS (backlog withheld against a six-print habit, no FY26 bookings total); Numbers & guide fired green (G RAISE, margin +250bps). Opposite directions, no 2-of-3 convergence.",
- "alert": false,
+ "direction": "up",
+ "headline": "FY27 guidance raised above consensus on a record £40m award, and the withheld backlog returns at c.£115m — the disclosure gap closed upward.",
+ "trigger": "Numbers & guide and Disclosure both fired green on the 18 Aug 26 award RNS: a numeric FY27 guide above consensus, and Contracted Backlog re-quantified at c.£115m after two documents withheld.",
+ "alert": true,
  "fired": 2,
  "fired_of": 3,
- "lights": "g-r",
- "rns_type": "FY Trading Update",
- "rns_date": "2026-06-30",
- "build_date": "2026-08-08",
- "spec_version": "5.1",
- "next_test": "Sep 2026 — FY26 results must print the bookings total and year-end backlog against £92.2m. Near £80m clears the watch; another withhold converts it.",
+ "lights": "g-g",
+ "rns_type": "Contract Award & FY27 Guidance Upgrade",
+ "rns_date": "2026-08-18",
+ "build_date": "2026-08-18",
+ "spec_version": "5.3e",
+ "next_test": "Sep 2026 — FY26 final results must print the bookings total and confirm the backlog basis, with promised further colour on the FY27 outlook.",
  "url": "MTEC_drift_tracker.html",
  "grid": {
   "labels": [
@@ -965,7 +1068,6 @@
    "R5"
   ],
   "periods": [
-   "H2 22",
    "H1 23",
    "H2 23",
    "H1 24",
@@ -973,16 +1075,36 @@
    "H1 25",
    "H2 25",
    "H1 26",
-   "H2 26"
+   "H2 26",
+   "Aug 26"
   ],
   "rows": [
-   "-ggrrggrx",
-   "gggrgggrx",
-   "-rrgaaaag",
-   "-ggrrgggg",
-   "grrrrgggg"
+   "ggrrggrxa",
+   "ggrgggrxg",
+   "rrgaaaag-",
+   "ggrrgggg-",
+   "rrrrgggg-"
   ],
-  "note": "Half grain incl. derived H2 (FY − H1); R1 Sales Bookings, R2 Backlog, R3 Adj EBITDA margin, R4 Revenue, R5 Net Cash; x = withheld."
+  "note": "Half grain incl. derived H2 (FY − H1), right-anchored on the 18 Aug 26 award RNS; R1 Bookings, R2 Backlog, R3 Adj EBITDA margin, R4 Revenue, R5 Net Cash."
+ },
+ "trend": {
+  "mode": "growth",
+  "cells": "gg-",
+  "rows": [
+   {
+    "m": "REV",
+    "gap": 24.0
+   },
+   {
+    "m": "EBITDA",
+    "gap": 104.2
+   },
+   {
+    "m": "PBT",
+    "gap": null
+   }
+  ],
+  "note": "pre-RNS block, 14 Aug 26"
  }
 }</script>
 </body>
