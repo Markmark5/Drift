@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KNOS — Longitudinal Drift Tracker v5.3e</title>
+<style>
+:root{
+ --red:#b3261e; --green:#1e7a45; --amber:#9a6a00;
+ --red2:#d94436; --green2:#2f9e5c; --amber2:#c98f16;
+ --line:#d8d5cf; --ink:#16150f; --mute:#5f5c54; --paper:#f7f6f2; --muted:#6b6860;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--ink);
+ font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+ font-size:13px;line-height:1.5}
+.wrap{max-width:1800px;margin:0 auto;padding:30px 26px 70px}
+h2.sec{font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--mute);
+ font-weight:700;margin:0 0 12px;padding-bottom:7px;border-bottom:1px solid var(--line)}
+.sec-wrap{margin-top:30px}
+.subnote{font-size:11.5px;color:var(--muted);margin:-6px 0 12px}
+.cav{font-family:'Caveat',"Comic Sans MS",cursive}
+
+/* ==== VERDICT CARD — LOCKED v5.3d ==== */
+.card{display:flex;border:6px solid var(--dir);border-radius:12px;overflow:hidden;
+  max-width:1180px;margin:0 0 30px;background:#fff}
+.card.up{--dir:#2f9e5c}
+.card.watch{--dir:#c98f16}
+.card.down{--dir:#d94436}
+.rail{width:82px;flex:0 0 82px;background:var(--dir);color:#fff;display:flex;
+  flex-direction:column;align-items:center;justify-content:flex-start;
+  padding:16px 6px;gap:12px;position:relative}
+.badge{width:36px;height:36px;border-radius:50%;border:2px solid #fff;
+  display:flex;align-items:center;justify-content:center;flex:0 0 36px}
+.railtkr{writing-mode:vertical-rl;transform:rotate(180deg);text-transform:uppercase;
+  letter-spacing:.12em;font-size:19px;font-weight:700;color:#fff;flex:0 0 auto}
+.raillab{writing-mode:vertical-rl;transform:rotate(180deg);text-transform:uppercase;
+  letter-spacing:.16em;font-size:14px;font-weight:600;color:rgba(255,255,255,.9);flex:0 0 auto}
+.railco{writing-mode:vertical-rl;transform:rotate(180deg);letter-spacing:.07em;
+  font-size:13.5px;font-weight:500;color:rgba(255,255,255,.85);flex:0 0 auto;
+  max-height:260px;overflow:hidden}
+.railgap{flex:1 1 auto;min-height:26px}
+.tier1{position:absolute;bottom:14px;font-size:18px}
+.cbody{flex:1;padding:20px 22px 22px;min-width:0}
+.chead{font-size:22px;font-weight:700;line-height:1.25;margin:0 0 12px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:14px}
+.pill{background:var(--paper);border:1px solid var(--line);border-radius:999px;
+  padding:4px 11px;font-size:11.5px;color:var(--mute);white-space:nowrap}
+.dot{color:var(--line)}
+.lights{background:#2b2a26;border-radius:12px;padding:12px 13px;max-width:1100px;
+  display:flex;gap:10px;align-items:stretch;flex-wrap:wrap}
+.lamp{flex:1 1 200px;background:#3b3934;border-radius:9px;padding:10px 11px;
+  position:relative;min-width:190px}
+.lamp.off,.lamp.amb{background:#333129}
+.bulb{width:28px;height:28px;border-radius:50%;margin-bottom:7px;
+  border:2px solid rgba(255,255,255,.28);box-shadow:0 0 0 4px rgba(255,255,255,.07)}
+.b-r{background:#ff3b30} .b-g{background:#21d05e} .b-a{background:#ffb020} .b-o{background:#57544c}
+.lname{font-size:15.5px;font-weight:700;color:#fff;line-height:1.15}
+.lamp.off .lname,.lamp.amb .lname{color:#a8a49a}
+.lreason{font-size:11.5px;color:#c9c6bd;margin-top:4px;line-height:1.35}
+.ldate{position:absolute;top:10px;right:11px;font-size:11px;color:#c9c6bd}
+.lamp.off .ldate,.lamp.amb .ldate{color:#8d8981}
+.tally{flex:0 0 78px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.tally b{font-size:26px;font-weight:700;color:#fff;line-height:1}
+.tally span{font-size:10.5px;letter-spacing:.14em;color:#c9c6bd;margin-top:4px}
+.bstrip{margin-top:10px;border:1px dashed #57544c;border-radius:9px;padding:9px 11px;
+  display:flex;align-items:stretch;gap:10px}
+.bsweep{flex:1;display:flex;align-items:center;gap:10px;padding-right:14px;min-width:230px}
+.bbulb{width:20px;height:20px;border-radius:50%;flex:0 0 20px;border:2px solid rgba(255,255,255,.25)}
+.bstrip .t{font-size:13px;color:#fff;font-weight:600}
+.bstrip .s{font-size:11px;color:#c9c6bd;margin-top:2px}
+details.guide{margin:14px 0;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+details.guide>summary{background:#2b2a26;color:#fff;padding:8px 15px;cursor:pointer;
+  list-style:none;font-family:'Caveat',"Comic Sans MS",cursive;font-weight:700;font-size:24px}
+details.guide>summary::-webkit-details-marker{display:none}
+details.guide>summary .em{font-size:22px;margin-right:6px}
+.gbody{padding:14px 16px;font-size:12.5px;line-height:1.55}
+.gbody h4{font-family:'Caveat',"Comic Sans MS",cursive;font-weight:700;font-size:22px;margin:12px 0 4px}
+.gbody h4:first-child{margin-top:0}
+.gbody .vintage{color:var(--muted);font-size:11px;margin-top:12px}
+.boxes{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 14px}
+.box{background:#f2f1ec;border-radius:0 0 10px 10px;border-top:3px solid var(--dir);
+  padding:12px 15px 13px}
+.box .lb{font-size:13px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted)}
+.box .hl2{font-size:19px;font-weight:700;margin:3px 0 4px}
+.box p{font-size:13px;line-height:1.45;margin:0}
+.cbul{margin:0;padding-left:18px;font-size:13px}
+.cbul li{margin-bottom:6px}
+
+/* ==== TREND WATCH PANEL — LOCKED v5.3 ==== */
+.tw{flex:1;border-left:1px dashed #57544c;padding-left:16px;min-width:0}
+.tw .plab{font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#8d8981;font-weight:700}
+.tw .dset{display:flex;gap:20px;margin-top:8px}
+.tw .dcell{text-align:center;width:88px}
+.tw .dnm{font-size:9px;letter-spacing:.1em;color:#8d8981;margin-bottom:2px}
+.tw .dfig{font-size:11px;font-weight:700;margin-top:2px}
+.tw .dtrend{font-size:9px;color:#c9c6bd;margin-top:2px}
+.tw .dfc{font-size:8.5px;color:#6d6a62}
+
+/* ==== §2 GRID SKIN — LOCKED v4.0 ==== */
+.gridwrap{overflow-x:auto; margin-bottom:16px}
+table.grid{table-layout:fixed; width:100%; min-width:1000px; border-collapse:collapse; font-size:12.5px}
+table.grid th, table.grid td{border:1px solid var(--line); text-align:center; padding:7px 4px; vertical-align:top}
+table.grid col.lab{width:190px}
+table.grid col.per{width:calc((100% - 190px)/9)}
+.yband{background:#efedE7; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; font-weight:700}
+th.phead{cursor:pointer; user-select:none; font-size:11.5px; background:var(--paper)}
+th.phead:hover{background:#eceae4}
+th.lab, td.lab{text-align:left !important}
+.secbar td{background:var(--ink); color:#fff; text-align:left !important;
+ font-size:11.5px; letter-spacing:.07em; font-weight:700; padding:7px 9px}
+.secbar .nat{font-weight:400; letter-spacing:.02em; color:#c9c6bd; text-transform:none}
+.strip td{padding:2px 4px; font-size:10px; color:var(--mute); background:#fbfaf7; letter-spacing:.05em}
+.strip td.lab{font-style:italic}
+.vrow td{background:#fff}
+.vrow td.lab{color:var(--mute); font-style:italic; font-size:11.5px}
+.val{font-weight:700; display:block; font-size:13px}
+.val .neg{color:var(--red)}
+.delta{display:block; font-size:11px; color:var(--mute); margin-top:2px}
+.delta.neg{color:var(--red)}
+tr.agg td{background:#fff; border-top:2px solid var(--ink); color:var(--mute); font-size:11.5px; padding:6px 4px}
+tr.agg td.lab{font-style:italic}
+tr.agg .aval{font-weight:700; color:var(--mute)}
+tr.agg .anote{display:inline; font-size:10.5px; margin-left:5px}
+td.bs-col{background:#fcfbf8 !important}
+td.bs-col .val{font-weight:800}
+th.bs-col{font-weight:800}
+.hl{background:#fff6d9 !important}
+
+/* drawers — two tiers */
+details.d1{border:1px solid #c6c2b9;background:var(--paper);border-radius:10px;margin-top:16px;max-width:1500px}
+details.d1>summary{font-size:14px;padding:13px;cursor:pointer;list-style:none;font-weight:700;color:var(--ink)}
+details.d1>summary::-webkit-details-marker{display:none}
+details.d1>summary:before{content:"▸ ";color:var(--mute)}
+details.d1[open]>summary:before{content:"▾ "}
+.d1body{padding:0 14px 14px;font-size:12.5px;line-height:1.55}
+details.d2{border:1px solid var(--line);background:#fff;border-radius:8px;margin-top:12px}
+details.d2>summary{font-size:12.5px;padding:9px;cursor:pointer;list-style:none;font-weight:600;color:var(--mute)}
+details.d2>summary::-webkit-details-marker{display:none}
+details.d2>summary:before{content:"▸ ";color:var(--muted)}
+details.d2[open]>summary:before{content:"▾ "}
+.d2body{padding:0 12px 12px;font-size:12.5px;line-height:1.55;color:var(--mute)}
+.d2body b,.d1body b{color:var(--ink)}
+.d1body p,.d2body p{margin:9px 0}
+
+/* §2.0 */
+.flex20{display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start}
+.bridge{flex:1 1 440px;border:1px solid var(--line);border-radius:10px;overflow:hidden;min-width:0}
+.bhead{background:#2b2a26;color:#fff;padding:8px 15px;font-family:'Caveat',"Comic Sans MS",cursive;
+ font-weight:700;font-size:20px}
+.bhead .em{font-size:22px;margin-right:6px}
+table.br{width:100%;border-collapse:collapse;font-size:12.5px}
+table.br td{padding:8px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+table.br td.dv{font-family:'Caveat',"Comic Sans MS",cursive;font-weight:700;font-size:19px;width:31%}
+table.br td.ct{font-weight:700;text-align:right;white-space:nowrap;width:16%}
+.tg{background:#e9f5ee} .tr{background:#fdecea} .ta{background:#fdf4e3}
+.bcap{background:#fafafa;padding:10px 14px;font-size:11px;color:var(--mute);line-height:1.5}
+.bar{flex:1 1 440px;border:2px solid var(--green2);background:#e9f5ee;border-radius:10px;
+ overflow:hidden;min-width:0}
+.barhead{background:#2b2a26;color:#fff;padding:8px 15px;font-family:'Caveat',"Comic Sans MS",cursive;
+ font-weight:700;font-size:20px}
+.barhead .em{font-size:22px;margin-right:6px}
+.barbody{padding:13px 16px}
+.barlead{font-weight:700;color:var(--green);margin-bottom:8px;font-size:13px}
+.barbody ul{margin:0;padding-left:18px}
+.barbody li{font-size:13px;line-height:1.5;margin-bottom:4px}
+
+/* §3 */
+.t3wrap{overflow-x:auto}
+table.t3{border-collapse:collapse;font-size:12px;min-width:1000px;width:100%}
+table.t3 th,table.t3 td{border:1px solid var(--line);padding:7px 9px;vertical-align:top;text-align:left}
+table.t3 thead th{background:#efedE7;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+ color:var(--mute);font-weight:700}
+table.t3 td.doc{font-size:11px;white-space:nowrap;cursor:pointer;line-height:1.3}
+table.t3 td.doc b{display:block;font-size:10.5px;color:var(--muted);font-weight:700}
+table.t3 td.dt{white-space:nowrap;font-size:11.5px}
+table.t3 td.g{text-align:center;white-space:nowrap;font-size:11px;font-weight:700}
+table.t3 td.sc{text-align:center;white-space:nowrap;font-size:13px}
+table.t3 td.ph{font-style:italic;color:var(--mute)}
+table.t3 td.cx{font-size:11px;color:var(--muted);max-width:290px}
+table.t3 tr.changed td{background:#f4f2ec}
+table.t3 td.doc.hlp{background:#fde7ef !important}
+.t3collapsed tr.old{display:none}
+tr.exp td{background:var(--paper);cursor:pointer;font-size:11.5px;color:var(--mute);
+ text-align:center;font-weight:600;padding:6px}
+.gcut{color:var(--red)} .graise{color:var(--green)} .gflat{color:var(--muted)}
+
+/* §4 */
+.dwrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px}
+table.drift{border-collapse:collapse;font-size:10.5px;min-width:1560px}
+table.drift th,table.drift td{border:1px solid #eceef1;padding:5px 4px;text-align:center;white-space:nowrap}
+table.drift thead th{background:var(--paper);font-size:9px;font-weight:700;color:var(--mute);
+ cursor:pointer;user-select:none;line-height:1.3}
+table.drift thead th .key{display:block;font-size:8px;color:var(--muted);font-weight:400;margin-top:2px}
+table.drift td.mlab{text-align:left;font-size:11px;padding-left:10px;color:var(--ink);font-weight:600;
+ position:sticky;left:0;background:#fff;box-shadow:1px 0 0 var(--line)}
+table.drift tr.lr td.mlab:before{content:"● ";color:var(--amber2)}
+table.drift td.bsc{background:#fcfbf8;font-weight:700}
+table.drift td.oct{background:#fdf3f3}
+.cok{color:var(--green)} .cwarn{color:var(--red);font-weight:700} .cq{color:var(--amber2);font-weight:700}
+.cna{color:#c3c7cd}
+td.dhl{background:#fff6d9 !important}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:10.5px;color:var(--muted);margin-top:10px}
+.strip9{display:inline-block;border-collapse:collapse;margin:6px 0}
+.strip9 td{width:22px;height:22px;border:1px solid #fff;text-align:center;font-size:0}
+.strip9 td.lb{width:34px;font-size:11px;font-weight:700;color:var(--ink);border:none;text-align:left}
+.s-g{background:#21d05e}.s-a{background:#ffb020}.s-r{background:#ff3b30}.s-x{background:#7a2020}.s--{background:#ddd9d2}
+.strip9 td.bsx{outline:2px solid var(--ink);outline-offset:-2px}
+pre.json{background:#2b2a26;color:#e8e6e0;padding:12px;border-radius:8px;font-size:10.5px;
+ overflow-x:auto;line-height:1.45;user-select:all}
+@media(max-width:760px){
+ .boxes{grid-template-columns:1fr}
+ .card{flex-direction:column}
+ .rail{width:100%;flex-direction:row;padding:10px;align-items:center;gap:10px}
+ .railtkr,.raillab,.railco{writing-mode:horizontal-tb;transform:none;max-height:none}
+ .railgap{display:none}
+ .bstrip{flex-direction:column}
+ .bsweep{min-width:0;padding-right:0}
+ .tw{border-left:none;border-top:1px dashed #57544c;padding-left:0;padding-top:10px;margin-top:2px}
+ .tw .dset{justify-content:space-between;gap:8px}
+ .tw .dcell{width:32%}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- 🏁 VERDICT CARD -->
+<div class="card up">
+ <div class="rail">
+  <div class="badge">
+   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+  </div>
+  <div class="raillab">Turning up</div>
+  <div class="railgap"></div>
+  <div class="railtkr">KNOS</div>
+  <div class="railco">Kainos Group</div>
+  <div class="railgap"></div>
+ </div>
+ <div class="cbody">
+  <h1 class="chead">Guide raised on revenue and profit together — a first in this record — while retention stays withheld and margin sits flat.</h1>
+  <div class="pills">
+   <span class="pill">Trading Update · 18 Aug 2026</span>
+   <span class="pill">FY-end 31 Mar</span>
+   <span class="dot">·</span>
+   <span class="pill">B/S: clean, net cash</span>
+  </div>
+
+  <div class="lights">
+   <div class="lamp">
+    <div class="ldate">Nov-25 →</div>
+    <div class="bulb b-g"></div>
+    <div class="lname">Numbers &amp; guide</div>
+    <div class="lreason">Bookings green four halves running; both guides lifted above consensus</div>
+   </div>
+   <div class="lamp">
+    <div class="ldate">May-26 · Aug-26</div>
+    <div class="bulb b-g"></div>
+    <div class="lname">Language</div>
+    <div class="lreason">"Comfortably ahead" — best score in nineteen documents, rising twice</div>
+   </div>
+   <div class="lamp">
+    <div class="ldate">May-25 · May-26</div>
+    <div class="bulb b-r"></div>
+    <div class="lname">Disclosure</div>
+    <div class="lreason">Retention qualitative two years, then cut from the product KPIs</div>
+   </div>
+   <div class="tally"><b>3/3</b><span>FIRED</span></div>
+   <div class="bstrip" style="flex-basis:100%">
+    <div class="bsweep">
+     <div class="bbulb b-g"></div>
+     <div><div class="t">Clean · net cash · one Tier-2</div>
+      <div class="s">Sweep sits outside the 2-of-3 count</div></div>
+    </div>
+    <div class="tw">
+     <div class="plab">Trend Watch · FY1 fc (Aug-26, pre-RNS) vs H2 (y-on-y) growth</div>
+     <div class="dset">
+      <div class="dcell"><div class="dnm">REVENUE</div>
+       <svg width="50" height="50" viewBox="0 0 42 42">
+        <circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/>
+        <circle cx="21" cy="21" r="15.915" fill="none" stroke="#21d05e" stroke-width="5"
+         stroke-dasharray="50 100" transform="rotate(-90 21 21)" stroke-linecap="round"/>
+        <line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/>
+       </svg>
+       <div class="dfig" style="color:#7bd88f">+10.6pp</div>
+       <div class="dtrend">+7.1% → <b>+27.6%</b></div><div class="dfc">fc +17.0%</div></div>
+
+      <div class="dcell"><div class="dnm">EBITDA</div>
+       <svg width="50" height="50" viewBox="0 0 42 42">
+        <circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/>
+        <circle cx="21" cy="21" r="15.915" fill="none" stroke="#21d05e" stroke-width="5"
+         stroke-dasharray="54 100" transform="rotate(-90 21 21)" stroke-linecap="round"/>
+        <line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/>
+       </svg>
+       <div class="dfig" style="color:#7bd88f">+16.2pp</div>
+       <div class="dtrend">−13.6% → <b>+33.6%</b></div><div class="dfc">fc +17.4%</div></div>
+
+      <div class="dcell"><div class="dnm">PBT</div>
+       <svg width="50" height="50" viewBox="0 0 42 42">
+        <circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/>
+        <line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/>
+       </svg>
+       <div class="dfig" style="color:#6d6a62">n/a</div>
+       <div class="dtrend">block PBT statutory</div><div class="dfc"></div></div>
+     </div>
+    </div>
+   </div>
+  </div>
+
+  <details class="guide">
+   <summary><span class="em">💡</span>Idiot's guide to the company — What Kainos Group actually does</summary>
+   <div class="gbody">
+    <h4>What it is</h4>
+    <p>Kainos writes and runs computer systems for other organisations. Three separate businesses under one roof, and they earn money in quite different ways.</p>
+    <h4>Where it's based</h4>
+    <p>Head office in Belfast, listed in London, with people in 18 countries. Just over 3,475 of them.</p>
+    <h4>How it makes money</h4>
+    <p><b>Digital Services</b> builds the government websites and systems ordinary people actually touch — booking a driving test, renewing a passport, NHS appointments. Paid by the day, per person on the job, on contracts that now run four or five years.</p>
+    <p><b>Workday Services</b> installs somebody else's software. Workday sells big companies their HR and finance system; Kainos is one of the most experienced firms in the world at plugging it in and keeping it running.</p>
+    <p><b>Workday Products</b> is the jewel. Four of its own software tools that sit alongside Workday and check it's working properly. Customers pay every year to keep using them, which is why this slice is the one to watch: over 600 customers now, and yearly subscription income has gone from £28m to £89m in four years.</p>
+    <p><b>Who controls the price.</b> Mostly Kainos, but with two catches. Government buyers run competitive tenders and can simply pause spending — that happened after the 2024 election and cost a whole year of growth. And the products are priced per user, which the company itself flagged in May 2026 as a problem worth watching if artificial intelligence lets customers employ fewer people.</p>
+    <h4>What's changed recently</h4>
+    <p>A bad FY25 — revenue fell for the first time since 2009 — then a sharp recovery in FY26, revenue up 17% to £431m. A small Canadian acquisition, Davis Pier, in September 2025. Profit has not kept pace with sales, because Kainos has been hiring expensive contractors to deliver the work.</p>
+    <p class="vintage"><em>The bet, in one line: you are buying a recovering government supplier that happens to own a fast-growing software annuity, and betting the expensive temporary staff go home before the sales growth does.</em></p>
+    <p class="vintage">Stable facts, as at 18 August 2026.</p>
+   </div>
+  </details>
+
+  <div class="boxes">
+   <div class="box"><div class="lb">Current state</div><div class="hl2">Both guides raised</div>
+    <p>Revenue and adjusted profit each guided comfortably above consensus for FY27 — the first time the profit line has been lifted anywhere in this record.</p></div>
+   <div class="box"><div class="lb">Warning you get</div><div class="hl2">2–3 halves</div>
+    <p>Bookings turned red two halves before the FY25 fall and green two halves before FY26's rebound. It now stands green four consecutive halves.</p></div>
+   <div class="box"><div class="lb">Argues against</div><div class="hl2">Margin unproven</div>
+    <p>Consensus itself implies margin slipping to 15.1% from 15.6%. Holding flat needs profit near the top of the guided range.</p></div>
+   <div class="box"><div class="lb">Next test</div><div class="hl2">9 Nov 2026</div>
+    <p>H1 FY27 results: first hard figures against this guide, the H1 margin, the contractor count, and whether retention returns as a number.</p></div>
+  </div>
+
+  <ul class="cbul">
+   <li>The lead was calibrated on one turn in each direction — bookings fell first in Nov-23, eleven months before the Oct-24 cut, and rose first in Nov-25. A third turn would move it from provisional to established.</li>
+   <li>Disclosure fires alone and against the direction call: retention went 134 → 126 → 102 then stopped being counted, and this update sits outside its cadence so adds nothing either way. A third silent year at the May-27 results would be the cleanest bear signal left.</li>
+   <li>What flips it: an H1 FY27 margin above 16.3% with contractors falling confirms the recovery; a margin below that, with the H2 FY27 promise repeated a third time, breaks it.</li>
+  </ul>
+ </div>
+</div>
+
+<!-- §1 LEDGER -->
+<div class="sec-wrap">
+ <h2 class="sec">§1 · Metric Ledger</h2>
+ <details class="d1"><summary>Metric ledger — the five, their roles and the backtest</summary>
+  <div class="d1body">
+   <p><b>Router: H-reporter — Rule Set H applies.</b> No Q1/Q3 trading update in the manifest covers the financial result, so halves are the finest grain and H2† is derived. The datablock's "latest quarterly report: Q4" is not the framework's router and period labels never come from a block.</p>
+   <table class="t3" style="min-width:0"><thead><tr>
+    <th style="width:34px">#</th><th style="width:150px">Metric</th><th style="width:74px">Type</th>
+    <th style="width:78px">Role</th><th>Why chosen · backtest verdict</th><th style="width:96px">Status</th></tr></thead>
+    <tbody>
+    <tr><td class="dt"><b>1</b></td><td>Bookings (Group)</td><td>FLOW · £m</td><td><b>LEAD</b></td>
+     <td>Company's own causal chain: bookings up 18% "resulted in a 23% increase in the contracted backlog". <b>LED</b> at both turns — fired 🔴 at H1 FY24, eleven months before the Oct-24 cut; fired 🟢 at H1 FY26, two halves before FY26 revenue +17%. Measured lead <b>2–3 halves</b>.</td><td class="cok">✅ 8/8</td></tr>
+    <tr><td class="dt"><b>2</b></td><td>Contracted backlog</td><td>SNAPSHOT · £m</td><td><b>CONFIRM</b></td>
+     <td>The stock that converts to revenue. <b>COINCIDENT</b> — turned on the same print as Rank 1 at both turns, never before it. Corroborates; never signals alone.</td><td class="cok">✅ 8/8</td></tr>
+    <tr><td class="dt"><b>3</b></td><td>Product ARR</td><td>SNAPSHOT · £m</td><td><b>LEAD</b></td>
+     <td>The subscription annuity inside a services group; leads Workday Products revenue by about two halves and carries both published targets (£100m by end-2026, £200m by end-2030).</td><td class="cok">✅ 8/8</td></tr>
+    <tr><td class="dt"><b>4</b></td><td>Net revenue retention</td><td>RATE · % (TTM)</td><td><b>LEAD</b></td>
+     <td>Leads existing-customer revenue. <b>LED</b> at the FY25 turn — fell 134 → 126 → 102 while revenue still grew. Its disclosure then broke before its level could: quantified twice, withdrawn thereafter.</td><td class="cwarn">⚠️ 3/8 withheld</td></tr>
+    <tr><td class="dt"><b>5</b></td><td>Adjusted profit margin</td><td>RATE · %</td><td><b>CONFIRM</b></td>
+     <td>Does not lead revenue — <b>COINCIDENT</b>, scored because it leads the guide. FY27's only forward commitment is a margin claim, and clear margin compression is a scored condition.</td><td class="cok">✅ 8/8</td></tr>
+    </tbody></table>
+   <p><b>Cost-structure check.</b> Contractor and third-party supplier costs are the price of the delivery strategy and are not adjusted out — they sit inside the adjusted profit margin, which is why that measure was longlisted over adjusted EBITDA.</p>
+   <p><b>Rejected in the backtest.</b> <i>Group revenue</i> — MISLED at the FY25 turn, still growing at H1 FY24 when bookings had already turned; cannot hold a rank. <i>EPS</i> — not scored; FY26 adjusted diluted EPS +7% against adjusted profit +2% is mostly a 3% lower share count. <i>Statutory metrics</i> — never scored. <i>Group pipeline</i> — qualitative in every one of the 19 documents, never once quantified at group level, so there is no number to score.</p>
+   <p><b>Bands, stated once and constant this run:</b> H-grain ±2.0pp inclusive. Q-grain n/a. Absolute bands, for any zero-crossing guard: bookings ±£50m, backlog ±£43m, ARR ±£9m, both rate ranks ±2.0pp. The guard did not fire on any cell this build — no base is negative or near zero.</p>
+   <p><b>Units, stated once per rank:</b> R1 £m · R2 £m · R3 £m · R4 % · R5 %. No qualitative ladder in this build.</p>
+   <p><b>Proposed ledger change for the next build</b> (never a mid-run swap): add <b>contractor share of workforce</b>. Quantified in every H1/FY document since Nov-22 and it leads Rank 5 by about one half — it bottomed at 1% in FY24, one half before margin peaked at 20.8%, then rose 2.4% → 4% → 7.5% as margin fell 17.9% → 16.3% → 15.6%. The company names its reversal as the margin-recovery mechanism.</p>
+  </div>
+ </details>
+</div>
+
+<!-- §2 GRID -->
+<div class="sec-wrap">
+ <h2 class="sec">§2 · Unified Forward Grid</h2>
+ <p class="subnote">5 ranks = 5 grid blocks · 9 period columns. Click a period header to highlight every column of that type.</p>
+ <div class="gridwrap">
+  <table class="grid" id="fg">
+   <colgroup><col class="lab"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"></colgroup>
+   <thead>
+    <tr class="yband"><th class="lab" rowspan="2">Metric</th><th colspan="2">FY23</th><th colspan="2">FY24</th><th colspan="2">FY25</th><th colspan="2">FY26</th><th>FY27</th></tr>
+    <tr><th class="phead" data-p="H1">H1</th><th class="phead" data-p="H2">H2†</th>
+        <th class="phead" data-p="H1">H1</th><th class="phead" data-p="H2">H2†</th>
+        <th class="phead" data-p="H1">H1</th><th class="phead" data-p="H2">H2†</th>
+        <th class="phead" data-p="H1">H1</th><th class="phead" data-p="H2">H2†</th>
+        <th class="phead bs-col" data-p="H1">⭐ H1 TU · Aug-26</th></tr>
+   </thead>
+   <tbody>
+    <tr class="secbar"><td colspan="10">Rank 1 — Bookings (Group) £m <span class="nat">· 🟢↗ growing faster than last year · 🟡→ about the same pace · 🔴↘ shrinking or clearly slowing</span></td></tr>
+    <tr class="strip"><td class="lab">Period</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1 in progress</td></tr>
+    <tr class="vrow"><td class="lab">£m · vs same period last year</td>
+     <td><span class="val">221.5 (18.2%)</span><span class="delta">—</span></td>
+     <td><span class="val">206.3† (27.0%)</span><span class="delta">—</span></td>
+     <td><span class="val">201.9 <span class="neg">(-8.8%)</span></span><span class="delta">🔴↘</span></td>
+     <td><span class="val">222.6† (7.9%)</span><span class="delta">🔴↘</span></td>
+     <td><span class="val">179.5 <span class="neg">(-11.1%)</span></span><span class="delta">🔴↘</span></td>
+     <td><span class="val">202.9 <span class="neg">(-8.8%)</span></span><span class="delta">🔴↘</span></td>
+     <td><span class="val">227.9 (27.0%)</span><span class="delta">🟢↗</span></td>
+     <td><span class="val">277.4† (36.7%)</span><span class="delta">🟢↗</span></td>
+     <td class="bs-col"><span class="val">—</span><span class="delta">outside cadence</span></td></tr>
+    <tr class="agg"><td class="lab">FY aggregate</td>
+     <td colspan="2"><span class="aval">427.8</span><span class="anote">+22.3%</span></td>
+     <td colspan="2"><span class="aval">424.5</span><span class="anote">−0.8%</span></td>
+     <td colspan="2"><span class="aval">382.4</span><span class="anote">−9.9%</span></td>
+     <td colspan="2"><span class="aval">505.3</span><span class="anote">+32.1%</span></td>
+     <td><span class="aval">—</span></td></tr>
+
+    <tr class="secbar"><td colspan="10">Rank 2 — Contracted backlog (Group) £m <span class="nat">· arrow = up or down since the last print</span></td></tr>
+    <tr class="strip"><td class="lab">Position at</td><td>Sep-22</td><td>Mar-23</td><td>Sep-23</td><td>Mar-24</td><td>Sep-24</td><td>Mar-25</td><td>Sep-25</td><td>Mar-26</td><td>Aug-26</td></tr>
+    <tr class="vrow"><td class="lab">£m · Δ vs prior print</td>
+     <td><span class="val">307.9</span><span class="delta">—</span></td>
+     <td><span class="val">322.9</span><span class="delta">+15.0 (+4.9%) 🟢↗</span></td>
+     <td><span class="val">326.9</span><span class="delta">+4.0 (+1.2%) 🟡→</span></td>
+     <td><span class="val">357.1</span><span class="delta">+30.2 (+9.2%) 🟢↗</span></td>
+     <td><span class="val">354.1</span><span class="delta neg">−3.0 (−0.8%) 🟡→</span></td>
+     <td><span class="val">368.2</span><span class="delta">+14.1 (+4.0%) 🟢↗</span></td>
+     <td><span class="val">396.9</span><span class="delta">+28.7 (+7.8%) 🟢↗</span></td>
+     <td><span class="val">433.9</span><span class="delta">+37.0 (+9.3%) 🟢↗</span></td>
+     <td class="bs-col"><span class="val">🟡</span><span class="delta">qualitative</span></td></tr>
+    <tr class="agg"><td class="lab">FY-end position</td>
+     <td colspan="2"><span class="aval">322.9</span><span class="anote">+24.3%</span></td>
+     <td colspan="2"><span class="aval">357.1</span><span class="anote">+10.6%</span></td>
+     <td colspan="2"><span class="aval">368.2</span><span class="anote">+3.1%</span></td>
+     <td colspan="2"><span class="aval">433.9</span><span class="anote">+17.8%</span></td>
+     <td><span class="aval">—</span></td></tr>
+
+    <tr class="secbar"><td colspan="10">Rank 3 — Product ARR £m <span class="nat">· arrow = up or down since the last print</span></td></tr>
+    <tr class="strip"><td class="lab">Position at</td><td>Sep-22</td><td>Mar-23</td><td>Sep-23</td><td>Mar-24</td><td>Sep-24</td><td>Mar-25</td><td>Sep-25</td><td>Mar-26</td><td>Aug-26</td></tr>
+    <tr class="vrow"><td class="lab">£m · Δ vs prior print</td>
+     <td><span class="val">44.2</span><span class="delta">—</span></td>
+     <td><span class="val">47.9</span><span class="delta">+3.7 (+8.4%) 🟢↗</span></td>
+     <td><span class="val">55.4</span><span class="delta">+7.5 (+15.7%) 🟢↗</span></td>
+     <td><span class="val">60.5</span><span class="delta">+5.1 (+9.2%) 🟢↗</span></td>
+     <td><span class="val">65.1</span><span class="delta">+4.6 (+7.6%) 🟢↗</span></td>
+     <td><span class="val">72.6</span><span class="delta">+7.5 (+11.5%) 🟢↗</span></td>
+     <td><span class="val">77.5</span><span class="delta">+4.9 (+6.8%) 🟢↗</span></td>
+     <td><span class="val">89.0</span><span class="delta">+11.5 (+14.8%) 🟢↗</span></td>
+     <td class="bs-col"><span class="val">—</span><span class="delta">outside cadence</span></td></tr>
+    <tr class="agg"><td class="lab">FY-end position</td>
+     <td colspan="2"><span class="aval">47.9</span><span class="anote">+39.7%</span></td>
+     <td colspan="2"><span class="aval">60.5</span><span class="anote">+26.3%</span></td>
+     <td colspan="2"><span class="aval">72.6</span><span class="anote">+20.0%</span></td>
+     <td colspan="2"><span class="aval">89.0</span><span class="anote">+22.6%</span></td>
+     <td><span class="aval">—</span></td></tr>
+
+    <tr class="secbar"><td colspan="10">Rank 4 — Net revenue retention % <span class="nat">· arrow = up or down versus the same period last year, band 2.0 points</span></td></tr>
+    <tr class="strip"><td class="lab">Period</td><td>—</td><td>TTM Mar-23</td><td>TTM Sep-23</td><td>TTM Mar-24</td><td>—</td><td>FY25</td><td>—</td><td>FY26</td><td>—</td></tr>
+    <tr class="vrow"><td class="lab">% · vs same period last year</td>
+     <td><span class="val">—</span><span class="delta">outside cadence</span></td>
+     <td><span class="val">126</span><span class="delta">🔴↘</span></td>
+     <td><span class="val">107</span><span class="delta">—</span></td>
+     <td><span class="val">102</span><span class="delta">🔴↘</span></td>
+     <td><span class="val">—</span><span class="delta">outside cadence</span></td>
+     <td><span class="val">🟡</span><span class="delta neg">qualitative 🔴</span></td>
+     <td><span class="val">—</span><span class="delta">outside cadence</span></td>
+     <td><span class="val">🟡</span><span class="delta neg">qualitative 🔴</span></td>
+     <td class="bs-col"><span class="val">—</span><span class="delta">outside cadence</span></td></tr>
+    <tr class="agg"><td class="lab">FY aggregate</td>
+     <td colspan="2"><span class="aval">126</span><span class="anote">−8pp</span></td>
+     <td colspan="2"><span class="aval">102</span><span class="anote">−24pp</span></td>
+     <td colspan="2"><span class="aval">n/q</span></td>
+     <td colspan="2"><span class="aval">n/q</span></td>
+     <td><span class="aval">—</span></td></tr>
+
+    <tr class="secbar"><td colspan="10">Rank 5 — Adjusted profit margin % <span class="nat">· arrow = up or down versus the same period last year, band 2.0 points</span></td></tr>
+    <tr class="strip"><td class="lab">Period</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1 in progress</td></tr>
+    <tr class="vrow"><td class="lab">% · vs same period last year</td>
+     <td><span class="val">18.92</span><span class="delta">—</span></td>
+     <td><span class="val">17.20†</span><span class="delta">—</span></td>
+     <td><span class="val">19.59</span><span class="delta">🟡→</span></td>
+     <td><span class="val">20.80†</span><span class="delta">🟢↗</span></td>
+     <td><span class="val">20.83</span><span class="delta">🟡→</span></td>
+     <td><span class="val">14.93†</span><span class="delta">🔴↘</span></td>
+     <td><span class="val">16.33</span><span class="delta">🔴↘</span></td>
+     <td><span class="val">14.91†</span><span class="delta">🟡→</span></td>
+     <td class="bs-col"><span class="val">—</span><span class="delta">outside cadence</span></td></tr>
+    <tr class="agg"><td class="lab">FY aggregate</td>
+     <td colspan="2"><span class="aval">18.03</span><span class="anote">—</span></td>
+     <td colspan="2"><span class="aval">20.18</span><span class="anote">+2.15pp</span></td>
+     <td colspan="2"><span class="aval">17.87</span><span class="anote">−2.31pp</span></td>
+     <td colspan="2"><span class="aval">15.56</span><span class="anote">−2.31pp</span></td>
+     <td><span class="aval">—</span></td></tr>
+   </tbody>
+  </table>
+ </div>
+
+ <details class="d1"><summary>§2 workings</summary>
+  <div class="d1body">
+   <details class="d2"><summary>🔲 Card strip — wall preview &amp; index entry</summary>
+    <div class="d2body">
+     <table class="strip9">
+      <tr><td class="lb">R1</td><td class="s--"></td><td class="s--"></td><td class="s-r"></td><td class="s-r"></td><td class="s-r"></td><td class="s-r"></td><td class="s-g"></td><td class="s-g"></td><td class="s-- bsx"></td></tr>
+      <tr><td class="lb">R2</td><td class="s--"></td><td class="s-g"></td><td class="s-a"></td><td class="s-g"></td><td class="s-a"></td><td class="s-g"></td><td class="s-g"></td><td class="s-g"></td><td class="s-a bsx"></td></tr>
+      <tr><td class="lb">R3</td><td class="s--"></td><td class="s-g"></td><td class="s-g"></td><td class="s-g"></td><td class="s-g"></td><td class="s-g"></td><td class="s-g"></td><td class="s-g"></td><td class="s-- bsx"></td></tr>
+      <tr><td class="lb">R4</td><td class="s--"></td><td class="s-r"></td><td class="s--"></td><td class="s-r"></td><td class="s--"></td><td class="s-a"></td><td class="s--"></td><td class="s-a"></td><td class="s-- bsx"></td></tr>
+      <tr><td class="lb">R5</td><td class="s--"></td><td class="s--"></td><td class="s-a"></td><td class="s-g"></td><td class="s-a"></td><td class="s-r"></td><td class="s-r"></td><td class="s-a"></td><td class="s-- bsx"></td></tr>
+     </table>
+     <p>Rightmost cell (outlined) is the Buy/Sell column — H1 FY27, the 18-Aug-26 trading update, which quantifies nothing.</p>
+     <pre class="json" id="entrytext">{
+  "ticker": "KNOS",
+  "company": "Kainos Group",
+  "kind": "ticker",
+  "direction": "up",
+  "headline": "Guide raised on revenue and profit together — a first in this record — while retention stays withheld and margin sits flat.",
+  "trigger": "Green-shoot mirror 2-of-3 (numbers & guide, language). Disclosure fires red against the call.",
+  "alert": true,
+  "fired": 3,
+  "fired_of": 3,
+  "lights": "ggr",
+  "rns_type": "Trading Update",
+  "rns_date": "2026-08-18",
+  "build_date": "2026-08-18",
+  "spec_version": "5.3e",
+  "next_test": "H1 FY27 results, 9 Nov 2026 — first hard figures against this guide, the H1 margin, the contractor count, and whether retention returns as a number.",
+  "url": "KNOS.html",
+  "trend": {"mode": "growth", "cells": "gg-", "rows": [{"m": "REV", "gap": 10.6}, {"m": "EBITDA", "gap": 16.2}, {"m": "PBT", "gap": null}]},
+  "grid": {
+    "labels": ["R1","R2","R3","R4","R5"],
+    "periods": ["H1 23","H2 23","H1 24","H2 24","H1 25","H2 25","H1 26","H2 26","H1 27"],
+    "rows": ["--rrrrgg-","-gagaggga","-ggggggg-","-r-r-a-a-","--agarra-"],
+    "note": "Ranks 1-5 at half grain; rightmost cell is the Aug-26 trading update, which quantifies nothing."
+  }
+}</pre>
+    </div>
+   </details>
+   <details class="d2"><summary>Notes — Ranks 1–5</summary>
+    <div class="d2body">
+     <p><b>Rank 1.</b> The half spine shows what the annual view hid: four consecutive red halves from H1 FY24 to H2 FY25, then two greens. Like-for-like FY26 range +30% to +32% — Davis Pier is not split out of bookings and its ≤£4.6–7m bounds the organic read.</p>
+     <p><b>Rank 2.</b> FY26 £433.9m is a record against both the year-ago print (£368.2m) and the immediately prior print (£396.9m). Divisional sum ties: 178.7 + 180.3 + 74.9 = 433.9.</p>
+     <p><b>Rank 3.</b> Currency-basis flag: the $100m milestone introduced at Sep-25 is kept out of the £ series; FY26 reconciles it at about £75m. Two live risks aimed at this rank — per-user pricing under review as artificial intelligence lets customers reduce headcount (first disclosed 18-May-26), and Malachy Smith handing the division to an external hire at the £100m run-in.</p>
+     <p><b>Rank 4.</b> A row of absences is signal. The FY habit was established (FY23, FY24) then broken — FY25 qualitative, FY26 qualitative and cut from the Workday Products KPI list, while the glossary still defines it. At H1 grain the habit is patchy (one print), so H1 FY25 and H1 FY26 are — not ❌ and fire nothing. Existing-customer revenue, the numerator, still prints: £299.4m → £370.0m.</p>
+     <p><b>Rank 5.</b> Decomposition, sized at entry so roll-off nets: partnership fees £5.2m (FY25, 8 months) → £7.8m run-rate, so FY26 carried +£2.3m and FY27 carries nil. Contractors +£14.0m, third-party suppliers +£15.4m, national insurance +£3.0m, bonuses +£11.5m all enter FY26. Two consecutive periods leaned on the same explanation, which exhausts it. But the latest half is flat year-on-year at 14.91% against 14.93% — the aggregate red is front-loaded into H1.</p>
+    </div>
+   </details>
+   <details class="d2"><summary>Turn methodology &amp; restatement basis</summary>
+    <div class="d2body">
+     <p><b>Comparison basis per rank.</b> R1 flow → YEAR-ON-YEAR, the banded change in that year-on-year rate is the score. R2 and R3 snapshot → SEQUENTIAL change at their own six-monthly disclosure grain; their YEAR-ON-YEAR renders only on the aggregate row. R4 and R5 rate → the pp move YEAR-ON-YEAR, taken directly, never fed into a rate change.</p>
+     <p><b>Display basis.</b> H-grain flow cells display YEAR-ON-YEAR. The SEQUENTIAL comparison is computed and retained here, never displayed: H2 FY26 bookings +21.7% and revenue +19.8% on the half before.</p>
+     <p><b>Units.</b> R1 £m · R2 £m · R3 £m · R4 % · R5 %. Each is carried identically by the section bar, the row label and the magnitude of the rendered values.</p>
+     <p><b>Derivations †, workings once.</b> H2† = FY − H1, applied to bookings, revenue and adjusted profit; the margin then divides the two derived halves. All inputs are exact £000s from the primary statements, so no precision-basis break arises. Second routes: H2 FY25 bookings derived £202.9m against the company-printed "H2: £202.9 million" — exact tie-out; H2 FY26 revenue derived £235.0m, +27.6%, against the Apr-26 statement of double-digit percentage revenue growth in H2 — consistent. Derived-only turns stay watch-flagged until a printed sub-period corroborates.</p>
+     <p><b>Zero-crossing guard.</b> Not fired on any cell — no base is negative or near zero. No cell carries ‡ or ◊.</p>
+     <p><b>Restatements ʳ and basis.</b> Digital Services sectoral revenues re-presented at H1 FY26 and FY26 to strip out North America (FY25 public sector £125.5m → £122.1m, healthcare £50.6m → £48.2m); FY25 cash-flow restated for RDEC presentation (£5.1m). Neither touches a ranked metric — group bookings, backlog, ARR, revenue and adjusted profit are unrestated throughout, so no cell carries ʳ. Davis Pier is an M&amp;A first-time inclusion from 15-Sep-25: the company splits revenue (+17% reported, +16% organic) but not bookings or backlog, hence the stated like-for-like range on Rank 1.</p>
+     <p><b>Rule applied.</b> All five ranks render under the default H1/H2† spine. No rank is REDUCED-GRAIN; B.2a is not invoked in this build.</p>
+     <p><b>Buy/Sell column.</b> H1 FY27 is in progress and its only document is a trading update that quantifies nothing, so every scored cell reads — except backlog, which the update describes without a figure.</p>
+    </div>
+   </details>
+  </div>
+ </details>
+</div>
+
+<!-- §2.0 -->
+<div class="sec-wrap">
+ <h2 class="sec">§2.0 · Current-state read</h2>
+ <div class="flex20">
+  <div class="bridge">
+   <div class="bhead"><span class="em">🍺</span>IDIOT'S GUIDE TO THE ADJUSTED PBT BRIDGE — why profit went up (£67.1m → £77.1m+)</div>
+   <table class="br">
+    <tr class="tg"><td class="dv">🏛️ Whitehall's shopping spree</td><td class="ct">+£505.3m booked</td>
+     <td>Kainos signed a third more new work last year than the year before. Signed work becomes invoices later, so FY27 opens with the till already ringing.</td></tr>
+    <tr class="tg"><td class="dv">📦 The pile still boxed up</td><td class="ct">£433.9m carried in</td>
+     <td>A record stack of contracts signed and not yet delivered. Money sitting in the warehouse waiting to be shipped, and it only ships if the staff turn up.</td></tr>
+    <tr class="tg"><td class="dv">🧩 Both Workday engines firing</td><td class="ct">n/q</td>
+     <td>The software arm and the installation arm each grew by more than ten percent. No figures given yet, so this is a promise — though one from a company that has beaten its own revenue guide twice running.</td></tr>
+    <tr class="tr"><td class="dv">🧾 The hired-gun bill</td><td class="ct">n/q</td>
+     <td>Temporary specialists cost far more per head than employees. They were 7.5% of the workforce in March, and this update does not mention them at all. This is the line that eats the gains.</td></tr>
+   </table>
+   <div class="bcap"><b>So in one sentence:</b> last year's signing spree is landing as this year's invoices, and even while paying premium rates for extra hands there is enough left over that the Board lifted both guides at once. <b>Profit falls when:</b> the hired guns stay on the books instead of going home, Whitehall pauses contract awards the way it did around the 2024 election, or the promised cheaper delivery slips out of H2 FY27 the way it already slipped once.</div>
+  </div>
+  <div class="bar">
+   <div class="barhead"><span class="em">🌡️</span>CURRENT STATE — the read right now</div>
+   <div class="barbody">
+    <div class="barlead">🟢 TURNING UP</div>
+    <ul>
+     <li>Both guides lifted together for the first time anywhere in the record.</li>
+     <li>Profit guide had sat frozen at £66.4m all through FY26; FY27 opens at £77.1m.</li>
+     <li>Language scored 🟢🟢 "comfortably ahead" — the highest in nineteen documents.</li>
+     <li>Bookings green four halves; backlog a record £433.9m; H2 FY26 revenue +27.6%.</li>
+     <li>Latest margin half flat at 14.91% against 14.93% — the compression paused.</li>
+     <li>Released 14 days early under inside-information rules; good news rarely waits.</li>
+     <li>⚠️ Retention withheld a second year and dropped from the product KPI list.</li>
+     <li>⚠️ Contractors 7.5% of staff, unmentioned; margin fix still promised for H2 FY27.</li>
+     <li>⚠️ At consensus, FY27 margin still slips to 15.1% from 15.56%.</li>
+    </ul>
+   </div>
+  </div>
+ </div>
+
+ <details class="d1"><summary>§2.0 workings</summary>
+  <div class="d1body">
+   <details class="d2"><summary>The four checks — workings behind the read</summary>
+    <div class="d2body">
+     <p><b>1 · Sequential.</b> The Buy/Sell document quantifies nothing, so there is no numeric sequential read. At guide level: FY27 revenue and adjusted profit both placed comfortably above consensus, against FY26 delivered £431.1m and £67.1m.</p>
+     <p><b>2 · Same-type versus last year (Aug-26 TU against Sep-25 TU).</b> Sep-25 put revenue at the upper end of consensus and held adjusted profit in line. Aug-26 puts both comfortably ahead. This is the first document in the record to lift the profit line — every prior raise held profit flat while lifting revenue, and that divergence is what scored those rows negative. Drawer spot-check: 01-Sep-25 trading statement verified against source.</p>
+     <p><b>3 · Every derivable sub-period.</b> None derivable — the update prints no figures and H1 FY27 is incomplete. The most recent derivable sub-period remains H2 FY26†: revenue £235.0m (+27.6% year-on-year, against the FY26 aggregate +17.4%), bookings £277.4m (+36.7% against +32.1%), margin 14.91% against 14.93%. The latest half runs ahead of its parent on both volume lines, so the FY26 aggregate understates the strength and front-loads the margin damage.</p>
+     <p><b>4 · Guidance versus prior guide, sized against consensus as at each RNS date.</b> Company-compiled ranges: at 01-Sep-25, revenue £378.0–393.4m (consensus £385.0m) and adjusted profit £65.1–74.7m (consensus £66.4m). At 20-Apr-26, revenue £392.1–411.1m (consensus £406.5m), profit £65.6–70.0m (consensus £66.4m). FY26 delivered £431.1m and £67.1m — revenue £20.0m above the top of the range the company itself compiled four weeks earlier, while profit landed 1.0% above consensus. Incremental margin on the revenue delivered above the Apr-26 consensus was 2.7%. At 18-Aug-26 the new ranges are revenue £498.0–514.0m (consensus £509.3m) and adjusted profit £75.0–84.0m (consensus £77.1m); at those points the implied FY27 margin is 15.14%, against 15.56% delivered in FY26, and the implied incremental margin steps up to 12.8% from 2.2%. Holding margin flat needs profit near the top of the guided range.</p>
+    </div>
+   </details>
+   <details class="d2"><summary>Notes, §2.0</summary>
+    <div class="d2body">
+     <p>The update arrived on 18 August against a four-year pattern of 1 September, 31 August, 2 September and 1 September, and carries a Market Abuse Regulation inside-information declaration — the mirror of the 31-Oct-24 unscheduled update, which was a cut. The only two off-cadence updates in the record are a cut and a raise, both released early.</p>
+     <p>Two silences in a document that raises guidance: contractors and margin are both absent, having been the explicit mechanism of the Apr-26 and May-26 recovery promise. The raise is probably the answer to both, but the metric the recovery rests on has gone quiet.</p>
+     <p>Product ARR is absent, where the two most recent H1 updates both carried ARR content. The habit is patchy at this grain (two of five), so this is — rather than ❌ and it fires nothing — but it is a watch flag for 9 November.</p>
+    </div>
+   </details>
+   <details class="d2"><summary>Balance-sheet sweep</summary>
+    <div class="d2body">
+     <p><b>Runs on results documents; latest is FY26, 18-May-26.</b></p>
+     <p><b>Tier 1: none.</b> Net cash throughout all eight results documents, FY26 cash £89.1m, described as a strong debt-free balance sheet. No crossover, no leverage, no covenant. Cash runway does not apply — operating cash flow is positive. Solvency grep run case-insensitive across all 19 documents (going concern · material uncertainty · emphasis of matter · qualified, adverse, disclaimer or modified opinion · key audit matter · covenant · post balance sheet · subsequent events): every hit is boilerplate. FY26 subsequent events are a post-year-end buyback of 1,437,024 shares for £11.6m.</p>
+     <p><b>Tier 2: one condition — a verdict note, not a flag</b> (two or more are needed to flag). Net trade receivables and accrued income £54.2m → £70.0m → £83.4m, up 29% then 54% against revenue up 7% then 17%, so running at three to four times revenue growth for two consecutive prints. The company attributes it to substantial revenue growth in the final quarter, which the derived H2 (+27.6%) supports. Cash conversion 112% → 99% at the full year, 75% → 48% at the half. Not hits: dividend raised 28.4p → 29.6p; share count falling with £90.0m returned across three buybacks and no placing; no debt, so interest cover does not apply; no facility maturity.</p>
+     <p><b>Green-shoot mirrors:</b> none applicable — already net cash, no leverage, dividend never cut.</p>
+     <p><b>Wedge check</b>, adjusted against statutory profit, read directly from each results document: FY23 19.6% · FY24 16.1% · FY25 25.9% · FY26 13.3%. Closing, not widening — FY25's spike was the £8.4m restructuring charge, absent in FY26. Renders nothing.</p>
+    </div>
+   </details>
+   <details class="d2"><summary>Trend Watch workings</summary>
+    <div class="d2body">
+     <p><b>Two departures from the default, both at operator instruction, both stated here rather than hidden.</b> First, the mode. The Buy/Sell document is a part-year trading update, which selects share mode — but share mode needs a period-to-date actual divided by the FY1 forecast, and FY27 has reported no sub-period at all, so the numerator does not exist. Growth mode is computable and asks the question that matters: is the most recent completed half running ahead of what the FY27 forecast requires? Second, the forecast vintage. The datablock's latest snapshot is 14 Aug 2026, four days before this RNS and before the guidance raise it is being measured against, so by the default rule it would not be used at all.</p>
+     <p><b>Sign convention:</b> delivered minus required. Positive is ahead, and the arc grows clockwise from twelve.</p>
+     <table class="t3" style="min-width:0"><thead><tr>
+      <th>Metric</th><th>Basis</th><th>Latest sub-period actual</th><th>Prior-year comparator</th>
+      <th>Comparator growth</th><th>FY1 fc &amp; date</th><th>Required</th><th>Gap</th><th>Ranked in §2?</th></tr></thead><tbody>
+      <tr><td>REVENUE</td><td>as reported</td><td>H2 FY26† £234.963m</td><td>H2 FY25† £184.133m</td><td>+27.6%</td><td>£504.6m · 14-Aug-26</td><td>+17.0%</td><td><b>+10.6pp</b> green</td><td><b>Y</b> — ties to the §2 revenue underlying Rank 5; H1 and FY figures exact from the primary statements</td></tr>
+      <tr><td>EBITDA</td><td>adjusted</td><td>H2 FY26† £36.234m</td><td>H2 FY25† £27.113m</td><td>+33.6%</td><td>£80.2m · 14-Aug-26</td><td>+17.4%</td><td><b>+16.2pp</b> green</td><td><b>N</b> — not a ledger rank, so this row is its entire audit trail. Sources: adjusted EBITDA £68,289k (FY26 results), £64,193k (FY25 comparative in the same document), £32,055k and £37,080k (H1 FY26 interims). Stage E can check the arithmetic here but has no second transcription to check it against</td></tr>
+      <tr><td>PBT</td><td>adjusted</td><td>H2 FY26† £35.033m</td><td>H2 FY25† £27.492m</td><td>+27.4%</td><td><b>n/a</b></td><td>n/a</td><td><b>n/a</b></td><td><b>Y</b> — ties to Rank 5</td></tr>
+     </tbody></table>
+     <p><b>Why PBT renders n/a — a basis break, not a missing figure.</b> The block's profit line was tested against the company's own FY26 prints before use. Its current-year halves, 28.2 and 29.8, sum to £58.0m, which is the <i>statutory</i> outturn of £58.111m — not the adjusted £67.063m the ledger carries. Its FY1 forecast of £76.7m therefore sits on the statutory basis, and dividing a statutory forecast by an adjusted actual is exactly the silent failure the norm rule exists to prevent. The same test cleared the other two lines: block EBITDA halves sum to £68.3m against the company's adjusted £68.289m, and revenue carries no adjusted-versus-statutory distinction at all.</p>
+     <p><b>The available alternative, not taken.</b> This RNS's own footnote gives an adjusted FY27 profit consensus of £77.1m. On that figure PBT would require +15.0% and deliver +27.4%, a gap of +12.5pp and green — consistent with the other two rows. It is not used because 5.3a takes the FY1 forecast from the datablock alone, and a footnote is not a datablock. Say the word and the cell populates.</p>
+     <p><b>Norms and actuals.</b> Every figure above except the two FY1 forecasts comes from the company's printed history: H2† = FY − H1 on exact £000s from the primary statements, cross-checked against the §2 grid where the metric is ranked. No block-stated split supplied a comparator.</p>
+     <p><b>Arc lookup, read not computed.</b> Revenue +10.6pp → 10pp row, LEN 50, ROT −90. EBITDA +16.2pp → 15pp row, LEN 54, ROT −90. Both positive, so both rotate −90 and grow clockwise. Both sit in the compressed zone beyond the half-ring, where the ring understates the difference between them — a 5.6pp spread draws only 4 units of arc. The printed pp figure governs. No arc passes two o'clock.</p>
+     <p><b>What the reading is worth.</b> It measures phasing against a forecast and inherits that forecast. This one predates the raise, so if anything it understates the required growth the market now expects — the true gaps against post-RNS consensus will be narrower than the rings show. The panel fires nothing and sits outside the 2-of-3 exactly as the sweep does.</p>
+     <p>The block also carries SNX and MTEC rows. Out of scope — no cross-ticker figure enters any table here.</p>
+     <p><b>Next reading:</b> 9 November 2026, when H1 FY27 supplies a genuine period actual and the panel returns to share mode.</p>
+    </div>
+   </details>
+   <details class="d2"><summary>Trigger detail &amp; audit record</summary>
+    <div class="d2body">
+     <p><b>Green-shoot mirror — 2 of 3, alert fires.</b> Condition 1: a G-column RAISE at 18-Aug-26, plus Rank 1 green on two consecutive prints (H1 and H2 FY26) and Rank 2 alongside it. Full weight — the fire includes LEAD metrics and a guidance event, so no confirmation-only annotation applies. Condition 2: the lexicon has risen on two consecutive prints from below zero — 🔴 at Apr-26, ⚪ at May-26, 🟢🟢 at Aug-26. Condition 3 not met: no dropped metric has been re-quantified and no dropped update has resumed.</p>
+     <p><b>Deterioration — 1 of 3, no alert, verdict note only.</b> Condition 3 stands: retention withheld or qualitative against an established full-year cadence at both FY25 and FY26, unexplained, after falling 134 → 126 → 102. Condition 2 no longer holds — the Apr-26 🔴 has been superseded by two rising prints. Condition 1 no longer holds at the latest print: the two consecutive red margin halves (H2 FY25, H1 FY26) are followed by a flat H2 FY26, and the latest guidance event is a raise, not a cut.</p>
+     <p><b>Why lamp 1 is green rather than amber.</b> The historical margin leg of condition 1 is real and is recorded above, but the lamp reports the current fire and its direction. The latest half is flat, the latest guide is a raise, and Rank 1 is green twice over, so the fire is a green-shoot one. The margin history is carried in the Argues-against box and in the Rank 5 note rather than being shown as a second, contradictory colour on one lamp.</p>
+     <p><b>Three-way reconciliation.</b> Lit lamps: green, green, red = 3. `lights` = "ggr", count of r and g = 3. `fired` = 3, `fired_of` = 3. Card strip: 5 rows, each exactly 9 characters, rightmost cell in every row is the H1 FY27 column. Validated in code before delivery.</p>
+     <p><b>Manifest reconciliation.</b> 19 documents on file, 18 qualifying (the 14-Aug-25 AGM notice carries no trading content and is noise), 18 Drift columns, 5 ranks, 5 grid blocks.</p>
+    </div>
+   </details>
+  </div>
+ </details>
+</div>
+
+<!-- §3 TEXT + G -->
+<div class="sec-wrap">
+ <h2 class="sec">§3 · Text + G — language track</h2>
+ <p class="subnote">The expectations anchor lives only in trading updates — results documents have never carried a forward numeric guide — so reads are same-type to same-type. H2-weighted revenue guidance is a Kainos habit and earns no flag; H2-weighted margin deferred a year out is a first.</p>
+ <div class="t3wrap">
+  <table class="t3 t3collapsed" id="text3">
+   <thead><tr><th style="width:78px">Date</th><th style="width:66px">Doc</th><th style="width:70px">G</th><th>Verbatim forward-guidance phrase</th><th style="width:290px">Context</th><th style="width:50px">Score</th></tr></thead>
+   <tbody>
+    <tr class="exp" id="expbar"><td colspan="6">▸ Show 11 earlier prints — Sep-22 to Nov-24</td></tr>
+    <tr class="old"><td class="dt">01-Sep-22</td><td class="doc" data-rowtype="H1TU"><b>FY23</b>H1 TU</td><td class="g gflat">flat</td><td class="ph">"the Board expects results to be in line with current consensus forecasts"</td><td class="cx">Anchored to market consensus. No range published at this date. Outturn: FY23 delivered £374.8m revenue, ahead.</td><td class="sc">⚪</td></tr>
+    <tr class="old"><td class="dt">14-Nov-22</td><td class="doc" data-rowtype="H1R"><b>FY23</b>H1 R</td><td class="g gflat">—</td><td class="ph">"we remain confident in our business as the demand for our services has never been higher"</td><td class="cx">No expectations anchor anywhere in the document — the results-doc format has never carried one. Confidence language only.</td><td class="sc">🟢</td></tr>
+    <tr class="old"><td class="dt">19-Apr-23</td><td class="doc" data-rowtype="FYTU"><b>FY23</b>YE-TU</td><td class="g gflat">flat</td><td class="ph">"the Board expects our results to be in line with current consensus forecasts"</td><td class="cx">Straight reiteration, same wording as September. Range not yet published in the footnote.</td><td class="sc">⚪</td></tr>
+    <tr class="old"><td class="dt">22-May-23</td><td class="doc" data-rowtype="FYR"><b>FY23</b>FY R</td><td class="g gflat">—</td><td class="ph">"leading positions within our core markets, which allow us to look confidently to the future"</td><td class="cx">Retention printed at 126%, down from 134%. Confidence language with no forward number, per the format.</td><td class="sc">🟢</td></tr>
+    <tr class="old"><td class="dt">31-Aug-23</td><td class="doc" data-rowtype="H1TU"><b>FY24</b>H1 TU</td><td class="g gflat">flat</td><td class="ph">"trading in the first half has been good…… will be in line with current consensus forecasts"</td><td class="cx">Splice within one passage. Bookings had already turned negative at this point but the guide did not move.</td><td class="sc">⚪</td></tr>
+    <tr class="old"><td class="dt">13-Nov-23</td><td class="doc" data-rowtype="H1R"><b>FY24</b>H1 R</td><td class="g gflat">—</td><td class="ph">"public sector-focused digital services will continue to deliver growth"</td><td class="cx">The print where Rank 1 fired red — bookings −8.8%. Language still positive: the eleven-month lead starts here.</td><td class="sc">🟢</td></tr>
+    <tr class="old changed"><td class="dt">15-Apr-24</td><td class="doc" data-rowtype="FYTU"><b>FY24</b>YE-TU</td><td class="g gcut">🔴 CUT</td><td class="ph">"revenues being slightly below and adjusted PBT being in line with consensus forecasts"</td><td class="cx">First cut in the record, on revenue only. Point consensus added alongside the range from this document — a disclosure expansion. Scored at the profit line, which reads in line.</td><td class="sc">⚪</td></tr>
+    <tr class="old"><td class="dt">20-May-24</td><td class="doc" data-rowtype="FYR"><b>FY24</b>FY R</td><td class="g gflat">—</td><td class="ph">"will continue to deliver growth, in both the near term and medium term"</td><td class="cx">Retention printed at 102%, down 24 points — the last time it was quantified. Growth language unchanged.</td><td class="sc">🟢</td></tr>
+    <tr class="old changed"><td class="dt">02-Sep-24</td><td class="doc" data-rowtype="H1TU"><b>FY25</b>H1 TU</td><td class="g gcut">🔴 CUT</td><td class="ph">"only a small increase in overall revenues, which will be below current market consensus"</td><td class="cx">Profit held in line, revenue cut — the divergence is itself negative. First "return to growth in the second half" construction, beside a named active headwind in services, about 81% of revenue. That caps in line at zero and the H2 weighting takes it below.</td><td class="sc">🔴</td></tr>
+    <tr class="old changed"><td class="dt">31-Oct-24</td><td class="doc" data-rowtype="TU"><b>FY25</b>TU ⚡</td><td class="g gcut">🔴 CUT</td><td class="ph">"moderated its expectations for the second half…… majority of the reduction flowing through to adjusted PBT"</td><td class="cx">Unscheduled, off-cadence. An explicit, unflagged cut at the profit line — September had expressly held profit in line. The only document in the record omitting both backlog and pipeline.</td><td class="sc">🔴🔴🔴</td></tr>
+    <tr class="old changed"><td class="dt">11-Nov-24</td><td class="doc" data-rowtype="H1R"><b>FY25</b>H1 R</td><td class="g gflat">flat</td><td class="ph">"We expect flat Workday Services revenue in the second half and into FY26 in a soft market"</td><td class="cx">A named unresolved headwind in a growth-carrying line, extended into the following year. The results-doc format begins referencing the anchor here, qualitatively.</td><td class="sc">🔴🔴</td></tr>
+    <tr class="changed"><td class="dt">14-Apr-25</td><td class="doc" data-rowtype="FYTU"><b>FY25</b>YE-TU</td><td class="g gflat">flat</td><td class="ph">"Following a solid Q4 performance…… revenues and adjusted PBT in line with consensus forecasts"</td><td class="cx">Consensus had been rebased twice by this point, so in line means in line with the reduced number. Q4 characterised as low single-digit growth — not derivable, so noted and not scored.</td><td class="sc">⚪</td></tr>
+    <tr class="changed"><td class="dt">19-May-25</td><td class="doc" data-rowtype="FYR"><b>FY25</b>FY R</td><td class="g gflat">—</td><td class="ph">"prudent to maintain our cautious stance given continued volatility in the global macroeconomic environment"</td><td class="cx">Retention qualitative for the first time — a high level maintained, no figure. Macro volatility language recurs later, so it is calibration rather than a first flag. No longer 🟢, unlike the three prior results documents.</td><td class="sc">⚪</td></tr>
+    <tr class="changed"><td class="dt">01-Sep-25</td><td class="doc" data-rowtype="H1TU"><b>FY26</b>H1 TU</td><td class="g graise">🟢 RAISE</td><td class="ph">"at the upper end of consensus forecasts…… anticipate delivering Adjusted PBT in line"</td><td class="cx">Consensus-anchored, so a G fire rather than a bare top-of-range mention. Revenue up with profit flat is a margin guide-down by implication, and the same passage flags increased short-term contractor use. Outturn £431.1m — the raise under-called it.</td><td class="sc">⚪</td></tr>
+    <tr><td class="dt">10-Nov-25</td><td class="doc" data-rowtype="H1R"><b>FY26</b>H1 R</td><td class="g gflat">flat</td><td class="ph">"maintaining a prudent outlook for profitability and expect Adjusted PBT to be in line"</td><td class="cx">Profit reiterated, revenue not restated upward despite the September raise. Bookings had just turned green — Rank 1 leading the language by two halves.</td><td class="sc">⚪</td></tr>
+    <tr class="changed"><td class="dt">20-Apr-26</td><td class="doc" data-rowtype="FYTU"><b>FY26</b>YE-TU</td><td class="g graise">🟢 RAISE</td><td class="ph">"revenue ahead of consensus…… margin improvement anticipated in H2 FY27 as the use of contractors reduces"</td><td class="cx">The most informative row in the table. Revenue raised, profit held, and the margin recovery pushed into the second half of the following year beside an active named pressure on the profit-carrying line. H2 weighting on revenue is habit; on margin, deferred a year, it is a first. Outturn £431.1m — again under-called.</td><td class="sc">🔴</td></tr>
+    <tr class="changed"><td class="dt">18-May-26</td><td class="doc" data-rowtype="FYR"><b>FY26</b>FY R</td><td class="g gflat">flat</td><td class="ph">"resulting in another positive year for Kainos"</td><td class="cx">Guide content present but unanchored and unmoved. Margin wording firms — many rather than some contractor costs displaced — yet the timing stays vague four weeks after H2 FY27 was named. Same active pressure, so capped at zero.</td><td class="sc">⚪</td></tr>
+    <tr class="changed"><td class="dt">⭐ 18-Aug-26</td><td class="doc" data-rowtype="H1TU"><b>FY27</b>H1 TU</td><td class="g graise">🟢 RAISE</td><td class="ph">"revenue and adjusted PBT for the year ending 31 March 2027 comfortably ahead of current market expectations"</td><td class="cx">The first document in the record to lift the profit line. Ranges £498.0–514.0m and £75.0–84.0m, consensus £509.3m and £77.1m. Macro volatility repeated, which is habit, so no cap. Contractors and margin both unmentioned.</td><td class="sc">🟢🟢</td></tr>
+   </tbody>
+  </table>
+ </div>
+ <details class="d1"><summary>§3 workings</summary>
+  <div class="d1body">
+   <details class="d2"><summary>Notes, §3</summary>
+    <div class="d2body">
+     <p><b>Same-type tracks.</b> YE-TU: ⚪ → ⚪ → ⚪ → 🔴. FY R: 🟢 → 🟢 → ⚪ → ⚪. H1 TU: ⚪ → ⚪ → 🔴 → ⚪ → 🟢🟢. H1 R: 🟢 → 🟢 → 🔴🔴 → ⚪.</p>
+     <p><b>G versus outturn — the credibility scan.</b> Every 🔴 CUT was delivered against. All three 🟢 RAISEs under-called their own outturn: Sep-25's upper end (about £393m) and Apr-26's ahead of consensus (about £407m) both preceded £431.1m. This is a serial revenue under-guider, so read the next raise with an upward discount and the next profit in line at face value. The footnote ranges span multiple houses, so the consensus is not management guidance laundered through a single note.</p>
+     <p><b>Absence and habit carve-out, discharged.</b> The Aug-26 score rests partly on a first — the first lift of the profit line — so the drawer alone was insufficient. Text re-read: 5 documents re-opened from source across the H1 TU and YE-TU types, dates 01-Sep-22, 31-Aug-23, 02-Sep-24, 01-Sep-25, 20-Apr-26. The G RAISE call had its prior guide re-read from the 20-Apr-26 source document.</p>
+    </div>
+   </details>
+   <details class="d2"><summary>Guidance passages — trailing 12 months</summary>
+    <div class="d2body">
+     <p><b>18-Aug-26 · Trading Update · outlook paragraph.</b> "During the year ended 31 March 2026, the Company achieved double-digit percentage revenue growth, a very strong sales performance and record backlog levels. This strong momentum has continued in the first months of the current financial year. As a consequence, the Board now anticipates delivering revenue and adjusted PBT for the year ending 31 March 2027 comfortably ahead of current market expectations." Footnote: revenue £498.0m–£514.0m, adjusted PBT £75.0m–£84.0m, consensus £509.3m and £77.1m. <i>Editorial note: no reference to contractors, to margin, or to the H2 FY27 recovery promised in April, anywhere in the document.</i></p>
+     <p><b>18-May-26 · Full Year Results · current trading and outlook.</b> "We expect further strong growth in Workday Products and continued progress in Digital Services and Workday Services, resulting in another positive year for Kainos." Surrounding passage restates clear margin improvement as contractor use falls, without repeating the H2 FY27 timing given four weeks earlier. <i>Editorial note: no numeric expectations anchor anywhere in the document — consistent with every results document in the record.</i></p>
+     <p><b>20-Apr-26 · Year-end Trading Update.</b> "The Board anticipates delivering revenue ahead of consensus and adjusted PBT in line with forecasts for the year ended 31 March 2026, with margin improvement anticipated in H2 FY27 as the use of contractors reduces, despite the short-term impact on margins." Footnote ranges: revenue £392.1m–£411.1m, adjusted PBT £65.6m–£70.0m; consensus £406.5m and £66.4m.</p>
+     <p><b>10-Nov-25 · Interim Results · current trading and outlook.</b> "We are maintaining a prudent outlook for profitability and expect Adjusted PBT to be in line with current consensus forecasts." Surrounding passage carries the increased contractor use as the stated reason and references consensus qualitatively — the results-doc format still prints no range.</p>
+     <p><b>01-Sep-25 · Trading Statement.</b> "Following a strong first half the Board now expects revenues for the year ending 31 March 2026 at the upper end of consensus forecasts. We are maintaining a prudent outlook and anticipate delivering Adjusted PBT in line with current consensus forecasts, reflecting increasing our short-term use of contractors." Footnote: revenue £378.0m–£393.4m, adjusted PBT £65.1m–£74.7m; consensus £385.0m and £66.4m.</p>
+     <p><i>Entries roll forward as documents age out of the trailing window; aged-out entries are deleted rather than summarised.</i></p>
+    </div>
+   </details>
+  </div>
+ </details>
+</div>
+
+<!-- §4 DRIFT -->
+<div class="sec-wrap">
+ <h2 class="sec">§4 · Drift — what they've gone quiet about</h2>
+ <p class="subnote">Which numbers get shared, hedged, or dropped, document by document — going quiet is the signal. Manifest 18 = Drift columns 18. Click any header to highlight every column of that period type.</p>
+ <div class="dwrap">
+  <table class="drift" id="drift">
+   <thead><tr><th class="mlab" style="text-align:left">Metric</th>
+    <th data-k="H1TU">Sep-22<span class="key">H1TU</span></th>
+    <th data-k="H1R">Nov-22<span class="key">H1R</span></th>
+    <th data-k="FYTU">Apr-23<span class="key">YETU</span></th>
+    <th data-k="FYR">May-23<span class="key">FYR</span></th>
+    <th data-k="H1TU">Aug-23<span class="key">H1TU</span></th>
+    <th data-k="H1R">Nov-23<span class="key">H1R</span></th>
+    <th data-k="FYTU">Apr-24<span class="key">YETU</span></th>
+    <th data-k="FYR">May-24<span class="key">FYR</span></th>
+    <th data-k="H1TU">Sep-24<span class="key">H1TU</span></th>
+    <th data-k="TU">Oct-24<span class="key">TU⚡</span></th>
+    <th data-k="H1R">Nov-24<span class="key">H1R</span></th>
+    <th data-k="FYTU">Apr-25<span class="key">YETU</span></th>
+    <th data-k="FYR">May-25<span class="key">FYR</span></th>
+    <th data-k="H1TU">Sep-25<span class="key">H1TU</span></th>
+    <th data-k="H1R">Nov-25<span class="key">H1R</span></th>
+    <th data-k="FYTU">Apr-26<span class="key">YETU</span></th>
+    <th data-k="FYR">May-26<span class="key">FYR</span></th>
+    <th data-k="H1TU">⭐ Aug-26<span class="key">H1TU</span></th></tr></thead>
+   <tbody>
+    <tr class="lr"><td class="mlab">Bookings (Group)</td><td class="cna">—</td><td class="cok">✅222</td><td class="cna">—</td><td class="cok">✅428</td><td class="cna">—</td><td class="cok">✅202</td><td class="cna">—</td><td class="cok">✅425</td><td class="cna">—</td><td class="oct cna">—</td><td class="cok">✅180</td><td class="cna">—</td><td class="cok">✅382</td><td class="cna">—</td><td class="cok">✅228</td><td class="cna">—</td><td class="cok">✅505</td><td class="bsc cna">—</td></tr>
+    <tr class="lr"><td class="mlab">Contracted backlog</td><td class="cq">🟡</td><td class="cok">✅308</td><td class="cq">🟡</td><td class="cok">✅323</td><td class="cq">🟡</td><td class="cok">✅327</td><td class="cq">🟡</td><td class="cok">✅357</td><td class="cq">🟡</td><td class="oct cwarn">❌</td><td class="cok">✅354</td><td class="cq">🟡</td><td class="cok">✅368</td><td class="cq">🟡</td><td class="cok">✅397</td><td class="cq">🟡</td><td class="cok">✅434</td><td class="bsc cq">🟡</td></tr>
+    <tr class="lr"><td class="mlab">Product ARR</td><td class="cna">—</td><td class="cok">✅44</td><td class="cq">🟡</td><td class="cok">✅48</td><td class="cna">—</td><td class="cok">✅55</td><td class="cna">—</td><td class="cok">✅61</td><td class="cq">🟡</td><td class="oct cq">🟡</td><td class="cok">✅65</td><td class="cok">✅72</td><td class="cok">✅73</td><td class="cq">🟡$</td><td class="cok">✅78</td><td class="cok">✅89</td><td class="cok">✅89</td><td class="bsc cna">—</td></tr>
+    <tr class="lr"><td class="mlab">Net revenue retention</td><td class="cna">—</td><td class="cna">—</td><td class="cna">—</td><td class="cok">✅126</td><td class="cna">—</td><td class="cok">✅107</td><td class="cna">—</td><td class="cok">✅102</td><td class="cna">—</td><td class="oct cna">—</td><td class="cna">—</td><td class="cna">—</td><td class="cq">🟡</td><td class="cna">—</td><td class="cna">—</td><td class="cna">—</td><td class="cq">🟡</td><td class="bsc cna">—</td></tr>
+    <tr class="lr"><td class="mlab">Adjusted profit margin</td><td class="cna">—</td><td class="cok">✅18.9</td><td class="cna">—</td><td class="cok">✅18.0</td><td class="cna">—</td><td class="cok">✅19.6</td><td class="cna">—</td><td class="cok">✅20.2</td><td class="cna">—</td><td class="oct cna">—</td><td class="cok">✅20.8</td><td class="cna">—</td><td class="cok">✅17.9</td><td class="cna">—</td><td class="cok">✅16.3</td><td class="cna">—</td><td class="cok">✅15.6</td><td class="bsc cna">—</td></tr>
+    <tr><td class="mlab">Group revenue</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="oct cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="bsc cna">—</td></tr>
+    <tr><td class="mlab">Adjusted PBT</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="oct cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="bsc cna">—</td></tr>
+    <tr><td class="mlab">Divisional revenue</td><td class="cq">🟡</td><td class="cok">✅</td><td class="cq">🟡</td><td class="cok">✅</td><td class="cq">🟡</td><td class="cok">✅</td><td class="cq">🟡</td><td class="cok">✅</td><td class="cq">🟡</td><td class="oct cq">🟡</td><td class="cok">✅</td><td class="cq">🟡</td><td class="cok">✅</td><td class="cq">🟡</td><td class="cok">✅</td><td class="cq">🟡</td><td class="cok">✅</td><td class="bsc cq">🟡</td></tr>
+    <tr><td class="mlab">Divisional bookings</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="oct cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="bsc cna">—</td></tr>
+    <tr><td class="mlab">Divisional backlog</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="oct cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="bsc cna">—</td></tr>
+    <tr><td class="mlab">Existing-customer revenue</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="oct cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="bsc cna">—</td></tr>
+    <tr><td class="mlab">Active customer numbers</td><td class="cna">—</td><td class="cok">✅779</td><td class="cna">—</td><td class="cok">✅821</td><td class="cna">—</td><td class="cok">✅892</td><td class="cna">—</td><td class="cok">✅930</td><td class="cna">—</td><td class="oct cna">—</td><td class="cok">✅1022</td><td class="cna">—</td><td class="cok">✅1094</td><td class="cna">—</td><td class="cok">✅1169</td><td class="cna">—</td><td class="cok">✅1253</td><td class="bsc cna">—</td></tr>
+    <tr><td class="mlab">Customer satisfaction</td><td class="cna">—</td><td class="cok">✅98ᵃ</td><td class="cna">—</td><td class="cok">✅99ᵃ</td><td class="cna">—</td><td class="cok">✅62</td><td class="cna">—</td><td class="cok">✅58</td><td class="cna">—</td><td class="oct cna">—</td><td class="cok">✅58</td><td class="cna">—</td><td class="cok">✅70</td><td class="cna">—</td><td class="cok">✅70</td><td class="cna">—</td><td class="cok">✅61</td><td class="bsc cna">—</td></tr>
+    <tr><td class="mlab">Headcount incl. contractors</td><td class="cq">🟡</td><td class="cok">✅2920</td><td class="cok">✅2990</td><td class="cok">✅2990</td><td class="cq">🟡</td><td class="cok">✅3139</td><td class="cq">🟡</td><td class="cok">✅2995</td><td class="cq">🟡</td><td class="oct cq">🟡</td><td class="cok">✅3029</td><td class="cq">🟡</td><td class="cok">✅2865</td><td class="cq">🟡</td><td class="cok">✅3132</td><td class="cok">✅3475</td><td class="cok">✅3475</td><td class="bsc cq">🟡</td></tr>
+    <tr><td class="mlab">Contractor share of workforce</td><td class="cna">—</td><td class="cok">✅10%</td><td class="cna">—</td><td class="cok">✅7%</td><td class="cna">—</td><td class="cok">✅4%</td><td class="cna">—</td><td class="cok">✅1%</td><td class="cna">—</td><td class="oct cq">🟡</td><td class="cok">✅2%</td><td class="cna">—</td><td class="cok">✅2.4†</td><td class="cq">🟡</td><td class="cok">✅4%</td><td class="cok">✅259</td><td class="cok">✅7.5</td><td class="bsc cna">—</td></tr>
+    <tr><td class="mlab">Cash &amp; cash conversion</td><td class="cna">—</td><td class="cok">✅70</td><td class="cna">—</td><td class="cok">✅104</td><td class="cna">—</td><td class="cok">✅82</td><td class="cna">—</td><td class="cok">✅98</td><td class="cna">—</td><td class="oct cna">—</td><td class="cok">✅75</td><td class="cna">—</td><td class="cok">✅112</td><td class="cna">—</td><td class="cok">✅48</td><td class="cna">—</td><td class="cok">✅99</td><td class="bsc cna">—</td></tr>
+    <tr><td class="mlab">Products R&amp;D + S&amp;M</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="oct cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="bsc cna">—</td></tr>
+    <tr><td class="mlab">AI &amp; data revenue</td><td class="cna">—</td><td class="cna">—</td><td class="cna">—</td><td class="cna">—</td><td class="cna">—</td><td class="cna">—</td><td class="cna">—</td><td class="cna">—</td><td class="cna">—</td><td class="oct cna">—</td><td class="cq">🟡</td><td class="cna">—</td><td class="cok">✅41</td><td class="cna">—</td><td class="cok">✅15</td><td class="cna">—</td><td class="cok">✅46</td><td class="bsc cna">—</td></tr>
+    <tr><td class="mlab">Consensus range (rev &amp; PBT)</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅</td><td class="cna">—</td><td class="cok">✅ᵖ</td><td class="cna">—</td><td class="cok">✅</td><td class="oct cok">✅</td><td class="cq">🟡</td><td class="cok">✅</td><td class="cq">🟡</td><td class="cok">✅</td><td class="cq">🟡</td><td class="cok">✅</td><td class="cq">🟡</td><td class="bsc cok">✅</td></tr>
+   </tbody>
+  </table>
+ </div>
+ <div class="legend">
+  <span><b class="cok">✅</b> quantified</span><span><b class="cq">🟡</b> qualitative only</span>
+  <span><b class="cwarn">❌</b> verified blank vs cadence</span><span><b class="cna">—</b> outside that doc-type's cadence</span>
+  <span>⊘ none in this record — no expected update was missed</span>
+  <span>ᵃ pre-NPS approval rating</span><span>ᵖ point consensus added from Apr-24</span><span>🟡$ level given in dollars, kept out of the £ series</span><span>† derived from two printed counts</span>
+ </div>
+ <details class="d1"><summary>§4 workings</summary>
+  <div class="d1body">
+   <details class="d2"><summary>Notes, §4</summary>
+    <div class="d2body">
+     <p><b>First note — rightmost column, 18-Aug-26.</b> Nothing newly withheld and nothing newly qualitative: every cell in this column sits within the established H1 TU cadence. The finding is what a guidance-raising document declines to mention. Contractors and margin are both absent, having been the named mechanism of the April and May recovery promise — the raise is probably the answer to both, but the metric the recovery rests on has gone quiet. Product ARR is likewise absent where the two most recent H1 updates carried it; the habit is patchy at this grain, two of five, so the cell is — rather than ❌ and it fires nothing. Watch both at 9 November.</p>
+     <p><b>Cadence.</b> Released 18 August against a four-year pattern of 1 September, 31 August, 2 September and 1 September — 14 days early, under an inside-information declaration. The mirror of the 31-Oct-24 unscheduled update, which was a cut and is the only document in the record omitting both backlog and pipeline.</p>
+     <p><b>Disclosure expansions, with start dates.</b> Point consensus alongside the range from 15-Apr-24. Anchor language entering the results-doc format from 11-Nov-24, qualitative in every results document since and quantified in that format never. AI and data revenue from 19-May-25. ARR graduating into the year-end update cadence from 14-Apr-25.</p>
+     <p><b>Never quantified anywhere.</b> Group pipeline — described as robust, healthy or solid in twelve of the nineteen documents and given a figure in none, so it is excluded from the ranked set rather than scored on its absence.</p>
+    </div>
+   </details>
+  </div>
+ </details>
+</div>
+
+</div>
+
+<script type="application/json" id="drift-entry">{
+  "ticker": "KNOS",
+  "company": "Kainos Group",
+  "kind": "ticker",
+  "direction": "up",
+  "headline": "Guide raised on revenue and profit together — a first in this record — while retention stays withheld and margin sits flat.",
+  "trigger": "Green-shoot mirror 2-of-3 (numbers & guide, language). Disclosure fires red against the call.",
+  "alert": true,
+  "fired": 3,
+  "fired_of": 3,
+  "lights": "ggr",
+  "rns_type": "Trading Update",
+  "rns_date": "2026-08-18",
+  "build_date": "2026-08-18",
+  "spec_version": "5.3e",
+  "next_test": "H1 FY27 results, 9 Nov 2026 — first hard figures against this guide, the H1 margin, the contractor count, and whether retention returns as a number.",
+  "url": "KNOS.html",
+  "trend": {"mode": "growth", "cells": "gg-", "rows": [{"m": "REV", "gap": 10.6}, {"m": "EBITDA", "gap": 16.2}, {"m": "PBT", "gap": null}]},
+  "grid": {
+    "labels": ["R1","R2","R3","R4","R5"],
+    "periods": ["H1 23","H2 23","H1 24","H2 24","H1 25","H2 25","H1 26","H2 26","H1 27"],
+    "rows": ["--rrrrgg-","-gagaggga","-ggggggg-","-r-r-a-a-","--agarra-"],
+    "note": "Ranks 1-5 at half grain; rightmost cell is the Aug-26 trading update, which quantifies nothing."
+  }
+}</script>
+
+<script>
+(function(){
+ var fg=document.getElementById('fg');
+ if(fg){
+  var heads=[].slice.call(fg.querySelectorAll('thead th.phead'));
+  heads.forEach(function(th){
+   th.addEventListener('click',function(){
+    var p=th.getAttribute('data-p'), on=th.classList.contains('act');
+    fg.querySelectorAll('.hl').forEach(function(c){c.classList.remove('hl')});
+    heads.forEach(function(h){h.classList.remove('act')});
+    if(on) return;
+    th.classList.add('act');
+    var idx=[]; heads.forEach(function(h,i){ if(h.getAttribute('data-p')===p){ idx.push(i+1); h.classList.add('hl'); }});
+    fg.querySelectorAll('tbody tr').forEach(function(tr){
+     if(tr.querySelector('[colspan]')) return;
+     var c=tr.children;
+     idx.forEach(function(i){ if(c[i]) c[i].classList.add('hl'); });
+    });
+   });
+  });
+ }
+ var dr=document.getElementById('drift');
+ if(dr){
+  var dh=[].slice.call(dr.querySelectorAll('thead th'));
+  dh.forEach(function(th){
+   if(!th.getAttribute('data-k')) return;
+   th.addEventListener('click',function(){
+    var k=th.getAttribute('data-k'), on=th.classList.contains('act');
+    dr.querySelectorAll('.dhl').forEach(function(c){c.classList.remove('dhl')});
+    dh.forEach(function(h){h.classList.remove('act')});
+    if(on) return;
+    th.classList.add('act');
+    var idx=[]; dh.forEach(function(h,i){ if(h.getAttribute('data-k')===k){ idx.push(i); h.classList.add('dhl'); }});
+    dr.querySelectorAll('tbody tr').forEach(function(tr){
+     var c=tr.children;
+     idx.forEach(function(i){ if(c[i]) c[i].classList.add('dhl'); });
+    });
+   });
+  });
+ }
+ var t3=document.getElementById('text3'), bar=document.getElementById('expbar');
+ if(bar){
+  bar.addEventListener('click',function(){
+   var col=t3.classList.toggle('t3collapsed');
+   bar.firstElementChild.textContent = col ? '▸ Show 11 earlier prints — Sep-22 to Nov-24'
+                                           : '▾ Hide 11 earlier prints — Sep-22 to Nov-24';
+  });
+ }
+ if(t3){
+  t3.querySelectorAll('td.doc').forEach(function(td){
+   td.addEventListener('click',function(){
+    var rt=td.getAttribute('data-rowtype'), on=td.classList.contains('act');
+    t3.querySelectorAll('td.doc').forEach(function(c){c.classList.remove('hlp','act')});
+    if(on) return;
+    var hidden=false;
+    t3.querySelectorAll('td.doc').forEach(function(c){
+     if(c.getAttribute('data-rowtype')===rt){
+      c.classList.add('hlp');
+      if(c.parentElement.classList.contains('old')) hidden=true;
+     }
+    });
+    td.classList.add('act');
+    if(hidden && t3.classList.contains('t3collapsed')){
+     t3.classList.remove('t3collapsed');
+     bar.firstElementChild.textContent='▾ Hide 11 earlier prints — Sep-22 to Nov-24';
+    }
+   });
+  });
+ }
+})();
+</script>
+</body>
+</html>
