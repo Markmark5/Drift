@@ -268,26 +268,32 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:6px;padd
       <div class="s">Sweep sits outside the 2-of-3 count</div></div>
     </div>
     <div class="tw">
-     <div class="plab">Trend Watch · no consensus data</div>
+     <div class="plab">Trend Watch · H1% vs 3yr% · fc Aug-26 · pre-RNS</div>
      <div class="dset">
       <div class="dcell"><div class="dnm">REVENUE</div>
        <svg width="50" height="50" viewBox="0 0 42 42">
         <circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/>
+        <circle cx="21" cy="21" r="15.915" fill="none" stroke="#ff3b30" stroke-width="5"
+         stroke-dasharray="62 100" transform="rotate(-313 21 21)" stroke-linecap="round"/>
         <line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/></svg>
-       <div class="dfig" style="color:#6d6a62">n/a</div>
-       <div class="dtrend">block predates RNS</div><div class="dfc"></div></div>
+       <div class="dfig" style="color:#ff6b63">-12.1pp</div>
+       <div class="dtrend">35.8 vs 47.9</div><div class="dfc"></div></div>
       <div class="dcell"><div class="dnm">EBITDA</div>
        <svg width="50" height="50" viewBox="0 0 42 42">
         <circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/>
+        <circle cx="21" cy="21" r="15.915" fill="none" stroke="#ff3b30" stroke-width="5"
+         stroke-dasharray="75 100" transform="rotate(-360 21 21)" stroke-linecap="round"/>
         <line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/></svg>
-       <div class="dfig" style="color:#6d6a62">n/a</div>
-       <div class="dtrend">block predates RNS</div><div class="dfc"></div></div>
+       <div class="dfig" style="color:#ff6b63">-18.9pp</div>
+       <div class="dtrend">24.4 vs 43.3</div><div class="dfc"></div></div>
       <div class="dcell"><div class="dnm">PBT</div>
        <svg width="50" height="50" viewBox="0 0 42 42">
         <circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/>
+        <circle cx="21" cy="21" r="15.915" fill="none" stroke="#ff3b30" stroke-width="5"
+         stroke-dasharray="83 100" transform="rotate(-389 21 21)" stroke-linecap="round"/>
         <line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/></svg>
-       <div class="dfig" style="color:#6d6a62">n/a</div>
-       <div class="dtrend">block predates RNS</div><div class="dfc"></div></div>
+       <div class="dfig" style="color:#ff6b63">-46.3pp</div>
+       <div class="dtrend">-7.0 vs 39.3</div><div class="dfc"></div></div>
      </div>
     </div>
    </div>
@@ -502,7 +508,7 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:6px;padd
  "grid":{"labels":["R1","R2","R3","R4","R5"],
   "periods":["-","H2 22","H1 23","H2 23","H1 24","H2 24","H1 25","H2 25","H1 26"],
   "rows":["-gggggrra","--rggggar","----ggggr","-rrgggggr","------rrr"],
-  "note":"Five ranked metrics, oldest left, Buy/Sell H1 FY26 rightmost."}}</pre>
+  "note":"Five ranked metrics, oldest left, Buy/Sell H1 FY26 rightmost."},"trend":{"mode":"share","cells":"rrr","rows":[{"m":"REV","gap":-12.1},{"m":"EBITDA","gap":-18.9},{"m":"PBT","gap":-46.3}]}}</pre>
  </details>
 
  <details class="d2">
@@ -593,9 +599,18 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:6px;padd
 
  <details class="d2">
   <summary>Trend Watch workings</summary>
-  <p><strong>Panel renders "no consensus data" and no rows.</strong> The supplied ShareScope block's latest weekly snapshot is dated 14 Aug 2026; the Buy/Sell RNS is 18 Aug 2026. Under 5.3a a datablock older than the Buy/Sell RNS is not used and a stale forecast is never carried — half a calculation is not a reading. The block's FY1 figures (£62.0m revenue, £4.1m EBITDA, £2.1m PBT) predate a guide the company has since floored at £3.7m, so they describe a world one document out of date.</p>
-  <p><strong>Norms were not taken from the block, and would not have been.</strong> Its EBITDA sub-period row for FY24 reads "2.5 / −2.5", a negative half that does not exist in the printed record (FY24 was £2.8m H1, £3.4m† H2). This is exactly the corrupt-sub-period failure the norm rule anticipates, and it is stated here so the next build does not rediscover it.</p>
-  <p><strong>For the next build, once a post-18-Aug block exists:</strong> share mode applies (H1 document), the three metrics are revenue, adjusted EBITDA and PBT, and the norms come from SNX's own printed halves — revenue H1 share of FY: 44.6% (FY23), 47.1% (FY24), 52.1% (FY25), 3-year average 47.9%. Actual H1 FY26 share cannot be computed until a current FY1 forecast is supplied.</p>
+  <p><strong>⚠️ Pre-RNS forecast, used on operator override.</strong> The ShareScope block's latest snapshot is 14 Aug 2026, four days before the Buy/Sell RNS. Under 5.3a a block older than the Buy/Sell RNS renders "no consensus data"; the operator has directed that it be used, flagged <em>pre-RNS</em> on the panel. <strong>The forecast therefore predates the guide floor announced on 18 Aug</strong> — £4.1m EBITDA is now the <em>top</em> of a range whose floor is £3.7m, so all three gaps are measured against a bar the company has since lowered. Read them as "behind what the market still expected on 14 August", not "behind what is now guided".</p>
+  <p><strong>Mode: SHARE</strong> (H1 results). Sign convention: delivered minus required; negative is behind.</p>
+  <table class="t3" style="margin-top:8px">
+   <thead><tr><th>Metric</th><th>Basis</th><th>H1 FY26 actual</th><th>Prior-yr comp</th><th>Norm (3yr H1 share)</th><th>FY1 fc (14 Aug 26)</th><th>Gap</th><th>Ranked?</th></tr></thead>
+   <tbody>
+    <tr><td>REVENUE</td><td>Reported</td><td>£22.2m → 35.8%</td><td>H1 FY25 £35.5m</td><td>47.9% — FY23 44.6 · FY24 47.1 · FY25 52.1</td><td>£62.0m</td><td style="color:#b3261e"><strong>−12.1pp</strong></td><td>Y — ties to §2 Rank 2</td></tr>
+    <tr><td>EBITDA</td><td>Adjusted</td><td>£1.0m → 24.4%</td><td>H1 FY25 £4.2m</td><td>43.3% — FY23 35.4 · FY24 45.2 · FY25 49.4</td><td>£4.1m</td><td style="color:#b3261e"><strong>−18.9pp</strong></td><td>Y — ties to §2 Rank 3</td></tr>
+    <tr><td>PBT</td><td>Underlying</td><td>−£0.15m → −7.0%</td><td>H1 FY25 £3.0m</td><td>39.3% — FY23 24.1 · FY24 44.7 · FY25 49.2</td><td>£2.1m</td><td style="color:#b3261e"><strong>−46.3pp</strong></td><td><strong>N</strong> — this table is its only audit trail</td></tr>
+   </tbody>
+  </table>
+  <p><strong>Norms come from the company's printed halves, not the block.</strong> Each EBITDA pair is basis-matched (FY23 and FY24 underlying-to-underlying using the pre-restatement £6.2m; FY25 adjusted-to-adjusted). The block's own EBITDA sub-period row reads "2.5 / −2.5" for FY24 — a negative half that does not exist in the printed record — which is precisely the corrupt-split failure the norm rule exists to prevent. Its stated PBT norm of 39.3% happens to match the independent derivation; that is a coincidence to note, not a source to rely on.</p>
+  <p><strong>Two arithmetic cautions.</strong> PBT's share is negative because the half made a small underlying loss, so the ring draws a gap the scale was never calibrated for: the printed −46.3pp governs and the arc clips at two o'clock. EBITDA's −18.9pp and PBT's −46.3pp both sit in the compressed zone, where the ring understates the true distance — compare the figures, not the shapes.</p>
  </details>
 
  <details class="d2">
@@ -774,7 +789,7 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:6px;padd
 })();
 </script>
 
-<script type="application/json" id="drift-entry">{"ticker":"SNX","company":"Synectics plc","kind":"ticker","direction":"down","headline":"Second guide cut in six months: FY26 EBITDA floored at £3.7m. H1 revenue −37%, margin 4.5%, first cash outflow half.","trigger":"3 of 3 — Numbers & guide (second CUT, Aug-26) · Language (two prints at −2) · Disclosure (green-shoot mirror: order book re-quantified)","alert":true,"fired":3,"fired_of":3,"lights":"rrg","rns_type":"H1 Results","rns_date":"2026-08-18","build_date":"2026-08-18","spec_version":"v5.3e","next_test":"FY trading update, Dec 2026 — whether \"£3.7m to market expectations\" becomes \"£3.7m\", and whether energy orders converted.","url":"SNX.html","grid":{"labels":["R1","R2","R3","R4","R5"],"periods":["-","H2 22","H1 23","H2 23","H1 24","H2 24","H1 25","H2 25","H1 26"],"rows":["-gggggrra","--rggggar","----ggggr","-rrgggggr","------rrr"],"note":"Five ranked metrics, oldest left, Buy/Sell H1 FY26 rightmost."}}</script>
+<script type="application/json" id="drift-entry">{"ticker":"SNX","company":"Synectics plc","kind":"ticker","direction":"down","headline":"Second guide cut in six months: FY26 EBITDA floored at £3.7m. H1 revenue −37%, margin 4.5%, first cash outflow half.","trigger":"3 of 3 — Numbers & guide (second CUT, Aug-26) · Language (two prints at −2) · Disclosure (green-shoot mirror: order book re-quantified)","alert":true,"fired":3,"fired_of":3,"lights":"rrg","rns_type":"H1 Results","rns_date":"2026-08-18","build_date":"2026-08-18","spec_version":"v5.3e","next_test":"FY trading update, Dec 2026 — whether \"£3.7m to market expectations\" becomes \"£3.7m\", and whether energy orders converted.","url":"SNX.html","grid":{"labels":["R1","R2","R3","R4","R5"],"periods":["-","H2 22","H1 23","H2 23","H1 24","H2 24","H1 25","H2 25","H1 26"],"rows":["-gggggrra","--rggggar","----ggggr","-rrgggggr","------rrr"],"note":"Five ranked metrics, oldest left, Buy/Sell H1 FY26 rightmost."},"trend":{"mode":"share","cells":"rrr","rows":[{"m":"REV","gap":-12.1},{"m":"EBITDA","gap":-18.9},{"m":"PBT","gap":-46.3}]}}</script>
 
 </body>
 </html>
