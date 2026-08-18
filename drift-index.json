@@ -953,6 +953,24 @@
           "------rrr"
         ],
         "note": "Five ranked metrics, oldest left, Buy/Sell H1 FY26 rightmost."
+      },
+      "trend": {
+        "mode": "share",
+        "cells": "rrr",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": -12.1
+          },
+          {
+            "m": "EBITDA",
+            "gap": -18.9
+          },
+          {
+            "m": "PBT",
+            "gap": -46.3
+          }
+        ]
       }
     },
     {
