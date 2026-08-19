@@ -139,9 +139,7 @@
   /* ---------- (superseded §2.0 bar block) ---------- */
 
   /* ---------- TEXT+G ---------- */
-  #text3 td.gm{font-size:10.5px;text-align:left;line-height:1.5;}
-  #text3 td.gm .met{color:var(--green);} #text3 td.gm .miss{color:var(--red);}
-  #text3 td.doc .fy{display:block;font-weight:700;} #text3 td.doc .dt{display:block;color:var(--mut);font-size:11px;}
+    #text3 td.doc .fy{display:block;font-weight:700;} #text3 td.doc .dt{display:block;color:var(--mut);font-size:11px;}
   #text3 td.doc{cursor:pointer;}
   #text3 tr.changed{background:#fff9e8;}
   #text3 .rowhi{background:#fde8ef !important;}
@@ -158,6 +156,89 @@
   .colhi{background:#fff6d9 !important;}
   .key{font-size:11px;color:var(--mut);margin-top:6px;}
   @media(max-width:640px){.grid2{grid-template-columns:1fr;}.vhead{font-size:19px;}}
+
+  /* ==== VERDICT CARD — LOCKED v5.3d (Appendix E) ==== */
+  .card{display:flex;border:6px solid var(--dir);border-radius:12px;overflow:hidden;max-width:1180px;margin:0 0 30px;background:#fff}
+  .card.up{--dir:#2f9e5c} .card.watch{--dir:#c98f16} .card.down{--dir:#d94436}
+  .rail{width:82px;flex:0 0 82px;background:var(--dir);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:16px 6px;gap:12px;position:relative}
+  .badge{width:36px;height:36px;border-radius:50%;border:2px solid #fff;display:flex;align-items:center;justify-content:center;flex:0 0 36px}
+  .railtkr{writing-mode:vertical-rl;transform:rotate(180deg);text-transform:uppercase;letter-spacing:.12em;font-size:19px;font-weight:700;color:#fff;flex:0 0 auto}
+  .raillab{writing-mode:vertical-rl;transform:rotate(180deg);text-transform:uppercase;letter-spacing:.16em;font-size:14px;font-weight:600;color:rgba(255,255,255,.9);flex:0 0 auto}
+  .railco{writing-mode:vertical-rl;transform:rotate(180deg);letter-spacing:.07em;font-size:13.5px;font-weight:500;color:rgba(255,255,255,.85);flex:0 0 auto;max-height:260px;overflow:hidden}
+  .railgap{flex:1 1 auto;min-height:26px}
+  .tier1{position:absolute;bottom:14px;font-size:18px}
+  .cbody{flex:1;padding:20px 22px 22px;min-width:0}
+  .chead{font-size:22px;font-weight:700;line-height:1.25;margin:0 0 12px}
+  .pills{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:14px}
+  .pill{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:4px 11px;font-size:11.5px;color:var(--mute);white-space:nowrap}
+  .dot{color:var(--line)}
+  .lights{background:#2b2a26;border-radius:12px;padding:12px 13px;max-width:1100px;display:flex;gap:10px;align-items:stretch;flex-wrap:wrap}
+  .lamp{flex:1 1 200px;background:#3b3934;border-radius:9px;padding:10px 11px;position:relative;min-width:190px}
+  .lamp.off,.lamp.amb{background:#333129}
+  .bulb{width:28px;height:28px;border-radius:50%;margin-bottom:7px;border:2px solid rgba(255,255,255,.28);box-shadow:0 0 0 4px rgba(255,255,255,.07)}
+  .b-r{background:#ff3b30} .b-g{background:#21d05e} .b-a{background:#ffb020} .b-o{background:#57544c}
+  .lname{font-size:15.5px;font-weight:700;color:#fff;line-height:1.15}
+  .lamp.off .lname,.lamp.amb .lname{color:#a8a49a}
+  .lreason{font-size:11.5px;color:#c9c6bd;margin-top:4px;line-height:1.35}
+  .ldate{position:absolute;top:10px;right:11px;font-size:11px;color:#c9c6bd}
+  .lamp.off .ldate,.lamp.amb .ldate{color:#8d8981}
+  .tally{flex:0 0 78px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+  .tally b{font-size:26px;font-weight:700;color:#fff;line-height:1}
+  .tally span{font-size:10.5px;letter-spacing:.14em;color:#c9c6bd;margin-top:4px}
+  .bstrip{margin-top:10px;border:1px dashed #57544c;border-radius:9px;padding:9px 11px;display:flex;align-items:stretch;gap:10px}
+  .bsweep{flex:1;display:flex;align-items:center;gap:10px;padding-right:14px;min-width:230px}
+  .bbulb{width:20px;height:20px;border-radius:50%;flex:0 0 20px;border:2px solid rgba(255,255,255,.25)}
+  .bstrip .t{font-size:13px;color:#fff;font-weight:600}
+  .bstrip .s{font-size:11px;color:#c9c6bd;margin-top:2px}
+  details.guide{margin:14px 0;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  details.guide>summary{background:#2b2a26;color:#fff;padding:8px 15px;cursor:pointer;list-style:none;font-family:'Caveat',"Comic Sans MS",cursive;font-weight:700;font-size:24px}
+  details.guide>summary::-webkit-details-marker{display:none}
+  details.guide>summary .em{font-size:22px;margin-right:6px}
+  .gbody{padding:14px 16px;font-size:12.5px;line-height:1.55}
+  .gbody h4{font-family:'Caveat',"Comic Sans MS",cursive;font-weight:700;font-size:22px;margin:12px 0 4px}
+  .gbody h4:first-child{margin-top:0}
+  .gbody .vintage{color:var(--mute);font-size:11px;margin-top:12px}
+  .boxes{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 14px}
+  .box{background:#f2f1ec;border-radius:0 0 10px 10px;border-top:3px solid var(--dir);padding:12px 15px 13px}
+  .box .lb{font-size:13px;text-transform:uppercase;letter-spacing:.09em;color:var(--mute)}
+  .box .hl2{font-size:19px;font-weight:700;margin:3px 0 4px}
+  .box p{font-size:13px;line-height:1.45;margin:0}
+  .cbul{margin:0;padding-left:18px;font-size:13px}
+  .cbul li{margin-bottom:6px}
+  /* ==== TREND WATCH PANEL — LOCKED v5.3 (Appendix C) ==== */
+  .tw{flex:1;border-left:1px dashed #57544c;padding-left:16px;min-width:0}
+  .tw .plab{font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#8d8981;font-weight:700}
+  .tw .dset{display:flex;gap:20px;margin-top:8px}
+  .tw .dcell{text-align:center;width:88px}
+  .tw .dnm{font-size:9px;letter-spacing:.1em;color:#8d8981;margin-bottom:2px}
+  .tw .dfig{font-size:11px;font-weight:700;margin-top:2px}
+  .tw .dtrend{font-size:9px;color:#c9c6bd;margin-top:2px}
+  .tw .dfc{font-size:8.5px;color:#6d6a62}
+  /* ==== §3 trailing-window expander ==== */
+  #text3 tr.older{display:none}
+  #text3.showall tr.older{display:table-row}
+  #text3 tr.expander td{background:var(--paper);cursor:pointer;font-size:11.5px;font-weight:600;color:var(--mute);text-align:left;padding:6px 9px}
+  #text3 tr.expander td:hover{background:#eceae4}
+  /* ==== card strip ==== */
+  .stripwrap table{border-collapse:collapse}
+  .stripwrap td{border:1px solid var(--line);width:26px;height:22px;text-align:center;font-size:10px}
+  .stripwrap td.rk{width:36px;font-weight:700;background:var(--paper);font-size:10px}
+  .sg{background:#21d05e} .sa{background:#ffb020} .sr{background:#ff3b30} .sx{background:#57544c} .sn{background:#eceae4}
+  .stripwrap td.bsc{outline:2px solid var(--ink);outline-offset:-2px}
+  .jsonbox{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;background:#f7f6f2;border:1px solid var(--line);border-radius:6px;padding:9px;white-space:pre-wrap;word-break:break-all;margin-top:10px;user-select:all}
+  @media(max-width:760px){
+    .boxes{grid-template-columns:1fr}
+    .card{flex-direction:column}
+    .rail{width:100%;flex-direction:row;padding:10px;align-items:center;gap:10px}
+    .railtkr,.raillab,.railco{writing-mode:horizontal-tb;transform:none;max-height:none}
+    .railgap{display:none}
+    .bstrip{flex-direction:column}
+    .bsweep{min-width:0;padding-right:0}
+    .tw{border-left:none;border-top:1px dashed #57544c;padding-left:0;padding-top:10px}
+    .tw .dset{justify-content:space-between;gap:8px}
+    .tw .dcell{width:32%}
+  }
+
 </style>
 </head>
 <body>
@@ -165,27 +246,82 @@
 
 <!-- ============ VERDICT CARD ============ -->
 <section style="margin-top:6px;">
-<div class="verdict">
+<div class="card up">
   <div class="rail">
-    <div class="badge" title="Turning up">
-      <svg viewBox="0 0 24 24"><polyline points="3 17 9 11 13 15 21 7"></polyline><polyline points="15 7 21 7 21 13"></polyline></svg>
-    </div>
-    <div class="vlabel">Turning&nbsp;Up</div>
+    <div class="badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+    <div class="raillab">Turning up</div>
+    <div class="railgap"></div>
+    <div class="railtkr">LUCE</div>
+    <div class="railco">Luceco plc</div>
+    <div class="railgap"></div>
   </div>
-  <div class="vbody">
-    <div class="vhead">FY27 guided above consensus &mdash; but the FY26 upgrade run stops at a held &gt;&pound;40m as Demand Flexibility economics reset.</div>
+  <div class="cbody">
+    <h1 class="chead">FY27 guided above consensus &mdash; but the FY26 upgrade run stops at a held &gt;&pound;40m as Demand Flexibility economics reset.</h1>
     <div class="pills">
-      <span class="pill alert">&#9650; 1 green-shoot alert</span>
-      <span class="dot"></span><span class="dot"></span>
-      <span class="pill">RNS: H1 FY26 TU</span>
-      <span class="pill">28 Jul 2026</span>
-      <span class="pill">FY 31 Dec</span>
-      <span class="dot"></span><span class="dot"></span>
+      <span class="pill">H1 FY26 TU &middot; 28 Jul 2026</span>
+      <span class="pill">FY-end 31 Dec</span>
+      <span class="dot">&middot;</span>
       <span class="pill">B/S: leverage falling</span>
     </div>
-    <details class="cguide">
-      <summary class="darkbar"><span class="em">&#128161;</span> Idiot&rsquo;s guide to the company &mdash; What Luceco plc actually does</summary>
-      <div class="cgbody">
+
+    <div class="lights">
+      <div class="lamp">
+        <div class="ldate">Jul-26</div>
+        <div class="bulb b-g"></div>
+        <div class="lname">Numbers &amp; guide</div>
+        <div class="lreason">FY27 guided above &pound;42.3m consensus; Q2 revenue accelerating</div>
+      </div>
+      <div class="lamp off">
+        <div class="bulb b-o"></div>
+        <div class="lname">Language</div>
+        <div class="lreason">Positive throughout; no two-print rise from zero or below</div>
+      </div>
+      <div class="lamp">
+        <div class="ldate">Jul-26</div>
+        <div class="bulb b-g"></div>
+        <div class="lname">Disclosure</div>
+        <div class="lreason">H1 profit and margin quantified in a TU for the first time</div>
+      </div>
+      <div class="tally"><b>2/3</b><span>FIRED</span></div>
+      <div class="bstrip" style="flex-basis:100%">
+        <div class="bsweep">
+          <div class="bbulb b-g"></div>
+          <div><div class="t">Clean &mdash; leverage falling</div>
+          <div class="s">Sweep sits outside the 2-of-3 count</div></div>
+        </div>
+        <div class="tw">
+          <div class="plab">Trend watch &middot; H1% vs 3yr% &middot; fc Jul-26</div>
+          <div class="dset">
+            <div class="dcell"><div class="dnm">REVENUE</div>
+              <svg width="50" height="50" viewBox="0 0 42 42">
+                <circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/>
+                <circle cx="21" cy="21" r="15.915" fill="none" stroke="#d9c62f" stroke-width="5" stroke-dasharray="5 100" transform="rotate(-108 21 21)" stroke-linecap="round"/>
+                <line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/>
+              </svg>
+              <div class="dfig" style="color:#e8d44a">&minus;0.4pp</div>
+              <div class="dtrend">46.2 vs 46.6</div><div class="dfc">at H1 TU</div></div>
+            <div class="dcell"><div class="dnm">EBITDA</div>
+              <svg width="50" height="50" viewBox="0 0 42 42">
+                <circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/>
+                <line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/>
+              </svg>
+              <div class="dfig" style="color:#6d6a62">n/a</div>
+              <div class="dtrend">not in TU</div><div class="dfc">&nbsp;</div></div>
+            <div class="dcell"><div class="dnm">PBT</div>
+              <svg width="50" height="50" viewBox="0 0 42 42">
+                <circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/>
+                <line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/>
+              </svg>
+              <div class="dfig" style="color:#6d6a62">n/a</div>
+              <div class="dtrend">not in TU</div><div class="dfc">&nbsp;</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <details class="guide">
+      <summary><span class="em">&#128161;</span>Idiot&rsquo;s guide to the company &mdash; What Luceco plc actually does</summary>
+      <div class="gbody">
         <h4>What they sell</h4>
         <p>The electrical bits inside a building. Plug sockets, light switches, LED light fittings, cable trunking, extension leads &mdash; and, increasingly, chargers for electric cars. If it is screwed to a wall and something plugs into it, Luceco probably makes a version of it. Head office is in Telford, Shropshire; most of it is made in the group&rsquo;s own factory in Jiaxing, China. Brands include BG, Masterplug, DW Windsor, D-Line and CMD.</p>
         <h4>Where the money comes from</h4>
@@ -199,16 +335,22 @@
         <p class="vintage">Stable facts only &mdash; as at 28 July 2026. Fires nothing, scores nothing.</p>
       </div>
     </details>
-    <div class="grid2">
-      <div class="scard"><div class="k">Current state</div><div class="val">H1 rev &pound;143m +13%, Q2 accelerating to +15%; AOP c.&pound;15.8m +14%; margin 11.1%.</div></div>
-      <div class="scard"><div class="k">Fired</div><div class="val">Green-shoot 2-of-3 holds: G RAISE (FY27) + disclosure expansion (H1 AOP &amp; margin new to a TU).</div></div>
-      <div class="scard caveat"><div class="k">Caveat</div><div class="val">DF revenue-per-charger resets early H2; FY26 floor now sits below &pound;40.7m consensus.</div></div>
-      <div class="scard"><div class="k">Next</div><div class="val">H1 results 22 Sep 2026 (RNS-stated) &mdash; DF economics quantified, CEO successor named.</div></div>
+
+    <div class="boxes">
+      <div class="box"><div class="lb">Current state</div><div class="hl2">Above &pound;40m, held</div>
+        <p>H1 revenue &pound;143m (+13%) and profit c.&pound;15.8m (+14%); the Board reiterates &gt;&pound;40m rather than raising it again.</p></div>
+      <div class="box"><div class="lb">Warning you get</div><div class="hl2">One print</div>
+        <p>Language turned at the Jul-22 H1 TU, three months before the Oct-22 numeric guide landed. Rank 1 currently reads flat, not falling.</p></div>
+      <div class="box"><div class="lb">Argues against</div><div class="hl2">Floor below consensus</div>
+        <p>&gt;&pound;40m now sits under the &pound;40.7m consensus midpoint, and the Demand Flexibility upside clause was moved to FY27 rather than banked.</p></div>
+      <div class="box"><div class="lb">Next test</div><div class="hl2">22 Sep 2026</div>
+        <p>Half-year results: post-reset revenue per charger quantified, and whether a permanent CEO has been named.</p></div>
     </div>
-    <ul class="vbul">
-      <li><b>Confirms up:</b> Sep interims quantifying post-reset DF revenue-per-charger with the &gt;&pound;40m held, and an external CEO appointment landing before year-end.</li>
-      <li><b>Breaks it:</b> &gt;&pound;40m softened to &quot;in line&quot; against &pound;40.7m consensus; charger enrolment staying unquantified a second print; net debt rising again without a disclosed cause.</li>
-      <li><b>Signal quality (see bridge):</b> charger income doubled and core sales held, but the regulator&rsquo;s trim lands in H2 &mdash; first print in four where the marginal signal is neutral, not positive. The May-26 &quot;significant outperformance dependent on Demand Flexibility&quot; clause resolved as a failed condition for FY26 and was re-attached verbatim to FY27.</li>
+
+    <ul class="cbul">
+      <li>Disclosure fire is a first-ever quantification, not a resumption &mdash; margin and H1 profit have no prior TU baseline, so the run starts 28 Jul 2026 and cannot yet be read as a trend.</li>
+      <li>The regulatory reset is the first use of that explanation; a second consecutive print leaning on it exhausts the discount and turns the amber to red.</li>
+      <li>Flips down if 22 Sep softens &gt;&pound;40m toward &ldquo;in line&rdquo;, or if the charger count stays unquantified a second print.</li>
     </ul>
   </div>
 </div>
@@ -217,6 +359,8 @@
 <!-- ============ §1 LEDGER ============ -->
 <section>
 <h2 class="sec">&sect;1 &middot; Metric Ledger</h2>
+<details><summary>The metric ledger &mdash; five ranks, roles and why each was chosen</summary>
+
 <table>
 <thead><tr><th>Rank</th><th>Metric</th><th>Type</th><th>Why it leads for LUCE</th><th>Cadence</th><th>Status</th></tr></thead>
 <tbody>
@@ -228,6 +372,8 @@
 </tbody>
 </table>
 <p class="mut" style="font-size:12.5px;margin-top:8px;">Bands: H-grain rate &plusmn;2.0pp &middot; Q-grain rate &plusmn;5.0pp (constant this run). EPS not scored. Statutory metrics never scored. <b>Basis/label change (Rank 2):</b> the company&rsquo;s own label moved from &ldquo;EV charging&rdquo; to &ldquo;Energy Transition revenue, including EV charging and Demand Flexibility&rdquo; at the Jul-26 TU &mdash; the +120% is on the broader label and is not strictly like-for-like with the +80% EV-charging print of May-26; flagged, not adjusted. <b>Proposed next-build change (carried, now qualified):</b> enrolled-charger count as a Rank-2b snapshot &mdash; but the count was <i>not</i> quantified in the print where DF economics de-rated, so its disclosure is not yet reliable enough to score; re-assess at the Sep interims.</p>
+
+</details>
 </section>
 
 <!-- ============ §2 UNIFIED FORWARD GRID ============ -->
@@ -382,14 +528,11 @@
 </table>
 </div>
 
-<details>
-<summary>Turn methodology &amp; restatement basis</summary>
-<p><span class="ntitle">Comparison bases.</span> Every &Delta; and arrow is computed in one script with the basis hard-coded per metric type: snapshot metrics (the FY guide) compare position-to-position at their own disclosure grain; flow metrics (Energy Transition revenue, quarterly revenue) compare like-period-to-like-period only (H1-vs-H1, never H1-vs-9M); rate metrics (LFL/organic %, margin) are seasonally matched &mdash; H1-vs-H1, FY-vs-FY, Q-vs-same-Q. Sequential QonQ fires &#128308;&#8600; on any negative quarter regardless of year-comparison (primary, Q-grain); the rate trigger is banded H-grain &plusmn;2.0pp / Q-grain &plusmn;5.0pp (secondary). Guides never fire the sequential/rate triggers &mdash; those are actuals-only.</p>
-<p><span class="ntitle">Derivations &amp; tie-outs.</span> Q2&rsquo;26&dagger; = H1 &pound;143m &minus; Q1 c&pound;68m = c&pound;75m; second route: vs Q2&rsquo;25&dagger; (&pound;125.7m &minus; &pound;61m = &pound;64.7m) = +15.9%, tying to the company&rsquo;s printed &ldquo;c.15%&rdquo; within rounding on two c. figures. Q4/H2&rsquo;25 AOP&dagger; = &pound;33.8m &minus; &pound;13.8m = &pound;20.0m, corroborated by the Q3&rsquo;25 print and FY narrative &mdash; watch-flag cleared. HonH (H2-vs-H1) is computed in script for reference: FY22 &minus;6.1%, FY23 +6.7%, FY24 +21.3%, FY25 +15.9% &mdash; retained here, never displayed in cells (H-grain metric on a Q-grain reporter). FY22 LFL &asymp;&minus;20%&dagger; is destocking-driven and transcription-grade only. <b>Q3/Q4 are not separable in &pound;:</b> Q3 TUs print growth percentages only, never a quarter or 9M revenue figure, so the quarter columns resolve to Q3 % and a derived H2&dagger; carrying the FY anchor. Solving the FY24 pair (Q3 +3.0%, 9M +6.4%) for Q3&rsquo;23 was attempted and rejected &mdash; with both inputs rounded to 0.1pp the answer ranges &pound;56.5&ndash;63.0m, too unstable to render. Q2&rsquo;22 is likewise unavailable: no Q1 2022 TU exists, so H1&rsquo;22 cannot be split.</p>
-<p><span class="ntitle">Basis &amp; provenance flags.</span> &#8250; Rank 2: the company&rsquo;s label widened from &ldquo;EV charging&rdquo; (May-26, +80%) to &ldquo;Energy Transition revenue, including EV charging and Demand Flexibility&rdquo; (Jul-26, +120%) &mdash; not strictly like-for-like; flagged, not adjusted. &#8250; Rank 4: the Jul-26 c.13% group figure is printed without the explicit &ldquo;organic&rdquo; label Q1&rsquo;26 carried; treated as organic on the absence of any acquisition since CMD (Sep-24, now anniversaried), not on the company&rsquo;s wording. M&amp;A first-time inclusions: D-Line (Feb-24, &pound;7.8m) and CMD (Sep-24, &pound;29.7m) sit inside reported revenue from those dates &mdash; the LFL/organic row is the like-for-like read. Where a company &ldquo;c.&rdquo; estimate and a later audited figure disagree, the audited figure governs. The rightmost column (Q2 FY26) is the Buy/Sell column and is verified directly against the 28 Jul 2026 RNS. No restatements (&#691;) apply to any rendered column.</p>
-<p><span class="ntitle">Cell conventions.</span> &dagger; = derived &middot; &#8250; = basis flag &middot; &#10060; = withheld against cadence &middot; empty cells are unfilled grid slots (cadence information), never gaps.</p>
-</details>
 
+
+<details><summary>&sect;2 workings &mdash; card strip, rank notes, turn methodology</summary>
+<details><summary>&#128306; Card strip &mdash; wall preview &amp; index entry</summary>
+<div class="stripwrap"><table><tr><td class="rk"></td><td class="rk" style="width:26px;font-size:8.5px">Q2<br>24</td><td class="rk" style="width:26px;font-size:8.5px">Q3<br>24</td><td class="rk" style="width:26px;font-size:8.5px">Q4<br>24</td><td class="rk" style="width:26px;font-size:8.5px">Q1<br>25</td><td class="rk" style="width:26px;font-size:8.5px">Q2<br>25</td><td class="rk" style="width:26px;font-size:8.5px">Q3<br>25</td><td class="rk" style="width:26px;font-size:8.5px">Q4<br>25</td><td class="rk" style="width:26px;font-size:8.5px">Q1<br>26</td><td class="rk" style="width:26px;font-size:8.5px">Q2<br>26</td></tr><tr><td class="rk">R1</td><td class="sa"></td><td class="sa"></td><td class="sg"></td><td class="sa"></td><td class="sa"></td><td class="sg"></td><td class="sg"></td><td class="sg"></td><td class="sa bsc"></td></tr><tr><td class="rk">R2</td><td class="sn"></td><td class="sg"></td><td class="sg"></td><td class="sn"></td><td class="sg"></td><td class="sg"></td><td class="sg"></td><td class="sg"></td><td class="sg bsc"></td></tr><tr><td class="rk">R3</td><td class="sg"></td><td class="sa"></td><td class="sg"></td><td class="sg"></td><td class="sa"></td><td class="sg"></td><td class="sg"></td><td class="sg"></td><td class="sg bsc"></td></tr><tr><td class="rk">R4</td><td class="sg"></td><td class="sr"></td><td class="sg"></td><td class="sr"></td><td class="sr"></td><td class="sg"></td><td class="sr"></td><td class="sg"></td><td class="sg bsc"></td></tr><tr><td class="rk">R5</td><td class="sg"></td><td class="sn"></td><td class="sg"></td><td class="sn"></td><td class="sr"></td><td class="sn"></td><td class="sg"></td><td class="sn"></td><td class="sa bsc"></td></tr></table></div><div class="jsonbox">{"ticker": "LUCE", "company": "Luceco plc", "kind": "ticker", "direction": "up", "headline": "FY27 guided above consensus — but the FY26 upgrade run stops at a held >£40m as Demand Flexibility economics reset.", "trigger": "Green-shoot mirror: G RAISE on FY27 plus a first-ever H1 profit and margin quantification in a trading update.", "alert": true, "fired": 2, "fired_of": 3, "lights": "g-g", "rns_type": "H1 FY26 TU", "rns_date": "2026-07-28", "build_date": "2026-08-19", "spec_version": "v5.4", "next_test": "Half-year results 22 Sep 2026: post-reset revenue per charger quantified, and whether a permanent CEO has been named.", "url": "LUCE.html", "grid": {"labels": ["R1", "R2", "R3", "R4", "R5"], "periods": ["Q2 24", "Q3 24", "Q4 24", "Q1 25", "Q2 25", "Q3 25", "Q4 25", "Q1 26", "Q2 26"], "rows": ["aagaaggga", "-gg-ggggg", "gaggagggg", "grgrrgrgg", "g-g-r-g-a"], "note": "Rank scores at quarter grain, right-anchored on the H1 FY26 TU."}, "trend": {"mode": "share", "cells": "a--", "rows": [{"m": "REV", "gap": -0.4}, {"m": "EBITDA", "gap": null}, {"m": "PBT", "gap": null}]}}</div></details>
 <details>
 <summary>Notes &mdash; Ranks 1&ndash;5</summary>
 <p><span class="ntitle">Rank 1.</span> The four-print FY26 walk-up (&gt;cons &rarr; &gt;&pound;37m &rarr; &gt;&pound;40m) stops here: Jul-26 reiterates &gt;&pound;40m while company-compiled consensus has moved to &pound;40.7m (range &pound;40.2&ndash;41.0m) &mdash; the guide floor now sits <i>below</i> the market for the first time this cycle. The RAISE has migrated to FY27 (&gt; &pound;42.3m consensus).</p>
@@ -398,12 +541,21 @@
 <p><span class="ntitle">Rank 4.</span> Standing watch rule (a TU omitting organic % is an early amber) not triggered: Jul-26 quantifies core at c.6%. Basis flag &#8250;: the c.13% group figure is printed without the explicit &ldquo;organic&rdquo; label that Q1&rsquo;26 carried &mdash; treated as organic on the absence of any acquisition since CMD (Sep-24, now anniversaried), not on the company&rsquo;s wording.</p>
 <p><span class="ntitle">Rank 5.</span> H1&rsquo;26 11.1% vs H1&rsquo;25 11.0% = +0.1pp, inside the &plusmn;2.0pp band &rarr; &#128993;. The signal is the disclosure, not the level: margin and H1 AOP appear in an H1 <i>trading update</i> for the first time in the record &mdash; a disclosure expansion, baseline starts 28 Jul 2026.</p>
 </details>
+<details>
+<summary>Turn methodology &amp; restatement basis</summary>
+<p><span class="ntitle">Comparison bases.</span> Every &Delta; and arrow is computed in one script with the basis hard-coded per metric type: snapshot metrics (the FY guide) compare position-to-position at their own disclosure grain; flow metrics (Energy Transition revenue, quarterly revenue) compare like-period-to-like-period only (H1-vs-H1, never H1-vs-9M); rate metrics (LFL/organic %, margin) are seasonally matched &mdash; H1-vs-H1, FY-vs-FY, Q-vs-same-Q. Sequential QonQ fires &#128308;&#8600; on any negative quarter regardless of year-comparison (primary, Q-grain); the rate trigger is banded H-grain &plusmn;2.0pp / Q-grain &plusmn;5.0pp (secondary). Guides never fire the sequential/rate triggers &mdash; those are actuals-only.</p>
+<p><span class="ntitle">Derivations &amp; tie-outs.</span> Q2&rsquo;26&dagger; = H1 &pound;143m &minus; Q1 c&pound;68m = c&pound;75m; second route: vs Q2&rsquo;25&dagger; (&pound;125.7m &minus; &pound;61m = &pound;64.7m) = +15.9%, tying to the company&rsquo;s printed &ldquo;c.15%&rdquo; within rounding on two c. figures. Q4/H2&rsquo;25 AOP&dagger; = &pound;33.8m &minus; &pound;13.8m = &pound;20.0m, corroborated by the Q3&rsquo;25 print and FY narrative &mdash; watch-flag cleared. HonH (H2-vs-H1) is computed in script for reference: FY22 &minus;6.1%, FY23 +6.7%, FY24 +21.3%, FY25 +15.9% &mdash; retained here, never displayed in cells (H-grain metric on a Q-grain reporter). FY22 LFL &asymp;&minus;20%&dagger; is destocking-driven and transcription-grade only. <b>Q3/Q4 are not separable in &pound;:</b> Q3 TUs print growth percentages only, never a quarter or 9M revenue figure, so the quarter columns resolve to Q3 % and a derived H2&dagger; carrying the FY anchor. Solving the FY24 pair (Q3 +3.0%, 9M +6.4%) for Q3&rsquo;23 was attempted and rejected &mdash; with both inputs rounded to 0.1pp the answer ranges &pound;56.5&ndash;63.0m, too unstable to render. Q2&rsquo;22 is likewise unavailable: no Q1 2022 TU exists, so H1&rsquo;22 cannot be split.</p>
+<p><span class="ntitle">Basis &amp; provenance flags.</span> &#8250; Rank 2: the company&rsquo;s label widened from &ldquo;EV charging&rdquo; (May-26, +80%) to &ldquo;Energy Transition revenue, including EV charging and Demand Flexibility&rdquo; (Jul-26, +120%) &mdash; not strictly like-for-like; flagged, not adjusted. &#8250; Rank 4: the Jul-26 c.13% group figure is printed without the explicit &ldquo;organic&rdquo; label Q1&rsquo;26 carried; treated as organic on the absence of any acquisition since CMD (Sep-24, now anniversaried), not on the company&rsquo;s wording. M&amp;A first-time inclusions: D-Line (Feb-24, &pound;7.8m) and CMD (Sep-24, &pound;29.7m) sit inside reported revenue from those dates &mdash; the LFL/organic row is the like-for-like read. Where a company &ldquo;c.&rdquo; estimate and a later audited figure disagree, the audited figure governs. The rightmost column (Q2 FY26) is the Buy/Sell column and is verified directly against the 28 Jul 2026 RNS. No restatements (&#691;) apply to any rendered column.</p>
+<p><span class="ntitle">Cell conventions.</span> &dagger; = derived &middot; &#8250; = basis flag &middot; &#10060; = withheld against cadence &middot; empty cells are unfilled grid slots (cadence information), never gaps.</p>
+</details>
+</details>
 </section>
 
 <!-- ============ §2.0 ============ -->
 <section>
 <h2 class="sec">&sect;2.0 &middot; Most-recent-RNS current-state read &mdash; H1 FY26 TU (28 Jul 2026)</h2>
 
+<details><summary>&sect;2.0 workings &mdash; the four checks, notes, sweep, Trend Watch</summary>
 <details>
 <summary>The four checks &mdash; workings behind the read</summary>
 <table style="margin:8px 0 4px;">
@@ -457,6 +609,8 @@
 <p><span class="ntitle">Balance sheet.</span> Bank net debt &pound;69.6m vs &pound;68.0m H1&rsquo;25 &mdash; one period up with a disclosed cause (inventory build ahead of H2); leverage <i>fell</i> to 1.5x from 1.6x. No Tier-1 or Tier-2 fire; the 2-consecutive-rises clock starts here.</p>
 <p><span class="ntitle">Leadership.</span> CEO succession is unresolved inside the target window &mdash; &ldquo;advanced discussions&rdquo;, Chairman fronting the statement, John Hornby on sabbatical from late June to late August and retiring 31 Dec 2026 after 21 years (announced 15 Jun 2026, orderly, no adverse terms disclosed).</p>
 </details>
+<details><summary>Trend Watch workings</summary><table style="margin:6px 0"><thead><tr><th>Metric</th><th>Basis</th><th>Period actual</th><th>Norm (3yr H1 share)</th><th>FY1 fc</th><th>Gap</th><th>Ranked in &sect;2?</th></tr></thead><tbody><tr><td>REVENUE</td><td>reported</td><td>&pound;143m &mdash; H1 FY26 TU, 28 Jul 2026</td><td>46.63% &mdash; FY23 48.37 / FY24 45.20 / FY25 46.32, each H1 &divide; that year&rsquo;s printed FY</td><td>&pound;309.5m &mdash; weekly snapshot, 24 Jul 2026</td><td>&minus;0.42pp &rarr; amber</td><td>Y &mdash; ties to Rank 3</td></tr><tr><td>EBITDA</td><td>adjusted</td><td>n/a &mdash; not quantified in the TU</td><td>n/a</td><td>&pound;50.3m</td><td>n/a</td><td>N</td></tr><tr><td>PBT</td><td>adjusted</td><td>n/a &mdash; not quantified in the TU</td><td>n/a</td><td>&pound;35.4m</td><td>n/a</td><td>N</td></tr></tbody></table><p style="font-size:12px"><b>Forecast vintage &mdash; pre-announcement, by design.</b> The datablock&rsquo;s weekly snapshot carries a revenue forecast dated 24 July 2026, four days before the Buy/Sell RNS. That sits inside the &plusmn;14-day window and is the correct comparator: the panel measures the company against what was expected <i>before</i> the statement, not against forecasts that have already absorbed it. The block&rsquo;s own latest row (14 Aug, &pound;307.9m) is seventeen days after the RNS and is not used.</p><p style="font-size:12px"><b>What the brokers did next, for context only.</b> Revenue forecast &pound;309.5m on 24 Jul, &pound;310.6m on 31 Jul, &pound;307.9m on 14 Aug; FY1 EPS 17.4 &rarr; 17.5; target price 277p &rarr; 287p. Forecasts edged <i>up</i> across the statement despite the FY26 profit guide being held &mdash; the market read the H1 print and the FY27 raise as positive. This is a yardstick observation, fires nothing, and sits outside the 2-of-3 count.</p><p style="font-size:12px"><b>Norms come from printed history, never the block.</b> The block&rsquo;s own splits are corrupt on this ticker exactly as the framework warns &mdash; it prints H2 EBITDA as &minus;18.3 against H1 18.3, the negated half. Every norm above is computed from the company&rsquo;s own H1 and FY prints.</p><p style="font-size:12px"><b>Why two rows are n/a.</b> The 28 Jul TU quantifies revenue, Adjusted Operating Profit, margin and net debt &mdash; but no EBITDA and no PBT. Carrying an H1 FY25 figure forward against an FY26 forecast would cross years, so both render n/a rather than an approximation. The AOP consensus the RNS does print (&pound;40.7m FY26, &pound;42.3m FY27) is not one of the three fixed Trend Watch lines; it is already carried by Rank 1 and the G column.</p><p style="font-size:12px"><b>Bank Net Debt:EBITDA of 1.5x against &pound;69.6m implies trailing EBITDA near &pound;46m,</b> but that is a rolling twelve-month figure, not a half, so it cannot serve as a share-mode numerator. Noted, not used.</p></details>
+</details>
 </section>
 
 <!-- ============ §3 TEXT + G ============ -->
@@ -464,38 +618,43 @@
 <h2 class="sec">&sect;3 &middot; Text + G &mdash; Language Track</h2>
 <div id="text3">
 <table>
-<thead><tr><th style="width:78px">Date</th><th style="width:78px">Doc</th><th style="width:70px">G</th><th style="width:230px">Guide met?</th><th>Verbatim forward-guidance phrase</th><th style="width:64px">Score</th></tr></thead>
+<thead><tr><th style="width:78px">Date</th><th style="width:78px">Doc</th><th style="width:80px">G</th><th>Verbatim forward-guidance passage</th><th style="width:64px">Score</th></tr></thead>
 <tbody>
-<tr><td>Jul-22</td><td class="doc" data-rt="H1TU"><span class="fy">FY22</span><span class="dt">H1 TU</span></td><td>&mdash;</td><td class="gm">&mdash;</td><td class="quote">&ldquo;would leave 2022 Adjusted Operating Profit at the bottom end of current analyst expectations&rdquo;</td><td class="r">&#128308;</td></tr>
-<tr class="changed"><td>Sep-22</td><td class="doc" data-rt="H1R"><span class="fy">FY22</span><span class="dt">H1 R</span></td><td>flat</td><td class="gm">&mdash;</td><td class="quote">&ldquo;expect to make more profit in the second half than the first&rdquo;</td><td>&#9898;</td></tr>
-<tr><td>Oct-22</td><td class="doc" data-rt="Q3TU"><span class="fy">FY22</span><span class="dt">Q3 TU</span></td><td>flat</td><td class="gm">&mdash;</td><td class="quote">&ldquo;we now expect 2022 Adjusted Operating Profit to be in the range of &pound;20-22m&rdquo;</td><td>&#9898;</td></tr>
-<tr class="changed"><td>Jan-23</td><td class="doc" data-rt="FYTU"><span class="fy">FY22</span><span class="dt">YE-TU</span></td><td class="g">&#128994;</td><td class="gm">&mdash;</td><td class="quote">&ldquo;at the upper end of the previously guided range of &pound;20-22m&rdquo;</td><td class="g">&#128994;</td></tr>
-<tr class="changed"><td>Mar-23</td><td class="doc" data-rt="FYR"><span class="fy">FY22</span><span class="dt">R</span></td><td>flat</td><td class="gm"><span class="met">Actual FY22 AOP &pound;22.0m &mdash;<br>Oct-22 &pound;20&ndash;22m: +4.8% vs mid (met, top)<br>Jan-23 upper end: 0% (met)</span></td><td class="quote">&ldquo;Trading in early 2023 has been in line with our expectations, with tailwinds from reduced customer destocking&rdquo;</td><td>&#9898;</td></tr>
-<tr><td>May-23</td><td class="doc" data-rt="Q1TU"><span class="fy">FY23</span><span class="dt">Q1 TU</span></td><td>flat</td><td class="gm">&mdash;</td><td class="quote">&ldquo;in line with expectations&hellip; comparatives get easier as the year progresses&rdquo;</td><td>&#9898;</td></tr>
-<tr class="changed"><td>Jul-23</td><td class="doc" data-rt="H1TU"><span class="fy">FY23</span><span class="dt">H1 TU</span></td><td>flat</td><td class="gm">&mdash;</td><td class="quote">&ldquo;ended H1 2023 ahead of our expectations&rdquo;</td><td class="g">&#128994;</td></tr>
-<tr><td>Sep-23</td><td class="doc" data-rt="H1R"><span class="fy">FY23</span><span class="dt">H1 R</span></td><td>flat</td><td class="gm">&mdash;</td><td class="quote">&ldquo;slightly ahead&hellip; Historically the Group has enjoyed a stronger second half&hellip; we expect a similar trend&rdquo;</td><td class="g">&#128994;</td></tr>
-<tr class="changed"><td>Nov-23</td><td class="doc" data-rt="Q3TU"><span class="fy">FY23</span><span class="dt">Q3 TU</span></td><td>flat</td><td class="gm">&mdash;</td><td class="quote">&ldquo;in line with expectations&hellip; Full year guidance unchanged&rdquo;</td><td>&#9898;</td></tr>
-<tr class="changed"><td>Jan-24</td><td class="doc" data-rt="FYTU"><span class="fy">FY23</span><span class="dt">YE-TU</span></td><td class="g">&#128994;</td><td class="gm">&mdash;</td><td class="quote">&ldquo;Adjusted Operating Profit in the region of &pound;23.5m - &pound;24m, ahead of expectations&rdquo;</td><td class="g">&#128994;&#128994;</td></tr>
-<tr class="changed"><td>Mar-24</td><td class="doc" data-rt="FYR"><span class="fy">FY23</span><span class="dt">R</span></td><td class="g">&#128994;</td><td class="gm"><span class="met">Actual FY23 AOP &pound;24.0m &mdash;<br>2023 verbal &ldquo;in line/ahead&rdquo;: met<br>Jan-24 &pound;23.5&ndash;24m: +1.1% vs mid (met, top)</span></td><td class="quote">&ldquo;at the upper end of market expectations&rdquo;</td><td class="g">&#128994;</td></tr>
-<tr class="changed"><td>May-24</td><td class="doc" data-rt="Q1TU"><span class="fy">FY24</span><span class="dt">Q1 TU</span></td><td>flat</td><td class="gm">&mdash;</td><td class="quote">&ldquo;trading comfortably in line with expectations&rdquo;</td><td>&#9898;</td></tr>
-<tr><td>Jul-24</td><td class="doc" data-rt="H1TU"><span class="fy">FY24</span><span class="dt">H1 TU</span></td><td>flat</td><td class="gm">&mdash;</td><td class="quote">&ldquo;Full year expectations unchanged&rdquo;</td><td>&#9898;</td></tr>
-<tr><td>Sep-24</td><td class="doc" data-rt="H1R"><span class="fy">FY24</span><span class="dt">H1 R</span></td><td>flat</td><td class="gm">&mdash;</td><td class="quote">&ldquo;continues to perform in line with full year expectations&rdquo;</td><td>&#9898;</td></tr>
-<tr class="changed"><td>Oct-24</td><td class="doc" data-rt="Q3TU"><span class="fy">FY24</span><span class="dt">Q3 TU</span></td><td>flat</td><td class="gm">&mdash;</td><td class="quote">&ldquo;Q3 2024 revenue was down 3.6%&hellip; strong fourth quarter order book supports like-for-like revenue growth&hellip; for the second half&rdquo;</td><td class="r">&#128308;</td></tr>
-<tr class="changed"><td>Jan-25</td><td class="doc" data-rt="FYTU"><span class="fy">FY24</span><span class="dt">YE-TU</span></td><td class="g">&#128994;</td><td class="gm">&mdash;</td><td class="quote">&ldquo;ahead of market expectations&hellip; Adjusted Operating Profit in the region of &pound;28.5m - &pound;29.0m&rdquo;</td><td class="g">&#128994;</td></tr>
-<tr><td>Mar-25</td><td class="doc" data-rt="FYR"><span class="fy">FY24</span><span class="dt">R</span></td><td class="g">&#128994;</td><td class="gm"><span class="met">Actual FY24 AOP &pound;29.0m &mdash;<br>2024 verbal &ldquo;in line&rdquo;: met<br>Jan-25 &pound;28.5&ndash;29.0m: +0.9% vs mid (met, top)</span></td><td class="quote">&ldquo;at the upper end of revised expectations&rdquo;</td><td class="g">&#128994;</td></tr>
-<tr class="changed"><td>May-25</td><td class="doc" data-rt="Q1TU"><span class="fy">FY25</span><span class="dt">Q1 TU</span></td><td>flat</td><td class="gm">&mdash;</td><td class="quote">&ldquo;full year expectations remain unchanged&rdquo;</td><td>&#9898;</td></tr>
-<tr><td>Jul-25</td><td class="doc" data-rt="H1TU"><span class="fy">FY25</span><span class="dt">H1 TU</span></td><td>flat</td><td class="gm">&mdash;</td><td class="quote">&ldquo;full year expectations remain unchanged&rdquo;</td><td>&#9898;</td></tr>
-<tr><td>Sep-25</td><td class="doc" data-rt="H1R"><span class="fy">FY25</span><span class="dt">H1 R</span></td><td>flat</td><td class="gm">&mdash;</td><td class="quote">&ldquo;firmly on track to deliver full year expectations with a strong order book entering H2&rdquo;</td><td>&#9898;</td></tr>
-<tr class="changed"><td>Nov-25</td><td class="doc" data-rt="Q3TU"><span class="fy">FY25</span><span class="dt">Q3 TU</span></td><td class="g">&#128994;</td><td class="gm">&mdash;</td><td class="quote">&ldquo;full-year adjusted operating profit is now expected to be towards the upper end of market expectations&rdquo;</td><td class="g">&#128994;</td></tr>
-<tr class="changed"><td>Jan-26</td><td class="doc" data-rt="FYTU"><span class="fy">FY25</span><span class="dt">YE-TU</span></td><td class="g">&#128994;</td><td class="gm">&mdash;</td><td class="quote">&ldquo;increasing its revenue and Adjusted Operating Profit expectations for 2026 to comfortably exceed current market consensus&rdquo;</td><td class="g">&#128994;&#128994;</td></tr>
-<tr><td>Mar-26</td><td class="doc" data-rt="FYR"><span class="fy">FY25</span><span class="dt">R</span></td><td class="g">&#128994;</td><td class="gm"><span class="met">Actual FY25 AOP &pound;33.8m &mdash;<br>2025 verbal &ldquo;in line/on track&rdquo;: met<br>Nov-25 upper end: met<br>Jan-26 &ge;&pound;33.5m: +0.9% (met/beat)</span></td><td class="quote">&ldquo;The Board now expects Adjusted Operating Profit for 2026 to exceed &pound;37m&rdquo;</td><td class="g">&#128994;&#128994;</td></tr>
-<tr class="changed"><td>May-26</td><td class="doc" data-rt="Q1TU"><span class="fy">FY26</span><span class="dt">Q1 TU</span></td><td class="g">&#128994; RAISE</td><td class="gm">&mdash;</td><td class="quote">&ldquo;expectations for full-year 2026 Adjusted Operating Profit now exceed &pound;40m, with the potential for further significant outperformance dependent on Demand Flexibility&rdquo;</td><td class="g">&#128994;&#128994;</td></tr>
-<tr><td>Jun-26</td><td class="doc" data-rt="TRAN"><span class="fy">FY26</span><span class="dt">CEO RNS</span></td><td>flat</td><td class="gm">&mdash;</td><td class="quote">&ldquo;the Board continues to expect Adjusted Operating Profit to exceed &pound;40m, with the potential for further significant outperformance dependent on Demand Flexibility&rdquo;</td><td>&#9898;</td></tr>
-<tr class="changed"><td><b>Jul-26</b></td><td class="doc" data-rt="H1TU"><span class="fy"><b>FY26</b></span><span class="dt"><b>H1 TU</b></span></td><td class="g"><b>&#128994; RAISE</b><br><span class="mut" style="font-weight:400">(FY27; FY26 flat)</span></td><td class="gm">&mdash; (live: FY26 &gt;&pound;40m, reiterated Jun-26 &amp; Jul-26 &mdash; resolves at FY26 R; FY27 &gt;&pound;42.3m cons &mdash; resolves at FY27 R)</td><td class="quote"><b>&ldquo;the Board continues to expect Adjusted Operating Profit for 2026 to exceed &pound;40m&hellip; the Board expects Adjusted Operating Profit for 2027 to exceed current market expectations, with the potential for further significant outperformance dependent on Demand Flexibility&rdquo;</b></td><td class="g"><b>&#128994;</b></td></tr>
+<tr class="expander" onclick="document.getElementById('text3').classList.toggle('showall');this.querySelector('td').innerHTML=document.getElementById('text3').classList.contains('showall')?'&#9662; Hide 16 earlier prints &mdash; Jul-22 to Jan-25':'&#9656; Show 16 earlier prints &mdash; Jul-22 to Jan-25';"><td colspan="5">&#9656; Show 16 earlier prints &mdash; Jul-22 to Jan-25</td></tr>
+<tr class="older"><td>Jul-22</td><td class="doc" data-rt="H1TU"><span class="fy">FY22</span><span class="dt">H1 TU</span></td><td>&mdash;</td><td class="quote">&ldquo;A continued slowdown in consumer demand at rates similar to that experienced to date, combined with broadly stable professional demand, would leave 2022 Adjusted Operating Profit at the bottom end of current analyst expectations.&rdquo;</td><td class="r">&#128308;</td></tr>
+<tr class="older changed"><td>Sep-22</td><td class="doc" data-rt="H1R"><span class="fy">FY22</span><span class="dt">H1 R</span></td><td>flat</td><td class="quote">&ldquo;Despite the market slowdown, we expect to make more profit in the second half than the first, helped by an improving gross margin and an increasing contribution from EV chargers, plus some seasonality benefits.&rdquo;</td><td>&#9898;</td></tr>
+<tr class="older"><td>Oct-22</td><td class="doc" data-rt="Q3TU"><span class="fy">FY22</span><span class="dt">Q3 TU</span></td><td>flat</td><td class="quote">&ldquo;The Group has traded in line with expectations in Q3 2022 and generated strong cash flow. However, our order book now suggests our distributor customers will destock faster in Q4 than we originally expected, resulting in Adjusted Operating Profit for 2022 in the range of &pound;20-22m, below previous estimates.&rdquo;</td><td>&#9898;</td></tr>
+<tr class="older changed"><td>Jan-23</td><td class="doc" data-rt="FYTU"><span class="fy">FY22</span><span class="dt">YE-TU</span></td><td class="g">&#128994;</td><td class="quote">&ldquo;It confirms that it expects to report Adjusted Operating Profit at the upper end of the previously guided range of &pound;20-22m, with record cash generation.&rdquo;</td><td class="g">&#128994;</td></tr>
+<tr class="older changed"><td>Mar-23</td><td class="doc" data-rt="FYR"><span class="fy">FY22</span><span class="dt">R</span></td><td>flat</td><td class="quote">&ldquo;Trading in early 2023 has been in line with our expectations, with tailwinds from reduced customer destocking, improved gross margin and lower input costs balancing less residential RMI activity.&rdquo;</td><td>&#9898;</td></tr>
+<tr class="older"><td>May-23</td><td class="doc" data-rt="Q1TU"><span class="fy">FY23</span><span class="dt">Q1 TU</span></td><td>flat</td><td class="quote">&ldquo;Trading in the first quarter of 2023 has been in line with our expectations. Macroeconomic conditions remain difficult to judge, with leading indicators continuing to suggest residential RMI markets will remain challenging &hellip; The comparatives get easier as the year progresses.&rdquo;</td><td>&#9898;</td></tr>
+<tr class="older changed"><td>Jul-23</td><td class="doc" data-rt="H1TU"><span class="fy">FY23</span><span class="dt">H1 TU</span></td><td>flat</td><td class="quote">&ldquo;The Group ended H1 2023 ahead of our expectations with revenue of c.&pound;101m, c.5.0% lower than H1 2022 and c.5.7% lower on a like-for-like basis, as the current economic environment reduces residential RMI spending.&rdquo;</td><td class="g">&#128994;</td></tr>
+<tr class="older"><td>Sep-23</td><td class="doc" data-rt="H1R"><span class="fy">FY23</span><span class="dt">H1 R</span></td><td>flat</td><td class="quote">&ldquo;Historically the Group has enjoyed a stronger second half and, whilst we are mindful of the current economic environment, we expect a similar trend this year.&rdquo;</td><td class="g">&#128994;</td></tr>
+<tr class="older changed"><td>Nov-23</td><td class="doc" data-rt="Q3TU"><span class="fy">FY23</span><span class="dt">Q3 TU</span></td><td>flat</td><td class="quote">&ldquo;Encouraging Q3 2023 performance despite continuing economic headwinds. Full year guidance unchanged.&rdquo;</td><td>&#9898;</td></tr>
+<tr class="older changed"><td>Jan-24</td><td class="doc" data-rt="FYTU"><span class="fy">FY23</span><span class="dt">YE-TU</span></td><td class="g">&#128994;</td><td class="quote">&ldquo;The Group expects to report full year 2023 revenue of c.&pound;209m and Adjusted Operating Profit in the region of &pound;23.5m - &pound;24m, ahead of expectations and shows good progress over 2022 despite the challenging economic conditions.&rdquo;</td><td class="g">&#128994;&#128994;</td></tr>
+<tr class="older changed"><td>Mar-24</td><td class="doc" data-rt="FYR"><span class="fy">FY23</span><span class="dt">R</span></td><td class="g">&#128994;</td><td class="quote">&ldquo;2023 results at the upper end of market expectations &hellip; Whilst we remain mindful of the uncertain macroeconomic environment and the potential impact it may have on our markets in 2024, the outlook for the current financial year remains unchanged thanks to our attractive market positions, strong business model and robust strategy.&rdquo;</td><td class="g">&#128994;</td></tr>
+<tr class="older changed"><td>May-24</td><td class="doc" data-rt="Q1TU"><span class="fy">FY24</span><span class="dt">Q1 TU</span></td><td>flat</td><td class="quote">&ldquo;The Group is encouraged by the strong start to the year and is performing comfortably in line with market expectations.&rdquo;</td><td>&#9898;</td></tr>
+<tr class="older"><td>Jul-24</td><td class="doc" data-rt="H1TU"><span class="fy">FY24</span><span class="dt">H1 TU</span></td><td>flat</td><td class="quote">&ldquo;The Board is encouraged by the strong start to the year with performance expectations for the full year in line with market expectations &hellip; Key industry metrics remain weak, however, we remain confident that growth in our core markets will return in the not too distant future.&rdquo;</td><td>&#9898;</td></tr>
+<tr class="older"><td>Sep-24</td><td class="doc" data-rt="H1R"><span class="fy">FY24</span><span class="dt">H1 R</span></td><td>flat</td><td class="quote">&ldquo;The Group continues to perform in line with full year expectations. With UK interest rates easing we are hopeful that confidence in our sectors of the economy will begin to return, providing reasons to be more optimistic for 2025 and beyond.&rdquo;</td><td>&#9898;</td></tr>
+<tr class="older changed"><td>Oct-24</td><td class="doc" data-rt="Q3TU"><span class="fy">FY24</span><span class="dt">Q3 TU</span></td><td>flat</td><td class="quote">&ldquo;Q3 2024 revenue was down 3.6% &hellip; However, strong fourth quarter order book supports like-for-like revenue growth expectations for the second half.&rdquo;</td><td class="r">&#128308;</td></tr>
+<tr class="older changed"><td>Jan-25</td><td class="doc" data-rt="FYTU"><span class="fy">FY24</span><span class="dt">YE-TU</span></td><td class="g">&#128994;</td><td class="quote">&ldquo;The Group expects to report a full year 2024 performance ahead of market expectations, with revenue in the region of &pound;240m (2023: &pound;209m) and Adjusted Operating Profit in the region of &pound;28.5m - &pound;29.0m (2023: &pound;24.0m).&rdquo;</td><td class="g">&#128994;</td></tr>
+<tr><td>Mar-25</td><td class="doc" data-rt="FYR"><span class="fy">FY24</span><span class="dt">R</span></td><td class="g">&#128994;</td><td class="quote">&ldquo;Results at the upper end of revised expectations, with strong demand in the final quarter of 2024. Early trading in Q1 gives confidence for further growth in 2025 &hellip; 2025 has started well, with the strong momentum at the end of 2024 continuing in the first quarter of the year.&rdquo;</td><td class="g">&#128994;</td></tr>
+<tr class="changed"><td>May-25</td><td class="doc" data-rt="Q1TU"><span class="fy">FY25</span><span class="dt">Q1 TU</span></td><td>flat</td><td class="quote">&ldquo;The evolving macro environment suggests we should maintain our cautious stance, and accordingly the Board&rsquo;s full year expectations remain unchanged.&rdquo;</td><td>&#9898;</td></tr>
+<tr><td>Jul-25</td><td class="doc" data-rt="H1TU"><span class="fy">FY25</span><span class="dt">H1 TU</span></td><td>flat</td><td class="quote">&ldquo;The Board&rsquo;s full year expectations remain unchanged, underpinned by the strength of Luceco&rsquo;s market position, manufacturing capability and cash generative business model.&rdquo;</td><td>&#9898;</td></tr>
+<tr><td>Sep-25</td><td class="doc" data-rt="H1R"><span class="fy">FY25</span><span class="dt">H1 R</span></td><td>flat</td><td class="quote">&ldquo;The Group remains firmly on track to deliver full year expectations with a strong order book entering H2. Encouraging acceleration of revenue from quarter one to quarter two with quarter one like-for-like growth of 0.6% and quarter two like-for-like growth accelerating to 3.2%.&rdquo;</td><td>&#9898;</td></tr>
+<tr class="changed"><td>Nov-25</td><td class="doc" data-rt="Q3TU"><span class="fy">FY25</span><span class="dt">Q3 TU</span></td><td class="g">&#128994;</td><td class="quote">&ldquo;Full year profitability now expected to be towards the upper end of market expectations: revenue growth achieved in the year-to-date, combined with a strong order book for Q4.&rdquo;</td><td class="g">&#128994;</td></tr>
+<tr class="changed"><td>Jan-26</td><td class="doc" data-rt="FYTU"><span class="fy">FY25</span><span class="dt">YE-TU</span></td><td class="g">&#128994;</td><td class="quote">&ldquo;Adjusted Operating Profit expected to be at least &pound;33.5m, representing an increase of approximately 15% over the prior year (2024: &pound;29.0m), and ahead of the top end of market expectations &hellip; The Board is increasing its revenue and Adjusted Operating Profit expectations for 2026 to comfortably exceed current market consensus.&rdquo;</td><td class="g">&#128994;&#128994;</td></tr>
+<tr><td>Mar-26</td><td class="doc" data-rt="FYR"><span class="fy">FY25</span><span class="dt">R</span></td><td class="g">&#128994;</td><td class="quote">&ldquo;We have a large installed base of chargers, more than 10,000 of which are generating this revenue today, and there is significant potential upside to profit as more are enrolled, subject to an evolving regulatory framework and uncertain end-user response rates. The Board now expects Adjusted Operating Profit for 2026 to exceed &pound;37m, with the potential for further significant outperformance dependent on Demand Flexibility.&rdquo;</td><td class="g">&#128994;&#128994;</td></tr>
+<tr class="changed"><td>May-26</td><td class="doc" data-rt="Q1TU"><span class="fy">FY26</span><span class="dt">Q1 TU</span></td><td class="g">&#128994; RAISE</td><td class="quote">&ldquo;While the Board remains mindful of the broader economic backdrop, including the impact of the conflict in the Middle East, the strength of Q1 trading and sustained Energy Transition momentum mean expectations for full-year 2026 Adjusted Operating Profit now exceed &pound;40m, with the potential for further significant outperformance dependent on Demand Flexibility.&rdquo;</td><td class="g">&#128994;&#128994;</td></tr>
+<tr><td>Jun-26</td><td class="doc" data-rt="TRAN"><span class="fy">FY26</span><span class="dt">CEO RNS</span></td><td>flat</td><td class="quote">&ldquo;The trading momentum described in the Group&rsquo;s Q1 Trading Update published on 19 May 2026 has been sustained through Q2-to-date. The outlook for the year ending December 2026 remains consistent with the commentary provided in that announcement and accordingly, the Board continues to expect Adjusted Operating Profit to exceed &pound;40m, with the potential for further significant outperformance dependent on Demand Flexibility.&rdquo;</td><td>&#9898;</td></tr>
+<tr class="changed"><td><b>&#11088; Jul-26</b></td><td class="doc" data-rt="H1TU"><span class="fy"><b>FY26</b></span><span class="dt"><b>H1 TU</b></span></td><td class="g">&#128994; RAISE<br><span class="mut" style="font-weight:400">(FY27; FY26 flat)</span></td><td class="quote"><b>&ldquo;As expected, changes to the regulated mechanics of Demand Flexibility have begun to crystallise, and are expected to reduce recurring revenue per EV charger towards a more sustainable level early in the second half. Such changes are consistent with the Board&rsquo;s expectations and, as a result, the Board continues to expect Adjusted Operating Profit for 2026 to exceed &pound;40m &hellip; the Board expects Adjusted Operating Profit for 2027 to exceed current market expectations, with the potential for further significant outperformance dependent on Demand Flexibility.&rdquo;</b></td><td class="g"><b>&#128994;</b></td></tr>
 </tbody>
 </table>
 </div>
-<p class="mut" style="font-size:12.5px;margin-top:8px;"><b>G-vs-outturn credibility (Guide-met trail).</b> Every guide resolves against the delivered actual at the FY Results row &mdash; denominator always the final actual. The trail reads conservative/reliable: every range resolved at its top, misses &asymp;0&ndash;5% and all in the beat direction, no revenue-hit / profit-miss divergence anywhere (FY22 &pound;22.0m; FY23 &pound;24.0m; FY24 &pound;29.0m; FY25 &pound;33.8m). LUCE is a serial guide-beater, so RAISEs carry a positive discount. <b>Caveat now on the record:</b> the May-26 conditional clause &mdash; &ldquo;significant outperformance dependent on Demand Flexibility&rdquo; &mdash; resolved for FY26 as a <i>failed condition</i>: the regulated mechanics reset, the clause was dropped from FY26 and re-attached verbatim to FY27 at the Jul-26 TU. Conditional upside clauses in this ticker&rsquo;s language should be scored separately from the numeric floor, which has never yet failed.</p>
+<details><summary>&sect;3 workings &mdash; notes and guidance passages</summary>
+<details><summary>Notes, &sect;3 &mdash; guide-vs-outturn credibility</summary><p class="mut" style="font-size:12.5px;margin-top:8px;"><b>G-vs-outturn credibility (Guide-met trail).</b> Every guide resolves against the delivered actual at the FY Results row &mdash; denominator always the final actual. The trail reads conservative/reliable: every range resolved at its top, misses &asymp;0&ndash;5% and all in the beat direction, no revenue-hit / profit-miss divergence anywhere (FY22 &pound;22.0m; FY23 &pound;24.0m; FY24 &pound;29.0m; FY25 &pound;33.8m). LUCE is a serial guide-beater, so RAISEs carry a positive discount. <b>Caveat now on the record:</b> the May-26 conditional clause &mdash; &ldquo;significant outperformance dependent on Demand Flexibility&rdquo; &mdash; resolved for FY26 as a <i>failed condition</i>: the regulated mechanics reset, the clause was dropped from FY26 and re-attached verbatim to FY27 at the Jul-26 TU. Conditional upside clauses in this ticker&rsquo;s language should be scored separately from the numeric floor, which has never yet failed.</p></details>
+<details><summary>Guide-met trail &mdash; stored for future use (removed from the visible table)</summary><p style="font-size:12px">Every numeric guide resolved against the delivered actual at the FY Results row. Denominator is always the final audited figure. Retained here so an incremental read can re-attach it; not rendered in &sect;3 by operator decision.</p><table style="margin:6px 0;font-size:11.5px"><thead><tr><th>Resolved at</th><th>Actual</th><th>Guides in force</th><th>Outcome</th></tr></thead><tbody><tr><td>Mar-23 (FY22 R)</td><td>AOP &pound;22.0m</td><td>Oct-22 &pound;20&ndash;22m &middot; Jan-23 &ldquo;upper end&rdquo;</td><td>+4.8% vs midpoint, top of range &mdash; met</td></tr><tr><td>Mar-24 (FY23 R)</td><td>AOP &pound;24.0m</td><td>2023 verbal in line / ahead &middot; Jan-24 &pound;23.5&ndash;24m</td><td>+1.1% vs midpoint, top of range &mdash; met</td></tr><tr><td>Mar-25 (FY24 R)</td><td>AOP &pound;29.0m</td><td>2024 verbal in line &middot; Jan-25 &pound;28.5&ndash;29.0m</td><td>+0.9% vs midpoint, top of range &mdash; met</td></tr><tr><td>Mar-26 (FY25 R)</td><td>AOP &pound;33.8m</td><td>2025 verbal in line / on track &middot; Nov-25 upper end &middot; Jan-26 &ge;&pound;33.5m</td><td>+0.9% vs floor &mdash; met / beat</td></tr><tr><td><i>open</i> (FY26 R, due Mar-27)</td><td>&mdash;</td><td>Jan-26 &gt;consensus &middot; Mar-26 &gt;&pound;37m &middot; May/Jun/Jul-26 &gt;&pound;40m</td><td>resolves at FY26 R; May-26 &ldquo;significant outperformance dependent on DF&rdquo; clause already resolved as a <b>failed condition</b> for FY26, re-attached to FY27</td></tr><tr><td><i>open</i> (FY27 R, due Mar-28)</td><td>&mdash;</td><td>Jul-26 &gt;&pound;42.3m consensus</td><td>resolves at FY27 R</td></tr></tbody></table><p style="font-size:12px">Trail read: conservative and reliable &mdash; every range resolved at its top, misses &asymp;0&ndash;5% and all in the beat direction, no revenue-hit / profit-miss divergence anywhere. Numeric floors have never failed; the one conditional upside clause has. Score the two separately.</p></details>
+<details><summary>Guidance passages &mdash; fuller verbatim, trailing 12 months</summary><p style="font-size:12px"><b>H1 FY26 TU &mdash; 28 Jul 2026, Outlook.</b> &ldquo;As expected, changes to the regulated mechanics of Demand Flexibility have begun to crystallise, and are expected to reduce recurring revenue per EV charger towards a more sustainable level early in the second half. Such changes are consistent with the Board&rsquo;s expectations and, as a result, the Board continues to expect Adjusted Operating Profit for 2026 to exceed &pound;40m.&rdquo; Footnote: company-compiled consensus as at 27 July 2026 &mdash; 2026 &pound;40.7m (range &pound;40.2&ndash;41.0m); 2027 &pound;42.3m (range &pound;41.7&ndash;42.9m).</p><p style="font-size:12px"><b>H1 FY26 TU &mdash; 28 Jul 2026, FY27.</b> &ldquo;With further clarity around the economics of Demand Flexibility, the benefit of continued operational efficiency gains in the UK and while remaining mindful of the broader economic backdrop, the Board expects Adjusted Operating Profit for 2027 to exceed current market expectations, with the potential for further significant outperformance dependent on Demand Flexibility.&rdquo;</p><p style="font-size:12px"><b>CEO retirement RNS &mdash; 15 Jun 2026.</b> &ldquo;The trading momentum described in the Group&rsquo;s Q1 Trading Update published on 19 May 2026 has been sustained through Q2-to-date. The outlook for the year ending December 2026 remains consistent with the commentary provided in that announcement and accordingly, the Board continues to expect Adjusted Operating Profit to exceed &pound;40m, with the potential for further significant outperformance dependent on Demand Flexibility.&rdquo;</p><p style="font-size:12px"><b>Q1 FY26 TU &mdash; 19 May 2026.</b> &ldquo;While the Board remains mindful of the broader economic backdrop, including the impact of the conflict in the Middle East, the strength of Q1 trading and sustained Energy Transition momentum mean expectations for full-year 2026 Adjusted Operating Profit now exceed &pound;40m, with the potential for further significant outperformance dependent on Demand Flexibility.&rdquo;</p><p style="font-size:12px"><b>FY25 Results &mdash; 25 Mar 2026.</b> &ldquo;The Board now expects Adjusted Operating Profit for 2026 to exceed &pound;37m.&rdquo; Delivered FY25 Adjusted Operating Profit &pound;33.8m against the Jan-26 guide of at least &pound;33.5m.</p><p style="font-size:12px"><b>FY25 YE-TU &mdash; 29 Jan 2026.</b> &ldquo;increasing its revenue and Adjusted Operating Profit expectations for 2026 to comfortably exceed current market consensus.&rdquo;</p><p style="font-size:12px"><em>Observed absence: the 15 Jun 2026 CEO retirement RNS carries a full outlook reiteration but no revenue figure and no Energy Transition quantification anywhere in the document.</em></p></details>
+</details>
 </section>
 
 <!-- ============ §4 DRIFT ============ -->
@@ -524,9 +683,7 @@
 </table>
 </div>
 <p class="key">Key: &#9989; quantified &middot; &#128993; qualitative-only &middot; &#10060; withheld against cadence &middot; &#8856; update not issued &middot; &mdash; structurally outside that doc-type&rsquo;s cadence. Period-type: Q1TU &middot; H1TU &middot; H1R &middot; Q3TU &middot; FYTU &middot; FYR &middot; AGM &middot; TRAN (one-off outlook-carrying RNS).</p>
-<details>
-<summary>Notes</summary>
-<p><span class="ntitle">Latest column (Jul-26 H1 TU).</span> One newly-qualitative cell and one disclosure expansion: enrolled chargers drop from &#9989;&nbsp;&gt;18,000 (May-26) to &#128993; in the very print where DF per-charger economics reset &mdash; coded &#128993; not &#10060; because two prints across two doc-types is not established cadence at H1 TU grain, but it is the freshest disclosure signal on the sheet and a named watch item for 22 Sep; offsetting it, Adjusted Operating Margin (and H1 AOP) are quantified in an H1 trading update for the first time in the record &mdash; a disclosure expansion with no history, baseline starts 28 Jul 2026.</p>
+<details><summary>&sect;4 workings &mdash; notes</summary><p><span class="ntitle">Latest column (Jul-26 H1 TU).</span> One newly-qualitative cell and one disclosure expansion: enrolled chargers drop from &#9989;&nbsp;&gt;18,000 (May-26) to &#128993; in the very print where DF per-charger economics reset &mdash; coded &#128993; not &#10060; because two prints across two doc-types is not established cadence at H1 TU grain, but it is the freshest disclosure signal on the sheet and a named watch item for 22 Sep; offsetting it, Adjusted Operating Margin (and H1 AOP) are quantified in an H1 trading update for the first time in the record &mdash; a disclosure expansion with no history, baseline starts 28 Jul 2026.</p>
 </details>
 </section>
 </div>
@@ -589,14 +746,21 @@
         t3.querySelectorAll('.rowhi').forEach(function(c){c.classList.remove('rowhi');});
         if(clear){active3=null;return;}
         active3=rt;
+        var hitHidden=false;
         t3.querySelectorAll('td.doc[data-rt="'+rt+'"]').forEach(function(d){
+          if(d.parentNode.classList.contains('older'))hitHidden=true;
           Array.prototype.forEach.call(d.parentNode.children,function(c){c.classList.add('rowhi');});
         });
+        if(hitHidden&&!t3.classList.contains('showall')){
+          t3.classList.add('showall');
+          var ex=t3.querySelector('tr.expander td');
+          if(ex)ex.innerHTML='&#9662; Hide 16 earlier prints &mdash; Jul-22 to Jan-25';
+        }
       });
     });
   }
 })();
 </script>
-<script type="application/json" id="drift-entry">{"ticker": "LUCE", "company": "Luceco plc", "direction": "up", "headline": "FY27 guided above consensus — but the FY26 upgrade run stops at a held >£40m as Demand Flexibility economics reset.", "trigger": "green-shoot 2-of-3: G RAISE (FY27) + disclosure expansion (H1 AOP & margin new to a TU)", "alert": true, "rns_type": "H1 FY26 TU", "rns_date": "2026-07-28", "build_date": "2026-07-31", "spec_version": "v4.0", "next_test": "H1 results 22 Sep 2026 — DF economics quantified, CEO successor named.", "url": "LUCE.html"}</script>
+<script type="application/json" id="drift-entry">{"ticker": "LUCE", "company": "Luceco plc", "kind": "ticker", "direction": "up", "headline": "FY27 guided above consensus — but the FY26 upgrade run stops at a held >£40m as Demand Flexibility economics reset.", "trigger": "Green-shoot mirror: G RAISE on FY27 plus a first-ever H1 profit and margin quantification in a trading update.", "alert": true, "fired": 2, "fired_of": 3, "lights": "g-g", "rns_type": "H1 FY26 TU", "rns_date": "2026-07-28", "build_date": "2026-08-19", "spec_version": "v5.4", "next_test": "Half-year results 22 Sep 2026: post-reset revenue per charger quantified, and whether a permanent CEO has been named.", "url": "LUCE.html", "grid": {"labels": ["R1", "R2", "R3", "R4", "R5"], "periods": ["Q2 24", "Q3 24", "Q4 24", "Q1 25", "Q2 25", "Q3 25", "Q4 25", "Q1 26", "Q2 26"], "rows": ["aagaaggga", "-gg-ggggg", "gaggagggg", "grgrrgrgg", "g-g-r-g-a"], "note": "Rank scores at quarter grain, right-anchored on the H1 FY26 TU."}, "trend": {"mode": "share", "cells": "a--", "rows": [{"m": "REV", "gap": -0.4}, {"m": "EBITDA", "gap": null}, {"m": "PBT", "gap": null}]}}</script>
 </body>
 </html>
