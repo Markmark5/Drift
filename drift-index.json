@@ -2534,6 +2534,70 @@
           }
         ]
       }
+    },
+    {
+      "ticker": "VLG",
+      "company": "Venture Life Group",
+      "kind": "ticker",
+      "direction": "watch",
+      "headline": "Sales momentum real (+16% like-for-like) but profit margin has fired red and the lead brand just went negative; no guide moved.",
+      "trigger": "1 of 3 fired — Numbers & guide (Rank 1 EBITDA margin, Rank 2 marketing %); Language amber (one ⚪ print after a −1 run); Disclosure unlit",
+      "alert": false,
+      "fired": 1,
+      "fired_of": 3,
+      "lights": "ra-",
+      "rns_type": "YE-TU (17m)",
+      "rns_date": "2026-06-30",
+      "build_date": "2026-08-19",
+      "spec_version": "5.4",
+      "next_test": "29 Sep 2026 — FY26 adj EBITDA ≥ £8.0m; whether FY27 guidance names a margin; H&H back to growth",
+      "url": "VLG.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H1 22",
+          "H2 22",
+          "H1 23",
+          "H2 23",
+          "H1 24",
+          "H2 24",
+          "H1 25",
+          "H2 25",
+          "5m 26"
+        ],
+        "rows": [
+          "gragrgara",
+          "-----rrr-",
+          "----grggg",
+          "grraa-gra",
+          "--rrr-g-g"
+        ],
+        "note": "R1 EBITDA margin · R2 marketing % (H1/FY) · R3 Power Brands £m lfl · R4 gross margin · R5 group revenue; H2 cells derived †"
+      },
+      "trend": {
+        "mode": "growth",
+        "cells": "g--",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": 18.3
+          },
+          {
+            "m": "EBITDA",
+            "gap": null
+          },
+          {
+            "m": "PBT",
+            "gap": null
+          }
+        ]
+      }
     }
   ]
 }
