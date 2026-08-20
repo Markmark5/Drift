@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-19",
+  "updated": "2026-08-20",
   "tickers": [
     {
       "ticker": "STAF",
@@ -2597,6 +2597,52 @@
             "gap": null
           }
         ]
+      }
+    },
+    {
+      "ticker": "VNET",
+      "company": "Vianet Group",
+      "kind": "ticker",
+      "direction": "up",
+      "headline": "G-column RAISE on the latest RNS: Q1 FY27 “ahead of expectations” after two cuts in 13 months — the turn is on, unconfirmed by the lead metric.",
+      "trigger": "2 of 3 fired, green-shoot mirror: G RAISE (Jul-26) + Text rising two prints from −2; Disclosure amber (first quantified AGM, no history).",
+      "alert": true,
+      "fired": 2,
+      "fired_of": 3,
+      "lights": "gga",
+      "rns_type": "AGM Statement",
+      "rns_date": "2026-07-07",
+      "build_date": "2026-08-20",
+      "spec_version": "v5.4",
+      "next_test": "Dec 2026 H1 FY27 interims: UR adjusted OP must print its first YoY rise in three years; 'in line'-beside-friction phrasing re-arms the cut pattern.",
+      "url": "VNET.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H2 22",
+          "H1 23",
+          "H2 23",
+          "H1 24",
+          "H2 24",
+          "H1 25",
+          "H2 25",
+          "H1 26",
+          "H2 26"
+        ],
+        "rows": [
+          "-ggggrrag",
+          "-ggrggrrg",
+          "-ggrrgrar",
+          "-g-rgarrg",
+          "rrgggggrg"
+        ],
+        "note": "Ranks 1-5 at half grain, right-anchored on FY26 (H2 26 dagger), Buy/Sell = FY R Jun-26 column"
       }
     }
   ]
