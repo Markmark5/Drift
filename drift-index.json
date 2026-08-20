@@ -2644,6 +2644,52 @@
         ],
         "note": "Ranks 1-5 at half grain, right-anchored on FY26 (H2 26 dagger), Buy/Sell = FY R Jun-26 column"
       }
+    },
+    {
+      "ticker": "CLBS",
+      "company": "Celebrus Technologies",
+      "kind": "ticker",
+      "direction": "down",
+      "headline": "First sequential ARR fall on record, retention below 100%, and a second year-ahead guide withheld — the growth engine stalled beneath the accounting reset.",
+      "trigger": "Numbers & guide fired (first sequential Celebrus ARR decline, additions -8%); Language fired (year-ahead anchor withheld at last two FY results); Disclosure amber, not counted",
+      "alert": true,
+      "fired": 2,
+      "fired_of": 3,
+      "lights": "rra",
+      "rns_type": "FY Results",
+      "rns_date": "2026-07-14",
+      "build_date": "2026-08-20",
+      "spec_version": "v5.4",
+      "next_test": "Oct-26 H1 TU: Celebrus ARR must print above $15.6m (Sep-25 mark) and an FY27 expectations anchor must return",
+      "url": "CLBS.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H2 22",
+          "H1 23",
+          "H2 23",
+          "H1 24",
+          "H2 24",
+          "H1 25",
+          "H2 25",
+          "H1 26",
+          "H2 26"
+        ],
+        "rows": [
+          "ggggg-ggr",
+          "-r--g---r",
+          "-------rg",
+          "--------r",
+          "-rggagarr"
+        ],
+        "note": "Ranks 1-5 half-grain scores, right-anchored on the Jul-26 FY results (H2 FY26 column); R2/R4 FY-grain figures sit in H2 slots"
+      }
     }
   ]
 }
