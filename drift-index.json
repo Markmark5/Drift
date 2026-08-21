@@ -2750,6 +2750,70 @@
           }
         ]
       }
+    },
+    {
+      "ticker": "ALFA",
+      "company": "Alfa Financial Software",
+      "kind": "ticker",
+      "direction": "watch",
+      "headline": "Order book at records while growth decelerates hard — language blinked in March, the numbers are on watch, the guide still holds.",
+      "trigger": "Language fired Mar-26 · Apr-26; Numbers & guide watch-flagged; Disclosure clean",
+      "alert": false,
+      "fired": 1,
+      "fired_of": 3,
+      "lights": "ar-",
+      "rns_type": "H1 TU",
+      "rns_date": "2026-07-30",
+      "build_date": "2026-08-21",
+      "spec_version": "v5.4",
+      "next_test": "3 Sep 2026 — H1 results: printed H1 operating profit vs the derived H2-25 stall, and whether 'good revenue growth' survives a back-loaded consensus.",
+      "url": "ALFA.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "Q2 24",
+          "Q3 24",
+          "Q4 24",
+          "Q1 25",
+          "Q2 25",
+          "Q3 25",
+          "Q4 25",
+          "Q1 26",
+          "Q2 26"
+        ],
+        "rows": [
+          "aggargaag",
+          "agggaaara",
+          "araaaagaa",
+          "----a-r-r",
+          "r-g-g-r--"
+        ],
+        "note": "Ranks 1-5 at grid grain; R4/R5 half-grain cells render at H-end quarters only"
+      },
+      "trend": {
+        "mode": "share",
+        "cells": "a--",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": -1.2
+          },
+          {
+            "m": "EBITDA",
+            "gap": null
+          },
+          {
+            "m": "PBT",
+            "gap": null
+          }
+        ]
+      }
     }
   ]
 }
