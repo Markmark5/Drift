@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-20",
+  "updated": "2026-08-21",
   "tickers": [
     {
       "ticker": "STAF",
@@ -2689,6 +2689,66 @@
           "-rggagarr"
         ],
         "note": "Ranks 1-5 half-grain scores, right-anchored on the Jul-26 FY results (H2 FY26 column); R2/R4 FY-grain figures sit in H2 slots"
+      }
+    },
+    {
+      "ticker": "GRG",
+      "company": "Greggs plc",
+      "kind": "ticker",
+      "direction": "watch",
+      "headline": "Guide held; H1 profit rebounds 19.7% off a sunburnt comparator, but LFL still slows and Greggs itself guides H2 profit down.",
+      "trigger": "0 of 3 fired; Numbers & guide amber (single-print green shoot, comparator-discounted)",
+      "alert": false,
+      "fired": 0,
+      "fired_of": 3,
+      "lights": "a--",
+      "rns_type": "H1 Results",
+      "rns_date": "2026-07-29",
+      "build_date": "2026-08-21",
+      "spec_version": "v5.4",
+      "next_test": "~6 Oct 2026 Q3 TU: LFL vs a weak 1.5% comparator, and whether 'expectations unchanged' survives the Derby cost step-up",
+      "url": "GRG.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "Q2 24",
+          "Q3 24",
+          "Q4 24",
+          "Q1 25",
+          "Q2 25",
+          "Q3 25",
+          "Q4 25",
+          "Q1 26",
+          "Q2 26"
+        ],
+        "rows": [
+          "rrr-rra-a",
+          "rr--rra-a",
+          "g-a-r-r-g",
+          "a-a-a-a-a",
+          "r-r-r-g-r"
+        ],
+        "note": "R1 LFL, R2 sales growth, R3 underlying PBT, R4 margin, R5 net cash; H1/FY prints sit in Q2/Q4 slots"
+      },
+      "trend": {
+        "mode": "share",
+        "cells": "a-g",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": 0.6
+          },
+          {
+            "m": "PBT",
+            "gap": 5.8
+          }
+        ]
       }
     }
   ]
