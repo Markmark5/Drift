@@ -2814,6 +2814,70 @@
           }
         ]
       }
+    },
+    {
+      "ticker": "HAS",
+      "company": "Hays plc",
+      "kind": "ticker",
+      "direction": "up",
+      "headline": "Guide raised then beaten — FY26 profit +7% after five falling halves; fee declines easing, but Perm wobbled late and exceptionals roll on.",
+      "trigger": "2-of-3 fired, green-shoot: G RAISE + disclosure resumption; language amber",
+      "alert": true,
+      "fired": 2,
+      "fired_of": 3,
+      "lights": "gag",
+      "rns_type": "FY Results",
+      "rns_date": "2026-08-20",
+      "build_date": "2026-08-21",
+      "spec_version": "v5.4",
+      "next_test": "12 Oct 2026 — Q1 27 TU: Group LFL better than -5% with 'in line' held confirms; Perm relapse past -12% or retreat to 'Board's expectations' breaks it",
+      "url": "HAS.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "Q4 24",
+          "Q1 25",
+          "Q2 25",
+          "Q3 25",
+          "Q4 25",
+          "Q1 26",
+          "Q2 26",
+          "Q3 26",
+          "Q4 26"
+        ],
+        "rows": [
+          "rraaggaaa",
+          "raaaxgaa-",
+          "rraaaaaaa",
+          "r-r-r-a-g",
+          "grgrgrgrg"
+        ],
+        "note": "Rows are ledger ranks R1-R5 at quarterly grain; R4 prints at half-ends only"
+      },
+      "trend": {
+        "mode": "growth",
+        "cells": "g--",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": 6.1
+          },
+          {
+            "m": "EBITDA",
+            "gap": null
+          },
+          {
+            "m": "PBT",
+            "gap": null
+          }
+        ]
+      }
     }
   ]
 }
