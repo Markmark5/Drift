@@ -48,7 +48,8 @@ body{background:var(--bg);font-family:var(--mono);color:var(--text-primary);font
 .sortbtn{font-size:9px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;
   border-radius:3px;cursor:pointer;color:var(--text-secondary);background:transparent;border:1px solid var(--border);}
 .sortbtn.active{color:var(--text-primary);border-color:var(--border-bright);background:#ffffff08;}
-.srch{margin-left:auto;display:flex;align-items:center;gap:6px;}
+.dirbtn{margin-left:auto;}
+.srch{margin-left:8px;display:flex;align-items:center;gap:6px;}
 .srch input{background:var(--surface2);border:1px solid var(--border);border-radius:3px;color:var(--text-primary);
   font-family:var(--mono);font-size:11px;padding:4px 10px;width:150px;outline:none;}
 .srch input:focus{border-color:var(--border-bright);}
@@ -156,9 +157,9 @@ body{background:var(--bg);font-family:var(--mono);color:var(--text-primary);font
       <span class="summary" id="summary"></span>
     </div>
     <div class="sortbar">
-      <button class="sortbtn active" data-sort="direction">Direction</button>
-      <button class="sortbtn" data-sort="build">Latest build</button>
+      <button class="sortbtn active" data-sort="build">Latest build</button>
       <button class="sortbtn" data-sort="ticker">A–Z</button>
+      <button class="sortbtn dirbtn" data-sort="direction">Direction</button>
       <span class="srch">
         <input id="q" type="text" placeholder="Search ticker…" autocomplete="off">
         <span class="clr" id="qclr" onclick="qClear()">✕</span>
@@ -206,9 +207,9 @@ body{background:var(--bg);font-family:var(--mono);color:var(--text-primary);font
 
 <script>
 var OWNER='Markmark5',REPO='Drift',BRANCH='main';
-var DATA=null,SORT='direction',UPFILE=null;
+var DATA=null,SORT='build',UPFILE=null;
 var DIRLBL={up:'Turning Up',down:'Turning Down',watch:'Stable — Watch'};
-var DIRORD={down:0,watch:1,up:2};
+var DIRORD={up:0,watch:1,down:2};
 var MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 function fmtDate(d){var p=d.split('-');return p[2]+' '+MON[+p[1]-1]+' '+p[0].slice(2);}
 
@@ -286,8 +287,15 @@ function render(){
   var t=DATA.tickers.slice();
   if(Q){t=t.filter(function(x){
     return (x.ticker||'').toUpperCase().indexOf(Q)>-1 || (x.company||'').toUpperCase().indexOf(Q)>-1;});}
-  if(SORT==='direction')t.sort(function(a,b){return DIRORD[a.direction]-DIRORD[b.direction]||a.ticker.localeCompare(b.ticker);});
-  if(SORT==='build')t.sort(function(a,b){return b.build_date.localeCompare(a.build_date);});
+  if(SORT==='direction')t.sort(function(a,b){
+    var f=function(x){return (typeof x.fired==='number')?x.fired:-1;};
+    return DIRORD[a.direction]-DIRORD[b.direction] || f(b)-f(a) || a.ticker.localeCompare(b.ticker);});
+  if(SORT==='build')t.sort(function(a,b){
+    var sv=function(x){var s=String(x.spec_version||'').toLowerCase().replace(/^v/,'').replace('-s','');
+      var m=s.match(/(\d+)\.(\d+)([a-z]?)/); if(!m)return 0;
+      return (+m[1])*10000+(+m[2])*100+(m[3]?m[3].charCodeAt(0)-96:0);};
+    return String(b.build_date||'').localeCompare(String(a.build_date||'')) || sv(b)-sv(a)
+        || a.ticker.localeCompare(b.ticker);});
   if(SORT==='ticker')t.sort(function(a,b){return a.ticker.localeCompare(b.ticker);});
   var n={up:0,down:0,watch:0};
   t.forEach(function(x){n[x.direction]++;});
