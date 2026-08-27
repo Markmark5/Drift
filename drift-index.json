@@ -2884,17 +2884,17 @@
       "company": "Volex plc",
       "kind": "ticker",
       "direction": "up",
-      "headline": "Fourth straight organic acceleration; FY26 beat the January-raised consensus by 13% on profit; margins above target for the first time — momentum intact, concentration rising.",
-      "trigger": "Condition 1 fired green (accelerating organic prints on R1/R3, margin above range, G-RAISE Jan-26 delivered). Conditions 2 and 3 unfired. Single-condition green — no 2-of-3.",
+      "headline": "First-ever AGM RAISE: 4-month organic +28%, FY27 profit guided ahead of a $138.3m consensus — momentum extending, comparator effect now the base case.",
+      "trigger": "Condition 1 fired green (five accelerating R1 prints Apr-25 →, G-RAISE on the Buy/Sell AGM itself). Conditions 2 and 3 unfired. Single-condition green — no 2-of-3.",
       "alert": false,
       "fired": 1,
       "fired_of": 3,
       "lights": "g--",
-      "rns_type": "FY R",
-      "rns_date": "2026-06-25",
-      "build_date": "2026-08-24",
+      "rns_type": "AGM",
+      "rns_date": "2026-08-25",
+      "build_date": "2026-08-27",
       "spec_version": "v5.4",
-      "next_test": "~6 Aug 2026 — FY27 AGM statement: Q1 organic print; anything with a single-digit handle after four quarters of 10%+ is the first genuine deceleration signal.",
+      "next_test": "~mid-Oct 2026 H1 FY27 TU: H1 organic print still double-digit as the comparator normalises; guidance held ahead of the raised $138.3m bar.",
       "url": "VLX.html",
       "grid": {
         "labels": [
@@ -2923,6 +2923,18 @@
           "-agagaaga"
         ],
         "note": "R1 organic CC growth (H1/FY prints mapped to half slots) · R2 Consumer Electricals · R3 CIT/Data Centre · R4 underlying operating profit · R5 underlying operating margin"
+      },
+      "trend": {
+        "mode": "share",
+        "cells": "---",
+        "rows": []
+      },
+      "prev": {
+        "direction": "up",
+        "fired": 1,
+        "lights": "g--",
+        "rns_date": "2026-06-25",
+        "rns_type": "FY R"
       }
     },
     {
