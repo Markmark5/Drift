@@ -207,7 +207,7 @@ body{background:var(--bg);font-family:var(--mono);color:var(--text-primary);font
 
 <script>
 var OWNER='Markmark5',REPO='Drift',BRANCH='main';
-var DATA=null,SORT='build',UPFILE=null;
+var DATA=null,SORT='build',UPFILE=null,DIRWORST=false;
 var DIRLBL={up:'Turning Up',down:'Turning Down',watch:'Stable — Watch'};
 var DIRORD={up:0,watch:1,down:2};
 var MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
@@ -289,7 +289,8 @@ function render(){
     return (x.ticker||'').toUpperCase().indexOf(Q)>-1 || (x.company||'').toUpperCase().indexOf(Q)>-1;});}
   if(SORT==='direction')t.sort(function(a,b){
     var f=function(x){return (typeof x.fired==='number')?x.fired:-1;};
-    return DIRORD[a.direction]-DIRORD[b.direction] || f(b)-f(a) || a.ticker.localeCompare(b.ticker);});
+    var o=DIRWORST?{down:0,watch:1,up:2}:DIRORD;
+    return o[a.direction]-o[b.direction] || f(b)-f(a) || a.ticker.localeCompare(b.ticker);});
   if(SORT==='build')t.sort(function(a,b){
     var sv=function(x){var s=String(x.spec_version||'').toLowerCase().replace(/^v/,'').replace('-s','');
       var m=s.match(/(\d+)\.(\d+)([a-z]?)/); if(!m)return 0;
@@ -329,10 +330,19 @@ document.getElementById('q').addEventListener('input',function(e){
   if(DATA)render();
 });
 document.getElementById('q').addEventListener('keydown',function(e){if(e.key==='Escape')qClear();});
+function dirLabel(){
+  var b=document.querySelector('.dirbtn'); if(!b)return;
+  b.innerHTML=SORT==='direction'
+    ? 'Direction · <span style="color:'+(DIRWORST?'var(--red)':'var(--green)')+'">'+(DIRWORST?'Worst first':'Best first')+'</span>'
+    : 'Direction';
+}
 document.querySelectorAll('.sortbtn').forEach(function(b){
   b.onclick=function(){
+    var s=b.dataset.sort;
+    if(s==='direction'&&SORT==='direction')DIRWORST=!DIRWORST;
+    else if(s==='direction')DIRWORST=false;
     document.querySelectorAll('.sortbtn').forEach(function(x){x.classList.remove('active');});
-    b.classList.add('active');SORT=b.dataset.sort;if(DATA)render();
+    b.classList.add('active');SORT=s;dirLabel();if(DATA)render();
   };
 });
 
