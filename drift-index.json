@@ -1041,19 +1041,20 @@
     {
       "ticker": "CHH",
       "company": "Churchill China plc",
+      "kind": "ticker",
       "direction": "watch",
       "headline": "H1'26 revenue −2.9% misses the confirming turn but nearly closes the decline; cash surges — a bottoming print with a new Q4-dependency flag.",
-      "trigger": "Deterioration 2-of-3 technically met (margin compression, 3 consecutive 🔴, + Text falling 2 prints) — heavily discounted as a stabilising base; no undiscounted fire.",
+      "trigger": "Deterioration conditions 1 and 2 technically met (margin compression, 3 consecutive 🔴; Text falling 2 prints), both context-discounted as a stabilising base — 0/3 counted, no alert.",
       "alert": false,
+      "fired": 0,
+      "fired_of": 3,
+      "lights": "aa-",
       "rns_type": "H1 TU",
       "rns_date": "2026-07-31",
-      "build_date": "2026-08-05",
-      "spec_version": "v4.6",
+      "build_date": "2026-08-28",
+      "spec_version": "v5.5",
       "next_test": "Sep H1 R: PBT vs ~£3.0m consensus anchor, margin read, and any hard pipeline number decide the call.",
       "url": "CHH.html",
-      "kind": "ticker",
-      "fired": 2,
-      "fired_of": 3,
       "grid": {
         "labels": [
           "R1",
@@ -1063,15 +1064,15 @@
           "R5"
         ],
         "periods": [
-          "H1'22",
-          "H2'22†",
-          "H1'23",
-          "H2'23†",
-          "H1'24",
-          "H2'24†",
-          "H1'25",
-          "H2'25†",
-          "⭐H1'26"
+          "H1 22",
+          "H2 22",
+          "H1 23",
+          "H2 23",
+          "H1 24",
+          "H2 24",
+          "H1 25",
+          "H2 25",
+          "H1 26"
         ],
         "rows": [
           "aaaa-a-a-",
@@ -1080,7 +1081,7 @@
           "--rrrrrg-",
           "-rrrrrrgg"
         ],
-        "note": "One row per ledger rank (R1–R5) at half-period grain; rightmost cell = Buy/Sell H1'26 TU 31 Jul 2026. g=🟢↗ a=🟡→ r=🔴↘ x=❌withheld -=outside cadence/no comparator/first print. H1'22/H2'22: YoY% now shown, arrow — (first scored print)."
+        "note": "One row per ledger rank at half grain; rightmost = Buy/Sell H1 TU 31 Jul 2026; H2 cells derived."
       }
     },
     {
