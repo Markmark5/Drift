@@ -207,7 +207,9 @@
   .csbar2 li{margin-bottom:4px;}
   .csbar2 li:last-child{margin-bottom:0;}
   /* bridge+bar flex row */
-  .bb-row{display:flex;gap:16px;align-items:flex-start;margin-top:16px;max-width:1100px;flex-wrap:wrap;}
+  .bb-row{display:flex;gap:16px;align-items:stretch;margin-top:16px;max-width:1800px;flex-wrap:nowrap;}
+  .bb-row>.bridge-wrap,.bb-row>.csbar2{flex:1 1 0;min-width:0;width:50%;}
+  @media(max-width:760px){.bb-row{flex-wrap:wrap;}.bb-row>.bridge-wrap,.bb-row>.csbar2{flex:1 1 100%;width:100%;}}
   /* card-strip drawer */
   .strip-grid{display:grid;grid-template-columns:48px repeat(9,1fr);gap:2px;font-size:11px;margin-bottom:12px;}
   .strip-grid .sg-lab{font-weight:700;color:var(--mute);text-align:right;padding-right:6px;align-self:center;}
@@ -648,37 +650,7 @@
       </div>
     </details>
 
-    <div class="bb-row">
-      <div class="bridge-wrap">
-        <div class="dpanel">
-          <span class="demi">🍺</span><span class="dtitle">IDIOT&#39;S GUIDE TO THE REVENUE BRIDGE — why sales went flat (£78.3m → £76.3m)</span>
-        </div>
-        <table class="bridge-rows">
-          <tr class="br"><td class="blab">🏨 Fewer restaurants ordering</td><td class="bcon" style="color:var(--red);">−£2.0m</td><td class="bcla">Hospitality markets softened across multiple geographies — fewer covers, fewer plates needed, fewer orders landing on Churchill&#39;s books.</td></tr>
-          <tr class="bg"><td class="blab">🌍 Europe starting to stir</td><td class="bcon" style="color:var(--green);">n/q</td><td class="bcla">Continental sales showed &ldquo;early signs&rdquo; of recovery in H2&#39;25 — not big enough to quantify yet, but the direction changed.</td></tr>
-          <tr class="ba"><td class="blab">🏭 Factory did its bit</td><td class="bcon" style="color:var(--amber);">n/q</td><td class="bcla">Yields improved and the new flat-plate machine is showing measurable productivity gains — held the cost line while volume fell.</td></tr>
-        </table>
-        <div class="bridge-cap">So in one sentence: Churchill sold fewer plates into quieter restaurants, and a nascent European recovery wasn&#39;t yet big enough to cover the gap. Profit goes back up when: hospitality booking rates lift (fewer empty tables = more plates needed), and/or the European recovery scales to meaningful volume — the factory&#39;s already ready for it.</div>
-      </div>
-
-      <div class="csbar2">
-        <div class="dpanel">
-          <span class="demi">🌡️</span><span class="dtitle">CURRENT STATE — the read right now</span>
-        </div>
-        <div class="csbar2-inner">
-          <div class="cslead"><span class="emoji">🟡</span> STABLE — WATCH</div>
-          <ul>
-            <li>H1&#39;26 revenue £37.4m, −2.9% YoY — still negative but Δrate 🟢↗, third straight deceleration of the decline.</li>
-            <li>Net cash £8.8m, +57% YoY — second consecutive green, first hard figure ever at TU grain; strongest line in the record.</li>
-            <li>Margin and PBT — no figure (TU cadence); resolved in September against the ~£3.0m H1 PBT anchor.</li>
-            <li>Deterioration 2-of-3 technically fires (margin compression, 3 consecutive 🔴 + Text falling 2 prints) — heavily discounted as a stabilising base, not a re-warning. <span class="emoji">⚠️</span></li>
-            <li>⚠️ &ldquo;Significance of the final quarter&rdquo; echoes Sep&#39;24&#39;s year-end dependency — the exact phrase that preceded the Nov&#39;24 profit warning; watch whether it deepens in September.</li>
-            <li>⚠️ Consensus (Panmure Liberum, single-house/corporate broker): H2 needs ~£40.4m (+6.9%) to hit FY26E £77.8m — house revenue now at risk; £0.5m modelled exceptionals remain unannounced.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <details class="subdrw">
+        <details class="subdrw">
       <summary>Notes — §2.0</summary>
       <div class="notesbody">
         <p><b>Buy/Sell figures re-verified exact</b> against the 31-Jul-26 RNS: H1&#39;26 revenue £37.4m (H1 2025: £38.5m); cash £8.8m (30 Jun 2025: £5.6m). FY&#39;25 backbone previously verified against the 13-Apr-26 RNS (£76.3m / £6.0m / £10.8m / £9.4m EBITDA / 39.7p EPS).</p>
@@ -709,6 +681,37 @@
       </div>
     </details>
     </div></details>
+
+<div class="bb-row">
+      <div class="bridge-wrap">
+        <div class="dpanel">
+          <span class="demi">🍺</span><span class="dtitle">IDIOT&#39;S GUIDE TO THE REVENUE BRIDGE — why sales went flat (£78.3m → £76.3m)</span>
+        </div>
+        <table class="bridge-rows">
+          <tr class="br"><td class="blab">🏨 Fewer restaurants ordering</td><td class="bcon" style="color:var(--red);">−£2.0m</td><td class="bcla">Hospitality markets softened across multiple geographies — fewer covers, fewer plates needed, fewer orders landing on Churchill&#39;s books.</td></tr>
+          <tr class="bg"><td class="blab">🌍 Europe starting to stir</td><td class="bcon" style="color:var(--green);">n/q</td><td class="bcla">Continental sales showed &ldquo;early signs&rdquo; of recovery in H2&#39;25 — not big enough to quantify yet, but the direction changed.</td></tr>
+          <tr class="ba"><td class="blab">🏭 Factory did its bit</td><td class="bcon" style="color:var(--amber);">n/q</td><td class="bcla">Yields improved and the new flat-plate machine is showing measurable productivity gains — held the cost line while volume fell.</td></tr>
+        </table>
+        <div class="bridge-cap">So in one sentence: Churchill sold fewer plates into quieter restaurants, and a nascent European recovery wasn&#39;t yet big enough to cover the gap. Profit goes back up when: hospitality booking rates lift (fewer empty tables = more plates needed), and/or the European recovery scales to meaningful volume — the factory&#39;s already ready for it.</div>
+      </div>
+
+      <div class="csbar2">
+        <div class="dpanel">
+          <span class="demi">🌡️</span><span class="dtitle">CURRENT STATE — the read right now</span>
+        </div>
+        <div class="csbar2-inner">
+          <div class="cslead"><span class="emoji">🟡</span> STABLE — WATCH</div>
+          <ul>
+            <li>H1&#39;26 revenue £37.4m, −2.9% YoY — still negative but Δrate 🟢↗, third straight deceleration of the decline.</li>
+            <li>Net cash £8.8m, +57% YoY — second consecutive green, first hard figure ever at TU grain; strongest line in the record.</li>
+            <li>Margin and PBT — no figure (TU cadence); resolved in September against the ~£3.0m H1 PBT anchor.</li>
+            <li>Deterioration 2-of-3 technically fires (margin compression, 3 consecutive 🔴 + Text falling 2 prints) — heavily discounted as a stabilising base, not a re-warning. <span class="emoji">⚠️</span></li>
+            <li>⚠️ &ldquo;Significance of the final quarter&rdquo; echoes Sep&#39;24&#39;s year-end dependency — the exact phrase that preceded the Nov&#39;24 profit warning; watch whether it deepens in September.</li>
+            <li>⚠️ Consensus (Panmure Liberum, single-house/corporate broker): H2 needs ~£40.4m (+6.9%) to hit FY26E £77.8m — house revenue now at risk; £0.5m modelled exceptionals remain unannounced.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- ============ §3 TEXT + G ============ -->
