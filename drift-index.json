@@ -3121,6 +3121,70 @@
         ],
         "note": "Rows are ledger Ranks 1-5; R1 renders H1/FY grain, FY scores occupy H2 slots"
       }
+    },
+    {
+      "ticker": "MACF",
+      "company": "Macfarlane Group",
+      "kind": "ticker",
+      "direction": "watch",
+      "headline": "Guide held “in line”, lead metric back to growth after four red halves — but the year is again a second-half promise.",
+      "trigger": "0 of 3 fired; Numbers & guide amber (green shoot watch-flagged, single print)",
+      "alert": false,
+      "fired": 0,
+      "fired_of": 3,
+      "lights": "a--",
+      "rns_type": "H1 R",
+      "rns_date": "2026-08-27",
+      "build_date": "2026-08-28",
+      "spec_version": "v5.5",
+      "next_test": "YE-TU ~26 Nov 2026: “in line” held and Pitreavie delivering, not recovering; any “broadly” or Board’s-expectations switch breaks it.",
+      "url": "MACF.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H1 22",
+          "H2 22",
+          "H1 23",
+          "H2 23",
+          "H1 24",
+          "H2 24",
+          "H1 25",
+          "H2 25",
+          "H1 26"
+        ],
+        "rows": [
+          "----rrrrg",
+          "--agaarra",
+          "--gggarra",
+          "----rrrrg",
+          "-gagarraa"
+        ],
+        "note": "R1 Dist adj op profit, R2 Dist AOP margin, R3 group gross margin, R4 group adj op profit, R5 net bank debt"
+      },
+      "trend": {
+        "mode": "share",
+        "cells": "a-r",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": -0.7
+          },
+          {
+            "m": "EBITDA",
+            "gap": null
+          },
+          {
+            "m": "PBT",
+            "gap": -3.1
+          }
+        ]
+      }
     }
   ]
 }
