@@ -3028,6 +3028,52 @@
         ],
         "note": "R1 supply-posture ladder / R2 GP per unit / R3 units / R4 revenue / R5 adj EBITDA, halves H1-23 to H1-26, right-anchored on Jun-26 TU"
       }
+    },
+    {
+      "ticker": "DGE",
+      "company": "Diageo plc",
+      "kind": "ticker",
+      "direction": "watch",
+      "headline": "FY26 lands at the better end of a twice-cut guide; cash and margin now mending, but sales still shrink and FY27 sits off-page.",
+      "trigger": "Numbers & guide fired (G cuts Nov-25, Feb-26); Language fired (Nov-25 onward); Disclosure amber, not counted.",
+      "alert": true,
+      "fired": 2,
+      "fired_of": 3,
+      "lights": "rra",
+      "rns_type": "FY R",
+      "rns_date": "2026-08-06",
+      "build_date": "2026-08-27",
+      "spec_version": "v5.4",
+      "next_test": "5 Nov 2026 — Q1 F27 TU: Q1 organic growth sign, price/mix sign, FY27 guide anchor restated",
+      "url": "DGE.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "Q4 24",
+          "Q1 25",
+          "Q2 25",
+          "Q3 25",
+          "Q4 25",
+          "Q1 26",
+          "Q2 26",
+          "Q3 26",
+          "Q4 26"
+        ],
+        "rows": [
+          "-------r-",
+          "-grg-a-r-",
+          "grgrgrgrg",
+          "r-g-g-a-g",
+          "--r-r-r-g"
+        ],
+        "note": "Rank rows R1 price/mix, R2 organic net sales growth, R3 net sales sequential, R4 organic op profit (H1 on Q2 slot, FY on Q4 slot), R5 free cash flow (same mapping)."
+      }
     }
   ]
 }
