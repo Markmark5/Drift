@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-29",
+  "updated": "2026-09-01",
   "tickers": [
     {
       "ticker": "STAF",
@@ -1198,18 +1198,25 @@
       "company": "Pennant International Group plc",
       "kind": "ticker",
       "direction": "up",
-      "headline": "Revenue, margin and profit all turned - but order book silence while Training Systems tripled is unresolved.",
-      "trigger": "Green-shoot mirror 2 of 3: sequential growth resuming + margin expanding (1); consensus table first-ever (3). Deterioration 3 also fires: order book withheld against re-established cadence.",
+      "headline": "First positive H1 EBITA since FY23, revenue +29% audited, margin 54% - but going concern persists and order book dark for ninth consecutive document.",
+      "trigger": "Green-shoot mirror 2 of 3: EBITA turned positive, sequential growth, margin expanding (1); Text +1 floor language (2). Deterioration 3 fires: order book withheld nine consecutive qualifying documents.",
       "alert": true,
       "fired": 2,
       "fired_of": 3,
-      "rns_type": "H1 TU",
-      "rns_date": "2026-07-13",
-      "build_date": "2026-08-05",
+      "rns_type": "H1 R",
+      "rns_date": "2026-09-01",
+      "build_date": "2026-09-01",
       "spec_version": "4.6",
-      "next_test": "Sep-26 interims: confirm c.5.9m audited, order book post-Training-Systems ramp, ARR >=2.7m to keep guide alive, EBITA derivable from notes.",
+      "next_test": "FY26 YE TU or Final Results - confirm full year >=13.0m; order book position; ARR >3.0m exit; going concern retired or escalated.",
       "url": "PEN.html",
       "tier1": true,
+      "prev": {
+        "direction": "up",
+        "fired": 2,
+        "lights": "g-x",
+        "rns_date": "2026-07-13",
+        "rns_type": "H1 TU"
+      },
       "grid": {
         "labels": [
           "R1",
@@ -1219,7 +1226,6 @@
           "R5"
         ],
         "periods": [
-          "H1-22",
           "H2-22",
           "H1-23",
           "H2-23",
@@ -1227,16 +1233,17 @@
           "H2-24",
           "H1-25",
           "H2-25",
-          "H1-26"
+          "H1-26TU",
+          "H1-26R"
         ],
         "rows": [
-          "graxxxxgx",
-          "------ggg",
-          "rrggarrrg",
-          "ggggarrrx",
-          "ggggaarag"
+          "rgxxxxgxx",
+          "-----ggga",
+          "rggarargg",
+          "gggarrr-g",
+          "gggaaragg"
         ],
-        "note": "H-reporter; one row per ledger rank in rank order; right-anchored on H1 FY26 (H1 TU 13-Jul-26). H2 cells are derived halves."
+        "note": "H-reporter; 9 cells right-anchored on H1 FY26 R (01-Sep-26); H2 = derived halves"
       }
     },
     {
