@@ -2007,18 +2007,18 @@
       "company": "Michelmersh Brick Holdings PLC",
       "kind": "ticker",
       "direction": "down",
-      "headline": "Net cash became net debt as margin fell a fifth straight year; “in line” now means brokers’ twelve per cent growth.",
-      "trigger": "3 of 3 fired — margin down five years and net position red two halves, six consecutive negative language prints, leverage policy withheld two years",
+      "headline": "Net debt to £5m, stock to a record, and “growth” has become “within a range” whose floor is 4% up.",
+      "trigger": "3 of 3 fired — net position red three halves and stock at a record, seven consecutive negative language prints, leverage policy withheld three documents",
       "alert": true,
       "fired": 3,
       "fired_of": 3,
       "lights": "rrr",
       "tier1": true,
-      "rns_type": "AGM Statement",
-      "rns_date": "2026-05-21",
-      "build_date": "2026-08-10",
-      "spec_version": "v5.1a",
-      "next_test": "Early Sep 2026 — whether stock falls below £18.9m and whether H1 supports the £14m of full-year EBITDA that “in line” now points at.",
+      "rns_type": "H1 Results",
+      "rns_date": "2026-09-01",
+      "build_date": "2026-09-01",
+      "spec_version": "v5.3a",
+      "next_test": "Early Dec 2026 — whether a pre-close update comes at all, and whether it names a number inside £12.9m–£14.3m.",
       "url": "MBH.html",
       "grid": {
         "labels": [
@@ -2029,7 +2029,6 @@
           "R5"
         ],
         "periods": [
-          "H2 21",
           "H1 22",
           "H2 22",
           "H1 23",
@@ -2037,16 +2036,42 @@
           "H1 24",
           "H2 24",
           "H1 25",
-          "H2 25"
+          "H2 25",
+          "H1 26"
         ],
         "rows": [
-          "rgrrrraar",
-          "rrgraarra",
-          "agarrrggr",
-          "ggaaargrr",
-          "rrgarrrag"
+          "grrrraara",
+          "rgraarrag",
+          "garrrggrr",
+          "gaaargrrr",
+          "rgarrragg"
         ],
         "note": "R1 inventories · R2 adjusted EBITDA margin · R3 cash conversion · R4 net cash/(net debt) · R5 adjusted EBITDA"
+      },
+      "trend": {
+        "mode": "share",
+        "cells": "rrr",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": -5.9
+          },
+          {
+            "m": "EBITDA",
+            "gap": -5.9
+          },
+          {
+            "m": "PBT",
+            "gap": -13.6
+          }
+        ]
+      },
+      "prev": {
+        "direction": "down",
+        "fired": 3,
+        "lights": "rrr",
+        "rns_date": "2026-05-21",
+        "rns_type": "AGM Statement"
       }
     },
     {
