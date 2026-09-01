@@ -1198,22 +1198,23 @@
       "company": "Pennant International Group plc",
       "kind": "ticker",
       "direction": "up",
-      "headline": "First positive H1 EBITA since FY23, revenue +29% audited, margin 54% - but going concern persists and order book dark for ninth consecutive document.",
-      "trigger": "Green-shoot mirror 2 of 3: EBITA turned positive, sequential growth, margin expanding (1); Text +1 floor language (2). Deterioration 3 fires: order book withheld nine consecutive qualifying documents.",
+      "headline": "First positive H1 EBITA since FY23, revenue +29% audited, margin 54% - but going concern persists and the order book stays dark for a ninth consecutive document.",
+      "trigger": "2 of 3 lit, mixed direction: Numbers & guide green (EBITA +0.32m, revenue +29%, guide floored at 13.0m); Disclosure red (three-year order book withheld, ninth consecutive qualifying document). Language unlit: single +1 rise from 0. Tier-1 going concern.",
       "alert": true,
       "fired": 2,
       "fired_of": 3,
+      "lights": "g-r",
       "rns_type": "H1 R",
       "rns_date": "2026-09-01",
       "build_date": "2026-09-01",
-      "spec_version": "4.6",
-      "next_test": "FY26 YE TU or Final Results - confirm full year >=13.0m; order book position; ARR >3.0m exit; going concern retired or escalated.",
+      "spec_version": "5.5",
+      "next_test": "Jan-27 YE TU: FY26 revenue >= 13.0m, ARR > 3.0m, and a printed three-year order book. Any one missing reopens the call.",
       "url": "PEN.html",
       "tier1": true,
       "prev": {
         "direction": "up",
         "fired": 2,
-        "lights": "g-x",
+        "lights": "g-r",
         "rns_date": "2026-07-13",
         "rns_type": "H1 TU"
       },
@@ -1243,7 +1244,7 @@
           "gggarrr-g",
           "gggaaragg"
         ],
-        "note": "H-reporter; 9 cells right-anchored on H1 FY26 R (01-Sep-26); H2 = derived halves"
+        "note": "H-reporter; one row per ledger rank; nine cells right-anchored on H1 FY26 Interim Results (01-Sep-26); H2 cells are derived halves."
       }
     },
     {
