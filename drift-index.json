@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-01",
+  "updated": "2026-09-02",
   "tickers": [
     {
       "ticker": "STAF",
@@ -3281,6 +3281,52 @@
             "gap": 32
           }
         ]
+      }
+    },
+    {
+      "ticker": "TPK",
+      "company": "Travis Perkins plc",
+      "kind": "ticker",
+      "direction": "watch",
+      "headline": "Profit held flat on margin, not demand; the guide is back only in words, and the merchant that earns the money hasn't turned.",
+      "trigger": "2 of 3 fired — Language and Disclosure, deterioration; Numbers & guide technically met, not counted",
+      "alert": true,
+      "fired": 2,
+      "fired_of": 3,
+      "lights": "arr",
+      "rns_type": "H1 R",
+      "rns_date": "2026-08-04",
+      "build_date": "2026-09-02",
+      "spec_version": "v5.5",
+      "next_test": "16 Oct 2026, Q3 TU — Q3 Merchant LFL sign, whether any FY26 profit anchor reappears, and whether Q3 volume beats the (3.9)% H1 print.",
+      "url": "TPK.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H1 22",
+          "H2 22",
+          "H1 23",
+          "H2 23",
+          "H1 24",
+          "H2 24",
+          "H1 25",
+          "H2 25",
+          "H1 26"
+        ],
+        "rows": [
+          "--r-g-a-r",
+          "arrrrrraa",
+          "rrrrargga",
+          "----rraag",
+          "--rrr-g-g"
+        ],
+        "note": "R1 merchant volume · R2 merchant margin · R3 merchant LFL · R4 gross margin · R5 group AOP ex-property; R1 H2 slots are outside cadence (H1/FY grain)"
       }
     }
   ]
