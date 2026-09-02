@@ -2516,11 +2516,11 @@
       "fired": 2,
       "fired_of": 3,
       "lights": "rr-",
-      "rns_type": "FY R",
-      "rns_date": "2026-05-26",
-      "build_date": "2026-08-19",
-      "spec_version": "v5.4",
-      "next_test": "The AGM statement, September 2026: does the Board restore an FY27 \"in line with market expectations\" anchor, or leave the year unanchored?",
+      "rns_type": "AGM",
+      "rns_date": "2026-09-02",
+      "build_date": "2026-09-02",
+      "spec_version": "v5.5",
+      "next_test": "H1 FY27 interims, November 2026: does capitalised development spend hold above H1 FY26's £2.78m, and does the interim restore a full-year anchor?",
       "url": "CLX.html",
       "grid": {
         "labels": [
@@ -2567,6 +2567,13 @@
             "gap": -13.5
           }
         ]
+      },
+      "prev": {
+        "direction": "down",
+        "fired": 2,
+        "lights": "rr-",
+        "rns_date": "2026-05-26",
+        "rns_type": "FY R"
       }
     },
     {
