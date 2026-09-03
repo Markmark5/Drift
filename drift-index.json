@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-02",
+  "updated": "2026-09-03",
   "tickers": [
     {
       "ticker": "STAF",
@@ -3120,18 +3120,18 @@
       "ticker": "ECEL",
       "company": "Eurocell plc",
       "kind": "ticker",
-      "direction": "down",
-      "headline": "Guide withdrawn at the May AGM — first anchorless update in five years, with profit growth already negative two halves.",
-      "trigger": "2 of 3 fired: Numbers & guide (G CUT, aPBT decelerating 2 halves, margin down), Language (3 prints ≤ −1 since Sep-25 cut); Disclosure amber (volume withheld, thin habit)",
-      "alert": true,
-      "fired": 2,
+      "direction": "watch",
+      "headline": "Hard numbers turn up — organic volumes and profit growth resume — but the company still won't anchor to market expectations.",
+      "trigger": "1 of 3 fired: Language (anchor absent third consecutive document). Numbers & guide amber (May-26 CUT context-discounted by improving prints); Disclosure cleared (volume re-quantified).",
+      "alert": false,
+      "fired": 1,
       "fired_of": 3,
-      "lights": "rra",
-      "rns_type": "AGM TU",
-      "rns_date": "2026-05-14",
-      "build_date": "2026-08-28",
+      "lights": "ar-",
+      "rns_type": "H1 R",
+      "rns_date": "2026-09-03",
+      "build_date": "2026-09-03",
       "spec_version": "v5.5",
-      "next_test": "H1 results, early Sep 2026 — company-worded FY26 expectation returning (or not), the H1 volume figure, organic margin holding 52%+",
+      "next_test": "Jan 2027 YE-TU — an 'in line with market expectations' sentence returning, H2 organic volume, organic gross margin vs 52.6%",
       "url": "ECEL.html",
       "grid": {
         "labels": [
@@ -3142,7 +3142,6 @@
           "R5"
         ],
         "periods": [
-          "H2 21",
           "H1 22",
           "H2 22",
           "H1 23",
@@ -3150,16 +3149,42 @@
           "H1 24",
           "H2 24",
           "H1 25",
-          "H2 25"
+          "H2 25",
+          "H1 26"
         ],
         "rows": [
-          "-aarrggaa",
-          "--arraggg",
-          "-a-rgggrr",
-          "--rrggrrr",
-          "raaagaarg"
+          "aarrggaag",
+          "-arragggr",
+          "a-rgggrra",
+          "-rrggrrrg",
+          "aaagaargr"
         ],
-        "note": "Rows are ledger Ranks 1-5; R1 renders H1/FY grain, FY scores occupy H2 slots; audited v1"
+        "note": "Rows are ledger Ranks 1-5; R1 renders H1/FY grain, FY scores occupy H2 slots; strip re-anchored on H1-26"
+      },
+      "prev": {
+        "direction": "down",
+        "fired": 2,
+        "lights": "rra",
+        "rns_date": "2026-05-14",
+        "rns_type": "AGM TU"
+      },
+      "trend": {
+        "mode": "share",
+        "cells": "aar",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": -0.9
+          },
+          {
+            "m": "EBITDA",
+            "gap": -0.4
+          },
+          {
+            "m": "PBT",
+            "gap": -4.2
+          }
+        ]
       }
     },
     {
