@@ -3413,6 +3413,70 @@
         ],
         "note": "Ledger ranks 1-5 at half grain, right-anchored on H2 FY25 (FY R Mar-26); Buy/Sell AGM Jun-26 carries no figures"
       }
+    },
+    {
+      "ticker": "MOTR",
+      "company": "Motorpoint Group",
+      "kind": "ticker",
+      "direction": "up",
+      "headline": "First-ever numeric guide raises FY27 PBT to £9.8–10.8m, above consensus — volumes, unit margins and language all confirming the two-year up-trend.",
+      "trigger": "2 of 3 fired, both green-shoot: G RAISE on latest RNS; Text risen to +3. Disclosure amber (first-ever guide, no baseline).",
+      "alert": true,
+      "fired": 2,
+      "fired_of": 3,
+      "lights": "gga",
+      "rns_type": "TU",
+      "rns_date": "2026-09-02",
+      "build_date": "2026-09-03",
+      "spec_version": "v5.5",
+      "next_test": "Early Oct 2026 H1 FY27 TU: volume growth ≥ c.10%, metal margin still 'strong', £9.8–10.8m range reiterated or raised.",
+      "url": "MOTR.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H2 22",
+          "H1 23",
+          "H2 23",
+          "H1 24",
+          "H2 24",
+          "H1 25",
+          "H2 25",
+          "H1 26",
+          "H2 26"
+        ],
+        "rows": [
+          "-r-rgggrr",
+          "garrragaa",
+          "-rraggaaa",
+          "-rrragggg",
+          "rgagaarrr"
+        ],
+        "note": "R1 retail volumes · R2 retail GPU (H1/FY) · R3 gross margin · R4 PBT · R5 net cash. Rightmost = H2 FY26 (FY R Jun-26); the ⭐ Sep-26 TU prints no period actuals."
+      },
+      "trend": {
+        "mode": "share",
+        "cells": "---",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": null
+          },
+          {
+            "m": "EBITDA",
+            "gap": null
+          },
+          {
+            "m": "PBT",
+            "gap": null
+          }
+        ]
+      }
     }
   ]
 }
