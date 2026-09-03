@@ -2797,17 +2797,17 @@
       "company": "Alfa Financial Software",
       "kind": "ticker",
       "direction": "watch",
-      "headline": "Order book at records while growth decelerates hard — language blinked in March, the numbers are on watch, the guide still holds.",
-      "trigger": "Language fired Mar-26 · Apr-26; Numbers & guide watch-flagged; Disclosure clean",
-      "alert": false,
-      "fired": 1,
+      "headline": "Two of three now fired: printed profit fell 15% and the language stays soft — but the order book, ARR and the held guide argue the damage is bounded.",
+      "trigger": "Numbers & guide fired Apr-26 · Sep-26 (context annotated); Language continuing Mar-26 →; Disclosure clean",
+      "alert": true,
+      "fired": 2,
       "fired_of": 3,
-      "lights": "ar-",
-      "rns_type": "H1 TU",
-      "rns_date": "2026-07-30",
-      "build_date": "2026-08-21",
+      "lights": "rr-",
+      "rns_type": "H1 R",
+      "rns_date": "2026-09-03",
+      "build_date": "2026-09-03",
       "spec_version": "v5.4",
-      "next_test": "3 Sep 2026 — H1 results: printed H1 operating profit vs the derived H2-25 stall, and whether 'good revenue growth' survives a back-loaded consensus.",
+      "next_test": "Nov 2026 Q3 TU — the habitual raise slot: a raise restores the pattern, 'in line' is a first-ever break; TCV ≥£240m; no repeat of 'delays'.",
       "url": "ALFA.html",
       "grid": {
         "labels": [
@@ -2833,13 +2833,13 @@
           "agggaaara",
           "araaaagaa",
           "----a-r-r",
-          "r-g-g-r--"
+          "r-g-g-r-r"
         ],
         "note": "Ranks 1-5 at grid grain; R4/R5 half-grain cells render at H-end quarters only"
       },
       "trend": {
         "mode": "share",
-        "cells": "a--",
+        "cells": "a-r",
         "rows": [
           {
             "m": "REV",
@@ -2851,9 +2851,16 @@
           },
           {
             "m": "PBT",
-            "gap": null
+            "gap": -5.3
           }
         ]
+      },
+      "prev": {
+        "direction": "watch",
+        "fired": 1,
+        "lights": "ar-",
+        "rns_date": "2026-07-30",
+        "rns_type": "H1 TU"
       }
     },
     {
