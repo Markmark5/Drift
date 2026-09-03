@@ -3477,6 +3477,70 @@
           }
         ]
       }
+    },
+    {
+      "ticker": "TTG",
+      "company": "TT Electronics plc",
+      "kind": "ticker",
+      "direction": "up",
+      "headline": "First guidance raise in the record, on 37% profit growth and a third straight book-to-bill above 100%.",
+      "trigger": "G RAISE plus Lexicon rising from -2 to +2; Disclosure amber and not counted",
+      "alert": true,
+      "fired": 2,
+      "fired_of": 3,
+      "lights": "gga",
+      "rns_type": "H1 R",
+      "rns_date": "2026-09-02",
+      "build_date": "2026-09-03",
+      "spec_version": "v5.5",
+      "next_test": "Whether the November year-end update puts a number on “ahead”, and whether EMS and Components book-to-bill are finally printed.",
+      "url": "TTG.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H1 22",
+          "H2 22",
+          "H1 23",
+          "H2 23",
+          "H1 24",
+          "H2 24",
+          "H1 25",
+          "H2 25",
+          "H1 26"
+        ],
+        "rows": [
+          "--grrrrgg",
+          "-rxx--rgg",
+          "-aararrag",
+          "aaggarrgg",
+          "raaaagaga"
+        ],
+        "note": "Rows are the five ledger ranks; rightmost cell is the H1 FY26 Buy/Sell print."
+      },
+      "trend": {
+        "mode": "share",
+        "cells": "r-g",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": -2.6
+          },
+          {
+            "m": "EBITDA",
+            "gap": null
+          },
+          {
+            "m": "PBT",
+            "gap": 10.5
+          }
+        ]
+      }
     }
   ]
 }
