@@ -3367,6 +3367,52 @@
         ],
         "note": "R1 merchant volume · R2 merchant margin · R3 merchant LFL · R4 gross margin · R5 group AOP ex-property; R1 H2 slots are outside cadence (H1/FY grain)"
       }
+    },
+    {
+      "ticker": "FEVR",
+      "company": "Fevertree Drinks plc",
+      "kind": "ticker",
+      "direction": "watch",
+      "headline": "Guide held “in line” for FY26, but the profit engine is mid-US-handover after a 16% EBITDA fall and a provision-driven walk-back.",
+      "trigger": "Condition 1 fired (Numbers & guide, Mar-26); condition 3 technically met, discounted; no 2-of-3.",
+      "alert": false,
+      "fired": 1,
+      "fired_of": 3,
+      "lights": "r-a",
+      "rns_type": "AGM Statement",
+      "rns_date": "2026-06-09",
+      "build_date": "2026-09-03",
+      "spec_version": "v5.5",
+      "next_test": "10 Sep 2026 — H1 FY26 must hold “in line”, show US royalty profit rebuilding above FY25’s 6.3% segment margin, and reveal whether gross margin returns to print.",
+      "url": "FEVR.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H2 21",
+          "H1 22",
+          "H2 22",
+          "H1 23",
+          "H2 23",
+          "H1 24",
+          "H2 24",
+          "H1 25",
+          "H2 25"
+        ],
+        "rows": [
+          "-rrraggar",
+          "-rrraggxx",
+          "-rrrrggrr",
+          "---rgggrr",
+          "---rrraaa"
+        ],
+        "note": "Ledger ranks 1-5 at half grain, right-anchored on H2 FY25 (FY R Mar-26); Buy/Sell AGM Jun-26 carries no figures"
+      }
     }
   ]
 }
