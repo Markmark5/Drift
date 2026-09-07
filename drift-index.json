@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-03",
+  "updated": "2026-09-07",
   "tickers": [
     {
       "ticker": "STAF",
@@ -1043,17 +1043,17 @@
       "company": "Churchill China plc",
       "kind": "ticker",
       "direction": "watch",
-      "headline": "H1'26 revenue −2.9% misses the confirming turn but nearly closes the decline; cash surges — a bottoming print with a new Q4-dependency flag.",
-      "trigger": "Deterioration conditions 1 and 2 technically met (margin compression, 3 consecutive 🔴; Text falling 2 prints), both context-discounted as a stabilising base — 0/3 counted, no alert.",
+      "headline": "PBT £2.5m misses the ~£3.0m consensus anchor and the guide is now conditional on Q4 — language deteriorating while the hard data stabilises.",
+      "trigger": "Language fires undiscounted (guide made conditional on Q4; third consecutive negative print). Numbers & guide: green-shoot mirror technically met, discounted (level −19.4%, consensus miss). 1/3 counted, no alert.",
       "alert": false,
-      "fired": 0,
+      "fired": 1,
       "fired_of": 3,
-      "lights": "aa-",
-      "rns_type": "H1 TU",
-      "rns_date": "2026-07-31",
-      "build_date": "2026-08-28",
+      "lights": "ar-",
+      "rns_type": "H1 R",
+      "rns_date": "2026-09-07",
+      "build_date": "2026-09-07",
       "spec_version": "v5.5",
-      "next_test": "Sep H1 R: PBT vs ~£3.0m consensus anchor, margin read, and any hard pipeline number decide the call.",
+      "next_test": "Jan 2027 YE-TU: the Q4 the guide depends on — FY PBT ~£6.0m needs H2 £3.5m (+21% on H2'25), or the conditional in-line breaks.",
       "url": "CHH.html",
       "grid": {
         "labels": [
@@ -1075,13 +1075,38 @@
           "H1 26"
         ],
         "rows": [
-          "aaaa-a-a-",
-          "--gaarrr-",
+          "aaaa-a-aa",
+          "--gaarrra",
           "--rrrggag",
-          "--rrrrrg-",
+          "--rrrrrgg",
           "-rrrrrrgg"
         ],
-        "note": "One row per ledger rank at half grain; rightmost = Buy/Sell H1 TU 31 Jul 2026; H2 cells derived."
+        "note": "One row per ledger rank at half grain; rightmost = Buy/Sell H1 R 7 Sep 2026; H2 cells derived."
+      },
+      "prev": {
+        "direction": "watch",
+        "fired": 0,
+        "lights": "aa-",
+        "rns_date": "2026-07-31",
+        "rns_type": "H1 TU"
+      },
+      "trend": {
+        "mode": "share",
+        "cells": "rrr",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": -3
+          },
+          {
+            "m": "EBITDA",
+            "gap": -2.4
+          },
+          {
+            "m": "PBT",
+            "gap": -9.8
+          }
+        ]
       }
     },
     {
