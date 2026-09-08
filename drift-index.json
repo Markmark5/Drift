@@ -2361,17 +2361,17 @@
       "company": "Somero Enterprises",
       "kind": "ticker",
       "direction": "up",
-      "headline": "First quantified guide raise in four years — FY26 \"ahead of\" $86.0m consensus — as Boomed screed decline breaks after three years; Text led, hard prints yet to confirm.",
-      "trigger": "G RAISE (Jul-26) + Text +1→+3 (Jun-26·Jul-26); Drift unlit",
+      "headline": "Guide raised again — FY26 to ~$95m — as H1 revenue grows 22% with every next-test criterion met; the raised guide still implies a shrinking H2.",
+      "trigger": "G RAISE ×2 (Jul-26, Sep-26) + Text +3 on consecutive prints; Drift unlit",
       "alert": true,
       "fired": 2,
       "fired_of": 3,
       "lights": "gg-",
-      "rns_type": "Trading Update",
-      "rns_date": "2026-07-16",
-      "build_date": "2026-08-18",
+      "rns_type": "Interim Results",
+      "rns_date": "2026-09-08",
+      "build_date": "2026-09-08",
       "spec_version": "5.4",
-      "next_test": "8 Sep 2026 — H1 26 results: NA and Boomed screed revenue up YoY in dollars; gross margin ≥ 52.8%.",
+      "next_test": "YE-TU ~Jan 2027 — FY26 revenue ≥ $95m guide; H2 26 vs H2 25 $49.1m",
       "url": "SOM.html",
       "grid": {
         "labels": [
@@ -2393,31 +2393,38 @@
           "H1 26"
         ],
         "rows": [
-          "grrggrrra",
-          "ggrrgrrga",
-          "aaaaraaa-",
-          "rggrrgrra",
-          "--arrrrg-"
+          "grrggrrrg",
+          "ggrrgrrgg",
+          "aaaaraaaa",
+          "rggrrgrrg",
+          "--arrrrgg"
         ],
-        "note": "Ranks 1–5 turn emoji per H1/H2† sub-period; H1 26 = Buy/Sell TU (qualitative only)"
+        "note": "Ranks 1–5 turn emoji per H1/H2† sub-period; H1 26 = Buy/Sell interims (actuals)"
       },
       "trend": {
-        "mode": "growth",
-        "cells": "rr-",
+        "mode": "share",
+        "cells": "gg-",
         "rows": [
           {
             "m": "REV",
-            "gap": -11.2
+            "gap": 6.8
           },
           {
             "m": "EBITDA",
-            "gap": -18.3
+            "gap": 12
           },
           {
             "m": "PBT",
             "gap": null
           }
         ]
+      },
+      "prev": {
+        "direction": "up",
+        "fired": 2,
+        "lights": "gg-",
+        "rns_date": "2026-07-16",
+        "rns_type": "Trading Update"
       }
     },
     {
