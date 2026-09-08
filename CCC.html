@@ -88,6 +88,18 @@ details.guide>summary .em{font-size:22px;margin-right:6px}
 .cbul{margin:0;padding-left:18px;font-size:13px}
 .cbul li{margin-bottom:6px}
 
+/* movement row — 6.3c */
+.mvrow{margin-top:9px;border:1px dashed #57544c;border-radius:9px;padding:8px 12px;
+ display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.mvlab{font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#8d8981;
+ font-weight:700;flex:none}
+.mvval{font-size:13px;font-weight:700;color:#fff}
+.mvval .was{color:#8d8981;font-weight:600}
+.mvarw{font-weight:700}
+.mvarw.up{color:#21d05e}
+.mvarw.dn{color:#ff6b63}
+.mvsince{font-size:10px;color:#8d8981;margin-left:auto;flex:none}
+
 /* ==== TREND WATCH PANEL — LOCKED v5.3 ==== */
 .tw{flex:1; border-left:1px dashed #57544c; padding-left:16px; min-width:0}
 .tw .plab{font-size:9.5px; letter-spacing:.14em; text-transform:uppercase;
@@ -126,7 +138,7 @@ details.top .b{font-size:12.5px;line-height:1.55}
 table.grid{table-layout:fixed; width:100%; min-width:1000px; border-collapse:collapse; font-size:12.5px}
 table.grid th, table.grid td{border:1px solid var(--line); text-align:center; padding:7px 4px; vertical-align:top}
 table.grid col.lab{width:190px}
-table.grid col.per{width:calc((100% - 190px)/8)}
+table.grid col.per{width:calc((100% - 190px)/9)}
 .yband{background:#efedE7; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; font-weight:700}
 th.phead{cursor:pointer; user-select:none; font-size:11.5px; background:var(--paper)}
 th.phead:hover{background:#eceae4}
@@ -238,12 +250,12 @@ pre.json{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;paddi
   <div class="railgap"></div>
  </div>
  <div class="cbody">
-  <h1 class="chead">Guide raised again: first-half profit set to roughly double, full year comfortably ahead — the backlog turn has reached earnings.</h1>
+  <h1 class="chead">Record half delivered and the guide raised again: profit up 87%, order book £9.3bn, full year floored at no less than £380m.</h1>
   <div class="pills">
-   <span class="pill">H1 Trading Update · 09 Jul 2026</span>
+   <span class="pill">H1 Results · 08 Sep 2026</span>
    <span class="pill">FY-end 31 Dec</span>
    <span class="dot">·</span>
-   <span class="pill">B/S: net cash £606m</span>
+   <span class="pill">B/S: net cash £309m</span>
   </div>
 
   <div class="lights">
@@ -251,38 +263,40 @@ pre.json{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;paddi
     <div class="ldate">Jan-26 →</div>
     <div class="bulb b-g"></div>
     <div class="lname">Numbers &amp; guide</div>
-    <div class="lreason">Three straight raises; profit growth resumed at FY-25</div>
+    <div class="lreason">Fourth straight raise; floor set 11% above consensus</div>
    </div>
    <div class="lamp">
     <div class="ldate">Jan-26 →</div>
     <div class="bulb b-g"></div>
     <div class="lname">Language</div>
-    <div class="lreason">Rising four prints, from floor promise to "roughly double"</div>
+    <div class="lreason">Rising five prints; now "significantly ahead" of the market</div>
    </div>
    <div class="lamp">
-    <div class="ldate">Jan-26</div>
+    <div class="ldate">Jan-26 →</div>
     <div class="bulb b-g"></div>
     <div class="lname">Disclosure</div>
-    <div class="lreason">Backlog and sourcing growth re-quantified at pre-close</div>
+    <div class="lreason">Re-quantified at pre-close; segment order books added</div>
    </div>
    <div class="tally"><b>3/3</b><span>FIRED</span></div>
 
    <div class="bstrip" style="flex-basis:100%">
     <div class="bsweep">
      <div class="bbulb b-g"></div>
-     <div><div class="t">Clean · net cash £606m</div>
+     <div><div class="t">Clean · net cash £309m</div>
      <div class="s">Sweep sits outside the 2-of-3 count</div></div>
     </div>
     <div class="tw">
-     <div class="plab">Trend watch · FY26 fc (Apr-26) vs H2 (y-on-y) growth</div>
+     <div class="plab">Trend watch · H1% vs 3yr% · fc Sep-26</div>
      <div class="dset">
       <div class="dcell"><div class="dnm">REVENUE</div>
        <svg width="50" height="50" viewBox="0 0 42 42">
         <circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/>
+        <circle cx="21" cy="21" r="15.915" fill="none" stroke="#21d05e" stroke-width="5"
+         stroke-dasharray="62 100" transform="rotate(-90 21 21)" stroke-linecap="round"/>
         <line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/>
        </svg>
-       <div class="dfig" style="color:#6d6a62">n/a</div>
-       <div class="dtrend">no revenue forecast</div><div class="dfc"></div></div>
+       <div class="dfig" style="color:#7bd88f">+12.8pp</div>
+       <div class="dtrend">59.4 vs 46.6</div><div class="dfc">at H1 R</div></div>
       <div class="dcell"><div class="dnm">EBITDA</div>
        <svg width="50" height="50" viewBox="0 0 42 42">
         <circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/>
@@ -294,13 +308,18 @@ pre.json{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;paddi
        <svg width="50" height="50" viewBox="0 0 42 42">
         <circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/>
         <circle cx="21" cy="21" r="15.915" fill="none" stroke="#21d05e" stroke-width="5"
-         stroke-dasharray="35 100" transform="rotate(-90 21 21)" stroke-linecap="round"/>
+         stroke-dasharray="54 100" transform="rotate(-90 21 21)" stroke-linecap="round"/>
         <line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/>
        </svg>
-       <div class="dfig" style="color:#7bd88f">+7.1pp</div>
-       <div class="dtrend">-6.5% &rarr; <b>+14.2%</b></div><div class="dfc">fc +7.1%</div></div>
+       <div class="dfig" style="color:#7bd88f">+8.7pp</div>
+       <div class="dtrend">44.7 vs 36.0</div><div class="dfc">at H1 R</div></div>
      </div>
     </div>
+   </div>
+   <div class="mvrow" style="flex-basis:100%">
+    <span class="mvlab">Since last RNS</span>
+    <span class="mvval">Turning up · 3/3 held</span>
+    <span class="mvsince">measured from H1 TU · 2026-07-09</span>
    </div>
   </div>
 
@@ -322,20 +341,20 @@ pre.json{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;paddi
   </details>
 
   <div class="boxes">
-   <div class="box"><div class="lb">Current state</div><div class="hl2">Comfortably ahead</div>
-    <p>First-half profit guided to roughly double last year's £81.5m; the full year is guided above a consensus that has itself been rising all year.</p></div>
+   <div class="box"><div class="lb">Current state</div><div class="hl2">£380m floor</div>
+    <p>Record half delivered £152.4m, up 87%. The new full-year floor sits 11% above a consensus that has risen four times this year.</p></div>
    <div class="box"><div class="lb">Warning you get</div><div class="hl2">2–3 halves</div>
     <p>The order book turned up in 2024, sourcing growth confirmed at H1-25, and group profit followed at FY-25. All three now point the same way.</p></div>
-   <div class="box"><div class="lb">Argues against</div><div class="hl2">One customer</div>
-    <p>The record order book leans heavily on North American artificial-intelligence work for a single dominant customer, and the second half laps a record.</p></div>
-   <div class="box"><div class="lb">Next test</div><div class="hl2">8 Sep 2026</div>
-    <p>Half-year results: does adjusted profit before tax land near £163m, and is the order book quantified above £7.1bn?</p></div>
+   <div class="box"><div class="lb">Argues against</div><div class="hl2">Thinner slices</div>
+    <p>Gross margin fell 303 points to 9.6%, contract provisions rose £10.0m, and the order book leans heavily on one North American customer.</p></div>
+   <div class="box"><div class="lb">Next test</div><div class="hl2">Late Oct 2026</div>
+    <p>Q3 update: is the £380m floor lifted again, and does the order book keep growing after such heavy project completions?</p></div>
   </div>
 
   <ul class="cbul">
-   <li>The lead worked in the direction the framework expects: the order book moved first, the sourcing growth rate second, reported profit last — so the July guide is the payoff of a turn already visible two years ago, not fresh news.</li>
-   <li>Statutory profit trails the adjusted figure by £33.5m at FY-25, up from £9.4m, on acquisition write-offs; the gap is identifiable rather than operational, but a third year of widening would change that reading.</li>
-   <li>What breaks it: a September half-year that lands materially below £163m, an order book left unquantified again, or any softening of the single-customer concentration disclosed in the North American segment.</li>
+   <li>The lead worked exactly as the ledger predicted: order book first in 2024, sourcing growth second at H1-25, reported profit third at FY-25 — and this half is the confirmation, not the signal.</li>
+   <li>Guidance credibility is now four floors set and four cleared; the £380m floor against a £340.9m consensus is the widest gap the company has ever put on the record.</li>
+   <li>What breaks it: order book stalling despite heavy completions, gross margin falling below roughly 9%, or the contract provisions rising again from £24.8m.</li>
   </ul>
  </div>
 </div>
@@ -364,22 +383,23 @@ pre.json{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;paddi
 
 <!-- ============ §2 GRID ============ -->
 <section id="s2">
- <h2 class="sec">§2 · Forward grid — 5 ranks = 5 blocks · 8 period columns</h2>
+ <h2 class="sec">§2 · Forward grid — 5 ranks = 5 blocks · 9 period columns</h2>
  <div class="gridwrap">
  <table class="grid" id="fg">
-  <colgroup><col class="lab"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"></colgroup>
+  <colgroup><col class="lab"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"></colgroup>
   <thead>
-   <tr class="yband"><th class="lab">Fiscal year</th><th colspan="2">FY22</th><th colspan="2">FY23</th><th colspan="2">FY24</th><th colspan="2">FY25</th></tr>
+   <tr class="yband"><th class="lab">Fiscal year</th><th colspan="2">FY22</th><th colspan="2">FY23</th><th colspan="2">FY24</th><th colspan="2">FY25</th><th>FY26</th></tr>
    <tr><th class="lab">Period</th>
     <th class="phead" data-p="H1">H1</th><th class="phead" data-p="H2">H2</th>
     <th class="phead" data-p="H1">H1</th><th class="phead" data-p="H2">H2</th>
     <th class="phead" data-p="H1">H1</th><th class="phead" data-p="H2">H2</th>
-    <th class="phead" data-p="H1">H1</th><th class="phead bs-col" data-p="H2">⭐ FY R · Mar-26</th></tr>
+    <th class="phead" data-p="H1">H1</th><th class="phead" data-p="H2">H2</th>
+    <th class="phead bs-col" data-p="H1">⭐ H1 R · Sep-26</th></tr>
   </thead>
   <tbody>
 
-   <tr class="secbar"><td colspan="9">RANK 1 — COMMITTED PRODUCT ORDER BACKLOG £bn <span class="nat">· arrow = up or down since the last print</span></td></tr>
-   <tr class="strip"><td class="lab">Position at</td><td>Jun-22</td><td>Dec-22</td><td>Jun-23</td><td>Dec-23</td><td>Jun-24</td><td>Dec-24</td><td>Jun-25</td><td class="bs-col">Dec-25</td></tr>
+   <tr class="secbar"><td colspan="10">RANK 1 — COMMITTED PRODUCT ORDER BACKLOG £bn <span class="nat">· arrow = up or down since the last print</span></td></tr>
+   <tr class="strip"><td class="lab">Position at</td><td>Jun-22</td><td>Dec-22</td><td>Jun-23</td><td>Dec-23</td><td>Jun-24</td><td>Dec-24</td><td>Jun-25</td><td>Dec-25</td><td class="bs-col">Jun-26</td></tr>
    <tr class="vrow"><td class="lab">£bn · Δ vs prior print</td>
     <td><span class="val">3.40ʳ</span><span class="delta">—</span></td>
     <td><span class="val">2.91ʳ</span><span class="delta neg">−0.49 (−14%) 🔴↘</span></td>
@@ -388,11 +408,12 @@ pre.json{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;paddi
     <td><span class="val">1.80</span><span class="delta">+0.57 (+47%) 🟢↗</span></td>
     <td><span class="val">2.41</span><span class="delta">+0.62 (+35%) 🟢↗</span></td>
     <td><span class="val">2.20</span><span class="delta neg">−0.22 (−9%) 🔴↘</span></td>
-    <td class="bs-col"><span class="val">7.10</span><span class="delta">+4.90 (+223%) 🟢↗</span></td></tr>
-   <tr class="agg"><td class="lab">FY-end position</td><td colspan="2"><span class="aval">£2.91bn</span><span class="anote">−24%</span></td><td colspan="2"><span class="aval">£1.22bn</span><span class="anote">−58%</span></td><td colspan="2"><span class="aval">£2.41bn</span><span class="anote">+98%</span></td><td colspan="2"><span class="aval">£7.10bn</span><span class="anote">+194%</span></td></tr>
+    <td><span class="val">7.10</span><span class="delta">+4.90 (+223%) 🟢↗</span></td>
+    <td class="bs-col"><span class="val">9.30</span><span class="delta">+2.20 (+31%) 🟢↗</span></td></tr>
+   <tr class="agg"><td class="lab">FY-end position</td><td colspan="2"><span class="aval">£2.91bn</span><span class="anote">−24%</span></td><td colspan="2"><span class="aval">£1.22bn</span><span class="anote">−58%</span></td><td colspan="2"><span class="aval">£2.41bn</span><span class="anote">+98%</span></td><td colspan="2"><span class="aval">£7.10bn</span><span class="anote">+194%</span></td><td><span class="aval">—</span></td></tr>
 
-   <tr class="secbar"><td colspan="9">RANK 2 — GROUP ADJUSTED PROFIT BEFORE TAX £m <span class="nat">· 🟢↗ growing faster than last year · 🟡→ about the same pace · 🔴↘ shrinking or clearly slowing</span></td></tr>
-   <tr class="strip"><td class="lab">Period</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td class="bs-col">H2†</td></tr>
+   <tr class="secbar"><td colspan="10">RANK 2 — GROUP ADJUSTED PROFIT BEFORE TAX £m <span class="nat">· 🟢↗ growing faster than last year · 🟡→ about the same pace · 🔴↘ shrinking or clearly slowing</span></td></tr>
+   <tr class="strip"><td class="lab">Period</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td class="bs-col">H1</td></tr>
    <tr class="vrow"><td class="lab">£m · vs same period last year</td>
     <td><span class="val">111.9</span><span class="delta">—</span></td>
     <td><span class="val">151.8†</span><span class="delta">—</span></td>
@@ -401,11 +422,12 @@ pre.json{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;paddi
     <td><span class="val">87.2 <span class="neg">(−28.4%)</span></span><span class="delta neg">🔴↘</span></td>
     <td><span class="val">166.8† (+6.8%)</span><span class="delta">🟢↗</span></td>
     <td><span class="val">81.5 <span class="neg">(−6.5%)</span></span><span class="delta neg">🔴↘</span></td>
-    <td class="bs-col"><span class="val">190.5† (+14.2%)</span><span class="delta">🟢↗</span></td></tr>
-   <tr class="agg"><td class="lab">FY aggregate</td><td colspan="2"><span class="aval">263.7</span><span class="anote">—</span></td><td colspan="2"><span class="aval">278.0</span><span class="anote">+5.4%</span></td><td colspan="2"><span class="aval">254.0</span><span class="anote">−8.6%</span></td><td colspan="2"><span class="aval">272.0</span><span class="anote">+7.1%</span></td></tr>
+    <td><span class="val">190.5† (+14.2%)</span><span class="delta">🟢↗</span></td>
+    <td class="bs-col"><span class="val">152.4 (+87.0%)</span><span class="delta">🟢↗</span></td></tr>
+   <tr class="agg"><td class="lab">FY aggregate</td><td colspan="2"><span class="aval">263.7</span><span class="anote">—</span></td><td colspan="2"><span class="aval">278.0</span><span class="anote">+5.4%</span></td><td colspan="2"><span class="aval">254.0</span><span class="anote">−8.6%</span></td><td colspan="2"><span class="aval">272.0</span><span class="anote">+7.1%</span></td><td><span class="aval">≥380</span><span class="anote">guide</span></td></tr>
 
-   <tr class="secbar"><td colspan="9">RANK 3 — GROUP ADJUSTED OPERATING PROFIT £m <span class="nat">· 🟢↗ growing faster than last year · 🟡→ about the same pace · 🔴↘ shrinking or clearly slowing</span></td></tr>
-   <tr class="strip"><td class="lab">Period</td><td>—</td><td>—</td><td>—</td><td>—</td><td>H1</td><td>H2†</td><td>H1</td><td class="bs-col">H2†</td></tr>
+   <tr class="secbar"><td colspan="10">RANK 3 — GROUP ADJUSTED OPERATING PROFIT £m <span class="nat">· 🟢↗ growing faster than last year · 🟡→ about the same pace · 🔴↘ shrinking or clearly slowing</span></td></tr>
+   <tr class="strip"><td class="lab">Period</td><td>—</td><td>—</td><td>—</td><td>—</td><td>H1</td><td>H2†</td><td>H1</td><td>H2†</td><td class="bs-col">H1</td></tr>
    <tr class="vrow"><td class="lab">£m · vs same period last year</td>
     <td><span class="val">—</span><span class="delta">outside cadence</span></td>
     <td><span class="val">—</span><span class="delta">outside cadence</span></td>
@@ -414,11 +436,12 @@ pre.json{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;paddi
     <td><span class="val">81.1</span><span class="delta">—</span></td>
     <td><span class="val">165.6†</span><span class="delta">—</span></td>
     <td><span class="val">82.1 (+1.2%)</span><span class="delta">🟢↗</span></td>
-    <td class="bs-col"><span class="val">192.6† (+16.3%)</span><span class="delta">🟢↗</span></td></tr>
-   <tr class="agg"><td class="lab">FY aggregate</td><td colspan="2"><span class="aval">—</span></td><td colspan="2"><span class="aval">—</span></td><td colspan="2"><span class="aval">246.7</span><span class="anote">—</span></td><td colspan="2"><span class="aval">274.7</span><span class="anote">+11.3%</span></td></tr>
+    <td><span class="val">192.6† (+16.3%)</span><span class="delta">🟢↗</span></td>
+    <td class="bs-col"><span class="val">153.1 (+86.5%)</span><span class="delta">🟢↗</span></td></tr>
+   <tr class="agg"><td class="lab">FY aggregate</td><td colspan="2"><span class="aval">—</span></td><td colspan="2"><span class="aval">—</span></td><td colspan="2"><span class="aval">246.7</span><span class="anote">—</span></td><td colspan="2"><span class="aval">274.7</span><span class="anote">+11.3%</span></td><td><span class="aval">—</span></td></tr>
 
-   <tr class="secbar"><td colspan="9">RANK 4 — TECHNOLOGY SOURCING GROWTH % <span class="nat">· arrow = up or down versus the same period last year, band 2.0 points</span></td></tr>
-   <tr class="strip"><td class="lab">Period</td><td>—</td><td>FY</td><td>H1</td><td>FY</td><td>H1</td><td>FY</td><td>H1</td><td class="bs-col">FY</td></tr>
+   <tr class="secbar"><td colspan="10">RANK 4 — TECHNOLOGY SOURCING GROWTH % <span class="nat">· arrow = up or down versus the same period last year, band 2.0 points</span></td></tr>
+   <tr class="strip"><td class="lab">Period</td><td>—</td><td>FY</td><td>H1</td><td>FY</td><td>H1</td><td>FY</td><td>H1</td><td>FY</td><td class="bs-col">H1</td></tr>
    <tr class="vrow"><td class="lab">% at fixed rates · vs same period last year</td>
     <td><span class="val">—</span><span class="delta">outside cadence</span></td>
     <td><span class="val">+30.8%</span><span class="delta">—</span></td>
@@ -427,11 +450,12 @@ pre.json{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;paddi
     <td><span class="val">−12.2%</span><span class="delta neg">🔴↘</span></td>
     <td><span class="val">+0.5%</span><span class="delta">🟡→</span></td>
     <td><span class="val">+32.2%</span><span class="delta">🟢↗</span></td>
-    <td class="bs-col"><span class="val">+37.8%</span><span class="delta">🟢↗</span></td></tr>
-   <tr class="agg"><td class="lab">FY rate</td><td colspan="2"><span class="aval">+30.8%</span></td><td colspan="2"><span class="aval">normalising</span></td><td colspan="2"><span class="aval">+0.5%</span></td><td colspan="2"><span class="aval">+37.8%</span></td></tr>
+    <td><span class="val">+37.8%</span><span class="delta">🟢↗</span></td>
+    <td class="bs-col"><span class="val">+66.2%</span><span class="delta">🟢↗</span></td></tr>
+   <tr class="agg"><td class="lab">FY rate</td><td colspan="2"><span class="aval">+30.8%</span></td><td colspan="2"><span class="aval">normalising</span></td><td colspan="2"><span class="aval">+0.5%</span></td><td colspan="2"><span class="aval">+37.8%</span></td><td><span class="aval">—</span></td></tr>
 
-   <tr class="secbar"><td colspan="9">RANK 5 — GROUP REVENUE GROWTH % <span class="nat">· 🟢↗ growing faster than last year · 🟡→ about the same pace · 🔴↘ shrinking or clearly slowing</span></td></tr>
-   <tr class="strip"><td class="lab">Period</td><td>—</td><td>FY</td><td>—</td><td>FY</td><td>—</td><td>FY</td><td>H1</td><td class="bs-col">FY</td></tr>
+   <tr class="secbar"><td colspan="10">RANK 5 — GROUP REVENUE GROWTH % <span class="nat">· 🟢↗ growing faster than last year · 🟡→ about the same pace · 🔴↘ shrinking or clearly slowing</span></td></tr>
+   <tr class="strip"><td class="lab">Period</td><td>—</td><td>FY</td><td>—</td><td>FY</td><td>—</td><td>FY</td><td>H1</td><td>FY</td><td class="bs-col">H1</td></tr>
    <tr class="vrow"><td class="lab">% reported · vs same period last year</td>
     <td><span class="val">—</span><span class="delta">outside cadence</span></td>
     <td><span class="val">+30.7%</span><span class="delta">—</span></td>
@@ -440,8 +464,9 @@ pre.json{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;paddi
     <td><span class="val">—</span><span class="delta">outside cadence</span></td>
     <td><span class="val">−2.0%</span><span class="delta neg">🔴↘</span></td>
     <td><span class="val">+28.5%</span><span class="delta">🟢↗</span></td>
-    <td class="bs-col"><span class="val">+32.0%</span><span class="delta">🟢↗</span></td></tr>
-   <tr class="agg"><td class="lab">FY revenue</td><td colspan="2"><span class="aval">£6,470.5m</span></td><td colspan="2"><span class="aval">—</span></td><td colspan="2"><span class="aval">£6,964.8m</span><span class="anote">−2.0%</span></td><td colspan="2"><span class="aval">£9,193.9m</span><span class="anote">+32.0%</span></td></tr>
+    <td><span class="val">+32.0%</span><span class="delta">🟢↗</span></td>
+    <td class="bs-col"><span class="val">+71.6%</span><span class="delta">🟢↗</span></td></tr>
+   <tr class="agg"><td class="lab">FY revenue</td><td colspan="2"><span class="aval">£6,470.5m</span></td><td colspan="2"><span class="aval">—</span></td><td colspan="2"><span class="aval">£6,964.8m</span><span class="anote">−2.0%</span></td><td colspan="2"><span class="aval">£9,193.9m</span><span class="anote">+32.0%</span></td><td><span class="aval">—</span></td></tr>
 
   </tbody>
  </table>
@@ -452,13 +477,13 @@ pre.json{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;paddi
   <div class="inner">
    <details class="sub"><summary>🔲 Card strip — wall preview &amp; index entry</summary><div class="b">
     <div class="stripbox">
-     <div class="strow"><span class="rl">R1</span><span class="sc9 n"></span><span class="sc9 n"></span><span class="sc9 r"></span><span class="sc9 r"></span><span class="sc9 r"></span><span class="sc9 g"></span><span class="sc9 g"></span><span class="sc9 r"></span><span class="sc9 g bs"></span></div>
-     <div class="strow"><span class="rl">R2</span><span class="sc9 n"></span><span class="sc9 n"></span><span class="sc9 n"></span><span class="sc9 g"></span><span class="sc9 g"></span><span class="sc9 r"></span><span class="sc9 g"></span><span class="sc9 r"></span><span class="sc9 g bs"></span></div>
-     <div class="strow"><span class="rl">R3</span><span class="sc9 n"></span><span class="sc9 n"></span><span class="sc9 n"></span><span class="sc9 n"></span><span class="sc9 n"></span><span class="sc9 n"></span><span class="sc9 n"></span><span class="sc9 g"></span><span class="sc9 g bs"></span></div>
-     <div class="strow"><span class="rl">R4</span><span class="sc9 n"></span><span class="sc9 n"></span><span class="sc9 n"></span><span class="sc9 g"></span><span class="sc9 a"></span><span class="sc9 r"></span><span class="sc9 a"></span><span class="sc9 g"></span><span class="sc9 g bs"></span></div>
-     <div class="strow"><span class="rl">R5</span><span class="sc9 n"></span><span class="sc9 n"></span><span class="sc9 n"></span><span class="sc9 n"></span><span class="sc9 r"></span><span class="sc9 n"></span><span class="sc9 r"></span><span class="sc9 g"></span><span class="sc9 g bs"></span></div>
+     <div class="strow"><span class="rl">R1</span><span class="sc9 n"></span><span class="sc9 r"></span><span class="sc9 r"></span><span class="sc9 r"></span><span class="sc9 g"></span><span class="sc9 g"></span><span class="sc9 r"></span><span class="sc9 g"></span><span class="sc9 g bs"></span></div>
+     <div class="strow"><span class="rl">R2</span><span class="sc9 n"></span><span class="sc9 n"></span><span class="sc9 g"></span><span class="sc9 g"></span><span class="sc9 r"></span><span class="sc9 g"></span><span class="sc9 r"></span><span class="sc9 g"></span><span class="sc9 g bs"></span></div>
+     <div class="strow"><span class="rl">R3</span><span class="sc9 n"></span><span class="sc9 n"></span><span class="sc9 n"></span><span class="sc9 n"></span><span class="sc9 n"></span><span class="sc9 n"></span><span class="sc9 g"></span><span class="sc9 g"></span><span class="sc9 g bs"></span></div>
+     <div class="strow"><span class="rl">R4</span><span class="sc9 n"></span><span class="sc9 n"></span><span class="sc9 g"></span><span class="sc9 a"></span><span class="sc9 r"></span><span class="sc9 a"></span><span class="sc9 g"></span><span class="sc9 g"></span><span class="sc9 g bs"></span></div>
+     <div class="strow"><span class="rl">R5</span><span class="sc9 n"></span><span class="sc9 n"></span><span class="sc9 n"></span><span class="sc9 r"></span><span class="sc9 n"></span><span class="sc9 r"></span><span class="sc9 g"></span><span class="sc9 g"></span><span class="sc9 g bs"></span></div>
     </div>
-    <p>Nine cells, right-anchored on the FY-25 results column (outlined). One left pad, since the record scores eight sub-periods. Rows are the five ledger ranks in order.</p>
+    <p>Nine cells, right-anchored on the H1-26 results column (outlined). No pad — the record now scores exactly nine sub-periods. Rows are the five ledger ranks in order.</p>
     <pre class="json" id="entryview"></pre>
    </div></details>
 
@@ -488,14 +513,14 @@ pre.json{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;paddi
  <h2 class="sec">§2.0 · Current state</h2>
  <div class="row20">
   <div class="bridge">
-   <div class="dkbar"><span class="em">🍺</span>IDIOT'S GUIDE TO THE ADJUSTED PROFIT BEFORE TAX BRIDGE — why profit went up (£254.0m → £272.0m)</div>
+   <div class="dkbar"><span class="em">🍺</span>IDIOT'S GUIDE TO THE ADJUSTED PROFIT BEFORE TAX BRIDGE — why profit went up (£81.5m → £152.4m)</div>
    <table class="br">
-    <tr class="g"><td class="dv">🏗️ The server-room gold rush</td><td class="cn">+£109.1m</td><td>Kit sold jumped by a third as one enormous American customer filled data centres with artificial-intelligence hardware. Retained income on that trade rose to £1,144.1m.</td></tr>
-    <tr class="r"><td class="dv">🍕 Bigger pizza, thinner slices</td><td class="cn">n/q</td><td>Selling boxes keeps less per pound than selling people. The share kept fell 2.4 percentage points, so the money flowing through grew far faster than what stuck.</td></tr>
-    <tr class="r"><td class="dv">🧾 Everyone wants paying</td><td class="cn">n/q</td><td>Commissions to the salespeople who booked the work, plus training and new warehouses. Enough to leave operating profit up £28.0m, not the full £109.1m.</td></tr>
-    <tr class="r"><td class="dv">🏦 The interest cheque shrank</td><td class="cn">−£10.0m</td><td>Cash handed back to shareholders in 2024 is cash no longer sitting in the bank earning interest. That gap alone is why profit rose £18.0m and not £28.0m.</td></tr>
-   </table>
-   <div class="brcap"><b>So in one sentence:</b> a colossal surge in hardware sold added £109.1m of retained income, most of which was eaten by thinner slices, higher pay and a smaller interest cheque, leaving £18.0m of extra profit. <b>Profit falls when:</b> the American customer slows its buying, or the retained share thins further without volumes rising to cover it.</div>
+    <tr class="g"><td class="dv">🚚 A tidal wave of tin</td><td class="cn">+£153.7m</td><td>Kit shipped nearly doubled as American customers filled halls with computing hardware. Money kept after paying suppliers rose to £657.9m.</td></tr>
+    <tr class="r"><td class="dv">🪒 The close shave</td><td class="cn">n/q</td><td>Every pound billed now keeps 9.6 pence, down from 12.6 pence. Big cheap boxes pay worse than small clever ones, so the pile grew faster than the keep.</td></tr>
+    <tr class="r"><td class="dv">🩹 Sour deals patched up</td><td class="cn">−£10.0m</td><td>A handful of service contracts are not earning what was promised. Money set aside against them rose from £14.8m to £24.8m.</td></tr>
+    <tr class="r"><td class="dv">👷 Feeding the machine</td><td class="cn">n/q</td><td>More people, more warehouses, two newly bought American firms to absorb. Enough to keep £70.9m of the £153.7m from reaching profit.</td></tr>
+    </table>
+   <div class="brcap"><b>So in one sentence:</b> a near-doubling of kit shipped added £153.7m of kept income, roughly half of which went on thinner slices, sour contracts and the cost of growing, leaving profit up £70.9m at £152.4m. <b>Profit falls when:</b> the American order flow slows, the keep per pound drops below about 9 pence, or more contracts turn sour.</div>
   </div>
 
   <div class="cbar">
@@ -503,14 +528,16 @@ pre.json{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;paddi
    <div class="in">
     <p class="lead">🟢 TURNING UP</p>
     <ul>
-     <li>July update guides the half to roughly double £81.5m, about £163m.</li>
-     <li>Guide sits above a consensus that rose £22m since April, to £313.7m.</li>
-     <li>Second quarter beat expectations after a first quarter already called excellent.</li>
-     <li>Order book above £7.1bn, up 194% on the year at the December print.</li>
-     <li>Sourcing growth +37.8% at FY-25, a second consecutive acceleration.</li>
-     <li>Second half ended FY-25 growing 14.2%, double the 7.1% the forecast needs.</li>
-     <li>⚠️ Company flags a tougher second-half comparison; the strength is front-loaded.</li>
-     <li>⚠️ North America is 71% of the order book, much of it one customer.</li>
+     <li>Record half: adjusted profit £152.4m, up 87.0% on H1-25.</li>
+     <li>Order book £9.3bn, up 323% on the year and 31% since December.</li>
+     <li>New floor of no less than £380m, against £340.9m consensus.</li>
+     <li>Sourcing income up 66.2%; revenue up 71.6% to £6,845.2m.</li>
+     <li>Interim dividend 27.1p, up 14.8% and deliberately above policy.</li>
+     <li>Half banked 44.7% of the forecast year against a 36.0% norm.</li>
+     <li>⚠️ Gross margin down 303 points to 9.6% on cheaper hardware.</li>
+     <li>⚠️ Contract provisions up £14.8m to £24.8m on underperforming deals.</li>
+     <li>⚠️ £20.2m non-cash write-down of French and Western Europe goodwill.</li>
+     <li>⚠️ July guide implied about £163m; £152.4m landed 6.5% under it.</li>
     </ul>
    </div>
   </div>
@@ -520,36 +547,36 @@ pre.json{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;paddi
   <summary>§2.0 workings</summary>
   <div class="inner">
    <details class="sub"><summary>The four checks — workings behind the read</summary><div class="b">
-    <p><b>1 · Against the period immediately before.</b> The half is guided to roughly double £81.5m, about £163m, against £81.5m at H1-25. Roughly +100%. 🟢↗</p>
-    <p><b>2 · Against the same document type a year earlier.</b> The July 2024 update guided the half to about £87m. About £163m against that is +87%. The H1-25 base was itself called relatively soft by the company, so this is a turn rather than an easy comparison flattering the number. 🟢↗</p>
-    <p><b>3 · Every derivable sub-period.</b> No pounds are split by quarter, so no arithmetic is possible. In words: the second quarter came in ahead of expectations following an excellent first quarter, so both quarters accelerated and neither reads red. Qualitative only.</p>
-    <p><b>4 · Against the company's own previous guide.</b> April guided comfortably ahead of a £291.3m consensus. July repeats comfortably ahead against £313.7m, range £305.0m to £324.3m. The bar rose £22m and the company still clears it — an effective raise. 🟢</p>
-   </div></details>
+    <p><b>1 · Against the period immediately before.</b> Adjusted profit before tax £152.4m against £81.5m at H1-25, up 87.0%, and 87.7% at fixed exchange rates. Operating profit £153.1m against £82.1m, up 86.5%. Revenue £6,845.2m against £3,988.8m, up 71.6%. Every ranked metric green. 🟢↗</p>
+    <p><b>2 · Against the same document type a year earlier.</b> This is a half-year results document and the comparison is the same one — up 87.0%. The H1-25 base was described by the company at the time as relatively soft, and the record order book carried into 2026 is what converts it.</p>
+    <p><b>3 · Every derivable sub-period.</b> The document splits no quarters, so no sub-period arithmetic is possible. The company states the second half has started strongly and that full-year weighting towards the second half will be less pronounced than usual — which is a first in this record and points the opposite way from the habitual seasonal caution.</p>
+    <p><b>4 · Against the company's own previous guide.</b> July guided the half to approximately double £81.5m, implying about £163m; £152.4m landed 6.5% under that loose wording while still up 87%. The full-year guide moves decisively the other way: from comfortably ahead of £313.7m to a floor of no less than £380m, significantly ahead of a £340.9m consensus. The floor sits 11.5% above consensus — the widest gap in the record. 🟢 RAISE</p>
+    </div></details>
 
    <details class="sub"><summary>Notes — §2.0</summary><div class="b">
     <p>The guide's base is stated as adjusted profit before tax with H1-25 given as £81.5m, so the doubling applies to that line and not to operating profit. Roughly £163m remains a guide and enters no table.</p>
    </div></details>
 
    <details class="sub"><summary>Balance-sheet sweep</summary><div class="b">
-    <p><b>Result: clean.</b> No first-tier condition. Adjusted net funds £606.0m at FY-25, against £482m a year earlier — cash building, never net debt at any point in the record. Going-concern wording is unchanged boilerplate across all four full-year documents, with no material uncertainty, no emphasis of matter and no covenant language. The solvency search returned only routine going-concern statements.</p>
-    <p><b>Second-tier: none.</b> The dividend has risen every year in the record: 67.9p, 70.0p, 70.7p, then 74.6p at FY-25, up 5.5%. The 2024 return of value was a choice, not a need. No placing, no maturing facility without a plan.</p>
-    <p><b>Wedge check.</b> Statutory profit before tax £238.5m against adjusted £272.0m at FY-25 — a gap of £33.5m, widened from £9.4m at FY-24. The cause is acquisition write-offs, chiefly the North American intangibles and the AgreeYa purchase, so it is identifiable rather than operational. A verdict bullet, watched for a third year of widening.</p>
-    <p><b>Green-shoot mirrors.</b> Net funds up two consecutive full years and a dividend raised for a fourth. Both recorded as verdict notes.</p>
-   </div></details>
+    <p><b>Result: clean.</b> No first-tier condition. Adjusted net funds £308.7m at 30 June 2026, against £278.0m a year earlier, after £124.2m of cash spent on the AgreeYa and Government Acquisitions purchases. Never net debt at any point in the record. The reviewer states nothing came to their attention suggesting an inappropriate going-concern assumption or undisclosed material uncertainty.</p>
+    <p><b>Second-tier: two watch items, neither decisive.</b> Customer contract provisions rose from £14.8m at December to £24.8m at June, against a small number of service contracts not meeting expectations — a £10.0m charge and the one genuine blemish. Separately a £20.2m non-cash write-down of French assets and Western Europe goodwill, following sustained underperformance in France. Both sit outside adjusted profit. Two items reached, so this is noted rather than escalated.</p>
+    <p><b>Wedge check — narrowed, and that matters.</b> Statutory profit before tax £142.6m against adjusted £152.4m: a gap of £9.8m, against £8.3m at H1-25. The full-year 2025 widening to £33.5m did not continue into this half. The prior build flagged a third year of widening as the thing to watch; on this print it has not happened.</p>
+    <p><b>Green-shoot mirrors.</b> Interim dividend 27.1p, up 14.8%, explicitly above what the policy would imply because of the strength of the half. Order book at a record. Both recorded as verdict notes.</p>
+    </div></details>
 
    <details class="sub"><summary>Trend Watch workings</summary><div class="b">
-    <p>Anchored to the FY-25 results, 12 March 2026, at the operator's instruction. That is a full-year document, so the panel runs in growth mode: the latest completed half's year-on-year growth against the growth the following year's forecast requires. Sign convention is what was delivered minus what is required, so negative means behind. The forecast is the company-compiled consensus quoted in the 24 April 2026 update; staleness testing was waived by the operator for this build.</p>
+    <p>The new buy/sell document is a half-year results statement, so the panel switches from growth mode to <b>share mode</b>: how much of the forecast year is already banked, against the company's own three-year average for the same period. Sign convention is unchanged — what was delivered minus what is normal, so positive means ahead of the usual pace.</p>
     <table class="tg">
-     <thead><tr><th>Metric</th><th>Basis</th><th>H2-25 actual</th><th>Prior-year comparator</th><th>H2 growth</th><th>FY1 forecast</th><th>Required growth</th><th>Gap</th><th>Ranked in §2?</th></tr></thead>
+     <thead><tr><th>Metric</th><th>Basis</th><th>H1-26 actual</th><th>FY1 forecast</th><th>Share of year</th><th>Norm and years</th><th>Gap</th><th>Source</th><th>Ranked in §2?</th></tr></thead>
      <tbody>
-      <tr><td>REVENUE</td><td>reported</td><td>£5,205.1m†</td><td>£3,861.0m†</td><td>+34.8%</td><td colspan="2">no revenue forecast published in the April footnote</td><td>n/a</td><td>Y — rank 5</td></tr>
-      <tr><td>EBITDA</td><td>—</td><td colspan="4">the group does not report an adjusted EBITDA; the only such figure in the FY-25 document belongs to the acquired AgreeYa business</td><td>—</td><td>n/a</td><td>N</td></tr>
-      <tr><td>PBT</td><td>adjusted</td><td>£190.5m†</td><td>£166.8m†</td><td><b>+14.2%</b></td><td>£291.3m (Apr-26)</td><td>+7.1%</td><td><b>+7.1pp</b></td><td>Y — rank 2</td></tr>
+      <tr><td>REVENUE</td><td>reported</td><td>£6,845.2m</td><td>£11,524.0m</td><td>59.4%</td><td>46.6% — 2023 51.8, 2024 44.6, 2025 43.4</td><td><b>+12.8pp</b></td><td>H1 R; forecast from datablock, Aug-26</td><td>Y — rank 5</td></tr>
+      <tr><td>EBITDA</td><td>—</td><td colspan="5">the group publishes no adjusted EBITDA of its own; the only such figure in the document belongs to the acquired AgreeYa business, and the datablock's own splits are barred as a source</td><td>n/a</td><td>N</td></tr>
+      <tr><td>PBT</td><td>adjusted</td><td>£152.4m</td><td>£340.9m</td><td>44.7%</td><td>36.0% — 2023 43.8, 2024 34.3, 2025 30.0</td><td><b>+8.7pp</b></td><td>H1 R; forecast from this document's own footnote</td><td>Y — rank 2</td></tr>
      </tbody>
     </table>
-    <p><b>Sources.</b> Revenue halves from the FY-25 and H1-25 highlights tables (£9,193.9m and £3,988.8m for 2025; £6,964.8m and £3,103.8m for 2024). Profit halves from the same tables (£272.0m and £81.5m; £254.0m and £87.2m). Forecast from the 24 April 2026 update footnote. Both ranked metrics tie out to the §2 grid.</p>
-    <p><b>Reading.</b> The company left FY-25 growing profit at roughly twice the pace the following year's forecast requires, which is why the ring is green and well outside the 4.0-point band. Two cells are unavailable and say so rather than estimating. The halves are derived as full year minus first half, so this carries the derived-only watch flag until a printed half corroborates it.</p>
-   </div></details>
+    <p><b>Sources.</b> Half-year actuals from this document's financial summary. Norms built from the company's own printed halves and full years, never from a datablock split — the block's profit halves read 76.4 and 173.6 against the company's adjusted 81.5 and 190.5, so the known corruption is live on this ticker. The profit forecast is the £340.9m consensus quoted in this document's own footnote, which is current. The revenue forecast is the datablock's £11,524.0m at Aug-26, whose full-year and half figures tie exactly to the company's prints, so the basis is sound — but it predates this raise and is therefore almost certainly too low.</p>
+    <p><b>Reading, and its caveat.</b> Both live rows sit far outside the two-point band: the half has banked more of the year than this company normally does by June. The revenue row overstates the case, since its forecast has not yet absorbed the September raise. Against that, the company itself says second-half weighting will be less pronounced than usual in 2026 — so a high first-half share is partly expected, and the norm flatters. The harder evidence is the £380m floor, which needs no norm to interpret.</p>
+    </div></details>
 
    <details class="sub"><summary>Trigger detail &amp; audit record</summary><div class="b">
     <p><b>Condition 1 — numbers and guide · fired, green.</b> Three raises in the record's most recent six months (January, April and July 2026), profit growth resuming at FY-25 after two declining prints, and two consecutive rising scores on ranks 2 and 3. Full weight: it includes lead metrics and a guide event, so no confirmation-only discount applies. First fired 22 January 2026 and continuing.</p>
@@ -568,7 +595,7 @@ pre.json{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;paddi
  <table class="tg" id="text3">
   <thead><tr><th>Date</th><th>Doc</th><th>G</th><th>Verbatim forward-guidance phrase</th><th>Context</th><th>Score</th></tr></thead>
   <tbody>
-   <tr class="expander" id="exp"><td colspan="6">▸ Show 10 earlier prints — Oct-22 to Oct-24</td></tr>
+   <tr class="expander" id="exp"><td colspan="6">▸ Show 11 earlier prints — Oct-22 to Jan-25</td></tr>
    <tr class="old" data-rt="q3tu"><td class="dt">28 Oct 2022</td><td class="doc" data-rt="q3tu"><span class="fy">FY22</span>Q3 TU</td><td class="g">flat</td><td class="q">"a year of modest adjusted profit before tax growth"</td><td>Anchor is the company's own prior guide, not a market number. Outturn £263.7m, consistent with modest growth.</td><td class="sc">⚪</td></tr>
    <tr class="old" data-rt="yetu"><td class="dt">30 Jan 2023</td><td class="doc" data-rt="yetu"><span class="fy">FY22</span>YE-TU</td><td class="g">🟢 RAISE</td><td class="q">"slightly ahead of the guidance given …… in its Q3 Trading Update"</td><td>Beat against its own October guide. No market anchor quoted. Outturn £263.7m.</td><td class="sc">🟢</td></tr>
    <tr class="old" data-rt="q1tu"><td class="dt">28 Apr 2023</td><td class="doc" data-rt="q1tu"><span class="fy">FY23</span>Q1 TU</td><td class="g">flat</td><td class="q">"another year of progress with growth in profitability"</td><td>Reiteration. Adds that growth is expected in both halves as well as the year — no second-half weighting.</td><td class="sc">⚪</td></tr>
@@ -579,7 +606,7 @@ pre.json{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;paddi
    <tr class="old" data-rt="h1tu"><td class="dt">26 Jul 2024</td><td class="doc" data-rt="h1tu"><span class="fy">FY24</span>H1 TU</td><td class="g">🔴 CUT</td><td class="q">"approximately £87m (H1 2023: £121.8m)"</td><td>Puts a number on the May warning. Claims stronger momentum in the second half. Announced alongside a return of value.</td><td class="sc">🔴</td></tr>
    <tr class="old" data-rt="h1r"><td class="dt">09 Sep 2024</td><td class="doc" data-rt="h1r"><span class="fy">FY24</span>H1 R</td><td class="g">flat</td><td class="q">"expect to make progress in FY 2024 as a whole"</td><td>Progress claim now qualified as at fixed exchange rates. Reported basis quietly dropped from the sentence.</td><td class="sc">🔴</td></tr>
    <tr class="old chg" data-rt="q3tu"><td class="dt">28 Oct 2024</td><td class="doc" data-rt="q3tu"><span class="fy">FY24</span>Q3 TU</td><td class="g">🔴 CUT</td><td class="q">"now expect …… the full year to be modestly behind last year"</td><td>The record's clearest cut: progress becomes decline. Cause given as weak sourcing demand and delayed projects.</td><td class="sc">🔴🔴</td></tr>
-   <tr data-rt="yetu"><td class="dt">28 Jan 2025</td><td class="doc" data-rt="yetu"><span class="fy">FY24</span>YE-TU</td><td class="g">🔴 CUT</td><td class="q">"at the low end of the range of analysts' forecasts"</td><td>Third consecutive negative print. Outturn £254.0m. The trough of the cycle.</td><td class="sc">🔴</td></tr>
+   <tr class="old" data-rt="yetu"><td class="dt">28 Jan 2025</td><td class="doc" data-rt="yetu"><span class="fy">FY24</span>YE-TU</td><td class="g">🔴 CUT</td><td class="q">"at the low end of the range of analysts' forecasts"</td><td>Third consecutive negative print. Outturn £254.0m. The trough of the cycle.</td><td class="sc">🔴</td></tr>
    <tr class="chg" data-rt="fyr"><td class="dt">18 Mar 2025</td><td class="doc" data-rt="fyr"><span class="fy">FY24</span>FY R</td><td class="g">flat</td><td class="q">"expect to make progress in FY 2025"</td><td>Notes a record second half. First non-negative print in four. No numeric guide and no market anchor.</td><td class="sc">⚪</td></tr>
    <tr data-rt="q1tu"><td class="dt">01 May 2025</td><td class="doc" data-rt="q1tu"><span class="fy">FY25</span>Q1 TU</td><td class="g">flat</td><td class="q">"ahead of the prior year and in line with our expectations"</td><td>Reiteration against its own expectations rather than the market's. Claims it is well positioned to make progress.</td><td class="sc">⚪</td></tr>
    <tr class="chg" data-rt="h1tu"><td class="dt">28 Jul 2025</td><td class="doc" data-rt="h1tu"><span class="fy">FY25</span>H1 TU</td><td class="g">🔴 CUT</td><td class="q">"at a similar level to the prior year due to …… reduction in net finance income"</td><td>Flat is a step down from progress, but the cause is named and non-operational: less interest after the buyback. Operating profit growth is reaffirmed in the same document.</td><td class="sc">🔴</td></tr>
@@ -588,7 +615,8 @@ pre.json{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;paddi
    <tr class="chg" data-rt="yetu"><td class="dt">22 Jan 2026</td><td class="doc" data-rt="yetu"><span class="fy">FY25</span>YE-TU</td><td class="g">🟢 RAISE</td><td class="q">"no less than £270m, comfortably ahead of market expectations"</td><td>A floor, and a floor is a sandbag. Consensus at the time £253.6m, range £243.4m to £259.0m. Outturn £272.0m — the floor held. Order book and sourcing growth both quantified here for the first time at a pre-close.</td><td class="sc">🟢🟢</td></tr>
    <tr data-rt="fyr"><td class="dt">12 Mar 2026</td><td class="doc" data-rt="fyr"><span class="fy">FY25</span>FY R</td><td class="g">🟢 RAISE</td><td class="q">"further strategic and financial progress"</td><td>Delivered operating profit up 11.3% and a record second half. Order book £7.1bn. AgreeYa completed in January.</td><td class="sc">🟢</td></tr>
    <tr class="chg" data-rt="q1tu"><td class="dt">24 Apr 2026</td><td class="doc" data-rt="q1tu"><span class="fy">FY26</span>Q1 TU</td><td class="g">🟢 RAISE</td><td class="q">"significantly ahead of the prior year and well above our expectations"</td><td>Also comfortably ahead of market expectations. Consensus £291.3m, range £284.5m to £297.1m. Cause given as the order book entering the year plus stronger hyperscale volumes.</td><td class="sc">🟢🟢</td></tr>
-   <tr class="chg" data-rt="h1tu"><td class="dt">⭐ 09 Jul 2026</td><td class="doc" data-rt="h1tu"><span class="fy">FY26</span>H1 TU</td><td class="g">🟢 RAISE</td><td class="q">"approximately double the prior year's relatively soft comparative"</td><td>Full year now comfortably ahead of a consensus of £313.7m, range £305.0m to £324.3m — a bar £22m higher than April's. Second quarter ahead of expectations after an excellent first. Order book above £7.1bn but not quantified, which is the habit of this document type. Tougher second-half comparison flagged.</td><td class="sc">🟢🟢🟢</td></tr>
+   <tr data-rt="h1tu"><td class="dt">09 Jul 2026</td><td class="doc" data-rt="h1tu"><span class="fy">FY26</span>H1 TU</td><td class="g">🟢 RAISE</td><td class="q">"approximately double the prior year's relatively soft comparative"</td><td>Full year now comfortably ahead of a consensus of £313.7m, range £305.0m to £324.3m — a bar £22m higher than April's. Second quarter ahead of expectations after an excellent first. Order book above £7.1bn but not quantified, which is the habit of this document type. Tougher second-half comparison flagged.</td><td class="sc">🟢🟢🟢</td></tr>
+   <tr class="chg" data-rt="h1r"><td class="dt">⭐ 08 Sep 2026</td><td class="doc" data-rt="h1r"><span class="fy">FY26</span>H1 R</td><td class="g">🟢 RAISE</td><td class="q">"significantly ahead of current market expectations …… no less than £380m"</td><td>Record half: adjusted profit before tax £152.4m, up 87.0%. Order book £9.3bn, up 323% on the year. Consensus in the same footnote £340.9m, range £332.0m to £354.0m — the floor sits 11.5% above it, the widest gap in the record. Also states second-half weighting will be less pronounced than usual, reversing the habitual caution. Interim dividend raised 14.8%, above policy.</td><td class="sc">🟢🟢🟢</td></tr>
   </tbody>
  </table>
 
@@ -615,7 +643,7 @@ pre.json{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;paddi
 <!-- ============ §4 DRIFT ============ -->
 <section id="drift">
  <h2 class="sec">§4 · Drift — what they've gone quiet about
-  <span class="subn">Which numbers get shared, hedged, or dropped, document by document — going quiet is the signal. 23 qualifying documents = 23 columns.</span></h2>
+  <span class="subn">Which numbers get shared, hedged, or dropped, document by document — going quiet is the signal. 24 qualifying documents = 24 columns.</span></h2>
  <div class="driftwrap">
  <table class="drift" id="dr">
   <thead><tr>
@@ -642,25 +670,26 @@ pre.json{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;paddi
    <th data-p="yetu">22 Jan 26<span class="kkey">YETU</span></th>
    <th data-p="fyr">12 Mar 26<span class="kkey">FYR</span></th>
    <th data-p="q1tu">24 Apr 26<span class="kkey">Q1TU</span></th>
-   <th data-p="h1tu">⭐ 09 Jul 26<span class="kkey">H1TU</span></th>
+   <th data-p="h1tu">09 Jul 26<span class="kkey">H1TU</span></th>
+   <th data-p="h1r">⭐ 08 Sep 26<span class="kkey">H1R</span></th>
   </tr></thead>
   <tbody>
    <tr><td class="mlab">R1 · Order book £</td>
-    <td data-p="h1r">✅ 3.4bn</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu">🟡</td><td data-p="fyr">✅ 2,913.9</td><td data-p="q1tu" class="miss">—</td><td data-p="h1r">✅ 1,521.2</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu">🟡</td><td data-p="fyr">✅ 1,222.3</td><td data-p="q1tu">🟡</td><td data-p="h1tu">🟡</td><td data-p="h1r">✅ 1,795.7</td><td data-p="q3tu">🟡</td><td data-p="yetu">🟡</td><td data-p="fyr">✅ 2,414.9</td><td data-p="q1tu">🟡</td><td data-p="h1tu">🟡</td><td data-p="h1r">✅ 2,195.9</td><td data-p="q3tu">🟡</td><td data-p="yetu">✅ 7.1bn</td><td data-p="fyr">✅ 7.1bn</td><td data-p="q1tu">🟡</td><td data-p="h1tu">🟡</td></tr>
+    <td data-p="h1r">✅ 3.4bn</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu">🟡</td><td data-p="fyr">✅ 2,913.9</td><td data-p="q1tu" class="miss">—</td><td data-p="h1r">✅ 1,521.2</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu">🟡</td><td data-p="fyr">✅ 1,222.3</td><td data-p="q1tu">🟡</td><td data-p="h1tu">🟡</td><td data-p="h1r">✅ 1,795.7</td><td data-p="q3tu">🟡</td><td data-p="yetu">🟡</td><td data-p="fyr">✅ 2,414.9</td><td data-p="q1tu">🟡</td><td data-p="h1tu">🟡</td><td data-p="h1r">✅ 2,195.9</td><td data-p="q3tu">🟡</td><td data-p="yetu">✅ 7.1bn</td><td data-p="fyr">✅ 7.1bn</td><td data-p="q1tu">🟡</td><td data-p="h1tu">🟡</td><td data-p="h1r">✅ 9.3bn</td></tr>
    <tr><td class="mlab">R2 · Adj PBT £</td>
-    <td data-p="h1r">✅ 111.9</td><td data-p="q3tu">🟡</td><td data-p="yetu">🟡</td><td data-p="fyr">✅ 263.7</td><td data-p="q1tu">🟡</td><td data-p="h1r">✅ 121.8</td><td data-p="q3tu">🟡</td><td data-p="yetu">🟡</td><td data-p="fyr">✅ 278.0</td><td data-p="q1tu">🟡</td><td data-p="h1tu">✅ ~87</td><td data-p="h1r">✅ 87.2</td><td data-p="q3tu">🟡</td><td data-p="yetu">🟡</td><td data-p="fyr">✅ 254.0</td><td data-p="q1tu">🟡</td><td data-p="h1tu">🟡</td><td data-p="h1r">✅ 81.5</td><td data-p="q3tu">🟡</td><td data-p="yetu">✅ ≥270</td><td data-p="fyr">✅ 272.0</td><td data-p="q1tu">🟡</td><td data-p="h1tu">✅ ~163</td></tr>
+    <td data-p="h1r">✅ 111.9</td><td data-p="q3tu">🟡</td><td data-p="yetu">🟡</td><td data-p="fyr">✅ 263.7</td><td data-p="q1tu">🟡</td><td data-p="h1r">✅ 121.8</td><td data-p="q3tu">🟡</td><td data-p="yetu">🟡</td><td data-p="fyr">✅ 278.0</td><td data-p="q1tu">🟡</td><td data-p="h1tu">✅ ~87</td><td data-p="h1r">✅ 87.2</td><td data-p="q3tu">🟡</td><td data-p="yetu">🟡</td><td data-p="fyr">✅ 254.0</td><td data-p="q1tu">🟡</td><td data-p="h1tu">🟡</td><td data-p="h1r">✅ 81.5</td><td data-p="q3tu">🟡</td><td data-p="yetu">✅ ≥270</td><td data-p="fyr">✅ 272.0</td><td data-p="q1tu">🟡</td><td data-p="h1tu">✅ ~163</td><td data-p="h1r">✅ 152.4</td></tr>
    <tr><td class="mlab">R3 · Adj op profit £</td>
-    <td data-p="h1r" class="miss">—</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu" class="miss">—</td><td data-p="fyr" class="miss">—</td><td data-p="q1tu" class="miss">—</td><td data-p="h1r" class="miss">—</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu" class="miss">—</td><td data-p="fyr" class="miss">—</td><td data-p="q1tu" class="miss">—</td><td data-p="h1tu" class="miss">—</td><td data-p="h1r">✅ 81.1</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu" class="miss">—</td><td data-p="fyr">✅ 246.7</td><td data-p="q1tu" class="miss">—</td><td data-p="h1tu">🟡</td><td data-p="h1r">✅ 82.1</td><td data-p="q3tu">🟡</td><td data-p="yetu">🟡</td><td data-p="fyr">✅ 274.7</td><td data-p="q1tu">🟡</td><td data-p="h1tu">🟡</td></tr>
+    <td data-p="h1r" class="miss">—</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu" class="miss">—</td><td data-p="fyr" class="miss">—</td><td data-p="q1tu" class="miss">—</td><td data-p="h1r" class="miss">—</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu" class="miss">—</td><td data-p="fyr" class="miss">—</td><td data-p="q1tu" class="miss">—</td><td data-p="h1tu" class="miss">—</td><td data-p="h1r">✅ 81.1</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu" class="miss">—</td><td data-p="fyr">✅ 246.7</td><td data-p="q1tu" class="miss">—</td><td data-p="h1tu">🟡</td><td data-p="h1r">✅ 82.1</td><td data-p="q3tu">🟡</td><td data-p="yetu">🟡</td><td data-p="fyr">✅ 274.7</td><td data-p="q1tu">🟡</td><td data-p="h1tu">🟡</td><td data-p="h1r">✅ 153.1</td></tr>
    <tr><td class="mlab">R4 · Sourcing growth %</td>
-    <td data-p="h1r">✅</td><td data-p="q3tu">🟡</td><td data-p="yetu">🟡</td><td data-p="fyr">✅ +30.8</td><td data-p="q1tu">🟡</td><td data-p="h1r">✅ +34.9</td><td data-p="q3tu">🟡</td><td data-p="yetu">🟡</td><td data-p="fyr">✅</td><td data-p="q1tu">🟡</td><td data-p="h1tu">🟡</td><td data-p="h1r">✅ −12.2</td><td data-p="q3tu">🟡</td><td data-p="yetu">🟡</td><td data-p="fyr">✅ +0.5</td><td data-p="q1tu">🟡</td><td data-p="h1tu">🟡</td><td data-p="h1r">✅ +32.2</td><td data-p="q3tu">🟡</td><td data-p="yetu">✅</td><td data-p="fyr">✅ +37.8</td><td data-p="q1tu">🟡</td><td data-p="h1tu">🟡</td></tr>
+    <td data-p="h1r">✅</td><td data-p="q3tu">🟡</td><td data-p="yetu">🟡</td><td data-p="fyr">✅ +30.8</td><td data-p="q1tu">🟡</td><td data-p="h1r">✅ +34.9</td><td data-p="q3tu">🟡</td><td data-p="yetu">🟡</td><td data-p="fyr">✅</td><td data-p="q1tu">🟡</td><td data-p="h1tu">🟡</td><td data-p="h1r">✅ −12.2</td><td data-p="q3tu">🟡</td><td data-p="yetu">🟡</td><td data-p="fyr">✅ +0.5</td><td data-p="q1tu">🟡</td><td data-p="h1tu">🟡</td><td data-p="h1r">✅ +32.2</td><td data-p="q3tu">🟡</td><td data-p="yetu">✅</td><td data-p="fyr">✅ +37.8</td><td data-p="q1tu">🟡</td><td data-p="h1tu">🟡</td><td data-p="h1r">✅ +66.2</td></tr>
    <tr><td class="mlab">R5 · Revenue / GII £</td>
-    <td data-p="h1r">✅</td><td data-p="q3tu">🟡</td><td data-p="yetu">🟡</td><td data-p="fyr">✅ 6,470.5</td><td data-p="q1tu">🟡</td><td data-p="h1r">✅</td><td data-p="q3tu">🟡</td><td data-p="yetu">🟡</td><td data-p="fyr">✅</td><td data-p="q1tu">🟡</td><td data-p="h1tu">🟡</td><td data-p="h1r">✅ 3,103.8</td><td data-p="q3tu">🟡</td><td data-p="yetu">🟡</td><td data-p="fyr">✅ 6,964.8</td><td data-p="q1tu">🟡</td><td data-p="h1tu">🟡</td><td data-p="h1r">✅ 3,988.8</td><td data-p="q3tu">🟡</td><td data-p="yetu">🟡</td><td data-p="fyr">✅ 9,193.9</td><td data-p="q1tu">🟡</td><td data-p="h1tu">🟡</td></tr>
+    <td data-p="h1r">✅</td><td data-p="q3tu">🟡</td><td data-p="yetu">🟡</td><td data-p="fyr">✅ 6,470.5</td><td data-p="q1tu">🟡</td><td data-p="h1r">✅</td><td data-p="q3tu">🟡</td><td data-p="yetu">🟡</td><td data-p="fyr">✅</td><td data-p="q1tu">🟡</td><td data-p="h1tu">🟡</td><td data-p="h1r">✅ 3,103.8</td><td data-p="q3tu">🟡</td><td data-p="yetu">🟡</td><td data-p="fyr">✅ 6,964.8</td><td data-p="q1tu">🟡</td><td data-p="h1tu">🟡</td><td data-p="h1r">✅ 3,988.8</td><td data-p="q3tu">🟡</td><td data-p="yetu">🟡</td><td data-p="fyr">✅ 9,193.9</td><td data-p="q1tu">🟡</td><td data-p="h1tu">🟡</td><td data-p="h1r">✅ 6,845.2</td></tr>
    <tr><td class="mlab">Net funds £ <span style="font-weight:400;color:#5f5c54">(watch)</span></td>
-    <td data-p="h1r">✅</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu">✅</td><td data-p="fyr">✅</td><td data-p="q1tu" class="miss">—</td><td data-p="h1r">✅</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu">✅</td><td data-p="fyr">✅</td><td data-p="q1tu" class="miss">—</td><td data-p="h1tu">✅</td><td data-p="h1r">✅</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu">✅</td><td data-p="fyr">✅ 482</td><td data-p="q1tu" class="miss">—</td><td data-p="h1tu">✅</td><td data-p="h1r">✅ 278</td><td data-p="q3tu">🟡</td><td data-p="yetu">✅ 600</td><td data-p="fyr">✅ 606</td><td data-p="q1tu" class="miss">—</td><td data-p="h1tu" class="miss">—</td></tr>
+    <td data-p="h1r">✅</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu">✅</td><td data-p="fyr">✅</td><td data-p="q1tu" class="miss">—</td><td data-p="h1r">✅</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu">✅</td><td data-p="fyr">✅</td><td data-p="q1tu" class="miss">—</td><td data-p="h1tu">✅</td><td data-p="h1r">✅</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu">✅</td><td data-p="fyr">✅ 482</td><td data-p="q1tu" class="miss">—</td><td data-p="h1tu">✅</td><td data-p="h1r">✅ 278</td><td data-p="q3tu">🟡</td><td data-p="yetu">✅ 600</td><td data-p="fyr">✅ 606</td><td data-p="q1tu" class="miss">—</td><td data-p="h1tu" class="miss">—</td><td data-p="h1r">✅ 308.7</td></tr>
    <tr><td class="mlab">Dividend <span style="font-weight:400;color:#5f5c54">(watch)</span></td>
-    <td data-p="h1r">✅</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu" class="miss">—</td><td data-p="fyr">✅ 67.9p</td><td data-p="q1tu" class="miss">—</td><td data-p="h1r">✅</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu" class="miss">—</td><td data-p="fyr">✅ 70.0p</td><td data-p="q1tu" class="miss">—</td><td data-p="h1tu" class="miss">—</td><td data-p="h1r">✅</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu" class="miss">—</td><td data-p="fyr">✅ 70.7p</td><td data-p="q1tu" class="miss">—</td><td data-p="h1tu" class="miss">—</td><td data-p="h1r">✅</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu" class="miss">—</td><td data-p="fyr">✅ 74.6p</td><td data-p="q1tu" class="miss">—</td><td data-p="h1tu" class="miss">—</td></tr>
+    <td data-p="h1r">✅</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu" class="miss">—</td><td data-p="fyr">✅ 67.9p</td><td data-p="q1tu" class="miss">—</td><td data-p="h1r">✅</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu" class="miss">—</td><td data-p="fyr">✅ 70.0p</td><td data-p="q1tu" class="miss">—</td><td data-p="h1tu" class="miss">—</td><td data-p="h1r">✅</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu" class="miss">—</td><td data-p="fyr">✅ 70.7p</td><td data-p="q1tu" class="miss">—</td><td data-p="h1tu" class="miss">—</td><td data-p="h1r">✅</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu" class="miss">—</td><td data-p="fyr">✅ 74.6p</td><td data-p="q1tu" class="miss">—</td><td data-p="h1tu" class="miss">—</td><td data-p="h1r">✅ 27.1p</td></tr>
    <tr><td class="mlab">Gross margin % <span style="font-weight:400;color:#5f5c54">(watch)</span></td>
-    <td data-p="h1r">✅</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu" class="miss">—</td><td data-p="fyr">✅</td><td data-p="q1tu" class="miss">—</td><td data-p="h1r">✅</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu" class="miss">—</td><td data-p="fyr">✅</td><td data-p="q1tu" class="miss">—</td><td data-p="h1tu" class="miss">—</td><td data-p="h1r">✅</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu" class="miss">—</td><td data-p="fyr">✅</td><td data-p="q1tu" class="miss">—</td><td data-p="h1tu" class="miss">—</td><td data-p="h1r">✅</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu" class="miss">—</td><td data-p="fyr">✅ 12.4</td><td data-p="q1tu" class="miss">—</td><td data-p="h1tu" class="miss">—</td></tr>
+    <td data-p="h1r">✅</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu" class="miss">—</td><td data-p="fyr">✅</td><td data-p="q1tu" class="miss">—</td><td data-p="h1r">✅</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu" class="miss">—</td><td data-p="fyr">✅</td><td data-p="q1tu" class="miss">—</td><td data-p="h1tu" class="miss">—</td><td data-p="h1r">✅</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu" class="miss">—</td><td data-p="fyr">✅</td><td data-p="q1tu" class="miss">—</td><td data-p="h1tu" class="miss">—</td><td data-p="h1r">✅</td><td data-p="q3tu" class="miss">—</td><td data-p="yetu" class="miss">—</td><td data-p="fyr">✅ 12.4</td><td data-p="q1tu" class="miss">—</td><td data-p="h1tu" class="miss">—</td><td data-p="h1r">✅ 9.6</td></tr>
   </tbody>
  </table>
  </div>
@@ -668,7 +697,7 @@ pre.json{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;paddi
   <summary>§4 workings</summary>
   <div class="inner">
    <details class="sub"><summary>Notes — §4</summary><div class="b">
-    <p><b>Rightmost column, 09 July 2026.</b> Nothing newly withheld, newly hedged or newly dropped. The order book appears in words rather than pounds, but that is the settled habit of the July update — the figure lands at September's half-year report, and it has been words at this document type in 2024, 2025 and 2026 alike. This one is stronger than its predecessors because it names the £7.1bn it is measured against. No cell anywhere in the matrix is a verified blank against an established habit, which is why no ❌ appears: this company's disclosure has not deteriorated at any point in the record.</p>
+    <p><b>Rightmost column, 08 September 2026 — disclosure expanding, not contracting.</b> Every tracked metric is quantified, and the document adds detail it has not previously given at this grain: the order book is broken out by segment, with North America £6,936.3m and the UK £558.7m stated separately alongside the £9.3bn group figure. A company going quiet withholds; this one is opening up. Nothing newly withheld, newly hedged or newly dropped anywhere in the matrix.</p>
     <p><b>The green shoot sits one column left.</b> At the January 2026 pre-close the company quantified both the order book and the sourcing growth rate, having given words only at the equivalent statements in 2023, 2024 and 2025. A metric re-quantified against an established habit of hedging is the mirror of a metric gone quiet, and it is what fires the disclosure condition.</p>
     <p><b>Key.</b> ✅ quantified · 🟡 words only · — outside that document type's habit · ❌ verified blank against an established habit · ⊘ expected update not issued.</p>
    </div></details>
@@ -678,7 +707,7 @@ pre.json{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;paddi
 
 </div>
 
-<script type="application/json" id="drift-entry">{"ticker":"CCC","company":"Computacenter plc","kind":"ticker","direction":"up","headline":"Guide raised again: first-half profit set to roughly double, full year comfortably ahead — the backlog turn has reached earnings.","trigger":"Green-shoot mirror, three of three: guide raised three times, language rising four prints, order book and sourcing growth re-quantified at the pre-close.","alert":true,"fired":3,"fired_of":3,"lights":"ggg","rns_type":"H1 TU","rns_date":"2026-07-09","build_date":"2026-08-18","spec_version":"v5.4","next_test":"Half-year results, 8 September 2026: does adjusted profit before tax land near £163m, and is the order book quantified above £7.1bn?","url":"CCC.html","grid":{"labels":["R1","R2","R3","R4","R5"],"periods":["pad","H1 22","H2 22","H1 23","H2 23","H1 24","H2 24","H1 25","H2 25"],"rows":["--rrrggrg","---ggrgrg","-------gg","---garagg","----r-rgg"],"note":"Five ledger ranks, right-anchored on the FY-25 results column."},"trend":{"mode":"growth","cells":"--g","rows":[{"m":"REV","gap":null},{"m":"EBITDA","gap":null},{"m":"PBT","gap":7.1}]}}</script>
+<script type="application/json" id="drift-entry">{"ticker": "CCC", "company": "Computacenter plc", "kind": "ticker", "direction": "up", "headline": "Record half delivered and the guide raised again: profit up 87%, order book £9.3bn, full year floored at no less than £380m.", "trigger": "Green-shoot mirror, three of three: fourth consecutive raise with a floor 11.5% above consensus, language rising five prints, disclosure expanding to segment order books.", "alert": true, "fired": 3, "fired_of": 3, "lights": "ggg", "rns_type": "H1 R", "rns_date": "2026-09-08", "build_date": "2026-09-08", "spec_version": "v5.4", "next_test": "Q3 update, late October 2026: is the £380m floor lifted again, and does the order book keep growing after such heavy project completions?", "url": "CCC.html", "grid": {"labels": ["R1", "R2", "R3", "R4", "R5"], "periods": ["H1 22", "H2 22", "H1 23", "H2 23", "H1 24", "H2 24", "H1 25", "H2 25", "H1 26"], "rows": ["-rrrggrgg", "--ggrgrgg", "------ggg", "--garaggg", "---r-rggg"], "note": "Five ledger ranks, right-anchored on the H1-26 results column."}, "prev": {"direction": "up", "fired": 3, "lights": "ggg", "rns_date": "2026-07-09", "rns_type": "H1 TU"}, "trend": {"mode": "share", "cells": "g-g", "rows": [{"m": "REV", "gap": 12.8}, {"m": "EBITDA", "gap": null}, {"m": "PBT", "gap": 8.7}]}}</script>
 
 <script>
 (function(){
@@ -713,8 +742,8 @@ pre.json{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;paddi
   exp.addEventListener('click',function(){
    t3.classList.toggle('showall');
    exp.firstElementChild.textContent=t3.classList.contains('showall')
-    ?'▾ Hide 10 earlier prints — Oct-22 to Oct-24'
-    :'▸ Show 10 earlier prints — Oct-22 to Oct-24';
+    ?'▾ Hide 11 earlier prints — Oct-22 to Jan-25'
+    :'▸ Show 11 earlier prints — Oct-22 to Jan-25';
   });
   t3.querySelectorAll('td.doc').forEach(function(d){
    d.addEventListener('click',function(){
