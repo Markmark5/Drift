@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-07",
+  "updated": "2026-09-08",
   "tickers": [
     {
       "ticker": "STAF",
@@ -2471,17 +2471,17 @@
       "company": "Computacenter plc",
       "kind": "ticker",
       "direction": "up",
-      "headline": "Guide raised again: first-half profit set to roughly double, full year comfortably ahead — the backlog turn has reached earnings.",
-      "trigger": "Green-shoot mirror, three of three: guide raised three times, language rising four prints, order book and sourcing growth re-quantified at the pre-close.",
+      "headline": "Record half delivered and the guide raised again: profit up 87%, order book £9.3bn, full year floored at no less than £380m.",
+      "trigger": "Green-shoot mirror, three of three: fourth consecutive raise with a floor 11.5% above consensus, language rising five prints, disclosure expanding to segment order books.",
       "alert": true,
       "fired": 3,
       "fired_of": 3,
       "lights": "ggg",
-      "rns_type": "H1 TU",
-      "rns_date": "2026-07-09",
-      "build_date": "2026-08-18",
+      "rns_type": "H1 R",
+      "rns_date": "2026-09-08",
+      "build_date": "2026-09-08",
       "spec_version": "v5.4",
-      "next_test": "Half-year results, 8 September 2026: does adjusted profit before tax land near £163m, and is the order book quantified above £7.1bn?",
+      "next_test": "Q3 update, late October 2026: is the £380m floor lifted again, and does the order book keep growing after such heavy project completions?",
       "url": "CCC.html",
       "grid": {
         "labels": [
@@ -2492,7 +2492,6 @@
           "R5"
         ],
         "periods": [
-          "pad",
           "H1 22",
           "H2 22",
           "H1 23",
@@ -2500,24 +2499,32 @@
           "H1 24",
           "H2 24",
           "H1 25",
-          "H2 25"
+          "H2 25",
+          "H1 26"
         ],
         "rows": [
-          "--rrrggrg",
-          "---ggrgrg",
-          "-------gg",
-          "---garagg",
-          "----r-rgg"
+          "-rrrggrgg",
+          "--ggrgrgg",
+          "------ggg",
+          "--garaggg",
+          "---r-rggg"
         ],
-        "note": "Five ledger ranks, right-anchored on the FY-25 results column."
+        "note": "Five ledger ranks, right-anchored on the H1-26 results column."
+      },
+      "prev": {
+        "direction": "up",
+        "fired": 3,
+        "lights": "ggg",
+        "rns_date": "2026-07-09",
+        "rns_type": "H1 TU"
       },
       "trend": {
-        "mode": "growth",
-        "cells": "--g",
+        "mode": "share",
+        "cells": "g-g",
         "rows": [
           {
             "m": "REV",
-            "gap": null
+            "gap": 12.8
           },
           {
             "m": "EBITDA",
@@ -2525,7 +2532,7 @@
           },
           {
             "m": "PBT",
-            "gap": 7.1
+            "gap": 8.7
           }
         ]
       }
