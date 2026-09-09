@@ -1529,16 +1529,16 @@
       "company": "Pebble Beach Systems Group plc",
       "kind": "ticker",
       "direction": "down",
-      "headline": "Guide walked from \"materially ahead\" to \"in line\"; orders withheld two updates running; H1 profit leaned on licence timing the Board says fades in H2.",
-      "trigger": "3 of 3 - G-column CUT plus recurring-revenue deceleration; Text -2 falling two prints; Rank 1 withheld second consecutive update",
+      "headline": "Orders return on a third basis showing projects down 3%; guide held, not raised, despite the beat; H2 margin warning repeated; ARR +20% argues back.",
+      "trigger": "2 of 3 - July G-column CUT unreversed; Text -1 at latest print. Drift flipped to green shoot on re-disclosure",
       "alert": true,
-      "fired": 3,
+      "fired": 2,
       "fired_of": 3,
-      "rns_type": "H1 TU",
-      "rns_date": "2026-07-28",
-      "build_date": "2026-08-06",
+      "rns_type": "H1 R",
+      "rns_date": "2026-09-09",
+      "build_date": "2026-09-09",
       "spec_version": "4.7",
-      "next_test": "Early Sep 2026 H1 results: project orders, pipeline, capitalised R&D.",
+      "next_test": "Jan 2027 YE-TU: FY26 guide raised or just met; ARR conversion; H2 margin near 30%.",
       "url": "PEB.html",
       "grid": {
         "labels": [
@@ -1560,13 +1560,13 @@
           "H1 26"
         ],
         "rows": [
-          "------g-x",
+          "------g--",
           "--grrrgga",
           "--gggaraa",
-          "--grrrgg-",
+          "--grrrggg",
           "rgagarggg"
         ],
-        "note": "One row per ledger rank at half-year grain; rightmost cell is the 28 Jul 2026 H1 trading update."
+        "note": "One row per ledger rank at half-year grain; rightmost cell is the 9 Sep 2026 interim results."
       }
     },
     {
