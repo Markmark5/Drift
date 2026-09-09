@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-08",
+  "updated": "2026-09-09",
   "tickers": [
     {
       "ticker": "STAF",
@@ -242,18 +242,18 @@
       "ticker": "ANP",
       "company": "Anpario plc",
       "kind": "ticker",
-      "direction": "watch",
-      "headline": "Record FY25 everywhere — but the margin engine has stopped climbing, and Anpario has quietly stopped printing volumes and prices.",
-      "trigger": "Text + Drift (2 of 3); Hard/G watch-flagged",
+      "direction": "down",
+      "headline": "Growth halved and the margin turned, while volumes and prices stayed dark for a third print — and the company says the second half has softened.",
+      "trigger": "Numbers + Text + Drift (3 of 3); context discount exhausted",
       "alert": true,
-      "fired": 2,
+      "fired": 3,
       "fired_of": 3,
-      "lights": "arr",
-      "rns_type": "AGM Statement",
-      "rns_date": "2026-06-18",
-      "build_date": "2026-08-11",
-      "spec_version": "5.3",
-      "next_test": "9 Sep 2026 interims — the printed H1 gross margin, and whether volumes and prices reappear.",
+      "lights": "rrr",
+      "rns_type": "Interim Results",
+      "rns_date": "2026-09-09",
+      "build_date": "2026-09-09",
+      "spec_version": "5.5",
+      "next_test": "Jan 2027 year-end trading update — whether full-year adjusted EBITDA still clears the £10.3m consensus.",
       "grid": {
         "labels": [
           "R1",
@@ -275,31 +275,38 @@
         ],
         "rows": [
           "rraggagga",
-          "--rrggxx-",
-          "--ggrrgx-",
-          "--ragggra",
-          "--rggggra"
+          "--rrggxxx",
+          "--ggrrgxx",
+          "--ragggrr",
+          "--rggggrr"
         ],
-        "note": "One row per ledger rank; R1/R4/R5 at H1/H2 grain, R2/R3 at B.2a reduced H1/FY grain. Rightmost cell = Buy/Sell (H1 FY26 AGM)."
+        "note": "One row per ledger rank; R1/R4/R5 at H1/H2 grain, R2/R3 at B.2a reduced H1/FY grain. Rightmost cell = Buy/Sell (H1 FY26 interims)."
       },
       "url": "ANP.html",
       "trend": {
-        "mode": "growth",
-        "cells": "ggg",
+        "mode": "share",
+        "cells": "agr",
         "rows": [
           {
             "m": "REV",
-            "gap": 8.7
+            "gap": 1
           },
           {
             "m": "EBITDA",
-            "gap": 22.2
+            "gap": 7.2
           },
           {
             "m": "PBT",
-            "gap": 34.4
+            "gap": -2.8
           }
         ]
+      },
+      "prev": {
+        "direction": "watch",
+        "fired": 2,
+        "lights": "arr",
+        "rns_date": "2026-06-18",
+        "rns_type": "AGM Statement"
       }
     },
     {
