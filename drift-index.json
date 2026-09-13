@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-12",
+  "updated": "2026-09-13",
   "tickers": [
     {
       "ticker": "STAF",
@@ -1663,26 +1663,45 @@
       "ticker": "CNS",
       "company": "Corero Network Security plc",
       "kind": "ticker",
-      "direction": "watch",
-      "headline": "Revenue up 42% and profit up $4.0m - but it is last year's signings landing. The recurring book added $0.2m and cash hit a record low. Watch, on one fired condition.",
-      "trigger": "Hard fires on two LEAD metrics (ARR net adds -$1.9m yoy; net cash -$1.9m sequential); single-condition fire, verdict note, no alert. Text rescored to 0 at operator review (anchor habit not established at H1-TU grain). Drift did not fire. Green mirror fires condition 1 only.",
-      "alert": false,
-      "fired": 1,
+      "direction": "up",
+      "headline": "Guidance raised above consensus with the anchor restored; profit, margin and operating cash all confirm - but the recurring book still added only $0.2m.",
+      "trigger": "Green 2-of-3: G-column RAISE on the Buy/Sell RNS (exceed / significantly exceed stated consensus $29.2m / $3.3m), and the dropped expectations anchor resumed after four documents. Deterioration still real on one condition - ARR net add +$0.2m and net cash $2.1m, both LEAD - carried to Argues-against, outvoted 2-1.",
+      "alert": true,
+      "fired": 2,
       "fired_of": 3,
-      "rns_type": "H1 TU",
-      "rns_date": "2026-08-06",
-      "build_date": "2026-08-07",
-      "spec_version": "4.8",
-      "next_test": "September interims - ARR adds, cash, retention basis, any FY26 anchor.",
+      "lights": "g-g",
+      "rns_type": "H1 R",
+      "rns_date": "2026-09-09",
+      "build_date": "2026-09-09",
+      "spec_version": "5.5",
+      "next_test": "January 2027 year-end update - the FY26 ARR net add, and whether the anchor habit holds",
       "url": "CNS.html",
-      "grid": {
+      "prev": {
+        "direction": "watch",
+        "fired": 1,
+        "lights": "r--",
+        "rns_date": "2026-08-06",
+        "rns_type": "H1 TU"
+      },
+      "trend": {
+        "mode": "share",
+        "cells": "g--",
         "rows": [
-          "rragrggar",
-          "rrggrargg",
-          "rrgrgrrgr",
-          "grragrrg-",
-          "g-rrrgrgg"
-        ],
+          {
+            "m": "REV",
+            "gap": 6.7
+          },
+          {
+            "m": "EBITDA",
+            "gap": null
+          },
+          {
+            "m": "PBT",
+            "gap": null
+          }
+        ]
+      },
+      "grid": {
         "labels": [
           "R1",
           "R2",
@@ -1691,17 +1710,24 @@
           "R5"
         ],
         "periods": [
-          "H1-22",
-          "H2-22",
-          "H1-23",
-          "H2-23",
-          "H1-24",
-          "H2-24",
-          "H1-25",
-          "H2-25",
-          "H1-26"
+          "H1 22",
+          "H2 22",
+          "H1 23",
+          "H2 23",
+          "H1 24",
+          "H2 24",
+          "H1 25",
+          "H2 25",
+          "H1 26"
         ],
-        "note": "One row per ledger rank, rank order, right-anchored on the H1 2026 Buy/Sell column."
+        "rows": [
+          "rragrggar",
+          "rrggrargg",
+          "rrgrgrrgr",
+          "grragrrgg",
+          "g-rrrgrgg"
+        ],
+        "note": "Ranks 1-5 at half grain, right-anchored on the 9 Sep 2026 interims (period H1 2026)"
       }
     },
     {
