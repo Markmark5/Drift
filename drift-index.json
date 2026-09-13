@@ -784,15 +784,16 @@
     {
       "ticker": "GNS",
       "company": "Genus plc",
+      "kind": "ticker",
       "direction": "up",
-      "headline": "Fourth straight guide raise since Jan-25; FY26 PBT ≈£98m, moderately ahead of consensus; China JV proceeds cut leverage to ~0.4x.",
-      "trigger": "green-shoot mirror 2-of-3 (guide-raise sequence + rising language; balance-sheet mirror outside the count)",
+      "headline": "FY26 PBT £100.2m beats guide; H2 +14.4% confirms slowdown; FY27 guided in line off normalised £90.3m; £60m buyback.",
+      "trigger": "green-shoot 2-of-3 held (hard prints + in-window language rise; disclosure amber, context-discounted; sweep clean outside the count)",
       "alert": true,
-      "rns_type": "FY26 Trading Update",
-      "rns_date": "2026-07-14",
-      "build_date": "2026-08-11",
-      "spec_version": "5.3",
-      "next_test": "FY26 prelim (10-Sep-26): resume China royalty-customer count, give H2 PIC/ABS splits, set pro-forma post-deconsolidation FY27 base.",
+      "rns_type": "FY26 Preliminary Results",
+      "rns_date": "2026-09-10",
+      "build_date": "2026-09-13",
+      "spec_version": "5.5",
+      "next_test": "AGM statement (~19 Nov 2026): FY27 'in line' held or raised; NA disease-challenge language cleared; first royalty print on the JV-adjusted basis.",
       "url": "GNS.html",
       "fired": 2,
       "fired_of": 3,
@@ -817,31 +818,30 @@
           "H2 26"
         ],
         "rows": [
-          "---rrgag-",
-          "---a-ggx-",
+          "---rrgaga",
+          "---a-ggxx",
           "--graagag",
-          "---rrggg-",
+          "---rrgggr",
           "---raaaa-"
         ],
         "note": "Five ranked metrics at half-year grain; Rank 1 renders full-year in each second slot (reduced-grain rule)."
       },
       "trend": {
         "mode": "growth",
-        "cells": "agg",
+        "cells": "--g",
         "rows": [
           {
-            "m": "REV",
-            "gap": -0.2
-          },
-          {
-            "m": "EBITDA",
-            "gap": 17
-          },
-          {
             "m": "PBT",
-            "gap": 27.5
+            "gap": 21.1
           }
         ]
+      },
+      "prev": {
+        "direction": "up",
+        "fired": 2,
+        "lights": "gga",
+        "rns_date": "2026-07-14",
+        "rns_type": "FY26 Trading Update"
       }
     },
     {
