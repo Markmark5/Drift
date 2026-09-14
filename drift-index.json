@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-13",
+  "updated": "2026-09-14",
   "tickers": [
     {
       "ticker": "STAF",
@@ -2138,17 +2138,17 @@
       "company": "Cerillion plc",
       "kind": "ticker",
       "direction": "down",
-      "headline": "Profit halved on the same explanation as last year, and the back half must now carry two-thirds of the year.",
-      "trigger": "Margin compression plus growth decelerating three prints, alongside language falling two consecutive prints with the in-line guide made conditional on orders not yet won.",
+      "headline": "First guidance cut in the listed record: revenue guided £46-48m against £52.8m consensus, and profit falls for the first time.",
+      "trigger": "A G-column CUT on the newest announcement, alongside language falling a third consecutive print to an explicit, unflagged guidance cut. Disclosure technically met and not counted: the pre-tax profit anchor and the net cash figure both dropped from a document type that carried them every prior year, but neither is a ranked metric.",
       "alert": true,
       "fired": 2,
       "fired_of": 3,
       "lights": "rra",
-      "rns_type": "Interim Results",
-      "rns_date": "2026-06-01",
-      "build_date": "2026-08-12",
-      "spec_version": "5.3a",
-      "next_test": "Full-year trading update, late Oct 2026. Whether Omantel's licence fee was counted by 30 September — and, before then, whether any new contract win is announced at all.",
+      "rns_type": "Full Year Trading Update",
+      "rns_date": "2026-09-14",
+      "build_date": "2026-09-14",
+      "spec_version": "5.5",
+      "next_test": "Full-year results, end November 2026. Whether the £46-48m range settles at the top or the bottom, and whether the deferred orders are split into delayed and gone.",
       "url": "CER.html",
       "grid": {
         "labels": [
@@ -2195,6 +2195,13 @@
             "gap": -26.1
           }
         ]
+      },
+      "prev": {
+        "direction": "down",
+        "fired": 2,
+        "lights": "rra",
+        "rns_date": "2026-06-01",
+        "rns_type": "Interim Results"
       }
     },
     {
