@@ -657,8 +657,8 @@
       "fired_of": 3,
       "rns_type": "FY Trading Update",
       "rns_date": "2026-07-17",
-      "build_date": "2026-08-05",
-      "spec_version": "v4.6",
+      "build_date": "2026-09-14",
+      "spec_version": "v5.5",
       "next_test": "Sep-2026 results: operating margin, organic growth, and the order book's stated basis.",
       "url": "ALU.html",
       "grid": {
@@ -684,11 +684,12 @@
           "aaaaxxxag",
           "-aaaaagxx",
           "-aaaaaar-",
-          "-------r-",
-          "---gggrrr"
+          "-----ggr-",
+          "-rrgggrrr"
         ],
         "note": "One row per ledger rank (R1 order book, R2 organic growth, R3 margin, R4 overseas, R5 Water Management) at half grain; rightmost cell = H2 FY26, the Buy/Sell period."
-      }
+      },
+      "lights": "rrr"
     },
     {
       "ticker": "W7L",
