@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-14",
+  "updated": "2026-09-15",
   "tickers": [
     {
       "ticker": "STAF",
@@ -1955,17 +1955,17 @@
       "company": "hVIVO plc",
       "kind": "ticker",
       "direction": "watch",
-      "headline": "H1 FY26 revenue down −33% but orderbook more than doubled — the first concrete leading reversal after four consecutive declines.",
-      "trigger": "3 of 3 deterioration conditions fired (Hard/G, Text, Drift — coverage % restored to Rank 5)",
+      "headline": "FY26 guide CUT to ~£47m — organic revenue now declining — yet the orderbook doubled, operating cash turned positive, and the deferred work is contracted, not lost.",
+      "trigger": "3 of 3 fired (Hard/G: second CUT Sep-26 · Text: pre-flagged fall · Drift: coverage % withheld 5th time)",
       "alert": true,
       "fired": 3,
       "fired_of": 3,
       "lights": "rrr",
-      "rns_type": "H1 Trading Update",
-      "rns_date": "2026-07-23",
-      "build_date": "2026-08-09",
+      "rns_type": "Interim Results",
+      "rns_date": "2026-09-15",
+      "build_date": "2026-09-15",
       "spec_version": "5.1",
-      "next_test": "Jan-27 TU: orderbook printed early reads as strength, absent reads as weakness (deferred to 15 Apr 27); then H2 revenue ≥£30m, cash ≥£14m, coverage % restored → 🟢.",
+      "next_test": "Jan-27 TU: orderbook printed early = strength, absent = weakness (deferred 15 Apr 27); net Berlin £8.6m either way; organic ~£44m delivered, cash ≥£12m, coverage % restored → 🟢.",
       "url": "HVO_DriftTracker_v5.1.html",
       "grid": {
         "labels": [
@@ -1994,6 +1994,31 @@
           "----gaxxx"
         ],
         "note": "Ranks 1–5: orderbook, EBITDA margin, revenue, cash, contracted coverage %"
+      },
+      "prev": {
+        "direction": "watch",
+        "fired": 3,
+        "lights": "rrr",
+        "rns_date": "2026-07-23",
+        "rns_type": "H1 TU"
+      },
+      "trend": {
+        "mode": "share",
+        "cells": "r--",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": -20.1
+          },
+          {
+            "m": "EBITDA",
+            "gap": null
+          },
+          {
+            "m": "PBT",
+            "gap": null
+          }
+        ]
       }
     },
     {
