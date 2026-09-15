@@ -650,16 +650,16 @@
       "company": "The Alumasc Group plc",
       "kind": "ticker",
       "direction": "watch",
-      "headline": "Guide cut twice, but the second half turned: revenue grew, the profit decline shrank to a tenth, order book up 49%.",
-      "trigger": "3 of 3 deterioration conditions fired (two G cuts including the latest RNS; language at or below -1 for five consecutive prints; organic revenue growth and the UK market benchmark withheld against established FY-TU cadence). Green-shoot mirror fires 2 of 3. Direction held at watch because the parent-vs-latest-sub-period rule hands governance to H2 FY26, which beats the FY26 print by 19.1pp on profit.",
-      "alert": true,
-      "fired": 3,
+      "headline": "H2 recovery confirmed in print and guide met — but organic stays dark, FY27 consensus needs +25% profit growth, and a third leader in six months.",
+      "trigger": "2 of 3 lamps lit but split: Numbers & guide fired green (sequential growth resumed, print-corroborated, guide met); Disclosure fired red (organic withheld third consecutive document); Language amber — five-print run ended at +1, mirror needs two rises. Not converging in one direction, so no alert.",
+      "alert": false,
+      "fired": 2,
       "fired_of": 3,
-      "rns_type": "FY Trading Update",
-      "rns_date": "2026-07-17",
-      "build_date": "2026-09-14",
+      "rns_type": "FY Results",
+      "rns_date": "2026-09-15",
+      "build_date": "2026-09-15",
       "spec_version": "v5.5",
-      "next_test": "Sep-2026 results: operating margin, organic growth, and the order book's stated basis.",
+      "next_test": "Oct-2026 AGM: a market-expectations anchor for FY27, and first evidence of the +56% book converting at recovering margin.",
       "url": "ALU.html",
       "grid": {
         "labels": [
@@ -683,13 +683,38 @@
         "rows": [
           "aaaaxxxag",
           "-aaaaagxx",
-          "-aaaaaar-",
+          "-aaaaaarr",
           "-----ggr-",
           "-rrgggrrr"
         ],
         "note": "One row per ledger rank (R1 order book, R2 organic growth, R3 margin, R4 overseas, R5 Water Management) at half grain; rightmost cell = H2 FY26, the Buy/Sell period."
       },
-      "lights": "rrr"
+      "lights": "gar",
+      "prev": {
+        "direction": "watch",
+        "fired": 3,
+        "lights": "rrr",
+        "rns_date": "2026-07-17",
+        "rns_type": "FY Trading Update"
+      },
+      "trend": {
+        "mode": "growth",
+        "cells": "r-r",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": -4.7
+          },
+          {
+            "m": "EBITDA",
+            "gap": null
+          },
+          {
+            "m": "PBT",
+            "gap": -35.4
+          }
+        ]
+      }
     },
     {
       "ticker": "W7L",
