@@ -495,17 +495,17 @@
       "company": "Focusrite plc",
       "kind": "ticker",
       "direction": "watch",
-      "headline": "Revenue turned down in the latest half while profit and margin held — one leg each way, neither side converging to an alert.",
-      "trigger": "Deterioration 1 of 3 — parent-vs-latest-sub-period divergence only (print-corroborated at Rank 4 by the Mar-26 TU, watch-flagged at Rank 1). Language did not fire. Disclosure did not fire: the ADAM Audio candidate is not a ledger metric, is qualitative not blank, and is explained. Green-shoot mirror 1 of 3. No alert.",
+      "headline": "Revenue growing again and net debt almost gone — but both halves are decelerating against the comparator, and the guide has not moved in two years.",
+      "trigger": "Deterioration 1 of 3 — Ranks 1 and 4 now print red two consecutive halves on decelerating growth (H1 FY27 +4% and +3% against comparators of +12.2% and +7.8%), so condition 1 no longer rests on the divergence alone. Language flat for four prints. Disclosure did not fire; the AR order book was newly quantified, a green shoot with no history. Green-shoot mirror 1 of 3. No alert.",
       "alert": false,
       "fired": 1,
       "fired_of": 3,
       "lights": "r--",
-      "rns_type": "Final Results",
-      "rns_date": "2026-06-29",
-      "build_date": "2026-08-13",
-      "spec_version": "5.3b",
-      "next_test": "AGM statement 4 Aug 2026 — first FY27 guide language; then the half to Aug-26: Content Creation above £63.6m and gross margin holding 45%.",
+      "rns_type": "Trading Update",
+      "rns_date": "2026-09-16",
+      "build_date": "2026-09-16",
+      "spec_version": "5.5",
+      "next_test": "Interim results, early Nov 2026: first hard FY27 EBITDA and gross-margin figures, and whether the £2.3m tariff refund is stripped out as an adjusting item.",
       "url": "TUNE.html",
       "grid": {
         "labels": [
@@ -516,42 +516,49 @@
           "R5"
         ],
         "periods": [
-          "H1 22",
-          "H2 22",
-          "H1 23",
-          "H2 23",
-          "H1 24",
-          "H2 24",
-          "H1 25",
-          "H2 25",
-          "H1 26"
+          "Aug 22",
+          "Feb 23",
+          "Aug 23",
+          "Feb 24",
+          "Aug 24",
+          "Feb 25",
+          "Aug 25",
+          "Feb 26",
+          "Aug 26"
         ],
         "rows": [
-          "----rrggr",
-          "----rrrrg",
-          "--agrrrgg",
-          "----rrggr",
-          "----rrggg"
+          "---rrggrr",
+          "---rrrrga",
+          "-agrrrgga",
+          "---rrggrr",
+          "---rrggga"
         ],
-        "note": "One row per ledger rank, half-grain, right-anchored on the Feb-26 Buy/Sell half. Rank 2 is Audio Reproduction revenue, promoted at the v4.7 build."
+        "note": "One row per ledger rank, half-grain, right-anchored on the Aug-26 Buy/Sell half. Feb-22 has aged off the left edge."
       },
       "trend": {
-        "mode": "growth",
-        "cells": "rr-",
+        "mode": "share",
+        "cells": "a--",
         "rows": [
           {
             "m": "REV",
-            "gap": -9.7
+            "gap": 0
           },
           {
             "m": "EBITDA",
-            "gap": -10.1
+            "gap": null
           },
           {
             "m": "PBT",
             "gap": null
           }
         ]
+      },
+      "prev": {
+        "direction": "watch",
+        "fired": 1,
+        "lights": "r--",
+        "rns_date": "2026-06-29",
+        "rns_type": "Final Results"
       }
     },
     {
