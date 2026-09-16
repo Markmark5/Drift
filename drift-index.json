@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-15",
+  "updated": "2026-09-16",
   "tickers": [
     {
       "ticker": "STAF",
@@ -3728,17 +3728,17 @@
       "company": "Babcock International Group",
       "kind": "ticker",
       "direction": "watch",
-      "headline": "Third “final” Type 31 charge (£140m) sinks reported profit 19%; ex-charge business compounds at 19% and beats its margin target.",
+      "headline": "Guide held into FY27 with a £26bn dockyard programme behind it — but Gateway’s October date has gone quiet, and the May Type 31 fire is still in window.",
       "trigger": "2/3 — Numbers & guide: G CUT May-26 (third T31 charge, discount exhausted); Language: −2 print May-26; Disclosure unlit",
       "alert": true,
       "fired": 2,
       "fired_of": 3,
       "lights": "rr-",
-      "rns_type": "FY R",
-      "rns_date": "2026-06-22",
-      "build_date": "2026-09-03",
+      "rns_type": "AGM TU",
+      "rns_date": "2026-09-16",
+      "build_date": "2026-09-16",
       "spec_version": "v5.5",
-      "next_test": "16 Sep 2026 AGM TU: guide held and no new Type 31 cost language; then FMSP Gateway contract due by Oct-2026",
+      "next_test": "HY27 results 19 Nov 2026; before that, Gateway signature — the six-month FMSP bridge expires in early October",
       "url": "BAB.html",
       "grid": {
         "labels": [
@@ -3767,6 +3767,23 @@
           "-gggagrgg"
         ],
         "note": "Ledger ranks R1–R5 at half grain, right-anchored on the FY26 FY R (rightmost cell = H2 FY26)"
+      },
+      "prev": {
+        "direction": "watch",
+        "fired": 2,
+        "lights": "rr-",
+        "rns_date": "2026-06-22",
+        "rns_type": "FY R"
+      },
+      "trend": {
+        "mode": "growth",
+        "cells": "a--",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": 3
+          }
+        ]
       }
     },
     {
