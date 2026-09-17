@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-16",
+  "updated": "2026-09-17",
   "tickers": [
     {
       "ticker": "STAF",
@@ -2555,19 +2555,37 @@
       "ticker": "GFRD",
       "company": "Galliford Try Holdings",
       "kind": "ticker",
-      "direction": "watch",
-      "headline": "Revenue growth stalled to +1.3% at H1, exactly as flagged since Oct-24; margin still climbing, disclosure record intact.",
-      "trigger": "Rank 4 rate deceleration across three prints, context-discounted to amber; no second condition",
+      "direction": "up",
+      "headline": "Profit beat its own top-end guide, margin hit 3.5%, and the water-gap year closed with H2 growth back at +4.6%.",
+      "trigger": "Green-shoot fire on condition 1: margin expansion on printed figures plus a guide beat; conditions 2 and 3 unlit",
       "alert": false,
-      "fired": 0,
+      "fired": 1,
       "fired_of": 3,
-      "lights": "a--",
-      "rns_type": "YE-TU",
-      "rns_date": "2026-07-15",
-      "build_date": "2026-08-18",
+      "lights": "g--",
+      "rns_type": "FY R",
+      "rns_date": "2026-09-17",
+      "build_date": "2026-09-17",
       "spec_version": "5.4",
-      "next_test": "FY26 results, Sep-26: does H2 revenue deliver the implied +4.7%, and does divisional margin hold at or above 3.0% across the full year?",
+      "next_test": "H1 FY27 trading update, Jan-27: do Building's delayed awards convert into FY27 revenue, and does the guide hold similar revenue growth with an expectations anchor?",
       "url": "GFRD.html",
+      "trend": {
+        "mode": "growth",
+        "cells": "a-g",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": 1.3
+          },
+          {
+            "m": "EBITDA",
+            "gap": null
+          },
+          {
+            "m": "PBT",
+            "gap": 8
+          }
+        ]
+      },
       "grid": {
         "labels": [
           "R1",
@@ -2588,13 +2606,13 @@
           "FY 26"
         ],
         "rows": [
-          "gagggagg-",
-          "a-a-a-aa-",
-          "gagggggg-",
-          "ggggarrr-",
-          "---------"
+          "--gagggag",
+          "--rgrgrgr",
+          "---a-g-g-",
+          "--rggrrrg",
+          "-gaaagrgg"
         ],
-        "note": "Five ranks at half grain, right-anchored on the Jul-26 year-end trading update."
+        "note": "Five ranks at half grain, right-anchored on the Sep-26 final results."
       }
     },
     {
