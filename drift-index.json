@@ -4095,6 +4095,70 @@
           }
         ]
       }
+    },
+    {
+      "ticker": "IPX",
+      "company": "Impax Asset Management",
+      "kind": "ticker",
+      "direction": "down",
+      "headline": "Revenue guided down a fifth, run-rate profit hidden three results running, and Q3's AUM bounce was markets — clients are still leaving.",
+      "trigger": "3/3 fired: Numbers & guide (revenue guide cut Apr-26, withdrawn at May-26 interim; margin −7.7pp), Language (sub-zero prints Jan–May 26), Disclosure (run-rate profit and revenue withheld since May-25)",
+      "alert": true,
+      "fired": 3,
+      "fired_of": 3,
+      "lights": "rrr",
+      "rns_type": "Q3 OPS",
+      "rns_date": "2026-07-10",
+      "build_date": "2026-09-17",
+      "spec_version": "5.5",
+      "next_test": "Oct-26 — Q4 AUM update: ex-IEM net outflow below £994m. Then FY26 results: revenue inside £109–113m, and whether run-rate revenue is printed again.",
+      "url": "IPX.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H2 22",
+          "H1 23",
+          "H2 23",
+          "H1 24",
+          "H2 24",
+          "H1 25",
+          "H2 25",
+          "H1 26",
+          "Q3 26"
+        ],
+        "rows": [
+          "-rrrrrrgr",
+          "rgrgrxxx-",
+          "r-agrrxx-",
+          "rrrarrrr-",
+          "rrgrrrra-"
+        ],
+        "note": "Ranks R1–R5 value rows; rightmost = Q3 OPS Jul-26 (Buy/Sell)"
+      },
+      "trend": {
+        "mode": "share",
+        "cells": "a-g",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": 0.9
+          },
+          {
+            "m": "EBITDA",
+            "gap": null
+          },
+          {
+            "m": "PBT",
+            "gap": 10.4
+          }
+        ]
+      }
     }
   ]
 }
