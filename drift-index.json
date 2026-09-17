@@ -2319,17 +2319,17 @@
       "company": "Debenhams Group plc",
       "kind": "ticker",
       "direction": "up",
-      "headline": "Serial guidance upgrades delivered — FY26 Adjusted EBITDA £53.3m (+35%), every brand profitable, and GMV returned to growth in Q1 FY27.",
+      "headline": "H1: GMV +1.8% with Q2 at +2.9%, adjusted EBITDA +13.9%, and a first numeric FY27 floor — no less than £59m.",
       "trigger": "Green-shoot 2-of-3 met — all three conditions fired green, undiscounted",
       "alert": true,
       "fired": 3,
       "fired_of": 3,
       "lights": "ggg",
-      "rns_type": "Trading Update",
-      "rns_date": "2026-07-14",
-      "build_date": "2026-08-14",
-      "spec_version": "v5.3d",
-      "next_test": "H1 FY27 results (Sep-26): whether EBITDA converts to operating profit as the CEO flagged, and whether Q1's +0.5% GMV growth holds.",
+      "rns_type": "H1 TU",
+      "rns_date": "2026-09-17",
+      "build_date": "2026-09-17",
+      "spec_version": "v5.5",
+      "next_test": "H1 FY27 results (Nov-26): PBT back in the print, 3PL cost parity in statutory numbers, Q3 holding Q2 +2.9%.",
       "url": "DEBS_drift_tracker_v53d.html",
       "grid": {
         "labels": [
@@ -2340,28 +2340,35 @@
           "R5"
         ],
         "periods": [
-          "-",
-          "-",
+          "H1 23",
+          "FY 23",
+          "H1 24",
           "FY 24",
           "H1 25",
           "FY 25",
           "H1 26",
           "FY 26",
-          "FY 26",
-          "Q1 27"
+          "H1 27"
         ],
         "rows": [
-          "--aagrrrg",
-          "---gggaa-",
-          "--a-aagg-",
-          "--a-a-aa-",
-          "--rrgrgg-"
+          "a--aagrrg",
+          "----gggar",
+          "-rra-aagg",
+          "-raa-a-ag",
+          "rgrrrgrgr"
         ],
-        "note": "Five ranked metrics at H-grain; two left-pad blanks precede the record."
+        "note": "Five ranked metrics at H-grain; full record, no padding — nine sub-period columns."
+      },
+      "prev": {
+        "direction": "up",
+        "fired": 3,
+        "lights": "ggg",
+        "rns_date": "2026-09-10",
+        "rns_type": "Disposal"
       },
       "trend": {
-        "mode": "growth",
-        "cells": "-g-",
+        "mode": "share",
+        "cells": "-a-",
         "rows": [
           {
             "m": "REV",
@@ -2369,7 +2376,7 @@
           },
           {
             "m": "EBITDA",
-            "gap": 64.4
+            "gap": 0.9
           },
           {
             "m": "PBT",
