@@ -637,17 +637,20 @@
     {
       "ticker": "SOLI",
       "company": "Solid State plc",
+      "kind": "ticker",
       "direction": "up",
       "headline": "FY26 beats consensus on revenue & profit; \"exceed\" FY27 guide issued; all three divisions grow; quality of earnings improving.",
-      "trigger": "2 of 3 green-shoot: Hard (rev + PBT growing 2+ prints + consensus beat) + Text (2 consecutive up-scores from trough); G RAISE on Buy/Sell RNS; Drift green shoots (OB re-quantified, 3-division disclosure expansion)",
+      "trigger": "2 of 3 green-shoot: Numbers & guide (G RAISE x2 Apr-26/Jun-26; rev + adj PBT growing both halves; margin expanding) + Language (two +2 prints from Nov-24 trough). Disclosure amber: first-day baselines (Power split, ex-NSPA book) technically met, not counted.",
       "alert": true,
+      "fired": 2,
+      "fired_of": 3,
+      "lights": "gga",
       "rns_type": "FY Results",
       "rns_date": "2026-06-29",
-      "build_date": "2026-08-03",
-      "spec_version": "v4.1",
-      "next_test": "H1 FY27 TU (Oct/Nov-26) & H1 R (Dec-26): OB >£90m; margin >7%; CAIN follow-on order; guide tone; AI component cost pressure vs opportunity.",
+      "build_date": "2026-09-21",
+      "spec_version": "v5.5",
+      "next_test": "H1 FY27 TU (Oct/Nov-26) & H1 R (Dec-26): OB >£90m ex-CAIN; margin toward 7%; CAIN follow-on order; guide tone.",
       "url": "SOLI.html",
-      "kind": "ticker",
       "grid": {
         "labels": [
           "R1",
@@ -657,15 +660,15 @@
           "R5"
         ],
         "periods": [
-          "",
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1",
-          "H2"
+          "H2 22",
+          "H1 23",
+          "H2 23",
+          "H1 24",
+          "H2 24",
+          "H1 25",
+          "H2 25",
+          "H1 26",
+          "H2 26"
         ],
         "rows": [
           "-garragag",
@@ -674,10 +677,8 @@
           "---rgrrgg",
           "-rggagrag"
         ],
-        "note": "Rows = ranks 1-5 · half-year grain · newest right (Buy/Sell)"
-      },
-      "fired": 2,
-      "fired_of": 3
+        "note": "R1 order book & R5 net debt: sequential position scores at own print dates; R2 revenue & R4 adj PBT: banded YoY-rate scores; R3 adj op margin: H1-only cadence. Left cell padded (8-column record)."
+      }
     },
     {
       "ticker": "ALU",
