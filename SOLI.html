@@ -35,103 +35,8 @@ p  { font-size: .88rem; line-height: 1.6; }
 .section-header { border-bottom: 2px solid #1a1a1a; padding-bottom: 6px; margin-bottom: 16px; }
 
 /* ─── VERDICT CARD ──────────────────────────────────────── */
-.verdict-wrap { margin-bottom: 48px; }
-.verdict-card {
-  display: flex;
-  border-radius: 12px;
-  overflow: hidden;
-  border: 6px solid #1a7a44;
-  max-width: 1100px;
-}
-.verdict-rail {
-  width: 82px;
-  min-height: 220px;
-  background: #1a7a44;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  flex-shrink: 0;
-}
-.rail-badge {
-  width: 36px; height: 36px;
-  border-radius: 50%;
-  border: 2px solid rgba(255,255,255,0.9);
-  display: flex; align-items: center; justify-content: center;
-  background: rgba(255,255,255,0.15);
-}
-.rail-badge svg { width: 20px; height: 20px; stroke: #fff; fill: none; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
-.rail-label {
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  font-size: .72rem;
-  font-weight: 700;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-  color: #fff;
-}
-.verdict-body { padding: 20px 24px; flex: 1; }
-.verdict-headline { font-size: 1.2rem; font-weight: 700; line-height: 1.35; margin-bottom: 12px; color: #1a1a1a; }
-.meta-pills { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
-.pill {
-  display: inline-block;
-  padding: 3px 9px;
-  border-radius: 20px;
-  font-size: .75rem;
-  font-weight: 600;
-  border: 1px solid #ccc;
-  color: #333;
-  background: #f5f5f5;
-}
-.pill.alert { background: #fff3cd; border-color: #e6b800; color: #7a5c00; }
-.verdict-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px; max-width: 700px; }
-.vcard {
-  background: #f7f6f2;
-  border-radius: 8px;
-  padding: 9px 12px;
-  font-size: .82rem;
-}
-.vcard-amber { background: #faeeda; }
-.vcard-label { font-weight: 700; font-size: .72rem; text-transform: uppercase; letter-spacing: .05em; color: #555; margin-bottom: 2px; }
-.verdict-bullets { font-size: .83rem; line-height: 1.6; color: #2a2a2a; margin-top: 8px; }
-.verdict-bullets li { margin-bottom: 4px; list-style: disc; margin-left: 18px; }
 
 /* ─── v3.13 COMPANY-GUIDE DRAWER (verdict card) ──────────── */
-.company-guide-drawer { margin-bottom: 14px; }
-.company-guide-drawer summary {
-  background: #2b2a26;
-  color: #fff;
-  font-size: 24px;
-  font-family: 'Caveat', cursive;
-  font-weight: 700;
-  padding: 11px 15px;
-  border-radius: 8px;
-  cursor: pointer;
-  list-style: none;
-}
-.company-guide-drawer summary::-webkit-details-marker { display: none; }
-.company-guide-drawer summary::before { content: "💡 "; font-size: 22px; vertical-align: middle; line-height: 1; }
-.company-guide-drawer[open] summary { border-radius: 8px 8px 0 0; }
-.company-guide-body {
-  background: #f7f6f2;
-  border: 1px solid #e0ded6;
-  border-top: none;
-  border-radius: 0 0 8px 8px;
-  padding: 14px 16px;
-  font-size: .85rem;
-  line-height: 1.6;
-  color: #2a2a2a;
-}
-.company-guide-body h4 {
-  font-family: 'Caveat', cursive;
-  font-size: 22px;
-  font-weight: 700;
-  margin: 12px 0 5px;
-  color: #1a1a1a;
-}
-.company-guide-body h4:first-child { margin-top: 0; }
-.company-guide-vintage { font-size: 11px; color: #777; margin-top: 10px; }
 
 /* ─── §2.0 CURRENT STATE BAR ─────────────────────────────── */
 .current-state-bar {
@@ -333,37 +238,204 @@ details b { font-weight: 700; display: block; margin-top: 6px; margin-bottom: 2p
 .derived    { font-size: .72rem; color: #888; }
 .footnote   { font-size: .75rem; color: #777; line-height: 1.55; margin-top: 6px; }
 .footnote sup { font-size: .65rem; }
+
+/* ==== v5.5 page-level direction vars (Appendix E.1) ==== */
+:root{ --red2:#d94436; --green2:#2f9e5c; --amber2:#c98f16; --muted:#6b6860; }
+
+/* ==== VERDICT CARD — LOCKED v5.3d (identical across projects) ==== */
+.card{display:flex;border:6px solid var(--dir);border-radius:12px;overflow:hidden;
+ max-width:1180px;margin:0 0 30px;background:#fff}
+.card.up{--dir:#2f9e5c}
+.card.watch{--dir:#c98f16}
+.card.down{--dir:#d94436}
+.rail{width:82px;flex:0 0 82px;background:var(--dir);color:#fff;display:flex;
+ flex-direction:column;align-items:center;justify-content:flex-start;
+ padding:16px 6px;gap:12px;position:relative}
+.badge{width:36px;height:36px;border-radius:50%;border:2px solid #fff;
+ display:flex;align-items:center;justify-content:center;flex:0 0 36px}
+.railtkr{writing-mode:vertical-rl;transform:rotate(180deg);text-transform:uppercase;
+ letter-spacing:.12em;font-size:19px;font-weight:700;color:#fff;flex:0 0 auto}
+.raillab{writing-mode:vertical-rl;transform:rotate(180deg);text-transform:uppercase;
+ letter-spacing:.16em;font-size:14px;font-weight:600;color:rgba(255,255,255,.9);flex:0 0 auto}
+.railco{writing-mode:vertical-rl;transform:rotate(180deg);letter-spacing:.07em;
+ font-size:13.5px;font-weight:500;color:rgba(255,255,255,.85);flex:0 0 auto;
+ max-height:260px;overflow:hidden}
+.railgap{flex:1 1 auto;min-height:26px}
+.tier1{position:absolute;bottom:14px;font-size:18px}
+.cbody{flex:1;padding:20px 22px 22px;min-width:0}
+.chead{font-size:22px;font-weight:700;line-height:1.25;margin:0 0 12px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:14px}
+.pill{background:var(--paper);border:1px solid var(--line);border-radius:999px;
+ padding:4px 11px;font-size:11.5px;color:var(--mute);white-space:nowrap}
+.dot{color:var(--line)}
+.lights{background:#2b2a26;border-radius:12px;padding:12px 13px;max-width:1100px;
+ display:flex;gap:10px;align-items:stretch;flex-wrap:wrap}
+.lamp{flex:1 1 200px;background:#3b3934;border-radius:9px;padding:10px 11px;
+ position:relative;min-width:190px}
+.lamp.off,.lamp.amb{background:#333129}
+.bulb{width:28px;height:28px;border-radius:50%;margin-bottom:7px;
+ border:2px solid rgba(255,255,255,.28);box-shadow:0 0 0 4px rgba(255,255,255,.07)}
+.b-r{background:#ff3b30} .b-g{background:#21d05e} .b-a{background:#ffb020} .b-o{background:#57544c}
+.lname{font-size:15.5px;font-weight:700;color:#fff;line-height:1.15}
+.lamp.off .lname,.lamp.amb .lname{color:#a8a49a}
+.lreason{font-size:11.5px;color:#c9c6bd;margin-top:4px;line-height:1.35}
+.ldate{position:absolute;top:10px;right:11px;font-size:11px;color:#c9c6bd}
+.lamp.off .ldate,.lamp.amb .ldate{color:#8d8981}
+.tally{flex:0 0 78px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.tally b{font-size:26px;font-weight:700;color:#fff;line-height:1}
+.tally span{font-size:10.5px;letter-spacing:.14em;color:#c9c6bd;margin-top:4px}
+.bstrip{margin-top:10px;border:1px dashed #57544c;border-radius:9px;padding:9px 11px;
+ display:flex;align-items:stretch;gap:10px}
+.bsweep{flex:1;display:flex;align-items:center;gap:10px;padding-right:14px;min-width:230px}
+.bbulb{width:20px;height:20px;border-radius:50%;flex:0 0 20px;border:2px solid rgba(255,255,255,.25)}
+.bstrip .t{font-size:13px;color:#fff;font-weight:600}
+.bstrip .s{font-size:11px;color:#c9c6bd;margin-top:2px}
+details.guide{margin:14px 0;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+details.guide>summary{background:#2b2a26;color:#fff;padding:8px 15px;cursor:pointer;
+ list-style:none;font-family:'Caveat',"Comic Sans MS",cursive;font-weight:700;font-size:24px}
+details.guide>summary::-webkit-details-marker{display:none}
+details.guide>summary .em{font-size:22px;margin-right:6px}
+.gbody{padding:14px 16px;font-size:12.5px;line-height:1.55}
+.gbody h4{font-family:'Caveat',"Comic Sans MS",cursive;font-weight:700;font-size:22px;margin:12px 0 4px}
+.gbody h4:first-child{margin-top:0}
+.gbody .vintage{color:var(--muted);font-size:11px;margin-top:12px}
+.boxes{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 14px}
+.box{background:#f2f1ec;border-radius:0 0 10px 10px;border-top:3px solid var(--dir);
+ padding:12px 15px 13px}
+.box .lb{font-size:13px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted)}
+.box .hl2{font-size:19px;font-weight:700;margin:3px 0 4px}
+.box p{font-size:13px;line-height:1.45;margin:0}
+.cbul{margin:0;padding-left:18px;font-size:13px}
+.cbul li{margin-bottom:6px}
+@media(max-width:760px){
+ .boxes{grid-template-columns:1fr}
+ .card{flex-direction:column}
+ .rail{width:100%;flex-direction:row;padding:10px;align-items:center;gap:10px}
+ .railtkr,.raillab,.railco{writing-mode:horizontal-tb;transform:none;max-height:none}
+ .railgap{display:none}
+ .bstrip{flex-direction:column}
+ .bsweep{min-width:0;padding-right:0}
+}
+/* movement row — 6.3c (omitted this build: first build) */
+.mvrow{margin-top:9px;border:1px dashed #57544c;border-radius:9px;padding:8px 12px;
+ display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.mvlab{font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#8d8981;
+ font-weight:700;flex:none}
+.mvval{font-size:13px;font-weight:700;color:#fff}
+.mvval .was{color:#8d8981;font-weight:600}
+.mvarw{font-weight:700}
+.mvarw.up{color:#21d05e}
+.mvarw.dn{color:#ff6b63}
+.mvsince{font-size:10px;color:#8d8981;margin-left:auto;flex:none}
+
+/* ==== TREND WATCH PANEL — LOCKED v5.3 ==== */
+.tw{flex:1; border-left:1px dashed #57544c; padding-left:16px; min-width:0}
+.tw .plab{font-size:9.5px; letter-spacing:.14em; text-transform:uppercase;
+ color:#8d8981; font-weight:700}
+.tw .dset{display:flex; gap:20px; margin-top:8px}
+.tw .dcell{text-align:center; width:88px}
+.tw .dnm{font-size:9px; letter-spacing:.1em; color:#8d8981; margin-bottom:2px}
+.tw .dfig{font-size:11px; font-weight:700; margin-top:2px}
+.tw .dtrend{font-size:9px; color:#c9c6bd; margin-top:2px}
+.tw .dfc{font-size:8.5px; color:#6d6a62}
+@media(max-width:760px){
+ .tw{border-left:none;border-top:1px dashed #57544c;padding-left:0;padding-top:10px;margin-top:2px}
+ .tw .dset{justify-content:space-between;gap:8px}
+ .tw .dcell{width:32%}
+}
+
+/* ==== five-drawer rule — two-tier skin (6.1) ==== */
+details.top{border:1px solid #c6c2b9;background:var(--paper);border-radius:10px;margin:16px 0}
+details.top>summary{font-size:14px;font-weight:700;padding:13px;cursor:pointer;list-style:none}
+details.top>summary::-webkit-details-marker{display:none}
+details.top>summary::before{content:"▸ ";color:var(--mute)}
+details.top[open]>summary::before{content:"▾ "}
+details.top>div{padding:0 13px 13px}
+details.top details{background:#fff;border:1px solid var(--line);border-radius:8px;margin-top:12px}
+details.top details>summary{font-size:12.5px;font-weight:700;padding:9px;cursor:pointer;list-style:none}
+details.top details>summary::-webkit-details-marker{display:none}
+details.top details .drawer-inner{padding:4px 12px 12px;font-size:12.5px;line-height:1.55}
+details.top .drawer-inner p{font-size:12.5px;line-height:1.55}
+
+/* ==== §3 trailing-window collapse (6.7) + context column + card strip ==== */
+#text3.collapsed tr.oldrow{display:none}
+#text3 tr.expander td{background:#efede7;cursor:pointer;text-align:left;font-size:11.5px;
+ color:var(--mute);padding:6px 10px;font-weight:600;letter-spacing:.02em}
+#text3 tr.expander td:hover{background:#e7e4dc}
+#text3 td.ctx{font-size:11.5px;color:#555;text-align:left;line-height:1.45}
+.cstrip{border-collapse:collapse;margin:6px 0 10px}
+.cstrip td{width:26px;height:20px;border:1px solid #d8d5cf;font-size:9px;color:#555;text-align:center}
+.cstrip td.slab{width:44px;font-weight:700;background:#f7f6f2}
+.cstrip td.cg{background:#21d05e}.cstrip td.ca{background:#d9c62f}.cstrip td.cr{background:#ff6b63}
+.cstrip td.cx{background:#3b3934;color:#fff}.cstrip td.cn{background:#fff}
+.cstrip td.bscell{outline:2px solid #16150f}
 </style>
 </head>
 <body>
 
 <div class="page-title">SOLI — Solid State plc</div>
-<div class="page-sub">Longitudinal Drift Tracker · v4.1 · FY-end 31 Mar · Buy/Sell RNS: FY26 Final Results 29-Jun-26 · Appendix A audit applied (9 corrections) · Caveat dark-panel family · book-to-bill strip · drift-entry embedded · numbers unchanged</div>
+<div class="page-sub">Longitudinal Drift Tracker · v5.5 · FY-end 31 Mar · Buy/Sell RNS: FY26 Final Results 29-Jun-26 · same-RNS rebuild of the audited v4.1 build (numbers locked) · trigger lights · Trend Watch · five-drawer layout · book-to-bill strip retained · drift-entry v5.5</div>
 
 <!-- ══════════════════════════════════════════════════════════
      🏁 VERDICT CARD
 ══════════════════════════════════════════════════════════ -->
-<div class="verdict-wrap section">
-<div class="verdict-card">
-  <div class="verdict-rail">
-    <div class="rail-badge">
-      <svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-    </div>
-    <div class="rail-label">Turning Up</div>
+<!-- 🏁 VERDICT CARD — Appendix E, v5.3d -->
+<div class="card up">
+ <div class="rail">
+ <div class="badge">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
+  stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+ </div>
+ <div class="raillab">Turning up</div>
+ <div class="railgap"></div>
+ <div class="railtkr">SOLI</div>
+ <div class="railco">Solid State plc</div>
+ <div class="railgap"></div>
+ </div>
+ <div class="cbody">
+ <h1 class="chead">FY26 beats consensus on revenue &amp; profit; "exceed" FY27 guide issued; all three divisions grow; quality of earnings improving.</h1>
+ <div class="pills">
+  <span class="pill">FY Results · 29 Jun 2026</span>
+  <span class="pill">FY-end 31 Mar</span>
+  <span class="dot">·</span>
+  <span class="pill">B/S: clean, deleveraging</span>
+ </div>
+ <div class="lights">
+  <div class="lamp">
+   <div class="ldate">Apr-26 · Jun-26</div>
+   <div class="bulb b-g"></div>
+   <div class="lname">Numbers &amp; guide</div>
+   <div class="lreason">G RAISE ×2; revenue &amp; adj PBT growing in both halves</div>
   </div>
-  <div class="verdict-body">
-    <div class="verdict-headline">FY26 beats consensus on revenue &amp; profit; "exceed" FY27 guide issued; all three divisions grow; quality of earnings improving.</div>
-    <div class="meta-pills">
-      <span class="pill alert">⚠️ UK DIP timing · AI lead-times</span>
-      <span class="pill">FY Results</span>
-      <span class="pill">29-Jun-26</span>
-      <span class="pill">FY 31 Mar</span>
-      <span class="pill">CEO succession: Macmichael (Mar-26)</span>
-    </div>
-
-    <details class="company-guide-drawer">
-      <summary>Idiot's guide to the company — What Solid State plc actually does</summary>
-      <div class="company-guide-body">
+  <div class="lamp">
+   <div class="ldate">Apr-26 · Jun-26</div>
+   <div class="bulb b-g"></div>
+   <div class="lname">Language</div>
+   <div class="lreason">Two consecutive +2 prints from the Nov-24 −3 trough</div>
+  </div>
+  <div class="lamp amb">
+   <div class="ldate">Jun-26</div>
+   <div class="bulb b-a"></div>
+   <div class="lname">Disclosure</div>
+   <div class="lreason">Power split &amp; ex-NSPA book are first-day baselines — not counted</div>
+  </div>
+  <div class="tally"><b>2/3</b><span>FIRED</span></div>
+  <div class="bstrip" style="flex-basis:100%">
+   <div class="bsweep">
+    <div class="bbulb b-g"></div>
+    <div><div class="t">Clean · deleveraging</div>
+    <div class="s">Sweep sits outside the 2-of-3 count</div></div>
+   </div>
+   <div class="tw">
+    <div class="plab">TREND WATCH</div>
+    <div class="dtrend" style="font-size:11px;color:#c9c6bd;margin-top:10px">no consensus data</div>
+    <div class="dfc" style="margin-top:3px">block saved 18-Sep-26 — outside ±14 days of the 29-Jun-26 Buy/Sell RNS (stale)</div>
+   </div>
+  </div>
+ </div>
+ <details class="guide">
+ <summary><span class="em">💡</span>Idiot's guide to the company — What Solid State plc actually does</summary>
+ <div class="gbody">
         <h4>Who they are</h4>
         <p>Solid State makes and sources the tough electronic parts that go inside other people's kit — the boxes and boards built to survive rain, vibration, heat, or the middle of the ocean, not just sit on a desk. Founded in 1971, listed on AIM since 1996, based in Redditch in the English Midlands, with about 475 people across seven UK factories and one in the US.</p>
         <h4>How it makes money — three shops under one roof</h4>
@@ -372,36 +444,26 @@ details b { font-weight: 700; display: block; margin-top: 6px; margin-bottom: 2p
         <p>John Macmichael was appointed Chief Executive on 26 March 2026, having stepped in as interim CEO the previous November after the sudden loss of long-serving CEO Gary Marsh. Macmichael spent 20 years running the Components division before taking the top job — an internal promotion, not an outside hire, so the strategy carries on rather than resetting. Jon Baxter has stepped up to lead Components in his place, and each of the three divisions now has its own named managing director reporting straight to the board.</p>
         <h4>The trading brands</h4>
         <p>Steatite, Solsta, Custom Power, Pacer, Active Silicon, Gateway, Durakool, Ndura and Q-Par — nine brand names, one group, built up partly by buying small specialist firms over the years (three acquisitions in the last five).</p>
-        <p class="company-guide-vintage"><i>The argument, in short: three unglamorous but hard-to-copy electronics businesses riding the same wave — more defence spending and more AI hardware needing tougher power and comms parts.</i></p>
-        <p class="company-guide-vintage">As at FY26 Final Results, 29-Jun-26.</p>
+        <p class="vintage"><i>The argument, in short: three unglamorous but hard-to-copy electronics businesses riding the same wave — more defence spending and more AI hardware needing tougher power and comms parts.</i></p>
+        <p class="vintage">As at FY26 Final Results, 29-Jun-26.</p>
       </div>
-    </details>
-
-    <div class="verdict-grid">
-      <div class="vcard">
-        <div class="vcard-label">Current State</div>
-        🟢 All ledger metrics green in FY26; OB ex-NSPA stronger; margins recovering.
-      </div>
-      <div class="vcard">
-        <div class="vcard-label">Fired</div>
-        2 of 3 🟢: Hard (rev + PBT growing 2+ prints + consensus beat) · Text (2 consecutive 🟢🟢 from 🔴🔴🔴 trough). Drift: OB re-quantified + 3-division disclosure expansion.
-      </div>
-      <div class="vcard vcard-amber">
-        <div class="vcard-label">Caveat</div>
-        UK Defence Investment Plan timing uncertain; ICS facility at low utilisation (margin drag); AI-driven component lead-time extension flagged as risk + opportunity; H1-loaded by NSPA delivery (structural, bounded).
-      </div>
-      <div class="vcard">
-        <div class="vcard-label">Next</div>
-        H1 FY27 TU (Oct/Nov-26) &amp; H1 R (Dec-26): OB &gt;£90m; margin &gt;7%; CAIN follow-on order; guide tone; AI component cost pressure vs opportunity.
-      </div>
-    </div>
-    <ul class="verdict-bullets">
-      <li>FY26 beats pre-results consensus: rev +1.6% (£154.1m vs £151.6m), adj PBT +8.9% (£8.6m vs £7.9m). Jun-26 is a clean 🟢 RAISE with "exceed" FY27 guide.</li>
-      <li>The +£3.6m profit jump is pure sales gearing (see bridge), with the £3.3m returning bonus a self-funding drag; wedge narrowing (FY26 adjusting items £2.8m vs FY25 £4.7m incl. one-off £2.7m impairment); dividend restored +10% to 2.75p, net debt falling to £4.2m.</li>
-      <li>Flips to confirm: CAIN (£8m initial, Q1 FY27 shipped) → follow-on order; OB held &gt;£90m ex-NSPA; adj margin stepping toward 7%; guide tone at next H1 FY27 read.</li>
-    </ul>
-  </div>
-</div>
+ </details>
+ <div class="boxes">
+  <div class="box"><div class="lb">Current state</div><div class="hl2">Beat &amp; raised</div>
+  <p>FY26 +1.6% revenue / +8.9% adj PBT vs pre-results consensus; FY27 set at "exceed"; all three divisions growing.</p></div>
+  <div class="box"><div class="lb">Warning you get</div><div class="hl2">6–12 months</div>
+  <p>Order book led both turns — qualitative Mar-24, warning Nov-24. Now £102.4m ex-NSPA and building.</p></div>
+  <div class="box"><div class="lb">Argues against</div><div class="hl2">One real miss</div>
+  <p>Jul-24 "broadly in line" resolved −50% on the SDR pause; FY26 is H1-loaded; UK Defence Investment Plan timing open.</p></div>
+  <div class="box"><div class="lb">Next test</div><div class="hl2">Oct/Nov-26</div>
+  <p>H1 FY27 TU &amp; H1 R: order book &gt;£90m ex-CAIN; margin toward 7%; CAIN follow-on; guide tone.</p></div>
+ </div>
+ <ul class="cbul">
+  <li>The +£3.6m profit jump is pure sales gearing (see bridge), net of the £3.3m returning bonus; wedge narrowing £4.7m→£2.8m of adjusting items.</li>
+  <li>Drift ambers are green shoots with no history — Power split and ex-NSPA book baselines start Jun-26 and are judged at the next print.</li>
+  <li>Serial-sandbagger discount cuts the other way here: "exceed" from this management reads as genuine signal, not routine.</li>
+ </ul>
+ </div>
 </div>
 
 <!-- ══════════════════════════════════════════════════════════
@@ -409,6 +471,7 @@ details b { font-weight: 700; display: block; margin-top: 6px; margin-bottom: 2p
 ══════════════════════════════════════════════════════════ -->
 <div class="section">
 <div class="section-header"><h2>§1 · Metric Ledger</h2></div>
+<details class="top"><summary>§1 · Metric ledger — the five, roles &amp; backtest</summary><div>
 <div class="table-wrap">
 <table>
   <thead>
@@ -416,6 +479,7 @@ details b { font-weight: 700; display: block; margin-top: 6px; margin-bottom: 2p
       <th style="width:40px">Rank</th>
       <th>Metric</th>
       <th>Type</th>
+      <th>Role</th>
       <th>Why it leads for SOLI</th>
       <th>Cadence</th>
       <th>Status this run</th>
@@ -426,6 +490,7 @@ details b { font-weight: 700; display: block; margin-top: 6px; margin-bottom: 2p
       <td><b>1</b></td>
       <td class="label-col">Open Order Book (£m)</td>
       <td>Snapshot</td>
+      <td><b>LEAD</b></td>
       <td>Every results/TU leads with it; defence demand shifts appear 6–12m before revenue. Company explicitly models shipment from it — Rank 1 by management's own labelling and consistent disclosure priority.</td>
       <td>Every qualifying doc</td>
       <td>✅ £102.4m May-26</td>
@@ -434,6 +499,7 @@ details b { font-weight: 700; display: block; margin-top: 6px; margin-bottom: 2p
       <td><b>2</b></td>
       <td class="label-col">Group Revenue (£m)</td>
       <td>Flow (HonH)</td>
+      <td>CONFIRM</td>
       <td>Largest hard-number signal; lumpy comms contracts make H1/H2 sub-period derivation analytically rich. Earliest hard confirmation of order book turns.</td>
       <td>H1 TU/R + FY TU/R</td>
       <td>✅ £154.1m FY26</td>
@@ -442,6 +508,7 @@ details b { font-weight: 700; display: block; margin-top: 6px; margin-bottom: 2p
       <td><b>3</b></td>
       <td class="label-col">Adj Operating Margin (%)</td>
       <td>Rate (HonH)</td>
+      <td>CONFIRM</td>
       <td>Structural trajectory to 10% mid-term target. Investment-ahead-of-revenue (ICS facility) creates a specific read: temporary compression vs structural slide. Gap to 10% is the watch.</td>
       <td>H1 R + FY R</td>
       <td>✅ 6.2% FY26</td>
@@ -450,6 +517,7 @@ details b { font-weight: 700; display: block; margin-top: 6px; margin-bottom: 2p
       <td><b>4</b></td>
       <td class="label-col">Adj PBT (£m)</td>
       <td>Flow (HonH)</td>
+      <td>CONFIRM</td>
       <td>Headline earnings metric; confirms OB + margin reads; drives dividend decision; the number management guides and analysts score.</td>
       <td>H1 TU/R + FY TU/R</td>
       <td>✅ £8.6m FY26</td>
@@ -458,6 +526,7 @@ details b { font-weight: 700; display: block; margin-top: 6px; margin-bottom: 2p
       <td><b>5</b></td>
       <td class="label-col">Net Debt (£m)</td>
       <td>Snapshot</td>
+      <td>CONFIRM</td>
       <td>Leverage trajectory informs M&amp;A optionality and dividend sustainability. Custom Power created structural step-up now unwinding.</td>
       <td>FY R + H1 R</td>
       <td>✅ £4.2m FY26</td>
@@ -465,7 +534,8 @@ details b { font-weight: 700; display: block; margin-top: 6px; margin-bottom: 2p
   </tbody>
 </table>
 </div>
-<p class="footnote">Bands: H-grain rate ±2.0pp. No Q-grain (no Q1/Q3 TUs). 5 ranks = 5 grid blocks ✅</p>
+<p class="footnote">Bands: H-grain rate ±2.0pp. No Q-grain (no Q1/Q3 TUs). 5 ranks = 5 grid blocks ✅<br><b>Roles (v5.5 backtest, both turns):</b> Rank 1 LEAD — the sole LED verdict in the record: the book fell every print from May-23, went 🟡 qualitative at the Mar-24 FY TU (8 months before the Nov-24 warning), and its May-25 +18.8% rebuild preceded FY26 delivery by ~9 months. Ranks 2–5 CONFIRM — coincident at both turns; they corroborate, never signal alone.<br><b>WATCH (unscored, checked every run):</b> Gross margin % — flat 31–32% straight through the FY25 collapse, uninformative on demand; FY26 33.5% is a quality note. Adj dil EPS — never scored (duplicates adj PBT; 4-for-1 bonus basis break). Book-to-bill† — LED FY24 (0.83 during the record year) but FY-grain, derived and basis-contaminated: kept as the non-scored strip beneath §2.</p>
+</div></details>
 </div>
 
 <!-- ══════════════════════════════════════════════════════════
@@ -474,16 +544,7 @@ details b { font-weight: 700; display: block; margin-top: 6px; margin-bottom: 2p
 <div class="section">
 <div class="section-header"><h2>§2 · Unified Forward Grid — half-grain spine, 8 sub-period columns (H-grain reporter)</h2></div>
 
-<details><summary>Turn methodology &amp; restatement basis</summary><div class="drawer-inner">
-  <p><b>Turn methodology (v4.1 display basis):</b> Columns are sub-periods only (H1 / H2†); full years render on the non-scored aggregate row beneath each rank — transcribed, never summed, no arrows. Snapshot metrics (order book, net debt) compare position-to-position at their own disclosure grain, newest vs prior disclosed; snapshot YoY renders solely on the aggregate row. Flow metrics (revenue, adj PBT) display seasonally matched YoY (H1-vs-H1 / H2-vs-H2); the banded Δrate is the scored element — the emoji alone carries the score, the pp record lives here. Rate metric (adj op margin) H1-vs-H1, band ±2.0pp; H2 margin structurally outside disclosure cadence. Raw HonH is computed in script and retained here, never displayed in cells. Sequential trigger not applicable at H-grain. † = derived (FY − H1); watch flags until a reported sub-period corroborates.</p>
-  <p><b>FY-grain score record (restated to v4.1 banded Δrate — aggregates are never scored on the grid; retained here for audit only):</b> Revenue FY23 — (base) · FY24 🔴↘ (−19.7pp) · FY25 🔴↘ (−52.5pp) · FY26 🟢↗ (+46.6pp). Adj PBT FY23 — · FY24 🔴↘ (−5.6pp) · FY25 🔴↘ (−112.3pp) · FY26 🟢↗ (+139.9pp). Margin FY24 🟡→ (+1.2pp) · FY25 🔴↘ (−5.6pp) · FY26 🟡→ (+1.4pp). OB FY-end YoY direction: FY23 🟢↗ (+29.5%) · FY24 🔴↘ (−23.2%) · FY25 🟢↗ (+13.9%) · FY26 🟡→ (+0.8%). ND FY-end: FY23 🔴↘ᶜ · FY24 🟢↗ · FY25 🔴↘ᵈ · FY26 🟢↗. FY24's banded fires carry the same Custom Power comp discount as the H-grain cells. Pre-v4.0 renderings (direction-of-growth basis: rev/PBT FY24 🟢↗) superseded by this restatement. Margin pp record (H1 grain): FY24 −0.1pp 🟡→ · FY25 −4.1pp 🔴↘ · FY26 +1.4pp 🟡→.</p>
-  <p><b>FY24 deceleration fires (context-discounted):</b> REV H1 FY24 (−2.5pp), REV H2 FY24† (−35.0pp) and PBT H1 FY24 (−20.3pp) fire 🔴↘ under the v4.1 banded Δrate — technically met, analytically explained: FY24 laps FY23 comps inflated by Custom Power first-time consolidation (Oct-22), and absolute growth remained strongly positive throughout. Previously rendered 🟢↗ under the pre-v4.0 direction-of-growth basis. Annotated, not suppressed, per the context-discount rule; no current fired condition rests on these cells.</p>
-  <p><b>v4.1 display derivations (computed in code from audited prints):</b> H2 YoY chain uses H2 FY22† bases (rev 45.6 = 85.0−39.4; PBT 3.93 = 7.2−3.27): H2 rev YoY +47.1%†/+12.1%/−15.8%/+8.1%; H2 PBT YoY +41.7%†/+49.0%/−69.9%/+48.0%. Snapshot aggregate YoY: OB +29.5%/−23.2%/+13.9%/+0.8% (FY22 base 89.7); ND +55.8%/−42.0%/+57.4%/−43.2% (FY22 base 5.2).</p>
-  <p><b>Derivation cross-verification:</b> H2† = FY − H1; second route: H1 confirmed from interim RNS exact figure, FY from results RNS exact figure. H2 FY23† £67.1m company-corroborated (FY23 R prints "second half revenues of £67.1m").</p>
-  <p><b>Restatement / provenance:</b> ᵃ Oct-23 OB (£108.6m at 31 Oct) is the post-period figure disclosed in H1 FY24 R, used on a forward-facing basis consistent with Nov-22/Nov-24. ᵇ FY26 OB £102.4m at 31 May carries no NSPA orders (FY25 £101.6m included £19.0m NSPA carryover) — first like-for-like beat of FY25. ᶜ H1 FY23 net debt £16.1m reflects Custom Power M&amp;A (£15m new debt + £14.4m deferred consideration) — like-for-like bank-only net cash £1.7m. ᵈ FY25 net debt rise: Gateway £1.4m + Q-Par £0.7m bolt-ons + ICS capex, all disclosed/bounded. Later audited figure governs any prior "c." estimate. Buy/Sell (rightmost) column bold throughout. Power revenue three-division split first disclosed FY26 R (FY25 restated £27.5m from within Systems £69.8m; tie-out 42.3+27.5=69.8).</p>
-  <p>H-grain reporter — no Q1/Q3 TUs in record. Grid starts at first print for each metric.</p>
-  <p><b>Book-to-bill strip (derived, non-scored):</b> orders received = closing FY order book − opening FY order book + FY revenue; book-to-bill = orders received ÷ revenue. FY-end order-book snapshots (~31 May) against 31-Mar revenue years — ~2-month timing mismatch. <sup>ᵉ</sup> FY23/FY25 basis-contaminated by acquisition-added order book (Custom Power; Gateway/Q-Par) — soft. FY26 understated on a like-for-like basis (revenue includes £23.3m NSPA backlog delivery; closing book excludes NSPA). Watch-flag only — corroborates Rank 1, counts toward nothing in the 2-of-3.</p>
-</div></details>
+
 
 <!-- §2 UNIFIED GRID — v4.1 Appendix B Template A (H-reporter) -->
 <div class="gridwrap">
@@ -580,13 +641,7 @@ details b { font-weight: 700; display: block; margin-top: 6px; margin-bottom: 2p
 </table>
 </div>
 
-<details><summary>Notes — Ranks 1–5</summary><div class="drawer-inner">
-<p><b>Rank 1 — Order Book.</b> <sup>ᵃ</sup> Oct-23 post-period figure disclosed in H1 FY24 R (£99.7m at 30 Sep; £108.6m at 31 Oct); forward-facing date used consistently with Nov-22/Nov-24. <sup>ᵇ</sup> May-26 book carries no NSPA orders (FY25: £19.0m NSPA carryover) — first like-for-like beat of FY25. Watch: H1 FY27 OB breadth above £90m ex-CAIN initial confirms the structural improvement.</p>
-<p><b>Rank 2 — Revenue.</b> FY26 is H1-loaded (£85.7m vs £68.4m†), caused by the disclosed, bounded £23.3m NSPA delivery in H1. H2 FY26† +8.1% on H2 FY25† confirms growth in both halves — not a quality deterioration. Watch: whether CAIN follow-on maintains comms-weighted H1 loading in FY27.</p>
-<p><b>Rank 3 — Margin.</b> Mid-term target ~10% (peak 10.4% FY24); FY26 6.2% includes ~£3.3m performance-related overhead (nil FY25) and ICS underutilisation. H2 margin structurally outside the company's disclosure cadence (H1/FY prints only). Watch: pace of ICS utilisation ramp into H2 FY27.</p>
-<p><b>Rank 4 — Adj PBT.</b> H2 FY26† £3.7m vs H2 FY25† £2.5m = +48%. FY26 beat pre-results consensus +8.9% (£8.6m vs £7.9m). Adjusting items £4.7m→£2.8m (no impairment) — earnings quality improving. 2030 target ≥20p adj EPS (FY26: 11.0p).</p>
-<p><b>Rank 5 — Net Debt.</b> <sup>ᶜ</sup> H1 FY23 spike: Custom Power M&amp;A (£15m new debt + £14.4m deferred consideration) — basis change, not deterioration; like-for-like bank-only net cash £1.7m. <sup>ᵈ</sup> FY25 rise: Gateway/Q-Par bolt-ons + ICS capex, disclosed/bounded. FY26: £15m RCF to May-28; ~0.4× ND/EBITDA. Second consecutive falling print — green-shoot trajectory.</p>
-</div></details>
+
 
 <script>
 (function(){
@@ -655,10 +710,7 @@ details b { font-weight: 700; display: block; margin-top: 6px; margin-bottom: 2p
   </tbody>
 </table>
 </div>
-<details><summary>Notes — Book-to-bill (derived, not scored)</summary><div class="drawer-inner">
-<p><b>What it is:</b> orders received in the year ÷ revenue billed. Above 1.0, the order book is filling faster than it's being worked off; below 1.0, backlog is being drained. <b>Derivation†:</b> orders received = closing order book − opening order book + revenue (FY-end snapshots; FY22 close £89.7m as FY23 opening). <b>The story:</b> FY24 stands out at 0.83 — the record £163.3m revenue year was delivered largely by burning down the FY23 backlog rather than fresh intake, exactly the "record top line on a fading book" pattern Rank 1 exists to catch. FY25 rebuilt to 1.10, FY26 sits at balance (1.01) with the book holding flat.<br>
-<b>Caveats (why it's watch-only, not scored):</b> <sup>ᵉ</sup> FY23 and FY25 are basis-contaminated — Custom Power (FY23) and Gateway/Q-Par (FY25) added order book on acquisition, inflating derived intake in those years; treat as soft. Order-book snapshots are ~31 May against a 31 Mar revenue year, a ~2-month timing mismatch. FY26's 1.01 is understated on a like-for-like basis: revenue includes the £23.3m NSPA delivery from backlog while the closing book excludes NSPA — underlying book-to-bill is marginally above 1.0. This strip corroborates the Rank 1 order-book direction; it is a †-derived watch flag and counts toward nothing in the 2-of-3.</p>
-</div></details>
+
 </div>
 
 <!-- Footnotes -->
@@ -666,18 +718,84 @@ details b { font-weight: 700; display: block; margin-top: 6px; margin-bottom: 2p
 H-grain reporter — no Q1/Q3 TUs in record. Grid starts at first print for each metric.</p>
 </div>
 
+
+<details class="top"><summary>§2 workings — card strip · notes · methodology · book-to-bill</summary><div><details><summary>🔲 Card strip — wall preview &amp; index entry</summary><div class="drawer-inner"><p>Nine cells, right-anchored on the Buy/Sell column (outlined). One row per rank; leftmost cell padded blank (record is 8 columns wide). Snapshot rows (R1, R5) encode at their own print dates on the same half slots; 🟡 encodes <b>a</b>, never blank.</p><table class="cstrip"><tr><td class="slab"></td><td>H2<br>22</td><td>H1<br>23</td><td>H2<br>23</td><td>H1<br>24</td><td>H2<br>24</td><td>H1<br>25</td><td>H2<br>25</td><td>H1<br>26</td><td>H2<br>26</td></tr>
+<tr><td class="slab">R1</td><td class="cn"></td><td class="cg"></td><td class="ca"></td><td class="cr"></td><td class="cr"></td><td class="ca"></td><td class="cg"></td><td class="ca"></td><td class="cg bscell"></td></tr>
+<tr><td class="slab">R2</td><td class="cn"></td><td class="cn"></td><td class="cn"></td><td class="cr"></td><td class="cr"></td><td class="cr"></td><td class="cr"></td><td class="cg"></td><td class="cg bscell"></td></tr>
+<tr><td class="slab">R3</td><td class="cn"></td><td class="cn"></td><td class="cn"></td><td class="ca"></td><td class="cn"></td><td class="cr"></td><td class="cn"></td><td class="ca"></td><td class="cn bscell"></td></tr>
+<tr><td class="slab">R4</td><td class="cn"></td><td class="cn"></td><td class="cn"></td><td class="cr"></td><td class="cg"></td><td class="cr"></td><td class="cr"></td><td class="cg"></td><td class="cg bscell"></td></tr>
+<tr><td class="slab">R5</td><td class="cn"></td><td class="cr"></td><td class="cg"></td><td class="cg"></td><td class="ca"></td><td class="cg"></td><td class="cr"></td><td class="ca"></td><td class="cg bscell"></td></tr>
+</table><p style="margin-top:8px"><b>drift-entry JSON (selectable):</b></p><pre style="font-size:10.5px;background:#f7f6f2;border:1px solid var(--line);border-radius:6px;padding:8px;white-space:pre-wrap">{
+ "ticker": "SOLI",
+ "company": "Solid State plc",
+ "kind": "ticker",
+ "direction": "up",
+ "headline": "FY26 beats consensus on revenue &amp; profit; \"exceed\" FY27 guide issued; all three divisions grow; quality of earnings improving.",
+ "trigger": "2 of 3 green-shoot: Numbers &amp; guide (G RAISE x2 Apr-26/Jun-26; rev + adj PBT growing both halves; margin expanding) + Language (two +2 prints from Nov-24 trough). Disclosure amber: first-day baselines (Power split, ex-NSPA book) technically met, not counted.",
+ "alert": true,
+ "fired": 2,
+ "fired_of": 3,
+ "lights": "gga",
+ "rns_type": "FY Results",
+ "rns_date": "2026-06-29",
+ "build_date": "2026-09-21",
+ "spec_version": "v5.5",
+ "next_test": "H1 FY27 TU (Oct/Nov-26) &amp; H1 R (Dec-26): OB >£90m ex-CAIN; margin toward 7%; CAIN follow-on order; guide tone.",
+ "url": "SOLI.html",
+ "grid": {
+  "labels": [
+   "R1",
+   "R2",
+   "R3",
+   "R4",
+   "R5"
+  ],
+  "periods": [
+   "H2 22",
+   "H1 23",
+   "H2 23",
+   "H1 24",
+   "H2 24",
+   "H1 25",
+   "H2 25",
+   "H1 26",
+   "H2 26"
+  ],
+  "rows": [
+   "-garragag",
+   "---rrrrgg",
+   "---a-r-a-",
+   "---rgrrgg",
+   "-rggagrag"
+  ],
+  "note": "R1 order book &amp; R5 net debt: sequential position scores at own print dates; R2 revenue &amp; R4 adj PBT: banded YoY-rate scores; R3 adj op margin: H1-only cadence. Left cell padded (8-column record)."
+ }
+}</pre></div></details><details><summary>Notes — Ranks 1–5</summary><div class="drawer-inner">
+<p><b>Rank 1 — Order Book.</b> <sup>ᵃ</sup> Oct-23 post-period figure disclosed in H1 FY24 R (£99.7m at 30 Sep; £108.6m at 31 Oct); forward-facing date used consistently with Nov-22/Nov-24. <sup>ᵇ</sup> May-26 book carries no NSPA orders (FY25: £19.0m NSPA carryover) — first like-for-like beat of FY25. Watch: H1 FY27 OB breadth above £90m ex-CAIN initial confirms the structural improvement.</p>
+<p><b>Rank 2 — Revenue.</b> FY26 is H1-loaded (£85.7m vs £68.4m†), caused by the disclosed, bounded £23.3m NSPA delivery in H1. H2 FY26† +8.1% on H2 FY25† confirms growth in both halves — not a quality deterioration. Watch: whether CAIN follow-on maintains comms-weighted H1 loading in FY27.</p>
+<p><b>Rank 3 — Margin.</b> Mid-term target ~10% (peak 10.4% FY24); FY26 6.2% includes ~£3.3m performance-related overhead (nil FY25) and ICS underutilisation. H2 margin structurally outside the company's disclosure cadence (H1/FY prints only). Watch: pace of ICS utilisation ramp into H2 FY27.</p>
+<p><b>Rank 4 — Adj PBT.</b> H2 FY26† £3.7m vs H2 FY25† £2.5m = +48%. FY26 beat pre-results consensus +8.9% (£8.6m vs £7.9m). Adjusting items £4.7m→£2.8m (no impairment) — earnings quality improving. 2030 target ≥20p adj EPS (FY26: 11.0p).</p>
+<p><b>Rank 5 — Net Debt.</b> <sup>ᶜ</sup> H1 FY23 spike: Custom Power M&amp;A (£15m new debt + £14.4m deferred consideration) — basis change, not deterioration; like-for-like bank-only net cash £1.7m. <sup>ᵈ</sup> FY25 rise: Gateway/Q-Par bolt-ons + ICS capex, disclosed/bounded. FY26: £15m RCF to May-28; ~0.4× ND/EBITDA. Second consecutive falling print — green-shoot trajectory.</p>
+</div></details><details><summary>Turn methodology &amp; restatement basis</summary><div class="drawer-inner">
+  <p><b>Turn methodology (v4.1 display basis):</b> Columns are sub-periods only (H1 / H2†); full years render on the non-scored aggregate row beneath each rank — transcribed, never summed, no arrows. Snapshot metrics (order book, net debt) compare position-to-position at their own disclosure grain, newest vs prior disclosed; snapshot YoY renders solely on the aggregate row. Flow metrics (revenue, adj PBT) display seasonally matched YoY (H1-vs-H1 / H2-vs-H2); the banded Δrate is the scored element — the emoji alone carries the score, the pp record lives here. Rate metric (adj op margin) H1-vs-H1, band ±2.0pp; H2 margin structurally outside disclosure cadence. Raw HonH is computed in script and retained here, never displayed in cells. Sequential trigger not applicable at H-grain. † = derived (FY − H1); watch flags until a reported sub-period corroborates.</p>
+  <p><b>FY-grain score record (restated to v4.1 banded Δrate — aggregates are never scored on the grid; retained here for audit only):</b> Revenue FY23 — (base) · FY24 🔴↘ (−19.7pp) · FY25 🔴↘ (−52.5pp) · FY26 🟢↗ (+46.6pp). Adj PBT FY23 — · FY24 🔴↘ (−5.6pp) · FY25 🔴↘ (−112.3pp) · FY26 🟢↗ (+139.9pp). Margin FY24 🟡→ (+1.2pp) · FY25 🔴↘ (−5.6pp) · FY26 🟡→ (+1.4pp). OB FY-end YoY direction: FY23 🟢↗ (+29.5%) · FY24 🔴↘ (−23.2%) · FY25 🟢↗ (+13.9%) · FY26 🟡→ (+0.8%). ND FY-end: FY23 🔴↘ᶜ · FY24 🟢↗ · FY25 🔴↘ᵈ · FY26 🟢↗. FY24's banded fires carry the same Custom Power comp discount as the H-grain cells. Pre-v4.0 renderings (direction-of-growth basis: rev/PBT FY24 🟢↗) superseded by this restatement. Margin pp record (H1 grain): FY24 −0.1pp 🟡→ · FY25 −4.1pp 🔴↘ · FY26 +1.4pp 🟡→.</p>
+  <p><b>FY24 deceleration fires (context-discounted):</b> REV H1 FY24 (−2.5pp), REV H2 FY24† (−35.0pp) and PBT H1 FY24 (−20.3pp) fire 🔴↘ under the v4.1 banded Δrate — technically met, analytically explained: FY24 laps FY23 comps inflated by Custom Power first-time consolidation (Oct-22), and absolute growth remained strongly positive throughout. Previously rendered 🟢↗ under the pre-v4.0 direction-of-growth basis. Annotated, not suppressed, per the context-discount rule; no current fired condition rests on these cells.</p>
+  <p><b>v4.1 display derivations (computed in code from audited prints):</b> H2 YoY chain uses H2 FY22† bases (rev 45.6 = 85.0−39.4; PBT 3.93 = 7.2−3.27): H2 rev YoY +47.1%†/+12.1%/−15.8%/+8.1%; H2 PBT YoY +41.7%†/+49.0%/−69.9%/+48.0%. Snapshot aggregate YoY: OB +29.5%/−23.2%/+13.9%/+0.8% (FY22 base 89.7); ND +55.8%/−42.0%/+57.4%/−43.2% (FY22 base 5.2).</p>
+  <p><b>Derivation cross-verification:</b> H2† = FY − H1; second route: H1 confirmed from interim RNS exact figure, FY from results RNS exact figure. H2 FY23† £67.1m company-corroborated (FY23 R prints "second half revenues of £67.1m").</p>
+  <p><b>Restatement / provenance:</b> ᵃ Oct-23 OB (£108.6m at 31 Oct) is the post-period figure disclosed in H1 FY24 R, used on a forward-facing basis consistent with Nov-22/Nov-24. ᵇ FY26 OB £102.4m at 31 May carries no NSPA orders (FY25 £101.6m included £19.0m NSPA carryover) — first like-for-like beat of FY25. ᶜ H1 FY23 net debt £16.1m reflects Custom Power M&amp;A (£15m new debt + £14.4m deferred consideration) — like-for-like bank-only net cash £1.7m. ᵈ FY25 net debt rise: Gateway £1.4m + Q-Par £0.7m bolt-ons + ICS capex, all disclosed/bounded. Later audited figure governs any prior "c." estimate. Buy/Sell (rightmost) column bold throughout. Power revenue three-division split first disclosed FY26 R (FY25 restated £27.5m from within Systems £69.8m; tie-out 42.3+27.5=69.8).</p>
+  <p>H-grain reporter — no Q1/Q3 TUs in record. Grid starts at first print for each metric.</p>
+  <p><b>Book-to-bill strip (derived, non-scored):</b> orders received = closing FY order book − opening FY order book + FY revenue; book-to-bill = orders received ÷ revenue. FY-end order-book snapshots (~31 May) against 31-Mar revenue years — ~2-month timing mismatch. <sup>ᵉ</sup> FY23/FY25 basis-contaminated by acquisition-added order book (Custom Power; Gateway/Q-Par) — soft. FY26 understated on a like-for-like basis (revenue includes £23.3m NSPA backlog delivery; closing book excludes NSPA). Watch-flag only — corroborates Rank 1, counts toward nothing in the 2-of-3.</p>
+</div></details><details><summary>Notes — Book-to-bill (derived, not scored)</summary><div class="drawer-inner">
+<p><b>What it is:</b> orders received in the year ÷ revenue billed. Above 1.0, the order book is filling faster than it's being worked off; below 1.0, backlog is being drained. <b>Derivation†:</b> orders received = closing order book − opening order book + revenue (FY-end snapshots; FY22 close £89.7m as FY23 opening). <b>The story:</b> FY24 stands out at 0.83 — the record £163.3m revenue year was delivered largely by burning down the FY23 backlog rather than fresh intake, exactly the "record top line on a fading book" pattern Rank 1 exists to catch. FY25 rebuilt to 1.10, FY26 sits at balance (1.01) with the book holding flat.<br>
+<b>Caveats (why it's watch-only, not scored):</b> <sup>ᵉ</sup> FY23 and FY25 are basis-contaminated — Custom Power (FY23) and Gateway/Q-Par (FY25) added order book on acquisition, inflating derived intake in those years; treat as soft. Order-book snapshots are ~31 May against a 31 Mar revenue year, a ~2-month timing mismatch. FY26's 1.01 is understated on a like-for-like basis: revenue includes the £23.3m NSPA delivery from backlog while the closing book excludes NSPA — underlying book-to-bill is marginally above 1.0. This strip corroborates the Rank 1 order-book direction; it is a †-derived watch flag and counts toward nothing in the 2-of-3.</p>
+</div></details></div></details>
 <!-- ══════════════════════════════════════════════════════════
      §2.0 CURRENT STATE
 ══════════════════════════════════════════════════════════ -->
 <div class="section">
 <div class="section-header"><h2>§2.0 · Most-Recent-RNS Current-State Read — FY26 R (29-Jun-26)</h2></div>
 
-<details open><summary>The four checks — workings behind the read</summary><div class="drawer-inner">
-  <p><b>Check 1 — Sequential (latest sub-period vs the one before):</b> H2 FY26† rev £68.4m vs H1 £85.7m — expected sequential dip, fully explained by the H1 NSPA delivery (£23.3m). Adj PBT H2† £3.7m vs H1 £4.9m — same cause. Order book Nov-25→May-26: £97.0m→£102.4m — building. Sequential: 🟡→ — H1-loaded by a disclosed, bounded contract; H2 trajectory healthy.</p>
-  <p><b>Check 2 — Same-type vs last year (FY26 R vs FY25 R):</b> Revenue +23.2%, adj margin +1.4pp, adj PBT +72%, net debt −43% — every ledger metric improves; both consensus beats. 🟢↗ across the board — turn, not base effect.</p>
-  <p><b>Check 3 — Every derivable sub-period (H2† = FY − H1):</b> H2 FY26† rev £68.4m vs H2 FY25† £63.3m = +8.1% 🟢↗†; H2 adj PBT† £3.7m vs £2.5m = +48% 🟢↗†. Parent-vs-latest-sub-period: no divergence — the parent 🟢 is confirmed by its latest sub-period, not masked by it; front-loaded flag noted (NSPA), backward-loading absent. H2 fires are derived-† watch flags pending a printed H2/TU corroboration.</p>
-  <p><b>Check 4 — Guidance vs prior guide (sized vs consensus):</b> Prior guide: "confident in meeting" FY26 consensus (Dec-25). New: delivered £154.1m/£8.6m vs pre-results C £151.6m/£7.9m (+1.6%/+8.9%), and FY27 set at "expect to exceed" C £152.5m/£8.1m. Guide moved up on both anchor and delivery. 🟢 RAISE — fires condition 1 (mirror).</p>
-</div></details>
+
 
 <div class="bridge-bar-row">
   <div class="bridge-panel">
@@ -716,195 +834,159 @@ H-grain reporter — no Q1/Q3 TUs in record. Grid starts at first print for each
   </div>
 </div>
 
-<details><summary>§2.0 Notes</summary><div class="drawer-inner">
-<p>H2 FY26† adj PBT of £3.7m is substantially ahead of H2 FY25† (£2.5m) and consistent with the business operating above the investment-drag trough of FY25. The gap between H1 (£4.9m) and H2† (£3.7m) adj PBT is explained by the NSPA comms delivery timing — not by any H2 deterioration. Going concern boilerplate confirmed; no material uncertainty language in any period reviewed. Bridge basis: operating-profit move £6.0m→£9.6m (+£3.6m) net of the £8.7m overhead rise incl. £3.3m variable bonus; net finance £0.9m→£0.6m; all figures RNS-printed, none re-derived.</p>
-</div></details>
+
 </div>
 
+
+<details class="top"><summary>§2.0 workings — four checks · notes · sweep · Trend Watch · trigger detail</summary><div><details><summary>The four checks — workings behind the read</summary><div class="drawer-inner">
+  <p><b>Check 1 — Sequential (latest sub-period vs the one before):</b> H2 FY26† rev £68.4m vs H1 £85.7m — expected sequential dip, fully explained by the H1 NSPA delivery (£23.3m). Adj PBT H2† £3.7m vs H1 £4.9m — same cause. Order book Nov-25→May-26: £97.0m→£102.4m — building. Sequential: 🟡→ — H1-loaded by a disclosed, bounded contract; H2 trajectory healthy.</p>
+  <p><b>Check 2 — Same-type vs last year (FY26 R vs FY25 R):</b> Revenue +23.2%, adj margin +1.4pp, adj PBT +72%, net debt −43% — every ledger metric improves; both consensus beats. 🟢↗ across the board — turn, not base effect.</p>
+  <p><b>Check 3 — Every derivable sub-period (H2† = FY − H1):</b> H2 FY26† rev £68.4m vs H2 FY25† £63.3m = +8.1% 🟢↗†; H2 adj PBT† £3.7m vs £2.5m = +48% 🟢↗†. Parent-vs-latest-sub-period: no divergence — the parent 🟢 is confirmed by its latest sub-period, not masked by it; front-loaded flag noted (NSPA), backward-loading absent. H2 fires are derived-† watch flags pending a printed H2/TU corroboration.</p>
+  <p><b>Check 4 — Guidance vs prior guide (sized vs consensus):</b> Prior guide: "confident in meeting" FY26 consensus (Dec-25). New: delivered £154.1m/£8.6m vs pre-results C £151.6m/£7.9m (+1.6%/+8.9%), and FY27 set at "expect to exceed" C £152.5m/£8.1m. Guide moved up on both anchor and delivery. 🟢 RAISE — fires condition 1 (mirror).</p>
+</div></details><details><summary>§2.0 Notes</summary><div class="drawer-inner">
+<p>H2 FY26† adj PBT of £3.7m is substantially ahead of H2 FY25† (£2.5m) and consistent with the business operating above the investment-drag trough of FY25. The gap between H1 (£4.9m) and H2† (£3.7m) adj PBT is explained by the NSPA comms delivery timing — not by any H2 deterioration. Going concern boilerplate confirmed; no material uncertainty language in any period reviewed. Bridge basis: operating-profit move £6.0m→£9.6m (+£3.6m) net of the £8.7m overhead rise incl. £3.3m variable bonus; net finance £0.9m→£0.6m; all figures RNS-printed, none re-derived.</p>
+</div></details><details><summary>Balance-sheet sweep</summary><div class="drawer-inner"><p><b>Result: clean — no Tier-1, no Tier-2.</b> Net debt £4.2m (excl IFRS16, incl £0.6m deferred consideration), falling for the second consecutive print (£7.4m → £7.1m → £4.2m). Leverage ~0.4× ND/EBITDA (company-stated basis). £15m multi-currency RCF committed to 18-May-28; £10m accordion uncommitted. Going-concern note is boilerplate: severe-downside scenario (~6% revenue shortfall, ~22% EBITDA reduction) still fully covenant-compliant. Solvency grep: no material uncertainty, no emphasis of matter, no covenant stress language.</p><p><b>Wedge check:</b> adjusting items £4.7m (FY25, incl £2.7m one-off impairment) → £2.8m (FY26, no impairment) — wedge narrowing, earnings quality improving. Renders nothing beyond this note.</p><p><b>Green-shoot mirrors (verdict notes):</b> leverage falling 2+ prints; dividend restored +10% to 2.75p; positive operating cash flow — cash-runway test not applicable.</p></div></details><details><summary>Trend Watch workings</summary><div class="drawer-inner"><p><b>Mode:</b> growth (Buy/Sell document is a FY R). <b>Datablock:</b> fetched from database.json in-container; top-level keys verified (_meta first, uploadZone fourth); _meta.savedAt = 2026-09-18. Gap to the 29-Jun-26 Buy/Sell RNS = 81 days — outside the ±14-day window → <b>stale → panel renders "no consensus data", no rows; <code>trend</code> field omitted.</b> A norm is never shown alone.</p><p><b>For the record only (not rendered, not transcribed to the panel):</b> had the block been current — REVENUE: H1 +38.7% → H2† +8.1%; Sep-26 fc FY27 £156.8m vs FY26 £154.1m = +1.8% required; gap +6.3pp. PBT: H1 +96.0% → H2† +48.0%; fc £8.9m vs £8.6m = +3.5% required; gap +44.5pp. EBITDA: n/a — SOLI prints no adjusted EBITDA line, so no comparator exists on the company's own basis. Growth-mode comparators are H2† = FY − H1 (derived-only watch-flag). Sign convention: delivered − required.</p><p>Both figures above tie out to the §2 grid (Ranks 2 and 4); the block's own sub-period splits were not read (norm rule).</p></div></details><details><summary>Trigger detail &amp; audit record</summary><div class="drawer-inner"><p><b>Condition 1 — Numbers &amp; guide: 🟢 FIRED (green-shoot mirror), full weight.</b> G-column RAISE at Apr-26 FY TU ("not less than £150m" floor) and again at Jun-26 FY26 R ("exceed" FY27). Sequential growth resumed; revenue and adj PBT 🟢↗ in both halves of FY26; margin expanding (+1.4pp FY). Includes the guided line and a LEAD-corroborated read — no confirmation-only discount.</p><p><b>Condition 2 — Language: 🟢 FIRED.</b> Lexicon rising from the Nov-24 −3 trough: Dec-24 −1 → Jul-25 0 → Dec-25 0 → Apr-26 +2 → Jun-26 +2. Two consecutive +2 prints from 0 or below.</p><p><b>Condition 3 — Disclosure: 🟠 technically met, not counted (amber).</b> Green-shoot mirror events at Jun-26 R: order book re-quantified on an ex-NSPA basis and three-division reporting first disclosed. Both are first-ever quantifications — baseline starts that day, judged at the next print rather than counted. Renders as <code>a</code> in lights; does not increment fired.</p><p><b>Count: 2/3, both green-shoot, same direction → alert. Tier-1: none.</b> Sweep and Trend Watch sit outside the count.</p><p><b>Audit record:</b> full Appendix A Stages A–E run at the v4.1 build (9 corrections applied; numbers locked since). v5.5 rebuild is same-RNS: trailing-12-month figures re-verified from source this session (Jun-26 FY R, Apr-26 TU, Dec-25 H1 R); no figure changed. Movement: first build — no prior state stored; row omitted per 5.3c.</p></div></details></div></details>
 <!-- ══════════════════════════════════════════════════════════
      §3 TEXT + G
 ══════════════════════════════════════════════════════════ -->
 <div class="section">
 <div class="section-header"><h2>§3 · Text + G — Language Track</h2></div>
-<p style="font-size:.8rem;margin-bottom:8px;color:#555">Score at profit line (adj PBT). Guide Met? resolves at results rows only. Verbatim quotes corrected per Stage B audit. Click Doc column to highlight row group.</p>
+<p style="font-size:.8rem;margin-bottom:8px;color:#555">Score at profit line (adj PBT). One quote per document; Context (paraphrase, not quotation) carries anchors, guide numbers and outturn trails. Rows within ~19 months of the Buy/Sell RNS visible; earlier rows behind the expander (hidden, never removed). Click Doc column to highlight row group.</p>
 <div class="table-wrap">
-<table id="text3">
+<table id="text3" class="collapsed">
   <thead>
     <tr>
-      <th style="width:70px">Date</th>
-      <th style="width:80px">Doc</th>
-      <th style="width:50px">G</th>
-      <th style="width:160px">Guide Met?</th>
-      <th>Verbatim Forward-Guidance Phrase</th>
-      <th style="width:60px">Score</th>
+      <th style="width:62px">Date</th>
+      <th style="width:74px">Doc</th>
+      <th style="width:64px">G</th>
+      <th style="width:34%">Verbatim Forward-Guidance Phrase</th>
+      <th>Context</th>
+      <th style="width:56px">Score</th>
     </tr>
+    <tr class="expander"><td colspan="6">▸ Show 11 earlier prints — Jul-22 to Jul-24</td></tr>
   </thead>
   <tbody>
-    <tr>
-      <td>Jul-22</td>
-      <td class="doc-col" data-doctype="FYR">FY22 R</td>
-      <td class="g-flat">—</td>
-      <td>—</td>
-      <td>"The Group has a record open order book which, combined with our inventory management plan, positions Solid State to proactively manage the well-publicised electronics supply chain issues… well placed to deliver continued growth." Q1 billings up 31% LFL.</td>
+    <tr class="oldrow">
+      <td>Jul-22</td><td class="doc-col" data-doctype="FYR">FY22 R</td><td class="g-flat">—</td>
+      <td>"well placed to deliver continued growth"</td>
+      <td class="ctx">Record open order book and inventory plan cited against supply-chain shortages; Q1 billings +31% LFL. No expectations anchor in the outlook.</td>
       <td>⚪</td>
     </tr>
-    <tr>
-      <td>Sep-22</td>
-      <td class="doc-col" data-doctype="AGM">AGM</td>
-      <td class="g-flat">flat</td>
-      <td>—</td>
-      <td>"The strong start to the year, record open order book and trading momentum underpin the near-term prospects and give the Directors optimism for the outturn being <b>at least in-line</b> with analyst expectations." (C: rev £108m, adj PBT £9.15m)</td>
+    <tr class="oldrow">
+      <td>Sep-22</td><td class="doc-col" data-doctype="AGM">AGM</td><td class="g-flat">flat</td>
+      <td>"optimism for the outturn being at least in-line with analyst expectations"</td>
+      <td class="ctx">Anchored on strong start, record book and momentum. C then: rev £108m / adj PBT £9.15m.</td>
       <td>⚪</td>
     </tr>
-    <tr class="score-change">
-      <td>Oct-22</td>
-      <td class="doc-col" data-doctype="H1TU">H1 TU</td>
-      <td class="g-raise">🟢 RAISE</td>
-      <td>—</td>
-      <td>"…the Company <b>expects to exceed the current revenue expectations</b> and be <b>marginally ahead of the adjusted PBT consensus expectations</b> for FY23, despite the expected increase in interest charges." (C then: rev £117.3m, adj PBT £9.4m)</td>
+    <tr class="oldrow score-change">
+      <td>Oct-22</td><td class="doc-col" data-doctype="H1TU">H1 TU</td><td class="g-raise">🟢 RAISE</td>
+      <td>"expects to exceed the current revenue expectations"</td>
+      <td class="ctx">And marginally ahead of adj PBT consensus for FY23, despite higher interest charges (C then: £117.3m / £9.4m). First RAISE of the record.</td>
       <td>🟢</td>
     </tr>
-    <tr class="score-change">
-      <td>Dec-22</td>
-      <td class="doc-col" data-doctype="H1R">H1 R</td>
-      <td class="g-raise">🟢 RAISE</td>
-      <td>—</td>
-      <td>"The Board is <b>confident of exceeding previous expectations</b> for the year ending 31 March 2023. Whilst there is still some uncertainty… there is potential further upside in the second half."</td>
+    <tr class="oldrow score-change">
+      <td>Dec-22</td><td class="doc-col" data-doctype="H1R">H1 R</td><td class="g-raise">🟢 RAISE</td>
+      <td>"confident of exceeding previous expectations"</td>
+      <td class="ctx">For FY23; potential further H2 upside flagged despite uncertainty. Second consecutive RAISE.</td>
       <td>🟢🟢</td>
     </tr>
-    <tr>
-      <td>Apr-23</td>
-      <td class="doc-col" data-doctype="FYTU">FY TU</td>
-      <td class="g-flat">flat</td>
-      <td>—</td>
-      <td>"…performance…is <b>at least in line</b> with consensus expectations." Rev ~£125m / adj PBT ≥£10.5m. (C: rev £120.3m / adj PBT £10.45m)</td>
+    <tr class="oldrow score-change">
+      <td>Apr-23</td><td class="doc-col" data-doctype="FYTU">FY TU</td><td class="g-flat">flat</td>
+      <td>"at least in line with consensus expectations"</td>
+      <td class="ctx">Stated ~£125m rev / adj PBT ≥£10.5m vs C £120.3m / £10.45m — an "at least" floor, conservatism baseline.</td>
       <td>⚪</td>
     </tr>
-    <tr>
-      <td>Jul-23</td>
-      <td class="doc-col" data-doctype="FYR">FY23 R</td>
-      <td class="g-raise">🟢 RAISE</td>
-      <td class="guide-trail">
-        FY23 guide trail:<br>
-        <span class="met">Sep-22 'at least in-line' → rev £126.5m vs C £108m: +17.1% ✅<br>adj PBT £10.8m vs C £9.15m: +18.0% ✅</span>
-      </td>
-      <td>"…expect revenue in FY2023/24 to be <b>ahead of current consensus, reflecting year on year growth in excess of 15%</b>, and adjusted profit before tax to be <b>marginally ahead</b> of current consensus reflecting <b>circa 10% year on year growth</b>." (C: rev £133m, adj PBT £11.3m)</td>
+    <tr class="oldrow score-change">
+      <td>Jul-23</td><td class="doc-col" data-doctype="FYR">FY23 R</td><td class="g-raise">🟢 RAISE</td>
+      <td>"year on year growth in excess of 15%"</td>
+      <td class="ctx">FY24 revenue guided ahead of consensus; adj PBT marginally ahead, ~10% growth (C: £133m / £11.3m). <b>FY23 trail:</b> Sep-22 in-line guide → rev +17.1% / adj PBT +18.0% ✅.</td>
       <td>🟢🟢</td>
     </tr>
-    <tr>
-      <td>Sep-23</td>
-      <td class="doc-col" data-doctype="AGM">AGM</td>
-      <td class="g-flat">flat</td>
-      <td>—</td>
-      <td>"The Board is confident in meeting the <b>recently upgraded forecasts</b> for the full year." (C: rev £147.3m / adj PBT £11.9m)</td>
+    <tr class="oldrow score-change">
+      <td>Sep-23</td><td class="doc-col" data-doctype="AGM">AGM</td><td class="g-flat">flat</td>
+      <td>"confident in meeting the recently upgraded forecasts"</td>
+      <td class="ctx">C: rev £147.3m / adj PBT £11.9m. Last AGM trading statement in the record (cadence break — feeds §4).</td>
       <td>⚪</td>
     </tr>
-    <tr class="score-change">
-      <td>Oct-23</td>
-      <td class="doc-col" data-doctype="H1TU">H1 TU</td>
-      <td class="g-raise">🟢 RAISE</td>
-      <td>—</td>
-      <td>"…the Group is expected to be <b>marginally ahead</b> of current consensus revenue and adjusted PBT expectations for the year ending 31 March 2024."</td>
+    <tr class="oldrow score-change">
+      <td>Oct-23</td><td class="doc-col" data-doctype="H1TU">H1 TU</td><td class="g-raise">🟢 RAISE</td>
+      <td>"marginally ahead of current consensus revenue and adjusted PBT expectations"</td>
+      <td class="ctx">For FY24.</td>
       <td>🟢</td>
     </tr>
-    <tr>
-      <td>Dec-23</td>
-      <td class="doc-col" data-doctype="H1R">H1 R</td>
-      <td class="g-flat">flat</td>
-      <td>—</td>
-      <td>"The record billings, combined with a stable six month orderbook, gives the Board <b>confidence in meeting</b> the full-year expectations for FY23/24." (C: rev £155.3m / adj PBT £12.5m)</td>
+    <tr class="oldrow score-change">
+      <td>Dec-23</td><td class="doc-col" data-doctype="H1R">H1 R</td><td class="g-flat">flat</td>
+      <td>"confidence in meeting the full-year expectations"</td>
+      <td class="ctx">Anchored on record billings and a stable six-month order book (C: £155.3m / £12.5m).</td>
       <td>⚪</td>
     </tr>
-    <tr class="score-change">
-      <td>Mar-24</td>
-      <td class="doc-col" data-doctype="FYTU">FY TU</td>
-      <td class="g-raise">🟢 RAISE</td>
-      <td>—</td>
-      <td>"Revenues and adjusted profit before tax are expected to be <b>ahead of consensus expectations</b> as a result of the recognition of Systems revenue on deliveries made in FY24…" Immediately flagged reduced FY25 expectations.</td>
+    <tr class="oldrow score-change">
+      <td>Mar-24</td><td class="doc-col" data-doctype="FYTU">FY TU</td><td class="g-raise">🟢 RAISE</td>
+      <td>"ahead of consensus expectations"</td>
+      <td class="ctx">FY24 beat driven by Systems deliveries recognised in FY24 — and the same document flagged reduced FY25 expectations: the turn's first print. Order book went qualitative-only here (§4).</td>
       <td>🟢</td>
     </tr>
-    <tr>
-      <td>Jul-24</td>
-      <td class="doc-col" data-doctype="FYR">FY24 R</td>
-      <td class="g-flat">flat</td>
-      <td class="guide-trail">
-        FY24 guide trail:<br>
-        <span class="met">Jul-23 '>15% YoY rev' → actual +29.1% ✅ (sandbagged)</span><br>
-        <span class="met">Jul-23 '~10% adj PBT' → actual +44.4% ✅ (heavily sandbagged)</span>
-      </td>
-      <td>"Trading in FY24/25 is not expected to be first-half weighted as it was in FY23/24. However, pleasingly, year-to-date trading has been <b>broadly in line</b> with management expectations…" (FY25 C lowered: rev £142.6m / adj PBT £10.1m)</td>
+    <tr class="oldrow score-change">
+      <td>Jul-24</td><td class="doc-col" data-doctype="FYR">FY24 R</td><td class="g-flat">flat</td>
+      <td>"broadly in line with management expectations"</td>
+      <td class="ctx">FY25 year-to-date; first softening — "broadly" plus the management-anchor switch, beside the FY25 C reduction to £142.6m / £10.1m. <b>FY24 trail:</b> Jul-23 &gt;15% rev guide → +29.1% ✅; ~10% PBT → +44.4% ✅ (heavily sandbagged).</td>
       <td>⚪</td>
     </tr>
     <tr>
-      <td>Nov-24</td>
-      <td class="doc-col" data-doctype="H1TU">H1 TU</td>
-      <td class="g-flat">flat</td>
-      <td>—</td>
-      <td>"The Directors are pleased to report that the Group is trading <b>in-line with market expectations</b> for the full year." (C: rev £143.9m / adj PBT £10.1m)</td>
+      <td>Nov-24</td><td class="doc-col" data-doctype="H1TU">H1 TU</td><td class="g-flat">flat</td>
+      <td>"in-line with market expectations for the full year"</td>
+      <td class="ctx">C: £143.9m / £10.1m. Nine days before the warning.</td>
       <td>⚪</td>
     </tr>
     <tr class="score-change">
-      <td>Nov-24</td>
-      <td class="doc-col" data-doctype="PW">PW</td>
-      <td class="g-cut">🔴 CUT</td>
-      <td>—</td>
-      <td>"…the Company's performance for FY24/25 will be <b>materially below current consensus expectations</b>." Defence programme paused pending UK SDR. Revised C: rev £123.0m / adj PBT £4.0m.</td>
+      <td>Nov-24</td><td class="doc-col" data-doctype="PW">PW</td><td class="g-cut">🔴 CUT</td>
+      <td>"materially below current consensus expectations"</td>
+      <td class="ctx">Defence programme paused pending UK SDR. Revised C: rev £123.0m / adj PBT £4.0m.</td>
       <td>🔴🔴🔴</td>
     </tr>
-    <tr>
-      <td>Dec-24</td>
-      <td class="doc-col" data-doctype="H1R">H1 R</td>
-      <td class="g-flat">flat</td>
-      <td>—</td>
-      <td>"…the Group order book at 30 November 2024 of £85.5m provides confidence that current earnings guidance for this year and next is <b>deliverable, with potential to outperform</b>…" (Revised C: rev £123.0m / adj PBT £4.0m)</td>
+    <tr class="score-change">
+      <td>Dec-24</td><td class="doc-col" data-doctype="H1R">H1 R</td><td class="g-flat">flat</td>
+      <td>"deliverable, with potential to outperform"</td>
+      <td class="ctx">Current-year and next-year guidance anchored on the £85.5m order book at 30-Nov, against the revised (post-warning) consensus.</td>
       <td>🔴</td>
     </tr>
-    <tr>
-      <td>Jul-25</td>
-      <td class="doc-col" data-doctype="FYR">FY25 R</td>
-      <td class="g-flat">flat</td>
-      <td class="guide-trail">
-        FY25 guide trail:<br>
-        <span class="miss">Jul-24 'broadly in line' (C £142.6m/£10.1m) → rev −12.3% / adj PBT −50.5% ❌</span><br>
-        <span class="met">Nov-24 revised (C £123.0m/£4.0m) → rev +1.7% / adj PBT +25.0% ✅ (kitchen-sink-then-beat)</span>
-      </td>
-      <td>"…we anticipate the year ahead will bring new opportunities." Reconfirmed FY26 consensus (rev £131.8m / adj PBT £6.0m). Post year-end: "strong start…£8.1m of c. £19m comms order shipped."</td>
+    <tr class="score-change">
+      <td>Jul-25</td><td class="doc-col" data-doctype="FYR">FY25 R</td><td class="g-flat">flat</td>
+      <td>"we anticipate the year ahead will bring new opportunities"</td>
+      <td class="ctx">Reconfirmed FY26 C (£131.8m / £6.0m). Post year-end: strong start, £8.1m of ~£19m comms order shipped. <b>FY25 trail:</b> Jul-24 "broadly in line" (£142.6m / £10.1m) → −12.3% / −50.5% ❌; Nov-24 revised C → +1.7% / +25.0% ✅ (kitchen-sink-then-beat).</td>
       <td>⚪</td>
     </tr>
     <tr>
-      <td>Dec-25</td>
-      <td class="doc-col" data-doctype="H1R">FY26<br>H1 R</td>
-      <td class="g-flat">flat</td>
-      <td>—</td>
-      <td>"…<b>order intake was slower in H1</b> 2025/26, pleasingly we have seen order intake recover strongly at the beginning of H2 and the Directors remain <b>confident in meeting consensus market expectations for FY25/26.</b>"</td>
+      <td>Dec-25</td><td class="doc-col" data-doctype="H1R">FY26<br>H1 R</td><td class="g-flat">flat</td>
+      <td>"confident in meeting consensus market expectations for FY25/26"</td>
+      <td class="ctx">Order intake slower in H1, recovered strongly at the start of H2; book rebuilt £87.3m (30-Sep) → £97.0m (30-Nov).</td>
       <td>⚪</td>
     </tr>
     <tr class="score-change">
-      <td>Apr-26</td>
-      <td class="doc-col" data-doctype="FYTU">FY TU</td>
-      <td class="g-raise">🟢 RAISE</td>
-      <td>—</td>
-      <td>"…revenue is expected to be <b>ahead of consensus market expectations</b> and <b>not less than £150m</b> and adjusted profit before tax will accordingly also be ahead…" (Floor-guide = sandbagged conservatism.)</td>
+      <td>Apr-26</td><td class="doc-col" data-doctype="FYTU">FY TU</td><td class="g-raise">🟢 RAISE</td>
+      <td>"ahead of consensus market expectations…… not less than £150m"</td>
+      <td class="ctx">Revenue floor guide; adj PBT "accordingly also ahead" (splice within one sentence; a consensus footnote marker sits between the fragments). Floor = sandbag baseline for this management.</td>
       <td>🟢🟢</td>
     </tr>
-    <tr class="score-change">
-      <td>Jun-26</td>
-      <td class="doc-col" data-doctype="FYR">FY26 R ★</td>
-      <td class="g-raise">🟢 RAISE</td>
-      <td class="guide-trail">
-        FY26 guide trail:<br>
-        <span class="met">Jul-25 reconfirmed C rev £131.8m → actual £154.1m: +16.9% ✅ (heavy beat)</span><br>
-        <span class="met">Jul-25 reconfirmed C adj PBT £6.0m → actual £8.6m: +43.3% ✅ (heavy beat)</span><br>
-        <span class="met">Apr-26 floor guide '≥£150m' → actual £154.1m: +2.7% ✅</span>
-      </td>
-      <td>"Solid State enters FY26/27 in its strongest position for several years… <b>we expect to exceed current market expectations for FY26/27.</b>" (C FY27: rev £152.5m / adj PBT £8.1m)</td>
+    <tr>
+      <td>⭐ Jun-26</td><td class="doc-col" data-doctype="FYR">FY26 R ⭐</td><td class="g-raise">🟢 RAISE</td>
+      <td>"we expect to exceed current market expectations for FY26/27"</td>
+      <td class="ctx">"strongest position for several years" framing; C FY27: rev £152.5m / adj PBT £8.1m. <b>FY26 trail:</b> Jul-25 reconfirmed C £131.8m / £6.0m → +16.9% / +43.3% ✅; Apr-26 ≥£150m floor → +2.7% ✅.</td>
       <td>🟢🟢</td>
     </tr>
   </tbody>
 </table>
+
 </div>
-<details><summary>Guide credibility read</summary><div class="drawer-inner">
+<details class="top"><summary>§3 workings — guide credibility · guidance passages</summary><div><details><summary>Guide credibility read</summary><div class="drawer-inner">
 <p><b>Serial guide-beater — with one visible miss:</b> SOLI consistently beats its own <em>revised</em> floors. Jul-23 sandbagged +29%/+44% (vs &gt;15%/~10% guide). But the Jul-24 'broadly in line' guide (£142.6m/£10.1m) resolved −12%/−50% against the FY25 outturn — a genuine miss (external UK SDR pause), only rescued by the Nov-24 kitchen-sink revision that then beat +1.7%/+25.0%. Jul-25 reconfirmed then delivered +16.9%/+43%. The Nov-24 profit warning is the sole genuine miss and was triggered by an external event (UK SDR pause), not internal operational failure. RAISE and floor guides carry the conservative discount the track record earns. Unanchored "at least" language is conservatism baseline. FY26's "exceed" guide for FY27 is therefore a genuine signal, not routine sandbagging — management would use "meet" if confidence was lower.</p>
+</div></details><details><summary>Guidance passages — trailing 12 months</summary><div class="drawer-inner">
+<p style="font-style:italic;color:#666">Comparison set for incremental Text scoring. Each entry records the guidance passage's full content — anchor, guide numbers, qualifiers and surroundings — as close paraphrase with the anchor words quoted short, one quote per document (the table row above holds each document's main quote). <i>Editorial notes in italics describe whole-document absences and are only as good as the capture.</i> Entries roll off as documents age out of the trailing window.</p>
+<p><b>Jun-26 · FY26 R ⭐ · Outlook / CEO statement.</b> Anchor: current market expectations for FY26/27, with the "exceed" verb (main quote, table row). Surroundings: order intake strong at year-end and through Q1 FY26/27; open order book £106.6m at 31-Mar-26 including the £8.0m initial NSPA Project CAIN order (shipped in Q1 FY26/27); £102.4m at end-May described as broadly stable; majority of book expected to deliver over the next 18 months, qualified "subject to supply chain availability". No hedging of the exceed verb; the confidence is tied explicitly to the 31-May book.</p>
+<p><b>Apr-26 · FY TU · headline paragraph.</b> Anchor: consensus market expectations (footnoted to a named forecast source). Revenue guided ahead of that consensus AND floored at the "not less than £150m" figure (main quote); adj PBT guided "accordingly also ahead" — profit guidance derived from the revenue beat rather than separately floored. Cause attributed to strong trading. No caveats attached.</p>
+<p><b>Dec-25 · H1 FY26 R · outlook.</b> Anchor: consensus market expectations for FY25/26. Structure: a concession first — order intake slower in H1 — then the offset: intake recovered "strongly" at the beginning of H2, book £87.3m at 30-Sep rebuilt to £97.0m at 30-Nov, plus prospect pipeline. Confidence verb is "meeting", not exceeding. A second forward sentence extends deliverability to "this year and next" with potential-to-outperform phrasing anchored on the 30-Nov book.</p>
+<p><b>Jul-25 · FY25 R · outlook (rolls off at the next Buy/Sell RNS).</b> No expectations-anchor sentence for FY26 in the outlook prose itself beyond reconfirming consensus (rev £131.8m / adj PBT £6.0m); the forward tone carried by the new-opportunities sentence (main quote). Post-period trading note: strong start, £8.1m of the ~£19m comms order shipped.</p>
+</div></details>
 </div></details>
 </div>
 
@@ -914,7 +996,7 @@ H-grain reporter — no Q1/Q3 TUs in record. Grid starts at first print for each
 <div class="section">
 <div class="section-header"><h2>§4 · Drift — what they've gone quiet about</h2></div>
 <p style="font-size:.78rem;margin-bottom:2px;color:#888;font-style:italic">Which numbers get shared, hedged, or dropped, document by document — going quiet is the signal. (Framework term: disclosure matrix; Drift is trigger condition 3.)</p>
-<p style="font-size:.8rem;margin-bottom:8px;color:#555">18 qualifying docs = 18 Drift columns ✅ (+1 ⊘ for the dropped Autumn-25 H1 TU = 19 slots). Every cell document-verified. Click column header to highlight all columns of that doc-type.</p>
+<p style="font-size:.8rem;margin-bottom:8px;color:#555">18 qualifying docs = 18 Drift columns ✅ (+1 ⊘ for the dropped Autumn-25 H1 TU = 19 slots). 9 rows: 5 ranked + Gross margin &amp; Adj dil EPS (WATCH, added v5.5) + Dividend + Divisional revs. Every cell document-verified. Click column header to highlight all columns of that doc-type.</p>
 <div class="table-wrap">
 <table id="drift">
   <thead>
@@ -1009,6 +1091,51 @@ H-grain reporter — no Q1/Q3 TUs in record. Grid starts at first print for each
       <td class="cell-q" style="background:#f0f7f3;font-weight:700">✅ 6.2%</td>
     </tr>
     <tr>
+      <td class="label-col">Gross margin %</td>
+      <td class="cell-q">✅ 32.6%</td>
+      <td>—</td>
+      <td>—</td>
+      <td class="cell-q">✅ 31.6%</td>
+      <td>—</td>
+      <td class="cell-q">✅ 31.4%</td>
+      <td>—</td>
+      <td>—</td>
+      <td class="cell-q">✅ 31.0%</td>
+      <td>—</td>
+      <td class="cell-q">✅ 31.7%</td>
+      <td>—</td>
+      <td>—</td>
+      <td class="cell-q">✅ 31.1%</td>
+      <td class="cell-q">✅ 31.5%</td>
+      <td>—</td>
+      <td class="cell-q">✅ 31.0%</td>
+      <td>—</td>
+      <td class="cell-q" style="background:#f0f7f3;font-weight:700">✅ 33.5%</td>
+    </tr>
+    <tr>
+      <td class="label-col">Adj dil EPS</td>
+      <td class="cell-q">✅</td>
+      <td>—</td>
+      <td>—</td>
+      <td class="cell-q">✅</td>
+      <td>—</td>
+      <td class="cell-q">✅</td>
+      <td>—</td>
+      <td>—</td>
+      <td class="cell-q">✅</td>
+      <td>—</td>
+      <td class="cell-q">✅</td>
+      <td>—</td>
+      <td>—</td>
+      <td class="cell-q">✅</td>
+      <td class="cell-q">✅ 6.2p</td>
+      <td>—</td>
+      <td class="cell-q">✅ 6.5p</td>
+      <td>—</td>
+      <td class="cell-q" style="background:#f0f7f3;font-weight:700">✅ 11.0p</td>
+    </tr>
+
+    <tr>
       <td class="label-col">Open order book</td>
       <td class="cell-q">✅ £89.7</td>
       <td class="cell-q">✅ £106.8</td>
@@ -1100,11 +1227,12 @@ H-grain reporter — no Q1/Q3 TUs in record. Grid starts at first print for each
 </table>
 </div>
 <p class="footnote">
-  ✅ Quantified · 🟡 Qualitative only · ❌ Withheld against cadence · ⊘ Expected update not issued · — Structurally outside doc-type cadence · c = approximate (TU/pre-results figure) · int = interim dividend · C/S = Components/Systems · C/P/S = Components/Power/Systems<br>
+  ✅ Quantified · 🟡 Qualitative only · ❌ Withheld against cadence · ⊘ Expected update not issued · — Structurally outside doc-type cadence · c = approximate (TU/pre-results figure) · int = interim dividend · C/S = Components/Systems · C/P/S = Components/Power/Systems</p>
+<details class="top"><summary>§4 workings — notes</summary><div><details><summary>Notes — §4</summary><div class="drawer-inner"><p>
   <b>First note (rightmost column):</b> Three-division reporting (Systems, Power, Components separated) first disclosed in FY26 R — disclosure expansion; Power revenue baseline FY26: £31.8m; FY25 restated: £27.5m (from within Systems £69.8m; restatement tie-out: 42.3+27.5=69.8 ✅). Order book £102.4m ex-NSPA orders (FY25: inc £19.0m NSPA) — underlying breadth improving.<br>
   <b>⊘ Autumn-25 H1 TU (dropped update):</b> H1 TUs were issued Oct-22, Oct-23 and Nov-24 (established cadence); no equivalent preceded the Dec-25 interims. Single withhold = watch, resolved benignly by the full Dec-25 H1 R. <b>B3 (retrospective):</b> OB went qualitative-only at Mar-24 FY TU (🟡) — eight months before the Nov-24 profit warning — disclosure broke before level: the pattern this tracker exists to catch. AGM trading statements ceased after Sep-23 (Result-of-AGM only from Sep-24).<br>
   Div pre-bonus: FY22 19.5p, FY23 20.0p, FY24 21.5p (all on pre-4-for-1 share count). Post-bonus equivalents: FY24 4.3p; FY25 2.5p; FY26 2.75p. 0.83p H1 FY25 int = 7.0p pre-bonus ÷ 5 × adjustment = 1.4p restated → 0.83p new dividend. H1 FY26 int = 0.92p.
-</p>
+</p></div></details></div></details>
 </div>
 
 <script>
@@ -1140,37 +1268,79 @@ H-grain reporter — no Q1/Q3 TUs in record. Grid starts at first print for each
   });
 })();
 
-// ── Text+G: click doc col to highlight row group (same doctype) ──
+// ── Text+G: expander + doc-col highlight (opens expander when matches are hidden) ──
 (function() {
   const t = document.getElementById('text3');
   if(!t) return;
+  const exp = t.querySelector('tr.expander td');
+  function setLabel(){
+    exp.textContent = t.classList.contains('collapsed')
+      ? '\u25B8 Show 11 earlier prints \u2014 Jul-22 to Jul-24'
+      : '\u25BE Hide 11 earlier prints \u2014 Jul-22 to Jul-24';
+  }
+  if(exp){ setLabel(); exp.addEventListener('click', function(){ t.classList.toggle('collapsed'); setLabel(); }); }
   t.querySelectorAll('td.doc-col').forEach(function(td) {
     td.addEventListener('click', function() {
       const dtype = td.dataset.doctype;
       const isActive = td.classList.contains('doc-highlight');
       t.querySelectorAll('td.doc-highlight').forEach(el => el.classList.remove('doc-highlight'));
       if(isActive) return;
+      let hiddenMatch = false;
       t.querySelectorAll('td.doc-col[data-doctype="'+dtype+'"]').forEach(function(el) {
         el.classList.add('doc-highlight');
+        if(el.closest('tr').classList.contains('oldrow')) hiddenMatch = true;
       });
+      if(hiddenMatch && t.classList.contains('collapsed')){ t.classList.remove('collapsed'); setLabel(); }
     });
   });
 })();
 </script>
 <script type="application/json" id="drift-entry">
 {
-  "ticker": "SOLI",
-  "company": "Solid State plc",
-  "direction": "up",
-  "headline": "FY26 beats consensus on revenue & profit; \"exceed\" FY27 guide issued; all three divisions grow; quality of earnings improving.",
-  "trigger": "2 of 3 green-shoot: Hard (rev + PBT growing 2+ prints + consensus beat) + Text (2 consecutive up-scores from trough); G RAISE on Buy/Sell RNS; Drift green shoots (OB re-quantified, 3-division disclosure expansion)",
-  "alert": true,
-  "rns_type": "FY Results",
-  "rns_date": "2026-06-29",
-  "build_date": "2026-07-27",
-  "spec_version": "v4.1",
-  "next_test": "H1 FY27 TU (Oct/Nov-26) & H1 R (Dec-26): OB >£90m; margin >7%; CAIN follow-on order; guide tone; AI component cost pressure vs opportunity.",
-  "url": "SOLI.html"
+ "ticker": "SOLI",
+ "company": "Solid State plc",
+ "kind": "ticker",
+ "direction": "up",
+ "headline": "FY26 beats consensus on revenue & profit; \"exceed\" FY27 guide issued; all three divisions grow; quality of earnings improving.",
+ "trigger": "2 of 3 green-shoot: Numbers & guide (G RAISE x2 Apr-26/Jun-26; rev + adj PBT growing both halves; margin expanding) + Language (two +2 prints from Nov-24 trough). Disclosure amber: first-day baselines (Power split, ex-NSPA book) technically met, not counted.",
+ "alert": true,
+ "fired": 2,
+ "fired_of": 3,
+ "lights": "gga",
+ "rns_type": "FY Results",
+ "rns_date": "2026-06-29",
+ "build_date": "2026-09-21",
+ "spec_version": "v5.5",
+ "next_test": "H1 FY27 TU (Oct/Nov-26) & H1 R (Dec-26): OB >£90m ex-CAIN; margin toward 7%; CAIN follow-on order; guide tone.",
+ "url": "SOLI.html",
+ "grid": {
+  "labels": [
+   "R1",
+   "R2",
+   "R3",
+   "R4",
+   "R5"
+  ],
+  "periods": [
+   "H2 22",
+   "H1 23",
+   "H2 23",
+   "H1 24",
+   "H2 24",
+   "H1 25",
+   "H2 25",
+   "H1 26",
+   "H2 26"
+  ],
+  "rows": [
+   "-garragag",
+   "---rrrrgg",
+   "---a-r-a-",
+   "---rgrrgg",
+   "-rggagrag"
+  ],
+  "note": "R1 order book & R5 net debt: sequential position scores at own print dates; R2 revenue & R4 adj PBT: banded YoY-rate scores; R3 adj op margin: H1-only cadence. Left cell padded (8-column record)."
+ }
 }
 </script>
 </body>
