@@ -1215,17 +1215,17 @@
       "company": "Fonix plc",
       "kind": "ticker",
       "direction": "up",
-      "headline": "FY26 GP +12.7% with a beat — H2 accelerated sharply, guidance raised, and five international markets now in build.",
-      "trigger": "2 of 3 green-shoot: Numbers & guide (H2 FY26 GP Δrate +16.0pp and G RAISE) + Disclosure (TPV re-quantified, H1 TU cadence resumed)",
+      "headline": "FY26 audited: GP +12.9%, adj PBT +8.4%, cash rose into year-end — the beat confirmed on every line, and six markets now in play.",
+      "trigger": "2 of 3 green-shoot: Numbers & guide (H2 GP Δrate +16.4pp audited, G reconfirmed) + Disclosure (Jul-26 window fire stands)",
       "alert": true,
       "fired": 2,
       "fired_of": 3,
       "lights": "g-g",
-      "rns_type": "FY TU",
-      "rns_date": "2026-07-23",
-      "build_date": "2026-08-13",
+      "rns_type": "FY R",
+      "rns_date": "2026-09-22",
+      "build_date": "2026-09-22",
       "spec_version": "v5.3b",
-      "next_test": "FY26 Final Results 22-Sep-26 — adj PBT, EPS and underlying cash confirm the re-rate or expose a one-year bounce",
+      "next_test": "H1 FY27 TU Jan-27 — is the +18% H2 exit rate the new baseline; PayFlex volumes, Swiss ramp",
       "url": "FNX.html",
       "grid": {
         "labels": [
@@ -1249,29 +1249,36 @@
         "rows": [
           "-ggggrrag",
           "-gagaaaag",
-          "-ggggrrr-",
-          "-ggggrrr-",
+          "-ggggrrrg",
+          "-ggggrrrg",
           "-aaaaagaa"
         ],
         "note": "Five ledger ranks, H1/H2 sub-periods, right-anchored on the FY26 FY TU."
       },
       "trend": {
         "mode": "growth",
-        "cells": "agr",
+        "cells": "ggg",
         "rows": [
           {
             "m": "REV",
-            "gap": -2.5
+            "gap": 8.8
           },
           {
             "m": "EBITDA",
-            "gap": 6.3
+            "gap": 5.7
           },
           {
             "m": "PBT",
-            "gap": -4.4
+            "gap": 8.4
           }
         ]
+      },
+      "prev": {
+        "direction": "up",
+        "fired": 2,
+        "lights": "g-g",
+        "rns_date": "2026-07-23",
+        "rns_type": "FY TU"
       }
     },
     {
