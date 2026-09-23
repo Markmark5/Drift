@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "tickers": [
     {
       "ticker": "STAF",
@@ -3272,17 +3272,17 @@
       "company": "Renishaw plc",
       "kind": "ticker",
       "direction": "up",
-      "headline": "FY26 closes with record Q4 revenue (+27% YoY); April's raised guide was then beaten at the top of the range.",
-      "trigger": "2-of-3 green-shoot: guide raised and beaten; language rising four consecutive prints",
+      "headline": "Record FY26 at £815.8m / £168.0m clears April's raised tops; FY27 'started strongly' with H2 profit up 49%.",
+      "trigger": "2-of-3 green-shoot: raised guide cleared at audit; sustained positive language (operator override)",
       "alert": true,
       "fired": 2,
       "fired_of": 3,
       "lights": "gga",
-      "rns_type": "Post-close TU",
-      "rns_date": "2026-07-24",
-      "build_date": "2026-08-27",
-      "spec_version": "5.4",
-      "next_test": "Sep-26 FY results: H2 phasing vs the ~£103m implied split, FY27 guide vs the £815m/£167m base, and whether the adj-vs-statutory wedge closes.",
+      "rns_type": "FY R",
+      "rns_date": "2026-09-23",
+      "build_date": "2026-09-23",
+      "spec_version": "5.6",
+      "next_test": "Oct-26 Q1 FY27 TU: Q1 revenue vs £170.8m — roughly +10% needed to track the £895m FY27 consensus.",
       "url": "RSW.html",
       "grid": {
         "labels": [
@@ -3310,7 +3310,32 @@
           "grrgg-g-g",
           "------a-g"
         ],
-        "note": "Ranks 1-5 at quarter grain, right-anchored on the 24 Jul 2026 post-close TU."
+        "note": "Ranks 1-5 at quarter grain, right-anchored on the 23 Sep 2026 FY26 results."
+      },
+      "prev": {
+        "direction": "up",
+        "fired": 2,
+        "lights": "gga",
+        "rns_date": "2026-07-24",
+        "rns_type": "Post-close TU"
+      },
+      "trend": {
+        "mode": "growth",
+        "cells": "g-g",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": 11.4
+          },
+          {
+            "m": "EBITDA",
+            "gap": null
+          },
+          {
+            "m": "PBT",
+            "gap": 34.7
+          }
+        ]
       }
     },
     {
