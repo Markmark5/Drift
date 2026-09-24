@@ -4362,6 +4362,21 @@
           }
         ]
       }
+    },
+    {
+      "ticker": "Housebuilders Sector",
+      "company": "UK Listed Housebuilders (BTRW · PSN · TW · BKG · BWY)",
+      "direction": "down",
+      "headline": "Four of five have now fired — Bellway's 21% order-book fall confirms the summer slowdown, and neither FY27 volume guide yet given shows growth.",
+      "trigger": "4-of-5 sector: TW (G CUT + Text -2 + margin compression) + BKG (G CUT + seven sequential fwd-sales falls; Sep TU Text -2) + BTRW (FY27 volume and outlet guides cut twice) + BWY (profit guide to bottom of range + order book -21% + Text -2). PSN ⛔ net-debt crossover = verdict flag, not a fired condition.",
+      "alert": true,
+      "rns_type": "FY R",
+      "rns_date": "2026-09-16",
+      "build_date": "2026-09-24",
+      "spec_version": "v4.5-S",
+      "next_test": "BWY FY26 R 13 Oct 26 (FY27 guide); TW trading update early Oct 26; PSN Q3 TU and BTRW AGM Nov 26",
+      "url": "HOUSEBUILDERS.html",
+      "companies_fired": 4
     }
   ]
 }
