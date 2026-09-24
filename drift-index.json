@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-23",
+  "updated": "2026-09-24",
   "tickers": [
     {
       "ticker": "STAF",
@@ -2548,17 +2548,17 @@
       "company": "Cohort plc",
       "kind": "ticker",
       "direction": "watch",
-      "headline": "May-26 guide RAISE confirmed at a record FY26 — but S&E's order book fell 6% and Group revenue growth decelerated 20 points.",
-      "trigger": "1 of 3: Numbers & guide green (G RAISE May-26); Language amber; Disclosure unlit",
+      "headline": "AGM holds the FY27 guide with no first-half warning and a record ~£700m book — but strip out Saab and the refill still looks thin.",
+      "trigger": "1 of 3: Numbers & guide green (G RAISE May-26); Language and Disclosure unlit",
       "alert": false,
       "fired": 1,
       "fired_of": 3,
-      "lights": "ga-",
-      "rns_type": "FY R",
-      "rns_date": "2026-07-15",
-      "build_date": "2026-08-18",
-      "spec_version": "5.3e",
-      "next_test": "H1 FY27 results ~Dec-26: S&E order book above £389.3m and intake ex-Saab above H1 revenue",
+      "lights": "g--",
+      "rns_type": "AGM",
+      "rns_date": "2026-09-24",
+      "build_date": "2026-09-24",
+      "spec_version": "5.6",
+      "next_test": "H1 FY27 results, Dec-26: intake ex-Saab vs H1 revenue, S&E margin/Chess, net funds",
       "url": "CHRT.html",
       "trend": {
         "mode": "growth",
@@ -2566,7 +2566,7 @@
         "rows": [
           {
             "m": "REV",
-            "gap": 10.9
+            "gap": 10.6
           },
           {
             "m": "EBITDA",
@@ -2574,7 +2574,7 @@
           },
           {
             "m": "PBT",
-            "gap": 26.3
+            "gap": 25.4
           }
         ]
       },
@@ -2605,6 +2605,13 @@
           "--aaagaaa"
         ],
         "note": "Ranks 1-5, H1/FY reduced-grain columns FY23-FY26, right-anchored on FY26 Final; cell 1 pads blank"
+      },
+      "prev": {
+        "direction": "watch",
+        "fired": 1,
+        "lights": "ga-",
+        "rns_date": "2026-07-15",
+        "rns_type": "FY R"
       }
     },
     {
