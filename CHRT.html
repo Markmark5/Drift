@@ -100,6 +100,17 @@ details.guide>summary .em{font-size:22px;margin-right:6px}
  .bstrip{flex-direction:column}
  .bsweep{min-width:0;padding-right:0}
 }
+/* movement row — 6.3c */
+.mvrow{margin-top:9px;border:1px dashed #57544c;border-radius:9px;padding:8px 12px;
+ display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.mvlab{font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#8d8981;
+ font-weight:700;flex:none}
+.mvval{font-size:13px;font-weight:700;color:#fff}
+.mvval .was{color:#8d8981;font-weight:600}
+.mvarw{font-weight:700}
+.mvarw.up{color:#21d05e}
+.mvarw.dn{color:#ff6b63}
+.mvsince{font-size:10px;color:#8d8981;margin-left:auto;flex:none}
 /* ==== TREND WATCH PANEL — LOCKED v5.3 ==== */
 .tw{flex:1; border-left:1px dashed #57544c; padding-left:16px; min-width:0}
 .tw .plab{font-size:9.5px; letter-spacing:.14em; text-transform:uppercase;
@@ -178,7 +189,7 @@ pre.json{white-space:pre-wrap;font-size:11px;background:#fff;border:1px solid va
 </head>
 <body>
 
-<div class="sub">Cohort plc (CHRT) · Longitudinal Drift Tracker · spec v5.3e · H-reporter (Rule Set H) · Buy/Sell RNS: FY26 Final Results 15-Jul-26 · built 18-Aug-26 (Trend Watch added from 14-Aug-26 datablock) from the audited chat record (v3.5 content, 15 audit corrections applied)</div>
+<div class="sub">Cohort plc (CHRT) · Longitudinal Drift Tracker · spec v5.3e · H-reporter (Rule Set H) · Buy/Sell RNS: AGM Statement 24-Sep-26 · incremental read on the audited FY26 build · updated 24-Sep-26 · movement row per v5.5+</div>
 
 <!-- 🏁 VERDICT CARD -->
 <div class="card watch">
@@ -191,9 +202,9 @@ pre.json{white-space:pre-wrap;font-size:11px;background:#fff;border:1px solid va
   <div class="railgap"></div>
  </div>
  <div class="cbody">
-  <h1 class="chead">May-26 guide RAISE confirmed at a record FY26 — but S&amp;E's order book fell 6% and Group revenue growth decelerated 20 points.</h1>
+  <h1 class="chead">AGM holds the FY27 guide with no first-half warning and a record ~£700m book — but strip out Saab and the refill still looks thin.</h1>
   <div class="pills">
-   <span class="pill">FY26 Final Results · 15 Jul 2026</span>
+   <span class="pill">AGM Statement · 24 Sep 2026</span>
    <span class="pill">FY-end 30 Apr</span>
    <span class="dot">·</span>
    <span class="pill">B/S: clean · net cash</span>
@@ -205,16 +216,15 @@ pre.json{white-space:pre-wrap;font-size:11px;background:#fff;border:1px solid va
     <div class="lname">Numbers &amp; guide</div>
     <div class="lreason">"Ahead of expectations" RAISE; revenue-rate −19.9pp red, M&amp;A-base discounted</div>
    </div>
-   <div class="lamp amb">
-    <div class="ldate">May-26 →</div>
-    <div class="bulb b-a"></div>
+   <div class="lamp off">
+    <div class="bulb b-o"></div>
     <div class="lname">Language</div>
-    <div class="lreason">One step ⚪→🟢🟢 then held; not two consecutive rises</div>
+    <div class="lreason">🟢🟢 back to ⚪ — "consistent with the Board's expectations"; one fall only</div>
    </div>
    <div class="lamp off">
     <div class="bulb b-o"></div>
     <div class="lname">Disclosure</div>
-    <div class="lreason">Nothing withheld; first-ever £120m cashflow guide is new, not restored</div>
+    <div class="lreason">No ranked metric withheld; H1 net-funds guide dropped (unranked)</div>
    </div>
    <div class="tally"><b>1/3</b><span>FIRED</span></div>
    <div class="bstrip" style="flex-basis:100%">
@@ -224,7 +234,7 @@ pre.json{white-space:pre-wrap;font-size:11px;background:#fff;border:1px solid va
      <div class="s">Sweep sits outside the 2-of-3 count</div></div>
     </div>
     <div class="tw">
-     <div class="plab">TREND WATCH · FY27 FC (AUG-26) VS H2 (Y-ON-Y) GROWTH</div>
+     <div class="plab">TREND WATCH · FY27 FC (SEP-26) VS H2 (Y-ON-Y) GROWTH</div>
      <div class="dset">
       <div class="dcell"><div class="dnm">REVENUE</div>
        <svg width="50" height="50" viewBox="0 0 42 42">
@@ -232,8 +242,8 @@ pre.json{white-space:pre-wrap;font-size:11px;background:#fff;border:1px solid va
        <circle cx="21" cy="21" r="15.915" fill="none" stroke="#21d05e" stroke-width="5" stroke-dasharray="50 100" transform="rotate(-90 21 21)" stroke-linecap="round"/>
        <line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/>
        </svg>
-       <div class="dfig" style="color:#7bd88f">+10.9pp</div>
-       <div class="dtrend">+9.0% → <b>+17.0%</b></div><div class="dfc">fc +6.1%</div></div>
+       <div class="dfig" style="color:#7bd88f">+10.6pp</div>
+       <div class="dtrend">+9.0% → <b>+17.0%</b></div><div class="dfc">fc +6.4% · at FY R</div></div>
       <div class="dcell"><div class="dnm">EBITDA</div>
        <svg width="50" height="50" viewBox="0 0 42 42">
        <circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/>
@@ -247,10 +257,16 @@ pre.json{white-space:pre-wrap;font-size:11px;background:#fff;border:1px solid va
        <circle cx="21" cy="21" r="15.915" fill="none" stroke="#21d05e" stroke-width="5" stroke-dasharray="62 100" transform="rotate(-90 21 21)" stroke-linecap="round"/>
        <line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/>
        </svg>
-       <div class="dfig" style="color:#7bd88f">+26.3pp</div>
-       <div class="dtrend">−16.8% → <b>+49.0%</b></div><div class="dfc">fc +22.7%</div></div>
+       <div class="dfig" style="color:#7bd88f">+25.4pp</div>
+       <div class="dtrend">−16.8% → <b>+49.0%</b></div><div class="dfc">fc +23.6% · at FY R</div></div>
      </div>
     </div>
+   </div>
+   <div class="mvrow" style="flex-basis:100%">
+    <span class="mvlab">Since last RNS</span>
+    <span class="mvval">Stable — watch · 1/3 held —
+    <span class="mvarw dn">Language amber → off</span></span>
+    <span class="mvsince">measured from FY R · 15 Jul 2026</span>
    </div>
   </div>
 
@@ -267,20 +283,20 @@ pre.json{white-space:pre-wrap;font-size:11px;background:#fff;border:1px solid va
   </details>
 
   <div class="boxes">
-   <div class="box"><div class="lb">Current state</div><div class="hl2">Ahead of consensus</div>
-    <p>FY26 revenue £306.4m, adjusted operating profit £36.3m (margin 11.8%), both ahead of the £293.9m / £34.7m anchor; net funds back to +£2.2m.</p></div>
+   <div class="box"><div class="lb">Current state</div><div class="hl2">Guide held</div>
+    <p>FY27 growth outlook "unchanged", trading "consistent with the Board's expectations"; order book ~£700m, cover nearly 90% of consensus revenue.</p></div>
    <div class="box"><div class="lb">Warning you get</div><div class="hl2">1–2 halves</div>
     <p>Intake/revenue ratio and S&amp;E margin turned one to two prints before the May-25 and Sep-25 CUTs; both currently red at S&amp;E level, flat at Group.</p></div>
    <div class="box"><div class="lb">Argues against</div><div class="hl2">Guide beaten every year</div>
-    <p>Every FY guide since 2023 was met or beaten; the H1-down-H2-up pattern is a twice-repeated habit; the €140.7m Saab sonar win (14-Aug-26) will refill the S&amp;E book.</p></div>
-   <div class="box"><div class="lb">Next test</div><div class="hl2">~Dec-26</div>
-    <p>H1 FY27 results: S&amp;E order book above £389.3m and intake ex-Saab above H1 revenue, or a third year of S&amp;E book decline confirms the slowdown.</p></div>
+    <p>Every FY guide since 2023 was met or beaten; no first-half warning this year, unlike Sep-25; FY26 exit growth runs well ahead of what FY27 consensus needs.</p></div>
+   <div class="box"><div class="lb">Next test</div><div class="hl2">Dec 2026</div>
+    <p>H1 FY27 results: printed intake ex-Saab against H1 revenue, S&amp;E margin and Chess progress, and the net-funds position the AGM stopped guiding.</p></div>
   </div>
 
   <ul class="cbul">
    <li>The lead mechanism: the ratio peaked at 1.9x on the £135m Royal Navy order (FY24), and its roll-off ran straight into the May-25 CUT — the same single-contract shape now recurs with Saab, so the H1 FY27 intake must be read ex that order.</li>
-   <li>Numbers &amp; guide fired green on the RAISE at full weight; the red side of the same lamp — revenue growth +13.5% against +33.3%, S&amp;E book −6%, S&amp;E intake 0.87x — is annotated (FY25 base carried three months of EM Solutions) and is why the card is amber, not green.</li>
-   <li>What flips it: an H1 FY27 S&amp;E book at a new high on underlying wins turns this up; a Chess miss against "better net margin in 2026/27, mostly second half" or an "in line" replacing "ahead" at the Sep-26 AGM turns it down.</li>
+   <li>The AGM book rose ~£81m in 4½ months; Saab alone is roughly £120m, so other intake appears to have run below revenue — an illustrative ex-Saab book-to-bill of ~0.6–0.7x, unscored until H1 prints it.</li>
+   <li>What flips it: H1 FY27 intake ex-Saab above revenue and an S&amp;E margin recovery turns this up; a sub-1x underlying ratio plus any "slightly behind" or Chess slippage in December turns it down.</li>
   </ul>
  </div>
 </div>
@@ -303,12 +319,12 @@ pre.json{white-space:pre-wrap;font-size:11px;background:#fff;border:1px solid va
 
 <!-- §2 -->
 <h2>§2 · Unified Forward Grid</h2>
-<div class="sub">5 ranks = 5 grid blocks · 8 period columns (H1 / FY at reduced grain, FY23–FY26; ᶜ = comparator sourced from a later RNS) · ⭐ marks the Buy/Sell column</div>
+<div class="sub">5 ranks = 5 grid blocks · 8 period columns (H1 / FY at reduced grain, FY23–FY26; ᶜ = comparator sourced from a later RNS) · Buy/Sell is now the Sep-26 AGM, which carries no grid column at H1/FY grain — the rightmost column is the last scored print</div>
 <div class="gridwrap">
 <table class="grid" id="grid">
 <colgroup><col class="lab"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"></colgroup>
 <tr class="yband"><th></th><th colspan="2">FY23</th><th colspan="2">FY24</th><th colspan="2">FY25</th><th colspan="2">FY26</th></tr>
-<tr><th class="lab"></th><th class="phead" data-p="H1">H1</th><th class="phead" data-p="FY">FY</th><th class="phead" data-p="H1">H1</th><th class="phead" data-p="FY">FY</th><th class="phead" data-p="H1">H1</th><th class="phead" data-p="FY">FY</th><th class="phead" data-p="H1">H1</th><th class="phead bs-col" data-p="FY">⭐ FY R · Jul-26</th></tr>
+<tr><th class="lab"></th><th class="phead" data-p="H1">H1</th><th class="phead" data-p="FY">FY</th><th class="phead" data-p="H1">H1</th><th class="phead" data-p="FY">FY</th><th class="phead" data-p="H1">H1</th><th class="phead" data-p="FY">FY</th><th class="phead" data-p="H1">H1</th><th class="phead bs-col" data-p="FY">FY R · Jul-26</th></tr>
 
 <tr class="secbar"><td colspan="9">Rank 1 — Order intake / revenue ratio x <span class="nat">· 🟢↗ growing faster than last year · 🟡→ about the same pace · 🔴↘ shrinking or clearly slowing</span></td></tr>
 <tr class="strip"><td class="lab">Period</td><td>H1</td><td>FY</td><td>H1</td><td>FY</td><td>H1</td><td>FY</td><td>H1</td><td>FY</td></tr>
@@ -399,10 +415,10 @@ pre.json{white-space:pre-wrap;font-size:11px;background:#fff;border:1px solid va
 </div></details>
 
 <!-- §2.0 -->
-<h2>§2.0 · Most-recent-RNS read — FY26 Final Results (15-Jul-26)</h2>
+<h2>§2.0 · Most-recent-RNS read — ⭐ AGM (24 Sep 2026)</h2>
 <div class="s20">
  <div class="bridge">
-  <div class="dark"><span class="em">🍺</span><span class="ti">IDIOT'S GUIDE TO THE ADJUSTED OPERATING PROFIT BRIDGE — why profit went up (£27.5m → £36.3m)</span></div>
+  <div class="dark"><span class="em">🍺</span><span class="ti">IDIOT'S GUIDE TO THE ADJUSTED OPERATING PROFIT BRIDGE — why profit went up (£27.5m → £36.3m)</span><span style="float:right;font-size:12px;opacity:.8">⭐ AGM · Sep-26 · bridge carried from FY R — AGM prints no profit</span></div>
   <div class="brow tg"><div class="drv">📡 The dish that ate the year</div><div class="con" style="color:var(--green)">+£11.3m</div><div>Communications &amp; Intelligence went from £21.1m to £32.4m. Most of it is EM Solutions — the Australian satellite-terminal maker bought in Jan-25 — being inside for twelve months instead of three, plus MASS breaking £50m of sales at a 20% margin. This one row is bigger than the whole rise.</div></div>
   <div class="brow tr"><div class="drv">🐟 Sonar sold at cost price</div><div class="con" style="color:var(--red)">−£2.2m</div><div>Sensors &amp; Effectors slipped from £12.7m to £10.5m on flat sales. ELAC is still booking the Italian submarine sonar at a "we'll take the profit when it's proven" margin, SEA sold its higher-margin Transport bit, and Chess made a small profit but not the one it was asked for.</div></div>
   <div class="brow ta"><div class="drv">🏢 Head office, a whisker dearer</div><div class="con" style="color:var(--amber)">−£0.3m</div><div>Central costs edged up from £6.3m to £6.6m (the new Group Chief Operating Officer arrives in this line). Rounding-sized.</div></div>
@@ -410,19 +426,18 @@ pre.json{white-space:pre-wrap;font-size:11px;background:#fff;border:1px solid va
  </div>
  <div class="bar">
   <div class="in">
-   <div class="dark" style="margin:-13px -16px 0;"><span class="em">🌡️</span><span class="ti">CURRENT STATE — the read right now</span></div>
-   <div class="lead">🟡 STABLE—WATCH — backward-loaded and segment-masked</div>
+   <div class="dark" style="margin:-13px -16px 0;"><span class="em">🌡️</span><span class="ti">CURRENT STATE — the read right now</span><span style="float:right;font-size:12px;opacity:.8">⭐ AGM · Sep-26</span></div>
+   <div class="lead">🟡 STABLE—WATCH — guide held, refill unproven</div>
    <ul>
-    <li>Latest period: FY26 revenue £306.4m (+13.5%), adjusted operating profit £36.3m (+32%), margin 11.8%.</li>
-    <li>Guide: 27-May-26 TU said "ahead of expectations" against £34.7m/£293.9m consensus; Final confirms; FY27 "double-digit earnings growth".</li>
-    <li>Fired: G RAISE (May-26). Revenue Δrate −19.9pp red at FY26 — FY25 base held only 3 months of EM Solutions.</li>
-    <li>Language ⚪→🟢🟢 (May-26) then held (Jul-26): one rise, watch-flagged, not counted.</li>
-    <li>Backward-loaded: H1 carried the year's only red fires; H2† delivered £26.6m of £36.3m adjusted operating profit.</li>
-    <li>Segment-masked: C&amp;I ratio 1.17x, margin 20.4%; S&amp;E ratio 0.87x, margin 7.1%, order book £389.3m (−6%).</li>
-    <li>New disclosure: first-ever 3-year cashflow guide ~£120m before capex and dividends — baseline 15-Jul-26.</li>
-    <li>⚠️ Chess "below our expectations"; better margin guided "mostly in the second half" of FY27 — a late-year promise.</li>
-    <li>⚠️ Italian sonar first-boat delivery "by the end of the 2026 calendar year" — margin release depends on it.</li>
-    <li>⚠️ Post-period: €140.7m Saab/Polish sonar order (14-Aug-26) — single large contract, decomposition flag on H1 FY27 intake.</li>
+    <li>Latest: AGM 24-Sep-26, trading "consistent with the Board's expectations"; FY27 growth outlook "unchanged".</li>
+    <li>No first-half warning — Sep-25 said "slightly behind"; this year says nothing of the kind.</li>
+    <li>Order book ~£700m, up ~£81m since April — a record, mostly the €140.7m Saab sonar order.</li>
+    <li>Cover "nearly 90%" of FY27 consensus revenue, versus 88% in mid-July: Saab adds little to FY27.</li>
+    <li>Language 🟢🟢 → ⚪ on the AGM's usual own-expectations anchor; one fall, nothing fires.</li>
+    <li>Guide RAISE of May-26 still the only live condition: 1/3, no alert.</li>
+    <li>⚠️ Ex-Saab intake appears below revenue (illustrative ~0.6–0.7x); December prints the real number.</li>
+    <li>⚠️ Net-funds guide dropped; S&amp;E and Chess not mentioned — Chess recovery still promised "mostly second half".</li>
+    <li>⚠️ Second-half weighting reaffirmed "as in previous years" — habit, but the year's delivery again sits late.</li>
    </ul>
   </div>
  </div>
@@ -430,6 +445,8 @@ pre.json{white-space:pre-wrap;font-size:11px;background:#fff;border:1px solid va
 
 <details class="top"><summary>§2.0 workings — the four checks · notes · balance-sheet sweep · Trend Watch workings · trigger detail &amp; audit record</summary><div>
  <details class="subd"><summary>The four checks — workings behind the read</summary><div>
+  <p><b>⭐ AGM 24-Sep-26.</b> <b>1 · Sequential (vs FY R Jul-26):</b> order book ~£700m vs £618.8m (+~£81m); cover "nearly 90%" vs 88% at mid-July; no profit or revenue figures. <b>2 · Same-type vs last year (Sep-25 AGM):</b> "first half… slightly behind" (G CUT) → "consistent with the Board's expectations", no H1 line — better. <b>3 · Sub-period:</b> none printed; "weighting to the second half as in previous years" is seasonal habit. <b>4 · Guide vs prior guide:</b> "outlook for growth in FY2027 remains unchanged" — flat. Illustrative, unscored: ~£120m Saab (no FX rate printed) against a ~£81m book rise implies other intake of ~£60–80m against ~£100–120m of revenue (unprinted, usual H1 phasing) — roughly 0.6–0.7x ex-Saab. Drawer spot-check: Sep-25 AGM verified. Text re-read: 3 documents re-opened (Sep-23, Sep-24, Sep-25 AGMs) — AGMs have never used a market-expectations anchor, so "Board's expectations" is habit, not a switch.</p>
+  <p><b>Prior read — FY26 Final (15-Jul-26), retained:</b></p>
   <p><b>1 · Sequential (FY26 vs FY25):</b> revenue +13.5%, adj op +32%, statutory PBT +27.2% (£32.6m vs £25.628m), margin 11.8% vs 10.2%; ratio 1.03x vs 1.1x. Segment split: C&amp;I 1.17x/20.4% both up; S&amp;E 0.87x/7.1%/book −6% all down.</p>
   <p><b>2 · Same-type vs last year (vs FY25 Final 16-Jul-25):</b> FY25 "in line with market expectations" after a May-25 CUT; FY26 "ahead of consensus market expectations" — genuine improvement, soft comparator.</p>
   <p><b>3 · Derivable sub-period (H2† FY26):</b> revenue £177.6m (+17.0% vs H2† FY25 £151.8m, which was +40.3%); adj op £26.6m; statutory PBT £25.519m; net funds £(32.5)m→+£2.2m. H1 red fires, H2 green — divergence flag, watch until printed. S&amp;E H2† margin 9.0% (7.3/80.9).</p>
@@ -442,15 +459,16 @@ pre.json{white-space:pre-wrap;font-size:11px;background:#fff;border:1px solid va
   <p>Tier 1: none — net funds +£2.2m (FY25 +£5.3m; H1 FY26 £(32.5)m, guided and reversed); operating cash flow positive (H2 inflow £43.7m). Facility renewed 29-Apr-26: £125m RCF + c.£25m term loans, £50m accordion, to Apr-2031, seven banks; covenants passed, expected to pass "out to 31 July 2027 and beyond". Going concern: boilerplate. Tier 2: none — dividend +10% (17.90p), share count stable (45.8m vs 45.5m). Solvency grep hits: covenant (benign), material uncertainty (auditor boilerplate negation). Wedge: adjusted £36.3m vs IFRS operating profit — gap is amortisation/FX/exceptionals only, stable; no recurring add-back inflation. Green shoots: net debt→net cash at year end; facility extended.</p>
  </div></details>
  <details class="subd"><summary>Trend Watch workings</summary><div>
-  <p>Mode GROWTH (full-year Buy/Sell document). Datablock: ShareScope, latest snapshot 14-Aug-26 (newer than the 15-Jul-26 RNS → valid). Sign convention: delivered − required; negative is behind. Only the FY1 forecast is taken from the block; every actual and comparator is RNS-printed (H2† = FY − H1 from the statements).</p>
-  <table class="std"><tr><th>Metric</th><th>Basis</th><th>H1 YoY</th><th>H2† YoY (latest)</th><th>FY26 actual</th><th>FY1 fc (Aug-26)</th><th>Required growth</th><th>Gap</th><th>Sources</th><th>Ranked?</th></tr>
-  <tr><td>REVENUE</td><td>Reported</td><td>+9.0% (128.8 vs 118.2)</td><td>+17.0% (177.6 vs 151.8)</td><td>306.4</td><td>325.0</td><td>+6.1%</td><td><b style="color:var(--green)">+10.9pp</b> green</td><td>H1/FY RNS income statements; H2† derived</td><td>Y — ties to §2 R4 (306.4, 128.8; H2† 177.6 in workings)</td></tr>
-  <tr><td>EBITDA</td><td>—</td><td>n/a</td><td>n/a</td><td>n/a</td><td>50.9</td><td>—</td><td>n/a — company never prints EBITDA; no norm on the company's own basis</td><td>—</td><td>N</td></tr>
-  <tr><td>PBT</td><td>Statutory (only PBT printed at H1 grain)</td><td>−16.8% (7.081 vs 8.506)</td><td>+49.0% (25.519 vs 17.122)</td><td>32.6</td><td>40.0</td><td>+22.7% off statutory 32.6</td><td><b style="color:var(--green)">+26.3pp</b> green</td><td>H1/FY RNS income statements; H2† derived (second route: FY − H1 both years, tie-out ✓)</td><td>N — this row is its own audit trail. Caveat: brokers' FY27E adjusted PBT is £39.6–39.7m, so the block's 40.0 may be adjusted-basis; measured off adjusted FY26 £34.2m the required growth is +17.0% and the gap +32pp — sign and colour unaffected either way</td></tr></table>
-  <p>Arc rows read from C.3: revenue +10.9pp → growth-10pp row, LEN 50, ROT −90; PBT +26.3pp → growth-25pp row (Zone 2), LEN 62, ROT −90; EBITDA grey ring only. Watch-flag reminder: growth mode leans on derived H2† until a printed sub-period corroborates.</p>
+  <p>Buy/Sell document is the Sep-26 AGM: numbers-light (no period actuals), so the last quantified reading — GROWTH mode, at FY R 15-Jul-26 — is carried forward, labelled. FY1 forecast re-fetched from database.json: _meta.savedAt 23-Sep-26 (1 day before the RNS → current, pre-announcement consensus). Sign: delivered − required.</p>
+  <table class="std"><tr><th>Metric</th><th>Basis</th><th>H1 YoY</th><th>H2† YoY (latest, at FY R)</th><th>FY26 actual</th><th>FY1 fc (Sep-26)</th><th>Required growth</th><th>Gap</th><th>Sources</th><th>Ranked?</th></tr>
+  <tr><td>REVENUE</td><td>Reported</td><td>+9.0%</td><td>+17.0% (177.6 vs 151.8)</td><td>306.4</td><td>326.0</td><td>+6.4%</td><td><b style="color:var(--green)">+10.6pp</b> green</td><td>RNS income statements; H2† derived</td><td>Y — ties to §2 R4</td></tr>
+  <tr><td>EBITDA</td><td>—</td><td colspan="5">n/a — company never prints EBITDA (block fc 50.6 not used)</td><td>n/a</td><td>—</td><td>N</td></tr>
+  <tr><td>PBT</td><td>Statutory</td><td>−16.8%</td><td>+49.0% (25.519 vs 17.122)</td><td>32.6</td><td>40.3</td><td>+23.6%</td><td><b style="color:var(--green)">+25.4pp</b> green</td><td>RNS income statements; H2† derived</td><td>N — own audit trail; block fc may be adjusted-basis, sign unaffected</td></tr></table>
+  <p>C.3 rows: revenue → growth 10pp row (LEN 50, ROT −90); PBT → growth 25pp row (LEN 62, ROT −90). Consensus moved up since August: FY27 revenue £325.0m → £326.0m, EPS 66.8p → 67.2p.</p>
  </div></details>
  <details class="subd"><summary>Trigger detail &amp; audit record</summary><div>
-  <p><b>Condition 1 Numbers &amp; guide — FIRED green (full weight):</b> G RAISE 27-May-26, confirmed 15-Jul-26. Deterioration clauses also met at the same print — revenue Δrate −19.9pp (M&amp;A-base annotated), S&amp;E ratio/margin/book — context-discounted; recorded, not counted. <b>Condition 2 Language — amber:</b> ⚪ (Dec-25) → 🟢🟢 (May-26) → 🟢🟢 (Jul-26): one rise then held; "rising 2+ consecutive prints" not met. <b>Condition 3 Disclosure — not fired:</b> nothing withheld against cadence; the £120m guide is a first-ever quantification (green shoot with no history), not a restored metric. Count 1/3, lights <code>ga-</code>, no alert. Prior deterioration fires (May-25 CUT, Sep-25 CUT, Dec-25 level declines) are >6 months old and superseded by the RAISE; none retracted.</p>
+  <p><b>Update at ⭐ AGM 24-Sep-26:</b> G flat (no new fire); Language ⚪ after 🟢🟢 — the single rise lapses, amber → off, one fall does not meet the deterioration test; Disclosure unlit (net-funds guide dropped, unranked). Count 1/3, lights <code>g--</code>, no alert. Movement: watch 1/3 held, Language amber → off, from FY R 15-Jul-26.</p>
+  <p><b>At FY R (retained):</b> <b>Condition 1 Numbers &amp; guide — FIRED green (full weight):</b> G RAISE 27-May-26, confirmed 15-Jul-26. Deterioration clauses also met at the same print — revenue Δrate −19.9pp (M&amp;A-base annotated), S&amp;E ratio/margin/book — context-discounted; recorded, not counted. <b>Condition 2 Language — amber:</b> ⚪ (Dec-25) → 🟢🟢 (May-26) → 🟢🟢 (Jul-26): one rise then held; "rising 2+ consecutive prints" not met. <b>Condition 3 Disclosure — not fired:</b> nothing withheld against cadence; the £120m guide is a first-ever quantification (green shoot with no history), not a restored metric. Count 1/3, lights <code>ga-</code>, no alert. Prior deterioration fires (May-25 CUT, Sep-25 CUT, Dec-25 level declines) are >6 months old and superseded by the RAISE; none retracted.</p>
   <p><b>Audit record:</b> Appendix A Stages A–E run 16-Jul-26 on the v3.4 build; 15 defects corrected (FY23 TU cover 84%; FY22 margin/EPS; FY26 revenue Turn 🟡→🔴; H2† FY26 filled; H1 FY24 basic EPS; H2† EPS cross-basis; S&amp;E order book re-sourced to RNS; footnote 11 relabelled D†; Drift ❌→— re-keys; EBITDA row deleted; missing FY25 Final G row added). Direction unchanged.</p>
  </div></details>
 </div></details>
@@ -473,7 +491,8 @@ pre.json{white-space:pre-wrap;font-size:11px;background:#fff;border:1px solid va
 <tr class="chg"><td>25-Sep-25</td><td class="doc" data-rowtype="AGM">FY26<br>AGM</td><td>🔴 CUT</td><td>"Trading performance in the first half is expected to be slightly behind the strong comparative period…"</td><td>H1-specific; FY "expectations for growth…remain unchanged"; net debt ~£30m at H1 pre-flagged.</td><td>🔴</td></tr>
 <tr class="chg"><td>10-Dec-25</td><td class="doc" data-rowtype="H1 R">FY26<br>H1 R</td><td>flat</td><td>"As expected, adjusted operating profit was slightly short…our outlook for the full year remains unchanged…"</td><td>Holds FY guide on revenue, AOP, EPS and net funds despite the H1 miss; cover 94%→96%.</td><td>⚪</td></tr>
 <tr class="chg"><td>27-May-26</td><td class="doc" data-rowtype="YE-TU">FY26<br>YE-TU</td><td>🟢 RAISE</td><td>"Revenue and adjusted operating profit…ahead of market expectations."</td><td>Consensus printed £34.7m/£293.9m/58.9p; net funds £2.9m "slightly below" (timing).</td><td>🟢🟢</td></tr>
-<tr><td>⭐ 15-Jul-26</td><td class="doc" data-rowtype="FY R">FY26<br>FY R</td><td>flat</td><td>"…ahead of consensus market expectations, driven by very strong performance in…Communications and Intelligence…"</td><td>Attributes the beat to one division; FY27 "double-digit earnings growth"; new ~£120m 3-yr cashflow guide (green shoot, baseline).</td><td>🟢🟢</td></tr>
+<tr><td>15-Jul-26</td><td class="doc" data-rowtype="FY R">FY26<br>FY R</td><td>flat</td><td>"…ahead of consensus market expectations, driven by very strong performance in…Communications and Intelligence…"</td><td>Attributes the beat to one division; FY27 "double-digit earnings growth"; new ~£120m 3-yr cashflow guide (green shoot, baseline).</td><td>🟢🟢</td></tr>
+<tr class="chg"><td>⭐ 24-Sep-26</td><td class="doc" data-rowtype="AGM">FY27<br>AGM</td><td>flat</td><td>"…consistent with the Board's expectations. The outlook for growth in FY2027 remains unchanged…"</td><td>No H1 comparison line (Sep-25 had "slightly behind"); habitual own-expectations anchor, not a switch; H2 weighting "as in previous years"; book ~£700m, cover nearly 90%; net-funds guide dropped; FY27 "low-teens" margin step not repeated.</td><td>⚪</td></tr>
 </table>
 <details class="top"><summary>§3 workings — notes · guidance passages (trailing 12 months)</summary><div>
  <details class="subd"><summary>Notes — §3</summary><div><p>G-vs-outturn scan: every RAISE was met or beaten and both CUTs delivered as guided — a mild serial guide-beater, so the May-26 RAISE carries little discount; the guide-H1-down-recover-in-H2 pattern is now twice repeated and is calibration. Watch the Sep-26 AGM for "in line" replacing "ahead" (that switch fired the May-25 CUT).</p></div></details>
@@ -481,13 +500,14 @@ pre.json{white-space:pre-wrap;font-size:11px;background:#fff;border:1px solid va
   <p><b>25-Sep-25 AGM (Trading):</b> "Our expectations for growth in FY2026 remain unchanged, with a weighting to the second half as in previous years. Trading performance in the first half is expected to be slightly behind the strong comparative period last year. In the first quarter's trading, a strong maiden contribution from EM Solutions was offset by a reduction in MCL's activity, which was at a record level last year, and a weaker mix at both ELAC and SEA including the sale of the latter's transport business in May 2025."</p>
   <p><b>10-Dec-25 H1 FY26 (Outlook):</b> "The order book of £604.5m includes around £145m of revenue deliverable in the second half. Together with H1 revenues, this covers 94% of consensus forecast revenue for the full financial year. As of early December, this cover was 96%. Increased delivery in both divisions is expected to contribute to the anticipated full-year growth in Group profit performance and our outlook for the full year remains unchanged in terms of revenue, adjusted operating profit, adjusted earnings per share and closing net funds."</p>
   <p><b>27-May-26 FY26 TU (Highlights / Market expectations):</b> "Revenue of £303m and adjusted operating profit of c.£36m, both subject to audit, ahead of market expectations." … "The consensus market expectations for the full year ended 30 April 2026 were £34.7m of adjusted operating profit on £293.9m of revenue, and adjusted earnings per share of 58.9 pence." … "Overall, our expectation for the coming financial year remains unchanged."</p>
+  <p><b>24-Sep-26 AGM (Trading):</b> "Trading performance in the year to date has been consistent with the Board's expectations. The outlook for growth in FY2027 remains unchanged, with a weighting to the second half as in previous years. As at mid-September, the order book was around £700m, underpinning nearly 90% of current market consensus revenue expectations for FY2027. We continue to see good prospects for further order intake this year and beyond…" <i>Editorial: no H1 comparison, no net-funds guide, no divisional or Chess reference anywhere in the document.</i></p>
   <p><b>15-Jul-26 FY26 Final (Chairman / Outlook):</b> "Our trading performance and earnings were ahead of consensus market expectations, driven by very strong performance in our Communications and Intelligence division." … "Our order book underpins approximately £264m of 2026/27 revenue (2025/26: £230m), representing 83% of consensus expectations for the year. Following contract wins since the start of the financial year that cover now stands at 88%." … "With the underpinning of our strong order book, we continue to target double-digit earnings growth in each of 2026/27 and the subsequent two years. In the same period, we expect to generate cashflow before capital expenditure and dividends of around £120m." <i>Editorial: no numeric FY27 revenue or profit guide anywhere in the document; margin path stated qualitatively ("low-teens" FY27, "mid-teens" by end of decade).</i></p>
  </div></details>
 </div></details>
 
 <!-- §4 -->
 <h2 id="drifth">§4 · Drift — what they've gone quiet about</h2>
-<div class="sub">Which numbers get shared, hedged, or dropped, document by document — going quiet is the signal. Manifest 14 qualifying documents = 14 columns. ✅ quantified · 🟡 qualitative only · ❌ withheld vs cadence · ⊘ update not issued · — outside that doc-type's cadence.</div>
+<div class="sub">Which numbers get shared, hedged, or dropped, document by document — going quiet is the signal. Manifest 15 qualifying documents = 15 columns (Sep-26 AGM added; 14-Aug-26 Saab contract award is noise). ✅ quantified · 🟡 qualitative only · ❌ withheld vs cadence · ⊘ update not issued · — outside that doc-type's cadence.</div>
 <table class="std" id="drift">
 <tr><th>Metric</th>
 <th class="dh" data-k="YETU">May-23<br><span class="small">YETU</span></th>
@@ -503,25 +523,26 @@ pre.json{white-space:pre-wrap;font-size:11px;background:#fff;border:1px solid va
 <th class="dh" data-k="AGM">Sep-25<br><span class="small">AGM</span></th>
 <th class="dh" data-k="H1R">Dec-25<br><span class="small">H1R</span></th>
 <th class="dh" data-k="YETU">May-26<br><span class="small">YETU</span></th>
-<th class="dh" data-k="FYR">⭐ Jul-26<br><span class="small">FYR</span></th></tr>
-<tr><td>R1 Order intake £m</td><td>✅ c.218</td><td>✅ 220.9</td><td>🟡</td><td>✅ 119.1</td><td>✅ c.387</td><td>✅ 392.1</td><td>🟡</td><td>✅ 139.2</td><td>✅ c.285</td><td>✅ 284.7</td><td>🟡</td><td>✅ 122.3</td><td>✅ c.313</td><td>✅ 314.2</td></tr>
-<tr><td>R2 Order book cover %</td><td>✅ 84</td><td>✅ 80</td><td>✅ 93</td><td>✅ &gt;95</td><td>✅ 90</td><td>✅ &gt;90</td><td>✅ ~90</td><td>✅ &gt;99</td><td>✅ ~80</td><td>✅ 79</td><td>✅ ~90</td><td>✅ 94</td><td>✅ ~80</td><td>✅ 83</td></tr>
-<tr><td>R3 S&amp;E net margin %</td><td>🟡</td><td>✅ 9.7</td><td>🟡</td><td>✅ 4.5</td><td>🟡</td><td>✅ 10.7</td><td>🟡</td><td>✅ 8.4</td><td>✅ ~9</td><td>✅ 8.7</td><td>🟡</td><td>✅ 4.8</td><td>✅ ~7</td><td>✅ 7.1</td></tr>
-<tr><td>R4 Revenue £m</td><td>✅ c.183</td><td>✅ 182.7</td><td>🟡</td><td>✅ 94.3</td><td>✅ c.202.5</td><td>✅ 202.5</td><td>🟡</td><td>✅ 118.2</td><td>✅ c.270</td><td>✅ 270.0</td><td>🟡</td><td>✅ 128.8</td><td>✅ 303</td><td>✅ 306.4</td></tr>
-<tr><td>R5 Group margin %</td><td>🟡</td><td>✅ 10.5</td><td>🟡</td><td>✅ 6.4</td><td>🟡</td><td>✅ 10.4</td><td>🟡</td><td>✅ 8.5</td><td>✅ 10.2</td><td>✅ 10.2</td><td>🟡</td><td>✅ 7.5</td><td>✅ 11.9</td><td>✅ 11.8</td></tr>
-<tr><td>W S&amp;E order book £m</td><td>—</td><td>✅ 202.4</td><td>—</td><td>✅ 245.6</td><td>—</td><td>✅ 410.7</td><td>—</td><td>✅ 406.8</td><td>—</td><td>✅ 414.0</td><td>—</td><td>✅ 400.9</td><td>—</td><td>✅ 389.3</td></tr>
-<tr><td>Order book (closing) £m</td><td>✅ &gt;325</td><td>✅ 329.1</td><td>✅ 370</td><td>✅ 353.9</td><td>✅ c.518</td><td>✅ 518.7</td><td>✅ &gt;575</td><td>✅ 541.1</td><td>✅ c.615</td><td>✅ 616.4</td><td>✅ &gt;590</td><td>✅ 604.5</td><td>✅ c.620</td><td>✅ 618.8</td></tr>
-<tr><td>Net funds/(debt) £m</td><td>✅ c.15</td><td>✅ 15.6</td><td>✅ 15.2</td><td>✅ 13.3</td><td>✅ c.23</td><td>✅ 23.1</td><td>✅ guide</td><td>✅ 37.9</td><td>✅ &gt;5</td><td>✅ 5.3</td><td>✅ guide</td><td>✅ (32.5)</td><td>✅ c.2.9</td><td>✅ 2.2</td></tr>
-<tr><td>Statutory PBT £m</td><td>—</td><td>✅ 13.9</td><td>—</td><td>✅ 3.7</td><td>—</td><td>✅ 19.8</td><td>—</td><td>✅ 8.5</td><td>—</td><td>✅ 25.6</td><td>—</td><td>✅ 7.1</td><td>—</td><td>✅ 32.6</td></tr>
-<tr><td>Adjusted EPS p</td><td>—</td><td>✅ 36.48</td><td>—</td><td>✅ 10.36</td><td>—</td><td>✅ 42.89</td><td>—</td><td>✅ 20.00</td><td>—</td><td>✅ 54.44</td><td>—</td><td>✅ 16.16</td><td>—</td><td>✅ 61.9</td></tr>
-<tr><td>Consensus figures printed</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>—</td><td>✅</td><td>—</td></tr>
-<tr><td>Discrete Q1 £ figures</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+<th class="dh" data-k="FYR">Jul-26<br><span class="small">FYR</span></th>
+<th class="dh" data-k="AGM">⭐ Sep-26<br><span class="small">AGM</span></th></tr>
+<tr><td>R1 Order intake £m</td><td>✅ c.218</td><td>✅ 220.9</td><td>🟡</td><td>✅ 119.1</td><td>✅ c.387</td><td>✅ 392.1</td><td>🟡</td><td>✅ 139.2</td><td>✅ c.285</td><td>✅ 284.7</td><td>🟡</td><td>✅ 122.3</td><td>✅ c.313</td><td>✅ 314.2</td><td>🟡</td></tr>
+<tr><td>R2 Order book cover %</td><td>✅ 84</td><td>✅ 80</td><td>✅ 93</td><td>✅ &gt;95</td><td>✅ 90</td><td>✅ &gt;90</td><td>✅ ~90</td><td>✅ &gt;99</td><td>✅ ~80</td><td>✅ 79</td><td>✅ ~90</td><td>✅ 94</td><td>✅ ~80</td><td>✅ 83</td><td>✅ ~90</td></tr>
+<tr><td>R3 S&amp;E net margin %</td><td>🟡</td><td>✅ 9.7</td><td>🟡</td><td>✅ 4.5</td><td>🟡</td><td>✅ 10.7</td><td>🟡</td><td>✅ 8.4</td><td>✅ ~9</td><td>✅ 8.7</td><td>🟡</td><td>✅ 4.8</td><td>✅ ~7</td><td>✅ 7.1</td><td>—</td></tr>
+<tr><td>R4 Revenue £m</td><td>✅ c.183</td><td>✅ 182.7</td><td>🟡</td><td>✅ 94.3</td><td>✅ c.202.5</td><td>✅ 202.5</td><td>🟡</td><td>✅ 118.2</td><td>✅ c.270</td><td>✅ 270.0</td><td>🟡</td><td>✅ 128.8</td><td>✅ 303</td><td>✅ 306.4</td><td>🟡</td></tr>
+<tr><td>R5 Group margin %</td><td>🟡</td><td>✅ 10.5</td><td>🟡</td><td>✅ 6.4</td><td>🟡</td><td>✅ 10.4</td><td>🟡</td><td>✅ 8.5</td><td>✅ 10.2</td><td>✅ 10.2</td><td>🟡</td><td>✅ 7.5</td><td>✅ 11.9</td><td>✅ 11.8</td><td>🟡</td></tr>
+<tr><td>W S&amp;E order book £m</td><td>—</td><td>✅ 202.4</td><td>—</td><td>✅ 245.6</td><td>—</td><td>✅ 410.7</td><td>—</td><td>✅ 406.8</td><td>—</td><td>✅ 414.0</td><td>—</td><td>✅ 400.9</td><td>—</td><td>✅ 389.3</td><td>—</td></tr>
+<tr><td>Order book (closing) £m</td><td>✅ &gt;325</td><td>✅ 329.1</td><td>✅ 370</td><td>✅ 353.9</td><td>✅ c.518</td><td>✅ 518.7</td><td>✅ &gt;575</td><td>✅ 541.1</td><td>✅ c.615</td><td>✅ 616.4</td><td>✅ &gt;590</td><td>✅ 604.5</td><td>✅ c.620</td><td>✅ 618.8</td><td>✅ ~700</td></tr>
+<tr><td>Net funds/(debt) £m</td><td>✅ c.15</td><td>✅ 15.6</td><td>✅ 15.2</td><td>✅ 13.3</td><td>✅ c.23</td><td>✅ 23.1</td><td>✅ guide</td><td>✅ 37.9</td><td>✅ &gt;5</td><td>✅ 5.3</td><td>✅ guide</td><td>✅ (32.5)</td><td>✅ c.2.9</td><td>✅ 2.2</td><td>🟡</td></tr>
+<tr><td>Statutory PBT £m</td><td>—</td><td>✅ 13.9</td><td>—</td><td>✅ 3.7</td><td>—</td><td>✅ 19.8</td><td>—</td><td>✅ 8.5</td><td>—</td><td>✅ 25.6</td><td>—</td><td>✅ 7.1</td><td>—</td><td>✅ 32.6</td><td>—</td></tr>
+<tr><td>Adjusted EPS p</td><td>—</td><td>✅ 36.48</td><td>—</td><td>✅ 10.36</td><td>—</td><td>✅ 42.89</td><td>—</td><td>✅ 20.00</td><td>—</td><td>✅ 54.44</td><td>—</td><td>✅ 16.16</td><td>—</td><td>✅ 61.9</td><td>—</td></tr>
+<tr><td>Consensus figures printed</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>—</td></tr>
+<tr><td>Discrete Q1 £ figures</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
 </table>
 <details class="top"><summary>§4 workings — notes</summary><div>
- <p><b>Rightmost column (⭐ Jul-26):</b> nothing withheld or turned qualitative against the FY-results cadence; net expansion — first-ever quantified 3-year cashflow guide (~£120m) and a dated margin path; green shoot with no history, baseline 15-Jul-26. AGM 🟡 cells: AGMs quantify only "over £Xm of wins since year start" — a floor on a different definition. Statutory PBT, adjusted EPS and the S&amp;E book are results-only metrics (— at TU/AGM; no cadence to withhold against). The Sep-23 AGM's discrete Q1 figures are a single print, not a cadence — later AGM cells are —, nothing fires, but the ticker gives one fewer early read than 2023 implied. Consensus figures appear only at YE-TUs from May-25 (a disclosure expansion, start date stated). No cadence break, no format shift, no year-end change in the record.</p>
+ <p><b>Rightmost column (⭐ Sep-26 AGM):</b> order book (~£700m) and cover (nearly 90%) quantified as every AGM since 2023. Newly qualitative: net funds — Sep-23 printed £15.2m and Sep-24/Sep-25 guided the H1 position; this AGM says only "anticipated fluctuations in its working capital". Unranked, so nothing fires; watch it at December. S&amp;E margin not mentioned at all (prior AGMs gave qualitative colour) — no quantified AGM cadence existed, so — not ❌. </p><p><b>Prior column (Jul-26):</b> nothing withheld or turned qualitative against the FY-results cadence; net expansion — first-ever quantified 3-year cashflow guide (~£120m) and a dated margin path; green shoot with no history, baseline 15-Jul-26. AGM 🟡 cells: AGMs quantify only "over £Xm of wins since year start" — a floor on a different definition. Statutory PBT, adjusted EPS and the S&amp;E book are results-only metrics (— at TU/AGM; no cadence to withhold against). The Sep-23 AGM's discrete Q1 figures are a single print, not a cadence — later AGM cells are —, nothing fires, but the ticker gives one fewer early read than 2023 implied. Consensus figures appear only at YE-TUs from May-25 (a disclosure expansion, start date stated). No cadence break, no format shift, no year-end change in the record.</p>
 </div></details>
 
-<script type="application/json" id="drift-entry">{"ticker":"CHRT","company":"Cohort plc","kind":"ticker","direction":"watch","headline":"May-26 guide RAISE confirmed at a record FY26 — but S&E's order book fell 6% and Group revenue growth decelerated 20 points.","trigger":"1 of 3: Numbers & guide green (G RAISE May-26); Language amber; Disclosure unlit","alert":false,"fired":1,"fired_of":3,"lights":"ga-","rns_type":"FY R","rns_date":"2026-07-15","build_date":"2026-08-18","spec_version":"5.3e","next_test":"H1 FY27 results ~Dec-26: S&E order book above £389.3m and intake ex-Saab above H1 revenue","url":"CHRT.html","trend":{"mode":"growth","cells":"g-g","rows":[{"m":"REV","gap":10.9},{"m":"EBITDA","gap":null},{"m":"PBT","gap":26.3}]},"grid":{"labels":["R1","R2","R3","R4","R5"],"periods":["","H1 23","FY 23","H1 24","FY 24","H1 25","FY 25","H1 26","FY 26"],"rows":["--rggrrra","---grgrgr","--aaagrra","----rggrr","--aaagaaa"],"note":"Ranks 1-5, H1/FY reduced-grain columns FY23-FY26, right-anchored on FY26 Final; cell 1 pads blank"}}</script>
+<script type="application/json" id="drift-entry">{"ticker": "CHRT", "company": "Cohort plc", "kind": "ticker", "direction": "watch", "headline": "AGM holds the FY27 guide with no first-half warning and a record ~£700m book — but strip out Saab and the refill still looks thin.", "trigger": "1 of 3: Numbers & guide green (G RAISE May-26); Language and Disclosure unlit", "alert": false, "fired": 1, "fired_of": 3, "lights": "g--", "rns_type": "AGM", "rns_date": "2026-09-24", "build_date": "2026-09-24", "spec_version": "5.6", "next_test": "H1 FY27 results, Dec-26: intake ex-Saab vs H1 revenue, S&E margin/Chess, net funds", "url": "CHRT.html", "trend": {"mode": "growth", "cells": "g-g", "rows": [{"m": "REV", "gap": 10.6}, {"m": "EBITDA", "gap": null}, {"m": "PBT", "gap": 25.4}]}, "grid": {"labels": ["R1", "R2", "R3", "R4", "R5"], "periods": ["", "H1 23", "FY 23", "H1 24", "FY 24", "H1 25", "FY 25", "H1 26", "FY 26"], "rows": ["--rggrrra", "---grgrgr", "--aaagrra", "----rggrr", "--aaagaaa"], "note": "Ranks 1-5, H1/FY reduced-grain columns FY23-FY26, right-anchored on FY26 Final; cell 1 pads blank"}, "prev": {"direction": "watch", "fired": 1, "lights": "ga-", "rns_date": "2026-07-15", "rns_type": "FY R"}}</script>
 <script>
 (function(){
  document.getElementById('jsonview').textContent=document.getElementById('drift-entry').textContent;
