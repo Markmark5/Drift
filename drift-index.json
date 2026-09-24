@@ -3376,17 +3376,17 @@
       "company": "Raspberry Pi Holdings",
       "kind": "ticker",
       "direction": "up",
-      "headline": "Second guidance RAISE in six months — H1 EBITDA at least $38m, double last year — but the metric that led both prior turns points down.",
-      "trigger": "Hard/G fired green: G RAISE (Jun-26) plus two consecutive green halves on EBITDA and GP/unit; Language and Disclosure not fired.",
-      "alert": false,
+      "headline": "Third RAISE — record H1 EBITDA $40.3m beats the floor — but the cheap-memory windfall is spent and net debt arrived in July.",
+      "trigger": "Hard/G fired green: G RAISE (Sep-26) plus second consecutive green half on EBITDA and GP/unit; Language and Disclosure not fired. Tier-1 net cash to net debt (Jul-26).",
+      "alert": true,
       "fired": 1,
       "fired_of": 3,
       "lights": "g--",
-      "rns_type": "H1 TU",
-      "rns_date": "2026-06-05",
-      "build_date": "2026-08-28",
+      "rns_type": "H1 R",
+      "rns_date": "2026-09-24",
+      "build_date": "2026-09-24",
       "spec_version": "v5.5",
-      "next_test": "H1 FY26 results ~22 Sep 2026: exact EBITDA vs $38m floor, inventory value and RCF drawn, GP/unit print, first FY27 steer",
+      "next_test": "FY26 YE-TU Jan 2027: FY EBITDA vs $57.9m consensus, H2 profit per board vs $10.8 June exit, year-end net debt, 2–3 months memory cover",
       "url": "RPI.html",
       "grid": {
         "labels": [
@@ -3408,13 +3408,39 @@
           "H1 26"
         ],
         "rows": [
-          "-----agar",
-          "----grag-",
+          "-----agag",
+          "----gragg",
           "------rgg",
-          "------rg-",
+          "------rgg",
           "------rgg"
         ],
-        "note": "R1 supply-posture ladder / R2 GP per unit / R3 units / R4 revenue / R5 adj EBITDA, halves H1-23 to H1-26, right-anchored on Jun-26 TU"
+        "note": "R1 supply-posture ladder / R2 GP per unit / R3 units / R4 revenue / R5 adj EBITDA, halves H1-23 to H1-26, right-anchored on Sep-26 H1 R"
+      },
+      "tier1": true,
+      "prev": {
+        "direction": "up",
+        "fired": 1,
+        "lights": "g--",
+        "rns_date": "2026-06-05",
+        "rns_type": "H1 TU"
+      },
+      "trend": {
+        "mode": "share",
+        "cells": "ag-",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": -1.6
+          },
+          {
+            "m": "EBITDA",
+            "gap": 26.7
+          },
+          {
+            "m": "PBT",
+            "gap": null
+          }
+        ]
       }
     },
     {
