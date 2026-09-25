@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "tickers": [
     {
       "ticker": "STAF",
@@ -1849,16 +1849,17 @@
       "company": "Bango plc",
       "kind": "ticker",
       "direction": "up",
-      "headline": "ARR's engine refilling two halves running, NRR's first rise since 2023, Cash EBITDA positive - but the second half of FY25 went backwards.",
-      "trigger": "Green 2-of-3 - ARR engine refilling + margin expansion; lexicon rising -1 to 0 to +1",
-      "alert": true,
-      "fired": 2,
+      "headline": "Cash turn now printed on both sides and Payments still funds the build — but revenue guidance softened and the tone cooled.",
+      "trigger": "1 of 3: Numbers green (Cash EBITDA turn printed, ARR year-add up); Language amber (revenue hedge, context-discounted)",
+      "alert": false,
+      "fired": 1,
       "fired_of": 3,
-      "rns_type": "H1 TU",
-      "rns_date": "2026-07-09",
-      "build_date": "2026-08-06",
-      "spec_version": "v4.7",
-      "next_test": "Sept H1 results: printed Cash EBITDA, Subscriptions vs 2H25's $0.4M add, gross margin vs 84%.",
+      "lights": "ga-",
+      "rns_type": "H1 R",
+      "rns_date": "2026-09-25",
+      "build_date": "2026-09-25",
+      "spec_version": "v5.6",
+      "next_test": "Jan 2027 YE-TU: FY26 NRR vs the 112–122% band, revenue vs $53.8M, Cash EBITDA vs $8.3M, and the $10.0M loan refinancing.",
       "url": "BGO.html",
       "grid": {
         "labels": [
@@ -1869,24 +1870,49 @@
           "R5"
         ],
         "periods": [
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1"
+          "H1 22",
+          "H2 22",
+          "H1 23",
+          "H2 23",
+          "H1 24",
+          "H2 24",
+          "H1 25",
+          "H2 25",
+          "H1 26"
         ],
         "rows": [
-          "---ggrrgg",
           "-----rrrg",
+          "---ggrrgg",
           "--------g",
           "----g-rra",
-          "-----r-rr"
+          "--rggrgrr"
         ],
-        "note": "Rows are ledger ranks 1-5 at half grain; rightmost cell is the 09-Jul-26 H1 trading update."
+        "note": "Ledger ranks 1-5 at half grain; rightmost cell is the 25 Sep 2026 H1 results."
+      },
+      "prev": {
+        "direction": "up",
+        "fired": 2,
+        "lights": "gg-",
+        "rns_date": "2026-07-09",
+        "rns_type": "H1 TU"
+      },
+      "trend": {
+        "mode": "share",
+        "cells": "gg-",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": 2.2
+          },
+          {
+            "m": "EBITDA",
+            "gap": 25.2
+          },
+          {
+            "m": "PBT",
+            "gap": null
+          }
+        ]
       }
     },
     {
