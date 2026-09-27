@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="robots" content="noindex, nofollow">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Drift Tracker</title>
@@ -469,6 +470,15 @@ function ghPut(tok,path,b64,msg,sha){
 function toB64(str){
   return btoa(unescape(encodeURIComponent(str)));
 }
+// Uploaded pages get the noindex tag so search engines skip them
+function fileToB64Noindex(file){
+  return file.text().then(function(t){
+    if(/name=["']robots["']/i.test(t))return fileToB64(file);
+    var tag='<meta name="robots" content="noindex, nofollow">';
+    var t2=/<head\b[^>]*>/i.test(t)?t.replace(/<head\b[^>]*>/i,function(m){return m+'\n'+tag;}):tag+'\n'+t;
+    return toB64(t2);
+  }).catch(function(){return fileToB64(file);});
+}
 function fileToB64(file){
   return new Promise(function(res,rej){
     var r=new FileReader();
@@ -510,7 +520,7 @@ function upPush(){
       var newIdxB64=toB64(JSON.stringify(idx,null,2));
       setStatus('busy','Uploading '+htmlPath+'…');
       return ghGetSha(tok,htmlPath)
-        .then(function(sha){return fileToB64(UPFILE).then(function(b64){
+        .then(function(sha){return fileToB64Noindex(UPFILE).then(function(b64){
           return ghPut(tok,htmlPath,b64,(sha?'Update ':'Add ')+htmlPath+' (drift build)',sha);});})
         .then(function(){
           setStatus('busy','Updating drift-index.json…');
