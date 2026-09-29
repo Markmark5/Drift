@@ -116,6 +116,18 @@
     .bsweep{min-width:0;padding-right:0}
   }
 
+  /* movement row — 6.3c (Appendix E.6a) */
+  .mvrow{margin-top:9px;border:1px dashed #57544c;border-radius:9px;padding:8px 12px;
+   display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .mvlab{font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#8d8981;
+   font-weight:700;flex:none}
+  .mvval{font-size:13px;font-weight:700;color:#fff}
+  .mvval .was{color:#8d8981;font-weight:600}
+  .mvarw{font-weight:700}
+  .mvarw.up{color:#21d05e}
+  .mvarw.dn{color:#ff6b63}
+  .mvsince{font-size:10px;color:#8d8981;margin-left:auto;flex:none}
+
   /* ==== TREND WATCH PANEL — LOCKED v5.3 (Appendix C.1, copied whole) ==== */
   .tw{flex:1; border-left:1px dashed #57544c; padding-left:16px; min-width:0}
   .tw .plab{font-size:9.5px; letter-spacing:.14em; text-transform:uppercase;
@@ -218,11 +230,6 @@
   .dbar{background:#2b2a26; color:#fff; padding:8px 15px; display:flex; align-items:center; gap:9px;}
   .dbar .t{font-size:20px; font-weight:700; line-height:1.25;} .dbar .em{font-size:22px; line-height:1;}
   .bridge .cap{font-size:11px;}
-  details.guide{max-width:100%; margin:0 0 4px; border:1px solid #c6c2b9; border-radius:10px; overflow:hidden; background:#fff;}
-  details.guide>summary{background:#2b2a26; color:#fff; padding:8px 15px; font-size:24px; font-weight:700; list-style:none;}
-  details.guide>summary::-webkit-details-marker{display:none;}
-  details.guide .gbody{padding:13px 16px; font-size:12.5px; line-height:1.55;}
-  details.guide .gh{font-size:22px; font-weight:700; margin:12px 0 3px;}
   /* §2.0 flex row */
   .row20{display:flex; gap:16px; align-items:flex-start; flex-wrap:wrap; margin:6px 0 0;}
   .bridge{flex:1 1 520px; border:1px solid var(--line); border-radius:10px; overflow:hidden; background:#fff;}
@@ -232,7 +239,7 @@
   .bridge .brow>div.ct{font-size:14px; font-weight:700; text-align:right; font-variant-numeric:tabular-nums;}
   .tg{background:#e9f5ee;} .tr2{background:#fdecea;} .ta{background:#fdf4e3;}
   .bridge .cap{padding:10px 13px; background:#fafafa; font-size:11px; color:var(--muted); line-height:1.5;}
-  .csbar2{flex:1 1 380px; border:2px solid var(--green-b); background:var(--green-tint); border-radius:10px; overflow:hidden;}
+  .csbar2{flex:1 1 380px; border:2px solid var(--amber-b); background:var(--amber-tint); border-radius:10px; overflow:hidden;}
   .csbar2 .inner{padding:13px 16px;}
   .csbar2 ul{margin:8px 0 0; padding-left:18px;}
   .csbar2 li{font-size:13px; line-height:1.5; margin:4px 0;}
@@ -305,7 +312,7 @@
 <body>
 <div class="wrap">
 
-  <div class="top">Longitudinal Drift Tracker · v5.3e</div>
+  <div class="top">Longitudinal Drift Tracker · v5.6</div>
   <div class="tick">Made Tech Group plc <span class="sub">AIM: MTEC · digital/data/tech services to UK public sector</span></div>
 
   <!-- ============ VERDICT CARD — Appendix E ============ -->
@@ -322,10 +329,10 @@
       <div class="railgap"></div>
     </div>
     <div class="cbody">
-      <h1 class="chead">FY27 guidance raised above consensus on a record £40m award, and the withheld backlog returns at c.£115m — the disclosure gap closed upward.</h1>
+      <h1 class="chead">FY26 audited on plan, FY27 guide held and backlog at a record £115m — but full-year bookings land £3.3m below April's own year-to-date claim.</h1>
 
       <div class="pills">
-        <span class="pill">Contract Award &amp; FY27 Guide · 18 Aug 2026</span>
+        <span class="pill">FY Final Results · 29 Sep 2026</span>
         <span class="pill">FY-end 31 May</span>
         <span class="dot">·</span>
         <span class="pill">B/S: Clean · net cash</span>
@@ -333,21 +340,21 @@
 
       <div class="lights">
         <div class="lamp">
-          <div class="ldate">Jun-26 · Aug-26</div>
+          <div class="ldate">Jun-26 →</div>
           <div class="bulb b-g"></div>
           <div class="lname">Numbers &amp; guide</div>
-          <div class="lreason">Second 2026 raise: FY27 guided £63–66m against £60.3m consensus.</div>
+          <div class="lreason">Audited margin 10.0%, +250bps; H2 exit 11.1%; guide held.</div>
         </div>
         <div class="lamp off">
           <div class="bulb b-o"></div>
           <div class="lname">Language</div>
-          <div class="lreason">Positive throughout, but no two-print rise from zero or below.</div>
+          <div class="lreason">Stepped down to flat, but one fall — needs two, or ≤−1.</div>
         </div>
         <div class="lamp">
-          <div class="ldate">Aug-26</div>
+          <div class="ldate">Aug-26 · Sep-26</div>
           <div class="bulb b-g"></div>
           <div class="lname">Disclosure</div>
-          <div class="lreason">Withheld backlog re-quantified at record c.£115m after two documents dark.</div>
+          <div class="lreason">Both withheld metrics now printed: bookings £50.7m, backlog £83.5m.</div>
         </div>
         <div class="tally"><b>2/3</b><span>FIRED</span></div>
         <div class="bstrip" style="flex-basis:100%">
@@ -357,17 +364,17 @@
               <div class="s">Sweep sits outside the 2-of-3 count</div></div>
           </div>
           <div class="tw">
-            <div class="plab">TREND WATCH · FY1 FC (AUG-26) VS H2 (Y-ON-Y) GROWTH · PRE-RNS</div>
+            <div class="plab">TREND WATCH · FY1 FC (SEP-26) VS H2 (Y-ON-Y) GROWTH</div>
             <div class="dset">
    <div class="dcell"><div class="dnm">REVENUE</div>
    <svg width="50" height="50" viewBox="0 0 42 42">
    <circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/>
    <circle cx="21" cy="21" r="15.915" fill="none" stroke="#21d05e" stroke-width="5"
-    stroke-dasharray="62 100" transform="rotate(-90 21 21)" stroke-linecap="round"/>
+    stroke-dasharray="58 100" transform="rotate(-90 21 21)" stroke-linecap="round"/>
    <line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/>
    </svg>
-   <div class="dfig" style="color:#7bd88f">+24.0pp</div>
-   <div class="dtrend">+27.5% → <b>+26.4%</b></div><div class="dfc">fc +2.4%</div></div>
+   <div class="dfig" style="color:#7bd88f">+17.6pp</div>
+   <div class="dtrend">+27.8% → <b>+25.9%</b></div><div class="dfc">fc +8.3%</div></div>
    <div class="dcell"><div class="dnm">EBITDA</div>
    <svg width="50" height="50" viewBox="0 0 42 42">
    <circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/>
@@ -375,17 +382,24 @@
     stroke-dasharray="83 100" transform="rotate(-90 21 21)" stroke-linecap="round"/>
    <line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/>
    </svg>
-   <div class="dfig" style="color:#7bd88f">+104.2pp</div>
-   <div class="dtrend">+33.3% → <b>+105.9%</b></div><div class="dfc">fc +1.7%</div></div>
+   <div class="dfig" style="color:#7bd88f">+96.1pp</div>
+   <div class="dtrend">+35.3% → <b>+104.8%</b></div><div class="dfc">fc +8.7%</div></div>
    <div class="dcell"><div class="dnm">PBT</div>
    <svg width="50" height="50" viewBox="0 0 42 42">
    <circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/>
+   <circle cx="21" cy="21" r="15.915" fill="none" stroke="#21d05e" stroke-width="5"
+    stroke-dasharray="83 100" transform="rotate(-90 21 21)" stroke-linecap="round"/>
    <line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/>
    </svg>
-   <div class="dfig" style="color:#6d6a62">n/a</div>
-   <div class="dtrend">FY26 PBT unprinted</div><div class="dfc"></div></div>
+   <div class="dfig" style="color:#7bd88f">+88.7pp</div>
+   <div class="dtrend">+225% → <b>+119.5%</b></div><div class="dfc">fc +30.8%</div></div>
             </div>
           </div>
+        </div>
+        <div class="mvrow" style="flex-basis:100%">
+          <span class="mvlab">Since last RNS</span>
+          <span class="mvval">Turning up · 2/3 held</span>
+          <span class="mvsince">measured from Contract Award &amp; FY27 Guidance Upgrade · 18 Aug 2026</span>
         </div>
       </div>
 
@@ -400,32 +414,32 @@
           <p>They sell their people's time. Departments buy through government purchasing frameworks, sign up for a few years, and pay largely by the day. Two consequences: growth needs bodies, and every contract eventually runs out and has to be won again. That second one is why the order book matters more here than the sales line.</p>
           <p><b>Who controls the price.</b> Departments do, through competitive framework bidding. Made Tech's lever is cost, not price: its own staff cost less than hired-in contractors, so the more work employees do rather than freelancers, the more of each pound survives to profit. That single swap is most of the margin story of the last two years.</p>
           <h4>What's changed recently</h4>
-          <p>A new finance chief arrived March 2026 — the second in three years. The government's June 2025 Spending Review released department money from April 2026, and in August 2026 the company won the largest contract in its history, worth c.£40m over four years.</p>
+          <p>A new finance chief arrived March 2026 — the second in three years. The government's June 2025 Spending Review released department money from April 2026, and in August 2026 the company won the largest contract in its history, worth c.£40m over four years. A new Prime Minister took office after the year-end; health work is shrinking after the company missed a key NHS buying list.</p>
           <p class="vintage"><em>The bet, in one line: a re-rated services business whose profits are rising much faster than its sales, where the only real question is whether the order book refills fast enough to keep it going.</em></p>
-          <p class="vintage">Stable facts, as at 18 August 2026.</p>
+          <p class="vintage">Stable facts, as at 29 September 2026.</p>
         </div>
       </details>
 
       <div class="boxes">
-        <div class="box"><div class="lb">Current state</div><div class="hl2">Raised twice in 2026</div>
-          <p>FY27 now guided to £63–66m revenue and £6.3–6.6m EBITDA, against consensus of £60.3m and £6.0m set weeks earlier.</p></div>
+        <div class="box"><div class="lb">Current state</div><div class="hl2">Guide held</div>
+          <p>FY26 audited exactly on the June update. FY27 £63–66m revenue, £6.3–6.6m EBITDA reiterated, now netting a smaller Health contribution.</p></div>
         <div class="box"><div class="lb">Warning you get</div><div class="hl2">~3 months</div>
-          <p>Bookings weakened at Feb-23, the cut landed May-23. The same metric family now points the other way: backlog at a record c.£115m.</p></div>
+          <p>Bookings lead the guide. FY26 printed £50.7m, book-to-bill 0.86x — weak — but backlog is already a record £115m at 31 July.</p></div>
         <div class="box"><div class="lb">Argues against</div>
-          <p>One consortium award carries the upgrade, revenue starts only in FY27 with the weight in FY28, and no FY26 bookings total has ever been printed.</p></div>
-        <div class="box"><div class="lb">Next test</div><div class="hl2">Sep 2026</div>
-          <p>FY26 final results must print the bookings total and confirm the backlog basis, with promised further colour on the FY27 outlook.</p></div>
+          <p>Bookings fell 38% and backlog ended FY26 down 10.6%; the year's total sits below April's year-to-date, and both FY25 comparatives were quietly restated.</p></div>
+        <div class="box"><div class="lb">Next test</div><div class="hl2">Dec 2026</div>
+          <p>The H1 FY27 update must quantify the "strongest ever" bookings half and hold backlog near £115m through the change of government.</p></div>
       </div>
 
       <ul class="cbul">
-        <li><strong>The withhold resolved upward, which is the outcome the amber verdict was holding open:</strong> backlog was dark from Feb-26's £74.4m through two documents, and returns at c.£115m — above the previous record £92.2m and +c.£40.6m on the last print.</li>
-        <li><strong>Green convergence, so the alert is a green-shoot one:</strong> a G-column raise and a re-quantified dropped metric both fired green on the same document. Read it against the record — this guide has been met or beaten every time since Jun-24.</li>
-        <li><strong>What would break it:</strong> a September bookings total implying FY26 book-to-bill materially below 1.0x, or a backlog basis that turns out to include consortium work Made Tech does not control.</li>
+        <li><strong>A number that should not fall did:</strong> April's award RNS put year-to-date bookings at £54m; the audited year says £50.7m. Lapses or a gross-to-net switch would explain it, but the document says neither — a first credibility mark against an otherwise clean guider.</li>
+        <li><strong>Why the turn still reads up:</strong> the weak FY26 order print is backward-looking; the post-period £40m award, backlog of £115m and a strongest-ever H1 bookings claim are forward-looking, and both green lamps rest on audited or dated figures.</li>
+        <li><strong>What would break it:</strong> a December update that leaves H1 bookings unquantified, a backlog figure below £115m, or procurement delays blamed on the new government.</li>
       </ul>
     </div>
   </div>
 
-  <div class="footnote prose" style="margin:0 0 30px;">Direction turns up: two conditions fired green on the same document — a numeric FY27 guide above consensus and the re-quantification of a metric withheld through two prior documents, at a record level. The residual watch is narrow: FY26 bookings have still never been totalled, and the £40m award's revenue is weighted to FY28.</div>
+  <div class="footnote prose" style="margin:0 0 30px;">Direction holds up on 2 of 3 green, but the current-state read of this document is amber: the leading metrics' FY26 prints were weak and one contradicts the company's own April figure. The verdict and the bar disagree deliberately — the lamps weigh the window, the bar weighs this RNS.</div>
 
   <!-- ============ §1 LEDGER ============ -->
   <h2 class="sec"><span class="n">§1</span> &nbsp;Metric Ledger</h2>
@@ -487,8 +501,8 @@
           <th class="phead" data-p="H1">H1 FY25</th><th class="phead" data-p="H2">H2 FY25†</th>
           <th class="phead" data-p="H1">H1 FY26</th>
           <th class="phead" data-p="AWD" class="aw">Apr-26 award</th>
-          <th class="phead" data-p="H2">H2 FY26† · FY TU Jun-26</th>
-          <th class="phead bs-col" data-p="CA">⭐ CA · Aug-26</th>
+          <th class="phead" data-p="H2">H2 FY26† · FY R</th>
+          <th class="phead bs-col" data-p="CUR">⭐ FY R · Sep-26 · current</th>
         </tr>
       </thead>
       <tbody>
@@ -505,34 +519,34 @@
           <td><span class="val">£12.6m</span><span class="delta"><span class="t-dn">🔴↘</span> <span class="neg">−61.3%</span></span></td>
           <td><span class="val">£23.4m<sup class="flag">†</sup></span><span class="delta"><span class="t-dn">🔴↘</span> <span class="neg">−37.3%</span></span></td>
           <td><span class="val">£42.0m</span><span class="delta"><span class="t-up">🟢↗</span> +233%</span></td>
-          <td><span class="val">£40.1m<sup class="flag">†</sup></span><span class="delta"><span class="t-up">🟢↗</span> +71.4%</span></td>
+          <td><span class="val">£39.3m<sup class="flag">†r</sup></span><span class="delta"><span class="t-up">🟢↗</span> +67.9%</span></td>
           <td><span class="val">£13.4m<sup class="flag">g</sup></span><span class="delta"><span class="t-dn">🔴↘</span> <span class="neg">−68.1%</span></span></td>
-          <td class="aw"><span class="val">£54m<sup class="flag">y</sup></span><span class="delta">🟢↗ H2-td £41m</span></td>
-          <td><span class="withheld">❌</span><span class="delta"><span class="neg">withheld</span></span></td>
-          <td class="bs-col"><span class="val">🟡</span><span class="delta">qualitative</span></td>
+          <td class="aw"><span class="val">£54m<sup class="flag">y</sup></span><span class="delta">⚠ FY audited £50.7m</span></td>
+          <td><span class="val">ʳ</span><span class="delta">basis break</span></td>
+          <td class="bs-col"><span class="val">£50.7m</span><span class="delta">FY26 · <span class="neg">−37.6%</span> · H1 FY27 🟡 qual</span></td>
         </tr>
         <tr class="bbrow">
           <td class="lab">book-to-bill†</td>
-          <td>2.27x</td><td>1.40x</td><td>1.58x</td><td class="hi">1.90x</td><td class="lo">0.66x</td><td>1.20x</td><td class="hi">1.93x</td><td class="hi">1.63x</td><td class="lo">0.48x</td><td class="aw">—</td><td class="aw" style="background:#fff !important;">≥1.32x<sup class="flag">y</sup></td><td style="font-style:italic;">~0.62x<sup class="flag">gd</sup></td>
+          <td>2.27x</td><td>1.40x</td><td>1.58x</td><td class="hi">1.90x</td><td class="lo">0.66x</td><td>1.20x</td><td class="hi">1.93x</td><td class="hi">1.59x</td><td class="lo">0.48x</td><td class="aw">—</td><td class="aw" style="background:#fff !important;">1.20–1.31x<sup class="flag">r</sup></td><td class="bs-col"><span class="val" style="font-size:11px;">0.86x FY26</span> · <span style="font-style:italic;">~0.62x<sup class="flag">gd</sup></td>
         </tr>
         <tr class="agg">
           <td class="lab">FY aggregate · b:b</td>
           <td colspan="2"><span class="delta">£51.1m · — · <strong>1.74x</strong></span></td>
           <td colspan="2"><span class="delta">£69.9m · +36.8% · <strong>1.74x</strong></span></td>
           <td colspan="2"><span class="delta">£36.0m · −48.5% · <strong class="lo" style="color:var(--red);">0.93x</strong></span></td>
-          <td colspan="2"><span class="delta">£82.1m · +128% · <strong class="hi" style="color:var(--green);">1.77x</strong></span></td>
-          <td colspan="3"><span class="delta"><span class="neg">❌ withheld</span> · b:b <strong>≥0.92x</strong> (£54m YTD floor)</span></td><td><span class="delta" style="font-style:italic;">b:b <strong>~0.62x</strong><sup class="flag">gd</sup><br>award alone</span></td>
+          <td colspan="2"><span class="delta">£81.3m<sup class="flag">r</sup> · +125.8% · <strong class="hi" style="color:var(--green);">1.75x</strong></span></td>
+          <td colspan="3"><span class="delta">£50.7m · <span class="neg">−37.6%</span> · <strong class="lo" style="color:var(--red);">0.86x</strong></span></td><td><span class="delta" style="font-style:italic;">b:b <strong>~0.62x</strong><sup class="flag">gd</sup><br>award alone</span></td>
         </tr>
         <tr class="vrow" style="border-top:none;">
-          <td class="lab" style="color:#16150f;font-weight:700;font-style:normal;">FY26 TU · Jun-26</td>
+          <td class="lab" style="color:#16150f;font-weight:700;font-style:normal;">⭐ FY R · Sep-26</td>
           <td colspan="12" class="bs-col" style="text-align:left;padding-left:14px;">
-            <span class="withheld">❌ withheld</span> &nbsp;<span class="subtle">— FY26 TU (30 Jun 2026) gives only "Sales Bookings momentum"; no FY26 total printed anywhere, so H2 FY26† is underivable. Discount: the 15 Apr 26 contract RNS (noise doc) quantified YTD bookings at £54m incl. c.£41m in H2-to-date — H2 FY25's full £40.1m already matched with ~6 weeks left. Cadence break real; "went dark as signal turned" read discounted.</span>
+            <span class="val" style="display:inline;">£50.7m</span> &nbsp;<span class="delta" style="display:inline;"><span class="neg">−37.6% vs FY25 £81.3m<sup class="flag">r</sup></span> · b:b 0.86x</span> &nbsp;<span class="subtle">— first FY26 total in the record, and <strong>£3.3m below the £54m year-to-date the 15 Apr award RNS printed</strong> six weeks before year-end, unexplained. FY25 comparative silently restated from £82.1m. H2 FY26† underivable on a single basis (gross or net of lapses unstated): £37.3m–£40.8m. H1 FY27 guided as the strongest bookings half in the record.</span>
           </td>
         </tr>
 
         <!-- RANK 2 -->
         <tr class="secbar"><td colspan="13">Rank 2 · Contracted Backlog <span class="nat">— snapshot, position at period end (£m) · Δ vs prior print; YoY on the FY row only</span></td></tr>
-        <tr class="strip"><td class="lab">position at</td><td>Nov-21</td><td>May-22</td><td>Nov-22</td><td>May-23</td><td>Nov-23</td><td>May-24</td><td>Nov-24</td><td>May-25</td><td>Nov-25</td><td class="aw">Apr-26</td><td>May-26</td><td>Aug-26</td></tr>
+        <tr class="strip"><td class="lab">position at</td><td>Nov-21</td><td>May-22</td><td>Nov-22</td><td>May-23</td><td>Nov-23</td><td>May-24</td><td>Nov-24</td><td>May-25</td><td>Nov-25</td><td class="aw">Apr-26</td><td>May-26</td><td>31 Jul-26</td></tr>
         <tr class="vrow">
           <td class="lab">Value / Δ vs prior print</td>
           <td><span class="val">£31.3m</span><span class="delta">—</span></td>
@@ -542,24 +556,24 @@
           <td><span class="val">£61.3m<sup class="flag">r</sup></span><span class="delta"><span class="t-dn">🔴↘</span> <span class="neg">−£6.6m</span></span></td>
           <td><span class="val">£65.6m<sup class="flag">r</sup></span><span class="delta"><span class="t-up">🟢↗</span> +£4.3m</span></td>
           <td><span class="val">£80.8m</span><span class="delta"><span class="t-up">🟢↗</span> +£20.2m<sup class="flag">r</sup></span></td>
-          <td><span class="val">£92.2m</span><span class="delta"><span class="t-up">🟢↗</span> +£11.4m</span></td>
-          <td><span class="val">£74.4m</span><span class="delta"><span class="t-dn">🔴↘</span> <span class="neg">−£17.8m</span></span></td>
+          <td><span class="val">£93.4m<sup class="flag">r</sup></span><span class="delta"><span class="t-up">🟢↗</span> +£12.6m</span></td>
+          <td><span class="val">£74.4m</span><span class="delta"><span class="t-dn">🔴↘</span> <span class="neg">−£19.0m<sup class="flag">r</sup></span></span></td>
           <td class="aw"><span class="val">—</span></td>
-          <td><span class="withheld">❌</span><span class="delta"><span class="neg">withheld</span></span></td>
-          <td class="bs-col"><span class="val">c.£115m</span><span class="delta"><span class="t-up">🟢↗</span> +c.£40.6m</span></td>
+          <td><span class="val">£83.5m</span><span class="delta"><span class="t-up">🟢↗</span> +£9.1m</span></td>
+          <td class="bs-col"><span class="val">c.£115m</span><span class="delta"><span class="t-up">🟢↗</span> +c.£31.5m</span></td>
         </tr>
         <tr class="agg">
           <td class="lab">FY-end · YoY</td>
           <td colspan="2"><span class="delta">£38.2m · —</span></td>
           <td colspan="2"><span class="delta">£67.9m · +77.7%</span></td>
           <td colspan="2"><span class="delta">£65.6m<sup class="flag">r</sup> · <span class="neg">−3.4%</span></span></td>
-          <td colspan="2"><span class="delta">£92.2m · +52.1%<sup class="flag">r</sup> (vs rebased £60.6m)</span></td>
-          <td colspan="3"><span class="delta"><span class="neg">❌ withheld</span> — re-quantified Aug-26</span></td><td><span class="delta">c.£115m · +24.7% vs FY25</span></td>
+          <td colspan="2"><span class="delta">£93.4m<sup class="flag">r</sup> · +54.1% (vs rebased £60.6m)</span></td>
+          <td colspan="3"><span class="delta">£83.5m · <span class="neg">−10.6%</span> vs £93.4m<sup class="flag">r</sup></span></td><td><span class="delta">c.£115m at 31 Jul · +£31.5m on FY26-end</span></td>
         </tr>
         <tr class="vrow" style="border-top:none;">
-          <td class="lab" style="color:#16150f;font-weight:700;font-style:normal;">FY26 TU · Jun-26</td>
+          <td class="lab" style="color:#16150f;font-weight:700;font-style:normal;">⭐ FY R · Sep-26</td>
           <td colspan="12" class="bs-col" style="text-align:left;padding-left:14px;">
-            <span class="val" style="display:inline;">c.£115m</span> &nbsp;<span class="delta" style="display:inline;"><span class="t-up">🟢↗</span> +c.£40.6m vs last print (Nov-25) · +24.7% vs FY25 £92.2m</span> &nbsp;<span class="subtle">— <strong>re-quantified 18 Aug 2026</strong> after two documents of withhold; the Jun-26 TU's "healthy Contracted Backlog" now carries a number, and it is the highest in the record.</span>
+            <span class="val" style="display:inline;">£83.5m</span> &nbsp;<span class="delta" style="display:inline;"><span class="t-up">🟢↗</span> +£9.1m on Nov-25 · <span class="neg">−10.6% vs FY25 £93.4m<sup class="flag">r</sup></span></span> &nbsp;<span class="subtle">— the FY-end figure the Jun-26 TU withheld; <strong>c.£115m at 31 Jul 2026</strong> now dated and sourced, +£31.5m in two months including the c.£40m award. FY25 comparative restated from £92.2m without explanation.</span>
           </td>
         </tr>
 
@@ -575,11 +589,11 @@
           <td><span class="val">7.3%</span><span class="delta"><span class="t-up">🟢↗</span> +4.8pp</span></td>
           <td><span class="val">5.1%<sup class="flag">†</sup></span><span class="delta"><span class="t-flat">🟡→</span> 0.0pp</span></td>
           <td><span class="val">8.2%</span><span class="delta"><span class="t-flat">🟡→</span> +0.9pp</span></td>
-          <td><span class="val">6.9%<sup class="flag">†</sup></span><span class="delta"><span class="t-flat">🟡→</span> +1.8pp</span></td>
+          <td><span class="val">6.8%<sup class="flag">†</sup></span><span class="delta"><span class="t-flat">🟡→</span> +1.7pp</span></td>
           <td><span class="val">8.7%</span><span class="delta"><span class="t-flat">🟡→</span> +0.5pp</span></td>
           <td class="aw"><span class="val">—</span></td>
-          <td><span class="val">11.3%<sup class="flag">†</sup></span><span class="delta"><span class="t-up">🟢↗</span> +4.4pp</span></td>
-          <td class="bs-col"><span class="val">—</span></td>
+          <td><span class="val">11.1%<sup class="flag">†</sup></span><span class="delta"><span class="t-up">🟢↗</span> +4.3pp</span></td>
+          <td class="bs-col"><span class="val">10.0%</span><span class="delta">FY26 audited · +2.5pp</span></td>
         </tr>
         <tr class="agg">
           <td class="lab">FY margin · Δ</td>
@@ -587,12 +601,12 @@
           <td colspan="2"><span class="delta">3.8% · <span class="neg">−5.3pp</span></span></td>
           <td colspan="2"><span class="delta">6.2% · +2.4pp</span></td>
           <td colspan="2"><span class="delta">7.5% · +1.3pp</span></td>
-          <td colspan="3"><span class="delta">c.10.0% · +2.5pp</span></td><td><span class="delta">—</span></td>
+          <td colspan="3"><span class="delta">10.0% · +2.5pp (audited)</span></td><td><span class="delta">—</span></td>
         </tr>
         <tr class="vrow" style="border-top:none;">
-          <td class="lab" style="color:#16150f;font-weight:700;font-style:normal;">FY26 TU · Jun-26</td>
+          <td class="lab" style="color:#16150f;font-weight:700;font-style:normal;">⭐ FY R · Sep-26</td>
           <td colspan="12" class="bs-col" style="text-align:left;padding-left:14px;">
-            <span class="val" style="display:inline;">c.10.0%</span> &nbsp;<span class="delta" style="display:inline;"><span class="t-up">🟢↗</span> +2.5pp vs FY25</span> &nbsp;<span class="subtle">— "delivered ahead of previously indicated guidance"; implied H2 exit rate 11.3%†</span>
+            <span class="val" style="display:inline;">10.0%</span> &nbsp;<span class="delta" style="display:inline;"><span class="t-up">🟢↗</span> +2.5pp vs FY25</span> &nbsp;<span class="subtle">— audited £5,886k on £58,884k; H2 exit rate 11.1%†. Gross margin fell 160bps to 30.4% — the gain is overheads, not pricing</span>
           </td>
         </tr>
 
@@ -608,11 +622,11 @@
           <td><span class="val">£19.1m</span><span class="delta"><span class="t-dn">🔴↘</span> <span class="neg">−7.3%</span></span></td>
           <td><span class="val">£19.5m<sup class="flag">†</sup></span><span class="delta"><span class="t-dn">🔴↘</span> <span class="neg">−0.5%</span></span></td>
           <td><span class="val">£21.8m</span><span class="delta"><span class="t-up">🟢↗</span> +14.1%</span></td>
-          <td><span class="val">£24.6m<sup class="flag">†</sup></span><span class="delta"><span class="t-up">🟢↗</span> +26.2%</span></td>
-          <td><span class="val">£27.8m</span><span class="delta"><span class="t-up">🟢↗</span> +27.5%</span></td>
+          <td><span class="val">£24.7m<sup class="flag">†</sup></span><span class="delta"><span class="t-up">🟢↗</span> +26.7%</span></td>
+          <td><span class="val">£27.8m</span><span class="delta"><span class="t-up">🟢↗</span> +27.8%</span></td>
           <td class="aw"><span class="val">—</span></td>
-          <td><span class="val">£31.1m<sup class="flag">†</sup></span><span class="delta"><span class="t-up">🟢↗</span> +26.4%</span></td>
-          <td class="bs-col"><span class="val">—</span></td>
+          <td><span class="val">£31.1m<sup class="flag">†</sup></span><span class="delta"><span class="t-up">🟢↗</span> +25.9%</span></td>
+          <td class="bs-col"><span class="val">£58.9m</span><span class="delta">FY26 audited · +26.8%</span></td>
         </tr>
         <tr class="agg">
           <td class="lab">FY aggregate</td>
@@ -620,18 +634,18 @@
           <td colspan="2"><span class="delta">£40.2m · +37.2%</span></td>
           <td colspan="2"><span class="delta">£38.6m · <span class="neg">−4.0%</span></span></td>
           <td colspan="2"><span class="delta">£46.4m · +20.2%</span></td>
-          <td colspan="3"><span class="delta">£58.9m · +26.9%</span></td><td><span class="delta">guide £63–66m</span></td>
+          <td colspan="3"><span class="delta">£58.9m · +26.8% (audited)</span></td><td><span class="delta">guide £63–66m</span></td>
         </tr>
         <tr class="vrow" style="border-top:none;">
-          <td class="lab" style="color:#16150f;font-weight:700;font-style:normal;">FY26 TU · Jun-26</td>
+          <td class="lab" style="color:#16150f;font-weight:700;font-style:normal;">⭐ FY R · Sep-26</td>
           <td colspan="12" class="bs-col" style="text-align:left;padding-left:14px;">
-            <span class="val" style="display:inline;">£58.9m</span> &nbsp;<span class="delta" style="display:inline;"><span class="t-up">🟢↗</span> +26.9% vs FY25</span> &nbsp;<span class="subtle">— above upgraded consensus (£57.5m); implied H2 £31.1m†, no back-loading</span>
+            <span class="val" style="display:inline;">£58.9m</span> &nbsp;<span class="delta" style="display:inline;"><span class="t-up">🟢↗</span> +26.8% vs FY25 (audited £58,884k)</span> &nbsp;<span class="subtle">— on the TU figure exactly; FY27 guide £63–66m reiterated, now netting a materially smaller Health contribution</span>
           </td>
         </tr>
 
         <!-- RANK 5 -->
         <tr class="secbar"><td colspan="13">Rank 5 · Net Cash <span class="nat">— snapshot, position at period end (£m) · Δ vs prior print; YoY on the FY row only</span></td></tr>
-        <tr class="strip"><td class="lab">position at</td><td>Nov-21</td><td>May-22</td><td>Nov-22</td><td>May-23</td><td>Nov-23</td><td>May-24</td><td>Nov-24</td><td>May-25</td><td>Nov-25</td><td class="aw">Apr-26</td><td>May-26</td><td>Aug-26</td></tr>
+        <tr class="strip"><td class="lab">position at</td><td>Nov-21</td><td>May-22</td><td>Nov-22</td><td>May-23</td><td>Nov-23</td><td>May-24</td><td>Nov-24</td><td>May-25</td><td>Nov-25</td><td class="aw">Apr-26</td><td>May-26</td><td>31 Jul-26</td></tr>
         <tr class="vrow">
           <td class="lab">Value / Δ vs prior print</td>
           <td><span class="val">£11.1m</span><span class="delta">—</span></td>
@@ -645,7 +659,7 @@
           <td><span class="val">£11.9m</span><span class="delta"><span class="t-up">🟢↗</span> +£1.5m</span></td>
           <td class="aw"><span class="val">—</span></td>
           <td><span class="val">£14.5m</span><span class="delta"><span class="t-up">🟢↗</span> +£2.6m</span></td>
-          <td class="bs-col"><span class="val">—</span></td>
+          <td class="bs-col"><span class="val">£14.5m</span><span class="delta">at 31 May · +39.4%</span></td>
         </tr>
         <tr class="agg">
           <td class="lab">FY-end · YoY</td>
@@ -656,7 +670,7 @@
           <td colspan="3"><span class="delta">£14.5m · +39.4%</span></td><td><span class="delta">—</span></td>
         </tr>
         <tr class="vrow" style="border-top:none;">
-          <td class="lab" style="color:#16150f;font-weight:700;font-style:normal;">FY26 TU · Jun-26</td>
+          <td class="lab" style="color:#16150f;font-weight:700;font-style:normal;">⭐ FY R · Sep-26</td>
           <td colspan="12" class="bs-col" style="text-align:left;padding-left:14px;">
             <span class="val" style="display:inline;">£14.5m</span> &nbsp;<span class="delta" style="display:inline;"><span class="t-up">🟢↗</span> +£2.6m vs prior print (Nov-25) · +£4.1m vs FY25</span> &nbsp;<span class="subtle">— ahead of consensus (£13.5m); debt-free</span>
           </td>
@@ -670,8 +684,8 @@
 
     <details class="sub"><summary>🔲 Card strip — wall preview &amp; index entry</summary><div class="notes">
             <table class="cstrip"><tbody>
-        <tr><td class="lb">R1</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-r">r</td><td class="cs-r">r</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-r">r</td><td class="cs-x">x</td><td class="cs-a bsc">a</td></tr>
-        <tr><td class="lb">R2</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-r">r</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-r">r</td><td class="cs-x">x</td><td class="cs-g bsc">g</td></tr>
+        <tr><td class="lb">R1</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-r">r</td><td class="cs-r">r</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-r">r</td><td class="cs-n">-</td><td class="cs-a bsc">a</td></tr>
+        <tr><td class="lb">R2</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-r">r</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-r">r</td><td class="cs-g">g</td><td class="cs-g bsc">g</td></tr>
         <tr><td class="lb">R3</td><td class="cs-r">r</td><td class="cs-r">r</td><td class="cs-g">g</td><td class="cs-a">a</td><td class="cs-a">a</td><td class="cs-a">a</td><td class="cs-a">a</td><td class="cs-g">g</td><td class="cs-n bsc">-</td></tr>
         <tr><td class="lb">R4</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-r">r</td><td class="cs-r">r</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-n bsc">-</td></tr>
         <tr><td class="lb">R5</td><td class="cs-r">r</td><td class="cs-r">r</td><td class="cs-r">r</td><td class="cs-r">r</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-g">g</td><td class="cs-n bsc">-</td></tr>
@@ -681,46 +695,45 @@
     </div></details>
 
     <details class="sub"><summary>Notes — Ranks 1–5</summary><div class="notes">
-      <p><span class="rk">Rank 1 (Sales Bookings).</span> The FY-TU withhold stands (no FY26 total exists), but its force is discounted: the 15 Apr 26 GDS contract RNS quantified YTD bookings at £54m — c.£41m in H2-to-date, already matching H2 FY25's full £40.1m with ~6 weeks left — so the rank-1 signal flipped from collapse to recovery mid-period, and Feb-26's "significant uptick in H2 to date" is corroborated. FY-vs-FY (vs £82.1m) remains open until September — and on the new spine the withhold is now a visible hole: H2 FY26 is the only underivable half in a nine-half run. Forward: the c.£40m award books in FY27 and alone implies ~0.62x against guided revenue, so a normal run-rate of other wins would put FY27 back above the 1.0x line that FY26 barely held, and possibly near FY25's 1.77x.</p>
-      <p><span class="rk">Rank 2 (Contracted Backlog).</span> H1 FY26 backlog fell −7.9% YoY — its steepest decline and first H1-vs-H1 down-print (FY24 year-end was −3%) — and the FY26 TU then withheld it. The 18 Aug 26 award RNS restores it at c.£115m, a record. Note the basis question for September: c.£115m is a "current" figure at an interim date and includes the consortium award, so it is not yet like-for-like with a May year-end print. Management frames the H1 fall as "timing of large contract awards in the prior year" — a same-explanation defence that will be exhausted if repeated at September's FY results.</p>
-      <p><span class="rk">Rank 3 (Adj EBITDA margin).</span> The only rank fully quantified on the Buy/Sell RNS and it is unambiguously up (c.10.0%, +250bps). The H1 FY26 🟡 is a within-band read (+0.5pp), not a stall — and the derived H2 FY26 exit rate of 11.3%† (+4.4pp, the largest rate gain in the record) sits well above the 10.0% full-year print.</p>
+      <p><span class="rk">Rank 1 (Sales Bookings).</span> FY26 now printed at £50.7m, −37.6% on a restated £81.3m, book-to-bill 0.86x — the weakest full-year ratio since FY24. It sits £3.3m below the £54m year-to-date the company printed on 15 April; the gap is unexplained, and it invalidates the "≥" floors this build previously carried for FY26 (≥0.92x) and H2 (≥1.32x), which assumed a year-to-date could only rise. Forward: the c.£40m award books in FY27 (~0.62x of guided revenue alone) and H1 FY27 is guided as the strongest bookings half in the record — the December update must put a number on that claim.</p>
+      <p><span class="rk">Rank 2 (Contracted Backlog).</span> FY-end £83.5m (−10.6% on restated £93.4m) fills the cell the Jun-26 TU withheld, and c.£115m is now dated to 31 July 2026 — scale-consistent with £83.5m plus the c.£40m award less two months' delivery. FY25 restated upward by £1.2m without explanation; every Δ touching FY25 now runs on the restated figure.</p>
+      <p><span class="rk">Rank 3 (Adj EBITDA margin).</span> Audited 10.0%, H2 exit 11.2%†. Note the mix: gross margin fell 160bps to 30.4% on competitive pricing and specialist hires, so the entire gain came from overheads growing 5.5% against 27% revenue growth. Overhead restraint runs out; pricing pressure need not.</p>
       <p><span class="rk">Rank 4 (Revenue).</span> Confirms the profit story with a two-period lag as expected — the FY23 dip (H1 FY24 / FY24 red) trailed the FY23 bookings/backlog turn by ~12 months, the textbook lag this tracker exists to catch. The derived halves sharpen it: H2 FY24 revenue was flat (−0.5%) while H2 FY24 bookings fell −37% — the order metrics were already recovering into FY25 before revenue confirmed.</p>
       <p><span class="rk">Rank 5 (Net Cash).</span> Five consecutive drawdowns (FY22→FY24, funding IPO-era IP investment) reversed to five consecutive builds from H1 FY25 — a clean confirmation the cost-base reset took hold.</p>
     </div></details>
 
     <details class="sub"><summary>Turn methodology &amp; restatement basis</summary><div class="methp">
-    <strong>Turn methodology.</strong> Every Δ and arrow is computed in one script with the comparison basis hard-coded per metric type. <em>Sales Bookings</em> and <em>Revenue</em> are flows, compared like-period-to-like-period only (H1-vs-H1, FY-vs-FY) — the H1→FY step within a year is a seasonal build, not a scored turn. <em>Contracted Backlog</em> and <em>Net Cash</em> are snapshots, compared position-to-position at their own disclosure grain. <em>Adjusted EBITDA margin</em> is a rate, seasonally matched, banded at ±2.0pp (🟢 above / 🟡 within / 🔴 below). The spine is H1 / H2†: MTEC prints H1 and FY only, so every H2 cell is derived as FY − H1 (both inputs exact, same basis) and carries †. No printed sub-period exists to corroborate an H2, so per the derived-only rule an H2 turn is a watch-flag until an H1 print confirms the direction — no condition in this build fires on an H2 cell alone. FY totals sit on the muted aggregate rows, transcribed from company prints, never summed from cells, never scored. H1 FY22 comparatives (revenue £11.7m, bookings £26.5m, backlog £31.3m, cash £11.1m, margin 10.1%) are taken from the Feb-23 H1 results table. Company-rate note: MTEC states H1 FY23 bookings +24%; the printed levels (£32.6m / £26.5m) compute to +23.0% — input rounding, levels govern. <em>Rank 3 derivation basis:</em> H2 margins are derived as (FY Adjusted EBITDA − H1 Adjusted EBITDA) ÷ H2 revenue†, with FY25 taken at the audited £3.5m (the Jun-25 TU's c.£3.4m is superseded — later governs earlier) and FY22 at the exact £2,649k from the FY22 statements. H1 FY22 Adjusted EBITDA is available only as narrative £1.2m, so H2 FY22† mixes an exact full year with a rounded half — a precision-basis break, marked ◊ and carried unscored (it is the first period in the series and has no comparator regardless). Every other H2 margin derives from £0.1m-rounded inputs whose implied uncertainty (±0.5–0.9pp) sits inside the ±2.0pp band, so no further ◊ applies. <em>Basis change not affecting a rank:</em> Sep-25 restated FY24 gross profit and gross margin (£14.0m/36.3% to £13.2m/34.2%) to include the full cost of delivery consultants; gross margin is not a ranked metric and Adjusted EBITDA margin is unaffected. Flags: <sup class="flag">r</sup> restated — the FY24 backlog rebase (−£5.0m for prior-period contract expiries, per the Feb-25 footnote) applies to <em>both</em> FY24 halves: FY24 £65.6m as printed becomes £60.6m restated, and H1 FY24 £61.3m as printed becomes £56.3m restated (Feb-25 prints the £56.3m comparative). Cells carry the figure as printed at the time, with each comparison run on a single consistent basis: FY24-vs-FY23 uses printed-vs-printed (£65.6m vs £67.9m, −3.4%, matching the company's "only 3% down"), while H1 FY25 and FY25 are compared to the restated £56.3m / £60.6m (+£20.2m; +52.1%, matching the company's stated 44% and 52%). No comparison mixes the two bases. H1 FY23 EBITDA margin carried at the Feb-24 restated 2.5% (originally printed 2.4%), Δ −7.6pp vs the H1 FY22 10.1% seasonal comp; <sup class="flag">g</sup> gross figure (from Dec-25 the company splits gross vs net bookings — H1 FY26 gross £13.4m / net £9.9m after £3.5m lapsed; the grid uses gross throughout for like-for-like). <em>Book-to-bill</em>† = gross Sales Bookings ÷ revenue, same period — a derived watch ratio, never scored (both inputs already scored separately); &gt;1x funds future growth, &lt;1x consumes backlog; half-by-half in the thin row (H2 FY26 ≥1.32x = £41m H2-td ÷ £31.1m†), full-year on the R1 aggregate row (FY26 ≥0.92x = £54m YTD ÷ £58.9m); both FY26 figures are floors since post-15-Apr bookings are unprinted. <em>Forward figure, FY27:</em> the c.£40m award of 18 Aug 2026 books in FY27, not FY26 — the RNS gives no split by year, so it cannot be spread. Against the guided FY27 revenue midpoint of c.£64.5m (£63–66m range) that single award contributes <strong>~0.62x</strong> before any other bookings in the year. Marked <sup class="flag">gd</sup>: it rests on a company guide rather than a printed revenue level, so like the FY27 revenue guide beside it, it is <strong>rendered italic, scored nothing and counted nowhere</strong>. Guides are never converted to actuals; the outturn will land beside it in September and at the FY27 results. <sup class="flag">gd</sup> guide-based forward figure — computed against a guided range, never a printed level; unscored. <sup class="flag">y</sup> YTD figure at 15 Apr 2026 (contract-award RNS, blue column) — mid-period, not a like-period comp; annotation only, never scored. ❌ = verified withhold against established cadence.
+    <strong>Turn methodology.</strong> Every Δ and arrow is computed in one script with the comparison basis hard-coded per metric type. <em>Sales Bookings</em> and <em>Revenue</em> are flows, compared like-period-to-like-period only (H1-vs-H1, FY-vs-FY) — the H1→FY step within a year is a seasonal build, not a scored turn. <em>Contracted Backlog</em> and <em>Net Cash</em> are snapshots, compared position-to-position at their own disclosure grain. <em>Adjusted EBITDA margin</em> is a rate, seasonally matched, banded at ±2.0pp (🟢 above / 🟡 within / 🔴 below). The spine is H1 / H2†: MTEC prints H1 and FY only, so every H2 cell is derived as FY − H1 (both inputs exact, same basis) and carries †. No printed sub-period exists to corroborate an H2, so per the derived-only rule an H2 turn is a watch-flag until an H1 print confirms the direction — no condition in this build fires on an H2 cell alone. FY totals sit on the muted aggregate rows, transcribed from company prints, never summed from cells, never scored. H1 FY22 comparatives (revenue £11.7m, bookings £26.5m, backlog £31.3m, cash £11.1m, margin 10.1%) are taken from the Feb-23 H1 results table. Company-rate note: MTEC states H1 FY23 bookings +24%; the printed levels (£32.6m / £26.5m) compute to +23.0% — input rounding, levels govern. <em>Rank 3 derivation basis:</em> H2 margins are derived as (FY Adjusted EBITDA − H1 Adjusted EBITDA) ÷ H2 revenue†, with FY25 taken at the audited £3.5m (the Jun-25 TU's c.£3.4m is superseded — later governs earlier) and FY22 at the exact £2,649k from the FY22 statements. H1 FY22 Adjusted EBITDA is available only as narrative £1.2m, so H2 FY22† mixes an exact full year with a rounded half — a precision-basis break, marked ◊ and carried unscored (it is the first period in the series and has no comparator regardless). FY26 and FY25 H2† cells now derive exact-from-exact: the interims print H1 FY26 £27,802k / £2,425k and H1 FY25 £21,752k / £1,792k, against audited FY figures — H2 FY26 revenue £31,082k (+25.9%), EBITDA £3,461k, margin 11.1% (+4.3pp); H2 FY25 £24,682k / £1,690k / 6.8%. Older H2 cells resolve both inputs to £0.1m (implied ±0.5–0.9pp, inside the ±2.0pp band), so no further ◊ applies. <em>Basis change not affecting a rank:</em> Sep-25 restated FY24 gross profit and gross margin (£14.0m/36.3% to £13.2m/34.2%) to include the full cost of delivery consultants; gross margin is not a ranked metric and Adjusted EBITDA margin is unaffected. Flags: <sup class="flag">r</sup> restated — the FY24 backlog rebase (−£5.0m for prior-period contract expiries, per the Feb-25 footnote) applies to <em>both</em> FY24 halves: FY24 £65.6m as printed becomes £60.6m restated, and H1 FY24 £61.3m as printed becomes £56.3m restated (Feb-25 prints the £56.3m comparative). Cells carry the figure as printed at the time, with each comparison run on a single consistent basis: FY24-vs-FY23 uses printed-vs-printed (£65.6m vs £67.9m, −3.4%, matching the company's "only 3% down"), while H1 FY25 and FY25 are compared to the restated £56.3m / £60.6m (+£20.2m; +52.1%, matching the company's stated 44% and 52%). No comparison mixes the two bases. H1 FY23 EBITDA margin carried at the Feb-24 restated 2.5% (originally printed 2.4%), Δ −7.6pp vs the H1 FY22 10.1% seasonal comp; <sup class="flag">g</sup> gross figure (from Dec-25 the company splits gross vs net bookings — H1 FY26 gross £13.4m / net £9.9m after £3.5m lapsed; the grid uses gross throughout for like-for-like). <em>Book-to-bill</em>† = gross Sales Bookings ÷ revenue, same period — a derived watch ratio, never scored (both inputs already scored separately); &gt;1x funds future growth, &lt;1x consumes backlog; half-by-half in the thin row (H2 FY26 ≥1.32x = £41m H2-td ÷ £31.1m†), full-year on the R1 aggregate row (FY26 ≥0.92x = £54m YTD ÷ £58.9m); superseded 29 Sep 2026: the audited FY26 total (£50.7m) came in below the 15 April year-to-date, so the "≥" floors were invalid — a year-to-date is only a floor if it cannot fall, and lapses can make it fall. FY26 book-to-bill is 0.86x; H2 FY26 is 1.20–1.31x depending on the unstated gross/net basis. <em>Forward figure, FY27:</em> the c.£40m award of 18 Aug 2026 books in FY27, not FY26 — the RNS gives no split by year, so it cannot be spread. Against the guided FY27 revenue midpoint of c.£64.5m (£63–66m range) that single award contributes <strong>~0.62x</strong> before any other bookings in the year. Marked <sup class="flag">gd</sup>: it rests on a company guide rather than a printed revenue level, so like the FY27 revenue guide beside it, it is <strong>rendered italic, scored nothing and counted nowhere</strong>. Guides are never converted to actuals; the outturn will land beside it at the FY27 results. <em>Buy/Sell column rule:</em> the ⭐ column transcribes the Buy/Sell RNS's own prints at their stated dates (FY26 audited figures; backlog at 31 Jul), unscored — each figure's Turn score lives in its period column (H2 FY26† / May-26) and on the FY aggregate row, never double-scored in the ⭐ column. <sup class="flag">gd</sup> guide-based forward figure — computed against a guided range, never a printed level; unscored. <sup class="flag">y</sup> YTD figure at 15 Apr 2026 (contract-award RNS, blue column) — mid-period, not a like-period comp; annotation only, never scored. ❌ = verified withhold against established cadence.
   </div></details>
 
   </div></details>
 
   <!-- ============ §2.0 ============ -->
-  <h2 class="sec"><span class="n">§2.0</span> &nbsp;Most-Recent-RNS Current-State Read <span class="subtle" style="text-transform:none;letter-spacing:0;font-weight:400;">· Contract Award &amp; FY27 Guidance Upgrade, 18 Aug 2026</span></h2>
+  <h2 class="sec"><span class="n">§2.0</span> &nbsp;Most-Recent-RNS Current-State Read <span class="subtle" style="text-transform:none;letter-spacing:0;font-weight:400;">— ⭐ FY R (29 Sep 2026)</span></h2>
   <div class="row20">
 
     <div class="bridge">
-      <div class="dbar"><span class="em">🍺</span><span class="t cav">IDIOT'S GUIDE TO THE ADJUSTED EBITDA BRIDGE — why profit went up (£3.4m → £5.9m)</span></div>
-      <div class="brow tg"><div class="dv cav">🏛️ More doors opened</div><div class="ct" style="color:var(--green);">+£12.5m sales</div><div>Departments bought more: £46.4m of work became £58.9m. A quarter more jobs through the same front door.</div></div>
-      <div class="brow tg"><div class="dv cav">👷 Fewer rented hands</div><div class="ct" style="color:var(--green);">+2.5pp margin</div><div>Their own staff did work that used to go to freelancers. Freelancers keep a slice of every pound; employees don't.</div></div>
-      <div class="brow tg"><div class="dv cav">🏢 Same office, more invoices</div><div class="ct" style="color:var(--green);">n/q</div><div>Head-office costs barely moved while the work grew — one finance team, considerably more paperwork.</div></div>
-      <div class="brow ta"><div class="dv cav">💸 What the badge hides</div><div class="ct" style="color:var(--amber);">n/q</div><div>"Adjusted" quietly leaves out shares handed to staff. The plain legal profit is smaller — £2.0m in FY25 — though that gap has been shrinking.</div></div>
-      <div class="cap"><strong>So in one sentence:</strong> they sold a quarter more work and kept more of every pound by using their own people instead of hired help. <strong>Profit falls when:</strong> departments slow their spending, contracts end without being re-won, or they go back to renting hands and give back the 2.5 points of margin they just gained.</div>
+      <div class="dbar"><span class="em">🍺</span><span class="t cav">IDIOT'S GUIDE TO THE ADJUSTED EBITDA BRIDGE — why profit went up (£3.5m → £5.9m)</span><span style="margin-left:auto;font-size:12px;color:#c9c6bd;white-space:nowrap;">⭐ FY R · 29 Sep 2026</span></div>
+      <div class="brow tg"><div class="dv cav">🏛️ A quarter more desks booked</div><div class="ct" style="color:var(--green);">+£3.0m gross profit</div><div>Sales jumped from £46.4m to £58.9m. More of Whitehall's screens got rebuilt by Made Tech hands.</div></div>
+      <div class="brow tr2"><div class="dv cav">🥧 Thinner slice per job</div><div class="ct" style="color:var(--red);">−160bps</div><div>Each pound of work kept less: 30.4p against 32.0p. Rivals bid harder, and the experts they hired don't come cheap.</div></div>
+      <div class="brow tg"><div class="dv cav">🏢 Head office stayed put</div><div class="ct" style="color:var(--green);">only +£0.6m</div><div>Office costs rose 5.5% while sales rose 27%. Same finance team, a lot more invoices through the door.</div></div>
+      <div class="brow ta"><div class="dv cav">🎟️ The share-scheme bill shrank</div><div class="ct" style="color:var(--amber);">£0.2m vs £0.9m</div><div>"Adjusted" profit ignores shares handed to staff. That bill collapsed as old schemes lapsed, so the plain legal profit — £4.7m — finally sits close to the flattering one.</div></div>
+      <div class="cap"><strong>So in one sentence:</strong> they sold a lot more work and kept head office almost frozen, which beat the fact that each job paid a little less. <strong>Profit falls when:</strong> the price fights keep shaving the slice, the health contracts keep drying up, or the new government sits on its hands before signing the next batch.</div>
     </div>
 
     <div class="csbar2">
-      <div class="dbar"><span class="em">🌡️</span><span class="t cav">CURRENT STATE — the read right now</span></div>
+      <div class="dbar"><span class="em">🌡️</span><span class="t cav">CURRENT STATE — the read right now</span><span style="margin-left:auto;font-size:12px;color:#c9c6bd;white-space:nowrap;">⭐ FY R · 29 Sep 2026</span></div>
       <div class="inner">
-        <div style="font-weight:800; color:var(--green-b);">🟢 TURNING UP</div>
+        <div style="font-weight:800; color:var(--amber-b);">🟡 STABLE — WATCH</div>
         <ul>
-          <li>FY27 guide raised to £63–66m revenue, £6.3–6.6m EBITDA — above £60.3m / £6.0m consensus.</li>
-          <li>Single award of c.£40m to Made Tech over four years, its largest ever.</li>
-          <li>Contracted Backlog re-quantified at c.£115m after two documents of withhold.</li>
-          <li>That is +c.£40.6m on the Nov-25 print and +24.7% on the FY25 record £92.2m.</li>
-          <li>H2 FY26 bookings acceleration reconfirmed, still without a full-year total.</li>
-          <li>Award alone implies FY27 book-to-bill ~0.62x before any other wins — restocking year.</li>
-          <li>Second guidance upgrade of 2026; every guide since Jun-24 met or beaten.</li>
-          <li>⚠️ Award revenue starts FY27, weighted to FY28 — little immediate P&amp;L effect.</li>
-          <li>⚠️ Consortium award: Made Tech's share stated, but delivery control is shared.</li>
+          <li>FY26 audited £58.9m revenue, £5.9m EBITDA — identical to the June update.</li>
+          <li>FY27 guide £63–66m / £6.3–6.6m reiterated; flat G, no market anchor.</li>
+          <li>Bookings £50.7m, −37.6% on restated £81.3m; book-to-bill 0.86x.</li>
+          <li>Full-year bookings £3.3m below the £54m year-to-date printed on 15 April.</li>
+          <li>Backlog £83.5m at FY-end (−10.6%), then c.£115m at 31 July.</li>
+          <li>Gross margin down 160bps to 30.4%; EBITDA margin gain came from overheads.</li>
+          <li>⚠️ Health revenue guided lower through FY27 after a missed NHS framework.</li>
+          <li>⚠️ New Prime Minister: procurement timing risk named in the outlook.</li>
         </ul>
       </div>
     </div>
@@ -749,28 +762,31 @@
     </div></details>
 
     <details class="sub"><summary>Trend Watch workings</summary><div class="notes">
-      <p><span class="rk">Panel state: rendered under operator override, labelled pre-RNS.</span> The ShareScope block's latest snapshot is dated 14 Aug 2026 and the Buy/Sell RNS is 18 Aug 2026, so the block is stale under 5.3a and would default to "no consensus data". The operator has directed that it be used with a pre-RNS label, and the panel header carries that label. The staleness is four days but material rather than technical: the block's FY27 revenue forecast of £60.3m is precisely the figure the 18 Aug RNS raised above (to £63–66m), so <strong>the required-growth column below is the pre-upgrade bar, not the current one</strong>. Against the raised guide the required growth would be +7.0% to +12.1% on revenue and +6.8% to +11.9% on EBITDA, narrowing both gaps by roughly 5–10pp without changing either colour.</p>
-      <p><span class="rk">Mode, had the block been current.</span> GROWTH mode. The Buy/Sell RNS quantifies no period figure, so under the numbers-light rule the last quantified reading carries forward — the FY26 full-year trading update, a full-year document. Comparator is the latest completed sub-period, H2 FY26†, never the blended full year.</p>
+      <p><span class="rk">Source.</span> <code>database.json</code> fetched from GitHub in the code container (16.5MB; <code>_meta.savedAt</code> 2026-09-28T14:22Z; slots 1–2 dated 25 Sep 2026). Saved one day before the 29 Sep Buy/Sell RNS — inside the 14-day window, and on the pre-announcement side, which is the correct comparator: the company is measured against what was expected before it spoke. Replaces the pasted 14 Aug block and the "pre-RNS" override, both retired.</p>
+      <p><span class="rk">Which forecast is FY1.</span> The block had not rolled its year-end when saved: it still reads "next year end 31/5/26", so its <code>fc</code> columns are FY26 (£58.9m / £5.9m / £4.8m — the year now reported) and FY27 sits in <code>2y fc</code> (£63.8m / £6.4m / £6.2m). Growth mode needs the year ahead, so FY27 is taken from <code>2y fc</code>. Those figures sit inside the company's August guide (£63–66m, £6.3–6.6m), confirming the block has absorbed the upgrade. Once the block rolls, FY27 moves to <code>fc</code> and this note falls away.</p>
+      <p><span class="rk">Mode.</span> GROWTH — the Buy/Sell is a full-year document; comparator is H2 FY26†, never the blended year.</p>
       <table class="ledger" style="max-width:100%; margin:10px 0;">
-        <thead><tr><th>Metric</th><th>Basis</th><th>H1 → H2 FY26† growth</th><th>Prior-year comparator</th><th>FY1 fc &amp; date</th><th>Required growth</th><th>Gap</th><th>Ranked in §2?</th></tr></thead>
+        <thead><tr><th>Metric</th><th>Basis</th><th>H1 → H2 FY26† growth</th><th>Prior-year comparator</th><th>FY1 fc &amp; date</th><th>Required</th><th>Gap</th><th>Ranked?</th></tr></thead>
         <tbody>
-          <tr><td>REVENUE</td><td>Reported</td><td>+27.5% → <strong>+26.4%</strong> (£31.1m† vs £24.6m†)</td><td>H2 FY25† £24.6m (FY25 £46.4m − H1 £21.8m, both printed)</td><td>£60.3m · 14 Aug 26 <em>(pre-RNS)</em></td><td>+2.4% on FY26 £58.9m</td><td><strong>+24.0pp</strong> (green, clips at two o'clock)</td><td>Y — ties out to Rank 4</td></tr>
-          <tr><td>EBITDA</td><td>Adjusted</td><td>+33.3% → <strong>+105.9%</strong> (£3.5m† vs £1.7m†)</td><td>H2 FY25† £1.7m (FY25 £3.5m − H1 £1.8m, both printed)</td><td>£6.0m · 14 Aug 26 <em>(pre-RNS)</em></td><td>+1.7% on FY26 £5.9m</td><td><strong>+104.2pp</strong> (green, clips)</td><td>Y — margin ranked at 3; levels from §2.0</td></tr>
-          <tr><td>PBT</td><td>Statutory</td><td>n/a</td><td>H2 FY25† £1.5m</td><td>£5.7m · 14 Aug 26 <em>(pre-RNS)</em></td><td>n/a</td><td><strong>n/a</strong> — FY26 PBT unprinted</td><td>N — this table is its only audit trail</td></tr>
+          <tr><td>REVENUE</td><td>Reported</td><td>+27.8% → <strong>+25.9%</strong> (£31,082k† vs £24,682k†)</td><td>FY25 £46,434k − H1 £21,752k (both statements)</td><td>£63.8m · Sep-26</td><td>+8.3% on £58,884k</td><td><strong>+17.6pp</strong> green</td><td>Y — ties to Rank 4</td></tr>
+          <tr><td>EBITDA</td><td>Adjusted</td><td>+35.3% → <strong>+104.8%</strong> (£3,461k† vs £1,690k†)</td><td>FY25 £3,482k − H1 £1,792k (both statements)</td><td>£6.4m · Sep-26</td><td>+8.7% on £5,886k</td><td><strong>+96.1pp</strong> green, clips</td><td>Y — margin at Rank 3</td></tr>
+          <tr><td>PBT</td><td>Statutory</td><td>+225% → <strong>+119.5%</strong> (£3.44m† vs £1.57m†)</td><td>FY25 £1,967k − H1 £0.4m (H1 narrative-rounded)</td><td>£6.2m · Sep-26</td><td>+30.8% on £4,740k</td><td><strong>+88.7pp</strong> green, clips</td><td>N — this row is its only audit trail</td></tr>
         </tbody>
       </table>
-      <p><span class="rk">Norm rule applied, and a corrupt row found.</span> Only the forecast would have come from the block; every actual and comparator above comes from the company's printed history. That discipline earns its keep here — the block's EBITDA sub-period row for FY25 reads H1 £0.8m / H2 £3.5m, but the printed H1 FY25 Adjusted EBITDA is £1.8m and £3.5m is the <em>full-year</em> figure. Taking the split from the block would have produced an H2 of £3.5m against a true £1.7m and halved the growth reading, silently. The PBT and revenue rows in the block reconcile to the record; the EBITDA row does not.</p>
-      <p><span class="rk">Reading.</span> Both computable metrics sit far above their thresholds — the second half of FY26 grew an order of magnitude faster than the forecast requires of FY27, which is the arithmetic behind the low FY27 bar rather than an independent finding. Note also that the block's own metadata is behind the record: it carries "next year end 31/5/26", a year that closed and was reported in June.</p>
-      <p><span class="rk">Refresh.</span> A snapshot dated on or after 18 Aug 2026 replaces the forecast column only; every actual and comparator above comes from the printed record and is unaffected. The pre-RNS label comes off in the same edit.</p>
+      <p><span class="rk">Arcs (C.3, growth column).</span> 17.6pp rounds to the 20pp row, LEN 58; 96.1pp and 88.7pp exceed the last row and clip at two o'clock, LEN 83. All positive: rotate −90, clockwise. No source tags — growth mode's provenance is fixed by the mode.</p>
+      <p><span class="rk">Norm rule.</span> Every actual and comparator is from the printed record. The block's sub-period rows are corrupt in two places — FY25 EBITDA split H1 £0.8m / H2 £3.5m (printed H1 £1.8m; £3.5m is the full year) and H1 FY25 PBT £0.5m (printed £0.4m) — and neither was used.</p>
+      <p><span class="rk">Reading.</span> H2 FY26 grew three to twelve times faster than FY27 requires on every line — revenue by the smallest margin. The FY27 bar is modest, and the second half already running well above it is the arithmetic case for another beat.</p>
     </div></details>
 
     <details class="sub"><summary>Trigger detail &amp; audit record</summary><div class="notes">
-      <p><span class="rk">Condition 1 — Numbers &amp; guide (fired, green-shoot mirror, Jun-26 · Aug-26).</span> Two G-column RAISEs in the window: the FY26 TU (ahead of upgraded expectations, margin +250bps) and the 18 Aug 26 award RNS, which puts a numeric FY27 range above the stated £60.3m / £6.0m consensus. Full weight — G events, not confirmation-only fires.</p>
+      <p><span class="rk">Condition 1 — Numbers &amp; guide (fired, green-shoot mirror, Jun-26 → continuing).</span> Margin expanding on a LEAD rank: audited Adjusted EBITDA margin 10.0%, +250bps, H2 FY26† 11.1%, +4.3pp. Revenue 🟢↗ for four consecutive halves. The August RAISE sits inside the window; this RNS holds the guide flat. Caveat recorded: the Rank 1 lead metric's FY26 total fell 37.6% — but its latest sub-period is a basis break and unscored, so it cannot fire deterioration.</p>
       <p><span class="rk">Condition 2 — Language (not fired).</span> The Lexicon run is positive at every print since Jun-24, but the mirror needs a rise across two consecutive prints from zero or below; Sep-25 ⚪ → Dec-25 🟢🟢🟢 → Feb-26 🟢🟢 is one rise, then a step down. No fire in either direction.</p>
-      <p><span class="rk">Condition 3 — Disclosure (fired, green-shoot mirror, Aug-26).</span> The 18 Aug 26 RNS re-quantifies Contracted Backlog at c.£115m, the green-shoot mirror of the condition that fired red on 30 Jun 26 — a dropped metric restored, and at the highest level in the record. The Jun-26 withhold is not erased: it stands as a two-document gap, and the FY26 bookings total has still never been printed. But the lamp reports the latest fire and its direction, and that fire is green.</p>
-      <p><span class="rk">Count and direction.</span> Two lamps lit, both green, on the same document — 2-of-3 convergence in the same direction, so the alert fires as a green-shoot alert. Direction turns up. Note what changed and what did not: no scored figure in the §2 grid moved except the re-quantified backlog cell; the turn is carried by a guide and a disclosure event, which is precisely the sequence this framework is built to catch ahead of the reported numbers.</p>
+      <p><span class="rk">Condition 3 — Disclosure (fired, green-shoot mirror, Aug-26 · Sep-26).</span> Both metrics withheld at the Jun-26 TU are now quantified: backlog re-quantified in August and dated to 31 July here, bookings totalled for the first time at £50.7m. Recorded against it, not firing: FY25 comparatives restated for both (bookings £82.1m → £81.3m, backlog £92.2m → £93.4m) with no explanation, and a full-year bookings total below the company's own April year-to-date figure.</p>
+      <p><span class="rk">Count and direction.</span> 2 of 3, both green — alert stands, direction up. Language stepped from 🟢🟢 to ⚪ on this RNS: one fall, not two, and not ≤ −1, so it does not fire. The current-state bar is amber by design: this document's own news is mixed-to-soft, while the lamps weigh the window.</p>
       <p><span class="rk">Audit record.</span> Appendix A Stages A–E run 8 Aug 2026 against source: eight defects found and corrected (Drift column count, Feb-23 EBITDA transcription, H1 FY23 margin comparison basis and restated value, backlog rebase-crossing delta, net-cash Buy/Sell basis, Feb-26 consensus denominator, and a "first negative-YoY backlog print" claim restated in three places). No arrow, trigger or direction changed.</p>
       <p><span class="rk">Incremental read, 18 Aug 2026.</span> New qualifying document (contract award carrying a numeric FY27 guide — qualifies on content, not title). Added: §2 Aug-26 column, §4 Drift column, §3 Text+G row. Rank 2 re-quantified c.£115m; ranks 3–5 carry no figure in this document type. Guidance figures are a guide, never an actual, so the FY27 range sits on the aggregate row as a guide note and seeds no scored cell.</p>
+      <p><span class="rk">Incremental read, 29 Sep 2026 — FY26 Final Results.</span> New Buy/Sell. Rates reconciled 4/4 (revenue +26.8%, EBITDA +69.0%, PBT +141.0%, backlog −10.6%). FY25 comparatives restated for bookings and backlog; H2 FY25† bookings, FY25 aggregates and the backlog sequential Δs re-run on the restated figures. FY26 H2 bookings flagged basis break (gross/net unstated). Exact FY25 EBITDA £3,482k replaced the rounded £3.5m (availability test), moving H2 FY25† margin 6.9% → 6.8%. Solvency grep: going-concern boilerplate only. Wedge closing: share-based charge £175k vs £884k.</p>
+      <p><span class="rk">Spec upgrade to v5.6, 29 Sep 2026 (same Buy/Sell RNS).</span> Datablock now fetched from database.json (savedAt 28 Sep) under the 14-day window, replacing the pasted block and its override. Movement row and <code>prev</code> added, anchored to the previous Buy/Sell RNS (18 Aug 2026) — a spec upgrade is not a movement, and any future rebuild on this RNS carries <code>prev</code> across untouched. ⭐ stamps extended to the bridge and current-state headers. §3 window re-based on the Buy/Sell date; guidance-passage drawer rolled forward (Sep-25 aged out; Aug-26 and Sep-26 added).</p>
     </div></details>
 
   </div></details>
@@ -783,7 +799,7 @@
         <tr><th>Date</th><th>Doc</th><th>G</th><th>Verbatim forward-guidance phrase</th><th>Context</th><th>Score</th></tr>
       </thead>
       <tbody>
-        <tr class="expander" id="t3exp"><td colspan="6">▸ Show 9 earlier prints — Aug-22 to Nov-24</td></tr>
+        <tr class="expander" id="t3exp"><td colspan="6">▸ Show 10 earlier prints — Aug-22 to Feb-25</td></tr>
         <tr class="older" data-rowtype="tu"><td>19 Aug 22</td><td class="doc"><span class="fy">FY22</span><span class="dt">TU</span></td><td class="g-flat">—</td><td class="phrase">"record sales bookings underpin the Board's confidence in the prospects for the business for the current financial year"</td><td class="trail">FY22 TU. No expectations anchor used — confidence framed off record bookings (£51.1m). Pre-cut era; the anchor habit begins later.</td><td class="score">🟢</td></tr>
         <tr class="older" data-rowtype="r"><td>12 Sep 22</td><td class="doc"><span class="fy">FY22</span><span class="dt">R</span></td><td class="g-flat">flat</td><td class="phrase">"record sales bookings underpin the Board's confidence in the prospects for the business for FY23 and beyond"</td><td class="trail">FY22 audited. Same bookings-led framing carried into FY23; no numeric FY23 guide given at this point.</td><td class="score">🟢</td></tr>
         <tr class="older" data-rowtype="h1r"><td>23 Feb 23</td><td class="doc"><span class="fy">FY23</span><span class="dt">H1 R</span></td><td class="g-flat">flat</td><td class="phrase">"remains on track to achieve FY23 results in line with market expectations"</td><td class="trail">H1 FY23. Market-expectations anchor intact; consensus footnoted at £43m revenue / £3.9m EBITDA. Ten weeks before the cut.</td><td class="score">⚪</td></tr>
@@ -793,14 +809,15 @@
         <tr data-rowtype="tu" class="shade older"><td>27 Jun 24</td><td class="doc"><span class="fy">FY24</span><span class="dt">TU</span></td><td class="g-raise">🟢 RAISE</td><td class="phrase">"Adjusted EBITDA … slightly ahead of consensus expectations"; "Net cash … materially ahead of consensus"; "maintains its revenue and profit guidance for FY25"</td><td class="trail">Sep-23 "in line" (£40.2m): <span class="miss">FY24 £38.6m — missed</span><br>FY24 TU. First RAISE since the cut. Beats on EBITDA and cash, but revenue undershot the Sep-23 "in line" guide — mixed, and the trail records it.</td><td class="score">🟢🟢</td></tr>
         <tr class="older" data-rowtype="r"><td>30 Sep 24</td><td class="doc"><span class="fy">FY24</span><span class="dt">R</span></td><td class="g-flat">flat</td><td class="phrase">"traded in line with management's expectations in the first quarter of FY25"</td><td class="trail">Jun £38.5m / £2.3m: rev <span class="met">+0.3%</span> / EBITDA <span class="met">+4.3%</span> (met)<br>FY24 audited. Q1 FY25 described against management's expectations rather than the market's — the switch is itself scored negative, capping this at flat.</td><td class="score">⚪</td></tr>
         <tr data-rowtype="agm" class="shade older"><td>20 Nov 24</td><td class="doc"><span class="fy">FY25</span><span class="dt">AGM</span></td><td class="g-raise">🟢 RAISE</td><td class="phrase">"the board now anticipates that … Group revenue for FY25 will be ahead of market expectations set at the start of the financial year. Adjusted EBITDA is expected to increase"</td><td class="trail">AGM. First AGM in the record to carry quantified guidance language; consensus stated at £35.2m revenue / £2.6m EBITDA. A disclosure expansion that did not repeat in Nov-25.</td><td class="score">🟢🟢</td></tr>
-        <tr data-rowtype="h1r" class="shade"><td>5 Feb 25</td><td class="doc"><span class="fy">FY25</span><span class="dt">H1 R</span></td><td class="g-raise">🟢 RAISE</td><td class="phrase">"we now expect the FY25 outcome to be ahead of recent upgraded current market expectations for both revenue and Adjusted EBITDA"</td><td class="trail">H1 FY25. Second consecutive raise, anchored to "recent upgraded" expectations — the bar had already been lifted once, so the beat is against a moved target.</td><td class="score">🟢🟢</td></tr>
+        <tr data-rowtype="h1r" class="shade older"><td>5 Feb 25</td><td class="doc"><span class="fy">FY25</span><span class="dt">H1 R</span></td><td class="g-raise">🟢 RAISE</td><td class="phrase">"we now expect the FY25 outcome to be ahead of recent upgraded current market expectations for both revenue and Adjusted EBITDA"</td><td class="trail">H1 FY25. Second consecutive raise, anchored to "recent upgraded" expectations — the bar had already been lifted once, so the beat is against a moved target.</td><td class="score">🟢🟢</td></tr>
         <tr data-rowtype="tu"><td>26 Jun 25</td><td class="doc"><span class="fy">FY25</span><span class="dt">TU</span></td><td class="g-raise">🟢 RAISE</td><td class="phrase">"Board now expects trading for FY26 to be ahead of current market expectations"</td><td class="trail">Nov-24 "ahead of £35.2m / £2.6m": rev <span class="met">+31.8%</span> / EBITDA <span class="met">+34.6%</span> (beat)<br>Feb-25 "ahead of £38.0m / £2.8m": rev <span class="met">+22.1%</span> / EBITDA <span class="met">+25.0%</span> (beat)<br>Jun-25 £46.4m / £3.4m: rev <span class="met">+0%</span> / EBITDA <span class="met">+2.9%</span> (met)<br>FY25 TU. Third raise. FY25 delivered £46.4m / £3.4m; bookings c.£82.1m and backlog c.£92.0m both quantified here (audited at £82.1m / £92.2m in Sep-25, which govern) — the cadence this year's equivalent breaks.</td><td class="score">🟢</td></tr>
         <tr data-rowtype="r"><td>24 Sep 25</td><td class="doc"><span class="fy">FY25</span><span class="dt">R</span></td><td class="g-flat">flat</td><td class="phrase">"traded in line with management's expectations in the first quarter of FY26 … underpins management's confidence in delivering consensus market expectations for FY26"</td><td class="trail">FY25 audited. Reverts to management's-expectations wording for Q1 FY26; FY26 consensus stated at £50.1m / £3.9m.</td><td class="score">⚪</td></tr>
         <tr data-rowtype="tu" class="shade"><td>10 Dec 25</td><td class="doc"><span class="fy">FY26</span><span class="dt">H1 TU</span></td><td class="g-raise">🟢 RAISE</td><td class="phrase">"Board now expects trading for FY26 to be significantly ahead of current market expectations, with revenue expected to be c.10% higher"</td><td class="trail">H1 TU. Strongest language in the record; revenue guided c.10% above £50.1m. Bookings described only as softer — no figure, the first hedge.</td><td class="score">🟢🟢🟢</td></tr>
         <tr data-rowtype="h1r"><td>26 Feb 26</td><td class="doc"><span class="fy">FY26</span><span class="dt">H1 R</span></td><td class="g-raise">🟢 RAISE</td><td class="phrase">"trading ahead of recently upgraded expectations"; "Board anticipates that Adjusted EBITDA will be materially ahead of current market expectations"</td><td class="trail">H1 FY26. EBITDA raise printed beside bookings −68% and backlog −7.9%; consensus EBITDA lifted to £4.8m. Guide and leading metrics point opposite ways.</td><td class="score">🟢🟢</td></tr>
         <tr data-rowtype="awd" class="awrow"><td>15 Apr 26</td><td class="doc"><span class="fy">FY26</span><span class="dt">AWD</span></td><td class="g-flat">flat</td><td class="phrase">"year-to-date Sales Bookings have increased materially to £54 million, including approximately £41 million of new Sales Bookings secured so far in the second half … supports current expectations for FY26 and enhances revenue visibility for FY27"</td><td class="trail">Contract-award RNS, noise-class. First quantification of bookings in that document type; the guide is reiterated, not moved, so no G event. <strong>Implied book-to-bill†:</strong> H2-to-date £41m ÷ implied H2 revenue £31.1m = <strong>≥1.32x</strong>, against 0.48x at H1 FY26 and 1.63x in H2 FY25; full-year £54m ÷ £58.9m = ≥0.92x. Both are floors — post-15-Apr bookings unprinted. Annotation only, never scored.</td><td class="score">🟢</td></tr>
         <tr data-rowtype="tu" class="shade"><td>30 Jun 26</td><td class="doc"><span class="fy">FY26</span><span class="dt">TU</span></td><td class="g-raise">🟢 RAISE</td><td class="phrase">"FY26 expected to be ahead of recently upgraded market expectations"; margin "delivered ahead of previously indicated guidance"</td><td class="trail">Dec-25 "c.10% above £50.1m" (≈£55.1m): rev <span class="met">+6.9%</span> (beat)<br>Feb-26 "materially ahead" EBITDA: £5.9m vs £4.8m consensus at that date <span class="met">(+23%, beat)</span><br>Buy/Sell RNS. Raise delivered while both order metrics go unquantified — the guide and the disclosure disagree.</td><td class="score">🟢🟢</td></tr>
-        <tr data-rowtype="ca"><td>⭐ 18 Aug 26</td><td class="doc"><span class="fy">FY27</span><span class="dt">CA</span></td><td class="g-raise">🟢 RAISE</td><td class="phrase">"now expects revenue for FY27 to be in the range of £63 million to £66 million …… ahead of current market expectations"</td><td class="trail">Contract award carrying a numeric FY27 guide, so it qualifies on content. Prior guide was consensus £60.3m / £6.0m; the new range lifts revenue +4.5% to +9.5% and EBITDA to £6.3–6.6m. Second upgrade of 2026. Backlog re-quantified at c.£115m after two documents of withhold — the metric returns at a record level.</td><td class="score">🟢🟢</td></tr>
+        <tr data-rowtype="ca"><td>18 Aug 26</td><td class="doc"><span class="fy">FY27</span><span class="dt">CA</span></td><td class="g-raise">🟢 RAISE</td><td class="phrase">"now expects revenue for FY27 to be in the range of £63 million to £66 million …… ahead of current market expectations"</td><td class="trail">Contract award carrying a numeric FY27 guide, so it qualifies on content. Prior guide was consensus £60.3m / £6.0m; the new range lifts revenue +4.5% to +9.5% and EBITDA to £6.3–6.6m. Second upgrade of 2026. Backlog re-quantified at c.£115m after two documents of withhold — the metric returns at a record level.</td><td class="score">🟢🟢</td></tr>
+        <tr data-rowtype="r" class="shade"><td>⭐ 29 Sep 26</td><td class="doc"><span class="fy">FY26</span><span class="dt">FY R</span></td><td class="g-flat">flat</td><td class="phrase">"expects to deliver FY27 revenue of between £63m and £66m and Adjusted EBITDA of between £6.3m and £6.6m"</td><td class="trail">August range reiterated, not moved — no G event. No market-expectations anchor for FY27 anywhere in the document; the numeric range carries it. Named headwind: Health revenue "declined faster than expected" and is guided lower through FY27, already inside the range. New Prime Minister flagged as a procurement-timing risk. Positive colour: H1 FY27 expected to be the strongest bookings half in the record. Capped at flat beside the Health headwind; a two-notch step down from August.</td><td class="score">⚪</td></tr>
       </tbody>
     </table>
   </div>
@@ -810,20 +827,22 @@
       <p>The guide-versus-outturn trail (now carried in the Context column) resolves to small-to-moderate beats throughout the post-FY23 period, none near 0%, none large-miss-then-beat: a conservative/reliable-to-mildly-sandbagging guider since the reset, not a kitchen-sinker. The lone FY23 miss was a disclosed in-quarter operational surprise (client rephasing), not a pattern — so the serial RAISE run carries little discount.</p>
     </div></details>
     <details class="sub"><summary>Guidance passages — fuller verbatim, trailing 12 months</summary><div class="notes">
+      <p><span class="rk">Final Results · 29 Sep 2026 · Current trading and outlook.</span> "FY27 is showing strong performance and growth to date and H1 FY27 is expected to be Made Tech's strongest half-year bookings performance. Following the Award, in August, the Board upgraded FY27 guidance and expects to deliver FY27 revenue of between £63m and £66m and Adjusted EBITDA of between £6.3m and £6.6m. These expectations incorporate a materially lower contribution from Health &amp; Life Sciences." <em>Editorial note: no reference to market expectations for FY27 appears anywhere in the document; the numeric range carries the anchor. Health is separately described as having "declined faster than expected", and the change of Prime Minister is named as a procurement-timing risk.</em></p>
+      <p><span class="rk">Contract award &amp; guidance upgrade · 18 Aug 2026.</span> "Revenue from the Award is expected to commence in FY27, with a more significant contribution expected in FY28. As a result, the Board now expects revenue for FY27 to be in the range of £63 million to £66 million and adjusted EBITDA for FY27 to be in the range of £6.3 million to £6.6 million, ahead of current market expectations." Footnoted consensus prior: £60.3m revenue, £6.0m adjusted EBITDA.</p>
       <p><span class="rk">FY26 Full Year Trading Update · 30 Jun 2026 · Outlook.</span> "FY26 expected to be ahead of recently upgraded market expectations", with Adjusted EBITDA margin "delivered ahead of previously indicated guidance" at c.10.0%. Revenue c.£58.9m (+27%), Adjusted EBITDA c.£5.9m (+69%), net cash £14.5m against consensus of £57.5m / £5.6m / £13.5m. Sales Bookings referenced as "momentum" and backlog as "a healthy Contracted Backlog" — <em>editorial note: no figure for either appears anywhere in the document, on a re-read of the full text rather than a keyword search.</em></p>
       <p><span class="rk">Contract award · 15 Apr 2026.</span> "Following this contract award, the Group's year-to-date Sales Bookings have increased materially to £54 million, including approximately £41 million of new Sales Bookings secured so far in the second half of the current financial year"; the uptick "supports current expectations for FY26 and enhances revenue visibility for FY27". Guide reiterated, not moved.</p>
       <p><span class="rk">Interim Results · 26 Feb 2026 · Outlook.</span> Trading "ahead of recently upgraded expectations"; the Board "anticipates that Adjusted EBITDA will be materially ahead of current market expectations" (consensus EBITDA £4.8m at that date). Bookings and backlog quantified — gross bookings £13.4m, backlog £74.4m — with the fall attributed to the timing of large contract awards in the prior year.</p>
       <p><span class="rk">Trading Statement · 10 Dec 2025.</span> "Board now expects trading for FY26 to be significantly ahead of current market expectations, with revenue expected to be c.10% higher" than the £50.1m consensus. Bookings described as softer without a figure — the first hedge in the run.</p>
-      <p><span class="rk">Final Results · 24 Sep 2025 · Current trading.</span> Traded "in line with management's expectations in the first quarter of FY26", which "underpins management's confidence in delivering consensus market expectations for FY26". The market→management's switch is the scored feature, not the in-line reading.</p>
+      
     </div></details>
   </div></details>
 
   <!-- ============ §4 DRIFT ============ -->
-  <h2 class="sec"><span class="n">§4</span> &nbsp;Drift — Disclosure Matrix <span class="subtle" style="text-transform:none;letter-spacing:0;font-weight:400;">· 16 qualifying documents = 16 columns · +1 annotation RNS (blue, AWD)</span></h2>
+  <h2 class="sec"><span class="n">§4</span> &nbsp;Drift — Disclosure Matrix <span class="subtle" style="text-transform:none;letter-spacing:0;font-weight:400;">· 17 qualifying documents = 17 columns · +1 annotation RNS (blue, AWD)</span></h2>
   <div class="driftwrap">
     <table id="drift">
       <colgroup>
-        <col class="lab"><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col class="aw"><col>
+        <col class="lab"><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col class="aw"><col><col>
       </colgroup>
       <thead>
         <tr>
@@ -844,7 +863,8 @@
           <th data-k="H1R">Feb 26<span class="dt">FY26</span><span class="key">H1R</span></th>
           <th data-k="AWD" class="aw">Apr 26<span class="dt">FY26</span><span class="key">AWD</span></th>
           <th data-k="FYTU">Jun 26<span class="dt">FY26</span><span class="key">FYTU</span></th>
-          <th data-k="CA">⭐ Aug 26<span class="dt">FY27</span><span class="key">CA</span></th>
+          <th data-k="CA">Aug 26<span class="dt">FY27</span><span class="key">CA</span></th>
+          <th data-k="FYR">⭐ Sep 26<span class="dt">FY26</span><span class="key">FYR</span></th>
         </tr>
       </thead>
       <tbody>
@@ -865,7 +885,7 @@
           <td data-k="H1TU"><span class="cq">🟡</span><span class="v">"softer"</span></td>
           <td data-k="H1R"><span class="cok">✅</span><span class="v">13.4</span></td>
           <td data-k="AWD" class="aw"><span class="cok">✅</span><span class="v">54 ytd</span></td>
-          <td data-k="FYTU"><span class="cno">❌</span></td><td data-k="CA"><span class="cqual">🟡</span></td>
+          <td data-k="FYTU"><span class="cno">❌</span></td><td data-k="CA"><span class="cqual">🟡</span></td><td data-k="FYR"><span class="cok">✅</span><span class="v">50.7</span></td>
         </tr>
         <tr>
           <td class="mlab">Contracted Backlog</td>
@@ -884,7 +904,7 @@
           <td data-k="H1TU"><span class="cok">✅</span><span class="v">74.0</span></td>
           <td data-k="H1R"><span class="cok">✅</span><span class="v">74.4</span></td>
           <td data-k="AWD" class="aw"><span class="cna">—</span></td>
-          <td data-k="FYTU"><span class="cno">❌</span></td><td data-k="CA"><span class="cok">✅</span><span class="v">c.115</span></td>
+          <td data-k="FYTU"><span class="cno">❌</span></td><td data-k="CA"><span class="cok">✅</span><span class="v">c.115</span></td><td data-k="FYR"><span class="cok">✅</span><span class="v">83.5</span></td>
         </tr>
         <tr>
           <td class="mlab">Adj EBITDA</td>
@@ -903,7 +923,28 @@
           <td data-k="H1TU"><span class="cok">✅</span><span class="v">2.4</span></td>
           <td data-k="H1R"><span class="cok">✅</span><span class="v">2.4</span></td>
           <td data-k="AWD" class="aw"><span class="cna">—</span></td>
-          <td data-k="FYTU"><span class="cok">✅</span><span class="v">5.9</span></td><td data-k="CA"><span class="cna">—</span></td>
+          <td data-k="FYTU"><span class="cok">✅</span><span class="v">5.9</span></td><td data-k="CA"><span class="cna">—</span></td><td data-k="FYR"><span class="cok">✅</span><span class="v">5.9</span></td>
+        </tr>
+        <tr>
+          <td class="lab">Gross margin <span class="subtle">(WATCH)</span></td>
+          <td data-k="FYTU"><span class="cna">—</span></td>
+          <td data-k="FYR"><span class="cok">✅</span></td>
+          <td data-k="H1R"><span class="cok">✅</span><span class="v">32.9</span></td>
+          <td data-k="FYTU"><span class="cna">—</span></td>
+          <td data-k="FYR"><span class="cok">✅</span><span class="v">35.8</span></td>
+          <td data-k="H1R"><span class="cok">✅</span><span class="v">37.1</span></td>
+          <td data-k="FYTU"><span class="cna">—</span></td>
+          <td data-k="FYR"><span class="cok">✅</span><span class="v">36.3</span></td>
+          <td data-k="AGM"><span class="cna">—</span></td>
+          <td data-k="H1R"><span class="cok">✅</span><span class="v">35.8</span></td>
+          <td data-k="FYTU"><span class="cna">—</span></td>
+          <td data-k="FYR"><span class="cok">✅</span><span class="v">32.0</span></td>
+          <td data-k="H1TU"><span class="cna">—</span></td>
+          <td data-k="H1R"><span class="cok">✅</span><span class="v">31.2</span></td>
+          <td data-k="AWD" class="aw"><span class="cna">—</span></td>
+          <td data-k="FYTU"><span class="cna">—</span></td>
+          <td data-k="CA"><span class="cna">—</span></td>
+          <td data-k="FYR"><span class="cok">✅</span><span class="v">30.4</span></td>
         </tr>
         <tr>
           <td class="mlab">Revenue</td>
@@ -922,7 +963,7 @@
           <td data-k="H1TU"><span class="cok">✅</span><span class="v">c.27.7</span></td>
           <td data-k="H1R"><span class="cok">✅</span><span class="v">27.8</span></td>
           <td data-k="AWD" class="aw"><span class="cna">—</span></td>
-          <td data-k="FYTU"><span class="cok">✅</span><span class="v">58.9</span></td><td data-k="CA"><span class="cna">—</span></td>
+          <td data-k="FYTU"><span class="cok">✅</span><span class="v">58.9</span></td><td data-k="CA"><span class="cna">—</span></td><td data-k="FYR"><span class="cok">✅</span><span class="v">58.9</span></td>
         </tr>
         <tr>
           <td class="mlab">Net Cash</td>
@@ -941,7 +982,7 @@
           <td data-k="H1TU"><span class="cok">✅</span><span class="v">11.9</span></td>
           <td data-k="H1R"><span class="cok">✅</span><span class="v">11.9</span></td>
           <td data-k="AWD" class="aw"><span class="cna">—</span></td>
-          <td data-k="FYTU"><span class="cok">✅</span><span class="v">14.5</span></td><td data-k="CA"><span class="cna">—</span></td>
+          <td data-k="FYTU"><span class="cok">✅</span><span class="v">14.5</span></td><td data-k="CA"><span class="cna">—</span></td><td data-k="FYR"><span class="cok">✅</span><span class="v">14.5</span></td>
         </tr>
       </tbody>
     </table>
@@ -949,6 +990,8 @@
   <div class="footnote">Key: <span class="cok">✅</span> quantified · <span class="cq">🟡</span> qualitative-only · <span class="cno">❌</span> verified blank against established cadence · <span class="cna">—</span> structurally outside that doc-type's cadence. Blue AWD column = contract-award RNS (noise-class, operator-added; annotation only, no cadence baseline). Click any header to highlight every column of that period-type.</div>
   <details class="top1"><summary>§4 workings — notes</summary><div class="notes">
     <details class="sub"><summary>Notes — §4</summary><div class="notes">
+      <p><span class="rk">Gross margin (WATCH row, unscored).</span> Never printed in a trading update — a verified structural absence, so TU cells are —, never ❌. The run reads 38.4 (FY22, per the audited FY23 comparative superseding Sep-22's own 43% print) → 35.8 → 36.3 (restated 34.2 in Sep-25) → 32.0 → 30.4: five points of decline in three years, and the H1 FY26 print (31.2 vs H2 FY25) was framed as improvement while the FY-on-FY line kept falling. The 160bps FY26 fall is competitive pricing plus specialist hires by the company's own account. This is the WATCH metric most likely to graduate: EBITDA margin's entire gain is overheads, and overheads restraint is finite.</p>
+      <p><span class="rk">First note (Sep-26, rightmost).</span> Every ranked metric quantified; the two Jun-26 withholds are both closed — bookings totalled for the first time (£50.7m), backlog printed at FY-end (£83.5m) and dated at 31 July (c.£115m). New disclosure blemish, not a withhold: FY25 comparatives for both order metrics restated without a reconciliation, and the full-year bookings total contradicts the April year-to-date. Health revenue remains unquantified — never an established habit, so no ❌.</p>
       <p><span class="rk">First note (Jun-26, rightmost).</span> Sales Bookings and Contracted Backlog both ❌ — no FY26 totals printed. Annotation (15 Apr 26 contract RNS, noise doc): YTD bookings quantified at £54m (c.£41m H2-to-date), a first-ever quantification in that doc type — so bookings were disclosed mid-cycle at a recovered level 2.5 months before the TU, discounting the withhold's "dark as the signal turned" read. Backlog carried no such discount until 18 Aug 26, when it was re-quantified at c.£115m — a dropped metric restored, and the green-shoot mirror of the Jun-26 fire. Bookings remain un-totalled for FY26, described only qualitatively in the new document.</p>
       <p><span class="rk">Cadence expansion (Nov-24).</span> The AGM Statement was the first AGM RNS to carry quantified guidance language — a disclosure expansion vs the pure-procedure AGMs of Oct-22, Oct-23, Nov-25. It did not repeat at Nov-25 (procedural only), so it was event-driven, not a settled new habit; Nov-25's silence is therefore no ❌.</p>
     </div></details>
@@ -1011,7 +1054,7 @@
   if(exp&&t3t){
     exp.addEventListener('click',function(){
       var open=t3t.classList.toggle('showall');
-      exp.querySelector('td').textContent = open ? '▾ Hide 9 earlier prints — Aug-22 to Nov-24' : '▸ Show 9 earlier prints — Aug-22 to Nov-24';
+      exp.querySelector('td').textContent = open ? '▾ Hide 10 earlier prints — Aug-22 to Feb-25' : '▸ Show 10 earlier prints — Aug-22 to Feb-25';
     });
   }
   // mirror the drift-entry JSON into the card-strip drawer
@@ -1036,7 +1079,7 @@
         if(hidden && !t3.classList.contains('showall')){
           t3.classList.add('showall');
           var e2=document.getElementById('t3exp');
-          if(e2) e2.querySelector('td').textContent='▾ Hide 9 earlier prints — Aug-22 to Nov-24';
+          if(e2) e2.querySelector('td').textContent='▾ Hide 10 earlier prints — Aug-22 to Feb-25';
         }
       });
     });
@@ -1048,17 +1091,17 @@
  "company": "Made Tech Group plc",
  "kind": "ticker",
  "direction": "up",
- "headline": "FY27 guidance raised above consensus on a record £40m award, and the withheld backlog returns at c.£115m — the disclosure gap closed upward.",
- "trigger": "Numbers & guide and Disclosure both fired green on the 18 Aug 26 award RNS: a numeric FY27 guide above consensus, and Contracted Backlog re-quantified at c.£115m after two documents withheld.",
+ "headline": "FY26 audited on plan, FY27 guide held and backlog at a record £115m — but full-year bookings land £3.3m below April's own year-to-date claim.",
+ "trigger": "Numbers & guide green (audited margin +250bps, H2 exit 11.2%, guide held) and Disclosure green (both Jun-26 withholds now quantified). Language stepped down to flat, not fired.",
  "alert": true,
  "fired": 2,
  "fired_of": 3,
  "lights": "g-g",
- "rns_type": "Contract Award & FY27 Guidance Upgrade",
- "rns_date": "2026-08-18",
- "build_date": "2026-08-18",
- "spec_version": "5.3e",
- "next_test": "Sep 2026 — FY26 final results must print the bookings total and confirm the backlog basis, with promised further colour on the FY27 outlook.",
+ "rns_type": "FY Final Results",
+ "rns_date": "2026-09-29",
+ "build_date": "2026-09-29",
+ "spec_version": "5.6",
+ "next_test": "Dec 2026 — the H1 FY27 update must quantify the strongest-ever bookings half and hold backlog near £115m through the change of government.",
  "url": "MTEC_drift_tracker.html",
  "grid": {
   "labels": [
@@ -1077,35 +1120,41 @@
    "H2 25",
    "H1 26",
    "H2 26",
-   "Aug 26"
+   "Sep 26"
   ],
   "rows": [
-   "ggrrggrxa",
-   "ggrgggrxg",
+   "ggrrggr-a",
+   "ggrgggrgg",
    "rrgaaaag-",
    "ggrrgggg-",
    "rrrrgggg-"
   ],
-  "note": "Half grain incl. derived H2 (FY − H1), right-anchored on the 18 Aug 26 award RNS; R1 Bookings, R2 Backlog, R3 Adj EBITDA margin, R4 Revenue, R5 Net Cash."
+  "note": "Half grain incl. derived H2; rightmost = FY R 29 Sep 26 current-trading column (backlog at 31 Jul). R1 H2 FY26 basis break, unscored."
+ },
+ "prev": {
+  "direction": "up",
+  "fired": 2,
+  "lights": "g-g",
+  "rns_date": "2026-08-18",
+  "rns_type": "Contract Award & FY27 Guidance Upgrade"
  },
  "trend": {
   "mode": "growth",
-  "cells": "gg-",
+  "cells": "ggg",
   "rows": [
    {
     "m": "REV",
-    "gap": 24.0
+    "gap": 17.6
    },
    {
     "m": "EBITDA",
-    "gap": 104.2
+    "gap": 96.1
    },
    {
     "m": "PBT",
-    "gap": null
+    "gap": 88.7
    }
-  ],
-  "note": "pre-RNS block, 14 Aug 26"
+  ]
  }
 }</script>
 </body>
