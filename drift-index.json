@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-25",
+  "updated": "2026-09-29",
   "tickers": [
     {
       "ticker": "STAF",
@@ -2119,17 +2119,17 @@
       "company": "Made Tech Group plc",
       "kind": "ticker",
       "direction": "up",
-      "headline": "FY27 guidance raised above consensus on a record £40m award, and the withheld backlog returns at c.£115m — the disclosure gap closed upward.",
-      "trigger": "Numbers & guide and Disclosure both fired green on the 18 Aug 26 award RNS: a numeric FY27 guide above consensus, and Contracted Backlog re-quantified at c.£115m after two documents withheld.",
+      "headline": "FY26 audited on plan, FY27 guide held and backlog at a record £115m — but full-year bookings land £3.3m below April's own year-to-date claim.",
+      "trigger": "Numbers & guide green (audited margin +250bps, H2 exit 11.2%, guide held) and Disclosure green (both Jun-26 withholds now quantified). Language stepped down to flat, not fired.",
       "alert": true,
       "fired": 2,
       "fired_of": 3,
       "lights": "g-g",
-      "rns_type": "Contract Award & FY27 Guidance Upgrade",
-      "rns_date": "2026-08-18",
-      "build_date": "2026-08-18",
-      "spec_version": "5.3e",
-      "next_test": "Sep 2026 — FY26 final results must print the bookings total and confirm the backlog basis, with promised further colour on the FY27 outlook.",
+      "rns_type": "FY Final Results",
+      "rns_date": "2026-09-29",
+      "build_date": "2026-09-29",
+      "spec_version": "5.6",
+      "next_test": "Dec 2026 — the H1 FY27 update must quantify the strongest-ever bookings half and hold backlog near £115m through the change of government.",
       "url": "MTEC_drift_tracker.html",
       "grid": {
         "labels": [
@@ -2148,35 +2148,41 @@
           "H2 25",
           "H1 26",
           "H2 26",
-          "Aug 26"
+          "Sep 26"
         ],
         "rows": [
-          "ggrrggrxa",
-          "ggrgggrxg",
+          "ggrrggr-a",
+          "ggrgggrgg",
           "rrgaaaag-",
           "ggrrgggg-",
           "rrrrgggg-"
         ],
-        "note": "Half grain incl. derived H2 (FY − H1), right-anchored on the 18 Aug 26 award RNS; R1 Bookings, R2 Backlog, R3 Adj EBITDA margin, R4 Revenue, R5 Net Cash."
+        "note": "Half grain incl. derived H2; rightmost = FY R 29 Sep 26 current-trading column (backlog at 31 Jul). R1 H2 FY26 basis break, unscored."
+      },
+      "prev": {
+        "direction": "up",
+        "fired": 2,
+        "lights": "g-g",
+        "rns_date": "2026-08-18",
+        "rns_type": "Contract Award & FY27 Guidance Upgrade"
       },
       "trend": {
         "mode": "growth",
-        "cells": "gg-",
+        "cells": "ggg",
         "rows": [
           {
             "m": "REV",
-            "gap": 24
+            "gap": 17.6
           },
           {
             "m": "EBITDA",
-            "gap": 104.2
+            "gap": 96.1
           },
           {
             "m": "PBT",
-            "gap": null
+            "gap": 88.7
           }
-        ],
-        "note": "pre-RNS block, 14 Aug 26"
+        ]
       }
     },
     {
