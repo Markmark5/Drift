@@ -90,6 +90,18 @@ details.guide>summary .em{font-size:22px;margin-right:6px}
 .cbul{margin:0;padding-left:18px;font-size:13px}
 .cbul li{margin-bottom:6px}
 
+/* movement row — 6.3c */
+.mvrow{margin-top:9px;border:1px dashed #57544c;border-radius:9px;padding:8px 12px;
+ display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.mvlab{font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#8d8981;
+ font-weight:700;flex:none}
+.mvval{font-size:13px;font-weight:700;color:#fff}
+.mvval .was{color:#8d8981;font-weight:600}
+.mvarw{font-weight:700}
+.mvarw.up{color:#21d05e}
+.mvarw.dn{color:#ff6b63}
+.mvsince{font-size:10px;color:#8d8981;margin-left:auto;flex:none}
+
 /* ==== TREND WATCH PANEL — LOCKED v5.3 ==== */
 .tw{flex:1; border-left:1px dashed #57544c; padding-left:16px; min-width:0}
 .tw .plab{font-size:9.5px; letter-spacing:.14em; text-transform:uppercase;
@@ -161,9 +173,9 @@ details p .rk{font-weight:700}
 .bridge .ctr.r{color:var(--red)} .bridge .ctr.a{color:var(--amber)} .bridge .ctr.g{color:var(--green)}
 .bridge .cap{background:#fafafa;padding:10px 12px;font-size:11px;color:var(--mute);
  line-height:1.6;border-top:1px solid var(--line)}
-.statecard{border-radius:10px;overflow:hidden;display:flex;flex-direction:column;border:2px solid var(--red)}
-.statebody{flex:1;padding:14px 16px;background:#fdecea}
-.statebody .lead{font-weight:700;color:var(--red);margin:0 0 8px;font-size:13px}
+.statecard{border-radius:10px;overflow:hidden;display:flex;flex-direction:column;border:2px solid var(--amber)}
+.statebody{flex:1;padding:14px 16px;background:#fdf4e3}
+.statebody .lead{font-weight:700;color:var(--amber);margin:0 0 8px;font-size:13px}
 .statebody ul{margin:0;padding-left:18px;font-size:13px;line-height:1.5}
 .statebody li{margin-bottom:4px}
 
@@ -216,43 +228,43 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:6px;padd
 <body>
 
 <h1>SNX · Synectics plc — Longitudinal Drift Tracker</h1>
-<p class="sub">Spec v5.3e · Buy/Sell RNS: <strong>⭐ 18 Aug 2026 · H1 FY26 Results</strong> · FY end 30 November · Router: <strong>H-reporter</strong> · 19 qualifying documents · 8 period columns</p>
+<p class="sub">Spec v5.5 · Buy/Sell RNS: <strong>⭐ 6 Oct 2026 · FY26 Trading Update</strong> · FY end 30 November · Router: <strong>H-reporter</strong> · 19 qualifying documents · 8 period columns · latest input 3 Sep 2026 (contract award — noise, addendum only)</p>
 
 <!-- ============ VERDICT CARD ============ -->
-<div class="card down">
+<div class="card watch">
  <div class="rail">
   <div class="badge">
    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
-    stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg>
+    stroke-linecap="round" stroke-linejoin="round"><line x1="2" y1="12" x2="22" y2="12"/></svg>
   </div>
-  <div class="raillab">Turning down</div>
+  <div class="raillab">Stable — watch</div>
   <div class="railgap"></div>
   <div class="railtkr">SNX</div>
   <div class="railco">Synectics plc</div>
   <div class="railgap"></div>
  </div>
  <div class="cbody">
-  <h1 class="chead">Second guide cut in six months: FY26 EBITDA floored at £3.7m. H1 revenue −37%, margin 4.5%, first cash outflow half.</h1>
+  <h1 class="chead">Guide raised to the top of the range: FY26 EBITDA £4.1m, revenue in line. First non-cut in three, but Energy slips to FY27.</h1>
 
   <div class="pills">
-   <span class="pill">H1 FY26 Results · 18 Aug 2026</span>
+   <span class="pill">Trading Update · 6 Oct 2026</span>
    <span class="pill">FY-end 30 Nov</span>
    <span class="dot">·</span>
-   <span class="pill">B/S: net cash, cash burn</span>
+   <span class="pill">B/S: Two Tier-2</span>
   </div>
 
   <div class="lights">
-   <div class="lamp">
-    <div class="ldate">Mar-26 · Aug-26</div>
-    <div class="bulb b-r"></div>
+   <div class="lamp amb">
+    <div class="ldate">Oct-26</div>
+    <div class="bulb b-a"></div>
     <div class="lname">Numbers &amp; guide</div>
-    <div class="lreason">Second CUT: range floor £3.7m under a £4.1m point guide</div>
+    <div class="lreason">Raise to top of twice-cut range equals consensus; H1 actuals still red</div>
    </div>
-   <div class="lamp">
-    <div class="ldate">May-26 · Aug-26</div>
-    <div class="bulb b-r"></div>
+   <div class="lamp amb">
+    <div class="ldate">Oct-26</div>
+    <div class="bulb b-a"></div>
     <div class="lname">Language</div>
-    <div class="lreason">Two consecutive prints at −2; H2-weighting now its third mention</div>
+    <div class="lreason">−2, −2, then +1: one rise, the mirror needs two</div>
    </div>
    <div class="lamp">
     <div class="ldate">Aug-26</div>
@@ -260,7 +272,7 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:6px;padd
     <div class="lname">Disclosure</div>
     <div class="lreason">Order book re-quantified after one withhold; energy split newly shown</div>
    </div>
-   <div class="tally"><b>3/3</b><span>FIRED</span></div>
+   <div class="tally"><b>1/3</b><span>FIRED</span></div>
 
    <div class="bstrip" style="flex-basis:100%">
     <div class="bsweep">
@@ -269,7 +281,7 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:6px;padd
       <div class="s">Sweep sits outside the 2-of-3 count</div></div>
     </div>
     <div class="tw">
-     <div class="plab">Trend Watch · H1% vs 3yr% · fc Aug-26 · pre-RNS</div>
+     <div class="plab">TREND WATCH · H1% VS 3YR% · FC OCT-26</div>
      <div class="dset">
       <div class="dcell"><div class="dnm">REVENUE</div>
        <svg width="50" height="50" viewBox="0 0 42 42">
@@ -278,7 +290,7 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:6px;padd
          stroke-dasharray="62 100" transform="rotate(-313 21 21)" stroke-linecap="round"/>
         <line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/></svg>
        <div class="dfig" style="color:#ff6b63">-12.1pp</div>
-       <div class="dtrend">35.8 vs 47.9</div><div class="dfc"></div></div>
+       <div class="dtrend">35.8 vs 47.9</div><div class="dfc">at H1 R</div></div>
       <div class="dcell"><div class="dnm">EBITDA</div>
        <svg width="50" height="50" viewBox="0 0 42 42">
         <circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/>
@@ -286,7 +298,7 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:6px;padd
          stroke-dasharray="75 100" transform="rotate(-360 21 21)" stroke-linecap="round"/>
         <line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/></svg>
        <div class="dfig" style="color:#ff6b63">-18.9pp</div>
-       <div class="dtrend">24.4 vs 43.3</div><div class="dfc"></div></div>
+       <div class="dtrend">24.4 vs 43.3</div><div class="dfc">at H1 R</div></div>
       <div class="dcell"><div class="dnm">PBT</div>
        <svg width="50" height="50" viewBox="0 0 42 42">
         <circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/>
@@ -294,9 +306,15 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:6px;padd
          stroke-dasharray="83 100" transform="rotate(-389 21 21)" stroke-linecap="round"/>
         <line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/></svg>
        <div class="dfig" style="color:#ff6b63">-46.3pp</div>
-       <div class="dtrend">-7.0 vs 39.3</div><div class="dfc"></div></div>
+       <div class="dtrend">-7.0 vs 39.3</div><div class="dfc">at H1 R</div></div>
      </div>
     </div>
+   </div>
+   <div class="mvrow" style="flex-basis:100%">
+    <span class="mvlab">Since last RNS</span>
+    <span class="mvval"><span class="was">Turning down · 3/3</span>
+     <span class="mvarw up">→</span> Stable — watch · 1/3</span>
+    <span class="mvsince">measured from H1 Results · 18 Aug 2026</span>
    </div>
   </div>
 
@@ -318,20 +336,20 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:6px;padd
   </details>
 
   <div class="boxes">
-   <div class="box"><div class="lb">Current state</div><div class="hl2">Guide floored</div>
-    <p>FY26 EBITDA now "£3.7m to market expectations". H1 delivered £1.0m, so H2 must find £2.7m against £4.3m last year.</p></div>
+   <div class="box"><div class="lb">Current state</div><div class="hl2">£4.1m</div>
+    <p>FY26 EBITDA at the top of the £3.7m–£4.1m range, matching consensus. Revenue in line at £62.0m, which needs a record second half.</p></div>
    <div class="box"><div class="lb">Warning you get</div><div class="hl2">12 months</div>
-    <p>Order book turned down May-25; revenue followed at H2 FY25. It has since fallen 25% year-on-year and is now flat at £26.4m.</p></div>
-   <div class="box"><div class="lb">Argues against</div><div class="hl2">Margin and Ocular</div>
-    <p>Gross margin jumped seven points to 48%, Ocular grew EBITDA on lower revenue, and post-period energy intake already beats all of H1.</p></div>
+    <p>Order book turned down May-25; revenue followed at H2 FY25. Last print £26.4m, flat. This update gives no order book at all.</p></div>
+   <div class="box"><div class="lb">Argues against</div><div class="hl2">A hold, not a beat</div>
+    <p>£4.1m is where forecasts already sat. Nothing is quantified, Energy has slipped a year, and FY27 is unguided.</p></div>
    <div class="box"><div class="lb">Next test</div><div class="hl2">Dec 2026</div>
-    <p>FY trading update. The tell: whether "£3.7m to market expectations" becomes "£3.7m", and whether energy orders converted.</p></div>
+    <p>FY trading update: the order book figure against £26.5m, cash against £14.1m, and whether an FY27 guide appears or is deferred again.</p></div>
   </div>
 
   <ul class="cbul">
-   <li><strong>The precedent this follows:</strong> at the May-25 AGM the order book fell first and everything else was still green; twelve months later the guide was cut. That same sequence has now run twice, and the second cut arrived without a new soft signal preceding it — the book is flat, not falling.</li>
-   <li><strong>Consensus revenue is unreachable on the company's own arithmetic:</strong> £62.0m needs £39.8m in H2, +22% on H2 FY25 and the largest half ever printed. The RNS guides EBITDA only and stays silent on revenue.</li>
-   <li><strong>What flips it:</strong> a December update naming converted energy orders and holding £4.1m breaks the read; one that drops to the floor, or repeats "uncertainty around timing", confirms a second consecutive down year.</li>
+   <li><strong>The August test resolved the right way, two months early:</strong> "£3.7m to market expectations" did not become "£3.7m".</li>
+   <li><strong>The raise rests on margin, not volume.</strong> H1 gross margin was 47.8%; if that is job mix, it reverses when Energy work returns.</li>
+   <li><strong>What flips it:</strong> a December order book above £26.5m with an FY27 guide turns it up; a deferred guide, as in December 2025, turns it back down.</li>
   </ul>
  </div>
 </div>
@@ -369,7 +387,7 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:6px;padd
    <th class="phead" data-p="H1">H1</th><th class="phead" data-p="H2">H2</th>
    <th class="phead" data-p="H1">H1</th><th class="phead" data-p="H2">H2</th>
    <th class="phead" data-p="H1">H1</th><th class="phead" data-p="H2">H2</th>
-   <th class="phead bs-col" data-p="H1">⭐ H1 R · Aug-26</th></tr>
+   <th class="phead bs-col" data-p="H1">H1 R · Aug-26</th></tr>
  </thead>
  <tbody>
 
@@ -499,17 +517,23 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:6px;padd
    <div class="rw"><span class="rl">R4</span><i class="n"></i><i class="r"></i><i class="r"></i><i class="g"></i><i class="g"></i><i class="g"></i><i class="g"></i><i class="g"></i><i class="r bs"></i></div>
    <div class="rw"><span class="rl">R5</span><i class="n"></i><i class="n"></i><i class="n"></i><i class="n"></i><i class="n"></i><i class="n"></i><i class="r"></i><i class="r"></i><i class="r bs"></i></div>
   </div>
-  <pre class="entry">{"ticker":"SNX","company":"Synectics plc","kind":"ticker","direction":"down",
- "headline":"Second guide cut in six months: FY26 EBITDA floored at £3.7m. H1 revenue −37%, margin 4.5%, first cash outflow half.",
- "trigger":"3 of 3 — Numbers &amp; guide (second CUT, Aug-26) · Language (two prints at −2) · Disclosure (green-shoot mirror: order book re-quantified)",
- "alert":true,"fired":3,"fired_of":3,"lights":"rrg",
- "rns_type":"H1 Results","rns_date":"2026-08-18","build_date":"2026-08-18","spec_version":"v5.3e",
- "next_test":"FY trading update, Dec 2026 — whether \"£3.7m to market expectations\" becomes \"£3.7m\", and whether energy orders converted.",
- "url":"SNX.html",
- "grid":{"labels":["R1","R2","R3","R4","R5"],
-  "periods":["-","H2 22","H1 23","H2 23","H1 24","H2 24","H1 25","H2 25","H1 26"],
-  "rows":["-gggggrra","--rggggar","----ggggr","-rrgggggr","------rrr"],
-  "note":"Five ranked metrics, oldest left, Buy/Sell H1 FY26 rightmost."},"trend":{"mode":"share","cells":"rrr","rows":[{"m":"REV","gap":-12.1},{"m":"EBITDA","gap":-18.9},{"m":"PBT","gap":-46.3}]}}</pre>
+  <pre class="entry">{"ticker":"SNX","company":"Synectics plc","kind":"ticker","direction":"watch","headline":"Guide raised to the top of the range: FY26 EBITDA £4.1m, revenue in line. First non-cut in three, but Energy slips to FY27.","trigger":"1 of 3 — Disclosure (green-shoot mirror, Aug-26: order book re-quantified). Numbers &amp; guide amber (RAISE to top of twice-cut range, equals consensus). Language amber (one rise from −2).","alert":false,"fired":1,"fired_of":3,"lights":"aag","rns_type":"Trading Update","rns_date":"2026-10-06","build_date":"2026-10-06","spec_version":"v5.5","next_test":"Dec 2026 — FY trading update: the order book figure against £26.5m, cash against £14.1m, and whether an FY27 guide appears or is deferred again.","url":"SNX.html","grid":{"labels":["R1","R2","R3","R4","R5"],"periods":["-","H2 22","H1 23","H2 23","H1 24","H2 24","H1 25","H2 25","H1 26"],"rows":["-gggggrra","--rggggar","----ggggr","-rrgggggr","------rrr"],"note":"Five ranked metrics, oldest left, latest scored print H1 FY26 rightmost; the Oct-26 trading update adds no column."},"trend":{"mode":"share","cells":"rrr","rows":[{"m":"REV","gap":-12.1},{"m":"EBITDA","gap":-18.9},{"m":"PBT","gap":-46.3}]},"prev":{"direction":"down","fired":3,"lights":"rrg","rns_date":"2026-08-18","rns_type":"H1 Results"}}</pre>
+ </details>
+
+ <details class="d2">
+  <summary>Rank 1 addendum — contract awards (reference only, unscored)</summary>
+  <p>Contract-award RNSs are noise under the spec: they never seed a grid row, a Text+G row or a Drift column, and fire nothing. This table is a non-scored reference showing order-intake tempo behind the Rank 1 order-book number. Post-Buy/Sell awards are marked — they are not yet in any printed order book.</p>
+  <table class="t3" style="margin-top:8px">
+   <thead><tr><th>Date</th><th>Value</th><th>Sector</th><th>Delivery</th><th>Detail</th></tr></thead>
+   <tbody>
+    <tr><td>7 May 2026</td><td>£1.1m</td><td>Transport</td><td>FY26</td><td>Bus/coach operator — Ocular.</td></tr>
+    <tr><td>18 Jun 2026</td><td>£1.5m</td><td>Transport</td><td>not stated</td><td>Stagecoach new orders (£1.1m + £0.4m). Post-dates the Buy/Sell RNS.</td></tr>
+    <tr><td>Jul 2026</td><td>$2.4m</td><td>Leisure</td><td>Majority 2027</td><td>US West Coast casino — new customer, Synergy + recurring support. Post-Buy/Sell.</td></tr>
+    <tr><td>24 Aug 2026</td><td>£1.4m</td><td>Energy</td><td>Q1 2027</td><td>Eni Kutei FPSO, South-East Asia — Synergy + 4K COEX explosion-proof cameras; existing Eni relationship, won through partner network. Post-Buy/Sell.</td></tr>
+    <tr class="changed"><td><strong>3 Sep 2026</strong></td><td><strong>£1.4m</strong></td><td>Transport</td><td>Autumn 2026</td><td><strong>UK regional authority — Ocular</strong>, on-vehicle surveillance across 220 new buses; cameras, digital mirrors, &gt;half connected to Transport Cloud Services (recurring). Post-Buy/Sell.</td></tr>
+   </tbody>
+  </table>
+  <p><strong>Why this one is worth a look despite scoring nothing.</strong> It is energy, it is South-East Asia, and it is Eni — the exact pipeline the H1 guide range hangs on. It is the first named, quantified piece of the "since period-end intake already exceeds all of H1" claim, and it converts in Q1 2027 (FY27), so it does nothing for the FY26 floor but is direct evidence the frozen pipeline is starting to move. It remains an award, not an order book print — the December trading update is where it shows up as a scored number. The 3 Sep bus award is Ocular's side of the same tempo: transport, recurring-revenue-linked, in service this autumn, and further evidence that the division holding its margin at H1 is also still winning work. Five post-Buy/Sell awards now stand (£1.1m · £1.5m · $2.4m · £1.4m · £1.4m), all small-ticket — order intake is broad and steady, not whale-shaped.</p>
  </details>
 
  <details class="d2">
@@ -523,6 +547,7 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:6px;padd
 
  <details class="d2">
   <summary>Turn methodology &amp; restatement basis</summary>
+  <p><strong>Buy/Sell column note.</strong> The Buy/Sell RNS is the ⭐ 6 Oct 2026 trading update, which prints no period figures and so adds no column. The rightmost grid column remains the latest scored print, H1 FY26 (Aug-26), and the card strip is unmoved.</p>
   <p><span class="rk">Comparison basis per rank.</span> Ranks 1 and 4 (snapshot): SEQUENTIAL versus the prior print at half-end dates; YEAR-ON-YEAR renders only on the aggregate row. Ranks 2, 3 and 5 (flow): YEAR-ON-YEAR (H1-vs-H1, H2-vs-H2) with the banded Δrate as the score, band ±2.0pp. Rank 3's margin carries a separate direction arrow versus the same period last year. All ranks render under the default rule; none uses B.2a.</p>
   <p><span class="rk">Display basis.</span> Cells show YEAR-ON-YEAR; the SEQUENTIAL record is computed and retained here, never displayed. Sequential prints for Rank 2: H1 FY26 £22.2m vs H2 FY25 £32.6m† = −31.9%; H2 FY25 vs H1 FY25 = −8.2%; H1 FY24 vs H2 FY23 = −3.3%. The H2 FY25 −8.2% was a derived-only watch flag at the last build; <strong>the Aug-26 print corroborates it and the watch flag is lifted</strong>. Δrate record, not rendered: H1 FY24 +24.0pp · H2 FY24 −58.4pp (base effect, see below) · H1 FY25 +14.9pp · H2 FY25 +2.0pp · H1 FY26 −72.5pp.</p>
   <p><span class="rk">Units.</span> Every rank is £m in the section bar, the row label and the rendered values. Rank 3 carries margin as % on line 2 only.</p>
@@ -533,20 +558,20 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:6px;padd
 </details>
 
 <!-- ============ §2.0 ============ -->
-<h2 class="wide">§2.0 · Current-state read — ⭐ 18 Aug 2026 H1 FY26 Results</h2>
+<h2 class="wide">§2.0 · Current-state read — ⭐ 6 Oct 2026 FY26 Trading Update</h2>
 
 <div class="pairwrap">
  <div class="bridge">
-  <div class="darkbar"><span class="em">🍺</span><span>IDIOT'S GUIDE TO THE EBITDA BRIDGE — why profit went down (£4.2m → £1.0m)</span></div>
+  <div class="darkbar"><span class="em">🍺</span><span>IDIOT'S GUIDE TO THE EBITDA BRIDGE — why profit went up (£3.7m → £4.1m)</span></div>
   <table>
-   <tr class="r"><td class="drv">🎰 The whale that swam off</td><td class="ctr r">−£7.8m sales</td><td>One enormous casino job filled last year's first half. It finished. The company has told us exactly what it was worth in sales, and nothing has come along that size to replace it — so the hole is the story of the half.</td></tr>
-   <tr class="r"><td class="drv">🛢️ Orders stuck at the border</td><td class="ctr r">−£2.2m sales</td><td>War in the Middle East froze oil and gas work the company had already booked. The kit exists, the customers still want it, but nobody will sign the paperwork to start. Sales in that corner fell by more than a third.</td></tr>
-   <tr class="g"><td class="drv">💷 Charging properly for the clever bits</td><td class="ctr g">+7 points</td><td>Every hundred pounds of sales now leaves 48 in gross profit, up from 41. They are selling more of their own software and support contracts and fewer bought-in boxes, and they are holding their prices. This is the one number that got better.</td></tr>
-   <tr class="a"><td class="drv">👔 A whole new top table</td><td class="ctr a">n/q</td><td>A new commercial chief, operations chief and technology chief all joined in the last year, plus a data lead. Their salaries land in full this half against sales that shrank — the company names the cost as a reason but does not put a figure on it.</td></tr>
+   <tr class="g"><td class="drv">🥩 Thicker cut off every job</td><td class="ctr g">n/q</td><td>They kept more of each pound billed. No figure given, but it's the only reason named twice.</td></tr>
+   <tr class="r"><td class="drv">🛢️ The Gulf cheque still in the post</td><td class="ctr r">n/q</td><td>Oil-and-gas orders pencilled in for this year have wandered into next. Again.</td></tr>
+   <tr class="g"><td class="drv">🧰 Fewer bespoke bodges</td><td class="ctr g">n/q</td><td>Kit that installs the same way each time costs less to fit. Early days, their words.</td></tr>
+   <tr class="a"><td class="drv">🎰 The rest of the shop turned up</td><td class="ctr a">n/q</td><td>Casinos, buses and town-centre cameras did their jobs. Nothing heroic.</td></tr>
   </table>
   <div class="cap">
-   <strong>So in one sentence:</strong> the giant contract that made last year finished, war stalled the next-biggest source of orders, and a bigger management team is being paid out of a much smaller pot — better margins on every sale simply weren't enough to cover it.<br>
-   <strong>Profit goes back up when:</strong> the frozen energy orders unfreeze and convert (management says intake since June already beats all of H1), the 48% gross margin holds while sales volume returns, or the new products — Scene Check, Synergy Search, the subscription range — start billing monthly instead of one job at a time.
+   <strong>So in one sentence:</strong> a surveillance firm that didn't see its own oil orders coming still landed the top number, because what it did sell was RICHER.<br>
+   <strong>Profit falls when:</strong> the last eight weeks don't deliver a record half of sales, or the fatter margin turns out to be a mix of jobs that doesn't repeat.
   </div>
  </div>
 
@@ -554,18 +579,15 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:6px;padd
   <div class="darkbar"><span class="em">🌡️</span><span>CURRENT STATE — the read right now</span></div>
   <div class="statebody">
    <div>
-    <p class="lead">🔴 TURNING DOWN</p>
+    <p class="lead">🟡 STABLE—WATCH</p>
     <ul>
-     <li>H1 revenue £22.2m, −37.5%; adjusted EBITDA £1.0m, −76.2%.</li>
-     <li>Guide reset to a range: floor £3.7m, top the old £4.1m point.</li>
-     <li>H2 must deliver £2.7m EBITDA against £4.3m last year.</li>
-     <li>Statutory operating loss £0.5m — first since H1 FY21.</li>
-     <li>Order book £26.4m, flat on Nov-25 but −24.8% year-on-year.</li>
-     <li>Net cash £10.5m, down £3.6m; operating cash outflow £1.6m.</li>
-     <li>Gross margin 41.0% → 47.8%, and Ocular grew EBITDA on lower sales.</li>
-     <li>⚠️ Energy timing "uncertain" — third consecutive fall, war-driven.</li>
-     <li>⚠️ Consensus £62.0m revenue needs a record £39.8m H2.</li>
-     <li>⚠️ Chair and senior independent director both changed on the day.</li>
+     <li>EBITDA guided to £4.1m, top of the August range; first non-cut in three guide events.</li>
+     <li>£4.1m is still under half of FY25's £8.5m.</li>
+     <li>Revenue now tied to market expectations (£62.0m); August was silent on it.</li>
+     <li>Energy work expected in FY26 has moved to FY27; pipeline described, not sized.</li>
+     <li>Order book and cash both unmentioned; October 2025 carried a line on each.</li>
+     <li>⚠️ H1 banked £22.2m, so £62.0m needs £39.8m in H2, a record half.</li>
+     <li>⚠️ No FY27 view, and last December deferred the next-year guide before a cut.</li>
     </ul>
    </div>
   </div>
@@ -577,21 +599,22 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:6px;padd
 
  <details class="d2">
   <summary>The four checks — workings behind the read</summary>
-  <p><span class="rk">1 · Sequential.</span> H1 FY26 £22.2m versus H2 FY25 £32.6m† = −31.9%; EBITDA £1.0m versus £4.3m†. The derived H2 FY25 slowdown is now corroborated by a printed half, so the watch flag on it is lifted and the fall is confirmed steeper. 🔴</p>
-  <p><span class="rk">2 · Same-type versus last year.</span> Against the Jul-25 H1 results: revenue −37.5%, EBITDA −76.2%, margin −7.3pp, energy −38.6%, order book −24.8%. Last year's H1 carried a beat; this one carries a floor and a named unresolved headwind. 🔴🔴</p>
-  <p><span class="rk">3 · Every derivable sub-period.</span> No quarter figures printed; the segment split is the finest available grain. Systems £12.0m, −49.2%, EBITDA margin 19.6% → 8.3%. Ocular £11.8m, −6.3%, but EBITDA £1.0m → £1.2m and margin 7.7% → 10.2%. <strong>Ocular is the only division moving the right way.</strong> 🔴 with a green thread.</p>
-  <p><span class="rk">4 · Guidance versus prior guide.</span> The May-26 AGM said "broadly in line" against £4.1m. Today the guide is "£3.7 million to current market expectations" — the top of the range is the old number and the floor sits 9.8% beneath it. A range introduced under a point guide drops the midpoint to £3.9m and fires 🔴 CUT, the second in six months. Sized against consensus: the block's £4.1m EBITDA and £62.0m revenue both predate this RNS. 🔴🔴</p>
+  <p><span class="rk">1 · Sequential.</span> The 6 Oct 2026 update prints no period figures, so there is no new sub-period to compare. The latest scored print remains H1 FY26: revenue £22.2m, adjusted EBITDA £1.0m. —</p>
+  <p><span class="rk">2 · Same-type versus last year.</span> Against the 16 Oct 2025 update: then revenue of approximately £67m and a PBT floor of £5.7m, with "a solid order book". Now EBITDA at the top of a twice-cut range and no order-book reference. Smaller numbers, same direction of surprise. 🟡</p>
+  <p><span class="rk">3 · Every derivable sub-period.</span> None derivable — no quarter or half figures in the document. —</p>
+  <p><span class="rk">4 · Guidance versus prior guide.</span> Aug-26 (re-read from source): "£3.7 million to current market expectations", footnoted at £4.1m. Now: "at the top end of the previously communicated range of £3.7 million to £4.1 million". Top of a stated range fires 🟢 RAISE. Sized against consensus (block saved 5 Oct 2026): EBITDA £4.1m and revenue £62.0m, so the beat against consensus is nil. 🟢, discounted.</p>
  </details>
 
  <details class="d2">
   <summary>Notes — §2.0</summary>
-  <p><strong>The implied H2 is the finding.</strong> £3.7m floor less £1.0m delivered leaves £2.7m against £4.3m in H2 FY25 — a 37% fall in the half the company calls its stronger one. To reach the £62.0m revenue consensus H2 must print £39.8m, +22% on H2 FY25 and the largest half in the record. The RNS guides EBITDA and says nothing about revenue.</p>
-  <p><strong>Credibility cuts both ways now.</strong> Five consecutive beats to Dec-25, then two cuts in six months. The sandbagger discount that argued against the March read has been spent: a company that habitually under-promises has now lowered the same year's number twice.</p>
-  <p><strong>What the Board did with cash while cash fell.</strong> Dividend held at 2.2p (£0.37m), EBT purchases £0.46m, capitalised development £0.67m, against a £1.6m operating outflow. Each is defensible alone; together they are the reason net cash fell £3.6m in a half.</p>
+  <p><strong>The company has now put its name to the revenue number.</strong> August guided EBITDA only. "In line with current market expectations" ties revenue to £62.0m, and with £22.2m banked in H1 that asks £39.8m of H2 — the largest half in the record. A guide, not an actual; the December update is where it lands.</p>
+  <p><strong>The raise is a margin story with no figure attached.</strong> "Stronger margins" is named twice and sized nowhere. Energy work that was meant to carry H2 has moved to FY27, so the December print should show whether the margin came from what was sold or from what wasn't.</p>
+  <p><strong>FY27 is unguided.</strong> The Board "remains confident"; no number is offered. The Dec-25 update deferred the next-year view to March, and March brought the first cut.</p>
  </details>
 
  <details class="d2">
   <summary>Balance-sheet sweep</summary>
+  <p><strong>Carried from the Aug-26 H1 results.</strong> The 6 Oct 2026 trading update is not a results document and gives no cash figure, so the sweep below stands unchanged: two Tier-2, net cash £10.5m at 31 May 2026.</p>
   <p><strong>Tier 1: none.</strong> Net cash £10.5m, no bank debt, no going-concern language beyond boilerplate, no covenant reference, no material uncertainty. Cash runway not applicable on the stated route and not triggered on the derived route — the company is not loss-making at the adjusted level and holds 6.5× the half's outflow in cash.</p>
   <p><strong>Tier 2: two hits, so the strip flags amber.</strong> (1) First operating cash outflow in the record: −£1.6m against +£4.8m a year ago, driven by a £2.7m fall in payables and a £0.7m inventory build. (2) Inventory outrunning revenue: £6.4m → £7.2m, +11.9%, while revenue fell 37.5% — management states this is deliberate pre-assembly of hardware for delayed energy projects, which is a disclosed and checkable explanation but leaves the working capital where it is.</p>
   <p><strong>Wedge check.</strong> Adjusted EBITDA £1.0m against a statutory operating loss of £0.5m; statutory PBT −£0.4m versus adjusted −£0.1m. The wedge is £0.3m of exceptional ERP and restructuring cost plus £0.12m share-based payment — disclosed, bounded, and guided to continue while the transformation runs. Watch, not a fire: the test is whether "non-underlying" is still absorbing transformation costs at FY26 results.</p>
@@ -600,10 +623,10 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:6px;padd
 
  <details class="d2">
   <summary>Trend Watch workings</summary>
-  <p><strong>⚠️ Pre-RNS forecast, used on operator override.</strong> The ShareScope block's latest snapshot is 14 Aug 2026, four days before the Buy/Sell RNS. Under 5.3a a block older than the Buy/Sell RNS renders "no consensus data"; the operator has directed that it be used, flagged <em>pre-RNS</em> on the panel. <strong>The forecast therefore predates the guide floor announced on 18 Aug</strong> — £4.1m EBITDA is now the <em>top</em> of a range whose floor is £3.7m, so all three gaps are measured against a bar the company has since lowered. Read them as "behind what the market still expected on 14 August", not "behind what is now guided".</p>
-  <p><strong>Mode: SHARE</strong> (H1 results). Sign convention: delivered minus required; negative is behind.</p>
+  <p><strong>Numbers-light document — reading carried.</strong> The 6 Oct 2026 update gives a forward range and no period actual, so under 5.3a the last quantified reading is carried forward, tagged <em>at H1 R</em> on every cell. The forecast is re-fetched from database.json: block saved 5 Oct 2026, one day before the Buy/Sell RNS and inside the 14-day window, so it is the pre-announcement consensus and is used. FY1 forecasts are unchanged from the August read at £62.0m / £4.1m / £2.1m, so all three gaps are unchanged.</p>
+  <p><strong>Mode: SHARE</strong> (part-year document). Sign convention: delivered minus required; negative is behind.</p>
   <table class="t3" style="margin-top:8px">
-   <thead><tr><th>Metric</th><th>Basis</th><th>H1 FY26 actual</th><th>Prior-yr comp</th><th>Norm (3yr H1 share)</th><th>FY1 fc (14 Aug 26)</th><th>Gap</th><th>Ranked?</th></tr></thead>
+   <thead><tr><th>Metric</th><th>Basis</th><th>H1 FY26 actual (at H1 R)</th><th>Prior-yr comp</th><th>Norm (3yr H1 share)</th><th>FY1 fc (5 Oct 26)</th><th>Gap</th><th>Ranked?</th></tr></thead>
    <tbody>
     <tr><td>REVENUE</td><td>Reported</td><td>£22.2m → 35.8%</td><td>H1 FY25 £35.5m</td><td>47.9% — FY23 44.6 · FY24 47.1 · FY25 52.1</td><td>£62.0m</td><td style="color:#b3261e"><strong>−12.1pp</strong></td><td>Y — ties to §2 Rank 2</td></tr>
     <tr><td>EBITDA</td><td>Adjusted</td><td>£1.0m → 24.4%</td><td>H1 FY25 £4.2m</td><td>43.3% — FY23 35.4 · FY24 45.2 · FY25 49.4</td><td>£4.1m</td><td style="color:#b3261e"><strong>−18.9pp</strong></td><td>Y — ties to §2 Rank 3</td></tr>
@@ -616,11 +639,12 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:6px;padd
 
  <details class="d2">
   <summary>Trigger detail &amp; audit record</summary>
-  <p><strong>Condition 1 — Numbers &amp; guide · 🔴 fired, full weight.</strong> A G-column CUT on the Buy/Sell RNS (range floor £3.7m under a £4.1m point guide, midpoint −4.9%), plus sequential decline at the latest print (−31.9%), plus margin compression (11.8% → 4.5%), plus growth decelerating across two periods. Includes LEAD metrics (revenue, energy) so no confirmation-only discount applies. Fired Mar-26 and again Aug-26.</p>
-  <p><strong>Condition 2 — Language · 🔴 fired, full weight.</strong> Two consecutive prints at −2: May-26 ("broadly in line" + "management expectations" + conditional) and Aug-26 (previously-numeric point guide gone to a conditional range; named unresolved headwind in the growth-carrying line). "Second-half weighting" is now its third consecutive mention, which is deepening, not habit — the habit test was run against Apr-23 and Apr-24 and this run exceeds it.</p>
-  <p><strong>Condition 3 — Disclosure · 🟢 fired as green-shoot mirror.</strong> The order book, withheld at the May-26 AGM against a 3-of-3 habit, is re-quantified at £26.4m. Under the mirror rule a dropped metric re-quantified fires condition 3 upward. The energy segment is additionally split out at £3.5m for the first time, a disclosure expansion dated Aug-26, and five new KPIs are quantified with targets. <strong>No ranked metric is withheld anywhere in this document.</strong></p>
-  <p><strong>Count and direction.</strong> 3 of 3 lamps lit, but only conditions 1 and 2 converge downward — that is the 2-of-3 deterioration alert. Condition 3 points the other way and is shown doing so. <em>alert: true</em> rests on the two red lamps, not the tally.</p>
-  <p><strong>Context discounts applied and exhausted.</strong> The gaming roll-off (£7.8m, disclosed and bounded) explains 59% of the revenue fall and was already used as the discount at the Mar-26 read. This is the second consecutive period leaning on it, so per the decomposition rule it is exhausted and no longer softens the fire. The energy delay is disclosed, externally caused and bounded in principle, but has no stated end date — it annotates, it does not suppress.</p>
+  <p><strong>Condition 1 — Numbers &amp; guide · 🟡 technically met, not counted.</strong> A G-column RAISE on the Buy/Sell RNS (Oct-26): EBITDA at the top of the stated £3.7m–£4.1m range. Context-discounted on three grounds: the range was itself the product of two cuts (Mar-26, Aug-26); the top of it equals the consensus already in place (£4.1m), so the beat is nil; and the document prints no actuals, leaving the H1 FY26 hard prints (revenue −37.5%, margin 4.5%) unreversed. Counted in neither direction.</p>
+  <p><strong>Condition 2 — Language · 🟡 technically met, not counted.</strong> May-26 and Aug-26 both scored −2 and remain in the window, but the latest print scores +1 ("top end of the … range"), breaking the fall. The green mirror needs two consecutive rises from 0 or below; this is one. Text re-read: 5 documents re-opened from source (Dec-23, Jun-24, Sep-24, Dec-24, Dec-25). Drawer spot-check: Oct-25 YE-TU verified.</p>
+  <p><strong>Condition 3 — Disclosure · 🟢 fired as green-shoot mirror (Aug-26).</strong> The order book, withheld at the May-26 AGM against a 3-of-3 habit, was re-quantified at £26.4m in August. The Oct-26 update carries no order-book reference; the two prior pre-close updates (Sep-24, Oct-25) carried only a qualitative line, which is too thin a habit to record a withhold. Watch, not a fire.</p>
+  <p><strong>Count and direction.</strong> 1 of 3 lit, green. No two conditions converge in either direction, so no alert. <em>alert: false</em>. Direction call STABLE—WATCH.</p>
+  <p><strong>The alternative reading, recorded.</strong> Counting the RAISE in full gives two greens, 2/3 and TURNING UP. Rejected at the read: a hold at consensus after two cuts, with no actuals, does not earn it. Operator approved at GO, 6 Oct 2026.</p>
+  <p><strong>Movement (5.3c).</strong> down 3/3 → watch 1/3, from H1 Results 2026-08-18. Lights rrg → aag.</p>
  </details>
 </details>
 
@@ -648,7 +672,8 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:6px;padd
   <tr class="changed" data-rowtype="YETU"><td>17 Dec 2025</td><td class="dcol">FY25<br>YE-TU</td><td>🟢 RAISE</td><td class="q">"no less than £6.0 million"</td><td class="ctx">Floor raised again and beaten (£6.1m stated, £8.5m adjusted outturn). But the entire FY26 view is deferred to March — a sandbagged floor beside a withheld next-year guide carries a flag.</td><td>🔴</td></tr>
   <tr class="changed" data-rowtype="FYR"><td>3 Mar 2026</td><td class="dcol">FY25<br>FY R</td><td>🔴 CUT</td><td class="q">"mid-single-digit EBITDA margins" for FY26</td><td class="ctx">First CUT in the record. Implies FY26 EBITDA c.£4.1m against £8.5m delivered — revenue −9%, margin halved, unflagged at that magnitude. Consensus reset to £62.0m / £4.1m within days.</td><td>🔴🔴🔴</td></tr>
   <tr class="changed" data-rowtype="AGM"><td>18 May 2026</td><td class="dcol">FY26<br>AGM</td><td>flat</td><td class="q">"broadly in line with management expectations …… subject to energy sector activity normalising"</td><td class="ctx">Stacked negatives: "broadly" is the euphemism, "management" replaces "market", and the in-line is made conditional. Order book withheld in the same document against a three-of-three AGM habit.</td><td>🔴🔴</td></tr>
-  <tr class="changed" data-rowtype="H1R"><td>⭐ 18 Aug 2026</td><td class="dcol">FY26<br>H1 R</td><td>🔴 CUT</td><td class="q">"in the range of £3.7 million to current market expectations"</td><td class="ctx">Second CUT in six months. A point guide becomes a range whose top is the old number and whose floor is 9.8% below it; the range is explicitly attributed to energy conversion uncertainty. Footnote 5 confirms market expectations at £4.1m. Order book re-quantified at £26.4m in the same document.</td><td>🔴🔴</td></tr>
+  <tr class="changed" data-rowtype="H1R"><td>18 Aug 2026</td><td class="dcol">FY26<br>H1 R</td><td>🔴 CUT</td><td class="q">"in the range of £3.7 million to current market expectations"</td><td class="ctx">Second CUT in six months. A point guide becomes a range whose top is the old number and whose floor is 9.8% below it; the range is explicitly attributed to energy conversion uncertainty. Footnote 5 confirms market expectations at £4.1m. Order book re-quantified at £26.4m in the same document.</td><td>🔴🔴</td></tr>
+  <tr class="changed" data-rowtype="YETU"><td>⭐ 6 Oct 2026</td><td class="dcol">FY26<br>YE-TU</td><td>🟢 RAISE</td><td class="q">"adjusted EBITDA at the top end of the previously communicated range of £3.7 million to £4.1 million"</td><td class="ctx">Top of a stated range; market anchor restored for revenue ("in line with current market expectations"). Credited to "stronger margins", unquantified. The CEO confirms Energy work expected in FY26 is "now moving into the new financial year". No order book, no cash figure, no FY27 guide. £4.1m equals consensus.</td><td>🟢</td></tr>
  </tbody>
 </table>
 
@@ -656,19 +681,22 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:6px;padd
  <summary>§3 workings — notes and guidance passages</summary>
  <details class="d2">
   <summary>Notes — §3</summary>
-  <p><strong>The G record is now 6 RAISE, 2 CUT, and both cuts sit inside six months.</strong> Every RAISE in the record was met or beaten, which is what made the March cut informative rather than noise; the August cut removes the argument that a single reset had already cleared the decks.</p>
+  <p><strong>The G record is now 7 RAISE, 2 CUT, and this is the first RAISE that only reaches consensus.</strong> Every earlier RAISE was met or beaten; the December update tests whether one issued eight weeks before the year end, from inside a twice-cut range, keeps that record.</p>
  </details>
  <details class="d2">
   <summary>Guidance passages — trailing 12 months, fuller verbatim</summary>
+  <p><span class="rk">16 Oct 2025 · Trading Update.</span> "revenues of approximately £67m (FY24: £55.8m) and PBT of no less than £5.7m" … "expects to increase investment in 2026" … "continues to build a solid order book and has good visibility on its new business pipeline for FY 2026". <em>Editorial: order book qualitative only; no cash figure.</em></p>
+  <p><span class="rk">17 Dec 2025 · Full Year Trading Update · Strategic Progress and Outlook.</span> "Revenue for the year is expected to be approximately £68 million (FY 2024: £55.8 million), with adjusted* EBITDA of £8.5 million (FY 2024: £6.3 million) and adjusted* PBT of no less than £6.0 million" … "Given the evolving nature of this transformation, a more detailed view of FY 2026 and future year expectations will be provided alongside the full year results in March 2026."</p>
   <p><span class="rk">3 Mar 2026 · FY25 Final Results · Outlook.</span> The FY26 view is framed around a year of transition, with revenue expected to be lower than FY25 following the non-repeating gaming contract and adjusted EBITDA margins described as mid-single-digit, reflecting c.£3.3m of strategic investment of which c.£0.8m falls within adjusted EBITDA. <em>Editorial: this is the only place the £0.8m within-EBITDA split is given, and it is the number the bridge uses.</em></p>
   <p><span class="rk">18 May 2026 · AGM Trading Update.</span> Trading since the year end is described as broadly in line with management expectations, with the Board noting that the conflict in the Middle East has created uncertainty around the timing of energy sector projects and that the full-year outcome is subject to energy sector activity normalising. <em>Editorial: no order book figure appears anywhere in this document, and no revenue figure at any grain — verified by full read, not inferred.</em></p>
   <p><span class="rk">18 Aug 2026 · H1 FY26 Results · Outlook.</span> The full-year outcome is stated to be influenced by the timing and conversion of energy opportunities during the remainder of FY26, with full-year adjusted EBITDA expected in the range of £3.7 million to current market expectations, the range principally reflecting uncertainty over the timing and conversion of the energy sales pipeline. Footnote 5 states that the Board notes current market expectations for FY26 adjusted EBITDA of £4.1 million. The Board also states it entered H2 with a stable order book of £26.4 million and that since the period end oil and gas order intake has already exceeded that received during H1, driven primarily by customers outside the Middle East. <em>Editorial: no full-year revenue guide is given anywhere in the document.</em></p>
+  <p><span class="rk">6 Oct 2026 · Trading Update.</span> "The Board is pleased to report that FY26 revenue is expected to be in line with current market expectations, with adjusted EBITDA at the top end of the previously communicated range of £3.7 million to £4.1 million. This reflects stronger margins and good performance across the Group" … "there was uncertainty around the timing and conversion of Energy market opportunities, particularly in the Middle East. These opportunities remain active and are expected to extend into FY27 with the Group continuing to hold a significant pipeline in the sector". <em>Editorial: no order book reference, no cash figure, no consensus footnote and no FY27 guide anywhere in the document — verified by full read.</em></p>
  </details>
 </details>
 
 <!-- ============ §4 DRIFT ============ -->
 <h2 class="wide">§4 · Drift — what they've gone quiet about</h2>
-<p class="lede">Which numbers get shared, hedged, or dropped, document by document — going quiet is the signal. Manifest 19 = Drift 19 columns. Click any header to highlight every column sharing that period-type key.</p>
+<p class="lede">Which numbers get shared, hedged, or dropped, document by document — going quiet is the signal. Manifest 20 = Drift 20 columns. Click any header to highlight every column sharing that period-type key.</p>
 
 <div class="driftwrap">
 <table id="drift">
@@ -692,29 +720,30 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:6px;padd
   <th class="dh" data-k="YETU">Dec-25<span class="k">YETU</span></th>
   <th class="dh" data-k="FYR">Mar-26<span class="k">FYR</span></th>
   <th class="dh" data-k="AGM">May-26<span class="k">AGM</span></th>
-  <th class="dh bs-col" data-k="H1R">⭐ Aug-26<span class="k">H1R</span></th>
+  <th class="dh" data-k="H1R">Aug-26<span class="k">H1R</span></th>
+  <th class="dh bs-col" data-k="YETU">⭐ Oct-26<span class="k">YETU</span></th>
  </tr></thead>
  <tbody>
   <tr><td class="mlab">Order book</td>
-   <td>—</td><td>✅ 24.4</td><td>🟡</td><td>✅ 28.4</td><td>✅ 28.6</td><td>✅ 29.2</td><td>🟡</td><td>—</td><td>✅ 30.2</td><td>—</td><td>✅ 37.8</td><td>✅ 38.5</td><td>✅ 35.1</td><td>✅ 35.1</td><td>—</td><td>✅ 26.5</td><td>✅ 26.5</td><td>❌</td><td class="bs-col">✅ 26.4</td></tr>
+   <td>—</td><td>✅ 24.4</td><td>🟡</td><td>✅ 28.4</td><td>✅ 28.6</td><td>✅ 29.2</td><td>🟡</td><td>—</td><td>✅ 30.2</td><td>🟡</td><td>✅ 37.8</td><td>✅ 38.5</td><td>✅ 35.1</td><td>✅ 35.1</td><td>🟡</td><td>✅ 26.5</td><td>✅ 26.5</td><td>❌</td><td>✅ 26.4</td><td class="bs-col">—</td></tr>
   <tr><td class="mlab">Group revenue</td>
-   <td>🟡</td><td>✅ 39.1</td><td>—</td><td>✅ 21.9</td><td>🟡</td><td>✅ 49.1</td><td>—</td><td>🟡</td><td>✅ 26.3</td><td>🟡</td><td>🟡</td><td>✅ 55.8</td><td>—</td><td>✅ 35.5</td><td>🟡</td><td>🟡</td><td>✅ 68.1</td><td>❌</td><td class="bs-col">✅ 22.2</td></tr>
+   <td>🟡</td><td>✅ 39.1</td><td>—</td><td>✅ 21.9</td><td>🟡</td><td>✅ 49.1</td><td>—</td><td>🟡</td><td>✅ 26.3</td><td>🟡</td><td>🟡</td><td>✅ 55.8</td><td>—</td><td>✅ 35.5</td><td>✅ c.67</td><td>✅ c.68</td><td>✅ 68.1</td><td>❌</td><td>✅ 22.2</td><td class="bs-col">🟡</td></tr>
   <tr><td class="mlab">Adj EBITDA</td>
-   <td>🟡</td><td>✅ 3.2</td><td>—</td><td>✅ 1.7</td><td>🟡</td><td>✅ 4.8</td><td>—</td><td>🟡</td><td>✅ 2.8</td><td>🟡</td><td>✅ 5.7</td><td>✅ 6.3</td><td>—</td><td>✅ 4.2</td><td>✅ 5.7</td><td>✅ 6.0</td><td>✅ 8.5</td><td>❌</td><td class="bs-col">✅ 1.0</td></tr>
+   <td>🟡</td><td>✅ 3.2</td><td>—</td><td>✅ 1.7</td><td>🟡</td><td>✅ 4.8</td><td>—</td><td>🟡</td><td>✅ 2.8</td><td>🟡</td><td>🟡</td><td>✅ 6.3</td><td>—</td><td>✅ 4.2</td><td>🟡</td><td>✅ 8.5</td><td>✅ 8.5</td><td>❌</td><td>✅ 1.0</td><td class="bs-col">✅ 4.1 guide</td></tr>
   <tr><td class="mlab">Net cash</td>
-   <td>✅ 4.1</td><td>✅ 4.3</td><td>🟡</td><td>✅ 4.0</td><td>🟡</td><td>✅ 4.6</td><td>🟡</td><td>—</td><td>✅ 6.4</td><td>—</td><td>🟡</td><td>✅ 9.6</td><td>🟡</td><td>✅ 12.1</td><td>🟡</td><td>🟡</td><td>✅ 14.1</td><td>🟡</td><td class="bs-col">✅ 10.5</td></tr>
+   <td>✅ 4.1</td><td>✅ 4.3</td><td>🟡</td><td>✅ 4.0</td><td>🟡</td><td>✅ 4.6</td><td>🟡</td><td>—</td><td>✅ 6.4</td><td>—</td><td>🟡</td><td>✅ 9.6</td><td>🟡</td><td>✅ 12.1</td><td>🟡</td><td>🟡</td><td>✅ 14.1</td><td>🟡</td><td>✅ 10.5</td><td class="bs-col">—</td></tr>
   <tr><td class="mlab">Energy revenue</td>
-   <td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✅ 6.5</td><td>—</td><td>—</td><td>✅ 13.2</td><td>🟡</td><td>✅ 5.7</td><td>🟡</td><td>🟡</td><td>✅ 11.1</td><td>🟡</td><td class="bs-col">✅ 3.5</td></tr>
+   <td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✅ 6.5</td><td>—</td><td>—</td><td>✅ 13.2</td><td>🟡</td><td>✅ 5.7</td><td>🟡</td><td>🟡</td><td>✅ 11.1</td><td>🟡</td><td>✅ 3.5</td><td class="bs-col">🟡</td></tr>
   <tr><td class="mlab">Gross margin <em>(watch)</em></td>
-   <td>—</td><td>✅ 40.1</td><td>—</td><td>✅ 39.8</td><td>—</td><td>✅ 41.2</td><td>—</td><td>—</td><td>✅ 40.9</td><td>—</td><td>—</td><td>✅ 42.5</td><td>—</td><td>✅ 41.0</td><td>—</td><td>—</td><td>✅ 42.8</td><td>—</td><td class="bs-col">✅ 47.8</td></tr>
+   <td>—</td><td>✅ 40.1</td><td>—</td><td>✅ 39.8</td><td>—</td><td>✅ 41.2</td><td>—</td><td>—</td><td>✅ 40.9</td><td>—</td><td>—</td><td>✅ 42.5</td><td>—</td><td>✅ 41.0</td><td>—</td><td>—</td><td>✅ 42.8</td><td>—</td><td>✅ 47.8</td><td class="bs-col">—</td></tr>
   <tr><td class="mlab">Dividend <em>(watch)</em></td>
-   <td>—</td><td>✅ 2.0</td><td>—</td><td>✅ 1.0</td><td>—</td><td>✅ 3.4</td><td>—</td><td>—</td><td>✅ 1.5</td><td>—</td><td>—</td><td>✅ 4.7</td><td>—</td><td>✅ 2.2</td><td>—</td><td>—</td><td>✅ 5.5</td><td>—</td><td class="bs-col">✅ 2.2</td></tr>
+   <td>—</td><td>✅ 2.0</td><td>—</td><td>✅ 1.0</td><td>—</td><td>✅ 3.4</td><td>—</td><td>—</td><td>✅ 1.5</td><td>—</td><td>—</td><td>✅ 4.7</td><td>—</td><td>✅ 2.2</td><td>—</td><td>—</td><td>✅ 5.5</td><td>—</td><td>✅ 2.2</td><td class="bs-col">—</td></tr>
   <tr><td class="mlab">Statutory PBT <em>(watch)</em></td>
-   <td>—</td><td>✅ 2.6</td><td>—</td><td>✅ 0.7</td><td>—</td><td>✅ 3.9</td><td>—</td><td>—</td><td>✅ 2.1</td><td>—</td><td>—</td><td>✅ 5.2</td><td>—</td><td>✅ 3.0</td><td>—</td><td>—</td><td>✅ 7.0</td><td>—</td><td class="bs-col">✅ −0.4</td></tr>
+   <td>—</td><td>✅ 2.6</td><td>—</td><td>✅ 0.7</td><td>—</td><td>✅ 3.9</td><td>—</td><td>—</td><td>✅ 2.1</td><td>—</td><td>—</td><td>✅ 5.2</td><td>—</td><td>✅ 3.0</td><td>—</td><td>—</td><td>✅ 7.0</td><td>—</td><td>✅ −0.4</td><td class="bs-col">—</td></tr>
   <tr><td class="mlab">Segment split <em>(watch)</em></td>
-   <td>—</td><td>✅</td><td>—</td><td>✅</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>—</td><td class="bs-col">✅ by sector</td></tr>
+   <td>—</td><td>✅</td><td>—</td><td>✅</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>✅ by sector</td><td class="bs-col">—</td></tr>
   <tr><td class="mlab">Strategy KPIs <em>(watch)</em></td>
-   <td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>🟡</td><td>—</td><td class="bs-col">✅ 12 KPIs</td></tr>
+   <td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>🟡</td><td>—</td><td>✅ 12 KPIs</td><td class="bs-col">—</td></tr>
  </tbody>
 </table>
 </div>
@@ -723,7 +752,8 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:6px;padd
  <summary>§4 workings — notes</summary>
  <details class="d2">
   <summary>Notes — §4</summary>
-  <p><strong>Rightmost column, Aug-26.</strong> The order book returns as a number after one withhold, and that reversal is what fires condition 3 green rather than red. Two genuine expansions accompany it: the energy line is quantified by sector for the first time (£3.5m within Systems), and twelve strategy KPIs are published with targets and half-year progress where March gave only qualitative priorities. A first-ever quantification has no history — the baseline for those KPIs starts today, and they are judged from the next document, not this one.</p>
+  <p><strong>Rightmost column, Oct-26.</strong> Nothing newly withheld against an established cadence: the order book and cash are both absent, but pre-close updates have only ever carried a qualitative line on each (Sep-24 and Oct-25 for the book, Oct-25 for cash), so both cells are — and the December update, where both are habitually quantified, is the real test.</p>
+  <p><strong>Corrections applied at this read, from source re-reads (audit trail).</strong> Order book Sep-24 and Oct-25: — → 🟡. Revenue Oct-25 and Dec-25: 🟡 → ✅ c.67 and ✅ c.68. Adj EBITDA Dec-24: ✅ 5.7 → 🟡 (no figure printed); Oct-25: ✅ 5.7 → 🟡 (£5.7m was the PBT floor); Dec-25: ✅ 6.0 → ✅ 8.5 (£6.0m was the PBT floor). No fired condition rested on any of them.</p>
  </details>
 </details>
 
@@ -790,7 +820,7 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:6px;padd
 })();
 </script>
 
-<script type="application/json" id="drift-entry">{"ticker":"SNX","company":"Synectics plc","kind":"ticker","direction":"down","headline":"Second guide cut in six months: FY26 EBITDA floored at £3.7m. H1 revenue −37%, margin 4.5%, first cash outflow half.","trigger":"3 of 3 — Numbers & guide (second CUT, Aug-26) · Language (two prints at −2) · Disclosure (green-shoot mirror: order book re-quantified)","alert":true,"fired":3,"fired_of":3,"lights":"rrg","rns_type":"H1 Results","rns_date":"2026-08-18","build_date":"2026-08-18","spec_version":"v5.3e","next_test":"FY trading update, Dec 2026 — whether \"£3.7m to market expectations\" becomes \"£3.7m\", and whether energy orders converted.","url":"SNX.html","grid":{"labels":["R1","R2","R3","R4","R5"],"periods":["-","H2 22","H1 23","H2 23","H1 24","H2 24","H1 25","H2 25","H1 26"],"rows":["-gggggrra","--rggggar","----ggggr","-rrgggggr","------rrr"],"note":"Five ranked metrics, oldest left, Buy/Sell H1 FY26 rightmost."},"trend":{"mode":"share","cells":"rrr","rows":[{"m":"REV","gap":-12.1},{"m":"EBITDA","gap":-18.9},{"m":"PBT","gap":-46.3}]}}</script>
+<script type="application/json" id="drift-entry">{"ticker":"SNX","company":"Synectics plc","kind":"ticker","direction":"watch","headline":"Guide raised to the top of the range: FY26 EBITDA £4.1m, revenue in line. First non-cut in three, but Energy slips to FY27.","trigger":"1 of 3 — Disclosure (green-shoot mirror, Aug-26: order book re-quantified). Numbers & guide amber (RAISE to top of twice-cut range, equals consensus). Language amber (one rise from −2).","alert":false,"fired":1,"fired_of":3,"lights":"aag","rns_type":"Trading Update","rns_date":"2026-10-06","build_date":"2026-10-06","spec_version":"v5.5","next_test":"Dec 2026 — FY trading update: the order book figure against £26.5m, cash against £14.1m, and whether an FY27 guide appears or is deferred again.","url":"SNX.html","grid":{"labels":["R1","R2","R3","R4","R5"],"periods":["-","H2 22","H1 23","H2 23","H1 24","H2 24","H1 25","H2 25","H1 26"],"rows":["-gggggrra","--rggggar","----ggggr","-rrgggggr","------rrr"],"note":"Five ranked metrics, oldest left, latest scored print H1 FY26 rightmost; the Oct-26 trading update adds no column."},"trend":{"mode":"share","cells":"rrr","rows":[{"m":"REV","gap":-12.1},{"m":"EBITDA","gap":-18.9},{"m":"PBT","gap":-46.3}]},"prev":{"direction":"down","fired":3,"lights":"rrg","rns_date":"2026-08-18","rns_type":"H1 Results"}}</script>
 
 </body>
 </html>
