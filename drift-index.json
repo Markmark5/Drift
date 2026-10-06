@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-05",
+  "updated": "2026-10-06",
   "tickers": [
     {
       "ticker": "STAF",
@@ -1136,18 +1136,18 @@
       "ticker": "SNX",
       "company": "Synectics plc",
       "kind": "ticker",
-      "direction": "down",
-      "headline": "Second guide cut in six months: FY26 EBITDA floored at £3.7m. H1 revenue −37%, margin 4.5%, first cash outflow half.",
-      "trigger": "3 of 3 — Numbers & guide (second CUT, Aug-26) · Language (two prints at −2) · Disclosure (green-shoot mirror: order book re-quantified)",
-      "alert": true,
-      "fired": 3,
+      "direction": "watch",
+      "headline": "Guide raised to the top of the range: FY26 EBITDA £4.1m, revenue in line. First non-cut in three, but Energy slips to FY27.",
+      "trigger": "1 of 3 — Disclosure (green-shoot mirror, Aug-26: order book re-quantified). Numbers & guide amber (RAISE to top of twice-cut range, equals consensus). Language amber (one rise from −2).",
+      "alert": false,
+      "fired": 1,
       "fired_of": 3,
-      "lights": "rrg",
-      "rns_type": "H1 Results",
-      "rns_date": "2026-08-18",
-      "build_date": "2026-08-18",
-      "spec_version": "v5.3e",
-      "next_test": "FY trading update, Dec 2026 — whether \"£3.7m to market expectations\" becomes \"£3.7m\", and whether energy orders converted.",
+      "lights": "aag",
+      "rns_type": "Trading Update",
+      "rns_date": "2026-10-06",
+      "build_date": "2026-10-06",
+      "spec_version": "v5.5",
+      "next_test": "Dec 2026 — FY trading update: the order book figure against £26.5m, cash against £14.1m, and whether an FY27 guide appears or is deferred again.",
       "url": "SNX.html",
       "grid": {
         "labels": [
@@ -1175,7 +1175,7 @@
           "-rrgggggr",
           "------rrr"
         ],
-        "note": "Five ranked metrics, oldest left, Buy/Sell H1 FY26 rightmost."
+        "note": "Five ranked metrics, oldest left, latest scored print H1 FY26 rightmost; the Oct-26 trading update adds no column."
       },
       "trend": {
         "mode": "share",
@@ -1194,6 +1194,13 @@
             "gap": -46.3
           }
         ]
+      },
+      "prev": {
+        "direction": "down",
+        "fired": 3,
+        "lights": "rrg",
+        "rns_date": "2026-08-18",
+        "rns_type": "H1 Results"
       }
     },
     {
