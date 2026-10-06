@@ -3148,17 +3148,17 @@
       "company": "Celebrus Technologies",
       "kind": "ticker",
       "direction": "down",
-      "headline": "First sequential ARR fall on record, retention below 100%, and a second year-ahead guide withheld — the growth engine stalled beneath the accounting reset.",
-      "trigger": "Numbers & guide fired (first sequential Celebrus ARR decline, additions -8%); Language fired (year-ahead anchor withheld at last two FY results); Disclosure amber, not counted",
+      "headline": "FY27 guide cut 14% below consensus into a deeper loss; ARR falling two halves running and a customer walked at its first break.",
+      "trigger": "Numbers & guide fired (G CUT on latest RNS: FY27 revenue guided 14% below consensus; second sequential Celebrus ARR fall, first y-o-y decline); Language fired (below expectations, -3, falling run from Jul-25); Disclosure amber, not counted",
       "alert": true,
       "fired": 2,
       "fired_of": 3,
       "lights": "rra",
-      "rns_type": "FY Results",
-      "rns_date": "2026-07-14",
-      "build_date": "2026-08-20",
-      "spec_version": "v5.4",
-      "next_test": "Oct-26 H1 TU: Celebrus ARR must print above $15.6m (Sep-25 mark) and an FY27 expectations anchor must return",
+      "rns_type": "H1 TU",
+      "rns_date": "2026-10-06",
+      "build_date": "2026-10-06",
+      "spec_version": "v5.6",
+      "next_test": "8 Dec 2026 H1 results: Celebrus ARR must hold $14.7m with no new reductions and the FY27 range ($20.0-20.5m / -$2.8-3.0m) must survive results day",
       "url": "CLBS.html",
       "grid": {
         "labels": [
@@ -3169,7 +3169,6 @@
           "R5"
         ],
         "periods": [
-          "H2 22",
           "H1 23",
           "H2 23",
           "H1 24",
@@ -3177,16 +3176,42 @@
           "H1 25",
           "H2 25",
           "H1 26",
-          "H2 26"
+          "H2 26",
+          "H1 27"
         ],
         "rows": [
-          "ggggg-ggr",
-          "-r--g---r",
-          "-------rg",
-          "--------r",
-          "-rggagarr"
+          "gggg-ggrr",
+          "r--g---r-",
+          "------rg-",
+          "-------r-",
+          "rggagarra"
         ],
-        "note": "Ranks 1-5 half-grain scores, right-anchored on the Jul-26 FY results (H2 FY26 column); R2/R4 FY-grain figures sit in H2 slots"
+        "note": "Ranks 1-5 half-grain scores, right-anchored on the Oct-26 H1 FY27 TU; R2/R4 FY-grain figures sit in H2 slots"
+      },
+      "prev": {
+        "direction": "down",
+        "fired": 2,
+        "lights": "rra",
+        "rns_date": "2026-07-14",
+        "rns_type": "FY Results"
+      },
+      "trend": {
+        "mode": "share",
+        "cells": "r--",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": -3.2
+          },
+          {
+            "m": "EBITDA",
+            "gap": null
+          },
+          {
+            "m": "PBT",
+            "gap": null
+          }
+        ]
       }
     },
     {
