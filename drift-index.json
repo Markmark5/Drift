@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-07",
+  "updated": "2026-10-09",
   "tickers": [
     {
       "ticker": "STAF",
@@ -3977,17 +3977,17 @@
       "company": "Motorpoint Group",
       "kind": "ticker",
       "direction": "up",
-      "headline": "First-ever numeric guide raises FY27 PBT to £9.8–10.8m, above consensus — volumes, unit margins and language all confirming the two-year up-trend.",
-      "trigger": "2 of 3 fired, both green-shoot: G RAISE on latest RNS; Text risen to +3. Disclosure amber (first-ever guide, no baseline).",
+      "headline": "H1 PBT £6.5m, up 81%, banks ~63% of the held £9.8–10.8m guide — while volume growth cools to 7.6% and the cash figure goes quiet.",
+      "trigger": "2 of 3 fired, both green-shoot: guide held above the pre-upgrade consensus with PBT green five halves; Text run to +3 stands. Disclosure amber — net cash withheld vs 4-print Oct-TU habit, watch-flagged to the 11 Nov interims.",
       "alert": true,
       "fired": 2,
       "fired_of": 3,
       "lights": "gga",
-      "rns_type": "TU",
-      "rns_date": "2026-09-02",
-      "build_date": "2026-09-03",
-      "spec_version": "v5.5",
-      "next_test": "Early Oct 2026 H1 FY27 TU: volume growth ≥ c.10%, metal margin still 'strong', £9.8–10.8m range reiterated or raised.",
+      "rns_type": "H1 TU",
+      "rns_date": "2026-10-09",
+      "build_date": "2026-10-09",
+      "spec_version": "v5.6",
+      "next_test": "11 Nov 2026 interims: the net debt figure, Q2 volume growth, the GPU number behind 'record metal margin', and whether £9.8–10.8m holds or lifts.",
       "url": "MOTR.html",
       "grid": {
         "labels": [
@@ -3998,7 +3998,6 @@
           "R5"
         ],
         "periods": [
-          "H2 22",
           "H1 23",
           "H2 23",
           "H1 24",
@@ -4006,16 +4005,24 @@
           "H1 25",
           "H2 25",
           "H1 26",
-          "H2 26"
+          "H2 26",
+          "H1 27"
         ],
         "rows": [
-          "-r-rgggrr",
-          "garrragaa",
-          "-rraggaaa",
-          "-rrragggg",
-          "rgagaarrr"
+          "r-rgggrra",
+          "arrragaa-",
+          "rraggaaa-",
+          "rrraggggg",
+          "gagaarrrx"
         ],
-        "note": "R1 retail volumes · R2 retail GPU (H1/FY) · R3 gross margin · R4 PBT · R5 net cash. Rightmost = H2 FY26 (FY R Jun-26); the ⭐ Sep-26 TU prints no period actuals."
+        "note": "R1 retail volumes · R2 retail GPU (H1/FY) · R3 gross margin · R4 PBT · R5 net cash. Rightmost = ⭐ H1 FY27 (H1 TU 9 Oct 26): PBT c.£6.5m printed, volumes rate-only, net cash withheld."
+      },
+      "prev": {
+        "direction": "up",
+        "fired": 2,
+        "lights": "gga",
+        "rns_date": "2026-09-02",
+        "rns_type": "TU"
       },
       "trend": {
         "mode": "share",
