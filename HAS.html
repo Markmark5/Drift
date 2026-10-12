@@ -2,7 +2,7 @@
 <html lang="en"><head>
 <meta name="robots" content="noindex, nofollow"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HAS · Hays plc — Drift Tracker · FY26 Results · v5.4</title>
+<title>HAS · Hays plc — Drift Tracker · Q1 FY27 TU · v5.6</title>
 <style>
 :root{
  --red:#b3261e; --green:#1e7a45; --amber:#9a6a00;
@@ -79,6 +79,17 @@ table.plain th{background:var(--paper)}
 .bbulb{width:20px;height:20px;border-radius:50%;flex:0 0 20px;border:2px solid rgba(255,255,255,.25)}
 .bstrip .t{font-size:13px;color:#fff;font-weight:600}
 .bstrip .s{font-size:11px;color:#c9c6bd;margin-top:2px}
+/* movement row — 6.3c */
+.mvrow{margin-top:9px;border:1px dashed #57544c;border-radius:9px;padding:8px 12px;
+ display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.mvlab{font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#8d8981;
+ font-weight:700;flex:none}
+.mvval{font-size:13px;font-weight:700;color:#fff}
+.mvval .was{color:#8d8981;font-weight:600}
+.mvarw{font-weight:700}
+.mvarw.up{color:#21d05e}
+.mvarw.dn{color:#ff6b63}
+.mvsince{font-size:10px;color:#8d8981;margin-left:auto;flex:none}
 details.guide{margin:14px 0;border:1px solid var(--line);border-radius:10px;overflow:hidden}
 details.guide>summary{background:#2b2a26;color:#fff;padding:8px 15px;cursor:pointer;
  list-style:none;font-family:'Caveat',"Comic Sans MS",cursive;font-weight:700;font-size:24px}
@@ -127,7 +138,7 @@ details.guide>summary .em{font-size:22px;margin-right:6px}
 table.grid{table-layout:fixed; width:100%; min-width:1000px; border-collapse:collapse; font-size:12.5px}
 table.grid th, table.grid td{border:1px solid var(--line); text-align:center; padding:7px 4px; vertical-align:top}
 table.grid col.lab{width:190px}
-table.grid col.per{width:calc((100% - 190px)/16)} /* 16 = period column count */
+table.grid col.per{width:calc((100% - 190px)/17)} /* 17 = period column count */
 .yband{background:#efedE7; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; font-weight:700}
 th.phead{cursor:pointer; user-select:none; font-size:11.5px; background:var(--paper)}
 th.phead:hover{background:#eceae4}
@@ -200,64 +211,64 @@ pre.json{background:var(--paper);border:1px solid var(--line);border-radius:8px;
 </style></head><body>
 
 <!-- ================= VERDICT CARD ================= -->
-<div class="card up">
+<div class="card watch">
  <div class="rail">
  <div class="badge">
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
-  stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+  stroke-linecap="round" stroke-linejoin="round"><line x1="2" y1="12" x2="22" y2="12"/></svg>
  </div>
- <div class="raillab">Turning up</div>
+ <div class="raillab">Stable — watch</div>
  <div class="railgap"></div>
  <div class="railtkr">HAS</div>
  <div class="railco">Hays plc</div>
  <div class="railgap"></div>
  </div>
  <div class="cbody">
- <h1 class="chead">Guide raised then beaten — FY26 profit +7% after five falling halves; fee declines easing, but Perm wobbled late and exceptionals roll on.</h1>
+ <h1 class="chead">Fees improving to −3% and Perm −7%, but the first Q1 update in the record with no profit statement at all — the words broke before the numbers.</h1>
  <div class="pills">
-  <span class="pill">FY Results · 20 Aug 2026</span>
+  <span class="pill">Q1 TU · 12 Oct 2026</span>
   <span class="pill">FY-end 30 Jun</span>
   <span class="dot">·</span>
-  <span class="pill">B/S: clean, net cash</span>
+  <span class="pill">B/S: clean, seasonal debt</span>
  </div>
  <div class="lights">
   <div class="lamp">
   <div class="ldate">Jul-26 · Aug-26</div>
   <div class="bulb b-g"></div>
   <div class="lname">Numbers &amp; guide</div>
-  <div class="lreason">RAISE to top of range, then delivered above it; H2 profit +42%</div>
-  </div>
-  <div class="lamp amb">
-  <div class="ldate">Aug-26</div>
-  <div class="bulb b-a"></div>
-  <div class="lname">Language</div>
-  <div class="lreason">Two +1 prints after twelve at 0 or below — one rise, not a run</div>
+  <div class="lreason">RAISE delivered; Q1 Perm and headcount both better by 6pp</div>
   </div>
   <div class="lamp">
-  <div class="ldate">Jul-26</div>
-  <div class="bulb b-g"></div>
+  <div class="ldate">Oct-26</div>
+  <div class="bulb b-r"></div>
+  <div class="lname">Language</div>
+  <div class="lreason">Profit-line anchor dropped — every prior Q1 update carried one</div>
+  </div>
+  <div class="lamp amb">
+  <div class="ldate">Oct-26</div>
+  <div class="bulb b-a"></div>
   <div class="lname">Disclosure</div>
-  <div class="lreason">Q4 quarterly update resumed after FY25's slot became an ad-hoc warning</div>
+  <div class="lreason">Profit unmentioned vs Q1 habit — same absence as Language, counted once</div>
   </div>
   <div class="tally"><b>2/3</b><span>FIRED</span></div>
   <div class="bstrip" style="flex-basis:100%">
   <div class="bsweep">
    <div class="bbulb b-g"></div>
-   <div><div class="t">clean · net cash £20m</div>
+   <div><div class="t">clean · seasonal net debt</div>
    <div class="s">Sweep sits outside the 2-of-3 count</div></div>
   </div>
   <div class="tw">
-   <div class="plab">TREND WATCH · FY26 FC (AUG-26) VS H2 (Y-ON-Y) GROWTH</div>
+   <div class="plab">TREND WATCH · Q1% VS 3YR% · FC OCT-26</div>
    <div class="dset">
    <div class="dcell"><div class="dnm">REVENUE</div>
     <svg width="50" height="50" viewBox="0 0 42 42">
     <circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/>
     <circle cx="21" cy="21" r="15.915" fill="none" stroke="#21d05e" stroke-width="5"
-    stroke-dasharray="30 100" transform="rotate(-90 21 21)" stroke-linecap="round"/>
+    stroke-dasharray="50 100" transform="rotate(-90 21 21)" stroke-linecap="round"/>
     <line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/>
     </svg>
-    <div class="dfig" style="color:#7bd88f">+6.1pp</div>
-    <div class="dtrend">-3.4% → <b>-2.2%</b></div><div class="dfc">fc -8.3%</div></div>
+    <div class="dfig" style="color:#7bd88f">+5.3pp</div>
+    <div class="dtrend">H2 <b>−2.2%</b> vs fc −7.5%</div><div class="dfc">at FY R</div></div>
    <div class="dcell"><div class="dnm">EBITDA</div>
     <svg width="50" height="50" viewBox="0 0 42 42">
     <circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/>
@@ -275,6 +286,12 @@ pre.json{background:var(--paper);border:1px solid var(--line);border-radius:8px;
    </div>
   </div>
   </div>
+  <div class="mvrow" style="flex-basis:100%">
+  <span class="mvlab">Since last RNS</span>
+  <span class="mvval"><span class="was">Turning up · 2/3</span>
+  <span class="mvarw dn">→</span> Stable — watch · 2/3</span>
+  <span class="mvsince">measured from FY R · 2026-08-20</span>
+  </div>
  </div>
  <details class="guide">
   <summary><span class="em">💡</span>Idiot's guide to the company — What Hays plc actually does</summary>
@@ -282,25 +299,25 @@ pre.json{background:var(--paper);border:1px solid var(--line);border-radius:8px;
   <h4>What it is</h4><p>Hays is a recruitment firm. Companies pay it to find them staff — either permanent hires (Hays takes a one-off fee per placement) or temporary workers and contractors (Hays takes a slice of every hour worked). The money Hays keeps after paying the temps is called net fees, and that's the number that matters — turnover includes the temps' wages, which just pass through.</p>
   <h4>Where it's based</h4><p>London-listed, operating in 23 countries. Germany is the biggest single market, then UK &amp; Ireland and Australia. About two-thirds of net fees now come from temp and contracting work, one-third from permanent placements.</p>
   <h4>How it makes money</h4><p>Two engines. Temp &amp; Contracting hums along steadily — workers on assignment keep generating fees week after week. Perm is the boom-bust engine: fees only land when someone is actually hired, so when bosses get nervous, hiring freezes and Perm fees vanish fast.</p><p><b>Who controls the price.</b> The job market does. Hays can cut its own costs but cannot make clients hire. Wage inflation helps fees; hiring freezes crush them.</p>
-  <h4>What's changed recently</h4><p>Three years of shrinking fees forced deep surgery: a third of fee-earners gone, 74 offices closed in FY26 alone, six European businesses sold, and a new "Momentum" plan promising £50m more cost savings in FY27. The restructuring bills ran £89.6m in FY26, so the accounts show a statutory loss even as underlying profit turned up.</p>
+  <h4>What's changed recently</h4><p>Three years of shrinking fees forced deep surgery: a third of fee-earners gone, 74 offices closed in FY26 alone, six European businesses sold, and a new "Momentum" plan promising £50m more cost savings in FY27. The restructuring bills ran £89.6m in FY26, so the accounts show a statutory loss even as day-to-day profit turned up.</p>
   <p class="vintage"><em>The bet, in one line: costs have been cut faster than fees are falling, so any hiring recovery drops straight into profit — if Perm behaves.</em></p>
   <p class="vintage">Stable facts, as at 20 Aug 2026.</p>
   </div>
  </details>
  <div class="boxes">
-  <div class="box"><div class="lb">Current state</div><div class="hl2">£48.6m, +7%</div>
-  <p>First annual profit growth since FY23; beat the top of the range Hays itself pointed to five weeks earlier; fees still fell 8% LFL.</p></div>
+  <div class="box"><div class="lb">Current state</div><div class="hl2">−3%, no guide</div>
+  <p>Fees at their best in 13 quarters and September at −2% — but nothing said about profit, against last year's "broadly stable" Q1 anchor.</p></div>
   <div class="box"><div class="lb">Warning you get</div><div class="hl2">~9 months</div>
-  <p>Perm turned negative Apr-2023, nine months before the first cut. Perm now −7% and improving — but softened through Q4 in several markets.</p></div>
-  <div class="box"><div class="lb">Argues against</div><div class="hl2">Rebased bar</div>
-  <p>The beat is against a consensus cut four times in two years; the profit rise is cost-cut, not fee-grown; net cash £20.1m is the lowest year-end on record.</p></div>
-  <div class="box"><div class="lb">Next test</div><div class="hl2">12 Oct 2026</div>
-  <p>Q1 27 TU. Group LFL better than −5% with "in line" held confirms; a Perm relapse past −12% or a retreat to "Board's expectations" breaks it.</p></div>
+  <p>Perm turned negative Apr-2023, nine months before the first cut. Perm now −7% and 6pp better than last year — the lead metric is on side; the profit silence isn't.</p></div>
+  <div class="box"><div class="lb">Argues against</div><div class="hl2">Format, not fact</div>
+  <p>Q1 TUs are the thinnest document and a new CEO's strategy-led statement may simply have re-templated; Q2 TUs habitually carry the H1 consensus figure.</p></div>
+  <div class="box"><div class="lb">Next test</div><div class="hl2">14 Jan 2027</div>
+  <p>Q2 27 TU. An H1 profit figure "in line with consensus" restores the anchor and the green read; a second update without one is a withdrawal.</p></div>
  </div>
  <ul class="cbul">
-  <li>Adjusted-vs-statutory wedge recurring and widening — exceptionals £42.2m (FY24) → £30.7m (FY25) → £89.6m (FY26), statutory loss £54.5m, more guided for FY27; the recovery's price is still being paid below the line.</li>
-  <li>Precedent mechanism: at every prior turn the Perm print moved first — it is the one metric not yet confirming this one, having softened through Q4 in several markets.</li>
-  <li>What flips it: year-end net cash has fallen three straight years (56.8 → 37.0 → 20.1) despite 189% cash conversion — a fourth decline at FY27, or a Q1 Perm relapse, kills the green read; two more improving prints confirm it.</li>
+  <li>The profit absence is one fact scored in two places — Language counts it, Disclosure is amber and doesn't, by design; the trigger drawer holds the reasoning and the operator override.</li>
+  <li>Net debt c.£45m is £5m worse than the like quarter last year despite better fees — exceptional cash payments and share-award purchases are the leak, and FY27 exceptionals are still unquantified.</li>
+  <li>What flips it: Q2 TU citing H1 consensus → back to TURNING UP; Perm relapsing below −12% with the anchor still absent → TURNING DOWN.</li>
  </ul>
  </div>
 </div>
@@ -320,19 +337,19 @@ pre.json{background:var(--paper);border:1px solid var(--line);border-radius:8px;
 </div></details>
 
 <!-- ================= §2 GRID ================= -->
-<h2>§2 · Unified grid — the five, Q1 FY23 → Q4 FY26</h2>
+<h2>§2 · Unified grid — the five, Q1 FY23 → Q1 FY27</h2>
 <div class="gridwrap">
 <table class="grid" id="grid2">
-<colgroup><col class="lab"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"></colgroup>
-<tr class="yband"><td></td><td colspan="4">FY23</td><td colspan="4">FY24</td><td colspan="4">FY25</td><td colspan="4">FY26</td></tr>
+<colgroup><col class="lab"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"></colgroup>
+<tr class="yband"><td></td><td colspan="4">FY23</td><td colspan="4">FY24</td><td colspan="4">FY25</td><td colspan="4">FY26</td><td>FY27</td></tr>
 <tr id="pheadrow"><th class="lab"></th>
 <th class="phead" data-p="Q1">Q1</th><th class="phead" data-p="Q2">Q2</th><th class="phead" data-p="Q3">Q3</th><th class="phead" data-p="Q4">Q4</th>
 <th class="phead" data-p="Q1">Q1</th><th class="phead" data-p="Q2">Q2</th><th class="phead" data-p="Q3">Q3</th><th class="phead" data-p="Q4">Q4</th>
 <th class="phead" data-p="Q1">Q1</th><th class="phead" data-p="Q2">Q2</th><th class="phead" data-p="Q3">Q3</th><th class="phead" data-p="Q4">Q4</th>
-<th class="phead" data-p="Q1">Q1</th><th class="phead" data-p="Q2">Q2</th><th class="phead" data-p="Q3">Q3</th><th class="phead bs-col" data-p="Q4">⭐ FY R · Aug-26</th></tr>
+<th class="phead" data-p="Q1">Q1</th><th class="phead" data-p="Q2">Q2</th><th class="phead" data-p="Q3">Q3</th><th class="phead" data-p="Q4">Q4</th><th class="phead bs-col" data-p="Q1">⭐ Q1 TU · Oct-26</th></tr>
 
-<tr class="secbar"><td colspan="17">Rank 1 — Group net fee LFL growth % <span class="nat">· arrow = up or down versus the same period last year, band 5 points</span></td></tr>
-<tr class="strip"><td class="lab">Period</td><td>Q1</td><td>Q2</td><td>Q3</td><td>Q4</td><td>Q1</td><td>Q2</td><td>Q3</td><td>Q4</td><td>Q1</td><td>Q2</td><td>Q3</td><td>Q4</td><td>Q1</td><td>Q2</td><td>Q3</td><td>Q4</td></tr>
+<tr class="secbar"><td colspan="18">Rank 1 — Group net fee LFL growth % <span class="nat">· arrow = up or down versus the same period last year, band 5 points</span></td></tr>
+<tr class="strip"><td class="lab">Period</td><td>Q1</td><td>Q2</td><td>Q3</td><td>Q4</td><td>Q1</td><td>Q2</td><td>Q3</td><td>Q4</td><td>Q1</td><td>Q2</td><td>Q3</td><td>Q4</td><td>Q1</td><td>Q2</td><td>Q3</td><td>Q4</td><td>Q1</td></tr>
 <tr class="vrow"><td class="lab">% · vs same period last year</td>
 <td><span class="val">+15</span><span class="delta">—</span></td>
 <td><span class="val">+8</span><span class="delta">—</span></td>
@@ -349,11 +366,12 @@ pre.json{background:var(--paper);border:1px solid var(--line);border-radius:8px;
 <td><span class="val"><span class="neg">−8</span></span><span class="delta">🟢↗</span></td>
 <td><span class="val"><span class="neg">−10</span></span><span class="delta">🟡→</span></td>
 <td><span class="val"><span class="neg">−8</span></span><span class="delta">🟡→</span></td>
-<td class="bs-col"><span class="val"><span class="neg">−5</span></span><span class="delta">🟡→</span></td></tr>
-<tr class="agg"><td class="lab">FY LFL</td><td colspan="4"><span class="aval">+6%</span></td><td colspan="4"><span class="aval">−12%</span></td><td colspan="4"><span class="aval">−11%</span></td><td colspan="4"><span class="aval">−8%</span></td></tr>
+<td><span class="val"><span class="neg">−5</span></span><span class="delta">🟡→</span></td>
+<td class="bs-col"><span class="val"><span class="neg">−3</span></span><span class="delta">🟡→</span></td></tr>
+<tr class="agg"><td class="lab">FY LFL</td><td colspan="4"><span class="aval">+6%</span></td><td colspan="4"><span class="aval">−12%</span></td><td colspan="4"><span class="aval">−11%</span></td><td colspan="4"><span class="aval">−8%</span></td><td><span class="aval">—</span></td></tr>
 
-<tr class="secbar"><td colspan="17">Rank 2 — Perm net fee LFL growth % <span class="nat">· arrow = up or down versus the same period last year, band 5 points</span></td></tr>
-<tr class="strip"><td class="lab">Period</td><td>Q1</td><td>Q2</td><td>Q3</td><td>Q4</td><td>Q1</td><td>Q2</td><td>Q3</td><td>Q4</td><td>Q1</td><td>Q2</td><td>Q3</td><td>Q4</td><td>Q1</td><td>Q2</td><td>Q3</td><td>Q4</td></tr>
+<tr class="secbar"><td colspan="18">Rank 2 — Perm net fee LFL growth % <span class="nat">· arrow = up or down versus the same period last year, band 5 points</span></td></tr>
+<tr class="strip"><td class="lab">Period</td><td>Q1</td><td>Q2</td><td>Q3</td><td>Q4</td><td>Q1</td><td>Q2</td><td>Q3</td><td>Q4</td><td>Q1</td><td>Q2</td><td>Q3</td><td>Q4</td><td>Q1</td><td>Q2</td><td>Q3</td><td>Q4</td><td>Q1</td></tr>
 <tr class="vrow"><td class="lab">% · vs same period last year</td>
 <td><span class="val">—</span><span class="delta">outside cadence</span></td>
 <td><span class="val">—</span><span class="delta">outside cadence</span></td>
@@ -370,11 +388,12 @@ pre.json{background:var(--paper);border:1px solid var(--line);border-radius:8px;
 <td><span class="val"><span class="neg">−13</span></span><span class="delta">🟢↗</span></td>
 <td><span class="val"><span class="neg">−14</span></span><span class="delta">🟡→</span></td>
 <td><span class="val"><span class="neg">−12</span></span><span class="delta">🟡→</span></td>
-<td class="bs-col"><span class="val"><span class="neg">−7</span></span><span class="delta">Δ n/a — no Q4 25 print</span></td></tr>
-<tr class="agg"><td class="lab">FY LFL</td><td colspan="4"><span class="aval">+3%</span></td><td colspan="4"><span class="aval">−17%</span></td><td colspan="4"><span class="aval">−17%</span></td><td colspan="4"><span class="aval">−12%</span></td></tr>
+<td><span class="val"><span class="neg">−7</span></span><span class="delta">Δ n/a — no Q4 25 print</span></td>
+<td class="bs-col"><span class="val"><span class="neg">−7</span></span><span class="delta">🟢↗</span></td></tr>
+<tr class="agg"><td class="lab">FY LFL</td><td colspan="4"><span class="aval">+3%</span></td><td colspan="4"><span class="aval">−17%</span></td><td colspan="4"><span class="aval">−17%</span></td><td colspan="4"><span class="aval">−12%</span></td><td><span class="aval">—</span></td></tr>
 
-<tr class="secbar"><td colspan="17">Rank 3 — Consultant headcount YoY % <span class="nat">· arrow = up or down versus the same period last year, band 5 points</span></td></tr>
-<tr class="strip"><td class="lab">Period</td><td>Q1</td><td>Q2</td><td>Q3</td><td>Q4</td><td>Q1</td><td>Q2</td><td>Q3</td><td>Q4</td><td>Q1</td><td>Q2</td><td>Q3</td><td>Q4</td><td>Q1</td><td>Q2</td><td>Q3</td><td>Q4</td></tr>
+<tr class="secbar"><td colspan="18">Rank 3 — Consultant headcount YoY % <span class="nat">· arrow = up or down versus the same period last year, band 5 points</span></td></tr>
+<tr class="strip"><td class="lab">Period</td><td>Q1</td><td>Q2</td><td>Q3</td><td>Q4</td><td>Q1</td><td>Q2</td><td>Q3</td><td>Q4</td><td>Q1</td><td>Q2</td><td>Q3</td><td>Q4</td><td>Q1</td><td>Q2</td><td>Q3</td><td>Q4</td><td>Q1</td></tr>
 <tr class="vrow"><td class="lab">% · vs same period last year</td>
 <td><span class="val">—</span><span class="delta">outside cadence</span></td>
 <td><span class="val">—</span><span class="delta">outside cadence</span></td>
@@ -391,11 +410,12 @@ pre.json{background:var(--paper);border:1px solid var(--line);border-radius:8px;
 <td><span class="val"><span class="neg">−15</span></span><span class="delta">🟡→</span></td>
 <td><span class="val"><span class="neg">−15</span></span><span class="delta">🟡→</span></td>
 <td><span class="val"><span class="neg">−14</span></span><span class="delta">🟡→</span></td>
-<td class="bs-col"><span class="val"><span class="neg">−12</span>ʳ</span><span class="delta">🟡→</span></td></tr>
-<tr class="agg"><td class="lab">FY-end position</td><td colspan="4"><span class="aval">—</span></td><td colspan="4"><span class="aval">−18%</span></td><td colspan="4"><span class="aval">−14%</span></td><td colspan="4"><span class="aval">−12% LFL</span><span class="anote">5,194 heads</span></td></tr>
+<td><span class="val"><span class="neg">−12</span>ʳ</span><span class="delta">🟡→</span></td>
+<td class="bs-col"><span class="val"><span class="neg">−9</span>ʳ</span><span class="delta">🟢↗</span></td></tr>
+<tr class="agg"><td class="lab">FY-end position</td><td colspan="4"><span class="aval">—</span></td><td colspan="4"><span class="aval">−18%</span></td><td colspan="4"><span class="aval">−14%</span></td><td colspan="4"><span class="aval">−12% LFL</span><span class="anote">5,194 heads</span></td><td><span class="aval">—</span></td></tr>
 
-<tr class="secbar"><td colspan="17">Rank 4 — Pre-exceptional operating profit £m <span class="nat">· 🔴↘ any down half · 🟢↗ up on the half before</span></td></tr>
-<tr class="strip"><td class="lab">Period</td><td>—</td><td>H1</td><td>—</td><td>H2†</td><td>—</td><td>H1</td><td>—</td><td>H2†</td><td>—</td><td>H1</td><td>—</td><td>H2†</td><td>—</td><td>H1</td><td>—</td><td>H2†</td></tr>
+<tr class="secbar"><td colspan="18">Rank 4 — Pre-exceptional operating profit £m <span class="nat">· 🔴↘ any down half · 🟢↗ up on the half before</span></td></tr>
+<tr class="strip"><td class="lab">Period</td><td>—</td><td>H1</td><td>—</td><td>H2†</td><td>—</td><td>H1</td><td>—</td><td>H2†</td><td>—</td><td>H1</td><td>—</td><td>H2†</td><td>—</td><td>H1</td><td>—</td><td>H2†</td><td>—</td></tr>
 <tr class="vrow"><td class="lab">£m · Δ vs prior print</td>
 <td><span class="val">—</span><span class="delta">outside cadence</span></td>
 <td><span class="val">97.0</span><span class="delta">—</span></td>
@@ -412,11 +432,12 @@ pre.json{background:var(--paper);border:1px solid var(--line);border-radius:8px;
 <td><span class="val">—</span><span class="delta">outside cadence</span></td>
 <td><span class="val">20.1</span><span class="delta">+0.0% 🟡→</span></td>
 <td><span class="val">—</span><span class="delta">outside cadence</span></td>
-<td class="bs-col"><span class="val">28.5†</span><span class="delta">+41.8% 🟢↗</span></td></tr>
-<tr class="agg"><td class="lab">FY aggregate</td><td colspan="4"><span class="aval">197.0</span><span class="anote">−6%</span></td><td colspan="4"><span class="aval">105.1</span><span class="anote">−47%</span></td><td colspan="4"><span class="aval">45.6</span><span class="anote">−57%</span></td><td colspan="4"><span class="aval">48.6</span><span class="anote">+7%</span></td></tr>
+<td><span class="val">28.5†</span><span class="delta">+41.8% 🟢↗</span></td>
+<td class="bs-col"><span class="val">—</span><span class="delta">outside cadence</span></td></tr>
+<tr class="agg"><td class="lab">FY aggregate</td><td colspan="4"><span class="aval">197.0</span><span class="anote">−6%</span></td><td colspan="4"><span class="aval">105.1</span><span class="anote">−47%</span></td><td colspan="4"><span class="aval">45.6</span><span class="anote">−57%</span></td><td colspan="4"><span class="aval">48.6</span><span class="anote">+7%</span></td><td><span class="aval">—</span></td></tr>
 
-<tr class="secbar"><td colspan="17">Rank 5 — Net cash / (net debt) £m <span class="nat">· arrow = up or down since the last print</span></td></tr>
-<tr class="strip"><td class="lab">Position at</td><td>Sep-22</td><td>Dec-22</td><td>Mar-23</td><td>Jun-23</td><td>Sep-23</td><td>Dec-23</td><td>Mar-24</td><td>Jun-24</td><td>Sep-24</td><td>Dec-24</td><td>Mar-25</td><td>Jun-25</td><td>Sep-25</td><td>Dec-25</td><td>Mar-26</td><td>Jun-26</td></tr>
+<tr class="secbar"><td colspan="18">Rank 5 — Net cash / (net debt) £m <span class="nat">· arrow = up or down since the last print</span></td></tr>
+<tr class="strip"><td class="lab">Position at</td><td>Sep-22</td><td>Dec-22</td><td>Mar-23</td><td>Jun-23</td><td>Sep-23</td><td>Dec-23</td><td>Mar-24</td><td>Jun-24</td><td>Sep-24</td><td>Dec-24</td><td>Mar-25</td><td>Jun-25</td><td>Sep-25</td><td>Dec-25</td><td>Mar-26</td><td>Jun-26</td><td>Sep-26</td></tr>
 <tr class="vrow"><td class="lab">£m · Δ vs prior print</td>
 <td><span class="val">—</span><span class="delta">before record starts</span></td>
 <td><span class="val">101.4</span><span class="delta">—</span></td>
@@ -433,106 +454,109 @@ pre.json{background:var(--paper);border:1px solid var(--line);border-radius:8px;
 <td><span class="val"><span class="neg">(40)</span>‡</span><span class="delta neg">−77 🔴↘</span></td>
 <td><span class="val">40.3‡</span><span class="delta">+80 🟢↗</span></td>
 <td><span class="val"><span class="neg">(15)</span>‡</span><span class="delta neg">−55 🔴↘</span></td>
-<td class="bs-col"><span class="val">20.1‡</span><span class="delta">+35 🟢↗</span></td></tr>
-<tr class="agg"><td class="lab">FY-end position</td><td colspan="4"><span class="aval">135.6</span></td><td colspan="4"><span class="aval">56.8</span><span class="anote">−78.8</span></td><td colspan="4"><span class="aval">37.0</span><span class="anote">−19.8</span></td><td colspan="4"><span class="aval">20.1</span><span class="anote">−16.9</span></td></tr>
+<td><span class="val">20.1‡</span><span class="delta">+35 🟢↗</span></td>
+<td class="bs-col"><span class="val"><span class="neg">(45)</span>‡</span><span class="delta">−65 🔴↘</span></td></tr>
+<tr class="agg"><td class="lab">FY-end position</td><td colspan="4"><span class="aval">135.6</span></td><td colspan="4"><span class="aval">56.8</span><span class="anote">−78.8</span></td><td colspan="4"><span class="aval">37.0</span><span class="anote">−19.8</span></td><td colspan="4"><span class="aval">20.1</span><span class="anote">−16.9</span></td><td><span class="aval">—</span></td></tr>
 </table>
 </div>
 
 <details class="top"><summary>§2 workings — card strip · notes · methodology</summary><div>
 <details class="sub"><summary>🔲 Card strip — wall preview &amp; index entry</summary><div>
 <div class="stripprev">
-<span class="rl"></span><span class="ph">Q4 24</span><span class="ph">Q1 25</span><span class="ph">Q2 25</span><span class="ph">Q3 25</span><span class="ph">Q4 25</span><span class="ph">Q1 26</span><span class="ph">Q2 26</span><span class="ph">Q3 26</span><span class="ph">Q4 26</span>
-<span class="rl">R1</span><span class="c cr"></span><span class="c cr"></span><span class="c ca"></span><span class="c ca"></span><span class="c cg"></span><span class="c cg"></span><span class="c ca"></span><span class="c ca"></span><span class="c ca bs"></span>
-<span class="rl">R2</span><span class="c cr"></span><span class="c ca"></span><span class="c ca"></span><span class="c ca"></span><span class="c cx"></span><span class="c cg"></span><span class="c ca"></span><span class="c ca"></span><span class="c cn bs"></span>
-<span class="rl">R3</span><span class="c cr"></span><span class="c cr"></span><span class="c ca"></span><span class="c ca"></span><span class="c ca"></span><span class="c ca"></span><span class="c ca"></span><span class="c ca"></span><span class="c ca bs"></span>
-<span class="rl">R4</span><span class="c cr"></span><span class="c cn"></span><span class="c cr"></span><span class="c cn"></span><span class="c cr"></span><span class="c cn"></span><span class="c ca"></span><span class="c cn"></span><span class="c cg bs"></span>
-<span class="rl">R5</span><span class="c cg"></span><span class="c cr"></span><span class="c cg"></span><span class="c cr"></span><span class="c cg"></span><span class="c cr"></span><span class="c cg"></span><span class="c cr"></span><span class="c cg bs"></span>
+<span class="rl"></span><span class="ph">Q1 25</span><span class="ph">Q2 25</span><span class="ph">Q3 25</span><span class="ph">Q4 25</span><span class="ph">Q1 26</span><span class="ph">Q2 26</span><span class="ph">Q3 26</span><span class="ph">Q4 26</span><span class="ph">Q1 27</span>
+<span class="rl">R1</span><span class="c cr"></span><span class="c ca"></span><span class="c ca"></span><span class="c cg"></span><span class="c cg"></span><span class="c ca"></span><span class="c ca"></span><span class="c ca"></span><span class="c ca bs"></span>
+<span class="rl">R2</span><span class="c ca"></span><span class="c ca"></span><span class="c ca"></span><span class="c cx"></span><span class="c cg"></span><span class="c ca"></span><span class="c ca"></span><span class="c cn"></span><span class="c cg bs"></span>
+<span class="rl">R3</span><span class="c cr"></span><span class="c ca"></span><span class="c ca"></span><span class="c ca"></span><span class="c ca"></span><span class="c ca"></span><span class="c ca"></span><span class="c ca"></span><span class="c cg bs"></span>
+<span class="rl">R4</span><span class="c cn"></span><span class="c cr"></span><span class="c cn"></span><span class="c cr"></span><span class="c cn"></span><span class="c ca"></span><span class="c cn"></span><span class="c cg"></span><span class="c cn bs"></span>
+<span class="rl">R5</span><span class="c cr"></span><span class="c cg"></span><span class="c cr"></span><span class="c cg"></span><span class="c cr"></span><span class="c cg"></span><span class="c cr"></span><span class="c cg"></span><span class="c cr bs"></span>
 </div>
 <pre class="json" id="entrycopy"></pre>
 </div></details>
 <details class="sub"><summary>Notes — Ranks 1–5</summary><div>
-<p><b>R1.</b> Q4 FY26's −5% is the best print in 12 quarters; the Δrate turned green at Q4 FY25/Q1 FY26 — the earliest arithmetic sign of this turn, a year before the guide moved.</p>
-<p><b>R2.</b> Q4 FY26 shows −7% but scores nothing: the Q4 FY25 comparator was never printed (the slot's TU was replaced by the ad-hoc warning). Q4 TU noted Perm "softened slightly through the quarter in several markets" — the lead metric is not yet confirming.</p>
-<p><b>R3.</b> Q4 FY26's −12% is on an ex-disposals (LFL) basis ʳ, matching FY26 prelims' −12% LFL beside −14% actual; guided "broadly stable" headcount into Q1 27 — the first non-cutting stance since FY23.</p>
+<p><b>R1.</b> Q1 FY27's −3% is the best print in 13 quarters; the +5pp year-on-year move sits exactly at the ±5.0pp band edge and scores 🟡, not 🟢.</p>
+<p><b>R2.</b> Q1 FY27 −7%: 6pp better than last year (🟢↗) but unchanged from Q4 — improving on the year, held on the quarter; volumes −12%, average fee +5%. Q4 FY26 still scores nothing (no Q4 FY25 comparator ever printed).</p>
+<p><b>R3.</b> Q1 FY27 −9% YoY ex-disposals ʳ, −1% sequentially — consistent with the "broadly stable" Q1 guide given at the prelims; the first delivered non-cutting quarter since FY23.</p>
 <p><b>R4.</b> H2 FY26 £28.5m† is derived (48.6 − 20.1) and carries the derived-only watch-flag until H1 27 prints; +42% YoY is the print behind the Numbers &amp; guide lamp.</p>
-<p><b>R5.</b> Sequential rhythm is dividend/seasonal (standing comp-flag): like-quarter reads — Mar-26 (15) vs Mar-25 (30) improved; Sep-25 (40) vs Sep-24 (0) worsened; year-end −16.9 on the aggregate row is the third straight annual decline.</p>
+<p><b>R5.</b> Seasonal rhythm (standing comp-flag): the like-quarter read is Sep-26 (45) vs Sep-25 (40) — £5m worse despite better fees, driven by exceptional cash payments and share-award purchases, per the RNS.</p>
 </div></details>
 <details class="sub"><summary>Turn methodology &amp; restatement basis</summary><div>
 <p><b>Comparison bases.</b> R1/R2/R3 are rate metrics: the score is the pp move YEAR-ON-YEAR (this quarter's printed rate less the same quarter last year's), band ±5.0pp; the cell displays the printed rate, the emoji carries the score. R4 is a flow at its own half-yearly cadence on the quarterly spine (mixed-cadence rule — never resampled): scored SEQUENTIAL per Rule Set Q (any down half fires 🔴), YEAR-ON-YEAR retained here, not displayed: H1 24 −38% · H2 24 −55% · H1 25 −58% · H2 25 −55% · H1 26 −21% · H2 26 +42%. R5 is a snapshot: SEQUENTIAL Δ in cells, YEAR-ON-YEAR only on the aggregate row.</p>
 <p><b>Units.</b> R1/R2/R3 % · R4 £m · R5 £m — identical in section bar, row label and rendered values.</p>
 <p><b>Zero-crossing guard.</b> R5 crosses zero six times; percentage comparisons void; all sequential deltas scored against the £14m absolute band and marked ‡. R4's absolute band £10m — not required (no crossing).</p>
 <p><b>Derivations.</b> R4 H2† = FY − H1 in all four years, both inputs exact £m one-decimal, same pre-exceptional basis; no second route exists (H2 never printed); FY parent tie-outs exact. Derived-only turns are watch-flags until a printed sub-period corroborates.</p>
-<p><b>Restatements &amp; provenance.</b> Later exact governs "c.": Dec-23 c.£60m → 66.9 (Q3 FY24 TU) · Dec-24 c.£25m → 29.0 (Q3 FY25 TU) · Dec-25 c.£40m → 40.3 (H1 FY26 R). "c." carried where no later exact exists: 80, 75, (20), 0, (30), (40), (15). R3 Q4 FY26 ʳ: ex-disposals/LFL basis chosen to match the series' organic basis; −14% actual noted. R1 FY25/FY26 quarterlies anchored to the results statements' quarterly-growth notes (S); R3 Q4 FY25 from FY25 prelims narrative (N — statements checked, no % printed). Q4 FY25 pre-close figures were guides and are never carried as actuals. Buy/Sell column: all five quantified in the FY26 prelims.</p>
+<p><b>Restatements &amp; provenance.</b> Later exact governs "c.": Dec-23 c.£60m → 66.9 (Q3 FY24 TU) · Dec-24 c.£25m → 29.0 (Q3 FY25 TU) · Dec-25 c.£40m → 40.3 (H1 FY26 R). "c." carried where no later exact exists: 80, 75, (20), 0, (30), (40), (15). R3 Q4 FY26 ʳ: ex-disposals/LFL basis chosen to match the series' organic basis; −14% actual noted. R1 FY25/FY26 quarterlies anchored to the results statements' quarterly-growth notes (S); R3 Q4 FY25 from FY25 prelims narrative (N — statements checked, no % printed). Q4 FY25 pre-close figures were guides and are never carried as actuals. Q1 FY27 column: R1/R2/R3/R5 from the Q1 TU headline table and narrative (H; TU carries no statements); R3 on the ex-disposals basis ʳ as stated by the company; R5 "c.£45m" carried, ‡ band applies; R4 — (outside cadence, and the document carried no profit content — see §4). Buy/Sell column note: ⭐ is now the Q1 FY27 TU.</p>
 <p><b>Render rules.</b> All ranks render under the default rule; R4 under the mixed-cadence provision (values at half-end columns only). No B.2a rank, no ⌇ ladder.</p>
 </div></details>
 </div></details>
 <!-- ================= §2.0 ================= -->
-<h2>§2.0 · Current-state read — ⭐ FY26 Results, 20 Aug 2026</h2>
+<h2>§2.0 · Current-state read — ⭐ Q1 FY27 TU (12 Oct 2026)</h2>
 <div class="rowflex">
 <div class="bridge">
-<div class="bhead">🍺 IDIOT'S GUIDE TO THE OPERATING PROFIT BRIDGE — why profit went up (£45.6m → £48.6m)</div>
+<div class="bhead">🍺 IDIOT'S GUIDE TO THE NET FEES BRIDGE — why fees went down (−3% vs last year) <span style="float:right;font-size:14px;opacity:.8">⭐ Q1 TU · 12 Oct 2026</span></div>
 <table>
-<tr class="r"><td class="drv">📉 The fee bucket sprang a leak</td><td class="amt">−£66.9m</td><td>Clients hired fewer people, so the money Hays keeps from placements fell 7% — the leak's been slowing all year, but it's still a leak</td></tr>
-<tr class="g"><td class="drv">✂️ Scissors ran faster than the leak</td><td class="amt">+£69.9m</td><td>15% fewer average staff, smaller bonuses, 74 offices gone — the cost base was cut £69.9m, three million more than the fees that vanished</td></tr>
-<tr class="g"><td class="drv">💱 A saggy pound chipped in</td><td class="amt">+£2.1m</td><td>Profits earned in euros and Aussie dollars turn into more pounds when sterling droops (this sits inside the two rows above, not on top of them)</td></tr>
+<tr class="r"><td class="drv">🧊 Perm hiring still in the freezer up north</td><td class="amt">−7%</td><td>Bosses in Germany and France signed off 12% fewer permanent hires; pricier roles (average fee +5%) mopped up some of the damage</td></tr>
+<tr class="a"><td class="drv">🩹 The Temp book has nearly stopped bleeding</td><td class="amt">−1%</td><td>Contractor numbers only 3% down, German weekly hours steady, and Japan (+67%) and Spain (+26%) are sprinting — price and mix added 2% back</td></tr>
+<tr class="r"><td class="drv">🧳 Eight businesses packed off</td><td class="amt">−2pp reported</td><td>Reported fees fell 5%, not 3%: the gap is Thailand and Mexico closed plus six European countries sold — softened a touch by a weaker pound</td></tr>
 </table>
-<div class="cap"><b>So in one sentence:</b> Hays lost £67m of fee income and simply deleted £70m of costs, so profit crept up £3m. <b>Profit falls when:</b> fee declines re-accelerate past the scissors' pace, or the promised £50m of FY27 savings turns up late while Perm keeps sagging.</div>
+<div class="cap"><b>So in one sentence:</b> temps and contractors are nearly flat, permanent hiring in northern Europe is still frozen, and the headline looks 2 points worse because Hays sold the kit it no longer wanted. <b>Fees go back up when:</b> German and French bosses start signing permanent offers again, or the Japan/Spain/America sprinters get big enough to outweigh them.</div>
 </div>
-<div class="csbar"><div class="binner">
-<div class="bhead" style="margin:-13px -16px 10px">🌡️ CURRENT STATE — the read right now</div>
-<div class="lead">🟢 TURNING UP</div>
+<div class="csbar" style="background:#fdf4e3;border-color:#c98f16"><div class="binner">
+<div class="bhead" style="margin:-13px -16px 10px">🌡️ CURRENT STATE — the read right now <span style="float:right;font-size:14px;opacity:.8">⭐ Q1 TU · 12 Oct 2026</span></div>
+<div class="lead">🟡 STABLE—WATCH</div>
 <ul>
-<li>FY26 op profit £48.6m, +7% — first annual profit growth in three years, above the top of the £37–46m range.</li>
-<li>H2 FY26 profit £28.5m† vs £20.1m prior year: +42% — the recovery is second-half-loaded and delivered, not promised.</li>
-<li>Q4 fees −5% YoY, best print in 12 quarters; Perm improved to −7% from −12%.</li>
-<li>G RAISE at Q4 TU (Jul-26): "top of the consensus range" — first upward guide event in the record, then beaten.</li>
-<li>Q4 quarterly update resumed on normal schedule after FY25's slot was replaced by an ad-hoc warning.</li>
-<li>Trend Watch: revenue ran ~6pp ahead of what the FY26 forecast required.</li>
-<li>⚠️ Perm "softened slightly through the quarter in several markets" — the earliest-warning metric isn't confirming yet.</li>
-<li>⚠️ Further exceptionals guided for FY27; FY26 statutory loss £54.5m; net cash £20.1m is the lowest year-end in the record.</li>
+<li>Group fees −3% LFL — best print in 13 quarters; September exit rate −2%.</li>
+<li>Perm −7%: 6pp better than last year but unchanged from Q4 — held, not improved.</li>
+<li>No profit statement anywhere in the document — first Q1 update in the record without one; no consensus cited.</li>
+<li>Language fires on the dropped anchor; Disclosure amber — same absence, counted once.</li>
+<li>Headcount −9% YoY ex-disposals, −1% in the quarter — the "broadly stable" guide delivered.</li>
+<li>Net debt c.£45m vs c.£40m a year ago — worse at the like-quarter despite better fees.</li>
+<li>Trend Watch: revenue still ~5pp ahead of forecast requirement (carried from FY results).</li>
+<li>⚠️ "Ongoing fragility in Northern Europe" — Germany and France Perm named unresolved in the growth line.</li>
+<li>⚠️ Exceptional cash payments and share-award purchases draining cash; FY27 exceptionals still unquantified.</li>
 </ul>
 </div></div>
 </div>
 
 <details class="top"><summary>§2.0 workings — four checks · notes · sweep · Trend Watch · trigger detail</summary><div>
 <details class="sub"><summary>The four checks — workings behind the read</summary><div>
-<p><b>1 Sequential.</b> H2 26 op profit £28.5m† vs H1 26 £20.1m: +£8.4m, +42% — first sequential rise since H2 FY23. Q4 fees −5% vs Q3 −8%.</p>
-<p><b>2 Same-type vs last year.</b> FY26 R vs FY25 R: op profit 48.6 vs 45.6 (+7% actual, +3% LFL); net fees 905.5 vs 972.4 (−7%/−8% LFL); conversion 5.4% vs 4.7% (+70bps); statutory PBT −54.5 vs +1.5 (exceptionals 89.6 vs 30.7); EPS pre-exc 1.21p vs 1.31p (−8%, ETR 45%); dividend 0.44p vs 1.24p (lapping the rebase — final held at 0.29p); cash from ops 92.0 vs 128.3; net cash 20.1 vs 37.0.</p>
-<p><b>3 Derivable sub-periods.</b> Q4 printed in the prelims note (−5%, matching the Q4 TU); H2† derived above; parent (+7% FY) and latest sub-period (H2 +42%) agree upward — no front/back-loading divergence.</p>
-<p><b>4 Guidance vs prior guide.</b> Prior guide (Q4 TU, 9 Jul 2026): "top of the £37.0–46.0m consensus range", consensus £43.5m, 11 analysts. Delivered £48.6m — above the range top; company wording: "slightly exceeded guidance provided at our Q4 update". Forward: July/August "in line with our expectations"; no FY27 profit guide — habitual at every prelims in the record, so not a withdrawal. FY27 stated items: further c.£50m structural savings targeted, further exceptional costs, capex £30–35m, net finance c.£12m, ETR slightly below FY26.</p>
-<p><b>Decomposition.</b> The cost-savings driver has now carried the profit line for two consecutive periods (H1 26 flat, H2 26 up) — per the exhaustion rule, a third period leaning on savings alone without fee stabilisation weakens the read.</p>
+<p><b>1 Sequential.</b> Group −3% vs Q4 26's −5%; Perm −7% vs −7% (held); Temp −1% vs −3%; September exit rate −2%. Headcount −1% in the quarter; net debt c.£45m vs £20.1m net cash at Jun-26 (seasonal, comp-flag).</p>
+<p><b>2 Same-type vs last year (Q1 FY26 TU, 10 Oct 2025 — re-opened from source).</b> Group −3% vs −8%; Perm −7% vs −13%; Temp −1% vs −5%; headcount −9% ex-disposals vs −15%; net debt c.£45m vs c.£40m (£5m worse — the only line not improving); profit: no statement vs last year's "broadly stable YoY……in line with our expectations"; cost base: not quantified (sixth document) vs c.£74m. Drawer spot-check: Q1 FY26 TU verified.</p>
+<p><b>3 Derivable sub-periods.</b> None — a Q1 TU carries no derivable sub-periods; the September exit rate (−2%) is a non-standard sub-period, used here only.</p>
+<p><b>4 Guidance vs prior guide.</b> FY26 prelims gave no FY27 profit guide (habitual); this document gives none and carries no profit-line expectations anchor and no consensus reference at all — "in line with our expectations" attaches to fees and net debt only. FY27 cost-savings guide reiterated (c.£50m p.a.; c.£10m delivered in Q1; c.£125m cumulative since FY24). G column: flat.</p>
+<p><b>Text re-read (absence carve-out):</b> 3 documents re-opened — Q1 TUs of 12 Oct 2023, 11 Oct 2024, 10 Oct 2025; every one carried a profit-line expectations statement. Habit established at Q1 grain; the absence scores −1.</p>
 </div></details>
 <details class="sub"><summary>Notes — §2.0</summary><div>
-<p>The bridge's FX row (+£2.1m op profit; +£14.9m net fees) is a component of the two main rows, not additive — reported bridge ties: −66.9 + 69.9 = +3.0 = 48.6 − 45.6 ✓.</p>
+<p>The −2pp reported-vs-LFL gap is country closures and disposals (Thailand, Mexico, six European countries) partially offset by FX; portfolio now heading to 16 core countries, with seven more businesses in "advanced discussions" — watch for further perimeter changes in Q2.</p>
 </div></details>
-<details class="sub"><summary>Balance-sheet sweep — FY26 R</summary><div>
-<p><b>Tier-1:</b> none. Net cash £20.1m; going-concern note standard (stress case judged "remote"); covenants — interest cover ≥4:1, net debt/EBITDA ≤2.5:1 — untested at current positions. <b>Tier-2:</b> none new; FY25's dividend rebase is now lapped (final held 0.29p, cover 2.8x, within stated 2–3x policy).</p>
-<p><b>Wedge check — recurring and widening:</b> exceptionals £42.2m (FY24) → £30.7m (FY25) → £89.6m (FY26); statutory PBT −£54.5m against adjusted +£35.1m; further exceptionals guided for FY27, "materially lower" only committed thereafter → verdict bullet.</p>
-<p><b>Solvency grep:</b> going concern / material uncertainty / covenant / subsequent events — hits read, all boilerplate; nothing renders.</p>
-<p><b>Mirror notes:</b> cash conversion 189%; debtor days 36 (37); bad debts historically low. Year-end net cash has fallen three consecutive year-ends (135.6 → 56.8 → 37.0 → 20.1) — not a listed tier condition (net cash falling, not net debt rising) but carried to the verdict.</p>
+<details class="sub"><summary>Balance-sheet sweep — ⭐ Q1 FY27 TU</summary><div>
+<p><b>Q1 FY27 TU (no statements — sweep runs on results documents; cash line checked):</b> c.£45m net debt, stated "in line with our expectations" and attributed to normal seasonal cashflows, cash exceptional payments, and share purchases for the all-colleague share award. No Tier-1, no Tier-2. Like-quarter comparison (Sep-25 c.£40m net debt) is £5m worse — carried to the verdict as a note, not a flag.</p>
+<p><b>Standing from FY26 R:</b> wedge recurring and widening (exceptionals £42.2m → £30.7m → £89.6m; FY26 statutory loss £54.5m; further exceptionals guided for FY27, "materially lower" only thereafter). Year-end net cash down three straight year-ends (56.8 → 37.0 → 20.1). Covenants untested; going-concern boilerplate.</p>
+<p><b>Strip: green — clean · seasonal net debt.</b></p>
 </div></details>
 <details class="sub"><summary>Trend Watch workings</summary><div>
+<p><b>Numbers-light document.</b> The Q1 TU quantifies no turnover, EBITDA or PBT, so share mode has no period actual; per the carried-forward rule the last quantified reading is carried with its source labelled on the panel ("at FY R"). Datablock re-fetched 12 Oct 2026: savedAt 2026-10-09 — 3 days before the Buy/Sell RNS, inside the 14-day window (pre-announcement consensus, the correct comparator).</p>
 <table class="plain">
-<tr><th>Metric</th><th>Basis</th><th>Period actual</th><th>Prior-year comparator</th><th>Norm</th><th>FY1 fc &amp; date</th><th>Gap</th><th>Sources</th><th>Ranked in §2?</th></tr>
-<tr><td>REVENUE</td><td>Turnover, reported</td><td>H2 26† £3,168.7m → YoY −2.2% (H1 26 −3.4% context)</td><td>H2 25† £3,241.6m</td><td>Growth mode — comparator is the latest sub-period, no share norm</td><td>£6,056.2m · Aug-26 (savedAt 20-Aug-2026, same-day = pre-announcement consensus, inside 14-day window)</td><td><b>+6.1pp</b> 🟢 (delivered −2.2% minus required −8.3%; required = 6,056.2 ÷ FY25 6,607.0 − 1)</td><td>H1 26 3,252.5 S (H1 26 R income stmt) · H1 25 3,365.4 S (H1 25 R) · FY25 6,607.0 S · FY26 6,421.2 S; both H2 derived †</td><td>N — this table is the metric's entire audit trail</td></tr>
-<tr><td>EBITDA</td><td>—</td><td>n/a</td><td>n/a</td><td>—</td><td>£105.0m</td><td>n/a</td><td>Block basis is statutory-adjacent (verified vs H1 FY24: 68.6 ≈ statutory OP 32.1 + D&amp;A 34.8); FY26 statutory op profit −£41.0m — exceptionals distort the base and cross zero</td><td>N</td></tr>
-<tr><td>PBT</td><td>—</td><td>n/a</td><td>n/a</td><td>—</td><td>£32.6m</td><td>n/a</td><td>Block PBT basis is statutory (1y-ago H1 9.1 = H1 FY25 statutory ✓); H2 25† statutory base −£7.6m — negative base, growth void</td><td>N</td></tr>
+<tr><th>Metric</th><th>Basis</th><th>Carried reading (source: FY26 R, growth-mode arithmetic)</th><th>FY1 fc (Oct-26)</th><th>Gap</th><th>Ranked?</th></tr>
+<tr><td>REVENUE</td><td>Turnover, reported</td><td>H2 26† YoY −2.2% (3,168.7† vs 3,241.6†; H1 26 3,252.5 S, FY26 6,421.2 S, H1 25 3,365.4 S, FY25 6,607.0 S)</td><td>£5,938.0m → required −7.5% vs FY26 6,421.2</td><td><b>+5.3pp</b> 🟢 (delivered −2.2 minus required −7.5)</td><td>N — this table is the audit trail; carries the derived-only watch-flag until H1 27 prints</td></tr>
+<tr><td>EBITDA</td><td>—</td><td>n/a — FY26 statutory op profit −£41.0m; exceptionals distort the base</td><td>£114.0m</td><td>n/a</td><td>N</td></tr>
+<tr><td>PBT</td><td>—</td><td>n/a — H2 25† statutory base −£7.6m, negative base voids growth</td><td>£49.6m</td><td>n/a</td><td>N</td></tr>
 </table>
-<p>Sign convention: what the company delivered, minus what the forecast required; negative is behind. Growth-mode reading leans on H2† — carries the derived-only watch-flag until H1 27 prints.</p>
+<p>Sign convention: delivered minus required; negative is behind. Note the re-fetched block has FY1 moving to FY27 (fc Turnover £5,938.0m, fc PBT £49.6m, fc EBITDA £114.0m) — the required-growth figure updated from −8.3pp (Aug block) to −7.5pp, moving the carried gap from +6.1pp to +5.3pp. Arc: share lookup nearest row 5.0pp → LEN 50, ROT −90.</p>
 </div></details>
 <details class="sub"><summary>Trigger detail &amp; audit record</summary><div>
-<p><b>Condition 1 — Numbers &amp; guide: FIRED, green-shoot (Jul-26 · Aug-26).</b> G-column RAISE at the Q4 FY26 TU ("top of the £37.0–46.0m consensus range"), then delivered above the range top at the FY26 prelims; corroborated by margin expansion (conversion +70bps) and sequential profit growth (H2 26 +42%, † watch-flagged). Includes a G event → full weight.</p>
-<p><b>Condition 2 — Language: TECHNICALLY ADJACENT, NOT COUNTED (amber, Aug-26).</b> The mirror requires the Lexicon rising 2+ consecutive prints from 0 or below; the run is Q3 26 = 0 → Q4 26 = +1 → FY26 R = +1 — one rise then a hold. Amber; counts for nothing.</p>
-<p><b>Condition 3 — Disclosure: FIRED, green-shoot (Jul-26).</b> A dropped update resuming: the scheduled Q4 FY25 quarterly was never issued (⊘, replaced by the 19-Jun-25 ad-hoc pre-close warning); the Q4 FY26 TU restored the normal quarterly on schedule. Context annotation: the FY25 drop was itself explained (inside information required the pre-close), so the resumption is normalisation rather than pure expansion — annotated, counted.</p>
-<p><b>Count: 2 of 3, same direction (up) → alert, green-shoot.</b> Sweep sits outside the count; no Tier-1. WATCH-metric drift (periodic cost base gone dark — see §4) does not enter the count.</p>
+<p><b>Condition 1 — Numbers &amp; guide: FIRED, green-shoot (Jul-26 · Aug-26), unchanged.</b> The G RAISE (Q4 FY26 TU) delivered above the range top at FY26 prelims; corroborated this quarter by R2 Perm +6pp and R3 headcount +6pp year-on-year moves, both 🟢. No deterioration clause met: R1's +5pp sits at the band edge (🟡), no sequential decline, no cut.</p>
+<p><b>Condition 2 — Language: FIRED, deterioration (Oct-26).</b> Score −1 on the omitted profit-line expectations anchor — "an update omitting any expectations anchor where prior equivalents carried one" (Lexicon 🔴). Habit proven by re-opening all three prior Q1 TUs (Oct-23, Oct-24, Oct-25), each carrying a profit-line statement. Any print ≤ −1 fires. The prior two-print rise (+1, +1) is broken.</p>
+<p><b>Condition 3 — Disclosure: TECHNICALLY MET, NOT COUNTED (amber, Oct-26).</b> R4 profit ❌ against a 3-print Q1 habit of 🟡 qualitative. This is the same single absence that fired condition 2: the spec's deliberate double-count covers a cut sentence (a number event and a language event); an omission in the thinnest document type, where the prior cadence was qualitative only, is one fact — counted once, annotated here. The Jul-26 resumption green-shoot is superseded by this later deterioration on the same lamp. Operator override invited: counting it makes 3-of-3 mixed-direction.</p>
+<p><b>Count: 2 of 3 — but NOT converging:</b> condition 1 is a green-shoot, condition 2 a deterioration. Opposing fires do not make an alert; they make STABLE—WATCH, which is the direction call. Sweep clean, outside the count. WATCH-metric drift (cost base dark, sixth document) noted, never counted.</p>
+<p><b>Movement (5.3c):</b> up 2/3 → watch 2/3, from FY R 2026-08-20. Direction moved; count unmoved; lamps g·a·g → g·r·a.</p>
 </div></details>
 </div></details>
 
 <!-- ================= §3 ================= -->
-<h2>§3 · Text + G — guidance language, Feb-23 → Aug-26</h2>
+<h2>§3 · Text + G — guidance language, Feb-23 → Oct-26</h2>
 <table id="text3">
 <tr><th>Date</th><th>Doc</th><th>G</th><th>Verbatim forward-guidance phrase</th><th>Context</th><th>Score</th></tr>
-<tr><td colspan="6" style="padding:0"><button class="expander" id="exp3">▸ Show 12 earlier prints — Feb-23 to Jan-25</button></td></tr>
+<tr><td colspan="6" style="padding:0"><button class="expander" id="exp3">▸ Show 13 earlier prints — Feb-23 to Feb-25</button></td></tr>
 <tr class="hidden-old"><td>Feb-23</td><td class="doc" data-rowtype="H1R">FY23<br>H1 R</td><td>flat</td><td>"we expect to increase Group profitability and conversion rate in H2 versus H1"</td><td>Assumes stable markets; delivered — H2 100.0 vs H1 97.0</td><td>⚪ 0</td></tr>
 <tr class="hidden-old"><td>Apr-23</td><td class="doc" data-rowtype="Q3TU">FY23<br>Q3 TU</td><td>flat</td><td>"H2 FY23 operating profit and conversion rate will be modestly above H1 FY23"</td><td>Reiteration; FX re-translation −£3m vs the H1-results position noted</td><td>⚪ 0</td></tr>
 <tr class="hidden-old"><td>Jul-23</td><td class="doc" data-rowtype="Q4TU">FY23<br>Q4 TU</td><td>flat</td><td>"FY23 operating profit is expected to be in line with market consensus expectations of c.£196m"</td><td>Numeric, consensus-anchored; delivered £197.0m</td><td>⚪ 0</td></tr>
@@ -545,7 +569,7 @@ pre.json{background:var(--paper);border:1px solid var(--line);border-radius:8px;
 <tr class="hidden-old chg"><td>Aug-24</td><td class="doc" data-rowtype="FYR">FY24<br>FY R</td><td>flat</td><td>"Current trading in July and August has been in line with our expectations"</td><td>Delivered £105.1m; "near-term conditions remain challenging" alongside</td><td>⚪ 0</td></tr>
 <tr class="hidden-old chg"><td>Oct-24</td><td class="doc" data-rowtype="Q1TU">FY25<br>Q1 TU</td><td>flat</td><td>"pre-exceptional operating profit in H1 25 will be sequentially lower than H2 24"</td><td>Explicit pre-flagged down-half; periodic cost base guided lower (sub-£80m)</td><td>🔴🔴 −2</td></tr>
 <tr class="hidden-old"><td>Jan-25</td><td class="doc" data-rowtype="Q2TU">FY25<br>Q2 TU</td><td>🔴 CUT</td><td>"we expect H1 pre-exceptional operating profit of c.£25m, towards the lower end of the consensus range"</td><td>Perm slowed through December in EMEA, UK&amp;I, Germany; third cut in 13 months</td><td>🔴🔴 −2</td></tr>
-<tr class="chg"><td>Feb-25</td><td class="doc" data-rowtype="H1R">FY25<br>H1 R</td><td>—</td><td>"Perm job flow and activity levels……remain tough in EMEA (particularly France), UK&amp;I, and Germany"</td><td>Delivered £25.5m; no FY25 guide restated</td><td>🔴 −1</td></tr>
+<tr class="chg hidden-old"><td>Feb-25</td><td class="doc" data-rowtype="H1R">FY25<br>H1 R</td><td>—</td><td>"Perm job flow and activity levels……remain tough in EMEA (particularly France), UK&amp;I, and Germany"</td><td>Delivered £25.5m; no FY25 guide restated</td><td>🔴 −1</td></tr>
 <tr class="chg"><td>Apr-25</td><td class="doc" data-rowtype="Q3TU">FY25<br>Q3 TU</td><td>flat</td><td>"despite ongoing uncertainties, we currently expect FY25 operating profit will be in line with consensus"</td><td>Consensus £56.9m, nine analysts updated since the half-year</td><td>⚪ 0</td></tr>
 <tr class="chg"><td>Jun-25</td><td class="doc" data-rowtype="YETU">FY25<br>YE-TU</td><td>🔴 CUT</td><td>"we currently expect FY25 pre-exceptional operating profit of c.£45m"</td><td>Ad-hoc pre-close carrying inside information; consensus £56.4m (−20%); replaced the scheduled Q4 quarterly; "challenging market conditions to persist into FY26"</td><td>🔴🔴🔴 −3</td></tr>
 <tr class="chg"><td>Aug-25</td><td class="doc" data-rowtype="FYR">FY25<br>FY R</td><td>flat</td><td>"Current trading in July and August has been in line with our expectations with no significant change to trading momentum from Q4"</td><td>Delivered £45.6m; dividend rebased −59% and £100m cash buffer removed in the same document</td><td>⚪ 0</td></tr>
@@ -554,7 +578,8 @@ pre.json{background:var(--paper);border:1px solid var(--line);border-radius:8px;
 <tr><td>Feb-26</td><td class="doc" data-rowtype="H1R">FY26<br>H1 R</td><td>—</td><td>"New Year 'return to work' has been solid overall and in-line with the prior year and our expectations"</td><td>Delivered £20.1m; France and Germany Perm still named as challenging</td><td>⚪ 0</td></tr>
 <tr><td>Apr-26</td><td class="doc" data-rowtype="Q3TU">FY26<br>Q3 TU</td><td>flat</td><td>"we currently expect FY26 pre-exceptional operating profit will be in line with consensus"</td><td>Consensus £45.2m, 11 analysts</td><td>⚪ 0</td></tr>
 <tr class="chg"><td>Jul-26</td><td class="doc" data-rowtype="Q4TU">FY26<br>Q4 TU</td><td>🟢 RAISE</td><td>"we currently expect FY26 pre-exceptional operating profit will be at the top of the £37.0-46.0m consensus range"</td><td>First upward guide event in the record; consensus £43.5m; "return to strong YoY growth in the second half"</td><td>🟢 +1</td></tr>
-<tr><td>⭐ Aug-26</td><td class="doc" data-rowtype="FYR">FY26<br>FY R</td><td>flat</td><td>"pre-exceptional operating profit increased by 3% to £48.6 million and slightly exceeded guidance"</td><td>Delivered above the range top; forward: July/August "in line with our expectations"; no FY27 profit guide — habitual at every prelims in the record, not a withdrawal</td><td>🟢 +1</td></tr>
+<tr><td>Aug-26</td><td class="doc" data-rowtype="FYR">FY26<br>FY R</td><td>flat</td><td>"pre-exceptional operating profit increased by 3% to £48.6 million and slightly exceeded guidance"</td><td>Delivered above the range top; forward: July/August "in line with our expectations"; no FY27 profit guide — habitual at every prelims in the record, not a withdrawal</td><td>🟢 +1</td></tr>
+<tr class="chg"><td>⭐ Oct-26</td><td class="doc" data-rowtype="Q1TU">FY27<br>Q1 TU</td><td>flat</td><td>"In line with our expectations, the decline in Group net fees eased to 3% in Q1"</td><td>No profit-line statement anywhere in the document — first Q1 TU in the record without one; no consensus cited; the anchor attaches to fees and net debt only; "we expect stable market conditions in the near term"; FY27 cost-savings guide reiterated (c.£50m, c.£10m delivered)</td><td>🔴 −1</td></tr>
 </table>
 
 <details class="top"><summary>§3 workings — notes · guidance passages</summary><div>
@@ -562,12 +587,13 @@ pre.json{background:var(--paper);border:1px solid var(--line);border-radius:8px;
 <p>"September is the key trading month… too early to assess trends" recurs at every prelims in the record — seasonal habit, calibration not a flag; the G-vs-outturn scan shows four cuts and one raise, with the raise then beaten — a record that earns the RAISE full credit rather than a sandbagger's discount.</p>
 </div></details>
 <details class="sub"><summary>Guidance passages — trailing 12 months (verbatim)</summary><div>
-<p><b>Q1 FY26 TU · 10 Oct 2025 · Highlights/CEO:</b> "Driven by strong consultant fee productivity growth and good cost discipline Group pre-exceptional operating profit was broadly stable YoY in Q1, including YoY increases in the UK&amp;I and ANZ, and in line with our expectations. We are executing well against our strategy…" <i>Editorial: no consensus figure cited anywhere in the document — the only TU in the trailing window without one.</i></p>
+
 <p><b>Q2 FY26 TU · 14 Jan 2026 · Highlights:</b> "Strong consultant fee productivity growth and cost discipline has broadly offset our lower net fees and, as a result, we expect pre-exceptional operating profit in our first half to be c.£20m, including YoY improvement in the UK&amp;I and ANZ, and in line with consensus expectations. (Company compiled consensus for H1 26 pre-exceptional operating profit is £20.0m, based on eight analysts as of 12 January 2026.)"</p>
 <p><b>H1 FY26 R · 27 Feb 2026 · Current trading:</b> "Our Temp &amp; Contracting New Year 'return to work' has been solid overall and in-line with the prior year and our expectations. In UK&amp;I and ANZ, Temp volumes have returned modestly ahead of prior year… Perm job flow and activity levels are in line with pre-Christmas levels and remain challenging notably in France and Germany."</p>
 <p><b>Q3 FY26 TU · 16 Apr 2026 · Highlights:</b> "Net fees declined by 8% in March. Although near term market conditions are likely to remain challenging, we currently expect FY26 pre-exceptional operating profit will be in line with consensus. (As of 15 April 2026, company compiled consensus for FY26 pre-exceptional operating profit is £45.2m, based on 11 analysts.)"</p>
 <p><b>Q4 FY26 TU · 10 Jul 2026 · Highlights:</b> "Our actions to deliver strong consultant net fee productivity growth and cost discipline continued to offset our lower net fees in H2 26 and we currently expect FY26 pre-exceptional operating profit will be at the top of the £37.0-46.0m consensus range. (As of 9 July 2026, company compiled consensus for FY26 pre-exceptional operating profit is £43.5m, with a £37.0-46.0m range.)"</p>
-<p><b>⭐ FY26 R · 20 Aug 2026 · Highlights/Current trading:</b> "Net fees decreased by 8%… Pre-exceptional operating profit increased by 3% to £48.6 million and slightly exceeded guidance provided at our Q4 update… Current trading in July and August has been in line with our expectations with no significant change to activity levels from Q4. September is the key trading month in our first quarter, and it is too early to assess trends." <i>Editorial: no numeric FY27 profit guide anywhere in the document — consistent with every prior prelims.</i></p>
+<p><b>FY26 R · 20 Aug 2026 · Highlights/Current trading:</b> "Net fees decreased by 8%… Pre-exceptional operating profit increased by 3% to £48.6 million and slightly exceeded guidance provided at our Q4 update… Current trading in July and August has been in line with our expectations with no significant change to activity levels from Q4. September is the key trading month in our first quarter, and it is too early to assess trends." <i>Editorial: no numeric FY27 profit guide anywhere in the document — consistent with every prior prelims.</i></p>
+<p><b>⭐ Q1 FY27 TU · 12 Oct 2026 · CEO/Outlook:</b> "In line with our expectations, the decline in Group net fees eased to 3% in Q1 driven by good Temp &amp; Contracting growth in several of our countries. Perm activity remains mixed with sustained strong growth in North America but ongoing fragility in Northern Europe. Our medium term targets can be achieved through our own actions…" / "Our September net fee growth rate was minus 2% and we expect stable market conditions in the near term with greater resilience in Temp &amp; Contracting than in Perm." <i>Editorial: no profit-line statement, no consensus reference, and no profit expectations anchor anywhere in the document — the first Q1 TU in the record without one (Oct-23, Oct-24 and Oct-25 all carried one).</i></p>
 </div></details>
 </div></details>
 
@@ -600,38 +626,40 @@ pre.json{background:var(--paper);border:1px solid var(--line);border-radius:8px;
 <th data-k="H1R">Feb-26<span class="dtag">H1R</span></th>
 <th data-k="Q3TU">Apr-26<span class="dtag">Q3TU</span></th>
 <th data-k="Q4TU">Jul-26<span class="dtag">Q4TU</span></th>
-<th data-k="FYR">⭐ Aug-26<span class="dtag">FYR</span></th>
+<th data-k="FYR">Aug-26<span class="dtag">FYR</span></th>
+<th data-k="Q1TU">⭐ Oct-26<span class="dtag">Q1TU</span></th>
 </tr>
-<tr><td class="lab">R1 Group fee growth</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>⊘</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
-<tr><td class="lab">R2 Perm fee growth</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>⊘</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
-<tr><td class="lab">R3 Consultant headcount</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>❌</td><td>⊘</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
-<tr><td class="lab">R4 Op profit / guide</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>⊘</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
-<tr><td class="lab">R5 Net cash</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>🟡</td><td>⊘</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
-<tr><td class="lab">Productivity growth % (WATCH)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>❌</td><td>⊘</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
-<tr><td class="lab">Periodic cost base £m (WATCH)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>⊘</td><td>✅</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td></tr>
-<tr><td class="lab">Dividend per share (WATCH)</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>⊘</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>✅</td></tr>
+<tr><td class="lab">R1 Group fee growth</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>⊘</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+<tr><td class="lab">R2 Perm fee growth</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>⊘</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+<tr><td class="lab">R3 Consultant headcount</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>❌</td><td>⊘</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+<tr><td class="lab">R4 Op profit / guide</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>⊘</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>❌</td></tr>
+<tr><td class="lab">R5 Net cash</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>🟡</td><td>⊘</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+<tr><td class="lab">Productivity growth % (WATCH)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>❌</td><td>⊘</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+<tr><td class="lab">Periodic cost base £m (WATCH)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>⊘</td><td>✅</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td></tr>
+<tr><td class="lab">Dividend per share (WATCH)</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>⊘</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>—</td></tr>
 </table>
 </div>
 <details class="top"><summary>§4 workings — notes</summary><div>
 <details class="sub"><summary>Notes — §4</summary><div>
-<p><b>Rightmost column (⭐ FY26 R):</b> all five ranked metrics quantified; nothing ranked was newly withheld. The live withdrawal is on the watchlist: <b>periodic cost base was quantified in every issued document Aug-24 → Oct-25 (ending c.£74m; a Δ-only £2.5m print at Feb-24 preceded the level series) and has now gone dark for five straight</b> — its quantified role appears substituted by the structural-savings running total (£15m → £30m → £50m secured). WATCH metrics never enter the 2-of-3; carried here and to the trigger drawer only. Manifest 22 qualifying documents = 22 issued columns + 1 ⊘ = 23 Drift columns ✓. Disclosure expansions: productivity % graduated into TU cadence at Q3 FY24 — its arrival coincided with fees turning deeply negative (favourable-metric promotion); cost base quantification began Aug-24. The ⊘ Jul-25 column is the never-issued scheduled Q4 FY25 quarterly (replaced by the Jun-25 ad-hoc pre-close, which carried no headcount, no productivity, no cash figure and only a guided Perm rate); Jul-26's normal Q4 TU is the resumption behind the Disclosure lamp.</p>
+<p><b>Rightmost column (⭐ Q1 FY27 TU):</b> R4 profit is ❌ — not mentioned anywhere in the document, against a 3-print Q1 habit of qualitative profit commentary (Oct-23, Oct-24, Oct-25 all carried a profit-line statement); this is the same absence that fires the Language condition, so Disclosure sits amber, counted once. Periodic cost base ❌ for the sixth straight document (quantified every issued document Aug-24 → Oct-25, ending c.£74m; substituted since by the savings running-total, now c.£125m p.a. cumulative). No Employment Rights Act / guaranteed-hours mention yet. Disclosure expansion: the country-exit list is now named in full (seven businesses in advanced discussions; 16 core countries ahead) — a perimeter-change early warning. Manifest 23 qualifying documents = 23 issued columns + 1 ⊘ = 24 Drift columns ✓.</p>
 </div></details>
 </div></details>
 
 <script type="application/json" id="drift-entry">{
-"ticker":"HAS","company":"Hays plc","kind":"ticker","direction":"up",
-"headline":"Guide raised then beaten — FY26 profit +7% after five falling halves; fee declines easing, but Perm wobbled late and exceptionals roll on.",
-"trigger":"2-of-3 fired, green-shoot: G RAISE + disclosure resumption; language amber",
-"alert":true,"fired":2,"fired_of":3,"lights":"gag",
-"rns_type":"FY Results","rns_date":"2026-08-20","build_date":"2026-08-21",
-"spec_version":"v5.4",
-"next_test":"12 Oct 2026 — Q1 27 TU: Group LFL better than -5% with 'in line' held confirms; Perm relapse past -12% or retreat to 'Board's expectations' breaks it",
+"ticker":"HAS","company":"Hays plc","kind":"ticker","direction":"watch",
+"headline":"Fees improving to −3% and Perm −7%, but the first Q1 update in the record with no profit statement at all — the words broke before the numbers.",
+"trigger":"2-of-3 fired, opposing directions: G-raise green-shoot vs Language deterioration; Disclosure amber (same absence, counted once)",
+"alert":false,"fired":2,"fired_of":3,"lights":"gra",
+"rns_type":"Q1 TU","rns_date":"2026-10-12","build_date":"2026-10-12",
+"spec_version":"v5.6",
+"next_test":"14 Jan 2027 — Q2 27 TU: an H1 profit figure 'in line with consensus' restores the anchor; a second update without one is a withdrawal",
 "url":"HAS.html",
 "grid":{"labels":["R1","R2","R3","R4","R5"],
-"periods":["Q4 24","Q1 25","Q2 25","Q3 25","Q4 25","Q1 26","Q2 26","Q3 26","Q4 26"],
-"rows":["rraaggaaa","raaaxgaa-","rraaaaaaa","r-r-r-a-g","grgrgrgrg"],
+"periods":["Q1 25","Q2 25","Q3 25","Q4 25","Q1 26","Q2 26","Q3 26","Q4 26","Q1 27"],
+"rows":["raaggaaaa","aaaxgaa-g","raaaaaaag","-r-r-a-g-","rgrgrgrgr"],
 "note":"Rows are ledger ranks R1-R5 at quarterly grain; R4 prints at half-ends only"},
-"trend":{"mode":"growth","cells":"g--","rows":[{"m":"REV","gap":6.1},{"m":"EBITDA","gap":null},{"m":"PBT","gap":null}]}
+"prev":{"direction":"up","fired":2,"lights":"gag","rns_date":"2026-08-20","rns_type":"FY R"},
+"trend":{"mode":"share","cells":"g--","rows":[{"m":"REV","gap":5.3},{"m":"EBITDA","gap":null},{"m":"PBT","gap":null}]}
 }</script>
 <script>
 // copy entry JSON into card-strip drawer
@@ -663,7 +691,7 @@ document.getElementById('entrycopy').textContent=document.getElementById('drift-
  var t=document.getElementById('text3'),exp=document.getElementById('exp3'),sel=null;
  exp.addEventListener('click',function(){
  t.classList.toggle('showold');
- exp.textContent=(t.classList.contains('showold')?'▾ Hide 12 earlier prints — Feb-23 to Jan-25':'▸ Show 12 earlier prints — Feb-23 to Jan-25');
+ exp.textContent=(t.classList.contains('showold')?'▾ Hide 13 earlier prints — Feb-23 to Feb-25':'▸ Show 13 earlier prints — Feb-23 to Feb-25');
  });
  t.querySelectorAll('td.doc').forEach(function(td){
  td.addEventListener('click',function(){
@@ -677,7 +705,7 @@ document.getElementById('entrycopy').textContent=document.getElementById('drift-
    if(c.parentElement.classList.contains('hidden-old'))anyHidden=true;}
   });
   if(anyHidden&&!t.classList.contains('showold')){t.classList.add('showold');
-  exp.textContent='▾ Hide 12 earlier prints — Feb-23 to Jan-25';}
+  exp.textContent='▾ Hide 13 earlier prints — Feb-23 to Feb-25';}
  });
  });
 })();
