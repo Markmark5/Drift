@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-12",
+  "updated": "2026-10-14",
   "tickers": [
     {
       "ticker": "STAF",
@@ -1676,16 +1676,17 @@
       "company": "Audioboom Group plc",
       "kind": "ticker",
       "direction": "up",
-      "headline": "Record H1-26 beats June's floors; $81m booked already exceeds all of FY25 — but gross margin has slipped year-on-year twice.",
-      "trigger": "Green-shoot: 3 conditions fired (2-of-3 met) — G RAISE (Jun-26 floors), sequential growth resumed across all three flow ranks, booked revenue re-quantified.",
-      "alert": true,
-      "fired": 3,
+      "headline": "First numeric FY26 guide: at least $7.7m EBITDA, above consensus — record Q3 and margin back up, but the booked figure has gone dark again.",
+      "trigger": "2 of 3 fired, opposed: Numbers & guide green on the Oct-26 RAISE (first numeric FY26 guide, at least $7.7m vs a $7.1m consensus, all flow ranks up sequentially); Disclosure red on booked revenue withheld again, one print after returning. No same-direction convergence.",
+      "alert": false,
+      "fired": 2,
       "fired_of": 3,
-      "rns_type": "H1 Report",
-      "rns_date": "2026-07-15",
-      "build_date": "2026-08-06",
-      "spec_version": "v4.7",
-      "next_test": "Q3 TU ~mid-Oct-26: organic split, margin direction, RCF signed, booked past ~$90m, RPM restored.",
+      "lights": "g-r",
+      "rns_type": "Q3 TU",
+      "rns_date": "2026-10-14",
+      "build_date": "2026-10-14",
+      "spec_version": "v5.6",
+      "next_test": "YE-TU ~15 Jan 2027: FY EBITDA vs the $7.7m floor, Q4 revenue vs $24.9m, booked-2027 first print, RPM restored.",
       "url": "BOOM.html",
       "grid": {
         "labels": [
@@ -1696,24 +1697,49 @@
           "R5"
         ],
         "periods": [
-          "Q2-24",
-          "Q3-24",
-          "Q4-24",
-          "Q1-25",
-          "Q2-25",
-          "Q3-25",
-          "Q4-25",
-          "Q1-26",
-          "Q2-26"
+          "Q3 24",
+          "Q4 24",
+          "Q1 25",
+          "Q2 25",
+          "Q3 25",
+          "Q4 25",
+          "Q1 26",
+          "Q2 26",
+          "Q3 26"
         ],
         "rows": [
-          "ggggggxxg",
-          "rggrgggrg",
-          "gggrgggrg",
-          "gggrgagrg",
-          "rgrgggggg"
+          "gggggxxgx",
+          "ggrgggrgg",
+          "ggrgggrgg",
+          "ggrgagrgg",
+          "--ggaraag"
         ],
-        "note": "One row per ledger rank at quarter grain; rightmost cell = H1 FY26 Report, 15-Jul-26."
+        "note": "One row per ledger rank at quarter grain; rightmost cell = Q3 FY26 Trading Update, 14-Oct-26."
+      },
+      "prev": {
+        "direction": "up",
+        "fired": 2,
+        "lights": "g-g",
+        "rns_date": "2026-07-15",
+        "rns_type": "H1 Report"
+      },
+      "trend": {
+        "mode": "share",
+        "cells": "g--",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": 4
+          },
+          {
+            "m": "EBITDA",
+            "gap": null
+          },
+          {
+            "m": "PBT",
+            "gap": null
+          }
+        ]
       }
     },
     {
