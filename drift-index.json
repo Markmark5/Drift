@@ -2030,24 +2030,24 @@
       "company": "Corero Network Security plc",
       "kind": "ticker",
       "direction": "up",
-      "headline": "Guidance raised above consensus with the anchor restored; profit, margin and operating cash all confirm - but the recurring book still added only $0.2m.",
-      "trigger": "Green 2-of-3: G-column RAISE on the Buy/Sell RNS (exceed / significantly exceed stated consensus $29.2m / $3.3m), and the dropped expectations anchor resumed after four documents. Deterioration still real on one condition - ARR net add +$0.2m and net cash $2.1m, both LEAD - carried to Argues-against, outvoted 2-1.",
+      "headline": "Q3 orders up 50% with two Tier-1 wins; the September raise stands - but consensus has already moved to $31.9m/$5.4m, and ARR is still the open question.",
+      "trigger": "Green 2-of-3 held from the Sep-26 interims (G RAISE; anchor resumed). Q3 CU corroborates: orders +50%, YTD +28%, all channel-led, named wins multi-year recurring. No guide content; consensus re-based to $31.9m/$5.4m. Deterioration still 1 (ARR add, cash), outvoted.",
       "alert": true,
       "fired": 2,
       "fired_of": 3,
       "lights": "g-g",
-      "rns_type": "H1 R",
-      "rns_date": "2026-09-09",
-      "build_date": "2026-09-09",
+      "rns_type": "Q3 CU",
+      "rns_date": "2026-10-14",
+      "build_date": "2026-10-14",
       "spec_version": "5.5",
-      "next_test": "January 2027 year-end update - the FY26 ARR net add, and whether the anchor habit holds",
+      "next_test": "January 2027 year-end update - the FY26 ARR net add, Q4 orders vs the $13.9m record comparator, and whether the anchor holds",
       "url": "CNS.html",
       "prev": {
-        "direction": "watch",
-        "fired": 1,
-        "lights": "r--",
-        "rns_date": "2026-08-06",
-        "rns_type": "H1 TU"
+        "direction": "up",
+        "fired": 2,
+        "lights": "g-g",
+        "rns_date": "2026-09-09",
+        "rns_type": "H1 R"
       },
       "trend": {
         "mode": "share",
@@ -2055,7 +2055,7 @@
         "rows": [
           {
             "m": "REV",
-            "gap": 6.7
+            "gap": 2.2
           },
           {
             "m": "EBITDA",
