@@ -535,17 +535,17 @@
       "company": "discoverIE Group plc",
       "kind": "ticker",
       "direction": "up",
-      "headline": "Guide lifted to \"tracking ahead\" after one quarter — orders +31% organic, book-to-bill 1.15; first multi-signal green since recovery began",
-      "trigger": "2-of-3: Condition 1 (G-RAISE on Buy/Sell RNS, LEAD metric) + Condition 2 (Text rising 2 consecutive prints)",
+      "headline": "Guide strengthened again — \"running ahead\" with strong earnings growth flagged; orders +22% organic, sales accelerating +6%→+10%, book-to-bill 1.12",
+      "trigger": "2-of-3: Condition 1 (G-RAISE on Buy/Sell RNS, reconfirmed and strengthened; LEAD metrics) + Condition 2 (Text rising run held at +2)",
       "alert": true,
       "fired": 2,
       "fired_of": 3,
       "lights": "gg-",
-      "rns_type": "Q1 TU",
-      "rns_date": "2026-07-24",
-      "build_date": "2026-08-09",
-      "spec_version": "5.1",
-      "next_test": "H1 FY27 TU (Oct-26): is Q2 organic orders growth still double-digit, are Controls sales positive, is borrowing tracking to 1.8x?",
+      "rns_type": "H1 TU",
+      "rns_date": "2026-10-14",
+      "build_date": "2026-10-14",
+      "spec_version": "5.6",
+      "next_test": "2 Dec 2026 — Interims: Q2 orders near +13% in print, margin at or above 14.0%, S&C converting its +18% orders, and 3Gmetalworx completed.",
       "grid": {
         "labels": [
           "R1",
@@ -555,7 +555,6 @@
           "R5"
         ],
         "periods": [
-          "Q1 25",
           "Q2 25",
           "Q3 25",
           "Q4 25",
@@ -563,18 +562,44 @@
           "Q2 26",
           "Q3 26",
           "Q4 26",
-          "Q1 27"
+          "Q1 27",
+          "Q2 27"
         ],
         "rows": [
-          "grrgrgggg",
-          "grrgrgagg",
-          "-rrr-rrga",
-          "rggrggagg",
-          "ggggggrr-"
+          "rrgrggggg",
+          "rrgrgaggr",
+          "rrr-rrgaa",
+          "ggrggaggg",
+          "gggggrr--"
         ],
-        "note": "One row per ledger rank at quarter grain; rightmost cell is the 24 Jul 2026 Q1 trading update."
+        "note": "One row per ledger rank at quarter grain; rightmost cell is the 14 Oct 2026 H1 trading update."
       },
-      "url": "DSCV.html"
+      "url": "DSCV.html",
+      "prev": {
+        "direction": "up",
+        "fired": 2,
+        "lights": "gg-",
+        "rns_date": "2026-07-24",
+        "rns_type": "Q1 TU"
+      },
+      "trend": {
+        "mode": "share",
+        "cells": "---",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": null
+          },
+          {
+            "m": "EBITDA",
+            "gap": null
+          },
+          {
+            "m": "PBT",
+            "gap": null
+          }
+        ]
+      }
     },
     {
       "ticker": "TUNE",
