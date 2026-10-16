@@ -4902,6 +4902,71 @@
         ],
         "note": "R1 Services net rev · R2 Group net rev · R3 Turnover · R4 Adj EBITDA · R5 Adj PBT — YoY Δrate, ±5pp"
       }
+    },
+    {
+      "ticker": "NFG",
+      "company": "Next 15 Group plc",
+      "kind": "ticker",
+      "direction": "down",
+      "headline": "Profit-growth guide quietly withdrawn and Track 1 growth halved; headline LFL improving only because one government consultancy is carrying it.",
+      "trigger": "3 of 3 - Numbers & guide (Track 1 4.2 to 1.8; profit-growth guide cut Oct-26), Language (Oct-26 -1), Disclosure (organic withheld at Jan-25 and Jan-26 YE-TUs)",
+      "alert": true,
+      "fired": 3,
+      "fired_of": 3,
+      "lights": "rrr",
+      "rns_type": "H1 R",
+      "rns_date": "2026-10-08",
+      "build_date": "2026-10-16",
+      "spec_version": "5.7",
+      "next_test": "Late Jan 2027 YE-TU: group organic growth re-quantified, and FY27 AOP against FY26's £67.6m",
+      "url": "NFG.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H1 23",
+          "H2 23",
+          "H1 24",
+          "H2 24",
+          "H1 25",
+          "H2 25",
+          "H1 26",
+          "H2 26",
+          "H1 27"
+        ],
+        "rows": [
+          "rr-r-rgga",
+          "rr-r-arrg",
+          "-------ar",
+          "gr-r-raag",
+          "--------a"
+        ],
+        "note": "R1-R4 reduced grain: H2 slot carries the FY score; R5 AOP H1/H2. Rightmost = H1 FY27 (Buy/Sell)."
+      },
+      "tier1": true,
+      "trend": {
+        "mode": "share",
+        "cells": "a-a",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": -0.7
+          },
+          {
+            "m": "EBITDA",
+            "gap": null
+          },
+          {
+            "m": "PBT",
+            "gap": 0.1
+          }
+        ]
+      }
     }
   ]
 }
