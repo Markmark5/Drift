@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16",
+  "updated": "2026-10-17",
   "tickers": [
     {
       "ticker": "STAF",
@@ -4870,10 +4870,10 @@
       "lights": "aaa",
       "rns_type": "H1 R",
       "rns_date": "2026-08-26",
-      "build_date": "2026-10-16",
-      "spec_version": "5.7",
+      "build_date": "2026-10-17",
+      "spec_version": "5.8",
       "next_test": "Jan 2027 YE-TU: FY26 Adj EBITDA ≥ £9.4m needs H2 ≥ £4.95m (+9% vs £4.54m) after acquisitions lapse.",
-      "url": "20261016_BBSN_Drift_Tracker_v2.html",
+      "url": "20261017_BBSN_Drift_Tracker_v6.html",
       "grid": {
         "labels": [
           "R1",
@@ -4901,7 +4901,8 @@
           "-argrragg"
         ],
         "note": "R1 Services net rev · R2 Group net rev · R3 Turnover · R4 Adj EBITDA · R5 Adj PBT — YoY Δrate, ±5pp"
-      }
+      },
+      "chart": "charts/BBSN.json?v=2026-10-17.8e39"
     },
     {
       "ticker": "NFG",
