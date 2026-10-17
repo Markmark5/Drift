@@ -258,7 +258,7 @@
     /* RNS Scorecard badges (opt.scores = [{d, s, t}]): score in a band-coloured circle on the price
        line at the RNS date, faint full-height guide, same scheme as Database's broker target chart.
        Lifted clear of a Text/G mark in the same week; one newer than the last close pins to it, dashed. */
-    var badges = '';
+    var badges = '', badgePts = [];
     if (opt.scores && opt.scores.length) {
       var markWk = {};
       (d.marks || []).forEach(function (m) { markWk[weekIndex(m.d)] = 1; });
@@ -303,6 +303,7 @@
           badges += '<circle cx="' + tx.toFixed(1) + '" cy="' + ty.toFixed(1) + '" r="' + (R * 0.28).toFixed(1) + '" fill="' + col + '"/>';
         } else
         badges += '<line x1="' + bx.toFixed(1) + '" x2="' + bx.toFixed(1) + '" y1="' + S.pt + '" y2="' + base + '" stroke="' + faint + '"/>';
+        badgePts.push([bx, by, R]);
         badges += '<g class="dc-mk" data-i="' + ti_ + '"><circle cx="' + bx.toFixed(1) + '" cy="' + by.toFixed(1) + '" r="' + R + '" fill="' + col +
           '" stroke="rgba(255,255,255,.85)" stroke-width="1"' + (pinned ? ' stroke-dasharray="2 2"' : '') + '/>' +
           '<text x="' + bx.toFixed(1) + '" y="' + (by + bfs * 0.36).toFixed(1) + '" text-anchor="middle" font-size="' + bfs +
@@ -314,8 +315,10 @@
 
     /* last close (dark) */
     if (theme === 'dark') {
-      var last = tail.length ? tail[tail.length - 1] : px[px.length - 1];
-      s += '<circle cx="' + X(t(last[0])).toFixed(1) + '" cy="' + Y(last[1]).toFixed(1) + '" r="' + (size === 'modal' ? 3 : 2) + '" fill="#fff"/>';
+      var last = tail.length ? tail[tail.length - 1] : px[px.length - 1], lx = X(t(last[0])), ly = Y(last[1]);
+      /* a score badge sitting on the last close wins: no white dot over its number */
+      var covered = (badgePts || []).some(function (q) { return Math.abs(q[0] - lx) < q[2] + 2 && Math.abs(q[1] - ly) < q[2] + 2; });
+      if (!covered) s += '<circle cx="' + X(t(last[0])).toFixed(1) + '" cy="' + Y(last[1]).toFixed(1) + '" r="' + (size === 'modal' ? 3 : 2) + '" fill="#fff"/>';
     }
     s += '</svg>';
     el.innerHTML = s;
@@ -451,5 +454,5 @@
   }
 
   root.DriftChart = { render: render, legend: legend, validate: validate, parseTail: parseTail,
-                      mountFromPage: mountFromPage, parseEps: parseEps, epsPanel: epsPanel, version: '1.4' };
+                      mountFromPage: mountFromPage, parseEps: parseEps, epsPanel: epsPanel, version: '1.5' };
 })(typeof window !== 'undefined' ? window : this);
