@@ -149,6 +149,9 @@
     var lo, hi;
     if (theme === 'light') { var st = niceStep(vmax); lo = 0; hi = Math.ceil(vmax / st) * st; }
     else { var pad = (vmax - vmin) * 0.04 || 1; lo = vmin - pad; hi = vmax + pad; }
+    var LANE = (opt.scoreLane === 'top' || opt.scoreLane === 'bottom') && opt.scores && opt.scores.length ? opt.scoreLane : null;
+    var BR = size === 'modal' || size === 'page' ? 9 : 5.5, laneH = LANE ? BR * 2 + 10 : 0, pt0 = S.pt, pb0 = S.pb;
+    if (LANE) { S = Object.assign({}, S); if (LANE === 'top') S.pt += laneH; else S.pb += laneH; }
     var W = S.W, H = S.H;
     function X(ms) { return S.pl + (ms - x0) / ((x1 - x0) || 1) * (W - S.pl - S.pr); }
     function Y(v) { return S.pt + (hi - v) / ((hi - lo) || 1) * (H - S.pt - S.pb); }
@@ -252,7 +255,62 @@
       }
       tips[idx] = tipHtml;
     });
-    s += dots + arrows;                              /* arrows last: on top of a same-week dot */
+    /* RNS Scorecard badges (opt.scores = [{d, s, t}]): score in a band-coloured circle on the price
+       line at the RNS date, faint full-height guide, same scheme as Database's broker target chart.
+       Lifted clear of a Text/G mark in the same week; one newer than the last close pins to it, dashed. */
+    var badges = '';
+    if (opt.scores && opt.scores.length) {
+      var markWk = {};
+      (d.marks || []).forEach(function (m) { markWk[weekIndex(m.d)] = 1; });
+      var lastMs = t(all[all.length - 1][0]);
+      var yAt = function (ms) {
+        for (var i = 0; i < all.length; i++) {
+          var ti = t(all[i][0]);
+          if (ti >= ms) {
+            if (!i) return all[0][1];
+            var tp = t(all[i - 1][0]), f = (ms - tp) / (ti - tp);
+            return all[i - 1][1] + (all[i][1] - all[i - 1][1]) * f;
+          }
+        }
+        return all[all.length - 1][1];
+      };
+      var R = BR, bfs = size === 'modal' || size === 'page' ? 8 : 5.5;
+      render._laneX = null;
+      opt.scores.slice().sort(function (a, b) { return a.d < b.d ? -1 : 1; }).forEach(function (b) {
+        if (!/^\d{4}-\d{2}-\d{2}/.test(b.d || '') || typeof b.s !== 'number') return;
+        var ms = t(b.d.slice(0, 10)); if (ms < x0) return;
+        var pinned = ms > lastMs + 3 * DAY, bx = X(Math.min(ms, lastMs)), by = Y(yAt(Math.min(ms, lastMs)));
+        var tx = bx, ty = by;                         /* true point on the price line */
+        if (LANE) {
+          bx = Math.max(bx, (render._laneX || -1e9) + 2 * R + 2); render._laneX = bx;
+          by = LANE === 'top' ? pt0 + R + 3 : base + 7 + R;
+        }
+        var wi = weekIndex(b.d.slice(0, 10));
+        if (!LANE) {
+          if (!tail.length || ms <= t(px[px.length - 1][0])) { if (markWk[wi]) by -= r + R + 3; }
+          by = Math.max(S.pt + R, Math.min(base - R, by));
+        }
+        var sc = Math.max(0, Math.min(100, Math.round(b.s)));
+        var col = sc >= 75 ? '#00c814' : sc >= 50 ? '#ffc400' : '#e02525';
+        var faint = sc >= 75 ? 'rgba(0,200,20,.18)' : sc >= 50 ? 'rgba(245,179,47,.18)' : 'rgba(224,37,37,.18)';
+        var ti_ = tips.length;
+        tips.push('<b>' + esc(fmtDate(b.d.slice(0, 10))) + ' · RNS Scorecard</b><br>Score <b style="color:' + col + '">' + sc +
+          '</b>/100' + (b.t ? ' · ' + esc(b.t) : '') + (pinned ? '<br><i>after the last weekly close</i>' : ''));
+        if (LANE) {
+          var ey = LANE === 'top' ? by + R : by - R;
+          badges += '<line x1="' + tx.toFixed(1) + '" x2="' + tx.toFixed(1) + '" y1="' + S.pt + '" y2="' + base + '" stroke="' + faint + '"/>';
+          badges += '<polyline points="' + bx.toFixed(1) + ',' + ey.toFixed(1) + ' ' + tx.toFixed(1) + ',' + (LANE === 'top' ? S.pt : base) + '" fill="none" stroke="' + col + '" stroke-opacity=".55" stroke-width="1"/>';
+          badges += '<circle cx="' + tx.toFixed(1) + '" cy="' + ty.toFixed(1) + '" r="' + (R * 0.28).toFixed(1) + '" fill="' + col + '"/>';
+        } else
+        badges += '<line x1="' + bx.toFixed(1) + '" x2="' + bx.toFixed(1) + '" y1="' + S.pt + '" y2="' + base + '" stroke="' + faint + '"/>';
+        badges += '<g class="dc-mk" data-i="' + ti_ + '"><circle cx="' + bx.toFixed(1) + '" cy="' + by.toFixed(1) + '" r="' + R + '" fill="' + col +
+          '" stroke="rgba(255,255,255,.85)" stroke-width="1"' + (pinned ? ' stroke-dasharray="2 2"' : '') + '/>' +
+          '<text x="' + bx.toFixed(1) + '" y="' + (by + bfs * 0.36).toFixed(1) + '" text-anchor="middle" font-size="' + bfs +
+          '" font-weight="700" fill="#0d0d16" font-family="Inter,system-ui,sans-serif">' + sc + '</text>' +
+          '<circle cx="' + bx.toFixed(1) + '" cy="' + by.toFixed(1) + '" r="' + (R * 2) + '" fill="transparent"/></g>';
+      });
+    }
+    s += badges + dots + arrows;                     /* arrows last: on top of a same-week dot */
 
     /* last close (dark) */
     if (theme === 'dark') {
@@ -293,6 +351,105 @@
     catch (e) { el.innerHTML = '<div style="padding:10px;color:#6b6860">no price data</div>'; }
   }
 
+
+  /* ---------- EPS forecasts from rows4 (fields 2 and 3: FY1, FY2) ---------- */
+  function parseEps(rows4, ticker) {
+    var tk = String(ticker).toUpperCase(), out = {};
+    (rows4 || []).forEach(function (row) {
+      if (!row || !row.Date || !row.Snapshot) return;
+      var dp = String(row.Date).split('/'); if (dp.length !== 3) return;
+      var iso = dp[2] + '-' + ('0' + dp[1]).slice(-2) + '-' + ('0' + dp[0]).slice(-2);
+      var recs = String(row.Snapshot).split(';');
+      for (var i = 0; i < recs.length; i++) {
+        var f = recs[i].split(',');
+        if ((f[0] || '').toUpperCase() !== tk) continue;
+        var a = parseFloat(f[1]), b = parseFloat(f[2]);
+        out[iso] = [iso, isFinite(a) ? a : null, isFinite(b) ? b : null];
+        break;
+      }
+    });
+    return Object.keys(out).sort().map(function (k) { return out[k]; });
+  }
+  /* year-end roll: the new FY1 is within 12% of the old FY2 and has moved >15% from the old FY1 */
+  function epsYears(e, given) {
+    var R = given ? given.slice() : [];
+    for (var i = 1; !given && i < e.length; i++) {
+      var a = e[i - 1], b = e[i];
+      if (a[1] && a[2] && b[1] && Math.abs(b[1] - a[2]) / Math.abs(a[2]) < 0.12 && Math.abs(b[1] - a[1]) / Math.abs(a[1]) > 0.15) R.push(i);
+    }
+    var yrs = {}, ri = 0;
+    e.forEach(function (r, i) {
+      while (ri < R.length && R[ri] <= i) ri++;
+      if (r[1] != null) (yrs[ri] = yrs[ri] || []).push([r[0], r[1]]);
+      if (r[2] != null) (yrs[ri + 1] = yrs[ri + 1] || []).push([r[0], r[2]]);
+    });
+    return { rolls: R, cur: yrs[R.length] || [], nxt: yrs[R.length + 1] || [] };
+  }
+  /* EPS panel under a modal chart. opt.x0/x1 = the price chart's date range (ms) so the axes line up.
+     style 'lines': this year solid amber, next year dashed purple. style 'bars': one bar per week for this
+     year's forecast, coloured by the week's change (green up / red down / grey flat). */
+  function epsPanel(el, e, opt) {
+    opt = opt || {};
+    var S = SIZES[opt.size || 'modal'], W = S.W, H = opt.h || 130, pt = 14, pb = 16, A = '#ffb347', P = '#c07ef7';
+    if (!e || e.length < 2) { el.innerHTML = ''; return; }
+    var Y_ = epsYears(e, opt.rolls), cur = Y_.cur, nxt = opt.style === 'bars' ? [] : Y_.nxt;
+    if (cur.length < 2) { el.innerHTML = ''; return; }
+    var x0 = opt.x0, x1 = opt.x1;
+    function X(iso) { return S.pl + (t(iso) - x0) / ((x1 - x0) || 1) * (W - S.pl - S.pr); }
+    var v = cur.concat(nxt).map(function (p) { return p[1]; }), lo = Math.min.apply(null, v), hi = Math.max.apply(null, v);
+    var pad = (hi - lo) * 0.12 || Math.abs(hi) * 0.05 || 1; lo -= pad; hi += pad;
+    function Y(x) { return pt + (hi - x) / (hi - lo) * (H - pt - pb); }
+    var s = '<svg viewBox="0 0 ' + W + ' ' + H + '" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%;height:auto">';
+    s += '<line x1="' + S.pl + '" x2="' + (W - S.pr) + '" y1="0.5" y2="0.5" stroke="#1e1e28"/>';
+    s += '<text x="' + S.pl + '" y="10" font-size="9" letter-spacing=".08em" fill="#5a5a72">EPS FORECASTS</text>';
+    var labels = '';
+    function pctLab(ser) {
+      for (var i = 1; i < ser.length; i++) {
+        var ch = (ser[i][1] / ser[i - 1][1] - 1) * 100;
+        if (Math.abs(ch) >= 3 && isFinite(ch)) {
+          var x = X(ser[i][0]), y = Y(ser[i][1]);
+          labels += '<text x="' + x.toFixed(1) + '" y="' + (ch > 0 ? Math.max(pt + 8, y - 5) : y + 11).toFixed(1) + '" text-anchor="middle" font-size="9" fill="' +
+            (ch > 0 ? '#00d97e' : '#ff4757') + '">' + (ch > 0 ? '+' : '') + ch.toFixed(1) + '%</text>';
+        }
+      }
+    }
+    if (opt.style === 'bars') {
+      var bw = Math.max(2, Math.min(14, (W - S.pl - S.pr) / ((x1 - x0) / (7 * DAY)) * 0.7)), bot = H - pb;
+      cur.forEach(function (p, i) {
+        var ch = i ? p[1] - cur[i - 1][1] : 0, col = ch > 0 ? '#00d97e' : ch < 0 ? '#ff4757' : '#3a3a50', x = X(p[0]), y = Y(p[1]);
+        s += '<rect x="' + (x - bw / 2).toFixed(1) + '" y="' + y.toFixed(1) + '" width="' + bw.toFixed(1) + '" height="' + Math.max(1, bot - y).toFixed(1) + '" fill="' + col + '" rx="1"/>';
+      });
+    } else if (opt.style === 'area') {
+      /* Earnings Whispers-style forward-estimate step area, drawn in its own strip */
+      var step = function (ser) { var o = [];
+        ser.forEach(function (p, i) { var x = X(p[0]).toFixed(1), y = Y(p[1]).toFixed(1);
+          if (i) o.push(x + ',' + Y(ser[i - 1][1]).toFixed(1)); o.push(x + ',' + y); }); return o; };
+      var bot2 = H - pb, sc_ = step(cur);
+      s += '<polygon points="' + X(cur[0][0]).toFixed(1) + ',' + bot2 + ' ' + sc_.join(' ') + ' ' + X(cur[cur.length - 1][0]).toFixed(1) + ',' + bot2 +
+        '" fill="#d9a066" fill-opacity=".22"/>';
+      s += '<polyline points="' + sc_.join(' ') + '" fill="none" stroke="#d9a066" stroke-width="1.4"/>';
+      if (nxt.length > 1) s += '<polyline points="' + step(nxt).join(' ') + '" fill="none" stroke="' + P + '" stroke-width="1.1" stroke-dasharray="4 3"/>';
+      A = '#d9a066';
+    } else {
+      [[nxt, P, true], [cur, A, false]].forEach(function (z) {
+        if (z[0].length < 2) return;
+        s += '<polyline points="' + z[0].map(function (p) { return X(p[0]).toFixed(1) + ',' + Y(p[1]).toFixed(1); }).join(' ') +
+          '" fill="none" stroke="' + z[1] + '" stroke-width="' + (z[2] ? 1.2 : 1.6) + '"' + (z[2] ? ' stroke-dasharray="4 3"' : '') + '/>';
+      });
+    }
+    pctLab(cur);
+    Y_.rolls.forEach(function (i) {
+      var x = X(e[i][0]);
+      s += '<line x1="' + x.toFixed(1) + '" x2="' + x.toFixed(1) + '" y1="' + pt + '" y2="' + (H - pb) + '" stroke="#9a9ab5" stroke-dasharray="2 3" opacity=".5"/>' +
+        '<text x="' + (x + 4).toFixed(1) + '" y="' + (H - pb - 3) + '" font-size="9" fill="#9a9ab5">results · year rolled</text>';
+    });
+    var l1 = cur[cur.length - 1][1], l2 = nxt.length ? nxt[nxt.length - 1][1] : null, y1 = Y(l1), y2 = l2 != null ? Y(l2) : null;
+    if (y2 != null && Math.abs(y1 - y2) < 11) { if (y1 > y2) y1 = y2 + 11; else y2 = y1 + 11; }
+    labels += '<text x="' + (W - S.pr + 4) + '" y="' + (y1 + 3).toFixed(1) + '" font-size="10" fill="' + A + '">' + l1 + 'p</text>';
+    if (y2 != null) labels += '<text x="' + (W - S.pr + 4) + '" y="' + (y2 + 3).toFixed(1) + '" font-size="10" fill="' + P + '">' + l2 + 'p</text>';
+    el.innerHTML = s + labels + '</svg>';
+  }
+
   root.DriftChart = { render: render, legend: legend, validate: validate, parseTail: parseTail,
-                      mountFromPage: mountFromPage, version: '1.1' };
+                      mountFromPage: mountFromPage, parseEps: parseEps, epsPanel: epsPanel, version: '1.4' };
 })(typeof window !== 'undefined' ? window : this);
