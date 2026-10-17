@@ -170,6 +170,16 @@
       });
     }
     var y0 = new Date(x0).getUTCFullYear(), y1 = new Date(x1).getUTCFullYear();
+    if (x1 - x0 < 550 * DAY) {                       /* short record (e.g. snapshots only): month labels */
+      var step = size === 'modal' || size === 'page' ? 1 : 2, d0 = new Date(x0), mi = 0;
+      for (var mm = Date.UTC(d0.getUTCFullYear(), d0.getUTCMonth() + 1, 1); mm <= x1; mm = Date.UTC(new Date(mm).getUTCFullYear(), new Date(mm).getUTCMonth() + 1, 1)) {
+        if ((mi++) % step) continue;
+        var md_ = new Date(mm), mo = md_.getUTCMonth();
+        var ml = MON[mo] + (mo === 0 || mi === 1 ? " '" + String(md_.getUTCFullYear()).slice(2) : '');
+        s += '<text x="' + X(mm).toFixed(1) + '" y="' + (H - (theme === 'light' ? 18 : 2)) + '" text-anchor="middle" font-size="' + S.fs + '" fill="' + T.axis + '">' + ml + '</text>';
+      }
+      y1 = y0 - 1;                                   /* skip year labels */
+    }
     for (var yr = y0; yr <= y1; yr++) {
       var mid = Date.UTC(yr, 6, 1);                    /* label mid-year, tick at 1 Jan */
       var jan = Date.UTC(yr, 0, 1);
@@ -284,5 +294,5 @@
   }
 
   root.DriftChart = { render: render, legend: legend, validate: validate, parseTail: parseTail,
-                      mountFromPage: mountFromPage, version: '1.0' };
+                      mountFromPage: mountFromPage, version: '1.1' };
 })(typeof window !== 'undefined' ? window : this);
