@@ -149,6 +149,18 @@ body{background:var(--bg);font-family:var(--mono);color:var(--text-primary);font
 .smallbtn{font-size:9px;font-weight:600;padding:6px 10px;border-radius:3px;cursor:pointer;
   background:transparent;color:var(--text-dim);border:1px solid var(--border);white-space:nowrap;}
 .hint{font-size:10px;color:var(--text-dim);line-height:1.5;margin-top:5px;}
+/* price overlay toggle */
+.vsw{display:inline-flex;border:1px solid var(--border);border-radius:3px;overflow:hidden;flex:none}
+.vsw button{font-family:var(--mono);font-size:8.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  padding:3px 8px;background:transparent;color:var(--text-dim);border:none;cursor:pointer}
+.vsw button.on{background:#ffffff12;color:var(--text-primary)}
+.vsw.card-sw{margin-left:8px;transform:translateY(-2px)}
+.vsw.card-sw button{font-size:7.5px;padding:2px 6px}
+.wallsw{margin-left:8px}
+.pxbox{margin:9px 0 4px;background:#111;border-radius:3px;padding:4px 2px 2px;min-height:80px}
+.pxbox .pxmsg{font-size:9px;color:var(--text-dim);padding:30px 0;text-align:center}
+.pxleg{font-size:8px;color:#5a5a72;margin:3px 4px 0}
+.pxleg .dc-leg{gap:8px}
 </style>
 </head>
 <body>
@@ -168,6 +180,7 @@ body{background:var(--bg);font-family:var(--mono);color:var(--text-primary);font
       <button class="sortbtn active" data-sort="build">Latest build</button>
       <button class="sortbtn" data-sort="ticker">A–Z</button>
       <button class="sortbtn dirbtn" data-sort="direction">Direction</button>
+      <span class="vsw wallsw" id="wallsw" style="display:none" title="Switch every card between the barcode and the price chart"><button data-m="num" class="on">Numbers</button><button data-m="px">Price</button></span>
       <span class="srch">
         <input id="q" type="text" placeholder="Search ticker…" autocomplete="off">
         <span class="clr" id="qclr" onclick="qClear()">✕</span>
@@ -213,6 +226,7 @@ body{background:var(--bg);font-family:var(--mono);color:var(--text-primary);font
   </div>
 </div>
 
+<script src="chart.js"></script>
 <script>
 var OWNER='Markmark5',REPO='Drift',BRANCH='main';
 var DATA=null,SORT='build',UPFILE=null,DIRWORST=false;
@@ -334,7 +348,10 @@ function render(){
   if(Q&&!t.length){document.getElementById('wall').innerHTML='<div class="empty">No ticker matching "'+Q+'"</div>';return;}
   document.getElementById('meta').textContent='index updated '+DATA.updated;
   var w=document.getElementById('wall');w.innerHTML='';
+  var anyChart=HASDC&&DATA.tickers.some(function(x){return !!x.chart;});
+  document.getElementById('wallsw').style.display=anyChart?'':'none';
   t.forEach(function(x){
+    var hasC=HASDC&&!!x.chart, mode=hasC?(CARDMODE[x.ticker]||WALLMODE):'num';
     var c=document.createElement('div');
     c.className='card '+x.direction;
     c.onclick=function(){window.open(x.url+'?t='+Date.now(),'drift_'+x.ticker,'width=1500,height=950,scrollbars=yes');};
@@ -342,8 +359,12 @@ function render(){
       '<div class="card-top"><span class="tick'+(x.ticker.length>6?' long':'')+'">'+x.ticker+
         (x.kind==='sector'?'<span class="kindtag">Sector</span>':'')+
         '</span><span class="dir">'+DIRLBL[x.direction]+'</span></div>'+
-      (x.kind==='sector'?'':'<div class="co">'+x.company+'</div>')+
-      gridHTML(x)+
+      ((x.kind==='sector'&&!hasC)?'':'<div class="co" style="display:flex;align-items:center;justify-content:space-between">'+
+        '<span>'+(x.kind==='sector'?'':x.company)+'</span>'+
+        (hasC?'<span class="vsw card-sw"><button data-m="num"'+(mode==='num'?' class="on"':'')+'>Numbers</button>'+
+          '<button data-m="px"'+(mode==='px'?' class="on"':'')+'>Price</button></span>':'')+'</div>')+
+      (mode==='px'?'<div class="pxbox"><div class="pxc"><div class="pxmsg">loading price…</div></div>'+
+        '<div class="pxleg">'+DriftChart.legend('dark')+'</div></div>':gridHTML(x))+
       pipHTML(x)+
       '<div class="head">'+x.headline+'</div>'+
       '<div class="pills">'+
@@ -352,8 +373,35 @@ function render(){
       (x.next_test&&x.next_test!=='—'?'<div class="next"><b>Next test:</b> '+x.next_test+'</div>':'')+
       '<div class="open">Open dashboard ↗</div>';
     w.appendChild(c);
+    if(hasC){
+      c.querySelectorAll('.card-sw button').forEach(function(b){
+        b.onclick=function(ev){ev.stopPropagation();CARDMODE[x.ticker]=b.dataset.m;render();};});
+      if(mode==='px')drawChart(x,c.querySelector('.pxc'));
+    }
   });
 }
+/* ── price overlay (chart.js, dark theme, no snapshot tail on the wall) ── */
+var HASDC=typeof window.DriftChart==='object';
+var WALLMODE='num',CARDMODE={},CHARTS={};
+try{var wm=localStorage.getItem('drift_wall_mode');if(wm==='px'||wm==='num')WALLMODE=wm;}catch(e){}
+function getChart(url){
+  if(!CHARTS[url])CHARTS[url]=fetch(url).then(function(r){if(!r.ok)throw new Error(r.status);return r.json();})
+    .catch(function(e){delete CHARTS[url];throw e;});
+  return CHARTS[url];
+}
+function drawChart(x,el){
+  getChart(x.chart).then(function(d){
+    if(!el.isConnected)return;
+    DriftChart.render(el,d,{theme:'dark',size:'card'});
+  }).catch(function(){if(el.isConnected)el.innerHTML='<div class="pxmsg">no price data</div>';});
+}
+function wallSwSync(){document.querySelectorAll('#wallsw button').forEach(function(b){b.classList.toggle('on',b.dataset.m===WALLMODE);});}
+document.querySelectorAll('#wallsw button').forEach(function(b){
+  b.onclick=function(){WALLMODE=b.dataset.m;CARDMODE={};
+    try{localStorage.setItem('drift_wall_mode',WALLMODE);}catch(e){}
+    wallSwSync();if(DATA)render();};
+});
+wallSwSync();
 document.getElementById('q').addEventListener('input',function(e){
   Q=(e.target.value||'').trim().toUpperCase();
   document.getElementById('qclr').className='clr'+(Q?' on':'');
@@ -402,13 +450,15 @@ document.getElementById('up-file').addEventListener('change',function(e){
     box.classList.add('hasfile');box.textContent='✓ '+UPFILE.name+' ('+Math.round(UPFILE.size/1024)+' KB)';
     var r=new FileReader();
     r.onload=function(){
+      readChart(String(r.result));
       var m=String(r.result).match(/<script[^>]*id=["']drift-entry["'][^>]*>([\s\S]*?)<\/script>/);
       if(m){
         try{
           var entry=validateEntry(m[1].trim());
           document.getElementById('up-entry').value=JSON.stringify(entry,null,2);
           found.style.color='var(--green)';
-          found.textContent='✓ Embedded entry found: '+entry.ticker+' — '+({up:'Turning Up',down:'Turning Down',watch:'Stable — Watch'})[entry.direction]+' · '+entry.rns_type+' · build '+entry.build_date;
+          found.textContent='✓ Embedded entry found: '+entry.ticker+' — '+({up:'Turning Up',down:'Turning Down',watch:'Stable — Watch'})[entry.direction]+' · '+entry.rns_type+' · build '+entry.build_date+chartNote();
+          if(UPCHART.err)found.style.color='var(--red)';
         }catch(err){
           found.style.color='var(--red)';
           found.textContent='✗ Embedded entry found but invalid ('+err.message+') — fix the build or paste a corrected entry below.';
@@ -420,8 +470,26 @@ document.getElementById('up-file').addEventListener('change',function(e){
     };
     r.readAsText(UPFILE);
   }
-  else{box.classList.remove('hasfile');box.textContent='Click to choose the downloaded dashboard file (e.g. MTO.html)';}
+  else{UPCHART={};box.classList.remove('hasfile');box.textContent='Click to choose the downloaded dashboard file (e.g. MTO.html)';}
 });
+/* drift-chart: optional; when present it must validate or the upload is refused */
+var UPCHART={};
+function readChart(html){
+  UPCHART={};
+  var m=html.match(/<script[^>]*id=["']drift-chart["'][^>]*>([\s\S]*?)<\/script>/);
+  if(!m)return;
+  var d;
+  try{d=JSON.parse(m[1].trim());}catch(e){UPCHART={err:'drift-chart is not valid JSON — '+e.message};return;}
+  if(!HASDC){UPCHART={err:'chart.js did not load, so drift-chart cannot be validated — reload the wall and try again'};return;}
+  var errs=DriftChart.validate(d);
+  if(errs.length){UPCHART={err:'drift-chart invalid: '+errs.slice(0,3).join('; ')+(errs.length>3?' (+'+(errs.length-3)+' more)':'')};return;}
+  UPCHART={data:d};
+}
+function chartNote(){
+  if(UPCHART.err)return ' · ✗ '+UPCHART.err;
+  if(UPCHART.data)return ' · ✓ price chart: '+UPCHART.data.px.length+' weeks, '+UPCHART.data.marks.length+' marks, v '+UPCHART.data.v;
+  return ' · no price chart in this build';
+}
 function setStatus(cls,msg){var s=document.getElementById('up-status');s.className='status '+cls;s.textContent=msg;}
 
 var REQUIRED=['ticker','company','direction','headline','trigger','alert','rns_type','rns_date','build_date','spec_version','next_test','url'];
@@ -449,24 +517,6 @@ function validateEntry(txt){
 }
 
 function ghHeaders(tok){return {'Authorization':'Bearer '+tok,'Accept':'application/vnd.github+json'};}
-function ghGetSha(tok,path){
-  return fetch('https://api.github.com/repos/'+OWNER+'/'+REPO+'/contents/'+path+'?ref='+BRANCH,{headers:ghHeaders(tok)})
-    .then(function(r){
-      if(r.status===404)return null;
-      if(!r.ok)throw new Error('GitHub read failed on '+path+' ('+r.status+')');
-      return r.json().then(function(j){return j.sha;});
-    });
-}
-function ghPut(tok,path,b64,msg,sha){
-  var body={message:msg,content:b64,branch:BRANCH};
-  if(sha)body.sha=sha;
-  return fetch('https://api.github.com/repos/'+OWNER+'/'+REPO+'/contents/'+path,{
-    method:'PUT',headers:ghHeaders(tok),body:JSON.stringify(body)})
-    .then(function(r){
-      if(!r.ok)return r.json().then(function(j){throw new Error('GitHub write failed on '+path+' ('+r.status+'): '+(j.message||''));});
-      return r.json();
-    });
-}
 function toB64(str){
   return btoa(unescape(encodeURIComponent(str)));
 }
@@ -488,6 +538,49 @@ function fileToB64(file){
   });
 }
 
+function gh(tok,method,path,body){
+  return fetch('https://api.github.com/repos/'+OWNER+'/'+REPO+'/'+path,{method:method,headers:ghHeaders(tok),
+    body:body?JSON.stringify(body):undefined}).then(function(r){
+      return r.json().catch(function(){return {};}).then(function(j){
+        if(!r.ok){var e=new Error('GitHub '+method+' '+path.split('?')[0]+' failed ('+r.status+'): '+(j.message||''));e.status=r.status;throw e;}
+        return j;});});
+}
+/* One commit for all files: dashboard + drift-index.json (+ charts/TICKER.json). One Pages build per upload. */
+function commitFiles(tok,entry,htmlPath,htmlB64,attempt){
+  var head,baseTree,idxPos=-1;
+  setStatus('busy','Reading current index…');
+  return gh(tok,'GET','git/ref/heads/'+BRANCH).then(function(ref){
+    head=ref.object.sha; return gh(tok,'GET','git/commits/'+head);
+  }).then(function(cm){
+    baseTree=cm.tree.sha;
+    return gh(tok,'GET','contents/drift-index.json?ref='+head);      /* index as it stands at this exact commit */
+  }).then(function(j){
+    var idx=JSON.parse(decodeURIComponent(escape(atob(j.content.replace(/\n/g,'')))));
+    idx.tickers.forEach(function(t,i){if(t.ticker===entry.ticker)idxPos=i;});
+    if(idxPos>=0)idx.tickers[idxPos]=entry; else idx.tickers.push(entry);
+    idx.updated=new Date().toISOString().slice(0,10);
+    var files=[[htmlPath,htmlB64],['drift-index.json',toB64(JSON.stringify(idx,null,2))]];
+    if(UPCHART.data)files.push(['charts/'+entry.ticker+'.json',toB64(JSON.stringify(UPCHART.data))]);
+    setStatus('busy','Uploading '+files.length+' files…');
+    return Promise.all(files.map(function(f){
+      return gh(tok,'POST','git/blobs',{content:f[1],encoding:'base64'}).then(function(b){
+        return {path:f[0],mode:'100644',type:'blob',sha:b.sha};});}));
+  }).then(function(tree){
+    return gh(tok,'POST','git/trees',{base_tree:baseTree,tree:tree});
+  }).then(function(t){
+    var msg=entry.ticker+' '+entry.build_date+' (drift build'+(UPCHART.data?' + chart':'')+')';
+    return gh(tok,'POST','git/commits',{message:msg,tree:t.sha,parents:[head]});
+  }).then(function(c){
+    setStatus('busy','Committing…');
+    return gh(tok,'PATCH','git/refs/heads/'+BRANCH,{sha:c.sha,force:false});
+  }).then(function(){return idxPos>=0;})
+  .catch(function(e){
+    /* branch moved under us (another upload landed): re-read the index and try once more */
+    if(e.status===422&&!attempt){setStatus('busy','Branch moved — re-reading index and retrying…');
+      return commitFiles(tok,entry,htmlPath,htmlB64,1);}
+    throw e;
+  });
+}
 function upPush(){
   var tok=document.getElementById('up-token').value.trim();
   var entryTxt=document.getElementById('up-entry').value.trim();
@@ -497,39 +590,20 @@ function upPush(){
   if(!entryTxt){setStatus('err','Paste the index entry.');return;}
   var entry;
   try{entry=validateEntry(entryTxt);}catch(e){setStatus('err','✗ '+e.message);return;}
+  if(UPCHART.err){setStatus('err','✗ Upload refused — '+UPCHART.err);return;}
+  if(UPCHART.data&&String(UPCHART.data.ticker).toUpperCase()!==String(entry.ticker).toUpperCase()){
+    setStatus('err','✗ Upload refused — drift-chart is for '+UPCHART.data.ticker+' but the entry is for '+entry.ticker+'.');return;}
+  if(UPCHART.data)entry.chart='charts/'+entry.ticker+'.json?v='+UPCHART.data.v;
+  else delete entry.chart;
   var expectedName=(entry.url&&/^[A-Za-z0-9._-]+\.html$/.test(entry.url))?entry.url:entry.ticker+'.html';
   if(UPFILE.name!==expectedName){
     if(!confirm('File is named "'+UPFILE.name+'" but the entry is for '+entry.ticker+'.\nIt will be uploaded as '+expectedName+'. Continue?'))return;
   }
-
   go.disabled=true;
-  setStatus('busy','Reading current index…');
-  var htmlPath=expectedName;
-
-  fetch('https://api.github.com/repos/'+OWNER+'/'+REPO+'/contents/drift-index.json?ref='+BRANCH,{headers:ghHeaders(tok)})
-    .then(function(r){
-      if(!r.ok)throw new Error('Could not read drift-index.json ('+r.status+'). Check the token has Contents access to '+OWNER+'/'+REPO+'.');
-      return r.json();
-    })
-    .then(function(j){
-      var idx=JSON.parse(decodeURIComponent(escape(atob(j.content.replace(/\n/g,'')))));
-      var pos=-1;
-      idx.tickers.forEach(function(t,i){if(t.ticker===entry.ticker)pos=i;});
-      if(pos>=0)idx.tickers[pos]=entry; else idx.tickers.push(entry);
-      idx.updated=new Date().toISOString().slice(0,10);
-      var newIdxB64=toB64(JSON.stringify(idx,null,2));
-      setStatus('busy','Uploading '+htmlPath+'…');
-      return ghGetSha(tok,htmlPath)
-        .then(function(sha){return fileToB64Noindex(UPFILE).then(function(b64){
-          return ghPut(tok,htmlPath,b64,(sha?'Update ':'Add ')+htmlPath+' (drift build)',sha);});})
-        .then(function(){
-          setStatus('busy','Updating drift-index.json…');
-          return ghPut(tok,'drift-index.json',newIdxB64,'Index: '+entry.ticker+' '+entry.build_date,j.sha);
-        })
-        .then(function(){return pos>=0;});
-    })
+  fileToB64Noindex(UPFILE)
+    .then(function(b64){return commitFiles(tok,entry,expectedName,b64,0);})
     .then(function(updated){
-      setStatus('ok','✓ Pushed. '+entry.ticker+' '+(updated?'updated':'added')+'. You can close this — the wall will refresh itself when Pages has rebuilt (~1 min).');
+      setStatus('ok','✓ Pushed in one commit. '+entry.ticker+' '+(updated?'updated':'added')+(UPCHART.data?' with price chart':'')+'. The wall will refresh itself when Pages has rebuilt (~1 min).');
       setTimeout(function(){load();},65000);
       setTimeout(function(){load();},150000);
     })
