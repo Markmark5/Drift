@@ -229,7 +229,7 @@
       for (var i = 0; i < px.length; i++) if (t(px[i][0]) >= md) return i;
       return px.length - 1;                         /* within 7 days after the last close */
     }
-    var tips = [];
+    var tips = [], hits = [];   /* hits: [x, y, tipIndex, radius] in viewBox units, for nearest-mark hover */
     var dots = '', arrows = '', r = S.r, aw = S.aw / 2, ah = S.aw * 0.95;
     (d.marks || []).forEach(function (m, idx) {
       var wi = weekIndex(m.d), wk = px[wi], cx = X(t(wk[0])), cy = Y(wk[1]);
@@ -254,6 +254,7 @@
           '" stroke="' + T.outline + '" stroke-width="' + sw + '"/>' + hit + '</g>';
       }
       tips[idx] = tipHtml;
+      hits.push([cx, cy, idx, r]);
     });
     /* RNS Scorecard badges (opt.scores = [{d, s, t}]): score in a band-coloured circle on the price
        line at the RNS date, faint full-height guide, same scheme as Database's broker target chart.
@@ -304,6 +305,7 @@
         } else
         badges += '<line x1="' + bx.toFixed(1) + '" x2="' + bx.toFixed(1) + '" y1="' + S.pt + '" y2="' + base + '" stroke="' + faint + '"/>';
         badgePts.push([bx, by, R]);
+        hits.push([bx, by, ti_, R]);
         badges += '<g class="dc-mk" data-i="' + ti_ + '"><circle cx="' + bx.toFixed(1) + '" cy="' + by.toFixed(1) + '" r="' + R + '" fill="' + col +
           '" stroke="rgba(255,255,255,.85)" stroke-width="1"' + (pinned ? ' stroke-dasharray="2 2"' : '') + '/>' +
           '<text x="' + bx.toFixed(1) + '" y="' + (by + bfs * 0.36).toFixed(1) + '" text-anchor="middle" font-size="' + bfs +
@@ -323,13 +325,29 @@
     s += '</svg>';
     el.innerHTML = s;
     el._dcTips = tips;
+    el._dcHits = hits;
 
     if (!el._dcBound) {
       el._dcBound = true;
       el.addEventListener('mousemove', function (ev) {
-        var mk = ev.target.closest && ev.target.closest('.dc-mk');
+        /* nearest mark wins: when marks sit close together, the one under the cursor is
+           the one whose centre is closest, not whichever invisible hit area was drawn last */
+        var svg = el.querySelector('svg'), best = null;
+        if (svg && el._dcHits && el._dcHits.length && svg.getScreenCTM()) {
+          var pt = svg.createSVGPoint(); pt.x = ev.clientX; pt.y = ev.clientY;
+          var p = pt.matrixTransform(svg.getScreenCTM().inverse()), bd = Infinity;
+          el._dcHits.forEach(function (h) {
+            var d = Math.sqrt((h[0] - p.x) * (h[0] - p.x) + (h[1] - p.y) * (h[1] - p.y));
+            if (d <= h[3] * 2.5 && d < bd) { bd = d; best = h; }
+          });
+        }
         var ad = ev.target.closest && ev.target.closest('.dc-adj');
-        if (mk) showTip(el._dcTheme, el._dcTips[+mk.getAttribute('data-i')], ev);
+        if (best) {
+          /* two prints in the same week share one point: show them together, oldest first */
+          var same = el._dcHits.filter(function (h) { return Math.abs(h[0] - best[0]) < 1.5 && Math.abs(h[1] - best[1]) < 1.5; });
+          showTip(el._dcTheme, same.map(function (h) { return el._dcTips[h[2]]; })
+            .join('<hr style="border:0;border-top:1px solid rgba(128,128,128,.35);margin:6px 0">'), ev);
+        }
         else if (ad) showTip(el._dcTheme, esc(ad.getAttribute('data-tip')), ev);
         else hideTip();
       });
@@ -454,5 +472,5 @@
   }
 
   root.DriftChart = { render: render, legend: legend, validate: validate, parseTail: parseTail,
-                      mountFromPage: mountFromPage, parseEps: parseEps, epsPanel: epsPanel, version: '1.5' };
+                      mountFromPage: mountFromPage, parseEps: parseEps, epsPanel: epsPanel, version: '1.6' };
 })(typeof window !== 'undefined' ? window : this);
