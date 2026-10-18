@@ -1,0 +1,1351 @@
+{
+ "ticker": "PMI",
+ "v": "2026-10-18.1edb",
+ "ccy": "GBX",
+ "src": "AlphaVantage PMI.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   178.5
+  ],
+  [
+   "2021-10-22",
+   179.0
+  ],
+  [
+   "2021-10-29",
+   180.0
+  ],
+  [
+   "2021-11-05",
+   190.0
+  ],
+  [
+   "2021-11-12",
+   195.0
+  ],
+  [
+   "2021-11-19",
+   186.0
+  ],
+  [
+   "2021-11-26",
+   170.0
+  ],
+  [
+   "2021-12-03",
+   175.0
+  ],
+  [
+   "2021-12-10",
+   191.5
+  ],
+  [
+   "2021-12-17",
+   185.0
+  ],
+  [
+   "2021-12-24",
+   183.0
+  ],
+  [
+   "2021-12-31",
+   195.0
+  ],
+  [
+   "2022-01-07",
+   205.0
+  ],
+  [
+   "2022-01-14",
+   187.5
+  ],
+  [
+   "2022-01-21",
+   174.0
+  ],
+  [
+   "2022-01-28",
+   170.0
+  ],
+  [
+   "2022-02-04",
+   172.5
+  ],
+  [
+   "2022-02-11",
+   176.5
+  ],
+  [
+   "2022-02-18",
+   175.5
+  ],
+  [
+   "2022-02-25",
+   162.0
+  ],
+  [
+   "2022-03-04",
+   149.0
+  ],
+  [
+   "2022-03-11",
+   148.5
+  ],
+  [
+   "2022-03-18",
+   149.0
+  ],
+  [
+   "2022-03-25",
+   149.0
+  ],
+  [
+   "2022-04-01",
+   150.0
+  ],
+  [
+   "2022-04-08",
+   147.5
+  ],
+  [
+   "2022-04-14",
+   147.5
+  ],
+  [
+   "2022-04-22",
+   147.5
+  ],
+  [
+   "2022-04-29",
+   140.0
+  ],
+  [
+   "2022-05-06",
+   134.0
+  ],
+  [
+   "2022-05-13",
+   116.25
+  ],
+  [
+   "2022-05-20",
+   110.0
+  ],
+  [
+   "2022-05-27",
+   123.0
+  ],
+  [
+   "2022-06-01",
+   131.0
+  ],
+  [
+   "2022-06-10",
+   137.0
+  ],
+  [
+   "2022-06-17",
+   121.0
+  ],
+  [
+   "2022-06-24",
+   117.5
+  ],
+  [
+   "2022-07-01",
+   121.5
+  ],
+  [
+   "2022-07-08",
+   117.5
+  ],
+  [
+   "2022-07-15",
+   113.0
+  ],
+  [
+   "2022-07-22",
+   113.0
+  ],
+  [
+   "2022-07-29",
+   116.5
+  ],
+  [
+   "2022-08-05",
+   117.5
+  ],
+  [
+   "2022-08-12",
+   117.5
+  ],
+  [
+   "2022-08-19",
+   117.5
+  ],
+  [
+   "2022-08-26",
+   111.0
+  ],
+  [
+   "2022-09-02",
+   101.5
+  ],
+  [
+   "2022-09-09",
+   100.2
+  ],
+  [
+   "2022-09-16",
+   108.0
+  ],
+  [
+   "2022-09-23",
+   111.75
+  ],
+  [
+   "2022-09-30",
+   106.0
+  ],
+  [
+   "2022-10-07",
+   101.5
+  ],
+  [
+   "2022-10-14",
+   91.0
+  ],
+  [
+   "2022-10-21",
+   87.0
+  ],
+  [
+   "2022-10-28",
+   87.0
+  ],
+  [
+   "2022-11-04",
+   88.0
+  ],
+  [
+   "2022-11-11",
+   100.5
+  ],
+  [
+   "2022-11-18",
+   95.5
+  ],
+  [
+   "2022-11-25",
+   91.5
+  ],
+  [
+   "2022-12-02",
+   105.5
+  ],
+  [
+   "2022-12-09",
+   101.5
+  ],
+  [
+   "2022-12-16",
+   99.5
+  ],
+  [
+   "2022-12-23",
+   102.0
+  ],
+  [
+   "2022-12-30",
+   103.0
+  ],
+  [
+   "2023-01-06",
+   103.5
+  ],
+  [
+   "2023-01-13",
+   118.5
+  ],
+  [
+   "2023-01-20",
+   118.5
+  ],
+  [
+   "2023-01-27",
+   117.0
+  ],
+  [
+   "2023-02-03",
+   122.0
+  ],
+  [
+   "2023-02-10",
+   125.0
+  ],
+  [
+   "2023-02-17",
+   118.5
+  ],
+  [
+   "2023-02-24",
+   119.0
+  ],
+  [
+   "2023-03-03",
+   118.0
+  ],
+  [
+   "2023-03-10",
+   114.0
+  ],
+  [
+   "2023-03-17",
+   104.5
+  ],
+  [
+   "2023-03-24",
+   99.0
+  ],
+  [
+   "2023-03-31",
+   102.0
+  ],
+  [
+   "2023-04-06",
+   102.0
+  ],
+  [
+   "2023-04-14",
+   99.0
+  ],
+  [
+   "2023-04-21",
+   97.0
+  ],
+  [
+   "2023-04-28",
+   91.5
+  ],
+  [
+   "2023-05-05",
+   93.0
+  ],
+  [
+   "2023-05-12",
+   92.5
+  ],
+  [
+   "2023-05-19",
+   89.0
+  ],
+  [
+   "2023-05-26",
+   89.0
+  ],
+  [
+   "2023-06-02",
+   84.5
+  ],
+  [
+   "2023-06-09",
+   89.6
+  ],
+  [
+   "2023-06-16",
+   88.0
+  ],
+  [
+   "2023-06-23",
+   88.0
+  ],
+  [
+   "2023-06-30",
+   86.5
+  ],
+  [
+   "2023-07-07",
+   80.0
+  ],
+  [
+   "2023-07-14",
+   76.0
+  ],
+  [
+   "2023-07-21",
+   75.5
+  ],
+  [
+   "2023-07-28",
+   75.5
+  ],
+  [
+   "2023-08-04",
+   74.5
+  ],
+  [
+   "2023-08-11",
+   74.0
+  ],
+  [
+   "2023-08-18",
+   72.5
+  ],
+  [
+   "2023-08-25",
+   73.0
+  ],
+  [
+   "2023-09-01",
+   73.5
+  ],
+  [
+   "2023-09-08",
+   71.0
+  ],
+  [
+   "2023-09-15",
+   66.0
+  ],
+  [
+   "2023-09-22",
+   62.5
+  ],
+  [
+   "2023-09-29",
+   61.5
+  ],
+  [
+   "2023-10-06",
+   61.0
+  ],
+  [
+   "2023-10-13",
+   55.0
+  ],
+  [
+   "2023-10-20",
+   54.6
+  ],
+  [
+   "2023-10-27",
+   51.0
+  ],
+  [
+   "2023-11-03",
+   52.0
+  ],
+  [
+   "2023-11-10",
+   49.0
+  ],
+  [
+   "2023-11-17",
+   56.5
+  ],
+  [
+   "2023-11-24",
+   60.5
+  ],
+  [
+   "2023-12-01",
+   62.4
+  ],
+  [
+   "2023-12-08",
+   66.5
+  ],
+  [
+   "2023-12-15",
+   64.0
+  ],
+  [
+   "2023-12-22",
+   65.0
+  ],
+  [
+   "2023-12-29",
+   65.0
+  ],
+  [
+   "2024-01-05",
+   65.0
+  ],
+  [
+   "2024-01-12",
+   65.0
+  ],
+  [
+   "2024-01-19",
+   59.2
+  ],
+  [
+   "2024-01-26",
+   67.0
+  ],
+  [
+   "2024-02-02",
+   63.0
+  ],
+  [
+   "2024-02-09",
+   60.5
+  ],
+  [
+   "2024-02-16",
+   62.5
+  ],
+  [
+   "2024-02-23",
+   60.0
+  ],
+  [
+   "2024-03-01",
+   56.0
+  ],
+  [
+   "2024-03-08",
+   58.5
+  ],
+  [
+   "2024-03-15",
+   57.0
+  ],
+  [
+   "2024-03-22",
+   57.0
+  ],
+  [
+   "2024-03-28",
+   53.5
+  ],
+  [
+   "2024-04-05",
+   53.0
+  ],
+  [
+   "2024-04-12",
+   63.0
+  ],
+  [
+   "2024-04-19",
+   61.5
+  ],
+  [
+   "2024-04-26",
+   65.0
+  ],
+  [
+   "2024-05-03",
+   70.0
+  ],
+  [
+   "2024-05-10",
+   73.0
+  ],
+  [
+   "2024-05-17",
+   76.5
+  ],
+  [
+   "2024-05-24",
+   80.0
+  ],
+  [
+   "2024-05-31",
+   72.5
+  ],
+  [
+   "2024-06-07",
+   72.5
+  ],
+  [
+   "2024-06-14",
+   71.0
+  ],
+  [
+   "2024-06-21",
+   70.5
+  ],
+  [
+   "2024-06-28",
+   70.5
+  ],
+  [
+   "2024-07-05",
+   70.0
+  ],
+  [
+   "2024-07-12",
+   71.5
+  ],
+  [
+   "2024-07-19",
+   71.0
+  ],
+  [
+   "2024-07-26",
+   69.5
+  ],
+  [
+   "2024-08-02",
+   73.5
+  ],
+  [
+   "2024-08-09",
+   71.0
+  ],
+  [
+   "2024-08-16",
+   73.0
+  ],
+  [
+   "2024-08-23",
+   73.6
+  ],
+  [
+   "2024-08-30",
+   73.0
+  ],
+  [
+   "2024-09-06",
+   69.5
+  ],
+  [
+   "2024-09-13",
+   69.0
+  ],
+  [
+   "2024-09-20",
+   68.0
+  ],
+  [
+   "2024-09-27",
+   63.0
+  ],
+  [
+   "2024-10-04",
+   61.0
+  ],
+  [
+   "2024-10-11",
+   60.0
+  ],
+  [
+   "2024-10-18",
+   61.5
+  ],
+  [
+   "2024-10-25",
+   63.0
+  ],
+  [
+   "2024-11-01",
+   62.0
+  ],
+  [
+   "2024-11-08",
+   58.5
+  ],
+  [
+   "2024-11-15",
+   55.5
+  ],
+  [
+   "2024-11-22",
+   54.5
+  ],
+  [
+   "2024-11-29",
+   53.6
+  ],
+  [
+   "2024-12-06",
+   64.5
+  ],
+  [
+   "2024-12-13",
+   63.5
+  ],
+  [
+   "2024-12-20",
+   60.0
+  ],
+  [
+   "2024-12-24",
+   63.0
+  ],
+  [
+   "2024-12-27",
+   63.0
+  ],
+  [
+   "2025-01-03",
+   61.0
+  ],
+  [
+   "2025-01-10",
+   60.5
+  ],
+  [
+   "2025-01-17",
+   58.5
+  ],
+  [
+   "2025-01-24",
+   56.0
+  ],
+  [
+   "2025-01-31",
+   55.5
+  ],
+  [
+   "2025-02-07",
+   55.0
+  ],
+  [
+   "2025-02-14",
+   54.5
+  ],
+  [
+   "2025-02-21",
+   54.0
+  ],
+  [
+   "2025-02-28",
+   53.5
+  ],
+  [
+   "2025-03-07",
+   51.5
+  ],
+  [
+   "2025-03-14",
+   51.0
+  ],
+  [
+   "2025-03-21",
+   51.5
+  ],
+  [
+   "2025-03-28",
+   50.5
+  ],
+  [
+   "2025-04-04",
+   46.0
+  ],
+  [
+   "2025-04-11",
+   46.0
+  ],
+  [
+   "2025-04-17",
+   48.0
+  ],
+  [
+   "2025-04-25",
+   50.0
+  ],
+  [
+   "2025-05-02",
+   53.0
+  ],
+  [
+   "2025-05-09",
+   55.4
+  ],
+  [
+   "2025-05-16",
+   59.8
+  ],
+  [
+   "2025-05-23",
+   58.5
+  ],
+  [
+   "2025-05-30",
+   65.5
+  ],
+  [
+   "2025-06-06",
+   66.5
+  ],
+  [
+   "2025-06-13",
+   70.5
+  ],
+  [
+   "2025-06-20",
+   71.0
+  ],
+  [
+   "2025-06-27",
+   74.5
+  ],
+  [
+   "2025-07-04",
+   73.5
+  ],
+  [
+   "2025-07-11",
+   67.0
+  ],
+  [
+   "2025-07-18",
+   62.5
+  ],
+  [
+   "2025-07-25",
+   63.5
+  ],
+  [
+   "2025-08-01",
+   65.0
+  ],
+  [
+   "2025-08-08",
+   65.5
+  ],
+  [
+   "2025-08-15",
+   67.4
+  ],
+  [
+   "2025-08-22",
+   66.5
+  ],
+  [
+   "2025-08-29",
+   65.0
+  ],
+  [
+   "2025-09-05",
+   62.0
+  ],
+  [
+   "2025-09-12",
+   60.5
+  ],
+  [
+   "2025-09-19",
+   61.0
+  ],
+  [
+   "2025-09-26",
+   62.5
+  ],
+  [
+   "2025-10-03",
+   63.5
+  ],
+  [
+   "2025-10-10",
+   60.0
+  ],
+  [
+   "2025-10-17",
+   58.0
+  ],
+  [
+   "2025-10-24",
+   60.0
+  ],
+  [
+   "2025-10-31",
+   58.5
+  ],
+  [
+   "2025-11-07",
+   56.5
+  ],
+  [
+   "2025-11-14",
+   56.0
+  ],
+  [
+   "2025-11-21",
+   52.0
+  ],
+  [
+   "2025-11-28",
+   60.6
+  ],
+  [
+   "2025-12-05",
+   55.5
+  ],
+  [
+   "2025-12-12",
+   54.0
+  ],
+  [
+   "2025-12-19",
+   52.5
+  ],
+  [
+   "2025-12-24",
+   52.5
+  ],
+  [
+   "2026-01-02",
+   55.0
+  ],
+  [
+   "2026-01-09",
+   58.0
+  ],
+  [
+   "2026-01-16",
+   50.0
+  ],
+  [
+   "2026-01-23",
+   47.5
+  ],
+  [
+   "2026-01-30",
+   45.0
+  ],
+  [
+   "2026-02-06",
+   47.0
+  ],
+  [
+   "2026-02-13",
+   45.0
+  ],
+  [
+   "2026-02-20",
+   44.5
+  ],
+  [
+   "2026-02-27",
+   48.0
+  ],
+  [
+   "2026-03-06",
+   46.0
+  ],
+  [
+   "2026-03-13",
+   44.0
+  ],
+  [
+   "2026-03-20",
+   44.0
+  ],
+  [
+   "2026-03-27",
+   43.5
+  ],
+  [
+   "2026-04-02",
+   43.0
+  ],
+  [
+   "2026-04-10",
+   44.25
+  ],
+  [
+   "2026-04-17",
+   41.5
+  ],
+  [
+   "2026-04-24",
+   40.3
+  ],
+  [
+   "2026-05-01",
+   36.25
+  ],
+  [
+   "2026-05-08",
+   37.0
+  ],
+  [
+   "2026-05-15",
+   37.0
+  ],
+  [
+   "2026-05-22",
+   36.5
+  ],
+  [
+   "2026-05-29",
+   37.5
+  ],
+  [
+   "2026-06-05",
+   36.25
+  ],
+  [
+   "2026-06-12",
+   38.0
+  ],
+  [
+   "2026-06-19",
+   38.5
+  ],
+  [
+   "2026-06-26",
+   38.5
+  ],
+  [
+   "2026-07-03",
+   43.0
+  ],
+  [
+   "2026-07-10",
+   39.25
+  ],
+  [
+   "2026-07-17",
+   37.5
+  ],
+  [
+   "2026-07-24",
+   37.25
+  ],
+  [
+   "2026-07-31",
+   37.5
+  ],
+  [
+   "2026-08-07",
+   37.5
+  ],
+  [
+   "2026-08-14",
+   38.5
+  ],
+  [
+   "2026-08-21",
+   39.25
+  ],
+  [
+   "2026-08-28",
+   39.0
+  ],
+  [
+   "2026-09-04",
+   36.75
+  ],
+  [
+   "2026-09-11",
+   37.0
+  ],
+  [
+   "2026-09-18",
+   36.75
+  ],
+  [
+   "2026-09-25",
+   35.75
+  ],
+  [
+   "2026-10-02",
+   35.25
+  ],
+  [
+   "2026-10-09",
+   34.75
+  ],
+  [
+   "2026-10-16",
+   30.5
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-12-07",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "However, the prospects for the UK savings and investment markets are attractive and I believe we have resilient, agile and energetic people working at Premier Miton.",
+   "file": "20211207_PMI_Full-Year-Results.md"
+  },
+  {
+   "d": "2022-01-11",
+   "doc": "Q1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -1,
+   "q": "Although it was disappointing to experience net outflows following four quarters of net inflows totalling £830 million, the net flows reflect a challenging period for UK fund flows in general, and for UK equities in particular.",
+   "file": "20220111_PMI_Q1-AuM-Update.md"
+  },
+  {
+   "d": "2022-04-08",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The strength of our business platform, the quality and performance of our investment teams and our clear proposition built on genuine active management mean that, despite the challenging economic conditions, we are well positioned for the future.",
+   "file": "20220408_PMI_Q2-AuM-Update.md"
+  },
+  {
+   "d": "2022-05-27",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The outlook for investment markets remains uncertain and, in my view, this is likely to remain the position for some months yet.",
+   "file": "20220527_PMI_Half-Year-Results.md"
+  },
+  {
+   "d": "2022-07-15",
+   "doc": "Q3 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The strength of our business platform, the quality and performance of our investment teams and our clear proposition built on active management mean that, despite the challenging economic conditions, we remain well placed for the future.",
+   "file": "20220715_PMI_Q3-AuM-Update.md"
+  },
+  {
+   "d": "2022-10-14",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "It is clear that the current market conditions are particularly challenging for the asset management sector and this was reflected in the Group's AuM ending the Quarter at £10.6 billion.",
+   "file": "20221014_PMI_Q4-AuM-Update.md"
+  },
+  {
+   "d": "2022-12-02",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "I am very much of the view that when confidence returns, investors will increasingly seek genuinely active strategies as they look to deliver added value for their clients above benchmark returns.",
+   "file": "20221202_PMI_Full-Year-Results.md"
+  },
+  {
+   "d": "2023-01-13",
+   "doc": "Q1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 1,
+   "q": "The Group's AuM ended the Quarter at £11.1 billion, an increase of 5% on the opening position for the year. We are encouraged by this performance given the challenging landscape for the wider sector.",
+   "file": "20230113_PMI_Q1-AuM-Update.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2023-04-14",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "We saw early signs of returning confidence amongst fund buyers in the latter stages of 2022 but this has not followed through into 2023 and the banking shocks that unfolded towards the end of the period have again dented risk appetite.",
+   "file": "20230414_PMI_Q2-AuM-Update.md"
+  },
+  {
+   "d": "2023-05-31",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -2,
+   "q": "I should say that we are highly reluctant to pay an uncovered dividend except in exceptional circumstances, specifically these would include where both the market and business outlook are obviously both clearer and brighter.",
+   "file": "20230531_PMI_Half-Year-Results.md"
+  },
+  {
+   "d": "2023-07-14",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "We believe we have a suite of investment products that will be attractive to investors and their advisers once they return to having a more positive investment outlook.",
+   "file": "20230714_PMI_Q3-AuM-Update.md"
+  },
+  {
+   "d": "2023-12-05",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "Accordingly, alongside the interim dividend of 3p we have decided to recommend a final dividend of 3p, bringing the total dividend for the year to 6p, equal to approximately 68% of adjusted EPS of 8.8p.",
+   "file": "20231205_PMI_Full-Year-Results.md"
+  },
+  {
+   "d": "2024-01-12",
+   "doc": "Q1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "I am pleased to note that the improvement in short term performance mentioned at the time of our full year results announcement has continued into the calendar year end.",
+   "file": "20240112_PMI_Q1-AuM-Update.md"
+  },
+  {
+   "d": "2024-04-12",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 1,
+   "q": "We are now at a point where interest rates are likely to trend lower as we move through 2024 and we believe this will support an improving environment for fund flows and asset values that should particularly benefit Premier Miton.",
+   "file": "20240412_PMI_Q2-AuM-update.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2024-05-30",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "However, given the difficulties that the industry has faced over the last couple of years, it is only right that we maintain a balanced view of the outlook in the short term.",
+   "file": "20240530_PMI_PREMIER-MITON-GROUP-PLC-HALF-YEAR-RESULTS.md"
+  },
+  {
+   "d": "2024-07-12",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "We have seen an improvement in the outlook for fund sales during the Quarter.",
+   "file": "20240712_PMI_Premier-Miton-Group-plc---Q3-AuM-update.md"
+  },
+  {
+   "d": "2024-12-04",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "We know that with interest rates likely to fall and the market environment improving, demand will return for thoughtful, active fund management.",
+   "file": "20241204_PMI_FULL-YEAR-RESULTS.md"
+  },
+  {
+   "d": "2025-01-16",
+   "doc": "Q1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "We have several strategies with strong investment performance that sit in key demand pools here in the UK and we are positive on the outlook for fund flows in these areas.",
+   "file": "20250116_PMI_Q1-AuM-update.md"
+  },
+  {
+   "d": "2025-04-16",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "Although we saw something of an improvement in net flows in the first quarter of the current financial year, this has slipped back in the second as market volatility returned.",
+   "file": "20250416_PMI_Q2-AuM-update.md"
+  },
+  {
+   "d": "2025-05-29",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Despite the short term challenges, we are also encouraged by the strong new business pipeline across our fixed income, absolute return and several of our equity strategies and so are confident in our ability to navigate successfully through this period.",
+   "file": "20250529_PMI_Half-Year-Results-for-Six-Months-Ended-31-Mar-2025.md"
+  },
+  {
+   "d": "2025-07-11",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 1,
+   "q": "There were encouraging signs of progress during the Quarter despite reporting a net outflow overall. Demand for our absolute return and fixed income funds remained good, supported by consistent investment performance.",
+   "file": "20250711_PMI_Q3-AuM-update.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2025-10-10",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "Our diversified and genuinely active asset management model gives us confidence in returning the overall business to net inflows, assuming stable or improving market conditions in 2026.",
+   "file": "20251010_PMI_Q4-AuM-update-and-Notice-of-results.md"
+  },
+  {
+   "d": "2025-12-04",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "While challenges remain, we believe the steps taken to strengthen leadership, improve efficiency, and diversify our product range position us to navigate the coming year with greater resilience.",
+   "file": "20251204_PMI_FULL-YEAR-RESULTS.md"
+  },
+  {
+   "d": "2026-01-15",
+   "doc": "Q1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "As noted in our recent full‑year trading update, the outflows from our US and European equity strategies continued into the current Period, reflecting investor risk aversion and the rotation away from growth‑oriented equities seen over recent quarters.",
+   "file": "20260115_PMI_Q1-AuM-update.md"
+  },
+  {
+   "d": "2026-04-16",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -2,
+   "q": "We recognise that this has been a disappointing period for shareholders. Our focus is firmly on addressing the areas that are holding back performance and asset stability, while continuing to simplify the business and invest selectively where we believe we can generate sustainable long‑term value.",
+   "file": "20260416_PMI_Q2-AuM-update.md"
+  },
+  {
+   "d": "2026-06-04",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -3,
+   "q": "For the current financial year, the Board has determined that a total distribution of 3.0 pence per share represents an appropriate level of shareholder return as the Group transitions to a revised policy for future years.",
+   "file": "20260604_PMI_Half-Year-Results---Six-Months-Ended-31-March-2026.md"
+  },
+  {
+   "d": "2026-07-16",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group remains on track to deliver approximately £3 billion of gross sales for the financial year, consistent with recent years, highlighting the strength of its distribution platform despite the recent period of weaker net flows.",
+   "file": "20260716_PMI_Q3-AuM-update.md"
+  },
+  {
+   "d": "2026-10-15",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "A period of weaker investment performance across several of our larger strategies has resulted in substantial outflows and put pressure on both AuM and profitability.",
+   "file": "20261015_PMI_Q4-AuM-update-and-Notice-of-results.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-15",
+  "doc": "YE-TU",
+  "file": "20261015_PMI_Q4-AuM-update-and-Notice-of-results.md",
+  "vs": "YE-TU Oct-25 · Q3 TU Jul-26 · H1 R Jun-26",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Wording vs number",
+    "text": "Jul-26 Q3 guide: “The Group remains on track to deliver approximately £3 billion of gross sales for the financial year” → Oct-26 outturn reframed as “gross sales of over £2.7 billion for the seventh consecutive year”",
+    "span": "Guide set Jul-26 (first numeric sales guide) → c.10% short three months later"
+   },
+   {
+    "sev": "amber",
+    "type": "Pushed out",
+    "text": "Oct-25 Q4: “confidence in returning the overall business to net inflows, assuming stable or improving market conditions in 2026” → Oct-26 Q4: “a clear opportunity to stabilise net flows and, over time, return the business to growth”",
+    "span": "Oct-25 → Oct-26; FY26 net outflows £2,578m; return to inflows now undated"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Jul-26 Q3: “Absolute return strategies showing signs of greater stability following elevated redemptions” → Oct-26 Q4: “Absolute return has also experienced a challenging period for performance”, with £244m quarterly net outflows on £644m opening AuM",
+    "span": "Q3-26 → Q4-26"
+   },
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "Oct-25 Q4: “We look forward to the coming year with confidence.” → Oct-26 Q4: “A period of weaker investment performance across several of our larger strategies has resulted in substantial outflows and put pressure on both AuM and profitability.”",
+    "span": "First Q4 update to name profit pressure"
+   }
+  ]
+ }
+}

@@ -1,0 +1,1387 @@
+{
+ "ticker": "THG",
+ "v": "2026-10-18.e113",
+ "ccy": "GBX",
+ "src": "AlphaVantage THG.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   289.4
+  ],
+  [
+   "2021-10-22",
+   315.6
+  ],
+  [
+   "2021-10-29",
+   216.6
+  ],
+  [
+   "2021-11-05",
+   203.8
+  ],
+  [
+   "2021-11-12",
+   191.1
+  ],
+  [
+   "2021-11-19",
+   193.8
+  ],
+  [
+   "2021-11-26",
+   187.3
+  ],
+  [
+   "2021-12-03",
+   178.0
+  ],
+  [
+   "2021-12-10",
+   195.5
+  ],
+  [
+   "2021-12-17",
+   190.0
+  ],
+  [
+   "2021-12-24",
+   225.0
+  ],
+  [
+   "2021-12-31",
+   229.2
+  ],
+  [
+   "2022-01-07",
+   194.4
+  ],
+  [
+   "2022-01-14",
+   180.3
+  ],
+  [
+   "2022-01-21",
+   149.2
+  ],
+  [
+   "2022-01-28",
+   126.5
+  ],
+  [
+   "2022-02-04",
+   135.4
+  ],
+  [
+   "2022-02-11",
+   130.4
+  ],
+  [
+   "2022-02-18",
+   113.4
+  ],
+  [
+   "2022-02-25",
+   101.3
+  ],
+  [
+   "2022-03-04",
+   82.6
+  ],
+  [
+   "2022-03-11",
+   86.8
+  ],
+  [
+   "2022-03-18",
+   95.75
+  ],
+  [
+   "2022-03-25",
+   83.65
+  ],
+  [
+   "2022-04-01",
+   91.8
+  ],
+  [
+   "2022-04-08",
+   91.74
+  ],
+  [
+   "2022-04-14",
+   95.14
+  ],
+  [
+   "2022-04-22",
+   105.9
+  ],
+  [
+   "2022-04-29",
+   107.65
+  ],
+  [
+   "2022-05-06",
+   108.8
+  ],
+  [
+   "2022-05-13",
+   116.45
+  ],
+  [
+   "2022-05-20",
+   145.0
+  ],
+  [
+   "2022-05-27",
+   151.95
+  ],
+  [
+   "2022-06-01",
+   144.85
+  ],
+  [
+   "2022-06-10",
+   124.0
+  ],
+  [
+   "2022-06-17",
+   75.86
+  ],
+  [
+   "2022-06-24",
+   82.6
+  ],
+  [
+   "2022-07-01",
+   83.74
+  ],
+  [
+   "2022-07-08",
+   82.1
+  ],
+  [
+   "2022-07-15",
+   74.92
+  ],
+  [
+   "2022-07-22",
+   70.56
+  ],
+  [
+   "2022-07-29",
+   68.46
+  ],
+  [
+   "2022-08-05",
+   65.62
+  ],
+  [
+   "2022-08-12",
+   69.56
+  ],
+  [
+   "2022-08-19",
+   63.0
+  ],
+  [
+   "2022-08-26",
+   60.14
+  ],
+  [
+   "2022-09-02",
+   55.0
+  ],
+  [
+   "2022-09-09",
+   53.26
+  ],
+  [
+   "2022-09-16",
+   43.08
+  ],
+  [
+   "2022-09-23",
+   39.46
+  ],
+  [
+   "2022-09-30",
+   37.72
+  ],
+  [
+   "2022-10-07",
+   35.8
+  ],
+  [
+   "2022-10-14",
+   40.59
+  ],
+  [
+   "2022-10-21",
+   49.13
+  ],
+  [
+   "2022-10-28",
+   56.46
+  ],
+  [
+   "2022-11-04",
+   60.08
+  ],
+  [
+   "2022-11-11",
+   78.3
+  ],
+  [
+   "2022-11-18",
+   66.44
+  ],
+  [
+   "2022-11-25",
+   69.14
+  ],
+  [
+   "2022-12-02",
+   64.5
+  ],
+  [
+   "2022-12-09",
+   59.3
+  ],
+  [
+   "2022-12-16",
+   52.28
+  ],
+  [
+   "2022-12-23",
+   47.83
+  ],
+  [
+   "2022-12-30",
+   43.9
+  ],
+  [
+   "2023-01-06",
+   48.27
+  ],
+  [
+   "2023-01-13",
+   66.08
+  ],
+  [
+   "2023-01-20",
+   54.54
+  ],
+  [
+   "2023-01-27",
+   55.34
+  ],
+  [
+   "2023-02-03",
+   63.06
+  ],
+  [
+   "2023-02-10",
+   55.0
+  ],
+  [
+   "2023-02-17",
+   60.84
+  ],
+  [
+   "2023-02-24",
+   54.16
+  ],
+  [
+   "2023-03-03",
+   67.56
+  ],
+  [
+   "2023-03-10",
+   62.08
+  ],
+  [
+   "2023-03-17",
+   54.56
+  ],
+  [
+   "2023-03-24",
+   60.82
+  ],
+  [
+   "2023-03-31",
+   67.5
+  ],
+  [
+   "2023-04-06",
+   65.02
+  ],
+  [
+   "2023-04-14",
+   66.1
+  ],
+  [
+   "2023-04-21",
+   89.2
+  ],
+  [
+   "2023-04-28",
+   99.98
+  ],
+  [
+   "2023-05-05",
+   98.4
+  ],
+  [
+   "2023-05-12",
+   62.9
+  ],
+  [
+   "2023-05-19",
+   57.4
+  ],
+  [
+   "2023-05-26",
+   59.24
+  ],
+  [
+   "2023-06-02",
+   63.82
+  ],
+  [
+   "2023-06-09",
+   61.96
+  ],
+  [
+   "2023-06-16",
+   72.84
+  ],
+  [
+   "2023-06-23",
+   76.0
+  ],
+  [
+   "2023-06-30",
+   81.5
+  ],
+  [
+   "2023-07-07",
+   84.18
+  ],
+  [
+   "2023-07-14",
+   97.72
+  ],
+  [
+   "2023-07-21",
+   97.1
+  ],
+  [
+   "2023-07-28",
+   103.95
+  ],
+  [
+   "2023-08-04",
+   106.25
+  ],
+  [
+   "2023-08-11",
+   102.8
+  ],
+  [
+   "2023-08-18",
+   88.98
+  ],
+  [
+   "2023-08-25",
+   87.82
+  ],
+  [
+   "2023-09-01",
+   98.68
+  ],
+  [
+   "2023-09-08",
+   85.4
+  ],
+  [
+   "2023-09-15",
+   67.58
+  ],
+  [
+   "2023-09-22",
+   69.16
+  ],
+  [
+   "2023-09-29",
+   69.84
+  ],
+  [
+   "2023-10-06",
+   69.56
+  ],
+  [
+   "2023-10-13",
+   65.56
+  ],
+  [
+   "2023-10-20",
+   66.24
+  ],
+  [
+   "2023-10-27",
+   63.04
+  ],
+  [
+   "2023-11-03",
+   72.22
+  ],
+  [
+   "2023-11-10",
+   68.42
+  ],
+  [
+   "2023-11-17",
+   78.72
+  ],
+  [
+   "2023-11-24",
+   78.02
+  ],
+  [
+   "2023-12-01",
+   78.46
+  ],
+  [
+   "2023-12-08",
+   83.26
+  ],
+  [
+   "2023-12-15",
+   86.04
+  ],
+  [
+   "2023-12-22",
+   81.76
+  ],
+  [
+   "2023-12-29",
+   85.16
+  ],
+  [
+   "2024-01-05",
+   74.1
+  ],
+  [
+   "2024-01-12",
+   67.7
+  ],
+  [
+   "2024-01-19",
+   66.36
+  ],
+  [
+   "2024-01-26",
+   67.7
+  ],
+  [
+   "2024-02-02",
+   64.6
+  ],
+  [
+   "2024-02-09",
+   63.06
+  ],
+  [
+   "2024-02-16",
+   67.28
+  ],
+  [
+   "2024-02-23",
+   65.3
+  ],
+  [
+   "2024-03-01",
+   62.92
+  ],
+  [
+   "2024-03-08",
+   60.94
+  ],
+  [
+   "2024-03-15",
+   58.0
+  ],
+  [
+   "2024-03-22",
+   62.86
+  ],
+  [
+   "2024-03-28",
+   69.02
+  ],
+  [
+   "2024-04-05",
+   60.65
+  ],
+  [
+   "2024-04-12",
+   61.0
+  ],
+  [
+   "2024-04-19",
+   59.7
+  ],
+  [
+   "2024-04-26",
+   64.05
+  ],
+  [
+   "2024-05-03",
+   63.25
+  ],
+  [
+   "2024-05-10",
+   68.4
+  ],
+  [
+   "2024-05-17",
+   74.0
+  ],
+  [
+   "2024-05-24",
+   76.55
+  ],
+  [
+   "2024-05-31",
+   69.1
+  ],
+  [
+   "2024-06-07",
+   69.8
+  ],
+  [
+   "2024-06-14",
+   64.4
+  ],
+  [
+   "2024-06-21",
+   61.85
+  ],
+  [
+   "2024-06-28",
+   62.2
+  ],
+  [
+   "2024-07-05",
+   65.9
+  ],
+  [
+   "2024-07-12",
+   67.25
+  ],
+  [
+   "2024-07-19",
+   63.25
+  ],
+  [
+   "2024-07-26",
+   64.4
+  ],
+  [
+   "2024-08-02",
+   63.45
+  ],
+  [
+   "2024-08-09",
+   61.1
+  ],
+  [
+   "2024-08-16",
+   61.45
+  ],
+  [
+   "2024-08-23",
+   59.85
+  ],
+  [
+   "2024-08-30",
+   59.45
+  ],
+  [
+   "2024-09-06",
+   59.3
+  ],
+  [
+   "2024-09-13",
+   63.7
+  ],
+  [
+   "2024-09-20",
+   51.6
+  ],
+  [
+   "2024-09-27",
+   57.05
+  ],
+  [
+   "2024-10-04",
+   55.75
+  ],
+  [
+   "2024-10-11",
+   47.72
+  ],
+  [
+   "2024-10-18",
+   48.32
+  ],
+  [
+   "2024-10-25",
+   46.46
+  ],
+  [
+   "2024-11-01",
+   46.74
+  ],
+  [
+   "2024-11-08",
+   42.68
+  ],
+  [
+   "2024-11-15",
+   42.0
+  ],
+  [
+   "2024-11-22",
+   41.64
+  ],
+  [
+   "2024-11-29",
+   47.82
+  ],
+  [
+   "2024-12-06",
+   45.9
+  ],
+  [
+   "2024-12-13",
+   51.55
+  ],
+  [
+   "2024-12-20",
+   44.92
+  ],
+  [
+   "2024-12-24",
+   45.32
+  ],
+  [
+   "2024-12-27",
+   44.92
+  ],
+  [
+   "2025-01-03",
+   41.52
+  ],
+  [
+   "2025-01-10",
+   42.38
+  ],
+  [
+   "2025-01-17",
+   39.7
+  ],
+  [
+   "2025-01-24",
+   39.24
+  ],
+  [
+   "2025-01-31",
+   40.92
+  ],
+  [
+   "2025-02-07",
+   38.72
+  ],
+  [
+   "2025-02-14",
+   40.34
+  ],
+  [
+   "2025-02-21",
+   36.98
+  ],
+  [
+   "2025-02-28",
+   33.22
+  ],
+  [
+   "2025-03-07",
+   34.26
+  ],
+  [
+   "2025-03-14",
+   34.8
+  ],
+  [
+   "2025-03-21",
+   36.68
+  ],
+  [
+   "2025-03-28",
+   33.64
+  ],
+  [
+   "2025-04-04",
+   28.7
+  ],
+  [
+   "2025-04-11",
+   28.26
+  ],
+  [
+   "2025-04-17",
+   27.86
+  ],
+  [
+   "2025-04-25",
+   28.58
+  ],
+  [
+   "2025-05-02",
+   25.0
+  ],
+  [
+   "2025-05-09",
+   26.0
+  ],
+  [
+   "2025-05-16",
+   27.2
+  ],
+  [
+   "2025-05-23",
+   23.96
+  ],
+  [
+   "2025-05-30",
+   24.28
+  ],
+  [
+   "2025-06-06",
+   23.56
+  ],
+  [
+   "2025-06-13",
+   25.46
+  ],
+  [
+   "2025-06-20",
+   26.1
+  ],
+  [
+   "2025-06-27",
+   34.0
+  ],
+  [
+   "2025-07-04",
+   32.2
+  ],
+  [
+   "2025-07-11",
+   31.5
+  ],
+  [
+   "2025-07-18",
+   33.16
+  ],
+  [
+   "2025-07-25",
+   31.7
+  ],
+  [
+   "2025-08-01",
+   30.2
+  ],
+  [
+   "2025-08-08",
+   35.74
+  ],
+  [
+   "2025-08-15",
+   31.54
+  ],
+  [
+   "2025-08-22",
+   31.22
+  ],
+  [
+   "2025-08-29",
+   28.54
+  ],
+  [
+   "2025-09-05",
+   27.68
+  ],
+  [
+   "2025-09-12",
+   30.34
+  ],
+  [
+   "2025-09-19",
+   35.82
+  ],
+  [
+   "2025-09-26",
+   37.0
+  ],
+  [
+   "2025-10-03",
+   38.82
+  ],
+  [
+   "2025-10-10",
+   36.66
+  ],
+  [
+   "2025-10-17",
+   43.38
+  ],
+  [
+   "2025-10-24",
+   47.7
+  ],
+  [
+   "2025-10-31",
+   46.48
+  ],
+  [
+   "2025-11-07",
+   43.1
+  ],
+  [
+   "2025-11-14",
+   45.02
+  ],
+  [
+   "2025-11-21",
+   42.68
+  ],
+  [
+   "2025-11-28",
+   45.16
+  ],
+  [
+   "2025-12-05",
+   45.38
+  ],
+  [
+   "2025-12-12",
+   45.56
+  ],
+  [
+   "2025-12-19",
+   43.6
+  ],
+  [
+   "2025-12-24",
+   43.96
+  ],
+  [
+   "2026-01-02",
+   46.24
+  ],
+  [
+   "2026-01-09",
+   47.32
+  ],
+  [
+   "2026-01-16",
+   42.84
+  ],
+  [
+   "2026-01-23",
+   41.36
+  ],
+  [
+   "2026-01-30",
+   37.2
+  ],
+  [
+   "2026-02-06",
+   36.82
+  ],
+  [
+   "2026-02-13",
+   35.04
+  ],
+  [
+   "2026-02-20",
+   35.18
+  ],
+  [
+   "2026-02-27",
+   34.9
+  ],
+  [
+   "2026-03-06",
+   32.2
+  ],
+  [
+   "2026-03-13",
+   30.86
+  ],
+  [
+   "2026-03-20",
+   28.5
+  ],
+  [
+   "2026-03-27",
+   31.24
+  ],
+  [
+   "2026-04-02",
+   28.66
+  ],
+  [
+   "2026-04-10",
+   31.36
+  ],
+  [
+   "2026-04-17",
+   39.14
+  ],
+  [
+   "2026-04-24",
+   37.3
+  ],
+  [
+   "2026-05-01",
+   31.14
+  ],
+  [
+   "2026-05-08",
+   31.28
+  ],
+  [
+   "2026-05-15",
+   31.46
+  ],
+  [
+   "2026-05-22",
+   32.44
+  ],
+  [
+   "2026-05-29",
+   33.48
+  ],
+  [
+   "2026-06-05",
+   32.0
+  ],
+  [
+   "2026-06-12",
+   31.88
+  ],
+  [
+   "2026-06-19",
+   31.72
+  ],
+  [
+   "2026-06-26",
+   29.4
+  ],
+  [
+   "2026-07-03",
+   31.12
+  ],
+  [
+   "2026-07-10",
+   31.06
+  ],
+  [
+   "2026-07-17",
+   30.68
+  ],
+  [
+   "2026-07-24",
+   30.36
+  ],
+  [
+   "2026-07-31",
+   30.3
+  ],
+  [
+   "2026-08-07",
+   33.52
+  ],
+  [
+   "2026-08-14",
+   32.14
+  ],
+  [
+   "2026-08-21",
+   33.64
+  ],
+  [
+   "2026-08-28",
+   34.58
+  ],
+  [
+   "2026-09-04",
+   33.12
+  ],
+  [
+   "2026-09-11",
+   26.26
+  ],
+  [
+   "2026-09-18",
+   26.48
+  ],
+  [
+   "2026-09-25",
+   26.34
+  ],
+  [
+   "2026-10-02",
+   26.2
+  ],
+  [
+   "2026-10-09",
+   27.2
+  ],
+  [
+   "2026-10-16",
+   35.44
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-10-26",
+   "doc": "Q3 TU",
+   "fy": "FY21",
+   "g": "flat",
+   "s": 0,
+   "q": "Margin guidance therefore remains unchanged at stable adjusted EBITDA margins on a constant FX basis, before  taking into consideration the dilutive full year contribution of Dermstore (which is expected to be in line with    Group margins by the end of 2022).",
+   "file": "20211026_THG_Third-quarter-trading-statement.md"
+  },
+  {
+   "d": "2022-01-18",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "CUT",
+   "s": -2,
+   "q": "FY 2021 adjusted EBITDA margin is expected to be in the range of 7.4% to 7.7%, compared to market expectations of c.7.9%, after taking into account c.90bps of adverse foreign currency movements.",
+   "file": "20220118_THG_Q4-Trading-Statement.md"
+  },
+  {
+   "d": "2022-04-21",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "CUT",
+   "s": -2,
+   "q": "Given the continually evolving external considerations, the Board anticipates FY 2022 adjusted EBITDA to be broadly in line with FY 2021, with a weighting to H2 2022.",
+   "file": "20220421_THG_FY21-preliminary-results-and-Q12022-trading-update.md"
+  },
+  {
+   "d": "2022-06-16",
+   "doc": "OPS",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -1,
+   "q": "While THG is clearly aware of the macro-economic challenges, the Company continues to perform well, and in line with its own expectations.",
+   "file": "20220616_THG_Update-on-Recent-Approaches.md",
+   "gnote": "discounted: offer period"
+  },
+  {
+   "d": "2022-09-15",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "CUT",
+   "s": -3,
+   "q": "Therefore the Group now expects FY 2022 adjusted EBITDA between a range of £100m to £130m pre SaaS cost reclassification reflecting:",
+   "file": "20220915_THG_Interim-results-for-the-half-year-ending-30-Jun-22.md"
+  },
+  {
+   "d": "2022-10-25",
+   "doc": "Q3 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Full year adjusted EBITDA guidance is maintained between a range of £100 to £130 million pre Software-as-a-Service (\"SaaS\") cost reclassification.",
+   "file": "20221025_THG_Q3-Trading-Statement.md"
+  },
+  {
+   "d": "2023-01-17",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "CUT",
+   "s": -3,
+   "q": "The combined impact of the lower full-year sales outturn, the dilutive impact of loss-making categories under review, alongside the timing of impending new Ingenuity contracts results in an expected adjusted EBITDA outturn range of £70 million to £80 million4 for FY 2022.",
+   "file": "20230117_THG_Trading-statement-for-the-period-ended-31-Dec-2022.md"
+  },
+  {
+   "d": "2023-04-18",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "Adjusted EBITDA is expected to be in line with the company consensus, with a significant weighting to the second half of the year.",
+   "file": "20230418_THG_FY2022-preliminary-results-&-Q12023-trading-update.md"
+  },
+  {
+   "d": "2023-05-12",
+   "doc": "OPS",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Company confirms that the profitability and cashflow improvements delivered during the first quarter of FY 2023, have continued in Q2, along with ongoing online sales momentum further supporting the Board's full year guidance.",
+   "file": "20230512_THG_Termination-of-discussions-with-Apollo.md"
+  },
+  {
+   "d": "2023-06-21",
+   "doc": "AGM",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Guidance for FY 2023 remains unchanged as disclosed at the time of the FY 2022 results in April, with Adjusted EBITDA expected to be in line with the company consensus[2].",
+   "file": "20230621_THG_AGM-Trading-Statement.md"
+  },
+  {
+   "d": "2023-09-14",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -1,
+   "q": "Seeing the benefit of decisive management actions to prioritise profitable sales, and expect continuing revenue performance for the full year of 0% to -5%.",
+   "file": "20230914_THG_Interim-results-for-the-half-year-ended-30-June-23.md"
+  },
+  {
+   "d": "2023-10-17",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Revenue, adjusted EBITDA and cash generation guidance remains unchanged for FY 2023.",
+   "file": "20231017_THG_Q3-2023-Trading-Statement.md"
+  },
+  {
+   "d": "2024-01-16",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "FY 2023 continuing adjusted EBITDA expected to be above £117m, with Group adjusted EBITDA over 75% higher YoY.",
+   "file": "20240116_THG_Q4-Trading-Statement.md"
+  },
+  {
+   "d": "2024-04-10",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Whilst the Yen has weakened further in Q1 2024 impacting THG Nutrition, the Group's start to the year provides us with confidence in delivering in accordance with market consensus.",
+   "file": "20240410_THG_Preliminary-FY-2023-results.md"
+  },
+  {
+   "d": "2024-04-23",
+   "doc": "Q1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Expectations for FY 2024 and medium-term guidance remain unchanged from the FY 2023 Preliminary results statement on 10 April 2024, with a continued focus on revenue growth, margin progression and cash generation.",
+   "file": "20240423_THG_Q1-2024-Trading-Statement.md"
+  },
+  {
+   "d": "2024-06-24",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Guidance for FY 2024 remains unchanged[1].",
+   "file": "20240624_THG_AGM-trading-update-and-Frasers-Group-partnership.md"
+  },
+  {
+   "d": "2024-09-17",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -2,
+   "q": "A key variable beyond our control is the Japanese Yen headwind (H1 2024 impact: c.£5m), however, overall we expect to be towards the lower end of the analyst consensus EBITDA range[9].",
+   "file": "20240917_THG_Interim-results.md"
+  },
+  {
+   "d": "2024-10-10",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "As noted in THG's Interim Results published on 17 September 2024, the second half of the year remains the Group's most profitable and cash generative period with the Board expecting full-year performance to be within the company consensus range[4].",
+   "file": "20241010_THG_Q3-2024-Trading-Statement.md"
+  },
+  {
+   "d": "2025-01-23",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "Coupled with a strong Q4 for Ingenuity, FY 2024 adjusted EBITDA is expected to be in-line with the consensus range excluding discontinued categories.",
+   "file": "20250123_THG_Q4-2024-Trading-Statement.md",
+   "gnote": "discounted: Ingenuity demerger"
+  },
+  {
+   "d": "2025-03-24",
+   "doc": "OPS",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The group continuing Adjusted EBITDA pre demerger (i.e. including Ingenuity) is expected to be £123m for FY 2024 (in line with analyst consensus estimates).",
+   "file": "20250324_THG_Proposed-debt-refinancing-and-equity-placing.md"
+  },
+  {
+   "d": "2025-04-29",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "We maintain our Group revenue growth expectations of mid-single digit for the year, given continued confidence in underlying trading and prestige beauty demand across our home markets.",
+   "file": "20250429_THG_FY-2024-results-and-Q1-trading-statement.md"
+  },
+  {
+   "d": "2025-06-25",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "As anticipated, trading in the second quarter has been much improved across both Beauty and Nutrition, with the Group returning to CCY revenue growth, underpinned by a strong June exit rate supporting unchanged FY 2025 guidance.",
+   "file": "20250625_THG_AGM-Trading-Statement.md"
+  },
+  {
+   "d": "2025-08-06",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -3,
+   "q": "This customer-first strategic initiative will be supported by investment of approximately £15m during 2025 and will result in a Group adjusted EBITDA of c.£50m for H2.",
+   "file": "20250806_THG_Disposal,-H1-trading-and-Nutrition-update.md",
+   "gnote": "discounted: disposal"
+  },
+  {
+   "d": "2025-08-06",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "This customer-first strategic initiative will be supported by investment of approximately £15m during 2025, and will result in a Group adjusted EBITDA of c.£50m for H2.",
+   "file": "20250806_THG_Disposal,-H1-trading-and-Nutrition-update---Amend.md"
+  },
+  {
+   "d": "2025-09-11",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading momentum from Q2 into Q3 continues to build positively, with the strategic model changes implemented across both THG Beauty and THG Nutrition throughout 2024 now bearing results.",
+   "file": "20250911_THG_Interim-results-for-half-year-ended-30-June-2025.md"
+  },
+  {
+   "d": "2025-10-14",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board's full-year performance expectations remain unchanged and are expected to be in line with the company consensus range[4], with the Group entering its most profitable and cash generative period.",
+   "file": "20251014_THG_Q3-2025-Trading-Statement.md"
+  },
+  {
+   "d": "2026-01-13",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "FY 2025 adjusted EBITDA expectations remain unchanged and in line with the company consensus range[1].",
+   "file": "20260113_THG_Q4-2025-Trading-Statement.md"
+  },
+  {
+   "d": "2026-03-26",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Group FY 2026 revenue and Adjusted EBITDA expectations remain unchanged and in line with company consensus.",
+   "file": "20260326_THG_Preliminary-FY-2025-results.md"
+  },
+  {
+   "d": "2026-04-21",
+   "doc": "Q1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Following a strong start to the year, the Group maintains its guidance for FY 2026[4], underpinned by continued market share gains in key territories and the successful implementation of pricing and product optimisation strategies.",
+   "file": "20260421_THG_Trading-Statement.md"
+  },
+  {
+   "d": "2026-06-24",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Full year revenue, Adjusted EBITDA and cash expected to be in line with company consensus[2].",
+   "file": "20260624_THG_AGM-Trading-Statement.md"
+  },
+  {
+   "d": "2026-09-10",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -1,
+   "q": "The Group remains focused on generating significant positive free cash flow and is on target to deliver £25m to £35m positive free cash flow for FY 2026, in line with consensus, acknowledging the investment in whey input costs which are expected to begin to reduce from their elevated levels into 2027.",
+   "file": "20260910_THG_Interim-results-for-half-year-ended-30-June-2026.md"
+  },
+  {
+   "d": "2026-10-15",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "FY26 Adjusted EBITDA expectations upgraded to £103m, ahead of market consensus and management’s previous expectations, reflecting stronger performance in THG Nutrition[1].",
+   "file": "20261015_THG_Q3-2026-Trading-Statement.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-15",
+  "doc": "Q3 TU",
+  "file": "20261015_THG_Q3-2026-Trading-Statement.md",
+  "vs": "Q3 TU Oct-25 · H1 R Sep-26 · AGM Jun-26 · FY R Mar-26",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Sep-26: “Full year revenue, Adjusted EBITDA and free cash flow in line with consensus[2]” → Oct-26: EBITDA upgraded and free cash flow “in line with consensus”, but no full-year revenue statement; revenue consensus of £1,802.2m appears only in the footnote",
+    "span": "FY26 revenue in line with consensus stated Mar-26, Jun-26, Sep-26 → first gap"
+   },
+   {
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "Sep-26: “we expect Q4 to deliver 6% to 7% revenue growth” → Oct-26: “Q4 revenue growth expected to accelerate compared with Q3”, no number",
+    "span": "Q4 range given Sep-26 → dropped five weeks later"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "CEO: “our momentum has continued through Q3” beside Q3 Group revenue +1.5% CCY (Q2 2026: +7.4%) and THG Beauty -0.6%",
+    "span": "Slowest quarter since Q2 2025 (+0.9%)"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Sep-26: “Full year expectations remain in line with consensus” → Oct-26 company figure: “FY26 Adjusted EBITDA expectations upgraded to £103m” vs consensus £101.7m",
+    "span": "First own FY EBITDA figure since the c.£50m H2 guide (Aug-25)"
+   }
+  ]
+ }
+}

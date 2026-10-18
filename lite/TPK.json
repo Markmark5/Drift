@@ -1,0 +1,1345 @@
+{
+ "ticker": "TPK",
+ "v": "2026-10-18.daf0",
+ "ccy": "GBX",
+ "src": "AlphaVantage TPK.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   1554.5
+  ],
+  [
+   "2021-10-22",
+   1520.0
+  ],
+  [
+   "2021-10-29",
+   1543.0
+  ],
+  [
+   "2021-11-05",
+   1553.5
+  ],
+  [
+   "2021-11-12",
+   1565.0
+  ],
+  [
+   "2021-11-19",
+   1537.5
+  ],
+  [
+   "2021-11-26",
+   1472.5
+  ],
+  [
+   "2021-12-03",
+   1517.0
+  ],
+  [
+   "2021-12-10",
+   1517.5
+  ],
+  [
+   "2021-12-17",
+   1525.5
+  ],
+  [
+   "2021-12-24",
+   1568.5
+  ],
+  [
+   "2021-12-31",
+   1554.5
+  ],
+  [
+   "2022-01-07",
+   1604.0
+  ],
+  [
+   "2022-01-14",
+   1564.0
+  ],
+  [
+   "2022-01-21",
+   1540.0
+  ],
+  [
+   "2022-01-28",
+   1481.0
+  ],
+  [
+   "2022-02-04",
+   1429.0
+  ],
+  [
+   "2022-02-11",
+   1438.5
+  ],
+  [
+   "2022-02-18",
+   1399.0
+  ],
+  [
+   "2022-02-25",
+   1416.5
+  ],
+  [
+   "2022-03-04",
+   1341.5
+  ],
+  [
+   "2022-03-11",
+   1270.0
+  ],
+  [
+   "2022-03-18",
+   1358.5
+  ],
+  [
+   "2022-03-25",
+   1276.0
+  ],
+  [
+   "2022-04-01",
+   1255.5
+  ],
+  [
+   "2022-04-08",
+   1249.0
+  ],
+  [
+   "2022-04-14",
+   1260.5
+  ],
+  [
+   "2022-04-22",
+   1310.5
+  ],
+  [
+   "2022-04-29",
+   1228.5
+  ],
+  [
+   "2022-05-06",
+   1134.5
+  ],
+  [
+   "2022-05-13",
+   1157.5
+  ],
+  [
+   "2022-05-20",
+   1145.0
+  ],
+  [
+   "2022-05-27",
+   1213.0
+  ],
+  [
+   "2022-06-01",
+   1199.0
+  ],
+  [
+   "2022-06-10",
+   1125.5
+  ],
+  [
+   "2022-06-17",
+   1017.5
+  ],
+  [
+   "2022-06-24",
+   1001.0
+  ],
+  [
+   "2022-07-01",
+   958.2
+  ],
+  [
+   "2022-07-08",
+   983.2
+  ],
+  [
+   "2022-07-15",
+   969.0
+  ],
+  [
+   "2022-07-22",
+   1050.0
+  ],
+  [
+   "2022-07-29",
+   1053.0
+  ],
+  [
+   "2022-08-05",
+   940.0
+  ],
+  [
+   "2022-08-12",
+   942.8
+  ],
+  [
+   "2022-08-19",
+   897.8
+  ],
+  [
+   "2022-08-26",
+   839.6
+  ],
+  [
+   "2022-09-02",
+   822.0
+  ],
+  [
+   "2022-09-09",
+   852.2
+  ],
+  [
+   "2022-09-16",
+   826.4
+  ],
+  [
+   "2022-09-23",
+   822.0
+  ],
+  [
+   "2022-09-30",
+   776.4
+  ],
+  [
+   "2022-10-07",
+   771.0
+  ],
+  [
+   "2022-10-14",
+   787.2
+  ],
+  [
+   "2022-10-21",
+   790.6
+  ],
+  [
+   "2022-10-28",
+   828.8
+  ],
+  [
+   "2022-11-04",
+   854.0
+  ],
+  [
+   "2022-11-11",
+   980.8
+  ],
+  [
+   "2022-11-18",
+   943.0
+  ],
+  [
+   "2022-11-25",
+   984.4
+  ],
+  [
+   "2022-12-02",
+   953.0
+  ],
+  [
+   "2022-12-09",
+   947.0
+  ],
+  [
+   "2022-12-16",
+   883.2
+  ],
+  [
+   "2022-12-23",
+   901.8
+  ],
+  [
+   "2022-12-30",
+   889.4
+  ],
+  [
+   "2023-01-06",
+   995.6
+  ],
+  [
+   "2023-01-13",
+   1022.5
+  ],
+  [
+   "2023-01-20",
+   1006.5
+  ],
+  [
+   "2023-01-27",
+   1020.5
+  ],
+  [
+   "2023-02-03",
+   1078.5
+  ],
+  [
+   "2023-02-10",
+   1001.5
+  ],
+  [
+   "2023-02-17",
+   1015.5
+  ],
+  [
+   "2023-02-24",
+   1023.0
+  ],
+  [
+   "2023-03-03",
+   1006.5
+  ],
+  [
+   "2023-03-10",
+   964.4
+  ],
+  [
+   "2023-03-17",
+   940.8
+  ],
+  [
+   "2023-03-24",
+   925.8
+  ],
+  [
+   "2023-03-31",
+   956.4
+  ],
+  [
+   "2023-04-06",
+   888.2
+  ],
+  [
+   "2023-04-14",
+   951.8
+  ],
+  [
+   "2023-04-21",
+   954.2
+  ],
+  [
+   "2023-04-28",
+   958.0
+  ],
+  [
+   "2023-05-05",
+   948.4
+  ],
+  [
+   "2023-05-12",
+   927.6
+  ],
+  [
+   "2023-05-19",
+   921.0
+  ],
+  [
+   "2023-05-26",
+   893.6
+  ],
+  [
+   "2023-06-02",
+   901.6
+  ],
+  [
+   "2023-06-09",
+   855.8
+  ],
+  [
+   "2023-06-16",
+   808.6
+  ],
+  [
+   "2023-06-23",
+   788.2
+  ],
+  [
+   "2023-06-30",
+   812.4
+  ],
+  [
+   "2023-07-07",
+   793.2
+  ],
+  [
+   "2023-07-14",
+   843.6
+  ],
+  [
+   "2023-07-21",
+   879.4
+  ],
+  [
+   "2023-07-28",
+   890.4
+  ],
+  [
+   "2023-08-04",
+   885.4
+  ],
+  [
+   "2023-08-11",
+   871.8
+  ],
+  [
+   "2023-08-18",
+   830.2
+  ],
+  [
+   "2023-08-25",
+   821.0
+  ],
+  [
+   "2023-09-01",
+   847.4
+  ],
+  [
+   "2023-09-08",
+   813.4
+  ],
+  [
+   "2023-09-15",
+   831.8
+  ],
+  [
+   "2023-09-22",
+   834.0
+  ],
+  [
+   "2023-09-29",
+   844.4
+  ],
+  [
+   "2023-10-06",
+   802.2
+  ],
+  [
+   "2023-10-13",
+   738.6
+  ],
+  [
+   "2023-10-20",
+   727.8
+  ],
+  [
+   "2023-10-27",
+   736.2
+  ],
+  [
+   "2023-11-03",
+   776.6
+  ],
+  [
+   "2023-11-10",
+   738.6
+  ],
+  [
+   "2023-11-17",
+   781.0
+  ],
+  [
+   "2023-11-24",
+   762.0
+  ],
+  [
+   "2023-12-01",
+   772.6
+  ],
+  [
+   "2023-12-08",
+   789.2
+  ],
+  [
+   "2023-12-15",
+   830.6
+  ],
+  [
+   "2023-12-22",
+   848.2
+  ],
+  [
+   "2023-12-29",
+   828.6
+  ],
+  [
+   "2024-01-05",
+   796.0
+  ],
+  [
+   "2024-01-12",
+   784.2
+  ],
+  [
+   "2024-01-19",
+   771.2
+  ],
+  [
+   "2024-01-26",
+   804.4
+  ],
+  [
+   "2024-02-02",
+   777.2
+  ],
+  [
+   "2024-02-09",
+   773.8
+  ],
+  [
+   "2024-02-16",
+   760.4
+  ],
+  [
+   "2024-02-23",
+   756.2
+  ],
+  [
+   "2024-03-01",
+   755.8
+  ],
+  [
+   "2024-03-08",
+   728.2
+  ],
+  [
+   "2024-03-15",
+   698.4
+  ],
+  [
+   "2024-03-22",
+   713.2
+  ],
+  [
+   "2024-03-28",
+   729.4
+  ],
+  [
+   "2024-04-05",
+   735.5
+  ],
+  [
+   "2024-04-12",
+   747.5
+  ],
+  [
+   "2024-04-19",
+   716.0
+  ],
+  [
+   "2024-04-26",
+   766.0
+  ],
+  [
+   "2024-05-03",
+   785.0
+  ],
+  [
+   "2024-05-10",
+   825.0
+  ],
+  [
+   "2024-05-17",
+   846.0
+  ],
+  [
+   "2024-05-24",
+   858.0
+  ],
+  [
+   "2024-05-31",
+   859.5
+  ],
+  [
+   "2024-06-07",
+   836.5
+  ],
+  [
+   "2024-06-14",
+   802.5
+  ],
+  [
+   "2024-06-21",
+   810.5
+  ],
+  [
+   "2024-06-28",
+   769.0
+  ],
+  [
+   "2024-07-05",
+   819.0
+  ],
+  [
+   "2024-07-12",
+   899.0
+  ],
+  [
+   "2024-07-19",
+   919.0
+  ],
+  [
+   "2024-07-26",
+   959.5
+  ],
+  [
+   "2024-08-02",
+   893.0
+  ],
+  [
+   "2024-08-09",
+   886.0
+  ],
+  [
+   "2024-08-16",
+   904.0
+  ],
+  [
+   "2024-08-23",
+   922.5
+  ],
+  [
+   "2024-08-30",
+   907.0
+  ],
+  [
+   "2024-09-06",
+   850.0
+  ],
+  [
+   "2024-09-13",
+   892.0
+  ],
+  [
+   "2024-09-20",
+   932.0
+  ],
+  [
+   "2024-09-27",
+   935.5
+  ],
+  [
+   "2024-10-04",
+   911.0
+  ],
+  [
+   "2024-10-11",
+   888.0
+  ],
+  [
+   "2024-10-18",
+   929.5
+  ],
+  [
+   "2024-10-25",
+   858.0
+  ],
+  [
+   "2024-11-01",
+   814.0
+  ],
+  [
+   "2024-11-08",
+   789.5
+  ],
+  [
+   "2024-11-15",
+   800.5
+  ],
+  [
+   "2024-11-22",
+   794.5
+  ],
+  [
+   "2024-11-29",
+   760.5
+  ],
+  [
+   "2024-12-06",
+   750.0
+  ],
+  [
+   "2024-12-13",
+   733.0
+  ],
+  [
+   "2024-12-20",
+   717.0
+  ],
+  [
+   "2024-12-24",
+   716.5
+  ],
+  [
+   "2024-12-27",
+   717.5
+  ],
+  [
+   "2025-01-03",
+   703.0
+  ],
+  [
+   "2025-01-10",
+   667.5
+  ],
+  [
+   "2025-01-17",
+   700.0
+  ],
+  [
+   "2025-01-24",
+   690.0
+  ],
+  [
+   "2025-01-31",
+   714.0
+  ],
+  [
+   "2025-02-07",
+   699.5
+  ],
+  [
+   "2025-02-14",
+   696.5
+  ],
+  [
+   "2025-02-21",
+   657.5
+  ],
+  [
+   "2025-02-28",
+   652.0
+  ],
+  [
+   "2025-03-07",
+   633.5
+  ],
+  [
+   "2025-03-14",
+   560.0
+  ],
+  [
+   "2025-03-21",
+   568.0
+  ],
+  [
+   "2025-03-28",
+   564.5
+  ],
+  [
+   "2025-04-04",
+   510.0
+  ],
+  [
+   "2025-04-11",
+   525.0
+  ],
+  [
+   "2025-04-17",
+   519.0
+  ],
+  [
+   "2025-04-25",
+   524.5
+  ],
+  [
+   "2025-05-02",
+   569.0
+  ],
+  [
+   "2025-05-09",
+   623.0
+  ],
+  [
+   "2025-05-16",
+   629.5
+  ],
+  [
+   "2025-05-23",
+   629.5
+  ],
+  [
+   "2025-05-30",
+   635.5
+  ],
+  [
+   "2025-06-06",
+   615.0
+  ],
+  [
+   "2025-06-13",
+   619.5
+  ],
+  [
+   "2025-06-20",
+   616.5
+  ],
+  [
+   "2025-06-27",
+   622.5
+  ],
+  [
+   "2025-07-04",
+   595.0
+  ],
+  [
+   "2025-07-11",
+   571.0
+  ],
+  [
+   "2025-07-18",
+   577.5
+  ],
+  [
+   "2025-07-25",
+   564.5
+  ],
+  [
+   "2025-08-01",
+   523.0
+  ],
+  [
+   "2025-08-08",
+   611.5
+  ],
+  [
+   "2025-08-15",
+   615.0
+  ],
+  [
+   "2025-08-22",
+   631.0
+  ],
+  [
+   "2025-08-29",
+   595.5
+  ],
+  [
+   "2025-09-05",
+   581.0
+  ],
+  [
+   "2025-09-12",
+   572.0
+  ],
+  [
+   "2025-09-19",
+   563.5
+  ],
+  [
+   "2025-09-26",
+   588.5
+  ],
+  [
+   "2025-10-03",
+   647.0
+  ],
+  [
+   "2025-10-10",
+   621.5
+  ],
+  [
+   "2025-10-17",
+   605.0
+  ],
+  [
+   "2025-10-24",
+   668.5
+  ],
+  [
+   "2025-10-31",
+   629.0
+  ],
+  [
+   "2025-11-07",
+   609.0
+  ],
+  [
+   "2025-11-14",
+   587.5
+  ],
+  [
+   "2025-11-21",
+   586.5
+  ],
+  [
+   "2025-11-28",
+   636.5
+  ],
+  [
+   "2025-12-05",
+   625.0
+  ],
+  [
+   "2025-12-12",
+   605.5
+  ],
+  [
+   "2025-12-19",
+   622.0
+  ],
+  [
+   "2025-12-24",
+   635.5
+  ],
+  [
+   "2026-01-02",
+   636.5
+  ],
+  [
+   "2026-01-09",
+   667.0
+  ],
+  [
+   "2026-01-16",
+   661.5
+  ],
+  [
+   "2026-01-23",
+   657.0
+  ],
+  [
+   "2026-01-30",
+   625.5
+  ],
+  [
+   "2026-02-06",
+   655.0
+  ],
+  [
+   "2026-02-13",
+   714.0
+  ],
+  [
+   "2026-02-20",
+   693.0
+  ],
+  [
+   "2026-02-27",
+   698.0
+  ],
+  [
+   "2026-03-06",
+   619.0
+  ],
+  [
+   "2026-03-13",
+   583.0
+  ],
+  [
+   "2026-03-20",
+   554.5
+  ],
+  [
+   "2026-03-27",
+   557.0
+  ],
+  [
+   "2026-04-02",
+   557.0
+  ],
+  [
+   "2026-04-10",
+   578.5
+  ],
+  [
+   "2026-04-17",
+   598.0
+  ],
+  [
+   "2026-04-24",
+   551.5
+  ],
+  [
+   "2026-05-01",
+   527.5
+  ],
+  [
+   "2026-05-08",
+   535.0
+  ],
+  [
+   "2026-05-15",
+   510.0
+  ],
+  [
+   "2026-05-22",
+   541.0
+  ],
+  [
+   "2026-05-29",
+   534.0
+  ],
+  [
+   "2026-06-05",
+   543.0
+  ],
+  [
+   "2026-06-12",
+   560.0
+  ],
+  [
+   "2026-06-19",
+   541.5
+  ],
+  [
+   "2026-06-26",
+   575.5
+  ],
+  [
+   "2026-07-03",
+   565.0
+  ],
+  [
+   "2026-07-10",
+   538.5
+  ],
+  [
+   "2026-07-17",
+   564.5
+  ],
+  [
+   "2026-07-24",
+   550.5
+  ],
+  [
+   "2026-07-31",
+   554.5
+  ],
+  [
+   "2026-08-07",
+   675.0
+  ],
+  [
+   "2026-08-14",
+   656.5
+  ],
+  [
+   "2026-08-21",
+   648.5
+  ],
+  [
+   "2026-08-28",
+   651.5
+  ],
+  [
+   "2026-09-04",
+   617.0
+  ],
+  [
+   "2026-09-11",
+   587.5
+  ],
+  [
+   "2026-09-18",
+   596.0
+  ],
+  [
+   "2026-09-25",
+   598.5
+  ],
+  [
+   "2026-10-02",
+   585.0
+  ],
+  [
+   "2026-10-09",
+   549.5
+  ],
+  [
+   "2026-10-16",
+   597.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-10-28",
+   "doc": "Q3 TU",
+   "fy": "FY21",
+   "g": "RAISE",
+   "s": 2,
+   "q": "the Board now expects that adjusted operating profit for the full year 2021 will be ahead of current market expectations* and will be at least £340m (inclusive of around £40m of property profits)",
+   "file": "20211028_TPK_Travis-Perkins-plc---Q3-2021-trading-update.md",
+   "gnote": "drift §3"
+  },
+  {
+   "d": "2022-03-01",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 1,
+   "q": "Given robust end market demand and a positive start to the new year, the Group remains confident of making further progress in 2022.",
+   "file": "20220301_TPK_Travis-Perkins-plc---Full-year-results-for-the....md",
+   "gnote": "drift §3"
+  },
+  {
+   "d": "2022-04-29",
+   "doc": "Q1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -1,
+   "q": "Given the Group's resilient end markets and trade focused business model, Management's expectations for the full year remain unchanged.",
+   "file": "20220429_TPK_Q1-2022-Trading-Update.md",
+   "gnote": "drift §3"
+  },
+  {
+   "d": "2022-08-02",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -1,
+   "q": "As a result, the Group overall is expected to deliver a full year performance broadly in line with market expectations.",
+   "file": "20220802_TPK_Travis-Perkins-plc---Half-year-results-for-the-....md",
+   "gnote": "drift §3"
+  },
+  {
+   "d": "2022-10-20",
+   "doc": "Q3 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -1,
+   "q": "Whilst forward visibility is limited, reflecting the uncertain macroeconomic situation, the Group expects to build on the current resilient performance and deliver a full year operating profit around the middle of the current range of market expectations",
+   "file": "20221020_TPK_Travis-Perkins-plc-Q3-2022-trading-update.md",
+   "gnote": "drift §3"
+  },
+  {
+   "d": "2023-02-28",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Whilst the expected market dynamics point to a challenging year ahead, Management continues to anticipate delivering a performance in line with market expectations.",
+   "file": "20230228_TPK_Travis-Perkins-plc-Full-year-results-for-the-y....md",
+   "gnote": "drift §3"
+  },
+  {
+   "d": "2023-04-25",
+   "doc": "Q1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The timely actions taken to prepare our businesses for a lower demand environment mean that we continue to expect to deliver a full year performance in line with market expectations",
+   "file": "20230425_TPK_Travis-Perkins-plc---first-quarter-trading-upda....md",
+   "gnote": "drift §3"
+  },
+  {
+   "d": "2023-06-16",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -3,
+   "q": "Assuming that the present conditions persist for the balance of the year, Management now expects to deliver a full year adjusted operating profit of around £240m.",
+   "file": "20230616_TPK_Travis-Perkins-plc---trading-update.md",
+   "gnote": "drift §3"
+  },
+  {
+   "d": "2023-08-01",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "As previously guided, the Group expects to deliver a full year adjusted operating profit of around £240m.",
+   "file": "20230801_TPK_Travis-Perkins-Half-year-results-for-the-six....md",
+   "gnote": "drift §3"
+  },
+  {
+   "d": "2023-09-28",
+   "doc": "OPS",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The event will set out the pathway for the Toolstation UK business to deliver £1bn of revenue at a high single digit operating margin by 2027",
+   "file": "20230928_TPK_Travis-Perkins-plc-Investor-Update---Toolstat....md",
+   "gnote": "drift §3"
+  },
+  {
+   "d": "2023-10-11",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -3,
+   "q": "With commodity deflation expected to continue and the exit rate from the third quarter indicating further challenging conditions for the balance of the year, the Group now expects to deliver an adjusted operating profit in the range of £175m to £195m for the full year.",
+   "file": "20231011_TPK_Travis-Perkins-Q3-trading-update.md",
+   "gnote": "drift §3"
+  },
+  {
+   "d": "2024-01-18",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Accordingly, the Group expects to deliver an FY23 adjusted operating profit of around £180m, in line with its previous guidance.",
+   "file": "20240118_TPK_Travis-Perkins-plc---post-close-trading-updat....md",
+   "gnote": "drift §3"
+  },
+  {
+   "d": "2024-03-05",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -2,
+   "q": "Accordingly, management's best estimate at this stage is that FY24 adjusted operating profit will be in the range of £160m to £180m, inclusive of around £10m of property profits and around £(20)m of losses in Toolstation France.",
+   "file": "20240305_TPK_Travis-Perkinsplc-Full-year-results-for-the-....md",
+   "gnote": "drift §3"
+  },
+  {
+   "d": "2024-04-25",
+   "doc": "Q1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Pricing has largely stabilised but remains lower than prior year, primarily due to the rollover impact of timber deflation, with this trend expected to continue through the first half of the year.",
+   "file": "20240425_TPK_Travis-Perkins-plc---first-quarter-trading-up....md",
+   "gnote": "drift §3"
+  },
+  {
+   "d": "2024-08-06",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -3,
+   "q": "Given this backdrop, the Group is expecting a similar level of demand in the second half of the year and accordingly expects FY24 adjusted operating profit will be around £150m, inclusive of £5-10m of property profits and around £(16)m of losses in Toolstation France.",
+   "file": "20240806_TPK_Travis-Perkins-plc-half-year-results-for-th....md",
+   "gnote": "drift §3"
+  },
+  {
+   "d": "2024-10-24",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -3,
+   "q": "Given the shortfall in the Merchanting segment, the Board now expects FY24 adjusted operating profit to be around £135m.",
+   "file": "20241024_TPK_Travis-Perkins-plc---Q3-trading-update-for-th....md",
+   "gnote": "drift §3"
+  },
+  {
+   "d": "2025-03-14",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "The Board confirms that it expects adjusted operating profit for the year ended 31 December 2024 to be in line with guidance provided at the Group's Q3 trading update on 24 October 2024.",
+   "file": "20250314_TPK_Travis-Perkins-plc---delay-to-the-publication....md",
+   "gnote": "drift §3"
+  },
+  {
+   "d": "2025-04-01",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "In recognition of this backdrop and the operational turnaround challenges the Group currently faces, the Board expects FY25 adjusted operating profit excluding property profits to be broadly in line with FY24 (excluding property profits).",
+   "file": "20250401_TPK_Travis-Perkins-plc---full-year-results-for-th....md",
+   "gnote": "drift §3"
+  },
+  {
+   "d": "2025-04-29",
+   "doc": "Q1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "In the Merchanting segment revenue was down (3.2)% on a like-for-like basis with pricing having stabilised and volumes declining modestly.",
+   "file": "20250429_TPK_Travis-Perkins-first-quarter-trading-update-....md",
+   "gnote": "drift §3"
+  },
+  {
+   "d": "2025-08-05",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "Given this demand backdrop, the Group expects to deliver a full year adjusted operating profit (including £8m of property profits) broadly in line with current market expectations",
+   "file": "20250805_TPK_Half-year-Report.md",
+   "gnote": "drift §3"
+  },
+  {
+   "d": "2025-10-16",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -2,
+   "q": "In what remains a highly competitive market, we have invested in pricing and targeted promotions and will continue to do so in the near-term.",
+   "file": "20251016_TPK_Q3-trading-update.md",
+   "gnote": "drift §3"
+  },
+  {
+   "d": "2026-03-17",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -2,
+   "q": "The trading environment since the start of the year has remained subdued and this reflects a continuation of the weak UK construction activity figures reported for the final quarter of 2025.",
+   "file": "20260317_TPK_Travis-Perkins-plc---2025-Results-Announcement.md",
+   "gnote": "withdrawn; drift §3"
+  },
+  {
+   "d": "2026-04-28",
+   "doc": "Q1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Looking forward the Group remains focused on managing its overheads and identifying further operational efficiencies, whilst ongoing capital discipline and incremental cash generation opportunities are continuing to enhance the Group's financial position.",
+   "file": "20260428_TPK_Travis-Perkins-first-quarter-trading-update.md",
+   "gnote": "drift §3"
+  },
+  {
+   "d": "2026-08-04",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "The Group expects market conditions in the second half to be comparable to the first and as such expects a similar trading performance.",
+   "file": "20260804_TPK_2026-Half-Year-Results.md",
+   "gnote": "drift §3"
+  },
+  {
+   "d": "2026-10-15",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "In challenging market conditions we remain focused on what we can control. Our ongoing cost discipline and trading approach are protecting profitability whilst we continue to identify and implement further operational efficiencies.",
+   "file": "20261015_TPK_Travis-Perkins-third-quarter-trading-update.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-15",
+  "doc": "Q3 TU",
+  "file": "20261015_TPK_Travis-Perkins-third-quarter-trading-update.md",
+  "vs": "Q3 TU Oct-25 · H1 R Aug-26 · back to Oct-21 (Q3 TUs)",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Went quiet",
+    "text": "Q3 TUs used to carry a full-year profit number, e.g. Oct-24 “the Board now expects FY24 adjusted operating profit to be around £135m” → Oct-26 no FY26 profit view at all; only “We look forward to providing more detail on our strategy and operational priorities at our Preliminary results in March 2027”",
+    "span": "Given at Oct-21, Oct-22, Oct-23, Oct-24 → second year with no Q3 profit guide (Oct-25, Oct-26)"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "“The Group’s overall performance in the third quarter continued in line with the first half year” while Merchanting like-for-like volume went from (3.9)% in H1-26 to (9.0)% in Q3 (Group (3.2)% → (7.2)%)",
+    "span": "H1 R Aug-26 → Q3 TU Oct-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Target dropped",
+    "text": "Toolstation Benelux: Aug-26 “the Group has initiated discussions with multiple interested parties regarding the possible divestment of this business” → Oct-26 only “continues to explore opportunities arising from its current strategic review”; divestment talks not mentioned",
+    "span": "H1 R Aug-26 → Q3 TU Oct-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Q3 revenue bridge now splits Toolstation UK and Toolstation Benelux (Oct-25 showed a single Toolstation column); Q3 Benelux like-for-like revenue (4.7)%, Toolstation UK 3.6%",
+    "span": "Q3 TU Oct-25 → Q3 TU Oct-26"
+   }
+  ]
+ }
+}
