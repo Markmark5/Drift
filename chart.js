@@ -320,13 +320,7 @@
       '" text-anchor="middle" font-size="' + (size === 'modal' || size === 'page' ? 15 : 8) +
       '" fill="#ffc400" stroke="' + T.outline + '" stroke-width=".6" style="pointer-events:none">★</text>';
 
-    /* last close (dark) */
-    if (theme === 'dark') {
-      var last = tail.length ? tail[tail.length - 1] : px[px.length - 1], lx = X(t(last[0])), ly = Y(last[1]);
-      /* a score badge sitting on the last close wins: no white dot over its number */
-      var covered = (badgePts || []).some(function (q) { return Math.abs(q[0] - lx) < q[2] + 2 && Math.abs(q[1] - ly) < q[2] + 2; });
-      if (!covered) s += '<circle cx="' + X(t(last[0])).toFixed(1) + '" cy="' + Y(last[1]).toFixed(1) + '" r="' + (size === 'modal' ? 3 : 2) + '" fill="#fff"/>';
-    }
+    /* no last-close dot: it sat on top of the newest marks and score badges (removed in 1.8) */
     s += '</svg>';
     el.innerHTML = s;
     el._dcTips = tips;
@@ -477,5 +471,5 @@
   }
 
   root.DriftChart = { render: render, legend: legend, validate: validate, parseTail: parseTail,
-                      mountFromPage: mountFromPage, parseEps: parseEps, epsPanel: epsPanel, version: '1.7' };
+                      mountFromPage: mountFromPage, parseEps: parseEps, epsPanel: epsPanel, version: '1.8' };
 })(typeof window !== 'undefined' ? window : this);
