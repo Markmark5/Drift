@@ -5,7 +5,7 @@
    Display only: it scores nothing and fires nothing.
 
    API
-     DriftChart.render(el, data, {theme:'light'|'dark', size:'page'|'card'|'preview'|'modal', tail:[[iso,price],…]})
+     DriftChart.render(el, data, {theme:'light'|'dark', size:'page'|'card'|'preview'|'modal', tail:[[iso,price],…], star:iso})
      DriftChart.legend(theme)                  -> HTML string
      DriftChart.validate(data)                 -> [] or list of error strings
      DriftChart.parseTail(rows4, ticker, ccy, afterIso) -> [[iso,price],…] (dark theme only)
@@ -230,10 +230,10 @@
       return px.length - 1;                         /* within 7 days after the last close */
     }
     var tips = [], hits = [];   /* hits: [x, y, tipIndex, radius] in viewBox units, for nearest-mark hover */
-    var dots = '', arrows = '', r = S.r, aw = S.aw / 2, ah = S.aw * 0.95;
+    var dots = '', arrows = '', r = S.r, aw = S.aw / 2, ah = S.aw * 0.95, starAt = null;
     (d.marks || []).forEach(function (m, idx) {
       var wi = weekIndex(m.d), wk = px[wi], cx = X(t(wk[0])), cy = Y(wk[1]);
-      var gtxt = m.g === 'flat' ? 'flat' : (m.g === 'RAISE' ? '▲ RAISE' : '▼ CUT') + (m.gnote ? ' (' + m.gnote + ')' : '');
+      var gtxt = (m.g === 'flat' ? 'flat' : (m.g === 'RAISE' ? '▲ RAISE' : '▼ CUT')) + (m.gnote ? ' (' + m.gnote + ')' : '');
       var tipHtml = '<b>' + esc(fmtDate(m.d)) + ' · ' + esc(m.fy || '') + ' ' + esc(m.doc || '') + '</b><br>' +
         'Text ' + fmtScore(m.s) + ' · G ' + esc(gtxt) + '<br>' +
         'Week close ' + esc(fmtPx(wk[1], ccy)) + ' (' + esc(fmtDate(wk[0], true)) + ')' +
@@ -255,6 +255,8 @@
       }
       tips[idx] = tipHtml;
       hits.push([cx, cy, idx, r]);
+      /* opt.star = ISO date of the latest RNS: a small star above that mark (Database popup) */
+      if (opt.star && m.d === opt.star) starAt = [cx, cy - (m.g === 'RAISE' ? ah * 0.6 : r) - 5];
     });
     /* RNS Scorecard badges (opt.scores = [{d, s, t}]): score in a band-coloured circle on the price
        line at the RNS date, faint full-height guide, same scheme as Database's broker target chart.
@@ -314,6 +316,9 @@
       });
     }
     s += badges + dots + arrows;                     /* arrows last: on top of a same-week dot */
+    if (starAt) s += '<text x="' + starAt[0].toFixed(1) + '" y="' + Math.max(S.pt + 4, starAt[1]).toFixed(1) +
+      '" text-anchor="middle" font-size="' + (size === 'modal' || size === 'page' ? 15 : 8) +
+      '" fill="#ffc400" stroke="' + T.outline + '" stroke-width=".6" style="pointer-events:none">★</text>';
 
     /* last close (dark) */
     if (theme === 'dark') {
@@ -472,5 +477,5 @@
   }
 
   root.DriftChart = { render: render, legend: legend, validate: validate, parseTail: parseTail,
-                      mountFromPage: mountFromPage, parseEps: parseEps, epsPanel: epsPanel, version: '1.6' };
+                      mountFromPage: mountFromPage, parseEps: parseEps, epsPanel: epsPanel, version: '1.7' };
 })(typeof window !== 'undefined' ? window : this);
