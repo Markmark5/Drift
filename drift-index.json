@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-17",
+  "updated": "2026-10-18",
   "tickers": [
     {
       "ticker": "STAF",
@@ -543,8 +543,8 @@
       "lights": "gg-",
       "rns_type": "H1 TU",
       "rns_date": "2026-10-14",
-      "build_date": "2026-10-14",
-      "spec_version": "5.6",
+      "build_date": "2026-10-18",
+      "spec_version": "5.8",
       "next_test": "2 Dec 2026 — Interims: Q2 orders near +13% in print, margin at or above 14.0%, S&C converting its +18% orders, and 3Gmetalworx completed.",
       "grid": {
         "labels": [
@@ -599,7 +599,8 @@
             "gap": null
           }
         ]
-      }
+      },
+      "chart": "charts/DSCV.json?v=2026-10-18.3680"
     },
     {
       "ticker": "TUNE",
