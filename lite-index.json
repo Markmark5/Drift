@@ -60,11 +60,67 @@
    "marks": 22
   },
   {
+   "ticker": "ANG",
+   "company": "Angling Direct PLC",
+   "chart": "lite/ANG.json?v=2026-10-18.47d3",
+   "scored": "2026-10-18",
+   "marks": 13
+  },
+  {
+   "ticker": "APTA",
+   "company": "Aptamer Group PLC",
+   "chart": "lite/APTA.json?v=2026-10-18.2f17",
+   "scored": "2026-10-18",
+   "marks": 30
+  },
+  {
+   "ticker": "BOOM",
+   "company": "AudioBoom Group PLC",
+   "chart": "lite/BOOM.json?v=2026-10-18.cd7c",
+   "scored": "2026-10-18",
+   "marks": 25
+  },
+  {
+   "ticker": "BP.",
+   "company": "BP PLC",
+   "chart": "lite/BP.json?v=2026-10-18.65b9",
+   "scored": "2026-10-18",
+   "marks": 24
+  },
+  {
+   "ticker": "BWY",
+   "company": "Bellway PLC",
+   "chart": "lite/BWY.json?v=2026-10-18.d8a8",
+   "scored": "2026-10-18",
+   "marks": 25
+  },
+  {
+   "ticker": "BYIT",
+   "company": "Bytes Technology Group PLC",
+   "chart": "lite/BYIT.json?v=2026-10-18.5bb6",
+   "scored": "2026-10-18",
+   "marks": 27
+  },
+  {
    "ticker": "CAPD",
    "company": "Capital Limited",
    "chart": "lite/CAPD.json?v=2026-10-18.18ab",
    "scored": "2026-10-18",
    "marks": 36
+  },
+  {
+   "ticker": "CNS",
+   "company": "Corero Network Security plc",
+   "chart": "lite/CNS.json?v=2026-10-18.a036",
+   "scored": "2026-10-18",
+   "marks": 23
+  },
+  {
+   "ticker": "DSCV",
+   "company": "discoverIE Group PLC",
+   "chart": "lite/DSCV.json?v=2026-10-18.0947",
+   "scored": "2026-10-18",
+   "marks": 26
   },
   {
    "ticker": "EMG",
@@ -95,6 +151,13 @@
    "marks": 35
   },
   {
+   "ticker": "JHD",
+   "company": "James Halstead PLC",
+   "chart": "lite/JHD.json?v=2026-10-18.cd52",
+   "scored": "2026-10-18",
+   "marks": 24
+  },
+  {
    "ticker": "PMI",
    "company": "Premier Miton Group PLC",
    "chart": "lite/PMI.json?v=2026-10-18.1edb",
@@ -102,11 +165,39 @@
    "marks": 28
   },
   {
+   "ticker": "PRV",
+   "company": "Porvair PLC",
+   "chart": "lite/PRV.json?v=2026-10-18.def1",
+   "scored": "2026-10-18",
+   "marks": 23
+  },
+  {
+   "ticker": "RIO",
+   "company": "Rio Tinto PLC",
+   "chart": "lite/RIO.json?v=2026-10-18.7bc1",
+   "scored": "2026-10-18",
+   "marks": 35
+  },
+  {
    "ticker": "RNK",
    "company": "Rank Group",
    "chart": "lite/RNK.json?v=2026-10-18.4356",
    "scored": "2026-10-18",
    "marks": 24
+  },
+  {
+   "ticker": "RWA",
+   "company": "Robert Walters PLC",
+   "chart": "lite/RWA.json?v=2026-10-18.e348",
+   "scored": "2026-10-18",
+   "marks": 32
+  },
+  {
+   "ticker": "SCT",
+   "company": "Softcat PLC",
+   "chart": "lite/SCT.json?v=2026-10-18.7473",
+   "scored": "2026-10-18",
+   "marks": 23
   },
   {
    "ticker": "THG",
@@ -123,11 +214,32 @@
    "marks": 25
   },
   {
+   "ticker": "TPX",
+   "company": "TPXimpact Holdings PLC",
+   "chart": "lite/TPX.json?v=2026-10-18.226f",
+   "scored": "2026-10-18",
+   "marks": 20
+  },
+  {
+   "ticker": "VTU",
+   "company": "Vertu Motors PLC",
+   "chart": "lite/VTU.json?v=2026-10-18.5172",
+   "scored": "2026-10-18",
+   "marks": 28
+  },
+  {
    "ticker": "WISE",
    "company": "Wise Group plc",
    "chart": "lite/WISE.json?v=2026-10-18.5e41",
    "scored": "2026-10-18",
    "marks": 31
+  },
+  {
+   "ticker": "XPS",
+   "company": "XPS Pensions Group PLC",
+   "chart": "lite/XPS.json?v=2026-10-18.91da",
+   "scored": "2026-10-18",
+   "marks": 21
   }
  ]
 }

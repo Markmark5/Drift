@@ -1,0 +1,1403 @@
+{
+ "ticker": "RIO",
+ "v": "2026-10-18.7bc1",
+ "ccy": "GBX",
+ "src": "Yahoo RIO.L weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-22",
+   4672.5
+  ],
+  [
+   "2021-10-29",
+   4560.5
+  ],
+  [
+   "2021-11-05",
+   4424.5
+  ],
+  [
+   "2021-11-12",
+   4562.5
+  ],
+  [
+   "2021-11-19",
+   4455.0
+  ],
+  [
+   "2021-11-26",
+   4542.5
+  ],
+  [
+   "2021-12-03",
+   4578.5
+  ],
+  [
+   "2021-12-10",
+   4754.0
+  ],
+  [
+   "2021-12-17",
+   4876.0
+  ],
+  [
+   "2021-12-24",
+   4866.5
+  ],
+  [
+   "2021-12-31",
+   4892.0
+  ],
+  [
+   "2022-01-07",
+   5212.0
+  ],
+  [
+   "2022-01-14",
+   5392.0
+  ],
+  [
+   "2022-01-21",
+   5457.0
+  ],
+  [
+   "2022-01-28",
+   5386.0
+  ],
+  [
+   "2022-02-04",
+   5367.0
+  ],
+  [
+   "2022-02-11",
+   5726.0
+  ],
+  [
+   "2022-02-18",
+   5657.0
+  ],
+  [
+   "2022-02-25",
+   5667.0
+  ],
+  [
+   "2022-03-04",
+   6028.0
+  ],
+  [
+   "2022-03-11",
+   5564.0
+  ],
+  [
+   "2022-03-18",
+   5621.0
+  ],
+  [
+   "2022-03-25",
+   5925.0
+  ],
+  [
+   "2022-04-01",
+   6225.0
+  ],
+  [
+   "2022-04-08",
+   6138.0
+  ],
+  [
+   "2022-04-15",
+   6212.0
+  ],
+  [
+   "2022-04-22",
+   5664.0
+  ],
+  [
+   "2022-04-29",
+   5706.0
+  ],
+  [
+   "2022-05-06",
+   5440.0
+  ],
+  [
+   "2022-05-13",
+   5320.0
+  ],
+  [
+   "2022-05-20",
+   5449.0
+  ],
+  [
+   "2022-05-27",
+   5702.0
+  ],
+  [
+   "2022-06-03",
+   5758.0
+  ],
+  [
+   "2022-06-10",
+   5690.0
+  ],
+  [
+   "2022-06-17",
+   5177.0
+  ],
+  [
+   "2022-06-24",
+   4979.0
+  ],
+  [
+   "2022-07-01",
+   4834.5
+  ],
+  [
+   "2022-07-08",
+   4835.0
+  ],
+  [
+   "2022-07-15",
+   4579.0
+  ],
+  [
+   "2022-07-22",
+   4772.0
+  ],
+  [
+   "2022-07-29",
+   4924.5
+  ],
+  [
+   "2022-08-05",
+   4927.5
+  ],
+  [
+   "2022-08-12",
+   4844.0
+  ],
+  [
+   "2022-08-19",
+   4911.5
+  ],
+  [
+   "2022-08-26",
+   4980.0
+  ],
+  [
+   "2022-09-02",
+   4700.5
+  ],
+  [
+   "2022-09-09",
+   4860.0
+  ],
+  [
+   "2022-09-16",
+   4785.5
+  ],
+  [
+   "2022-09-23",
+   4677.5
+  ],
+  [
+   "2022-09-30",
+   4896.0
+  ],
+  [
+   "2022-10-07",
+   5066.0
+  ],
+  [
+   "2022-10-14",
+   4751.5
+  ],
+  [
+   "2022-10-21",
+   4805.0
+  ],
+  [
+   "2022-10-28",
+   4486.0
+  ],
+  [
+   "2022-11-04",
+   5030.0
+  ],
+  [
+   "2022-11-11",
+   5398.0
+  ],
+  [
+   "2022-11-18",
+   5385.0
+  ],
+  [
+   "2022-11-25",
+   5379.0
+  ],
+  [
+   "2022-12-02",
+   5584.0
+  ],
+  [
+   "2022-12-09",
+   5835.0
+  ],
+  [
+   "2022-12-16",
+   5612.0
+  ],
+  [
+   "2022-12-23",
+   5808.0
+  ],
+  [
+   "2022-12-30",
+   5798.0
+  ],
+  [
+   "2023-01-06",
+   6058.0
+  ],
+  [
+   "2023-01-13",
+   6219.0
+  ],
+  [
+   "2023-01-20",
+   6213.0
+  ],
+  [
+   "2023-01-27",
+   6291.0
+  ],
+  [
+   "2023-02-03",
+   6128.0
+  ],
+  [
+   "2023-02-10",
+   5967.0
+  ],
+  [
+   "2023-02-17",
+   6103.0
+  ],
+  [
+   "2023-02-24",
+   5667.0
+  ],
+  [
+   "2023-03-03",
+   6144.0
+  ],
+  [
+   "2023-03-10",
+   5634.0
+  ],
+  [
+   "2023-03-17",
+   5250.0
+  ],
+  [
+   "2023-03-24",
+   5253.0
+  ],
+  [
+   "2023-03-31",
+   5478.0
+  ],
+  [
+   "2023-04-07",
+   5295.0
+  ],
+  [
+   "2023-04-14",
+   5462.0
+  ],
+  [
+   "2023-04-21",
+   5131.0
+  ],
+  [
+   "2023-04-28",
+   5049.0
+  ],
+  [
+   "2023-05-05",
+   4992.0
+  ],
+  [
+   "2023-05-12",
+   4917.5
+  ],
+  [
+   "2023-05-19",
+   4948.5
+  ],
+  [
+   "2023-05-26",
+   4925.0
+  ],
+  [
+   "2023-06-02",
+   5070.0
+  ],
+  [
+   "2023-06-09",
+   5125.0
+  ],
+  [
+   "2023-06-16",
+   5300.0
+  ],
+  [
+   "2023-06-23",
+   4971.5
+  ],
+  [
+   "2023-06-30",
+   4985.5
+  ],
+  [
+   "2023-07-07",
+   4915.0
+  ],
+  [
+   "2023-07-14",
+   5212.0
+  ],
+  [
+   "2023-07-21",
+   5140.0
+  ],
+  [
+   "2023-07-28",
+   5125.0
+  ],
+  [
+   "2023-08-04",
+   5010.0
+  ],
+  [
+   "2023-08-11",
+   4726.0
+  ],
+  [
+   "2023-08-18",
+   4600.5
+  ],
+  [
+   "2023-08-25",
+   4745.5
+  ],
+  [
+   "2023-09-01",
+   4972.5
+  ],
+  [
+   "2023-09-08",
+   4834.5
+  ],
+  [
+   "2023-09-15",
+   5289.0
+  ],
+  [
+   "2023-09-22",
+   5183.0
+  ],
+  [
+   "2023-09-29",
+   5174.0
+  ],
+  [
+   "2023-10-06",
+   5008.0
+  ],
+  [
+   "2023-10-13",
+   5073.0
+  ],
+  [
+   "2023-10-20",
+   4930.5
+  ],
+  [
+   "2023-10-27",
+   5200.0
+  ],
+  [
+   "2023-11-03",
+   5330.0
+  ],
+  [
+   "2023-11-10",
+   5259.0
+  ],
+  [
+   "2023-11-17",
+   5446.0
+  ],
+  [
+   "2023-11-24",
+   5486.0
+  ],
+  [
+   "2023-12-01",
+   5599.0
+  ],
+  [
+   "2023-12-08",
+   5583.0
+  ],
+  [
+   "2023-12-15",
+   5698.0
+  ],
+  [
+   "2023-12-22",
+   5839.0
+  ],
+  [
+   "2023-12-29",
+   5842.0
+  ],
+  [
+   "2024-01-05",
+   5700.0
+  ],
+  [
+   "2024-01-12",
+   5486.0
+  ],
+  [
+   "2024-01-19",
+   5379.0
+  ],
+  [
+   "2024-01-26",
+   5549.0
+  ],
+  [
+   "2024-02-02",
+   5409.0
+  ],
+  [
+   "2024-02-09",
+   5344.0
+  ],
+  [
+   "2024-02-16",
+   5515.0
+  ],
+  [
+   "2024-02-23",
+   5197.0
+  ],
+  [
+   "2024-03-01",
+   5127.0
+  ],
+  [
+   "2024-03-08",
+   4869.5
+  ],
+  [
+   "2024-03-15",
+   4862.0
+  ],
+  [
+   "2024-03-22",
+   4997.0
+  ],
+  [
+   "2024-03-29",
+   5017.0
+  ],
+  [
+   "2024-04-05",
+   4974.5
+  ],
+  [
+   "2024-04-12",
+   5375.0
+  ],
+  [
+   "2024-04-19",
+   5380.0
+  ],
+  [
+   "2024-04-26",
+   5453.0
+  ],
+  [
+   "2024-05-03",
+   5467.0
+  ],
+  [
+   "2024-05-10",
+   5605.0
+  ],
+  [
+   "2024-05-17",
+   5785.0
+  ],
+  [
+   "2024-05-24",
+   5655.0
+  ],
+  [
+   "2024-05-31",
+   5476.0
+  ],
+  [
+   "2024-06-07",
+   5352.0
+  ],
+  [
+   "2024-06-14",
+   5219.0
+  ],
+  [
+   "2024-06-21",
+   5234.0
+  ],
+  [
+   "2024-06-28",
+   5201.0
+  ],
+  [
+   "2024-07-05",
+   5259.0
+  ],
+  [
+   "2024-07-12",
+   5260.0
+  ],
+  [
+   "2024-07-19",
+   4916.0
+  ],
+  [
+   "2024-07-26",
+   5037.0
+  ],
+  [
+   "2024-08-02",
+   4949.5
+  ],
+  [
+   "2024-08-09",
+   4914.5
+  ],
+  [
+   "2024-08-16",
+   4742.0
+  ],
+  [
+   "2024-08-23",
+   4761.5
+  ],
+  [
+   "2024-08-30",
+   4770.0
+  ],
+  [
+   "2024-09-06",
+   4516.0
+  ],
+  [
+   "2024-09-13",
+   4757.0
+  ],
+  [
+   "2024-09-20",
+   4802.5
+  ],
+  [
+   "2024-09-27",
+   5309.0
+  ],
+  [
+   "2024-10-04",
+   5298.0
+  ],
+  [
+   "2024-10-11",
+   5098.0
+  ],
+  [
+   "2024-10-18",
+   4995.5
+  ],
+  [
+   "2024-10-25",
+   5022.0
+  ],
+  [
+   "2024-11-01",
+   5026.0
+  ],
+  [
+   "2024-11-08",
+   4946.0
+  ],
+  [
+   "2024-11-15",
+   4804.5
+  ],
+  [
+   "2024-11-22",
+   4945.0
+  ],
+  [
+   "2024-11-29",
+   4936.5
+  ],
+  [
+   "2024-12-06",
+   4924.0
+  ],
+  [
+   "2024-12-13",
+   4900.0
+  ],
+  [
+   "2024-12-20",
+   4668.0
+  ],
+  [
+   "2024-12-27",
+   4693.5
+  ],
+  [
+   "2025-01-03",
+   4698.0
+  ],
+  [
+   "2025-01-10",
+   4818.0
+  ],
+  [
+   "2025-01-17",
+   5041.0
+  ],
+  [
+   "2025-01-24",
+   4987.0
+  ],
+  [
+   "2025-01-31",
+   4891.0
+  ],
+  [
+   "2025-02-07",
+   5015.0
+  ],
+  [
+   "2025-02-14",
+   5054.0
+  ],
+  [
+   "2025-02-21",
+   5082.0
+  ],
+  [
+   "2025-02-28",
+   4794.0
+  ],
+  [
+   "2025-03-07",
+   4802.5
+  ],
+  [
+   "2025-03-14",
+   4818.0
+  ],
+  [
+   "2025-03-21",
+   4757.0
+  ],
+  [
+   "2025-03-28",
+   4716.0
+  ],
+  [
+   "2025-04-04",
+   4239.0
+  ],
+  [
+   "2025-04-11",
+   4303.5
+  ],
+  [
+   "2025-04-18",
+   4398.0
+  ],
+  [
+   "2025-04-25",
+   4550.0
+  ],
+  [
+   "2025-05-02",
+   4502.0
+  ],
+  [
+   "2025-05-09",
+   4496.5
+  ],
+  [
+   "2025-05-16",
+   4676.0
+  ],
+  [
+   "2025-05-23",
+   4562.5
+  ],
+  [
+   "2025-05-30",
+   4402.0
+  ],
+  [
+   "2025-06-06",
+   4355.5
+  ],
+  [
+   "2025-06-13",
+   4288.5
+  ],
+  [
+   "2025-06-20",
+   4148.5
+  ],
+  [
+   "2025-06-27",
+   4281.5
+  ],
+  [
+   "2025-07-04",
+   4266.5
+  ],
+  [
+   "2025-07-11",
+   4457.0
+  ],
+  [
+   "2025-07-18",
+   4487.5
+  ],
+  [
+   "2025-07-25",
+   4680.0
+  ],
+  [
+   "2025-08-01",
+   4492.0
+  ],
+  [
+   "2025-08-08",
+   4573.0
+  ],
+  [
+   "2025-08-15",
+   4514.0
+  ],
+  [
+   "2025-08-22",
+   4601.0
+  ],
+  [
+   "2025-08-29",
+   4642.0
+  ],
+  [
+   "2025-09-05",
+   4681.0
+  ],
+  [
+   "2025-09-12",
+   4602.0
+  ],
+  [
+   "2025-09-19",
+   4599.0
+  ],
+  [
+   "2025-09-26",
+   4831.5
+  ],
+  [
+   "2025-10-03",
+   4931.0
+  ],
+  [
+   "2025-10-10",
+   4983.5
+  ],
+  [
+   "2025-10-17",
+   5050.0
+  ],
+  [
+   "2025-10-24",
+   5325.0
+  ],
+  [
+   "2025-10-31",
+   5486.0
+  ],
+  [
+   "2025-11-07",
+   5226.0
+  ],
+  [
+   "2025-11-14",
+   5394.0
+  ],
+  [
+   "2025-11-21",
+   5308.0
+  ],
+  [
+   "2025-11-28",
+   5422.0
+  ],
+  [
+   "2025-12-05",
+   5500.0
+  ],
+  [
+   "2025-12-12",
+   5589.0
+  ],
+  [
+   "2025-12-19",
+   5838.0
+  ],
+  [
+   "2025-12-26",
+   5982.0
+  ],
+  [
+   "2026-01-02",
+   5986.0
+  ],
+  [
+   "2026-01-09",
+   6006.0
+  ],
+  [
+   "2026-01-16",
+   6347.0
+  ],
+  [
+   "2026-01-23",
+   6576.0
+  ],
+  [
+   "2026-01-30",
+   6738.0
+  ],
+  [
+   "2026-02-06",
+   6843.0
+  ],
+  [
+   "2026-02-13",
+   7187.0
+  ],
+  [
+   "2026-02-20",
+   7122.0
+  ],
+  [
+   "2026-02-27",
+   7335.0
+  ],
+  [
+   "2026-03-06",
+   6749.0
+  ],
+  [
+   "2026-03-13",
+   6665.0
+  ],
+  [
+   "2026-03-20",
+   6246.0
+  ],
+  [
+   "2026-03-27",
+   6545.0
+  ],
+  [
+   "2026-04-03",
+   7102.0
+  ],
+  [
+   "2026-04-10",
+   7345.0
+  ],
+  [
+   "2026-04-17",
+   7448.0
+  ],
+  [
+   "2026-04-24",
+   7381.0
+  ],
+  [
+   "2026-05-01",
+   7391.0
+  ],
+  [
+   "2026-05-08",
+   7695.0
+  ],
+  [
+   "2026-05-15",
+   7766.0
+  ],
+  [
+   "2026-05-22",
+   7777.0
+  ],
+  [
+   "2026-05-29",
+   7968.0
+  ],
+  [
+   "2026-06-05",
+   7604.0
+  ],
+  [
+   "2026-06-12",
+   7814.0
+  ],
+  [
+   "2026-06-19",
+   7394.0
+  ],
+  [
+   "2026-06-26",
+   7168.0
+  ],
+  [
+   "2026-07-03",
+   7070.0
+  ],
+  [
+   "2026-07-10",
+   6753.0
+  ],
+  [
+   "2026-07-17",
+   6726.0
+  ],
+  [
+   "2026-07-24",
+   6869.0
+  ],
+  [
+   "2026-07-31",
+   7174.0
+  ],
+  [
+   "2026-08-07",
+   7528.0
+  ],
+  [
+   "2026-08-14",
+   7059.0
+  ],
+  [
+   "2026-08-21",
+   7648.0
+  ],
+  [
+   "2026-08-28",
+   7674.0
+  ],
+  [
+   "2026-09-04",
+   7641.0
+  ],
+  [
+   "2026-09-11",
+   7374.0
+  ],
+  [
+   "2026-09-18",
+   7218.0
+  ],
+  [
+   "2026-09-25",
+   7088.0
+  ],
+  [
+   "2026-10-02",
+   7056.0
+  ],
+  [
+   "2026-10-09",
+   7126.0
+  ],
+  [
+   "2026-10-16",
+   6816.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2022-01-18",
+   "doc": "OPS",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "We are seeing some initial positive results from the implementation of the Rio Tinto Safe Production System, which we will significantly ramp up in 2022, as we continue to work hard to improve our operational performance to become the best operator.",
+   "file": "20220118_RIO_Fourth-quarter-production-results.md"
+  },
+  {
+   "d": "2022-02-23",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Production guidance is unchanged from our Fourth Quarter Operations Review released on 18 January 2022.",
+   "file": "20220223_RIO_Final-Results.md"
+  },
+  {
+   "d": "2022-04-20",
+   "doc": "OPS",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -1,
+   "q": "We expect increased production volumes and improved product mix in the second half with the commissioning and ramp up of Gudai-Darri, commissioning of the Robe Valley wet plant and improved mine pit health.",
+   "file": "20220420_RIO_First-quarter-production-results.md"
+  },
+  {
+   "d": "2022-06-15",
+   "doc": "OPS",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Full-year shipments guidance for 2022 remains at 320 to 335 million tonnes (100% basis) subject to risks around the ramp up of new mines, weather and management of cultural heritage.",
+   "file": "20220615_RIO_First-ore-delivered-at-Gudai-Darri-iron-ore-mine.md"
+  },
+  {
+   "d": "2022-07-15",
+   "doc": "OPS",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Shipments were 79.9 million tonnes (100% basis), 5% higher than the second quarter of 2021. Full year shipments guidance remains unchanged at 320 to 335 million tonnes.",
+   "file": "20220715_RIO_Second-quarter-production-results.md"
+  },
+  {
+   "d": "2022-07-27",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Production guidance is unchanged from our Second Quarter Operations Review released on 15 July 2022.",
+   "file": "20220727_RIO_Rio-Tinto-2022-half-year-results.md"
+  },
+  {
+   "d": "2022-10-18",
+   "doc": "OPS",
+   "fy": "FY22",
+   "g": "CUT",
+   "s": -2,
+   "q": "Full year shipments are expected to be at the low end of the original 320 to 335 million tonne range.",
+   "file": "20221018_RIO_Third-quarter-production-results.md"
+  },
+  {
+   "d": "2023-01-17",
+   "doc": "OPS",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "2023 production guidance is unchanged since November 2022 with the exception of mined copper.",
+   "file": "20230117_RIO_Fourth-quarter-production-results.md"
+  },
+  {
+   "d": "2023-02-22",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "In 2023, we expect our share of capital investment (refer to APMs on page 75 and 76) to be around $8.0 billion (previously $8.0 to $9.0 billion), including growth capital of around $2.0 billion, depending on the ramp-up of spend at Simandou.",
+   "file": "20230222_RIO_Final-Results.md"
+  },
+  {
+   "d": "2023-04-20",
+   "doc": "OPS",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -2,
+   "q": "Mined copper production guidance has been lowered to 590 to 640 thousand tonnes (previously 650 to 710 thousand tonnes) primarily reflecting the conveyor outage at Kennecott, together with the geotechnical challenges in the open pit at Escondida.",
+   "file": "20230420_RIO_First-quarter-production-results.md"
+  },
+  {
+   "d": "2023-06-12",
+   "doc": "OPS",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group's capital expenditure guidance of $9 billion to $10 billion in both 2024 and 2025 remains unchanged.",
+   "file": "20230612_RIO_Rio-Tinto-to-expand-low-carbon-aluminium-smelter.md"
+  },
+  {
+   "d": "2023-07-19",
+   "doc": "OPS",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 1,
+   "q": "With ongoing operational improvements across the Pilbara system, and uplift from implementation of the Safe Production System, full year shipments are expected to be in the upper half of the original 320 to 335 million tonne range.",
+   "file": "20230719_RIO_Second-quarter-production-results.md"
+  },
+  {
+   "d": "2023-07-26",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "sustained momentum from our Pilbara Iron Ore business with a 7% uplift in production and shipments in the first half: Gudai-Darri reached capacity and we lifted 2023 shipments guidance to the upper half of the 320 to 335 million tonne range",
+   "file": "20230726_RIO_Rio-Tinto-2023-half-year-results.md"
+  },
+  {
+   "d": "2023-10-09",
+   "doc": "OPS",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Shipments guidance (100% basis) is unchanged for 2023 and remains in the upper half of the 320 to 335 million tonne range, with the Safe Production System on track to deliver a 5 million tonne productivity uplift.",
+   "file": "20231009_RIO_Financial-community-visit-to-Pilbara-operations.md"
+  },
+  {
+   "d": "2023-10-17",
+   "doc": "OPS",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "We continue to expect full year shipments in the upper half of the original 320 to 335 million tonne range, which includes a 5 million tonne benefit from the implementation of the Safe Production System.",
+   "file": "20231017_RIO_Third-quarter-production-results.md"
+  },
+  {
+   "d": "2024-01-16",
+   "doc": "OPS",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Expectations for Pilbara iron ore shipments in 2024 remain at 323 to 338 million tonnes, unchanged since October 2023.",
+   "file": "20240116_RIO_Fourth-quarter-production-results.md"
+  },
+  {
+   "d": "2024-02-21",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Production guidance is consistent with our Fourth Quarter Operations Review, released on 16 January 2024.",
+   "file": "20240221_RIO_Final-Results.md"
+  },
+  {
+   "d": "2024-04-17",
+   "doc": "OPS",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Our full year guidance is unchanged across all our products.",
+   "file": "20240417_RIO_First-quarter-production-results.md"
+  },
+  {
+   "d": "2024-07-16",
+   "doc": "OPS",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -1,
+   "q": "Our Group full year mined copper production guidance is therefore expected to be around the bottom end of the 660 to 720 thousand tonne range.",
+   "file": "20240716_RIO_Second-quarter-production-results.md"
+  },
+  {
+   "d": "2024-07-31",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Production guidance is consistent with our Second Quarter Operations Review, released on 16 July 2024.",
+   "file": "20240731_RIO_Rio-Tinto-2024-half-year-results.md"
+  },
+  {
+   "d": "2024-10-16",
+   "doc": "OPS",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -1,
+   "q": "2024 Pilbara iron ore unit cash costs are expected to be in the upper half of our $21.75 to $23.50 per tonne guidance (based on an average A$:US$ exchange rate of 0.66). This is due to inflation being at the higher end of our expectations.",
+   "file": "20241016_RIO_Third-quarter-production-results.md"
+  },
+  {
+   "d": "2024-12-04",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Production guidance across Rio Tinto's portfolio is being released for 2025.",
+   "file": "20241204_RIO_Investing-for-a-stronger,-diversified-portfolio.md"
+  },
+  {
+   "d": "2025-01-16",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "2025 production guidance is unchanged since December 2024.",
+   "file": "20250116_RIO_Fourth-quarter-production-results.md"
+  },
+  {
+   "d": "2025-02-19",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The total losses from all four cyclones are anticipated to be around 13 million tonnes. We have mitigation plans in place to offset around half of this over the course of the year. The system has limited ability to mitigate further losses from weather if incurred. There is no change to full year shipments guidance.",
+   "file": "20250219_RIO_Final-Results.md"
+  },
+  {
+   "d": "2025-04-16",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -1,
+   "q": "Production and cost guidance for the year on track, with Pilbara iron ore shipments expected to be at the lower end of guidance due to the losses sustained from extreme weather events in Q1.",
+   "file": "20250416_RIO_First-quarter-production-results.md"
+  },
+  {
+   "d": "2025-07-16",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Copper production is now expected at the higher end, and copper unit costs around the lower end, of full year guidance ranges.",
+   "file": "20250716_RIO_Second-quarter-production-results.md"
+  },
+  {
+   "d": "2025-07-30",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Copper: we update our guidance range from 130-150 c/lb now to 110-130 c/lb due to disciplined cost control, production volumes at the higher end of the full year guidance range and higher than expected gold prices driving net costs down.",
+   "file": "20250730_RIO_Rio-Tinto-2025-half-year-results.md"
+  },
+  {
+   "d": "2025-10-14",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "\"We are on track to meet production guidance for 2025, with an upwards revision to bauxite this quarter, and are well positioned to deliver compelling mid-term production growth.",
+   "file": "20251014_RIO_Third-quarter-production-results.md"
+  },
+  {
+   "d": "2025-12-04",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Copper production guidance for 2025 is being upgraded to 860 - 875 kt (previously 780 - 850 kt) and unit cost guidance revised down to 80 - 100 c/lb (previously 110 - 130 c/lb).",
+   "file": "20251204_RIO_Stronger,-sharper-and-simpler-Rio-Tinto.md"
+  },
+  {
+   "d": "2026-01-21",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Copper: Annual production grew 11% YoY, exceeding the top end of our increased guidance range, driven by the successful ramp-up of Oyu Tolgoi, where the underground development project is now complete.",
+   "file": "20260121_RIO_Fourth-quarter-production-results.md"
+  },
+  {
+   "d": "2026-02-19",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Pilbara unit cost guidance: reflecting the impact of a stronger Australian dollar against the US dollar. We continue our focus on productivity through increasing orebody efficiency and improving system flow, to partially offset the impacts of currency headwinds, inflation and depletion.",
+   "file": "20260219_RIO_Final-Results.md"
+  },
+  {
+   "d": "2026-04-21",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "We continue to monitor the evolving global impact closely and have contingency plans in place. However, we have relatively limited visibility of how the ongoing conflict will affect supply chains in H2.",
+   "file": "20260421_RIO_DrillingProduction-Report.md"
+  },
+  {
+   "d": "2026-07-15",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Guidance range reduced to US 30 - 50c/lb (from US 65 - 75c/lb) due to higher than expected gold prices and productivity improvements.",
+   "file": "20260715_RIO_Second-quarter-production-results.md"
+  },
+  {
+   "d": "2026-07-29",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "The full year 2026 effective tax rate on underlying earnings is expected to be ~25% (prior guidance ~30%).",
+   "file": "20260729_RIO_Rio-Tinto-2026-half-year-results.md"
+  },
+  {
+   "d": "2026-10-14",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "Higher diesel prices increased unit costs by $0.9/t YTD vs 2025 YTD. Assuming the current spot price of ~$175/bbl for Q4, the full-year impact is expected to increase to $1.1/t.",
+   "file": "20261014_RIO_Third-quarter-production-results.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-14",
+  "doc": "OPS",
+  "file": "20261014_RIO_Third-quarter-production-results.md",
+  "vs": "Q3 OPS Oct-25 · Q2 OPS Jul-26 · H1 R Jul-26",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Wording vs number",
+    "text": "“Unit cost guidance is maintained” while the notes quantify Pilbara headwinds outside the guide basis: diesel “the full-year impact is expected to increase to $1.1/t” and FX “around $1.0/t relative to the guidance assumption of US$0.67/A$” (Jul-26: diesel ~$0.8/t H1, no FX hit), against a 23.5 - 25.0 $/t range",
+    "span": "Q2/H1 Jul-26 → Q3 Oct-26"
+   },
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "Lithium LCE guidance 61 - 64 kt: Jul-26 “Unchanged” → Oct-26 “Unchanged” “(at lower end)”, after “adverse weather impacting Q3 operations”",
+    "span": "First lower-end flag on lithium in 2026"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "“We are finishing the year with momentum” beside “~1% YTD increase in copper equivalent” production (H1 Jul-26: 3%; Q3 Oct-25: Q3 CuEq up 9% YoY), with Q3 Pilbara production -1% and bauxite -4% YoY",
+    "span": "Growth slowing through 2026"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "New capital-release figure: more than $2 billion agreed year-to-date, and “We remain on track to announce around $5 billion in total of capital release initiatives by end 2026”",
+    "span": "First quantified progress on the $5-10bn programme from CMD Dec-25"
+   }
+  ]
+ }
+}
