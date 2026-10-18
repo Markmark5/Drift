@@ -1,0 +1,1529 @@
+{
+ "ticker": "ENT",
+ "v": "2026-10-18.0d95",
+ "ccy": "GBX",
+ "src": "AlphaVantage ENT.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   2097.0
+  ],
+  [
+   "2021-10-22",
+   2125.0
+  ],
+  [
+   "2021-10-29",
+   2048.0
+  ],
+  [
+   "2021-11-05",
+   2048.0
+  ],
+  [
+   "2021-11-12",
+   1997.5
+  ],
+  [
+   "2021-11-19",
+   1918.5
+  ],
+  [
+   "2021-11-26",
+   1724.0
+  ],
+  [
+   "2021-12-03",
+   1639.0
+  ],
+  [
+   "2021-12-10",
+   1633.0
+  ],
+  [
+   "2021-12-17",
+   1601.0
+  ],
+  [
+   "2021-12-24",
+   1684.0
+  ],
+  [
+   "2021-12-31",
+   1683.0
+  ],
+  [
+   "2022-01-07",
+   1660.0
+  ],
+  [
+   "2022-01-14",
+   1706.5
+  ],
+  [
+   "2022-01-21",
+   1635.0
+  ],
+  [
+   "2022-01-28",
+   1572.0
+  ],
+  [
+   "2022-02-04",
+   1572.5
+  ],
+  [
+   "2022-02-11",
+   1698.5
+  ],
+  [
+   "2022-02-18",
+   1650.0
+  ],
+  [
+   "2022-02-25",
+   1657.5
+  ],
+  [
+   "2022-03-04",
+   1492.0
+  ],
+  [
+   "2022-03-11",
+   1528.0
+  ],
+  [
+   "2022-03-18",
+   1722.5
+  ],
+  [
+   "2022-03-25",
+   1666.0
+  ],
+  [
+   "2022-04-01",
+   1652.0
+  ],
+  [
+   "2022-04-08",
+   1547.5
+  ],
+  [
+   "2022-04-14",
+   1551.5
+  ],
+  [
+   "2022-04-22",
+   1497.0
+  ],
+  [
+   "2022-04-29",
+   1518.5
+  ],
+  [
+   "2022-05-06",
+   1371.0
+  ],
+  [
+   "2022-05-13",
+   1364.5
+  ],
+  [
+   "2022-05-20",
+   1403.0
+  ],
+  [
+   "2022-05-27",
+   1433.0
+  ],
+  [
+   "2022-06-01",
+   1460.0
+  ],
+  [
+   "2022-06-10",
+   1408.5
+  ],
+  [
+   "2022-06-17",
+   1272.5
+  ],
+  [
+   "2022-06-24",
+   1336.0
+  ],
+  [
+   "2022-07-01",
+   1252.5
+  ],
+  [
+   "2022-07-08",
+   1097.0
+  ],
+  [
+   "2022-07-15",
+   1119.5
+  ],
+  [
+   "2022-07-22",
+   1180.0
+  ],
+  [
+   "2022-07-29",
+   1202.5
+  ],
+  [
+   "2022-08-05",
+   1300.0
+  ],
+  [
+   "2022-08-12",
+   1413.0
+  ],
+  [
+   "2022-08-19",
+   1319.0
+  ],
+  [
+   "2022-08-26",
+   1246.5
+  ],
+  [
+   "2022-09-02",
+   1201.5
+  ],
+  [
+   "2022-09-09",
+   1218.5
+  ],
+  [
+   "2022-09-16",
+   1213.0
+  ],
+  [
+   "2022-09-23",
+   1083.0
+  ],
+  [
+   "2022-09-30",
+   1086.0
+  ],
+  [
+   "2022-10-07",
+   1130.0
+  ],
+  [
+   "2022-10-14",
+   1150.0
+  ],
+  [
+   "2022-10-21",
+   1173.5
+  ],
+  [
+   "2022-10-28",
+   1248.5
+  ],
+  [
+   "2022-11-04",
+   1284.0
+  ],
+  [
+   "2022-11-11",
+   1361.0
+  ],
+  [
+   "2022-11-18",
+   1340.0
+  ],
+  [
+   "2022-11-25",
+   1406.5
+  ],
+  [
+   "2022-12-02",
+   1397.5
+  ],
+  [
+   "2022-12-09",
+   1399.5
+  ],
+  [
+   "2022-12-16",
+   1323.5
+  ],
+  [
+   "2022-12-23",
+   1310.5
+  ],
+  [
+   "2022-12-30",
+   1321.5
+  ],
+  [
+   "2023-01-06",
+   1415.0
+  ],
+  [
+   "2023-01-13",
+   1450.0
+  ],
+  [
+   "2023-01-20",
+   1508.0
+  ],
+  [
+   "2023-01-27",
+   1525.0
+  ],
+  [
+   "2023-02-03",
+   1587.5
+  ],
+  [
+   "2023-02-10",
+   1312.0
+  ],
+  [
+   "2023-02-17",
+   1397.5
+  ],
+  [
+   "2023-02-24",
+   1306.5
+  ],
+  [
+   "2023-03-03",
+   1382.5
+  ],
+  [
+   "2023-03-10",
+   1310.0
+  ],
+  [
+   "2023-03-17",
+   1207.5
+  ],
+  [
+   "2023-03-24",
+   1181.5
+  ],
+  [
+   "2023-03-31",
+   1256.5
+  ],
+  [
+   "2023-04-06",
+   1286.0
+  ],
+  [
+   "2023-04-14",
+   1298.0
+  ],
+  [
+   "2023-04-21",
+   1405.0
+  ],
+  [
+   "2023-04-28",
+   1444.0
+  ],
+  [
+   "2023-05-05",
+   1479.0
+  ],
+  [
+   "2023-05-12",
+   1466.0
+  ],
+  [
+   "2023-05-19",
+   1475.0
+  ],
+  [
+   "2023-05-26",
+   1402.0
+  ],
+  [
+   "2023-06-02",
+   1328.0
+  ],
+  [
+   "2023-06-09",
+   1296.0
+  ],
+  [
+   "2023-06-16",
+   1221.0
+  ],
+  [
+   "2023-06-23",
+   1230.0
+  ],
+  [
+   "2023-06-30",
+   1272.0
+  ],
+  [
+   "2023-07-07",
+   1217.0
+  ],
+  [
+   "2023-07-14",
+   1272.5
+  ],
+  [
+   "2023-07-21",
+   1271.0
+  ],
+  [
+   "2023-07-28",
+   1370.0
+  ],
+  [
+   "2023-08-04",
+   1399.0
+  ],
+  [
+   "2023-08-11",
+   1312.5
+  ],
+  [
+   "2023-08-18",
+   1174.5
+  ],
+  [
+   "2023-08-25",
+   1156.0
+  ],
+  [
+   "2023-09-01",
+   1153.5
+  ],
+  [
+   "2023-09-08",
+   1173.0
+  ],
+  [
+   "2023-09-15",
+   1153.5
+  ],
+  [
+   "2023-09-22",
+   1056.0
+  ],
+  [
+   "2023-09-29",
+   932.8
+  ],
+  [
+   "2023-10-06",
+   927.6
+  ],
+  [
+   "2023-10-13",
+   935.0
+  ],
+  [
+   "2023-10-20",
+   933.8
+  ],
+  [
+   "2023-10-27",
+   914.8
+  ],
+  [
+   "2023-11-03",
+   919.6
+  ],
+  [
+   "2023-11-10",
+   925.6
+  ],
+  [
+   "2023-11-17",
+   855.8
+  ],
+  [
+   "2023-11-24",
+   859.0
+  ],
+  [
+   "2023-12-01",
+   808.0
+  ],
+  [
+   "2023-12-08",
+   803.0
+  ],
+  [
+   "2023-12-15",
+   938.6
+  ],
+  [
+   "2023-12-22",
+   980.0
+  ],
+  [
+   "2023-12-29",
+   994.2
+  ],
+  [
+   "2024-01-05",
+   977.0
+  ],
+  [
+   "2024-01-12",
+   942.2
+  ],
+  [
+   "2024-01-19",
+   916.8
+  ],
+  [
+   "2024-01-26",
+   967.2
+  ],
+  [
+   "2024-02-02",
+   988.4
+  ],
+  [
+   "2024-02-09",
+   1010.5
+  ],
+  [
+   "2024-02-16",
+   933.4
+  ],
+  [
+   "2024-02-23",
+   911.2
+  ],
+  [
+   "2024-03-01",
+   916.8
+  ],
+  [
+   "2024-03-08",
+   747.0
+  ],
+  [
+   "2024-03-15",
+   774.0
+  ],
+  [
+   "2024-03-22",
+   784.4
+  ],
+  [
+   "2024-03-28",
+   797.4
+  ],
+  [
+   "2024-04-05",
+   784.0
+  ],
+  [
+   "2024-04-12",
+   820.8
+  ],
+  [
+   "2024-04-19",
+   837.4
+  ],
+  [
+   "2024-04-26",
+   784.2
+  ],
+  [
+   "2024-05-03",
+   785.4
+  ],
+  [
+   "2024-05-10",
+   778.8
+  ],
+  [
+   "2024-05-17",
+   722.0
+  ],
+  [
+   "2024-05-24",
+   707.2
+  ],
+  [
+   "2024-05-31",
+   675.2
+  ],
+  [
+   "2024-06-07",
+   716.4
+  ],
+  [
+   "2024-06-14",
+   656.0
+  ],
+  [
+   "2024-06-21",
+   663.0
+  ],
+  [
+   "2024-06-28",
+   630.0
+  ],
+  [
+   "2024-07-05",
+   639.4
+  ],
+  [
+   "2024-07-12",
+   676.4
+  ],
+  [
+   "2024-07-19",
+   644.2
+  ],
+  [
+   "2024-07-26",
+   649.0
+  ],
+  [
+   "2024-08-02",
+   539.6
+  ],
+  [
+   "2024-08-09",
+   558.2
+  ],
+  [
+   "2024-08-16",
+   638.2
+  ],
+  [
+   "2024-08-23",
+   640.8
+  ],
+  [
+   "2024-08-30",
+   646.0
+  ],
+  [
+   "2024-09-06",
+   639.4
+  ],
+  [
+   "2024-09-13",
+   734.6
+  ],
+  [
+   "2024-09-20",
+   735.2
+  ],
+  [
+   "2024-09-27",
+   788.6
+  ],
+  [
+   "2024-10-04",
+   763.6
+  ],
+  [
+   "2024-10-11",
+   767.0
+  ],
+  [
+   "2024-10-18",
+   727.4
+  ],
+  [
+   "2024-10-25",
+   715.4
+  ],
+  [
+   "2024-11-01",
+   734.4
+  ],
+  [
+   "2024-11-08",
+   748.0
+  ],
+  [
+   "2024-11-15",
+   740.8
+  ],
+  [
+   "2024-11-22",
+   754.8
+  ],
+  [
+   "2024-11-29",
+   805.6
+  ],
+  [
+   "2024-12-06",
+   813.2
+  ],
+  [
+   "2024-12-13",
+   815.0
+  ],
+  [
+   "2024-12-20",
+   707.6
+  ],
+  [
+   "2024-12-24",
+   681.4
+  ],
+  [
+   "2024-12-27",
+   677.0
+  ],
+  [
+   "2025-01-03",
+   676.4
+  ],
+  [
+   "2025-01-10",
+   624.2
+  ],
+  [
+   "2025-01-17",
+   669.6
+  ],
+  [
+   "2025-01-24",
+   674.0
+  ],
+  [
+   "2025-01-31",
+   706.8
+  ],
+  [
+   "2025-02-07",
+   742.2
+  ],
+  [
+   "2025-02-14",
+   744.4
+  ],
+  [
+   "2025-02-21",
+   738.0
+  ],
+  [
+   "2025-02-28",
+   746.6
+  ],
+  [
+   "2025-03-07",
+   723.6
+  ],
+  [
+   "2025-03-14",
+   637.8
+  ],
+  [
+   "2025-03-21",
+   653.8
+  ],
+  [
+   "2025-03-28",
+   612.4
+  ],
+  [
+   "2025-04-04",
+   501.2
+  ],
+  [
+   "2025-04-11",
+   536.8
+  ],
+  [
+   "2025-04-17",
+   569.8
+  ],
+  [
+   "2025-04-25",
+   588.2
+  ],
+  [
+   "2025-05-02",
+   671.8
+  ],
+  [
+   "2025-05-09",
+   700.2
+  ],
+  [
+   "2025-05-16",
+   768.0
+  ],
+  [
+   "2025-05-23",
+   731.6
+  ],
+  [
+   "2025-05-30",
+   750.6
+  ],
+  [
+   "2025-06-06",
+   741.4
+  ],
+  [
+   "2025-06-13",
+   751.4
+  ],
+  [
+   "2025-06-20",
+   847.2
+  ],
+  [
+   "2025-06-27",
+   903.4
+  ],
+  [
+   "2025-07-04",
+   916.2
+  ],
+  [
+   "2025-07-11",
+   944.6
+  ],
+  [
+   "2025-07-18",
+   947.2
+  ],
+  [
+   "2025-07-25",
+   998.6
+  ],
+  [
+   "2025-08-01",
+   1005.0
+  ],
+  [
+   "2025-08-08",
+   938.0
+  ],
+  [
+   "2025-08-15",
+   886.8
+  ],
+  [
+   "2025-08-22",
+   882.0
+  ],
+  [
+   "2025-08-29",
+   878.0
+  ],
+  [
+   "2025-09-05",
+   864.4
+  ],
+  [
+   "2025-09-12",
+   853.8
+  ],
+  [
+   "2025-09-19",
+   866.0
+  ],
+  [
+   "2025-09-26",
+   901.4
+  ],
+  [
+   "2025-10-03",
+   871.4
+  ],
+  [
+   "2025-10-10",
+   805.0
+  ],
+  [
+   "2025-10-17",
+   818.6
+  ],
+  [
+   "2025-10-24",
+   824.6
+  ],
+  [
+   "2025-10-31",
+   792.4
+  ],
+  [
+   "2025-11-07",
+   731.2
+  ],
+  [
+   "2025-11-14",
+   700.4
+  ],
+  [
+   "2025-11-21",
+   727.8
+  ],
+  [
+   "2025-11-28",
+   777.0
+  ],
+  [
+   "2025-12-05",
+   759.2
+  ],
+  [
+   "2025-12-12",
+   736.6
+  ],
+  [
+   "2025-12-19",
+   755.2
+  ],
+  [
+   "2025-12-24",
+   750.6
+  ],
+  [
+   "2026-01-02",
+   771.4
+  ],
+  [
+   "2026-01-09",
+   764.2
+  ],
+  [
+   "2026-01-16",
+   703.0
+  ],
+  [
+   "2026-01-23",
+   671.8
+  ],
+  [
+   "2026-01-30",
+   605.0
+  ],
+  [
+   "2026-02-06",
+   610.8
+  ],
+  [
+   "2026-02-13",
+   567.0
+  ],
+  [
+   "2026-02-20",
+   581.4
+  ],
+  [
+   "2026-02-27",
+   575.0
+  ],
+  [
+   "2026-03-06",
+   584.2
+  ],
+  [
+   "2026-03-13",
+   547.6
+  ],
+  [
+   "2026-03-20",
+   544.0
+  ],
+  [
+   "2026-03-27",
+   539.6
+  ],
+  [
+   "2026-04-02",
+   576.6
+  ],
+  [
+   "2026-04-10",
+   534.2
+  ],
+  [
+   "2026-04-17",
+   632.8
+  ],
+  [
+   "2026-04-24",
+   599.6
+  ],
+  [
+   "2026-05-01",
+   567.8
+  ],
+  [
+   "2026-05-08",
+   548.0
+  ],
+  [
+   "2026-05-15",
+   532.4
+  ],
+  [
+   "2026-05-22",
+   538.6
+  ],
+  [
+   "2026-05-29",
+   533.8
+  ],
+  [
+   "2026-06-05",
+   555.4
+  ],
+  [
+   "2026-06-12",
+   600.0
+  ],
+  [
+   "2026-06-19",
+   545.4
+  ],
+  [
+   "2026-06-26",
+   577.8
+  ],
+  [
+   "2026-07-03",
+   528.6
+  ],
+  [
+   "2026-07-10",
+   550.8
+  ],
+  [
+   "2026-07-17",
+   558.8
+  ],
+  [
+   "2026-07-24",
+   553.4
+  ],
+  [
+   "2026-07-31",
+   541.4
+  ],
+  [
+   "2026-08-07",
+   545.0
+  ],
+  [
+   "2026-08-14",
+   557.2
+  ],
+  [
+   "2026-08-21",
+   537.6
+  ],
+  [
+   "2026-08-28",
+   513.2
+  ],
+  [
+   "2026-09-04",
+   527.8
+  ],
+  [
+   "2026-09-11",
+   502.2
+  ],
+  [
+   "2026-09-18",
+   476.7
+  ],
+  [
+   "2026-09-25",
+   449.6
+  ],
+  [
+   "2026-10-02",
+   413.4
+  ],
+  [
+   "2026-10-09",
+   426.9
+  ],
+  [
+   "2026-10-16",
+   443.7
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2022-01-19",
+   "doc": "OPS",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "BetMGM expects to deliver net revenue from operations of over $1.3bn in 2022 and reach positive EBITDA in 2023",
+   "file": "20220119_ENT_BetMGM-Business-Update.md"
+  },
+  {
+   "d": "2022-01-20",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "RAISE",
+   "s": 2,
+   "q": "FY21 Group EBITDA5 expected to be in the range of £875m - £885m, ahead of previous expectations",
+   "file": "20220120_ENT_Q4-Trading-Update.md"
+  },
+  {
+   "d": "2022-03-03",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "As we start 2022 we see retail heading towards pre-Covid levels and online performing inline with expectations against tough prior year comparables.",
+   "file": "20220303_ENT_Final-Results.md"
+  },
+  {
+   "d": "2022-04-07",
+   "doc": "Q1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Given the strength and continuing momentum of our underlying business, coupled with our proven ability to grow both organically and through M&A, we remain confident in our financial performance for FY22 and beyond.",
+   "file": "20220407_ENT_Q1-Trading-Update.md"
+  },
+  {
+   "d": "2022-05-12",
+   "doc": "OPS",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Established market leader; revenue and profitability outlook reiterated",
+   "file": "20220512_ENT_BetMGM-Business-Update.md"
+  },
+  {
+   "d": "2022-07-07",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "CUT",
+   "s": -2,
+   "q": "A weaker macro-economic environment is reducing customers' rate of spend, moderating overall Online growth versus our previous expectations",
+   "file": "20220707_ENT_Q2-Trading-Update.md"
+  },
+  {
+   "d": "2022-08-11",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group's momentum remains strong and our outlook for the balance of the year is unchanged with FY 2022 Group EBITDA4,5,9 expected to be in the range of £925m to £975m, in line with current consensus10.",
+   "file": "20220811_ENT_Interim-Results.md"
+  },
+  {
+   "d": "2022-10-13",
+   "doc": "Q3 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -1,
+   "q": "Online NGR +1% (-2% cc1) broadly in line with expectations and demonstrating positive underlying momentum",
+   "file": "20221013_ENT_Q3-Trading-Update.md"
+  },
+  {
+   "d": "2023-01-18",
+   "doc": "OPS",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The net gaming revenue and EBITDA impact from these closures is relatively small and will have no effect on current expectations.",
+   "file": "20230118_ENT_Acceleration-of-Unregulated-Market-Exits.md"
+  },
+  {
+   "d": "2023-01-26",
+   "doc": "OPS",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "BetMGM is well positioned to achieve net revenue from operations of between $1.8 and $2 billion in FY 2023 and be EBITDA positive in the second Half of 2023",
+   "file": "20230126_ENT_BetMGM-Business-Update.md"
+  },
+  {
+   "d": "2023-02-01",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 2,
+   "q": "FY22 Group EBITDA expected to be in the range of £985m - £995m, ahead of previous expectations3 and representing growth of c.12% versus the prior year",
+   "file": "20230201_ENT_Q4-Trading-Update.md"
+  },
+  {
+   "d": "2023-03-09",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -2,
+   "q": "As we look to 2023, while we continue to face some regulatory headwinds, we remain excited by the opportunities ahead.",
+   "file": "20230309_ENT_Final-Results.md"
+  },
+  {
+   "d": "2023-04-18",
+   "doc": "Q1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "BetMGM continues to grow strongly with Q1 NGR of approximately $470m, up +76%, delivering in line with guidance of $1.8-$2.0bn for 2023",
+   "file": "20230418_ENT_Q1-Trading-Update.md"
+  },
+  {
+   "d": "2023-04-27",
+   "doc": "OPS",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "As a result of the proposals outlined in the GAR White Paper today, materially mitigated by the proactive actions we have already taken, we expect there to be no material change to our expectations for FY23 and an impact of less than 1% on Group Online net gaming revenue in FY24.",
+   "file": "20230427_ENT_Response-to-the-Gambling-Act-Review.md"
+  },
+  {
+   "d": "2023-07-26",
+   "doc": "OPS",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Our financial guidance for the year remains on track - we expect to deliver $1.8 to $2.0 billion in full year revenue, as well as to be EBITDA positive in the second half of 2023.",
+   "file": "20230726_ENT_BetMGM-Business-Update.md"
+  },
+  {
+   "d": "2023-08-10",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "As we look to the remainder of 2023, our underlying outlook expectations remain unchanged, however we remain mindful of the external environment.",
+   "file": "20230810_ENT_Interim-Results.md"
+  },
+  {
+   "d": "2023-09-25",
+   "doc": "OPS",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -2,
+   "q": "We continue to see good underlying growth in our online business and are reiterating our EBITDA guidance for the year despite softer than expected revenue growth in Q3 and the ongoing roll-out of industry-leading safer gambling measures.",
+   "file": "20230925_ENT_Update-on-current-trading-and-operational-strategy.md"
+  },
+  {
+   "d": "2023-11-02",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -3,
+   "q": "During October, while volumes have been in line with expectations, continued customer friendly results14 have seen sports margins impact EBITDA by approximately £45m",
+   "file": "20231102_ENT_Q3-Trading-Statement-&-Business-Update.md"
+  },
+  {
+   "d": "2023-12-04",
+   "doc": "OPS",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "Clarity on why 2024 is an investment year to drive enterprise value for shareholders; setting a target of approximately $500m EBITDA in 2026",
+   "file": "20231204_ENT_BetMGM-Business-Update.md"
+  },
+  {
+   "d": "2024-02-08",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Reiterating guidance from December 2023 business update of targeting approximately $500 million of EBITDA in 2026",
+   "file": "20240208_ENT_BETMGM-FY23-UPDATE.md"
+  },
+  {
+   "d": "2024-03-07",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -2,
+   "q": "As a result, we expect that, in aggregate, these dynamics could reduce FY24 EBITDA by approximately £40m.",
+   "file": "20240307_ENT_FY23-results-in-line-with-expectations.md"
+  },
+  {
+   "d": "2024-04-17",
+   "doc": "Q1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Our Q1 performance was in line with our expectations, with growth reflecting both strong performances in many of our markets as well as known challenges in others.",
+   "file": "20240417_ENT_Q1-Trading-Update.md"
+  },
+  {
+   "d": "2024-07-29",
+   "doc": "OPS",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "Consistent with expectation of 2024 as an investment year, expect H2 EBITDA to be similar to H1",
+   "file": "20240729_ENT_BetMGM-H1-Update.md"
+  },
+  {
+   "d": "2024-08-08",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 1,
+   "q": "As we look to the remainder of 2024, our expectations for the Group's growth pathway remains unchanged, with the stronger than expected Q2 performance driving our upgraded NGR guidance.",
+   "file": "20240808_ENT_Interim-Results.md"
+  },
+  {
+   "d": "2024-09-09",
+   "doc": "OPS",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The improving momentum delivered during Q2 has continued, with Online Net Gaming Revenue (\"NGR\") growth during H2 2024 to date ahead of our expectations.",
+   "file": "20240909_ENT_Strategic-progress-and-trading-momentum-continues.md"
+  },
+  {
+   "d": "2024-10-17",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 1,
+   "q": "As a result of a stronger than expected Q3 performance and increased confidence for the balance of the year, FY24 Online proforma3 NGR growth is now expected to be mid single-digit positive4, on a constant currency2 basis.",
+   "file": "20241017_ENT_Q3-Trading-Update.md"
+  },
+  {
+   "d": "2025-01-13",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Following operator friendly sports results during Q4, we now expect Group EBITDA to be at the top of the £1,040m-£1,090m guidance range.",
+   "file": "20250113_ENT_Reiteration-of-FY24-EBITDA-guidance.md"
+  },
+  {
+   "d": "2025-02-04",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "BetMGM expects FY 2025 to be EBITDA positive, an increase of approximately $250 million YoY, with Net Revenue guidance of $2.4 billion to $2.5 billion",
+   "file": "20250204_ENT_BETMGM-FY-2024-Update.md"
+  },
+  {
+   "d": "2025-03-06",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Entain remains comfortable with market expectations 6 for FY2025.",
+   "file": "20250306_ENT_Final-Results.md"
+  },
+  {
+   "d": "2025-04-28",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 1,
+   "q": "BetMGM's year-to-date performance provides increased confidence in exceeding guidance, however we remain mindful it is still relatively early in the year.",
+   "file": "20250428_ENT_BetMGM-Q1-2025-Update.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2025-04-29",
+   "doc": "Q1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Entain reiterates its expectation for Online NGR growth of mid-single-digit percent in 2025 on a constant currency basis and remains comfortable with market expectations6 for FY2025 EBITDA.",
+   "file": "20250429_ENT_Q1-Trading-Update.md"
+  },
+  {
+   "d": "2025-06-16",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 2,
+   "q": "FY 2025 EBITDA is now expected to be at least $100 million (up from the previous guidance to be EBITDA positive2,3)",
+   "file": "20250616_ENT_BetMGM---Upgraded-FY-2025-Guidance.md"
+  },
+  {
+   "d": "2025-07-29",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Expect FY25 Net Revenue of at least $2.7 billion and EBITDA of at least $150 million1",
+   "file": "20250729_ENT_BETMGM-2Q1H-2025-UPDATE-&-FY25-GUIDANCE-INCREASE.md"
+  },
+  {
+   "d": "2025-08-12",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 1,
+   "q": "We are introducing FY25 Group EBITDA6 guidance in the range of £1,100 to £1,150m, which includes absorbing Brazil taxes as well as additional H2 marketing investment to support our momentum through 2025 and into 2026.",
+   "file": "20250812_ENT_Interim-Results.md"
+  },
+  {
+   "d": "2025-10-14",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Q3 performance ahead of expectations, with strong year-to-date momentum continuing across both Online Sports and iGaming",
+   "file": "20251014_ENT_BetMGM-Q3-2025-Update-and-Raised-FY25-Guidance.md"
+  },
+  {
+   "d": "2025-10-15",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Despite absorbing the impact of customer friendly sports margins in September, we continue to expect FY25 Group EBITDA in the existing £1,100m to £1,150m guidance range.",
+   "file": "20251015_ENT_Q3-Trading-Update.md"
+  },
+  {
+   "d": "2025-11-26",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -2,
+   "q": "Therefore, consistent with the dates of proposed implementation, this equates to an EBITDA impact4 of approximately £100m in 2026 (8% of consensus FY26 EBITDA5) and approximately £150m from 2027.",
+   "file": "20251126_ENT_Statement-re-increases-to-UK-gambling-taxes.md"
+  },
+  {
+   "d": "2025-12-11",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Entain confirms that year to date trading continues to be in line with market expectations1 for FY25, and its FY2025 results will be released on 5 March 2026.",
+   "file": "20251211_ENT_Group-Chief-Financial-Officer-succession.md"
+  },
+  {
+   "d": "2026-02-04",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 1,
+   "q": "2025 was a record year for BetMGM, outperforming expectations with the execution of our refined strategy coming together at scale.",
+   "file": "20260204_ENT_BetMGM-FY-2025-Business-Update.md"
+  },
+  {
+   "d": "2026-03-05",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Entain expects FY26 Online NGR1 (exc. US) growth of 5-7% on a constant currency3 basis, and remains comfortable with market expectations8 for FY26 Group Underlying EBITDA.",
+   "file": "20260305_ENT_Final-Results.md"
+  },
+  {
+   "d": "2026-04-14",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -2,
+   "q": "Reflecting year-to-date performance and revised outlook expectations for the remainder of 2026, BetMGM now expects FY 2026 Net Revenue of $2.9-$3.1 billion (previously $3.1-$3.2 billion) while maintaining existing Adjusted EBITDA guidance albeit towards the lower end of $300-$350 million range",
+   "file": "20260414_ENT_BetMGM-Q1-2026-Update.md"
+  },
+  {
+   "d": "2026-04-16",
+   "doc": "Q1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Entain remains comfortable with market expectations4 for FY26 Group Underlying EBITDA and reiterates its confidence in generating at least £500m of annual adjusted cashflow5 in 2028.",
+   "file": "20260416_ENT_Q1-Trading-Update.md"
+  },
+  {
+   "d": "2026-06-25",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Remain comfortable with market expectations7 for FY26 Group Underlying EBITDA",
+   "file": "20260625_ENT_Phased-exit-of-Entain-CEE---20%-divestment-agreed.md"
+  },
+  {
+   "d": "2026-07-28",
+   "doc": "OPS",
+   "fy": "FY27",
+   "g": "CUT",
+   "s": -2,
+   "q": "However, given the current market environment including impact of prediction market regulatory complexity, we believe it is prudent to assume the timing of delivery will extend beyond current 2027 expectations",
+   "file": "20260728_ENT_BetMGM-Q2-2026-Business-Update.md"
+  },
+  {
+   "d": "2026-08-13",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Entain remains comfortable with market expectations8 for FY26 Group Underlying EBITDA5 (exc. Parent fees7), which is in line with the midpoint of its £910m to £960m guidance range",
+   "file": "20260813_ENT_Interim-Results.md"
+  },
+  {
+   "d": "2026-09-28",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -2,
+   "q": "Reflecting the strength of the Group’s globally diverse portfolio, Entain reconfirms FY26 Group Underlying EBITDA guidance1 of between £910m to £960m and Online Underlying EBITDA margin guidance1 of 21-22%, while now expecting to be towards the lower end of both ranges due to Brazil’s provisional executive measure2.",
+   "file": "20260928_ENT_FY26-EBITDA-maintained-guide-despite-Brazil-ban.md"
+  },
+  {
+   "d": "2026-10-13",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "BetMGM reiterates its FY 2026 guidance and remains on track to deliver towards the lower end of Net Revenue ($2.9-$3.1 billion) and Adjusted EBITDA ($300-$350 million) guidance ranges",
+   "file": "20261013_ENT_BetMGM-Q3-2026-Update.md"
+  },
+  {
+   "d": "2026-10-15",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Entain reiterates its FY26 guidance provided on 28th September 2026, which reflects Brazil's year to date performance and the assumption that the immediate ban of online gambling in Brazil will be upheld for the remainder of 2026:",
+   "file": "20261015_ENT_Q3-Trading-Update.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-15",
+  "doc": "Q3 TU",
+  "file": "20261015_ENT_Q3-Trading-Update.md",
+  "vs": "Q3 TU Oct-25 · BetMGM Q3 13-Oct-26 · FY26 update 28-Sep-26 · Mar/Apr/Jun/Aug-26",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Was “remains comfortable with market expectations” for FY26 Group Underlying EBITDA, with a consensus footnote → now “expected at the lower end of £910m to £960m range”, no market-expectations or consensus reference",
+    "span": "Given at Mar-26, Apr-26, Jun-26, Aug-26 → dropped since the 28-Sep-26 Brazil update"
+   },
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "2028 cash target now prefaced “Whilst any potential impacts from forthcoming taxation and regulatory developments remain unknown”; CEO urges the Government to “carefully consider any further gambling tax increases”",
+    "span": "Aug-26 stated the same target with no caveat"
+   },
+   {
+    "sev": "amber",
+    "type": "Anchor softened",
+    "text": "Oct-25: “generating over £0.5bn of annual adjusted cash flow from 2028” → Mar/Apr-26 “at least £500m” → now “will generate £500m of annual adjusted cashflow”, including the 47.5% Entain CEE minority stake",
+    "span": "Oct-25 → Mar-26 → Aug-26 → Oct-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Demoted",
+    "text": "Oct-25 led with Total Group NGR “including 50% share of BetMGM, up +6%, +7%cc1” and “BetMGM Q3 net revenue of $667m” → now Group NGR exc. US only, no BetMGM quarterly figure",
+    "span": "Given at Apr-25, Oct-25, Mar-26, Apr-26 → absent Aug-26 and Oct-26"
+   }
+  ]
+ }
+}

@@ -60,11 +60,46 @@
    "marks": 22
   },
   {
+   "ticker": "CAPD",
+   "company": "Capital Limited",
+   "chart": "lite/CAPD.json?v=2026-10-18.18ab",
+   "scored": "2026-10-18",
+   "marks": 36
+  },
+  {
+   "ticker": "EMG",
+   "company": "Man Group PLC",
+   "chart": "lite/EMG.json?v=2026-10-18.83ca",
+   "scored": "2026-10-18",
+   "marks": 20
+  },
+  {
+   "ticker": "ENT",
+   "company": "Entain PLC",
+   "chart": "lite/ENT.json?v=2026-10-18.0d95",
+   "scored": "2026-10-18",
+   "marks": 48
+  },
+  {
    "ticker": "GATC",
    "company": "Gattaca PLC",
    "chart": "lite/GATC.json?v=2026-10-18.8d6f",
    "scored": "2026-10-18",
    "marks": 21
+  },
+  {
+   "ticker": "IOF",
+   "company": "Iofina PLC",
+   "chart": "lite/IOF.json?v=2026-10-18.f034",
+   "scored": "2026-10-18",
+   "marks": 35
+  },
+  {
+   "ticker": "WISE",
+   "company": "Wise Group plc",
+   "chart": "lite/WISE.json?v=2026-10-18.5e41",
+   "scored": "2026-10-18",
+   "marks": 31
   }
  ]
 }

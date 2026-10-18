@@ -1,0 +1,1370 @@
+{
+ "ticker": "WISE",
+ "v": "2026-10-18.5e41",
+ "ccy": "GBX",
+ "src": "AlphaVantage WISE.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   900.0
+  ],
+  [
+   "2021-10-22",
+   808.0
+  ],
+  [
+   "2021-10-29",
+   820.2
+  ],
+  [
+   "2021-11-05",
+   831.6
+  ],
+  [
+   "2021-11-12",
+   800.0
+  ],
+  [
+   "2021-11-19",
+   756.4
+  ],
+  [
+   "2021-11-26",
+   741.0
+  ],
+  [
+   "2021-12-03",
+   744.6
+  ],
+  [
+   "2021-12-10",
+   757.4
+  ],
+  [
+   "2021-12-17",
+   750.2
+  ],
+  [
+   "2021-12-24",
+   736.4
+  ],
+  [
+   "2021-12-31",
+   756.6
+  ],
+  [
+   "2022-01-07",
+   678.8
+  ],
+  [
+   "2022-01-14",
+   645.4
+  ],
+  [
+   "2022-01-21",
+   655.0
+  ],
+  [
+   "2022-01-28",
+   585.4
+  ],
+  [
+   "2022-02-04",
+   575.0
+  ],
+  [
+   "2022-02-11",
+   572.0
+  ],
+  [
+   "2022-02-18",
+   558.0
+  ],
+  [
+   "2022-02-25",
+   529.6
+  ],
+  [
+   "2022-03-04",
+   445.8
+  ],
+  [
+   "2022-03-11",
+   484.1
+  ],
+  [
+   "2022-03-18",
+   558.2
+  ],
+  [
+   "2022-03-25",
+   503.8
+  ],
+  [
+   "2022-04-01",
+   499.0
+  ],
+  [
+   "2022-04-08",
+   467.1
+  ],
+  [
+   "2022-04-14",
+   430.0
+  ],
+  [
+   "2022-04-22",
+   424.4
+  ],
+  [
+   "2022-04-29",
+   395.0
+  ],
+  [
+   "2022-05-06",
+   362.2
+  ],
+  [
+   "2022-05-13",
+   339.3
+  ],
+  [
+   "2022-05-20",
+   369.0
+  ],
+  [
+   "2022-05-27",
+   378.5
+  ],
+  [
+   "2022-06-01",
+   352.5
+  ],
+  [
+   "2022-06-10",
+   342.0
+  ],
+  [
+   "2022-06-17",
+   334.9
+  ],
+  [
+   "2022-06-24",
+   381.5
+  ],
+  [
+   "2022-07-01",
+   311.7
+  ],
+  [
+   "2022-07-08",
+   353.9
+  ],
+  [
+   "2022-07-15",
+   341.4
+  ],
+  [
+   "2022-07-22",
+   433.1
+  ],
+  [
+   "2022-07-29",
+   471.2
+  ],
+  [
+   "2022-08-05",
+   463.2
+  ],
+  [
+   "2022-08-12",
+   537.4
+  ],
+  [
+   "2022-08-19",
+   516.4
+  ],
+  [
+   "2022-08-26",
+   484.1
+  ],
+  [
+   "2022-09-02",
+   479.5
+  ],
+  [
+   "2022-09-09",
+   534.6
+  ],
+  [
+   "2022-09-16",
+   565.4
+  ],
+  [
+   "2022-09-23",
+   580.6
+  ],
+  [
+   "2022-09-30",
+   660.6
+  ],
+  [
+   "2022-10-07",
+   663.4
+  ],
+  [
+   "2022-10-14",
+   705.6
+  ],
+  [
+   "2022-10-21",
+   666.0
+  ],
+  [
+   "2022-10-28",
+   655.0
+  ],
+  [
+   "2022-11-04",
+   675.0
+  ],
+  [
+   "2022-11-11",
+   642.0
+  ],
+  [
+   "2022-11-18",
+   592.2
+  ],
+  [
+   "2022-11-25",
+   625.6
+  ],
+  [
+   "2022-12-02",
+   657.8
+  ],
+  [
+   "2022-12-09",
+   632.0
+  ],
+  [
+   "2022-12-16",
+   592.8
+  ],
+  [
+   "2022-12-23",
+   535.0
+  ],
+  [
+   "2022-12-30",
+   562.8
+  ],
+  [
+   "2023-01-06",
+   563.2
+  ],
+  [
+   "2023-01-13",
+   639.4
+  ],
+  [
+   "2023-01-20",
+   547.2
+  ],
+  [
+   "2023-01-27",
+   521.8
+  ],
+  [
+   "2023-02-03",
+   598.2
+  ],
+  [
+   "2023-02-10",
+   589.8
+  ],
+  [
+   "2023-02-17",
+   581.8
+  ],
+  [
+   "2023-02-24",
+   571.4
+  ],
+  [
+   "2023-03-03",
+   577.4
+  ],
+  [
+   "2023-03-10",
+   581.0
+  ],
+  [
+   "2023-03-17",
+   552.0
+  ],
+  [
+   "2023-03-24",
+   530.8
+  ],
+  [
+   "2023-03-31",
+   543.8
+  ],
+  [
+   "2023-04-06",
+   551.0
+  ],
+  [
+   "2023-04-14",
+   582.6
+  ],
+  [
+   "2023-04-21",
+   571.0
+  ],
+  [
+   "2023-04-28",
+   550.0
+  ],
+  [
+   "2023-05-05",
+   540.4
+  ],
+  [
+   "2023-05-12",
+   588.2
+  ],
+  [
+   "2023-05-19",
+   599.6
+  ],
+  [
+   "2023-05-26",
+   541.0
+  ],
+  [
+   "2023-06-02",
+   606.0
+  ],
+  [
+   "2023-06-09",
+   605.0
+  ],
+  [
+   "2023-06-16",
+   618.0
+  ],
+  [
+   "2023-06-23",
+   529.2
+  ],
+  [
+   "2023-06-30",
+   657.2
+  ],
+  [
+   "2023-07-07",
+   628.8
+  ],
+  [
+   "2023-07-14",
+   674.8
+  ],
+  [
+   "2023-07-21",
+   758.2
+  ],
+  [
+   "2023-07-28",
+   778.0
+  ],
+  [
+   "2023-08-04",
+   759.6
+  ],
+  [
+   "2023-08-11",
+   714.8
+  ],
+  [
+   "2023-08-18",
+   663.0
+  ],
+  [
+   "2023-08-25",
+   639.6
+  ],
+  [
+   "2023-09-01",
+   638.4
+  ],
+  [
+   "2023-09-08",
+   652.6
+  ],
+  [
+   "2023-09-15",
+   718.4
+  ],
+  [
+   "2023-09-22",
+   695.6
+  ],
+  [
+   "2023-09-29",
+   685.6
+  ],
+  [
+   "2023-10-06",
+   694.8
+  ],
+  [
+   "2023-10-13",
+   700.0
+  ],
+  [
+   "2023-10-20",
+   672.2
+  ],
+  [
+   "2023-10-27",
+   651.4
+  ],
+  [
+   "2023-11-03",
+   678.0
+  ],
+  [
+   "2023-11-10",
+   672.6
+  ],
+  [
+   "2023-11-17",
+   714.6
+  ],
+  [
+   "2023-11-24",
+   768.4
+  ],
+  [
+   "2023-12-01",
+   789.8
+  ],
+  [
+   "2023-12-08",
+   808.8
+  ],
+  [
+   "2023-12-15",
+   803.6
+  ],
+  [
+   "2023-12-22",
+   871.8
+  ],
+  [
+   "2023-12-29",
+   874.0
+  ],
+  [
+   "2024-01-05",
+   834.6
+  ],
+  [
+   "2024-01-12",
+   882.4
+  ],
+  [
+   "2024-01-19",
+   831.8
+  ],
+  [
+   "2024-01-26",
+   838.2
+  ],
+  [
+   "2024-02-02",
+   825.0
+  ],
+  [
+   "2024-02-09",
+   857.6
+  ],
+  [
+   "2024-02-16",
+   850.0
+  ],
+  [
+   "2024-02-23",
+   859.0
+  ],
+  [
+   "2024-03-01",
+   924.2
+  ],
+  [
+   "2024-03-08",
+   895.8
+  ],
+  [
+   "2024-03-15",
+   922.8
+  ],
+  [
+   "2024-03-22",
+   973.2
+  ],
+  [
+   "2024-03-28",
+   928.6
+  ],
+  [
+   "2024-04-05",
+   938.0
+  ],
+  [
+   "2024-04-12",
+   946.0
+  ],
+  [
+   "2024-04-19",
+   808.0
+  ],
+  [
+   "2024-04-26",
+   789.0
+  ],
+  [
+   "2024-05-03",
+   787.0
+  ],
+  [
+   "2024-05-10",
+   798.5
+  ],
+  [
+   "2024-05-17",
+   793.0
+  ],
+  [
+   "2024-05-24",
+   806.5
+  ],
+  [
+   "2024-05-31",
+   814.5
+  ],
+  [
+   "2024-06-07",
+   854.0
+  ],
+  [
+   "2024-06-14",
+   713.5
+  ],
+  [
+   "2024-06-21",
+   681.0
+  ],
+  [
+   "2024-06-28",
+   681.5
+  ],
+  [
+   "2024-07-05",
+   742.5
+  ],
+  [
+   "2024-07-12",
+   761.5
+  ],
+  [
+   "2024-07-19",
+   786.5
+  ],
+  [
+   "2024-07-26",
+   723.0
+  ],
+  [
+   "2024-08-02",
+   670.0
+  ],
+  [
+   "2024-08-09",
+   685.5
+  ],
+  [
+   "2024-08-16",
+   716.5
+  ],
+  [
+   "2024-08-23",
+   711.0
+  ],
+  [
+   "2024-08-30",
+   704.5
+  ],
+  [
+   "2024-09-06",
+   631.0
+  ],
+  [
+   "2024-09-13",
+   646.0
+  ],
+  [
+   "2024-09-20",
+   635.0
+  ],
+  [
+   "2024-09-27",
+   662.0
+  ],
+  [
+   "2024-10-04",
+   654.0
+  ],
+  [
+   "2024-10-11",
+   663.0
+  ],
+  [
+   "2024-10-18",
+   709.0
+  ],
+  [
+   "2024-10-25",
+   735.0
+  ],
+  [
+   "2024-11-01",
+   706.0
+  ],
+  [
+   "2024-11-08",
+   821.0
+  ],
+  [
+   "2024-11-15",
+   837.0
+  ],
+  [
+   "2024-11-22",
+   871.0
+  ],
+  [
+   "2024-11-29",
+   882.0
+  ],
+  [
+   "2024-12-06",
+   929.5
+  ],
+  [
+   "2024-12-13",
+   937.0
+  ],
+  [
+   "2024-12-20",
+   1037.0
+  ],
+  [
+   "2024-12-24",
+   1064.0
+  ],
+  [
+   "2024-12-27",
+   1050.0
+  ],
+  [
+   "2025-01-03",
+   1096.0
+  ],
+  [
+   "2025-01-10",
+   1084.0
+  ],
+  [
+   "2025-01-17",
+   1027.0
+  ],
+  [
+   "2025-01-24",
+   1097.0
+  ],
+  [
+   "2025-01-31",
+   1114.0
+  ],
+  [
+   "2025-02-07",
+   1088.0
+  ],
+  [
+   "2025-02-14",
+   1060.0
+  ],
+  [
+   "2025-02-21",
+   1018.0
+  ],
+  [
+   "2025-02-28",
+   992.5
+  ],
+  [
+   "2025-03-07",
+   934.0
+  ],
+  [
+   "2025-03-14",
+   906.0
+  ],
+  [
+   "2025-03-21",
+   953.5
+  ],
+  [
+   "2025-03-28",
+   950.0
+  ],
+  [
+   "2025-04-04",
+   890.0
+  ],
+  [
+   "2025-04-11",
+   913.5
+  ],
+  [
+   "2025-04-17",
+   962.5
+  ],
+  [
+   "2025-04-25",
+   968.5
+  ],
+  [
+   "2025-05-02",
+   1029.0
+  ],
+  [
+   "2025-05-09",
+   1039.0
+  ],
+  [
+   "2025-05-16",
+   1076.0
+  ],
+  [
+   "2025-05-23",
+   1088.0
+  ],
+  [
+   "2025-05-30",
+   1099.0
+  ],
+  [
+   "2025-06-06",
+   1141.0
+  ],
+  [
+   "2025-06-13",
+   1027.0
+  ],
+  [
+   "2025-06-20",
+   1041.0
+  ],
+  [
+   "2025-06-27",
+   1035.0
+  ],
+  [
+   "2025-07-04",
+   1033.0
+  ],
+  [
+   "2025-07-11",
+   1086.0
+  ],
+  [
+   "2025-07-18",
+   1038.0
+  ],
+  [
+   "2025-07-25",
+   1023.0
+  ],
+  [
+   "2025-08-01",
+   1018.0
+  ],
+  [
+   "2025-08-08",
+   1020.0
+  ],
+  [
+   "2025-08-15",
+   1052.0
+  ],
+  [
+   "2025-08-22",
+   1085.0
+  ],
+  [
+   "2025-08-29",
+   1054.0
+  ],
+  [
+   "2025-09-05",
+   1142.0
+  ],
+  [
+   "2025-09-12",
+   1123.0
+  ],
+  [
+   "2025-09-19",
+   1078.0
+  ],
+  [
+   "2025-09-26",
+   1069.0
+  ],
+  [
+   "2025-10-03",
+   984.0
+  ],
+  [
+   "2025-10-10",
+   980.0
+  ],
+  [
+   "2025-10-17",
+   951.0
+  ],
+  [
+   "2025-10-24",
+   999.0
+  ],
+  [
+   "2025-10-31",
+   966.5
+  ],
+  [
+   "2025-11-07",
+   908.0
+  ],
+  [
+   "2025-11-14",
+   917.5
+  ],
+  [
+   "2025-11-21",
+   874.0
+  ],
+  [
+   "2025-11-28",
+   883.0
+  ],
+  [
+   "2025-12-05",
+   863.5
+  ],
+  [
+   "2025-12-12",
+   863.0
+  ],
+  [
+   "2025-12-19",
+   900.0
+  ],
+  [
+   "2025-12-24",
+   893.5
+  ],
+  [
+   "2026-01-02",
+   871.5
+  ],
+  [
+   "2026-01-09",
+   858.5
+  ],
+  [
+   "2026-01-16",
+   832.5
+  ],
+  [
+   "2026-01-23",
+   975.0
+  ],
+  [
+   "2026-01-30",
+   943.0
+  ],
+  [
+   "2026-02-06",
+   899.0
+  ],
+  [
+   "2026-02-13",
+   861.5
+  ],
+  [
+   "2026-02-20",
+   862.5
+  ],
+  [
+   "2026-02-27",
+   860.5
+  ],
+  [
+   "2026-03-06",
+   888.5
+  ],
+  [
+   "2026-03-13",
+   885.5
+  ],
+  [
+   "2026-03-20",
+   861.5
+  ],
+  [
+   "2026-03-27",
+   901.5
+  ],
+  [
+   "2026-04-02",
+   933.5
+  ],
+  [
+   "2026-04-10",
+   972.0
+  ],
+  [
+   "2026-04-17",
+   1090.5
+  ],
+  [
+   "2026-04-24",
+   1055.5
+  ],
+  [
+   "2026-05-01",
+   1083.0
+  ],
+  [
+   "2026-05-08",
+   1060.0
+  ],
+  [
+   "2026-05-15",
+   938.8
+  ],
+  [
+   "2026-05-22",
+   924.0
+  ],
+  [
+   "2026-05-29",
+   934.0
+  ],
+  [
+   "2026-06-05",
+   826.0
+  ],
+  [
+   "2026-06-12",
+   804.0
+  ],
+  [
+   "2026-06-19",
+   818.0
+  ],
+  [
+   "2026-06-26",
+   910.0
+  ],
+  [
+   "2026-07-03",
+   963.0
+  ],
+  [
+   "2026-07-10",
+   952.0
+  ],
+  [
+   "2026-07-17",
+   917.0
+  ],
+  [
+   "2026-07-24",
+   861.0
+  ],
+  [
+   "2026-07-31",
+   885.6
+  ],
+  [
+   "2026-08-07",
+   915.8
+  ],
+  [
+   "2026-08-14",
+   963.0
+  ],
+  [
+   "2026-08-21",
+   946.8
+  ],
+  [
+   "2026-08-28",
+   971.4
+  ],
+  [
+   "2026-09-04",
+   943.4
+  ],
+  [
+   "2026-09-11",
+   890.0
+  ],
+  [
+   "2026-09-18",
+   859.0
+  ],
+  [
+   "2026-09-25",
+   867.4
+  ],
+  [
+   "2026-10-02",
+   854.8
+  ],
+  [
+   "2026-10-09",
+   888.4
+  ],
+  [
+   "2026-10-16",
+   833.2
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-10-19",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "So looking ahead, our take rate is expected to be slightly lower in the second half of FY2022 compared to the first half as a result of price reductions, but we continue to expect revenue growth of low to mid 20s on a percentage basis for FY2022 over FY2021.",
+   "file": "20211019_WISE_Q2-Trading-Update.md"
+  },
+  {
+   "d": "2021-11-30",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Based on our progress and on our current outlook for both volumes and price drops in the second half of the year, we now expect annual revenue growth for FY22 to be mid-to-high 20s on a percentage basis.",
+   "file": "20211130_WISE_Half-year-Report.md"
+  },
+  {
+   "d": "2022-01-19",
+   "doc": "Q3 TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 1,
+   "q": "This is expected to be more than offset by higher volumes as we now anticipate revenue growth of c.30% for FY2022 over FY2021.",
+   "file": "20220119_WISE_Q3-FY2022-Trading-Update.md"
+  },
+  {
+   "d": "2022-06-28",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "For FY23, we expect revenue to grow by between 30% to 35% thanks to a continuation of some positive trends from FY22 carrying through to the beginning of the financial year.",
+   "file": "20220628_WISE_Wise-plc-FY22-results-for-year-ended-31-March-2022.md"
+  },
+  {
+   "d": "2022-07-19",
+   "doc": "Q1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Financial guidance for FY23 and the medium-term remains unchanged from the FY22 full year results update.",
+   "file": "20220719_WISE_Wise-Plc-Q1-FY23-Trading-Update.md"
+  },
+  {
+   "d": "2022-09-29",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Whilst there is much uncertainty in today's markets, and our major economies face challenging months ahead, the stronger than expected performance on cross-border revenues combined with the interest income from customer balances means that we now expect total income to be between 55% and 60% higher in FY23 compared with FY22 (£557 million, unaudited re-presented).",
+   "file": "20220929_WISE_Growth-momentum-continues;-guidance-upgraded.md"
+  },
+  {
+   "d": "2022-10-18",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "As a result of the continued strong momentum, and as outlined on 29 September 2022, our financial guidance for the year has been upgraded. Our revised expectations are set out below:",
+   "file": "20221018_WISE_Strong-momentum-in-Q2,-supports-outlook-for-year.md"
+  },
+  {
+   "d": "2022-11-29",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Total income to increase by between 55% and 60% for FY23, compared with FY22, and for total income to grow by more than 20% CAGR over the medium-term;",
+   "file": "20221129_WISE_Wise-Plc-HY-FY23-Interim-Results.md"
+  },
+  {
+   "d": "2023-01-17",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 1,
+   "q": "As a result of the continued growth in revenue this quarter, supported by the increase in net interest income, we are upgrading our FY23 total income guidance and now expect this to grow 68-72%, compared with 55-60% previously.",
+   "file": "20230117_WISE_Wise-Plc-Q3-FY23-Trading-Update.md"
+  },
+  {
+   "d": "2023-04-18",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 1,
+   "q": "As a result, revenue for the quarter grew 45% YoY and total income of £279.5 million grew 83% YoY. This brought total income for FY23 to £964.3 million, which at 73% growth YoY is above our most recent guidance of 68-72%.",
+   "file": "20230418_WISE_Wise-Plc-Q4-FY23-Trading-Update.md"
+  },
+  {
+   "d": "2023-06-27",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "We expect Income to grow by between 28-33% in FY2024, and for income to grow by more than 20% CAGR over the medium-term;",
+   "file": "20230627_WISE_Wise-plc-Preliminary-Results-FY-end-31-March-2023.md"
+  },
+  {
+   "d": "2023-07-18",
+   "doc": "Q1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Outlook for FY24 unchanged: Income growth of 28-33%, and adjusted EBITDA margin remaining elevated (vs. our medium term guidance of at or above 20%) as a result of higher levels of interest income net of customer benefits.",
+   "file": "20230718_WISE_Wise-Plc-Q1FY24-Trading-Update.md"
+  },
+  {
+   "d": "2023-10-12",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 1,
+   "q": "FY24 Income growth guidance upgraded to 33-38% reflecting the strong start to the year, and higher interest income expectations; Income growth guidance previously 28-33%",
+   "file": "20231012_WISE_Wise-Plc-Q2FY24-Trading-Statement.md"
+  },
+  {
+   "d": "2023-11-14",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "As outlined in our Q2 FY24 trading update, we expect Income growth for FY24 to be between 33-38% (previously 28-33%) given the strong start to the year and our higher interest income expectations",
+   "file": "20231114_WISE_Wise-Plc-HY-FY24-Unaudited-Interim-Results.md"
+  },
+  {
+   "d": "2024-01-16",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 1,
+   "q": "FY24 Income growth guidance upgraded to c.42-44% from previous guidance of 33-38%",
+   "file": "20240116_WISE_Wise-Plc-Q3FY24-Trading-Update.md"
+  },
+  {
+   "d": "2024-04-16",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 1,
+   "q": "For FY24, the growth in customers using Wise combined with the higher rate environment drove income growth of 46%, higher than our expectation of 42-44%",
+   "file": "20240416_WISE_WISE-PLC-Q4FY24-TRADING-UPDATE.md"
+  },
+  {
+   "d": "2024-06-13",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -2,
+   "q": "Driven by customer growth, we expect underlying income growth of 15-20% CAGR over the medium term from FY24. FY25 underlying income growth over FY24 expected to be between 15-20% (20-25% when adjusting for outperformance in FY24 which led to price reductions at the start of FY25).",
+   "file": "20240613_WISE_WISE-PLC-PRELIMINARY-RESULTS-FY-END-31-MARCH-2024.md"
+  },
+  {
+   "d": "2024-07-16",
+   "doc": "Q1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Continuing to expect strong growth in FY25 with underlying income expected to grow 15-20% over FY24.",
+   "file": "20240716_WISE_1st-Quarter-Results.md"
+  },
+  {
+   "d": "2024-10-15",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Underlying income grew by 17% YoY to £337.0m in Q2, bringing growth in H1 to 19%. For FY25, we continue to expect underlying income growth of 15-20%.",
+   "file": "20241015_WISE_Q2-Trading-Update.md"
+  },
+  {
+   "d": "2024-11-06",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "With the initiation of what we hope to be a progression of price reductions as we drive towards this mission, we continue to expect underlying income growth of 15-20% in both FY25 and over the medium term from FY24.",
+   "file": "20241106_WISE_Unaudited-interim-results-for-period-ended-30924.md"
+  },
+  {
+   "d": "2025-01-16",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -1,
+   "q": "On a constant currency basis, we continue to expect underlying income growth of 15-20% in FY25, with the reported growth expected to be at the lower end of this range as a result of the FX headwind.",
+   "file": "20250116_WISE_3rd-Quarter-Results.md"
+  },
+  {
+   "d": "2025-04-15",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Our FY25 preliminary underlying PBT margin was c.20% and for FY26, we continue to expect this to be around the top of our 13-16% target range.",
+   "file": "20250415_WISE_Q4FY25-Trading-Update.md"
+  },
+  {
+   "d": "2025-06-05",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "In FY26, we expect underlying income growth to be within the guided range, with the underlying PBT margin to be around the top of the guided range as we prudently ramp-up investments towards the enormous opportunity ahead of us.",
+   "file": "20250605_WISE_Results-for-the-financial-year-ended-31-March-2025.md"
+  },
+  {
+   "d": "2025-07-17",
+   "doc": "Q1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Remain focused on the long-term growth opportunity and becoming 'the' network for the world's money while investing to target an underlying profit before tax margin of 13-16% in the medium term, with FY26 expected to be around the top of this range.",
+   "file": "20250717_WISE_Wise-plc-Q1-FY26-Trading-Update.md"
+  },
+  {
+   "d": "2025-11-06",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -1,
+   "q": "We continue to expect these ongoing investments to move us towards an underlying PBT margin of c.16% for FY26, excluding one-off costs related to our dual-listing project.",
+   "file": "20251106_WISE_FY26-Half-Year-Results.md",
+   "gnote": "discounted: dual listing"
+  },
+  {
+   "d": "2026-01-20",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "We now expect FY26 underlying PBT margin to be towards the top of this range, including costs related to Wise's dual listing.",
+   "file": "20260120_WISE_Wise-Q3-FY26-trading-update.md"
+  },
+  {
+   "d": "2026-04-13",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Continue to expect FY26 underlying PBT margin to be towards the top of the 13-16% range (including costs related to the Dual Listing) as we remain focused on investing in long-term growth and becoming 'the' network for the world's money",
+   "file": "20260413_WISE_Q4-FY2026-Trading-Update_2.md"
+  },
+  {
+   "d": "2026-04-13",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Continue to expect FY26 underlying PBT margin to be towards the top of the 13-16% range (including costs related to the Dual Listing) as we remain focused on investing in long-term growth and becoming 'the' network for the world's money",
+   "file": "20260413_WISE_Q4-FY2026-Trading-Update.md"
+  },
+  {
+   "d": "2026-06-26",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Net revenue growth around the middle of our 15-20% medium-term target range on a constant currency basis, assuming no material change in interest paid to customers, and no material changes in central bank rates.",
+   "file": "20260626_WISE_Wise-FY26-Results.md"
+  },
+  {
+   "d": "2026-07-17",
+   "doc": "Q1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Net revenue growth around the middle of our 15-20% medium-term target range on a constant currency basis, assuming no material change in interest paid to customers, and no material changes in central bank rates.",
+   "file": "20260717_WISE_Wise-Q1-FY27-Trading-Update.md"
+  },
+  {
+   "d": "2026-10-16",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Wise now expects FY27 net revenue growth to be in the upper half (17.5% - 20%) of our 15-20% medium-term target range on a constant currency basis",
+   "file": "20261016_WISE_Q2-FY27-Trading-Statement.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-16",
+  "doc": "H1 TU",
+  "file": "20261016_WISE_Q2-FY27-Trading-Statement.md",
+  "vs": "Q1 TU Jul-26 · FY R Jun-26 · H1 R Nov-25 (no Q2 TU issued Oct-25)",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Jul-26: “around the middle of our 15-20% medium-term target range”, assuming “no material changes in central bank rates” → now “upper half (17.5% - 20%)”, and the guide “includes recent increases to interest rates made by central banks”; cross-border revenue growth slowed to 16% YoY (Q1: 22%)",
+    "span": "Raise partly rate-driven; net revenue growth 21% in Q2 vs 25% in Q1"
+   },
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "FY27 IBT guide held at “around the top of our 20-25% range”, but H1 now “c.23%, including one-off expenses equivalent to c.2ppts” (incl. c.$15m dual-listing costs)",
+    "span": "No one-off costs mentioned in Jun-26 FY guide or Jul-26 Q1 → first flag"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Net revenue now also given on a constant currency basis (“21% growth YoY on a constant currency basis”) and an H1 IBT margin pre-guide added; Jul-26 Q1 gave constant currency growth for volume only",
+    "span": "Jul-26 → Oct-26"
+   }
+  ]
+ }
+}

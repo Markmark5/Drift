@@ -1,0 +1,1406 @@
+{
+ "ticker": "IOF",
+ "v": "2026-10-18.f034",
+ "ccy": "GBX",
+ "src": "AlphaVantage IOF.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   15.8
+  ],
+  [
+   "2021-10-22",
+   15.0
+  ],
+  [
+   "2021-10-29",
+   14.875
+  ],
+  [
+   "2021-11-05",
+   14.75
+  ],
+  [
+   "2021-11-12",
+   15.25
+  ],
+  [
+   "2021-11-19",
+   14.125
+  ],
+  [
+   "2021-11-26",
+   14.0
+  ],
+  [
+   "2021-12-03",
+   13.625
+  ],
+  [
+   "2021-12-10",
+   13.875
+  ],
+  [
+   "2021-12-17",
+   13.875
+  ],
+  [
+   "2021-12-24",
+   14.25
+  ],
+  [
+   "2021-12-31",
+   18.125
+  ],
+  [
+   "2022-01-07",
+   18.125
+  ],
+  [
+   "2022-01-14",
+   18.875
+  ],
+  [
+   "2022-01-21",
+   15.5
+  ],
+  [
+   "2022-01-28",
+   15.0
+  ],
+  [
+   "2022-02-04",
+   15.5
+  ],
+  [
+   "2022-02-11",
+   15.25
+  ],
+  [
+   "2022-02-18",
+   15.25
+  ],
+  [
+   "2022-02-25",
+   14.125
+  ],
+  [
+   "2022-03-04",
+   16.875
+  ],
+  [
+   "2022-03-11",
+   19.125
+  ],
+  [
+   "2022-03-18",
+   21.75
+  ],
+  [
+   "2022-03-25",
+   19.375
+  ],
+  [
+   "2022-04-01",
+   19.25
+  ],
+  [
+   "2022-04-08",
+   19.0
+  ],
+  [
+   "2022-04-14",
+   19.375
+  ],
+  [
+   "2022-04-22",
+   21.0
+  ],
+  [
+   "2022-04-29",
+   21.35
+  ],
+  [
+   "2022-05-06",
+   20.0
+  ],
+  [
+   "2022-05-13",
+   19.75
+  ],
+  [
+   "2022-05-20",
+   21.5
+  ],
+  [
+   "2022-05-27",
+   22.0
+  ],
+  [
+   "2022-06-01",
+   21.5
+  ],
+  [
+   "2022-06-10",
+   24.5
+  ],
+  [
+   "2022-06-17",
+   21.75
+  ],
+  [
+   "2022-06-24",
+   25.75
+  ],
+  [
+   "2022-07-01",
+   25.5
+  ],
+  [
+   "2022-07-08",
+   28.0
+  ],
+  [
+   "2022-07-15",
+   25.0
+  ],
+  [
+   "2022-07-22",
+   24.0
+  ],
+  [
+   "2022-07-29",
+   21.9
+  ],
+  [
+   "2022-08-05",
+   22.0
+  ],
+  [
+   "2022-08-12",
+   23.0
+  ],
+  [
+   "2022-08-19",
+   23.5
+  ],
+  [
+   "2022-08-26",
+   23.0
+  ],
+  [
+   "2022-09-02",
+   23.75
+  ],
+  [
+   "2022-09-09",
+   23.25
+  ],
+  [
+   "2022-09-16",
+   23.25
+  ],
+  [
+   "2022-09-23",
+   26.0
+  ],
+  [
+   "2022-09-30",
+   21.5
+  ],
+  [
+   "2022-10-07",
+   23.75
+  ],
+  [
+   "2022-10-14",
+   22.0
+  ],
+  [
+   "2022-10-21",
+   21.5
+  ],
+  [
+   "2022-10-28",
+   22.0
+  ],
+  [
+   "2022-11-04",
+   21.5
+  ],
+  [
+   "2022-11-11",
+   21.25
+  ],
+  [
+   "2022-11-18",
+   20.25
+  ],
+  [
+   "2022-11-25",
+   21.5
+  ],
+  [
+   "2022-12-02",
+   20.75
+  ],
+  [
+   "2022-12-09",
+   19.9
+  ],
+  [
+   "2022-12-16",
+   20.5
+  ],
+  [
+   "2022-12-23",
+   19.5
+  ],
+  [
+   "2022-12-30",
+   20.25
+  ],
+  [
+   "2023-01-06",
+   22.25
+  ],
+  [
+   "2023-01-13",
+   24.5
+  ],
+  [
+   "2023-01-20",
+   26.0
+  ],
+  [
+   "2023-01-27",
+   27.5
+  ],
+  [
+   "2023-02-03",
+   24.5
+  ],
+  [
+   "2023-02-10",
+   29.5
+  ],
+  [
+   "2023-02-17",
+   30.75
+  ],
+  [
+   "2023-02-24",
+   31.0
+  ],
+  [
+   "2023-03-03",
+   31.5
+  ],
+  [
+   "2023-03-10",
+   27.0
+  ],
+  [
+   "2023-03-17",
+   27.0
+  ],
+  [
+   "2023-03-24",
+   29.25
+  ],
+  [
+   "2023-03-31",
+   28.0
+  ],
+  [
+   "2023-04-06",
+   28.75
+  ],
+  [
+   "2023-04-14",
+   29.0
+  ],
+  [
+   "2023-04-21",
+   29.0
+  ],
+  [
+   "2023-04-28",
+   33.25
+  ],
+  [
+   "2023-05-05",
+   33.0
+  ],
+  [
+   "2023-05-12",
+   33.0
+  ],
+  [
+   "2023-05-19",
+   33.5
+  ],
+  [
+   "2023-05-26",
+   36.0
+  ],
+  [
+   "2023-06-02",
+   34.5
+  ],
+  [
+   "2023-06-09",
+   33.9
+  ],
+  [
+   "2023-06-16",
+   33.0
+  ],
+  [
+   "2023-06-23",
+   32.5
+  ],
+  [
+   "2023-06-30",
+   32.0
+  ],
+  [
+   "2023-07-07",
+   31.0
+  ],
+  [
+   "2023-07-14",
+   30.25
+  ],
+  [
+   "2023-07-21",
+   33.1
+  ],
+  [
+   "2023-07-28",
+   33.25
+  ],
+  [
+   "2023-08-04",
+   32.0
+  ],
+  [
+   "2023-08-11",
+   30.75
+  ],
+  [
+   "2023-08-18",
+   29.0
+  ],
+  [
+   "2023-08-25",
+   29.25
+  ],
+  [
+   "2023-09-01",
+   30.0
+  ],
+  [
+   "2023-09-08",
+   30.0
+  ],
+  [
+   "2023-09-15",
+   29.25
+  ],
+  [
+   "2023-09-22",
+   29.5
+  ],
+  [
+   "2023-09-29",
+   28.5
+  ],
+  [
+   "2023-10-06",
+   26.75
+  ],
+  [
+   "2023-10-13",
+   26.5
+  ],
+  [
+   "2023-10-20",
+   24.0
+  ],
+  [
+   "2023-10-27",
+   23.0
+  ],
+  [
+   "2023-11-03",
+   24.5
+  ],
+  [
+   "2023-11-10",
+   27.0
+  ],
+  [
+   "2023-11-17",
+   26.25
+  ],
+  [
+   "2023-11-24",
+   26.0
+  ],
+  [
+   "2023-12-01",
+   24.0
+  ],
+  [
+   "2023-12-08",
+   24.0
+  ],
+  [
+   "2023-12-15",
+   24.0
+  ],
+  [
+   "2023-12-22",
+   25.0
+  ],
+  [
+   "2023-12-29",
+   25.5
+  ],
+  [
+   "2024-01-05",
+   26.75
+  ],
+  [
+   "2024-01-12",
+   26.0
+  ],
+  [
+   "2024-01-19",
+   24.5
+  ],
+  [
+   "2024-01-26",
+   24.0
+  ],
+  [
+   "2024-02-02",
+   28.3
+  ],
+  [
+   "2024-02-09",
+   26.75
+  ],
+  [
+   "2024-02-16",
+   25.0
+  ],
+  [
+   "2024-02-23",
+   24.75
+  ],
+  [
+   "2024-03-01",
+   23.8
+  ],
+  [
+   "2024-03-08",
+   22.5
+  ],
+  [
+   "2024-03-15",
+   23.25
+  ],
+  [
+   "2024-03-22",
+   22.0
+  ],
+  [
+   "2024-03-28",
+   22.0
+  ],
+  [
+   "2024-04-05",
+   21.0
+  ],
+  [
+   "2024-04-12",
+   20.8
+  ],
+  [
+   "2024-04-19",
+   20.5
+  ],
+  [
+   "2024-04-26",
+   19.95
+  ],
+  [
+   "2024-05-03",
+   19.5
+  ],
+  [
+   "2024-05-10",
+   20.5
+  ],
+  [
+   "2024-05-17",
+   21.0
+  ],
+  [
+   "2024-05-24",
+   21.25
+  ],
+  [
+   "2024-05-31",
+   20.75
+  ],
+  [
+   "2024-06-07",
+   21.0
+  ],
+  [
+   "2024-06-14",
+   19.75
+  ],
+  [
+   "2024-06-21",
+   18.5
+  ],
+  [
+   "2024-06-28",
+   18.0
+  ],
+  [
+   "2024-07-05",
+   18.0
+  ],
+  [
+   "2024-07-12",
+   21.5
+  ],
+  [
+   "2024-07-19",
+   23.0
+  ],
+  [
+   "2024-07-26",
+   22.25
+  ],
+  [
+   "2024-08-02",
+   21.5
+  ],
+  [
+   "2024-08-09",
+   20.1
+  ],
+  [
+   "2024-08-16",
+   21.5
+  ],
+  [
+   "2024-08-23",
+   21.5
+  ],
+  [
+   "2024-08-30",
+   23.25
+  ],
+  [
+   "2024-09-06",
+   22.0
+  ],
+  [
+   "2024-09-13",
+   22.0
+  ],
+  [
+   "2024-09-20",
+   20.5
+  ],
+  [
+   "2024-09-27",
+   20.0
+  ],
+  [
+   "2024-10-04",
+   19.25
+  ],
+  [
+   "2024-10-11",
+   18.25
+  ],
+  [
+   "2024-10-18",
+   19.0
+  ],
+  [
+   "2024-10-25",
+   17.5
+  ],
+  [
+   "2024-11-01",
+   19.5
+  ],
+  [
+   "2024-11-08",
+   20.0
+  ],
+  [
+   "2024-11-15",
+   19.25
+  ],
+  [
+   "2024-11-22",
+   19.0
+  ],
+  [
+   "2024-11-29",
+   19.0
+  ],
+  [
+   "2024-12-06",
+   19.0
+  ],
+  [
+   "2024-12-13",
+   18.75
+  ],
+  [
+   "2024-12-20",
+   18.0
+  ],
+  [
+   "2024-12-24",
+   19.5
+  ],
+  [
+   "2024-12-27",
+   19.5
+  ],
+  [
+   "2025-01-03",
+   18.75
+  ],
+  [
+   "2025-01-10",
+   19.25
+  ],
+  [
+   "2025-01-17",
+   19.0
+  ],
+  [
+   "2025-01-24",
+   20.5
+  ],
+  [
+   "2025-01-31",
+   21.25
+  ],
+  [
+   "2025-02-07",
+   23.0
+  ],
+  [
+   "2025-02-14",
+   22.25
+  ],
+  [
+   "2025-02-21",
+   23.0
+  ],
+  [
+   "2025-02-28",
+   21.75
+  ],
+  [
+   "2025-03-07",
+   21.5
+  ],
+  [
+   "2025-03-14",
+   21.5
+  ],
+  [
+   "2025-03-21",
+   21.5
+  ],
+  [
+   "2025-03-28",
+   22.15
+  ],
+  [
+   "2025-04-04",
+   21.5
+  ],
+  [
+   "2025-04-11",
+   20.75
+  ],
+  [
+   "2025-04-17",
+   20.5
+  ],
+  [
+   "2025-04-25",
+   20.75
+  ],
+  [
+   "2025-05-02",
+   23.0
+  ],
+  [
+   "2025-05-09",
+   22.5
+  ],
+  [
+   "2025-05-16",
+   23.7
+  ],
+  [
+   "2025-05-23",
+   23.5
+  ],
+  [
+   "2025-05-30",
+   22.5
+  ],
+  [
+   "2025-06-06",
+   26.75
+  ],
+  [
+   "2025-06-13",
+   24.5
+  ],
+  [
+   "2025-06-20",
+   23.25
+  ],
+  [
+   "2025-06-27",
+   24.25
+  ],
+  [
+   "2025-07-04",
+   24.25
+  ],
+  [
+   "2025-07-11",
+   24.4
+  ],
+  [
+   "2025-07-18",
+   27.5
+  ],
+  [
+   "2025-07-25",
+   26.2
+  ],
+  [
+   "2025-08-01",
+   25.0
+  ],
+  [
+   "2025-08-08",
+   25.0
+  ],
+  [
+   "2025-08-15",
+   26.0
+  ],
+  [
+   "2025-08-22",
+   25.5
+  ],
+  [
+   "2025-08-29",
+   25.0
+  ],
+  [
+   "2025-09-05",
+   25.5
+  ],
+  [
+   "2025-09-12",
+   24.5
+  ],
+  [
+   "2025-09-19",
+   23.2
+  ],
+  [
+   "2025-09-26",
+   22.5
+  ],
+  [
+   "2025-10-03",
+   23.5
+  ],
+  [
+   "2025-10-10",
+   23.0
+  ],
+  [
+   "2025-10-17",
+   24.5
+  ],
+  [
+   "2025-10-24",
+   23.5
+  ],
+  [
+   "2025-10-31",
+   23.0
+  ],
+  [
+   "2025-11-07",
+   22.25
+  ],
+  [
+   "2025-11-14",
+   21.0
+  ],
+  [
+   "2025-11-21",
+   21.0
+  ],
+  [
+   "2025-11-28",
+   21.0
+  ],
+  [
+   "2025-12-05",
+   24.0
+  ],
+  [
+   "2025-12-12",
+   24.0
+  ],
+  [
+   "2025-12-19",
+   23.5
+  ],
+  [
+   "2025-12-24",
+   25.5
+  ],
+  [
+   "2026-01-02",
+   27.0
+  ],
+  [
+   "2026-01-09",
+   26.0
+  ],
+  [
+   "2026-01-16",
+   27.5
+  ],
+  [
+   "2026-01-23",
+   26.5
+  ],
+  [
+   "2026-01-30",
+   25.75
+  ],
+  [
+   "2026-02-06",
+   25.75
+  ],
+  [
+   "2026-02-13",
+   24.5
+  ],
+  [
+   "2026-02-20",
+   26.0
+  ],
+  [
+   "2026-02-27",
+   26.0
+  ],
+  [
+   "2026-03-06",
+   24.75
+  ],
+  [
+   "2026-03-13",
+   24.75
+  ],
+  [
+   "2026-03-20",
+   24.0
+  ],
+  [
+   "2026-03-27",
+   24.25
+  ],
+  [
+   "2026-04-02",
+   25.7
+  ],
+  [
+   "2026-04-10",
+   29.1
+  ],
+  [
+   "2026-04-17",
+   31.0
+  ],
+  [
+   "2026-04-24",
+   34.0
+  ],
+  [
+   "2026-05-01",
+   41.5
+  ],
+  [
+   "2026-05-08",
+   46.5
+  ],
+  [
+   "2026-05-15",
+   48.25
+  ],
+  [
+   "2026-05-22",
+   48.0
+  ],
+  [
+   "2026-05-29",
+   49.0
+  ],
+  [
+   "2026-06-05",
+   45.0
+  ],
+  [
+   "2026-06-12",
+   47.5
+  ],
+  [
+   "2026-06-19",
+   55.0
+  ],
+  [
+   "2026-06-26",
+   49.0
+  ],
+  [
+   "2026-07-03",
+   51.0
+  ],
+  [
+   "2026-07-10",
+   58.0
+  ],
+  [
+   "2026-07-17",
+   57.5
+  ],
+  [
+   "2026-07-24",
+   58.0
+  ],
+  [
+   "2026-07-31",
+   56.5
+  ],
+  [
+   "2026-08-07",
+   53.0
+  ],
+  [
+   "2026-08-14",
+   52.2
+  ],
+  [
+   "2026-08-21",
+   50.0
+  ],
+  [
+   "2026-08-28",
+   52.0
+  ],
+  [
+   "2026-09-04",
+   51.0
+  ],
+  [
+   "2026-09-11",
+   51.0
+  ],
+  [
+   "2026-09-18",
+   51.0
+  ],
+  [
+   "2026-09-25",
+   52.5
+  ],
+  [
+   "2026-10-02",
+   54.0
+  ],
+  [
+   "2026-10-09",
+   56.0
+  ],
+  [
+   "2026-10-16",
+   51.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-12-29",
+   "doc": "OPS",
+   "fy": "FY21",
+   "g": "flat",
+   "s": 0,
+   "q": "Iofina is pleased to report that it will meet its H2 2021 crystalline iodine production target of 260-275 metric tonnes (\"MT\"), which was projected at the half year.",
+   "file": "20211229_IOF_Business-Update.md"
+  },
+  {
+   "d": "2022-01-17",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Company has a forecasted production figure of 225-240MT for H1 2022.",
+   "file": "20220117_IOF_Q4-2021-Update.md"
+  },
+  {
+   "d": "2022-04-19",
+   "doc": "Q1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Iofina is on track to achieve its H1 projection of approximately 225-240MT of crystalline iodine.",
+   "file": "20220419_IOF_Q1-2022-and-IO#9-Update.md"
+  },
+  {
+   "d": "2022-05-09",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "In terms of our expansion, we are squarely focused on growing our current iodine production and specialty chemical businesses including developing new and exciting chemical compounds.",
+   "file": "20220509_IOF_Final-Results.md"
+  },
+  {
+   "d": "2022-07-08",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "During the first half of the year, Iofina Resources produced 234.0 metric tonnes (\"MT\") of crystalline iodine from its five operating IOsorb® plants in Oklahoma, in line with its projected range of 225-240 MT.",
+   "file": "20220708_IOF_Additional-Loan-Facilities-and-H1-Update.md"
+  },
+  {
+   "d": "2022-09-26",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Market demand for raw iodine and our speciality products remains strong despite wider macroeconomic concerns. As such, the board anticipates meeting full year expectations.",
+   "file": "20220926_IOF_Interim-Results.md"
+  },
+  {
+   "d": "2022-10-28",
+   "doc": "Q3 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "This production is in line with the Company's expectations and Iofina is on track to produce 255-275 MT of crystalline iodine in the second half of this year.",
+   "file": "20221028_IOF_Finalised-Terms-for-IO9-&-Q3-Production-Update.md"
+  },
+  {
+   "d": "2023-01-09",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 1,
+   "q": "The Company continued to perform well during the Period, with Iofina Resources producing 139 metric tonnes (MT) of crystalline iodine from its IOsorb® iodine plants in Oklahoma , taking H2 2022 production to 282MT, which was ahead of the H2 upper forecast range of 255-275MT.",
+   "file": "20230109_IOF_Market-Update.md"
+  },
+  {
+   "d": "2023-02-06",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 3,
+   "q": "Subject to the completion of the Company's full year audited results, which are expected to be released in May 2023, Iofina is pleased to report that it now expects its FY 2022 EBITDA1 to be materially ahead of the previous market forecast and no less than $10.5 million.",
+   "file": "20230206_IOF_Trading-Update.md"
+  },
+  {
+   "d": "2023-04-12",
+   "doc": "Q1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The expectation remains that Iofina Resources will produce 235-250 MT of crystalline iodine during H1 2023 from its five existing plants (H1 2022: 234 MT).",
+   "file": "20230412_IOF_Production-Update.md"
+  },
+  {
+   "d": "2023-04-25",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "2023 has started well in terms of production from our existing plants and corresponding sales, with the market remaining strong and the Company on track to meet its H1 production targets.",
+   "file": "20230425_IOF_2022-FULL-YEAR-RESULTS.md"
+  },
+  {
+   "d": "2023-04-25",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "2023 has started well in terms of production from our existing plants and corresponding sales, with the market remaining strong and the Company on track to meet its H1 production targets.",
+   "file": "20230425_IOF_2022-FULL-YEAR-RESULTS_2.md"
+  },
+  {
+   "d": "2023-07-20",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "With IO#9 switched on in June and working through its start-up phases and concentrating iodide, the Company anticipates a significant increase in H2 2023 crystalline iodine production totalling between 325-350 MT (H2 2022: 282 MT).",
+   "file": "20230720_IOF_H1-Update-and-Updated-Loan-Facilities.md"
+  },
+  {
+   "d": "2023-09-11",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "The completion of IO#9 in June 2023 is set to deliver a jump in iodine production during the second half and we are on track to meet our H2 target range of 325-350MT.",
+   "file": "20230911_IOF_Interim-Results.md"
+  },
+  {
+   "d": "2023-10-20",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -1,
+   "q": "As such, second half production is trending towards the lower end of our forecast of 325-350 MT.",
+   "file": "20231020_IOF_Signed-Agreement-for-IO#10-and-Q3-2023-Update.md"
+  },
+  {
+   "d": "2023-11-30",
+   "doc": "OPS",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -1,
+   "q": "The Company expects second-half production at the bottom, or very marginally below the bottom end of the forecast range of 325-350 MT from its six iodine plants.",
+   "file": "20231130_IOF_IO#9-Update.md"
+  },
+  {
+   "d": "2024-01-15",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Moving into 2024, Iofina Resources expects to produce 275MT - 295MT of crystalline iodine during the first half (H1 2023: 242MT), which would result in a 13% to 22% increase over H1 2023.",
+   "file": "20240115_IOF_Q4-2023-Corporate-Update.md"
+  },
+  {
+   "d": "2024-04-16",
+   "doc": "Q1 TU",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -2,
+   "q": "The higher fee payments, which are effective 1 January 2024, will reduce EBITDA, and the Board expects FY 2024 EBITDA to be in the range of $8.5-$9.0 million.",
+   "file": "20240416_IOF_Q1-2024-Corporate-Update.md"
+  },
+  {
+   "d": "2024-05-02",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "As we go into 2024, IO#10 currently appears to be in a location of strong brine flows and good iodine content and will be a material addition to the Group.",
+   "file": "20240502_IOF_Final-Results.md"
+  },
+  {
+   "d": "2024-07-16",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Based on current production levels and the addition of IO#10 in Q3 2024, the Company anticipates production in the second half of 2024 to be in the range of 355 MT - 380 MT.",
+   "file": "20240716_IOF_H1-Update.md"
+  },
+  {
+   "d": "2024-09-20",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -2,
+   "q": "We remain on track to reach full-year 2024 adjusted EBITDA between $8.5m - $9m as communicated in the Q1 2024 Corporate Update in April, assuming IO#10 ramps up as expected, and sales at year-end are recognised in 2024 and don't slide into 2025 due to timing or logistical issues.",
+   "file": "20240920_IOF_Interim-Results.md"
+  },
+  {
+   "d": "2024-10-18",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "As total production ramps up in Q4 2024, as it stands, second-half production remains on track to achieve within the forecast range of 355-380 MT.",
+   "file": "20241018_IOF_Q3-2024-Update.md"
+  },
+  {
+   "d": "2025-01-23",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -3,
+   "q": "Consequently, the Group expects to report adjusted EBITDA for 2024 in the region of $7.5m, below the forecast range of $8.5m-$9m.",
+   "file": "20250123_IOF_Q4-2024-Update.md"
+  },
+  {
+   "d": "2025-04-17",
+   "doc": "Q1 TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -2,
+   "q": "Given the lower-than-anticipated Q1 2025 production, the Company now expects total iodine production for H1 2025 to be closer to 300MT compared to the previously guided range of 320MT-355MT.",
+   "file": "20250417_IOF_Q1-2025-Update.md"
+  },
+  {
+   "d": "2025-05-12",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Expect H1 2025 crystalline iodine production to be near 300MT",
+   "file": "20250512_IOF_Final-Results.md"
+  },
+  {
+   "d": "2025-07-17",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 1,
+   "q": "This figure was both a record H1 production total and slightly higher than the Company's revised production guidance for the Period of c.300 MT, as stated in the Q1 2025 update.",
+   "file": "20250717_IOF_H1-2025-Update.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2025-09-04",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Iofina plc, specialists in the exploration and production of iodine and manufacturers of specialty chemical products, is pleased to report that the 74.3MT of crystalline iodine produced at the Company's IOsorb® plants in August 2025 was the highest single month of iodine production.",
+   "file": "20250904_IOF_Business-Update.md"
+  },
+  {
+   "d": "2025-09-18",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board believes the Group remains on track to meet market expectations for the full year",
+   "file": "20250918_IOF_Interim-Results.md"
+  },
+  {
+   "d": "2025-10-16",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "With water volumes to our plants expected to remain consistent through Q4 2025, production for H2 2025 is on track to be within the production range of 400-440 MT.",
+   "file": "20251016_IOF_Q3-2025-Update.md"
+  },
+  {
+   "d": "2026-01-13",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 2,
+   "q": "As a result of achieving the upper end of its production forecast along with a strong sales cycle in the second half of 2025, Iofina expects to exceed market expectations for revenue and EBITDA.",
+   "file": "20260113_IOF_Q4-2025-Corporate-Update.md"
+  },
+  {
+   "d": "2026-04-15",
+   "doc": "Q1 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "The Company now expects to exceed the previous H1 2026 production guidance of 325MT-355MT.",
+   "file": "20260415_IOF_Q1-2026-Corporate-Update.md"
+  },
+  {
+   "d": "2026-04-30",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "After a strong start to 2026, we have lifted the top-end of our H1 2026 production guidance and now expect H1 2026 production to be in the region of 385MT.",
+   "file": "20260430_IOF_Final-Results.md"
+  },
+  {
+   "d": "2026-07-15",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "The production also exceeded the Company's previously upgraded guidance of 385MT.",
+   "file": "20260715_IOF_H1-2026-Corporate-Update.md"
+  },
+  {
+   "d": "2026-09-21",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board believes the Group is on track to meet market expectations for the full year",
+   "file": "20260921_IOF_Interim-Results.md"
+  },
+  {
+   "d": "2026-10-16",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -2,
+   "q": "Due to the impact of the lower levels of water at the plants, the delay in commissioning of the IO#11 brine line and the timing of IO#12, the Company now anticipates H2 production to be closer to 440-455MT, but notes that this remains dependent on water supply returning to anticipated levels at the affected legacy plants as well as IO#12's contribution.",
+   "file": "20261016_IOF_Q3-2026-Update.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-16",
+  "doc": "Q3 TU",
+  "file": "20261016_IOF_Q3-2026-Update.md",
+  "vs": "Q3 TU Oct-25 · H1 R Sep-26 · H1 TU Jul-26",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "H1 R Sep-26: “The Board believes the Group is on track to meet market expectations for the full year”, H2 guide 460-485MT → Q3 TU Oct-26 cuts H2 to “closer to 440-455MT” and makes it conditional (“remains dependent on water supply returning to anticipated levels”), with no word on market expectations",
+    "span": "Q3 updates Oct-24 and Oct-25 carried no expectations anchor either; the cut is the first H2 guide cut since Apr-25"
+   },
+   {
+    "sev": "amber",
+    "type": "Pushed out",
+    "text": "H1 TU Jul-26: IO#12 “production expected to commence towards the end of September” → Q3 TU Oct-26: IO#12 “should be producing iodine soon”, with delays in commissioning cited",
+    "span": "Jul-26 → Oct-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Headline “Further Progress in Production Expansion Delivered” sits beside Q3 production of 205.2MT, down from 215.8MT in Q3 2025, and a lower H2 range",
+    "span": "Q3 TU Oct-25 headline was a record quarter"
+   }
+  ]
+ }
+}
