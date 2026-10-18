@@ -3,11 +3,32 @@
  "note": "Drift-lite charts: 5y weekly price + Text/G marks auto-scored from RNS. Built by chart_lite.py.",
  "tickers": [
   {
+   "ticker": "4BB",
+   "company": "4basebio PLC",
+   "chart": "lite/4BB.json?v=2026-10-18.aa47",
+   "scored": "2026-10-18",
+   "marks": 4
+  },
+  {
    "ticker": "AAF",
    "company": "Airtel Africa PLC",
    "chart": "lite/AAF.json?v=2026-10-18.9ea5",
    "scored": "2026-10-18",
    "marks": 20
+  },
+  {
+   "ticker": "ABDP",
+   "company": "AB Dynamics PLC",
+   "chart": "lite/ABDP.json?v=2026-10-18.c9b2",
+   "scored": "2026-10-18",
+   "marks": 22
+  },
+  {
+   "ticker": "ABF",
+   "company": "Associated British Foods PLC",
+   "chart": "lite/ABF.json?v=2026-10-18.ba81",
+   "scored": "2026-10-18",
+   "marks": 29
   },
   {
    "ticker": "AC8",
@@ -16,6 +37,20 @@
    "scored": "2026-10-18",
    "marks": 1,
    "src": "snapshots"
+  },
+  {
+   "ticker": "ADF",
+   "company": "Facilities By ADF PLC",
+   "chart": "lite/ADF.json?v=2026-10-18.5b49",
+   "scored": "2026-10-18",
+   "marks": 16
+  },
+  {
+   "ticker": "ADVT",
+   "company": "AdvancedAdvT Ltd",
+   "chart": "lite/ADVT.json?v=2026-10-18.1ea4",
+   "scored": "2026-10-18",
+   "marks": 17
   },
   {
    "ticker": "AJB",
