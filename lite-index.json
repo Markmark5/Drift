@@ -1,0 +1,20 @@
+{
+ "updated": "2026-10-18",
+ "note": "Drift-lite charts: 5y weekly price + Text/G marks auto-scored from RNS. Built by chart_lite.py.",
+ "tickers": [
+  {
+   "ticker": "AAF",
+   "company": "Airtel Africa PLC",
+   "chart": "lite/AAF.json?v=2026-10-18.9ea5",
+   "scored": "2026-10-18",
+   "marks": 20
+  },
+  {
+   "ticker": "AJB",
+   "company": "AJ Bell PLC",
+   "chart": "lite/AJB.json?v=2026-10-18.66c9",
+   "scored": "2026-10-18",
+   "marks": 22
+  }
+ ]
+}
