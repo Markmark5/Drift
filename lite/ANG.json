@@ -1,6 +1,6 @@
 {
  "ticker": "ANG",
- "v": "2026-10-18.47d3",
+ "v": "2026-10-19.b426",
  "ccy": "GBX",
  "src": "Yahoo ANG.L weekly",
  "adj": [],
@@ -1048,9 +1048,22 @@
   [
    "2026-10-16",
    54.5
+  ],
+  [
+   "2026-10-19",
+   54.145
   ]
  ],
  "marks": [
+  {
+   "d": "2022-02-22",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 1,
+   "q": "As a result, the Board expects to report pre IFRS-16 EBITDA of no less than £5.0m for FY22, in line with market expectations*, representing a significant improvement with growth of over 25% on the prior year.",
+   "file": "20220222_ANG_Full-Year-Trading-Update-and-Notice-of-Results.md"
+  },
   {
    "d": "2022-05-10",
    "doc": "YE-TU",
@@ -1065,9 +1078,18 @@
    "doc": "FY R",
    "fy": "FY23",
    "g": "flat",
-   "s": 0,
-   "q": "On track to meet current year market expectations*",
+   "s": -1,
+   "q": "Whilst trading in the new financial year to date has seen growth broadly in line with our expectations, our business is subject to the same pressures and challenges as many others.",
    "file": "20220517_ANG_Full-Year-Results.md"
+  },
+  {
+   "d": "2022-08-18",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -3,
+   "q": "However, Pre-IFRS 16 EBITDA is now expected to be materially behind current market expectations for FY 2023 and in a range of between £3.0 million and £3.4 million.",
+   "file": "20220818_ANG_Half-Year-Trading-Update-and-Notice-of-Results.md"
   },
   {
    "d": "2022-10-12",
@@ -1079,13 +1101,31 @@
    "file": "20221012_ANG_Half-Year-Results.md"
   },
   {
+   "d": "2023-02-22",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "As a result, the Board expects to report pre-IFRS 16 EBITDA of no less than £2.2m for FY23, in line with market expectations*.",
+   "file": "20230222_ANG_Full-Year-Trading-Update-and-Notice-of-Results.md"
+  },
+  {
    "d": "2023-05-16",
    "doc": "FY R",
    "fy": "FY24",
    "g": "flat",
    "s": -1,
-   "q": "It is clear that the more challenging economic environment will carry on well into this year but we are all hopeful that interest rates and energy price pressures will begin to ease as the year progresses and with that will come a return of consumer confidence and an upturn in the economy.",
+   "q": "Despite the turbulent consumer environment and sustained cost pressures, management remains focused on delivering profitable growth and market share gains in the UK and Europe over the medium to long term",
    "file": "20230516_ANG_Final-Results.md"
+  },
+  {
+   "d": "2023-08-23",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Overall the Board is confident that a combination of continuing UK sales momentum with balancing European growth and profitability means that the Group is well placed to deliver revenue and Pre IFRS 16 EBITDA in line with full year market expectations.",
+   "file": "20230823_ANG_Half-Year-Trading-Update-and-Notice-of-Results.md"
   },
   {
    "d": "2023-10-24",
@@ -1093,8 +1133,17 @@
    "fy": "FY24",
    "g": "flat",
    "s": 0,
-   "q": "Following positive H1 FY24 results, the Board remains confident that the full year results will be in line with market expectations3 and would like to acknowledge and thank all members of the Angling Direct team for their efforts",
+   "q": "The Board remains confident that a combination of continued UK sales momentum and optimising European growth means that the Group is well placed to deliver revenue and pre-IFRS 16 EBITDA for the current year in line with market expectations",
    "file": "20231024_ANG_Half-Year-Results.md"
+  },
+  {
+   "d": "2024-02-21",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board expects to report overall trading for FY24 in line with market expectations1.",
+   "file": "20240221_ANG_Full-Year-Trading-Update-and-Notice-of-Results.md"
   },
   {
    "d": "2024-05-14",
@@ -1115,13 +1164,32 @@
    "file": "20240620_ANG_AGM-Statement.md"
   },
   {
+   "d": "2024-08-21",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 1,
+   "q": "The Group is pleased to note that the positive momentum seen in H1 25 has continued into H2 and the Board remains confident that the Group is trading in line with full year consensus market expectations",
+   "file": "20240821_ANG_Half-Year-Trading-Update-and-Notice-of-Results.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
    "d": "2024-10-08",
    "doc": "H1 R",
    "fy": "FY25",
    "g": "flat",
    "s": 0,
-   "q": "Overall, a combination of continued UK sales momentum and pursuing a profitable European growth strategy means the Group is well placed to deliver revenue and Adj. EBITDA in line with market expectations for FY254",
+   "q": "Overall, a combination of continued UK sales momentum and pursuing a profitable European growth strategy means the Group is well placed to deliver revenue and Adj. EBITDA in line with market expectations for FY25",
    "file": "20241008_ANG_Half-Year-Results.md"
+  },
+  {
+   "d": "2025-02-26",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 1,
+   "q": "The Board expects to report FY25 revenue and adjusted EBITDA slightly ahead of market expectations1.",
+   "file": "20250226_ANG_Full-Year-Trading-Update-and-Notice-of-Results.md"
   },
   {
    "d": "2025-02-26",
@@ -1136,10 +1204,28 @@
    "d": "2025-05-13",
    "doc": "FY R",
    "fy": "FY25",
-   "g": "RAISE",
+   "g": "flat",
    "s": 1,
    "q": "Against this backdrop, we are pleased to report EBITDA for the year slightly ahead of recently upgraded consensus market expectations.",
    "file": "20250513_ANG_Final-Results.md"
+  },
+  {
+   "d": "2025-08-20",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Sustained progress against medium-term objectives underpinned by continued development of MyAD proposition, comfortably trading in line with full year consensus market expectations",
+   "file": "20250820_ANG_Half-Year-Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2025-08-20",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Sustained progress against medium-term objectives underpinned by continued development of MyAD proposition, comfortably trading in line with full year consensus market expectations",
+   "file": "20250820_ANG_Trading-Update-and-Notice-of-Results---Replacement.md"
   },
   {
    "d": "2025-10-07",
@@ -1147,17 +1233,35 @@
    "fy": "FY26",
    "g": "RAISE",
    "s": 2,
-   "q": "Overall, a combination of continued UK sales and the further reduction in European losses, means the Group is well placed to deliver revenue and Adj. EBITDA ahead of market expectations for FY264 with upgraded forecast Group revenues of not less than £102.0m and Adjusted EBITDA outturn for FY26, of not less than £4.35m",
+   "q": "We are pleased to report that the momentum generated in FY25 has continued into the first half, with strong in-store and online sales providing confidence that the Group will deliver a FY26 trading performance ahead of market expectations.",
    "file": "20251007_ANG_Half-Year-Results.md"
+  },
+  {
+   "d": "2026-02-26",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 2,
+   "q": "As a result of the strong operational performance delivered in the year and further reduction of the European losses, the Board is confident in delivering a FY26 Adjusted EBITDA of circa £4.8m, ahead of recently upgraded market expectations",
+   "file": "20260226_ANG_Full-Year-Trading-Update-and-Notice-of-Results.md"
   },
   {
    "d": "2026-05-12",
    "doc": "FY R",
    "fy": "FY27",
    "g": "flat",
-   "s": 0,
-   "q": "The Group has mitigated these such as there is no impact on our FY27 expectations at this stage and we continue to review levers to offset any further additional short-term costs through savings elsewhere .",
+   "s": -1,
+   "q": "We continue to review levers to offset further additional costs through savings elsewhere in the short-term, such that our FY27 guidance is not impacted at this stage.",
    "file": "20260512_ANG_Final-Results.md"
+  },
+  {
+   "d": "2026-08-19",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "We remain confident in achieving our full year consensus market expectations2 and are well positioned to capitalise on the attractive long-term growth opportunities across our markets as we deliver our medium-term objectives.",
+   "file": "20260819_ANG_Half-Year-Trading-Update-and-Notice-of-Results.md"
   },
   {
    "d": "2026-10-13",
@@ -1174,31 +1278,31 @@
   "rns": "2026-10-13",
   "doc": "H1 R",
   "file": "20261013_ANG_Half-Year-Results.md",
-  "vs": "H1 R Oct-25 · FY R May-26",
+  "vs": "H1 R Oct-25 · back to Oct-24 · YE-TU Feb-26 · FY R May-26 · H1 TU Aug-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Skipped update",
-    "text": "May-26: “The Group will provide a more detailed update for FY27 with our first half Trading Statement on 19 August.” → no August 2026 trading statement in the folder; next update is these H1 results on 13 Oct",
-    "span": "Promised in FY R May-26"
-   },
-   {
-    "sev": "amber",
-    "type": "Wording vs number",
-    "text": "H1 Oct-25 highlight: “like-for-like store sales increased 9.8% underpinned by improved customer footfall” → H1 Oct-26 highlight “UK retail store estate continued to deliver strong growth, with total store sales increasing by 6.4% to £32.4m”, while the body says “Like-for-like store sales modestly declined by -0.2%”",
-    "span": "Store LFL 9.8% (H1 FY26) → -0.2% (H1 FY27), dropped from highlights"
-   },
-   {
-    "sev": "amber",
     "type": "Demoted",
-    "text": "H1 Oct-25 highlights led with “Gross margin increased by +130 bps” and “In Europe, overall sales grew 5.1% to £2.5m” → H1 Oct-26 highlights carry neither; table only shows gross margin -20 bps and European sales down 30.4%",
-    "span": "H1 Oct-25 → H1 Oct-26"
+    "text": "Like-for-like store sales: H1 FY26 highlights “like-for-like store sales increased 9.8% underpinned by improved customer footfall” → H1 FY27 highlights say “UK retail store estate continued to deliver strong growth” with no LFL figure; it sits in the body: “Like-for-like store sales modestly declined by -0.2%”",
+    "span": "In the highlights at Oct-24, May-25, Oct-25, May-26 → first negative LFL, first time off the highlights"
+   },
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "UK pricing: Oct-25 “continuing to mitigate ongoing inflationary cost headwinds” → Oct-26 “pricing in the market became more volatile due to the challenging consumer backdrop” and “customer spending patterns proving more challenged than anticipated”",
+    "span": "Pricing volatility not flagged at Oct-25, May-26 or Aug-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Utrecht store: Oct-25 “The store delivered a breakeven position for HY 26, a milestone for the business” (also reported at Oct-24, Aug-25, May-26) → Oct-26 no mention of the store, while European sales fell 30.4% to £1.8m and the European highlight bullet was dropped",
+    "span": "Reported in each H1 R and FY R since opening in May 2024 → first omission"
    },
    {
     "sev": "grey",
-    "type": "Number to words",
-    "text": "May-26 current trading: “Group revenue in March and April increasing 5.4% and UK revenue increasing 7.6%” → Oct-26 current trading: “Total UK like-for-like sales grew”, no UK figure (Group +10.7% only)",
-    "span": "FY R May-26 → H1 R Oct-26"
+    "type": "Demoted",
+    "text": "Cash KPI: Oct-24 and Oct-25 highlights “Operating cashflow of £4.9m (HY25: £4.9m)” → Oct-26 highlights replace it with “Strengthened Adjusted Free Cashflow, with an inflow £5.0m (HY26: £3.6m)”; operating cashflow no longer a highlight",
+    "span": "Adjusted Free Cashflow introduced at FY R May-26"
    }
   ]
  }
