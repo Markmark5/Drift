@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18",
+  "updated": "2026-10-19",
   "tickers": [
     {
       "ticker": "STAF",
@@ -4969,6 +4969,78 @@
           }
         ]
       }
+    },
+    {
+      "ticker": "BKS",
+      "company": "Beeks Financial Cloud",
+      "kind": "ticker",
+      "direction": "watch",
+      "headline": "FY26 lands a whisker above July's guide; first-ever numeric FY27 range brackets consensus, but reported-currency ACMRR added just £0.6m in H2.",
+      "trigger": "0/3 — Numbers & guide amber (revenue growth slowed two halves; margins and EBITDA rebounding, derived H2); Language amber (Mar-26 −2 on H2-weighting, audited H2 delivered it); Disclosure unlit (first numeric FY27 guide).",
+      "alert": false,
+      "fired": 0,
+      "fired_of": 3,
+      "lights": "aa-",
+      "rns_type": "FY R",
+      "rns_date": "2026-10-19",
+      "build_date": "2026-10-19",
+      "spec_version": "5.8",
+      "next_test": "H1 FY27 update, Feb–Mar 2027: revenue tracking toward the £43–48m range, reported-currency ACMRR above £33.4m, net cash rebuilding from £0.6m.",
+      "url": "BKS.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H2 22",
+          "H1 23",
+          "H2 23",
+          "H1 24",
+          "H2 24",
+          "H1 25",
+          "H2 25",
+          "H1 26",
+          "H2 26"
+        ],
+        "rows": [
+          "gggggagga",
+          "-rrrgrarr",
+          "garggggra",
+          "agrraaarg",
+          "-grrgrgrg"
+        ],
+        "note": "R1 ACMRR · R2 revenue · R3 Prox/Exch upfront revenue · R4 gross margin · R5 uEBITDA; halves H2 FY22 to H2 FY26"
+      },
+      "prev": {
+        "direction": "watch",
+        "fired": 0,
+        "lights": "aa-",
+        "rns_date": "2026-07-15",
+        "rns_type": "YE-TU"
+      },
+      "trend": {
+        "mode": "growth",
+        "cells": "ggg",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": 12.6
+          },
+          {
+            "m": "EBITDA",
+            "gap": 41
+          },
+          {
+            "m": "PBT",
+            "gap": 70.8
+          }
+        ]
+      },
+      "chart": "charts/BKS.json?v=2026-10-19.993f"
     }
   ]
 }
