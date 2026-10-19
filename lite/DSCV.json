@@ -1,6 +1,6 @@
 {
  "ticker": "DSCV",
- "v": "2026-10-18.0947",
+ "v": "2026-10-19.6a87",
  "ccy": "GBX",
  "src": "Yahoo DSCV.L weekly",
  "adj": [],
@@ -1052,14 +1052,49 @@
  ],
  "marks": [
   {
+   "d": "2021-11-30",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 2,
+   "q": "The second half has started well with continued order and sales growth over the same period last year and two years ago, and   the Group is on track to deliver full year underlying earnings for the continuing operations ahead of the Board's previous expectations despite ongoing supply chain and foreign exchange headwinds.",
+   "file": "20211130_DSCV_Interim-Results.md"
+  },
+  {
+   "d": "2022-02-09",
+   "doc": "Q3 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 2,
+   "q": "Accordingly, the Group is on track to deliver full year underlying earnings for continuing operations ahead of the Board's previous expectations, despite ongoing supply chain headwinds.",
+   "file": "20220209_DSCV_Trading-Update.md"
+  },
+  {
+   "d": "2022-04-14",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 2,
+   "q": "Trading in the final two months of the year (the \"Period\") continued to be strong and the Group expects to deliver full year underlying earnings for continuing operations ahead of the Board's previous expectations.",
+   "file": "20220414_DSCV_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2022-06-14",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The new financial year has started well, with continued strong growth in organic sales, and the order book at record high levels.",
+   "file": "20220614_DSCV_Preliminary-results.md"
+  },
+  {
    "d": "2022-07-28",
    "doc": "Q1 TU",
    "fy": "FY23",
    "g": "flat",
-   "s": 0,
-   "q": "With a clear strategy focused on long-term, high quality, structural and sustainable growth across Europe, North America and Asia, a diversified customer base, a record order book and a strong pipeline of acquisition opportunities, the Group is well positioned to make further good progress on its key priorities.",
-   "file": "20220728_DSCV_Trading-Update.md",
-   "gnote": "drift §3"
+   "s": 1,
+   "q": "The strong organic sales growth reported last financial year continued in the first quarter this year1 with underlying earnings of the Group for the Period ahead of the Board's expectations.",
+   "file": "20220728_DSCV_Trading-Update.md"
   },
   {
    "d": "2022-10-13",
@@ -1068,8 +1103,7 @@
    "g": "flat",
    "s": 0,
    "q": "The strong organic sales growth reported last financial year continued in the first half of this year1 with the Group continuing on track to deliver full year underlying earnings in line with the Board's expectations.",
-   "file": "20221013_DSCV_First-Half-Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20221013_DSCV_First-Half-Trading-Update.md"
   },
   {
    "d": "2022-11-23",
@@ -1077,39 +1111,35 @@
    "fy": "FY23",
    "g": "flat",
    "s": 0,
-   "q": "The second half has started well with continued organic sales growth over last year and a record order book level, which we expect to begin to normalise as it converts into sales through the second half of the year. The Group is on track to deliver full year underlying earnings in line with the Board's expectations.",
-   "file": "20221123_DSCV_Interim-Results.md",
-   "gnote": "drift §3"
+   "q": "The Group is on track to deliver full year underlying earnings in line with the Board's expectations.",
+   "file": "20221123_DSCV_Interim-Results.md"
   },
   {
    "d": "2023-01-25",
    "doc": "Q3 TU",
    "fy": "FY23",
    "g": "RAISE",
-   "s": 1,
+   "s": 2,
    "q": "Accordingly, the Group is on track to deliver full year underlying earnings ahead of the Board's expectations.",
-   "file": "20230125_DSCV_Q3-Trading-Update-and-Acquisition-Completion.md",
-   "gnote": "drift §3"
+   "file": "20230125_DSCV_Q3-Trading-Update-and-Acquisition-Completion.md"
   },
   {
    "d": "2023-04-19",
    "doc": "YE-TU",
    "fy": "FY23",
    "g": "flat",
-   "s": 1,
+   "s": 2,
    "q": "The Group's positive trading momentum continued through the final quarter with the Group on track to deliver full year underlying earnings ahead of the Board's expectations.",
-   "file": "20230419_DSCV_Full-Year-Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20230419_DSCV_Full-Year-Trading-Update.md"
   },
   {
    "d": "2023-06-07",
    "doc": "FY R",
    "fy": "FY24",
-   "g": "RAISE",
-   "s": 1,
-   "q": "The new financial year has started well with continued organic sales growth over last year.",
-   "file": "20230607_DSCV_Preliminary-results.md",
-   "gnote": "drift §3"
+   "g": "flat",
+   "s": 0,
+   "q": "The new financial year has started well with continued organic sales growth over last year. The order book remains at a higher than expected level, in line with last year, providing good visibility of demand.",
+   "file": "20230607_DSCV_Preliminary-results.md"
   },
   {
    "d": "2023-07-24",
@@ -1118,18 +1148,16 @@
    "g": "flat",
    "s": 0,
    "q": "The Group's positive trading momentum of the final quarter last year continued into the current year with organic sales growth at a similar level in the first quarter, and earnings for the Period being in line with the Board's expectations.",
-   "file": "20230724_DSCV_Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20230724_DSCV_Trading-Update.md"
   },
   {
    "d": "2023-10-11",
    "doc": "H1 TU",
    "fy": "FY24",
    "g": "RAISE",
-   "s": 1,
+   "s": 0,
    "q": "Following a strong performance in the Period and with good orderbook visibility into the second half, the Group is on track to deliver full year underlying earnings in-line with the Board's recently upgraded expectations.",
-   "file": "20231011_DSCV_First-Half-Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20231011_DSCV_First-Half-Trading-Update.md"
   },
   {
    "d": "2023-12-05",
@@ -1138,8 +1166,7 @@
    "g": "flat",
    "s": 0,
    "q": "The Group is well positioned to continue making good progress and remains on track to deliver full year underlying earnings in line with the Board's expectations.",
-   "file": "20231205_DSCV_Interim-Results.md",
-   "gnote": "drift §3"
+   "file": "20231205_DSCV_Interim-Results.md"
   },
   {
    "d": "2024-02-06",
@@ -1148,8 +1175,7 @@
    "g": "flat",
    "s": 0,
    "q": "The Group continues to make good financial and strategic progress and is on track to deliver full year underlying earnings in-line with the Board's expectations.",
-   "file": "20240206_DSCV_Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20240206_DSCV_Trading-Update.md"
   },
   {
    "d": "2024-04-18",
@@ -1158,8 +1184,7 @@
    "g": "flat",
    "s": 0,
    "q": "The Group continues to make good financial and strategic progress and is on track to deliver growth in full year underlying earnings in-line with the Board's expectations.",
-   "file": "20240418_DSCV_Full-Year-Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20240418_DSCV_Full-Year-Trading-Update.md"
   },
   {
    "d": "2024-06-05",
@@ -1167,9 +1192,8 @@
    "fy": "FY25",
    "g": "flat",
    "s": 0,
-   "q": "Expectations for the new year unchanged.",
-   "file": "20240605_DSCV_Preliminary-results.md",
-   "gnote": "drift §3"
+   "q": "With the benefit of a robust balance sheet, we expect to make further progress in the year ahead, in line with the Board's expectations, building on the essential role that our specialist products provide for our customers.",
+   "file": "20240605_DSCV_Preliminary-results.md"
   },
   {
    "d": "2024-07-26",
@@ -1178,8 +1202,7 @@
    "g": "flat",
    "s": 0,
    "q": "The Group's performance in the Period was in line with the guidance provided at the time of the FY2023/24 results, with the Board's underlying earnings expectations for this year unchanged.",
-   "file": "20240726_DSCV_Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20240726_DSCV_Trading-Update.md"
   },
   {
    "d": "2024-10-15",
@@ -1188,8 +1211,7 @@
    "g": "flat",
    "s": 0,
    "q": "The Group remains on-track with the Board's underlying earnings expectations for this financial year unchanged.",
-   "file": "20241015_DSCV_First-Half-Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20241015_DSCV_First-Half-Trading-Update.md"
   },
   {
    "d": "2024-12-03",
@@ -1198,8 +1220,7 @@
    "g": "flat",
    "s": 0,
    "q": "This, along with our acquisition opportunities, is our engine for growth and we remain on track to deliver full year underlying earnings in line with the Board's expectations.",
-   "file": "20241203_DSCV_Interim-Results.md",
-   "gnote": "drift §3"
+   "file": "20241203_DSCV_Interim-Results.md"
   },
   {
    "d": "2025-01-30",
@@ -1208,8 +1229,7 @@
    "g": "flat",
    "s": 0,
    "q": "The Group remains on-track to deliver full year underlying earnings in line with the Board's expectations.",
-   "file": "20250130_DSCV_Q3-Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20250130_DSCV_Q3-Trading-Update.md"
   },
   {
    "d": "2025-04-16",
@@ -1218,18 +1238,16 @@
    "g": "RAISE",
    "s": 1,
    "q": "Our strategy of building a group of complementary, highly aligned, niche electronic engineering businesses continues to generate excellent results and resilience in volatile market conditions with underlying earnings for FY2024/25 expected to be slightly ahead of Board expectations.",
-   "file": "20250416_DSCV_Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20250416_DSCV_Trading-Update.md"
   },
   {
    "d": "2025-06-04",
    "doc": "FY R",
    "fy": "FY26",
-   "g": "RAISE",
-   "s": 1,
-   "q": "With a strong pipeline of organic and inorganic opportunities, the Group is well placed to continue its resilient performance and development.",
-   "file": "20250604_DSCV_Preliminary-results.md",
-   "gnote": "drift §3"
+   "g": "flat",
+   "s": 0,
+   "q": "Whilst we will pass on any incremental tariff costs, we continue to do all we can to mitigate them with our local manufacturing and expect limited direct impact, although remain mindful of the volatile economic conditions and its potential to impact customers' demand.",
+   "file": "20250604_DSCV_Preliminary-results.md"
   },
   {
    "d": "2025-07-24",
@@ -1238,8 +1256,7 @@
    "g": "flat",
    "s": 0,
    "q": "The Group's performance in the Period was in line with the guidance provided at the time of the FY2024/25 results and the Board's expectations for adjusted earnings for FY2025/26 remain unchanged.",
-   "file": "20250724_DSCV_Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20250724_DSCV_Trading-Update.md"
   },
   {
    "d": "2025-10-14",
@@ -1248,8 +1265,7 @@
    "g": "flat",
    "s": 0,
    "q": "The Group delivered strong operational and cash performance through the Period with improving growth trends, in line with the Board's adjusted earnings expectations for this financial year.",
-   "file": "20251014_DSCV_First-Half-Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20251014_DSCV_First-Half-Trading-Update.md"
   },
   {
    "d": "2025-12-02",
@@ -1258,8 +1274,7 @@
    "g": "flat",
    "s": 0,
    "q": "The Group remains on track to deliver full year adjusted earnings in line with the Board's expectations and looks forward to realising the exciting potential we see for the future.",
-   "file": "20251202_DSCV_Interim-Results.md",
-   "gnote": "drift §3"
+   "file": "20251202_DSCV_Interim-Results.md"
   },
   {
    "d": "2026-02-02",
@@ -1268,8 +1283,7 @@
    "g": "flat",
    "s": 0,
    "q": "The order book gives good coverage for the final quarter, and accordingly, the Group remains on track to deliver full year adjusted earnings in line with the Board's expectations.",
-   "file": "20260202_DSCV_Q3-Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20260202_DSCV_Q3-Trading-Update.md"
   },
   {
    "d": "2026-04-17",
@@ -1278,8 +1292,7 @@
    "g": "flat",
    "s": 0,
    "q": "The continued focus on generating efficiencies from our international footprint, together with reducing interest costs, has supported earnings momentum, with the Group on-track to deliver another year of growth in adjusted earnings per share in-line with consensus market expectations(3).",
-   "file": "20260417_DSCV_Q4-and-full-year-trading-update.md",
-   "gnote": "drift §3"
+   "file": "20260417_DSCV_Q4-and-full-year-trading-update.md"
   },
   {
    "d": "2026-06-03",
@@ -1288,8 +1301,7 @@
    "g": "flat",
    "s": 0,
    "q": "The outlook for the year ahead is positive with full year adjusted earnings in line with Board expectations. First quarter trading has started well with strong growth in orders and further good sales growth and orders running well ahead of sales.",
-   "file": "20260603_DSCV_Preliminary-results.md",
-   "gnote": "drift §3"
+   "file": "20260603_DSCV_Preliminary-results.md"
   },
   {
    "d": "2026-07-24",
@@ -1298,18 +1310,16 @@
    "g": "RAISE",
    "s": 2,
    "q": "The positive outlook continues with full year adjusted earnings tracking ahead of the Board's expectations.",
-   "file": "20260724_DSCV_Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20260724_DSCV_Trading-Update.md"
   },
   {
    "d": "2026-10-14",
    "doc": "H1 TU",
    "fy": "FY27",
-   "g": "RAISE",
+   "g": "flat",
    "s": 2,
    "q": "The positive outlook continues with full year adjusted earnings running ahead of the Board's expectations and driving strong earnings growth over last year.",
-   "file": "20261014_DSCV_First-Half-Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20261014_DSCV_First-Half-Trading-Update.md"
   }
  ],
  "lite": true,

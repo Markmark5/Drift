@@ -1,0 +1,205 @@
+{
+ "ticker": "MIND",
+ "v": "2026-10-19.802b",
+ "ccy": "GBX",
+ "src": "ShareScope weekly snapshots",
+ "adj": [],
+ "px": [
+  [
+   "2026-03-03",
+   13.0
+  ],
+  [
+   "2026-03-06",
+   13.0
+  ],
+  [
+   "2026-03-13",
+   13.0
+  ],
+  [
+   "2026-03-20",
+   12.5
+  ],
+  [
+   "2026-03-27",
+   12.5
+  ],
+  [
+   "2026-04-03",
+   12.5
+  ],
+  [
+   "2026-04-10",
+   12.5
+  ],
+  [
+   "2026-04-17",
+   12.5
+  ],
+  [
+   "2026-04-24",
+   12.5
+  ],
+  [
+   "2026-05-08",
+   12.5
+  ],
+  [
+   "2026-05-15",
+   10.5
+  ],
+  [
+   "2026-05-22",
+   9.5
+  ],
+  [
+   "2026-06-02",
+   9.5
+  ],
+  [
+   "2026-06-05",
+   9.5
+  ],
+  [
+   "2026-06-12",
+   9.5
+  ],
+  [
+   "2026-06-19",
+   9.5
+  ],
+  [
+   "2026-06-26",
+   9.5
+  ],
+  [
+   "2026-07-03",
+   9.5
+  ],
+  [
+   "2026-07-10",
+   9.5
+  ],
+  [
+   "2026-07-17",
+   8.5
+  ],
+  [
+   "2026-07-24",
+   8.5
+  ],
+  [
+   "2026-07-31",
+   8.5
+  ],
+  [
+   "2026-08-07",
+   8.5
+  ],
+  [
+   "2026-08-14",
+   8.5
+  ],
+  [
+   "2026-08-21",
+   8.5
+  ],
+  [
+   "2026-08-28",
+   7.25
+  ],
+  [
+   "2026-09-07",
+   7.125
+  ],
+  [
+   "2026-09-11",
+   7.125
+  ],
+  [
+   "2026-09-18",
+   7.125
+  ],
+  [
+   "2026-09-25",
+   6.375
+  ],
+  [
+   "2026-10-02",
+   6.375
+  ],
+  [
+   "2026-10-09",
+   5.875
+  ],
+  [
+   "2026-10-16",
+   5.875
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2026-04-02",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 1,
+   "q": "A return to profitability: adjusted EBITDA profit of not less than £0.6m (FY25: £1.9m), compared to a first half adjusted EBITDA loss of £1m, reflecting benefit of cost reductions",
+   "file": "20260402_MIND_Year-End-Trading-Update.md"
+  },
+  {
+   "d": "2026-06-25",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -2,
+   "q": "Pipeline growth has improved as Q1 has progressed, although trading remains challenging despite a number of significant contract opportunities that have carried over from FY26",
+   "file": "20260625_MIND_Final-results-for-the-year-ended-31-March-2026.md",
+   "gnote": "discounted: offer period"
+  },
+  {
+   "d": "2026-10-19",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "CUT",
+   "s": -3,
+   "q": "Full year revenues are now expected to be circa £25m with an underlying EBITDA loss in the range of £1.2m to £1.5m.",
+   "file": "20261019_MIND_Half-Year-Trading-Update.md",
+   "gnote": "discounted: offer period"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-19",
+  "doc": "H1 TU",
+  "file": "20261019_MIND_Half-Year-Trading-Update.md",
+  "vs": "H1 TU Oct-25 · FY R Jun-26 · YE-TU Apr-26 · H1 TU Oct-22",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Oct-25: “The Group continues to trade in line with the Board's expectations” → Oct-26: no expectations anchor at all; full-year guide replaced by a loss range",
+    "span": "Board's expectations given at H1 TU Oct-22, Oct-25 and H1 R Dec-25 → first H1 update without it"
+   },
+   {
+    "sev": "amber",
+    "type": "Target dropped",
+    "text": "Jun-26: “current expectations are that by 31 March 2027, the Group will be in a net cash position” → Oct-26: net debt £1.6m, only “retains adequate liquidity”",
+    "span": "FY R Jun-26 → not mentioned"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Membership revenue quantified: “Overall membership revenue is anticipated to be around £2.9m” (Apr-26), “some £3.5m in total” (Jun-26) → Oct-26 membership unquantified; “recurring license revenue is expected to be £2.1m” given instead",
+    "span": "YE-TU Apr-26, FY R Jun-26 → H1 TU Oct-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "“Pipeline generation has remained resilient with £47m of additions in H1 (H1 FY26: £55m)”: pipeline additions down 15%",
+    "span": "H1 TU Oct-26"
+   }
+  ]
+ }
+}

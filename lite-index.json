@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18",
+ "updated": "2026-10-19",
  "note": "Drift-lite charts: 5y weekly price + Text/G marks auto-scored from RNS. Built by chart_lite.py.",
  "tickers": [
   {
@@ -53,6 +53,13 @@
    "marks": 17
   },
   {
+   "ticker": "AEP",
+   "company": "AEP Plantations PLC",
+   "chart": "lite/AEP.json?v=2026-10-19.31c5",
+   "scored": "2026-10-19",
+   "marks": 60
+  },
+  {
    "ticker": "AJB",
    "company": "AJ Bell PLC",
    "chart": "lite/AJB.json?v=2026-10-18.66c9",
@@ -67,6 +74,13 @@
    "marks": 13
   },
   {
+   "ticker": "AOM",
+   "company": "ActiveOps PLC",
+   "chart": "lite/AOM.json?v=2026-10-19.9d46",
+   "scored": "2026-10-19",
+   "marks": 19
+  },
+  {
    "ticker": "APTA",
    "company": "Aptamer Group PLC",
    "chart": "lite/APTA.json?v=2026-10-18.2f17",
@@ -74,11 +88,18 @@
    "marks": 30
   },
   {
+   "ticker": "BKS",
+   "company": "Beeks Financial Cloud Group PLC",
+   "chart": "lite/BKS.json?v=2026-10-19.4829",
+   "scored": "2026-10-19",
+   "marks": 25
+  },
+  {
    "ticker": "BOOM",
    "company": "AudioBoom Group PLC",
-   "chart": "lite/BOOM.json?v=2026-10-18.cd7c",
-   "scored": "2026-10-18",
-   "marks": 25
+   "chart": "lite/BOOM.json?v=2026-10-19.6319",
+   "scored": "2026-10-19",
+   "marks": 36
   },
   {
    "ticker": "BP.",
@@ -109,18 +130,32 @@
    "marks": 36
   },
   {
+   "ticker": "CAV",
+   "company": "Cavendish Financial PLC",
+   "chart": "lite/CAV.json?v=2026-10-19.e50e",
+   "scored": "2026-10-19",
+   "marks": 21
+  },
+  {
    "ticker": "CNS",
    "company": "Corero Network Security plc",
-   "chart": "lite/CNS.json?v=2026-10-18.a036",
-   "scored": "2026-10-18",
-   "marks": 23
+   "chart": "lite/CNS.json?v=2026-10-19.ec03",
+   "scored": "2026-10-19",
+   "marks": 24
+  },
+  {
+   "ticker": "DIAL",
+   "company": "Diales PLC",
+   "chart": "lite/DIAL.json?v=2026-10-19.5b44",
+   "scored": "2026-10-19",
+   "marks": 17
   },
   {
    "ticker": "DSCV",
-   "company": "discoverIE Group PLC",
-   "chart": "lite/DSCV.json?v=2026-10-18.0947",
-   "scored": "2026-10-18",
-   "marks": 26
+   "company": "discoverIE Group plc",
+   "chart": "lite/DSCV.json?v=2026-10-19.6a87",
+   "scored": "2026-10-19",
+   "marks": 30
   },
   {
    "ticker": "EMG",
@@ -139,9 +174,16 @@
   {
    "ticker": "GATC",
    "company": "Gattaca PLC",
-   "chart": "lite/GATC.json?v=2026-10-18.8d6f",
-   "scored": "2026-10-18",
-   "marks": 21
+   "chart": "lite/GATC.json?v=2026-10-19.2ddb",
+   "scored": "2026-10-19",
+   "marks": 22
+  },
+  {
+   "ticker": "GNC",
+   "company": "Greencore Group PLC",
+   "chart": "lite/GNC.json?v=2026-10-19.7345",
+   "scored": "2026-10-19",
+   "marks": 7
   },
   {
    "ticker": "IOF",
@@ -151,11 +193,68 @@
    "marks": 35
   },
   {
+   "ticker": "IPX",
+   "company": "Impax Asset Management Group PLC",
+   "chart": "lite/IPX.json?v=2026-10-19.00bc",
+   "scored": "2026-10-19",
+   "marks": 33
+  },
+  {
+   "ticker": "ITM",
+   "company": "ITM Power PLC",
+   "chart": "lite/ITM.json?v=2026-10-19.ff7f",
+   "scored": "2026-10-19",
+   "marks": 25
+  },
+  {
    "ticker": "JHD",
    "company": "James Halstead PLC",
    "chart": "lite/JHD.json?v=2026-10-18.cd52",
    "scored": "2026-10-18",
    "marks": 24
+  },
+  {
+   "ticker": "KIST",
+   "company": "Kistos Holdings plc",
+   "chart": "lite/KIST.json?v=2026-10-19.0984",
+   "scored": "2026-10-19",
+   "marks": 23
+  },
+  {
+   "ticker": "MARS",
+   "company": "Marston's PLC",
+   "chart": "lite/MARS.json?v=2026-10-19.5308",
+   "scored": "2026-10-19",
+   "marks": 28
+  },
+  {
+   "ticker": "MIND",
+   "company": "MIND Gym PLC",
+   "chart": "lite/MIND.json?v=2026-10-19.802b",
+   "scored": "2026-10-19",
+   "marks": 3,
+   "src": "snapshots"
+  },
+  {
+   "ticker": "MUL",
+   "company": "Mulberry Group PLC",
+   "chart": "lite/MUL.json?v=2026-10-19.993c",
+   "scored": "2026-10-19",
+   "marks": 20
+  },
+  {
+   "ticker": "OXIG",
+   "company": "Oxford Instruments PLC",
+   "chart": "lite/OXIG.json?v=2026-10-19.1528",
+   "scored": "2026-10-19",
+   "marks": 21
+  },
+  {
+   "ticker": "PAGE",
+   "company": "Michael Page plc",
+   "chart": "lite/PAGE.json?v=2026-10-19.4e47",
+   "scored": "2026-10-19",
+   "marks": 31
   },
   {
    "ticker": "PMI",
@@ -170,6 +269,13 @@
    "chart": "lite/PRV.json?v=2026-10-18.def1",
    "scored": "2026-10-18",
    "marks": 23
+  },
+  {
+   "ticker": "RCH",
+   "company": "Reach PLC",
+   "chart": "lite/RCH.json?v=2026-10-19.e369",
+   "scored": "2026-10-19",
+   "marks": 24
   },
   {
    "ticker": "RIO",
@@ -200,6 +306,13 @@
    "marks": 23
   },
   {
+   "ticker": "SQZ",
+   "company": "Serica Energy PLC",
+   "chart": "lite/SQZ.json?v=2026-10-19.dea3",
+   "scored": "2026-10-19",
+   "marks": 35
+  },
+  {
    "ticker": "THG",
    "company": "THG PLC",
    "chart": "lite/THG.json?v=2026-10-18.e113",
@@ -209,16 +322,37 @@
   {
    "ticker": "TPK",
    "company": "Travis Perkins PLC",
-   "chart": "lite/TPK.json?v=2026-10-18.daf0",
-   "scored": "2026-10-18",
-   "marks": 25
+   "chart": "lite/TPK.json?v=2026-10-19.fcf2",
+   "scored": "2026-10-19",
+   "marks": 24
   },
   {
    "ticker": "TPX",
    "company": "TPXimpact Holdings PLC",
-   "chart": "lite/TPX.json?v=2026-10-18.226f",
-   "scored": "2026-10-18",
-   "marks": 20
+   "chart": "lite/TPX.json?v=2026-10-19.8dc0",
+   "scored": "2026-10-19",
+   "marks": 26
+  },
+  {
+   "ticker": "TSTL",
+   "company": "Tristel PLC",
+   "chart": "lite/TSTL.json?v=2026-10-19.2f45",
+   "scored": "2026-10-19",
+   "marks": 19
+  },
+  {
+   "ticker": "VIC",
+   "company": "Victorian Plumbing Group PLC",
+   "chart": "lite/VIC.json?v=2026-10-19.e3a1",
+   "scored": "2026-10-19",
+   "marks": 14
+  },
+  {
+   "ticker": "VLX",
+   "company": "Volex Group PLC",
+   "chart": "lite/VLX.json?v=2026-10-19.548f",
+   "scored": "2026-10-19",
+   "marks": 27
   },
   {
    "ticker": "VTU",
@@ -240,6 +374,13 @@
    "chart": "lite/XPS.json?v=2026-10-18.91da",
    "scored": "2026-10-18",
    "marks": 21
+  },
+  {
+   "ticker": "YOU",
+   "company": "YouGov PLC",
+   "chart": "lite/YOU.json?v=2026-10-19.3e2b",
+   "scored": "2026-10-19",
+   "marks": 15
   }
  ]
 }

@@ -1,6 +1,6 @@
 {
  "ticker": "CNS",
- "v": "2026-10-18.a036",
+ "v": "2026-10-19.ec03",
  "ccy": "GBX",
  "src": "Yahoo CNS.L weekly",
  "adj": [],
@@ -1056,20 +1056,18 @@
    "doc": "YE-TU",
    "fy": "FY21",
    "g": "RAISE",
-   "s": 3,
+   "s": 2,
    "q": "Subject to year-end close and external audit finalisation,  the Board anticipates revenue to be broadly in line with market expectations and EBITDA to be significantly ahead of market expectations for the year and positive.",
-   "file": "20211222_CNS_Pre-close-update-regarding-market-expectations.md",
-   "gnote": "drift §3"
+   "file": "20211222_CNS_Pre-close-update-regarding-market-expectations.md"
   },
   {
    "d": "2022-01-24",
    "doc": "YE-TU",
    "fy": "FY21",
-   "g": "RAISE",
-   "s": 3,
+   "g": "flat",
+   "s": 0,
    "q": "As announced in the Group's pre-close update on 22 December 2021, Corero performed strongly in FY 2021 with revenues expected to be broadly in-line with market expectations at c. $20.9 million (2020: $16.9 million), up 24%, and EBITDA anticipated to be materially ahead of market expectations in an estimated range of $3.8 to $4.2 million (2020: EBITDA loss of $1.4 million).",
-   "file": "20220124_CNS_Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20220124_CNS_Trading-Update.md"
   },
   {
    "d": "2022-04-26",
@@ -1077,9 +1075,8 @@
    "fy": "FY22",
    "g": "flat",
    "s": 0,
-   "q": "The Board is therefore confident in Corero's medium- to long-term growth prospects",
-   "file": "20220426_CNS_Full-year-results.md",
-   "gnote": "drift §3"
+   "q": "To this end, Corero will continue to invest in people, marketing and its solutions in the current financial year to provide an even wider and stronger platform for growth for the future.",
+   "file": "20220426_CNS_Full-year-results.md"
   },
   {
    "d": "2022-07-26",
@@ -1088,8 +1085,7 @@
    "g": "flat",
    "s": 0,
    "q": "I firmly believe these new initiatives will continue to reinforce our customer relationships and further enhance our business pipeline for further growth in 2022 and beyond.",
-   "file": "20220726_CNS_Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20220726_CNS_Trading-Update.md"
   },
   {
    "d": "2022-09-13",
@@ -1097,9 +1093,8 @@
    "fy": "FY22",
    "g": "flat",
    "s": 0,
-   "q": "The Board remains confident in Corero meeting expectations for FY 2022 revenue and EBITDA",
-   "file": "20220913_CNS_Unaudited-H1-2022-Interim-Results.md",
-   "gnote": "drift §3"
+   "q": "Based on our record H1 2022 performance, growth in ARR and order intake and new business pipeline, we remain confident that trading for the FY 2022 to be in-line with market expectations and believe Corero is well-placed for further growth in the medium and long term.",
+   "file": "20220913_CNS_Unaudited-H1-2022-Interim-Results.md"
   },
   {
    "d": "2022-10-25",
@@ -1107,19 +1102,17 @@
    "fy": "FY22",
    "g": "CUT",
    "s": -3,
-   "q": "Notwithstanding the expected growth in order intake, Corero estimates that revenue for the year ending 31 December 2022 is now expected to show growth of between 5% and 10% over the prior year (2021: $20.9 million).",
-   "file": "20221025_CNS_Trading-Update.md",
-   "gnote": "drift §3"
+   "q": "As a result, adjusted EBITDA 2 for the year ending 31 December 2022 is expected to be between $1.0 and $2.0 million (2021: $4.1 million) reflecting the expected growth from the first half and the previously described investments in sales and marketing.",
+   "file": "20221025_CNS_Trading-Update.md"
   },
   {
    "d": "2023-01-17",
    "doc": "YE-TU",
    "fy": "FY22",
-   "g": "flat",
-   "s": -3,
+   "g": "CUT",
+   "s": -2,
    "q": "Notwithstanding the growth in order intake and ARR, revenue for the year ending 31 December 2022 is expected to be approximately $20.1 million (2021: $20.9 million), and therefore below market guidance.",
-   "file": "20230117_CNS_Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20230117_CNS_Trading-Update.md"
   },
   {
    "d": "2023-04-25",
@@ -1127,19 +1120,17 @@
    "fy": "FY23",
    "g": "flat",
    "s": 0,
-   "q": "The Board is confident that with the operational management team in place, our market-leading SmartWall® solutions and SecureWatch® services, the investment in 2022 in sales and marketing initiatives to build a stronger go-to-market organisation and demand generation targeted to our defined Ideal Customer Profile (\"ICP\"), the Company is now well placed to expand its market coverage and increase sales of SmartWall solutions to new customers.",
-   "file": "20230425_CNS_Final-Results.md",
-   "gnote": "drift §3"
+   "q": "The Board remains encouraged by the 2022 increase in new order intake, existing customer expansion and increase in ARR, all achieved against a challenging macro-economic backdrop in the second half of 2022.",
+   "file": "20230425_CNS_Final-Results.md"
   },
   {
    "d": "2023-07-13",
    "doc": "H1 TU",
    "fy": "FY23",
    "g": "flat",
-   "s": -1,
+   "s": 0,
    "q": "The Group has traded strongly across H1 2023, in line with management expectations, with revenues expected to increase 20% to approximately $10.6 million (H1 2022: $8.8 million).",
-   "file": "20230713_CNS_Half-Year-Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20230713_CNS_Half-Year-Trading-Update.md"
   },
   {
    "d": "2023-09-21",
@@ -1148,18 +1139,16 @@
    "g": "flat",
    "s": 0,
    "q": "The Board remains confident in the Company's near-term growth prospects with Corero continuing to trade in line with market expectations",
-   "file": "20230921_CNS_Interim-Results.md",
-   "gnote": "drift §3"
+   "file": "20230921_CNS_Interim-Results.md"
   },
   {
    "d": "2024-01-17",
    "doc": "YE-TU",
    "fy": "FY23",
    "g": "flat",
-   "s": 0,
-   "q": "This strong performance continues to improve earnings visibility for the Company going forward, which, when aligned with the Group's new business pipeline built through 2023, ensures Corero remains well positioned for revenue growth in 2024 and beyond.",
-   "file": "20240117_CNS_Year-End-Trading-Update.md",
-   "gnote": "drift §3"
+   "s": -1,
+   "q": "Subject to audit, revenue for FY 2023 is expected to be approximately $22.3 million, an increase of 11% from the prior year (FY 2022: $20.1 million), whilst adjusted EBITDA3 is expected to be in the range of $1.9 to $2.3 million (FY 2022: $2.6 million).",
+   "file": "20240117_CNS_Year-End-Trading-Update.md"
   },
   {
    "d": "2024-03-27",
@@ -1167,9 +1156,8 @@
    "fy": "FY24",
    "g": "flat",
    "s": 0,
-   "q": "Strong start to 2024 with robust new business pipeline already delivering results in H1 2024",
-   "file": "20240327_CNS_Final-Results.md",
-   "gnote": "drift §3"
+   "q": "With the strong performance in FY 2023 and positive start to 2024, the Board is confident the Company can deliver on its growth prospects by growing Corero's market share and reinforcing its reputation as the go-to DDoS protection solutions provider.",
+   "file": "20240327_CNS_Final-Results.md"
   },
   {
    "d": "2024-07-24",
@@ -1178,8 +1166,7 @@
    "g": "flat",
    "s": 0,
    "q": "The strong financial performance in H1 2024 and record pipeline reaffirms our confidence in achieving our full-year targets.",
-   "file": "20240724_CNS_Half-Year-Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20240724_CNS_Half-Year-Trading-Update.md"
   },
   {
    "d": "2024-09-24",
@@ -1188,8 +1175,7 @@
    "g": "flat",
    "s": 0,
    "q": "With this positive trend, coupled with the continued strong global demand for DDoS mitigation solutions, management remains confident that FY 2024 results will be in line with market expectations and that Corero is well-placed for further growth.",
-   "file": "20240924_CNS_Unaudited-H1-2024-Interim-Results.md",
-   "gnote": "drift §3"
+   "file": "20240924_CNS_Unaudited-H1-2024-Interim-Results.md"
   },
   {
    "d": "2025-01-07",
@@ -1198,8 +1184,7 @@
    "g": "flat",
    "s": -1,
    "q": "Trading across FY 2024 is expected, subject to audit, to be broadly in line with market expectations4, with solid financial progress delivered across the following key performance indicators:",
-   "file": "20250107_CNS_Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20250107_CNS_Trading-Update.md"
   },
   {
    "d": "2025-04-01",
@@ -1207,9 +1192,8 @@
    "fy": "FY25",
    "g": "flat",
    "s": 0,
-   "q": "The Board remains confident in the medium-term trading prospects of the Group",
-   "file": "20250401_CNS_Final-Results.md",
-   "gnote": "drift §3"
+   "q": "Corero has entered FY 2025 in a strong position, well placed to build on a positive FY 2024 and deliver on the Company's near and long-term growth ambitions.",
+   "file": "20250401_CNS_Final-Results.md"
   },
   {
    "d": "2025-07-16",
@@ -1218,8 +1202,7 @@
    "g": "CUT",
    "s": -3,
    "q": "Therefore, management now expects revenue for the year ending 31 December 2025 (\"FY 2025\") to be between $24.0 and $25.5 million (FY 2024: $24.6 million) and EBITDA between $1.5 million loss and $0 million (FY 2024: $2.5 million profit), which is below market expectations4.",
-   "file": "20250716_CNS_Half-Year-Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20250716_CNS_Half-Year-Trading-Update.md"
   },
   {
    "d": "2025-09-16",
@@ -1227,9 +1210,17 @@
    "fy": "FY25",
    "g": "flat",
    "s": 0,
-   "q": "Momentum is building and management is comfortable with the guidance for the year ending 31 December 2025 as announced on 16 July 2025 of revenue between $24.0 million and $25.5 million (FY 2024: $24.6 million) and EBITDA between $1.5 million loss and $0 million (FY 2024: $2.5 million profit)",
-   "file": "20250916_CNS_Unaudited-H1-2025-Interim-Results.md",
-   "gnote": "drift §3"
+   "q": "The guidance for FY 2025, which was revised on 16 July 2025, remains unchanged at revenue between $24.0 and $25.5 million (FY 2024: $24.6 million) and EBITDA between $1.5 million loss and $0 million (FY 2024: $2.5 million profit).",
+   "file": "20250916_CNS_Unaudited-H1-2025-Interim-Results.md"
+  },
+  {
+   "d": "2025-11-05",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Management reaffirms the guidance for the year ending 31 December 2025 as announced on 16 July 2025 of revenue between $24.0 million and $25.5 million (FY 2024: $24.6 million) and EBITDA between $1.5 million loss and $0 million (FY 2024: $2.5 million profit).",
+   "file": "20251105_CNS_Key-Customer-Renewal-and-H2-2025-Sales-Momentum.md"
   },
   {
    "d": "2026-01-12",
@@ -1238,8 +1229,7 @@
    "g": "RAISE",
    "s": 2,
    "q": "The Company, subject to audit, expects to report revenue at the upper end of guidance2 and EBITDA ahead of guidance for FY 2025.",
-   "file": "20260112_CNS_Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20260112_CNS_Trading-Update.md"
   },
   {
    "d": "2026-03-24",
@@ -1248,8 +1238,7 @@
    "g": "flat",
    "s": 0,
    "q": "Following a strong second half in 2025, supported by a robust pipeline, sustained growth in the DDoS threat landscape and market demand, the Board remains confident in the prospects of the Group to deliver ongoing progress, notwithstanding ongoing global economic uncertainty.",
-   "file": "20260324_CNS_Final-Results.md",
-   "gnote": "drift §3"
+   "file": "20260324_CNS_Final-Results.md"
   },
   {
    "d": "2026-08-06",
@@ -1258,8 +1247,7 @@
    "g": "flat",
    "s": 0,
    "q": "Corero remains well positioned to build on this strong first-half performance, and we are confident in delivering continued growth in H2.",
-   "file": "20260806_CNS_Half-Year-Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20260806_CNS_Half-Year-Trading-Update.md"
   },
   {
    "d": "2026-09-09",
@@ -1268,18 +1256,16 @@
    "g": "RAISE",
    "s": 3,
    "q": "Looking ahead to the remainder of the current financial year, based on a strong start to H2 2026, recent customer wins and an improving pipeline, management now expects Corero to exceed market expectations for revenue and significantly exceed market expectations for EBITDA for FY 2026.",
-   "file": "20260909_CNS_Unaudited-H1-2026-Interim-Results.md",
-   "gnote": "drift §3"
+   "file": "20260909_CNS_Unaudited-H1-2026-Interim-Results.md"
   },
   {
    "d": "2026-10-14",
    "doc": "Q3 TU",
    "fy": "FY26",
    "g": "flat",
-   "s": 1,
+   "s": 0,
    "q": "We are confident in our ability to turn this momentum into sustained growth and long-term value for shareholders.",
-   "file": "20261014_CNS_Q3-2026-Commercial-Update.md",
-   "gnote": "drift §3"
+   "file": "20261014_CNS_Q3-2026-Commercial-Update.md"
   }
  ],
  "lite": true,

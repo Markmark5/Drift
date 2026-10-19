@@ -1,6 +1,6 @@
 {
  "ticker": "TPK",
- "v": "2026-10-18.daf0",
+ "v": "2026-10-19.fcf2",
  "ccy": "GBX",
  "src": "AlphaVantage TPK.LON weekly",
  "adj": [],
@@ -1065,19 +1065,17 @@
    "fy": "FY21",
    "g": "RAISE",
    "s": 2,
-   "q": "the Board now expects that adjusted operating profit for the full year 2021 will be ahead of current market expectations* and will be at least £340m (inclusive of around £40m of property profits)",
-   "file": "20211028_TPK_Travis-Perkins-plc---Q3-2021-trading-update.md",
-   "gnote": "drift §3"
+   "q": "Given robust underlying performance, the Board now expects that adjusted operating profit for the full year 2021 will be ahead of current market expectations* and will be at least £340m (inclusive of around £40m of property profits)",
+   "file": "20211028_TPK_Travis-Perkins-plc---Q3-2021-trading-update.md"
   },
   {
    "d": "2022-03-01",
    "doc": "FY R",
    "fy": "FY22",
    "g": "flat",
-   "s": 1,
+   "s": 0,
    "q": "Given robust end market demand and a positive start to the new year, the Group remains confident of making further progress in 2022.",
-   "file": "20220301_TPK_Travis-Perkins-plc---Full-year-results-for-the....md",
-   "gnote": "drift §3"
+   "file": "20220301_TPK_Travis-Perkins-plc---Full-year-results-for-the....md"
   },
   {
    "d": "2022-04-29",
@@ -1086,28 +1084,25 @@
    "g": "flat",
    "s": -1,
    "q": "Given the Group's resilient end markets and trade focused business model, Management's expectations for the full year remain unchanged.",
-   "file": "20220429_TPK_Q1-2022-Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20220429_TPK_Q1-2022-Trading-Update.md"
   },
   {
    "d": "2022-08-02",
    "doc": "H1 R",
    "fy": "FY22",
    "g": "flat",
-   "s": -1,
+   "s": -2,
    "q": "As a result, the Group overall is expected to deliver a full year performance broadly in line with market expectations.",
-   "file": "20220802_TPK_Travis-Perkins-plc---Half-year-results-for-the-....md",
-   "gnote": "drift §3"
+   "file": "20220802_TPK_Travis-Perkins-plc---Half-year-results-for-the-....md"
   },
   {
    "d": "2022-10-20",
    "doc": "Q3 TU",
    "fy": "FY22",
    "g": "flat",
-   "s": -1,
-   "q": "Whilst forward visibility is limited, reflecting the uncertain macroeconomic situation, the Group expects to build on the current resilient performance and deliver a full year operating profit around the middle of the current range of market expectations",
-   "file": "20221020_TPK_Travis-Perkins-plc-Q3-2022-trading-update.md",
-   "gnote": "drift §3"
+   "s": 0,
+   "q": "Whilst forward visibility is limited, reflecting the uncertain macroeconomic situation, the Group expects to build on the current resilient performance and deliver a full year operating profit around the middle of the current range of market expectations**.",
+   "file": "20221020_TPK_Travis-Perkins-plc-Q3-2022-trading-update.md"
   },
   {
    "d": "2023-02-28",
@@ -1116,8 +1111,7 @@
    "g": "flat",
    "s": 0,
    "q": "Whilst the expected market dynamics point to a challenging year ahead, Management continues to anticipate delivering a performance in line with market expectations.",
-   "file": "20230228_TPK_Travis-Perkins-plc-Full-year-results-for-the-y....md",
-   "gnote": "drift §3"
+   "file": "20230228_TPK_Travis-Perkins-plc-Full-year-results-for-the-y....md"
   },
   {
    "d": "2023-04-25",
@@ -1126,8 +1120,7 @@
    "g": "flat",
    "s": 0,
    "q": "The timely actions taken to prepare our businesses for a lower demand environment mean that we continue to expect to deliver a full year performance in line with market expectations",
-   "file": "20230425_TPK_Travis-Perkins-plc---first-quarter-trading-upda....md",
-   "gnote": "drift §3"
+   "file": "20230425_TPK_Travis-Perkins-plc---first-quarter-trading-upda....md"
   },
   {
    "d": "2023-06-16",
@@ -1136,28 +1129,16 @@
    "g": "CUT",
    "s": -3,
    "q": "Assuming that the present conditions persist for the balance of the year, Management now expects to deliver a full year adjusted operating profit of around £240m.",
-   "file": "20230616_TPK_Travis-Perkins-plc---trading-update.md",
-   "gnote": "drift §3"
+   "file": "20230616_TPK_Travis-Perkins-plc---trading-update.md"
   },
   {
    "d": "2023-08-01",
    "doc": "H1 R",
    "fy": "FY23",
    "g": "flat",
-   "s": -1,
-   "q": "As previously guided, the Group expects to deliver a full year adjusted operating profit of around £240m.",
-   "file": "20230801_TPK_Travis-Perkins-Half-year-results-for-the-six....md",
-   "gnote": "drift §3"
-  },
-  {
-   "d": "2023-09-28",
-   "doc": "OPS",
-   "fy": "FY27",
-   "g": "flat",
    "s": 0,
-   "q": "The event will set out the pathway for the Toolstation UK business to deliver £1bn of revenue at a high single digit operating margin by 2027",
-   "file": "20230928_TPK_Travis-Perkins-plc-Investor-Update---Toolstat....md",
-   "gnote": "drift §3"
+   "q": "As previously guided, the Group expects to deliver a full year adjusted operating profit of around £240m.",
+   "file": "20230801_TPK_Travis-Perkins-Half-year-results-for-the-six....md"
   },
   {
    "d": "2023-10-11",
@@ -1166,18 +1147,16 @@
    "g": "CUT",
    "s": -3,
    "q": "With commodity deflation expected to continue and the exit rate from the third quarter indicating further challenging conditions for the balance of the year, the Group now expects to deliver an adjusted operating profit in the range of £175m to £195m for the full year.",
-   "file": "20231011_TPK_Travis-Perkins-Q3-trading-update.md",
-   "gnote": "drift §3"
+   "file": "20231011_TPK_Travis-Perkins-Q3-trading-update.md"
   },
   {
    "d": "2024-01-18",
    "doc": "YE-TU",
    "fy": "FY23",
-   "g": "flat",
-   "s": 0,
+   "g": "CUT",
+   "s": -1,
    "q": "Accordingly, the Group expects to deliver an FY23 adjusted operating profit of around £180m, in line with its previous guidance.",
-   "file": "20240118_TPK_Travis-Perkins-plc---post-close-trading-updat....md",
-   "gnote": "drift §3"
+   "file": "20240118_TPK_Travis-Perkins-plc---post-close-trading-updat....md"
   },
   {
    "d": "2024-03-05",
@@ -1186,58 +1165,52 @@
    "g": "flat",
    "s": -2,
    "q": "Accordingly, management's best estimate at this stage is that FY24 adjusted operating profit will be in the range of £160m to £180m, inclusive of around £10m of property profits and around £(20)m of losses in Toolstation France.",
-   "file": "20240305_TPK_Travis-Perkinsplc-Full-year-results-for-the-....md",
-   "gnote": "drift §3"
+   "file": "20240305_TPK_Travis-Perkinsplc-Full-year-results-for-the-....md"
   },
   {
    "d": "2024-04-25",
    "doc": "Q1 TU",
    "fy": "FY24",
    "g": "flat",
-   "s": 0,
-   "q": "Pricing has largely stabilised but remains lower than prior year, primarily due to the rollover impact of timber deflation, with this trend expected to continue through the first half of the year.",
-   "file": "20240425_TPK_Travis-Perkins-plc---first-quarter-trading-up....md",
-   "gnote": "drift §3"
+   "s": -1,
+   "q": "As anticipated, trading remained challenging as macroeconomic uncertainty continues to impact demand across the construction sector.",
+   "file": "20240425_TPK_Travis-Perkins-plc---first-quarter-trading-up....md"
   },
   {
    "d": "2024-08-06",
    "doc": "H1 R",
    "fy": "FY24",
    "g": "CUT",
-   "s": -3,
+   "s": -2,
    "q": "Given this backdrop, the Group is expecting a similar level of demand in the second half of the year and accordingly expects FY24 adjusted operating profit will be around £150m, inclusive of £5-10m of property profits and around £(16)m of losses in Toolstation France.",
-   "file": "20240806_TPK_Travis-Perkins-plc-half-year-results-for-th....md",
-   "gnote": "drift §3"
+   "file": "20240806_TPK_Travis-Perkins-plc-half-year-results-for-th....md"
   },
   {
    "d": "2024-10-24",
    "doc": "Q3 TU",
    "fy": "FY24",
    "g": "CUT",
-   "s": -3,
+   "s": -2,
    "q": "Given the shortfall in the Merchanting segment, the Board now expects FY24 adjusted operating profit to be around £135m.",
-   "file": "20241024_TPK_Travis-Perkins-plc---Q3-trading-update-for-th....md",
-   "gnote": "drift §3"
+   "file": "20241024_TPK_Travis-Perkins-plc---Q3-trading-update-for-th....md"
   },
   {
    "d": "2025-03-14",
    "doc": "YE-TU",
    "fy": "FY24",
    "g": "flat",
-   "s": -1,
+   "s": 0,
    "q": "The Board confirms that it expects adjusted operating profit for the year ended 31 December 2024 to be in line with guidance provided at the Group's Q3 trading update on 24 October 2024.",
-   "file": "20250314_TPK_Travis-Perkins-plc---delay-to-the-publication....md",
-   "gnote": "drift §3"
+   "file": "20250314_TPK_Travis-Perkins-plc---delay-to-the-publication....md"
   },
   {
    "d": "2025-04-01",
    "doc": "FY R",
    "fy": "FY25",
-   "g": "flat",
-   "s": -1,
+   "g": "CUT",
+   "s": -2,
    "q": "In recognition of this backdrop and the operational turnaround challenges the Group currently faces, the Board expects FY25 adjusted operating profit excluding property profits to be broadly in line with FY24 (excluding property profits).",
-   "file": "20250401_TPK_Travis-Perkins-plc---full-year-results-for-th....md",
-   "gnote": "drift §3"
+   "file": "20250401_TPK_Travis-Perkins-plc---full-year-results-for-th....md"
   },
   {
    "d": "2025-04-29",
@@ -1245,9 +1218,8 @@
    "fy": "FY25",
    "g": "flat",
    "s": 0,
-   "q": "In the Merchanting segment revenue was down (3.2)% on a like-for-like basis with pricing having stabilised and volumes declining modestly.",
-   "file": "20250429_TPK_Travis-Perkins-first-quarter-trading-update-....md",
-   "gnote": "drift §3"
+   "q": "Trading remained challenging in the first quarter with Group revenue down (2.1)% on a like-for-like basis.",
+   "file": "20250429_TPK_Travis-Perkins-first-quarter-trading-update-....md"
   },
   {
    "d": "2025-08-05",
@@ -1255,9 +1227,8 @@
    "fy": "FY25",
    "g": "flat",
    "s": -1,
-   "q": "Given this demand backdrop, the Group expects to deliver a full year adjusted operating profit (including £8m of property profits) broadly in line with current market expectations",
-   "file": "20250805_TPK_Half-year-Report.md",
-   "gnote": "drift §3"
+   "q": "Given this demand backdrop, the Group expects to deliver a full year adjusted operating profit (including £8m of property profits) broadly in line with current market expectations*",
+   "file": "20250805_TPK_Half-year-Report.md"
   },
   {
    "d": "2025-10-16",
@@ -1266,18 +1237,17 @@
    "g": "flat",
    "s": -2,
    "q": "In what remains a highly competitive market, we have invested in pricing and targeted promotions and will continue to do so in the near-term.",
-   "file": "20251016_TPK_Q3-trading-update.md",
-   "gnote": "drift §3"
+   "file": "20251016_TPK_Q3-trading-update.md"
   },
   {
    "d": "2026-03-17",
    "doc": "FY R",
    "fy": "FY26",
    "g": "CUT",
-   "s": -2,
+   "s": -3,
    "q": "The trading environment since the start of the year has remained subdued and this reflects a continuation of the weak UK construction activity figures reported for the final quarter of 2025.",
    "file": "20260317_TPK_Travis-Perkins-plc---2025-Results-Announcement.md",
-   "gnote": "withdrawn; drift §3"
+   "gnote": "withdrawn"
   },
   {
    "d": "2026-04-28",
@@ -1285,27 +1255,26 @@
    "fy": "FY26",
    "g": "flat",
    "s": 0,
-   "q": "Looking forward the Group remains focused on managing its overheads and identifying further operational efficiencies, whilst ongoing capital discipline and incremental cash generation opportunities are continuing to enhance the Group's financial position.",
-   "file": "20260428_TPK_Travis-Perkins-first-quarter-trading-update.md",
-   "gnote": "drift §3"
+   "q": "The Group has continued to experience challenging trading conditions in the first quarter with Group revenue down (1.7)% on a like-for-like basis.",
+   "file": "20260428_TPK_Travis-Perkins-first-quarter-trading-update.md"
   },
   {
    "d": "2026-08-04",
    "doc": "H1 R",
    "fy": "FY26",
    "g": "flat",
-   "s": -1,
-   "q": "The Group expects market conditions in the second half to be comparable to the first and as such expects a similar trading performance.",
+   "s": 1,
+   "q": "The Group is seeing encouraging early progress in its operational turnaround.",
    "file": "20260804_TPK_2026-Half-Year-Results.md",
-   "gnote": "drift §3"
+   "gnote": "early signal: first step up in tone"
   },
   {
    "d": "2026-10-15",
    "doc": "Q3 TU",
    "fy": "FY26",
    "g": "flat",
-   "s": -1,
-   "q": "In challenging market conditions we remain focused on what we can control. Our ongoing cost discipline and trading approach are protecting profitability whilst we continue to identify and implement further operational efficiencies.",
+   "s": 0,
+   "q": "The Group’s overall performance in the third quarter continued in line with the first half year, with revenue in the quarter declining by 1.6%.",
    "file": "20261015_TPK_Travis-Perkins-third-quarter-trading-update.md"
   }
  ],

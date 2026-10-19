@@ -1,6 +1,6 @@
 {
  "ticker": "BOOM",
- "v": "2026-10-18.cd7c",
+ "v": "2026-10-19.6319",
  "ccy": "GBX",
  "src": "Yahoo BOOM.L weekly",
  "adj": [],
@@ -1052,34 +1052,85 @@
  ],
  "marks": [
   {
+   "d": "2021-12-16",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Audioboom (AIM: BOOM), the leading global podcast company, is pleased to announce that it has continued its strong momentum into the fourth quarter of 2021 and the Board now expects that Audioboom will generate significantly increased adjusted EBITDA(1), and marginally improved revenue, ahead of current market expectations for the year.",
+   "file": "20211216_BOOM_Trading-Update.md"
+  },
+  {
+   "d": "2022-01-10",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "flat",
+   "s": 2,
+   "q": "The Board is delighted to report this strong performance for the year to 31 December 2021 with the Company exceeding market expectations once again.",
+   "file": "20220110_BOOM_Trading-Update-and-Notice-of-Investor-Presentation.md"
+  },
+  {
+   "d": "2022-04-11",
+   "doc": "Q1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "KPIs remained strong in a quarter which is traditionally quieter for ad spend, while the continued strong growth in global downloads gives us further confidence in the continued trajectory, both of the industry and our place within it.",
+   "file": "20220411_BOOM_Trading-Update.md"
+  },
+  {
+   "d": "2022-04-25",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "2022 is set to be another successful year for Audioboom with continued revenue expansion and growth in profitability.",
+   "file": "20220425_BOOM_Final-Results.md"
+  },
+  {
+   "d": "2022-05-24",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "We have continued to see high advertiser demand, with booked revenue of US$66 million giving us good confidence for the year ahead.",
+   "file": "20220524_BOOM_Trading-Update.md"
+  },
+  {
    "d": "2022-07-18",
    "doc": "H1 R",
    "fy": "FY22",
    "g": "flat",
-   "s": 0,
+   "s": -2,
    "q": "We do expect the advertising market to be further tested by the economic downturn and we are seeing a softening in advertiser demand for Q3 2022 as lower consumer spending impacts the confidence of brands in the space.",
-   "file": "20220718_BOOM_Half-year-Report.md",
-   "gnote": "drift §3"
+   "file": "20220718_BOOM_Half-year-Report.md"
   },
   {
    "d": "2022-10-17",
    "doc": "Q3 TU",
    "fy": "FY22",
    "g": "flat",
-   "s": 0,
+   "s": -1,
    "q": "Quarterly revenue of US$16.2 million (Q3 2021: US$16.9 million) as global economic headwinds impacted advertising demand - however, a recovery is already underway with August and September up on the July low-point and further improvements forecast throughout Q4 with management expecting a positive end to the year",
-   "file": "20221017_BOOM_Q3-Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20221017_BOOM_Q3-Trading-Update.md"
+  },
+  {
+   "d": "2023-01-23",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "CUT",
+   "s": -2,
+   "q": "The challenging economic conditions in which Audioboom operated during 2022 prevented even stronger financial growth in line with our initial expectations.",
+   "file": "20230123_BOOM_Trading-Update.md"
   },
   {
    "d": "2023-03-23",
    "doc": "FY R",
    "fy": "FY23",
    "g": "flat",
-   "s": 1,
-   "q": "Reflecting the Company's strong performance in recent periods and forecasted future growth, it is the Board's current intention to introduce a progressive dividend policy with a maiden dividend in respect of the current financial year of at least 8 pence share being declared and paid in 2024",
-   "file": "20230323_BOOM_Final-Results.md",
-   "gnote": "drift §3"
+   "s": -1,
+   "q": "We are still operating in a weakened advertising market, but expect it to recover as the year develops.",
+   "file": "20230323_BOOM_Final-Results.md"
   },
   {
    "d": "2023-04-19",
@@ -1088,68 +1139,71 @@
    "g": "flat",
    "s": 0,
    "q": "We continue to expect to deliver year-on-year growth for the full year as well as continuing to outperform the wider market, and we see strong signs that the ad market is returning.",
-   "file": "20230419_BOOM_Q1-Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20230419_BOOM_Q1-Trading-Update.md"
   },
   {
    "d": "2023-06-23",
    "doc": "H1 TU",
    "fy": "FY23",
    "g": "CUT",
-   "s": -2,
+   "s": -3,
    "q": "Whilst we believe the advertising markets will improve - with the Company being in prime position to take advantage when they do - the Company expects the revenue and adjusted EBITDA for the current financial year to be lower than previously anticipated",
-   "file": "20230623_BOOM_Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20230623_BOOM_Trading-Update.md"
   },
   {
    "d": "2023-07-19",
    "doc": "H1 R",
    "fy": "FY23",
    "g": "flat",
-   "s": -2,
-   "q": "Taking into consideration the expected performance of the current financial year, it is the Board's intention to review the progressive dividend policy for the 2024 financial year and onwards",
-   "file": "20230719_BOOM_Half-Year-Report.md",
-   "gnote": "drift §3"
+   "s": -1,
+   "q": "As such, while H1 2023 performance is down in comparison with H1 2022, we expect to return to year-on-year growth for H2 2023 where market conditions are more closely aligned with the previous year.",
+   "file": "20230719_BOOM_Half-Year-Report.md"
   },
   {
    "d": "2023-10-16",
    "doc": "Q3 TU",
-   "fy": "FY24",
+   "fy": "FY23",
    "g": "flat",
-   "s": 0,
-   "q": "The Company anticipates record revenue in 2024, with operational improvements (including the significant reduction in minimum guarantee obligations) delivering a return to strong adjusted EBITDA positivity",
+   "s": 1,
+   "q": "Strong start to Q4 2023 with anticipated revenue of at least US$19 million, the Company's highest revenue quarter since Q2 2022 and representing a return to year-on-year growth on a quarterly basis (Q4 2022: US$18.3m)",
    "file": "20231016_BOOM_Q3-Trading-Update.md",
-   "gnote": "drift §3"
+   "gnote": "early signal: first step up in tone"
   },
   {
    "d": "2024-01-15",
    "doc": "YE-TU",
    "fy": "FY24",
    "g": "flat",
-   "s": 1,
+   "s": 0,
    "q": "The Company anticipates record revenue in 2024, with operational improvements (including the significant reduction in minimum guarantee obligations) and a return to adjusted EBITDA profitability",
-   "file": "20240115_BOOM_2023-Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20240115_BOOM_2023-Trading-Update.md"
   },
   {
    "d": "2024-04-15",
    "doc": "FY R",
    "fy": "FY24",
    "g": "flat",
-   "s": 1,
+   "s": 0,
+   "q": "The Company anticipates record revenue in 2024 and a return to adjusted EBITDA profitability",
+   "file": "20240415_BOOM_Final-Results.md"
+  },
+  {
+   "d": "2024-04-15",
+   "doc": "Q1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
    "q": "The Company is confident it will achieve its revenue and adjusted EBITDA goals for 2024, and has made significant progress with contracted revenue of more than US$55 million for the year through advanced advertising bookings - more than US$8 million added since the January 2024 Trading Update",
-   "file": "20240415_BOOM_Q1-Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20240415_BOOM_Q1-Trading-Update.md"
   },
   {
    "d": "2024-07-23",
    "doc": "H1 R",
    "fy": "FY24",
    "g": "flat",
-   "s": 1,
-   "q": "Our revenue growth for H1 is in line with the Interactive Advertising Bureau's Podcast Revenue Study forecasts for the industry, and we do expect our growth rate to substantially improve across the second half of the year",
-   "file": "20240723_BOOM_Half-year-Report.md",
-   "gnote": "drift §3"
+   "s": -2,
+   "q": "Although the Apple change will continue to limit our performance upside, we do expect our growth rate to significantly accelerate in Q3 2024 and beyond.",
+   "file": "20240723_BOOM_Half-year-Report.md"
   },
   {
    "d": "2024-09-10",
@@ -1159,17 +1213,16 @@
    "s": 1,
    "q": "Ahead of the full third quarter trading update scheduled for 15 October 2024, Audioboom (AIM: BOOM), the leading global podcast company, is pleased to provide this flash view of the Group's excellent performance in August 2024, with monthly revenue expected to continue to grow in the remaining months of the year.",
    "file": "20240910_BOOM_Flash-August-Trading-Update.md",
-   "gnote": "drift §3"
+   "gnote": "early signal: first step up in tone"
   },
   {
    "d": "2024-10-15",
    "doc": "Q3 TU",
    "fy": "FY24",
    "g": "RAISE",
-   "s": 2,
-   "q": "Full year adjusted EBITDA expectations raised to US$2.5 million (up from US$1.3 million previously)",
-   "file": "20241015_BOOM_Q3-Trading-Update.md",
-   "gnote": "drift §3"
+   "s": 3,
+   "q": "With our seasonally strongest quarter ahead, we are set to significantly outperform market expectations for adjusted EBITDA.",
+   "file": "20241015_BOOM_Q3-Trading-Update.md"
   },
   {
    "d": "2024-11-15",
@@ -1177,129 +1230,152 @@
    "fy": "FY24",
    "g": "RAISE",
    "s": 2,
-   "q": "the Board now expects that Audioboom will generate an increased adjusted EBITDA(1) profit of US$2.8 million, even further ahead of the recently upgraded market expectation of US$2.5 million.",
-   "file": "20241115_BOOM_Trading-Update.md",
-   "gnote": "drift §3"
+   "q": "Audioboom (AIM: BOOM), the leading global podcast company, is pleased to announce that it has continued its strong momentum into the fourth quarter of 2024 and the Board now expects that Audioboom will generate an increased adjusted EBITDA(1) profit of US$2.8 million, even further ahead of the recently upgraded market expectation of US$2.5 million.",
+   "file": "20241115_BOOM_Trading-Update.md"
   },
   {
    "d": "2024-12-11",
    "doc": "YE-TU",
    "fy": "FY24",
    "g": "RAISE",
-   "s": 3,
-   "q": "the Board now expects that Audioboom will generate an increased adjusted EBITDA(1) profit of at least US$3.1 million, significantly surpassing the recently upgraded market expectation of US$2.8 million.",
-   "file": "20241211_BOOM_Trading-Update.md",
-   "gnote": "drift §3"
+   "s": 2,
+   "q": "Audioboom (AIM: BOOM), the leading global podcast company, is pleased to announce that it has continued its strong momentum during the fourth quarter of 2024 and the Board now expects that Audioboom will generate an increased adjusted EBITDA(1) profit of at least US$3.1 million, significantly surpassing the recently upgraded market expectation of US$2.8 million.",
+   "file": "20241211_BOOM_Trading-Update.md"
   },
   {
    "d": "2025-01-15",
    "doc": "YE-TU",
    "fy": "FY24",
-   "g": "flat",
+   "g": "RAISE",
    "s": 2,
    "q": "Annual adjusted EBITDA(2) profit of approximately US$3.4 million, up US$3.8 million on 2023 (adjusted EBITDA loss US$0.4 million) and significantly ahead of the thrice upgraded 2024 market expectations",
-   "file": "20250115_BOOM_2024-Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20250115_BOOM_2024-Trading-Update.md"
   },
   {
    "d": "2025-04-09",
    "doc": "FY R",
    "fy": "FY25",
    "g": "flat",
-   "s": 1,
+   "s": 0,
+   "q": "The Company anticipates record revenues and adjusted EBITDA profitability in 2025",
+   "file": "20250409_BOOM_Final-Results.md"
+  },
+  {
+   "d": "2025-04-09",
+   "doc": "Q1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
    "q": "The Company is confident it will at least meet its revenue and adjusted EBITDA profit goals for 2025, and has made significant progress with contracted revenue of more than US$63 million for the year through advanced advertising bookings - more than US$9 million added since the January 2025 Trading Update and US$8 million more than at the same point last year",
-   "file": "20250409_BOOM_Q1-Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20250409_BOOM_Q1-Trading-Update.md"
   },
   {
    "d": "2025-07-08",
    "doc": "H1 TU",
    "fy": "FY25",
    "g": "flat",
-   "s": 1,
+   "s": 0,
    "q": "The advertising market remains stable despite global economic uncertainties, and with our highest demand season on the horizon I am excited about delivering Audioboom's strongest ever year.",
-   "file": "20250708_BOOM_Q2-Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20250708_BOOM_Q2-Trading-Update.md"
   },
   {
    "d": "2025-07-16",
    "doc": "H1 R",
    "fy": "FY25",
    "g": "flat",
-   "s": 1,
-   "q": "We have more than US$70 million of booked revenue for 2025 and, despite macro-economic uncertainties during the first half of the year, the podcast advertising market is stable.",
-   "file": "20250716_BOOM_Half-year-Report.md",
-   "gnote": "drift §3"
+   "s": 0,
+   "q": "With the expansion of our work in video and the ever-increasing capabilities of Showcase we are excited about the rest of 2025 and delivering our record year.",
+   "file": "20250716_BOOM_Half-year-Report.md"
+  },
+  {
+   "d": "2025-07-16",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "On a standalone basis the Company remains confident in delivering market expectations for revenue of $80.0 million and adjusted EBITDA of $4.5 million in 2025 with revenue and adjusted EBITDA seasonally weighted into H2",
+   "file": "20250716_BOOM_Proposed-Acquisition-and-£3.0-million-Placing.md"
   },
   {
    "d": "2025-10-15",
    "doc": "Q3 TU",
    "fy": "FY25",
    "g": "flat",
-   "s": 2,
+   "s": 0,
    "q": "With more than US$79.0 million of advertising revenue already booked for 2025, we are set to end the year strongly with our expanded network in high demand from advertisers.",
-   "file": "20251015_BOOM_Q3-Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20251015_BOOM_Q3-Trading-Update.md"
   },
   {
    "d": "2025-12-12",
    "doc": "YE-TU",
    "fy": "FY25",
    "g": "flat",
-   "s": 2,
-   "q": "November represented our best ever month in our seasonally strongest quarter of the year, demonstrating both the capability of our operating model and the value of the automation embedded across the business.",
-   "file": "20251212_BOOM_Flash-November-Trading-Update.md",
-   "gnote": "drift §3"
+   "s": 0,
+   "q": "Ahead of the 2025 full year trading update scheduled for January 2026, Audioboom (AIM: BOOM), the leading global podcast company, is pleased to provide this flash view of the Group's excellent performance in November 2025.",
+   "file": "20251212_BOOM_Flash-November-Trading-Update.md"
   },
   {
    "d": "2026-01-15",
    "doc": "YE-TU",
    "fy": "FY25",
-   "g": "flat",
+   "g": "RAISE",
    "s": 2,
-   "q": "Our financial performance in 2025 was very pleasing, with record revenue and adjusted EBITDA ahead of market expectations for the year.",
-   "file": "20260115_BOOM_2025-Trading-Update.md",
-   "gnote": "drift §3"
+   "q": "Annual adjusted EBITDA(2) profit of approximately US$5.1 million, up 54% on 2024 (US$3.4 million) and ahead of 2025 market expectations",
+   "file": "20260115_BOOM_2025-Trading-Update.md"
   },
   {
    "d": "2026-04-16",
    "doc": "FY R",
    "fy": "FY26",
    "g": "flat",
-   "s": 2,
-   "q": "2026 is off to a flying start for Audioboom with new major podcast signings, the launch of commercial partnerships in video, and excellent financial performance by all metrics.",
-   "file": "20260416_BOOM_Q1-Trading-Update.md",
-   "gnote": "drift §3"
+   "s": 0,
+   "q": "2026 is set to be another record year for Audioboom, and - as highlighted in our Q1 2026 Trading Update released today - we have made a positive start, delivering 118% adjusted EBITDA growth (US$1.5 million vs. Q1 2025: US$0.6 million) and 30% revenue growth (US$22.5 million vs. Q1 2025: US$17.3 million).",
+   "file": "20260416_BOOM_Final-Results.md"
+  },
+  {
+   "d": "2026-04-16",
+   "doc": "Q1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Q1 adjusted EBITDA(1) profit of US$1.4 million, up 118% on Q1 2025 (US$0.6 million), highlighting the continued strong performance of the business model and representing an adjusted EBITDA margin of 6.2% (Q1 2025: 3.7%)",
+   "file": "20260416_BOOM_Q1-Trading-Update.md"
+  },
+  {
+   "d": "2026-04-16",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "2026 is set to be another record year for Audioboom, and - as highlighted in our Q1 2026 Trading Update released today - we have made a positive start, delivering 118% adjusted EBITDA growth (US$1.4 million vs. Q1 2025: US$0.6 million) and 30% revenue growth (US$22.5 million vs. Q1 2025: US$17.3 million).",
+   "file": "20260416_BOOM_Replacement-Final-Results.md"
   },
   {
    "d": "2026-06-08",
    "doc": "H1 TU",
    "fy": "FY26",
-   "g": "RAISE",
+   "g": "flat",
    "s": 2,
    "q": "The Board is pleased to report that the strong start to 2026 shown in the Q1 Trading Update has continued into Q2 and that Audioboom expects to announce record results for the six month period to 30 June, with revenue increasing to a minimum of US$45.0 million (H1 2025: US$35.1m) and adjusted EBITDA profit increasing to a minimum of US$3.0 million (H1 2025: US$1.8m).",
-   "file": "20260608_BOOM_Trading-Update-and-Conclusion-of-Strategic-Review.md",
-   "gnote": "drift §3"
+   "file": "20260608_BOOM_Trading-Update-and-Conclusion-of-Strategic-Review.md"
   },
   {
    "d": "2026-07-15",
    "doc": "H1 R",
    "fy": "FY26",
    "g": "flat",
-   "s": 2,
+   "s": 0,
    "q": "Today Audioboom has more than US$81.0 million of revenue booked for 2026 - this is more than total 2025 revenue (US$80.4 million) and so, with almost half the year remaining, we are very well set to deliver significant growth.",
-   "file": "20260715_BOOM_Half-Year-Report.md",
-   "gnote": "drift §3"
+   "file": "20260715_BOOM_Half-Year-Report.md"
   },
   {
    "d": "2026-10-14",
    "doc": "Q3 TU",
    "fy": "FY26",
    "g": "RAISE",
-   "s": 3,
+   "s": 2,
    "q": "Our outstanding performance in the first nine months of the year has positioned us to out-perform current market expectations, with Audioboom now expecting to deliver an increased adjusted EBITDA profit for 2026 of at least US$7.7 million.",
-   "file": "20261014_BOOM_Q3-Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20261014_BOOM_Q3-Trading-Update.md"
   }
  ],
  "lite": true,

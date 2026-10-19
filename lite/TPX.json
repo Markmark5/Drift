@@ -1,6 +1,6 @@
 {
  "ticker": "TPX",
- "v": "2026-10-18.226f",
+ "v": "2026-10-19.8dc0",
  "ccy": "GBX",
  "src": "Yahoo TPX.L weekly",
  "adj": [],
@@ -1052,24 +1052,40 @@
  ],
  "marks": [
   {
+   "d": "2021-12-01",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 0,
+   "q": "Combined with the £37.5m revenues achieved in H1, we can confidently state that we will meet recently upgraded market expectations of revenue for the full year in excess of £77m accompanied by Adjusted EBITDA margin expansion.",
+   "file": "20211201_TPX_Interim-Results.md"
+  },
+  {
+   "d": "2022-03-23",
+   "doc": "OPS",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 1,
+   "q": "The revenue from the Acquisitions, combined with the Group's existing revenue growth at the top end of market expectations,1 puts the Group on track to hit its FY23 £100m run rate revenue target around a year ahead of plan.",
+   "file": "20220323_TPX_Acquisition-of-Peak-Indicators-and-Swirrl.md"
+  },
+  {
    "d": "2022-07-19",
    "doc": "FY R",
    "fy": "FY23",
    "g": "flat",
-   "s": 0,
+   "s": -1,
    "q": "As a consequence of this, we anticipate FY2023 to be a little more second half weighted than usual and have every confidence in meeting FY2023 market expectations of revenues of £97.4m and Adjusted EBITDA of £13.7m.",
-   "file": "20220719_TPX_Preliminary-Results.md",
-   "gnote": "drift §3"
+   "file": "20220719_TPX_Preliminary-Results.md"
   },
   {
    "d": "2022-11-30",
    "doc": "H1 R",
    "fy": "FY23",
-   "g": "flat",
+   "g": "CUT",
    "s": -1,
    "q": "TPXimpact continues to trade in line with the targets announced on 30 September 2022 of full year revenues of c.£90m and Adjusted EBITDA in the range of £7.0-7.5m",
-   "file": "20221130_TPX_Interim-Results.md",
-   "gnote": "drift §3"
+   "file": "20221130_TPX_Interim-Results.md"
   },
   {
    "d": "2023-01-31",
@@ -1078,18 +1094,25 @@
    "g": "CUT",
    "s": -3,
    "q": "TPXimpact is revising its guidance on full year revenues for the financial year ending 31 March 2023 to c.£80m and Adjusted EBITDA margin to a range of 2-3%",
-   "file": "20230131_TPX_Q3-Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20230131_TPX_Q3-Trading-Update.md"
+  },
+  {
+   "d": "2023-03-31",
+   "doc": "OPS",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "In addition, the momentum in new orders has continued in Q4 FY23, with new business wins of over £30m in the quarter.",
+   "file": "20230331_TPX_Covenant-Waiver-and-Current-Trading.md"
   },
   {
    "d": "2023-05-05",
    "doc": "YE-TU",
-   "fy": "FY24",
+   "fy": "FY23",
    "g": "RAISE",
-   "s": 2,
-   "q": "As a result of strong new business performance, the Board is raising its guidance on organic revenue growth to 15-20% for FY24 (from 10-15% previously) and is targeting an Adjusted EBITDA margin of 5-6%, which also reflects continued investment in our people and systems.",
-   "file": "20230505_TPX_Trading-Statement.md",
-   "gnote": "drift §3"
+   "s": 0,
+   "q": "As a result, and based on the Group's unaudited management accounts for the year, the Board expects to report revenue of c.£83 million with an Adjusted EBITDA margin of approximately 3%.",
+   "file": "20230505_TPX_Trading-Statement.md"
   },
   {
    "d": "2023-07-06",
@@ -1097,9 +1120,17 @@
    "fy": "FY24",
    "g": "flat",
    "s": 0,
-   "q": "FY24 outlook unchanged with like-for-like revenue growth of 15-20% and Adjusted EBITDA margins of 5-6%",
-   "file": "20230706_TPX_Preliminary-Results.md",
-   "gnote": "drift §3"
+   "q": "For the first two months of FY24, trading was in line with management expectations, with like-for-like revenue growth of over 5%.",
+   "file": "20230706_TPX_Preliminary-Results.md"
+  },
+  {
+   "d": "2023-09-18",
+   "doc": "OPS",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "These targets would equate to FY24 revenue in the range of £81m to £85m and Adjusted EBITDA in the range of £4m to £5m.",
+   "file": "20230918_TPX_Sale-of-Questers-for-£7.5m.md"
   },
   {
    "d": "2023-10-16",
@@ -1107,9 +1138,9 @@
    "fy": "FY24",
    "g": "flat",
    "s": 1,
-   "q": "The Board reaffirms its FY24 targets of 15-20% like-for-like1 revenue growth and Adjusted EBITDA margins of 5-6%. These targets would equate to FY24 revenue in the range of £80-85 million and Adjusted EBITDA in the range of £4-5 million.",
+   "q": "The Board expects to report first-half revenues of £41-42 million which would equate to like-for-like1 revenue growth of around 20% for H124.",
    "file": "20231016_TPX_H1-Trading-Update-&-Disposal-of-TPXimpact-Norway.md",
-   "gnote": "drift §3"
+   "gnote": "early signal: first step up in tone"
   },
   {
    "d": "2023-12-05",
@@ -1117,9 +1148,8 @@
    "fy": "FY24",
    "g": "flat",
    "s": 0,
-   "q": "The Group is on track to meet the guidance we issued at the start of the year with  revenue growth of 15-20% and adjusted EBITDA margin of 5-6%.",
-   "file": "20231205_TPX_Interim-Results.md",
-   "gnote": "drift §3"
+   "q": "In the trading update released on 16th October 2023, the Board reaffirmed the FY 2024 targets of 15-20% like-for-like revenue growth and Adjusted EBITDA margins of 5-6% and this guidance is maintained.",
+   "file": "20231205_TPX_Interim-Results.md"
   },
   {
    "d": "2024-02-12",
@@ -1128,38 +1158,43 @@
    "g": "flat",
    "s": 0,
    "q": "The Board is pleased to confirm that trading in Q3 was in line with achieving the Company's financial targets for the current financial year (FY24).",
-   "file": "20240212_TPX_Q3-Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20240212_TPX_Q3-Trading-Update.md"
   },
   {
    "d": "2024-05-30",
    "doc": "YE-TU",
-   "fy": "FY24",
+   "fy": "FY25",
    "g": "flat",
-   "s": 1,
-   "q": "Based on the Group's unaudited management accounts for the year, the Board expects to report revenue growth from continuing operations of over 20%, which would equate to revenue of c.£84 million (compared with a target of £80-85 million).",
-   "file": "20240530_TPX_Trading-Update-&-Confirmation-of-Guidance.md",
-   "gnote": "drift §3"
+   "s": 0,
+   "q": "Whilst our FY25 financial performance will be subject to a degree of disruption resulting from the General Election in July (a macro risk equally relevant to our competitors), we believe the Company is well-positioned for continued growth and increasing profitability.",
+   "file": "20240530_TPX_Trading-Update-&-Confirmation-of-Guidance.md"
+  },
+  {
+   "d": "2024-06-24",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "With a strong balance sheet, we continue to be well-positioned to achieve our targets for top-line growth and margin improvement, in line with our three-year plan, as well as manage interest costs more efficiently.",
+   "file": "20240624_TPX_Update-on-financing-arrangements.md"
   },
   {
    "d": "2024-07-09",
    "doc": "FY R",
-   "fy": "FY24",
+   "fy": "FY25",
    "g": "flat",
-   "s": 2,
-   "q": "We have successfully executed the strategy we laid out a year ago and the numbers tell the story of that success, achieving all our financial targets and ahead of market expectations.",
-   "file": "20240709_TPX_Preliminary-Results.md",
-   "gnote": "drift §3"
+   "s": -1,
+   "q": "FY25 outlook unchanged with target like-for-like revenue growth of 10-15% and Adjusted EBITDA margins up 2-3 margin points on FY24, with growth more weighted to H2 than usual",
+   "file": "20240709_TPX_Preliminary-Results.md"
   },
   {
    "d": "2024-09-10",
    "doc": "AGM",
    "fy": "FY25",
-   "g": "CUT",
+   "g": "flat",
    "s": -2,
-   "q": "Given these factors, the Company now expects to report flat revenue growth for FY25 (FY24 revenue:  £84.3 million).",
-   "file": "20240910_TPX_Trading-Update.md",
-   "gnote": "drift §3"
+   "q": "Actual results for the summer period have reflected this expectation, although the restrictions on spend imposed by Central Government are proving to be more prolonged and severe than management had previously anticipated.",
+   "file": "20240910_TPX_Trading-Update.md"
   },
   {
    "d": "2024-11-28",
@@ -1168,28 +1203,25 @@
    "g": "flat",
    "s": 0,
    "q": "Our confidence in the Company's long-term growth prospects therefore remains strong and the Board reaffirms its FY25 target of flat revenue growth, with an adjusted EBITDA target of £7-8 million in line with consensus estimates.",
-   "file": "20241128_TPX_Interim-Results.md",
-   "gnote": "drift §3"
+   "file": "20241128_TPX_Interim-Results.md"
   },
   {
    "d": "2025-02-06",
    "doc": "Q3 TU",
    "fy": "FY25",
    "g": "CUT",
-   "s": -2,
-   "q": "Management's expectations are that revenues for FY25 will decline 8-10% on the prior year.",
-   "file": "20250206_TPX_Q3-Trading-Update-and-Revised-Outlook.md",
-   "gnote": "drift §3"
+   "s": -3,
+   "q": "Whilst the outlook for FY25 remains challenging, the new business pipeline remains strong and we anticipate normal market conditions to return in the second quarter of FY26, once the comprehensive spending review is completed.",
+   "file": "20250206_TPX_Q3-Trading-Update-and-Revised-Outlook.md"
   },
   {
    "d": "2025-05-14",
    "doc": "YE-TU",
-   "fy": "FY25",
-   "g": "flat",
-   "s": 1,
-   "q": "As a result, Adjusted EBITDA is expected to be at the top end of our 1-2% year-on-year margin growth range.",
-   "file": "20250514_TPX_Trading-Update-and-Contract-Wins.md",
-   "gnote": "drift §3"
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -2,
+   "q": "Management is cautiously optimistic that the trading environment will continue to improve through FY26 and expects to deliver meaningful progress in profitability, driven by TPXimpact's continued focus on operational discipline and greater productivity.",
+   "file": "20250514_TPX_Trading-Update-and-Contract-Wins.md"
   },
   {
    "d": "2025-06-24",
@@ -1197,19 +1229,27 @@
    "fy": "FY26",
    "g": "flat",
    "s": 0,
-   "q": "FY26 outlook unchanged. Management is focused on protecting and growing profits in FY26 and targets a FY26 adjusted EBITDA range of £6-7m",
-   "file": "20250624_TPX_Unaudited-preliminary-results.md",
-   "gnote": "drift §3"
+   "q": "We have set clear priorities for the year ahead: stabilising revenue, protecting and growing profitability, and targeting an FY26 Adjusted EBITDA of £6-7m.",
+   "file": "20250624_TPX_Unaudited-preliminary-results.md"
+  },
+  {
+   "d": "2025-07-30",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Management continues to expect net debt to reduce, targeting a year-end range of £7-8m, resulting in reduced leverage of around 1.0-1.5x net debt to adjusted EBITDA, well within the Company's banking covenants.",
+   "file": "20250730_TPX_Debt-Facility-Renewal-Update.md"
   },
   {
    "d": "2025-12-02",
    "doc": "H1 R",
    "fy": "FY26",
    "g": "flat",
-   "s": 0,
-   "q": "FY26 outlook is unchanged. The Board reaffirms adjusted EBITDA outlook of £6-7m",
+   "s": 1,
+   "q": "Looking ahead, we are encouraged by the growing stability within the UK Government and increasing evidence of renewed public-sector investment in digital transformation.",
    "file": "20251202_TPX_Unaudited-Interim-Results.md",
-   "gnote": "drift §3"
+   "gnote": "early signal: first step up in tone"
   },
   {
    "d": "2026-02-24",
@@ -1217,39 +1257,35 @@
    "fy": "FY26",
    "g": "RAISE",
    "s": 2,
-   "q": "Adjusted EBITDA: Upgrading year-end guidance to not less than £7m (previously £6-7m)",
-   "file": "20260224_TPX_Q3-Trading-Update-EBITDA-guidance-Upgrade.md",
-   "gnote": "drift §3"
+   "q": "Following strong trading in Q3 and continued momentum during Q4, the Group is upgrading its outlook for the full year ending 31 March 2026 as follows:",
+   "file": "20260224_TPX_Q3-Trading-Update-EBITDA-guidance-Upgrade.md"
   },
   {
    "d": "2026-04-22",
    "doc": "YE-TU",
    "fy": "FY26",
    "g": "RAISE",
-   "s": 3,
-   "q": "Trading significantly ahead of the recently upgraded guidance",
-   "file": "20260422_TPX_Full-Year-Trading-Update-and-Notice-of-Results.md",
-   "gnote": "drift §3"
+   "s": 2,
+   "q": "Following a strong final quarter, the Group is pleased to report that it expects to comfortably exceed the recently upgraded consensus* across all key financial metrics.",
+   "file": "20260422_TPX_Full-Year-Trading-Update-and-Notice-of-Results.md"
   },
   {
    "d": "2026-06-16",
    "doc": "FY R",
    "fy": "FY27",
-   "g": "RAISE",
+   "g": "flat",
    "s": 2,
-   "q": "adjusted EBITDA of not less than £12m",
-   "file": "20260616_TPX_Unaudited-preliminary-results.md",
-   "gnote": "drift §3"
+   "q": "healthy double-digit revenue growth year on year - underpinned by excellent backlog with existing customer contracts, providing high coverage for FY27 revenue expectations",
+   "file": "20260616_TPX_Unaudited-preliminary-results.md"
   },
   {
    "d": "2026-10-15",
    "doc": "H1 TU",
    "fy": "FY27",
    "g": "RAISE",
-   "s": 3,
-   "q": "Adjusted EBITDA* of at least £14m (previous guidance was for adjusted EBITDA of not less than £12m)",
-   "file": "20261015_TPX_First-Half-Trading-Update.md",
-   "gnote": "drift §3"
+   "s": 2,
+   "q": "Given the strength of trading delivered in H1, together with the visibility afforded by contracted work as well as opportunities for the remainder of this financial year, the Board is providing the following update to FY27 guidance:",
+   "file": "20261015_TPX_First-Half-Trading-Update.md"
   }
  ],
  "lite": true,

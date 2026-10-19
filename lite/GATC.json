@@ -1,6 +1,6 @@
 {
  "ticker": "GATC",
- "v": "2026-10-18.8d6f",
+ "v": "2026-10-19.2ddb",
  "ccy": "GBX",
  "src": "AlphaVantage GATC.LON weekly",
  "adj": [],
@@ -1066,8 +1066,7 @@
    "g": "flat",
    "s": 0,
    "q": "Notwithstanding evolving pandemic and macro supply chain factors, the business continues to trade in line with market expectations.",
-   "file": "20211104_GATC_Preliminary-Results-for-the-year-ended-31-July-21.md",
-   "gnote": "drift §3"
+   "file": "20211104_GATC_Preliminary-Results-for-the-year-ended-31-July-21.md"
   },
   {
    "d": "2022-01-18",
@@ -1076,18 +1075,16 @@
    "g": "CUT",
    "s": -3,
    "q": "Following a review by the Board of the outlook for the business for its financial year ending 31 July 2022 (\"FY22\"), it now anticipates the Company's continuing underlying profit before tax will be significantly below market expectations.",
-   "file": "20220118_GATC_Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20220118_GATC_Trading-Update.md"
   },
   {
    "d": "2022-03-31",
    "doc": "H1 R",
    "fy": "FY22",
    "g": "flat",
-   "s": 0,
-   "q": "We expect continuing underlying profit before tax for its financial year ending 31 July 2022 to be around breakeven as announced in January 2022.",
-   "file": "20220331_GATC_Interim-Results.md",
-   "gnote": "drift §3"
+   "s": -1,
+   "q": "Looking to 2023 and beyond, although the trajectory of the business has been slower than previously anticipated we expect to see the benefits of our investment in headcount and the technology platform begin to come through, delivering a return to profitable and sustainable long-term growth.",
+   "file": "20220331_GATC_Interim-Results.md"
   },
   {
    "d": "2022-08-17",
@@ -1096,8 +1093,7 @@
    "g": "flat",
    "s": 0,
    "q": "We expect our continuing underlying PBT for the full year to be in line with market consensus of break even",
-   "file": "20220817_GATC_Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20220817_GATC_Trading-Update.md"
   },
   {
    "d": "2022-11-03",
@@ -1106,8 +1102,7 @@
    "g": "flat",
    "s": 0,
    "q": "Our expectations for FY23 remain unchanged at underlying profit before tax of £2.5m for the year.",
-   "file": "20221103_GATC_Preliminary-Results-for-the-year-ended-31-July-22.md",
-   "gnote": "drift §3"
+   "file": "20221103_GATC_Preliminary-Results-for-the-year-ended-31-July-22.md"
   },
   {
    "d": "2023-02-15",
@@ -1116,28 +1111,25 @@
    "g": "flat",
    "s": -1,
    "q": "As we enter the second half, we are conscious of softening in some external sectors, and perm is likely to be impacted by a level of restraint around hiring, shifting candidate sentiment and, as such, slightly longer hiring cycles.",
-   "file": "20230215_GATC_Trading-Statement.md",
-   "gnote": "drift §3"
+   "file": "20230215_GATC_Trading-Statement.md"
   },
   {
    "d": "2023-03-30",
    "doc": "H1 R",
    "fy": "FY23",
    "g": "flat",
-   "s": -1,
-   "q": "Looking forward there remains a high level of macro-economic uncertainty; however, we continue to see good levels of vacancies in the STEM markets that we support, which, when combined with talent shortages, drives demand.",
-   "file": "20230330_GATC_Interim-results.md",
-   "gnote": "drift §3"
+   "s": 0,
+   "q": "Looking forward there remains a high level of macro-economic uncertainty, however we continue to see talent shortages and good levels of vacancies in the STEM markets that we support.",
+   "file": "20230330_GATC_Interim-results.md"
   },
   {
    "d": "2023-08-16",
    "doc": "YE-TU",
-   "fy": "FY23",
+   "fy": "FY24",
    "g": "flat",
-   "s": 1,
-   "q": "The Group expects to report continuing underlying PBT of £2.5m for FY23, ahead of expectations as a result of the Group's cost rebalancing programme and exit from low margin contracts",
-   "file": "20230816_GATC_Trading-Update.md",
-   "gnote": "drift §3"
+   "s": -1,
+   "q": "In light of the ongoing macroeconomic headwinds, particularly the uncertainty over the timing of any recovery in the wider economy and the Group's focus on sustainable contract growth, the Board currently expects profit before tax for FY24 to show marginal growth on FY23.",
+   "file": "20230816_GATC_Trading-Update.md"
   },
   {
    "d": "2023-10-24",
@@ -1146,8 +1138,7 @@
    "g": "flat",
    "s": -1,
    "q": "We are seeing permanent recruitment remaining subdued and are increasing our focus on contractor growth, which takes longer to reflect in NFI, as such we expect profitability will be weighted to second half of the year.",
-   "file": "20231024_GATC_Final-results-for-the-year-ended-31-July-2023.md",
-   "gnote": "drift §3"
+   "file": "20231024_GATC_Final-results-for-the-year-ended-31-July-2023.md"
   },
   {
    "d": "2024-02-15",
@@ -1156,28 +1147,25 @@
    "g": "flat",
    "s": 0,
    "q": "Despite the tough market conditions, I am pleased to report the Group is trading in line with current market expectations.",
-   "file": "20240215_GATC_Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20240215_GATC_Trading-Update.md"
   },
   {
    "d": "2024-04-16",
    "doc": "H1 R",
    "fy": "FY24",
-   "g": "CUT",
-   "s": -2,
+   "g": "flat",
+   "s": 0,
    "q": "We continue to see permanent recruitment subdued in the short term and our focus remains on growing our contractor base. As such we expect full year underlying profit before tax to be in a range of £2.4m to £2.7m.",
-   "file": "20240416_GATC_Interim-Results.md",
-   "gnote": "drift §3"
+   "file": "20240416_GATC_Interim-Results.md"
   },
   {
    "d": "2024-08-15",
    "doc": "YE-TU",
-   "fy": "FY24",
+   "fy": "FY25",
    "g": "flat",
    "s": 0,
-   "q": "FY24 Group underlying Profit before Tax expected to be in line with the Group's previously announced guidance of £2.4m to £2.7m.",
-   "file": "20240815_GATC_Trading-Update-for-the-year-ended-31-July-2024.md",
-   "gnote": "drift §3"
+   "q": "Whilst mindful of the macro-economic headwinds affecting the recruitment sector, the Board believes it will meet market expectations for FY25.",
+   "file": "20240815_GATC_Trading-Update-for-the-year-ended-31-July-2024.md"
   },
   {
    "d": "2024-10-24",
@@ -1185,9 +1173,8 @@
    "fy": "FY25",
    "g": "flat",
    "s": 0,
-   "q": "Resilient performance with underlying PBT slightly ahead of market expectations",
-   "file": "20241024_GATC_Final-results-for-the-year-ended-31-July-2024.md",
-   "gnote": "drift §3"
+   "q": "For FY25, it is expected that profitability will be weighted to the second half of the year and FY25 continuing underlying PBT will be in line with previous guidance of £3.0m.",
+   "file": "20241024_GATC_Final-results-for-the-year-ended-31-July-2024.md"
   },
   {
    "d": "2025-02-13",
@@ -1196,8 +1183,7 @@
    "g": "flat",
    "s": 0,
    "q": "Group guidance for FY25 adjusted profit before tax remains at £3m.",
-   "file": "20250213_GATC_Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20250213_GATC_Trading-Update.md"
   },
   {
    "d": "2025-04-02",
@@ -1205,9 +1191,17 @@
    "fy": "FY25",
    "g": "flat",
    "s": 0,
-   "q": "Group guidance for FY25 continuing underlying profit before tax remains at £3 million.",
-   "file": "20250402_GATC_Interim-Results.md",
-   "gnote": "drift §3"
+   "q": "We have retained our customer base, further improved our performance per head, continued to grow our contractor book, are seeing the results of our strategic investments and are confident in achieving our full year PBT expectations.",
+   "file": "20250402_GATC_Interim-Results.md"
+  },
+  {
+   "d": "2025-04-02",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "We have retained our customer base, further improved our performance per head, continued to grow our contractor book, are seeing the results of our strategic investments and are confident in achieving our full year PBT expectations.",
+   "file": "20250402_GATC_CORRECTION-–-Interim-Results.md"
   },
   {
    "d": "2025-08-05",
@@ -1216,8 +1210,7 @@
    "g": "RAISE",
    "s": 1,
    "q": "Improved margin conversion, due to a focus on costs and improved productivity, will result in FY25 Group underlying Profit before Tax in the range of £3.1m to £3.3m (FY24: £2.9m), marginally above current guidance of £3m.",
-   "file": "20250805_GATC_Trading-update-and-Acquisition.md",
-   "gnote": "drift §3"
+   "file": "20250805_GATC_Trading-update-and-Acquisition.md"
   },
   {
    "d": "2025-10-23",
@@ -1226,8 +1219,7 @@
    "g": "flat",
    "s": 0,
    "q": "The Board is optimistic about the prospects of the Group with an expectation for the FY26 year ahead to achieve further growth in continuing underlying profit before tax, in line with the current market consensus of £4m.",
-   "file": "20251023_GATC_Final-results-for-the-year-ended-31-July-2025.md",
-   "gnote": "drift §3"
+   "file": "20251023_GATC_Final-results-for-the-year-ended-31-July-2025.md"
   },
   {
    "d": "2026-02-11",
@@ -1236,8 +1228,7 @@
    "g": "RAISE",
    "s": 2,
    "q": "I am pleased to see our positive momentum continue to build and to report that the Group is trading ahead of expectations.",
-   "file": "20260211_GATC_Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20260211_GATC_Trading-Update.md"
   },
   {
    "d": "2026-03-24",
@@ -1246,28 +1237,25 @@
    "g": "flat",
    "s": 0,
    "q": "I am pleased to announce a strong H1 performance as we see our positive momentum continue to build and to report that the Group is trading in line with upgraded expectations.",
-   "file": "20260324_GATC_Interim-Results.md",
-   "gnote": "drift §3"
+   "file": "20260324_GATC_Interim-Results.md"
   },
   {
    "d": "2026-05-14",
    "doc": "Q3 TU",
    "fy": "FY26",
    "g": "RAISE",
-   "s": 3,
+   "s": 2,
    "q": "As a result, the Board expects Group continuing underlying profit before tax for FY26 to be not less than £6.0 million (previous guidance: £4.5 million).",
-   "file": "20260514_GATC_Trading-Update.md",
-   "gnote": "drift §3"
+   "file": "20260514_GATC_Trading-Update.md"
   },
   {
    "d": "2026-08-17",
    "doc": "YE-TU",
-   "fy": "FY26",
+   "fy": "FY27",
    "g": "flat",
-   "s": 0,
-   "q": "Improved sales productivity per head and focus on costs driving increased margin conversion. As a result, the Group will deliver underlying Profit before Tax of approximately £6.1m (FY25: £3.3m), above previous guidance of £6.0m.",
-   "file": "20260817_GATC_Trading-Update.md",
-   "gnote": "drift §3"
+   "s": -1,
+   "q": "The Board expects to deliver further improvement in Profit before Tax in FY27.",
+   "file": "20260817_GATC_Trading-Update.md"
   }
  ],
  "lite": true,
