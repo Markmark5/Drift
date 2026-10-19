@@ -1,6 +1,6 @@
 {
  "ticker": "AC8",
- "v": "2026-10-18.5c19",
+ "v": "2026-10-19.0a65",
  "ccy": "GBX",
  "src": "ShareScope weekly snapshots",
  "adj": [],
@@ -140,13 +140,49 @@
  ],
  "marks": [
   {
-   "d": "2026-10-07",
-   "doc": "OPS",
+   "d": "2026-04-30",
+   "doc": "FY R",
    "fy": "FY26",
    "g": "flat",
-   "s": 1,
-   "q": "The Board expects the continued expansion of the connected-shop network and further rollout of Sports Lottery+ to support revenue growth over the remainder of the year and into 2027."
+   "s": 0,
+   "q": "The tie up with IIG and its associated primary investment Hui10 Inc. (\"Hui10\"), is exactly the type of opportunity that we have been seeking out since listing AC8 in 2021 and we will be making the requisite updates to shareholders in due course.",
+   "file": "20260430_AC8_Full-Year-Results-year-ended-31-December-2025.md"
+  },
+  {
+   "d": "2026-10-07",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board expects the continued expansion of the connected-shop network and further rollout of Sports Lottery+ to support revenue growth over the remainder of the year and into 2027.",
+   "file": "20261007_AC8_Trading-Statement.md"
   }
  ],
- "lite": true
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-07",
+  "doc": "Q3 TU",
+  "file": "20261007_AC8_Trading-Statement.md",
+  "vs": "First trading update · vs offer document Jun-26 and HY26 report Sep-26 (no prior trading update)",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "UGO terminals: Jun-26 “753 installed UGO UnionPay POS Terminals” at 31 Mar-26 under the “launch and national expansion of UGO Lotto” → Sep-26 KPI table 754, flat over six months, while Oct-26 targets “over 1,000 UGO terminals” by Dec-26 and “an additional 20,000 UGO terminals by the end of 2027”",
+    "span": "Mar-26 → Sep-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Wording vs number",
+    "text": "Revenue still small: “For the nine months to 30 September 2026, Hui10 generated revenue of RMB 2.1 million” beside CEO wording of the platform's “exponential growth potential”; revenue other than Lucky World merchandise is described as at “an earlier stage of development”",
+    "span": "Oct-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "First KPI table and first numeric targets: “By the end of December 2026 the Group aims to have over 20,000 Lucky World shops connected, over 1,000 UGO terminals and over 2 million registered users”, plus “a further 50,000 Lucky World shop connections” by end-2027",
+    "span": "new at Oct-26"
+   }
+  ]
+ }
 }

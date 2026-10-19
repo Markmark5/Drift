@@ -1,0 +1,1331 @@
+{
+ "ticker": "MOTR",
+ "v": "2026-10-19.489b",
+ "ccy": "GBX",
+ "src": "AlphaVantage MOTR.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   350.0
+  ],
+  [
+   "2021-10-22",
+   351.0
+  ],
+  [
+   "2021-10-29",
+   358.0
+  ],
+  [
+   "2021-11-05",
+   335.0
+  ],
+  [
+   "2021-11-12",
+   355.0
+  ],
+  [
+   "2021-11-19",
+   349.0
+  ],
+  [
+   "2021-11-26",
+   345.0
+  ],
+  [
+   "2021-12-03",
+   334.0
+  ],
+  [
+   "2021-12-10",
+   338.0
+  ],
+  [
+   "2021-12-17",
+   319.0
+  ],
+  [
+   "2021-12-24",
+   322.5
+  ],
+  [
+   "2021-12-31",
+   350.0
+  ],
+  [
+   "2022-01-07",
+   331.0
+  ],
+  [
+   "2022-01-14",
+   308.0
+  ],
+  [
+   "2022-01-21",
+   300.0
+  ],
+  [
+   "2022-01-28",
+   288.0
+  ],
+  [
+   "2022-02-04",
+   296.0
+  ],
+  [
+   "2022-02-11",
+   295.0
+  ],
+  [
+   "2022-02-18",
+   314.0
+  ],
+  [
+   "2022-02-25",
+   296.0
+  ],
+  [
+   "2022-03-04",
+   296.0
+  ],
+  [
+   "2022-03-11",
+   282.0
+  ],
+  [
+   "2022-03-18",
+   300.0
+  ],
+  [
+   "2022-03-25",
+   288.5
+  ],
+  [
+   "2022-04-01",
+   285.0
+  ],
+  [
+   "2022-04-08",
+   265.0
+  ],
+  [
+   "2022-04-14",
+   250.0
+  ],
+  [
+   "2022-04-22",
+   260.0
+  ],
+  [
+   "2022-04-29",
+   242.0
+  ],
+  [
+   "2022-05-06",
+   245.0
+  ],
+  [
+   "2022-05-13",
+   238.5
+  ],
+  [
+   "2022-05-20",
+   227.0
+  ],
+  [
+   "2022-05-27",
+   231.0
+  ],
+  [
+   "2022-06-01",
+   232.0
+  ],
+  [
+   "2022-06-10",
+   226.5
+  ],
+  [
+   "2022-06-17",
+   210.0
+  ],
+  [
+   "2022-06-24",
+   195.0
+  ],
+  [
+   "2022-07-01",
+   194.5
+  ],
+  [
+   "2022-07-08",
+   188.5
+  ],
+  [
+   "2022-07-15",
+   193.25
+  ],
+  [
+   "2022-07-22",
+   193.0
+  ],
+  [
+   "2022-07-29",
+   195.0
+  ],
+  [
+   "2022-08-05",
+   193.5
+  ],
+  [
+   "2022-08-12",
+   197.0
+  ],
+  [
+   "2022-08-19",
+   196.25
+  ],
+  [
+   "2022-08-26",
+   195.75
+  ],
+  [
+   "2022-09-02",
+   195.25
+  ],
+  [
+   "2022-09-09",
+   192.5
+  ],
+  [
+   "2022-09-16",
+   186.5
+  ],
+  [
+   "2022-09-23",
+   183.25
+  ],
+  [
+   "2022-09-30",
+   179.0
+  ],
+  [
+   "2022-10-07",
+   148.0
+  ],
+  [
+   "2022-10-14",
+   150.0
+  ],
+  [
+   "2022-10-21",
+   142.0
+  ],
+  [
+   "2022-10-28",
+   146.5
+  ],
+  [
+   "2022-11-04",
+   147.0
+  ],
+  [
+   "2022-11-11",
+   158.0
+  ],
+  [
+   "2022-11-18",
+   153.0
+  ],
+  [
+   "2022-11-25",
+   157.0
+  ],
+  [
+   "2022-12-02",
+   157.0
+  ],
+  [
+   "2022-12-09",
+   150.5
+  ],
+  [
+   "2022-12-16",
+   148.0
+  ],
+  [
+   "2022-12-23",
+   146.0
+  ],
+  [
+   "2022-12-30",
+   145.0
+  ],
+  [
+   "2023-01-06",
+   145.0
+  ],
+  [
+   "2023-01-13",
+   145.0
+  ],
+  [
+   "2023-01-20",
+   144.5
+  ],
+  [
+   "2023-01-27",
+   144.0
+  ],
+  [
+   "2023-02-03",
+   142.5
+  ],
+  [
+   "2023-02-10",
+   146.5
+  ],
+  [
+   "2023-02-17",
+   145.0
+  ],
+  [
+   "2023-02-24",
+   143.0
+  ],
+  [
+   "2023-03-03",
+   140.0
+  ],
+  [
+   "2023-03-10",
+   138.0
+  ],
+  [
+   "2023-03-17",
+   132.0
+  ],
+  [
+   "2023-03-24",
+   135.0
+  ],
+  [
+   "2023-03-31",
+   135.0
+  ],
+  [
+   "2023-04-06",
+   134.75
+  ],
+  [
+   "2023-04-14",
+   133.5
+  ],
+  [
+   "2023-04-21",
+   132.5
+  ],
+  [
+   "2023-04-28",
+   135.0
+  ],
+  [
+   "2023-05-05",
+   135.0
+  ],
+  [
+   "2023-05-12",
+   133.0
+  ],
+  [
+   "2023-05-19",
+   132.0
+  ],
+  [
+   "2023-05-26",
+   130.0
+  ],
+  [
+   "2023-06-02",
+   126.0
+  ],
+  [
+   "2023-06-09",
+   125.0
+  ],
+  [
+   "2023-06-16",
+   104.5
+  ],
+  [
+   "2023-06-23",
+   100.5
+  ],
+  [
+   "2023-06-30",
+   95.4
+  ],
+  [
+   "2023-07-07",
+   96.4
+  ],
+  [
+   "2023-07-14",
+   96.8
+  ],
+  [
+   "2023-07-21",
+   98.0
+  ],
+  [
+   "2023-07-28",
+   106.5
+  ],
+  [
+   "2023-08-04",
+   101.0
+  ],
+  [
+   "2023-08-11",
+   101.75
+  ],
+  [
+   "2023-08-18",
+   95.6
+  ],
+  [
+   "2023-08-25",
+   94.9
+  ],
+  [
+   "2023-09-01",
+   94.7
+  ],
+  [
+   "2023-09-08",
+   92.0
+  ],
+  [
+   "2023-09-15",
+   91.0
+  ],
+  [
+   "2023-09-22",
+   88.0
+  ],
+  [
+   "2023-09-29",
+   88.0
+  ],
+  [
+   "2023-10-06",
+   86.2
+  ],
+  [
+   "2023-10-13",
+   81.8
+  ],
+  [
+   "2023-10-20",
+   78.9
+  ],
+  [
+   "2023-10-27",
+   77.6
+  ],
+  [
+   "2023-11-03",
+   79.0
+  ],
+  [
+   "2023-11-10",
+   77.0
+  ],
+  [
+   "2023-11-17",
+   79.0
+  ],
+  [
+   "2023-11-24",
+   77.4
+  ],
+  [
+   "2023-12-01",
+   85.4
+  ],
+  [
+   "2023-12-08",
+   86.4
+  ],
+  [
+   "2023-12-15",
+   92.0
+  ],
+  [
+   "2023-12-22",
+   103.0
+  ],
+  [
+   "2023-12-29",
+   114.5
+  ],
+  [
+   "2024-01-05",
+   102.0
+  ],
+  [
+   "2024-01-12",
+   99.6
+  ],
+  [
+   "2024-01-19",
+   95.0
+  ],
+  [
+   "2024-01-26",
+   98.7
+  ],
+  [
+   "2024-02-02",
+   103.5
+  ],
+  [
+   "2024-02-09",
+   104.0
+  ],
+  [
+   "2024-02-16",
+   116.0
+  ],
+  [
+   "2024-02-23",
+   126.0
+  ],
+  [
+   "2024-03-01",
+   128.5
+  ],
+  [
+   "2024-03-08",
+   126.75
+  ],
+  [
+   "2024-03-15",
+   129.5
+  ],
+  [
+   "2024-03-22",
+   130.0
+  ],
+  [
+   "2024-03-28",
+   134.0
+  ],
+  [
+   "2024-04-05",
+   134.0
+  ],
+  [
+   "2024-04-12",
+   135.5
+  ],
+  [
+   "2024-04-19",
+   138.0
+  ],
+  [
+   "2024-04-26",
+   140.0
+  ],
+  [
+   "2024-05-03",
+   143.0
+  ],
+  [
+   "2024-05-10",
+   145.0
+  ],
+  [
+   "2024-05-17",
+   142.0
+  ],
+  [
+   "2024-05-24",
+   143.0
+  ],
+  [
+   "2024-05-31",
+   141.0
+  ],
+  [
+   "2024-06-07",
+   142.0
+  ],
+  [
+   "2024-06-14",
+   139.0
+  ],
+  [
+   "2024-06-21",
+   145.0
+  ],
+  [
+   "2024-06-28",
+   141.0
+  ],
+  [
+   "2024-07-05",
+   138.0
+  ],
+  [
+   "2024-07-12",
+   138.5
+  ],
+  [
+   "2024-07-19",
+   141.25
+  ],
+  [
+   "2024-07-26",
+   141.5
+  ],
+  [
+   "2024-08-02",
+   142.0
+  ],
+  [
+   "2024-08-09",
+   137.0
+  ],
+  [
+   "2024-08-16",
+   141.25
+  ],
+  [
+   "2024-08-23",
+   142.5
+  ],
+  [
+   "2024-08-30",
+   143.5
+  ],
+  [
+   "2024-09-06",
+   160.0
+  ],
+  [
+   "2024-09-13",
+   153.5
+  ],
+  [
+   "2024-09-20",
+   145.5
+  ],
+  [
+   "2024-09-27",
+   142.0
+  ],
+  [
+   "2024-10-04",
+   150.5
+  ],
+  [
+   "2024-10-11",
+   163.5
+  ],
+  [
+   "2024-10-18",
+   171.0
+  ],
+  [
+   "2024-10-25",
+   174.0
+  ],
+  [
+   "2024-11-01",
+   142.5
+  ],
+  [
+   "2024-11-08",
+   135.0
+  ],
+  [
+   "2024-11-15",
+   128.5
+  ],
+  [
+   "2024-11-22",
+   120.0
+  ],
+  [
+   "2024-11-29",
+   133.0
+  ],
+  [
+   "2024-12-06",
+   137.0
+  ],
+  [
+   "2024-12-13",
+   136.5
+  ],
+  [
+   "2024-12-20",
+   135.5
+  ],
+  [
+   "2024-12-24",
+   133.5
+  ],
+  [
+   "2024-12-27",
+   133.5
+  ],
+  [
+   "2025-01-03",
+   130.5
+  ],
+  [
+   "2025-01-10",
+   125.0
+  ],
+  [
+   "2025-01-17",
+   116.0
+  ],
+  [
+   "2025-01-24",
+   124.25
+  ],
+  [
+   "2025-01-31",
+   125.0
+  ],
+  [
+   "2025-02-07",
+   122.0
+  ],
+  [
+   "2025-02-14",
+   124.25
+  ],
+  [
+   "2025-02-21",
+   124.0
+  ],
+  [
+   "2025-02-28",
+   127.0
+  ],
+  [
+   "2025-03-07",
+   124.5
+  ],
+  [
+   "2025-03-14",
+   126.5
+  ],
+  [
+   "2025-03-21",
+   124.0
+  ],
+  [
+   "2025-03-28",
+   126.25
+  ],
+  [
+   "2025-04-04",
+   130.0
+  ],
+  [
+   "2025-04-11",
+   125.0
+  ],
+  [
+   "2025-04-17",
+   128.0
+  ],
+  [
+   "2025-04-25",
+   143.5
+  ],
+  [
+   "2025-05-02",
+   141.0
+  ],
+  [
+   "2025-05-09",
+   140.0
+  ],
+  [
+   "2025-05-16",
+   139.25
+  ],
+  [
+   "2025-05-23",
+   143.0
+  ],
+  [
+   "2025-05-30",
+   148.5
+  ],
+  [
+   "2025-06-06",
+   164.5
+  ],
+  [
+   "2025-06-13",
+   165.5
+  ],
+  [
+   "2025-06-20",
+   170.0
+  ],
+  [
+   "2025-06-27",
+   169.5
+  ],
+  [
+   "2025-07-04",
+   177.0
+  ],
+  [
+   "2025-07-11",
+   176.0
+  ],
+  [
+   "2025-07-18",
+   180.0
+  ],
+  [
+   "2025-07-25",
+   185.0
+  ],
+  [
+   "2025-08-01",
+   185.0
+  ],
+  [
+   "2025-08-08",
+   183.5
+  ],
+  [
+   "2025-08-15",
+   185.0
+  ],
+  [
+   "2025-08-22",
+   170.5
+  ],
+  [
+   "2025-08-29",
+   174.0
+  ],
+  [
+   "2025-09-05",
+   168.5
+  ],
+  [
+   "2025-09-12",
+   168.0
+  ],
+  [
+   "2025-09-19",
+   164.0
+  ],
+  [
+   "2025-09-26",
+   158.5
+  ],
+  [
+   "2025-10-03",
+   157.0
+  ],
+  [
+   "2025-10-10",
+   159.0
+  ],
+  [
+   "2025-10-17",
+   154.0
+  ],
+  [
+   "2025-10-24",
+   156.5
+  ],
+  [
+   "2025-10-31",
+   159.0
+  ],
+  [
+   "2025-11-07",
+   155.0
+  ],
+  [
+   "2025-11-14",
+   142.0
+  ],
+  [
+   "2025-11-21",
+   132.0
+  ],
+  [
+   "2025-11-28",
+   140.5
+  ],
+  [
+   "2025-12-05",
+   139.0
+  ],
+  [
+   "2025-12-12",
+   136.0
+  ],
+  [
+   "2025-12-19",
+   135.0
+  ],
+  [
+   "2025-12-24",
+   134.0
+  ],
+  [
+   "2026-01-02",
+   133.0
+  ],
+  [
+   "2026-01-09",
+   138.0
+  ],
+  [
+   "2026-01-16",
+   136.0
+  ],
+  [
+   "2026-01-23",
+   137.5
+  ],
+  [
+   "2026-01-30",
+   139.0
+  ],
+  [
+   "2026-02-06",
+   136.0
+  ],
+  [
+   "2026-02-13",
+   132.0
+  ],
+  [
+   "2026-02-20",
+   137.5
+  ],
+  [
+   "2026-02-27",
+   138.0
+  ],
+  [
+   "2026-03-06",
+   134.0
+  ],
+  [
+   "2026-03-13",
+   125.0
+  ],
+  [
+   "2026-03-20",
+   123.5
+  ],
+  [
+   "2026-03-27",
+   118.0
+  ],
+  [
+   "2026-04-02",
+   130.0
+  ],
+  [
+   "2026-04-10",
+   131.5
+  ],
+  [
+   "2026-04-17",
+   132.0
+  ],
+  [
+   "2026-04-24",
+   133.0
+  ],
+  [
+   "2026-05-01",
+   129.0
+  ],
+  [
+   "2026-05-08",
+   128.0
+  ],
+  [
+   "2026-05-15",
+   130.0
+  ],
+  [
+   "2026-05-22",
+   130.0
+  ],
+  [
+   "2026-05-29",
+   130.0
+  ],
+  [
+   "2026-06-05",
+   123.5
+  ],
+  [
+   "2026-06-12",
+   135.0
+  ],
+  [
+   "2026-06-19",
+   125.0
+  ],
+  [
+   "2026-06-26",
+   125.5
+  ],
+  [
+   "2026-07-03",
+   124.0
+  ],
+  [
+   "2026-07-10",
+   127.5
+  ],
+  [
+   "2026-07-17",
+   122.0
+  ],
+  [
+   "2026-07-24",
+   118.0
+  ],
+  [
+   "2026-07-31",
+   120.0
+  ],
+  [
+   "2026-08-07",
+   126.0
+  ],
+  [
+   "2026-08-14",
+   127.0
+  ],
+  [
+   "2026-08-21",
+   127.0
+  ],
+  [
+   "2026-08-28",
+   125.0
+  ],
+  [
+   "2026-09-04",
+   132.0
+  ],
+  [
+   "2026-09-11",
+   136.0
+  ],
+  [
+   "2026-09-18",
+   137.5
+  ],
+  [
+   "2026-09-25",
+   140.5
+  ],
+  [
+   "2026-10-02",
+   141.0
+  ],
+  [
+   "2026-10-09",
+   140.0
+  ],
+  [
+   "2026-10-16",
+   140.5
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-11-25",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 3,
+   "q": "As a result, the Board is confident of delivering revenue ahead of plan for the full year, and therefore full year profit before tax significantly ahead of its expectations.",
+   "file": "20211125_MOTR_Interim-Results-Strategy-Update-and-People-Changes.md"
+  },
+  {
+   "d": "2022-04-06",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "The impact of rising inflation and worldwide vehicle supply challenges is likely to affect our markets and our company performance, but its extent is difficult to predict in the short term.",
+   "file": "20220406_MOTR_Year-End-Trading-and-Strategy-Update.md"
+  },
+  {
+   "d": "2022-06-15",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -2,
+   "q": "In general, rising inflation is putting increasing pressure on discretionary spending power and consumer sentiment, and this position has worsened since the start of our new financial year.",
+   "file": "20220615_MOTR_Final-Results.md"
+  },
+  {
+   "d": "2022-07-27",
+   "doc": "AGM",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "Gross margins in Q1 are down against the record levels in the previous year when vehicle appreciation significantly inflated margins, and are more in line with the second half of FY22.",
+   "file": "20220727_MOTR_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2022-10-06",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -2,
+   "q": "Although the Company does not provide specific profit guidance, it believes these macro factors will continue to challenge financial performance in FY23, the extent of which is difficult to predict.",
+   "file": "20221006_MOTR_Half-Year-Trading-Update.md"
+  },
+  {
+   "d": "2022-11-24",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "As a result, in line with previous guidance, profitability levels will be lower as we continue to invest in our strategic agenda.",
+   "file": "20221124_MOTR_Interim-Results.md"
+  },
+  {
+   "d": "2023-01-27",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -3,
+   "q": "Although the Company does not provide specific profit guidance, recent reductions in finance commissions and lower gross margin, largely due to the well documented fall in electric vehicle values will negatively impact profitability and the Board believes these macro factors will continue to impact sales and profitability for the foreseeable future.",
+   "file": "20230127_MOTR_Q3-Trading-Update.md"
+  },
+  {
+   "d": "2023-04-06",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "Profit before taxation expected to be broadly break even",
+   "file": "20230406_MOTR_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2023-06-14",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -2,
+   "q": "Although our long term ambitions remain, we have tempered our growth expectations and will limit investments to those that offer the best near term returns with a focus on customer experiences in areas such as online, using data to support buying, selling and marketing activity, technology enhancements to create greater efficiency and the integration of sales channels.",
+   "file": "20230614_MOTR_Final-Results.md"
+  },
+  {
+   "d": "2023-07-26",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 1,
+   "q": "Trading performance improved throughout Q1 and we expect this trend to continue in Q2 reflecting further improvements in margin and cost base reductions.",
+   "file": "20230726_MOTR_AGM-Trading-Update.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2023-10-05",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "As a consequence of the margin improvement and cost base actions we highlighted in July 2023, the underlying loss before taxation of £3.1m incurred in Q1 narrowed to a small loss of c.£0.6m in Q2.",
+   "file": "20231005_MOTR_Half-Year-Trading-Update.md"
+  },
+  {
+   "d": "2023-11-23",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -2,
+   "q": "This is impacting the value of used cars, which has fallen since the end of the period, with a reduction in wholesale values of c.6% in just the last six weeks.",
+   "file": "20231123_MOTR_Interim-Results.md"
+  },
+  {
+   "d": "2024-04-04",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 1,
+   "q": "Loss Before Tax for the full year therefore anticipated to be at the favourable end of management expectations",
+   "file": "20240404_MOTR_Q4-Trading-Update.md"
+  },
+  {
+   "d": "2024-06-13",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Our lean cost base, strong data driven focus on margins, faster stock turn and enhanced digital capabilities should enable us to continue the Q4 FY24 trend of profitable growth.",
+   "file": "20240613_MOTR_FINAL-RESULTS.md"
+  },
+  {
+   "d": "2024-07-24",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board remains confident that vehicle supply should increase, customer sentiment will continue to improve and that the Group will achieve its expectations for the full year.",
+   "file": "20240724_MOTR_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2024-10-08",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "However, the increased customer demand, coupled with the successful execution of our Brilliant Basics programme during FY24 to drive operational excellence and right size the business, has resulted in a return to profitability in FY25, and provides the Board with confidence to establish plans to accelerate growth.",
+   "file": "20241008_MOTR_Half-Year-Trading-Update.md"
+  },
+  {
+   "d": "2024-11-27",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Whilst the finance commission temporary withdrawal caused short term challenges, no material adverse impact on trading and FY25 profit expectations",
+   "file": "20241127_MOTR_Half-year-Report.md"
+  },
+  {
+   "d": "2025-06-12",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Notwithstanding the ongoing consumer and macroeconomic environment, Motorpoint is in a strong position to grow further, and I am cautiously optimistic for the FY26 outlook.",
+   "file": "20250612_MOTR_FINAL-RESULTS.md"
+  },
+  {
+   "d": "2025-07-22",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board remains confident that the Group will achieve its expectations for the full year.",
+   "file": "20250722_MOTR_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2025-10-09",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The strong performance delivered in H1 FY26 means the Board remains confident that the Group will achieve its expectations for the full year.",
+   "file": "20251009_MOTR_Half-Year-Trading-Update-&-Notice-of-Results.md"
+  },
+  {
+   "d": "2025-11-12",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Strong momentum has continued into H2 FY26. We have delivered retail volume growth of 8.1% in October and good profitability.",
+   "file": "20251112_MOTR_Interim-Results.md"
+  },
+  {
+   "d": "2026-04-08",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Profit before taxation is expected to be c.£7.5m, up 83% (FY25: £4.1m), aided by record metal margin performance, which helped offset inflationary pressures",
+   "file": "20260408_MOTR_Full-Year-Trading-Update-and-New-Store-Opening.md"
+  },
+  {
+   "d": "2026-06-10",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is confident in our ability to take advantage of opportunities to further increase market share at attractive margins in the year ahead.",
+   "file": "20260610_MOTR_Final-Results.md"
+  },
+  {
+   "d": "2026-07-23",
+   "doc": "AGM",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -1,
+   "q": "Profitability has improved strongly year on year, supported by continued excellent metal margins and cost discipline.",
+   "file": "20260723_MOTR_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2026-09-02",
+   "doc": "OPS",
+   "fy": "FY27",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Given increased confidence in vehicle supply conditions, the success implementing our technology and AI strategic plans, the momentum in our performance year to date and robust outlook, we now expect that PBT for FY27 will be in the range of £9.8m-£10.8m.",
+   "file": "20260902_MOTR_Trading-Update.md"
+  },
+  {
+   "d": "2026-10-09",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board remains confident in the outlook for FY27 and therefore continues to expect underlying profit before taxation for the full year to be in the range of £9.8m to £10.8m, in line with the recently upgraded market consensus.",
+   "file": "20261009_MOTR_Half-Year-Trading-Update-&-Notice-of-Results.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-09",
+  "doc": "H1 TU",
+  "file": "20261009_MOTR_Half-Year-Trading-Update-&-Notice-of-Results.md",
+  "vs": "H1 TU Oct-25 · back to Oct-24 · TU Sep-26, AGM Jul-26",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Anchor softened",
+    "text": "Guide redefined to an 'underlying' measure: Sep-26 “we now expect that PBT for FY27 will be in the range of £9.8m-£10.8m” → Oct-26 “continues to expect underlying profit before taxation for the full year to be in the range of £9.8m to £10.8m”; H1 also moves from reported PBT (Oct-25) to underlying PBT",
+    "span": "Reported PBT used at Oct-24, Oct-25, Apr-26, Sep-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Period-end cash position dropped: Oct-24 “net cash at 30 September was £11.2m, in line with expectations”; Oct-25 “H1 FY26 ended with a small net debt position of £0.5m” → Oct-26 no net cash/debt figure (revenue figure also dropped)",
+    "span": "Given Oct-24 and Oct-25 → first gap"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "“Strong retail volume growth” headline while growth slows despite the new Leeds store: AGM Jul-26 Q1 “Retail volumes increased by 11.1% compared to the equivalent period in FY26” → H1 “Retail volume growth of 7.6% compared to H1 FY26” (Oct-25: 8.9%), implying a much slower Q2",
+    "span": "AGM Jul-26 → H1 TU Oct-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Restated",
+    "text": "Prior-year ROCE: Oct-25 “Return on Capital Employed (based on last 12 months) is expected to be c.58%” → Oct-26 “is expected to be c.80%, up from 59% in preceding period”",
+    "span": "H1 TU Oct-25 → H1 TU Oct-26"
+   }
+  ]
+ }
+}

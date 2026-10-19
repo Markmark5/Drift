@@ -1,0 +1,1286 @@
+{
+ "ticker": "IMB",
+ "v": "2026-10-19.7b44",
+ "ccy": "GBX",
+ "src": "AlphaVantage IMB.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   1570.5
+  ],
+  [
+   "2021-10-22",
+   1582.0
+  ],
+  [
+   "2021-10-29",
+   1542.0
+  ],
+  [
+   "2021-11-05",
+   1565.5
+  ],
+  [
+   "2021-11-12",
+   1563.5
+  ],
+  [
+   "2021-11-19",
+   1584.0
+  ],
+  [
+   "2021-11-26",
+   1549.0
+  ],
+  [
+   "2021-12-03",
+   1559.0
+  ],
+  [
+   "2021-12-10",
+   1585.5
+  ],
+  [
+   "2021-12-17",
+   1588.0
+  ],
+  [
+   "2021-12-24",
+   1612.0
+  ],
+  [
+   "2021-12-31",
+   1616.5
+  ],
+  [
+   "2022-01-07",
+   1644.0
+  ],
+  [
+   "2022-01-14",
+   1709.5
+  ],
+  [
+   "2022-01-21",
+   1731.0
+  ],
+  [
+   "2022-01-28",
+   1766.5
+  ],
+  [
+   "2022-02-04",
+   1744.0
+  ],
+  [
+   "2022-02-11",
+   1818.5
+  ],
+  [
+   "2022-02-18",
+   1779.0
+  ],
+  [
+   "2022-02-25",
+   1683.5
+  ],
+  [
+   "2022-03-04",
+   1525.0
+  ],
+  [
+   "2022-03-11",
+   1526.5
+  ],
+  [
+   "2022-03-18",
+   1601.5
+  ],
+  [
+   "2022-03-25",
+   1651.5
+  ],
+  [
+   "2022-04-01",
+   1621.0
+  ],
+  [
+   "2022-04-08",
+   1677.5
+  ],
+  [
+   "2022-04-14",
+   1660.5
+  ],
+  [
+   "2022-04-22",
+   1689.5
+  ],
+  [
+   "2022-04-29",
+   1666.0
+  ],
+  [
+   "2022-05-06",
+   1657.5
+  ],
+  [
+   "2022-05-13",
+   1707.0
+  ],
+  [
+   "2022-05-20",
+   1790.5
+  ],
+  [
+   "2022-05-27",
+   1797.0
+  ],
+  [
+   "2022-06-01",
+   1791.5
+  ],
+  [
+   "2022-06-10",
+   1792.0
+  ],
+  [
+   "2022-06-17",
+   1783.0
+  ],
+  [
+   "2022-06-24",
+   1838.5
+  ],
+  [
+   "2022-07-01",
+   1835.5
+  ],
+  [
+   "2022-07-08",
+   1815.5
+  ],
+  [
+   "2022-07-15",
+   1857.0
+  ],
+  [
+   "2022-07-22",
+   1855.0
+  ],
+  [
+   "2022-07-29",
+   1799.0
+  ],
+  [
+   "2022-08-05",
+   1838.5
+  ],
+  [
+   "2022-08-12",
+   1880.0
+  ],
+  [
+   "2022-08-19",
+   1910.0
+  ],
+  [
+   "2022-08-26",
+   1877.0
+  ],
+  [
+   "2022-09-02",
+   1900.0
+  ],
+  [
+   "2022-09-09",
+   1952.5
+  ],
+  [
+   "2022-09-16",
+   1910.5
+  ],
+  [
+   "2022-09-23",
+   1867.0
+  ],
+  [
+   "2022-09-30",
+   1855.0
+  ],
+  [
+   "2022-10-07",
+   1991.0
+  ],
+  [
+   "2022-10-14",
+   2016.0
+  ],
+  [
+   "2022-10-21",
+   2048.0
+  ],
+  [
+   "2022-10-28",
+   2118.0
+  ],
+  [
+   "2022-11-04",
+   2118.0
+  ],
+  [
+   "2022-11-11",
+   1993.5
+  ],
+  [
+   "2022-11-18",
+   2121.0
+  ],
+  [
+   "2022-11-25",
+   2126.0
+  ],
+  [
+   "2022-12-02",
+   2100.0
+  ],
+  [
+   "2022-12-09",
+   2077.0
+  ],
+  [
+   "2022-12-16",
+   2050.0
+  ],
+  [
+   "2022-12-23",
+   2082.0
+  ],
+  [
+   "2022-12-30",
+   2071.0
+  ],
+  [
+   "2023-01-06",
+   2073.0
+  ],
+  [
+   "2023-01-13",
+   2044.0
+  ],
+  [
+   "2023-01-20",
+   2052.0
+  ],
+  [
+   "2023-01-27",
+   2010.0
+  ],
+  [
+   "2023-02-03",
+   2044.0
+  ],
+  [
+   "2023-02-10",
+   2024.0
+  ],
+  [
+   "2023-02-17",
+   2037.0
+  ],
+  [
+   "2023-02-24",
+   2070.0
+  ],
+  [
+   "2023-03-03",
+   2004.0
+  ],
+  [
+   "2023-03-10",
+   1979.0
+  ],
+  [
+   "2023-03-17",
+   1884.5
+  ],
+  [
+   "2023-03-24",
+   1883.5
+  ],
+  [
+   "2023-03-31",
+   1864.0
+  ],
+  [
+   "2023-04-06",
+   1901.5
+  ],
+  [
+   "2023-04-14",
+   1883.5
+  ],
+  [
+   "2023-04-21",
+   1945.0
+  ],
+  [
+   "2023-04-28",
+   1967.5
+  ],
+  [
+   "2023-05-05",
+   1900.0
+  ],
+  [
+   "2023-05-12",
+   1885.0
+  ],
+  [
+   "2023-05-19",
+   1787.5
+  ],
+  [
+   "2023-05-26",
+   1735.5
+  ],
+  [
+   "2023-06-02",
+   1731.0
+  ],
+  [
+   "2023-06-09",
+   1725.0
+  ],
+  [
+   "2023-06-16",
+   1759.5
+  ],
+  [
+   "2023-06-23",
+   1772.5
+  ],
+  [
+   "2023-06-30",
+   1738.5
+  ],
+  [
+   "2023-07-07",
+   1744.0
+  ],
+  [
+   "2023-07-14",
+   1757.0
+  ],
+  [
+   "2023-07-21",
+   1834.5
+  ],
+  [
+   "2023-07-28",
+   1855.0
+  ],
+  [
+   "2023-08-04",
+   1820.0
+  ],
+  [
+   "2023-08-11",
+   1808.0
+  ],
+  [
+   "2023-08-18",
+   1756.5
+  ],
+  [
+   "2023-08-25",
+   1771.5
+  ],
+  [
+   "2023-09-01",
+   1783.5
+  ],
+  [
+   "2023-09-08",
+   1756.0
+  ],
+  [
+   "2023-09-15",
+   1756.0
+  ],
+  [
+   "2023-09-22",
+   1738.0
+  ],
+  [
+   "2023-09-29",
+   1667.0
+  ],
+  [
+   "2023-10-06",
+   1669.0
+  ],
+  [
+   "2023-10-13",
+   1711.5
+  ],
+  [
+   "2023-10-20",
+   1714.0
+  ],
+  [
+   "2023-10-27",
+   1729.0
+  ],
+  [
+   "2023-11-03",
+   1802.5
+  ],
+  [
+   "2023-11-10",
+   1754.5
+  ],
+  [
+   "2023-11-17",
+   1852.0
+  ],
+  [
+   "2023-11-24",
+   1838.5
+  ],
+  [
+   "2023-12-01",
+   1858.5
+  ],
+  [
+   "2023-12-08",
+   1820.0
+  ],
+  [
+   "2023-12-15",
+   1808.0
+  ],
+  [
+   "2023-12-22",
+   1819.0
+  ],
+  [
+   "2023-12-29",
+   1806.5
+  ],
+  [
+   "2024-01-05",
+   1854.5
+  ],
+  [
+   "2024-01-12",
+   1890.0
+  ],
+  [
+   "2024-01-19",
+   1881.0
+  ],
+  [
+   "2024-01-26",
+   1934.0
+  ],
+  [
+   "2024-02-02",
+   1871.0
+  ],
+  [
+   "2024-02-09",
+   1882.5
+  ],
+  [
+   "2024-02-16",
+   1845.0
+  ],
+  [
+   "2024-02-23",
+   1829.0
+  ],
+  [
+   "2024-03-01",
+   1697.5
+  ],
+  [
+   "2024-03-08",
+   1692.5
+  ],
+  [
+   "2024-03-15",
+   1695.5
+  ],
+  [
+   "2024-03-22",
+   1734.0
+  ],
+  [
+   "2024-03-28",
+   1770.0
+  ],
+  [
+   "2024-04-05",
+   1725.0
+  ],
+  [
+   "2024-04-12",
+   1715.0
+  ],
+  [
+   "2024-04-19",
+   1774.0
+  ],
+  [
+   "2024-04-26",
+   1811.5
+  ],
+  [
+   "2024-05-03",
+   1826.0
+  ],
+  [
+   "2024-05-10",
+   1868.0
+  ],
+  [
+   "2024-05-17",
+   1965.5
+  ],
+  [
+   "2024-05-24",
+   1936.0
+  ],
+  [
+   "2024-05-31",
+   1941.0
+  ],
+  [
+   "2024-06-07",
+   1987.0
+  ],
+  [
+   "2024-06-14",
+   1999.5
+  ],
+  [
+   "2024-06-21",
+   2036.0
+  ],
+  [
+   "2024-06-28",
+   2024.0
+  ],
+  [
+   "2024-07-05",
+   2039.0
+  ],
+  [
+   "2024-07-12",
+   2085.0
+  ],
+  [
+   "2024-07-19",
+   2093.0
+  ],
+  [
+   "2024-07-26",
+   2145.0
+  ],
+  [
+   "2024-08-02",
+   2142.0
+  ],
+  [
+   "2024-08-09",
+   2126.0
+  ],
+  [
+   "2024-08-16",
+   2162.0
+  ],
+  [
+   "2024-08-23",
+   2143.0
+  ],
+  [
+   "2024-08-30",
+   2180.0
+  ],
+  [
+   "2024-09-06",
+   2229.0
+  ],
+  [
+   "2024-09-13",
+   2244.0
+  ],
+  [
+   "2024-09-20",
+   2170.0
+  ],
+  [
+   "2024-09-27",
+   2182.0
+  ],
+  [
+   "2024-10-04",
+   2151.0
+  ],
+  [
+   "2024-10-11",
+   2266.0
+  ],
+  [
+   "2024-10-18",
+   2308.0
+  ],
+  [
+   "2024-10-25",
+   2289.0
+  ],
+  [
+   "2024-11-01",
+   2361.0
+  ],
+  [
+   "2024-11-08",
+   2367.0
+  ],
+  [
+   "2024-11-15",
+   2371.0
+  ],
+  [
+   "2024-11-22",
+   2532.0
+  ],
+  [
+   "2024-11-29",
+   2569.0
+  ],
+  [
+   "2024-12-06",
+   2573.0
+  ],
+  [
+   "2024-12-13",
+   2616.0
+  ],
+  [
+   "2024-12-20",
+   2573.0
+  ],
+  [
+   "2024-12-24",
+   2560.0
+  ],
+  [
+   "2024-12-27",
+   2564.0
+  ],
+  [
+   "2025-01-03",
+   2604.0
+  ],
+  [
+   "2025-01-10",
+   2609.0
+  ],
+  [
+   "2025-01-17",
+   2602.0
+  ],
+  [
+   "2025-01-24",
+   2629.0
+  ],
+  [
+   "2025-01-31",
+   2721.0
+  ],
+  [
+   "2025-02-07",
+   2828.0
+  ],
+  [
+   "2025-02-14",
+   2792.0
+  ],
+  [
+   "2025-02-21",
+   2684.0
+  ],
+  [
+   "2025-02-28",
+   2795.0
+  ],
+  [
+   "2025-03-07",
+   2780.0
+  ],
+  [
+   "2025-03-14",
+   2785.0
+  ],
+  [
+   "2025-03-21",
+   2734.0
+  ],
+  [
+   "2025-03-28",
+   2826.0
+  ],
+  [
+   "2025-04-04",
+   2825.0
+  ],
+  [
+   "2025-04-11",
+   2896.0
+  ],
+  [
+   "2025-04-17",
+   2971.0
+  ],
+  [
+   "2025-04-25",
+   3003.0
+  ],
+  [
+   "2025-05-02",
+   3074.0
+  ],
+  [
+   "2025-05-09",
+   3018.0
+  ],
+  [
+   "2025-05-16",
+   2704.0
+  ],
+  [
+   "2025-05-23",
+   2816.0
+  ],
+  [
+   "2025-05-30",
+   2810.0
+  ],
+  [
+   "2025-06-06",
+   2876.0
+  ],
+  [
+   "2025-06-13",
+   2909.0
+  ],
+  [
+   "2025-06-20",
+   2953.0
+  ],
+  [
+   "2025-06-27",
+   2824.0
+  ],
+  [
+   "2025-07-04",
+   2849.0
+  ],
+  [
+   "2025-07-11",
+   2915.0
+  ],
+  [
+   "2025-07-18",
+   2928.0
+  ],
+  [
+   "2025-07-25",
+   2897.0
+  ],
+  [
+   "2025-08-01",
+   2950.0
+  ],
+  [
+   "2025-08-08",
+   3011.0
+  ],
+  [
+   "2025-08-15",
+   3050.0
+  ],
+  [
+   "2025-08-22",
+   3123.0
+  ],
+  [
+   "2025-08-29",
+   3122.0
+  ],
+  [
+   "2025-09-05",
+   3144.0
+  ],
+  [
+   "2025-09-12",
+   3190.0
+  ],
+  [
+   "2025-09-19",
+   3083.0
+  ],
+  [
+   "2025-09-26",
+   3175.0
+  ],
+  [
+   "2025-10-03",
+   3040.0
+  ],
+  [
+   "2025-10-10",
+   3143.0
+  ],
+  [
+   "2025-10-17",
+   3006.0
+  ],
+  [
+   "2025-10-24",
+   3006.0
+  ],
+  [
+   "2025-10-31",
+   3025.0
+  ],
+  [
+   "2025-11-07",
+   3171.0
+  ],
+  [
+   "2025-11-14",
+   3151.0
+  ],
+  [
+   "2025-11-21",
+   3224.0
+  ],
+  [
+   "2025-11-28",
+   3208.0
+  ],
+  [
+   "2025-12-05",
+   3250.0
+  ],
+  [
+   "2025-12-12",
+   3179.0
+  ],
+  [
+   "2025-12-19",
+   3176.0
+  ],
+  [
+   "2025-12-24",
+   3126.0
+  ],
+  [
+   "2026-01-02",
+   3125.0
+  ],
+  [
+   "2026-01-09",
+   3011.0
+  ],
+  [
+   "2026-01-16",
+   3044.0
+  ],
+  [
+   "2026-01-23",
+   3024.0
+  ],
+  [
+   "2026-01-30",
+   3066.0
+  ],
+  [
+   "2026-02-06",
+   3341.0
+  ],
+  [
+   "2026-02-13",
+   3288.0
+  ],
+  [
+   "2026-02-20",
+   3230.0
+  ],
+  [
+   "2026-02-27",
+   3325.0
+  ],
+  [
+   "2026-03-06",
+   3162.0
+  ],
+  [
+   "2026-03-13",
+   3201.0
+  ],
+  [
+   "2026-03-20",
+   3059.0
+  ],
+  [
+   "2026-03-27",
+   3075.0
+  ],
+  [
+   "2026-04-02",
+   3077.0
+  ],
+  [
+   "2026-04-10",
+   3084.0
+  ],
+  [
+   "2026-04-17",
+   2776.5
+  ],
+  [
+   "2026-04-24",
+   2769.0
+  ],
+  [
+   "2026-05-01",
+   2816.5
+  ],
+  [
+   "2026-05-08",
+   2745.5
+  ],
+  [
+   "2026-05-15",
+   2817.0
+  ],
+  [
+   "2026-05-22",
+   2795.0
+  ],
+  [
+   "2026-05-29",
+   2696.0
+  ],
+  [
+   "2026-06-05",
+   2761.0
+  ],
+  [
+   "2026-06-12",
+   2797.0
+  ],
+  [
+   "2026-06-19",
+   2732.0
+  ],
+  [
+   "2026-06-26",
+   2780.0
+  ],
+  [
+   "2026-07-03",
+   2792.0
+  ],
+  [
+   "2026-07-10",
+   2713.0
+  ],
+  [
+   "2026-07-17",
+   2870.0
+  ],
+  [
+   "2026-07-24",
+   2823.0
+  ],
+  [
+   "2026-07-31",
+   2825.0
+  ],
+  [
+   "2026-08-07",
+   2791.0
+  ],
+  [
+   "2026-08-14",
+   2609.0
+  ],
+  [
+   "2026-08-21",
+   2503.0
+  ],
+  [
+   "2026-08-28",
+   2527.0
+  ],
+  [
+   "2026-09-04",
+   2489.0
+  ],
+  [
+   "2026-09-11",
+   2490.0
+  ],
+  [
+   "2026-09-18",
+   2492.0
+  ],
+  [
+   "2026-09-25",
+   2442.0
+  ],
+  [
+   "2026-10-02",
+   2443.0
+  ],
+  [
+   "2026-10-09",
+   2662.0
+  ],
+  [
+   "2026-10-16",
+   2879.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-11-16",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "We remain on track to deliver against our strategy with our expectations for the coming year in line with the guidance we provided at our Capital Markets Day in January this year.",
+   "file": "20211116_IMB_Final-Results.md"
+  },
+  {
+   "d": "2022-03-15",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "CUT",
+   "s": -2,
+   "q": "While there will be some ongoing costs related to the suspension in Ukraine, we expect a relatively small impact on our constant currency adjusted operating profit, reflecting the limited profit contribution of the two markets.",
+   "file": "20220315_IMB_Update-on-Russia-&-Revised-Guidance.md",
+   "gnote": "discounted: exit from Russia"
+  },
+  {
+   "d": "2022-04-06",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "We are on track to deliver full-year results in line with our revised guidance issued on 15 March, with expected full-year net revenue growth of around 0-1 per cent on a constant currency basis and adjusted operating profit growth of around 1 per cent.",
+   "file": "20220406_IMB_Trading-Statement.md"
+  },
+  {
+   "d": "2022-05-17",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "We expect to deliver full-year net revenue growth of around 0-1 per cent and adjusted operating profit growth of around 1 per cent, at constant currency.",
+   "file": "20220517_IMB_Half-year-Report.md"
+  },
+  {
+   "d": "2022-10-06",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "In line with previous guidance, we expect full-year net revenue and Group adjusted operating profit to both grow by around 1 per cent at constant currency.",
+   "file": "20221006_IMB_Trading-Statement.md"
+  },
+  {
+   "d": "2022-11-15",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "As we move into that phase, we continue to expect low single-digit constant currency net revenue growth with constant currency adjusted operating profit growth accelerating to deliver mid-single digit CAGR over the next three years.",
+   "file": "20221115_IMB_Final-Results.md"
+  },
+  {
+   "d": "2023-04-13",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "We are on track to deliver full-year results in line with expectations and our guidance of low single-digit constant currency net revenue growth.",
+   "file": "20230413_IMB_Pre-close-trading-update.md"
+  },
+  {
+   "d": "2023-05-16",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "As previously guided, for the current year - inclusive of the impact of our Russian exit - we expect to grow our adjusted Group operating profit at the lower end of our mid-single digit range at constant currency.",
+   "file": "20230516_IMB_Half-year-Report.md"
+  },
+  {
+   "d": "2023-10-05",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The implementation of our five-year strategy is driving further improvements in operational and financial performance, and we are on track to deliver in line with our previous full-year guidance.",
+   "file": "20231005_IMB_Trading-Statement.md"
+  },
+  {
+   "d": "2023-11-14",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "In the coming year, we expect to deliver low-single-digit constant currency revenue growth and to grow our constant currency adjusted operating profit close to the middle of our mid-single digit range.",
+   "file": "20231114_IMB_Final-Results.md"
+  },
+  {
+   "d": "2024-04-09",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "For the full-year, on a constant currency basis, tobacco and NGP net revenue is expected to grow at a low single-digit rate, with Group adjusted operating profit growing at a rate close to the middle of our mid-single digit range.",
+   "file": "20240409_IMB_Pre-close-trading-update.md"
+  },
+  {
+   "d": "2024-05-15",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Pricing actions in tobacco taken in the first half and good momentum in NGP gives us confidence in our ability to deliver full-year results in line with our guidance.",
+   "file": "20240515_IMB_Half-year-Report.md"
+  },
+  {
+   "d": "2024-10-08",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "At constant currency, we are on track to deliver in line with our full-year guidance with an acceleration in tobacco and NGP net revenue growth vs last year and Group adjusted operating profit growth close to the middle of our mid-single digit range.",
+   "file": "20241008_IMB_Trading-Statement.md"
+  },
+  {
+   "d": "2024-11-19",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "In the coming year, we expect to deliver tobacco and NGP net revenue growth at low single-digit constant currency and to grow our Group adjusted operating profit close to the middle of our mid-single-digit range at constant currency.",
+   "file": "20241119_IMB_Final-Results.md"
+  },
+  {
+   "d": "2025-03-26",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "We remain confident of meeting our full year guidance with our second half delivery underpinned by embedded tobacco pricing already taken in the first half and further NGP growth as we build scale, and their associated margin benefits.",
+   "file": "20250326_IMB_Capital-Markets-Day-and-Trading-Update.md"
+  },
+  {
+   "d": "2025-05-14",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Despite the uncertain global economic environment, we are on track to deliver our full-year results in line with our guidance, supported by tobacco pricing already taken in the first half and continued momentum in NGP.",
+   "file": "20250514_IMB_Half-year-Report.md"
+  },
+  {
+   "d": "2025-10-07",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "At constant currency, we are on track to deliver low single-digit tobacco and NGP net revenue growth for FY25, with Group adjusted operating profit growth at a similar rate to last year, in line with guidance.",
+   "file": "20251007_IMB_Trading-update.md"
+  },
+  {
+   "d": "2025-11-18",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "For FY26, Group adjusted operating profit is expected to grow in the 3% to 5% range, on a constant currency basis, driven primarily by continued profit growth from our combustible tobacco business.",
+   "file": "20251118_IMB_Final-Results.md"
+  },
+  {
+   "d": "2026-04-14",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "Group adjusted operating profit expected to be slightly higher compared to H1 20251, with growth accelerating in H2, in line with previous guidance of a second-half weighted performance.",
+   "file": "20260414_IMB_Trading-Update.md"
+  },
+  {
+   "d": "2026-05-12",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Our expectations for the financial year are unchanged and in line with our guidance given in November 2025 and with our medium-term guidance set out at our Capital Markets Day in March 2025.",
+   "file": "20260512_IMB_Half-year-Financial-Report.md"
+  },
+  {
+   "d": "2026-10-08",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "Group adjusted operating profit growth is anticipated to be within our 3% to 5% range1. We expect to deliver high-single-digit adjusted earnings per share growth1 for the full year.",
+   "file": "20261008_IMB_Trading-Update.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-08",
+  "doc": "YE-TU",
+  "file": "20261008_IMB_Trading-Update.md",
+  "vs": "YE-TU Oct-25 · back to Oct-22 · H1 R May-26 · H1 TU Apr-26",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Last year: “High-single-digit adjusted EPS growth in line with expectations” → this year “High-single-digit earnings per share growth1”, with no reference to expectations anywhere (guidance-only anchor)",
+    "span": "“in line with expectations” in YE-TU Oct-22, Oct-24, Oct-25 (absent Oct-23)"
+   },
+   {
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "Profit position in range: last year “Group adjusted operating profit growth at a similar rate to last year, in line with guidance” → now only “within our 3% to 5% range1”, no position",
+    "span": "Oct-24 “close to the middle of our mid-single digit range”; Oct-25 similar rate → first YE-TU without a position"
+   },
+   {
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "NGP net revenue growth: last year “around the mid-point of a 12-14% range” → now just “double-digit net revenue growth1”",
+    "span": "Oct-24 “in the range of 20-30%”; Oct-25 12-14% → range dropped"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "NGP operating losses: last year “NGP losses are expected to be broadly flat year on year” → not mentioned (Apr-26 said H1 “NGP adjusted operating losses are expected to be moderately higher”)",
+    "span": "Given at Oct-24 and Oct-25 YE-TUs"
+   }
+  ]
+ }
+}

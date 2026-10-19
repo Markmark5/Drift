@@ -12,8 +12,8 @@
   {
    "ticker": "AAF",
    "company": "Airtel Africa PLC",
-   "chart": "lite/AAF.json?v=2026-10-18.9ea5",
-   "scored": "2026-10-18",
+   "chart": "lite/AAF.json?v=2026-10-19.7281",
+   "scored": "2026-10-19",
    "marks": 20
   },
   {
@@ -33,9 +33,9 @@
   {
    "ticker": "AC8",
    "company": "Acceler8 Ventures PLC",
-   "chart": "lite/AC8.json?v=2026-10-18.5c19",
-   "scored": "2026-10-18",
-   "marks": 1,
+   "chart": "lite/AC8.json?v=2026-10-19.0a65",
+   "scored": "2026-10-19",
+   "marks": 2,
    "src": "snapshots"
   },
   {
@@ -62,9 +62,9 @@
   {
    "ticker": "AJB",
    "company": "AJ Bell PLC",
-   "chart": "lite/AJB.json?v=2026-10-18.66c9",
-   "scored": "2026-10-18",
-   "marks": 22
+   "chart": "lite/AJB.json?v=2026-10-19.543f",
+   "scored": "2026-10-19",
+   "marks": 31
   },
   {
    "ticker": "ANG",
@@ -88,6 +88,13 @@
    "marks": 30
   },
   {
+   "ticker": "AVON",
+   "company": "Avon Technologies PLC",
+   "chart": "lite/AVON.json?v=2026-10-19.08d0",
+   "scored": "2026-10-19",
+   "marks": 22
+  },
+  {
    "ticker": "BKS",
    "company": "Beeks Financial Cloud Group PLC",
    "chart": "lite/BKS.json?v=2026-10-19.4829",
@@ -102,11 +109,25 @@
    "marks": 36
   },
   {
+   "ticker": "BOWL",
+   "company": "Hollywood Bowl Group PLC",
+   "chart": "lite/BOWL.json?v=2026-10-19.606a",
+   "scored": "2026-10-19",
+   "marks": 21
+  },
+  {
    "ticker": "BP.",
    "company": "BP PLC",
    "chart": "lite/BP.json?v=2026-10-18.65b9",
    "scored": "2026-10-18",
    "marks": 24
+  },
+  {
+   "ticker": "BPT",
+   "company": "Bridgepoint Group plc",
+   "chart": "lite/BPT.json?v=2026-10-19.5a3b",
+   "scored": "2026-10-19",
+   "marks": 15
   },
   {
    "ticker": "BWY",
@@ -137,11 +158,25 @@
    "marks": 21
   },
   {
+   "ticker": "CKN",
+   "company": "Clarkson PLC",
+   "chart": "lite/CKN.json?v=2026-10-19.d3a2",
+   "scored": "2026-10-19",
+   "marks": 23
+  },
+  {
    "ticker": "CNS",
    "company": "Corero Network Security plc",
-   "chart": "lite/CNS.json?v=2026-10-19.ec03",
+   "chart": "lite/CNS.json?v=2026-10-19.a7a6",
    "scored": "2026-10-19",
    "marks": 24
+  },
+  {
+   "ticker": "DFCH",
+   "company": "Distribution Finance Capital Holdings PLC",
+   "chart": "lite/DFCH.json?v=2026-10-19.97eb",
+   "scored": "2026-10-19",
+   "marks": 33
   },
   {
    "ticker": "DIAL",
@@ -172,6 +207,13 @@
    "marks": 48
   },
   {
+   "ticker": "FAN",
+   "company": "Volution Group plc",
+   "chart": "lite/FAN.json?v=2026-10-19.3bd9",
+   "scored": "2026-10-19",
+   "marks": 21
+  },
+  {
    "ticker": "GATC",
    "company": "Gattaca PLC",
    "chart": "lite/GATC.json?v=2026-10-19.2ddb",
@@ -184,6 +226,27 @@
    "chart": "lite/GNC.json?v=2026-10-19.7345",
    "scored": "2026-10-19",
    "marks": 7
+  },
+  {
+   "ticker": "HSW",
+   "company": "Hostelworld Group PLC",
+   "chart": "lite/HSW.json?v=2026-10-19.fdea",
+   "scored": "2026-10-19",
+   "marks": 32
+  },
+  {
+   "ticker": "IGP",
+   "company": "Intercede Group PLC",
+   "chart": "lite/IGP.json?v=2026-10-19.4d4f",
+   "scored": "2026-10-19",
+   "marks": 29
+  },
+  {
+   "ticker": "IMB",
+   "company": "Imperial Brands PLC",
+   "chart": "lite/IMB.json?v=2026-10-19.7b44",
+   "scored": "2026-10-19",
+   "marks": 21
   },
   {
    "ticker": "IOF",
@@ -228,6 +291,13 @@
    "marks": 28
   },
   {
+   "ticker": "MCON",
+   "company": "Mincon Group PLC",
+   "chart": "lite/MCON.json?v=2026-10-19.3a6f",
+   "scored": "2026-10-19",
+   "marks": 22
+  },
+  {
    "ticker": "MIND",
    "company": "MIND Gym PLC",
    "chart": "lite/MIND.json?v=2026-10-19.802b",
@@ -236,11 +306,39 @@
    "src": "snapshots"
   },
   {
+   "ticker": "MOTR",
+   "company": "Motorpoint Group PLC",
+   "chart": "lite/MOTR.json?v=2026-10-19.489b",
+   "scored": "2026-10-19",
+   "marks": 26
+  },
+  {
    "ticker": "MUL",
    "company": "Mulberry Group PLC",
    "chart": "lite/MUL.json?v=2026-10-19.993c",
    "scored": "2026-10-19",
    "marks": 20
+  },
+  {
+   "ticker": "NET",
+   "company": "Netcall PLC",
+   "chart": "lite/NET.json?v=2026-10-19.5551",
+   "scored": "2026-10-19",
+   "marks": 25
+  },
+  {
+   "ticker": "NFG",
+   "company": "Next 15 Group PLC",
+   "chart": "lite/NFG.json?v=2026-10-19.b0e4",
+   "scored": "2026-10-19",
+   "marks": 19
+  },
+  {
+   "ticker": "OMG",
+   "company": "Oxford Metrics PLC",
+   "chart": "lite/OMG.json?v=2026-10-19.8f17",
+   "scored": "2026-10-19",
+   "marks": 23
   },
   {
    "ticker": "OXIG",
@@ -262,6 +360,13 @@
    "chart": "lite/PMI.json?v=2026-10-18.1edb",
    "scored": "2026-10-18",
    "marks": 28
+  },
+  {
+   "ticker": "PNN",
+   "company": "Pennon Group plc",
+   "chart": "lite/PNN.json?v=2026-10-19.b0e3",
+   "scored": "2026-10-19",
+   "marks": 20
   },
   {
    "ticker": "PRV",
@@ -306,6 +411,13 @@
    "marks": 23
   },
   {
+   "ticker": "SDG",
+   "company": "Sanderson Design Group PLC",
+   "chart": "lite/SDG.json?v=2026-10-19.3929",
+   "scored": "2026-10-19",
+   "marks": 25
+  },
+  {
    "ticker": "SQZ",
    "company": "Serica Energy PLC",
    "chart": "lite/SQZ.json?v=2026-10-19.dea3",
@@ -313,11 +425,25 @@
    "marks": 35
   },
   {
+   "ticker": "SSPG",
+   "company": "SSP Group PLC",
+   "chart": "lite/SSPG.json?v=2026-10-19.d854",
+   "scored": "2026-10-19",
+   "marks": 25
+  },
+  {
    "ticker": "THG",
    "company": "THG PLC",
    "chart": "lite/THG.json?v=2026-10-18.e113",
    "scored": "2026-10-18",
    "marks": 32
+  },
+  {
+   "ticker": "THRU",
+   "company": "Thruvision Group plc",
+   "chart": "lite/THRU.json?v=2026-10-19.6073",
+   "scored": "2026-10-19",
+   "marks": 26
   },
   {
    "ticker": "TPK",
@@ -332,6 +458,13 @@
    "chart": "lite/TPX.json?v=2026-10-19.8dc0",
    "scored": "2026-10-19",
    "marks": 26
+  },
+  {
+   "ticker": "TSCO",
+   "company": "Tesco PLC",
+   "chart": "lite/TSCO.json?v=2026-10-19.75db",
+   "scored": "2026-10-19",
+   "marks": 20
   },
   {
    "ticker": "TSTL",
@@ -353,6 +486,13 @@
    "chart": "lite/VLX.json?v=2026-10-19.548f",
    "scored": "2026-10-19",
    "marks": 27
+  },
+  {
+   "ticker": "VP.",
+   "company": "Vp plc",
+   "chart": "lite/VP.json?v=2026-10-19.edad",
+   "scored": "2026-10-19",
+   "marks": 26
   },
   {
    "ticker": "VTU",

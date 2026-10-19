@@ -1,0 +1,1384 @@
+{
+ "ticker": "HSW",
+ "v": "2026-10-19.fdea",
+ "ccy": "GBX",
+ "src": "AlphaVantage HSW.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   74.1
+  ],
+  [
+   "2021-10-22",
+   78.8
+  ],
+  [
+   "2021-10-29",
+   72.0
+  ],
+  [
+   "2021-11-05",
+   70.1
+  ],
+  [
+   "2021-11-12",
+   68.75
+  ],
+  [
+   "2021-11-19",
+   66.0
+  ],
+  [
+   "2021-11-26",
+   68.0
+  ],
+  [
+   "2021-12-03",
+   68.6
+  ],
+  [
+   "2021-12-10",
+   70.5
+  ],
+  [
+   "2021-12-17",
+   66.3
+  ],
+  [
+   "2021-12-24",
+   68.6
+  ],
+  [
+   "2021-12-31",
+   68.5
+  ],
+  [
+   "2022-01-07",
+   69.0
+  ],
+  [
+   "2022-01-14",
+   75.0
+  ],
+  [
+   "2022-01-21",
+   77.5
+  ],
+  [
+   "2022-01-28",
+   77.6
+  ],
+  [
+   "2022-02-04",
+   78.2
+  ],
+  [
+   "2022-02-11",
+   84.0
+  ],
+  [
+   "2022-02-18",
+   87.4
+  ],
+  [
+   "2022-02-25",
+   79.6
+  ],
+  [
+   "2022-03-04",
+   62.5
+  ],
+  [
+   "2022-03-11",
+   64.0
+  ],
+  [
+   "2022-03-18",
+   63.5
+  ],
+  [
+   "2022-03-25",
+   67.2
+  ],
+  [
+   "2022-04-01",
+   80.0
+  ],
+  [
+   "2022-04-08",
+   78.4
+  ],
+  [
+   "2022-04-14",
+   81.1
+  ],
+  [
+   "2022-04-22",
+   86.5
+  ],
+  [
+   "2022-04-29",
+   84.6
+  ],
+  [
+   "2022-05-06",
+   82.7
+  ],
+  [
+   "2022-05-13",
+   87.9
+  ],
+  [
+   "2022-05-20",
+   89.0
+  ],
+  [
+   "2022-05-27",
+   100.0
+  ],
+  [
+   "2022-06-01",
+   104.4
+  ],
+  [
+   "2022-06-10",
+   101.0
+  ],
+  [
+   "2022-06-17",
+   106.4
+  ],
+  [
+   "2022-06-24",
+   93.9
+  ],
+  [
+   "2022-07-01",
+   93.0
+  ],
+  [
+   "2022-07-08",
+   92.0
+  ],
+  [
+   "2022-07-15",
+   91.95
+  ],
+  [
+   "2022-07-22",
+   93.4
+  ],
+  [
+   "2022-07-29",
+   97.3
+  ],
+  [
+   "2022-08-05",
+   97.9
+  ],
+  [
+   "2022-08-12",
+   87.6
+  ],
+  [
+   "2022-08-19",
+   82.2
+  ],
+  [
+   "2022-08-26",
+   85.15
+  ],
+  [
+   "2022-09-02",
+   82.0
+  ],
+  [
+   "2022-09-09",
+   81.8
+  ],
+  [
+   "2022-09-16",
+   70.9
+  ],
+  [
+   "2022-09-23",
+   72.8
+  ],
+  [
+   "2022-09-30",
+   73.6
+  ],
+  [
+   "2022-10-07",
+   75.4
+  ],
+  [
+   "2022-10-14",
+   80.1
+  ],
+  [
+   "2022-10-21",
+   87.75
+  ],
+  [
+   "2022-10-28",
+   90.6
+  ],
+  [
+   "2022-11-04",
+   92.3
+  ],
+  [
+   "2022-11-11",
+   95.0
+  ],
+  [
+   "2022-11-18",
+   91.0
+  ],
+  [
+   "2022-11-25",
+   101.0
+  ],
+  [
+   "2022-12-02",
+   103.2
+  ],
+  [
+   "2022-12-09",
+   106.0
+  ],
+  [
+   "2022-12-16",
+   114.0
+  ],
+  [
+   "2022-12-23",
+   121.6
+  ],
+  [
+   "2022-12-30",
+   115.2
+  ],
+  [
+   "2023-01-06",
+   116.0
+  ],
+  [
+   "2023-01-13",
+   122.8
+  ],
+  [
+   "2023-01-20",
+   118.4
+  ],
+  [
+   "2023-01-27",
+   128.0
+  ],
+  [
+   "2023-02-03",
+   145.0
+  ],
+  [
+   "2023-02-10",
+   150.2
+  ],
+  [
+   "2023-02-17",
+   139.2
+  ],
+  [
+   "2023-02-24",
+   138.0
+  ],
+  [
+   "2023-03-03",
+   129.0
+  ],
+  [
+   "2023-03-10",
+   137.0
+  ],
+  [
+   "2023-03-17",
+   144.8
+  ],
+  [
+   "2023-03-24",
+   142.6
+  ],
+  [
+   "2023-03-31",
+   131.6
+  ],
+  [
+   "2023-04-06",
+   130.0
+  ],
+  [
+   "2023-04-14",
+   123.0
+  ],
+  [
+   "2023-04-21",
+   122.0
+  ],
+  [
+   "2023-04-28",
+   124.5
+  ],
+  [
+   "2023-05-05",
+   129.5
+  ],
+  [
+   "2023-05-12",
+   142.5
+  ],
+  [
+   "2023-05-19",
+   133.0
+  ],
+  [
+   "2023-05-26",
+   124.0
+  ],
+  [
+   "2023-06-02",
+   126.5
+  ],
+  [
+   "2023-06-09",
+   124.0
+  ],
+  [
+   "2023-06-16",
+   126.5
+  ],
+  [
+   "2023-06-23",
+   125.5
+  ],
+  [
+   "2023-06-30",
+   127.0
+  ],
+  [
+   "2023-07-07",
+   119.0
+  ],
+  [
+   "2023-07-14",
+   126.5
+  ],
+  [
+   "2023-07-21",
+   135.0
+  ],
+  [
+   "2023-07-28",
+   130.0
+  ],
+  [
+   "2023-08-04",
+   134.0
+  ],
+  [
+   "2023-08-11",
+   127.5
+  ],
+  [
+   "2023-08-18",
+   127.0
+  ],
+  [
+   "2023-08-25",
+   125.5
+  ],
+  [
+   "2023-09-01",
+   127.5
+  ],
+  [
+   "2023-09-08",
+   129.0
+  ],
+  [
+   "2023-09-15",
+   126.0
+  ],
+  [
+   "2023-09-22",
+   125.0
+  ],
+  [
+   "2023-09-29",
+   127.0
+  ],
+  [
+   "2023-10-06",
+   118.5
+  ],
+  [
+   "2023-10-13",
+   115.5
+  ],
+  [
+   "2023-10-20",
+   117.5
+  ],
+  [
+   "2023-10-27",
+   109.0
+  ],
+  [
+   "2023-11-03",
+   119.5
+  ],
+  [
+   "2023-11-10",
+   117.0
+  ],
+  [
+   "2023-11-17",
+   124.0
+  ],
+  [
+   "2023-11-24",
+   126.0
+  ],
+  [
+   "2023-12-01",
+   126.0
+  ],
+  [
+   "2023-12-08",
+   136.5
+  ],
+  [
+   "2023-12-15",
+   136.0
+  ],
+  [
+   "2023-12-22",
+   137.0
+  ],
+  [
+   "2023-12-29",
+   136.5
+  ],
+  [
+   "2024-01-05",
+   139.5
+  ],
+  [
+   "2024-01-12",
+   143.5
+  ],
+  [
+   "2024-01-19",
+   146.0
+  ],
+  [
+   "2024-01-26",
+   144.0
+  ],
+  [
+   "2024-02-02",
+   144.0
+  ],
+  [
+   "2024-02-09",
+   144.0
+  ],
+  [
+   "2024-02-16",
+   155.0
+  ],
+  [
+   "2024-02-23",
+   154.0
+  ],
+  [
+   "2024-03-01",
+   158.5
+  ],
+  [
+   "2024-03-08",
+   164.0
+  ],
+  [
+   "2024-03-15",
+   170.0
+  ],
+  [
+   "2024-03-22",
+   155.5
+  ],
+  [
+   "2024-03-28",
+   156.0
+  ],
+  [
+   "2024-04-05",
+   160.0
+  ],
+  [
+   "2024-04-12",
+   156.0
+  ],
+  [
+   "2024-04-19",
+   150.0
+  ],
+  [
+   "2024-04-26",
+   159.5
+  ],
+  [
+   "2024-05-03",
+   162.0
+  ],
+  [
+   "2024-05-10",
+   160.5
+  ],
+  [
+   "2024-05-17",
+   157.0
+  ],
+  [
+   "2024-05-24",
+   157.0
+  ],
+  [
+   "2024-05-31",
+   152.5
+  ],
+  [
+   "2024-06-07",
+   153.0
+  ],
+  [
+   "2024-06-14",
+   160.0
+  ],
+  [
+   "2024-06-21",
+   163.0
+  ],
+  [
+   "2024-06-28",
+   163.0
+  ],
+  [
+   "2024-07-05",
+   160.0
+  ],
+  [
+   "2024-07-12",
+   150.0
+  ],
+  [
+   "2024-07-19",
+   147.0
+  ],
+  [
+   "2024-07-26",
+   145.5
+  ],
+  [
+   "2024-08-02",
+   138.0
+  ],
+  [
+   "2024-08-09",
+   143.5
+  ],
+  [
+   "2024-08-16",
+   141.5
+  ],
+  [
+   "2024-08-23",
+   148.0
+  ],
+  [
+   "2024-08-30",
+   145.0
+  ],
+  [
+   "2024-09-06",
+   145.0
+  ],
+  [
+   "2024-09-13",
+   142.5
+  ],
+  [
+   "2024-09-20",
+   140.0
+  ],
+  [
+   "2024-09-27",
+   140.5
+  ],
+  [
+   "2024-10-04",
+   132.0
+  ],
+  [
+   "2024-10-11",
+   137.0
+  ],
+  [
+   "2024-10-18",
+   132.0
+  ],
+  [
+   "2024-10-25",
+   133.0
+  ],
+  [
+   "2024-11-01",
+   126.0
+  ],
+  [
+   "2024-11-08",
+   133.0
+  ],
+  [
+   "2024-11-15",
+   139.0
+  ],
+  [
+   "2024-11-22",
+   134.5
+  ],
+  [
+   "2024-11-29",
+   132.0
+  ],
+  [
+   "2024-12-06",
+   142.5
+  ],
+  [
+   "2024-12-13",
+   139.0
+  ],
+  [
+   "2024-12-20",
+   131.0
+  ],
+  [
+   "2024-12-24",
+   132.0
+  ],
+  [
+   "2024-12-27",
+   132.0
+  ],
+  [
+   "2025-01-03",
+   133.0
+  ],
+  [
+   "2025-01-10",
+   135.0
+  ],
+  [
+   "2025-01-17",
+   134.5
+  ],
+  [
+   "2025-01-24",
+   132.0
+  ],
+  [
+   "2025-01-31",
+   130.0
+  ],
+  [
+   "2025-02-07",
+   133.0
+  ],
+  [
+   "2025-02-14",
+   127.0
+  ],
+  [
+   "2025-02-21",
+   128.5
+  ],
+  [
+   "2025-02-28",
+   120.0
+  ],
+  [
+   "2025-03-07",
+   127.0
+  ],
+  [
+   "2025-03-14",
+   123.5
+  ],
+  [
+   "2025-03-21",
+   130.0
+  ],
+  [
+   "2025-03-28",
+   124.5
+  ],
+  [
+   "2025-04-04",
+   113.0
+  ],
+  [
+   "2025-04-11",
+   112.0
+  ],
+  [
+   "2025-04-17",
+   115.0
+  ],
+  [
+   "2025-04-25",
+   112.0
+  ],
+  [
+   "2025-05-02",
+   117.0
+  ],
+  [
+   "2025-05-09",
+   110.0
+  ],
+  [
+   "2025-05-16",
+   116.0
+  ],
+  [
+   "2025-05-23",
+   120.0
+  ],
+  [
+   "2025-05-30",
+   120.5
+  ],
+  [
+   "2025-06-06",
+   116.0
+  ],
+  [
+   "2025-06-13",
+   119.0
+  ],
+  [
+   "2025-06-20",
+   147.0
+  ],
+  [
+   "2025-06-27",
+   137.0
+  ],
+  [
+   "2025-07-04",
+   137.0
+  ],
+  [
+   "2025-07-11",
+   129.0
+  ],
+  [
+   "2025-07-18",
+   129.0
+  ],
+  [
+   "2025-07-25",
+   124.5
+  ],
+  [
+   "2025-08-01",
+   118.0
+  ],
+  [
+   "2025-08-08",
+   116.0
+  ],
+  [
+   "2025-08-15",
+   113.0
+  ],
+  [
+   "2025-08-22",
+   119.5
+  ],
+  [
+   "2025-08-29",
+   115.5
+  ],
+  [
+   "2025-09-05",
+   117.0
+  ],
+  [
+   "2025-09-12",
+   117.0
+  ],
+  [
+   "2025-09-19",
+   116.0
+  ],
+  [
+   "2025-09-26",
+   115.0
+  ],
+  [
+   "2025-10-03",
+   119.0
+  ],
+  [
+   "2025-10-10",
+   123.5
+  ],
+  [
+   "2025-10-17",
+   126.5
+  ],
+  [
+   "2025-10-24",
+   129.5
+  ],
+  [
+   "2025-10-31",
+   127.0
+  ],
+  [
+   "2025-11-07",
+   126.5
+  ],
+  [
+   "2025-11-14",
+   132.5
+  ],
+  [
+   "2025-11-21",
+   125.5
+  ],
+  [
+   "2025-11-28",
+   124.5
+  ],
+  [
+   "2025-12-05",
+   125.0
+  ],
+  [
+   "2025-12-12",
+   127.0
+  ],
+  [
+   "2025-12-19",
+   120.0
+  ],
+  [
+   "2025-12-24",
+   123.5
+  ],
+  [
+   "2026-01-02",
+   126.0
+  ],
+  [
+   "2026-01-09",
+   124.0
+  ],
+  [
+   "2026-01-16",
+   121.5
+  ],
+  [
+   "2026-01-23",
+   118.5
+  ],
+  [
+   "2026-01-30",
+   117.0
+  ],
+  [
+   "2026-02-06",
+   114.5
+  ],
+  [
+   "2026-02-13",
+   111.5
+  ],
+  [
+   "2026-02-20",
+   108.0
+  ],
+  [
+   "2026-02-27",
+   111.5
+  ],
+  [
+   "2026-03-06",
+   104.0
+  ],
+  [
+   "2026-03-13",
+   98.4
+  ],
+  [
+   "2026-03-20",
+   102.0
+  ],
+  [
+   "2026-03-27",
+   97.0
+  ],
+  [
+   "2026-04-02",
+   99.8
+  ],
+  [
+   "2026-04-10",
+   101.0
+  ],
+  [
+   "2026-04-17",
+   112.0
+  ],
+  [
+   "2026-04-24",
+   107.0
+  ],
+  [
+   "2026-05-01",
+   107.0
+  ],
+  [
+   "2026-05-08",
+   107.0
+  ],
+  [
+   "2026-05-15",
+   107.0
+  ],
+  [
+   "2026-05-22",
+   109.0
+  ],
+  [
+   "2026-05-29",
+   110.0
+  ],
+  [
+   "2026-06-05",
+   111.0
+  ],
+  [
+   "2026-06-12",
+   113.0
+  ],
+  [
+   "2026-06-19",
+   111.5
+  ],
+  [
+   "2026-06-26",
+   111.5
+  ],
+  [
+   "2026-07-03",
+   108.0
+  ],
+  [
+   "2026-07-10",
+   105.0
+  ],
+  [
+   "2026-07-17",
+   105.0
+  ],
+  [
+   "2026-07-24",
+   105.0
+  ],
+  [
+   "2026-07-31",
+   104.0
+  ],
+  [
+   "2026-08-07",
+   107.5
+  ],
+  [
+   "2026-08-14",
+   115.0
+  ],
+  [
+   "2026-08-21",
+   114.5
+  ],
+  [
+   "2026-08-28",
+   108.5
+  ],
+  [
+   "2026-09-04",
+   106.0
+  ],
+  [
+   "2026-09-11",
+   113.0
+  ],
+  [
+   "2026-09-18",
+   100.0
+  ],
+  [
+   "2026-09-25",
+   100.5
+  ],
+  [
+   "2026-10-02",
+   100.0
+  ],
+  [
+   "2026-10-09",
+   89.0
+  ],
+  [
+   "2026-10-16",
+   84.8
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2022-01-12",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "flat",
+   "s": 0,
+   "q": "While 2021 has continued to be a challenging year for Hostelworld and the global travel industry, we are pleased to report that the Group recorded a consistent recovery in bookings and revenue versus 2019 levels throughout the year, save for the latter part of the year which was impacted by the emergence of the Omicron variant.",
+   "file": "20220112_HSW_Trading-Update.md"
+  },
+  {
+   "d": "2022-03-31",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -1,
+   "q": "In the light of continued market uncertainty, the Group will not provide full year guidance until such time as the overall impact of COVID-19 on the Group becomes clearer.",
+   "file": "20220331_HSW_Preliminary-Results-for-Year-ended-31-Dec-2021.md"
+  },
+  {
+   "d": "2022-05-11",
+   "doc": "AGM",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 2,
+   "q": "The performance to date has been stronger than we had initially expected, and we are well geared to the travel recovery.",
+   "file": "20220511_HSW_2022-AGM-Statement.md"
+  },
+  {
+   "d": "2022-07-12",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Despite macro-economic uncertainties and recent disruption to airline schedules, I am very confident that we are well positioned to continue to capitalise on the travel recovery as we enter our key seasonal summer trading period.",
+   "file": "20220712_HSW_Trading-Update.md"
+  },
+  {
+   "d": "2022-08-10",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Overall, we expect direct marketing costs as a percentage of net revenue will remain at H1 2022 levels for the balance of the year, before normalising to circa 50-55% range over 2023 as we continue to optimise marketing investments for long term growth in new customers and direct margin.",
+   "file": "20220810_HSW_Interim-Results-2022.md"
+  },
+  {
+   "d": "2022-10-12",
+   "doc": "Q3 TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Social strategy is delivering margin growth well ahead of expectations, with marketing as a percentage of net revenue expected to improve from 70% in H1 to approximately 55% in H2",
+   "file": "20221012_HSW_Trading-Update.md"
+  },
+  {
+   "d": "2023-01-11",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Our innovative and highly differentiated social network powered strategy has enabled us to capitalise on the strong recovery in demand, delivering on the guidance we set out at our Capital Markets Day on 23 November 2022.",
+   "file": "20230111_HSW_Trading-Update.md"
+  },
+  {
+   "d": "2023-03-22",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "We are encouraged by the trends we have seen since the start of the year and believe that the business is firmly on track to deliver the targets for FY 2023 presented at our Capital Markets Day in November 2022.",
+   "file": "20230322_HSW_Preliminary-results-for-the-year-ended-31-Dec-2022.md"
+  },
+  {
+   "d": "2023-05-09",
+   "doc": "AGM",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 2,
+   "q": "As a result of this strong performance and in the absence of any deterioration in the macro-economic environment, the reintroduction of Covid restrictions or air travel disruptions, we expect bookings and revenue to grow by 30% over 2022 and our adjusted EBITDA to be in the range of €16.5 million to €17 million for the full year",
+   "file": "20230509_HSW_2023-AGM-Statement.md"
+  },
+  {
+   "d": "2023-07-12",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group reiterates earnings guidance of adjusted EBITDA in the range of €16.5 million to €17 million for the full year, absent any deterioration in the macro-economic environment, the reintroduction of Covid restrictions or air travel disruptions.",
+   "file": "20230712_HSW_Trading-Update.md"
+  },
+  {
+   "d": "2023-08-10",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board remains confident in the long-term resilience of our business model and the potential of our differentiated growth strategy and reiterating earnings guidance of adjusted EBITDA in the range of €16.5 million to €17 million for the full year, absent any deterioration in the macro-economic climate, the re-introduction of travel restrictions or other air travel related disruptions.",
+   "file": "20230810_HSW_Interim-results-2023.md"
+  },
+  {
+   "d": "2023-10-18",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Based on our record revenue performance YTD, we now expect adjusted EBITDA to be in the range of €17.5m to €18.0m for FY23 (up from €16.5m to €17.0m communicated at our AGM in May 2023).",
+   "file": "20231018_HSW_Trading-Update.md"
+  },
+  {
+   "d": "2024-01-10",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 1,
+   "q": "FY 2023 adjusted EBITDA of c. €18.3m exceeds the upper end of market guidance (€17.5m - €18.0m)",
+   "file": "20240110_HSW_Trading-Statement.md"
+  },
+  {
+   "d": "2024-03-21",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "With our record performance in 2023 and substantial progress in strengthening our balance sheet, I believe we are strongly positioned to deliver against our medium-term financial commitments published at our Capital Markets Day in November 2022.",
+   "file": "20240321_HSW_Preliminary-results-for-the-year-ended-31-Dec-2023.md"
+  },
+  {
+   "d": "2024-05-02",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "Building on 2023's strong performance, we are confident we can deliver high single-digit booking and revenue growth, in line with company guidance.",
+   "file": "20240502_HSW_2024-AGM-Statement.md"
+  },
+  {
+   "d": "2024-07-10",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Looking ahead, the Group is well positioned to capitalise on market demand and reiterates a FY 2024 adjusted EBITDA in line with market consensus3.",
+   "file": "20240710_HSW_Trading-Statement.md"
+  },
+  {
+   "d": "2024-08-08",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board remains confident in our differentiated growth strategy and reaffirms our full year earnings guidance of adjusted EBITDA in line with market consensus, absent any deterioration in the macro-economic climate or the occurrence of significant air travel related disruptions.",
+   "file": "20240808_HSW_Interim-Results-2024.md"
+  },
+  {
+   "d": "2024-09-26",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board remains confident in our differentiated growth strategy and reaffirms our full year earnings guidance of adjusted EBITDA in line with market consensus, absent any deterioration in the macro-economic climate or the occurrence of significant air travel related disruptions.",
+   "file": "20240926_HSW_Half-year-Report---Correction.md"
+  },
+  {
+   "d": "2024-10-15",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group reiterates a FY 2024 adjusted EBITDA guidance in line with market consensus4.",
+   "file": "20241015_HSW_Trading-Update.md"
+  },
+  {
+   "d": "2025-01-14",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Adjusted EBITDA delivery in line with consensus and return to net cash",
+   "file": "20250114_HSW_Trading-Statement.md"
+  },
+  {
+   "d": "2025-03-20",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -2,
+   "q": "We will continue to invest in our technology and expand our social features to enhance the customer experience and drive future growth. A detailed growth strategy and capital allocation update will be provided on the 29 April at our Capital Markets Day.",
+   "file": "20250320_HSW_Preliminary-results-for-the-year-ended-31-Dec-2024.md"
+  },
+  {
+   "d": "2025-04-29",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -2,
+   "q": "While it is still early in the year and the summer booking season hasn't yet reached its peak, if current trends persist, we anticipate achieving mid-single-digit revenue growth for the full year.",
+   "file": "20250429_HSW_Long-Term-Strategy-to-Generate-Shareholder-Value.md"
+  },
+  {
+   "d": "2025-07-10",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Looking ahead, the Group reiterates a FY 2025 adjusted EBITDA in line with market consensus3.",
+   "file": "20250710_HSW_Trading-Statement.md"
+  },
+  {
+   "d": "2025-07-30",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board remains confident in our differentiated growth strategy and reaffirms our full year guidance in line with market consensus.",
+   "file": "20250730_HSW_Interim-Results-2025.md"
+  },
+  {
+   "d": "2025-10-09",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "We reiterate our full-year 2025 adjusted EBITDA guidance, which remains in line with the current market consensus³ of €19.8m.",
+   "file": "20251009_HSW_Trading-Statement.md"
+  },
+  {
+   "d": "2025-10-21",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Hostelworld's financial guidance for FY 2025 remains unchanged.",
+   "file": "20251021_HSW_Acquisition.md"
+  },
+  {
+   "d": "2026-01-15",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Full year adjusted EBITDA is expected to be €19.9m, in line with market consensus3.",
+   "file": "20260115_HSW_Trading-Statement.md"
+  },
+  {
+   "d": "2026-03-26",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board remains confident in the Group's ability to deliver low double-digit revenue growth in 2026 and 2027, in line with the targets set out at the April 2025 Capital Markets Day, with an adjusted EBITDA margin greater than 20% and adjusted free cash flow conversion of approximately 70%.",
+   "file": "20260326_HSW_Preliminary-results-for-the-year-ended-31-Dec-2025.md"
+  },
+  {
+   "d": "2026-05-06",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -2,
+   "q": "On that basis, and assuming no further escalation of the Middle East conflict, the Board reiterates its guidance for the financial year 2026 in line with current market expectations.",
+   "file": "20260506_HSW_AGM-Statement.md"
+  },
+  {
+   "d": "2026-07-09",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -2,
+   "q": "Our full-year guidance assumes that the disruption associated with the Middle East conflict eases through the second half and broader trading conditions normalise, with the contribution from our growth initiatives increasing as the year progresses.",
+   "file": "20260709_HSW_Trading-Statement.md"
+  },
+  {
+   "d": "2026-07-29",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -2,
+   "q": "Our full-year guidance currently assumes that the disruption from the conflict in the Middle East eases through the second half and that broader trading conditions stabilise.",
+   "file": "20260729_HSW_Interim-Results-2026.md"
+  },
+  {
+   "d": "2026-10-07",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -3,
+   "q": "The Board now expects to deliver FY 2026 revenue growth of approximately 10%, and an adjusted EBITDA⁶ in the range of €20.0m to €21.0m (FY 2025: €19.9m), representing an adjusted EBITDA margin of c. 20%.",
+   "file": "20261007_HSW_Trading-Statement.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-07",
+  "doc": "Q3 TU",
+  "file": "20261007_HSW_Trading-Statement.md",
+  "vs": "Q3 TU Oct-25 · H1 R Jul-26 · CMD Apr-25 · back to Oct-24",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Target dropped",
+    "text": "FY27 growth target cut: CMD “Low double-digit revenue growth in 2026 and 2027, pre-M&A” → now “For FY 2027, as the benefit of Elevate on our commission rate annualises and assuming no recovery in long-haul volumes, the Board now expects net revenue growth in the mid-single digits.”",
+    "span": "Low double-digit target restated Mar-26 and Jul-26"
+   },
+   {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Consensus anchor dropped from the headline: last year “Reaffirming FY adjusted EBITDA guidance in line with expectations.” → now headline “in line with our medium-term targets” (margin c.20%), with the €20.0-21.0m range below the €22.9m consensus left to footnote 6",
+    "span": "In-line-with-consensus or market-expectations anchor in every update Jul-24 to Jul-26 → first break"
+   },
+   {
+    "sev": "amber",
+    "type": "Restated",
+    "text": "Volume KPI redefined: “net bookings” and ABV replaced by “Net Transactions includes bookings paid via directly contracted inventory, 3rd party contracted inventory and Social Pass purchases” and net average transaction value, so YoY volume is no longer on last year's basis",
+    "span": "Net bookings/ABV used Oct-24, Oct-25; switched from Jul-26"
+   },
+   {
+    "sev": "grey",
+    "type": "New caution",
+    "text": "First mention of AI hitting traffic: volume drag partly “from lower organic web traffic, across the industry, as AI answers more searches”",
+    "span": "Not in any earlier RNS"
+   }
+  ]
+ }
+}

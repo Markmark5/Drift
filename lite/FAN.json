@@ -1,0 +1,1285 @@
+{
+ "ticker": "FAN",
+ "v": "2026-10-19.3bd9",
+ "ccy": "GBX",
+ "src": "AlphaVantage FAN.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   494.5
+  ],
+  [
+   "2021-10-22",
+   495.0
+  ],
+  [
+   "2021-10-29",
+   494.0
+  ],
+  [
+   "2021-11-05",
+   514.0
+  ],
+  [
+   "2021-11-12",
+   520.0
+  ],
+  [
+   "2021-11-19",
+   522.0
+  ],
+  [
+   "2021-11-26",
+   508.0
+  ],
+  [
+   "2021-12-03",
+   512.0
+  ],
+  [
+   "2021-12-10",
+   511.0
+  ],
+  [
+   "2021-12-17",
+   511.0
+  ],
+  [
+   "2021-12-24",
+   543.0
+  ],
+  [
+   "2021-12-31",
+   553.0
+  ],
+  [
+   "2022-01-07",
+   522.0
+  ],
+  [
+   "2022-01-14",
+   511.0
+  ],
+  [
+   "2022-01-21",
+   488.5
+  ],
+  [
+   "2022-01-28",
+   487.0
+  ],
+  [
+   "2022-02-04",
+   505.0
+  ],
+  [
+   "2022-02-11",
+   517.0
+  ],
+  [
+   "2022-02-18",
+   496.0
+  ],
+  [
+   "2022-02-25",
+   485.5
+  ],
+  [
+   "2022-03-04",
+   445.0
+  ],
+  [
+   "2022-03-11",
+   426.5
+  ],
+  [
+   "2022-03-18",
+   417.5
+  ],
+  [
+   "2022-03-25",
+   414.5
+  ],
+  [
+   "2022-04-01",
+   410.5
+  ],
+  [
+   "2022-04-08",
+   421.0
+  ],
+  [
+   "2022-04-14",
+   403.5
+  ],
+  [
+   "2022-04-22",
+   429.0
+  ],
+  [
+   "2022-04-29",
+   411.5
+  ],
+  [
+   "2022-05-06",
+   368.5
+  ],
+  [
+   "2022-05-13",
+   372.0
+  ],
+  [
+   "2022-05-20",
+   351.0
+  ],
+  [
+   "2022-05-27",
+   396.0
+  ],
+  [
+   "2022-06-01",
+   394.0
+  ],
+  [
+   "2022-06-10",
+   366.0
+  ],
+  [
+   "2022-06-17",
+   353.0
+  ],
+  [
+   "2022-06-24",
+   356.0
+  ],
+  [
+   "2022-07-01",
+   337.5
+  ],
+  [
+   "2022-07-08",
+   347.5
+  ],
+  [
+   "2022-07-15",
+   347.0
+  ],
+  [
+   "2022-07-22",
+   387.0
+  ],
+  [
+   "2022-07-29",
+   416.5
+  ],
+  [
+   "2022-08-05",
+   396.0
+  ],
+  [
+   "2022-08-12",
+   398.5
+  ],
+  [
+   "2022-08-19",
+   369.0
+  ],
+  [
+   "2022-08-26",
+   350.5
+  ],
+  [
+   "2022-09-02",
+   336.0
+  ],
+  [
+   "2022-09-09",
+   337.5
+  ],
+  [
+   "2022-09-16",
+   317.5
+  ],
+  [
+   "2022-09-23",
+   308.0
+  ],
+  [
+   "2022-09-30",
+   293.5
+  ],
+  [
+   "2022-10-07",
+   309.5
+  ],
+  [
+   "2022-10-14",
+   315.0
+  ],
+  [
+   "2022-10-21",
+   294.5
+  ],
+  [
+   "2022-10-28",
+   317.5
+  ],
+  [
+   "2022-11-04",
+   310.5
+  ],
+  [
+   "2022-11-11",
+   351.5
+  ],
+  [
+   "2022-11-18",
+   355.0
+  ],
+  [
+   "2022-11-25",
+   351.5
+  ],
+  [
+   "2022-12-02",
+   356.0
+  ],
+  [
+   "2022-12-09",
+   354.0
+  ],
+  [
+   "2022-12-16",
+   338.5
+  ],
+  [
+   "2022-12-23",
+   380.0
+  ],
+  [
+   "2022-12-30",
+   365.0
+  ],
+  [
+   "2023-01-06",
+   390.0
+  ],
+  [
+   "2023-01-13",
+   401.5
+  ],
+  [
+   "2023-01-20",
+   397.0
+  ],
+  [
+   "2023-01-27",
+   381.0
+  ],
+  [
+   "2023-02-03",
+   385.5
+  ],
+  [
+   "2023-02-10",
+   362.5
+  ],
+  [
+   "2023-02-17",
+   371.0
+  ],
+  [
+   "2023-02-24",
+   357.0
+  ],
+  [
+   "2023-03-03",
+   362.0
+  ],
+  [
+   "2023-03-10",
+   405.5
+  ],
+  [
+   "2023-03-17",
+   415.0
+  ],
+  [
+   "2023-03-24",
+   420.5
+  ],
+  [
+   "2023-03-31",
+   430.5
+  ],
+  [
+   "2023-04-06",
+   411.0
+  ],
+  [
+   "2023-04-14",
+   415.0
+  ],
+  [
+   "2023-04-21",
+   437.0
+  ],
+  [
+   "2023-04-28",
+   433.4
+  ],
+  [
+   "2023-05-05",
+   424.6
+  ],
+  [
+   "2023-05-12",
+   428.8
+  ],
+  [
+   "2023-05-19",
+   447.8
+  ],
+  [
+   "2023-05-26",
+   442.0
+  ],
+  [
+   "2023-06-02",
+   445.0
+  ],
+  [
+   "2023-06-09",
+   425.0
+  ],
+  [
+   "2023-06-16",
+   376.4
+  ],
+  [
+   "2023-06-23",
+   366.6
+  ],
+  [
+   "2023-06-30",
+   378.2
+  ],
+  [
+   "2023-07-07",
+   353.0
+  ],
+  [
+   "2023-07-14",
+   360.2
+  ],
+  [
+   "2023-07-21",
+   389.4
+  ],
+  [
+   "2023-07-28",
+   400.4
+  ],
+  [
+   "2023-08-04",
+   393.4
+  ],
+  [
+   "2023-08-11",
+   384.2
+  ],
+  [
+   "2023-08-18",
+   371.4
+  ],
+  [
+   "2023-08-25",
+   361.6
+  ],
+  [
+   "2023-09-01",
+   379.6
+  ],
+  [
+   "2023-09-08",
+   356.6
+  ],
+  [
+   "2023-09-15",
+   360.2
+  ],
+  [
+   "2023-09-22",
+   362.2
+  ],
+  [
+   "2023-09-29",
+   361.8
+  ],
+  [
+   "2023-10-06",
+   364.6
+  ],
+  [
+   "2023-10-13",
+   375.2
+  ],
+  [
+   "2023-10-20",
+   339.4
+  ],
+  [
+   "2023-10-27",
+   351.0
+  ],
+  [
+   "2023-11-03",
+   384.2
+  ],
+  [
+   "2023-11-10",
+   394.2
+  ],
+  [
+   "2023-11-17",
+   404.2
+  ],
+  [
+   "2023-11-24",
+   393.4
+  ],
+  [
+   "2023-12-01",
+   400.8
+  ],
+  [
+   "2023-12-08",
+   400.4
+  ],
+  [
+   "2023-12-15",
+   428.6
+  ],
+  [
+   "2023-12-22",
+   435.6
+  ],
+  [
+   "2023-12-29",
+   433.6
+  ],
+  [
+   "2024-01-05",
+   411.6
+  ],
+  [
+   "2024-01-12",
+   416.6
+  ],
+  [
+   "2024-01-19",
+   408.4
+  ],
+  [
+   "2024-01-26",
+   420.4
+  ],
+  [
+   "2024-02-02",
+   428.2
+  ],
+  [
+   "2024-02-09",
+   424.8
+  ],
+  [
+   "2024-02-16",
+   423.4
+  ],
+  [
+   "2024-02-23",
+   416.4
+  ],
+  [
+   "2024-03-01",
+   419.0
+  ],
+  [
+   "2024-03-08",
+   423.8
+  ],
+  [
+   "2024-03-15",
+   436.0
+  ],
+  [
+   "2024-03-22",
+   428.8
+  ],
+  [
+   "2024-03-28",
+   434.6
+  ],
+  [
+   "2024-04-05",
+   420.5
+  ],
+  [
+   "2024-04-12",
+   429.5
+  ],
+  [
+   "2024-04-19",
+   408.5
+  ],
+  [
+   "2024-04-26",
+   423.0
+  ],
+  [
+   "2024-05-03",
+   431.5
+  ],
+  [
+   "2024-05-10",
+   450.5
+  ],
+  [
+   "2024-05-17",
+   459.0
+  ],
+  [
+   "2024-05-24",
+   456.0
+  ],
+  [
+   "2024-05-31",
+   451.0
+  ],
+  [
+   "2024-06-07",
+   446.0
+  ],
+  [
+   "2024-06-14",
+   438.0
+  ],
+  [
+   "2024-06-21",
+   454.0
+  ],
+  [
+   "2024-06-28",
+   451.0
+  ],
+  [
+   "2024-07-05",
+   478.5
+  ],
+  [
+   "2024-07-12",
+   499.5
+  ],
+  [
+   "2024-07-19",
+   500.0
+  ],
+  [
+   "2024-07-26",
+   531.0
+  ],
+  [
+   "2024-08-02",
+   513.0
+  ],
+  [
+   "2024-08-09",
+   518.0
+  ],
+  [
+   "2024-08-16",
+   522.0
+  ],
+  [
+   "2024-08-23",
+   542.0
+  ],
+  [
+   "2024-08-30",
+   565.0
+  ],
+  [
+   "2024-09-06",
+   525.0
+  ],
+  [
+   "2024-09-13",
+   542.0
+  ],
+  [
+   "2024-09-20",
+   608.0
+  ],
+  [
+   "2024-09-27",
+   619.0
+  ],
+  [
+   "2024-10-04",
+   606.0
+  ],
+  [
+   "2024-10-11",
+   605.0
+  ],
+  [
+   "2024-10-18",
+   615.0
+  ],
+  [
+   "2024-10-25",
+   571.0
+  ],
+  [
+   "2024-11-01",
+   585.0
+  ],
+  [
+   "2024-11-08",
+   565.0
+  ],
+  [
+   "2024-11-15",
+   566.0
+  ],
+  [
+   "2024-11-22",
+   565.0
+  ],
+  [
+   "2024-11-29",
+   556.0
+  ],
+  [
+   "2024-12-06",
+   569.0
+  ],
+  [
+   "2024-12-13",
+   565.0
+  ],
+  [
+   "2024-12-20",
+   554.0
+  ],
+  [
+   "2024-12-24",
+   557.0
+  ],
+  [
+   "2024-12-27",
+   554.0
+  ],
+  [
+   "2025-01-03",
+   548.0
+  ],
+  [
+   "2025-01-10",
+   523.0
+  ],
+  [
+   "2025-01-17",
+   545.0
+  ],
+  [
+   "2025-01-24",
+   546.0
+  ],
+  [
+   "2025-01-31",
+   533.0
+  ],
+  [
+   "2025-02-07",
+   526.0
+  ],
+  [
+   "2025-02-14",
+   524.0
+  ],
+  [
+   "2025-02-21",
+   510.0
+  ],
+  [
+   "2025-02-28",
+   512.0
+  ],
+  [
+   "2025-03-07",
+   525.0
+  ],
+  [
+   "2025-03-14",
+   576.0
+  ],
+  [
+   "2025-03-21",
+   567.0
+  ],
+  [
+   "2025-03-28",
+   549.0
+  ],
+  [
+   "2025-04-04",
+   487.5
+  ],
+  [
+   "2025-04-11",
+   503.0
+  ],
+  [
+   "2025-04-17",
+   527.0
+  ],
+  [
+   "2025-04-25",
+   546.0
+  ],
+  [
+   "2025-05-02",
+   580.0
+  ],
+  [
+   "2025-05-09",
+   601.0
+  ],
+  [
+   "2025-05-16",
+   622.0
+  ],
+  [
+   "2025-05-23",
+   614.0
+  ],
+  [
+   "2025-05-30",
+   609.0
+  ],
+  [
+   "2025-06-06",
+   605.0
+  ],
+  [
+   "2025-06-13",
+   604.0
+  ],
+  [
+   "2025-06-20",
+   588.0
+  ],
+  [
+   "2025-06-27",
+   601.0
+  ],
+  [
+   "2025-07-04",
+   593.0
+  ],
+  [
+   "2025-07-11",
+   619.0
+  ],
+  [
+   "2025-07-18",
+   634.0
+  ],
+  [
+   "2025-07-25",
+   656.0
+  ],
+  [
+   "2025-08-01",
+   654.0
+  ],
+  [
+   "2025-08-08",
+   664.0
+  ],
+  [
+   "2025-08-15",
+   654.0
+  ],
+  [
+   "2025-08-22",
+   653.0
+  ],
+  [
+   "2025-08-29",
+   632.0
+  ],
+  [
+   "2025-09-05",
+   621.0
+  ],
+  [
+   "2025-09-12",
+   629.0
+  ],
+  [
+   "2025-09-19",
+   630.0
+  ],
+  [
+   "2025-09-26",
+   610.0
+  ],
+  [
+   "2025-10-03",
+   643.0
+  ],
+  [
+   "2025-10-10",
+   675.0
+  ],
+  [
+   "2025-10-17",
+   638.0
+  ],
+  [
+   "2025-10-24",
+   687.0
+  ],
+  [
+   "2025-10-31",
+   657.0
+  ],
+  [
+   "2025-11-07",
+   626.0
+  ],
+  [
+   "2025-11-14",
+   622.0
+  ],
+  [
+   "2025-11-21",
+   604.0
+  ],
+  [
+   "2025-11-28",
+   632.0
+  ],
+  [
+   "2025-12-05",
+   612.0
+  ],
+  [
+   "2025-12-12",
+   622.0
+  ],
+  [
+   "2025-12-19",
+   641.0
+  ],
+  [
+   "2025-12-24",
+   647.0
+  ],
+  [
+   "2026-01-02",
+   637.0
+  ],
+  [
+   "2026-01-09",
+   653.0
+  ],
+  [
+   "2026-01-16",
+   652.0
+  ],
+  [
+   "2026-01-23",
+   648.0
+  ],
+  [
+   "2026-01-30",
+   642.0
+  ],
+  [
+   "2026-02-06",
+   676.0
+  ],
+  [
+   "2026-02-13",
+   694.0
+  ],
+  [
+   "2026-02-20",
+   699.0
+  ],
+  [
+   "2026-02-27",
+   712.0
+  ],
+  [
+   "2026-03-06",
+   635.0
+  ],
+  [
+   "2026-03-13",
+   592.0
+  ],
+  [
+   "2026-03-20",
+   568.0
+  ],
+  [
+   "2026-03-27",
+   568.0
+  ],
+  [
+   "2026-04-02",
+   585.0
+  ],
+  [
+   "2026-04-10",
+   630.0
+  ],
+  [
+   "2026-04-17",
+   651.0
+  ],
+  [
+   "2026-04-24",
+   628.0
+  ],
+  [
+   "2026-05-01",
+   612.0
+  ],
+  [
+   "2026-05-08",
+   624.0
+  ],
+  [
+   "2026-05-15",
+   591.0
+  ],
+  [
+   "2026-05-22",
+   613.0
+  ],
+  [
+   "2026-05-29",
+   614.0
+  ],
+  [
+   "2026-06-05",
+   608.0
+  ],
+  [
+   "2026-06-12",
+   602.0
+  ],
+  [
+   "2026-06-19",
+   614.0
+  ],
+  [
+   "2026-06-26",
+   612.0
+  ],
+  [
+   "2026-07-03",
+   615.0
+  ],
+  [
+   "2026-07-10",
+   599.0
+  ],
+  [
+   "2026-07-17",
+   620.0
+  ],
+  [
+   "2026-07-24",
+   635.0
+  ],
+  [
+   "2026-07-31",
+   619.0
+  ],
+  [
+   "2026-08-07",
+   693.0
+  ],
+  [
+   "2026-08-14",
+   675.0
+  ],
+  [
+   "2026-08-21",
+   652.0
+  ],
+  [
+   "2026-08-28",
+   675.0
+  ],
+  [
+   "2026-09-04",
+   668.0
+  ],
+  [
+   "2026-09-11",
+   651.0
+  ],
+  [
+   "2026-09-18",
+   642.0
+  ],
+  [
+   "2026-09-25",
+   639.0
+  ],
+  [
+   "2026-10-02",
+   639.0
+  ],
+  [
+   "2026-10-09",
+   665.0
+  ],
+  [
+   "2026-10-16",
+   637.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-12-09",
+   "doc": "AGM",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is pleased with the start to the new financial year and our ability to maintain operating margins in the face of considerable cost inflation.",
+   "file": "20211209_FAN_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2022-03-10",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "However, we continue to focus on customer service, underpinned by good availability in our inventory of key assembly components, and coupled with some slowing of input cost inflation, we are well positioned for the rest of this financial year.",
+   "file": "20220310_FAN_Half-year-Report.md"
+  },
+  {
+   "d": "2022-05-25",
+   "doc": "Q3 TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 1,
+   "q": "coupled with the regulatory and customer focus on improving energy efficiency in buildings, should continue to support demand. We therefore expect our earnings to be towards the upper end of market expectations for the current financial year",
+   "file": "20220525_FAN_Trading-Update.md"
+  },
+  {
+   "d": "2022-07-21",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 1,
+   "q": "Full year adjusted Earnings Per Share (EPS) expected to be at the top end of the range of market expectations1.",
+   "file": "20220721_FAN_Pre-close-Trading-Update.md"
+  },
+  {
+   "d": "2022-10-06",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "With our excellent levels of customer service, agile manufacturing and supply chain capability and strong balance sheet position, coupled with significant geographic revenue diversity, we are well placed to make further progress in the year ahead.",
+   "file": "20221006_FAN_Preliminary-Results-for-year-ended-31-July-2022.md"
+  },
+  {
+   "d": "2022-12-14",
+   "doc": "AGM",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Given the economic environment it is pleasing that since the year end we have continued to see sales and profits track ahead of the same period last year.",
+   "file": "20221214_FAN_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2023-03-09",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "With our excellent levels of customer service, agile manufacturing, a well-developed M&A pipeline and strong balance sheet position, coupled with significant geographic revenue diversity, we are well placed to make further progress.",
+   "file": "20230309_FAN_Half-year-Results.md"
+  },
+  {
+   "d": "2023-07-20",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Volution has continued to make good progress in the Period and the Board expects adjusted earnings per share to be towards the top end of current market forecasts (see note 1).",
+   "file": "20230720_FAN_Pre-close-Trading-Update.md"
+  },
+  {
+   "d": "2023-10-05",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "our ongoing focus on operational excellence; and the depth of experience and commitment across our local teams provides resilience and gives us confidence of making further progress in the year ahead.",
+   "file": "20231005_FAN_Preliminary-Results-for-year-ended-31-July-2023.md"
+  },
+  {
+   "d": "2023-12-13",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Our strong start to the financial year, together with the tailwind from the three acquisitions completed in the calendar year, gives the Board confidence in delivering earnings ahead of the current range of market expectations for the financial year1.",
+   "file": "20231213_FAN_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2024-03-15",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 1,
+   "q": "Our strong performance in the first half, together with the tailwind from our three recent acquisitions, gives the Board confidence in delivering adjusted earnings per share for the current financial year slightly ahead of consensus.",
+   "file": "20240315_FAN_Half-Year-Results.md"
+  },
+  {
+   "d": "2024-07-24",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 1,
+   "q": "Volution has continued to make good progress in the year ending 31 July 2024 and the Board expects adjusted earnings per share to be slightly ahead of current market forecasts (see note 1).",
+   "file": "20240724_FAN_Pre-close-Trading-Update.md"
+  },
+  {
+   "d": "2024-10-10",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The new financial year has started as anticipated, with both revenue and adjusted operating profit ahead of the same period last year.",
+   "file": "20241010_FAN_Preliminary-Results-for-year-ended-31-July-2024.md"
+  },
+  {
+   "d": "2024-12-11",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "positive organic growth momentum and margin expansion in the first four months of the year, together with the recently announced completion of the Fantech acquisition, we expect to deliver another year of good growth in both revenue and operating profit.",
+   "file": "20241211_FAN_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2025-03-13",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 2,
+   "q": "supported by our ongoing growth initiatives, focus on efficiency and costs, and the benefits that Fantech is bringing to the Group. As a result, the Board expects earnings for the Full Year to be ahead of consensus.",
+   "file": "20250313_FAN_Half-Year-Results.md"
+  },
+  {
+   "d": "2025-07-24",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 1,
+   "q": "Volution has continued to make good progress in FY25 and the Board expects adjusted earnings per share to be slightly ahead of current market consensus (see note 1).",
+   "file": "20250724_FAN_Pre-Close-Trading-Update.md"
+  },
+  {
+   "d": "2025-10-09",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Notwithstanding the still difficult economic backdrop in many of our end markets, we remain confident of continuing to deliver compounding growth and another year of good progress.",
+   "file": "20251009_FAN_Preliminary-Results-for-year-ended-31-July-2025.md"
+  },
+  {
+   "d": "2025-12-10",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "With good organic revenue growth, the inorganic benefit from the Fantech acquisition in December 2024 and strong operating margin performance in the period, we expect to deliver another year of good growth in revenue, operating profit and cash generation.",
+   "file": "20251210_FAN_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2026-03-12",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "we expect to make further strategic and operational progress in the second half of the year and the Board now expects adjusted earnings per share for FY26 to be at the top end of the range of market forecasts",
+   "file": "20260312_FAN_Half-Year-Results.md"
+  },
+  {
+   "d": "2026-07-23",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Volution has delivered another strong year of progress in FY26, and the Board now expects adjusted earnings per share (\"EPS\") of approximately 38.0p, 4% ahead of the current market consensus1.",
+   "file": "20260723_FAN_Pre-Close-Trading-Update.md"
+  },
+  {
+   "d": "2026-10-08",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "With a strong platform for growth and an increasingly positive demand backdrop across key markets, the Board is confident of delivering another year of good progress and continuing to deliver sustainable growth and value for all our stakeholders.",
+   "file": "20261008_FAN_Preliminary-Results-for-year-ended-31-July-2026.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-08",
+  "doc": "FY R",
+  "file": "20261008_FAN_Preliminary-Results-for-year-ended-31-July-2026.md",
+  "vs": "FY R Oct-25 · back to Oct-24 · Pre-close TU Jul-26, getAir Aug-26",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Demoted",
+    "text": "UK organic growth: Oct-25 highlights “highest in UK at 9.5% driven by residential, supported by regulations and share gain” → Oct-26 highlights say only “UK market challenging”; the figure moved to the body: “UK delivered more modest organic growth of 0.1% cc”",
+    "span": "Oct-25 → Oct-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Organic growth vs 3-5% target: Oct-25 “Organic revenue growth of 5.7% at constant currency (cc) exceeded our target range of 3-5%” → Oct-26 highlights “Robust overall organic growth performance” beside “Organic revenue growth was 2.8% cc, just below our long-term target range of 3-5%”",
+    "span": "Target range met or beaten Oct-25 → first miss Oct-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Demoted",
+    "text": "Accident frequency: Oct-25 highlight “Continued improvement in reportable accident frequency, down from 0.20 (2024) to 0.17 (2025) per 100,000 hours worked” → Oct-26 dropped from highlights; body: “Our reportable accident frequency rate increased to 0.29 per 100,000 hours worked in the year, compared with 0.17 in FY25”",
+    "span": "Oct-25 → Oct-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Demoted",
+    "text": "Recycled plastics: Oct-25 highlight “Recycled plastics use in our production rose to 83.9% (2024: 78.1%)” → Oct-26 dropped from highlights; body: “The use of recycled plastics in our manufactured products was 81.3% (2025: 83.9%)”",
+    "span": "In highlights Oct-24 and Oct-25 → dropped Oct-26"
+   }
+  ]
+ }
+}

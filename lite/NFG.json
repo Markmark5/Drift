@@ -1,0 +1,1268 @@
+{
+ "ticker": "NFG",
+ "v": "2026-10-19.b0e4",
+ "ccy": "GBX",
+ "src": "AlphaVantage NFG.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   1160.0
+  ],
+  [
+   "2021-10-22",
+   1205.0
+  ],
+  [
+   "2021-10-29",
+   1235.0
+  ],
+  [
+   "2021-11-05",
+   1220.0
+  ],
+  [
+   "2021-11-12",
+   1210.0
+  ],
+  [
+   "2021-11-19",
+   1190.0
+  ],
+  [
+   "2021-11-26",
+   1110.0
+  ],
+  [
+   "2021-12-03",
+   1085.0
+  ],
+  [
+   "2021-12-10",
+   1120.0
+  ],
+  [
+   "2021-12-17",
+   1240.0
+  ],
+  [
+   "2021-12-24",
+   1340.0
+  ],
+  [
+   "2021-12-31",
+   1340.0
+  ],
+  [
+   "2022-01-07",
+   1210.0
+  ],
+  [
+   "2022-01-14",
+   1170.0
+  ],
+  [
+   "2022-01-21",
+   1125.0
+  ],
+  [
+   "2022-01-28",
+   1085.0
+  ],
+  [
+   "2022-02-04",
+   1130.0
+  ],
+  [
+   "2022-02-11",
+   1190.0
+  ],
+  [
+   "2022-02-18",
+   1185.0
+  ],
+  [
+   "2022-02-25",
+   1230.0
+  ],
+  [
+   "2022-03-04",
+   1110.0
+  ],
+  [
+   "2022-03-11",
+   1235.0
+  ],
+  [
+   "2022-03-18",
+   1270.0
+  ],
+  [
+   "2022-03-25",
+   1280.0
+  ],
+  [
+   "2022-04-01",
+   1396.0
+  ],
+  [
+   "2022-04-08",
+   1304.0
+  ],
+  [
+   "2022-04-14",
+   1292.0
+  ],
+  [
+   "2022-04-22",
+   1332.0
+  ],
+  [
+   "2022-04-29",
+   1328.0
+  ],
+  [
+   "2022-05-06",
+   1204.0
+  ],
+  [
+   "2022-05-13",
+   1252.0
+  ],
+  [
+   "2022-05-20",
+   1294.0
+  ],
+  [
+   "2022-05-27",
+   1092.0
+  ],
+  [
+   "2022-06-01",
+   1100.0
+  ],
+  [
+   "2022-06-10",
+   1050.0
+  ],
+  [
+   "2022-06-17",
+   891.0
+  ],
+  [
+   "2022-06-24",
+   912.0
+  ],
+  [
+   "2022-07-01",
+   905.0
+  ],
+  [
+   "2022-07-08",
+   944.0
+  ],
+  [
+   "2022-07-15",
+   942.0
+  ],
+  [
+   "2022-07-22",
+   1056.0
+  ],
+  [
+   "2022-07-29",
+   1024.0
+  ],
+  [
+   "2022-08-05",
+   937.0
+  ],
+  [
+   "2022-08-12",
+   961.0
+  ],
+  [
+   "2022-08-19",
+   967.0
+  ],
+  [
+   "2022-08-26",
+   879.0
+  ],
+  [
+   "2022-09-02",
+   850.0
+  ],
+  [
+   "2022-09-09",
+   898.0
+  ],
+  [
+   "2022-09-16",
+   867.0
+  ],
+  [
+   "2022-09-23",
+   868.0
+  ],
+  [
+   "2022-09-30",
+   780.0
+  ],
+  [
+   "2022-10-07",
+   836.0
+  ],
+  [
+   "2022-10-14",
+   814.0
+  ],
+  [
+   "2022-10-21",
+   846.0
+  ],
+  [
+   "2022-10-28",
+   876.0
+  ],
+  [
+   "2022-11-04",
+   1020.0
+  ],
+  [
+   "2022-11-11",
+   1084.0
+  ],
+  [
+   "2022-11-18",
+   1074.0
+  ],
+  [
+   "2022-11-25",
+   1070.0
+  ],
+  [
+   "2022-12-02",
+   1038.0
+  ],
+  [
+   "2022-12-09",
+   985.0
+  ],
+  [
+   "2022-12-16",
+   994.0
+  ],
+  [
+   "2022-12-23",
+   980.0
+  ],
+  [
+   "2022-12-30",
+   990.0
+  ],
+  [
+   "2023-01-06",
+   1010.0
+  ],
+  [
+   "2023-01-13",
+   1090.0
+  ],
+  [
+   "2023-01-20",
+   1040.0
+  ],
+  [
+   "2023-01-27",
+   1046.0
+  ],
+  [
+   "2023-02-03",
+   1106.0
+  ],
+  [
+   "2023-02-10",
+   1050.0
+  ],
+  [
+   "2023-02-17",
+   1002.0
+  ],
+  [
+   "2023-02-24",
+   995.0
+  ],
+  [
+   "2023-03-03",
+   1032.0
+  ],
+  [
+   "2023-03-10",
+   951.0
+  ],
+  [
+   "2023-03-17",
+   892.0
+  ],
+  [
+   "2023-03-24",
+   878.0
+  ],
+  [
+   "2023-03-31",
+   838.0
+  ],
+  [
+   "2023-04-06",
+   796.0
+  ],
+  [
+   "2023-04-14",
+   830.0
+  ],
+  [
+   "2023-04-21",
+   703.0
+  ],
+  [
+   "2023-04-28",
+   842.0
+  ],
+  [
+   "2023-05-05",
+   845.0
+  ],
+  [
+   "2023-05-12",
+   800.0
+  ],
+  [
+   "2023-05-19",
+   791.0
+  ],
+  [
+   "2023-05-26",
+   755.0
+  ],
+  [
+   "2023-06-02",
+   765.0
+  ],
+  [
+   "2023-06-09",
+   774.0
+  ],
+  [
+   "2023-06-16",
+   714.0
+  ],
+  [
+   "2023-06-23",
+   676.0
+  ],
+  [
+   "2023-06-30",
+   679.0
+  ],
+  [
+   "2023-07-07",
+   640.0
+  ],
+  [
+   "2023-07-14",
+   681.0
+  ],
+  [
+   "2023-07-21",
+   653.0
+  ],
+  [
+   "2023-07-28",
+   627.0
+  ],
+  [
+   "2023-08-04",
+   590.0
+  ],
+  [
+   "2023-08-11",
+   573.0
+  ],
+  [
+   "2023-08-18",
+   560.0
+  ],
+  [
+   "2023-08-25",
+   616.0
+  ],
+  [
+   "2023-09-01",
+   632.0
+  ],
+  [
+   "2023-09-08",
+   646.0
+  ],
+  [
+   "2023-09-15",
+   640.0
+  ],
+  [
+   "2023-09-22",
+   607.0
+  ],
+  [
+   "2023-09-29",
+   641.0
+  ],
+  [
+   "2023-10-06",
+   610.0
+  ],
+  [
+   "2023-10-13",
+   616.0
+  ],
+  [
+   "2023-10-20",
+   618.0
+  ],
+  [
+   "2023-10-27",
+   645.0
+  ],
+  [
+   "2023-11-03",
+   694.0
+  ],
+  [
+   "2023-11-10",
+   681.0
+  ],
+  [
+   "2023-11-17",
+   748.0
+  ],
+  [
+   "2023-11-24",
+   749.0
+  ],
+  [
+   "2023-12-01",
+   766.0
+  ],
+  [
+   "2023-12-08",
+   781.0
+  ],
+  [
+   "2023-12-15",
+   786.0
+  ],
+  [
+   "2023-12-22",
+   805.0
+  ],
+  [
+   "2023-12-29",
+   832.0
+  ],
+  [
+   "2024-01-05",
+   812.0
+  ],
+  [
+   "2024-01-12",
+   817.0
+  ],
+  [
+   "2024-01-19",
+   779.0
+  ],
+  [
+   "2024-01-26",
+   911.0
+  ],
+  [
+   "2024-02-02",
+   928.0
+  ],
+  [
+   "2024-02-09",
+   926.0
+  ],
+  [
+   "2024-02-16",
+   959.0
+  ],
+  [
+   "2024-02-23",
+   935.0
+  ],
+  [
+   "2024-03-01",
+   930.0
+  ],
+  [
+   "2024-03-08",
+   928.0
+  ],
+  [
+   "2024-03-15",
+   900.0
+  ],
+  [
+   "2024-03-22",
+   910.0
+  ],
+  [
+   "2024-03-28",
+   924.0
+  ],
+  [
+   "2024-04-05",
+   908.0
+  ],
+  [
+   "2024-04-12",
+   946.0
+  ],
+  [
+   "2024-04-19",
+   888.0
+  ],
+  [
+   "2024-04-26",
+   882.0
+  ],
+  [
+   "2024-05-03",
+   903.0
+  ],
+  [
+   "2024-05-10",
+   966.0
+  ],
+  [
+   "2024-05-17",
+   955.0
+  ],
+  [
+   "2024-05-24",
+   1028.0
+  ],
+  [
+   "2024-05-31",
+   1026.0
+  ],
+  [
+   "2024-06-07",
+   993.0
+  ],
+  [
+   "2024-06-14",
+   914.0
+  ],
+  [
+   "2024-06-21",
+   902.0
+  ],
+  [
+   "2024-06-28",
+   798.0
+  ],
+  [
+   "2024-07-05",
+   807.0
+  ],
+  [
+   "2024-07-12",
+   822.0
+  ],
+  [
+   "2024-07-19",
+   832.0
+  ],
+  [
+   "2024-07-26",
+   830.0
+  ],
+  [
+   "2024-08-02",
+   833.0
+  ],
+  [
+   "2024-08-09",
+   828.0
+  ],
+  [
+   "2024-08-16",
+   851.0
+  ],
+  [
+   "2024-08-23",
+   863.0
+  ],
+  [
+   "2024-08-30",
+   850.0
+  ],
+  [
+   "2024-09-06",
+   429.5
+  ],
+  [
+   "2024-09-13",
+   491.5
+  ],
+  [
+   "2024-09-20",
+   434.0
+  ],
+  [
+   "2024-09-27",
+   462.5
+  ],
+  [
+   "2024-10-04",
+   443.0
+  ],
+  [
+   "2024-10-11",
+   423.0
+  ],
+  [
+   "2024-10-18",
+   435.5
+  ],
+  [
+   "2024-10-25",
+   408.0
+  ],
+  [
+   "2024-11-01",
+   394.0
+  ],
+  [
+   "2024-11-08",
+   380.0
+  ],
+  [
+   "2024-11-15",
+   376.0
+  ],
+  [
+   "2024-11-22",
+   405.0
+  ],
+  [
+   "2024-11-29",
+   427.5
+  ],
+  [
+   "2024-12-06",
+   446.0
+  ],
+  [
+   "2024-12-13",
+   427.0
+  ],
+  [
+   "2024-12-20",
+   386.0
+  ],
+  [
+   "2024-12-24",
+   385.0
+  ],
+  [
+   "2024-12-27",
+   388.0
+  ],
+  [
+   "2025-01-03",
+   368.5
+  ],
+  [
+   "2025-01-10",
+   335.0
+  ],
+  [
+   "2025-01-17",
+   360.0
+  ],
+  [
+   "2025-01-24",
+   345.0
+  ],
+  [
+   "2025-01-31",
+   339.0
+  ],
+  [
+   "2025-02-07",
+   318.0
+  ],
+  [
+   "2025-02-14",
+   338.0
+  ],
+  [
+   "2025-02-21",
+   318.5
+  ],
+  [
+   "2025-02-28",
+   302.0
+  ],
+  [
+   "2025-03-07",
+   292.0
+  ],
+  [
+   "2025-03-14",
+   294.0
+  ],
+  [
+   "2025-03-21",
+   303.5
+  ],
+  [
+   "2025-03-28",
+   309.0
+  ],
+  [
+   "2025-04-04",
+   251.0
+  ],
+  [
+   "2025-04-11",
+   238.0
+  ],
+  [
+   "2025-04-17",
+   233.0
+  ],
+  [
+   "2025-04-25",
+   254.5
+  ],
+  [
+   "2025-05-02",
+   285.0
+  ],
+  [
+   "2025-05-09",
+   284.5
+  ],
+  [
+   "2025-05-16",
+   286.0
+  ],
+  [
+   "2025-05-23",
+   267.5
+  ],
+  [
+   "2025-05-30",
+   274.5
+  ],
+  [
+   "2025-06-06",
+   286.5
+  ],
+  [
+   "2025-06-13",
+   288.5
+  ],
+  [
+   "2025-06-20",
+   306.0
+  ],
+  [
+   "2025-06-27",
+   240.0
+  ],
+  [
+   "2025-07-04",
+   252.5
+  ],
+  [
+   "2025-07-11",
+   257.0
+  ],
+  [
+   "2025-07-18",
+   283.5
+  ],
+  [
+   "2025-07-25",
+   302.0
+  ],
+  [
+   "2025-08-01",
+   276.5
+  ],
+  [
+   "2025-08-08",
+   266.0
+  ],
+  [
+   "2025-08-15",
+   270.0
+  ],
+  [
+   "2025-08-22",
+   271.0
+  ],
+  [
+   "2025-08-29",
+   265.0
+  ],
+  [
+   "2025-09-05",
+   269.5
+  ],
+  [
+   "2025-09-12",
+   271.0
+  ],
+  [
+   "2025-09-19",
+   265.0
+  ],
+  [
+   "2025-09-26",
+   287.0
+  ],
+  [
+   "2025-10-03",
+   363.5
+  ],
+  [
+   "2025-10-10",
+   373.5
+  ],
+  [
+   "2025-10-17",
+   364.5
+  ],
+  [
+   "2025-10-24",
+   395.0
+  ],
+  [
+   "2025-10-31",
+   414.0
+  ],
+  [
+   "2025-11-07",
+   320.5
+  ],
+  [
+   "2025-11-14",
+   308.5
+  ],
+  [
+   "2025-11-21",
+   294.0
+  ],
+  [
+   "2025-11-28",
+   299.0
+  ],
+  [
+   "2025-12-05",
+   297.5
+  ],
+  [
+   "2025-12-12",
+   304.0
+  ],
+  [
+   "2025-12-19",
+   306.0
+  ],
+  [
+   "2025-12-24",
+   311.5
+  ],
+  [
+   "2026-01-02",
+   322.5
+  ],
+  [
+   "2026-01-09",
+   362.0
+  ],
+  [
+   "2026-01-16",
+   351.5
+  ],
+  [
+   "2026-01-23",
+   358.0
+  ],
+  [
+   "2026-01-30",
+   350.5
+  ],
+  [
+   "2026-02-06",
+   281.0
+  ],
+  [
+   "2026-02-13",
+   299.0
+  ],
+  [
+   "2026-02-20",
+   307.0
+  ],
+  [
+   "2026-02-27",
+   303.0
+  ],
+  [
+   "2026-03-06",
+   282.5
+  ],
+  [
+   "2026-03-13",
+   269.0
+  ],
+  [
+   "2026-03-20",
+   242.0
+  ],
+  [
+   "2026-03-27",
+   229.0
+  ],
+  [
+   "2026-04-02",
+   226.0
+  ],
+  [
+   "2026-04-10",
+   240.0
+  ],
+  [
+   "2026-04-17",
+   242.0
+  ],
+  [
+   "2026-04-24",
+   245.5
+  ],
+  [
+   "2026-05-01",
+   239.0
+  ],
+  [
+   "2026-05-08",
+   269.0
+  ],
+  [
+   "2026-05-15",
+   281.5
+  ],
+  [
+   "2026-05-22",
+   288.5
+  ],
+  [
+   "2026-05-29",
+   288.5
+  ],
+  [
+   "2026-06-05",
+   272.0
+  ],
+  [
+   "2026-06-12",
+   254.0
+  ],
+  [
+   "2026-06-19",
+   263.0
+  ],
+  [
+   "2026-06-26",
+   254.0
+  ],
+  [
+   "2026-07-03",
+   262.0
+  ],
+  [
+   "2026-07-10",
+   263.5
+  ],
+  [
+   "2026-07-17",
+   276.0
+  ],
+  [
+   "2026-07-24",
+   284.5
+  ],
+  [
+   "2026-07-31",
+   293.5
+  ],
+  [
+   "2026-08-07",
+   327.0
+  ],
+  [
+   "2026-08-14",
+   341.5
+  ],
+  [
+   "2026-08-21",
+   318.5
+  ],
+  [
+   "2026-08-28",
+   317.5
+  ],
+  [
+   "2026-09-04",
+   311.5
+  ],
+  [
+   "2026-09-11",
+   320.0
+  ],
+  [
+   "2026-09-18",
+   319.5
+  ],
+  [
+   "2026-09-25",
+   313.5
+  ],
+  [
+   "2026-10-02",
+   313.5
+  ],
+  [
+   "2026-10-09",
+   310.0
+  ],
+  [
+   "2026-10-16",
+   330.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-12-13",
+   "doc": "Q3 TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 2,
+   "q": "This resulted in revenues for the nine months to 31 October 2021 being up 34% in total, with organic revenue growth of 24%. This strong performance has continued into our fourth quarter and is driving results ahead of market expectations.",
+   "file": "20211213_NFG_Trading-Statement.md"
+  },
+  {
+   "d": "2022-01-31",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 2,
+   "q": "This strong performance is driving results ahead of market expectations and sets us up well for a positive start to our new financial year, albeit against increasingly tougher comparables.",
+   "file": "20220131_NFG_Trading-Statement.md"
+  },
+  {
+   "d": "2022-04-05",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "While we are keeping a watchful eye on the geopolitical situation and macro-economic factors, we are pleased to report that we expect to deliver another year of strong organic revenue growth.",
+   "file": "20220405_NFG_Final-Results.md"
+  },
+  {
+   "d": "2022-05-20",
+   "doc": "Q1 TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 2,
+   "q": "to £130 million, with organic revenue growth of approximately 37 per cent. Adjusted profit before tax for the same three-month period to 30 April 2022 is also ahead of management expectations.",
+   "file": "20220520_NFG_Offer-for-M&C-Saatchi-plc.md"
+  },
+  {
+   "d": "2022-06-23",
+   "doc": "AGM",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 2,
+   "q": "with organic revenue growth of approximately 37 per cent. Trading continued to be strong throughout May 2022 and adjusted profit before tax remains ahead of management expectations.",
+   "file": "20220623_NFG_Statement-re-Trading-Statement-and-Directorate-....md"
+  },
+  {
+   "d": "2022-09-26",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "we are confident of delivering adjusted profit before tax for the year at least in line with management expectations as revised upwards following our AGM statement in June.",
+   "file": "20220926_NFG_Half-year-Report.md"
+  },
+  {
+   "d": "2022-10-21",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "strong trading in H1 has continued into the third quarter of our financial year, with results for the full financial year expected to be at least in line with management expectations.",
+   "file": "20221021_NFG_Update-on-Offer-for-M&C-Saatchi.md"
+  },
+  {
+   "d": "2022-10-31",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "strong trading in H1 has continued into the third quarter of our financial year, with results for the full financial year expected to be at least in line with management expectations.",
+   "file": "20221031_NFG_Response-to-Outcome-of-M&C-Saatchi-Meetings.md"
+  },
+  {
+   "d": "2023-01-25",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Despite the tougher macro-economic environment, this robust performance is driving results which are expected to be in line with management expectations and we remain well placed to deliver further progress in the year ahead.",
+   "file": "20230125_NFG_Trading-Statement.md"
+  },
+  {
+   "d": "2023-04-25",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Whilst we are mindful of the current economic and geopolitical backdrop, given the strength of our business we remain confident in meeting management expectations for the full year.",
+   "file": "20230425_NFG_Final-Results.md"
+  },
+  {
+   "d": "2025-01-30",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -2,
+   "q": "Next 15 Group plc, the tech and data-driven growth consultancy, today provides an update on trading for the year ending 31 January 2025. Profits are expected to be at the bottom of analyst expectations",
+   "file": "20250130_NFG_Trading-Statement.md"
+  },
+  {
+   "d": "2025-04-15",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -2,
+   "q": "Trading in the new financial year is broadly in line with management expectations, with the trends of last year continuing into the early months of FY26, with several new business wins.",
+   "file": "20250415_NFG_Final-Results.md"
+  },
+  {
+   "d": "2025-06-26",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -3,
+   "q": "Adverse movements in the dollar rate, with over 50% of the Group’s revenues being dollar-denominated As a result, the Group now believes that profit for FY26 will be materially below current year expectations.",
+   "file": "20250626_NFG_Trading-Statement.md"
+  },
+  {
+   "d": "2025-08-28",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group’s guidance for its continued operations for FY26 remains unchanged, with adjusted operating profit for the year remaining in-line with market expectations",
+   "file": "20250828_NFG_Statement-re-Intention-to-permanently-cease-o....md"
+  },
+  {
+   "d": "2025-09-30",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group expects performance for the full year to be in line with market expectations, supported by robust growth in high-potential markets such as Digital Transformation, Retail Media, and data-driven services.",
+   "file": "20250930_NFG_Half-year-Report.md"
+  },
+  {
+   "d": "2026-01-28",
+   "doc": "YE-TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 1,
+   "q": "Looking ahead to FY27, the Group remains confident in delivering like-for-like revenue growth and a further improvement in operating profit and margin, before the impact of modest growth investment of between £4m and £6m, partially offset by cost efficiencies.",
+   "file": "20260128_NFG_Trading-Statement.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2026-05-07",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Whilst it is still early in the financial year, the Board expects to deliver like-for-like growth in revenue and operating profit and to meet market expectations for the full year.",
+   "file": "20260507_NFG_Final-Results.md"
+  },
+  {
+   "d": "2026-07-08",
+   "doc": "AGM",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading is in line with expectations and the Group continues to forecast like-for-like revenue and profit growth in the year.",
+   "file": "20260708_NFG_Trading-Statement.md"
+  },
+  {
+   "d": "2026-10-08",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -1,
+   "q": "On this basis, the Board expects the Group to deliver LFL revenue growth for the full year, with revenue and adjusted operating profit in line with market expectations.",
+   "file": "20261008_NFG_Half-year-Financial-Report.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-08",
+  "doc": "H1 R",
+  "file": "20261008_NFG_Half-year-Financial-Report.md",
+  "vs": "H1 R Sep-25 · AGM Jul-26 · FY R May-26",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Target dropped",
+    "text": "LFL profit growth no longer promised: May-26 “the Board expects to deliver like-for-like growth in revenue and operating profit” and Jul-26 “continues to forecast like-for-like revenue and profit growth in the year” → now “the Board expects the Group to deliver LFL revenue growth for the full year, with revenue and adjusted operating profit in line with market expectations” (H1 adjusted operating profit down 1.8%)",
+    "span": "Profit growth stated May-26, Jul-26 → dropped Oct-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Demoted",
+    "text": "Going-concern material uncertainty (Mach49 arbitration) sat in the main review at FY R May-26; now only in the notes: “the directors have concluded that there is a material uncertainty related to events or conditions that may cast significant doubt on the group’s and company’s ability to continue as a going concern”",
+    "span": "Absent at H1 Sep-25; front section May-26 → notes Oct-26"
+   },
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "First flag that the mix behind the guide will differ from consensus: “The segmental mix is expected to differ from current market expectations” with “a more gradual recovery than expected in some of the other segments”",
+    "span": "Not in Sep-25, May-26 or Jul-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Pushed out",
+    "text": "Mach49 arbitration outcome: Sep-25 “An outcome is expected within the next 12 months.” → now “expected to be known within the financial year ending 31 January 2027”",
+    "span": "By Sep-26 → by Jan-27"
+   }
+  ]
+ }
+}

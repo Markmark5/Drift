@@ -1,6 +1,6 @@
 {
  "ticker": "AAF",
- "v": "2026-10-18.9ea5",
+ "v": "2026-10-19.7281",
  "ccy": "GBX",
  "src": "AlphaVantage AAF.LON weekly",
  "adj": [],
@@ -1064,16 +1064,18 @@
    "doc": "H1 R",
    "fy": "FY22",
    "g": "flat",
-   "s": 1,
-   "q": "The continent continues to be a growth story for us despite the pandemic."
+   "s": 0,
+   "q": "Even after adjusting for this, revenue growth rates for the half year were ahead of FY'21 growth trends for the Group, and across all reported service segments.",
+   "file": "20211028_AAF_Half-Year-Results.md"
   },
   {
    "d": "2022-02-04",
    "doc": "Q3 R",
    "fy": "FY22",
    "g": "flat",
-   "s": 1,
-   "q": "I continue to see huge growth potential across voice, data and mobile money and our strategy is delivering against this opportunity."
+   "s": 0,
+   "q": "However, even after adjusting for this, Group revenue growth rates were ahead of FY'21.",
+   "file": "20220204_AAF_Q3-Results.md"
   },
   {
    "d": "2022-05-11",
@@ -1081,7 +1083,8 @@
    "fy": "FY23",
    "g": "flat",
    "s": 0,
-   "q": "There are increasing challenges from global inflationary pressures, but we continue to target revenue growth ahead of the market and moderate margin expansion."
+   "q": "There are increasing challenges from global inflationary pressures, but we continue to target revenue growth ahead of the market and moderate margin expansion.",
+   "file": "20220511_AAF_Full-Year-Results.md"
   },
   {
    "d": "2022-07-28",
@@ -1089,7 +1092,8 @@
    "fy": "FY23",
    "g": "flat",
    "s": -1,
-   "q": "We continue to target growth ahead of the market this year and, despite inflationary pressures, our continued focus on cost efficiencies should also support margin resilience."
+   "q": "We continue to target growth ahead of the market this year and, despite inflationary pressures, our continued focus on cost efficiencies should also support margin resilience.",
+   "file": "20220728_AAF_Q1-23-Results.md"
   },
   {
    "d": "2022-10-27",
@@ -1097,7 +1101,8 @@
    "fy": "FY23",
    "g": "flat",
    "s": 0,
-   "q": "For the remainder of the financial year, we anticipate sustained growth in the business, alongside EBITDA margin resilience."
+   "q": "Turning to the outlook, long-term opportunities for us remain attractive. While mindful of currency devaluation and repatriation risks, we continue to work actively to mitigate all our material risks and to deliver value for all our stakeholders.",
+   "file": "20221027_AAF_Half-Year-Results.md"
   },
   {
    "d": "2023-02-02",
@@ -1105,23 +1110,26 @@
    "fy": "FY23",
    "g": "flat",
    "s": 0,
-   "q": "For the remainder of the financial year. we continue to anticipate sustained growth in the business with continued EBITDA margin resilience."
+   "q": "In terms of outlook, long-term opportunities for us remain attractive. Whilst mindful of currency devaluation and repatriation risks, we continue to work actively to mitigate all our material risks and deliver value for all our stakeholders.",
+   "file": "20230202_AAF_Q3-Results.md"
   },
   {
    "d": "2023-05-11",
    "doc": "FY R",
    "fy": "FY24",
    "g": "flat",
-   "s": -1,
-   "q": "The macro-economic outlook remains volatile, but we are well positioned to deliver against the growth opportunities these markets offer, with a continued focus on margin resilience."
+   "s": 0,
+   "q": "The macro-economic outlook remains volatile, but we are well positioned to deliver against the growth opportunities these markets offer, with a continued focus on margin resilience.",
+   "file": "20230511_AAF_Full-Year-Results.md"
   },
   {
    "d": "2023-07-27",
    "doc": "Q1 R",
    "fy": "FY24",
    "g": "flat",
-   "s": -1,
-   "q": "In-line with the sensitivity analysis published, the impact of the devaluation seen to date is expected to be between $850m and $900m on annualised revenues."
+   "s": -2,
+   "q": "The annualised impact of the devaluation in Nigeria incurred in June 2023, assuming no further devaluation for the remainder of the year, is expected to be between $850m and $900m on annualised revenues and between $450m and $500m on annualised EBITDA, with the large majority of the impact expected to materialise in Q2'24 and the remainder of the fiscal year.",
+   "file": "20230727_AAF_Q1-24-Results.md"
   },
   {
    "d": "2023-10-30",
@@ -1129,7 +1137,8 @@
    "fy": "FY24",
    "g": "flat",
    "s": 0,
-   "q": "Despite the challenges of rising diesel prices in Nigeria, we aim to limit the impact with continued operational leverage and further cost efficiencies to deliver an improved EBITDA margin in FY'24 versus FY'23."
+   "q": "Despite the challenges of rising diesel prices in Nigeria, we aim to limit the impact with continued operational leverage and further cost efficiencies to deliver an improved EBITDA margin in FY'24 versus FY'23",
+   "file": "20231030_AAF_Half-Year-Results.md"
   },
   {
    "d": "2024-02-01",
@@ -1137,7 +1146,8 @@
    "fy": "FY24",
    "g": "flat",
    "s": -1,
-   "q": "We continue to be well positioned to deliver on the attractive growth opportunities our markets offer and despite the challenge of rising diesel prices, ongoing currency devaluation and inflationary pressures across some of our markets, we remain focussed on margin resilience."
+   "q": "We continue to be well positioned to deliver on the attractive growth opportunities our markets offer and despite the challenge of rising diesel prices, ongoing currency devaluation and inflationary pressures across some of our markets, we remain focussed on margin resilience",
+   "file": "20240201_AAF_Q3-Results.md"
   },
   {
    "d": "2024-05-09",
@@ -1145,7 +1155,8 @@
    "fy": "FY25",
    "g": "flat",
    "s": 0,
-   "q": "We will continue to focus on margin improvement from the recent level as we progress through the year."
+   "q": "The growth opportunity that exists across our markets remains compelling, and we are well positioned to deliver against this opportunity. We will continue to focus on margin improvement from the recent level as we progress through the year.",
+   "file": "20240509_AAF_Final-Results.md"
   },
   {
    "d": "2024-07-25",
@@ -1153,7 +1164,8 @@
    "fy": "FY25",
    "g": "flat",
    "s": 0,
-   "q": "The growth opportunity across our markets remains compelling and we continue to focus on margin improvement as indicated in our FY'24 results."
+   "q": "The continued revenue growth momentum once again reflects the resilient demand for our services, with sustained growth in our customer base and usage.",
+   "file": "20240725_AAF_Q1-25-Results.md"
   },
   {
    "d": "2024-10-25",
@@ -1161,7 +1173,8 @@
    "fy": "FY25",
    "g": "flat",
    "s": 0,
-   "q": "The growth opportunity across our markets remains compelling and we continue to focus on margin improvement."
+   "q": "The sustained operating momentum over the period is testament to our teams' ability to execute our strategy brilliantly.",
+   "file": "20241025_AAF_Half-Year-Results.md"
   },
   {
    "d": "2025-01-30",
@@ -1169,7 +1182,9 @@
    "fy": "FY25",
    "g": "flat",
    "s": 1,
-   "q": "This, together with continued confidence in the outlook for the business, has enabled the Board to announce a second share buyback programme, which will return up to $100m to shareholders."
+   "gnote": "early signal: first step up in tone",
+   "q": "The recent signs of currency stabilisation in some markets and the recent decision from the Nigerian Communications Commission (NCC) regarding tariff adjustments in Nigeria are encouraging and signal a more stable and supportive operating environment.",
+   "file": "20250130_AAF_Q3-Results.md"
   },
   {
    "d": "2025-05-08",
@@ -1177,39 +1192,44 @@
    "fy": "FY26",
    "g": "flat",
    "s": 0,
-   "q": "Underlying EBITDA margins increased by 200bps from 45.3% in Q1'25 to 47.3% in Q4'25, and we remain focussed on further EBITDA margin improvements subject to macroeconomic stability."
+   "q": "An improving operating environment and focussed execution contributed to strong momentum in our financial results with constant currency revenue growth peaking at 23.2% in Q4'25.",
+   "file": "20250508_AAF_Final-Results.md"
   },
   {
    "d": "2025-07-24",
    "doc": "Q1 R",
    "fy": "FY26",
    "g": "flat",
-   "s": 1,
-   "q": "With a strong balance sheet and sustained network investment, I remain confident about our ability to capture the available growth potential across our markets"
+   "s": 0,
+   "q": "With a strong balance sheet and sustained network investment, I remain confident about our ability to capture the available growth potential across our markets and remain committed to efficiently and effectively delivering services that help to improve the lives, communities and economies we serve.",
+   "file": "20250724_AAF_Q1-Results.md"
   },
   {
    "d": "2025-10-28",
    "doc": "H1 R",
    "fy": "FY26",
    "g": "flat",
-   "s": 1,
-   "q": "This strong performance gives us the confidence to increase our capex guidance for this financial year to between $875m and $900m, as we accelerate our investments to capture the full potential across our markets and deliver long-term value for all stakeholders."
+   "s": 0,
+   "q": "This strong performance gives us the confidence to increase our capex guidance for this financial year to between $875m and $900m, as we accelerate our investments to capture the full potential across our markets and deliver long-term value for all stakeholders.",
+   "file": "20251028_AAF_Half-year-Report.md"
   },
   {
    "d": "2026-01-30",
    "doc": "Q3 R",
    "fy": "FY26",
    "g": "flat",
-   "s": 1,
-   "q": "These results reinforce our confidence in the long‑term potential of our markets and our ability to create value for all our stakeholders."
+   "s": 0,
+   "q": "Our customer-centric strategy continues to underpin strong operating momentum, with increased network investment, digitisation and innovative new partnerships, demonstrating tangible progress in delivering our strategic priorities",
+   "file": "20260130_AAF_3rd-Quarter-Results.md"
   },
   {
    "d": "2026-05-08",
    "doc": "FY R",
    "fy": "FY27",
    "g": "flat",
-   "s": -1,
-   "q": "The recent increase in energy costs arising from the ongoing geopolitical events will likely lead to increased cost inflation, resulting in EBITDA margin pressure in the near-term."
+   "s": -2,
+   "q": "The recent increase in energy costs arising from the ongoing geopolitical events will likely lead to increased cost inflation, resulting in EBITDA margin pressure in the near-term.",
+   "file": "20260508_AAF_Final-Results.md"
   },
   {
    "d": "2026-07-23",
@@ -1217,8 +1237,29 @@
    "fy": "FY27",
    "g": "flat",
    "s": -1,
-   "q": "Higher energy costs arising from recent geopolitical developments are expected to increase inflationary pressures and weigh on EBITDA margins in the near term, however, we will continue to focus on offsetting some of this impact over the year."
+   "q": "Higher energy costs arising from recent geopolitical developments are expected to increase inflationary pressures and weigh on EBITDA margins in the near term, however, we will continue to focus on offsetting some of this impact over the year.",
+   "file": "20260723_AAF_Q1-Results.md"
   }
  ],
- "lite": true
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-23",
+  "doc": "OPS",
+  "file": "20260923_AAF_Airtel-Money-Intention-to-Float-Announcement.md",
+  "vs": "Q1 R Jul-26 · FY R May-26 · back to May-25, Oct-25, Jan-26",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Pushed out",
+    "text": "Airtel Money IPO timing: May-25 “we anticipate a listing event in the first half of calendar year 2026”, Oct-25 “on course for a listing in the first half of 2026”, Jan-26 “We remain on track for the listing of Airtel Money in the first half of 2026” → May-26 “the intention of undertaking the IPO in the second half of 2026” → intention to float only on 23 Sep-26",
+    "span": "H1 2026 target given 3 times → slipped to H2 2026"
+   },
+   {
+    "sev": "grey",
+    "type": "Split withheld",
+    "text": "No Airtel Money figures in the RNS itself (Jul-26 Q1 gave “Annualised TPV in excess of $245bn”); Sep-26 says the separate announcement covers “its current trading and outlook” and “is available on Airtel Money's website”",
+    "span": "Jul-26 → Sep-26"
+   }
+  ]
+ }
 }

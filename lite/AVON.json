@@ -1,0 +1,1289 @@
+{
+ "ticker": "AVON",
+ "v": "2026-10-19.08d0",
+ "ccy": "GBX",
+ "src": "AlphaVantage AVON.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   2012.0
+  ],
+  [
+   "2021-10-22",
+   2046.0
+  ],
+  [
+   "2021-10-29",
+   1945.0
+  ],
+  [
+   "2021-11-05",
+   1944.0
+  ],
+  [
+   "2021-11-12",
+   928.0
+  ],
+  [
+   "2021-11-19",
+   1129.0
+  ],
+  [
+   "2021-11-26",
+   1079.0
+  ],
+  [
+   "2021-12-03",
+   1058.0
+  ],
+  [
+   "2021-12-10",
+   1089.0
+  ],
+  [
+   "2021-12-17",
+   1125.0
+  ],
+  [
+   "2021-12-24",
+   1120.0
+  ],
+  [
+   "2021-12-31",
+   1121.0
+  ],
+  [
+   "2022-01-07",
+   1208.0
+  ],
+  [
+   "2022-01-14",
+   1164.0
+  ],
+  [
+   "2022-01-21",
+   1058.0
+  ],
+  [
+   "2022-01-28",
+   1110.0
+  ],
+  [
+   "2022-02-04",
+   1125.0
+  ],
+  [
+   "2022-02-11",
+   1151.0
+  ],
+  [
+   "2022-02-18",
+   1080.0
+  ],
+  [
+   "2022-02-25",
+   1143.0
+  ],
+  [
+   "2022-03-04",
+   1212.0
+  ],
+  [
+   "2022-03-11",
+   1265.0
+  ],
+  [
+   "2022-03-18",
+   1300.0
+  ],
+  [
+   "2022-03-25",
+   1319.0
+  ],
+  [
+   "2022-04-01",
+   1321.0
+  ],
+  [
+   "2022-04-08",
+   1182.0
+  ],
+  [
+   "2022-04-14",
+   1100.0
+  ],
+  [
+   "2022-04-22",
+   1097.0
+  ],
+  [
+   "2022-04-29",
+   1062.0
+  ],
+  [
+   "2022-05-06",
+   1135.0
+  ],
+  [
+   "2022-05-13",
+   1166.0
+  ],
+  [
+   "2022-05-20",
+   1211.0
+  ],
+  [
+   "2022-05-27",
+   1100.0
+  ],
+  [
+   "2022-06-01",
+   1100.0
+  ],
+  [
+   "2022-06-10",
+   1093.0
+  ],
+  [
+   "2022-06-17",
+   975.5
+  ],
+  [
+   "2022-06-24",
+   1052.0
+  ],
+  [
+   "2022-07-01",
+   1005.0
+  ],
+  [
+   "2022-07-08",
+   936.5
+  ],
+  [
+   "2022-07-15",
+   978.0
+  ],
+  [
+   "2022-07-22",
+   1054.0
+  ],
+  [
+   "2022-07-29",
+   1062.0
+  ],
+  [
+   "2022-08-05",
+   998.5
+  ],
+  [
+   "2022-08-12",
+   959.5
+  ],
+  [
+   "2022-08-19",
+   945.5
+  ],
+  [
+   "2022-08-26",
+   853.5
+  ],
+  [
+   "2022-09-02",
+   776.0
+  ],
+  [
+   "2022-09-09",
+   929.5
+  ],
+  [
+   "2022-09-16",
+   836.5
+  ],
+  [
+   "2022-09-23",
+   936.5
+  ],
+  [
+   "2022-09-30",
+   1124.0
+  ],
+  [
+   "2022-10-07",
+   1008.0
+  ],
+  [
+   "2022-10-14",
+   1023.0
+  ],
+  [
+   "2022-10-21",
+   1130.0
+  ],
+  [
+   "2022-10-28",
+   1030.0
+  ],
+  [
+   "2022-11-04",
+   1040.0
+  ],
+  [
+   "2022-11-11",
+   1167.0
+  ],
+  [
+   "2022-11-18",
+   1151.0
+  ],
+  [
+   "2022-11-25",
+   1171.0
+  ],
+  [
+   "2022-12-02",
+   1070.0
+  ],
+  [
+   "2022-12-09",
+   1064.0
+  ],
+  [
+   "2022-12-16",
+   1085.0
+  ],
+  [
+   "2022-12-23",
+   1076.0
+  ],
+  [
+   "2022-12-30",
+   1075.0
+  ],
+  [
+   "2023-01-06",
+   1099.0
+  ],
+  [
+   "2023-01-13",
+   1078.0
+  ],
+  [
+   "2023-01-20",
+   1041.0
+  ],
+  [
+   "2023-01-27",
+   1014.0
+  ],
+  [
+   "2023-02-03",
+   1008.0
+  ],
+  [
+   "2023-02-10",
+   950.0
+  ],
+  [
+   "2023-02-17",
+   932.0
+  ],
+  [
+   "2023-02-24",
+   967.0
+  ],
+  [
+   "2023-03-03",
+   952.5
+  ],
+  [
+   "2023-03-10",
+   905.0
+  ],
+  [
+   "2023-03-17",
+   883.5
+  ],
+  [
+   "2023-03-24",
+   908.5
+  ],
+  [
+   "2023-03-31",
+   926.5
+  ],
+  [
+   "2023-04-06",
+   917.0
+  ],
+  [
+   "2023-04-14",
+   949.0
+  ],
+  [
+   "2023-04-21",
+   939.0
+  ],
+  [
+   "2023-04-28",
+   993.0
+  ],
+  [
+   "2023-05-05",
+   943.0
+  ],
+  [
+   "2023-05-12",
+   966.0
+  ],
+  [
+   "2023-05-19",
+   991.0
+  ],
+  [
+   "2023-05-26",
+   835.0
+  ],
+  [
+   "2023-06-02",
+   890.0
+  ],
+  [
+   "2023-06-09",
+   890.0
+  ],
+  [
+   "2023-06-16",
+   880.0
+  ],
+  [
+   "2023-06-23",
+   862.0
+  ],
+  [
+   "2023-06-30",
+   852.0
+  ],
+  [
+   "2023-07-07",
+   831.0
+  ],
+  [
+   "2023-07-14",
+   859.0
+  ],
+  [
+   "2023-07-21",
+   845.0
+  ],
+  [
+   "2023-07-28",
+   815.0
+  ],
+  [
+   "2023-08-04",
+   810.0
+  ],
+  [
+   "2023-08-11",
+   729.0
+  ],
+  [
+   "2023-08-18",
+   706.0
+  ],
+  [
+   "2023-08-25",
+   658.0
+  ],
+  [
+   "2023-09-01",
+   651.0
+  ],
+  [
+   "2023-09-08",
+   635.0
+  ],
+  [
+   "2023-09-15",
+   634.0
+  ],
+  [
+   "2023-09-22",
+   632.0
+  ],
+  [
+   "2023-09-29",
+   618.0
+  ],
+  [
+   "2023-10-06",
+   606.0
+  ],
+  [
+   "2023-10-13",
+   714.0
+  ],
+  [
+   "2023-10-20",
+   840.0
+  ],
+  [
+   "2023-10-27",
+   782.0
+  ],
+  [
+   "2023-11-03",
+   887.0
+  ],
+  [
+   "2023-11-10",
+   815.0
+  ],
+  [
+   "2023-11-17",
+   811.0
+  ],
+  [
+   "2023-11-24",
+   838.0
+  ],
+  [
+   "2023-12-01",
+   788.0
+  ],
+  [
+   "2023-12-08",
+   809.0
+  ],
+  [
+   "2023-12-15",
+   833.0
+  ],
+  [
+   "2023-12-22",
+   829.0
+  ],
+  [
+   "2023-12-29",
+   850.0
+  ],
+  [
+   "2024-01-05",
+   860.0
+  ],
+  [
+   "2024-01-12",
+   893.0
+  ],
+  [
+   "2024-01-19",
+   940.0
+  ],
+  [
+   "2024-01-26",
+   952.0
+  ],
+  [
+   "2024-02-02",
+   974.0
+  ],
+  [
+   "2024-02-09",
+   895.0
+  ],
+  [
+   "2024-02-16",
+   960.0
+  ],
+  [
+   "2024-02-23",
+   988.0
+  ],
+  [
+   "2024-03-01",
+   978.0
+  ],
+  [
+   "2024-03-08",
+   975.0
+  ],
+  [
+   "2024-03-15",
+   979.0
+  ],
+  [
+   "2024-03-22",
+   1054.0
+  ],
+  [
+   "2024-03-28",
+   1082.0
+  ],
+  [
+   "2024-04-05",
+   1092.0
+  ],
+  [
+   "2024-04-12",
+   1160.0
+  ],
+  [
+   "2024-04-19",
+   1190.0
+  ],
+  [
+   "2024-04-26",
+   1180.0
+  ],
+  [
+   "2024-05-03",
+   1220.0
+  ],
+  [
+   "2024-05-10",
+   1260.0
+  ],
+  [
+   "2024-05-17",
+   1298.0
+  ],
+  [
+   "2024-05-24",
+   1356.0
+  ],
+  [
+   "2024-05-31",
+   1320.0
+  ],
+  [
+   "2024-06-07",
+   1312.0
+  ],
+  [
+   "2024-06-14",
+   1288.0
+  ],
+  [
+   "2024-06-21",
+   1368.0
+  ],
+  [
+   "2024-06-28",
+   1298.0
+  ],
+  [
+   "2024-07-05",
+   1274.0
+  ],
+  [
+   "2024-07-12",
+   1294.0
+  ],
+  [
+   "2024-07-19",
+   1278.0
+  ],
+  [
+   "2024-07-26",
+   1340.0
+  ],
+  [
+   "2024-08-02",
+   1250.0
+  ],
+  [
+   "2024-08-09",
+   1256.0
+  ],
+  [
+   "2024-08-16",
+   1270.0
+  ],
+  [
+   "2024-08-23",
+   1234.0
+  ],
+  [
+   "2024-08-30",
+   1244.0
+  ],
+  [
+   "2024-09-06",
+   1210.0
+  ],
+  [
+   "2024-09-13",
+   1210.0
+  ],
+  [
+   "2024-09-20",
+   1230.0
+  ],
+  [
+   "2024-09-27",
+   1248.0
+  ],
+  [
+   "2024-10-04",
+   1244.0
+  ],
+  [
+   "2024-10-11",
+   1234.0
+  ],
+  [
+   "2024-10-18",
+   1256.0
+  ],
+  [
+   "2024-10-25",
+   1244.0
+  ],
+  [
+   "2024-11-01",
+   1258.0
+  ],
+  [
+   "2024-11-08",
+   1242.0
+  ],
+  [
+   "2024-11-15",
+   1250.0
+  ],
+  [
+   "2024-11-22",
+   1392.0
+  ],
+  [
+   "2024-11-29",
+   1412.0
+  ],
+  [
+   "2024-12-06",
+   1386.0
+  ],
+  [
+   "2024-12-13",
+   1384.0
+  ],
+  [
+   "2024-12-20",
+   1426.0
+  ],
+  [
+   "2024-12-24",
+   1450.0
+  ],
+  [
+   "2024-12-27",
+   1454.0
+  ],
+  [
+   "2025-01-03",
+   1462.0
+  ],
+  [
+   "2025-01-10",
+   1520.0
+  ],
+  [
+   "2025-01-17",
+   1508.0
+  ],
+  [
+   "2025-01-24",
+   1480.0
+  ],
+  [
+   "2025-01-31",
+   1486.0
+  ],
+  [
+   "2025-02-07",
+   1446.0
+  ],
+  [
+   "2025-02-14",
+   1440.0
+  ],
+  [
+   "2025-02-21",
+   1454.0
+  ],
+  [
+   "2025-02-28",
+   1432.0
+  ],
+  [
+   "2025-03-07",
+   1468.0
+  ],
+  [
+   "2025-03-14",
+   1440.0
+  ],
+  [
+   "2025-03-21",
+   1362.0
+  ],
+  [
+   "2025-03-28",
+   1482.0
+  ],
+  [
+   "2025-04-04",
+   1374.0
+  ],
+  [
+   "2025-04-11",
+   1338.0
+  ],
+  [
+   "2025-04-17",
+   1400.0
+  ],
+  [
+   "2025-04-25",
+   1370.0
+  ],
+  [
+   "2025-05-02",
+   1410.0
+  ],
+  [
+   "2025-05-09",
+   1528.0
+  ],
+  [
+   "2025-05-16",
+   1550.0
+  ],
+  [
+   "2025-05-23",
+   1696.0
+  ],
+  [
+   "2025-05-30",
+   1758.0
+  ],
+  [
+   "2025-06-06",
+   1770.0
+  ],
+  [
+   "2025-06-13",
+   1732.0
+  ],
+  [
+   "2025-06-20",
+   1808.0
+  ],
+  [
+   "2025-06-27",
+   1916.0
+  ],
+  [
+   "2025-07-04",
+   1978.0
+  ],
+  [
+   "2025-07-11",
+   2070.0
+  ],
+  [
+   "2025-07-18",
+   2120.0
+  ],
+  [
+   "2025-07-25",
+   2085.0
+  ],
+  [
+   "2025-08-01",
+   2120.0
+  ],
+  [
+   "2025-08-08",
+   2105.0
+  ],
+  [
+   "2025-08-15",
+   1990.0
+  ],
+  [
+   "2025-08-22",
+   2005.0
+  ],
+  [
+   "2025-08-29",
+   1906.0
+  ],
+  [
+   "2025-09-05",
+   1918.0
+  ],
+  [
+   "2025-09-12",
+   2105.0
+  ],
+  [
+   "2025-09-19",
+   2040.0
+  ],
+  [
+   "2025-09-26",
+   2035.0
+  ],
+  [
+   "2025-10-03",
+   2110.0
+  ],
+  [
+   "2025-10-10",
+   2045.0
+  ],
+  [
+   "2025-10-17",
+   1874.0
+  ],
+  [
+   "2025-10-24",
+   1914.0
+  ],
+  [
+   "2025-10-31",
+   1914.0
+  ],
+  [
+   "2025-11-07",
+   1864.0
+  ],
+  [
+   "2025-11-14",
+   1928.0
+  ],
+  [
+   "2025-11-21",
+   1818.0
+  ],
+  [
+   "2025-11-28",
+   1814.0
+  ],
+  [
+   "2025-12-05",
+   1794.0
+  ],
+  [
+   "2025-12-12",
+   1804.0
+  ],
+  [
+   "2025-12-19",
+   1812.0
+  ],
+  [
+   "2025-12-24",
+   1800.0
+  ],
+  [
+   "2026-01-02",
+   1804.0
+  ],
+  [
+   "2026-01-09",
+   1918.0
+  ],
+  [
+   "2026-01-16",
+   1988.0
+  ],
+  [
+   "2026-01-23",
+   1944.0
+  ],
+  [
+   "2026-01-30",
+   1754.0
+  ],
+  [
+   "2026-02-06",
+   1664.0
+  ],
+  [
+   "2026-02-13",
+   1698.0
+  ],
+  [
+   "2026-02-20",
+   1806.0
+  ],
+  [
+   "2026-02-27",
+   1838.0
+  ],
+  [
+   "2026-03-06",
+   1900.0
+  ],
+  [
+   "2026-03-13",
+   1840.0
+  ],
+  [
+   "2026-03-20",
+   1700.0
+  ],
+  [
+   "2026-03-27",
+   1618.0
+  ],
+  [
+   "2026-04-02",
+   1736.0
+  ],
+  [
+   "2026-04-10",
+   1732.0
+  ],
+  [
+   "2026-04-17",
+   1806.0
+  ],
+  [
+   "2026-04-24",
+   1700.0
+  ],
+  [
+   "2026-05-01",
+   1742.0
+  ],
+  [
+   "2026-05-08",
+   1662.0
+  ],
+  [
+   "2026-05-15",
+   1614.0
+  ],
+  [
+   "2026-05-22",
+   1706.0
+  ],
+  [
+   "2026-05-29",
+   1734.0
+  ],
+  [
+   "2026-06-05",
+   1660.0
+  ],
+  [
+   "2026-06-12",
+   1730.0
+  ],
+  [
+   "2026-06-19",
+   1730.0
+  ],
+  [
+   "2026-06-26",
+   1756.0
+  ],
+  [
+   "2026-07-03",
+   1784.0
+  ],
+  [
+   "2026-07-10",
+   1654.0
+  ],
+  [
+   "2026-07-17",
+   1704.0
+  ],
+  [
+   "2026-07-24",
+   1754.0
+  ],
+  [
+   "2026-07-31",
+   1706.0
+  ],
+  [
+   "2026-08-07",
+   1896.0
+  ],
+  [
+   "2026-08-14",
+   1948.0
+  ],
+  [
+   "2026-08-21",
+   1824.0
+  ],
+  [
+   "2026-08-28",
+   1854.0
+  ],
+  [
+   "2026-09-04",
+   1836.0
+  ],
+  [
+   "2026-09-11",
+   1710.0
+  ],
+  [
+   "2026-09-18",
+   1774.0
+  ],
+  [
+   "2026-09-25",
+   1802.0
+  ],
+  [
+   "2026-10-02",
+   1882.0
+  ],
+  [
+   "2026-10-09",
+   2330.0
+  ],
+  [
+   "2026-10-16",
+   2480.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-11-12",
+   "doc": "OPS",
+   "fy": "FY22",
+   "g": "CUT",
+   "s": -3,
+   "q": "In light of the above, the financial contribution from our body armor business in FY22 and beyond will be significantly reduced, with the ultimate impact, including any associated cost savings, depending on the outcome of the review process.",
+   "file": "20211112_AVON_Body-armor-strategic-review.md"
+  },
+  {
+   "d": "2021-12-15",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -2,
+   "q": "Given the ongoing challenges, we are taking a cautious view on the anticipated rate of growth for FY22 at this stage in the year",
+   "file": "20211215_AVON_Final-Results.md"
+  },
+  {
+   "d": "2022-01-28",
+   "doc": "AGM",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -1,
+   "q": "Customer demand continues to be robust, however given continued longer order lead times, we expect revenues to be weighted to the second half of the year.",
+   "file": "20220128_AVON_Annual-General-Meeting---Trading-Update.md"
+  },
+  {
+   "d": "2022-04-06",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "CUT",
+   "s": -3,
+   "q": "Profitability in H2 is expected to improve versus H1 but will not offset the weakness experienced in the Period. Full year underlying earnings will therefore be lower than previously expected.",
+   "file": "20220406_AVON_Post-Close-Half-Year-Trading-Update.md"
+  },
+  {
+   "d": "2022-05-24",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -2,
+   "q": "In the short-term, the situation remains dynamic and complex, such that order visibility is reduced and consequently we are taking a more cautious view. This revenue mix risk flows to margin expectations for the remainder of the current year.",
+   "file": "20220524_AVON_Interim-Results.md"
+  },
+  {
+   "d": "2022-09-07",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 1,
+   "gnote": "early signal: first step up in tone",
+   "q": "Overall, performance for the year on an excluding armor basis is predicted to be at least in line with market expectations.",
+   "file": "20220907_AVON_Order-announcement-and-trading-update.md"
+  },
+  {
+   "d": "2022-11-22",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Adjusted EBITDA margin on an excluding armor basis consistent with FY22, with new product introduction costs and inflationary pressures largely offsetting efficiency improvements and overhead savings.",
+   "file": "20221122_AVON_Preliminary-Results.md"
+  },
+  {
+   "d": "2023-01-27",
+   "doc": "AGM",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "Due to the normal seasonality and timing of order receipts, revenue will be weighted to the second half, with FY23 expected to represent a year of good progress for Avon Protection.",
+   "file": "20230127_AVON_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2023-05-23",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -3,
+   "q": "Full year Group revenue excluding armour now expected to be c9% lower than the prior year, reflecting the Respiratory demand backdrop and some ongoing risk to shipment timings in H2.",
+   "file": "20230523_AVON_Interim-Results.md"
+  },
+  {
+   "d": "2023-10-13",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "Full year trading in line with the Board's expectations",
+   "file": "20231013_AVON_Trading-Update-&-Restatement-of-FY22-Results.md"
+  },
+  {
+   "d": "2023-11-21",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Solid operating margin progression - expected outturn close to 10%:",
+   "file": "20231121_AVON_Preliminary-Results.md"
+  },
+  {
+   "d": "2024-01-26",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The trading performance in the first quarter, and the progress made to date on transformation, support our full year expectations of high single-digit revenue growth and solid progression in adjusted operating margin in H2.",
+   "file": "20240126_AVON_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2024-05-21",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Confident in the outlook for H2, issuing updated FY 2024 guidance:",
+   "file": "20240521_AVON_Interim-Results.md"
+  },
+  {
+   "d": "2024-07-25",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 2,
+   "q": "The benefits of our focus on efficiency, and good operational execution are contributing to faster than expected progress in both Strategic Business Units.",
+   "file": "20240725_AVON_New-delivery-order-&-updated-FY-2024-guidance.md"
+  },
+  {
+   "d": "2024-11-19",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "As a result of the progress made during the year, we see the potential to reach our medium-term operating margin and ROIC guidance target ranges a year early, in 2026.",
+   "file": "20241119_AVON_Preliminary-Results.md"
+  },
+  {
+   "d": "2025-01-31",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading in the first quarter was in line with expectations and the Group outlook for the full year remains consistent with the guidance given with the FY24 results in November.",
+   "file": "20250131_AVON_AGM-Statement.md"
+  },
+  {
+   "d": "2025-03-26",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Overall, we expect better than originally guided operating profit margins in the current year.",
+   "file": "20250326_AVON_Q2-trading-update.md"
+  },
+  {
+   "d": "2025-05-21",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Expected to deliver double digit revenue growth in FY25 with improved returns in H2 as we generate further benefits from our operational improvement programmes",
+   "file": "20250521_AVON_Interim-Results.md"
+  },
+  {
+   "d": "2025-11-12",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "We are firmly on track to meet or exceed our key targets in FY26 and confident in sustaining improved returns over the long term, with further initiatives underway to support continued margin expansion into FY27.",
+   "file": "20251112_AVON_Preliminary-Results.md"
+  },
+  {
+   "d": "2026-01-30",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "Assuming no further extended government shutdowns, we expect these impacts to be temporary, with higher revenue, unwind of higher inventories and improved operational gearing expected over the remainder of the year.",
+   "file": "20260130_AVON_AGM-&-Q1-Trading-Update.md"
+  },
+  {
+   "d": "2026-05-13",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Firmly on track to meet or exceed FY26 guidance with exciting long-term growth prospects",
+   "file": "20260513_AVON_Interim-Results.md"
+  },
+  {
+   "d": "2026-10-07",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 2,
+   "q": "As a result, the Board now expects FY26 results to be ahead of current market expectations:",
+   "file": "20261007_AVON_Strategy-Teach-in-and-FY26-Trading-Update.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-07",
+  "doc": "YE-TU",
+  "file": "20261007_AVON_Strategy-Teach-in-and-FY26-Trading-Update.md",
+  "vs": "YE-TU Oct-23 (no YE-TU in 2024/25) · H1 R May-26 · FY R Nov-25",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "Order book — last YE-TU: “The order book as at 30 September 2023 showed growth of over 10% compared to the prior year” → now “with the order book rising significantly since the half year results”, no figure or growth rate",
+    "span": "Quantified Oct-23, Jan-24, Nov-25 ($263m), May-26 ($219.9m, down 11%)"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "FY26 margin “comfortably above our guided 14-16% range” but “including the effect of some beneficial one-offs in the year”, with the one-offs not quantified",
+    "span": "Guide set Nov-25: “Adjusted operating profit margin within our target 14-16% range”"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "New mid-term targets: “Adjusted operating margins of 16-18%” and “Annual EPS growth of greater than 10%”, replacing the 14-16% margin target met in FY26",
+    "span": "14-16% target quoted May-25, Nov-25, May-26"
+   }
+  ]
+ }
+}

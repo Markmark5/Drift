@@ -1,6 +1,6 @@
 {
  "ticker": "AJB",
- "v": "2026-10-18.66c9",
+ "v": "2026-10-19.543f",
  "ccy": "GBX",
  "src": "AlphaVantage AJB.LON weekly",
  "adj": [],
@@ -1060,28 +1060,76 @@
  ],
  "marks": [
   {
+   "d": "2021-10-21",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "flat",
+   "s": 0,
+   "q": "We have delivered another year of strong organic growth with total net inflows up 52%, AUA up 29% and customer numbers up 30%, compared to the previous year.",
+   "file": "20211021_AJB_Year-end-Trading-Update.md"
+  },
+  {
    "d": "2021-12-02",
    "doc": "FY R",
    "fy": "FY22",
    "g": "flat",
    "s": 0,
-   "q": "The long-term structural drivers of growth in the UK investment platform market remain strong and the outlook remains positive as an increasing number of people seek the security and peace of mind that a trusted investment platform can give them."
+   "q": "AJ Bell is a financially strong business, as evidenced by a profitable, well-capitalised and highly cash-generative business model and the Board remains confident about the long-term prospects of the business.",
+   "file": "20211202_AJB_Final-Results.md"
+  },
+  {
+   "d": "2022-01-20",
+   "doc": "Q1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "We have had a solid start to our new financial year with customer numbers, gross inflows and assets under administration all growing steadily.",
+   "file": "20220120_AJB_Q1-Trading-Update.md"
+  },
+  {
+   "d": "2022-04-21",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Our dual-channel platform, serving the growing advised and D2C platform markets, attracted over 20,000 new customers and significant net inflows during Q2 despite weakened investor sentiment.",
+   "file": "20220421_AJB_Q2-Trading-Update.md"
   },
   {
    "d": "2022-05-26",
    "doc": "H1 R",
    "fy": "FY22",
    "g": "RAISE",
-   "s": 2,
-   "q": "Revenue and profit margins are expected to increase in the second half, with PBT margin guidance for FY22 raised to c.35% (previous guidance 32-33%) and further improvement anticipated in FY23"
+   "s": 1,
+   "q": "Revenue and profit margins are expected to increase in the second half, with PBT margin guidance for FY22 raised to c.35% (previous guidance 32-33%) and further improvement anticipated in FY23",
+   "file": "20220526_AJB_Interim-Results.md"
+  },
+  {
+   "d": "2022-07-21",
+   "doc": "Q3 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Our trusted, dual-channel investment platform has continued to attract thousands of new customers looking to invest for their future, despite a weakening in investor sentiment over the last six months.",
+   "file": "20220721_AJB_Q3-Trading-Update.md"
+  },
+  {
+   "d": "2022-10-20",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Organic customer growth of 16% and net inflows of £5.8 billion over the year, with £1.2 billion of net inflows in the last quarter alone, once again demonstrates the strength of our dual-channel platform, with both advised and D2C channels performing very well.",
+   "file": "20221020_AJB_Year-end-Trading-Update.md"
   },
   {
    "d": "2022-12-01",
    "doc": "FY R",
    "fy": "FY23",
    "g": "flat",
-   "s": 1,
-   "q": "Our PBT margins are expected to increase in FY23 as higher revenue margins and the operational gearing inherent in our business model outweigh the impact of inflationary pressures and our planned investment in our brand and products."
+   "s": 0,
+   "q": "Our PBT margins are expected to increase in FY23 as higher revenue margins and the operational gearing inherent in our business model outweigh the impact of inflationary pressures and our planned investment in our brand and products.",
+   "file": "20221201_AJB_Final-Results.md"
   },
   {
    "d": "2023-01-19",
@@ -1089,7 +1137,8 @@
    "fy": "FY23",
    "g": "flat",
    "s": 0,
-   "q": "I am pleased to announce a solid start to the financial year, with our platform continuing to attract new customers and assets across both the advised and direct-to-consumer markets."
+   "q": "We remain positive about the growth prospects for the investment platform market and are very well positioned to continue growing our market share.",
+   "file": "20230119_AJB_Q1-Trading-Update.md"
   },
   {
    "d": "2023-04-20",
@@ -1097,31 +1146,45 @@
    "fy": "FY23",
    "g": "flat",
    "s": 1,
-   "q": "We enter the second half of our financial year in a strong position."
+   "gnote": "early signal: first step up in tone",
+   "q": "We enter the second half of our financial year in a strong position. Our diversified revenue streams and profitable business model support our recent step up in brand investment, whilst also enabling us to continually reinvest in pricing, service and functionality to benefit our customers.",
+   "file": "20230420_AJB_Q2-Trading-Update.md"
   },
   {
    "d": "2023-05-25",
    "doc": "H1 R",
-   "fy": "FY23",
+   "fy": "FY24",
    "g": "flat",
    "s": -1,
-   "q": "We expect full-year revenue margins to be similar to those achieved in the first half, with an anticipated increase in the average interest rate earned being offset by a recent moderation in average customer cash balances from elevated levels seen earlier in the first half."
+   "q": "Looking further ahead, we expect a slight compression in revenue margins beyond FY23. This is driven by the recent moderation in customer cash balances noted above, as well as our intention to continue sharing some of the benefits of our scale with customers through pricing.",
+   "file": "20230525_AJB_Interim-Results.md"
+  },
+  {
+   "d": "2023-07-20",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Momentum in the D2C market remained strong after the tax year end as customers took advantage of their new annual ISA and pension allowances.",
+   "file": "20230720_AJB_Q3-Trading-Update.md"
+  },
+  {
+   "d": "2023-10-19",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The long-term growth drivers of the investment platform market remain strong, and we look forward to announcing the annual results for what has been another successful year for AJ Bell in December.",
+   "file": "20231019_AJB_Year-end-Trading-Update.md"
   },
   {
    "d": "2023-12-07",
    "doc": "FY R",
    "fy": "FY24",
    "g": "flat",
-   "s": -1,
-   "q": "We expect these conditions to persist in the short term, however the versatility of our open-architecture platform enables us to continue to grow across a range of market conditions, as demonstrated in recent years."
-  },
-  {
-   "d": "2023-12-12",
-   "doc": "OPS",
-   "fy": "FY24",
-   "g": "flat",
    "s": 0,
-   "q": "These changes were factored into the financial guidance the Company provided at its annual results last week."
+   "q": "In the short term, the macroeconomic environment will continue to present some headwinds. However, as we have seen this year, our versatile platform offering enables us to continue delivering robust growth in these conditions and the long-term structural drivers of growth in the UK platform market remain strong.",
+   "file": "20231207_AJB_Final-Results.md"
   },
   {
    "d": "2024-01-18",
@@ -1129,79 +1192,108 @@
    "fy": "FY24",
    "g": "flat",
    "s": 1,
-   "q": "Whilst this strong start to the year provides good momentum as we head into the busy tax year end period, we remain focused on the long-term growth opportunity that exists in the platform market"
+   "gnote": "early signal: first step up in tone",
+   "q": "Platform net inflows of £1.3 billion in the quarter were up 63% on the £0.8 billion reported in the prior year, reflecting increased confidence among retail investors compared to a year ago.",
+   "file": "20240118_AJB_Q1-Trading-Update.md"
+  },
+  {
+   "d": "2024-04-18",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "We saw strong momentum in the run up to the tax year end as improving retail investor sentiment, together with continued investment in our brand and propositions, helped to deliver £1.4 billion of gross inflows in March alone, a new monthly record for the business.",
+   "file": "20240418_AJB_Q2-Trading-Update.md"
   },
   {
    "d": "2024-05-23",
    "doc": "H1 R",
    "fy": "FY24",
    "g": "RAISE",
-   "s": 2,
-   "q": "These metrics will moderate in the second half as customers begin to benefit from lower overall charges, however our updated full-year guidance reflects our expectation that both revenue and PBT will be higher than we had anticipated back in December."
+   "s": 1,
+   "q": "These metrics will moderate in the second half as customers begin to benefit from lower overall charges, however our updated full-year guidance reflects our expectation that both revenue and PBT will be higher than we had anticipated back in December.",
+   "file": "20240523_AJB_Interim-Results.md"
   },
   {
    "d": "2024-07-18",
    "doc": "Q3 TU",
    "fy": "FY24",
    "g": "flat",
-   "s": 1,
-   "q": "We enter the final quarter of our financial year with strong momentum."
+   "s": 0,
+   "q": "We enter the final quarter of our financial year with strong momentum. Our dual-channel strategy and continued investment into our brand, technology and products puts us in an excellent position to capture further market share gains in both the advised and D2C platform markets.",
+   "file": "20240718_AJB_Q3-Trading-Update.md"
   },
   {
    "d": "2024-10-17",
    "doc": "YE-TU",
-   "fy": "FY25",
+   "fy": "FY24",
    "g": "flat",
    "s": 0,
-   "q": "Whilst the upcoming Budget has introduced unhelpful uncertainty, we remain positive about the outlook for AJ Bell and the platform market more broadly."
+   "q": "Whilst the upcoming Budget has introduced unhelpful uncertainty, we remain positive about the outlook for AJ Bell and the platform market more broadly.",
+   "file": "20241017_AJB_Year-end-Trading-Update.md"
   },
   {
    "d": "2024-12-05",
    "doc": "FY R",
    "fy": "FY25",
    "g": "flat",
-   "s": -1,
-   "q": "In FY25, we expect our revenue margins to moderate slightly taking into account the annualised impact of our recent charge reductions."
+   "s": 0,
+   "q": "In FY25, we expect inflationary pressures to ease and further operational gearing to be realised. We will continue to invest to deliver our strategic priorities whilst maintaining strong profit margins.",
+   "file": "20241205_AJB_Final-Results.md"
   },
   {
    "d": "2025-01-29",
    "doc": "Q1 TU",
    "fy": "FY25",
    "g": "flat",
-   "s": 1,
-   "q": "The strong start to the year positions us well as we approach the busy tax year end period."
+   "s": 0,
+   "q": "I am pleased to report a strong start to the financial year as we continued to attract thousands of new customers and increased levels of assets, resulting in a record 561,000 platform customers and £89.5 billion of platform assets under administration.",
+   "file": "20250129_AJB_Q1-Trading-Update.md"
+  },
+  {
+   "d": "2025-03-27",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "In the year ended 30 September 2024, AJ Bell Platinum contributed £10.0 million to non-platform revenue. The sale does not impact our FY25 guidance.",
+   "file": "20250327_AJB_Sale-of-Platinum-SIPP-and-SSAS-business.md"
   },
   {
    "d": "2025-04-24",
    "doc": "H1 TU",
    "fy": "FY25",
    "g": "flat",
-   "s": 1,
-   "q": "We have started the second half of our financial year in a strong position."
+   "s": 0,
+   "q": "We have started the second half of our financial year in a strong position. Since the quarter end, global trade tariffs and broader macroeconomic uncertainty have created significant market volatility.",
+   "file": "20250424_AJB_Trading-Statement.md"
   },
   {
    "d": "2025-05-23",
    "doc": "H1 R",
    "fy": "FY25",
    "g": "RAISE",
-   "s": 2,
-   "q": "We expect this momentum to continue with full-year revenue and PBT anticipated to be higher than that previously guided at the start of the financial year."
+   "s": 1,
+   "q": "We expect this momentum to continue with full-year revenue and PBT anticipated to be higher than that previously guided at the start of the financial year.",
+   "file": "20250523_AJB_Interim-Results.md"
   },
   {
    "d": "2025-07-24",
    "doc": "Q3 TU",
    "fy": "FY25",
    "g": "flat",
-   "s": 1,
-   "q": "We enter the final quarter with strong momentum which underpins our confidence in the full year performance."
+   "s": 0,
+   "q": "We enter the final quarter with strong momentum which underpins our confidence in the full year performance. Our dual-channel strategy, supported by continued investment in our brand and propositions, positions us well to capture further share in the fast-growing UK platform market.",
+   "file": "20250724_AJB_Q3-Trading-Update.md"
   },
   {
    "d": "2025-10-23",
    "doc": "YE-TU",
-   "fy": "FY26",
+   "fy": "FY25",
    "g": "flat",
-   "s": -1,
-   "q": "Speculation over pension taxation ahead of the November Budget, which has developed in the absence of a clear and lasting government commitment to pension tax stability, creates damaging uncertainty for customers and advisers."
+   "s": 0,
+   "q": "The benefits of our investments are evidenced by record levels of platform customer growth and net inflows.",
+   "file": "20251023_AJB_Year-end-Trading-Update.md"
   },
   {
    "d": "2025-12-04",
@@ -1209,32 +1301,65 @@
    "fy": "FY26",
    "g": "flat",
    "s": -1,
-   "q": "In FY26, we expect our revenue margins to moderate slightly, taking into account the elevated levels of FX dealing activity experienced in the year."
+   "q": "Management remains confident in the outlook. We are prioritising investment for long-term growth, while the operational gearing inherent in our business model provides opportunities for PBT margin expansion beyond FY26",
+   "file": "20251204_AJB_Final-Results.md"
   },
   {
    "d": "2026-01-22",
    "doc": "Q1 TU",
    "fy": "FY26",
    "g": "flat",
-   "s": 1,
-   "q": "We have started the year with strong momentum."
+   "s": 0,
+   "q": "We have started the year with strong momentum. The platform market presents significant long-term growth opportunities, and our dual-channel model, supported by continued business investment, ensures we are well-placed to deliver on this opportunity.",
+   "file": "20260122_AJB_Q1-Trading-Update.md"
+  },
+  {
+   "d": "2026-04-23",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "I am delighted to report an excellent quarter of growth for our dual‑channel platform, as we delivered a record 50,000 net new customers and £2.7 billion of net inflows.",
+   "file": "20260423_AJB_Q2-Trading-Update.md"
   },
   {
    "d": "2026-05-21",
    "doc": "H1 R",
    "fy": "FY26",
    "g": "RAISE",
-   "s": 2,
-   "q": "We now expect full-year revenue margin, PBT and PBT margin to be higher than previously guided."
+   "s": 1,
+   "q": "We now expect full-year revenue margin, PBT and PBT margin to be higher than previously guided. Excellent returns from our investment in brand and marketing give us confidence to invest more than originally planned in the second half of the year, while still expecting to deliver materially higher profitability",
+   "file": "20260521_AJB_Interim-Results.md"
   },
   {
    "d": "2026-07-23",
    "doc": "Q3 TU",
    "fy": "FY26",
    "g": "flat",
-   "s": 1,
-   "q": "We have entered the final quarter with strong momentum."
+   "s": 0,
+   "q": "We have entered the final quarter with strong momentum. The UK platform market continues to benefit from structural growth drivers as more individuals take responsibility for their long-term financial futures.",
+   "file": "20260723_AJB_Q3-Trading-Update.md"
   }
  ],
- "lite": true
+ "lite": true,
+ "disc": {
+  "rns": "2026-07-23",
+  "doc": "Q3 TU",
+  "file": "20260723_AJB_Q3-Trading-Update.md",
+  "vs": "Q3 TU Jul-25 · Q2 TU Apr-26 / H1 R May-26 · back to Jul-24",
+  "lines": [
+   {
+    "sev": "grey",
+    "type": "Wording vs number",
+    "text": "Advised platform: commentary leads with “helping to drive another record quarter of gross inflows”, but Advised net inflows were £0.6bn in Q3-26, the same as Q3-25 (£0.6bn), while D2C rose from £1.5bn to £2.4bn; the Advised net figure appears only in the table",
+    "span": "Q3-25 → Q3-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Went quiet",
+    "text": "Service KPI: Jul-25 highlight “Trustpilot rating increased to 4.9-stars, emphasising our market-leading customer service”, repeated in the Apr-26 CEO comment → not mentioned in Jul-26",
+    "span": "Jul-25, Apr-26 → absent Jul-26"
+   }
+  ]
+ }
 }

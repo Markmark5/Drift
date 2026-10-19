@@ -1,0 +1,1461 @@
+{
+ "ticker": "DFCH",
+ "v": "2026-10-19.97eb",
+ "ccy": "GBX",
+ "src": "AlphaVantage DFCH.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-13",
+   58.0
+  ],
+  [
+   "2021-10-22",
+   58.0
+  ],
+  [
+   "2021-10-25",
+   58.0
+  ],
+  [
+   "2021-11-04",
+   57.5
+  ],
+  [
+   "2021-11-10",
+   57.5
+  ],
+  [
+   "2021-11-17",
+   59.0
+  ],
+  [
+   "2021-11-24",
+   57.0
+  ],
+  [
+   "2021-12-03",
+   57.0
+  ],
+  [
+   "2021-12-10",
+   47.8
+  ],
+  [
+   "2021-12-17",
+   49.0
+  ],
+  [
+   "2021-12-21",
+   49.0
+  ],
+  [
+   "2021-12-24",
+   49.0
+  ],
+  [
+   "2021-12-29",
+   49.0
+  ],
+  [
+   "2022-01-07",
+   49.5
+  ],
+  [
+   "2022-01-14",
+   48.0
+  ],
+  [
+   "2022-01-17",
+   47.8
+  ],
+  [
+   "2022-01-21",
+   48.5
+  ],
+  [
+   "2022-01-27",
+   48.0
+  ],
+  [
+   "2022-02-04",
+   48.0
+  ],
+  [
+   "2022-02-11",
+   48.0
+  ],
+  [
+   "2022-02-16",
+   48.0
+  ],
+  [
+   "2022-02-21",
+   48.0
+  ],
+  [
+   "2022-02-25",
+   46.5
+  ],
+  [
+   "2022-03-04",
+   46.5
+  ],
+  [
+   "2022-03-07",
+   46.5
+  ],
+  [
+   "2022-03-11",
+   46.0
+  ],
+  [
+   "2022-03-15",
+   46.0
+  ],
+  [
+   "2022-03-22",
+   45.0
+  ],
+  [
+   "2022-03-29",
+   46.0
+  ],
+  [
+   "2022-04-08",
+   41.5
+  ],
+  [
+   "2022-04-14",
+   41.5
+  ],
+  [
+   "2022-04-22",
+   41.0
+  ],
+  [
+   "2022-04-29",
+   40.7
+  ],
+  [
+   "2022-05-06",
+   39.0
+  ],
+  [
+   "2022-05-13",
+   36.0
+  ],
+  [
+   "2022-05-18",
+   37.0
+  ],
+  [
+   "2022-05-25",
+   37.5
+  ],
+  [
+   "2022-06-01",
+   37.5
+  ],
+  [
+   "2022-06-06",
+   37.5
+  ],
+  [
+   "2022-06-10",
+   37.5
+  ],
+  [
+   "2022-06-15",
+   37.5
+  ],
+  [
+   "2022-06-24",
+   36.5
+  ],
+  [
+   "2022-07-01",
+   35.0
+  ],
+  [
+   "2022-07-07",
+   35.0
+  ],
+  [
+   "2022-07-15",
+   35.5
+  ],
+  [
+   "2022-07-22",
+   35.5
+  ],
+  [
+   "2022-07-29",
+   35.5
+  ],
+  [
+   "2022-08-01",
+   35.5
+  ],
+  [
+   "2022-08-04",
+   35.5
+  ],
+  [
+   "2022-08-08",
+   35.5
+  ],
+  [
+   "2022-08-17",
+   34.0
+  ],
+  [
+   "2022-08-30",
+   34.0
+  ],
+  [
+   "2022-09-02",
+   34.0
+  ],
+  [
+   "2022-09-05",
+   34.0
+  ],
+  [
+   "2022-09-09",
+   34.0
+  ],
+  [
+   "2022-09-15",
+   34.5
+  ],
+  [
+   "2022-09-23",
+   32.0
+  ],
+  [
+   "2022-09-30",
+   27.5
+  ],
+  [
+   "2022-10-06",
+   27.5
+  ],
+  [
+   "2022-10-14",
+   27.5
+  ],
+  [
+   "2022-10-18",
+   27.5
+  ],
+  [
+   "2022-10-27",
+   27.5
+  ],
+  [
+   "2022-11-04",
+   27.5
+  ],
+  [
+   "2022-11-11",
+   32.5
+  ],
+  [
+   "2022-11-16",
+   35.5
+  ],
+  [
+   "2022-11-24",
+   35.0
+  ],
+  [
+   "2022-11-28",
+   34.5
+  ],
+  [
+   "2022-12-02",
+   34.5
+  ],
+  [
+   "2022-12-09",
+   34.5
+  ],
+  [
+   "2022-12-14",
+   34.5
+  ],
+  [
+   "2022-12-23",
+   33.5
+  ],
+  [
+   "2022-12-28",
+   33.5
+  ],
+  [
+   "2023-01-06",
+   33.5
+  ],
+  [
+   "2023-01-12",
+   33.0
+  ],
+  [
+   "2023-01-20",
+   37.0
+  ],
+  [
+   "2023-01-27",
+   36.5
+  ],
+  [
+   "2023-02-01",
+   38.0
+  ],
+  [
+   "2023-02-09",
+   38.5
+  ],
+  [
+   "2023-02-16",
+   38.5
+  ],
+  [
+   "2023-02-20",
+   38.5
+  ],
+  [
+   "2023-03-03",
+   38.5
+  ],
+  [
+   "2023-03-06",
+   38.5
+  ],
+  [
+   "2023-03-10",
+   38.5
+  ],
+  [
+   "2023-03-14",
+   37.0
+  ],
+  [
+   "2023-03-20",
+   37.0
+  ],
+  [
+   "2023-03-24",
+   37.0
+  ],
+  [
+   "2023-03-30",
+   37.0
+  ],
+  [
+   "2023-04-06",
+   38.5
+  ],
+  [
+   "2023-04-14",
+   37.0
+  ],
+  [
+   "2023-04-21",
+   38.5
+  ],
+  [
+   "2023-04-28",
+   38.5
+  ],
+  [
+   "2023-05-02",
+   38.5
+  ],
+  [
+   "2023-05-05",
+   38.5
+  ],
+  [
+   "2023-05-12",
+   38.5
+  ],
+  [
+   "2023-05-19",
+   37.0
+  ],
+  [
+   "2023-05-26",
+   37.0
+  ],
+  [
+   "2023-06-02",
+   37.0
+  ],
+  [
+   "2023-06-06",
+   37.0
+  ],
+  [
+   "2023-06-15",
+   37.0
+  ],
+  [
+   "2023-06-21",
+   35.5
+  ],
+  [
+   "2023-06-29",
+   34.5
+  ],
+  [
+   "2023-07-07",
+   34.5
+  ],
+  [
+   "2023-07-12",
+   35.0
+  ],
+  [
+   "2023-07-21",
+   34.5
+  ],
+  [
+   "2023-07-28",
+   33.5
+  ],
+  [
+   "2023-08-02",
+   33.5
+  ],
+  [
+   "2023-08-11",
+   29.5
+  ],
+  [
+   "2023-08-15",
+   29.0
+  ],
+  [
+   "2023-08-25",
+   29.0
+  ],
+  [
+   "2023-09-01",
+   29.0
+  ],
+  [
+   "2023-09-04",
+   29.0
+  ],
+  [
+   "2023-09-08",
+   29.5
+  ],
+  [
+   "2023-09-14",
+   29.5
+  ],
+  [
+   "2023-09-22",
+   31.6
+  ],
+  [
+   "2023-09-29",
+   29.0
+  ],
+  [
+   "2023-10-06",
+   29.0
+  ],
+  [
+   "2023-10-10",
+   28.5
+  ],
+  [
+   "2023-10-20",
+   28.5
+  ],
+  [
+   "2023-10-25",
+   28.5
+  ],
+  [
+   "2023-10-30",
+   28.0
+  ],
+  [
+   "2023-11-07",
+   27.0
+  ],
+  [
+   "2023-11-10",
+   27.0
+  ],
+  [
+   "2023-11-17",
+   26.0
+  ],
+  [
+   "2023-11-23",
+   26.0
+  ],
+  [
+   "2023-12-01",
+   21.0
+  ],
+  [
+   "2023-12-08",
+   23.0
+  ],
+  [
+   "2023-12-15",
+   22.5
+  ],
+  [
+   "2023-12-21",
+   22.5
+  ],
+  [
+   "2023-12-27",
+   22.5
+  ],
+  [
+   "2024-01-04",
+   22.5
+  ],
+  [
+   "2024-01-12",
+   27.5
+  ],
+  [
+   "2024-01-16",
+   27.5
+  ],
+  [
+   "2024-01-19",
+   27.5
+  ],
+  [
+   "2024-01-26",
+   27.5
+  ],
+  [
+   "2024-01-30",
+   27.5
+  ],
+  [
+   "2024-02-08",
+   27.5
+  ],
+  [
+   "2024-02-14",
+   27.5
+  ],
+  [
+   "2024-02-19",
+   26.0
+  ],
+  [
+   "2024-02-22",
+   26.0
+  ],
+  [
+   "2024-02-29",
+   26.0
+  ],
+  [
+   "2024-03-07",
+   26.0
+  ],
+  [
+   "2024-03-14",
+   25.5
+  ],
+  [
+   "2024-03-22",
+   24.0
+  ],
+  [
+   "2024-03-28",
+   23.0
+  ],
+  [
+   "2024-04-05",
+   22.5
+  ],
+  [
+   "2024-04-12",
+   23.5
+  ],
+  [
+   "2024-04-16",
+   23.5
+  ],
+  [
+   "2024-04-19",
+   22.5
+  ],
+  [
+   "2024-04-22",
+   22.5
+  ],
+  [
+   "2024-04-26",
+   22.5
+  ],
+  [
+   "2024-05-02",
+   25.0
+  ],
+  [
+   "2024-05-10",
+   26.5
+  ],
+  [
+   "2024-05-17",
+   26.5
+  ],
+  [
+   "2024-05-24",
+   31.0
+  ],
+  [
+   "2024-05-31",
+   32.8
+  ],
+  [
+   "2024-06-07",
+   30.5
+  ],
+  [
+   "2024-06-14",
+   29.0
+  ],
+  [
+   "2024-06-21",
+   29.0
+  ],
+  [
+   "2024-06-28",
+   29.0
+  ],
+  [
+   "2024-07-05",
+   33.5
+  ],
+  [
+   "2024-07-12",
+   32.5
+  ],
+  [
+   "2024-07-19",
+   32.5
+  ],
+  [
+   "2024-07-26",
+   32.5
+  ],
+  [
+   "2024-08-02",
+   31.0
+  ],
+  [
+   "2024-08-09",
+   30.0
+  ],
+  [
+   "2024-08-16",
+   30.0
+  ],
+  [
+   "2024-08-23",
+   30.5
+  ],
+  [
+   "2024-08-30",
+   30.5
+  ],
+  [
+   "2024-09-06",
+   30.5
+  ],
+  [
+   "2024-09-13",
+   30.5
+  ],
+  [
+   "2024-09-20",
+   30.0
+  ],
+  [
+   "2024-09-27",
+   30.0
+  ],
+  [
+   "2024-10-04",
+   30.0
+  ],
+  [
+   "2024-10-11",
+   30.5
+  ],
+  [
+   "2024-10-18",
+   30.5
+  ],
+  [
+   "2024-10-25",
+   31.0
+  ],
+  [
+   "2024-11-01",
+   29.5
+  ],
+  [
+   "2024-11-07",
+   29.5
+  ],
+  [
+   "2024-11-15",
+   31.0
+  ],
+  [
+   "2024-11-21",
+   32.0
+  ],
+  [
+   "2024-11-29",
+   32.0
+  ],
+  [
+   "2024-12-06",
+   36.0
+  ],
+  [
+   "2024-12-13",
+   35.5
+  ],
+  [
+   "2024-12-20",
+   36.0
+  ],
+  [
+   "2024-12-24",
+   36.0
+  ],
+  [
+   "2024-12-27",
+   36.0
+  ],
+  [
+   "2025-01-03",
+   36.5
+  ],
+  [
+   "2025-01-10",
+   38.0
+  ],
+  [
+   "2025-01-17",
+   41.0
+  ],
+  [
+   "2025-01-24",
+   41.0
+  ],
+  [
+   "2025-01-31",
+   41.0
+  ],
+  [
+   "2025-02-07",
+   39.5
+  ],
+  [
+   "2025-02-14",
+   39.5
+  ],
+  [
+   "2025-02-21",
+   39.5
+  ],
+  [
+   "2025-02-28",
+   39.5
+  ],
+  [
+   "2025-03-07",
+   39.0
+  ],
+  [
+   "2025-03-14",
+   39.0
+  ],
+  [
+   "2025-03-21",
+   39.0
+  ],
+  [
+   "2025-03-28",
+   38.5
+  ],
+  [
+   "2025-04-04",
+   32.5
+  ],
+  [
+   "2025-04-11",
+   32.5
+  ],
+  [
+   "2025-04-17",
+   32.5
+  ],
+  [
+   "2025-04-25",
+   34.5
+  ],
+  [
+   "2025-05-02",
+   36.5
+  ],
+  [
+   "2025-05-09",
+   37.0
+  ],
+  [
+   "2025-05-16",
+   38.0
+  ],
+  [
+   "2025-05-23",
+   38.0
+  ],
+  [
+   "2025-05-30",
+   39.0
+  ],
+  [
+   "2025-06-06",
+   39.5
+  ],
+  [
+   "2025-06-13",
+   39.5
+  ],
+  [
+   "2025-06-20",
+   39.0
+  ],
+  [
+   "2025-06-27",
+   39.0
+  ],
+  [
+   "2025-07-04",
+   41.0
+  ],
+  [
+   "2025-07-11",
+   42.0
+  ],
+  [
+   "2025-07-18",
+   42.0
+  ],
+  [
+   "2025-07-25",
+   47.0
+  ],
+  [
+   "2025-08-01",
+   45.5
+  ],
+  [
+   "2025-08-08",
+   45.5
+  ],
+  [
+   "2025-08-15",
+   45.5
+  ],
+  [
+   "2025-08-22",
+   45.0
+  ],
+  [
+   "2025-08-29",
+   46.0
+  ],
+  [
+   "2025-09-05",
+   45.5
+  ],
+  [
+   "2025-09-12",
+   53.5
+  ],
+  [
+   "2025-09-19",
+   53.0
+  ],
+  [
+   "2025-09-26",
+   55.0
+  ],
+  [
+   "2025-10-03",
+   54.0
+  ],
+  [
+   "2025-10-10",
+   54.0
+  ],
+  [
+   "2025-10-17",
+   50.0
+  ],
+  [
+   "2025-10-24",
+   50.0
+  ],
+  [
+   "2025-10-31",
+   54.0
+  ],
+  [
+   "2025-11-07",
+   53.0
+  ],
+  [
+   "2025-11-14",
+   52.5
+  ],
+  [
+   "2025-11-21",
+   50.25
+  ],
+  [
+   "2025-11-28",
+   51.0
+  ],
+  [
+   "2025-12-05",
+   49.5
+  ],
+  [
+   "2025-12-12",
+   50.0
+  ],
+  [
+   "2025-12-19",
+   50.0
+  ],
+  [
+   "2025-12-24",
+   52.5
+  ],
+  [
+   "2026-01-02",
+   52.0
+  ],
+  [
+   "2026-01-09",
+   53.5
+  ],
+  [
+   "2026-01-16",
+   58.0
+  ],
+  [
+   "2026-01-23",
+   63.5
+  ],
+  [
+   "2026-01-30",
+   66.5
+  ],
+  [
+   "2026-02-06",
+   64.5
+  ],
+  [
+   "2026-02-13",
+   65.0
+  ],
+  [
+   "2026-02-20",
+   66.0
+  ],
+  [
+   "2026-02-27",
+   66.0
+  ],
+  [
+   "2026-03-06",
+   59.0
+  ],
+  [
+   "2026-03-13",
+   60.0
+  ],
+  [
+   "2026-03-20",
+   57.0
+  ],
+  [
+   "2026-03-27",
+   57.0
+  ],
+  [
+   "2026-04-02",
+   55.5
+  ],
+  [
+   "2026-04-10",
+   58.0
+  ],
+  [
+   "2026-04-17",
+   58.5
+  ],
+  [
+   "2026-04-24",
+   59.5
+  ],
+  [
+   "2026-05-01",
+   59.5
+  ],
+  [
+   "2026-05-08",
+   59.8
+  ],
+  [
+   "2026-05-15",
+   59.0
+  ],
+  [
+   "2026-05-22",
+   57.0
+  ],
+  [
+   "2026-05-29",
+   54.2
+  ],
+  [
+   "2026-06-05",
+   54.5
+  ],
+  [
+   "2026-06-12",
+   55.0
+  ],
+  [
+   "2026-06-19",
+   57.0
+  ],
+  [
+   "2026-06-26",
+   65.5
+  ],
+  [
+   "2026-07-03",
+   63.5
+  ],
+  [
+   "2026-07-10",
+   70.0
+  ],
+  [
+   "2026-07-17",
+   71.0
+  ],
+  [
+   "2026-07-24",
+   70.0
+  ],
+  [
+   "2026-07-31",
+   68.5
+  ],
+  [
+   "2026-08-07",
+   70.5
+  ],
+  [
+   "2026-08-14",
+   71.0
+  ],
+  [
+   "2026-08-21",
+   72.0
+  ],
+  [
+   "2026-08-28",
+   71.0
+  ],
+  [
+   "2026-09-04",
+   73.0
+  ],
+  [
+   "2026-09-11",
+   75.0
+  ],
+  [
+   "2026-09-18",
+   71.5
+  ],
+  [
+   "2026-09-25",
+   73.5
+  ],
+  [
+   "2026-10-02",
+   74.4
+  ],
+  [
+   "2026-10-09",
+   72.5
+  ],
+  [
+   "2026-10-16",
+   72.2
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-12-06",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "flat",
+   "s": 0,
+   "q": "Distribution Finance Capital Holdings plc, a specialist bank providing working capital solutions to dealers and manufacturers across the UK, today announces that the Group continues to build on the positive momentum and record new loan origination seen through the year, expecting its full year financial performance to be in line with the Board's expectations.",
+   "file": "20211206_DFCH_Trading-Update.md"
+  },
+  {
+   "d": "2022-01-18",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Accordingly, the Board expects to be able to report the Group's loss before tax for the year to be moderately ahead of its expectations and show a significant reduction over the previous year at c.£4m (2020: £13.6m).",
+   "file": "20220118_DFCH_Trading-Update.md"
+  },
+  {
+   "d": "2022-04-04",
+   "doc": "Q1 TU",
+   "fy": "FY22",
+   "g": "CUT",
+   "s": -3,
+   "q": "Accordingly, the Board expects the pace of loan book growth to slow, impacting average loan book size and therefore generating a lower level of income versus Board expectations.",
+   "file": "20220404_DFCH_Q1-Trading-Update.md"
+  },
+  {
+   "d": "2022-04-13",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Board expects to end 2022 with a loan book in the region of £400 - 500m and subsequently the net result for the year to range between a loss of £2m and breakeven.",
+   "file": "20220413_DFCH_Final-Results.md"
+  },
+  {
+   "d": "2022-07-11",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group has continued to make good progress against the objectives set at the start of the year and the Group continues to perform in line with the Board's expectations, despite the on-going wider economic uncertainty.",
+   "file": "20220711_DFCH_Q2-Trading-Update.md"
+  },
+  {
+   "d": "2022-09-22",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Despite these factors the Group continues to trade in line with the Board's expectations.",
+   "file": "20220922_DFCH_Half-year-Report.md"
+  },
+  {
+   "d": "2022-10-12",
+   "doc": "Q3 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group continues to perform in line with the Board's expectations for the year ending 31 December 2022.",
+   "file": "20221012_DFCH_Third-Quarter-Loan-Book.md"
+  },
+  {
+   "d": "2023-01-19",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -1,
+   "q": "The loan book ended the year at approximately £440m, up 76% on the prior year (31 December 2021: £249m), whilst maintaining a strong net interest margin of at least 6% in spite of rising funding costs.",
+   "file": "20230119_DFCH_Trading-Update.md"
+  },
+  {
+   "d": "2023-04-05",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 3,
+   "q": "Following the Group's trading update of 19 January 2023 and having built on the strong financial performance reported at its interim results in September 2022, the Board is pleased to confirm that it expects to announce full year results for the year ended 31 December 2022 that materially exceed management expectations, predominantly due to increased net interest income and effective cost management.",
+   "file": "20230405_DFCH_Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2023-04-19",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 3,
+   "q": "Board expects financial performance for the full year to be materially ahead of management expectations, targeting a year end loan book for 2023 in the range of £550m-600m, with a continuing trend of rising loan origination and strong net interest margin.",
+   "file": "20230419_DFCH_Final-Results.md"
+  },
+  {
+   "d": "2023-07-12",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 1,
+   "q": "Despite continued macro-economic uncertainty and the increase in bank base rate over the last year requiring greater vigilance and a cautious approach to our lending activities and portfolio management, the Board currently expects financial performance for the full year to be slightly ahead of management expectations, targeting a year end loan book for 2023 in the range of £550m-600m, and continued profitable growth.",
+   "file": "20230712_DFCH_Trading-Update.md"
+  },
+  {
+   "d": "2023-09-29",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -1,
+   "q": "Given current trading, our expectation of further loan book growth and the rebalancing of the cost of risk through the balance of the year, we expect full year results for 2023 remain in line with the Board's expectations.",
+   "file": "20230929_DFCH_Half-year-Report.md"
+  },
+  {
+   "d": "2023-10-03",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Accordingly, we expect the Group to continue to perform in line with the Board's expectations.",
+   "file": "20231003_DFCH_Q3-Trading-Update.md"
+  },
+  {
+   "d": "2023-11-29",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -2,
+   "q": "However, in light of any expected credit loss provision in relation to RoyaleLife, the Group now expects to deliver a pre-tax profit of no less than £2.0m for the year ending 31 December 2023.",
+   "file": "20231129_DFCH_Trading-Statement.md"
+  },
+  {
+   "d": "2024-01-10",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 2,
+   "q": "In light of the Company's strong underlying operational and financial performance during the year and despite the assumed prudent credit loss provision for RoyaleLife offset by recent progress in making partial recovery, the Group now expects to report a pre-tax profit of no less than £3.0m, ahead of its prior expectations and more than double its FY22 outturn of £1.3m.",
+   "file": "20240110_DFCH_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2024-03-18",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 2,
+   "q": "The Group is pleased to announce that, due to prudent forecasting of credit loss provisions at the year-end, unrelated to any provision for its RoyaleLife exposure, and proactive operational cost control by management, it now expects to report a pre-tax profit of approximately £4.4 million for the year ended 31 December 2023, ahead of the Board's prior expectations and more than triple the outturn of £1.3 million for the prior year.",
+   "file": "20240318_DFCH_Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2024-04-09",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board expects financial performance for the full year to be in line with expectations, targeting a year end loan book in the range of £650m to 700m.",
+   "file": "20240409_DFCH_Final-Results.md"
+  },
+  {
+   "d": "2024-07-04",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 3,
+   "q": "Continued momentum with full year results now expected to be significantly ahead of market expectations",
+   "file": "20240704_DFCH_Trading-Update.md"
+  },
+  {
+   "d": "2024-09-19",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "These results are a credit to the entire DF Capital team, and we remain optimistic about our full year performance, despite the on-going macro-economic outlook driven by higher interest rates.",
+   "file": "20240919_DFCH_Half-year-Report.md"
+  },
+  {
+   "d": "2024-10-09",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group expects to report full-year financial results at least in line with the Board's expectations, with a closing loan book in the range of £650-700m.",
+   "file": "20241009_DFCH_Q3-trading-update.md"
+  },
+  {
+   "d": "2024-12-06",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 3,
+   "q": "Accordingly, the Group expects its full year underlying pre-tax profit (excluding recoveries and write-backs relating to RoyaleLife) to be significantly ahead of market expectations at not less than £14m, more than a threefold increase on its FY23 outturn (FY23: £4.6m).",
+   "file": "20241206_DFCH_Trading-Update.md"
+  },
+  {
+   "d": "2025-01-16",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "As previously announced, FY24 underlying pre-tax profit expected to be not less than £14m, more than a threefold increase on FY23",
+   "file": "20250116_DFCH_Trading-Update.md"
+  },
+  {
+   "d": "2025-04-02",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "We are now delivering double digit returns on equity that is firmly \"baked in\" to our financial performance and we are on track to achieving mid-to-high teens returns in the medium term.",
+   "file": "20250402_DFCH_Final-Results.md"
+  },
+  {
+   "d": "2025-04-08",
+   "doc": "Q1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "This continued strong momentum puts us well on the way toward our ambitions of delivering mid-to-high teens return on allocated capital over the medium term.",
+   "file": "20250408_DFCH_Q1-Trading-Update.md"
+  },
+  {
+   "d": "2025-07-08",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group enters the second half with continued momentum, and the Board is confident of achieving full year results in-line with market expectations.",
+   "file": "20250708_DFCH_Half-Year-Trading-Update.md"
+  },
+  {
+   "d": "2025-09-11",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 3,
+   "q": "As a result of our strong performance, particularly in net interest margin, we expect full year profit to materially exceed current market expectations with an improvement in market expectations for FY26 also anticipated.",
+   "file": "20250911_DFCH_Half-year-Report.md"
+  },
+  {
+   "d": "2025-10-09",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "We enter the final quarter of the year with confidence of achieving full year results in-line with market expectations and buoyed by our results so far this year.",
+   "file": "20251009_DFCH_Q3-Trading-Update.md"
+  },
+  {
+   "d": "2026-01-15",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 2,
+   "q": "In light of this performance, the Group now expects FY performance ahead of market expectations, with:",
+   "file": "20260115_DFCH_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2026-03-23",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Alongside its targets for financial year 2028, which still stand and the Company remains on track to deliver, the Group recently announced its targets for the financial year ended 31 December 2030:",
+   "file": "20260323_DFCH_Final-Results.md"
+  },
+  {
+   "d": "2026-04-08",
+   "doc": "Q1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "It is pleasing to report strong ongoing momentum in lending since the start of the year, demonstrating continued progress against our 2028 and 2030 targets.",
+   "file": "20260408_DFCH_Q1-Trading-Update.md"
+  },
+  {
+   "d": "2026-06-26",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 3,
+   "q": "The continued shift of its loan book towards longer tenor loans is generating additional near-term financial benefits, and accordingly the Group now expects its results for the year ending 31 December 2026 to materially exceed current market expectations.",
+   "file": "20260626_DFCH_Trading-Statement.md"
+  },
+  {
+   "d": "2026-09-10",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "We're excited about our ambitions through to 2028 and 2030 - although delivering on our plan is unlikely to be a function of linear performance, our customers are unlikely to be entirely insulated from near-term economic challenges.",
+   "file": "20260910_DFCH_Half-year-Financial-Report.md"
+  },
+  {
+   "d": "2026-10-09",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Given our cautious view on the macro-economic and geo-political environment, we continue to focus on maintaining strong credit risk disciplines and ensuring we have a solid handle on our underlying asset security. The Group remains on track to meet market expectations for the full year.",
+   "file": "20261009_DFCH_Q3-Trading-Update.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-09",
+  "doc": "Q3 TU",
+  "file": "20261009_DFCH_Q3-Trading-Update.md",
+  "vs": "Q3 TU Oct-25 · back to Oct-24 · H1 R Sep-26, H1 TU Jun-26, Q1 TU Apr-26",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Jun-26 “now expects its results for the year ending 31 December 2026 to materially exceed current market expectations” → Sep-26 H1 R no full-year anchor → Oct-26 “The Group remains on track to meet market expectations for the full year.”, no consensus figure given",
+    "span": "Same pattern after Sep-25 'materially exceed' → Oct-25 'in-line'"
+   },
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "First Q3 TU to report repossessed stock: “the Group has ownership and control of c£27m of assets pending sale” after two dealer insolvencies; legal-recovery balances £12.0m (Q3 2025: £10.5m)",
+    "span": "Not in Q3 TUs Oct-24 or Oct-25"
+   },
+   {
+    "sev": "amber",
+    "type": "Split withheld",
+    "text": "Arrears bridge shortened: Oct-25 gave early arrears (“Dealers with arrears, where fees and principal repayments are outstanding, amounted to 12 with aggregate arrears of c.£702k”) and Apr-26 split early / mid-late / default cases → Oct-26 gives only the legal-recovery line",
+    "span": "Early-arrears split given Oct-25 and Apr-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Went quiet",
+    "text": "Stock days: Oct-25 “has remained well within sector tolerances at 123 days at the period end”; Apr-26 “extending slightly to 141 days at the period end” → Oct-26 no stock-days figure",
+    "span": "Given Oct-24, Oct-25, Apr-26 → first gap"
+   }
+  ]
+ }
+}

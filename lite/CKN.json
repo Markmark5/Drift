@@ -1,0 +1,1285 @@
+{
+ "ticker": "CKN",
+ "v": "2026-10-19.d3a2",
+ "ccy": "GBX",
+ "src": "AlphaVantage CKN.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   3875.0
+  ],
+  [
+   "2021-10-22",
+   3920.0
+  ],
+  [
+   "2021-10-29",
+   4000.0
+  ],
+  [
+   "2021-11-05",
+   4055.0
+  ],
+  [
+   "2021-11-12",
+   3910.0
+  ],
+  [
+   "2021-11-19",
+   3825.0
+  ],
+  [
+   "2021-11-26",
+   3720.0
+  ],
+  [
+   "2021-12-03",
+   3685.0
+  ],
+  [
+   "2021-12-10",
+   3780.0
+  ],
+  [
+   "2021-12-17",
+   3635.0
+  ],
+  [
+   "2021-12-24",
+   3750.0
+  ],
+  [
+   "2021-12-31",
+   3880.0
+  ],
+  [
+   "2022-01-07",
+   3975.0
+  ],
+  [
+   "2022-01-14",
+   3800.0
+  ],
+  [
+   "2022-01-21",
+   3665.0
+  ],
+  [
+   "2022-01-28",
+   3205.0
+  ],
+  [
+   "2022-02-04",
+   3215.0
+  ],
+  [
+   "2022-02-11",
+   3415.0
+  ],
+  [
+   "2022-02-18",
+   3295.0
+  ],
+  [
+   "2022-02-25",
+   3225.0
+  ],
+  [
+   "2022-03-04",
+   3115.0
+  ],
+  [
+   "2022-03-11",
+   3395.0
+  ],
+  [
+   "2022-03-18",
+   3580.0
+  ],
+  [
+   "2022-03-25",
+   3745.0
+  ],
+  [
+   "2022-04-01",
+   3700.0
+  ],
+  [
+   "2022-04-08",
+   3495.0
+  ],
+  [
+   "2022-04-14",
+   3500.0
+  ],
+  [
+   "2022-04-22",
+   3560.0
+  ],
+  [
+   "2022-04-29",
+   3690.0
+  ],
+  [
+   "2022-05-06",
+   3545.0
+  ],
+  [
+   "2022-05-13",
+   3300.0
+  ],
+  [
+   "2022-05-20",
+   3130.0
+  ],
+  [
+   "2022-05-27",
+   3140.0
+  ],
+  [
+   "2022-06-01",
+   3140.0
+  ],
+  [
+   "2022-06-10",
+   3200.0
+  ],
+  [
+   "2022-06-17",
+   2915.0
+  ],
+  [
+   "2022-06-24",
+   2930.0
+  ],
+  [
+   "2022-07-01",
+   2995.0
+  ],
+  [
+   "2022-07-08",
+   2885.0
+  ],
+  [
+   "2022-07-15",
+   3260.0
+  ],
+  [
+   "2022-07-22",
+   3435.0
+  ],
+  [
+   "2022-07-29",
+   3435.0
+  ],
+  [
+   "2022-08-05",
+   3555.0
+  ],
+  [
+   "2022-08-12",
+   3635.0
+  ],
+  [
+   "2022-08-19",
+   3290.0
+  ],
+  [
+   "2022-08-26",
+   3060.0
+  ],
+  [
+   "2022-09-02",
+   2860.0
+  ],
+  [
+   "2022-09-09",
+   2725.0
+  ],
+  [
+   "2022-09-16",
+   2655.0
+  ],
+  [
+   "2022-09-23",
+   2500.0
+  ],
+  [
+   "2022-09-30",
+   2630.0
+  ],
+  [
+   "2022-10-07",
+   2655.0
+  ],
+  [
+   "2022-10-14",
+   2720.0
+  ],
+  [
+   "2022-10-21",
+   2715.0
+  ],
+  [
+   "2022-10-28",
+   2820.0
+  ],
+  [
+   "2022-11-04",
+   2855.0
+  ],
+  [
+   "2022-11-11",
+   3025.0
+  ],
+  [
+   "2022-11-18",
+   2930.0
+  ],
+  [
+   "2022-11-25",
+   3130.0
+  ],
+  [
+   "2022-12-02",
+   3105.0
+  ],
+  [
+   "2022-12-09",
+   2825.0
+  ],
+  [
+   "2022-12-16",
+   2960.0
+  ],
+  [
+   "2022-12-23",
+   3150.0
+  ],
+  [
+   "2022-12-30",
+   3235.0
+  ],
+  [
+   "2023-01-06",
+   3305.0
+  ],
+  [
+   "2023-01-13",
+   2970.0
+  ],
+  [
+   "2023-01-20",
+   3155.0
+  ],
+  [
+   "2023-01-27",
+   2955.0
+  ],
+  [
+   "2023-02-03",
+   3275.0
+  ],
+  [
+   "2023-02-10",
+   3085.0
+  ],
+  [
+   "2023-02-17",
+   3135.0
+  ],
+  [
+   "2023-02-24",
+   3250.0
+  ],
+  [
+   "2023-03-03",
+   3305.0
+  ],
+  [
+   "2023-03-10",
+   3290.0
+  ],
+  [
+   "2023-03-17",
+   3145.0
+  ],
+  [
+   "2023-03-24",
+   3175.0
+  ],
+  [
+   "2023-03-31",
+   3090.0
+  ],
+  [
+   "2023-04-06",
+   2990.0
+  ],
+  [
+   "2023-04-14",
+   3040.0
+  ],
+  [
+   "2023-04-21",
+   3115.0
+  ],
+  [
+   "2023-04-28",
+   3100.0
+  ],
+  [
+   "2023-05-05",
+   3080.0
+  ],
+  [
+   "2023-05-12",
+   2995.0
+  ],
+  [
+   "2023-05-19",
+   3010.0
+  ],
+  [
+   "2023-05-26",
+   2855.0
+  ],
+  [
+   "2023-06-02",
+   2940.0
+  ],
+  [
+   "2023-06-09",
+   3050.0
+  ],
+  [
+   "2023-06-16",
+   2985.0
+  ],
+  [
+   "2023-06-23",
+   2860.0
+  ],
+  [
+   "2023-06-30",
+   2960.0
+  ],
+  [
+   "2023-07-07",
+   2915.0
+  ],
+  [
+   "2023-07-14",
+   2920.0
+  ],
+  [
+   "2023-07-21",
+   2885.0
+  ],
+  [
+   "2023-07-28",
+   2800.0
+  ],
+  [
+   "2023-08-04",
+   2870.0
+  ],
+  [
+   "2023-08-11",
+   2730.0
+  ],
+  [
+   "2023-08-18",
+   2715.0
+  ],
+  [
+   "2023-08-25",
+   2645.0
+  ],
+  [
+   "2023-09-01",
+   2690.0
+  ],
+  [
+   "2023-09-08",
+   2720.0
+  ],
+  [
+   "2023-09-15",
+   2800.0
+  ],
+  [
+   "2023-09-22",
+   2830.0
+  ],
+  [
+   "2023-09-29",
+   2735.0
+  ],
+  [
+   "2023-10-06",
+   2625.0
+  ],
+  [
+   "2023-10-13",
+   2690.0
+  ],
+  [
+   "2023-10-20",
+   2550.0
+  ],
+  [
+   "2023-10-27",
+   2575.0
+  ],
+  [
+   "2023-11-03",
+   2765.0
+  ],
+  [
+   "2023-11-10",
+   2760.0
+  ],
+  [
+   "2023-11-17",
+   2850.0
+  ],
+  [
+   "2023-11-24",
+   2950.0
+  ],
+  [
+   "2023-12-01",
+   2955.0
+  ],
+  [
+   "2023-12-08",
+   3035.0
+  ],
+  [
+   "2023-12-15",
+   3180.0
+  ],
+  [
+   "2023-12-22",
+   3160.0
+  ],
+  [
+   "2023-12-29",
+   3165.0
+  ],
+  [
+   "2024-01-05",
+   3480.0
+  ],
+  [
+   "2024-01-12",
+   3450.0
+  ],
+  [
+   "2024-01-19",
+   3510.0
+  ],
+  [
+   "2024-01-26",
+   3535.0
+  ],
+  [
+   "2024-02-02",
+   3515.0
+  ],
+  [
+   "2024-02-09",
+   3470.0
+  ],
+  [
+   "2024-02-16",
+   3515.0
+  ],
+  [
+   "2024-02-23",
+   3540.0
+  ],
+  [
+   "2024-03-01",
+   3675.0
+  ],
+  [
+   "2024-03-08",
+   3875.0
+  ],
+  [
+   "2024-03-15",
+   3930.0
+  ],
+  [
+   "2024-03-22",
+   3970.0
+  ],
+  [
+   "2024-03-28",
+   4010.0
+  ],
+  [
+   "2024-04-05",
+   4065.0
+  ],
+  [
+   "2024-04-12",
+   4100.0
+  ],
+  [
+   "2024-04-19",
+   4035.0
+  ],
+  [
+   "2024-04-26",
+   3960.0
+  ],
+  [
+   "2024-05-03",
+   3920.0
+  ],
+  [
+   "2024-05-10",
+   3925.0
+  ],
+  [
+   "2024-05-17",
+   3970.0
+  ],
+  [
+   "2024-05-24",
+   4045.0
+  ],
+  [
+   "2024-05-31",
+   4115.0
+  ],
+  [
+   "2024-06-07",
+   4230.0
+  ],
+  [
+   "2024-06-14",
+   4140.0
+  ],
+  [
+   "2024-06-21",
+   4150.0
+  ],
+  [
+   "2024-06-28",
+   4140.0
+  ],
+  [
+   "2024-07-05",
+   4280.0
+  ],
+  [
+   "2024-07-12",
+   4370.0
+  ],
+  [
+   "2024-07-19",
+   4450.0
+  ],
+  [
+   "2024-07-26",
+   4500.0
+  ],
+  [
+   "2024-08-02",
+   4370.0
+  ],
+  [
+   "2024-08-09",
+   3785.0
+  ],
+  [
+   "2024-08-16",
+   3885.0
+  ],
+  [
+   "2024-08-23",
+   3865.0
+  ],
+  [
+   "2024-08-30",
+   3810.0
+  ],
+  [
+   "2024-09-06",
+   3660.0
+  ],
+  [
+   "2024-09-13",
+   3600.0
+  ],
+  [
+   "2024-09-20",
+   3700.0
+  ],
+  [
+   "2024-09-27",
+   3690.0
+  ],
+  [
+   "2024-10-04",
+   3725.0
+  ],
+  [
+   "2024-10-11",
+   3620.0
+  ],
+  [
+   "2024-10-18",
+   3595.0
+  ],
+  [
+   "2024-10-25",
+   3465.0
+  ],
+  [
+   "2024-11-01",
+   3600.0
+  ],
+  [
+   "2024-11-08",
+   3645.0
+  ],
+  [
+   "2024-11-15",
+   3710.0
+  ],
+  [
+   "2024-11-22",
+   3935.0
+  ],
+  [
+   "2024-11-29",
+   3980.0
+  ],
+  [
+   "2024-12-06",
+   4040.0
+  ],
+  [
+   "2024-12-13",
+   4030.0
+  ],
+  [
+   "2024-12-20",
+   3905.0
+  ],
+  [
+   "2024-12-24",
+   3940.0
+  ],
+  [
+   "2024-12-27",
+   3895.0
+  ],
+  [
+   "2025-01-03",
+   3890.0
+  ],
+  [
+   "2025-01-10",
+   4275.0
+  ],
+  [
+   "2025-01-17",
+   4440.0
+  ],
+  [
+   "2025-01-24",
+   4215.0
+  ],
+  [
+   "2025-01-31",
+   4280.0
+  ],
+  [
+   "2025-02-07",
+   4360.0
+  ],
+  [
+   "2025-02-14",
+   4390.0
+  ],
+  [
+   "2025-02-21",
+   4505.0
+  ],
+  [
+   "2025-02-28",
+   4430.0
+  ],
+  [
+   "2025-03-07",
+   4410.0
+  ],
+  [
+   "2025-03-14",
+   3635.0
+  ],
+  [
+   "2025-03-21",
+   3520.0
+  ],
+  [
+   "2025-03-28",
+   3470.0
+  ],
+  [
+   "2025-04-04",
+   3215.0
+  ],
+  [
+   "2025-04-11",
+   3265.0
+  ],
+  [
+   "2025-04-17",
+   3240.0
+  ],
+  [
+   "2025-04-25",
+   3315.0
+  ],
+  [
+   "2025-05-02",
+   3190.0
+  ],
+  [
+   "2025-05-09",
+   3260.0
+  ],
+  [
+   "2025-05-16",
+   3450.0
+  ],
+  [
+   "2025-05-23",
+   3265.0
+  ],
+  [
+   "2025-05-30",
+   3330.0
+  ],
+  [
+   "2025-06-06",
+   3360.0
+  ],
+  [
+   "2025-06-13",
+   3310.0
+  ],
+  [
+   "2025-06-20",
+   3330.0
+  ],
+  [
+   "2025-06-27",
+   3320.0
+  ],
+  [
+   "2025-07-04",
+   3275.0
+  ],
+  [
+   "2025-07-11",
+   3380.0
+  ],
+  [
+   "2025-07-18",
+   3420.0
+  ],
+  [
+   "2025-07-25",
+   3505.0
+  ],
+  [
+   "2025-08-01",
+   3415.0
+  ],
+  [
+   "2025-08-08",
+   3620.0
+  ],
+  [
+   "2025-08-15",
+   3495.0
+  ],
+  [
+   "2025-08-22",
+   3610.0
+  ],
+  [
+   "2025-08-29",
+   3495.0
+  ],
+  [
+   "2025-09-05",
+   3460.0
+  ],
+  [
+   "2025-09-12",
+   3500.0
+  ],
+  [
+   "2025-09-19",
+   3540.0
+  ],
+  [
+   "2025-09-26",
+   3595.0
+  ],
+  [
+   "2025-10-03",
+   3690.0
+  ],
+  [
+   "2025-10-10",
+   3465.0
+  ],
+  [
+   "2025-10-17",
+   3465.0
+  ],
+  [
+   "2025-10-24",
+   3615.0
+  ],
+  [
+   "2025-10-31",
+   3625.0
+  ],
+  [
+   "2025-11-07",
+   3505.0
+  ],
+  [
+   "2025-11-14",
+   3540.0
+  ],
+  [
+   "2025-11-21",
+   3650.0
+  ],
+  [
+   "2025-11-28",
+   3780.0
+  ],
+  [
+   "2025-12-05",
+   3770.0
+  ],
+  [
+   "2025-12-12",
+   3750.0
+  ],
+  [
+   "2025-12-19",
+   3750.0
+  ],
+  [
+   "2025-12-24",
+   3790.0
+  ],
+  [
+   "2026-01-02",
+   3785.0
+  ],
+  [
+   "2026-01-09",
+   4165.0
+  ],
+  [
+   "2026-01-16",
+   4160.0
+  ],
+  [
+   "2026-01-23",
+   4085.0
+  ],
+  [
+   "2026-01-30",
+   4190.0
+  ],
+  [
+   "2026-02-06",
+   4160.0
+  ],
+  [
+   "2026-02-13",
+   4065.0
+  ],
+  [
+   "2026-02-20",
+   4195.0
+  ],
+  [
+   "2026-02-27",
+   4260.0
+  ],
+  [
+   "2026-03-06",
+   4405.0
+  ],
+  [
+   "2026-03-13",
+   4615.0
+  ],
+  [
+   "2026-03-20",
+   4605.0
+  ],
+  [
+   "2026-03-27",
+   4580.0
+  ],
+  [
+   "2026-04-02",
+   4725.0
+  ],
+  [
+   "2026-04-10",
+   4758.0
+  ],
+  [
+   "2026-04-17",
+   4808.0
+  ],
+  [
+   "2026-04-24",
+   4766.0
+  ],
+  [
+   "2026-05-01",
+   4776.0
+  ],
+  [
+   "2026-05-08",
+   4840.0
+  ],
+  [
+   "2026-05-15",
+   4680.0
+  ],
+  [
+   "2026-05-22",
+   4802.0
+  ],
+  [
+   "2026-05-29",
+   4636.0
+  ],
+  [
+   "2026-06-05",
+   4678.0
+  ],
+  [
+   "2026-06-12",
+   4790.0
+  ],
+  [
+   "2026-06-19",
+   4386.0
+  ],
+  [
+   "2026-06-26",
+   4270.0
+  ],
+  [
+   "2026-07-03",
+   4474.0
+  ],
+  [
+   "2026-07-10",
+   4426.0
+  ],
+  [
+   "2026-07-17",
+   4698.0
+  ],
+  [
+   "2026-07-24",
+   4782.0
+  ],
+  [
+   "2026-07-31",
+   4730.0
+  ],
+  [
+   "2026-08-07",
+   4840.0
+  ],
+  [
+   "2026-08-14",
+   4986.0
+  ],
+  [
+   "2026-08-21",
+   5025.0
+  ],
+  [
+   "2026-08-28",
+   5065.0
+  ],
+  [
+   "2026-09-04",
+   5100.0
+  ],
+  [
+   "2026-09-11",
+   4942.0
+  ],
+  [
+   "2026-09-18",
+   5050.0
+  ],
+  [
+   "2026-09-25",
+   5150.0
+  ],
+  [
+   "2026-10-02",
+   5030.0
+  ],
+  [
+   "2026-10-09",
+   5405.0
+  ],
+  [
+   "2026-10-16",
+   5320.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-12-06",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Clarkson PLC, the world's leading provider of integrated shipping services, today announces that following continued strong trading in the second half of the year, results for the year ending 31 December 2021 are anticipated to be ahead of current market expectations with underlying profit before tax now expected to be not less than £65m.",
+   "file": "20211206_CKN_Trading-Update.md"
+  },
+  {
+   "d": "2022-01-07",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Ahead of the announcement of its results for the year to 31 December 2021, which will be released on 7 March 2022, Clarksons is pleased to announce that trading during the month of December was stronger than anticipated and underlying profit before tax for 2021, subject to audit, is now expected to be not less than £69m.",
+   "file": "20220107_CKN_Closed-Period-Trading-Update.md"
+  },
+  {
+   "d": "2022-03-07",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The outlook for Clarksons remains strong and we believe the business will continue to benefit from its market-leading position.",
+   "file": "20220307_CKN_Final-Results.md"
+  },
+  {
+   "d": "2022-05-11",
+   "doc": "AGM",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Company is trading in line with the Board's expectations. The outlook for the business remains strong as we continue to drive value for both shareholders and clients.",
+   "file": "20220511_CKN_Trading-Statement-at-AGM.md"
+  },
+  {
+   "d": "2022-07-13",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 3,
+   "q": "While mindful of macroeconomic conditions, the Board nevertheless remains confident in the outlook for the business and expects results for the year ending 31 December 2022 to be materially ahead of its previous expectations.",
+   "file": "20220713_CKN_Trading-Update.md"
+  },
+  {
+   "d": "2022-08-08",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The second half of the year has started encouragingly, and we are seeing a continuation of the trends seen in the first half of the year.",
+   "file": "20220808_CKN_Interim-results.md"
+  },
+  {
+   "d": "2023-01-06",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Clarkson PLC, the world's leading provider of integrated shipping services, today announces that following strong trading throughout the final quarter, particularly from the Broking division, results for the year ending 31 December 2022, are now anticipated to be ahead of current market expectations.",
+   "file": "20230106_CKN_Closed-Period-Trading-Update.md"
+  },
+  {
+   "d": "2023-03-06",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Whilst the global geo-political outlook for 2023 and beyond remains uncertain, the strength of business and balance between supply and demand, supported by our record level of forward order book, gives us confidence in the outlook for Clarksons.",
+   "file": "20230306_CKN_Preliminary-results.md"
+  },
+  {
+   "d": "2023-05-11",
+   "doc": "AGM",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Despite the currently weaker US dollar, the Board's expectations for the year remain unchanged. The medium-term outlook for shipping is positive and we remain confident in the outlook for the business as we continue to drive value for all stakeholders.",
+   "file": "20230511_CKN_AGM-Trading-Statement.md"
+  },
+  {
+   "d": "2023-08-07",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "While mindful of the currency headwinds and softening rate environment, which are expected to result in a more balanced split between the first and second half, our expectations for the full year are unchanged.",
+   "file": "20230807_CKN_Interim-results.md"
+  },
+  {
+   "d": "2024-01-05",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Clarkson PLC, the world's leading provider of integrated shipping services, today announces that following strong trading throughout the final quarter, particularly from the Broking division, results for the year ending 31 December 2023, are now anticipated to be ahead of current market expectations.",
+   "file": "20240105_CKN_Trading-Statement.md"
+  },
+  {
+   "d": "2024-03-04",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "With a record forward order book of secured 2024 revenues of US$217m, the Board looks to the future with confidence.",
+   "file": "20240304_CKN_Preliminary-results.md"
+  },
+  {
+   "d": "2024-05-09",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board's expectations for the year remain unchanged and the outlook for Clarksons continues to be positive.",
+   "file": "20240509_CKN_AGM-Trading-Statement.md"
+  },
+  {
+   "d": "2024-08-05",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The profile and further development of the forward order book, level of new business being transacted and pipeline for the second half, means that we have confidence that we will be second half weighted and deliver full year results in line with the Board's expectations.",
+   "file": "20240805_CKN_Interim-results.md"
+  },
+  {
+   "d": "2025-01-10",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Clarkson PLC, the world's leading provider of integrated shipping services, today announces that results for the year ending 31 December 2024, are now anticipated to be slightly ahead of current market expectations.",
+   "file": "20250110_CKN_Trading-Statement.md"
+  },
+  {
+   "d": "2025-03-10",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -2,
+   "q": "As I write this report, the impact of these uncertainties is that freight rates and asset values have broadly fallen, which has meant that the value of spot business done to date is less than the same period last year.",
+   "file": "20250310_CKN_Preliminary-results.md"
+  },
+  {
+   "d": "2025-05-01",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -2,
+   "q": "As a consequence, the Board now believes, that at current exchange rates, underlying profit before tax will be within the range of £85m to £95m.",
+   "file": "20250501_CKN_Trading-Statement.md"
+  },
+  {
+   "d": "2025-08-04",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board's expectation remains that the year will be second-half weighted and in line with the AGM Trading Statement.",
+   "file": "20250804_CKN_Interim-results.md"
+  },
+  {
+   "d": "2026-01-09",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Clarkson PLC, the world's leading provider of integrated shipping services, is pleased to announce that underlying profit before tax for the year ended 31 December 2025, subject to audit, is now expected to be not less than £90m, reflecting stronger results in the second half of the year.",
+   "file": "20260109_CKN_Trading-Statement.md"
+  },
+  {
+   "d": "2026-03-09",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "In the year to date, momentum from Q4 2025 has continued, market sentiment has been positive and trading has been good, evidenced by new spot business negotiated being higher than the same period last year.",
+   "file": "20260309_CKN_Preliminary-results.md"
+  },
+  {
+   "d": "2026-05-07",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 1,
+   "q": "While it is still early in the year, the Group's strong start to date and current momentum has enhanced the Board's confidence in its expectations for the year.",
+   "file": "20260507_CKN_Trading-Statement.md"
+  },
+  {
+   "d": "2026-08-03",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 3,
+   "q": "The strength of the first half result has put the Group into a strong position for the year, and the Board now expects the full year outcome to be materially ahead of market expectations.",
+   "file": "20260803_CKN_Interim-Results.md"
+  },
+  {
+   "d": "2026-10-06",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Consequently, whilst this trading environment remains very volatile the Board now expects underlying profit before tax for the full year to 31 December 2026 to be not less than £135m.",
+   "file": "20261006_CKN_Trading-Statement.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-06",
+  "doc": "H1 TU",
+  "file": "20261006_CKN_Trading-Statement.md",
+  "vs": "H1 R Aug-26 · closed-period TS Jan-26 · back to Jan-25, Jan-24",
+  "lines": [
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "FY26 profit re-quantified: Aug-26 “the Board now expects the full year outcome to be materially ahead of market expectations” (no figure) → Oct-26 “not less than £135m” underlying PBT; first FY26 number, vs FY25 floor “not less than £90m” (Jan-26)",
+    "span": "Aug-26 → Oct-26"
+   }
+  ]
+ }
+}
