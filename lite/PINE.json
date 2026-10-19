@@ -1,0 +1,132 @@
+{
+ "ticker": "PINE",
+ "v": "2026-10-19.f906",
+ "ccy": "GBX",
+ "src": "Yahoo PINE.L weekly",
+ "adj": [],
+ "px": [
+  [
+   "2026-07-17",
+   303.0
+  ],
+  [
+   "2026-07-24",
+   315.0
+  ],
+  [
+   "2026-07-31",
+   430.0
+  ],
+  [
+   "2026-08-07",
+   430.0
+  ],
+  [
+   "2026-08-14",
+   430.5
+  ],
+  [
+   "2026-08-21",
+   445.5
+  ],
+  [
+   "2026-08-28",
+   452.0
+  ],
+  [
+   "2026-09-04",
+   449.5
+  ],
+  [
+   "2026-09-11",
+   451.0
+  ],
+  [
+   "2026-09-18",
+   450.5
+  ],
+  [
+   "2026-09-25",
+   444.5
+  ],
+  [
+   "2026-10-02",
+   446.5
+  ],
+  [
+   "2026-10-09",
+   448.5
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2026-07-24",
+   "doc": "OPS",
+   "fy": "FY28",
+   "g": "flat",
+   "s": 0,
+   "q": "The Pinewood.AI Directors confirm that the FY27 and FY28 Profit Forecasts remain valid and confirm that the FY27 and FY28 Profit Forecasts have been properly compiled on the basis of the assumptions stated and that the basis of accounting used is consistent with Pinewood.AI's accounting policies.",
+   "file": "20260724_PINE_Joint-Statement-Regarding-a-Possible-Offer.md"
+  },
+  {
+   "d": "2026-08-19",
+   "doc": "OPS",
+   "fy": "FY28",
+   "g": "flat",
+   "s": 0,
+   "q": "The Pinewood.AI Directors confirm that the FY27 and FY28 Profit Forecasts remain valid and confirm that the FY27 and FY28 Profit Forecasts have been properly compiled on the basis of the assumptions stated below and that the basis of accounting used is consistent with Pinewood.AI's accounting policies.",
+   "file": "20260819_PINE_RECOMMENDED-ACQUISITION-OF-PINEWOOD-TECHNOLOGIES.md"
+  },
+  {
+   "d": "2026-08-19",
+   "doc": "OPS",
+   "fy": "FY28",
+   "g": "flat",
+   "s": 0,
+   "q": "The Pinewood.AI Directors confirm that the FY27 and FY28 Profit Forecasts remain valid and confirm that the FY27 and FY28 Profit Forecasts have been properly compiled on the basis of the assumptions stated below and that the basis of accounting used is consistent with Pinewood.AI's accounting policies.",
+   "file": "20260819_PINE_REPLACEMENT---RECOMMENDED-ACQUISITION-OF-PINEWOOD.md"
+  },
+  {
+   "d": "2026-09-30",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board remains confident in the Group’s prospects and expects underlying EBITDA for FY26 to be in line with its previous expectations1",
+   "file": "20260930_PINE_Half-year-results-for-the-6-months-to-30-June-2026.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-30",
+  "doc": "H1 R",
+  "file": "20260930_PINE_Half-year-results-for-the-6-months-to-30-June-2026.md",
+  "vs": "H1 R Sep-25 · Rule 2.7 Aug-26 · FY R Apr-26 · Business Update Mar-26",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Pushed out",
+    "text": "Lithia US: “On track for pilot in two Lithia US stores in Q4 FY25, with the wider roll-out to Lithia US stores starting in mid-FY26” (H1-25) → now “Two Lithia US dealers set to go live with Pinewood.AI as their core platform in Q4 2026” and “Wider roll-out across Lithia’s US and Canadian dealerships expected to commence in H1 2027”",
+    "span": "About a year later on both steps"
+   },
+   {
+    "sev": "amber",
+    "type": "Target dropped",
+    "text": "Marshalls rollout: “the rollout of the Pinewood.AI system is now expected to commence in the second half of 2026” (Mar-26, repeated Apr-26) → Marshalls not mentioned in H1-26",
+    "span": "Timing given Sep-25, Mar-26, Apr-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Churn: “Net customer churn remained very low at 0.7% for H1 FY26 (H1 FY25: 0.3%)” while the CEO review cites “an improved net customer churn of -0.7% in H1 FY26”; H1-25 metric was “Net user churn (excluding Lithia) remained minimal at 0.3% in H1 FY25”",
+    "span": "Churn more than doubled; metric renamed"
+   },
+   {
+    "sev": "grey",
+    "type": "Wording vs number",
+    "text": "Headline “Strong strategic and operational progress, alongside continued growth” beside “H1 FY26 underlying profit before tax of £3.8m down 13.6% (H1 FY25: £4.4m)”; cash £23.9m vs £30.3m",
+    "span": "H1-25 PBT was up 10.0%"
+   }
+  ]
+ }
+}

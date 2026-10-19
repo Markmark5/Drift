@@ -1,0 +1,194 @@
+{
+ "ticker": "SEEN",
+ "v": "2026-10-19.d885",
+ "ccy": "GBX",
+ "src": "ShareScope weekly snapshots",
+ "adj": [],
+ "px": [
+  [
+   "2026-03-03",
+   4.0
+  ],
+  [
+   "2026-03-06",
+   4.0
+  ],
+  [
+   "2026-03-13",
+   4.0
+  ],
+  [
+   "2026-03-20",
+   4.5
+  ],
+  [
+   "2026-03-27",
+   4.5
+  ],
+  [
+   "2026-04-03",
+   4.0
+  ],
+  [
+   "2026-04-10",
+   4.0
+  ],
+  [
+   "2026-04-17",
+   4.0
+  ],
+  [
+   "2026-04-24",
+   4.5
+  ],
+  [
+   "2026-05-08",
+   4.5
+  ],
+  [
+   "2026-05-15",
+   4.5
+  ],
+  [
+   "2026-05-22",
+   4.5
+  ],
+  [
+   "2026-06-02",
+   4.5
+  ],
+  [
+   "2026-06-05",
+   4.5
+  ],
+  [
+   "2026-06-12",
+   4.5
+  ],
+  [
+   "2026-06-19",
+   4.5
+  ],
+  [
+   "2026-06-26",
+   4.5
+  ],
+  [
+   "2026-07-03",
+   4.5
+  ],
+  [
+   "2026-07-10",
+   4.5
+  ],
+  [
+   "2026-07-17",
+   4.5
+  ],
+  [
+   "2026-07-24",
+   4.5
+  ],
+  [
+   "2026-07-31",
+   4.5
+  ],
+  [
+   "2026-08-07",
+   4.25
+  ],
+  [
+   "2026-08-14",
+   4.25
+  ],
+  [
+   "2026-08-21",
+   4.25
+  ],
+  [
+   "2026-08-28",
+   4.25
+  ],
+  [
+   "2026-09-07",
+   4.25
+  ],
+  [
+   "2026-09-11",
+   4.0
+  ],
+  [
+   "2026-09-18",
+   4.0
+  ],
+  [
+   "2026-09-25",
+   4.15
+  ],
+  [
+   "2026-10-02",
+   4.75
+  ],
+  [
+   "2026-10-09",
+   5.5
+  ],
+  [
+   "2026-10-16",
+   5.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2026-08-03",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "During 1H 2026, this momentum has continued with organic revenue growth of 45% ahead of 1H25.",
+   "file": "20260803_SEEN_Results-for-the-year-ended-31-December-2025.md"
+  },
+  {
+   "d": "2026-09-30",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Consistent growth has continued into the second half, reflecting both organic growth and the acquisition of MEDIAL, including upsales of SEEEN’s solutions to the MEDIAL customer base, whilst continuing to drive improved profitability.",
+   "file": "20260930_SEEN_Interim-Results-for-six-months-ended-30-June-2026.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-30",
+  "doc": "H1 R",
+  "file": "20260930_SEEN_Interim-Results-for-six-months-ended-30-June-2026.md",
+  "vs": "H1 R Sep-25 · FY R Aug-26 · YE-TU Jan-26 · back to H1 R Sep-24",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Number to words",
+    "text": "Full-year revenue guide: H1 2025 “the Board now expecting for revenue for the 12 months to December 2025 to be in excess of $5.0m” → H1 2026 gives no FY26 figure, only “Consistent growth has continued into the second half”",
+    "span": "Headline guide Sep-25 → none Sep-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Annualised revenue run-rate: Jan-26 “Annualised revenue run-rate at year end of approximately $6.8m” ($6.5m Sep-25, $4.5m Sep-24) → H1 2026 gives no group run-rate, only MEDIAL's $0.8m recurring revenue",
+    "span": "Given Sep-24, Sep-25, Jan-26 → first gap"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Largest contract: Jan-26 “expected to be worth up to $3.5m in annual revenues upon completion of milestones, with revenue run rate at year end of approximately $1.8m” → H1 2026 gives no progress update",
+    "span": "Updated Sep-25 ($1.0m) and Jan-26 ($1.8m) → silent Sep-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Restated",
+    "text": "FY25 revenue: Jan-26 “Group revenue increased 70% to $5.1m” → Aug-26 audited “Revenue increased by 65% to $5.0m”, carried into H1 2026 as 65% growth",
+    "span": "YE-TU Jan-26 → FY R Aug-26"
+   }
+  ]
+ }
+}

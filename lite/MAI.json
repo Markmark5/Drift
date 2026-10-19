@@ -1,0 +1,197 @@
+{
+ "ticker": "MAI",
+ "v": "2026-10-19.892e",
+ "ccy": "GBX",
+ "src": "ShareScope weekly snapshots",
+ "adj": [],
+ "px": [
+  [
+   "2026-03-03",
+   142.5
+  ],
+  [
+   "2026-03-06",
+   142.5
+  ],
+  [
+   "2026-03-13",
+   142.5
+  ],
+  [
+   "2026-03-20",
+   132.5
+  ],
+  [
+   "2026-03-27",
+   127.5
+  ],
+  [
+   "2026-04-03",
+   127.5
+  ],
+  [
+   "2026-04-10",
+   120.0
+  ],
+  [
+   "2026-04-17",
+   120.0
+  ],
+  [
+   "2026-04-24",
+   120.0
+  ],
+  [
+   "2026-05-08",
+   120.0
+  ],
+  [
+   "2026-05-15",
+   92.5
+  ],
+  [
+   "2026-05-22",
+   92.5
+  ],
+  [
+   "2026-06-02",
+   92.5
+  ],
+  [
+   "2026-06-05",
+   92.5
+  ],
+  [
+   "2026-06-12",
+   92.5
+  ],
+  [
+   "2026-06-19",
+   92.5
+  ],
+  [
+   "2026-06-26",
+   85.0
+  ],
+  [
+   "2026-07-03",
+   85.0
+  ],
+  [
+   "2026-07-10",
+   85.0
+  ],
+  [
+   "2026-07-17",
+   72.5
+  ],
+  [
+   "2026-07-24",
+   72.5
+  ],
+  [
+   "2026-07-31",
+   72.5
+  ],
+  [
+   "2026-08-07",
+   72.5
+  ],
+  [
+   "2026-08-14",
+   68.5
+  ],
+  [
+   "2026-08-21",
+   68.5
+  ],
+  [
+   "2026-08-28",
+   68.5
+  ],
+  [
+   "2026-09-07",
+   68.5
+  ],
+  [
+   "2026-09-11",
+   67.5
+  ],
+  [
+   "2026-09-18",
+   62.0
+  ],
+  [
+   "2026-09-25",
+   62.0
+  ],
+  [
+   "2026-10-02",
+   62.0
+  ],
+  [
+   "2026-10-09",
+   61.5
+  ],
+  [
+   "2026-10-16",
+   61.5
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2026-05-13",
+   "doc": "Q1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "In the first quarter of 2026 the Group has continued to trade in line with market expectations.",
+   "file": "20260513_MAI_Placing-and-Issue-of-Convertible-Loan-Notes.md"
+  },
+  {
+   "d": "2026-06-29",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "Our focus is on retaining this sales momentum and on the delivery and recognition of the orderbook. We have much to be positive about, whilst being cognisant of the difficult market conditions within which we operate.",
+   "file": "20260629_MAI_2025-Annual-Results.md"
+  },
+  {
+   "d": "2026-09-30",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "While the timing of project delivery, challenging market conditions and working capital movements will continue to influence short-term performance, the Board is focused on Adjusted EBITDA and cash generation ahead of revenue and remain confident of achieving Adjusted EBITDA market expectations for the 2026 financial year, albeit from a lower revenue base.",
+   "file": "20260930_MAI_Interim-Results.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-30",
+  "doc": "H1 R",
+  "file": "20260930_MAI_Interim-Results.md",
+  "vs": "H1 R Sep-25 · FY R Jun-26 · Placing May-26",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "May-26: “In the first quarter of 2026 the Group has continued to trade in line with market expectations.” → Sep-26: “remain confident of achieving Adjusted EBITDA market expectations for the 2026 financial year, albeit from a lower revenue base” (revenue no longer anchored)",
+    "span": "Whole-business anchor at Jan-26 TU and May-26; FY R Jun-26 gave none"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Headline “Good progress in business generation, consistent and solid performance in projects.” beside Adjusted EBITDA £3.2m (H1 2025: £3.4m), adjusted EPS (3.6)p vs 1.2p and net debt up to £22.5m from £18.0m",
+    "span": "H1 Sep-25 → H1 Sep-26"
+   },
+   {
+    "sev": "grey",
+    "type": "New caution",
+    "text": "Gross margin fall now attributed to “increasingly competitive market conditions” (Sep-25 cited only inflation and revenue mix)",
+    "span": "First time in an interim margin bridge"
+   }
+  ]
+ }
+}

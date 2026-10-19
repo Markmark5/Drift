@@ -1,0 +1,239 @@
+{
+ "ticker": "WPHO",
+ "v": "2026-10-19.2da4",
+ "ccy": "GBX",
+ "src": "ShareScope weekly snapshots",
+ "adj": [],
+ "px": [
+  [
+   "2026-03-03",
+   35.5
+  ],
+  [
+   "2026-03-06",
+   33.5
+  ],
+  [
+   "2026-03-13",
+   33.2
+  ],
+  [
+   "2026-03-20",
+   32.5
+  ],
+  [
+   "2026-03-27",
+   30.5
+  ],
+  [
+   "2026-04-03",
+   28.5
+  ],
+  [
+   "2026-04-10",
+   27.5
+  ],
+  [
+   "2026-04-17",
+   31.0
+  ],
+  [
+   "2026-04-24",
+   31.0
+  ],
+  [
+   "2026-05-08",
+   28.5
+  ],
+  [
+   "2026-05-15",
+   25.5
+  ],
+  [
+   "2026-05-22",
+   26.75
+  ],
+  [
+   "2026-06-02",
+   27.25
+  ],
+  [
+   "2026-06-05",
+   27.25
+  ],
+  [
+   "2026-06-12",
+   27.0
+  ],
+  [
+   "2026-06-19",
+   26.5
+  ],
+  [
+   "2026-06-26",
+   26.5
+  ],
+  [
+   "2026-07-03",
+   26.5
+  ],
+  [
+   "2026-07-10",
+   26.5
+  ],
+  [
+   "2026-07-17",
+   26.5
+  ],
+  [
+   "2026-07-24",
+   26.5
+  ],
+  [
+   "2026-07-31",
+   26.5
+  ],
+  [
+   "2026-08-07",
+   26.5
+  ],
+  [
+   "2026-08-14",
+   26.5
+  ],
+  [
+   "2026-08-21",
+   26.5
+  ],
+  [
+   "2026-08-28",
+   26.5
+  ],
+  [
+   "2026-09-07",
+   5.75
+  ],
+  [
+   "2026-09-11",
+   5.5
+  ],
+  [
+   "2026-09-18",
+   5.25
+  ],
+  [
+   "2026-09-25",
+   4.85
+  ],
+  [
+   "2026-10-02",
+   4.5
+  ],
+  [
+   "2026-10-09",
+   4.125
+  ],
+  [
+   "2026-10-16",
+   3.9
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2026-04-15",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 1,
+   "q": "The Company expects to deliver revenue of at least €7.8m in FY 2026, representing growth of at least 22% over the prior year, with Adjusted EBITDA of at least €0.5m.",
+   "file": "20260415_WPHO_Trading-Update-&-£20m-Share-Subscription-Facility.md"
+  },
+  {
+   "d": "2026-06-17",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -2,
+   "q": "Whilst the Company had its strongest ever first quarter in terms of new test order activity, it has historically, and continues to, encounter protracted timelines to convert pipeline opportunities.",
+   "file": "20260617_WPHO_Potential-Accounting-Irregularities-and-Suspension.md"
+  },
+  {
+   "d": "2026-06-23",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -3,
+   "q": "Accordingly, the Board now expects the Company to generate revenues of circa €1.8m for FY26 (compared with previous guidance of €7.8m).",
+   "file": "20260623_WPHO_Trading-Update.md"
+  },
+  {
+   "d": "2026-08-05",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Given that Windar's technology is now proven across multiple platforms, the Board are optimistic that a number of these trials will result in orders in late 2026 and 2027.",
+   "file": "20260805_WPHO_Business-Update.md"
+  },
+  {
+   "d": "2026-08-24",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Given that Windar's technology is now proven across multiple platforms, the Board is optimistic that a number of these trials will result in orders in late 2026 and 2027.",
+   "file": "20260824_WPHO_Proposed-Placing-and-Retail-Offer.md"
+  },
+  {
+   "d": "2026-08-26",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "These issues however, alongside longer than expected timelines to convert two large customer orders worth over €6m, mean the Group enters FY26 with a more cautious outlook, and we now expect revenues of circa €1.8m for the year.",
+   "file": "20260826_WPHO_Final-Results.md"
+  },
+  {
+   "d": "2026-09-30",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -2,
+   "q": "Trading in H2 2026 remains in line with management expectations for the full year.",
+   "file": "20260930_WPHO_Interim-Results.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-30",
+  "doc": "H1 R",
+  "file": "20260930_WPHO_Interim-Results.md",
+  "vs": "H1 R Sep-25 · FY R Aug-26 · TU Jun-26",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "FY26 guide was “we now expect revenues of circa €1.8m for the year” (FY R, Aug-26) → now “Trading in H2 2026 remains in line with management expectations for the full year.”, no number",
+    "span": "€1.8m given Jun-26 and Aug-26; H1-25 anchored to “full year market expectations”"
+   },
+   {
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "Test pipeline was “Ten IPPs are currently running tests on Windar's technology” (FY R, Aug-26) → now “multiple leading Independent Power Producers (IPPs) actively engaged at various stages of the sales process”",
+    "span": "Test count given Apr-26, Jun-26, Aug-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Gross margin: “Continued gross margin progression of +2%-points vs. H1 2024” (H1-25) and “Gross margin was 54.2%” (FY25) → no gross margin figure in H1-26",
+    "span": "Given H1-25, FY25"
+   },
+   {
+    "sev": "grey",
+    "type": "Restated",
+    "text": "30 June 2026 inventory €3.5m in FY R (Aug-26) → “the corrected inventory figure as at 30 June 2026 is €3.1m”; H1 revenue €315k → €0.4m",
+    "span": "Same period, one month apart"
+   }
+  ]
+ }
+}
