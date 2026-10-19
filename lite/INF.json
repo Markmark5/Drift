@@ -1,0 +1,1372 @@
+{
+ "ticker": "INF",
+ "v": "2026-10-19.92cf",
+ "ccy": "GBX",
+ "src": "AlphaVantage INF.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   549.4
+  ],
+  [
+   "2021-10-22",
+   518.8
+  ],
+  [
+   "2021-10-29",
+   519.4
+  ],
+  [
+   "2021-11-05",
+   548.4
+  ],
+  [
+   "2021-11-12",
+   537.0
+  ],
+  [
+   "2021-11-19",
+   514.2
+  ],
+  [
+   "2021-11-26",
+   465.9
+  ],
+  [
+   "2021-12-03",
+   464.4
+  ],
+  [
+   "2021-12-10",
+   502.4
+  ],
+  [
+   "2021-12-17",
+   502.0
+  ],
+  [
+   "2021-12-24",
+   514.4
+  ],
+  [
+   "2021-12-31",
+   516.6
+  ],
+  [
+   "2022-01-07",
+   543.0
+  ],
+  [
+   "2022-01-14",
+   556.0
+  ],
+  [
+   "2022-01-21",
+   557.4
+  ],
+  [
+   "2022-01-28",
+   546.4
+  ],
+  [
+   "2022-02-04",
+   555.6
+  ],
+  [
+   "2022-02-11",
+   613.4
+  ],
+  [
+   "2022-02-18",
+   601.0
+  ],
+  [
+   "2022-02-25",
+   606.4
+  ],
+  [
+   "2022-03-04",
+   537.2
+  ],
+  [
+   "2022-03-11",
+   548.6
+  ],
+  [
+   "2022-03-18",
+   595.2
+  ],
+  [
+   "2022-03-25",
+   594.0
+  ],
+  [
+   "2022-04-01",
+   604.2
+  ],
+  [
+   "2022-04-08",
+   611.2
+  ],
+  [
+   "2022-04-14",
+   618.2
+  ],
+  [
+   "2022-04-22",
+   584.6
+  ],
+  [
+   "2022-04-29",
+   574.6
+  ],
+  [
+   "2022-05-06",
+   567.8
+  ],
+  [
+   "2022-05-13",
+   541.0
+  ],
+  [
+   "2022-05-20",
+   550.0
+  ],
+  [
+   "2022-05-27",
+   548.0
+  ],
+  [
+   "2022-06-01",
+   537.4
+  ],
+  [
+   "2022-06-10",
+   535.8
+  ],
+  [
+   "2022-06-17",
+   527.6
+  ],
+  [
+   "2022-06-24",
+   542.6
+  ],
+  [
+   "2022-07-01",
+   525.8
+  ],
+  [
+   "2022-07-08",
+   543.2
+  ],
+  [
+   "2022-07-15",
+   538.8
+  ],
+  [
+   "2022-07-22",
+   588.8
+  ],
+  [
+   "2022-07-29",
+   594.2
+  ],
+  [
+   "2022-08-05",
+   584.2
+  ],
+  [
+   "2022-08-12",
+   587.6
+  ],
+  [
+   "2022-08-19",
+   582.2
+  ],
+  [
+   "2022-08-26",
+   548.8
+  ],
+  [
+   "2022-09-02",
+   549.0
+  ],
+  [
+   "2022-09-09",
+   560.8
+  ],
+  [
+   "2022-09-16",
+   551.4
+  ],
+  [
+   "2022-09-23",
+   521.6
+  ],
+  [
+   "2022-09-30",
+   519.2
+  ],
+  [
+   "2022-10-07",
+   545.0
+  ],
+  [
+   "2022-10-14",
+   551.0
+  ],
+  [
+   "2022-10-21",
+   549.8
+  ],
+  [
+   "2022-10-28",
+   555.2
+  ],
+  [
+   "2022-11-04",
+   577.8
+  ],
+  [
+   "2022-11-11",
+   552.6
+  ],
+  [
+   "2022-11-18",
+   591.6
+  ],
+  [
+   "2022-11-25",
+   608.8
+  ],
+  [
+   "2022-12-02",
+   620.6
+  ],
+  [
+   "2022-12-09",
+   626.6
+  ],
+  [
+   "2022-12-16",
+   607.6
+  ],
+  [
+   "2022-12-23",
+   615.2
+  ],
+  [
+   "2022-12-30",
+   619.6
+  ],
+  [
+   "2023-01-06",
+   639.4
+  ],
+  [
+   "2023-01-13",
+   654.4
+  ],
+  [
+   "2023-01-20",
+   664.8
+  ],
+  [
+   "2023-01-27",
+   670.0
+  ],
+  [
+   "2023-02-03",
+   693.8
+  ],
+  [
+   "2023-02-10",
+   663.2
+  ],
+  [
+   "2023-02-17",
+   672.6
+  ],
+  [
+   "2023-02-24",
+   667.4
+  ],
+  [
+   "2023-03-03",
+   671.4
+  ],
+  [
+   "2023-03-10",
+   690.2
+  ],
+  [
+   "2023-03-17",
+   672.2
+  ],
+  [
+   "2023-03-24",
+   661.0
+  ],
+  [
+   "2023-03-31",
+   692.6
+  ],
+  [
+   "2023-04-06",
+   672.8
+  ],
+  [
+   "2023-04-14",
+   686.4
+  ],
+  [
+   "2023-04-21",
+   710.2
+  ],
+  [
+   "2023-04-28",
+   722.6
+  ],
+  [
+   "2023-05-05",
+   694.8
+  ],
+  [
+   "2023-05-12",
+   699.6
+  ],
+  [
+   "2023-05-19",
+   727.8
+  ],
+  [
+   "2023-05-26",
+   705.6
+  ],
+  [
+   "2023-06-02",
+   704.8
+  ],
+  [
+   "2023-06-09",
+   707.2
+  ],
+  [
+   "2023-06-16",
+   731.4
+  ],
+  [
+   "2023-06-23",
+   693.0
+  ],
+  [
+   "2023-06-30",
+   726.0
+  ],
+  [
+   "2023-07-07",
+   705.8
+  ],
+  [
+   "2023-07-14",
+   734.6
+  ],
+  [
+   "2023-07-21",
+   749.6
+  ],
+  [
+   "2023-07-28",
+   762.8
+  ],
+  [
+   "2023-08-04",
+   752.2
+  ],
+  [
+   "2023-08-11",
+   736.6
+  ],
+  [
+   "2023-08-18",
+   706.2
+  ],
+  [
+   "2023-08-25",
+   717.0
+  ],
+  [
+   "2023-09-01",
+   736.4
+  ],
+  [
+   "2023-09-08",
+   741.0
+  ],
+  [
+   "2023-09-15",
+   760.0
+  ],
+  [
+   "2023-09-22",
+   757.2
+  ],
+  [
+   "2023-09-29",
+   750.4
+  ],
+  [
+   "2023-10-06",
+   726.0
+  ],
+  [
+   "2023-10-13",
+   709.8
+  ],
+  [
+   "2023-10-20",
+   685.8
+  ],
+  [
+   "2023-10-27",
+   701.8
+  ],
+  [
+   "2023-11-03",
+   718.6
+  ],
+  [
+   "2023-11-10",
+   711.8
+  ],
+  [
+   "2023-11-17",
+   749.0
+  ],
+  [
+   "2023-11-24",
+   746.4
+  ],
+  [
+   "2023-12-01",
+   757.0
+  ],
+  [
+   "2023-12-08",
+   774.4
+  ],
+  [
+   "2023-12-15",
+   764.8
+  ],
+  [
+   "2023-12-22",
+   773.8
+  ],
+  [
+   "2023-12-29",
+   781.2
+  ],
+  [
+   "2024-01-05",
+   768.0
+  ],
+  [
+   "2024-01-12",
+   754.6
+  ],
+  [
+   "2024-01-19",
+   745.6
+  ],
+  [
+   "2024-01-26",
+   771.4
+  ],
+  [
+   "2024-02-02",
+   775.2
+  ],
+  [
+   "2024-02-09",
+   799.0
+  ],
+  [
+   "2024-02-16",
+   817.0
+  ],
+  [
+   "2024-02-23",
+   824.6
+  ],
+  [
+   "2024-03-01",
+   813.6
+  ],
+  [
+   "2024-03-08",
+   808.2
+  ],
+  [
+   "2024-03-15",
+   821.2
+  ],
+  [
+   "2024-03-22",
+   835.6
+  ],
+  [
+   "2024-03-28",
+   831.2
+  ],
+  [
+   "2024-04-05",
+   811.6
+  ],
+  [
+   "2024-04-12",
+   807.0
+  ],
+  [
+   "2024-04-19",
+   783.6
+  ],
+  [
+   "2024-04-26",
+   800.8
+  ],
+  [
+   "2024-05-03",
+   815.8
+  ],
+  [
+   "2024-05-10",
+   850.2
+  ],
+  [
+   "2024-05-17",
+   846.6
+  ],
+  [
+   "2024-05-24",
+   844.6
+  ],
+  [
+   "2024-05-31",
+   847.8
+  ],
+  [
+   "2024-06-07",
+   832.8
+  ],
+  [
+   "2024-06-14",
+   842.4
+  ],
+  [
+   "2024-06-21",
+   860.0
+  ],
+  [
+   "2024-06-28",
+   855.8
+  ],
+  [
+   "2024-07-05",
+   850.8
+  ],
+  [
+   "2024-07-12",
+   856.6
+  ],
+  [
+   "2024-07-19",
+   843.2
+  ],
+  [
+   "2024-07-26",
+   873.8
+  ],
+  [
+   "2024-08-02",
+   833.8
+  ],
+  [
+   "2024-08-09",
+   799.6
+  ],
+  [
+   "2024-08-16",
+   821.6
+  ],
+  [
+   "2024-08-23",
+   827.8
+  ],
+  [
+   "2024-08-30",
+   834.0
+  ],
+  [
+   "2024-09-06",
+   829.2
+  ],
+  [
+   "2024-09-13",
+   849.2
+  ],
+  [
+   "2024-09-20",
+   835.6
+  ],
+  [
+   "2024-09-27",
+   839.8
+  ],
+  [
+   "2024-10-04",
+   805.6
+  ],
+  [
+   "2024-10-11",
+   819.6
+  ],
+  [
+   "2024-10-18",
+   838.4
+  ],
+  [
+   "2024-10-25",
+   820.0
+  ],
+  [
+   "2024-11-01",
+   814.6
+  ],
+  [
+   "2024-11-08",
+   828.2
+  ],
+  [
+   "2024-11-15",
+   843.8
+  ],
+  [
+   "2024-11-22",
+   874.6
+  ],
+  [
+   "2024-11-29",
+   856.6
+  ],
+  [
+   "2024-12-06",
+   844.8
+  ],
+  [
+   "2024-12-13",
+   833.8
+  ],
+  [
+   "2024-12-20",
+   803.2
+  ],
+  [
+   "2024-12-24",
+   799.2
+  ],
+  [
+   "2024-12-27",
+   799.4
+  ],
+  [
+   "2025-01-03",
+   793.6
+  ],
+  [
+   "2025-01-10",
+   797.0
+  ],
+  [
+   "2025-01-17",
+   828.2
+  ],
+  [
+   "2025-01-24",
+   827.0
+  ],
+  [
+   "2025-01-31",
+   866.4
+  ],
+  [
+   "2025-02-07",
+   876.2
+  ],
+  [
+   "2025-02-14",
+   895.8
+  ],
+  [
+   "2025-02-21",
+   882.6
+  ],
+  [
+   "2025-02-28",
+   859.0
+  ],
+  [
+   "2025-03-07",
+   775.6
+  ],
+  [
+   "2025-03-14",
+   765.0
+  ],
+  [
+   "2025-03-21",
+   785.2
+  ],
+  [
+   "2025-03-28",
+   788.6
+  ],
+  [
+   "2025-04-04",
+   691.0
+  ],
+  [
+   "2025-04-11",
+   677.2
+  ],
+  [
+   "2025-04-17",
+   691.2
+  ],
+  [
+   "2025-04-25",
+   713.6
+  ],
+  [
+   "2025-05-02",
+   764.4
+  ],
+  [
+   "2025-05-09",
+   780.6
+  ],
+  [
+   "2025-05-16",
+   800.8
+  ],
+  [
+   "2025-05-23",
+   787.0
+  ],
+  [
+   "2025-05-30",
+   785.4
+  ],
+  [
+   "2025-06-06",
+   797.2
+  ],
+  [
+   "2025-06-13",
+   776.2
+  ],
+  [
+   "2025-06-20",
+   786.6
+  ],
+  [
+   "2025-06-27",
+   814.0
+  ],
+  [
+   "2025-07-04",
+   807.8
+  ],
+  [
+   "2025-07-11",
+   834.0
+  ],
+  [
+   "2025-07-18",
+   836.6
+  ],
+  [
+   "2025-07-25",
+   861.0
+  ],
+  [
+   "2025-08-01",
+   862.8
+  ],
+  [
+   "2025-08-08",
+   870.8
+  ],
+  [
+   "2025-08-15",
+   878.4
+  ],
+  [
+   "2025-08-22",
+   890.8
+  ],
+  [
+   "2025-08-29",
+   870.4
+  ],
+  [
+   "2025-09-05",
+   890.2
+  ],
+  [
+   "2025-09-12",
+   891.2
+  ],
+  [
+   "2025-09-19",
+   915.6
+  ],
+  [
+   "2025-09-26",
+   902.0
+  ],
+  [
+   "2025-10-03",
+   935.6
+  ],
+  [
+   "2025-10-10",
+   919.0
+  ],
+  [
+   "2025-10-17",
+   917.2
+  ],
+  [
+   "2025-10-24",
+   951.2
+  ],
+  [
+   "2025-10-31",
+   967.7999
+  ],
+  [
+   "2025-11-07",
+   968.0
+  ],
+  [
+   "2025-11-14",
+   935.4
+  ],
+  [
+   "2025-11-21",
+   918.2
+  ],
+  [
+   "2025-11-28",
+   959.8
+  ],
+  [
+   "2025-12-05",
+   948.6
+  ],
+  [
+   "2025-12-12",
+   889.0
+  ],
+  [
+   "2025-12-19",
+   879.4
+  ],
+  [
+   "2025-12-24",
+   880.4
+  ],
+  [
+   "2026-01-02",
+   874.0
+  ],
+  [
+   "2026-01-09",
+   901.0
+  ],
+  [
+   "2026-01-16",
+   889.4
+  ],
+  [
+   "2026-01-23",
+   913.8
+  ],
+  [
+   "2026-01-30",
+   880.0
+  ],
+  [
+   "2026-02-06",
+   837.4
+  ],
+  [
+   "2026-02-13",
+   828.4
+  ],
+  [
+   "2026-02-20",
+   831.8
+  ],
+  [
+   "2026-02-27",
+   838.2
+  ],
+  [
+   "2026-03-06",
+   796.6
+  ],
+  [
+   "2026-03-13",
+   758.8
+  ],
+  [
+   "2026-03-20",
+   739.8
+  ],
+  [
+   "2026-03-27",
+   746.4
+  ],
+  [
+   "2026-04-02",
+   785.4
+  ],
+  [
+   "2026-04-10",
+   787.8
+  ],
+  [
+   "2026-04-17",
+   849.6
+  ],
+  [
+   "2026-04-24",
+   800.0
+  ],
+  [
+   "2026-05-01",
+   805.4
+  ],
+  [
+   "2026-05-08",
+   814.2
+  ],
+  [
+   "2026-05-15",
+   790.6
+  ],
+  [
+   "2026-05-22",
+   819.4
+  ],
+  [
+   "2026-05-29",
+   811.2
+  ],
+  [
+   "2026-06-05",
+   813.2
+  ],
+  [
+   "2026-06-12",
+   816.2
+  ],
+  [
+   "2026-06-19",
+   875.0
+  ],
+  [
+   "2026-06-26",
+   897.8
+  ],
+  [
+   "2026-07-03",
+   916.6
+  ],
+  [
+   "2026-07-10",
+   893.4
+  ],
+  [
+   "2026-07-17",
+   884.6
+  ],
+  [
+   "2026-07-24",
+   881.0
+  ],
+  [
+   "2026-07-31",
+   885.8
+  ],
+  [
+   "2026-08-07",
+   904.4
+  ],
+  [
+   "2026-08-14",
+   925.8
+  ],
+  [
+   "2026-08-21",
+   900.8
+  ],
+  [
+   "2026-08-28",
+   901.4
+  ],
+  [
+   "2026-09-04",
+   911.2
+  ],
+  [
+   "2026-09-11",
+   889.4
+  ],
+  [
+   "2026-09-18",
+   874.6
+  ],
+  [
+   "2026-09-25",
+   876.4
+  ],
+  [
+   "2026-10-02",
+   857.6
+  ],
+  [
+   "2026-10-09",
+   895.6
+  ],
+  [
+   "2026-10-16",
+   883.6
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-11-17",
+   "doc": "Q3 TU",
+   "fy": "FY21",
+   "g": "flat",
+   "s": 0,
+   "q": "Group guidance for the full year remains unchanged at Group Revenue of £1,800m ± and adjusted Operating Profit of £375m ± .",
+   "file": "20211117_INF_Trading-Statement-&-Board-Update.md"
+  },
+  {
+   "d": "2022-02-10",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "flat",
+   "s": 0,
+   "q": "Informa will report its 2021 Full Year Results on 15 March 2022. Ahead of this, the Group can confirm that it expects to report trading in 2021 in line with guidance of £1.8bn± Group Revenue and £375m± of Adjusted Operating Profit.",
+   "file": "20220210_INF_Divestment-of-Pharma-Intelligence-for-£1.9bn.md"
+  },
+  {
+   "d": "2022-03-15",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "On this basis, the 2022 guidance range for Group Revenue is £2,150m to £2,250m and for Group Adjusted Operating Profit is £470m to £490m.",
+   "file": "20220315_INF_2021-Full-Year-Results-Statement.md"
+  },
+  {
+   "d": "2022-06-16",
+   "doc": "AGM",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 1,
+   "q": "On that basis, the Group's performance year to date, combined with strong forward visibility on subscriptions revenues in Taylor & Francis and exhibitor and delegate bookings in Live and On-Demand Events, and favourable currency trends, puts the Group on track for the upper-end of the full year guidance range provided at our 2021 Full Year Results in March (Revenue of £2,150m-£2,250m and adjusted operating profit of £470m-£490m).",
+   "file": "20220616_INF_Trading-Update.md"
+  },
+  {
+   "d": "2022-07-19",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Full year expectations reaffirmed at the top-end of guidance range, underpinned by strong forward visibility and commitments;",
+   "file": "20220719_INF_Market-Update---GAP-II-delivering-further-momentum.md"
+  },
+  {
+   "d": "2022-08-04",
+   "doc": "OPS",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "\"Despite the wider macro-economic uncertainties, we remain confident of delivering our guidance for the current year, alongside delivering accelerated returns to shareholders through a £725m share buyback and the resumption of ordinary dividends.\"",
+   "file": "20220804_INF_Divestment-of-Maritime-Intelligence.md"
+  },
+  {
+   "d": "2022-08-04",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Within Informa's Market Update on 19 July, full year expectations were reconfirmed at the upper-end of the guidance range originally provided at the 2021 Full Year Results in March 2022 (Revenue of £2,150m-£2,250m and adjusted operating profit of £470m-£490m).",
+   "file": "20220804_INF_Half-year-Report.md"
+  },
+  {
+   "d": "2022-11-14",
+   "doc": "Q3 TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Today we are increasing our guidance range to Revenue of £2,300m-£2,350m and adjusted Operating Profit of £490m-£505m*, reflecting further outperformance of Live and On-Demand Events in North America, EMEA and ASEAN and continuing growth in Academic Markets.",
+   "file": "20221114_INF_November-Trading-Update.md"
+  },
+  {
+   "d": "2023-01-19",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Informa expects to report 2022 revenue of more than £2,380m, adjusted operating profit of £530m+ and free cash flow of £440m+;",
+   "file": "20230119_INF_Strong-2022-performance,-further-growth-in-2023.md"
+  },
+  {
+   "d": "2023-03-09",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Strong Q1 trading and forward bookings, with 2023 revenue guidance confirmed at £2,750m to £2,850m and adjusted operating profit at £675m to £725m, including six-month contribution from Tarsus;",
+   "file": "20230309_INF_2022-Full-Year-Results.md"
+  },
+  {
+   "d": "2023-06-15",
+   "doc": "AGM",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Combined with the addition of B2B businesses, Tarsus and Winsight, both of which have traded strongly since being acquired, we expect to deliver 2023 results significantly ahead of the guidance we set in March, with adjusted operating profits expected to be c.10% higher.",
+   "file": "20230615_INF_Accelerating-Growth.md"
+  },
+  {
+   "d": "2023-07-27",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Strong H1 trading and forward bookings puts us on track for the top-end of guidance on both Revenue (£2.95bn to £3.05bn) and Adjusted Operating Profit (£750m to £790m), implying 30%+ growth in revenue and 50%+ growth in adjusted operating profit;",
+   "file": "20230727_INF_Half-Year-Results.md"
+  },
+  {
+   "d": "2023-11-14",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Our updated 2023 Group guidance is for Revenue of £3.15bn+ (up from £3.05bn) and Group Adjusted Operating Profit of £840m+ (up from £790m, average GBP/USD at 1.24).",
+   "file": "20231114_INF_Ten-Month-Trading-Update.md"
+  },
+  {
+   "d": "2024-01-11",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "2024 guidance targets high single digit Underlying Revenue Growth, with Reported Revenue of £3,425m-£3,475m and Adjusted Operating Profit of £945m-£965m (excluding any effect of the proposed combination with TechTarget; GBP/USD 1.25);",
+   "file": "20240111_INF_Trading-Update.md"
+  },
+  {
+   "d": "2024-03-08",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Final outperformance in 2023 and the strong start to 2024 leads us to update market guidance, with an increase in Revenue, Adjusted Operating Profit and Free Cash Flow.",
+   "file": "20240308_INF_Informa-2023-Full-Year-Results.md"
+  },
+  {
+   "d": "2024-03-08",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Final outperformance in 2023 and the strong start to 2024 leads us to update market guidance, with an increase in Revenue, Adjusted Operating Profit and Free Cash Flow.",
+   "file": "20240308_INF_Informa-2023-Full-Year-Results-Replacement.md"
+  },
+  {
+   "d": "2024-05-08",
+   "doc": "Q1 TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 1,
+   "q": "All businesses delivering ahead of or in line with 2024 targets; we are now performing to the upper end of market guidance on revenues, adjusted operating profit and free cash flow;",
+   "file": "20240508_INF_Market-Update.md"
+  },
+  {
+   "d": "2024-06-21",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Market guidance reaffirmed...On track to deliver at the upper end of the 2024 guidance range (Excludes any effect of the proposed combination with TechTarget, GBP / USD 1.25):",
+   "file": "20240621_INF_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2024-07-24",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Results now expected to be above the top-end of the guidance range, including double-digit underlying revenue growth and an ambition to deliver adjusted operating profit of up to £1bn;",
+   "file": "20240724_INF_Half-year-Report.md"
+  },
+  {
+   "d": "2024-10-09",
+   "doc": "OPS",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Informa's underlying trading performance remains strong, with the Group on track to meet previously upgraded full year guidance, including double-digit Underlying Revenue Growth, Group Revenue of £3.5bn+, Adjusted Operating Profit of £970m+ (up to £1bn) and Free Cash Flow of £740m+ (GBP/USD 1.26 and excluding any effect of the proposed combination with TechTarget and acquisition of Ascential).",
+   "file": "20241009_INF_Informa-2025-2030-A-Growth-Platform.md"
+  },
+  {
+   "d": "2024-11-19",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "On track to meet previously upgraded full year guidance, including double-digit Underlying Revenue Growth; Updating for the now completed Ascential acquisition and currency movements takes full year Group Revenue guidance to £3.5bn+ and Adjusted Operating Profit to £975m+;",
+   "file": "20241119_INF_Ten-Month-Trading-Update.md"
+  },
+  {
+   "d": "2025-03-06",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Our target for the expanded Informa portfolio is reported revenues of £4.1bn+ in 2025 (excluding Curinos (now divested) and with a USD/GBP exchange rate of $1.25), and double-digit growth in adjusted diluted earnings per share;",
+   "file": "20250306_INF_2024-Full-Year-Results.md"
+  },
+  {
+   "d": "2025-05-01",
+   "doc": "Q1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Full year Group underlying revenue growth guidance of 5%+, £4.1bn± revenue target and double digit adjusted earnings growth reaffirmed. (2025 full year average FX of GBP/USD 1.27);",
+   "file": "20250501_INF_First-Quarter-Trading-Update.md"
+  },
+  {
+   "d": "2025-06-17",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -1,
+   "q": "2025 Group underlying revenue growth guidance of 5%+ reaffirmed, with B2B Events at 7%+; Further weakening of US dollar translating to reported revenues of £4bn± and adjusted earnings growth of 10%±. (2025 average FX of GBP/USD 1.321).",
+   "file": "20250617_INF_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2025-07-23",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Group underlying revenue growth guidance increased from 5%+ to 6%±, including 8%+ in Live B2B Events; Reported revenue guidance maintained at £4bn± and adjusted earnings growth increased to 10%+, despite further weakening of US dollar (2025 average GBP/USD 1.33 versus 1.32 at the AGM Trading Update);",
+   "file": "20250723_INF_2025-Half-Year-Results.md"
+  },
+  {
+   "d": "2025-11-11",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Full year guidance reaffirmed on Underlying Revenue Growth (6%±), Group Revenues (£4bn±) and Adjusted Earnings per Share Growth (10%+);",
+   "file": "20251111_INF_10-Month-Trading-Update.md"
+  },
+  {
+   "d": "2026-01-20",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Informa's strong performance in 2025, forward visibility and improving performance at Informa TechTarget in 2026, combined with the establishment of inD, leads to the increase in Group underlying revenue growth guidance to 6%±.",
+   "file": "20260120_INF_Market-Update.md"
+  },
+  {
+   "d": "2026-03-12",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "We continue to target higher underlying revenue growth in 2026 at 6%±, with B2B Live Events underlying growth of 7%+, alongside double-digit growth in underlying earnings per share (excluding FX movements, biennial phasing and non-recurring data contracts);",
+   "file": "20260312_INF_Final-Results.md"
+  },
+  {
+   "d": "2026-06-18",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "We remain committed to full year Group earnings guidance (double-digit underlying growth in adjusted EPS1);",
+   "file": "20260618_INF_Trading-Update.md"
+  },
+  {
+   "d": "2026-07-30",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group is committed to full year Group Revenue (6%± underlying growth) and Earnings guidance (double-digit underlying growth in adjusted diluted EPS2);",
+   "file": "20260730_INF_2026-Half-Year-Results.md"
+  },
+  {
+   "d": "2026-10-06",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "This performance and strong visibility into Q4 ($1bn+ Group revenues booked and committed) underpins full year guidance for 6%± underlying revenue growth and double-digit growth in underlying earnings per share2;",
+   "file": "20261006_INF_Growth,-Focus-&-International-Expansion.md"
+  },
+  {
+   "d": "2026-10-06",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Informa has issued a separate Company Update this morning, which confirms current trading remains on track for full year expectations, announces the intention to separate its Taylor & Francis business to focus on its core B2B business and details the earnings enhancing acquisition of Clarion, further strengthening its position in B2B Live Events.",
+   "file": "20261006_INF_Placing-Announcement.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-06",
+  "doc": "OPS",
+  "file": "20261006_INF_Placing-Announcement.md",
+  "vs": "H1 R Jul-26 · AGM TU Jun-26 · same-day Company Update Oct-26 (no earlier placing of this kind)",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Target dropped",
+    "text": "Jul-26 H1 R: “2026 Share Buyback Programme increased to £350m from £250m” → the placing does not mention the buyback; the same-day Company Update says “Informa will pause its current share buyback programme in order to redirect capital to fund the transaction”",
+    "span": "Launched Jan-26 (£200m initial), raised Jul-26 (£350m) → paused Oct-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Number to words",
+    "text": "Jul-26 H1 R: “The Group is committed to full year Group Revenue (6%± underlying growth) and Earnings guidance (double-digit underlying growth in adjusted diluted EPS2)” → placing: “confirms current trading remains on track for full year expectations”, no figures (the numbers sit in the same-day Company Update)",
+    "span": "Jul-26 → Oct-26"
+   }
+  ]
+ }
+}

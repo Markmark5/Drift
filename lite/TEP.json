@@ -1,0 +1,1322 @@
+{
+ "ticker": "TEP",
+ "v": "2026-10-19.7a9d",
+ "ccy": "GBX",
+ "src": "AlphaVantage TEP.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   1228.0
+  ],
+  [
+   "2021-10-22",
+   1270.0
+  ],
+  [
+   "2021-10-29",
+   1248.0
+  ],
+  [
+   "2021-11-05",
+   1286.0
+  ],
+  [
+   "2021-11-12",
+   1342.0
+  ],
+  [
+   "2021-11-19",
+   1274.0
+  ],
+  [
+   "2021-11-26",
+   1446.0
+  ],
+  [
+   "2021-12-03",
+   1456.0
+  ],
+  [
+   "2021-12-10",
+   1518.0
+  ],
+  [
+   "2021-12-17",
+   1558.0
+  ],
+  [
+   "2021-12-24",
+   1568.0
+  ],
+  [
+   "2021-12-31",
+   1586.0
+  ],
+  [
+   "2022-01-07",
+   1542.0
+  ],
+  [
+   "2022-01-14",
+   1536.0
+  ],
+  [
+   "2022-01-21",
+   1484.0
+  ],
+  [
+   "2022-01-28",
+   1486.0
+  ],
+  [
+   "2022-02-04",
+   1510.0
+  ],
+  [
+   "2022-02-11",
+   1500.0
+  ],
+  [
+   "2022-02-18",
+   1474.0
+  ],
+  [
+   "2022-02-25",
+   1424.0
+  ],
+  [
+   "2022-03-04",
+   1336.0
+  ],
+  [
+   "2022-03-11",
+   1440.0
+  ],
+  [
+   "2022-03-18",
+   1460.0
+  ],
+  [
+   "2022-03-25",
+   1530.0
+  ],
+  [
+   "2022-04-01",
+   1526.0
+  ],
+  [
+   "2022-04-08",
+   1532.0
+  ],
+  [
+   "2022-04-14",
+   1520.0
+  ],
+  [
+   "2022-04-22",
+   1504.0
+  ],
+  [
+   "2022-04-29",
+   1662.0
+  ],
+  [
+   "2022-05-06",
+   1634.0
+  ],
+  [
+   "2022-05-13",
+   1580.0
+  ],
+  [
+   "2022-05-20",
+   1622.0
+  ],
+  [
+   "2022-05-27",
+   1676.0
+  ],
+  [
+   "2022-06-01",
+   1674.0
+  ],
+  [
+   "2022-06-10",
+   1738.0
+  ],
+  [
+   "2022-06-17",
+   1758.0
+  ],
+  [
+   "2022-06-24",
+   1914.0
+  ],
+  [
+   "2022-07-01",
+   1970.0
+  ],
+  [
+   "2022-07-08",
+   2020.0
+  ],
+  [
+   "2022-07-15",
+   2105.0
+  ],
+  [
+   "2022-07-22",
+   2180.0
+  ],
+  [
+   "2022-07-29",
+   2250.0
+  ],
+  [
+   "2022-08-05",
+   2150.0
+  ],
+  [
+   "2022-08-12",
+   2115.0
+  ],
+  [
+   "2022-08-19",
+   2115.0
+  ],
+  [
+   "2022-08-26",
+   2005.0
+  ],
+  [
+   "2022-09-02",
+   1902.0
+  ],
+  [
+   "2022-09-09",
+   1792.0
+  ],
+  [
+   "2022-09-16",
+   1794.0
+  ],
+  [
+   "2022-09-23",
+   1750.0
+  ],
+  [
+   "2022-09-30",
+   1726.0
+  ],
+  [
+   "2022-10-07",
+   2230.0
+  ],
+  [
+   "2022-10-14",
+   2095.0
+  ],
+  [
+   "2022-10-21",
+   1976.0
+  ],
+  [
+   "2022-10-28",
+   2120.0
+  ],
+  [
+   "2022-11-04",
+   2195.0
+  ],
+  [
+   "2022-11-11",
+   2245.0
+  ],
+  [
+   "2022-11-18",
+   2280.0
+  ],
+  [
+   "2022-11-25",
+   2490.0
+  ],
+  [
+   "2022-12-02",
+   2410.0
+  ],
+  [
+   "2022-12-09",
+   2230.0
+  ],
+  [
+   "2022-12-16",
+   2275.0
+  ],
+  [
+   "2022-12-23",
+   2220.0
+  ],
+  [
+   "2022-12-30",
+   2195.0
+  ],
+  [
+   "2023-01-06",
+   2055.0
+  ],
+  [
+   "2023-01-13",
+   2130.0
+  ],
+  [
+   "2023-01-20",
+   2040.0
+  ],
+  [
+   "2023-01-27",
+   2060.0
+  ],
+  [
+   "2023-02-03",
+   1912.0
+  ],
+  [
+   "2023-02-10",
+   1916.0
+  ],
+  [
+   "2023-02-17",
+   1868.0
+  ],
+  [
+   "2023-02-24",
+   1794.0
+  ],
+  [
+   "2023-03-03",
+   1888.0
+  ],
+  [
+   "2023-03-10",
+   1914.0
+  ],
+  [
+   "2023-03-17",
+   1900.0
+  ],
+  [
+   "2023-03-24",
+   1940.0
+  ],
+  [
+   "2023-03-31",
+   1890.0
+  ],
+  [
+   "2023-04-06",
+   1904.0
+  ],
+  [
+   "2023-04-14",
+   1966.0
+  ],
+  [
+   "2023-04-21",
+   1918.0
+  ],
+  [
+   "2023-04-28",
+   1806.0
+  ],
+  [
+   "2023-05-05",
+   1766.0
+  ],
+  [
+   "2023-05-12",
+   1792.0
+  ],
+  [
+   "2023-05-19",
+   1742.0
+  ],
+  [
+   "2023-05-26",
+   1548.0
+  ],
+  [
+   "2023-06-02",
+   1530.0
+  ],
+  [
+   "2023-06-09",
+   1486.0
+  ],
+  [
+   "2023-06-16",
+   1538.0
+  ],
+  [
+   "2023-06-23",
+   1518.0
+  ],
+  [
+   "2023-06-30",
+   1690.0
+  ],
+  [
+   "2023-07-07",
+   1650.0
+  ],
+  [
+   "2023-07-14",
+   1698.0
+  ],
+  [
+   "2023-07-21",
+   1692.0
+  ],
+  [
+   "2023-07-28",
+   1662.0
+  ],
+  [
+   "2023-08-04",
+   1676.0
+  ],
+  [
+   "2023-08-11",
+   1670.0
+  ],
+  [
+   "2023-08-18",
+   1580.0
+  ],
+  [
+   "2023-08-25",
+   1586.0
+  ],
+  [
+   "2023-09-01",
+   1584.0
+  ],
+  [
+   "2023-09-08",
+   1544.0
+  ],
+  [
+   "2023-09-15",
+   1570.0
+  ],
+  [
+   "2023-09-22",
+   1556.0
+  ],
+  [
+   "2023-09-29",
+   1490.0
+  ],
+  [
+   "2023-10-06",
+   1502.0
+  ],
+  [
+   "2023-10-13",
+   1508.0
+  ],
+  [
+   "2023-10-20",
+   1464.0
+  ],
+  [
+   "2023-10-27",
+   1490.0
+  ],
+  [
+   "2023-11-03",
+   1646.0
+  ],
+  [
+   "2023-11-10",
+   1592.0
+  ],
+  [
+   "2023-11-17",
+   1698.0
+  ],
+  [
+   "2023-11-24",
+   1654.0
+  ],
+  [
+   "2023-12-01",
+   1518.0
+  ],
+  [
+   "2023-12-08",
+   1526.0
+  ],
+  [
+   "2023-12-15",
+   1516.0
+  ],
+  [
+   "2023-12-22",
+   1610.0
+  ],
+  [
+   "2023-12-29",
+   1612.0
+  ],
+  [
+   "2024-01-05",
+   1530.0
+  ],
+  [
+   "2024-01-12",
+   1540.0
+  ],
+  [
+   "2024-01-19",
+   1530.0
+  ],
+  [
+   "2024-01-26",
+   1536.0
+  ],
+  [
+   "2024-02-02",
+   1398.0
+  ],
+  [
+   "2024-02-09",
+   1388.0
+  ],
+  [
+   "2024-02-16",
+   1460.0
+  ],
+  [
+   "2024-02-23",
+   1488.0
+  ],
+  [
+   "2024-03-01",
+   1492.0
+  ],
+  [
+   "2024-03-08",
+   1522.0
+  ],
+  [
+   "2024-03-15",
+   1504.0
+  ],
+  [
+   "2024-03-22",
+   1584.0
+  ],
+  [
+   "2024-03-28",
+   1628.0
+  ],
+  [
+   "2024-04-05",
+   1630.0
+  ],
+  [
+   "2024-04-12",
+   1654.0
+  ],
+  [
+   "2024-04-19",
+   1616.0
+  ],
+  [
+   "2024-04-26",
+   1694.0
+  ],
+  [
+   "2024-05-03",
+   1736.0
+  ],
+  [
+   "2024-05-10",
+   1830.0
+  ],
+  [
+   "2024-05-17",
+   1794.0
+  ],
+  [
+   "2024-05-24",
+   1816.0
+  ],
+  [
+   "2024-05-31",
+   1882.0
+  ],
+  [
+   "2024-06-07",
+   1892.0
+  ],
+  [
+   "2024-06-14",
+   1870.0
+  ],
+  [
+   "2024-06-21",
+   1750.0
+  ],
+  [
+   "2024-06-28",
+   1764.0
+  ],
+  [
+   "2024-07-05",
+   1810.0
+  ],
+  [
+   "2024-07-12",
+   1820.0
+  ],
+  [
+   "2024-07-19",
+   1784.0
+  ],
+  [
+   "2024-07-26",
+   1838.0
+  ],
+  [
+   "2024-08-02",
+   1812.0
+  ],
+  [
+   "2024-08-09",
+   1760.0
+  ],
+  [
+   "2024-08-16",
+   1850.0
+  ],
+  [
+   "2024-08-23",
+   1824.0
+  ],
+  [
+   "2024-08-30",
+   1844.0
+  ],
+  [
+   "2024-09-06",
+   1808.0
+  ],
+  [
+   "2024-09-13",
+   1778.0
+  ],
+  [
+   "2024-09-20",
+   1838.0
+  ],
+  [
+   "2024-09-27",
+   1858.0
+  ],
+  [
+   "2024-10-04",
+   1814.0
+  ],
+  [
+   "2024-10-11",
+   1794.0
+  ],
+  [
+   "2024-10-18",
+   1862.0
+  ],
+  [
+   "2024-10-25",
+   1754.0
+  ],
+  [
+   "2024-11-01",
+   1690.0
+  ],
+  [
+   "2024-11-08",
+   1662.0
+  ],
+  [
+   "2024-11-15",
+   1710.0
+  ],
+  [
+   "2024-11-22",
+   1740.0
+  ],
+  [
+   "2024-11-29",
+   1800.0
+  ],
+  [
+   "2024-12-06",
+   1790.0
+  ],
+  [
+   "2024-12-13",
+   1750.0
+  ],
+  [
+   "2024-12-20",
+   1714.0
+  ],
+  [
+   "2024-12-24",
+   1728.0
+  ],
+  [
+   "2024-12-27",
+   1708.0
+  ],
+  [
+   "2025-01-03",
+   1738.0
+  ],
+  [
+   "2025-01-10",
+   1630.0
+  ],
+  [
+   "2025-01-17",
+   1704.0
+  ],
+  [
+   "2025-01-24",
+   1630.0
+  ],
+  [
+   "2025-01-31",
+   1672.0
+  ],
+  [
+   "2025-02-07",
+   1716.0
+  ],
+  [
+   "2025-02-14",
+   1692.0
+  ],
+  [
+   "2025-02-21",
+   1694.0
+  ],
+  [
+   "2025-02-28",
+   1690.0
+  ],
+  [
+   "2025-03-07",
+   1704.0
+  ],
+  [
+   "2025-03-14",
+   1728.0
+  ],
+  [
+   "2025-03-21",
+   1748.0
+  ],
+  [
+   "2025-03-28",
+   1770.0
+  ],
+  [
+   "2025-04-04",
+   1700.0
+  ],
+  [
+   "2025-04-11",
+   1680.0
+  ],
+  [
+   "2025-04-17",
+   1776.0
+  ],
+  [
+   "2025-04-25",
+   1832.0
+  ],
+  [
+   "2025-05-02",
+   1900.0
+  ],
+  [
+   "2025-05-09",
+   2000.0
+  ],
+  [
+   "2025-05-16",
+   2000.0
+  ],
+  [
+   "2025-05-23",
+   2035.0
+  ],
+  [
+   "2025-05-30",
+   2015.0
+  ],
+  [
+   "2025-06-06",
+   2065.0
+  ],
+  [
+   "2025-06-13",
+   2060.0
+  ],
+  [
+   "2025-06-20",
+   2025.0
+  ],
+  [
+   "2025-06-27",
+   1914.0
+  ],
+  [
+   "2025-07-04",
+   2025.0
+  ],
+  [
+   "2025-07-11",
+   1988.0
+  ],
+  [
+   "2025-07-18",
+   1984.0
+  ],
+  [
+   "2025-07-25",
+   1930.0
+  ],
+  [
+   "2025-08-01",
+   1846.0
+  ],
+  [
+   "2025-08-08",
+   1884.0
+  ],
+  [
+   "2025-08-15",
+   1870.0
+  ],
+  [
+   "2025-08-22",
+   1884.0
+  ],
+  [
+   "2025-08-29",
+   1810.0
+  ],
+  [
+   "2025-09-05",
+   1850.0
+  ],
+  [
+   "2025-09-12",
+   1890.0
+  ],
+  [
+   "2025-09-19",
+   1836.0
+  ],
+  [
+   "2025-09-26",
+   1852.0
+  ],
+  [
+   "2025-10-03",
+   1848.0
+  ],
+  [
+   "2025-10-10",
+   1818.0
+  ],
+  [
+   "2025-10-17",
+   1836.0
+  ],
+  [
+   "2025-10-24",
+   1862.0
+  ],
+  [
+   "2025-10-31",
+   1776.0
+  ],
+  [
+   "2025-11-07",
+   1718.0
+  ],
+  [
+   "2025-11-14",
+   1712.0
+  ],
+  [
+   "2025-11-21",
+   1770.0
+  ],
+  [
+   "2025-11-28",
+   1582.0
+  ],
+  [
+   "2025-12-05",
+   1396.0
+  ],
+  [
+   "2025-12-12",
+   1410.0
+  ],
+  [
+   "2025-12-19",
+   1374.0
+  ],
+  [
+   "2025-12-24",
+   1356.0
+  ],
+  [
+   "2026-01-02",
+   1340.0
+  ],
+  [
+   "2026-01-09",
+   1376.0
+  ],
+  [
+   "2026-01-16",
+   1366.0
+  ],
+  [
+   "2026-01-23",
+   1330.0
+  ],
+  [
+   "2026-01-30",
+   1332.0
+  ],
+  [
+   "2026-02-06",
+   1344.0
+  ],
+  [
+   "2026-02-13",
+   1386.0
+  ],
+  [
+   "2026-02-20",
+   1396.0
+  ],
+  [
+   "2026-02-27",
+   1370.0
+  ],
+  [
+   "2026-03-06",
+   1330.0
+  ],
+  [
+   "2026-03-13",
+   1344.0
+  ],
+  [
+   "2026-03-20",
+   1296.0
+  ],
+  [
+   "2026-03-27",
+   1256.0
+  ],
+  [
+   "2026-04-02",
+   1322.0
+  ],
+  [
+   "2026-04-10",
+   1366.0
+  ],
+  [
+   "2026-04-17",
+   1372.0
+  ],
+  [
+   "2026-04-24",
+   1420.0
+  ],
+  [
+   "2026-05-01",
+   1188.0
+  ],
+  [
+   "2026-05-08",
+   1046.0
+  ],
+  [
+   "2026-05-15",
+   1026.0
+  ],
+  [
+   "2026-05-22",
+   1068.0
+  ],
+  [
+   "2026-05-29",
+   1004.0
+  ],
+  [
+   "2026-06-05",
+   986.0
+  ],
+  [
+   "2026-06-12",
+   1004.0
+  ],
+  [
+   "2026-06-19",
+   950.0
+  ],
+  [
+   "2026-06-26",
+   768.0
+  ],
+  [
+   "2026-07-03",
+   765.0
+  ],
+  [
+   "2026-07-10",
+   861.0
+  ],
+  [
+   "2026-07-17",
+   880.0
+  ],
+  [
+   "2026-07-24",
+   852.0
+  ],
+  [
+   "2026-07-31",
+   851.0
+  ],
+  [
+   "2026-08-07",
+   857.0
+  ],
+  [
+   "2026-08-14",
+   855.0
+  ],
+  [
+   "2026-08-21",
+   871.0
+  ],
+  [
+   "2026-08-28",
+   875.0
+  ],
+  [
+   "2026-09-04",
+   861.0
+  ],
+  [
+   "2026-09-11",
+   795.0
+  ],
+  [
+   "2026-09-18",
+   813.0
+  ],
+  [
+   "2026-09-25",
+   806.0
+  ],
+  [
+   "2026-10-02",
+   812.0
+  ],
+  [
+   "2026-10-09",
+   852.0
+  ],
+  [
+   "2026-10-16",
+   889.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-11-23",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "In the absence of unforeseen circumstances, and despite the additional short-term costs associated with growing our headcount and faster customer growth, we maintain our previous guidance that full-year adjusted profit before tax and dividends will be around £60m and 57p (2020: 57p) per share, respectively.",
+   "file": "20211123_TEP_Half-Year-Results.md"
+  },
+  {
+   "d": "2022-04-28",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "We expect full year adjusted pre-tax profits to be in line with expectations, despite additional operating costs during H2 as we positioned ourselves for an extended period of rapid organic growth.",
+   "file": "20220428_TEP_Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2022-06-21",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 2,
+   "q": "In the absence of unforeseen circumstances, and with growing visibility over the level of the Government price cap for the coming winter period, we expect that full-year adjusted profit before tax for FY23 will be around £75m, ahead of current consensus market expectations; this would enable an increase in our dividend to not less than 65p for the full year in line with our progressive dividend policy.",
+   "file": "20220621_TEP_Final-Results.md"
+  },
+  {
+   "d": "2022-10-03",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 3,
+   "q": "We expect full year profits will be materially ahead of current market expectations, due primarily to (i) stronger customer growth, and (ii) a reduction in the previously expected cost of multi-service discounts during H2 and an improved outlook for energy affordability, resulting from the recently announced price guarantee which will cap average energy bills at £2,500 per household for the next two years.",
+   "file": "20221003_TEP_Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2022-11-22",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 2,
+   "q": "We are upgrading our previous guidance and now expect full-year adjusted profit before tax for FY23 of at least £95m, leading to a full year dividend of at least 80p per share (2022: 57p)",
+   "file": "20221122_TEP_Half-year-Report.md"
+  },
+  {
+   "d": "2023-04-27",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "We expect full year adjusted pre-tax profits to be slightly above £95m, in line with previously upgraded guidance, and confirm our intention to pay a total dividend for the year of 80p (FY22: 57p) per share.",
+   "file": "20230427_TEP_Year-End-Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2023-06-27",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "Comfortable double-digit annual percentage customer growth, leading to a broadly corresponding increase in adjusted pre-tax profits",
+   "file": "20230627_TEP_Final-Results.md"
+  },
+  {
+   "d": "2023-08-04",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "We therefore continue to expect to deliver comfortable double-digit annual percentage customer growth for the current year, leading to a broadly corresponding increase in adjusted pre-tax profits.",
+   "file": "20230804_TEP_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2023-10-11",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "We reaffirm our guidance for the full year and look forward to providing a further update with our half year results on 21 November 2023.",
+   "file": "20231011_TEP_Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2023-11-21",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "We anticipate passing the 1 million customer milestone during the second half of the year, and are confident that we will meet expectations for the full year.",
+   "file": "20231121_TEP_Half-Year-Results-to-30-September-2023.md"
+  },
+  {
+   "d": "2024-03-06",
+   "doc": "OPS",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "We continue to trade strongly in line with market expectations for the full year.",
+   "file": "20240306_TEP_Telecom-Plus-Passes-One-Million-Customer-Milestone.md"
+  },
+  {
+   "d": "2024-04-30",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Full year adjusted pre-tax profits for FY24 are expected to be towards the upper end of market expectations(1).",
+   "file": "20240430_TEP_Year-End-Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2024-06-18",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "adjusted pre-tax profits are expected to increase broadly in line with customer growth, with Adjusted PBT for FY25 expected to be within a range of £124m to £128m;",
+   "file": "20240618_TEP_Final-Results-for-the-year-ended-31-March-2024.md"
+  },
+  {
+   "d": "2024-08-13",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "Our current rate of growth places us firmly on track to double the size of the business to two million customers over the medium term, whilst continuing to grow profits and shareholder returns.",
+   "file": "20240813_TEP_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2024-10-03",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "We remain confident in our previous guidance for both customer growth (12%-14%) and adjusted pre-tax profits (£124m-£128m) for the full year, and look forward to providing a further update with our half year results on 26 November 2024.",
+   "file": "20241003_TEP_Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2024-11-26",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Confident in meeting full year FY25 guidance of 12%-14% customer growth and £124-£128m of adjusted pre-tax profit",
+   "file": "20241126_TEP_Half-Year-Results-to-30-September-2024.md"
+  },
+  {
+   "d": "2025-04-29",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Full year adjusted pre-tax profits for FY25 are expected to be between £124m-£128m, in line with previous guidance(1).",
+   "file": "20250429_TEP_Year-End-Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2025-06-24",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Adjusted pre-tax profit for FY26 is expected to be within a range of £132m-£138m",
+   "file": "20250624_TEP_Final-Results-for-the-year-ended-31-March-2025.md"
+  },
+  {
+   "d": "2025-08-06",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "We reiterate our previous FY26 financial guidance and, as a result of the acquisition of the additional customers from TalkTalk, we now expect total customer numbers to increase by around 25%.",
+   "file": "20250806_TEP_Telecom-Plus-PLC-AGM-Trading-Update.md"
+  },
+  {
+   "d": "2025-10-07",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "Whilst historically our H1/H2 profitability has been split roughly 35/65 in favour of H2, we expect this split to change to around 25/75 for both the current and future financial reporting periods.",
+   "file": "20251007_TEP_Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2025-11-25",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "We are confident in meeting FY26 guidance of around 25% total customer growth (including the customers transferred from TalkTalk), with low double digit organic customer growth and £132-£138m of adjusted pre-tax profit",
+   "file": "20251125_TEP_Half-Year-Results.md"
+  },
+  {
+   "d": "2026-04-28",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -2,
+   "q": "Adjusted pre-tax profits for FY26 are expected to be at the bottom end of our previously guided range of £132m-£138m, following reduced energy consumption during an unseasonably warm winter.",
+   "file": "20260428_TEP_Year-End-Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2026-06-23",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "CUT",
+   "s": -3,
+   "q": "Adjusted FY27 profit before tax is expected to be in the range of £80m to £90m, reflecting the plan's first year of investment.",
+   "file": "20260623_TEP_Final-Results-for-the-year-ended-31-March-2026.md"
+  },
+  {
+   "d": "2026-08-17",
+   "doc": "AGM",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 1,
+   "q": "In the first four months of FY27 (April to July), annualised multiservice customer growth is running slightly ahead of our 10% target for the full year, and more than 2.5x the multiservice customer growth rate of 3.9% achieved in FY26.",
+   "file": "20260817_TEP_AGM-Trading-Statement.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2026-10-06",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Given this encouraging progress, we reiterate our full year guidance for adjusted profit before tax of between £80m to £90m for FY27.",
+   "file": "20261006_TEP_H1-trading-update-and-notice-of-results.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-06",
+  "doc": "H1 TU",
+  "file": "20261006_TEP_H1-trading-update-and-notice-of-results.md",
+  "vs": "H1 TU Oct-25 · back to Oct-23/Oct-24 · AGM Aug-26",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Total services supplied: Oct-25 “The number of services supplied increased by over 256k to a total of around 3.65m” (Oct-24 “a total of 3.266m”) → Oct-26 gives no total services figure, only cross-sold core services and insurance services",
+    "span": "Given Oct-23, Oct-24, Oct-25 → first gap in 3 years"
+   },
+   {
+    "sev": "amber",
+    "type": "Target dropped",
+    "text": "Oct-25: “on track to increase the size of our high quality base to well over 2 million customers over the medium term” → Oct-26 no 2m-customer target; replaced by “long-term goal of £175 million of adjusted profit before tax by FY31”",
+    "span": "2m target in Oct-24 and Oct-25 H1 TUs → gone after the Jun-26 plan"
+   },
+   {
+    "sev": "grey",
+    "type": "Went quiet",
+    "text": "Total customers incl. acquired: Oct-25 “Total customer numbers increased by around 223k (c.19%)” to “over 1.386m” → Oct-26 reports organic customers only: “total organic customers increasing at an annualised rate of c.9.7% to c.1.32m”",
+    "span": "Oct-25 → Oct-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Aug-26 AGM gave a multiservice growth rate only → Oct-26 adds the count: “Multiservice organic customer numbers increased at an annualised rate of over 11% to c.526k”; insurance services count back with “Insurance services returned to growth in H1, for the first time since H1 FY25”",
+    "span": "Aug-26 → Oct-26"
+   }
+  ]
+ }
+}

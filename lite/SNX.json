@@ -1,0 +1,1365 @@
+{
+ "ticker": "SNX",
+ "v": "2026-10-19.2037",
+ "ccy": "GBX",
+ "src": "AlphaVantage SNX.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   106.0
+  ],
+  [
+   "2021-10-22",
+   106.0
+  ],
+  [
+   "2021-10-29",
+   110.0
+  ],
+  [
+   "2021-11-05",
+   125.0
+  ],
+  [
+   "2021-11-12",
+   122.5
+  ],
+  [
+   "2021-11-19",
+   122.5
+  ],
+  [
+   "2021-11-26",
+   112.5
+  ],
+  [
+   "2021-12-03",
+   111.5
+  ],
+  [
+   "2021-12-10",
+   111.5
+  ],
+  [
+   "2021-12-16",
+   105.0
+  ],
+  [
+   "2021-12-23",
+   100.0
+  ],
+  [
+   "2021-12-31",
+   100.0
+  ],
+  [
+   "2022-01-07",
+   100.0
+  ],
+  [
+   "2022-01-14",
+   92.5
+  ],
+  [
+   "2022-01-21",
+   92.5
+  ],
+  [
+   "2022-01-28",
+   90.0
+  ],
+  [
+   "2022-02-03",
+   92.5
+  ],
+  [
+   "2022-02-10",
+   92.5
+  ],
+  [
+   "2022-02-18",
+   92.5
+  ],
+  [
+   "2022-02-25",
+   115.0
+  ],
+  [
+   "2022-03-04",
+   115.0
+  ],
+  [
+   "2022-03-07",
+   110.0
+  ],
+  [
+   "2022-03-11",
+   115.0
+  ],
+  [
+   "2022-03-18",
+   115.0
+  ],
+  [
+   "2022-03-24",
+   110.0
+  ],
+  [
+   "2022-04-01",
+   137.5
+  ],
+  [
+   "2022-04-08",
+   130.0
+  ],
+  [
+   "2022-04-11",
+   127.5
+  ],
+  [
+   "2022-04-14",
+   127.5
+  ],
+  [
+   "2022-04-22",
+   125.0
+  ],
+  [
+   "2022-04-29",
+   120.0
+  ],
+  [
+   "2022-05-06",
+   111.5
+  ],
+  [
+   "2022-05-13",
+   114.0
+  ],
+  [
+   "2022-05-20",
+   110.0
+  ],
+  [
+   "2022-05-27",
+   109.0
+  ],
+  [
+   "2022-06-01",
+   110.0
+  ],
+  [
+   "2022-06-10",
+   105.0
+  ],
+  [
+   "2022-06-17",
+   105.0
+  ],
+  [
+   "2022-06-24",
+   105.0
+  ],
+  [
+   "2022-07-01",
+   105.0
+  ],
+  [
+   "2022-07-08",
+   95.0
+  ],
+  [
+   "2022-07-14",
+   107.5
+  ],
+  [
+   "2022-07-20",
+   107.5
+  ],
+  [
+   "2022-07-26",
+   107.5
+  ],
+  [
+   "2022-07-29",
+   116.5
+  ],
+  [
+   "2022-08-05",
+   117.5
+  ],
+  [
+   "2022-08-12",
+   117.5
+  ],
+  [
+   "2022-08-19",
+   117.5
+  ],
+  [
+   "2022-08-22",
+   117.5
+  ],
+  [
+   "2022-08-26",
+   118.5
+  ],
+  [
+   "2022-09-02",
+   116.5
+  ],
+  [
+   "2022-09-07",
+   116.5
+  ],
+  [
+   "2022-09-14",
+   115.0
+  ],
+  [
+   "2022-09-23",
+   115.0
+  ],
+  [
+   "2022-09-26",
+   115.0
+  ],
+  [
+   "2022-09-30",
+   105.0
+  ],
+  [
+   "2022-10-06",
+   107.0
+  ],
+  [
+   "2022-10-14",
+   107.0
+  ],
+  [
+   "2022-10-21",
+   104.0
+  ],
+  [
+   "2022-10-28",
+   105.0
+  ],
+  [
+   "2022-11-04",
+   110.0
+  ],
+  [
+   "2022-11-11",
+   112.5
+  ],
+  [
+   "2022-11-18",
+   112.5
+  ],
+  [
+   "2022-11-25",
+   110.0
+  ],
+  [
+   "2022-12-02",
+   112.5
+  ],
+  [
+   "2022-12-08",
+   112.5
+  ],
+  [
+   "2022-12-16",
+   111.5
+  ],
+  [
+   "2022-12-21",
+   110.0
+  ],
+  [
+   "2022-12-29",
+   112.5
+  ],
+  [
+   "2023-01-06",
+   125.0
+  ],
+  [
+   "2023-01-13",
+   122.5
+  ],
+  [
+   "2023-01-20",
+   129.0
+  ],
+  [
+   "2023-01-27",
+   132.5
+  ],
+  [
+   "2023-02-03",
+   130.0
+  ],
+  [
+   "2023-02-10",
+   130.0
+  ],
+  [
+   "2023-02-17",
+   130.0
+  ],
+  [
+   "2023-02-24",
+   130.0
+  ],
+  [
+   "2023-03-03",
+   130.0
+  ],
+  [
+   "2023-03-10",
+   130.0
+  ],
+  [
+   "2023-03-17",
+   117.5
+  ],
+  [
+   "2023-03-23",
+   117.5
+  ],
+  [
+   "2023-03-30",
+   115.0
+  ],
+  [
+   "2023-04-06",
+   112.5
+  ],
+  [
+   "2023-04-14",
+   117.5
+  ],
+  [
+   "2023-04-21",
+   117.5
+  ],
+  [
+   "2023-04-28",
+   106.0
+  ],
+  [
+   "2023-05-05",
+   106.0
+  ],
+  [
+   "2023-05-12",
+   106.5
+  ],
+  [
+   "2023-05-17",
+   107.5
+  ],
+  [
+   "2023-05-26",
+   107.5
+  ],
+  [
+   "2023-06-01",
+   107.5
+  ],
+  [
+   "2023-06-07",
+   107.5
+  ],
+  [
+   "2023-06-16",
+   107.5
+  ],
+  [
+   "2023-06-23",
+   107.5
+  ],
+  [
+   "2023-06-30",
+   105.0
+  ],
+  [
+   "2023-07-07",
+   110.0
+  ],
+  [
+   "2023-07-14",
+   105.0
+  ],
+  [
+   "2023-07-21",
+   112.5
+  ],
+  [
+   "2023-07-28",
+   110.0
+  ],
+  [
+   "2023-08-04",
+   110.0
+  ],
+  [
+   "2023-08-11",
+   110.0
+  ],
+  [
+   "2023-08-18",
+   110.0
+  ],
+  [
+   "2023-08-21",
+   110.0
+  ],
+  [
+   "2023-08-24",
+   110.0
+  ],
+  [
+   "2023-08-31",
+   112.5
+  ],
+  [
+   "2023-09-07",
+   112.5
+  ],
+  [
+   "2023-09-14",
+   112.5
+  ],
+  [
+   "2023-09-22",
+   112.5
+  ],
+  [
+   "2023-09-29",
+   112.5
+  ],
+  [
+   "2023-10-06",
+   112.5
+  ],
+  [
+   "2023-10-13",
+   112.5
+  ],
+  [
+   "2023-10-19",
+   112.5
+  ],
+  [
+   "2023-10-27",
+   105.0
+  ],
+  [
+   "2023-11-03",
+   105.0
+  ],
+  [
+   "2023-11-09",
+   105.0
+  ],
+  [
+   "2023-11-17",
+   105.0
+  ],
+  [
+   "2023-11-22",
+   102.5
+  ],
+  [
+   "2023-12-01",
+   105.0
+  ],
+  [
+   "2023-12-08",
+   105.0
+  ],
+  [
+   "2023-12-15",
+   155.0
+  ],
+  [
+   "2023-12-22",
+   145.0
+  ],
+  [
+   "2023-12-28",
+   147.5
+  ],
+  [
+   "2024-01-05",
+   145.0
+  ],
+  [
+   "2024-01-12",
+   150.0
+  ],
+  [
+   "2024-01-19",
+   150.0
+  ],
+  [
+   "2024-01-25",
+   152.5
+  ],
+  [
+   "2024-02-02",
+   157.5
+  ],
+  [
+   "2024-02-09",
+   185.0
+  ],
+  [
+   "2024-02-16",
+   180.0
+  ],
+  [
+   "2024-02-23",
+   180.0
+  ],
+  [
+   "2024-03-01",
+   180.0
+  ],
+  [
+   "2024-03-08",
+   167.5
+  ],
+  [
+   "2024-03-15",
+   180.0
+  ],
+  [
+   "2024-03-22",
+   177.5
+  ],
+  [
+   "2024-03-28",
+   167.5
+  ],
+  [
+   "2024-04-05",
+   170.0
+  ],
+  [
+   "2024-04-12",
+   193.0
+  ],
+  [
+   "2024-04-19",
+   187.5
+  ],
+  [
+   "2024-04-26",
+   190.0
+  ],
+  [
+   "2024-05-03",
+   190.0
+  ],
+  [
+   "2024-05-10",
+   175.0
+  ],
+  [
+   "2024-05-17",
+   182.5
+  ],
+  [
+   "2024-05-24",
+   190.0
+  ],
+  [
+   "2024-05-31",
+   185.0
+  ],
+  [
+   "2024-06-07",
+   176.0
+  ],
+  [
+   "2024-06-14",
+   176.0
+  ],
+  [
+   "2024-06-21",
+   190.0
+  ],
+  [
+   "2024-06-28",
+   182.5
+  ],
+  [
+   "2024-07-05",
+   182.5
+  ],
+  [
+   "2024-07-12",
+   197.5
+  ],
+  [
+   "2024-07-19",
+   187.5
+  ],
+  [
+   "2024-07-26",
+   177.5
+  ],
+  [
+   "2024-08-02",
+   175.0
+  ],
+  [
+   "2024-08-09",
+   180.0
+  ],
+  [
+   "2024-08-16",
+   182.5
+  ],
+  [
+   "2024-08-23",
+   195.0
+  ],
+  [
+   "2024-08-30",
+   196.0
+  ],
+  [
+   "2024-09-06",
+   186.0
+  ],
+  [
+   "2024-09-13",
+   203.0
+  ],
+  [
+   "2024-09-20",
+   245.0
+  ],
+  [
+   "2024-09-27",
+   250.0
+  ],
+  [
+   "2024-10-04",
+   270.0
+  ],
+  [
+   "2024-10-11",
+   285.0
+  ],
+  [
+   "2024-10-18",
+   260.0
+  ],
+  [
+   "2024-10-25",
+   260.0
+  ],
+  [
+   "2024-11-01",
+   253.0
+  ],
+  [
+   "2024-11-08",
+   306.0
+  ],
+  [
+   "2024-11-15",
+   305.0
+  ],
+  [
+   "2024-11-22",
+   313.0
+  ],
+  [
+   "2024-11-29",
+   305.0
+  ],
+  [
+   "2024-12-06",
+   309.0
+  ],
+  [
+   "2024-12-13",
+   345.0
+  ],
+  [
+   "2024-12-20",
+   345.0
+  ],
+  [
+   "2024-12-24",
+   345.0
+  ],
+  [
+   "2024-12-27",
+   352.0
+  ],
+  [
+   "2025-01-03",
+   365.0
+  ],
+  [
+   "2025-01-10",
+   360.0
+  ],
+  [
+   "2025-01-17",
+   333.0
+  ],
+  [
+   "2025-01-24",
+   320.0
+  ],
+  [
+   "2025-01-31",
+   345.0
+  ],
+  [
+   "2025-02-07",
+   335.0
+  ],
+  [
+   "2025-02-14",
+   355.0
+  ],
+  [
+   "2025-02-21",
+   350.0
+  ],
+  [
+   "2025-02-28",
+   360.0
+  ],
+  [
+   "2025-03-07",
+   310.0
+  ],
+  [
+   "2025-03-14",
+   280.0
+  ],
+  [
+   "2025-03-21",
+   325.0
+  ],
+  [
+   "2025-03-28",
+   304.0
+  ],
+  [
+   "2025-04-04",
+   262.5
+  ],
+  [
+   "2025-04-11",
+   290.0
+  ],
+  [
+   "2025-04-17",
+   330.0
+  ],
+  [
+   "2025-04-25",
+   335.0
+  ],
+  [
+   "2025-05-02",
+   342.5
+  ],
+  [
+   "2025-05-09",
+   327.5
+  ],
+  [
+   "2025-05-16",
+   335.0
+  ],
+  [
+   "2025-05-23",
+   305.0
+  ],
+  [
+   "2025-05-30",
+   330.0
+  ],
+  [
+   "2025-06-06",
+   322.5
+  ],
+  [
+   "2025-06-13",
+   315.0
+  ],
+  [
+   "2025-06-20",
+   317.5
+  ],
+  [
+   "2025-06-27",
+   315.0
+  ],
+  [
+   "2025-07-04",
+   330.0
+  ],
+  [
+   "2025-07-11",
+   335.0
+  ],
+  [
+   "2025-07-18",
+   317.5
+  ],
+  [
+   "2025-07-25",
+   307.5
+  ],
+  [
+   "2025-08-01",
+   315.0
+  ],
+  [
+   "2025-08-08",
+   319.0
+  ],
+  [
+   "2025-08-15",
+   305.0
+  ],
+  [
+   "2025-08-22",
+   300.0
+  ],
+  [
+   "2025-08-29",
+   315.0
+  ],
+  [
+   "2025-09-05",
+   305.0
+  ],
+  [
+   "2025-09-12",
+   335.0
+  ],
+  [
+   "2025-09-19",
+   317.5
+  ],
+  [
+   "2025-09-26",
+   310.0
+  ],
+  [
+   "2025-10-03",
+   307.5
+  ],
+  [
+   "2025-10-10",
+   292.5
+  ],
+  [
+   "2025-10-17",
+   280.0
+  ],
+  [
+   "2025-10-24",
+   285.0
+  ],
+  [
+   "2025-10-31",
+   287.5
+  ],
+  [
+   "2025-11-07",
+   282.5
+  ],
+  [
+   "2025-11-14",
+   262.5
+  ],
+  [
+   "2025-11-21",
+   262.5
+  ],
+  [
+   "2025-11-28",
+   277.5
+  ],
+  [
+   "2025-12-05",
+   285.0
+  ],
+  [
+   "2025-12-12",
+   292.5
+  ],
+  [
+   "2025-12-19",
+   230.0
+  ],
+  [
+   "2025-12-24",
+   225.0
+  ],
+  [
+   "2026-01-02",
+   222.5
+  ],
+  [
+   "2026-01-09",
+   215.0
+  ],
+  [
+   "2026-01-16",
+   192.5
+  ],
+  [
+   "2026-01-23",
+   225.0
+  ],
+  [
+   "2026-01-30",
+   235.0
+  ],
+  [
+   "2026-02-06",
+   235.0
+  ],
+  [
+   "2026-02-13",
+   245.0
+  ],
+  [
+   "2026-02-20",
+   235.0
+  ],
+  [
+   "2026-02-27",
+   225.0
+  ],
+  [
+   "2026-03-06",
+   172.5
+  ],
+  [
+   "2026-03-13",
+   167.5
+  ],
+  [
+   "2026-03-20",
+   155.0
+  ],
+  [
+   "2026-03-27",
+   175.0
+  ],
+  [
+   "2026-04-02",
+   187.5
+  ],
+  [
+   "2026-04-10",
+   195.0
+  ],
+  [
+   "2026-04-17",
+   195.0
+  ],
+  [
+   "2026-04-24",
+   197.5
+  ],
+  [
+   "2026-05-01",
+   202.5
+  ],
+  [
+   "2026-05-08",
+   202.5
+  ],
+  [
+   "2026-05-15",
+   205.0
+  ],
+  [
+   "2026-05-22",
+   197.5
+  ],
+  [
+   "2026-05-29",
+   197.5
+  ],
+  [
+   "2026-06-05",
+   200.0
+  ],
+  [
+   "2026-06-12",
+   197.5
+  ],
+  [
+   "2026-06-19",
+   200.0
+  ],
+  [
+   "2026-06-26",
+   200.0
+  ],
+  [
+   "2026-07-03",
+   200.0
+  ],
+  [
+   "2026-07-10",
+   200.0
+  ],
+  [
+   "2026-07-17",
+   197.5
+  ],
+  [
+   "2026-07-24",
+   185.0
+  ],
+  [
+   "2026-07-31",
+   185.0
+  ],
+  [
+   "2026-08-07",
+   185.0
+  ],
+  [
+   "2026-08-14",
+   200.0
+  ],
+  [
+   "2026-08-21",
+   185.0
+  ],
+  [
+   "2026-08-28",
+   197.5
+  ],
+  [
+   "2026-09-04",
+   190.0
+  ],
+  [
+   "2026-09-11",
+   187.5
+  ],
+  [
+   "2026-09-18",
+   175.0
+  ],
+  [
+   "2026-09-25",
+   170.0
+  ],
+  [
+   "2026-10-02",
+   172.5
+  ],
+  [
+   "2026-10-09",
+   197.5
+  ],
+  [
+   "2026-10-16",
+   205.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-12-08",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "flat",
+   "s": -1,
+   "q": "Trading has continued broadly in line with the Board's expectations as set out in the Company's interim results announcement of 13 July 2021.",
+   "file": "20211208_SNX_Trading-Update.md"
+  },
+  {
+   "d": "2022-02-22",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -1,
+   "q": "Based on this, the Board is confident that Synectics' trajectory of revenue growth in the Systems Division will resume in the current financial year, though timing does remain uncertain and is likely to be second half weighted.",
+   "file": "20220222_SNX_Final-Results.md"
+  },
+  {
+   "d": "2022-04-20",
+   "doc": "AGM",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 1,
+   "q": "The Systems division has begun the financial year slightly ahead of the Board's expectations, mainly as a result of an improved contribution from public space and infrastructure security systems in the UK, including the National Grid contract which was announced recently, and also encouraging progress in global Oil & Gas markets.",
+   "file": "20220420_SNX_AGM-Statement.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2022-06-14",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading in H1 2022 was in line with the Board's expectations and produced a considerable positive turnaround from the same period last year, with operating profits expected to be at a broadly similar level to the seasonally stronger second half of last year.",
+   "file": "20220614_SNX_Trading-Update.md"
+  },
+  {
+   "d": "2022-07-12",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Overall, the Board is pleased with Synectics' performance in H1 2022 and expects a continuation of the trajectory of improvement in the second half of this financial year.",
+   "file": "20220712_SNX_Half-year-Report.md"
+  },
+  {
+   "d": "2022-12-13",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Second half profit is expected to be higher than in the first half, resulting in an underlying profit for the full year being slightly ahead of market expectations.",
+   "file": "20221213_SNX_Trading-Update.md"
+  },
+  {
+   "d": "2023-02-22",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "With recovering markets, a sound order book and a strong pipeline of opportunities, the Board is confident of further profitable growth this year.",
+   "file": "20230222_SNX_Final-Results.md"
+  },
+  {
+   "d": "2023-04-27",
+   "doc": "AGM",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "These trends underpin the Board's continued expectations for a solid improvement in trading results this year, but as highlighted on 22 February 2023 in the announcement of the Company's audited final results for the year ended 30 November 2022, timing of projects coupled with longer lead-times mean that results for FY2023 are now anticipated to be more heavily weighted to the second half of the year than previously expected.",
+   "file": "20230427_SNX_AGM-Statement.md"
+  },
+  {
+   "d": "2023-06-19",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Company's financial results for the year ending 30 November 2023 are expected to be weighted significantly to the seasonally stronger second half of the year (\"H2 2023\").",
+   "file": "20230619_SNX_Trading-Update-and-Notification-of-Results.md"
+  },
+  {
+   "d": "2023-07-11",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board expects the Company's results for the year ending 30 November 2023 to be in line with market expectations, despite being weighted to the seasonally stronger H2.",
+   "file": "20230711_SNX_Half-year-Report.md"
+  },
+  {
+   "d": "2023-12-11",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 3,
+   "q": "The Company expects results for FY 2023 to be materially ahead of market expectations, reflecting strong trading in the second half, particularly in the oil & gas market.",
+   "file": "20231211_SNX_Trading-Update.md"
+  },
+  {
+   "d": "2024-02-27",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Synectics delivered a strong performance in FY 2023 and, operating in strong and growing specialist markets, the Board is confident that the Company will continue to deliver further progress in this year and beyond.",
+   "file": "20240227_SNX_Final-Results.md"
+  },
+  {
+   "d": "2024-04-24",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Company has started the year well, underpinned by a strong order book, and is trading in line with market expectations for the year ending 30 November 2024 (\"FY 2024\").",
+   "file": "20240424_SNX_AGM-Statement.md"
+  },
+  {
+   "d": "2024-06-04",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 1,
+   "q": "Following the early delivery of a number of projects by the Group's Systems division in H1 2024, the Board expects a more evenly weighted financial performance in FY 2024 rather than being weighted to the second half of the year as previously expected and as in prior years.",
+   "file": "20240604_SNX_Trading-Update.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2024-07-09",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Board expects financial performance in FY 2024 to be more evenly weighted than in prior years and comfortably in line with market expectations*",
+   "file": "20240709_SNX_Half-year-Report.md"
+  },
+  {
+   "d": "2024-09-16",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 3,
+   "q": "As a result, the Board expects the Company's underlying PBT for FY 2024 to be materially ahead of market expectations*.",
+   "file": "20240916_SNX_Trading-Update.md"
+  },
+  {
+   "d": "2024-12-09",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 3,
+   "q": "The Company expects profit before tax for FY 2024 to be materially ahead of market expectations*, reflecting continued momentum in the second half of the year across all of its market verticals.",
+   "file": "20241209_SNX_Trading-Update.md"
+  },
+  {
+   "d": "2025-03-04",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 0,
+   "q": "These investments, which lay the foundations to unlock future opportunities and position the Group for sustained long-term success, will be reflected in FY25; while we expect to maintain double digit growth in FY25 and for the results to increase in line with upgraded market expectations, full margin potential will be achieved in future years when the returns on these investments are delivered.",
+   "file": "20250304_SNX_Final-Results.md"
+  },
+  {
+   "d": "2025-05-07",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading to date in the year ending 30 November 2025 is in line with the Board's expectations and the outlook for the full year remains consistent with previous market guidance[1] provided at the time of the release of the Company's audited final results on 4 March 2025.",
+   "file": "20250507_SNX_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2025-06-09",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Synectics has continued to see solid order intake and ongoing new business momentum across the Group in H1 2025, with trading for the year ending 30 November 2025 (\"FY 2025\") comfortably in line with market expectations*, in addition to maintaining a strong cash position.",
+   "file": "20250609_SNX_Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2025-07-08",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading remains comfortably in line with market expectations for FY 20251, and we expect revenue to be broadly balanced between the first and second halves.",
+   "file": "20250708_SNX_Half-year-Report.md"
+  },
+  {
+   "d": "2025-10-16",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 2,
+   "q": "The Company is pleased to confirm that trading for FY 2025 is expected to deliver revenues of approximately £67m (FY24: £55.8m) and PBT of no less than £5.7m (excluding the share-based payment charge) (FY24: £4.7m).",
+   "file": "20251016_SNX_Trading-Update.md"
+  },
+  {
+   "d": "2025-12-17",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Revenue for the year is expected to be approximately £68 million (FY 2024: £55.8 million), with adjusted* EBITDA of £8.5 million (FY 2024: £6.3 million) and adjusted* PBT of no less than £6.0 million (FY 2024: £4.7 million).",
+   "file": "20251217_SNX_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2026-03-03",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -2,
+   "q": "Group revenue performance in FY26 is expected to be around 10% lower than FY25 with growth offset by the absence of the significant one-off contract delivered in FY25, alongside increased investment aligned with our medium and long-term growth priorities.",
+   "file": "20260303_SNX_Final-Results-and-Strategic-Update.md"
+  },
+  {
+   "d": "2026-05-18",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -3,
+   "q": "Subject to energy sector activity normalising through the second half, the Board currently expects trading for FY 2026 to be in line with market expectations2.",
+   "file": "20260518_SNX_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2026-08-18",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -2,
+   "q": "Full-year adjusted EBITDA is expected to be in the range of £3.7 million to current market expectations5, with the range principally reflecting uncertainty over the timing and conversion of the Energy sales pipeline.",
+   "file": "20260818_SNX_Interim-results-for-the-6-months-ended-31-May-2026.md"
+  },
+  {
+   "d": "2026-10-06",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "The Board is pleased to report that FY26 revenue is expected to be in line with current market expectations, with adjusted EBITDA at the top end of the previously communicated range of £3.7 million to £4.1 million.",
+   "file": "20261006_SNX_Trading-Update.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-06",
+  "doc": "Q3 TU",
+  "file": "20261006_SNX_Trading-Update.md",
+  "vs": "Oct TU Oct-25 · H1 R Aug-26 · AGM May-26 · FY R Mar-26",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "FY27 view: Mar-26 FY R “Double-digit revenue growth is expected in FY27” → Oct-26 “It remains confident in the Group’s growth opportunity as it enters FY27.”, no growth figure",
+    "span": "Headline figure Mar-26; words only since Aug-26 (“accelerated growth from FY27”)"
+   },
+   {
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "Revenue: Oct-25 TU “revenues of approximately £67m” → Oct-26 “FY26 revenue is expected to be in line with current market expectations”, with no figure and no consensus footnote (May-26 gave “revenue of £62.0m and adjusted EBITDA of £4.1m”)",
+    "span": "Oct-25 → Oct-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Pushed out",
+    "text": "Aug-26 H1 R flagged “uncertainty over the timing and conversion of the Energy sales pipeline” → Oct-26: “some of the Energy opportunities we had expected to contribute in FY26 are now moving into the new financial year”",
+    "span": "FY26 → FY27"
+   },
+   {
+    "sev": "grey",
+    "type": "Went quiet",
+    "text": "Order book: Aug-26 H1 R “stable order book as at 31 May 2026 of £26.4 million”; Oct-25 TU “continues to build a solid order book” → Oct-26 TU makes no mention of the order book",
+    "span": "Oct-25, Aug-26 → Oct-26"
+   }
+  ]
+ }
+}

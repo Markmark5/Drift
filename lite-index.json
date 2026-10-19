@@ -88,6 +88,27 @@
    "marks": 30
   },
   {
+   "ticker": "AVAP",
+   "company": "Avation PLC",
+   "chart": "lite/AVAP.json?v=2026-10-19.2cce",
+   "scored": "2026-10-19",
+   "marks": 25
+  },
+  {
+   "ticker": "AVCT",
+   "company": "Avacta Group PLC",
+   "chart": "lite/AVCT.json?v=2026-10-19.fe57",
+   "scored": "2026-10-19",
+   "marks": 26
+  },
+  {
+   "ticker": "AVG",
+   "company": "Avingtrans PLC",
+   "chart": "lite/AVG.json?v=2026-10-19.8980",
+   "scored": "2026-10-19",
+   "marks": 23
+  },
+  {
    "ticker": "AVON",
    "company": "Avon Technologies PLC",
    "chart": "lite/AVON.json?v=2026-10-19.08d0",
@@ -158,6 +179,13 @@
    "marks": 21
   },
   {
+   "ticker": "CIZ",
+   "company": "Cizzle Biotechnology PLC",
+   "chart": "lite/CIZ.json?v=2026-10-19.3c06",
+   "scored": "2026-10-19",
+   "marks": 11
+  },
+  {
    "ticker": "CKN",
    "company": "Clarkson PLC",
    "chart": "lite/CKN.json?v=2026-10-19.d3a2",
@@ -165,11 +193,25 @@
    "marks": 23
   },
   {
+   "ticker": "CLBS",
+   "company": "Celebrus Technologies plc",
+   "chart": "lite/CLBS.json?v=2026-10-19.4aa2",
+   "scored": "2026-10-19",
+   "marks": 25
+  },
+  {
    "ticker": "CNS",
    "company": "Corero Network Security plc",
    "chart": "lite/CNS.json?v=2026-10-19.a7a6",
    "scored": "2026-10-19",
    "marks": 24
+  },
+  {
+   "ticker": "CODE",
+   "company": "Northcoders Group PLC",
+   "chart": "lite/CODE.json?v=2026-10-19.f1e4",
+   "scored": "2026-10-19",
+   "marks": 21
   },
   {
    "ticker": "DFCH",
@@ -200,11 +242,25 @@
    "marks": 20
   },
   {
+   "ticker": "ENSI",
+   "company": "EnSilica plc",
+   "chart": "lite/ENSI.json?v=2026-10-19.4362",
+   "scored": "2026-10-19",
+   "marks": 35
+  },
+  {
    "ticker": "ENT",
    "company": "Entain PLC",
    "chart": "lite/ENT.json?v=2026-10-18.0d95",
    "scored": "2026-10-18",
    "marks": 48
+  },
+  {
+   "ticker": "EVPL",
+   "company": "Everplay Group PLC",
+   "chart": "lite/EVPL.json?v=2026-10-19.5d78",
+   "scored": "2026-10-19",
+   "marks": 25
   },
   {
    "ticker": "FAN",
@@ -235,6 +291,13 @@
    "marks": 32
   },
   {
+   "ticker": "IGG",
+   "company": "IG Group Holdings PLC",
+   "chart": "lite/IGG.json?v=2026-10-19.3fa8",
+   "scored": "2026-10-19",
+   "marks": 23
+  },
+  {
    "ticker": "IGP",
    "company": "Intercede Group PLC",
    "chart": "lite/IGP.json?v=2026-10-19.4d4f",
@@ -247,6 +310,13 @@
    "chart": "lite/IMB.json?v=2026-10-19.7b44",
    "scored": "2026-10-19",
    "marks": 21
+  },
+  {
+   "ticker": "INF",
+   "company": "Informa PLC",
+   "chart": "lite/INF.json?v=2026-10-19.92cf",
+   "scored": "2026-10-19",
+   "marks": 32
   },
   {
    "ticker": "IOF",
@@ -268,6 +338,13 @@
    "chart": "lite/ITM.json?v=2026-10-19.ff7f",
    "scored": "2026-10-19",
    "marks": 25
+  },
+  {
+   "ticker": "JDW",
+   "company": "Wetherspoon (JD) PLC",
+   "chart": "lite/JDW.json?v=2026-10-19.1949",
+   "scored": "2026-10-19",
+   "marks": 33
   },
   {
    "ticker": "JHD",
@@ -355,6 +432,13 @@
    "marks": 31
   },
   {
+   "ticker": "PEEL",
+   "company": "Peel Hunt Limited",
+   "chart": "lite/PEEL.json?v=2026-10-19.af27",
+   "scored": "2026-10-19",
+   "marks": 28
+  },
+  {
    "ticker": "PMI",
    "company": "Premier Miton Group PLC",
    "chart": "lite/PMI.json?v=2026-10-18.1edb",
@@ -376,11 +460,32 @@
    "marks": 23
   },
   {
+   "ticker": "PZC",
+   "company": "PZ Cussons plc",
+   "chart": "lite/PZC.json?v=2026-10-19.ad09",
+   "scored": "2026-10-19",
+   "marks": 24
+  },
+  {
+   "ticker": "QTX",
+   "company": "Quartix Technologies plc",
+   "chart": "lite/QTX.json?v=2026-10-19.8b9b",
+   "scored": "2026-10-19",
+   "marks": 31
+  },
+  {
    "ticker": "RCH",
    "company": "Reach PLC",
    "chart": "lite/RCH.json?v=2026-10-19.e369",
    "scored": "2026-10-19",
    "marks": 24
+  },
+  {
+   "ticker": "RGG",
+   "company": "RentGuarantor Holdings PLC",
+   "chart": "lite/RGG.json?v=2026-10-19.6af9",
+   "scored": "2026-10-19",
+   "marks": 11
   },
   {
    "ticker": "RIO",
@@ -395,6 +500,13 @@
    "chart": "lite/RNK.json?v=2026-10-18.4356",
    "scored": "2026-10-18",
    "marks": 24
+  },
+  {
+   "ticker": "RNWH",
+   "company": "Renew Holdings PLC",
+   "chart": "lite/RNWH.json?v=2026-10-19.7009",
+   "scored": "2026-10-19",
+   "marks": 26
   },
   {
    "ticker": "RWA",
@@ -418,6 +530,13 @@
    "marks": 25
   },
   {
+   "ticker": "SNX",
+   "company": "Synectics PLC",
+   "chart": "lite/SNX.json?v=2026-10-19.2037",
+   "scored": "2026-10-19",
+   "marks": 27
+  },
+  {
    "ticker": "SQZ",
    "company": "Serica Energy PLC",
    "chart": "lite/SQZ.json?v=2026-10-19.dea3",
@@ -425,9 +544,23 @@
    "marks": 35
   },
   {
+   "ticker": "SSE",
+   "company": "SSE PLC",
+   "chart": "lite/SSE.json?v=2026-10-19.1671",
+   "scored": "2026-10-19",
+   "marks": 28
+  },
+  {
    "ticker": "SSPG",
    "company": "SSP Group PLC",
    "chart": "lite/SSPG.json?v=2026-10-19.d854",
+   "scored": "2026-10-19",
+   "marks": 25
+  },
+  {
+   "ticker": "TEP",
+   "company": "Telecom Plus PLC",
+   "chart": "lite/TEP.json?v=2026-10-19.7a9d",
    "scored": "2026-10-19",
    "marks": 25
   },
@@ -451,6 +584,13 @@
    "chart": "lite/TPK.json?v=2026-10-19.fcf2",
    "scored": "2026-10-19",
    "marks": 24
+  },
+  {
+   "ticker": "TPT",
+   "company": "Topps Tiles PLC",
+   "chart": "lite/TPT.json?v=2026-10-19.7422",
+   "scored": "2026-10-19",
+   "marks": 30
   },
   {
    "ticker": "TPX",
