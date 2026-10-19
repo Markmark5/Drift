@@ -1,6 +1,6 @@
 {
  "ticker": "VIC",
- "v": "2026-10-19.e3a1",
+ "v": "2026-10-19.674e",
  "ccy": "GBX",
  "src": "Yahoo VIC.L weekly",
  "adj": [],
@@ -1051,7 +1051,7 @@
   ],
   [
    "2026-10-19",
-   89.4194
+   88.4
   ]
  ],
  "marks": [
@@ -1070,7 +1070,7 @@
    "fy": "FY22",
    "g": "flat",
    "s": 0,
-   "q": "As we look to the second half of the financial year, we note that the comparative period performance for revenue eases and so we expect to return to having modest year-on-year growth through H2 2022.",
+   "q": "Victorian Plumbing has continued to trade in line with the dynamic set out in the announcement of our full year results and trading update on 9 December 2021.",
    "file": "20220224_VIC_AGM-Trading-update.md"
   },
   {
@@ -1083,12 +1083,21 @@
    "file": "20220517_VIC_HALF-YEAR-RESULTS.md"
   },
   {
-   "d": "2022-12-06",
-   "doc": "FY R",
+   "d": "2022-10-06",
+   "doc": "YE-TU",
    "fy": "FY22",
    "g": "RAISE",
    "s": 2,
-   "q": "Results ahead of expectations, with H2 revenue growth as the Group demonstrates continued trading momentum and further market share gains, supported by a robust balance sheet",
+   "q": "The financial year finished positively with revenue, earnings, and cash flow all ahead of consensus market expectations.",
+   "file": "20221006_VIC_Full-Year-Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2022-12-06",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "T he Group has had a strong start to FY23 with 10% revenue growth to date, whilst maintaining H2 gross profit margin and with lower marketing spend versus the comparative period last year",
    "file": "20221206_VIC_Full-Year-Results.md"
   },
   {
@@ -1115,7 +1124,7 @@
    "fy": "FY23",
    "g": "flat",
    "s": 0,
-   "q": "Adjusted EBITDA for FY23 is anticipated to be in line with market expectations.",
+   "q": "Profitability has improved year-on-year, driven by a product mix shift towards Victorian Plumbing own-brand ranges as well as by reduced shipping costs and favourable foreign exchange movements. Adjusted EBITDA for FY23 is anticipated to be in line with market expectations.",
    "file": "20231005_VIC_Full-Year-Trading-Update.md"
   },
   {
@@ -1128,6 +1137,15 @@
    "file": "20231122_VIC_Full-Year-Results.md"
   },
   {
+   "d": "2024-02-27",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The increase in own brand product sales continues to improve the Group's gross margin and, together with stable marketing spend efficiency, enables us to remain confident in delivering full year adjusted EBITDA in line with market expectations.",
+   "file": "20240227_VIC_AGM-Trading-Update-&-Notice-of-Results.md"
+  },
+  {
    "d": "2024-05-28",
    "doc": "H1 R",
    "fy": "FY24",
@@ -1138,22 +1156,49 @@
    "gnote": "discounted: Victoria Plum acquisition"
   },
   {
+   "d": "2024-10-15",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group is pleased to report that revenue for FY24 increased by c.4% on the prior year (decreased c.1% on a like-for-like basis, excluding the impact of the acquisition of Victoria Plum1). Adjusted EBITDA for FY24 is anticipated to be in line with market expectations.",
+   "file": "20241015_VIC_Full-Year-Trading-Update-&-Notice-of-Results.md"
+  },
+  {
    "d": "2025-01-15",
    "doc": "FY R",
    "fy": "FY25",
    "g": "flat",
    "s": 0,
-   "q": "We remain confident in delivering profit in line with full year market expectations.",
+   "q": "Through 2025 we will prioritise our expansion category growth plans and more confidently spend on efficient marketing to drive more volume. We remain confident in delivering profit in line with full year market expectations.",
    "file": "20250115_VIC_Full-Year-Results.md"
+  },
+  {
+   "d": "2025-02-25",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Despite continuing UK consumer uncertainty, as reported at our Full Year Results on 15 January 2025, the Board continues to remain confident in delivering profit in line with full year market expectations.",
+   "file": "20250225_VIC_AGM-Trading-Update-and-Notice-of-Results.md"
   },
   {
    "d": "2025-05-14",
    "doc": "H1 R",
    "fy": "FY25",
-   "g": "flat",
+   "g": "CUT",
    "s": -1,
    "q": "Taking into account the MFI set-up and launch costs, full year adjusted PBT is expected to be between £21m and £22m.",
    "file": "20250514_VIC_HALF-YEAR-RESULTS.md"
+  },
+  {
+   "d": "2025-10-07",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Adjusted PBT is also in line with the top end of market expectations at c.£21.8m (FY24: £23.1m), whilst cash conversion remains strong.",
+   "file": "20251007_VIC_Full-Year-Trading-Update-and-Notice-of-Results.md"
   },
   {
    "d": "2025-12-03",
@@ -1178,41 +1223,50 @@
    "doc": "H1 R",
    "fy": "FY26",
    "g": "flat",
-   "s": -1,
+   "s": 0,
    "q": "Despite factoring in a more subdued consumer environment for H2 2026, the Group anticipates full year revenue and adjusted PBT in line with current market expectations.",
    "file": "20260519_VIC_Half-year-Results.md"
+  },
+  {
+   "d": "2026-10-13",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Strong momentum has continued throughout the second half of FY26 with the Group delivering record revenue, further market share gains and adjusted PBT ahead of market expectations1.",
+   "file": "20261013_VIC_Full-Year-Trading-Update-and-Notice-of-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-05-19",
-  "doc": "H1 R",
-  "file": "20260519_VIC_Half-year-Results.md",
-  "vs": "H1 R May-25 · FY R Dec-25 · AGM TU Feb-26",
+  "rns": "2026-10-13",
+  "doc": "YE-TU",
+  "file": "20261013_VIC_Full-Year-Trading-Update-and-Notice-of-Results.md",
+  "vs": "YE-TU Oct-25 · H1 R May-26 · back to Oct-23",
   "lines": [
    {
     "sev": "red",
-    "type": "Went quiet",
-    "text": "Dec-25: “our expectation for MFI to incur an overall loss of between £2.6m and £3.4m in the current year remains unchanged” → May-26 no MFI loss figure; MFI revenue only “in line with our expectation”",
-    "span": "MFI loss guided May-25 (same loss as FY25) and Dec-25 → first gap"
-   },
-   {
-    "sev": "amber",
     "type": "Wording vs number",
-    "text": "May-26 “I am pleased to report a strong first half performance” beside “Adjusted PBT decreased 20.3% to £9.4m (H1 2025: £11.8m)” and adjusted diluted EPS down 17.9%",
-    "span": "H1 R May-26"
+    "text": "Dec-25: “our expectation for MFI to incur an overall loss of between £2.6m and £3.4m in the current year remains unchanged” → Oct-26 “a c.£4m loss at MFI (FY25: £2.5m loss)”, above the top of the range, beside “MFI has delivered a successful first full year of trading”",
+    "span": "MFI loss guided May-25 and Dec-25, figure dropped May-26 → outturn above guide"
    },
    {
     "sev": "amber",
-    "type": "Target dropped",
-    "text": "May-25: “the Board anticipates that Victorian Plumbing (excluding MFI) will continue to take market share, with revenue growth year-on-year in the mid-single digits” (three years to September 2028) → not mentioned in Dec-25 or May-26",
-    "span": "Given once, May-25 outlook"
+    "type": "Went quiet",
+    "text": "Oct-25: “Adjusted EBITDA increased by c.17% to c.£31.8m (FY24: £27.2m), in line with the top end of market expectations” → Oct-26 no adjusted EBITDA figure or EBITDA anchor; profit given only as adjusted PBT",
+    "span": "EBITDA anchor in YE-TU Oct-23, Oct-24, Oct-25 → first gap"
    },
    {
-    "sev": "amber",
-    "type": "Pushed out",
-    "text": "May-25: “Additional guidance will be provided following the MFI consumer launch in H1 FY26.” → May-26: “More detailed financial analysis will be provided for MFI at the full year preliminary announcement.”",
-    "span": "H1 FY26 → FY26 prelims"
+    "sev": "grey",
+    "type": "Went quiet",
+    "text": "Oct-25: “a record 1,080,000 orders delivered in the year” (Oct-24: “a record 1,021,000 orders delivered in the year”) → Oct-26 only “a c.13% increase in total orders”, no order count",
+    "span": "Order count given Oct-24, Oct-25 → dropped"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "New PBT split: “c.£26m profit at Victorian Plumbing (FY25: £24.3m profit)” and MFI loss re-quantified after the May-26 gap",
+    "span": "First segment PBT split in a YE-TU"
    }
   ]
  }

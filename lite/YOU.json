@@ -1,6 +1,6 @@
 {
  "ticker": "YOU",
- "v": "2026-10-19.3e2b",
+ "v": "2026-10-19.d2a1",
  "ccy": "GBX",
  "src": "Yahoo YOU.L weekly",
  "adj": [],
@@ -1051,18 +1051,45 @@
   ],
   [
    "2026-10-19",
-   295.8
+   293.2
   ]
  ],
  "marks": [
   {
-   "d": "2022-03-22",
-   "doc": "H1 R",
+   "d": "2022-01-28",
+   "doc": "H1 TU",
    "fy": "FY22",
    "g": "RAISE",
    "s": 1,
+   "q": "As a result of the trading position in the first half, we are pleased to report that the full year results to 31 July 2022 are expected to be slightly ahead of the Board's expectations.",
+   "file": "20220128_YOU_Pre-Close-Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2022-03-22",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 1,
    "q": "This gives us good momentum going into the second half of the year and we are confident we will end the year slightly ahead of the Board's expectations.",
    "file": "20220322_YOU_Results-for-the-six-months-to-31-January-2022.md"
+  },
+  {
+   "d": "2022-03-22",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "This gives us good momentum going into the second half of the year and we are confident we will end the year slightly ahead of the Board's expectations.",
+   "file": "20220322_YOU_Results-for-the-six-months-to-31-January-2022_2.md"
+  },
+  {
+   "d": "2022-07-29",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "CUT",
+   "s": -1,
+   "q": "YouGov has performed strongly during the period, with continued underlying1 growth across all divisions and geographies. Consequently, the Group's full year results are expected to be in line with the Board's expectations.",
+   "file": "20220729_YOU_Pre-Close-Trading-Update-and-Notice-of-Results.md"
   },
   {
    "d": "2022-10-11",
@@ -1070,8 +1097,26 @@
    "fy": "FY23",
    "g": "flat",
    "s": -1,
-   "q": "While the Board remains confident that profitability will meet current market expectations for FY23, achievement of our stretching FYP2 targets will be dependent on our ability to navigate the difficult market conditions being faced by organisations, including the rising cost of living and staff shortages in addition to maintaining strong sales momentum.",
+   "q": "While the Board remains confident that profitability will meet current market expectations for FY23, achievement of our stretching FYP2 targets will be dependent on our ability to navigate the difficult market conditions being faced by organisations,",
    "file": "20221011_YOU_Full-Year-Results-for-the-year-ended-31-July-2022.md"
+  },
+  {
+   "d": "2022-10-11",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "While the Board remains confident that profitability will meet current market expectations for FY23, achievement of our stretching FYP2 targets will be dependent on our ability to navigate the difficult market conditions being faced by organisations,",
+   "file": "20221011_YOU_Full-Year-Results-for-the-year-ended-31-July-2022_2.md"
+  },
+  {
+   "d": "2023-01-27",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Consequently, the Company remains confident of achieving top-line growth for the full year in line with current market expectations1, with margin expansion despite continued investment aimed at positioning the business for further growth in the next strategic growth plan (SP3).",
+   "file": "20230127_YOU_Pre-Close-Trading-Update-and-Notice-of-Results.md"
   },
   {
    "d": "2023-03-21",
@@ -1079,8 +1124,26 @@
    "fy": "FY23",
    "g": "flat",
    "s": 0,
-   "q": "While the overall weakness in macro sentiment may impact the speed and level of some client spending, our strong performance in the first half gives us confidence in maintaining the current sales momentum to end the financial year in line with current market expectations",
+   "q": "While the overall weakness in macro sentiment may impact the speed and level of some client spending, our strong performance in the first half gives us confidence in maintaining the current sales momentum to end the financial year in line with current market expectations3.",
    "file": "20230321_YOU_Results-for-the-six-months-to-31-January-2023.md"
+  },
+  {
+   "d": "2023-03-21",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "While the overall weakness in macro sentiment may impact the speed and level of some client spending, our strong performance in the first half gives us confidence in maintaining the current sales momentum to end the financial year in line with current market expectations3.",
+   "file": "20230321_YOU_Results-for-the-six-months-to-31-January-2023_2.md"
+  },
+  {
+   "d": "2023-07-28",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "The Group continues to focus on selling high-margin products and services and remains disciplined to ensure delivery of sustainable, profitable growth. Group revenue is expected to be at the lower end of the consensus range, reflecting underlying growth1 well ahead of the market.",
+   "file": "20230728_YOU_Pre-Close-Trading-Update-and-Notice-of-Results.md"
   },
   {
    "d": "2023-10-10",
@@ -1092,6 +1155,24 @@
    "file": "20231010_YOU_Full-Year-Results-for-the-year-ended-31-July-2023.md"
   },
   {
+   "d": "2023-10-10",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "After a temporary pause in the second half of FY23, we are seeing sales momentum from the technology sector starting to return. We expect overall Group performance to build through the course of the year as the new budget year begins for our clients.",
+   "file": "20231010_YOU_Full-Year-Results-for-the-year-ended-31-July-2023_2.md"
+  },
+  {
+   "d": "2024-02-02",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Therefore, we remain confident in achieving current market expectations for the full year, underpinned by our robust sales pipeline as of January 2024.",
+   "file": "20240202_YOU_Half-year-Trading-Update-and-Notice-of-Results.md"
+  },
+  {
    "d": "2024-03-26",
    "doc": "H1 R",
    "fy": "FY24",
@@ -1101,13 +1182,31 @@
    "file": "20240326_YOU_Results-for-the-six-months-to-31-January-2024.md"
   },
   {
+   "d": "2024-03-26",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "While the overall weakness in macro sentiment may impact the speed and level of some client spending, we remain confident in achieving current market expectations for the full year.",
+   "file": "20240326_YOU_Results-for-the-six-months-to-31-January-2024_2.md"
+  },
+  {
    "d": "2024-06-20",
-   "doc": "YE-TU",
+   "doc": "OPS",
    "fy": "FY24",
    "g": "CUT",
    "s": -3,
    "q": "While we have seen an improvement in the second half, the growth was below expectations; therefore we now expect full-year Group adjusted operating profit to be £41-44 million.",
    "file": "20240620_YOU_Update-on-Current-Trading.md"
+  },
+  {
+   "d": "2024-06-20",
+   "doc": "OPS",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "While we have seen an improvement in the second half, the growth was below expectations; therefore we now expect full-year Group adjusted operating profit to be £41-44 million.",
+   "file": "20240620_YOU_Update-on-Current-Trading_2.md"
   },
   {
    "d": "2024-08-06",
@@ -1119,6 +1218,15 @@
    "file": "20240806_YOU_Full-Year-Trading-Update.md"
   },
   {
+   "d": "2024-08-06",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "YouGov now expects Group reported revenues for FY24 to be approximately £327-330 million and Group adjusted operating profit to be £43-46 million, slightly ahead of our revised guidance communicated on 20 June 2024.",
+   "file": "20240806_YOU_Full-Year-Trading-Update_2.md"
+  },
+  {
    "d": "2024-10-29",
    "doc": "FY R",
    "fy": "FY25",
@@ -1126,6 +1234,15 @@
    "s": -1,
    "q": "We expect the Group to meet current market expectations for FY25, which will be second half weighted due to the ongoing restructuring process.",
    "file": "20241029_YOU_Preliminary-Full-Year-Results.md"
+  },
+  {
+   "d": "2024-10-29",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "We expect the Group to meet current market expectations for FY25, which will be second half weighted due to the ongoing restructuring process.",
+   "file": "20241029_YOU_Preliminary-Full-Year-Results_2.md"
   },
   {
    "d": "2024-11-06",
@@ -1137,13 +1254,40 @@
    "file": "20241106_YOU_Full-Year-Results-for-the-year-ended-31-July-2024.md"
   },
   {
+   "d": "2024-11-06",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "We expect the Group to meet current market expectations for FY25, which will be second half weighted due to the ongoing restructuring process.",
+   "file": "20241106_YOU_Full-Year-Results-for-the-year-ended-31-July-2024_2.md"
+  },
+  {
+   "d": "2025-02-04",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -2,
+   "q": "While our Data Products division, has returned to growth, we are mindful that market conditions remain challenging with pressure on client budgets and protracted sales cycles.",
+   "file": "20250204_YOU_Half-Year-Trading-Update-and-Notice-of-Results.md"
+  },
+  {
    "d": "2025-03-31",
    "doc": "H1 R",
    "fy": "FY25",
    "g": "flat",
-   "s": -1,
+   "s": 0,
    "q": "We expect the Group to meet current market expectations for FY25, with operating profit delivery being more equally balanced between H1 and H2 due to phasing.",
    "file": "20250331_YOU_Results-for-the-six-months-to-31-January-2025.md"
+  },
+  {
+   "d": "2025-03-31",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "We expect the Group to meet current market expectations for FY25, with operating profit delivery being more equally balanced between H1 and H2 due to phasing.",
+   "file": "20250331_YOU_Results-for-the-six-months-to-31-January-2025_2.md"
   },
   {
    "d": "2025-08-05",
@@ -1151,8 +1295,17 @@
    "fy": "FY25",
    "g": "flat",
    "s": 0,
-   "q": "YouGov expects strong reported revenue and adjusted operating profit for FY25, reflecting the full year impact of the CPS acquisition.",
+   "q": "YouGov expects strong reported revenue and adjusted operating profit for FY25, reflecting the full year impact of the CPS acquisition. On an underlying1 basis, the Group has delivered modest year-on-year revenue growth, as expected, aided by a return to growth in our Data Products business.",
    "file": "20250805_YOU_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2025-08-05",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "YouGov expects strong reported revenue and adjusted operating profit for FY25, reflecting the full year impact of the CPS acquisition. On an underlying1 basis, the Group has delivered modest year-on-year revenue growth, as expected, aided by a return to growth in our Data Products business.",
+   "file": "20250805_YOU_Full-Year-Trading-Update_2.md"
   },
   {
    "d": "2025-10-14",
@@ -1164,6 +1317,24 @@
    "file": "20251014_YOU_Results-for-the-year-ended-31-July-2025.md"
   },
   {
+   "d": "2025-10-14",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Looking to the year ahead, the Group expects to deliver modest progress at both revenue and adjusted operating profit level, which includes the impact of the incremental investments outlined above.",
+   "file": "20251014_YOU_Results-for-the-year-ended-31-July-2025_2.md"
+  },
+  {
+   "d": "2026-02-04",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -2,
+   "q": "As such, the Group continues to expect to deliver modest year-on-year revenue growth for the full year, while operating profit delivery will be dependent on cost management initiatives and the return on investments we are making in innovation of our product, technology and operations",
+   "file": "20260204_YOU_Half-Year-Trading-Update-and-Notice-of-Results.md"
+  },
+  {
    "d": "2026-03-24",
    "doc": "H1 R",
    "fy": "FY26",
@@ -1171,6 +1342,15 @@
    "s": -2,
    "q": "Taking into account the £6 million of incremental investment in Shopper, the Group expects to deliver adjusted operating profit of £52-56 million for FY26.",
    "file": "20260324_YOU_Results-for-the-six-months-to-31-January-2026.md"
+  },
+  {
+   "d": "2026-03-24",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Taking into account the £6 million of incremental investment in Shopper, the Group expects to deliver adjusted operating profit of £52-56 million for FY26.",
+   "file": "20260324_YOU_Results-for-the-six-months-to-31-January-2026_2.md"
   },
   {
    "d": "2026-08-06",
@@ -1182,6 +1362,15 @@
    "file": "20260806_YOU_FY-update,-banking-facility,-CEO-appointment.md"
   },
   {
+   "d": "2026-08-06",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Company expects to deliver full-year performance in line with the previously issued guidance at our HY26 results.",
+   "file": "20260806_YOU_FY-update,-banking-facility,-CEO-appointment_2.md"
+  },
+  {
    "d": "2026-10-13",
    "doc": "FY R",
    "fy": "FY27",
@@ -1190,6 +1379,15 @@
    "q": "The Group is confident in the delivery of adjusted operating profit growth for FY27 of between 7% and 12%, in line with current market expectations.",
    "file": "20261013_YOU_Results-for-the-year-ended-31-July-2026.md",
    "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2026-10-13",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group is confident in the delivery of adjusted operating profit growth for FY27 of between 7% and 12%, in line with current market expectations.",
+   "file": "20261013_YOU_Results-for-the-year-ended-31-July-2026_2.md"
   }
  ],
  "lite": true,
@@ -1197,31 +1395,31 @@
   "rns": "2026-10-13",
   "doc": "FY R",
   "file": "20261013_YOU_Results-for-the-year-ended-31-July-2026.md",
-  "vs": "FY R Oct-25 · back to Oct-23 · H1 R Mar-26 · FY update Aug-26",
+  "vs": "FY R Oct-25 · back to Oct-22 · H1 R Mar-26 · FY update Aug-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Restated",
-    "text": "Oct-25: “the total number of registered panellists had increased by 12% to 32 million” → Oct-26: “had increased by 8% to 31m, compared to 29m as at 31 July 2025” (FY25 restated to 28.8m on a new methodology); FY25 tax charge also restated by £2.7m",
-    "span": "Same period, Jul-25 panel: 32m → 29m"
+    "type": "Wording vs number",
+    "text": "Oct-25 FY26 guide: “modest progress at both revenue and adjusted operating profit level” → Oct-26: “FY26 results demonstrate a good performance, in line with the Group’s guidance” beside adjusted operating profit of £54.3m, down 11% (FY25 £60.7m)",
+    "span": "Guide reset to £52-56m at H1 R Mar-26; outturn measured against the cut guide"
    },
    {
     "sev": "amber",
     "type": "Target dropped",
-    "text": "Mar-26: “The Company will host a Capital Markets Day prior to the end of FY26 where we will provide an update on the VDP and YouGov in the age of AI.” → no CMD announced before 31 Jul 2026 and Oct-26 does not mention one",
-    "span": "Promised Mar-26; no RNS Apr–Jul 2026 in folder"
+    "text": "Mar-26: “we will provide an update at a Capital Markets Day before the end of the current financial year” → no Capital Markets Day RNS before 31 Jul 2026, and neither Aug-26 nor Oct-26 mentions one",
+    "span": "Promised twice in H1 R Mar-26; no RNS Apr–Jul 2026 in folder"
    },
    {
     "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Oct-26: “FY26 results demonstrate a good performance, in line with the Group’s guidance” beside adjusted operating profit of £54.3m, down 11% (FY25 £60.7m); Oct-25 had guided to “modest progress at both revenue and adjusted operating profit level”",
-    "span": "FY R Oct-25 guide → H1 R Mar-26 cut to £52-56m → FY R Oct-26"
+    "type": "Restated",
+    "text": "Oct-25: “the total number of registered panellists had increased by 12% to 32 million” → Oct-26: “had increased by 8% to 31m, compared to 29m as at 31 July 2025” after a methodology change (Mar-26 had reported “increased by 10% to 34 million” at Jan-26); FY25 tax charge also restated by £2.7m",
+    "span": "Same date, Jul-25 panel: 32m → 29m"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Oct-25 FY26 outlook: “modest progress at both revenue and adjusted operating profit level”, no market anchor → Oct-26 FY27: “adjusted operating profit of between £58m and £61m for FY27, in line with current market expectations”",
-    "span": "Market-expectations anchor for next year given Oct-22, Oct-23, Oct-24; gap Oct-25; back Oct-26 with a number"
+    "text": "Oct-25 FY26 view: “modest progress at both revenue and adjusted operating profit level”, no market anchor → Oct-26: “adjusted operating profit of between £58m and £61m for FY27, in line with current market expectations”",
+    "span": "Market anchor for next year given Oct-22, Oct-23, Oct-24; gap Oct-25; back Oct-26 with a number"
    }
   ]
  }

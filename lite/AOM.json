@@ -1,6 +1,6 @@
 {
  "ticker": "AOM",
- "v": "2026-10-19.9d46",
+ "v": "2026-10-19.44e5",
  "ccy": "GBX",
  "src": "Yahoo AOM.L weekly",
  "adj": [],
@@ -1051,7 +1051,7 @@
   ],
   [
    "2026-10-19",
-   104.4
+   104.0
   ]
  ],
  "marks": [
@@ -1061,8 +1061,17 @@
    "fy": "FY22",
    "g": "RAISE",
    "s": 1,
-   "q": "Increased confidence in delivering a positive full year performance, slightly ahead of Board expectations",
+   "q": "This, coupled with the performance that we have delivered in the first half give us increased confidence in delivering a positive full year performance, slightly ahead of the Board's expectations.",
    "file": "20211125_AOM_Interim-Results.md"
+  },
+  {
+   "d": "2021-11-25",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "This, coupled with the performance that we have delivered in the first half give us increased confidence in delivering a positive full year performance, slightly ahead of the Board's expectations.",
+   "file": "20211125_AOM_Interim-Results_2.md"
   },
   {
    "d": "2022-03-24",
@@ -1074,6 +1083,15 @@
    "file": "20220324_AOM_Trading-Update.md"
   },
   {
+   "d": "2022-03-24",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is pleased to confirm that trading is in line with previously upwardly revised management expectations, with a total of nine new logos added globally since the beginning of the financial year.",
+   "file": "20220324_AOM_Trading-Update_2.md"
+  },
+  {
    "d": "2022-07-06",
    "doc": "FY R",
    "fy": "FY23",
@@ -1083,13 +1101,31 @@
    "file": "20220706_AOM_Results-for-the-year-ended-31-March-2022.md"
   },
   {
+   "d": "2022-07-06",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading in the new year has begun in line with management expectations, with strong renewals, an additional new banking customer in the APAC region and significant expansions in several existing customers.",
+   "file": "20220706_AOM_Results-for-the-year-ended-31-March-2022_2.md"
+  },
+  {
    "d": "2022-09-07",
    "doc": "OPS",
    "fy": "FY23",
    "g": "flat",
    "s": 0,
-   "q": "The contract underpins the current growth expectations for the Group.",
+   "q": "securing a contract worth approximately £0.6m in incremental Annual Recurring Revenue (ARR) with a leading UK bank, within the organisation's financial crime function. The contract underpins the current growth expectations for the Group.",
    "file": "20220907_AOM_UK-bank-signs-contract-for-CaseworkiQ.md"
+  },
+  {
+   "d": "2022-09-07",
+   "doc": "OPS",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "securing a contract worth approximately £0.6m in incremental Annual Recurring Revenue (ARR) with a leading UK bank, within the organisation's financial crime function. The contract underpins the current growth expectations for the Group.",
+   "file": "20220907_AOM_UK-bank-signs-contract-for-CaseworkiQ_2.md"
   },
   {
    "d": "2022-10-25",
@@ -1101,6 +1137,15 @@
    "file": "20221025_AOM_Trading-Update-and-Notice-of-Half-Year-Results.md"
   },
   {
+   "d": "2022-10-25",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is pleased to report continued growth in the first half of FY23, with the Group trading in line with its expectations and on target to turn run rate EBITDA positive at the end of this current financial year.",
+   "file": "20221025_AOM_Trading-Update-and-Notice-of-Half-Year-Results_2.md"
+  },
+  {
    "d": "2022-11-29",
    "doc": "H1 R",
    "fy": "FY23",
@@ -1108,6 +1153,15 @@
    "s": 0,
    "q": "I am pleased to report on a period of continued growth, with the Group trading in line with the Board's expectations for the full year.",
    "file": "20221129_AOM_Interim-Results.md"
+  },
+  {
+   "d": "2022-11-29",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "I am pleased to report on a period of continued growth, with the Group trading in line with the Board's expectations for the full year.",
+   "file": "20221129_AOM_Interim-Results_2.md"
   },
   {
    "d": "2023-04-25",
@@ -1119,13 +1173,49 @@
    "file": "20230425_AOM_Full-Year-Trading-Update.md"
   },
   {
+   "d": "2023-04-25",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is pleased to announce that following continued positive trading in the second half of the year, it expects to deliver results for the year ahead of market expectations*.",
+   "file": "20230425_AOM_Full-Year-Trading-Update_2.md"
+  },
+  {
+   "d": "2023-04-25",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is pleased to announce that following continued positive trading in the second half of the year, it expects to deliver results for the year ahead of market expectations*.",
+   "file": "20230425_AOM_Full-Year-Trading-Update_3.md"
+  },
+  {
+   "d": "2023-04-25",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is pleased to announce that following continued positive trading in the second half of the year, it expects to deliver results for the year ahead of market expectations*.",
+   "file": "20230425_AOM_Full-Year-Trading-Update_4.md"
+  },
+  {
    "d": "2023-07-04",
    "doc": "FY R",
    "fy": "FY24",
    "g": "flat",
    "s": 0,
-   "q": "Trading in the first few months of the year in line with Board expectations, driven by customer expansions and addition of two new customers with significant expansion potential.",
+   "q": "Trading in the first few months of the year has been in line with the Board's expectations, driven by expansions at existing accounts and the addition of two new customers with significant expansion potential.",
    "file": "20230704_AOM_Results-for-the-year-ended-31-March-2023.md"
+  },
+  {
+   "d": "2023-07-04",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading in the first few months of the year has been in line with the Board's expectations, driven by expansions at existing accounts and the addition of two new customers with significant expansion potential.",
+   "file": "20230704_AOM_Results-for-the-year-ended-31-March-2023_2.md"
   },
   {
    "d": "2023-10-18",
@@ -1137,13 +1227,40 @@
    "file": "20231018_AOM_Trading-Update-and-Notice-of-Half-Year-Results.md"
   },
   {
+   "d": "2023-10-18",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is pleased to report continued growth in the first half of FY24, with the Group well-placed to achieve both its revenue and EBITDA expectations for the full year.",
+   "file": "20231018_AOM_Trading-Update-and-Notice-of-Half-Year-Results_2.md"
+  },
+  {
    "d": "2023-11-14",
    "doc": "H1 R",
    "fy": "FY24",
    "g": "flat",
    "s": 0,
-   "q": "Financially the Group continues to perform well and thanks to the ongoing success of our land & expand sales strategy, low levels of churn and high recurring revenues, we are in line to achieve both our revenue and EBITDA expectations for the full year.",
+   "q": "With growth against all of our key KPIs and a healthy sales pipeline, we remain on track to deliver a full year in line with the Board's Revenue and EBITDA expectations.",
    "file": "20231114_AOM_Interim-Results.md"
+  },
+  {
+   "d": "2023-11-14",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "With growth against all of our key KPIs and a healthy sales pipeline, we remain on track to deliver a full year in line with the Board's Revenue and EBITDA expectations.",
+   "file": "20231114_AOM_Interim-Results_2.md"
+  },
+  {
+   "d": "2024-04-24",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 1,
+   "q": "The Group has seen strong growth in adjusted EBITDA which is expected to be at least £2.2m (FY 2023: £0.7m), including an increase in capitalised R&D spend of approximately £0.5m to £1.35m (FY 2023 £0.85m, capitalised), as the Group continues to focus on the development of advanced AI-based product features.",
+   "file": "20240424_AOM_Full-Year-Trading-Update-and-Notice-of-Results.md"
   },
   {
    "d": "2024-07-03",
@@ -1151,8 +1268,17 @@
    "fy": "FY25",
    "g": "flat",
    "s": 0,
-   "q": "Trading in the first few months of FY25 has been in line with Board expectations, driven by continued expansion within our existing customers and the addition of a new North American insurance customer with significant expansion potential.",
+   "q": "Trading in the first few months of FY25 has been in line with the Board's expectations, driven by customer expansions and the addition of a new customer with significant expansion potential",
    "file": "20240703_AOM_Results-for-the-year-ended-31-March-2024.md"
+  },
+  {
+   "d": "2024-07-03",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading in the first few months of FY25 has been in line with the Board's expectations, driven by customer expansions and the addition of a new customer with significant expansion potential",
+   "file": "20240703_AOM_Results-for-the-year-ended-31-March-2024_2.md"
   },
   {
    "d": "2024-10-17",
@@ -1164,6 +1290,15 @@
    "file": "20241017_AOM_Trading-Update-and-Notice-of-Half-Year-Results.md"
   },
   {
+   "d": "2024-10-17",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is pleased to report that the Company has delivered good revenue and profit growth in the first half of the year and is trading in line with full year expectations.",
+   "file": "20241017_AOM_Trading-Update-and-Notice-of-Half-Year-Results_2.md"
+  },
+  {
    "d": "2024-11-14",
    "doc": "H1 R",
    "fy": "FY25",
@@ -1171,6 +1306,15 @@
    "s": 0,
    "q": "Whilst the reduction within one customer will impact exit ARR at the year end, we see a range of expansion opportunities elsewhere and the business continues to trade in line with full year expectations.",
    "file": "20241114_AOM_Interim-Results.md"
+  },
+  {
+   "d": "2024-11-14",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Whilst the reduction within one customer will impact exit ARR at the year end, we see a range of expansion opportunities elsewhere and the business continues to trade in line with full year expectations.",
+   "file": "20241114_AOM_Interim-Results_2.md"
   },
   {
    "d": "2025-02-05",
@@ -1183,6 +1327,24 @@
    "gnote": "early signal: first step up in tone"
   },
   {
+   "d": "2025-02-05",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The initial scope of the new contracts supports existing consensus market expectations* and each of the contracts has further exciting global expansion potential, in line with the Company's Land & Expand growth strategy.",
+   "file": "20250205_AOM_New-Customer-Wins-&-Senior-Leadership-Appointment_2.md"
+  },
+  {
+   "d": "2025-04-24",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "Adjusted EBITDA is expected to be approximately £2.4 million (FY24: £2.4 million) following increased investment in the Group's sales capability, as planned.",
+   "file": "20250424_AOM_Full-Year-Trading-Update-and-Notice-of-Results.md"
+  },
+  {
    "d": "2025-05-13",
    "doc": "OPS",
    "fy": "FY26",
@@ -1190,6 +1352,15 @@
    "s": 0,
    "q": "This strong start to the current financial year underpins confidence in an FY26 performance in line with the Board's expectations.",
    "file": "20250513_AOM_Customer-Expansion-Momentum.md"
+  },
+  {
+   "d": "2025-05-13",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "This strong start to the current financial year underpins confidence in an FY26 performance in line with the Board's expectations.",
+   "file": "20250513_AOM_Customer-Expansion-Momentum_2.md"
   },
   {
    "d": "2025-07-03",
@@ -1201,6 +1372,15 @@
    "file": "20250703_AOM_Results-for-the-year-ended-31-March-2025.md"
   },
   {
+   "d": "2025-07-03",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading in the first few months of FY26 has been in line with the Board's expectations, including sales of ControliQ to three new customers and expansion within existing customers",
+   "file": "20250703_AOM_Results-for-the-year-ended-31-March-2025_2.md"
+  },
+  {
    "d": "2025-09-01",
    "doc": "OPS",
    "fy": "FY26",
@@ -1210,13 +1390,58 @@
    "file": "20250901_AOM_Contract-Update.md"
   },
   {
-   "d": "2025-11-27",
-   "doc": "H1 R",
+   "d": "2025-09-01",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is pleased to confirm continued positive trading, as the Group successfully executes on its Land & Expand strategy.",
+   "file": "20250901_AOM_Contract-Update_2.md"
+  },
+  {
+   "d": "2025-10-15",
+   "doc": "H1 TU",
    "fy": "FY26",
    "g": "RAISE",
    "s": 0,
-   "q": "We are well positioned for a strong second half, with continued momentum expected to deliver full-year results in line with the recently upgraded market expectations.",
+   "q": "The Board is pleased to report that the Company has delivered double digit revenue growth, continued customer expansion momentum, and profit growth in H1 2026 and anticipates full year revenues will now be comfortably ahead of consensus expectations*.",
+   "file": "20251015_AOM_H1-2026-Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2025-11-27",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Well positioned for a strong second half, with continued momentum expected to deliver full-year results in line with the recently upgraded market expectations",
    "file": "20251127_AOM_Interim-Results.md"
+  },
+  {
+   "d": "2025-11-27",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Well positioned for a strong second half, with continued momentum expected to deliver full-year results in line with the recently upgraded market expectations",
+   "file": "20251127_AOM_Interim-Results_2.md"
+  },
+  {
+   "d": "2026-04-21",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Adjusted EBITDA is expected to be approximately £4.2m (FY25: £2.5m), marginally ahead of current market expectations1, reflecting planned investment in the Group's sales and relationship management capability.",
+   "file": "20260421_AOM_Full-Year-Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2026-07-02",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading in the first few months of FY27 has been in line with the Board's expectations, including sales of CaseWorkiQ to a new US banking customer and expansions within several existing customers.",
+   "file": "20260702_AOM_Results-for-the-year-ended-31-March-2026.md"
   },
   {
    "d": "2026-07-02",
@@ -1226,32 +1451,47 @@
    "s": 0,
    "q": "Trading in the first few months of FY27 has been in line with the Board's expectations, including sales of CaseWorkiQ to a new US banking customer and expansions within several existing customers.",
    "file": "20260702_AOM_Results-for-the-year-ended-31-March-2026_2.md"
+  },
+  {
+   "d": "2026-10-12",
+   "doc": "H1 TU",
+   "fy": "FY28",
+   "g": "CUT",
+   "s": -3,
+   "q": "As a result, the Board expects FY28 revenue and adjusted EBITDA to be significantly below market expectations1 reflecting both the potential customer loss and lower new business activity in H1 FY27.",
+   "file": "20261012_AOM_H1-FY27-Trading-Update-and-Notice-of-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-02",
-  "doc": "FY R",
-  "file": "20260702_AOM_Results-for-the-year-ended-31-March-2026_2.md",
-  "vs": "FY R Jul-25 · H1 R Nov-25 · Enlighten deal Jun-25",
+  "rns": "2026-10-12",
+  "doc": "H1 TU",
+  "file": "20261012_AOM_H1-FY27-Trading-Update-and-Notice-of-Results.md",
+  "vs": "H1 TU Oct-25 · FY R Jul-26 · FY TU Apr-26",
   "lines": [
    {
+    "sev": "red",
+    "type": "New caution",
+    "text": "Jul-26: “the Group is well placed to build on its momentum and deliver consistent, disciplined growth” → Oct-26: “The Company has been notified by a major customer that it does not intend to renew its contract with ActiveOps when it falls due in March 2027.”",
+    "span": "£3.8m ARR (c.9% of Group ARR £42.2m) removed in full from FY28; FY28 now significantly below market expectations"
+   },
+   {
     "sev": "amber",
-    "type": "Number to words",
-    "text": "Nov-25: “an anticipated EPS accretion of no less than 15% in the first full year of ownership, being the financial year ending 31 March 2027” → Jul-26, with FY27 now under way: “Post-synergy EPS accretion of the acquisition remains on track.”, no %",
-    "span": "15% floor given Jun-25, Jul-25, Nov-25 → first omission"
+    "type": "Wording vs number",
+    "text": "Oct-25: “a notable uplift in the rate of organic revenue growth of approximately 34% CC” → Oct-26: “With this solid revenue performance” beside organic revenue that “increased by 8%, or 5% at a constant currency basis”; headline 21% includes a £1.5m one-off termination receipt",
+    "span": "H1 TU Oct-25 → H1 TU Oct-26"
    },
    {
     "sev": "grey",
-    "type": "Anchor softened",
-    "text": "Nov-25: “full-year results in line with the recently upgraded market expectations” plus consensus footnote → Jul-26 FY26 outturn not compared with expectations; FY27 “in line with the Board's expectations”, no consensus figures",
-    "span": "Same Board's-expectations wording as FY R Jul-25"
+    "type": "Target dropped",
+    "text": "Jul-26: “the achievement of our medium term £100m ARR goal” and “Post-synergy EPS accretion of the acquisition remains on track.” → Oct-26 mentions neither; FY27 is the accretion year (Jun-25: “anticipated EPS accretion of no less than 15%”)",
+    "span": "£100m ARR in Nov-25 and Jul-26; accretion in Jun-25, Jul-25, Jul-26"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "New synergy figure: “now expected to unlock c.£3.0m in annualised savings, with a further £1.0m of savings expected in FY27” (Jun-25 deal RNS: “Deliver significant cost synergies, over time”)",
-    "span": "First quantification since the Enlighten acquisition"
+    "text": "Jul-26: “Trading in the first few months of FY27 has been in line with the Board's expectations”, no figures → Oct-26: “the Board continues to expect FY27 results to be in line with current market expectations1”, with FY27 and FY28 consensus ranges footnoted",
+    "span": "Market anchor and consensus footnote as at Oct-25, Apr-26"
    }
   ]
  }
