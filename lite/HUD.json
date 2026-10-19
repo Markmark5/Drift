@@ -1,0 +1,1328 @@
+{
+ "ticker": "HUD",
+ "v": "2026-10-19.a931",
+ "ccy": "GBX",
+ "src": "Yahoo HUD.L weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-22",
+   6.55
+  ],
+  [
+   "2021-10-29",
+   6.55
+  ],
+  [
+   "2021-11-05",
+   6.4
+  ],
+  [
+   "2021-11-12",
+   6.5
+  ],
+  [
+   "2021-11-19",
+   6.4
+  ],
+  [
+   "2021-11-26",
+   5.4
+  ],
+  [
+   "2021-12-03",
+   5.35
+  ],
+  [
+   "2021-12-10",
+   5.4
+  ],
+  [
+   "2021-12-17",
+   5.1
+  ],
+  [
+   "2021-12-24",
+   5.25
+  ],
+  [
+   "2021-12-31",
+   5.35
+  ],
+  [
+   "2022-01-07",
+   6.25
+  ],
+  [
+   "2022-01-14",
+   6.5
+  ],
+  [
+   "2022-01-21",
+   6.25
+  ],
+  [
+   "2022-01-28",
+   5.65
+  ],
+  [
+   "2022-02-04",
+   5.25
+  ],
+  [
+   "2022-02-11",
+   5.1
+  ],
+  [
+   "2022-02-18",
+   5.2
+  ],
+  [
+   "2022-02-25",
+   5.15
+  ],
+  [
+   "2022-03-04",
+   4.45
+  ],
+  [
+   "2022-03-11",
+   4.2
+  ],
+  [
+   "2022-03-18",
+   5.25
+  ],
+  [
+   "2022-03-25",
+   4.95
+  ],
+  [
+   "2022-04-01",
+   4.7
+  ],
+  [
+   "2022-04-08",
+   4.65
+  ],
+  [
+   "2022-04-15",
+   4.3
+  ],
+  [
+   "2022-04-22",
+   4.35
+  ],
+  [
+   "2022-04-29",
+   4.9
+  ],
+  [
+   "2022-05-06",
+   3.68
+  ],
+  [
+   "2022-05-13",
+   3.6
+  ],
+  [
+   "2022-05-20",
+   4.0
+  ],
+  [
+   "2022-05-27",
+   4.0
+  ],
+  [
+   "2022-06-03",
+   4.15
+  ],
+  [
+   "2022-06-10",
+   4.1
+  ],
+  [
+   "2022-06-17",
+   3.65
+  ],
+  [
+   "2022-06-24",
+   3.8
+  ],
+  [
+   "2022-07-01",
+   3.9
+  ],
+  [
+   "2022-07-08",
+   4.0
+  ],
+  [
+   "2022-07-15",
+   3.85
+  ],
+  [
+   "2022-07-22",
+   3.8
+  ],
+  [
+   "2022-07-29",
+   3.8
+  ],
+  [
+   "2022-08-05",
+   3.7
+  ],
+  [
+   "2022-08-12",
+   3.35
+  ],
+  [
+   "2022-08-19",
+   3.7
+  ],
+  [
+   "2022-08-26",
+   3.65
+  ],
+  [
+   "2022-09-02",
+   3.6
+  ],
+  [
+   "2022-09-09",
+   3.4
+  ],
+  [
+   "2022-09-16",
+   3.4
+  ],
+  [
+   "2022-09-23",
+   3.7
+  ],
+  [
+   "2022-09-30",
+   2.875
+  ],
+  [
+   "2022-10-07",
+   2.7
+  ],
+  [
+   "2022-10-14",
+   2.45
+  ],
+  [
+   "2022-10-21",
+   2.475
+  ],
+  [
+   "2022-10-28",
+   2.4
+  ],
+  [
+   "2022-11-04",
+   2.4
+  ],
+  [
+   "2022-11-11",
+   2.45
+  ],
+  [
+   "2022-11-18",
+   2.475
+  ],
+  [
+   "2022-11-25",
+   2.9
+  ],
+  [
+   "2022-12-02",
+   2.25
+  ],
+  [
+   "2022-12-09",
+   2.275
+  ],
+  [
+   "2022-12-16",
+   2.05
+  ],
+  [
+   "2022-12-23",
+   2.2
+  ],
+  [
+   "2022-12-30",
+   2.6
+  ],
+  [
+   "2023-01-06",
+   2.65
+  ],
+  [
+   "2023-01-13",
+   2.65
+  ],
+  [
+   "2023-01-20",
+   2.6
+  ],
+  [
+   "2023-01-27",
+   2.45
+  ],
+  [
+   "2023-02-03",
+   3.35
+  ],
+  [
+   "2023-02-10",
+   3.39
+  ],
+  [
+   "2023-02-17",
+   3.525
+  ],
+  [
+   "2023-02-24",
+   3.6
+  ],
+  [
+   "2023-03-03",
+   3.7
+  ],
+  [
+   "2023-03-10",
+   3.925
+  ],
+  [
+   "2023-03-17",
+   3.54
+  ],
+  [
+   "2023-03-24",
+   3.6
+  ],
+  [
+   "2023-03-31",
+   3.6
+  ],
+  [
+   "2023-04-07",
+   3.7
+  ],
+  [
+   "2023-04-14",
+   3.75
+  ],
+  [
+   "2023-04-21",
+   3.75
+  ],
+  [
+   "2023-04-28",
+   3.8
+  ],
+  [
+   "2023-05-05",
+   3.7
+  ],
+  [
+   "2023-05-12",
+   3.95
+  ],
+  [
+   "2023-05-19",
+   3.95
+  ],
+  [
+   "2023-05-26",
+   3.95
+  ],
+  [
+   "2023-06-02",
+   3.9
+  ],
+  [
+   "2023-06-09",
+   3.05
+  ],
+  [
+   "2023-06-16",
+   3.0
+  ],
+  [
+   "2023-06-23",
+   3.15
+  ],
+  [
+   "2023-06-30",
+   3.075
+  ],
+  [
+   "2023-07-07",
+   2.8
+  ],
+  [
+   "2023-07-14",
+   2.65
+  ],
+  [
+   "2023-07-21",
+   2.65
+  ],
+  [
+   "2023-07-28",
+   2.7
+  ],
+  [
+   "2023-08-04",
+   2.6
+  ],
+  [
+   "2023-08-11",
+   2.6
+  ],
+  [
+   "2023-08-18",
+   2.6
+  ],
+  [
+   "2023-08-25",
+   2.65
+  ],
+  [
+   "2023-09-01",
+   2.65
+  ],
+  [
+   "2023-09-08",
+   2.55
+  ],
+  [
+   "2023-09-15",
+   2.55
+  ],
+  [
+   "2023-09-22",
+   2.9
+  ],
+  [
+   "2023-09-29",
+   2.65
+  ],
+  [
+   "2023-10-06",
+   2.55
+  ],
+  [
+   "2023-10-13",
+   2.2
+  ],
+  [
+   "2023-10-20",
+   2.6
+  ],
+  [
+   "2023-10-27",
+   2.4
+  ],
+  [
+   "2023-11-03",
+   2.3
+  ],
+  [
+   "2023-11-10",
+   2.3
+  ],
+  [
+   "2023-11-17",
+   2.65
+  ],
+  [
+   "2023-11-24",
+   2.65
+  ],
+  [
+   "2023-12-01",
+   2.7
+  ],
+  [
+   "2023-12-08",
+   2.6
+  ],
+  [
+   "2023-12-15",
+   3.1
+  ],
+  [
+   "2023-12-22",
+   3.05
+  ],
+  [
+   "2023-12-29",
+   2.9
+  ],
+  [
+   "2024-01-05",
+   3.95
+  ],
+  [
+   "2024-01-12",
+   3.35
+  ],
+  [
+   "2024-01-19",
+   3.1
+  ],
+  [
+   "2024-01-26",
+   3.1
+  ],
+  [
+   "2024-02-02",
+   3.1
+  ],
+  [
+   "2024-02-09",
+   2.95
+  ],
+  [
+   "2024-02-16",
+   2.9
+  ],
+  [
+   "2024-02-23",
+   2.75
+  ],
+  [
+   "2024-03-01",
+   2.625
+  ],
+  [
+   "2024-03-08",
+   2.55
+  ],
+  [
+   "2024-03-15",
+   2.5
+  ],
+  [
+   "2024-03-22",
+   2.5
+  ],
+  [
+   "2024-03-29",
+   2.35
+  ],
+  [
+   "2024-04-05",
+   2.35
+  ],
+  [
+   "2024-04-12",
+   2.8
+  ],
+  [
+   "2024-04-19",
+   3.1
+  ],
+  [
+   "2024-04-26",
+   3.35
+  ],
+  [
+   "2024-05-03",
+   3.25
+  ],
+  [
+   "2024-05-10",
+   3.5
+  ],
+  [
+   "2024-05-17",
+   3.0
+  ],
+  [
+   "2024-05-24",
+   2.9
+  ],
+  [
+   "2024-05-31",
+   3.0
+  ],
+  [
+   "2024-06-07",
+   3.0
+  ],
+  [
+   "2024-06-14",
+   3.05
+  ],
+  [
+   "2024-06-21",
+   3.1
+  ],
+  [
+   "2024-06-28",
+   3.1
+  ],
+  [
+   "2024-07-05",
+   2.85
+  ],
+  [
+   "2024-07-12",
+   2.9
+  ],
+  [
+   "2024-07-19",
+   3.05
+  ],
+  [
+   "2024-07-26",
+   2.85
+  ],
+  [
+   "2024-08-02",
+   3.05
+  ],
+  [
+   "2024-08-09",
+   3.0
+  ],
+  [
+   "2024-08-16",
+   3.1
+  ],
+  [
+   "2024-08-23",
+   3.1
+  ],
+  [
+   "2024-08-30",
+   3.2
+  ],
+  [
+   "2024-09-06",
+   3.2
+  ],
+  [
+   "2024-09-13",
+   3.3
+  ],
+  [
+   "2024-09-20",
+   3.1
+  ],
+  [
+   "2024-09-27",
+   3.4
+  ],
+  [
+   "2024-10-04",
+   3.25
+  ],
+  [
+   "2024-10-11",
+   3.25
+  ],
+  [
+   "2024-10-18",
+   3.2
+  ],
+  [
+   "2024-10-25",
+   3.15
+  ],
+  [
+   "2024-11-01",
+   2.8
+  ],
+  [
+   "2024-11-08",
+   3.2
+  ],
+  [
+   "2024-11-15",
+   3.35
+  ],
+  [
+   "2024-11-22",
+   3.25
+  ],
+  [
+   "2024-11-29",
+   3.15
+  ],
+  [
+   "2024-12-06",
+   3.0
+  ],
+  [
+   "2024-12-13",
+   3.6
+  ],
+  [
+   "2024-12-20",
+   3.1
+  ],
+  [
+   "2024-12-27",
+   2.95
+  ],
+  [
+   "2025-01-03",
+   3.2
+  ],
+  [
+   "2025-01-10",
+   3.1
+  ],
+  [
+   "2025-01-17",
+   2.65
+  ],
+  [
+   "2025-01-24",
+   2.45
+  ],
+  [
+   "2025-01-31",
+   2.5
+  ],
+  [
+   "2025-02-07",
+   2.45
+  ],
+  [
+   "2025-02-14",
+   2.45
+  ],
+  [
+   "2025-02-21",
+   3.05
+  ],
+  [
+   "2025-02-28",
+   3.7
+  ],
+  [
+   "2025-03-07",
+   3.5
+  ],
+  [
+   "2025-03-14",
+   3.25
+  ],
+  [
+   "2025-03-21",
+   3.6
+  ],
+  [
+   "2025-03-28",
+   3.4
+  ],
+  [
+   "2025-04-04",
+   3.65
+  ],
+  [
+   "2025-04-11",
+   3.55
+  ],
+  [
+   "2025-04-18",
+   4.0
+  ],
+  [
+   "2025-04-25",
+   4.0
+  ],
+  [
+   "2025-05-02",
+   3.4
+  ],
+  [
+   "2025-05-09",
+   3.2
+  ],
+  [
+   "2025-05-16",
+   3.2
+  ],
+  [
+   "2025-05-23",
+   3.05
+  ],
+  [
+   "2025-05-30",
+   3.25
+  ],
+  [
+   "2025-06-06",
+   3.3
+  ],
+  [
+   "2025-06-13",
+   3.3
+  ],
+  [
+   "2025-06-20",
+   3.35
+  ],
+  [
+   "2025-06-27",
+   3.35
+  ],
+  [
+   "2025-07-04",
+   3.45
+  ],
+  [
+   "2025-07-11",
+   3.2
+  ],
+  [
+   "2025-07-18",
+   3.2
+  ],
+  [
+   "2025-07-25",
+   3.2
+  ],
+  [
+   "2025-08-01",
+   3.3
+  ],
+  [
+   "2025-08-08",
+   3.3
+  ],
+  [
+   "2025-08-15",
+   3.25
+  ],
+  [
+   "2025-08-22",
+   3.15
+  ],
+  [
+   "2025-08-29",
+   3.5
+  ],
+  [
+   "2025-09-05",
+   3.4
+  ],
+  [
+   "2025-09-12",
+   3.35
+  ],
+  [
+   "2025-09-19",
+   3.2
+  ],
+  [
+   "2025-09-26",
+   3.05
+  ],
+  [
+   "2025-10-03",
+   2.45
+  ],
+  [
+   "2025-10-10",
+   2.3
+  ],
+  [
+   "2025-10-17",
+   2.3
+  ],
+  [
+   "2025-10-24",
+   2.4
+  ],
+  [
+   "2025-10-31",
+   2.35
+  ],
+  [
+   "2025-11-07",
+   2.05
+  ],
+  [
+   "2025-11-14",
+   2.0
+  ],
+  [
+   "2025-11-21",
+   1.85
+  ],
+  [
+   "2025-11-28",
+   1.95
+  ],
+  [
+   "2025-12-05",
+   1.9
+  ],
+  [
+   "2025-12-12",
+   1.85
+  ],
+  [
+   "2025-12-19",
+   1.85
+  ],
+  [
+   "2025-12-26",
+   1.7
+  ],
+  [
+   "2026-01-02",
+   1.95
+  ],
+  [
+   "2026-01-09",
+   1.95
+  ],
+  [
+   "2026-01-16",
+   1.7
+  ],
+  [
+   "2026-01-23",
+   2.15
+  ],
+  [
+   "2026-01-30",
+   2.1
+  ],
+  [
+   "2026-02-06",
+   1.8
+  ],
+  [
+   "2026-02-13",
+   1.85
+  ],
+  [
+   "2026-02-20",
+   1.875
+  ],
+  [
+   "2026-02-27",
+   1.8
+  ],
+  [
+   "2026-03-06",
+   1.6
+  ],
+  [
+   "2026-03-13",
+   1.55
+  ],
+  [
+   "2026-03-20",
+   1.3
+  ],
+  [
+   "2026-03-27",
+   1.25
+  ],
+  [
+   "2026-04-03",
+   1.25
+  ],
+  [
+   "2026-04-10",
+   1.2
+  ],
+  [
+   "2026-04-17",
+   1.15
+  ],
+  [
+   "2026-04-24",
+   0.95
+  ],
+  [
+   "2026-05-01",
+   0.9
+  ],
+  [
+   "2026-05-08",
+   0.825
+  ],
+  [
+   "2026-05-15",
+   0.75
+  ],
+  [
+   "2026-05-22",
+   0.75
+  ],
+  [
+   "2026-05-29",
+   0.75
+  ],
+  [
+   "2026-06-05",
+   0.65
+  ],
+  [
+   "2026-06-12",
+   0.55
+  ],
+  [
+   "2026-06-19",
+   0.55
+  ],
+  [
+   "2026-06-26",
+   0.75
+  ],
+  [
+   "2026-07-03",
+   0.45
+  ],
+  [
+   "2026-07-10",
+   0.41
+  ],
+  [
+   "2026-07-17",
+   0.45
+  ],
+  [
+   "2026-07-24",
+   0.35
+  ],
+  [
+   "2026-07-31",
+   0.35
+  ],
+  [
+   "2026-08-07",
+   0.35
+  ],
+  [
+   "2026-08-14",
+   0.325
+  ],
+  [
+   "2026-08-21",
+   0.4
+  ],
+  [
+   "2026-08-28",
+   0.475
+  ],
+  [
+   "2026-09-04",
+   0.7
+  ],
+  [
+   "2026-09-11",
+   0.625
+  ],
+  [
+   "2026-09-18",
+   0.55
+  ],
+  [
+   "2026-09-25",
+   0.475
+  ],
+  [
+   "2026-10-02",
+   0.55
+  ],
+  [
+   "2026-10-09",
+   0.875
+  ],
+  [
+   "2026-10-16",
+   0.9
+  ],
+  [
+   "2026-10-19",
+   0.8
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-12-16",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "flat",
+   "s": 0,
+   "q": "Current trading is in line with our expectations and to date we have not seen any material impact as a result of further UK Covid-19 restrictions.",
+   "file": "20211216_HUD_Trading-Update.md"
+  },
+  {
+   "d": "2022-02-21",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "flat",
+   "s": 0,
+   "q": "Further to the trading update on 16 December 2021, the Company is pleased to confirm that unaudited H2 revenue was circa £6.6m, a 135% increase compared to unaudited revenue of £2.8m in H1 (H2 2020: £2.0m).",
+   "file": "20220221_HUD_Shark-Reef-Aquarium-&-Trading-Update.md"
+  },
+  {
+   "d": "2022-04-11",
+   "doc": "Q1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Unaudited Location Based Entertainment (\"LBE\") revenue in Q1 2022 three times that of Q1 2021 - £1.8m compared to £0.6m.",
+   "file": "20220411_HUD_New-Sites,-Trading-Update-and-date-of-Results.md"
+  },
+  {
+   "d": "2022-04-26",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "We do not anticipate any further disruption in our key markets and we expect 2022 to be our first full year of trading without capacity restrictions at our Mandalay Bay site.",
+   "file": "20220426_HUD_2021-audited-full-year-results-and-Company-update.md"
+  },
+  {
+   "d": "2022-05-19",
+   "doc": "OPS",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading continues to be in line with our expectations, with unaudited revenue of circa £870k for our core Location Based Entertainment (\"LBE\") business in April 2022.",
+   "file": "20220519_HUD_54-month---40-Seat-VR-Theatre-Deal-Signed.md"
+  },
+  {
+   "d": "2022-06-30",
+   "doc": "AGM",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading in the first 5 months of the current financial year is well ahead of the same period last year. Unaudited revenue in the core Location Based Entertainment (\"LBE\") business for the 5 months to 31 May 2022 was £3.4m (2021: £1.5m), a 127% increase.",
+   "file": "20220630_HUD_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2022-08-18",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The first six months of the year have shown solid year-on-year improvement and, with July exceeding all previous revenue numbers, the summer trading period is looking very encouraging.",
+   "file": "20220818_HUD_Pre-Close-Trading-Update.md"
+  },
+  {
+   "d": "2022-09-30",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Having recorded a strong H1 and record Q3 the directors are confident as to the outlook for the full year for the continuing operations.",
+   "file": "20220930_HUD_Interim-results-for-the-six-months-to-30-June-2022.md"
+  },
+  {
+   "d": "2023-05-04",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The overall outcome for the year met our expectations, with Group revenue from total operations increasing by 23% per cent to £11.6m (2021: £9.4m).",
+   "file": "20230504_HUD_Final-Results.md"
+  },
+  {
+   "d": "2023-09-28",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "With a strong balance sheet, we are optimistic about the potential the Group has to deliver shareholder value, both through the HBE business and acquisition opportunities.",
+   "file": "20230928_HUD_Interim-Results.md"
+  },
+  {
+   "d": "2024-01-08",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 1,
+   "q": "The early performance of Discount Dragon has exceeded management's expectations. Our early significant cash investment in additional stock, including the Motatos stock acquisition, has powered Q4 trading, as well as underpinning our intent to expand the breadth and depth of the product range.",
+   "file": "20240108_HUD_Trading-Update.md"
+  },
+  {
+   "d": "2024-05-13",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "In the short to medium term this investment will result in losses for the business, but we are confident this investment will drive growth and ultimately deliver a sizeable profitable business in an exciting sector.",
+   "file": "20240513_HUD_Full-Year-Results-for-Year-Ended-31-December-2023.md"
+  },
+  {
+   "d": "2024-06-25",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "FY24 has started strongly, with unaudited revenue from Discount Dragon in Q2 2024 expected to be not less than £2.7m, which would represent an increase of circa 28% vs Q1 2024.",
+   "file": "20240625_HUD_AGM-Statement.md"
+  },
+  {
+   "d": "2024-07-29",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Whilst we expect cash to reduce further as we continue to invest in scaling our acquisition marketing along with the expansion of our fulfilment capacity, we believe these investments will continue to deliver results and move the operating divisions into monthly profitability by the end of the year.",
+   "file": "20240729_HUD_Trading-Update.md"
+  },
+  {
+   "d": "2024-09-30",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "H2 2024 is now about continued growth, while also driving efficiencies from shared Group operations and expertise, all of which we believe will deliver a profitable and sustainable business model.",
+   "file": "20240930_HUD_Interim-Results-&-Trading-Update.md"
+  },
+  {
+   "d": "2025-01-13",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The FY 2024 loss is in line with our expectations and reflects the fully expensed acquisition of over 100,000 customers in the year and scaling-up of warehouse capacity.",
+   "file": "20250113_HUD_Trading-Update.md"
+  },
+  {
+   "d": "2025-03-07",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The board of Huddled are pleased with the progress the Group has made to date in 2025 and are keen to provide shareholders with more regular updates.",
+   "file": "20250307_HUD_February-Trading-Update.md"
+  },
+  {
+   "d": "2025-04-30",
+   "doc": "Q1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Overall, we are pleased to report that our progression towards operational profitability before head office costs across the three divisions is on track.",
+   "file": "20250430_HUD_Trading-Update.md"
+  },
+  {
+   "d": "2025-05-06",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Both revenue and customer numbers have exceeded expectations, and as we move into FY2025, I see this trend continuing.",
+   "file": "20250506_HUD_Full-Year-Results-for-Year-Ended-31-December-2024.md"
+  },
+  {
+   "d": "2025-09-29",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 1,
+   "q": "I am pleased to report that we expect to achieve net operational profitability before head office costs this month, September 2025.",
+   "file": "20250929_HUD_Interim-Results-and-Trading-Update.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2025-12-23",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -2,
+   "q": "Despite both Discount Dragon and Nutricircle recording adjusted EBITDA profitability in recent months, the Q4 challenges at Boop Beauty have meant we have not yet been able to achieve adjusted EBITDA profitability across the three trading divisions.",
+   "file": "20251223_HUD_Operational-Update.md"
+  },
+  {
+   "d": "2026-01-21",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "Huddled Group plc (AIM:HUD), the circular economy e-commerce group is pleased to confirm that unaudited revenue for FY 2025 (year ended 31 December 2025) was in line with market expectations, with Group Year-on-Year revenues growing by approximately 47% to circa £19.0 million and an unaudited adjusted EBITDA loss being broadly in line at approximately £2.5 million.",
+   "file": "20260121_HUD_Trading-Update.md"
+  },
+  {
+   "d": "2026-06-03",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 1,
+   "q": "We have now entered 2026 with a business that is operationally sound, commercially focused, and built to grow.",
+   "file": "20260603_HUD_Full-Year-Results-for-Year-Ended-31-December-2025.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2026-06-03",
+   "doc": "Q1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Q1 2026 revenue was £4.2m, marginally below Q1 2025 (£4.4m). There was a deliberate strategic decision to moderate volume while structural issues were addressed",
+   "file": "20260603_HUD_Trading-Update.md"
+  },
+  {
+   "d": "2026-09-18",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "With weekly revenue growing to circa £100k, the board is encouraged by the early progress and looks forward to the potential rapid growth live commerce could deliver.",
+   "file": "20260918_HUD_Trading-Update.md"
+  },
+  {
+   "d": "2026-09-28",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -2,
+   "q": "Post-Period trading has been encouraging, with live commerce revenue now running at circa £100,000 per week at a product margin of circa 40%.",
+   "file": "20260928_HUD_Interim-Results-and-Trading-Update.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-28",
+  "doc": "H1 R",
+  "file": "20260928_HUD_Interim-Results-and-Trading-Update.md",
+  "vs": "H1 R Sep-25 · TU Sep-26 · back to Sep-24",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Went quiet",
+    "text": "Near-term guide: last year “Q3 2025 revenue is expected to be circa £4.9m” and “Q4 2025 revenue expected to be not less than that of Q3 2025 and H2 2025 losses are expected to narrow from those in H1 2025” → this year no group Q3/H2 revenue or loss guide, only “live commerce revenue now running at circa £100,000 per week”",
+    "span": "Q3 revenue guide given at Sep-24 and Sep-25 interims → first gap"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "“Revenue growth, margin, retention, and user numbers are all very encouraging” beside “Revenue for the Period was £7.14m, down from £9.48m in the same period in 2025”",
+    "span": "H1-26 vs H1-25"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Order count: “H1 2024 orders placed up 54.0% to 137.8k” and “Over 292,000 orders in the Period” → H1-26 gives no group order number",
+    "span": "Given at Sep-24, Sep-25 → first gap"
+   },
+   {
+    "sev": "grey",
+    "type": "Demoted",
+    "text": "Divisional revenue: H1-25 highlights led with “Discount Dragon revenue increased 10% compared to H1 2024 with orders up 14%” → H1-26 highlights give group figures only; divisions appear only in the segment note",
+    "span": "H1-25 → H1-26"
+   }
+  ]
+ }
+}

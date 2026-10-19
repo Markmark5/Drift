@@ -1,0 +1,1382 @@
+{
+ "ticker": "SUS",
+ "v": "2026-10-19.c649",
+ "ccy": "GBX",
+ "src": "Yahoo SUS.L weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-22",
+   2900.0
+  ],
+  [
+   "2021-10-29",
+   2900.0
+  ],
+  [
+   "2021-11-05",
+   2880.0
+  ],
+  [
+   "2021-11-12",
+   2850.0
+  ],
+  [
+   "2021-11-19",
+   2780.0
+  ],
+  [
+   "2021-11-26",
+   2700.0
+  ],
+  [
+   "2021-12-03",
+   2560.0
+  ],
+  [
+   "2021-12-10",
+   2670.0
+  ],
+  [
+   "2021-12-17",
+   2700.0
+  ],
+  [
+   "2021-12-24",
+   2770.0
+  ],
+  [
+   "2021-12-31",
+   2700.0
+  ],
+  [
+   "2022-01-07",
+   2830.0
+  ],
+  [
+   "2022-01-14",
+   2700.0
+  ],
+  [
+   "2022-01-21",
+   2700.0
+  ],
+  [
+   "2022-01-28",
+   2550.0
+  ],
+  [
+   "2022-02-04",
+   2620.0
+  ],
+  [
+   "2022-02-11",
+   2800.0
+  ],
+  [
+   "2022-02-18",
+   2600.0
+  ],
+  [
+   "2022-02-25",
+   2620.0
+  ],
+  [
+   "2022-03-04",
+   2350.0
+  ],
+  [
+   "2022-03-11",
+   2355.0
+  ],
+  [
+   "2022-03-18",
+   2400.0
+  ],
+  [
+   "2022-03-25",
+   2400.0
+  ],
+  [
+   "2022-04-01",
+   2510.0
+  ],
+  [
+   "2022-04-08",
+   2500.0
+  ],
+  [
+   "2022-04-15",
+   2480.0
+  ],
+  [
+   "2022-04-22",
+   2450.0
+  ],
+  [
+   "2022-04-29",
+   2370.0
+  ],
+  [
+   "2022-05-06",
+   2340.0
+  ],
+  [
+   "2022-05-13",
+   2250.0
+  ],
+  [
+   "2022-05-20",
+   2220.0
+  ],
+  [
+   "2022-05-27",
+   2320.0
+  ],
+  [
+   "2022-06-03",
+   2435.0
+  ],
+  [
+   "2022-06-10",
+   2400.0
+  ],
+  [
+   "2022-06-17",
+   2130.0
+  ],
+  [
+   "2022-06-24",
+   2100.0
+  ],
+  [
+   "2022-07-01",
+   2030.0
+  ],
+  [
+   "2022-07-08",
+   2190.0
+  ],
+  [
+   "2022-07-15",
+   2100.0
+  ],
+  [
+   "2022-07-22",
+   2120.0
+  ],
+  [
+   "2022-07-29",
+   2070.0
+  ],
+  [
+   "2022-08-05",
+   2140.0
+  ],
+  [
+   "2022-08-12",
+   2395.0
+  ],
+  [
+   "2022-08-19",
+   2215.0
+  ],
+  [
+   "2022-08-26",
+   2200.0
+  ],
+  [
+   "2022-09-02",
+   2050.0
+  ],
+  [
+   "2022-09-09",
+   2110.0
+  ],
+  [
+   "2022-09-16",
+   2160.0
+  ],
+  [
+   "2022-09-23",
+   1905.0
+  ],
+  [
+   "2022-09-30",
+   2010.0
+  ],
+  [
+   "2022-10-07",
+   2160.0
+  ],
+  [
+   "2022-10-14",
+   2035.0
+  ],
+  [
+   "2022-10-21",
+   2090.0
+  ],
+  [
+   "2022-10-28",
+   2110.0
+  ],
+  [
+   "2022-11-04",
+   2175.0
+  ],
+  [
+   "2022-11-11",
+   2210.0
+  ],
+  [
+   "2022-11-18",
+   2160.0
+  ],
+  [
+   "2022-11-25",
+   2100.0
+  ],
+  [
+   "2022-12-02",
+   2100.0
+  ],
+  [
+   "2022-12-09",
+   2125.0
+  ],
+  [
+   "2022-12-16",
+   2070.0
+  ],
+  [
+   "2022-12-23",
+   2145.0
+  ],
+  [
+   "2022-12-30",
+   2090.0
+  ],
+  [
+   "2023-01-06",
+   2095.0
+  ],
+  [
+   "2023-01-13",
+   2080.0
+  ],
+  [
+   "2023-01-20",
+   2100.0
+  ],
+  [
+   "2023-01-27",
+   2090.0
+  ],
+  [
+   "2023-02-03",
+   2080.0
+  ],
+  [
+   "2023-02-10",
+   2090.0
+  ],
+  [
+   "2023-02-17",
+   2190.0
+  ],
+  [
+   "2023-02-24",
+   2290.0
+  ],
+  [
+   "2023-03-03",
+   2440.0
+  ],
+  [
+   "2023-03-10",
+   2320.0
+  ],
+  [
+   "2023-03-17",
+   2200.0
+  ],
+  [
+   "2023-03-24",
+   2295.0
+  ],
+  [
+   "2023-03-31",
+   2360.0
+  ],
+  [
+   "2023-04-07",
+   2480.0
+  ],
+  [
+   "2023-04-14",
+   2330.0
+  ],
+  [
+   "2023-04-21",
+   2390.0
+  ],
+  [
+   "2023-04-28",
+   2440.0
+  ],
+  [
+   "2023-05-05",
+   2420.0
+  ],
+  [
+   "2023-05-12",
+   2440.0
+  ],
+  [
+   "2023-05-19",
+   2500.0
+  ],
+  [
+   "2023-05-26",
+   2490.0
+  ],
+  [
+   "2023-06-02",
+   2490.0
+  ],
+  [
+   "2023-06-09",
+   2420.0
+  ],
+  [
+   "2023-06-16",
+   2340.0
+  ],
+  [
+   "2023-06-23",
+   2240.0
+  ],
+  [
+   "2023-06-30",
+   2270.0
+  ],
+  [
+   "2023-07-07",
+   2275.0
+  ],
+  [
+   "2023-07-14",
+   2290.0
+  ],
+  [
+   "2023-07-21",
+   2325.0
+  ],
+  [
+   "2023-07-28",
+   2400.0
+  ],
+  [
+   "2023-08-04",
+   2450.0
+  ],
+  [
+   "2023-08-11",
+   2250.0
+  ],
+  [
+   "2023-08-18",
+   2280.0
+  ],
+  [
+   "2023-08-25",
+   2310.0
+  ],
+  [
+   "2023-09-01",
+   2260.0
+  ],
+  [
+   "2023-09-08",
+   2220.0
+  ],
+  [
+   "2023-09-15",
+   2150.0
+  ],
+  [
+   "2023-09-22",
+   2220.0
+  ],
+  [
+   "2023-09-29",
+   2225.0
+  ],
+  [
+   "2023-10-06",
+   2240.0
+  ],
+  [
+   "2023-10-13",
+   2180.0
+  ],
+  [
+   "2023-10-20",
+   2160.0
+  ],
+  [
+   "2023-10-27",
+   2085.0
+  ],
+  [
+   "2023-11-03",
+   2150.0
+  ],
+  [
+   "2023-11-10",
+   2210.0
+  ],
+  [
+   "2023-11-17",
+   2310.0
+  ],
+  [
+   "2023-11-24",
+   2210.0
+  ],
+  [
+   "2023-12-01",
+   2150.0
+  ],
+  [
+   "2023-12-08",
+   2275.0
+  ],
+  [
+   "2023-12-15",
+   2100.0
+  ],
+  [
+   "2023-12-22",
+   2170.0
+  ],
+  [
+   "2023-12-29",
+   2185.0
+  ],
+  [
+   "2024-01-05",
+   2240.0
+  ],
+  [
+   "2024-01-12",
+   2100.0
+  ],
+  [
+   "2024-01-19",
+   2190.0
+  ],
+  [
+   "2024-01-26",
+   2060.0
+  ],
+  [
+   "2024-02-02",
+   2060.0
+  ],
+  [
+   "2024-02-09",
+   1935.0
+  ],
+  [
+   "2024-02-16",
+   1895.0
+  ],
+  [
+   "2024-02-23",
+   1830.0
+  ],
+  [
+   "2024-03-01",
+   1830.0
+  ],
+  [
+   "2024-03-08",
+   1830.0
+  ],
+  [
+   "2024-03-15",
+   1850.0
+  ],
+  [
+   "2024-03-22",
+   1810.0
+  ],
+  [
+   "2024-03-29",
+   1875.0
+  ],
+  [
+   "2024-04-05",
+   1870.0
+  ],
+  [
+   "2024-04-12",
+   1845.0
+  ],
+  [
+   "2024-04-19",
+   1840.0
+  ],
+  [
+   "2024-04-26",
+   1910.0
+  ],
+  [
+   "2024-05-03",
+   2020.0
+  ],
+  [
+   "2024-05-10",
+   2030.0
+  ],
+  [
+   "2024-05-17",
+   1970.0
+  ],
+  [
+   "2024-05-24",
+   2010.0
+  ],
+  [
+   "2024-05-31",
+   1900.0
+  ],
+  [
+   "2024-06-07",
+   1905.0
+  ],
+  [
+   "2024-06-14",
+   1890.0
+  ],
+  [
+   "2024-06-21",
+   1890.0
+  ],
+  [
+   "2024-06-28",
+   1860.0
+  ],
+  [
+   "2024-07-05",
+   1850.0
+  ],
+  [
+   "2024-07-12",
+   1860.0
+  ],
+  [
+   "2024-07-19",
+   1900.0
+  ],
+  [
+   "2024-07-26",
+   1875.0
+  ],
+  [
+   "2024-08-02",
+   1875.0
+  ],
+  [
+   "2024-08-09",
+   1885.0
+  ],
+  [
+   "2024-08-16",
+   1810.0
+  ],
+  [
+   "2024-08-23",
+   1760.0
+  ],
+  [
+   "2024-08-30",
+   1767.5
+  ],
+  [
+   "2024-09-06",
+   1815.0
+  ],
+  [
+   "2024-09-13",
+   1780.0
+  ],
+  [
+   "2024-09-20",
+   1580.0
+  ],
+  [
+   "2024-09-27",
+   1660.0
+  ],
+  [
+   "2024-10-04",
+   1715.0
+  ],
+  [
+   "2024-10-11",
+   1765.0
+  ],
+  [
+   "2024-10-18",
+   1920.0
+  ],
+  [
+   "2024-10-25",
+   1900.0
+  ],
+  [
+   "2024-11-01",
+   1610.0
+  ],
+  [
+   "2024-11-08",
+   1510.0
+  ],
+  [
+   "2024-11-15",
+   1265.0
+  ],
+  [
+   "2024-11-22",
+   1320.0
+  ],
+  [
+   "2024-11-29",
+   1440.0
+  ],
+  [
+   "2024-12-06",
+   1430.0
+  ],
+  [
+   "2024-12-13",
+   1470.0
+  ],
+  [
+   "2024-12-20",
+   1395.0
+  ],
+  [
+   "2024-12-27",
+   1395.0
+  ],
+  [
+   "2025-01-03",
+   1442.5
+  ],
+  [
+   "2025-01-10",
+   1380.0
+  ],
+  [
+   "2025-01-17",
+   1445.0
+  ],
+  [
+   "2025-01-24",
+   1632.5
+  ],
+  [
+   "2025-01-31",
+   1660.0
+  ],
+  [
+   "2025-02-07",
+   1605.0
+  ],
+  [
+   "2025-02-14",
+   1610.0
+  ],
+  [
+   "2025-02-21",
+   1540.0
+  ],
+  [
+   "2025-02-28",
+   1475.0
+  ],
+  [
+   "2025-03-07",
+   1380.0
+  ],
+  [
+   "2025-03-14",
+   1425.0
+  ],
+  [
+   "2025-03-21",
+   1345.0
+  ],
+  [
+   "2025-03-28",
+   1410.0
+  ],
+  [
+   "2025-04-04",
+   1330.0
+  ],
+  [
+   "2025-04-11",
+   1415.0
+  ],
+  [
+   "2025-04-18",
+   1430.0
+  ],
+  [
+   "2025-04-25",
+   1460.0
+  ],
+  [
+   "2025-05-02",
+   1455.0
+  ],
+  [
+   "2025-05-09",
+   1525.0
+  ],
+  [
+   "2025-05-16",
+   1565.0
+  ],
+  [
+   "2025-05-23",
+   1487.5
+  ],
+  [
+   "2025-05-30",
+   1520.0
+  ],
+  [
+   "2025-06-06",
+   1515.0
+  ],
+  [
+   "2025-06-13",
+   1472.5
+  ],
+  [
+   "2025-06-20",
+   1660.0
+  ],
+  [
+   "2025-06-27",
+   1800.0
+  ],
+  [
+   "2025-07-04",
+   1785.0
+  ],
+  [
+   "2025-07-11",
+   1765.0
+  ],
+  [
+   "2025-07-18",
+   1700.0
+  ],
+  [
+   "2025-07-25",
+   1720.0
+  ],
+  [
+   "2025-08-01",
+   1740.0
+  ],
+  [
+   "2025-08-08",
+   1862.5
+  ],
+  [
+   "2025-08-15",
+   1850.0
+  ],
+  [
+   "2025-08-22",
+   1870.0
+  ],
+  [
+   "2025-08-29",
+   1830.0
+  ],
+  [
+   "2025-09-05",
+   1800.0
+  ],
+  [
+   "2025-09-12",
+   1800.0
+  ],
+  [
+   "2025-09-19",
+   1720.0
+  ],
+  [
+   "2025-09-26",
+   1745.0
+  ],
+  [
+   "2025-10-03",
+   1715.0
+  ],
+  [
+   "2025-10-10",
+   1732.5
+  ],
+  [
+   "2025-10-17",
+   1695.0
+  ],
+  [
+   "2025-10-24",
+   1750.0
+  ],
+  [
+   "2025-10-31",
+   1780.0
+  ],
+  [
+   "2025-11-07",
+   1810.0
+  ],
+  [
+   "2025-11-14",
+   1910.0
+  ],
+  [
+   "2025-11-21",
+   1870.0
+  ],
+  [
+   "2025-11-28",
+   1900.0
+  ],
+  [
+   "2025-12-05",
+   1875.0
+  ],
+  [
+   "2025-12-12",
+   1990.0
+  ],
+  [
+   "2025-12-19",
+   1985.0
+  ],
+  [
+   "2025-12-26",
+   1970.0
+  ],
+  [
+   "2026-01-02",
+   2200.0
+  ],
+  [
+   "2026-01-09",
+   2230.0
+  ],
+  [
+   "2026-01-16",
+   2310.0
+  ],
+  [
+   "2026-01-23",
+   2330.0
+  ],
+  [
+   "2026-01-30",
+   2370.0
+  ],
+  [
+   "2026-02-06",
+   2380.0
+  ],
+  [
+   "2026-02-13",
+   2340.0
+  ],
+  [
+   "2026-02-20",
+   2330.0
+  ],
+  [
+   "2026-02-27",
+   2260.0
+  ],
+  [
+   "2026-03-06",
+   2090.0
+  ],
+  [
+   "2026-03-13",
+   2080.0
+  ],
+  [
+   "2026-03-20",
+   1855.0
+  ],
+  [
+   "2026-03-27",
+   1820.0
+  ],
+  [
+   "2026-04-03",
+   2020.0
+  ],
+  [
+   "2026-04-10",
+   1920.0
+  ],
+  [
+   "2026-04-17",
+   2060.0
+  ],
+  [
+   "2026-04-24",
+   1880.0
+  ],
+  [
+   "2026-05-01",
+   1960.0
+  ],
+  [
+   "2026-05-08",
+   2040.0
+  ],
+  [
+   "2026-05-15",
+   1890.0
+  ],
+  [
+   "2026-05-22",
+   1960.0
+  ],
+  [
+   "2026-05-29",
+   2030.0
+  ],
+  [
+   "2026-06-05",
+   1915.0
+  ],
+  [
+   "2026-06-12",
+   1970.0
+  ],
+  [
+   "2026-06-19",
+   1970.0
+  ],
+  [
+   "2026-06-26",
+   1980.0
+  ],
+  [
+   "2026-07-03",
+   1970.0
+  ],
+  [
+   "2026-07-10",
+   1980.0
+  ],
+  [
+   "2026-07-17",
+   1945.0
+  ],
+  [
+   "2026-07-24",
+   1945.0
+  ],
+  [
+   "2026-07-31",
+   1945.0
+  ],
+  [
+   "2026-08-07",
+   1940.0
+  ],
+  [
+   "2026-08-14",
+   1985.0
+  ],
+  [
+   "2026-08-21",
+   1950.0
+  ],
+  [
+   "2026-08-28",
+   2000.0
+  ],
+  [
+   "2026-09-04",
+   1990.0
+  ],
+  [
+   "2026-09-11",
+   2000.0
+  ],
+  [
+   "2026-09-18",
+   2000.0
+  ],
+  [
+   "2026-09-25",
+   1995.0
+  ],
+  [
+   "2026-10-02",
+   1910.0
+  ],
+  [
+   "2026-10-09",
+   1880.0
+  ],
+  [
+   "2026-10-16",
+   1875.0
+  ],
+  [
+   "2026-10-19",
+   1905.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-12-09",
+   "doc": "Q3 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group continues its growth rebound and is trading strongly, as the economy tentatively returns to normal despite the continuing uncertainty over the course of the Covid pandemic.",
+   "file": "20211209_SUS_Trading-Statement.md"
+  },
+  {
+   "d": "2022-02-10",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Founded on an excellent collections and debt quality performance and the expected rebound in sales as the Covid pandemic gradually abates, S&U's profit before tax for the year is now set to exceed current consensus expectations.",
+   "file": "20220210_SUS_Trading-Statement-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2022-03-29",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Although Advantage expects that new loan transactions will continue to grow this year, much will depend upon consumer confidence generally and the economic fall-out from the current crisis in Eastern Europe.",
+   "file": "20220329_SUS_Preliminary-Results.md"
+  },
+  {
+   "d": "2022-05-26",
+   "doc": "AGM",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Hence, although we currently expect to meet growth targets for this year, S&U remains focused above all on maintaining the excellent quality of its own books and service to its customers.",
+   "file": "20220526_SUS_AGM-Statement-and-Trading-Update.md"
+  },
+  {
+   "d": "2022-08-10",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 1,
+   "q": "Hence, although growth currently exceeds budget and expectations, we judge it sensible in light of current uncertainty about economic prospects, to temper optimism with caution, particularly in our underwriting policy.",
+   "file": "20220810_SUS_Trading-Update-and-Notice-of-Results.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2022-09-27",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "We are of course aware that we live in troubled times . Current economic and political conditions pose potential challenges to overcome, but also opportunities to grasp.",
+   "file": "20220927_SUS_Interim-Results.md"
+  },
+  {
+   "d": "2022-12-08",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Profitability remained good and in line with expectations, as higher revenue was partly offset by higher funding costs and increased customer servicing and collection costs , designed both to protect customer collections quality and to retain staff as living costs rise.",
+   "file": "20221208_SUS_Trading-Statement.md"
+  },
+  {
+   "d": "2023-02-09",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Current trading in both businesses, Advantage , our motor finance lender , and Aspen , our property bridging lender, remains excellent. This will be reflected in the full year's results which are expected to both meet expectations and exceed budget.",
+   "file": "20230209_SUS_Trading-Statement-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2023-03-28",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Current trading is good and I am confident that our focus, our expertise and our experienced team will enable us to take advantage of the emerging opportunities that this year will bring.",
+   "file": "20230328_SUS_Preliminary-Results.md"
+  },
+  {
+   "d": "2023-05-25",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "S&U is pleased to report another strong trading performance in the first quarter of this financial year. Group profit, turnover, debt quality and collections are ahead of last year.",
+   "file": "20230525_SUS_AGM-Statement-and-Trading-Update.md"
+  },
+  {
+   "d": "2023-08-10",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "Although the past two months have seen an uptick in transactions and the new customer pipeline, current economic policies in the UK, reduce consumer confidence and create barriers to our usual rate of sustainable growth.",
+   "file": "20230810_SUS_Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2023-10-03",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "S&U continues to trade well and despite current economic challenges and environment, S&U's track record gives cause for cautious optimism.",
+   "file": "20231003_SUS_Interim-Results-for-the-6-months-to-31-July-2023.md"
+  },
+  {
+   "d": "2023-12-12",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -2,
+   "q": "Nevertheless, caution is necessary. Those burdens weighing on business are reflected in a lack of consumer confidence, cost-of-living pressures, persistently higher rates of interest, and a new raft of regulation, all of which inevitably affect profitability.",
+   "file": "20231212_SUS_Trading-Statement-to-11-December-2023.md"
+  },
+  {
+   "d": "2024-02-09",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -3,
+   "q": "Thus, our group profit before tax for the year ended 31 January 2024 is likely to finish between 10% and 15% below consensus expectations of c£38m.",
+   "file": "20240209_SUS_Trading-Statement-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2024-04-09",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Current trends, both at Advantage and Aspen, prove that S&U has an abundance of these and trading since our year end is encouraging. Of course, challenges remain.",
+   "file": "20240409_SUS_Preliminary-Unaudited-FY-Results-to-31-Jan-24.md"
+  },
+  {
+   "d": "2024-06-06",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -2,
+   "q": "As reported at S&U's full year results on 9 April 2024, S&U continues to trade solidly in challenging economic, regulatory, and political conditions. For Advantage Finance, our motor business, this will mean 2024 will be a year of consolidation.",
+   "file": "20240606_SUS_AGM-Statement-and-Trading-Update.md"
+  },
+  {
+   "d": "2024-08-12",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -2,
+   "q": "This plan will be implemented as soon as the sensible and proportionate conclusion we expect to the section 166 process is reached. Advantage should then resume its habitual customer-oriented and profitable path.",
+   "file": "20240812_SUS_Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2024-09-19",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -3,
+   "q": "As a result, Group profits in H1 are expected to be c.£12.8m and this is likely to cause the Group's financial year profitability to 31 January 2025 to fall below market expectations.",
+   "file": "20240919_SUS_Trading-Update.md"
+  },
+  {
+   "d": "2024-10-08",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "As negotiations with the Financial Conduct Authority conclude, this hiatus in performance is expected to prove temporary and a rebound anticipated for 2025.",
+   "file": "20241008_SUS_Interim-Results-for-the-6-months-to-31-July-2024.md"
+  },
+  {
+   "d": "2024-12-11",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -2,
+   "q": "Whilst Aspen continues to prosper in the bridging finance sector, these are undoubtedly challenging times for Advantage and for the UK motor finance industry.",
+   "file": "20241211_SUS_Trading-Statement.md"
+  },
+  {
+   "d": "2025-02-11",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "The continuing headwinds at Advantage will be reflected in its profits for the second half year (July 24-Jan 25), but as a result of the improving trends mentioned above in advances and collection rates, we anticipate a recovery in profitability during the next financial year.",
+   "file": "20250211_SUS_Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2025-02-11",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The continuing headwinds at Advantage will be reflected in its profits for the second half year (Jul 24 - Jan 25) but as a result of the improving trends mentioned above in advances and collection rates, we anticipate a recovery in profitability during the next financial year.",
+   "file": "20250211_SUS_Amendment-to-Trading-Statement-&-Notice-of-Results.md"
+  },
+  {
+   "d": "2025-04-15",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 1,
+   "q": "Meanwhile, our property lender, Aspen, has produced record profit and performance and beckons a very bright future. We therefore anticipate that S&U will be restored to its habitual path of steady and sustainable growth.",
+   "file": "20250415_SUS_Preliminary-Results.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2025-06-18",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Happily, the consolidation and retrenchment of the past two years is now behind us and S&U is on track for a return to growth.",
+   "file": "20250618_SUS_AGM-Statement-and-Trading-Update.md"
+  },
+  {
+   "d": "2025-08-12",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "As a result, the expected resurgence in profitability for the Group is beginning to materialise and is expected to gain momentum in the second half of the year.",
+   "file": "20250812_SUS_Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2025-10-09",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Current trading at both Aspen and especially Advantage is strong, albeit still subject to the fluctuations in consumer confidence caused by the upcoming budget and feeble economic growth.",
+   "file": "20251009_SUS_Interim-Results-for-the-period-ended-5-August-2025.md"
+  },
+  {
+   "d": "2025-12-11",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The turnaround in S&U's fortunes, predicted in our last trading statement of early August, and confirmed at our interim results in October, continues apace. Group profit at the end of the third quarter continues to beat budget.",
+   "file": "20251211_SUS_Trading-Statement.md"
+  },
+  {
+   "d": "2026-02-10",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The upsurge in S&U's fortunes predicted in December has continued strongly. We confidently expect this to be reflected in our forthcoming results.",
+   "file": "20260210_SUS_Trading-Statement-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2026-04-21",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The current recovery shows we are on the right track, but challenges and necessary improvements remain - alongside tremendous opportunities for growth.",
+   "file": "20260421_SUS_Preliminary-Results.md"
+  },
+  {
+   "d": "2026-05-20",
+   "doc": "Q1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "By contrast, S&U is building on success. Group profitability for the period is ahead of both last year and budget.",
+   "file": "20260520_SUS_Trading-Statement.md"
+  },
+  {
+   "d": "2026-08-26",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -1,
+   "q": "Latest new deal levels are now above budget and as usual, this growth will be more significantly reflected in profitability in the second half of this year and in 2027/28.",
+   "file": "20260826_SUS_Trading-Statement-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2026-09-29",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -1,
+   "q": "The economic and political backdrop remains uncertain, but S&U is well placed to navigate it. Current trends indicate our ability to do just that, to the benefit of our customers and shareholders.",
+   "file": "20260929_SUS_Interim-Results-for-the-period-ended-5-August-2026.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-29",
+  "doc": "H1 R",
+  "file": "20260929_SUS_Interim-Results-for-the-period-ended-5-August-2026.md",
+  "vs": "H1 R Oct-25 · H1 TU Aug-26 · back to H1 R Oct-24",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Anchor softened",
+    "text": "Full-year view: H1 Oct-25 “should be reflected in S&U's full year results” → H1 Sep-26 “The economic and political backdrop remains uncertain, but S&U is well placed to navigate it.”, no full-year statement, with H1 PBT flat at £15.7m (H1 2025: £15.6m)",
+    "span": "Oct-25 full-year line → Sep-26 none"
+   },
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "Aspen: first mention of “heightened margin pressure on the quality deals it focuses upon”, Aspen PBT £4.0m (H1 2025: £5.0m), “just outside of budget”",
+    "span": "Oct-25 Aspen “a record and up 47%” → Sep-26 margin pressure"
+   },
+   {
+    "sev": "amber",
+    "type": "Demoted",
+    "text": "Finance costs: H1 Oct-25 highlights “Group net finance costs at £6.6m (H1 2024: £9.6m)” → dropped from Sep-26 highlights while net finance costs rose to £8.5m and borrowings to £285.1m",
+    "span": "In highlights Oct-24, Oct-25 → absent Sep-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Went quiet",
+    "text": "Aspen ROCE: H1 Oct-25 “Aspen's ROCE of 12.3%, a record” plus book yield 14.9% → Sep-26 no Aspen ROCE or yield figure; only Advantage “Cost, yield and ROCE also remain on budget.”",
+    "span": "Given Oct-24, Oct-25 interims (and May-23, Jun-24 AGMs) → first gap"
+   }
+  ]
+ }
+}

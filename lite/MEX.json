@@ -1,0 +1,212 @@
+{
+ "ticker": "MEX",
+ "v": "2026-10-19.ade1",
+ "ccy": "GBX",
+ "src": "ShareScope weekly snapshots",
+ "adj": [],
+ "px": [
+  [
+   "2026-03-03",
+   69.5
+  ],
+  [
+   "2026-03-06",
+   83.0
+  ],
+  [
+   "2026-03-13",
+   70.0
+  ],
+  [
+   "2026-03-20",
+   69.5
+  ],
+  [
+   "2026-03-27",
+   71.0
+  ],
+  [
+   "2026-04-03",
+   73.0
+  ],
+  [
+   "2026-04-10",
+   79.0
+  ],
+  [
+   "2026-04-17",
+   80.0
+  ],
+  [
+   "2026-04-24",
+   78.0
+  ],
+  [
+   "2026-05-08",
+   77.5
+  ],
+  [
+   "2026-05-15",
+   72.5
+  ],
+  [
+   "2026-05-22",
+   74.5
+  ],
+  [
+   "2026-06-02",
+   74.5
+  ],
+  [
+   "2026-06-05",
+   74.5
+  ],
+  [
+   "2026-06-12",
+   74.5
+  ],
+  [
+   "2026-06-19",
+   74.5
+  ],
+  [
+   "2026-06-26",
+   74.5
+  ],
+  [
+   "2026-07-03",
+   72.0
+  ],
+  [
+   "2026-07-10",
+   72.0
+  ],
+  [
+   "2026-07-17",
+   72.0
+  ],
+  [
+   "2026-07-24",
+   72.0
+  ],
+  [
+   "2026-07-31",
+   74.0
+  ],
+  [
+   "2026-08-07",
+   74.0
+  ],
+  [
+   "2026-08-14",
+   73.5
+  ],
+  [
+   "2026-08-21",
+   69.0
+  ],
+  [
+   "2026-08-28",
+   71.0
+  ],
+  [
+   "2026-09-07",
+   71.0
+  ],
+  [
+   "2026-09-11",
+   73.0
+  ],
+  [
+   "2026-09-18",
+   73.0
+  ],
+  [
+   "2026-09-25",
+   73.0
+  ],
+  [
+   "2026-10-02",
+   72.5
+  ],
+  [
+   "2026-10-09",
+   71.0
+  ],
+  [
+   "2026-10-16",
+   71.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2026-05-19",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -3,
+   "q": "As a result, Group FY25 Adjusted EBITDA¹ (pre-IFRS 16) is now expected to be up to £2.5 million lower than indicated in the trading update of 28 January 2026, with a corresponding adjustment to the FY25 closing balance sheet.",
+   "file": "20260519_MEX_Update-on-FY25-Results-and-Current-Trading.md"
+  },
+  {
+   "d": "2026-07-27",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "While the consumer environment remains challenging, I am confident in the agenda we have set: the reset is not a reduction in our ambition, but a change in how we will deliver against it.",
+   "file": "20260727_MEX_Final-Results.md"
+  },
+  {
+   "d": "2026-07-27",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "While the consumer environment remains challenging, I am confident in the agenda we have set: the reset is not a reduction in our ambition, but a change in how we will deliver against it.",
+   "file": "20260727_MEX_Final-Results---Replacement.md"
+  },
+  {
+   "d": "2026-09-29",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "The UK business generated £2.6m adjusted EBITDA, an increase of £0.2m over the prior half year (H1 FY25: £2.4m), reflecting strong sales growth, offset by investment in the business and £0.5m of employment cost headwinds.",
+   "file": "20260929_MEX_Half-year-Financial-Report.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-29",
+  "doc": "H1 R",
+  "file": "20260929_MEX_Half-year-Financial-Report.md",
+  "vs": "H1 R Sep-25 · FY R Jul-26 · back to H1 Oct-23/Sep-24",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Full-year anchor gone: Sep-25 “the Board now expects adjusted EBITDA for FY25 to be around 10 per cent below previous expectations”, Sep-24 “Current Trading is in line with management expectations for the full year 2024” → Sep-26 no FY26 EBITDA view or expectations anchor",
+    "span": "Given at Oct-23, Sep-24, Sep-25 → first gap in 3 years"
+   },
+   {
+    "sev": "amber",
+    "type": "Restated",
+    "text": "H1 FY25 adjusted EBITDA was “of £1.2m (H1 FY24: £1.8m)” → now shown as “(H1 FY25: loss £0.4m)”; H1 FY25 net debt “was £9.8m at period end” → “(H1 FY25: £9.9m)”",
+    "span": "H1 R Sep-25 → H1 R Sep-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Target dropped",
+    "text": "May-26 promised “together with an update on the outlook for FY26” → not given at the Jul-26 results or the Sep-26 interims",
+    "span": "May-26 → Jul-26 → Sep-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "“We have strong momentum” with UK LFL +13.9%, but “The UK business generated £2.6m adjusted EBITDA, an increase of £0.2m over the prior half year”",
+    "span": "H1 R Sep-26"
+   }
+  ]
+ }
+}

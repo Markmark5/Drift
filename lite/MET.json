@@ -1,0 +1,176 @@
+{
+ "ticker": "MET",
+ "v": "2026-10-19.52e4",
+ "ccy": "GBX",
+ "src": "ShareScope weekly snapshots",
+ "adj": [],
+ "px": [
+  [
+   "2026-03-03",
+   0.725
+  ],
+  [
+   "2026-03-06",
+   0.725
+  ],
+  [
+   "2026-03-13",
+   0.725
+  ],
+  [
+   "2026-03-20",
+   0.675
+  ],
+  [
+   "2026-03-27",
+   0.625
+  ],
+  [
+   "2026-04-03",
+   0.575
+  ],
+  [
+   "2026-04-10",
+   0.55
+  ],
+  [
+   "2026-04-17",
+   0.6
+  ],
+  [
+   "2026-04-24",
+   0.625
+  ],
+  [
+   "2026-05-08",
+   0.625
+  ],
+  [
+   "2026-05-15",
+   0.6
+  ],
+  [
+   "2026-05-22",
+   0.65
+  ],
+  [
+   "2026-06-02",
+   0.7
+  ],
+  [
+   "2026-06-05",
+   0.85
+  ],
+  [
+   "2026-06-12",
+   0.85
+  ],
+  [
+   "2026-06-19",
+   0.85
+  ],
+  [
+   "2026-06-26",
+   0.85
+  ],
+  [
+   "2026-07-03",
+   0.85
+  ],
+  [
+   "2026-07-10",
+   0.775
+  ],
+  [
+   "2026-07-17",
+   0.775
+  ],
+  [
+   "2026-07-24",
+   0.7
+  ],
+  [
+   "2026-07-31",
+   0.7
+  ],
+  [
+   "2026-08-07",
+   0.7
+  ],
+  [
+   "2026-08-14",
+   0.7
+  ],
+  [
+   "2026-08-21",
+   0.7
+  ],
+  [
+   "2026-08-28",
+   0.675
+  ],
+  [
+   "2026-09-07",
+   0.7
+  ],
+  [
+   "2026-09-11",
+   0.675
+  ],
+  [
+   "2026-09-18",
+   0.675
+  ],
+  [
+   "2026-09-25",
+   0.65
+  ],
+  [
+   "2026-10-02",
+   0.325
+  ],
+  [
+   "2026-10-09",
+   0.275
+  ],
+  [
+   "2026-10-16",
+   0.275
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2026-07-07",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group entered 2026 with a substantially improved revenue base, a diversified and growing product portfolio, a strengthened balance sheet, and a clear pipeline of commercial and technology development opportunities.",
+   "file": "20260707_MET_Final-Results.md"
+  },
+  {
+   "d": "2026-09-28",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -3,
+   "q": "\"With delays impacting the year-to-date, pushing back sales, orders and revenue recognition from equipment and reagent orders, and with limited working capital to drive growth, the Board expects full-year revenue in 2026 to be lower than in 2025.",
+   "file": "20260928_MET_Interim-Results-for-six-months-ended-30-June-2026.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-05",
+  "doc": "OPS",
+  "file": "20261005_MET_Capital-Access-Window---Trading-Halt.md",
+  "vs": "H1 R 28-Sep-26 (previous RNS) · fundraise RNS Jun-25 and Dec-25",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "28 Sep: “working capital remains constrained pending a fundraise” → now shares paused “pending an announcement regarding a capital raising”, no size, price or timing given",
+    "span": "Jun-25 and Dec-25 fundraises were announced without a trading pause"
+   }
+  ]
+ }
+}
