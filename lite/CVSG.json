@@ -1,0 +1,1354 @@
+{
+ "ticker": "CVSG",
+ "v": "2026-10-19.a012",
+ "ccy": "GBX",
+ "src": "Yahoo CVSG.L weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-22",
+   2475.0
+  ],
+  [
+   "2021-10-29",
+   2495.0
+  ],
+  [
+   "2021-11-05",
+   2450.0
+  ],
+  [
+   "2021-11-12",
+   2345.0
+  ],
+  [
+   "2021-11-19",
+   2400.0
+  ],
+  [
+   "2021-11-26",
+   2220.0
+  ],
+  [
+   "2021-12-03",
+   2135.0
+  ],
+  [
+   "2021-12-10",
+   2200.0
+  ],
+  [
+   "2021-12-17",
+   2285.0
+  ],
+  [
+   "2021-12-24",
+   2245.0
+  ],
+  [
+   "2021-12-31",
+   2240.0
+  ],
+  [
+   "2022-01-07",
+   2070.0
+  ],
+  [
+   "2022-01-14",
+   2010.0
+  ],
+  [
+   "2022-01-21",
+   1950.0
+  ],
+  [
+   "2022-01-28",
+   1954.0
+  ],
+  [
+   "2022-02-04",
+   1860.0
+  ],
+  [
+   "2022-02-11",
+   1830.0
+  ],
+  [
+   "2022-02-18",
+   1580.0
+  ],
+  [
+   "2022-02-25",
+   1658.0
+  ],
+  [
+   "2022-03-04",
+   1666.0
+  ],
+  [
+   "2022-03-11",
+   1646.0
+  ],
+  [
+   "2022-03-18",
+   1734.0
+  ],
+  [
+   "2022-03-25",
+   1728.0
+  ],
+  [
+   "2022-04-01",
+   1714.0
+  ],
+  [
+   "2022-04-08",
+   1826.0
+  ],
+  [
+   "2022-04-15",
+   1805.0
+  ],
+  [
+   "2022-04-22",
+   1740.0
+  ],
+  [
+   "2022-04-29",
+   1800.0
+  ],
+  [
+   "2022-05-06",
+   1626.0
+  ],
+  [
+   "2022-05-13",
+   1622.0
+  ],
+  [
+   "2022-05-20",
+   1685.0
+  ],
+  [
+   "2022-05-27",
+   1747.0
+  ],
+  [
+   "2022-06-03",
+   1738.0
+  ],
+  [
+   "2022-06-10",
+   1687.0
+  ],
+  [
+   "2022-06-17",
+   1574.0
+  ],
+  [
+   "2022-06-24",
+   1672.0
+  ],
+  [
+   "2022-07-01",
+   1637.0
+  ],
+  [
+   "2022-07-08",
+   1629.0
+  ],
+  [
+   "2022-07-15",
+   1601.0
+  ],
+  [
+   "2022-07-22",
+   1710.0
+  ],
+  [
+   "2022-07-29",
+   1719.0
+  ],
+  [
+   "2022-08-05",
+   1767.0
+  ],
+  [
+   "2022-08-12",
+   1746.0
+  ],
+  [
+   "2022-08-19",
+   1845.0
+  ],
+  [
+   "2022-08-26",
+   1791.0
+  ],
+  [
+   "2022-09-02",
+   1699.0
+  ],
+  [
+   "2022-09-09",
+   1786.0
+  ],
+  [
+   "2022-09-16",
+   1630.0
+  ],
+  [
+   "2022-09-23",
+   1676.0
+  ],
+  [
+   "2022-09-30",
+   1713.0
+  ],
+  [
+   "2022-10-07",
+   1758.0
+  ],
+  [
+   "2022-10-14",
+   1782.0
+  ],
+  [
+   "2022-10-21",
+   1783.0
+  ],
+  [
+   "2022-10-28",
+   1889.0
+  ],
+  [
+   "2022-11-04",
+   1892.0
+  ],
+  [
+   "2022-11-11",
+   2002.0
+  ],
+  [
+   "2022-11-18",
+   1935.0
+  ],
+  [
+   "2022-11-25",
+   1979.0
+  ],
+  [
+   "2022-12-02",
+   2106.0
+  ],
+  [
+   "2022-12-09",
+   2052.0
+  ],
+  [
+   "2022-12-16",
+   2028.0
+  ],
+  [
+   "2022-12-23",
+   1983.0
+  ],
+  [
+   "2022-12-30",
+   1936.0
+  ],
+  [
+   "2023-01-06",
+   1922.0
+  ],
+  [
+   "2023-01-13",
+   1933.0
+  ],
+  [
+   "2023-01-20",
+   1941.0
+  ],
+  [
+   "2023-01-27",
+   1946.0
+  ],
+  [
+   "2023-02-03",
+   2062.0
+  ],
+  [
+   "2023-02-10",
+   1972.0
+  ],
+  [
+   "2023-02-17",
+   1909.0
+  ],
+  [
+   "2023-02-24",
+   1898.0
+  ],
+  [
+   "2023-03-03",
+   1893.0
+  ],
+  [
+   "2023-03-10",
+   1875.0
+  ],
+  [
+   "2023-03-17",
+   1897.0
+  ],
+  [
+   "2023-03-24",
+   1832.0
+  ],
+  [
+   "2023-03-31",
+   1855.0
+  ],
+  [
+   "2023-04-07",
+   1848.0
+  ],
+  [
+   "2023-04-14",
+   2006.0
+  ],
+  [
+   "2023-04-21",
+   2082.0
+  ],
+  [
+   "2023-04-28",
+   2120.0
+  ],
+  [
+   "2023-05-05",
+   2082.0
+  ],
+  [
+   "2023-05-12",
+   2192.0
+  ],
+  [
+   "2023-05-19",
+   2162.0
+  ],
+  [
+   "2023-05-26",
+   2096.0
+  ],
+  [
+   "2023-06-02",
+   2088.0
+  ],
+  [
+   "2023-06-09",
+   2070.0
+  ],
+  [
+   "2023-06-16",
+   2188.0
+  ],
+  [
+   "2023-06-23",
+   2064.0
+  ],
+  [
+   "2023-06-30",
+   1979.0
+  ],
+  [
+   "2023-07-07",
+   1902.0
+  ],
+  [
+   "2023-07-14",
+   1926.0
+  ],
+  [
+   "2023-07-21",
+   1954.0
+  ],
+  [
+   "2023-07-28",
+   2024.0
+  ],
+  [
+   "2023-08-04",
+   2070.0
+  ],
+  [
+   "2023-08-11",
+   2048.0
+  ],
+  [
+   "2023-08-18",
+   2080.0
+  ],
+  [
+   "2023-08-25",
+   2074.0
+  ],
+  [
+   "2023-09-01",
+   2112.0
+  ],
+  [
+   "2023-09-08",
+   1606.0
+  ],
+  [
+   "2023-09-15",
+   1490.0
+  ],
+  [
+   "2023-09-22",
+   1650.0
+  ],
+  [
+   "2023-09-29",
+   1631.0
+  ],
+  [
+   "2023-10-06",
+   1600.0
+  ],
+  [
+   "2023-10-13",
+   1502.0
+  ],
+  [
+   "2023-10-20",
+   1521.0
+  ],
+  [
+   "2023-10-27",
+   1419.0
+  ],
+  [
+   "2023-11-03",
+   1455.0
+  ],
+  [
+   "2023-11-10",
+   1504.0
+  ],
+  [
+   "2023-11-17",
+   1550.0
+  ],
+  [
+   "2023-11-24",
+   1530.0
+  ],
+  [
+   "2023-12-01",
+   1498.0
+  ],
+  [
+   "2023-12-08",
+   1575.0
+  ],
+  [
+   "2023-12-15",
+   1635.0
+  ],
+  [
+   "2023-12-22",
+   1718.0
+  ],
+  [
+   "2023-12-29",
+   1683.0
+  ],
+  [
+   "2024-01-05",
+   1607.0
+  ],
+  [
+   "2024-01-12",
+   1646.0
+  ],
+  [
+   "2024-01-19",
+   1581.0
+  ],
+  [
+   "2024-01-26",
+   1698.0
+  ],
+  [
+   "2024-02-02",
+   1642.0
+  ],
+  [
+   "2024-02-09",
+   1648.0
+  ],
+  [
+   "2024-02-16",
+   1703.0
+  ],
+  [
+   "2024-02-23",
+   1675.0
+  ],
+  [
+   "2024-03-01",
+   1482.0
+  ],
+  [
+   "2024-03-08",
+   1500.0
+  ],
+  [
+   "2024-03-15",
+   996.0
+  ],
+  [
+   "2024-03-22",
+   1019.0
+  ],
+  [
+   "2024-03-29",
+   975.0
+  ],
+  [
+   "2024-04-05",
+   944.0
+  ],
+  [
+   "2024-04-12",
+   936.0
+  ],
+  [
+   "2024-04-19",
+   952.0
+  ],
+  [
+   "2024-04-26",
+   976.0
+  ],
+  [
+   "2024-05-03",
+   975.0
+  ],
+  [
+   "2024-05-10",
+   983.0
+  ],
+  [
+   "2024-05-17",
+   1008.0
+  ],
+  [
+   "2024-05-24",
+   1076.0
+  ],
+  [
+   "2024-05-31",
+   1158.0
+  ],
+  [
+   "2024-06-07",
+   1128.0
+  ],
+  [
+   "2024-06-14",
+   1084.0
+  ],
+  [
+   "2024-06-21",
+   1022.0
+  ],
+  [
+   "2024-06-28",
+   1008.0
+  ],
+  [
+   "2024-07-05",
+   1036.0
+  ],
+  [
+   "2024-07-12",
+   1040.0
+  ],
+  [
+   "2024-07-19",
+   1048.0
+  ],
+  [
+   "2024-07-26",
+   1106.0
+  ],
+  [
+   "2024-08-02",
+   1046.0
+  ],
+  [
+   "2024-08-09",
+   1064.0
+  ],
+  [
+   "2024-08-16",
+   1104.0
+  ],
+  [
+   "2024-08-23",
+   1110.0
+  ],
+  [
+   "2024-08-30",
+   1134.0
+  ],
+  [
+   "2024-09-06",
+   1122.0
+  ],
+  [
+   "2024-09-13",
+   1150.0
+  ],
+  [
+   "2024-09-20",
+   1196.0
+  ],
+  [
+   "2024-09-27",
+   1112.0
+  ],
+  [
+   "2024-10-04",
+   1060.0
+  ],
+  [
+   "2024-10-11",
+   1020.0
+  ],
+  [
+   "2024-10-18",
+   949.0
+  ],
+  [
+   "2024-10-25",
+   922.0
+  ],
+  [
+   "2024-11-01",
+   959.0
+  ],
+  [
+   "2024-11-08",
+   865.0
+  ],
+  [
+   "2024-11-15",
+   830.0
+  ],
+  [
+   "2024-11-22",
+   832.0
+  ],
+  [
+   "2024-11-29",
+   850.0
+  ],
+  [
+   "2024-12-06",
+   870.0
+  ],
+  [
+   "2024-12-13",
+   853.0
+  ],
+  [
+   "2024-12-20",
+   833.0
+  ],
+  [
+   "2024-12-27",
+   831.0
+  ],
+  [
+   "2025-01-03",
+   821.0
+  ],
+  [
+   "2025-01-10",
+   823.0
+  ],
+  [
+   "2025-01-17",
+   917.0
+  ],
+  [
+   "2025-01-24",
+   945.0
+  ],
+  [
+   "2025-01-31",
+   980.0
+  ],
+  [
+   "2025-02-07",
+   986.0
+  ],
+  [
+   "2025-02-14",
+   1060.0
+  ],
+  [
+   "2025-02-21",
+   1040.0
+  ],
+  [
+   "2025-02-28",
+   1020.0
+  ],
+  [
+   "2025-03-07",
+   1048.0
+  ],
+  [
+   "2025-03-14",
+   974.0
+  ],
+  [
+   "2025-03-21",
+   1042.0
+  ],
+  [
+   "2025-03-28",
+   1012.0
+  ],
+  [
+   "2025-04-04",
+   951.0
+  ],
+  [
+   "2025-04-11",
+   959.0
+  ],
+  [
+   "2025-04-18",
+   1012.0
+  ],
+  [
+   "2025-04-25",
+   1014.0
+  ],
+  [
+   "2025-05-02",
+   1298.0
+  ],
+  [
+   "2025-05-09",
+   1300.0
+  ],
+  [
+   "2025-05-16",
+   1248.0
+  ],
+  [
+   "2025-05-23",
+   1234.0
+  ],
+  [
+   "2025-05-30",
+   1240.0
+  ],
+  [
+   "2025-06-06",
+   1292.0
+  ],
+  [
+   "2025-06-13",
+   1260.0
+  ],
+  [
+   "2025-06-20",
+   1262.0
+  ],
+  [
+   "2025-06-27",
+   1254.0
+  ],
+  [
+   "2025-07-04",
+   1210.0
+  ],
+  [
+   "2025-07-11",
+   1200.0
+  ],
+  [
+   "2025-07-18",
+   1220.0
+  ],
+  [
+   "2025-07-25",
+   1260.0
+  ],
+  [
+   "2025-08-01",
+   1204.0
+  ],
+  [
+   "2025-08-08",
+   1214.0
+  ],
+  [
+   "2025-08-15",
+   1236.0
+  ],
+  [
+   "2025-08-22",
+   1292.0
+  ],
+  [
+   "2025-08-29",
+   1228.0
+  ],
+  [
+   "2025-09-05",
+   1226.0
+  ],
+  [
+   "2025-09-12",
+   1220.0
+  ],
+  [
+   "2025-09-19",
+   1240.0
+  ],
+  [
+   "2025-09-26",
+   1230.0
+  ],
+  [
+   "2025-10-03",
+   1260.0
+  ],
+  [
+   "2025-10-10",
+   1350.0
+  ],
+  [
+   "2025-10-17",
+   1364.0
+  ],
+  [
+   "2025-10-24",
+   1382.0
+  ],
+  [
+   "2025-10-31",
+   1242.0
+  ],
+  [
+   "2025-11-07",
+   1208.0
+  ],
+  [
+   "2025-11-14",
+   1144.0
+  ],
+  [
+   "2025-11-21",
+   1166.0
+  ],
+  [
+   "2025-11-28",
+   1224.0
+  ],
+  [
+   "2025-12-05",
+   1214.0
+  ],
+  [
+   "2025-12-12",
+   1216.0
+  ],
+  [
+   "2025-12-19",
+   1260.0
+  ],
+  [
+   "2025-12-26",
+   1270.0
+  ],
+  [
+   "2026-01-02",
+   1274.0
+  ],
+  [
+   "2026-01-09",
+   1358.0
+  ],
+  [
+   "2026-01-16",
+   1376.0
+  ],
+  [
+   "2026-01-23",
+   1342.0
+  ],
+  [
+   "2026-01-30",
+   1306.0
+  ],
+  [
+   "2026-02-06",
+   1356.0
+  ],
+  [
+   "2026-02-13",
+   1396.0
+  ],
+  [
+   "2026-02-20",
+   1398.0
+  ],
+  [
+   "2026-02-27",
+   1328.0
+  ],
+  [
+   "2026-03-06",
+   1280.0
+  ],
+  [
+   "2026-03-13",
+   1250.0
+  ],
+  [
+   "2026-03-20",
+   1156.0
+  ],
+  [
+   "2026-03-27",
+   1132.0
+  ],
+  [
+   "2026-04-03",
+   1132.0
+  ],
+  [
+   "2026-04-10",
+   1175.0
+  ],
+  [
+   "2026-04-17",
+   1257.0
+  ],
+  [
+   "2026-04-24",
+   1166.0
+  ],
+  [
+   "2026-05-01",
+   1170.0
+  ],
+  [
+   "2026-05-08",
+   1126.0
+  ],
+  [
+   "2026-05-15",
+   1176.0
+  ],
+  [
+   "2026-05-22",
+   1199.0
+  ],
+  [
+   "2026-05-29",
+   1251.0
+  ],
+  [
+   "2026-06-05",
+   1242.0
+  ],
+  [
+   "2026-06-12",
+   1231.0
+  ],
+  [
+   "2026-06-19",
+   1180.0
+  ],
+  [
+   "2026-06-26",
+   1181.0
+  ],
+  [
+   "2026-07-03",
+   1244.0
+  ],
+  [
+   "2026-07-10",
+   1236.0
+  ],
+  [
+   "2026-07-17",
+   1284.0
+  ],
+  [
+   "2026-07-24",
+   1196.0
+  ],
+  [
+   "2026-07-31",
+   1252.0
+  ],
+  [
+   "2026-08-07",
+   1300.0
+  ],
+  [
+   "2026-08-14",
+   1307.0
+  ],
+  [
+   "2026-08-21",
+   1296.0
+  ],
+  [
+   "2026-08-28",
+   1322.0
+  ],
+  [
+   "2026-09-04",
+   1316.0
+  ],
+  [
+   "2026-09-11",
+   1295.0
+  ],
+  [
+   "2026-09-18",
+   1302.0
+  ],
+  [
+   "2026-09-25",
+   1208.0
+  ],
+  [
+   "2026-10-02",
+   1140.0
+  ],
+  [
+   "2026-10-09",
+   1173.0
+  ],
+  [
+   "2026-10-16",
+   1285.0
+  ],
+  [
+   "2026-10-19",
+   1289.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-11-24",
+   "doc": "AGM",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board considers that current trading is supportive of management's full year expectations and the Group remains well placed to deliver further growth over the longer term; we look forward to sharing further updates as appropriate.",
+   "file": "20211124_CVSG_AGM-Statement-and-Trading-Update.md"
+  },
+  {
+   "d": "2022-01-27",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is pleased with H1 2022 performance and considers that current trading remains comfortably in line with management's full year expectations. The Group is well placed to deliver on further growth opportunities over the longer term.",
+   "file": "20220127_CVSG_Trading-Update.md"
+  },
+  {
+   "d": "2022-03-24",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board remains confident that the full year results will be in line with management expectations. We look forward to welcoming investors and analysts to our planned capital markets day in June 2022.",
+   "file": "20220324_CVSG_Interim-Results.md"
+  },
+  {
+   "d": "2022-07-01",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "CVS is pleased to confirm that current trading remains in line with management expectations for the full financial year.",
+   "file": "20220701_CVSG_Conclusion-of-CMA-process,-acquisition-and-trading.md"
+  },
+  {
+   "d": "2022-07-28",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 1,
+   "q": "The Group expects to report adjusted EBITDA3 for FY22 marginally ahead of market expectations, following effective management of costs coupled with selective investments to capitalise on opportunities for organic growth.",
+   "file": "20220728_CVSG_Trading-Update.md"
+  },
+  {
+   "d": "2022-09-22",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "We are pleased with the momentum in the business and trade in line with market expectations",
+   "file": "20220922_CVSG_Final-Results-for-the-year-ended-30-June-2022.md"
+  },
+  {
+   "d": "2022-11-23",
+   "doc": "AGM",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Whilst mindful of the wider macro-economic uncertainty, the Group continues to trade in line with full year market expectations and the Group remains well placed to achieve further growth over the longer term and deliver on our ambitions as set out at the CMD.",
+   "file": "20221123_CVSG_AGM-Statement-and-Trading-Update.md"
+  },
+  {
+   "d": "2023-01-26",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is pleased with H1 2023 performance and considers that current trading remains in line with market expectations for the full year. The Group remains well placed to deliver on further growth opportunities over the longer term.",
+   "file": "20230126_CVSG_Half-year-Trading-Update.md"
+  },
+  {
+   "d": "2023-02-24",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Demand for our services remains strong, notwithstanding a challenging macroeconomic environment and I am pleased to report H1 2023 results are in line with expectations and we are on track to deliver continued growth.",
+   "file": "20230224_CVSG_Interim-Results.md"
+  },
+  {
+   "d": "2023-07-27",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group expects to report adjusted EBITDA3 for FY23 comfortably in line with market expectations, notwithstanding increased utility costs and other inflationary pressures.",
+   "file": "20230727_CVSG_Trading-update,-AU-expansion-and-UK-acquisitions.md"
+  },
+  {
+   "d": "2023-09-21",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The new financial year has started well, we are pleased with the momentum in the business and continue to trade in line with market expectations",
+   "file": "20230921_CVSG_Final-results-for-the-year-ended-30-June-2023.md"
+  },
+  {
+   "d": "2023-11-29",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Whilst mindful of the wider macro-economic uncertainty, the Group continues to trade in line with full year market expectations and the Group remains well placed to achieve further growth over the longer term and to deliver on our five-year plan.",
+   "file": "20231129_CVSG_AGM-Statement-and-Trading-Update.md"
+  },
+  {
+   "d": "2024-01-25",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is pleased with H1 2024 performance and, whilst it continues to be mindful of the weak economic backdrop, expects to deliver full year results in line with market expectations.",
+   "file": "20240125_CVSG_Half-year-Trading-Update.md"
+  },
+  {
+   "d": "2024-02-29",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "However, the Board remains confident that full year results will be in line with market expectations and the strategy remains appropriate to deliver longer term sustainable growth in value.",
+   "file": "20240229_CVSG_Interim-Results.md"
+  },
+  {
+   "d": "2024-07-25",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -3,
+   "q": "The Group is facing short-term headwinds with the recent cyber incident and modernisation, softening demand and the ongoing process with the CMA.",
+   "file": "20240725_CVSG_Trading-Statement.md"
+  },
+  {
+   "d": "2024-09-26",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Whilst the Board remains mindful of short-term headwinds in the UK, the fundamental need for high quality veterinary care remains strong, and the expansion strategy into Australia is progressing well therefore the Board is comfortable with consensus estimates for FY25.",
+   "file": "20240926_CVSG_Final-results-for-the-year-ended-30-June-2024.md"
+  },
+  {
+   "d": "2024-11-20",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board continues to expect to deliver full year 2025 results in line with market expectations, with the impact of recently announced UK government budget changes to employment costs offset with growth, efficiencies and purchasing synergies in Australia.",
+   "file": "20241120_CVSG_AGM-Statement-and-Trading-Update.md"
+  },
+  {
+   "d": "2025-01-30",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board remains confident in the Group delivering full year 2025 results in line with market expectations.",
+   "file": "20250130_CVSG_Half-Year-Trading-Update.md"
+  },
+  {
+   "d": "2025-02-27",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Although trading continues to be impacted by a softer market, the wider macroeconomic backdrop and inflationary pressures on margins over the near term, the Board remains confident that full year results will be in line with market expectations and the strategy remains appropriate to deliver longer term sustainable growth in value.",
+   "file": "20250227_CVSG_Interim-Results.md"
+  },
+  {
+   "d": "2025-07-24",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group expects to report FY25 Adjusted EBITDA4 for continuing operations of approximately £134m, in line with market consensus5 (unaudited) (FY24: £123.0m)",
+   "file": "20250724_CVSG_Full-year-trading-update.md"
+  },
+  {
+   "d": "2025-10-07",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group continues to expect to perform in-line with market expectations9 for FY26",
+   "file": "20251007_CVSG_Final-results-for-the-year-ended-30-June-2025.md"
+  },
+  {
+   "d": "2025-10-15",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "As such, the Board continues to expect the Group to trade in line with market expectations.",
+   "file": "20251015_CVSG_Response-to-CMA-provisional-decision-announcement.md"
+  },
+  {
+   "d": "2025-11-18",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board remains confident in the Group's ability to deliver full year 2026 results in line with market expectations5.",
+   "file": "20251118_CVSG_AGM-Statement-and-Trading-Update.md"
+  },
+  {
+   "d": "2026-01-23",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "The fundamentals of the sector remain strong and the Board believes that CVS is well positioned to deliver attractive growth in shareholder value over the medium term. The Group continues to expect to deliver FY2026 results in line with the Board's expectations.",
+   "file": "20260123_CVSG_Publication-of-Prospectus-and-Trading-Update.md",
+   "gnote": "discounted: prospectus for Main Market move"
+  },
+  {
+   "d": "2026-01-28",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group continues to expect to deliver FY2026 results in line with the Board's expectations.",
+   "file": "20260128_CVSG_Response-to-DEFRA-consultation.md"
+  },
+  {
+   "d": "2026-02-26",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board remains confident in the Group's ability to deliver FY2026 results in line with market consensus3.",
+   "file": "20260226_CVSG_Interim-Results.md"
+  },
+  {
+   "d": "2026-03-24",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "As such, the Board expects the Group to continue to trade in line with market expectations.",
+   "file": "20260324_CVSG_Response-to-CMA-Summary-Final-Decision-Report.md"
+  },
+  {
+   "d": "2026-07-23",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group expects to report FY26 Adjusted EBITDA3 of approximately £141.5m, in line with market consensus4 (unaudited) (FY25: £134.6m).",
+   "file": "20260723_CVSG_Full-year-trading-update.md"
+  },
+  {
+   "d": "2026-09-24",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group continues to expect to perform in-line with market expectations10 for FY27.",
+   "file": "20260924_CVSG_Final-results-for-the-year-ended-30-June-2026.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-24",
+  "doc": "FY R",
+  "file": "20260924_CVSG_Final-results-for-the-year-ended-30-June-2026.md",
+  "vs": "FY R Oct-25 · YE-TU Jul-26 · FY R Sep-24",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "FY25: “the Group saw improved revenue and like-for-like growth in the final quarter, with good momentum through the end of the year” and “The new financial year is off to a strong start” → FY26: core “LFL performance across our Veterinary Practice division was +1.0%” with “a weaker Q4 partly impacted by the extreme hot weather”, and “The new financial year is off to a solid start”",
+    "span": "Headline claims improved LFLs; Group LFL +2.1% but core Vet Practice division unchanged at +1.0%"
+   },
+   {
+    "sev": "amber",
+    "type": "Demoted",
+    "text": "Healthy Pet Club members: FY25 highlights “increased membership by 3.2% to 519,000 members” → FY26 dropped from highlights; financial review only: “Membership numbers marginally reduced to 508,000 members as at 30 June 2026 (2025: 519,000)”",
+    "span": "In FY R highlights Sep-22 to Oct-25; first fall in the record"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Vet headcount: FY24 “a 5.8% increase in the average number of vets employed in the year” and FY25 “Increased number of vets employed by 4.5%” → FY26 no vet headcount figure anywhere in the results",
+    "span": "Given Sep-24, Oct-25 → first gap"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Consensus footnote: FY25 gave FY26 adjusted EBITDA only → FY26 adds EPS: “adjusted EPS of 89.3p to 99.6p with an average of 94.9p” beside EBITDA “£149.0m to £151.7m with an average of £150.4m”",
+    "span": "FY27 guide anchored to market expectations, as in Oct-25"
+   }
+  ]
+ }
+}

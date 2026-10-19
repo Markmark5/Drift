@@ -1,0 +1,117 @@
+{
+ "ticker": "SHR",
+ "v": "2026-10-19.e888",
+ "ccy": "USD",
+ "src": "ShareScope weekly snapshots",
+ "adj": [],
+ "px": [
+  [
+   "2026-06-12",
+   7.0
+  ],
+  [
+   "2026-06-19",
+   7.0
+  ],
+  [
+   "2026-06-26",
+   7.0
+  ],
+  [
+   "2026-07-03",
+   13.5
+  ],
+  [
+   "2026-07-10",
+   16.0
+  ],
+  [
+   "2026-07-17",
+   18.0
+  ],
+  [
+   "2026-07-24",
+   25.0
+  ],
+  [
+   "2026-07-31",
+   22.5
+  ],
+  [
+   "2026-08-07",
+   22.5
+  ],
+  [
+   "2026-08-14",
+   24.5
+  ],
+  [
+   "2026-08-21",
+   24.5
+  ],
+  [
+   "2026-08-28",
+   20.1
+  ],
+  [
+   "2026-09-07",
+   17.5
+  ],
+  [
+   "2026-09-11",
+   16.943
+  ],
+  [
+   "2026-09-18",
+   14.75
+  ],
+  [
+   "2026-09-25",
+   15.15
+  ],
+  [
+   "2026-10-02",
+   16.0
+  ],
+  [
+   "2026-10-09",
+   15.65
+  ],
+  [
+   "2026-10-16",
+   13.25
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2026-09-28",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Our focus now is on building out our investment portfolio to provide shareholders with exposure to the development and adoption of artificial intelligence.",
+   "file": "20260928_SHR_Interim-results-for-six-months-ended-30-June-2026.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-28",
+  "doc": "H1 R",
+  "file": "20260928_SHR_Interim-results-for-six-months-ended-30-June-2026.md",
+  "vs": "H1 R Sep-25 · FY R Apr-26 · fundraise/portfolio RNS Jul-Aug-26",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Aug-26: “the Company is targeting a total raise of US$100 million” → Sep-26 raised “to US$78.0 million”; the claim of “exceeding the Company’s stated initial objective of US$100 million” counts “up to an additional US$30.0 million of contributed assets” not yet acquired",
+    "span": "Target set Jul-26 and Aug-26 → met only with optional future contributions"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Sep-25 interim reported a shell with net liabilities → Sep-26 sets out post-period capital and contributed assets and named investments (Anthropic, Stripe, ByteDance, SandboxAQ, Colossal, Moonshot AI) in its events note",
+    "span": "First interim under the AI investing policy"
+   }
+  ]
+ }
+}

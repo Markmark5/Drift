@@ -1,0 +1,278 @@
+{
+ "ticker": "WVIA",
+ "v": "2026-10-19.6ae4",
+ "ccy": "GBX",
+ "src": "Yahoo WVIA.L weekly",
+ "adj": [],
+ "px": [
+  [
+   "2025-11-07",
+   215.0
+  ],
+  [
+   "2025-11-14",
+   210.0
+  ],
+  [
+   "2025-11-21",
+   205.0
+  ],
+  [
+   "2025-11-28",
+   197.5
+  ],
+  [
+   "2025-12-05",
+   197.5
+  ],
+  [
+   "2025-12-12",
+   205.0
+  ],
+  [
+   "2025-12-19",
+   205.0
+  ],
+  [
+   "2025-12-26",
+   205.0
+  ],
+  [
+   "2026-01-02",
+   202.5
+  ],
+  [
+   "2026-01-09",
+   202.5
+  ],
+  [
+   "2026-01-16",
+   215.0
+  ],
+  [
+   "2026-01-23",
+   225.0
+  ],
+  [
+   "2026-01-30",
+   249.0
+  ],
+  [
+   "2026-02-06",
+   235.0
+  ],
+  [
+   "2026-02-13",
+   275.0
+  ],
+  [
+   "2026-02-20",
+   252.5
+  ],
+  [
+   "2026-02-27",
+   255.0
+  ],
+  [
+   "2026-03-06",
+   240.0
+  ],
+  [
+   "2026-03-13",
+   225.0
+  ],
+  [
+   "2026-03-20",
+   215.0
+  ],
+  [
+   "2026-03-27",
+   215.0
+  ],
+  [
+   "2026-04-03",
+   215.0
+  ],
+  [
+   "2026-04-10",
+   225.0
+  ],
+  [
+   "2026-04-17",
+   222.5
+  ],
+  [
+   "2026-04-24",
+   220.0
+  ],
+  [
+   "2026-05-01",
+   220.0
+  ],
+  [
+   "2026-05-08",
+   225.0
+  ],
+  [
+   "2026-05-15",
+   225.0
+  ],
+  [
+   "2026-05-22",
+   245.0
+  ],
+  [
+   "2026-05-29",
+   255.0
+  ],
+  [
+   "2026-06-05",
+   250.0
+  ],
+  [
+   "2026-06-12",
+   255.0
+  ],
+  [
+   "2026-06-19",
+   255.0
+  ],
+  [
+   "2026-06-26",
+   240.0
+  ],
+  [
+   "2026-07-03",
+   255.0
+  ],
+  [
+   "2026-07-10",
+   255.0
+  ],
+  [
+   "2026-07-17",
+   255.0
+  ],
+  [
+   "2026-07-24",
+   255.0
+  ],
+  [
+   "2026-07-31",
+   251.0
+  ],
+  [
+   "2026-08-07",
+   241.0
+  ],
+  [
+   "2026-08-14",
+   241.0
+  ],
+  [
+   "2026-08-21",
+   237.5
+  ],
+  [
+   "2026-08-28",
+   240.0
+  ],
+  [
+   "2026-09-04",
+   235.0
+  ],
+  [
+   "2026-09-11",
+   232.5
+  ],
+  [
+   "2026-09-18",
+   232.5
+  ],
+  [
+   "2026-09-25",
+   247.5
+  ],
+  [
+   "2026-10-02",
+   287.5
+  ],
+  [
+   "2026-10-09",
+   277.5
+  ],
+  [
+   "2026-10-16",
+   270.0
+  ],
+  [
+   "2026-10-19",
+   275.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2026-01-27",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Following a strong close to the year, adjusted EBITDA is expected to be significantly ahead of last year and ahead of market expectations2 at not less than £31 million (FY24: £15.3 million3).",
+   "file": "20260127_WVIA_FY25-Trading-Update.md"
+  },
+  {
+   "d": "2026-05-19",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "Trading in the first quarter of 2026 has continued to be strong and the Group is firmly on track to meet the Board's full year expectations, with net revenue as at 31 March 2026 ahead of the same period last year.",
+   "file": "20260519_WVIA_Final-Results.md"
+  },
+  {
+   "d": "2026-08-04",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "With further growth set to be delivered across the business, the Group is on track to deliver full year results in line with market expectations",
+   "file": "20260804_WVIA_Half-Year-Trading-Update.md"
+  },
+  {
+   "d": "2026-09-28",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Given the strength of current trading, full year Adjusted EBITDA is now expected to be ahead of current market expectations (this is underlying trading and no contribution from the acquisition announced today is included)",
+   "file": "20260928_WVIA_Half-Year-Results.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-28",
+  "doc": "H1 R",
+  "file": "20260928_WVIA_Half-Year-Results.md",
+  "vs": "H1 TU Aug-26 · FY R May-26 · YE-TU Jan-26 (no H1 R a year earlier: AIM IPO Nov-25)",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Anchor softened",
+    "text": "Aug-26 footnote: “The Group believes that the market expectation for the year ending 31 December 2026 is Adjusted EBITDA of £37.1 million.” → Sep-26 upgrade “ahead of current market expectations” with no consensus figure, so the size of the beat is unstated",
+    "span": "Consensus footnote given Jan-26 (£29.1m FY25) and Aug-26 (£37.1m FY26) → dropped on the upgrade"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Headline “Strong first half performance in line with expectations.” beside Prize Draw Competitions “reporting a small Adjusted EBITDA loss of £1.0m (HY25: profit of £6.2m)”",
+    "span": "H1-26 vs H1-25 segment EBITDA"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "New segment guide: “Prize Draw Competition Adjusted EBITDA is expected to be trending close to £2 million per month in Q4.”",
+    "span": "Not given in H1 TU Aug-26 or FY R May-26"
+   }
+  ]
+ }
+}

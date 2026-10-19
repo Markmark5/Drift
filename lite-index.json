@@ -60,6 +60,13 @@
    "marks": 30
   },
   {
+   "ticker": "AEX",
+   "company": "Aminex PLC",
+   "chart": "lite/AEX.json?v=2026-10-19.b087",
+   "scored": "2026-10-19",
+   "marks": 9
+  },
+  {
    "ticker": "AJB",
    "company": "AJ Bell PLC",
    "chart": "lite/AJB.json?v=2026-10-19.543f",
@@ -74,9 +81,23 @@
    "marks": 16
   },
   {
+   "ticker": "AMIF",
+   "company": "Amicorp FS (UK) PLC",
+   "chart": "lite/AMIF.json?v=2026-10-19.5fbd",
+   "scored": "2026-10-19",
+   "marks": 11
+  },
+  {
    "ticker": "ANG",
    "company": "Angling Direct PLC",
    "chart": "lite/ANG.json?v=2026-10-19.b426",
+   "scored": "2026-10-19",
+   "marks": 24
+  },
+  {
+   "ticker": "AO.",
+   "company": "AO World PLC",
+   "chart": "lite/AO.json?v=2026-10-19.ee3e",
    "scored": "2026-10-19",
    "marks": 24
   },
@@ -93,6 +114,13 @@
    "chart": "lite/APTA.json?v=2026-10-18.2f17",
    "scored": "2026-10-18",
    "marks": 30
+  },
+  {
+   "ticker": "ASC",
+   "company": "ASOS PLC",
+   "chart": "lite/ASC.json?v=2026-10-19.6a02",
+   "scored": "2026-10-19",
+   "marks": 22
   },
   {
    "ticker": "AVAP",
@@ -128,6 +156,13 @@
    "chart": "lite/BAG.json?v=2026-10-19.4848",
    "scored": "2026-10-19",
    "marks": 22
+  },
+  {
+   "ticker": "BGO",
+   "company": "Bango PLC",
+   "chart": "lite/BGO.json?v=2026-10-19.13a9",
+   "scored": "2026-10-19",
+   "marks": 20
   },
   {
    "ticker": "BILN",
@@ -228,6 +263,20 @@
    "marks": 22
   },
   {
+   "ticker": "CFX",
+   "company": "Colefax Group PLC",
+   "chart": "lite/CFX.json?v=2026-10-19.cec9",
+   "scored": "2026-10-19",
+   "marks": 17
+  },
+  {
+   "ticker": "CHRT",
+   "company": "Cohort PLC",
+   "chart": "lite/CHRT.json?v=2026-10-19.c89d",
+   "scored": "2026-10-19",
+   "marks": 23
+  },
+  {
    "ticker": "CIZ",
    "company": "Cizzle Biotechnology PLC",
    "chart": "lite/CIZ.json?v=2026-10-19.3c06",
@@ -256,6 +305,13 @@
    "marks": 25
   },
   {
+   "ticker": "CNE",
+   "company": "Capricorn Energy PLC",
+   "chart": "lite/CNE.json?v=2026-10-19.0c74",
+   "scored": "2026-10-19",
+   "marks": 27
+  },
+  {
    "ticker": "CNS",
    "company": "Corero Network Security plc",
    "chart": "lite/CNS.json?v=2026-10-19.a7a6",
@@ -277,11 +333,25 @@
    "marks": 27
   },
   {
+   "ticker": "CVSG",
+   "company": "CVS Group PLC",
+   "chart": "lite/CVSG.json?v=2026-10-19.a012",
+   "scored": "2026-10-19",
+   "marks": 29
+  },
+  {
    "ticker": "DFCH",
    "company": "Distribution Finance Capital Holdings PLC",
    "chart": "lite/DFCH.json?v=2026-10-19.97eb",
    "scored": "2026-10-19",
    "marks": 33
+  },
+  {
+   "ticker": "DFS",
+   "company": "DFS Furniture PLC",
+   "chart": "lite/DFS.json?v=2026-10-19.15e7",
+   "scored": "2026-10-19",
+   "marks": 23
   },
   {
    "ticker": "DIAL",
@@ -359,6 +429,13 @@
    "chart": "lite/GATC.json?v=2026-10-19.2ddb",
    "scored": "2026-10-19",
    "marks": 22
+  },
+  {
+   "ticker": "GEM",
+   "company": "Gemfields Group Ltd",
+   "chart": "lite/GEM.json?v=2026-10-19.228c",
+   "scored": "2026-10-19",
+   "marks": 57
   },
   {
    "ticker": "GEMR",
@@ -596,6 +673,13 @@
    "marks": 23
   },
   {
+   "ticker": "ONDO",
+   "company": "Ondo Insurtech PLC",
+   "chart": "lite/ONDO.json?v=2026-10-19.e9c8",
+   "scored": "2026-10-19",
+   "marks": 16
+  },
+  {
    "ticker": "OXIG",
    "company": "Oxford Instruments PLC",
    "chart": "lite/OXIG.json?v=2026-10-19.1528",
@@ -657,6 +741,13 @@
    "chart": "lite/QTX.json?v=2026-10-19.8b9b",
    "scored": "2026-10-19",
    "marks": 31
+  },
+  {
+   "ticker": "RBN",
+   "company": "Robinson PLC",
+   "chart": "lite/RBN.json?v=2026-10-19.256b",
+   "scored": "2026-10-19",
+   "marks": 21
   },
   {
    "ticker": "RCH",
@@ -737,6 +828,14 @@
    "src": "snapshots"
   },
   {
+   "ticker": "SHR",
+   "company": "Shaires Holdings Ltd",
+   "chart": "lite/SHR.json?v=2026-10-19.e888",
+   "scored": "2026-10-19",
+   "marks": 1,
+   "src": "snapshots"
+  },
+  {
    "ticker": "SKL",
    "company": "Skillcast Group PLC",
    "chart": "lite/SKL.json?v=2026-10-19.7379",
@@ -786,6 +885,13 @@
    "marks": 25
   },
   {
+   "ticker": "SSTY",
+   "company": "Safestay PLC",
+   "chart": "lite/SSTY.json?v=2026-10-19.96eb",
+   "scored": "2026-10-19",
+   "marks": 19
+  },
+  {
    "ticker": "SUN",
    "company": "Surgical Innovations Group PLC",
    "chart": "lite/SUN.json?v=2026-10-19.3a7b",
@@ -828,6 +934,20 @@
    "marks": 26
   },
   {
+   "ticker": "TLW",
+   "company": "Tullow Oil PLC",
+   "chart": "lite/TLW.json?v=2026-10-19.e38e",
+   "scored": "2026-10-19",
+   "marks": 33
+  },
+  {
+   "ticker": "TND",
+   "company": "Tandem Group PLC",
+   "chart": "lite/TND.json?v=2026-10-19.757e",
+   "scored": "2026-10-19",
+   "marks": 22
+  },
+  {
    "ticker": "TPK",
    "company": "Travis Perkins PLC",
    "chart": "lite/TPK.json?v=2026-10-19.fcf2",
@@ -856,11 +976,25 @@
    "marks": 20
   },
   {
+   "ticker": "TST",
+   "company": "Touchstar PLC",
+   "chart": "lite/TST.json?v=2026-10-19.2deb",
+   "scored": "2026-10-19",
+   "marks": 20
+  },
+  {
    "ticker": "TSTL",
    "company": "Tristel PLC",
    "chart": "lite/TSTL.json?v=2026-10-19.2f45",
    "scored": "2026-10-19",
    "marks": 19
+  },
+  {
+   "ticker": "UU.",
+   "company": "United Utilities Group PLC",
+   "chart": "lite/UU.json?v=2026-10-19.3b1f",
+   "scored": "2026-10-19",
+   "marks": 21
   },
   {
    "ticker": "VIC",
@@ -918,6 +1052,13 @@
    "scored": "2026-10-19",
    "marks": 7,
    "src": "snapshots"
+  },
+  {
+   "ticker": "WVIA",
+   "company": "Winvia Entertainment PLC",
+   "chart": "lite/WVIA.json?v=2026-10-19.6ae4",
+   "scored": "2026-10-19",
+   "marks": 4
   },
   {
    "ticker": "XPS",
