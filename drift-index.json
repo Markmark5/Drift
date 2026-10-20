@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "tickers": [
     {
       "ticker": "STAF",
@@ -1547,35 +1547,17 @@
       "company": "Genuit Group plc",
       "kind": "ticker",
       "direction": "down",
-      "headline": "All three conditions fire: LFL negative two prints running, vitality now withheld at H1 too",
-      "trigger": "Cond 1 hard (2 consecutive red on Rank 1) · Cond 2 text (-2) · Cond 3 drift (R4 withheld)",
+      "headline": "Guidance cut to £84m, seven million below the consensus floor; like-for-like still negative but improving for a third straight print",
+      "trigger": "Cond 1 hard/G (CUT to £84m) · Cond 2 text (-3) · Cond 3 drift (vitality withheld)",
       "alert": true,
       "fired": 3,
       "fired_of": 3,
       "lights": "rrr",
-      "rns_type": "H1 R",
-      "rns_date": "2026-08-11",
-      "build_date": "2026-08-11",
-      "spec_version": "v5.3",
-      "trend": {
-        "mode": "share",
-        "cells": "a-r",
-        "rows": [
-          {
-            "m": "REV",
-            "gap": -1.4
-          },
-          {
-            "m": "EBITDA",
-            "gap": null
-          },
-          {
-            "m": "PBT",
-            "gap": -2.7
-          }
-        ]
-      },
-      "next_test": "Nov-2026 trading update — does the May–June LFL recovery hold, and does vitality return",
+      "rns_type": "YE-TU",
+      "rns_date": "2026-10-20",
+      "build_date": "2026-10-20",
+      "spec_version": "v5.8",
+      "next_test": "Mar-2027 full year results — whether £84m holds, whether like-for-like turns positive, and whether vitality returns to print",
       "grid": {
         "labels": [
           "R1",
@@ -1602,9 +1584,35 @@
           "--rxrxrxx",
           "------r-g"
         ],
-        "note": "R1 LFL · R2 UOP · R3 margin · R4 vitality · R5 cash conv., half grain, right-anchored on H1 FY26."
+        "note": "R1 like-for-like · R2 profit · R3 margin · R4 vitality · R5 cash conversion, half grain, right-anchored on H1 FY26 — the latest scored column."
       },
-      "url": "GEN.html"
+      "url": "GEN.html",
+      "prev": {
+        "direction": "down",
+        "fired": 3,
+        "lights": "rrr",
+        "rns_date": "2026-08-11",
+        "rns_type": "H1 R"
+      },
+      "trend": {
+        "mode": "share",
+        "cells": "a-r",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": -1.1
+          },
+          {
+            "m": "EBITDA",
+            "gap": null
+          },
+          {
+            "m": "PBT",
+            "gap": -2.7
+          }
+        ]
+      },
+      "chart": "charts/GEN.json?v=2026-10-20.b99d"
     },
     {
       "ticker": "ZOO",
