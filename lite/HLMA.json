@@ -1,6 +1,6 @@
 {
  "ticker": "HLMA",
- "v": "2026-10-20.6854",
+ "v": "2026-10-20.e0cd",
  "ccy": "GBX",
  "src": "AlphaVantage HLMA.LON weekly",
  "adj": [],
@@ -1154,6 +1154,15 @@
    "file": "20240314_HLMA_Trading-Update.md"
   },
   {
+   "d": "2024-06-13",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "We expect to deliver good organic constant currency7 revenue growth in the year ahead, and an Adjusted1 EBIT margin4 of around 21%, in the middle of our target range.",
+   "file": "20240613_HLMA_Full-Year-Results.md"
+  },
+  {
    "d": "2024-09-26",
    "doc": "H1 TU",
    "fy": "FY25",
@@ -1161,6 +1170,15 @@
    "s": 0,
    "q": "Our guidance for the full year to March 2025, for good organic constant currency1 revenue growth and an Adjusted EBIT margin2 of around 21%, remains unchanged from that given in our full year 2024 results announcement in June3.",
    "file": "20240926_HLMA_Trading-Update.md"
+  },
+  {
+   "d": "2024-11-21",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The strength of our first half performance means that we are well placed to deliver our existing guidance for the 2025 financial year.",
+   "file": "20241121_HLMA_Half-Year-Results.md"
   },
   {
    "d": "2025-03-13",
@@ -1172,6 +1190,15 @@
    "file": "20250313_HLMA_Trading-Update.md"
   },
   {
+   "d": "2025-06-12",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "While the geopolitical and economic environment remains uncertain, we currently expect to deliver upper single digit percentage organic constant currency revenue growth in this financial year.",
+   "file": "20250612_HLMA_Full-Year-Results.md"
+  },
+  {
    "d": "2025-09-25",
    "doc": "H1 TU",
    "fy": "FY26",
@@ -1181,6 +1208,15 @@
    "file": "20250925_HLMA_Trading-Update.md"
   },
   {
+   "d": "2025-11-20",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "We now expect to deliver, for the year as a whole, mid-teens percentage organic constant currency6 revenue growth, including a continued benefit from the premium growth in photonics within the Environmental & Analysis Sector, and an Adjusted1 EBIT margin (excluding the one-off profit in the first half) of around 22%10.",
+   "file": "20251120_HLMA_Half-Year-Results.md"
+  },
+  {
    "d": "2026-03-12",
    "doc": "YE-TU",
    "fy": "FY26",
@@ -1188,6 +1224,15 @@
    "s": 0,
    "q": "We have made further strong progress in the second half of this financial year to date, consistent with the upgraded guidance given in our Half Year results published in November 2025.",
    "file": "20260312_HLMA_Trading-Update.md"
+  },
+  {
+   "d": "2026-06-11",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "While the economic and geopolitical environment remains uncertain and our companies continue to experience varied conditions in their end markets, we currently expect to deliver low double-digit percentage organic8 constant currency revenue growth in this financial year, including premium10 growth of approximately five percentage points from our photonics business.",
+   "file": "20260611_HLMA_Full-Year-Results.md"
   },
   {
    "d": "2026-09-24",

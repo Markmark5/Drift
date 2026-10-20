@@ -1,6 +1,6 @@
 {
  "ticker": "OTB",
- "v": "2026-10-20.368f",
+ "v": "2026-10-20.892a",
  "ccy": "GBX",
  "src": "AlphaVantage OTB.LON weekly",
  "adj": [],
@@ -1217,6 +1217,15 @@
    "q": "FY25 adjusted PBT on a continuing basis (excluding B2B) is expected to be in the range of £34.5m - £35.5m.",
    "file": "20250924_OTB_2025-Pre-Close-Trading-Update-&-£25m-Share-Buyback.md",
    "gnote": "discounted: B2B wind-down (discontinued operations)"
+  },
+  {
+   "d": "2025-12-02",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is confident in delivering FY26 Adjusted PBT in the range of £39m-£43m, in line with market expectations.",
+   "file": "20251202_OTB_FINAL-RESULTS-FOR-YEAR-ENDED-30-SEPTEMBER-2025.md"
   },
   {
    "d": "2026-03-12",
