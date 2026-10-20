@@ -1,0 +1,1353 @@
+{
+ "ticker": "SOLI",
+ "v": "2026-10-20.fb4e",
+ "ccy": "GBX",
+ "src": "AlphaVantage SOLI.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   1086.2962
+  ],
+  [
+   "2021-10-22",
+   1131.1433
+  ],
+  [
+   "2021-10-29",
+   1081.3132
+  ],
+  [
+   "2021-11-05",
+   1171.0074
+  ],
+  [
+   "2021-11-12",
+   1175.9904
+  ],
+  [
+   "2021-11-19",
+   1245.7525
+  ],
+  [
+   "2021-11-26",
+   1200.9054
+  ],
+  [
+   "2021-12-03",
+   1151.0753
+  ],
+  [
+   "2021-12-10",
+   1031.4831
+  ],
+  [
+   "2021-12-17",
+   1161.0413
+  ],
+  [
+   "2021-12-24",
+   1335.4467
+  ],
+  [
+   "2021-12-31",
+   1370.3278
+  ],
+  [
+   "2022-01-07",
+   1310.5316
+  ],
+  [
+   "2022-01-14",
+   1230.8035
+  ],
+  [
+   "2022-01-21",
+   1046.4321
+  ],
+  [
+   "2022-01-28",
+   1046.4321
+  ],
+  [
+   "2022-02-04",
+   1171.0074
+  ],
+  [
+   "2022-02-11",
+   1195.9224
+  ],
+  [
+   "2022-02-18",
+   1215.8545
+  ],
+  [
+   "2022-02-25",
+   1036.4661
+  ],
+  [
+   "2022-03-04",
+   971.687
+  ],
+  [
+   "2022-03-11",
+   986.636
+  ],
+  [
+   "2022-03-18",
+   1051.4151
+  ],
+  [
+   "2022-03-25",
+   1116.1943
+  ],
+  [
+   "2022-04-01",
+   1161.0413
+  ],
+  [
+   "2022-04-08",
+   1071.3472
+  ],
+  [
+   "2022-04-14",
+   1061.3811
+  ],
+  [
+   "2022-04-22",
+   1111.2112
+  ],
+  [
+   "2022-04-29",
+   1116.1943
+  ],
+  [
+   "2022-05-06",
+   1086.2962
+  ],
+  [
+   "2022-05-13",
+   1026.5001
+  ],
+  [
+   "2022-05-20",
+   1051.4151
+  ],
+  [
+   "2022-05-27",
+   1046.4321
+  ],
+  [
+   "2022-06-01",
+   1076.3302
+  ],
+  [
+   "2022-06-10",
+   1091.2792
+  ],
+  [
+   "2022-06-17",
+   1086.2962
+  ],
+  [
+   "2022-06-24",
+   1131.1433
+  ],
+  [
+   "2022-07-01",
+   1131.1433
+  ],
+  [
+   "2022-07-08",
+   1131.1433
+  ],
+  [
+   "2022-07-15",
+   1060.0
+  ],
+  [
+   "2022-07-22",
+   1130.0
+  ],
+  [
+   "2022-07-29",
+   1110.0
+  ],
+  [
+   "2022-08-05",
+   1125.0
+  ],
+  [
+   "2022-08-12",
+   1125.0
+  ],
+  [
+   "2022-08-19",
+   1130.0
+  ],
+  [
+   "2022-08-26",
+   1150.0
+  ],
+  [
+   "2022-09-02",
+   1125.0
+  ],
+  [
+   "2022-09-09",
+   1120.0
+  ],
+  [
+   "2022-09-16",
+   1085.0
+  ],
+  [
+   "2022-09-23",
+   1090.0
+  ],
+  [
+   "2022-09-30",
+   1015.0
+  ],
+  [
+   "2022-10-07",
+   1025.0
+  ],
+  [
+   "2022-10-14",
+   1025.0
+  ],
+  [
+   "2022-10-21",
+   1025.0
+  ],
+  [
+   "2022-10-28",
+   1125.0
+  ],
+  [
+   "2022-11-04",
+   1160.0
+  ],
+  [
+   "2022-11-11",
+   1260.0
+  ],
+  [
+   "2022-11-18",
+   1235.0
+  ],
+  [
+   "2022-11-25",
+   1245.0
+  ],
+  [
+   "2022-12-02",
+   1295.0
+  ],
+  [
+   "2022-12-09",
+   1335.0
+  ],
+  [
+   "2022-12-16",
+   1415.0
+  ],
+  [
+   "2022-12-23",
+   1400.0
+  ],
+  [
+   "2022-12-30",
+   1410.0
+  ],
+  [
+   "2023-01-06",
+   1410.0
+  ],
+  [
+   "2023-01-13",
+   1332.5
+  ],
+  [
+   "2023-01-20",
+   1270.0
+  ],
+  [
+   "2023-01-27",
+   1330.0
+  ],
+  [
+   "2023-02-03",
+   1360.0
+  ],
+  [
+   "2023-02-10",
+   1340.0
+  ],
+  [
+   "2023-02-17",
+   1335.0
+  ],
+  [
+   "2023-02-24",
+   1320.0
+  ],
+  [
+   "2023-03-03",
+   1310.0
+  ],
+  [
+   "2023-03-10",
+   1260.0
+  ],
+  [
+   "2023-03-17",
+   1210.0
+  ],
+  [
+   "2023-03-24",
+   1110.0
+  ],
+  [
+   "2023-03-31",
+   1080.0
+  ],
+  [
+   "2023-04-06",
+   1167.5
+  ],
+  [
+   "2023-04-14",
+   1137.5
+  ],
+  [
+   "2023-04-21",
+   1135.0
+  ],
+  [
+   "2023-04-28",
+   1130.0
+  ],
+  [
+   "2023-05-05",
+   1130.0
+  ],
+  [
+   "2023-05-12",
+   1125.0
+  ],
+  [
+   "2023-05-19",
+   1125.0
+  ],
+  [
+   "2023-05-26",
+   1115.0
+  ],
+  [
+   "2023-06-02",
+   1125.0
+  ],
+  [
+   "2023-06-09",
+   1115.0
+  ],
+  [
+   "2023-06-16",
+   1185.0
+  ],
+  [
+   "2023-06-23",
+   1190.0
+  ],
+  [
+   "2023-06-30",
+   1190.0
+  ],
+  [
+   "2023-07-07",
+   1260.0
+  ],
+  [
+   "2023-07-14",
+   1290.0
+  ],
+  [
+   "2023-07-21",
+   1315.0
+  ],
+  [
+   "2023-07-28",
+   1325.0
+  ],
+  [
+   "2023-08-04",
+   1370.0
+  ],
+  [
+   "2023-08-11",
+   1365.0
+  ],
+  [
+   "2023-08-18",
+   1280.0
+  ],
+  [
+   "2023-08-25",
+   1255.0
+  ],
+  [
+   "2023-09-01",
+   1310.0
+  ],
+  [
+   "2023-09-08",
+   1315.0
+  ],
+  [
+   "2023-09-15",
+   1295.0
+  ],
+  [
+   "2023-09-22",
+   1130.0
+  ],
+  [
+   "2023-09-29",
+   1185.0
+  ],
+  [
+   "2023-10-06",
+   1170.0
+  ],
+  [
+   "2023-10-13",
+   1095.0
+  ],
+  [
+   "2023-10-20",
+   1025.0
+  ],
+  [
+   "2023-10-27",
+   1090.0
+  ],
+  [
+   "2023-11-03",
+   1225.0
+  ],
+  [
+   "2023-11-10",
+   1285.0
+  ],
+  [
+   "2023-11-17",
+   1355.0
+  ],
+  [
+   "2023-11-24",
+   1325.0
+  ],
+  [
+   "2023-12-01",
+   1380.0
+  ],
+  [
+   "2023-12-08",
+   1290.0
+  ],
+  [
+   "2023-12-15",
+   1340.0
+  ],
+  [
+   "2023-12-22",
+   1370.0
+  ],
+  [
+   "2023-12-29",
+   1385.0
+  ],
+  [
+   "2024-01-05",
+   1405.0
+  ],
+  [
+   "2024-01-12",
+   1375.0
+  ],
+  [
+   "2024-01-19",
+   1350.0
+  ],
+  [
+   "2024-01-26",
+   1280.0
+  ],
+  [
+   "2024-02-02",
+   1240.0
+  ],
+  [
+   "2024-02-09",
+   1130.0
+  ],
+  [
+   "2024-02-16",
+   1230.0
+  ],
+  [
+   "2024-02-23",
+   1245.0
+  ],
+  [
+   "2024-03-01",
+   1245.0
+  ],
+  [
+   "2024-03-08",
+   1330.0
+  ],
+  [
+   "2024-03-15",
+   1335.0
+  ],
+  [
+   "2024-03-22",
+   1390.0
+  ],
+  [
+   "2024-03-28",
+   1345.0
+  ],
+  [
+   "2024-04-05",
+   1340.0
+  ],
+  [
+   "2024-04-12",
+   1345.0
+  ],
+  [
+   "2024-04-19",
+   1365.0
+  ],
+  [
+   "2024-04-26",
+   1370.0
+  ],
+  [
+   "2024-05-03",
+   1375.0
+  ],
+  [
+   "2024-05-10",
+   1470.0
+  ],
+  [
+   "2024-05-17",
+   1520.0
+  ],
+  [
+   "2024-05-24",
+   1495.0
+  ],
+  [
+   "2024-05-31",
+   1495.0
+  ],
+  [
+   "2024-06-07",
+   1495.0
+  ],
+  [
+   "2024-06-14",
+   1520.0
+  ],
+  [
+   "2024-06-21",
+   1505.0
+  ],
+  [
+   "2024-06-28",
+   1490.0
+  ],
+  [
+   "2024-07-05",
+   1530.0
+  ],
+  [
+   "2024-07-12",
+   1465.0
+  ],
+  [
+   "2024-07-19",
+   1505.0
+  ],
+  [
+   "2024-07-26",
+   1400.0
+  ],
+  [
+   "2024-08-02",
+   1405.0
+  ],
+  [
+   "2024-08-09",
+   1400.0
+  ],
+  [
+   "2024-08-16",
+   1370.0
+  ],
+  [
+   "2024-08-23",
+   1360.0
+  ],
+  [
+   "2024-08-30",
+   1365.0
+  ],
+  [
+   "2024-09-06",
+   1292.5
+  ],
+  [
+   "2024-09-13",
+   1210.0
+  ],
+  [
+   "2024-09-20",
+   1235.0
+  ],
+  [
+   "2024-09-27",
+   1165.0
+  ],
+  [
+   "2024-10-04",
+   250.0
+  ],
+  [
+   "2024-10-11",
+   252.5
+  ],
+  [
+   "2024-10-18",
+   232.5
+  ],
+  [
+   "2024-10-25",
+   225.0
+  ],
+  [
+   "2024-11-01",
+   235.0
+  ],
+  [
+   "2024-11-08",
+   212.5
+  ],
+  [
+   "2024-11-15",
+   137.5
+  ],
+  [
+   "2024-11-22",
+   132.5
+  ],
+  [
+   "2024-11-29",
+   135.0
+  ],
+  [
+   "2024-12-06",
+   123.5
+  ],
+  [
+   "2024-12-13",
+   130.0
+  ],
+  [
+   "2024-12-20",
+   127.5
+  ],
+  [
+   "2024-12-24",
+   127.5
+  ],
+  [
+   "2024-12-27",
+   127.5
+  ],
+  [
+   "2025-01-03",
+   137.5
+  ],
+  [
+   "2025-01-10",
+   160.0
+  ],
+  [
+   "2025-01-17",
+   160.0
+  ],
+  [
+   "2025-01-24",
+   147.5
+  ],
+  [
+   "2025-01-31",
+   132.5
+  ],
+  [
+   "2025-02-07",
+   145.0
+  ],
+  [
+   "2025-02-14",
+   150.0
+  ],
+  [
+   "2025-02-21",
+   152.5
+  ],
+  [
+   "2025-02-28",
+   132.5
+  ],
+  [
+   "2025-03-07",
+   167.5
+  ],
+  [
+   "2025-03-14",
+   200.0
+  ],
+  [
+   "2025-03-21",
+   190.0
+  ],
+  [
+   "2025-03-28",
+   167.5
+  ],
+  [
+   "2025-04-04",
+   147.5
+  ],
+  [
+   "2025-04-11",
+   155.0
+  ],
+  [
+   "2025-04-17",
+   155.0
+  ],
+  [
+   "2025-04-25",
+   167.5
+  ],
+  [
+   "2025-05-02",
+   190.0
+  ],
+  [
+   "2025-05-09",
+   195.0
+  ],
+  [
+   "2025-05-16",
+   190.0
+  ],
+  [
+   "2025-05-23",
+   180.0
+  ],
+  [
+   "2025-05-30",
+   170.0
+  ],
+  [
+   "2025-06-06",
+   195.0
+  ],
+  [
+   "2025-06-13",
+   186.0
+  ],
+  [
+   "2025-06-20",
+   186.0
+  ],
+  [
+   "2025-06-27",
+   205.0
+  ],
+  [
+   "2025-07-04",
+   205.0
+  ],
+  [
+   "2025-07-11",
+   186.0
+  ],
+  [
+   "2025-07-18",
+   176.5
+  ],
+  [
+   "2025-07-25",
+   180.0
+  ],
+  [
+   "2025-08-01",
+   167.5
+  ],
+  [
+   "2025-08-08",
+   167.5
+  ],
+  [
+   "2025-08-15",
+   157.5
+  ],
+  [
+   "2025-08-22",
+   156.5
+  ],
+  [
+   "2025-08-29",
+   156.5
+  ],
+  [
+   "2025-09-05",
+   150.0
+  ],
+  [
+   "2025-09-12",
+   156.5
+  ],
+  [
+   "2025-09-19",
+   170.0
+  ],
+  [
+   "2025-09-26",
+   165.0
+  ],
+  [
+   "2025-10-03",
+   175.0
+  ],
+  [
+   "2025-10-10",
+   177.5
+  ],
+  [
+   "2025-10-17",
+   162.5
+  ],
+  [
+   "2025-10-24",
+   150.0
+  ],
+  [
+   "2025-10-31",
+   147.5
+  ],
+  [
+   "2025-11-07",
+   145.0
+  ],
+  [
+   "2025-11-14",
+   147.5
+  ],
+  [
+   "2025-11-21",
+   142.5
+  ],
+  [
+   "2025-11-28",
+   142.5
+  ],
+  [
+   "2025-12-05",
+   157.5
+  ],
+  [
+   "2025-12-12",
+   155.0
+  ],
+  [
+   "2025-12-19",
+   160.0
+  ],
+  [
+   "2025-12-24",
+   160.0
+  ],
+  [
+   "2026-01-02",
+   160.0
+  ],
+  [
+   "2026-01-09",
+   175.0
+  ],
+  [
+   "2026-01-16",
+   176.0
+  ],
+  [
+   "2026-01-23",
+   162.5
+  ],
+  [
+   "2026-01-30",
+   162.5
+  ],
+  [
+   "2026-02-06",
+   160.0
+  ],
+  [
+   "2026-02-13",
+   160.0
+  ],
+  [
+   "2026-02-20",
+   165.0
+  ],
+  [
+   "2026-02-27",
+   170.0
+  ],
+  [
+   "2026-03-06",
+   165.0
+  ],
+  [
+   "2026-03-13",
+   161.0
+  ],
+  [
+   "2026-03-20",
+   152.5
+  ],
+  [
+   "2026-03-27",
+   142.5
+  ],
+  [
+   "2026-04-02",
+   138.5
+  ],
+  [
+   "2026-04-10",
+   160.0
+  ],
+  [
+   "2026-04-17",
+   157.5
+  ],
+  [
+   "2026-04-24",
+   163.0
+  ],
+  [
+   "2026-05-01",
+   170.0
+  ],
+  [
+   "2026-05-08",
+   170.0
+  ],
+  [
+   "2026-05-15",
+   170.0
+  ],
+  [
+   "2026-05-22",
+   170.0
+  ],
+  [
+   "2026-05-29",
+   205.0
+  ],
+  [
+   "2026-06-05",
+   180.0
+  ],
+  [
+   "2026-06-12",
+   180.0
+  ],
+  [
+   "2026-06-19",
+   195.0
+  ],
+  [
+   "2026-06-26",
+   192.5
+  ],
+  [
+   "2026-07-03",
+   197.5
+  ],
+  [
+   "2026-07-10",
+   197.5
+  ],
+  [
+   "2026-07-17",
+   195.0
+  ],
+  [
+   "2026-07-24",
+   185.0
+  ],
+  [
+   "2026-07-31",
+   191.5
+  ],
+  [
+   "2026-08-07",
+   186.0
+  ],
+  [
+   "2026-08-14",
+   182.5
+  ],
+  [
+   "2026-08-21",
+   195.0
+  ],
+  [
+   "2026-08-28",
+   188.5
+  ],
+  [
+   "2026-09-04",
+   189.5
+  ],
+  [
+   "2026-09-11",
+   188.5
+  ],
+  [
+   "2026-09-18",
+   171.5
+  ],
+  [
+   "2026-09-25",
+   162.5
+  ],
+  [
+   "2026-10-02",
+   166.0
+  ],
+  [
+   "2026-10-09",
+   165.0
+  ],
+  [
+   "2026-10-16",
+   162.5
+  ],
+  [
+   "2026-10-19",
+   161.5
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-10-21",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is confident that the Company will meet adjusted profit before tax consensus expectations for the year.",
+   "file": "20211021_SOLI_Trading-Update,-Notice-of-Results-&-Investor-Pres.md"
+  },
+  {
+   "d": "2021-12-07",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "This is evident in the order flow and the strong open order book, which gives the Board confidence in meeting expectations1 for the full year.",
+   "file": "20211207_SOLI_Interim-Results-&-Investor-Presentation.md"
+  },
+  {
+   "d": "2022-02-10",
+   "doc": "Q3 TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Following a continuation of the strong trading performance reported in the Interim Results in December, Solid State now expects to report revenues for the Period slightly ahead of current consensus expectations1 of at least £80.0m (2021: £66.3m) with adjusted profit before tax well ahead of current consensus expectations1.",
+   "file": "20220210_SOLI_Trading-Update.md"
+  },
+  {
+   "d": "2022-04-21",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Following an exceptionally strong finish to the Period, the Company expects to announce record results with revenues for FY22 of approximately £85m (2021: £66.3m) up 28% over the prior year, and adjusted profit before tax for the Period of approximately £7.2m (2021: £5.4m) up 33%; both ahead of recently upgraded consensus expectations1.",
+   "file": "20220421_SOLI_Trading-Update.md"
+  },
+  {
+   "d": "2022-07-12",
+   "doc": "OPS",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The open orderbook has continued to build and at the end of May 2022 stood at £89.7 million which, combined with the strong start to the year, gives the Directors confidence in the Company's performance in the current financial year.",
+   "file": "20220712_SOLI_Acquisition,-Placing-to-raise-c.£25m-&-Open-Offer.md"
+  },
+  {
+   "d": "2022-07-27",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "This excellent start, combined with the Group's strong financial footing, technology, capabilities, engineering specialisms, and its sector penetration in areas which are political priorities, for example in defence, transportation and medical, mean the Board is confident that the Group is well placed to deliver continued growth.",
+   "file": "20220727_SOLI_Final-Results,-Analyst-Briefing-&-Investor-Pres.md"
+  },
+  {
+   "d": "2022-09-07",
+   "doc": "AGM",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The strong start to the year, record open order book and trading momentum underpin the near-term prospects and give the Directors optimism for the outturn being at least in-line with analyst expectations and exciting midterm future prospects.",
+   "file": "20220907_SOLI_AGM-Statement.md"
+  },
+  {
+   "d": "2022-10-26",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 1,
+   "q": "The strong trading, combined with further currency benefit in the second half of the Year, means the Company expects to exceed the current revenue expectations1 and be marginally ahead of the adjusted PBT consensus expectations1 for FY23, despite the expected increase in interest charges.",
+   "file": "20221026_SOLI_Trading-Update.md"
+  },
+  {
+   "d": "2022-11-14",
+   "doc": "OPS",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Delivery is expected within the current financial year, which will contribute towards achieving current market expectations.",
+   "file": "20221114_SOLI_£7.3m-Defence-Contract-with-NATO.md"
+  },
+  {
+   "d": "2022-11-22",
+   "doc": "OPS",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The revenues from this contract are expected to contribute towards market expectations for the financial year 2023/2024.",
+   "file": "20221122_SOLI_£9.8m-Follow-On-Defence-Contract-with-NATO.md"
+  },
+  {
+   "d": "2022-12-06",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 1,
+   "q": "The Board is confident of exceeding previous expectations for the year ending 31 March 2023.",
+   "file": "20221206_SOLI_Interim-Results,-Analyst-Briefing-&-Investor-Pres.md"
+  },
+  {
+   "d": "2023-04-04",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is pleased to report continued strong trading in the second half of the year, resulting in a performance for the Period that is at least in line with consensus expectations1.",
+   "file": "20230404_SOLI_Trading-Update.md"
+  },
+  {
+   "d": "2023-07-04",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 1,
+   "q": "This, leads Board to expect revenue for the 12 months ending 31 March 2024 to be ahead of current consensus1, reflecting year on year growth in excess of 15%, and adjusted profit before tax to be marginally ahead of current consensus reflecting circa 10% year on year growth.",
+   "file": "20230704_SOLI_Final-Results,-Analyst-Briefing-&-Investor-Pres.md"
+  },
+  {
+   "d": "2023-09-06",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is confident in meeting the recently upgraded forecasts1 for the full year and in managing supply chain and input cost risks which remain stubborn, whilst also being mindful of the current macro-economic risks.",
+   "file": "20230906_SOLI_AGM-Statement.md"
+  },
+  {
+   "d": "2023-10-30",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 1,
+   "q": "As a result of the strong start to the year, on a full-year basis, the Directors expect to deliver stronger than anticipated organic revenue growth, meaning the Group is expected to be marginally ahead of current consensus revenue and adjusted PBT expectations for the year ending 31 March 2024.",
+   "file": "20231030_SOLI_Trading-Update.md"
+  },
+  {
+   "d": "2023-12-05",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Robust orderbook of £108.6m at 31 October 2023 combined with a strong prospect pipeline, gives the Directors confidence in meeting full year consensus analyst expectations1.",
+   "file": "20231205_SOLI_Interim-Results,-Analyst-Briefing-&-Investor-Pres.md"
+  },
+  {
+   "d": "2024-03-27",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -1,
+   "q": "The acceleration of revenues into the current year is reflected commensurately in the updated expectations for FY25.",
+   "file": "20240327_SOLI_Trading-Update.md"
+  },
+  {
+   "d": "2024-07-08",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -2,
+   "q": "However, pleasingly, year-to-date trading has been broadly in line with management expectations, which supports management confidence over the full year expectations.",
+   "file": "20240708_SOLI_Final-Results,-Analyst-Briefing-&-Investor-Pres.md"
+  },
+  {
+   "d": "2024-11-06",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Directors are pleased to report that the Group is trading in-line with market expectations for the full year.",
+   "file": "20241106_SOLI_Trading-Update.md"
+  },
+  {
+   "d": "2024-11-15",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -3,
+   "q": "As a result, the Company's performance for FY24/25 will be materially below current consensus expectations.",
+   "file": "20241115_SOLI_Trading-Update.md"
+  },
+  {
+   "d": "2024-12-10",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The open orderbook on 30 September 2024 of £76.6m (H1 23/24: £99.7m) has rebuilt to £85.5m on 30 November 2024, which combined with a strong prospect pipeline, gives the Directors confidence in meeting revised full year consensus analyst expectations1.",
+   "file": "20241210_SOLI_Interim-Results,-Analyst-Briefing-&-Investor-Pres.md"
+  },
+  {
+   "d": "2025-03-11",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 1,
+   "q": "We welcome this large order which improves our earnings prospects for FY25/26 and will enable us to increase investment and support organic growth across the business.",
+   "file": "20250311_SOLI_$25m-Communications-Equipment-Order.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2025-04-30",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 1,
+   "q": "The Directors are expecting to report revenues and adjusted profit before tax* for FY 24/25 of at least £124 million and £4.25 million respectively, each ahead of consensus expectations1.",
+   "file": "20250430_SOLI_Trading-Update-&-Notice-of-Results.md"
+  },
+  {
+   "d": "2025-07-08",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The orderbook at 31 May 2025 was £101.6m which gives the Board the confidence to re-confirm that we remain on track to deliver the consensus revenue and earnings for FY25/26.",
+   "file": "20250708_SOLI_Final-Results,-Analyst-Briefing-&-Investor-Pres.md"
+  },
+  {
+   "d": "2025-11-04",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "This reflects a strong trading position notwithstanding global geo-political risks and economic variables, giving the Directors further confidence in meeting expectations for the full year.",
+   "file": "20251104_SOLI_Trading-Update-&-Notice-of-Results.md"
+  },
+  {
+   "d": "2025-12-01",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Whilst order intake was slower in H1 2025/26, pleasingly we have seen order intake recover strongly at the beginning of H2 and the Directors remain confident in meeting consensus market expectations for FY25/26.",
+   "file": "20251201_SOLI_Interim-Results,-Analyst-Briefing-&-Investor-Pres.md"
+  },
+  {
+   "d": "2026-04-08",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 2,
+   "q": "This strong trading means revenue is expected to be ahead of consensus market expectations1 and not less than £150m and adjusted profit before tax will accordingly also be ahead of consensus1 market expectations for FY25/26.",
+   "file": "20260408_SOLI_Trading-Update.md"
+  },
+  {
+   "d": "2026-06-29",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "RAISE",
+   "s": 1,
+   "q": "The Group has had a good start to the new financial year with current trading in line with the Board's expectations, and we expect to exceed current market expectations for FY26/27.",
+   "file": "20260629_SOLI_Final-Results,-Analyst-Briefing-&-Investor-Pres.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-06-29",
+  "doc": "FY R",
+  "file": "20260629_SOLI_Final-Results,-Analyst-Briefing-&-Investor-Pres.md",
+  "vs": "FY R Jul-25 · TU Apr-26 · back to Nov-25/Dec-25 and Oct-21",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Target dropped",
+    "text": "Margin goal: Nov-25 “the Group's medium-term goal of exceeding 10.0% adjusted operating margins”, Dec-25 “positive step towards the mid-term goal of circa 10%” → now no margin target; FY27 “the Board anticipates operating margins will remain broadly stable”",
+    "span": "Given at Nov-25 and Dec-25 → absent Jun-26"
+   },
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "First mention: “delays to the publication of the UK Defence Investment Plan have created uncertainty around the timing of expected defence spending translating into contracted programmes”",
+    "span": "Not in Jul-25 FY R or Apr-26 TU"
+   },
+   {
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "Order book delivery share: Jul-25 “Approximately 95% of the total orderbook is expected to be delivered in the current financial year.” → now “The majority of the current order book is expected to be delivered over the next 18 months”",
+    "span": "% given Oct-21, Sep-23, Oct-23, Nov-24, Apr-25, Jul-25, Nov-25 → words since Apr-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Restated",
+    "text": "FY25 comparatives in the KPI table: ROCE 9.8% (Jul-25) → 8.7%; open order book at 31 May 2025 “was £101.6m” (Jul-25) → £103.4m, so the year-on-year order book now shows −1.0%",
+    "span": "Jul-25 FY R vs Jun-26 FY R highlights table"
+   }
+  ]
+ }
+}
