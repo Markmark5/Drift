@@ -375,6 +375,13 @@
    "marks": 24
   },
   {
+   "ticker": "CRW",
+   "company": "Craneware PLC",
+   "chart": "lite/CRW.json?v=2026-10-20.953d",
+   "scored": "2026-10-20",
+   "marks": 25
+  },
+  {
    "ticker": "CTG",
    "company": "Christie Group PLC",
    "chart": "lite/CTG.json?v=2026-10-19.c9e9",
@@ -394,6 +401,13 @@
    "chart": "lite/CWR.json?v=2026-10-20.beaa",
    "scored": "2026-10-20",
    "marks": 22
+  },
+  {
+   "ticker": "DEBS",
+   "company": "Boohoo Group PLC (Debenhams Group)",
+   "chart": "lite/DEBS.json?v=2026-10-20.3b90",
+   "scored": "2026-10-20",
+   "marks": 23
   },
   {
    "ticker": "DFCH",
@@ -429,6 +443,13 @@
    "chart": "lite/EBQ.json?v=2026-10-19.73fb",
    "scored": "2026-10-19",
    "marks": 21
+  },
+  {
+   "ticker": "ELIX",
+   "company": "Elixirr International PLC",
+   "chart": "lite/ELIX.json?v=2026-10-20.7e15",
+   "scored": "2026-10-20",
+   "marks": 19
   },
   {
    "ticker": "EMG",
@@ -543,6 +564,13 @@
    "marks": 17
   },
   {
+   "ticker": "GFRD",
+   "company": "Galliford Try Holdings PLC",
+   "chart": "lite/GFRD.json?v=2026-10-20.996b",
+   "scored": "2026-10-20",
+   "marks": 27
+  },
+  {
    "ticker": "GMS",
    "company": "Gulf Marine Services PLC",
    "chart": "lite/GMS.json?v=2026-10-20.6328",
@@ -555,6 +583,13 @@
    "chart": "lite/GNC.json?v=2026-10-19.7345",
    "scored": "2026-10-19",
    "marks": 7
+  },
+  {
+   "ticker": "GTC",
+   "company": "GETECH Group PLC",
+   "chart": "lite/GTC.json?v=2026-10-20.1c33",
+   "scored": "2026-10-20",
+   "marks": 20
   },
   {
    "ticker": "HLMA",
@@ -604,6 +639,13 @@
    "chart": "lite/INF.json?v=2026-10-19.92cf",
    "scored": "2026-10-19",
    "marks": 32
+  },
+  {
+   "ticker": "INVP",
+   "company": "Investec PLC",
+   "chart": "lite/INVP.json?v=2026-10-20.6843",
+   "scored": "2026-10-20",
+   "marks": 22
   },
   {
    "ticker": "IOF",
@@ -740,6 +782,13 @@
    "marks": 22
   },
   {
+   "ticker": "MDZ",
+   "company": "MediaZest PLC",
+   "chart": "lite/MDZ.json?v=2026-10-20.7193",
+   "scored": "2026-10-20",
+   "marks": 25
+  },
+  {
    "ticker": "MERC",
    "company": "Mercia Asset Management PLC",
    "chart": "lite/MERC.json?v=2026-10-20.4990",
@@ -848,6 +897,13 @@
    "marks": 29
   },
   {
+   "ticker": "NXT",
+   "company": "Next PLC",
+   "chart": "lite/NXT.json?v=2026-10-20.f29b",
+   "scored": "2026-10-20",
+   "marks": 31
+  },
+  {
    "ticker": "OMG",
    "company": "Oxford Metrics PLC",
    "chart": "lite/OMG.json?v=2026-10-19.8f17",
@@ -953,6 +1009,13 @@
    "marks": 21
   },
   {
+   "ticker": "RCFX",
+   "company": "RC Fornax PLC",
+   "chart": "lite/RCFX.json?v=2026-10-20.1121",
+   "scored": "2026-10-20",
+   "marks": 12
+  },
+  {
    "ticker": "RCH",
    "company": "Reach PLC",
    "chart": "lite/RCH.json?v=2026-10-19.e369",
@@ -972,6 +1035,13 @@
    "chart": "lite/RE.json?v=2026-10-20.5c1e",
    "scored": "2026-10-20",
    "marks": 16
+  },
+  {
+   "ticker": "REVB",
+   "company": "Revolution Beauty Group PLC",
+   "chart": "lite/REVB.json?v=2026-10-20.ead0",
+   "scored": "2026-10-20",
+   "marks": 28
   },
   {
    "ticker": "RGG",
@@ -1021,6 +1091,13 @@
    "chart": "lite/RWA.json?v=2026-10-18.e348",
    "scored": "2026-10-18",
    "marks": 32
+  },
+  {
+   "ticker": "SAAS",
+   "company": "Microlise Group PLC",
+   "chart": "lite/SAAS.json?v=2026-10-20.96ed",
+   "scored": "2026-10-20",
+   "marks": 21
   },
   {
    "ticker": "SAGA",
@@ -1079,6 +1156,13 @@
    "chart": "lite/SKL.json?v=2026-10-19.7379",
    "scored": "2026-10-19",
    "marks": 22
+  },
+  {
+   "ticker": "SMIN",
+   "company": "Smiths Group PLC",
+   "chart": "lite/SMIN.json?v=2026-10-20.f0f8",
+   "scored": "2026-10-20",
+   "marks": 23
   },
   {
    "ticker": "SNWS",
@@ -1151,11 +1235,25 @@
    "marks": 19
   },
   {
+   "ticker": "SUP",
+   "company": "Supreme PLC",
+   "chart": "lite/SUP.json?v=2026-10-20.7c00",
+   "scored": "2026-10-20",
+   "marks": 26
+  },
+  {
    "ticker": "SUS",
    "company": "S & U PLC",
    "chart": "lite/SUS.json?v=2026-10-19.c649",
    "scored": "2026-10-19",
    "marks": 32
+  },
+  {
+   "ticker": "SYS",
+   "company": "SysGroup PLC",
+   "chart": "lite/SYS.json?v=2026-10-20.dbd0",
+   "scored": "2026-10-20",
+   "marks": 20
   },
   {
    "ticker": "SYS1",
@@ -1177,6 +1275,13 @@
    "chart": "lite/TBLD.json?v=2026-10-20.17c2",
    "scored": "2026-10-20",
    "marks": 21
+  },
+  {
+   "ticker": "TBTG",
+   "company": "The Beauty Tech Group PLC",
+   "chart": "lite/TBTG.json?v=2026-10-20.a5fc",
+   "scored": "2026-10-20",
+   "marks": 5
   },
   {
    "ticker": "TEP",
@@ -1207,6 +1312,13 @@
    "marks": 26
   },
   {
+   "ticker": "TIDE",
+   "company": "Crimson Tide PLC",
+   "chart": "lite/TIDE.json?v=2026-10-20.e750",
+   "scored": "2026-10-20",
+   "marks": 19
+  },
+  {
    "ticker": "TIN",
    "company": "Cornish Metals PLC",
    "chart": "lite/TIN.json?v=2026-10-20.0e36",
@@ -1220,6 +1332,13 @@
    "chart": "lite/TLW.json?v=2026-10-19.e38e",
    "scored": "2026-10-19",
    "marks": 33
+  },
+  {
+   "ticker": "TMG",
+   "company": "The Mission Group PLC",
+   "chart": "lite/TMG.json?v=2026-10-20.af68",
+   "scored": "2026-10-20",
+   "marks": 26
   },
   {
    "ticker": "TND",
@@ -1253,6 +1372,20 @@
    "ticker": "TRI",
    "company": "Trifast PLC",
    "chart": "lite/TRI.json?v=2026-10-20.d431",
+   "scored": "2026-10-20",
+   "marks": 30
+  },
+  {
+   "ticker": "TRT",
+   "company": "Transense Technologies PLC",
+   "chart": "lite/TRT.json?v=2026-10-20.c9a0",
+   "scored": "2026-10-20",
+   "marks": 22
+  },
+  {
+   "ticker": "TRU",
+   "company": "TruFin PLC",
+   "chart": "lite/TRU.json?v=2026-10-20.0177",
    "scored": "2026-10-20",
    "marks": 30
   },
@@ -1389,6 +1522,13 @@
    "chart": "lite/YOU.json?v=2026-10-19.d2a1",
    "scored": "2026-10-19",
    "marks": 37
+  },
+  {
+   "ticker": "YU.",
+   "company": "Yu Group PLC",
+   "chart": "lite/YU.json?v=2026-10-20.af60",
+   "scored": "2026-10-20",
+   "marks": 24
   },
   {
    "ticker": "ZIG",

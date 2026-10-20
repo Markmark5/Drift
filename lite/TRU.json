@@ -1,0 +1,1363 @@
+{
+ "ticker": "TRU",
+ "v": "2026-10-20.0177",
+ "ccy": "GBX",
+ "src": "Yahoo TRU.L weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-22",
+   71.2903
+  ],
+  [
+   "2021-10-29",
+   82.7566
+  ],
+  [
+   "2021-11-05",
+   77.2727
+  ],
+  [
+   "2021-11-12",
+   78.2698
+  ],
+  [
+   "2021-11-19",
+   78.2698
+  ],
+  [
+   "2021-11-26",
+   75.2786
+  ],
+  [
+   "2021-12-03",
+   74.78
+  ],
+  [
+   "2021-12-10",
+   76.2756
+  ],
+  [
+   "2021-12-17",
+   75.7771
+  ],
+  [
+   "2021-12-24",
+   74.78
+  ],
+  [
+   "2021-12-31",
+   80.2639
+  ],
+  [
+   "2022-01-07",
+   81.7595
+  ],
+  [
+   "2022-01-14",
+   87.2434
+  ],
+  [
+   "2022-01-21",
+   83.7536
+  ],
+  [
+   "2022-01-28",
+   80.2639
+  ],
+  [
+   "2022-02-04",
+   78.7683
+  ],
+  [
+   "2022-02-11",
+   77.2727
+  ],
+  [
+   "2022-02-18",
+   80.7624
+  ],
+  [
+   "2022-02-25",
+   80.7624
+  ],
+  [
+   "2022-03-04",
+   79.7654
+  ],
+  [
+   "2022-03-11",
+   82.258
+  ],
+  [
+   "2022-03-18",
+   82.258
+  ],
+  [
+   "2022-03-25",
+   80.0
+  ],
+  [
+   "2022-04-01",
+   85.0
+  ],
+  [
+   "2022-04-08",
+   82.5
+  ],
+  [
+   "2022-04-15",
+   82.5
+  ],
+  [
+   "2022-04-22",
+   82.5
+  ],
+  [
+   "2022-04-29",
+   82.5
+  ],
+  [
+   "2022-05-06",
+   82.5
+  ],
+  [
+   "2022-05-13",
+   77.5
+  ],
+  [
+   "2022-05-20",
+   72.5
+  ],
+  [
+   "2022-05-27",
+   72.5
+  ],
+  [
+   "2022-06-03",
+   72.5
+  ],
+  [
+   "2022-06-10",
+   81.5
+  ],
+  [
+   "2022-06-17",
+   81.5
+  ],
+  [
+   "2022-06-24",
+   80.0
+  ],
+  [
+   "2022-07-01",
+   79.0
+  ],
+  [
+   "2022-07-08",
+   78.0
+  ],
+  [
+   "2022-07-15",
+   77.5
+  ],
+  [
+   "2022-07-22",
+   76.0
+  ],
+  [
+   "2022-07-29",
+   71.5
+  ],
+  [
+   "2022-08-05",
+   67.5
+  ],
+  [
+   "2022-08-12",
+   67.5
+  ],
+  [
+   "2022-08-19",
+   67.5
+  ],
+  [
+   "2022-08-26",
+   69.0
+  ],
+  [
+   "2022-09-02",
+   69.0
+  ],
+  [
+   "2022-09-09",
+   70.0
+  ],
+  [
+   "2022-09-16",
+   72.0
+  ],
+  [
+   "2022-09-23",
+   68.5
+  ],
+  [
+   "2022-09-30",
+   67.5
+  ],
+  [
+   "2022-10-07",
+   67.5
+  ],
+  [
+   "2022-10-14",
+   66.5
+  ],
+  [
+   "2022-10-21",
+   62.5
+  ],
+  [
+   "2022-10-28",
+   60.5
+  ],
+  [
+   "2022-11-04",
+   59.5
+  ],
+  [
+   "2022-11-11",
+   57.5
+  ],
+  [
+   "2022-11-18",
+   62.5
+  ],
+  [
+   "2022-11-25",
+   64.0
+  ],
+  [
+   "2022-12-02",
+   63.5
+  ],
+  [
+   "2022-12-09",
+   64.0
+  ],
+  [
+   "2022-12-16",
+   63.5
+  ],
+  [
+   "2022-12-23",
+   67.5
+  ],
+  [
+   "2022-12-30",
+   66.5
+  ],
+  [
+   "2023-01-06",
+   63.0
+  ],
+  [
+   "2023-01-13",
+   62.0
+  ],
+  [
+   "2023-01-20",
+   57.0
+  ],
+  [
+   "2023-01-27",
+   69.4
+  ],
+  [
+   "2023-02-03",
+   67.0
+  ],
+  [
+   "2023-02-10",
+   67.5
+  ],
+  [
+   "2023-02-17",
+   67.5
+  ],
+  [
+   "2023-02-24",
+   68.0
+  ],
+  [
+   "2023-03-03",
+   71.5
+  ],
+  [
+   "2023-03-10",
+   70.5
+  ],
+  [
+   "2023-03-17",
+   69.0
+  ],
+  [
+   "2023-03-24",
+   67.5
+  ],
+  [
+   "2023-03-31",
+   67.0
+  ],
+  [
+   "2023-04-07",
+   67.0
+  ],
+  [
+   "2023-04-14",
+   66.5
+  ],
+  [
+   "2023-04-21",
+   68.0
+  ],
+  [
+   "2023-04-28",
+   71.0
+  ],
+  [
+   "2023-05-05",
+   70.0
+  ],
+  [
+   "2023-05-12",
+   68.5
+  ],
+  [
+   "2023-05-19",
+   68.0
+  ],
+  [
+   "2023-05-26",
+   68.0
+  ],
+  [
+   "2023-06-02",
+   68.0
+  ],
+  [
+   "2023-06-09",
+   68.0
+  ],
+  [
+   "2023-06-16",
+   68.0
+  ],
+  [
+   "2023-06-23",
+   65.5
+  ],
+  [
+   "2023-06-30",
+   65.5
+  ],
+  [
+   "2023-07-07",
+   64.5
+  ],
+  [
+   "2023-07-14",
+   66.0
+  ],
+  [
+   "2023-07-21",
+   66.0
+  ],
+  [
+   "2023-07-28",
+   67.5
+  ],
+  [
+   "2023-08-04",
+   68.5
+  ],
+  [
+   "2023-08-11",
+   67.5
+  ],
+  [
+   "2023-08-18",
+   67.5
+  ],
+  [
+   "2023-08-25",
+   67.5
+  ],
+  [
+   "2023-09-01",
+   67.5
+  ],
+  [
+   "2023-09-08",
+   67.5
+  ],
+  [
+   "2023-09-15",
+   65.5
+  ],
+  [
+   "2023-09-22",
+   63.5
+  ],
+  [
+   "2023-09-29",
+   63.5
+  ],
+  [
+   "2023-10-06",
+   61.5
+  ],
+  [
+   "2023-10-13",
+   60.5
+  ],
+  [
+   "2023-10-20",
+   56.5
+  ],
+  [
+   "2023-10-27",
+   56.5
+  ],
+  [
+   "2023-11-03",
+   56.5
+  ],
+  [
+   "2023-11-10",
+   56.5
+  ],
+  [
+   "2023-11-17",
+   56.5
+  ],
+  [
+   "2023-11-24",
+   55.5
+  ],
+  [
+   "2023-12-01",
+   49.0
+  ],
+  [
+   "2023-12-08",
+   48.5
+  ],
+  [
+   "2023-12-15",
+   48.5
+  ],
+  [
+   "2023-12-22",
+   48.5
+  ],
+  [
+   "2023-12-29",
+   50.0
+  ],
+  [
+   "2024-01-05",
+   48.5
+  ],
+  [
+   "2024-01-12",
+   46.5
+  ],
+  [
+   "2024-01-19",
+   45.0
+  ],
+  [
+   "2024-01-26",
+   49.0
+  ],
+  [
+   "2024-02-02",
+   48.5
+  ],
+  [
+   "2024-02-09",
+   50.5
+  ],
+  [
+   "2024-02-16",
+   50.0
+  ],
+  [
+   "2024-02-23",
+   51.0
+  ],
+  [
+   "2024-03-01",
+   51.5
+  ],
+  [
+   "2024-03-08",
+   55.0
+  ],
+  [
+   "2024-03-15",
+   60.5
+  ],
+  [
+   "2024-03-22",
+   65.5
+  ],
+  [
+   "2024-03-29",
+   69.0
+  ],
+  [
+   "2024-04-05",
+   71.0
+  ],
+  [
+   "2024-04-12",
+   71.0
+  ],
+  [
+   "2024-04-19",
+   69.0
+  ],
+  [
+   "2024-04-26",
+   69.0
+  ],
+  [
+   "2024-05-03",
+   71.5
+  ],
+  [
+   "2024-05-10",
+   73.5
+  ],
+  [
+   "2024-05-17",
+   80.0
+  ],
+  [
+   "2024-05-24",
+   83.0
+  ],
+  [
+   "2024-05-31",
+   84.5
+  ],
+  [
+   "2024-06-07",
+   85.5
+  ],
+  [
+   "2024-06-14",
+   81.0
+  ],
+  [
+   "2024-06-21",
+   81.5
+  ],
+  [
+   "2024-06-28",
+   80.0
+  ],
+  [
+   "2024-07-05",
+   76.0
+  ],
+  [
+   "2024-07-12",
+   76.0
+  ],
+  [
+   "2024-07-19",
+   50.0
+  ],
+  [
+   "2024-07-26",
+   50.0
+  ],
+  [
+   "2024-08-02",
+   49.5
+  ],
+  [
+   "2024-08-09",
+   48.5
+  ],
+  [
+   "2024-08-16",
+   47.5
+  ],
+  [
+   "2024-08-23",
+   45.0
+  ],
+  [
+   "2024-08-30",
+   45.0
+  ],
+  [
+   "2024-09-06",
+   45.5
+  ],
+  [
+   "2024-09-13",
+   45.5
+  ],
+  [
+   "2024-09-20",
+   50.0
+  ],
+  [
+   "2024-09-27",
+   53.5
+  ],
+  [
+   "2024-10-04",
+   60.0
+  ],
+  [
+   "2024-10-11",
+   61.0
+  ],
+  [
+   "2024-10-18",
+   59.0
+  ],
+  [
+   "2024-10-25",
+   55.5
+  ],
+  [
+   "2024-11-01",
+   57.0
+  ],
+  [
+   "2024-11-08",
+   57.0
+  ],
+  [
+   "2024-11-15",
+   64.0
+  ],
+  [
+   "2024-11-22",
+   66.5
+  ],
+  [
+   "2024-11-29",
+   73.0
+  ],
+  [
+   "2024-12-06",
+   80.0
+  ],
+  [
+   "2024-12-13",
+   80.0
+  ],
+  [
+   "2024-12-20",
+   77.5
+  ],
+  [
+   "2024-12-27",
+   77.5
+  ],
+  [
+   "2025-01-03",
+   87.0
+  ],
+  [
+   "2025-01-10",
+   81.0
+  ],
+  [
+   "2025-01-17",
+   80.5
+  ],
+  [
+   "2025-01-24",
+   78.0
+  ],
+  [
+   "2025-01-31",
+   76.5
+  ],
+  [
+   "2025-02-07",
+   80.0
+  ],
+  [
+   "2025-02-14",
+   77.0
+  ],
+  [
+   "2025-02-21",
+   80.5
+  ],
+  [
+   "2025-02-28",
+   78.0
+  ],
+  [
+   "2025-03-07",
+   81.0
+  ],
+  [
+   "2025-03-14",
+   79.5
+  ],
+  [
+   "2025-03-21",
+   80.0
+  ],
+  [
+   "2025-03-28",
+   78.0
+  ],
+  [
+   "2025-04-04",
+   79.0
+  ],
+  [
+   "2025-04-11",
+   76.5
+  ],
+  [
+   "2025-04-18",
+   76.0
+  ],
+  [
+   "2025-04-25",
+   75.5
+  ],
+  [
+   "2025-05-02",
+   75.0
+  ],
+  [
+   "2025-05-09",
+   73.5
+  ],
+  [
+   "2025-05-16",
+   82.0
+  ],
+  [
+   "2025-05-23",
+   88.0
+  ],
+  [
+   "2025-05-30",
+   88.5
+  ],
+  [
+   "2025-06-06",
+   89.5
+  ],
+  [
+   "2025-06-13",
+   89.0
+  ],
+  [
+   "2025-06-20",
+   89.0
+  ],
+  [
+   "2025-06-27",
+   88.5
+  ],
+  [
+   "2025-07-04",
+   88.5
+  ],
+  [
+   "2025-07-11",
+   89.0
+  ],
+  [
+   "2025-07-18",
+   92.5
+  ],
+  [
+   "2025-07-25",
+   99.5
+  ],
+  [
+   "2025-08-01",
+   98.5
+  ],
+  [
+   "2025-08-08",
+   98.0
+  ],
+  [
+   "2025-08-15",
+   116.0
+  ],
+  [
+   "2025-08-22",
+   110.5
+  ],
+  [
+   "2025-08-29",
+   107.0
+  ],
+  [
+   "2025-09-05",
+   107.0
+  ],
+  [
+   "2025-09-12",
+   109.0
+  ],
+  [
+   "2025-09-19",
+   113.0
+  ],
+  [
+   "2025-09-26",
+   113.5
+  ],
+  [
+   "2025-10-03",
+   118.0
+  ],
+  [
+   "2025-10-10",
+   118.0
+  ],
+  [
+   "2025-10-17",
+   109.0
+  ],
+  [
+   "2025-10-24",
+   109.0
+  ],
+  [
+   "2025-10-31",
+   109.0
+  ],
+  [
+   "2025-11-07",
+   104.0
+  ],
+  [
+   "2025-11-14",
+   114.0
+  ],
+  [
+   "2025-11-21",
+   113.0
+  ],
+  [
+   "2025-11-28",
+   115.0
+  ],
+  [
+   "2025-12-05",
+   115.0
+  ],
+  [
+   "2025-12-12",
+   123.0
+  ],
+  [
+   "2025-12-19",
+   115.5
+  ],
+  [
+   "2025-12-26",
+   118.0
+  ],
+  [
+   "2026-01-02",
+   121.5
+  ],
+  [
+   "2026-01-09",
+   119.5
+  ],
+  [
+   "2026-01-16",
+   118.0
+  ],
+  [
+   "2026-01-23",
+   122.0
+  ],
+  [
+   "2026-01-30",
+   122.0
+  ],
+  [
+   "2026-02-06",
+   122.5
+  ],
+  [
+   "2026-02-13",
+   126.0
+  ],
+  [
+   "2026-02-20",
+   126.0
+  ],
+  [
+   "2026-02-27",
+   121.5
+  ],
+  [
+   "2026-03-06",
+   124.0
+  ],
+  [
+   "2026-03-13",
+   126.0
+  ],
+  [
+   "2026-03-20",
+   120.0
+  ],
+  [
+   "2026-03-27",
+   123.0
+  ],
+  [
+   "2026-04-03",
+   126.5
+  ],
+  [
+   "2026-04-10",
+   134.0
+  ],
+  [
+   "2026-04-17",
+   133.0
+  ],
+  [
+   "2026-04-24",
+   131.0
+  ],
+  [
+   "2026-05-01",
+   136.5
+  ],
+  [
+   "2026-05-08",
+   138.0
+  ],
+  [
+   "2026-05-15",
+   138.5
+  ],
+  [
+   "2026-05-22",
+   132.5
+  ],
+  [
+   "2026-05-29",
+   134.0
+  ],
+  [
+   "2026-06-05",
+   134.0
+  ],
+  [
+   "2026-06-12",
+   136.0
+  ],
+  [
+   "2026-06-19",
+   135.0
+  ],
+  [
+   "2026-06-26",
+   134.5
+  ],
+  [
+   "2026-07-03",
+   134.0
+  ],
+  [
+   "2026-07-10",
+   134.5
+  ],
+  [
+   "2026-07-17",
+   136.0
+  ],
+  [
+   "2026-07-24",
+   134.5
+  ],
+  [
+   "2026-07-31",
+   136.0
+  ],
+  [
+   "2026-08-07",
+   100.0
+  ],
+  [
+   "2026-08-14",
+   100.5
+  ],
+  [
+   "2026-08-21",
+   102.5
+  ],
+  [
+   "2026-08-28",
+   97.5
+  ],
+  [
+   "2026-09-04",
+   91.0
+  ],
+  [
+   "2026-09-11",
+   91.5
+  ],
+  [
+   "2026-09-18",
+   95.4
+  ],
+  [
+   "2026-09-25",
+   98.0
+  ],
+  [
+   "2026-10-02",
+   100.0
+  ],
+  [
+   "2026-10-09",
+   100.0
+  ],
+  [
+   "2026-10-16",
+   100.0
+  ],
+  [
+   "2026-10-20",
+   99.7
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-12-10",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Oxygen expects to deliver revenue growth in excess of 20% per annum over the coming years, which, given the operational gearing in the business, should translate to increasing profits.",
+   "file": "20211210_TRU_Statement-regarding-Satago-and-Trading-Update.md"
+  },
+  {
+   "d": "2022-03-22",
+   "doc": "Q1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Oxygen expects to deliver revenue growth in excess of 20 per cent. per annum over the coming years, which, given the operational gearing in the business, is expected to translate to increasing profits.",
+   "file": "20220322_TRU_Proposed-Placing-and-Open-Offer.md"
+  },
+  {
+   "d": "2022-04-29",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "After a transitional 2021 in which the Group reorientated towards recurring software and licencing fee income, we expect significant growth during 2022.",
+   "file": "20220429_TRU_Final-Results-For-The-Year-Ended-31-December-2021.md"
+  },
+  {
+   "d": "2022-07-29",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Company confirms that it continues to trade in line with market expectations.",
+   "file": "20220729_TRU_Satago-signs-commercial-agreement-with-Lloyds.md"
+  },
+  {
+   "d": "2022-09-20",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The subsidiaries within the TruFin Group have been resilient in the first six months of 2022 and the board remains confident regarding prospects for the remainder of 2022.",
+   "file": "20220920_TRU_Interim-Results.md"
+  },
+  {
+   "d": "2023-01-20",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Adjusted Loss Before Tax is expected to be in line with market expectations at no more than 8.1m (FY21: £8.4m).",
+   "file": "20230120_TRU_Statement-regarding-Satago-and-Trading-Update.md"
+  },
+  {
+   "d": "2023-03-15",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Indications from initial trading in 2023 are strong with double digit growth for recurring revenue streams continuing.",
+   "file": "20230315_TRU_Final-Results-for-the-year-ended-31-December-2022.md"
+  },
+  {
+   "d": "2023-06-22",
+   "doc": "Q1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "The release schedule of high quality mobile and console games gives the Board confidence that H2 2023 will see a marked increase in revenues as Playstack targets positive EBITDA and operating cash generation in 2023.",
+   "file": "20230622_TRU_Proposed-Placing-and-Open-Offer.md"
+  },
+  {
+   "d": "2023-09-29",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "During the period, Satago migrated a small set of Lloyds Banking Group's factoring clients onto the platform. Large scale migration is now due to begin in 2024; with migration anticipated to be materially progressed during 2024.",
+   "file": "20230929_TRU_Half-year-Report.md"
+  },
+  {
+   "d": "2024-01-04",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "TruFin announces that for the 12 months ended 31 December 2023 it expects adjusted loss before tax1 excluding the exceptional loss on the sale of Vertus Capital Ltd (\"Vertus\") to be in line with expectations, at no more than £(6.3)m (FY222: £(8.2)m).",
+   "file": "20240104_TRU_Trading-Update.md"
+  },
+  {
+   "d": "2024-02-08",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Adjusted Loss Before Tax2 is expected to be in line with market expectations, excluding the exceptional loss on the sale of Vertus Capital Ltd (\"Vertus\"), at no more than £(6.3)m (FY221: £(8.2)m)",
+   "file": "20240208_TRU_Trading-Update.md"
+  },
+  {
+   "d": "2024-03-18",
+   "doc": "Q1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The early success of Balatro, alongside the operational and financial performance across all of TruFin's portfolio companies in the year to date, reaffirms the Board's confidence in the Company meeting market expectations for 2024.",
+   "file": "20240318_TRU_Playstack-announces-over-1m-units-sold-for-Balatro.md"
+  },
+  {
+   "d": "2024-03-26",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "If 2023 was the year of double-digit growth across the Group, 2024 is set to be the year of both further growth and improving profitability.",
+   "file": "20240326_TRU_Final-Results-for-the-12-months-ended-31-Dec-2023.md"
+  },
+  {
+   "d": "2024-05-13",
+   "doc": "Q1 TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 3,
+   "q": "TruFin is pleased to announce that its trading performance for the 12 months ended 31 December 2024 is expected to be significantly ahead of market expectations.",
+   "file": "20240513_TRU_Trading-Statement.md"
+  },
+  {
+   "d": "2024-07-16",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Based on the recent and continued strong performance of Playstack, which is trading ahead of expectations, the Board of TruFin confirms that the Group as a whole is trading in line with market expectations and remains on track to achieve EBITDA profitability in 2024.",
+   "file": "20240716_TRU_Satago-–-Update-re-Lloyds-Commercial-Agreement.md"
+  },
+  {
+   "d": "2024-09-17",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Oxygen enjoys a dominant position in its market and its core early payment (\"EP\") product continues to perform well. Based on strong KPI performance we expect momentum will continue to build into the second half.",
+   "file": "20240917_TRU_Half-year-Report.md"
+  },
+  {
+   "d": "2024-11-18",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 3,
+   "q": "As a result the Group is on track to record its first year of positive EBITDA, at no less than £3.5m (FY23: £(3.5)m), materially ahead of market expectations.",
+   "file": "20241118_TRU_Trading-Statement.md"
+  },
+  {
+   "d": "2024-12-05",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 3,
+   "q": "TruFin is pleased to announce that following its trading update on 18 November 2024 and due to a recent period of positive exposure for Balatro, the hit console and mobile game published by Playstack Ltd (\"Playstack\"), TruFin now expects it financial performance for the year ending 31 December 2024 to be significantly ahead of previously guided market expectations.",
+   "file": "20241205_TRU_Trading-Statement.md"
+  },
+  {
+   "d": "2025-01-06",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 3,
+   "q": "TruFin is pleased to announce that it expects its adjusted profit before tax1 (\"PBT\") to be significantly ahead of market expectations resulting in its first full year profit - a year earlier than forecast.",
+   "file": "20250106_TRU_Trading-Statement.md"
+  },
+  {
+   "d": "2025-03-26",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "With 2024 marking the first year of profitability, 2025 is set to be the year of improving profitability and ensuring our subsidiaries are match fit for the next period of value crystallisation.",
+   "file": "20250326_TRU_Final-Results-for-the-12-months-ended-31-Dec-2024.md"
+  },
+  {
+   "d": "2025-05-20",
+   "doc": "Q1 TU",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 3,
+   "q": "TruFin is pleased to announce that due to the continued strong performance of Balatro, the hit console and mobile game published by Playstack Ltd, combined with positive performances from Abiotic Factor and the recently launched DarkWater, TruFin now expects its financial performance for the year ending 31 December 2025 to be materially ahead of current market expectations.",
+   "file": "20250520_TRU_Trading-Update-and-Share-Buyback.md"
+  },
+  {
+   "d": "2025-08-14",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 3,
+   "q": "Group PBT1 for the Period is expected to be more than £4.7m, representing a year-on-year improvement in excess of 670% (HY24: £0.6m). As a result of the Group's performance during the Period, it expects to materially exceed market expectations for the full year.",
+   "file": "20250814_TRU_Trading-Update.md"
+  },
+  {
+   "d": "2025-09-17",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Aggregate revenues for the two months to 31 August 2025 are more than £11.0m which is trending ahead of management expectations.",
+   "file": "20250917_TRU_Half-year-Report.md"
+  },
+  {
+   "d": "2025-12-11",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 3,
+   "q": "As a result of strong performance across Playstack's back catalogue, combined with stronger-than-anticipated unit sales of Unbeatable, TruFin now expects its financial performance for the year ending 31 December 2025 to be materially ahead of previously guided market expectations.",
+   "file": "20251211_TRU_Trading-Update.md"
+  },
+  {
+   "d": "2026-01-15",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 1,
+   "q": "TruFin is pleased to announce that it expects its adjusted profit before tax¹ (\"PBT\") to be ahead of previously guided expectations, as announced on 11 December 2025. PBT is now expected to be more than £7.4m, representing a year-on-year increase in excess of 720% (FY24: £0.9m).",
+   "file": "20260115_TRU_Trading-Update.md"
+  },
+  {
+   "d": "2026-01-23",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 1,
+   "q": "Despite being early in the year, this contract underpins TruFin's confidence that it will deliver yet another year of profitable growth in 2026 for shareholders.",
+   "file": "20260123_TRU_Playstack-Platform-Contract.md"
+  },
+  {
+   "d": "2026-03-18",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "Group revenue for the two months ended 28 February 2026 are tracking in line with the Board's expectations at not less than £9.3m (unaudited)",
+   "file": "20260318_TRU_Final-Results-for-the-12-months-ended-31-Dec-2025.md"
+  },
+  {
+   "d": "2026-05-21",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -2,
+   "q": "The continuing Group is expected to be loss-making for the full year 2026, with a target of achieving full-year profitability in 2027.",
+   "file": "20260521_TRU_Proposed-disposal-of-Playstack-Limited.md",
+   "gnote": "discounted: Playstack disposal"
+  },
+  {
+   "d": "2026-07-09",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The continuing Group is expected to be loss-making for the full year 2026, with a target of achieving full-year profitability in 2027.",
+   "file": "20260709_TRU_Proposed-Return-of-Capital-to-Shareholders.md"
+  },
+  {
+   "d": "2026-09-17",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group is trading in line with expectations. It is expected to be loss-making for the full year 2026, with a target of achieving full-year profitability in 2027.",
+   "file": "20260917_TRU_Interim-Results-and-Directorate-Change.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-17",
+  "doc": "H1 R",
+  "file": "20260917_TRU_Interim-Results-and-Directorate-Change.md",
+  "vs": "H1 R Sep-25 · back to Sep-24 · Jul-26 circular",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Oxygen EP client count: Sep-25 “Oxygen's 64 EP clients - up from 60 - had a combined supplier spend of more than £29bn during the period” and “Four new EP client contracts have been signed during 2025” → Sep-26 gives no EP client total, no combined supplier spend and no new EP client wins",
+    "span": "Given at Sep-24 (60 clients, three new contracts) and Sep-25 → first gap"
+   },
+   {
+    "sev": "amber",
+    "type": "Pushed out",
+    "text": "Satago management incentive plan: Sep-25 “a new management incentive plan (\"MIP\") is due to be implemented during 2025” → Sep-26 “is now expected to be implemented in H2 2026”",
+    "span": "Sep-25 → Sep-26"
+   },
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "Oxygen pipeline and SaaS: Sep-26 “Local Government Reorganisation (\"LGR\") is expected to reduce some short-term pipeline opportunities for impacted authorities” and Insights “average contract values remain under pressure” in “an increasingly competitive market”",
+    "span": "Not flagged at Sep-25 or Mar-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Satago guide raised: Sep-25 “Despite being a stretched target, Satago continues to aim for break-even by June 2026.” → Sep-26 “Satago now expects to be EBITDA profitable on a full-year basis.”",
+    "span": "Sep-25 → Sep-26"
+   }
+  ]
+ }
+}
