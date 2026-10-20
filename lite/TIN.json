@@ -1,0 +1,185 @@
+{
+ "ticker": "TIN",
+ "v": "2026-10-20.0e36",
+ "ccy": "GBX",
+ "src": "ShareScope weekly snapshots",
+ "adj": [],
+ "px": [
+  [
+   "2026-03-03",
+   120.0
+  ],
+  [
+   "2026-03-06",
+   99.0
+  ],
+  [
+   "2026-03-13",
+   102.0
+  ],
+  [
+   "2026-03-20",
+   101.0
+  ],
+  [
+   "2026-03-27",
+   106.0
+  ],
+  [
+   "2026-04-03",
+   115.0
+  ],
+  [
+   "2026-04-10",
+   111.5
+  ],
+  [
+   "2026-04-17",
+   111.5
+  ],
+  [
+   "2026-04-24",
+   103.0
+  ],
+  [
+   "2026-05-08",
+   101.0
+  ],
+  [
+   "2026-05-15",
+   99.0
+  ],
+  [
+   "2026-05-22",
+   94.0
+  ],
+  [
+   "2026-06-02",
+   98.0
+  ],
+  [
+   "2026-06-05",
+   108.5
+  ],
+  [
+   "2026-06-12",
+   110.5
+  ],
+  [
+   "2026-06-19",
+   114.0
+  ],
+  [
+   "2026-06-26",
+   117.0
+  ],
+  [
+   "2026-07-03",
+   113.0
+  ],
+  [
+   "2026-07-10",
+   112.5
+  ],
+  [
+   "2026-07-17",
+   112.0
+  ],
+  [
+   "2026-07-24",
+   113.0
+  ],
+  [
+   "2026-07-31",
+   113.5
+  ],
+  [
+   "2026-08-07",
+   113.0
+  ],
+  [
+   "2026-08-14",
+   111.0
+  ],
+  [
+   "2026-08-21",
+   105.0
+  ],
+  [
+   "2026-08-28",
+   111.0
+  ],
+  [
+   "2026-09-07",
+   108.0
+  ],
+  [
+   "2026-09-11",
+   101.5
+  ],
+  [
+   "2026-09-18",
+   102.0
+  ],
+  [
+   "2026-09-25",
+   103.5
+  ],
+  [
+   "2026-10-02",
+   105.0
+  ],
+  [
+   "2026-10-09",
+   104.0
+  ],
+  [
+   "2026-10-16",
+   102.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2026-04-02",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "As the Company advances South Crofty towards construction, securing the project financing required to support full project development will be a key priority in 2026.",
+   "file": "20260402_TIN_FINAL-RESULTS-FOR-YEAR-ENDED-31-DECEMBER-2025.md"
+  },
+  {
+   "d": "2026-08-26",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "This update is provided in accordance with the terms of the Company’s senior secured bond issued on 21 May 2026 and is not intended to introduce new material information; further detail on the matters referenced is set out in the Company’s previous announcements.",
+   "file": "20260826_TIN_Q2-ACTIVITIES-UPDATE.md"
+  },
+  {
+   "d": "2026-09-24",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The near-term priority remains to complete the project financing package for South Crofty, which is well advanced. Alongside that, dewatering continues towards the 400-level which is targeted to be reached in the first half of 2027, with shaft refurbishment and mine dewatering also scheduled for completion in that period.",
+   "file": "20260924_TIN_Unaudited-interim-results-for-the-six-months-....md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-14",
+  "doc": "OPS",
+  "file": "20261014_TIN_Capital-Access-Window-–-Trading-Halt.md",
+  "vs": "Fundraise RNS Jan-25 · OPS Oct-26 · H1 R Sep-26 · FY R Apr-26 · Q3 Nov-25",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "FID timing: Q3 Nov-25 “advance towards a formal final investment decision in 2026”, FY R Apr-26 “final investment decision currently targeted for 2026” → H1 R Sep-26 and this RNS give no FID date, only “to complete project financing and progress the development of the South Crofty tin mine towards first production in mid-2028”",
+    "span": "2026 FID given Nov-25, Apr-26 → no date since Sep-26; first-production guide mid-2028 unchanged"
+   }
+  ]
+ }
+}

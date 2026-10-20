@@ -123,6 +123,13 @@
    "marks": 22
   },
   {
+   "ticker": "ASY",
+   "company": "Andrews Sykes Group PLC",
+   "chart": "lite/ASY.json?v=2026-10-20.7b88",
+   "scored": "2026-10-20",
+   "marks": 10
+  },
+  {
    "ticker": "AVAP",
    "company": "Avation PLC",
    "chart": "lite/AVAP.json?v=2026-10-19.2cce",
@@ -193,11 +200,25 @@
    "marks": 30
   },
   {
+   "ticker": "BOKU",
+   "company": "Boku Inc",
+   "chart": "lite/BOKU.json?v=2026-10-20.8bf8",
+   "scored": "2026-10-20",
+   "marks": 20
+  },
+  {
    "ticker": "BOOM",
    "company": "AudioBoom Group PLC",
    "chart": "lite/BOOM.json?v=2026-10-19.6319",
    "scored": "2026-10-19",
    "marks": 36
+  },
+  {
+   "ticker": "BOOT",
+   "company": "Boot (Henry) PLC",
+   "chart": "lite/BOOT.json?v=2026-10-20.ec87",
+   "scored": "2026-10-20",
+   "marks": 21
   },
   {
    "ticker": "BOWL",
@@ -212,6 +233,13 @@
    "chart": "lite/BP.json?v=2026-10-20.3b57",
    "scored": "2026-10-20",
    "marks": 25
+  },
+  {
+   "ticker": "BPM",
+   "company": "BP Marsh & Partners PLC",
+   "chart": "lite/BPM.json?v=2026-10-20.df73",
+   "scored": "2026-10-20",
+   "marks": 20
   },
   {
    "ticker": "BPT",
@@ -361,6 +389,13 @@
    "marks": 29
   },
   {
+   "ticker": "CWR",
+   "company": "Ceres Power Holdings PLC",
+   "chart": "lite/CWR.json?v=2026-10-20.beaa",
+   "scored": "2026-10-20",
+   "marks": 22
+  },
+  {
    "ticker": "DFCH",
    "company": "Distribution Finance Capital Holdings PLC",
    "chart": "lite/DFCH.json?v=2026-10-19.97eb",
@@ -429,6 +464,13 @@
    "chart": "lite/FAN.json?v=2026-10-19.3bd9",
    "scored": "2026-10-19",
    "marks": 21
+  },
+  {
+   "ticker": "FNX",
+   "company": "Fonix plc",
+   "chart": "lite/FNX.json?v=2026-10-20.57be",
+   "scored": "2026-10-20",
+   "marks": 26
   },
   {
    "ticker": "FRP",
@@ -592,6 +634,20 @@
    "marks": 29
   },
   {
+   "ticker": "JD.",
+   "company": "JD Sports Fashion PLC",
+   "chart": "lite/JD.json?v=2026-10-20.8326",
+   "scored": "2026-10-20",
+   "marks": 28
+  },
+  {
+   "ticker": "JDG",
+   "company": "Judges Scientific PLC",
+   "chart": "lite/JDG.json?v=2026-10-20.85a0",
+   "scored": "2026-10-20",
+   "marks": 22
+  },
+  {
    "ticker": "JDW",
    "company": "Wetherspoon (JD) PLC",
    "chart": "lite/JDW.json?v=2026-10-19.1949",
@@ -606,11 +662,25 @@
    "marks": 24
   },
   {
+   "ticker": "KGF",
+   "company": "Kingfisher PLC",
+   "chart": "lite/KGF.json?v=2026-10-20.dd5e",
+   "scored": "2026-10-20",
+   "marks": 20
+  },
+  {
    "ticker": "KIST",
    "company": "Kistos Holdings plc",
    "chart": "lite/KIST.json?v=2026-10-19.0984",
    "scored": "2026-10-19",
    "marks": 23
+  },
+  {
+   "ticker": "KOO",
+   "company": "Kooth PLC",
+   "chart": "lite/KOO.json?v=2026-10-20.75ea",
+   "scored": "2026-10-20",
+   "marks": 22
   },
   {
    "ticker": "LIKE",
@@ -627,11 +697,25 @@
    "marks": 23
   },
   {
+   "ticker": "LUCE",
+   "company": "Luceco PLC",
+   "chart": "lite/LUCE.json?v=2026-10-20.a037",
+   "scored": "2026-10-20",
+   "marks": 30
+  },
+  {
    "ticker": "MAB",
    "company": "Mitchells & Butlers PLC",
    "chart": "lite/MAB.json?v=2026-10-20.5c28",
    "scored": "2026-10-20",
    "marks": 25
+  },
+  {
+   "ticker": "MAB1",
+   "company": "Mortgage Advice Bureau Holdings",
+   "chart": "lite/MAB1.json?v=2026-10-20.b41a",
+   "scored": "2026-10-20",
+   "marks": 28
   },
   {
    "ticker": "MAI",
@@ -677,6 +761,13 @@
    "scored": "2026-10-19",
    "marks": 4,
    "src": "snapshots"
+  },
+  {
+   "ticker": "MIDW",
+   "company": "Midwich Group PLC",
+   "chart": "lite/MIDW.json?v=2026-10-20.c983",
+   "scored": "2026-10-20",
+   "marks": 29
   },
   {
    "ticker": "MIND",
@@ -820,6 +911,13 @@
    "marks": 28
   },
   {
+   "ticker": "PMP",
+   "company": "Portmeirion Group PLC",
+   "chart": "lite/PMP.json?v=2026-10-20.8ed6",
+   "scored": "2026-10-20",
+   "marks": 25
+  },
+  {
    "ticker": "PNN",
    "company": "Pennon Group plc",
    "chart": "lite/PNN.json?v=2026-10-19.b0e3",
@@ -869,6 +967,13 @@
    "marks": 20
   },
   {
+   "ticker": "RE.",
+   "company": "R.E.A. Holdings PLC",
+   "chart": "lite/RE.json?v=2026-10-20.6e9f",
+   "scored": "2026-10-20",
+   "marks": 14
+  },
+  {
    "ticker": "RGG",
    "company": "RentGuarantor Holdings PLC",
    "chart": "lite/RGG.json?v=2026-10-19.6af9",
@@ -904,6 +1009,13 @@
    "marks": 8
   },
   {
+   "ticker": "RSW",
+   "company": "Renishaw PLC",
+   "chart": "lite/RSW.json?v=2026-10-20.2cf9",
+   "scored": "2026-10-20",
+   "marks": 22
+  },
+  {
    "ticker": "RWA",
    "company": "Robert Walters PLC",
    "chart": "lite/RWA.json?v=2026-10-18.e348",
@@ -937,6 +1049,13 @@
    "chart": "lite/SDG.json?v=2026-10-19.3929",
    "scored": "2026-10-19",
    "marks": 25
+  },
+  {
+   "ticker": "SDI",
+   "company": "SDI Group PLC",
+   "chart": "lite/SDI.json?v=2026-10-20.c785",
+   "scored": "2026-10-20",
+   "marks": 22
   },
   {
    "ticker": "SEEN",
@@ -1088,6 +1207,14 @@
    "marks": 26
   },
   {
+   "ticker": "TIN",
+   "company": "Cornish Metals PLC",
+   "chart": "lite/TIN.json?v=2026-10-20.0e36",
+   "scored": "2026-10-20",
+   "marks": 3,
+   "src": "snapshots"
+  },
+  {
    "ticker": "TLW",
    "company": "Tullow Oil PLC",
    "chart": "lite/TLW.json?v=2026-10-19.e38e",
@@ -1184,6 +1311,20 @@
    "chart": "lite/VTU.json?v=2026-10-18.5172",
    "scored": "2026-10-18",
    "marks": 28
+  },
+  {
+   "ticker": "VTY",
+   "company": "Vistry Group PLC",
+   "chart": "lite/VTY.json?v=2026-10-20.9594",
+   "scored": "2026-10-20",
+   "marks": 29
+  },
+  {
+   "ticker": "W7L",
+   "company": "Warpaint London PLC",
+   "chart": "lite/W7L.json?v=2026-10-20.d8f2",
+   "scored": "2026-10-20",
+   "marks": 29
   },
   {
    "ticker": "WATR",
