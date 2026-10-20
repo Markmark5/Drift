@@ -60,6 +60,13 @@
    "marks": 30
   },
   {
+   "ticker": "AET",
+   "company": "Afentra PLC",
+   "chart": "lite/AET.json?v=2026-10-20.b408",
+   "scored": "2026-10-20",
+   "marks": 18
+  },
+  {
    "ticker": "AEX",
    "company": "Aminex PLC",
    "chart": "lite/AEX.json?v=2026-10-19.b087",
@@ -79,6 +86,13 @@
    "chart": "lite/ALTN.json?v=2026-10-19.a3a3",
    "scored": "2026-10-19",
    "marks": 16
+  },
+  {
+   "ticker": "ALU",
+   "company": "Alumasc Group plc",
+   "chart": "lite/ALU.json?v=2026-10-20.55e5",
+   "scored": "2026-10-20",
+   "marks": 20
   },
   {
    "ticker": "AMIF",
@@ -114,6 +128,13 @@
    "chart": "lite/APTA.json?v=2026-10-18.2f17",
    "scored": "2026-10-18",
    "marks": 30
+  },
+  {
+   "ticker": "APTD",
+   "company": "Aptitude Software Group plc",
+   "chart": "lite/APTD.json?v=2026-10-20.a52d",
+   "scored": "2026-10-20",
+   "marks": 24
   },
   {
    "ticker": "ASC",
@@ -155,6 +176,13 @@
    "company": "Avon Technologies PLC",
    "chart": "lite/AVON.json?v=2026-10-19.08d0",
    "scored": "2026-10-19",
+   "marks": 22
+  },
+  {
+   "ticker": "BAB",
+   "company": "Babcock International Group PLC",
+   "chart": "lite/BAB.json?v=2026-10-20.c989",
+   "scored": "2026-10-20",
    "marks": 22
   },
   {
@@ -247,6 +275,27 @@
    "chart": "lite/BPT.json?v=2026-10-19.5a3b",
    "scored": "2026-10-19",
    "marks": 15
+  },
+  {
+   "ticker": "BRCK",
+   "company": "Brickability Group",
+   "chart": "lite/BRCK.json?v=2026-10-20.c132",
+   "scored": "2026-10-20",
+   "marks": 28
+  },
+  {
+   "ticker": "BTG",
+   "company": "BTG Consulting plc",
+   "chart": "lite/BTG.json?v=2026-10-20.7f3a",
+   "scored": "2026-10-20",
+   "marks": 30
+  },
+  {
+   "ticker": "BTRW",
+   "company": "Barratt Redrow PLC",
+   "chart": "lite/BTRW.json?v=2026-10-20.6750",
+   "scored": "2026-10-20",
+   "marks": 12
   },
   {
    "ticker": "BWY",
@@ -368,6 +417,13 @@
    "marks": 21
   },
   {
+   "ticker": "COG",
+   "company": "Cambridge Cognition Holdings plc",
+   "chart": "lite/COG.json?v=2026-10-20.e7c6",
+   "scored": "2026-10-20",
+   "marks": 22
+  },
+  {
    "ticker": "CRPR",
    "company": "Cropper (James) plc",
    "chart": "lite/CRPR.json?v=2026-10-20.17d5",
@@ -378,6 +434,13 @@
    "ticker": "CRW",
    "company": "Craneware PLC",
    "chart": "lite/CRW.json?v=2026-10-20.953d",
+   "scored": "2026-10-20",
+   "marks": 25
+  },
+  {
+   "ticker": "CTA",
+   "company": "CT Automotive Group PLC",
+   "chart": "lite/CTA.json?v=2026-10-20.ff0a",
    "scored": "2026-10-20",
    "marks": 25
   },
@@ -480,6 +543,13 @@
    "marks": 25
   },
   {
+   "ticker": "EYE",
+   "company": "Eagle Eye Solutions Group plc",
+   "chart": "lite/EYE.json?v=2026-10-20.2c36",
+   "scored": "2026-10-20",
+   "marks": 29
+  },
+  {
    "ticker": "FAN",
    "company": "Volution Group plc",
    "chart": "lite/FAN.json?v=2026-10-19.3bd9",
@@ -571,6 +641,13 @@
    "marks": 27
   },
   {
+   "ticker": "GLE",
+   "company": "MJ Gleeson PLC",
+   "chart": "lite/GLE.json?v=2026-10-20.bc6e",
+   "scored": "2026-10-20",
+   "marks": 29
+  },
+  {
    "ticker": "GMS",
    "company": "Gulf Marine Services PLC",
    "chart": "lite/GMS.json?v=2026-10-20.6328",
@@ -611,6 +688,13 @@
    "chart": "lite/HUD.json?v=2026-10-19.a931",
    "scored": "2026-10-19",
    "marks": 26
+  },
+  {
+   "ticker": "HVO",
+   "company": "Hvivo plc",
+   "chart": "lite/HVO.json?v=2026-10-20.e4a7",
+   "scored": "2026-10-20",
+   "marks": 24
   },
   {
    "ticker": "IGG",
@@ -711,6 +795,13 @@
    "marks": 20
   },
   {
+   "ticker": "KIE",
+   "company": "Kier Group PLC",
+   "chart": "lite/KIE.json?v=2026-10-20.5ed3",
+   "scored": "2026-10-20",
+   "marks": 26
+  },
+  {
    "ticker": "KIST",
    "company": "Kistos Holdings plc",
    "chart": "lite/KIST.json?v=2026-10-19.0984",
@@ -775,6 +866,13 @@
    "marks": 28
   },
   {
+   "ticker": "MCB",
+   "company": "McBride PLC",
+   "chart": "lite/MCB.json?v=2026-10-20.7704",
+   "scored": "2026-10-20",
+   "marks": 30
+  },
+  {
    "ticker": "MCON",
    "company": "Mincon Group PLC",
    "chart": "lite/MCON.json?v=2026-10-19.3a6f",
@@ -827,11 +925,25 @@
    "src": "snapshots"
   },
   {
+   "ticker": "MOON",
+   "company": "Moonpig Group PLC",
+   "chart": "lite/MOON.json?v=2026-10-20.2081",
+   "scored": "2026-10-20",
+   "marks": 22
+  },
+  {
    "ticker": "MOTR",
    "company": "Motorpoint Group PLC",
    "chart": "lite/MOTR.json?v=2026-10-19.489b",
    "scored": "2026-10-19",
    "marks": 26
+  },
+  {
+   "ticker": "MPAC",
+   "company": "Mpac Group PLC",
+   "chart": "lite/MPAC.json?v=2026-10-20.052d",
+   "scored": "2026-10-20",
+   "marks": 24
   },
   {
    "ticker": "MRK",
@@ -951,6 +1063,13 @@
    "chart": "lite/PEEL.json?v=2026-10-19.af27",
    "scored": "2026-10-19",
    "marks": 28
+  },
+  {
+   "ticker": "PGH",
+   "company": "Personal Group Holdings PLC",
+   "chart": "lite/PGH.json?v=2026-10-20.96e9",
+   "scored": "2026-10-20",
+   "marks": 27
   },
   {
    "ticker": "PINE",
@@ -1163,6 +1282,13 @@
    "chart": "lite/SMIN.json?v=2026-10-20.f0f8",
    "scored": "2026-10-20",
    "marks": 23
+  },
+  {
+   "ticker": "SMWH",
+   "company": "WH Smith PLC",
+   "chart": "lite/SMWH.json?v=2026-10-20.a938",
+   "scored": "2026-10-20",
+   "marks": 30
   },
   {
    "ticker": "SNWS",
@@ -1409,6 +1535,13 @@
    "chart": "lite/TSTL.json?v=2026-10-19.2f45",
    "scored": "2026-10-19",
    "marks": 19
+  },
+  {
+   "ticker": "TUNE",
+   "company": "Focusrite PLC",
+   "chart": "lite/TUNE.json?v=2026-10-20.32ff",
+   "scored": "2026-10-20",
+   "marks": 26
   },
   {
    "ticker": "UU.",
