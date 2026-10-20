@@ -1,0 +1,563 @@
+{
+ "ticker": "OPT",
+ "v": "2026-10-20.6218",
+ "ccy": "GBX",
+ "src": "AlphaVantage OPT.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2024-10-04",
+   140.0
+  ],
+  [
+   "2024-10-11",
+   156.0
+  ],
+  [
+   "2024-10-18",
+   163.0
+  ],
+  [
+   "2024-10-25",
+   158.0
+  ],
+  [
+   "2024-11-01",
+   162.0
+  ],
+  [
+   "2024-11-08",
+   164.5
+  ],
+  [
+   "2024-11-15",
+   163.0
+  ],
+  [
+   "2024-11-22",
+   158.0
+  ],
+  [
+   "2024-11-29",
+   155.5
+  ],
+  [
+   "2024-12-06",
+   153.5
+  ],
+  [
+   "2024-12-13",
+   154.0
+  ],
+  [
+   "2024-12-20",
+   147.0
+  ],
+  [
+   "2024-12-24",
+   142.0
+  ],
+  [
+   "2024-12-27",
+   142.0
+  ],
+  [
+   "2025-01-03",
+   143.0
+  ],
+  [
+   "2025-01-10",
+   140.0
+  ],
+  [
+   "2025-01-17",
+   143.5
+  ],
+  [
+   "2025-01-24",
+   150.0
+  ],
+  [
+   "2025-01-31",
+   149.0
+  ],
+  [
+   "2025-02-07",
+   172.0
+  ],
+  [
+   "2025-02-14",
+   174.0
+  ],
+  [
+   "2025-02-21",
+   183.5
+  ],
+  [
+   "2025-02-28",
+   182.5
+  ],
+  [
+   "2025-03-07",
+   182.0
+  ],
+  [
+   "2025-03-14",
+   193.0
+  ],
+  [
+   "2025-03-21",
+   195.0
+  ],
+  [
+   "2025-03-28",
+   171.0
+  ],
+  [
+   "2025-04-04",
+   171.0
+  ],
+  [
+   "2025-04-11",
+   172.5
+  ],
+  [
+   "2025-04-17",
+   178.0
+  ],
+  [
+   "2025-04-25",
+   182.5
+  ],
+  [
+   "2025-05-02",
+   187.0
+  ],
+  [
+   "2025-05-09",
+   195.0
+  ],
+  [
+   "2025-05-16",
+   192.5
+  ],
+  [
+   "2025-05-23",
+   188.0
+  ],
+  [
+   "2025-05-30",
+   191.0
+  ],
+  [
+   "2025-06-06",
+   194.0
+  ],
+  [
+   "2025-06-13",
+   205.0
+  ],
+  [
+   "2025-06-20",
+   204.0
+  ],
+  [
+   "2025-06-27",
+   208.0
+  ],
+  [
+   "2025-07-04",
+   211.0
+  ],
+  [
+   "2025-07-11",
+   188.0
+  ],
+  [
+   "2025-07-18",
+   194.5
+  ],
+  [
+   "2025-07-25",
+   204.0
+  ],
+  [
+   "2025-08-01",
+   206.0
+  ],
+  [
+   "2025-08-08",
+   216.0
+  ],
+  [
+   "2025-08-15",
+   215.0
+  ],
+  [
+   "2025-08-22",
+   217.0
+  ],
+  [
+   "2025-08-29",
+   220.0
+  ],
+  [
+   "2025-09-05",
+   221.0
+  ],
+  [
+   "2025-09-12",
+   222.5
+  ],
+  [
+   "2025-09-19",
+   224.0
+  ],
+  [
+   "2025-09-26",
+   225.0
+  ],
+  [
+   "2025-10-03",
+   225.0
+  ],
+  [
+   "2025-10-10",
+   225.0
+  ],
+  [
+   "2025-10-17",
+   227.0
+  ],
+  [
+   "2025-10-24",
+   198.0
+  ],
+  [
+   "2025-10-31",
+   197.5
+  ],
+  [
+   "2025-11-07",
+   198.0
+  ],
+  [
+   "2025-11-14",
+   198.0
+  ],
+  [
+   "2025-11-21",
+   203.0
+  ],
+  [
+   "2025-11-28",
+   198.0
+  ],
+  [
+   "2025-12-05",
+   194.0
+  ],
+  [
+   "2025-12-12",
+   195.5
+  ],
+  [
+   "2025-12-19",
+   196.0
+  ],
+  [
+   "2025-12-24",
+   197.5
+  ],
+  [
+   "2026-01-02",
+   199.0
+  ],
+  [
+   "2026-01-09",
+   200.0
+  ],
+  [
+   "2026-01-16",
+   207.5
+  ],
+  [
+   "2026-01-23",
+   216.0
+  ],
+  [
+   "2026-01-30",
+   215.0
+  ],
+  [
+   "2026-02-06",
+   213.5
+  ],
+  [
+   "2026-02-13",
+   213.0
+  ],
+  [
+   "2026-02-20",
+   186.0
+  ],
+  [
+   "2026-02-27",
+   178.5
+  ],
+  [
+   "2026-03-06",
+   182.5
+  ],
+  [
+   "2026-03-13",
+   182.5
+  ],
+  [
+   "2026-03-20",
+   181.5
+  ],
+  [
+   "2026-03-27",
+   180.0
+  ],
+  [
+   "2026-04-02",
+   181.5
+  ],
+  [
+   "2026-04-10",
+   180.5
+  ],
+  [
+   "2026-04-17",
+   189.0
+  ],
+  [
+   "2026-04-24",
+   193.5
+  ],
+  [
+   "2026-05-01",
+   188.5
+  ],
+  [
+   "2026-05-08",
+   189.5
+  ],
+  [
+   "2026-05-15",
+   188.5
+  ],
+  [
+   "2026-05-22",
+   188.5
+  ],
+  [
+   "2026-05-29",
+   187.0
+  ],
+  [
+   "2026-06-05",
+   187.0
+  ],
+  [
+   "2026-06-12",
+   187.5
+  ],
+  [
+   "2026-06-19",
+   192.5
+  ],
+  [
+   "2026-06-26",
+   191.5
+  ],
+  [
+   "2026-07-03",
+   191.0
+  ],
+  [
+   "2026-07-10",
+   191.0
+  ],
+  [
+   "2026-07-17",
+   195.0
+  ],
+  [
+   "2026-07-24",
+   211.5
+  ],
+  [
+   "2026-07-31",
+   250.0
+  ],
+  [
+   "2026-08-07",
+   251.0
+  ],
+  [
+   "2026-08-14",
+   247.5
+  ],
+  [
+   "2026-08-21",
+   238.0
+  ],
+  [
+   "2026-08-28",
+   244.0
+  ],
+  [
+   "2026-09-04",
+   244.0
+  ],
+  [
+   "2026-09-11",
+   249.0
+  ],
+  [
+   "2026-09-18",
+   246.0
+  ],
+  [
+   "2026-09-25",
+   246.0
+  ],
+  [
+   "2026-10-02",
+   241.0
+  ],
+  [
+   "2026-10-09",
+   247.0
+  ],
+  [
+   "2026-10-16",
+   246.0
+  ],
+  [
+   "2026-10-19",
+   246.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2024-12-11",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group has delivered a robust financial performance with trading consistent with consensus market expectations.",
+   "file": "20241211_OPT_Interim-results.md"
+  },
+  {
+   "d": "2025-05-12",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Expected to deliver FY25 adjusted EBITDA in line with market expectations",
+   "file": "20250512_OPT_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2025-07-08",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -2,
+   "q": "Excluding the UK Armed Forces contract, new business conversion was slower than planned in the second half of FY25, and actions are being implemented to accelerate this.",
+   "file": "20250708_OPT_Full-Year-Results.md"
+  },
+  {
+   "d": "2025-11-03",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Optima is pleased to report revenue for the half year of approximately £59 million (excluding approximately £2 million of Other Operating Income), in line with market expectations representing c.17% growth versus H1 25.",
+   "file": "20251103_OPT_Half-Year-Trading-Update.md"
+  },
+  {
+   "d": "2025-12-10",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Optima delivered HY26 revenue of £59.5 million, in line with market expectations, and representing c.17% growth versus HY25.",
+   "file": "20251210_OPT_Interim-Results.md"
+  },
+  {
+   "d": "2026-03-31",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 1,
+   "q": "The Directors expect FY26 adjusted EBITDA to be at least in line with consensus, which will include the procurement settlement previously disclosed.",
+   "file": "20260331_OPT_Launch-of-Underwritten-Open-Offer.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2026-04-17",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Further to the previously communicated commentary on current trading announced on 31 March 2026, Optima now expects FY26 Adjusted EBITDA to be ahead of market expectations[1] by c.10%.",
+   "file": "20260417_OPT_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2026-06-16",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "As previously communicated, Optima expects FY26 adjusted EBITDA to be approximately 10% ahead of previous market expectations.",
+   "file": "20260616_OPT_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2026-08-17",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "FY27 has started with strong momentum, with clear alignment to long-term structural and policy drivers, including sustained pressure on NHS capacity and the Government's Keep Britain Working agenda, both of which reinforce the essential, non-discretionary nature of employer-led health provision.",
+   "file": "20260817_OPT_Results-for-the-year-ended-31-March-2026.md"
+  },
+  {
+   "d": "2026-10-20",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board therefore continues to expect full year FY27 results to be in line with market expectations.",
+   "file": "20261020_OPT_Half-Year-Trading-Update.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-20",
+  "doc": "H1 TU",
+  "file": "20261020_OPT_Half-Year-Trading-Update.md",
+  "vs": "H1 TU Nov-25 · FY R Aug-26 · Feb/Mar-26",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Anchor softened",
+    "text": "Half-year anchor: Nov-25 H1 revenue “in line with market expectations” → Oct-26 “Trading remains in line with the Board's expectations”; the market anchor is kept only for the full year (“in line with current market expectations”)"
+   },
+   {
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "PAM synergies: Aug-26 “annualised cost synergies of £2.1 million delivered or, in progress, as at 31 July 2026, against a medium-term target of £5 million” → Oct-26 “synergy delivery remains on track”, no figure"
+   },
+   {
+    "sev": "grey",
+    "type": "Target dropped",
+    "text": "Medium-term targets: Aug-26 “medium-term targets of achieving annual revenues of £200 million and £40 million of adjusted EBITDA” and leverage target “below 1x net debt to adjusted EBITDA by the 3rd year” → neither mentioned in Oct-26 (net debt £70.4m given, no ratio)",
+    "span": "Targets restated Dec-25, Feb-26, Mar-26, Aug-26"
+   }
+  ]
+ }
+}

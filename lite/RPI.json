@@ -1,0 +1,606 @@
+{
+ "ticker": "RPI",
+ "v": "2026-10-20.c366",
+ "ccy": "GBX",
+ "src": "AlphaVantage RPI.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2024-06-21",
+   373.5
+  ],
+  [
+   "2024-06-28",
+   400.5
+  ],
+  [
+   "2024-07-05",
+   424.0
+  ],
+  [
+   "2024-07-12",
+   400.0
+  ],
+  [
+   "2024-07-19",
+   378.0
+  ],
+  [
+   "2024-07-26",
+   393.0
+  ],
+  [
+   "2024-08-02",
+   367.2
+  ],
+  [
+   "2024-08-09",
+   369.2
+  ],
+  [
+   "2024-08-16",
+   385.0
+  ],
+  [
+   "2024-08-23",
+   422.0
+  ],
+  [
+   "2024-08-30",
+   401.0
+  ],
+  [
+   "2024-09-06",
+   375.0
+  ],
+  [
+   "2024-09-13",
+   337.4
+  ],
+  [
+   "2024-09-20",
+   348.2
+  ],
+  [
+   "2024-09-27",
+   389.2
+  ],
+  [
+   "2024-10-04",
+   366.8
+  ],
+  [
+   "2024-10-11",
+   386.6
+  ],
+  [
+   "2024-10-18",
+   364.0
+  ],
+  [
+   "2024-10-25",
+   365.0
+  ],
+  [
+   "2024-11-01",
+   344.0
+  ],
+  [
+   "2024-11-08",
+   333.0
+  ],
+  [
+   "2024-11-15",
+   332.8
+  ],
+  [
+   "2024-11-22",
+   332.2
+  ],
+  [
+   "2024-11-29",
+   363.8
+  ],
+  [
+   "2024-12-06",
+   383.0
+  ],
+  [
+   "2024-12-13",
+   478.6
+  ],
+  [
+   "2024-12-20",
+   588.0
+  ],
+  [
+   "2024-12-24",
+   598.0
+  ],
+  [
+   "2024-12-27",
+   640.0
+  ],
+  [
+   "2025-01-03",
+   653.5
+  ],
+  [
+   "2025-01-10",
+   588.0
+  ],
+  [
+   "2025-01-17",
+   678.0
+  ],
+  [
+   "2025-01-24",
+   664.5
+  ],
+  [
+   "2025-01-31",
+   766.0
+  ],
+  [
+   "2025-02-07",
+   739.5
+  ],
+  [
+   "2025-02-14",
+   691.5
+  ],
+  [
+   "2025-02-21",
+   671.5
+  ],
+  [
+   "2025-02-28",
+   595.0
+  ],
+  [
+   "2025-03-07",
+   600.0
+  ],
+  [
+   "2025-03-14",
+   580.5
+  ],
+  [
+   "2025-03-21",
+   511.5
+  ],
+  [
+   "2025-03-28",
+   497.8
+  ],
+  [
+   "2025-04-04",
+   450.0
+  ],
+  [
+   "2025-04-11",
+   421.2
+  ],
+  [
+   "2025-04-17",
+   438.6
+  ],
+  [
+   "2025-04-25",
+   421.2
+  ],
+  [
+   "2025-05-02",
+   473.4
+  ],
+  [
+   "2025-05-09",
+   468.0
+  ],
+  [
+   "2025-05-16",
+   517.5
+  ],
+  [
+   "2025-05-23",
+   525.0
+  ],
+  [
+   "2025-05-30",
+   523.5
+  ],
+  [
+   "2025-06-06",
+   476.6
+  ],
+  [
+   "2025-06-13",
+   480.2
+  ],
+  [
+   "2025-06-20",
+   458.6
+  ],
+  [
+   "2025-06-27",
+   459.8
+  ],
+  [
+   "2025-07-04",
+   482.6
+  ],
+  [
+   "2025-07-11",
+   462.8
+  ],
+  [
+   "2025-07-18",
+   466.6
+  ],
+  [
+   "2025-07-25",
+   447.8
+  ],
+  [
+   "2025-08-01",
+   408.4
+  ],
+  [
+   "2025-08-08",
+   424.6
+  ],
+  [
+   "2025-08-15",
+   399.4
+  ],
+  [
+   "2025-08-22",
+   410.0
+  ],
+  [
+   "2025-08-29",
+   422.0
+  ],
+  [
+   "2025-09-05",
+   417.2
+  ],
+  [
+   "2025-09-12",
+   404.4
+  ],
+  [
+   "2025-09-19",
+   384.8
+  ],
+  [
+   "2025-09-26",
+   415.2
+  ],
+  [
+   "2025-10-03",
+   426.6
+  ],
+  [
+   "2025-10-10",
+   384.6
+  ],
+  [
+   "2025-10-17",
+   375.4
+  ],
+  [
+   "2025-10-24",
+   369.2
+  ],
+  [
+   "2025-10-31",
+   362.6
+  ],
+  [
+   "2025-11-07",
+   340.6
+  ],
+  [
+   "2025-11-14",
+   335.2
+  ],
+  [
+   "2025-11-21",
+   308.2
+  ],
+  [
+   "2025-11-28",
+   325.6
+  ],
+  [
+   "2025-12-05",
+   326.0
+  ],
+  [
+   "2025-12-12",
+   309.8
+  ],
+  [
+   "2025-12-19",
+   304.4
+  ],
+  [
+   "2025-12-24",
+   306.0
+  ],
+  [
+   "2026-01-02",
+   298.6
+  ],
+  [
+   "2026-01-09",
+   292.2
+  ],
+  [
+   "2026-01-16",
+   299.8
+  ],
+  [
+   "2026-01-23",
+   280.2
+  ],
+  [
+   "2026-01-30",
+   268.2
+  ],
+  [
+   "2026-02-06",
+   271.0
+  ],
+  [
+   "2026-02-13",
+   283.6
+  ],
+  [
+   "2026-02-20",
+   382.6
+  ],
+  [
+   "2026-02-27",
+   373.2
+  ],
+  [
+   "2026-03-06",
+   308.8
+  ],
+  [
+   "2026-03-13",
+   292.2
+  ],
+  [
+   "2026-03-20",
+   310.0
+  ],
+  [
+   "2026-03-27",
+   291.8
+  ],
+  [
+   "2026-04-02",
+   487.6
+  ],
+  [
+   "2026-04-10",
+   502.5
+  ],
+  [
+   "2026-04-17",
+   665.0
+  ],
+  [
+   "2026-04-24",
+   595.5
+  ],
+  [
+   "2026-05-01",
+   652.0
+  ],
+  [
+   "2026-05-08",
+   721.0
+  ],
+  [
+   "2026-05-15",
+   703.0
+  ],
+  [
+   "2026-05-22",
+   749.0
+  ],
+  [
+   "2026-05-29",
+   815.0
+  ],
+  [
+   "2026-06-05",
+   1051.0
+  ],
+  [
+   "2026-06-12",
+   808.5
+  ],
+  [
+   "2026-06-19",
+   889.5
+  ],
+  [
+   "2026-06-26",
+   782.5
+  ],
+  [
+   "2026-07-03",
+   847.5
+  ],
+  [
+   "2026-07-10",
+   838.0
+  ],
+  [
+   "2026-07-17",
+   668.0
+  ],
+  [
+   "2026-07-24",
+   708.0
+  ],
+  [
+   "2026-07-31",
+   657.0
+  ],
+  [
+   "2026-08-07",
+   697.0
+  ],
+  [
+   "2026-08-14",
+   666.5
+  ],
+  [
+   "2026-08-21",
+   606.0
+  ],
+  [
+   "2026-08-28",
+   577.0
+  ],
+  [
+   "2026-09-04",
+   596.0
+  ],
+  [
+   "2026-09-11",
+   553.0
+  ],
+  [
+   "2026-09-18",
+   547.0
+  ],
+  [
+   "2026-09-25",
+   711.5
+  ],
+  [
+   "2026-10-02",
+   716.5
+  ],
+  [
+   "2026-10-09",
+   664.5
+  ],
+  [
+   "2026-10-16",
+   586.0
+  ],
+  [
+   "2026-10-19",
+   580.5
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2024-09-24",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Overall, we are encouraged by the resilient performance of the business given the market conditions widely reported by our peers. Our expectations for the full year remain unchanged.",
+   "file": "20240924_RPI_Interim-Results.md"
+  },
+  {
+   "d": "2025-01-29",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 1,
+   "q": "Gross profit from the sale of accessories and microcontrollers was strong in the second half and this, together with good cost discipline, means the Board expects to report (subject to external audit) adjusted EBITDA of not less than $36m for FY 2024.",
+   "file": "20250129_RPI_Trading-Update.md"
+  },
+  {
+   "d": "2025-04-02",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Given the planned product release schedule and mix of sales, gross profit per unit is expected to increase year-on-year. The Company has secured a sufficient supply of memory to meet expected demand into Q4, helping to sustain favourable unit economics for the year ahead.",
+   "file": "20250402_RPI_FY-2024-Final-Results.md"
+  },
+  {
+   "d": "2025-09-23",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "For the full year, we remain on track with profit expectations unchanged, underpinned by strong anticipated sales volumes and unit economics in the second half.",
+   "file": "20250923_RPI_H1-2025-Results.md"
+  },
+  {
+   "d": "2026-01-13",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 2,
+   "q": "The Board is pleased to confirm that it expects Adjusted FY2025 EBITDA to be ahead of market consensus forecasts, at not less than $45m[1], up over 20% on FY2024.",
+   "file": "20260113_RPI_Year-end-Trading-Update.md"
+  },
+  {
+   "d": "2026-03-31",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "While the DRAM environment limits second-half visibility, we have the inventory position, supplier relationships and pricing flexibility to navigate it effectively. Against that backdrop full-year profitability is anticipated to be in-line with market estimates, with revenue materially higher.",
+   "file": "20260331_RPI_FY-2025-Results.md"
+  },
+  {
+   "d": "2026-06-05",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 3,
+   "q": "The strong profitability delivered in the first half is expected to result in FY 2026 EBITDA being significantly ahead of current market expectations.",
+   "file": "20260605_RPI_Trading-Update.md"
+  },
+  {
+   "d": "2026-09-24",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The exceptional unit economics achieved in the first half have moderated as lower-cost memory inventory acquired during FY 2025 has been consumed. Notwithstanding this moderation, we expect full-year EBITDA to be ahead of market consensus.",
+   "file": "20260924_RPI_Interim-Results.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-24",
+  "doc": "H1 R",
+  "file": "20260924_RPI_Interim-Results.md",
+  "vs": "H1 R Sep-25 · H1 TU Jun-26 · YE-TU Jan-26",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Jun-26: “FY 2026 EBITDA being significantly ahead of current market expectations” with consensus footnote (“to be $42.0m”) → now “full-year EBITDA expected to be ahead of market consensus”, “significantly” and the consensus figure gone",
+    "span": "Consensus footnote given Jan-26 and Jun-26 → dropped at interims"
+   },
+   {
+    "sev": "amber",
+    "type": "Target dropped",
+    "text": "Net cash: Sep-25 “Cash is expected to decrease in H2 2025, reflecting a decline in extended payables associated with key component supply agreements, before increasing significantly in FY2026” → now net cash $18.4m (H1 25: $34.3m) and “We therefore expect to utilise our borrowing facilities throughout the period.”",
+    "span": "FY2026 cash rebuild not mentioned"
+   },
+   {
+    "sev": "grey",
+    "type": "Demoted",
+    "text": "Semiconductor units: Sep-25 highlight “For the first time, semiconductor unit volumes at 4.5 million in H1 2025, were higher than board unit volumes.” → now absent from highlights and KPI table; financial review shows microcontroller units 4.0m, “decreased by 11%”",
+    "span": "H1 R Sep-25 → Sep-26"
+   }
+  ]
+ }
+}

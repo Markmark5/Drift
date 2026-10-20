@@ -186,6 +186,13 @@
    "marks": 31
   },
   {
+   "ticker": "BNZL",
+   "company": "Bunzl plc",
+   "chart": "lite/BNZL.json?v=2026-10-20.1fab",
+   "scored": "2026-10-20",
+   "marks": 30
+  },
+  {
    "ticker": "BOOM",
    "company": "AudioBoom Group PLC",
    "chart": "lite/BOOM.json?v=2026-10-19.6319",
@@ -424,6 +431,13 @@
    "marks": 21
   },
   {
+   "ticker": "FRP",
+   "company": "FRP Advisory Group PLC",
+   "chart": "lite/FRP.json?v=2026-10-20.5b0b",
+   "scored": "2026-10-20",
+   "marks": 29
+  },
+  {
    "ticker": "FUTR",
    "company": "Future PLC",
    "chart": "lite/FUTR.json?v=2026-10-19.801e",
@@ -438,11 +452,25 @@
    "marks": 22
   },
   {
+   "ticker": "G4M",
+   "company": "Gear4music (Holdings) PLC",
+   "chart": "lite/G4M.json?v=2026-10-20.73ec",
+   "scored": "2026-10-20",
+   "marks": 33
+  },
+  {
    "ticker": "GATC",
    "company": "Gattaca PLC",
    "chart": "lite/GATC.json?v=2026-10-19.2ddb",
    "scored": "2026-10-19",
    "marks": 22
+  },
+  {
+   "ticker": "GBG",
+   "company": "GB Group PLC",
+   "chart": "lite/GBG.json?v=2026-10-20.6055",
+   "scored": "2026-10-20",
+   "marks": 31
   },
   {
    "ticker": "GEM",
@@ -459,6 +487,13 @@
    "marks": 16
   },
   {
+   "ticker": "GEN",
+   "company": "Genuit Group PLC",
+   "chart": "lite/GEN.json?v=2026-10-20.a3af",
+   "scored": "2026-10-20",
+   "marks": 21
+  },
+  {
    "ticker": "GENI",
    "company": "Genincode PLC",
    "chart": "lite/GENI.json?v=2026-10-19.8b53",
@@ -466,11 +501,25 @@
    "marks": 17
   },
   {
+   "ticker": "GMS",
+   "company": "Gulf Marine Services PLC",
+   "chart": "lite/GMS.json?v=2026-10-20.6328",
+   "scored": "2026-10-20",
+   "marks": 26
+  },
+  {
    "ticker": "GNC",
    "company": "Greencore Group PLC",
    "chart": "lite/GNC.json?v=2026-10-19.7345",
    "scored": "2026-10-19",
    "marks": 7
+  },
+  {
+   "ticker": "HLMA",
+   "company": "Halma plc",
+   "chart": "lite/HLMA.json?v=2026-10-20.6854",
+   "scored": "2026-10-20",
+   "marks": 15
   },
   {
    "ticker": "HSW",
@@ -536,6 +585,13 @@
    "marks": 25
   },
   {
+   "ticker": "IXI",
+   "company": "Ixico PLC",
+   "chart": "lite/IXI.json?v=2026-10-20.87cf",
+   "scored": "2026-10-20",
+   "marks": 29
+  },
+  {
    "ticker": "JDW",
    "company": "Wetherspoon (JD) PLC",
    "chart": "lite/JDW.json?v=2026-10-19.1949",
@@ -571,6 +627,13 @@
    "marks": 23
   },
   {
+   "ticker": "MAB",
+   "company": "Mitchells & Butlers PLC",
+   "chart": "lite/MAB.json?v=2026-10-20.5c28",
+   "scored": "2026-10-20",
+   "marks": 25
+  },
+  {
    "ticker": "MAI",
    "company": "Maintel Holdings PLC",
    "chart": "lite/MAI.json?v=2026-10-19.892e",
@@ -591,6 +654,13 @@
    "chart": "lite/MCON.json?v=2026-10-19.3a6f",
    "scored": "2026-10-19",
    "marks": 22
+  },
+  {
+   "ticker": "MERC",
+   "company": "Mercia Asset Management PLC",
+   "chart": "lite/MERC.json?v=2026-10-20.4990",
+   "scored": "2026-10-20",
+   "marks": 18
   },
   {
    "ticker": "MET",
@@ -680,6 +750,13 @@
    "marks": 25
   },
   {
+   "ticker": "NWF",
+   "company": "NWF Group PLC",
+   "chart": "lite/NWF.json?v=2026-10-20.57a6",
+   "scored": "2026-10-20",
+   "marks": 29
+  },
+  {
    "ticker": "OMG",
    "company": "Oxford Metrics PLC",
    "chart": "lite/OMG.json?v=2026-10-19.8f17",
@@ -692,6 +769,20 @@
    "chart": "lite/ONDO.json?v=2026-10-19.e9c8",
    "scored": "2026-10-19",
    "marks": 16
+  },
+  {
+   "ticker": "OPT",
+   "company": "Optima Health PLC",
+   "chart": "lite/OPT.json?v=2026-10-20.6218",
+   "scored": "2026-10-20",
+   "marks": 10
+  },
+  {
+   "ticker": "OTB",
+   "company": "On The Beach Group PLC",
+   "chart": "lite/OTB.json?v=2026-10-20.368f",
+   "scored": "2026-10-20",
+   "marks": 20
   },
   {
    "ticker": "OXIG",
@@ -806,6 +897,13 @@
    "marks": 26
   },
   {
+   "ticker": "RPI",
+   "company": "Raspberry Pi Holdings PLC",
+   "chart": "lite/RPI.json?v=2026-10-20.c366",
+   "scored": "2026-10-20",
+   "marks": 8
+  },
+  {
    "ticker": "RWA",
    "company": "Robert Walters PLC",
    "chart": "lite/RWA.json?v=2026-10-18.e348",
@@ -817,6 +915,13 @@
    "company": "Saga PLC",
    "chart": "lite/SAGA.json?v=2026-10-19.db8c",
    "scored": "2026-10-19",
+   "marks": 22
+  },
+  {
+   "ticker": "SBRE",
+   "company": "Sabre Insurance Group PLC",
+   "chart": "lite/SBRE.json?v=2026-10-20.0c1e",
+   "scored": "2026-10-20",
    "marks": 22
   },
   {
@@ -934,6 +1039,27 @@
    "marks": 32
   },
   {
+   "ticker": "SYS1",
+   "company": "System1 Group PLC",
+   "chart": "lite/SYS1.json?v=2026-10-20.5d67",
+   "scored": "2026-10-20",
+   "marks": 41
+  },
+  {
+   "ticker": "TAVI",
+   "company": "Tavistock Investments PLC",
+   "chart": "lite/TAVI.json?v=2026-10-20.fc11",
+   "scored": "2026-10-20",
+   "marks": 12
+  },
+  {
+   "ticker": "TBLD",
+   "company": "tinyBuild, Inc",
+   "chart": "lite/TBLD.json?v=2026-10-20.17c2",
+   "scored": "2026-10-20",
+   "marks": 21
+  },
+  {
    "ticker": "TEP",
    "company": "Telecom Plus PLC",
    "chart": "lite/TEP.json?v=2026-10-19.7a9d",
@@ -995,6 +1121,13 @@
    "chart": "lite/TPX.json?v=2026-10-19.8dc0",
    "scored": "2026-10-19",
    "marks": 26
+  },
+  {
+   "ticker": "TRI",
+   "company": "Trifast PLC",
+   "chart": "lite/TRI.json?v=2026-10-20.d431",
+   "scored": "2026-10-20",
+   "marks": 30
   },
   {
    "ticker": "TSCO",
@@ -1072,6 +1205,13 @@
    "chart": "lite/WISE.json?v=2026-10-18.5e41",
    "scored": "2026-10-18",
    "marks": 31
+  },
+  {
+   "ticker": "WIX",
+   "company": "Wickes Group PLC",
+   "chart": "lite/WIX.json?v=2026-10-20.91ab",
+   "scored": "2026-10-20",
+   "marks": 32
   },
   {
    "ticker": "WPHO",

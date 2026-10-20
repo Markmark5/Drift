@@ -1,0 +1,1490 @@
+{
+ "ticker": "SYS1",
+ "v": "2026-10-20.5d67",
+ "ccy": "GBX",
+ "src": "AlphaVantage SYS1.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   245.0
+  ],
+  [
+   "2021-10-22",
+   340.0
+  ],
+  [
+   "2021-10-29",
+   345.0
+  ],
+  [
+   "2021-11-05",
+   370.0
+  ],
+  [
+   "2021-11-12",
+   352.0
+  ],
+  [
+   "2021-11-19",
+   305.0
+  ],
+  [
+   "2021-11-26",
+   310.0
+  ],
+  [
+   "2021-12-03",
+   350.0
+  ],
+  [
+   "2021-12-10",
+   350.0
+  ],
+  [
+   "2021-12-17",
+   350.0
+  ],
+  [
+   "2021-12-24",
+   365.0
+  ],
+  [
+   "2021-12-31",
+   400.0
+  ],
+  [
+   "2022-01-07",
+   430.0
+  ],
+  [
+   "2022-01-14",
+   435.0
+  ],
+  [
+   "2022-01-21",
+   435.0
+  ],
+  [
+   "2022-01-28",
+   425.0
+  ],
+  [
+   "2022-02-04",
+   425.0
+  ],
+  [
+   "2022-02-11",
+   375.0
+  ],
+  [
+   "2022-02-18",
+   365.0
+  ],
+  [
+   "2022-02-25",
+   280.0
+  ],
+  [
+   "2022-03-04",
+   280.0
+  ],
+  [
+   "2022-03-11",
+   280.0
+  ],
+  [
+   "2022-03-18",
+   285.0
+  ],
+  [
+   "2022-03-25",
+   305.0
+  ],
+  [
+   "2022-03-31",
+   305.0
+  ],
+  [
+   "2022-04-07",
+   295.0
+  ],
+  [
+   "2022-04-14",
+   285.0
+  ],
+  [
+   "2022-04-22",
+   275.0
+  ],
+  [
+   "2022-04-29",
+   260.0
+  ],
+  [
+   "2022-05-06",
+   245.0
+  ],
+  [
+   "2022-05-13",
+   245.0
+  ],
+  [
+   "2022-05-20",
+   245.0
+  ],
+  [
+   "2022-05-27",
+   255.0
+  ],
+  [
+   "2022-06-01",
+   255.0
+  ],
+  [
+   "2022-06-10",
+   275.0
+  ],
+  [
+   "2022-06-17",
+   275.0
+  ],
+  [
+   "2022-06-24",
+   305.0
+  ],
+  [
+   "2022-07-01",
+   305.0
+  ],
+  [
+   "2022-07-08",
+   310.0
+  ],
+  [
+   "2022-07-15",
+   255.0
+  ],
+  [
+   "2022-07-21",
+   255.0
+  ],
+  [
+   "2022-07-29",
+   260.0
+  ],
+  [
+   "2022-08-05",
+   255.0
+  ],
+  [
+   "2022-08-12",
+   255.0
+  ],
+  [
+   "2022-08-19",
+   255.0
+  ],
+  [
+   "2022-08-23",
+   250.0
+  ],
+  [
+   "2022-08-26",
+   240.0
+  ],
+  [
+   "2022-09-02",
+   215.0
+  ],
+  [
+   "2022-09-09",
+   215.0
+  ],
+  [
+   "2022-09-13",
+   215.0
+  ],
+  [
+   "2022-09-16",
+   215.0
+  ],
+  [
+   "2022-09-23",
+   230.0
+  ],
+  [
+   "2022-09-30",
+   210.0
+  ],
+  [
+   "2022-10-04",
+   230.0
+  ],
+  [
+   "2022-10-14",
+   220.0
+  ],
+  [
+   "2022-10-17",
+   220.0
+  ],
+  [
+   "2022-10-21",
+   210.0
+  ],
+  [
+   "2022-10-28",
+   215.0
+  ],
+  [
+   "2022-11-03",
+   185.0
+  ],
+  [
+   "2022-11-10",
+   179.5
+  ],
+  [
+   "2022-11-17",
+   179.5
+  ],
+  [
+   "2022-11-25",
+   162.5
+  ],
+  [
+   "2022-12-02",
+   140.0
+  ],
+  [
+   "2022-12-08",
+   140.0
+  ],
+  [
+   "2022-12-14",
+   145.0
+  ],
+  [
+   "2022-12-22",
+   145.0
+  ],
+  [
+   "2022-12-30",
+   140.0
+  ],
+  [
+   "2023-01-06",
+   122.5
+  ],
+  [
+   "2023-01-13",
+   160.0
+  ],
+  [
+   "2023-01-20",
+   170.0
+  ],
+  [
+   "2023-01-27",
+   189.0
+  ],
+  [
+   "2023-02-03",
+   190.0
+  ],
+  [
+   "2023-02-10",
+   187.5
+  ],
+  [
+   "2023-02-17",
+   187.5
+  ],
+  [
+   "2023-02-24",
+   185.0
+  ],
+  [
+   "2023-03-03",
+   190.0
+  ],
+  [
+   "2023-03-10",
+   172.5
+  ],
+  [
+   "2023-03-16",
+   155.0
+  ],
+  [
+   "2023-03-21",
+   160.0
+  ],
+  [
+   "2023-03-28",
+   162.5
+  ],
+  [
+   "2023-03-31",
+   160.0
+  ],
+  [
+   "2023-04-05",
+   157.5
+  ],
+  [
+   "2023-04-14",
+   207.0
+  ],
+  [
+   "2023-04-20",
+   215.0
+  ],
+  [
+   "2023-04-28",
+   215.0
+  ],
+  [
+   "2023-05-04",
+   210.0
+  ],
+  [
+   "2023-05-19",
+   185.0
+  ],
+  [
+   "2023-05-26",
+   180.0
+  ],
+  [
+   "2023-05-30",
+   180.0
+  ],
+  [
+   "2023-06-05",
+   180.0
+  ],
+  [
+   "2023-06-09",
+   165.0
+  ],
+  [
+   "2023-06-16",
+   160.0
+  ],
+  [
+   "2023-06-22",
+   152.5
+  ],
+  [
+   "2023-06-30",
+   160.0
+  ],
+  [
+   "2023-07-05",
+   160.0
+  ],
+  [
+   "2023-07-10",
+   160.0
+  ],
+  [
+   "2023-07-13",
+   165.0
+  ],
+  [
+   "2023-07-17",
+   165.0
+  ],
+  [
+   "2023-07-20",
+   165.0
+  ],
+  [
+   "2023-08-04",
+   182.5
+  ],
+  [
+   "2023-08-10",
+   182.5
+  ],
+  [
+   "2023-08-17",
+   190.0
+  ],
+  [
+   "2023-08-25",
+   207.0
+  ],
+  [
+   "2023-08-31",
+   207.0
+  ],
+  [
+   "2023-09-04",
+   215.0
+  ],
+  [
+   "2023-09-08",
+   215.0
+  ],
+  [
+   "2023-09-14",
+   215.0
+  ],
+  [
+   "2023-09-22",
+   215.0
+  ],
+  [
+   "2023-09-29",
+   215.0
+  ],
+  [
+   "2023-10-06",
+   210.0
+  ],
+  [
+   "2023-10-13",
+   195.0
+  ],
+  [
+   "2023-10-20",
+   190.0
+  ],
+  [
+   "2023-10-25",
+   190.0
+  ],
+  [
+   "2023-11-03",
+   192.0
+  ],
+  [
+   "2023-11-10",
+   185.0
+  ],
+  [
+   "2023-11-13",
+   185.0
+  ],
+  [
+   "2023-11-17",
+   179.0
+  ],
+  [
+   "2023-11-24",
+   183.0
+  ],
+  [
+   "2023-12-01",
+   175.0
+  ],
+  [
+   "2023-12-08",
+   255.0
+  ],
+  [
+   "2023-12-15",
+   285.0
+  ],
+  [
+   "2023-12-21",
+   305.0
+  ],
+  [
+   "2023-12-29",
+   295.0
+  ],
+  [
+   "2024-01-05",
+   295.0
+  ],
+  [
+   "2024-01-08",
+   295.0
+  ],
+  [
+   "2024-01-11",
+   295.0
+  ],
+  [
+   "2024-01-19",
+   300.0
+  ],
+  [
+   "2024-01-26",
+   360.0
+  ],
+  [
+   "2024-02-02",
+   362.0
+  ],
+  [
+   "2024-02-09",
+   410.0
+  ],
+  [
+   "2024-02-16",
+   430.0
+  ],
+  [
+   "2024-02-23",
+   390.0
+  ],
+  [
+   "2024-03-01",
+   420.0
+  ],
+  [
+   "2024-03-08",
+   410.0
+  ],
+  [
+   "2024-03-15",
+   410.0
+  ],
+  [
+   "2024-03-22",
+   410.0
+  ],
+  [
+   "2024-03-28",
+   410.0
+  ],
+  [
+   "2024-04-05",
+   410.0
+  ],
+  [
+   "2024-04-12",
+   490.0
+  ],
+  [
+   "2024-04-19",
+   490.0
+  ],
+  [
+   "2024-04-26",
+   470.0
+  ],
+  [
+   "2024-05-03",
+   495.0
+  ],
+  [
+   "2024-05-10",
+   485.0
+  ],
+  [
+   "2024-05-17",
+   445.0
+  ],
+  [
+   "2024-05-24",
+   450.0
+  ],
+  [
+   "2024-05-31",
+   502.5
+  ],
+  [
+   "2024-06-07",
+   497.5
+  ],
+  [
+   "2024-06-13",
+   497.5
+  ],
+  [
+   "2024-06-21",
+   490.0
+  ],
+  [
+   "2024-06-28",
+   520.0
+  ],
+  [
+   "2024-07-05",
+   665.0
+  ],
+  [
+   "2024-07-12",
+   730.0
+  ],
+  [
+   "2024-07-19",
+   720.0
+  ],
+  [
+   "2024-07-26",
+   715.0
+  ],
+  [
+   "2024-08-02",
+   745.0
+  ],
+  [
+   "2024-08-09",
+   735.0
+  ],
+  [
+   "2024-08-16",
+   750.0
+  ],
+  [
+   "2024-08-23",
+   780.0
+  ],
+  [
+   "2024-08-30",
+   780.0
+  ],
+  [
+   "2024-09-06",
+   770.0
+  ],
+  [
+   "2024-09-13",
+   720.0
+  ],
+  [
+   "2024-09-20",
+   735.0
+  ],
+  [
+   "2024-09-27",
+   695.0
+  ],
+  [
+   "2024-10-04",
+   687.5
+  ],
+  [
+   "2024-10-11",
+   605.0
+  ],
+  [
+   "2024-10-18",
+   650.0
+  ],
+  [
+   "2024-10-25",
+   612.5
+  ],
+  [
+   "2024-11-01",
+   610.0
+  ],
+  [
+   "2024-11-08",
+   630.0
+  ],
+  [
+   "2024-11-15",
+   605.0
+  ],
+  [
+   "2024-11-22",
+   615.0
+  ],
+  [
+   "2024-11-29",
+   625.0
+  ],
+  [
+   "2024-12-06",
+   630.0
+  ],
+  [
+   "2024-12-13",
+   635.0
+  ],
+  [
+   "2024-12-20",
+   620.0
+  ],
+  [
+   "2024-12-24",
+   620.0
+  ],
+  [
+   "2024-12-27",
+   620.0
+  ],
+  [
+   "2025-01-03",
+   620.0
+  ],
+  [
+   "2025-01-10",
+   620.0
+  ],
+  [
+   "2025-01-17",
+   610.0
+  ],
+  [
+   "2025-01-24",
+   620.0
+  ],
+  [
+   "2025-01-31",
+   600.0
+  ],
+  [
+   "2025-02-07",
+   615.0
+  ],
+  [
+   "2025-02-14",
+   610.0
+  ],
+  [
+   "2025-02-21",
+   610.0
+  ],
+  [
+   "2025-02-28",
+   605.0
+  ],
+  [
+   "2025-03-07",
+   590.0
+  ],
+  [
+   "2025-03-14",
+   585.0
+  ],
+  [
+   "2025-03-21",
+   590.0
+  ],
+  [
+   "2025-03-27",
+   607.5
+  ],
+  [
+   "2025-04-04",
+   570.0
+  ],
+  [
+   "2025-04-11",
+   555.0
+  ],
+  [
+   "2025-04-17",
+   535.0
+  ],
+  [
+   "2025-04-25",
+   455.0
+  ],
+  [
+   "2025-05-02",
+   405.0
+  ],
+  [
+   "2025-05-09",
+   420.0
+  ],
+  [
+   "2025-05-16",
+   450.0
+  ],
+  [
+   "2025-05-23",
+   455.0
+  ],
+  [
+   "2025-05-30",
+   450.0
+  ],
+  [
+   "2025-06-06",
+   430.0
+  ],
+  [
+   "2025-06-13",
+   430.0
+  ],
+  [
+   "2025-06-20",
+   425.0
+  ],
+  [
+   "2025-06-27",
+   425.0
+  ],
+  [
+   "2025-07-04",
+   445.0
+  ],
+  [
+   "2025-07-11",
+   405.0
+  ],
+  [
+   "2025-07-18",
+   425.0
+  ],
+  [
+   "2025-07-25",
+   440.0
+  ],
+  [
+   "2025-08-01",
+   425.0
+  ],
+  [
+   "2025-08-08",
+   432.0
+  ],
+  [
+   "2025-08-15",
+   440.0
+  ],
+  [
+   "2025-08-22",
+   435.0
+  ],
+  [
+   "2025-08-29",
+   440.0
+  ],
+  [
+   "2025-09-05",
+   440.0
+  ],
+  [
+   "2025-09-12",
+   440.0
+  ],
+  [
+   "2025-09-19",
+   400.0
+  ],
+  [
+   "2025-09-26",
+   255.0
+  ],
+  [
+   "2025-10-03",
+   225.0
+  ],
+  [
+   "2025-10-10",
+   240.0
+  ],
+  [
+   "2025-10-17",
+   240.0
+  ],
+  [
+   "2025-10-24",
+   244.0
+  ],
+  [
+   "2025-10-31",
+   252.0
+  ],
+  [
+   "2025-11-07",
+   230.0
+  ],
+  [
+   "2025-11-14",
+   226.0
+  ],
+  [
+   "2025-11-21",
+   213.0
+  ],
+  [
+   "2025-11-28",
+   213.0
+  ],
+  [
+   "2025-12-05",
+   204.0
+  ],
+  [
+   "2025-12-12",
+   240.0
+  ],
+  [
+   "2025-12-19",
+   240.0
+  ],
+  [
+   "2025-12-24",
+   240.0
+  ],
+  [
+   "2026-01-02",
+   225.0
+  ],
+  [
+   "2026-01-09",
+   218.0
+  ],
+  [
+   "2026-01-16",
+   218.0
+  ],
+  [
+   "2026-01-23",
+   224.0
+  ],
+  [
+   "2026-01-30",
+   232.0
+  ],
+  [
+   "2026-02-06",
+   215.0
+  ],
+  [
+   "2026-02-13",
+   204.0
+  ],
+  [
+   "2026-02-20",
+   204.0
+  ],
+  [
+   "2026-02-27",
+   198.0
+  ],
+  [
+   "2026-03-06",
+   212.0
+  ],
+  [
+   "2026-03-13",
+   212.0
+  ],
+  [
+   "2026-03-20",
+   288.0
+  ],
+  [
+   "2026-03-27",
+   272.0
+  ],
+  [
+   "2026-04-02",
+   292.0
+  ],
+  [
+   "2026-04-10",
+   302.0
+  ],
+  [
+   "2026-04-17",
+   298.0
+  ],
+  [
+   "2026-04-24",
+   288.0
+  ],
+  [
+   "2026-05-01",
+   288.0
+  ],
+  [
+   "2026-05-08",
+   296.0
+  ],
+  [
+   "2026-05-15",
+   296.0
+  ],
+  [
+   "2026-05-22",
+   288.0
+  ],
+  [
+   "2026-05-29",
+   305.0
+  ],
+  [
+   "2026-06-05",
+   332.0
+  ],
+  [
+   "2026-06-12",
+   322.0
+  ],
+  [
+   "2026-06-19",
+   329.0
+  ],
+  [
+   "2026-06-26",
+   311.0
+  ],
+  [
+   "2026-07-03",
+   312.0
+  ],
+  [
+   "2026-07-10",
+   305.0
+  ],
+  [
+   "2026-07-17",
+   328.0
+  ],
+  [
+   "2026-07-24",
+   345.0
+  ],
+  [
+   "2026-07-31",
+   325.0
+  ],
+  [
+   "2026-08-07",
+   325.0
+  ],
+  [
+   "2026-08-14",
+   325.0
+  ],
+  [
+   "2026-08-21",
+   330.0
+  ],
+  [
+   "2026-08-28",
+   335.0
+  ],
+  [
+   "2026-09-04",
+   336.0
+  ],
+  [
+   "2026-09-11",
+   336.0
+  ],
+  [
+   "2026-09-18",
+   335.0
+  ],
+  [
+   "2026-09-25",
+   360.0
+  ],
+  [
+   "2026-10-02",
+   350.0
+  ],
+  [
+   "2026-10-09",
+   346.0
+  ],
+  [
+   "2026-10-16",
+   350.0
+  ],
+  [
+   "2026-10-19",
+   350.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-11-30",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Focussed investment in people and the platform will continue for the rest of the year, which we believe will enable future accelerated growth.",
+   "file": "20211130_SYS1_INTERIM-RESULTS.md"
+  },
+  {
+   "d": "2022-02-09",
+   "doc": "Q3 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Profitability was in line with management's expectations and reflected an increase in expenditure on people and platform as highlighted in the interim results announcement.",
+   "file": "20220209_SYS1_Trading-Update.md"
+  },
+  {
+   "d": "2022-02-22",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "CUT",
+   "s": -3,
+   "q": "As a consequence of the lower consultancy revenues, we now expect profit before tax for the final quarter and the year as a whole to be about £1m below the current market expectations.",
+   "file": "20220222_SYS1_Trading-Update.md"
+  },
+  {
+   "d": "2022-04-27",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "We intend to grow revenue and profits in the course of the new financial year and anticipate that the growth will be weighted to the second half of the year as expenditure flattens versus last year.",
+   "file": "20220427_SYS1_Trading-Update.md"
+  },
+  {
+   "d": "2022-07-12",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -2,
+   "q": "There are of course, two known headwinds for us to face and overcome: the exposure of a few of our large customers to the loss of their Russian market, which has already led to reduced marketing budgets; and the looming threat and impact of a recession on our customers' marketing investment.",
+   "file": "20220712_SYS1_PRELIMINARY-RESULTS-FOR-THE-YEAR-ENDED-31-MAR-2022.md"
+  },
+  {
+   "d": "2022-07-12",
+   "doc": "Q1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "Although lower than the comparable period last year, revenue and profitability were broadly in line with the Board's expectations and reflected inflationary pressures, tighter marketing budgets for some customers and continued softness in bespoke consultancy revenues, particularly in the USA where we have only recently filled a number of vacancies in the sales team.",
+   "file": "20220712_SYS1_Quarterly-Trading-Update.md"
+  },
+  {
+   "d": "2022-10-25",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Consequently, total H1 revenue declined 15% on the comparable period last year to £10.5m from £12.4m in H1 last year, in line with management's expectations.",
+   "file": "20221025_SYS1_Trading-Update.md"
+  },
+  {
+   "d": "2022-11-30",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -2,
+   "q": "Higher H1 exit run-rate for expenditure, combined with exchange rate and inflationary pressures are likely to increase expenditure and erode profitability in H2.",
+   "file": "20221130_SYS1_Interim-Results.md"
+  },
+  {
+   "d": "2023-02-23",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "As expected, the reduction in consultancy revenue narrowed from 46% in H1 to 21% in Q3 on the comparable period.",
+   "file": "20230223_SYS1_Trading-Update.md"
+  },
+  {
+   "d": "2023-04-12",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 1,
+   "q": "The improved revenue performance in H2 is expected to bring a return to profitability at adjusted and statutory levels for H2 and also for the year as a whole, based on the unaudited management accounts, and the Board now anticipates that profit for the year ended 31 March 2023 will slightly exceed its previous expectations.",
+   "file": "20230412_SYS1_Trading-Update.md"
+  },
+  {
+   "d": "2023-04-13",
+   "doc": "OPS",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Company's 12 April 2023 trading update announced our return to profitability for H2 and the full year and £0.6m cash generation in Q4.",
+   "file": "20230413_SYS1_Further-re-Requisitioned-General-Meeting.md"
+  },
+  {
+   "d": "2023-07-13",
+   "doc": "Q1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Total Group revenue grew by £0.9m (18%) on Q1 FY23 including a £0.2m reduction in non-platform consultancy, and growth in the US was in line with the Group.",
+   "file": "20230713_SYS1_Trading-update.md"
+  },
+  {
+   "d": "2023-08-01",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "We expect the growth in platform revenue to continue, which taken together with the levelling out of revenue in bespoke consultancy, should lead to overall revenue growth in FY24.",
+   "file": "20230801_SYS1_PRELIMINARY-RESULTS-FOR-THE-YEAR-ENDED-31-MAR-2023.md"
+  },
+  {
+   "d": "2023-09-27",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 2,
+   "q": "The Board is encouraged by trading in FY24 H1 and believes that the Group is well set to outperform the current consensus1 numbers for Revenue and Adjusted Profit Before Taxation2 for the current financial year.",
+   "file": "20230927_SYS1_Trading-Update.md"
+  },
+  {
+   "d": "2023-10-24",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Company expects to report a Statutory Pre-Tax Profit just below £1.0 million for the half-year (H1 FY 23: £0.0m).",
+   "file": "20231024_SYS1_Trading-Update.md"
+  },
+  {
+   "d": "2023-12-06",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Despite a difficult economic environment in some key markets, and challenging conditions for media owners and advertisers, we believe System1 can continue to grow profitably by gaining market share from large incumbents that we believe have less predictive products.",
+   "file": "20231206_SYS1_Interim-Results.md"
+  },
+  {
+   "d": "2024-01-24",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 3,
+   "q": "Revenue for the current financial year is expected to be at least £29 million (FY23: £23.4 m) and statutory profit before tax to be comfortably above £2 million and materially ahead of current consensus (FY23: £0.7m).",
+   "file": "20240124_SYS1_Trading-Update.md"
+  },
+  {
+   "d": "2024-04-16",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Based on the unaudited management accounts, Profit before Taxation for the year ended 31 March 2024 is expected to amount to £2.8m, up £2.1m on FY23 and ahead of market expectations1.",
+   "file": "20240416_SYS1_Trading-Update.md"
+  },
+  {
+   "d": "2024-07-03",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "As a result we continue to expect strong double-digit revenue and profit growth for the financial year as a whole.",
+   "file": "20240703_SYS1_Final-Results.md"
+  },
+  {
+   "d": "2024-07-12",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "As a result we continue to expect strong double-digit revenue and profit growth for the financial year as a whole.",
+   "file": "20240712_SYS1_Final-Results-(correction).md"
+  },
+  {
+   "d": "2024-07-12",
+   "doc": "Q1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "It's early in the year but this strong first quarter performance puts us firmly on track for sustainable growth and to achieve our full year expectations1.",
+   "file": "20240712_SYS1_Trading-Update.md"
+  },
+  {
+   "d": "2024-10-22",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Based on the unaudited management accounts, the Group expects to report a Statutory Pre-Tax Profit of ca £2.5 million for the half-year including a £0.1m credit to share-based payments (H1 FY24: £0.9m).",
+   "file": "20241022_SYS1_Trading-Update.md"
+  },
+  {
+   "d": "2024-12-03",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Company is trading in line with market expectations2, including the impact of the cost of additional investment to be incurred in the second half of the fiscal year.",
+   "file": "20241203_SYS1_Interim-Results.md"
+  },
+  {
+   "d": "2025-01-21",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 2,
+   "q": "The Board now believes that the Group is well placed to achieve full-year revenue at least in line with current market expectations1 and deliver a full-year adjusted profit before taxation1 of approximately £5m, comfortably above current market expectations1 (FY24: £3.1m).",
+   "file": "20250121_SYS1_Trading-Update.md"
+  },
+  {
+   "d": "2025-04-23",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -2,
+   "q": "While it is too early for us to gauge the effect that the current volatility in global markets will have on our clients' budgets, inevitably at this stage there is more downside than upside risk and we will provide a further update in our full year results.",
+   "file": "20250423_SYS1_Trading-Statement.md"
+  },
+  {
+   "d": "2025-07-09",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "On behalf of the Board I would like to recognise the immense effort that over 180 colleagues in the business make every day to meet and exceed the needs of our customers and reach the level of performance we achieved in FY25 and I'm confident that this momentum will continue in FY26.",
+   "file": "20250709_SYS1_Final-Results.md"
+  },
+  {
+   "d": "2025-07-09",
+   "doc": "Q1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -2,
+   "q": "Profits expected to be in line with Board expectations based on prudent cost controls and continued investments as previously noted in US growth, innovation and go to market",
+   "file": "20250709_SYS1_Trading-Update.md"
+  },
+  {
+   "d": "2025-09-23",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -3,
+   "q": "As a result of H1 trading, the Board expects full year financial performance to be materially below current market expectations2.",
+   "file": "20250923_SYS1_Trading-Update.md"
+  },
+  {
+   "d": "2025-10-22",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 1,
+   "q": "October is looking strong, and the Company continues to trade in line with the guidance1 we gave in the 23 September 2025 update",
+   "file": "20251022_SYS1_Trading-Update.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2025-12-02",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "With further new client wins, and bookings in October and November that have been stronger than we saw in H1, the Company continues to trade in line with the guidance2 we gave in the 23 September 2025 update.",
+   "file": "20251202_SYS1_Interim-Results.md"
+  },
+  {
+   "d": "2026-01-20",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board maintains the FY26 guidance1 it provided on 23 September 2025 and in the interim results on 2 December 2025.",
+   "file": "20260120_SYS1_Trading-Update.md"
+  },
+  {
+   "d": "2026-03-16",
+   "doc": "YE-TU",
+   "fy": "FY27",
+   "g": "RAISE",
+   "s": 3,
+   "q": "As a result of the above, the Board remains comfortable with consensus Revenue forecasts for FY27 but now expects FY27 Adjusted EBITDA to be materially ahead of current market forecasts, with an Adjusted EBITDA margin of no less than 15% and the opportunity for further margin expansion as revenue scales.",
+   "file": "20260316_SYS1_Trading-Update.md"
+  },
+  {
+   "d": "2026-04-21",
+   "doc": "YE-TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The strong level of new business wins secured throughout FY26 and particularly in the final quarter, provide confidence in delivering revenue and profit growth in FY27, in line with consensus market expectations",
+   "file": "20260421_SYS1_Q4-and-Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2026-07-08",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "While macroeconomic uncertainty remains and may continue to create periods of volatility, we believe the long-term opportunity for System1 remains significant and we enter FY27 well positioned for further growth.",
+   "file": "20260708_SYS1_Final-Results.md"
+  },
+  {
+   "d": "2026-07-13",
+   "doc": "OPS",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The outlook statement confirmed FY27 had seen continued strong new business activity and noted System1 entered FY27 with a broader customer base, strong operating discipline and a clear pathway to sustainable growth.",
+   "file": "20260713_SYS1_Response-to-announcement-by-Brave-Bison-Group-plc.md"
+  },
+  {
+   "d": "2026-07-17",
+   "doc": "OPS",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The outlook statement confirmed FY27 had seen continued strong new business activity and noted System1 entered FY27 with a broader customer base, strong operating discipline and a clear pathway to sustainable growth.",
+   "file": "20260717_SYS1_Reiteration-of-unequivocal-rejection.md"
+  },
+  {
+   "d": "2026-07-31",
+   "doc": "OPS",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The outlook statement confirmed FY27 had seen continued strong new business activity and noted System1 entered FY27 with a broader customer base, strong operating discipline and a clear pathway to sustainable growth.",
+   "file": "20260731_SYS1_Unequivocal-Rejection-of-Offer-from-Brave-Bison.md"
+  },
+  {
+   "d": "2026-09-10",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The Company remains comfortable with consensus1 Revenue and Adjusted Profit forecasts for FY27.",
+   "file": "20260910_SYS1_5M-FY27-Trading-Update.md"
+  },
+  {
+   "d": "2026-09-10",
+   "doc": "OPS",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board remains comfortable with the FY27 Profit Forecast, and the business is trading strongly.",
+   "file": "20260910_SYS1_Response-Document-Publication,-Shareholder-Support.md"
+  },
+  {
+   "d": "2026-09-24",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Following the results for 5M FY27, the Board has reviewed its forecasts for FY27 and confirms that it now expects adjusted profit before tax1 for FY27 to be approximately £5.0m, 19% higher than current market consensus expectations2 (“FY27 Profit Forecast”), which is a return to the profit levels achieved in the year ended 31 March 2025 (“FY25”).",
+   "file": "20260924_SYS1_Trading-Update.md"
+  },
+  {
+   "d": "2026-09-24",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Following the results for 5M FY27, the Board has reviewed its forecasts for FY27 and confirms that it now expects adjusted profit before tax1 for FY27 to be approximately £5.0m, 19% higher than current market consensus expectations2 (“FY27 Profit Forecast”), which is a return to the profit levels achieved in the year ended 31 March 2025 (“FY25”).",
+   "file": "20260924_SYS1_Replacement-Trading-Update.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-07",
+  "doc": "OPS",
+  "file": "20261007_SYS1_Increased-Final-Offer-for-System1-Group-plc.md",
+  "vs": "Increased Fourth Offer Sep-26 · TU Sep-26 · FY R Jul-26 · Q1 TUs Jul-22/23/24/25",
+  "lines": [
+   {
+    "sev": "grey",
+    "type": "Skipped update",
+    "text": "Q1 revenue update: Jul-22, Jul-23, Jul-24, Jul-25 each carried a Q1 trading update → none in Jul-26 after FY R Jul-26 “The Group will now be updating the market twice yearly, therefore will not provide Q1 and Q3 revenue updates”; 5M TU (Sep-26) issued instead during the offer period",
+    "span": "First gap in 4 years"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Profit reference: Fourth Offer Sep-26 “The Fourth Offer is equivalent to 11.3x of consensus market expectations at 21 April 2026 for System1's FY27E adjusted Operating Profit of £4.2 million.” → now “equivalent to 10.7x of System1's forecasted FY27 adjusted profit before tax of £5.0 million”, the company's raised guide of Sep-26",
+    "span": "FY27 PBT guide £4.2m → £5.0m (TU 24 Sep-26)"
+   }
+  ]
+ }
+}

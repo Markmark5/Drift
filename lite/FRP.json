@@ -1,0 +1,1344 @@
+{
+ "ticker": "FRP",
+ "v": "2026-10-20.5b0b",
+ "ccy": "GBX",
+ "src": "AlphaVantage FRP.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   122.0
+  ],
+  [
+   "2021-10-22",
+   123.5
+  ],
+  [
+   "2021-10-29",
+   126.0
+  ],
+  [
+   "2021-11-05",
+   126.0
+  ],
+  [
+   "2021-11-12",
+   128.0
+  ],
+  [
+   "2021-11-19",
+   128.0
+  ],
+  [
+   "2021-11-26",
+   126.5
+  ],
+  [
+   "2021-12-03",
+   127.0
+  ],
+  [
+   "2021-12-10",
+   126.5
+  ],
+  [
+   "2021-12-17",
+   126.5
+  ],
+  [
+   "2021-12-24",
+   134.5
+  ],
+  [
+   "2021-12-31",
+   134.0
+  ],
+  [
+   "2022-01-07",
+   133.25
+  ],
+  [
+   "2022-01-14",
+   132.0
+  ],
+  [
+   "2022-01-21",
+   127.0
+  ],
+  [
+   "2022-01-28",
+   125.5
+  ],
+  [
+   "2022-02-04",
+   133.0
+  ],
+  [
+   "2022-02-11",
+   134.0
+  ],
+  [
+   "2022-02-18",
+   130.0
+  ],
+  [
+   "2022-02-25",
+   126.0
+  ],
+  [
+   "2022-03-04",
+   116.0
+  ],
+  [
+   "2022-03-11",
+   118.0
+  ],
+  [
+   "2022-03-18",
+   125.0
+  ],
+  [
+   "2022-03-25",
+   121.5
+  ],
+  [
+   "2022-04-01",
+   122.5
+  ],
+  [
+   "2022-04-08",
+   127.5
+  ],
+  [
+   "2022-04-14",
+   127.0
+  ],
+  [
+   "2022-04-22",
+   127.0
+  ],
+  [
+   "2022-04-29",
+   127.0
+  ],
+  [
+   "2022-05-06",
+   129.0
+  ],
+  [
+   "2022-05-13",
+   135.0
+  ],
+  [
+   "2022-05-20",
+   150.25
+  ],
+  [
+   "2022-05-27",
+   160.5
+  ],
+  [
+   "2022-06-01",
+   158.5
+  ],
+  [
+   "2022-06-10",
+   155.0
+  ],
+  [
+   "2022-06-17",
+   147.0
+  ],
+  [
+   "2022-06-24",
+   146.5
+  ],
+  [
+   "2022-07-01",
+   154.0
+  ],
+  [
+   "2022-07-08",
+   154.5
+  ],
+  [
+   "2022-07-15",
+   156.5
+  ],
+  [
+   "2022-07-22",
+   139.0
+  ],
+  [
+   "2022-07-29",
+   140.5
+  ],
+  [
+   "2022-08-05",
+   154.0
+  ],
+  [
+   "2022-08-12",
+   159.5
+  ],
+  [
+   "2022-08-19",
+   164.0
+  ],
+  [
+   "2022-08-26",
+   161.0
+  ],
+  [
+   "2022-09-02",
+   160.0
+  ],
+  [
+   "2022-09-09",
+   159.0
+  ],
+  [
+   "2022-09-16",
+   163.0
+  ],
+  [
+   "2022-09-23",
+   156.0
+  ],
+  [
+   "2022-09-30",
+   157.5
+  ],
+  [
+   "2022-10-07",
+   157.0
+  ],
+  [
+   "2022-10-14",
+   153.5
+  ],
+  [
+   "2022-10-21",
+   157.0
+  ],
+  [
+   "2022-10-28",
+   156.5
+  ],
+  [
+   "2022-11-04",
+   167.5
+  ],
+  [
+   "2022-11-11",
+   162.0
+  ],
+  [
+   "2022-11-18",
+   161.0
+  ],
+  [
+   "2022-11-25",
+   159.0
+  ],
+  [
+   "2022-12-02",
+   168.0
+  ],
+  [
+   "2022-12-09",
+   166.0
+  ],
+  [
+   "2022-12-16",
+   160.5
+  ],
+  [
+   "2022-12-23",
+   158.5
+  ],
+  [
+   "2022-12-30",
+   159.0
+  ],
+  [
+   "2023-01-06",
+   157.0
+  ],
+  [
+   "2023-01-13",
+   154.5
+  ],
+  [
+   "2023-01-20",
+   157.0
+  ],
+  [
+   "2023-01-27",
+   148.5
+  ],
+  [
+   "2023-02-03",
+   152.0
+  ],
+  [
+   "2023-02-10",
+   146.0
+  ],
+  [
+   "2023-02-17",
+   130.25
+  ],
+  [
+   "2023-02-24",
+   127.0
+  ],
+  [
+   "2023-03-03",
+   125.25
+  ],
+  [
+   "2023-03-10",
+   116.0
+  ],
+  [
+   "2023-03-17",
+   117.0
+  ],
+  [
+   "2023-03-24",
+   112.75
+  ],
+  [
+   "2023-03-31",
+   108.0
+  ],
+  [
+   "2023-04-06",
+   112.75
+  ],
+  [
+   "2023-04-14",
+   111.0
+  ],
+  [
+   "2023-04-21",
+   117.5
+  ],
+  [
+   "2023-04-28",
+   108.5
+  ],
+  [
+   "2023-05-05",
+   111.25
+  ],
+  [
+   "2023-05-12",
+   110.75
+  ],
+  [
+   "2023-05-19",
+   114.0
+  ],
+  [
+   "2023-05-26",
+   110.0
+  ],
+  [
+   "2023-06-02",
+   109.5
+  ],
+  [
+   "2023-06-09",
+   108.5
+  ],
+  [
+   "2023-06-16",
+   116.25
+  ],
+  [
+   "2023-06-23",
+   133.0
+  ],
+  [
+   "2023-06-30",
+   125.0
+  ],
+  [
+   "2023-07-07",
+   123.0
+  ],
+  [
+   "2023-07-14",
+   120.0
+  ],
+  [
+   "2023-07-21",
+   121.0
+  ],
+  [
+   "2023-07-28",
+   120.0
+  ],
+  [
+   "2023-08-04",
+   120.0
+  ],
+  [
+   "2023-08-11",
+   119.75
+  ],
+  [
+   "2023-08-18",
+   121.0
+  ],
+  [
+   "2023-08-25",
+   119.0
+  ],
+  [
+   "2023-09-01",
+   113.0
+  ],
+  [
+   "2023-09-08",
+   114.75
+  ],
+  [
+   "2023-09-15",
+   114.0
+  ],
+  [
+   "2023-09-22",
+   114.5
+  ],
+  [
+   "2023-09-29",
+   118.5
+  ],
+  [
+   "2023-10-06",
+   115.5
+  ],
+  [
+   "2023-10-13",
+   107.0
+  ],
+  [
+   "2023-10-20",
+   114.25
+  ],
+  [
+   "2023-10-27",
+   115.0
+  ],
+  [
+   "2023-11-03",
+   114.0
+  ],
+  [
+   "2023-11-10",
+   119.0
+  ],
+  [
+   "2023-11-17",
+   123.0
+  ],
+  [
+   "2023-11-24",
+   121.5
+  ],
+  [
+   "2023-12-01",
+   127.5
+  ],
+  [
+   "2023-12-08",
+   127.5
+  ],
+  [
+   "2023-12-15",
+   140.5
+  ],
+  [
+   "2023-12-22",
+   137.0
+  ],
+  [
+   "2023-12-29",
+   136.5
+  ],
+  [
+   "2024-01-05",
+   130.25
+  ],
+  [
+   "2024-01-12",
+   130.5
+  ],
+  [
+   "2024-01-19",
+   126.5
+  ],
+  [
+   "2024-01-26",
+   120.5
+  ],
+  [
+   "2024-02-02",
+   128.5
+  ],
+  [
+   "2024-02-09",
+   128.75
+  ],
+  [
+   "2024-02-16",
+   125.5
+  ],
+  [
+   "2024-02-23",
+   121.0
+  ],
+  [
+   "2024-03-01",
+   117.5
+  ],
+  [
+   "2024-03-08",
+   111.75
+  ],
+  [
+   "2024-03-15",
+   113.0
+  ],
+  [
+   "2024-03-22",
+   114.0
+  ],
+  [
+   "2024-03-28",
+   114.0
+  ],
+  [
+   "2024-04-05",
+   113.75
+  ],
+  [
+   "2024-04-12",
+   115.5
+  ],
+  [
+   "2024-04-19",
+   121.0
+  ],
+  [
+   "2024-04-26",
+   119.5
+  ],
+  [
+   "2024-05-03",
+   120.0
+  ],
+  [
+   "2024-05-10",
+   125.5
+  ],
+  [
+   "2024-05-17",
+   143.5
+  ],
+  [
+   "2024-05-24",
+   131.0
+  ],
+  [
+   "2024-05-31",
+   132.5
+  ],
+  [
+   "2024-06-07",
+   129.5
+  ],
+  [
+   "2024-06-14",
+   123.5
+  ],
+  [
+   "2024-06-21",
+   122.0
+  ],
+  [
+   "2024-06-28",
+   120.0
+  ],
+  [
+   "2024-07-05",
+   123.25
+  ],
+  [
+   "2024-07-12",
+   130.5
+  ],
+  [
+   "2024-07-19",
+   132.5
+  ],
+  [
+   "2024-07-26",
+   130.0
+  ],
+  [
+   "2024-08-02",
+   134.5
+  ],
+  [
+   "2024-08-09",
+   141.5
+  ],
+  [
+   "2024-08-16",
+   151.5
+  ],
+  [
+   "2024-08-23",
+   148.0
+  ],
+  [
+   "2024-08-30",
+   151.0
+  ],
+  [
+   "2024-09-06",
+   149.0
+  ],
+  [
+   "2024-09-13",
+   144.0
+  ],
+  [
+   "2024-09-20",
+   147.0
+  ],
+  [
+   "2024-09-27",
+   143.0
+  ],
+  [
+   "2024-10-04",
+   137.5
+  ],
+  [
+   "2024-10-11",
+   138.0
+  ],
+  [
+   "2024-10-18",
+   132.5
+  ],
+  [
+   "2024-10-25",
+   124.0
+  ],
+  [
+   "2024-11-01",
+   147.0
+  ],
+  [
+   "2024-11-08",
+   145.0
+  ],
+  [
+   "2024-11-15",
+   144.0
+  ],
+  [
+   "2024-11-22",
+   156.0
+  ],
+  [
+   "2024-11-29",
+   151.5
+  ],
+  [
+   "2024-12-06",
+   148.0
+  ],
+  [
+   "2024-12-13",
+   150.0
+  ],
+  [
+   "2024-12-20",
+   148.5
+  ],
+  [
+   "2024-12-24",
+   148.0
+  ],
+  [
+   "2024-12-27",
+   148.5
+  ],
+  [
+   "2025-01-03",
+   145.5
+  ],
+  [
+   "2025-01-10",
+   140.0
+  ],
+  [
+   "2025-01-17",
+   139.0
+  ],
+  [
+   "2025-01-24",
+   138.0
+  ],
+  [
+   "2025-01-31",
+   135.0
+  ],
+  [
+   "2025-02-07",
+   135.0
+  ],
+  [
+   "2025-02-14",
+   134.0
+  ],
+  [
+   "2025-02-21",
+   141.0
+  ],
+  [
+   "2025-02-28",
+   140.5
+  ],
+  [
+   "2025-03-07",
+   143.0
+  ],
+  [
+   "2025-03-14",
+   139.0
+  ],
+  [
+   "2025-03-21",
+   141.0
+  ],
+  [
+   "2025-03-28",
+   132.5
+  ],
+  [
+   "2025-04-04",
+   120.5
+  ],
+  [
+   "2025-04-11",
+   124.0
+  ],
+  [
+   "2025-04-17",
+   132.5
+  ],
+  [
+   "2025-04-25",
+   135.0
+  ],
+  [
+   "2025-05-02",
+   136.0
+  ],
+  [
+   "2025-05-09",
+   132.0
+  ],
+  [
+   "2025-05-16",
+   126.0
+  ],
+  [
+   "2025-05-23",
+   124.0
+  ],
+  [
+   "2025-05-30",
+   130.0
+  ],
+  [
+   "2025-06-06",
+   129.0
+  ],
+  [
+   "2025-06-13",
+   123.5
+  ],
+  [
+   "2025-06-20",
+   125.0
+  ],
+  [
+   "2025-06-27",
+   126.0
+  ],
+  [
+   "2025-07-04",
+   123.5
+  ],
+  [
+   "2025-07-11",
+   123.0
+  ],
+  [
+   "2025-07-18",
+   121.5
+  ],
+  [
+   "2025-07-25",
+   128.0
+  ],
+  [
+   "2025-08-01",
+   128.0
+  ],
+  [
+   "2025-08-08",
+   126.25
+  ],
+  [
+   "2025-08-15",
+   130.0
+  ],
+  [
+   "2025-08-22",
+   138.0
+  ],
+  [
+   "2025-08-29",
+   136.0
+  ],
+  [
+   "2025-09-05",
+   137.0
+  ],
+  [
+   "2025-09-12",
+   137.0
+  ],
+  [
+   "2025-09-19",
+   144.0
+  ],
+  [
+   "2025-09-26",
+   146.0
+  ],
+  [
+   "2025-10-03",
+   146.5
+  ],
+  [
+   "2025-10-10",
+   146.0
+  ],
+  [
+   "2025-10-17",
+   143.5
+  ],
+  [
+   "2025-10-24",
+   145.5
+  ],
+  [
+   "2025-10-31",
+   145.5
+  ],
+  [
+   "2025-11-07",
+   140.5
+  ],
+  [
+   "2025-11-14",
+   140.0
+  ],
+  [
+   "2025-11-21",
+   142.5
+  ],
+  [
+   "2025-11-28",
+   143.0
+  ],
+  [
+   "2025-12-05",
+   143.0
+  ],
+  [
+   "2025-12-12",
+   144.0
+  ],
+  [
+   "2025-12-19",
+   130.5
+  ],
+  [
+   "2025-12-24",
+   133.5
+  ],
+  [
+   "2026-01-02",
+   136.0
+  ],
+  [
+   "2026-01-09",
+   135.0
+  ],
+  [
+   "2026-01-16",
+   134.5
+  ],
+  [
+   "2026-01-23",
+   133.5
+  ],
+  [
+   "2026-01-30",
+   133.5
+  ],
+  [
+   "2026-02-06",
+   137.0
+  ],
+  [
+   "2026-02-13",
+   131.0
+  ],
+  [
+   "2026-02-20",
+   128.5
+  ],
+  [
+   "2026-02-27",
+   121.5
+  ],
+  [
+   "2026-03-06",
+   109.0
+  ],
+  [
+   "2026-03-13",
+   110.0
+  ],
+  [
+   "2026-03-20",
+   106.5
+  ],
+  [
+   "2026-03-27",
+   107.5
+  ],
+  [
+   "2026-04-02",
+   114.0
+  ],
+  [
+   "2026-04-10",
+   119.5
+  ],
+  [
+   "2026-04-17",
+   117.0
+  ],
+  [
+   "2026-04-24",
+   119.0
+  ],
+  [
+   "2026-05-01",
+   118.25
+  ],
+  [
+   "2026-05-08",
+   116.5
+  ],
+  [
+   "2026-05-15",
+   112.0
+  ],
+  [
+   "2026-05-22",
+   112.0
+  ],
+  [
+   "2026-05-29",
+   111.0
+  ],
+  [
+   "2026-06-05",
+   117.0
+  ],
+  [
+   "2026-06-12",
+   117.0
+  ],
+  [
+   "2026-06-19",
+   115.0
+  ],
+  [
+   "2026-06-26",
+   113.5
+  ],
+  [
+   "2026-07-03",
+   114.5
+  ],
+  [
+   "2026-07-10",
+   109.5
+  ],
+  [
+   "2026-07-17",
+   109.0
+  ],
+  [
+   "2026-07-24",
+   116.0
+  ],
+  [
+   "2026-07-31",
+   113.5
+  ],
+  [
+   "2026-08-07",
+   120.0
+  ],
+  [
+   "2026-08-14",
+   119.0
+  ],
+  [
+   "2026-08-21",
+   119.0
+  ],
+  [
+   "2026-08-28",
+   119.0
+  ],
+  [
+   "2026-09-04",
+   119.5
+  ],
+  [
+   "2026-09-11",
+   119.5
+  ],
+  [
+   "2026-09-18",
+   118.5
+  ],
+  [
+   "2026-09-25",
+   116.5
+  ],
+  [
+   "2026-10-02",
+   114.5
+  ],
+  [
+   "2026-10-09",
+   114.0
+  ],
+  [
+   "2026-10-16",
+   123.5
+  ],
+  [
+   "2026-10-19",
+   123.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-11-11",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group expects to report revenue for the half year to 31 October 2021 of £44.7m, up 25% on the prior year (H1 2021: £35.9m), and underlying adjusted EBITDA* of £11.1m, up 14% on the prior year (H1 2021: £9.7m), in line with the Board's expectations to date.",
+   "file": "20211111_FRP_Half-Year-Trading-Update.md"
+  },
+  {
+   "d": "2021-12-16",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The medium-term outlook for all our markets is positive and the Board remains confident of making further progress in the current financial year.",
+   "file": "20211216_FRP_Half-year-Report.md"
+  },
+  {
+   "d": "2022-05-17",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 2,
+   "q": "The Group expects to report revenues for FY 2022 of £95.2 million, up 21% on the prior year (FY 2021: £79 million), and adjusted EBITDA* of £25.7 million, up 12% on the prior year (FY 2021: £23 million), both ahead of current market consensus.",
+   "file": "20220517_FRP_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2022-07-22",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "As a result, I remain confident in our ability to both navigate uncertain times and indeed deploy our considerable expertise exactly where it is needed. Current year trading reflects this and is in line with expectation.",
+   "file": "20220722_FRP_Full-Year-Results.md"
+  },
+  {
+   "d": "2022-09-15",
+   "doc": "AGM",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Overall trading in our current financial year, from 1 May 2022 to date, remains in line with the Board's expectations.",
+   "file": "20220915_FRP_AGM-Statement-and-Q1-Dividend-Declaration.md"
+  },
+  {
+   "d": "2022-11-11",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading since 1 May 2022 has been in line with the Board's expectations. The medium-term outlook for our key markets remains positive and the Board is confident of making further progress in the current Financial year.",
+   "file": "20221111_FRP_Half-Year-Trading-Update.md"
+  },
+  {
+   "d": "2022-12-13",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is confident of making further progress in the current financial year and trading is in line with market expectations.",
+   "file": "20221213_FRP_Half-year-Report.md"
+  },
+  {
+   "d": "2023-02-13",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -2,
+   "q": "Based on year-to-date trading, the Board expects to be broadly in line with consensus FY 2023 revenue and adjusted EBITDA2 expectations1, with the outcome subject to the timing of completion of several FRP Corporate Finance transactions around the year end.",
+   "file": "20230213_FRP_Trading-Update-and-Q3-Dividend-Declaration.md"
+  },
+  {
+   "d": "2023-05-15",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 1,
+   "q": "The Group expects to report revenues for the full year to 30 April 2023 of £104 million, up 9% on the prior year (FY 2022: £95.2 million), and adjusted underlying EBITDA* of £27 million, up 5% on the prior year (FY 2022: £25.7 million), both slightly ahead of current market consensus**.",
+   "file": "20230515_FRP_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2023-07-26",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "In our new financial year activity levels have been encouraging to date and trading is in line with the Board's expectations. The short and medium-term outlook for our business remains positive and we are confident of making further progress.",
+   "file": "20230726_FRP_Full-Year-Results.md"
+  },
+  {
+   "d": "2023-09-28",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 1,
+   "q": "Trading year-to-date has been positive and if current activity levels continue, the Board is confident that the Group will at least deliver the current full year market expectations*.",
+   "file": "20230928_FRP_AGM-Statement-and-Q1-Dividend-Declaration.md"
+  },
+  {
+   "d": "2023-11-17",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 1,
+   "q": "Trading since 1 May 2023 has been positive and if current activity levels continue, the Board remains confident of at least achieving full year expectations.",
+   "file": "20231117_FRP_Half-Year-Trading-Update.md"
+  },
+  {
+   "d": "2023-12-12",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Trading to date has been positive and the Board expects to exceed current consensus market expectations for FY 2024. If current activity levels continue the Board expects the Company to deliver revenue of £123m and adjusted EBITDA of £32m for FY 2024.",
+   "file": "20231212_FRP_Half-year-Report.md"
+  },
+  {
+   "d": "2024-02-14",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board notes the progress made by the Group over the first nine months of the financial year ending 30 April 2024 (\"FY 2024\"). The Board also considers that current trading activity levels are in line with achieving market expectations.",
+   "file": "20240214_FRP_Q3-Trading-Update-and-Dividend-Declaration.md"
+  },
+  {
+   "d": "2024-05-17",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Subject to audit, the Group expects to report revenues for FY 2024 of £128 million, up 23% on the prior year (FY 2023: £104 million), and adjusted underlying EBITDA* of £37 million, up 37% on the prior year (FY 2023: £27 million), both exceeding current market consensus**.",
+   "file": "20240517_FRP_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2024-07-24",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "In our new financial year, activity levels have been encouraging and trading is in line with the Board's expectations including the financial contribution of recently acquired businesses where integration is progressing as planned.",
+   "file": "20240724_FRP_Full-Year-Results.md"
+  },
+  {
+   "d": "2024-07-24",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "In our new financial year, activity levels have been encouraging and trading is in line with the Board's expectations including the financial contribution of recently acquired businesses where integration is progressing as planned.",
+   "file": "20240724_FRP_Replacement---Full-Year-Results.md"
+  },
+  {
+   "d": "2024-09-26",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading in the year-to-date continues to be in line with the Board's expectations and the integration of our recently acquired businesses is progressing as planned.",
+   "file": "20240926_FRP_AGM-Statement-and-Q1-Dividend-Declaration.md"
+  },
+  {
+   "d": "2024-11-20",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The pipeline remains encouraging, and assuming current activity levels continue, the Board remains confident of achieving full year expectations.",
+   "file": "20241120_FRP_Half-Year-Trading-Update.md"
+  },
+  {
+   "d": "2024-12-17",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Each service pillar has a robust pipeline and a positive outlook. The Board remains confident of achieving current market expectations for the full year*, assuming current activity levels continue.",
+   "file": "20241217_FRP_Half-year-Report.md"
+  },
+  {
+   "d": "2025-02-17",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 2,
+   "q": "The Group's pipeline and activity levels remain strong, and as such the Board is confident that the Group will deliver results for the year ending 30 April 2025 (\"FY 2025\") ahead of current market expectations1.",
+   "file": "20250217_FRP_Q3-Trading-Update-and-Dividend-Declaration.md"
+  },
+  {
+   "d": "2025-05-08",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -2,
+   "q": "The final quarter of the financial year saw a marked increase in macroeconomic volatility, driven predominantly by US announcements regarding global trade tariffs, impacting business confidence and causing delays in decision making.",
+   "file": "20250508_FRP_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2025-07-23",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "FRP remains well-placed to serve our clients, with both the resource and agility to respond quickly to demand trends as they emerge. Trading in the first few months of the new financial year has been positive, and in line with the Board's expectations.",
+   "file": "20250723_FRP_Full-Year-Results.md"
+  },
+  {
+   "d": "2025-09-23",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading in the year-to-date continues to be in line with the Board's expectations. FY 2025 was an acquisitive year and the integration of recently acquired businesses, including One Advisory Group, has progressed as planned and all are performing in line with expectations.",
+   "file": "20250923_FRP_AGM-Statement-and-Q1-Dividend-Declaration.md"
+  },
+  {
+   "d": "2025-11-21",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The client pipeline remains encouraging, and assuming current activity levels continue, the Board remains confident of achieving full year expectations.",
+   "file": "20251121_FRP_Trading-Statement.md"
+  },
+  {
+   "d": "2025-12-18",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Against this backdrop, the Group anticipates that demand for its services will continue to rise, and the Board remains confident of achieving current market expectations for the full year*, assuming current activity levels continue.",
+   "file": "20251218_FRP_Half-year-Report.md"
+  },
+  {
+   "d": "2026-05-15",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 1,
+   "q": "The Group expects to report FY 2026 revenues of at least £176m which is up 16% on the prior year (FY 2025: £152.2m), and adjusted underlying EBITDA of at least £45m, up 9% on the prior year (FY 2025: £41.3m).",
+   "file": "20260515_FRP_Full-Year-Trading-Update.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2026-07-22",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "All service pillars enter the new financial year with strong pipelines and positive momentum, supporting confidence in near-term activity levels, assuming broadly stable market conditions.",
+   "file": "20260722_FRP_Full-Year-Results.md"
+  },
+  {
+   "d": "2026-09-24",
+   "doc": "AGM",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading year-to-date continues to be in line with the Board's expectations. The integration of the businesses acquired during FY2026, including One Advisory Group and Arc & Co, has progressed as planned and all are performing in line with expectations.",
+   "file": "20260924_FRP_AGM-Statement-and-Q1-FY2027-Dividend-Declaration.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-24",
+  "doc": "AGM",
+  "file": "20260924_FRP_AGM-Statement-and-Q1-FY2027-Dividend-Declaration.md",
+  "vs": "AGM Sep-25 · FY R Jul-26 · back to AGM Sep-24",
+  "lines": [
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "AGM Sep-25 and Sep-24 gave no figures for the year just ended → Sep-26 quantifies it: “Revenue grew 16% to £177 million, of which 10% was organic” plus EBITDA, EPS, headcount and net cash",
+    "span": "Guide wording unchanged: “Trading year-to-date continues to be in line with the Board's expectations” (same anchor Sep-24, Sep-25, Sep-26)"
+   }
+  ]
+ }
+}

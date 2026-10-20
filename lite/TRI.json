@@ -1,0 +1,1370 @@
+{
+ "ticker": "TRI",
+ "v": "2026-10-20.d431",
+ "ccy": "GBX",
+ "src": "AlphaVantage TRI.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   125.0
+  ],
+  [
+   "2021-10-22",
+   124.0
+  ],
+  [
+   "2021-10-29",
+   135.0
+  ],
+  [
+   "2021-11-05",
+   140.0
+  ],
+  [
+   "2021-11-12",
+   140.0
+  ],
+  [
+   "2021-11-19",
+   141.0
+  ],
+  [
+   "2021-11-26",
+   140.0
+  ],
+  [
+   "2021-12-03",
+   140.0
+  ],
+  [
+   "2021-12-10",
+   147.0
+  ],
+  [
+   "2021-12-17",
+   163.5
+  ],
+  [
+   "2021-12-24",
+   165.0
+  ],
+  [
+   "2021-12-31",
+   160.5
+  ],
+  [
+   "2022-01-07",
+   160.0
+  ],
+  [
+   "2022-01-14",
+   163.0
+  ],
+  [
+   "2022-01-21",
+   160.0
+  ],
+  [
+   "2022-01-28",
+   157.5
+  ],
+  [
+   "2022-02-04",
+   149.0
+  ],
+  [
+   "2022-02-11",
+   144.0
+  ],
+  [
+   "2022-02-18",
+   143.0
+  ],
+  [
+   "2022-02-25",
+   137.5
+  ],
+  [
+   "2022-03-04",
+   124.0
+  ],
+  [
+   "2022-03-11",
+   112.5
+  ],
+  [
+   "2022-03-18",
+   117.0
+  ],
+  [
+   "2022-03-25",
+   114.5
+  ],
+  [
+   "2022-04-01",
+   115.5
+  ],
+  [
+   "2022-04-08",
+   115.0
+  ],
+  [
+   "2022-04-14",
+   110.5
+  ],
+  [
+   "2022-04-22",
+   110.0
+  ],
+  [
+   "2022-04-29",
+   108.0
+  ],
+  [
+   "2022-05-06",
+   100.0
+  ],
+  [
+   "2022-05-13",
+   98.8
+  ],
+  [
+   "2022-05-20",
+   100.0
+  ],
+  [
+   "2022-05-27",
+   101.75
+  ],
+  [
+   "2022-06-01",
+   102.05
+  ],
+  [
+   "2022-06-10",
+   107.0
+  ],
+  [
+   "2022-06-17",
+   105.0
+  ],
+  [
+   "2022-06-24",
+   100.5
+  ],
+  [
+   "2022-07-01",
+   96.3
+  ],
+  [
+   "2022-07-08",
+   91.4
+  ],
+  [
+   "2022-07-15",
+   91.0
+  ],
+  [
+   "2022-07-22",
+   90.0
+  ],
+  [
+   "2022-07-29",
+   94.0
+  ],
+  [
+   "2022-08-05",
+   95.0
+  ],
+  [
+   "2022-08-12",
+   95.9
+  ],
+  [
+   "2022-08-19",
+   94.6
+  ],
+  [
+   "2022-08-26",
+   96.5
+  ],
+  [
+   "2022-09-02",
+   97.0
+  ],
+  [
+   "2022-09-09",
+   91.0
+  ],
+  [
+   "2022-09-16",
+   83.8
+  ],
+  [
+   "2022-09-23",
+   78.9
+  ],
+  [
+   "2022-09-30",
+   74.5
+  ],
+  [
+   "2022-10-07",
+   73.5
+  ],
+  [
+   "2022-10-14",
+   73.0
+  ],
+  [
+   "2022-10-21",
+   64.3
+  ],
+  [
+   "2022-10-28",
+   63.3
+  ],
+  [
+   "2022-11-04",
+   63.0
+  ],
+  [
+   "2022-11-11",
+   60.9
+  ],
+  [
+   "2022-11-18",
+   57.0
+  ],
+  [
+   "2022-11-25",
+   55.2
+  ],
+  [
+   "2022-12-02",
+   62.0
+  ],
+  [
+   "2022-12-09",
+   59.7
+  ],
+  [
+   "2022-12-16",
+   59.6
+  ],
+  [
+   "2022-12-23",
+   69.0
+  ],
+  [
+   "2022-12-30",
+   72.6
+  ],
+  [
+   "2023-01-06",
+   75.0
+  ],
+  [
+   "2023-01-13",
+   77.0
+  ],
+  [
+   "2023-01-20",
+   80.0
+  ],
+  [
+   "2023-01-27",
+   79.7
+  ],
+  [
+   "2023-02-03",
+   79.0
+  ],
+  [
+   "2023-02-10",
+   85.4
+  ],
+  [
+   "2023-02-17",
+   92.0
+  ],
+  [
+   "2023-02-24",
+   66.6
+  ],
+  [
+   "2023-03-03",
+   69.0
+  ],
+  [
+   "2023-03-10",
+   71.0
+  ],
+  [
+   "2023-03-17",
+   69.0
+  ],
+  [
+   "2023-03-24",
+   71.0
+  ],
+  [
+   "2023-03-31",
+   77.8
+  ],
+  [
+   "2023-04-06",
+   73.6
+  ],
+  [
+   "2023-04-14",
+   72.0
+  ],
+  [
+   "2023-04-21",
+   65.4
+  ],
+  [
+   "2023-04-28",
+   72.0
+  ],
+  [
+   "2023-05-05",
+   71.0
+  ],
+  [
+   "2023-05-12",
+   75.0
+  ],
+  [
+   "2023-05-19",
+   74.4
+  ],
+  [
+   "2023-05-26",
+   72.8
+  ],
+  [
+   "2023-06-02",
+   72.0
+  ],
+  [
+   "2023-06-09",
+   75.0
+  ],
+  [
+   "2023-06-16",
+   80.2
+  ],
+  [
+   "2023-06-23",
+   80.1
+  ],
+  [
+   "2023-06-30",
+   78.4
+  ],
+  [
+   "2023-07-07",
+   76.5
+  ],
+  [
+   "2023-07-14",
+   80.0
+  ],
+  [
+   "2023-07-21",
+   87.4
+  ],
+  [
+   "2023-07-28",
+   89.0
+  ],
+  [
+   "2023-08-04",
+   87.5
+  ],
+  [
+   "2023-08-11",
+   86.6
+  ],
+  [
+   "2023-08-18",
+   85.0
+  ],
+  [
+   "2023-08-25",
+   83.7
+  ],
+  [
+   "2023-09-01",
+   82.4
+  ],
+  [
+   "2023-09-08",
+   80.0
+  ],
+  [
+   "2023-09-15",
+   80.6
+  ],
+  [
+   "2023-09-22",
+   82.0
+  ],
+  [
+   "2023-09-29",
+   82.0
+  ],
+  [
+   "2023-10-06",
+   78.0
+  ],
+  [
+   "2023-10-13",
+   79.9
+  ],
+  [
+   "2023-10-20",
+   75.0
+  ],
+  [
+   "2023-10-27",
+   70.0
+  ],
+  [
+   "2023-11-03",
+   69.0
+  ],
+  [
+   "2023-11-10",
+   70.6
+  ],
+  [
+   "2023-11-17",
+   69.6
+  ],
+  [
+   "2023-11-24",
+   76.4
+  ],
+  [
+   "2023-12-01",
+   79.3
+  ],
+  [
+   "2023-12-08",
+   78.0
+  ],
+  [
+   "2023-12-15",
+   88.0
+  ],
+  [
+   "2023-12-22",
+   84.0
+  ],
+  [
+   "2023-12-29",
+   88.4
+  ],
+  [
+   "2024-01-05",
+   89.8
+  ],
+  [
+   "2024-01-12",
+   90.2
+  ],
+  [
+   "2024-01-19",
+   93.0
+  ],
+  [
+   "2024-01-26",
+   72.9
+  ],
+  [
+   "2024-02-02",
+   72.0
+  ],
+  [
+   "2024-02-09",
+   74.4
+  ],
+  [
+   "2024-02-16",
+   78.0
+  ],
+  [
+   "2024-02-23",
+   76.0
+  ],
+  [
+   "2024-03-01",
+   76.0
+  ],
+  [
+   "2024-03-08",
+   77.2
+  ],
+  [
+   "2024-03-15",
+   73.0
+  ],
+  [
+   "2024-03-22",
+   73.0
+  ],
+  [
+   "2024-03-28",
+   74.6
+  ],
+  [
+   "2024-04-05",
+   71.4
+  ],
+  [
+   "2024-04-12",
+   75.0
+  ],
+  [
+   "2024-04-19",
+   74.8
+  ],
+  [
+   "2024-04-26",
+   77.0
+  ],
+  [
+   "2024-05-03",
+   73.2
+  ],
+  [
+   "2024-05-10",
+   74.6
+  ],
+  [
+   "2024-05-17",
+   70.9
+  ],
+  [
+   "2024-05-24",
+   71.6
+  ],
+  [
+   "2024-05-31",
+   66.2
+  ],
+  [
+   "2024-06-07",
+   70.9
+  ],
+  [
+   "2024-06-14",
+   70.0
+  ],
+  [
+   "2024-06-21",
+   72.6
+  ],
+  [
+   "2024-06-28",
+   71.4
+  ],
+  [
+   "2024-07-05",
+   71.8
+  ],
+  [
+   "2024-07-12",
+   78.0
+  ],
+  [
+   "2024-07-19",
+   72.6
+  ],
+  [
+   "2024-07-26",
+   71.0
+  ],
+  [
+   "2024-08-02",
+   78.2
+  ],
+  [
+   "2024-08-09",
+   86.4
+  ],
+  [
+   "2024-08-16",
+   82.4
+  ],
+  [
+   "2024-08-23",
+   81.0
+  ],
+  [
+   "2024-08-30",
+   80.0
+  ],
+  [
+   "2024-09-06",
+   81.4
+  ],
+  [
+   "2024-09-13",
+   79.0
+  ],
+  [
+   "2024-09-20",
+   78.0
+  ],
+  [
+   "2024-09-27",
+   78.0
+  ],
+  [
+   "2024-10-04",
+   78.6
+  ],
+  [
+   "2024-10-11",
+   79.0
+  ],
+  [
+   "2024-10-18",
+   79.0
+  ],
+  [
+   "2024-10-25",
+   80.6
+  ],
+  [
+   "2024-11-01",
+   78.0
+  ],
+  [
+   "2024-11-08",
+   80.6
+  ],
+  [
+   "2024-11-15",
+   77.6
+  ],
+  [
+   "2024-11-22",
+   79.0
+  ],
+  [
+   "2024-11-29",
+   85.0
+  ],
+  [
+   "2024-12-06",
+   80.0
+  ],
+  [
+   "2024-12-13",
+   82.6
+  ],
+  [
+   "2024-12-20",
+   85.4
+  ],
+  [
+   "2024-12-24",
+   84.5
+  ],
+  [
+   "2024-12-27",
+   83.6
+  ],
+  [
+   "2025-01-03",
+   84.8
+  ],
+  [
+   "2025-01-10",
+   81.8
+  ],
+  [
+   "2025-01-17",
+   82.9
+  ],
+  [
+   "2025-01-24",
+   81.0
+  ],
+  [
+   "2025-01-31",
+   76.4
+  ],
+  [
+   "2025-02-07",
+   75.2
+  ],
+  [
+   "2025-02-14",
+   77.1
+  ],
+  [
+   "2025-02-21",
+   75.2
+  ],
+  [
+   "2025-02-28",
+   72.0
+  ],
+  [
+   "2025-03-07",
+   67.6
+  ],
+  [
+   "2025-03-14",
+   67.0
+  ],
+  [
+   "2025-03-21",
+   68.0
+  ],
+  [
+   "2025-03-28",
+   70.2
+  ],
+  [
+   "2025-04-04",
+   61.4
+  ],
+  [
+   "2025-04-11",
+   65.8
+  ],
+  [
+   "2025-04-17",
+   66.6
+  ],
+  [
+   "2025-04-25",
+   65.0
+  ],
+  [
+   "2025-05-02",
+   66.0
+  ],
+  [
+   "2025-05-09",
+   67.0
+  ],
+  [
+   "2025-05-16",
+   70.4
+  ],
+  [
+   "2025-05-23",
+   69.4
+  ],
+  [
+   "2025-05-30",
+   68.4
+  ],
+  [
+   "2025-06-06",
+   68.0
+  ],
+  [
+   "2025-06-13",
+   66.0
+  ],
+  [
+   "2025-06-20",
+   66.0
+  ],
+  [
+   "2025-06-27",
+   70.0
+  ],
+  [
+   "2025-07-04",
+   70.0
+  ],
+  [
+   "2025-07-11",
+   67.2
+  ],
+  [
+   "2025-07-18",
+   72.4
+  ],
+  [
+   "2025-07-25",
+   72.4
+  ],
+  [
+   "2025-08-01",
+   82.0
+  ],
+  [
+   "2025-08-08",
+   78.0
+  ],
+  [
+   "2025-08-15",
+   79.0
+  ],
+  [
+   "2025-08-22",
+   76.7
+  ],
+  [
+   "2025-08-29",
+   79.4
+  ],
+  [
+   "2025-09-05",
+   83.0
+  ],
+  [
+   "2025-09-12",
+   82.0
+  ],
+  [
+   "2025-09-19",
+   82.0
+  ],
+  [
+   "2025-09-26",
+   77.2
+  ],
+  [
+   "2025-10-03",
+   70.0
+  ],
+  [
+   "2025-10-10",
+   80.2
+  ],
+  [
+   "2025-10-17",
+   82.8
+  ],
+  [
+   "2025-10-24",
+   78.2
+  ],
+  [
+   "2025-10-31",
+   76.0
+  ],
+  [
+   "2025-11-07",
+   78.4
+  ],
+  [
+   "2025-11-14",
+   73.4
+  ],
+  [
+   "2025-11-21",
+   72.4
+  ],
+  [
+   "2025-11-28",
+   73.0
+  ],
+  [
+   "2025-12-05",
+   76.2
+  ],
+  [
+   "2025-12-12",
+   75.0
+  ],
+  [
+   "2025-12-19",
+   70.8
+  ],
+  [
+   "2025-12-24",
+   69.0
+  ],
+  [
+   "2026-01-02",
+   70.0
+  ],
+  [
+   "2026-01-09",
+   71.0
+  ],
+  [
+   "2026-01-16",
+   77.0
+  ],
+  [
+   "2026-01-23",
+   79.6
+  ],
+  [
+   "2026-01-30",
+   75.2
+  ],
+  [
+   "2026-02-06",
+   78.2
+  ],
+  [
+   "2026-02-13",
+   77.0
+  ],
+  [
+   "2026-02-20",
+   87.0
+  ],
+  [
+   "2026-02-27",
+   79.2
+  ],
+  [
+   "2026-03-06",
+   74.4
+  ],
+  [
+   "2026-03-13",
+   69.8
+  ],
+  [
+   "2026-03-20",
+   60.0
+  ],
+  [
+   "2026-03-27",
+   60.0
+  ],
+  [
+   "2026-04-02",
+   67.0
+  ],
+  [
+   "2026-04-10",
+   66.8
+  ],
+  [
+   "2026-04-17",
+   70.2
+  ],
+  [
+   "2026-04-24",
+   65.8
+  ],
+  [
+   "2026-05-01",
+   62.8
+  ],
+  [
+   "2026-05-08",
+   63.0
+  ],
+  [
+   "2026-05-15",
+   64.0
+  ],
+  [
+   "2026-05-22",
+   64.7
+  ],
+  [
+   "2026-05-29",
+   69.0
+  ],
+  [
+   "2026-06-05",
+   67.6
+  ],
+  [
+   "2026-06-12",
+   67.0
+  ],
+  [
+   "2026-06-19",
+   67.0
+  ],
+  [
+   "2026-06-26",
+   68.0
+  ],
+  [
+   "2026-07-03",
+   73.2
+  ],
+  [
+   "2026-07-10",
+   81.6
+  ],
+  [
+   "2026-07-17",
+   78.8
+  ],
+  [
+   "2026-07-24",
+   76.6
+  ],
+  [
+   "2026-07-31",
+   80.8
+  ],
+  [
+   "2026-08-07",
+   83.2
+  ],
+  [
+   "2026-08-14",
+   86.4
+  ],
+  [
+   "2026-08-21",
+   86.4
+  ],
+  [
+   "2026-08-28",
+   87.0
+  ],
+  [
+   "2026-09-04",
+   87.4
+  ],
+  [
+   "2026-09-11",
+   84.0
+  ],
+  [
+   "2026-09-18",
+   81.2
+  ],
+  [
+   "2026-09-25",
+   84.0
+  ],
+  [
+   "2026-10-02",
+   84.0
+  ],
+  [
+   "2026-10-09",
+   87.0
+  ],
+  [
+   "2026-10-16",
+   86.0
+  ],
+  [
+   "2026-10-19",
+   86.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-10-21",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Further to the update given to shareholders at the time of the AGM in July 2021, the Board is pleased to report that overall trading in the subsequent weeks has been in line with expectations at both revenue and profit levels.",
+   "file": "20211021_TRI_Trading-update-and-Notice-of-half-year-results.md"
+  },
+  {
+   "d": "2021-11-23",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "There can be no doubt that semi-conductor shortages will continue to impact results in the short-term. However, we expect to continue to outperform the market due to new platform wins and further penetration into our existing light and heavy vehicle customer base.",
+   "file": "20211123_TRI_HALF-YEARLY-FINANCIAL-REPORT-TO-30-SEPTEMBER-2021.md"
+  },
+  {
+   "d": "2022-02-24",
+   "doc": "Q3 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "With strong momentum in contract wins, new order pipeline and general activity levels, the Board is confident in the Group's outlook, with its full year FY2022 expectations unchanged.",
+   "file": "20220224_TRI_Q3-Trading-Update.md"
+  },
+  {
+   "d": "2022-05-05",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Strong trading continued in Q4, contributing to year-on-year organic revenue growth at constant exchange rate (CER) of c.15% for FY2022 (organic growth at CER of c.9% against FY2020). As a result, the Group expects to report an overall trading performance for FY2022, in line with the Board's expectations.",
+   "file": "20220505_TRI_Trading-update-&-Notice-of-Annual-results.md"
+  },
+  {
+   "d": "2022-07-26",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "As a result of this, in the short term we expect to see a period of cost recovery deferral across our non-transactional business and therefore a greater degree of the Group's FY2023 profitability weighted towards the second half of the year.",
+   "file": "20220726_TRI_Publication-of-the-2022-Annual-Results.md"
+  },
+  {
+   "d": "2022-10-20",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -3,
+   "q": "However, g iven the short-term headwinds from the ongoing inflationary pressures as well as some tactical growth investment, the Board currently expect that the Group's underlying profitability for the year ending 31 March 2023 will be around 10% below current market consensus.",
+   "file": "20221020_TRI_Trading-Update-&-Notice-of-Half-year-results.md"
+  },
+  {
+   "d": "2022-11-22",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "The unprecedented political and economic times coupled with a looming recession make the short-term outlook for the Group challenging to predict and therefore we are increasing our focus on taking steps to mitigate these risks through a mix of operational efficiencies, price increases, profit enhancements and working capital (primarily inventory) improvements.",
+   "file": "20221122_TRI_Half-yearly-Report--six-months-ended-30.9.22.md"
+  },
+  {
+   "d": "2023-02-20",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -3,
+   "q": "As a consequence, the Group will be significantly below current market expectations for the year ending 31 March 2023*. For FY2023, the Company is expected to report, revenue of c.£243m and adjusted PBT of c.£9.0m.",
+   "file": "20230220_TRI_Trading-Update-and-Directorate-Change.md"
+  },
+  {
+   "d": "2023-04-26",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 1,
+   "q": "As a result of this and pricing actions, the Group expects adjusted profit before tax for the year marginally ahead of the adjusted PBT guidance of £9.0m provided in February.",
+   "file": "20230426_TRI_Trading-update.md"
+  },
+  {
+   "d": "2023-07-11",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -2,
+   "q": "These, together with the initial benefits from our operational improvement programmes, support the Board's continued expectation in delivering an improvement in performance in FY24, albeit weighted towards the second half of the year.",
+   "file": "20230711_TRI_Annual-results---31-March-2023---Annual-Report.md"
+  },
+  {
+   "d": "2023-10-24",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Whilst we remain confident in the delivery of our revenue pipeline generation, margin improvement and working capital plans, we are mindful of the elevated uncertainty over demand conditions as a result of ongoing macro-economic challenges and recent global geopolitical unrest.",
+   "file": "20231024_TRI_Half-year-trading-update-and-notice-of-results.md"
+  },
+  {
+   "d": "2023-11-21",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Macroeconomic environment will continue to put pressure on short- term trading especially in Asia. However, we are confident in our pipeline and self-help initiatives.",
+   "file": "20231121_TRI_Half-year-Report---six-months-to-30-September-2023.md"
+  },
+  {
+   "d": "2024-01-22",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -3,
+   "q": "Consequently, the Board now expects that the Group's results for the year ending 31 March 2024 to be significantly below its previous expectations, with revised revenue at c.£230m and adjusted EBIT margin percentage of c.5%.",
+   "file": "20240122_TRI_Trading-Update.md"
+  },
+  {
+   "d": "2024-04-25",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 1,
+   "q": "As a result, the Group's revenue and profitability for the financial year ended 31 March 2024 (FY24), are expected to be marginally ahead of guidance indicated in the announcement of 22 January 2024.",
+   "file": "20240425_TRI_Trading-update-&-Notice-of-Annual-results.md"
+  },
+  {
+   "d": "2024-07-02",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -1,
+   "q": "The Board confirms that results for the year ended 31 March 2024 remain in line with the previous guidance provided in January 2024, indicating a revised revenue at c.£230m and adjusted EBIT margin percentage of c.5%.",
+   "file": "20240702_TRI_FY24-results-publication–revision-of-release-date.md"
+  },
+  {
+   "d": "2024-07-29",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Whilst the macroeconomic environment continues to present short-term challenges, current trading remains in line with management expectations.",
+   "file": "20240729_TRI_Annual-Results---31-March-2024---Annual-Report.md"
+  },
+  {
+   "d": "2024-09-10",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "We are pleased to report that Trading in the first four months of the current financial year has been in line with the Board's expectations.",
+   "file": "20240910_TRI_AGM-Statement.md"
+  },
+  {
+   "d": "2024-10-22",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Despite ongoing global macro-economic and geopolitical uncertainties, which are expected to contribute to subdued demand in the second half, Trifast continues to demonstrate that its margin management and working capital efficiency programmes are delivering.",
+   "file": "20241022_TRI_Trading-update-and-Notice-of-Half-year-results.md"
+  },
+  {
+   "d": "2024-11-19",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "As we progress through the remainder of this financial year, we expect our 'RRR' strategy to continue to make an incremental contribution to our performance, whilst productivity and cost saving actions and additional operational and commercial initiatives being implemented in H2 in line with strategic roadmap are all expected to deliver further margin benefits as we move forward.",
+   "file": "20241119_TRI_HALF-YEARLY-FINANCIAL-REPORT.md"
+  },
+  {
+   "d": "2025-02-13",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Overall, the Group's performance in the Period and for the financial year to date underpins the Board's optimism that expectations for full year performance remain unchanged.",
+   "file": "20250213_TRI_Trading-update.md"
+  },
+  {
+   "d": "2025-04-30",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group expects to report revenues for FY25 of £223.0m, with adjusted EBIT in line with expectations1 at approximately £14.8m, which represents an improving margin of c.6.6%.",
+   "file": "20250430_TRI_Trading-Update-&-Notice-of-FY25-Annual-Results.md"
+  },
+  {
+   "d": "2025-07-10",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "Trading headwinds have persisted into Q1 FY26, driven by macroeconomic pressures, softness in the automotive sector, US tariffs on steel and aluminium, and USD weakness.",
+   "file": "20250710_TRI_Final-Results.md"
+  },
+  {
+   "d": "2025-09-11",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading in the first four months of the current financial year (FY26) has been in line with the Board's expectations and consistent with that reported at our Full Year results in July 2025.",
+   "file": "20250911_TRI_Trading-Statement.md"
+  },
+  {
+   "d": "2025-10-21",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group's overall performance in the first half of FY26 has been in line with the Board's expectations, with continued benefits from operational improvement initiatives creating resilience amidst a challenging market backdrop.",
+   "file": "20251021_TRI_Trading-Statement.md"
+  },
+  {
+   "d": "2025-11-18",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board's current full year underlying earnings expectations remain unchanged despite external market challenges. Our strategic focus continues to be on the self-help levers within our control, particularly those driving working capital improvements and margin enhancement.",
+   "file": "20251118_TRI_Half-year-Financial-Report.md"
+  },
+  {
+   "d": "2026-02-12",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group remains on track to deliver FY26 results in line with market expectations1 against a backdrop of continued challenging trading conditions.",
+   "file": "20260212_TRI_Trading-Statement.md"
+  },
+  {
+   "d": "2026-04-29",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group expects to report FY26 underlying EBIT of c.£16.0m, in line with market expectations1, reflecting continued margin improvement from delivery of our strategic self‑help initiatives, against a challenging macroeconomic and geopolitical backdrop.",
+   "file": "20260429_TRI_Trading-Statement.md"
+  },
+  {
+   "d": "2026-07-02",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -1,
+   "q": "As we start FY27, the external market environment is no less challenging and appears to be the new normal.",
+   "file": "20260702_TRI_Final-Results.md"
+  },
+  {
+   "d": "2026-09-08",
+   "doc": "AGM",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading in the current financial year remains in line with market expectations*, notwithstanding a challenging macroeconomic backdrop, which continues to affect the Group's North America auto's business in particular, reflecting the Group's increasing exposure to higher growth areas and geographies.",
+   "file": "20260908_TRI_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2026-10-20",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 1,
+   "q": "The Board remains confident in delivering further margin improvement in H2 FY27, targeting double-digit EBIT margins in the period, ahead of our stated timeframe.",
+   "file": "20261020_TRI_Trading-Update.md",
+   "gnote": "early signal: first step up in tone"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-20",
+  "doc": "H1 TU",
+  "file": "20261020_TRI_Trading-Update.md",
+  "vs": "H1 TU Oct-25 · AGM Sep-26 · back to Oct-23, Oct-24",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Net debt: Oct-25 “Pre-IFRS 16 net debt increased modestly to £17.4m at 30 September 2025” (Oct-24 £15.8m, Oct-23 c.£28m) → Oct-26 no net debt figure, only “leverage remains below 1x”",
+    "span": "Given at Oct-23, Oct-24, Oct-25 → first gap in 3 years"
+   },
+   {
+    "sev": "amber",
+    "type": "Restated",
+    "text": "H1 FY26 EBIT margin: Oct-25 reported 6.3% (CER) → Oct-26 base “restated from 6.3% following the reclassification of Project Ignite from capital expenditure to separately disclosed items” to 6.6%, against which the 7.4% is “improved further by approximately 80 basis points”",
+    "span": "Gross margin 28.7%, flat on H1 FY26 after +144bps a year earlier"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Margin target pulled forward: Oct-25 “achieving an underlying EBIT margin of greater than 10%” in the medium term → Oct-26 “targeting double-digit EBIT margins in the period, ahead of our stated timeframe” for H2 FY27"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Anchor firmed: Oct-25 “in line with the Board's expectations” → Oct-26 “Trading in the current financial year to date is in line with market expectations” with a consensus footnote (EBIT £18.2m)",
+    "span": "Consensus EBIT £18.6m at Sep-26 AGM → £18.2m Oct-26"
+   }
+  ]
+ }
+}
