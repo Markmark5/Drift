@@ -1,0 +1,273 @@
+{
+ "ticker": "PWR",
+ "v": "2026-10-20.87c3",
+ "ccy": "GBX",
+ "src": "Yahoo PWR.L weekly",
+ "adj": [],
+ "px": [
+  [
+   "2025-12-12",
+   89.5
+  ],
+  [
+   "2025-12-19",
+   96.5
+  ],
+  [
+   "2025-12-26",
+   95.0
+  ],
+  [
+   "2026-01-02",
+   98.5
+  ],
+  [
+   "2026-01-09",
+   98.5
+  ],
+  [
+   "2026-01-16",
+   96.5
+  ],
+  [
+   "2026-01-23",
+   86.5
+  ],
+  [
+   "2026-01-30",
+   85.5
+  ],
+  [
+   "2026-02-06",
+   85.5
+  ],
+  [
+   "2026-02-13",
+   87.5
+  ],
+  [
+   "2026-02-20",
+   83.0
+  ],
+  [
+   "2026-02-27",
+   79.0
+  ],
+  [
+   "2026-03-06",
+   71.0
+  ],
+  [
+   "2026-03-13",
+   69.5
+  ],
+  [
+   "2026-03-20",
+   69.5
+  ],
+  [
+   "2026-03-27",
+   72.0
+  ],
+  [
+   "2026-04-03",
+   72.0
+  ],
+  [
+   "2026-04-10",
+   72.0
+  ],
+  [
+   "2026-04-17",
+   73.0
+  ],
+  [
+   "2026-04-24",
+   74.0
+  ],
+  [
+   "2026-05-01",
+   73.5
+  ],
+  [
+   "2026-05-08",
+   73.5
+  ],
+  [
+   "2026-05-15",
+   71.0
+  ],
+  [
+   "2026-05-22",
+   72.0
+  ],
+  [
+   "2026-05-29",
+   72.0
+  ],
+  [
+   "2026-06-05",
+   72.5
+  ],
+  [
+   "2026-06-12",
+   68.5
+  ],
+  [
+   "2026-06-19",
+   66.5
+  ],
+  [
+   "2026-06-26",
+   66.5
+  ],
+  [
+   "2026-07-03",
+   67.5
+  ],
+  [
+   "2026-07-10",
+   67.5
+  ],
+  [
+   "2026-07-17",
+   67.5
+  ],
+  [
+   "2026-07-24",
+   67.5
+  ],
+  [
+   "2026-07-31",
+   67.5
+  ],
+  [
+   "2026-08-07",
+   67.5
+  ],
+  [
+   "2026-08-14",
+   66.5
+  ],
+  [
+   "2026-08-21",
+   65.5
+  ],
+  [
+   "2026-08-28",
+   64.0
+  ],
+  [
+   "2026-09-04",
+   61.0
+  ],
+  [
+   "2026-09-11",
+   60.0
+  ],
+  [
+   "2026-09-18",
+   50.5
+  ],
+  [
+   "2026-09-25",
+   44.0
+  ],
+  [
+   "2026-10-02",
+   45.0
+  ],
+  [
+   "2026-10-09",
+   60.5
+  ],
+  [
+   "2026-10-16",
+   64.5
+  ],
+  [
+   "2026-10-20",
+   59.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2026-02-09",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "As a result, FY25 revenue and underlying EBITDA are expected to be in line with market expectations at approximately $39m and $9m respectively.",
+   "file": "20260209_PWR_FY25-Trading-Update.md"
+  },
+  {
+   "d": "2026-04-27",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "Trading in the first quarter of 2026 has been encouraging and in line with management's expectations. We continue to make good progress on the execution of our strategy, launching four new products in the year-to-date",
+   "file": "20260427_PWR_2025-Preliminary-Results.md"
+  },
+  {
+   "d": "2026-06-10",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "The planned timing of new product launches this year remains unchanged and 2026 revenues are expected to be second half weighted, in line with previous guidance.",
+   "file": "20260610_PWR_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2026-07-30",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading was in line with expectations and gross margins improved significantly, reflecting the strength of the Power Probe brand, a favourable product mix and disciplined pricing.",
+   "file": "20260730_PWR_H1-2026-Trading-Update.md"
+  },
+  {
+   "d": "2026-09-14",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group remains on track with the execution of its strategic priorities. Significant products launched towards the end of H1 2026 are expected to contribute materially to revenue in the second half of the year, while providing further opportunities for growth into FY27.",
+   "file": "20260914_PWR_2026-Interim-Results.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-14",
+  "doc": "H1 R",
+  "file": "20260914_PWR_2026-Interim-Results.md",
+  "vs": "H1 TU Jul-26 · AGM Jun-26 · FY R Apr-26 · YE-TU Feb-26 (first interim since Dec-25 IPO)",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Jul-26 H1 TU: “Trading was in line with expectations” (Jun-26 AGM: “in line with management's expectations”) → interim carries no expectations anchor, only “The Group remains on track with the execution of its strategic priorities.”",
+    "span": "Expectations anchor in Feb, Apr, Jun and Jul-26 → first print without one"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Headline “Gross margin expansion and strategic progress” and “strong progress against its strategic objectives” beside revenue $17.7m (H1 2025: $21.2m, −16.6%) and adjusted EBITDA $3.8m (H1 2025: $5.5m, −30.6%)",
+    "span": "H1 26 vs H1 25"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "FY R Apr-26 highlight: “Revenue from new products of 34.8% (2024: 15.5%)” → no new-product revenue share in the interim, though new products are the stated growth driver",
+    "span": "FY R Apr-26 → H1 R Sep-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Number to words",
+    "text": "Apr-26: “launching four new products in the year-to-date” → Sep-26: “a number of significant new products now launched”, no count",
+    "span": "FY R Apr-26 → H1 R Sep-26"
+   }
+  ]
+ }
+}

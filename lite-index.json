@@ -109,6 +109,13 @@
    "marks": 24
   },
   {
+   "ticker": "ANP",
+   "company": "Anpario PLC",
+   "chart": "lite/ANP.json?v=2026-10-20.dacb",
+   "scored": "2026-10-20",
+   "marks": 24
+  },
+  {
    "ticker": "AO.",
    "company": "AO World PLC",
    "chart": "lite/AO.json?v=2026-10-19.ee3e",
@@ -198,6 +205,13 @@
    "chart": "lite/BGO.json?v=2026-10-19.13a9",
    "scored": "2026-10-19",
    "marks": 20
+  },
+  {
+   "ticker": "BIG",
+   "company": "Big Technologies plc",
+   "chart": "lite/BIG.json?v=2026-10-20.4d84",
+   "scored": "2026-10-20",
+   "marks": 24
   },
   {
    "ticker": "BILN",
@@ -347,11 +361,25 @@
    "marks": 30
   },
   {
+   "ticker": "CCR",
+   "company": "C&C Group PLC",
+   "chart": "lite/CCR.json?v=2026-10-20.ec58",
+   "scored": "2026-10-20",
+   "marks": 21
+  },
+  {
    "ticker": "CCT",
    "company": "The Character Group PLC",
    "chart": "lite/CCT.json?v=2026-10-19.1142",
    "scored": "2026-10-19",
    "marks": 22
+  },
+  {
+   "ticker": "CER",
+   "company": "Cerillion PLC",
+   "chart": "lite/CER.json?v=2026-10-20.1b1a",
+   "scored": "2026-10-20",
+   "marks": 26
   },
   {
    "ticker": "CFX",
@@ -466,6 +494,13 @@
    "marks": 22
   },
   {
+   "ticker": "DATA",
+   "company": "GlobalData PLC",
+   "chart": "lite/DATA.json?v=2026-10-20.cdc1",
+   "scored": "2026-10-20",
+   "marks": 20
+  },
+  {
    "ticker": "DEBS",
    "company": "Boohoo Group PLC (Debenhams Group)",
    "chart": "lite/DEBS.json?v=2026-10-20.3b90",
@@ -557,6 +592,20 @@
    "marks": 21
   },
   {
+   "ticker": "FDEV",
+   "company": "Frontier Developments PLC",
+   "chart": "lite/FDEV.json?v=2026-10-20.ea68",
+   "scored": "2026-10-20",
+   "marks": 23
+  },
+  {
+   "ticker": "FLO",
+   "company": "Flowtech Fluidpower PLC",
+   "chart": "lite/FLO.json?v=2026-10-20.b00f",
+   "scored": "2026-10-20",
+   "marks": 20
+  },
+  {
    "ticker": "FNX",
    "company": "Fonix plc",
    "chart": "lite/FNX.json?v=2026-10-20.57be",
@@ -569,6 +618,13 @@
    "chart": "lite/FRP.json?v=2026-10-20.5b0b",
    "scored": "2026-10-20",
    "marks": 29
+  },
+  {
+   "ticker": "FSJ",
+   "company": "Fisher (James) & Sons PLC",
+   "chart": "lite/FSJ.json?v=2026-10-20.a5a6",
+   "scored": "2026-10-20",
+   "marks": 24
   },
   {
    "ticker": "FUTR",
@@ -648,6 +704,13 @@
    "marks": 29
   },
   {
+   "ticker": "GMR",
+   "company": "Gaming Realms plc",
+   "chart": "lite/GMR.json?v=2026-10-20.4751",
+   "scored": "2026-10-20",
+   "marks": 21
+  },
+  {
    "ticker": "GMS",
    "company": "Gulf Marine Services PLC",
    "chart": "lite/GMS.json?v=2026-10-20.6328",
@@ -697,6 +760,13 @@
    "marks": 24
   },
   {
+   "ticker": "IDHC",
+   "company": "Integrated Diagnostics Holdings plc",
+   "chart": "lite/IDHC.json?v=2026-10-20.ee2f",
+   "scored": "2026-10-20",
+   "marks": 22
+  },
+  {
    "ticker": "IGG",
    "company": "IG Group Holdings PLC",
    "chart": "lite/IGG.json?v=2026-10-19.3fa8",
@@ -709,6 +779,13 @@
    "chart": "lite/IGP.json?v=2026-10-19.4d4f",
    "scored": "2026-10-19",
    "marks": 29
+  },
+  {
+   "ticker": "IHC",
+   "company": "Inspiration Healthcare Group PLC",
+   "chart": "lite/IHC.json?v=2026-10-20.c84e",
+   "scored": "2026-10-20",
+   "marks": 28
   },
   {
    "ticker": "IMB",
@@ -786,6 +863,20 @@
    "chart": "lite/JHD.json?v=2026-10-18.cd52",
    "scored": "2026-10-18",
    "marks": 24
+  },
+  {
+   "ticker": "JNEO",
+   "company": "Journeo PLC",
+   "chart": "lite/JNEO.json?v=2026-10-20.6d97",
+   "scored": "2026-10-20",
+   "marks": 24
+  },
+  {
+   "ticker": "KEYS",
+   "company": "Keystone Law Group PLC",
+   "chart": "lite/KEYS.json?v=2026-10-20.7270",
+   "scored": "2026-10-20",
+   "marks": 14
   },
   {
    "ticker": "KGF",
@@ -946,6 +1037,13 @@
    "marks": 24
   },
   {
+   "ticker": "MPE",
+   "company": "M.P. Evans Group PLC",
+   "chart": "lite/MPE.json?v=2026-10-20.075c",
+   "scored": "2026-10-20",
+   "marks": 27
+  },
+  {
    "ticker": "MRK",
    "company": "Marks Electrical Group PLC",
    "chart": "lite/MRK.json?v=2026-10-19.c9ec",
@@ -986,6 +1084,13 @@
    "chart": "lite/NET.json?v=2026-10-19.5551",
    "scored": "2026-10-19",
    "marks": 25
+  },
+  {
+   "ticker": "NEWS",
+   "company": "Pathos Communications PLC",
+   "chart": "lite/NEWS.json?v=2026-10-20.f24b",
+   "scored": "2026-10-20",
+   "marks": 8
   },
   {
    "ticker": "NFG",
@@ -1058,6 +1163,20 @@
    "marks": 31
   },
   {
+   "ticker": "PEB",
+   "company": "Pebble Beach Systems Group plc",
+   "chart": "lite/PEB.json?v=2026-10-20.ee51",
+   "scored": "2026-10-20",
+   "marks": 20
+  },
+  {
+   "ticker": "PEBB",
+   "company": "The Pebble Group PLC",
+   "chart": "lite/PEBB.json?v=2026-10-20.a106",
+   "scored": "2026-10-20",
+   "marks": 27
+  },
+  {
    "ticker": "PEEL",
    "company": "Peel Hunt Limited",
    "chart": "lite/PEEL.json?v=2026-10-19.af27",
@@ -1112,6 +1231,13 @@
    "chart": "lite/PRV.json?v=2026-10-18.def1",
    "scored": "2026-10-18",
    "marks": 23
+  },
+  {
+   "ticker": "PWR",
+   "company": "Power Probe PLC",
+   "chart": "lite/PWR.json?v=2026-10-20.87c3",
+   "scored": "2026-10-20",
+   "marks": 5
   },
   {
    "ticker": "PZC",
@@ -1481,6 +1607,13 @@
    "marks": 22
   },
   {
+   "ticker": "TPFG",
+   "company": "Property Franchise Group (The) PLC",
+   "chart": "lite/TPFG.json?v=2026-10-20.ec1b",
+   "scored": "2026-10-20",
+   "marks": 26
+  },
+  {
    "ticker": "TPK",
    "company": "Travis Perkins PLC",
    "chart": "lite/TPK.json?v=2026-10-19.fcf2",
@@ -1507,6 +1640,13 @@
    "chart": "lite/TRI.json?v=2026-10-20.d431",
    "scored": "2026-10-20",
    "marks": 30
+  },
+  {
+   "ticker": "TRN",
+   "company": "Trainline PLC",
+   "chart": "lite/TRN.json?v=2026-10-20.d065",
+   "scored": "2026-10-20",
+   "marks": 22
   },
   {
    "ticker": "TRT",
