@@ -1,0 +1,1344 @@
+{
+ "ticker": "SOM",
+ "v": "2026-10-20.2f8f",
+ "ccy": "GBX",
+ "src": "AlphaVantage SOM.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   495.0
+  ],
+  [
+   "2021-10-22",
+   500.0
+  ],
+  [
+   "2021-10-29",
+   490.0
+  ],
+  [
+   "2021-11-05",
+   500.0
+  ],
+  [
+   "2021-11-12",
+   500.0
+  ],
+  [
+   "2021-11-19",
+   482.0
+  ],
+  [
+   "2021-11-26",
+   460.0
+  ],
+  [
+   "2021-12-03",
+   480.0
+  ],
+  [
+   "2021-12-10",
+   535.0
+  ],
+  [
+   "2021-12-17",
+   510.0
+  ],
+  [
+   "2021-12-24",
+   540.0
+  ],
+  [
+   "2021-12-31",
+   545.0
+  ],
+  [
+   "2022-01-07",
+   590.0
+  ],
+  [
+   "2022-01-14",
+   585.0
+  ],
+  [
+   "2022-01-21",
+   550.0
+  ],
+  [
+   "2022-01-28",
+   540.0
+  ],
+  [
+   "2022-02-04",
+   520.0
+  ],
+  [
+   "2022-02-11",
+   500.0
+  ],
+  [
+   "2022-02-18",
+   504.0
+  ],
+  [
+   "2022-02-25",
+   490.0
+  ],
+  [
+   "2022-03-04",
+   433.0
+  ],
+  [
+   "2022-03-11",
+   490.0
+  ],
+  [
+   "2022-03-18",
+   530.0
+  ],
+  [
+   "2022-03-25",
+   500.0
+  ],
+  [
+   "2022-04-01",
+   490.0
+  ],
+  [
+   "2022-04-08",
+   460.0
+  ],
+  [
+   "2022-04-14",
+   445.0
+  ],
+  [
+   "2022-04-22",
+   425.0
+  ],
+  [
+   "2022-04-29",
+   435.0
+  ],
+  [
+   "2022-05-06",
+   400.0
+  ],
+  [
+   "2022-05-13",
+   370.0
+  ],
+  [
+   "2022-05-20",
+   410.0
+  ],
+  [
+   "2022-05-27",
+   390.0
+  ],
+  [
+   "2022-06-01",
+   395.0
+  ],
+  [
+   "2022-06-10",
+   380.0
+  ],
+  [
+   "2022-06-17",
+   370.0
+  ],
+  [
+   "2022-06-24",
+   390.0
+  ],
+  [
+   "2022-07-01",
+   390.0
+  ],
+  [
+   "2022-07-08",
+   390.0
+  ],
+  [
+   "2022-07-15",
+   370.0
+  ],
+  [
+   "2022-07-22",
+   439.0
+  ],
+  [
+   "2022-07-29",
+   422.5
+  ],
+  [
+   "2022-08-05",
+   422.5
+  ],
+  [
+   "2022-08-12",
+   425.0
+  ],
+  [
+   "2022-08-19",
+   462.0
+  ],
+  [
+   "2022-08-26",
+   462.5
+  ],
+  [
+   "2022-09-02",
+   445.0
+  ],
+  [
+   "2022-09-09",
+   412.5
+  ],
+  [
+   "2022-09-16",
+   408.0
+  ],
+  [
+   "2022-09-23",
+   410.0
+  ],
+  [
+   "2022-09-30",
+   392.5
+  ],
+  [
+   "2022-10-07",
+   410.0
+  ],
+  [
+   "2022-10-14",
+   390.0
+  ],
+  [
+   "2022-10-21",
+   387.5
+  ],
+  [
+   "2022-10-28",
+   382.5
+  ],
+  [
+   "2022-11-04",
+   372.5
+  ],
+  [
+   "2022-11-11",
+   382.5
+  ],
+  [
+   "2022-11-18",
+   375.0
+  ],
+  [
+   "2022-11-25",
+   375.0
+  ],
+  [
+   "2022-12-02",
+   375.0
+  ],
+  [
+   "2022-12-09",
+   387.5
+  ],
+  [
+   "2022-12-16",
+   377.5
+  ],
+  [
+   "2022-12-23",
+   365.0
+  ],
+  [
+   "2022-12-30",
+   375.0
+  ],
+  [
+   "2023-01-06",
+   397.0
+  ],
+  [
+   "2023-01-13",
+   435.0
+  ],
+  [
+   "2023-01-20",
+   414.0
+  ],
+  [
+   "2023-01-27",
+   434.0
+  ],
+  [
+   "2023-02-03",
+   427.5
+  ],
+  [
+   "2023-02-10",
+   432.5
+  ],
+  [
+   "2023-02-17",
+   400.0
+  ],
+  [
+   "2023-02-24",
+   400.0
+  ],
+  [
+   "2023-03-03",
+   400.0
+  ],
+  [
+   "2023-03-10",
+   350.0
+  ],
+  [
+   "2023-03-17",
+   395.0
+  ],
+  [
+   "2023-03-24",
+   362.5
+  ],
+  [
+   "2023-03-31",
+   378.0
+  ],
+  [
+   "2023-04-06",
+   362.5
+  ],
+  [
+   "2023-04-14",
+   350.0
+  ],
+  [
+   "2023-04-21",
+   340.0
+  ],
+  [
+   "2023-04-28",
+   324.0
+  ],
+  [
+   "2023-05-05",
+   330.0
+  ],
+  [
+   "2023-05-12",
+   335.0
+  ],
+  [
+   "2023-05-19",
+   325.0
+  ],
+  [
+   "2023-05-26",
+   330.0
+  ],
+  [
+   "2023-06-02",
+   316.0
+  ],
+  [
+   "2023-06-09",
+   325.0
+  ],
+  [
+   "2023-06-16",
+   330.0
+  ],
+  [
+   "2023-06-23",
+   292.5
+  ],
+  [
+   "2023-06-30",
+   278.0
+  ],
+  [
+   "2023-07-07",
+   270.0
+  ],
+  [
+   "2023-07-14",
+   292.0
+  ],
+  [
+   "2023-07-21",
+   355.0
+  ],
+  [
+   "2023-07-28",
+   330.0
+  ],
+  [
+   "2023-08-04",
+   330.0
+  ],
+  [
+   "2023-08-11",
+   320.0
+  ],
+  [
+   "2023-08-18",
+   307.0
+  ],
+  [
+   "2023-08-25",
+   298.0
+  ],
+  [
+   "2023-09-01",
+   280.0
+  ],
+  [
+   "2023-09-08",
+   300.0
+  ],
+  [
+   "2023-09-15",
+   300.0
+  ],
+  [
+   "2023-09-22",
+   277.0
+  ],
+  [
+   "2023-09-29",
+   270.0
+  ],
+  [
+   "2023-10-06",
+   262.5
+  ],
+  [
+   "2023-10-13",
+   295.0
+  ],
+  [
+   "2023-10-20",
+   295.0
+  ],
+  [
+   "2023-10-27",
+   266.0
+  ],
+  [
+   "2023-11-03",
+   265.0
+  ],
+  [
+   "2023-11-10",
+   267.0
+  ],
+  [
+   "2023-11-17",
+   273.0
+  ],
+  [
+   "2023-11-24",
+   289.0
+  ],
+  [
+   "2023-12-01",
+   293.0
+  ],
+  [
+   "2023-12-08",
+   302.5
+  ],
+  [
+   "2023-12-15",
+   305.0
+  ],
+  [
+   "2023-12-22",
+   335.0
+  ],
+  [
+   "2023-12-29",
+   375.0
+  ],
+  [
+   "2024-01-05",
+   355.0
+  ],
+  [
+   "2024-01-12",
+   332.0
+  ],
+  [
+   "2024-01-19",
+   332.5
+  ],
+  [
+   "2024-01-26",
+   350.0
+  ],
+  [
+   "2024-02-02",
+   337.0
+  ],
+  [
+   "2024-02-09",
+   337.0
+  ],
+  [
+   "2024-02-16",
+   346.5
+  ],
+  [
+   "2024-02-23",
+   345.0
+  ],
+  [
+   "2024-03-01",
+   347.0
+  ],
+  [
+   "2024-03-08",
+   325.0
+  ],
+  [
+   "2024-03-15",
+   308.0
+  ],
+  [
+   "2024-03-22",
+   315.0
+  ],
+  [
+   "2024-03-28",
+   335.0
+  ],
+  [
+   "2024-04-05",
+   357.5
+  ],
+  [
+   "2024-04-12",
+   349.0
+  ],
+  [
+   "2024-04-19",
+   333.0
+  ],
+  [
+   "2024-04-26",
+   332.0
+  ],
+  [
+   "2024-05-03",
+   327.5
+  ],
+  [
+   "2024-05-10",
+   325.0
+  ],
+  [
+   "2024-05-17",
+   347.0
+  ],
+  [
+   "2024-05-24",
+   365.0
+  ],
+  [
+   "2024-05-31",
+   367.5
+  ],
+  [
+   "2024-06-07",
+   350.0
+  ],
+  [
+   "2024-06-14",
+   352.5
+  ],
+  [
+   "2024-06-21",
+   345.0
+  ],
+  [
+   "2024-06-28",
+   335.0
+  ],
+  [
+   "2024-07-05",
+   330.0
+  ],
+  [
+   "2024-07-12",
+   335.0
+  ],
+  [
+   "2024-07-19",
+   345.0
+  ],
+  [
+   "2024-07-26",
+   350.0
+  ],
+  [
+   "2024-08-02",
+   340.0
+  ],
+  [
+   "2024-08-09",
+   322.5
+  ],
+  [
+   "2024-08-16",
+   315.0
+  ],
+  [
+   "2024-08-23",
+   318.0
+  ],
+  [
+   "2024-08-30",
+   290.0
+  ],
+  [
+   "2024-09-06",
+   275.0
+  ],
+  [
+   "2024-09-13",
+   290.0
+  ],
+  [
+   "2024-09-20",
+   292.5
+  ],
+  [
+   "2024-09-27",
+   290.0
+  ],
+  [
+   "2024-10-04",
+   292.5
+  ],
+  [
+   "2024-10-11",
+   274.0
+  ],
+  [
+   "2024-10-18",
+   267.0
+  ],
+  [
+   "2024-10-25",
+   260.0
+  ],
+  [
+   "2024-11-01",
+   270.0
+  ],
+  [
+   "2024-11-08",
+   290.0
+  ],
+  [
+   "2024-11-15",
+   295.0
+  ],
+  [
+   "2024-11-22",
+   270.0
+  ],
+  [
+   "2024-11-29",
+   260.0
+  ],
+  [
+   "2024-12-06",
+   292.0
+  ],
+  [
+   "2024-12-13",
+   320.0
+  ],
+  [
+   "2024-12-20",
+   306.0
+  ],
+  [
+   "2024-12-24",
+   325.0
+  ],
+  [
+   "2024-12-27",
+   323.0
+  ],
+  [
+   "2025-01-03",
+   322.5
+  ],
+  [
+   "2025-01-10",
+   322.5
+  ],
+  [
+   "2025-01-17",
+   317.0
+  ],
+  [
+   "2025-01-24",
+   297.5
+  ],
+  [
+   "2025-01-31",
+   285.0
+  ],
+  [
+   "2025-02-07",
+   273.0
+  ],
+  [
+   "2025-02-14",
+   278.0
+  ],
+  [
+   "2025-02-21",
+   278.0
+  ],
+  [
+   "2025-02-28",
+   280.0
+  ],
+  [
+   "2025-03-07",
+   277.0
+  ],
+  [
+   "2025-03-14",
+   260.0
+  ],
+  [
+   "2025-03-21",
+   260.0
+  ],
+  [
+   "2025-03-28",
+   259.0
+  ],
+  [
+   "2025-04-04",
+   246.0
+  ],
+  [
+   "2025-04-11",
+   234.0
+  ],
+  [
+   "2025-04-17",
+   242.5
+  ],
+  [
+   "2025-04-25",
+   208.0
+  ],
+  [
+   "2025-05-02",
+   215.0
+  ],
+  [
+   "2025-05-09",
+   227.5
+  ],
+  [
+   "2025-05-16",
+   250.0
+  ],
+  [
+   "2025-05-23",
+   241.0
+  ],
+  [
+   "2025-05-30",
+   242.0
+  ],
+  [
+   "2025-06-06",
+   255.0
+  ],
+  [
+   "2025-06-13",
+   246.0
+  ],
+  [
+   "2025-06-20",
+   245.0
+  ],
+  [
+   "2025-06-27",
+   245.0
+  ],
+  [
+   "2025-07-04",
+   225.0
+  ],
+  [
+   "2025-07-11",
+   235.0
+  ],
+  [
+   "2025-07-18",
+   225.0
+  ],
+  [
+   "2025-07-25",
+   225.0
+  ],
+  [
+   "2025-08-01",
+   210.0
+  ],
+  [
+   "2025-08-08",
+   227.0
+  ],
+  [
+   "2025-08-15",
+   225.0
+  ],
+  [
+   "2025-08-22",
+   226.0
+  ],
+  [
+   "2025-08-29",
+   225.0
+  ],
+  [
+   "2025-09-05",
+   225.0
+  ],
+  [
+   "2025-09-12",
+   222.5
+  ],
+  [
+   "2025-09-19",
+   225.0
+  ],
+  [
+   "2025-09-26",
+   230.0
+  ],
+  [
+   "2025-10-03",
+   235.0
+  ],
+  [
+   "2025-10-10",
+   238.0
+  ],
+  [
+   "2025-10-17",
+   232.0
+  ],
+  [
+   "2025-10-24",
+   242.5
+  ],
+  [
+   "2025-10-31",
+   235.0
+  ],
+  [
+   "2025-11-07",
+   215.0
+  ],
+  [
+   "2025-11-14",
+   210.0
+  ],
+  [
+   "2025-11-21",
+   220.0
+  ],
+  [
+   "2025-11-28",
+   230.0
+  ],
+  [
+   "2025-12-05",
+   226.0
+  ],
+  [
+   "2025-12-12",
+   230.0
+  ],
+  [
+   "2025-12-19",
+   227.5
+  ],
+  [
+   "2025-12-24",
+   220.0
+  ],
+  [
+   "2026-01-02",
+   218.0
+  ],
+  [
+   "2026-01-09",
+   217.5
+  ],
+  [
+   "2026-01-16",
+   213.0
+  ],
+  [
+   "2026-01-23",
+   210.0
+  ],
+  [
+   "2026-01-30",
+   227.5
+  ],
+  [
+   "2026-02-06",
+   217.0
+  ],
+  [
+   "2026-02-13",
+   219.0
+  ],
+  [
+   "2026-02-20",
+   215.0
+  ],
+  [
+   "2026-02-27",
+   215.0
+  ],
+  [
+   "2026-03-06",
+   214.0
+  ],
+  [
+   "2026-03-13",
+   205.0
+  ],
+  [
+   "2026-03-20",
+   199.0
+  ],
+  [
+   "2026-03-27",
+   182.0
+  ],
+  [
+   "2026-04-02",
+   185.0
+  ],
+  [
+   "2026-04-10",
+   187.5
+  ],
+  [
+   "2026-04-17",
+   187.0
+  ],
+  [
+   "2026-04-24",
+   183.0
+  ],
+  [
+   "2026-05-01",
+   180.0
+  ],
+  [
+   "2026-05-08",
+   180.0
+  ],
+  [
+   "2026-05-15",
+   188.0
+  ],
+  [
+   "2026-05-22",
+   180.0
+  ],
+  [
+   "2026-05-29",
+   185.0
+  ],
+  [
+   "2026-06-05",
+   188.0
+  ],
+  [
+   "2026-06-12",
+   196.0
+  ],
+  [
+   "2026-06-19",
+   193.0
+  ],
+  [
+   "2026-06-26",
+   199.0
+  ],
+  [
+   "2026-07-03",
+   187.5
+  ],
+  [
+   "2026-07-10",
+   185.0
+  ],
+  [
+   "2026-07-17",
+   208.0
+  ],
+  [
+   "2026-07-24",
+   230.0
+  ],
+  [
+   "2026-07-31",
+   230.0
+  ],
+  [
+   "2026-08-07",
+   232.5
+  ],
+  [
+   "2026-08-14",
+   230.0
+  ],
+  [
+   "2026-08-21",
+   242.0
+  ],
+  [
+   "2026-08-28",
+   242.5
+  ],
+  [
+   "2026-09-04",
+   240.0
+  ],
+  [
+   "2026-09-11",
+   250.0
+  ],
+  [
+   "2026-09-18",
+   262.5
+  ],
+  [
+   "2026-09-25",
+   253.5
+  ],
+  [
+   "2026-10-02",
+   267.5
+  ],
+  [
+   "2026-10-09",
+   264.0
+  ],
+  [
+   "2026-10-16",
+   273.0
+  ],
+  [
+   "2026-10-19",
+   282.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-12-07",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "RAISE",
+   "s": 2,
+   "q": "This, combined with the Company's ability to consistently deliver on customer orders, means that the Company now expects to exceed previous guidance for FY 2021 established in the 8 September 2021 interim results statement.",
+   "file": "20211207_SOM_Trading-Update.md"
+  },
+  {
+   "d": "2022-01-26",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "RAISE",
+   "s": 2,
+   "q": "The Board is pleased to report that with strong, profitable trading and excellent operational performance to deliver on customer orders in the fourth quarter, and in particular December, it now expects the Company to report 2021 revenue, EBITDA, and year-end cash ahead of guidance provided in the Company's 7 December 2021 trading update.",
+   "file": "20220126_SOM_Trading-Update.md"
+  },
+  {
+   "d": "2022-03-09",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Following an extraordinary year in 2021, with remarkable growth and record revenues and profits, 2022 revenues are expected to grow at a modest rate, and with the investments for future growth being made, 2022 EBITDA is expected to be comparable to 2021.",
+   "file": "20220309_SOM_Final-Results.md"
+  },
+  {
+   "d": "2022-06-13",
+   "doc": "AGM",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Consequently, the Board expects revenue, profitability, and cash generation to be in-line with the full year ending 31 December 2022 guidance provided in the 09 March 2022 final FY 2021 results statement.",
+   "file": "20220613_SOM_AGM-Statement.md"
+  },
+  {
+   "d": "2022-07-19",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "As such, the Board is pleased to confirm 2022 results are anticipated to fall in line with market expectations for revenues of approximately US$ 138.8m, EBITDA of approximately US$ 47.7m, and year-end cash of approximately US$ 39.9m.",
+   "file": "20220719_SOM_Trading-Update.md"
+  },
+  {
+   "d": "2022-09-07",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "While these shortages can carry over and negatively impact 2023 trading if continuing unimproved, based on the strong H1 2022 results, confidence in the health of the non-residential construction market, and with the benefit of unfilled orders carried over from H1 2022, the Board is pleased to confirm 2022 results are anticipated to fall in line with market expectations for revenues of approximately US$ 138.8m, EBITDA of approximately US$ 47.7m, and year-end cash of approximately US$ 39.9m.",
+   "file": "20220907_SOM_Interim-Results.md"
+  },
+  {
+   "d": "2023-01-31",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "CUT",
+   "s": -2,
+   "q": "Commensurate with the level of expected revenue, the Board expects the Company to report annual adjusted EBITDA of approximately US$ 46.0m, modestly below previous guidance of US$ 47.7m, and expects the Company to report ending cash of approximately US$ 34.0m, with some impact from the timing of tax refunds and working capital investment.",
+   "file": "20230131_SOM_Trading-Update.md"
+  },
+  {
+   "d": "2023-03-08",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -2,
+   "q": "With all factors considered, 2023 revenues are expected to be comparable with 2022, and with targeted added resources 2023 EBITDA is expected to be down modestly from 2022, and with 2023 working capital investment expected to remain elevated, year-end 2023 cash is expected to be at a comparable level to year-end 2022.",
+   "file": "20230308_SOM_Final-Results.md"
+  },
+  {
+   "d": "2023-06-20",
+   "doc": "AGM",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -3,
+   "q": "In consideration of the aforementioned factors, the Company now expects FY 2023 revenues of approximately US$ 120.0m (compared to the previous market consensus estimate of US$ 132.1m), EBITDA of approximately US$ 36.0m (compared to the previous market consensus estimate of US$ 42.8m), and year-end cash of approximately US$ 32.0m (compared to the previous market consensus estimate of US$ 31.0m).",
+   "file": "20230620_SOM_Trading-Update.md"
+  },
+  {
+   "d": "2023-07-24",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "As such, the Board remains confident that 2023 results will fall in line with market expectations with revenues of approximately US$ 120m, EBITDA of approximately US$ 36m, and year-end cash of approximately US$ 32m.",
+   "file": "20230724_SOM_Trading-Update.md"
+  },
+  {
+   "d": "2023-08-31",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "As such, the Board remains confident that 2023 results will fall in line with market expectations with revenues of approximately US$ 120.0m, EBITDA of approximately US$ 36.0m, and year-end cash of approximately US$ 32.0m.",
+   "file": "20230831_SOM_Interim-Results.md"
+  },
+  {
+   "d": "2024-01-31",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Commensurate with the level of expected revenue, the Board expects the Company to report annual adjusted EBITDA in line with previous guidance and market expectations of US$ 36.0m.",
+   "file": "20240131_SOM_Trading-Update.md"
+  },
+  {
+   "d": "2024-03-05",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -2,
+   "q": "With all factors considered, 2024 revenues are expected to be comparable with 2023, EBITDA slightly lower from 2023 reflecting modest incremental investment including the new Belgium service and training center and the annualized impact of strategic resources added in 2023, and a commensurate level of  year-end 2024 cash.",
+   "file": "20240305_SOM_Final-Results.md"
+  },
+  {
+   "d": "2024-06-17",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Consequently, the Board expects revenue, profitability, and cash generation to be in-line with the full year ending 31 December 2024 guidance provided in the 05 March 2024 final FY 2023 results statement.",
+   "file": "20240617_SOM_AGM-Statement.md"
+  },
+  {
+   "d": "2024-07-30",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -3,
+   "q": "In consideration of the aforementioned factors, the Company now expects FY 2024 revenues of approximately US$ 110.0m (compared to the previous market consensus estimate of US$ 120.7m), EBITDA of approximately US$ 30.0m (compared to the previous market consensus estimate of US$ 34.0m), and year-end cash of approximately US$ 27.0m (compared to the previous market consensus estimate of US$ 31.7m).",
+   "file": "20240730_SOM_Trading-Update.md"
+  },
+  {
+   "d": "2024-08-29",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "As such, the Board remains confident that 2024 results will fall in line with the revised market expectations published following our 30 July 2024 Trading Update, with revenues of approximately US$ 110.0m, EBITDA of approximately US$ 30.0m, and year-end cash of approximately US$ 27.0m.",
+   "file": "20240829_SOM_Interim-Results.md"
+  },
+  {
+   "d": "2025-01-30",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -1,
+   "q": "Excluding separation-related expenses, the Board expects the Company to report 2024 adjusted EBITDA of US$ 29.1m. The year-end cash position is anticipated to be US$ 29.5m reflecting lower net working capital investment.",
+   "file": "20250130_SOM_Trading-Update.md"
+  },
+  {
+   "d": "2025-03-11",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -2,
+   "q": "Looking ahead to 2025, we expect challenging market conditions to continue to some extent, but our track record of resilience and continued progress through cycles positions us well.",
+   "file": "20250311_SOM_Final-Results.md"
+  },
+  {
+   "d": "2025-04-24",
+   "doc": "Q1 TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -3,
+   "q": "EBITDA of approximately US$ 24.0m (previous market consensus estimate: US$ 28.6m)",
+   "file": "20250424_SOM_Trading-Update.md"
+  },
+  {
+   "d": "2025-06-17",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board continues to expect full-year revenue, profitability, and cash generation to be in line with the revised guidance issued in the 24 April 2025 trading update.",
+   "file": "20250617_SOM_AGM-Statement.md"
+  },
+  {
+   "d": "2025-07-30",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -3,
+   "q": "H1 2025 trading is therefore expected to be lower than the comparable period in 2024, and FY 2025 performance is expected to fall below the guidance issued on 24 April.",
+   "file": "20250730_SOM_Trading-Update.md"
+  },
+  {
+   "d": "2025-09-09",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "We continue to anticipate full year 2025 revenues of c. US$ 90.0m, adjusted EBITDA of c. US$ 18.0m, and year-end net cash of c. US$ 24.0m.",
+   "file": "20250909_SOM_Interim-Results.md"
+  },
+  {
+   "d": "2026-01-29",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "With consideration of these factors, the Board expects overall trading in FY 2026 to be broadly similar to that of FY 2025, with commensurate profits and cash generation.",
+   "file": "20260129_SOM_Trading-Update.md"
+  },
+  {
+   "d": "2026-03-10",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "For 2026, the Board expects revenue, profitability, and cash generation to be broadly comparable to 2025. Expansion into a new customer segment, continued execution of strategic initiatives, and steady customer activity are expected to help offset ongoing weakness in large-line Boomed screeds and continued global uncertainty.",
+   "file": "20260310_SOM_Final-Results.md"
+  },
+  {
+   "d": "2026-06-05",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 1,
+   "q": "Stabilization in US private non-residential construction, the Company's largest market, continued and the positive trading momentum from the end of 2025 carried over with trading in the five months ended 31 May 2026 tracking well against the full year ending 31 December 2026 guidance provided in the 10 March 2026 final FY 2025 results statement.",
+   "file": "20260605_SOM_AGM-Statement.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2026-07-16",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Following the stronger first half, and assuming trading in the second half of the year is in line with management expectations, the Board now expects FY 2026 revenue to be ahead of market expectations1, with commensurate improvement in profit and operating cash generation.",
+   "file": "20260716_SOM_Trading-Update.md"
+  },
+  {
+   "d": "2026-09-08",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Reflecting the strength of the first-half performance and momentum entering H2, the Board now expects FY 2026 revenue of approximately US$ 95m, with adjusted EBITDA of approximately US$19.5m and year-end net cash expected to be approximately US $29m, assuming the additional US$6m share repurchase authorization is fully executed prior to year end.",
+   "file": "20260908_SOM_Interim-Results.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-08",
+  "doc": "H1 R",
+  "file": "20260908_SOM_Interim-Results.md",
+  "vs": "H1 R Sep-25 · back to Aug-23 · Jul-26 TU",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "New-product revenue: Sep-25 “were US$ 4.2m, up 36%” → Sep-26 recent launches “contributing meaningful revenue”, no figure",
+    "span": "Quantified at Aug-24 (“contribute US$ 3.1m in H1 2024 revenues”) and Sep-25 → first interim without a number"
+   },
+   {
+    "sev": "amber",
+    "type": "Restated",
+    "text": "H1 2025 comparatives changed: parts & service Sep-25 “Parts and service: US$ 8.5m (down 14%)” → Sep-26 “Aftermarket parts & service revenue increased to US$ 9.1m (2025: US$ 8.3m)”; North America new-customer share Sep-25 “15% of total H1 revenue in the region” → Sep-26 “28% of regional revenue (H1 2025: 19%)”",
+    "span": "Lower/higher bases flatter the H1 2026 growth and new-customer trend"
+   },
+   {
+    "sev": "grey",
+    "type": "Split withheld",
+    "text": "Rest of World split: Sep-25 “Latin America, which reported sales of US$ 0.5m” → Sep-26 “driven primarily by higher sales in Latin America”, no figure",
+    "span": "Named-country sales given at Aug-23, Aug-24, Sep-25 → first gap in 3 years"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "FY26 guide re-quantified: Jul-26 only “ahead of market expectations” (consensus $86.0m revenue) → Sep-26 “revenue for the full year now expected to be approximately US$ 95m, with adjusted EBITDA of approximately US$ 19.5m”",
+    "span": "Jan/Mar-26 guide was ‘broadly comparable to 2025’; Sep-26 adds net cash c. US$ 29m"
+   }
+  ]
+ }
+}
