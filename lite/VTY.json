@@ -1,6 +1,6 @@
 {
  "ticker": "VTY",
- "v": "2026-10-20.9594",
+ "v": "2026-10-20.dcef",
  "ccy": "GBX",
  "src": "Yahoo VTY.L weekly",
  "adj": [],
@@ -1227,13 +1227,31 @@
    "file": "20241008_VTY_Trading-update.md"
   },
   {
+   "d": "2024-12-24",
+   "doc": "OPS",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -3,
+   "q": "Vistry Group announces that it expects adjusted profit before tax for FY24 to be c. £250m, compared with the Group's previous guidance of c. £300m, primarily due to delays to expected year-end transactions and completions.",
+   "file": "20241224_VTY_Trading-update.md"
+  },
+  {
    "d": "2025-01-15",
    "doc": "YE-TU",
    "fy": "FY24",
-   "g": "CUT",
-   "s": -2,
+   "g": "flat",
+   "s": 0,
    "q": "Group adjusted profit before tax is expected to be c. £250m (FY23: £419.1m), in-line with the revised company guidance announced in December",
    "file": "20250115_VTY_Trading-update.md"
+  },
+  {
+   "d": "2025-03-26",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "The Group continues to expect to make year on year progress in profit in FY25, with profits being more H2 weighted than in prior years.",
+   "file": "20250326_VTY_Full-year-results-for-the-year-ended-31-Dec-2024.md"
   },
   {
    "d": "2025-05-14",
