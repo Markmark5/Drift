@@ -1,0 +1,1373 @@
+{
+ "ticker": "XPP",
+ "v": "2026-10-20.d31e",
+ "ccy": "GBX",
+ "src": "AlphaVantage XPP.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   5220.0
+  ],
+  [
+   "2021-10-22",
+   5230.0
+  ],
+  [
+   "2021-10-29",
+   5230.0
+  ],
+  [
+   "2021-11-05",
+   5440.0
+  ],
+  [
+   "2021-11-12",
+   5250.0
+  ],
+  [
+   "2021-11-19",
+   5150.0
+  ],
+  [
+   "2021-11-26",
+   4980.0
+  ],
+  [
+   "2021-12-03",
+   5050.0
+  ],
+  [
+   "2021-12-10",
+   5100.0
+  ],
+  [
+   "2021-12-17",
+   5080.0
+  ],
+  [
+   "2021-12-24",
+   5130.0
+  ],
+  [
+   "2021-12-31",
+   5100.0
+  ],
+  [
+   "2022-01-07",
+   4965.0
+  ],
+  [
+   "2022-01-14",
+   5100.0
+  ],
+  [
+   "2022-01-21",
+   4890.0
+  ],
+  [
+   "2022-01-28",
+   4485.0
+  ],
+  [
+   "2022-02-04",
+   4845.0
+  ],
+  [
+   "2022-02-11",
+   4725.0
+  ],
+  [
+   "2022-02-18",
+   4645.0
+  ],
+  [
+   "2022-02-25",
+   4320.0
+  ],
+  [
+   "2022-03-04",
+   3485.0
+  ],
+  [
+   "2022-03-11",
+   3480.0
+  ],
+  [
+   "2022-03-18",
+   3935.0
+  ],
+  [
+   "2022-03-25",
+   3460.0
+  ],
+  [
+   "2022-04-01",
+   3465.0
+  ],
+  [
+   "2022-04-08",
+   3425.0
+  ],
+  [
+   "2022-04-14",
+   3515.0
+  ],
+  [
+   "2022-04-22",
+   3500.0
+  ],
+  [
+   "2022-04-29",
+   3220.0
+  ],
+  [
+   "2022-05-06",
+   3000.0
+  ],
+  [
+   "2022-05-13",
+   3300.0
+  ],
+  [
+   "2022-05-20",
+   3405.0
+  ],
+  [
+   "2022-05-27",
+   3280.0
+  ],
+  [
+   "2022-06-01",
+   3220.0
+  ],
+  [
+   "2022-06-10",
+   3055.0
+  ],
+  [
+   "2022-06-17",
+   3160.0
+  ],
+  [
+   "2022-06-24",
+   2885.0
+  ],
+  [
+   "2022-07-01",
+   2800.0
+  ],
+  [
+   "2022-07-08",
+   2820.0
+  ],
+  [
+   "2022-07-15",
+   2890.0
+  ],
+  [
+   "2022-07-22",
+   2990.0
+  ],
+  [
+   "2022-07-29",
+   3040.0
+  ],
+  [
+   "2022-08-05",
+   2180.0
+  ],
+  [
+   "2022-08-12",
+   2290.0
+  ],
+  [
+   "2022-08-19",
+   2205.0
+  ],
+  [
+   "2022-08-26",
+   1990.0
+  ],
+  [
+   "2022-09-02",
+   1880.0
+  ],
+  [
+   "2022-09-09",
+   1920.0
+  ],
+  [
+   "2022-09-16",
+   1804.0
+  ],
+  [
+   "2022-09-23",
+   1780.0
+  ],
+  [
+   "2022-09-30",
+   1670.0
+  ],
+  [
+   "2022-10-07",
+   1576.0
+  ],
+  [
+   "2022-10-14",
+   1500.0
+  ],
+  [
+   "2022-10-21",
+   1478.0
+  ],
+  [
+   "2022-10-28",
+   1720.0
+  ],
+  [
+   "2022-11-04",
+   1908.0
+  ],
+  [
+   "2022-11-11",
+   2220.0
+  ],
+  [
+   "2022-11-18",
+   2160.0
+  ],
+  [
+   "2022-11-25",
+   2090.0
+  ],
+  [
+   "2022-12-02",
+   2085.0
+  ],
+  [
+   "2022-12-09",
+   2020.0
+  ],
+  [
+   "2022-12-16",
+   2030.0
+  ],
+  [
+   "2022-12-23",
+   2040.0
+  ],
+  [
+   "2022-12-30",
+   2035.0
+  ],
+  [
+   "2023-01-06",
+   2200.0
+  ],
+  [
+   "2023-01-13",
+   2300.0
+  ],
+  [
+   "2023-01-20",
+   2445.0
+  ],
+  [
+   "2023-01-27",
+   2450.0
+  ],
+  [
+   "2023-02-03",
+   2520.0
+  ],
+  [
+   "2023-02-10",
+   2590.0
+  ],
+  [
+   "2023-02-17",
+   2585.0
+  ],
+  [
+   "2023-02-24",
+   2435.0
+  ],
+  [
+   "2023-03-03",
+   2225.0
+  ],
+  [
+   "2023-03-10",
+   2190.0
+  ],
+  [
+   "2023-03-17",
+   2080.0
+  ],
+  [
+   "2023-03-24",
+   2085.0
+  ],
+  [
+   "2023-03-31",
+   2035.0
+  ],
+  [
+   "2023-04-06",
+   1904.0
+  ],
+  [
+   "2023-04-14",
+   2025.0
+  ],
+  [
+   "2023-04-21",
+   2140.0
+  ],
+  [
+   "2023-04-28",
+   2215.0
+  ],
+  [
+   "2023-05-05",
+   2265.0
+  ],
+  [
+   "2023-05-12",
+   2225.0
+  ],
+  [
+   "2023-05-19",
+   2200.0
+  ],
+  [
+   "2023-05-26",
+   2095.0
+  ],
+  [
+   "2023-06-02",
+   2205.0
+  ],
+  [
+   "2023-06-09",
+   2155.0
+  ],
+  [
+   "2023-06-16",
+   2140.0
+  ],
+  [
+   "2023-06-23",
+   2045.0
+  ],
+  [
+   "2023-06-30",
+   1968.0
+  ],
+  [
+   "2023-07-07",
+   1866.0
+  ],
+  [
+   "2023-07-14",
+   1946.0
+  ],
+  [
+   "2023-07-21",
+   2050.0
+  ],
+  [
+   "2023-07-28",
+   2100.0
+  ],
+  [
+   "2023-08-04",
+   2120.0
+  ],
+  [
+   "2023-08-11",
+   2305.0
+  ],
+  [
+   "2023-08-18",
+   2315.0
+  ],
+  [
+   "2023-08-25",
+   2100.0
+  ],
+  [
+   "2023-09-01",
+   2110.0
+  ],
+  [
+   "2023-09-08",
+   2175.0
+  ],
+  [
+   "2023-09-15",
+   2235.0
+  ],
+  [
+   "2023-09-22",
+   2435.0
+  ],
+  [
+   "2023-09-29",
+   2360.0
+  ],
+  [
+   "2023-10-06",
+   776.0
+  ],
+  [
+   "2023-10-13",
+   994.0
+  ],
+  [
+   "2023-10-20",
+   1000.0
+  ],
+  [
+   "2023-10-27",
+   1112.0
+  ],
+  [
+   "2023-11-03",
+   1084.0
+  ],
+  [
+   "2023-11-10",
+   1238.0
+  ],
+  [
+   "2023-11-17",
+   1306.0
+  ],
+  [
+   "2023-11-24",
+   1280.0
+  ],
+  [
+   "2023-12-01",
+   1200.0
+  ],
+  [
+   "2023-12-08",
+   1196.0
+  ],
+  [
+   "2023-12-15",
+   1250.0
+  ],
+  [
+   "2023-12-22",
+   1354.0
+  ],
+  [
+   "2023-12-29",
+   1356.0
+  ],
+  [
+   "2024-01-05",
+   1280.0
+  ],
+  [
+   "2024-01-12",
+   1300.0
+  ],
+  [
+   "2024-01-19",
+   1238.0
+  ],
+  [
+   "2024-01-26",
+   1364.0
+  ],
+  [
+   "2024-02-02",
+   1448.0
+  ],
+  [
+   "2024-02-09",
+   1570.0
+  ],
+  [
+   "2024-02-16",
+   968.0
+  ],
+  [
+   "2024-02-23",
+   1050.0
+  ],
+  [
+   "2024-03-01",
+   1066.0
+  ],
+  [
+   "2024-03-08",
+   1074.0
+  ],
+  [
+   "2024-03-15",
+   1008.0
+  ],
+  [
+   "2024-03-22",
+   1102.0
+  ],
+  [
+   "2024-03-28",
+   1090.0
+  ],
+  [
+   "2024-04-05",
+   1034.0
+  ],
+  [
+   "2024-04-12",
+   1090.0
+  ],
+  [
+   "2024-04-19",
+   1050.0
+  ],
+  [
+   "2024-04-26",
+   1084.0
+  ],
+  [
+   "2024-05-03",
+   1108.0
+  ],
+  [
+   "2024-05-10",
+   1190.0
+  ],
+  [
+   "2024-05-17",
+   1128.0
+  ],
+  [
+   "2024-05-24",
+   1598.0
+  ],
+  [
+   "2024-05-31",
+   1520.0
+  ],
+  [
+   "2024-06-07",
+   1554.0
+  ],
+  [
+   "2024-06-14",
+   1594.0
+  ],
+  [
+   "2024-06-21",
+   1476.0
+  ],
+  [
+   "2024-06-28",
+   1480.0
+  ],
+  [
+   "2024-07-05",
+   1428.0
+  ],
+  [
+   "2024-07-12",
+   1526.0
+  ],
+  [
+   "2024-07-19",
+   1450.0
+  ],
+  [
+   "2024-07-26",
+   1430.0
+  ],
+  [
+   "2024-08-02",
+   1294.0
+  ],
+  [
+   "2024-08-09",
+   1396.0
+  ],
+  [
+   "2024-08-16",
+   1402.0
+  ],
+  [
+   "2024-08-23",
+   1418.0
+  ],
+  [
+   "2024-08-30",
+   1474.0
+  ],
+  [
+   "2024-09-06",
+   1374.0
+  ],
+  [
+   "2024-09-13",
+   1316.0
+  ],
+  [
+   "2024-09-20",
+   1270.0
+  ],
+  [
+   "2024-09-27",
+   1328.0
+  ],
+  [
+   "2024-10-04",
+   1332.0
+  ],
+  [
+   "2024-10-11",
+   1308.0
+  ],
+  [
+   "2024-10-18",
+   1242.0
+  ],
+  [
+   "2024-10-25",
+   1242.0
+  ],
+  [
+   "2024-11-01",
+   1246.0
+  ],
+  [
+   "2024-11-08",
+   1250.0
+  ],
+  [
+   "2024-11-15",
+   1400.0
+  ],
+  [
+   "2024-11-22",
+   1328.0
+  ],
+  [
+   "2024-11-29",
+   1300.0
+  ],
+  [
+   "2024-12-06",
+   1258.0
+  ],
+  [
+   "2024-12-13",
+   1260.0
+  ],
+  [
+   "2024-12-20",
+   1250.0
+  ],
+  [
+   "2024-12-24",
+   1396.0
+  ],
+  [
+   "2024-12-27",
+   1348.0
+  ],
+  [
+   "2025-01-03",
+   1270.0
+  ],
+  [
+   "2025-01-10",
+   1278.0
+  ],
+  [
+   "2025-01-17",
+   1300.0
+  ],
+  [
+   "2025-01-24",
+   1306.0
+  ],
+  [
+   "2025-01-31",
+   1242.0
+  ],
+  [
+   "2025-02-07",
+   1200.0
+  ],
+  [
+   "2025-02-14",
+   1182.0
+  ],
+  [
+   "2025-02-21",
+   1170.0
+  ],
+  [
+   "2025-02-28",
+   1028.0
+  ],
+  [
+   "2025-03-07",
+   930.0
+  ],
+  [
+   "2025-03-14",
+   910.0
+  ],
+  [
+   "2025-03-21",
+   807.0
+  ],
+  [
+   "2025-03-28",
+   820.0
+  ],
+  [
+   "2025-04-04",
+   640.0
+  ],
+  [
+   "2025-04-11",
+   642.0
+  ],
+  [
+   "2025-04-17",
+   639.0
+  ],
+  [
+   "2025-04-25",
+   700.0
+  ],
+  [
+   "2025-05-02",
+   691.0
+  ],
+  [
+   "2025-05-09",
+   707.0
+  ],
+  [
+   "2025-05-16",
+   787.0
+  ],
+  [
+   "2025-05-23",
+   760.0
+  ],
+  [
+   "2025-05-30",
+   782.0
+  ],
+  [
+   "2025-06-06",
+   867.0
+  ],
+  [
+   "2025-06-13",
+   857.0
+  ],
+  [
+   "2025-06-20",
+   911.0
+  ],
+  [
+   "2025-06-27",
+   977.0
+  ],
+  [
+   "2025-07-04",
+   900.0
+  ],
+  [
+   "2025-07-11",
+   948.0
+  ],
+  [
+   "2025-07-18",
+   830.0
+  ],
+  [
+   "2025-07-25",
+   862.0
+  ],
+  [
+   "2025-08-01",
+   840.0
+  ],
+  [
+   "2025-08-08",
+   980.0
+  ],
+  [
+   "2025-08-15",
+   921.0
+  ],
+  [
+   "2025-08-22",
+   930.0
+  ],
+  [
+   "2025-08-29",
+   892.0
+  ],
+  [
+   "2025-09-05",
+   910.0
+  ],
+  [
+   "2025-09-12",
+   857.0
+  ],
+  [
+   "2025-09-19",
+   950.0
+  ],
+  [
+   "2025-09-26",
+   962.0
+  ],
+  [
+   "2025-10-03",
+   927.0
+  ],
+  [
+   "2025-10-10",
+   986.0
+  ],
+  [
+   "2025-10-17",
+   966.0
+  ],
+  [
+   "2025-10-24",
+   1046.0
+  ],
+  [
+   "2025-10-31",
+   1012.0
+  ],
+  [
+   "2025-11-07",
+   962.0
+  ],
+  [
+   "2025-11-14",
+   944.0
+  ],
+  [
+   "2025-11-21",
+   900.0
+  ],
+  [
+   "2025-11-28",
+   911.0
+  ],
+  [
+   "2025-12-05",
+   930.0
+  ],
+  [
+   "2025-12-12",
+   903.0
+  ],
+  [
+   "2025-12-19",
+   900.0
+  ],
+  [
+   "2025-12-24",
+   870.0
+  ],
+  [
+   "2026-01-02",
+   894.0
+  ],
+  [
+   "2026-01-09",
+   920.0
+  ],
+  [
+   "2026-01-16",
+   905.0
+  ],
+  [
+   "2026-01-23",
+   1202.0
+  ],
+  [
+   "2026-01-30",
+   1240.0
+  ],
+  [
+   "2026-02-06",
+   1298.0
+  ],
+  [
+   "2026-02-13",
+   1424.0
+  ],
+  [
+   "2026-02-20",
+   1382.0
+  ],
+  [
+   "2026-02-27",
+   1386.0
+  ],
+  [
+   "2026-03-06",
+   1368.0
+  ],
+  [
+   "2026-03-13",
+   1412.0
+  ],
+  [
+   "2026-03-20",
+   1300.0
+  ],
+  [
+   "2026-03-27",
+   1244.0
+  ],
+  [
+   "2026-04-02",
+   1272.0
+  ],
+  [
+   "2026-04-10",
+   1354.0
+  ],
+  [
+   "2026-04-17",
+   1450.0
+  ],
+  [
+   "2026-04-24",
+   1440.0
+  ],
+  [
+   "2026-05-01",
+   1750.0
+  ],
+  [
+   "2026-05-08",
+   1906.0
+  ],
+  [
+   "2026-05-15",
+   1806.0
+  ],
+  [
+   "2026-05-22",
+   1900.0
+  ],
+  [
+   "2026-05-29",
+   1920.0
+  ],
+  [
+   "2026-06-05",
+   1784.0
+  ],
+  [
+   "2026-06-12",
+   1954.0
+  ],
+  [
+   "2026-06-19",
+   1948.0
+  ],
+  [
+   "2026-06-26",
+   1886.0
+  ],
+  [
+   "2026-07-03",
+   1930.0
+  ],
+  [
+   "2026-07-10",
+   1812.0
+  ],
+  [
+   "2026-07-17",
+   1754.0
+  ],
+  [
+   "2026-07-24",
+   1698.0
+  ],
+  [
+   "2026-07-31",
+   1616.0
+  ],
+  [
+   "2026-08-07",
+   1776.0
+  ],
+  [
+   "2026-08-14",
+   1742.0
+  ],
+  [
+   "2026-08-21",
+   1764.0
+  ],
+  [
+   "2026-08-28",
+   1786.0
+  ],
+  [
+   "2026-09-04",
+   1810.0
+  ],
+  [
+   "2026-09-11",
+   1896.0
+  ],
+  [
+   "2026-09-18",
+   1960.0
+  ],
+  [
+   "2026-09-25",
+   2045.0
+  ],
+  [
+   "2026-10-02",
+   2040.0
+  ],
+  [
+   "2026-10-09",
+   1950.0
+  ],
+  [
+   "2026-10-16",
+   1902.0
+  ],
+  [
+   "2026-10-19",
+   1768.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2022-01-11",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "CUT",
+   "s": -2,
+   "q": "As a result, 2021 adjusted operating profit is anticipated to be modestly below the lower end of current market expectations",
+   "file": "20220111_XPP_Trading-Update.md"
+  },
+  {
+   "d": "2022-03-01",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "For 2022, despite the ongoing challenges and uncertainty that remain in relation to our supply chain, component shortages and inflationary pressures, the record order book and the positive demand backdrop, across all our sectors, provides us with confidence for our prospects.",
+   "file": "20220301_XPP_Annual-Results-for-the-year-ended-31-December-2021.md"
+  },
+  {
+   "d": "2022-04-14",
+   "doc": "Q1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -1,
+   "q": "We expect net debt/EBITDA to reduce to below 2.0 times by 2022 year-end as our working capital unwinds and given the expected second half weighting to trading.",
+   "file": "20220414_XPP_Q1-Trading-Update.md"
+  },
+  {
+   "d": "2022-08-01",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -2,
+   "q": "While we are confident of a substantially better performance in the remainder of 2022 supported by the inventory on hand and a record committed order book, there remains a wider range of full year outcomes than in prior years.",
+   "file": "20220801_XPP_Interim-Results.md"
+  },
+  {
+   "d": "2022-10-03",
+   "doc": "OPS",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Company will update on its third quarter financial performance on the 11 October 2022 but is pleased to confirm that trading in the period has improved from the first half run-rates.",
+   "file": "20221003_XPP_Re-Comet-Legal-Action---Judgement-Released.md"
+  },
+  {
+   "d": "2022-10-11",
+   "doc": "Q3 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board’s expectations for the full year are in line with current market expectations.",
+   "file": "20221011_XPP_Q3-Trading-Update.md"
+  },
+  {
+   "d": "2023-01-12",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "As a result, and subject to normal audit adjustments, 2022 adjusted operating profit is expected to be approximately in the middle of the range of current market expectations",
+   "file": "20230112_XPP_Trading-Update.md"
+  },
+  {
+   "d": "2023-02-28",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "That said, we are generally optimistic on the Group’s prospects for the current year based on our strong H2 2022 trading momentum and the benefits of price increases coming through our order book to a greater extent during 2023.",
+   "file": "20230228_XPP_Annual-Results-for-the-year-ended-31-December-2022.md"
+  },
+  {
+   "d": "2023-04-13",
+   "doc": "Q1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "We have significant order book visibility covering the remainder of 2023, and into 2024, and as such our full year expectations are unchanged.",
+   "file": "20230413_XPP_Q1-Trading-Update.md"
+  },
+  {
+   "d": "2023-08-01",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Our full year outlook is unchanged, albeit we remain aware of a range of macroeconomic risks.",
+   "file": "20230801_XPP_Interim-Results.md"
+  },
+  {
+   "d": "2023-10-02",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -3,
+   "q": "These conditions are likely to continue for the remainder of the year, leaving the outlook below our prior expectation, with operating profit for the year ended 31 December 2023 now expected to be broadly similar to last year.",
+   "file": "20231002_XPP_Trading-Update.md"
+  },
+  {
+   "d": "2023-10-27",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 1,
+   "q": "Revenue in the third quarter was £75.1m (2022: £79.4m) with operating profit slightly ahead of our prior expectation due to a better outturn in September.",
+   "file": "20231027_XPP_Trading-Update.md"
+  },
+  {
+   "d": "2023-11-06",
+   "doc": "OPS",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -2,
+   "q": "While, as previously announced, 2023 will not deliver the financial progress the Company had forecast earlier in the year, it is expected to result in a trading performance similar to the prior year in what have become increasingly challenging end market conditions.",
+   "file": "20231106_XPP_Announcement-of-Funding-Plan-and-Placing.md",
+   "gnote": "discounted: placing"
+  },
+  {
+   "d": "2024-01-11",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "Whilst it is too soon to be definitive about prospects for 2024, we continue to expect that market conditions will improve as the year progresses, with our results being weighted towards the second half.",
+   "file": "20240111_XPP_Trading-Update.md"
+  },
+  {
+   "d": "2024-02-16",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -3,
+   "q": "The Board has concluded that there is likely to be a shortfall in revenue in 2024, leaving the outlook for 2024 significantly below market expectations.",
+   "file": "20240216_XPP_Trading-Update.md"
+  },
+  {
+   "d": "2024-04-10",
+   "doc": "Q1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Q1 trading in line with expectations and full year outlook unchanged",
+   "file": "20240410_XPP_Q1-Trading-Update.md"
+  },
+  {
+   "d": "2024-05-21",
+   "doc": "OPS",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board notes that trading for 2024 has been in line with its expectations.",
+   "file": "20240521_XPP_Rejection-of-unsolicited-approach.md"
+  },
+  {
+   "d": "2024-08-06",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Adjusted Operating Profit expectations for 2024 are unchanged, more evenly weighted between each half and generally less sensitive to demand conditions in the second half",
+   "file": "20240806_XPP_Interim-Results.md"
+  },
+  {
+   "d": "2024-10-08",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -2,
+   "q": "On a constant currency basis, the Group's full year expectations remain within the range of current analyst expectations",
+   "file": "20241008_XPP_Q3-Trading-Update.md"
+  },
+  {
+   "d": "2025-01-21",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group's Adjusted Operating Profit for 2024 is expected to be within the range of current analyst expectations",
+   "file": "20250121_XPP_Trading-Update.md"
+  },
+  {
+   "d": "2025-03-04",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -3,
+   "q": "At the start of 2025 we are seeing continued challenging market conditions and recent US trade restrictions are causing increased headwinds for sales to Semiconductor Manufacturing Equipment customers in China, which we expect to result in a sequentially weaker first half result.",
+   "file": "20250304_XPP_Annual-Results-for-the-year-ended-31-December....md",
+   "gnote": "discounted: placing"
+  },
+  {
+   "d": "2025-03-04",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Whilst market recovery is expected in H2, there remains a wide range of full-year outcomes for FY2025.",
+   "file": "20250304_XPP_Announcement-of-Placing.md"
+  },
+  {
+   "d": "2025-04-24",
+   "doc": "Q1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "It is too early to tell what impact, if any, tariffs will have on our markets in the short-term, albeit we do not believe they will impact our competitive position. The range of potential outcomes for 2025 remains wide.",
+   "file": "20250424_XPP_Q1-Trading-Update.md"
+  },
+  {
+   "d": "2025-08-05",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 1,
+   "q": "We expect to make healthy sequential progress in the second half, supported in part by efficiency actions already taken. The extent of the progress will depend on our Q4 order book, which will build over Q3 and this continues to lead to a range of outcomes for the full year.",
+   "file": "20250805_XPP_Interim-Results.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2025-10-21",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Quarterly operating profit increased materially from Q2 to Q3 2025, as revenue growth and efficiency actions delivered the expected benefits. We expect this to be sustained in Q4, leading to full year profit in line with current market expectations",
+   "file": "20251021_XPP_Q3-Trading-Update.md"
+  },
+  {
+   "d": "2026-01-19",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Subject to audit, the Board expects full year profit and EPS to be in line with current market expectations* following the delivery of a significantly improved second half performance.",
+   "file": "20260119_XPP_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2026-03-03",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The proactive actions taken in the year have improved our financial performance baseline for 2026. While previously announced US export restrictions will reduce sales to China, we expect improved market demand to drive an improved financial performance as 2026 progresses.",
+   "file": "20260303_XPP_Annual-Results-for-the-year-ended-31-December-2025.md"
+  },
+  {
+   "d": "2026-04-23",
+   "doc": "Q1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Our full year expectations are unchanged, including for a second half weighting.",
+   "file": "20260423_XPP_Q1-Trading-Update.md"
+  },
+  {
+   "d": "2026-08-04",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Our expectations for the full year remain unchanged.",
+   "file": "20260804_XPP_Interim-Results.md"
+  },
+  {
+   "d": "2026-10-20",
+   "doc": "Q3 TU",
+   "fy": "FY27",
+   "g": "RAISE",
+   "s": 1,
+   "q": "We expect a combination of revenue growth and associated operational leverage to deliver a FY27 performance slightly ahead of current market expectations",
+   "file": "20261020_XPP_Q3-Trading-Update.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-20",
+  "doc": "Q3 TU",
+  "file": "20261020_XPP_Q3-Trading-Update.md",
+  "vs": "Q3 TU Oct-25 · H1 R Aug-26 · back to Q3 TU Oct-24 / Q1 TU Apr-26",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Anchor softened",
+    "text": "FY guide: Oct-25 “Our full year outlook is in line with current market expectations.” → now “Our FY26 expectations remain unchanged”; FY26 consensus (£26.4m) is printed but the market anchor is only attached to FY27",
+    "span": "Market anchor at Oct-25 and Jan-26; 2026 prints (Apr-26, Aug-26, Oct-26) say only “unchanged”"
+   },
+   {
+    "sev": "grey",
+    "type": "New caution",
+    "text": "Order intake (record £106.8m, book-to-bill 1.67x): Apr-26 “may not reach the highs of Q1 2026” → now “Q3 order intake benefited from customers placing orders earlier than usual in response to extending industry lead times”, underlying demand “similar to Q2”",
+    "span": "First pull-forward caveat on 2026 intake"
+   },
+   {
+    "sev": "grey",
+    "type": "Wording vs number",
+    "text": "H2 revenue: Aug-26 “£135m of firm orders scheduled for H2” → now Q3 reported £63.8m “in line with our expectations”, but only “Excluding this item, Q3 revenue was £67.5m, consistent with the £135m revenue guidance for H2” after a £3.7m one-off US tariff refund",
+    "span": "H1 R Aug-26 → Q3 TU Oct-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Next-year view: Oct-25 “increasing confidence going into 2026 in what we expect to remain cautious end-markets”, no number → now “a FY27 performance slightly ahead of current market expectations” with FY27 consensus £35.9m footnoted",
+    "span": "First next-year view tied to consensus in a Q3 TU"
+   }
+  ]
+ }
+}

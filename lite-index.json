@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19",
+ "updated": "2026-10-20",
  "note": "Drift-lite charts: 5y weekly price + Text/G marks auto-scored from RNS. Built by chart_lite.py.",
  "tickers": [
   {
@@ -324,6 +324,13 @@
    "chart": "lite/CODE.json?v=2026-10-19.f1e4",
    "scored": "2026-10-19",
    "marks": 21
+  },
+  {
+   "ticker": "CRPR",
+   "company": "Cropper (James) plc",
+   "chart": "lite/CRPR.json?v=2026-10-20.17d5",
+   "scored": "2026-10-20",
+   "marks": 24
   },
   {
    "ticker": "CTG",
@@ -1059,6 +1066,13 @@
    "chart": "lite/WVIA.json?v=2026-10-19.6ae4",
    "scored": "2026-10-19",
    "marks": 4
+  },
+  {
+   "ticker": "XPP",
+   "company": "XP Power Ltd",
+   "chart": "lite/XPP.json?v=2026-10-20.d31e",
+   "scored": "2026-10-20",
+   "marks": 30
   },
   {
    "ticker": "XPS",
