@@ -5049,6 +5049,71 @@
         ]
       },
       "chart": "charts/BKS.json?v=2026-10-19.993f"
+    },
+    {
+      "ticker": "GBG",
+      "company": "GB Group",
+      "kind": "ticker",
+      "direction": "down",
+      "headline": "Guide held at August's cut, but H1 profit fell 8.6% and organic growth slowed to 0.4% — all three lamps lit, Americas impairment next.",
+      "trigger": "3 of 3 — Numbers & guide, Language and Disclosure all fired in the deterioration direction",
+      "alert": true,
+      "fired": 3,
+      "fired_of": 3,
+      "lights": "rrr",
+      "rns_type": "H1 TU",
+      "rns_date": "2026-10-20",
+      "build_date": "2026-10-20",
+      "spec_version": "5.8",
+      "next_test": "24 Nov 2026 interims: NRR at 30 Sep 26 against 97.8%, whether new-logo growth is re-quantified, and the Americas recovery plan.",
+      "url": "GBG.html",
+      "grid": {
+        "labels": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "periods": [
+          "H1 23",
+          "H2 23",
+          "H1 24",
+          "H2 24",
+          "H1 25",
+          "H2 25",
+          "H1 26",
+          "H2 26",
+          "H1 27"
+        ],
+        "rows": [
+          "---gggrr-",
+          "----ggraa",
+          "---a-rga-",
+          "----garaa",
+          "--rggaaar"
+        ],
+        "note": "R1 NRR · R2 Identity CCY · R3 new-logo · R4 group CCY · R5 adj margin; YoY pp, H1/FY (R5 H1/H2)"
+      },
+      "trend": {
+        "mode": "share",
+        "cells": "a--",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": 0.2
+          },
+          {
+            "m": "EBITDA",
+            "gap": null
+          },
+          {
+            "m": "PBT",
+            "gap": null
+          }
+        ]
+      },
+      "chart": "charts/GBG.json?v=2026-10-20.daf1"
     }
   ]
 }
