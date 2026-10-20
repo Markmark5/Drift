@@ -1,6 +1,6 @@
 {
  "ticker": "SYS1",
- "v": "2026-10-20.5d67",
+ "v": "2026-10-20.d314",
  "ccy": "GBX",
  "src": "AlphaVantage SYS1.LON weekly",
  "adj": [],
@@ -1468,22 +1468,34 @@
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-07",
-  "doc": "OPS",
-  "file": "20261007_SYS1_Increased-Final-Offer-for-System1-Group-plc.md",
-  "vs": "Increased Fourth Offer Sep-26 · TU Sep-26 · FY R Jul-26 · Q1 TUs Jul-22/23/24/25",
+  "rns": "2026-09-24",
+  "doc": "TU",
+  "file": "20260924_SYS1_Replacement-Trading-Update.md",
+  "vs": "5M TU 10-Sep-26 · Q2 TU Sep-25 · TU Mar-26, Q4 TU Apr-26, FY R Jul-26",
   "lines": [
    {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Revenue guide not raised: “Double digit revenue growth demonstrates the momentum we are seeing across the business” (5M FY27 £15.9m vs £14.3m, +11%) but “Revenue is expected to remain in line with consensus” of £38.8m vs FY26 £37.0m (FY R Jul-26) → implies c.£22.9m for Sep–Mar vs c.£22.7m a year earlier, roughly flat",
+    "span": "Consensus £38.8m unchanged since Mar-26, Apr-26, Jul-26, 10-Sep-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Restated",
+    "text": "Adjusted PBT redefined: Mar-26 “Adjusted Profit is Profit before Taxation excluding share-based payments” → now “before share based payments and expenditure incurred as a result of the Offer period”; offer costs not quantified, so the £5.0m guide vs £4.2m consensus is on a wider add-back",
+    "span": "Definition Mar-26 / FY R Jul-26 → Sep-26"
+   },
+   {
     "sev": "grey",
-    "type": "Skipped update",
-    "text": "Q1 revenue update: Jul-22, Jul-23, Jul-24, Jul-25 each carried a Q1 trading update → none in Jul-26 after FY R Jul-26 “The Group will now be updating the market twice yearly, therefore will not provide Q1 and Q3 revenue updates”; 5M TU (Sep-26) issued instead during the offer period",
-    "span": "First gap in 4 years"
+    "type": "New caution",
+    "text": "FY27 forecast now conditional on the bid failing: first principal assumption “Brave Bison’s Offer does not become unconditional.”, plus no material customer losses or staff departures caused by the Offer",
+    "span": "First time in a System1 trading update"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Profit reference: Fourth Offer Sep-26 “The Fourth Offer is equivalent to 11.3x of consensus market expectations at 21 April 2026 for System1's FY27E adjusted Operating Profit of £4.2 million.” → now “equivalent to 10.7x of System1's forecasted FY27 adjusted profit before tax of £5.0 million”, the company's raised guide of Sep-26",
-    "span": "FY27 PBT guide £4.2m → £5.0m (TU 24 Sep-26)"
+    "text": "10-Sep-26 “comfortable with consensus” (£4.2m adj. PBT, no own number) → now own guide “from £4.2m to £5.0m”, and a first 5-month profit figure “£2.1m (5M FY26: £0.3m)”",
+    "span": "FY27 adj. PBT guide +c.19%"
    }
   ]
  }
