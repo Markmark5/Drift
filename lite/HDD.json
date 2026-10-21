@@ -1,0 +1,1371 @@
+{
+ "ticker": "HDD",
+ "v": "2026-10-21.d3a9",
+ "ccy": "GBX",
+ "src": "AlphaVantage HDD.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   40.2
+  ],
+  [
+   "2021-10-22",
+   34.5
+  ],
+  [
+   "2021-10-29",
+   34.0
+  ],
+  [
+   "2021-11-05",
+   34.5
+  ],
+  [
+   "2021-11-12",
+   34.5
+  ],
+  [
+   "2021-11-19",
+   34.5
+  ],
+  [
+   "2021-11-26",
+   33.0
+  ],
+  [
+   "2021-12-03",
+   32.5
+  ],
+  [
+   "2021-12-10",
+   31.0
+  ],
+  [
+   "2021-12-17",
+   31.0
+  ],
+  [
+   "2021-12-24",
+   31.0
+  ],
+  [
+   "2021-12-31",
+   33.0
+  ],
+  [
+   "2022-01-07",
+   32.5
+  ],
+  [
+   "2022-01-14",
+   34.5
+  ],
+  [
+   "2022-01-21",
+   36.0
+  ],
+  [
+   "2022-01-28",
+   33.5
+  ],
+  [
+   "2022-02-04",
+   33.0
+  ],
+  [
+   "2022-02-11",
+   30.5
+  ],
+  [
+   "2022-02-18",
+   30.0
+  ],
+  [
+   "2022-02-25",
+   29.5
+  ],
+  [
+   "2022-03-04",
+   31.0
+  ],
+  [
+   "2022-03-11",
+   33.5
+  ],
+  [
+   "2022-03-18",
+   33.5
+  ],
+  [
+   "2022-03-25",
+   33.5
+  ],
+  [
+   "2022-04-01",
+   33.5
+  ],
+  [
+   "2022-04-08",
+   32.5
+  ],
+  [
+   "2022-04-14",
+   32.5
+  ],
+  [
+   "2022-04-22",
+   32.5
+  ],
+  [
+   "2022-04-29",
+   32.5
+  ],
+  [
+   "2022-05-06",
+   32.5
+  ],
+  [
+   "2022-05-13",
+   29.0
+  ],
+  [
+   "2022-05-20",
+   27.5
+  ],
+  [
+   "2022-05-27",
+   26.5
+  ],
+  [
+   "2022-06-01",
+   26.5
+  ],
+  [
+   "2022-06-10",
+   27.5
+  ],
+  [
+   "2022-06-17",
+   26.5
+  ],
+  [
+   "2022-06-24",
+   26.5
+  ],
+  [
+   "2022-07-01",
+   25.0
+  ],
+  [
+   "2022-07-08",
+   25.0
+  ],
+  [
+   "2022-07-15",
+   22.5
+  ],
+  [
+   "2022-07-22",
+   22.5
+  ],
+  [
+   "2022-07-29",
+   21.0
+  ],
+  [
+   "2022-08-05",
+   21.0
+  ],
+  [
+   "2022-08-12",
+   19.5
+  ],
+  [
+   "2022-08-19",
+   19.0
+  ],
+  [
+   "2022-08-26",
+   19.0
+  ],
+  [
+   "2022-09-02",
+   19.0
+  ],
+  [
+   "2022-09-09",
+   19.0
+  ],
+  [
+   "2022-09-16",
+   18.0
+  ],
+  [
+   "2022-09-23",
+   17.0
+  ],
+  [
+   "2022-09-30",
+   15.75
+  ],
+  [
+   "2022-10-07",
+   15.75
+  ],
+  [
+   "2022-10-14",
+   16.0
+  ],
+  [
+   "2022-10-21",
+   16.0
+  ],
+  [
+   "2022-10-28",
+   15.5
+  ],
+  [
+   "2022-11-04",
+   15.5
+  ],
+  [
+   "2022-11-11",
+   14.5
+  ],
+  [
+   "2022-11-18",
+   13.75
+  ],
+  [
+   "2022-11-25",
+   13.75
+  ],
+  [
+   "2022-12-02",
+   13.75
+  ],
+  [
+   "2022-12-09",
+   13.75
+  ],
+  [
+   "2022-12-16",
+   13.75
+  ],
+  [
+   "2022-12-23",
+   13.5
+  ],
+  [
+   "2022-12-30",
+   13.5
+  ],
+  [
+   "2023-01-06",
+   13.5
+  ],
+  [
+   "2023-01-13",
+   13.5
+  ],
+  [
+   "2023-01-20",
+   13.5
+  ],
+  [
+   "2023-01-27",
+   13.5
+  ],
+  [
+   "2023-02-03",
+   13.5
+  ],
+  [
+   "2023-02-10",
+   13.5
+  ],
+  [
+   "2023-02-17",
+   13.5
+  ],
+  [
+   "2023-02-24",
+   13.25
+  ],
+  [
+   "2023-03-03",
+   12.75
+  ],
+  [
+   "2023-03-10",
+   11.75
+  ],
+  [
+   "2023-03-17",
+   11.5
+  ],
+  [
+   "2023-03-24",
+   11.5
+  ],
+  [
+   "2023-03-31",
+   11.5
+  ],
+  [
+   "2023-04-06",
+   11.5
+  ],
+  [
+   "2023-04-14",
+   11.25
+  ],
+  [
+   "2023-04-21",
+   11.0
+  ],
+  [
+   "2023-04-28",
+   12.5
+  ],
+  [
+   "2023-05-05",
+   12.5
+  ],
+  [
+   "2023-05-12",
+   13.5
+  ],
+  [
+   "2023-05-19",
+   12.25
+  ],
+  [
+   "2023-05-26",
+   12.5
+  ],
+  [
+   "2023-06-02",
+   12.5
+  ],
+  [
+   "2023-06-09",
+   12.5
+  ],
+  [
+   "2023-06-16",
+   12.5
+  ],
+  [
+   "2023-06-23",
+   12.5
+  ],
+  [
+   "2023-06-30",
+   12.5
+  ],
+  [
+   "2023-07-07",
+   12.5
+  ],
+  [
+   "2023-07-14",
+   12.0
+  ],
+  [
+   "2023-07-21",
+   11.5
+  ],
+  [
+   "2023-07-28",
+   11.5
+  ],
+  [
+   "2023-08-04",
+   11.5
+  ],
+  [
+   "2023-08-11",
+   11.5
+  ],
+  [
+   "2023-08-18",
+   11.5
+  ],
+  [
+   "2023-08-25",
+   11.5
+  ],
+  [
+   "2023-09-01",
+   11.5
+  ],
+  [
+   "2023-09-08",
+   11.5
+  ],
+  [
+   "2023-09-15",
+   11.5
+  ],
+  [
+   "2023-09-22",
+   11.5
+  ],
+  [
+   "2023-09-29",
+   11.5
+  ],
+  [
+   "2023-10-06",
+   14.5
+  ],
+  [
+   "2023-10-13",
+   14.5
+  ],
+  [
+   "2023-10-20",
+   13.0
+  ],
+  [
+   "2023-10-27",
+   13.0
+  ],
+  [
+   "2023-11-03",
+   12.25
+  ],
+  [
+   "2023-11-10",
+   10.75
+  ],
+  [
+   "2023-11-17",
+   11.0
+  ],
+  [
+   "2023-11-24",
+   11.0
+  ],
+  [
+   "2023-12-01",
+   11.0
+  ],
+  [
+   "2023-12-08",
+   10.75
+  ],
+  [
+   "2023-12-15",
+   10.5
+  ],
+  [
+   "2023-12-22",
+   10.25
+  ],
+  [
+   "2023-12-29",
+   10.5
+  ],
+  [
+   "2024-01-05",
+   10.5
+  ],
+  [
+   "2024-01-12",
+   10.5
+  ],
+  [
+   "2024-01-19",
+   10.0
+  ],
+  [
+   "2024-01-26",
+   10.25
+  ],
+  [
+   "2024-02-02",
+   10.25
+  ],
+  [
+   "2024-02-09",
+   7.75
+  ],
+  [
+   "2024-02-16",
+   5.75
+  ],
+  [
+   "2024-02-23",
+   4.85
+  ],
+  [
+   "2024-03-01",
+   5.375
+  ],
+  [
+   "2024-03-08",
+   6.35
+  ],
+  [
+   "2024-03-15",
+   5.75
+  ],
+  [
+   "2024-03-22",
+   5.625
+  ],
+  [
+   "2024-03-28",
+   5.75
+  ],
+  [
+   "2024-04-05",
+   5.375
+  ],
+  [
+   "2024-04-12",
+   5.375
+  ],
+  [
+   "2024-04-19",
+   5.625
+  ],
+  [
+   "2024-04-26",
+   6.25
+  ],
+  [
+   "2024-05-03",
+   6.75
+  ],
+  [
+   "2024-05-10",
+   6.75
+  ],
+  [
+   "2024-05-17",
+   6.75
+  ],
+  [
+   "2024-05-24",
+   7.35
+  ],
+  [
+   "2024-05-31",
+   7.85
+  ],
+  [
+   "2024-06-07",
+   7.75
+  ],
+  [
+   "2024-06-14",
+   7.75
+  ],
+  [
+   "2024-06-21",
+   7.75
+  ],
+  [
+   "2024-06-28",
+   7.75
+  ],
+  [
+   "2024-07-05",
+   7.75
+  ],
+  [
+   "2024-07-12",
+   7.75
+  ],
+  [
+   "2024-07-19",
+   7.75
+  ],
+  [
+   "2024-07-26",
+   7.25
+  ],
+  [
+   "2024-08-02",
+   7.25
+  ],
+  [
+   "2024-08-09",
+   6.5
+  ],
+  [
+   "2024-08-16",
+   5.75
+  ],
+  [
+   "2024-08-23",
+   6.0
+  ],
+  [
+   "2024-08-30",
+   6.0
+  ],
+  [
+   "2024-09-06",
+   6.0
+  ],
+  [
+   "2024-09-13",
+   6.25
+  ],
+  [
+   "2024-09-20",
+   6.125
+  ],
+  [
+   "2024-09-27",
+   6.125
+  ],
+  [
+   "2024-10-04",
+   5.875
+  ],
+  [
+   "2024-10-11",
+   5.75
+  ],
+  [
+   "2024-10-18",
+   5.375
+  ],
+  [
+   "2024-10-25",
+   4.85
+  ],
+  [
+   "2024-11-01",
+   4.75
+  ],
+  [
+   "2024-11-08",
+   4.5
+  ],
+  [
+   "2024-11-15",
+   4.35
+  ],
+  [
+   "2024-11-22",
+   4.35
+  ],
+  [
+   "2024-11-29",
+   5.1
+  ],
+  [
+   "2024-12-06",
+   5.0
+  ],
+  [
+   "2024-12-13",
+   4.75
+  ],
+  [
+   "2024-12-20",
+   6.0
+  ],
+  [
+   "2024-12-24",
+   5.625
+  ],
+  [
+   "2024-12-27",
+   5.625
+  ],
+  [
+   "2025-01-03",
+   5.625
+  ],
+  [
+   "2025-01-10",
+   5.625
+  ],
+  [
+   "2025-01-17",
+   5.5
+  ],
+  [
+   "2025-01-24",
+   5.5
+  ],
+  [
+   "2025-01-31",
+   5.9
+  ],
+  [
+   "2025-02-07",
+   6.75
+  ],
+  [
+   "2025-02-14",
+   6.75
+  ],
+  [
+   "2025-02-21",
+   6.75
+  ],
+  [
+   "2025-02-28",
+   6.25
+  ],
+  [
+   "2025-03-07",
+   5.85
+  ],
+  [
+   "2025-03-14",
+   5.9
+  ],
+  [
+   "2025-03-21",
+   6.25
+  ],
+  [
+   "2025-03-28",
+   6.25
+  ],
+  [
+   "2025-04-04",
+   5.65
+  ],
+  [
+   "2025-04-11",
+   5.5
+  ],
+  [
+   "2025-04-17",
+   5.5
+  ],
+  [
+   "2025-04-25",
+   5.75
+  ],
+  [
+   "2025-05-02",
+   6.75
+  ],
+  [
+   "2025-05-09",
+   6.875
+  ],
+  [
+   "2025-05-16",
+   6.75
+  ],
+  [
+   "2025-05-23",
+   7.375
+  ],
+  [
+   "2025-05-30",
+   7.75
+  ],
+  [
+   "2025-06-06",
+   8.25
+  ],
+  [
+   "2025-06-13",
+   8.25
+  ],
+  [
+   "2025-06-20",
+   8.25
+  ],
+  [
+   "2025-06-27",
+   8.25
+  ],
+  [
+   "2025-07-04",
+   8.25
+  ],
+  [
+   "2025-07-11",
+   8.0
+  ],
+  [
+   "2025-07-18",
+   8.0
+  ],
+  [
+   "2025-07-25",
+   7.75
+  ],
+  [
+   "2025-08-01",
+   7.75
+  ],
+  [
+   "2025-08-08",
+   7.75
+  ],
+  [
+   "2025-08-15",
+   7.5
+  ],
+  [
+   "2025-08-22",
+   7.5
+  ],
+  [
+   "2025-08-29",
+   7.5
+  ],
+  [
+   "2025-09-05",
+   7.75
+  ],
+  [
+   "2025-09-12",
+   7.75
+  ],
+  [
+   "2025-09-19",
+   7.75
+  ],
+  [
+   "2025-09-26",
+   7.375
+  ],
+  [
+   "2025-10-03",
+   6.5
+  ],
+  [
+   "2025-10-10",
+   7.25
+  ],
+  [
+   "2025-10-17",
+   7.5
+  ],
+  [
+   "2025-10-24",
+   8.0
+  ],
+  [
+   "2025-10-31",
+   8.0
+  ],
+  [
+   "2025-11-07",
+   7.0
+  ],
+  [
+   "2025-11-14",
+   6.75
+  ],
+  [
+   "2025-11-21",
+   7.0
+  ],
+  [
+   "2025-11-28",
+   6.625
+  ],
+  [
+   "2025-12-05",
+   13.75
+  ],
+  [
+   "2025-12-12",
+   15.0
+  ],
+  [
+   "2025-12-19",
+   14.75
+  ],
+  [
+   "2025-12-24",
+   17.75
+  ],
+  [
+   "2026-01-02",
+   17.75
+  ],
+  [
+   "2026-01-09",
+   17.0
+  ],
+  [
+   "2026-01-16",
+   17.25
+  ],
+  [
+   "2026-01-23",
+   17.0
+  ],
+  [
+   "2026-01-30",
+   16.0
+  ],
+  [
+   "2026-02-06",
+   23.0
+  ],
+  [
+   "2026-02-13",
+   24.0
+  ],
+  [
+   "2026-02-20",
+   26.0
+  ],
+  [
+   "2026-02-27",
+   38.0
+  ],
+  [
+   "2026-03-06",
+   34.0
+  ],
+  [
+   "2026-03-13",
+   33.5
+  ],
+  [
+   "2026-03-20",
+   32.5
+  ],
+  [
+   "2026-03-27",
+   33.5
+  ],
+  [
+   "2026-04-02",
+   31.5
+  ],
+  [
+   "2026-04-10",
+   34.0
+  ],
+  [
+   "2026-04-17",
+   35.0
+  ],
+  [
+   "2026-04-24",
+   34.5
+  ],
+  [
+   "2026-05-01",
+   37.5
+  ],
+  [
+   "2026-05-08",
+   35.5
+  ],
+  [
+   "2026-05-15",
+   39.0
+  ],
+  [
+   "2026-05-22",
+   50.0
+  ],
+  [
+   "2026-05-29",
+   64.5
+  ],
+  [
+   "2026-06-05",
+   61.0
+  ],
+  [
+   "2026-06-12",
+   60.0
+  ],
+  [
+   "2026-06-19",
+   74.5
+  ],
+  [
+   "2026-06-26",
+   65.5
+  ],
+  [
+   "2026-07-03",
+   69.0
+  ],
+  [
+   "2026-07-10",
+   71.0
+  ],
+  [
+   "2026-07-17",
+   75.5
+  ],
+  [
+   "2026-07-24",
+   94.5
+  ],
+  [
+   "2026-07-31",
+   103.5
+  ],
+  [
+   "2026-08-07",
+   100.0
+  ],
+  [
+   "2026-08-14",
+   84.0
+  ],
+  [
+   "2026-08-21",
+   97.5
+  ],
+  [
+   "2026-08-28",
+   91.5
+  ],
+  [
+   "2026-09-04",
+   87.0
+  ],
+  [
+   "2026-09-11",
+   87.5
+  ],
+  [
+   "2026-09-18",
+   90.0
+  ],
+  [
+   "2026-09-25",
+   97.5
+  ],
+  [
+   "2026-10-02",
+   98.5
+  ],
+  [
+   "2026-10-09",
+   105.0
+  ],
+  [
+   "2026-10-16",
+   107.0
+  ],
+  [
+   "2026-10-20",
+   104.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-12-06",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 1,
+   "q": "The continuing growth in our order book and the strong first quarter of FY22 give the Board confidence that revenues will strengthen markedly, and therefore the Group's financial performance will improve significantly in FY22.",
+   "file": "20211206_HDD_Preliminary-results.md"
+  },
+  {
+   "d": "2022-03-11",
+   "doc": "AGM",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is optimistic that the increasing demand from existing customers and the high-volume potential of a number of projects will result in the Group achieving its previous upward sales trajectory.",
+   "file": "20220311_HDD_AGM-Statement.md"
+  },
+  {
+   "d": "2022-05-10",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 1,
+   "q": "We now have visibility of work that could, subject to typical commercial concerns and the timing of delivery, take our performance to the top of or beyond previous market expectations for the financial year.",
+   "file": "20220510_HDD_Interim-Results.md"
+  },
+  {
+   "d": "2022-07-14",
+   "doc": "Q3 TU",
+   "fy": "FY22",
+   "g": "CUT",
+   "s": -2,
+   "q": "Revenues for the year to 30 September 2022 are expected to be broadly in line with the Board's expectations albeit with a slightly wider range of possible outcomes, which will also be reflected at the EBITDA level.",
+   "file": "20220714_HDD_Trading-update.md"
+  },
+  {
+   "d": "2022-10-13",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Revenues for the year to 30 September 2022 are expected to be in line with the Board's expectations of approximately £5.0m, up almost 40% on the previous year.",
+   "file": "20221013_HDD_Year-End-Trading-Update.md"
+  },
+  {
+   "d": "2022-12-22",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board also now expects to report an EBITDA loss of £0.9m (FY 2021: EBITDA loss of £1.5m), considerably better than the previous year in line with the Board's expectations and reflecting the improved revenue performance.",
+   "file": "20221222_HDD_Funding-and-Annual-Results-Update.md"
+  },
+  {
+   "d": "2023-02-08",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "This will provide additional headroom, improve profitability, and help to underpin delivery of expectations for the financial year to 30 September 2023.",
+   "file": "20230208_HDD_Annual-results-for-year-ended-30-September-2022.md"
+  },
+  {
+   "d": "2023-03-23",
+   "doc": "AGM",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Actions already taken to improve profitability and cash flow by c.£0.4m this financial year (as previously announced) have lowered the break-even point of the Group, supporting current market expectations for full year EBITDA performance.",
+   "file": "20230323_HDD_AGM-Statement.md"
+  },
+  {
+   "d": "2023-05-17",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "Therefore, whilst mindful of ongoing external economic uncertainties and headwinds, including further cost inflation, the Board anticipates performance for the full financial year to be in line with its expectations.",
+   "file": "20230517_HDD_Interim-Results.md"
+  },
+  {
+   "d": "2023-10-18",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board therefore expects the Group to deliver further growth in line with its strategy during this new financial year, moving the Group into EBITDA positive territory.",
+   "file": "20231018_HDD_Year-End-Trading-Update.md"
+  },
+  {
+   "d": "2024-02-08",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -2,
+   "q": "The Board expects that this will have the effect that revenues for the full year to September 2024 will be broadly in line with those of the year to September 2023, with the benefits of a disciplined approach to costs coming through such that we anticipate being EBITDA positive for the year.",
+   "file": "20240208_HDD_Preliminary-FY23-results-&-FY24-trading-update.md"
+  },
+  {
+   "d": "2024-03-25",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Further action is being taken to further reduce costs and improve revenues and margins in order to underpin existing expectations for an EBITDA positive performance for FY24.",
+   "file": "20240325_HDD_AGM-Statement.md"
+  },
+  {
+   "d": "2024-05-22",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -1,
+   "q": "With further action currently being taken to improve margins and reduce overhead costs, the Board continues to expect the business to be EBITDA positive both in the second half year and, prior to charging c.£0.4m of anticipated one-off cash restructuring costs, for the financial year as a whole.",
+   "file": "20240522_HDD_Interim-Statement.md"
+  },
+  {
+   "d": "2024-10-21",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -1,
+   "q": "Adjusted EBIDTA* is anticipated to be close to break even for the year (FY23: -£0.1m).",
+   "file": "20241021_HDD_Year-End-Trading-Update.md"
+  },
+  {
+   "d": "2024-12-18",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "We are delighted with this additional work win, this news helps underpin our forecasts for profitable growth in the current financial year and further demonstrates the role our technology can play in sectors requiring advanced surface treatment solutions",
+   "file": "20241218_HDD_New-Aerospace-Supply-Agreement.md"
+  },
+  {
+   "d": "2025-01-29",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Q1 FY25 revenues of £1.3m were ahead of the prior Q1 of £1.1m, in line with expectations, with Q2 expected to benefit from the new aerospace work won recently.",
+   "file": "20250129_HDD_Annual-results-for-year-ended-30-September-2024.md"
+  },
+  {
+   "d": "2025-03-18",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 1,
+   "q": "In view of encouraging trading to date, and the fresh approach to growing the business under new management, the Board believes that Hardide remains on track to deliver expectations for full year performance.",
+   "file": "20250318_HDD_AGM-Trading-Statement.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2025-05-20",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Whilst mindful of both the uncertain global trading environment and Hardide's limited order book visibility, based on year to date performance, the ongoing development of the business and latest customer demand schedules, the Board continues to expect Hardide to achieve its expectations for full year financial performance.",
+   "file": "20250520_HDD_Interim-Statement.md"
+  },
+  {
+   "d": "2025-10-22",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board expects this growth to deliver a materially improved EBITDA result for the year of approximately £1m (FY24: break-even*) at an EBITDA margin of over 16%, together with a positive earnings per share outcome for the first time in many years.",
+   "file": "20251022_HDD_Year-End-Trading-Update.md"
+  },
+  {
+   "d": "2025-12-01",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 3,
+   "q": "The Board accordingly now anticipates revenue and financial performance for FY26 to be materially higher than its previous expectations.",
+   "file": "20251201_HDD_Significant-Orders-from-a-Major-New-Customer.md"
+  },
+  {
+   "d": "2026-01-22",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Expectations for further significant progress in FY26 as a whole are underpinned by Q1's encouraging trading momentum and order intake of £1.75m from a major new customer in the energy sector in North America.",
+   "file": "20260122_HDD_Annual-results-to-30-September-2025.md"
+  },
+  {
+   "d": "2026-02-03",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Accordingly, the Company now anticipates financial performance for FY26 to be ahead of previous expectations.",
+   "file": "20260203_HDD_Significant-New-Order-in-North-America.md"
+  },
+  {
+   "d": "2026-02-26",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 3,
+   "q": "These orders lead the Board to expect a further material improvement in revenues and performance for the current financial year to 30 September 2026 as against previous expectations.",
+   "file": "20260226_HDD_Further-significant-North-American-order-intake.md"
+  },
+  {
+   "d": "2026-03-24",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "In view of continued strong trading and the promising growth opportunities outlined above, the Board believes the Group is well positioned to deliver on its recently upgraded full-year performance expectations.",
+   "file": "20260324_HDD_AGM-Trading-Statement.md"
+  },
+  {
+   "d": "2026-04-28",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 3,
+   "q": "This is additional to the Group's existing forecasts such that the Board now anticipates the Group's revenues and financial performance for FY26 will be materially ahead of its previous expectations.",
+   "file": "20260428_HDD_New-Order-Intake-and-Notice-of-Interim-Results.md"
+  },
+  {
+   "d": "2026-05-21",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The group continues to trade strongly and, supported by recent order intake and actions taken to mitigate input cost pressures, the Board expects Hardide to deliver full year performance in line with its recently upgraded expectations.",
+   "file": "20260521_HDD_Interim-Statement.md"
+  },
+  {
+   "d": "2026-05-27",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 3,
+   "q": "This will have the effect of materially improving revenue and overall financial performance expectations for FY26.",
+   "file": "20260527_HDD_Significant-further-order-intake-North-America.md"
+  },
+  {
+   "d": "2026-07-22",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 3,
+   "q": "As a result, the Board now expects that full year financial performance will be materially ahead of its previous expectations1.",
+   "file": "20260722_HDD_Trading-Update.md"
+  },
+  {
+   "d": "2026-09-14",
+   "doc": "OPS",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "This order is in line with Board’s expectations for FY27, with further orders anticipated, which provides confidence for significant future growth.",
+   "file": "20260914_HDD_New-Order-Intake-for-Second-Generation-Components.md"
+  },
+  {
+   "d": "2026-10-21",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "EBITDA is expected to be £5.8m (FY25: £1.0m) and profit before tax £4.9m (FY25: £0.2m), both ahead of market expectations*, as a result of improved cost management and continuous improvement initiatives.",
+   "file": "20261021_HDD_Year-End-Trading-Update.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-21",
+  "doc": "YE-TU",
+  "file": "20261021_HDD_Year-End-Trading-Update.md",
+  "vs": "YE-TU Oct-25 · prev Jul-26 TU / Sep-26 order · back to Oct-23, Oct-24, Jan-26 FY R, May-26 H1",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Net debt: Oct-25 “The Group's net debt (including leases) at 30 September 2025 was £1.6m” → Oct-26 gives only “Gross cash at 30 September 2026 was £3.2m”, no net debt figure",
+    "span": "Net debt given Oct-25 YE-TU and Jan-26 FY results; absent May-26 H1 and Oct-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Restated",
+    "text": "Cash at 30 Sep 2025: Oct-25 “the cash balance was £0.8m” → Oct-26 “(30 September 2025: £0.7m)”",
+    "span": "£0.8m also stated in Jan-26 FY results and May-26 H1"
+   },
+   {
+    "sev": "grey",
+    "type": "Restated",
+    "text": "Capacity capex: Jul-26 “three new coating reactors and associated infrastructure at a total cost of £4.5m” → Oct-26 “coating reactors with a total expected cost of £3.5m”",
+    "span": "Jul-26 TU → Oct-26 YE-TU; scope wording differs"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Next-year view quantified: Oct-25 FY26 view only “the Board remains confident in the Group's prospects” → Oct-26 “Market expectations for FY27 are for revenue of £18.8m, EBITDA of £8.0m”",
+    "span": "First numeric next-year anchor in a YE-TU (Oct-23, Oct-24, Oct-25 none)"
+   }
+  ]
+ }
+}

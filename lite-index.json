@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20",
+ "updated": "2026-10-21",
  "note": "Drift-lite charts: 5y weekly price + Text/G marks auto-scored from RNS. Built by chart_lite.py.",
  "tickers": [
   {
@@ -730,6 +730,20 @@
    "chart": "lite/GTC.json?v=2026-10-20.1c33",
    "scored": "2026-10-20",
    "marks": 20
+  },
+  {
+   "ticker": "HDD",
+   "company": "Hardide PLC",
+   "chart": "lite/HDD.json?v=2026-10-21.d3a9",
+   "scored": "2026-10-21",
+   "marks": 30
+  },
+  {
+   "ticker": "HERC",
+   "company": "Hercules PLC",
+   "chart": "lite/HERC.json?v=2026-10-21.4583",
+   "scored": "2026-10-21",
+   "marks": 31
   },
   {
    "ticker": "HLMA",
@@ -1710,6 +1724,13 @@
    "chart": "lite/VLX.json?v=2026-10-19.548f",
    "scored": "2026-10-19",
    "marks": 27
+  },
+  {
+   "ticker": "VNET",
+   "company": "Vianet Group PLC",
+   "chart": "lite/VNET.json?v=2026-10-21.5044",
+   "scored": "2026-10-21",
+   "marks": 29
   },
   {
    "ticker": "VP.",
