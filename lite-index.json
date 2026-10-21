@@ -242,6 +242,13 @@
    "marks": 20
   },
   {
+   "ticker": "BEZ",
+   "company": "Beazley PLC",
+   "chart": "lite/BEZ.json?v=2026-10-21.9fa8",
+   "scored": "2026-10-21",
+   "marks": 1
+  },
+  {
    "ticker": "BGO",
    "company": "Bango PLC",
    "chart": "lite/BGO.json?v=2026-10-19.13a9",
@@ -648,6 +655,13 @@
    "marks": 30
   },
   {
+   "ticker": "EAAS",
+   "company": "eEnergy Group PLC",
+   "chart": "lite/EAAS.json?v=2026-10-21.11f6",
+   "scored": "2026-10-21",
+   "marks": 28
+  },
+  {
    "ticker": "EBQ",
    "company": "Ebiquity PLC",
    "chart": "lite/EBQ.json?v=2026-10-19.73fb",
@@ -732,6 +746,13 @@
    "marks": 23
   },
   {
+   "ticker": "FDM",
+   "company": "FDM Group Holdings PLC",
+   "chart": "lite/FDM.json?v=2026-10-21.6548",
+   "scored": "2026-10-21",
+   "marks": 23
+  },
+  {
    "ticker": "FIN",
    "company": "Finseta PLC",
    "chart": "lite/FIN.json?v=2026-10-21.dd8f",
@@ -761,6 +782,13 @@
    "src": "snapshots"
   },
   {
+   "ticker": "FOUR",
+   "company": "4imprint Group PLC",
+   "chart": "lite/FOUR.json?v=2026-10-21.8e79",
+   "scored": "2026-10-21",
+   "marks": 27
+  },
+  {
    "ticker": "FRP",
    "company": "FRP Advisory Group PLC",
    "chart": "lite/FRP.json?v=2026-10-20.5b0b",
@@ -773,6 +801,13 @@
    "chart": "lite/FSJ.json?v=2026-10-20.a5a6",
    "scored": "2026-10-20",
    "marks": 24
+  },
+  {
+   "ticker": "FTC",
+   "company": "Filtronic PLC",
+   "chart": "lite/FTC.json?v=2026-10-21.11a1",
+   "scored": "2026-10-21",
+   "marks": 28
   },
   {
    "ticker": "FUTR",
@@ -880,6 +915,13 @@
    "marks": 29
   },
   {
+   "ticker": "GLEN",
+   "company": "Glencore PLC",
+   "chart": "lite/GLEN.json?v=2026-10-21.eb3f",
+   "scored": "2026-10-21",
+   "marks": 33
+  },
+  {
    "ticker": "GMR",
    "company": "Gaming Realms plc",
    "chart": "lite/GMR.json?v=2026-10-20.4751",
@@ -927,6 +969,14 @@
    "chart": "lite/HDD.json?v=2026-10-21.d3a9",
    "scored": "2026-10-21",
    "marks": 30
+  },
+  {
+   "ticker": "HEAD",
+   "company": "Headlam Group plc",
+   "chart": "lite/HEAD.json?v=2026-10-21.ffd3",
+   "scored": "2026-10-21",
+   "marks": 5,
+   "src": "snapshots"
   },
   {
    "ticker": "HERC",
@@ -999,6 +1049,20 @@
    "marks": 24
   },
   {
+   "ticker": "IAG",
+   "company": "International Consolidated Airlines Grp",
+   "chart": "lite/IAG.json?v=2026-10-21.b490",
+   "scored": "2026-10-21",
+   "marks": 21
+  },
+  {
+   "ticker": "IBST",
+   "company": "Ibstock PLC",
+   "chart": "lite/IBST.json?v=2026-10-21.642a",
+   "scored": "2026-10-21",
+   "marks": 26
+  },
+  {
    "ticker": "IDHC",
    "company": "Integrated Diagnostics Holdings plc",
    "chart": "lite/IDHC.json?v=2026-10-20.ee2f",
@@ -1032,6 +1096,13 @@
    "chart": "lite/IMB.json?v=2026-10-19.7b44",
    "scored": "2026-10-19",
    "marks": 21
+  },
+  {
+   "ticker": "IMI",
+   "company": "IMI plc",
+   "chart": "lite/IMI.json?v=2026-10-21.941c",
+   "scored": "2026-10-21",
+   "marks": 20
   },
   {
    "ticker": "INF",
@@ -1074,6 +1145,13 @@
    "chart": "lite/ITM.json?v=2026-10-19.ff7f",
    "scored": "2026-10-19",
    "marks": 25
+  },
+  {
+   "ticker": "ITRK",
+   "company": "Intertek Group PLC",
+   "chart": "lite/ITRK.json?v=2026-10-21.57d0",
+   "scored": "2026-10-21",
+   "marks": 1
   },
   {
    "ticker": "IWG",
@@ -1158,6 +1236,13 @@
    "chart": "lite/KIST.json?v=2026-10-19.0984",
    "scored": "2026-10-19",
    "marks": 23
+  },
+  {
+   "ticker": "KLR",
+   "company": "Keller Group PLC",
+   "chart": "lite/KLR.json?v=2026-10-21.7322",
+   "scored": "2026-10-21",
+   "marks": 25
   },
   {
    "ticker": "KNOS",
@@ -1344,6 +1429,13 @@
    "chart": "lite/MRK.json?v=2026-10-19.c9ec",
    "scored": "2026-10-19",
    "marks": 25
+  },
+  {
+   "ticker": "MRO",
+   "company": "Melrose Industries PLC",
+   "chart": "lite/MRO.json?v=2026-10-21.de74",
+   "scored": "2026-10-21",
+   "marks": 22
   },
   {
    "ticker": "MSLH",
@@ -1640,11 +1732,25 @@
    "marks": 11
   },
   {
+   "ticker": "RHIM",
+   "company": "RHI Magnesita N.V.",
+   "chart": "lite/RHIM.json?v=2026-10-21.7fa2",
+   "scored": "2026-10-21",
+   "marks": 23
+  },
+  {
    "ticker": "RIO",
    "company": "Rio Tinto PLC",
    "chart": "lite/RIO.json?v=2026-10-18.7bc1",
    "scored": "2026-10-18",
    "marks": 35
+  },
+  {
+   "ticker": "RMV",
+   "company": "Rightmove PLC",
+   "chart": "lite/RMV.json?v=2026-10-21.141c",
+   "scored": "2026-10-21",
+   "marks": 17
   },
   {
    "ticker": "RNK",
@@ -1753,6 +1859,13 @@
    "src": "snapshots"
   },
   {
+   "ticker": "SFOR",
+   "company": "S4 Capital PLC",
+   "chart": "lite/SFOR.json?v=2026-10-21.2ead",
+   "scored": "2026-10-21",
+   "marks": 36
+  },
+  {
    "ticker": "SHOE",
    "company": "Shoe Zone PLC",
    "chart": "lite/SHOE.json?v=2026-10-21.0b1f",
@@ -1787,6 +1900,13 @@
    "chart": "lite/SMWH.json?v=2026-10-20.a938",
    "scored": "2026-10-20",
    "marks": 30
+  },
+  {
+   "ticker": "SN.",
+   "company": "Smith & Nephew PLC",
+   "chart": "lite/SN.json?v=2026-10-21.8f3a",
+   "scored": "2026-10-21",
+   "marks": 21
   },
   {
    "ticker": "SNWS",
@@ -1892,6 +2012,13 @@
    "chart": "lite/SUS.json?v=2026-10-19.c649",
    "scored": "2026-10-19",
    "marks": 32
+  },
+  {
+   "ticker": "SYNT",
+   "company": "Synthomer PLC",
+   "chart": "lite/SYNT.json?v=2026-10-21.d35a",
+   "scored": "2026-10-21",
+   "marks": 29
   },
   {
    "ticker": "SYS",
@@ -2218,6 +2345,13 @@
    "src": "snapshots"
   },
   {
+   "ticker": "WPP",
+   "company": "WPP plc",
+   "chart": "lite/WPP.json?v=2026-10-21.3151",
+   "scored": "2026-10-21",
+   "marks": 21
+  },
+  {
    "ticker": "WRKS",
    "company": "TheWorks.co.uk PLC",
    "chart": "lite/WRKS.json?v=2026-10-21.e6e2",
@@ -2272,6 +2406,13 @@
    "chart": "lite/ZOO.json?v=2026-10-19.228c",
    "scored": "2026-10-19",
    "marks": 26
+  },
+  {
+   "ticker": "ZTF",
+   "company": "Zotefoams PLC",
+   "chart": "lite/ZTF.json?v=2026-10-21.6583",
+   "scored": "2026-10-21",
+   "marks": 29
   }
  ]
 }

@@ -1,0 +1,222 @@
+{
+ "ticker": "HEAD",
+ "v": "2026-10-21.ffd3",
+ "ccy": "GBX",
+ "src": "ShareScope weekly snapshots",
+ "adj": [],
+ "px": [
+  [
+   "2026-03-03",
+   42.0
+  ],
+  [
+   "2026-03-06",
+   41.5
+  ],
+  [
+   "2026-03-13",
+   43.6
+  ],
+  [
+   "2026-03-20",
+   43.7
+  ],
+  [
+   "2026-03-27",
+   42.5
+  ],
+  [
+   "2026-04-03",
+   34.0
+  ],
+  [
+   "2026-04-10",
+   30.9
+  ],
+  [
+   "2026-04-17",
+   30.2
+  ],
+  [
+   "2026-04-24",
+   29.7
+  ],
+  [
+   "2026-05-08",
+   45.7
+  ],
+  [
+   "2026-05-15",
+   46.4
+  ],
+  [
+   "2026-05-22",
+   37.0
+  ],
+  [
+   "2026-06-02",
+   32.9
+  ],
+  [
+   "2026-06-05",
+   29.0
+  ],
+  [
+   "2026-06-12",
+   25.1
+  ],
+  [
+   "2026-06-19",
+   20.9
+  ],
+  [
+   "2026-06-26",
+   18.8
+  ],
+  [
+   "2026-07-03",
+   20.1
+  ],
+  [
+   "2026-07-10",
+   18.9
+  ],
+  [
+   "2026-07-17",
+   11.6
+  ],
+  [
+   "2026-07-24",
+   6.04
+  ],
+  [
+   "2026-07-31",
+   5.62
+  ],
+  [
+   "2026-08-07",
+   11.45
+  ],
+  [
+   "2026-08-14",
+   10.3
+  ],
+  [
+   "2026-08-21",
+   7.9
+  ],
+  [
+   "2026-08-28",
+   9.32
+  ],
+  [
+   "2026-09-07",
+   10.5
+  ],
+  [
+   "2026-09-11",
+   10.5
+  ],
+  [
+   "2026-09-18",
+   10.5
+  ],
+  [
+   "2026-09-25",
+   10.5
+  ],
+  [
+   "2026-10-02",
+   10.5
+  ],
+  [
+   "2026-10-09",
+   10.5
+  ],
+  [
+   "2026-10-16",
+   10.5
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2026-03-25",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "From a profit perspective, this translates to our expectations that our transformation plan will create a return to profitability in 2027 and then a return to historic midsingle-digit operating profit margin levels thereafter from the annualised positive benefit of these initiatives.",
+   "file": "20260325_HEAD_Full-Year-Results.md"
+  },
+  {
+   "d": "2026-05-20",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -2,
+   "q": "As previously anticipated, the Group has continued to experience challenging trading throughout the Period and revenue for the Group's continuing operations was 21% lower Year on Year.",
+   "file": "20260520_HEAD_Trading-Update.md"
+  },
+  {
+   "d": "2026-07-14",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "CUT",
+   "s": -3,
+   "q": "With a strengthened balance sheet, the Board believes it would be able to alleviate the current liquidity issues that are negatively impacting its ability to trade effectively and allow time to accelerate the transformation programme with the aim of returning Headlam to a profitable and cash generative business as quickly as possible.",
+   "file": "20260714_HEAD_Trading-Update-and-Strategic-Review.md",
+   "gnote": "withdrawn"
+  },
+  {
+   "d": "2026-07-31",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "Trading continues to be challenging, although revenue throughout July 2026, to date, has been ahead of the performance seen in June 2026 by circa +3.5%.",
+   "file": "20260731_HEAD_Update-on-Strategic-Review-Progress-and-Trading.md"
+  },
+  {
+   "d": "2026-09-30",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -2,
+   "q": "The Company announces that, as a result of its ongoing administration process, the Company will not be in a position to publish its half year financial results for the period 1 January 2026 to 30 June 2026 (inclusive) by 30 September 2026",
+   "file": "20260930_HEAD_Delay-to-publication-of-half-year-report.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-30",
+  "doc": "H1 R",
+  "file": "20260930_HEAD_Delay-to-publication-of-half-year-report.md",
+  "vs": "H1 R Sep-25 · TU Jul-26 · FY R Mar-26 · TU May-26",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Target dropped",
+    "text": "Mar-26: “The Board therefore continues to have confidence in a return to profitability in 2027 as previously guided.” → Jul-26 only “returning Headlam to a profitable and cash generative business as quickly as possible” → now no profit view at all",
+    "span": "2027 profitability given Nov-25, Mar-26, May-26 → gone from Jul-26"
+   },
+   {
+    "sev": "red",
+    "type": "Pushed out",
+    "text": "Jul-26: “ahead of announcing half year results currently planned to be released in September 2026” → now the Company “will not be in a position to publish its half year financial results” by the DTR deadline",
+    "span": "H1 results published 16 Sep 2025 → none for H1-26"
+   },
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "Jul-26: “At this stage there can be no certainty that the Group will be successful in implementing any of these options” → now “as a result of its ongoing administration process”",
+    "span": "Strategic review Jul-26 → administration Sep-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Net debt was quantified at each trading update (May-26 “The Group's net debt at the end of the Period was £(40.3)m”, Jul-26 £(36.2)m) → no balance sheet figure now",
+    "span": "Given Mar-26, May-26, Jul-26"
+   }
+  ]
+ }
+}

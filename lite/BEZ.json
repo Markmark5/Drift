@@ -1,0 +1,77 @@
+{
+ "ticker": "BEZ",
+ "v": "2026-10-21.9fa8",
+ "ccy": "GBX",
+ "src": "Yahoo BEZ.L weekly",
+ "adj": [],
+ "px": [
+  [
+   "2026-07-17",
+   1287.5
+  ],
+  [
+   "2026-07-24",
+   1293.0
+  ],
+  [
+   "2026-07-31",
+   1290.5
+  ],
+  [
+   "2026-08-07",
+   1290.5
+  ],
+  [
+   "2026-08-14",
+   1292.5
+  ],
+  [
+   "2026-08-21",
+   1296.0
+  ],
+  [
+   "2026-08-28",
+   1297.0
+  ],
+  [
+   "2026-09-04",
+   1301.5
+  ],
+  [
+   "2026-09-11",
+   1304.0
+  ],
+  [
+   "2026-09-18",
+   1305.0
+  ],
+  [
+   "2026-09-25",
+   1306.0
+  ],
+  [
+   "2026-10-02",
+   1308.5
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2026-08-05",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -2,
+   "q": "As a result, while our incurred attritional claims have been better than expected, the first half of 2026 has seen a return to an active large loss environment, compared to the more benign experience seen in recent years.",
+   "file": "20260805_BEZ_Beazley-plc-results-for-period-ended-30-June-2026.md",
+   "gnote": "discounted: Zurich offer"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-14",
+  "doc": "Offer update",
+  "file": "20260914_BEZ_Update-on-Conditions-and-Timetable.md",
+  "vs": "H1 R Aug-26 · no earlier document of this type",
+  "lines": []
+ }
+}
