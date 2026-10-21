@@ -116,6 +116,13 @@
    "marks": 11
   },
   {
+   "ticker": "AML",
+   "company": "Aston Martin Lagonda Global Holdings PLC",
+   "chart": "lite/AML.json?v=2026-10-21.0f17",
+   "scored": "2026-10-21",
+   "marks": 26
+  },
+  {
    "ticker": "ANG",
    "company": "Angling Direct PLC",
    "chart": "lite/ANG.json?v=2026-10-19.b426",
@@ -163,6 +170,13 @@
    "chart": "lite/APTD.json?v=2026-10-20.a52d",
    "scored": "2026-10-20",
    "marks": 24
+  },
+  {
+   "ticker": "ASAI",
+   "company": "ASA International Group PLC",
+   "chart": "lite/ASAI.json?v=2026-10-21.90f6",
+   "scored": "2026-10-21",
+   "marks": 20
   },
   {
    "ticker": "ASC",
@@ -319,6 +333,13 @@
    "marks": 21
   },
   {
+   "ticker": "BOY",
+   "company": "Bodycote PLC",
+   "chart": "lite/BOY.json?v=2026-10-21.9c42",
+   "scored": "2026-10-21",
+   "marks": 21
+  },
+  {
    "ticker": "BP.",
    "company": "BP PLC",
    "chart": "lite/BP.json?v=2026-10-20.3b57",
@@ -380,6 +401,13 @@
    "chart": "lite/BYIT.json?v=2026-10-18.5bb6",
    "scored": "2026-10-18",
    "marks": 27
+  },
+  {
+   "ticker": "CAN",
+   "company": "Canal+ S.A.",
+   "chart": "lite/CAN.json?v=2026-10-21.6326",
+   "scored": "2026-10-21",
+   "marks": 8
   },
   {
    "ticker": "CAPD",
@@ -522,6 +550,13 @@
    "marks": 24
   },
   {
+   "ticker": "COA",
+   "company": "Coats Group PLC",
+   "chart": "lite/COA.json?v=2026-10-21.7996",
+   "scored": "2026-10-21",
+   "marks": 21
+  },
+  {
    "ticker": "CODE",
    "company": "Northcoders Group PLC",
    "chart": "lite/CODE.json?v=2026-10-19.f1e4",
@@ -541,6 +576,13 @@
    "chart": "lite/COST.json?v=2026-10-21.f973",
    "scored": "2026-10-21",
    "marks": 22
+  },
+  {
+   "ticker": "CRDA",
+   "company": "Croda International PLC",
+   "chart": "lite/CRDA.json?v=2026-10-21.73a4",
+   "scored": "2026-10-21",
+   "marks": 19
   },
   {
    "ticker": "CRPR",
@@ -648,6 +690,13 @@
    "marks": 17
   },
   {
+   "ticker": "DOTD",
+   "company": "Dotdigital Group PLC",
+   "chart": "lite/DOTD.json?v=2026-10-21.881f",
+   "scored": "2026-10-21",
+   "marks": 21
+  },
+  {
    "ticker": "DSCV",
    "company": "discoverIE Group plc",
    "chart": "lite/DSCV.json?v=2026-10-19.6a87",
@@ -681,6 +730,13 @@
    "chart": "lite/ELIX.json?v=2026-10-20.7e15",
    "scored": "2026-10-20",
    "marks": 19
+  },
+  {
+   "ticker": "ELM",
+   "company": "Elementis PLC",
+   "chart": "lite/ELM.json?v=2026-10-21.b6cd",
+   "scored": "2026-10-21",
+   "marks": 26
   },
   {
    "ticker": "EMG",
@@ -782,9 +838,23 @@
    "src": "snapshots"
   },
   {
+   "ticker": "FORT",
+   "company": "Forterra PLC",
+   "chart": "lite/FORT.json?v=2026-10-21.d21f",
+   "scored": "2026-10-21",
+   "marks": 26
+  },
+  {
    "ticker": "FOUR",
    "company": "4imprint Group PLC",
    "chart": "lite/FOUR.json?v=2026-10-21.8e79",
+   "scored": "2026-10-21",
+   "marks": 27
+  },
+  {
+   "ticker": "FRAN",
+   "company": "Franchise Brands PLC",
+   "chart": "lite/FRAN.json?v=2026-10-21.3098",
    "scored": "2026-10-21",
    "marks": 27
   },
@@ -843,6 +913,13 @@
    "chart": "lite/GATC.json?v=2026-10-19.2ddb",
    "scored": "2026-10-19",
    "marks": 22
+  },
+  {
+   "ticker": "GAW",
+   "company": "Games Workshop Group PLC",
+   "chart": "lite/GAW.json?v=2026-10-21.1d77",
+   "scored": "2026-10-21",
+   "marks": 23
   },
   {
    "ticker": "GBG",
@@ -950,6 +1027,13 @@
    "marks": 9
   },
   {
+   "ticker": "GRG",
+   "company": "Greggs PLC",
+   "chart": "lite/GRG.json?v=2026-10-21.3873",
+   "scored": "2026-10-21",
+   "marks": 26
+  },
+  {
    "ticker": "GTC",
    "company": "GETECH Group PLC",
    "chart": "lite/GTC.json?v=2026-10-20.1c33",
@@ -1019,6 +1103,13 @@
    "chart": "lite/HLMA.json?v=2026-10-20.e0cd",
    "scored": "2026-10-20",
    "marks": 20
+  },
+  {
+   "ticker": "HSP",
+   "company": "Hargreaves Services plc",
+   "chart": "lite/HSP.json?v=2026-10-21.ed9e",
+   "scored": "2026-10-21",
+   "marks": 34
   },
   {
    "ticker": "HSW",
@@ -1501,6 +1592,13 @@
    "marks": 19
   },
   {
+   "ticker": "NICL",
+   "company": "Nichols PLC",
+   "chart": "lite/NICL.json?v=2026-10-21.0688",
+   "scored": "2026-10-21",
+   "marks": 22
+  },
+  {
    "ticker": "NIOX",
    "company": "Niox Group PLC",
    "chart": "lite/NIOX.json?v=2026-10-19.cdcb",
@@ -1562,6 +1660,13 @@
    "chart": "lite/PAGE.json?v=2026-10-19.4e47",
    "scored": "2026-10-19",
    "marks": 31
+  },
+  {
+   "ticker": "PAY",
+   "company": "PayPoint plc",
+   "chart": "lite/PAY.json?v=2026-10-21.93bb",
+   "scored": "2026-10-21",
+   "marks": 29
   },
   {
    "ticker": "PBEE",
@@ -1781,6 +1886,20 @@
    "marks": 8
   },
   {
+   "ticker": "RR.",
+   "company": "Rolls-Royce Holdings PLC",
+   "chart": "lite/RR.json?v=2026-10-21.106c",
+   "scored": "2026-10-21",
+   "marks": 20
+  },
+  {
+   "ticker": "RST",
+   "company": "Restore plc",
+   "chart": "lite/RST.json?v=2026-10-21.2936",
+   "scored": "2026-10-21",
+   "marks": 25
+  },
+  {
    "ticker": "RSW",
    "company": "Renishaw PLC",
    "chart": "lite/RSW.json?v=2026-10-20.2cf9",
@@ -1864,6 +1983,13 @@
    "chart": "lite/SFOR.json?v=2026-10-21.2ead",
    "scored": "2026-10-21",
    "marks": 36
+  },
+  {
+   "ticker": "SFR",
+   "company": "Severfield PLC",
+   "chart": "lite/SFR.json?v=2026-10-21.d579",
+   "scored": "2026-10-21",
+   "marks": 22
   },
   {
    "ticker": "SHOE",
@@ -2225,6 +2351,13 @@
    "marks": 26
   },
   {
+   "ticker": "TW.",
+   "company": "Taylor Wimpey plc",
+   "chart": "lite/TW.json?v=2026-10-21.6371",
+   "scored": "2026-10-21",
+   "marks": 26
+  },
+  {
    "ticker": "ULTP",
    "company": "Ultimate Products PLC",
    "chart": "lite/ULTP.json?v=2026-10-21.6899",
@@ -2293,6 +2426,13 @@
    "chart": "lite/WATR.json?v=2026-10-19.185a",
    "scored": "2026-10-19",
    "marks": 24
+  },
+  {
+   "ticker": "WEIR",
+   "company": "Weir Group PLC",
+   "chart": "lite/WEIR.json?v=2026-10-21.375c",
+   "scored": "2026-10-21",
+   "marks": 20
   },
   {
    "ticker": "WIL",

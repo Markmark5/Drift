@@ -1,0 +1,1355 @@
+{
+ "ticker": "PAY",
+ "v": "2026-10-21.93bb",
+ "ccy": "GBX",
+ "src": "Yahoo PAY.L weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-22",
+   781.0833
+  ],
+  [
+   "2021-10-29",
+   747.4999
+  ],
+  [
+   "2021-11-05",
+   774.5833
+  ],
+  [
+   "2021-11-12",
+   740.9999
+  ],
+  [
+   "2021-11-19",
+   706.3333
+  ],
+  [
+   "2021-11-26",
+   684.6666
+  ],
+  [
+   "2021-12-03",
+   661.9166
+  ],
+  [
+   "2021-12-10",
+   683.5833
+  ],
+  [
+   "2021-12-17",
+   655.4166
+  ],
+  [
+   "2021-12-24",
+   682.4999
+  ],
+  [
+   "2021-12-31",
+   720.4166
+  ],
+  [
+   "2022-01-07",
+   720.4166
+  ],
+  [
+   "2022-01-14",
+   743.1666
+  ],
+  [
+   "2022-01-21",
+   748.5833
+  ],
+  [
+   "2022-01-28",
+   712.8333
+  ],
+  [
+   "2022-02-04",
+   699.8333
+  ],
+  [
+   "2022-02-11",
+   723.6666
+  ],
+  [
+   "2022-02-18",
+   670.5833
+  ],
+  [
+   "2022-02-25",
+   667.3333
+  ],
+  [
+   "2022-03-04",
+   595.8333
+  ],
+  [
+   "2022-03-11",
+   595.8333
+  ],
+  [
+   "2022-03-18",
+   645.6666
+  ],
+  [
+   "2022-03-25",
+   644.5833
+  ],
+  [
+   "2022-04-01",
+   635.9166
+  ],
+  [
+   "2022-04-08",
+   632.6666
+  ],
+  [
+   "2022-04-15",
+   631.5833
+  ],
+  [
+   "2022-04-22",
+   625.0833
+  ],
+  [
+   "2022-04-29",
+   627.2499
+  ],
+  [
+   "2022-05-06",
+   621.8333
+  ],
+  [
+   "2022-05-13",
+   627.2499
+  ],
+  [
+   "2022-05-20",
+   622.9166
+  ],
+  [
+   "2022-05-27",
+   621.8333
+  ],
+  [
+   "2022-06-03",
+   628.3333
+  ],
+  [
+   "2022-06-10",
+   617.4999
+  ],
+  [
+   "2022-06-17",
+   649.9999
+  ],
+  [
+   "2022-06-24",
+   622.9166
+  ],
+  [
+   "2022-07-01",
+   608.8333
+  ],
+  [
+   "2022-07-08",
+   628.3333
+  ],
+  [
+   "2022-07-15",
+   636.9999
+  ],
+  [
+   "2022-07-22",
+   642.4166
+  ],
+  [
+   "2022-07-29",
+   649.9999
+  ],
+  [
+   "2022-08-05",
+   649.9999
+  ],
+  [
+   "2022-08-12",
+   645.6666
+  ],
+  [
+   "2022-08-19",
+   706.3333
+  ],
+  [
+   "2022-08-26",
+   694.4166
+  ],
+  [
+   "2022-09-02",
+   678.1666
+  ],
+  [
+   "2022-09-09",
+   659.7499
+  ],
+  [
+   "2022-09-16",
+   655.4166
+  ],
+  [
+   "2022-09-23",
+   653.2499
+  ],
+  [
+   "2022-09-30",
+   649.9999
+  ],
+  [
+   "2022-10-07",
+   633.7499
+  ],
+  [
+   "2022-10-14",
+   632.6666
+  ],
+  [
+   "2022-10-21",
+   622.9166
+  ],
+  [
+   "2022-10-28",
+   619.6666
+  ],
+  [
+   "2022-11-04",
+   628.3333
+  ],
+  [
+   "2022-11-11",
+   592.5833
+  ],
+  [
+   "2022-11-18",
+   587.1666
+  ],
+  [
+   "2022-11-25",
+   583.9166
+  ],
+  [
+   "2022-12-02",
+   575.2499
+  ],
+  [
+   "2022-12-09",
+   552.4999
+  ],
+  [
+   "2022-12-16",
+   523.2499
+  ],
+  [
+   "2022-12-23",
+   538.9583
+  ],
+  [
+   "2022-12-30",
+   552.4999
+  ],
+  [
+   "2023-01-06",
+   551.4166
+  ],
+  [
+   "2023-01-13",
+   549.2499
+  ],
+  [
+   "2023-01-20",
+   579.5833
+  ],
+  [
+   "2023-01-27",
+   560.0833
+  ],
+  [
+   "2023-02-03",
+   541.6666
+  ],
+  [
+   "2023-02-10",
+   536.2499
+  ],
+  [
+   "2023-02-17",
+   533.5416
+  ],
+  [
+   "2023-02-24",
+   530.8333
+  ],
+  [
+   "2023-03-03",
+   537.3333
+  ],
+  [
+   "2023-03-10",
+   519.9999
+  ],
+  [
+   "2023-03-17",
+   501.5833
+  ],
+  [
+   "2023-03-24",
+   505.9166
+  ],
+  [
+   "2023-03-31",
+   492.9166
+  ],
+  [
+   "2023-04-07",
+   496.1666
+  ],
+  [
+   "2023-04-14",
+   489.6666
+  ],
+  [
+   "2023-04-21",
+   501.5833
+  ],
+  [
+   "2023-04-28",
+   476.1249
+  ],
+  [
+   "2023-05-05",
+   476.1249
+  ],
+  [
+   "2023-05-12",
+   463.1249
+  ],
+  [
+   "2023-05-19",
+   457.1666
+  ],
+  [
+   "2023-05-26",
+   426.2916
+  ],
+  [
+   "2023-06-02",
+   435.4999
+  ],
+  [
+   "2023-06-09",
+   470.1666
+  ],
+  [
+   "2023-06-16",
+   490.2083
+  ],
+  [
+   "2023-06-23",
+   488.5833
+  ],
+  [
+   "2023-06-30",
+   522.7083
+  ],
+  [
+   "2023-07-07",
+   476.1249
+  ],
+  [
+   "2023-07-14",
+   490.7499
+  ],
+  [
+   "2023-07-21",
+   484.7916
+  ],
+  [
+   "2023-07-28",
+   529.7499
+  ],
+  [
+   "2023-08-04",
+   581.7499
+  ],
+  [
+   "2023-08-11",
+   595.8333
+  ],
+  [
+   "2023-08-18",
+   588.2499
+  ],
+  [
+   "2023-08-25",
+   592.5833
+  ],
+  [
+   "2023-09-01",
+   600.1666
+  ],
+  [
+   "2023-09-08",
+   610.9999
+  ],
+  [
+   "2023-09-15",
+   601.2499
+  ],
+  [
+   "2023-09-22",
+   596.9166
+  ],
+  [
+   "2023-09-29",
+   566.5833
+  ],
+  [
+   "2023-10-06",
+   547.0833
+  ],
+  [
+   "2023-10-13",
+   574.1666
+  ],
+  [
+   "2023-10-20",
+   555.7499
+  ],
+  [
+   "2023-10-27",
+   558.9999
+  ],
+  [
+   "2023-11-03",
+   604.4999
+  ],
+  [
+   "2023-11-10",
+   603.4166
+  ],
+  [
+   "2023-11-17",
+   580.6666
+  ],
+  [
+   "2023-11-24",
+   552.4999
+  ],
+  [
+   "2023-12-01",
+   502.6666
+  ],
+  [
+   "2023-12-08",
+   502.1249
+  ],
+  [
+   "2023-12-15",
+   525.4166
+  ],
+  [
+   "2023-12-22",
+   552.4999
+  ],
+  [
+   "2023-12-29",
+   563.3333
+  ],
+  [
+   "2024-01-05",
+   562.2499
+  ],
+  [
+   "2024-01-12",
+   557.9166
+  ],
+  [
+   "2024-01-19",
+   558.9999
+  ],
+  [
+   "2024-01-26",
+   580.6666
+  ],
+  [
+   "2024-02-02",
+   566.5833
+  ],
+  [
+   "2024-02-09",
+   551.4166
+  ],
+  [
+   "2024-02-16",
+   544.9166
+  ],
+  [
+   "2024-02-23",
+   543.8333
+  ],
+  [
+   "2024-03-01",
+   535.1666
+  ],
+  [
+   "2024-03-08",
+   531.9166
+  ],
+  [
+   "2024-03-15",
+   525.4166
+  ],
+  [
+   "2024-03-22",
+   521.0833
+  ],
+  [
+   "2024-03-29",
+   526.4999
+  ],
+  [
+   "2024-04-05",
+   517.2916
+  ],
+  [
+   "2024-04-12",
+   525.4166
+  ],
+  [
+   "2024-04-19",
+   526.4999
+  ],
+  [
+   "2024-04-26",
+   555.7499
+  ],
+  [
+   "2024-05-03",
+   593.6666
+  ],
+  [
+   "2024-05-10",
+   589.3333
+  ],
+  [
+   "2024-05-17",
+   577.4166
+  ],
+  [
+   "2024-05-24",
+   592.5833
+  ],
+  [
+   "2024-05-31",
+   594.7499
+  ],
+  [
+   "2024-06-07",
+   610.9999
+  ],
+  [
+   "2024-06-14",
+   664.0833
+  ],
+  [
+   "2024-06-21",
+   688.9999
+  ],
+  [
+   "2024-06-28",
+   688.9999
+  ],
+  [
+   "2024-07-05",
+   671.6666
+  ],
+  [
+   "2024-07-12",
+   701.9999
+  ],
+  [
+   "2024-07-19",
+   717.1666
+  ],
+  [
+   "2024-07-26",
+   745.3333
+  ],
+  [
+   "2024-08-02",
+   727.9999
+  ],
+  [
+   "2024-08-09",
+   760.4999
+  ],
+  [
+   "2024-08-16",
+   763.7499
+  ],
+  [
+   "2024-08-23",
+   758.3333
+  ],
+  [
+   "2024-08-30",
+   744.2499
+  ],
+  [
+   "2024-09-06",
+   712.8333
+  ],
+  [
+   "2024-09-13",
+   727.9999
+  ],
+  [
+   "2024-09-20",
+   736.6666
+  ],
+  [
+   "2024-09-27",
+   744.2499
+  ],
+  [
+   "2024-10-04",
+   731.2499
+  ],
+  [
+   "2024-10-11",
+   734.4999
+  ],
+  [
+   "2024-10-18",
+   796.2499
+  ],
+  [
+   "2024-10-25",
+   831.9999
+  ],
+  [
+   "2024-11-01",
+   848.2499
+  ],
+  [
+   "2024-11-08",
+   876.4166
+  ],
+  [
+   "2024-11-15",
+   883.9999
+  ],
+  [
+   "2024-11-22",
+   877.4999
+  ],
+  [
+   "2024-11-29",
+   888.3333
+  ],
+  [
+   "2024-12-06",
+   880.7499
+  ],
+  [
+   "2024-12-13",
+   857.9999
+  ],
+  [
+   "2024-12-20",
+   825.4999
+  ],
+  [
+   "2024-12-27",
+   828.7499
+  ],
+  [
+   "2025-01-03",
+   849.3333
+  ],
+  [
+   "2025-01-10",
+   753.9999
+  ],
+  [
+   "2025-01-17",
+   756.1666
+  ],
+  [
+   "2025-01-24",
+   738.8333
+  ],
+  [
+   "2025-01-31",
+   770.2499
+  ],
+  [
+   "2025-02-07",
+   747.4999
+  ],
+  [
+   "2025-02-14",
+   723.6666
+  ],
+  [
+   "2025-02-21",
+   729.0833
+  ],
+  [
+   "2025-02-28",
+   692.2499
+  ],
+  [
+   "2025-03-07",
+   677.0833
+  ],
+  [
+   "2025-03-14",
+   673.8333
+  ],
+  [
+   "2025-03-21",
+   679.2499
+  ],
+  [
+   "2025-03-28",
+   687.9166
+  ],
+  [
+   "2025-04-04",
+   659.7499
+  ],
+  [
+   "2025-04-11",
+   667.3333
+  ],
+  [
+   "2025-04-18",
+   709.5833
+  ],
+  [
+   "2025-04-25",
+   723.6666
+  ],
+  [
+   "2025-05-02",
+   736.6666
+  ],
+  [
+   "2025-05-09",
+   737.7499
+  ],
+  [
+   "2025-05-16",
+   756.1666
+  ],
+  [
+   "2025-05-23",
+   732.3333
+  ],
+  [
+   "2025-05-30",
+   770.2499
+  ],
+  [
+   "2025-06-06",
+   803.8333
+  ],
+  [
+   "2025-06-13",
+   872.0833
+  ],
+  [
+   "2025-06-20",
+   895.9166
+  ],
+  [
+   "2025-06-27",
+   921.9166
+  ],
+  [
+   "2025-07-04",
+   888.3333
+  ],
+  [
+   "2025-07-11",
+   892.6666
+  ],
+  [
+   "2025-07-18",
+   828.7499
+  ],
+  [
+   "2025-07-25",
+   802.7499
+  ],
+  [
+   "2025-08-01",
+   787.5833
+  ],
+  [
+   "2025-08-08",
+   790.8333
+  ],
+  [
+   "2025-08-15",
+   810.3333
+  ],
+  [
+   "2025-08-22",
+   791.9166
+  ],
+  [
+   "2025-08-29",
+   772.4166
+  ],
+  [
+   "2025-09-05",
+   746.4166
+  ],
+  [
+   "2025-09-12",
+   725.8333
+  ],
+  [
+   "2025-09-19",
+   716.0833
+  ],
+  [
+   "2025-09-26",
+   723.6666
+  ],
+  [
+   "2025-10-03",
+   816.8333
+  ],
+  [
+   "2025-10-10",
+   814.6666
+  ],
+  [
+   "2025-10-17",
+   792.9999
+  ],
+  [
+   "2025-10-24",
+   723.0
+  ],
+  [
+   "2025-10-31",
+   697.0
+  ],
+  [
+   "2025-11-07",
+   687.0
+  ],
+  [
+   "2025-11-14",
+   656.0
+  ],
+  [
+   "2025-11-21",
+   501.0
+  ],
+  [
+   "2025-11-28",
+   488.5
+  ],
+  [
+   "2025-12-05",
+   438.5
+  ],
+  [
+   "2025-12-12",
+   457.0
+  ],
+  [
+   "2025-12-19",
+   468.5
+  ],
+  [
+   "2025-12-26",
+   470.0
+  ],
+  [
+   "2026-01-02",
+   460.0
+  ],
+  [
+   "2026-01-09",
+   460.5
+  ],
+  [
+   "2026-01-16",
+   489.0
+  ],
+  [
+   "2026-01-23",
+   516.0
+  ],
+  [
+   "2026-01-30",
+   533.0
+  ],
+  [
+   "2026-02-06",
+   544.0
+  ],
+  [
+   "2026-02-13",
+   548.0
+  ],
+  [
+   "2026-02-20",
+   563.0
+  ],
+  [
+   "2026-02-27",
+   592.0
+  ],
+  [
+   "2026-03-06",
+   590.0
+  ],
+  [
+   "2026-03-13",
+   550.0
+  ],
+  [
+   "2026-03-20",
+   545.0
+  ],
+  [
+   "2026-03-27",
+   559.0
+  ],
+  [
+   "2026-04-03",
+   581.0
+  ],
+  [
+   "2026-04-10",
+   594.0
+  ],
+  [
+   "2026-04-17",
+   646.0
+  ],
+  [
+   "2026-04-24",
+   625.0
+  ],
+  [
+   "2026-05-01",
+   628.0
+  ],
+  [
+   "2026-05-08",
+   605.0
+  ],
+  [
+   "2026-05-15",
+   585.0
+  ],
+  [
+   "2026-05-22",
+   586.0
+  ],
+  [
+   "2026-05-29",
+   577.0
+  ],
+  [
+   "2026-06-05",
+   549.0
+  ],
+  [
+   "2026-06-12",
+   583.5
+  ],
+  [
+   "2026-06-19",
+   571.0
+  ],
+  [
+   "2026-06-26",
+   587.5
+  ],
+  [
+   "2026-07-03",
+   587.5
+  ],
+  [
+   "2026-07-10",
+   585.5
+  ],
+  [
+   "2026-07-17",
+   621.0
+  ],
+  [
+   "2026-07-24",
+   612.5
+  ],
+  [
+   "2026-07-31",
+   617.0
+  ],
+  [
+   "2026-08-07",
+   600.5
+  ],
+  [
+   "2026-08-14",
+   608.5
+  ],
+  [
+   "2026-08-21",
+   628.0
+  ],
+  [
+   "2026-08-28",
+   632.0
+  ],
+  [
+   "2026-09-04",
+   615.0
+  ],
+  [
+   "2026-09-11",
+   601.0
+  ],
+  [
+   "2026-09-18",
+   621.5
+  ],
+  [
+   "2026-09-25",
+   632.0
+  ],
+  [
+   "2026-10-02",
+   635.0
+  ],
+  [
+   "2026-10-09",
+   663.5
+  ],
+  [
+   "2026-10-16",
+   719.5
+  ],
+  [
+   "2026-10-21",
+   722.5
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-11-25",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Overall, the Board’s expectations for the full year remain unchanged.",
+   "file": "20211125_PAY_Results-for-the-half-year-ended-30-September-2021.md"
+  },
+  {
+   "d": "2022-01-20",
+   "doc": "Q3 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "A positive quarter across the PayPoint G roup in line with expectations",
+   "file": "20220120_PAY_Trading-update-for-the-three-months-ended-31-De....md"
+  },
+  {
+   "d": "2022-05-26",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "As a result, despite some continued headwinds, we are confident of delivering further progress in the year ahead and meeting expectations as we take advantage of the accelerated growth opportunities across our key markets.",
+   "file": "20220526_PAY_PayPoint-Plc-Preliminary-Results.md"
+  },
+  {
+   "d": "2022-07-20",
+   "doc": "Q1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "“Whilst early in our financial year, we have continued to build on the strong momentum across the Group and remain confident in delivering further progress in the current year.",
+   "file": "20220720_PAY_Trading-update-for-the-three-months-ended-30-Ju....md"
+  },
+  {
+   "d": "2022-11-24",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Against an uncertain market background in the second half, our compelling characteristics of strong cash flow, resilient earnings and growth mean we remain confident of the progress we are making in the transformation of our business and delivering expectations for the year.",
+   "file": "20221124_PAY_Results-for-the-half-year-ended-30-September-2022.md"
+  },
+  {
+   "d": "2023-01-19",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Whilst the market background remains uncertain , our compelling characteristics of strong cash flow, resilient earnings and growth mean we remain confident of the progress we are making in the transformation of our business and delivering expectations for the year",
+   "file": "20230119_PAY_Trading-update-for-the-three-months-ended-31-De....md"
+  },
+  {
+   "d": "2023-04-20",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 1,
+   "q": "The Group anticipates that profit before tax will be at the top end of the range of market expectations, excluding exceptional items and Appreciate Group impacts since completion of the acquisition",
+   "file": "20230420_PAY_PayPoint-Plc-FY23-Post-close-Trading-Update.md"
+  },
+  {
+   "d": "2023-06-02",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group anticipates that profit before tax for the financial year ended 31 March 2023 will be at the top end of the range of market expectations, excluding exceptional items and Appreciate Group impacts since completion of the acquisition, driven by the strong momentum across the business.",
+   "file": "20230602_PAY_Positive-Trading-Update-and-Confirmation-of-P....md"
+  },
+  {
+   "d": "2023-07-05",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group anticipates that profit before tax for the financial year ended 31 March 2023 will be at the top end of the range of market expectations, excluding exceptional items and Appreciate impacts since completion of the acquisition, driven by the strong momentum across the business.",
+   "file": "20230705_PAY_Postponement-Preliminary-Results-FY23-Announc....md"
+  },
+  {
+   "d": "2023-07-24",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group anticipates that profit before tax for the financial year ended 31 March 2023 will be at the top end of the range of market expectations, excluding exceptional items and Appreciate Group impacts since completion of the acquisition, driven by the strong momentum across the business.",
+   "file": "20230724_PAY_Preliminary-Results-FY23-Announcement-and-Q1-....md"
+  },
+  {
+   "d": "2023-07-28",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Our enhanced platform and expanded capabilities across the Group, combined with our business-wide partnership philosophy and intensity of execution, give the Board confidence in delivering further progress in the current financial year and meeting expectations.",
+   "file": "20230728_PAY_Results-for-the-year-ended-31-March-2023.md"
+  },
+  {
+   "d": "2023-07-28",
+   "doc": "Q1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Our enhanced platform and expanded capabilities across the Group, combined with our business-wide partnership philosophy and intensity of execution, give the Board confidence in delivering further progress in the year and meeting expectations.",
+   "file": "20230728_PAY_Trading-update-for-the-three-months-ended-30-....md"
+  },
+  {
+   "d": "2023-09-07",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group has continued the positive momentum outlined in the Q1 FY24 trading update issued on 28 July 2023 and has made further progress in the execution of its strategic objectives across all four business divisions, giving the Board confidence in delivering further progress in the year and meeting expectations.",
+   "file": "20230907_PAY_Trading-Update-and-AGM.md"
+  },
+  {
+   "d": "2023-11-23",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "Following the acquisition of Love2shop, the seasonal balance to profit and cash generation in our business has also now changed, resulting in a more H2 weighted performance and contribution to the financial year as a whole.",
+   "file": "20231123_PAY_Results-for-the-half-year-ended-30-September-....md",
+   "gnote": "discounted: Appreciate Group (Love2shop) acquisition"
+  },
+  {
+   "d": "2024-01-24",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "“This has been another positive quarter for the PayPoint Group and we remain on track to deliver c. £80m of underlying EBITDA for the current year, an important milestone on our journey to achieving £100m EBITDA by the end of FY26, ending the year with net debt below £70m and delivering underlying PBT in line with expectations.",
+   "file": "20240124_PAY_Trading-update-for-the-three-months-ended-31-....md"
+  },
+  {
+   "d": "2024-04-22",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 1,
+   "q": "The Group anticipates that underlying EBITDA will be in excess of £80m for FY24, year end net debt below £70m and underlying PBT in line with expectations, as outlined in our Q3 trading update issued on 24 January 2024.",
+   "file": "20240422_PAY_PayPoint-Plc-FY24-Post-close-Trading-Update.md"
+  },
+  {
+   "d": "2024-06-13",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -2,
+   "q": "In the current year, consumer behaviour across a number of our businesses remains subdued, reflecting continued tighter family budgets and a generally flat economy.",
+   "file": "20240613_PAY_Results-for-the-year-ended-31-March-2024.md"
+  },
+  {
+   "d": "2024-08-01",
+   "doc": "Q1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The strategic investments we have made in Yodel and obconnect, along with an expanded partnership with Incomm in Love2shop, underpin our confidence in a number of our key new opportunity building blocks, adding further momentum to meeting expectations for the current financial year and achieving our medium-term targets.",
+   "file": "20240801_PAY_Trading-update-for-the-three-months-ended-30-....md"
+  },
+  {
+   "d": "2024-11-21",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "We remain confident in delivering further progress in the current year, meeting expectations and achieving our medium-term financial goals.",
+   "file": "20241121_PAY_Results-for-the-half-year-ended-30-September-....md"
+  },
+  {
+   "d": "2025-01-29",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "During the period, our seasonal businesses in particular have performed well and, for the business as a whole, the Board remains confident in the delivery of further progress in the year and meeting expectations.",
+   "file": "20250129_PAY_Trading-update-for-the-three-months-ended-31-....md"
+  },
+  {
+   "d": "2025-04-23",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group anticipates that it will deliver a financial performance in line with expectations with underlying EBITDA of circa £90 million, underlying PBT in line with expectations and year end net debt below £100 million.",
+   "file": "20250423_PAY_PayPoint-Plc-FY25-Post-close-Trading-Update.md"
+  },
+  {
+   "d": "2025-06-12",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "We remain confident in delivering further progress in the current year, meeting expectations and achieving our financial goals to FY28.",
+   "file": "20250612_PAY_Results-for-the-year-ended-31-March-2025.md"
+  },
+  {
+   "d": "2025-08-06",
+   "doc": "Q1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "We remain confident in our operational plans, continued progress towards the delivery of our £100m EBITDA target in the current year and our longer-term growth targets for the next three years to the end of FY28.",
+   "file": "20250806_PAY_Trading-update-for-the-three-months-ended-30-....md"
+  },
+  {
+   "d": "2025-09-30",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "In the meantime, current trading remans in line with expectations ahead of the business moving into the important peak trading period.",
+   "file": "20250930_PAY_Strategic-Investment-in-Collect+-by-Internati....md"
+  },
+  {
+   "d": "2025-11-20",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -2,
+   "q": "“We expect underlying EBITDA for FY26 to be ahead of last year and broadly in line with current market expectations.",
+   "file": "20251120_PAY_Results-for-the-half-year-ended-30-September-....md"
+  },
+  {
+   "d": "2026-01-28",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 1,
+   "q": "We remain on track to meet FY26 expectations and deliver progress in the current year.",
+   "file": "20260128_PAY_Trading-update-for-the-three-months-ended-31-....md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2026-03-30",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -1,
+   "q": "The Group anticipates it will deliver a record financial performance for FY26, broadly in line with expectations.",
+   "file": "20260330_PAY_FY26-Update,-Business-Reorganisation-and-FY27....md"
+  },
+  {
+   "d": "2026-06-11",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -1,
+   "q": "In terms of profit balance for the current year, we expect a greater weighting towards the second half, reflecting both an accelerating contribution from new business and the positive impact of several of our seasonal businesses.",
+   "file": "20260611_PAY_Record-profits-delivered-and-reorganisation-....md"
+  },
+  {
+   "d": "2026-07-29",
+   "doc": "Q1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "With the business reorganisation largely complete, a solid first quarter performance delivered and a good trading rhythm established across the Group, we remain confident in making further progress in FY27 and meeting market expectations.",
+   "file": "20260729_PAY_1st-Quarter-Results.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-07-29",
+  "doc": "Q1 R",
+  "file": "20260729_PAY_1st-Quarter-Results.md",
+  "vs": "Q1 TU Aug-25 · back to Aug-24 · FY R Jun-26",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Target dropped",
+    "text": "FY R Jun-26: “a net revenue target growth rate of 5-8% per annum” → Q1 FY27 no mention of the 5-8% target (Group net revenue down 6.4% to £39.5m); objectives left to the Capital Markets Day, “where we will set out our simplified investment case”",
+    "span": "Three-year growth targets cited at Q1 Aug-25 and FY R Jun-26 → first Q1 without them"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Net corporate debt at quarter end: Aug-25 “The Group had net corporate debt of £109.6 million” → Jul-26 no net debt figure (last stated £132.5m at Mar-26)",
+    "span": "Given at Q1 Aug-24 (£81.2m) and Aug-25 → first gap"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Parcel volumes: Aug-25 “38.2 million parcel transactions” → Jul-26 no volume, only that “the parcel business continues to rebase”",
+    "span": "Given at Q1 Aug-24 (32.0m) and Aug-25 → first gap"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Headline “Solid Q1 performance with Group on track to meet market expectations for FY27” beside Group net revenue £39.5m vs £42.2m, down 6.4%, with three of four units lower",
+    "span": "Q1 Aug-25: net revenue +7.5%"
+   }
+  ]
+ }
+}
