@@ -1,12 +1,916 @@
 {
  "ticker": "MAI",
- "v": "2026-10-19.892e",
+ "v": "2026-10-21.8b33",
  "ccy": "GBX",
- "src": "ShareScope weekly snapshots",
+ "src": "Yahoo MAI.L weekly",
  "adj": [],
  "px": [
   [
-   "2026-03-03",
+   "2021-10-22",
+   333.0
+  ],
+  [
+   "2021-10-29",
+   345.0
+  ],
+  [
+   "2021-11-05",
+   345.0
+  ],
+  [
+   "2021-11-12",
+   375.0
+  ],
+  [
+   "2021-11-19",
+   375.0
+  ],
+  [
+   "2021-11-26",
+   355.0
+  ],
+  [
+   "2021-12-03",
+   355.0
+  ],
+  [
+   "2021-12-10",
+   355.0
+  ],
+  [
+   "2021-12-17",
+   355.0
+  ],
+  [
+   "2021-12-24",
+   365.0
+  ],
+  [
+   "2021-12-31",
+   365.0
+  ],
+  [
+   "2022-01-07",
+   385.0
+  ],
+  [
+   "2022-01-14",
+   385.0
+  ],
+  [
+   "2022-01-21",
+   380.0
+  ],
+  [
+   "2022-01-28",
+   345.0
+  ],
+  [
+   "2022-02-04",
+   333.0
+  ],
+  [
+   "2022-02-11",
+   325.0
+  ],
+  [
+   "2022-02-18",
+   310.0
+  ],
+  [
+   "2022-02-25",
+   305.0
+  ],
+  [
+   "2022-03-04",
+   280.0
+  ],
+  [
+   "2022-03-11",
+   272.0
+  ],
+  [
+   "2022-03-18",
+   315.0
+  ],
+  [
+   "2022-03-25",
+   335.0
+  ],
+  [
+   "2022-04-01",
+   335.0
+  ],
+  [
+   "2022-04-08",
+   335.0
+  ],
+  [
+   "2022-04-15",
+   330.0
+  ],
+  [
+   "2022-04-22",
+   330.0
+  ],
+  [
+   "2022-04-29",
+   330.0
+  ],
+  [
+   "2022-05-06",
+   330.0
+  ],
+  [
+   "2022-05-13",
+   325.0
+  ],
+  [
+   "2022-05-20",
+   315.0
+  ],
+  [
+   "2022-05-27",
+   315.0
+  ],
+  [
+   "2022-06-03",
+   315.0
+  ],
+  [
+   "2022-06-10",
+   310.0
+  ],
+  [
+   "2022-06-17",
+   310.0
+  ],
+  [
+   "2022-06-24",
+   310.0
+  ],
+  [
+   "2022-07-01",
+   310.0
+  ],
+  [
+   "2022-07-08",
+   305.0
+  ],
+  [
+   "2022-07-15",
+   305.0
+  ],
+  [
+   "2022-07-22",
+   295.0
+  ],
+  [
+   "2022-07-29",
+   295.0
+  ],
+  [
+   "2022-08-05",
+   295.0
+  ],
+  [
+   "2022-08-12",
+   290.0
+  ],
+  [
+   "2022-08-19",
+   280.0
+  ],
+  [
+   "2022-08-26",
+   275.0
+  ],
+  [
+   "2022-09-02",
+   261.0
+  ],
+  [
+   "2022-09-09",
+   255.0
+  ],
+  [
+   "2022-09-16",
+   255.0
+  ],
+  [
+   "2022-09-23",
+   255.0
+  ],
+  [
+   "2022-09-30",
+   220.0
+  ],
+  [
+   "2022-10-07",
+   220.0
+  ],
+  [
+   "2022-10-14",
+   210.0
+  ],
+  [
+   "2022-10-21",
+   210.0
+  ],
+  [
+   "2022-10-28",
+   210.0
+  ],
+  [
+   "2022-11-04",
+   210.0
+  ],
+  [
+   "2022-11-11",
+   190.0
+  ],
+  [
+   "2022-11-18",
+   190.0
+  ],
+  [
+   "2022-11-25",
+   190.0
+  ],
+  [
+   "2022-12-02",
+   190.0
+  ],
+  [
+   "2022-12-09",
+   190.0
+  ],
+  [
+   "2022-12-16",
+   190.0
+  ],
+  [
+   "2022-12-23",
+   190.0
+  ],
+  [
+   "2022-12-30",
+   190.0
+  ],
+  [
+   "2023-01-06",
+   175.0
+  ],
+  [
+   "2023-01-13",
+   170.0
+  ],
+  [
+   "2023-01-20",
+   127.5
+  ],
+  [
+   "2023-01-27",
+   125.0
+  ],
+  [
+   "2023-02-03",
+   102.5
+  ],
+  [
+   "2023-02-10",
+   105.0
+  ],
+  [
+   "2023-02-17",
+   122.5
+  ],
+  [
+   "2023-02-24",
+   127.5
+  ],
+  [
+   "2023-03-03",
+   125.0
+  ],
+  [
+   "2023-03-10",
+   125.0
+  ],
+  [
+   "2023-03-17",
+   122.5
+  ],
+  [
+   "2023-03-24",
+   115.0
+  ],
+  [
+   "2023-03-31",
+   115.0
+  ],
+  [
+   "2023-04-07",
+   115.0
+  ],
+  [
+   "2023-04-14",
+   102.5
+  ],
+  [
+   "2023-04-21",
+   90.0
+  ],
+  [
+   "2023-04-28",
+   115.0
+  ],
+  [
+   "2023-05-05",
+   109.0
+  ],
+  [
+   "2023-05-12",
+   105.0
+  ],
+  [
+   "2023-05-19",
+   105.0
+  ],
+  [
+   "2023-05-26",
+   110.0
+  ],
+  [
+   "2023-06-02",
+   145.0
+  ],
+  [
+   "2023-06-09",
+   157.5
+  ],
+  [
+   "2023-06-16",
+   157.5
+  ],
+  [
+   "2023-06-23",
+   156.0
+  ],
+  [
+   "2023-06-30",
+   150.0
+  ],
+  [
+   "2023-07-07",
+   155.0
+  ],
+  [
+   "2023-07-14",
+   155.0
+  ],
+  [
+   "2023-07-21",
+   152.5
+  ],
+  [
+   "2023-07-28",
+   165.0
+  ],
+  [
+   "2023-08-04",
+   180.0
+  ],
+  [
+   "2023-08-11",
+   175.0
+  ],
+  [
+   "2023-08-18",
+   170.0
+  ],
+  [
+   "2023-08-25",
+   165.0
+  ],
+  [
+   "2023-09-01",
+   165.0
+  ],
+  [
+   "2023-09-08",
+   165.0
+  ],
+  [
+   "2023-09-15",
+   160.0
+  ],
+  [
+   "2023-09-22",
+   165.0
+  ],
+  [
+   "2023-09-29",
+   162.5
+  ],
+  [
+   "2023-10-06",
+   157.5
+  ],
+  [
+   "2023-10-13",
+   157.5
+  ],
+  [
+   "2023-10-20",
+   172.5
+  ],
+  [
+   "2023-10-27",
+   172.5
+  ],
+  [
+   "2023-11-03",
+   167.5
+  ],
+  [
+   "2023-11-10",
+   165.0
+  ],
+  [
+   "2023-11-17",
+   165.0
+  ],
+  [
+   "2023-11-24",
+   165.0
+  ],
+  [
+   "2023-12-01",
+   157.5
+  ],
+  [
+   "2023-12-08",
+   162.5
+  ],
+  [
+   "2023-12-15",
+   162.5
+  ],
+  [
+   "2023-12-22",
+   182.5
+  ],
+  [
+   "2023-12-29",
+   183.5
+  ],
+  [
+   "2024-01-05",
+   190.0
+  ],
+  [
+   "2024-01-12",
+   190.0
+  ],
+  [
+   "2024-01-19",
+   190.0
+  ],
+  [
+   "2024-01-26",
+   225.0
+  ],
+  [
+   "2024-02-02",
+   235.0
+  ],
+  [
+   "2024-02-09",
+   235.0
+  ],
+  [
+   "2024-02-16",
+   235.0
+  ],
+  [
+   "2024-02-23",
+   235.0
+  ],
+  [
+   "2024-03-01",
+   235.0
+  ],
+  [
+   "2024-03-08",
+   235.0
+  ],
+  [
+   "2024-03-15",
+   230.0
+  ],
+  [
+   "2024-03-22",
+   242.0
+  ],
+  [
+   "2024-03-29",
+   245.0
+  ],
+  [
+   "2024-04-05",
+   255.0
+  ],
+  [
+   "2024-04-12",
+   265.0
+  ],
+  [
+   "2024-04-19",
+   245.0
+  ],
+  [
+   "2024-04-26",
+   275.0
+  ],
+  [
+   "2024-05-03",
+   250.0
+  ],
+  [
+   "2024-05-10",
+   250.0
+  ],
+  [
+   "2024-05-17",
+   250.0
+  ],
+  [
+   "2024-05-24",
+   250.0
+  ],
+  [
+   "2024-05-31",
+   250.0
+  ],
+  [
+   "2024-06-07",
+   250.0
+  ],
+  [
+   "2024-06-14",
+   250.0
+  ],
+  [
+   "2024-06-21",
+   245.0
+  ],
+  [
+   "2024-06-28",
+   225.0
+  ],
+  [
+   "2024-07-05",
+   245.0
+  ],
+  [
+   "2024-07-12",
+   245.0
+  ],
+  [
+   "2024-07-19",
+   243.0
+  ],
+  [
+   "2024-07-26",
+   240.0
+  ],
+  [
+   "2024-08-02",
+   240.0
+  ],
+  [
+   "2024-08-09",
+   240.0
+  ],
+  [
+   "2024-08-16",
+   240.0
+  ],
+  [
+   "2024-08-23",
+   270.0
+  ],
+  [
+   "2024-08-30",
+   270.0
+  ],
+  [
+   "2024-09-06",
+   270.0
+  ],
+  [
+   "2024-09-13",
+   270.0
+  ],
+  [
+   "2024-09-20",
+   250.0
+  ],
+  [
+   "2024-09-27",
+   230.0
+  ],
+  [
+   "2024-10-04",
+   230.0
+  ],
+  [
+   "2024-10-11",
+   235.0
+  ],
+  [
+   "2024-10-18",
+   235.0
+  ],
+  [
+   "2024-10-25",
+   235.0
+  ],
+  [
+   "2024-11-01",
+   235.0
+  ],
+  [
+   "2024-11-08",
+   235.0
+  ],
+  [
+   "2024-11-15",
+   235.0
+  ],
+  [
+   "2024-11-22",
+   245.0
+  ],
+  [
+   "2024-11-29",
+   251.0
+  ],
+  [
+   "2024-12-06",
+   255.0
+  ],
+  [
+   "2024-12-13",
+   253.0
+  ],
+  [
+   "2024-12-20",
+   251.0
+  ],
+  [
+   "2024-12-27",
+   251.0
+  ],
+  [
+   "2025-01-03",
+   251.0
+  ],
+  [
+   "2025-01-10",
+   250.0
+  ],
+  [
+   "2025-01-17",
+   275.0
+  ],
+  [
+   "2025-01-24",
+   275.0
+  ],
+  [
+   "2025-01-31",
+   240.0
+  ],
+  [
+   "2025-02-07",
+   230.0
+  ],
+  [
+   "2025-02-14",
+   230.0
+  ],
+  [
+   "2025-02-21",
+   230.0
+  ],
+  [
+   "2025-02-28",
+   230.0
+  ],
+  [
+   "2025-03-07",
+   230.0
+  ],
+  [
+   "2025-03-14",
+   230.0
+  ],
+  [
+   "2025-03-21",
+   230.0
+  ],
+  [
+   "2025-03-28",
+   230.0
+  ],
+  [
+   "2025-04-04",
+   225.0
+  ],
+  [
+   "2025-04-11",
+   220.0
+  ],
+  [
+   "2025-04-18",
+   220.0
+  ],
+  [
+   "2025-04-25",
+   220.0
+  ],
+  [
+   "2025-05-02",
+   225.0
+  ],
+  [
+   "2025-05-09",
+   230.0
+  ],
+  [
+   "2025-05-16",
+   245.0
+  ],
+  [
+   "2025-05-23",
+   240.0
+  ],
+  [
+   "2025-05-30",
+   240.0
+  ],
+  [
+   "2025-06-06",
+   215.0
+  ],
+  [
+   "2025-06-13",
+   200.0
+  ],
+  [
+   "2025-06-20",
+   200.0
+  ],
+  [
+   "2025-06-27",
+   200.0
+  ],
+  [
+   "2025-07-04",
+   187.0
+  ],
+  [
+   "2025-07-11",
+   187.0
+  ],
+  [
+   "2025-07-18",
+   195.0
+  ],
+  [
+   "2025-07-25",
+   195.0
+  ],
+  [
+   "2025-08-01",
+   190.0
+  ],
+  [
+   "2025-08-08",
+   190.0
+  ],
+  [
+   "2025-08-15",
+   185.0
+  ],
+  [
+   "2025-08-22",
+   185.0
+  ],
+  [
+   "2025-08-29",
+   185.0
+  ],
+  [
+   "2025-09-05",
+   150.0
+  ],
+  [
+   "2025-09-12",
+   165.0
+  ],
+  [
+   "2025-09-19",
+   170.0
+  ],
+  [
+   "2025-09-26",
+   155.0
+  ],
+  [
+   "2025-10-03",
+   155.0
+  ],
+  [
+   "2025-10-10",
+   155.0
+  ],
+  [
+   "2025-10-17",
+   145.0
+  ],
+  [
+   "2025-10-24",
+   145.0
+  ],
+  [
+   "2025-10-31",
+   145.0
+  ],
+  [
+   "2025-11-07",
+   142.5
+  ],
+  [
+   "2025-11-14",
+   142.5
+  ],
+  [
+   "2025-11-21",
+   140.0
+  ],
+  [
+   "2025-11-28",
+   140.0
+  ],
+  [
+   "2025-12-05",
+   135.0
+  ],
+  [
+   "2025-12-12",
+   135.0
+  ],
+  [
+   "2025-12-19",
+   135.0
+  ],
+  [
+   "2026-01-02",
+   135.0
+  ],
+  [
+   "2026-01-09",
+   135.0
+  ],
+  [
+   "2026-01-16",
+   135.0
+  ],
+  [
+   "2026-01-23",
+   135.0
+  ],
+  [
+   "2026-01-30",
+   142.5
+  ],
+  [
+   "2026-02-06",
+   142.5
+  ],
+  [
+   "2026-02-13",
+   145.0
+  ],
+  [
+   "2026-02-20",
+   145.0
+  ],
+  [
+   "2026-02-27",
    142.5
   ],
   [
@@ -42,6 +946,10 @@
    120.0
   ],
   [
+   "2026-05-01",
+   120.0
+  ],
+  [
    "2026-05-08",
    120.0
   ],
@@ -54,7 +962,7 @@
    92.5
   ],
   [
-   "2026-06-02",
+   "2026-05-29",
    92.5
   ],
   [
@@ -79,7 +987,7 @@
   ],
   [
    "2026-07-10",
-   85.0
+   82.5
   ],
   [
    "2026-07-17",
@@ -95,7 +1003,7 @@
   ],
   [
    "2026-08-07",
-   72.5
+   65.0
   ],
   [
    "2026-08-14",
@@ -110,8 +1018,8 @@
    68.5
   ],
   [
-   "2026-09-07",
-   68.5
+   "2026-09-04",
+   68.0
   ],
   [
    "2026-09-11",
@@ -127,7 +1035,7 @@
   ],
   [
    "2026-10-02",
-   62.0
+   61.5
   ],
   [
    "2026-10-09",
@@ -136,9 +1044,203 @@
   [
    "2026-10-16",
    61.5
+  ],
+  [
+   "2026-10-21",
+   59.0
   ]
  ],
  "marks": [
+  {
+   "d": "2022-01-31",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "flat",
+   "s": 0,
+   "q": "Group revenue and adjusted* EBITDA for the year are expected to be in line with market expectations at approximately £104m and £9.6m respectively (calculated on a like for like organic basis **).",
+   "file": "20220131_MAI_Trading-Update.md"
+  },
+  {
+   "d": "2022-03-31",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -2,
+   "q": "The first quarter is in line with management expectations and the team are building a healthy pipeline across both the public and private sectors.",
+   "file": "20220331_MAI_Final-Results.md"
+  },
+  {
+   "d": "2022-09-29",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -2,
+   "q": "The Board remains confident that Maintel will return to organic growth as global supply chains normalise, likely in spring 2023.  Consequently, we expect H2 2022 trading to be consistent with the period reported.",
+   "file": "20220929_MAI_Interim-Results.md"
+  },
+  {
+   "d": "2023-01-19",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "CUT",
+   "s": -3,
+   "q": "The Company remained cash generative in the period and has reduced its net cash debt** position from £19.4m as at 31 December 2021 to £16.7m as at 31 December 2022, outperforming our expectations, despite Adjusted* EBITDA being below expected levels.",
+   "file": "20230119_MAI_Trading-Update.md"
+  },
+  {
+   "d": "2023-04-27",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "As stated in the January 2023 Trading Update, FY23 focus is on delivering improved EBITDA and cash generation in line with  recent historical levels and the Board is pleased to advise that trading in Q1 2023 was in line with management's expectations.",
+   "file": "20230427_MAI_Final-Results.md"
+  },
+  {
+   "d": "2023-05-30",
+   "doc": "AGM",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 1,
+   "q": "As such the Board is satisfied that the Company remains on track to deliver results that are in line with management's expectations for FY23- delivering solid performance in FY23 to date- while re-shaping the business for further growth.",
+   "file": "20230530_MAI_AGM-Statement.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2023-08-03",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 2,
+   "q": "As such, the Board is confident that the Company is on track to deliver results that deliver revenue in line with market expectations, and Adjusted EBITDA ahead of market expectations.",
+   "file": "20230803_MAI_Trading-update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2023-09-19",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Consequently, the Board is confident that Maintel will achieve full year adjusted EBITDA ahead of initial expectations for the financial year ending 31 December 2023.",
+   "file": "20230919_MAI_Interim-results.md"
+  },
+  {
+   "d": "2023-09-19",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Consequently, the Board is confident that Maintel will achieve full year adjusted EBITDA ahead of initial expectations for the financial year ending 31 December 2023.",
+   "file": "20230919_MAI_Replacement-Interim-results.md"
+  },
+  {
+   "d": "2024-01-22",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 2,
+   "q": "This acceleration in trading momentum delivered financial performance above expectations whilst preparing the business for 2024.",
+   "file": "20240122_MAI_Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2024-05-01",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "While navigating challenging macro-economic and political conditions, the Board expects 2024 to reflect a consolidation of the progress made in 2023 as management continues to focus on strategic organic growth initiatives, with a focus on margin improvement and revenue expansion opportunities.",
+   "file": "20240501_MAI_Final-Results.md"
+  },
+  {
+   "d": "2024-06-19",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -2,
+   "q": "Therefore, although mindful of the headwinds faced by the Company, the Board is cautiously optimistic at this point about delivering against market expectations.",
+   "file": "20240619_MAI_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2024-08-07",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Company remains focused on delivering higher margin new business opportunities in its high growth segments moving forward and meeting expectations for the current financial year.",
+   "file": "20240807_MAI_Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2024-09-19",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "Subsequently, the Group expects its FY 2024 performance will be second half weighted as the benefit of those new multi-year contracts are realised from H2 2024.",
+   "file": "20240919_MAI_Interim-Results.md"
+  },
+  {
+   "d": "2025-01-31",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -2,
+   "q": "Although encouraging progress has been made across all aspects of the business, and the Board is confident that the strategic pivot being implemented well-positions the Company for the future, Maintel does face headwinds in the coming year.",
+   "file": "20250131_MAI_Trading-Update.md"
+  },
+  {
+   "d": "2025-05-06",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board remains confident that it can build on the encouraging progress made across all aspects of the business during 2024 and meet market expectations for 2025 but is again expecting the performance to be weighted towards the second half of the year.",
+   "file": "20250506_MAI_2024-Annual-Audited-Results.md"
+  },
+  {
+   "d": "2025-06-03",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "This, combined with the slower conversion of some sales bookings in the first half and the solid progress on pipeline growth for the second half, means the Board remains cautiously optimistic of meeting market expectations for the current year which will be second half weighted.",
+   "file": "20250603_MAI_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2025-07-29",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "As previously indicated, the Board continues to anticipate that the Group's financial performance will be weighted towards the second half of FY 2025 and remains cautiously optimistic of meeting market expectations for the current year.",
+   "file": "20250729_MAI_Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2025-09-03",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -3,
+   "q": "As a consequence, the Board now expects revenue for FY 2025 to be around £95.0m, with slightly unfavourable gross margin levels due to the remaining revenue mix. Adjusted EBITDA is now expected to be around £7.0m.",
+   "file": "20250903_MAI_Trading-Update.md"
+  },
+  {
+   "d": "2025-09-18",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "As previously announced, the second half has seen delays in pipeline conversion and the loss of a key opportunity, which will impact the Group's full-year performance, nonetheless, the Board remains confident of achieving the revised guidance.",
+   "file": "20250918_MAI_Interim-Results.md"
+  },
+  {
+   "d": "2026-01-22",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Company expects that its 2025 full year results will be in line with consensus1, with total revenue expected to be £92.2 million and Adjusted EBITDA2 expected to be £7.2 million.",
+   "file": "20260122_MAI_Trading-Update.md"
+  },
   {
    "d": "2026-05-13",
    "doc": "Q1 TU",
@@ -153,7 +1255,7 @@
    "doc": "FY R",
    "fy": "FY26",
    "g": "flat",
-   "s": -1,
+   "s": -2,
    "q": "Our focus is on retaining this sales momentum and on the delivery and recognition of the orderbook. We have much to be positive about, whilst being cognisant of the difficult market conditions within which we operate.",
    "file": "20260629_MAI_2025-Annual-Results.md"
   },
@@ -162,7 +1264,7 @@
    "doc": "H1 R",
    "fy": "FY26",
    "g": "flat",
-   "s": -1,
+   "s": -2,
    "q": "While the timing of project delivery, challenging market conditions and working capital movements will continue to influence short-term performance, the Board is focused on Adjusted EBITDA and cash generation ahead of revenue and remain confident of achieving Adjusted EBITDA market expectations for the 2026 financial year, albeit from a lower revenue base.",
    "file": "20260930_MAI_Interim-Results.md"
   }
@@ -177,20 +1279,26 @@
    {
     "sev": "red",
     "type": "Anchor softened",
-    "text": "May-26: “In the first quarter of 2026 the Group has continued to trade in line with market expectations.” → Sep-26: “remain confident of achieving Adjusted EBITDA market expectations for the 2026 financial year, albeit from a lower revenue base” (revenue no longer anchored)",
-    "span": "Whole-business anchor at Jan-26 TU and May-26; FY R Jun-26 gave none"
+    "text": "May-26: “In the first quarter of 2026 the Group has continued to trade in line with market expectations.” → Sep-26: “remain confident of achieving Adjusted EBITDA market expectations for the 2026 financial year, albeit from a lower revenue base” (revenue no longer anchored, no FY26 revenue figure)",
+    "span": "Whole-business anchor at Jan-26 TU and May-26; Sep-25 interim gave revenue of “around £95.0m”"
    },
    {
     "sev": "amber",
     "type": "Wording vs number",
-    "text": "Headline “Good progress in business generation, consistent and solid performance in projects.” beside Adjusted EBITDA £3.2m (H1 2025: £3.4m), adjusted EPS (3.6)p vs 1.2p and net debt up to £22.5m from £18.0m",
-    "span": "H1 Sep-25 → H1 Sep-26"
+    "text": "Headline “Good progress in business generation, consistent and solid performance in projects.” beside Adjusted EBITDA £3.2m (H1 2025: £3.4m), adjusted EPS (3.6)p vs 1.2p, an operating cash outflow of £1.2m (H1 2025: £2.2m inflow) and net debt up to £22.5m from £18.0m",
+    "span": "H1 R Sep-25 → H1 R Sep-26"
    },
    {
     "sev": "grey",
     "type": "New caution",
-    "text": "Gross margin fall now attributed to “increasingly competitive market conditions” (Sep-25 cited only inflation and revenue mix)",
+    "text": "Gross margin fall now attributed to “increasingly competitive market conditions” (Sep-25 cited only “in-bound inflationary pressure and a change in revenue mix”)",
     "span": "First time in an interim margin bridge"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "New savings figure: “This action is expected to deliver approximately £1.0 million in additional annualised savings from FY 2027 onwards” (Operations restructure), plus “£52.0 million of the sales pipeline relating to opportunities expected to close during H2 2026”",
+    "span": "Not given at H1 Sep-25 or FY R Jun-26"
    }
   ]
  }

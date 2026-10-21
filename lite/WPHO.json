@@ -1,13 +1,921 @@
 {
  "ticker": "WPHO",
- "v": "2026-10-19.2da4",
+ "v": "2026-10-21.997d",
  "ccy": "GBX",
- "src": "ShareScope weekly snapshots",
+ "src": "Yahoo WPHO.L weekly",
  "adj": [],
  "px": [
   [
-   "2026-03-03",
+   "2021-10-22",
+   17.5
+  ],
+  [
+   "2021-10-29",
+   17.0
+  ],
+  [
+   "2021-11-05",
+   17.25
+  ],
+  [
+   "2021-11-12",
+   17.25
+  ],
+  [
+   "2021-11-19",
+   17.25
+  ],
+  [
+   "2021-11-26",
+   20.0
+  ],
+  [
+   "2021-12-03",
+   20.0
+  ],
+  [
+   "2021-12-10",
+   19.0
+  ],
+  [
+   "2021-12-17",
+   17.0
+  ],
+  [
+   "2021-12-24",
+   17.75
+  ],
+  [
+   "2021-12-31",
+   17.5
+  ],
+  [
+   "2022-01-07",
+   18.0
+  ],
+  [
+   "2022-01-14",
+   17.5
+  ],
+  [
+   "2022-01-21",
+   16.25
+  ],
+  [
+   "2022-01-28",
+   15.25
+  ],
+  [
+   "2022-02-04",
+   16.5
+  ],
+  [
+   "2022-02-11",
+   17.25
+  ],
+  [
+   "2022-02-18",
+   16.5
+  ],
+  [
+   "2022-02-25",
+   16.5
+  ],
+  [
+   "2022-03-04",
+   16.5
+  ],
+  [
+   "2022-03-11",
+   16.5
+  ],
+  [
+   "2022-03-18",
+   17.0
+  ],
+  [
+   "2022-03-25",
+   17.0
+  ],
+  [
+   "2022-04-01",
+   17.0
+  ],
+  [
+   "2022-04-08",
+   16.0
+  ],
+  [
+   "2022-04-15",
+   16.0
+  ],
+  [
+   "2022-04-22",
+   15.5
+  ],
+  [
+   "2022-04-29",
+   15.5
+  ],
+  [
+   "2022-05-06",
+   15.5
+  ],
+  [
+   "2022-05-13",
+   14.5
+  ],
+  [
+   "2022-05-20",
+   14.25
+  ],
+  [
+   "2022-05-27",
+   14.25
+  ],
+  [
+   "2022-06-03",
+   14.25
+  ],
+  [
+   "2022-06-10",
+   14.25
+  ],
+  [
+   "2022-06-17",
+   14.25
+  ],
+  [
+   "2022-06-24",
+   14.25
+  ],
+  [
+   "2022-07-01",
+   8.0
+  ],
+  [
+   "2022-07-08",
+   8.0
+  ],
+  [
+   "2022-07-15",
+   8.0
+  ],
+  [
+   "2022-07-22",
+   8.0
+  ],
+  [
+   "2022-07-29",
+   8.0
+  ],
+  [
+   "2022-08-05",
+   8.0
+  ],
+  [
+   "2022-08-12",
+   8.0
+  ],
+  [
+   "2022-08-19",
+   8.0
+  ],
+  [
+   "2022-08-26",
+   8.0
+  ],
+  [
+   "2022-09-02",
+   8.0
+  ],
+  [
+   "2022-09-09",
+   8.0
+  ],
+  [
+   "2022-09-16",
+   8.0
+  ],
+  [
+   "2022-09-23",
+   8.0
+  ],
+  [
+   "2022-09-30",
+   8.0
+  ],
+  [
+   "2022-10-07",
+   8.0
+  ],
+  [
+   "2022-10-14",
+   8.0
+  ],
+  [
+   "2022-10-21",
+   8.0
+  ],
+  [
+   "2022-10-28",
+   8.0
+  ],
+  [
+   "2022-11-04",
+   8.0
+  ],
+  [
+   "2022-11-11",
+   8.0
+  ],
+  [
+   "2022-11-18",
+   8.0
+  ],
+  [
+   "2022-11-25",
+   8.0
+  ],
+  [
+   "2022-12-02",
+   21.0
+  ],
+  [
+   "2022-12-09",
+   18.0
+  ],
+  [
+   "2022-12-16",
+   17.75
+  ],
+  [
+   "2022-12-23",
+   19.8
+  ],
+  [
+   "2022-12-30",
+   21.1
+  ],
+  [
+   "2023-01-06",
+   26.5
+  ],
+  [
+   "2023-01-13",
+   30.5
+  ],
+  [
+   "2023-01-20",
+   25.1
+  ],
+  [
+   "2023-01-27",
+   23.0
+  ],
+  [
+   "2023-02-03",
+   22.0
+  ],
+  [
+   "2023-02-10",
+   25.0
+  ],
+  [
+   "2023-02-17",
+   24.5
+  ],
+  [
+   "2023-02-24",
+   24.5
+  ],
+  [
+   "2023-03-03",
+   24.5
+  ],
+  [
+   "2023-03-10",
+   22.2
+  ],
+  [
+   "2023-03-17",
+   23.5
+  ],
+  [
+   "2023-03-24",
+   27.0
+  ],
+  [
+   "2023-03-31",
+   24.0
+  ],
+  [
+   "2023-04-07",
+   23.5
+  ],
+  [
+   "2023-04-14",
+   24.5
+  ],
+  [
+   "2023-04-21",
+   24.5
+  ],
+  [
+   "2023-04-28",
+   25.5
+  ],
+  [
+   "2023-05-05",
+   26.0
+  ],
+  [
+   "2023-05-12",
+   25.5
+  ],
+  [
+   "2023-05-19",
+   25.0
+  ],
+  [
+   "2023-05-26",
+   25.0
+  ],
+  [
+   "2023-06-02",
+   23.5
+  ],
+  [
+   "2023-06-09",
+   23.5
+  ],
+  [
+   "2023-06-16",
+   28.5
+  ],
+  [
+   "2023-06-23",
+   32.0
+  ],
+  [
+   "2023-06-30",
+   34.5
+  ],
+  [
+   "2023-07-07",
+   34.5
+  ],
+  [
+   "2023-07-14",
+   32.5
+  ],
+  [
+   "2023-07-21",
+   31.0
+  ],
+  [
+   "2023-07-28",
+   34.5
+  ],
+  [
+   "2023-08-04",
+   36.0
+  ],
+  [
+   "2023-08-11",
+   38.5
+  ],
+  [
+   "2023-08-18",
+   40.5
+  ],
+  [
+   "2023-08-25",
+   39.0
+  ],
+  [
+   "2023-09-01",
    35.5
+  ],
+  [
+   "2023-09-08",
+   36.0
+  ],
+  [
+   "2023-09-15",
+   35.5
+  ],
+  [
+   "2023-09-22",
+   34.5
+  ],
+  [
+   "2023-09-29",
+   36.0
+  ],
+  [
+   "2023-10-06",
+   41.0
+  ],
+  [
+   "2023-10-13",
+   43.0
+  ],
+  [
+   "2023-10-20",
+   48.5
+  ],
+  [
+   "2023-10-27",
+   45.0
+  ],
+  [
+   "2023-11-03",
+   48.5
+  ],
+  [
+   "2023-11-10",
+   50.0
+  ],
+  [
+   "2023-11-17",
+   48.0
+  ],
+  [
+   "2023-11-24",
+   50.0
+  ],
+  [
+   "2023-12-01",
+   48.5
+  ],
+  [
+   "2023-12-08",
+   48.0
+  ],
+  [
+   "2023-12-15",
+   48.0
+  ],
+  [
+   "2023-12-22",
+   48.0
+  ],
+  [
+   "2023-12-29",
+   48.0
+  ],
+  [
+   "2024-01-05",
+   45.5
+  ],
+  [
+   "2024-01-12",
+   45.0
+  ],
+  [
+   "2024-01-19",
+   41.5
+  ],
+  [
+   "2024-01-26",
+   41.0
+  ],
+  [
+   "2024-02-02",
+   38.5
+  ],
+  [
+   "2024-02-09",
+   33.5
+  ],
+  [
+   "2024-02-16",
+   32.5
+  ],
+  [
+   "2024-02-23",
+   33.0
+  ],
+  [
+   "2024-03-01",
+   37.0
+  ],
+  [
+   "2024-03-08",
+   33.5
+  ],
+  [
+   "2024-03-15",
+   33.0
+  ],
+  [
+   "2024-03-22",
+   33.0
+  ],
+  [
+   "2024-03-29",
+   33.0
+  ],
+  [
+   "2024-04-05",
+   33.0
+  ],
+  [
+   "2024-04-12",
+   36.5
+  ],
+  [
+   "2024-04-19",
+   44.0
+  ],
+  [
+   "2024-04-26",
+   46.5
+  ],
+  [
+   "2024-05-03",
+   41.5
+  ],
+  [
+   "2024-05-10",
+   44.5
+  ],
+  [
+   "2024-05-17",
+   44.5
+  ],
+  [
+   "2024-05-24",
+   46.5
+  ],
+  [
+   "2024-05-31",
+   47.5
+  ],
+  [
+   "2024-06-07",
+   48.5
+  ],
+  [
+   "2024-06-14",
+   51.0
+  ],
+  [
+   "2024-06-21",
+   51.5
+  ],
+  [
+   "2024-06-28",
+   48.8
+  ],
+  [
+   "2024-07-05",
+   49.5
+  ],
+  [
+   "2024-07-12",
+   50.5
+  ],
+  [
+   "2024-07-19",
+   50.5
+  ],
+  [
+   "2024-07-26",
+   50.5
+  ],
+  [
+   "2024-08-02",
+   48.5
+  ],
+  [
+   "2024-08-09",
+   44.5
+  ],
+  [
+   "2024-08-16",
+   44.5
+  ],
+  [
+   "2024-08-23",
+   43.0
+  ],
+  [
+   "2024-08-30",
+   43.0
+  ],
+  [
+   "2024-09-06",
+   43.0
+  ],
+  [
+   "2024-09-13",
+   43.0
+  ],
+  [
+   "2024-09-20",
+   42.5
+  ],
+  [
+   "2024-09-27",
+   42.0
+  ],
+  [
+   "2024-10-04",
+   39.5
+  ],
+  [
+   "2024-10-11",
+   39.5
+  ],
+  [
+   "2024-10-18",
+   41.5
+  ],
+  [
+   "2024-10-25",
+   42.5
+  ],
+  [
+   "2024-11-01",
+   41.5
+  ],
+  [
+   "2024-11-08",
+   41.5
+  ],
+  [
+   "2024-11-15",
+   43.0
+  ],
+  [
+   "2024-11-22",
+   41.5
+  ],
+  [
+   "2024-11-29",
+   49.5
+  ],
+  [
+   "2024-12-06",
+   49.0
+  ],
+  [
+   "2024-12-13",
+   49.5
+  ],
+  [
+   "2024-12-20",
+   56.0
+  ],
+  [
+   "2024-12-27",
+   60.5
+  ],
+  [
+   "2025-01-03",
+   59.0
+  ],
+  [
+   "2025-01-10",
+   57.5
+  ],
+  [
+   "2025-01-17",
+   57.5
+  ],
+  [
+   "2025-01-24",
+   55.0
+  ],
+  [
+   "2025-01-31",
+   54.5
+  ],
+  [
+   "2025-02-07",
+   53.0
+  ],
+  [
+   "2025-02-14",
+   49.0
+  ],
+  [
+   "2025-02-21",
+   48.5
+  ],
+  [
+   "2025-02-28",
+   43.0
+  ],
+  [
+   "2025-03-07",
+   42.5
+  ],
+  [
+   "2025-03-14",
+   42.5
+  ],
+  [
+   "2025-03-21",
+   42.0
+  ],
+  [
+   "2025-03-28",
+   41.5
+  ],
+  [
+   "2025-04-04",
+   41.5
+  ],
+  [
+   "2025-04-11",
+   41.0
+  ],
+  [
+   "2025-04-18",
+   42.0
+  ],
+  [
+   "2025-04-25",
+   42.5
+  ],
+  [
+   "2025-05-02",
+   43.0
+  ],
+  [
+   "2025-05-09",
+   53.0
+  ],
+  [
+   "2025-05-16",
+   49.0
+  ],
+  [
+   "2025-05-23",
+   48.6
+  ],
+  [
+   "2025-05-30",
+   48.1
+  ],
+  [
+   "2025-06-06",
+   47.0
+  ],
+  [
+   "2025-06-13",
+   53.0
+  ],
+  [
+   "2025-06-20",
+   59.0
+  ],
+  [
+   "2025-06-27",
+   53.5
+  ],
+  [
+   "2025-07-04",
+   49.0
+  ],
+  [
+   "2025-07-11",
+   56.0
+  ],
+  [
+   "2025-07-18",
+   56.5
+  ],
+  [
+   "2025-07-25",
+   57.0
+  ],
+  [
+   "2025-08-01",
+   57.0
+  ],
+  [
+   "2025-08-08",
+   52.75
+  ],
+  [
+   "2025-08-15",
+   58.0
+  ],
+  [
+   "2025-08-22",
+   64.0
+  ],
+  [
+   "2025-08-29",
+   55.5
+  ],
+  [
+   "2025-09-05",
+   55.5
+  ],
+  [
+   "2025-09-12",
+   61.5
+  ],
+  [
+   "2025-09-19",
+   63.5
+  ],
+  [
+   "2025-09-26",
+   63.5
+  ],
+  [
+   "2025-10-03",
+   62.0
+  ],
+  [
+   "2025-10-10",
+   56.5
+  ],
+  [
+   "2025-10-17",
+   52.0
+  ],
+  [
+   "2025-10-24",
+   57.5
+  ],
+  [
+   "2025-10-31",
+   57.5
+  ],
+  [
+   "2025-11-07",
+   57.5
+  ],
+  [
+   "2025-11-14",
+   53.5
+  ],
+  [
+   "2025-11-21",
+   51.0
+  ],
+  [
+   "2025-11-28",
+   50.0
+  ],
+  [
+   "2025-12-05",
+   45.3
+  ],
+  [
+   "2025-12-12",
+   41.3
+  ],
+  [
+   "2025-12-19",
+   43.5
+  ],
+  [
+   "2025-12-26",
+   41.0
+  ],
+  [
+   "2026-01-02",
+   43.5
+  ],
+  [
+   "2026-01-09",
+   49.0
+  ],
+  [
+   "2026-01-16",
+   49.0
+  ],
+  [
+   "2026-01-23",
+   46.0
+  ],
+  [
+   "2026-01-30",
+   44.5
+  ],
+  [
+   "2026-02-06",
+   40.5
+  ],
+  [
+   "2026-02-13",
+   43.5
+  ],
+  [
+   "2026-02-20",
+   42.0
+  ],
+  [
+   "2026-02-27",
+   38.2
   ],
   [
    "2026-03-06",
@@ -19,7 +927,7 @@
   ],
   [
    "2026-03-20",
-   32.5
+   31.5
   ],
   [
    "2026-03-27",
@@ -35,11 +943,15 @@
   ],
   [
    "2026-04-17",
-   31.0
+   30.5
   ],
   [
    "2026-04-24",
-   31.0
+   30.5
+  ],
+  [
+   "2026-05-01",
+   30.0
   ],
   [
    "2026-05-08",
@@ -51,15 +963,15 @@
   ],
   [
    "2026-05-22",
-   26.75
+   27.0
   ],
   [
-   "2026-06-02",
+   "2026-05-29",
    27.25
   ],
   [
    "2026-06-05",
-   27.25
+   27.5
   ],
   [
    "2026-06-12",
@@ -110,8 +1022,8 @@
    26.5
   ],
   [
-   "2026-09-07",
-   5.75
+   "2026-09-04",
+   5.92
   ],
   [
    "2026-09-11",
@@ -123,11 +1035,11 @@
   ],
   [
    "2026-09-25",
-   4.85
+   4.7
   ],
   [
    "2026-10-02",
-   4.5
+   4.25
   ],
   [
    "2026-10-09",
@@ -136,21 +1048,188 @@
   [
    "2026-10-16",
    3.9
+  ],
+  [
+   "2026-10-21",
+   3.9
   ]
  ],
  "marks": [
+  {
+   "d": "2022-06-29",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -1,
+   "q": "As a result of these delays, delivery of contracted orders for Vestas have experience an approximately three month delay. However, the Company is pleased to confirm that deliveries to Vestas have recommenced in June 2022.",
+   "file": "20220629_WPHO_Update-on-Trading-and-Publication-of-Final-Results.md"
+  },
+  {
+   "d": "2022-11-25",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -2,
+   "q": "Consequently, realized revenue and deliveries were substantially below expectations during that period though still above revenue realized in the same period of 2021.",
+   "file": "20221125_WPHO_Final-Results.md"
+  },
+  {
+   "d": "2022-11-25",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The order backlog has increased substantially during the period, and the Board expect additional orders in the near future, not only substantiated by the Company's exclusive offerings but further supported by the general worldwide increase in electricity prices supporting our underlying business case.",
+   "file": "20221125_WPHO_Interim-Results.md"
+  },
+  {
+   "d": "2023-09-25",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Given the above the Company expects to meet the current market expectations for 2023 including net revenue of approximately €6.5 million - an increase of approximately 260% compared to 2022 (2022: €1.8 million), and an EBITDA result of approximately €1.5-1.6 million compared to an EBITDA loss of €1.1 million realised in 2022.",
+   "file": "20230925_WPHO_Interim-Results.md"
+  },
+  {
+   "d": "2023-12-08",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -3,
+   "q": "As a consequence, the Group's revenue for 2023 will not reach the €6.5m level previously indicated and is expected to be closer to €5.0m.",
+   "file": "20231208_WPHO_New-Order-and-Trading-Update.md"
+  },
+  {
+   "d": "2024-02-06",
+   "doc": "OPS",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "These orders take the cumulative order intake over the last two months to €3.9m for the Chinese market and this keeps the Company well on track to meet its ambitious production and revenue targets for the current financial year.",
+   "file": "20240206_WPHO_New-Order-Update-and-Sales-Agency-Agreement.md"
+  },
+  {
+   "d": "2024-04-08",
+   "doc": "Q1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 1,
+   "q": "The current year ending 31 December 2024 has started strongly, with sales and orders representing estimated revenue of c.€5.9m (including the significant new order), already exceeding full year 2023 revenue, and giving the Board confidence that the full year will see YOY revenue growth of a similar order to the c.150% YOY growth from 2022 to 2023.",
+   "file": "20240408_WPHO_New-Order,-Trading-Update-and-Proposed-Placing.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2024-04-12",
+   "doc": "OPS",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The current year ending 31 December 2024 has started strongly, with sales and orders representing estimated revenue of c.€5.9m (including the significant new order), already exceeding full year 2023 revenue, and giving the Board confidence that the full year will see YOY revenue growth of a similar order to the c.150% YOY growth from 2022 to 2023.",
+   "file": "20240412_WPHO_Proposed-equity-fundraising.md"
+  },
+  {
+   "d": "2024-08-05",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "We continue to be in discussions with numerous operators in North America regarding orders for multiple turbine platforms and our view of the order outlook in Japan, Australia and China remains optimistic.",
+   "file": "20240805_WPHO_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2024-09-12",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "Following the April fundraise Windar will not be constrained by factors impacting short-term working capital and whilst growth in 2024 will be concentrated in the final 8 months of the year, we remain confident over the full year outcome.",
+   "file": "20240912_WPHO_Un-audited-Results-for-the-6-months-ended-30-June.md"
+  },
+  {
+   "d": "2024-11-12",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -3,
+   "q": "Consequently, we believe that the company should achieve revenue of €6m - €7m of turnover (dependant on customer mix) (2023: €4.7m) implying EBITDA of between €0.4 and €0.9m in 2024 (2023: €0.2m) (both of which would constitute record highs) and that any shortfall for 2024 will be fully recovered in 2025.",
+   "file": "20241112_WPHO_Trading-Update.md"
+  },
+  {
+   "d": "2024-12-02",
+   "doc": "OPS",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board anticipates that the Company will achieve revenue of €6 million to €7 million for the year ending 31 December 2024 (2023: €4.7 million) implying EBITDA of between €0.4 million and €0.9 million (2023: €0.2 million).",
+   "file": "20241202_WPHO_Proposed-placing-to-raise-£5.5-million.md"
+  },
+  {
+   "d": "2025-03-24",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -1,
+   "q": "As a direct result of these delays EBITDA will now be at the bottom end guidance given in November 2024 at c€0.4m, but which also reflects a higher gross margin, supported by the contribution of first software sales.",
+   "file": "20250324_WPHO_Trading-Update-and-First-Discreet-Software-Order.md"
+  },
+  {
+   "d": "2025-06-11",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -2,
+   "q": "As a result of this adjustment, expectations for 2024 revenue are €4.6m with an EBITDA loss for the year of circa €0.4m.",
+   "file": "20250611_WPHO_Update-on-Expectations.md"
+  },
+  {
+   "d": "2025-07-01",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -2,
+   "q": "Whilst 2025 will be a transitionary year we anticipate further progress ahead of material growth in the years to come.",
+   "file": "20250701_WPHO_Final-Results.md"
+  },
+  {
+   "d": "2025-08-01",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "As recently stated in our FY results announcement in July, Windar is in a strong position, supported by a solid forward orderbook and a growing pipeline of opportunities and as a result is well placed to deliver a significant increase in revenues during 2025 compared to 2024.",
+   "file": "20250801_WPHO_AGM-Statement.md"
+  },
+  {
+   "d": "2025-09-15",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Despite currency headwinds and initial uncertainty caused by tariffs, the Company is well      placed, with orders for delivery in H2 2025 of €3.6m as of August 2025 further supported by the pipeline and the above strengthening of our sales organization, to meet full year market expectations.",
+   "file": "20250915_WPHO_Half-year-Report.md"
+  },
+  {
+   "d": "2025-12-23",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -3,
+   "q": "Although the FY 2025 turnover will be a record for the Company and reflects the considerable potential of the business, it is nonetheless short of our expectations* due to a delay in finalising an order in China with a significant gross value.",
+   "file": "20251223_WPHO_Trading-Statement.md"
+  },
   {
    "d": "2026-04-15",
    "doc": "YE-TU",
    "fy": "FY26",
    "g": "flat",
-   "s": 1,
-   "q": "The Company expects to deliver revenue of at least €7.8m in FY 2026, representing growth of at least 22% over the prior year, with Adjusted EBITDA of at least €0.5m.",
+   "s": -1,
+   "q": "This guidance reflects confirmed visibility across our current pipeline and is based on conversion of 50% of our ten active test orders - a threshold we are confident in achieving.",
    "file": "20260415_WPHO_Trading-Update-&-£20m-Share-Subscription-Facility.md"
   },
   {
    "d": "2026-06-17",
-   "doc": "H1 TU",
+   "doc": "OPS",
    "fy": "FY26",
    "g": "flat",
    "s": -2,
@@ -197,8 +1276,8 @@
    "d": "2026-09-30",
    "doc": "H1 R",
    "fy": "FY26",
-   "g": "CUT",
-   "s": -2,
+   "g": "flat",
+   "s": -1,
    "q": "Trading in H2 2026 remains in line with management expectations for the full year.",
    "file": "20260930_WPHO_Interim-Results.md"
   }
@@ -208,31 +1287,30 @@
   "rns": "2026-09-30",
   "doc": "H1 R",
   "file": "20260930_WPHO_Interim-Results.md",
-  "vs": "H1 R Sep-25 · FY R Aug-26 · TU Jun-26",
+  "vs": "H1 R Sep-25 · FY R Aug-26 · back to H1 Sep-24",
   "lines": [
    {
     "sev": "red",
     "type": "Anchor softened",
-    "text": "FY26 guide was “we now expect revenues of circa €1.8m for the year” (FY R, Aug-26) → now “Trading in H2 2026 remains in line with management expectations for the full year.”, no number",
-    "span": "€1.8m given Jun-26 and Aug-26; H1-25 anchored to “full year market expectations”"
+    "text": "H1 Sep-25: “to meet full year market expectations” → H1 Sep-26: “Trading in H2 2026 remains in line with management expectations for the full year”",
+    "span": "Market anchor used in H1 Sep-23 and Sep-25 → first interim on management’s own expectations"
    },
    {
     "sev": "amber",
     "type": "Number to words",
-    "text": "Test pipeline was “Ten IPPs are currently running tests on Windar's technology” (FY R, Aug-26) → now “multiple leading Independent Power Producers (IPPs) actively engaged at various stages of the sales process”",
-    "span": "Test count given Apr-26, Jun-26, Aug-26"
+    "text": "FY R Aug-26: “we now expect revenues of circa €1.8m for the year” → H1 Sep-26 gives no FY26 revenue figure, only “in line with management expectations”",
+    "span": "€1.8m given Jun-26 and Aug-26"
    },
    {
     "sev": "amber",
     "type": "Went quiet",
-    "text": "Gross margin: “Continued gross margin progression of +2%-points vs. H1 2024” (H1-25) and “Gross margin was 54.2%” (FY25) → no gross margin figure in H1-26",
-    "span": "Given H1-25, FY25"
+    "text": "H2 order book: “Orders for delivery in H2 2024 of €3.8m as at June 2024” and “orders for delivery in H2 2025 of €3.6m as of August 2025” → no H2 2026 order figure; FY R Aug-26 count “Ten IPPs are currently running tests” → now only “pipeline of customer trials”",
+    "span": "H2 order book given in H1 Sep-24 and Sep-25 → first gap"
    },
    {
     "sev": "grey",
     "type": "Restated",
-    "text": "30 June 2026 inventory €3.5m in FY R (Aug-26) → “the corrected inventory figure as at 30 June 2026 is €3.1m”; H1 revenue €315k → €0.4m",
-    "span": "Same period, one month apart"
+    "text": "FY R Aug-26: inventory at 30 June 2026 “€3.5m” → H1 Sep-26 “the corrected inventory figure as at 30 June 2026 is €3.1m”; H1 revenue “€315k” → “€0.4m” after a revenue-recognition change"
    }
   ]
  }

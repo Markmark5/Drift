@@ -1,12 +1,920 @@
 {
  "ticker": "MIND",
- "v": "2026-10-19.802b",
+ "v": "2026-10-21.d820",
  "ccy": "GBX",
- "src": "ShareScope weekly snapshots",
+ "src": "Yahoo MIND.L weekly",
  "adj": [],
  "px": [
   [
-   "2026-03-03",
+   "2021-10-22",
+   185.0
+  ],
+  [
+   "2021-10-29",
+   185.0
+  ],
+  [
+   "2021-11-05",
+   182.5
+  ],
+  [
+   "2021-11-12",
+   182.5
+  ],
+  [
+   "2021-11-19",
+   180.0
+  ],
+  [
+   "2021-11-26",
+   172.5
+  ],
+  [
+   "2021-12-03",
+   167.5
+  ],
+  [
+   "2021-12-10",
+   156.5
+  ],
+  [
+   "2021-12-17",
+   150.0
+  ],
+  [
+   "2021-12-24",
+   142.5
+  ],
+  [
+   "2021-12-31",
+   142.5
+  ],
+  [
+   "2022-01-07",
+   147.5
+  ],
+  [
+   "2022-01-14",
+   150.0
+  ],
+  [
+   "2022-01-21",
+   147.5
+  ],
+  [
+   "2022-01-28",
+   147.5
+  ],
+  [
+   "2022-02-04",
+   147.5
+  ],
+  [
+   "2022-02-11",
+   147.5
+  ],
+  [
+   "2022-02-18",
+   147.5
+  ],
+  [
+   "2022-02-25",
+   142.5
+  ],
+  [
+   "2022-03-04",
+   137.5
+  ],
+  [
+   "2022-03-11",
+   135.0
+  ],
+  [
+   "2022-03-18",
+   135.0
+  ],
+  [
+   "2022-03-25",
+   136.0
+  ],
+  [
+   "2022-04-01",
+   135.0
+  ],
+  [
+   "2022-04-08",
+   130.0
+  ],
+  [
+   "2022-04-15",
+   130.0
+  ],
+  [
+   "2022-04-22",
+   130.0
+  ],
+  [
+   "2022-04-29",
+   130.0
+  ],
+  [
+   "2022-05-06",
+   122.5
+  ],
+  [
+   "2022-05-13",
+   122.5
+  ],
+  [
+   "2022-05-20",
+   120.0
+  ],
+  [
+   "2022-05-27",
+   117.5
+  ],
+  [
+   "2022-06-03",
+   117.5
+  ],
+  [
+   "2022-06-10",
+   120.0
+  ],
+  [
+   "2022-06-17",
+   120.0
+  ],
+  [
+   "2022-06-24",
+   120.0
+  ],
+  [
+   "2022-07-01",
+   120.0
+  ],
+  [
+   "2022-07-08",
+   120.0
+  ],
+  [
+   "2022-07-15",
+   120.0
+  ],
+  [
+   "2022-07-22",
+   120.0
+  ],
+  [
+   "2022-07-29",
+   120.0
+  ],
+  [
+   "2022-08-05",
+   116.5
+  ],
+  [
+   "2022-08-12",
+   116.5
+  ],
+  [
+   "2022-08-19",
+   117.5
+  ],
+  [
+   "2022-08-26",
+   113.5
+  ],
+  [
+   "2022-09-02",
+   112.5
+  ],
+  [
+   "2022-09-09",
+   100.0
+  ],
+  [
+   "2022-09-16",
+   97.5
+  ],
+  [
+   "2022-09-23",
+   97.5
+  ],
+  [
+   "2022-09-30",
+   95.0
+  ],
+  [
+   "2022-10-07",
+   95.0
+  ],
+  [
+   "2022-10-14",
+   95.0
+  ],
+  [
+   "2022-10-21",
+   97.5
+  ],
+  [
+   "2022-10-28",
+   97.5
+  ],
+  [
+   "2022-11-04",
+   97.5
+  ],
+  [
+   "2022-11-11",
+   97.5
+  ],
+  [
+   "2022-11-18",
+   97.5
+  ],
+  [
+   "2022-11-25",
+   95.0
+  ],
+  [
+   "2022-12-02",
+   92.5
+  ],
+  [
+   "2022-12-09",
+   87.5
+  ],
+  [
+   "2022-12-16",
+   85.0
+  ],
+  [
+   "2022-12-23",
+   85.0
+  ],
+  [
+   "2022-12-30",
+   85.0
+  ],
+  [
+   "2023-01-06",
+   80.0
+  ],
+  [
+   "2023-01-13",
+   72.5
+  ],
+  [
+   "2023-01-20",
+   76.0
+  ],
+  [
+   "2023-01-27",
+   76.0
+  ],
+  [
+   "2023-02-03",
+   76.0
+  ],
+  [
+   "2023-02-10",
+   77.5
+  ],
+  [
+   "2023-02-17",
+   77.5
+  ],
+  [
+   "2023-02-24",
+   77.5
+  ],
+  [
+   "2023-03-03",
+   77.0
+  ],
+  [
+   "2023-03-10",
+   76.0
+  ],
+  [
+   "2023-03-17",
+   83.5
+  ],
+  [
+   "2023-03-24",
+   73.0
+  ],
+  [
+   "2023-03-31",
+   68.5
+  ],
+  [
+   "2023-04-07",
+   68.5
+  ],
+  [
+   "2023-04-14",
+   67.5
+  ],
+  [
+   "2023-04-21",
+   63.5
+  ],
+  [
+   "2023-04-28",
+   64.0
+  ],
+  [
+   "2023-05-05",
+   62.5
+  ],
+  [
+   "2023-05-12",
+   61.5
+  ],
+  [
+   "2023-05-19",
+   60.5
+  ],
+  [
+   "2023-05-26",
+   59.5
+  ],
+  [
+   "2023-06-02",
+   59.5
+  ],
+  [
+   "2023-06-09",
+   59.5
+  ],
+  [
+   "2023-06-16",
+   59.0
+  ],
+  [
+   "2023-06-23",
+   58.5
+  ],
+  [
+   "2023-06-30",
+   58.5
+  ],
+  [
+   "2023-07-07",
+   56.0
+  ],
+  [
+   "2023-07-14",
+   46.5
+  ],
+  [
+   "2023-07-21",
+   43.0
+  ],
+  [
+   "2023-07-28",
+   62.0
+  ],
+  [
+   "2023-08-04",
+   62.5
+  ],
+  [
+   "2023-08-11",
+   62.5
+  ],
+  [
+   "2023-08-18",
+   61.0
+  ],
+  [
+   "2023-08-25",
+   61.0
+  ],
+  [
+   "2023-09-01",
+   61.0
+  ],
+  [
+   "2023-09-08",
+   59.5
+  ],
+  [
+   "2023-09-15",
+   59.5
+  ],
+  [
+   "2023-09-22",
+   56.5
+  ],
+  [
+   "2023-09-29",
+   56.5
+  ],
+  [
+   "2023-10-06",
+   55.5
+  ],
+  [
+   "2023-10-13",
+   35.0
+  ],
+  [
+   "2023-10-20",
+   35.5
+  ],
+  [
+   "2023-10-27",
+   37.5
+  ],
+  [
+   "2023-11-03",
+   40.5
+  ],
+  [
+   "2023-11-10",
+   42.0
+  ],
+  [
+   "2023-11-17",
+   42.0
+  ],
+  [
+   "2023-11-24",
+   38.5
+  ],
+  [
+   "2023-12-01",
+   40.5
+  ],
+  [
+   "2023-12-08",
+   39.5
+  ],
+  [
+   "2023-12-15",
+   39.5
+  ],
+  [
+   "2023-12-22",
+   36.5
+  ],
+  [
+   "2023-12-29",
+   39.0
+  ],
+  [
+   "2024-01-05",
+   41.5
+  ],
+  [
+   "2024-01-12",
+   41.5
+  ],
+  [
+   "2024-01-19",
+   41.5
+  ],
+  [
+   "2024-01-26",
+   41.5
+  ],
+  [
+   "2024-02-02",
+   41.0
+  ],
+  [
+   "2024-02-09",
+   40.0
+  ],
+  [
+   "2024-02-16",
+   40.0
+  ],
+  [
+   "2024-02-23",
+   41.0
+  ],
+  [
+   "2024-03-01",
+   41.0
+  ],
+  [
+   "2024-03-08",
+   41.0
+  ],
+  [
+   "2024-03-15",
+   41.0
+  ],
+  [
+   "2024-03-22",
+   41.0
+  ],
+  [
+   "2024-03-29",
+   39.0
+  ],
+  [
+   "2024-04-05",
+   40.0
+  ],
+  [
+   "2024-04-12",
+   40.0
+  ],
+  [
+   "2024-04-19",
+   37.5
+  ],
+  [
+   "2024-04-26",
+   40.0
+  ],
+  [
+   "2024-05-03",
+   40.0
+  ],
+  [
+   "2024-05-10",
+   40.0
+  ],
+  [
+   "2024-05-17",
+   40.0
+  ],
+  [
+   "2024-05-24",
+   38.5
+  ],
+  [
+   "2024-05-31",
+   38.5
+  ],
+  [
+   "2024-06-07",
+   38.5
+  ],
+  [
+   "2024-06-14",
+   38.5
+  ],
+  [
+   "2024-06-21",
+   31.0
+  ],
+  [
+   "2024-06-28",
+   31.0
+  ],
+  [
+   "2024-07-05",
+   31.0
+  ],
+  [
+   "2024-07-12",
+   30.0
+  ],
+  [
+   "2024-07-19",
+   30.0
+  ],
+  [
+   "2024-07-26",
+   26.0
+  ],
+  [
+   "2024-08-02",
+   23.5
+  ],
+  [
+   "2024-08-09",
+   23.0
+  ],
+  [
+   "2024-08-16",
+   22.0
+  ],
+  [
+   "2024-08-23",
+   24.0
+  ],
+  [
+   "2024-08-30",
+   24.0
+  ],
+  [
+   "2024-09-06",
+   22.0
+  ],
+  [
+   "2024-09-13",
+   22.0
+  ],
+  [
+   "2024-09-20",
+   21.5
+  ],
+  [
+   "2024-09-27",
+   21.5
+  ],
+  [
+   "2024-10-04",
+   21.0
+  ],
+  [
+   "2024-10-11",
+   21.0
+  ],
+  [
+   "2024-10-18",
+   21.0
+  ],
+  [
+   "2024-10-25",
+   20.0
+  ],
+  [
+   "2024-11-01",
+   20.0
+  ],
+  [
+   "2024-11-08",
+   19.0
+  ],
+  [
+   "2024-11-15",
+   19.0
+  ],
+  [
+   "2024-11-22",
+   19.0
+  ],
+  [
+   "2024-11-29",
+   19.0
+  ],
+  [
+   "2024-12-06",
+   20.5
+  ],
+  [
+   "2024-12-13",
+   21.4
+  ],
+  [
+   "2024-12-20",
+   21.5
+  ],
+  [
+   "2024-12-27",
+   21.5
+  ],
+  [
+   "2025-01-03",
+   21.5
+  ],
+  [
+   "2025-01-10",
+   21.5
+  ],
+  [
+   "2025-01-17",
+   23.5
+  ],
+  [
+   "2025-01-24",
+   23.5
+  ],
+  [
+   "2025-01-31",
+   23.5
+  ],
+  [
+   "2025-02-07",
+   23.5
+  ],
+  [
+   "2025-02-14",
+   23.5
+  ],
+  [
+   "2025-02-21",
+   23.5
+  ],
+  [
+   "2025-02-28",
+   23.5
+  ],
+  [
+   "2025-03-07",
+   23.5
+  ],
+  [
+   "2025-03-14",
+   23.5
+  ],
+  [
+   "2025-03-21",
+   23.5
+  ],
+  [
+   "2025-03-28",
+   23.5
+  ],
+  [
+   "2025-04-04",
+   21.0
+  ],
+  [
+   "2025-04-11",
+   20.5
+  ],
+  [
+   "2025-04-18",
+   20.5
+  ],
+  [
+   "2025-04-25",
+   20.5
+  ],
+  [
+   "2025-05-02",
+   20.5
+  ],
+  [
+   "2025-05-09",
+   20.5
+  ],
+  [
+   "2025-05-16",
+   20.5
+  ],
+  [
+   "2025-05-23",
+   20.5
+  ],
+  [
+   "2025-05-30",
+   20.5
+  ],
+  [
+   "2025-06-06",
+   17.0
+  ],
+  [
+   "2025-06-13",
+   17.0
+  ],
+  [
+   "2025-06-20",
+   17.0
+  ],
+  [
+   "2025-06-27",
+   17.5
+  ],
+  [
+   "2025-07-04",
+   17.5
+  ],
+  [
+   "2025-07-11",
+   17.5
+  ],
+  [
+   "2025-07-18",
+   17.5
+  ],
+  [
+   "2025-07-25",
+   17.5
+  ],
+  [
+   "2025-08-01",
+   17.5
+  ],
+  [
+   "2025-08-08",
+   17.5
+  ],
+  [
+   "2025-08-15",
+   17.5
+  ],
+  [
+   "2025-08-22",
+   16.0
+  ],
+  [
+   "2025-08-29",
+   15.5
+  ],
+  [
+   "2025-09-05",
+   15.5
+  ],
+  [
+   "2025-09-12",
+   15.5
+  ],
+  [
+   "2025-09-19",
+   15.5
+  ],
+  [
+   "2025-09-26",
+   15.0
+  ],
+  [
+   "2025-10-03",
+   15.0
+  ],
+  [
+   "2025-10-10",
+   14.0
+  ],
+  [
+   "2025-10-17",
+   14.0
+  ],
+  [
+   "2025-10-24",
+   14.5
+  ],
+  [
+   "2025-10-31",
+   14.5
+  ],
+  [
+   "2025-11-07",
+   14.5
+  ],
+  [
+   "2025-11-14",
+   14.5
+  ],
+  [
+   "2025-11-21",
+   14.5
+  ],
+  [
+   "2025-11-28",
+   13.5
+  ],
+  [
+   "2025-12-05",
+   11.5
+  ],
+  [
+   "2025-12-12",
+   11.5
+  ],
+  [
+   "2025-12-19",
+   11.5
+  ],
+  [
+   "2025-12-26",
+   11.5
+  ],
+  [
+   "2026-01-02",
+   12.0
+  ],
+  [
+   "2026-01-09",
+   12.0
+  ],
+  [
+   "2026-01-16",
+   12.0
+  ],
+  [
+   "2026-01-23",
+   12.0
+  ],
+  [
+   "2026-01-30",
+   13.0
+  ],
+  [
+   "2026-02-06",
+   13.0
+  ],
+  [
+   "2026-02-13",
+   13.0
+  ],
+  [
+   "2026-02-20",
+   13.0
+  ],
+  [
+   "2026-02-27",
    13.0
   ],
   [
@@ -26,10 +934,6 @@
    12.5
   ],
   [
-   "2026-04-03",
-   12.5
-  ],
-  [
    "2026-04-10",
    12.5
   ],
@@ -39,6 +943,10 @@
   ],
   [
    "2026-04-24",
+   12.5
+  ],
+  [
+   "2026-05-01",
    12.5
   ],
   [
@@ -54,7 +962,7 @@
    9.5
   ],
   [
-   "2026-06-02",
+   "2026-05-29",
    9.5
   ],
   [
@@ -79,7 +987,7 @@
   ],
   [
    "2026-07-10",
-   9.5
+   9.0
   ],
   [
    "2026-07-17",
@@ -110,7 +1018,7 @@
    7.25
   ],
   [
-   "2026-09-07",
+   "2026-09-04",
    7.125
   ],
   [
@@ -136,17 +1044,157 @@
   [
    "2026-10-16",
    5.875
+  ],
+  [
+   "2026-10-21",
+   5.25
   ]
  ],
  "marks": [
+  {
+   "d": "2021-12-03",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -2,
+   "q": "Nonetheless, Mind Gym has demonstrated significant adaptability and resilience to date and remains focused on the delivery of its leading client solutions. Our expectations for the full year therefore remain broadly unchanged.",
+   "file": "20211203_MIND_Half-year-results.md"
+  },
+  {
+   "d": "2022-04-25",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Robust performance in line with the Board's expectations, with the core business returning to pre-Covid levels:",
+   "file": "20220425_MIND_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2022-06-10",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Despite the macro economic headwinds including Russia's invasion of Ukraine, we anticipate robust top line growth in FY23, with the launch of Performa and our new PoVs on Leadership and Wellbeing.",
+   "file": "20220610_MIND_Full-Year-Results.md"
+  },
+  {
+   "d": "2022-10-18",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group's performance to date is in line with the Board's expectations and guidance for FY23 remains unchanged.",
+   "file": "20221018_MIND_Half-Year-Trading-Update.md"
+  },
+  {
+   "d": "2022-12-02",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "MindGym's outlook for the full year remains unchanged, despite the impact of economic headwinds, notably in the US.",
+   "file": "20221202_MIND_Half-Year-Results.md"
+  },
+  {
+   "d": "2023-04-24",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "The Group expects to report revenues in excess of £54.7m (FY22: £48.7m), +12% ahead of prior year (+4% in constant currency (\"cc\")), and profit before tax broadly in line with expectations.",
+   "file": "20230424_MIND_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2023-04-24",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group expects to report revenues in excess of 54.7m (FY22: £48.7m), +12% ahead of prior year (+4% in constant currency (\"cc\")), and profit before tax broadly in line with expectations.",
+   "file": "20230424_MIND_Full-Year-Trading-Update_2.md"
+  },
+  {
+   "d": "2023-06-13",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "In the short to medium term, given the macro-economic challenges, we anticipate some cautiousness from clients, however our data-backed insights and solutions continue to demonstrate value to our diversified client base.",
+   "file": "20230613_MIND_Full-Year-Results.md"
+  },
+  {
+   "d": "2023-12-01",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -2,
+   "q": "The Company is trading in line with the Board's recently revised expectations for the full year.  We started H2 FY24 with higher forward bookings than at the same point in the prior year.",
+   "file": "20231201_MIND_Half-Year-Results.md"
+  },
+  {
+   "d": "2024-04-22",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -2,
+   "q": "Despite the strong growth in bookings and pipeline, clients and CHROs remain cautious on spending commitments, and we are continuing to see delays in decision making and scaling back of projects, and an increasing use of trials prior to commitment.",
+   "file": "20240422_MIND_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2024-06-17",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "FY25 will be a year of recalibration as we implement the new strategy which will return MindGym to its historic performance levels",
+   "file": "20240617_MIND_Final-results-for-the-year-ended-31-March-2024.md"
+  },
+  {
+   "d": "2024-12-03",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "Headline revenue in FY26 is expected to be slightly lower as a result of the anticipated conclusion of the energy framework agreement in December 2024. However, underlying revenue growth is expected in FY26 and beyond.",
+   "file": "20241203_MIND_Half-Year-Results.md"
+  },
+  {
+   "d": "2025-06-12",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -2,
+   "q": "Given the continued macroeconomic uncertainty and unpredictability of client purchasing decisions, the Group is taking a more cautious view on anticipated revenue growth and now expects to deliver modest underlying revenue growth in FY26 (excluding the effect of the multi-year energy framework which represented c.£6.4m of revenues in FY25).",
+   "file": "20250612_MIND_Final-results-for-the-year-ended-31-March-2025.md"
+  },
+  {
+   "d": "2025-10-21",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "The Group continues to trade in line with the Board's expectations, with performance weighted to H2 as we see an anticipated increase in membership (subscription) revenues and the positive impact of investments made in the sales and marketing effectiveness, as well as the benefits of the lower cost base.",
+   "file": "20251021_MIND_Half-Year-Trading-Update.md"
+  },
+  {
+   "d": "2025-12-04",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Revenues in the second half of the year are expected to be stronger than the first half and this revenue growth and strong working capital management will drive a return to profitability and cash generation. The Board's expectations for adjusted EBITDA and positive year end cash balances therefore remain unchanged.",
+   "file": "20251204_MIND_Half-year-results.md"
+  },
   {
    "d": "2026-04-02",
    "doc": "YE-TU",
    "fy": "FY26",
    "g": "flat",
-   "s": 1,
+   "s": -1,
    "q": "A return to profitability: adjusted EBITDA profit of not less than £0.6m (FY25: £1.9m), compared to a first half adjusted EBITDA loss of £1m, reflecting benefit of cost reductions",
-   "file": "20260402_MIND_Year-End-Trading-Update.md"
+   "file": "20260402_MIND_Year-End-Trading-Update.md",
+   "gnote": "discounted: offer period (strategic review)"
   },
   {
    "d": "2026-06-25",
@@ -156,7 +1204,7 @@
    "s": -2,
    "q": "Pipeline growth has improved as Q1 has progressed, although trading remains challenging despite a number of significant contract opportunities that have carried over from FY26",
    "file": "20260625_MIND_Final-results-for-the-year-ended-31-March-2026.md",
-   "gnote": "discounted: offer period"
+   "gnote": "discounted: offer period (strategic review)"
   },
   {
    "d": "2026-10-19",
@@ -166,7 +1214,7 @@
    "s": -3,
    "q": "Full year revenues are now expected to be circa £25m with an underlying EBITDA loss in the range of £1.2m to £1.5m.",
    "file": "20261019_MIND_Half-Year-Trading-Update.md",
-   "gnote": "discounted: offer period"
+   "gnote": "discounted: offer period (strategic review)"
   }
  ],
  "lite": true,
@@ -179,25 +1227,25 @@
    {
     "sev": "red",
     "type": "Anchor softened",
-    "text": "Oct-25: “The Group continues to trade in line with the Board's expectations” → Oct-26: no expectations anchor at all; full-year guide replaced by a loss range",
+    "text": "Oct-25: “The Group continues to trade in line with the Board's expectations” and Jun-26: “Overall, in FY27 we anticipate a return to modest revenue growth alongside positive EBITDA” → Oct-26: no expectations anchor; the FY27 view is now “an underlying EBITDA loss in the range of £1.2m to £1.5m”",
     "span": "Board's expectations given at H1 TU Oct-22, Oct-25 and H1 R Dec-25 → first H1 update without it"
    },
    {
     "sev": "amber",
     "type": "Target dropped",
-    "text": "Jun-26: “current expectations are that by 31 March 2027, the Group will be in a net cash position” → Oct-26: net debt £1.6m, only “retains adequate liquidity”",
-    "span": "FY R Jun-26 → not mentioned"
+    "text": "Jun-26: “current expectations are that by 31 March 2027, the Group will be in a net cash position” → Oct-26: net debt of £1.6m (30 September 2025: £1.0m) and only “retains adequate liquidity”; the net cash target is not mentioned",
+    "span": "FY R Jun-26 → H1 TU Oct-26"
    },
    {
     "sev": "amber",
     "type": "Went quiet",
-    "text": "Membership revenue quantified: “Overall membership revenue is anticipated to be around £2.9m” (Apr-26), “some £3.5m in total” (Jun-26) → Oct-26 membership unquantified; “recurring license revenue is expected to be £2.1m” given instead",
+    "text": "Membership revenue was quantified: “Overall membership revenue is anticipated to be around £2.9m” (Apr-26) and “some £3.5m in total” (Jun-26) → Oct-26 gives no membership revenue figure; “recurring license revenue is expected to be £2.1m” is given instead",
     "span": "YE-TU Apr-26, FY R Jun-26 → H1 TU Oct-26"
    },
    {
     "sev": "amber",
     "type": "Wording vs number",
-    "text": "“Pipeline generation has remained resilient with £47m of additions in H1 (H1 FY26: £55m)”: pipeline additions down 15%",
+    "text": "“Pipeline generation has remained resilient with £47m of additions in H1 (H1 FY26: £55m)”, which is a 15% fall in pipeline additions",
     "span": "H1 TU Oct-26"
    }
   ]

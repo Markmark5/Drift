@@ -1,13 +1,921 @@
 {
  "ticker": "MEX",
- "v": "2026-10-19.ade1",
+ "v": "2026-10-21.e971",
  "ccy": "GBX",
- "src": "ShareScope weekly snapshots",
+ "src": "Yahoo MEX.L weekly",
  "adj": [],
  "px": [
   [
-   "2026-03-03",
-   69.5
+   "2021-10-22",
+   195.0
+  ],
+  [
+   "2021-10-29",
+   192.5
+  ],
+  [
+   "2021-11-05",
+   187.5
+  ],
+  [
+   "2021-11-12",
+   187.5
+  ],
+  [
+   "2021-11-19",
+   187.5
+  ],
+  [
+   "2021-11-26",
+   186.0
+  ],
+  [
+   "2021-12-03",
+   186.0
+  ],
+  [
+   "2021-12-10",
+   183.5
+  ],
+  [
+   "2021-12-17",
+   183.5
+  ],
+  [
+   "2021-12-24",
+   183.5
+  ],
+  [
+   "2021-12-31",
+   183.5
+  ],
+  [
+   "2022-01-07",
+   183.5
+  ],
+  [
+   "2022-01-14",
+   187.0
+  ],
+  [
+   "2022-01-21",
+   182.0
+  ],
+  [
+   "2022-01-28",
+   181.5
+  ],
+  [
+   "2022-02-04",
+   181.5
+  ],
+  [
+   "2022-02-11",
+   178.5
+  ],
+  [
+   "2022-02-18",
+   177.0
+  ],
+  [
+   "2022-02-25",
+   175.0
+  ],
+  [
+   "2022-03-04",
+   175.0
+  ],
+  [
+   "2022-03-11",
+   175.0
+  ],
+  [
+   "2022-03-18",
+   167.5
+  ],
+  [
+   "2022-03-25",
+   166.0
+  ],
+  [
+   "2022-04-01",
+   167.5
+  ],
+  [
+   "2022-04-08",
+   166.0
+  ],
+  [
+   "2022-04-15",
+   166.5
+  ],
+  [
+   "2022-04-22",
+   162.5
+  ],
+  [
+   "2022-04-29",
+   162.5
+  ],
+  [
+   "2022-05-06",
+   157.5
+  ],
+  [
+   "2022-05-13",
+   156.0
+  ],
+  [
+   "2022-05-20",
+   142.5
+  ],
+  [
+   "2022-05-27",
+   136.5
+  ],
+  [
+   "2022-06-03",
+   136.5
+  ],
+  [
+   "2022-06-10",
+   139.0
+  ],
+  [
+   "2022-06-17",
+   136.5
+  ],
+  [
+   "2022-06-24",
+   132.5
+  ],
+  [
+   "2022-07-01",
+   129.5
+  ],
+  [
+   "2022-07-08",
+   124.0
+  ],
+  [
+   "2022-07-15",
+   121.5
+  ],
+  [
+   "2022-07-22",
+   120.0
+  ],
+  [
+   "2022-07-29",
+   124.0
+  ],
+  [
+   "2022-08-05",
+   142.0
+  ],
+  [
+   "2022-08-12",
+   157.5
+  ],
+  [
+   "2022-08-19",
+   151.5
+  ],
+  [
+   "2022-08-26",
+   142.5
+  ],
+  [
+   "2022-09-02",
+   137.5
+  ],
+  [
+   "2022-09-09",
+   142.5
+  ],
+  [
+   "2022-09-16",
+   159.5
+  ],
+  [
+   "2022-09-23",
+   170.0
+  ],
+  [
+   "2022-09-30",
+   146.0
+  ],
+  [
+   "2022-10-07",
+   103.5
+  ],
+  [
+   "2022-10-14",
+   97.0
+  ],
+  [
+   "2022-10-21",
+   90.0
+  ],
+  [
+   "2022-10-28",
+   88.6
+  ],
+  [
+   "2022-11-04",
+   87.5
+  ],
+  [
+   "2022-11-11",
+   87.0
+  ],
+  [
+   "2022-11-18",
+   87.0
+  ],
+  [
+   "2022-11-25",
+   87.0
+  ],
+  [
+   "2022-12-02",
+   87.0
+  ],
+  [
+   "2022-12-09",
+   87.5
+  ],
+  [
+   "2022-12-16",
+   87.5
+  ],
+  [
+   "2022-12-23",
+   87.5
+  ],
+  [
+   "2022-12-30",
+   85.0
+  ],
+  [
+   "2023-01-06",
+   87.0
+  ],
+  [
+   "2023-01-13",
+   101.0
+  ],
+  [
+   "2023-01-20",
+   102.5
+  ],
+  [
+   "2023-01-27",
+   112.5
+  ],
+  [
+   "2023-02-03",
+   114.0
+  ],
+  [
+   "2023-02-10",
+   116.5
+  ],
+  [
+   "2023-02-17",
+   117.5
+  ],
+  [
+   "2023-02-24",
+   124.0
+  ],
+  [
+   "2023-03-03",
+   124.0
+  ],
+  [
+   "2023-03-10",
+   124.0
+  ],
+  [
+   "2023-03-17",
+   120.0
+  ],
+  [
+   "2023-03-24",
+   120.0
+  ],
+  [
+   "2023-03-31",
+   120.0
+  ],
+  [
+   "2023-04-07",
+   120.0
+  ],
+  [
+   "2023-04-14",
+   120.0
+  ],
+  [
+   "2023-04-21",
+   112.5
+  ],
+  [
+   "2023-04-28",
+   107.5
+  ],
+  [
+   "2023-05-05",
+   107.5
+  ],
+  [
+   "2023-05-12",
+   102.5
+  ],
+  [
+   "2023-05-19",
+   102.5
+  ],
+  [
+   "2023-05-26",
+   100.0
+  ],
+  [
+   "2023-06-02",
+   100.0
+  ],
+  [
+   "2023-06-09",
+   96.0
+  ],
+  [
+   "2023-06-16",
+   91.5
+  ],
+  [
+   "2023-06-23",
+   93.0
+  ],
+  [
+   "2023-06-30",
+   85.0
+  ],
+  [
+   "2023-07-07",
+   81.0
+  ],
+  [
+   "2023-07-14",
+   81.5
+  ],
+  [
+   "2023-07-21",
+   82.5
+  ],
+  [
+   "2023-07-28",
+   82.4
+  ],
+  [
+   "2023-08-04",
+   82.0
+  ],
+  [
+   "2023-08-11",
+   81.0
+  ],
+  [
+   "2023-08-18",
+   81.0
+  ],
+  [
+   "2023-08-25",
+   79.5
+  ],
+  [
+   "2023-09-01",
+   77.0
+  ],
+  [
+   "2023-09-08",
+   72.5
+  ],
+  [
+   "2023-09-15",
+   73.0
+  ],
+  [
+   "2023-09-22",
+   70.5
+  ],
+  [
+   "2023-09-29",
+   70.4
+  ],
+  [
+   "2023-10-06",
+   62.4
+  ],
+  [
+   "2023-10-13",
+   62.5
+  ],
+  [
+   "2023-10-20",
+   62.5
+  ],
+  [
+   "2023-10-27",
+   64.0
+  ],
+  [
+   "2023-11-03",
+   61.0
+  ],
+  [
+   "2023-11-10",
+   59.0
+  ],
+  [
+   "2023-11-17",
+   57.5
+  ],
+  [
+   "2023-11-24",
+   59.0
+  ],
+  [
+   "2023-12-01",
+   56.0
+  ],
+  [
+   "2023-12-08",
+   56.0
+  ],
+  [
+   "2023-12-15",
+   55.0
+  ],
+  [
+   "2023-12-22",
+   49.5
+  ],
+  [
+   "2023-12-29",
+   49.5
+  ],
+  [
+   "2024-01-05",
+   49.0
+  ],
+  [
+   "2024-01-12",
+   45.5
+  ],
+  [
+   "2024-01-19",
+   42.5
+  ],
+  [
+   "2024-01-26",
+   41.5
+  ],
+  [
+   "2024-02-02",
+   40.0
+  ],
+  [
+   "2024-02-09",
+   38.0
+  ],
+  [
+   "2024-02-16",
+   38.0
+  ],
+  [
+   "2024-02-23",
+   38.5
+  ],
+  [
+   "2024-03-01",
+   48.0
+  ],
+  [
+   "2024-03-08",
+   56.6
+  ],
+  [
+   "2024-03-15",
+   56.0
+  ],
+  [
+   "2024-03-22",
+   51.0
+  ],
+  [
+   "2024-03-29",
+   46.0
+  ],
+  [
+   "2024-04-05",
+   49.5
+  ],
+  [
+   "2024-04-12",
+   48.5
+  ],
+  [
+   "2024-04-19",
+   44.5
+  ],
+  [
+   "2024-04-26",
+   48.5
+  ],
+  [
+   "2024-05-03",
+   48.0
+  ],
+  [
+   "2024-05-10",
+   49.0
+  ],
+  [
+   "2024-05-17",
+   51.5
+  ],
+  [
+   "2024-05-24",
+   55.0
+  ],
+  [
+   "2024-05-31",
+   52.5
+  ],
+  [
+   "2024-06-07",
+   52.0
+  ],
+  [
+   "2024-06-14",
+   52.0
+  ],
+  [
+   "2024-06-21",
+   52.5
+  ],
+  [
+   "2024-06-28",
+   60.0
+  ],
+  [
+   "2024-07-05",
+   64.5
+  ],
+  [
+   "2024-07-12",
+   62.5
+  ],
+  [
+   "2024-07-19",
+   62.0
+  ],
+  [
+   "2024-07-26",
+   54.0
+  ],
+  [
+   "2024-08-02",
+   54.0
+  ],
+  [
+   "2024-08-09",
+   54.0
+  ],
+  [
+   "2024-08-16",
+   52.0
+  ],
+  [
+   "2024-08-23",
+   50.0
+  ],
+  [
+   "2024-08-30",
+   51.0
+  ],
+  [
+   "2024-09-06",
+   50.5
+  ],
+  [
+   "2024-09-13",
+   52.0
+  ],
+  [
+   "2024-09-20",
+   50.0
+  ],
+  [
+   "2024-09-27",
+   50.0
+  ],
+  [
+   "2024-10-04",
+   53.0
+  ],
+  [
+   "2024-10-11",
+   50.0
+  ],
+  [
+   "2024-10-18",
+   51.0
+  ],
+  [
+   "2024-10-25",
+   50.5
+  ],
+  [
+   "2024-11-01",
+   51.5
+  ],
+  [
+   "2024-11-08",
+   48.0
+  ],
+  [
+   "2024-11-15",
+   48.0
+  ],
+  [
+   "2024-11-22",
+   48.6
+  ],
+  [
+   "2024-11-29",
+   48.2
+  ],
+  [
+   "2024-12-06",
+   52.0
+  ],
+  [
+   "2024-12-13",
+   50.0
+  ],
+  [
+   "2024-12-20",
+   51.0
+  ],
+  [
+   "2024-12-27",
+   52.0
+  ],
+  [
+   "2025-01-03",
+   51.5
+  ],
+  [
+   "2025-01-10",
+   51.5
+  ],
+  [
+   "2025-01-17",
+   51.0
+  ],
+  [
+   "2025-01-24",
+   49.5
+  ],
+  [
+   "2025-01-31",
+   49.5
+  ],
+  [
+   "2025-02-07",
+   49.5
+  ],
+  [
+   "2025-02-14",
+   49.5
+  ],
+  [
+   "2025-02-21",
+   49.0
+  ],
+  [
+   "2025-02-28",
+   48.5
+  ],
+  [
+   "2025-03-07",
+   45.0
+  ],
+  [
+   "2025-03-14",
+   45.0
+  ],
+  [
+   "2025-03-21",
+   43.5
+  ],
+  [
+   "2025-03-28",
+   38.2
+  ],
+  [
+   "2025-04-04",
+   37.0
+  ],
+  [
+   "2025-04-11",
+   36.8
+  ],
+  [
+   "2025-04-18",
+   35.0
+  ],
+  [
+   "2025-04-25",
+   36.0
+  ],
+  [
+   "2025-05-02",
+   36.5
+  ],
+  [
+   "2025-05-09",
+   36.0
+  ],
+  [
+   "2025-05-16",
+   36.0
+  ],
+  [
+   "2025-05-23",
+   38.0
+  ],
+  [
+   "2025-05-30",
+   39.5
+  ],
+  [
+   "2025-06-06",
+   39.5
+  ],
+  [
+   "2025-06-13",
+   39.5
+  ],
+  [
+   "2025-06-20",
+   41.5
+  ],
+  [
+   "2025-06-27",
+   42.5
+  ],
+  [
+   "2025-07-04",
+   44.5
+  ],
+  [
+   "2025-07-11",
+   45.0
+  ],
+  [
+   "2025-07-18",
+   45.0
+  ],
+  [
+   "2025-07-25",
+   44.5
+  ],
+  [
+   "2025-08-01",
+   44.0
+  ],
+  [
+   "2025-08-08",
+   43.0
+  ],
+  [
+   "2025-08-15",
+   44.6
+  ],
+  [
+   "2025-08-22",
+   45.0
+  ],
+  [
+   "2025-08-29",
+   43.6
+  ],
+  [
+   "2025-09-05",
+   43.5
+  ],
+  [
+   "2025-09-12",
+   43.5
+  ],
+  [
+   "2025-09-19",
+   40.0
+  ],
+  [
+   "2025-09-26",
+   39.0
+  ],
+  [
+   "2025-10-03",
+   38.6
+  ],
+  [
+   "2025-10-10",
+   37.0
+  ],
+  [
+   "2025-10-17",
+   37.6
+  ],
+  [
+   "2025-10-24",
+   37.0
+  ],
+  [
+   "2025-10-31",
+   36.5
+  ],
+  [
+   "2025-11-07",
+   36.0
+  ],
+  [
+   "2025-11-14",
+   34.8
+  ],
+  [
+   "2025-11-21",
+   37.0
+  ],
+  [
+   "2025-11-28",
+   37.0
+  ],
+  [
+   "2025-12-05",
+   38.0
+  ],
+  [
+   "2025-12-12",
+   41.0
+  ],
+  [
+   "2025-12-19",
+   42.5
+  ],
+  [
+   "2025-12-26",
+   42.5
+  ],
+  [
+   "2026-01-02",
+   51.0
+  ],
+  [
+   "2026-01-09",
+   52.5
+  ],
+  [
+   "2026-01-16",
+   53.0
+  ],
+  [
+   "2026-01-23",
+   51.5
+  ],
+  [
+   "2026-01-30",
+   53.5
+  ],
+  [
+   "2026-02-06",
+   60.0
+  ],
+  [
+   "2026-02-13",
+   62.0
+  ],
+  [
+   "2026-02-20",
+   66.0
+  ],
+  [
+   "2026-02-27",
+   67.5
   ],
   [
    "2026-03-06",
@@ -19,11 +927,11 @@
   ],
   [
    "2026-03-20",
-   69.5
+   70.5
   ],
   [
    "2026-03-27",
-   71.0
+   73.0
   ],
   [
    "2026-04-03",
@@ -35,15 +943,19 @@
   ],
   [
    "2026-04-17",
-   80.0
+   77.0
   ],
   [
    "2026-04-24",
    78.0
   ],
   [
-   "2026-05-08",
+   "2026-05-01",
    77.5
+  ],
+  [
+   "2026-05-08",
+   76.5
   ],
   [
    "2026-05-15",
@@ -54,8 +966,8 @@
    74.5
   ],
   [
-   "2026-06-02",
-   74.5
+   "2026-05-29",
+   76.5
   ],
   [
    "2026-06-05",
@@ -91,7 +1003,7 @@
   ],
   [
    "2026-07-31",
-   74.0
+   72.5
   ],
   [
    "2026-08-07",
@@ -103,14 +1015,14 @@
   ],
   [
    "2026-08-21",
-   69.0
+   71.5
   ],
   [
    "2026-08-28",
    71.0
   ],
   [
-   "2026-09-07",
+   "2026-09-04",
    71.0
   ],
   [
@@ -127,7 +1039,7 @@
   ],
   [
    "2026-10-02",
-   72.5
+   71.5
   ],
   [
    "2026-10-09",
@@ -135,10 +1047,178 @@
   ],
   [
    "2026-10-16",
+   70.0
+  ],
+  [
+   "2026-10-21",
    71.0
   ]
  ],
  "marks": [
+  {
+   "d": "2022-01-10",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "RAISE",
+   "s": 3,
+   "q": "FY21 revenue and profits are materially ahead of our expectations following stronger trading in Q4, despite the emergence of the Omicron variant of Covid-19",
+   "file": "20220110_MEX_Trading-Update.md"
+  },
+  {
+   "d": "2022-04-11",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Strong trading momentum delivered in the Period has continued into 2022, with LFL growth of 20.1% year to date, in line with expectations",
+   "file": "20220411_MEX_Annual-Results.md"
+  },
+  {
+   "d": "2022-07-18",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -2,
+   "q": "As has been widely documented, the Period saw challenging operating conditions across the restaurant sector, notably significant levels of cost inflation, which became more pronounced towards the end of the Period and these macro-economic headwinds are expected to persist over the coming months.",
+   "file": "20220718_MEX_H1-2022-Trading-Update.md"
+  },
+  {
+   "d": "2022-10-03",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "CUT",
+   "s": -2,
+   "q": "These industry headwinds will have a material impact on profitability in H2, and it is prudent to assume that inflationary cost pressures will continue beyond FY22.",
+   "file": "20221003_MEX_Interim-Results.md"
+  },
+  {
+   "d": "2023-01-09",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Some favourable changes in input costs, together with actions taken by management and the strong trade in the majority of the fourth quarter give the Board confidence that FY22 revenue and profit will be in line with market expectations*.",
+   "file": "20230109_MEX_FY-&-Q4-Trading-Update.md"
+  },
+  {
+   "d": "2023-03-27",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board remains confident in the Group's ability to perform in line with market expectations for FY23*.",
+   "file": "20230327_MEX_Annual-Results-&-Publication-of-Annual-Report.md"
+  },
+  {
+   "d": "2023-07-17",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "While the widely publicised economic pressures impacting the sector remain, management has successfully implemented several efficiency and cost-saving initiatives including utilities hedging that are supporting Group profitability and these will continue in the second half.",
+   "file": "20230717_MEX_H1-2023-Trading-Update.md"
+  },
+  {
+   "d": "2023-10-03",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -2,
+   "q": "Considering the secured upside from our cost hedging, the exciting initiatives launched to drive evening trade and the resilient trading performance of the Group, we remain confident of being broadly in line with our targeted Adjusted EBITDA for FY23 and we expect to see the full year benefit of these initiatives next year.",
+   "file": "20231003_MEX_Interim-Results.md"
+  },
+  {
+   "d": "2023-12-20",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -2,
+   "q": "As a result of these factors, the Board currently anticipates Adjusted EBITDA for FY23 will be in the range of £4.5m - £4.6m.",
+   "file": "20231220_MEX_FY23-Trading-Update.md"
+  },
+  {
+   "d": "2024-04-24",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "Current trading is in line with management expectations and our profit conversion is improving. Our LFL sales are 4.7% down, which is in line with expectation and reflecting the anticipated impact of change in delivery strategy in February this year.",
+   "file": "20240424_MEX_Annual-Results-and-Publication-of-Annual-Report.md"
+  },
+  {
+   "d": "2024-06-25",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The core UK business is trading in line with the Board's full year expectations.",
+   "file": "20240625_MEX_Tortilla-Acquires-Largest-European-Competitor.md"
+  },
+  {
+   "d": "2024-07-24",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -3,
+   "q": "The early results are encouraging, however, the benefits of these initiatives will be slower than originally anticipated, and this combined with an ongoing challenging trading environment, means the Board now expects Adjusted EBITDA (excluding the recent Fresh Burritos acquisition) to be £5.0m for 2024.",
+   "file": "20240724_MEX_H1-2024-Trading-Update.md"
+  },
+  {
+   "d": "2024-09-25",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 1,
+   "q": "As we approach Q4 we continue to see positive signs of the hard work conducted by the team in the first half of the year, with current trading in line with management expectations.",
+   "file": "20240925_MEX_Unaudited-Interim-Results.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2024-12-10",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "Whilst the phasing of the delivery of our French strategy will impact our French profitability in 2025, with a new much improved brand proposition we feel more confident of achieving our longer-term goals in this market.",
+   "file": "20241210_MEX_Trading-update.md"
+  },
+  {
+   "d": "2025-05-21",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -2,
+   "q": "We remain confident that our investment in food, technology and marketing will continue to support robust LFL sales growth going forward and we confirm that the full year outlook for the UK is in line with management expectations.",
+   "file": "20250521_MEX_Final-Results.md"
+  },
+  {
+   "d": "2025-08-06",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 1,
+   "q": "The Board expects the Group's FY 2025 results to be in line with market expectations.",
+   "file": "20250806_MEX_Trading-Statement.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2025-09-30",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -3,
+   "q": "Overall, the Board now expects adjusted EBITDA for FY25 to be around 10 per cent below previous expectations. This reflects record results from the core UK business, offset by continued investment in France due to the timing of site conversions.",
+   "file": "20250930_MEX_Half-year-Report.md"
+  },
+  {
+   "d": "2026-01-28",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Adjusted EBITDA (pre‑IFRS 16) [3] for FY25 is expected to be in line with management expectations, following a strong performance in Q4.",
+   "file": "20260128_MEX_Trading-Statement.md"
+  },
   {
    "d": "2026-05-19",
    "doc": "YE-TU",
@@ -153,7 +1233,7 @@
    "doc": "FY R",
    "fy": "FY26",
    "g": "flat",
-   "s": -1,
+   "s": -2,
    "q": "While the consumer environment remains challenging, I am confident in the agenda we have set: the reset is not a reduction in our ambition, but a change in how we will deliver against it.",
    "file": "20260727_MEX_Final-Results.md"
   },
@@ -163,7 +1243,7 @@
    "fy": "FY26",
    "g": "flat",
    "s": 0,
-   "q": "While the consumer environment remains challenging, I am confident in the agenda we have set: the reset is not a reduction in our ambition, but a change in how we will deliver against it.",
+   "q": "Tortilla UK has delivered strong trading momentum in the first 26 weeks of 2026. LFL sales for H1 2026 were +13.9%, supported by volume growth of +4.8%.",
    "file": "20260727_MEX_Final-Results---Replacement.md"
   },
   {
@@ -186,25 +1266,25 @@
    {
     "sev": "red",
     "type": "Anchor softened",
-    "text": "Full-year anchor gone: Sep-25 “the Board now expects adjusted EBITDA for FY25 to be around 10 per cent below previous expectations”, Sep-24 “Current Trading is in line with management expectations for the full year 2024” → Sep-26 no FY26 EBITDA view or expectations anchor",
-    "span": "Given at Oct-23, Sep-24, Sep-25 → first gap in 3 years"
+    "text": "Full-year anchor gone: Sep-25 “the Board now expects adjusted EBITDA for FY25 to be around 10 per cent below previous expectations”, Sep-24 “Current Trading is in line with management expectations for the full year 2024” → Sep-26 no FY26 EBITDA view or expectations anchor of any kind",
+    "span": "Given at H1 Oct-23, Sep-24, Sep-25 → first interim without one in 3 years"
    },
    {
     "sev": "amber",
     "type": "Restated",
-    "text": "H1 FY25 adjusted EBITDA was “of £1.2m (H1 FY24: £1.8m)” → now shown as “(H1 FY25: loss £0.4m)”; H1 FY25 net debt “was £9.8m at period end” → “(H1 FY25: £9.9m)”",
-    "span": "H1 R Sep-25 → H1 R Sep-26"
+    "text": "H1 FY25 Group adjusted EBITDA was “of £1.2m (H1 FY24: £1.8m)” → now “(H1 FY25: loss £0.4m)”; France H1 FY25 “offset by a £1.2m loss in France” → “(H1 FY25: loss £2.8m)”; H1 FY25 net debt “was £9.8m at period end” → “(H1 FY25: £9.9m)”",
+    "span": "H1 R Sep-25 → H1 R Sep-26 (follows the French accounting review)"
    },
    {
     "sev": "amber",
     "type": "Target dropped",
-    "text": "May-26 promised “together with an update on the outlook for FY26” → not given at the Jul-26 results or the Sep-26 interims",
+    "text": "May-26 promised the audited results “together with an update on the outlook for FY26” → no FY26 outlook figure at the Jul-26 results or the Sep-26 interims; Jan-26 view “the outlook for FY26 will continue to show good improvement over FY25” not repeated",
     "span": "May-26 → Jul-26 → Sep-26"
    },
    {
     "sev": "amber",
     "type": "Wording vs number",
-    "text": "“We have strong momentum” with UK LFL +13.9%, but “The UK business generated £2.6m adjusted EBITDA, an increase of £0.2m over the prior half year”",
+    "text": "“We have strong momentum.” and UK LFL +13.9%, but “The UK business generated £2.6m adjusted EBITDA, an increase of £0.2m over the prior half year” and adjusted net debt rose to £12.4m (H1 FY25: £9.9m)",
     "span": "H1 R Sep-26"
    }
   ]
