@@ -1,0 +1,1372 @@
+{
+ "ticker": "GFTU",
+ "v": "2026-10-21.86ec",
+ "ccy": "GBX",
+ "src": "AlphaVantage GFTU.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   1321.0
+  ],
+  [
+   "2021-10-22",
+   1312.0
+  ],
+  [
+   "2021-10-29",
+   1341.0
+  ],
+  [
+   "2021-11-05",
+   1360.0
+  ],
+  [
+   "2021-11-12",
+   1270.0
+  ],
+  [
+   "2021-11-19",
+   1250.0
+  ],
+  [
+   "2021-11-26",
+   1164.0
+  ],
+  [
+   "2021-12-03",
+   1200.0
+  ],
+  [
+   "2021-12-10",
+   1185.0
+  ],
+  [
+   "2021-12-17",
+   1188.0
+  ],
+  [
+   "2021-12-24",
+   1204.0
+  ],
+  [
+   "2021-12-31",
+   1233.0
+  ],
+  [
+   "2022-01-07",
+   1196.0
+  ],
+  [
+   "2022-01-14",
+   1178.0
+  ],
+  [
+   "2022-01-21",
+   1183.0
+  ],
+  [
+   "2022-01-28",
+   1133.0
+  ],
+  [
+   "2022-02-04",
+   1125.0
+  ],
+  [
+   "2022-02-11",
+   1115.0
+  ],
+  [
+   "2022-02-18",
+   1074.0
+  ],
+  [
+   "2022-02-25",
+   1056.0
+  ],
+  [
+   "2022-03-04",
+   1001.0
+  ],
+  [
+   "2022-03-11",
+   971.5
+  ],
+  [
+   "2022-03-18",
+   1044.0
+  ],
+  [
+   "2022-03-25",
+   990.0
+  ],
+  [
+   "2022-04-01",
+   990.8
+  ],
+  [
+   "2022-04-08",
+   1015.0
+  ],
+  [
+   "2022-04-14",
+   1001.0
+  ],
+  [
+   "2022-04-22",
+   1017.6
+  ],
+  [
+   "2022-04-29",
+   979.8
+  ],
+  [
+   "2022-05-06",
+   873.8
+  ],
+  [
+   "2022-05-13",
+   909.4
+  ],
+  [
+   "2022-05-20",
+   877.0
+  ],
+  [
+   "2022-05-27",
+   948.0
+  ],
+  [
+   "2022-06-01",
+   924.8
+  ],
+  [
+   "2022-06-10",
+   891.8
+  ],
+  [
+   "2022-06-17",
+   817.3
+  ],
+  [
+   "2022-06-24",
+   793.6
+  ],
+  [
+   "2022-07-01",
+   781.8
+  ],
+  [
+   "2022-07-08",
+   767.6
+  ],
+  [
+   "2022-07-15",
+   783.6
+  ],
+  [
+   "2022-07-22",
+   810.0
+  ],
+  [
+   "2022-07-29",
+   845.2
+  ],
+  [
+   "2022-08-05",
+   810.5
+  ],
+  [
+   "2022-08-12",
+   830.4
+  ],
+  [
+   "2022-08-19",
+   742.6
+  ],
+  [
+   "2022-08-26",
+   721.1
+  ],
+  [
+   "2022-09-02",
+   711.4
+  ],
+  [
+   "2022-09-09",
+   747.4
+  ],
+  [
+   "2022-09-16",
+   737.6
+  ],
+  [
+   "2022-09-23",
+   705.6
+  ],
+  [
+   "2022-09-30",
+   671.8
+  ],
+  [
+   "2022-10-07",
+   662.0
+  ],
+  [
+   "2022-10-14",
+   673.7
+  ],
+  [
+   "2022-10-21",
+   666.0
+  ],
+  [
+   "2022-10-28",
+   692.6
+  ],
+  [
+   "2022-11-04",
+   715.1
+  ],
+  [
+   "2022-11-11",
+   828.0
+  ],
+  [
+   "2022-11-18",
+   787.5
+  ],
+  [
+   "2022-11-25",
+   808.7
+  ],
+  [
+   "2022-12-02",
+   795.5
+  ],
+  [
+   "2022-12-09",
+   793.6
+  ],
+  [
+   "2022-12-16",
+   774.2
+  ],
+  [
+   "2022-12-23",
+   791.0
+  ],
+  [
+   "2022-12-30",
+   788.6
+  ],
+  [
+   "2023-01-06",
+   861.9
+  ],
+  [
+   "2023-01-13",
+   901.1
+  ],
+  [
+   "2023-01-20",
+   892.6
+  ],
+  [
+   "2023-01-27",
+   919.4
+  ],
+  [
+   "2023-02-03",
+   984.0
+  ],
+  [
+   "2023-02-10",
+   953.8
+  ],
+  [
+   "2023-02-17",
+   955.2999
+  ],
+  [
+   "2023-02-24",
+   933.1
+  ],
+  [
+   "2023-03-03",
+   926.0
+  ],
+  [
+   "2023-03-10",
+   876.8
+  ],
+  [
+   "2023-03-17",
+   852.3
+  ],
+  [
+   "2023-03-24",
+   843.6
+  ],
+  [
+   "2023-03-31",
+   885.6
+  ],
+  [
+   "2023-04-06",
+   841.1
+  ],
+  [
+   "2023-04-14",
+   864.3
+  ],
+  [
+   "2023-04-21",
+   855.4
+  ],
+  [
+   "2023-04-28",
+   866.8
+  ],
+  [
+   "2023-05-05",
+   863.9
+  ],
+  [
+   "2023-05-12",
+   847.6
+  ],
+  [
+   "2023-05-19",
+   868.0
+  ],
+  [
+   "2023-05-26",
+   819.6
+  ],
+  [
+   "2023-06-02",
+   855.9
+  ],
+  [
+   "2023-06-09",
+   851.8
+  ],
+  [
+   "2023-06-16",
+   819.7
+  ],
+  [
+   "2023-06-23",
+   765.0
+  ],
+  [
+   "2023-06-30",
+   781.7
+  ],
+  [
+   "2023-07-07",
+   754.9
+  ],
+  [
+   "2023-07-14",
+   813.6
+  ],
+  [
+   "2023-07-21",
+   863.3
+  ],
+  [
+   "2023-07-28",
+   877.5
+  ],
+  [
+   "2023-08-04",
+   885.0
+  ],
+  [
+   "2023-08-11",
+   878.3
+  ],
+  [
+   "2023-08-18",
+   830.0
+  ],
+  [
+   "2023-08-25",
+   822.2
+  ],
+  [
+   "2023-09-01",
+   865.5
+  ],
+  [
+   "2023-09-08",
+   887.3
+  ],
+  [
+   "2023-09-15",
+   914.1
+  ],
+  [
+   "2023-09-22",
+   897.8
+  ],
+  [
+   "2023-09-29",
+   904.0
+  ],
+  [
+   "2023-10-06",
+   861.8
+  ],
+  [
+   "2023-10-13",
+   780.0
+  ],
+  [
+   "2023-10-20",
+   754.7
+  ],
+  [
+   "2023-10-27",
+   762.7
+  ],
+  [
+   "2023-11-03",
+   787.3
+  ],
+  [
+   "2023-11-10",
+   780.0
+  ],
+  [
+   "2023-11-17",
+   813.3
+  ],
+  [
+   "2023-11-24",
+   810.5
+  ],
+  [
+   "2023-12-01",
+   820.7
+  ],
+  [
+   "2023-12-08",
+   864.0
+  ],
+  [
+   "2023-12-15",
+   933.9
+  ],
+  [
+   "2023-12-22",
+   937.9
+  ],
+  [
+   "2023-12-29",
+   911.1
+  ],
+  [
+   "2024-01-05",
+   886.6
+  ],
+  [
+   "2024-01-12",
+   905.0
+  ],
+  [
+   "2024-01-19",
+   916.4
+  ],
+  [
+   "2024-01-26",
+   968.3
+  ],
+  [
+   "2024-02-02",
+   969.5
+  ],
+  [
+   "2024-02-09",
+   962.4
+  ],
+  [
+   "2024-02-16",
+   989.9
+  ],
+  [
+   "2024-02-23",
+   978.8
+  ],
+  [
+   "2024-03-01",
+   983.0
+  ],
+  [
+   "2024-03-08",
+   983.4
+  ],
+  [
+   "2024-03-15",
+   987.6
+  ],
+  [
+   "2024-03-22",
+   993.9
+  ],
+  [
+   "2024-03-28",
+   1002.2
+  ],
+  [
+   "2024-04-05",
+   985.5
+  ],
+  [
+   "2024-04-12",
+   971.5
+  ],
+  [
+   "2024-04-19",
+   926.3
+  ],
+  [
+   "2024-04-26",
+   952.0
+  ],
+  [
+   "2024-05-03",
+   910.0
+  ],
+  [
+   "2024-05-10",
+   973.4
+  ],
+  [
+   "2024-05-17",
+   980.4
+  ],
+  [
+   "2024-05-24",
+   1023.0
+  ],
+  [
+   "2024-05-31",
+   993.0
+  ],
+  [
+   "2024-06-07",
+   982.7
+  ],
+  [
+   "2024-06-14",
+   942.0
+  ],
+  [
+   "2024-06-21",
+   958.2
+  ],
+  [
+   "2024-06-28",
+   928.3
+  ],
+  [
+   "2024-07-05",
+   960.0
+  ],
+  [
+   "2024-07-12",
+   1023.8
+  ],
+  [
+   "2024-07-19",
+   1020.0
+  ],
+  [
+   "2024-07-26",
+   1051.6
+  ],
+  [
+   "2024-08-02",
+   1017.0
+  ],
+  [
+   "2024-08-09",
+   1006.8
+  ],
+  [
+   "2024-08-16",
+   1027.0
+  ],
+  [
+   "2024-08-23",
+   1054.4
+  ],
+  [
+   "2024-08-30",
+   1079.4
+  ],
+  [
+   "2024-09-06",
+   1018.8
+  ],
+  [
+   "2024-09-13",
+   1049.6
+  ],
+  [
+   "2024-09-20",
+   1068.0
+  ],
+  [
+   "2024-09-27",
+   1060.4
+  ],
+  [
+   "2024-10-04",
+   1038.4
+  ],
+  [
+   "2024-10-11",
+   1039.4
+  ],
+  [
+   "2024-10-18",
+   1064.6
+  ],
+  [
+   "2024-10-25",
+   1008.4
+  ],
+  [
+   "2024-11-01",
+   1015.0
+  ],
+  [
+   "2024-11-08",
+   972.6
+  ],
+  [
+   "2024-11-15",
+   971.6
+  ],
+  [
+   "2024-11-22",
+   961.2
+  ],
+  [
+   "2024-11-29",
+   941.7
+  ],
+  [
+   "2024-12-06",
+   964.3
+  ],
+  [
+   "2024-12-13",
+   961.7
+  ],
+  [
+   "2024-12-20",
+   961.1
+  ],
+  [
+   "2024-12-24",
+   957.0
+  ],
+  [
+   "2024-12-27",
+   949.1
+  ],
+  [
+   "2025-01-03",
+   947.0
+  ],
+  [
+   "2025-01-10",
+   875.0
+  ],
+  [
+   "2025-01-17",
+   903.7
+  ],
+  [
+   "2025-01-24",
+   903.6
+  ],
+  [
+   "2025-01-31",
+   929.7
+  ],
+  [
+   "2025-02-07",
+   909.3
+  ],
+  [
+   "2025-02-14",
+   922.6
+  ],
+  [
+   "2025-02-21",
+   857.2001
+  ],
+  [
+   "2025-02-28",
+   833.6
+  ],
+  [
+   "2025-03-07",
+   877.7
+  ],
+  [
+   "2025-03-14",
+   866.0
+  ],
+  [
+   "2025-03-21",
+   868.5
+  ],
+  [
+   "2025-03-28",
+   877.2
+  ],
+  [
+   "2025-04-04",
+   838.6
+  ],
+  [
+   "2025-04-11",
+   849.8
+  ],
+  [
+   "2025-04-17",
+   884.1
+  ],
+  [
+   "2025-04-25",
+   888.9
+  ],
+  [
+   "2025-05-02",
+   919.7
+  ],
+  [
+   "2025-05-09",
+   987.2
+  ],
+  [
+   "2025-05-16",
+   1009.4
+  ],
+  [
+   "2025-05-23",
+   997.8
+  ],
+  [
+   "2025-05-30",
+   1010.6
+  ],
+  [
+   "2025-06-06",
+   1011.2
+  ],
+  [
+   "2025-06-13",
+   1009.2
+  ],
+  [
+   "2025-06-20",
+   987.6
+  ],
+  [
+   "2025-06-27",
+   1025.4
+  ],
+  [
+   "2025-07-04",
+   994.5
+  ],
+  [
+   "2025-07-11",
+   909.1
+  ],
+  [
+   "2025-07-18",
+   918.4
+  ],
+  [
+   "2025-07-25",
+   910.8
+  ],
+  [
+   "2025-08-01",
+   884.9
+  ],
+  [
+   "2025-08-08",
+   880.7
+  ],
+  [
+   "2025-08-15",
+   878.0
+  ],
+  [
+   "2025-08-22",
+   902.2
+  ],
+  [
+   "2025-08-29",
+   874.1
+  ],
+  [
+   "2025-09-05",
+   885.2
+  ],
+  [
+   "2025-09-12",
+   890.3
+  ],
+  [
+   "2025-09-19",
+   882.9
+  ],
+  [
+   "2025-09-26",
+   906.9
+  ],
+  [
+   "2025-10-03",
+   932.4
+  ],
+  [
+   "2025-10-10",
+   901.8
+  ],
+  [
+   "2025-10-17",
+   911.9
+  ],
+  [
+   "2025-10-24",
+   986.2
+  ],
+  [
+   "2025-10-31",
+   952.0
+  ],
+  [
+   "2025-11-07",
+   930.0
+  ],
+  [
+   "2025-11-14",
+   914.7
+  ],
+  [
+   "2025-11-21",
+   883.9
+  ],
+  [
+   "2025-11-28",
+   945.4
+  ],
+  [
+   "2025-12-05",
+   928.2
+  ],
+  [
+   "2025-12-12",
+   927.8
+  ],
+  [
+   "2025-12-19",
+   934.7
+  ],
+  [
+   "2025-12-24",
+   930.6
+  ],
+  [
+   "2026-01-02",
+   923.7
+  ],
+  [
+   "2026-01-09",
+   950.0
+  ],
+  [
+   "2026-01-16",
+   943.1
+  ],
+  [
+   "2026-01-23",
+   934.9
+  ],
+  [
+   "2026-01-30",
+   935.2
+  ],
+  [
+   "2026-02-06",
+   956.4
+  ],
+  [
+   "2026-02-13",
+   985.2
+  ],
+  [
+   "2026-02-20",
+   987.5
+  ],
+  [
+   "2026-02-27",
+   989.8
+  ],
+  [
+   "2026-03-06",
+   919.4
+  ],
+  [
+   "2026-03-13",
+   903.2
+  ],
+  [
+   "2026-03-20",
+   911.0
+  ],
+  [
+   "2026-03-27",
+   896.1
+  ],
+  [
+   "2026-04-02",
+   897.4
+  ],
+  [
+   "2026-04-10",
+   918.2
+  ],
+  [
+   "2026-04-17",
+   962.0
+  ],
+  [
+   "2026-04-24",
+   913.0
+  ],
+  [
+   "2026-05-01",
+   887.8
+  ],
+  [
+   "2026-05-08",
+   870.3
+  ],
+  [
+   "2026-05-15",
+   808.4
+  ],
+  [
+   "2026-05-22",
+   827.3
+  ],
+  [
+   "2026-05-29",
+   830.1
+  ],
+  [
+   "2026-06-05",
+   826.7
+  ],
+  [
+   "2026-06-12",
+   875.0
+  ],
+  [
+   "2026-06-19",
+   882.1
+  ],
+  [
+   "2026-06-26",
+   912.6
+  ],
+  [
+   "2026-07-03",
+   904.3
+  ],
+  [
+   "2026-07-10",
+   878.8
+  ],
+  [
+   "2026-07-17",
+   944.8
+  ],
+  [
+   "2026-07-24",
+   943.5
+  ],
+  [
+   "2026-07-31",
+   965.7
+  ],
+  [
+   "2026-08-07",
+   1042.8
+  ],
+  [
+   "2026-08-14",
+   1048.0
+  ],
+  [
+   "2026-08-21",
+   1032.6
+  ],
+  [
+   "2026-08-28",
+   1041.8
+  ],
+  [
+   "2026-09-04",
+   1007.2
+  ],
+  [
+   "2026-09-11",
+   954.1
+  ],
+  [
+   "2026-09-18",
+   960.5
+  ],
+  [
+   "2026-09-25",
+   963.9
+  ],
+  [
+   "2026-10-02",
+   934.3
+  ],
+  [
+   "2026-10-09",
+   936.2
+  ],
+  [
+   "2026-10-16",
+   993.0
+  ],
+  [
+   "2026-10-20",
+   981.6
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-11-09",
+   "doc": "Q3 TU",
+   "fy": "FY21",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Trading in the period was stronger than anticipated and we now expect that full year Group adjusted operating profit1 in continuing operations will be in the range of £265 million to £270 million.",
+   "file": "20211109_GFTU_Trading-Statement.md"
+  },
+  {
+   "d": "2022-01-12",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "RAISE",
+   "s": 1,
+   "q": "The Group had an exceptional performance in 2021 and we now expect to report record full year adjusted operating profit1 in continuing operations at the top end of expectations.",
+   "file": "20220112_GFTU_Trading-Update.md"
+  },
+  {
+   "d": "2022-02-24",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading year to date has been encouraging and the outlook for 2022 is positive, supported by strong housing and RMI markets, the inherent strength of our businesses, our strong balance sheet and future investment opportunities.",
+   "file": "20220224_GFTU_Final-Results.md"
+  },
+  {
+   "d": "2022-04-28",
+   "doc": "AGM",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Although there are uncertainties around the future strength of consumer demand, we see no reason to adjust our full year expectations of operating profit (pre-property profit) at this early stage of the year.",
+   "file": "20220428_GFTU_Trading-Update.md"
+  },
+  {
+   "d": "2022-07-12",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "While the international macro-economic outlook has weakened in recent months and created increased uncertainty, we see no reason to adjust our full year operating profit expectations at this stage.",
+   "file": "20220712_GFTU_Trading-Update.md"
+  },
+  {
+   "d": "2022-08-25",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -2,
+   "q": "Whilst the outlook for all our markets is weaker now than it was at the start of the year, we are on track to deliver full year profit in line with current consensus analysts' forecasts (Adjusted EBITA of approximately £267.0 million) though this remains dependent on the usual seasonal upturn in the important trading months of September through to the end of November.",
+   "file": "20220825_GFTU_Half-Year-Report.md"
+  },
+  {
+   "d": "2022-11-10",
+   "doc": "Q3 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group remains on track to deliver full year adjusted operating profit1 consistent with current consensus Analysts' forecasts2 of circa £266 million.",
+   "file": "20221110_GFTU_Trading-Update.md"
+  },
+  {
+   "d": "2023-01-11",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 1,
+   "q": "The Group now expects full year adjusted operating profit1 before property profit and the non-recurring pension gain to be slightly ahead of the top end of Analysts' forecasts2.",
+   "file": "20230111_GFTU_Trading-Update-11-January-2023.md"
+  },
+  {
+   "d": "2023-03-02",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "2023 has commenced in line with our expectations. In general, volumes are slightly lower than the same period last year and price inflation is moderating.",
+   "file": "20230302_GFTU_Final-Results.md"
+  },
+  {
+   "d": "2023-05-04",
+   "doc": "AGM",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "While we remain alert to macroeconomic headwinds impacting our markets, we are maintaining our operating profit expectations at this relatively early stage of the year.",
+   "file": "20230504_GFTU_Trading-Update.md"
+  },
+  {
+   "d": "2023-07-12",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "While closely monitoring the heightened macroeconomic uncertainty and the attendant risks to the downside in the residential RMI and new build markets from cost-of-living pressures and successive interest rises, we continue to anticipate delivering full year operating profit in line with expectations based on current trading conditions.",
+   "file": "20230712_GFTU_Trading-Update.md"
+  },
+  {
+   "d": "2023-08-31",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Based on current trading conditions, we continue to anticipate delivering full year operating profit in line with Analysts' expectations while acknowledging that ongoing risks remain from cost-of-living pressures and interest rate increases.",
+   "file": "20230831_GFTU_Half-year-Report.md"
+  },
+  {
+   "d": "2023-11-14",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group remains on track to deliver full year operating profit in line with expectations supported by cost reduction measures implemented earlier this year and ongoing cost discipline.",
+   "file": "20231114_GFTU_Trading-Update.md"
+  },
+  {
+   "d": "2024-01-11",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Full year adjusted operating profit1 is expected to be slightly ahead of the top end of Analysts' forecasts2 supported by stronger trading by our businesses in Ireland alongside the timely implementation of previously announced cost reduction measures and ongoing Group-wide cost discipline.",
+   "file": "20240111_GFTU_Trading-Update.md"
+  },
+  {
+   "d": "2024-03-07",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "Price deflation and wet weather, particularly in the UK, contributed to weaker than anticipated revenue in January and February. Woodie's had a good start to the year with consumer spending in Ireland showing resilience.  Profitability in the first two months was in line with our expectations.",
+   "file": "20240307_GFTU_Final-Results.md"
+  },
+  {
+   "d": "2024-05-02",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -2,
+   "q": "Looking ahead, whilst we are not expecting a sustained recovery in our markets in the short term, we do expect profitability to be slightly more weighted than usual to the second half.",
+   "file": "20240502_GFTU_Trading-Update.md",
+   "gnote": "anchor dropped"
+  },
+  {
+   "d": "2024-07-10",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "Medium-term structural industry dynamics remain positive, and as flagged at the time of our AGM update in May, we expect profitability to be slightly more weighted to the second half of the year.",
+   "file": "20240710_GFTU_Trading-Update-10-July-2024.md"
+  },
+  {
+   "d": "2024-08-29",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Whilst uncertainties remain in the short term, we are confident that Grafton is exceptionally well positioned to benefit as conditions improve. We continue to anticipate delivering full year adjusted operating profit in line with analysts' expectations recognising the important Autumn trading season to come.",
+   "file": "20240829_GFTU_Half-year-Report.md"
+  },
+  {
+   "d": "2024-10-30",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "The Group delivered a resilient financial performance in the year to date despite a continuation of challenging market conditions and little discernible seasonal pick up in the UK and Finland during September and October. We anticipate delivering full year adjusted operating profit1 broadly in line with market expectations2.",
+   "file": "20241030_GFTU_Trading-Update.md",
+   "gnote": "discounted: Salvador Escoda acquisition"
+  },
+  {
+   "d": "2025-01-14",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group delivered a trading performance in the full year in line with expectations1, despite weak market conditions outside of Ireland and the pressure of continued cost headwinds experienced across its operations.",
+   "file": "20250114_GFTU_Trading-Update.md"
+  },
+  {
+   "d": "2025-03-06",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "We remain cautious on the timing of a broader recovery in the near term with increased global uncertainties and consistent with our prior commentary, we are not anticipating a significant increase in volumes this year.",
+   "file": "20250306_GFTU_Final-Results.md"
+  },
+  {
+   "d": "2025-05-08",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Performance in the period has been in line with our expectations and, whilst the more material trading period lies ahead, we remain on track to meet full year expectations.",
+   "file": "20250508_GFTU_Trading-Update.md"
+  },
+  {
+   "d": "2025-07-10",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "Grafton traded in line with expectations in the period, with Group revenue of £1.25 billion (2024: £1.14 billion), 10.1 per cent higher than the prior year and up 11.1 per cent in constant currency.",
+   "file": "20250710_GFTU_Trading-Update.md"
+  },
+  {
+   "d": "2025-09-04",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "We expect to deliver full year adjusted operating profit broadly in line with analysts' expectations recognising the important Autumn trading season has still to come.",
+   "file": "20250904_GFTU_Interim-Results.md"
+  },
+  {
+   "d": "2025-11-13",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Progress in the period means Grafton remains on track to deliver adjusted operating profit for the full year, in line with expectations.",
+   "file": "20251113_GFTU_Trading-Update.md"
+  },
+  {
+   "d": "2026-01-13",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Through a continued operational focus on margin management, robust cost control and ongoing investment in strengthening our market positions, the Group delivered a full year trading performance in line with expectations2, despite weak market conditions outside of the Island of Ireland and Iberia and the pressure of continued cost headwinds across all markets.",
+   "file": "20260113_GFTU_Trading-Update.md"
+  },
+  {
+   "d": "2026-03-05",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Full year adjusted operating profit was ahead of expectations1, increasing by 7.1% to £190.2m (2024: £177.5m) mostly driven by the first full year contribution of Salvador Escoda in Spain",
+   "file": "20260305_GFTU_Final-Results.md"
+  },
+  {
+   "d": "2026-05-15",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "Following completion of the Cygnum and Mercaluz acquisitions, which are expected to offset weaker trading in Great Britain, full‑year adjusted operating profit1 is now expected to be in the range of £190m - £200m2.",
+   "file": "20260515_GFTU_Trading-Update.md"
+  },
+  {
+   "d": "2026-07-13",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Full‑year adjusted operating profit1 guidance of £190m - £200m2 maintained, as trading conditions in the second half are expected to remain broadly consistent with those experienced in the first half",
+   "file": "20260713_GFTU_Trading-Update.md"
+  },
+  {
+   "d": "2026-09-03",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group remains on track to deliver full year adjusted operating profit of £190m - £200m recognising that the important Autumn trading season is still to come.",
+   "file": "20260903_GFTU_Half-Year-Report.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-03",
+  "doc": "H1 R",
+  "file": "20260903_GFTU_Half-Year-Report.md",
+  "vs": "H1 R Sep-25 · TU Jul-26 · back to H1 R Aug-24",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Cash conversion: H1-26 cites “strong cash conversion” while “Free cash flow of £70.7m (H1 2025: £78.0m) was generated in the period which represents a 72% conversion to cash of adjusted operating profit (H1 2025: 86%).” Net cash fell to £78.3m (H1-25: £245.8m) after acquisitions",
+    "span": "FCF conversion 86% (H1 Sep-25) → 72% (H1 Sep-26)"
+   },
+   {
+    "sev": "grey",
+    "type": "Split withheld",
+    "text": "Retail (Woodie's) segment no longer reported: H1-25 “Average daily like-for-like sales were up 7.6 per cent in the first half in comparison to prior year.” with Retail profit £19.2m and 13.9% margin → H1-26 only “modest growth in Woodie's against strong prior-year comparatives” inside the Island of Ireland segment; Manufacturing and Finland splits likewise folded into GB and Northern Europe",
+    "span": "Retail/Manufacturing segments given at H1 Aug-24, H1 Sep-25 → dropped with the geographic resegmentation (FY Mar-26)"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "FY guide re-quantified: H1-25 “We expect to deliver full year adjusted operating profit broadly in line with analysts' expectations”, no number → H1-26 “Full year adjusted operating profit guidance of £190m - £200m maintained” (consensus c.£194.2m)",
+    "span": "Range first given May-26, reaffirmed Jul-26 and Sep-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "New 2030 targets in the interim: adjusted EPS “compound annual growth rate exceeding 10%” over 2025-2030, plus cumulative FCF above £850m over 2026-2030 and ROCE of about 13%",
+    "span": "Not in H1 Sep-25; set at the June 2026 Capital Markets Event"
+   }
+  ]
+ }
+}

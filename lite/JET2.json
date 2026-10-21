@@ -1,0 +1,1315 @@
+{
+ "ticker": "JET2",
+ "v": "2026-10-21.c58d",
+ "ccy": "GBX",
+ "src": "AlphaVantage JET2.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   1320.5
+  ],
+  [
+   "2021-10-22",
+   1186.0
+  ],
+  [
+   "2021-10-29",
+   1219.5
+  ],
+  [
+   "2021-11-05",
+   1332.0
+  ],
+  [
+   "2021-11-12",
+   1252.0
+  ],
+  [
+   "2021-11-19",
+   1067.0
+  ],
+  [
+   "2021-11-26",
+   977.2
+  ],
+  [
+   "2021-12-03",
+   1016.5
+  ],
+  [
+   "2021-12-10",
+   1015.0
+  ],
+  [
+   "2021-12-17",
+   959.0
+  ],
+  [
+   "2021-12-24",
+   1042.5
+  ],
+  [
+   "2021-12-31",
+   1115.0
+  ],
+  [
+   "2022-01-07",
+   1237.5
+  ],
+  [
+   "2022-01-14",
+   1257.5
+  ],
+  [
+   "2022-01-21",
+   1259.0
+  ],
+  [
+   "2022-01-28",
+   1275.0
+  ],
+  [
+   "2022-02-04",
+   1316.0
+  ],
+  [
+   "2022-02-11",
+   1408.5
+  ],
+  [
+   "2022-02-18",
+   1320.0
+  ],
+  [
+   "2022-02-25",
+   1311.5
+  ],
+  [
+   "2022-03-04",
+   1047.5
+  ],
+  [
+   "2022-03-11",
+   1151.0
+  ],
+  [
+   "2022-03-18",
+   1189.5
+  ],
+  [
+   "2022-03-25",
+   1102.0
+  ],
+  [
+   "2022-04-01",
+   1135.5
+  ],
+  [
+   "2022-04-08",
+   1231.5
+  ],
+  [
+   "2022-04-14",
+   1300.0
+  ],
+  [
+   "2022-04-22",
+   1280.0
+  ],
+  [
+   "2022-04-29",
+   1240.5
+  ],
+  [
+   "2022-05-06",
+   1123.0
+  ],
+  [
+   "2022-05-13",
+   1138.0
+  ],
+  [
+   "2022-05-20",
+   1128.0
+  ],
+  [
+   "2022-05-27",
+   1197.0
+  ],
+  [
+   "2022-06-01",
+   1130.0
+  ],
+  [
+   "2022-06-10",
+   1003.0
+  ],
+  [
+   "2022-06-17",
+   985.6
+  ],
+  [
+   "2022-06-24",
+   954.6
+  ],
+  [
+   "2022-07-01",
+   918.0
+  ],
+  [
+   "2022-07-08",
+   806.6
+  ],
+  [
+   "2022-07-15",
+   899.8
+  ],
+  [
+   "2022-07-22",
+   890.0
+  ],
+  [
+   "2022-07-29",
+   916.6
+  ],
+  [
+   "2022-08-05",
+   959.4
+  ],
+  [
+   "2022-08-12",
+   950.0
+  ],
+  [
+   "2022-08-19",
+   909.6
+  ],
+  [
+   "2022-08-26",
+   854.2
+  ],
+  [
+   "2022-09-02",
+   900.0
+  ],
+  [
+   "2022-09-09",
+   875.6
+  ],
+  [
+   "2022-09-16",
+   846.4
+  ],
+  [
+   "2022-09-23",
+   802.0
+  ],
+  [
+   "2022-09-30",
+   693.0
+  ],
+  [
+   "2022-10-07",
+   702.8
+  ],
+  [
+   "2022-10-14",
+   701.8
+  ],
+  [
+   "2022-10-21",
+   753.8
+  ],
+  [
+   "2022-10-28",
+   843.2
+  ],
+  [
+   "2022-11-04",
+   878.0
+  ],
+  [
+   "2022-11-11",
+   943.2
+  ],
+  [
+   "2022-11-18",
+   900.2
+  ],
+  [
+   "2022-11-25",
+   1007.0
+  ],
+  [
+   "2022-12-02",
+   1001.0
+  ],
+  [
+   "2022-12-09",
+   994.4
+  ],
+  [
+   "2022-12-16",
+   997.0
+  ],
+  [
+   "2022-12-23",
+   994.0
+  ],
+  [
+   "2022-12-30",
+   958.4
+  ],
+  [
+   "2023-01-06",
+   1019.0
+  ],
+  [
+   "2023-01-13",
+   1070.5
+  ],
+  [
+   "2023-01-20",
+   1120.0
+  ],
+  [
+   "2023-01-27",
+   1234.0
+  ],
+  [
+   "2023-02-03",
+   1254.0
+  ],
+  [
+   "2023-02-10",
+   1203.5
+  ],
+  [
+   "2023-02-17",
+   1301.0
+  ],
+  [
+   "2023-02-24",
+   1271.5
+  ],
+  [
+   "2023-03-03",
+   1316.0
+  ],
+  [
+   "2023-03-10",
+   1339.0
+  ],
+  [
+   "2023-03-17",
+   1224.0
+  ],
+  [
+   "2023-03-24",
+   1263.0
+  ],
+  [
+   "2023-03-31",
+   1312.5
+  ],
+  [
+   "2023-04-06",
+   1266.0
+  ],
+  [
+   "2023-04-14",
+   1278.0
+  ],
+  [
+   "2023-04-21",
+   1284.0
+  ],
+  [
+   "2023-04-28",
+   1226.0
+  ],
+  [
+   "2023-05-05",
+   1182.0
+  ],
+  [
+   "2023-05-12",
+   1235.0
+  ],
+  [
+   "2023-05-19",
+   1227.0
+  ],
+  [
+   "2023-05-26",
+   1193.0
+  ],
+  [
+   "2023-06-02",
+   1263.0
+  ],
+  [
+   "2023-06-09",
+   1288.0
+  ],
+  [
+   "2023-06-16",
+   1258.0
+  ],
+  [
+   "2023-06-23",
+   1186.0
+  ],
+  [
+   "2023-06-30",
+   1246.0
+  ],
+  [
+   "2023-07-07",
+   1165.0
+  ],
+  [
+   "2023-07-14",
+   1197.0
+  ],
+  [
+   "2023-07-21",
+   1194.0
+  ],
+  [
+   "2023-07-28",
+   1123.0
+  ],
+  [
+   "2023-08-04",
+   1147.0
+  ],
+  [
+   "2023-08-11",
+   1120.0
+  ],
+  [
+   "2023-08-18",
+   1079.0
+  ],
+  [
+   "2023-08-25",
+   1053.0
+  ],
+  [
+   "2023-09-01",
+   1060.0
+  ],
+  [
+   "2023-09-08",
+   1087.0
+  ],
+  [
+   "2023-09-15",
+   1110.0
+  ],
+  [
+   "2023-09-22",
+   1101.0
+  ],
+  [
+   "2023-09-29",
+   1083.0
+  ],
+  [
+   "2023-10-06",
+   1085.0
+  ],
+  [
+   "2023-10-13",
+   1047.0
+  ],
+  [
+   "2023-10-20",
+   999.5
+  ],
+  [
+   "2023-10-27",
+   998.5
+  ],
+  [
+   "2023-11-03",
+   1046.0
+  ],
+  [
+   "2023-11-10",
+   1081.0
+  ],
+  [
+   "2023-11-17",
+   1179.0
+  ],
+  [
+   "2023-11-24",
+   1130.0
+  ],
+  [
+   "2023-12-01",
+   1224.0
+  ],
+  [
+   "2023-12-08",
+   1232.0
+  ],
+  [
+   "2023-12-15",
+   1281.0
+  ],
+  [
+   "2023-12-22",
+   1302.0
+  ],
+  [
+   "2023-12-29",
+   1249.0
+  ],
+  [
+   "2024-01-05",
+   1248.0
+  ],
+  [
+   "2024-01-12",
+   1273.0
+  ],
+  [
+   "2024-01-19",
+   1270.0
+  ],
+  [
+   "2024-01-26",
+   1336.0
+  ],
+  [
+   "2024-02-02",
+   1324.0
+  ],
+  [
+   "2024-02-09",
+   1301.0
+  ],
+  [
+   "2024-02-16",
+   1369.0
+  ],
+  [
+   "2024-02-23",
+   1402.0
+  ],
+  [
+   "2024-03-01",
+   1426.0
+  ],
+  [
+   "2024-03-08",
+   1406.0
+  ],
+  [
+   "2024-03-15",
+   1405.0
+  ],
+  [
+   "2024-03-22",
+   1423.0
+  ],
+  [
+   "2024-03-28",
+   1442.0
+  ],
+  [
+   "2024-04-05",
+   1468.0
+  ],
+  [
+   "2024-04-12",
+   1423.0
+  ],
+  [
+   "2024-04-19",
+   1445.0
+  ],
+  [
+   "2024-04-26",
+   1415.0
+  ],
+  [
+   "2024-05-03",
+   1400.0
+  ],
+  [
+   "2024-05-10",
+   1362.0
+  ],
+  [
+   "2024-05-17",
+   1346.0
+  ],
+  [
+   "2024-05-24",
+   1350.0
+  ],
+  [
+   "2024-05-31",
+   1328.0
+  ],
+  [
+   "2024-06-07",
+   1319.0
+  ],
+  [
+   "2024-06-14",
+   1264.0
+  ],
+  [
+   "2024-06-21",
+   1289.0
+  ],
+  [
+   "2024-06-28",
+   1309.0
+  ],
+  [
+   "2024-07-05",
+   1310.0
+  ],
+  [
+   "2024-07-12",
+   1422.0
+  ],
+  [
+   "2024-07-19",
+   1448.0
+  ],
+  [
+   "2024-07-26",
+   1394.0
+  ],
+  [
+   "2024-08-02",
+   1374.0
+  ],
+  [
+   "2024-08-09",
+   1339.0
+  ],
+  [
+   "2024-08-16",
+   1360.0
+  ],
+  [
+   "2024-08-23",
+   1411.0
+  ],
+  [
+   "2024-08-30",
+   1475.0
+  ],
+  [
+   "2024-09-06",
+   1439.0
+  ],
+  [
+   "2024-09-13",
+   1418.0
+  ],
+  [
+   "2024-09-20",
+   1396.0
+  ],
+  [
+   "2024-09-27",
+   1430.0
+  ],
+  [
+   "2024-10-04",
+   1421.0
+  ],
+  [
+   "2024-10-11",
+   1422.0
+  ],
+  [
+   "2024-10-18",
+   1456.0
+  ],
+  [
+   "2024-10-25",
+   1405.0
+  ],
+  [
+   "2024-11-01",
+   1458.0
+  ],
+  [
+   "2024-11-08",
+   1535.0
+  ],
+  [
+   "2024-11-15",
+   1536.0
+  ],
+  [
+   "2024-11-22",
+   1513.0
+  ],
+  [
+   "2024-11-29",
+   1573.0
+  ],
+  [
+   "2024-12-06",
+   1624.0
+  ],
+  [
+   "2024-12-13",
+   1620.0
+  ],
+  [
+   "2024-12-20",
+   1584.0
+  ],
+  [
+   "2024-12-24",
+   1570.0
+  ],
+  [
+   "2024-12-27",
+   1566.0
+  ],
+  [
+   "2025-01-03",
+   1528.0
+  ],
+  [
+   "2025-01-10",
+   1460.0
+  ],
+  [
+   "2025-01-17",
+   1452.0
+  ],
+  [
+   "2025-01-24",
+   1500.0
+  ],
+  [
+   "2025-01-31",
+   1531.0
+  ],
+  [
+   "2025-02-07",
+   1528.0
+  ],
+  [
+   "2025-02-14",
+   1547.0
+  ],
+  [
+   "2025-02-21",
+   1381.0
+  ],
+  [
+   "2025-02-28",
+   1405.0
+  ],
+  [
+   "2025-03-07",
+   1354.0
+  ],
+  [
+   "2025-03-14",
+   1355.0
+  ],
+  [
+   "2025-03-21",
+   1358.0
+  ],
+  [
+   "2025-03-28",
+   1278.0
+  ],
+  [
+   "2025-04-04",
+   1184.0
+  ],
+  [
+   "2025-04-11",
+   1254.0
+  ],
+  [
+   "2025-04-17",
+   1327.0
+  ],
+  [
+   "2025-04-25",
+   1377.0
+  ],
+  [
+   "2025-05-02",
+   1666.0
+  ],
+  [
+   "2025-05-09",
+   1697.0
+  ],
+  [
+   "2025-05-16",
+   1748.0
+  ],
+  [
+   "2025-05-23",
+   1771.0
+  ],
+  [
+   "2025-05-30",
+   1860.0
+  ],
+  [
+   "2025-06-06",
+   1906.0
+  ],
+  [
+   "2025-06-13",
+   1786.0
+  ],
+  [
+   "2025-06-20",
+   1791.0
+  ],
+  [
+   "2025-06-27",
+   1823.0
+  ],
+  [
+   "2025-07-04",
+   1752.0
+  ],
+  [
+   "2025-07-11",
+   1679.0
+  ],
+  [
+   "2025-07-18",
+   1657.0
+  ],
+  [
+   "2025-07-25",
+   1672.0
+  ],
+  [
+   "2025-08-01",
+   1606.0
+  ],
+  [
+   "2025-08-08",
+   1632.0
+  ],
+  [
+   "2025-08-15",
+   1628.0
+  ],
+  [
+   "2025-08-22",
+   1647.0
+  ],
+  [
+   "2025-08-29",
+   1628.0
+  ],
+  [
+   "2025-09-05",
+   1456.0
+  ],
+  [
+   "2025-09-12",
+   1470.0
+  ],
+  [
+   "2025-09-19",
+   1366.0
+  ],
+  [
+   "2025-09-26",
+   1367.0
+  ],
+  [
+   "2025-10-03",
+   1438.0
+  ],
+  [
+   "2025-10-10",
+   1375.0
+  ],
+  [
+   "2025-10-17",
+   1332.0
+  ],
+  [
+   "2025-10-24",
+   1335.0
+  ],
+  [
+   "2025-10-31",
+   1329.0
+  ],
+  [
+   "2025-11-07",
+   1288.0
+  ],
+  [
+   "2025-11-14",
+   1320.0
+  ],
+  [
+   "2025-11-21",
+   1360.0
+  ],
+  [
+   "2025-11-28",
+   1406.0
+  ],
+  [
+   "2025-12-05",
+   1359.0
+  ],
+  [
+   "2025-12-12",
+   1362.0
+  ],
+  [
+   "2025-12-19",
+   1413.0
+  ],
+  [
+   "2025-12-24",
+   1402.0
+  ],
+  [
+   "2026-01-02",
+   1413.0
+  ],
+  [
+   "2026-01-09",
+   1398.0
+  ],
+  [
+   "2026-01-16",
+   1303.0
+  ],
+  [
+   "2026-01-23",
+   1267.0
+  ],
+  [
+   "2026-01-30",
+   1237.0
+  ],
+  [
+   "2026-02-06",
+   1254.0
+  ],
+  [
+   "2026-02-13",
+   1268.0
+  ],
+  [
+   "2026-02-20",
+   1308.0
+  ],
+  [
+   "2026-02-27",
+   1256.0
+  ],
+  [
+   "2026-03-06",
+   1166.0
+  ],
+  [
+   "2026-03-13",
+   1096.0
+  ],
+  [
+   "2026-03-20",
+   1069.0
+  ],
+  [
+   "2026-03-27",
+   1130.0
+  ],
+  [
+   "2026-04-02",
+   1136.0
+  ],
+  [
+   "2026-04-10",
+   1212.0
+  ],
+  [
+   "2026-04-17",
+   1225.0
+  ],
+  [
+   "2026-04-24",
+   1112.0
+  ],
+  [
+   "2026-05-01",
+   1127.0
+  ],
+  [
+   "2026-05-08",
+   1137.0
+  ],
+  [
+   "2026-05-15",
+   1074.0
+  ],
+  [
+   "2026-05-22",
+   1121.0
+  ],
+  [
+   "2026-05-29",
+   1193.0
+  ],
+  [
+   "2026-06-05",
+   1267.0
+  ],
+  [
+   "2026-06-12",
+   1280.0
+  ],
+  [
+   "2026-06-19",
+   1294.0
+  ],
+  [
+   "2026-06-26",
+   1351.0
+  ],
+  [
+   "2026-07-03",
+   1291.0
+  ],
+  [
+   "2026-07-10",
+   1510.0
+  ],
+  [
+   "2026-07-17",
+   1476.0
+  ],
+  [
+   "2026-07-24",
+   1454.0
+  ],
+  [
+   "2026-07-31",
+   1540.0
+  ],
+  [
+   "2026-08-07",
+   1590.0
+  ],
+  [
+   "2026-08-14",
+   1593.0
+  ],
+  [
+   "2026-08-21",
+   1530.0
+  ],
+  [
+   "2026-08-28",
+   1528.0
+  ],
+  [
+   "2026-09-04",
+   1534.0
+  ],
+  [
+   "2026-09-11",
+   1455.0
+  ],
+  [
+   "2026-09-18",
+   1399.0
+  ],
+  [
+   "2026-09-25",
+   1391.0
+  ],
+  [
+   "2026-10-02",
+   1432.0
+  ],
+  [
+   "2026-10-09",
+   1407.0
+  ],
+  [
+   "2026-10-16",
+   1411.0
+  ],
+  [
+   "2026-10-20",
+   1431.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-11-18",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Nonetheless, visibility as to the full year financial outturn remains limited and will very much depend on the continued rollout of vaccines, no further adverse Covid-19 developments and an uninterrupted Winter 21/22 flying programme.",
+   "file": "20211118_JET2_Half-year-Report.md"
+  },
+  {
+   "d": "2022-04-08",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "As a result, the Board expects to report a Group loss before foreign exchange revaluation and taxation for the year of between £378m and £383m.",
+   "file": "20220408_JET2_Trading-Update.md"
+  },
+  {
+   "d": "2022-07-07",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "In the medium term, inflationary pressures coupled with the uncertain UK economic outlook for consumers, lead us to conclude that prices are likely to come under some pressure. However, we believe we have the right product for these tougher times.",
+   "file": "20220707_JET2_Final-Results.md"
+  },
+  {
+   "d": "2022-09-01",
+   "doc": "AGM",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "With some way still to go in the Leisure Travel winter booking cycle, we are currently on track to achieve current market expectations for Group profit before foreign exchange revaluations and taxation for the year ending 31 March 2023.",
+   "file": "20220901_JET2_Annual-General-Meeting-Statement.md"
+  },
+  {
+   "d": "2022-11-24",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 2,
+   "q": "With Winter 2022/23 bookings encouraging and pricing remaining robust, but recognising that the important post-Christmas booking period is still to come, we are presently on track to exceed current average market expectations for Group profit before FX revaluation and taxation for the year ending 31 March 2023.",
+   "file": "20221124_JET2_Half-year-Report.md"
+  },
+  {
+   "d": "2023-01-26",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Given these positive indicators, the Board now expects to exceed current average market expectations (1) and report a Group profit before foreign exchange revaluation and taxation for the year ending 31 March 2023 of between £370m and £385m.",
+   "file": "20230126_JET2_Trading-Update.md"
+  },
+  {
+   "d": "2023-04-20",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Following the trading update in late January 2023, the Board now expects to report a Group profit before foreign exchange revaluation and taxation for the year ended 31 March 2023 of between £387m and £392m.",
+   "file": "20230420_JET2_Trading-Update.md"
+  },
+  {
+   "d": "2023-07-06",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "On that basis, and with the peak summer months of July, August and September not yet complete plus the majority of Winter 2023/2024 seat capacity still to sell, it remains premature as is always the case at this time of year, to provide definitive guidance as to Group profitability for the financial year ending 31 March 2024.",
+   "file": "20230706_JET2_Final-Results.md"
+  },
+  {
+   "d": "2023-09-07",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 2,
+   "q": "we are on track to exceed current market expectations for Group profit before foreign exchange revaluations and taxation for the year ending 31 March 2024(1), with the outcome presently expected to be in the range of £480m to £520m.",
+   "file": "20230907_JET2_Annual-General-Meeting-Statement.md"
+  },
+  {
+   "d": "2023-11-23",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "We are currently on track to deliver Group profit before FX revaluation and taxation for the year ending 31 March 2024 of between £480m and £520m, in line with our previous guidance.",
+   "file": "20231123_JET2_Interim-Results.md"
+  },
+  {
+   "d": "2024-02-15",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 1,
+   "q": "With February and March 2024 bookings displaying similar trends to recent months, plus the benefit of an extra day's flying in February and an earlier Easter, we tighten and slightly raise our guidance for Group profit before FX revaluation and taxation for the financial year to between £510m and £525m (previously £480m to £520m)",
+   "file": "20240215_JET2_Trading-Update.md"
+  },
+  {
+   "d": "2024-04-24",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Following the trading update in mid-February, the Board now expects to report a Group profit before foreign exchange revaluation and taxation for the year ended 31 March 2024 of between £515m and £520m (previously £510m to £525m), an increase of approximately 33% on the prior year and in line with current market expectations(1).",
+   "file": "20240424_JET2_Trading-Update.md"
+  },
+  {
+   "d": "2024-07-11",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Year to date the business is trading in line with management's expectations. Given the late booking profile and the peak summer months of July, August and September not yet complete, plus the majority of Winter 2024/2025 seat capacity still to sell, it remains premature",
+   "file": "20240711_JET2_Final-Results.md"
+  },
+  {
+   "d": "2024-09-05",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "Year to date the business continues to trade in line with management's expectations. However, given the late booking profile, the remaining summer months of September and October not yet complete, plus the majority of Winter 2024/25 seat capacity still to sell, it remains premature",
+   "file": "20240905_JET2_AGM-Statement.md"
+  },
+  {
+   "d": "2024-11-21",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Although there is a significant proportion of the Winter season still to sell, we are currently on track to deliver Group profit before FX revaluation and taxation for the year ending 31 March 2025 ahead of market expectations",
+   "file": "20241121_JET2_Half-year-Report.md"
+  },
+  {
+   "d": "2025-02-19",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Assuming no material extraneous events in the remainder of the financial year, and given the prevailing trends, the Board expects to report a Group profit before foreign exchange revaluation and taxation for the year ending 31 March 2025 of between £560m and £570m, an 8% to 10% increase on the prior year.",
+   "file": "20250219_JET2_Trading-Update.md"
+  },
+  {
+   "d": "2025-04-29",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "This represents another year of healthy profit growth, up approximately 9% on the prior year and is in line with current market expectations(1).",
+   "file": "20250429_JET2_Year-End-Trading-Update-&-£250m-Share-Buyback.md"
+  },
+  {
+   "d": "2025-07-09",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "We are currently trading in line with market expectations‡ supported by our flexible and fully integrated business model which provides the Group with the ability to balance average load factor, pricing and product mix, in order to maximise overall profitability.",
+   "file": "20250709_JET2_Final-Results.md"
+  },
+  {
+   "d": "2025-09-04",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -1,
+   "q": "With limited visibility given the later booking profile and the remainder of summer and much of winter seat capacity still to sell, we currently expect EBIT1 to be towards the lower end of the consensus range2",
+   "file": "20250904_JET2_Annual-General-Meeting-Statement.md"
+  },
+  {
+   "d": "2025-11-19",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "Our expectations for full year unchanged - excluding start-up investment for London Gatwick, we are currently on track to deliver in line with market expectations‡.",
+   "file": "20251119_JET2_Half-year-Financial-Report.md"
+  },
+  {
+   "d": "2026-02-25",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Consequently, we currently expect to report Operating profit in line with current market expectations*. This includes approximately £10m of promotional and resourcing start up costs ahead of our London Gatwick base launch.",
+   "file": "20260225_JET2_Trading-Update.md"
+  },
+  {
+   "d": "2026-04-29",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Following our trading update on 25 February 2026, the Group expects to report Operating profit of between £435m and £440m (FY25: £446.5m), in line with current market expectations.",
+   "file": "20260429_JET2_Trading-Update.md"
+  },
+  {
+   "d": "2026-07-08",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -1,
+   "q": "We have been encouraged by performance for Summer 2026 to date, despite the Middle East conflict leading customers to book closer to departure, a trend that is continuing across the peak summer period.",
+   "file": "20260708_JET2_Final-Results.md"
+  },
+  {
+   "d": "2026-09-03",
+   "doc": "AGM",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -1,
+   "q": "We have been encouraged by the sustained level of demand for both our holiday products through the peak summer season which gives us confidence for the remainder of the financial year.",
+   "file": "20260903_JET2_AGM-Statement-&-Intended-Move-to-the-Main-Market.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-03",
+  "doc": "AGM",
+  "file": "20260903_JET2_AGM-Statement-&-Intended-Move-to-the-Main-Market.md",
+  "vs": "AGM Sep-25 · FY R Jul-26 · back to AGM Sep-22/23/24",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Last AGM: “we currently expect EBIT1 to be towards the lower end of the consensus range2” (footnoted £449m - £496m) → this AGM no profit or expectations reference for FY27, only “gives us confidence for the remainder of the financial year”",
+    "span": "AGM anchor given Sep-22, Sep-23, Sep-24, Sep-25 → first gap; also absent at Jul-26 FY R (Jul-25: “We are currently trading in line with market expectations‡”)"
+   },
+   {
+    "sev": "amber",
+    "type": "Split withheld",
+    "text": "Package vs flight-only: Sep-25 “flown package holiday customers grew by 2%, with flight-only passengers rising by 17%”; Sep-24 “Booked to date Package Holiday customers are up by 8%, representing 70.2% of total departing passengers” → now one total, “booked-to-date passengers up 8.8% and growth across both package holiday and flight-only products”",
+    "span": "Split given Sep-24, Sep-25"
+   },
+   {
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "Winter forward bookings: Sep-24 “Winter 2024/25 forward bookings are encouraging with average load factor 0.8ppts ahead of Winter 2023/24 at the same point” → Sep-26 “Early indications show similar booking trends to Summer with passengers still booking closer to departure”, no load factor",
+    "span": "Numeric at Sep-23, Sep-24; none Sep-25, Sep-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Summer load factor re-quantified: Sep-25 gave no load factor → now “the combined booked average load factor to the end of August was 1.5ppts ahead of the prior year”"
+   }
+  ]
+ }
+}

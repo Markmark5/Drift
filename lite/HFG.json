@@ -1,0 +1,1327 @@
+{
+ "ticker": "HFG",
+ "v": "2026-10-21.21df",
+ "ccy": "GBX",
+ "src": "AlphaVantage HFG.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   1166.0
+  ],
+  [
+   "2021-10-22",
+   1180.0
+  ],
+  [
+   "2021-10-29",
+   1168.0
+  ],
+  [
+   "2021-11-05",
+   1202.0
+  ],
+  [
+   "2021-11-12",
+   1190.0
+  ],
+  [
+   "2021-11-19",
+   1196.0
+  ],
+  [
+   "2021-11-26",
+   1140.0
+  ],
+  [
+   "2021-12-03",
+   1152.0
+  ],
+  [
+   "2021-12-10",
+   1178.0
+  ],
+  [
+   "2021-12-17",
+   1110.0
+  ],
+  [
+   "2021-12-24",
+   1150.0
+  ],
+  [
+   "2021-12-31",
+   1140.0
+  ],
+  [
+   "2022-01-07",
+   1124.0
+  ],
+  [
+   "2022-01-14",
+   1116.0
+  ],
+  [
+   "2022-01-21",
+   1060.0
+  ],
+  [
+   "2022-01-28",
+   1004.0
+  ],
+  [
+   "2022-02-04",
+   1050.0
+  ],
+  [
+   "2022-02-11",
+   1060.0
+  ],
+  [
+   "2022-02-18",
+   1064.0
+  ],
+  [
+   "2022-02-25",
+   1076.0
+  ],
+  [
+   "2022-03-04",
+   1034.0
+  ],
+  [
+   "2022-03-11",
+   1042.0
+  ],
+  [
+   "2022-03-18",
+   1138.0
+  ],
+  [
+   "2022-03-25",
+   1222.0
+  ],
+  [
+   "2022-04-01",
+   1240.0
+  ],
+  [
+   "2022-04-08",
+   1214.0
+  ],
+  [
+   "2022-04-14",
+   1210.0
+  ],
+  [
+   "2022-04-22",
+   1206.0
+  ],
+  [
+   "2022-04-29",
+   1218.0
+  ],
+  [
+   "2022-05-06",
+   1152.0
+  ],
+  [
+   "2022-05-13",
+   1204.0
+  ],
+  [
+   "2022-05-20",
+   1188.0
+  ],
+  [
+   "2022-05-27",
+   1124.0
+  ],
+  [
+   "2022-06-01",
+   1062.0
+  ],
+  [
+   "2022-06-10",
+   1040.0
+  ],
+  [
+   "2022-06-17",
+   1038.0
+  ],
+  [
+   "2022-06-24",
+   1056.0
+  ],
+  [
+   "2022-07-01",
+   1018.0
+  ],
+  [
+   "2022-07-08",
+   985.0
+  ],
+  [
+   "2022-07-15",
+   989.0
+  ],
+  [
+   "2022-07-22",
+   1072.0
+  ],
+  [
+   "2022-07-29",
+   1104.0
+  ],
+  [
+   "2022-08-05",
+   1038.0
+  ],
+  [
+   "2022-08-12",
+   1056.0
+  ],
+  [
+   "2022-08-19",
+   1024.0
+  ],
+  [
+   "2022-08-26",
+   979.0
+  ],
+  [
+   "2022-09-02",
+   930.0
+  ],
+  [
+   "2022-09-09",
+   961.0
+  ],
+  [
+   "2022-09-16",
+   664.0
+  ],
+  [
+   "2022-09-23",
+   615.0
+  ],
+  [
+   "2022-09-30",
+   535.0
+  ],
+  [
+   "2022-10-07",
+   620.0
+  ],
+  [
+   "2022-10-14",
+   628.0
+  ],
+  [
+   "2022-10-21",
+   611.0
+  ],
+  [
+   "2022-10-28",
+   602.0
+  ],
+  [
+   "2022-11-04",
+   613.0
+  ],
+  [
+   "2022-11-11",
+   572.0
+  ],
+  [
+   "2022-11-18",
+   552.0
+  ],
+  [
+   "2022-11-25",
+   535.0
+  ],
+  [
+   "2022-12-02",
+   539.0
+  ],
+  [
+   "2022-12-09",
+   519.0
+  ],
+  [
+   "2022-12-16",
+   514.0
+  ],
+  [
+   "2022-12-23",
+   553.0
+  ],
+  [
+   "2022-12-30",
+   557.0
+  ],
+  [
+   "2023-01-06",
+   563.0
+  ],
+  [
+   "2023-01-13",
+   597.0
+  ],
+  [
+   "2023-01-20",
+   609.0
+  ],
+  [
+   "2023-01-27",
+   657.0
+  ],
+  [
+   "2023-02-03",
+   684.0
+  ],
+  [
+   "2023-02-10",
+   686.0
+  ],
+  [
+   "2023-02-17",
+   680.0
+  ],
+  [
+   "2023-02-24",
+   692.0
+  ],
+  [
+   "2023-03-03",
+   729.0
+  ],
+  [
+   "2023-03-10",
+   719.0
+  ],
+  [
+   "2023-03-17",
+   709.0
+  ],
+  [
+   "2023-03-24",
+   684.0
+  ],
+  [
+   "2023-03-31",
+   692.0
+  ],
+  [
+   "2023-04-06",
+   678.0
+  ],
+  [
+   "2023-04-14",
+   660.0
+  ],
+  [
+   "2023-04-21",
+   675.0
+  ],
+  [
+   "2023-04-28",
+   678.0
+  ],
+  [
+   "2023-05-05",
+   736.0
+  ],
+  [
+   "2023-05-12",
+   721.0
+  ],
+  [
+   "2023-05-19",
+   739.0
+  ],
+  [
+   "2023-05-26",
+   732.0
+  ],
+  [
+   "2023-06-02",
+   688.0
+  ],
+  [
+   "2023-06-09",
+   668.0
+  ],
+  [
+   "2023-06-16",
+   663.0
+  ],
+  [
+   "2023-06-23",
+   649.0
+  ],
+  [
+   "2023-06-30",
+   624.0
+  ],
+  [
+   "2023-07-07",
+   645.0
+  ],
+  [
+   "2023-07-14",
+   650.0
+  ],
+  [
+   "2023-07-21",
+   658.0
+  ],
+  [
+   "2023-07-28",
+   648.0
+  ],
+  [
+   "2023-08-04",
+   669.0
+  ],
+  [
+   "2023-08-11",
+   703.0
+  ],
+  [
+   "2023-08-18",
+   675.0
+  ],
+  [
+   "2023-08-25",
+   667.0
+  ],
+  [
+   "2023-09-01",
+   681.0
+  ],
+  [
+   "2023-09-08",
+   710.0
+  ],
+  [
+   "2023-09-15",
+   770.0
+  ],
+  [
+   "2023-09-22",
+   762.0
+  ],
+  [
+   "2023-09-29",
+   717.0
+  ],
+  [
+   "2023-10-06",
+   671.0
+  ],
+  [
+   "2023-10-13",
+   657.0
+  ],
+  [
+   "2023-10-20",
+   650.0
+  ],
+  [
+   "2023-10-27",
+   650.0
+  ],
+  [
+   "2023-11-03",
+   655.0
+  ],
+  [
+   "2023-11-10",
+   675.0
+  ],
+  [
+   "2023-11-17",
+   712.0
+  ],
+  [
+   "2023-11-24",
+   709.0
+  ],
+  [
+   "2023-12-01",
+   724.0
+  ],
+  [
+   "2023-12-08",
+   746.0
+  ],
+  [
+   "2023-12-15",
+   739.0
+  ],
+  [
+   "2023-12-22",
+   768.0
+  ],
+  [
+   "2023-12-29",
+   800.0
+  ],
+  [
+   "2024-01-05",
+   765.0
+  ],
+  [
+   "2024-01-12",
+   764.0
+  ],
+  [
+   "2024-01-19",
+   783.0
+  ],
+  [
+   "2024-01-26",
+   817.0
+  ],
+  [
+   "2024-02-02",
+   786.0
+  ],
+  [
+   "2024-02-09",
+   804.0
+  ],
+  [
+   "2024-02-16",
+   786.0
+  ],
+  [
+   "2024-02-23",
+   800.0
+  ],
+  [
+   "2024-03-01",
+   814.0
+  ],
+  [
+   "2024-03-08",
+   846.0
+  ],
+  [
+   "2024-03-15",
+   826.0
+  ],
+  [
+   "2024-03-22",
+   832.0
+  ],
+  [
+   "2024-03-28",
+   843.0
+  ],
+  [
+   "2024-04-05",
+   865.0
+  ],
+  [
+   "2024-04-12",
+   880.0
+  ],
+  [
+   "2024-04-19",
+   894.0
+  ],
+  [
+   "2024-04-26",
+   908.0
+  ],
+  [
+   "2024-05-03",
+   921.0
+  ],
+  [
+   "2024-05-10",
+   931.0
+  ],
+  [
+   "2024-05-17",
+   940.0
+  ],
+  [
+   "2024-05-24",
+   938.0
+  ],
+  [
+   "2024-05-31",
+   894.0
+  ],
+  [
+   "2024-06-07",
+   860.0
+  ],
+  [
+   "2024-06-14",
+   873.0
+  ],
+  [
+   "2024-06-21",
+   899.0
+  ],
+  [
+   "2024-06-28",
+   899.0
+  ],
+  [
+   "2024-07-05",
+   920.0
+  ],
+  [
+   "2024-07-12",
+   910.0
+  ],
+  [
+   "2024-07-19",
+   907.0
+  ],
+  [
+   "2024-07-26",
+   931.0
+  ],
+  [
+   "2024-08-02",
+   908.0
+  ],
+  [
+   "2024-08-09",
+   920.0
+  ],
+  [
+   "2024-08-16",
+   971.0
+  ],
+  [
+   "2024-08-23",
+   970.0
+  ],
+  [
+   "2024-08-30",
+   985.0
+  ],
+  [
+   "2024-09-06",
+   900.0
+  ],
+  [
+   "2024-09-13",
+   892.0
+  ],
+  [
+   "2024-09-20",
+   885.0
+  ],
+  [
+   "2024-09-27",
+   903.0
+  ],
+  [
+   "2024-10-04",
+   911.0
+  ],
+  [
+   "2024-10-11",
+   883.0
+  ],
+  [
+   "2024-10-18",
+   920.0
+  ],
+  [
+   "2024-10-25",
+   921.0
+  ],
+  [
+   "2024-11-01",
+   925.0
+  ],
+  [
+   "2024-11-08",
+   940.0
+  ],
+  [
+   "2024-11-15",
+   928.0
+  ],
+  [
+   "2024-11-22",
+   920.0
+  ],
+  [
+   "2024-11-29",
+   906.0
+  ],
+  [
+   "2024-12-06",
+   903.0
+  ],
+  [
+   "2024-12-13",
+   906.0
+  ],
+  [
+   "2024-12-20",
+   916.0
+  ],
+  [
+   "2024-12-24",
+   904.0
+  ],
+  [
+   "2024-12-27",
+   895.0
+  ],
+  [
+   "2025-01-03",
+   911.0
+  ],
+  [
+   "2025-01-10",
+   873.0
+  ],
+  [
+   "2025-01-17",
+   897.0
+  ],
+  [
+   "2025-01-24",
+   857.0
+  ],
+  [
+   "2025-01-31",
+   884.0
+  ],
+  [
+   "2025-02-07",
+   886.0
+  ],
+  [
+   "2025-02-14",
+   881.0
+  ],
+  [
+   "2025-02-21",
+   894.0
+  ],
+  [
+   "2025-02-28",
+   855.0
+  ],
+  [
+   "2025-03-07",
+   847.0
+  ],
+  [
+   "2025-03-14",
+   834.0
+  ],
+  [
+   "2025-03-21",
+   838.0
+  ],
+  [
+   "2025-03-28",
+   836.0
+  ],
+  [
+   "2025-04-04",
+   857.0
+  ],
+  [
+   "2025-04-11",
+   859.0
+  ],
+  [
+   "2025-04-17",
+   884.0
+  ],
+  [
+   "2025-04-25",
+   872.0
+  ],
+  [
+   "2025-05-02",
+   900.0
+  ],
+  [
+   "2025-05-09",
+   895.0
+  ],
+  [
+   "2025-05-16",
+   898.0
+  ],
+  [
+   "2025-05-23",
+   892.0
+  ],
+  [
+   "2025-05-30",
+   869.0
+  ],
+  [
+   "2025-06-06",
+   873.0
+  ],
+  [
+   "2025-06-13",
+   857.0
+  ],
+  [
+   "2025-06-20",
+   844.0
+  ],
+  [
+   "2025-06-27",
+   877.0
+  ],
+  [
+   "2025-07-04",
+   864.0
+  ],
+  [
+   "2025-07-11",
+   841.0
+  ],
+  [
+   "2025-07-18",
+   864.0
+  ],
+  [
+   "2025-07-25",
+   853.0
+  ],
+  [
+   "2025-08-01",
+   840.0
+  ],
+  [
+   "2025-08-08",
+   846.0
+  ],
+  [
+   "2025-08-15",
+   841.0
+  ],
+  [
+   "2025-08-22",
+   840.0
+  ],
+  [
+   "2025-08-29",
+   831.0
+  ],
+  [
+   "2025-09-05",
+   690.0
+  ],
+  [
+   "2025-09-12",
+   660.0
+  ],
+  [
+   "2025-09-19",
+   653.0
+  ],
+  [
+   "2025-09-26",
+   655.0
+  ],
+  [
+   "2025-10-03",
+   666.0
+  ],
+  [
+   "2025-10-10",
+   664.0
+  ],
+  [
+   "2025-10-17",
+   655.0
+  ],
+  [
+   "2025-10-24",
+   681.0
+  ],
+  [
+   "2025-10-31",
+   644.0
+  ],
+  [
+   "2025-11-07",
+   642.0
+  ],
+  [
+   "2025-11-14",
+   483.0
+  ],
+  [
+   "2025-11-21",
+   494.0
+  ],
+  [
+   "2025-11-28",
+   509.0
+  ],
+  [
+   "2025-12-05",
+   502.0
+  ],
+  [
+   "2025-12-12",
+   495.5
+  ],
+  [
+   "2025-12-19",
+   499.5
+  ],
+  [
+   "2025-12-24",
+   499.0
+  ],
+  [
+   "2026-01-02",
+   497.5
+  ],
+  [
+   "2026-01-09",
+   489.0
+  ],
+  [
+   "2026-01-16",
+   508.0
+  ],
+  [
+   "2026-01-23",
+   517.0
+  ],
+  [
+   "2026-01-30",
+   470.0
+  ],
+  [
+   "2026-02-06",
+   510.0
+  ],
+  [
+   "2026-02-13",
+   518.0
+  ],
+  [
+   "2026-02-20",
+   525.0
+  ],
+  [
+   "2026-02-27",
+   529.0
+  ],
+  [
+   "2026-03-06",
+   504.0
+  ],
+  [
+   "2026-03-13",
+   508.0
+  ],
+  [
+   "2026-03-20",
+   488.0
+  ],
+  [
+   "2026-03-27",
+   482.0
+  ],
+  [
+   "2026-04-02",
+   529.0
+  ],
+  [
+   "2026-04-10",
+   530.0
+  ],
+  [
+   "2026-04-17",
+   537.0
+  ],
+  [
+   "2026-04-24",
+   535.0
+  ],
+  [
+   "2026-05-01",
+   538.0
+  ],
+  [
+   "2026-05-08",
+   539.0
+  ],
+  [
+   "2026-05-15",
+   537.0
+  ],
+  [
+   "2026-05-22",
+   557.5
+  ],
+  [
+   "2026-05-29",
+   514.5
+  ],
+  [
+   "2026-06-05",
+   512.0
+  ],
+  [
+   "2026-06-12",
+   531.0
+  ],
+  [
+   "2026-06-19",
+   510.5
+  ],
+  [
+   "2026-06-26",
+   529.0
+  ],
+  [
+   "2026-07-03",
+   530.0
+  ],
+  [
+   "2026-07-10",
+   521.5
+  ],
+  [
+   "2026-07-17",
+   548.5
+  ],
+  [
+   "2026-07-24",
+   548.5
+  ],
+  [
+   "2026-07-31",
+   599.0
+  ],
+  [
+   "2026-08-07",
+   613.0
+  ],
+  [
+   "2026-08-14",
+   615.5
+  ],
+  [
+   "2026-08-21",
+   616.0
+  ],
+  [
+   "2026-08-28",
+   636.0
+  ],
+  [
+   "2026-09-04",
+   698.0
+  ],
+  [
+   "2026-09-11",
+   666.5
+  ],
+  [
+   "2026-09-18",
+   692.5
+  ],
+  [
+   "2026-09-25",
+   700.5
+  ],
+  [
+   "2026-10-02",
+   698.5
+  ],
+  [
+   "2026-10-09",
+   713.5
+  ],
+  [
+   "2026-10-16",
+   715.0
+  ],
+  [
+   "2026-10-20",
+   721.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-10-29",
+   "doc": "Q3 TU",
+   "fy": "FY21",
+   "g": "flat",
+   "s": 0,
+   "q": "During the period, the Group's trading has been in line with the Board's expectations. We have continued to grow the business, driven predominantly by the successful rollout of our growth strategy in Australia and Asia Pacific",
+   "file": "20211029_HFG_Trading-Update.md"
+  },
+  {
+   "d": "2022-01-13",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "flat",
+   "s": 0,
+   "q": "We are pleased to report the Group has performed in line with the Board's expectations, with year-on-year sales growth driven predominantly by organic expansion.",
+   "file": "20220113_HFG_Trading-Update.md"
+  },
+  {
+   "d": "2022-04-06",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Against the backdrop of a more challenging environment, with global uncertainties impacting supply chains and inflation, the Hilton Board is confident of making further progress in 2022.",
+   "file": "20220406_HFG_Preliminary-Results.md"
+  },
+  {
+   "d": "2022-05-24",
+   "doc": "AGM",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -1,
+   "q": "Whilst the outlook for the year remains challenging, with the impact of higher input prices potentially reducing volume, we expect to make further progress during the year ahead.",
+   "file": "20220524_HFG_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2022-09-15",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "CUT",
+   "s": -3,
+   "q": "Given these factors, and combined with the impact of start-up costs and rising interest rates, the Board now anticipates that profitability for the year will be below expectations.",
+   "file": "20220915_HFG_Interim-Results.md"
+  },
+  {
+   "d": "2022-11-08",
+   "doc": "Q3 TU",
+   "fy": "FY22",
+   "g": "CUT",
+   "s": -3,
+   "q": "Given the challenges in the UK Seafood business alongside the wider macro-economic environment, the Board anticipates that operating profit will now be below its expectations for the full year.",
+   "file": "20221108_HFG_Trading-Update.md"
+  },
+  {
+   "d": "2023-01-12",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "For the full year the Group expects to report results in line with the Board's expectations, which were revised in early November.",
+   "file": "20230112_HFG_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2023-04-05",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Against the backdrop of a challenging environment, with global uncertainties impacting supply chains and inflation, Hilton's trading performance since the beginning of 2023 has been in line with the Board's expectations and the business is well positioned for the year ahead.",
+   "file": "20230405_HFG_Preliminary-Results.md"
+  },
+  {
+   "d": "2023-05-23",
+   "doc": "AGM",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Hilton Foods' trading performance since the start of 2023 has been in line with the Board's expectations and, despite the uncertain macro-economic environment, the business is well positioned for the year ahead.",
+   "file": "20230523_HFG_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2023-09-07",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Hilton Foods is well positioned to continue to trade in line with Board expectations for the rest of the year.",
+   "file": "20230907_HFG_Interim-Results.md"
+  },
+  {
+   "d": "2023-11-07",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The robust financial performance and strong operational progress seen in the first half of the year has continued into the third quarter, with trading in line with the Board's expectations.",
+   "file": "20231107_HFG_Trading-Update.md"
+  },
+  {
+   "d": "2024-01-11",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "For the full year the Group expects to report results in line with the Board's expectations, with continued revenue growth and operational progress.",
+   "file": "20240111_HFG_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2024-04-03",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "2024 trading has started in line with Board expectations although markets remain challenging.",
+   "file": "20240403_HFG_Preliminary-Results.md"
+  },
+  {
+   "d": "2024-05-20",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Hilton Foods' trading performance since the start of 2024 has been in line with the Board's expectations. The business remains well-positioned for the year ahead despite the continued challenging market environment and economic conditions.",
+   "file": "20240520_HFG_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2024-09-04",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Hilton Foods is well-positioned and continues to trade in line with expectations for the full year.",
+   "file": "20240904_HFG_Interim-Results.md"
+  },
+  {
+   "d": "2024-11-05",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The strong performance delivered in the first half of the year has continued in the third quarter across all three geographical operating regions, with trading in line with the Board's expectations.",
+   "file": "20241105_HFG_Trading-Update.md"
+  },
+  {
+   "d": "2025-01-09",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The final quarter of the year has delivered a strong performance, with the full-year outturn in line with expectations.",
+   "file": "20250109_HFG_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2025-04-08",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 1,
+   "q": "2025 trading has started well. While the macro backdrop remains uncertain we are confident that we can deliver further earnings growth for the full year, in line with market expectations",
+   "file": "20250408_HFG_Preliminary-Results.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2025-05-20",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Hilton Foods continues to trade positively, while the macroeconomic environment remains uncertain. However, in line with market expectations we are confident in our ability to deliver earnings growth for the full year*.",
+   "file": "20250520_HFG_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2025-09-03",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "We expect our retail meat businesses to continue to perform well for the remainder of 2025 and we will continue to address the impact of inflationary trends in white fish and the operational disruption in Foppen. As a result we expect to deliver full-year results within the range of expectations",
+   "file": "20250903_HFG_Interim-Results.md"
+  },
+  {
+   "d": "2025-11-11",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -3,
+   "q": "As a result, the Board now expects adjusted pre-tax profit for the financial year ending 28th December 2025 to be in the range of £72m to £75m.",
+   "file": "20251111_HFG_Trading-Statement.md"
+  },
+  {
+   "d": "2026-01-29",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -2,
+   "q": "While we are actively working on opportunities for business transformation and profit improvement against this backdrop, we remain cautious on the outlook for the year. We now expect 2026 adjusted profit before tax to be within the range of £60m to £65m.",
+   "file": "20260129_HFG_2025-Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2026-03-31",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "2026 trading to date has been in line with our expectations, and we remain on track to achieve 2026 adjusted profit before tax in the range £60m-£65m.",
+   "file": "20260331_HFG_Preliminary-Results.md"
+  },
+  {
+   "d": "2026-05-19",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 1,
+   "q": "Although we remain cautious on the broader inflationary environment and mindful of the potential impacts of the situation in the Middle East, our performance so far in this year underpins our confidence in both the short- and longer-term prospects for the Group.",
+   "file": "20260519_HFG_AGM-Trading-Update.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2026-09-03",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "We now expect full year adjusted profit before tax from continuing operations in the range £66m-£71m. This is higher than the previous range of £60m-£65m, despite ongoing challenges in Foppen, and reflects the removal of Dalco losses and favourable year-on-year foreign currency movements.",
+   "file": "20260903_HFG_Interim-Results.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-03",
+  "doc": "H1 R",
+  "file": "20260903_HFG_Interim-Results.md",
+  "vs": "H1 R Sep-25 · AGM May-26 · FY R Mar-26 · back to H1 R Sep-24",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Pushed out",
+    "text": "Poland capacity capex: Mar-26 2026 capex to include “the majority of the spend on our planned Poland capacity expansion” → now “Material capex on planned capacity expansion in Poland is not expected to occur until 2027.”",
+    "span": "Mar-26 FY R → Sep-26 H1 R"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "ROCE: H1 R Sep-24 “was 20.2%”, H1 R Sep-25 “was 20.8% (21.7% for the 2024 financial year)”, FY R Mar-26 “was 20.1% (2024: 21.7%)” → H1 R Sep-26 gives no ROCE figure, only the definition and the >20% medium-term target",
+    "span": "Given at Sep-24, Sep-25, Mar-26 → first gap"
+   },
+   {
+    "sev": "grey",
+    "type": "Went quiet",
+    "text": "Market outperformance: H1 R Sep-25 “Retail meat volumes grew 1.7%, outperforming the total market decline of 2.7%” → H1 R Sep-26 no market comparison; West core meat volumes “up 0.6%” with lower UK volumes",
+    "span": "Given at Apr-25 FY R and Sep-25 H1 R"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Own numeric guide raised: H1 R Sep-25 leaned on “Company Compiled range of expectations £76.8m - £81m” → now “We now expect full year adjusted profit before tax from continuing operations in the range £66m-£71m.”, up from £60m-£65m (Dalco losses removed, FX)",
+    "span": "Own PBT range since Jan-26"
+   }
+  ]
+ }
+}

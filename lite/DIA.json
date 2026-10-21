@@ -1,0 +1,1335 @@
+{
+ "ticker": "DIA",
+ "v": "2026-10-21.0fce",
+ "ccy": "GBX",
+ "src": "AlphaVantage DIA.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   357.0
+  ],
+  [
+   "2021-10-22",
+   370.0
+  ],
+  [
+   "2021-10-29",
+   345.0
+  ],
+  [
+   "2021-11-05",
+   357.0
+  ],
+  [
+   "2021-11-12",
+   345.0
+  ],
+  [
+   "2021-11-19",
+   330.0
+  ],
+  [
+   "2021-11-26",
+   310.0
+  ],
+  [
+   "2021-12-03",
+   315.0
+  ],
+  [
+   "2021-12-10",
+   320.0
+  ],
+  [
+   "2021-12-17",
+   320.0
+  ],
+  [
+   "2021-12-24",
+   322.5
+  ],
+  [
+   "2021-12-31",
+   330.0
+  ],
+  [
+   "2022-01-07",
+   321.5
+  ],
+  [
+   "2022-01-14",
+   325.0
+  ],
+  [
+   "2022-01-21",
+   322.0
+  ],
+  [
+   "2022-01-28",
+   321.0
+  ],
+  [
+   "2022-02-04",
+   331.0
+  ],
+  [
+   "2022-02-11",
+   342.0
+  ],
+  [
+   "2022-02-18",
+   341.5
+  ],
+  [
+   "2022-02-25",
+   335.5
+  ],
+  [
+   "2022-03-04",
+   320.0
+  ],
+  [
+   "2022-03-11",
+   313.0
+  ],
+  [
+   "2022-03-18",
+   295.0
+  ],
+  [
+   "2022-03-25",
+   295.0
+  ],
+  [
+   "2022-04-01",
+   344.0
+  ],
+  [
+   "2022-04-08",
+   340.0
+  ],
+  [
+   "2022-04-14",
+   354.0
+  ],
+  [
+   "2022-04-22",
+   351.0
+  ],
+  [
+   "2022-04-29",
+   360.0
+  ],
+  [
+   "2022-05-06",
+   370.0
+  ],
+  [
+   "2022-05-13",
+   350.0
+  ],
+  [
+   "2022-05-20",
+   333.0
+  ],
+  [
+   "2022-05-27",
+   333.0
+  ],
+  [
+   "2022-06-01",
+   311.0
+  ],
+  [
+   "2022-06-10",
+   323.0
+  ],
+  [
+   "2022-06-17",
+   320.0
+  ],
+  [
+   "2022-06-24",
+   320.0
+  ],
+  [
+   "2022-07-01",
+   301.0
+  ],
+  [
+   "2022-07-08",
+   293.0
+  ],
+  [
+   "2022-07-15",
+   290.0
+  ],
+  [
+   "2022-07-22",
+   275.0
+  ],
+  [
+   "2022-07-29",
+   274.5
+  ],
+  [
+   "2022-08-05",
+   270.0
+  ],
+  [
+   "2022-08-12",
+   272.5
+  ],
+  [
+   "2022-08-19",
+   250.0
+  ],
+  [
+   "2022-08-26",
+   263.0
+  ],
+  [
+   "2022-09-02",
+   242.5
+  ],
+  [
+   "2022-09-09",
+   243.5
+  ],
+  [
+   "2022-09-16",
+   238.5
+  ],
+  [
+   "2022-09-23",
+   235.0
+  ],
+  [
+   "2022-09-30",
+   235.0
+  ],
+  [
+   "2022-10-07",
+   240.0
+  ],
+  [
+   "2022-10-14",
+   250.0
+  ],
+  [
+   "2022-10-21",
+   278.5
+  ],
+  [
+   "2022-10-28",
+   285.0
+  ],
+  [
+   "2022-11-04",
+   312.0
+  ],
+  [
+   "2022-11-11",
+   306.5
+  ],
+  [
+   "2022-11-18",
+   309.5
+  ],
+  [
+   "2022-11-25",
+   295.0
+  ],
+  [
+   "2022-12-02",
+   295.0
+  ],
+  [
+   "2022-12-09",
+   315.0
+  ],
+  [
+   "2022-12-16",
+   310.0
+  ],
+  [
+   "2022-12-23",
+   307.5
+  ],
+  [
+   "2022-12-30",
+   310.0
+  ],
+  [
+   "2023-01-06",
+   310.0
+  ],
+  [
+   "2023-01-13",
+   270.0
+  ],
+  [
+   "2023-01-20",
+   266.0
+  ],
+  [
+   "2023-01-27",
+   256.0
+  ],
+  [
+   "2023-02-03",
+   257.5
+  ],
+  [
+   "2023-02-10",
+   255.0
+  ],
+  [
+   "2023-02-17",
+   237.5
+  ],
+  [
+   "2023-02-24",
+   235.0
+  ],
+  [
+   "2023-03-03",
+   215.0
+  ],
+  [
+   "2023-03-10",
+   205.0
+  ],
+  [
+   "2023-03-17",
+   200.0
+  ],
+  [
+   "2023-03-24",
+   196.25
+  ],
+  [
+   "2023-03-31",
+   200.0
+  ],
+  [
+   "2023-04-06",
+   211.0
+  ],
+  [
+   "2023-04-14",
+   211.0
+  ],
+  [
+   "2023-04-21",
+   214.0
+  ],
+  [
+   "2023-04-28",
+   216.0
+  ],
+  [
+   "2023-05-05",
+   220.0
+  ],
+  [
+   "2023-05-12",
+   228.0
+  ],
+  [
+   "2023-05-19",
+   229.0
+  ],
+  [
+   "2023-05-26",
+   230.0
+  ],
+  [
+   "2023-06-02",
+   230.0
+  ],
+  [
+   "2023-06-09",
+   230.0
+  ],
+  [
+   "2023-06-16",
+   231.0
+  ],
+  [
+   "2023-06-23",
+   229.0
+  ],
+  [
+   "2023-06-30",
+   221.0
+  ],
+  [
+   "2023-07-07",
+   221.0
+  ],
+  [
+   "2023-07-14",
+   221.0
+  ],
+  [
+   "2023-07-21",
+   221.0
+  ],
+  [
+   "2023-07-28",
+   211.0
+  ],
+  [
+   "2023-08-04",
+   208.0
+  ],
+  [
+   "2023-08-11",
+   211.0
+  ],
+  [
+   "2023-08-18",
+   211.0
+  ],
+  [
+   "2023-08-25",
+   211.0
+  ],
+  [
+   "2023-09-01",
+   215.0
+  ],
+  [
+   "2023-09-08",
+   226.0
+  ],
+  [
+   "2023-09-15",
+   234.0
+  ],
+  [
+   "2023-09-22",
+   171.0
+  ],
+  [
+   "2023-09-29",
+   166.5
+  ],
+  [
+   "2023-10-06",
+   163.0
+  ],
+  [
+   "2023-10-13",
+   166.0
+  ],
+  [
+   "2023-10-20",
+   166.0
+  ],
+  [
+   "2023-10-27",
+   161.0
+  ],
+  [
+   "2023-11-03",
+   172.0
+  ],
+  [
+   "2023-11-10",
+   170.0
+  ],
+  [
+   "2023-11-17",
+   149.5
+  ],
+  [
+   "2023-11-24",
+   154.0
+  ],
+  [
+   "2023-12-01",
+   157.0
+  ],
+  [
+   "2023-12-08",
+   154.0
+  ],
+  [
+   "2023-12-15",
+   144.0
+  ],
+  [
+   "2023-12-22",
+   144.5
+  ],
+  [
+   "2023-12-29",
+   147.0
+  ],
+  [
+   "2024-01-05",
+   158.0
+  ],
+  [
+   "2024-01-12",
+   158.0
+  ],
+  [
+   "2024-01-19",
+   157.5
+  ],
+  [
+   "2024-01-26",
+   170.0
+  ],
+  [
+   "2024-02-02",
+   165.0
+  ],
+  [
+   "2024-02-09",
+   155.5
+  ],
+  [
+   "2024-02-16",
+   154.0
+  ],
+  [
+   "2024-02-23",
+   153.0
+  ],
+  [
+   "2024-03-01",
+   145.0
+  ],
+  [
+   "2024-03-08",
+   149.5
+  ],
+  [
+   "2024-03-15",
+   170.5
+  ],
+  [
+   "2024-03-22",
+   187.0
+  ],
+  [
+   "2024-03-28",
+   174.5
+  ],
+  [
+   "2024-04-05",
+   172.0
+  ],
+  [
+   "2024-04-12",
+   158.5
+  ],
+  [
+   "2024-04-19",
+   159.0
+  ],
+  [
+   "2024-04-26",
+   160.5
+  ],
+  [
+   "2024-05-03",
+   163.0
+  ],
+  [
+   "2024-05-10",
+   170.5
+  ],
+  [
+   "2024-05-17",
+   176.5
+  ],
+  [
+   "2024-05-24",
+   177.0
+  ],
+  [
+   "2024-05-31",
+   179.0
+  ],
+  [
+   "2024-06-07",
+   179.0
+  ],
+  [
+   "2024-06-14",
+   191.0
+  ],
+  [
+   "2024-06-21",
+   195.5
+  ],
+  [
+   "2024-06-28",
+   202.0
+  ],
+  [
+   "2024-07-05",
+   205.0
+  ],
+  [
+   "2024-07-12",
+   207.0
+  ],
+  [
+   "2024-07-19",
+   218.0
+  ],
+  [
+   "2024-07-26",
+   181.0
+  ],
+  [
+   "2024-08-02",
+   176.5
+  ],
+  [
+   "2024-08-09",
+   182.5
+  ],
+  [
+   "2024-08-16",
+   182.0
+  ],
+  [
+   "2024-08-23",
+   200.5
+  ],
+  [
+   "2024-08-30",
+   224.0
+  ],
+  [
+   "2024-09-06",
+   224.0
+  ],
+  [
+   "2024-09-13",
+   250.0
+  ],
+  [
+   "2024-09-20",
+   248.0
+  ],
+  [
+   "2024-09-27",
+   182.0
+  ],
+  [
+   "2024-10-04",
+   174.5
+  ],
+  [
+   "2024-10-11",
+   172.5
+  ],
+  [
+   "2024-10-18",
+   160.0
+  ],
+  [
+   "2024-10-25",
+   142.5
+  ],
+  [
+   "2024-11-01",
+   133.0
+  ],
+  [
+   "2024-11-08",
+   126.5
+  ],
+  [
+   "2024-11-15",
+   125.0
+  ],
+  [
+   "2024-11-22",
+   130.0
+  ],
+  [
+   "2024-11-29",
+   101.0
+  ],
+  [
+   "2024-12-06",
+   100.5
+  ],
+  [
+   "2024-12-13",
+   104.0
+  ],
+  [
+   "2024-12-20",
+   100.25
+  ],
+  [
+   "2024-12-24",
+   100.25
+  ],
+  [
+   "2024-12-27",
+   100.25
+  ],
+  [
+   "2025-01-03",
+   104.75
+  ],
+  [
+   "2025-01-10",
+   97.25
+  ],
+  [
+   "2025-01-17",
+   93.25
+  ],
+  [
+   "2025-01-24",
+   92.0
+  ],
+  [
+   "2025-01-31",
+   119.0
+  ],
+  [
+   "2025-02-07",
+   128.0
+  ],
+  [
+   "2025-02-14",
+   130.5
+  ],
+  [
+   "2025-02-21",
+   131.0
+  ],
+  [
+   "2025-02-28",
+   137.0
+  ],
+  [
+   "2025-03-07",
+   125.0
+  ],
+  [
+   "2025-03-14",
+   120.0
+  ],
+  [
+   "2025-03-21",
+   120.0
+  ],
+  [
+   "2025-03-28",
+   116.0
+  ],
+  [
+   "2025-04-04",
+   110.0
+  ],
+  [
+   "2025-04-11",
+   107.0
+  ],
+  [
+   "2025-04-17",
+   107.5
+  ],
+  [
+   "2025-04-25",
+   107.5
+  ],
+  [
+   "2025-05-02",
+   106.5
+  ],
+  [
+   "2025-05-09",
+   106.5
+  ],
+  [
+   "2025-05-16",
+   110.0
+  ],
+  [
+   "2025-05-23",
+   111.5
+  ],
+  [
+   "2025-05-30",
+   106.5
+  ],
+  [
+   "2025-06-06",
+   111.0
+  ],
+  [
+   "2025-06-13",
+   124.5
+  ],
+  [
+   "2025-06-20",
+   135.0
+  ],
+  [
+   "2025-06-27",
+   204.0
+  ],
+  [
+   "2025-07-04",
+   198.0
+  ],
+  [
+   "2025-07-11",
+   209.5
+  ],
+  [
+   "2025-07-18",
+   217.0
+  ],
+  [
+   "2025-07-25",
+   215.0
+  ],
+  [
+   "2025-08-01",
+   206.0
+  ],
+  [
+   "2025-08-08",
+   182.0
+  ],
+  [
+   "2025-08-15",
+   186.0
+  ],
+  [
+   "2025-08-22",
+   199.0
+  ],
+  [
+   "2025-08-29",
+   216.0
+  ],
+  [
+   "2025-09-05",
+   232.0
+  ],
+  [
+   "2025-09-12",
+   219.0
+  ],
+  [
+   "2025-09-19",
+   220.0
+  ],
+  [
+   "2025-09-26",
+   224.0
+  ],
+  [
+   "2025-10-03",
+   242.0
+  ],
+  [
+   "2025-10-10",
+   245.0
+  ],
+  [
+   "2025-10-17",
+   250.0
+  ],
+  [
+   "2025-10-24",
+   259.0
+  ],
+  [
+   "2025-10-31",
+   258.0
+  ],
+  [
+   "2025-11-07",
+   258.0
+  ],
+  [
+   "2025-11-14",
+   300.0
+  ],
+  [
+   "2025-11-21",
+   325.0
+  ],
+  [
+   "2025-11-28",
+   322.0
+  ],
+  [
+   "2025-12-05",
+   328.0
+  ],
+  [
+   "2025-12-12",
+   325.0
+  ],
+  [
+   "2025-12-19",
+   335.0
+  ],
+  [
+   "2025-12-24",
+   347.0
+  ],
+  [
+   "2026-01-02",
+   347.0
+  ],
+  [
+   "2026-01-09",
+   344.0
+  ],
+  [
+   "2026-01-16",
+   332.0
+  ],
+  [
+   "2026-01-23",
+   305.0
+  ],
+  [
+   "2026-01-30",
+   333.0
+  ],
+  [
+   "2026-02-06",
+   310.0
+  ],
+  [
+   "2026-02-13",
+   311.0
+  ],
+  [
+   "2026-02-20",
+   308.0
+  ],
+  [
+   "2026-02-27",
+   294.0
+  ],
+  [
+   "2026-03-06",
+   304.0
+  ],
+  [
+   "2026-03-13",
+   302.0
+  ],
+  [
+   "2026-03-20",
+   276.0
+  ],
+  [
+   "2026-03-27",
+   278.0
+  ],
+  [
+   "2026-04-02",
+   288.0
+  ],
+  [
+   "2026-04-10",
+   298.0
+  ],
+  [
+   "2026-04-17",
+   292.0
+  ],
+  [
+   "2026-04-24",
+   294.0
+  ],
+  [
+   "2026-05-01",
+   290.0
+  ],
+  [
+   "2026-05-08",
+   295.0
+  ],
+  [
+   "2026-05-15",
+   290.0
+  ],
+  [
+   "2026-05-22",
+   360.0
+  ],
+  [
+   "2026-05-29",
+   395.0
+  ],
+  [
+   "2026-06-05",
+   381.0
+  ],
+  [
+   "2026-06-12",
+   370.0
+  ],
+  [
+   "2026-06-19",
+   370.0
+  ],
+  [
+   "2026-06-26",
+   417.0
+  ],
+  [
+   "2026-07-03",
+   440.0
+  ],
+  [
+   "2026-07-10",
+   433.0
+  ],
+  [
+   "2026-07-17",
+   408.0
+  ],
+  [
+   "2026-07-24",
+   510.0
+  ],
+  [
+   "2026-07-31",
+   473.0
+  ],
+  [
+   "2026-08-07",
+   510.0
+  ],
+  [
+   "2026-08-14",
+   520.0
+  ],
+  [
+   "2026-08-21",
+   531.0
+  ],
+  [
+   "2026-08-28",
+   554.0
+  ],
+  [
+   "2026-09-04",
+   562.0
+  ],
+  [
+   "2026-09-11",
+   560.0
+  ],
+  [
+   "2026-09-18",
+   564.0
+  ],
+  [
+   "2026-09-25",
+   574.0
+  ],
+  [
+   "2026-10-02",
+   576.0
+  ],
+  [
+   "2026-10-09",
+   576.0
+  ],
+  [
+   "2026-10-16",
+   570.0
+  ],
+  [
+   "2026-10-20",
+   528.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-11-22",
+   "doc": "Q3 TU",
+   "fy": "FY21",
+   "g": "flat",
+   "s": 0,
+   "q": "Our expectations for the year remain unchanged. However, we remain mindful of the ongoing supply chain disruptions which may continue into 2022.",
+   "file": "20211122_DIA_Trading-Statement.md"
+  },
+  {
+   "d": "2022-03-28",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Our expectation for 2022, despite current headwinds including supply chain constraints and inflation, is for further strong progress driven by revenue growth and improved margins.",
+   "file": "20220328_DIA_Final-Results.md"
+  },
+  {
+   "d": "2022-05-19",
+   "doc": "AGM",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Our expectations for the year remain unchanged. However, we remain mindful of the ongoing supply chain disruptions which may well continue throughout 2022.",
+   "file": "20220519_DIA_Trading-Statement.md"
+  },
+  {
+   "d": "2022-08-01",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Strong commercial momentum and continued operational execution provide confidence in delivering good progress in 2022, with the Board's expectations for the full year unchanged",
+   "file": "20220801_DIA_Half-year-Report.md"
+  },
+  {
+   "d": "2022-11-23",
+   "doc": "Q3 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Expectations for the full year remain unchanged. The Board remains very mindful of the current economic backdrop and continuing supply chain disruptions, with the final two months of the year being a seasonally important trading period for the Group.",
+   "file": "20221123_DIA_Trading-Statement.md"
+  },
+  {
+   "d": "2023-01-13",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "CUT",
+   "s": -3,
+   "q": "Due to the lower-than-expected December revenue, the Group now anticipates reporting FY22 underlying operating profit of at least £5m (2021: £4.5m) which is below the Board's previous expectations.",
+   "file": "20230113_DIA_Trading-Statement.md"
+  },
+  {
+   "d": "2023-03-27",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "The macroeconomic outlook remains challenging, and we expect global supply chain disruptions to continue in the short term. We expect to see some alleviation in H2 2023.",
+   "file": "20230327_DIA_Final-Results.md"
+  },
+  {
+   "d": "2023-05-16",
+   "doc": "AGM",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "We remain mindful of the risk posed by the current economic uncertainty, however our expectations for the year remain unchanged with performance now more significantly weighted to the second half.",
+   "file": "20230516_DIA_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2023-09-18",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -3,
+   "q": "Current trading and the full year outlook are below our prior expectations. However, the Board expects an improved second half trading performance when compared to the first half and the prior year period driven by a solid order book in the seasonally strongest period, lower component costs coming through and cost savings.",
+   "file": "20230918_DIA_Unaudited-Half-Year-Results-2023.md"
+  },
+  {
+   "d": "2024-01-30",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "As a result, and whilst markets are expected to remain challenging into 2024 with ongoing uncertainty around the timing of capex projects, the Board is confident in the Group's ability to sustain this momentum.",
+   "file": "20240130_DIA_Trading-Update.md"
+  },
+  {
+   "d": "2024-02-19",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "With this background and with the refreshed strategy focussed on delivering medium-term benefits of the transformation project, the Board remains confident of making progress in 2024.",
+   "file": "20240219_DIA_Statement-re-second-interim-results.md"
+  },
+  {
+   "d": "2024-06-13",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading for the last 3 months of FY2023/24 through to 31 March 2024 remained in line with management expectations.",
+   "file": "20240613_DIA_Update-Announcement.md"
+  },
+  {
+   "d": "2024-07-30",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "With quick action, discipline and accountability, I am confident that we can improve Dialight's financial outlook and make a real difference to the business in the medium term, as we seek to maximise our self-help approach and deliver predictable forecasts and performance for the benefit our customers, suppliers, employees, shareholders, and other stakeholders.",
+   "file": "20240730_DIA_Final-Results.md",
+   "gnote": "discounted: change of year-end"
+  },
+  {
+   "d": "2024-11-04",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "confirms that its half-year results for the period 1 April 2024 to 30 September 2024 will be published on Monday 11 November 2024 and that its underlying trading performance for the period was in line with management's expectations.",
+   "file": "20241104_DIA_Date-of-half-year-results.md"
+  },
+  {
+   "d": "2024-11-25",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "However, the relentless focus by management on executing the Transformation Plan is beginning to show positive results and provides a solid foundation to achieve our medium-term ambitions. With this background, the Board is confident that further progress will be made in the second half of the year.",
+   "file": "20241125_DIA_Half-year-Report.md"
+  },
+  {
+   "d": "2025-01-28",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 1,
+   "q": "Trading performance for the 3-month period ended 31 December 2024 was slightly ahead of our expectations. The business traded profitably and generated positive operating cash flow.",
+   "file": "20250128_DIA_Trading-Statement.md"
+  },
+  {
+   "d": "2025-03-31",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 2,
+   "q": "As we come to the end of the financial year ending 31 March 2025, underlying operating profit before tax for the Group is expected to be ahead of market expectations.",
+   "file": "20250331_DIA_Sanmina-Final-Agreement,-Trading-update.md"
+  },
+  {
+   "d": "2025-06-24",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "For the current financial year, we remain confident in the Group making further progress and note that the Group will also benefit from the one-off Covid-19 credit received from the US IRS.",
+   "file": "20250624_DIA_Final-Results.md"
+  },
+  {
+   "d": "2025-09-01",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "The Board remains confident of meeting current market expectation1 for the full year to 31 March 2026. A further update will be provided in October 2025 once the outcome for the first half to 30 September 2025 is determined.",
+   "file": "20250901_DIA_Trading-Statement.md"
+  },
+  {
+   "d": "2025-10-06",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 2,
+   "q": "The continued benefits of the delivery of the Transformation Plan are that the Group now expects to significantly exceed the market expectation for Adjusted Operating Profit for the year ending 31 March 2026.",
+   "file": "20251006_DIA_Trading-Statement.md"
+  },
+  {
+   "d": "2025-11-11",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Our focus is on making accelerated progress on our Sales transformation and generating growth in Lighting, despite the continued headwind of difficult US market conditions. The Board remains confident in achieving the recently upgraded expectations for the full financial year.",
+   "file": "20251111_DIA_FY26-Interim-Results.md"
+  },
+  {
+   "d": "2026-01-08",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "The continued benefits of the delivery of the Transformation Plan means that the Group now expects to exceed market expectation* for Adjusted Operating Profit for the year ending 31 March 2026 and beyond.",
+   "file": "20260108_DIA_Third-Quarter-Trading-Update.md"
+  },
+  {
+   "d": "2026-06-23",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 1,
+   "q": "So, despite the difficult geopolitical headwinds, we are confident in our focus to continue to achieve steady sales growth, achieve strong profit growth and eliminate bank debt in the year, with further progress thereafter.",
+   "file": "20260623_DIA_Final-Results.md"
+  },
+  {
+   "d": "2026-07-22",
+   "doc": "Q1 TU",
+   "fy": "FY27",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Whilst there remains a significant proportion of the financial year still ahead, based on performance to date and the current outlook, the Board believes the Group's profit for the financial year ending 31 March 2027 is likely to be ahead of its' previous expectations.",
+   "file": "20260722_DIA_Trading-Statement.md"
+  },
+  {
+   "d": "2026-07-22",
+   "doc": "Q1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Whilst there remains a significant proportion of the financial year still ahead, based on performance to date and the current outlook, the Board believes the Group's profit for the financial year ending 31 March 2027 is likely to be ahead of its' previous expectations.",
+   "file": "20260722_DIA_Correction-Trading-Statement-Typographical-Error.md"
+  },
+  {
+   "d": "2026-09-01",
+   "doc": "AGM",
+   "fy": "FY27",
+   "g": "RAISE",
+   "s": 3,
+   "q": "Whilst there remains a significant proportion of the financial year still to be delivered, based on performance to date and the current outlook, the Board now believes the Group's adjusted profit before tax for the financial year ending 31 March 2027 is likely to be significantly ahead of its' previous expectations.",
+   "file": "20260901_DIA_Trading-Statement.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-01",
+  "doc": "AGM",
+  "file": "20260901_DIA_Trading-Statement.md",
+  "vs": "AGM TU Sep-25 · Q1 TU Jul-26 · back to Oct-25/Jan-26/Jun-26",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Sep-25: “confident of meeting current market expectation1” with footnote “adjusted profit before tax of $5.7m” → now “significantly ahead of its' previous expectations”, with no market figure or broker footnote",
+    "span": "Market figure given Sep-25, Nov-25 (Investec $8.5m), Jan-26 ($8.6m EBITA) → absent Jul-26 and Sep-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "Net debt: Sep-25 “approximately $13.0m on 31 August 2025”, Jan-26 “$10.3m on 31 December 2025” → now “continues to improve on its net cash position”, no figure",
+    "span": "Figure given Sep-25, Oct-25, Jan-26, Jun-26 ($1.9m) → words only Jul-26 and Sep-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Wording vs number",
+    "text": "Return on sales: Jul-26 “has exceeded the newly issued, and upgraded, return on sales target of 15% plus in the first quarter” → now “is likely to meet the newly issued, and upgraded, return on sales target of 15% plus in the first half”",
+    "span": "Q1 TU Jul-26 → AGM TU Sep-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "New Q2 sales read: “This rate of expected growth is now likely to continue in the second quarter of the year-to-date.” (Sep-25: sales “marginally down on the comparative prior period”)",
+    "span": "Sep-25 → Sep-26"
+   }
+  ]
+ }
+}

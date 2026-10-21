@@ -1,0 +1,1336 @@
+{
+ "ticker": "TTG",
+ "v": "2026-10-21.6c5f",
+ "ccy": "GBX",
+ "src": "AlphaVantage TTG.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   257.0
+  ],
+  [
+   "2021-10-22",
+   257.5
+  ],
+  [
+   "2021-10-29",
+   255.0
+  ],
+  [
+   "2021-11-05",
+   249.5
+  ],
+  [
+   "2021-11-12",
+   250.0
+  ],
+  [
+   "2021-11-19",
+   262.5
+  ],
+  [
+   "2021-11-26",
+   225.0
+  ],
+  [
+   "2021-12-03",
+   232.5
+  ],
+  [
+   "2021-12-10",
+   245.0
+  ],
+  [
+   "2021-12-17",
+   250.0
+  ],
+  [
+   "2021-12-24",
+   246.0
+  ],
+  [
+   "2021-12-31",
+   256.0
+  ],
+  [
+   "2022-01-07",
+   254.0
+  ],
+  [
+   "2022-01-14",
+   258.5
+  ],
+  [
+   "2022-01-21",
+   262.0
+  ],
+  [
+   "2022-01-28",
+   232.0
+  ],
+  [
+   "2022-02-04",
+   230.0
+  ],
+  [
+   "2022-02-11",
+   228.0
+  ],
+  [
+   "2022-02-18",
+   223.0
+  ],
+  [
+   "2022-02-25",
+   213.5
+  ],
+  [
+   "2022-03-04",
+   190.0
+  ],
+  [
+   "2022-03-11",
+   199.6
+  ],
+  [
+   "2022-03-18",
+   219.0
+  ],
+  [
+   "2022-03-25",
+   208.5
+  ],
+  [
+   "2022-04-01",
+   203.0
+  ],
+  [
+   "2022-04-08",
+   196.4
+  ],
+  [
+   "2022-04-14",
+   198.0
+  ],
+  [
+   "2022-04-22",
+   203.5
+  ],
+  [
+   "2022-04-29",
+   182.4
+  ],
+  [
+   "2022-05-06",
+   171.0
+  ],
+  [
+   "2022-05-13",
+   185.4
+  ],
+  [
+   "2022-05-20",
+   183.0
+  ],
+  [
+   "2022-05-27",
+   197.8
+  ],
+  [
+   "2022-06-01",
+   197.6
+  ],
+  [
+   "2022-06-10",
+   196.0
+  ],
+  [
+   "2022-06-17",
+   197.6
+  ],
+  [
+   "2022-06-24",
+   181.8
+  ],
+  [
+   "2022-07-01",
+   171.0
+  ],
+  [
+   "2022-07-08",
+   182.0
+  ],
+  [
+   "2022-07-15",
+   173.8
+  ],
+  [
+   "2022-07-22",
+   189.2
+  ],
+  [
+   "2022-07-29",
+   192.2
+  ],
+  [
+   "2022-08-05",
+   181.2
+  ],
+  [
+   "2022-08-12",
+   170.6
+  ],
+  [
+   "2022-08-19",
+   164.0
+  ],
+  [
+   "2022-08-26",
+   160.0
+  ],
+  [
+   "2022-09-02",
+   153.6
+  ],
+  [
+   "2022-09-09",
+   158.4
+  ],
+  [
+   "2022-09-16",
+   143.2
+  ],
+  [
+   "2022-09-23",
+   142.2
+  ],
+  [
+   "2022-09-30",
+   140.8
+  ],
+  [
+   "2022-10-07",
+   152.0
+  ],
+  [
+   "2022-10-14",
+   143.0
+  ],
+  [
+   "2022-10-21",
+   143.4
+  ],
+  [
+   "2022-10-28",
+   135.6
+  ],
+  [
+   "2022-11-04",
+   131.8
+  ],
+  [
+   "2022-11-11",
+   151.4
+  ],
+  [
+   "2022-11-18",
+   145.0
+  ],
+  [
+   "2022-11-25",
+   174.0
+  ],
+  [
+   "2022-12-02",
+   170.4
+  ],
+  [
+   "2022-12-09",
+   174.8
+  ],
+  [
+   "2022-12-16",
+   171.0
+  ],
+  [
+   "2022-12-23",
+   172.0
+  ],
+  [
+   "2022-12-30",
+   174.0
+  ],
+  [
+   "2023-01-06",
+   169.0
+  ],
+  [
+   "2023-01-13",
+   176.6
+  ],
+  [
+   "2023-01-20",
+   171.2
+  ],
+  [
+   "2023-01-27",
+   182.0
+  ],
+  [
+   "2023-02-03",
+   190.4
+  ],
+  [
+   "2023-02-10",
+   193.0
+  ],
+  [
+   "2023-02-17",
+   192.0
+  ],
+  [
+   "2023-02-24",
+   197.0
+  ],
+  [
+   "2023-03-03",
+   191.0
+  ],
+  [
+   "2023-03-10",
+   180.2
+  ],
+  [
+   "2023-03-17",
+   182.6
+  ],
+  [
+   "2023-03-24",
+   184.2
+  ],
+  [
+   "2023-03-31",
+   187.2
+  ],
+  [
+   "2023-04-06",
+   195.8
+  ],
+  [
+   "2023-04-14",
+   184.2
+  ],
+  [
+   "2023-04-21",
+   176.4
+  ],
+  [
+   "2023-04-28",
+   170.0
+  ],
+  [
+   "2023-05-05",
+   169.8
+  ],
+  [
+   "2023-05-12",
+   169.6
+  ],
+  [
+   "2023-05-19",
+   169.0
+  ],
+  [
+   "2023-05-26",
+   160.4
+  ],
+  [
+   "2023-06-02",
+   163.4
+  ],
+  [
+   "2023-06-09",
+   168.0
+  ],
+  [
+   "2023-06-16",
+   162.6
+  ],
+  [
+   "2023-06-23",
+   164.2
+  ],
+  [
+   "2023-06-30",
+   157.6
+  ],
+  [
+   "2023-07-07",
+   149.8
+  ],
+  [
+   "2023-07-14",
+   156.0
+  ],
+  [
+   "2023-07-21",
+   156.0
+  ],
+  [
+   "2023-07-28",
+   159.6
+  ],
+  [
+   "2023-08-04",
+   160.0
+  ],
+  [
+   "2023-08-11",
+   173.4
+  ],
+  [
+   "2023-08-18",
+   181.8
+  ],
+  [
+   "2023-08-25",
+   173.6
+  ],
+  [
+   "2023-09-01",
+   172.0
+  ],
+  [
+   "2023-09-08",
+   171.0
+  ],
+  [
+   "2023-09-15",
+   171.6
+  ],
+  [
+   "2023-09-22",
+   171.0
+  ],
+  [
+   "2023-09-29",
+   170.0
+  ],
+  [
+   "2023-10-06",
+   170.0
+  ],
+  [
+   "2023-10-13",
+   170.0
+  ],
+  [
+   "2023-10-20",
+   169.0
+  ],
+  [
+   "2023-10-27",
+   163.0
+  ],
+  [
+   "2023-11-03",
+   157.6
+  ],
+  [
+   "2023-11-10",
+   152.8
+  ],
+  [
+   "2023-11-17",
+   159.2
+  ],
+  [
+   "2023-11-24",
+   155.4
+  ],
+  [
+   "2023-12-01",
+   154.0
+  ],
+  [
+   "2023-12-08",
+   148.0
+  ],
+  [
+   "2023-12-15",
+   155.0
+  ],
+  [
+   "2023-12-22",
+   153.0
+  ],
+  [
+   "2023-12-29",
+   156.2
+  ],
+  [
+   "2024-01-05",
+   158.0
+  ],
+  [
+   "2024-01-12",
+   161.8
+  ],
+  [
+   "2024-01-19",
+   150.4
+  ],
+  [
+   "2024-01-26",
+   148.6
+  ],
+  [
+   "2024-02-02",
+   155.0
+  ],
+  [
+   "2024-02-09",
+   153.4
+  ],
+  [
+   "2024-02-16",
+   151.6
+  ],
+  [
+   "2024-02-23",
+   144.0
+  ],
+  [
+   "2024-03-01",
+   135.2
+  ],
+  [
+   "2024-03-08",
+   154.6
+  ],
+  [
+   "2024-03-15",
+   156.8
+  ],
+  [
+   "2024-03-22",
+   155.0
+  ],
+  [
+   "2024-03-28",
+   158.6
+  ],
+  [
+   "2024-04-05",
+   154.0
+  ],
+  [
+   "2024-04-12",
+   155.5
+  ],
+  [
+   "2024-04-19",
+   166.5
+  ],
+  [
+   "2024-04-26",
+   176.0
+  ],
+  [
+   "2024-05-03",
+   175.0
+  ],
+  [
+   "2024-05-10",
+   159.0
+  ],
+  [
+   "2024-05-17",
+   158.0
+  ],
+  [
+   "2024-05-24",
+   161.5
+  ],
+  [
+   "2024-05-31",
+   150.0
+  ],
+  [
+   "2024-06-07",
+   154.0
+  ],
+  [
+   "2024-06-14",
+   152.5
+  ],
+  [
+   "2024-06-21",
+   154.5
+  ],
+  [
+   "2024-06-28",
+   146.0
+  ],
+  [
+   "2024-07-05",
+   147.5
+  ],
+  [
+   "2024-07-12",
+   157.5
+  ],
+  [
+   "2024-07-19",
+   149.0
+  ],
+  [
+   "2024-07-26",
+   151.5
+  ],
+  [
+   "2024-08-02",
+   142.0
+  ],
+  [
+   "2024-08-09",
+   143.0
+  ],
+  [
+   "2024-08-16",
+   161.0
+  ],
+  [
+   "2024-08-23",
+   164.5
+  ],
+  [
+   "2024-08-30",
+   161.0
+  ],
+  [
+   "2024-09-06",
+   147.0
+  ],
+  [
+   "2024-09-13",
+   142.0
+  ],
+  [
+   "2024-09-20",
+   87.0
+  ],
+  [
+   "2024-09-27",
+   93.8
+  ],
+  [
+   "2024-10-04",
+   99.8
+  ],
+  [
+   "2024-10-11",
+   90.2
+  ],
+  [
+   "2024-10-18",
+   88.6
+  ],
+  [
+   "2024-10-25",
+   85.0
+  ],
+  [
+   "2024-11-01",
+   78.8
+  ],
+  [
+   "2024-11-08",
+   74.4
+  ],
+  [
+   "2024-11-15",
+   111.0
+  ],
+  [
+   "2024-11-22",
+   110.0
+  ],
+  [
+   "2024-11-29",
+   117.5
+  ],
+  [
+   "2024-12-06",
+   118.0
+  ],
+  [
+   "2024-12-13",
+   107.0
+  ],
+  [
+   "2024-12-20",
+   106.5
+  ],
+  [
+   "2024-12-24",
+   107.0
+  ],
+  [
+   "2024-12-27",
+   105.5
+  ],
+  [
+   "2025-01-03",
+   102.5
+  ],
+  [
+   "2025-01-10",
+   94.2
+  ],
+  [
+   "2025-01-17",
+   88.0
+  ],
+  [
+   "2025-01-24",
+   89.4
+  ],
+  [
+   "2025-01-31",
+   91.0
+  ],
+  [
+   "2025-02-07",
+   85.6
+  ],
+  [
+   "2025-02-14",
+   85.2
+  ],
+  [
+   "2025-02-21",
+   83.4
+  ],
+  [
+   "2025-02-28",
+   81.2
+  ],
+  [
+   "2025-03-07",
+   80.8
+  ],
+  [
+   "2025-03-14",
+   84.4
+  ],
+  [
+   "2025-03-21",
+   85.6
+  ],
+  [
+   "2025-03-28",
+   84.4
+  ],
+  [
+   "2025-04-04",
+   78.0
+  ],
+  [
+   "2025-04-11",
+   74.8
+  ],
+  [
+   "2025-04-17",
+   76.0
+  ],
+  [
+   "2025-04-25",
+   75.1
+  ],
+  [
+   "2025-05-02",
+   76.2
+  ],
+  [
+   "2025-05-09",
+   79.6
+  ],
+  [
+   "2025-05-16",
+   89.1
+  ],
+  [
+   "2025-05-23",
+   92.1
+  ],
+  [
+   "2025-05-30",
+   92.5
+  ],
+  [
+   "2025-06-06",
+   96.3
+  ],
+  [
+   "2025-06-13",
+   103.2
+  ],
+  [
+   "2025-06-20",
+   103.8
+  ],
+  [
+   "2025-06-27",
+   111.2
+  ],
+  [
+   "2025-07-04",
+   112.8
+  ],
+  [
+   "2025-07-11",
+   107.2
+  ],
+  [
+   "2025-07-18",
+   105.2
+  ],
+  [
+   "2025-07-25",
+   97.0
+  ],
+  [
+   "2025-08-01",
+   94.2
+  ],
+  [
+   "2025-08-08",
+   90.5
+  ],
+  [
+   "2025-08-15",
+   96.0
+  ],
+  [
+   "2025-08-22",
+   99.6
+  ],
+  [
+   "2025-08-29",
+   101.0
+  ],
+  [
+   "2025-09-05",
+   100.0
+  ],
+  [
+   "2025-09-12",
+   98.0
+  ],
+  [
+   "2025-09-19",
+   112.2
+  ],
+  [
+   "2025-09-26",
+   112.6
+  ],
+  [
+   "2025-10-03",
+   107.0
+  ],
+  [
+   "2025-10-10",
+   101.0
+  ],
+  [
+   "2025-10-17",
+   95.0
+  ],
+  [
+   "2025-10-24",
+   97.0
+  ],
+  [
+   "2025-10-31",
+   154.0
+  ],
+  [
+   "2025-11-07",
+   148.0
+  ],
+  [
+   "2025-11-14",
+   142.4
+  ],
+  [
+   "2025-11-21",
+   135.4
+  ],
+  [
+   "2025-11-28",
+   133.6
+  ],
+  [
+   "2025-12-05",
+   131.6
+  ],
+  [
+   "2025-12-12",
+   132.4
+  ],
+  [
+   "2025-12-19",
+   112.8
+  ],
+  [
+   "2025-12-24",
+   112.8
+  ],
+  [
+   "2026-01-02",
+   118.0
+  ],
+  [
+   "2026-01-09",
+   112.0
+  ],
+  [
+   "2026-01-16",
+   111.6
+  ],
+  [
+   "2026-01-23",
+   110.0
+  ],
+  [
+   "2026-01-30",
+   112.0
+  ],
+  [
+   "2026-02-06",
+   129.4
+  ],
+  [
+   "2026-02-13",
+   130.0
+  ],
+  [
+   "2026-02-20",
+   130.0
+  ],
+  [
+   "2026-02-27",
+   120.0
+  ],
+  [
+   "2026-03-06",
+   116.4
+  ],
+  [
+   "2026-03-13",
+   118.8
+  ],
+  [
+   "2026-03-20",
+   105.0
+  ],
+  [
+   "2026-03-27",
+   110.0
+  ],
+  [
+   "2026-04-02",
+   120.0
+  ],
+  [
+   "2026-04-10",
+   116.0
+  ],
+  [
+   "2026-04-17",
+   119.0
+  ],
+  [
+   "2026-04-24",
+   117.0
+  ],
+  [
+   "2026-05-01",
+   115.0
+  ],
+  [
+   "2026-05-08",
+   118.0
+  ],
+  [
+   "2026-05-15",
+   118.0
+  ],
+  [
+   "2026-05-22",
+   118.0
+  ],
+  [
+   "2026-05-29",
+   118.0
+  ],
+  [
+   "2026-06-05",
+   116.4
+  ],
+  [
+   "2026-06-12",
+   118.0
+  ],
+  [
+   "2026-06-19",
+   115.6
+  ],
+  [
+   "2026-06-26",
+   116.0
+  ],
+  [
+   "2026-07-03",
+   117.0
+  ],
+  [
+   "2026-07-10",
+   118.0
+  ],
+  [
+   "2026-07-17",
+   115.4
+  ],
+  [
+   "2026-07-24",
+   118.0
+  ],
+  [
+   "2026-07-31",
+   126.8
+  ],
+  [
+   "2026-08-07",
+   140.0
+  ],
+  [
+   "2026-08-14",
+   137.6
+  ],
+  [
+   "2026-08-21",
+   135.6
+  ],
+  [
+   "2026-08-28",
+   136.0
+  ],
+  [
+   "2026-09-04",
+   151.4
+  ],
+  [
+   "2026-09-11",
+   168.2
+  ],
+  [
+   "2026-09-18",
+   177.0
+  ],
+  [
+   "2026-09-25",
+   178.0
+  ],
+  [
+   "2026-10-02",
+   175.8
+  ],
+  [
+   "2026-10-09",
+   181.0
+  ],
+  [
+   "2026-10-16",
+   187.0
+  ],
+  [
+   "2026-10-20",
+   180.8
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-11-23",
+   "doc": "Q3 TU",
+   "fy": "FY21",
+   "g": "flat",
+   "s": -1,
+   "q": "Given the strong growth in our revenues, we expect to deliver adjusted operating profit of circa £35m for the current financial year, despite the significant cost headwinds referred to above.",
+   "file": "20211123_TTG_Trading-Update.md"
+  },
+  {
+   "d": "2022-01-10",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "flat",
+   "s": 0,
+   "q": "TT confirms that trading for the full year was in line with the update provided on 23 November 2021.",
+   "file": "20220110_TTG_Acquisition-of-Ferranti-Power-&-Control-business.md"
+  },
+  {
+   "d": "2022-03-09",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "As a result, we are confident that TT's momentum will continue, with the outlook for financial performance in 2022 in line with management expectations, although we are mindful of increased geopolitical uncertainty.",
+   "file": "20220309_TTG_Full-Year-Results.md"
+  },
+  {
+   "d": "2022-05-13",
+   "doc": "AGM",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -1,
+   "q": "Our Sensors and Specialist Components and GMS divisions are performing well, whilst the results of our Power and Connectivity division are expected to be second half weighted.",
+   "file": "20220513_TTG_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2022-08-04",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "This, coupled with pricing actions to recover inflation and further benefits from our self-help programme, means our outlook for the full year is unchanged.",
+   "file": "20220804_TTG_Half-year-Results.md"
+  },
+  {
+   "d": "2022-11-10",
+   "doc": "Q3 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Despite the challenging backdrop, given the strong performance of the Group, we expect to report adjusted profit before tax in line with the Board's expectations for the full year, with benefits of foreign exchange offsetting the headwinds from increased interest costs.",
+   "file": "20221110_TTG_Trading-Update.md"
+  },
+  {
+   "d": "2023-02-23",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Adjusted profit before tax for the year is expected to be at or around the top end of the range of analyst consensus expectations2 with the outperformance driven by our Global Manufacturing Solutions (GMS) business.",
+   "file": "20230223_TTG_FY-22-Post-Close-Trading-Update.md"
+  },
+  {
+   "d": "2023-03-08",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "This unprecedented visibility, coupled with further benefits of our self-help programme, mean we are confident in our ability to deliver further progress in 2023.",
+   "file": "20230308_TTG_Full-Year-Results.md"
+  },
+  {
+   "d": "2023-05-09",
+   "doc": "AGM",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The positive start to the year and the order book coverage underpins the Board's confidence in an unchanged outlook for the year.",
+   "file": "20230509_TTG_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2023-08-03",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 1,
+   "q": "While mindful of the macroeconomic backdrop, our performance in the first half, alongside continued strong momentum in the business provides the Board with increased confidence in delivering its full year expectations.",
+   "file": "20230803_TTG_Half-year-Results.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2023-11-22",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -1,
+   "q": "While the Board still expects good year on year improvement in revenue and profit, as a result of the machinery breakdown in S&SC we now expect to report Group adjusted profit before tax towards the lower end of current market expectations for 20233.",
+   "file": "20231122_TTG_Trading-Update.md"
+  },
+  {
+   "d": "2024-03-07",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Based on the strength and level of visibility in our order book, current end market activity and operational improvement initiatives that are underway, while mindful of the wider macro environment, we are confident we are on track to deliver a 10% operating margin in 2024.",
+   "file": "20240307_TTG_Full-Year-Results.md"
+  },
+  {
+   "d": "2024-05-10",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "We have taken cost action to offset the lower demand and as a consequence expect the H2 profit weighting to be more pronounced than normal.",
+   "file": "20240510_TTG_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2024-08-08",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "The non-recurrence of these costs, together with the benefits of the headcount reductions, will drive a much greater weighting of North American profit to the second half in the current year.",
+   "file": "20240808_TTG_Half-Year-Results.md"
+  },
+  {
+   "d": "2024-09-16",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -3,
+   "q": "However, taking into account the performance impact of our North American business, Group adjusted operating profit for FY 2024 is now expected to be in the range £37 million to £42 million.",
+   "file": "20240916_TTG_Trading-Update.md"
+  },
+  {
+   "d": "2024-11-14",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -1,
+   "q": "As a result of continued subdued demand in the North American components market and the operational improvement plans only benefiting financial results from 2025, the Board expects FY24 adjusted operating profit to be at the lower end of our previously stated range of £37m-42m.",
+   "file": "20241114_TTG_Trading-Update.md"
+  },
+  {
+   "d": "2024-12-12",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The outlook for the Company for the year ending 31 December 2024 is unchanged.",
+   "file": "20241212_TTG_Response-to-Volex-no-intention-to-bid-statement.md"
+  },
+  {
+   "d": "2025-02-25",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -3,
+   "q": "We continue to expect good adjusted operating profit progress relative to 2024 but expect the outturn to be in the range of £40 million to £46 million.",
+   "file": "20250225_TTG_Update-on-2024-Final-Results.md"
+  },
+  {
+   "d": "2025-03-07",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The guidance provided on 25 February remains unchanged.",
+   "file": "20250307_TTG_Update-on-2024-Final-Results-Delay.md"
+  },
+  {
+   "d": "2025-04-10",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -3,
+   "q": "We remain resolutely focused on our operational improvement plan, Project Dynamo, and our clear action plan to improve operational efficiency and productivity however the current uncertainty has increased the downside risk for the Group and the Board now expects adjusted operating profit to be in the range of £32 million to £40 million.",
+   "file": "20250410_TTG_Full-Year-Results.md"
+  },
+  {
+   "d": "2025-06-30",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board continues to expect adjusted operating profit for the year to be in line with previous guidance.2",
+   "file": "20250630_TTG_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2025-09-24",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": 0,
+   "q": "The Board therefore expects full year adjusted operating profit to be in line with market expectations.",
+   "file": "20250924_TTG_Half-year-Report.md"
+  },
+  {
+   "d": "2025-11-24",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -2,
+   "q": "Whilst orders received are consistent with delivering this step up, achieving this outcome will rely on there being no change to currently anticipated order delivery timelines.",
+   "file": "20251124_TTG_Trading-Update.md",
+   "gnote": "discounted: Cicor offer period"
+  },
+  {
+   "d": "2026-03-25",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board expects 2026 revenue and adjusted operating profit to be in line with Company compiled consensus.",
+   "file": "20260325_TTG_Full-Year-Results.md"
+  },
+  {
+   "d": "2026-05-15",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Guidance remains unchanged and the Board continues to expect adjusted operating profit for the year to be in line with company compiled consensus.3",
+   "file": "20260515_TTG_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2026-09-02",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Reflecting this momentum, together with the benefits of our cost reduction programme, the Board now expects adjusted operating profit for FY2026 to be ahead of current market expectations.",
+   "file": "20260902_TTG_Half-year-Report.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-02",
+  "doc": "H1 R",
+  "file": "20260902_TTG_Half-year-Report.md",
+  "vs": "H1 R Sep-25 · back to Aug-24 · AGM May-26, FY R Mar-26",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Target dropped",
+    "text": "Inventory target: last interim “We are on track to deliver our target of a £15 million reduction in net inventory levels by the end of 2026.” → now no £15m target, instead “targeted inventory investment in H1 to support anticipated growth”",
+    "span": "Target given Aug-24, Apr-25, Sep-25 → absent Mar-26 and now"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Cash conversion 135% (H1 25) → 42% (H1 26), free cash outflow £0.4m (H1 25: £6.4m inflow), beside “Cash generation remains a key priority”; FY guide “in the range of 70-80%” vs FY25 150%",
+    "span": "Sep-25 → Sep-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Pushed out",
+    "text": "UK pension buy-out: “We continue to move towards buy-out which we anticipate completing in 2026” → now “expected to complete the buy-out transaction with the insurer and wind-up in 2026 or H1 2027”",
+    "span": "Aug-24 said end-2024 or early 2025; Sep-25 said 2026; now 2026 or H1 2027"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Profit guide: “in line with company compiled consensus” (May-26) → “ahead of current market expectations” (consensus £35.0m); plus a new full-year cash conversion guide of 70-80%",
+    "span": "Mar-26, May-26 in line → Sep-26 ahead"
+   }
+  ]
+ }
+}

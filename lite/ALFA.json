@@ -1,0 +1,1369 @@
+{
+ "ticker": "ALFA",
+ "v": "2026-10-21.b409",
+ "ccy": "GBX",
+ "src": "AlphaVantage ALFA.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   171.0
+  ],
+  [
+   "2021-10-22",
+   173.5
+  ],
+  [
+   "2021-10-29",
+   192.5
+  ],
+  [
+   "2021-11-05",
+   193.0
+  ],
+  [
+   "2021-11-12",
+   204.0
+  ],
+  [
+   "2021-11-19",
+   206.0
+  ],
+  [
+   "2021-11-26",
+   197.0
+  ],
+  [
+   "2021-12-03",
+   193.0
+  ],
+  [
+   "2021-12-10",
+   195.5
+  ],
+  [
+   "2021-12-17",
+   186.0
+  ],
+  [
+   "2021-12-24",
+   185.0
+  ],
+  [
+   "2021-12-31",
+   189.5
+  ],
+  [
+   "2022-01-07",
+   183.0
+  ],
+  [
+   "2022-01-14",
+   198.0
+  ],
+  [
+   "2022-01-21",
+   184.0
+  ],
+  [
+   "2022-01-28",
+   172.5
+  ],
+  [
+   "2022-02-04",
+   177.0
+  ],
+  [
+   "2022-02-11",
+   172.0
+  ],
+  [
+   "2022-02-18",
+   170.5
+  ],
+  [
+   "2022-02-25",
+   162.0
+  ],
+  [
+   "2022-03-04",
+   149.5
+  ],
+  [
+   "2022-03-11",
+   160.0
+  ],
+  [
+   "2022-03-18",
+   156.5
+  ],
+  [
+   "2022-03-25",
+   161.0
+  ],
+  [
+   "2022-04-01",
+   158.0
+  ],
+  [
+   "2022-04-08",
+   165.0
+  ],
+  [
+   "2022-04-14",
+   162.0
+  ],
+  [
+   "2022-04-22",
+   165.0
+  ],
+  [
+   "2022-04-29",
+   182.0
+  ],
+  [
+   "2022-05-06",
+   187.0
+  ],
+  [
+   "2022-05-13",
+   183.5
+  ],
+  [
+   "2022-05-20",
+   180.0
+  ],
+  [
+   "2022-05-27",
+   183.0
+  ],
+  [
+   "2022-06-01",
+   177.0
+  ],
+  [
+   "2022-06-10",
+   167.5
+  ],
+  [
+   "2022-06-17",
+   163.5
+  ],
+  [
+   "2022-06-24",
+   156.5
+  ],
+  [
+   "2022-07-01",
+   151.0
+  ],
+  [
+   "2022-07-08",
+   153.0
+  ],
+  [
+   "2022-07-15",
+   141.0
+  ],
+  [
+   "2022-07-22",
+   154.5
+  ],
+  [
+   "2022-07-29",
+   150.0
+  ],
+  [
+   "2022-08-05",
+   162.0
+  ],
+  [
+   "2022-08-12",
+   173.0
+  ],
+  [
+   "2022-08-19",
+   169.0
+  ],
+  [
+   "2022-08-26",
+   166.0
+  ],
+  [
+   "2022-09-02",
+   173.0
+  ],
+  [
+   "2022-09-09",
+   165.0
+  ],
+  [
+   "2022-09-16",
+   164.0
+  ],
+  [
+   "2022-09-23",
+   167.5
+  ],
+  [
+   "2022-09-30",
+   163.0
+  ],
+  [
+   "2022-10-07",
+   157.0
+  ],
+  [
+   "2022-10-14",
+   153.5
+  ],
+  [
+   "2022-10-21",
+   145.0
+  ],
+  [
+   "2022-10-28",
+   152.0
+  ],
+  [
+   "2022-11-04",
+   150.0
+  ],
+  [
+   "2022-11-11",
+   153.0
+  ],
+  [
+   "2022-11-18",
+   153.0
+  ],
+  [
+   "2022-11-25",
+   155.25
+  ],
+  [
+   "2022-12-02",
+   161.0
+  ],
+  [
+   "2022-12-09",
+   159.5
+  ],
+  [
+   "2022-12-16",
+   161.0
+  ],
+  [
+   "2022-12-23",
+   164.0
+  ],
+  [
+   "2022-12-30",
+   166.0
+  ],
+  [
+   "2023-01-06",
+   165.0
+  ],
+  [
+   "2023-01-13",
+   171.0
+  ],
+  [
+   "2023-01-20",
+   172.0
+  ],
+  [
+   "2023-01-27",
+   174.5
+  ],
+  [
+   "2023-02-03",
+   177.5
+  ],
+  [
+   "2023-02-10",
+   169.0
+  ],
+  [
+   "2023-02-17",
+   158.0
+  ],
+  [
+   "2023-02-24",
+   161.0
+  ],
+  [
+   "2023-03-03",
+   158.0
+  ],
+  [
+   "2023-03-10",
+   133.5
+  ],
+  [
+   "2023-03-17",
+   128.5
+  ],
+  [
+   "2023-03-24",
+   133.5
+  ],
+  [
+   "2023-03-31",
+   136.5
+  ],
+  [
+   "2023-04-06",
+   139.0
+  ],
+  [
+   "2023-04-14",
+   134.5
+  ],
+  [
+   "2023-04-21",
+   130.0
+  ],
+  [
+   "2023-04-28",
+   142.0
+  ],
+  [
+   "2023-05-05",
+   145.0
+  ],
+  [
+   "2023-05-12",
+   142.5
+  ],
+  [
+   "2023-05-19",
+   145.0
+  ],
+  [
+   "2023-05-26",
+   159.0
+  ],
+  [
+   "2023-06-02",
+   162.0
+  ],
+  [
+   "2023-06-09",
+   188.0
+  ],
+  [
+   "2023-06-16",
+   190.0
+  ],
+  [
+   "2023-06-23",
+   195.0
+  ],
+  [
+   "2023-06-30",
+   195.0
+  ],
+  [
+   "2023-07-07",
+   147.0
+  ],
+  [
+   "2023-07-14",
+   151.0
+  ],
+  [
+   "2023-07-21",
+   157.0
+  ],
+  [
+   "2023-07-28",
+   156.0
+  ],
+  [
+   "2023-08-04",
+   148.5
+  ],
+  [
+   "2023-08-11",
+   153.0
+  ],
+  [
+   "2023-08-18",
+   149.0
+  ],
+  [
+   "2023-08-25",
+   146.5
+  ],
+  [
+   "2023-09-01",
+   151.0
+  ],
+  [
+   "2023-09-08",
+   160.0
+  ],
+  [
+   "2023-09-15",
+   158.5
+  ],
+  [
+   "2023-09-22",
+   164.0
+  ],
+  [
+   "2023-09-29",
+   184.5
+  ],
+  [
+   "2023-10-06",
+   163.0
+  ],
+  [
+   "2023-10-13",
+   162.0
+  ],
+  [
+   "2023-10-20",
+   157.5
+  ],
+  [
+   "2023-10-27",
+   150.0
+  ],
+  [
+   "2023-11-03",
+   149.5
+  ],
+  [
+   "2023-11-10",
+   151.5
+  ],
+  [
+   "2023-11-17",
+   153.5
+  ],
+  [
+   "2023-11-24",
+   153.0
+  ],
+  [
+   "2023-12-01",
+   153.0
+  ],
+  [
+   "2023-12-08",
+   148.0
+  ],
+  [
+   "2023-12-15",
+   142.0
+  ],
+  [
+   "2023-12-22",
+   140.5
+  ],
+  [
+   "2023-12-29",
+   140.0
+  ],
+  [
+   "2024-01-05",
+   147.5
+  ],
+  [
+   "2024-01-12",
+   166.5
+  ],
+  [
+   "2024-01-19",
+   166.0
+  ],
+  [
+   "2024-01-26",
+   176.0
+  ],
+  [
+   "2024-02-02",
+   171.0
+  ],
+  [
+   "2024-02-09",
+   170.5
+  ],
+  [
+   "2024-02-16",
+   181.5
+  ],
+  [
+   "2024-02-23",
+   180.0
+  ],
+  [
+   "2024-03-01",
+   173.0
+  ],
+  [
+   "2024-03-08",
+   169.0
+  ],
+  [
+   "2024-03-15",
+   166.5
+  ],
+  [
+   "2024-03-22",
+   164.5
+  ],
+  [
+   "2024-03-28",
+   169.5
+  ],
+  [
+   "2024-04-05",
+   171.6
+  ],
+  [
+   "2024-04-12",
+   174.8
+  ],
+  [
+   "2024-04-19",
+   161.4
+  ],
+  [
+   "2024-04-26",
+   175.4
+  ],
+  [
+   "2024-05-03",
+   170.0
+  ],
+  [
+   "2024-05-10",
+   172.6
+  ],
+  [
+   "2024-05-17",
+   170.6
+  ],
+  [
+   "2024-05-24",
+   177.8
+  ],
+  [
+   "2024-05-31",
+   185.4
+  ],
+  [
+   "2024-06-07",
+   182.0
+  ],
+  [
+   "2024-06-14",
+   183.0
+  ],
+  [
+   "2024-06-21",
+   189.8
+  ],
+  [
+   "2024-06-28",
+   185.6
+  ],
+  [
+   "2024-07-05",
+   192.8
+  ],
+  [
+   "2024-07-12",
+   186.0
+  ],
+  [
+   "2024-07-19",
+   184.0
+  ],
+  [
+   "2024-07-26",
+   185.0
+  ],
+  [
+   "2024-08-02",
+   186.2
+  ],
+  [
+   "2024-08-09",
+   185.0
+  ],
+  [
+   "2024-08-16",
+   189.8
+  ],
+  [
+   "2024-08-23",
+   196.2
+  ],
+  [
+   "2024-08-30",
+   193.8
+  ],
+  [
+   "2024-09-06",
+   218.0
+  ],
+  [
+   "2024-09-13",
+   211.5
+  ],
+  [
+   "2024-09-20",
+   209.0
+  ],
+  [
+   "2024-09-27",
+   200.0
+  ],
+  [
+   "2024-10-04",
+   196.8
+  ],
+  [
+   "2024-10-11",
+   199.2
+  ],
+  [
+   "2024-10-18",
+   201.0
+  ],
+  [
+   "2024-10-25",
+   215.0
+  ],
+  [
+   "2024-11-01",
+   223.0
+  ],
+  [
+   "2024-11-08",
+   219.5
+  ],
+  [
+   "2024-11-15",
+   234.5
+  ],
+  [
+   "2024-11-22",
+   218.0
+  ],
+  [
+   "2024-11-29",
+   220.5
+  ],
+  [
+   "2024-12-06",
+   216.0
+  ],
+  [
+   "2024-12-13",
+   220.0
+  ],
+  [
+   "2024-12-20",
+   215.5
+  ],
+  [
+   "2024-12-24",
+   215.0
+  ],
+  [
+   "2024-12-27",
+   215.0
+  ],
+  [
+   "2025-01-03",
+   218.0
+  ],
+  [
+   "2025-01-10",
+   205.5
+  ],
+  [
+   "2025-01-17",
+   202.0
+  ],
+  [
+   "2025-01-24",
+   202.5
+  ],
+  [
+   "2025-01-31",
+   223.5
+  ],
+  [
+   "2025-02-07",
+   230.0
+  ],
+  [
+   "2025-02-14",
+   243.0
+  ],
+  [
+   "2025-02-21",
+   242.5
+  ],
+  [
+   "2025-02-28",
+   239.5
+  ],
+  [
+   "2025-03-07",
+   236.5
+  ],
+  [
+   "2025-03-14",
+   225.5
+  ],
+  [
+   "2025-03-21",
+   223.5
+  ],
+  [
+   "2025-03-28",
+   222.0
+  ],
+  [
+   "2025-04-04",
+   210.0
+  ],
+  [
+   "2025-04-11",
+   203.5
+  ],
+  [
+   "2025-04-17",
+   208.5
+  ],
+  [
+   "2025-04-25",
+   213.5
+  ],
+  [
+   "2025-05-02",
+   232.0
+  ],
+  [
+   "2025-05-09",
+   243.0
+  ],
+  [
+   "2025-05-16",
+   243.5
+  ],
+  [
+   "2025-05-23",
+   238.0
+  ],
+  [
+   "2025-05-30",
+   239.0
+  ],
+  [
+   "2025-06-06",
+   245.0
+  ],
+  [
+   "2025-06-13",
+   235.0
+  ],
+  [
+   "2025-06-20",
+   222.5
+  ],
+  [
+   "2025-06-27",
+   225.0
+  ],
+  [
+   "2025-07-04",
+   221.5
+  ],
+  [
+   "2025-07-11",
+   220.0
+  ],
+  [
+   "2025-07-18",
+   222.5
+  ],
+  [
+   "2025-07-25",
+   218.0
+  ],
+  [
+   "2025-08-01",
+   226.0
+  ],
+  [
+   "2025-08-08",
+   228.0
+  ],
+  [
+   "2025-08-15",
+   218.0
+  ],
+  [
+   "2025-08-22",
+   224.5
+  ],
+  [
+   "2025-08-29",
+   223.0
+  ],
+  [
+   "2025-09-05",
+   245.0
+  ],
+  [
+   "2025-09-12",
+   235.5
+  ],
+  [
+   "2025-09-19",
+   240.5
+  ],
+  [
+   "2025-09-26",
+   231.0
+  ],
+  [
+   "2025-10-03",
+   229.0
+  ],
+  [
+   "2025-10-10",
+   233.0
+  ],
+  [
+   "2025-10-17",
+   225.0
+  ],
+  [
+   "2025-10-24",
+   227.0
+  ],
+  [
+   "2025-10-31",
+   227.5
+  ],
+  [
+   "2025-11-07",
+   217.0
+  ],
+  [
+   "2025-11-14",
+   224.5
+  ],
+  [
+   "2025-11-21",
+   220.0
+  ],
+  [
+   "2025-11-28",
+   227.5
+  ],
+  [
+   "2025-12-05",
+   222.0
+  ],
+  [
+   "2025-12-12",
+   221.5
+  ],
+  [
+   "2025-12-19",
+   216.5
+  ],
+  [
+   "2025-12-24",
+   212.0
+  ],
+  [
+   "2026-01-02",
+   209.0
+  ],
+  [
+   "2026-01-09",
+   213.0
+  ],
+  [
+   "2026-01-16",
+   212.0
+  ],
+  [
+   "2026-01-23",
+   212.0
+  ],
+  [
+   "2026-01-30",
+   215.0
+  ],
+  [
+   "2026-02-06",
+   196.2
+  ],
+  [
+   "2026-02-13",
+   185.2
+  ],
+  [
+   "2026-02-20",
+   190.0
+  ],
+  [
+   "2026-02-27",
+   193.0
+  ],
+  [
+   "2026-03-06",
+   197.0
+  ],
+  [
+   "2026-03-13",
+   173.0
+  ],
+  [
+   "2026-03-20",
+   151.4
+  ],
+  [
+   "2026-03-27",
+   142.4
+  ],
+  [
+   "2026-04-02",
+   146.8
+  ],
+  [
+   "2026-04-10",
+   148.8
+  ],
+  [
+   "2026-04-17",
+   160.8
+  ],
+  [
+   "2026-04-24",
+   157.4
+  ],
+  [
+   "2026-05-01",
+   151.4
+  ],
+  [
+   "2026-05-08",
+   162.0
+  ],
+  [
+   "2026-05-15",
+   156.0
+  ],
+  [
+   "2026-05-22",
+   155.4
+  ],
+  [
+   "2026-05-29",
+   159.0
+  ],
+  [
+   "2026-06-05",
+   156.6
+  ],
+  [
+   "2026-06-12",
+   150.2
+  ],
+  [
+   "2026-06-19",
+   150.2
+  ],
+  [
+   "2026-06-26",
+   154.6
+  ],
+  [
+   "2026-07-03",
+   161.4
+  ],
+  [
+   "2026-07-10",
+   157.8
+  ],
+  [
+   "2026-07-17",
+   160.4
+  ],
+  [
+   "2026-07-24",
+   161.6
+  ],
+  [
+   "2026-07-31",
+   163.8
+  ],
+  [
+   "2026-08-07",
+   166.2
+  ],
+  [
+   "2026-08-14",
+   166.6
+  ],
+  [
+   "2026-08-21",
+   168.2
+  ],
+  [
+   "2026-08-28",
+   167.6
+  ],
+  [
+   "2026-09-04",
+   165.0
+  ],
+  [
+   "2026-09-11",
+   155.8
+  ],
+  [
+   "2026-09-18",
+   157.8
+  ],
+  [
+   "2026-09-25",
+   155.0
+  ],
+  [
+   "2026-10-02",
+   155.0
+  ],
+  [
+   "2026-10-09",
+   160.8
+  ],
+  [
+   "2026-10-16",
+   165.0
+  ],
+  [
+   "2026-10-20",
+   165.4
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-11-09",
+   "doc": "Q3 TU",
+   "fy": "FY21",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Overall, given the strength of the revenue performance in Q3 and the chargeability through October, we now expect to exceed our revenue estimates for 2021 by a further circa 3%.",
+   "file": "20211109_ALFA_Q3-Trading-Update.md"
+  },
+  {
+   "d": "2022-01-12",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Overall we expect our 2021 full year results to be towards the upper end of Company compiled current market expectations, which are revenue of £80m - £82m and operating profit of £19m - £22m.",
+   "file": "20220112_ALFA_Trading-Statement.md"
+  },
+  {
+   "d": "2022-03-09",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -1,
+   "q": "We have good visibility of work for 2022, and assuming we continue our excellent recent record of attracting and retaining talent, we will see good revenue growth in 2022, albeit with some additional margin pressure due to salary inflation and return to normal costs.",
+   "file": "20220309_ALFA_Full-Year-Report-for-year-ended-31-December-2021.md"
+  },
+  {
+   "d": "2022-07-28",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "We remain confident of achieving full year market expectations and we believe that we still have the opportunity to exceed them through our second half performance.",
+   "file": "20220728_ALFA_Pre-close-update---in-line-with-expectations.md"
+  },
+  {
+   "d": "2022-09-01",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "As a consequence, we remain confident of achieving full year expectations and assuming no significant change in conditions, have the opportunity to exceed them through our second half performance.",
+   "file": "20220901_ALFA_2022-Half-Year-Report.md"
+  },
+  {
+   "d": "2022-09-20",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 2,
+   "q": "The improved contractual certainty and strong trading means that our expectations for full year revenue have increased by approximately two million Sterling, with most of this benefit falling through to operating profit.",
+   "file": "20220920_ALFA_Increased-expectations-for-the-full-year.md"
+  },
+  {
+   "d": "2022-11-10",
+   "doc": "Q3 TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 2,
+   "q": "As a consequence our expectations for full year revenue have increased by approximately £1.5 million Sterling, with all of this falling through to operating profit.",
+   "file": "20221110_ALFA_Strong-Q3-trading-full-year-expectations-increased.md"
+  },
+  {
+   "d": "2023-01-12",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 2,
+   "q": "The strong finish to the year has resulted in our expectations for 2022 full year revenue increasing by £1.5m, with all of this falling through to operating profit.",
+   "file": "20230112_ALFA_Trading-Update.md"
+  },
+  {
+   "d": "2023-03-02",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "This performance alongside the strategic progress we have made, the confidence we have in the quality of our people, the strength of the intellectual property in our software and our late-stage pipeline give us great confidence in Alfa's prospects for 2023 and beyond.",
+   "file": "20230302_ALFA_Full-Year-Report-for-year-ended-31-December-2022.md"
+  },
+  {
+   "d": "2023-04-28",
+   "doc": "Q1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The strength of the late stage pipeline reflects robust demand in the sector and the competitive strength of our proposition gives us confidence in our expectations for the full year.",
+   "file": "20230428_ALFA_Q1-Trading-update.md"
+  },
+  {
+   "d": "2023-07-20",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The strong H1 performance and the strength of the late-stage pipeline means we remain confident of achieving our expectations for the full year.",
+   "file": "20230720_ALFA_H1-Trading-update.md"
+  },
+  {
+   "d": "2023-08-31",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Looking into the second half, we will increase our investment in the software to ensure we stay in line with our full year product roadmap plans. As a consequence, our full year expectations remain unchanged.",
+   "file": "20230831_ALFA_2023-Half-Year-Report.md"
+  },
+  {
+   "d": "2023-11-14",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Overall our expectations for the full year to 31 December 2023 remain unchanged.",
+   "file": "20231114_ALFA_Q3-Trading-update.md"
+  },
+  {
+   "d": "2024-01-31",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 1,
+   "q": "We now expect costs to be £1m lower than expected and as a consequence we expect operating profit for FY23 will be c.£1m ahead of our original expectations.",
+   "file": "20240131_ALFA_Q4-Trading-update.md"
+  },
+  {
+   "d": "2024-03-14",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "We expect 2024 revenue growth to be mid to high single digits driven by continuing strong growth in subscription.  Within this performance, we anticipate a greater weighting in the second half of the year as new sales come fully on stream.",
+   "file": "20240314_ALFA_Full-Year-Report-for-year-ended-31-December-2023.md"
+  },
+  {
+   "d": "2024-04-30",
+   "doc": "Q1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading in Q1 was in line with expectations and overall we continue to expect mid to high single digit revenue for the year as a whole.",
+   "file": "20240430_ALFA_Q1-Trading-update.md"
+  },
+  {
+   "d": "2024-07-24",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading in Q2 was in line with our expectations and the Board continues to expect mid to high single digit revenue growth for the full year.",
+   "file": "20240724_ALFA_H1-Trading-update.md"
+  },
+  {
+   "d": "2024-09-05",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Revenue at the start of H2 is tracking ahead of previous expectations and the Board expects full year revenue to be £1m ahead of previous expectations.",
+   "file": "20240905_ALFA_2024-Half-Year-Report.md"
+  },
+  {
+   "d": "2024-11-14",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 1,
+   "q": "As a consequence, we expect operating profit for FY24 will be £1m ahead of our previous expectations.",
+   "file": "20241114_ALFA_Q3-Trading-update.md"
+  },
+  {
+   "d": "2025-01-30",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Operating profit growth for FY24 of 13% to £34m, some 5% ahead of market expectations, with costs c£1m lower than expected.",
+   "file": "20250130_ALFA_Q4-Trading-update.md"
+  },
+  {
+   "d": "2025-03-13",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 1,
+   "q": "Building on the strong subscription growth in 2024 we expect mid-teens growth in subscription revenues in FY2025, alongside strong momentum in our Delivery and Software Engineering revenues as we implement some key projects for new clients, driving an expectation of double-digit revenue growth overall.",
+   "file": "20250313_ALFA_Full-Year-Results-for-year-ended-31-December-2024.md"
+  },
+  {
+   "d": "2025-04-29",
+   "doc": "Q1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "We have seen no change in customer buying behaviour as a result of current macro-economic uncertainty and we are well positioned to achieve our expectations for the year.",
+   "file": "20250429_ALFA_Q1-Trading-update.md"
+  },
+  {
+   "d": "2025-07-30",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "We are well positioned to achieve our expectations for the year.",
+   "file": "20250730_ALFA_H1-Trading-update.md"
+  },
+  {
+   "d": "2025-09-04",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Ongoing work with customers, including those in the late-stage pipeline, means we remain confident in our full year expectations, despite currency headwinds and wider macro uncertainty.",
+   "file": "20250904_ALFA_2025-Half-Year-Report.md"
+  },
+  {
+   "d": "2025-11-13",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 2,
+   "q": "We now expect costs for the full year to be c.£2m less than previously estimated, thereby increasing our operating margin and profit expectations for the full year accordingly.",
+   "file": "20251113_ALFA_Q3-2025-Trading-update.md"
+  },
+  {
+   "d": "2026-01-29",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Operating profit growth for FY25 of 17% to £40.0m, c.£3m ahead of market expectations.",
+   "file": "20260129_ALFA_Q4-25-Trading-update.md"
+  },
+  {
+   "d": "2026-03-12",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -2,
+   "q": "Overall, despite the impact of currency headwinds and wider macro uncertainty, we expect to see good revenue growth in 2026 and beyond.",
+   "file": "20260312_ALFA_Full-Year-Results-for-year-ended-31-December-2025.md"
+  },
+  {
+   "d": "2026-04-30",
+   "doc": "Q1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Notwithstanding the macroeconomic backdrop the Board is confident of meeting expectations for the year.",
+   "file": "20260430_ALFA_Q1-26-Trading-update.md"
+  },
+  {
+   "d": "2026-07-30",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "We are well positioned to achieve our expectations for the year.",
+   "file": "20260730_ALFA_H1-Trading-update.md"
+  },
+  {
+   "d": "2026-09-03",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "These delays mean that our delivery revenue expectations for the year are slightly reduced, but we expect this to be offset by improved software engineering revenues. Overall, we expect to meet expectations for the year.",
+   "file": "20260903_ALFA_2026-Half-Year-Report.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-03",
+  "doc": "H1 R",
+  "file": "20260903_ALFA_2026-Half-Year-Report.md",
+  "vs": "H1 R Sep-25 · back to Sep-22 · H1 TU Jul-26, FY R Mar-26",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "Jul-26 TU: “some customer implementation delays on projects”, full year unchanged → now “our delivery revenue expectations for the year are slightly reduced” and “The number of delays seems higher than we have historically seen and so we cannot rule out the possibility that the macro environment has had an impact.”",
+    "span": "First time contracting delays linked to macro; Sep-25 cited only currency and macro uncertainty"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Sep-25: “Special dividend of 5.0 pence per share (£14.8m) declared” → now “rather than declaring a special dividend at this time we will retain the cash within the business”",
+    "span": "Special dividend declared at every interim Sep-22, Aug-23, Sep-24, Sep-25 → first gap in 4 years"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Headline “Strong growth in ARR and TCV, demonstrating continued strategic progress” while operating profit fell 15% to £18.4m (H1 25: £21.6m) and gross margin to 60.2% (64.2%); Sep-25 highlighted a 35% operating margin, now profit is led by a new “Operating profit before severance costs and FX hedges” of £20.3m"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "FY R Mar-26 gave only “strong Subscription revenue growth” → now “we will continue to achieve mid to high teens CAGR in Subscription revenues for the short-to-medium term”",
+    "span": "Last numeric subscription guide: FY R Mar-25 mid-teens for FY2025"
+   }
+  ]
+ }
+}

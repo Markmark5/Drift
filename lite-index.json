@@ -81,6 +81,13 @@
    "marks": 31
   },
   {
+   "ticker": "ALFA",
+   "company": "Alfa Financial Software Holdings PLC",
+   "chart": "lite/ALFA.json?v=2026-10-21.b409",
+   "scored": "2026-10-21",
+   "marks": 30
+  },
+  {
    "ticker": "ALTN",
    "company": "Altyn PLC",
    "chart": "lite/ALTN.json?v=2026-10-19.a3a3",
@@ -156,6 +163,13 @@
    "chart": "lite/ASY.json?v=2026-10-20.7b88",
    "scored": "2026-10-20",
    "marks": 10
+  },
+  {
+   "ticker": "AT.",
+   "company": "Ashtead Technology Holdings PLC",
+   "chart": "lite/AT.json?v=2026-10-21.6d03",
+   "scored": "2026-10-21",
+   "marks": 23
   },
   {
    "ticker": "AVAP",
@@ -389,6 +403,13 @@
    "marks": 17
   },
   {
+   "ticker": "CHH",
+   "company": "Churchill China plc",
+   "chart": "lite/CHH.json?v=2026-10-21.6e2a",
+   "scored": "2026-10-21",
+   "marks": 26
+  },
+  {
    "ticker": "CHRT",
    "company": "Cohort PLC",
    "chart": "lite/CHRT.json?v=2026-10-19.c89d",
@@ -424,6 +445,20 @@
    "marks": 25
   },
   {
+   "ticker": "CLX",
+   "company": "Calnex Solutions PLC",
+   "chart": "lite/CLX.json?v=2026-10-21.35c5",
+   "scored": "2026-10-21",
+   "marks": 22
+  },
+  {
+   "ticker": "CNC",
+   "company": "Concurrent Technologies Plc",
+   "chart": "lite/CNC.json?v=2026-10-21.1225",
+   "scored": "2026-10-21",
+   "marks": 21
+  },
+  {
    "ticker": "CNE",
    "company": "Capricorn Energy PLC",
    "chart": "lite/CNE.json?v=2026-10-19.0c74",
@@ -457,6 +492,13 @@
    "chart": "lite/CRPR.json?v=2026-10-20.17d5",
    "scored": "2026-10-20",
    "marks": 24
+  },
+  {
+   "ticker": "CRST",
+   "company": "Crest Nicholson Holdings plc",
+   "chart": "lite/CRST.json?v=2026-10-21.a62c",
+   "scored": "2026-10-21",
+   "marks": 25
   },
   {
    "ticker": "CRW",
@@ -522,6 +564,13 @@
    "marks": 23
   },
   {
+   "ticker": "DIA",
+   "company": "Dialight PLC",
+   "chart": "lite/DIA.json?v=2026-10-21.0fce",
+   "scored": "2026-10-21",
+   "marks": 26
+  },
+  {
    "ticker": "DIAL",
    "company": "Diales PLC",
    "chart": "lite/DIAL.json?v=2026-10-19.5b44",
@@ -541,6 +590,13 @@
    "chart": "lite/EBQ.json?v=2026-10-19.73fb",
    "scored": "2026-10-19",
    "marks": 21
+  },
+  {
+   "ticker": "ECEL",
+   "company": "Eurocell PLC",
+   "chart": "lite/ECEL.json?v=2026-10-21.703c",
+   "scored": "2026-10-21",
+   "marks": 23
   },
   {
    "ticker": "ELIX",
@@ -599,6 +655,13 @@
    "marks": 23
   },
   {
+   "ticker": "FIN",
+   "company": "Finseta PLC",
+   "chart": "lite/FIN.json?v=2026-10-21.dd8f",
+   "scored": "2026-10-21",
+   "marks": 27
+  },
+  {
    "ticker": "FLO",
    "company": "Flowtech Fluidpower PLC",
    "chart": "lite/FLO.json?v=2026-10-20.b00f",
@@ -648,6 +711,13 @@
    "marks": 33
   },
   {
+   "ticker": "GAMA",
+   "company": "Gamma Communications PLC",
+   "chart": "lite/GAMA.json?v=2026-10-21.d09c",
+   "scored": "2026-10-21",
+   "marks": 2
+  },
+  {
    "ticker": "GATC",
    "company": "Gattaca PLC",
    "chart": "lite/GATC.json?v=2026-10-19.2ddb",
@@ -690,11 +760,25 @@
    "marks": 17
   },
   {
+   "ticker": "GETB",
+   "company": "GetBusy plc",
+   "chart": "lite/GETB.json?v=2026-10-21.bad2",
+   "scored": "2026-10-21",
+   "marks": 21
+  },
+  {
    "ticker": "GFRD",
    "company": "Galliford Try Holdings PLC",
    "chart": "lite/GFRD.json?v=2026-10-20.996b",
    "scored": "2026-10-20",
    "marks": 27
+  },
+  {
+   "ticker": "GFTU",
+   "company": "Grafton Group PLC",
+   "chart": "lite/GFTU.json?v=2026-10-21.86ec",
+   "scored": "2026-10-21",
+   "marks": 30
   },
   {
    "ticker": "GLE",
@@ -751,6 +835,13 @@
    "chart": "lite/HFD.json?v=2026-10-21.ad74",
    "scored": "2026-10-21",
    "marks": 23
+  },
+  {
+   "ticker": "HFG",
+   "company": "Hilton Food Group PLC",
+   "chart": "lite/HFG.json?v=2026-10-21.21df",
+   "scored": "2026-10-21",
+   "marks": 25
   },
   {
    "ticker": "HLMA",
@@ -844,6 +935,13 @@
    "marks": 33
   },
   {
+   "ticker": "IQE",
+   "company": "IQE plc",
+   "chart": "lite/IQE.json?v=2026-10-21.34ea",
+   "scored": "2026-10-21",
+   "marks": 26
+  },
+  {
    "ticker": "ITM",
    "company": "ITM Power PLC",
    "chart": "lite/ITM.json?v=2026-10-19.ff7f",
@@ -877,6 +975,13 @@
    "chart": "lite/JDW.json?v=2026-10-19.1949",
    "scored": "2026-10-19",
    "marks": 33
+  },
+  {
+   "ticker": "JET2",
+   "company": "Jet2 PLC",
+   "chart": "lite/JET2.json?v=2026-10-21.c58d",
+   "scored": "2026-10-21",
+   "marks": 24
   },
   {
    "ticker": "JHD",
@@ -1345,6 +1450,13 @@
    "marks": 26
   },
   {
+   "ticker": "ROSE",
+   "company": "Rosebank Industries plc",
+   "chart": "lite/ROSE.json?v=2026-10-21.af20",
+   "scored": "2026-10-21",
+   "marks": 7
+  },
+  {
    "ticker": "RPI",
    "company": "Raspberry Pi Holdings PLC",
    "chart": "lite/RPI.json?v=2026-10-20.c366",
@@ -1656,6 +1768,13 @@
    "marks": 26
   },
   {
+   "ticker": "TRB",
+   "company": "Tribal Group plc",
+   "chart": "lite/TRB.json?v=2026-10-21.7135",
+   "scored": "2026-10-21",
+   "marks": 22
+  },
+  {
    "ticker": "TRI",
    "company": "Trifast PLC",
    "chart": "lite/TRI.json?v=2026-10-20.d431",
@@ -1703,6 +1822,13 @@
    "chart": "lite/TSTL.json?v=2026-10-19.2f45",
    "scored": "2026-10-19",
    "marks": 19
+  },
+  {
+   "ticker": "TTG",
+   "company": "TT Electronics PLC",
+   "chart": "lite/TTG.json?v=2026-10-21.6c5f",
+   "scored": "2026-10-21",
+   "marks": 26
   },
   {
    "ticker": "TUNE",
@@ -1796,12 +1922,26 @@
    "marks": 32
   },
   {
+   "ticker": "WOSG",
+   "company": "Watches Of Switzerland Group PLC",
+   "chart": "lite/WOSG.json?v=2026-10-21.2d0d",
+   "scored": "2026-10-21",
+   "marks": 32
+  },
+  {
    "ticker": "WPHO",
    "company": "Windar Photonics PLC",
    "chart": "lite/WPHO.json?v=2026-10-19.2da4",
    "scored": "2026-10-19",
    "marks": 7,
    "src": "snapshots"
+  },
+  {
+   "ticker": "WRKS",
+   "company": "TheWorks.co.uk PLC",
+   "chart": "lite/WRKS.json?v=2026-10-21.e6e2",
+   "scored": "2026-10-21",
+   "marks": 26
   },
   {
    "ticker": "WVIA",

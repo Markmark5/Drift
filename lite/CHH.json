@@ -1,0 +1,1328 @@
+{
+ "ticker": "CHH",
+ "v": "2026-10-21.6e2a",
+ "ccy": "GBX",
+ "src": "AlphaVantage CHH.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   1575.0
+  ],
+  [
+   "2021-10-22",
+   1647.5
+  ],
+  [
+   "2021-10-29",
+   1687.5
+  ],
+  [
+   "2021-11-05",
+   1625.0
+  ],
+  [
+   "2021-11-12",
+   1700.0
+  ],
+  [
+   "2021-11-19",
+   1717.5
+  ],
+  [
+   "2021-11-26",
+   1700.0
+  ],
+  [
+   "2021-12-03",
+   1750.0
+  ],
+  [
+   "2021-12-10",
+   1797.5
+  ],
+  [
+   "2021-12-17",
+   1797.5
+  ],
+  [
+   "2021-12-24",
+   1762.5
+  ],
+  [
+   "2021-12-31",
+   1762.5
+  ],
+  [
+   "2022-01-07",
+   1737.5
+  ],
+  [
+   "2022-01-14",
+   1697.5
+  ],
+  [
+   "2022-01-21",
+   1650.0
+  ],
+  [
+   "2022-01-28",
+   1500.0
+  ],
+  [
+   "2022-02-04",
+   1425.0
+  ],
+  [
+   "2022-02-11",
+   1480.0
+  ],
+  [
+   "2022-02-18",
+   1610.0
+  ],
+  [
+   "2022-02-25",
+   1562.5
+  ],
+  [
+   "2022-03-04",
+   1595.0
+  ],
+  [
+   "2022-03-11",
+   1500.0
+  ],
+  [
+   "2022-03-18",
+   1412.5
+  ],
+  [
+   "2022-03-25",
+   1430.0
+  ],
+  [
+   "2022-04-01",
+   1375.0
+  ],
+  [
+   "2022-04-08",
+   1300.0
+  ],
+  [
+   "2022-04-14",
+   1325.0
+  ],
+  [
+   "2022-04-22",
+   1525.0
+  ],
+  [
+   "2022-04-29",
+   1475.0
+  ],
+  [
+   "2022-05-06",
+   1400.0
+  ],
+  [
+   "2022-05-13",
+   1475.0
+  ],
+  [
+   "2022-05-20",
+   1450.0
+  ],
+  [
+   "2022-05-27",
+   1400.0
+  ],
+  [
+   "2022-06-01",
+   1400.0
+  ],
+  [
+   "2022-06-10",
+   1400.0
+  ],
+  [
+   "2022-06-17",
+   1400.0
+  ],
+  [
+   "2022-06-24",
+   1415.0
+  ],
+  [
+   "2022-07-01",
+   1400.0
+  ],
+  [
+   "2022-07-08",
+   1400.0
+  ],
+  [
+   "2022-07-15",
+   1400.0
+  ],
+  [
+   "2022-07-22",
+   1390.0
+  ],
+  [
+   "2022-07-29",
+   1310.0
+  ],
+  [
+   "2022-08-05",
+   1240.0
+  ],
+  [
+   "2022-08-12",
+   1300.0
+  ],
+  [
+   "2022-08-19",
+   1280.0
+  ],
+  [
+   "2022-08-26",
+   1240.0
+  ],
+  [
+   "2022-09-02",
+   1085.0
+  ],
+  [
+   "2022-09-09",
+   1150.0
+  ],
+  [
+   "2022-09-16",
+   1300.0
+  ],
+  [
+   "2022-09-23",
+   1330.0
+  ],
+  [
+   "2022-09-30",
+   1290.0
+  ],
+  [
+   "2022-10-07",
+   1300.0
+  ],
+  [
+   "2022-10-14",
+   1300.0
+  ],
+  [
+   "2022-10-21",
+   1290.0
+  ],
+  [
+   "2022-10-28",
+   1225.0
+  ],
+  [
+   "2022-11-04",
+   1250.0
+  ],
+  [
+   "2022-11-11",
+   1265.0
+  ],
+  [
+   "2022-11-18",
+   1265.0
+  ],
+  [
+   "2022-11-25",
+   1185.0
+  ],
+  [
+   "2022-12-02",
+   1170.0
+  ],
+  [
+   "2022-12-09",
+   1160.0
+  ],
+  [
+   "2022-12-16",
+   1175.0
+  ],
+  [
+   "2022-12-23",
+   1175.0
+  ],
+  [
+   "2022-12-30",
+   1175.0
+  ],
+  [
+   "2023-01-06",
+   1210.0
+  ],
+  [
+   "2023-01-13",
+   1330.0
+  ],
+  [
+   "2023-01-20",
+   1315.0
+  ],
+  [
+   "2023-01-27",
+   1380.0
+  ],
+  [
+   "2023-02-03",
+   1295.0
+  ],
+  [
+   "2023-02-10",
+   1320.0
+  ],
+  [
+   "2023-02-17",
+   1255.0
+  ],
+  [
+   "2023-02-24",
+   1225.0
+  ],
+  [
+   "2023-03-03",
+   1210.0
+  ],
+  [
+   "2023-03-10",
+   1225.0
+  ],
+  [
+   "2023-03-17",
+   1255.0
+  ],
+  [
+   "2023-03-24",
+   1270.0
+  ],
+  [
+   "2023-03-31",
+   1240.0
+  ],
+  [
+   "2023-04-06",
+   1240.0
+  ],
+  [
+   "2023-04-14",
+   1410.0
+  ],
+  [
+   "2023-04-21",
+   1560.0
+  ],
+  [
+   "2023-04-28",
+   1395.0
+  ],
+  [
+   "2023-05-05",
+   1415.0
+  ],
+  [
+   "2023-05-12",
+   1560.0
+  ],
+  [
+   "2023-05-19",
+   1380.0
+  ],
+  [
+   "2023-05-26",
+   1425.0
+  ],
+  [
+   "2023-06-02",
+   1375.0
+  ],
+  [
+   "2023-06-09",
+   1410.0
+  ],
+  [
+   "2023-06-16",
+   1425.0
+  ],
+  [
+   "2023-06-23",
+   1340.0
+  ],
+  [
+   "2023-06-30",
+   1315.0
+  ],
+  [
+   "2023-07-07",
+   1400.0
+  ],
+  [
+   "2023-07-14",
+   1350.0
+  ],
+  [
+   "2023-07-21",
+   1410.0
+  ],
+  [
+   "2023-07-28",
+   1460.0
+  ],
+  [
+   "2023-08-04",
+   1470.0
+  ],
+  [
+   "2023-08-11",
+   1375.0
+  ],
+  [
+   "2023-08-18",
+   1275.0
+  ],
+  [
+   "2023-08-25",
+   1310.0
+  ],
+  [
+   "2023-09-01",
+   1285.0
+  ],
+  [
+   "2023-09-08",
+   1295.0
+  ],
+  [
+   "2023-09-15",
+   1315.0
+  ],
+  [
+   "2023-09-22",
+   1300.0
+  ],
+  [
+   "2023-09-29",
+   1275.0
+  ],
+  [
+   "2023-10-06",
+   1100.0
+  ],
+  [
+   "2023-10-13",
+   1160.0
+  ],
+  [
+   "2023-10-20",
+   1125.0
+  ],
+  [
+   "2023-10-27",
+   1125.0
+  ],
+  [
+   "2023-11-03",
+   1085.0
+  ],
+  [
+   "2023-11-10",
+   1250.0
+  ],
+  [
+   "2023-11-17",
+   1200.0
+  ],
+  [
+   "2023-11-24",
+   1160.0
+  ],
+  [
+   "2023-12-01",
+   1150.0
+  ],
+  [
+   "2023-12-08",
+   1150.0
+  ],
+  [
+   "2023-12-15",
+   1325.0
+  ],
+  [
+   "2023-12-22",
+   1445.0
+  ],
+  [
+   "2023-12-29",
+   1450.0
+  ],
+  [
+   "2024-01-05",
+   1375.0
+  ],
+  [
+   "2024-01-12",
+   1375.0
+  ],
+  [
+   "2024-01-19",
+   1225.0
+  ],
+  [
+   "2024-01-26",
+   1350.0
+  ],
+  [
+   "2024-02-02",
+   1350.0
+  ],
+  [
+   "2024-02-09",
+   1325.0
+  ],
+  [
+   "2024-02-16",
+   1240.0
+  ],
+  [
+   "2024-02-23",
+   1150.0
+  ],
+  [
+   "2024-03-01",
+   1025.0
+  ],
+  [
+   "2024-03-08",
+   1175.0
+  ],
+  [
+   "2024-03-15",
+   1150.0
+  ],
+  [
+   "2024-03-22",
+   1175.0
+  ],
+  [
+   "2024-03-28",
+   1165.0
+  ],
+  [
+   "2024-04-05",
+   1050.0
+  ],
+  [
+   "2024-04-12",
+   1150.0
+  ],
+  [
+   "2024-04-19",
+   1200.0
+  ],
+  [
+   "2024-04-26",
+   1175.0
+  ],
+  [
+   "2024-05-03",
+   1175.0
+  ],
+  [
+   "2024-05-10",
+   1175.0
+  ],
+  [
+   "2024-05-17",
+   1100.0
+  ],
+  [
+   "2024-05-24",
+   1100.0
+  ],
+  [
+   "2024-05-31",
+   1110.0
+  ],
+  [
+   "2024-06-07",
+   1080.0
+  ],
+  [
+   "2024-06-14",
+   1125.0
+  ],
+  [
+   "2024-06-21",
+   1175.0
+  ],
+  [
+   "2024-06-28",
+   1135.0
+  ],
+  [
+   "2024-07-05",
+   1150.0
+  ],
+  [
+   "2024-07-12",
+   1215.0
+  ],
+  [
+   "2024-07-19",
+   1170.0
+  ],
+  [
+   "2024-07-26",
+   1140.0
+  ],
+  [
+   "2024-08-02",
+   1190.0
+  ],
+  [
+   "2024-08-09",
+   1150.0
+  ],
+  [
+   "2024-08-16",
+   1175.0
+  ],
+  [
+   "2024-08-23",
+   1175.0
+  ],
+  [
+   "2024-08-30",
+   1150.0
+  ],
+  [
+   "2024-09-06",
+   960.0
+  ],
+  [
+   "2024-09-13",
+   925.0
+  ],
+  [
+   "2024-09-20",
+   950.0
+  ],
+  [
+   "2024-09-27",
+   900.0
+  ],
+  [
+   "2024-10-04",
+   875.0
+  ],
+  [
+   "2024-10-11",
+   850.0
+  ],
+  [
+   "2024-10-18",
+   887.5
+  ],
+  [
+   "2024-10-25",
+   867.5
+  ],
+  [
+   "2024-11-01",
+   850.0
+  ],
+  [
+   "2024-11-08",
+   850.0
+  ],
+  [
+   "2024-11-15",
+   825.0
+  ],
+  [
+   "2024-11-22",
+   700.0
+  ],
+  [
+   "2024-11-29",
+   712.5
+  ],
+  [
+   "2024-12-06",
+   775.0
+  ],
+  [
+   "2024-12-13",
+   750.0
+  ],
+  [
+   "2024-12-20",
+   675.0
+  ],
+  [
+   "2024-12-24",
+   652.5
+  ],
+  [
+   "2024-12-27",
+   652.5
+  ],
+  [
+   "2025-01-03",
+   700.0
+  ],
+  [
+   "2025-01-10",
+   675.0
+  ],
+  [
+   "2025-01-17",
+   580.0
+  ],
+  [
+   "2025-01-24",
+   592.5
+  ],
+  [
+   "2025-01-31",
+   615.0
+  ],
+  [
+   "2025-02-07",
+   625.0
+  ],
+  [
+   "2025-02-14",
+   572.5
+  ],
+  [
+   "2025-02-21",
+   537.5
+  ],
+  [
+   "2025-02-28",
+   570.0
+  ],
+  [
+   "2025-03-07",
+   525.0
+  ],
+  [
+   "2025-03-14",
+   525.0
+  ],
+  [
+   "2025-03-21",
+   510.0
+  ],
+  [
+   "2025-03-28",
+   515.0
+  ],
+  [
+   "2025-04-04",
+   465.0
+  ],
+  [
+   "2025-04-11",
+   552.5
+  ],
+  [
+   "2025-04-17",
+   580.0
+  ],
+  [
+   "2025-04-25",
+   570.0
+  ],
+  [
+   "2025-05-02",
+   542.5
+  ],
+  [
+   "2025-05-09",
+   570.0
+  ],
+  [
+   "2025-05-16",
+   550.0
+  ],
+  [
+   "2025-05-23",
+   550.0
+  ],
+  [
+   "2025-05-30",
+   655.0
+  ],
+  [
+   "2025-06-06",
+   685.0
+  ],
+  [
+   "2025-06-13",
+   615.0
+  ],
+  [
+   "2025-06-20",
+   667.5
+  ],
+  [
+   "2025-06-27",
+   655.0
+  ],
+  [
+   "2025-07-04",
+   650.0
+  ],
+  [
+   "2025-07-11",
+   620.0
+  ],
+  [
+   "2025-07-18",
+   465.0
+  ],
+  [
+   "2025-07-25",
+   450.0
+  ],
+  [
+   "2025-08-01",
+   420.0
+  ],
+  [
+   "2025-08-08",
+   420.0
+  ],
+  [
+   "2025-08-15",
+   440.0
+  ],
+  [
+   "2025-08-22",
+   430.0
+  ],
+  [
+   "2025-08-29",
+   430.0
+  ],
+  [
+   "2025-09-05",
+   430.0
+  ],
+  [
+   "2025-09-12",
+   430.0
+  ],
+  [
+   "2025-09-19",
+   415.0
+  ],
+  [
+   "2025-09-26",
+   395.0
+  ],
+  [
+   "2025-10-03",
+   395.0
+  ],
+  [
+   "2025-10-10",
+   390.0
+  ],
+  [
+   "2025-10-17",
+   385.0
+  ],
+  [
+   "2025-10-24",
+   375.0
+  ],
+  [
+   "2025-10-31",
+   370.0
+  ],
+  [
+   "2025-11-07",
+   350.0
+  ],
+  [
+   "2025-11-14",
+   355.0
+  ],
+  [
+   "2025-11-21",
+   357.0
+  ],
+  [
+   "2025-11-28",
+   355.0
+  ],
+  [
+   "2025-12-05",
+   350.0
+  ],
+  [
+   "2025-12-12",
+   345.0
+  ],
+  [
+   "2025-12-19",
+   335.0
+  ],
+  [
+   "2025-12-24",
+   340.0
+  ],
+  [
+   "2026-01-02",
+   335.0
+  ],
+  [
+   "2026-01-09",
+   330.0
+  ],
+  [
+   "2026-01-16",
+   335.0
+  ],
+  [
+   "2026-01-23",
+   380.0
+  ],
+  [
+   "2026-01-30",
+   395.0
+  ],
+  [
+   "2026-02-06",
+   430.0
+  ],
+  [
+   "2026-02-13",
+   425.0
+  ],
+  [
+   "2026-02-20",
+   406.0
+  ],
+  [
+   "2026-02-27",
+   390.0
+  ],
+  [
+   "2026-03-06",
+   360.0
+  ],
+  [
+   "2026-03-13",
+   330.0
+  ],
+  [
+   "2026-03-20",
+   313.0
+  ],
+  [
+   "2026-03-27",
+   300.0
+  ],
+  [
+   "2026-04-02",
+   290.0
+  ],
+  [
+   "2026-04-10",
+   300.0
+  ],
+  [
+   "2026-04-17",
+   355.0
+  ],
+  [
+   "2026-04-24",
+   350.0
+  ],
+  [
+   "2026-05-01",
+   335.0
+  ],
+  [
+   "2026-05-08",
+   335.0
+  ],
+  [
+   "2026-05-15",
+   325.0
+  ],
+  [
+   "2026-05-22",
+   332.5
+  ],
+  [
+   "2026-05-29",
+   340.0
+  ],
+  [
+   "2026-06-05",
+   340.0
+  ],
+  [
+   "2026-06-12",
+   340.0
+  ],
+  [
+   "2026-06-19",
+   340.0
+  ],
+  [
+   "2026-06-26",
+   340.0
+  ],
+  [
+   "2026-07-03",
+   340.0
+  ],
+  [
+   "2026-07-10",
+   340.0
+  ],
+  [
+   "2026-07-17",
+   340.0
+  ],
+  [
+   "2026-07-24",
+   387.5
+  ],
+  [
+   "2026-07-31",
+   385.0
+  ],
+  [
+   "2026-08-07",
+   390.0
+  ],
+  [
+   "2026-08-14",
+   395.0
+  ],
+  [
+   "2026-08-21",
+   400.0
+  ],
+  [
+   "2026-08-28",
+   370.0
+  ],
+  [
+   "2026-09-04",
+   377.5
+  ],
+  [
+   "2026-09-11",
+   370.0
+  ],
+  [
+   "2026-09-18",
+   365.0
+  ],
+  [
+   "2026-09-25",
+   365.0
+  ],
+  [
+   "2026-10-02",
+   360.0
+  ],
+  [
+   "2026-10-09",
+   355.0
+  ],
+  [
+   "2026-10-16",
+   365.0
+  ],
+  [
+   "2026-10-20",
+   370.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2022-01-07",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board expects to meet market expectations* for profit before taxation for the year ended 31 December 2021.",
+   "file": "20220107_CHH_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2022-04-21",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "We continue to benefit from record levels of demand and, while we are mindful of the potential impact of external factors on our markets and manufacturing operations, we remain confident in our ability to deliver an improved performance in 2022.",
+   "file": "20220421_CHH_Preliminary-Results.md"
+  },
+  {
+   "d": "2022-06-22",
+   "doc": "AGM",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "I am pleased to report that this demand has continued and our order book remains healthy. We remain confident in our ability to deliver an improved year on year performance in 2022.",
+   "file": "20220622_CHH_AGM-Statement.md"
+  },
+  {
+   "d": "2022-07-18",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is pleased to confirm that there has been no change in Churchill's trading performance between the update issued at our AGM on 22 June 2022 and the half year end on 30 June 2022.",
+   "file": "20220718_CHH_Interim-Results-Notification-and-Half-Year-Update.md"
+  },
+  {
+   "d": "2022-09-13",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "We remain confident that Churchill is a resilient company and is well positioned to continue to grow in line with our established strategy over both the short and long term. We look forward to delivering an improved year on year performance in 2022.",
+   "file": "20220913_CHH_Interim-Results.md"
+  },
+  {
+   "d": "2023-01-10",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 1,
+   "q": "As a result the Board anticipates that profit before taxation for the year ended 31 December 2022 will be at the upper end of analyst expectations*.",
+   "file": "20230110_CHH_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2023-04-13",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "2023 has started well with a satisfactory level of activity across our markets and we have met our targets in the first three months of the year.",
+   "file": "20230413_CHH_Final-Results-2022.md"
+  },
+  {
+   "d": "2023-06-08",
+   "doc": "AGM",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "We have made further progress on our initiatives to improve margin, whilst continuing to invest in our established strategy and remain on track to achieve our full year profit expectations.",
+   "file": "20230608_CHH_AGM-Statement.md"
+  },
+  {
+   "d": "2023-07-17",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is pleased to confirm that trading remained in line with the Board's expectations for the half year and that it expects the Group to meet its profit expectations for the full year.",
+   "file": "20230717_CHH_Half-Year-Trading-Update-and-Results-Notification.md"
+  },
+  {
+   "d": "2023-09-14",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "We are pleased to report a healthy increase in revenue and profit in the first half of the year and that despite some market headwinds the Group is in a good position to meet the Board's profit expectations for the full year.",
+   "file": "20230914_CHH_Interim-Results.md"
+  },
+  {
+   "d": "2024-01-17",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -2,
+   "q": "Cost increases, including the national living wage will have an impact on margins in 2024 which will in part be mitigated by further efficiency improvements and increased prices.",
+   "file": "20240117_CHH_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2024-04-10",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "We are confident that the continuous improvement in our product range and market position, backed up by our ongoing investment programme, has placed the Company in a strong position to take advantage of a market recovering from current weakness, which we expect to see in the second half of 2024.",
+   "file": "20240410_CHH_Final-Results.md"
+  },
+  {
+   "d": "2024-06-05",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "Whilst markets remain subdued, trading remains broadly in line with management's expectations. Productivity and yield continue to improve as a result of activities in manufacturing. The Board's expectations for the year remain unchanged.",
+   "file": "20240605_CHH_AGM-Statement.md"
+  },
+  {
+   "d": "2024-07-24",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "The Board confirms that the performance in June was consistent with the statement made at the AGM and that trading remains broadly in line with management expectations at the half year.",
+   "file": "20240724_CHH_Half-Year-Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2024-09-05",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -2,
+   "q": "As such, we remain dependent on the stronger demand normally experienced in the final four months of the year to meet our full-year expectations.",
+   "file": "20240905_CHH_Interim-Results.md"
+  },
+  {
+   "d": "2024-11-20",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -3,
+   "q": "As a result, the Company now anticipates a reduction in its forecast for the final quarter of 2024 and the profitability for the year is consequently expected to be materially below market expectations.",
+   "file": "20241120_CHH_Trading-Update.md"
+  },
+  {
+   "d": "2025-02-03",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Company is pleased to confirm that trading in the final two months of the year met the Company and market's* expectations and that there is no change to the guidance issued in November 2024.",
+   "file": "20250203_CHH_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2025-04-09",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -2,
+   "q": "A more robust hospitality market is required for a step forward in our market penetration and profitability. We will continue to focus on improving efficiencies within the business and invest strategically to ensure we are in the best position to capitalise on future opportunities, as underlying macro conditions and consumer sentiment improves.",
+   "file": "20250409_CHH_Final-Results.md"
+  },
+  {
+   "d": "2025-05-29",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -2,
+   "q": "Hospitality markets remain under pressure, and we continue to address those issues within our control. We remain confident in the medium term, and we are strongly placed for recovery with appropriate stock levels of value-added product.",
+   "file": "20250529_CHH_AGM-Statement.md"
+  },
+  {
+   "d": "2025-07-17",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -3,
+   "q": "Even with these actions, the continued market headwinds noted above mean that the Company will deliver revenue and profits for the full year significantly below the prior year.",
+   "file": "20250717_CHH_Trading-Update.md"
+  },
+  {
+   "d": "2025-09-03",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -2,
+   "q": "Whilst the performance in the period has been below that initially expected, as highlighted in our July trading update, the Board believes that the Company is performing well within what is currently a difficult trading environment.",
+   "file": "20250903_CHH_Interim-Results.md"
+  },
+  {
+   "d": "2026-02-02",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 1,
+   "q": "However, the run-in to Christmas was encouraging, with pub groups investing ahead of the holiday period and the order pipeline at year end was ahead of the prior year.",
+   "file": "20260202_CHH_Full-Year-Trading-Update-2025.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2026-04-13",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "With a recovering market and our investment in our sales and service offering we see a bright future for Churchill.",
+   "file": "20260413_CHH_Final-Results.md"
+  },
+  {
+   "d": "2026-05-29",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "The Company is pleased to note that hospitality sales remain broadly in line with expectations. We are confident that our ongoing focus on efficiency and productivity will continue to deliver benefits in factory performance and the Company is well covered on energy usage for the year.",
+   "file": "20260529_CHH_AGM-Statement.md"
+  },
+  {
+   "d": "2026-07-31",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Whilst sales visibility remains limited and recognising the significance of the final quarter of the year, the Board is reassured by the resilience of trading during the first half which remained in line with the Board's expectations.",
+   "file": "20260731_CHH_Trading-Update.md"
+  },
+  {
+   "d": "2026-09-07",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "While we continue to expect full year profitability to be in line with expectations, the achievement of those expectations is dependent upon revenue performance in the final quarter, which is traditionally our most significant trading period.",
+   "file": "20260907_CHH_Interim-Results.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-07",
+  "doc": "H1 R",
+  "file": "20260907_CHH_Interim-Results.md",
+  "vs": "H1 R Sep-25 · TU Jul-26 · back to H1 R Sep-24",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Gross margin: Sep-24 “Gross margin continues to improve with a 2.3% increase in the period”, Sep-25 “Gross margin has reduced slightly by 1.2% year on year” → now only “Contribution margin in H1 has improved by 0.2%”, no gross margin figure",
+    "span": "Given at Sep-24 and Sep-25 → first interim without it"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "“Performance has been broadly in line with expectations with profitability improving in Q2” beside H1 profit before tax and exceptional items down 19.4% to £2.5m (H1 2025: £3.1m)"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Full-year profit anchor back: Sep-25 “Whilst the performance in the period has been below that initially expected” with no full-year view → now “we continue to expect full year profitability to be in line with expectations”",
+    "span": "Absent at Sep-25 interim → restored Sep-26 (conditional on Q4)"
+   }
+  ]
+ }
+}

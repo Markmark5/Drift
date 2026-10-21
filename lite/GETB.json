@@ -1,0 +1,1287 @@
+{
+ "ticker": "GETB",
+ "v": "2026-10-21.bad2",
+ "ccy": "GBX",
+ "src": "AlphaVantage GETB.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   67.0
+  ],
+  [
+   "2021-10-22",
+   66.5
+  ],
+  [
+   "2021-10-29",
+   67.5
+  ],
+  [
+   "2021-11-05",
+   65.0
+  ],
+  [
+   "2021-11-12",
+   65.5
+  ],
+  [
+   "2021-11-19",
+   69.0
+  ],
+  [
+   "2021-11-26",
+   69.0
+  ],
+  [
+   "2021-12-03",
+   69.5
+  ],
+  [
+   "2021-12-10",
+   69.5
+  ],
+  [
+   "2021-12-17",
+   69.0
+  ],
+  [
+   "2021-12-24",
+   67.0
+  ],
+  [
+   "2021-12-31",
+   67.0
+  ],
+  [
+   "2022-01-07",
+   70.0
+  ],
+  [
+   "2022-01-14",
+   69.5
+  ],
+  [
+   "2022-01-21",
+   71.5
+  ],
+  [
+   "2022-01-28",
+   72.0
+  ],
+  [
+   "2022-02-04",
+   69.5
+  ],
+  [
+   "2022-02-11",
+   68.0
+  ],
+  [
+   "2022-02-18",
+   67.5
+  ],
+  [
+   "2022-02-25",
+   61.0
+  ],
+  [
+   "2022-03-04",
+   57.0
+  ],
+  [
+   "2022-03-11",
+   57.5
+  ],
+  [
+   "2022-03-18",
+   58.0
+  ],
+  [
+   "2022-03-25",
+   57.5
+  ],
+  [
+   "2022-04-01",
+   60.0
+  ],
+  [
+   "2022-04-08",
+   64.0
+  ],
+  [
+   "2022-04-14",
+   61.0
+  ],
+  [
+   "2022-04-22",
+   61.0
+  ],
+  [
+   "2022-04-29",
+   64.0
+  ],
+  [
+   "2022-05-06",
+   64.0
+  ],
+  [
+   "2022-05-13",
+   64.0
+  ],
+  [
+   "2022-05-20",
+   61.5
+  ],
+  [
+   "2022-05-27",
+   61.0
+  ],
+  [
+   "2022-06-01",
+   61.0
+  ],
+  [
+   "2022-06-10",
+   59.0
+  ],
+  [
+   "2022-06-17",
+   59.0
+  ],
+  [
+   "2022-06-24",
+   58.5
+  ],
+  [
+   "2022-07-01",
+   58.5
+  ],
+  [
+   "2022-07-08",
+   57.0
+  ],
+  [
+   "2022-07-15",
+   58.0
+  ],
+  [
+   "2022-07-22",
+   60.5
+  ],
+  [
+   "2022-07-29",
+   57.5
+  ],
+  [
+   "2022-08-05",
+   58.0
+  ],
+  [
+   "2022-08-12",
+   57.0
+  ],
+  [
+   "2022-08-19",
+   56.25
+  ],
+  [
+   "2022-08-26",
+   56.75
+  ],
+  [
+   "2022-09-02",
+   56.25
+  ],
+  [
+   "2022-09-09",
+   53.0
+  ],
+  [
+   "2022-09-16",
+   53.0
+  ],
+  [
+   "2022-09-23",
+   52.0
+  ],
+  [
+   "2022-09-30",
+   52.5
+  ],
+  [
+   "2022-10-07",
+   56.5
+  ],
+  [
+   "2022-10-14",
+   56.5
+  ],
+  [
+   "2022-10-21",
+   56.5
+  ],
+  [
+   "2022-10-28",
+   56.5
+  ],
+  [
+   "2022-11-04",
+   59.0
+  ],
+  [
+   "2022-11-11",
+   62.0
+  ],
+  [
+   "2022-11-18",
+   62.0
+  ],
+  [
+   "2022-11-25",
+   62.0
+  ],
+  [
+   "2022-12-02",
+   62.0
+  ],
+  [
+   "2022-12-09",
+   60.0
+  ],
+  [
+   "2022-12-16",
+   62.0
+  ],
+  [
+   "2022-12-23",
+   63.0
+  ],
+  [
+   "2022-12-30",
+   62.0
+  ],
+  [
+   "2023-01-06",
+   68.0
+  ],
+  [
+   "2023-01-13",
+   74.0
+  ],
+  [
+   "2023-01-20",
+   75.0
+  ],
+  [
+   "2023-01-27",
+   72.0
+  ],
+  [
+   "2023-02-03",
+   73.0
+  ],
+  [
+   "2023-02-10",
+   73.0
+  ],
+  [
+   "2023-02-17",
+   73.0
+  ],
+  [
+   "2023-02-24",
+   77.5
+  ],
+  [
+   "2023-03-03",
+   71.0
+  ],
+  [
+   "2023-03-10",
+   74.0
+  ],
+  [
+   "2023-03-17",
+   70.5
+  ],
+  [
+   "2023-03-24",
+   72.0
+  ],
+  [
+   "2023-03-31",
+   71.5
+  ],
+  [
+   "2023-04-06",
+   71.0
+  ],
+  [
+   "2023-04-14",
+   70.0
+  ],
+  [
+   "2023-04-21",
+   68.0
+  ],
+  [
+   "2023-04-28",
+   66.0
+  ],
+  [
+   "2023-05-05",
+   66.0
+  ],
+  [
+   "2023-05-12",
+   66.0
+  ],
+  [
+   "2023-05-19",
+   65.0
+  ],
+  [
+   "2023-05-26",
+   63.5
+  ],
+  [
+   "2023-06-02",
+   65.0
+  ],
+  [
+   "2023-06-09",
+   65.0
+  ],
+  [
+   "2023-06-16",
+   65.0
+  ],
+  [
+   "2023-06-23",
+   65.0
+  ],
+  [
+   "2023-06-30",
+   65.0
+  ],
+  [
+   "2023-07-07",
+   65.0
+  ],
+  [
+   "2023-07-14",
+   65.0
+  ],
+  [
+   "2023-07-21",
+   64.5
+  ],
+  [
+   "2023-07-28",
+   65.5
+  ],
+  [
+   "2023-08-04",
+   67.5
+  ],
+  [
+   "2023-08-11",
+   73.5
+  ],
+  [
+   "2023-08-18",
+   73.0
+  ],
+  [
+   "2023-08-25",
+   74.0
+  ],
+  [
+   "2023-09-01",
+   75.5
+  ],
+  [
+   "2023-09-08",
+   65.5
+  ],
+  [
+   "2023-09-15",
+   63.5
+  ],
+  [
+   "2023-09-22",
+   63.5
+  ],
+  [
+   "2023-09-29",
+   61.0
+  ],
+  [
+   "2023-10-06",
+   60.5
+  ],
+  [
+   "2023-10-13",
+   59.0
+  ],
+  [
+   "2023-10-20",
+   58.5
+  ],
+  [
+   "2023-10-27",
+   56.0
+  ],
+  [
+   "2023-11-03",
+   62.5
+  ],
+  [
+   "2023-11-10",
+   61.5
+  ],
+  [
+   "2023-11-17",
+   58.5
+  ],
+  [
+   "2023-11-24",
+   53.5
+  ],
+  [
+   "2023-12-01",
+   56.0
+  ],
+  [
+   "2023-12-08",
+   56.0
+  ],
+  [
+   "2023-12-15",
+   62.0
+  ],
+  [
+   "2023-12-22",
+   64.0
+  ],
+  [
+   "2023-12-29",
+   66.0
+  ],
+  [
+   "2024-01-05",
+   70.5
+  ],
+  [
+   "2024-01-12",
+   69.0
+  ],
+  [
+   "2024-01-19",
+   68.5
+  ],
+  [
+   "2024-01-26",
+   69.5
+  ],
+  [
+   "2024-02-02",
+   69.0
+  ],
+  [
+   "2024-02-09",
+   66.0
+  ],
+  [
+   "2024-02-16",
+   66.0
+  ],
+  [
+   "2024-02-23",
+   66.0
+  ],
+  [
+   "2024-03-01",
+   65.0
+  ],
+  [
+   "2024-03-08",
+   65.0
+  ],
+  [
+   "2024-03-15",
+   65.0
+  ],
+  [
+   "2024-03-22",
+   65.5
+  ],
+  [
+   "2024-03-28",
+   64.5
+  ],
+  [
+   "2024-04-05",
+   65.0
+  ],
+  [
+   "2024-04-12",
+   66.5
+  ],
+  [
+   "2024-04-19",
+   66.5
+  ],
+  [
+   "2024-04-26",
+   66.5
+  ],
+  [
+   "2024-05-03",
+   66.5
+  ],
+  [
+   "2024-05-10",
+   68.0
+  ],
+  [
+   "2024-05-17",
+   68.0
+  ],
+  [
+   "2024-05-24",
+   65.0
+  ],
+  [
+   "2024-05-31",
+   65.0
+  ],
+  [
+   "2024-06-07",
+   70.5
+  ],
+  [
+   "2024-06-14",
+   69.0
+  ],
+  [
+   "2024-06-21",
+   70.5
+  ],
+  [
+   "2024-06-28",
+   70.5
+  ],
+  [
+   "2024-07-05",
+   73.5
+  ],
+  [
+   "2024-07-12",
+   71.5
+  ],
+  [
+   "2024-07-19",
+   72.0
+  ],
+  [
+   "2024-07-26",
+   71.0
+  ],
+  [
+   "2024-08-02",
+   69.5
+  ],
+  [
+   "2024-08-09",
+   68.0
+  ],
+  [
+   "2024-08-16",
+   68.0
+  ],
+  [
+   "2024-08-23",
+   68.0
+  ],
+  [
+   "2024-08-30",
+   69.5
+  ],
+  [
+   "2024-09-06",
+   59.0
+  ],
+  [
+   "2024-09-13",
+   58.0
+  ],
+  [
+   "2024-09-20",
+   56.0
+  ],
+  [
+   "2024-09-27",
+   53.0
+  ],
+  [
+   "2024-10-04",
+   53.0
+  ],
+  [
+   "2024-10-11",
+   54.75
+  ],
+  [
+   "2024-10-18",
+   56.5
+  ],
+  [
+   "2024-10-25",
+   60.0
+  ],
+  [
+   "2024-11-01",
+   59.5
+  ],
+  [
+   "2024-11-08",
+   59.5
+  ],
+  [
+   "2024-11-15",
+   62.0
+  ],
+  [
+   "2024-11-22",
+   59.5
+  ],
+  [
+   "2024-11-29",
+   59.5
+  ],
+  [
+   "2024-12-06",
+   59.5
+  ],
+  [
+   "2024-12-13",
+   57.0
+  ],
+  [
+   "2024-12-20",
+   57.5
+  ],
+  [
+   "2024-12-24",
+   57.5
+  ],
+  [
+   "2024-12-27",
+   57.5
+  ],
+  [
+   "2025-01-03",
+   57.5
+  ],
+  [
+   "2025-01-10",
+   52.0
+  ],
+  [
+   "2025-01-17",
+   52.0
+  ],
+  [
+   "2025-01-24",
+   53.0
+  ],
+  [
+   "2025-01-31",
+   54.5
+  ],
+  [
+   "2025-02-07",
+   54.0
+  ],
+  [
+   "2025-02-14",
+   54.0
+  ],
+  [
+   "2025-02-21",
+   54.0
+  ],
+  [
+   "2025-02-28",
+   53.5
+  ],
+  [
+   "2025-03-07",
+   53.5
+  ],
+  [
+   "2025-03-14",
+   53.5
+  ],
+  [
+   "2025-03-21",
+   53.5
+  ],
+  [
+   "2025-03-28",
+   53.5
+  ],
+  [
+   "2025-04-04",
+   48.0
+  ],
+  [
+   "2025-04-11",
+   48.0
+  ],
+  [
+   "2025-04-17",
+   44.2
+  ],
+  [
+   "2025-04-25",
+   44.2
+  ],
+  [
+   "2025-05-02",
+   49.0
+  ],
+  [
+   "2025-05-09",
+   48.0
+  ],
+  [
+   "2025-05-16",
+   47.5
+  ],
+  [
+   "2025-05-23",
+   48.5
+  ],
+  [
+   "2025-05-30",
+   52.0
+  ],
+  [
+   "2025-06-06",
+   50.0
+  ],
+  [
+   "2025-06-13",
+   50.0
+  ],
+  [
+   "2025-06-20",
+   51.0
+  ],
+  [
+   "2025-06-27",
+   51.0
+  ],
+  [
+   "2025-07-04",
+   51.0
+  ],
+  [
+   "2025-07-11",
+   50.0
+  ],
+  [
+   "2025-07-18",
+   52.5
+  ],
+  [
+   "2025-07-25",
+   51.0
+  ],
+  [
+   "2025-08-01",
+   52.0
+  ],
+  [
+   "2025-08-08",
+   52.5
+  ],
+  [
+   "2025-08-15",
+   58.5
+  ],
+  [
+   "2025-08-22",
+   58.5
+  ],
+  [
+   "2025-08-29",
+   58.5
+  ],
+  [
+   "2025-09-05",
+   57.5
+  ],
+  [
+   "2025-09-12",
+   64.0
+  ],
+  [
+   "2025-09-19",
+   68.0
+  ],
+  [
+   "2025-09-26",
+   68.0
+  ],
+  [
+   "2025-10-03",
+   77.5
+  ],
+  [
+   "2025-10-10",
+   83.5
+  ],
+  [
+   "2025-10-17",
+   83.5
+  ],
+  [
+   "2025-10-24",
+   82.0
+  ],
+  [
+   "2025-10-31",
+   82.5
+  ],
+  [
+   "2025-11-07",
+   81.0
+  ],
+  [
+   "2025-11-14",
+   76.5
+  ],
+  [
+   "2025-11-21",
+   70.0
+  ],
+  [
+   "2025-11-28",
+   73.0
+  ],
+  [
+   "2025-12-05",
+   77.0
+  ],
+  [
+   "2025-12-12",
+   74.5
+  ],
+  [
+   "2025-12-19",
+   76.5
+  ],
+  [
+   "2025-12-24",
+   76.5
+  ],
+  [
+   "2026-01-02",
+   84.0
+  ],
+  [
+   "2026-01-09",
+   88.5
+  ],
+  [
+   "2026-01-16",
+   87.0
+  ],
+  [
+   "2026-01-23",
+   84.0
+  ],
+  [
+   "2026-01-30",
+   85.0
+  ],
+  [
+   "2026-02-06",
+   75.0
+  ],
+  [
+   "2026-02-13",
+   73.5
+  ],
+  [
+   "2026-02-20",
+   73.5
+  ],
+  [
+   "2026-02-27",
+   70.0
+  ],
+  [
+   "2026-03-06",
+   68.0
+  ],
+  [
+   "2026-03-13",
+   61.5
+  ],
+  [
+   "2026-03-20",
+   58.0
+  ],
+  [
+   "2026-03-27",
+   64.5
+  ],
+  [
+   "2026-04-02",
+   66.0
+  ],
+  [
+   "2026-04-10",
+   72.0
+  ],
+  [
+   "2026-04-17",
+   73.0
+  ],
+  [
+   "2026-04-24",
+   75.0
+  ],
+  [
+   "2026-05-01",
+   73.5
+  ],
+  [
+   "2026-05-08",
+   72.0
+  ],
+  [
+   "2026-05-15",
+   75.0
+  ],
+  [
+   "2026-05-22",
+   71.5
+  ],
+  [
+   "2026-05-29",
+   68.0
+  ],
+  [
+   "2026-06-05",
+   71.5
+  ],
+  [
+   "2026-06-12",
+   74.0
+  ],
+  [
+   "2026-06-19",
+   72.5
+  ],
+  [
+   "2026-06-26",
+   70.0
+  ],
+  [
+   "2026-07-03",
+   63.0
+  ],
+  [
+   "2026-07-10",
+   67.5
+  ],
+  [
+   "2026-07-17",
+   68.5
+  ],
+  [
+   "2026-07-24",
+   68.5
+  ],
+  [
+   "2026-07-31",
+   72.0
+  ],
+  [
+   "2026-08-07",
+   72.0
+  ],
+  [
+   "2026-08-14",
+   72.0
+  ],
+  [
+   "2026-08-21",
+   72.0
+  ],
+  [
+   "2026-08-28",
+   69.0
+  ],
+  [
+   "2026-09-04",
+   69.0
+  ],
+  [
+   "2026-09-11",
+   77.0
+  ],
+  [
+   "2026-09-18",
+   86.5
+  ],
+  [
+   "2026-09-25",
+   77.0
+  ],
+  [
+   "2026-10-02",
+   84.0
+  ],
+  [
+   "2026-10-09",
+   82.0
+  ],
+  [
+   "2026-10-16",
+   79.0
+  ],
+  [
+   "2026-10-20",
+   80.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-10-19",
+   "doc": "Q3 TU",
+   "fy": "FY21",
+   "g": "flat",
+   "s": 0,
+   "q": "The recurring revenue growth rate from H1 (12% at constant currency) has been sustained in Q3, and net cash at 30 September 2021 was up £0.3m at £2.3m.",
+   "file": "20211019_GETB_Trading-Update-and-Bolt-on-Acquisitions.md"
+  },
+  {
+   "d": "2022-01-20",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "flat",
+   "s": -1,
+   "q": "Adjusted loss is expected to be in-line with market expectations* as the Group continues to make investments in customer acquisition and its capabilities to underpin long term growth.",
+   "file": "20220120_GETB_Trading-Update,-New-Wins-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2022-03-01",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 1,
+   "q": "We have entered the new year with encouraging momentum from our high-quality recurring subscription revenues and we now anticipate 2022 revenue growth will be ahead of expectations#, enabling us to increase investment in long-term growth across our business.",
+   "file": "20220301_GETB_2021-Audited-Results.md"
+  },
+  {
+   "d": "2022-05-05",
+   "doc": "AGM",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board reaffirms its expectations* for 2022 with a very high level of confidence.",
+   "file": "20220505_GETB_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2022-07-13",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Group expected to remain modestly profitable at the Adjusted EBITDA level during H2 2022, marginally ahead of current expectations for 2022",
+   "file": "20220713_GETB_2022-Half-year-Results.md"
+  },
+  {
+   "d": "2022-12-14",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 1,
+   "q": "The Board anticipates financial results for the year ended 31 December 2022 to be slightly ahead of market expectations, in line with the Group's strategic focus on growth.",
+   "file": "20221214_GETB_Trading-update.md"
+  },
+  {
+   "d": "2023-03-01",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "The strong ARR momentum from 2022 has continued into 2023, with robust January trading. We have started to scale our investments in customer acquisition, including in sales and marketing heads, in both the US and UK and we expect those investments to deliver meaningful returns over the medium-term.",
+   "file": "20230301_GETB_2022-Audited-Results.md"
+  },
+  {
+   "d": "2023-04-28",
+   "doc": "AGM",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is pleased to reconfirm expectations* for the year with a high level of confidence.",
+   "file": "20230428_GETB_AGM-Statement.md"
+  },
+  {
+   "d": "2023-09-05",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group's underlying trading continues to be in line with market expectations****, remaining modestly profitable at the Adjusted EBITDA* level during H2 2023 as it continues to invest in long-term growth, with strong cash inflows from H2-weighted customer renewals",
+   "file": "20230905_GETB_2023-Half-year-Results.md"
+  },
+  {
+   "d": "2024-01-18",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Adjusted Loss before Tax is expected to be slightly better than market expectations.",
+   "file": "20240118_GETB_Trading-Update.md"
+  },
+  {
+   "d": "2024-03-26",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "2024 has started well, with continued growth across the Group through a combination of new business, expansion and price improvement.",
+   "file": "20240326_GETB_2023-Audited-Results.md"
+  },
+  {
+   "d": "2024-05-21",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is pleased to reconfirm expectations* for the year and remains very encouraged about the long-term value creation and realisation prospects for the Group.",
+   "file": "20240521_GETB_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2024-09-03",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -2,
+   "q": "The Group reconfirms group revenue expectations+ for the year, whilst flagging increasing exchange rate pressure from the weaker USD",
+   "file": "20240903_GETB_2024-Half-year-Results.md"
+  },
+  {
+   "d": "2025-01-23",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "The business made strong progress in 2024, a year which is expected to yield in excess of a 40% increase in Adjusted EBITDA and the first year that the Group has broadly broken even at the Adjusted Profit level.",
+   "file": "20250123_GETB_Trading-Update.md"
+  },
+  {
+   "d": "2025-03-25",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Market revenue expectations+ reconfirmed for 2025.",
+   "file": "20250325_GETB_2024-Audited-Results.md"
+  },
+  {
+   "d": "2025-05-20",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The board remains very encouraged about the long-term value creation and realisation prospects for the Group and confirms revenue expectations for 2025, noting the marked uncertainty from currency volatility.",
+   "file": "20250520_GETB_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2025-09-09",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "We expect strong customer acquisition to continue in H2, enhanced by Intuit's launch of the Proconnect integration, which is a little later than anticipated but still expected in early Q4, after US tax extension season.",
+   "file": "20250909_GETB_2025-Half-year-Results.md"
+  },
+  {
+   "d": "2026-01-21",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Group revenue is expected to be at least £22m (up 5% at constant currency) and adjusted EBITDA is expected to be £0.3m, in line with market expectations.",
+   "file": "20260121_GETB_Trading-Update.md"
+  },
+  {
+   "d": "2026-03-24",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Expanding ARPU, structurally low churn and disciplined cost control expected to drive rapid SmartVault EBITDA margin expansion and strong cash generation through 2026 and beyond",
+   "file": "20260324_GETB_2025-Audited-Results.md"
+  },
+  {
+   "d": "2026-05-13",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "With Workiro positioned to return to growth and SmartVault's strategic position strengthening, the Board reconfirms its expectations for 2026 with a high degree of confidence.",
+   "file": "20260513_GETB_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2026-09-07",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "2026 SmartVault ARR growth expected to be around 20%, exceeding current market expectations, with further upside potential from the second season of SmartRequestAI® availability",
+   "file": "20260907_GETB_2026-Half-year-Results.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-07",
+  "doc": "H1 R",
+  "file": "20260907_GETB_2026-Half-year-Results.md",
+  "vs": "H1 R Sep-25 · AGM TU May-26 · back to H1 R Sep-24",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Anchor softened",
+    "text": "AGM May-26 “the Board reconfirms its expectations for 2026” → H1 anchor is ARR only: “Enhanced growth within SmartVault will drive Group ARR ahead of market expectations in 2026 and 2027”, no group revenue or adjusted EBITDA view against expectations",
+    "span": "Jan-26 TU gave revenue and adjusted EBITDA vs expectations; AGM May-26 full reconfirmation → ARR only now"
+   },
+   {
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "Net revenue retention: Sep-24 “Net revenue retention of 99.7%”, Sep-25 “Net revenue retention of 99.5%” → now only “high net revenue retention rates”, no figure",
+    "span": "Highlight figure at Sep-24 and Sep-25 → first gap"
+   },
+   {
+    "sev": "grey",
+    "type": "Number to words",
+    "text": "SmartVault churn: Sep-25 “Improving churn, down to 1% per month”, Mar-26 “low churn of 1.1% per month” → now “Structurally low churn”, no figure"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "New guides: “2026 SmartVault ARR growth expected to be around 20%, exceeding current market expectations” and a first margin target, SmartVault EBITDA margin “towards 20% for FY26”, plus a first FY27 view (Group ARR ahead in 2027)"
+   }
+  ]
+ }
+}
