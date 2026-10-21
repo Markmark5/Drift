@@ -1,0 +1,80 @@
+{
+ "ticker": "SNR",
+ "v": "2026-10-21.8c67",
+ "ccy": "GBX",
+ "src": "Yahoo SNR.L weekly",
+ "adj": [],
+ "px": [
+  [
+   "2026-07-17",
+   290.0
+  ],
+  [
+   "2026-07-24",
+   289.5
+  ],
+  [
+   "2026-07-31",
+   290.5
+  ],
+  [
+   "2026-08-07",
+   292.0
+  ],
+  [
+   "2026-08-14",
+   293.0
+  ],
+  [
+   "2026-08-21",
+   294.5
+  ],
+  [
+   "2026-08-28",
+   294.5
+  ],
+  [
+   "2026-09-04",
+   294.0
+  ],
+  [
+   "2026-09-11",
+   294.5
+  ],
+  [
+   "2026-09-18",
+   297.0
+  ],
+  [
+   "2026-09-25",
+   296.0
+  ],
+  [
+   "2026-10-02",
+   297.0
+  ],
+  [
+   "2026-10-09",
+   297.5
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2026-08-03",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "With both Aerospace and Flexonics Divisions performing strongly, the Board remains confident of delivering full-year performance in line with the upgraded expectations announced in the July post-close trading update.",
+   "file": "20260803_SNR_Results-for-the-half-year-ended-30-June-2026.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-29",
+  "doc": "OPS",
+  "file": "20260929_SNR_Satisfaction-of-Regulatory-Conditions;-Next-Steps.md",
+  "vs": "H1 R Aug-26",
+  "lines": []
+ }
+}
