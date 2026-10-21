@@ -1,6 +1,6 @@
 {
  "ticker": "PBEE",
- "v": "2026-10-21.3574",
+ "v": "2026-10-21.2185",
  "ccy": "GBX",
  "src": "Yahoo PBEE.L weekly",
  "adj": [],
@@ -1335,32 +1335,47 @@
    "s": 0,
    "q": "We enter the second half with strong momentum and a pipeline that gives us confidence in sustained growth.",
    "file": "20260813_PBEE_Half-year-Financial-Report.md"
+  },
+  {
+   "d": "2026-10-21",
+   "doc": "Q3 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Company reiterates its existing guidance framework (which assumes relative market stability):",
+   "file": "20261021_PBEE_Q3-2026-Results-Announcement.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-13",
-  "doc": "H1 R",
-  "file": "20260813_PBEE_Half-year-Financial-Report.md",
-  "vs": "H1 R Aug-25 · Q2 TU Jul-26 · back to Aug-24",
+  "rns": "2026-10-21",
+  "doc": "Q3 R",
+  "file": "20261021_PBEE_Q3-2026-Results-Announcement.md",
+  "vs": "Q3 R Oct-25 · H1 R Aug-26 · Q2 R Jul-26 · Q1 R Apr-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Wording vs number",
-    "text": "UK CPIC threshold: H1-25 “desired UK CPIC threshold is £200-£250” → now “desired UK CPIC threshold is approximately £250”, while UK CPIC rose to £263 (H1-25: £251), labelled “As guided” in the table",
-    "span": "£200-£250 stated Jan-24 to Oct-25; loosened from Jan-26; first H1 print above the old ceiling"
+    "type": "Went quiet (quarterly new Invested Customers)",
+    "text": "Q2-26: “12,000 new Invested Customers onboarded during the quarter (Q2 2025: 11,000)” → Q3-26 gives only “32,000 new Invested Customers onboarded year-to-date (YTD September 2025: 32,000)”, implying c.10,000 in Q3 vs 11,000 a year ago while UK marketing rose to £4.4m (Q3 2025: £2.6m)",
+    "span": "Quarterly figure given at Q3-25, Q1-26, Q2-26 → first quarter without it"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number (quarterly Adjusted EBITDA)",
+    "text": "CEO: “driving increased profitability in the UK and across the Group over the past year” → Q3 Group Adjusted EBITDA £1.1m (Q3 2025: £1.3m, −19%), UK Adjusted EBITDA flat at £2.4m, UK margin 16% vs 20%",
+    "span": "Q3-25 Group Adj. EBITDA up 62%; Q2-26 up 26% → first quarterly fall"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number (UK Cost per Invested Customer)",
+    "text": "UK CPIC £268 tagged “As guided” while the notes keep “PensionBee's desired UK CPIC threshold is approximately £250.”",
+    "span": "£250 at Q3-25 → £258 Q1-26 → £263 Q2-26 → £268 Q3-26, third quarter above threshold"
    },
    {
     "sev": "grey",
-    "type": "Demoted",
-    "text": "CPIC: H1-25 highlights “remains in line with expectations at £251” → H1-26 £263 absent from the Performance Overview bullets, shown only in the KPI table and body text",
-    "span": "In H1 highlights Aug-24 (“Cost per Invested Customer continued to decline to £242”) and Aug-25 → dropped Aug-26"
-   },
-   {
-    "sev": "grey",
-    "type": "Restated",
-    "text": "Retention KPI redefined: H1-25 “Customer and AUA Retention Rates7, 8 remained strong at >95%” → H1-26 “Value Retention Rate of >100% (H1 2025: >100%)”; AUA Retention row removed from the KPI table",
-    "span": "Change pre-flagged in Q4-25 (Jan-26)"
+    "type": "Restated (Value Retention Rate definition)",
+    "text": "Q2-26 defined it on all flows, “more accurately reflecting the AUA value driver” → Q3-26 limits it to flows “from customers who joined PensionBee up to and including 2024”; H1-26 reported “Value Retention Rate of >100%”, Q3-26 “approximately 100%”",
+    "span": "Metric introduced Q1-26 in place of AUA Retention Rate"
    }
   ]
  }
