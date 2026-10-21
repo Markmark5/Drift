@@ -1,0 +1,177 @@
+{
+ "ticker": "DEVO",
+ "v": "2026-10-21.a3ca",
+ "ccy": "GBX",
+ "src": "ShareScope weekly snapshots",
+ "adj": [],
+ "px": [
+  [
+   "2026-03-03",
+   24.5
+  ],
+  [
+   "2026-03-06",
+   24.3
+  ],
+  [
+   "2026-03-13",
+   24.3
+  ],
+  [
+   "2026-03-20",
+   24.3
+  ],
+  [
+   "2026-03-27",
+   23.5
+  ],
+  [
+   "2026-04-03",
+   22.0
+  ],
+  [
+   "2026-04-10",
+   22.0
+  ],
+  [
+   "2026-04-17",
+   22.0
+  ],
+  [
+   "2026-04-24",
+   21.5
+  ],
+  [
+   "2026-05-08",
+   21.5
+  ],
+  [
+   "2026-05-15",
+   21.5
+  ],
+  [
+   "2026-05-22",
+   21.5
+  ],
+  [
+   "2026-06-02",
+   21.5
+  ],
+  [
+   "2026-06-05",
+   21.5
+  ],
+  [
+   "2026-06-12",
+   21.0
+  ],
+  [
+   "2026-06-19",
+   20.0
+  ],
+  [
+   "2026-06-26",
+   17.5
+  ],
+  [
+   "2026-07-03",
+   17.5
+  ],
+  [
+   "2026-07-10",
+   18.0
+  ],
+  [
+   "2026-07-17",
+   17.5
+  ],
+  [
+   "2026-07-24",
+   17.0
+  ],
+  [
+   "2026-07-31",
+   16.0
+  ],
+  [
+   "2026-08-07",
+   6.1
+  ],
+  [
+   "2026-08-14",
+   7.25
+  ],
+  [
+   "2026-08-21",
+   7.75
+  ],
+  [
+   "2026-08-28",
+   7.5
+  ],
+  [
+   "2026-09-07",
+   8.5
+  ],
+  [
+   "2026-09-11",
+   7.25
+  ],
+  [
+   "2026-09-18",
+   6.875
+  ],
+  [
+   "2026-09-25",
+   6.875
+  ],
+  [
+   "2026-10-02",
+   6.875
+  ],
+  [
+   "2026-10-09",
+   6.875
+  ],
+  [
+   "2026-10-16",
+   6.875
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2026-04-09",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 1,
+   "q": "Trading in 2026 has started strongly so far, which bolsters our confidence that we can deliver another consecutive year of growth in revenues and Adjusted EBITDA for the full year.",
+   "file": "20260409_DEVO_Unaudited-preliminary-results.md"
+  },
+  {
+   "d": "2026-06-26",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -1,
+   "q": "The strong 1H 2026 performance and the positive response to pending games are expected to combine to build a profitable cushion although this will be offset by the slower than expected initial launch of STARSEEKER.",
+   "file": "20260626_DEVO_Trading-Statement.md",
+   "gnote": "withdrawn"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-16",
+  "doc": "OPS",
+  "file": "20260916_DEVO_Devolver-Digital,-Inc.-Shares-Trading-on-JP-J....md",
+  "vs": "Trading Statement Jun-26 · H1 results Sep-22/23/24/25",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Skipped update",
+    "text": "Jun-26 promised “guidance for the full year 2026 at the time of the Company's half-year results in late September 2026” → 16 Sep-26 notice says only that shares are trading on JP Jenkins; no half-year results or FY26 guidance in the folder",
+    "span": "H1 results issued late Sep in 2022, 2023, 2024 and 2025 → first gap in 4 years"
+   }
+  ]
+ }
+}

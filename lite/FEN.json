@@ -1,0 +1,149 @@
+{
+ "ticker": "FEN",
+ "v": "2026-10-21.c7c2",
+ "ccy": "GBX",
+ "src": "ShareScope weekly snapshots",
+ "adj": [],
+ "px": [
+  [
+   "2026-03-03",
+   48.5
+  ],
+  [
+   "2026-03-06",
+   48.5
+  ],
+  [
+   "2026-03-13",
+   48.5
+  ],
+  [
+   "2026-03-20",
+   48.5
+  ],
+  [
+   "2026-03-27",
+   48.5
+  ],
+  [
+   "2026-04-03",
+   48.5
+  ],
+  [
+   "2026-04-10",
+   48.5
+  ],
+  [
+   "2026-04-17",
+   48.5
+  ],
+  [
+   "2026-04-24",
+   48.5
+  ],
+  [
+   "2026-05-08",
+   48.5
+  ],
+  [
+   "2026-05-15",
+   48.5
+  ],
+  [
+   "2026-05-22",
+   48.5
+  ],
+  [
+   "2026-06-02",
+   48.5
+  ],
+  [
+   "2026-06-05",
+   50.0
+  ],
+  [
+   "2026-06-12",
+   50.0
+  ],
+  [
+   "2026-06-19",
+   50.0
+  ],
+  [
+   "2026-06-26",
+   50.0
+  ],
+  [
+   "2026-07-03",
+   50.0
+  ],
+  [
+   "2026-07-10",
+   50.0
+  ],
+  [
+   "2026-07-17",
+   50.0
+  ],
+  [
+   "2026-07-24",
+   50.0
+  ],
+  [
+   "2026-07-31",
+   50.0
+  ],
+  [
+   "2026-08-07",
+   50.0
+  ],
+  [
+   "2026-08-14",
+   50.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2026-06-17",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading remains in line with board expectations for the current year to date.",
+   "file": "20260617_FEN_Final-Results.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-06-17",
+  "doc": "FY R",
+  "file": "20260617_FEN_Final-Results.md",
+  "vs": "FY R Apr-25 · back to Apr-24 · H1 R Sep-25",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Current-year trading: last year an Outlook section with Q1 “slightly ahead of overall Group budget” and “We have seen a strong performance in Q1 and remain confident in achieving management expectations over the remainder of the year.” → now one line, “Trading remains in line with board expectations for the current year to date.”, no Q1 read and no Outlook section",
+    "span": "FY R Apr-25 → FY R Jun-26 (offer period)"
+   },
+   {
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "Adjusted EBITDA margin: table given (24.4% FY23, 21.4% FY24) → now “we have maintained our Adjusted EBITDA margin”, no margin figure",
+    "span": "Table at Apr-24, Apr-25 → first gap"
+   },
+   {
+    "sev": "grey",
+    "type": "Pushed out",
+    "text": "FY results published 17 Jun 2026 for FY25, vs 28 Apr 2025 for FY24 (and 22 Apr 2024, 24 Apr 2023, 25 Apr 2022)",
+    "span": "Late April habit → mid June, during the Irwell Bidco scheme"
+   },
+   {
+    "sev": "grey",
+    "type": "Skipped update",
+    "text": "No January/February trading update ahead of FY25 results; one was issued before each of the last four (Feb-22, Feb-23, Jan-24, Feb-25)",
+    "span": "First gap in 4 years (offer period)"
+   }
+  ]
+ }
+}

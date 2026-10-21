@@ -1,0 +1,1420 @@
+{
+ "ticker": "TIME",
+ "v": "2026-10-21.8a58",
+ "ccy": "GBX",
+ "src": "Yahoo TIME.L weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-22",
+   24.25
+  ],
+  [
+   "2021-10-29",
+   24.25
+  ],
+  [
+   "2021-11-05",
+   22.5
+  ],
+  [
+   "2021-11-12",
+   22.25
+  ],
+  [
+   "2021-11-19",
+   22.25
+  ],
+  [
+   "2021-11-26",
+   20.5
+  ],
+  [
+   "2021-12-03",
+   21.0
+  ],
+  [
+   "2021-12-10",
+   21.5
+  ],
+  [
+   "2021-12-17",
+   23.5
+  ],
+  [
+   "2021-12-24",
+   23.75
+  ],
+  [
+   "2021-12-31",
+   23.75
+  ],
+  [
+   "2022-01-07",
+   25.5
+  ],
+  [
+   "2022-01-14",
+   26.25
+  ],
+  [
+   "2022-01-21",
+   25.75
+  ],
+  [
+   "2022-01-28",
+   25.0
+  ],
+  [
+   "2022-02-04",
+   25.5
+  ],
+  [
+   "2022-02-11",
+   25.5
+  ],
+  [
+   "2022-02-18",
+   25.25
+  ],
+  [
+   "2022-02-25",
+   23.25
+  ],
+  [
+   "2022-03-04",
+   20.5
+  ],
+  [
+   "2022-03-11",
+   21.25
+  ],
+  [
+   "2022-03-18",
+   21.75
+  ],
+  [
+   "2022-03-25",
+   23.0
+  ],
+  [
+   "2022-04-01",
+   21.5
+  ],
+  [
+   "2022-04-08",
+   21.5
+  ],
+  [
+   "2022-04-15",
+   21.5
+  ],
+  [
+   "2022-04-22",
+   25.0
+  ],
+  [
+   "2022-04-29",
+   23.5
+  ],
+  [
+   "2022-05-06",
+   23.2
+  ],
+  [
+   "2022-05-13",
+   21.5
+  ],
+  [
+   "2022-05-20",
+   21.5
+  ],
+  [
+   "2022-05-27",
+   21.2
+  ],
+  [
+   "2022-06-03",
+   21.2
+  ],
+  [
+   "2022-06-10",
+   21.2
+  ],
+  [
+   "2022-06-17",
+   20.2
+  ],
+  [
+   "2022-06-24",
+   19.1
+  ],
+  [
+   "2022-07-01",
+   18.75
+  ],
+  [
+   "2022-07-08",
+   18.15
+  ],
+  [
+   "2022-07-15",
+   18.25
+  ],
+  [
+   "2022-07-22",
+   19.5
+  ],
+  [
+   "2022-07-29",
+   19.5
+  ],
+  [
+   "2022-08-05",
+   19.5
+  ],
+  [
+   "2022-08-12",
+   18.75
+  ],
+  [
+   "2022-08-19",
+   17.85
+  ],
+  [
+   "2022-08-26",
+   17.0
+  ],
+  [
+   "2022-09-02",
+   16.75
+  ],
+  [
+   "2022-09-09",
+   16.75
+  ],
+  [
+   "2022-09-16",
+   16.75
+  ],
+  [
+   "2022-09-23",
+   17.1
+  ],
+  [
+   "2022-09-30",
+   16.75
+  ],
+  [
+   "2022-10-07",
+   15.25
+  ],
+  [
+   "2022-10-14",
+   16.5
+  ],
+  [
+   "2022-10-21",
+   16.5
+  ],
+  [
+   "2022-10-28",
+   16.25
+  ],
+  [
+   "2022-11-04",
+   16.25
+  ],
+  [
+   "2022-11-11",
+   16.25
+  ],
+  [
+   "2022-11-18",
+   17.75
+  ],
+  [
+   "2022-11-25",
+   18.75
+  ],
+  [
+   "2022-12-02",
+   18.75
+  ],
+  [
+   "2022-12-09",
+   19.0
+  ],
+  [
+   "2022-12-16",
+   21.2
+  ],
+  [
+   "2022-12-23",
+   21.0
+  ],
+  [
+   "2022-12-30",
+   21.0
+  ],
+  [
+   "2023-01-06",
+   20.5
+  ],
+  [
+   "2023-01-13",
+   19.5
+  ],
+  [
+   "2023-01-20",
+   20.5
+  ],
+  [
+   "2023-01-27",
+   22.3
+  ],
+  [
+   "2023-02-03",
+   24.2
+  ],
+  [
+   "2023-02-10",
+   22.5
+  ],
+  [
+   "2023-02-17",
+   22.3
+  ],
+  [
+   "2023-02-24",
+   22.5
+  ],
+  [
+   "2023-03-03",
+   22.5
+  ],
+  [
+   "2023-03-10",
+   25.0
+  ],
+  [
+   "2023-03-17",
+   24.5
+  ],
+  [
+   "2023-03-24",
+   24.5
+  ],
+  [
+   "2023-03-31",
+   23.3
+  ],
+  [
+   "2023-04-07",
+   23.3
+  ],
+  [
+   "2023-04-14",
+   23.3
+  ],
+  [
+   "2023-04-21",
+   23.5
+  ],
+  [
+   "2023-04-28",
+   25.5
+  ],
+  [
+   "2023-05-05",
+   26.2
+  ],
+  [
+   "2023-05-12",
+   28.7
+  ],
+  [
+   "2023-05-19",
+   29.3
+  ],
+  [
+   "2023-05-26",
+   29.2
+  ],
+  [
+   "2023-06-02",
+   27.5
+  ],
+  [
+   "2023-06-09",
+   27.5
+  ],
+  [
+   "2023-06-16",
+   27.5
+  ],
+  [
+   "2023-06-23",
+   26.5
+  ],
+  [
+   "2023-06-30",
+   27.5
+  ],
+  [
+   "2023-07-07",
+   26.5
+  ],
+  [
+   "2023-07-14",
+   25.5
+  ],
+  [
+   "2023-07-21",
+   25.5
+  ],
+  [
+   "2023-07-28",
+   25.3
+  ],
+  [
+   "2023-08-04",
+   25.2
+  ],
+  [
+   "2023-08-11",
+   26.5
+  ],
+  [
+   "2023-08-18",
+   27.5
+  ],
+  [
+   "2023-08-25",
+   27.5
+  ],
+  [
+   "2023-09-01",
+   26.3
+  ],
+  [
+   "2023-09-08",
+   25.5
+  ],
+  [
+   "2023-09-15",
+   27.5
+  ],
+  [
+   "2023-09-22",
+   28.4
+  ],
+  [
+   "2023-09-29",
+   28.5
+  ],
+  [
+   "2023-10-06",
+   27.8
+  ],
+  [
+   "2023-10-13",
+   29.6
+  ],
+  [
+   "2023-10-20",
+   29.3
+  ],
+  [
+   "2023-10-27",
+   28.5
+  ],
+  [
+   "2023-11-03",
+   29.0
+  ],
+  [
+   "2023-11-10",
+   32.5
+  ],
+  [
+   "2023-11-17",
+   32.5
+  ],
+  [
+   "2023-11-24",
+   33.3
+  ],
+  [
+   "2023-12-01",
+   36.0
+  ],
+  [
+   "2023-12-08",
+   38.5
+  ],
+  [
+   "2023-12-15",
+   36.5
+  ],
+  [
+   "2023-12-22",
+   33.5
+  ],
+  [
+   "2023-12-29",
+   36.5
+  ],
+  [
+   "2024-01-05",
+   35.4
+  ],
+  [
+   "2024-01-12",
+   33.5
+  ],
+  [
+   "2024-01-19",
+   33.2
+  ],
+  [
+   "2024-01-26",
+   39.7
+  ],
+  [
+   "2024-02-02",
+   37.8
+  ],
+  [
+   "2024-02-09",
+   37.7
+  ],
+  [
+   "2024-02-16",
+   37.5
+  ],
+  [
+   "2024-02-23",
+   42.0
+  ],
+  [
+   "2024-03-01",
+   37.0
+  ],
+  [
+   "2024-03-08",
+   38.7
+  ],
+  [
+   "2024-03-15",
+   37.2
+  ],
+  [
+   "2024-03-22",
+   39.5
+  ],
+  [
+   "2024-03-29",
+   39.5
+  ],
+  [
+   "2024-04-05",
+   39.25
+  ],
+  [
+   "2024-04-12",
+   41.75
+  ],
+  [
+   "2024-04-19",
+   41.0
+  ],
+  [
+   "2024-04-26",
+   40.75
+  ],
+  [
+   "2024-05-03",
+   39.75
+  ],
+  [
+   "2024-05-10",
+   42.5
+  ],
+  [
+   "2024-05-17",
+   41.75
+  ],
+  [
+   "2024-05-24",
+   41.75
+  ],
+  [
+   "2024-05-31",
+   41.75
+  ],
+  [
+   "2024-06-07",
+   41.5
+  ],
+  [
+   "2024-06-14",
+   39.25
+  ],
+  [
+   "2024-06-21",
+   37.75
+  ],
+  [
+   "2024-06-28",
+   43.25
+  ],
+  [
+   "2024-07-05",
+   47.5
+  ],
+  [
+   "2024-07-12",
+   50.3
+  ],
+  [
+   "2024-07-19",
+   52.5
+  ],
+  [
+   "2024-07-26",
+   51.5
+  ],
+  [
+   "2024-08-02",
+   52.0
+  ],
+  [
+   "2024-08-09",
+   47.5
+  ],
+  [
+   "2024-08-16",
+   51.5
+  ],
+  [
+   "2024-08-23",
+   52.5
+  ],
+  [
+   "2024-08-30",
+   54.0
+  ],
+  [
+   "2024-09-06",
+   50.5
+  ],
+  [
+   "2024-09-13",
+   52.0
+  ],
+  [
+   "2024-09-20",
+   52.5
+  ],
+  [
+   "2024-09-27",
+   57.5
+  ],
+  [
+   "2024-10-04",
+   59.5
+  ],
+  [
+   "2024-10-11",
+   58.0
+  ],
+  [
+   "2024-10-18",
+   58.0
+  ],
+  [
+   "2024-10-25",
+   57.0
+  ],
+  [
+   "2024-11-01",
+   58.0
+  ],
+  [
+   "2024-11-08",
+   57.5
+  ],
+  [
+   "2024-11-15",
+   58.0
+  ],
+  [
+   "2024-11-22",
+   59.0
+  ],
+  [
+   "2024-11-29",
+   57.5
+  ],
+  [
+   "2024-12-06",
+   58.0
+  ],
+  [
+   "2024-12-13",
+   57.5
+  ],
+  [
+   "2024-12-20",
+   59.0
+  ],
+  [
+   "2024-12-27",
+   61.0
+  ],
+  [
+   "2025-01-03",
+   61.0
+  ],
+  [
+   "2025-01-10",
+   63.0
+  ],
+  [
+   "2025-01-17",
+   63.5
+  ],
+  [
+   "2025-01-24",
+   64.0
+  ],
+  [
+   "2025-01-31",
+   60.0
+  ],
+  [
+   "2025-02-07",
+   60.0
+  ],
+  [
+   "2025-02-14",
+   61.0
+  ],
+  [
+   "2025-02-21",
+   57.5
+  ],
+  [
+   "2025-02-28",
+   52.5
+  ],
+  [
+   "2025-03-07",
+   52.5
+  ],
+  [
+   "2025-03-14",
+   50.5
+  ],
+  [
+   "2025-03-21",
+   50.5
+  ],
+  [
+   "2025-03-28",
+   51.5
+  ],
+  [
+   "2025-04-04",
+   46.75
+  ],
+  [
+   "2025-04-11",
+   48.5
+  ],
+  [
+   "2025-04-18",
+   53.5
+  ],
+  [
+   "2025-04-25",
+   56.0
+  ],
+  [
+   "2025-05-02",
+   55.5
+  ],
+  [
+   "2025-05-09",
+   56.0
+  ],
+  [
+   "2025-05-16",
+   59.5
+  ],
+  [
+   "2025-05-23",
+   58.5
+  ],
+  [
+   "2025-05-30",
+   57.5
+  ],
+  [
+   "2025-06-06",
+   59.5
+  ],
+  [
+   "2025-06-13",
+   57.0
+  ],
+  [
+   "2025-06-20",
+   58.0
+  ],
+  [
+   "2025-06-27",
+   62.5
+  ],
+  [
+   "2025-07-04",
+   64.0
+  ],
+  [
+   "2025-07-11",
+   62.0
+  ],
+  [
+   "2025-07-18",
+   59.5
+  ],
+  [
+   "2025-07-25",
+   57.0
+  ],
+  [
+   "2025-08-01",
+   55.0
+  ],
+  [
+   "2025-08-08",
+   55.0
+  ],
+  [
+   "2025-08-15",
+   53.5
+  ],
+  [
+   "2025-08-22",
+   55.0
+  ],
+  [
+   "2025-08-29",
+   54.0
+  ],
+  [
+   "2025-09-05",
+   52.0
+  ],
+  [
+   "2025-09-12",
+   55.0
+  ],
+  [
+   "2025-09-19",
+   57.5
+  ],
+  [
+   "2025-09-26",
+   56.0
+  ],
+  [
+   "2025-10-03",
+   53.5
+  ],
+  [
+   "2025-10-10",
+   52.0
+  ],
+  [
+   "2025-10-17",
+   50.5
+  ],
+  [
+   "2025-10-24",
+   48.2
+  ],
+  [
+   "2025-10-31",
+   49.5
+  ],
+  [
+   "2025-11-07",
+   47.25
+  ],
+  [
+   "2025-11-14",
+   49.5
+  ],
+  [
+   "2025-11-21",
+   48.5
+  ],
+  [
+   "2025-11-28",
+   48.5
+  ],
+  [
+   "2025-12-05",
+   52.0
+  ],
+  [
+   "2025-12-12",
+   53.0
+  ],
+  [
+   "2025-12-19",
+   50.5
+  ],
+  [
+   "2025-12-26",
+   51.5
+  ],
+  [
+   "2026-01-02",
+   54.0
+  ],
+  [
+   "2026-01-09",
+   51.5
+  ],
+  [
+   "2026-01-16",
+   51.5
+  ],
+  [
+   "2026-01-23",
+   51.0
+  ],
+  [
+   "2026-01-30",
+   52.5
+  ],
+  [
+   "2026-02-06",
+   53.0
+  ],
+  [
+   "2026-02-13",
+   53.5
+  ],
+  [
+   "2026-02-20",
+   53.5
+  ],
+  [
+   "2026-02-27",
+   49.5
+  ],
+  [
+   "2026-03-06",
+   47.5
+  ],
+  [
+   "2026-03-13",
+   45.5
+  ],
+  [
+   "2026-03-20",
+   44.5
+  ],
+  [
+   "2026-03-27",
+   43.5
+  ],
+  [
+   "2026-04-03",
+   42.0
+  ],
+  [
+   "2026-04-10",
+   42.75
+  ],
+  [
+   "2026-04-17",
+   45.5
+  ],
+  [
+   "2026-04-24",
+   45.5
+  ],
+  [
+   "2026-05-01",
+   42.5
+  ],
+  [
+   "2026-05-08",
+   42.5
+  ],
+  [
+   "2026-05-15",
+   42.25
+  ],
+  [
+   "2026-05-22",
+   42.25
+  ],
+  [
+   "2026-05-29",
+   41.5
+  ],
+  [
+   "2026-06-05",
+   45.75
+  ],
+  [
+   "2026-06-12",
+   47.0
+  ],
+  [
+   "2026-06-19",
+   46.5
+  ],
+  [
+   "2026-06-26",
+   48.5
+  ],
+  [
+   "2026-07-03",
+   50.5
+  ],
+  [
+   "2026-07-10",
+   50.5
+  ],
+  [
+   "2026-07-17",
+   50.2
+  ],
+  [
+   "2026-07-24",
+   49.7
+  ],
+  [
+   "2026-07-31",
+   50.2
+  ],
+  [
+   "2026-08-07",
+   52.0
+  ],
+  [
+   "2026-08-14",
+   52.5
+  ],
+  [
+   "2026-08-21",
+   57.5
+  ],
+  [
+   "2026-08-28",
+   57.4
+  ],
+  [
+   "2026-09-04",
+   57.7
+  ],
+  [
+   "2026-09-11",
+   57.7
+  ],
+  [
+   "2026-09-18",
+   57.8
+  ],
+  [
+   "2026-09-25",
+   57.9
+  ],
+  [
+   "2026-10-02",
+   58.9
+  ],
+  [
+   "2026-10-09",
+   58.9
+  ],
+  [
+   "2026-10-16",
+   58.9
+  ],
+  [
+   "2026-10-21",
+   58.9
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-12-15",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "In line with its strategic objectives, the Group has continued to experience positive trading momentum regarding lending origination on its own-book, with the Board and management team remaining focussed on the Group's recovery from the impact of the pandemic.",
+   "file": "20211215_TIME_H1-Trading-Update-&-Notice-of-Interim-Results.md"
+  },
+  {
+   "d": "2022-01-20",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -1,
+   "q": "Given the continued, somewhat unpredictable waves of the pandemic and their impact on trading conditions the Board is satisfied with the financial results and pleased with the operational progress made during the first half of the current financial year with the overall strategic plan set out at the start of the current financial year being broadly on track.",
+   "file": "20220120_TIME_Interim-Results.md"
+  },
+  {
+   "d": "2022-07-07",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Unaudited trading results for the year demonstrate significant progress towards delivering the Board's medium-term strategy to significantly increase own-book deal origination and its commercial lending and plans for the divestment of the Group's non-core, consumer focussed brokerage businesses are well progressed.",
+   "file": "20220707_TIME_Trading-Update-&-Notice-of-Final-Results.md"
+  },
+  {
+   "d": "2022-09-22",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board continues to expect the Group's trading for the full year to be in line with market expectations.",
+   "file": "20220922_TIME_Final-Results-for-the-year-ended-31-May-2022.md"
+  },
+  {
+   "d": "2022-09-22",
+   "doc": "Q1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board continues to expect the Group's trading for the full year to be in line with market expectations.",
+   "file": "20220922_TIME_Q1-Trading-Update.md"
+  },
+  {
+   "d": "2022-12-16",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 1,
+   "q": "Ongoing positive trading momentum resulting in expectation of Group trading for the full year to be at least in line with market expectations",
+   "file": "20221216_TIME_H1-Trading-Update-&-Notice-of-Interim-Results.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2023-01-26",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 3,
+   "q": "Continued positive trading momentum throughout December 2022 gives the Board confidence that full year trading will be significantly ahead of market expectations[1], with PBT for the full year now expected to be not less than £3.2m",
+   "file": "20230126_TIME_Interim-Results.md"
+  },
+  {
+   "d": "2023-03-08",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Continued positive trading momentum throughout Q3 of 2022/23 has given the Board further confidence that full-year trading will now be further ahead of the latest market expectations1, with PBT for the full year now expected to be not less than £3.6m",
+   "file": "20230308_TIME_Q3-Trading-Update-Pre-Tax-Profits-up-172%.md"
+  },
+  {
+   "d": "2023-05-03",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 2,
+   "q": "After 11 months of continued positive trading momentum, the Board is confident that FY23 revenue and profit before tax will now be not less than £26.7m and £4.0m respectively.",
+   "file": "20230503_TIME_Trading-Update-&-Notice-of-Final-Results.md"
+  },
+  {
+   "d": "2023-06-29",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "I am delighted to report these full-year results which demonstrate the successful implementation of the Group's Medium-Term Strategy. Two years in, we remain on track to achieve our four-year plan's stated targets.",
+   "file": "20230629_TIME_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2023-09-26",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board continues to expect the Group's trading for the current financial year to 31 May 2024 to be in line with market expectations.",
+   "file": "20230926_TIME_Final-Results.md"
+  },
+  {
+   "d": "2023-09-26",
+   "doc": "Q1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board has real confidence that the Group remains well positioned to continue on its growth trajectory and to build long-term value for its shareholders\".",
+   "file": "20230926_TIME_Q1-Trading-Update.md"
+  },
+  {
+   "d": "2023-11-09",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 2,
+   "q": "the Board now has increased confidence that Group performance for the 2023/24 full-year will be ahead of current market expectations1. Profit before tax for the full year is now expected to be not less than £5.4m.",
+   "file": "20231109_TIME_Trading-Update.md"
+  },
+  {
+   "d": "2023-12-19",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Continuing positive trading momentum, leading to expectation of Group trading for the full year to be at least in line with recently upgraded market guidance",
+   "file": "20231219_TIME_Half-Year-Trading-Update-&-Notice-of-Results.md"
+  },
+  {
+   "d": "2024-01-25",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "As a result, and whilst remaining vigilant and cautious as to the potential impact that further economic uncertainty could have on the Group, the Board is confident that the results for the full-year will be at least in-line with current Board expectations.",
+   "file": "20240125_TIME_Interim-Results.md"
+  },
+  {
+   "d": "2024-03-05",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 1,
+   "q": "the Board has confidence that FY24 Revenue and Profit Before Tax (\"PBT\") will now be not less than £31.5m and £5.7m respectively, each ahead of latest market expectations(1).",
+   "file": "20240305_TIME_Notice-of-Trading-Update.md"
+  },
+  {
+   "d": "2024-03-26",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Such continuing positive trading momentum gives the Board confidence that full-year trading will be at least in line with the market expectations as upgraded on 5 March 2024.",
+   "file": "20240326_TIME_Q3-Trading-Update.md"
+  },
+  {
+   "d": "2024-06-27",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 1,
+   "q": "In FY 2023/24, the Company delivered significant increases across its key performance indicators, with revenue and profitability ahead of market expectations.",
+   "file": "20240627_TIME_Trading-Update-and-Notice-of-Final-Results.md"
+  },
+  {
+   "d": "2024-09-10",
+   "doc": "Q1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Unaudited revenues during Q1 FY2025 were approximately 20% higher than the prior year equivalent (Q1 FY2024: £7.6m), providing significant confidence as to delivery of full year performance in line with market expectations.",
+   "file": "20240910_TIME_Notice-of-Results,-Investor-Pres-&-Trading-Update.md"
+  },
+  {
+   "d": "2024-09-25",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board continues to expect the Group's trading for the current financial year ending 31 May 2025 to be at least in line with market expectations.",
+   "file": "20240925_TIME_Final-Results.md"
+  },
+  {
+   "d": "2024-09-25",
+   "doc": "Q1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board, therefore, retains real confidence that the Group is positioned for further growth and will build increased value for its shareholders over time.",
+   "file": "20240925_TIME_Q1-Trading-Update.md"
+  },
+  {
+   "d": "2024-11-12",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 1,
+   "q": "As a result, the Board now has increased confidence that Group performance for FY25 will be ahead of current market expectations1. Revenue and Profit Before Tax for FY25 are now expected to not be less than £35.1m and £7.2m respectively.",
+   "file": "20241112_TIME_Trading-Update.md"
+  },
+  {
+   "d": "2024-12-19",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Continuing positive trading momentum; leading to expectation of Group financial performance for the full year to be at least in line with recently upgraded market guidance",
+   "file": "20241219_TIME_Half-Year-Trading-Update-&-Notice-of-Results.md"
+  },
+  {
+   "d": "2025-01-28",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Continued positive trading momentum throughout December 2024 gives significant confidence that full year trading will be at least in line with market expectations",
+   "file": "20250128_TIME_Interim-Results.md"
+  },
+  {
+   "d": "2025-02-27",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 1,
+   "q": "As a result, the Board is confident that Group performance for FY25 will be ahead of current market expectations1 which were previously raised in November 2024.",
+   "file": "20250227_TIME_Notice-of-Trading-Update.md"
+  },
+  {
+   "d": "2025-03-25",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Continuing positive trading momentum; leading to expectation that Group financial performance for the full year will be at least in line with recently upgraded market guidance provided in February 2025[1]",
+   "file": "20250325_TIME_Q3-Trading-Update.md"
+  },
+  {
+   "d": "2025-05-06",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "This ongoing positive trading momentum provides the Board with significant confidence that the Group financial performance for FY 2024/25 will be at least in line with current market guidance.",
+   "file": "20250506_TIME_Notice-of-Q4-Trading-Update-and-of-Final-Results.md"
+  },
+  {
+   "d": "2025-06-26",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 1,
+   "q": "This demand has driven further growth across all key financial metrics with both revenue and profitability ahead of market expectations[1] and the lending book having now enjoyed 16 consecutive quarters of growth.",
+   "file": "20250626_TIME_Trading-Update-and-Notice-of-Final-Results.md"
+  },
+  {
+   "d": "2025-09-24",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board confirms that it continues to expect the Group's trading for the current financial year ending 31 May 2026 to be at least in line with market expectations.",
+   "file": "20250924_TIME_Final-Results.md"
+  },
+  {
+   "d": "2025-09-24",
+   "doc": "Q1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board confirms that it continues to expect the Group's trading for the current financial year ending 31 May 2026 to be at least in line with market expectations.",
+   "file": "20250924_TIME_Q1-Trading-Update.md"
+  },
+  {
+   "d": "2025-10-28",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "This ongoing positive trading momentum provides the Board with confidence that the Group financial performance for FY 2025/26 will be at least in line with current market expectations.",
+   "file": "20251028_TIME_Notice-of-Trading-Update-&-Investor-Presentations.md"
+  },
+  {
+   "d": "2025-11-12",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "This ongoing positive lending book growth provides the Board with increased confidence that Group financial performance for FY 2025/26 will be at least in line with current market expectations.",
+   "file": "20251112_TIME_Loan-Book-Update.md"
+  },
+  {
+   "d": "2025-12-16",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Continuing positive trading momentum, with record monthly volumes experienced in both Asset Finance and Invoice Finance during H1 2025/26, further underpinning expectation that Group financial performance for the full year will be at least in line with market guidance",
+   "file": "20251216_TIME_Half-Year-Trading-Update-&-Notice-of-Results.md"
+  },
+  {
+   "d": "2026-01-27",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Continued positive trading momentum throughout December 2025 underpins significant Board confidence that trading for the current financial year ending 31 May 2026 will be at least in line with market expectations.",
+   "file": "20260127_TIME_Interim-Results.md"
+  },
+  {
+   "d": "2026-03-24",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The continued positive trading momentum leads to the expectation that Group financial performance for the full year will be in line with market guidance.",
+   "file": "20260324_TIME_Q3-Trading-Update.md"
+  },
+  {
+   "d": "2026-06-25",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "Time Finance plc, the AIM listed independent specialist finance provider, provides a positive trading update for the full financial year ended 31 May 2026 (\"FY 2025/26\"). The Company delivered record profits and revenues, with increased operational efficiencies driving margins, while strong credit controls ensured that arrears and write-offs remained well controlled.",
+   "file": "20260625_TIME_Trading-Update-and-Notice-of-Final-Results.md"
+  },
+  {
+   "d": "2026-08-17",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Time Finance Directors have considered the Time Finance Profit Estimates and confirm that they remain valid as at the date of this announcement, have been properly compiled and the basis of the accounting used is consistent with the Time Finance Group's accounting policies.",
+   "file": "20260817_TIME_Recommended-Cash-Acquisition-of-Time-Finance-plc.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-08-17",
+  "doc": "OPS",
+  "file": "20260817_TIME_Recommended-Cash-Acquisition-of-Time-Finance-plc.md",
+  "vs": "YE-TU Jun-26 (previous RNS) · YE-TU Jun-24/Jun-25 · Nov-25/Jun-26 lending updates",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "FY outturn was “revenue and profitability ahead of market expectations” (Jun-24) and again ahead in Jun-25 → FY26 profit estimates (PBTE £8.5m) repeated in the offer’s “Current trading” with no reference to market expectations; Jun-26 TU also silent",
+    "span": "Anchor given Jun-24, Jun-25 → absent Jun-26 and Aug-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Target dropped",
+    "text": "Strategy target “targets the gross lending portfolio reaching £300m by 31 May 2028” (Nov-25), restated as “£300m plus lending book by 31 May 2028” (Jun-26) → not mentioned in the offer announcement",
+    "span": "Given Jan-25, Feb-25, Nov-25, Jun-26 → absent Aug-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Restated",
+    "text": "Loan book basis switched: “Gross lending-book up 15% to a record £250.9m at 31 May 2026” (Jun-26 TU) → offer cites an “unaudited net loan book of approximately £218 million” at 30 June 2026; no gross figure given",
+    "span": "Gross basis used in every lending update since 2022"
+   }
+  ]
+ }
+}

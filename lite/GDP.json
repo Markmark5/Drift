@@ -1,0 +1,1384 @@
+{
+ "ticker": "GDP",
+ "v": "2026-10-21.bcb3",
+ "ccy": "GBX",
+ "src": "Yahoo GDP.L weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-22",
+   7.35
+  ],
+  [
+   "2021-10-29",
+   7.3
+  ],
+  [
+   "2021-11-05",
+   7.15
+  ],
+  [
+   "2021-11-12",
+   7.55
+  ],
+  [
+   "2021-11-19",
+   7.35
+  ],
+  [
+   "2021-11-26",
+   7.1
+  ],
+  [
+   "2021-12-03",
+   7.0
+  ],
+  [
+   "2021-12-10",
+   6.95
+  ],
+  [
+   "2021-12-17",
+   7.45
+  ],
+  [
+   "2021-12-24",
+   7.0
+  ],
+  [
+   "2021-12-31",
+   7.0
+  ],
+  [
+   "2022-01-07",
+   6.7
+  ],
+  [
+   "2022-01-14",
+   7.05
+  ],
+  [
+   "2022-01-21",
+   7.05
+  ],
+  [
+   "2022-01-28",
+   6.85
+  ],
+  [
+   "2022-02-04",
+   6.85
+  ],
+  [
+   "2022-02-11",
+   7.25
+  ],
+  [
+   "2022-02-18",
+   7.45
+  ],
+  [
+   "2022-02-25",
+   7.4
+  ],
+  [
+   "2022-03-04",
+   7.5
+  ],
+  [
+   "2022-03-11",
+   8.0
+  ],
+  [
+   "2022-03-18",
+   7.25
+  ],
+  [
+   "2022-03-25",
+   6.9
+  ],
+  [
+   "2022-04-01",
+   6.9
+  ],
+  [
+   "2022-04-08",
+   6.9
+  ],
+  [
+   "2022-04-15",
+   8.2
+  ],
+  [
+   "2022-04-22",
+   7.85
+  ],
+  [
+   "2022-04-29",
+   8.0
+  ],
+  [
+   "2022-05-06",
+   7.8
+  ],
+  [
+   "2022-05-13",
+   7.7
+  ],
+  [
+   "2022-05-20",
+   8.65
+  ],
+  [
+   "2022-05-27",
+   8.2
+  ],
+  [
+   "2022-06-03",
+   8.6
+  ],
+  [
+   "2022-06-10",
+   9.4
+  ],
+  [
+   "2022-06-17",
+   9.45
+  ],
+  [
+   "2022-06-24",
+   9.0
+  ],
+  [
+   "2022-07-01",
+   8.35
+  ],
+  [
+   "2022-07-08",
+   7.85
+  ],
+  [
+   "2022-07-15",
+   8.05
+  ],
+  [
+   "2022-07-22",
+   7.85
+  ],
+  [
+   "2022-07-29",
+   7.95
+  ],
+  [
+   "2022-08-05",
+   8.25
+  ],
+  [
+   "2022-08-12",
+   8.3
+  ],
+  [
+   "2022-08-19",
+   8.85
+  ],
+  [
+   "2022-08-26",
+   10.1
+  ],
+  [
+   "2022-09-02",
+   10.45
+  ],
+  [
+   "2022-09-09",
+   9.9
+  ],
+  [
+   "2022-09-16",
+   10.25
+  ],
+  [
+   "2022-09-23",
+   10.25
+  ],
+  [
+   "2022-09-30",
+   10.05
+  ],
+  [
+   "2022-10-07",
+   10.3
+  ],
+  [
+   "2022-10-14",
+   9.65
+  ],
+  [
+   "2022-10-21",
+   10.35
+  ],
+  [
+   "2022-10-28",
+   10.25
+  ],
+  [
+   "2022-11-04",
+   12.15
+  ],
+  [
+   "2022-11-11",
+   12.1
+  ],
+  [
+   "2022-11-18",
+   12.5
+  ],
+  [
+   "2022-11-25",
+   12.0
+  ],
+  [
+   "2022-12-02",
+   12.1
+  ],
+  [
+   "2022-12-09",
+   12.2
+  ],
+  [
+   "2022-12-16",
+   10.5
+  ],
+  [
+   "2022-12-23",
+   10.25
+  ],
+  [
+   "2022-12-30",
+   10.25
+  ],
+  [
+   "2023-01-06",
+   10.25
+  ],
+  [
+   "2023-01-13",
+   10.25
+  ],
+  [
+   "2023-01-20",
+   10.25
+  ],
+  [
+   "2023-01-27",
+   10.25
+  ],
+  [
+   "2023-02-03",
+   10.25
+  ],
+  [
+   "2023-02-10",
+   10.25
+  ],
+  [
+   "2023-02-17",
+   10.25
+  ],
+  [
+   "2023-02-24",
+   9.75
+  ],
+  [
+   "2023-03-03",
+   9.75
+  ],
+  [
+   "2023-03-10",
+   9.125
+  ],
+  [
+   "2023-03-17",
+   8.75
+  ],
+  [
+   "2023-03-24",
+   9.0
+  ],
+  [
+   "2023-03-31",
+   8.5
+  ],
+  [
+   "2023-04-07",
+   8.5
+  ],
+  [
+   "2023-04-14",
+   9.25
+  ],
+  [
+   "2023-04-21",
+   9.25
+  ],
+  [
+   "2023-04-28",
+   9.0
+  ],
+  [
+   "2023-05-05",
+   8.75
+  ],
+  [
+   "2023-05-12",
+   8.5
+  ],
+  [
+   "2023-05-19",
+   8.0
+  ],
+  [
+   "2023-05-26",
+   7.75
+  ],
+  [
+   "2023-06-02",
+   7.45
+  ],
+  [
+   "2023-06-09",
+   7.5
+  ],
+  [
+   "2023-06-16",
+   7.5
+  ],
+  [
+   "2023-06-23",
+   7.75
+  ],
+  [
+   "2023-06-30",
+   7.9
+  ],
+  [
+   "2023-07-07",
+   7.75
+  ],
+  [
+   "2023-07-14",
+   7.45
+  ],
+  [
+   "2023-07-21",
+   7.8
+  ],
+  [
+   "2023-07-28",
+   8.1
+  ],
+  [
+   "2023-08-04",
+   8.1
+  ],
+  [
+   "2023-08-11",
+   7.85
+  ],
+  [
+   "2023-08-18",
+   7.65
+  ],
+  [
+   "2023-08-25",
+   7.2
+  ],
+  [
+   "2023-09-01",
+   6.8
+  ],
+  [
+   "2023-09-08",
+   6.6
+  ],
+  [
+   "2023-09-15",
+   6.35
+  ],
+  [
+   "2023-09-22",
+   6.25
+  ],
+  [
+   "2023-09-29",
+   6.1
+  ],
+  [
+   "2023-10-06",
+   6.1
+  ],
+  [
+   "2023-10-13",
+   6.0
+  ],
+  [
+   "2023-10-20",
+   6.1
+  ],
+  [
+   "2023-10-27",
+   6.3
+  ],
+  [
+   "2023-11-03",
+   6.3
+  ],
+  [
+   "2023-11-10",
+   6.25
+  ],
+  [
+   "2023-11-17",
+   6.15
+  ],
+  [
+   "2023-11-24",
+   6.25
+  ],
+  [
+   "2023-12-01",
+   6.25
+  ],
+  [
+   "2023-12-08",
+   6.25
+  ],
+  [
+   "2023-12-15",
+   6.25
+  ],
+  [
+   "2023-12-22",
+   5.85
+  ],
+  [
+   "2023-12-29",
+   6.15
+  ],
+  [
+   "2024-01-05",
+   5.9
+  ],
+  [
+   "2024-01-12",
+   6.05
+  ],
+  [
+   "2024-01-19",
+   6.4
+  ],
+  [
+   "2024-01-26",
+   6.35
+  ],
+  [
+   "2024-02-02",
+   6.2
+  ],
+  [
+   "2024-02-09",
+   6.0
+  ],
+  [
+   "2024-02-16",
+   6.0
+  ],
+  [
+   "2024-02-23",
+   5.7
+  ],
+  [
+   "2024-03-01",
+   5.6
+  ],
+  [
+   "2024-03-08",
+   6.0
+  ],
+  [
+   "2024-03-15",
+   5.95
+  ],
+  [
+   "2024-03-22",
+   6.1
+  ],
+  [
+   "2024-03-29",
+   6.85
+  ],
+  [
+   "2024-04-05",
+   7.75
+  ],
+  [
+   "2024-04-12",
+   7.9
+  ],
+  [
+   "2024-04-19",
+   8.05
+  ],
+  [
+   "2024-04-26",
+   7.6
+  ],
+  [
+   "2024-05-03",
+   8.0
+  ],
+  [
+   "2024-05-10",
+   8.6
+  ],
+  [
+   "2024-05-17",
+   8.05
+  ],
+  [
+   "2024-05-24",
+   7.75
+  ],
+  [
+   "2024-05-31",
+   7.65
+  ],
+  [
+   "2024-06-07",
+   7.65
+  ],
+  [
+   "2024-06-14",
+   7.05
+  ],
+  [
+   "2024-06-21",
+   6.9
+  ],
+  [
+   "2024-06-28",
+   6.65
+  ],
+  [
+   "2024-07-05",
+   6.85
+  ],
+  [
+   "2024-07-12",
+   6.4
+  ],
+  [
+   "2024-07-19",
+   6.6
+  ],
+  [
+   "2024-07-26",
+   6.2
+  ],
+  [
+   "2024-08-02",
+   6.45
+  ],
+  [
+   "2024-08-09",
+   6.4
+  ],
+  [
+   "2024-08-16",
+   5.875
+  ],
+  [
+   "2024-08-23",
+   6.2
+  ],
+  [
+   "2024-08-30",
+   6.4
+  ],
+  [
+   "2024-09-06",
+   6.75
+  ],
+  [
+   "2024-09-13",
+   7.0
+  ],
+  [
+   "2024-09-20",
+   6.9
+  ],
+  [
+   "2024-09-27",
+   7.65
+  ],
+  [
+   "2024-10-04",
+   7.475
+  ],
+  [
+   "2024-10-11",
+   7.375
+  ],
+  [
+   "2024-10-18",
+   7.375
+  ],
+  [
+   "2024-10-25",
+   7.625
+  ],
+  [
+   "2024-11-01",
+   7.475
+  ],
+  [
+   "2024-11-08",
+   7.525
+  ],
+  [
+   "2024-11-15",
+   6.45
+  ],
+  [
+   "2024-11-22",
+   6.45
+  ],
+  [
+   "2024-11-29",
+   6.6
+  ],
+  [
+   "2024-12-06",
+   8.05
+  ],
+  [
+   "2024-12-13",
+   7.8
+  ],
+  [
+   "2024-12-20",
+   7.3
+  ],
+  [
+   "2024-12-27",
+   7.25
+  ],
+  [
+   "2025-01-03",
+   7.25
+  ],
+  [
+   "2025-01-10",
+   7.525
+  ],
+  [
+   "2025-01-17",
+   7.2
+  ],
+  [
+   "2025-01-24",
+   7.1
+  ],
+  [
+   "2025-01-31",
+   6.85
+  ],
+  [
+   "2025-02-07",
+   7.25
+  ],
+  [
+   "2025-02-14",
+   7.0
+  ],
+  [
+   "2025-02-21",
+   7.0
+  ],
+  [
+   "2025-02-28",
+   6.75
+  ],
+  [
+   "2025-03-07",
+   6.75
+  ],
+  [
+   "2025-03-14",
+   7.65
+  ],
+  [
+   "2025-03-21",
+   7.55
+  ],
+  [
+   "2025-03-28",
+   7.4
+  ],
+  [
+   "2025-04-04",
+   6.25
+  ],
+  [
+   "2025-04-11",
+   6.25
+  ],
+  [
+   "2025-04-18",
+   6.625
+  ],
+  [
+   "2025-04-25",
+   6.625
+  ],
+  [
+   "2025-05-02",
+   6.75
+  ],
+  [
+   "2025-05-09",
+   6.75
+  ],
+  [
+   "2025-05-16",
+   6.65
+  ],
+  [
+   "2025-05-23",
+   6.5
+  ],
+  [
+   "2025-05-30",
+   6.375
+  ],
+  [
+   "2025-06-06",
+   6.25
+  ],
+  [
+   "2025-06-13",
+   6.375
+  ],
+  [
+   "2025-06-20",
+   6.625
+  ],
+  [
+   "2025-06-27",
+   6.25
+  ],
+  [
+   "2025-07-04",
+   6.25
+  ],
+  [
+   "2025-07-11",
+   6.5
+  ],
+  [
+   "2025-07-18",
+   6.5
+  ],
+  [
+   "2025-07-25",
+   6.75
+  ],
+  [
+   "2025-08-01",
+   6.75
+  ],
+  [
+   "2025-08-08",
+   6.75
+  ],
+  [
+   "2025-08-15",
+   6.875
+  ],
+  [
+   "2025-08-22",
+   6.75
+  ],
+  [
+   "2025-08-29",
+   7.2
+  ],
+  [
+   "2025-09-05",
+   7.875
+  ],
+  [
+   "2025-09-12",
+   7.9
+  ],
+  [
+   "2025-09-19",
+   7.875
+  ],
+  [
+   "2025-09-26",
+   8.5
+  ],
+  [
+   "2025-10-03",
+   9.125
+  ],
+  [
+   "2025-10-10",
+   8.875
+  ],
+  [
+   "2025-10-17",
+   10.0
+  ],
+  [
+   "2025-10-24",
+   9.5
+  ],
+  [
+   "2025-10-31",
+   9.5
+  ],
+  [
+   "2025-11-07",
+   9.0
+  ],
+  [
+   "2025-11-14",
+   9.6
+  ],
+  [
+   "2025-11-21",
+   9.25
+  ],
+  [
+   "2025-11-28",
+   9.5
+  ],
+  [
+   "2025-12-05",
+   10.0
+  ],
+  [
+   "2025-12-12",
+   9.5
+  ],
+  [
+   "2025-12-19",
+   8.25
+  ],
+  [
+   "2025-12-26",
+   8.5
+  ],
+  [
+   "2026-01-02",
+   8.75
+  ],
+  [
+   "2026-01-09",
+   8.75
+  ],
+  [
+   "2026-01-16",
+   9.5
+  ],
+  [
+   "2026-01-23",
+   10.5
+  ],
+  [
+   "2026-01-30",
+   11.25
+  ],
+  [
+   "2026-02-06",
+   13.25
+  ],
+  [
+   "2026-02-13",
+   11.25
+  ],
+  [
+   "2026-02-20",
+   12.25
+  ],
+  [
+   "2026-02-27",
+   12.75
+  ],
+  [
+   "2026-03-06",
+   13.0
+  ],
+  [
+   "2026-03-13",
+   12.0
+  ],
+  [
+   "2026-03-20",
+   12.75
+  ],
+  [
+   "2026-03-27",
+   13.25
+  ],
+  [
+   "2026-04-03",
+   14.75
+  ],
+  [
+   "2026-04-10",
+   14.25
+  ],
+  [
+   "2026-04-17",
+   14.75
+  ],
+  [
+   "2026-04-24",
+   14.5
+  ],
+  [
+   "2026-05-01",
+   14.25
+  ],
+  [
+   "2026-05-08",
+   14.25
+  ],
+  [
+   "2026-05-15",
+   14.75
+  ],
+  [
+   "2026-05-22",
+   16.0
+  ],
+  [
+   "2026-05-29",
+   17.875
+  ],
+  [
+   "2026-06-05",
+   17.4
+  ],
+  [
+   "2026-06-12",
+   15.625
+  ],
+  [
+   "2026-06-19",
+   16.25
+  ],
+  [
+   "2026-06-26",
+   15.625
+  ],
+  [
+   "2026-07-03",
+   17.0
+  ],
+  [
+   "2026-07-10",
+   19.375
+  ],
+  [
+   "2026-07-17",
+   18.25
+  ],
+  [
+   "2026-07-24",
+   18.5
+  ],
+  [
+   "2026-07-31",
+   17.75
+  ],
+  [
+   "2026-08-07",
+   18.5
+  ],
+  [
+   "2026-08-14",
+   18.0
+  ],
+  [
+   "2026-08-21",
+   17.75
+  ],
+  [
+   "2026-08-28",
+   18.25
+  ],
+  [
+   "2026-09-04",
+   17.0
+  ],
+  [
+   "2026-09-11",
+   17.0
+  ],
+  [
+   "2026-09-18",
+   19.75
+  ],
+  [
+   "2026-09-25",
+   20.25
+  ],
+  [
+   "2026-10-02",
+   19.75
+  ],
+  [
+   "2026-10-09",
+   19.75
+  ],
+  [
+   "2026-10-16",
+   20.5
+  ],
+  [
+   "2026-10-21",
+   25.6
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-11-03",
+   "doc": "OPS",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Ghana operations continue to perform well as a result of the steady supply of material and achieved an operating profit for Q1 of £839,000 (Q1, 30 September 2020: £280,000).",
+   "file": "20211103_GDP_Quarterly-Update-to-30-September-2021.md"
+  },
+  {
+   "d": "2021-12-22",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Goldplat's two precious metals processing facilities, in South Africa and Ghana, have had a productive year to 30 June 2021 achieving very creditable trading results, whilst the planned simplification of the group structure, to which I referred last year, has now largely been completed.",
+   "file": "20211222_GDP_Audited-Results-for-the-year-ended-30-June-2021.md"
+  },
+  {
+   "d": "2021-12-23",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Goldplat's two precious metals processing facilities, in South Africa and Ghana, have had a productive year to 30 June 2021 achieving very creditable trading results, whilst the planned simplification of the group structure, to which I referred last year, has now largely been completed.",
+   "file": "20211223_GDP_Replacement-RNS-for-Audited-Results-30-June-2021.md"
+  },
+  {
+   "d": "2022-02-10",
+   "doc": "OPS",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The combined operating profit for the 6 months ending 31 December 2021 increased by 27%, to £3,759,000 (6 months ended 31 December 2020, £2,957,000) as a result of the strong Q2 performance.",
+   "file": "20220210_GDP_Q2-and-half-year-results-ended-31-December-2021.md"
+  },
+  {
+   "d": "2022-03-18",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Whilst the Group's trading expectation for the remainder of the year is currently unchanged, it is worth noting that the impact of the Russian invasion of Ukraine is posing a significant challenge to the global supply chain industry.",
+   "file": "20220318_GDP_Interim-results-six-months-ended-31-December-2021.md"
+  },
+  {
+   "d": "2022-05-05",
+   "doc": "OPS",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The combined operating profit for the operating entities for 9 months ending 31 March 2022 increased by 43% to £6,045,000 (Q3, 31 March 2021, £4,220,000).",
+   "file": "20220505_GDP_3rd-quarter-operating-results-update-31-March-2022.md"
+  },
+  {
+   "d": "2022-08-17",
+   "doc": "OPS",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The combined operating profit for the operating entities for 12 months ended 30 June 2022 increased by 51% to £7,996,000 (12 months ended 30 June 2021 - £5,300,000).",
+   "file": "20220817_GDP_4th-quarter-operating-results-update.md"
+  },
+  {
+   "d": "2022-11-08",
+   "doc": "OPS",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Although Goldplat processes an assortment of material throughout the Group from different clients and on different contracts making use of a wide range of plant and equipment, the Group has been delivering profitable albeit fluctuating operations returns, for the last 11 quarters, which is in line with management's focus on ensuring sustainable cashflow and profitability.",
+   "file": "20221108_GDP_1st-Quarter-Results.md"
+  },
+  {
+   "d": "2023-02-20",
+   "doc": "OPS",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -2,
+   "q": "Whilst we cannot predict the level of electricity supply for the rest of the year, should the electricity cuts in South Africa continue at the current level, although we still expect to generate operating profits over Q3 and Q4, we believe it is unlikely that  we will be able to meet market expectations for the current financial year.",
+   "file": "20230220_GDP_2nd-Quarter-operating-results-update.md"
+  },
+  {
+   "d": "2023-02-20",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "We look forward to continuing and building on the successes of the past few years and increasingly realising and growing the intrinsic value of Goldplat.",
+   "file": "20230220_GDP_Audited-Results-for-the-year-ended-30-June-2022.md"
+  },
+  {
+   "d": "2023-03-16",
+   "doc": "OPS",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 0,
+   "q": "Nonetheless, the Company still expects to meet current market expectations for the current financial year and we will keep the market updated on the situation and impact.",
+   "file": "20230316_GDP_Update-on-Electricity.md"
+  },
+  {
+   "d": "2023-03-31",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Even after considering the impacts mentioned above, a net profit from continued operations attributable to owners of the company was maintained at £1,742,000 (H1 2021: £2,071,000);",
+   "file": "20230331_GDP_Interim-results-for-period-ended-31-December-2022.md"
+  },
+  {
+   "d": "2023-05-05",
+   "doc": "OPS",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Despite the reduced operating performance in Q3, the Company still expects to meet current market expectations for the current financial year.",
+   "file": "20230505_GDP_3rd-Quarter-Operating-Results-update-31-March-2023.md"
+  },
+  {
+   "d": "2023-08-15",
+   "doc": "OPS",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Despite the reduced operating performance in Q4, the operating entities delivered a strong combined operating profit performance for the year of £6,028,000 (FY 2022 - £9,070,000) and the Company expects net profit before tax to exceed market expectations for the 2023 financial year.",
+   "file": "20230815_GDP_4th-Quarter-Operating-Results.md"
+  },
+  {
+   "d": "2023-11-10",
+   "doc": "OPS",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Operations in both South Africa and Ghana were positive in Q1, achieving combined operating profit for the quarter of £1,865,000 (excluding listing and head office costs, interest and foreign exchange movements), compared to the combined operating profit of £1,942,000 for Q1 2022.",
+   "file": "20231110_GDP_1st-Quarter-Results.md"
+  },
+  {
+   "d": "2023-12-18",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Looking forward, we expect inventory, trade and other payables and trade and other receivables to reduce as we start exporting in the first quarter of the new financial year in Ghana and realizing profits on these sales.",
+   "file": "20231218_GDP_Audited-Results-for-the-Year-Ended-30-June-2023.md"
+  },
+  {
+   "d": "2024-02-07",
+   "doc": "OPS",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Even with the losses in South Africa, the combined operating profit for both operations for Q2 was GBP1,505,000 (GBP1,382,000 Q2 2023) and for half year (\"H1\") was GBP3,368,000 (excluding listing and head office costs, interest and foreign exchange movements), compared to the combined operating profit of GBP2,813,000 for H1 2023.",
+   "file": "20240207_GDP_2nd-Quarter-Operating-Results.md"
+  },
+  {
+   "d": "2024-03-25",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Strong operating profit for H1 2023 of £2,967,000 (H1 2022: £2,813,000), which is particularly gratifying considering the circumstances noted below;",
+   "file": "20240325_GDP_Interim-results-for-six-months-ended-31-Dec-2023.md"
+  },
+  {
+   "d": "2024-05-13",
+   "doc": "OPS",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The combined operating profit for the operating entities for 9 months ended 31 March 2024 increased by 4% to £5,030,000 compared with the previous period (9 months ended 2023 - £4,840,000).",
+   "file": "20240513_GDP_3rd-Quarter-Operating-Results-update.md"
+  },
+  {
+   "d": "2024-08-27",
+   "doc": "OPS",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The two recovery operations achieved a combined operating profit for the quarter of £4,360,000 (excluding listing and head office costs and foreign exchange losses) which represents a 267% increase against Q4 in the previous period (Q4 2023 - £1,188,000).",
+   "file": "20240827_GDP_4th-Quarter-Operating-Results-Update.md"
+  },
+  {
+   "d": "2024-11-12",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "The Ghanaian operation is however going through a business model change with the requirement to beneficiate all concentrates to doré gold bars in country which is placing increased demands on working capital.",
+   "file": "20241112_GDP_Q1-Operating-Results-for-period-ended-30-Sept-2024.md"
+  },
+  {
+   "d": "2024-12-05",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Goldplat plc, (AIM:GDP) the AIM listed Mining Services Group, with international gold recovery operations located in South Africa and Ghana, servicing the African and South American Mining Industry, is pleased to announce that its annual results for the year end 30 June 2024 are expected to exceed market expectations.",
+   "file": "20241205_GDP_2024-Annual-Results-Update.md"
+  },
+  {
+   "d": "2024-12-20",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Looking to the current financial year, I believe Goldplat has a good pathway to follow up with further positive operational performances, and we look forward to reporting on our progress throughout 2025.",
+   "file": "20241220_GDP_Audited-Results-for-the-year-ended-30-June-2024.md"
+  },
+  {
+   "d": "2025-02-12",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "We foresee that the new government will implement new measures and it will be important for us to constantly engage and build relationships with them to ensure we understand the changes and potential impact on our business.",
+   "file": "20250212_GDP_Q2-Operating-Results-for-period-ended-31-Dec-2024.md"
+  },
+  {
+   "d": "2025-02-12",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "We foresee that the new government will implement new measures and it will be important for us to constantly engage and build relationships with them to ensure we understand the changes and potential impact on our business.",
+   "file": "20250212_GDP_Correction-Q2-Operating-Results.md"
+  },
+  {
+   "d": "2025-03-24",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Net profit from continued operations attributable to owners of the company grew 20.2% to £1,407,000 (H1 2023: £1,171,000);",
+   "file": "20250324_GDP_Interim-results-for-the-6-months-ended-31-Dec-2024.md"
+  },
+  {
+   "d": "2025-05-27",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "They have started implementing new measures, some of which require the sale of a percentage of dore in country and it will be important for us to constantly engage and build relationships with the Gold Board to ensure we can prepare for the changes and potential impact on our business.",
+   "file": "20250527_GDP_Q3-Operating-Results---period-ended-31-March-2025.md"
+  },
+  {
+   "d": "2025-08-04",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -3,
+   "q": "Despite a good operating quarter, the Board expects that the Group's results for FY2025 will be materially below current market expectations, with the adjusted profit before tax to be in the region of £2,600,000 (FY2024 £5,993,000) driven principally by changes in the business model in Ghana during the year and significant foreign exchange losses towards the end of the financial year.",
+   "file": "20250804_GDP_Q4-Operating-Results,-Trading-Update-and-Dividend.md"
+  },
+  {
+   "d": "2025-12-15",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 1,
+   "q": "Looking forward to the next financial year, I believe Goldplat can build on current operational performances, through increase of supply and progressing processing of the TSF and we look forward to reporting on our progress throughout 2026.",
+   "file": "20251215_GDP_Audited-Results-for-the-year-ended-30-June-2025.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2026-02-02",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 3,
+   "q": "As a result of higher gold prices, increased volumes and operational agility and improvements, the Board expects that the Group's results for FY2026 will materially exceed prevailing market expectations.",
+   "file": "20260202_GDP_Trading-Update.md"
+  },
+  {
+   "d": "2026-02-10",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The two recovery operations achieved a strong combined operating profit for the quarter of £2,696,000 (FY Q2 2025 - £1,169,000) and for half year (\"H1\") was £4,791,000 (FY H1 2025 - £2,498,000) (excluding listing and head office costs, finance cost and foreign exchange gains/losses).",
+   "file": "20260210_GDP_Q2-Operating-Update-for-period-ended-31-Dec-2025.md"
+  },
+  {
+   "d": "2026-03-18",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Net profit attributable to owners of the company grew 133% to £3,276,000 (H1 2024: £1,407,000);",
+   "file": "20260318_GDP_Interim-results-for-the-6-months-ended-31-Dec-2025.md"
+  },
+  {
+   "d": "2026-07-01",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 2,
+   "q": "As a result of the continued high gold prices and strong volumes, and subject to a number of year-end adjustments, the Board expects that the Group's results for FY2026 will materially exceed prevailing market expectations.",
+   "file": "20260701_GDP_Trading-Update.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-07-01",
+  "doc": "YE-TU",
+  "file": "20260701_GDP_Trading-Update.md",
+  "vs": "YE-TU Aug-25 · Dec-24 results update · Feb-26 TU · Interims Mar-26",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Year-end PBT figure: Aug-25 “the adjusted profit before tax to be in the region of £2,600,000” → Jul-26 “materially exceed prevailing market expectations”, no profit figure",
+    "span": "PBT number given at Dec-24 (“in the region of GBP6m”) and Aug-25 → first year-end update without one"
+   },
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "Feb-26 “the Board expects that the Group's results for FY2026 will materially exceed prevailing market expectations” unqualified → Jul-26 adds “subject to a number of year-end adjustments”",
+    "span": "Feb-26 → Jul-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Skipped update",
+    "text": "Q3 operating results update (quarter to 31 March) not issued: folder goes Interims 18 Mar-26 → TSF update 9 Apr-26 → this TU, no Q3 operating figures",
+    "span": "Q3 update issued May-22, May-23, May-24, May-25 → first gap in 4 years"
+   }
+  ]
+ }
+}

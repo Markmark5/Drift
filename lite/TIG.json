@@ -1,0 +1,1422 @@
+{
+ "ticker": "TIG",
+ "v": "2026-10-21.c312",
+ "ccy": "GBX",
+ "src": "Yahoo TIG.L weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-22",
+   135.0
+  ],
+  [
+   "2021-10-29",
+   135.0
+  ],
+  [
+   "2021-11-05",
+   145.0
+  ],
+  [
+   "2021-11-12",
+   150.0
+  ],
+  [
+   "2021-11-19",
+   150.0
+  ],
+  [
+   "2021-11-26",
+   144.0
+  ],
+  [
+   "2021-12-03",
+   143.0
+  ],
+  [
+   "2021-12-10",
+   147.0
+  ],
+  [
+   "2021-12-17",
+   146.5
+  ],
+  [
+   "2021-12-24",
+   143.5
+  ],
+  [
+   "2021-12-31",
+   140.0
+  ],
+  [
+   "2022-01-07",
+   142.0
+  ],
+  [
+   "2022-01-14",
+   129.5
+  ],
+  [
+   "2022-01-21",
+   131.0
+  ],
+  [
+   "2022-01-28",
+   127.0
+  ],
+  [
+   "2022-02-04",
+   124.5
+  ],
+  [
+   "2022-02-11",
+   130.0
+  ],
+  [
+   "2022-02-18",
+   134.0
+  ],
+  [
+   "2022-02-25",
+   133.5
+  ],
+  [
+   "2022-03-04",
+   123.0
+  ],
+  [
+   "2022-03-11",
+   125.0
+  ],
+  [
+   "2022-03-18",
+   129.5
+  ],
+  [
+   "2022-03-25",
+   124.0
+  ],
+  [
+   "2022-04-01",
+   123.0
+  ],
+  [
+   "2022-04-08",
+   121.5
+  ],
+  [
+   "2022-04-15",
+   119.0
+  ],
+  [
+   "2022-04-22",
+   118.0
+  ],
+  [
+   "2022-04-29",
+   134.0
+  ],
+  [
+   "2022-05-06",
+   132.0
+  ],
+  [
+   "2022-05-13",
+   127.0
+  ],
+  [
+   "2022-05-20",
+   131.0
+  ],
+  [
+   "2022-05-27",
+   128.5
+  ],
+  [
+   "2022-06-03",
+   123.5
+  ],
+  [
+   "2022-06-10",
+   119.5
+  ],
+  [
+   "2022-06-17",
+   114.5
+  ],
+  [
+   "2022-06-24",
+   115.5
+  ],
+  [
+   "2022-07-01",
+   115.5
+  ],
+  [
+   "2022-07-08",
+   116.0
+  ],
+  [
+   "2022-07-15",
+   113.5
+  ],
+  [
+   "2022-07-22",
+   131.0
+  ],
+  [
+   "2022-07-29",
+   123.5
+  ],
+  [
+   "2022-08-05",
+   119.5
+  ],
+  [
+   "2022-08-12",
+   126.0
+  ],
+  [
+   "2022-08-19",
+   119.5
+  ],
+  [
+   "2022-08-26",
+   120.5
+  ],
+  [
+   "2022-09-02",
+   116.5
+  ],
+  [
+   "2022-09-09",
+   116.0
+  ],
+  [
+   "2022-09-16",
+   120.0
+  ],
+  [
+   "2022-09-23",
+   115.0
+  ],
+  [
+   "2022-09-30",
+   114.5
+  ],
+  [
+   "2022-10-07",
+   122.0
+  ],
+  [
+   "2022-10-14",
+   120.0
+  ],
+  [
+   "2022-10-21",
+   128.0
+  ],
+  [
+   "2022-10-28",
+   127.5
+  ],
+  [
+   "2022-11-04",
+   128.5
+  ],
+  [
+   "2022-11-11",
+   129.5
+  ],
+  [
+   "2022-11-18",
+   127.0
+  ],
+  [
+   "2022-11-25",
+   130.0
+  ],
+  [
+   "2022-12-02",
+   131.0
+  ],
+  [
+   "2022-12-09",
+   131.0
+  ],
+  [
+   "2022-12-16",
+   136.0
+  ],
+  [
+   "2022-12-23",
+   148.5
+  ],
+  [
+   "2022-12-30",
+   156.0
+  ],
+  [
+   "2023-01-06",
+   155.0
+  ],
+  [
+   "2023-01-13",
+   153.5
+  ],
+  [
+   "2023-01-20",
+   144.0
+  ],
+  [
+   "2023-01-27",
+   143.0
+  ],
+  [
+   "2023-02-03",
+   143.5
+  ],
+  [
+   "2023-02-10",
+   131.5
+  ],
+  [
+   "2023-02-17",
+   132.0
+  ],
+  [
+   "2023-02-24",
+   139.5
+  ],
+  [
+   "2023-03-03",
+   143.5
+  ],
+  [
+   "2023-03-10",
+   135.5
+  ],
+  [
+   "2023-03-17",
+   130.5
+  ],
+  [
+   "2023-03-24",
+   135.0
+  ],
+  [
+   "2023-03-31",
+   129.5
+  ],
+  [
+   "2023-04-07",
+   123.6
+  ],
+  [
+   "2023-04-14",
+   123.0
+  ],
+  [
+   "2023-04-21",
+   122.6
+  ],
+  [
+   "2023-04-28",
+   118.6
+  ],
+  [
+   "2023-05-05",
+   116.2
+  ],
+  [
+   "2023-05-12",
+   114.4
+  ],
+  [
+   "2023-05-19",
+   115.4
+  ],
+  [
+   "2023-05-26",
+   112.2
+  ],
+  [
+   "2023-06-02",
+   113.6
+  ],
+  [
+   "2023-06-09",
+   109.0
+  ],
+  [
+   "2023-06-16",
+   115.4
+  ],
+  [
+   "2023-06-23",
+   111.2
+  ],
+  [
+   "2023-06-30",
+   115.8
+  ],
+  [
+   "2023-07-07",
+   117.4
+  ],
+  [
+   "2023-07-14",
+   125.8
+  ],
+  [
+   "2023-07-21",
+   127.4
+  ],
+  [
+   "2023-07-28",
+   128.0
+  ],
+  [
+   "2023-08-04",
+   130.0
+  ],
+  [
+   "2023-08-11",
+   131.6
+  ],
+  [
+   "2023-08-18",
+   127.4
+  ],
+  [
+   "2023-08-25",
+   124.6
+  ],
+  [
+   "2023-09-01",
+   123.2
+  ],
+  [
+   "2023-09-08",
+   125.8
+  ],
+  [
+   "2023-09-15",
+   132.4
+  ],
+  [
+   "2023-09-22",
+   132.0
+  ],
+  [
+   "2023-09-29",
+   132.6
+  ],
+  [
+   "2023-10-06",
+   120.0
+  ],
+  [
+   "2023-10-13",
+   122.0
+  ],
+  [
+   "2023-10-20",
+   123.6
+  ],
+  [
+   "2023-10-27",
+   123.0
+  ],
+  [
+   "2023-11-03",
+   125.0
+  ],
+  [
+   "2023-11-10",
+   124.2
+  ],
+  [
+   "2023-11-17",
+   116.6
+  ],
+  [
+   "2023-11-24",
+   118.0
+  ],
+  [
+   "2023-12-01",
+   122.0
+  ],
+  [
+   "2023-12-08",
+   124.6
+  ],
+  [
+   "2023-12-15",
+   121.0
+  ],
+  [
+   "2023-12-22",
+   125.0
+  ],
+  [
+   "2023-12-29",
+   125.0
+  ],
+  [
+   "2024-01-05",
+   115.6
+  ],
+  [
+   "2024-01-12",
+   124.2
+  ],
+  [
+   "2024-01-19",
+   126.2
+  ],
+  [
+   "2024-01-26",
+   130.0
+  ],
+  [
+   "2024-02-02",
+   136.4
+  ],
+  [
+   "2024-02-09",
+   136.2
+  ],
+  [
+   "2024-02-16",
+   137.4
+  ],
+  [
+   "2024-02-23",
+   137.2
+  ],
+  [
+   "2024-03-01",
+   134.4
+  ],
+  [
+   "2024-03-08",
+   135.8
+  ],
+  [
+   "2024-03-15",
+   136.6
+  ],
+  [
+   "2024-03-22",
+   141.8
+  ],
+  [
+   "2024-03-29",
+   144.6
+  ],
+  [
+   "2024-04-05",
+   140.4
+  ],
+  [
+   "2024-04-12",
+   141.6
+  ],
+  [
+   "2024-04-19",
+   138.4
+  ],
+  [
+   "2024-04-26",
+   135.8
+  ],
+  [
+   "2024-05-03",
+   139.0
+  ],
+  [
+   "2024-05-10",
+   153.2
+  ],
+  [
+   "2024-05-17",
+   172.0
+  ],
+  [
+   "2024-05-24",
+   191.0
+  ],
+  [
+   "2024-05-31",
+   191.2
+  ],
+  [
+   "2024-06-07",
+   198.2
+  ],
+  [
+   "2024-06-14",
+   190.0
+  ],
+  [
+   "2024-06-21",
+   191.2
+  ],
+  [
+   "2024-06-28",
+   179.8
+  ],
+  [
+   "2024-07-05",
+   176.0
+  ],
+  [
+   "2024-07-12",
+   183.2
+  ],
+  [
+   "2024-07-19",
+   185.2
+  ],
+  [
+   "2024-07-26",
+   186.2
+  ],
+  [
+   "2024-08-02",
+   199.6
+  ],
+  [
+   "2024-08-09",
+   190.0
+  ],
+  [
+   "2024-08-16",
+   145.2
+  ],
+  [
+   "2024-08-23",
+   141.0
+  ],
+  [
+   "2024-08-30",
+   133.2
+  ],
+  [
+   "2024-09-06",
+   131.0
+  ],
+  [
+   "2024-09-13",
+   137.6
+  ],
+  [
+   "2024-09-20",
+   131.0
+  ],
+  [
+   "2024-09-27",
+   132.8
+  ],
+  [
+   "2024-10-04",
+   136.4
+  ],
+  [
+   "2024-10-11",
+   131.0
+  ],
+  [
+   "2024-10-18",
+   129.4
+  ],
+  [
+   "2024-10-25",
+   127.2
+  ],
+  [
+   "2024-11-01",
+   130.6
+  ],
+  [
+   "2024-11-08",
+   119.2
+  ],
+  [
+   "2024-11-15",
+   83.6
+  ],
+  [
+   "2024-11-22",
+   82.0
+  ],
+  [
+   "2024-11-29",
+   81.0
+  ],
+  [
+   "2024-12-06",
+   86.2
+  ],
+  [
+   "2024-12-13",
+   92.9
+  ],
+  [
+   "2024-12-20",
+   91.0
+  ],
+  [
+   "2024-12-27",
+   91.9
+  ],
+  [
+   "2025-01-03",
+   90.2
+  ],
+  [
+   "2025-01-10",
+   103.4
+  ],
+  [
+   "2025-01-17",
+   105.6
+  ],
+  [
+   "2025-01-24",
+   110.0
+  ],
+  [
+   "2025-01-31",
+   108.0
+  ],
+  [
+   "2025-02-07",
+   100.2
+  ],
+  [
+   "2025-02-14",
+   98.9
+  ],
+  [
+   "2025-02-21",
+   94.0
+  ],
+  [
+   "2025-02-28",
+   98.9
+  ],
+  [
+   "2025-03-07",
+   58.4
+  ],
+  [
+   "2025-03-14",
+   57.6
+  ],
+  [
+   "2025-03-21",
+   67.6
+  ],
+  [
+   "2025-03-28",
+   61.7
+  ],
+  [
+   "2025-04-04",
+   53.4
+  ],
+  [
+   "2025-04-11",
+   53.6
+  ],
+  [
+   "2025-04-18",
+   53.0
+  ],
+  [
+   "2025-04-25",
+   54.7
+  ],
+  [
+   "2025-05-02",
+   62.4
+  ],
+  [
+   "2025-05-09",
+   64.0
+  ],
+  [
+   "2025-05-16",
+   68.0
+  ],
+  [
+   "2025-05-23",
+   67.7
+  ],
+  [
+   "2025-05-30",
+   70.2
+  ],
+  [
+   "2025-06-06",
+   64.0
+  ],
+  [
+   "2025-06-13",
+   61.8
+  ],
+  [
+   "2025-06-20",
+   62.4
+  ],
+  [
+   "2025-06-27",
+   63.1
+  ],
+  [
+   "2025-07-04",
+   67.7
+  ],
+  [
+   "2025-07-11",
+   66.1
+  ],
+  [
+   "2025-07-18",
+   66.5
+  ],
+  [
+   "2025-07-25",
+   62.3
+  ],
+  [
+   "2025-08-01",
+   61.5
+  ],
+  [
+   "2025-08-08",
+   62.5
+  ],
+  [
+   "2025-08-15",
+   58.3
+  ],
+  [
+   "2025-08-22",
+   56.8
+  ],
+  [
+   "2025-08-29",
+   61.7
+  ],
+  [
+   "2025-09-05",
+   57.5
+  ],
+  [
+   "2025-09-12",
+   61.8
+  ],
+  [
+   "2025-09-19",
+   63.1
+  ],
+  [
+   "2025-09-26",
+   63.1
+  ],
+  [
+   "2025-10-03",
+   62.4
+  ],
+  [
+   "2025-10-10",
+   62.0
+  ],
+  [
+   "2025-10-17",
+   50.0
+  ],
+  [
+   "2025-10-24",
+   47.45
+  ],
+  [
+   "2025-10-31",
+   45.5
+  ],
+  [
+   "2025-11-07",
+   45.0
+  ],
+  [
+   "2025-11-14",
+   47.6
+  ],
+  [
+   "2025-11-21",
+   47.5
+  ],
+  [
+   "2025-11-28",
+   47.0
+  ],
+  [
+   "2025-12-05",
+   44.05
+  ],
+  [
+   "2025-12-12",
+   48.0
+  ],
+  [
+   "2025-12-19",
+   48.6
+  ],
+  [
+   "2025-12-26",
+   47.25
+  ],
+  [
+   "2026-01-02",
+   50.0
+  ],
+  [
+   "2026-01-09",
+   48.4
+  ],
+  [
+   "2026-01-16",
+   48.5
+  ],
+  [
+   "2026-01-23",
+   48.5
+  ],
+  [
+   "2026-01-30",
+   49.0
+  ],
+  [
+   "2026-02-06",
+   49.6
+  ],
+  [
+   "2026-02-13",
+   50.3
+  ],
+  [
+   "2026-02-20",
+   49.35
+  ],
+  [
+   "2026-02-27",
+   47.5
+  ],
+  [
+   "2026-03-06",
+   43.5
+  ],
+  [
+   "2026-03-13",
+   39.5
+  ],
+  [
+   "2026-03-20",
+   36.9
+  ],
+  [
+   "2026-03-27",
+   37.0
+  ],
+  [
+   "2026-04-03",
+   36.5
+  ],
+  [
+   "2026-04-10",
+   36.0
+  ],
+  [
+   "2026-04-17",
+   35.5
+  ],
+  [
+   "2026-04-24",
+   33.0
+  ],
+  [
+   "2026-05-01",
+   33.0
+  ],
+  [
+   "2026-05-08",
+   37.8
+  ],
+  [
+   "2026-05-15",
+   39.0
+  ],
+  [
+   "2026-05-22",
+   37.0
+  ],
+  [
+   "2026-05-29",
+   38.0
+  ],
+  [
+   "2026-06-05",
+   38.5
+  ],
+  [
+   "2026-06-12",
+   39.5
+  ],
+  [
+   "2026-06-19",
+   40.0
+  ],
+  [
+   "2026-06-26",
+   44.5
+  ],
+  [
+   "2026-07-03",
+   47.1
+  ],
+  [
+   "2026-07-10",
+   47.0
+  ],
+  [
+   "2026-07-17",
+   45.0
+  ],
+  [
+   "2026-07-24",
+   42.0
+  ],
+  [
+   "2026-07-31",
+   42.0
+  ],
+  [
+   "2026-08-07",
+   41.0
+  ],
+  [
+   "2026-08-14",
+   42.7
+  ],
+  [
+   "2026-08-21",
+   45.0
+  ],
+  [
+   "2026-08-28",
+   44.0
+  ],
+  [
+   "2026-09-04",
+   42.0
+  ],
+  [
+   "2026-09-11",
+   42.0
+  ],
+  [
+   "2026-09-18",
+   41.0
+  ],
+  [
+   "2026-09-25",
+   41.5
+  ],
+  [
+   "2026-10-02",
+   39.0
+  ],
+  [
+   "2026-10-09",
+   37.5
+  ],
+  [
+   "2026-10-16",
+   37.4
+  ],
+  [
+   "2026-10-21",
+   35.8
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-11-22",
+   "doc": "Q3 R",
+   "fy": "FY21",
+   "g": "flat",
+   "s": 1,
+   "q": "By virtue of our significant investment in human resources, restructuring and market-leading products and promotions, we expect full year revenue and profits to be at least at the upper end of market expectations.",
+   "file": "20211122_TIG_9-MONTHS-ENDED-30-SEPTEMBER-2021-FINANCIAL-RESULTS.md"
+  },
+  {
+   "d": "2022-01-17",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "RAISE",
+   "s": 2,
+   "q": "The Company therefore expects to report revenue of around USD 410m and adjusted EBITDA of around USD 45m for the financial year ended 31 December 2021, c.5% ahead of consensus of USD 383m and USD 42.9m respectively.",
+   "file": "20220117_TIG_Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2022-02-14",
+   "doc": "Q1 TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Given the early stage of the current financial year the Directors have yet to fully ascertain the expected impact on full year performance, which should however be at least at or above the high end of market expectations*.",
+   "file": "20220214_TIG_Trading-Update,-Acquisitions,-Presentations.md"
+  },
+  {
+   "d": "2022-02-28",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 1,
+   "q": "Given the early stage of the current financial year and given the uncertainty implied by the geopolitical situation, the Directors have yet to fully ascertain the expected impact on full year performance; they however reconfirm their opinion that it should be at least at or above the high end of the latest range of analyst expectations",
+   "file": "20220228_TIG_Unaudited-Preliminary-Results-Full-Year-2021.md"
+  },
+  {
+   "d": "2022-04-04",
+   "doc": "Q1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 1,
+   "q": "The Directors are also pleased to confirm that the Company continues to trade at least at or above the high-end of current analyst expectations.",
+   "file": "20220404_TIG_Annual-Report-2021-and-Notice-of-Q1-Update-and-AGM.md"
+  },
+  {
+   "d": "2022-04-25",
+   "doc": "Q1 TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 3,
+   "q": "While the Directors are cognisant of the current global macro-economic environment, they now have confidence that the Group will materially exceed the most recent market expectations for the year5.",
+   "file": "20220425_TIG_Q1-2022-Update,-Outlook-&-Notice-of-Results.md"
+  },
+  {
+   "d": "2022-05-23",
+   "doc": "Q1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "While the Directors are cognisant of the current global macro-economic environment, they are confident that the Group will comfortably trade in line with the recently upgraded market expectations for the year.",
+   "file": "20220523_TIG_THREE-MONTHS-ENDED-31-MARCH-2022-FINANCIAL-RESULTS.md"
+  },
+  {
+   "d": "2022-07-18",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 1,
+   "q": "While the Directors remain vigilant concerning the current global macro-economic environment, the Board has confidence that the Group will meet at least the upper end of current market expectations for the FY22 financial year5.",
+   "file": "20220718_TIG_H1-2022-Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2022-08-30",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Whilst the Directors remain cognisant of the current global macro-economic environment, they are confident that the Group will comfortably trade towards the high end of the recently upgraded market expectations for the year.",
+   "file": "20220830_TIG_SIX-MONTHS-ENDED-30-JUNE-2022-FINANCIAL-RESULTS.md"
+  },
+  {
+   "d": "2022-10-17",
+   "doc": "Q3 TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 3,
+   "q": "While the Directors remain cognisant of the current global macro-economic environment, they now have confidence that the Group will materially exceed the current market expectations for the full year4.",
+   "file": "20221017_TIG_Q3-Trading-Update,-Refinancing-&-Notice-of-Results.md"
+  },
+  {
+   "d": "2022-11-22",
+   "doc": "Q3 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Directors remain confident in the Company's outlook, with the business trading comfortably inline with the recently upgraded market expectations",
+   "file": "20221122_TIG_NINE-MONTHS-ENDED-30-SEP-2022-FINANCIAL-RESULTS.md"
+  },
+  {
+   "d": "2023-01-30",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 1,
+   "q": "These represent increases of c.77%, c.33% and c.84% respectively versus the prior year, ahead of the recently upgraded market consensus2 for 2022.",
+   "file": "20230130_TIG_Trading-Update,-Board-Changes,-Notice-of-Results.md"
+  },
+  {
+   "d": "2023-02-27",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Whilst the Directors continue to monitor the global macro-economic environment closely, they are confident in the Group's outlook.",
+   "file": "20230227_TIG_Unaudited-Preliminary-Accounts-for-Full-Year-2022.md"
+  },
+  {
+   "d": "2023-04-24",
+   "doc": "Q1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Due to an expanding product range, the benefits of operating leverage, and a focus on efficient execution, the Directors remain confident that the Group will continue to trade at least in line with current market expectations.",
+   "file": "20230424_TIG_Trading-Update.md"
+  },
+  {
+   "d": "2023-04-24",
+   "doc": "Q1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Due to an expanding product range, the benefits of operating leverage, and a focus on efficient execution, the Directors remain confident that the Group will continue to trade at least in line with current market expectations.",
+   "file": "20230424_TIG_Trading-Update_2.md"
+  },
+  {
+   "d": "2023-05-15",
+   "doc": "Q1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Therefore, the Directors expect that the Group will trade at least in line with current market expectations for the full year.",
+   "file": "20230515_TIG_THREE-MONTHS-ENDED-31-MARCH-2023-FINANCIAL-RESULTS.md"
+  },
+  {
+   "d": "2023-07-24",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Considering the robust performance, the Directors remain confident that the Group continues to trade at least in line with current market expectations for the full year.",
+   "file": "20230724_TIG_H1-Trading-update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2023-08-14",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Therefore, the Directors expect that the Group will trade at least in line with current market expectations for the full year.",
+   "file": "20230814_TIG_SIX-MONTHS-ENDED-30-JUNE-2023-FINANCIAL-RESULTS.md"
+  },
+  {
+   "d": "2023-11-13",
+   "doc": "Q3 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group looks ahead with confidence to Q4, which is typically its strongest quarter, and the Directors expect that the Group will continue to deliver results at least in line with current market expectations for the full year.",
+   "file": "20231113_TIG_Nine-months-unaudited-results-to-30-September-2023.md"
+  },
+  {
+   "d": "2024-01-08",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "This update will highlight a record performance in Q4 2023 and FY 2023, demonstrating that the Group continues to trade at least in line with current market expectations.",
+   "file": "20240108_TIG_Announcement-of-Key-Financial-Reporting-Dates.md"
+  },
+  {
+   "d": "2024-01-29",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 1,
+   "q": "These represent increases of c.15%, c.7% and c.12% respectively versus the prior year, ahead of the recently upgraded market consensus2 for 2023.",
+   "file": "20240129_TIG_FY-2023-Trading-Update.md"
+  },
+  {
+   "d": "2024-01-29",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "These represent increases of c.15%, c.7% and c.12% respectively versus the prior year, ahead of the recently upgraded market consensus2 for 2023.",
+   "file": "20240129_TIG_FY-2023-Trading-Update_2.md"
+  },
+  {
+   "d": "2024-05-13",
+   "doc": "Q1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Given these strong foundations, the Directors are confident that the Group will meet market expectations for the full year.",
+   "file": "20240513_TIG_Unaudited-Q1-Financial-Results-to-31-March-2024.md"
+  },
+  {
+   "d": "2024-08-12",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Given these strong foundations, the Directors are confident that the Group will meet market expectations for the full year.",
+   "file": "20240812_TIG_Unaudited-Interim-Results-to-30-June-2024.md"
+  },
+  {
+   "d": "2024-11-11",
+   "doc": "Q3 R",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -3,
+   "q": "The Group remains on track to produce record profits in 2024 and 2025, albeit at more moderate growth rates than originally anticipated.",
+   "file": "20241111_TIG_Nine-months-unaudited-results-to-30-September-2024.md"
+  },
+  {
+   "d": "2025-02-04",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -1,
+   "q": "For the financial year 2024, the Company expects to report gross revenue of c.USD 803 million (2023: USD 837 million), net revenue (gross profit) of c.USD 188 million (2023: USD 191 million) and adjusted EBITDA1 of c.USD 92 million (2023: USD 96 million).",
+   "file": "20250204_TIG_FY-2024-Trading-Update.md",
+   "gnote": "discounted: offer period"
+  },
+  {
+   "d": "2025-03-04",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -3,
+   "q": "That adds up to a range of between $60 million and $68 million for Group Adjusted EBITDA in 2025 before a return to double-digit earnings growth from 2026 onwards.",
+   "file": "20250304_TIG_2.8-Response,-Search-Market-Update,-Results-Notice.md",
+   "gnote": "discounted: offer period"
+  },
+  {
+   "d": "2025-03-24",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "The Group remains confident in its ability to meet recently revised market expectations.",
+   "file": "20250324_TIG_Financial-Year-2024-Trading-Update.md"
+  },
+  {
+   "d": "2025-09-01",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -2,
+   "q": "Most of the financial benefits of these initiatives will crystallise during the course of H2 2025.",
+   "file": "20250901_TIG_Unaudited-Financial-Results.md",
+   "gnote": "withdrawn"
+  },
+  {
+   "d": "2025-11-11",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -3,
+   "q": "With the impact of recent changes in the Search environment now becoming more quantifiable, the Group has updated its forecasts and now expects to deliver for 2025:",
+   "file": "20251111_TIG_Strategic-Review-to-Unlock-Shareholder-Value.md",
+   "gnote": "discounted: strategic review (disposal)"
+  },
+  {
+   "d": "2026-01-20",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Following strong momentum in the fourth quarter and despite continued challenging market conditions, the Group now expects to report gross revenue, net revenue and adjusted EBITDA towards the top end of the range of current analyst forecasts1 for FY25.",
+   "file": "20260120_TIG_FY25-earnings-and-progress-on-Strategic-Review.md"
+  },
+  {
+   "d": "2026-03-16",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board reiterates that the Group continues to trade in line with market expectations in FY26.",
+   "file": "20260316_TIG_Trading-Update-and-progress-on-Strategic-Review.md"
+  },
+  {
+   "d": "2026-04-24",
+   "doc": "Q1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group's trading performance in 2026 to date has been in line with expectations.",
+   "file": "20260424_TIG_Update-on-Strategic-Review.md"
+  },
+  {
+   "d": "2026-06-15",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading in 2026 remains in line with expectations, with Search profitability improving and Domains, Identity & Software (\"DIS\") and Comparison delivering strong growth.",
+   "file": "20260615_TIG_FY25-and-2026-YTD-Trading-Update.md"
+  },
+  {
+   "d": "2026-07-24",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "With the Group's earnings typically weighted towards the second half of the year, this progress underpins the Board's confidence in a stronger second-half performance and a return to year-on-year earnings growth in the second half of 2026.",
+   "file": "20260724_TIG_H1-2026-Trading-Update-&-Notice-of-H1-2026-Report.md",
+   "gnote": "discounted: strategic review (disposal)"
+  },
+  {
+   "d": "2026-09-07",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "Trading since the period end has been in line with the Board's expectations.",
+   "file": "20260907_TIG_Unaudited-Interim-Results.md",
+   "gnote": "discounted: strategic review (disposal)"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-07",
+  "doc": "H1 R",
+  "file": "20260907_TIG_Unaudited-Interim-Results.md",
+  "vs": "H1 R Sep-25 · back to Aug-24 · H1 TU Jul-26",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "FY26 earnings: Mar-26 “The Board reiterates that the Group continues to trade in line with market expectations in FY26.” → now “Trading since the period end has been in line with the Board's expectations.”, with no full-year earnings view (H1 R Aug-24 had “the Group will meet market expectations for the full year”)",
+    "span": "Market anchor Mar-26 → Board's at Sep-26; no FY earnings anchor since Jun-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Anchor softened",
+    "text": "Year-end net debt: Jul-26 “to be in line with market expectations at 31 December 2026” → now “to be broadly in line with market consensus at the year end”",
+    "span": "H1 TU Jul-26 → H1 R Sep-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "“We also strengthened the balance sheet” beside net debt up to USD 117.6 million (31 December 2025: USD 87.6 million), leverage 3.9x (TTM 30 June 2025: 1.7x) and adjusted operating cash conversion of 18% (H1 2025: 109%)",
+    "span": "H1 R Sep-25 → H1 R Sep-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Restated",
+    "text": "H2 2025 adjusted EBITDA “USD 18.0 million” and net debt “USD 117.5 million” in the Jul-26 trading update → “USD 18.1 million” and “USD 117.6 million” in the interim report",
+    "span": "H1 TU Jul-26 → H1 R Sep-26"
+   }
+  ]
+ }
+}
