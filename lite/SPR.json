@@ -1,0 +1,1284 @@
+{
+ "ticker": "SPR",
+ "v": "2026-10-21.5acd",
+ "ccy": "GBX",
+ "src": "AlphaVantage SPR.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   142.5
+  ],
+  [
+   "2021-10-22",
+   145.5
+  ],
+  [
+   "2021-10-29",
+   149.5
+  ],
+  [
+   "2021-11-05",
+   140.5
+  ],
+  [
+   "2021-11-12",
+   147.5
+  ],
+  [
+   "2021-11-19",
+   150.0
+  ],
+  [
+   "2021-11-26",
+   147.5
+  ],
+  [
+   "2021-12-03",
+   146.0
+  ],
+  [
+   "2021-12-10",
+   149.5
+  ],
+  [
+   "2021-12-17",
+   147.5
+  ],
+  [
+   "2021-12-24",
+   147.0
+  ],
+  [
+   "2021-12-31",
+   147.0
+  ],
+  [
+   "2022-01-07",
+   149.5
+  ],
+  [
+   "2022-01-14",
+   148.5
+  ],
+  [
+   "2022-01-21",
+   155.5
+  ],
+  [
+   "2022-01-28",
+   152.5
+  ],
+  [
+   "2022-02-04",
+   153.5
+  ],
+  [
+   "2022-02-11",
+   150.0
+  ],
+  [
+   "2022-02-18",
+   150.0
+  ],
+  [
+   "2022-02-25",
+   142.5
+  ],
+  [
+   "2022-03-04",
+   136.5
+  ],
+  [
+   "2022-03-11",
+   141.5
+  ],
+  [
+   "2022-03-18",
+   146.0
+  ],
+  [
+   "2022-03-25",
+   148.0
+  ],
+  [
+   "2022-04-01",
+   146.0
+  ],
+  [
+   "2022-04-08",
+   150.0
+  ],
+  [
+   "2022-04-14",
+   150.0
+  ],
+  [
+   "2022-04-22",
+   150.0
+  ],
+  [
+   "2022-04-29",
+   144.0
+  ],
+  [
+   "2022-05-06",
+   136.5
+  ],
+  [
+   "2022-05-13",
+   132.5
+  ],
+  [
+   "2022-05-20",
+   132.5
+  ],
+  [
+   "2022-05-27",
+   131.5
+  ],
+  [
+   "2022-06-01",
+   126.5
+  ],
+  [
+   "2022-06-10",
+   123.5
+  ],
+  [
+   "2022-06-17",
+   117.5
+  ],
+  [
+   "2022-06-24",
+   125.0
+  ],
+  [
+   "2022-07-01",
+   131.5
+  ],
+  [
+   "2022-07-08",
+   131.5
+  ],
+  [
+   "2022-07-15",
+   127.5
+  ],
+  [
+   "2022-07-22",
+   126.0
+  ],
+  [
+   "2022-07-29",
+   132.5
+  ],
+  [
+   "2022-08-05",
+   133.0
+  ],
+  [
+   "2022-08-12",
+   133.0
+  ],
+  [
+   "2022-08-19",
+   130.0
+  ],
+  [
+   "2022-08-26",
+   122.5
+  ],
+  [
+   "2022-09-02",
+   121.0
+  ],
+  [
+   "2022-09-09",
+   118.0
+  ],
+  [
+   "2022-09-16",
+   111.0
+  ],
+  [
+   "2022-09-23",
+   107.5
+  ],
+  [
+   "2022-09-30",
+   92.5
+  ],
+  [
+   "2022-10-07",
+   88.0
+  ],
+  [
+   "2022-10-14",
+   87.5
+  ],
+  [
+   "2022-10-21",
+   91.0
+  ],
+  [
+   "2022-10-28",
+   92.5
+  ],
+  [
+   "2022-11-04",
+   92.4
+  ],
+  [
+   "2022-11-11",
+   91.0
+  ],
+  [
+   "2022-11-18",
+   91.0
+  ],
+  [
+   "2022-11-25",
+   91.0
+  ],
+  [
+   "2022-12-02",
+   90.0
+  ],
+  [
+   "2022-12-09",
+   90.0
+  ],
+  [
+   "2022-12-16",
+   77.5
+  ],
+  [
+   "2022-12-23",
+   75.0
+  ],
+  [
+   "2022-12-30",
+   75.0
+  ],
+  [
+   "2023-01-06",
+   75.0
+  ],
+  [
+   "2023-01-13",
+   85.0
+  ],
+  [
+   "2023-01-20",
+   92.5
+  ],
+  [
+   "2023-01-27",
+   92.5
+  ],
+  [
+   "2023-02-03",
+   92.5
+  ],
+  [
+   "2023-02-10",
+   98.5
+  ],
+  [
+   "2023-02-17",
+   92.5
+  ],
+  [
+   "2023-02-24",
+   82.5
+  ],
+  [
+   "2023-03-03",
+   82.5
+  ],
+  [
+   "2023-03-10",
+   78.0
+  ],
+  [
+   "2023-03-17",
+   77.5
+  ],
+  [
+   "2023-03-24",
+   72.5
+  ],
+  [
+   "2023-03-31",
+   82.0
+  ],
+  [
+   "2023-04-06",
+   82.5
+  ],
+  [
+   "2023-04-14",
+   85.0
+  ],
+  [
+   "2023-04-21",
+   84.0
+  ],
+  [
+   "2023-04-28",
+   84.0
+  ],
+  [
+   "2023-05-05",
+   88.0
+  ],
+  [
+   "2023-05-12",
+   87.5
+  ],
+  [
+   "2023-05-19",
+   88.0
+  ],
+  [
+   "2023-05-26",
+   87.0
+  ],
+  [
+   "2023-06-02",
+   85.0
+  ],
+  [
+   "2023-06-09",
+   83.0
+  ],
+  [
+   "2023-06-16",
+   81.5
+  ],
+  [
+   "2023-06-23",
+   75.0
+  ],
+  [
+   "2023-06-30",
+   69.0
+  ],
+  [
+   "2023-07-07",
+   66.5
+  ],
+  [
+   "2023-07-14",
+   64.0
+  ],
+  [
+   "2023-07-21",
+   70.0
+  ],
+  [
+   "2023-07-28",
+   70.0
+  ],
+  [
+   "2023-08-04",
+   67.5
+  ],
+  [
+   "2023-08-11",
+   58.5
+  ],
+  [
+   "2023-08-18",
+   57.5
+  ],
+  [
+   "2023-08-25",
+   56.0
+  ],
+  [
+   "2023-09-01",
+   60.5
+  ],
+  [
+   "2023-09-08",
+   59.5
+  ],
+  [
+   "2023-09-15",
+   62.5
+  ],
+  [
+   "2023-09-22",
+   55.0
+  ],
+  [
+   "2023-09-29",
+   55.0
+  ],
+  [
+   "2023-10-06",
+   52.0
+  ],
+  [
+   "2023-10-13",
+   52.0
+  ],
+  [
+   "2023-10-20",
+   51.0
+  ],
+  [
+   "2023-10-27",
+   53.0
+  ],
+  [
+   "2023-11-03",
+   52.5
+  ],
+  [
+   "2023-11-10",
+   63.5
+  ],
+  [
+   "2023-11-17",
+   69.5
+  ],
+  [
+   "2023-11-24",
+   72.0
+  ],
+  [
+   "2023-12-01",
+   72.0
+  ],
+  [
+   "2023-12-08",
+   74.0
+  ],
+  [
+   "2023-12-15",
+   78.0
+  ],
+  [
+   "2023-12-22",
+   86.5
+  ],
+  [
+   "2023-12-29",
+   87.0
+  ],
+  [
+   "2024-01-05",
+   87.0
+  ],
+  [
+   "2024-01-12",
+   79.0
+  ],
+  [
+   "2024-01-19",
+   77.5
+  ],
+  [
+   "2024-01-26",
+   79.0
+  ],
+  [
+   "2024-02-02",
+   78.5
+  ],
+  [
+   "2024-02-09",
+   79.0
+  ],
+  [
+   "2024-02-16",
+   76.5
+  ],
+  [
+   "2024-02-23",
+   82.5
+  ],
+  [
+   "2024-03-01",
+   83.5
+  ],
+  [
+   "2024-03-08",
+   88.0
+  ],
+  [
+   "2024-03-15",
+   92.5
+  ],
+  [
+   "2024-03-22",
+   103.0
+  ],
+  [
+   "2024-03-28",
+   95.0
+  ],
+  [
+   "2024-04-05",
+   93.0
+  ],
+  [
+   "2024-04-12",
+   93.5
+  ],
+  [
+   "2024-04-19",
+   93.5
+  ],
+  [
+   "2024-04-26",
+   94.0
+  ],
+  [
+   "2024-05-03",
+   97.0
+  ],
+  [
+   "2024-05-10",
+   95.5
+  ],
+  [
+   "2024-05-17",
+   96.0
+  ],
+  [
+   "2024-05-24",
+   95.5
+  ],
+  [
+   "2024-05-31",
+   94.0
+  ],
+  [
+   "2024-06-07",
+   96.0
+  ],
+  [
+   "2024-06-14",
+   92.5
+  ],
+  [
+   "2024-06-21",
+   94.5
+  ],
+  [
+   "2024-06-28",
+   94.0
+  ],
+  [
+   "2024-07-05",
+   97.5
+  ],
+  [
+   "2024-07-12",
+   97.0
+  ],
+  [
+   "2024-07-19",
+   97.5
+  ],
+  [
+   "2024-07-26",
+   97.0
+  ],
+  [
+   "2024-08-02",
+   98.0
+  ],
+  [
+   "2024-08-09",
+   97.0
+  ],
+  [
+   "2024-08-16",
+   98.0
+  ],
+  [
+   "2024-08-23",
+   105.5
+  ],
+  [
+   "2024-08-30",
+   105.0
+  ],
+  [
+   "2024-09-06",
+   105.0
+  ],
+  [
+   "2024-09-13",
+   105.0
+  ],
+  [
+   "2024-09-20",
+   109.5
+  ],
+  [
+   "2024-09-27",
+   108.0
+  ],
+  [
+   "2024-10-04",
+   98.0
+  ],
+  [
+   "2024-10-11",
+   103.5
+  ],
+  [
+   "2024-10-18",
+   100.0
+  ],
+  [
+   "2024-10-25",
+   97.5
+  ],
+  [
+   "2024-11-01",
+   100.0
+  ],
+  [
+   "2024-11-08",
+   99.5
+  ],
+  [
+   "2024-11-15",
+   93.0
+  ],
+  [
+   "2024-11-22",
+   89.5
+  ],
+  [
+   "2024-11-29",
+   89.0
+  ],
+  [
+   "2024-12-06",
+   89.5
+  ],
+  [
+   "2024-12-13",
+   89.5
+  ],
+  [
+   "2024-12-20",
+   90.0
+  ],
+  [
+   "2024-12-24",
+   92.0
+  ],
+  [
+   "2024-12-27",
+   92.0
+  ],
+  [
+   "2025-01-03",
+   97.5
+  ],
+  [
+   "2025-01-10",
+   91.5
+  ],
+  [
+   "2025-01-17",
+   92.5
+  ],
+  [
+   "2025-01-24",
+   91.0
+  ],
+  [
+   "2025-01-31",
+   91.5
+  ],
+  [
+   "2025-02-07",
+   93.0
+  ],
+  [
+   "2025-02-14",
+   98.5
+  ],
+  [
+   "2025-02-21",
+   100.5
+  ],
+  [
+   "2025-02-28",
+   100.5
+  ],
+  [
+   "2025-03-07",
+   94.0
+  ],
+  [
+   "2025-03-14",
+   96.5
+  ],
+  [
+   "2025-03-21",
+   93.5
+  ],
+  [
+   "2025-03-28",
+   89.0
+  ],
+  [
+   "2025-04-04",
+   85.0
+  ],
+  [
+   "2025-04-11",
+   89.0
+  ],
+  [
+   "2025-04-17",
+   97.0
+  ],
+  [
+   "2025-04-25",
+   95.5
+  ],
+  [
+   "2025-05-02",
+   95.5
+  ],
+  [
+   "2025-05-09",
+   96.5
+  ],
+  [
+   "2025-05-16",
+   95.5
+  ],
+  [
+   "2025-05-23",
+   97.5
+  ],
+  [
+   "2025-05-30",
+   98.5
+  ],
+  [
+   "2025-06-06",
+   96.5
+  ],
+  [
+   "2025-06-13",
+   96.5
+  ],
+  [
+   "2025-06-20",
+   97.5
+  ],
+  [
+   "2025-06-27",
+   103.5
+  ],
+  [
+   "2025-07-04",
+   100.5
+  ],
+  [
+   "2025-07-11",
+   100.5
+  ],
+  [
+   "2025-07-18",
+   98.0
+  ],
+  [
+   "2025-07-25",
+   101.0
+  ],
+  [
+   "2025-08-01",
+   100.0
+  ],
+  [
+   "2025-08-08",
+   100.5
+  ],
+  [
+   "2025-08-15",
+   101.0
+  ],
+  [
+   "2025-08-22",
+   101.0
+  ],
+  [
+   "2025-08-29",
+   97.0
+  ],
+  [
+   "2025-09-05",
+   94.0
+  ],
+  [
+   "2025-09-12",
+   89.5
+  ],
+  [
+   "2025-09-19",
+   103.0
+  ],
+  [
+   "2025-09-26",
+   106.0
+  ],
+  [
+   "2025-10-03",
+   107.0
+  ],
+  [
+   "2025-10-10",
+   104.0
+  ],
+  [
+   "2025-10-17",
+   102.5
+  ],
+  [
+   "2025-10-24",
+   111.0
+  ],
+  [
+   "2025-10-31",
+   111.0
+  ],
+  [
+   "2025-11-07",
+   113.0
+  ],
+  [
+   "2025-11-14",
+   117.0
+  ],
+  [
+   "2025-11-21",
+   117.0
+  ],
+  [
+   "2025-11-28",
+   117.0
+  ],
+  [
+   "2025-12-05",
+   118.5
+  ],
+  [
+   "2025-12-12",
+   120.5
+  ],
+  [
+   "2025-12-19",
+   125.0
+  ],
+  [
+   "2025-12-24",
+   123.0
+  ],
+  [
+   "2026-01-02",
+   134.0
+  ],
+  [
+   "2026-01-09",
+   127.0
+  ],
+  [
+   "2026-01-16",
+   134.0
+  ],
+  [
+   "2026-01-23",
+   133.0
+  ],
+  [
+   "2026-01-30",
+   133.0
+  ],
+  [
+   "2026-02-06",
+   130.0
+  ],
+  [
+   "2026-02-13",
+   129.0
+  ],
+  [
+   "2026-02-20",
+   130.5
+  ],
+  [
+   "2026-02-27",
+   128.0
+  ],
+  [
+   "2026-03-06",
+   115.5
+  ],
+  [
+   "2026-03-13",
+   108.0
+  ],
+  [
+   "2026-03-20",
+   104.0
+  ],
+  [
+   "2026-03-27",
+   106.5
+  ],
+  [
+   "2026-04-02",
+   105.0
+  ],
+  [
+   "2026-04-10",
+   112.5
+  ],
+  [
+   "2026-04-17",
+   117.0
+  ],
+  [
+   "2026-04-24",
+   112.0
+  ],
+  [
+   "2026-05-01",
+   98.5
+  ],
+  [
+   "2026-05-08",
+   100.75
+  ],
+  [
+   "2026-05-15",
+   96.5
+  ],
+  [
+   "2026-05-22",
+   89.5
+  ],
+  [
+   "2026-05-29",
+   93.0
+  ],
+  [
+   "2026-06-05",
+   98.0
+  ],
+  [
+   "2026-06-12",
+   97.5
+  ],
+  [
+   "2026-06-19",
+   105.0
+  ],
+  [
+   "2026-06-26",
+   102.0
+  ],
+  [
+   "2026-07-03",
+   103.0
+  ],
+  [
+   "2026-07-10",
+   99.5
+  ],
+  [
+   "2026-07-17",
+   98.5
+  ],
+  [
+   "2026-07-24",
+   98.0
+  ],
+  [
+   "2026-07-31",
+   99.5
+  ],
+  [
+   "2026-08-07",
+   103.0
+  ],
+  [
+   "2026-08-14",
+   108.0
+  ],
+  [
+   "2026-08-21",
+   113.0
+  ],
+  [
+   "2026-08-28",
+   111.0
+  ],
+  [
+   "2026-09-04",
+   103.5
+  ],
+  [
+   "2026-09-11",
+   106.75
+  ],
+  [
+   "2026-09-18",
+   115.5
+  ],
+  [
+   "2026-09-25",
+   115.25
+  ],
+  [
+   "2026-10-02",
+   112.5
+  ],
+  [
+   "2026-10-09",
+   111.25
+  ],
+  [
+   "2026-10-16",
+   114.25
+  ],
+  [
+   "2026-10-20",
+   113.5
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-12-01",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "With sustained house price inflation and active management of cost and supply chain pressures, the Company continues to trade in line with market expectations for FY2022.",
+   "file": "20211201_SPR_Acquisition-of-Tulloch-Homes-and-Proposed-Placing.md"
+  },
+  {
+   "d": "2022-02-22",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "We entered the second half on track for strong growth for FY 2022 in line with market expectations.",
+   "file": "20220222_SPR_Interim-Results.md"
+  },
+  {
+   "d": "2022-06-22",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "For the year to 31 May 2022, the Group expects to report results in line with market expectations, with good revenue growth and a better-than-expected reduction in net debt to c. £39.0m at year end (30 November 2021: £43.0m).",
+   "file": "20220622_SPR_Acquisition-of-Scottish-housebuilding-business.md"
+  },
+  {
+   "d": "2022-09-20",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "While the challenging economic backdrop will impact our affordable and PRS housing activity in the short term as we await decisions from the Scottish Government, we are on track to deliver another year of revenue and profit growth overall.",
+   "file": "20220920_SPR_Final-Results-and-Publication-of-Annual-Report.md"
+  },
+  {
+   "d": "2022-12-12",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -3,
+   "q": "These factors are expected to combine to impact the Group's margin and, as a result, the Group now expects to report profit before tax for FY 2023 below that of FY 2022.",
+   "file": "20221212_SPR_Trading-Update.md"
+  },
+  {
+   "d": "2023-02-21",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "In addition, with the actions that the Group is taking in response to the challenging market conditions, the Group is confident that it will be able to manage the inflationary pressures and report profit for the full year to 31 May 2023 in line with market expectations.",
+   "file": "20230221_SPR_Interim-Results.md"
+  },
+  {
+   "d": "2023-07-19",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group expects to report profit before tax for 2023 in line with market expectations.",
+   "file": "20230719_SPR_Trading-Update.md"
+  },
+  {
+   "d": "2023-09-20",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -3,
+   "q": "Accordingly, for FY 2024, the Group now expects to report adjusted profit before tax of c. £10m-£14m and is planning to reduce net debt to c. £55m by 31 May 2024.",
+   "file": "20230920_SPR_Final-Results-and-Publication-of-Annual-Report.md"
+  },
+  {
+   "d": "2023-12-13",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 1,
+   "q": "While there remains uncertainty in the near-term market, the Group is confident of meeting market expectations for the year to 31 May 2024, with growth anticipated in H2 over H1 across the business, in line with usual seasonality, and with a significant contribution from land sales.",
+   "file": "20231213_SPR_Trading-Update.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2024-02-20",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group remains on track to report results for the year to 31 May 2024 in line with market expectations, including a reduction in net bank debt to c. £55.0m.",
+   "file": "20240220_SPR_Interim-Results.md"
+  },
+  {
+   "d": "2024-07-11",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Profit before tax is expected to be slightly ahead of market expectations due to good profits being realised on the land sales.",
+   "file": "20240711_SPR_Trading-Update.md"
+  },
+  {
+   "d": "2024-09-17",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "As a result, the Group is on track to report results for the year to 31 May 2025 in line with market expectations, with total revenue remaining level with FY 2024 and growth in profitability.",
+   "file": "20240917_SPR_Final-Results-and-Publication-of-Annual-Report.md"
+  },
+  {
+   "d": "2024-12-10",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "As a result, the Group remains confident in meeting market expectations for FY 2025.",
+   "file": "20241210_SPR_Trading-Update.md"
+  },
+  {
+   "d": "2025-02-17",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Overall, the Group anticipates reporting profit that significantly exceeds market expectations for FY 2025.",
+   "file": "20250217_SPR_Interim-Results.md"
+  },
+  {
+   "d": "2025-02-17",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "As a result of the Land Sale, the Group expects to report profit for FY 2025 significantly ahead of market expectations.",
+   "file": "20250217_SPR_Springfield-Signs-Land-Sale-Agreement-with-Barratt.md"
+  },
+  {
+   "d": "2025-07-08",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group's land sales were highly profitable and, as a result, the Group expects to report a substantial increase in profit before tax for the year, in line with current market expectations.",
+   "file": "20250708_SPR_Trading-Update.md"
+  },
+  {
+   "d": "2025-09-16",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "This reflects a year-on-year increase in revenue in both private and affordable housing, in line with the Group's expectations.",
+   "file": "20250916_SPR_Final-Results-and-Publication-of-Annual-Report.md"
+  },
+  {
+   "d": "2025-12-17",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Accordingly, we remain on track to deliver results for the full year in line with market expectations and look forward to reporting on our progress as each of these initiatives progresses.",
+   "file": "20251217_SPR_Agreement-with-SSEN-Transmission-&-Trading-Update.md"
+  },
+  {
+   "d": "2026-02-17",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group continues to expect to achieve growth for FY 2026 when excluding the exceptional contribution from the land sales to Barratt, in line with market expectations.",
+   "file": "20260217_SPR_Interim-Results.md"
+  },
+  {
+   "d": "2026-06-04",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group expects to report revenue and adjusted profit before tax in line with market expectations, with total revenue for FY 2026 of approximately £245m.",
+   "file": "20260604_SPR_Trading-Update.md"
+  },
+  {
+   "d": "2026-09-15",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -2,
+   "q": "Since year end, while consumer sentiment has remained cautious, the private housing reservation rate has remained stable and in line with management's expectations.",
+   "file": "20260915_SPR_Final-Results-and-Publication-of-Annual-Report.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-15",
+  "doc": "FY R",
+  "file": "20260915_SPR_Final-Results-and-Publication-of-Annual-Report.md",
+  "vs": "FY R Sep-25 · back to Sep-22 · Jun-26 TU, Aug-26",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Next-year view dropped",
+    "text": "Last year: “On an underlying basis, to exclude the exceptional contribution to 2025 revenue from the land sales to Barratt, the Group expects to deliver revenue growth for 2026.” → this year no FY27 revenue or profit guide; outlook says only “The Group's private housing reservation rate has been steady and in line with management's expectations.”",
+    "span": "Next-year guide given at Sep-22, Sep-23, Sep-24, Sep-25 → first gap in 4 years"
+   },
+   {
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "Affordable contracted cover: Sep-25 “over 80% of forecast 2026 revenue already contracted”, Feb-26 “almost all of forecast FY 2026 revenue is already delivered or contracted” → now “the Group has continued to secure new contracts on favourable terms”, no FY27 cover figure",
+    "span": "Cover given at Sep-24, Sep-25, Dec-25, Feb-26"
+   },
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "Sep-25: Central Scotland sites to be built out and sold, “expected to complete in c. 2-3 years” → now sites retained and “overheads being higher than previously anticipated is expected to be offset by increased revenue resulting in greater profit in the medium term.”",
+    "span": "First mention, Sep-26"
+   }
+  ]
+ }
+}

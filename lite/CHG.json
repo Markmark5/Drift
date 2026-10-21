@@ -1,0 +1,1307 @@
+{
+ "ticker": "CHG",
+ "v": "2026-10-21.c6ea",
+ "ccy": "GBX",
+ "src": "AlphaVantage CHG.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   314.5
+  ],
+  [
+   "2021-10-22",
+   300.0
+  ],
+  [
+   "2021-10-29",
+   292.5
+  ],
+  [
+   "2021-11-05",
+   304.5
+  ],
+  [
+   "2021-11-12",
+   299.0
+  ],
+  [
+   "2021-11-19",
+   290.0
+  ],
+  [
+   "2021-11-26",
+   274.0
+  ],
+  [
+   "2021-12-03",
+   280.0
+  ],
+  [
+   "2021-12-10",
+   291.0
+  ],
+  [
+   "2021-12-17",
+   294.5
+  ],
+  [
+   "2021-12-24",
+   294.5
+  ],
+  [
+   "2021-12-31",
+   296.0
+  ],
+  [
+   "2022-01-07",
+   290.0
+  ],
+  [
+   "2022-01-14",
+   283.0
+  ],
+  [
+   "2022-01-21",
+   290.5
+  ],
+  [
+   "2022-01-28",
+   270.0
+  ],
+  [
+   "2022-02-04",
+   272.0
+  ],
+  [
+   "2022-02-11",
+   265.0
+  ],
+  [
+   "2022-02-18",
+   259.0
+  ],
+  [
+   "2022-02-25",
+   273.0
+  ],
+  [
+   "2022-03-04",
+   329.0
+  ],
+  [
+   "2022-03-11",
+   321.5
+  ],
+  [
+   "2022-03-18",
+   322.5
+  ],
+  [
+   "2022-03-25",
+   329.0
+  ],
+  [
+   "2022-04-01",
+   323.5
+  ],
+  [
+   "2022-04-08",
+   339.5
+  ],
+  [
+   "2022-04-14",
+   345.5
+  ],
+  [
+   "2022-04-22",
+   319.5
+  ],
+  [
+   "2022-04-29",
+   351.5
+  ],
+  [
+   "2022-05-06",
+   365.0
+  ],
+  [
+   "2022-05-13",
+   353.0
+  ],
+  [
+   "2022-05-20",
+   343.5
+  ],
+  [
+   "2022-05-27",
+   360.5
+  ],
+  [
+   "2022-06-01",
+   360.5
+  ],
+  [
+   "2022-06-10",
+   338.5
+  ],
+  [
+   "2022-06-17",
+   314.5
+  ],
+  [
+   "2022-06-24",
+   317.0
+  ],
+  [
+   "2022-07-01",
+   320.0
+  ],
+  [
+   "2022-07-08",
+   324.0
+  ],
+  [
+   "2022-07-15",
+   331.5
+  ],
+  [
+   "2022-07-22",
+   347.0
+  ],
+  [
+   "2022-07-29",
+   346.0
+  ],
+  [
+   "2022-08-05",
+   337.5
+  ],
+  [
+   "2022-08-12",
+   330.0
+  ],
+  [
+   "2022-08-19",
+   322.5
+  ],
+  [
+   "2022-08-26",
+   312.0
+  ],
+  [
+   "2022-09-02",
+   301.0
+  ],
+  [
+   "2022-09-09",
+   299.5
+  ],
+  [
+   "2022-09-16",
+   286.5
+  ],
+  [
+   "2022-09-23",
+   285.5
+  ],
+  [
+   "2022-09-30",
+   284.0
+  ],
+  [
+   "2022-10-07",
+   323.0
+  ],
+  [
+   "2022-10-14",
+   295.5
+  ],
+  [
+   "2022-10-21",
+   293.0
+  ],
+  [
+   "2022-10-28",
+   308.5
+  ],
+  [
+   "2022-11-04",
+   304.0
+  ],
+  [
+   "2022-11-11",
+   296.5
+  ],
+  [
+   "2022-11-18",
+   295.0
+  ],
+  [
+   "2022-11-25",
+   309.0
+  ],
+  [
+   "2022-12-02",
+   303.5
+  ],
+  [
+   "2022-12-09",
+   303.5
+  ],
+  [
+   "2022-12-16",
+   300.5
+  ],
+  [
+   "2022-12-23",
+   293.5
+  ],
+  [
+   "2022-12-30",
+   297.5
+  ],
+  [
+   "2023-01-06",
+   294.5
+  ],
+  [
+   "2023-01-13",
+   287.0
+  ],
+  [
+   "2023-01-20",
+   283.0
+  ],
+  [
+   "2023-01-27",
+   282.0
+  ],
+  [
+   "2023-02-03",
+   282.0
+  ],
+  [
+   "2023-02-10",
+   291.0
+  ],
+  [
+   "2023-02-17",
+   287.0
+  ],
+  [
+   "2023-02-24",
+   286.5
+  ],
+  [
+   "2023-03-03",
+   287.5
+  ],
+  [
+   "2023-03-10",
+   284.5
+  ],
+  [
+   "2023-03-17",
+   279.0
+  ],
+  [
+   "2023-03-24",
+   276.0
+  ],
+  [
+   "2023-03-31",
+   278.0
+  ],
+  [
+   "2023-04-06",
+   286.0
+  ],
+  [
+   "2023-04-14",
+   291.0
+  ],
+  [
+   "2023-04-21",
+   294.5
+  ],
+  [
+   "2023-04-28",
+   284.0
+  ],
+  [
+   "2023-05-05",
+   278.0
+  ],
+  [
+   "2023-05-12",
+   280.5
+  ],
+  [
+   "2023-05-19",
+   282.0
+  ],
+  [
+   "2023-05-26",
+   259.5
+  ],
+  [
+   "2023-06-02",
+   271.5
+  ],
+  [
+   "2023-06-09",
+   292.0
+  ],
+  [
+   "2023-06-16",
+   294.0
+  ],
+  [
+   "2023-06-23",
+   291.0
+  ],
+  [
+   "2023-06-30",
+   283.0
+  ],
+  [
+   "2023-07-07",
+   285.0
+  ],
+  [
+   "2023-07-14",
+   286.0
+  ],
+  [
+   "2023-07-21",
+   286.0
+  ],
+  [
+   "2023-07-28",
+   285.5
+  ],
+  [
+   "2023-08-04",
+   301.5
+  ],
+  [
+   "2023-08-11",
+   296.0
+  ],
+  [
+   "2023-08-18",
+   281.5
+  ],
+  [
+   "2023-08-25",
+   289.5
+  ],
+  [
+   "2023-09-01",
+   289.0
+  ],
+  [
+   "2023-09-08",
+   301.0
+  ],
+  [
+   "2023-09-15",
+   283.5
+  ],
+  [
+   "2023-09-22",
+   285.0
+  ],
+  [
+   "2023-09-29",
+   277.5
+  ],
+  [
+   "2023-10-06",
+   270.0
+  ],
+  [
+   "2023-10-13",
+   268.5
+  ],
+  [
+   "2023-10-20",
+   280.0
+  ],
+  [
+   "2023-10-27",
+   278.5
+  ],
+  [
+   "2023-11-03",
+   292.0
+  ],
+  [
+   "2023-11-10",
+   294.5
+  ],
+  [
+   "2023-11-17",
+   305.5
+  ],
+  [
+   "2023-11-24",
+   319.0
+  ],
+  [
+   "2023-12-01",
+   319.5
+  ],
+  [
+   "2023-12-08",
+   327.5
+  ],
+  [
+   "2023-12-15",
+   335.0
+  ],
+  [
+   "2023-12-22",
+   352.0
+  ],
+  [
+   "2023-12-29",
+   350.5
+  ],
+  [
+   "2024-01-05",
+   345.5
+  ],
+  [
+   "2024-01-12",
+   350.0
+  ],
+  [
+   "2024-01-19",
+   352.0
+  ],
+  [
+   "2024-01-26",
+   353.5
+  ],
+  [
+   "2024-02-02",
+   351.0
+  ],
+  [
+   "2024-02-09",
+   354.0
+  ],
+  [
+   "2024-02-16",
+   353.5
+  ],
+  [
+   "2024-02-23",
+   353.0
+  ],
+  [
+   "2024-03-01",
+   354.0
+  ],
+  [
+   "2024-03-08",
+   350.0
+  ],
+  [
+   "2024-03-15",
+   347.0
+  ],
+  [
+   "2024-03-22",
+   358.0
+  ],
+  [
+   "2024-03-28",
+   363.0
+  ],
+  [
+   "2024-04-05",
+   357.0
+  ],
+  [
+   "2024-04-12",
+   359.0
+  ],
+  [
+   "2024-04-19",
+   344.0
+  ],
+  [
+   "2024-04-26",
+   373.5
+  ],
+  [
+   "2024-05-03",
+   390.5
+  ],
+  [
+   "2024-05-10",
+   385.5
+  ],
+  [
+   "2024-05-17",
+   394.0
+  ],
+  [
+   "2024-05-24",
+   396.0
+  ],
+  [
+   "2024-05-31",
+   386.0
+  ],
+  [
+   "2024-06-07",
+   384.0
+  ],
+  [
+   "2024-06-14",
+   374.5
+  ],
+  [
+   "2024-06-21",
+   377.0
+  ],
+  [
+   "2024-06-28",
+   372.5
+  ],
+  [
+   "2024-07-05",
+   377.0
+  ],
+  [
+   "2024-07-12",
+   391.5
+  ],
+  [
+   "2024-07-19",
+   382.0
+  ],
+  [
+   "2024-07-26",
+   394.5
+  ],
+  [
+   "2024-08-02",
+   402.5
+  ],
+  [
+   "2024-08-09",
+   403.0
+  ],
+  [
+   "2024-08-16",
+   409.5
+  ],
+  [
+   "2024-08-23",
+   402.0
+  ],
+  [
+   "2024-08-30",
+   407.0
+  ],
+  [
+   "2024-09-06",
+   385.5
+  ],
+  [
+   "2024-09-13",
+   387.0
+  ],
+  [
+   "2024-09-20",
+   370.5
+  ],
+  [
+   "2024-09-27",
+   370.5
+  ],
+  [
+   "2024-10-04",
+   376.0
+  ],
+  [
+   "2024-10-11",
+   360.0
+  ],
+  [
+   "2024-10-18",
+   378.5
+  ],
+  [
+   "2024-10-25",
+   358.5
+  ],
+  [
+   "2024-11-01",
+   356.0
+  ],
+  [
+   "2024-11-08",
+   355.5
+  ],
+  [
+   "2024-11-15",
+   356.0
+  ],
+  [
+   "2024-11-22",
+   360.5
+  ],
+  [
+   "2024-11-29",
+   354.5
+  ],
+  [
+   "2024-12-06",
+   362.0
+  ],
+  [
+   "2024-12-13",
+   362.5
+  ],
+  [
+   "2024-12-20",
+   323.0
+  ],
+  [
+   "2024-12-24",
+   333.5
+  ],
+  [
+   "2024-12-27",
+   329.5
+  ],
+  [
+   "2025-01-03",
+   333.0
+  ],
+  [
+   "2025-01-10",
+   325.0
+  ],
+  [
+   "2025-01-17",
+   328.5
+  ],
+  [
+   "2025-01-24",
+   323.0
+  ],
+  [
+   "2025-01-31",
+   319.0
+  ],
+  [
+   "2025-02-07",
+   297.5
+  ],
+  [
+   "2025-02-14",
+   315.0
+  ],
+  [
+   "2025-02-21",
+   358.0
+  ],
+  [
+   "2025-02-28",
+   373.5
+  ],
+  [
+   "2025-03-07",
+   410.0
+  ],
+  [
+   "2025-03-14",
+   411.5
+  ],
+  [
+   "2025-03-21",
+   369.5
+  ],
+  [
+   "2025-03-28",
+   375.0
+  ],
+  [
+   "2025-04-04",
+   373.5
+  ],
+  [
+   "2025-04-11",
+   374.0
+  ],
+  [
+   "2025-04-17",
+   384.0
+  ],
+  [
+   "2025-04-25",
+   386.5
+  ],
+  [
+   "2025-05-02",
+   411.5
+  ],
+  [
+   "2025-05-09",
+   419.0
+  ],
+  [
+   "2025-05-16",
+   429.0
+  ],
+  [
+   "2025-05-23",
+   444.5
+  ],
+  [
+   "2025-05-30",
+   483.0
+  ],
+  [
+   "2025-06-06",
+   582.0
+  ],
+  [
+   "2025-06-13",
+   578.0
+  ],
+  [
+   "2025-06-20",
+   564.0
+  ],
+  [
+   "2025-06-27",
+   556.0
+  ],
+  [
+   "2025-07-04",
+   560.0
+  ],
+  [
+   "2025-07-11",
+   558.0
+  ],
+  [
+   "2025-07-18",
+   560.0
+  ],
+  [
+   "2025-07-25",
+   543.0
+  ],
+  [
+   "2025-08-01",
+   537.0
+  ],
+  [
+   "2025-08-08",
+   535.0
+  ],
+  [
+   "2025-08-15",
+   535.0
+  ],
+  [
+   "2025-08-22",
+   543.0
+  ],
+  [
+   "2025-08-29",
+   537.0
+  ],
+  [
+   "2025-09-05",
+   540.0
+  ],
+  [
+   "2025-09-12",
+   567.0
+  ],
+  [
+   "2025-09-19",
+   565.0
+  ],
+  [
+   "2025-09-26",
+   563.0
+  ],
+  [
+   "2025-10-03",
+   586.0
+  ],
+  [
+   "2025-10-10",
+   568.0
+  ],
+  [
+   "2025-10-17",
+   530.0
+  ],
+  [
+   "2025-10-24",
+   576.0
+  ],
+  [
+   "2025-10-31",
+   573.0
+  ],
+  [
+   "2025-11-07",
+   543.0
+  ],
+  [
+   "2025-11-14",
+   515.0
+  ],
+  [
+   "2025-11-21",
+   490.5
+  ],
+  [
+   "2025-11-28",
+   481.5
+  ],
+  [
+   "2025-12-05",
+   477.5
+  ],
+  [
+   "2025-12-12",
+   475.0
+  ],
+  [
+   "2025-12-19",
+   465.5
+  ],
+  [
+   "2025-12-24",
+   472.0
+  ],
+  [
+   "2026-01-02",
+   473.0
+  ],
+  [
+   "2026-01-09",
+   541.0
+  ],
+  [
+   "2026-01-16",
+   546.0
+  ],
+  [
+   "2026-01-23",
+   524.0
+  ],
+  [
+   "2026-01-30",
+   498.5
+  ],
+  [
+   "2026-02-06",
+   499.5
+  ],
+  [
+   "2026-02-13",
+   513.0
+  ],
+  [
+   "2026-02-20",
+   510.0
+  ],
+  [
+   "2026-02-27",
+   534.0
+  ],
+  [
+   "2026-03-06",
+   530.0
+  ],
+  [
+   "2026-03-13",
+   543.0
+  ],
+  [
+   "2026-03-20",
+   503.0
+  ],
+  [
+   "2026-03-27",
+   486.0
+  ],
+  [
+   "2026-04-02",
+   554.0
+  ],
+  [
+   "2026-04-10",
+   546.0
+  ],
+  [
+   "2026-04-17",
+   559.5
+  ],
+  [
+   "2026-04-24",
+   529.0
+  ],
+  [
+   "2026-05-01",
+   521.5
+  ],
+  [
+   "2026-05-08",
+   480.6
+  ],
+  [
+   "2026-05-15",
+   464.6
+  ],
+  [
+   "2026-05-22",
+   526.5
+  ],
+  [
+   "2026-05-29",
+   549.0
+  ],
+  [
+   "2026-06-05",
+   500.0
+  ],
+  [
+   "2026-06-12",
+   525.0
+  ],
+  [
+   "2026-06-19",
+   500.0
+  ],
+  [
+   "2026-06-26",
+   481.0
+  ],
+  [
+   "2026-07-03",
+   577.5
+  ],
+  [
+   "2026-07-10",
+   537.5
+  ],
+  [
+   "2026-07-17",
+   557.0
+  ],
+  [
+   "2026-07-24",
+   596.5
+  ],
+  [
+   "2026-07-31",
+   590.5
+  ],
+  [
+   "2026-08-07",
+   627.0
+  ],
+  [
+   "2026-08-14",
+   628.0
+  ],
+  [
+   "2026-08-21",
+   570.5
+  ],
+  [
+   "2026-08-28",
+   550.5
+  ],
+  [
+   "2026-09-04",
+   530.0
+  ],
+  [
+   "2026-09-11",
+   532.0
+  ],
+  [
+   "2026-09-18",
+   531.5
+  ],
+  [
+   "2026-09-25",
+   535.5
+  ],
+  [
+   "2026-10-02",
+   529.0
+  ],
+  [
+   "2026-10-09",
+   511.0
+  ],
+  [
+   "2026-10-16",
+   539.5
+  ],
+  [
+   "2026-10-20",
+   534.5
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-11-02",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "flat",
+   "s": 0,
+   "q": "As a result, the outturn for the year ending 31 October 2021 is expected to be in line with the Board's expectations, with adjusted operating profit expected to be in line with the consensus of current analyst expectations.",
+   "file": "20211102_CHG_Trading-Update-and-Contract-Awards.md"
+  },
+  {
+   "d": "2021-12-14",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board's expectations for the Group's 2022 performance are unchanged, with the balance of its trading performance in 2022 expected to be similar to 2021 with a slight bias towards the second half of the financial year.",
+   "file": "20211214_CHG_Results-for-the-year-ended-31-October-2021.md"
+  },
+  {
+   "d": "2022-03-03",
+   "doc": "AGM",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Due to recent positive order intake, including Roke's award of an £8m contract to supply electronic warfare (\"EW\") equipment to the Swedish Ministry of Defence which is expected to be partially delivered in FY22, the Board now expects the financial results for the current year to be slightly ahead of the current consensus of analyst expectations.",
+   "file": "20220303_CHG_AGM-Update.md"
+  },
+  {
+   "d": "2022-06-08",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Despite these investment choices and macro-economic challenges the Board's full year expectations are unchanged, supported by 85% of the expected H2 revenue being in the order book as at 30 April 2022.",
+   "file": "20220608_CHG_INTERIM-RESULTS.md"
+  },
+  {
+   "d": "2022-10-06",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -1,
+   "q": "Expected FY22 revenue is fully covered by the order book and the outturn for the year ending 31 October 2022 is expected to be in line with the Board's expectations.",
+   "file": "20221006_CHG_Trading-Update.md"
+  },
+  {
+   "d": "2022-12-13",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "The Board's expectations for the Group's 2023 performance are unchanged, with the balance of its trading performance in 2023 expected to have a greater bias towards the second half of the financial year as a result of the delays to order intake in 2022 following the US Continuing Resolution.",
+   "file": "20221213_CHG_Final-Results.md"
+  },
+  {
+   "d": "2023-03-15",
+   "doc": "AGM",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Both sectors have performed in line with the Board's expectations since the beginning of the current financial year and the Board's expectations for 2023 performance are unchanged.",
+   "file": "20230315_CHG_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2023-06-06",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Chemring is well placed to capitalise on its many opportunities and with 90% of expected H2 revenues covered by the order book, the Board's full year expectations are unchanged.",
+   "file": "20230606_CHG_Half-year-results-to-30-April-2023.md"
+  },
+  {
+   "d": "2023-09-12",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -2,
+   "q": "Achieving full year expectations is subject to US Department of Defense (\"US DoD\") approval of certain countermeasure deliveries, representing c.£25m of revenue, that have already been manufactured and will be recognised once approval is received.",
+   "file": "20230912_CHG_Trading-update-and-contract-wins.md"
+  },
+  {
+   "d": "2023-10-17",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The outturn for the year ending 31 October 2023 remains in line with the Board's and current analyst expectations",
+   "file": "20231017_CHG_Update-on-Countermeasure-Deliveries.md"
+  },
+  {
+   "d": "2023-11-10",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Chemring is pleased to announce that trading in the period to 31 October 2023 progressed as planned with the outturn for the year ending 31 October 2023 expected to be in-line with Board and analyst expectations",
+   "file": "20231110_CHG_Trading-Update.md"
+  },
+  {
+   "d": "2023-12-12",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading since the start of the current financial year has been in-line with plans, and with 79% of expected revenue covered by the order book the Board's expectations for 2024 performance are unchanged.",
+   "file": "20231212_CHG_Results-for-the-year-ended-31-October-2023.md"
+  },
+  {
+   "d": "2024-02-23",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -2,
+   "q": "The current financial year continues broadly to plan despite severe weather impacting operations at some of our manufacturing sites which has increased our H2 weighting.",
+   "file": "20240223_CHG_AGM-Update.md"
+  },
+  {
+   "d": "2024-06-04",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board's full year expectations are unchanged, supported by order coverage at 30 April 2024 of 93% of expected H2 revenue, with a heavier H2 weighting of operating profit as previously communicated in February 2024.",
+   "file": "20240604_CHG_Half-year-Report.md"
+  },
+  {
+   "d": "2024-10-17",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The outturn for the year ending 31 October 2024 is in line with the current range of analyst expectations*, despite current foreign exchange headwinds, and is fully covered by orders.",
+   "file": "20241017_CHG_Trading-Update.md"
+  },
+  {
+   "d": "2024-11-04",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Further to the announcement on 17 October 2024, Group adjusted operating profit for the year ended 31 October 2024 is expected to be in-line with consensus expectations of £70.9m.",
+   "file": "20241104_CHG_£278m-Contract-Wins.md"
+  },
+  {
+   "d": "2024-12-17",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board's expectations for the Group's 2025 performance remains in line with market expectations, with a similar weighting towards the second half.",
+   "file": "20241217_CHG_Results-for-the-year-ended-31-October-2024.md"
+  },
+  {
+   "d": "2025-02-26",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board's expectations for the Group's FY25 outlook remains in line with market expectations* with (as previously stated) a similar H2 weighting to last year.",
+   "file": "20250226_CHG_AGM-Update.md"
+  },
+  {
+   "d": "2025-06-03",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board's full year expectations are unchanged, supported by order coverage at 30 April 2025 of 85% of expected 2025 revenue, and with a similar H2 weighting of operating profit to last year as previously communicated in February 2025.",
+   "file": "20250603_CHG_Interim-Results.md"
+  },
+  {
+   "d": "2025-11-10",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Chemring is pleased to announce that the adjusted operating profit for the year ended 31 October 2025 is expected to be in-line with analyst expectations* and adjusted EPS is expected to benefit from slightly lower finance costs.",
+   "file": "20251110_CHG_Post-close-and-contract-wins-update.md"
+  },
+  {
+   "d": "2025-12-09",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "Trading since the start of the current financial year is in line with our plans and the Board's expectations for the Group's 2026 operating performance remain unchanged.",
+   "file": "20251209_CHG_Results-for-the-year-ended-31-October-2025.md"
+  },
+  {
+   "d": "2026-02-20",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -2,
+   "q": "The Group's outlook for FY26 remains in line with the Board's expectations with a H2 weighting slightly heavier than the prior year.",
+   "file": "20260220_CHG_AGM-Update.md"
+  },
+  {
+   "d": "2026-06-02",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "As previously guided, operating profit is expected to be weighted c.70% to H2, reflecting scheduled programme deliveries, customer acceptance timing and the phasing of Sensors & Information contract activity and awards.",
+   "file": "20260602_CHG_Interim-results.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-06-02",
+  "doc": "H1 R",
+  "file": "20260602_CHG_Interim-results.md",
+  "vs": "H1 R Jun-25 · back to Jun-24 · AGM Feb-26, FY R Dec-25",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Target dropped",
+    "text": "£1bn revenue ambition: H1-25 “The Group remains on track to achieve its ambition to increase the Group's annual revenue to c.£1bn by 2030.” (Dec-25: “remain committed to our ambition of doubling annual revenue to approximately £1 billion by 2030”) → H1-26 no £1bn figure, only “The Board also remains confident in the Group's previously stated medium and longer-term financial objectives.”",
+    "span": "Stated Jun-24, Dec-24, Jun-25, Dec-25 → absent Feb-26 AGM and Jun-26 interim"
+   },
+   {
+    "sev": "amber",
+    "type": "Split withheld",
+    "text": "Medium-term objectives: H1-25 itemised “targeting mid-single digit % growth in the near term, accelerating to low double digit % growth as new capacity comes online” plus S&I, C&E and “Group targeting mid-teen return on sales in the medium term” → H1-26 one line, no growth or margin targets listed",
+    "span": "H1-25 interim → H1-26 interim"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Headline “H1 in-line and FY26 expectations unchanged” beside “Underlying operating profit was down 7.5% to £24.5m” (margin 10.3% vs 11.9%; operating cash conversion 42% vs 83%) and c.70% of profit now pushed to H2 (FY25 H2 share c.64%)",
+    "span": "H1-25 profit was up 8% → H1-26 down 7.5%"
+   },
+   {
+    "sev": "grey",
+    "type": "Demoted",
+    "text": "Group order intake: H1-25 highlight “Record H1 order intake of £488m” (H1-24: “Record H1 order intake of £345m”) → H1-26 highlights and Group overview give no Group intake figure; only segment intake (C&E £176m, S&I £110m) further down",
+    "span": "Headline at H1-24, H1-25 → dropped H1-26"
+   }
+  ]
+ }
+}

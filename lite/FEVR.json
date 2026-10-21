@@ -1,0 +1,1287 @@
+{
+ "ticker": "FEVR",
+ "v": "2026-10-21.520d",
+ "ccy": "GBX",
+ "src": "AlphaVantage FEVR.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   2456.0
+  ],
+  [
+   "2021-10-22",
+   2425.0
+  ],
+  [
+   "2021-10-29",
+   2269.0
+  ],
+  [
+   "2021-11-05",
+   2487.0
+  ],
+  [
+   "2021-11-12",
+   2666.0
+  ],
+  [
+   "2021-11-19",
+   2742.0
+  ],
+  [
+   "2021-11-26",
+   2601.0
+  ],
+  [
+   "2021-12-03",
+   2580.0
+  ],
+  [
+   "2021-12-10",
+   2648.0
+  ],
+  [
+   "2021-12-17",
+   2690.0
+  ],
+  [
+   "2021-12-24",
+   2701.0
+  ],
+  [
+   "2021-12-31",
+   2705.0
+  ],
+  [
+   "2022-01-07",
+   2560.0
+  ],
+  [
+   "2022-01-14",
+   2509.0
+  ],
+  [
+   "2022-01-21",
+   2547.0
+  ],
+  [
+   "2022-01-28",
+   2080.0
+  ],
+  [
+   "2022-02-04",
+   2110.0
+  ],
+  [
+   "2022-02-11",
+   2080.0
+  ],
+  [
+   "2022-02-18",
+   1980.0
+  ],
+  [
+   "2022-02-25",
+   1895.0
+  ],
+  [
+   "2022-03-04",
+   1650.5
+  ],
+  [
+   "2022-03-11",
+   1566.0
+  ],
+  [
+   "2022-03-18",
+   1843.0
+  ],
+  [
+   "2022-03-25",
+   1757.0
+  ],
+  [
+   "2022-04-01",
+   1785.0
+  ],
+  [
+   "2022-04-08",
+   1782.0
+  ],
+  [
+   "2022-04-14",
+   1778.0
+  ],
+  [
+   "2022-04-22",
+   1767.0
+  ],
+  [
+   "2022-04-29",
+   1815.0
+  ],
+  [
+   "2022-05-06",
+   1530.0
+  ],
+  [
+   "2022-05-13",
+   1581.0
+  ],
+  [
+   "2022-05-20",
+   1553.0
+  ],
+  [
+   "2022-05-27",
+   1575.0
+  ],
+  [
+   "2022-06-01",
+   1509.0
+  ],
+  [
+   "2022-06-10",
+   1442.0
+  ],
+  [
+   "2022-06-17",
+   1460.0
+  ],
+  [
+   "2022-06-24",
+   1410.0
+  ],
+  [
+   "2022-07-01",
+   1244.0
+  ],
+  [
+   "2022-07-08",
+   1296.0
+  ],
+  [
+   "2022-07-15",
+   866.5
+  ],
+  [
+   "2022-07-22",
+   1070.0
+  ],
+  [
+   "2022-07-29",
+   1072.0
+  ],
+  [
+   "2022-08-05",
+   1023.0
+  ],
+  [
+   "2022-08-12",
+   1020.0
+  ],
+  [
+   "2022-08-19",
+   1034.0
+  ],
+  [
+   "2022-08-26",
+   904.5
+  ],
+  [
+   "2022-09-02",
+   875.5
+  ],
+  [
+   "2022-09-09",
+   901.0
+  ],
+  [
+   "2022-09-16",
+   905.0
+  ],
+  [
+   "2022-09-23",
+   886.5
+  ],
+  [
+   "2022-09-30",
+   837.5
+  ],
+  [
+   "2022-10-07",
+   842.0
+  ],
+  [
+   "2022-10-14",
+   971.0
+  ],
+  [
+   "2022-10-21",
+   931.5
+  ],
+  [
+   "2022-10-28",
+   974.0
+  ],
+  [
+   "2022-11-04",
+   936.5
+  ],
+  [
+   "2022-11-11",
+   1110.0
+  ],
+  [
+   "2022-11-18",
+   1100.0
+  ],
+  [
+   "2022-11-25",
+   1177.0
+  ],
+  [
+   "2022-12-02",
+   1191.0
+  ],
+  [
+   "2022-12-09",
+   1087.0
+  ],
+  [
+   "2022-12-16",
+   1046.0
+  ],
+  [
+   "2022-12-23",
+   1036.0
+  ],
+  [
+   "2022-12-30",
+   1031.0
+  ],
+  [
+   "2023-01-06",
+   1057.0
+  ],
+  [
+   "2023-01-13",
+   1017.0
+  ],
+  [
+   "2023-01-20",
+   1115.0
+  ],
+  [
+   "2023-01-27",
+   1040.0
+  ],
+  [
+   "2023-02-03",
+   1134.0
+  ],
+  [
+   "2023-02-10",
+   1105.0
+  ],
+  [
+   "2023-02-17",
+   1100.0
+  ],
+  [
+   "2023-02-24",
+   1065.0
+  ],
+  [
+   "2023-03-03",
+   1098.0
+  ],
+  [
+   "2023-03-10",
+   1061.0
+  ],
+  [
+   "2023-03-17",
+   1045.0
+  ],
+  [
+   "2023-03-24",
+   1211.0
+  ],
+  [
+   "2023-03-31",
+   1284.0
+  ],
+  [
+   "2023-04-06",
+   1298.0
+  ],
+  [
+   "2023-04-14",
+   1272.0
+  ],
+  [
+   "2023-04-21",
+   1296.0
+  ],
+  [
+   "2023-04-28",
+   1356.0
+  ],
+  [
+   "2023-05-05",
+   1408.0
+  ],
+  [
+   "2023-05-12",
+   1438.0
+  ],
+  [
+   "2023-05-19",
+   1442.0
+  ],
+  [
+   "2023-05-26",
+   1445.0
+  ],
+  [
+   "2023-06-02",
+   1412.0
+  ],
+  [
+   "2023-06-09",
+   1285.0
+  ],
+  [
+   "2023-06-16",
+   1317.0
+  ],
+  [
+   "2023-06-23",
+   1250.0
+  ],
+  [
+   "2023-06-30",
+   1219.0
+  ],
+  [
+   "2023-07-07",
+   1232.0
+  ],
+  [
+   "2023-07-14",
+   1306.0
+  ],
+  [
+   "2023-07-21",
+   1412.0
+  ],
+  [
+   "2023-07-28",
+   1370.0
+  ],
+  [
+   "2023-08-04",
+   1340.0
+  ],
+  [
+   "2023-08-11",
+   1323.0
+  ],
+  [
+   "2023-08-18",
+   1238.0
+  ],
+  [
+   "2023-08-25",
+   1259.0
+  ],
+  [
+   "2023-09-01",
+   1283.0
+  ],
+  [
+   "2023-09-08",
+   1295.0
+  ],
+  [
+   "2023-09-15",
+   1288.0
+  ],
+  [
+   "2023-09-22",
+   1248.0
+  ],
+  [
+   "2023-09-29",
+   1200.0
+  ],
+  [
+   "2023-10-06",
+   1060.0
+  ],
+  [
+   "2023-10-13",
+   1003.0
+  ],
+  [
+   "2023-10-20",
+   1025.0
+  ],
+  [
+   "2023-10-27",
+   963.5
+  ],
+  [
+   "2023-11-03",
+   1071.0
+  ],
+  [
+   "2023-11-10",
+   1076.0
+  ],
+  [
+   "2023-11-17",
+   1073.0
+  ],
+  [
+   "2023-11-24",
+   1079.0
+  ],
+  [
+   "2023-12-01",
+   1018.0
+  ],
+  [
+   "2023-12-08",
+   1064.0
+  ],
+  [
+   "2023-12-15",
+   1083.0
+  ],
+  [
+   "2023-12-22",
+   1044.0
+  ],
+  [
+   "2023-12-29",
+   1049.0
+  ],
+  [
+   "2024-01-05",
+   995.0
+  ],
+  [
+   "2024-01-12",
+   952.0
+  ],
+  [
+   "2024-01-19",
+   986.0
+  ],
+  [
+   "2024-01-26",
+   1066.0
+  ],
+  [
+   "2024-02-02",
+   1008.0
+  ],
+  [
+   "2024-02-09",
+   1020.0
+  ],
+  [
+   "2024-02-16",
+   1052.0
+  ],
+  [
+   "2024-02-23",
+   1076.0
+  ],
+  [
+   "2024-03-01",
+   1167.0
+  ],
+  [
+   "2024-03-08",
+   1179.0
+  ],
+  [
+   "2024-03-15",
+   1107.0
+  ],
+  [
+   "2024-03-22",
+   1068.0
+  ],
+  [
+   "2024-03-28",
+   1201.0
+  ],
+  [
+   "2024-04-05",
+   1101.0
+  ],
+  [
+   "2024-04-12",
+   1068.0
+  ],
+  [
+   "2024-04-19",
+   1084.0
+  ],
+  [
+   "2024-04-26",
+   1093.0
+  ],
+  [
+   "2024-05-03",
+   1157.0
+  ],
+  [
+   "2024-05-10",
+   1174.0
+  ],
+  [
+   "2024-05-17",
+   1189.0
+  ],
+  [
+   "2024-05-24",
+   1180.0
+  ],
+  [
+   "2024-05-31",
+   1081.0
+  ],
+  [
+   "2024-06-07",
+   1076.0
+  ],
+  [
+   "2024-06-14",
+   1005.0
+  ],
+  [
+   "2024-06-21",
+   1062.0
+  ],
+  [
+   "2024-06-28",
+   1084.0
+  ],
+  [
+   "2024-07-05",
+   1048.0
+  ],
+  [
+   "2024-07-12",
+   1020.0
+  ],
+  [
+   "2024-07-19",
+   966.0
+  ],
+  [
+   "2024-07-26",
+   967.0
+  ],
+  [
+   "2024-08-02",
+   904.5
+  ],
+  [
+   "2024-08-09",
+   879.5
+  ],
+  [
+   "2024-08-16",
+   895.0
+  ],
+  [
+   "2024-08-23",
+   899.5
+  ],
+  [
+   "2024-08-30",
+   893.5
+  ],
+  [
+   "2024-09-06",
+   828.5
+  ],
+  [
+   "2024-09-13",
+   766.5
+  ],
+  [
+   "2024-09-20",
+   785.0
+  ],
+  [
+   "2024-09-27",
+   825.5
+  ],
+  [
+   "2024-10-04",
+   793.0
+  ],
+  [
+   "2024-10-11",
+   767.0
+  ],
+  [
+   "2024-10-18",
+   768.0
+  ],
+  [
+   "2024-10-25",
+   737.0
+  ],
+  [
+   "2024-11-01",
+   735.0
+  ],
+  [
+   "2024-11-08",
+   711.0
+  ],
+  [
+   "2024-11-15",
+   684.0
+  ],
+  [
+   "2024-11-22",
+   685.5
+  ],
+  [
+   "2024-11-29",
+   697.0
+  ],
+  [
+   "2024-12-06",
+   729.0
+  ],
+  [
+   "2024-12-13",
+   709.0
+  ],
+  [
+   "2024-12-20",
+   669.0
+  ],
+  [
+   "2024-12-24",
+   671.0
+  ],
+  [
+   "2024-12-27",
+   675.0
+  ],
+  [
+   "2025-01-03",
+   654.5
+  ],
+  [
+   "2025-01-10",
+   636.0
+  ],
+  [
+   "2025-01-17",
+   650.5
+  ],
+  [
+   "2025-01-24",
+   644.5
+  ],
+  [
+   "2025-01-31",
+   800.0
+  ],
+  [
+   "2025-02-07",
+   718.0
+  ],
+  [
+   "2025-02-14",
+   734.5
+  ],
+  [
+   "2025-02-21",
+   713.0
+  ],
+  [
+   "2025-02-28",
+   671.5
+  ],
+  [
+   "2025-03-07",
+   709.5
+  ],
+  [
+   "2025-03-14",
+   705.5
+  ],
+  [
+   "2025-03-21",
+   736.0
+  ],
+  [
+   "2025-03-28",
+   841.0
+  ],
+  [
+   "2025-04-04",
+   749.0
+  ],
+  [
+   "2025-04-11",
+   773.0
+  ],
+  [
+   "2025-04-17",
+   789.0
+  ],
+  [
+   "2025-04-25",
+   766.0
+  ],
+  [
+   "2025-05-02",
+   822.0
+  ],
+  [
+   "2025-05-09",
+   848.0
+  ],
+  [
+   "2025-05-16",
+   865.0
+  ],
+  [
+   "2025-05-23",
+   857.0
+  ],
+  [
+   "2025-05-30",
+   883.0
+  ],
+  [
+   "2025-06-06",
+   881.0
+  ],
+  [
+   "2025-06-13",
+   901.0
+  ],
+  [
+   "2025-06-20",
+   920.0
+  ],
+  [
+   "2025-06-27",
+   930.0
+  ],
+  [
+   "2025-07-04",
+   948.0
+  ],
+  [
+   "2025-07-11",
+   890.0
+  ],
+  [
+   "2025-07-18",
+   920.0
+  ],
+  [
+   "2025-07-25",
+   995.0
+  ],
+  [
+   "2025-08-01",
+   948.0
+  ],
+  [
+   "2025-08-08",
+   947.0
+  ],
+  [
+   "2025-08-15",
+   930.0
+  ],
+  [
+   "2025-08-22",
+   842.0
+  ],
+  [
+   "2025-08-29",
+   811.0
+  ],
+  [
+   "2025-09-05",
+   794.0
+  ],
+  [
+   "2025-09-12",
+   904.0
+  ],
+  [
+   "2025-09-19",
+   892.0
+  ],
+  [
+   "2025-09-26",
+   864.0
+  ],
+  [
+   "2025-10-03",
+   845.0
+  ],
+  [
+   "2025-10-10",
+   781.0
+  ],
+  [
+   "2025-10-17",
+   871.0
+  ],
+  [
+   "2025-10-24",
+   855.0
+  ],
+  [
+   "2025-10-31",
+   834.0
+  ],
+  [
+   "2025-11-07",
+   824.0
+  ],
+  [
+   "2025-11-14",
+   804.0
+  ],
+  [
+   "2025-11-21",
+   788.0
+  ],
+  [
+   "2025-11-28",
+   804.0
+  ],
+  [
+   "2025-12-05",
+   811.0
+  ],
+  [
+   "2025-12-12",
+   839.0
+  ],
+  [
+   "2025-12-19",
+   828.0
+  ],
+  [
+   "2025-12-24",
+   816.0
+  ],
+  [
+   "2026-01-02",
+   805.0
+  ],
+  [
+   "2026-01-09",
+   830.0
+  ],
+  [
+   "2026-01-16",
+   885.0
+  ],
+  [
+   "2026-01-23",
+   896.0
+  ],
+  [
+   "2026-01-30",
+   871.0
+  ],
+  [
+   "2026-02-06",
+   911.0
+  ],
+  [
+   "2026-02-13",
+   970.0
+  ],
+  [
+   "2026-02-20",
+   952.0
+  ],
+  [
+   "2026-02-27",
+   953.0
+  ],
+  [
+   "2026-03-06",
+   889.0
+  ],
+  [
+   "2026-03-13",
+   830.0
+  ],
+  [
+   "2026-03-20",
+   750.0
+  ],
+  [
+   "2026-03-27",
+   777.0
+  ],
+  [
+   "2026-04-02",
+   770.0
+  ],
+  [
+   "2026-04-10",
+   802.5
+  ],
+  [
+   "2026-04-17",
+   851.0
+  ],
+  [
+   "2026-04-24",
+   841.5
+  ],
+  [
+   "2026-05-01",
+   819.5
+  ],
+  [
+   "2026-05-08",
+   807.5
+  ],
+  [
+   "2026-05-15",
+   778.0
+  ],
+  [
+   "2026-05-22",
+   777.0
+  ],
+  [
+   "2026-05-29",
+   780.5
+  ],
+  [
+   "2026-06-05",
+   751.0
+  ],
+  [
+   "2026-06-12",
+   840.0
+  ],
+  [
+   "2026-06-19",
+   807.0
+  ],
+  [
+   "2026-06-26",
+   816.5
+  ],
+  [
+   "2026-07-03",
+   800.0
+  ],
+  [
+   "2026-07-10",
+   777.5
+  ],
+  [
+   "2026-07-17",
+   812.5
+  ],
+  [
+   "2026-07-24",
+   820.0
+  ],
+  [
+   "2026-07-31",
+   862.0
+  ],
+  [
+   "2026-08-07",
+   882.0
+  ],
+  [
+   "2026-08-14",
+   871.0
+  ],
+  [
+   "2026-08-21",
+   853.0
+  ],
+  [
+   "2026-08-28",
+   853.5
+  ],
+  [
+   "2026-09-04",
+   825.0
+  ],
+  [
+   "2026-09-11",
+   788.0
+  ],
+  [
+   "2026-09-18",
+   840.5
+  ],
+  [
+   "2026-09-25",
+   831.5
+  ],
+  [
+   "2026-10-02",
+   833.5
+  ],
+  [
+   "2026-10-09",
+   858.5
+  ],
+  [
+   "2026-10-16",
+   924.0
+  ],
+  [
+   "2026-10-20",
+   932.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2022-01-27",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -2,
+   "q": "However, it is now clear that cost headwinds in 2022 will be more significant than we anticipated, and whilst we are employing a range of mitigating actions, margins are expected to remain broadly flat in 2022, resulting in an EBITDA range of between £69 million and £72 million.",
+   "file": "20220127_FEVR_FY21-Trading-Update.md"
+  },
+  {
+   "d": "2022-03-16",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "CUT",
+   "s": -3,
+   "q": "As a result, we now expect to deliver an EBITDA range of between £63 million and £66 million for FY22.",
+   "file": "20220316_FEVR_FY21-Preliminary-Results-to-31-December-2021.md"
+  },
+  {
+   "d": "2022-05-19",
+   "doc": "AGM",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "We are not only confident in the long-term prospects for the brand, but also of delivering another good performance this year and are trading in line with the Board's expectations for the full year to 31 December 2022, as set out in March: Revenue range of c.£355m - £365m and an EBITDA range of c.£63 - £66m.",
+   "file": "20220519_FEVR_Trading-Update.md"
+  },
+  {
+   "d": "2022-07-15",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "CUT",
+   "s": -3,
+   "q": "We expect this to continue to impact the business during the second half, resulting in a revised EBITDA guidance of between £37.5 million and £45 million for the full year.",
+   "file": "20220715_FEVR_HY-pre-close-trading-update.md"
+  },
+  {
+   "d": "2022-09-13",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Whilst we acknowledge this elevated uncertainty, our performance has remained in line with the revised guidance provided in July, and so are reiterating our revenue guidance range of £355 million to £365 million for the full year, with a gross profit margin in a range of 33% to 35%, and an EBITDA range of c. £37.5 million to £45 million.",
+   "file": "20220913_FEVR_Fever-Tree-FY22-Interim-Results.md"
+  },
+  {
+   "d": "2023-01-26",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "As a result of the above impacts, most notably the continued impact of elevated European energy pricing on glass, we are working to deliver EBITDA in-line with 2022 and introduce an EBITDA guidance range of £36m to £42m for 2023.",
+   "file": "20230126_FEVR_FY22-pre-close-trading-update.md"
+  },
+  {
+   "d": "2023-03-22",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "As highlighted in January, whilst the business is facing significant inflationary headwinds, most notably in relation to glass bottle costs, we are focused on mitigating actions through a combination of pricing across regions, cost saving initiatives, and increased local US production. As a result the Group expects to deliver EBITDA in line with previous guidance of between £36m - £42m.",
+   "file": "20230322_FEVR_FY22-Preliminary-Results-to-31-December-2022.md"
+  },
+  {
+   "d": "2023-05-25",
+   "doc": "AGM",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Whilst inflationary cost pressures remain elevated, the Group continues to be focused on delivering initiatives to mitigate these costs and expects to drive margin improvements as we progress through the year, which means we're on-track to deliver EBITDA in-line with our guidance range of £36m to £42m for 2023.",
+   "file": "20230525_FEVR_AGM-Trading-Statement.md"
+  },
+  {
+   "d": "2023-09-12",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -3,
+   "q": "We remain committed to investing in the substantial future opportunity for the brand across our regions and expect overheads to be in the range £88m to £92m resulting in FY23 EBITDA guidance range of c.£30m to £36m.",
+   "file": "20230912_FEVR_Fever-Tree-FY23-Interim-Results.md"
+  },
+  {
+   "d": "2023-09-12",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "We remain committed to investing in the substantial future opportunity for the brand across our regions and expect overheads to be in the range £88m to £92m resulting in FY23 EBITDA guidance range of c.£30m to £36m.",
+   "file": "20230912_FEVR_Fever-Tree-FY23-Interim-Results---Replacement.md"
+  },
+  {
+   "d": "2024-01-25",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "The Group expects to deliver Adjusted EBITDA for the full year of c.£30 million, within our guidance range.",
+   "file": "20240125_FEVR_FY23-pre-close-trading-update.md"
+  },
+  {
+   "d": "2024-03-26",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "We expect operating expenses to be c.23% of revenue and, as a result, the Group expects to deliver Adjusted EBITDA margin in line with previous guidance of c.15%.",
+   "file": "20240326_FEVR_FY23-Preliminary-Results-to-31-December-2023.md"
+  },
+  {
+   "d": "2024-06-06",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The brand has continued to drive market share gains across its regions and deliver topline growth in the year to date. We look forward to our key summer trading period, which will include a range of marketing initiatives and activations, and remain comfortable with full year expectations.",
+   "file": "20240606_FEVR_AGM-Trading-Statement.md"
+  },
+  {
+   "d": "2024-09-12",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -2,
+   "q": "We expect to deliver brand growth for the second half of c.7% to c.10%, resulting in revenue growth of c.4% to c.5% across the full year for the Fever-Tree brand.",
+   "file": "20240912_FEVR_FY24-Interim-Results-to-30-June-2024.md"
+  },
+  {
+   "d": "2025-01-30",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -2,
+   "q": "As we establish the partnership in the US this year, it is prudent to expect low single digit Group revenue growth for 2025 alongside a short-term EBITDA impact as we transition the business",
+   "file": "20250130_FEVR_US-Strategic-Partnership-with-Molson-Coors.md",
+   "gnote": "discounted: Molson Coors US partnership"
+  },
+  {
+   "d": "2025-03-25",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "As highlighted at the time of the announcement, FY25 will be a transition year for the US business and therefore we are comfortable with consensus expectations of low single digit Group revenue growth and c.12% Group Adjusted EBITDA margin.",
+   "file": "20250325_FEVR_FY24-Preliminary-Results-to-31-December-2024.md"
+  },
+  {
+   "d": "2025-06-05",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "We remain comfortable with consensus expectations of low single digit Group revenue growth at constant currency and c.12% Group Adjusted EBITDA margin for FY25.",
+   "file": "20250605_FEVR_AGM-Trading-Statement.md"
+  },
+  {
+   "d": "2025-09-11",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group has made a good start to the second half of the year across our regions and we remain comfortable with full year market expectations.",
+   "file": "20250911_FEVR_FY25-Interim-Results-to-30-June-2025.md"
+  },
+  {
+   "d": "2026-01-29",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Adjusted revenue1 and adjusted EBITDA2 for FY25 are expected to be marginally ahead of current market expectations3, based upon good momentum in the second half which has resulted in Fever-Tree brand revenue increasing by 5% in H2, and full year growth of 4% (both at constant currency).",
+   "file": "20260129_FEVR_Pre-close-trading-update.md"
+  },
+  {
+   "d": "2026-03-24",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "Excluding this EPR-related provision, adjusted EBITDA was £45.2m, in line with previous guidance.",
+   "file": "20260324_FEVR_FY25-Preliminary-Results-to-31-December-2025.md"
+  },
+  {
+   "d": "2026-06-09",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group has made a solid start to the year and remains confident of achieving full-year market expectations.",
+   "file": "20260609_FEVR_AGM-Trading-Statement.md"
+  },
+  {
+   "d": "2026-09-10",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The brand has continued to trade well post period-end, and with a well hedged cost base, the Group’s expectations for 2026 remain unchanged and in line with market expectations.",
+   "file": "20260910_FEVR_FY26-Interim-Results-to-30-June-2026.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-10",
+  "doc": "H1 R",
+  "file": "20260910_FEVR_FY26-Interim-Results-to-30-June-2026.md",
+  "vs": "H1 R Sep-25 · AGM Jun-26 · H1 R Sep-24",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Headline “US momentum building under the Molson Coors partnership” beside “The US segment delivered Adjusted EBITDA of £4.1 million (H1 2025: £5.0 million), representing a margin of 6.2% (H1 2025: 8.1%).”",
+    "span": "US segment margin 14.8% (H1-24) → 8.1% (H1-25) → 6.2% (H1-26)"
+   },
+   {
+    "sev": "grey",
+    "type": "Wording vs number",
+    "text": "Europe headline growth flattered by timing: “In Europe, Fever-Tree brand revenue increased by 10% year-on-year at constant currency, driven by good performances in France and Switzerland and some favourable order phasing.” then “Underlying growth was c.4%, in-line with expectations.”",
+    "span": "Europe flat at constant currency in H1-25"
+   }
+  ]
+ }
+}

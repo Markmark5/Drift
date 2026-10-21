@@ -1,0 +1,1362 @@
+{
+ "ticker": "BATS",
+ "v": "2026-10-21.b640",
+ "ccy": "GBX",
+ "src": "AlphaVantage BATS.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   2599.0
+  ],
+  [
+   "2021-10-22",
+   2600.0
+  ],
+  [
+   "2021-10-29",
+   2546.5
+  ],
+  [
+   "2021-11-05",
+   2544.0
+  ],
+  [
+   "2021-11-12",
+   2613.0
+  ],
+  [
+   "2021-11-19",
+   2544.5
+  ],
+  [
+   "2021-11-26",
+   2541.0
+  ],
+  [
+   "2021-12-03",
+   2583.5
+  ],
+  [
+   "2021-12-10",
+   2759.0
+  ],
+  [
+   "2021-12-17",
+   2762.5
+  ],
+  [
+   "2021-12-24",
+   2750.0
+  ],
+  [
+   "2021-12-31",
+   2733.5
+  ],
+  [
+   "2022-01-07",
+   2820.0
+  ],
+  [
+   "2022-01-14",
+   3033.0
+  ],
+  [
+   "2022-01-21",
+   3138.0
+  ],
+  [
+   "2022-01-28",
+   3164.5
+  ],
+  [
+   "2022-02-04",
+   3211.0
+  ],
+  [
+   "2022-02-11",
+   3368.5
+  ],
+  [
+   "2022-02-18",
+   3409.0
+  ],
+  [
+   "2022-02-25",
+   3345.0
+  ],
+  [
+   "2022-03-04",
+   3079.0
+  ],
+  [
+   "2022-03-11",
+   3068.0
+  ],
+  [
+   "2022-03-18",
+   3170.0
+  ],
+  [
+   "2022-03-25",
+   3300.0
+  ],
+  [
+   "2022-04-01",
+   3226.0
+  ],
+  [
+   "2022-04-08",
+   3291.0
+  ],
+  [
+   "2022-04-14",
+   3262.0
+  ],
+  [
+   "2022-04-22",
+   3339.5
+  ],
+  [
+   "2022-04-29",
+   3352.0
+  ],
+  [
+   "2022-05-06",
+   3300.0
+  ],
+  [
+   "2022-05-13",
+   3429.0
+  ],
+  [
+   "2022-05-20",
+   3430.5
+  ],
+  [
+   "2022-05-27",
+   3550.5
+  ],
+  [
+   "2022-06-01",
+   3536.5
+  ],
+  [
+   "2022-06-10",
+   3493.0
+  ],
+  [
+   "2022-06-17",
+   3435.0
+  ],
+  [
+   "2022-06-24",
+   3530.5
+  ],
+  [
+   "2022-07-01",
+   3535.5
+  ],
+  [
+   "2022-07-08",
+   3383.0
+  ],
+  [
+   "2022-07-15",
+   3471.5
+  ],
+  [
+   "2022-07-22",
+   3420.5
+  ],
+  [
+   "2022-07-29",
+   3220.5
+  ],
+  [
+   "2022-08-05",
+   3257.0
+  ],
+  [
+   "2022-08-12",
+   3324.0
+  ],
+  [
+   "2022-08-19",
+   3465.5
+  ],
+  [
+   "2022-08-26",
+   3462.5
+  ],
+  [
+   "2022-09-02",
+   3460.5
+  ],
+  [
+   "2022-09-09",
+   3489.0
+  ],
+  [
+   "2022-09-16",
+   3450.5
+  ],
+  [
+   "2022-09-23",
+   3386.5
+  ],
+  [
+   "2022-09-30",
+   3226.5
+  ],
+  [
+   "2022-10-07",
+   3313.5
+  ],
+  [
+   "2022-10-14",
+   3281.5
+  ],
+  [
+   "2022-10-21",
+   3321.0
+  ],
+  [
+   "2022-10-28",
+   3414.5
+  ],
+  [
+   "2022-11-04",
+   3376.5
+  ],
+  [
+   "2022-11-11",
+   3187.0
+  ],
+  [
+   "2022-11-18",
+   3311.0
+  ],
+  [
+   "2022-11-25",
+   3355.5
+  ],
+  [
+   "2022-12-02",
+   3408.0
+  ],
+  [
+   "2022-12-09",
+   3316.0
+  ],
+  [
+   "2022-12-16",
+   3293.5
+  ],
+  [
+   "2022-12-23",
+   3316.5
+  ],
+  [
+   "2022-12-30",
+   3281.5
+  ],
+  [
+   "2023-01-06",
+   3343.5
+  ],
+  [
+   "2023-01-13",
+   3124.0
+  ],
+  [
+   "2023-01-20",
+   3121.5
+  ],
+  [
+   "2023-01-27",
+   3036.5
+  ],
+  [
+   "2023-02-03",
+   3125.5
+  ],
+  [
+   "2023-02-10",
+   3045.0
+  ],
+  [
+   "2023-02-17",
+   3162.0
+  ],
+  [
+   "2023-02-24",
+   3216.5
+  ],
+  [
+   "2023-03-03",
+   3144.0
+  ],
+  [
+   "2023-03-10",
+   3113.5
+  ],
+  [
+   "2023-03-17",
+   2948.5
+  ],
+  [
+   "2023-03-24",
+   2872.0
+  ],
+  [
+   "2023-03-31",
+   2840.5
+  ],
+  [
+   "2023-04-06",
+   2838.0
+  ],
+  [
+   "2023-04-14",
+   2835.0
+  ],
+  [
+   "2023-04-21",
+   2921.0
+  ],
+  [
+   "2023-04-28",
+   2927.0
+  ],
+  [
+   "2023-05-05",
+   2804.0
+  ],
+  [
+   "2023-05-12",
+   2709.0
+  ],
+  [
+   "2023-05-19",
+   2666.5
+  ],
+  [
+   "2023-05-26",
+   2670.0
+  ],
+  [
+   "2023-06-02",
+   2570.5
+  ],
+  [
+   "2023-06-09",
+   2590.5
+  ],
+  [
+   "2023-06-16",
+   2580.5
+  ],
+  [
+   "2023-06-23",
+   2625.0
+  ],
+  [
+   "2023-06-30",
+   2608.0
+  ],
+  [
+   "2023-07-07",
+   2574.0
+  ],
+  [
+   "2023-07-14",
+   2524.0
+  ],
+  [
+   "2023-07-21",
+   2650.0
+  ],
+  [
+   "2023-07-28",
+   2646.5
+  ],
+  [
+   "2023-08-04",
+   2562.0
+  ],
+  [
+   "2023-08-11",
+   2541.5
+  ],
+  [
+   "2023-08-18",
+   2525.0
+  ],
+  [
+   "2023-08-25",
+   2589.0
+  ],
+  [
+   "2023-09-01",
+   2608.0
+  ],
+  [
+   "2023-09-08",
+   2592.0
+  ],
+  [
+   "2023-09-15",
+   2702.0
+  ],
+  [
+   "2023-09-22",
+   2710.0
+  ],
+  [
+   "2023-09-29",
+   2577.0
+  ],
+  [
+   "2023-10-06",
+   2483.0
+  ],
+  [
+   "2023-10-13",
+   2447.0
+  ],
+  [
+   "2023-10-20",
+   2455.0
+  ],
+  [
+   "2023-10-27",
+   2403.0
+  ],
+  [
+   "2023-11-03",
+   2526.5
+  ],
+  [
+   "2023-11-10",
+   2477.0
+  ],
+  [
+   "2023-11-17",
+   2521.5
+  ],
+  [
+   "2023-11-24",
+   2555.0
+  ],
+  [
+   "2023-12-01",
+   2508.0
+  ],
+  [
+   "2023-12-08",
+   2316.5
+  ],
+  [
+   "2023-12-15",
+   2311.5
+  ],
+  [
+   "2023-12-22",
+   2290.0
+  ],
+  [
+   "2023-12-29",
+   2295.5
+  ],
+  [
+   "2024-01-05",
+   2360.0
+  ],
+  [
+   "2024-01-12",
+   2348.0
+  ],
+  [
+   "2024-01-19",
+   2307.5
+  ],
+  [
+   "2024-01-26",
+   2333.0
+  ],
+  [
+   "2024-02-02",
+   2365.0
+  ],
+  [
+   "2024-02-09",
+   2421.0
+  ],
+  [
+   "2024-02-16",
+   2413.5
+  ],
+  [
+   "2024-02-23",
+   2388.0
+  ],
+  [
+   "2024-03-01",
+   2334.5
+  ],
+  [
+   "2024-03-08",
+   2286.5
+  ],
+  [
+   "2024-03-15",
+   2340.5
+  ],
+  [
+   "2024-03-22",
+   2376.0
+  ],
+  [
+   "2024-03-28",
+   2406.0
+  ],
+  [
+   "2024-04-05",
+   2329.0
+  ],
+  [
+   "2024-04-12",
+   2307.0
+  ],
+  [
+   "2024-04-19",
+   2310.0
+  ],
+  [
+   "2024-04-26",
+   2326.0
+  ],
+  [
+   "2024-05-03",
+   2355.0
+  ],
+  [
+   "2024-05-10",
+   2433.0
+  ],
+  [
+   "2024-05-17",
+   2475.0
+  ],
+  [
+   "2024-05-24",
+   2390.0
+  ],
+  [
+   "2024-05-31",
+   2415.0
+  ],
+  [
+   "2024-06-07",
+   2437.0
+  ],
+  [
+   "2024-06-14",
+   2392.0
+  ],
+  [
+   "2024-06-21",
+   2488.0
+  ],
+  [
+   "2024-06-28",
+   2430.0
+  ],
+  [
+   "2024-07-05",
+   2460.0
+  ],
+  [
+   "2024-07-12",
+   2507.0
+  ],
+  [
+   "2024-07-19",
+   2565.0
+  ],
+  [
+   "2024-07-26",
+   2729.0
+  ],
+  [
+   "2024-08-02",
+   2788.0
+  ],
+  [
+   "2024-08-09",
+   2801.0
+  ],
+  [
+   "2024-08-16",
+   2774.0
+  ],
+  [
+   "2024-08-23",
+   2759.0
+  ],
+  [
+   "2024-08-30",
+   2836.0
+  ],
+  [
+   "2024-09-06",
+   2929.0
+  ],
+  [
+   "2024-09-13",
+   2965.0
+  ],
+  [
+   "2024-09-20",
+   2810.0
+  ],
+  [
+   "2024-09-27",
+   2774.0
+  ],
+  [
+   "2024-10-04",
+   2681.0
+  ],
+  [
+   "2024-10-11",
+   2677.0
+  ],
+  [
+   "2024-10-18",
+   2640.0
+  ],
+  [
+   "2024-10-25",
+   2658.0
+  ],
+  [
+   "2024-11-01",
+   2705.0
+  ],
+  [
+   "2024-11-08",
+   2733.0
+  ],
+  [
+   "2024-11-15",
+   2867.0
+  ],
+  [
+   "2024-11-22",
+   2969.0
+  ],
+  [
+   "2024-11-29",
+   2988.0
+  ],
+  [
+   "2024-12-06",
+   2968.0
+  ],
+  [
+   "2024-12-13",
+   2992.0
+  ],
+  [
+   "2024-12-20",
+   2879.0
+  ],
+  [
+   "2024-12-24",
+   2880.0
+  ],
+  [
+   "2024-12-27",
+   2893.0
+  ],
+  [
+   "2025-01-03",
+   2973.0
+  ],
+  [
+   "2025-01-10",
+   2966.0
+  ],
+  [
+   "2025-01-17",
+   2962.0
+  ],
+  [
+   "2025-01-24",
+   3008.0
+  ],
+  [
+   "2025-01-31",
+   3197.0
+  ],
+  [
+   "2025-02-07",
+   3348.0
+  ],
+  [
+   "2025-02-14",
+   3090.0
+  ],
+  [
+   "2025-02-21",
+   2965.0
+  ],
+  [
+   "2025-02-28",
+   3087.0
+  ],
+  [
+   "2025-03-07",
+   3145.0
+  ],
+  [
+   "2025-03-14",
+   3165.0
+  ],
+  [
+   "2025-03-21",
+   3162.0
+  ],
+  [
+   "2025-03-28",
+   3124.0
+  ],
+  [
+   "2025-04-04",
+   3101.0
+  ],
+  [
+   "2025-04-11",
+   3155.0
+  ],
+  [
+   "2025-04-17",
+   3164.0
+  ],
+  [
+   "2025-04-25",
+   3141.0
+  ],
+  [
+   "2025-05-02",
+   3225.0
+  ],
+  [
+   "2025-05-09",
+   3135.0
+  ],
+  [
+   "2025-05-16",
+   3187.0
+  ],
+  [
+   "2025-05-23",
+   3335.0
+  ],
+  [
+   "2025-05-30",
+   3334.0
+  ],
+  [
+   "2025-06-06",
+   3520.0
+  ],
+  [
+   "2025-06-13",
+   3588.0
+  ],
+  [
+   "2025-06-20",
+   3641.0
+  ],
+  [
+   "2025-06-27",
+   3430.0
+  ],
+  [
+   "2025-07-04",
+   3543.0
+  ],
+  [
+   "2025-07-11",
+   3788.0
+  ],
+  [
+   "2025-07-18",
+   3812.0
+  ],
+  [
+   "2025-07-25",
+   3900.0
+  ],
+  [
+   "2025-08-01",
+   4131.0
+  ],
+  [
+   "2025-08-08",
+   4228.0
+  ],
+  [
+   "2025-08-15",
+   4198.0
+  ],
+  [
+   "2025-08-22",
+   4315.0
+  ],
+  [
+   "2025-08-29",
+   4185.0
+  ],
+  [
+   "2025-09-05",
+   4133.0
+  ],
+  [
+   "2025-09-12",
+   4160.0
+  ],
+  [
+   "2025-09-19",
+   4031.0
+  ],
+  [
+   "2025-09-26",
+   3940.0
+  ],
+  [
+   "2025-10-03",
+   3815.0
+  ],
+  [
+   "2025-10-10",
+   3845.0
+  ],
+  [
+   "2025-10-17",
+   3835.0
+  ],
+  [
+   "2025-10-24",
+   3900.0
+  ],
+  [
+   "2025-10-31",
+   3904.0
+  ],
+  [
+   "2025-11-07",
+   4130.0
+  ],
+  [
+   "2025-11-14",
+   4072.0
+  ],
+  [
+   "2025-11-21",
+   4227.0
+  ],
+  [
+   "2025-11-28",
+   4421.0
+  ],
+  [
+   "2025-12-05",
+   4283.0
+  ],
+  [
+   "2025-12-12",
+   4238.0
+  ],
+  [
+   "2025-12-19",
+   4236.0
+  ],
+  [
+   "2025-12-24",
+   4215.0
+  ],
+  [
+   "2026-01-02",
+   4189.0
+  ],
+  [
+   "2026-01-09",
+   4060.0
+  ],
+  [
+   "2026-01-16",
+   4326.0
+  ],
+  [
+   "2026-01-23",
+   4328.0
+  ],
+  [
+   "2026-01-30",
+   4376.0
+  ],
+  [
+   "2026-02-06",
+   4609.0
+  ],
+  [
+   "2026-02-13",
+   4354.0
+  ],
+  [
+   "2026-02-20",
+   4569.0
+  ],
+  [
+   "2026-02-27",
+   4640.0
+  ],
+  [
+   "2026-03-06",
+   4282.0
+  ],
+  [
+   "2026-03-13",
+   4519.0
+  ],
+  [
+   "2026-03-20",
+   4311.0
+  ],
+  [
+   "2026-03-27",
+   4351.0
+  ],
+  [
+   "2026-04-02",
+   4407.0
+  ],
+  [
+   "2026-04-10",
+   4351.0
+  ],
+  [
+   "2026-04-17",
+   4142.0
+  ],
+  [
+   "2026-04-24",
+   4302.0
+  ],
+  [
+   "2026-05-01",
+   4329.0
+  ],
+  [
+   "2026-05-08",
+   4267.0
+  ],
+  [
+   "2026-05-15",
+   4864.0
+  ],
+  [
+   "2026-05-22",
+   4875.0
+  ],
+  [
+   "2026-05-29",
+   4591.0
+  ],
+  [
+   "2026-06-05",
+   4404.0
+  ],
+  [
+   "2026-06-12",
+   4631.0
+  ],
+  [
+   "2026-06-19",
+   4337.0
+  ],
+  [
+   "2026-06-26",
+   4751.0
+  ],
+  [
+   "2026-07-03",
+   4621.0
+  ],
+  [
+   "2026-07-10",
+   4462.0
+  ],
+  [
+   "2026-07-17",
+   4669.0
+  ],
+  [
+   "2026-07-24",
+   4572.0
+  ],
+  [
+   "2026-07-31",
+   4570.0
+  ],
+  [
+   "2026-08-07",
+   4421.0
+  ],
+  [
+   "2026-08-14",
+   4214.0
+  ],
+  [
+   "2026-08-21",
+   4131.0
+  ],
+  [
+   "2026-08-28",
+   4129.0
+  ],
+  [
+   "2026-09-04",
+   4125.0
+  ],
+  [
+   "2026-09-11",
+   4100.0
+  ],
+  [
+   "2026-09-18",
+   4196.0
+  ],
+  [
+   "2026-09-25",
+   4180.0
+  ],
+  [
+   "2026-10-02",
+   3960.0
+  ],
+  [
+   "2026-10-09",
+   4194.0
+  ],
+  [
+   "2026-10-16",
+   4457.0
+  ],
+  [
+   "2026-10-20",
+   4419.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-12-07",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "flat",
+   "s": 0,
+   "q": "We are accelerating our transformation with continued strong momentum across New Categories and are confident in delivering our 2021 financial guidance.",
+   "file": "20211207_BATS_2021-Second-Half-Pre-Close-Trading-Update.md"
+  },
+  {
+   "d": "2022-02-11",
+   "doc": "FY R",
+   "fy": "FY21",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Constant currency adjusted diluted EPS growth of 6.6% was at the top end of our mid-single digit EPS guidance.",
+   "file": "20220211_BATS_Final-Results.md"
+  },
+  {
+   "d": "2022-03-11",
+   "doc": "OPS",
+   "fy": "FY22",
+   "g": "CUT",
+   "s": -3,
+   "q": "We now expect constant currency Group revenue growth of 2% to 4% and Mid-Single Figure constant currency adjusted diluted EPS growth.",
+   "file": "20220311_BATS_Russia-Business-Update-and-Guidance-Impact.md",
+   "gnote": "discounted: Russia exit"
+  },
+  {
+   "d": "2022-04-28",
+   "doc": "AGM",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Accordingly, we continue to expect full year constant currency Group revenue growth of 2% to 4% and mid-single figure constant currency adjusted* diluted EPS growth, with growth second-half weighted.",
+   "file": "20220428_BATS_AGM-Statement.md"
+  },
+  {
+   "d": "2022-06-09",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "While we are not immune to these pressures, we are confident in delivering on our current financial targets, irrespective of the timing of the transfer of our Russian business.",
+   "file": "20220609_BATS_2022-First-Half-Pre-Close-Trading-Update.md"
+  },
+  {
+   "d": "2022-07-27",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "While we are not immune to the current macro environment, we are confident in our full year guidance, irrespective of the timing of the transfer of our Russian business.",
+   "file": "20220727_BATS_Half-year-Report.md"
+  },
+  {
+   "d": "2022-12-08",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "In summary, our transformation is accelerating, driven by our New Categories performance, and we are delivering on our full year guidance.",
+   "file": "20221208_BATS_2022-Second-Half-Pre-Close-Trading-Update.md"
+  },
+  {
+   "d": "2023-02-09",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Driven by our strong New Category momentum, (with revenue approaching £3bn), we are confident in our £5bn revenue target by 2025, and now expect New Category profitability in 2024, one year ahead of plan.",
+   "file": "20230209_BATS_Final-Results.md"
+  },
+  {
+   "d": "2023-04-19",
+   "doc": "AGM",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Turning to our outlook, we continue to expect full year constant currency organic Group revenue growth of 3 to 5% excluding Russia and Belarus; and EPS growth, on a constant currency adjusted ◊  diluted earnings per share basis, of mid-single figure.",
+   "file": "20230419_BATS_AGM-Statement.md"
+  },
+  {
+   "d": "2023-06-06",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "3-5% organic6 constant currency revenue growth, with performance expected to be H2 weighted; reported growth impacted by timing of the transfer of the Russian and Belarusian businesses expected to close in 2023",
+   "file": "20230606_BATS_2023-First-Half-Pre-Close-Trading-Update.md"
+  },
+  {
+   "d": "2023-07-26",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Resilient performance, renewed energy, full-year guidance on track",
+   "file": "20230726_BATS_Half-year-Report.md"
+  },
+  {
+   "d": "2023-09-07",
+   "doc": "OPS",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "BAT remains confident of delivering its Full Year guidance as set out at our Half Year results on 26 July 2023.",
+   "file": "20230907_BATS_Russia-business-update-–-agreement-signed.md"
+  },
+  {
+   "d": "2023-12-06",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -3,
+   "q": "As a result, we now expect low-single digit revenue and adjusted profit from operations growth in 2024, on an organic1 basis at constant rates.",
+   "file": "20231206_BATS_Pre-Close-Trading-Update-and-Strategy-Update.md"
+  },
+  {
+   "d": "2023-12-06",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "As a result, we now expect low-single digit revenue and adjusted profit from operations growth in 2024, on an organic1 basis at constant rates.",
+   "file": "20231206_BATS_Pre-Close-Trading-Update-and-Strategy-Update_2.md"
+  },
+  {
+   "d": "2024-02-08",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Low-single figure organic revenue* growth and continued progress towards our 2025 £5 billion New Category revenue ambition.",
+   "file": "20240208_BATS_Final-Results.md"
+  },
+  {
+   "d": "2024-04-24",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Turning to our outlook for 2024, we continue to expect delivery in line with our guidance, of low-single digit organic growth in revenue and adjusted profit from operations, including a 2% transactional FX headwind.",
+   "file": "20240424_BATS_AGM-Statement.md"
+  },
+  {
+   "d": "2024-06-04",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "As a result, we expect our H1 revenue and adjusted profit from operations to be down by low-single digits on an organic3, constant currency basis.",
+   "file": "20240604_BATS_Trading-Statement.md"
+  },
+  {
+   "d": "2024-07-25",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -1,
+   "q": "However, the continued lack of enforcement against illicit single-use vapour products in the U.S., compounded by the sale of our businesses in Russia and Belarus in 2023, means that New Category revenue is likely to be below our £5 billion ambition in 2025.",
+   "file": "20240725_BATS_Half-year-Report.md"
+  },
+  {
+   "d": "2024-12-11",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "We are on track to deliver our 2024 guidance, demonstrating the strength and resilience of our business.",
+   "file": "20241211_BATS_Trading-Statement.md"
+  },
+  {
+   "d": "2025-02-13",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -2,
+   "q": "In 2025, we expect significant combustibles headwinds to impact performance, particularly in Australia where new tobacco regulations come into effect in April 2025 and in Bangladesh following a substantial increase in excise and VAT.",
+   "file": "20250213_BATS_Final-Results.md"
+  },
+  {
+   "d": "2025-04-16",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "While we are closely monitoring the evolution of global macroeconomic policy, with specific reference to its potential impact on both our consumers and our supply chain, we continue to expect delivery in line with guidance, of:",
+   "file": "20250416_BATS_AGM-Statement.md"
+  },
+  {
+   "d": "2025-06-03",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 0,
+   "q": "Our revenue performance in H1 is slightly ahead of our previous guidance, and we now expect to deliver FY revenue growth of 1-2%, supporting 1.5 to 2.5% adjusted profit from operations growth3.",
+   "file": "20250603_BATS_2025-H1-Pre-Close-Trading-Update.md"
+  },
+  {
+   "d": "2025-07-31",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Our H1 performance is slightly ahead of expectations. 2025 is a deployment year and we are firmly on track to deliver our FY guidance.",
+   "file": "20250731_BATS_Half-year-Report.md"
+  },
+  {
+   "d": "2025-12-09",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -1,
+   "q": "Confident in sustainably delivering mid-term growth algorithm from 2026 (+3-5% revenue, +4-6% APFO1 and +5-8% adj. diluted EPS1), with 2026 performance expected at the lower end of the range",
+   "file": "20251209_BATS_2025-H2-Pre-Close-Trading-Update.md"
+  },
+  {
+   "d": "2026-02-12",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "With this momentum, together with resilient combustibles delivery and further productivity initiatives, we are confident in sustainably delivering on our financial algorithm of +3-5% revenue2, +4-6% APFO1,2,3 and +5-8% adjusted diluted EPS1,2,3, with 2026 expected to be at the lower end of the range, as we continue to invest in our transformation.",
+   "file": "20260212_BATS_Preliminary-Results.md"
+  },
+  {
+   "d": "2026-02-18",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "BAT reaffirms FY26 guidance, first announced on 12 February 2026, indicating performance at the lower end of the following constant-currency ranges: 3-5% revenue growth; 4-6% adjusted profit from operations growth (adj. for Canada and H2 weighted); and 5-8% adjusted diluted EPS growth (adj. for Canada).",
+   "file": "20260218_BATS_BAT-to-Present-at-CAGNY;-Reaffirming-FY26-Guidance.md"
+  },
+  {
+   "d": "2026-04-15",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "We continue to expect performance at the lower end of our guided ranges this year, reflecting the time required to stabilise the APMEA region and our continued investment behind premium innovation roll-outs.",
+   "file": "20260415_BATS_AGM-Statement.md"
+  },
+  {
+   "d": "2026-06-02",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Confident in sustainably delivering our mid-term algorithm: 3-5% revenue, 4-6% APFO3 and 5-8% adjusted diluted EPS3 growth, with 2026 performance still expected at the lower end of these ranges",
+   "file": "20260602_BATS_2026-H1-Pre-Close-Trading-Update.md"
+  },
+  {
+   "d": "2026-07-30",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "FY26 adjusted diluted EPS1,2,3 now expected to be towards the middle of our 5-8% guidance range",
+   "file": "20260730_BATS_Half-year-Report.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-07-30",
+  "doc": "H1 R",
+  "file": "20260730_BATS_Half-year-Report.md",
+  "vs": "H1 R Jul-25 · H1 TU Jun-26 · FY R Feb-26",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Headline “H1 in line with expectations; Confident in FY26 guidance” beside “partly offset by a slower than expected recovery in APMEA (down 6.3%)”; Jun-26 had promised “we expect a sequential improvement” in APMEA",
+    "span": "APMEA weakness named Jul-25, Jun-26, Jul-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Restated",
+    "text": "Market share KPI redefined: “the Group has decoupled the value share and volume share metrics from a combined Cigarettes and HP view”, so cigarette share (−30 bps volume, −40 bps value) no longer compares with the combined figure in earlier reports",
+    "span": "Combined Cigarettes+HP share used through FY25 → cigarettes only from H1-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Demoted",
+    "text": "Smokeless consumer count left the CEO statement and highlights: Jul-25 “We added 1.4 million consumers (to 30.5 million) of our smokeless brands.”, Feb-26 “Added 4.7 million consumers (to 34.1 million) of our Smokeless brands” → H1-26 only in the KPI table (35.0m, +0.9m)",
+    "span": "In the headline text at H1-25 and FY-25"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "EPS guide moved up: Jun-26 “with 2026 performance still expected at the lower end of these ranges” → “FY26 adjusted diluted EPS1,2,3 now expected to be towards the middle of our 5-8% guidance range”; revenue and APFO stay at the lower end",
+    "span": "Lower end at Dec-25, Feb-26, Apr-26, Jun-26"
+   }
+  ]
+ }
+}

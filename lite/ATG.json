@@ -1,0 +1,1281 @@
+{
+ "ticker": "ATG",
+ "v": "2026-10-21.3352",
+ "ccy": "GBX",
+ "src": "AlphaVantage ATG.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   1414.0
+  ],
+  [
+   "2021-10-22",
+   1346.0
+  ],
+  [
+   "2021-10-29",
+   1414.0
+  ],
+  [
+   "2021-11-05",
+   1408.0
+  ],
+  [
+   "2021-11-12",
+   1348.0
+  ],
+  [
+   "2021-11-19",
+   1376.0
+  ],
+  [
+   "2021-11-26",
+   1266.0
+  ],
+  [
+   "2021-12-03",
+   1480.0
+  ],
+  [
+   "2021-12-10",
+   1406.0
+  ],
+  [
+   "2021-12-17",
+   1380.0
+  ],
+  [
+   "2021-12-24",
+   1448.0
+  ],
+  [
+   "2021-12-31",
+   1516.0
+  ],
+  [
+   "2022-01-07",
+   1312.0
+  ],
+  [
+   "2022-01-14",
+   1184.0
+  ],
+  [
+   "2022-01-21",
+   1130.0
+  ],
+  [
+   "2022-01-28",
+   1070.0
+  ],
+  [
+   "2022-02-04",
+   989.0
+  ],
+  [
+   "2022-02-11",
+   895.0
+  ],
+  [
+   "2022-02-18",
+   882.0
+  ],
+  [
+   "2022-02-25",
+   927.0
+  ],
+  [
+   "2022-03-04",
+   788.0
+  ],
+  [
+   "2022-03-11",
+   878.0
+  ],
+  [
+   "2022-03-18",
+   1096.0
+  ],
+  [
+   "2022-03-25",
+   980.0
+  ],
+  [
+   "2022-04-01",
+   1004.0
+  ],
+  [
+   "2022-04-08",
+   1028.0
+  ],
+  [
+   "2022-04-14",
+   974.0
+  ],
+  [
+   "2022-04-22",
+   886.0
+  ],
+  [
+   "2022-04-29",
+   879.0
+  ],
+  [
+   "2022-05-06",
+   926.0
+  ],
+  [
+   "2022-05-13",
+   936.0
+  ],
+  [
+   "2022-05-20",
+   903.0
+  ],
+  [
+   "2022-05-27",
+   1062.0
+  ],
+  [
+   "2022-06-01",
+   970.0
+  ],
+  [
+   "2022-06-10",
+   943.0
+  ],
+  [
+   "2022-06-17",
+   825.0
+  ],
+  [
+   "2022-06-24",
+   958.0
+  ],
+  [
+   "2022-07-01",
+   918.0
+  ],
+  [
+   "2022-07-08",
+   933.0
+  ],
+  [
+   "2022-07-15",
+   939.0
+  ],
+  [
+   "2022-07-22",
+   989.0
+  ],
+  [
+   "2022-07-29",
+   994.0
+  ],
+  [
+   "2022-08-05",
+   988.0
+  ],
+  [
+   "2022-08-12",
+   941.0
+  ],
+  [
+   "2022-08-19",
+   888.0
+  ],
+  [
+   "2022-08-26",
+   815.0
+  ],
+  [
+   "2022-09-02",
+   760.0
+  ],
+  [
+   "2022-09-09",
+   832.0
+  ],
+  [
+   "2022-09-16",
+   819.0
+  ],
+  [
+   "2022-09-23",
+   755.0
+  ],
+  [
+   "2022-09-30",
+   712.0
+  ],
+  [
+   "2022-10-07",
+   732.0
+  ],
+  [
+   "2022-10-14",
+   722.0
+  ],
+  [
+   "2022-10-21",
+   742.0
+  ],
+  [
+   "2022-10-28",
+   758.0
+  ],
+  [
+   "2022-11-04",
+   800.0
+  ],
+  [
+   "2022-11-11",
+   982.0
+  ],
+  [
+   "2022-11-18",
+   878.0
+  ],
+  [
+   "2022-11-25",
+   895.0
+  ],
+  [
+   "2022-12-02",
+   747.0
+  ],
+  [
+   "2022-12-09",
+   777.0
+  ],
+  [
+   "2022-12-16",
+   745.0
+  ],
+  [
+   "2022-12-23",
+   739.0
+  ],
+  [
+   "2022-12-30",
+   752.0
+  ],
+  [
+   "2023-01-06",
+   789.0
+  ],
+  [
+   "2023-01-13",
+   767.0
+  ],
+  [
+   "2023-01-20",
+   731.0
+  ],
+  [
+   "2023-01-27",
+   724.0
+  ],
+  [
+   "2023-02-03",
+   698.0
+  ],
+  [
+   "2023-02-10",
+   708.0
+  ],
+  [
+   "2023-02-17",
+   703.0
+  ],
+  [
+   "2023-02-24",
+   696.0
+  ],
+  [
+   "2023-03-03",
+   677.0
+  ],
+  [
+   "2023-03-10",
+   645.0
+  ],
+  [
+   "2023-03-17",
+   646.0
+  ],
+  [
+   "2023-03-24",
+   631.0
+  ],
+  [
+   "2023-03-31",
+   614.0
+  ],
+  [
+   "2023-04-06",
+   580.0
+  ],
+  [
+   "2023-04-14",
+   645.0
+  ],
+  [
+   "2023-04-21",
+   647.0
+  ],
+  [
+   "2023-04-28",
+   701.0
+  ],
+  [
+   "2023-05-05",
+   702.0
+  ],
+  [
+   "2023-05-12",
+   710.0
+  ],
+  [
+   "2023-05-19",
+   729.0
+  ],
+  [
+   "2023-05-26",
+   740.0
+  ],
+  [
+   "2023-06-02",
+   742.0
+  ],
+  [
+   "2023-06-09",
+   733.0
+  ],
+  [
+   "2023-06-16",
+   775.0
+  ],
+  [
+   "2023-06-23",
+   706.0
+  ],
+  [
+   "2023-06-30",
+   748.0
+  ],
+  [
+   "2023-07-07",
+   721.0
+  ],
+  [
+   "2023-07-14",
+   748.0
+  ],
+  [
+   "2023-07-21",
+   735.0
+  ],
+  [
+   "2023-07-28",
+   720.0
+  ],
+  [
+   "2023-08-04",
+   707.0
+  ],
+  [
+   "2023-08-11",
+   713.0
+  ],
+  [
+   "2023-08-18",
+   696.0
+  ],
+  [
+   "2023-08-25",
+   700.0
+  ],
+  [
+   "2023-09-01",
+   695.0
+  ],
+  [
+   "2023-09-08",
+   690.0
+  ],
+  [
+   "2023-09-15",
+   696.0
+  ],
+  [
+   "2023-09-22",
+   677.0
+  ],
+  [
+   "2023-09-29",
+   653.0
+  ],
+  [
+   "2023-10-06",
+   597.0
+  ],
+  [
+   "2023-10-13",
+   574.0
+  ],
+  [
+   "2023-10-20",
+   562.0
+  ],
+  [
+   "2023-10-27",
+   560.0
+  ],
+  [
+   "2023-11-03",
+   601.0
+  ],
+  [
+   "2023-11-10",
+   582.0
+  ],
+  [
+   "2023-11-17",
+   595.0
+  ],
+  [
+   "2023-11-24",
+   633.0
+  ],
+  [
+   "2023-12-01",
+   490.5
+  ],
+  [
+   "2023-12-08",
+   487.0
+  ],
+  [
+   "2023-12-15",
+   523.0
+  ],
+  [
+   "2023-12-22",
+   520.0
+  ],
+  [
+   "2023-12-29",
+   522.0
+  ],
+  [
+   "2024-01-05",
+   491.5
+  ],
+  [
+   "2024-01-12",
+   465.0
+  ],
+  [
+   "2024-01-19",
+   452.0
+  ],
+  [
+   "2024-01-26",
+   469.0
+  ],
+  [
+   "2024-02-02",
+   521.0
+  ],
+  [
+   "2024-02-09",
+   542.0
+  ],
+  [
+   "2024-02-16",
+   597.0
+  ],
+  [
+   "2024-02-23",
+   596.0
+  ],
+  [
+   "2024-03-01",
+   607.0
+  ],
+  [
+   "2024-03-08",
+   605.0
+  ],
+  [
+   "2024-03-15",
+   608.0
+  ],
+  [
+   "2024-03-22",
+   615.0
+  ],
+  [
+   "2024-03-28",
+   618.0
+  ],
+  [
+   "2024-04-05",
+   622.0
+  ],
+  [
+   "2024-04-12",
+   624.0
+  ],
+  [
+   "2024-04-19",
+   505.0
+  ],
+  [
+   "2024-04-26",
+   487.5
+  ],
+  [
+   "2024-05-03",
+   498.5
+  ],
+  [
+   "2024-05-10",
+   483.0
+  ],
+  [
+   "2024-05-17",
+   584.0
+  ],
+  [
+   "2024-05-24",
+   590.0
+  ],
+  [
+   "2024-05-31",
+   522.0
+  ],
+  [
+   "2024-06-07",
+   552.0
+  ],
+  [
+   "2024-06-14",
+   566.0
+  ],
+  [
+   "2024-06-21",
+   571.0
+  ],
+  [
+   "2024-06-28",
+   501.0
+  ],
+  [
+   "2024-07-05",
+   477.0
+  ],
+  [
+   "2024-07-12",
+   489.5
+  ],
+  [
+   "2024-07-19",
+   474.5
+  ],
+  [
+   "2024-07-26",
+   495.0
+  ],
+  [
+   "2024-08-02",
+   468.0
+  ],
+  [
+   "2024-08-09",
+   453.5
+  ],
+  [
+   "2024-08-16",
+   444.0
+  ],
+  [
+   "2024-08-23",
+   418.5
+  ],
+  [
+   "2024-08-30",
+   416.5
+  ],
+  [
+   "2024-09-06",
+   369.5
+  ],
+  [
+   "2024-09-13",
+   388.0
+  ],
+  [
+   "2024-09-20",
+   403.5
+  ],
+  [
+   "2024-09-27",
+   420.5
+  ],
+  [
+   "2024-10-04",
+   418.5
+  ],
+  [
+   "2024-10-11",
+   451.5
+  ],
+  [
+   "2024-10-18",
+   451.0
+  ],
+  [
+   "2024-10-25",
+   448.0
+  ],
+  [
+   "2024-11-01",
+   469.0
+  ],
+  [
+   "2024-11-08",
+   463.0
+  ],
+  [
+   "2024-11-15",
+   453.5
+  ],
+  [
+   "2024-11-22",
+   449.5
+  ],
+  [
+   "2024-11-29",
+   516.0
+  ],
+  [
+   "2024-12-06",
+   567.0
+  ],
+  [
+   "2024-12-13",
+   575.0
+  ],
+  [
+   "2024-12-20",
+   553.0
+  ],
+  [
+   "2024-12-24",
+   557.0
+  ],
+  [
+   "2024-12-27",
+   543.0
+  ],
+  [
+   "2025-01-03",
+   557.0
+  ],
+  [
+   "2025-01-10",
+   538.0
+  ],
+  [
+   "2025-01-17",
+   580.0
+  ],
+  [
+   "2025-01-24",
+   602.0
+  ],
+  [
+   "2025-01-31",
+   618.0
+  ],
+  [
+   "2025-02-07",
+   582.0
+  ],
+  [
+   "2025-02-14",
+   587.0
+  ],
+  [
+   "2025-02-21",
+   583.0
+  ],
+  [
+   "2025-02-28",
+   570.0
+  ],
+  [
+   "2025-03-07",
+   569.0
+  ],
+  [
+   "2025-03-14",
+   579.0
+  ],
+  [
+   "2025-03-21",
+   567.0
+  ],
+  [
+   "2025-03-28",
+   602.0
+  ],
+  [
+   "2025-04-04",
+   582.0
+  ],
+  [
+   "2025-04-11",
+   587.0
+  ],
+  [
+   "2025-04-17",
+   601.0
+  ],
+  [
+   "2025-04-25",
+   580.0
+  ],
+  [
+   "2025-05-02",
+   608.0
+  ],
+  [
+   "2025-05-09",
+   540.0
+  ],
+  [
+   "2025-05-16",
+   496.5
+  ],
+  [
+   "2025-05-23",
+   457.5
+  ],
+  [
+   "2025-05-30",
+   455.0
+  ],
+  [
+   "2025-06-06",
+   476.5
+  ],
+  [
+   "2025-06-13",
+   452.5
+  ],
+  [
+   "2025-06-20",
+   435.0
+  ],
+  [
+   "2025-06-27",
+   450.0
+  ],
+  [
+   "2025-07-04",
+   499.0
+  ],
+  [
+   "2025-07-11",
+   495.0
+  ],
+  [
+   "2025-07-18",
+   480.0
+  ],
+  [
+   "2025-07-25",
+   494.0
+  ],
+  [
+   "2025-08-01",
+   480.0
+  ],
+  [
+   "2025-08-08",
+   340.0
+  ],
+  [
+   "2025-08-15",
+   342.5
+  ],
+  [
+   "2025-08-22",
+   346.5
+  ],
+  [
+   "2025-08-29",
+   337.5
+  ],
+  [
+   "2025-09-05",
+   334.0
+  ],
+  [
+   "2025-09-12",
+   328.0
+  ],
+  [
+   "2025-09-19",
+   333.5
+  ],
+  [
+   "2025-09-26",
+   328.5
+  ],
+  [
+   "2025-10-03",
+   320.0
+  ],
+  [
+   "2025-10-10",
+   307.0
+  ],
+  [
+   "2025-10-17",
+   288.5
+  ],
+  [
+   "2025-10-24",
+   315.5
+  ],
+  [
+   "2025-10-31",
+   309.5
+  ],
+  [
+   "2025-11-07",
+   289.0
+  ],
+  [
+   "2025-11-14",
+   271.5
+  ],
+  [
+   "2025-11-21",
+   269.5
+  ],
+  [
+   "2025-11-28",
+   282.0
+  ],
+  [
+   "2025-12-05",
+   294.5
+  ],
+  [
+   "2025-12-12",
+   283.0
+  ],
+  [
+   "2025-12-19",
+   293.0
+  ],
+  [
+   "2025-12-24",
+   281.5
+  ],
+  [
+   "2026-01-02",
+   270.0
+  ],
+  [
+   "2026-01-09",
+   328.0
+  ],
+  [
+   "2026-01-16",
+   362.0
+  ],
+  [
+   "2026-01-23",
+   333.0
+  ],
+  [
+   "2026-01-30",
+   309.0
+  ],
+  [
+   "2026-02-06",
+   291.5
+  ],
+  [
+   "2026-02-13",
+   300.0
+  ],
+  [
+   "2026-02-20",
+   315.5
+  ],
+  [
+   "2026-02-27",
+   312.0
+  ],
+  [
+   "2026-03-06",
+   313.0
+  ],
+  [
+   "2026-03-13",
+   303.5
+  ],
+  [
+   "2026-03-20",
+   327.5
+  ],
+  [
+   "2026-03-27",
+   327.0
+  ],
+  [
+   "2026-04-02",
+   338.5
+  ],
+  [
+   "2026-04-10",
+   333.0
+  ],
+  [
+   "2026-04-17",
+   392.0
+  ],
+  [
+   "2026-04-24",
+   344.2
+  ],
+  [
+   "2026-05-01",
+   347.4
+  ],
+  [
+   "2026-05-08",
+   356.8
+  ],
+  [
+   "2026-05-15",
+   401.6
+  ],
+  [
+   "2026-05-22",
+   404.4
+  ],
+  [
+   "2026-05-29",
+   427.6
+  ],
+  [
+   "2026-06-05",
+   428.2
+  ],
+  [
+   "2026-06-12",
+   425.6
+  ],
+  [
+   "2026-06-19",
+   411.0
+  ],
+  [
+   "2026-06-26",
+   400.0
+  ],
+  [
+   "2026-07-03",
+   412.2
+  ],
+  [
+   "2026-07-10",
+   413.2
+  ],
+  [
+   "2026-07-17",
+   440.6
+  ],
+  [
+   "2026-07-24",
+   432.2
+  ],
+  [
+   "2026-07-31",
+   455.0
+  ],
+  [
+   "2026-08-07",
+   451.0
+  ],
+  [
+   "2026-08-14",
+   444.2
+  ],
+  [
+   "2026-08-21",
+   443.4
+  ],
+  [
+   "2026-08-28",
+   440.6
+  ],
+  [
+   "2026-09-04",
+   420.4
+  ],
+  [
+   "2026-09-11",
+   436.0
+  ],
+  [
+   "2026-09-18",
+   434.2
+  ],
+  [
+   "2026-09-25",
+   434.4
+  ],
+  [
+   "2026-10-02",
+   457.4
+  ],
+  [
+   "2026-10-09",
+   472.8
+  ],
+  [
+   "2026-10-16",
+   480.8
+  ],
+  [
+   "2026-10-20",
+   480.8
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-12-02",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 1,
+   "q": "We anticipate FY22 revenue growth of high single digit to low double digits, ahead of our original IPO guidance and analyst consensus, and remain confident of achieving our medium-term growth target of mid-teens plus revenue growth (pro-forma from FY19).",
+   "file": "20211202_ATG_Full-Year-Results.md"
+  },
+  {
+   "d": "2022-05-19",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Therefore, based on our HY 22 outperformance and management's unchanged view of the second half of FY 22, we are increasing our revenue growth guidance.",
+   "file": "20220519_ATG_Half-year-Results.md"
+  },
+  {
+   "d": "2022-12-01",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "High single digit to low double digit constant currency revenue growth with a higher rate of growth in the second half of the year reflecting the further roll out and take up of value-add services.",
+   "file": "20221201_ATG_Final-Results.md"
+  },
+  {
+   "d": "2023-02-07",
+   "doc": "OPS",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "ATG also confirms its full year guidance provided at the FY 22 Results in December 2022, before the impact of today's announcement.",
+   "file": "20230207_ATG_Acquisition.md"
+  },
+  {
+   "d": "2023-05-17",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -1,
+   "q": "Based on the strength of core marketplace revenue, we reaffirm our guidance for organic revenue growth, although at the lower to mid end of the range reflecting the timing of atgPay activation for Proxibid auctions.",
+   "file": "20230517_ATG_Half-year-Report.md"
+  },
+  {
+   "d": "2023-11-30",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "Offsetting this is the benefit that the Company is seeing from the growth of value-added services, which when combined with the external factors, leads to a FY24 organic revenue growth outlook of between 5% to 8%.",
+   "file": "20231130_ATG_Final-Results.md"
+  },
+  {
+   "d": "2024-01-30",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "We therefore maintain our guidance of FY24 full year organic revenue growth of 5% to 8% and adjusted EBITDA margins to be maintained.",
+   "file": "20240130_ATG_Trading-Statement.md"
+  },
+  {
+   "d": "2024-04-16",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -3,
+   "q": "The Group now expects its FY24 adjusted EBITDA margin to be 46% due to the mix of revenue with a higher contribution of lower margin value-added services relative to higher margin I&C commission revenue.",
+   "file": "20240416_ATG_Trading-Statement.md"
+  },
+  {
+   "d": "2024-05-16",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "We are therefore maintaining our full year outlook for Group revenue to be in the range of $175m-$180m, implying a mid-point growth rate of 7%, including organic revenue growth of 2% - 5%.",
+   "file": "20240516_ATG_Half-year-Report.md"
+  },
+  {
+   "d": "2024-10-10",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -2,
+   "q": "As a result, the Group expects full year revenue to be $174m, an increase of 5% (up 2% on an organic basis1) and marketplace revenue is expected to increase 7% (up 3% on an organic basis1).",
+   "file": "20241010_ATG_Trading-Statement.md"
+  },
+  {
+   "d": "2024-11-27",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Revenue growth in the range of 4-6%, supported by the continued growth of value-added services and positive GMV growth, also reflecting uncertain end markets.",
+   "file": "20241127_ATG_Final-Results.md"
+  },
+  {
+   "d": "2025-01-30",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "We therefore maintain our guidance of FY25 revenue growth in the range of 4-6% and for an Adjusted EBITDA margin of 45% to 46%.",
+   "file": "20250130_ATG_AGM-Statement.md"
+  },
+  {
+   "d": "2025-05-15",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "We maintain our full year guidance for revenue growth in the range of 4-6% and for adjusted EBITDA margin of between 45% to 46%, and will both monitor and adapt to the underlying markets as uncertainties are resolved.",
+   "file": "20250515_ATG_Half-year-Report.md"
+  },
+  {
+   "d": "2025-08-04",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -3,
+   "q": "As a result of revenue mix, we now expect margin to be 42% to 43% for the full year, before the impact of the acquisition.",
+   "file": "20250804_ATG_Acquisition.md",
+   "gnote": "discounted: Chairish acquisition"
+  },
+  {
+   "d": "2025-10-28",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Revenue and adjusted EBITDA performance in FY25 is expected to be in line with recently revised market expectations[1].",
+   "file": "20251028_ATG_Pre-close-FY25-Trading-Update-&-Notice-of-Results.md"
+  },
+  {
+   "d": "2025-11-26",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 1,
+   "q": "Full year results slightly ahead of market expectations, strong cash generation and good strategic progress",
+   "file": "20251126_ATG_Full-Year-Results.md"
+  },
+  {
+   "d": "2026-01-22",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "We continue to expect performance in line with the guidance provided at the time of our FY25 results on 26 November 2025.",
+   "file": "20260122_ATG_AGM-TRADING-UPDATE.md"
+  },
+  {
+   "d": "2026-04-20",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "We continue to expect performance in line with our guidance set out in November 2025 and in-line with market expectations4.",
+   "file": "20260420_ATG_H1-Trading-Update.md"
+  },
+  {
+   "d": "2026-05-14",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "For FY26 we have modestly upgraded our full year guidance ahead of current market expectations5.",
+   "file": "20260514_ATG_Interim-Results.md"
+  },
+  {
+   "d": "2026-07-23",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -1,
+   "q": "Adjusted EBITDA margin of 34.5-35.5% is unchanged. We continue to expect the outcome to be at the bottom end of this range,",
+   "file": "20260723_ATG_Q3-TRADING-UPDATE.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-07-23",
+  "doc": "Q3 TU",
+  "file": "20260723_ATG_Q3-TRADING-UPDATE.md",
+  "vs": "Q3 statement Aug-25 (Acquisition RNS) · H1 R May-26 · H1 TU Apr-26 · AGM TU Jan-26",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "New caution",
+    "text": "EBITDA margin: May-26 “An adjusted EBITDA margin of 34.5-35.5% for the Group as a whole” (full range) → Jul-26 “We continue to expect the outcome to be at the bottom end of this range”, even as the revenue guide is raised to 5.5-6.5%",
+    "span": "Range given with no position in it at Nov-25, Jan-26, Apr-26, May-26 → first “bottom end” in the RNS record"
+   },
+   {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Market-expectations anchor and consensus footnote dropped: Apr-26 “in-line with market expectations4”, May-26 “ahead of current market expectations5” → Jul-26 “For FY26, the Group now expects:” guidance only, no market expectations or consensus range",
+    "span": "Anchor at Oct-25, Nov-25, Apr-26, May-26 → absent Jul-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "GMV: Jan-26 and Apr-26 A&A growth came “with a positive contribution from GMV growth” (Apr-26 headline “continued A&A GMV growth”) → Jul-26 no GMV mention at all",
+    "span": "Jan-26, Apr-26 TUs → Jul-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Leverage target quantified: Jan/Apr/May-26 “Group leverage well below 2x by end FY26” → Jul-26 “Group leverage of around 1.5x by the end of FY26”",
+    "span": "Q3 revenue growth also given as a number (7.8%) vs Aug-25 “slightly improved” wording"
+   }
+  ]
+ }
+}

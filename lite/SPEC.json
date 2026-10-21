@@ -1,0 +1,1320 @@
+{
+ "ticker": "SPEC",
+ "v": "2026-10-21.4ded",
+ "ccy": "GBX",
+ "src": "AlphaVantage SPEC.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   370.0
+  ],
+  [
+   "2021-10-22",
+   380.0
+  ],
+  [
+   "2021-10-29",
+   400.0
+  ],
+  [
+   "2021-11-05",
+   400.0
+  ],
+  [
+   "2021-11-12",
+   395.0
+  ],
+  [
+   "2021-11-19",
+   395.0
+  ],
+  [
+   "2021-11-26",
+   385.0
+  ],
+  [
+   "2021-12-03",
+   380.0
+  ],
+  [
+   "2021-12-10",
+   380.0
+  ],
+  [
+   "2021-12-17",
+   365.0
+  ],
+  [
+   "2021-12-24",
+   370.0
+  ],
+  [
+   "2021-12-31",
+   370.0
+  ],
+  [
+   "2022-01-07",
+   405.0
+  ],
+  [
+   "2022-01-14",
+   405.0
+  ],
+  [
+   "2022-01-21",
+   398.0
+  ],
+  [
+   "2022-01-28",
+   380.0
+  ],
+  [
+   "2022-02-04",
+   375.0
+  ],
+  [
+   "2022-02-11",
+   375.0
+  ],
+  [
+   "2022-02-18",
+   390.0
+  ],
+  [
+   "2022-02-25",
+   375.0
+  ],
+  [
+   "2022-03-04",
+   368.0
+  ],
+  [
+   "2022-03-11",
+   330.0
+  ],
+  [
+   "2022-03-18",
+   360.0
+  ],
+  [
+   "2022-03-25",
+   360.0
+  ],
+  [
+   "2022-04-01",
+   365.0
+  ],
+  [
+   "2022-04-08",
+   365.0
+  ],
+  [
+   "2022-04-14",
+   365.0
+  ],
+  [
+   "2022-04-22",
+   349.0
+  ],
+  [
+   "2022-04-29",
+   355.0
+  ],
+  [
+   "2022-05-06",
+   340.0
+  ],
+  [
+   "2022-05-13",
+   355.0
+  ],
+  [
+   "2022-05-20",
+   335.0
+  ],
+  [
+   "2022-05-27",
+   343.0
+  ],
+  [
+   "2022-06-01",
+   345.0
+  ],
+  [
+   "2022-06-10",
+   343.0
+  ],
+  [
+   "2022-06-17",
+   335.0
+  ],
+  [
+   "2022-06-24",
+   292.0
+  ],
+  [
+   "2022-07-01",
+   248.0
+  ],
+  [
+   "2022-07-08",
+   225.0
+  ],
+  [
+   "2022-07-15",
+   239.0
+  ],
+  [
+   "2022-07-22",
+   248.0
+  ],
+  [
+   "2022-07-29",
+   242.0
+  ],
+  [
+   "2022-08-05",
+   238.0
+  ],
+  [
+   "2022-08-12",
+   213.0
+  ],
+  [
+   "2022-08-19",
+   214.0
+  ],
+  [
+   "2022-08-26",
+   198.0
+  ],
+  [
+   "2022-09-02",
+   181.0
+  ],
+  [
+   "2022-09-09",
+   157.5
+  ],
+  [
+   "2022-09-16",
+   165.0
+  ],
+  [
+   "2022-09-23",
+   155.0
+  ],
+  [
+   "2022-09-30",
+   135.0
+  ],
+  [
+   "2022-10-07",
+   130.0
+  ],
+  [
+   "2022-10-14",
+   117.5
+  ],
+  [
+   "2022-10-21",
+   115.0
+  ],
+  [
+   "2022-10-28",
+   49.6
+  ],
+  [
+   "2022-11-04",
+   48.0
+  ],
+  [
+   "2022-11-11",
+   69.0
+  ],
+  [
+   "2022-11-18",
+   67.5
+  ],
+  [
+   "2022-11-25",
+   55.5
+  ],
+  [
+   "2022-12-02",
+   48.5
+  ],
+  [
+   "2022-12-09",
+   49.0
+  ],
+  [
+   "2022-12-16",
+   38.5
+  ],
+  [
+   "2022-12-23",
+   44.5
+  ],
+  [
+   "2022-12-30",
+   43.0
+  ],
+  [
+   "2023-01-06",
+   42.0
+  ],
+  [
+   "2023-01-13",
+   50.5
+  ],
+  [
+   "2023-01-20",
+   58.5
+  ],
+  [
+   "2023-01-27",
+   102.0
+  ],
+  [
+   "2023-02-03",
+   114.0
+  ],
+  [
+   "2023-02-10",
+   115.5
+  ],
+  [
+   "2023-02-17",
+   105.5
+  ],
+  [
+   "2023-02-24",
+   95.5
+  ],
+  [
+   "2023-03-03",
+   106.0
+  ],
+  [
+   "2023-03-10",
+   103.5
+  ],
+  [
+   "2023-03-17",
+   86.0
+  ],
+  [
+   "2023-03-24",
+   94.0
+  ],
+  [
+   "2023-03-31",
+   95.0
+  ],
+  [
+   "2023-04-06",
+   92.5
+  ],
+  [
+   "2023-04-14",
+   110.0
+  ],
+  [
+   "2023-04-21",
+   106.5
+  ],
+  [
+   "2023-04-28",
+   106.5
+  ],
+  [
+   "2023-05-05",
+   131.0
+  ],
+  [
+   "2023-05-12",
+   130.5
+  ],
+  [
+   "2023-05-19",
+   122.0
+  ],
+  [
+   "2023-05-26",
+   114.5
+  ],
+  [
+   "2023-06-02",
+   110.0
+  ],
+  [
+   "2023-06-09",
+   110.0
+  ],
+  [
+   "2023-06-16",
+   107.0
+  ],
+  [
+   "2023-06-23",
+   113.0
+  ],
+  [
+   "2023-06-30",
+   107.0
+  ],
+  [
+   "2023-07-07",
+   98.5
+  ],
+  [
+   "2023-07-14",
+   121.5
+  ],
+  [
+   "2023-07-21",
+   114.0
+  ],
+  [
+   "2023-07-28",
+   124.0
+  ],
+  [
+   "2023-08-04",
+   119.0
+  ],
+  [
+   "2023-08-11",
+   104.5
+  ],
+  [
+   "2023-08-18",
+   99.5
+  ],
+  [
+   "2023-08-25",
+   98.0
+  ],
+  [
+   "2023-09-01",
+   101.0
+  ],
+  [
+   "2023-09-08",
+   106.0
+  ],
+  [
+   "2023-09-15",
+   89.5
+  ],
+  [
+   "2023-09-22",
+   87.5
+  ],
+  [
+   "2023-09-29",
+   87.6
+  ],
+  [
+   "2023-10-06",
+   83.0
+  ],
+  [
+   "2023-10-13",
+   85.0
+  ],
+  [
+   "2023-10-20",
+   77.5
+  ],
+  [
+   "2023-10-27",
+   70.0
+  ],
+  [
+   "2023-11-03",
+   76.5
+  ],
+  [
+   "2023-11-10",
+   86.0
+  ],
+  [
+   "2023-11-17",
+   85.0
+  ],
+  [
+   "2023-11-24",
+   85.0
+  ],
+  [
+   "2023-12-01",
+   81.0
+  ],
+  [
+   "2023-12-08",
+   82.5
+  ],
+  [
+   "2023-12-15",
+   84.0
+  ],
+  [
+   "2023-12-22",
+   84.0
+  ],
+  [
+   "2023-12-29",
+   84.0
+  ],
+  [
+   "2024-01-05",
+   81.0
+  ],
+  [
+   "2024-01-12",
+   86.5
+  ],
+  [
+   "2024-01-19",
+   92.0
+  ],
+  [
+   "2024-01-26",
+   86.5
+  ],
+  [
+   "2024-02-02",
+   55.0
+  ],
+  [
+   "2024-02-09",
+   59.5
+  ],
+  [
+   "2024-02-16",
+   62.0
+  ],
+  [
+   "2024-02-23",
+   61.0
+  ],
+  [
+   "2024-03-01",
+   58.5
+  ],
+  [
+   "2024-03-08",
+   55.5
+  ],
+  [
+   "2024-03-15",
+   55.0
+  ],
+  [
+   "2024-03-22",
+   53.0
+  ],
+  [
+   "2024-03-28",
+   47.5
+  ],
+  [
+   "2024-04-05",
+   49.0
+  ],
+  [
+   "2024-04-12",
+   49.0
+  ],
+  [
+   "2024-04-19",
+   52.5
+  ],
+  [
+   "2024-04-26",
+   57.0
+  ],
+  [
+   "2024-05-03",
+   62.0
+  ],
+  [
+   "2024-05-10",
+   74.0
+  ],
+  [
+   "2024-05-17",
+   73.5
+  ],
+  [
+   "2024-05-24",
+   71.0
+  ],
+  [
+   "2024-05-31",
+   70.5
+  ],
+  [
+   "2024-06-07",
+   57.0
+  ],
+  [
+   "2024-06-14",
+   57.5
+  ],
+  [
+   "2024-06-21",
+   56.0
+  ],
+  [
+   "2024-06-28",
+   52.5
+  ],
+  [
+   "2024-07-05",
+   54.5
+  ],
+  [
+   "2024-07-12",
+   54.5
+  ],
+  [
+   "2024-07-19",
+   55.5
+  ],
+  [
+   "2024-07-26",
+   53.0
+  ],
+  [
+   "2024-08-02",
+   53.0
+  ],
+  [
+   "2024-08-09",
+   52.5
+  ],
+  [
+   "2024-08-16",
+   52.4
+  ],
+  [
+   "2024-08-23",
+   52.5
+  ],
+  [
+   "2024-08-30",
+   54.0
+  ],
+  [
+   "2024-09-06",
+   58.4
+  ],
+  [
+   "2024-09-13",
+   55.5
+  ],
+  [
+   "2024-09-20",
+   52.0
+  ],
+  [
+   "2024-09-27",
+   51.0
+  ],
+  [
+   "2024-10-04",
+   51.5
+  ],
+  [
+   "2024-10-11",
+   57.0
+  ],
+  [
+   "2024-10-18",
+   56.5
+  ],
+  [
+   "2024-10-25",
+   55.0
+  ],
+  [
+   "2024-11-01",
+   57.5
+  ],
+  [
+   "2024-11-08",
+   61.5
+  ],
+  [
+   "2024-11-15",
+   57.0
+  ],
+  [
+   "2024-11-22",
+   50.5
+  ],
+  [
+   "2024-11-29",
+   51.0
+  ],
+  [
+   "2024-12-06",
+   48.5
+  ],
+  [
+   "2024-12-13",
+   42.5
+  ],
+  [
+   "2024-12-20",
+   44.5
+  ],
+  [
+   "2024-12-24",
+   46.0
+  ],
+  [
+   "2024-12-27",
+   46.0
+  ],
+  [
+   "2025-01-03",
+   44.0
+  ],
+  [
+   "2025-01-10",
+   40.0
+  ],
+  [
+   "2025-01-17",
+   42.0
+  ],
+  [
+   "2025-01-24",
+   40.0
+  ],
+  [
+   "2025-01-31",
+   42.25
+  ],
+  [
+   "2025-02-07",
+   45.5
+  ],
+  [
+   "2025-02-14",
+   51.0
+  ],
+  [
+   "2025-02-21",
+   47.0
+  ],
+  [
+   "2025-02-28",
+   46.5
+  ],
+  [
+   "2025-03-07",
+   47.5
+  ],
+  [
+   "2025-03-14",
+   50.0
+  ],
+  [
+   "2025-03-21",
+   49.0
+  ],
+  [
+   "2025-03-28",
+   50.5
+  ],
+  [
+   "2025-04-04",
+   42.0
+  ],
+  [
+   "2025-04-11",
+   39.5
+  ],
+  [
+   "2025-04-17",
+   40.0
+  ],
+  [
+   "2025-04-25",
+   40.0
+  ],
+  [
+   "2025-05-02",
+   40.0
+  ],
+  [
+   "2025-05-09",
+   42.0
+  ],
+  [
+   "2025-05-16",
+   43.5
+  ],
+  [
+   "2025-05-23",
+   46.2
+  ],
+  [
+   "2025-05-30",
+   52.4
+  ],
+  [
+   "2025-06-06",
+   48.0
+  ],
+  [
+   "2025-06-13",
+   47.0
+  ],
+  [
+   "2025-06-20",
+   48.5
+  ],
+  [
+   "2025-06-27",
+   49.0
+  ],
+  [
+   "2025-07-04",
+   49.5
+  ],
+  [
+   "2025-07-11",
+   46.5
+  ],
+  [
+   "2025-07-18",
+   42.0
+  ],
+  [
+   "2025-07-25",
+   43.0
+  ],
+  [
+   "2025-08-01",
+   41.5
+  ],
+  [
+   "2025-08-08",
+   45.5
+  ],
+  [
+   "2025-08-15",
+   47.5
+  ],
+  [
+   "2025-08-22",
+   44.0
+  ],
+  [
+   "2025-08-29",
+   44.0
+  ],
+  [
+   "2025-09-05",
+   43.0
+  ],
+  [
+   "2025-09-12",
+   43.0
+  ],
+  [
+   "2025-09-19",
+   41.0
+  ],
+  [
+   "2025-09-26",
+   39.5
+  ],
+  [
+   "2025-10-03",
+   44.5
+  ],
+  [
+   "2025-10-10",
+   45.5
+  ],
+  [
+   "2025-10-17",
+   44.0
+  ],
+  [
+   "2025-10-24",
+   55.6
+  ],
+  [
+   "2025-10-31",
+   62.0
+  ],
+  [
+   "2025-11-07",
+   70.0
+  ],
+  [
+   "2025-11-14",
+   73.0
+  ],
+  [
+   "2025-11-21",
+   75.0
+  ],
+  [
+   "2025-11-28",
+   72.0
+  ],
+  [
+   "2025-12-05",
+   72.0
+  ],
+  [
+   "2025-12-12",
+   82.0
+  ],
+  [
+   "2025-12-19",
+   71.0
+  ],
+  [
+   "2025-12-24",
+   72.0
+  ],
+  [
+   "2026-01-02",
+   71.5
+  ],
+  [
+   "2026-01-09",
+   69.0
+  ],
+  [
+   "2026-01-16",
+   68.0
+  ],
+  [
+   "2026-01-23",
+   69.0
+  ],
+  [
+   "2026-01-30",
+   69.0
+  ],
+  [
+   "2026-02-06",
+   70.0
+  ],
+  [
+   "2026-02-13",
+   75.5
+  ],
+  [
+   "2026-02-20",
+   80.5
+  ],
+  [
+   "2026-02-27",
+   83.0
+  ],
+  [
+   "2026-03-06",
+   83.0
+  ],
+  [
+   "2026-03-13",
+   83.0
+  ],
+  [
+   "2026-03-20",
+   83.0
+  ],
+  [
+   "2026-03-27",
+   83.0
+  ],
+  [
+   "2026-04-02",
+   83.0
+  ],
+  [
+   "2026-04-10",
+   83.5
+  ],
+  [
+   "2026-04-17",
+   83.5
+  ],
+  [
+   "2026-04-24",
+   83.5
+  ],
+  [
+   "2026-05-01",
+   83.5
+  ],
+  [
+   "2026-05-08",
+   83.5
+  ],
+  [
+   "2026-05-15",
+   83.5
+  ],
+  [
+   "2026-05-22",
+   83.5
+  ],
+  [
+   "2026-05-29",
+   84.5
+  ],
+  [
+   "2026-06-05",
+   84.5
+  ],
+  [
+   "2026-06-12",
+   84.5
+  ],
+  [
+   "2026-06-19",
+   100.5
+  ],
+  [
+   "2026-06-26",
+   97.0
+  ],
+  [
+   "2026-07-03",
+   97.0
+  ],
+  [
+   "2026-07-10",
+   97.0
+  ],
+  [
+   "2026-07-17",
+   97.0
+  ],
+  [
+   "2026-07-24",
+   96.0
+  ],
+  [
+   "2026-07-31",
+   97.0
+  ],
+  [
+   "2026-08-07",
+   97.0
+  ],
+  [
+   "2026-08-14",
+   97.0
+  ],
+  [
+   "2026-08-21",
+   96.0
+  ],
+  [
+   "2026-08-28",
+   96.0
+  ],
+  [
+   "2026-09-04",
+   96.0
+  ],
+  [
+   "2026-09-11",
+   96.0
+  ],
+  [
+   "2026-09-18",
+   96.0
+  ],
+  [
+   "2026-09-25",
+   93.5
+  ],
+  [
+   "2026-10-02",
+   92.5
+  ],
+  [
+   "2026-10-09",
+   90.0
+  ],
+  [
+   "2026-10-16",
+   90.0
+  ],
+  [
+   "2026-10-21",
+   90.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-10-28",
+   "doc": "Q3 TU",
+   "fy": "FY21",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board remains cautious of headwinds in the fourth quarter as COVID-19 continues to impact the global supply chain, but the Group remains confident in its full year outlook and notes the 2022 order book is in line with management's expectations.",
+   "file": "20211028_SPEC_Q3-Trading-Update.md"
+  },
+  {
+   "d": "2022-02-01",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Our main markets in Europe and America have proved to be resilient, and early indications show that, despite restrictions in many of the countries in which we operate, the optical market remains open and current trading is in line with expectations for 2022.",
+   "file": "20220201_SPEC_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2022-04-27",
+   "doc": "Q1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group delivered a strong trading performance in the first quarter with revenues up $7.9m on the prior year to $75.1m (2021 Q1: $67.2m).",
+   "file": "20220427_SPEC_Q1-Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2022-06-29",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 1,
+   "q": "However, the Group has a well-balanced platform and operates in a resilient market and I am pleased to report that the first three months of trading were ahead of our expectations.",
+   "file": "20220629_SPEC_Final-Results.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2022-08-18",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -1,
+   "q": "Whilst we remain cautious of the overall economic outlook for the UK and European market, we remain focused on executing a number of strategic priorities that will increase production, enabling us to bring innovative new products to market and continue to deliver shareholder value.",
+   "file": "20220818_SPEC_Interim-Results.md"
+  },
+  {
+   "d": "2022-10-27",
+   "doc": "Q3 TU",
+   "fy": "FY22",
+   "g": "CUT",
+   "s": -3,
+   "q": "It is clear that Inspecs is not immune to the macro environment or the downturn in consumer confidence, particularly in Europe, and this is expected to impact the remainder of this year and into the first half of 2023.",
+   "file": "20221027_SPEC_Trading-Update-and-Board-Changes.md"
+  },
+  {
+   "d": "2023-01-26",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group's trading performance for the year, despite COVID-19 restrictions mainly in China and Vietnam, was in line with expectations as revised in October 2022, delivering Group revenue of $246.0m (2021: $246.5m).",
+   "file": "20230126_SPEC_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2023-04-27",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 1,
+   "q": "I am pleased to report that we have had a good performance in Q1 2023 and are ahead of the same period in 2022. This was driven in part by a rebound in our European markets and continued growth in other markets.",
+   "file": "20230427_SPEC_Preliminary-Unaudited-Results.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2023-07-28",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "As a result of this performance in the first half of the year, notwithstanding the ongoing macroeconomic uncertainties, the Board remains confident in delivering full year results in line with market expectations.",
+   "file": "20230728_SPEC_Half-Year-Trading-Update.md"
+  },
+  {
+   "d": "2023-09-07",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading in the second half to date has been in line with our expectations and our order books remain at a good level. Whilst we remain cautious in relation to global economic and political events, we remain confident with our full year outlook.",
+   "file": "20230907_SPEC_Interim-Results.md"
+  },
+  {
+   "d": "2023-10-30",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Our focus on improving the Group's operational efficiencies continues and, notwithstanding the ongoing macroeconomic uncertainties, with our current order book the Board remains confident of delivering full year results in line with market expectations.",
+   "file": "20231030_SPEC_Trading-Update.md"
+  },
+  {
+   "d": "2024-01-29",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -3,
+   "q": "Despite this, financial performance is below the market expectations due to softer trading in December.",
+   "file": "20240129_SPEC_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2024-04-17",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Current momentum in the business supports delivery of market expectations for 2024 and I am confident that the Group is well positioned for continued success.",
+   "file": "20240417_SPEC_Final-Results.md"
+  },
+  {
+   "d": "2024-06-06",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "Following the record result for H1 23, which in part was due to elevated levels of ordering as retailers sought to secure their inventory positions post Covid, the Group anticipates revenue and EBITDA for H1 24 to be lower than the prior year, more in line with historic trading.",
+   "file": "20240606_SPEC_AGM-Statement.md"
+  },
+  {
+   "d": "2024-09-10",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Whilst we remain cautious in relation to market conditions and focused on the delivery of our cost saving initiatives and planned shipments in Q4, the Board is confident in meeting market expectations for the full year.",
+   "file": "20240910_SPEC_Interim-Results.md"
+  },
+  {
+   "d": "2024-12-09",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -3,
+   "q": "However, due to the slower recovery in our European markets and the deferral of orders for some of the Group's larger customers into 2025, the Board now expects to report revenue for the year to 31 December 2024 of c.£197m (c.£202m on a constant currency exchange rate basis1) and Underlying EBITDA in the range of £17.4m to £17.9m.",
+   "file": "20241209_SPEC_Trading-Update.md"
+  },
+  {
+   "d": "2025-01-30",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group expects to deliver an Underlying EBITDA of £17.5m (2023: £18.0m) in line with recently updated market expectations2.",
+   "file": "20250130_SPEC_Trading-Update.md"
+  },
+  {
+   "d": "2025-04-10",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Notwithstanding the recently announced tariffs and caution in relation to market conditions, compelling new projects in the pipeline give us confidence in delivering on market expectations for 2025 and our medium-term ambition to accelerate revenue growth, deliver double digit Underlying EBITDA whilst targeting net debt of 40%-75% of Underlying EBITDA.",
+   "file": "20250410_SPEC_Final-Results.md"
+  },
+  {
+   "d": "2025-06-03",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -2,
+   "q": "We expect revenue for the full year 2025 to be broadly flat versus 2024, and our guidance on EBITDA remains unchanged.",
+   "file": "20250603_SPEC_AGM-Statement.md"
+  },
+  {
+   "d": "2025-07-31",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -2,
+   "q": "As a result, we now expect full year revenue and Underlying EBITDA to be in line with 2024 on a like-for-like basis2.",
+   "file": "20250731_SPEC_Half-Year-Trading-Update.md"
+  },
+  {
+   "d": "2025-09-18",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -2,
+   "q": "Current trading in the first two months of H2 is slightly behind plan, however, the growth in our order books and increased cost savings are expected to deliver a stronger performance in the remainder of the year.",
+   "file": "20250918_SPEC_Interim-Results.md"
+  },
+  {
+   "d": "2025-11-20",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -2,
+   "q": "As a result the Group now expects to report revenue of approximately £191m and Underlying EBITDA of approximately £17.7m for the year ending 31 December 2025.",
+   "file": "20251120_SPEC_Trading-Update.md",
+   "gnote": "discounted: offer period"
+  },
+  {
+   "d": "2026-05-13",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "Sales to the US market remain in line with Board expectations and the Group is on track to deliver its expected results for 2026.",
+   "file": "20260513_SPEC_Final-Results-for-the-year-ended-31-December-2025.md",
+   "gnote": "discounted: takeover offer"
+  },
+  {
+   "d": "2026-09-10",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -2,
+   "q": "While market conditions remain challenging, particularly within the US optical frames market and the German low vision market, the Group continues to benefit from growth within Eschenbach eyewear and the cost savings delivered through the integration of its UK operations.",
+   "file": "20260910_SPEC_Half-year-Financial-Report.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-10",
+  "doc": "H1 R",
+  "file": "20260910_SPEC_Half-year-Financial-Report.md",
+  "vs": "H1 R Sep-25 · back to Sep-23/Sep-24 · FY R May-26",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Went quiet",
+    "text": "Full-year guide: Sep-25 “The Board, therefore, has a reasonable expectation that the Group will meet its guidance6 for the full year” (May-26: “on track to deliver Board expectations for 2026”) → Sep-26 no full-year view at all",
+    "span": "Full-year statement in every interim Sep-23, Sep-24, Sep-25 → first gap"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Order book / H2-to-date trading: Sep-25 “growth in our order books and manufacturing pipeline (up 3.3% 31 August 2025 versus 31 August 2024)”, Sep-24 “our order books are also 7% ahead” → Sep-26 no order book or H2-to-date figure",
+    "span": "Given at Sep-24, Sep-25 → dropped Sep-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Revenue growth target: still “CAGR organic revenue growth 40% above the market rate, which is currently forecast to grow at 3% CAGR” (c.4.2%) beside H1 revenue “increased by 2.0% to £99.6m” at constant currency",
+    "span": "Target set Apr-25, repeated Sep-25, May-26, Sep-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Margin target: Sep-25 “Double digit underlying EBITDA %” as an ambition → Sep-26 “Double-digit Underlying EBITDA margin - achieved in H1 2026” (10.3% vs 9.3%)",
+    "span": "Target set Apr-25 → met H1-26"
+   }
+  ]
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "ticker": "CYAN",
+ "v": "2026-10-21.15e3",
+ "ccy": "GBX",
+ "src": "ShareScope weekly snapshots",
+ "adj": [],
+ "px": [
+  [
+   "2026-03-03",
+   8.2
+  ],
+  [
+   "2026-03-06",
+   8.85
+  ],
+  [
+   "2026-03-13",
+   8.625
+  ],
+  [
+   "2026-03-20",
+   8.25
+  ],
+  [
+   "2026-03-27",
+   7.775
+  ],
+  [
+   "2026-04-03",
+   7.625
+  ],
+  [
+   "2026-04-10",
+   7.75
+  ],
+  [
+   "2026-04-17",
+   7.75
+  ],
+  [
+   "2026-04-24",
+   7.85
+  ],
+  [
+   "2026-05-08",
+   7.85
+  ],
+  [
+   "2026-05-15",
+   7.85
+  ],
+  [
+   "2026-05-22",
+   8.5
+  ],
+  [
+   "2026-06-02",
+   8.65
+  ],
+  [
+   "2026-06-05",
+   8.9
+  ],
+  [
+   "2026-06-12",
+   8.75
+  ],
+  [
+   "2026-06-19",
+   8.75
+  ],
+  [
+   "2026-06-26",
+   7.9
+  ],
+  [
+   "2026-07-03",
+   8.0
+  ],
+  [
+   "2026-07-10",
+   8.05
+  ],
+  [
+   "2026-07-17",
+   8.6
+  ],
+  [
+   "2026-07-24",
+   9.0
+  ],
+  [
+   "2026-07-31",
+   9.0
+  ],
+  [
+   "2026-08-07",
+   9.8
+  ],
+  [
+   "2026-08-14",
+   9.86
+  ],
+  [
+   "2026-08-21",
+   9.85
+  ],
+  [
+   "2026-08-28",
+   10.0
+  ],
+  [
+   "2026-09-07",
+   9.95
+  ],
+  [
+   "2026-09-11",
+   10.1
+  ],
+  [
+   "2026-09-18",
+   10.1
+  ],
+  [
+   "2026-09-25",
+   10.1
+  ],
+  [
+   "2026-10-02",
+   10.1
+  ],
+  [
+   "2026-10-09",
+   10.1
+  ],
+  [
+   "2026-10-16",
+   10.1
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2026-04-24",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Company expects to report revenues of in excess of £20 million (subject to audit) (FY2025: £14.2 million) for the period.",
+   "file": "20260424_CYAN_Trading-Statement.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-08-27",
+  "doc": "Notice",
+  "file": "20260827_CYAN_Expected-Scheme-Timetable.md",
+  "vs": "Scheme announcement Jul-26 · irrevocables update Aug-26 · FY results Aug-22, Jul-23, Jul-24, Jul-25",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Skipped update",
+    "text": "FY final results came out every summer (23 Aug 2022, 26 Jul 2023, 25 Jul 2024, 23 Jul 2025) → no FY2026 results RNS before this notice; only the Apr-26 trading statement (“revenues of in excess of £20 million (subject to audit)”), with no profit figure",
+    "span": "Given 4 years running → first gap; scheme effective 14 Sep 2026"
+   }
+  ]
+ }
+}

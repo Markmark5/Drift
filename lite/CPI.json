@@ -1,0 +1,1304 @@
+{
+ "ticker": "CPI",
+ "v": "2026-10-21.0b9a",
+ "ccy": "GBX",
+ "src": "Yahoo CPI.L weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-22",
+   709.1999
+  ],
+  [
+   "2021-10-29",
+   710.0999
+  ],
+  [
+   "2021-11-05",
+   703.0499
+  ],
+  [
+   "2021-11-12",
+   698.3999
+  ],
+  [
+   "2021-11-19",
+   678.2999
+  ],
+  [
+   "2021-11-26",
+   653.9999
+  ],
+  [
+   "2021-12-03",
+   677.9999
+  ],
+  [
+   "2021-12-10",
+   677.9999
+  ],
+  [
+   "2021-12-17",
+   539.6999
+  ],
+  [
+   "2021-12-24",
+   564.7499
+  ],
+  [
+   "2021-12-31",
+   547.4999
+  ],
+  [
+   "2022-01-07",
+   559.3499
+  ],
+  [
+   "2022-01-14",
+   558.7499
+  ],
+  [
+   "2022-01-21",
+   526.9499
+  ],
+  [
+   "2022-01-28",
+   477.2999
+  ],
+  [
+   "2022-02-04",
+   466.3499
+  ],
+  [
+   "2022-02-11",
+   467.3999
+  ],
+  [
+   "2022-02-18",
+   445.1999
+  ],
+  [
+   "2022-02-25",
+   426.7499
+  ],
+  [
+   "2022-03-04",
+   335.0999
+  ],
+  [
+   "2022-03-11",
+   325.7999
+  ],
+  [
+   "2022-03-18",
+   315.2999
+  ],
+  [
+   "2022-03-25",
+   310.4999
+  ],
+  [
+   "2022-04-01",
+   317.3999
+  ],
+  [
+   "2022-04-08",
+   328.1999
+  ],
+  [
+   "2022-04-15",
+   316.7999
+  ],
+  [
+   "2022-04-22",
+   316.4999
+  ],
+  [
+   "2022-04-29",
+   359.6999
+  ],
+  [
+   "2022-05-06",
+   346.4999
+  ],
+  [
+   "2022-05-13",
+   365.6999
+  ],
+  [
+   "2022-05-20",
+   350.3999
+  ],
+  [
+   "2022-05-27",
+   370.4999
+  ],
+  [
+   "2022-06-03",
+   370.4999
+  ],
+  [
+   "2022-06-10",
+   374.9999
+  ],
+  [
+   "2022-06-17",
+   365.9999
+  ],
+  [
+   "2022-06-24",
+   375.5999
+  ],
+  [
+   "2022-07-01",
+   383.9999
+  ],
+  [
+   "2022-07-08",
+   387.8999
+  ],
+  [
+   "2022-07-15",
+   392.0999
+  ],
+  [
+   "2022-07-22",
+   433.7999
+  ],
+  [
+   "2022-07-29",
+   430.1999
+  ],
+  [
+   "2022-08-05",
+   402.8999
+  ],
+  [
+   "2022-08-12",
+   389.3999
+  ],
+  [
+   "2022-08-19",
+   380.6999
+  ],
+  [
+   "2022-08-26",
+   374.9999
+  ],
+  [
+   "2022-09-02",
+   386.9999
+  ],
+  [
+   "2022-09-09",
+   389.9999
+  ],
+  [
+   "2022-09-16",
+   431.0999
+  ],
+  [
+   "2022-09-23",
+   416.0999
+  ],
+  [
+   "2022-09-30",
+   375.5999
+  ],
+  [
+   "2022-10-07",
+   402.8999
+  ],
+  [
+   "2022-10-14",
+   381.8999
+  ],
+  [
+   "2022-10-21",
+   387.2999
+  ],
+  [
+   "2022-10-28",
+   374.0999
+  ],
+  [
+   "2022-11-04",
+   364.7999
+  ],
+  [
+   "2022-11-11",
+   392.6999
+  ],
+  [
+   "2022-11-18",
+   392.6999
+  ],
+  [
+   "2022-11-25",
+   409.4999
+  ],
+  [
+   "2022-12-02",
+   366.5999
+  ],
+  [
+   "2022-12-09",
+   350.6999
+  ],
+  [
+   "2022-12-16",
+   352.4999
+  ],
+  [
+   "2022-12-23",
+   372.8999
+  ],
+  [
+   "2022-12-30",
+   363.8999
+  ],
+  [
+   "2023-01-06",
+   410.3999
+  ],
+  [
+   "2023-01-13",
+   409.4999
+  ],
+  [
+   "2023-01-20",
+   413.0999
+  ],
+  [
+   "2023-01-27",
+   422.3999
+  ],
+  [
+   "2023-02-03",
+   438.5999
+  ],
+  [
+   "2023-02-10",
+   437.9999
+  ],
+  [
+   "2023-02-17",
+   433.4999
+  ],
+  [
+   "2023-02-24",
+   428.6999
+  ],
+  [
+   "2023-03-03",
+   586.7999
+  ],
+  [
+   "2023-03-10",
+   580.4999
+  ],
+  [
+   "2023-03-17",
+   534.2999
+  ],
+  [
+   "2023-03-24",
+   556.4999
+  ],
+  [
+   "2023-03-31",
+   548.9999
+  ],
+  [
+   "2023-04-07",
+   536.6999
+  ],
+  [
+   "2023-04-14",
+   559.1999
+  ],
+  [
+   "2023-04-21",
+   513.8999
+  ],
+  [
+   "2023-04-28",
+   521.0999
+  ],
+  [
+   "2023-05-05",
+   500.0999
+  ],
+  [
+   "2023-05-12",
+   498.2999
+  ],
+  [
+   "2023-05-19",
+   481.4999
+  ],
+  [
+   "2023-05-26",
+   492.5999
+  ],
+  [
+   "2023-06-02",
+   523.7999
+  ],
+  [
+   "2023-06-09",
+   497.6999
+  ],
+  [
+   "2023-06-16",
+   479.9999
+  ],
+  [
+   "2023-06-23",
+   426.8999
+  ],
+  [
+   "2023-06-30",
+   411.5999
+  ],
+  [
+   "2023-07-07",
+   404.9999
+  ],
+  [
+   "2023-07-14",
+   432.2999
+  ],
+  [
+   "2023-07-21",
+   421.1999
+  ],
+  [
+   "2023-07-28",
+   419.6999
+  ],
+  [
+   "2023-08-04",
+   329.0999
+  ],
+  [
+   "2023-08-11",
+   313.4999
+  ],
+  [
+   "2023-08-18",
+   282.1499
+  ],
+  [
+   "2023-08-25",
+   263.6999
+  ],
+  [
+   "2023-09-01",
+   262.7999
+  ],
+  [
+   "2023-09-08",
+   245.3999
+  ],
+  [
+   "2023-09-15",
+   256.9499
+  ],
+  [
+   "2023-09-22",
+   266.9999
+  ],
+  [
+   "2023-09-29",
+   255.2999
+  ],
+  [
+   "2023-10-06",
+   251.9999
+  ],
+  [
+   "2023-10-13",
+   250.6499
+  ],
+  [
+   "2023-10-20",
+   250.9499
+  ],
+  [
+   "2023-10-27",
+   241.4999
+  ],
+  [
+   "2023-11-03",
+   266.5499
+  ],
+  [
+   "2023-11-10",
+   266.3999
+  ],
+  [
+   "2023-11-17",
+   275.0999
+  ],
+  [
+   "2023-11-24",
+   298.4999
+  ],
+  [
+   "2023-12-01",
+   299.9999
+  ],
+  [
+   "2023-12-08",
+   310.4999
+  ],
+  [
+   "2023-12-15",
+   321.5999
+  ],
+  [
+   "2023-12-22",
+   334.1999
+  ],
+  [
+   "2023-12-29",
+   329.9999
+  ],
+  [
+   "2024-01-05",
+   335.9999
+  ],
+  [
+   "2024-01-12",
+   298.4999
+  ],
+  [
+   "2024-01-19",
+   286.7999
+  ],
+  [
+   "2024-01-26",
+   284.2499
+  ],
+  [
+   "2024-02-02",
+   292.0499
+  ],
+  [
+   "2024-02-09",
+   269.5499
+  ],
+  [
+   "2024-02-16",
+   265.9499
+  ],
+  [
+   "2024-02-23",
+   273.8999
+  ],
+  [
+   "2024-03-01",
+   304.4999
+  ],
+  [
+   "2024-03-08",
+   235.9499
+  ],
+  [
+   "2024-03-15",
+   203.2499
+  ],
+  [
+   "2024-03-22",
+   199.7999
+  ],
+  [
+   "2024-03-29",
+   197.9999
+  ],
+  [
+   "2024-04-05",
+   195.5999
+  ],
+  [
+   "2024-04-12",
+   209.9999
+  ],
+  [
+   "2024-04-19",
+   197.3999
+  ],
+  [
+   "2024-04-26",
+   199.7999
+  ],
+  [
+   "2024-05-03",
+   203.0999
+  ],
+  [
+   "2024-05-10",
+   218.9999
+  ],
+  [
+   "2024-05-17",
+   218.6999
+  ],
+  [
+   "2024-05-24",
+   224.3999
+  ],
+  [
+   "2024-05-31",
+   213.8999
+  ],
+  [
+   "2024-06-07",
+   217.1999
+  ],
+  [
+   "2024-06-14",
+   209.3999
+  ],
+  [
+   "2024-06-21",
+   210.5999
+  ],
+  [
+   "2024-06-28",
+   202.4999
+  ],
+  [
+   "2024-07-05",
+   225.5999
+  ],
+  [
+   "2024-07-12",
+   297.8999
+  ],
+  [
+   "2024-07-19",
+   307.4999
+  ],
+  [
+   "2024-07-26",
+   295.4999
+  ],
+  [
+   "2024-08-02",
+   251.0999
+  ],
+  [
+   "2024-08-09",
+   273.5999
+  ],
+  [
+   "2024-08-16",
+   267.2999
+  ],
+  [
+   "2024-08-23",
+   284.3999
+  ],
+  [
+   "2024-08-30",
+   271.1999
+  ],
+  [
+   "2024-09-06",
+   274.4999
+  ],
+  [
+   "2024-09-13",
+   280.1999
+  ],
+  [
+   "2024-09-20",
+   293.0999
+  ],
+  [
+   "2024-09-27",
+   299.0999
+  ],
+  [
+   "2024-10-04",
+   290.0999
+  ],
+  [
+   "2024-10-11",
+   314.2499
+  ],
+  [
+   "2024-10-18",
+   314.9999
+  ],
+  [
+   "2024-10-25",
+   285.8999
+  ],
+  [
+   "2024-11-01",
+   283.4999
+  ],
+  [
+   "2024-11-08",
+   261.2999
+  ],
+  [
+   "2024-11-15",
+   258.8999
+  ],
+  [
+   "2024-11-22",
+   259.4999
+  ],
+  [
+   "2024-11-29",
+   259.7999
+  ],
+  [
+   "2024-12-06",
+   264.5999
+  ],
+  [
+   "2024-12-13",
+   253.1999
+  ],
+  [
+   "2024-12-20",
+   215.6999
+  ],
+  [
+   "2024-12-27",
+   206.9999
+  ],
+  [
+   "2025-01-03",
+   208.4999
+  ],
+  [
+   "2025-01-10",
+   200.6999
+  ],
+  [
+   "2025-01-17",
+   211.7999
+  ],
+  [
+   "2025-01-24",
+   213.5999
+  ],
+  [
+   "2025-01-31",
+   216.2999
+  ],
+  [
+   "2025-02-07",
+   214.7999
+  ],
+  [
+   "2025-02-14",
+   203.9999
+  ],
+  [
+   "2025-02-21",
+   201.8999
+  ],
+  [
+   "2025-02-28",
+   195.8999
+  ],
+  [
+   "2025-03-07",
+   206.9999
+  ],
+  [
+   "2025-03-14",
+   208.1999
+  ],
+  [
+   "2025-03-21",
+   205.7999
+  ],
+  [
+   "2025-03-28",
+   206.9999
+  ],
+  [
+   "2025-04-04",
+   183.2999
+  ],
+  [
+   "2025-04-11",
+   183.5999
+  ],
+  [
+   "2025-04-18",
+   195.5999
+  ],
+  [
+   "2025-04-25",
+   189.2999
+  ],
+  [
+   "2025-05-02",
+   194.1
+  ],
+  [
+   "2025-05-09",
+   204.0
+  ],
+  [
+   "2025-05-16",
+   221.0
+  ],
+  [
+   "2025-05-23",
+   216.2
+  ],
+  [
+   "2025-05-30",
+   227.4
+  ],
+  [
+   "2025-06-06",
+   245.6
+  ],
+  [
+   "2025-06-13",
+   249.5
+  ],
+  [
+   "2025-06-20",
+   279.5
+  ],
+  [
+   "2025-06-27",
+   335.5
+  ],
+  [
+   "2025-07-04",
+   340.5
+  ],
+  [
+   "2025-07-11",
+   347.5
+  ],
+  [
+   "2025-07-18",
+   344.5
+  ],
+  [
+   "2025-07-25",
+   309.5
+  ],
+  [
+   "2025-08-01",
+   288.0
+  ],
+  [
+   "2025-08-08",
+   253.0
+  ],
+  [
+   "2025-08-15",
+   230.5
+  ],
+  [
+   "2025-08-22",
+   236.5
+  ],
+  [
+   "2025-08-29",
+   239.5
+  ],
+  [
+   "2025-09-05",
+   245.0
+  ],
+  [
+   "2025-09-12",
+   253.0
+  ],
+  [
+   "2025-09-19",
+   258.5
+  ],
+  [
+   "2025-09-26",
+   263.0
+  ],
+  [
+   "2025-10-03",
+   334.0
+  ],
+  [
+   "2025-10-10",
+   350.5
+  ],
+  [
+   "2025-10-17",
+   302.0
+  ],
+  [
+   "2025-10-24",
+   329.0
+  ],
+  [
+   "2025-10-31",
+   313.0
+  ],
+  [
+   "2025-11-07",
+   300.0
+  ],
+  [
+   "2025-11-14",
+   319.5
+  ],
+  [
+   "2025-11-21",
+   319.0
+  ],
+  [
+   "2025-11-28",
+   339.5
+  ],
+  [
+   "2025-12-05",
+   354.0
+  ],
+  [
+   "2025-12-12",
+   392.0
+  ],
+  [
+   "2025-12-19",
+   404.0
+  ],
+  [
+   "2025-12-26",
+   396.0
+  ],
+  [
+   "2026-01-02",
+   403.5
+  ],
+  [
+   "2026-01-09",
+   405.5
+  ],
+  [
+   "2026-01-16",
+   392.5
+  ],
+  [
+   "2026-01-23",
+   395.0
+  ],
+  [
+   "2026-01-30",
+   376.5
+  ],
+  [
+   "2026-02-06",
+   377.0
+  ],
+  [
+   "2026-02-13",
+   360.5
+  ],
+  [
+   "2026-02-20",
+   361.0
+  ],
+  [
+   "2026-02-27",
+   341.0
+  ],
+  [
+   "2026-03-06",
+   358.0
+  ],
+  [
+   "2026-03-13",
+   268.0
+  ],
+  [
+   "2026-03-20",
+   239.0
+  ],
+  [
+   "2026-03-27",
+   267.5
+  ],
+  [
+   "2026-04-03",
+   274.5
+  ],
+  [
+   "2026-04-10",
+   263.5
+  ],
+  [
+   "2026-04-17",
+   292.5
+  ],
+  [
+   "2026-04-24",
+   280.0
+  ],
+  [
+   "2026-05-01",
+   309.0
+  ],
+  [
+   "2026-05-08",
+   310.5
+  ],
+  [
+   "2026-05-15",
+   315.0
+  ],
+  [
+   "2026-05-22",
+   377.5
+  ],
+  [
+   "2026-05-29",
+   398.5
+  ],
+  [
+   "2026-06-05",
+   370.0
+  ],
+  [
+   "2026-06-12",
+   349.0
+  ],
+  [
+   "2026-06-19",
+   319.5
+  ],
+  [
+   "2026-06-26",
+   297.0
+  ],
+  [
+   "2026-07-03",
+   311.5
+  ],
+  [
+   "2026-07-10",
+   229.0
+  ],
+  [
+   "2026-07-17",
+   235.5
+  ],
+  [
+   "2026-07-24",
+   236.5
+  ],
+  [
+   "2026-07-31",
+   258.5
+  ],
+  [
+   "2026-08-07",
+   264.0
+  ],
+  [
+   "2026-08-14",
+   273.0
+  ],
+  [
+   "2026-08-21",
+   281.0
+  ],
+  [
+   "2026-08-28",
+   280.5
+  ],
+  [
+   "2026-09-04",
+   258.0
+  ],
+  [
+   "2026-09-11",
+   249.0
+  ],
+  [
+   "2026-09-18",
+   232.5
+  ],
+  [
+   "2026-09-25",
+   222.0
+  ],
+  [
+   "2026-10-02",
+   214.0
+  ],
+  [
+   "2026-10-09",
+   235.0
+  ],
+  [
+   "2026-10-16",
+   287.5
+  ],
+  [
+   "2026-10-21",
+   295.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-12-13",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "These will help to partially offset certain inflationary pressures that we expect to impact the business in 2022 as a result of the current macro environment and challenged labour market.",
+   "file": "20211213_CPI_Pre-close-update-&amp;-proforma-historical-fina....md"
+  },
+  {
+   "d": "2022-03-10",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -1,
+   "q": "Notwithstanding the margin benefit from revenue growth and the flow through of the cost benefits from the divisional restructure implemented in 2021, we expect profit margins to reduce slightly in 2022.",
+   "file": "20220310_CPI_Full-Year-Results-2021.md"
+  },
+  {
+   "d": "2022-06-29",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -1,
+   "q": "As outlined during the 2021 full-year results, we expect profits in 2022 to be significantly weighted to the second half, with a reduced EBITDA margin reflecting the full-year impact of prior-year contract losses, structural decline in our closed book Life & Pensions business, and operational changes in the Army Recruitment contract.",
+   "file": "20220629_CPI_Capita-plc-first-half-in-line-with-expectations.md"
+  },
+  {
+   "d": "2022-08-05",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "We expect revenue growth and profit to increase in the second half of the year, despite the uncertain economic outlook, to deliver positive free cash flow before the impact of business exits and materially to reduce net debt over the full year.",
+   "file": "20220805_CPI_Half-Year-Results-2022.md"
+  },
+  {
+   "d": "2022-12-13",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Capita has delivered adjusted revenue1 growth of 2% in the 11 months to 30 November 2022 in line with full year guidance",
+   "file": "20221213_CPI_Pre-close-trading-update.md"
+  },
+  {
+   "d": "2023-03-02",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 1,
+   "q": "Core Capita (excluding Capita Portfolio businesses) EBIT margin (2022: 2.9%) expected to at least double over the medium term helped by revenue growth and mix coupled with ongoing efficiency delivery",
+   "file": "20230302_CPI_Full-Year-Results-2022.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2023-08-04",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "We expect to deliver an accelerated rate of revenue growth this year compared with that achieved in the prior year, alongside an improvement in EBIT margin, in line with our target to double the Group EBIT margin over the medium term.",
+   "file": "20230804_CPI_Half-Year-Results-2023.md"
+  },
+  {
+   "d": "2023-11-21",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The group continues to trade in line with its expectations, delivering positive operational and financial performance and has won contracts with a total contract value (TCV) of £2.85bn year to date (2022 full year TCV: £2.59bn).",
+   "file": "20231121_CPI_Statement-re-Capita-plc-implementing-signific....md"
+  },
+  {
+   "d": "2023-12-14",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "We have continued to make good progress against our core priorities and remain on track to deliver our medium term guidance of mid-single digit revenue growth, doubling our operating margin and delivering positive free cash flow.",
+   "file": "20231214_CPI_Pre-close-trading-update-for-the-11-months-to....md"
+  },
+  {
+   "d": "2024-03-06",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "For 2024, as a whole, on an adjusted basis, we currently expect that revenue will be broadly in line with 2023, and that operating profit margin and free cash flow will show modest improvement year on year.",
+   "file": "20240306_CPI_Full-Year-Results-2023.md"
+  },
+  {
+   "d": "2024-05-21",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Our financial performance in the first four months of the year has been in line with our expectations and we remain on track to deliver our full year financial guidance as outlined at the start of this year.",
+   "file": "20240521_CPI_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2024-08-02",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "Expect a low to mid-single digit percentage adjusted revenue reduction, reflecting delayed operational go-live on certain contracts and a more focused approach to bidding",
+   "file": "20240802_CPI_Half-year-Results-2024.md"
+  },
+  {
+   "d": "2024-12-17",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 1,
+   "q": "In 2025, we expect additional savings to offset the £16m of in-year incremental employers’ National Insurance Contributions costs (£20m on an annualised basis), and to deliver further margin improvement and modest profit growth.",
+   "file": "20241217_CPI_Trading-and-Operating-Update.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2025-03-05",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Small increase in adjusted operating margin1, due to continued progress with the efficiency programmes, partly offset by agreed exits from closed book Life & Pensions contracts",
+   "file": "20250305_CPI_Full-Year-Results-2024.md"
+  },
+  {
+   "d": "2025-06-17",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "Re-iterating full year 2025 financial guidance of broadly flat revenue, operating margin improvement weighted to the second half of the year",
+   "file": "20250617_CPI_Trading-update-for-the-five-months-ended-31-M....md"
+  },
+  {
+   "d": "2025-07-02",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "As noted within the Group’s trading statement, released on 17 June 2025, we reiterate our full year 2025 financial guidance of broadly flat revenue, operating margin improvement weighted to the second half of the year.",
+   "file": "20250702_CPI_Statement-re-H1-2024-Segmental-Restatement.md"
+  },
+  {
+   "d": "2025-08-05",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "We expect a modest improvement in year on year adjusted operating margin for the Group as a whole, with an improvement in the second half of the year from the Group's cost saving programme and the expectation of continued revenue growth in Capita Public Service.",
+   "file": "20250805_CPI_Half-Year-Results-2025_2.md"
+  },
+  {
+   "d": "2025-08-05",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The operational performance and momentum we have seen in the first half of the year gives confidence in our delivery of the second half of the year and our full year outlook remains unchanged.",
+   "file": "20250805_CPI_Half-Year-Results-2025.md"
+  },
+  {
+   "d": "2025-12-12",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "From a full year perspective, we now expect growth in Capita Public Service to be slightly below mid single digit, a high teen digit reduction in Contact Centre and low single digit growth in our Pension Solutions business.",
+   "file": "20251212_CPI_Trading-Statement.md"
+  },
+  {
+   "d": "2026-03-10",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -2,
+   "q": "Small decrease in adjusted operating margin1 reflecting continued challenges in Contact Centre and increased mobilisation costs in Pension Solutions and Public Service",
+   "file": "20260310_CPI_FULL-YEAR-RESULTS-2025.md"
+  },
+  {
+   "d": "2026-03-26",
+   "doc": "OPS",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group expects to deliver approximately 200bps improvement in adjusted operating margin by 2027 (against the 2025 Group adjusted operating margin of 5.2%).",
+   "file": "20260326_CPI_Disposal.md"
+  },
+  {
+   "d": "2026-05-18",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "We continue to expect the Group to deliver positive free cash flow, before the impact of business exits, in 2026.",
+   "file": "20260518_CPI_Trading-Statement.md"
+  },
+  {
+   "d": "2026-07-09",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -3,
+   "q": "Compared to our previous expectations we now expect a £25m – £40m adjusted operating profit impact in 2026, from the items outlined above, post the impact of the mitigating actions.",
+   "file": "20260709_CPI_Trading-and-Civil-Service-Pension-Scheme-Cont....md"
+  },
+  {
+   "d": "2026-08-04",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "We expect a reduction in adjusted operating margin1 reflecting the additional costs incurred as a result of the Civil Service Pension Scheme contract and residual overheads as the business transitions to a simpler operating model following the private sector contact centre disposal.",
+   "file": "20260804_CPI_Half-Year-Results-2026.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-20",
+  "doc": "OPS",
+  "file": "20261020_CPI_Capital-Market-Event-Update.md",
+  "vs": "H1 R Aug-26 · prev RNS Oct-02-26 (NAO statement) · back to Mar/May/Jul-26 · no equivalent update a year earlier",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Pushed out",
+    "text": "Refreshed financial targets: Mar-26 “We will hold an investor update on 17 June 2026” → May-26 “after the summer” → Aug-26 “the Group’s Capital Market Event on 4 November” → now “postponing its Capital Market Event, previously planned for 4th November”; segment detail and targets move to the December trading update",
+    "span": "Third delay since Mar-26; targets first promised for Jun-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Target dropped",
+    "text": "CSPS: Mar-26 “We expect to return to service level standards by the end of June 2026”; Aug-26 “we are confident that we have the right processes, technology and leadership in place to achieve service levels” → now “Capita recognises further improvement in service is required” and a “comprehensive recovery plan” is still being worked on, no date",
+    "span": "Jun-26 target missed; no replacement date at Aug-26, Oct-02 or Oct-20"
+   },
+   {
+    "sev": "grey",
+    "type": "Went quiet",
+    "text": "FY26 guide: Aug-26 “in line full year financial performance guidance” → now no reference to FY26 guidance; next update “Alongside its regular trading update in December”",
+    "span": "Guide last restated Aug-26"
+   }
+  ]
+ }
+}

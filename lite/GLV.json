@@ -1,0 +1,1307 @@
+{
+ "ticker": "GLV",
+ "v": "2026-10-21.412b",
+ "ccy": "USD",
+ "src": "AlphaVantage GLV.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   1.12
+  ],
+  [
+   "2021-10-22",
+   1.12
+  ],
+  [
+   "2021-10-29",
+   1.095
+  ],
+  [
+   "2021-11-05",
+   1.095
+  ],
+  [
+   "2021-11-12",
+   1.113
+  ],
+  [
+   "2021-11-19",
+   1.141
+  ],
+  [
+   "2021-11-26",
+   1.163
+  ],
+  [
+   "2021-12-03",
+   1.155
+  ],
+  [
+   "2021-12-10",
+   1.163
+  ],
+  [
+   "2021-12-17",
+   1.197
+  ],
+  [
+   "2021-12-24",
+   1.235
+  ],
+  [
+   "2021-12-31",
+   1.223
+  ],
+  [
+   "2022-01-07",
+   1.231
+  ],
+  [
+   "2022-01-14",
+   1.224
+  ],
+  [
+   "2022-01-21",
+   1.23
+  ],
+  [
+   "2022-01-28",
+   1.179
+  ],
+  [
+   "2022-02-04",
+   1.267
+  ],
+  [
+   "2022-02-11",
+   1.235
+  ],
+  [
+   "2022-02-18",
+   1.219
+  ],
+  [
+   "2022-02-25",
+   1.175
+  ],
+  [
+   "2022-03-04",
+   1.15
+  ],
+  [
+   "2022-03-11",
+   1.204
+  ],
+  [
+   "2022-03-18",
+   1.204
+  ],
+  [
+   "2022-03-25",
+   1.22
+  ],
+  [
+   "2022-04-01",
+   1.164
+  ],
+  [
+   "2022-04-08",
+   1.178
+  ],
+  [
+   "2022-04-14",
+   1.178
+  ],
+  [
+   "2022-04-22",
+   1.178
+  ],
+  [
+   "2022-04-29",
+   1.142
+  ],
+  [
+   "2022-05-06",
+   1.04
+  ],
+  [
+   "2022-05-13",
+   0.97
+  ],
+  [
+   "2022-05-20",
+   0.9475
+  ],
+  [
+   "2022-05-27",
+   0.9285
+  ],
+  [
+   "2022-06-01",
+   0.98
+  ],
+  [
+   "2022-06-10",
+   0.996
+  ],
+  [
+   "2022-06-17",
+   0.912
+  ],
+  [
+   "2022-06-24",
+   0.901
+  ],
+  [
+   "2022-07-01",
+   0.96
+  ],
+  [
+   "2022-07-08",
+   0.968
+  ],
+  [
+   "2022-07-15",
+   0.982
+  ],
+  [
+   "2022-07-22",
+   1.042
+  ],
+  [
+   "2022-07-29",
+   1.06
+  ],
+  [
+   "2022-08-05",
+   1.067
+  ],
+  [
+   "2022-08-12",
+   1.112
+  ],
+  [
+   "2022-08-19",
+   1.112
+  ],
+  [
+   "2022-08-26",
+   1.056
+  ],
+  [
+   "2022-09-02",
+   1.005
+  ],
+  [
+   "2022-09-09",
+   1.009
+  ],
+  [
+   "2022-09-16",
+   1.04
+  ],
+  [
+   "2022-09-23",
+   0.986
+  ],
+  [
+   "2022-09-30",
+   0.911
+  ],
+  [
+   "2022-10-07",
+   0.8805
+  ],
+  [
+   "2022-10-14",
+   0.88
+  ],
+  [
+   "2022-10-21",
+   0.942
+  ],
+  [
+   "2022-10-28",
+   0.9695
+  ],
+  [
+   "2022-11-04",
+   0.991
+  ],
+  [
+   "2022-11-11",
+   0.989
+  ],
+  [
+   "2022-11-18",
+   0.94
+  ],
+  [
+   "2022-11-25",
+   0.935
+  ],
+  [
+   "2022-12-02",
+   0.93
+  ],
+  [
+   "2022-12-09",
+   0.881
+  ],
+  [
+   "2022-12-16",
+   0.8485
+  ],
+  [
+   "2022-12-23",
+   0.8855
+  ],
+  [
+   "2022-12-30",
+   0.87
+  ],
+  [
+   "2023-01-06",
+   0.855
+  ],
+  [
+   "2023-01-13",
+   0.905
+  ],
+  [
+   "2023-01-20",
+   0.9365
+  ],
+  [
+   "2023-01-27",
+   0.945
+  ],
+  [
+   "2023-02-03",
+   0.985
+  ],
+  [
+   "2023-02-10",
+   0.9725
+  ],
+  [
+   "2023-02-17",
+   0.993
+  ],
+  [
+   "2023-02-24",
+   0.966
+  ],
+  [
+   "2023-03-03",
+   0.987
+  ],
+  [
+   "2023-03-10",
+   1.0
+  ],
+  [
+   "2023-03-17",
+   1.006
+  ],
+  [
+   "2023-03-24",
+   1.006
+  ],
+  [
+   "2023-03-31",
+   0.983
+  ],
+  [
+   "2023-04-06",
+   0.93
+  ],
+  [
+   "2023-04-14",
+   0.955
+  ],
+  [
+   "2023-04-21",
+   0.975
+  ],
+  [
+   "2023-04-28",
+   0.945
+  ],
+  [
+   "2023-05-05",
+   0.945
+  ],
+  [
+   "2023-05-12",
+   0.995
+  ],
+  [
+   "2023-05-19",
+   1.025
+  ],
+  [
+   "2023-05-26",
+   1.045
+  ],
+  [
+   "2023-06-02",
+   1.045
+  ],
+  [
+   "2023-06-09",
+   1.1
+  ],
+  [
+   "2023-06-16",
+   1.115
+  ],
+  [
+   "2023-06-23",
+   1.12
+  ],
+  [
+   "2023-06-30",
+   1.12
+  ],
+  [
+   "2023-07-07",
+   1.07
+  ],
+  [
+   "2023-07-14",
+   1.125
+  ],
+  [
+   "2023-07-21",
+   1.1
+  ],
+  [
+   "2023-07-28",
+   1.1
+  ],
+  [
+   "2023-08-04",
+   1.07
+  ],
+  [
+   "2023-08-11",
+   1.055
+  ],
+  [
+   "2023-08-18",
+   0.98
+  ],
+  [
+   "2023-08-25",
+   0.9575
+  ],
+  [
+   "2023-09-01",
+   1.01
+  ],
+  [
+   "2023-09-08",
+   0.97
+  ],
+  [
+   "2023-09-15",
+   0.995
+  ],
+  [
+   "2023-09-22",
+   0.995
+  ],
+  [
+   "2023-09-29",
+   1.005
+  ],
+  [
+   "2023-10-06",
+   0.975
+  ],
+  [
+   "2023-10-13",
+   0.98
+  ],
+  [
+   "2023-10-20",
+   0.9575
+  ],
+  [
+   "2023-10-27",
+   0.925
+  ],
+  [
+   "2023-11-03",
+   0.97
+  ],
+  [
+   "2023-11-10",
+   1.005
+  ],
+  [
+   "2023-11-17",
+   1.04
+  ],
+  [
+   "2023-11-24",
+   1.05
+  ],
+  [
+   "2023-12-01",
+   1.05
+  ],
+  [
+   "2023-12-08",
+   1.13
+  ],
+  [
+   "2023-12-15",
+   1.155
+  ],
+  [
+   "2023-12-22",
+   1.195
+  ],
+  [
+   "2023-12-29",
+   1.21
+  ],
+  [
+   "2024-01-05",
+   1.23
+  ],
+  [
+   "2024-01-12",
+   1.205
+  ],
+  [
+   "2024-01-19",
+   1.215
+  ],
+  [
+   "2024-01-26",
+   1.225
+  ],
+  [
+   "2024-02-02",
+   1.225
+  ],
+  [
+   "2024-02-09",
+   1.22
+  ],
+  [
+   "2024-02-16",
+   1.245
+  ],
+  [
+   "2024-02-23",
+   1.2
+  ],
+  [
+   "2024-03-01",
+   1.17
+  ],
+  [
+   "2024-03-08",
+   1.25
+  ],
+  [
+   "2024-03-15",
+   1.225
+  ],
+  [
+   "2024-03-22",
+   1.26
+  ],
+  [
+   "2024-03-28",
+   1.255
+  ],
+  [
+   "2024-04-05",
+   1.25
+  ],
+  [
+   "2024-04-12",
+   1.275
+  ],
+  [
+   "2024-04-19",
+   1.265
+  ],
+  [
+   "2024-04-26",
+   1.25
+  ],
+  [
+   "2024-05-03",
+   1.285
+  ],
+  [
+   "2024-05-10",
+   1.28
+  ],
+  [
+   "2024-05-17",
+   1.385
+  ],
+  [
+   "2024-05-24",
+   1.375
+  ],
+  [
+   "2024-05-28",
+   1.375
+  ],
+  [
+   "2024-06-07",
+   1.38
+  ],
+  [
+   "2024-06-14",
+   1.335
+  ],
+  [
+   "2024-06-21",
+   1.33
+  ],
+  [
+   "2024-06-28",
+   1.3
+  ],
+  [
+   "2024-07-05",
+   1.285
+  ],
+  [
+   "2024-07-12",
+   1.36
+  ],
+  [
+   "2024-07-19",
+   1.35
+  ],
+  [
+   "2024-07-26",
+   1.35
+  ],
+  [
+   "2024-08-02",
+   1.345
+  ],
+  [
+   "2024-08-07",
+   1.35
+  ],
+  [
+   "2024-08-16",
+   1.38
+  ],
+  [
+   "2024-08-23",
+   1.455
+  ],
+  [
+   "2024-08-30",
+   1.45
+  ],
+  [
+   "2024-09-06",
+   1.515
+  ],
+  [
+   "2024-09-12",
+   1.48
+  ],
+  [
+   "2024-09-20",
+   1.56
+  ],
+  [
+   "2024-09-27",
+   1.585
+  ],
+  [
+   "2024-10-03",
+   1.615
+  ],
+  [
+   "2024-10-07",
+   1.59
+  ],
+  [
+   "2024-10-11",
+   1.59
+  ],
+  [
+   "2024-10-18",
+   1.61
+  ],
+  [
+   "2024-10-25",
+   1.625
+  ],
+  [
+   "2024-11-01",
+   1.575
+  ],
+  [
+   "2024-11-08",
+   1.6
+  ],
+  [
+   "2024-11-15",
+   1.565
+  ],
+  [
+   "2024-11-22",
+   1.53
+  ],
+  [
+   "2024-11-29",
+   1.575
+  ],
+  [
+   "2024-12-06",
+   1.575
+  ],
+  [
+   "2024-12-13",
+   1.6
+  ],
+  [
+   "2024-12-20",
+   1.65
+  ],
+  [
+   "2024-12-24",
+   1.6
+  ],
+  [
+   "2024-12-27",
+   1.6
+  ],
+  [
+   "2024-12-30",
+   1.6
+  ],
+  [
+   "2025-01-03",
+   1.64
+  ],
+  [
+   "2025-01-10",
+   1.555
+  ],
+  [
+   "2025-01-17",
+   1.545
+  ],
+  [
+   "2025-01-24",
+   1.575
+  ],
+  [
+   "2025-01-31",
+   1.685
+  ],
+  [
+   "2025-02-07",
+   1.655
+  ],
+  [
+   "2025-02-14",
+   1.655
+  ],
+  [
+   "2025-02-21",
+   1.585
+  ],
+  [
+   "2025-02-28",
+   1.555
+  ],
+  [
+   "2025-03-07",
+   1.535
+  ],
+  [
+   "2025-03-14",
+   1.475
+  ],
+  [
+   "2025-03-21",
+   1.535
+  ],
+  [
+   "2025-03-28",
+   1.535
+  ],
+  [
+   "2025-04-04",
+   1.525
+  ],
+  [
+   "2025-04-11",
+   1.425
+  ],
+  [
+   "2025-04-17",
+   1.55
+  ],
+  [
+   "2025-04-25",
+   1.645
+  ],
+  [
+   "2025-05-02",
+   1.645
+  ],
+  [
+   "2025-05-09",
+   1.63
+  ],
+  [
+   "2025-05-16",
+   1.65
+  ],
+  [
+   "2025-05-23",
+   1.73
+  ],
+  [
+   "2025-05-30",
+   1.83
+  ],
+  [
+   "2025-06-06",
+   1.78
+  ],
+  [
+   "2025-06-13",
+   1.78
+  ],
+  [
+   "2025-06-20",
+   1.78
+  ],
+  [
+   "2025-06-27",
+   1.71
+  ],
+  [
+   "2025-07-04",
+   1.715
+  ],
+  [
+   "2025-07-11",
+   1.835
+  ],
+  [
+   "2025-07-18",
+   1.77
+  ],
+  [
+   "2025-07-25",
+   1.845
+  ],
+  [
+   "2025-08-01",
+   1.845
+  ],
+  [
+   "2025-08-08",
+   1.9
+  ],
+  [
+   "2025-08-15",
+   1.95
+  ],
+  [
+   "2025-08-22",
+   1.9
+  ],
+  [
+   "2025-08-29",
+   1.9
+  ],
+  [
+   "2025-09-05",
+   1.9
+  ],
+  [
+   "2025-09-12",
+   1.9
+  ],
+  [
+   "2025-09-19",
+   1.9
+  ],
+  [
+   "2025-09-26",
+   1.9
+  ],
+  [
+   "2025-10-03",
+   1.9
+  ],
+  [
+   "2025-10-10",
+   1.84
+  ],
+  [
+   "2025-10-17",
+   1.84
+  ],
+  [
+   "2025-10-24",
+   1.85
+  ],
+  [
+   "2025-10-31",
+   1.85
+  ],
+  [
+   "2025-11-07",
+   1.825
+  ],
+  [
+   "2025-11-14",
+   1.825
+  ],
+  [
+   "2025-11-21",
+   1.83
+  ],
+  [
+   "2025-11-28",
+   1.92
+  ],
+  [
+   "2025-12-05",
+   1.95
+  ],
+  [
+   "2025-12-12",
+   1.925
+  ],
+  [
+   "2025-12-19",
+   1.935
+  ],
+  [
+   "2025-12-24",
+   1.935
+  ],
+  [
+   "2026-01-02",
+   1.935
+  ],
+  [
+   "2026-01-09",
+   1.99
+  ],
+  [
+   "2026-01-16",
+   1.945
+  ],
+  [
+   "2026-01-23",
+   1.995
+  ],
+  [
+   "2026-01-30",
+   1.94
+  ],
+  [
+   "2026-02-06",
+   1.98
+  ],
+  [
+   "2026-02-13",
+   2.06
+  ],
+  [
+   "2026-02-20",
+   2.16
+  ],
+  [
+   "2026-02-27",
+   2.22
+  ],
+  [
+   "2026-03-06",
+   2.22
+  ],
+  [
+   "2026-03-13",
+   2.11
+  ],
+  [
+   "2026-03-20",
+   1.97
+  ],
+  [
+   "2026-03-27",
+   1.93
+  ],
+  [
+   "2026-04-02",
+   1.9
+  ],
+  [
+   "2026-04-10",
+   1.985
+  ],
+  [
+   "2026-04-17",
+   2.01
+  ],
+  [
+   "2026-04-24",
+   2.005
+  ],
+  [
+   "2026-05-01",
+   2.075
+  ],
+  [
+   "2026-05-08",
+   2.19
+  ],
+  [
+   "2026-05-15",
+   2.31
+  ],
+  [
+   "2026-05-22",
+   2.28
+  ],
+  [
+   "2026-05-29",
+   2.27
+  ],
+  [
+   "2026-06-05",
+   2.36
+  ],
+  [
+   "2026-06-12",
+   2.36
+  ],
+  [
+   "2026-06-19",
+   2.31
+  ],
+  [
+   "2026-06-26",
+   2.43
+  ],
+  [
+   "2026-07-03",
+   2.47
+  ],
+  [
+   "2026-07-10",
+   2.44
+  ],
+  [
+   "2026-07-17",
+   2.4
+  ],
+  [
+   "2026-07-24",
+   2.4
+  ],
+  [
+   "2026-07-31",
+   2.42
+  ],
+  [
+   "2026-08-07",
+   2.42
+  ],
+  [
+   "2026-08-14",
+   2.41
+  ],
+  [
+   "2026-08-21",
+   2.46
+  ],
+  [
+   "2026-08-28",
+   2.46
+  ],
+  [
+   "2026-09-04",
+   2.47
+  ],
+  [
+   "2026-09-11",
+   2.44
+  ],
+  [
+   "2026-09-18",
+   2.34
+  ],
+  [
+   "2026-09-25",
+   2.34
+  ],
+  [
+   "2026-10-02",
+   2.2
+  ],
+  [
+   "2026-10-09",
+   2.34
+  ],
+  [
+   "2026-10-16",
+   2.34
+  ],
+  [
+   "2026-10-20",
+   2.27
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2022-01-05",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group is targeting continued revenue and profit growth in 2022 which is underpinned by having all necessary sites operational, strong visibility on our supply chain and a good order book in place, while ensuring we continue to drive balance sheet efficiency to maximise value for shareholders.",
+   "file": "20220105_GLV_Glenveagh-Full-Year-Trading-Statement-2021.md"
+  },
+  {
+   "d": "2022-03-08",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Operating profit is expected to be in the range of €73 million to €78 million, with Earnings Per Share in the range of 7.5 cent to 8.5 cent.",
+   "file": "20220308_GLV_Glenveagh-Properties-plc-Final-Results-2021.md"
+  },
+  {
+   "d": "2022-04-28",
+   "doc": "AGM",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group remains on track to deliver our 1,400 Suburban home target for 2022 which is underpinned by our strategy of focusing on the more affordable segment of the market, which is aligned with Government policy.",
+   "file": "20220428_GLV_AGM-Trading-Statement.md"
+  },
+  {
+   "d": "2022-09-14",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Despite the near-term challenges of CPI and material availability, the Group are confident of delivering EPS for 2022 of between 7.5 cent to 8.5 cent.",
+   "file": "20220914_GLV_Interim-Results-2022.md"
+  },
+  {
+   "d": "2023-01-05",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -2,
+   "q": "In this context, we now anticipate that suburban unit deliveries for FY 2023 will be broadly in line with FY 2022 levels, and lower than our previous expectation of 1,700 units.",
+   "file": "20230105_GLV_Full-Year-Trading-Statement-2022.md"
+  },
+  {
+   "d": "2023-03-01",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "F urther improvement in the suburban margin is expected in FY 2023 to approximately 19%, and given strong underlying demand we anticipate an EPS outturn for FY 2023 of 7.5-8.0 cents",
+   "file": "20230301_GLV_Final-Results-2022.md"
+  },
+  {
+   "d": "2023-06-08",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 1,
+   "q": "The Group has made significant progress in what has been an improving planning environment in FY 2023, increasing confidence on unit delivery in FY 2024 and beyond.",
+   "file": "20230608_GLV_Trading-Statement.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2023-09-14",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "A very healthy land portfolio and forward order book, combined with strong planning momentum and robust operational and manufacturing capability, gives the Group increasing confidence in its capacity to generate strong revenue and profit growth across its Suburban, Urban and Partnerships business segments in FY 2024. We are comfortable with current consensus EPS expectations for FY 2024 of approximately 17 cents",
+   "file": "20230914_GLV_Interim-Results-2023.md"
+  },
+  {
+   "d": "2024-01-10",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "This growth is underpinned by our healthy land portfolio and forward order book, continued planning momentum and strong operational and manufacturing capability. We are comfortable with current consensus EPS expectations for FY 2024 of approximately 17 cent",
+   "file": "20240110_GLV_Full-Year-Trading-Statement-2023.md"
+  },
+  {
+   "d": "2024-02-28",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Our stronger forward order book, operational momentum, and continued progress in manufacturing means that we have increased confidence with current consensus EPS expectations for FY 2024 of approximately 17 cent",
+   "file": "20240228_GLV_Final-Results-2023.md"
+  },
+  {
+   "d": "2024-05-02",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "We continue to anticipate an EPS outturn for FY 2024 of approximately 17 cent",
+   "file": "20240502_GLV_Trading-Statement.md"
+  },
+  {
+   "d": "2024-07-04",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Our strong forward order book, operational momentum, and continued progress in manufacturing underpins our full year EPS guidance which anticipates a more than doubling of EPS to approximately 17 cent (FY 2023: 8 cent), and Return on Equity target of approximately 15%",
+   "file": "20240704_GLV_H1-Trading-Statement-2024.md"
+  },
+  {
+   "d": "2024-09-05",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "We reiterate our full year EPS guidance which anticipates a more than doubling of EPS to approximately 17 cent in FY 2024 and a Return on Equity target of approximately 15%",
+   "file": "20240905_GLV_Interim-Results-2024.md"
+  },
+  {
+   "d": "2024-09-12",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "We reiterate our full year EPS guidance which anticipates a more than doubling of EPS to approximately 17 cent in FY 2024 and a Return on Equity target of approximately 15%",
+   "file": "20240912_GLV_Interim-Results-2024.md"
+  },
+  {
+   "d": "2025-01-10",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group expects to deliver EPS of approximately 19.5 cent in 2025.",
+   "file": "20250110_GLV_Full-Year-Trading-Statement-2024.md"
+  },
+  {
+   "d": "2025-03-13",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Continued confidence for FY 2025, with EPS guidance of approximately 19.5 cent underpinned by a leading land portfolio, strong forward order book, planning permissions in place, continued standardisation, and demand for smaller non-core land parcels.",
+   "file": "20250313_GLV_Final-Results-2024.md"
+  },
+  {
+   "d": "2025-05-22",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "FY2025 guidance reiterated, anticipating an EPS outturn of 19.5 cent",
+   "file": "20250522_GLV_Trading-Update.md"
+  },
+  {
+   "d": "2025-09-25",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "These strategic pillars continue to deliver the strong performance we expect - with revenue, profitability and margin all in line with guidance - while maintaining discipline in capital deployment and risk management across the business.",
+   "file": "20250925_GLV_Interim-Results-2025.md"
+  },
+  {
+   "d": "2026-01-15",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "For 2026, the Group is guiding EPS of up to 21 cent, reflecting continued growth in completions, the ongoing contribution from Partnerships and disciplined cost control.",
+   "file": "20260115_GLV_Full-Year-Trading-Statement-2025.md"
+  },
+  {
+   "d": "2026-03-13",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "The Group expects to be highly cash generative in H2 2026, with Homebuilding deliveries, revenue and profit more heavily weighted toward the second half than in a typical year, reflecting the ramp-up profile of sites acquired in late 2024.",
+   "file": "20260313_GLV_Final-Results-2025.md"
+  },
+  {
+   "d": "2026-05-15",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "2026 EPS guidance of up to 21 cent reiterated, reflecting continued growth in completions, the ongoing contribution of the Partnerships segment, and disciplined cost control across the business.",
+   "file": "20260515_GLV_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2026-09-10",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Full-year EPS guidance upgraded to at least 21 cent (previously up to 21 cent), with higher Homebuilding completions and Partnerships income offset by lower land sale revenue and higher interest costs.",
+   "file": "20260910_GLV_Interim-Results-2026.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-10",
+  "doc": "H1 R",
+  "file": "20260910_GLV_Interim-Results-2026.md",
+  "vs": "H1 R Sep-25 · AGM May-26 · FY R Mar-26 · YE-TU Jan-26",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Target dropped",
+    "text": "2027 Homebuilding target: Jan-26 “the Group now expects to scale Homebuilding output to approximately 2,000 units by 2027 (previously 1,900)” → Sep-26 “Combined 2026 and 2027 Homebuilding deliveries remains at approximately 3,600 units” with 2026 raised to 1,700+, implying ~1,900 for 2027; the 2,000 figure is not repeated",
+    "span": "Given Jan-26 and Mar-26 → first gap; 2026 raise borrowed from 2027"
+   },
+   {
+    "sev": "red",
+    "type": "Pushed out",
+    "text": "Land sales: Sep-25 “on track to complete €100m of land sales across 2025 and 2026”, May-26 “On track to complete approximately €45 million of land sales in 2026” → Sep-26 “Land sale guidance for 2026 is revised to approximately €20 million (previously €45 million), with a further €25 million of land sales anticipated in 2027”",
+    "span": "€100m across 2025-26 guided Mar-25 to Mar-26 → now ~€75m by end-26, target reframed to Dec-27"
+   },
+   {
+    "sev": "amber",
+    "type": "Anchor softened",
+    "text": "Homebuilding gross margin guide: May-26 “supporting an expected Homebuilding gross margin in excess of 21%” → Sep-26 “Homebuilding gross margin is expected to remain at approximately 21%”",
+    "span": "Floor (“above 21%”) given Jan-26, Mar-26, May-26 → now approximate"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Partnerships gross margin: Sep-25 “gross margin was 16.2% (H1 2024: 15.2%), slightly ahead of target” → Sep-26 “gross margin of 13.2% (H1 2025: 16.2%) shaped by the site and tenure mix of active sites, in line with expectations”",
+    "span": "H1 interims Sep-25 vs Sep-26: -300bps described as in line"
+   }
+  ]
+ }
+}

@@ -1,0 +1,1333 @@
+{
+ "ticker": "RFX",
+ "v": "2026-10-21.3a6c",
+ "ccy": "GBX",
+ "src": "AlphaVantage RFX.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   163.0
+  ],
+  [
+   "2021-10-22",
+   161.5
+  ],
+  [
+   "2021-10-29",
+   155.0
+  ],
+  [
+   "2021-11-05",
+   152.5
+  ],
+  [
+   "2021-11-12",
+   156.5
+  ],
+  [
+   "2021-11-19",
+   157.5
+  ],
+  [
+   "2021-11-26",
+   155.0
+  ],
+  [
+   "2021-12-03",
+   161.0
+  ],
+  [
+   "2021-12-10",
+   161.0
+  ],
+  [
+   "2021-12-17",
+   161.0
+  ],
+  [
+   "2021-12-24",
+   164.0
+  ],
+  [
+   "2021-12-31",
+   166.0
+  ],
+  [
+   "2022-01-07",
+   166.0
+  ],
+  [
+   "2022-01-14",
+   166.0
+  ],
+  [
+   "2022-01-21",
+   175.0
+  ],
+  [
+   "2022-01-28",
+   175.0
+  ],
+  [
+   "2022-02-04",
+   177.5
+  ],
+  [
+   "2022-02-11",
+   177.5
+  ],
+  [
+   "2022-02-18",
+   177.5
+  ],
+  [
+   "2022-02-25",
+   177.5
+  ],
+  [
+   "2022-03-04",
+   147.5
+  ],
+  [
+   "2022-03-11",
+   154.5
+  ],
+  [
+   "2022-03-18",
+   165.0
+  ],
+  [
+   "2022-03-25",
+   158.5
+  ],
+  [
+   "2022-04-01",
+   170.0
+  ],
+  [
+   "2022-04-08",
+   191.0
+  ],
+  [
+   "2022-04-14",
+   185.0
+  ],
+  [
+   "2022-04-22",
+   187.0
+  ],
+  [
+   "2022-04-29",
+   200.0
+  ],
+  [
+   "2022-05-06",
+   198.5
+  ],
+  [
+   "2022-05-13",
+   197.0
+  ],
+  [
+   "2022-05-20",
+   199.0
+  ],
+  [
+   "2022-05-27",
+   193.0
+  ],
+  [
+   "2022-06-01",
+   197.5
+  ],
+  [
+   "2022-06-10",
+   208.5
+  ],
+  [
+   "2022-06-17",
+   201.5
+  ],
+  [
+   "2022-06-24",
+   198.0
+  ],
+  [
+   "2022-07-01",
+   192.5
+  ],
+  [
+   "2022-07-08",
+   188.0
+  ],
+  [
+   "2022-07-15",
+   182.5
+  ],
+  [
+   "2022-07-22",
+   178.0
+  ],
+  [
+   "2022-07-29",
+   181.5
+  ],
+  [
+   "2022-08-05",
+   180.0
+  ],
+  [
+   "2022-08-12",
+   182.5
+  ],
+  [
+   "2022-08-19",
+   182.5
+  ],
+  [
+   "2022-08-26",
+   207.5
+  ],
+  [
+   "2022-09-02",
+   207.5
+  ],
+  [
+   "2022-09-09",
+   204.0
+  ],
+  [
+   "2022-09-16",
+   206.5
+  ],
+  [
+   "2022-09-23",
+   201.5
+  ],
+  [
+   "2022-09-30",
+   187.5
+  ],
+  [
+   "2022-10-07",
+   197.5
+  ],
+  [
+   "2022-10-14",
+   181.0
+  ],
+  [
+   "2022-10-21",
+   172.5
+  ],
+  [
+   "2022-10-28",
+   170.5
+  ],
+  [
+   "2022-11-04",
+   175.0
+  ],
+  [
+   "2022-11-11",
+   191.0
+  ],
+  [
+   "2022-11-18",
+   196.5
+  ],
+  [
+   "2022-11-25",
+   200.0
+  ],
+  [
+   "2022-12-02",
+   197.5
+  ],
+  [
+   "2022-12-09",
+   197.5
+  ],
+  [
+   "2022-12-16",
+   192.5
+  ],
+  [
+   "2022-12-23",
+   197.5
+  ],
+  [
+   "2022-12-30",
+   200.0
+  ],
+  [
+   "2023-01-06",
+   199.0
+  ],
+  [
+   "2023-01-13",
+   208.5
+  ],
+  [
+   "2023-01-20",
+   218.5
+  ],
+  [
+   "2023-01-27",
+   225.0
+  ],
+  [
+   "2023-02-03",
+   239.0
+  ],
+  [
+   "2023-02-10",
+   234.0
+  ],
+  [
+   "2023-02-17",
+   241.5
+  ],
+  [
+   "2023-02-24",
+   216.5
+  ],
+  [
+   "2023-03-03",
+   212.5
+  ],
+  [
+   "2023-03-10",
+   211.5
+  ],
+  [
+   "2023-03-17",
+   214.0
+  ],
+  [
+   "2023-03-24",
+   213.5
+  ],
+  [
+   "2023-03-31",
+   217.5
+  ],
+  [
+   "2023-04-06",
+   222.5
+  ],
+  [
+   "2023-04-14",
+   232.5
+  ],
+  [
+   "2023-04-21",
+   234.0
+  ],
+  [
+   "2023-04-28",
+   222.5
+  ],
+  [
+   "2023-05-05",
+   222.5
+  ],
+  [
+   "2023-05-12",
+   225.0
+  ],
+  [
+   "2023-05-19",
+   242.5
+  ],
+  [
+   "2023-05-26",
+   233.5
+  ],
+  [
+   "2023-06-02",
+   237.5
+  ],
+  [
+   "2023-06-09",
+   260.0
+  ],
+  [
+   "2023-06-16",
+   257.5
+  ],
+  [
+   "2023-06-23",
+   255.0
+  ],
+  [
+   "2023-06-30",
+   245.0
+  ],
+  [
+   "2023-07-07",
+   247.5
+  ],
+  [
+   "2023-07-14",
+   243.5
+  ],
+  [
+   "2023-07-21",
+   237.5
+  ],
+  [
+   "2023-07-28",
+   232.5
+  ],
+  [
+   "2023-08-04",
+   225.0
+  ],
+  [
+   "2023-08-11",
+   217.5
+  ],
+  [
+   "2023-08-18",
+   222.5
+  ],
+  [
+   "2023-08-25",
+   230.0
+  ],
+  [
+   "2023-09-01",
+   235.0
+  ],
+  [
+   "2023-09-08",
+   220.0
+  ],
+  [
+   "2023-09-15",
+   217.5
+  ],
+  [
+   "2023-09-22",
+   222.5
+  ],
+  [
+   "2023-09-29",
+   214.0
+  ],
+  [
+   "2023-10-06",
+   205.0
+  ],
+  [
+   "2023-10-13",
+   200.0
+  ],
+  [
+   "2023-10-20",
+   212.0
+  ],
+  [
+   "2023-10-27",
+   207.5
+  ],
+  [
+   "2023-11-03",
+   212.5
+  ],
+  [
+   "2023-11-10",
+   215.0
+  ],
+  [
+   "2023-11-17",
+   215.0
+  ],
+  [
+   "2023-11-24",
+   212.5
+  ],
+  [
+   "2023-12-01",
+   215.0
+  ],
+  [
+   "2023-12-08",
+   215.0
+  ],
+  [
+   "2023-12-15",
+   201.0
+  ],
+  [
+   "2023-12-22",
+   205.0
+  ],
+  [
+   "2023-12-29",
+   222.5
+  ],
+  [
+   "2024-01-05",
+   212.5
+  ],
+  [
+   "2024-01-12",
+   215.0
+  ],
+  [
+   "2024-01-19",
+   205.0
+  ],
+  [
+   "2024-01-26",
+   200.0
+  ],
+  [
+   "2024-02-02",
+   190.0
+  ],
+  [
+   "2024-02-09",
+   194.5
+  ],
+  [
+   "2024-02-16",
+   185.0
+  ],
+  [
+   "2024-02-23",
+   179.0
+  ],
+  [
+   "2024-03-01",
+   175.0
+  ],
+  [
+   "2024-03-08",
+   180.0
+  ],
+  [
+   "2024-03-15",
+   185.0
+  ],
+  [
+   "2024-03-22",
+   190.0
+  ],
+  [
+   "2024-03-28",
+   195.0
+  ],
+  [
+   "2024-04-05",
+   185.0
+  ],
+  [
+   "2024-04-12",
+   197.5
+  ],
+  [
+   "2024-04-19",
+   205.0
+  ],
+  [
+   "2024-04-26",
+   187.5
+  ],
+  [
+   "2024-05-03",
+   190.0
+  ],
+  [
+   "2024-05-10",
+   190.0
+  ],
+  [
+   "2024-05-17",
+   200.0
+  ],
+  [
+   "2024-05-24",
+   200.0
+  ],
+  [
+   "2024-05-31",
+   200.0
+  ],
+  [
+   "2024-06-07",
+   200.0
+  ],
+  [
+   "2024-06-14",
+   197.5
+  ],
+  [
+   "2024-06-21",
+   192.5
+  ],
+  [
+   "2024-06-28",
+   195.0
+  ],
+  [
+   "2024-07-05",
+   195.0
+  ],
+  [
+   "2024-07-12",
+   195.0
+  ],
+  [
+   "2024-07-19",
+   195.0
+  ],
+  [
+   "2024-07-26",
+   197.5
+  ],
+  [
+   "2024-08-02",
+   204.0
+  ],
+  [
+   "2024-08-09",
+   205.0
+  ],
+  [
+   "2024-08-16",
+   212.5
+  ],
+  [
+   "2024-08-23",
+   225.0
+  ],
+  [
+   "2024-08-30",
+   225.0
+  ],
+  [
+   "2024-09-06",
+   225.0
+  ],
+  [
+   "2024-09-13",
+   222.5
+  ],
+  [
+   "2024-09-20",
+   217.5
+  ],
+  [
+   "2024-09-27",
+   217.5
+  ],
+  [
+   "2024-10-04",
+   205.0
+  ],
+  [
+   "2024-10-11",
+   207.5
+  ],
+  [
+   "2024-10-18",
+   200.0
+  ],
+  [
+   "2024-10-25",
+   210.0
+  ],
+  [
+   "2024-11-01",
+   215.0
+  ],
+  [
+   "2024-11-08",
+   220.0
+  ],
+  [
+   "2024-11-15",
+   225.0
+  ],
+  [
+   "2024-11-22",
+   225.0
+  ],
+  [
+   "2024-11-29",
+   225.0
+  ],
+  [
+   "2024-12-06",
+   225.0
+  ],
+  [
+   "2024-12-13",
+   225.0
+  ],
+  [
+   "2024-12-20",
+   225.0
+  ],
+  [
+   "2024-12-24",
+   225.0
+  ],
+  [
+   "2024-12-27",
+   225.0
+  ],
+  [
+   "2025-01-03",
+   232.0
+  ],
+  [
+   "2025-01-10",
+   235.0
+  ],
+  [
+   "2025-01-17",
+   238.0
+  ],
+  [
+   "2025-01-24",
+   232.5
+  ],
+  [
+   "2025-01-31",
+   233.0
+  ],
+  [
+   "2025-02-07",
+   245.0
+  ],
+  [
+   "2025-02-14",
+   242.5
+  ],
+  [
+   "2025-02-21",
+   240.0
+  ],
+  [
+   "2025-02-28",
+   237.5
+  ],
+  [
+   "2025-03-07",
+   217.5
+  ],
+  [
+   "2025-03-14",
+   215.0
+  ],
+  [
+   "2025-03-21",
+   222.5
+  ],
+  [
+   "2025-03-28",
+   220.0
+  ],
+  [
+   "2025-04-04",
+   215.0
+  ],
+  [
+   "2025-04-11",
+   245.0
+  ],
+  [
+   "2025-04-17",
+   260.0
+  ],
+  [
+   "2025-04-25",
+   250.0
+  ],
+  [
+   "2025-05-02",
+   279.0
+  ],
+  [
+   "2025-05-09",
+   278.0
+  ],
+  [
+   "2025-05-16",
+   300.0
+  ],
+  [
+   "2025-05-23",
+   292.5
+  ],
+  [
+   "2025-05-30",
+   287.5
+  ],
+  [
+   "2025-06-06",
+   345.0
+  ],
+  [
+   "2025-06-13",
+   342.5
+  ],
+  [
+   "2025-06-20",
+   346.0
+  ],
+  [
+   "2025-06-27",
+   342.5
+  ],
+  [
+   "2025-07-04",
+   320.0
+  ],
+  [
+   "2025-07-11",
+   332.5
+  ],
+  [
+   "2025-07-18",
+   325.0
+  ],
+  [
+   "2025-07-25",
+   325.0
+  ],
+  [
+   "2025-08-01",
+   330.0
+  ],
+  [
+   "2025-08-08",
+   335.0
+  ],
+  [
+   "2025-08-15",
+   335.0
+  ],
+  [
+   "2025-08-22",
+   326.0
+  ],
+  [
+   "2025-08-29",
+   322.5
+  ],
+  [
+   "2025-09-05",
+   345.0
+  ],
+  [
+   "2025-09-12",
+   365.0
+  ],
+  [
+   "2025-09-19",
+   350.0
+  ],
+  [
+   "2025-09-26",
+   350.0
+  ],
+  [
+   "2025-10-03",
+   375.0
+  ],
+  [
+   "2025-10-10",
+   377.0
+  ],
+  [
+   "2025-10-17",
+   350.0
+  ],
+  [
+   "2025-10-24",
+   332.5
+  ],
+  [
+   "2025-10-31",
+   330.0
+  ],
+  [
+   "2025-11-07",
+   335.0
+  ],
+  [
+   "2025-11-14",
+   357.5
+  ],
+  [
+   "2025-11-21",
+   342.0
+  ],
+  [
+   "2025-11-28",
+   347.5
+  ],
+  [
+   "2025-12-05",
+   357.5
+  ],
+  [
+   "2025-12-12",
+   355.0
+  ],
+  [
+   "2025-12-19",
+   360.0
+  ],
+  [
+   "2025-12-24",
+   365.0
+  ],
+  [
+   "2026-01-02",
+   387.0
+  ],
+  [
+   "2026-01-09",
+   397.5
+  ],
+  [
+   "2026-01-16",
+   415.0
+  ],
+  [
+   "2026-01-23",
+   455.0
+  ],
+  [
+   "2026-01-30",
+   420.0
+  ],
+  [
+   "2026-02-06",
+   392.5
+  ],
+  [
+   "2026-02-13",
+   430.0
+  ],
+  [
+   "2026-02-20",
+   425.0
+  ],
+  [
+   "2026-02-27",
+   420.0
+  ],
+  [
+   "2026-03-06",
+   392.0
+  ],
+  [
+   "2026-03-13",
+   370.0
+  ],
+  [
+   "2026-03-20",
+   377.5
+  ],
+  [
+   "2026-03-27",
+   350.0
+  ],
+  [
+   "2026-04-02",
+   350.0
+  ],
+  [
+   "2026-04-10",
+   390.0
+  ],
+  [
+   "2026-04-17",
+   392.5
+  ],
+  [
+   "2026-04-24",
+   397.5
+  ],
+  [
+   "2026-05-01",
+   390.0
+  ],
+  [
+   "2026-05-08",
+   445.0
+  ],
+  [
+   "2026-05-15",
+   427.5
+  ],
+  [
+   "2026-05-22",
+   435.0
+  ],
+  [
+   "2026-05-29",
+   435.0
+  ],
+  [
+   "2026-06-05",
+   462.5
+  ],
+  [
+   "2026-06-12",
+   442.5
+  ],
+  [
+   "2026-06-19",
+   457.5
+  ],
+  [
+   "2026-06-26",
+   590.0
+  ],
+  [
+   "2026-07-03",
+   594.0
+  ],
+  [
+   "2026-07-10",
+   590.0
+  ],
+  [
+   "2026-07-17",
+   666.0
+  ],
+  [
+   "2026-07-24",
+   666.0
+  ],
+  [
+   "2026-07-31",
+   666.0
+  ],
+  [
+   "2026-08-07",
+   662.0
+  ],
+  [
+   "2026-08-14",
+   664.0
+  ],
+  [
+   "2026-08-21",
+   664.0
+  ],
+  [
+   "2026-08-28",
+   663.0
+  ],
+  [
+   "2026-09-04",
+   663.0
+  ],
+  [
+   "2026-09-11",
+   646.0
+  ],
+  [
+   "2026-09-18",
+   647.0
+  ],
+  [
+   "2026-09-25",
+   643.0
+  ],
+  [
+   "2026-10-02",
+   633.0
+  ],
+  [
+   "2026-10-09",
+   632.0
+  ],
+  [
+   "2026-10-16",
+   633.0
+  ],
+  [
+   "2026-10-20",
+   632.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2022-01-18",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "While we remain vigilant to the risk of, and speed of, potential new social and travel restrictions being imposed, as we have seen with the recent development of the Omicron coronavirus variant, we look forward with optimism for FY22.",
+   "file": "20220118_RFX_Annual-Results---year-ended-30-September-2021.md"
+  },
+  {
+   "d": "2022-04-08",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "During the Period, Ramsdens delivered a strong performance across each of its four segments. As a result of this, the Group expects to report H1 profit before tax of approximately £2m.",
+   "file": "20220408_RFX_Trading-Update.md"
+  },
+  {
+   "d": "2022-06-08",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "We believe that FY22 is a transitional year, with an expected return to substantially normal trading conditions by the end of the financial year, albeit against a trading environment that is experiencing a number of wider global macroeconomic events.",
+   "file": "20220608_RFX_Interim-Results---six-months-ended-31-March-2022.md"
+  },
+  {
+   "d": "2022-10-10",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 2,
+   "q": "As a result of this, the Group expects to report annual profit before tax ahead of expectations.",
+   "file": "20221010_RFX_Pre-Close-Trading-Update.md"
+  },
+  {
+   "d": "2023-01-17",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board believes Ramsdens' diversified income streams provide defensive qualities against the macroeconomic challenges that lie ahead.  The uncertainty caused by energy cost increases, general inflationary pressures and higher interest rates will prove a challenge to many businesses, and Ramsdens is no different.",
+   "file": "20230117_RFX_Annual-Results---year-ended-30-September-2022.md"
+  },
+  {
+   "d": "2023-04-04",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 2,
+   "q": "As a result, the Group delivered a strong performance for the Period and the Board now expects the FY23 Profit before Tax to be not less than £9.5m (FY22: £8.3m).",
+   "file": "20230404_RFX_Pre-Close-Trading-Update.md"
+  },
+  {
+   "d": "2023-06-07",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "With our diversified income streams, strong brand and growing customer base, we believe we are well positioned to further grow our profitability in this financial year and in coming years, and continue to deliver on our progressive dividend policy.",
+   "file": "20230607_RFX_Interim-Results---six-months-ended-31-March-2023.md"
+  },
+  {
+   "d": "2023-10-05",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 2,
+   "q": "The Group continued to trade well during the second half of the Period, benefiting from the strength of its diversified business model. As a result, the Board anticipates Profit Before Tax for the Period to be a record result of more than £10m (FY22 £8.4m).",
+   "file": "20231005_RFX_Pre-Close-Trading-Update.md"
+  },
+  {
+   "d": "2024-01-15",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "While the business is very well positioned to build upon its achievements, the Board remains cognisant of the macroeconomic challenges currently impacting consumer-facing businesses in the UK.",
+   "file": "20240115_RFX_Annual-Results---year-ended-30-September-2023.md"
+  },
+  {
+   "d": "2024-03-11",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading during the Period has remained strong and in line with the Board's expectations as Ramsdens continues to benefit from its diversified business model and trusted consumer brand.",
+   "file": "20240311_RFX_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2024-06-05",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The strong performance in the first half of the year has continued so far into the second half, and we are confident in achieving the Board's full year expectations.",
+   "file": "20240605_RFX_Interim-Results---six-months-ended-31-March-2024.md"
+  },
+  {
+   "d": "2024-08-06",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 2,
+   "q": "As a result, the Board now expects FY24 Profit Before Tax to be at least £11m, which is ahead of its previous expectations* (FY23: Profit Before Tax of £10.1m).",
+   "file": "20240806_RFX_Trading-Update.md"
+  },
+  {
+   "d": "2024-10-10",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "As highlighted in the trading update published on 6 August, FY24 has been another year of record performance and the Group expects to report profit before tax of at least £11m (FY23: £10.1m).",
+   "file": "20241010_RFX_Pre-Close-Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2025-01-14",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Underpinned by its strong, trusted brand and diversified income streams the Group is well positioned for the year ahead.",
+   "file": "20250114_RFX_Annual-Results---year-ended-30-September-2024.md"
+  },
+  {
+   "d": "2025-03-03",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group has continued to trade well across its key income streams during the first five months of the financial year from 1 October 2024 to 28 February 2025, with the purchase of precious metals segment continuing to benefit from the strong gold price.",
+   "file": "20250303_RFX_AGM-Business-Update.md"
+  },
+  {
+   "d": "2025-04-08",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 2,
+   "q": "As a result of continued positive momentum in the first half of FY25, the Board now expects FY25 profit before tax to be at least £13.0m (FY24: £11.4m), which is ahead of previous expectations*.",
+   "file": "20250408_RFX_Trading-Update.md"
+  },
+  {
+   "d": "2025-06-04",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 2,
+   "q": "As a result of the above record results, coupled with the sustained high gold price, and despite the additional employment cost pressure from April 2025 from the increases in employer's national insurance and the national living wage, the Board expects full year profits to exceed £15m.",
+   "file": "20250604_RFX_Interim-Results---six-months-ended-31-March-2025.md"
+  },
+  {
+   "d": "2025-10-08",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 1,
+   "q": "As a result, the Board now expects FY25 profit before tax to be slightly ahead of analyst expectations*.",
+   "file": "20251008_RFX_Pre-Close-Trading-Update.md"
+  },
+  {
+   "d": "2026-01-14",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "This success also provides a rewarding career path and enjoyable working environment for its people, while giving back to contribute to the communities in which it operates.  The new financial year has started well, and we remain confident in meeting and delivering against our expectations for FY26.",
+   "file": "20260114_RFX_Annual-Results---year-ended-30-September-2025.md"
+  },
+  {
+   "d": "2026-02-10",
+   "doc": "Q1 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 2,
+   "q": "This, supported by good performances across the Group's other income streams, means that the Group now expects profit before tax for FY26 to be more than £21m (FY25: £16.2m), which is ahead of current market expectations*.",
+   "file": "20260210_RFX_Trading-Update.md"
+  },
+  {
+   "d": "2026-03-18",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Taking into account the strong trading for the first five months of the year, and the Board's updated expectations on the outlook for the gold price, the Group now expects its profit before tax for FY26 to be at least £24m* and, if the favourable gold price and trading conditions continue, potentially up to £28m.",
+   "file": "20260318_RFX_Trading-Update.md"
+  },
+  {
+   "d": "2026-05-06",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 2,
+   "q": "As a result of the continued strong performance across our diversified income streams and the additional benefit of the very high gold price, we are once again trading ahead of market expectations* and currently anticipate profit before tax for FY26 to be in a range of £28.5m to £31.5m.",
+   "file": "20260506_RFX_Trading-Update.md"
+  },
+  {
+   "d": "2026-06-03",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Resulting from the continued strong performance across our diversified income streams and the additional benefit of the sustained high gold price, the Board currently anticipates that profit before tax for FY26 is expected to be in a range of £30m to £33m, ahead of current market expectations*.",
+   "file": "20260603_RFX_Interim-Results---six-months-ended-31-March-2026.md"
+  },
+  {
+   "d": "2026-06-23",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "In accordance with Rule 28.1 of the Code, the Ramsdens Directors confirm that this forecast for the year ending 30 September 2026 remains valid.",
+   "file": "20260623_RFX_RECOMMENDED-ACQUISITION-OF-RAMSDENS-HOLDINGS-PLC.md"
+  },
+  {
+   "d": "2026-07-16",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Having regard to the continued strong trading by the Group, and whilst taking into account recent volatility in the gold price, the Board now anticipates that profit before tax for FY26 will be between £32m and £35m.",
+   "file": "20260716_RFX_Trading-Update.md"
+  },
+  {
+   "d": "2026-10-12",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "In line with the upgraded guidance in the Trading Update announced on 16 July 2026, the Board continues to anticipate that profit before tax for FY26 will be between £32m and £35m.",
+   "file": "20261012_RFX_Pre-Close-Trading-Update.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-12",
+  "doc": "YE-TU",
+  "file": "20261012_RFX_Pre-Close-Trading-Update.md",
+  "vs": "YE-TU Oct-25 · back to Oct-22 · Jun-26 H1 R / Jul-26 TU",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Last year: “the Board now expects FY25 profit before tax to be slightly ahead of analyst expectations*” with consensus footnote → this year “the Board continues to anticipate that profit before tax for FY26 will be between £32m and £35m”, no market-expectations anchor or consensus figure",
+    "span": "Consensus footnote given Aug-24, Apr-25, Oct-25, Feb/Mar/May/Jun-26 → absent since Jul-26 TU (offer period)"
+   },
+   {
+    "sev": "amber",
+    "type": "Target dropped",
+    "text": "Store opening target: Oct-25 “expects to open between eight and 12 new stores per year from FY26” (repeated Jun-26 “in FY26 and beyond”) → now FY27 only “we have a solid pipeline of additional new stores for FY27”, no number",
+    "span": "Numeric store target Oct-25, Feb-26, Mar-26, May-26, Jun-26 → first FY27 view without it"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "FX gross profit: Oct-25 “Foreign currency (FX) gross profit was broadly flat year on year” → now only volume, “The total currency exchanged has remained broadly in line with FY25, albeit at keener margins to drive footfall.”, no FX gross profit line",
+    "span": "FX gross profit stated Apr-25, Oct-25 pre-close → absent Oct-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Precious metals: Oct-25 growth only, “FY25 gross profit increasing 50% year on year” → now quantified, “Gross profit in the precious metals segment in FY26 has doubled to c£36m (FY25: £18m).”"
+   }
+  ]
+ }
+}

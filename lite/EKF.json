@@ -1,0 +1,1356 @@
+{
+ "ticker": "EKF",
+ "v": "2026-10-21.2584",
+ "ccy": "GBX",
+ "src": "AlphaVantage EKF.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   81.0
+  ],
+  [
+   "2021-10-22",
+   81.2
+  ],
+  [
+   "2021-10-29",
+   81.0
+  ],
+  [
+   "2021-11-05",
+   81.0
+  ],
+  [
+   "2021-11-12",
+   82.2
+  ],
+  [
+   "2021-11-19",
+   83.0
+  ],
+  [
+   "2021-11-26",
+   75.0
+  ],
+  [
+   "2021-12-03",
+   75.5
+  ],
+  [
+   "2021-12-10",
+   78.6
+  ],
+  [
+   "2021-12-17",
+   77.0
+  ],
+  [
+   "2021-12-24",
+   77.0
+  ],
+  [
+   "2021-12-31",
+   75.0
+  ],
+  [
+   "2022-01-07",
+   75.5
+  ],
+  [
+   "2022-01-14",
+   73.6
+  ],
+  [
+   "2022-01-21",
+   72.2
+  ],
+  [
+   "2022-01-28",
+   64.2
+  ],
+  [
+   "2022-02-04",
+   64.0
+  ],
+  [
+   "2022-02-11",
+   60.0
+  ],
+  [
+   "2022-02-18",
+   52.0
+  ],
+  [
+   "2022-02-25",
+   51.0
+  ],
+  [
+   "2022-03-04",
+   48.0
+  ],
+  [
+   "2022-03-11",
+   45.0
+  ],
+  [
+   "2022-03-18",
+   45.0
+  ],
+  [
+   "2022-03-25",
+   51.0
+  ],
+  [
+   "2022-04-01",
+   42.0
+  ],
+  [
+   "2022-04-08",
+   38.9
+  ],
+  [
+   "2022-04-14",
+   38.0
+  ],
+  [
+   "2022-04-22",
+   37.5
+  ],
+  [
+   "2022-04-29",
+   35.0
+  ],
+  [
+   "2022-05-06",
+   35.8
+  ],
+  [
+   "2022-05-13",
+   34.5
+  ],
+  [
+   "2022-05-20",
+   34.6
+  ],
+  [
+   "2022-05-27",
+   34.5
+  ],
+  [
+   "2022-06-01",
+   34.5
+  ],
+  [
+   "2022-06-10",
+   37.8
+  ],
+  [
+   "2022-06-17",
+   33.4
+  ],
+  [
+   "2022-06-24",
+   31.3
+  ],
+  [
+   "2022-07-01",
+   33.35
+  ],
+  [
+   "2022-07-08",
+   32.3
+  ],
+  [
+   "2022-07-15",
+   32.0
+  ],
+  [
+   "2022-07-22",
+   37.0
+  ],
+  [
+   "2022-07-29",
+   37.3
+  ],
+  [
+   "2022-08-05",
+   37.8
+  ],
+  [
+   "2022-08-12",
+   41.2
+  ],
+  [
+   "2022-08-19",
+   43.3
+  ],
+  [
+   "2022-08-26",
+   41.0
+  ],
+  [
+   "2022-09-02",
+   40.8
+  ],
+  [
+   "2022-09-09",
+   40.5
+  ],
+  [
+   "2022-09-16",
+   41.2
+  ],
+  [
+   "2022-09-23",
+   39.5
+  ],
+  [
+   "2022-09-30",
+   40.0
+  ],
+  [
+   "2022-10-07",
+   44.75
+  ],
+  [
+   "2022-10-14",
+   40.55
+  ],
+  [
+   "2022-10-21",
+   42.4
+  ],
+  [
+   "2022-10-28",
+   43.5
+  ],
+  [
+   "2022-11-04",
+   43.35
+  ],
+  [
+   "2022-11-11",
+   43.0
+  ],
+  [
+   "2022-11-18",
+   43.85
+  ],
+  [
+   "2022-11-25",
+   42.4
+  ],
+  [
+   "2022-12-02",
+   45.0
+  ],
+  [
+   "2022-12-09",
+   43.4
+  ],
+  [
+   "2022-12-16",
+   44.0
+  ],
+  [
+   "2022-12-23",
+   51.0
+  ],
+  [
+   "2022-12-30",
+   50.0
+  ],
+  [
+   "2023-01-06",
+   48.0
+  ],
+  [
+   "2023-01-13",
+   47.95
+  ],
+  [
+   "2023-01-20",
+   47.7
+  ],
+  [
+   "2023-01-27",
+   46.05
+  ],
+  [
+   "2023-02-03",
+   39.25
+  ],
+  [
+   "2023-02-10",
+   28.5
+  ],
+  [
+   "2023-02-17",
+   28.9
+  ],
+  [
+   "2023-02-24",
+   28.5
+  ],
+  [
+   "2023-03-03",
+   28.5
+  ],
+  [
+   "2023-03-10",
+   27.0
+  ],
+  [
+   "2023-03-17",
+   25.8
+  ],
+  [
+   "2023-03-24",
+   26.15
+  ],
+  [
+   "2023-03-31",
+   31.0
+  ],
+  [
+   "2023-04-06",
+   30.1
+  ],
+  [
+   "2023-04-14",
+   29.45
+  ],
+  [
+   "2023-04-21",
+   29.45
+  ],
+  [
+   "2023-04-28",
+   28.0
+  ],
+  [
+   "2023-05-05",
+   27.45
+  ],
+  [
+   "2023-05-12",
+   25.5
+  ],
+  [
+   "2023-05-19",
+   25.0
+  ],
+  [
+   "2023-05-26",
+   27.6
+  ],
+  [
+   "2023-06-02",
+   27.6
+  ],
+  [
+   "2023-06-09",
+   31.5
+  ],
+  [
+   "2023-06-16",
+   33.25
+  ],
+  [
+   "2023-06-23",
+   35.4
+  ],
+  [
+   "2023-06-30",
+   31.5
+  ],
+  [
+   "2023-07-07",
+   32.0
+  ],
+  [
+   "2023-07-14",
+   30.8
+  ],
+  [
+   "2023-07-21",
+   27.35
+  ],
+  [
+   "2023-07-28",
+   26.65
+  ],
+  [
+   "2023-08-04",
+   28.4
+  ],
+  [
+   "2023-08-11",
+   27.35
+  ],
+  [
+   "2023-08-18",
+   25.6
+  ],
+  [
+   "2023-08-25",
+   25.9
+  ],
+  [
+   "2023-09-01",
+   27.1
+  ],
+  [
+   "2023-09-08",
+   27.0
+  ],
+  [
+   "2023-09-15",
+   26.2
+  ],
+  [
+   "2023-09-22",
+   25.0
+  ],
+  [
+   "2023-09-29",
+   27.0
+  ],
+  [
+   "2023-10-06",
+   27.0
+  ],
+  [
+   "2023-10-13",
+   27.8
+  ],
+  [
+   "2023-10-20",
+   26.4
+  ],
+  [
+   "2023-10-27",
+   27.2
+  ],
+  [
+   "2023-11-03",
+   27.7
+  ],
+  [
+   "2023-11-10",
+   28.0
+  ],
+  [
+   "2023-11-17",
+   28.0
+  ],
+  [
+   "2023-11-24",
+   29.1
+  ],
+  [
+   "2023-12-01",
+   28.1
+  ],
+  [
+   "2023-12-08",
+   27.4
+  ],
+  [
+   "2023-12-15",
+   27.4
+  ],
+  [
+   "2023-12-22",
+   30.55
+  ],
+  [
+   "2023-12-29",
+   31.65
+  ],
+  [
+   "2024-01-05",
+   30.0
+  ],
+  [
+   "2024-01-12",
+   31.5
+  ],
+  [
+   "2024-01-19",
+   32.1
+  ],
+  [
+   "2024-01-26",
+   30.75
+  ],
+  [
+   "2024-02-02",
+   29.8
+  ],
+  [
+   "2024-02-09",
+   28.95
+  ],
+  [
+   "2024-02-16",
+   29.55
+  ],
+  [
+   "2024-02-23",
+   27.8
+  ],
+  [
+   "2024-03-01",
+   27.45
+  ],
+  [
+   "2024-03-08",
+   27.2
+  ],
+  [
+   "2024-03-15",
+   26.4
+  ],
+  [
+   "2024-03-22",
+   25.8
+  ],
+  [
+   "2024-03-28",
+   27.6
+  ],
+  [
+   "2024-04-05",
+   27.3
+  ],
+  [
+   "2024-04-12",
+   28.3
+  ],
+  [
+   "2024-04-19",
+   27.4
+  ],
+  [
+   "2024-04-26",
+   27.6
+  ],
+  [
+   "2024-05-03",
+   29.9
+  ],
+  [
+   "2024-05-10",
+   30.3
+  ],
+  [
+   "2024-05-17",
+   33.0
+  ],
+  [
+   "2024-05-24",
+   33.0
+  ],
+  [
+   "2024-05-31",
+   32.45
+  ],
+  [
+   "2024-06-07",
+   29.4
+  ],
+  [
+   "2024-06-14",
+   28.45
+  ],
+  [
+   "2024-06-21",
+   27.7
+  ],
+  [
+   "2024-06-28",
+   28.7
+  ],
+  [
+   "2024-07-05",
+   28.3
+  ],
+  [
+   "2024-07-12",
+   31.25
+  ],
+  [
+   "2024-07-19",
+   31.2
+  ],
+  [
+   "2024-07-26",
+   29.15
+  ],
+  [
+   "2024-08-02",
+   26.6
+  ],
+  [
+   "2024-08-09",
+   27.8
+  ],
+  [
+   "2024-08-16",
+   28.0
+  ],
+  [
+   "2024-08-23",
+   28.2
+  ],
+  [
+   "2024-08-30",
+   27.95
+  ],
+  [
+   "2024-09-06",
+   27.95
+  ],
+  [
+   "2024-09-13",
+   28.75
+  ],
+  [
+   "2024-09-20",
+   27.8
+  ],
+  [
+   "2024-09-27",
+   29.5
+  ],
+  [
+   "2024-10-04",
+   30.4
+  ],
+  [
+   "2024-10-11",
+   30.55
+  ],
+  [
+   "2024-10-18",
+   29.15
+  ],
+  [
+   "2024-10-25",
+   26.85
+  ],
+  [
+   "2024-11-01",
+   27.0
+  ],
+  [
+   "2024-11-08",
+   27.65
+  ],
+  [
+   "2024-11-15",
+   25.0
+  ],
+  [
+   "2024-11-22",
+   25.7
+  ],
+  [
+   "2024-11-29",
+   25.45
+  ],
+  [
+   "2024-12-06",
+   24.4
+  ],
+  [
+   "2024-12-13",
+   26.0
+  ],
+  [
+   "2024-12-20",
+   26.6
+  ],
+  [
+   "2024-12-24",
+   27.0
+  ],
+  [
+   "2024-12-27",
+   27.4
+  ],
+  [
+   "2025-01-03",
+   27.05
+  ],
+  [
+   "2025-01-10",
+   26.5
+  ],
+  [
+   "2025-01-17",
+   27.0
+  ],
+  [
+   "2025-01-24",
+   26.5
+  ],
+  [
+   "2025-01-31",
+   25.0
+  ],
+  [
+   "2025-02-07",
+   26.1
+  ],
+  [
+   "2025-02-14",
+   23.4
+  ],
+  [
+   "2025-02-21",
+   23.1
+  ],
+  [
+   "2025-02-28",
+   21.5
+  ],
+  [
+   "2025-03-07",
+   21.3
+  ],
+  [
+   "2025-03-14",
+   19.5
+  ],
+  [
+   "2025-03-21",
+   20.3
+  ],
+  [
+   "2025-03-28",
+   21.1
+  ],
+  [
+   "2025-04-04",
+   21.5
+  ],
+  [
+   "2025-04-11",
+   21.2
+  ],
+  [
+   "2025-04-17",
+   21.3
+  ],
+  [
+   "2025-04-25",
+   21.0
+  ],
+  [
+   "2025-05-02",
+   21.0
+  ],
+  [
+   "2025-05-09",
+   21.4
+  ],
+  [
+   "2025-05-16",
+   25.8
+  ],
+  [
+   "2025-05-23",
+   25.3
+  ],
+  [
+   "2025-05-30",
+   25.0
+  ],
+  [
+   "2025-06-06",
+   27.0
+  ],
+  [
+   "2025-06-13",
+   26.3
+  ],
+  [
+   "2025-06-20",
+   26.5
+  ],
+  [
+   "2025-06-27",
+   26.9
+  ],
+  [
+   "2025-07-04",
+   26.75
+  ],
+  [
+   "2025-07-11",
+   26.0
+  ],
+  [
+   "2025-07-18",
+   26.2
+  ],
+  [
+   "2025-07-25",
+   26.5
+  ],
+  [
+   "2025-08-01",
+   31.0
+  ],
+  [
+   "2025-08-08",
+   30.1
+  ],
+  [
+   "2025-08-15",
+   28.95
+  ],
+  [
+   "2025-08-22",
+   27.05
+  ],
+  [
+   "2025-08-29",
+   29.2
+  ],
+  [
+   "2025-09-05",
+   30.8
+  ],
+  [
+   "2025-09-12",
+   29.3
+  ],
+  [
+   "2025-09-19",
+   30.0
+  ],
+  [
+   "2025-09-26",
+   29.9
+  ],
+  [
+   "2025-10-03",
+   30.2
+  ],
+  [
+   "2025-10-10",
+   28.8
+  ],
+  [
+   "2025-10-17",
+   27.5
+  ],
+  [
+   "2025-10-24",
+   26.0
+  ],
+  [
+   "2025-10-31",
+   26.35
+  ],
+  [
+   "2025-11-07",
+   25.1
+  ],
+  [
+   "2025-11-14",
+   25.95
+  ],
+  [
+   "2025-11-21",
+   24.5
+  ],
+  [
+   "2025-11-28",
+   24.0
+  ],
+  [
+   "2025-12-05",
+   25.0
+  ],
+  [
+   "2025-12-12",
+   21.8
+  ],
+  [
+   "2025-12-19",
+   25.8
+  ],
+  [
+   "2025-12-24",
+   25.5
+  ],
+  [
+   "2026-01-02",
+   26.55
+  ],
+  [
+   "2026-01-09",
+   26.5
+  ],
+  [
+   "2026-01-16",
+   27.4
+  ],
+  [
+   "2026-01-23",
+   26.6
+  ],
+  [
+   "2026-01-30",
+   24.6
+  ],
+  [
+   "2026-02-06",
+   25.0
+  ],
+  [
+   "2026-02-13",
+   25.8
+  ],
+  [
+   "2026-02-20",
+   26.3
+  ],
+  [
+   "2026-02-27",
+   25.8
+  ],
+  [
+   "2026-03-06",
+   26.15
+  ],
+  [
+   "2026-03-13",
+   26.0
+  ],
+  [
+   "2026-03-20",
+   24.4
+  ],
+  [
+   "2026-03-27",
+   23.6
+  ],
+  [
+   "2026-04-02",
+   23.4
+  ],
+  [
+   "2026-04-10",
+   24.2
+  ],
+  [
+   "2026-04-17",
+   24.5
+  ],
+  [
+   "2026-04-24",
+   24.5
+  ],
+  [
+   "2026-05-01",
+   26.55
+  ],
+  [
+   "2026-05-08",
+   25.0
+  ],
+  [
+   "2026-05-15",
+   26.75
+  ],
+  [
+   "2026-05-22",
+   27.5
+  ],
+  [
+   "2026-05-29",
+   26.75
+  ],
+  [
+   "2026-06-05",
+   26.4
+  ],
+  [
+   "2026-06-12",
+   25.0
+  ],
+  [
+   "2026-06-19",
+   25.9
+  ],
+  [
+   "2026-06-26",
+   27.0
+  ],
+  [
+   "2026-07-03",
+   26.3
+  ],
+  [
+   "2026-07-10",
+   25.4
+  ],
+  [
+   "2026-07-17",
+   25.2
+  ],
+  [
+   "2026-07-24",
+   25.7
+  ],
+  [
+   "2026-07-31",
+   25.7
+  ],
+  [
+   "2026-08-07",
+   26.0
+  ],
+  [
+   "2026-08-14",
+   25.3
+  ],
+  [
+   "2026-08-21",
+   25.4
+  ],
+  [
+   "2026-08-28",
+   25.3
+  ],
+  [
+   "2026-09-04",
+   25.25
+  ],
+  [
+   "2026-09-11",
+   25.5
+  ],
+  [
+   "2026-09-18",
+   26.0
+  ],
+  [
+   "2026-09-25",
+   24.4
+  ],
+  [
+   "2026-10-02",
+   24.6
+  ],
+  [
+   "2026-10-09",
+   26.0
+  ],
+  [
+   "2026-10-16",
+   25.0
+  ],
+  [
+   "2026-10-20",
+   24.7
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2022-01-25",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "RAISE",
+   "s": 2,
+   "q": "EKF Diagnostics Holdings plc (AIM: EKF), the AIM listed point-of-care, central lab devices and chemistry reagents business, confirms that continued strong trading will result in its performance for the financial year ended 31 December 2021, including adjusted EBITDA, being ahead of already upgraded market expectations.",
+   "file": "20220125_EKF_Trading-update.md"
+  },
+  {
+   "d": "2022-03-29",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -2,
+   "q": "However, we are adopting a pragmatic view that there will be a significant reduction in pandemic-related contract manufacturing activity for the remainder of the year.",
+   "file": "20220329_EKF_Final-Results.md"
+  },
+  {
+   "d": "2022-05-18",
+   "doc": "AGM",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading in the first quarter has been strong and we have delivered first quarter revenues in line with that of the corresponding period in 2021, and we remain on track to deliver full year results in line with current market forecasts.",
+   "file": "20220518_EKF_AGM-Statement.md"
+  },
+  {
+   "d": "2022-06-13",
+   "doc": "OPS",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Therefore, the Board is not seeking to change guidance to analysts on trading and outlook for 2022 at this stage, but expects to provide an ordinary course of business update within the interim results announcement in September.",
+   "file": "20220613_EKF_Update-on-strong-cash-position.md"
+  },
+  {
+   "d": "2022-08-01",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -1,
+   "q": "The Company remains on track to deliver an adjusted EBITDA1 result in line with its expectations for the full year.",
+   "file": "20220801_EKF_Trading-Update.md"
+  },
+  {
+   "d": "2022-09-20",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "This performance shows the strength and robustness of our core established business and provides the Board with confidence that the Group, as a whole, remains on track to deliver an adjusted EBITDA result in line with its expectations for the full year and is well positioned for the years ahead.",
+   "file": "20220920_EKF_Half-year-Report.md"
+  },
+  {
+   "d": "2023-02-06",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "CUT",
+   "s": -2,
+   "q": "As a result of the underperformance in these businesses, adjusted EBITDA1 is now anticipated to be slightly below market expectations.",
+   "file": "20230206_EKF_Trading-update.md"
+  },
+  {
+   "d": "2023-03-28",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "The work to deliver these measures has already begun in earnest and the Board remains confident that the performance of the business for the year remains in-line with management expectations, with EKF now well positioned for long-term sustainable growth.",
+   "file": "20230328_EKF_Final-Results.md"
+  },
+  {
+   "d": "2023-05-17",
+   "doc": "AGM",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "Trading in the first quarter of 2023 has been in-line with the Board expectations, and with the expected contribution from our expanded Life Sciences capacity coming online over the second half of the year, we naturally expect our overall financial performance to be more H2-weighted than historically.",
+   "file": "20230517_EKF_AGM-Statement.md"
+  },
+  {
+   "d": "2023-07-26",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -2,
+   "q": "Delivery of management's adjusted EBITDA expectations for this year remains dependent on the timing and terms of new Life Sciences contracts under discussion and expected to be signed as additional capacity comes on line, as well as the continued growth in our core Point-of-Care business, with better margins as the benefit of cost savings and other improvements are observed.",
+   "file": "20230726_EKF_Trading-Update.md"
+  },
+  {
+   "d": "2023-09-12",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -2,
+   "q": "Considering these factors in the context of continued growth across the rest of the business, EKF now expects to deliver revenues of around £53m and adjusted EBITDA1 in the region of £10m for the year ending 31 December 2023.",
+   "file": "20230912_EKF_Trading-Update.md"
+  },
+  {
+   "d": "2023-09-26",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "In our recent guidance update we confirmed that for the full year ending 31 December 2023 we expect to deliver revenues of around £53m and adjusted EBITDA in the region of £10m.",
+   "file": "20230926_EKF_Interim-results.md"
+  },
+  {
+   "d": "2024-01-29",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Company expects to report full-year revenues and adjusted EBITDA1 in-line with management expectations, reflecting continued steady growth from the Point-of-Care division and β-HB sales.",
+   "file": "20240129_EKF_Trading-Update.md"
+  },
+  {
+   "d": "2024-03-20",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 1,
+   "q": "EKF Diagnostics Holdings plc (AIM: EKF), the AIM-listed global diagnostics business, announces its unaudited results for the year ended 31 December 2023, which show continued, sustainable growth in EKF's established business and adjusted EBITDA for the year slightly ahead of market expectations and a return to profitability at the pre-tax level.",
+   "file": "20240320_EKF_Final-Results.md"
+  },
+  {
+   "d": "2024-05-14",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "With very pleasing trading in the first quarter of 2024, particularly with a focus on our key higher margin product lines, we remain confident that our overall financial performance for the year will be in-line with management expectations, and that 2024 will be a year of significant momentum in terms of both EBITDA margins and cash generation.",
+   "file": "20240514_EKF_AGM-Statement-&-Positive-Q1-Trading-update.md"
+  },
+  {
+   "d": "2024-05-14",
+   "doc": "AGM",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "With very pleasing trading in the first quarter of 2024, particularly with a focus on our key higher margin product lines, we remain confident that our overall financial performance for the year will be in-line with management expectations, and that 2024 will be a year of significant momentum in terms of both EBITDA margins and cash generation.",
+   "file": "20240514_EKF_AGM-Statement-&-Positive-Q1-update-(replacement).md"
+  },
+  {
+   "d": "2024-07-24",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 1,
+   "q": "The Company expects this improvement in performance to continue in H2 2024 and remains confident that full year results will be in-line with market expectations.",
+   "file": "20240724_EKF_Trading-Update.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2024-09-17",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Company expects the improvement in performance to continue in H2 2024 and remains confident that full year results will be in-line with market expectations.",
+   "file": "20240917_EKF_Half-year-Report.md"
+  },
+  {
+   "d": "2025-01-29",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -2,
+   "q": "Gross margin continued to improve year-on-year (FY 2023: 45%) and adjusted EBITDA1, subject to completion of the audit, is expected to be not less than £11.0m² (FY 2023: £10.4m), helped by reduced administration expenses.",
+   "file": "20250129_EKF_FY-2024-Trading-Update.md"
+  },
+  {
+   "d": "2025-03-25",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "We have already delivered further significant improvements to our adjusted EBITDA margin and vastly improved cash generation, however we believe our five-year development plan will further improve these metrics, with sensible reinvestment into our key business divisions to drive organic growth and margin improvement.",
+   "file": "20250325_EKF_Full-year-results.md"
+  },
+  {
+   "d": "2025-05-20",
+   "doc": "AGM",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "We are very excited about the prospects of the business and we remain on track to deliver growth at the revenue and adjusted EBITDA levels for FY 2025 in-line with market expectations.",
+   "file": "20250520_EKF_AGM-Statement.md"
+  },
+  {
+   "d": "2025-07-28",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Company remains on track to deliver growth at the revenue and adjusted EBITDA levels for FY 2025 in-line with market expectations2.",
+   "file": "20250728_EKF_H1-2025-Trading-Update.md"
+  },
+  {
+   "d": "2025-08-26",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The additional contracts reinforce the Board's confidence in delivering growth at the revenue and adjusted EBITDA1 levels for FY 2025 in-line with market expectations2.",
+   "file": "20250826_EKF_Hematology-contracts-signed-worth-EUR-4.65m.md"
+  },
+  {
+   "d": "2025-09-16",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is very excited about the future prospects of the Company and we remain on track to deliver growth at the revenue and adjusted EBITDA levels for FY 2025 in-line with market expectations2.",
+   "file": "20250916_EKF_Half-year-Report.md"
+  },
+  {
+   "d": "2026-01-27",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Gross margins continued to improve and stood at 51% for the period (FY 2024: 48%) and adjusted EBITDA1, subject to completion of the audit, is expected to be up nearly 10% to £12.4m2 (FY 2024: £11.3m), in-line with consensus forecasts.",
+   "file": "20260127_EKF_FY-2025-Trading-Update.md"
+  },
+  {
+   "d": "2026-03-24",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The trajectory for EKF has been clearly mapped to deliver further improvements in margin, revenue and EBITDA.",
+   "file": "20260324_EKF_Full-year-results.md"
+  },
+  {
+   "d": "2026-05-19",
+   "doc": "AGM",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "We remain excited about the prospects for the business and are on track to deliver growth at the revenue and adjusted EBITDA1 levels for FY 2026 in-line with market expectations2.",
+   "file": "20260519_EKF_AGM-statement-&-positive-Q1-trading-update.md"
+  },
+  {
+   "d": "2026-07-30",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "Revenue for H1 2026 remained broadly flat at £25.0m (H1 2025: £25.2m), reflecting the higher weighting of sales expected in the second half of the year.",
+   "file": "20260730_EKF_H1-2026-Trading-Update.md"
+  },
+  {
+   "d": "2026-09-15",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "The Group’s strong order book and delivery schedule through the second half support the recovery of the majority of deferred Point-of-Care revenues and the Company remains on track to deliver revenue and adjusted EBITDA growth in line with market expectations1.",
+   "file": "20260915_EKF_Interim-Results.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-15",
+  "doc": "H1 R",
+  "file": "20260915_EKF_Interim-Results.md",
+  "vs": "H1 R Sep-25 · H1 TU Jul-26",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Restated",
+    "text": "Life Sciences growth: Jul-26 TU “overall Life Sciences continues to deliver high growth 20%” → interims “Life Sciences: £10.0m (H1 2025: £9.3m)”, about 8% for the same half",
+    "span": "H1 TU 30-Jul-26 → H1 R 15-Sep-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Pushed out",
+    "text": "Point-of-Care revenue slipped to H2 and only part is promised back: “Within Point-of-Care, the timing of customer orders and tender awards impacted growth in the period.” and “the Group expects the majority of the delayed revenue to be recognised during H2”; Egyptian Hematology volume usually shipped in H1 “which has now shifted into H2”",
+    "span": "Sep-25 H1: Point-of-Care £15.4m (up) → Sep-26 H1: £15.0m (−3%)"
+   },
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "First mention of a tough market: “Maintaining stability against a challenging market backdrop” (CEO quote), where Sep-25 led with record analyzer sales and improving earnings",
+    "span": "No earlier EKF RNS in the folder uses this wording"
+   }
+  ]
+ }
+}

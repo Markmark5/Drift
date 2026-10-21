@@ -1,0 +1,1382 @@
+{
+ "ticker": "PAF",
+ "v": "2026-10-21.c91f",
+ "ccy": "GBX",
+ "src": "AlphaVantage PAF.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-15",
+   16.98
+  ],
+  [
+   "2021-10-22",
+   17.2
+  ],
+  [
+   "2021-10-29",
+   17.32
+  ],
+  [
+   "2021-11-05",
+   17.5
+  ],
+  [
+   "2021-11-12",
+   19.84
+  ],
+  [
+   "2021-11-19",
+   19.72
+  ],
+  [
+   "2021-11-26",
+   17.58
+  ],
+  [
+   "2021-12-03",
+   16.94
+  ],
+  [
+   "2021-12-10",
+   16.28
+  ],
+  [
+   "2021-12-17",
+   17.64
+  ],
+  [
+   "2021-12-24",
+   17.32
+  ],
+  [
+   "2021-12-31",
+   16.7
+  ],
+  [
+   "2022-01-07",
+   17.56
+  ],
+  [
+   "2022-01-14",
+   18.8
+  ],
+  [
+   "2022-01-21",
+   19.0
+  ],
+  [
+   "2022-01-28",
+   18.0
+  ],
+  [
+   "2022-02-04",
+   19.14
+  ],
+  [
+   "2022-02-11",
+   18.84
+  ],
+  [
+   "2022-02-18",
+   20.45
+  ],
+  [
+   "2022-02-25",
+   21.5
+  ],
+  [
+   "2022-03-04",
+   22.35
+  ],
+  [
+   "2022-03-11",
+   21.2
+  ],
+  [
+   "2022-03-18",
+   20.25
+  ],
+  [
+   "2022-03-25",
+   21.3
+  ],
+  [
+   "2022-04-01",
+   23.15
+  ],
+  [
+   "2022-04-08",
+   23.05
+  ],
+  [
+   "2022-04-14",
+   22.8
+  ],
+  [
+   "2022-04-22",
+   21.75
+  ],
+  [
+   "2022-04-29",
+   21.85
+  ],
+  [
+   "2022-05-06",
+   22.3
+  ],
+  [
+   "2022-05-13",
+   19.48
+  ],
+  [
+   "2022-05-20",
+   21.05
+  ],
+  [
+   "2022-05-27",
+   19.5
+  ],
+  [
+   "2022-06-01",
+   19.98
+  ],
+  [
+   "2022-06-10",
+   20.2
+  ],
+  [
+   "2022-06-17",
+   19.22
+  ],
+  [
+   "2022-06-24",
+   19.12
+  ],
+  [
+   "2022-07-01",
+   19.54
+  ],
+  [
+   "2022-07-08",
+   20.3
+  ],
+  [
+   "2022-07-15",
+   18.5
+  ],
+  [
+   "2022-07-22",
+   18.82
+  ],
+  [
+   "2022-07-29",
+   20.3
+  ],
+  [
+   "2022-08-05",
+   20.35
+  ],
+  [
+   "2022-08-12",
+   20.6
+  ],
+  [
+   "2022-08-19",
+   19.46
+  ],
+  [
+   "2022-08-26",
+   20.0
+  ],
+  [
+   "2022-09-02",
+   17.72
+  ],
+  [
+   "2022-09-09",
+   19.28
+  ],
+  [
+   "2022-09-16",
+   17.68
+  ],
+  [
+   "2022-09-23",
+   16.16
+  ],
+  [
+   "2022-09-30",
+   17.5
+  ],
+  [
+   "2022-10-07",
+   17.18
+  ],
+  [
+   "2022-10-14",
+   16.36
+  ],
+  [
+   "2022-10-21",
+   16.98
+  ],
+  [
+   "2022-10-28",
+   17.06
+  ],
+  [
+   "2022-11-04",
+   18.12
+  ],
+  [
+   "2022-11-11",
+   18.94
+  ],
+  [
+   "2022-11-18",
+   18.1
+  ],
+  [
+   "2022-11-25",
+   17.76
+  ],
+  [
+   "2022-12-02",
+   17.14
+  ],
+  [
+   "2022-12-09",
+   17.02
+  ],
+  [
+   "2022-12-16",
+   16.96
+  ],
+  [
+   "2022-12-23",
+   16.34
+  ],
+  [
+   "2022-12-30",
+   16.54
+  ],
+  [
+   "2023-01-06",
+   17.88
+  ],
+  [
+   "2023-01-13",
+   18.58
+  ],
+  [
+   "2023-01-20",
+   17.7
+  ],
+  [
+   "2023-01-27",
+   18.48
+  ],
+  [
+   "2023-02-03",
+   16.54
+  ],
+  [
+   "2023-02-10",
+   15.52
+  ],
+  [
+   "2023-02-17",
+   14.86
+  ],
+  [
+   "2023-02-24",
+   13.46
+  ],
+  [
+   "2023-03-03",
+   14.54
+  ],
+  [
+   "2023-03-10",
+   13.12
+  ],
+  [
+   "2023-03-17",
+   14.46
+  ],
+  [
+   "2023-03-24",
+   16.0
+  ],
+  [
+   "2023-03-31",
+   16.58
+  ],
+  [
+   "2023-04-06",
+   17.04
+  ],
+  [
+   "2023-04-14",
+   18.48
+  ],
+  [
+   "2023-04-21",
+   18.52
+  ],
+  [
+   "2023-04-28",
+   17.7
+  ],
+  [
+   "2023-05-05",
+   19.96
+  ],
+  [
+   "2023-05-12",
+   18.04
+  ],
+  [
+   "2023-05-19",
+   16.5
+  ],
+  [
+   "2023-05-26",
+   13.5
+  ],
+  [
+   "2023-06-02",
+   14.22
+  ],
+  [
+   "2023-06-09",
+   13.32
+  ],
+  [
+   "2023-06-16",
+   12.78
+  ],
+  [
+   "2023-06-23",
+   12.46
+  ],
+  [
+   "2023-06-30",
+   12.52
+  ],
+  [
+   "2023-07-07",
+   12.44
+  ],
+  [
+   "2023-07-14",
+   13.42
+  ],
+  [
+   "2023-07-21",
+   14.38
+  ],
+  [
+   "2023-07-28",
+   14.06
+  ],
+  [
+   "2023-08-04",
+   13.94
+  ],
+  [
+   "2023-08-11",
+   13.94
+  ],
+  [
+   "2023-08-18",
+   12.8
+  ],
+  [
+   "2023-08-25",
+   13.8
+  ],
+  [
+   "2023-09-01",
+   13.94
+  ],
+  [
+   "2023-09-08",
+   13.92
+  ],
+  [
+   "2023-09-15",
+   14.28
+  ],
+  [
+   "2023-09-22",
+   15.94
+  ],
+  [
+   "2023-09-29",
+   14.38
+  ],
+  [
+   "2023-10-06",
+   13.44
+  ],
+  [
+   "2023-10-13",
+   15.14
+  ],
+  [
+   "2023-10-20",
+   16.3
+  ],
+  [
+   "2023-10-27",
+   15.98
+  ],
+  [
+   "2023-11-03",
+   16.32
+  ],
+  [
+   "2023-11-10",
+   15.46
+  ],
+  [
+   "2023-11-17",
+   16.06
+  ],
+  [
+   "2023-11-24",
+   16.32
+  ],
+  [
+   "2023-12-01",
+   17.44
+  ],
+  [
+   "2023-12-08",
+   15.88
+  ],
+  [
+   "2023-12-15",
+   16.28
+  ],
+  [
+   "2023-12-22",
+   16.94
+  ],
+  [
+   "2023-12-29",
+   16.86
+  ],
+  [
+   "2024-01-05",
+   16.0
+  ],
+  [
+   "2024-01-12",
+   16.08
+  ],
+  [
+   "2024-01-19",
+   15.64
+  ],
+  [
+   "2024-01-26",
+   17.4
+  ],
+  [
+   "2024-02-02",
+   17.94
+  ],
+  [
+   "2024-02-09",
+   17.04
+  ],
+  [
+   "2024-02-16",
+   17.2
+  ],
+  [
+   "2024-02-23",
+   18.06
+  ],
+  [
+   "2024-03-01",
+   19.78
+  ],
+  [
+   "2024-03-08",
+   21.15
+  ],
+  [
+   "2024-03-15",
+   21.85
+  ],
+  [
+   "2024-03-22",
+   20.75
+  ],
+  [
+   "2024-03-28",
+   22.5
+  ],
+  [
+   "2024-04-05",
+   22.35
+  ],
+  [
+   "2024-04-12",
+   24.6
+  ],
+  [
+   "2024-04-19",
+   24.3
+  ],
+  [
+   "2024-04-26",
+   24.8
+  ],
+  [
+   "2024-05-03",
+   24.0
+  ],
+  [
+   "2024-05-10",
+   25.25
+  ],
+  [
+   "2024-05-17",
+   26.25
+  ],
+  [
+   "2024-05-24",
+   24.95
+  ],
+  [
+   "2024-05-31",
+   25.55
+  ],
+  [
+   "2024-06-07",
+   23.85
+  ],
+  [
+   "2024-06-14",
+   24.8
+  ],
+  [
+   "2024-06-21",
+   27.55
+  ],
+  [
+   "2024-06-28",
+   26.05
+  ],
+  [
+   "2024-07-05",
+   27.05
+  ],
+  [
+   "2024-07-12",
+   26.8
+  ],
+  [
+   "2024-07-19",
+   26.35
+  ],
+  [
+   "2024-07-26",
+   28.5
+  ],
+  [
+   "2024-08-02",
+   29.3
+  ],
+  [
+   "2024-08-09",
+   28.05
+  ],
+  [
+   "2024-08-16",
+   29.9
+  ],
+  [
+   "2024-08-23",
+   30.85
+  ],
+  [
+   "2024-08-30",
+   31.0
+  ],
+  [
+   "2024-09-06",
+   28.85
+  ],
+  [
+   "2024-09-13",
+   32.0
+  ],
+  [
+   "2024-09-20",
+   33.35
+  ],
+  [
+   "2024-09-27",
+   32.85
+  ],
+  [
+   "2024-10-04",
+   35.05
+  ],
+  [
+   "2024-10-11",
+   34.4
+  ],
+  [
+   "2024-10-18",
+   37.65
+  ],
+  [
+   "2024-10-25",
+   36.2
+  ],
+  [
+   "2024-11-01",
+   35.7
+  ],
+  [
+   "2024-11-08",
+   34.75
+  ],
+  [
+   "2024-11-15",
+   31.4
+  ],
+  [
+   "2024-11-22",
+   38.35
+  ],
+  [
+   "2024-11-29",
+   34.55
+  ],
+  [
+   "2024-12-06",
+   37.2
+  ],
+  [
+   "2024-12-13",
+   36.95
+  ],
+  [
+   "2024-12-20",
+   34.5
+  ],
+  [
+   "2024-12-24",
+   34.05
+  ],
+  [
+   "2024-12-27",
+   34.1
+  ],
+  [
+   "2025-01-03",
+   35.05
+  ],
+  [
+   "2025-01-10",
+   36.05
+  ],
+  [
+   "2025-01-17",
+   37.9
+  ],
+  [
+   "2025-01-24",
+   39.25
+  ],
+  [
+   "2025-01-31",
+   40.0
+  ],
+  [
+   "2025-02-07",
+   42.15
+  ],
+  [
+   "2025-02-14",
+   35.35
+  ],
+  [
+   "2025-02-21",
+   34.95
+  ],
+  [
+   "2025-02-28",
+   34.05
+  ],
+  [
+   "2025-03-07",
+   38.3
+  ],
+  [
+   "2025-03-14",
+   38.6
+  ],
+  [
+   "2025-03-21",
+   40.1
+  ],
+  [
+   "2025-03-28",
+   43.3
+  ],
+  [
+   "2025-04-04",
+   39.35
+  ],
+  [
+   "2025-04-11",
+   47.5
+  ],
+  [
+   "2025-04-17",
+   47.65
+  ],
+  [
+   "2025-04-25",
+   44.2
+  ],
+  [
+   "2025-05-02",
+   44.35
+  ],
+  [
+   "2025-05-09",
+   49.8
+  ],
+  [
+   "2025-05-16",
+   43.8
+  ],
+  [
+   "2025-05-23",
+   47.8
+  ],
+  [
+   "2025-05-30",
+   46.35
+  ],
+  [
+   "2025-06-06",
+   46.5
+  ],
+  [
+   "2025-06-13",
+   48.45
+  ],
+  [
+   "2025-06-20",
+   48.8
+  ],
+  [
+   "2025-06-27",
+   44.5
+  ],
+  [
+   "2025-07-04",
+   48.9
+  ],
+  [
+   "2025-07-11",
+   50.9
+  ],
+  [
+   "2025-07-18",
+   53.5
+  ],
+  [
+   "2025-07-25",
+   55.4
+  ],
+  [
+   "2025-08-01",
+   55.5
+  ],
+  [
+   "2025-08-08",
+   62.5
+  ],
+  [
+   "2025-08-15",
+   62.2
+  ],
+  [
+   "2025-08-22",
+   63.1
+  ],
+  [
+   "2025-08-29",
+   63.2
+  ],
+  [
+   "2025-09-05",
+   70.6
+  ],
+  [
+   "2025-09-12",
+   77.0
+  ],
+  [
+   "2025-09-19",
+   85.1
+  ],
+  [
+   "2025-09-26",
+   86.7
+  ],
+  [
+   "2025-10-03",
+   90.7
+  ],
+  [
+   "2025-10-10",
+   89.0
+  ],
+  [
+   "2025-10-17",
+   89.6
+  ],
+  [
+   "2025-10-24",
+   87.7
+  ],
+  [
+   "2025-10-31",
+   83.6
+  ],
+  [
+   "2025-11-07",
+   85.4
+  ],
+  [
+   "2025-11-14",
+   95.2
+  ],
+  [
+   "2025-11-21",
+   91.8
+  ],
+  [
+   "2025-11-28",
+   100.0
+  ],
+  [
+   "2025-12-05",
+   106.8
+  ],
+  [
+   "2025-12-12",
+   111.2
+  ],
+  [
+   "2025-12-19",
+   112.0
+  ],
+  [
+   "2025-12-24",
+   122.4
+  ],
+  [
+   "2026-01-02",
+   120.0
+  ],
+  [
+   "2026-01-09",
+   119.6
+  ],
+  [
+   "2026-01-16",
+   124.6
+  ],
+  [
+   "2026-01-23",
+   138.6
+  ],
+  [
+   "2026-01-30",
+   132.2
+  ],
+  [
+   "2026-02-06",
+   137.2
+  ],
+  [
+   "2026-02-13",
+   145.4
+  ],
+  [
+   "2026-02-20",
+   168.0
+  ],
+  [
+   "2026-02-27",
+   179.2
+  ],
+  [
+   "2026-03-06",
+   158.0
+  ],
+  [
+   "2026-03-13",
+   144.2
+  ],
+  [
+   "2026-03-20",
+   126.6
+  ],
+  [
+   "2026-03-27",
+   131.6
+  ],
+  [
+   "2026-04-02",
+   147.8
+  ],
+  [
+   "2026-04-10",
+   157.94
+  ],
+  [
+   "2026-04-17",
+   168.04
+  ],
+  [
+   "2026-04-24",
+   145.58
+  ],
+  [
+   "2026-05-01",
+   139.68
+  ],
+  [
+   "2026-05-08",
+   151.14
+  ],
+  [
+   "2026-05-15",
+   140.8
+  ],
+  [
+   "2026-05-22",
+   134.2
+  ],
+  [
+   "2026-05-29",
+   137.7
+  ],
+  [
+   "2026-06-05",
+   106.4
+  ],
+  [
+   "2026-06-12",
+   109.0
+  ],
+  [
+   "2026-06-19",
+   106.4
+  ],
+  [
+   "2026-06-26",
+   102.5
+  ],
+  [
+   "2026-07-03",
+   103.6
+  ],
+  [
+   "2026-07-10",
+   95.05
+  ],
+  [
+   "2026-07-17",
+   90.0
+  ],
+  [
+   "2026-07-24",
+   94.85
+  ],
+  [
+   "2026-07-31",
+   92.15
+  ],
+  [
+   "2026-08-07",
+   109.8
+  ],
+  [
+   "2026-08-14",
+   108.6
+  ],
+  [
+   "2026-08-21",
+   136.1
+  ],
+  [
+   "2026-08-28",
+   136.3
+  ],
+  [
+   "2026-09-04",
+   136.8
+  ],
+  [
+   "2026-09-11",
+   123.4
+  ],
+  [
+   "2026-09-18",
+   130.4
+  ],
+  [
+   "2026-09-25",
+   123.4
+  ],
+  [
+   "2026-10-02",
+   120.0
+  ],
+  [
+   "2026-10-09",
+   117.0
+  ],
+  [
+   "2026-10-16",
+   118.9
+  ],
+  [
+   "2026-10-20",
+   117.7
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-12-15",
+   "doc": "OPS",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 1,
+   "q": "The Group is now well positioned to meet and exceed its full year production guidance of more than 195,000oz.",
+   "file": "20211215_PAF_Acquisition-Blyvoor-Gold-Surface-Tailings.md"
+  },
+  {
+   "d": "2022-01-19",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 1,
+   "q": "The Group is on track to produce 200,000oz of gold for the financial year ending 30 June 2022, and we are committed to continue creating value for our stakeholders by positioning Pan African as a sustainable, safe, high-margin and long-life gold producer with an attractive pipeline of growth projects.",
+   "file": "20220119_PAF_Operational-Update---31-Dec-2021.md"
+  },
+  {
+   "d": "2022-02-16",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group is on track to produce approximately 200,000oz of gold for the financial year ending 30 June 2022, in line with our increased production guidance.",
+   "file": "20220216_PAF_Unaudited-Interim-Results-for-6m-to-31-Dec-2021.md"
+  },
+  {
+   "d": "2022-07-14",
+   "doc": "OPS",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Production was ~3% higher than the upwardly revised guidance of 200,000oz and ~5% higher than initial guidance of 195,000oz, released at inception of the Reporting Period",
+   "file": "20220714_PAF_Operational-Update-for-year-ended-30-June-2022.md"
+  },
+  {
+   "d": "2022-09-14",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group expects its production for the 2023 financial year to be in line with production achieved in the 2022 financial year.",
+   "file": "20220914_PAF_Summarised-audited-results-for-the-ye-30-June-....md"
+  },
+  {
+   "d": "2023-01-30",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -2,
+   "q": "Given the improved production performance expected in the second half of the 2023 financial year, we are maintaining production guidance of 195,000oz to 205,000oz for the full year, subject to consistency in Eskom’s electricity supply.",
+   "file": "20230130_PAF_Operational-Update-for-the-six-months-ended-31-....md"
+  },
+  {
+   "d": "2023-02-10",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Pan African advises shareholders that its headline earnings per share (HEPS) and earnings per share (EPS) for the Current Reporting Period are expected to be between US 1.40 cents per share and US 1.64 cents per share, compared to US 2.39 cents per share for the Corresponding Reporting Period, a decrease of between 31% and 41%.",
+   "file": "20230210_PAF_Trading-Statement-for-6-months-ended-31-Dec-2022.md"
+  },
+  {
+   "d": "2023-02-15",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group expects its production for the full 2023 financial year to be in line with the production achieved in the 2022 financial year.",
+   "file": "20230215_PAF_Interim-Financial-Results-to-31-Dec-2022.md"
+  },
+  {
+   "d": "2023-05-26",
+   "doc": "OPS",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -3,
+   "q": "Production guidance for the current financial year reduced to approximately 175,000oz (previously 195,000oz to 205,000oz), primarily as a result of:",
+   "file": "20230526_PAF_Revised-Production-Guidance-for-the-year-endi....md"
+  },
+  {
+   "d": "2023-08-07",
+   "doc": "OPS",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The continuous operations at our Barberton underground mines and other improvements are now positively impacting production, with increased production expected in the year ahead.",
+   "file": "20230807_PAF_Operational-Update-for-the-year-ended-30-June....md"
+  },
+  {
+   "d": "2023-09-01",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Pan African advises shareholders that its headline earnings per share (HEPS) for the current financial year are expected to be between US 2.95 cents per share and US 3.35 cents per share, compared to US 3.93 cents per share for the previous financial year, a decrease of between 15% and 25%.",
+   "file": "20230901_PAF_Trading-Statement-for-the-year-ended-30-June-....md"
+  },
+  {
+   "d": "2023-09-13",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "We are confident that the measures we are implementing, specifically at Barberton Mines’ underground operations, will result in higher production in the future, with production guidance increased for the 2024 financial year.",
+   "file": "20230913_PAF_Provisional-summarised-audited-results-for-th....md"
+  },
+  {
+   "d": "2023-11-22",
+   "doc": "OPS",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Full year 2024 production guidance increased to a range of 180,000oz to 190,000oz, from the previously communicated range of 178,000oz to 190,000oz (FY2023: 175,209oz).",
+   "file": "20231122_PAF_Interim-Production-Update-for-half-year-endin....md"
+  },
+  {
+   "d": "2024-01-22",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Production guidance for the full 2024 year is maintained at between 180,000oz to 190,000oz (FY2023: 175,209oz).",
+   "file": "20240122_PAF_Operational-Update-for-the-Half-Year-ended-31....md"
+  },
+  {
+   "d": "2024-02-02",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Pan African advises shareholders that its headline earnings per share (HEPS) and earnings per share (EPS) for the current reporting period are expected to be between US 2.14 cents per share and US 2.30 cents per share, compared to US 1.52 cents per share for the corresponding reporting period, an increase of between 41% and 51%.",
+   "file": "20240202_PAF_Trading-Statement.md"
+  },
+  {
+   "d": "2024-02-14",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 1,
+   "q": "The Group is well positioned to deliver into its 2024 financial year production guidance of between 180,000oz to 190,000oz of gold. Increased guidance may be considered in due course.",
+   "file": "20240214_PAF_Unaudited-Interim-financial-results-for-the-s....md"
+  },
+  {
+   "d": "2024-05-09",
+   "doc": "OPS",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 1,
+   "q": "We are pleased that Pan African will achieve the upper end of our full year production guidance, and would have exceeded guidance had we continued with the processing of surface material at Evander in the second half of the financial year.",
+   "file": "20240509_PAF_Revised-Production-Guidance-for-the-year-endi....md"
+  },
+  {
+   "d": "2024-07-29",
+   "doc": "OPS",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "A delay in commissioning the ventilation shaft for hoisting at Evander 8 underground operations adversely impacted production in the last two months of the Reporting Period, resulting in the Group not achieving the higher end of production guidance and also negatively impacted unit costs.",
+   "file": "20240729_PAF_Operational-Update-for-the-year-ended-30-June....md"
+  },
+  {
+   "d": "2024-09-05",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Pan African advises shareholders that its headline earnings per share (HEPS) for the current financial year are expected to be between US 3.99 cents per share and US 4.31 cents per share, compared to US 3.15 cents per share for the previous reporting period, an increase of between 27% and 37%.",
+   "file": "20240905_PAF_Trading-Statement-for-the-year-ended-30-June-....md"
+  },
+  {
+   "d": "2024-09-11",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "2025 financial year production guidance of 215,000oz to 225,000oz, with the expected increase in production largely attributable to the contribution from the Group’s new MTR project, but potentially impacted by:",
+   "file": "20240911_PAF_Summarised-audited-results-for-the-year-ended....md"
+  },
+  {
+   "d": "2024-12-12",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -1,
+   "q": "Production for the full year FY2025 is estimated at approximately 215,000oz (FY2024: 186,039oz), an increase of 16% from the prior year.",
+   "file": "20241212_PAF_Operational-Update-and-Completion-of-the-Tenn....md"
+  },
+  {
+   "d": "2025-02-10",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The sub-vertical shaft at Evander underground was fully commissioned during January 2025 Mogale Tailings Retreatment (MTR) production is now fully ramped-up, ahead of schedule and with final project capital below budget Full year production (48,000oz to 60,000oz) from TCMG in Australia is expected in FY2026",
+   "file": "20250210_PAF_Group-Trading-Statement-for-the-six-months-en....md"
+  },
+  {
+   "d": "2025-02-12",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Full-year guidance for FY2025 of approximately 215,000oz (FY2024: 186,039oz) is maintained, an increase of 16% from the prior year",
+   "file": "20250212_PAF_Unaudited-Interim-Financial-Results-for-the-s....md"
+  },
+  {
+   "d": "2025-06-11",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -2,
+   "q": "Despite a significant increase in production in H2, full year production will therefore fall marginally below FY25 production guidance range of 205,000oz to 215,000oz as a result of:",
+   "file": "20250611_PAF_Operational-Update,-Record-Half-Year-Gold-Pro....md"
+  },
+  {
+   "d": "2025-09-04",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Group production is further expected to increase for the year ending 30 June 2026 to between 275,000oz and 292,000oz, largely attributable to the contribution from the Group’s new MTR operation and Tennant Mines.",
+   "file": "20250904_PAF_Group-Trading-Statement-for-the-year-ended-30....md"
+  },
+  {
+   "d": "2025-09-10",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Group production for FY26 is expected to be between 275,000oz and 292,000oz, as outlined below, with higher production in FY26H2.",
+   "file": "20250910_PAF_Summarised-Audited-Results-for-the-year-ended....md"
+  },
+  {
+   "d": "2026-01-26",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "All in sustaining cost (AISC) of production for H1FY26 is expected in the range of US$1,825/oz -US$1,875/oz at US$/ZAR17.37, (FY26 full year guidance: US$1,525/oz to US$1,575/oz at US$/ZAR18.50) negatively impacted by:",
+   "file": "20260126_PAF_Operational-Update-for-the-half-year-ended-De....md"
+  },
+  {
+   "d": "2026-02-11",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Group production is expected to increase further during the second half of the financial year ending 30 June 2026, largely attributable to increased production from the MTR expansion project and from Tennant Mines, with full year production guidance of 275,000oz to 292,000oz.",
+   "file": "20260211_PAF_Group-Trading-Statement-for-the-six-months-en....md"
+  },
+  {
+   "d": "2026-02-18",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -2,
+   "q": "FY26 full-year AISC® guidance revised to between US$1,820/oz and US$1,870/oz at US$/ZAR:17.00, lower than the AISC® for the first six months, due to increased forecast production in FY26H2 and a continued focus on cost control",
+   "file": "20260218_PAF_Unaudited-Condensed-Consolidated-Interim-Fina....md"
+  },
+  {
+   "d": "2026-06-01",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -1,
+   "q": "Increase of ~40% in annual gold production to approximately 275,000oz, in line with the lower end of FY26 production guidance of 275,000oz to 292,000oz (FY25: 196,527oz)",
+   "file": "20260601_PAF_Operational-Update-ahead-of-year-ending-30-Ju....md"
+  },
+  {
+   "d": "2026-09-10",
+   "doc": "YE-TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Group production is further expected to increase for the year ending 30 June 2027 to between 280,000oz and 302,000oz, largely attributable to increased production from Tennant Mines.",
+   "file": "20260910_PAF_Group-Trading-Statement-for-the-year-ended-30....md"
+  },
+  {
+   "d": "2026-09-16",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "Group gold production increased by 38.6% to 272,310oz (FY25: 196,527oz), broadly in line with production guidance",
+   "file": "20260916_PAF_Summarised-Audited-Results-for-the-year-ended....md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-16",
+  "doc": "FY R",
+  "file": "20260916_PAF_Summarised-Audited-Results-for-the-year-ended....md",
+  "vs": "FY R Sep-25 · YE-TU Sep-26 · OPS Jun-26 · H1 R Feb-26",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "AISC: FY R Sep-25 “FY26 AISC guidance of between US$1,525/oz and US$1,575/oz (assuming an exchange rate of US$/ZAR:18.50).” → H1 R Feb-26 “FY26 full-year AISC® guidance revised to between US$1,820/oz and US$1,870/oz” → FY R Sep-26 “All-in sustaining cost (AISC) of US$1,867/oz” described as “within cost guidance despite inflationary cost pressures”, i.e. at the top of the revised range, ~19% above the original guide",
+    "span": "Original guide Sep-25 → revised Feb-26 → outturn at top end"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Production: FY R Sep-25 “FY26 production guidance of 275,000oz to 292,000oz” → OPS Jun-26 “in line with the lower end of FY26 production guidance” → FY R Sep-26 “272,310oz (FY25: 196,527oz), broadly in line with production guidance”, below the 275,000oz floor",
+    "span": "Below range for FY25 (Jun-25) and FY26"
+   },
+   {
+    "sev": "grey",
+    "type": "Went quiet",
+    "text": "FY27 capex guide: H1 R Feb-26 “FY27 Production and Capital Expenditure Outlook” table; OPS Jun-26 “The Group’s capital expenditure guidance for FY27 has been revised to US$324 million” → FY R Sep-26 gives no group capex figure",
+    "span": "Given Feb-26 and Jun-26 → absent Sep-26"
+   }
+  ]
+ }
+}
