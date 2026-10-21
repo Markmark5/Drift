@@ -1,0 +1,1283 @@
+{
+ "ticker": "MWE",
+ "v": "2026-10-21.ab13",
+ "ccy": "GBX",
+ "src": "Yahoo MWE.L weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-22",
+   66.0
+  ],
+  [
+   "2021-10-29",
+   68.0
+  ],
+  [
+   "2021-11-05",
+   71.0
+  ],
+  [
+   "2021-11-12",
+   74.5
+  ],
+  [
+   "2021-11-19",
+   82.5
+  ],
+  [
+   "2021-11-26",
+   73.5
+  ],
+  [
+   "2021-12-03",
+   74.5
+  ],
+  [
+   "2021-12-10",
+   77.0
+  ],
+  [
+   "2021-12-17",
+   76.5
+  ],
+  [
+   "2021-12-24",
+   76.5
+  ],
+  [
+   "2021-12-31",
+   76.5
+  ],
+  [
+   "2022-01-07",
+   75.0
+  ],
+  [
+   "2022-01-14",
+   73.0
+  ],
+  [
+   "2022-01-21",
+   64.0
+  ],
+  [
+   "2022-01-28",
+   65.5
+  ],
+  [
+   "2022-02-04",
+   68.5
+  ],
+  [
+   "2022-02-11",
+   68.0
+  ],
+  [
+   "2022-02-18",
+   55.5
+  ],
+  [
+   "2022-02-25",
+   49.5
+  ],
+  [
+   "2022-03-04",
+   46.0
+  ],
+  [
+   "2022-03-11",
+   62.0
+  ],
+  [
+   "2022-03-18",
+   67.0
+  ],
+  [
+   "2022-03-25",
+   62.5
+  ],
+  [
+   "2022-04-01",
+   57.5
+  ],
+  [
+   "2022-04-08",
+   62.0
+  ],
+  [
+   "2022-04-15",
+   63.0
+  ],
+  [
+   "2022-04-22",
+   62.5
+  ],
+  [
+   "2022-04-29",
+   61.0
+  ],
+  [
+   "2022-05-06",
+   61.0
+  ],
+  [
+   "2022-05-13",
+   61.0
+  ],
+  [
+   "2022-05-20",
+   64.0
+  ],
+  [
+   "2022-05-27",
+   67.0
+  ],
+  [
+   "2022-06-03",
+   70.5
+  ],
+  [
+   "2022-06-10",
+   69.5
+  ],
+  [
+   "2022-06-17",
+   64.0
+  ],
+  [
+   "2022-06-24",
+   64.0
+  ],
+  [
+   "2022-07-01",
+   60.0
+  ],
+  [
+   "2022-07-08",
+   59.0
+  ],
+  [
+   "2022-07-15",
+   56.5
+  ],
+  [
+   "2022-07-22",
+   55.5
+  ],
+  [
+   "2022-07-29",
+   54.5
+  ],
+  [
+   "2022-08-05",
+   54.0
+  ],
+  [
+   "2022-08-12",
+   60.5
+  ],
+  [
+   "2022-08-19",
+   62.0
+  ],
+  [
+   "2022-08-26",
+   60.0
+  ],
+  [
+   "2022-09-02",
+   58.0
+  ],
+  [
+   "2022-09-09",
+   53.0
+  ],
+  [
+   "2022-09-16",
+   53.5
+  ],
+  [
+   "2022-09-23",
+   51.0
+  ],
+  [
+   "2022-09-30",
+   48.0
+  ],
+  [
+   "2022-10-07",
+   49.0
+  ],
+  [
+   "2022-10-14",
+   45.0
+  ],
+  [
+   "2022-10-21",
+   49.0
+  ],
+  [
+   "2022-10-28",
+   49.0
+  ],
+  [
+   "2022-11-04",
+   48.5
+  ],
+  [
+   "2022-11-11",
+   48.0
+  ],
+  [
+   "2022-11-18",
+   51.0
+  ],
+  [
+   "2022-11-25",
+   55.0
+  ],
+  [
+   "2022-12-02",
+   54.0
+  ],
+  [
+   "2022-12-09",
+   55.5
+  ],
+  [
+   "2022-12-16",
+   55.5
+  ],
+  [
+   "2022-12-23",
+   55.0
+  ],
+  [
+   "2022-12-30",
+   55.0
+  ],
+  [
+   "2023-01-06",
+   53.5
+  ],
+  [
+   "2023-01-13",
+   51.5
+  ],
+  [
+   "2023-01-20",
+   51.0
+  ],
+  [
+   "2023-01-27",
+   51.0
+  ],
+  [
+   "2023-02-03",
+   51.0
+  ],
+  [
+   "2023-02-10",
+   51.5
+  ],
+  [
+   "2023-02-17",
+   51.5
+  ],
+  [
+   "2023-02-24",
+   50.5
+  ],
+  [
+   "2023-03-03",
+   49.5
+  ],
+  [
+   "2023-03-10",
+   48.5
+  ],
+  [
+   "2023-03-17",
+   53.0
+  ],
+  [
+   "2023-03-24",
+   51.5
+  ],
+  [
+   "2023-03-31",
+   51.0
+  ],
+  [
+   "2023-04-07",
+   50.0
+  ],
+  [
+   "2023-04-14",
+   52.0
+  ],
+  [
+   "2023-04-21",
+   52.5
+  ],
+  [
+   "2023-04-28",
+   52.0
+  ],
+  [
+   "2023-05-05",
+   51.5
+  ],
+  [
+   "2023-05-12",
+   49.5
+  ],
+  [
+   "2023-05-19",
+   50.5
+  ],
+  [
+   "2023-05-26",
+   49.5
+  ],
+  [
+   "2023-06-02",
+   48.0
+  ],
+  [
+   "2023-06-09",
+   47.5
+  ],
+  [
+   "2023-06-16",
+   47.5
+  ],
+  [
+   "2023-06-23",
+   47.5
+  ],
+  [
+   "2023-06-30",
+   44.5
+  ],
+  [
+   "2023-07-07",
+   44.0
+  ],
+  [
+   "2023-07-14",
+   43.0
+  ],
+  [
+   "2023-07-21",
+   45.5
+  ],
+  [
+   "2023-07-28",
+   43.5
+  ],
+  [
+   "2023-08-04",
+   42.5
+  ],
+  [
+   "2023-08-11",
+   42.5
+  ],
+  [
+   "2023-08-18",
+   45.0
+  ],
+  [
+   "2023-08-25",
+   46.0
+  ],
+  [
+   "2023-09-01",
+   44.5
+  ],
+  [
+   "2023-09-08",
+   45.0
+  ],
+  [
+   "2023-09-15",
+   45.5
+  ],
+  [
+   "2023-09-22",
+   45.5
+  ],
+  [
+   "2023-09-29",
+   44.0
+  ],
+  [
+   "2023-10-06",
+   44.5
+  ],
+  [
+   "2023-10-13",
+   40.5
+  ],
+  [
+   "2023-10-20",
+   35.0
+  ],
+  [
+   "2023-10-27",
+   34.5
+  ],
+  [
+   "2023-11-03",
+   34.5
+  ],
+  [
+   "2023-11-10",
+   33.5
+  ],
+  [
+   "2023-11-17",
+   32.0
+  ],
+  [
+   "2023-11-24",
+   34.0
+  ],
+  [
+   "2023-12-01",
+   33.5
+  ],
+  [
+   "2023-12-08",
+   32.0
+  ],
+  [
+   "2023-12-15",
+   31.0
+  ],
+  [
+   "2023-12-22",
+   34.5
+  ],
+  [
+   "2023-12-29",
+   34.5
+  ],
+  [
+   "2024-01-05",
+   34.5
+  ],
+  [
+   "2024-01-12",
+   34.5
+  ],
+  [
+   "2024-01-19",
+   34.0
+  ],
+  [
+   "2024-01-26",
+   33.0
+  ],
+  [
+   "2024-02-02",
+   37.0
+  ],
+  [
+   "2024-02-09",
+   37.0
+  ],
+  [
+   "2024-02-16",
+   36.0
+  ],
+  [
+   "2024-02-23",
+   35.5
+  ],
+  [
+   "2024-03-01",
+   35.5
+  ],
+  [
+   "2024-03-08",
+   36.5
+  ],
+  [
+   "2024-03-15",
+   47.0
+  ],
+  [
+   "2024-03-22",
+   46.0
+  ],
+  [
+   "2024-03-29",
+   46.0
+  ],
+  [
+   "2024-04-05",
+   44.5
+  ],
+  [
+   "2024-04-12",
+   43.5
+  ],
+  [
+   "2024-04-19",
+   42.0
+  ],
+  [
+   "2024-04-26",
+   42.0
+  ],
+  [
+   "2024-05-03",
+   42.0
+  ],
+  [
+   "2024-05-10",
+   42.5
+  ],
+  [
+   "2024-05-17",
+   46.0
+  ],
+  [
+   "2024-05-24",
+   46.0
+  ],
+  [
+   "2024-05-31",
+   44.5
+  ],
+  [
+   "2024-06-07",
+   43.0
+  ],
+  [
+   "2024-06-14",
+   42.5
+  ],
+  [
+   "2024-06-21",
+   39.5
+  ],
+  [
+   "2024-06-28",
+   39.5
+  ],
+  [
+   "2024-07-05",
+   40.0
+  ],
+  [
+   "2024-07-12",
+   39.0
+  ],
+  [
+   "2024-07-19",
+   40.0
+  ],
+  [
+   "2024-07-26",
+   38.5
+  ],
+  [
+   "2024-08-02",
+   38.5
+  ],
+  [
+   "2024-08-09",
+   36.0
+  ],
+  [
+   "2024-08-16",
+   37.0
+  ],
+  [
+   "2024-08-23",
+   40.0
+  ],
+  [
+   "2024-08-30",
+   40.0
+  ],
+  [
+   "2024-09-06",
+   41.5
+  ],
+  [
+   "2024-09-13",
+   47.0
+  ],
+  [
+   "2024-09-20",
+   48.0
+  ],
+  [
+   "2024-09-27",
+   51.5
+  ],
+  [
+   "2024-10-04",
+   44.0
+  ],
+  [
+   "2024-10-11",
+   46.5
+  ],
+  [
+   "2024-10-18",
+   45.5
+  ],
+  [
+   "2024-10-25",
+   46.5
+  ],
+  [
+   "2024-11-01",
+   46.5
+  ],
+  [
+   "2024-11-08",
+   45.0
+  ],
+  [
+   "2024-11-15",
+   46.0
+  ],
+  [
+   "2024-11-22",
+   45.0
+  ],
+  [
+   "2024-11-29",
+   45.0
+  ],
+  [
+   "2024-12-06",
+   43.5
+  ],
+  [
+   "2024-12-13",
+   44.0
+  ],
+  [
+   "2024-12-20",
+   43.0
+  ],
+  [
+   "2024-12-27",
+   42.5
+  ],
+  [
+   "2025-01-03",
+   45.5
+  ],
+  [
+   "2025-01-10",
+   50.0
+  ],
+  [
+   "2025-01-17",
+   52.5
+  ],
+  [
+   "2025-01-24",
+   52.0
+  ],
+  [
+   "2025-01-31",
+   47.5
+  ],
+  [
+   "2025-02-07",
+   47.0
+  ],
+  [
+   "2025-02-14",
+   53.0
+  ],
+  [
+   "2025-02-21",
+   53.0
+  ],
+  [
+   "2025-02-28",
+   57.5
+  ],
+  [
+   "2025-03-07",
+   59.0
+  ],
+  [
+   "2025-03-14",
+   68.5
+  ],
+  [
+   "2025-03-21",
+   58.5
+  ],
+  [
+   "2025-03-28",
+   53.25
+  ],
+  [
+   "2025-04-04",
+   48.5
+  ],
+  [
+   "2025-04-11",
+   44.5
+  ],
+  [
+   "2025-04-18",
+   44.0
+  ],
+  [
+   "2025-04-25",
+   43.0
+  ],
+  [
+   "2025-05-02",
+   48.0
+  ],
+  [
+   "2025-05-09",
+   47.0
+  ],
+  [
+   "2025-05-16",
+   48.0
+  ],
+  [
+   "2025-05-23",
+   43.0
+  ],
+  [
+   "2025-05-30",
+   46.0
+  ],
+  [
+   "2025-06-06",
+   52.5
+  ],
+  [
+   "2025-06-13",
+   47.0
+  ],
+  [
+   "2025-06-20",
+   47.0
+  ],
+  [
+   "2025-06-27",
+   47.0
+  ],
+  [
+   "2025-07-04",
+   45.0
+  ],
+  [
+   "2025-07-11",
+   51.25
+  ],
+  [
+   "2025-07-18",
+   50.0
+  ],
+  [
+   "2025-07-25",
+   47.0
+  ],
+  [
+   "2025-08-01",
+   46.0
+  ],
+  [
+   "2025-08-08",
+   47.5
+  ],
+  [
+   "2025-08-15",
+   45.0
+  ],
+  [
+   "2025-08-22",
+   48.5
+  ],
+  [
+   "2025-08-29",
+   48.0
+  ],
+  [
+   "2025-09-05",
+   46.5
+  ],
+  [
+   "2025-09-12",
+   47.8
+  ],
+  [
+   "2025-09-19",
+   47.0
+  ],
+  [
+   "2025-09-26",
+   43.0
+  ],
+  [
+   "2025-10-03",
+   43.0
+  ],
+  [
+   "2025-10-10",
+   43.0
+  ],
+  [
+   "2025-10-17",
+   39.0
+  ],
+  [
+   "2025-10-24",
+   40.0
+  ],
+  [
+   "2025-10-31",
+   41.0
+  ],
+  [
+   "2025-11-07",
+   39.5
+  ],
+  [
+   "2025-11-14",
+   40.0
+  ],
+  [
+   "2025-11-21",
+   42.5
+  ],
+  [
+   "2025-11-28",
+   51.0
+  ],
+  [
+   "2025-12-05",
+   52.0
+  ],
+  [
+   "2025-12-12",
+   48.5
+  ],
+  [
+   "2025-12-19",
+   44.5
+  ],
+  [
+   "2025-12-26",
+   47.0
+  ],
+  [
+   "2026-01-02",
+   46.5
+  ],
+  [
+   "2026-01-09",
+   49.0
+  ],
+  [
+   "2026-01-16",
+   54.5
+  ],
+  [
+   "2026-01-23",
+   53.0
+  ],
+  [
+   "2026-01-30",
+   52.5
+  ],
+  [
+   "2026-02-06",
+   53.0
+  ],
+  [
+   "2026-02-13",
+   52.0
+  ],
+  [
+   "2026-02-20",
+   57.5
+  ],
+  [
+   "2026-02-27",
+   58.5
+  ],
+  [
+   "2026-03-06",
+   55.5
+  ],
+  [
+   "2026-03-13",
+   59.5
+  ],
+  [
+   "2026-03-20",
+   57.0
+  ],
+  [
+   "2026-03-27",
+   57.0
+  ],
+  [
+   "2026-04-03",
+   56.0
+  ],
+  [
+   "2026-04-10",
+   61.6
+  ],
+  [
+   "2026-04-17",
+   68.0
+  ],
+  [
+   "2026-04-24",
+   62.6
+  ],
+  [
+   "2026-05-01",
+   69.0
+  ],
+  [
+   "2026-05-08",
+   68.5
+  ],
+  [
+   "2026-05-15",
+   62.5
+  ],
+  [
+   "2026-05-22",
+   61.0
+  ],
+  [
+   "2026-05-29",
+   66.5
+  ],
+  [
+   "2026-06-05",
+   69.0
+  ],
+  [
+   "2026-06-12",
+   67.5
+  ],
+  [
+   "2026-06-19",
+   77.0
+  ],
+  [
+   "2026-06-26",
+   72.5
+  ],
+  [
+   "2026-07-03",
+   75.0
+  ],
+  [
+   "2026-07-10",
+   71.0
+  ],
+  [
+   "2026-07-17",
+   70.5
+  ],
+  [
+   "2026-07-24",
+   66.0
+  ],
+  [
+   "2026-07-31",
+   66.0
+  ],
+  [
+   "2026-08-07",
+   64.5
+  ],
+  [
+   "2026-08-14",
+   66.5
+  ],
+  [
+   "2026-08-21",
+   67.0
+  ],
+  [
+   "2026-08-28",
+   67.5
+  ],
+  [
+   "2026-09-04",
+   67.0
+  ],
+  [
+   "2026-09-11",
+   63.0
+  ],
+  [
+   "2026-09-18",
+   64.0
+  ],
+  [
+   "2026-09-25",
+   63.5
+  ],
+  [
+   "2026-10-02",
+   62.0
+  ],
+  [
+   "2026-10-09",
+   65.0
+  ],
+  [
+   "2026-10-16",
+   61.0
+  ],
+  [
+   "2026-10-21",
+   64.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-11-15",
+   "doc": "Q3 R",
+   "fy": "FY21",
+   "g": "flat",
+   "s": 0,
+   "q": "This was another positive quarter for the Group, leading to an 11% increase in profitability for the first nine months, and I believe that we are well placed to achieve a good result for the full year.",
+   "file": "20211115_MWE_Results-for-the-nine-months-to-30-September-2021.md"
+  },
+  {
+   "d": "2022-02-14",
+   "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "CUT",
+   "s": -2,
+   "q": "As a consequence of the strength of the Israeli Shekel versus the US Dollar in 2021, the MTI board expects to report marginally lower than anticipated net profit for the year, but expects to pay a dividend in line with market expectations.",
+   "file": "20220214_MWE_Trading-Update.md"
+  },
+  {
+   "d": "2022-03-07",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "2021 was a solid trading year for the business and we will seek to repeat and build upon it in 2022.",
+   "file": "20220307_MWE_Final-results-for-2021.md"
+  },
+  {
+   "d": "2022-05-23",
+   "doc": "Q1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -1,
+   "q": "Inflationary led costs are coming through the business albeit we have been successful to mitigate these to some extent by implementing price increases. Overall, we expect these factors to continue to some degree for the remainder of the year.",
+   "file": "20220523_MWE_Q1-2022-Financial-Results.md"
+  },
+  {
+   "d": "2022-08-15",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Looking ahead we are confident of delivering a successful 2022.",
+   "file": "20220815_MWE_Interim-Results.md"
+  },
+  {
+   "d": "2022-11-21",
+   "doc": "Q3 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "Going into the final quarter of this year, the Company is well placed to deliver a good result for the year.",
+   "file": "20221121_MWE_Q3-2022-Financial-Results.md"
+  },
+  {
+   "d": "2023-03-13",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "2023 has started well for the Company with an increased pipeline of opportunities across all of our three divisions. We are looking forward to delivering another year of growth and increased returns for our shareholders.",
+   "file": "20230313_MWE_Final-Results-for-2022.md"
+  },
+  {
+   "d": "2023-05-17",
+   "doc": "Q1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "There is clear ongoing demand for our comprehensive communication and radio frequency solutions across all three divisions and we feel confident in the outlook for the year.",
+   "file": "20230517_MWE_Q1-2023-Financial-Results.md"
+  },
+  {
+   "d": "2023-08-15",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "While the commercial market is still challenging, the supply issues experienced last year have dissipated and, with a strong pipeline of opportunities, we remain confident in the growth prospects for the business and the outcome for the year",
+   "file": "20230815_MWE_Interim-Results.md"
+  },
+  {
+   "d": "2023-11-20",
+   "doc": "Q3 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -2,
+   "q": "I believe that the Company is therefore well placed to weather the current challenges and, in the absence of unforeseen geopolitical developments, to continue to grow.",
+   "file": "20231120_MWE_Q3-2023-Financial-Results.md"
+  },
+  {
+   "d": "2024-03-11",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "2024 has started well for the Company with an increased pipeline of opportunities across all of our three divisions. We are looking forward to delivering another year of growth and increased returns for our shareholders.",
+   "file": "20240311_MWE_Final-results-for-2023.md"
+  },
+  {
+   "d": "2024-05-20",
+   "doc": "Q1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "In Q1, we delivered a positive trading performance, but we have not, as yet, felt the full benefit of the backlog of business that we have contracted or indeed the healthy pipeline of opportunities we have ahead of us.",
+   "file": "20240520_MWE_Q1-2024-Financial-Results.md"
+  },
+  {
+   "d": "2024-08-21",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading in Q3 has been positive so far and we are hopeful of securing some material contracts in the second half of the year.",
+   "file": "20240821_MWE_Interim-Results.md"
+  },
+  {
+   "d": "2025-03-17",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 1,
+   "q": "2025 has undoubtedly started well for the Company with an increased backlog and pipeline of opportunities across all of our three divisions. We are therefore looking forward to delivering a year of growth and increased returns for our shareholders.",
+   "file": "20250317_MWE_Final-Results.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2025-05-27",
+   "doc": "Q1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Overall MTI is in a good position, Q2 is progressing well with three material contracts wins announced so far and as a Board we are confident about the outlook for the year.",
+   "file": "20250527_MWE_Q1-2025-financial-results.md"
+  },
+  {
+   "d": "2025-08-26",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading to date in Q3 has been positive building on the strong first half performance. The orderbooks across the Group show an encouraging backlog of orders, which together with upcoming tenders mean the Company is well placed for the year.",
+   "file": "20250826_MWE_Interim-results.md"
+  },
+  {
+   "d": "2025-11-24",
+   "doc": "Q3 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 1,
+   "q": "This quarter delivered record revenues and profitability, positioning the business for a strong full-year performance.",
+   "file": "20251124_MWE_Q3-2025-Financial-Results.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2026-02-17",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Following very strong growth in EBIT in FY2025 (approximately 30% over 2024), the Company expects reported FY2025 earnings per share to be significantly ahead of current market expectations2.",
+   "file": "20260217_MWE_Trading-Update-and-Notice-of-Final-Results.md"
+  },
+  {
+   "d": "2026-03-04",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "Currency fluctuations may impact reported results over 2026, especially if the current weakness of the USD against the NIS continues, but it is too early to forecast this accurately and so we are instead focused on delivering another year of growth and increased returns for our shareholders.",
+   "file": "20260304_MWE_Final-Results.md"
+  },
+  {
+   "d": "2026-05-26",
+   "doc": "Q1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "Moving into Q2, we received a record level of defence related orders worth just over $9 million, the majority of which is expected to be fulfilled in the current year, adding to a backlog of orders for 2026 that was already high.",
+   "file": "20260526_MWE_Q1-2026-Financial-Results-&-Investor-Presentation.md"
+  },
+  {
+   "d": "2026-08-17",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "The Antenna division has been extremely successful in securing a series of new orders in total worth approximately $6 million with the vast majority due over the next 18 months; these contracts were won in April 2026, which will result in a second-half weighted revenue split this year.",
+   "file": "20260817_MWE_Interim-results.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-08-17",
+  "doc": "H1 R",
+  "file": "20260817_MWE_Interim-results.md",
+  "vs": "H1 R Aug-25 · back to Aug-24 · Q1 R May-26 · Q3 R Nov-25",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "First H2-weighting flag: Antenna contracts won in April “which will result in a second-half weighted revenue split this year” (H1-25: “providing excellent visibility for a successful year ahead”)",
+    "span": "No second-half weighting flagged in any earlier MWE RNS"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Antenna: H1-25 “with sales up by 23% during the period” → H1-26 “H1 revenues were 20% below the prior year comparison”, presented under “The Antenna division is well positioned following the award of a series of significant defence contracts in April 2026.”",
+    "span": "H1-25 +23% → H1-26 −20%"
+   },
+   {
+    "sev": "amber",
+    "type": "Demoted",
+    "text": "Operating cash flow: H1-25 headline “net cash provided by operating activities, up 66% to $2.5m” → H1-26 highlights say only “reflecting high cashflow conversion rate”; the cash flow statement shows 2,344 vs 2,533 ($k), down c.7%",
+    "span": "Headline at H1-25 and Q3-25 → not in H1-26 highlights"
+   },
+   {
+    "sev": "grey",
+    "type": "Number to words",
+    "text": "5G backhaul: H1-25 “Sales of the 5G backhaul solution rose significantly by 40%” → H1-26 “E-band 5G backhaul solution sales in India have been slower compared to previous periods”, no figure",
+    "span": "Headline % at H1-25 → words only"
+   }
+  ]
+ }
+}

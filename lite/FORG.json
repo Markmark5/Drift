@@ -1,0 +1,191 @@
+{
+ "ticker": "FORG",
+ "v": "2026-10-21.fd56",
+ "ccy": "GBX",
+ "src": "ShareScope weekly snapshots",
+ "adj": [],
+ "px": [
+  [
+   "2026-03-03",
+   0.039
+  ],
+  [
+   "2026-03-06",
+   0.0426
+  ],
+  [
+   "2026-03-13",
+   0.039
+  ],
+  [
+   "2026-03-20",
+   0.0355
+  ],
+  [
+   "2026-03-27",
+   0.03
+  ],
+  [
+   "2026-04-03",
+   0.024
+  ],
+  [
+   "2026-04-10",
+   0.0235
+  ],
+  [
+   "2026-04-17",
+   0.018
+  ],
+  [
+   "2026-04-24",
+   0.0175
+  ],
+  [
+   "2026-05-08",
+   0.0145
+  ],
+  [
+   "2026-05-15",
+   0.016
+  ],
+  [
+   "2026-05-22",
+   0.015
+  ],
+  [
+   "2026-06-02",
+   0.014
+  ],
+  [
+   "2026-06-05",
+   0.015
+  ],
+  [
+   "2026-06-12",
+   0.017
+  ],
+  [
+   "2026-06-19",
+   0.017
+  ],
+  [
+   "2026-06-26",
+   0.0144
+  ],
+  [
+   "2026-07-03",
+   0.018
+  ],
+  [
+   "2026-07-10",
+   0.016
+  ],
+  [
+   "2026-07-17",
+   0.017
+  ],
+  [
+   "2026-07-24",
+   0.0145
+  ],
+  [
+   "2026-07-31",
+   0.012
+  ],
+  [
+   "2026-08-07",
+   0.012
+  ],
+  [
+   "2026-08-14",
+   0.011
+  ],
+  [
+   "2026-08-21",
+   0.01
+  ],
+  [
+   "2026-08-28",
+   0.0095
+  ],
+  [
+   "2026-09-07",
+   0.008
+  ],
+  [
+   "2026-09-11",
+   0.0075
+  ],
+  [
+   "2026-09-18",
+   0.008
+  ],
+  [
+   "2026-09-25",
+   0.0095
+  ],
+  [
+   "2026-10-02",
+   0.0145
+  ],
+  [
+   "2026-10-09",
+   0.012
+  ],
+  [
+   "2026-10-16",
+   0.012
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2026-06-05",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Drilling is expected to commence on or around 21 June 2026 and continue for approximately three weeks, subject to operational and weather conditions.",
+   "file": "20260605_FORG_Peak-Hills-Project-Operational-Update.md"
+  },
+  {
+   "d": "2026-06-16",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "As we enter 2026, the Company is focused and positioned to execute. We retain a differentiated gasification platform with long-term exposure to the global energy transition, while adding a new portfolio of mining assets capable of delivering nearer-term operational catalysts.",
+   "file": "20260616_FORG_Full-Year-Results-for-year-ended-31-December-2025.md"
+  },
+  {
+   "d": "2026-08-28",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Our objective for the remainder of the year is clear: maintain financial discipline, continue executing our exploration programmes and deploy capital into the opportunities we believe have the potential to materially increase the underlying value of the Company for shareholders.",
+   "file": "20260828_FORG_Interim-Results.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-08-28",
+  "doc": "H1 R",
+  "file": "20260828_FORG_Interim-Results.md",
+  "vs": "FY R Jun-26 · Peak Hill assays Jul-26 (no H1 Aug-25 in record)",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "FY results: funding reset “eliminating near term refinancing and funding risk” → H1: “there can be no certainty that such funding will be secured on acceptable terms, or at all”",
+    "span": "Jun-26 → Aug-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Phase 2 now sized: “a planned total of approximately 130 shallow holes for approximately 8,700 metres of drilling over an expected 60-day campaign”",
+    "span": "Jul-26 assays gave timing only (August 2026)"
+   }
+  ]
+ }
+}

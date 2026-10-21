@@ -1,0 +1,552 @@
+{
+ "ticker": "GNIP",
+ "v": "2026-10-21.9bcd",
+ "ccy": "GBX",
+ "src": "Yahoo GNIP.L weekly",
+ "adj": [],
+ "px": [
+  [
+   "2024-10-04",
+   27.0
+  ],
+  [
+   "2024-10-11",
+   23.0
+  ],
+  [
+   "2024-10-18",
+   26.0
+  ],
+  [
+   "2024-10-25",
+   26.0
+  ],
+  [
+   "2024-11-01",
+   22.0
+  ],
+  [
+   "2024-11-08",
+   22.0
+  ],
+  [
+   "2024-11-15",
+   21.5
+  ],
+  [
+   "2024-11-22",
+   22.0
+  ],
+  [
+   "2024-11-29",
+   18.5
+  ],
+  [
+   "2024-12-06",
+   21.5
+  ],
+  [
+   "2024-12-13",
+   25.5
+  ],
+  [
+   "2024-12-20",
+   31.5
+  ],
+  [
+   "2024-12-27",
+   27.5
+  ],
+  [
+   "2025-01-03",
+   26.5
+  ],
+  [
+   "2025-01-10",
+   35.0
+  ],
+  [
+   "2025-01-17",
+   36.0
+  ],
+  [
+   "2025-01-24",
+   35.0
+  ],
+  [
+   "2025-01-31",
+   34.0
+  ],
+  [
+   "2025-02-07",
+   33.5
+  ],
+  [
+   "2025-02-14",
+   38.0
+  ],
+  [
+   "2025-02-21",
+   33.0
+  ],
+  [
+   "2025-02-28",
+   31.5
+  ],
+  [
+   "2025-03-07",
+   31.5
+  ],
+  [
+   "2025-03-14",
+   29.5
+  ],
+  [
+   "2025-03-21",
+   28.0
+  ],
+  [
+   "2025-03-28",
+   29.0
+  ],
+  [
+   "2025-04-04",
+   20.5
+  ],
+  [
+   "2025-04-11",
+   25.0
+  ],
+  [
+   "2025-04-18",
+   25.0
+  ],
+  [
+   "2025-04-25",
+   27.5
+  ],
+  [
+   "2025-05-02",
+   31.5
+  ],
+  [
+   "2025-05-09",
+   27.0
+  ],
+  [
+   "2025-05-16",
+   24.5
+  ],
+  [
+   "2025-05-23",
+   24.5
+  ],
+  [
+   "2025-05-30",
+   25.5
+  ],
+  [
+   "2025-06-06",
+   22.5
+  ],
+  [
+   "2025-06-13",
+   32.0
+  ],
+  [
+   "2025-06-20",
+   28.5
+  ],
+  [
+   "2025-06-27",
+   31.0
+  ],
+  [
+   "2025-07-04",
+   30.0
+  ],
+  [
+   "2025-07-11",
+   30.0
+  ],
+  [
+   "2025-07-18",
+   28.5
+  ],
+  [
+   "2025-07-25",
+   27.5
+  ],
+  [
+   "2025-08-01",
+   27.0
+  ],
+  [
+   "2025-08-08",
+   25.0
+  ],
+  [
+   "2025-08-15",
+   24.0
+  ],
+  [
+   "2025-08-22",
+   23.0
+  ],
+  [
+   "2025-08-29",
+   21.0
+  ],
+  [
+   "2025-09-05",
+   20.5
+  ],
+  [
+   "2025-09-12",
+   20.5
+  ],
+  [
+   "2025-09-19",
+   22.0
+  ],
+  [
+   "2025-09-26",
+   19.5
+  ],
+  [
+   "2025-10-03",
+   22.0
+  ],
+  [
+   "2025-10-10",
+   22.0
+  ],
+  [
+   "2025-10-17",
+   21.5
+  ],
+  [
+   "2025-10-24",
+   25.0
+  ],
+  [
+   "2025-10-31",
+   25.0
+  ],
+  [
+   "2025-11-07",
+   23.5
+  ],
+  [
+   "2025-11-14",
+   23.5
+  ],
+  [
+   "2025-11-21",
+   19.5
+  ],
+  [
+   "2025-11-28",
+   18.5
+  ],
+  [
+   "2025-12-05",
+   9.625
+  ],
+  [
+   "2025-12-12",
+   9.75
+  ],
+  [
+   "2025-12-19",
+   9.6
+  ],
+  [
+   "2025-12-26",
+   8.75
+  ],
+  [
+   "2026-01-02",
+   8.65
+  ],
+  [
+   "2026-01-09",
+   9.5
+  ],
+  [
+   "2026-01-16",
+   11.5
+  ],
+  [
+   "2026-01-23",
+   10.75
+  ],
+  [
+   "2026-01-30",
+   10.0
+  ],
+  [
+   "2026-02-06",
+   11.0
+  ],
+  [
+   "2026-02-13",
+   12.0
+  ],
+  [
+   "2026-02-20",
+   10.5
+  ],
+  [
+   "2026-02-27",
+   10.0
+  ],
+  [
+   "2026-03-06",
+   10.0
+  ],
+  [
+   "2026-03-13",
+   9.5
+  ],
+  [
+   "2026-03-20",
+   9.5
+  ],
+  [
+   "2026-03-27",
+   8.75
+  ],
+  [
+   "2026-04-03",
+   9.25
+  ],
+  [
+   "2026-04-10",
+   9.5
+  ],
+  [
+   "2026-04-17",
+   10.25
+  ],
+  [
+   "2026-04-24",
+   10.25
+  ],
+  [
+   "2026-05-01",
+   6.85
+  ],
+  [
+   "2026-05-08",
+   6.85
+  ],
+  [
+   "2026-05-15",
+   6.35
+  ],
+  [
+   "2026-05-22",
+   5.8
+  ],
+  [
+   "2026-05-29",
+   5.5
+  ],
+  [
+   "2026-06-05",
+   5.25
+  ],
+  [
+   "2026-06-12",
+   4.6
+  ],
+  [
+   "2026-06-19",
+   4.65
+  ],
+  [
+   "2026-06-26",
+   4.65
+  ],
+  [
+   "2026-07-03",
+   4.65
+  ],
+  [
+   "2026-07-10",
+   4.55
+  ],
+  [
+   "2026-07-17",
+   4.35
+  ],
+  [
+   "2026-07-24",
+   4.1
+  ],
+  [
+   "2026-07-31",
+   3.95
+  ],
+  [
+   "2026-08-07",
+   3.9
+  ],
+  [
+   "2026-08-14",
+   3.6
+  ],
+  [
+   "2026-08-21",
+   3.6
+  ],
+  [
+   "2026-08-28",
+   2.8
+  ],
+  [
+   "2026-09-04",
+   2.65
+  ],
+  [
+   "2026-09-11",
+   2.65
+  ],
+  [
+   "2026-09-18",
+   2.75
+  ],
+  [
+   "2026-09-25",
+   2.65
+  ],
+  [
+   "2026-10-02",
+   2.65
+  ],
+  [
+   "2026-10-09",
+   2.65
+  ],
+  [
+   "2026-10-16",
+   2.65
+  ],
+  [
+   "2026-10-21",
+   2.65
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2025-03-13",
+   "doc": "OPS",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Following the launch of an extensive marketing campaign in December 2024, the Company has received a number of promising leads and believes the conversion of its current sales pipeline will lead to a step-change in order flow and revenue generation.",
+   "file": "20250313_GNIP_Corporate-Update-&-2025-Outlook.md"
+  },
+  {
+   "d": "2025-03-31",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Already in 2025, the Company has secured orders for over 500 Invention Evaluator reports forecast to generate revenues of more than $400k, to complement the existing pipeline of orders.",
+   "file": "20250331_GNIP_Unaudited-Results-to-31-December-2024.md"
+  },
+  {
+   "d": "2025-06-04",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board remains confident that continued investment in GenIP Plc is essential to fostering long-term growth and expansion in 2025 and beyond.",
+   "file": "20250604_GNIP_Audited-Results-for-Period-Ended-31-December-2024.md"
+  },
+  {
+   "d": "2025-07-25",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "GenIP is in a robust position with clear revenue visibility going into the second half of 2025. Given the typical time lag between order receipt and revenue recognition, we expect an uplift in revenue in H2 2025.",
+   "file": "20250725_GNIP_Trading-Statement.md"
+  },
+  {
+   "d": "2025-09-30",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "While these efforts have not yet been fully reflected in our financial results, we are confident that the second half of the year will be significantly stronger as we begin to convert our order book into recognised revenues and accelerate delivery of reports.",
+   "file": "20250930_GNIP_Half-year-Report.md"
+  },
+  {
+   "d": "2025-10-06",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "While these efforts have not yet been fully reflected in our financial results, we are confident that the second half of the year will be significantly stronger as we begin to convert our order book into recognised revenues and accelerate delivery of reports.",
+   "file": "20251006_GNIP_Replacement-RNS-Half-year-Report.md"
+  },
+  {
+   "d": "2025-11-13",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 1,
+   "q": "As anticipated in our half year update, GenIP's performance has strengthened markedly in the second half. Since 30 June 2025, revenue has accelerated as the prepaid orders for AI-powered analytical assessments are delivered to clients.",
+   "file": "20251113_GNIP_Trading-Statement.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2026-08-28",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "While revenue in the first half reflects the absence of last year's exceptional order, the underlying commercial indicators are positive: a broader client base, deeper engagement with existing customers, and a materially stronger prospect pipeline than at the same point last year.",
+   "file": "20260828_GNIP_Half-year-report.md"
+  },
+  {
+   "d": "2026-09-09",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "By internalising our technology stack and reducing third-party dependencies, we expect to improve product margins while gaining greater control over our development roadmap.",
+   "file": "20260909_GNIP_Operational-update-&-investor-webinar.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-09-09",
+  "doc": "OPS",
+  "file": "20260909_GNIP_Operational-update-&-investor-webinar.md",
+  "vs": "H1 R Aug-26 · Corporate Update Jun-26 · Ops Update Dec-25 · Commercial Update Sep-25",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Target dropped",
+    "text": "SaaS platform: Jun-26 “remains on track for Q4 2026, targeting 60%+ gross margins and 90-95% automation by early 2027” → Sep-26 platform update gives no launch date and no margin or automation target, only “we expect to improve product margins”",
+    "span": "SaaS goal in Nov-25 and Jun-26 → not in Aug-26 H1 or Sep-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "Margin benefit of ending the Phosphorix agreement given only in words: “Improved margins - the Company will retain the full product margin previously shared under the Phosphorix agreement.” No fee saving quantified, against H1 “Gross margin of 6% (H1 FY25: 18%).”",
+    "span": "Aug-26 → Sep-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "“we are well positioned to scale our AI-enabled solutions more efficiently” with no cash figure, after H1 “Cash at period end of $410k.” beside “Adjusted EBITDA loss of $692k (H1 FY25: $561k).”",
+    "span": "Aug-26 → Sep-26"
+   }
+  ]
+ }
+}

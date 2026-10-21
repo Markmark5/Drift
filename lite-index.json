@@ -102,6 +102,13 @@
    "marks": 20
   },
   {
+   "ticker": "AMCO",
+   "company": "Amcomri Group PLC",
+   "chart": "lite/AMCO.json?v=2026-10-21.45e8",
+   "scored": "2026-10-21",
+   "marks": 11
+  },
+  {
    "ticker": "AMIF",
    "company": "Amicorp FS (UK) PLC",
    "chart": "lite/AMIF.json?v=2026-10-19.5fbd",
@@ -135,6 +142,13 @@
    "chart": "lite/AOM.json?v=2026-10-19.44e5",
    "scored": "2026-10-19",
    "marks": 45
+  },
+  {
+   "ticker": "APN",
+   "company": "Applied Nutrition PLC",
+   "chart": "lite/APN.json?v=2026-10-21.4b87",
+   "scored": "2026-10-21",
+   "marks": 10
   },
   {
    "ticker": "APTA",
@@ -212,6 +226,13 @@
    "chart": "lite/BAG.json?v=2026-10-19.4848",
    "scored": "2026-10-19",
    "marks": 22
+  },
+  {
+   "ticker": "BBSN",
+   "company": "Brave Bison Group PLC",
+   "chart": "lite/BBSN.json?v=2026-10-21.8bd1",
+   "scored": "2026-10-21",
+   "marks": 27
   },
   {
    "ticker": "BGO",
@@ -324,6 +345,13 @@
    "chart": "lite/BTRW.json?v=2026-10-20.6750",
    "scored": "2026-10-20",
    "marks": 12
+  },
+  {
+   "ticker": "BVC",
+   "company": "BATM Advanced Communications Ltd",
+   "chart": "lite/BVC.json?v=2026-10-21.02a8",
+   "scored": "2026-10-21",
+   "marks": 13
   },
   {
    "ticker": "BWY",
@@ -508,6 +536,13 @@
    "marks": 25
   },
   {
+   "ticker": "CSN",
+   "company": "Chesnara plc · Life Insurance",
+   "chart": "lite/CSN.json?v=2026-10-21.76f9",
+   "scored": "2026-10-21",
+   "marks": 10
+  },
+  {
    "ticker": "CTA",
    "company": "CT Automotive Group PLC",
    "chart": "lite/CTA.json?v=2026-10-20.ff0a",
@@ -613,6 +648,13 @@
    "marks": 20
   },
   {
+   "ticker": "EMR",
+   "company": "Empresaria Group PLC",
+   "chart": "lite/EMR.json?v=2026-10-21.32e2",
+   "scored": "2026-10-21",
+   "marks": 27
+  },
+  {
    "ticker": "ENSI",
    "company": "EnSilica plc",
    "chart": "lite/ENSI.json?v=2026-10-19.4362",
@@ -676,6 +718,14 @@
    "marks": 26
   },
   {
+   "ticker": "FORG",
+   "company": "Forgent PLC (fmly EQTEC)",
+   "chart": "lite/FORG.json?v=2026-10-21.fd56",
+   "scored": "2026-10-21",
+   "marks": 3,
+   "src": "snapshots"
+  },
+  {
    "ticker": "FRP",
    "company": "FRP Advisory Group PLC",
    "chart": "lite/FRP.json?v=2026-10-20.5b0b",
@@ -730,6 +780,13 @@
    "chart": "lite/GBG.json?v=2026-10-20.6055",
    "scored": "2026-10-20",
    "marks": 31
+  },
+  {
+   "ticker": "GDWN",
+   "company": "Goodwin PLC",
+   "chart": "lite/GDWN.json?v=2026-10-21.9599",
+   "scored": "2026-10-21",
+   "marks": 18
   },
   {
    "ticker": "GEM",
@@ -809,11 +866,25 @@
    "marks": 7
   },
   {
+   "ticker": "GNIP",
+   "company": "GenIP PLC",
+   "chart": "lite/GNIP.json?v=2026-10-21.9bcd",
+   "scored": "2026-10-21",
+   "marks": 9
+  },
+  {
    "ticker": "GTC",
    "company": "GETECH Group PLC",
    "chart": "lite/GTC.json?v=2026-10-20.1c33",
    "scored": "2026-10-20",
    "marks": 20
+  },
+  {
+   "ticker": "HAS",
+   "company": "Hays PLC",
+   "chart": "lite/HAS.json?v=2026-10-21.b2ae",
+   "scored": "2026-10-21",
+   "marks": 30
   },
   {
    "ticker": "HDD",
@@ -855,6 +926,13 @@
    "company": "Hostelworld Group PLC",
    "chart": "lite/HSW.json?v=2026-10-19.fdea",
    "scored": "2026-10-19",
+   "marks": 32
+  },
+  {
+   "ticker": "HTG",
+   "company": "Hunting PLC",
+   "chart": "lite/HTG.json?v=2026-10-21.8850",
+   "scored": "2026-10-21",
    "marks": 32
   },
   {
@@ -1026,6 +1104,13 @@
    "marks": 23
   },
   {
+   "ticker": "KNOS",
+   "company": "Kainos Group PLC",
+   "chart": "lite/KNOS.json?v=2026-10-21.c7f4",
+   "scored": "2026-10-21",
+   "marks": 22
+  },
+  {
    "ticker": "KOO",
    "company": "Kooth PLC",
    "chart": "lite/KOO.json?v=2026-10-20.75ea",
@@ -1068,6 +1153,13 @@
    "marks": 28
   },
   {
+   "ticker": "MACF",
+   "company": "Macfarlane Group PLC",
+   "chart": "lite/MACF.json?v=2026-10-21.6e06",
+   "scored": "2026-10-21",
+   "marks": 22
+  },
+  {
    "ticker": "MAI",
    "company": "Maintel Holdings PLC",
    "chart": "lite/MAI.json?v=2026-10-19.892e",
@@ -1081,6 +1173,13 @@
    "chart": "lite/MARS.json?v=2026-10-19.5308",
    "scored": "2026-10-19",
    "marks": 28
+  },
+  {
+   "ticker": "MBH",
+   "company": "Michelmersh Brick Holdings PLC",
+   "chart": "lite/MBH.json?v=2026-10-21.f743",
+   "scored": "2026-10-21",
+   "marks": 21
   },
   {
    "ticker": "MCB",
@@ -1189,6 +1288,13 @@
    "chart": "lite/MUL.json?v=2026-10-19.993c",
    "scored": "2026-10-19",
    "marks": 20
+  },
+  {
+   "ticker": "MWE",
+   "company": "MTI Wireless Edge Ltd",
+   "chart": "lite/MWE.json?v=2026-10-21.ab13",
+   "scored": "2026-10-21",
+   "marks": 21
   },
   {
    "ticker": "NAH",
@@ -1308,6 +1414,13 @@
    "chart": "lite/PEEL.json?v=2026-10-19.af27",
    "scored": "2026-10-19",
    "marks": 28
+  },
+  {
+   "ticker": "PEN",
+   "company": "Pennant International Group PLC",
+   "chart": "lite/PEN.json?v=2026-10-21.1ef9",
+   "scored": "2026-10-21",
+   "marks": 23
   },
   {
    "ticker": "PGH",
@@ -1476,6 +1589,13 @@
    "chart": "lite/RWA.json?v=2026-10-18.e348",
    "scored": "2026-10-18",
    "marks": 32
+  },
+  {
+   "ticker": "S32",
+   "company": "South32 Ltd",
+   "chart": "lite/S32.json?v=2026-10-21.1a03",
+   "scored": "2026-10-21",
+   "marks": 46
   },
   {
    "ticker": "SAAS",
@@ -1775,6 +1895,13 @@
    "marks": 22
   },
   {
+   "ticker": "TRCS",
+   "company": "Tracsis PLC",
+   "chart": "lite/TRCS.json?v=2026-10-21.04d8",
+   "scored": "2026-10-21",
+   "marks": 23
+  },
+  {
    "ticker": "TRI",
    "company": "Trifast PLC",
    "chart": "lite/TRI.json?v=2026-10-20.d431",
@@ -1836,6 +1963,13 @@
    "chart": "lite/TUNE.json?v=2026-10-20.32ff",
    "scored": "2026-10-20",
    "marks": 26
+  },
+  {
+   "ticker": "ULTP",
+   "company": "Ultimate Products PLC",
+   "chart": "lite/ULTP.json?v=2026-10-21.6899",
+   "scored": "2026-10-21",
+   "marks": 25
   },
   {
    "ticker": "UU.",
@@ -1920,6 +2054,13 @@
    "chart": "lite/WIX.json?v=2026-10-20.91ab",
    "scored": "2026-10-20",
    "marks": 32
+  },
+  {
+   "ticker": "WJG",
+   "company": "Watkin Jones PLC",
+   "chart": "lite/WJG.json?v=2026-10-21.a353",
+   "scored": "2026-10-21",
+   "marks": 23
   },
   {
    "ticker": "WOSG",
