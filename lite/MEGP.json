@@ -1,12 +1,920 @@
 {
  "ticker": "MEGP",
- "v": "2026-10-21.d7db",
+ "v": "2026-10-21.194d",
  "ccy": "GBX",
- "src": "ShareScope weekly snapshots",
+ "src": "Yahoo MEGP.L weekly",
  "adj": [],
  "px": [
   [
-   "2026-03-03",
+   "2021-10-22",
+   66.2
+  ],
+  [
+   "2021-10-29",
+   66.2
+  ],
+  [
+   "2021-11-05",
+   66.2
+  ],
+  [
+   "2021-11-12",
+   59.4
+  ],
+  [
+   "2021-11-19",
+   61.4
+  ],
+  [
+   "2021-11-26",
+   56.3
+  ],
+  [
+   "2021-12-03",
+   58.0
+  ],
+  [
+   "2021-12-10",
+   64.6
+  ],
+  [
+   "2021-12-17",
+   62.2
+  ],
+  [
+   "2021-12-24",
+   61.8
+  ],
+  [
+   "2021-12-31",
+   63.0
+  ],
+  [
+   "2022-01-07",
+   67.0
+  ],
+  [
+   "2022-01-14",
+   66.5
+  ],
+  [
+   "2022-01-21",
+   76.0
+  ],
+  [
+   "2022-01-28",
+   74.8
+  ],
+  [
+   "2022-02-04",
+   74.7
+  ],
+  [
+   "2022-02-11",
+   76.0
+  ],
+  [
+   "2022-02-18",
+   74.6
+  ],
+  [
+   "2022-02-25",
+   73.0
+  ],
+  [
+   "2022-03-04",
+   70.7
+  ],
+  [
+   "2022-03-11",
+   62.0
+  ],
+  [
+   "2022-03-18",
+   64.2
+  ],
+  [
+   "2022-03-25",
+   73.4
+  ],
+  [
+   "2022-04-01",
+   72.6
+  ],
+  [
+   "2022-04-08",
+   72.0
+  ],
+  [
+   "2022-04-15",
+   71.0
+  ],
+  [
+   "2022-04-22",
+   70.4
+  ],
+  [
+   "2022-04-29",
+   71.4
+  ],
+  [
+   "2022-05-06",
+   69.4
+  ],
+  [
+   "2022-05-13",
+   66.4
+  ],
+  [
+   "2022-05-20",
+   69.8
+  ],
+  [
+   "2022-05-27",
+   69.4
+  ],
+  [
+   "2022-06-03",
+   69.6
+  ],
+  [
+   "2022-06-10",
+   81.8
+  ],
+  [
+   "2022-06-17",
+   78.8
+  ],
+  [
+   "2022-06-24",
+   75.0
+  ],
+  [
+   "2022-07-01",
+   75.8
+  ],
+  [
+   "2022-07-08",
+   75.0
+  ],
+  [
+   "2022-07-15",
+   77.2
+  ],
+  [
+   "2022-07-22",
+   98.2
+  ],
+  [
+   "2022-07-29",
+   102.0
+  ],
+  [
+   "2022-08-05",
+   110.5
+  ],
+  [
+   "2022-08-12",
+   104.5
+  ],
+  [
+   "2022-08-19",
+   98.6
+  ],
+  [
+   "2022-08-26",
+   94.0
+  ],
+  [
+   "2022-09-02",
+   88.4
+  ],
+  [
+   "2022-09-09",
+   87.2
+  ],
+  [
+   "2022-09-16",
+   92.0
+  ],
+  [
+   "2022-09-23",
+   86.0
+  ],
+  [
+   "2022-09-30",
+   85.0
+  ],
+  [
+   "2022-10-07",
+   84.2
+  ],
+  [
+   "2022-10-14",
+   84.0
+  ],
+  [
+   "2022-10-21",
+   83.8
+  ],
+  [
+   "2022-10-28",
+   93.2
+  ],
+  [
+   "2022-11-04",
+   93.4
+  ],
+  [
+   "2022-11-11",
+   94.8
+  ],
+  [
+   "2022-11-18",
+   106.0
+  ],
+  [
+   "2022-11-25",
+   105.0
+  ],
+  [
+   "2022-12-02",
+   104.5
+  ],
+  [
+   "2022-12-09",
+   111.0
+  ],
+  [
+   "2022-12-16",
+   114.0
+  ],
+  [
+   "2022-12-23",
+   113.0
+  ],
+  [
+   "2022-12-30",
+   115.0
+  ],
+  [
+   "2023-01-06",
+   114.0
+  ],
+  [
+   "2023-01-13",
+   125.0
+  ],
+  [
+   "2023-01-20",
+   124.5
+  ],
+  [
+   "2023-01-27",
+   131.5
+  ],
+  [
+   "2023-02-03",
+   129.0
+  ],
+  [
+   "2023-02-10",
+   132.0
+  ],
+  [
+   "2023-02-17",
+   136.0
+  ],
+  [
+   "2023-02-24",
+   123.0
+  ],
+  [
+   "2023-03-03",
+   141.5
+  ],
+  [
+   "2023-03-10",
+   129.5
+  ],
+  [
+   "2023-03-17",
+   123.0
+  ],
+  [
+   "2023-03-24",
+   125.5
+  ],
+  [
+   "2023-03-31",
+   125.5
+  ],
+  [
+   "2023-04-07",
+   128.0
+  ],
+  [
+   "2023-04-14",
+   132.8
+  ],
+  [
+   "2023-04-21",
+   131.2
+  ],
+  [
+   "2023-04-28",
+   128.6
+  ],
+  [
+   "2023-05-05",
+   128.8
+  ],
+  [
+   "2023-05-12",
+   137.0
+  ],
+  [
+   "2023-05-19",
+   133.8
+  ],
+  [
+   "2023-05-26",
+   137.4
+  ],
+  [
+   "2023-06-02",
+   150.8
+  ],
+  [
+   "2023-06-09",
+   159.8
+  ],
+  [
+   "2023-06-16",
+   171.0
+  ],
+  [
+   "2023-06-23",
+   169.0
+  ],
+  [
+   "2023-06-30",
+   163.6
+  ],
+  [
+   "2023-07-07",
+   163.6
+  ],
+  [
+   "2023-07-14",
+   169.4
+  ],
+  [
+   "2023-07-21",
+   156.2
+  ],
+  [
+   "2023-07-28",
+   159.4
+  ],
+  [
+   "2023-08-04",
+   157.2
+  ],
+  [
+   "2023-08-11",
+   164.0
+  ],
+  [
+   "2023-08-18",
+   154.4
+  ],
+  [
+   "2023-08-25",
+   155.6
+  ],
+  [
+   "2023-09-01",
+   162.0
+  ],
+  [
+   "2023-09-08",
+   157.0
+  ],
+  [
+   "2023-09-15",
+   159.2
+  ],
+  [
+   "2023-09-22",
+   159.8
+  ],
+  [
+   "2023-09-29",
+   157.8
+  ],
+  [
+   "2023-10-06",
+   146.2
+  ],
+  [
+   "2023-10-13",
+   151.0
+  ],
+  [
+   "2023-10-20",
+   137.6
+  ],
+  [
+   "2023-10-27",
+   141.0
+  ],
+  [
+   "2023-11-03",
+   147.8
+  ],
+  [
+   "2023-11-10",
+   140.8
+  ],
+  [
+   "2023-11-17",
+   137.8
+  ],
+  [
+   "2023-11-24",
+   134.0
+  ],
+  [
+   "2023-12-01",
+   130.0
+  ],
+  [
+   "2023-12-08",
+   128.4
+  ],
+  [
+   "2023-12-15",
+   127.0
+  ],
+  [
+   "2023-12-22",
+   127.0
+  ],
+  [
+   "2023-12-29",
+   125.0
+  ],
+  [
+   "2024-01-05",
+   126.8
+  ],
+  [
+   "2024-01-12",
+   125.2
+  ],
+  [
+   "2024-01-19",
+   122.2
+  ],
+  [
+   "2024-01-26",
+   125.8
+  ],
+  [
+   "2024-02-02",
+   125.8
+  ],
+  [
+   "2024-02-09",
+   136.6
+  ],
+  [
+   "2024-02-16",
+   131.8
+  ],
+  [
+   "2024-02-23",
+   153.0
+  ],
+  [
+   "2024-03-01",
+   167.0
+  ],
+  [
+   "2024-03-08",
+   165.0
+  ],
+  [
+   "2024-03-15",
+   169.6
+  ],
+  [
+   "2024-03-22",
+   172.2
+  ],
+  [
+   "2024-03-29",
+   166.4
+  ],
+  [
+   "2024-04-05",
+   167.8
+  ],
+  [
+   "2024-04-12",
+   170.4
+  ],
+  [
+   "2024-04-19",
+   167.6
+  ],
+  [
+   "2024-04-26",
+   162.8
+  ],
+  [
+   "2024-05-03",
+   156.0
+  ],
+  [
+   "2024-05-10",
+   164.2
+  ],
+  [
+   "2024-05-17",
+   166.8
+  ],
+  [
+   "2024-05-24",
+   165.8
+  ],
+  [
+   "2024-05-31",
+   182.8
+  ],
+  [
+   "2024-06-07",
+   170.4
+  ],
+  [
+   "2024-06-14",
+   166.6
+  ],
+  [
+   "2024-06-21",
+   169.8
+  ],
+  [
+   "2024-06-28",
+   171.2
+  ],
+  [
+   "2024-07-05",
+   174.2
+  ],
+  [
+   "2024-07-12",
+   181.8
+  ],
+  [
+   "2024-07-19",
+   184.0
+  ],
+  [
+   "2024-07-26",
+   185.4
+  ],
+  [
+   "2024-08-02",
+   188.4
+  ],
+  [
+   "2024-08-09",
+   193.8
+  ],
+  [
+   "2024-08-16",
+   195.0
+  ],
+  [
+   "2024-08-23",
+   191.0
+  ],
+  [
+   "2024-08-30",
+   194.0
+  ],
+  [
+   "2024-09-06",
+   186.4
+  ],
+  [
+   "2024-09-13",
+   189.0
+  ],
+  [
+   "2024-09-20",
+   190.6
+  ],
+  [
+   "2024-09-27",
+   197.4
+  ],
+  [
+   "2024-10-04",
+   196.0
+  ],
+  [
+   "2024-10-11",
+   196.2
+  ],
+  [
+   "2024-10-18",
+   211.5
+  ],
+  [
+   "2024-10-25",
+   212.5
+  ],
+  [
+   "2024-11-01",
+   218.0
+  ],
+  [
+   "2024-11-08",
+   227.0
+  ],
+  [
+   "2024-11-15",
+   220.0
+  ],
+  [
+   "2024-11-22",
+   215.5
+  ],
+  [
+   "2024-11-29",
+   219.0
+  ],
+  [
+   "2024-12-06",
+   216.0
+  ],
+  [
+   "2024-12-13",
+   213.5
+  ],
+  [
+   "2024-12-20",
+   208.5
+  ],
+  [
+   "2024-12-27",
+   208.5
+  ],
+  [
+   "2025-01-03",
+   211.5
+  ],
+  [
+   "2025-01-10",
+   189.8
+  ],
+  [
+   "2025-01-17",
+   201.5
+  ],
+  [
+   "2025-01-24",
+   207.0
+  ],
+  [
+   "2025-01-31",
+   214.0
+  ],
+  [
+   "2025-02-07",
+   218.5
+  ],
+  [
+   "2025-02-14",
+   228.5
+  ],
+  [
+   "2025-02-21",
+   222.0
+  ],
+  [
+   "2025-02-28",
+   192.2
+  ],
+  [
+   "2025-03-07",
+   197.8
+  ],
+  [
+   "2025-03-14",
+   193.2
+  ],
+  [
+   "2025-03-21",
+   185.2
+  ],
+  [
+   "2025-03-28",
+   193.0
+  ],
+  [
+   "2025-04-04",
+   179.4
+  ],
+  [
+   "2025-04-11",
+   178.4
+  ],
+  [
+   "2025-04-18",
+   195.0
+  ],
+  [
+   "2025-04-25",
+   190.4
+  ],
+  [
+   "2025-05-02",
+   206.0
+  ],
+  [
+   "2025-05-09",
+   215.5
+  ],
+  [
+   "2025-05-16",
+   208.5
+  ],
+  [
+   "2025-05-23",
+   212.5
+  ],
+  [
+   "2025-05-30",
+   214.5
+  ],
+  [
+   "2025-06-06",
+   211.0
+  ],
+  [
+   "2025-06-13",
+   209.0
+  ],
+  [
+   "2025-06-20",
+   228.5
+  ],
+  [
+   "2025-06-27",
+   229.0
+  ],
+  [
+   "2025-07-04",
+   224.0
+  ],
+  [
+   "2025-07-11",
+   220.0
+  ],
+  [
+   "2025-07-18",
+   217.0
+  ],
+  [
+   "2025-07-25",
+   220.5
+  ],
+  [
+   "2025-08-01",
+   217.5
+  ],
+  [
+   "2025-08-08",
+   216.5
+  ],
+  [
+   "2025-08-15",
+   212.0
+  ],
+  [
+   "2025-08-22",
+   205.0
+  ],
+  [
+   "2025-08-29",
+   200.0
+  ],
+  [
+   "2025-09-05",
+   192.6
+  ],
+  [
+   "2025-09-12",
+   190.8
+  ],
+  [
+   "2025-09-19",
+   188.6
+  ],
+  [
+   "2025-09-26",
+   185.2
+  ],
+  [
+   "2025-10-03",
+   184.4
+  ],
+  [
+   "2025-10-10",
+   182.8
+  ],
+  [
+   "2025-10-17",
+   182.2
+  ],
+  [
+   "2025-10-24",
+   189.8
+  ],
+  [
+   "2025-10-31",
+   188.4
+  ],
+  [
+   "2025-11-07",
+   175.0
+  ],
+  [
+   "2025-11-14",
+   154.0
+  ],
+  [
+   "2025-11-21",
+   155.8
+  ],
+  [
+   "2025-11-28",
+   163.0
+  ],
+  [
+   "2025-12-05",
+   159.4
+  ],
+  [
+   "2025-12-12",
+   158.6
+  ],
+  [
+   "2025-12-19",
+   155.8
+  ],
+  [
+   "2025-12-26",
+   151.0
+  ],
+  [
+   "2026-01-02",
+   146.2
+  ],
+  [
+   "2026-01-09",
+   148.6
+  ],
+  [
+   "2026-01-16",
+   139.8
+  ],
+  [
+   "2026-01-23",
+   139.4
+  ],
+  [
+   "2026-01-30",
+   138.6
+  ],
+  [
+   "2026-02-06",
+   136.6
+  ],
+  [
+   "2026-02-13",
+   144.0
+  ],
+  [
+   "2026-02-20",
+   144.0
+  ],
+  [
+   "2026-02-27",
    136.6
   ],
   [
@@ -23,7 +931,7 @@
   ],
   [
    "2026-03-27",
-   136.4
+   130.0
   ],
   [
    "2026-04-03",
@@ -35,83 +943,87 @@
   ],
   [
    "2026-04-17",
-   150.4
+   152.8
   ],
   [
    "2026-04-24",
-   147.0
+   149.2
+  ],
+  [
+   "2026-05-01",
+   146.0
   ],
   [
    "2026-05-08",
-   137.8
+   137.2
   ],
   [
    "2026-05-15",
-   144.2
+   142.6
   ],
   [
    "2026-05-22",
-   142.4
+   145.8
   ],
   [
-   "2026-06-02",
-   107.8
+   "2026-05-29",
+   147.0
   ],
   [
    "2026-06-05",
-   100.4
+   104.8
   ],
   [
    "2026-06-12",
-   111.8
+   109.6
   ],
   [
    "2026-06-19",
-   109.4
+   107.0
   ],
   [
    "2026-06-26",
-   103.4
+   105.8
   ],
   [
    "2026-07-03",
-   103.2
+   105.2
   ],
   [
    "2026-07-10",
-   102.8
+   103.4
   ],
   [
    "2026-07-17",
-   115.8
+   115.4
   ],
   [
    "2026-07-24",
-   105.4
+   106.2
   ],
   [
    "2026-07-31",
-   111.6
+   110.8
   ],
   [
    "2026-08-07",
-   120.2
+   122.2
   ],
   [
    "2026-08-14",
-   118.4
+   118.8
   ],
   [
    "2026-08-21",
-   118.2
+   121.0
   ],
   [
    "2026-08-28",
-   128.0
+   129.8
   ],
   [
-   "2026-09-07",
-   126.2
+   "2026-09-04",
+   124.4
   ],
   [
    "2026-09-11",
@@ -123,25 +1035,210 @@
   ],
   [
    "2026-09-25",
-   114.4
+   116.2
   ],
   [
    "2026-10-02",
-   119.0
+   117.8
   ],
   [
    "2026-10-09",
-   111.8
+   112.8
   ],
   [
    "2026-10-16",
-   117.6
+   121.4
+  ],
+  [
+   "2026-10-21",
+   113.4
   ]
  ],
  "marks": [
   {
-   "d": "2026-03-12",
+   "d": "2021-12-10",
    "doc": "YE-TU",
+   "fy": "FY21",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Consequently, the Board expects that revenue will be slightly ahead of previous expectations of approximately £210 million, and profit before tax (before exceptional items) will come in towards the upper end of previous expectations of between £25 million and £30 million, subject to completion of the FY21 audit process.",
+   "file": "20211210_MEGP_Trading-Update.md"
+  },
+  {
+   "d": "2022-02-09",
+   "doc": "Q1 TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 2,
+   "q": "The Board therefore now considers it likely that the Group's performance for the year ending 31 October 2022 will exceed its previous expectations, assuming COVID-19 related restrictions are not reimposed.",
+   "file": "20220209_MEGP_Trading-Update-&-Update-re-Annual-Results.md"
+  },
+  {
+   "d": "2022-03-21",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board believes that the Group's recovery to date demonstrates its resilience and the benefits of its strategic activities, which gives us further confidence that our financial performance will return closer to pre-pandemic levels as the pandemic subsides.",
+   "file": "20220321_MEGP_Annual-Results.md"
+  },
+  {
+   "d": "2022-06-07",
+   "doc": "H1 TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 2,
+   "q": "The Board therefore believes that the Group's performance for the year ending 31 October 2022 will show revenue up at least +20% over FY 2021 and adjusted PBT in the range of £47 million to £50 million, assuming that Covid-19 or other social restrictions are not re-imposed in our key markets.",
+   "file": "20220607_MEGP_Trading-Update.md"
+  },
+  {
+   "d": "2022-07-19",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "As previously announced, the Board believes that following the strong first half the Group's performance for the year ending 31 October 2022 will show revenue growth of not less than 20% compared with FY 2021 whilst EBITDA is now expected to be in the range of £79 to £84 million and adjusted profit before tax is expected to be in the range of £47 million to £50 million, assuming that Covid-19 or other social restrictions are not re-imposed in our key markets.",
+   "file": "20220719_MEGP_Interim-Results.md"
+  },
+  {
+   "d": "2022-11-14",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 2,
+   "q": "As a consequence of the trading momentum, the Board now expects its FY22 financial performance to be ahead of its previously revised expectations.",
+   "file": "20221114_MEGP_Trading-Update.md"
+  },
+  {
+   "d": "2023-03-01",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 1,
+   "q": "For the 2023 financial year, the Board expects the Group to achieve revenue between £280 and £300 million, EBITDA between £95 and £105 million and profit before tax between £61 and 65 million.",
+   "file": "20230301_MEGP_Audited-Annual-Results.md"
+  },
+  {
+   "d": "2023-06-01",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 1,
+   "q": "As a consequence of this strong trading performance in H1 2023, the Board is pleased to increase its outlook for the current financial year, ahead of previous expectations, with revenue between £300 million and £320 million, EBITDA between £100 million and £110 million and profit before tax between £64 million and £67 million.",
+   "file": "20230601_MEGP_Trading-Update.md"
+  },
+  {
+   "d": "2023-07-12",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Notwithstanding any major changes to the macroeconomic backdrop, the Board expects the Group to achieve its FY 2023 expectations, as updated in the Trading Update issued on 1 June 2023, of revenue between £300 million and £320 million, EBITDA between £100 million and £110 million and profit before tax between £64 million and £67 million.",
+   "file": "20230712_MEGP_Interim-Results.md"
+  },
+  {
+   "d": "2023-11-30",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 0,
+   "q": "Profit Before Tax is expected to be towards the top end of the previous guided range1 and no less than £67 million.",
+   "file": "20231130_MEGP_Year-End-Trading-Update.md"
+  },
+  {
+   "d": "2024-02-22",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "The Board expects the Group to achieve continued revenue and earnings growth in the financial year ahead, building on the success of FY 2023, subject to any major changes to the macroeconomic environment.",
+   "file": "20240222_MEGP_Preliminary-Results.md"
+  },
+  {
+   "d": "2024-06-10",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "As the Group capitalises on the significant market opportunity for laundry and photobooth services, the Board is confident in delivering record profitability for the year, in line with market expectations.",
+   "file": "20240610_MEGP_Trading-Update.md"
+  },
+  {
+   "d": "2024-07-15",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "H2 2024 has started strongly and the Group continues to see positive trading momentum across its operations. As a result, the Board remains confident that it will deliver another year of record profitability in FY 2024, in line with current market expectations.",
+   "file": "20240715_MEGP_Interim-Results.md"
+  },
+  {
+   "d": "2024-07-15",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is pleased with how H2 has started and the Group is on track to deliver a record number of new Revolution machine installations in H2 2024, giving the Board continued confidence the Group will deliver record profitability for the year, in line with current market expectations.",
+   "file": "20240715_MEGP_Interim-Results---Replacement.md"
+  },
+  {
+   "d": "2024-12-04",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "As a result, the Board expects to report that FY 2024 will be another year of record profit and financial performance in line with the Board's expectations.",
+   "file": "20241204_MEGP_Year-end-Trading-Update.md"
+  },
+  {
+   "d": "2025-02-24",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "In FY 2025, we anticipate installing a total of 1,200 net Revolution laundry machines across our target geographies and expect to install 3,200 next-generation photobooths. As a result, the Board anticipates profit before tax to be between £76 million and £80 million.",
+   "file": "20250224_MEGP_Annual-Results-and-Publication-of-Annual-Report.md"
+  },
+  {
+   "d": "2025-06-02",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Historically, the Group's performance is second-half weighted, and the Board continues to anticipate FY 2025 profit before tax will be between £76 million and £80 million.",
+   "file": "20250602_MEGP_Trading-Update.md"
+  },
+  {
+   "d": "2025-07-22",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Historically, the Group's performance is second-half weighted, and the Board continues to expect that FY 2025 profit before tax will be between £76 million and £80 million.",
+   "file": "20250722_MEGP_Interim-Results.md"
+  },
+  {
+   "d": "2025-11-07",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -1,
+   "q": "The Group expects to report another year of record profitability with profit before tax of between £76 million and £79 million1.",
+   "file": "20251107_MEGP_Year-end-Trading-Update.md",
+   "gnote": "discounted: offer period"
+  },
+  {
+   "d": "2026-02-25",
+   "doc": "Q1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "In respect of the year ending 31 October 2026 (\"FY26\"), the Company confirms that the year-to-date performance is in line with expectations.",
+   "file": "20260225_MEGP_Delay-in-FY25-Audited-Financial-Statements.md"
+  },
+  {
+   "d": "2026-03-12",
+   "doc": "Q1 TU",
    "fy": "FY26",
    "g": "flat",
    "s": 0,
@@ -153,7 +1250,7 @@
    "doc": "FY R",
    "fy": "FY26",
    "g": "flat",
-   "s": 0,
+   "s": -1,
    "q": "In respect of the year ending 31 October 2026, the Company confirms that the year-to-date performance is in line with expectations.",
    "file": "20260323_MEGP_2025-Annual-Results.md"
   },
@@ -172,16 +1269,41 @@
    "fy": "FY26",
    "g": "flat",
    "s": 0,
-   "q": "While mindful of the macro and geopolitical environment, the Group remains on track to meet revised FY 2026 expectations for profit before tax to be in the range of £69 million to £74 million.",
+   "q": "While mindful of geopolitical factors which may lead to a softening of trading patterns, ME Group remains on track to meet revised full year expectations and for FY 2026 profit before tax to be in the range of £69 million to £74 million.",
    "file": "20260713_MEGP_2026-Interim-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-04",
-  "doc": "OPS",
-  "file": "20260804_MEGP_Admission-to-Trading.md",
-  "vs": "Admission notice · H1 R Jul-26",
-  "lines": []
+  "rns": "2026-07-13",
+  "doc": "H1 R",
+  "file": "20260713_MEGP_2026-Interim-Results.md",
+  "vs": "H1 R Jul-25 · back to Jul-24 · H1 TU Jun-26, FY R Mar-26",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Last year: “remains on track to deliver FY 2025 profit performance in line with expectations, with another year of record profitability” → this year “revised full year expectations”, FY26 PBT £69m–£74m vs FY25 £78.2m; no record-profit claim",
+    "span": "Record-year claim at H1 R Jul-24 and Jul-25 → dropped after the Jun-26 cut"
+   },
+   {
+    "sev": "amber",
+    "type": "Restated",
+    "text": "H1 R Jul-25 reported “gross cash of £74.9 million and net cash2 of £36.2 million” → now restated: “The net cash balance was £20.1 million lower at £7.5 million (H1 2025: £27.6 million).”",
+    "span": "Follows restated FY24 cash figures in FY R Mar-26 (audit delay)"
+   },
+   {
+    "sev": "amber",
+    "type": "Target dropped",
+    "text": "FY R Mar-26: “The Group continues to target the installation of 8,000 next-generation photobooths, cumulatively, by the end of the financial year 2027” → H1 R gives only 818 installed in France in H1, no target",
+    "span": "Next-gen photobooth target in highlights at H1 R Jul-25 (3,200 in 2025) and FY R Feb-25, Mar-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "“The Group's predictable revenue streams and highly cash-generative business model support our long-term growth strategy” beside “the Group's cash generated from operations reduced by 18.9% to £38.7 million” and net cash £7.5m; interim dividend cut 6.5% to 3.60p",
+    "span": "H1 R Jul-26 vs Jul-25"
+   }
+  ]
  }
 }
