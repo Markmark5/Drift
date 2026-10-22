@@ -1,6 +1,6 @@
 {
  "ticker": "PSON",
- "v": "2026-10-21.d5b1",
+ "v": "2026-10-22.f27e",
  "ccy": "GBX",
  "src": "Yahoo PSON.L weekly",
  "adj": [],
@@ -1297,32 +1297,35 @@
    "s": 0,
    "q": "Reiterating 2026 guidance: mid-single digit underlying revenue growth, adjusted operating profit of £640m-£685m at FX rates as at the end of 2025 (£:$ 1.35), and free cash flow conversion5 of 90%-100%.",
    "file": "20260731_PSON_Pearson-2026-Interim-Results.md"
+  },
+  {
+   "d": "2026-10-22",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "On track to deliver 2026 guidance of mid-single digit underlying revenue growth with a narrowed adjusted operating profit range of £650m-£675m (previously £640m-£685m), at FX rates as at the end of 2025 (£:$ 1.35).",
+   "file": "20261022_PSON_Pearson-2026-Nine-Month-Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-31",
-  "doc": "H1 R",
-  "file": "20260731_PSON_Pearson-2026-Interim-Results.md",
-  "vs": "H1 R Aug-25 · Q1 TU May-26 · back to H1 R Jul-24",
+  "rns": "2026-10-22",
+  "doc": "Q3 TU",
+  "file": "20261022_PSON_Pearson-2026-Nine-Month-Trading-Update.md",
+  "vs": "Q3 TU Oct-25 · H1 R Jul-26 · Q1 TU May-26 · FY R Feb-26",
   "lines": [
    {
     "sev": "red",
-    "type": "Target dropped",
-    "text": "English Language Learning guide, Q1-26: “Higher growth than 2025 driven by market share gains and pricing, with PTE returning to growth.” → H1-26: “PTE is expected to decline given the challenging market backdrop.” with the unit only returning to growth in Q4",
-    "span": "Changed within 3 months; Group guide of £640m-£685m unchanged"
-   },
-   {
-    "sev": "amber",
-    "type": "Number to words",
-    "text": "Enterprise Learning & Skills guide, H1-25: “Sales to grow high single digit” → H1-26 “Growth to be driven by a solid performance in Vocational Qualifications and strategic account growth in Enterprise Solutions”, no growth rate",
-    "span": "Wording set at FY R Feb-26, repeated at Q1-26 and H1-26"
+    "type": "Anchor softened",
+    "text": "Higher Education guide: “Will grow more than 2025, supported by continued product and platform innovation, pricing and Inclusive Access in our core US courseware business, with improvement in the K12 channel.” → now “We continue to expect Higher Education to grow in 2026.”, with K12 “reflecting delayed adoptions and funding pressures”",
+    "span": "Given at Feb-26, May-26, Jul-26 → dropped Oct-26"
    },
    {
     "sev": "grey",
-    "type": "Went quiet",
-    "text": "US digital subscriptions growth: H1-25 “growth in Inclusive Access of 21% and US digital subscriptions of 3%”, Q1-26 “2% in US digital subscriptions” → H1-26 gives Inclusive Access growth only, no digital subscriptions figure",
-    "span": "Given at H1-24, H1-25, Q1-26 → first gap"
+    "type": "New caution",
+    "text": "New restructuring charge: “one-off reorganisation costs of c.£50m in total across FY26 and FY27, which will be excluded from adjusted operating profit”",
+    "span": "First flagged Oct-26 with re-segmentation"
    }
   ]
  }

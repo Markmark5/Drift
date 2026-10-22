@@ -1,6 +1,6 @@
 {
  "ticker": "BMY",
- "v": "2026-10-21.93a5",
+ "v": "2026-10-22.2b53",
  "ccy": "GBX",
  "src": "Yahoo BMY.L weekly",
  "adj": [],
@@ -1261,14 +1261,47 @@
    "s": 0,
    "q": "The Board remains confident in delivering Adjusted Profit in line with expectations for the full year.*",
    "file": "20260715_BMY_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2026-10-22",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -1,
+   "q": "The Board looks to the current year with confidence in delivering record results in line with Adjusted Profit expectations.",
+   "file": "20261022_BMY_Unaudited-Interim-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-15",
-  "doc": "AGM",
-  "file": "20260715_BMY_AGM-Trading-Update.md",
-  "vs": "AGM Jul-25 · back to Jul-22 · FY R May-26",
-  "lines": []
+  "rns": "2026-10-22",
+  "doc": "H1 R",
+  "file": "20261022_BMY_Unaudited-Interim-Results.md",
+  "vs": "H1 R Oct-25 · back to Oct-23 · AGM Jul-26 · Anthropic RNS Jul-26",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Headline “Strong start to second half underpinning record expectations for 2026/27” beside “Group Adjusted Profit (before taxation and highlighted items1) of £16.8m (H1 2025/26: £24.0m)”, down 30%; the £49.9m consensus implies H2 profit of c.£33.1m vs £20.9m in H2 2025/26",
+    "span": "H1 margin 11.1% vs 15.0% at Oct-25"
+   },
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "Oct-23 “a better balance between sales in the first and second halves of the year than in the past” → Oct-26 “Growth is second half weighted”; AI licensing renewed “though to a lesser quantum leading to a reduced margin” (A&P margin 13.9% vs 23.9%)",
+    "span": "First H2-weighting flag in the 5-year RNS record"
+   },
+   {
+    "sev": "amber",
+    "type": "Target dropped",
+    "text": "BDR: Oct-24 “on track for the target c.£41m revenue in 2027/28”, Oct-25 BDR revenue £13.6m and “our ambitious target remains at £41m revenue in 2027/28” → Oct-26 no BDR revenue figure and no £41m target",
+    "span": "Target in every results RNS Oct-24 to Oct-25 → absent May-26 and Oct-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Pushed out",
+    "text": "Anthropic settlement: Jul-26 Bloomsbury “will receive settlement spread over several payments estimated to start in the second half of the financial year” → Oct-26 “the quantum and timing of any settlement is insufficiently certain at this stage”, “will provide a further update in due course”"
+   }
+  ]
  }
 }

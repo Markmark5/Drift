@@ -1,6 +1,6 @@
 {
  "ticker": "ATG",
- "v": "2026-10-21.3352",
+ "v": "2026-10-22.7058",
  "ccy": "GBX",
  "src": "AlphaVantage ATG.LON weekly",
  "adj": [],
@@ -1243,38 +1243,47 @@
    "s": -1,
    "q": "Adjusted EBITDA margin of 34.5-35.5% is unchanged. We continue to expect the outcome to be at the bottom end of this range,",
    "file": "20260723_ATG_Q3-TRADING-UPDATE.md"
+  },
+  {
+   "d": "2026-10-22",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Revenue and adjusted EBITDA performance in FY26 is expected to be slightly ahead of current market expectations[1].",
+   "file": "20261022_ATG_Trading-Statement.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-23",
-  "doc": "Q3 TU",
-  "file": "20260723_ATG_Q3-TRADING-UPDATE.md",
-  "vs": "Q3 statement Aug-25 (Acquisition RNS) · H1 R May-26 · H1 TU Apr-26 · AGM TU Jan-26",
+  "rns": "2026-10-22",
+  "doc": "YE-TU",
+  "file": "20261022_ATG_Trading-Statement.md",
+  "vs": "YE-TU Oct-25 · back to Oct-24 · Q3 TU Jul-26",
   "lines": [
    {
-    "sev": "red",
-    "type": "New caution",
-    "text": "EBITDA margin: May-26 “An adjusted EBITDA margin of 34.5-35.5% for the Group as a whole” (full range) → Jul-26 “We continue to expect the outcome to be at the bottom end of this range”, even as the revenue guide is raised to 5.5-6.5%",
-    "span": "Range given with no position in it at Nov-25, Jan-26, Apr-26, May-26 → first “bottom end” in the RNS record"
-   },
-   {
-    "sev": "red",
-    "type": "Anchor softened",
-    "text": "Market-expectations anchor and consensus footnote dropped: Apr-26 “in-line with market expectations4”, May-26 “ahead of current market expectations5” → Jul-26 “For FY26, the Group now expects:” guidance only, no market expectations or consensus range",
-    "span": "Anchor at Oct-25, Nov-25, Apr-26, May-26 → absent Jul-26"
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "Chairish synergies: Jul-26 “we remain on track to deliver the previously announced $8m of operational synergies run-rate by FY27” → Oct-26 “delivering the expected operational synergies”, no figure",
+    "span": "$8m given at Nov-25, Jan-26, Apr-26, May-26, Jul-26 → first gap"
    },
    {
     "sev": "amber",
     "type": "Went quiet",
-    "text": "GMV: Jan-26 and Apr-26 A&A growth came “with a positive contribution from GMV growth” (Apr-26 headline “continued A&A GMV growth”) → Jul-26 no GMV mention at all",
-    "span": "Jan-26, Apr-26 TUs → Jul-26"
+    "text": "Revenue growth rate: Oct-24 “an increase of 5% (up 2% on an organic basis1)”, Oct-25 “Including Chairish, the Group's revenue is expected to be up c.9%”, Jul-26 guide “Revenue growth of 5.5-6.5% on a pro forma constant currency basis” → Oct-26 only “Revenue is expected to be c.$251m”, no growth rate against the guide",
+    "span": "Growth % in pre-close TU Oct-24, Oct-25 → absent Oct-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Split withheld",
+    "text": "Divisional split: Jul-26 “The rate of decline in Industrial & Commercial (\"I&C\") revenue was consistent with that reported for the first half.” → Oct-26 no A&A or I&C revenue commentary, only Chairish, LiveAuctioneers and Proxibid named",
+    "span": "A&A / I&C given at Jan-26, Apr-26, Jul-26 TUs"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Leverage target quantified: Jan/Apr/May-26 “Group leverage well below 2x by end FY26” → Jul-26 “Group leverage of around 1.5x by the end of FY26”",
-    "span": "Q3 revenue growth also given as a number (7.8%) vs Aug-25 “slightly improved” wording"
+    "text": "Market anchor and consensus footnotes back: Jul-26 “For FY26, the Group now expects:” guidance only → Oct-26 FY26 “slightly ahead of current market expectations[1]” and FY27 “in line with current market expectations[3], a year of strong earnings growth”",
+    "span": "Next-year view with consensus range again, as at Oct-25"
    }
   ]
  }

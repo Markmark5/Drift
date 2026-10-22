@@ -1,6 +1,6 @@
 {
  "ticker": "LSEG",
- "v": "2026-10-21.04e4",
+ "v": "2026-10-22.af3e",
  "ccy": "GBX",
  "src": "Yahoo LSEG.L weekly",
  "adj": [],
@@ -1261,14 +1261,51 @@
    "s": 1,
    "q": "Constant currency EBITDA margin: guidance raised from +80-100 bps to around 100 bps",
    "file": "20260730_LSEG_London-Stock-Exchange-Group-plc-Interim-results.md"
+  },
+  {
+   "d": "2026-10-22",
+   "doc": "OPS",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Due to Octus’ strong margin profile and operating leverage, there is no change to LSEG’s medium-term guidance for underlying EBITDA margin to increase by a cumulative c. 150 basis points 2027-2029 from the 2026 baseline.",
+   "file": "20261022_LSEG_LSEG-to-acquire-Octus.md"
+  },
+  {
+   "d": "2026-10-22",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Raising revenue, margin and cash flow guidance: expecting full year growth of at least 8.0%, EBITDA margin expansion of 100-120bps, and equity free cash flow of at least £2.8 billion",
+   "file": "20261022_LSEG_Q3-2026-Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-12",
-  "doc": "OPS",
-  "file": "20260812_LSEG_Admission-of-Notes-to-Trading.md",
-  "vs": "H1 R Jul-26 (previous RNS) · no earlier notes-admission RNS in folder",
-  "lines": []
+  "rns": "2026-10-22",
+  "doc": "Q3 TU",
+  "file": "20261022_LSEG_Q3-2026-Trading-Update.md",
+  "vs": "Q3 TU Oct-25 · back to Oct-23 · H1 R Jul-26 · Q1 TU Apr-26",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "ASV (annual subscription value): last year “Period-end organic ASV growth was +5.6%, a little ahead of guidance.”; at H1 “ASV3 growth at June 2026 +6.1%” → Q3-26 no ASV figure or ASV table; subscription growth given only as “6.6% growth in subscription businesses in Q3”",
+    "span": "ASV given at Q3-23, Q3-24, Q3-25 and H1-26 → first Q3 without it in 3 years (also absent at Q1-26)"
+   },
+   {
+    "sev": "grey",
+    "type": "Restated",
+    "text": "D&A business lines: Q3-25 Workflows £476m, Data & Feeds £449m, Analytics £57m (Oct-25) → now £471m, £453m, £58m; “Results for prior periods have been re-presented” (D&A total unchanged at £982m)",
+    "span": "Revenue reallocation effective Q3-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Revenue guide: H1 “raised to 7.0-7.5% (initially 6.5%-7.5%)” → now “at least 8.0%”; equity FCF “at least £2.7 billion” → “at least £2.8 billion”; new 2027 leverage view “around the upper end of our 1.5x-2.5x leverage range”",
+    "span": "Second raise of FY26 guide (Jul-26, Oct-26)"
+   }
+  ]
  }
 }

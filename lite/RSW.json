@@ -1,6 +1,6 @@
 {
  "ticker": "RSW",
- "v": "2026-10-20.2cf9",
+ "v": "2026-10-22.4874",
  "ccy": "GBX",
  "src": "Yahoo RSW.L weekly",
  "adj": [],
@@ -1253,38 +1253,41 @@
    "s": 1,
    "q": "FY2027 has started strongly as we continue to benefit from the current upturn in demand for semiconductor manufacturing equipment. We expect further strong progress on revenue and profit in the year ahead.",
    "file": "20260923_RSW_Final-Results.md"
+  },
+  {
+   "d": "2026-10-22",
+   "doc": "Q1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "We continue to expect strong progress on revenue and operating margin for FY2027 as a whole.",
+   "file": "20261022_RSW_Trading-Statement.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-23",
-  "doc": "FY R",
-  "file": "20260923_RSW_Final-Results.md",
-  "vs": "FY R Sep-25 · back to Sep-24 · H1 Feb-26 · post-close TU Jul-26",
+  "rns": "2026-10-22",
+  "doc": "Q1 TU",
+  "file": "20261022_RSW_Trading-Statement.md",
+  "vs": "Q1 TU Oct-25 · FY R Sep-26 · Q3 TU May-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Target dropped",
-    "text": "Operating margin target: FY25 “Adjusted operating profit margins of 20%” (H1 FY26: “to improve our operating profit margins to above 20%”) → FY26 results report 18.7% margin but no 20% target or high single-digit growth target, only “Average through-cycle revenue growth rising to 8%”",
-    "span": "Stated at Sep-24, Sep-25, Feb-26 → first omission"
+    "type": "Split withheld",
+    "text": "Regional revenue: Q1 TU Oct-25 and Q3 TU May-26 printed a “Regional revenue (£m)” table (APAC / EMEA / Americas) → Q1 FY27 says only “Strong year-on-year growth in all three business segments and all three regions”, no regional figures",
+    "span": "Given Oct-25, May-26 → dropped Oct-26"
    },
    {
-    "sev": "amber",
-    "type": "Number to words",
-    "text": "ROIC target: FY25 “towards our target of 15%” → FY26 “to incentivise achievement of our ROIC target over a three-year period”, no number; FY25 ROIC restated 12.6% → 13.2% on a new definition",
-    "span": "15% target given Sep-24, Sep-25, Feb-26"
-   },
-   {
-    "sev": "amber",
+    "sev": "grey",
     "type": "New caution",
-    "text": "ERP: FY25 risk mitigation “Targeted recruitment of independent Microsoft Dynamics 365 expertise” → FY26 “paused the rollout of the existing Microsoft Dynamics 365 solution”",
-    "span": "First flagged Sep-26"
+    "text": "FY R Sep-26: “We expect further strong progress on revenue and profit in the year ahead.” → Q1 TU adds “whilst remaining mindful of the cyclical nature of demand over the medium term”",
+    "span": "First cyclical caveat in a quarterly trading statement outlook"
    },
    {
-    "sev": "amber",
-    "type": "Demoted",
-    "text": "Gross margin (excl. engineering): FY25 highlight “Gross margin excluding engineering costs improved to 61.7% (FY2024: 61.0%)” → FY26 out of highlights, in CFO text only: “reduced to 59.6% of revenue, from 61.7%”",
-    "span": "Highlight at Sep-25 → dropped Sep-26 as it fell 2.1pt"
+    "sev": "green",
+    "type": "Back / new",
+    "text": "New sequential comparison: segment table now adds an FY2026 Q4 column, with Q1 “a record quarter that was 3% above FY2026 Q4”",
+    "span": "Oct-25 Q1 TU compared with prior-year Q1 only"
    }
   ]
  }

@@ -1,6 +1,6 @@
 {
  "ticker": "CAN",
- "v": "2026-10-21.6326",
+ "v": "2026-10-22.fe05",
  "ccy": "GBX",
  "src": "Yahoo CAN.L weekly",
  "adj": [],
@@ -466,38 +466,39 @@
    "s": 0,
    "q": "We have achieved half of our €250m synergies target and remain well on track for the year, and we confirm our full-year and medium-term guidance.",
    "file": "20260728_CAN_2026-Half-year-Financial-Report.md"
+  },
+  {
+   "d": "2026-10-22",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "We remain well on track to achieve our 2026 synergies target and deliver our full-year guidance.",
+   "file": "20261022_CAN_CANAL+-Q3-2026-trading-update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-28",
-  "doc": "H1 R",
-  "file": "20260728_CAN_2026-Half-year-Financial-Report.md",
-  "vs": "H1 R Jul-25 · Q1 TU Apr-26 · FY R Mar-26",
+  "rns": "2026-10-22",
+  "doc": "Q3 TU",
+  "file": "20261022_CAN_CANAL+-Q3-2026-trading-update.md",
+  "vs": "Q3 TU Oct-25 · H1 R Jul-26 · Q1 TU Apr-26",
   "lines": [
    {
     "sev": "amber",
+    "type": "New caution",
+    "text": "French VAT: Q3 TU Oct-25 “The Official Bulletin of Public Finances confirmed the reduced 10% VAT rate is applicable for CANAL+ linear television services” → now “the French government has proposed to increase the VAT rate applicable to CANAL+'s activities in mainland France and Overseas” and “the outcome remains uncertain”",
+    "span": "First flagged Oct-26 (2027 Budget)"
+   },
+   {
+    "sev": "grey",
     "type": "Wording vs number",
-    "text": "Headline “Strong H1 results with improved profitability and cash flow generation” and “Cash flow generation continued to improve”, but on the like-for-like basis incl. MultiChoice CFFO before exceptional items was €559m vs €647m (−13.6%) and FCF €414m vs €486m (−14.7%); H1 also flagged as helped by “significant positive seasonality effects”",
-    "span": "H1-26 vs H1-25 restated incl. MultiChoice"
+    "text": "“We delivered a solid performance in the first nine months of the year” beside Q3 Group like-for-like revenue of -1.0% (9M -0.3%; MultiChoice 9M like-for-like -3.0%)"
    },
    {
-    "sev": "amber",
-    "type": "Split withheld",
-    "text": "Mar-26 gave a divisional outlook: CANAL+ historical “we expect an increase from €542 million in 2025 to €565 million” and MultiChoice c.€170m; Apr-26 Q1 still “our outlook for CANAL+ historical basis and MultiChoice” → Jul-26 gives group guidance only: “Full year 2026 guidance: revenue flat; adjusted EBIT €735m”",
-    "span": "Given Mar-26, Apr-26 → first omission"
-   },
-   {
-    "sev": "amber",
-    "type": "Went quiet",
-    "text": "Net debt: H1-25 “As of 30 June 2025, net debt was €24 million”; FY-25 “Net debt increased to €1,997m” → H1-26 RNS gives no net debt or leverage figure (full report only on the NSM)",
-    "span": "Given Jul-25, Mar-26 → missing Jul-26"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Synergy delivery quantified for the first time: “We have achieved half of our €250m synergies target”, MultiChoice Adjusted EBIT €143m incl. €120m synergy P&L impact",
-    "span": "Apr-26 said only on track"
+    "sev": "grey",
+    "type": "New caution",
+    "text": "Dailymotion: Q1 TU Apr-26 “Dailymotion continued its growth trajectory with an increase in advertising revenue” → now “Dailymotion was negatively impacted by lower advertising in Q3, against a challenging market backdrop”"
    }
   ]
  }

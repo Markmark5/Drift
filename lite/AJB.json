@@ -1,6 +1,6 @@
 {
  "ticker": "AJB",
- "v": "2026-10-19.543f",
+ "v": "2026-10-22.7280",
  "ccy": "GBX",
  "src": "AlphaVantage AJB.LON weekly",
  "adj": [],
@@ -1339,26 +1339,29 @@
    "s": 0,
    "q": "We have entered the final quarter with strong momentum. The UK platform market continues to benefit from structural growth drivers as more individuals take responsibility for their long-term financial futures.",
    "file": "20260723_AJB_Q3-Trading-Update.md"
+  },
+  {
+   "d": "2026-10-22",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "I am delighted to report an excellent year in which we achieved record customer growth, record gross and net inflows and record assets under administration.",
+   "file": "20261022_AJB_Year-end-Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-23",
-  "doc": "Q3 TU",
-  "file": "20260723_AJB_Q3-Trading-Update.md",
-  "vs": "Q3 TU Jul-25 · Q2 TU Apr-26 / H1 R May-26 · back to Jul-24",
+  "rns": "2026-10-22",
+  "doc": "YE-TU",
+  "file": "20261022_AJB_Year-end-Trading-Update.md",
+  "vs": "YE-TU Oct-25 · Q3 TU Jul-26 · H1 R May-26",
   "lines": [
    {
-    "sev": "grey",
-    "type": "Wording vs number",
-    "text": "Advised platform: commentary leads with “helping to drive another record quarter of gross inflows”, but Advised net inflows were £0.6bn in Q3-26, the same as Q3-25 (£0.6bn), while D2C rose from £1.5bn to £2.4bn; the Advised net figure appears only in the table",
-    "span": "Q3-25 → Q3-26"
-   },
-   {
-    "sev": "grey",
-    "type": "Went quiet",
-    "text": "Service KPI: Jul-25 highlight “Trustpilot rating increased to 4.9-stars, emphasising our market-leading customer service”, repeated in the Apr-26 CEO comment → not mentioned in Jul-26",
-    "span": "Jul-25, Apr-26 → absent Jul-26"
+    "sev": "amber",
+    "type": "Pushed out",
+    "text": "Third-party SIPP exit: H1 R May-26 “We expect to exit our remaining third-party SIPP arrangement in the second half of the year” → now “will complete in Q1 FY27”",
+    "span": "H1 R May-26 → YE-TU Oct-26"
    }
   ]
  }
