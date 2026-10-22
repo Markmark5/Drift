@@ -1,14 +1,10 @@
 {
  "ticker": "WISE",
- "v": "2026-10-18.5e41",
+ "v": "2026-10-22.5697",
  "ccy": "GBX",
  "src": "AlphaVantage WISE.LON weekly",
  "adj": [],
  "px": [
-  [
-   "2021-10-15",
-   900.0
-  ],
   [
    "2021-10-22",
    808.0
@@ -1059,15 +1055,6 @@
   ]
  ],
  "marks": [
-  {
-   "d": "2021-10-19",
-   "doc": "H1 TU",
-   "fy": "FY22",
-   "g": "flat",
-   "s": 0,
-   "q": "So looking ahead, our take rate is expected to be slightly lower in the second half of FY2022 compared to the first half as a result of price reductions, but we continue to expect revenue growth of low to mid 20s on a percentage basis for FY2022 over FY2021.",
-   "file": "20211019_WISE_Q2-Trading-Update.md"
-  },
   {
    "d": "2021-11-30",
    "doc": "H1 R",
