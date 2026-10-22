@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta name="robots" content="noindex, nofollow"><meta charset="utf-8">
+<html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>RSW — Longitudinal Drift Tracker</title>
 <style>
@@ -58,9 +57,6 @@ h2{font-size:15px;letter-spacing:.02em;margin:0 0 10px;padding-bottom:6px;border
 .bbulb{width:20px;height:20px;border-radius:50%;flex:0 0 20px;border:2px solid rgba(255,255,255,.25)}
 .bstrip .t{font-size:13px;color:#fff;font-weight:600}
 .bstrip .s{font-size:11px;color:#c9c6bd;margin-top:2px}
-.twoff{flex:1;border-left:1px dashed #57544c;padding-left:16px;min-width:0;display:flex;align-items:center}
-.twoff .plab{font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#8d8981;font-weight:700}
-.twoff .pna{font-size:11.5px;color:#c9c6bd;margin-top:3px}
 details.guide{margin:14px 0;border:1px solid var(--line);border-radius:10px;overflow:hidden}
 details.guide>summary{background:#2b2a26;color:#fff;padding:8px 15px;cursor:pointer;list-style:none;
  font-family:'Caveat',"Comic Sans MS",cursive;font-weight:700;font-size:24px}
@@ -85,8 +81,7 @@ details.guide>summary .em{font-size:22px;margin-right:6px}
  .railgap{display:none}
  .bstrip{flex-direction:column}
  .bsweep{min-width:0;padding-right:0}
- .twoff{border-left:none;border-top:1px dashed #57544c;padding-left:0;padding-top:10px}
-}
+ }
 
 /* ===== drawers: two tiers ===== */
 details.d1{border:1px solid #c6c2b9;background:var(--paper);border-radius:10px;margin-top:12px}
@@ -108,8 +103,8 @@ details.d2[open]>summary:before{content:"▾ "}
 #grid2 th,#grid2 td{border:1px solid var(--line);text-align:center;padding:7px 4px;vertical-align:top}
 .gridwrap{overflow-x:auto;margin-bottom:16px}
 .fyband{background:var(--panel);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:700}
-th.qhead{cursor:pointer;user-select:none;font-size:11.5px;background:var(--paper)}
-th.qhead:hover{background:#eceae4}
+th.phead{cursor:pointer;user-select:none;font-size:11.5px;background:var(--paper)}
+th.phead:hover{background:#eceae4}
 th.corner,td.vlabel,td.striplabel{text-align:left !important}
 .sectionbar{background:var(--ink);color:#fff;text-align:left !important;font-size:11.5px;letter-spacing:.07em;font-weight:700;padding:7px 9px !important}
 .sectionbar .nature{font-weight:400;letter-spacing:.02em;color:#c9c6bd;text-transform:none}
@@ -184,15 +179,15 @@ tr.t3old{display:none}
 .driftwrap{overflow-x:auto}
 
 /* ===== card strip ===== */
-.strip{border-collapse:collapse;font-size:11px;margin-top:6px}
-.strip td{border:1px solid var(--line);width:26px;height:22px;text-align:center;font-weight:700}
-.strip td.slab{width:38px;background:var(--paper);font-weight:600}
-.strip td.cg{background:#21d05e;color:#fff}
-.strip td.ca{background:#ffb020;color:#fff}
-.strip td.cr{background:#ff3b30;color:#fff}
-.strip td.cx{background:#57544c;color:#fff}
-.strip td.cn{background:#f2f1ec;color:#b5b1a8}
-.strip td.bs{outline:2px solid var(--ink);outline-offset:-2px}
+.cstrip{border-collapse:collapse;font-size:11px;margin-top:6px}
+.cstrip td{border:1px solid var(--line);width:26px;height:22px;text-align:center;font-weight:700}
+.cstrip td.slab{width:38px;background:var(--paper);font-weight:600}
+.cstrip td.cg{background:#21d05e;color:#fff}
+.cstrip td.ca{background:#ffb020;color:#fff}
+.cstrip td.cr{background:#ff3b30;color:#fff}
+.cstrip td.cx{background:#57544c;color:#fff}
+.cstrip td.cn{background:#f2f1ec;color:#b5b1a8}
+.cstrip td.bs{outline:2px solid var(--ink);outline-offset:-2px}
 pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;padding:10px;font-size:10.5px;overflow-x:auto;white-space:pre-wrap;word-break:break-word;user-select:all}
 
 /* ==== TREND WATCH PANEL — LOCKED v5.3 ==== */
@@ -233,10 +228,10 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;padd
   <div class="railgap"></div>
  </div>
  <div class="cbody">
-  <h1 class="chead">Record FY26 at £815.8m / £168.0m clears April's raised tops; FY27 &lsquo;started strongly&rsquo; with H2 profit up 49%.</h1>
+  <h1 class="chead">Record Q1 at £251.8m, up 47%; but profit drops out of the FY27 outlook sentence for the first time.</h1>
 
   <div class="pills">
-   <span class="pill">FY R · 23 Sep 2026</span>
+   <span class="pill">Q1 TU · 22 Oct 2026</span>
    <span class="pill">FY-end 30 Jun</span>
    <span class="dot">·</span>
    <span class="pill">B/S: clean, net cash</span>
@@ -247,13 +242,13 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;padd
     <div class="ldate">Apr-26 →</div>
     <div class="bulb b-g"></div>
     <div class="lname">Numbers &amp; guide</div>
-    <div class="lreason">Raised guide cleared at audit; H2 profit up 49%</div>
+    <div class="lreason">Record Q1 £251.8m, +47% on last year; +3.1% on Q4</div>
    </div>
-   <div class="lamp">
-    <div class="ldate">Feb-26 →</div>
-    <div class="bulb b-g"></div>
+   <div class="lamp amb">
+    <div class="ldate">Oct-26</div>
+    <div class="bulb b-a"></div>
     <div class="lname">Language</div>
-    <div class="lreason">Sustained +1 to +3 run over six prints; operator override</div>
+    <div class="lreason">Still positive but falling two prints; profit dropped from outlook</div>
    </div>
    <div class="lamp amb">
     <div class="ldate">Oct-25</div>
@@ -261,16 +256,16 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;padd
     <div class="lname">Disclosure</div>
     <div class="lreason">Rank 4 quarterly grain stopped — company stated policy</div>
    </div>
-   <div class="tally"><b>2/3</b><span>FIRED</span></div>
+   <div class="tally"><b>1/3</b><span>FIRED</span></div>
    <div class="bstrip" style="flex-basis:100%">
     <div class="bsweep">
      <div class="bbulb b-g"></div>
      <div><div class="t">Clean · net cash £291.0m</div>
      <div class="s">Sweep sits outside the 2-of-3 count</div></div>
     </div>
-    <div class="tw"><div class="plab">Trend watch · FY27 FC (Sep-26) vs H2 (Y-on-Y) growth</div><div class="dset"><div class="dcell"><div class="dnm">REVENUE</div><svg width="50" height="50" viewBox="0 0 42 42"><circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/><circle cx="21" cy="21" r="15.915" fill="none" stroke="#21d05e" stroke-width="5" stroke-dasharray="50 100" transform="rotate(-90 21 21)" stroke-linecap="round"/><line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/></svg><div class="dfig" style="color:#7bd88f">+11.4pp</div><div class="dtrend">+7.1% → <b>+21.2%</b></div><div class="dfc">fc +9.7%</div></div><div class="dcell"><div class="dnm">EBITDA</div><svg width="50" height="50" viewBox="0 0 42 42"><circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/><line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/></svg><div class="dfig" style="color:#6d6a62">n/a</div><div class="dtrend">not company-reported</div><div class="dfc"></div></div><div class="dcell"><div class="dnm">PBT</div><svg width="50" height="50" viewBox="0 0 42 42"><circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/><circle cx="21" cy="21" r="15.915" fill="none" stroke="#21d05e" stroke-width="5" stroke-dasharray="70 100" transform="rotate(-90 21 21)" stroke-linecap="round"/><line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/></svg><div class="dfig" style="color:#7bd88f">+34.7pp</div><div class="dtrend">+11.5% → <b>+49.1%</b></div><div class="dfc">fc +14.3%</div></div></div></div>
+    <div class="tw"><div class="plab">TREND WATCH · Q1% VS 3YR% · FC OCT-26</div><div class="dset"><div class="dcell"><div class="dnm">REVENUE</div><svg width="50" height="50" viewBox="0 0 42 42"><circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/><circle cx="21" cy="21" r="15.915" fill="none" stroke="#21d05e" stroke-width="5" stroke-dasharray="40 100" transform="rotate(-90 21 21)" stroke-linecap="round"/><line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/></svg><div class="dfig" style="color:#7bd88f">+3.9pp</div><div class="dtrend">27.0 vs 23.0</div><div class="dfc">at Q1 TU</div></div><div class="dcell"><div class="dnm">EBITDA</div><svg width="50" height="50" viewBox="0 0 42 42"><circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/><line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/></svg><div class="dfig" style="color:#6d6a62">n/a</div><div class="dtrend">not company-reported</div><div class="dfc"></div></div><div class="dcell"><div class="dnm">PBT</div><svg width="50" height="50" viewBox="0 0 42 42"><circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/><line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/></svg><div class="dfig" style="color:#6d6a62">n/a</div><div class="dtrend">no Q1 profit</div><div class="dfc"></div></div></div></div>
     </div>
-   <div class="mvrow" style="flex-basis:100%"><span class="mvlab">Since last RNS</span><span class="mvval">Turning up · 2/3 held</span><span class="mvsince">measured from Post-close TU · 24 Jul 2026</span></div>
+   <div class="mvrow" style="flex-basis:100%"><span class="mvlab">Since last RNS</span><span class="mvval"><span class="was">Turning up · 2/3</span> <span class="mvarw dn">→</span> Turning up · 1/3 — <span class="mvarw dn">Language green → amber</span></span><span class="mvsince">measured from FY R · 23 Sep 2026</span></div>
   </div>
 
   <details class="guide">
@@ -286,25 +281,25 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;padd
     <h4>What's changed recently</h4>
     <p>The company cut roughly £20m a year off the wage bill from the first half of FY26, renamed its reporting segments in October 2025, and changed finance director — Allen Roberts left at the November 2025 AGM and John Shipsey was confirmed in the job by April 2026, presenting his first full-year results in September. New segment directors now run each of the three businesses.</p>
     <p class="vintage"><em>The bet, in one line: you are buying a toll-booth on precision manufacturing, and paying for the patience to sit through the order cycle.</em></p>
-    <p class="vintage">Stable facts, as at 23 Sep 2026.</p>
+    <p class="vintage">Stable facts, as at 22 Oct 2026.</p>
    </div>
   </details>
 
   <div class="boxes">
-   <div class="box"><div class="lb">Current state</div><div class="hl2">Record, audited</div>
-    <p>Revenue £815.8m and adj PBT £168.0m clear April's raised tops by £10.8m and £3.0m — almost exactly where consensus had already moved.</p></div>
+   <div class="box"><div class="lb">Current state</div><div class="hl2">Record, but slowing</div>
+    <p>Q1 revenue £251.8m is a record and 47% up on a weak base, yet only 3.1% above Q4 — the smallest quarterly step in a year.</p></div>
    <div class="box"><div class="lb">Warning you get</div><div class="hl2">About 2 quarters</div>
-    <p>Order-book language turned before revenue at the FY26 upturn. The FY26 results still report order-book growth, so the lead metric hasn't rolled over.</p></div>
-   <div class="box"><div class="lb">Argues against</div><div class="hl2">Priced in</div>
-    <p>The beat matched pre-results consensus to 0.5%, and FY27 forecasts already assume +14% profit growth. Working capital and the one-off wedge both widened.</p></div>
-   <div class="box"><div class="lb">Next test</div><div class="hl2">Oct-26</div>
-    <p>Q1 FY27 trading update: Q1 revenue against £170.8m — roughly +10% is needed to track the £895m FY27 consensus.</p></div>
+    <p>Order-book language turned before revenue at the FY26 upturn. It is now growing in all three segments, so the lead metric still hasn't rolled over.</p></div>
+   <div class="box"><div class="lb">Argues against</div><div class="hl2">Profit went quiet</div>
+    <p>The FY27 outlook promises revenue and margin, not profit, and adds a warning about the demand cycle. No profit or cash figure printed.</p></div>
+   <div class="box"><div class="lb">Next test</div><div class="hl2">Feb-27</div>
+    <p>H1 FY27 results: the first numeric FY27 guide against the £934m / £208m consensus, and whether profit returns to the outlook.</p></div>
   </div>
 
   <ul class="cbul">
-   <li>Lead-lag: order-book language turned bullish at H1 FY26 roughly two quarters ahead of the revenue prints it anticipated — the same shape as before the FY23 downturn, in reverse.</li>
-   <li>The adj-to-statutory PBT gap doubled to £18.0m (FY25 £9.2m), labelled cost-programme one-offs; receivables +25.8% against sales +14.4% pulled cash conversion to 79%.</li>
-   <li>What flips it: Q1 FY27 revenue short of ~£187m, the pace the £895m consensus needs, or the ERP rollout the CFO flagged reaching costs or deliveries.</li>
+   <li>Lead-lag: order-book language turned bullish at H1 FY26 roughly two quarters ahead of the revenue prints — and is still broadening, now in all three segments.</li>
+   <li>Language lamp amber: 🟢🟢🟢 → 🟢🟢 → 🟢 meets the strict two-print fall, cancelling the green read; alert off, direction call unchanged.</li>
+   <li>What flips it: an H1 FY27 guide below the £934m / £208m consensus, or a second outlook without profit — that turns the language lamp red.</li>
   </ul>
  </div>
 </div>
@@ -354,7 +349,7 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;padd
 <!-- ============ §2 GRID ============ -->
 <div class="section">
 <h2>§2 — Unified Forward Grid</h2>
-<div class="small" style="margin-bottom:8px;">Router: Q-reporter — Rule Set Q applies. 18 quarter columns, full record, no truncation. Rightmost column ⭐ = the Buy/Sell RNS.</div>
+<div class="small" style="margin-bottom:8px;">Router: Q-reporter — Rule Set Q applies. 19 quarter columns, full record, no truncation. Rightmost column ⭐ = the Buy/Sell RNS.</div>
 <div class="gridwrap"><table id="grid2"><colgroup><col style="width:150px">
 <col>
 <col>
@@ -373,25 +368,26 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;padd
 <col>
 <col>
 <col>
+<col>
 <col></colgroup><thead>
-<tr><th class="corner"></th><th colspan="2" class="fyband">FY22</th><th colspan="4" class="fyband">FY23</th><th colspan="4" class="fyband">FY24</th><th colspan="4" class="fyband">FY25</th><th colspan="4" class="fyband">FY26</th></tr>
-<tr><th class="corner">Rank / Metric</th><th class="qhead" data-qtype="Q3">Q3</th><th class="qhead" data-qtype="Q4">Q4</th><th class="qhead" data-qtype="Q1">Q1</th><th class="qhead" data-qtype="Q2">Q2</th><th class="qhead" data-qtype="Q3">Q3</th><th class="qhead" data-qtype="Q4">Q4</th><th class="qhead" data-qtype="Q1">Q1</th><th class="qhead" data-qtype="Q2">Q2</th><th class="qhead" data-qtype="Q3">Q3</th><th class="qhead" data-qtype="Q4">Q4</th><th class="qhead" data-qtype="Q1">Q1</th><th class="qhead" data-qtype="Q2">Q2</th><th class="qhead" data-qtype="Q3">Q3</th><th class="qhead" data-qtype="Q4">Q4</th><th class="qhead" data-qtype="Q1">Q1</th><th class="qhead" data-qtype="Q2">Q2</th><th class="qhead" data-qtype="Q3">Q3</th><th class="qhead bs-col" data-qtype="Q4">⭐ Q4<br><span style="font-size:9.5px;font-weight:600">FY R · Sep-26</span></th></tr>
+<tr><th class="corner"></th><th colspan="2" class="fyband">FY22</th><th colspan="4" class="fyband">FY23</th><th colspan="4" class="fyband">FY24</th><th colspan="4" class="fyband">FY25</th><th colspan="4" class="fyband">FY26</th><th colspan="1" class="fyband">FY27</th></tr>
+<tr><th class="corner">Rank / Metric</th><th class="phead" data-p="Q3">Q3</th><th class="phead" data-p="Q4">Q4</th><th class="phead" data-p="Q1">Q1</th><th class="phead" data-p="Q2">Q2</th><th class="phead" data-p="Q3">Q3</th><th class="phead" data-p="Q4">Q4</th><th class="phead" data-p="Q1">Q1</th><th class="phead" data-p="Q2">Q2</th><th class="phead" data-p="Q3">Q3</th><th class="phead" data-p="Q4">Q4</th><th class="phead" data-p="Q1">Q1</th><th class="phead" data-p="Q2">Q2</th><th class="phead" data-p="Q3">Q3</th><th class="phead" data-p="Q4">Q4</th><th class="phead" data-p="Q1">Q1</th><th class="phead" data-p="Q2">Q2</th><th class="phead" data-p="Q3">Q3</th><th class="phead" data-p="Q4">Q4</th><th class="qhead bs-col" data-p="Q1">⭐ Q1<br><span style="font-size:9.5px;font-weight:600">Q1 TU · Oct-26</span></th></tr>
 </thead><tbody>
-<tr><td colspan="19" class="sectionbar"><span class="ranknum">Rank 1</span> Order book <span class="nature">(snapshot — directional, no £ ever disclosed)</span></td></tr>
-<tr class="periodstrip"><td class="stripcell striplabel"></td><td class="stripcell">—</td><td class="stripcell">FY</td><td class="stripcell">Q</td><td class="stripcell">H1</td><td class="stripcell">Q</td><td class="stripcell">FY</td><td class="stripcell">Q</td><td class="stripcell">H1</td><td class="stripcell">Q</td><td class="stripcell">FY</td><td class="stripcell">Q</td><td class="stripcell">H1</td><td class="stripcell">Q</td><td class="stripcell">FY</td><td class="stripcell">Q</td><td class="stripcell">H1</td><td class="stripcell">Q</td><td class="stripcell">FY</td></tr>
-<tr><td class="vlabel">Direction</td><td class="vcell empty"><div class="vval">⊘</div><div class="vturn">—</div></td><td class="vcell "><div class="vval">✅</div><div class="vturn">—</div></td><td class="vcell "><div class="vval">✅</div><div class="vturn">🟡→</div></td><td class="vcell "><div class="vval">✅</div><div class="vturn">🟡→</div></td><td class="vcell "><div class="vval">—</div><div class="vturn">🔴↘</div></td><td class="vcell "><div class="vval">🟡</div><div class="vturn">🔴↘</div></td><td class="vcell "><div class="vval">—</div><div class="vturn">🟡→</div></td><td class="vcell "><div class="vval">✅</div><div class="vturn">🟡→</div></td><td class="vcell "><div class="vval">—</div><div class="vturn">🔴↘</div></td><td class="vcell "><div class="vval">🟡</div><div class="vturn">🟡→</div></td><td class="vcell "><div class="vval">🟡</div><div class="vturn">🟡→</div></td><td class="vcell "><div class="vval">✅</div><div class="vturn">🟢↗</div></td><td class="vcell "><div class="vval">✅</div><div class="vturn">🟢↗</div></td><td class="vcell "><div class="vval">🟡</div><div class="vturn">🟡→</div></td><td class="vcell "><div class="vval">✅</div><div class="vturn">🟢↗</div></td><td class="vcell "><div class="vval">✅✅</div><div class="vturn">🟢↗</div></td><td class="vcell "><div class="vval">✅✅</div><div class="vturn">🟢↗</div></td><td class="vcell "><div class="vval">🟡</div><div class="vturn">🟢↗</div></td></tr>
-<tr><td colspan="19" class="sectionbar"><span class="ranknum">Rank 2</span> Quarterly revenue <span class="nature">(quarters — sequential QonQ flow)</span></td></tr>
-<tr class="periodstrip"><td class="stripcell striplabel"></td><td class="stripcell">Q†</td><td class="stripcell">Q†</td><td class="stripcell">Q</td><td class="stripcell">Q†</td><td class="stripcell">Q†</td><td class="stripcell">Q†</td><td class="stripcell">Q</td><td class="stripcell">Q†</td><td class="stripcell">Q</td><td class="stripcell">Q†</td><td class="stripcell">Q</td><td class="stripcell">Q†</td><td class="stripcell">Q</td><td class="stripcell">Q†</td><td class="stripcell">Q</td><td class="stripcell">Q</td><td class="stripcell">Q</td><td class="stripcell">Q†</td></tr>
-<tr><td class="vlabel">Revenue £m</td><td class="vcell"><div class="vval">167.2†</div><div class="vdelta ">— —</div></td><td class="vcell"><div class="vval">178.7†</div><div class="vdelta ">+6.9% 🟢↗</div></td><td class="vcell"><div class="vval">179.9</div><div class="vdelta ">+0.7% 🟡→</div></td><td class="vcell"><div class="vval">167.8†</div><div class="vdelta negd">-6.7% 🔴↘</div></td><td class="vcell"><div class="vval">174.3†</div><div class="vdelta ">+3.9% 🟡→</div></td><td class="vcell"><div class="vval">166.6†</div><div class="vdelta negd">-4.4% 🟡→</div></td><td class="vcell"><div class="vval">164.5</div><div class="vdelta negd">-1.3% 🟡→</div></td><td class="vcell"><div class="vval">166.0†</div><div class="vdelta ">+0.9% 🟡→</div></td><td class="vcell"><div class="vval">172.4</div><div class="vdelta ">+3.9% 🟡→</div></td><td class="vcell"><div class="vval">188.4†</div><div class="vdelta ">+9.3% 🟢↗</div></td><td class="vcell"><div class="vval">173.9</div><div class="vdelta negd">-7.7% 🔴↘</div></td><td class="vcell"><div class="vval">167.5†</div><div class="vdelta negd">-3.7% 🟡→</div></td><td class="vcell"><div class="vval">180.7</div><div class="vdelta ">+7.9% 🟢↗</div></td><td class="vcell"><div class="vval">190.9†</div><div class="vdelta ">+5.6% 🟢↗</div></td><td class="vcell"><div class="vval">170.8</div><div class="vdelta negd">-10.5% 🔴↘</div></td><td class="vcell"><div class="vval">194.8</div><div class="vdelta ">+14.1% 🟢↗</div></td><td class="vcell"><div class="vval">206.0</div><div class="vdelta ">+5.7% 🟢↗</div></td><td class="vcell"><div class="vval">244.2</div><div class="vdelta ">+18.5% 🟢↗</div></td></tr>
-<tr><td colspan="19" class="sectionbar"><span class="ranknum">Rank 3</span> Adjusted PBT margin <span class="nature">(period rate — seasonally matched H1-v-H1 / FY-v-FY)</span></td></tr>
-<tr class="periodstrip"><td class="stripcell striplabel"></td><td class="stripcell"></td><td class="stripcell">FY</td><td class="stripcell"></td><td class="stripcell">H1</td><td class="stripcell"></td><td class="stripcell">FY</td><td class="stripcell"></td><td class="stripcell">H1</td><td class="stripcell"></td><td class="stripcell">FY</td><td class="stripcell"></td><td class="stripcell">H1</td><td class="stripcell"></td><td class="stripcell">FY</td><td class="stripcell"></td><td class="stripcell">H1</td><td class="stripcell"></td><td class="stripcell">FY~</td></tr>
-<tr><td class="vlabel">Adj PBT margin %</td><td class="vcell emptyslot"></td><td class="vcell"><div class="vval">24.4%</div><div class="vdelta ">— —</div></td><td class="vcell emptyslot"></td><td class="vcell"><div class="vval">21.1%</div><div class="vdelta negd">-4.8pp 🔴↘</div></td><td class="vcell emptyslot"></td><td class="vcell"><div class="vval">20.5%</div><div class="vdelta negd">-3.9pp 🔴↘</div></td><td class="vcell emptyslot"></td><td class="vcell"><div class="vval">17.1%</div><div class="vdelta negd">-4.0pp 🔴↘</div></td><td class="vcell emptyslot"></td><td class="vcell"><div class="vval">17.7%</div><div class="vdelta negd">-2.7pp 🔴↘</div></td><td class="vcell emptyslot"></td><td class="vcell"><div class="vval">16.8%</div><div class="vdelta negd">-0.3pp 🟡→</div></td><td class="vcell emptyslot"></td><td class="vcell"><div class="vval">17.8%</div><div class="vdelta ">+0.1pp 🟡→</div></td><td class="vcell emptyslot"></td><td class="vcell"><div class="vval">17.5%</div><div class="vdelta ">+0.7pp 🟡→</div></td><td class="vcell emptyslot"></td><td class="vcell"><div class="vval">20.6%</div><div class="vdelta ">+2.8pp 🟢↗</div></td></tr>
-<tr><td colspan="19" class="sectionbar"><span class="ranknum">Rank 4</span> Quarterly adj PBT <span class="nature">(quarters to FY25, then H-grain from FY26 (policy change))</span></td></tr>
-<tr class="periodstrip"><td class="stripcell striplabel"></td><td class="stripcell"></td><td class="stripcell"></td><td class="stripcell">Q</td><td class="stripcell">Q</td><td class="stripcell">Q</td><td class="stripcell">Q</td><td class="stripcell">Q</td><td class="stripcell">Q</td><td class="stripcell">Q</td><td class="stripcell">Q</td><td class="stripcell">Q</td><td class="stripcell">Q</td><td class="stripcell">Q</td><td class="stripcell">Q</td><td class="stripcell"></td><td class="stripcell">H1</td><td class="stripcell"></td><td class="stripcell">H2</td></tr>
-<tr><td class="vlabel">Adj PBT £m</td><td class="vcell emptyslot"></td><td class="vcell emptyslot"></td><td class="vcell"><div class="vval">40.0</div><div class="vdelta ">— —</div></td><td class="vcell"><div class="vval">33.5†</div><div class="vdelta negd">-16.2% 🔴↘</div></td><td class="vcell"><div class="vval">38.3†</div><div class="vdelta ">+14.3% 🟢↗</div></td><td class="vcell"><div class="vval">29.2†</div><div class="vdelta negd">-23.8% 🔴↘</div></td><td class="vcell"><div class="vval">28.0</div><div class="vdelta negd">-4.1% 🟡→</div></td><td class="vcell"><div class="vval">28.5†</div><div class="vdelta ">+1.8% 🟡→</div></td><td class="vcell"><div class="vval">30.3†</div><div class="vdelta ">+6.3% 🟢↗</div></td><td class="vcell"><div class="vval">35.8†</div><div class="vdelta ">+18.2% 🟢↗</div></td><td class="vcell"><div class="vval">34.0</div><div class="vdelta negd">-5.0% 🔴↘</div></td><td class="vcell"><div class="vval">23.5</div><div class="vdelta negd">-30.9% 🔴↘</div></td><td class="vcell"><div class="vval">30.0</div><div class="vdelta ">+27.7% 🟢↗</div></td><td class="vcell"><div class="vval">39.7†</div><div class="vdelta ">+32.3% 🟢↗</div></td><td class="vcell dashcell"><div class="vval">—</div><div class="vdelta">policy</div></td><td class="vcell"><div class="vval">64.1</div><div class="vdelta ">+11.5% 🟢↗</div></td><td class="vcell dashcell"><div class="vval">—</div><div class="vdelta">policy</div></td><td class="vcell"><div class="vval">103.9†</div><div class="vdelta ">+49.1% 🟢↗</div></td></tr>
-<tr><td colspan="19" class="sectionbar"><span class="ranknum">Rank 5</span> Adjusted operating margin <span class="nature">(period rate — H1-v-H1 / FY-v-FY; disclosed from H1 FY25)</span></td></tr>
-<tr class="periodstrip"><td class="stripcell striplabel"></td><td class="stripcell"></td><td class="stripcell"></td><td class="stripcell"></td><td class="stripcell"></td><td class="stripcell"></td><td class="stripcell"></td><td class="stripcell"></td><td class="stripcell"></td><td class="stripcell"></td><td class="stripcell"></td><td class="stripcell"></td><td class="stripcell">H1</td><td class="stripcell"></td><td class="stripcell">FY</td><td class="stripcell"></td><td class="stripcell">H1</td><td class="stripcell"></td><td class="stripcell">FY~</td></tr>
-<tr><td class="vlabel">Adj op margin %</td><td class="vcell emptyslot"></td><td class="vcell emptyslot"></td><td class="vcell emptyslot"></td><td class="vcell emptyslot"></td><td class="vcell emptyslot"></td><td class="vcell emptyslot"></td><td class="vcell emptyslot"></td><td class="vcell emptyslot"></td><td class="vcell emptyslot"></td><td class="vcell emptyslot"></td><td class="vcell emptyslot"></td><td class="vcell"><div class="vval">15.1%</div><div class="vdelta ">— —</div></td><td class="vcell emptyslot"></td><td class="vcell"><div class="vval">15.7%</div><div class="vdelta ">— —</div></td><td class="vcell emptyslot"></td><td class="vcell"><div class="vval">15.7%</div><div class="vdelta ">+0.6pp 🟡→</div></td><td class="vcell emptyslot"></td><td class="vcell"><div class="vval">18.7%</div><div class="vdelta ">+3.0pp 🟢↗</div></td></tr>
+<tr><td colspan="20" class="sectionbar"><span class="ranknum">Rank 1</span> Order book <span class="nature">(snapshot — directional, no £ ever disclosed)</span></td></tr>
+<tr class="periodstrip"><td class="stripcell striplabel"></td><td class="stripcell">—</td><td class="stripcell">FY</td><td class="stripcell">Q</td><td class="stripcell">H1</td><td class="stripcell">Q</td><td class="stripcell">FY</td><td class="stripcell">Q</td><td class="stripcell">H1</td><td class="stripcell">Q</td><td class="stripcell">FY</td><td class="stripcell">Q</td><td class="stripcell">H1</td><td class="stripcell">Q</td><td class="stripcell">FY</td><td class="stripcell">Q</td><td class="stripcell">H1</td><td class="stripcell">Q</td><td class="stripcell">FY</td><td class="stripcell">Q</td></tr>
+<tr><td class="vlabel">Direction</td><td class="vcell empty"><div class="vval">⊘</div><div class="vturn">—</div></td><td class="vcell "><div class="vval">✅</div><div class="vturn">—</div></td><td class="vcell "><div class="vval">✅</div><div class="vturn">🟡→</div></td><td class="vcell "><div class="vval">✅</div><div class="vturn">🟡→</div></td><td class="vcell "><div class="vval">—</div><div class="vturn">🔴↘</div></td><td class="vcell "><div class="vval">🟡</div><div class="vturn">🔴↘</div></td><td class="vcell "><div class="vval">—</div><div class="vturn">🟡→</div></td><td class="vcell "><div class="vval">✅</div><div class="vturn">🟡→</div></td><td class="vcell "><div class="vval">—</div><div class="vturn">🔴↘</div></td><td class="vcell "><div class="vval">🟡</div><div class="vturn">🟡→</div></td><td class="vcell "><div class="vval">🟡</div><div class="vturn">🟡→</div></td><td class="vcell "><div class="vval">✅</div><div class="vturn">🟢↗</div></td><td class="vcell "><div class="vval">✅</div><div class="vturn">🟢↗</div></td><td class="vcell "><div class="vval">🟡</div><div class="vturn">🟡→</div></td><td class="vcell "><div class="vval">✅</div><div class="vturn">🟢↗</div></td><td class="vcell "><div class="vval">✅✅</div><div class="vturn">🟢↗</div></td><td class="vcell "><div class="vval">✅✅</div><div class="vturn">🟢↗</div></td><td class="vcell "><div class="vval">🟡</div><div class="vturn">🟢↗</div></td><td class="vcell bs-col"><div class="vval">✅✅✅</div><div class="vturn">🟢↗</div></td></tr>
+<tr><td colspan="20" class="sectionbar"><span class="ranknum">Rank 2</span> Quarterly revenue <span class="nature">(quarters — sequential QonQ flow)</span></td></tr>
+<tr class="periodstrip"><td class="stripcell striplabel"></td><td class="stripcell">Q†</td><td class="stripcell">Q†</td><td class="stripcell">Q</td><td class="stripcell">Q†</td><td class="stripcell">Q†</td><td class="stripcell">Q†</td><td class="stripcell">Q</td><td class="stripcell">Q†</td><td class="stripcell">Q</td><td class="stripcell">Q†</td><td class="stripcell">Q</td><td class="stripcell">Q†</td><td class="stripcell">Q</td><td class="stripcell">Q†</td><td class="stripcell">Q</td><td class="stripcell">Q</td><td class="stripcell">Q</td><td class="stripcell">Q†</td><td class="stripcell">Q</td></tr>
+<tr><td class="vlabel">Revenue £m</td><td class="vcell"><div class="vval">167.2†</div><div class="vdelta ">— —</div></td><td class="vcell"><div class="vval">178.7†</div><div class="vdelta ">+6.9% 🟢↗</div></td><td class="vcell"><div class="vval">179.9</div><div class="vdelta ">+0.7% 🟡→</div></td><td class="vcell"><div class="vval">167.8†</div><div class="vdelta negd">-6.7% 🔴↘</div></td><td class="vcell"><div class="vval">174.3†</div><div class="vdelta ">+3.9% 🟡→</div></td><td class="vcell"><div class="vval">166.6†</div><div class="vdelta negd">-4.4% 🟡→</div></td><td class="vcell"><div class="vval">164.5</div><div class="vdelta negd">-1.3% 🟡→</div></td><td class="vcell"><div class="vval">166.0†</div><div class="vdelta ">+0.9% 🟡→</div></td><td class="vcell"><div class="vval">172.4</div><div class="vdelta ">+3.9% 🟡→</div></td><td class="vcell"><div class="vval">188.4†</div><div class="vdelta ">+9.3% 🟢↗</div></td><td class="vcell"><div class="vval">173.9</div><div class="vdelta negd">-7.7% 🔴↘</div></td><td class="vcell"><div class="vval">167.5†</div><div class="vdelta negd">-3.7% 🟡→</div></td><td class="vcell"><div class="vval">180.7</div><div class="vdelta ">+7.9% 🟢↗</div></td><td class="vcell"><div class="vval">190.9†</div><div class="vdelta ">+5.6% 🟢↗</div></td><td class="vcell"><div class="vval">170.8</div><div class="vdelta negd">-10.5% 🔴↘</div></td><td class="vcell"><div class="vval">194.8</div><div class="vdelta ">+14.1% 🟢↗</div></td><td class="vcell"><div class="vval">206.0</div><div class="vdelta ">+5.7% 🟢↗</div></td><td class="vcell"><div class="vval">244.2</div><div class="vdelta ">+18.5% 🟢↗</div></td><td class="vcell bs-col"><div class="vval">251.8</div><div class="vdelta ">+3.1% 🟡→</div></td></tr>
+<tr><td colspan="20" class="sectionbar"><span class="ranknum">Rank 3</span> Adjusted PBT margin <span class="nature">(period rate — seasonally matched H1-v-H1 / FY-v-FY)</span></td></tr>
+<tr class="periodstrip"><td class="stripcell striplabel"></td><td class="stripcell"></td><td class="stripcell">FY</td><td class="stripcell"></td><td class="stripcell">H1</td><td class="stripcell"></td><td class="stripcell">FY</td><td class="stripcell"></td><td class="stripcell">H1</td><td class="stripcell"></td><td class="stripcell">FY</td><td class="stripcell"></td><td class="stripcell">H1</td><td class="stripcell"></td><td class="stripcell">FY</td><td class="stripcell"></td><td class="stripcell">H1</td><td class="stripcell"></td><td class="stripcell">FY~</td><td class="stripcell"></td></tr>
+<tr><td class="vlabel">Adj PBT margin %</td><td class="vcell emptyslot"></td><td class="vcell"><div class="vval">24.4%</div><div class="vdelta ">— —</div></td><td class="vcell emptyslot"></td><td class="vcell"><div class="vval">21.1%</div><div class="vdelta negd">-4.8pp 🔴↘</div></td><td class="vcell emptyslot"></td><td class="vcell"><div class="vval">20.5%</div><div class="vdelta negd">-3.9pp 🔴↘</div></td><td class="vcell emptyslot"></td><td class="vcell"><div class="vval">17.1%</div><div class="vdelta negd">-4.0pp 🔴↘</div></td><td class="vcell emptyslot"></td><td class="vcell"><div class="vval">17.7%</div><div class="vdelta negd">-2.7pp 🔴↘</div></td><td class="vcell emptyslot"></td><td class="vcell"><div class="vval">16.8%</div><div class="vdelta negd">-0.3pp 🟡→</div></td><td class="vcell emptyslot"></td><td class="vcell"><div class="vval">17.8%</div><div class="vdelta ">+0.1pp 🟡→</div></td><td class="vcell emptyslot"></td><td class="vcell"><div class="vval">17.5%</div><div class="vdelta ">+0.7pp 🟡→</div></td><td class="vcell emptyslot"></td><td class="vcell"><div class="vval">20.6%</div><div class="vdelta ">+2.8pp 🟢↗</div></td><td class="vcell emptyslot bs-col"></td></tr>
+<tr><td colspan="20" class="sectionbar"><span class="ranknum">Rank 4</span> Quarterly adj PBT <span class="nature">(quarters to FY25, then H-grain from FY26 (policy change))</span></td></tr>
+<tr class="periodstrip"><td class="stripcell striplabel"></td><td class="stripcell"></td><td class="stripcell"></td><td class="stripcell">Q</td><td class="stripcell">Q</td><td class="stripcell">Q</td><td class="stripcell">Q</td><td class="stripcell">Q</td><td class="stripcell">Q</td><td class="stripcell">Q</td><td class="stripcell">Q</td><td class="stripcell">Q</td><td class="stripcell">Q</td><td class="stripcell">Q</td><td class="stripcell">Q</td><td class="stripcell"></td><td class="stripcell">H1</td><td class="stripcell"></td><td class="stripcell">H2</td><td class="stripcell"></td></tr>
+<tr><td class="vlabel">Adj PBT £m</td><td class="vcell emptyslot"></td><td class="vcell emptyslot"></td><td class="vcell"><div class="vval">40.0</div><div class="vdelta ">— —</div></td><td class="vcell"><div class="vval">33.5†</div><div class="vdelta negd">-16.2% 🔴↘</div></td><td class="vcell"><div class="vval">38.3†</div><div class="vdelta ">+14.3% 🟢↗</div></td><td class="vcell"><div class="vval">29.2†</div><div class="vdelta negd">-23.8% 🔴↘</div></td><td class="vcell"><div class="vval">28.0</div><div class="vdelta negd">-4.1% 🟡→</div></td><td class="vcell"><div class="vval">28.5†</div><div class="vdelta ">+1.8% 🟡→</div></td><td class="vcell"><div class="vval">30.3†</div><div class="vdelta ">+6.3% 🟢↗</div></td><td class="vcell"><div class="vval">35.8†</div><div class="vdelta ">+18.2% 🟢↗</div></td><td class="vcell"><div class="vval">34.0</div><div class="vdelta negd">-5.0% 🔴↘</div></td><td class="vcell"><div class="vval">23.5</div><div class="vdelta negd">-30.9% 🔴↘</div></td><td class="vcell"><div class="vval">30.0</div><div class="vdelta ">+27.7% 🟢↗</div></td><td class="vcell"><div class="vval">39.7†</div><div class="vdelta ">+32.3% 🟢↗</div></td><td class="vcell dashcell"><div class="vval">—</div><div class="vdelta">policy</div></td><td class="vcell"><div class="vval">64.1</div><div class="vdelta ">+11.5% 🟢↗</div></td><td class="vcell dashcell"><div class="vval">—</div><div class="vdelta">policy</div></td><td class="vcell"><div class="vval">103.9†</div><div class="vdelta ">+49.1% 🟢↗</div></td><td class="vcell dashcell bs-col"><div class="vval">—</div><div class="vdelta">policy</div></td></tr>
+<tr><td colspan="20" class="sectionbar"><span class="ranknum">Rank 5</span> Adjusted operating margin <span class="nature">(period rate — H1-v-H1 / FY-v-FY; disclosed from H1 FY25)</span></td></tr>
+<tr class="periodstrip"><td class="stripcell striplabel"></td><td class="stripcell"></td><td class="stripcell"></td><td class="stripcell"></td><td class="stripcell"></td><td class="stripcell"></td><td class="stripcell"></td><td class="stripcell"></td><td class="stripcell"></td><td class="stripcell"></td><td class="stripcell"></td><td class="stripcell"></td><td class="stripcell">H1</td><td class="stripcell"></td><td class="stripcell">FY</td><td class="stripcell"></td><td class="stripcell">H1</td><td class="stripcell"></td><td class="stripcell">FY~</td><td class="stripcell"></td></tr>
+<tr><td class="vlabel">Adj op margin %</td><td class="vcell emptyslot"></td><td class="vcell emptyslot"></td><td class="vcell emptyslot"></td><td class="vcell emptyslot"></td><td class="vcell emptyslot"></td><td class="vcell emptyslot"></td><td class="vcell emptyslot"></td><td class="vcell emptyslot"></td><td class="vcell emptyslot"></td><td class="vcell emptyslot"></td><td class="vcell emptyslot"></td><td class="vcell"><div class="vval">15.1%</div><div class="vdelta ">— —</div></td><td class="vcell emptyslot"></td><td class="vcell"><div class="vval">15.7%</div><div class="vdelta ">— —</div></td><td class="vcell emptyslot"></td><td class="vcell"><div class="vval">15.7%</div><div class="vdelta ">+0.6pp 🟡→</div></td><td class="vcell emptyslot"></td><td class="vcell"><div class="vval">18.7%</div><div class="vdelta ">+3.0pp 🟢↗</div></td><td class="vcell emptyslot bs-col"></td></tr>
 </tbody></table></div>
 
 <details class="d1"><summary>§2 workings — card strip, rank notes, turn methodology</summary>
@@ -399,25 +395,25 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;padd
 
  <details class="d2"><summary>🔲 Card strip — wall preview &amp; index entry</summary>
  <div class="d2body">
-  <p class="small">Nine cells per rank, right-anchored on the Buy/Sell column (outlined). Ranks 1–5 at quarter grain, Q4&nbsp;24 to Q4&nbsp;26.</p>
-  <table class="strip"><tr><td class="slab"></td><td class="slab" style="font-size:9px">Q4 24</td><td class="slab" style="font-size:9px">Q1 25</td><td class="slab" style="font-size:9px">Q2 25</td><td class="slab" style="font-size:9px">Q3 25</td><td class="slab" style="font-size:9px">Q4 25</td><td class="slab" style="font-size:9px">Q1 26</td><td class="slab" style="font-size:9px">Q2 26</td><td class="slab" style="font-size:9px">Q3 26</td><td class="slab" style="font-size:9px">Q4 26</td></tr><tr><td class="slab">R1</td><td class="ca">→</td><td class="ca">→</td><td class="cg">↗</td><td class="cg">↗</td><td class="ca">→</td><td class="cg">↗</td><td class="cg">↗</td><td class="cg">↗</td><td class="cg bs">↗</td></tr><tr><td class="slab">R2</td><td class="cg">↗</td><td class="cr">↘</td><td class="ca">→</td><td class="cg">↗</td><td class="cg">↗</td><td class="cr">↘</td><td class="cg">↗</td><td class="cg">↗</td><td class="cg bs">↗</td></tr><tr><td class="slab">R3</td><td class="cr">↘</td><td class="cn"></td><td class="ca">→</td><td class="cn"></td><td class="ca">→</td><td class="cn"></td><td class="ca">→</td><td class="cn"></td><td class="cg bs">↗</td></tr><tr><td class="slab">R4</td><td class="cg">↗</td><td class="cr">↘</td><td class="cr">↘</td><td class="cg">↗</td><td class="cg">↗</td><td class="cn"></td><td class="cg">↗</td><td class="cn"></td><td class="cg bs">↗</td></tr><tr><td class="slab">R5</td><td class="cn"></td><td class="cn"></td><td class="cn"></td><td class="cn"></td><td class="cn"></td><td class="cn"></td><td class="ca">→</td><td class="cn"></td><td class="cg bs">↗</td></tr></table>
+  <p class="small">Nine cells per rank, right-anchored on the Buy/Sell column (outlined). Ranks 1–5 at quarter grain, Q1&nbsp;25 to Q1&nbsp;27.</p>
+  <table class="cstrip"><tr><td class="slab"></td><td class="slab" style="font-size:9px">Q1 25</td><td class="slab" style="font-size:9px">Q2 25</td><td class="slab" style="font-size:9px">Q3 25</td><td class="slab" style="font-size:9px">Q4 25</td><td class="slab" style="font-size:9px">Q1 26</td><td class="slab" style="font-size:9px">Q2 26</td><td class="slab" style="font-size:9px">Q3 26</td><td class="slab" style="font-size:9px">Q4 26</td><td class="slab" style="font-size:9px">Q1 27</td></tr><tr><td class="slab">R1</td><td class="ca">→</td><td class="cg">↗</td><td class="cg">↗</td><td class="ca">→</td><td class="cg">↗</td><td class="cg">↗</td><td class="cg">↗</td><td class="cg">↗</td><td class="cg bs">↗</td></tr><tr><td class="slab">R2</td><td class="cr">↘</td><td class="ca">→</td><td class="cg">↗</td><td class="cg">↗</td><td class="cr">↘</td><td class="cg">↗</td><td class="cg">↗</td><td class="cg">↗</td><td class="ca bs">→</td></tr><tr><td class="slab">R3</td><td class="cn"></td><td class="ca">→</td><td class="cn"></td><td class="ca">→</td><td class="cn"></td><td class="ca">→</td><td class="cn"></td><td class="cg">↗</td><td class="cn bs"></td></tr><tr><td class="slab">R4</td><td class="cr">↘</td><td class="cr">↘</td><td class="cg">↗</td><td class="cg">↗</td><td class="cn"></td><td class="cg">↗</td><td class="cn"></td><td class="cg">↗</td><td class="cn bs"></td></tr><tr><td class="slab">R5</td><td class="cn"></td><td class="cn"></td><td class="cn"></td><td class="cn"></td><td class="cn"></td><td class="ca">→</td><td class="cn"></td><td class="cg">↗</td><td class="cn bs"></td></tr></table>
   <p class="small" style="margin-top:10px">Embedded index entry, as delivered:</p>
   <pre class="entry">{
  "ticker": "RSW",
  "company": "Renishaw plc",
  "kind": "ticker",
  "direction": "up",
- "headline": "Record FY26 at £815.8m / £168.0m clears April's raised tops; FY27 'started strongly' with H2 profit up 49%.",
- "trigger": "2-of-3 green-shoot: raised guide cleared at audit; sustained positive language (operator override)",
- "alert": true,
- "fired": 2,
+ "headline": "Record Q1 at £251.8m, up 47%; but profit drops out of the FY27 outlook sentence for the first time.",
+ "trigger": "1 of 3: numbers still rising; language amber after two falls; disclosure amber (policy)",
+ "alert": false,
+ "fired": 1,
  "fired_of": 3,
- "lights": "gga",
- "rns_type": "FY R",
- "rns_date": "2026-09-23",
- "build_date": "2026-09-23",
- "spec_version": "5.6",
- "next_test": "Oct-26 Q1 FY27 TU: Q1 revenue vs £170.8m — roughly +10% needed to track the £895m FY27 consensus.",
+ "lights": "gaa",
+ "rns_type": "Q1 TU",
+ "rns_date": "2026-10-22",
+ "build_date": "2026-10-22",
+ "spec_version": "5.8",
+ "next_test": "Feb-27 H1 FY27 results: first numeric FY27 guide vs £934m / £208m consensus, and whether profit returns to the outlook.",
  "url": "RSW.html",
  "grid": {
   "labels": [
@@ -428,7 +424,6 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;padd
    "R5"
   ],
   "periods": [
-   "Q4 24",
    "Q1 25",
    "Q2 25",
    "Q3 25",
@@ -436,31 +431,32 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;padd
    "Q1 26",
    "Q2 26",
    "Q3 26",
-   "Q4 26"
+   "Q4 26",
+   "Q1 27"
   ],
   "rows": [
-   "aaggagggg",
-   "graggrggg",
-   "r-a-a-a-g",
-   "grrgg-g-g",
-   "------a-g"
+   "aggaggggg",
+   "raggrggga",
+   "-a-a-a-g-",
+   "rrgg-g-g-",
+   "-----a-g-"
   ],
-  "note": "Ranks 1-5 at quarter grain, right-anchored on the 23 Sep 2026 FY26 results."
+  "note": "Ranks 1-5 at quarter grain, right-anchored on the 22 Oct 2026 Q1 FY27 TU."
  },
  "prev": {
   "direction": "up",
   "fired": 2,
   "lights": "gga",
-  "rns_date": "2026-07-24",
-  "rns_type": "Post-close TU"
+  "rns_date": "2026-09-23",
+  "rns_type": "FY R"
  },
  "trend": {
-  "mode": "growth",
-  "cells": "g-g",
+  "mode": "share",
+  "cells": "g--",
   "rows": [
    {
     "m": "REV",
-    "gap": 11.4
+    "gap": 3.9
    },
    {
     "m": "EBITDA",
@@ -468,16 +464,17 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;padd
    },
    {
     "m": "PBT",
-    "gap": 34.7
+    "gap": null
    }
   ]
- }
+ },
+ "chart": "charts/RSW.json?v=2026-10-22.c7e3"
 }</pre>
  </div></details>
 
  <details class="d2"><summary>Notes — Ranks 1–5</summary>
  <div class="d2body"><div class="sub"><b>Rank 1 (Order book):</b> silence through the FY23–FY24 trough (three consecutive docs with no group-level mention) was deeper than a first read suggested; re-escalation from H1 FY25 preceded the hard-number turn by roughly two quarters.</div>
-<div class="sub"><b>Rank 2 (Quarterly revenue):</b> Q4 FY26 (£244.2m, printed in the FY26 results segment table) is a record, 28% above Q4 FY25 — the third consecutive record quarter (Q2, Q3, Q4 FY26); Q2 (£194.8m) is directly reported in the H1 FY26 RNS, not derived.</div>
+<div class="sub"><b>Rank 2 (Quarterly revenue):</b> Q1 FY27 £251.8m is a fourth consecutive record but only +3.1% on Q4 — in band, amber; the first non-green quarter since Q1 FY26. Earlier: Q4 FY26 (£244.2m, printed in the FY26 results segment table) is a record, 28% above Q4 FY25 — the third consecutive record quarter (Q2, Q3, Q4 FY26); Q2 (£194.8m) is directly reported in the H1 FY26 RNS, not derived.</div>
 <div class="sub"><b>Rank 3 (Adj PBT margin):</b> the compression cycle ran four consecutive half-on-half periods before stabilising; FY26~ is the first band-crossing 🟢 since FY22.</div>
 <div class="sub"><b>Rank 4 (Quarterly adj PBT):</b> quarterly grain permanently discontinued by stated company policy (Oct-25 TU), the same quarter the £20m cost programme landed. H2 FY26† (£103.9m = audited FY £168.0m − H1 £64.1m) remains single-route; quarterly profit no longer printed to give a second route. Was pending Sep-26 corroboration.</div>
 <div class="sub"><b>Rank 5 (Adj op margin):</b> only disclosed from H1 FY25; FY26 18.7% (audited) closes to within 1.3pp of the company's stated >20% through-cycle target.</div>
@@ -486,7 +483,7 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;padd
  <details class="d2"><summary>Turn methodology &amp; restatement basis</summary>
  <div class="d2body"><div class="sub">Every &Delta;, QonQ/HonH, rate delta and Turn arrow above is computed in one script from printed values, with the comparison basis hard-coded per metric type: order book (snapshot, directional) compares position-to-position at its own disclosure grain; quarterly revenue and quarterly adj PBT (flow) compare sequential quarter-to-quarter (QonQ), with any negative QonQ firing &#128308;&#8600; on level regardless of year-on-year comparison; adjusted PBT margin and adjusted operating margin (rate) compare seasonally-matched periods only &mdash; H1-vs-H1, FY-vs-FY, never a mixed-period comparison &mdash; banded at &plusmn;2.0pp for half/full-year rates. Rank 4 (quarterly adj PBT) is flow-compared like-period-to-like-period (H1-vs-H1, H2-vs-H2), never cross-grain against an adjacent quarter.</div>
 <div class="sub">Quarterly derivations follow Q2&dagger;=H1&minus;Q1 and Q4&dagger;=FY&minus;9M, cross-verified via the second route (H2=Q3+Q4) where available; all such ties matched exactly in this run. Q2 FY26 (&pound;194.8m) is reported directly in the H1 FY26 RNS, not derived &mdash; no dagger. &dagger; marks a derived cell; a cell with no reported or derivable value is an unfilled grid slot, not a gap &mdash; it is cadence information in its own right.</div>
-<div class="sub">Restatement/provenance: no restated (&#691;) columns this run. Later-audited figures govern any prior company &ldquo;c.&rdquo; estimate where both exist (none conflicted this run). H2 FY26&dagger; adj PBT (&pound;103.9m = audited FY &pound;168.0m &minus; H1 &pound;64.1m) remains single-route; the Jul-26 &ldquo;c.&rdquo; estimates (&pound;815m, &pound;167m, &pound;243m) are superseded by the audited &pound;815.8m, &pound;168.0m and printed Q4 &pound;244.2m (later audited governs). Buy/Sell (rightmost) column: Q1–Q4 FY26 revenue, FY26 adjusted PBT and adjusted operating margin are all printed in the 23 Sep 2026 FY26 results; only H2 adjusted PBT is derived.</div>
+<div class="sub">Restatement/provenance: no restated (&#691;) columns this run. Later-audited figures govern any prior company &ldquo;c.&rdquo; estimate where both exist (none conflicted this run). H2 FY26&dagger; adj PBT (&pound;103.9m = audited FY &pound;168.0m &minus; H1 &pound;64.1m) remains single-route; the Jul-26 &ldquo;c.&rdquo; estimates (&pound;815m, &pound;167m, &pound;243m) are superseded by the audited &pound;815.8m, &pound;168.0m and printed Q4 &pound;244.2m (later audited governs). Buy/Sell (rightmost) column: Q1 FY27 revenue (£251.8m) is printed directly in the 22 Oct 2026 TU, with segment splits for Q1 FY27, Q1 FY26 and Q4 FY26; nothing derived. Margins and quarterly profit are not printed at Q1 (profit by stated policy since Oct-25).</div>
 </div></details>
 
 </div></details>
@@ -494,51 +491,52 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;padd
 
 <!-- ============ §2.0 ============ -->
 <div class="section">
-<h2>§2.0 — Most-Recent-RNS Current-State Read — ⭐ FY26 FY R (23 Sep 2026)</h2>
-<div class="small" style="margin-bottom:4px;"><b>⭐ Buy/Sell RNS: 23 Sep 2026 — FY26 Final Results</b></div>
+<h2>§2.0 — Most-Recent-RNS Current-State Read — ⭐ Q1 FY27 TU (22 Oct 2026)</h2>
+<div class="small" style="margin-bottom:4px;"><b>⭐ Buy/Sell RNS: 22 Oct 2026 — Q1 FY27 Trading Update</b></div>
 
 <div class="s20-row">
  <div class="bridge">
-    <div class="bridge-head">🍺 IDIOT'S GUIDE TO THE ADJUSTED PBT BRIDGE — why profit went up (£127.2m → £168.0m)<span style="float:right;font-family:-apple-system,Segoe UI,sans-serif;font-size:12px;font-weight:600">⭐ FY R · 23 Sep 2026</span></div>
+    <div class="bridge-head">🍺 IDIOT'S GUIDE TO THE Q1 REVENUE BRIDGE — why profit went up (£170.8m → £251.8m)<span style="float:right;font-family:-apple-system,Segoe UI,sans-serif;font-size:12px;font-weight:600">⭐ Q1 TU · 22 Oct 2026</span></div>
     <div class="bridge-rows">
       <div class="bridge-row green">
-        <div class="bridge-driver">🏭 Encoder lines on double time</div>
-        <div class="bridge-contrib">+4.4pt margin</div>
-        <div class="bridge-clause">Chip-equipment builders couldn't get enough of Renishaw's position sensors, so sales grew far faster than the cost of the engineers, sales teams and offices behind them. Same building, same payroll, a lot more boxes going out the door. That's worth 4.4 points of margin on its own — and it's after paying out £6.9m more in staff bonuses for the privilege.</div>
+        <div class="bridge-driver">🔬 Chip fabs ate the encoders</div>
+        <div class="bridge-contrib">+£43.9m</div>
+        <div class="bridge-clause">The little optical rulers that tell a wafer-handling robot exactly where it is — nearly doubled, £52.1m to £96.0m. Every new chip tool needs a fistful, and the order book still grew on top. They're building more production lines just to keep up, which is a lovely problem until it isn't.</div>
       </div>
       <div class="bridge-row green">
-        <div class="bridge-driver">✂️ Last year's job cuts paid out</div>
-        <div class="bridge-contrib">+£20m</div>
-        <div class="bridge-clause">The cost programme started last year finally landed in full: about £20m saved, 2.5 points of margin. Here's the catch nobody puts in the headline — making those cuts cost £18.0m in redundancy and one-offs, which the company leaves out of the "adjusted" profit. So you paid for the diet and the gym membership in the same year.</div>
+        <div class="bridge-driver">📐 The probes woke up</div>
+        <div class="bridge-contrib">+£28.8m</div>
+        <div class="bridge-clause">Measuring machines and shop-floor gauges up from £102.0m to £130.8m. The sensors sold to machine-tool builders, flat all last year, finally moved — aerospace, defence and energy factories are checking more parts.</div>
       </div>
-      <div class="bridge-row red">
-        <div class="bridge-driver">💱 The mini-Budget bonus ran dry</div>
-        <div class="bridge-contrib">−2.2pt margin</div>
-        <div class="bridge-clause">Back in autumn 2022, when sterling crashed after the mini-Budget, Renishaw locked in lovely exchange rates for its foreign sales. Those deals padded H1 FY25 handsomely and have now expired. Converting dollars and yen back into pounds simply pays less than it did — 2.2 points of margin gone, and no one did anything wrong.</div>
+      <div class="bridge-row green">
+        <div class="bridge-driver">🖨️ Metal printers for jet parts</div>
+        <div class="bridge-contrib">+£8.3m</div>
+        <div class="bridge-clause">The smallest division, £16.7m to £25.0m, mostly 3D metal printers bought by aerospace and medical customers. It's actually down a lot on a bumper Q4 — the company says that was expected — but the order book got fatter.</div>
       </div>
-      <div class="bridge-row red">
-        <div class="bridge-driver">🗑️ A sensor they had to shelve</div>
-        <div class="bridge-contrib">−£8.8m</div>
-        <div class="bridge-clause">£5.3m written off on a new encoder the company pulled its people away from — because the OLD encoders were selling too fast to staff both. Rarely has a write-off been such a humblebrag. The other £3.5m is property in Slovenia and the UK marked down in value.</div>
+      <div class="bridge-row amber">
+        <div class="bridge-driver">🫥 The bit they didn't say</div>
+        <div class="bridge-contrib">n/q</div>
+        <div class="bridge-clause">Not one profit number in the whole update. Revenue's a record, but whether it turned into money is a mystery until February — and "profit" has quietly vanished from the outlook sentence it sat in last month.</div>
       </div>
     </div>
-    <div class="bridge-caption">So in one sentence: busy chip customers filled the factory, the job cuts showed up in full, and that easily outran a currency deal expiring and one product put on the shelf. Profit falls when: semiconductor makers stop ordering new kit and those same encoder lines go quiet — the extra margin from being busy vanishes just as fast as it arrived — and there isn't a second £20m of cuts left to fall back on.</div>
+    <div class="bridge-caption">So in one sentence: every division sold more than a year ago, with chip-tool sensors doing over half the work, against a base the company itself calls weak. Profit falls when: semiconductor builders stop placing orders and the extra encoder lines they're adding now sit half-idle — the cost of the new capacity arrives either way.</div>
   </div>
 
  <div>
-  <div class="statebar">
-   <div class="statebar-head"><span class="em">🌡️</span>CURRENT STATE — the read right now <span style="float:right;font-family:-apple-system,Segoe UI,sans-serif;font-size:12px;font-weight:600">⭐ FY R · 23 Sep 2026</span></div>
+  <div class="statebar" style="border-color:#2f9e5c">
+   <div class="statebar-head"><span class="em">🌡️</span>CURRENT STATE — the read right now <span style="float:right;font-family:-apple-system,Segoe UI,sans-serif;font-size:12px;font-weight:600">⭐ Q1 TU · 22 Oct 2026</span></div>
    <div class="statebar-body">
-    <div class="lead">🟢 TURNING UP — STABLE.</div>
+    <div class="lead">🟢 TURNING UP — SLOWING STEP.</div>
     <ul>
-     <li>Q4 FY26 printed at £244.2m, +18.5% on Q3 — third record quarter running.</li>
-     <li>Audited FY26: revenue £815.8m (+14.4%), adj PBT £168.0m (+32.1%).</li>
-     <li>Both clear April's raised tops by £10.8m and £3.0m; in line with consensus.</li>
-     <li>H2 revenue +21.2% against H1's +7.1% — growth accelerating into FY27.</li>
-     <li>FY27 guide qualitative, "started strongly" — FY results never carry a numeric range.</li>
-     <li>Language still 🟢🟢 at Sep-26; green held by operator override, not a rising streak.</li>
-     <li>⚠️ Receivables +25.8% against sales +14.4%; cash conversion down to 79%.</li>
-     <li>⚠️ ERP rollout hit "deployment challenges"; governance tightened, fix not yet proven.</li>
+     <li>Record Q1 £251.8m, +47.4% on Q1 FY26 — a base the company calls weak.</li>
+     <li>Only +3.1% on Q4: inside the band, first amber quarter since Q1 FY26.</li>
+     <li>Encoders +84% and all three segments grew; Specialised Tech fell 41% on Q4.</li>
+     <li>FY27 guide still qualitative — "strong progress on revenue and operating margin".</li>
+     <li>Consensus already raised to £934m / £208m; Q1 tracks +33pp above the pace needed.</li>
+     <li>Language down two prints running — amber lamp, trigger 1/3, alert off.</li>
+     <li>⚠️ "Profit" dropped from the FY27 outlook sentence; no profit figure anywhere.</li>
+     <li>⚠️ New caveat: "mindful of the cyclical nature of demand over the medium term".</li>
+     <li>⚠️ Cash paragraph missing for a third trading update running.</li>
     </ul>
    </div>
   </div>
@@ -549,27 +547,33 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;padd
 <div class="d1body">
 
  <details class="d2"><summary>The four checks — workings behind the read</summary>
- <div class="d2body"><div class="checks">
-<ol>
-<li><b>Sequential —</b> Q4 FY26 £244.2m (printed) vs Q3 £206.0m: +18.5% 🟢↗. Q1–Q4 sum 170.8 + 194.8 + 206.0 + 244.2 = 815.8 ✓ ties to the audited total.</li>
-<li><b>Same-type vs last year —</b> FY26 R vs FY25 R: revenue £815.8m vs £713.0m (+14.4%); adj PBT £168.0m vs £127.2m (+32.1%); adj op margin 18.7% vs 15.7% (+3.0pp); adj PBT margin 20.6% vs 17.8% (+2.8pp). All 🟢↗. Language 🟢🟢 vs Sep-25's 🟢.</li>
-<li><b>Every derivable sub-period —</b> Q4 YoY +27.9% vs derived Q4 FY25† £190.9m (RNS: 28% ✓). H2 revenue £450.2m† +21.2% vs H1 +7.1%; H2 adj PBT £103.9m† +49.1% vs H1 +11.5%. Back-loaded, accelerating; H2 profit single-route.</li>
-<li><b>Guidance vs prior guide —</b> Audited £815.8m / £168.0m clear April's £775–805m / £145–165m tops by £10.8m / £3.0m, and edge Jul-26's c.£815m / c.£167m. Against the 22-Sep consensus (£815.4m / £167.1m): +0.05% / +0.5%, in line. FY27 guide qualitative only, matching the FY-results habit since Sep-22 — no G fire. Consensus FY27: £895.3m / £192.1m.</li>
-</ol>
-</div></div></details>
+ <div class="d2body"><div class="checks"><ol>
+<li><b>Sequential —</b> Q1 FY27 £251.8m vs Q4 FY26 £244.2m: +3.1% 🟡→, inside the ±5pp band. Segments: IM +9.2% (130.8 vs 119.8), PM +17.5% (96.0 vs 81.7), ST −41.5% (25.0 vs 42.7, "as expected"). Both quarters tie to group (251.8 ✓, 244.2 ✓).</li>
+<li><b>Same-type vs last year —</b> vs Q1 FY26 TU (Oct-25): £251.8m vs £170.8m, +47.4% (RNS 47% ✓); constant currency 48% (£248.4m vs £167.5m). The company calls the base "weak". Tone moves from "steady start, in line with our expectations" (⚪) to "strong start" (🟢). Drawer spot-check: Oct-25 verified.</li>
+<li><b>Every derivable sub-period —</b> Q1 is a directly printed quarter; nothing derived. ST is the only segment to fall sequentially.</li>
+<li><b>Guidance vs prior guide —</b> qualitative only, as at every Q1 TU. Sep-26: "further strong progress on revenue, profit and operating margin". Oct-26: "strong progress on revenue and operating margin". No numeric guide moved, so no G fire; the dropped word is scored as language (§3). Consensus (16 Oct 26): FY27 £933.8m / £207.5m, up from £895.3m / £192.1m at Sep-26 — forecasts rose before this print.</li>
+</ol></div></div></details>
 
  <details class="d2"><summary>Notes, §2.0</summary>
  <div class="d2body"><div class="sub">Half-vs-quarter divergence check: none. H1 FY26 revenue +7.1% YoY masks a seasonal Q1 dip (−10.5% QonQ) that reversed sharply in Q2 (+14.1%) — a recognised seasonal pattern (same shape as Q1 FY25), not a red flag.</div>
 </div></details>
 
  <details class="d2"><summary>Balance-sheet sweep</summary>
- <div class="d2body"><div class="sub"><b>Tier 1: clean.</b> Net cash — cash and deposits £291.0m at 30 Jun 2026 (30 Jun 2025: £273.6m); third-party borrowing a small legacy yen loan only. Going concern adopted on a reasonable-expectation basis to 31 Dec 2027; solvency grep (material uncertainty, emphasis of matter, covenant, modified opinion) returns nothing beyond boilerplate.</div><div class="sub"><b>Tier 2: one condition — note, not flag.</b> Trade receivables £161.6m vs £128.5m (+25.8%) against revenue +14.4%; inventories £181.7m vs £159.5m (+14.0%, in step). Cash conversion 79% vs 91%, still above the company's 70% target; the company attributes it to working capital for a growing order book. Dividend raised 5% to 82.0p plus a 70.0p special — the opposite of a Tier-2 dividend signal.</div><div class="sub"><b>Wedge check: widened.</b> Adjusted PBT £168.0m vs statutory £150.0m — a £18.0m gap against £9.2m in FY25 (£127.2m vs £118.0m). Labelled redundancy and other one-off costs of the cost programme, plus the former Finance Director's exit costs. Bounded and disclosed, but a second year of material adjusting items; if it recurs in FY27 it stops being one-off.</div></div></details>
+ <div class="d2body"><div class="sub">Not run — the Q1 FY27 TU is not a results document. Last sweep (FY26 results, Sep-26): clean, net cash £291.0m; one Tier-2 (receivables +25.8% vs sales +14.4%); wedge widened to £18.0m. No cash figure in this TU — the third trading update running without one.</div></div></details>
 
  <details class="d2"><summary>Trend Watch workings</summary>
- <div class="d2body"><div class="sub"><b>Mode: growth</b> (full-year document). Comparator is the latest completed half's year-on-year growth, H2, against the growth FY27 consensus requires over FY26 actual. Sign: delivered minus required. Datablock <code>_meta.savedAt</code> 2026-09-22 — one day before the RNS, inside the 14-day window, so it is the pre-announcement consensus. The block had not rolled: FY27 is its &ldquo;2y fc&rdquo; column.</div><div class="gridwrap" style="margin-top:8px"><table style="border-collapse:collapse;font-size:11.5px;width:100%"><tr style="background:#efedE7"><th style="border:1px solid #d8d5cf;padding:5px">Metric</th><th style="border:1px solid #d8d5cf;padding:5px">Basis</th><th style="border:1px solid #d8d5cf;padding:5px">H1 FY26 vs H1 FY25</th><th style="border:1px solid #d8d5cf;padding:5px">H2 FY26† vs H2 FY25†</th><th style="border:1px solid #d8d5cf;padding:5px">FY27 fc (22 Sep 26)</th><th style="border:1px solid #d8d5cf;padding:5px">Required</th><th style="border:1px solid #d8d5cf;padding:5px">Gap</th><th style="border:1px solid #d8d5cf;padding:5px">Sources</th><th style="border:1px solid #d8d5cf;padding:5px">Ranked?</th></tr><tr><td style="border:1px solid #d8d5cf;padding:5px"><b>Revenue</b></td><td style="border:1px solid #d8d5cf;padding:5px">Reported</td><td style="border:1px solid #d8d5cf;padding:5px">365.6 vs 341.4 = +7.1%</td><td style="border:1px solid #d8d5cf;padding:5px">450.2 vs 371.6 = +21.2%</td><td style="border:1px solid #d8d5cf;padding:5px">£895.3m</td><td style="border:1px solid #d8d5cf;padding:5px">+9.7% on 815.8</td><td style="border:1px solid #d8d5cf;padding:5px;color:#1e7a45"><b>+11.4pp</b></td><td style="border:1px solid #d8d5cf;padding:5px">FY26 R, H1 FY26 R, H1 FY25 R, FY25 R</td><td style="border:1px solid #d8d5cf;padding:5px">Y — ties to Rank 2 quarters (Q1+Q2 = 365.6; Q3+Q4 = 450.2) ✓</td></tr><tr><td style="border:1px solid #d8d5cf;padding:5px"><b>EBITDA</b></td><td style="border:1px solid #d8d5cf;padding:5px">—</td><td colspan="5" style="border:1px solid #d8d5cf;padding:5px">n/a — the company reports no EBITDA line at any grain; deriving one would mean building a measure it doesn't print. The block's H1 EBITDA figures are not used.</td><td style="border:1px solid #d8d5cf;padding:5px">—</td><td style="border:1px solid #d8d5cf;padding:5px">N</td></tr><tr><td style="border:1px solid #d8d5cf;padding:5px"><b>PBT</b></td><td style="border:1px solid #d8d5cf;padding:5px">Adjusted</td><td style="border:1px solid #d8d5cf;padding:5px">64.1 vs 57.5 = +11.5%</td><td style="border:1px solid #d8d5cf;padding:5px">103.9 vs 69.7 = +49.1%</td><td style="border:1px solid #d8d5cf;padding:5px">£192.1m</td><td style="border:1px solid #d8d5cf;padding:5px">+14.3% on 168.0</td><td style="border:1px solid #d8d5cf;padding:5px;color:#1e7a45"><b>+34.7pp</b></td><td style="border:1px solid #d8d5cf;padding:5px">FY26 R, H1 FY26 R, H1 FY25 R, FY25 R</td><td style="border:1px solid #d8d5cf;padding:5px">Y — ties to Rank 4 (H1 64.1, H2† 103.9) ✓</td></tr></table></div><div class="sub">Both H2 figures are derived (FY − H1), so both rows are watch flags until the H1 FY27 print. The block's own H1 pre-tax figure (£54.6m) is statutory against the company's adjusted £64.1m — the known basis corruption in the block's sub-period rows, and why norms and actuals never come from it. Arcs: revenue at the 10pp row (half-ring), PBT at the 35pp row, compressed zone.</div></div></details>
+ <div class="d2body"><div class="sub"><b>Mode: quarter</b> (Q1 trading update). Comparator: Q1 year-on-year growth against the growth FY27 consensus needs over FY26 actual. Sign: delivered minus required. Datablock <code>savedAt</code> 2026-10-22, slot dates 2026-10-16 — six days before the RNS, inside the 14-day window. The block has rolled: FY27 is now its "fc" column.</div>
+<div class="sub"><b>Revenue:</b> Q1 251.8 vs 170.8 = +47.4%; FY27 fc £933.8m needs +14.5% on £815.8m; gap <b>+32.9pp</b> 🟢. Ties to Rank 2 Q1 cell ✓.</div>
+<div class="sub"><b>EBITDA:</b> n/a — never company-reported.</div>
+<div class="sub"><b>PBT:</b> n/a — no Q1 profit printed (policy since Oct-25). FY27 fc £207.5m needs +23.5% on adjusted £168.0m; the first test is H1 FY27.</div>
+<div class="sub">Caution: a 47% Q1 against a base the company calls weak flatters the gap; Q2 FY27 laps £194.8m, a much tougher base.</div></div></details>
 
  <details class="d2"><summary>Trigger detail &amp; audit record</summary>
- <div class="d2body"><div class="sub"><b>Condition 1 — Numbers &amp; guide: FIRED, green-shoot.</b> Sequential growth for three quarters (Q4 +18.5%); adj PBT margin +2.8pp through the band; G-column RAISE at Apr-26 and Jul-26, now cleared by the audited outturn. Includes LEAD metrics (Ranks 1–2), full weight. No new G event at Sep-26: the FY27 view is qualitative, as every FY results document has been.</div><div class="sub"><b>Condition 2 — Language: FIRED, green-shoot — operator override.</b> The run reads Oct-25 ⚪ → Feb-26 🟢🟢 → Apr-26 🟢🟢 → May-26 🟢 → Jul-26 🟢🟢🟢 → Sep-26 🟢🟢. The letter of the mirror (2+ consecutive rises from 0 or below) is not met — there is one rise, then a plateau. The operator holds it green because the register left zero at Feb-26 and has stayed at +1 to +3 for six prints, against a FY24–FY25 run pinned at ⚪/🔴; the May-26 dip is a short reiteration TU saying less, not cooling. Recorded as an override. The previous lamp reason (&ldquo;four consecutive rising prints&rdquo;) was factually wrong and is withdrawn.</div><div class="sub"><b>Condition 3 — Disclosure: technically met, NOT counted (amber).</b> Rank 4's quarterly profit grain ceased from Oct-25 by announced policy — a disclosed, bounded event, so context-discounted. Sep-26 adds a disclosure <i>expansion</i> (first FY results to print all four quarters of revenue), which is not a green-shoot fire: nothing dropped came back.</div><div class="sub"><b>Count: 2 of 3, converging green; alert on.</b> Sweep clean and outside the count; Trend Watch outside the count.</div><div class="sub"><b>Movement since last RNS (Post-close TU, 24 Jul 2026):</b> up 2/3 → up 2/3, held, lights gga unchanged. Only the Language lamp's reason changed — a correction, not company movement.</div></div></details>
+ <div class="d2body"><div class="sub"><b>Condition 1 — Numbers &amp; guide: FIRED, green-shoot.</b> Sequential growth for four quarters running (Q1 FY27 +3.1%, the smallest step); a record quarter on the lead revenue rank. No G event — guide qualitative. Includes LEAD metrics, full weight. Watch: the +3.1% is the first in-band quarter since Q1 FY26.</div>
+<div class="sub"><b>Condition 2 — Language: amber, NOT counted (operator call, option b).</b> Run: Jul-26 🟢🟢🟢 → Sep-26 🟢🟢 → Oct-26 🟢. Two consecutive falls meet the letter of the deterioration test. The operator's Sep-26 green override treated dips as document cadence; consistency cuts both ways, and Oct-26 is a content change — "profit" dropped from the FY27 outlook sentence and a demand-cycle caveat added. Still positive, so neither green nor red fires; recorded amber. A further fall, or a second outlook without profit, turns it red.</div>
+<div class="sub"><b>Condition 3 — Disclosure: technically met, NOT counted (amber).</b> Quarterly profit grain stopped by announced policy from Oct-25 (context-discounted). Cash paragraph absent for a third trading update; the balance sheet sits outside the count.</div>
+<div class="sub"><b>Count: 1 of 3.</b> Single-condition fire = verdict note, no alert. Direction stays Turning up.</div>
+<div class="sub"><b>Movement since last RNS (FY R, 23 Sep 2026):</b> up 2/3 → up 1/3; lights gga → gaa. The Language lamp moved on content, not a correction.</div></div></details>
 
 </div></details>
 </div>
@@ -578,10 +582,10 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;padd
 <div class="section">
 <h2>§3 — Text + G: Language Track</h2>
 <table id="text3">
-<tr><th style="width:64px">Date</th><th style="width:78px">Doc</th><th style="width:70px">G</th><th style="width:230px">Context</th><th>Verbatim forward-guidance phrase</th><th style="width:60px">Score</th></tr>
+<tr><th style="width:64px">Date</th><th style="width:78px">Doc</th><th style="width:70px">G</th><th>Verbatim forward-guidance phrase</th><th style="width:420px">Context</th><th style="width:60px">Score</th></tr>
 <tr class="expander" id="t3exp"><td colspan="6">▸ Show 11 earlier prints — Sep-22 to Feb-25</td></tr>
-<tr class="t3old"><td>Sep-22</td><td class="docc" data-rowtype="FY R"><span class="dfy">FY22</span><span class="ddt">FY R</span></td><td class="gcell">—</td><td>—</td><td class="quote">&ldquo;We have made a positive start to FY2023 and our order book remains strong. We have, however, recently seen a weakening in order intake from the semiconductor and electronics sectors, and general market sentiment is becoming more cautious.&rdquo;</td><td class="scorecell">🔴</td></tr><tr class="t3old"><td>Oct-22</td><td class="docc" data-rowtype="Q1 TU"><span class="dfy">FY23</span><span class="ddt">Q1 TU</span></td><td class="gcell">—</td><td>—</td><td class="quote">&ldquo;Overall Group performance was in line with our expectations for the first quarter of the year.&rdquo;</td><td class="scorecell">⚪</td></tr><tr class="t3old"><td>Feb-23</td><td class="docc" data-rowtype="H1 R"><span class="dfy">FY23</span><span class="ddt">H1 R</span></td><td class="gcell">flat</td><td>—</td><td class="quote">&ldquo;We have a strong order book, and at this stage we expect full year revenue to be in the range of £690m to £730m. Adjusted profit before tax is expected to be in the range of £140m to £165m.&rdquo;</td><td class="scorecell">⚪</td></tr><tr class="t3old shaded"><td>Apr-23</td><td class="docc" data-rowtype="Q3 TU"><span class="dfy">FY23</span><span class="ddt">Q3 TU</span></td><td class="gcell">🔴 CUT</td><td>—</td><td class="quote">&ldquo;We anticipate that revenue for the full year will be between £680m and £700m, and adjusted profit before tax will be between £135m and £150m.&rdquo;</td><td class="scorecell">🔴</td></tr><tr class="t3old"><td>Sep-23</td><td class="docc" data-rowtype="FY R"><span class="dfy">FY23</span><span class="ddt">FY R</span></td><td class="gcell">—</td><td><div class="trail"><div class="miss">H1 guide (£690–730m/£140–165m): rev −3.0% / PBT −7.5% vs mid</div><div class="met">Q3 guide (£680–700m/£135–150m): rev −0.2% / PBT −1.1% vs mid (met)</div></div></td><td class="quote">&ldquo;Trading conditions remain challenging due to subdued demand, most notably from the semiconductor sector. We continue to see positive investment trends in robotics, defence, low emission transportation and additive manufacturing.&rdquo;</td><td class="scorecell">🔴</td></tr><tr class="t3old"><td>Oct-23</td><td class="docc" data-rowtype="Q1 TU"><span class="dfy">FY24</span><span class="ddt">Q1 TU</span></td><td class="gcell">—</td><td>—</td><td class="quote">&ldquo;Trading conditions remain challenging due to subdued demand, most notably from the semiconductor sector. &hellip; We are confident in our strategy to deliver sustainable long-term growth.&rdquo;</td><td class="scorecell">🔴</td></tr><tr class="t3old"><td>Feb-24</td><td class="docc" data-rowtype="H1 R"><span class="dfy">FY24</span><span class="ddt">H1 R</span></td><td class="gcell">flat</td><td>—</td><td class="quote">&ldquo;We expect an improvement in our trading performance in the second half of the financial year as market conditions improve. At this stage we expect full year revenue to be in the range of £675m to £715m. Adjusted profit before tax is expected to be in the range of £122m to £147m.&rdquo;</td><td class="scorecell">🔴</td></tr><tr class="t3old"><td>May-24</td><td class="docc" data-rowtype="Q3 TU"><span class="dfy">FY24</span><span class="ddt">Q3 TU</span></td><td class="gcell">flat</td><td>—</td><td class="quote">&ldquo;Solid performance in mixed markets; early signs of semiconductor equipment recovery.&rdquo;</td><td class="scorecell">⚪</td></tr><tr class="t3old"><td>Sep-24</td><td class="docc" data-rowtype="FY R"><span class="dfy">FY24</span><span class="ddt">FY R</span></td><td class="gcell">—</td><td><div class="trail"><div class="met">H1 guide (£675–715m/£122–147m): rev −0.5% (met); PBT −8.8% vs mid, barely met at floor (£122.6m vs £122m floor)</div></div></td><td class="quote">&ldquo;We expect these efforts, together with higher sales volumes, to drive our operating profit margin towards our target.&rdquo;</td><td class="scorecell">⚪</td></tr><tr class="t3old"><td>Oct-24</td><td class="docc" data-rowtype="Q1 TU"><span class="dfy">FY25</span><span class="ddt">Q1 TU</span></td><td class="gcell">—</td><td>—</td><td class="quote">&ldquo;We continue to pursue a range of growth opportunities and anticipate solid overall revenue growth this year in line with the Board's expectations. &hellip; we remain cautious about demand from this market [semiconductor] in the remainder of FY2025.&rdquo;</td><td class="scorecell">⚪</td></tr><tr class="t3old"><td>Feb-25</td><td class="docc" data-rowtype="H1 R"><span class="dfy">FY25</span><span class="ddt">H1 R</span></td><td class="gcell">flat</td><td>—</td><td class="quote">&ldquo;Order intake recently improved, steady revenue growth expected to continue in H2. FY2025 revenue: £695m to £735m; adjusted profit before tax: £105m to £135m.&rdquo;</td><td class="scorecell">⚪</td></tr><tr class="shaded"><td>May-25</td><td class="docc" data-rowtype="Q3 TU"><span class="dfy">FY25</span><span class="ddt">Q3 TU</span></td><td class="gcell">🔴 CUT</td><td>—</td><td class="quote">&ldquo;We are mindful of the volatile economic backdrop and its potential to impact our customers' investment decisions. &hellip; We now expect revenue to be in the range of £700m to £720m and adjusted profit before tax to be in the range of £109m to £127m.&rdquo; <span style="font-style:normal;font-size:10.5px;color:#5a5a5a;">(both midpoints down: rev 715→710, PBT 120→118 — range narrowed and lowered)</span></td><td class="scorecell">🔴</td></tr><tr class="shaded"><td>Sep-25</td><td class="docc" data-rowtype="FY R"><span class="dfy">FY25</span><span class="ddt">FY R</span></td><td class="gcell">—</td><td><div class="trail"><div class="met">H1 guide (Feb-25, £695–735m/£105–135m): rev −0.3% (met); PBT +6.0% vs mid (beat)</div><div class="met">Q3 CUT (May-25, £700–720m/£109–127m): rev +0.4% / PBT +7.8% vs mid — delivered above the cut range's PBT top</div></div></td><td class="quote">&ldquo;Confidence in further progress towards margin improvement objective, supported by £20m annualised payroll reduction to take effect in FY26 H1.&rdquo;</td><td class="scorecell">🟢</td></tr><tr><td>Oct-25</td><td class="docc" data-rowtype="Q1 TU"><span class="dfy">FY26</span><span class="ddt">Q1 TU</span></td><td class="gcell">—</td><td>—</td><td class="quote">&ldquo;There has been a steady start to FY2026, in line with our expectations. &hellip; at this stage we are expecting to achieve further steady revenue growth in the year ahead.&rdquo;</td><td class="scorecell">⚪</td></tr><tr class="shaded"><td>Feb-26</td><td class="docc" data-rowtype="H1 R"><span class="dfy">FY26</span><span class="ddt">H1 R</span></td><td class="gcell">flat</td><td>—</td><td class="quote">&ldquo;We enter H2 with momentum and we expect to achieve strong revenue and profit growth in the remainder of the year. Revenue: £740m to £780m; Adjusted profit before tax: £132m to £157m.&rdquo;</td><td class="scorecell">🟢🟢</td></tr><tr class="shaded"><td>Apr-26</td><td class="docc" data-rowtype="Upgrade TU"><span class="dfy">FY26</span><span class="ddt">Upgrade TU</span></td><td class="gcell">🟢 RAISE</td><td>—</td><td class="quote">&ldquo;Upgrade to FY2026 guidance. &hellip; We now expect to deliver FY2026 full-year performance in the following ranges: Revenue: £775m to £805m; Adjusted profit before tax: £145m to £165m.&rdquo;</td><td class="scorecell">🟢🟢</td></tr><tr><td>May-26</td><td class="docc" data-rowtype="Q3 TU"><span class="dfy">FY26</span><span class="ddt">Q3 TU</span></td><td class="gcell">flat</td><td>—</td><td class="quote">&ldquo;Full-year expectations in line with recently upgraded guidance. Accelerating growth in Q3.&rdquo;</td><td class="scorecell">🟢</td></tr><tr class="shaded"><td>Jul-26</td><td class="docc" data-rowtype="YE-TU"><span class="dfy">FY26</span><span class="ddt">YE-TU</span></td><td class="gcell">🟢 RAISE</td><td><div class="trail"><div class="met">vs upgraded guide (£775–805m/£145–165m mid £790m/£155m): rev ~£815m (+3.2%); PBT ~£167m (+7.7%) — beat at top of range. Audited Sep-26: £815.8m / £168.0m.</div></div></td><td class="quote">&ldquo;Record Q4 revenue; FY2026 profit ahead of expectations. We saw accelerating growth throughout the year, culminating in record quarterly revenue in Q4 of approximately £243m, 27% above the prior year.&rdquo;</td><td class="scorecell">🟢🟢🟢</td></tr>
-<tr class="shaded"><td>⭐ Sep-26</td><td class="docc" data-rowtype="FY R"><span class="dfy">FY26</span><span class="ddt">FY R</span></td><td class="gcell">—</td><td><div class="trail">No numeric FY27 range — FY results have never carried one (Sep-22 to Sep-25). No expectations anchor. <span class="met">Outturn: audited £815.8m / £168.0m clear April's tops by £10.8m / £3.0m; in line with 22-Sep consensus.</span> The Looking-ahead section drops &ldquo;operating margin&rdquo;; the CFO section restates it.</div></td><td class="quote">&ldquo;FY2027 has started strongly&hellip; We expect further strong progress on revenue, profit and operating margin in the year ahead.&rdquo;</td><td class="scorecell">🟢🟢</td></tr></table>
+<tr class="t3old"><td>Sep-22</td><td class="docc" data-rowtype="FY R"><span class="dfy">FY22</span><span class="ddt">FY R</span></td><td class="gcell">—</td><td class="quote">&ldquo;We have made a positive start to FY2023 and our order book remains strong. We have, however, recently seen a weakening in order intake from the semiconductor and electronics sectors, and general market sentiment is becoming more cautious.&rdquo;</td><td>—</td><td class="scorecell">🔴</td></tr><tr class="t3old"><td>Oct-22</td><td class="docc" data-rowtype="Q1 TU"><span class="dfy">FY23</span><span class="ddt">Q1 TU</span></td><td class="gcell">—</td><td class="quote">&ldquo;Overall Group performance was in line with our expectations for the first quarter of the year. …… We have made a positive start to the current year and our order book remains strong.&rdquo;</td><td>—</td><td class="scorecell">⚪</td></tr><tr class="t3old"><td>Feb-23</td><td class="docc" data-rowtype="H1 R"><span class="dfy">FY23</span><span class="ddt">H1 R</span></td><td class="gcell">flat</td><td class="quote">&ldquo;We have a strong order book, and at this stage we expect full year revenue to be in the range of £690m to £730m. Adjusted profit before tax is expected to be in the range of £140m to £165m.&rdquo;</td><td>—</td><td class="scorecell">⚪</td></tr><tr class="t3old shaded"><td>Apr-23</td><td class="docc" data-rowtype="Q3 TU"><span class="dfy">FY23</span><span class="ddt">Q3 TU</span></td><td class="gcell">🔴 CUT</td><td class="quote">&ldquo;We anticipate that revenue for the full year will be between £680m and £700m, and adjusted profit before tax will be between £135m and £150m.&rdquo;</td><td>—</td><td class="scorecell">🔴</td></tr><tr class="t3old"><td>Sep-23</td><td class="docc" data-rowtype="FY R"><span class="dfy">FY23</span><span class="ddt">FY R</span></td><td class="gcell">—</td><td class="quote">&ldquo;Trading conditions remain challenging due to subdued demand, most notably from the semiconductor sector. We continue to see positive investment trends in robotics, defence, low emission transportation and additive manufacturing.&rdquo;</td><td><div class="trail"><div class="miss">H1 guide (£690–730m/£140–165m): rev −3.0% / PBT −7.5% vs mid</div><div class="met">Q3 guide (£680–700m/£135–150m): rev −0.2% / PBT −1.1% vs mid (met)</div></div></td><td class="scorecell">🔴</td></tr><tr class="t3old"><td>Oct-23</td><td class="docc" data-rowtype="Q1 TU"><span class="dfy">FY24</span><span class="ddt">Q1 TU</span></td><td class="gcell">—</td><td class="quote">&ldquo;Trading conditions remain challenging due to subdued demand, most notably from the semiconductor sector. &hellip; We are confident in our strategy to deliver sustainable long-term growth.&rdquo;</td><td>—</td><td class="scorecell">🔴</td></tr><tr class="t3old"><td>Feb-24</td><td class="docc" data-rowtype="H1 R"><span class="dfy">FY24</span><span class="ddt">H1 R</span></td><td class="gcell">flat</td><td class="quote">&ldquo;We expect an improvement in our trading performance in the second half of the financial year as market conditions improve…… At this stage we expect full year revenue ……(£675m–£715m). Adjusted profit before tax ……(£122m–£147m).&rdquo;</td><td>—</td><td class="scorecell">🔴</td></tr><tr class="t3old"><td>May-24</td><td class="docc" data-rowtype="Q3 TU"><span class="dfy">FY24</span><span class="ddt">Q3 TU</span></td><td class="gcell">flat</td><td class="quote">&ldquo;We expect the recent improvement in our trading performance to strengthen in the remainder of the financial year, as market conditions improve…… We now expect revenue ……(£680m–£700m) and adjusted profit before tax ……(£122m–£135m).&rdquo;</td><td>Revised from Feb-24 (£675–715m / £122–147m): range narrowed, PBT top cut £147m→£135m.</td><td class="scorecell">⚪</td></tr><tr class="t3old"><td>Sep-24</td><td class="docc" data-rowtype="FY R"><span class="dfy">FY24</span><span class="ddt">FY R</span></td><td class="gcell">—</td><td class="quote">&ldquo;We expect these efforts, together with higher sales volumes, to drive our operating profit margin towards our target, although inflationary pressures, especially people costs, will affect the rate of improvement in the near term.&rdquo;</td><td><div class="trail"><div class="met">H1 guide (£675–715m/£122–147m): rev −0.5% (met); PBT −8.8% vs mid, barely met at floor (£122.6m vs £122m floor)</div></div></td><td class="scorecell">⚪</td></tr><tr class="t3old"><td>Oct-24</td><td class="docc" data-rowtype="Q1 TU"><span class="dfy">FY25</span><span class="ddt">Q1 TU</span></td><td class="gcell">—</td><td class="quote">&ldquo;We continue to pursue a range of growth opportunities and anticipate solid overall revenue growth this year in line with the Board's expectations. &hellip; we remain cautious about demand from this market [semiconductor] in the remainder of FY2025.&rdquo;</td><td>—</td><td class="scorecell">⚪</td></tr><tr class="t3old"><td>Feb-25</td><td class="docc" data-rowtype="H1 R"><span class="dfy">FY25</span><span class="ddt">H1 R</span></td><td class="gcell">flat</td><td class="quote">&ldquo;Order intake recently improved, steady revenue growth expected to continue in H2. FY2025 revenue: £695m to £735m; adjusted profit before tax: £105m to £135m.&rdquo;</td><td>—</td><td class="scorecell">⚪</td></tr><tr class="shaded"><td>May-25</td><td class="docc" data-rowtype="Q3 TU"><span class="dfy">FY25</span><span class="ddt">Q3 TU</span></td><td class="gcell">🔴 CUT</td><td class="quote">&ldquo;We enter the final quarter of the year with good momentum, but we are mindful of the volatile economic backdrop…… We now expect revenue ……(£700m–£720m) and adjusted profit before tax ……(£109m–£127m).&rdquo;</td><td>Both midpoints down: rev 715→710, PBT 120→118 — range narrowed and lowered.</td><td class="scorecell">🔴</td></tr><tr class="shaded"><td>Sep-25</td><td class="docc" data-rowtype="FY R"><span class="dfy">FY25</span><span class="ddt">FY R</span></td><td class="gcell">—</td><td class="quote">&ldquo;Confidence in further progress towards margin improvement objective, supported by £20m annualised payroll reduction to take effect in FY26 H1.&rdquo;</td><td><div class="trail"><div class="met">H1 guide (Feb-25, £695–735m/£105–135m): rev −0.3% (met); PBT +6.0% vs mid (beat)</div><div class="met">Q3 CUT (May-25, £700–720m/£109–127m): rev +0.4% / PBT +7.8% vs mid — delivered above the cut range's PBT top</div></div></td><td class="scorecell">🟢</td></tr><tr><td>Oct-25</td><td class="docc" data-rowtype="Q1 TU"><span class="dfy">FY26</span><span class="ddt">Q1 TU</span></td><td class="gcell">—</td><td class="quote">&ldquo;There has been a steady start to FY2026, in line with our expectations. &hellip; at this stage we are expecting to achieve further steady revenue growth in the year ahead.&rdquo;</td><td>—</td><td class="scorecell">⚪</td></tr><tr class="shaded"><td>Feb-26</td><td class="docc" data-rowtype="H1 R"><span class="dfy">FY26</span><span class="ddt">H1 R</span></td><td class="gcell">flat</td><td class="quote">&ldquo;We enter H2 with momentum and we expect to achieve strong revenue and profit growth in the remainder of the year. Revenue: £740m to £780m; Adjusted profit before tax: £132m to £157m.&rdquo;</td><td>—</td><td class="scorecell">🟢🟢</td></tr><tr class="shaded"><td>Apr-26</td><td class="docc" data-rowtype="Upgrade TU"><span class="dfy">FY26</span><span class="ddt">Upgrade TU</span></td><td class="gcell">🟢 RAISE</td><td class="quote">&ldquo;Upgrade to FY2026 guidance. &hellip; We now expect to deliver FY2026 full-year performance in the following ranges: Revenue: £775m to £805m; Adjusted profit before tax: £145m to £165m.&rdquo;</td><td>—</td><td class="scorecell">🟢🟢</td></tr><tr><td>May-26</td><td class="docc" data-rowtype="Q3 TU"><span class="dfy">FY26</span><span class="ddt">Q3 TU</span></td><td class="gcell">flat</td><td class="quote">&ldquo;We expect positive market conditions to continue for the remainder of FY2026…… Our expectations for FY2026 full-year performance remain in line with recently upgraded guidance: Revenue ……(£775m–£805m); Adjusted profit before tax ……(£145m–£165m).&rdquo;</td><td>—</td><td class="scorecell">🟢</td></tr><tr class="shaded"><td>Jul-26</td><td class="docc" data-rowtype="YE-TU"><span class="dfy">FY26</span><span class="ddt">YE-TU</span></td><td class="gcell">🟢 RAISE</td><td class="quote">&ldquo;Record Q4 revenue; FY2026 profit ahead of expectations. We saw accelerating growth throughout the year, culminating in record quarterly revenue in Q4 of approximately £243m, 27% above the prior year.&rdquo;</td><td><div class="trail"><div class="met">vs upgraded guide (£775–805m/£145–165m mid £790m/£155m): rev ~£815m (+3.2%); PBT ~£167m (+7.7%) — beat at top of range. Audited Sep-26: £815.8m / £168.0m.</div></div></td><td class="scorecell">🟢🟢🟢</td></tr>
+<tr class="shaded"><td>Sep-26</td><td class="docc" data-rowtype="FY R"><span class="dfy">FY26</span><span class="ddt">FY R</span></td><td class="gcell">—</td><td class="quote">&ldquo;FY2027 has started strongly as we continue to benefit from the current upturn in demand for semiconductor manufacturing equipment. We expect further strong progress on revenue, profit and operating margin in the year ahead.&rdquo;</td><td><div class="trail">No numeric FY27 range — FY results have never carried one (Sep-22 to Sep-25). No expectations anchor. <span class="met">Outturn: audited £815.8m / £168.0m clear April's tops by £10.8m / £3.0m; in line with 22-Sep consensus.</span> The Looking-ahead section drops &ldquo;operating margin&rdquo;; the CFO section restates it.</div></td><td class="scorecell">🟢🟢</td></tr><tr class="shaded"><td>⭐ Oct-26</td><td class="docc" data-rowtype="Q1 TU"><span class="dfy">FY27</span><span class="ddt">Q1 TU</span></td><td class="gcell">—</td><td class="quote">&ldquo;We have seen a strong start to FY2027, continuing and broadening the momentum that we established throughout the prior year…… We continue to expect strong progress on revenue and operating margin for FY2027 as a whole.&rdquo;</td><td><div class="trail">No numeric guide, as at every Q1 TU. No expectations anchor (Oct-25 had &ldquo;in line with our expectations&rdquo;). Compared with Sep-26&rsquo;s &ldquo;revenue, profit and operating margin&rdquo;, profit is dropped, and the word appears nowhere in the document. New caveat beside it on the demand cycle. Q1 revenue £251.8m, +47%.</div></td><td class="scorecell">🟢</td></tr></table>
 <details class="d1"><summary>§3 workings — notes and guidance passages</summary>
 <div class="d1body">
  <details class="d2"><summary>Notes, §3</summary><div class="d2body"><div class="sub">Guidance conservatism read (3-year trail): FY23 was optimistic-then-cut-then-just-met at the start of the downturn; FY24 was well-calibrated on revenue, tight on profit; FY25 carried a mid-year CUT (May-25 narrowing, midpoints down) that was then beaten above the cut range's PBT top — cut-then-beat, the strongest sandbag tell in the record; FY26 continued the floor pattern through two upward revisions, both subsequently beaten. The company has become progressively more conservative in its guidance since FY24.</div>
@@ -593,15 +597,495 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;padd
   <div class="sub"><b>Feb-26 · H1 FY26 Results · Outlook.</b> H1 revenue £365.6m and adjusted PBT £64.1m. The company stated it enters H2 with momentum and expects strong revenue and profit growth in the remainder of the year, guiding FY26 revenue £740–780m and adjusted PBT £132–157m. Order book described as showing significant growth. Currency effects quantified: £8.0m from expiring forward contracts and £5.2m adverse translation.</div>
   <div class="sub"><b>Apr-26 · FY26 Upgrade TU.</b> Headed as an upgrade to FY2026 guidance, raising ranges to revenue £775–805m and adjusted PBT £145–165m, against the February ranges of £740–780m and £132–157m — a £30m increase on the revenue midpoint. John Shipsey confirmed as CFO in the same announcement.</div>
   <div class="sub"><b>May-26 · Q3 FY26 TU.</b> 9M revenue £571.6m at actual rates, 9.5% above the prior year's £522.1m and a record for the 9M period; 13.5% higher at constant rates. Full-year expectations stated in line with the recently upgraded guidance. No cash position paragraph.</div>
-  <div class="sub"><b>Jul-26 · FY26 Post-close TU.</b> Record Q4 revenue of approximately £243m, 27% above the prior year, with FY2026 revenue approximately £815m and adjusted profit before tax approximately £167m — both above the top of the April ranges. Growth described as accelerating throughout the year. <em>Editorial note: this document carries no order-book paragraph and no cash position paragraph; the doc type has never carried the former.</em></div><div class="sub"><b>Sep-26 · FY26 Final Results ⭐ · CEO statement, Looking ahead, CFO Looking forward.</b> CEO: FY2027 has started strongly as the company continues to benefit from the upturn in demand for semiconductor manufacturing equipment, and it expects further strong progress on revenue, profit and operating margin in the year ahead. The Looking-ahead section repeats this for revenue and profit, dropping margin. CFO: the 2027 financial year has started strongly and the company expects further improvements to operating margins; encoder production capacity is being expanded, with a short-term payback expected; governance of the global ERP programme has been strengthened to address deployment challenges. <em>Editorial note: no numeric FY27 range and no expectations anchor anywhere in the document; audited FY26 £815.8m / £168.0m.</em></div>
+  <div class="sub"><b>Jul-26 · FY26 Post-close TU.</b> Record Q4 revenue of approximately £243m, 27% above the prior year, with FY2026 revenue approximately £815m and adjusted profit before tax approximately £167m — both above the top of the April ranges. Growth described as accelerating throughout the year. <em>Editorial note: this document carries no order-book paragraph and no cash position paragraph; the doc type has never carried the former.</em></div><div class="sub"><b>Sep-26 · FY26 Final Results · CEO statement, Looking ahead, CFO Looking forward.</b> CEO: FY2027 has started strongly as the company continues to benefit from the upturn in demand for semiconductor manufacturing equipment, and it expects further strong progress on revenue, profit and operating margin in the year ahead. The Looking-ahead section repeats this for revenue and profit, dropping margin. CFO: the 2027 financial year has started strongly and the company expects further improvements to operating margins; encoder production capacity is being expanded, with a short-term payback expected; governance of the global ERP programme has been strengthened to address deployment challenges. <em>Editorial note: no numeric FY27 range and no expectations anchor anywhere in the document; audited FY26 £815.8m / £168.0m.</em></div><div class="sub"><b>Oct-26 · Q1 FY27 TU ⭐ · Outlook.</b> A strong start to FY2027, continuing and broadening the momentum established through the prior year; demand in semiconductor, aerospace and defence remains strong and is now complemented by wider automation investment. The company is scaling supply chain and production capacity while remaining mindful of the cyclical nature of demand over the medium term, and continues to expect strong progress on revenue and operating margin for FY2027 as a whole. <em>Editorial note: the word &ldquo;profit&rdquo; appears nowhere in the document; no expectations anchor, no cash paragraph.</em></div>
  </div></details>
 </div></details>
 </div>
 
 <!-- ============ §4 DRIFT ============ -->
 <div class="section">
+<div class="pxpanel" style="max-width:1100px;border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:16px 0 30px"><div style="font-weight:700;font-size:13px;margin-bottom:8px">§3 overlay — share price vs Text + G prints</div><div data-drift-chart></div><div style="font-size:11px;color:var(--mute);margin-top:6px">Source: Alpha Vantage RSW.LON weekly closes (GBX), 227 weeks Jul-22 to Oct-26; last close 5350p on 21 Oct 2026; no adjustment. Display only: scores nothing, fires nothing.</div></div>
+<script>
+/* ==== DRIFT PRICE OVERLAY — chart.js — master copy (Drift repo) ====
+   Spec: "Drift price overlay — architecture note", 17 Oct 2026.
+   ONE renderer, two themes. Drift dashboards paste this file in verbatim
+   (light theme, frozen at build); Database and the wall load it live (dark).
+   Display only: it scores nothing and fires nothing.
+
+   API
+     DriftChart.render(el, data, {theme:'light'|'dark', size:'page'|'card'|'preview'|'modal', tail:[[iso,price],…], star:iso})
+     DriftChart.legend(theme)                  -> HTML string
+     DriftChart.validate(data)                 -> [] or list of error strings
+     DriftChart.parseTail(rows4, ticker, ccy, afterIso) -> [[iso,price],…] (dark theme only)
+     DriftChart.mountFromPage()                -> renders the dashboard panel from #drift-chart
+*/
+(function (root) {
+  'use strict';
+
+  var THEMES = {
+    light: { line: '#2f9e5c', fill: '#2f9e5c', fillOp: 0.08, pos: '#2546f0', neg: '#ff2d2d',
+             zeroFill: '#fff', zeroStroke: '#6b6860', outline: '#fff', grid: '#e4e1da',
+             axis: '#6b6860', adj: '#8d8981', tipBg: '#fff', tipFg: '#16150f', tipBorder: '#d8d5cf' },
+    dark:  { line: '#c9c6d8', fill: '#fff', fillOp: 0.04, pos: '#00d97e', neg: '#ff4757',
+             zeroFill: '#0a0a0f', zeroStroke: '#9a9ab5', outline: '#0a0a0f', grid: '#1e1e28',
+             axis: '#5a5a72', adj: '#3a3a50', tail: '#8a8aa0', tipBg: '#1a1a24', tipFg: '#f2f2f8',
+             tipBorder: '#3a3a50' }
+  };
+  /* geometry per size: viewBox W×H, padding, mark radius, arrow width, line width, font size */
+  var SIZES = {
+    page:    { W: 1100, H: 400, pl: 46, pr: 16, pt: 24, pb: 40, r: 8,   aw: 22, lw: 1.4, fs: 11 },
+    modal:   { W: 940,  H: 340, pl: 10, pr: 46, pt: 14, pb: 22, r: 6,   aw: 16, lw: 1.6, fs: 11 },
+    preview: { W: 360,  H: 110, pl: 4,  pr: 34, pt: 8,  pb: 14, r: 2.6, aw: 8,  lw: 1.1, fs: 8 },
+    card:    { W: 340,  H: 92,  pl: 4,  pr: 34, pt: 8,  pb: 14, r: 2.6, aw: 8,  lw: 1.1, fs: 8 }
+  };
+  var MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  var DAY = 86400000;
+
+  function t(iso) { return Date.parse(iso + 'T00:00:00Z'); }
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
+    return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function fmtDate(iso, short) { var p = iso.split('-');
+    return short ? (p[2] + ' ' + MON[+p[1] - 1]) : (p[2] + ' ' + MON[+p[1] - 1] + ' ' + p[0]); }
+  function fmtPx(v, ccy) {
+    if (ccy === 'USD') return '$' + v.toFixed(2);
+    var s = Math.abs(v) >= 100 ? v.toFixed(0) : (Math.round(v * 10) / 10).toString();
+    return s + 'p';
+  }
+  function fmtScore(s) { return s > 0 ? '+' + s : (s < 0 ? '−' + Math.abs(s) : '0'); }
+  function niceStep(max) {
+    var raw = max / 4, mag = Math.pow(10, Math.floor(Math.log10(raw))), steps = [1, 2, 2.5, 5, 10];
+    for (var i = 0; i < steps.length; i++) if (steps[i] * mag >= raw) return steps[i] * mag;
+    return 10 * mag;
+  }
+
+  /* ---------- validation (used by the upload panel) ---------- */
+  function validate(d) {
+    var e = [];
+    if (!d || typeof d !== 'object') return ['drift-chart is not an object'];
+    if (!d.ticker) e.push('ticker missing');
+    if (!d.v) e.push('v missing');
+    if (d.ccy !== 'GBX' && d.ccy !== 'USD') e.push('ccy must be GBX or USD');
+    if (!Array.isArray(d.px) || d.px.length < 2) { e.push('px must be an array of at least 2 weeks'); return e; }
+    for (var i = 0; i < d.px.length; i++) {
+      var p = d.px[i];
+      if (!Array.isArray(p) || !/^\d{4}-\d{2}-\d{2}$/.test(p[0]) || typeof p[1] !== 'number' || !isFinite(p[1])) {
+        e.push('px[' + i + '] is not [YYYY-MM-DD, number]'); return e; }
+      if (i && p[0] <= d.px[i - 1][0]) { e.push('px not in ascending date order at ' + p[0]); return e; }
+    }
+    var first = t(d.px[0][0]), last = t(d.px[d.px.length - 1][0]);
+    if (!Array.isArray(d.marks)) { e.push('marks must be an array'); return e; }
+    d.marks.forEach(function (m, i) {
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(m.d || '')) { e.push('marks[' + i + '] date invalid'); return; }
+      var md = t(m.d);
+      if (md < first - 7 * DAY || md > last + 7 * DAY)
+        e.push('mark ' + m.d + ' falls outside the price range (allowed up to 7 days after the last close)');
+      if (['RAISE', 'CUT', 'flat'].indexOf(m.g) < 0) e.push('mark ' + m.d + ' g must be RAISE, CUT or flat');
+      if (typeof m.s !== 'number' || m.s < -3 || m.s > 3 || Math.round(m.s) !== m.s) e.push('mark ' + m.d + ' s must be an integer −3..+3');
+    });
+    return e;
+  }
+
+  /* ---------- snapshot tail from Database uploadZone.rows4 (§7) ---------- */
+  function parseTail(rows4, ticker, ccy, afterIso) {
+    if (!Array.isArray(rows4)) return [];
+    var tk = String(ticker).toUpperCase(), out = {};
+    rows4.forEach(function (row) {
+      if (!row || !row.Date || !row.Snapshot) return;
+      var dp = String(row.Date).split('/');
+      if (dp.length !== 3) return;
+      var iso = dp[2] + '-' + ('0' + dp[1]).slice(-2) + '-' + ('0' + dp[0]).slice(-2);
+      if (afterIso && iso <= afterIso) return;
+      var recs = String(row.Snapshot).split(';');
+      for (var i = 0; i < recs.length; i++) {
+        var f = recs[i].split(',');
+        if ((f[0] || '').toUpperCase() !== tk) continue;
+        var raw = (f[6] || '').trim();            /* 7th field — never the last field */
+        if (!raw) break;
+        var v = null, m;
+        if ((m = raw.match(/^([\d.]+)p$/)))        { if (ccy === 'GBX') v = +m[1]; }
+        else if ((m = raw.match(/^([\d.]+)$/)))    { if (ccy === 'GBX') v = Math.round(+m[1] * 10000) / 100; }  /* pounds */
+        else if ((m = raw.match(/^([\d.]+)¢$/))) { if (ccy === 'USD') v = +m[1] / 100; } /* cents */
+        else if ((m = raw.match(/^\$([\d.]+)$/)))  { if (ccy === 'USD') v = +m[1]; }
+        if (v != null && isFinite(v) && v > 0) out[iso] = v;
+        break;
+      }
+    });
+    var tail = Object.keys(out).sort().map(function (k) { return [k, out[k]]; });
+    for (var j = 1; j < tail.length; j++) {
+      var a = tail[j - 1][1], b = tail[j][1];
+      if (b / a > 5 || a / b > 5) return [];       /* cliff check */
+    }
+    return tail;
+  }
+
+  /* ---------- shared tooltip ---------- */
+  var tipEl = null;
+  function tip(theme) {
+    if (!tipEl) {
+      tipEl = document.createElement('div');
+      tipEl.id = 'dc-tip';
+      tipEl.style.cssText = 'position:fixed;pointer-events:none;z-index:10000;display:none;max-width:300px;' +
+        'padding:7px 9px;border-radius:4px;font:11px/1.45 Inter,system-ui,sans-serif;box-shadow:0 6px 24px rgba(0,0,0,.35)';
+      document.body.appendChild(tipEl);
+    }
+    var T = THEMES[theme];
+    tipEl.style.background = T.tipBg; tipEl.style.color = T.tipFg; tipEl.style.border = '1px solid ' + T.tipBorder;
+    return tipEl;
+  }
+  function showTip(theme, html, ev) {
+    var el = tip(theme); el.innerHTML = html; el.style.display = 'block';
+    var x = ev.clientX + 14, y = ev.clientY + 14, w = el.offsetWidth, h = el.offsetHeight;
+    if (x + w > window.innerWidth - 8) x = ev.clientX - w - 14;
+    if (y + h > window.innerHeight - 8) y = ev.clientY - h - 14;
+    el.style.left = x + 'px'; el.style.top = y + 'px';
+  }
+  function hideTip() { if (tipEl) tipEl.style.display = 'none'; }
+
+  /* ---------- render ---------- */
+  function render(el, d, opt) {
+    opt = opt || {};
+    var theme = opt.theme === 'dark' ? 'dark' : 'light', T = THEMES[theme];
+    var size = SIZES[opt.size] ? opt.size : (theme === 'light' ? 'page' : 'preview'), S = SIZES[size];
+    var errs = validate(d);
+    if (errs.length) { el.innerHTML = '<div style="font:12px sans-serif;color:' + T.axis + ';padding:10px">no price data</div>'; return; }
+    var px = d.px, ccy = d.ccy;
+    var tail = theme === 'dark' && opt.tail && opt.tail.length ? opt.tail : [];
+    var all = px.concat(tail);
+    var x0 = t(px[0][0]), x1 = t(all[all.length - 1][0]);
+    var vals = all.map(function (p) { return p[1]; });
+    var vmin = Math.min.apply(null, vals), vmax = Math.max.apply(null, vals);
+    var lo, hi;
+    if (theme === 'light') { var st = niceStep(vmax); lo = 0; hi = Math.ceil(vmax / st) * st; }
+    else { var pad = (vmax - vmin) * 0.04 || 1; lo = vmin - pad; hi = vmax + pad; }
+    var LANE = (opt.scoreLane === 'top' || opt.scoreLane === 'bottom') && opt.scores && opt.scores.length ? opt.scoreLane : null;
+    var BR = size === 'modal' || size === 'page' ? 9 : 5.5, laneH = LANE ? BR * 2 + 10 : 0, pt0 = S.pt, pb0 = S.pb;
+    if (LANE) { S = Object.assign({}, S); if (LANE === 'top') S.pt += laneH; else S.pb += laneH; }
+    var W = S.W, H = S.H;
+    function X(ms) { return S.pl + (ms - x0) / ((x1 - x0) || 1) * (W - S.pl - S.pr); }
+    function Y(v) { return S.pt + (hi - v) / ((hi - lo) || 1) * (H - S.pt - S.pb); }
+    var base = H - S.pb, s = '';
+    s += '<svg viewBox="0 0 ' + W + ' ' + H + '" xmlns="http://www.w3.org/2000/svg" role="img" ' +
+         'aria-label="Weekly share price with Text and G markers" style="display:block;width:100%;height:auto">';
+
+    /* axes */
+    if (theme === 'light') {
+      for (var g = lo; g <= hi + 1e-9; g += niceStep(vmax)) {
+        s += '<line x1="' + S.pl + '" x2="' + (W - S.pr) + '" y1="' + Y(g).toFixed(1) + '" y2="' + Y(g).toFixed(1) + '" stroke="' + T.grid + '"/>';
+        s += '<text x="' + (S.pl - 8) + '" y="' + (Y(g) + 4).toFixed(1) + '" text-anchor="end" font-size="' + S.fs + '" fill="' + T.axis + '">' + esc(fmtPx(g, ccy)) + '</text>';
+      }
+    } else {
+      [[vmax], [vmin]].forEach(function (a) {
+        var y = Y(a[0]).toFixed(1);
+        s += '<line x1="' + S.pl + '" x2="' + (W - S.pr) + '" y1="' + y + '" y2="' + y + '" stroke="' + T.grid + '"/>';
+        s += '<text x="' + (W - S.pr + 4) + '" y="' + (+y + S.fs * 0.35).toFixed(1) + '" font-size="' + S.fs + '" fill="' + T.axis + '">' + esc(fmtPx(a[0], ccy)) + '</text>';
+      });
+    }
+    var y0 = new Date(x0).getUTCFullYear(), y1 = new Date(x1).getUTCFullYear();
+    if (x1 - x0 < 550 * DAY) {                       /* short record (e.g. snapshots only): month labels */
+      var step = size === 'modal' || size === 'page' ? 1 : 2, d0 = new Date(x0), mi = 0;
+      for (var mm = Date.UTC(d0.getUTCFullYear(), d0.getUTCMonth() + 1, 1); mm <= x1; mm = Date.UTC(new Date(mm).getUTCFullYear(), new Date(mm).getUTCMonth() + 1, 1)) {
+        if ((mi++) % step) continue;
+        var md_ = new Date(mm), mo = md_.getUTCMonth();
+        var ml = MON[mo] + (mo === 0 || mi === 1 ? " '" + String(md_.getUTCFullYear()).slice(2) : '');
+        s += '<text x="' + X(mm).toFixed(1) + '" y="' + (H - (theme === 'light' ? 18 : 2)) + '" text-anchor="middle" font-size="' + S.fs + '" fill="' + T.axis + '">' + ml + '</text>';
+      }
+      y1 = y0 - 1;                                   /* skip year labels */
+    }
+    for (var yr = y0; yr <= y1; yr++) {
+      var mid = Date.UTC(yr, 6, 1);                    /* label mid-year, tick at 1 Jan */
+      var jan = Date.UTC(yr, 0, 1);
+      if (jan >= x0 && jan <= x1 && theme === 'light')
+        s += '<line x1="' + X(jan).toFixed(1) + '" x2="' + X(jan).toFixed(1) + '" y1="' + base + '" y2="' + (base + 5) + '" stroke="' + T.adj + '"/>';
+      if (mid < x0 || mid > x1) continue;
+      var lab = theme === 'light' || size === 'modal' ? String(yr) : "'" + String(yr).slice(2);
+      s += '<text x="' + X(mid).toFixed(1) + '" y="' + (H - (theme === 'light' ? 18 : 2)) + '" text-anchor="middle" font-size="' + S.fs + '" fill="' + T.axis + '">' + lab + '</text>';
+    }
+
+    /* consolidation rule(s) */
+    (d.adj || []).forEach(function (a) {
+      var ax = X(t(a.before)).toFixed(1);
+      if (+ax < S.pl || +ax > W - S.pr) return;
+      var why = a.factor + ':1 consolidation — earlier closes ×' + a.factor;
+      s += '<g class="dc-adj" data-tip="' + esc(why) + '">';
+      s += '<line x1="' + ax + '" x2="' + ax + '" y1="' + S.pt + '" y2="' + base + '" stroke="' + T.adj + '" stroke-dasharray="4 4"' + (theme === 'dark' ? ' opacity=".7"' : '') + '/>';
+      s += '<rect x="' + (+ax - 5) + '" y="' + S.pt + '" width="10" height="' + (base - S.pt) + '" fill="transparent"/>';
+      if (theme === 'light') s += '<text x="' + (+ax + 5) + '" y="' + (S.pt + 12) + '" font-size="' + (S.fs - 1) + '" fill="' + T.axis + '">' + a.factor + ':1 consolidation</text>';
+      s += '</g>';
+    });
+
+    /* price area + line */
+    var pts = px.map(function (p) { return X(t(p[0])).toFixed(1) + ',' + Y(p[1]).toFixed(1); }).join(' ');
+    var fx0 = X(t(px[0][0])).toFixed(1), fx1 = X(t(px[px.length - 1][0])).toFixed(1);
+    s += '<polygon points="' + fx0 + ',' + base + ' ' + pts + ' ' + fx1 + ',' + base + '" fill="' + T.fill + '" fill-opacity="' + T.fillOp + '"/>';
+    s += '<polyline points="' + pts + '" fill="none" stroke="' + T.line + '" stroke-width="' + S.lw + '" stroke-linejoin="round"/>';
+
+    /* snapshot tail (dark only) */
+    if (tail.length) {
+      var lp = px[px.length - 1];
+      var tp = [lp].concat(tail).map(function (p) { return X(t(p[0])).toFixed(1) + ',' + Y(p[1]).toFixed(1); }).join(' ');
+      s += '<polyline points="' + tp + '" fill="none" stroke="' + T.tail + '" stroke-opacity=".7" stroke-width="' + S.lw + '" stroke-dasharray="3 3"/>';
+      if (size === 'modal') {
+        var tx = X(t(tail[0][0]));
+        s += '<line x1="' + tx.toFixed(1) + '" x2="' + tx.toFixed(1) + '" y1="' + S.pt + '" y2="' + base + '" stroke="' + T.grid + '"/>';
+        s += '<text x="' + (tx - 4).toFixed(1) + '" y="' + (base - 5) + '" text-anchor="end" font-size="' + (S.fs - 1) + '" fill="' + T.axis + '">ShareScope weekly snapshots \u2192</text>';
+      }
+    }
+
+    /* marks: each on the close of the week containing its RNS date */
+    function weekIndex(iso) {
+      var md = t(iso);
+      for (var i = 0; i < px.length; i++) if (t(px[i][0]) >= md) return i;
+      return px.length - 1;                         /* within 7 days after the last close */
+    }
+    var tips = [], hits = [];   /* hits: [x, y, tipIndex, radius] in viewBox units, for nearest-mark hover */
+    var dots = '', arrows = '', r = S.r, aw = S.aw / 2, ah = S.aw * 0.95, starAt = null;
+    (d.marks || []).forEach(function (m, idx) {
+      var wi = weekIndex(m.d), wk = px[wi], cx = X(t(wk[0])), cy = Y(wk[1]);
+      var gtxt = (m.g === 'flat' ? 'flat' : (m.g === 'RAISE' ? '▲ RAISE' : '▼ CUT')) + (m.gnote ? ' (' + m.gnote + ')' : '');
+      var tipHtml = '<b>' + esc(fmtDate(m.d)) + ' · ' + esc(m.fy || '') + ' ' + esc(m.doc || '') + '</b><br>' +
+        'Text ' + fmtScore(m.s) + ' · G ' + esc(gtxt) + '<br>' +
+        'Week close ' + esc(fmtPx(wk[1], ccy)) + ' (' + esc(fmtDate(wk[0], true)) + ')' +
+        (m.q ? '<div style="margin-top:4px;opacity:.85;font-style:italic">“' + esc(m.q) + '”</div>' : '');
+      var g = '<g class="dc-mk" data-i="' + idx + '" style="cursor:default">';
+      var hit = '<circle cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="' + (r * 3).toFixed(1) + '" fill="transparent"/>';
+      var sw = size === 'page' ? 1.8 : 1;
+      if (m.g === 'RAISE' || m.g === 'CUT') {
+        var c = m.g === 'RAISE' ? T.pos : T.neg, up = m.g === 'RAISE';
+        var tip_ = up ? (cy - ah * 0.6) : (cy + ah * 0.6), b = up ? (cy + ah * 0.4) : (cy - ah * 0.4);
+        arrows += g + '<polygon points="' + cx.toFixed(1) + ',' + tip_.toFixed(1) + ' ' + (cx - aw).toFixed(1) + ',' + b.toFixed(1) + ' ' +
+          (cx + aw).toFixed(1) + ',' + b.toFixed(1) + '" fill="' + c + '" stroke="' + T.outline + '" stroke-width="' + sw + '"/>' + hit + '</g>';
+      } else if (m.s === 0) {
+        dots += g + '<circle cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="' + (r * 0.88).toFixed(1) + '" fill="' + T.zeroFill +
+          '" stroke="' + T.zeroStroke + '" stroke-width="' + (size === 'page' ? 2.2 : 1.2) + '"/>' + hit + '</g>';
+      } else {
+        dots += g + '<circle cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="' + r + '" fill="' + (m.s > 0 ? T.pos : T.neg) +
+          '" stroke="' + T.outline + '" stroke-width="' + sw + '"/>' + hit + '</g>';
+      }
+      tips[idx] = tipHtml;
+      hits.push([cx, cy, idx, r]);
+      /* opt.star = ISO date of the latest RNS: a small star above that mark (Database popup) */
+      if (opt.star && m.d === opt.star) starAt = [cx, cy - (m.g === 'RAISE' ? ah * 0.6 : r) - 5];
+    });
+    /* RNS Scorecard badges (opt.scores = [{d, s, t}]): score in a band-coloured circle on the price
+       line at the RNS date, faint full-height guide, same scheme as Database's broker target chart.
+       Lifted clear of a Text/G mark in the same week; one newer than the last close pins to it, dashed. */
+    var badges = '', badgePts = [];
+    if (opt.scores && opt.scores.length) {
+      var markWk = {};
+      (d.marks || []).forEach(function (m) { markWk[weekIndex(m.d)] = 1; });
+      var lastMs = t(all[all.length - 1][0]);
+      var yAt = function (ms) {
+        for (var i = 0; i < all.length; i++) {
+          var ti = t(all[i][0]);
+          if (ti >= ms) {
+            if (!i) return all[0][1];
+            var tp = t(all[i - 1][0]), f = (ms - tp) / (ti - tp);
+            return all[i - 1][1] + (all[i][1] - all[i - 1][1]) * f;
+          }
+        }
+        return all[all.length - 1][1];
+      };
+      var R = BR, bfs = size === 'modal' || size === 'page' ? 8 : 5.5;
+      render._laneX = null;
+      opt.scores.slice().sort(function (a, b) { return a.d < b.d ? -1 : 1; }).forEach(function (b) {
+        if (!/^\d{4}-\d{2}-\d{2}/.test(b.d || '') || typeof b.s !== 'number') return;
+        var ms = t(b.d.slice(0, 10)); if (ms < x0) return;
+        var pinned = ms > lastMs + 3 * DAY, bx = X(Math.min(ms, lastMs)), by = Y(yAt(Math.min(ms, lastMs)));
+        var tx = bx, ty = by;                         /* true point on the price line */
+        if (LANE) {
+          bx = Math.max(bx, (render._laneX || -1e9) + 2 * R + 2); render._laneX = bx;
+          by = LANE === 'top' ? pt0 + R + 3 : base + 7 + R;
+        }
+        var wi = weekIndex(b.d.slice(0, 10));
+        if (!LANE) {
+          if (!tail.length || ms <= t(px[px.length - 1][0])) { if (markWk[wi]) by -= r + R + 3; }
+          by = Math.max(S.pt + R, Math.min(base - R, by));
+        }
+        var sc = Math.max(0, Math.min(100, Math.round(b.s)));
+        var col = sc >= 75 ? '#00c814' : sc >= 50 ? '#ffc400' : '#e02525';
+        var faint = sc >= 75 ? 'rgba(0,200,20,.18)' : sc >= 50 ? 'rgba(245,179,47,.18)' : 'rgba(224,37,37,.18)';
+        var ti_ = tips.length;
+        tips.push('<b>' + esc(fmtDate(b.d.slice(0, 10))) + ' · RNS Scorecard</b><br>Score <b style="color:' + col + '">' + sc +
+          '</b>/100' + (b.t ? ' · ' + esc(b.t) : '') + (pinned ? '<br><i>after the last weekly close</i>' : ''));
+        if (LANE) {
+          var ey = LANE === 'top' ? by + R : by - R;
+          badges += '<line x1="' + tx.toFixed(1) + '" x2="' + tx.toFixed(1) + '" y1="' + S.pt + '" y2="' + base + '" stroke="' + faint + '"/>';
+          badges += '<polyline points="' + bx.toFixed(1) + ',' + ey.toFixed(1) + ' ' + tx.toFixed(1) + ',' + (LANE === 'top' ? S.pt : base) + '" fill="none" stroke="' + col + '" stroke-opacity=".55" stroke-width="1"/>';
+          badges += '<circle cx="' + tx.toFixed(1) + '" cy="' + ty.toFixed(1) + '" r="' + (R * 0.28).toFixed(1) + '" fill="' + col + '"/>';
+        } else
+        badges += '<line x1="' + bx.toFixed(1) + '" x2="' + bx.toFixed(1) + '" y1="' + S.pt + '" y2="' + base + '" stroke="' + faint + '"/>';
+        badgePts.push([bx, by, R]);
+        hits.push([bx, by, ti_, R]);
+        badges += '<g class="dc-mk" data-i="' + ti_ + '"><circle cx="' + bx.toFixed(1) + '" cy="' + by.toFixed(1) + '" r="' + R + '" fill="' + col +
+          '" stroke="rgba(255,255,255,.85)" stroke-width="1"' + (pinned ? ' stroke-dasharray="2 2"' : '') + '/>' +
+          '<text x="' + bx.toFixed(1) + '" y="' + (by + bfs * 0.36).toFixed(1) + '" text-anchor="middle" font-size="' + bfs +
+          '" font-weight="700" fill="#0d0d16" font-family="Inter,system-ui,sans-serif">' + sc + '</text>' +
+          '<circle cx="' + bx.toFixed(1) + '" cy="' + by.toFixed(1) + '" r="' + (R * 2) + '" fill="transparent"/></g>';
+      });
+    }
+    s += badges + dots + arrows;                     /* arrows last: on top of a same-week dot */
+    if (starAt) s += '<text x="' + starAt[0].toFixed(1) + '" y="' + Math.max(S.pt + 4, starAt[1]).toFixed(1) +
+      '" text-anchor="middle" font-size="' + (size === 'modal' || size === 'page' ? 15 : 8) +
+      '" fill="#ffc400" stroke="' + T.outline + '" stroke-width=".6" style="pointer-events:none">★</text>';
+
+    /* no last-close dot: it sat on top of the newest marks and score badges (removed in 1.8) */
+    s += '</svg>';
+    el.innerHTML = s;
+    el._dcTips = tips;
+    el._dcHits = hits;
+
+    if (!el._dcBound) {
+      el._dcBound = true;
+      el.addEventListener('mousemove', function (ev) {
+        /* nearest mark wins: when marks sit close together, the one under the cursor is
+           the one whose centre is closest, not whichever invisible hit area was drawn last */
+        var svg = el.querySelector('svg'), best = null;
+        if (svg && el._dcHits && el._dcHits.length && svg.getScreenCTM()) {
+          var pt = svg.createSVGPoint(); pt.x = ev.clientX; pt.y = ev.clientY;
+          var p = pt.matrixTransform(svg.getScreenCTM().inverse()), bd = Infinity;
+          el._dcHits.forEach(function (h) {
+            var d = Math.sqrt((h[0] - p.x) * (h[0] - p.x) + (h[1] - p.y) * (h[1] - p.y));
+            if (d <= h[3] * 2.5 && d < bd) { bd = d; best = h; }
+          });
+        }
+        var ad = ev.target.closest && ev.target.closest('.dc-adj');
+        if (best) {
+          /* two prints in the same week share one point: show them together, oldest first */
+          var same = el._dcHits.filter(function (h) { return Math.abs(h[0] - best[0]) < 1.5 && Math.abs(h[1] - best[1]) < 1.5; });
+          showTip(el._dcTheme, same.map(function (h) { return el._dcTips[h[2]]; })
+            .join('<hr style="border:0;border-top:1px solid rgba(128,128,128,.35);margin:6px 0">'), ev);
+        }
+        else if (ad) showTip(el._dcTheme, esc(ad.getAttribute('data-tip')), ev);
+        else hideTip();
+      });
+      el.addEventListener('mouseleave', hideTip);
+    }
+    el._dcTheme = theme;
+  }
+
+  function legend(theme) {
+    var T = THEMES[theme === 'dark' ? 'dark' : 'light'];
+    var dot = function (c, ring) { return '<i style="display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:4px;vertical-align:0;' +
+      (ring ? 'border:1.5px solid ' + T.zeroStroke + ';background:' + T.zeroFill : 'background:' + c) + '"></i>'; };
+    return '<span class="dc-leg" style="display:inline-flex;gap:10px;flex-wrap:wrap;font-size:inherit">' +
+      '<span>' + dot(T.pos) + 'Text +</span><span>' + dot(T.neg) + 'Text −</span><span>' + dot(null, true) + '0</span>' +
+      '<span style="color:' + T.pos + '">▲ G raise</span><span style="color:' + T.neg + '">▼ G cut</span></span>';
+  }
+
+  function mountFromPage() {
+    var src = document.getElementById('drift-chart'), el = document.querySelector('[data-drift-chart]');
+    if (!src || !el) return;
+    try { render(el, JSON.parse(src.textContent), { theme: 'light', size: 'page' }); }
+    catch (e) { el.innerHTML = '<div style="padding:10px;color:#6b6860">no price data</div>'; }
+  }
+
+
+  /* ---------- EPS forecasts from rows4 (fields 2 and 3: FY1, FY2) ---------- */
+  function parseEps(rows4, ticker) {
+    var tk = String(ticker).toUpperCase(), out = {};
+    (rows4 || []).forEach(function (row) {
+      if (!row || !row.Date || !row.Snapshot) return;
+      var dp = String(row.Date).split('/'); if (dp.length !== 3) return;
+      var iso = dp[2] + '-' + ('0' + dp[1]).slice(-2) + '-' + ('0' + dp[0]).slice(-2);
+      var recs = String(row.Snapshot).split(';');
+      for (var i = 0; i < recs.length; i++) {
+        var f = recs[i].split(',');
+        if ((f[0] || '').toUpperCase() !== tk) continue;
+        var a = parseFloat(f[1]), b = parseFloat(f[2]);
+        out[iso] = [iso, isFinite(a) ? a : null, isFinite(b) ? b : null];
+        break;
+      }
+    });
+    return Object.keys(out).sort().map(function (k) { return out[k]; });
+  }
+  /* year-end roll: the new FY1 is within 12% of the old FY2 and has moved >15% from the old FY1 */
+  function epsYears(e, given) {
+    var R = given ? given.slice() : [];
+    for (var i = 1; !given && i < e.length; i++) {
+      var a = e[i - 1], b = e[i];
+      if (a[1] && a[2] && b[1] && Math.abs(b[1] - a[2]) / Math.abs(a[2]) < 0.12 && Math.abs(b[1] - a[1]) / Math.abs(a[1]) > 0.15) R.push(i);
+    }
+    var yrs = {}, ri = 0;
+    e.forEach(function (r, i) {
+      while (ri < R.length && R[ri] <= i) ri++;
+      if (r[1] != null) (yrs[ri] = yrs[ri] || []).push([r[0], r[1]]);
+      if (r[2] != null) (yrs[ri + 1] = yrs[ri + 1] || []).push([r[0], r[2]]);
+    });
+    return { rolls: R, cur: yrs[R.length] || [], nxt: yrs[R.length + 1] || [] };
+  }
+  /* EPS panel under a modal chart. opt.x0/x1 = the price chart's date range (ms) so the axes line up.
+     style 'lines': this year solid amber, next year dashed purple. style 'bars': one bar per week for this
+     year's forecast, coloured by the week's change (green up / red down / grey flat). */
+  function epsPanel(el, e, opt) {
+    opt = opt || {};
+    var S = SIZES[opt.size || 'modal'], W = S.W, H = opt.h || 130, pt = 14, pb = 16, A = '#ffb347', P = '#c07ef7';
+    if (!e || e.length < 2) { el.innerHTML = ''; return; }
+    var Y_ = epsYears(e, opt.rolls), cur = Y_.cur, nxt = opt.style === 'bars' ? [] : Y_.nxt;
+    if (cur.length < 2) { el.innerHTML = ''; return; }
+    var x0 = opt.x0, x1 = opt.x1;
+    function X(iso) { return S.pl + (t(iso) - x0) / ((x1 - x0) || 1) * (W - S.pl - S.pr); }
+    var v = cur.concat(nxt).map(function (p) { return p[1]; }), lo = Math.min.apply(null, v), hi = Math.max.apply(null, v);
+    var pad = (hi - lo) * 0.12 || Math.abs(hi) * 0.05 || 1; lo -= pad; hi += pad;
+    function Y(x) { return pt + (hi - x) / (hi - lo) * (H - pt - pb); }
+    var s = '<svg viewBox="0 0 ' + W + ' ' + H + '" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%;height:auto">';
+    s += '<line x1="' + S.pl + '" x2="' + (W - S.pr) + '" y1="0.5" y2="0.5" stroke="#1e1e28"/>';
+    s += '<text x="' + S.pl + '" y="10" font-size="9" letter-spacing=".08em" fill="#5a5a72">EPS FORECASTS</text>';
+    var labels = '';
+    function pctLab(ser) {
+      for (var i = 1; i < ser.length; i++) {
+        var ch = (ser[i][1] / ser[i - 1][1] - 1) * 100;
+        if (Math.abs(ch) >= 3 && isFinite(ch)) {
+          var x = X(ser[i][0]), y = Y(ser[i][1]);
+          labels += '<text x="' + x.toFixed(1) + '" y="' + (ch > 0 ? Math.max(pt + 8, y - 5) : y + 11).toFixed(1) + '" text-anchor="middle" font-size="9" fill="' +
+            (ch > 0 ? '#00d97e' : '#ff4757') + '">' + (ch > 0 ? '+' : '') + ch.toFixed(1) + '%</text>';
+        }
+      }
+    }
+    if (opt.style === 'bars') {
+      var bw = Math.max(2, Math.min(14, (W - S.pl - S.pr) / ((x1 - x0) / (7 * DAY)) * 0.7)), bot = H - pb;
+      cur.forEach(function (p, i) {
+        var ch = i ? p[1] - cur[i - 1][1] : 0, col = ch > 0 ? '#00d97e' : ch < 0 ? '#ff4757' : '#3a3a50', x = X(p[0]), y = Y(p[1]);
+        s += '<rect x="' + (x - bw / 2).toFixed(1) + '" y="' + y.toFixed(1) + '" width="' + bw.toFixed(1) + '" height="' + Math.max(1, bot - y).toFixed(1) + '" fill="' + col + '" rx="1"/>';
+      });
+    } else if (opt.style === 'area') {
+      /* Earnings Whispers-style forward-estimate step area, drawn in its own strip */
+      var step = function (ser) { var o = [];
+        ser.forEach(function (p, i) { var x = X(p[0]).toFixed(1), y = Y(p[1]).toFixed(1);
+          if (i) o.push(x + ',' + Y(ser[i - 1][1]).toFixed(1)); o.push(x + ',' + y); }); return o; };
+      var bot2 = H - pb, sc_ = step(cur);
+      s += '<polygon points="' + X(cur[0][0]).toFixed(1) + ',' + bot2 + ' ' + sc_.join(' ') + ' ' + X(cur[cur.length - 1][0]).toFixed(1) + ',' + bot2 +
+        '" fill="#d9a066" fill-opacity=".22"/>';
+      s += '<polyline points="' + sc_.join(' ') + '" fill="none" stroke="#d9a066" stroke-width="1.4"/>';
+      if (nxt.length > 1) s += '<polyline points="' + step(nxt).join(' ') + '" fill="none" stroke="' + P + '" stroke-width="1.1" stroke-dasharray="4 3"/>';
+      A = '#d9a066';
+    } else {
+      [[nxt, P, true], [cur, A, false]].forEach(function (z) {
+        if (z[0].length < 2) return;
+        s += '<polyline points="' + z[0].map(function (p) { return X(p[0]).toFixed(1) + ',' + Y(p[1]).toFixed(1); }).join(' ') +
+          '" fill="none" stroke="' + z[1] + '" stroke-width="' + (z[2] ? 1.2 : 1.6) + '"' + (z[2] ? ' stroke-dasharray="4 3"' : '') + '/>';
+      });
+    }
+    pctLab(cur);
+    Y_.rolls.forEach(function (i) {
+      var x = X(e[i][0]);
+      s += '<line x1="' + x.toFixed(1) + '" x2="' + x.toFixed(1) + '" y1="' + pt + '" y2="' + (H - pb) + '" stroke="#9a9ab5" stroke-dasharray="2 3" opacity=".5"/>' +
+        '<text x="' + (x + 4).toFixed(1) + '" y="' + (H - pb - 3) + '" font-size="9" fill="#9a9ab5">results · year rolled</text>';
+    });
+    var l1 = cur[cur.length - 1][1], l2 = nxt.length ? nxt[nxt.length - 1][1] : null, y1 = Y(l1), y2 = l2 != null ? Y(l2) : null;
+    if (y2 != null && Math.abs(y1 - y2) < 11) { if (y1 > y2) y1 = y2 + 11; else y2 = y1 + 11; }
+    labels += '<text x="' + (W - S.pr + 4) + '" y="' + (y1 + 3).toFixed(1) + '" font-size="10" fill="' + A + '">' + l1 + 'p</text>';
+    if (y2 != null) labels += '<text x="' + (W - S.pr + 4) + '" y="' + (y2 + 3).toFixed(1) + '" font-size="10" fill="' + P + '">' + l2 + 'p</text>';
+    el.innerHTML = s + labels + '</svg>';
+  }
+
+  root.DriftChart = { render: render, legend: legend, validate: validate, parseTail: parseTail,
+                      mountFromPage: mountFromPage, parseEps: parseEps, epsPanel: epsPanel, version: '1.8' };
+})(typeof window !== 'undefined' ? window : this);
+
+</script>
+<script>document.addEventListener('DOMContentLoaded',function(){DriftChart.mountFromPage();});</script>
 <h2>§4 · Drift — what they've gone quiet about</h2>
-<div class="small" style="margin-bottom:10px;">Which numbers get shared, hedged, or dropped, document by document — going quiet is the signal. 25 qualifying documents = 25 Drift columns. ✓ Match confirmed. Full column run, no collapse.</div>
+<div class="small" style="margin-bottom:10px;">Which numbers get shared, hedged, or dropped, document by document — going quiet is the signal. 26 qualifying documents = 26 Drift columns. ✓ Match confirmed. Full column run, no collapse.</div>
 <div class="driftwrap"><table id="drift"><tr><th class="rowlabel">Metric</th>
 <th class="colhead" data-ptype="FYR">Sep-22<span class="sub">FY22 R</span></th>
 <th class="colhead" data-ptype="Q1TU">Oct-22<span class="sub">FY23 Q1TU</span></th>
@@ -627,21 +1111,22 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;padd
 <th class="colhead" data-ptype="FYTU">Apr-26<span class="sub">FY26 Upgrade</span></th>
 <th class="colhead" data-ptype="Q3TU">May-26<span class="sub">FY26 Q3TU</span></th>
 <th class="colhead" data-ptype="FYTU">Jul-26<span class="sub">FY26 Post-close</span></th>
-<th class="colhead" data-ptype="FYR">⭐ Sep-26<span class="sub">FY26 R</span></th>
+<th class="colhead" data-ptype="FYR">Sep-26<span class="sub">FY26 R</span></th>
+<th class="colhead" data-ptype="Q1TU">⭐ Oct-26<span class="sub">FY27 Q1TU</span></th>
 </tr>
-<tr><td class="rowlabel">Total revenue</td><td class="y">✅ FY</td><td class="y">✅ Q1</td><td class="">—</td><td class="y">✅ H1</td><td class="y">✅ 9M</td><td class="">—</td><td class="y">✅ FY</td><td class="y">✅ Q1</td><td class="">—</td><td class="y">✅ H1</td><td class="y">✅ 9M</td><td class="">—</td><td class="y">✅ FY</td><td class="y">✅ Q1</td><td class="">—</td><td class="y">✅ H1</td><td class="y">✅ 9M</td><td class="y">✅ FY</td><td class="y">✅ Q1</td><td class="">—</td><td class="y">✅ H1</td><td class="">—</td><td class="y">✅ 9M</td><td class="y">✅ FY~</td><td class="y">✅ FY</td></tr>
-<tr><td class="rowlabel">Adj PBT</td><td class="y">✅ FY</td><td class="y">✅ Q1</td><td class="">—</td><td class="y">✅ H1</td><td class="y">✅ 9M</td><td class="">—</td><td class="y">✅ FY</td><td class="y">✅ Q1</td><td class="">—</td><td class="y">✅ H1</td><td class="y">✅ 9M</td><td class="">—</td><td class="y">✅ FY</td><td class="y">✅ Q1</td><td class="">—</td><td class="y">✅ H1</td><td class="y">✅ 9M</td><td class="y">✅ FY</td><td class="y">✅ Q1</td><td class="">—</td><td class="y">✅ H1</td><td class="q">🟡 guide</td><td class="q">🟡 reit</td><td class="y">✅ FY~</td><td class="y">✅ FY</td></tr>
-<tr><td class="rowlabel">Adj op margin</td><td class="y">✅ 24%RoS</td><td class="">—</td><td class="">—</td><td class="y">✅ 21%</td><td class="">—</td><td class="">—</td><td class="y">✅ 20%RoS</td><td class="">—</td><td class="">—</td><td class="y">✅ 17%</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="y">✅ 15.1%</td><td class="">—</td><td class="y">✅ 15.7%</td><td class="">—</td><td class="">—</td><td class="y">✅ 15.7%</td><td class="">—</td><td class="">—</td><td class="y">✅ ~18.7%†</td><td class="y">✅ 18.7%</td></tr>
-<tr><td class="rowlabel">Quarterly revenue</td><td class="">—</td><td class="y">✅ Q1</td><td class="">—</td><td class="">—</td><td class="y">✅ Q3+3Q</td><td class="">—</td><td class="">—</td><td class="y">✅ Q1</td><td class="">—</td><td class="">—</td><td class="y">✅ Q3+3Q</td><td class="">—</td><td class="">—</td><td class="y">✅ Q1</td><td class="">—</td><td class="">—</td><td class="y">✅ Q3+3Q</td><td class="">—</td><td class="y">✅ Q1</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="y">✅ Q3+3Q</td><td class="y">✅ Q4~</td><td class="y">✅ Q1–Q4</td></tr>
-<tr><td class="rowlabel">Quarterly adj PBT</td><td class="">—</td><td class="y">✅ Q1</td><td class="">—</td><td class="">—</td><td class="y">✅ Q3+3Q</td><td class="">—</td><td class="">—</td><td class="y">✅ Q1</td><td class="">—</td><td class="">—</td><td class="y">✅ 9M tot</td><td class="">—</td><td class="">—</td><td class="y">✅ Q1</td><td class="">—</td><td class="">—</td><td class="y">✅ Q3+3Q</td><td class="">—</td><td class="n">❌ policy</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="n">❌ policy</td><td class="">—</td><td class="">—</td></tr>
-<tr><td class="rowlabel">Order book (direction)</td><td class="y">✅ strong</td><td class="y">✅ strong</td><td class="">—</td><td class="y">✅ strong</td><td class="n">❌</td><td class="">—</td><td class="q">🟡 solid</td><td class="n">❌</td><td class="">—</td><td class="y">✅ stable</td><td class="n">❌</td><td class="">—</td><td class="q">🟡</td><td class="q">🟡</td><td class="">—</td><td class="y">✅ improved</td><td class="y">✅ subst.</td><td class="q">🟡</td><td class="y">✅ improving</td><td class="">—</td><td class="y">✅ sig.growth</td><td class="y">✅ expand</td><td class="y">✅ expand all</td><td class="q">🟡</td><td class="q">🟡 growing</td></tr>
-<tr><td class="rowlabel">Balance sheet / cash</td><td class="y">✅</td><td class="y">✅</td><td class="">—</td><td class="y">✅</td><td class="y">✅</td><td class="">—</td><td class="y">✅</td><td class="y">✅</td><td class="">—</td><td class="y">✅</td><td class="y">✅ £207.4m</td><td class="">—</td><td class="y">✅</td><td class="y">✅</td><td class="">—</td><td class="y">✅</td><td class="y">✅ £259.8m</td><td class="y">✅</td><td class="n">❌</td><td class="">—</td><td class="y">✅</td><td class="">—</td><td class="n">❌</td><td class="">—</td><td class="y">✅ £291.0m</td></tr>
-<tr><td class="rowlabel">Segment names</td><td class="q">🟡 MT/AI&MD</td><td class="q">🟡 MT/AI&MD</td><td class="">—</td><td class="q">🟡 MT/AI&MD</td><td class="q">🟡 MT/AI&MD</td><td class="">—</td><td class="q">🟡 MT/AI&MD</td><td class="q">🟡 MT/AI&MD</td><td class="">—</td><td class="q">🟡 MT/AI&MD</td><td class="q">🟡 MT/AI&MD</td><td class="">—</td><td class="q">🟡 MT/AI&MD</td><td class="q">🟡 MT/AI&MD</td><td class="">—</td><td class="q">🟡 MT/AI&MD</td><td class="q">🟡 MT/AI&MD</td><td class="q">🟡 MT/AI&MD</td><td class="y">✅ IM/PM/ST</td><td class="">—</td><td class="y">✅ IM/PM/ST</td><td class="y">✅ IM/PM/ST</td><td class="y">✅ IM/PM/ST</td><td class="y">✅ IM/PM/ST</td><td class="y">✅ IM/PM/ST</td></tr>
-<tr><td class="rowlabel">Leadership</td><td class="q">🟡 Lee/Roberts</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="q">🟡 Roberts exits</td><td class="q">🟡 Macdonald int.</td><td class="y">✅ Shipsey CFO</td><td class="">—</td><td class="">—</td><td class="y">✅ 1st CFO FY</td></tr>
+<tr><td class="rowlabel">Total revenue</td><td class="y">✅ FY</td><td class="y">✅ Q1</td><td class="">—</td><td class="y">✅ H1</td><td class="y">✅ 9M</td><td class="">—</td><td class="y">✅ FY</td><td class="y">✅ Q1</td><td class="">—</td><td class="y">✅ H1</td><td class="y">✅ 9M</td><td class="">—</td><td class="y">✅ FY</td><td class="y">✅ Q1</td><td class="">—</td><td class="y">✅ H1</td><td class="y">✅ 9M</td><td class="y">✅ FY</td><td class="y">✅ Q1</td><td class="">—</td><td class="y">✅ H1</td><td class="">—</td><td class="y">✅ 9M</td><td class="y">✅ FY~</td><td class="y">✅ FY</td><td class="y">✅ Q1</td></tr>
+<tr><td class="rowlabel">Adj PBT</td><td class="y">✅ FY</td><td class="y">✅ Q1</td><td class="">—</td><td class="y">✅ H1</td><td class="y">✅ 9M</td><td class="">—</td><td class="y">✅ FY</td><td class="y">✅ Q1</td><td class="">—</td><td class="y">✅ H1</td><td class="y">✅ 9M</td><td class="">—</td><td class="y">✅ FY</td><td class="y">✅ Q1</td><td class="">—</td><td class="y">✅ H1</td><td class="y">✅ 9M</td><td class="y">✅ FY</td><td class="n">❌ policy</td><td class="">—</td><td class="y">✅ H1</td><td class="q">🟡 guide</td><td class="q">🟡 reit</td><td class="y">✅ FY~</td><td class="y">✅ FY</td><td class="n">❌ policy</td></tr>
+<tr><td class="rowlabel">Adj op margin</td><td class="y">✅ 24%RoS</td><td class="">—</td><td class="">—</td><td class="y">✅ 21%</td><td class="">—</td><td class="">—</td><td class="y">✅ 20%RoS</td><td class="">—</td><td class="">—</td><td class="y">✅ 17%</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="y">✅ 15.1%</td><td class="">—</td><td class="y">✅ 15.7%</td><td class="">—</td><td class="">—</td><td class="y">✅ 15.7%</td><td class="">—</td><td class="">—</td><td class="y">✅ ~18.7%†</td><td class="y">✅ 18.7%</td><td class="q">🟡 guide</td></tr>
+<tr><td class="rowlabel">Quarterly revenue</td><td class="">—</td><td class="y">✅ Q1</td><td class="">—</td><td class="">—</td><td class="y">✅ Q3+3Q</td><td class="">—</td><td class="">—</td><td class="y">✅ Q1</td><td class="">—</td><td class="">—</td><td class="y">✅ Q3+3Q</td><td class="">—</td><td class="">—</td><td class="y">✅ Q1</td><td class="">—</td><td class="">—</td><td class="y">✅ Q3+3Q</td><td class="">—</td><td class="y">✅ Q1</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="y">✅ Q3+3Q</td><td class="y">✅ Q4~</td><td class="y">✅ Q1–Q4</td><td class="y">✅ Q1</td></tr>
+<tr><td class="rowlabel">Quarterly adj PBT</td><td class="">—</td><td class="y">✅ Q1</td><td class="">—</td><td class="">—</td><td class="y">✅ Q3+3Q</td><td class="">—</td><td class="">—</td><td class="y">✅ Q1</td><td class="">—</td><td class="">—</td><td class="y">✅ 9M tot</td><td class="">—</td><td class="">—</td><td class="y">✅ Q1</td><td class="">—</td><td class="">—</td><td class="y">✅ Q3+3Q</td><td class="">—</td><td class="n">❌ policy</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="n">❌ policy</td><td class="">—</td><td class="">—</td><td class="n">❌ policy</td></tr>
+<tr><td class="rowlabel">Order book (direction)</td><td class="y">✅ strong</td><td class="y">✅ strong</td><td class="">—</td><td class="y">✅ strong</td><td class="n">❌</td><td class="">—</td><td class="q">🟡 solid</td><td class="n">❌</td><td class="">—</td><td class="y">✅ stable</td><td class="n">❌</td><td class="">—</td><td class="q">🟡</td><td class="q">🟡</td><td class="">—</td><td class="y">✅ improved</td><td class="y">✅ subst.</td><td class="q">🟡</td><td class="y">✅ improving</td><td class="">—</td><td class="y">✅ sig.growth</td><td class="y">✅ expand</td><td class="y">✅ expand all</td><td class="q">🟡</td><td class="q">🟡 growing</td><td class="q">🟡 growing ×3</td></tr>
+<tr><td class="rowlabel">Balance sheet / cash</td><td class="y">✅</td><td class="y">✅</td><td class="">—</td><td class="y">✅</td><td class="y">✅</td><td class="">—</td><td class="y">✅</td><td class="y">✅</td><td class="">—</td><td class="y">✅</td><td class="y">✅ £207.4m</td><td class="">—</td><td class="y">✅</td><td class="y">✅</td><td class="">—</td><td class="y">✅</td><td class="y">✅ £259.8m</td><td class="y">✅</td><td class="n">❌</td><td class="">—</td><td class="y">✅</td><td class="">—</td><td class="n">❌</td><td class="">—</td><td class="y">✅ £291.0m</td><td class="n">❌</td></tr>
+<tr><td class="rowlabel">Segment names</td><td class="q">🟡 MT/AI&MD</td><td class="q">🟡 MT/AI&MD</td><td class="">—</td><td class="q">🟡 MT/AI&MD</td><td class="q">🟡 MT/AI&MD</td><td class="">—</td><td class="q">🟡 MT/AI&MD</td><td class="q">🟡 MT/AI&MD</td><td class="">—</td><td class="q">🟡 MT/AI&MD</td><td class="q">🟡 MT/AI&MD</td><td class="">—</td><td class="q">🟡 MT/AI&MD</td><td class="q">🟡 MT/AI&MD</td><td class="">—</td><td class="q">🟡 MT/AI&MD</td><td class="q">🟡 MT/AI&MD</td><td class="q">🟡 MT/AI&MD</td><td class="y">✅ IM/PM/ST</td><td class="">—</td><td class="y">✅ IM/PM/ST</td><td class="y">✅ IM/PM/ST</td><td class="y">✅ IM/PM/ST</td><td class="y">✅ IM/PM/ST</td><td class="y">✅ IM/PM/ST</td><td class="y">✅ IM/PM/ST</td></tr>
+<tr><td class="rowlabel">Leadership</td><td class="q">🟡 Lee/Roberts</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="q">🟡 Roberts exits</td><td class="q">🟡 Macdonald int.</td><td class="y">✅ Shipsey CFO</td><td class="">—</td><td class="">—</td><td class="y">✅ 1st CFO FY</td><td class="">—</td></tr>
 </table></div>
 <details class="d1"><summary>§4 workings — notes</summary>
 <div class="d1body">
- <details class="d2"><summary>Notes, §4</summary><div class="d2body"><div class="sub">First note (rightmost column, FY26 FY R, Sep-26): the first full-year results to print all four quarters of revenue (a segment-by-quarter table) — a disclosure expansion at this document grain, baseline starts here. Order book stays qualitative (&ldquo;further order book growth&rdquo;), as at every FY results document. The Jul-26 post-close TU, the first of its type, carried neither order book nor cash; with only one such document in the record, that is — not ❌.</div><div class="sub">Two disclosure contractions cluster in calendar 2025: the TU cash-position paragraph dropped at Oct-25 and again at May-26, against an unbroken run of six prior trading updates that carried it (May-25 still disclosed &pound;259.8m); and quarterly profit commentary was discontinued by stated policy from Oct-25. Neither fires a condition &mdash; the balance sheet sits outside the trigger count, and the profit contraction was announced policy &mdash; but the narrowed disclosure regime is untested in a downturn and is the thing to watch first if conditions turn.</div><div class="sub">Order book fell silent across three consecutive trading updates through the FY23&ndash;FY24 trough (Apr-23, Oct-23, May-24), against a habit established at Oct-22 and resumed from Oct-24 &mdash; verified absent in each document, not inferred. That silence is the evidence behind the Rank 1 lead: the metric went quiet before the numbers turned down, and came back before they turned up.</div>
+ <details class="d2"><summary>Notes, §4</summary><div class="d2body"><div class="sub">First note (rightmost column, Q1 FY27 TU, Oct-26): no new withhold. Cash paragraph absent for a third trading update running (Oct-25, May-26, Oct-26) against six prior TUs that carried it. Order-book language broadens to all three segments, still never quantified. Correction carried in this build: the Adj PBT row at Oct-25 read ✅ Q1, but that TU printed no profit figure — now ❌ policy, matching the quarterly row.</div><div class="sub">Two disclosure contractions cluster in calendar 2025: the TU cash-position paragraph dropped at Oct-25 and again at May-26, against an unbroken run of six prior trading updates that carried it (May-25 still disclosed &pound;259.8m); and quarterly profit commentary was discontinued by stated policy from Oct-25. Neither fires a condition &mdash; the balance sheet sits outside the trigger count, and the profit contraction was announced policy &mdash; but the narrowed disclosure regime is untested in a downturn and is the thing to watch first if conditions turn.</div><div class="sub">Order book fell silent across three consecutive trading updates through the FY23&ndash;FY24 trough (Apr-23, Oct-23, May-24), against a habit established at Oct-22 and resumed from Oct-24 &mdash; verified absent in each document, not inferred. That silence is the evidence behind the Rank 1 lead: the metric went quiet before the numbers turned down, and came back before they turned up.</div>
 <div class="sub">Segment rename (Q1 FY26): Manufacturing technologies / Analytical instruments & medical devices retired in favour of Industrial Metrology / Position Measurement / Specialised Technologies — a disclosure expansion (more granular, not less), noted with its Oct-25 start date.</div>
 <div class="sub">Leadership: Allen Roberts (CFO) departed at the Nov-25 AGM; Rob Macdonald served as interim; John Shipsey confirmed as CFO by the Apr-26 upgrade TU. Transition completed within the trailing 12 months.</div>
 </div></details>
@@ -650,22 +1135,22 @@ pre.entry{background:#f7f6f2;border:1px solid var(--line);border-radius:8px;padd
 
 <script>
 // §2 grid: quarter-header click-highlight (skips colspan rows)
-document.querySelectorAll('#grid2 th.qhead').forEach(function(th){
+document.querySelectorAll('#grid2 th.phead').forEach(function(th){
  th.addEventListener('click', function(){
-  var q = th.getAttribute('data-qtype');
+  var q = th.getAttribute('data-p');
   var already = th.classList.contains('hl');
   document.querySelectorAll('#grid2 th.hl').forEach(function(h){h.classList.remove('hl');});
-  document.querySelectorAll('#grid2 .hlcol').forEach(function(c){c.classList.remove('hlcol');});
+  document.querySelectorAll('#grid2 td.hl').forEach(function(c){c.classList.remove('hl');});
   if(already) return;
-  var heads = Array.from(document.querySelectorAll('#grid2 th.qhead'));
+  var heads = Array.from(document.querySelectorAll('#grid2 th.phead'));
   var idxs = [];
   heads.forEach(function(h){
-   if(h.getAttribute('data-qtype')===q){ h.classList.add('hl'); idxs.push(Array.from(h.parentNode.children).indexOf(h)); }
+   if(h.getAttribute('data-p')===q){ h.classList.add('hl'); idxs.push(Array.from(h.parentNode.children).indexOf(h)); }
   });
   document.querySelectorAll('#grid2 tbody tr').forEach(function(tr){
    var hasSpan = Array.from(tr.children).some(function(c){return c.hasAttribute('colspan');});
    if(hasSpan) return;
-   idxs.forEach(function(i){ if(tr.children[i]) tr.children[i].classList.add('hlcol'); });
+   idxs.forEach(function(i){ if(tr.children[i]) tr.children[i].classList.add('hl'); });
   });
  });
 });
@@ -716,22 +1201,23 @@ document.querySelectorAll('#text3 .docc').forEach(function(td){
 });
 </script>
 
+<script type="application/json" id="drift-chart">{"ticker": "RSW", "v": "2026-10-22.c7e3", "ccy": "GBX", "src": "AlphaVantage RSW.LON weekly", "adj": [], "px": [["2022-07-01", 3660.0], ["2022-07-08", 3906.0], ["2022-07-15", 3986.0], ["2022-07-22", 4230.0], ["2022-07-29", 4338.0], ["2022-08-05", 4248.0], ["2022-08-12", 4196.0], ["2022-08-19", 4036.0], ["2022-08-26", 3758.0], ["2022-09-02", 3598.0], ["2022-09-09", 3548.0], ["2022-09-16", 3546.0], ["2022-09-23", 3526.0], ["2022-09-30", 3516.0], ["2022-10-07", 3540.0], ["2022-10-14", 3402.0], ["2022-10-21", 3448.0], ["2022-10-28", 3606.0], ["2022-11-04", 3548.0], ["2022-11-11", 3980.0], ["2022-11-18", 3934.0], ["2022-11-25", 4044.0], ["2022-12-02", 3850.0], ["2022-12-09", 3782.0], ["2022-12-16", 3642.0], ["2022-12-23", 3628.0], ["2022-12-30", 3668.0], ["2023-01-06", 3828.0], ["2023-01-13", 3922.0], ["2023-01-20", 3866.0], ["2023-01-27", 3860.0], ["2023-02-03", 4036.0], ["2023-02-10", 3914.0], ["2023-02-17", 3940.0], ["2023-02-24", 3974.0], ["2023-03-03", 4060.0], ["2023-03-10", 4154.0], ["2023-03-17", 4110.0], ["2023-03-24", 4008.0], ["2023-03-31", 4094.0], ["2023-04-06", 3734.0], ["2023-04-14", 3752.0], ["2023-04-21", 3732.0], ["2023-04-28", 3604.0], ["2023-05-05", 3650.0], ["2023-05-12", 3698.0], ["2023-05-19", 3898.0], ["2023-05-26", 3812.0], ["2023-06-02", 4104.0], ["2023-06-09", 4034.0], ["2023-06-16", 4130.0], ["2023-06-23", 3892.0], ["2023-06-30", 3902.0], ["2023-07-07", 3736.0], ["2023-07-14", 3978.0], ["2023-07-21", 4002.0], ["2023-07-28", 3844.0], ["2023-08-04", 3814.0], ["2023-08-11", 3686.0], ["2023-08-18", 3600.0], ["2023-08-25", 3524.0], ["2023-09-01", 3578.0], ["2023-09-08", 3548.0], ["2023-09-15", 3848.0], ["2023-09-22", 3562.0], ["2023-09-29", 3522.0], ["2023-10-06", 3450.0], ["2023-10-13", 3390.0], ["2023-10-20", 3158.0], ["2023-10-27", 2950.0], ["2023-11-03", 3054.0], ["2023-11-10", 3048.0], ["2023-11-17", 3168.0], ["2023-11-24", 3186.0], ["2023-12-01", 3136.0], ["2023-12-08", 3250.0], ["2023-12-15", 3562.0], ["2023-12-22", 3612.0], ["2023-12-29", 3578.0], ["2024-01-05", 3400.0], ["2024-01-12", 3556.0], ["2024-01-19", 3526.0], ["2024-01-26", 3626.0], ["2024-02-02", 3464.0], ["2024-02-09", 4170.0], ["2024-02-16", 4120.0], ["2024-02-23", 4298.0], ["2024-03-01", 4348.0], ["2024-03-08", 4316.0], ["2024-03-15", 4008.0], ["2024-03-22", 4262.0], ["2024-03-28", 4250.0], ["2024-04-05", 4245.0], ["2024-04-12", 4070.0], ["2024-04-19", 4035.0], ["2024-04-26", 4195.0], ["2024-05-03", 4165.0], ["2024-05-10", 4085.0], ["2024-05-17", 4015.0], ["2024-05-24", 4065.0], ["2024-05-31", 4000.0], ["2024-06-07", 4040.0], ["2024-06-14", 3985.0], ["2024-06-21", 3785.0], ["2024-06-28", 3700.0], ["2024-07-05", 3665.0], ["2024-07-12", 3795.0], ["2024-07-19", 3630.0], ["2024-07-26", 3630.0], ["2024-08-02", 3445.0], ["2024-08-09", 3495.0], ["2024-08-16", 3580.0], ["2024-08-23", 3520.0], ["2024-08-30", 3545.0], ["2024-09-06", 3310.0], ["2024-09-13", 3400.0], ["2024-09-20", 3390.0], ["2024-09-27", 3780.0], ["2024-10-04", 3775.0], ["2024-10-11", 3560.0], ["2024-10-18", 3350.0], ["2024-10-25", 3325.0], ["2024-11-01", 3230.0], ["2024-11-08", 3180.0], ["2024-11-15", 3160.0], ["2024-11-22", 3130.0], ["2024-11-29", 3130.0], ["2024-12-06", 3180.0], ["2024-12-13", 3375.0], ["2024-12-20", 3345.0], ["2024-12-24", 3365.0], ["2024-12-27", 3355.0], ["2025-01-03", 3280.0], ["2025-01-10", 3285.0], ["2025-01-17", 3375.0], ["2025-01-24", 3425.0], ["2025-01-31", 3605.0], ["2025-02-07", 3515.0], ["2025-02-14", 3110.0], ["2025-02-21", 3040.0], ["2025-02-28", 2890.0], ["2025-03-07", 2780.0], ["2025-03-14", 2815.0], ["2025-03-21", 2665.0], ["2025-03-28", 2570.0], ["2025-04-04", 2305.0], ["2025-04-11", 2175.0], ["2025-04-17", 2150.0], ["2025-04-25", 2310.0], ["2025-05-02", 2285.0], ["2025-05-09", 2560.0], ["2025-05-16", 2680.0], ["2025-05-23", 2570.0], ["2025-05-30", 2570.0], ["2025-06-06", 2630.0], ["2025-06-13", 2705.0], ["2025-06-20", 2765.0], ["2025-06-27", 2955.0], ["2025-07-04", 2880.0], ["2025-07-11", 2835.0], ["2025-07-18", 3000.0], ["2025-07-25", 3030.0], ["2025-08-01", 2905.0], ["2025-08-08", 2985.0], ["2025-08-15", 3000.0], ["2025-08-22", 3235.0], ["2025-08-29", 3230.0], ["2025-09-05", 3245.0], ["2025-09-12", 3240.0], ["2025-09-19", 3610.0], ["2025-09-26", 3515.0], ["2025-10-03", 3720.0], ["2025-10-10", 3680.0], ["2025-10-17", 3650.0], ["2025-10-24", 3670.0], ["2025-10-31", 3535.0], ["2025-11-07", 3385.0], ["2025-11-14", 3420.0], ["2025-11-21", 3365.0], ["2025-11-28", 3470.0], ["2025-12-05", 3640.0], ["2025-12-12", 3425.0], ["2025-12-19", 3475.0], ["2025-12-24", 3480.0], ["2026-01-02", 3550.0], ["2026-01-09", 3710.0], ["2026-01-16", 3875.0], ["2026-01-23", 3840.0], ["2026-01-30", 3800.0], ["2026-02-06", 3725.0], ["2026-02-13", 4225.0], ["2026-02-20", 4255.0], ["2026-02-27", 4300.0], ["2026-03-06", 3940.0], ["2026-03-13", 3880.0], ["2026-03-20", 3720.0], ["2026-03-27", 3660.0], ["2026-04-02", 3605.0], ["2026-04-10", 3776.0], ["2026-04-17", 4166.0], ["2026-04-24", 4452.0], ["2026-05-01", 4756.0], ["2026-05-08", 5195.0], ["2026-05-15", 4984.0], ["2026-05-22", 5235.0], ["2026-05-29", 5300.0], ["2026-06-05", 5230.0], ["2026-06-12", 5030.0], ["2026-06-19", 5215.0], ["2026-06-26", 4978.0], ["2026-07-03", 5050.0], ["2026-07-10", 4838.0], ["2026-07-17", 4828.0], ["2026-07-24", 5205.0], ["2026-07-31", 4948.0], ["2026-08-07", 5235.0], ["2026-08-14", 5175.0], ["2026-08-21", 5100.0], ["2026-08-28", 5105.0], ["2026-09-04", 5170.0], ["2026-09-11", 5130.0], ["2026-09-18", 5175.0], ["2026-09-25", 5660.0], ["2026-10-02", 5960.0], ["2026-10-09", 5735.0], ["2026-10-16", 5500.0], ["2026-10-21", 5350.0]], "marks": [{"d": "2022-09-15", "doc": "FY R", "fy": "FY22", "g": "flat", "s": -1, "q": "“We have made a positive start to FY2023 and our order book remains strong. We have, however, recently seen a weakening in order intake from the semiconductor and electronics sectors, and general market sentiment is becoming more cautious.”"}, {"d": "2022-10-27", "doc": "Q1 TU", "fy": "FY23", "g": "flat", "s": 0, "q": "“Overall Group performance was in line with our expectations for the first quarter of the year. …… We have made a positive start to the current year and our order book remains strong.”"}, {"d": "2023-02-02", "doc": "H1 R", "fy": "FY23", "g": "flat", "s": 0, "q": "“We have a strong order book, and at this stage we expect full year revenue to be in the range of £690m to £730m. Adjusted profit before tax is expected to be in the range of £140m to £165m.”"}, {"d": "2023-04-28", "doc": "Q3 TU", "fy": "FY23", "g": "CUT", "s": -1, "q": "“We anticipate that revenue for the full year will be between £680m and £700m, and adjusted profit before tax will be between £135m and £150m.”"}, {"d": "2023-09-19", "doc": "FY R", "fy": "FY23", "g": "flat", "s": -1, "q": "“Trading conditions remain challenging due to subdued demand, most notably from the semiconductor sector. We continue to see positive investment trends in robotics, defence, low emission transportation and additive manufacturing.”"}, {"d": "2023-10-26", "doc": "Q1 TU", "fy": "FY24", "g": "flat", "s": -1, "q": "“Trading conditions remain challenging due to subdued demand, most notably from the semiconductor sector. … We are confident in our strategy to deliver sustainable long-term growth.”"}, {"d": "2024-02-06", "doc": "H1 R", "fy": "FY24", "g": "flat", "s": -1, "q": "“We expect an improvement in our trading performance in the second half of the financial year as market conditions improve…… At this stage we expect full year revenue ……(£675m–£715m). Adjusted profit before tax ……(£122m–£147m).”"}, {"d": "2024-05-08", "doc": "Q3 TU", "fy": "FY24", "g": "flat", "s": 0, "q": "“We expect the recent improvement in our trading performance to strengthen in the remainder of the financial year, as market conditions improve…… We now expect revenue ……(£680m–£700m) and adjusted profit before tax ……(£122m–£135m).”"}, {"d": "2024-09-12", "doc": "FY R", "fy": "FY24", "g": "flat", "s": 0, "q": "“We expect these efforts, together with higher sales volumes, to drive our operating profit margin towards our target, although inflationary pressures, especially people costs, will affect the rate of improvement in the near term.”"}, {"d": "2024-10-24", "doc": "Q1 TU", "fy": "FY25", "g": "flat", "s": 0, "q": "“We continue to pursue a range of growth opportunities and anticipate solid overall revenue growth this year in line with the Board's expectations. … we remain cautious about demand from this market [semiconductor] in the remainder of FY2025.”"}, {"d": "2025-02-13", "doc": "H1 R", "fy": "FY25", "g": "flat", "s": 0, "q": "“Order intake recently improved, steady revenue growth expected to continue in H2. FY2025 revenue: £695m to £735m; adjusted profit before tax: £105m to £135m.”"}, {"d": "2025-05-08", "doc": "Q3 TU", "fy": "FY25", "g": "CUT", "s": -1, "q": "“We enter the final quarter of the year with good momentum, but we are mindful of the volatile economic backdrop…… We now expect revenue ……(£700m–£720m) and adjusted profit before tax ……(£109m–£127m).”"}, {"d": "2025-09-18", "doc": "FY R", "fy": "FY25", "g": "flat", "s": 1, "q": "“Confidence in further progress towards margin improvement objective, supported by £20m annualised payroll reduction to take effect in FY26 H1.”"}, {"d": "2025-10-23", "doc": "Q1 TU", "fy": "FY26", "g": "flat", "s": 0, "q": "“There has been a steady start to FY2026, in line with our expectations. … at this stage we are expecting to achieve further steady revenue growth in the year ahead.”"}, {"d": "2026-02-11", "doc": "H1 R", "fy": "FY26", "g": "flat", "s": 2, "q": "“We enter H2 with momentum and we expect to achieve strong revenue and profit growth in the remainder of the year. Revenue: £740m to £780m; Adjusted profit before tax: £132m to £157m.”"}, {"d": "2026-04-20", "doc": "Upgrade TU", "fy": "FY26", "g": "RAISE", "s": 2, "q": "“Upgrade to FY2026 guidance. … We now expect to deliver FY2026 full-year performance in the following ranges: Revenue: £775m to £805m; Adjusted profit before tax: £145m to £165m.”"}, {"d": "2026-05-06", "doc": "Q3 TU", "fy": "FY26", "g": "flat", "s": 1, "q": "“We expect positive market conditions to continue for the remainder of FY2026…… Our expectations for FY2026 full-year performance remain in line with recently upgraded guidance: Revenue ……(£775m–£805m); Adjusted profit before tax ……(£145m–£165m).”"}, {"d": "2026-07-24", "doc": "YE-TU", "fy": "FY26", "g": "RAISE", "s": 3, "q": "“Record Q4 revenue; FY2026 profit ahead of expectations. We saw accelerating growth throughout the year, culminating in record quarterly revenue in Q4 of approximately £243m, 27% above the prior year.”"}, {"d": "2026-09-23", "doc": "FY R", "fy": "FY26", "g": "flat", "s": 2, "q": "“FY2027 has started strongly as we continue to benefit from the current upturn in demand for semiconductor manufacturing equipment. We expect further strong progress on revenue, profit and operating margin in the year ahead.”"}, {"d": "2026-10-22", "doc": "Q1 TU", "fy": "FY27", "g": "flat", "s": 1, "q": "“We have seen a strong start to FY2027, continuing and broadening the momentum that we established throughout the prior year…… We continue to expect strong progress on revenue and operating margin for FY2027 as a whole.”"}]}</script>
 <script type="application/json" id="drift-entry">{
  "ticker": "RSW",
  "company": "Renishaw plc",
  "kind": "ticker",
  "direction": "up",
- "headline": "Record FY26 at £815.8m / £168.0m clears April's raised tops; FY27 'started strongly' with H2 profit up 49%.",
- "trigger": "2-of-3 green-shoot: raised guide cleared at audit; sustained positive language (operator override)",
- "alert": true,
- "fired": 2,
+ "headline": "Record Q1 at £251.8m, up 47%; but profit drops out of the FY27 outlook sentence for the first time.",
+ "trigger": "1 of 3: numbers still rising; language amber after two falls; disclosure amber (policy)",
+ "alert": false,
+ "fired": 1,
  "fired_of": 3,
- "lights": "gga",
- "rns_type": "FY R",
- "rns_date": "2026-09-23",
- "build_date": "2026-09-23",
- "spec_version": "5.6",
- "next_test": "Oct-26 Q1 FY27 TU: Q1 revenue vs £170.8m — roughly +10% needed to track the £895m FY27 consensus.",
+ "lights": "gaa",
+ "rns_type": "Q1 TU",
+ "rns_date": "2026-10-22",
+ "build_date": "2026-10-22",
+ "spec_version": "5.8",
+ "next_test": "Feb-27 H1 FY27 results: first numeric FY27 guide vs £934m / £208m consensus, and whether profit returns to the outlook.",
  "url": "RSW.html",
  "grid": {
   "labels": [
@@ -742,7 +1228,6 @@ document.querySelectorAll('#text3 .docc').forEach(function(td){
    "R5"
   ],
   "periods": [
-   "Q4 24",
    "Q1 25",
    "Q2 25",
    "Q3 25",
@@ -750,31 +1235,32 @@ document.querySelectorAll('#text3 .docc').forEach(function(td){
    "Q1 26",
    "Q2 26",
    "Q3 26",
-   "Q4 26"
+   "Q4 26",
+   "Q1 27"
   ],
   "rows": [
-   "aaggagggg",
-   "graggrggg",
-   "r-a-a-a-g",
-   "grrgg-g-g",
-   "------a-g"
+   "aggaggggg",
+   "raggrggga",
+   "-a-a-a-g-",
+   "rrgg-g-g-",
+   "-----a-g-"
   ],
-  "note": "Ranks 1-5 at quarter grain, right-anchored on the 23 Sep 2026 FY26 results."
+  "note": "Ranks 1-5 at quarter grain, right-anchored on the 22 Oct 2026 Q1 FY27 TU."
  },
  "prev": {
   "direction": "up",
   "fired": 2,
   "lights": "gga",
-  "rns_date": "2026-07-24",
-  "rns_type": "Post-close TU"
+  "rns_date": "2026-09-23",
+  "rns_type": "FY R"
  },
  "trend": {
-  "mode": "growth",
-  "cells": "g-g",
+  "mode": "share",
+  "cells": "g--",
   "rows": [
    {
     "m": "REV",
-    "gap": 11.4
+    "gap": 3.9
    },
    {
     "m": "EBITDA",
@@ -782,9 +1268,10 @@ document.querySelectorAll('#text3 .docc').forEach(function(td){
    },
    {
     "m": "PBT",
-    "gap": 34.7
+    "gap": null
    }
   ]
- }
+ },
+ "chart": "charts/RSW.json?v=2026-10-22.c7e3"
 }</script>
 </body></html>
