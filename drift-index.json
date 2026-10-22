@@ -1234,17 +1234,17 @@
    "company": "AJ Bell plc",
    "kind": "ticker",
    "direction": "up",
-   "headline": "Q3 TU prints record £3.0bn net inflows (+43% YoY), third straight sequential rise; H1's guidance RAISE stands undisturbed.",
-   "trigger": "Condition 1 only (green-shoot mirror): sequential growth accelerating to a record + G-RAISE at H1 May-26. Conditions 2 and 3 unlit.",
+   "headline": "Record FY platform net inflows £9.7bn (+37%); Q4 £2.5bn dips on summer trough but accelerates to +47% YoY; no guide change, results 3-Dec.",
+   "trigger": "Condition 1 only (green-shoot mirror): H1 May-26 G RAISE stands, ranks 3–5 rising nine straight quarters; Q4 sequential dip context-discounted (seasonal trough). Conditions 2 and 3 unlit.",
    "alert": false,
    "fired": 1,
    "fired_of": 3,
    "lights": "g--",
-   "rns_type": "Q3 TU",
-   "rns_date": "2026-07-23",
-   "build_date": "2026-08-09",
-   "spec_version": "v5.1",
-   "next_test": "Oct-26 FY TU: Q4 net inflows against the summer-trough habit, and whether customer adds recover from Q3's 39k.",
+   "rns_type": "YE-TU",
+   "rns_date": "2026-10-22",
+   "build_date": "2026-10-22",
+   "spec_version": "v5.8",
+   "next_test": "3 Dec 2026 FY results: PBT against £161.2m consensus and May's 'higher than previously guided'; then the Jan-27 Q1 TU, where a second sequential fall exhausts the seasonal discount.",
    "url": "AJB.html",
    "grid": {
     "labels": [
@@ -1255,7 +1255,6 @@
      "R5"
     ],
     "periods": [
-     "Q3 24",
      "Q4 24",
      "Q1 25",
      "Q2 25",
@@ -1263,17 +1262,44 @@
      "Q4 25",
      "Q1 26",
      "Q2 26",
-     "Q3 26"
+     "Q3 26",
+     "Q4 26"
     ],
     "rows": [
-     "grrggrrgg",
-     "-a-a-a-a-",
+     "rrggrrggr",
+     "a-a-a-a--",
      "ggggggggg",
      "ggggggggg",
      "ggggggggg"
     ],
-    "note": "One row per ledger rank in rank order; rightmost cell is the Buy/Sell Q3 FY26 column."
-   }
+    "note": "One row per ledger rank in rank order; rightmost cell is the Buy/Sell YE-TU Q4 FY26 column."
+   },
+   "prev": {
+    "direction": "up",
+    "fired": 1,
+    "lights": "g--",
+    "rns_date": "2026-07-23",
+    "rns_type": "Q3 TU"
+   },
+   "trend": {
+    "mode": "share",
+    "cells": "a-a",
+    "rows": [
+     {
+      "m": "REV",
+      "gap": 0.6
+     },
+     {
+      "m": "EBITDA",
+      "gap": null
+     },
+     {
+      "m": "PBT",
+      "gap": -0.4
+     }
+    ]
+   },
+   "chart": "charts/AJB.json?v=2026-10-22.04e0"
   },
   {
    "ticker": "CHH",
