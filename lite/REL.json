@@ -1,6 +1,6 @@
 {
  "ticker": "REL",
- "v": "2026-10-21.0916",
+ "v": "2026-10-22.3c96",
  "ccy": "GBX",
  "src": "Yahoo REL.L weekly",
  "adj": [],
@@ -1198,20 +1198,47 @@
    "s": 0,
    "q": "We continue to see positive momentum across the group, and we expect another year of strong underlying growth in revenue and adjusted operating profit, as well as strong growth in adjusted earnings per share on a constant currency basis",
    "file": "20260723_REL_RELX-2026-INTERIM-RESULTS.md"
+  },
+  {
+   "d": "2026-10-22",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "We continue to see positive momentum across the group, and we expect another year of strong underlying growth in revenue and adjusted operating profit, as well as strong growth in adjusted earnings per share on a constant currency basis",
+   "file": "20261022_REL_TRADING-UPDATE---October-2026.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-23",
-  "doc": "H1 R",
-  "file": "20260723_REL_RELX-2026-INTERIM-RESULTS.md",
-  "vs": "H1 R Jul-25 · AGM Apr-26 · H1 R Jul-23, Jul-24",
+  "rns": "2026-10-22",
+  "doc": "Q3 TU",
+  "file": "20261022_REL_TRADING-UPDATE---October-2026.md",
+  "vs": "Q3 TU Oct-25 · AGM Apr-26 · H1 R Jul-26",
   "lines": [
    {
-    "sev": "grey",
-    "type": "Went quiet",
-    "text": "Electronic revenue growth: H1-25 “Electronic revenue also grew +7%” → H1-26 gives no electronic revenue growth or share",
-    "span": "Given at H1-23, H1-24, H1-25 and FY-24 → absent at FY-25 and now"
+    "sev": "amber",
+    "type": "Anchor softened",
+    "text": "Exhibitions outlook, Apr-26: “Notwithstanding the rescheduling of some events in the Middle East, we continue to expect strong underlying revenue growth” → Oct-26: “strong underlying revenue growth, excluding the Middle East impact” — the guide now carves the headwind out",
+    "span": "Middle East first flagged Apr-26; carve-out new Oct-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Exhibitions YTD underlying revenue growth +8% (Oct-25) → +4% (Oct-26), described as “Strong ongoing growth” while “moderated by the impact of Middle East disruption”",
+    "span": "Oct-25 → Oct-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "STM outlook, Oct-25: “continued good underlying revenue growth” with profit growth “slightly exceeding underlying revenue growth” → Oct-26: “continued strong underlying revenue growth with underlying adjusted operating profit growth exceeding underlying revenue growth”; STM YTD +5% → +6%",
+    "span": "Oct-25 good → Apr-26 good to strong → Oct-26 strong"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Risk outlook, Oct-25 profit growth “slightly exceeding underlying revenue growth” → Oct-26 “exceeding underlying revenue growth”; Legal YTD +9% → +10%, group YTD +7% held",
+    "span": "Oct-25 → Oct-26 (Risk wording held since Apr-26)"
    }
   ]
  }

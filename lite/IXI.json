@@ -1,6 +1,6 @@
 {
  "ticker": "IXI",
- "v": "2026-10-20.87cf",
+ "v": "2026-10-22.d19b",
  "ccy": "GBX",
  "src": "AlphaVantage IXI.LON weekly",
  "adj": [],
@@ -1330,33 +1330,10 @@
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-20",
-  "doc": "YE-TU",
-  "file": "20261020_IXI_Trading-Update.md",
-  "vs": "YE-TU Oct-25 · HD update Jul-26 · TU Jul-26 · H1 TU Apr-26 · back to Oct-22",
-  "lines": [
-   {
-    "sev": "red",
-    "type": "Next-year view dropped",
-    "text": "FY27 guide: Jul-26 “its FY27 revenue guidance remain unchanged” → Oct-26 no FY27 revenue figure or guide restated, only “we enter FY27 with strong momentum”"
-   },
-   {
-    "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Order book: H1 Apr-26 “Order book* expected to be £18.1 million” → Oct-26 “Year-end order book of £16.0 million (2025: £13.8 million) further improving revenue visibility” — down c.£2.1m in H2 while described as improving"
-   },
-   {
-    "sev": "amber",
-    "type": "Number to words",
-    "text": "FY EBITDA: Oct-25 “no more than a £1.6 million loss” → Oct-26 “expected to improve on market expectations”, no figure, while the company says it is increasing investment for growth",
-    "span": "EBITDA figure given at Oct-22, Oct-24, Oct-25 year-end updates"
-   },
-   {
-    "sev": "grey",
-    "type": "Split withheld",
-    "text": "Order book bridge: Oct-25 “reflecting £4.2 million of new contract wins and contract extensions offset by £3.3 million of revenues recognised” → Oct-26 closing figure only, no wins/revenue bridge",
-    "span": "Bridge given at Oct-22, Oct-25"
-   }
-  ]
+  "rns": "2026-10-22",
+  "doc": "OPS",
+  "file": "20261022_IXI_Alzheimer's-contract-wins.md",
+  "vs": "Contract wins Oct-25, Nov-25 · prev TU 20-Oct-26 · back to Aug-25, Feb-26, May-26",
+  "lines": []
  }
 }

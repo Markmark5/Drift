@@ -1,6 +1,6 @@
 {
  "ticker": "SYNT",
- "v": "2026-10-21.d35a",
+ "v": "2026-10-22.6bc1",
  "ccy": "GBX",
  "src": "Yahoo SYNT.L weekly",
  "adj": [],
@@ -1318,38 +1318,47 @@
    "s": 1,
    "q": "While recognising that the geopolitical and market environment remains volatile and end-market demand uncertain, we are upgrading our full year 2026 outlook to slightly ahead of market expectations, reflecting the strong H1 2026 EBITDA outturn led by the underlying progress of the business, and our expectations of a broadly similar level of strategic growth and self help progress recurring in H2 as in H1.",
    "file": "20260804_SYNT_Interim-results.md"
+  },
+  {
+   "d": "2026-10-22",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Overall, the Group delivered ongoing improvement in Continuing Group volume, revenue and EBITDA in Q3 2026 vs Q3 2025, consistent with our upgraded expectations for the full year as set out in the interim results.",
+   "file": "20261022_SYNT_Trading-statement---Autumn-2026.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-04",
-  "doc": "H1 R",
-  "file": "20260804_SYNT_Interim-results.md",
-  "vs": "H1 R Aug-25 · AGM Jun-26 · FY R Apr-26 · back to Aug-24",
+  "rns": "2026-10-22",
+  "doc": "Q3 TU",
+  "file": "20261022_SYNT_Trading-statement---Autumn-2026.md",
+  "vs": "Q3 TU Oct-25 · H1 R Aug-26 · back to Nov-23/Oct-24 · FY R Apr-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Target dropped",
-    "text": "Medium-term doubling target: Apr-26 “we remain committed to our ambition to more than double Synthomer's earnings” → now “our ambition to substantially grow Synthomer's earnings”, no multiple",
-    "span": "‘Double’ ambition given at Aug-24, Jan-25, Mar-25, Aug-25, Oct-25, Jan-26, Apr-26 → first gap"
+    "type": "Anchor softened",
+    "text": "H1 R Aug-26: “we are upgrading our full year 2026 outlook to slightly ahead of market expectations” (consensus footnote £162m) → now “Q3 performance in line with previously upgraded expectations for the full year”; “slightly ahead”, “market expectations” and the consensus figure are not restated",
+    "span": "Guide referenced, not repeated; headline says “FY outlook reaffirmed”"
    },
    {
     "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Cash: headline “H1 net debt lower than expected with robust cash management” beside Free Cash Flow of £(80.8)m vs £(30.3)m in H1 2025; net debt £671.3m vs £638.3m a year earlier",
-    "span": "H1 R Aug-25 → H1 R Aug-26"
+    "type": "Target dropped",
+    "text": "Medium-term earnings ambition: Oct-25 “objective to double Synthomer's recent earnings levels in the medium term” → Apr-26 “ambition to more than double Synthomer's earnings” → Aug-26 “ambition to substantially grow Synthomer's earnings” → now not mentioned (only “significant opportunity and sustained momentum in 2027”)",
+    "span": "In autumn TUs Nov-23, Oct-24, Oct-25 → first gap; already softened from “double” in Aug-26"
    },
    {
     "sev": "grey",
-    "type": "Restated",
-    "text": "FCF guide basis changed: Aug-25 “Free Cash Flow to be broadly neutral for the year as a whole” → now “FY 2026 Free Cash Flow before non-recourse receivables finance movements now expected to be positive”",
-    "span": "Headline FCF measure no longer the guided one"
+    "type": "Went quiet",
+    "text": "Cost savings: Oct-25 “c.£20-25m in savings on an annual run-rate basis by 2026”; Aug-26 “c.£13m in benefits on a year-on-year run-rate basis in H1 2026” → now “delivery of further cost efficiencies across the Group”, no figure",
+    "span": "Quantified Oct-25, Apr-26, Aug-26"
    },
    {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Guide re-anchored with a number: “Company-compiled FY 2026 EBITDA consensus is £162m” beside the upgrade to slightly ahead of market expectations; Aug-25 interim gave no consensus figure",
-    "span": "H1 R Aug-24, Aug-25 had no consensus footnote"
+    "sev": "grey",
+    "type": "New caution",
+    "text": "Q2 windfall fading: now “the significant availability issues within competitor supply chains in Asia, which benefited primarily Health & Protection during Q2, have moderated with the relative net benefit to the Group more limited in the period”, with raw material costs “elevated”",
+    "span": "First flagged Oct-26; Aug-26 H1 credited this for HPPM EBITDA growth"
    }
   ]
  }
