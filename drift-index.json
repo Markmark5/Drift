@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22",
+ "updated": "2026-10-23",
  "tickers": [
   {
    "ticker": "STAF",
@@ -2641,18 +2641,18 @@
    "company": "Debenhams Group plc",
    "kind": "ticker",
    "direction": "up",
-   "headline": "H1: GMV +1.8% with Q2 at +2.9%, adjusted EBITDA +13.9%, and a first numeric FY27 floor — no less than £59m.",
+   "headline": "H1 results confirm the turn: adjusted EBITDA £24.0m (+14.6%), first positive PBT since 2021, and the £59m floor held.",
    "trigger": "Green-shoot 2-of-3 met — all three conditions fired green, undiscounted",
    "alert": true,
    "fired": 3,
    "fired_of": 3,
    "lights": "ggg",
-   "rns_type": "H1 TU",
-   "rns_date": "2026-09-17",
-   "build_date": "2026-09-17",
-   "spec_version": "v5.5",
-   "next_test": "H1 FY27 results (Nov-26): PBT back in the print, 3PL cost parity in statutory numbers, Q3 holding Q2 +2.9%.",
-   "url": "DEBS_drift_tracker_v53d.html",
+   "rns_type": "H1 R",
+   "rns_date": "2026-10-23",
+   "build_date": "2026-10-23",
+   "spec_version": "v5.8",
+   "next_test": "January trading update: peak season quantified, the £59m floor beaten rather than met, net debt actually negligible, GXO costs at parity.",
+   "url": "DEBS.html",
    "grid": {
     "labels": [
      "R1",
@@ -2685,27 +2685,28 @@
     "direction": "up",
     "fired": 3,
     "lights": "ggg",
-    "rns_date": "2026-09-10",
-    "rns_type": "Disposal"
+    "rns_date": "2026-09-17",
+    "rns_type": "H1 TU"
    },
    "trend": {
     "mode": "share",
-    "cells": "-a-",
+    "cells": "aa-",
     "rows": [
      {
       "m": "REV",
-      "gap": null
+      "gap": 0.1
      },
      {
       "m": "EBITDA",
-      "gap": 0.9
+      "gap": 0.7
      },
      {
       "m": "PBT",
       "gap": null
      }
     ]
-   }
+   },
+   "chart": "charts/DEBS.json?v=2026-10-23.22d1"
   },
   {
    "ticker": "KNOS",
