@@ -1,6 +1,6 @@
 {
  "ticker": "DEBS",
- "v": "2026-10-20.3b90",
+ "v": "2026-10-23.6346",
  "ccy": "GBX",
  "src": "Yahoo DEBS.L weekly",
  "adj": [],
@@ -1263,38 +1263,47 @@
    "s": 0,
    "q": "In respect of the full year, the Board expects to deliver GMV growth, and Adjusted EBITDA as previously guided and in line with consensus of no less than £59m representing double-digit growth year-on-year.",
    "file": "20260917_DEBS_Trading-update-for-the-six-months-ended-31-August.md"
+  },
+  {
+   "d": "2026-10-23",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "In respect of the full year, the Board expects to deliver GMV growth and Adjusted EBITDA of no less than £59m, as previously guided, representing double-digit growth year-on-year, together with continued material improvement in Reported EBITDA, positive profit before tax, free cash flow generation and negligible net debt.",
+   "file": "20261023_DEBS_Results-for-the-six-months-ended-31-August-2026.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-17",
-  "doc": "H1 TU",
-  "file": "20260917_DEBS_Trading-update-for-the-six-months-ended-31-August.md",
-  "vs": "H1 R Nov-25 (no H1 TU last year) · FY R Jun-26 · Q1 TU Jun-26 · AGM Jul-26",
+  "rns": "2026-10-23",
+  "doc": "H1 R",
+  "file": "20261023_DEBS_Results-for-the-six-months-ended-31-August-2026.md",
+  "vs": "H1 R Nov-25 · H1 TU Sep-26 · FY R Jun-26, AGM Jul-26, Mar-25",
   "lines": [
    {
     "sev": "amber",
-    "type": "Split withheld",
-    "text": "Brand split: FY R Jun-26 gave GMV for Youth Brands, Karen Millen and Debenhams plus “Debenhams Brand GMV £730m (+11.6%), Adjusted EBITDA £34.8m (+38.5%)” → H1 TU gives only Debenhams “GMV grew 14.1% to represent c.41% of Group GMV”; no Youth Brands or Karen Millen GMV, no brand EBITDA",
-    "span": "Brand GMV and Debenhams EBITDA given at Nov-25 and Jun-26"
-   },
-   {
-    "sev": "amber",
-    "type": "Number to words",
-    "text": "Free cash flow: H1 R Nov-25 FCF £(22.1)m and FY R Jun-26 “Free cash flow improved to negative £18.4m” → now “the cash outflow after capital expenditure and interest materially reduced year on year”, no figure",
-    "span": "Nov-25, Jun-26 → H1 TU Sep-26"
+    "type": "Went quiet",
+    "text": "Debenhams brand EBITDA: H1 Nov-25 “Adjusted EBITDA at H126 is 50% ahead of last year, delivering a strong EBITDA margin c.15%.”; FY Jun-26 “£34.8m Adjusted EBITDA (FY25: £25m), up 38.5%” → H1 Oct-26 only brand GMV (“The Debenhams brand grew 14.1% (c.42% of Group GMV)”), no brand EBITDA or margin; segment note stops at gross profit",
+    "span": "Given Nov-25 and Jun-26 → first gap"
    },
    {
     "sev": "grey",
-    "type": "Restated",
-    "text": "H1 FY26 gross margin was 52.9% in the Nov-25 interims → shown as “Gross margin expanded to 53.9% (H1 FY26: 51.9%)” now, with PLT moved back into continuing operations; the 200bps gain is on the restated base",
-    "span": "Nov-25 → Sep-26"
+    "type": "Went quiet",
+    "text": "Marketplace brand/partner count: Nov-25 “c.20k partners in our ecosystem”, Jun-26 “c.25k brands / partners have now joined the Group ecosystem”, Sep-26 “c.30k brands or partners” → Oct-26 no count given",
+    "span": "Given Mar-25, Nov-25, Jun-26, Sep-26 → first gap"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Net debt: Q1 TU and FY R Jun-26 “net debt targeted below 1x Adjusted EBITDA” → now “net debt is expected to be negligible at year end”, plus a new consensus figure “in line with consensus of no less than £59m” and FY28 cost guides (depreciation £14m, lease costs £4m)",
-    "span": "Jun-26 → Sep-26"
+    "text": "Medium-term ambition: Jul-26 “Debenhams brand to become a £multi-billion GMV business with a £100m+ EBITDA” → Oct-26 “Debenhams Group to become a £multi-billion GMV business delivering £100m+ profit before tax” (Group PBT, made a headline)",
+    "span": "AGM Jul-26 → H1 R Oct-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Balance sheet: H1 Nov-25 “We expect net debt / EBITDA to be reduced by the end of the next financial year (28 February 2027) to <2x” → Oct-26 “net debt is expected to be negligible at year-end”",
+    "span": "Year-earlier H1 R → first set Sep-26 TU, kept"
    }
   ]
  }

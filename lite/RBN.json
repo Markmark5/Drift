@@ -1,6 +1,6 @@
 {
  "ticker": "RBN",
- "v": "2026-10-19.256b",
+ "v": "2026-10-23.d130",
  "ccy": "GBX",
  "src": "Yahoo RBN.L weekly",
  "adj": [],
@@ -1243,38 +1243,47 @@
    "s": -2,
    "q": "At this stage, excluding the benefit of any such mitigations, the Board now anticipates that FY2027 profitability will be broadly in line with FY2026.",
    "file": "20260925_RBN_Trading-Update.md"
+  },
+  {
+   "d": "2026-10-23",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -3,
+   "q": "The Board now expects underlying operating profit* for the year ending 31 December 2026 to be in the range of £1.2m to £1.6m. Revenue for 2026 is expected to be approximately £59m, 6% ahead of 2025.",
+   "file": "20261023_RBN_Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-25",
-  "doc": "OPS",
-  "file": "20260925_RBN_Trading-Update.md",
-  "vs": "H1 R Aug-26 · AGM May-26 · FY R Mar-26 · YE-TU Dec-25 (no Sep-25 equivalent)",
+  "rns": "2026-10-23",
+  "doc": "Q3 TU",
+  "file": "20261023_RBN_Trading-Update.md",
+  "vs": "TU Sep-26 · H1 R Aug-26 · YE-TU Dec-25 (no Oct-25 trading update)",
   "lines": [
    {
     "sev": "red",
-    "type": "Target dropped",
-    "text": "Mar-26: investment “will support growth in revenues and operating profits in 2027 and beyond” → Sep-26: “the Board now anticipates that FY2027 profitability will be broadly in line with FY2026”",
-    "span": "FY27 growth promised Mar-26 → flat FY27 now"
+    "type": "Anchor softened",
+    "text": "Sep-26: “The Directors continue to expect that underlying operating profit* for 2026 will be in line with market expectations.” → Oct-26: Board range “£1.2m to £1.6m”, no market-expectations reference (H1 range was £2.2m–£2.6m)",
+    "span": "Market anchor at FY R Mar-26, AGM May-26, TU Sep-26 → dropped one month after reiteration"
    },
    {
     "sev": "amber",
-    "type": "New caution",
-    "text": "First flag of a lost contract: “A significant customer contract is scheduled to expire at the end of December 2026 and will now not be renewed”, worth “approximately £3.3 million of annual revenue and £1.0 million of annual contribution to gross profit”",
-    "span": "Not in Aug-26 H1 R"
+    "type": "Pushed out",
+    "text": "Surplus property: Aug-26 “Exchange and completion are expected in the coming months.” → Oct-26 “The expected exchange and completion of one further sale has been delayed to the second quarter of 2027”; PBT benefit was “expected to benefit materially from property disposals”, now “will benefit from property disposals”",
+    "span": "Sale of two properties first flagged Dec-25 (“in the next few months”)"
    },
    {
     "sev": "amber",
-    "type": "Number to words",
-    "text": "FY26 profit: Aug-26 “between £2.2m and £2.6m” → Sep-26 “will be in line with market expectations”, no figure",
-    "span": "H1 R Aug-26 vs Sep-26"
+    "type": "Wording vs number",
+    "text": "Lead line “Revenue for 2026 is expected to be approximately £59m, 6% ahead of 2025.” beside underlying operating profit of £1.2m–£1.6m vs FY25 £3.6m; volumes now “1% below 2025” after H1 “sales volumes were 3% higher than H1 2025”",
+    "span": "H1 R Aug-26 → Oct-26"
    },
    {
     "sev": "grey",
     "type": "Split withheld",
-    "text": "Divisional outlook (UK Plastics, Denmark, Paperbox, Poland) and the line that reported PBT “is expected to benefit materially from property disposals” both absent from Sep-26",
-    "span": "Given at Dec-25, Mar-26, May-26, Aug-26"
+    "text": "H1 gave a profit outlook for each division (e.g. “revenue and profit in Denmark are expected to exceed 2025 levels”; Poland “materially below 2025”) → Oct-26 gives sales shortfalls for Paperbox and UK Plastics only and “Denmark continues to trade in line with expectations”, no divisional profit view",
+    "span": "H1 R Aug-26 → Oct-26"
    }
   ]
  }

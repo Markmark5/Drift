@@ -1,6 +1,6 @@
 {
  "ticker": "EVOK",
- "v": "2026-10-21.c2c7",
+ "v": "2026-10-23.309d",
  "ccy": "GBX",
  "src": "Yahoo EVOK.L weekly",
  "adj": [],
@@ -1338,20 +1338,42 @@
    "s": 0,
    "q": "Trading since the period end has remained in line with management expectations with strong levels of engagement throughout the FIFA World Cup providing a good foundation ahead of the upcoming football season",
    "file": "20260812_EVOK_H1-2026-Interim-Results.md"
+  },
+  {
+   "d": "2026-10-23",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "On an underlying basis the business continues to show resilience and reflects our continued emphasis on profitability and cash generation following the substantial increases in gaming duties, particularly in the UK.",
+   "file": "20261023_EVOK_Q3-2026-trading-update.md",
+   "gnote": "discounted: offer period (Bally's Intralot acquisition)"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-16",
-  "doc": "Notice",
-  "file": "20261016_EVOK_Notice-of-Q3-2026-Trading-Update.md",
-  "vs": "Notice of Q3 TU Sep-25 · Intralot GM results Sep-26 · back to Jul-24/Jul-25 H1 TUs",
+  "rns": "2026-10-23",
+  "doc": "Q3 TU",
+  "file": "20261023_EVOK_Q3-2026-trading-update.md",
+  "vs": "Q3 TU Oct-25 · H1 R Aug-26 · back to Q3 TU Oct-24",
   "lines": [
    {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Q3-25: “Adjusted EBITDA ahead of current market expectations” (consensus £362m footnote); H1-26: “Trading since the period end has remained in line with management expectations” → Q3-26 no expectations anchor of any kind",
+    "span": "Anchor in Q3 TU Oct-24, Oct-25 and H1 R Aug-26 → first quarterly update without one (offer period)"
+   },
+   {
+    "sev": "amber",
+    "type": "Split withheld",
+    "text": "Q3-25: “Further detail on the financial results by division is included as an appendix to this announcement” (UK&I Online, Retail, International; actives, stakes, sportsbook net revenue margin) → Q3-26 Group revenue only, no divisional split or KPI appendix",
+    "span": "Appendix in Q3 TU Oct-24, Q1 TU Apr-25, Q3 TU Oct-25 → gone"
+   },
+   {
     "sev": "grey",
-    "type": "Skipped update",
-    "text": "Usual July H1 post-close trading update (22 Jul-25 “The Board confirms no change to FY25 expectations”; 18 Jul-24) not issued in 2026; H1 went straight to interim results on 12 Aug-26, which carry no guidance during the Bally's Intralot offer",
-    "span": "H1 TU issued Jul-24, Jul-25 → none Jul-26 (offer period)"
+    "type": "Wording vs number",
+    "text": "Q3-25: “Revenue of £435m, 5% ahead of Q3 2024” → Q3-26 £406m, “a decrease of 7% on a reported basis”, described as “On an underlying basis the business continues to show resilience”",
+    "span": "Q3-25 → Q3-26"
    }
   ]
  }
