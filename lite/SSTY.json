@@ -1,8 +1,8 @@
 {
  "ticker": "SSTY",
- "v": "2026-10-19.96eb",
+ "v": "2026-10-26.cb4a",
  "ccy": "GBX",
- "src": "Yahoo SSTY.L weekly",
+ "src": "Yahoo SSTY.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-19",
    8.5
+  ],
+  [
+   "2026-10-23",
+   8.5
   ]
  ],
  "marks": [
@@ -1227,38 +1231,35 @@
    "s": -3,
    "q": "The trading environment remains challenging with forward bookings currently lower year-on-year. As at 22 September 2026, forward bookings on a like-for-like basis were £3.7 million (As at 22 September 2025: £4.7 million), reflecting a reduction of 21%.",
    "file": "20260925_SSTY_Interim-Results.md"
+  },
+  {
+   "d": "2026-10-26",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -3,
+   "q": "While more recent trading has shown signs of improvement following revenue management and other operational initiatives implemented by the Group’s recently appointed Chief Operating Officer, year-to-date trading remains below the Board's original expectations.",
+   "file": "20261026_SSTY_Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-25",
-  "doc": "H1 R",
-  "file": "20260925_SSTY_Interim-Results.md",
-  "vs": "H1 R Sep-25 · FY R Jun-26 · back to H1 Sep-23, Sep-24",
+  "rns": "2026-10-26",
+  "doc": "Q3 TU",
+  "file": "20261026_SSTY_Trading-Update.md",
+  "vs": "Q3 TU Nov-25 · H1 R Sep-26 · FY R Jun-26 · Holland Park completion Oct-26",
   "lines": [
    {
-    "sev": "red",
-    "type": "Anchor softened",
-    "text": "Full-year view dropped: Sep-24 “the Board anticipates delivering further profitable growth in H2”; Sep-25 “revenue for the full year is expected to be lower than in 2024” → Sep-26 no full-year revenue or EBITDA view, only “The trading environment remains challenging with forward bookings currently lower year-on-year”",
-    "span": "A full-year view at every interim Sep-22 to Sep-25 → first gap"
-   },
-   {
     "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Highlight framed as a win: “Retained more revenue per booking than the industry average, with direct bookings representing 32.8% of sales (H1 2025: 40.5%)” — direct share down 7.7 points",
-    "span": "H1 Sep-25 reported direct share without the industry comparison"
-   },
-   {
-    "sev": "grey",
-    "type": "Restated",
-    "text": "H1 2025 comparatives re-presented: Sep-25 “Revenue from continuing operations of £10.1 million” and “Adjusted EBITDA from continuing operations was £2.3 million” → Sep-26 “(H1 2025 restated: £9.4 million)” and “(H1 2025 restated: £2.1 million)”",
-    "span": "Continuing-operations basis after Glasgow, Berlin and Holland Park exits"
+    "type": "New caution",
+    "text": "Liquidity: H1 R Sep-26 “improved the Group’s liquidity” and “the Directors are satisfied that the Group will be able to operate within the level of its current facilities for the foreseeable future” → now “the Group continues to face pressure on its liquidity position”, with “no certainty regarding the timing or outcome of any potential asset disposals or financing arrangements”",
+    "span": "First liquidity warning in the record; Q3 TU Nov-25 flagged pricing pressure only"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Interim forward bookings now a number: Sep-25 “Forward bookings for the remainder of 2025 are expected to be broadly in line with last year” → Sep-26 “forward bookings on a like-for-like basis were £3.7 million”, a 21% fall",
-    "span": "In words at H1 Sep-23, Sep-24, Sep-25"
+    "text": "Bank debt updated: H1 R Sep-26 “reducing gross bank debt to £10.7 million on 1 July 2026” → now “bank borrowings have reduced from £13.6 million at 30 June 2026 to £9.1 million as at 23 October 2026”",
+    "span": "New post-period debt figure"
    }
   ]
  }

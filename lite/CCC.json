@@ -1,8 +1,8 @@
 {
  "ticker": "CCC",
- "v": "2026-10-20.7538",
+ "v": "2026-10-26.da08",
  "ccy": "GBX",
- "src": "AlphaVantage CCC.LON weekly",
+ "src": "AlphaVantage CCC.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1060,6 +1060,10 @@
   [
    "2026-10-19",
    5025.0
+  ],
+  [
+   "2026-10-23",
+   4830.0
   ]
  ],
  "marks": [
@@ -1335,35 +1339,46 @@
    "s": 3,
    "q": "Following a strong start to the second half and a further increase in the committed product order backlog since the end of June, particularly in North America, we now expect adjusted PBT for full-year 2026 to be significantly ahead of current market expectations2 and to be no less than £380m.",
    "file": "20260908_CCC_2026-Half-Year-Results.md"
+  },
+  {
+   "d": "2026-10-26",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Following the excellent performance in Q3 and a strong start to Q4, we now expect adjusted profit before tax for FY 2026 to be no less than £425m2.",
+   "file": "20261026_CCC_Q3-Trading-Update-–-26-October-2026.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-08",
-  "doc": "H1 R",
-  "file": "20260908_CCC_2026-Half-Year-Results.md",
-  "vs": "H1 R Sep-25 · TU Jul-26 · back to Jul-24",
+  "rns": "2026-10-26",
+  "doc": "Q3 TU",
+  "file": "20261026_CCC_Q3-Trading-Update-–-26-October-2026.md",
+  "vs": "Q3 TU Oct-25 · H1 R Sep-26 · back to Q3 TU Oct-23/Oct-24",
   "lines": [
    {
-    "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Jul-26 TU: H1 adjusted PBT “approximately double the prior year's relatively soft comparative” (≈£163m) → H1 R: “Adjusted profit before tax increased by 87.0% to £152.4m”, c.6% short of the pre-announced figure",
-    "span": "Jul-24 pre-announced c.£87m, delivered £87.2m; Jul-25 slightly ahead, delivered +1.2% → first shortfall vs its own H1 pre-announcement"
+    "sev": "grey",
+    "type": "Went quiet",
+    "text": "Long-term outlook: Oct-25 “gives us continued confidence in our long-term growth prospects”; Sep-26 “we believe that we are well placed to deliver profitable growth and sustained cash generation” → no ‘looking further ahead’ paragraph now (Capital Markets Event on 24 November)",
+    "span": "In Q3 TU Oct-23, Oct-24, Oct-25 and H1 R Sep-26 → first gap"
    },
    {
-    "sev": "amber",
-    "type": "New caution",
-    "text": "H1-25: “one has now been stabilised and is expected to be profitable going forward” → H1-26: “a small number of contracts are not meeting our original expectations”, customer contract provisions £14.8m (Dec-25) → £24.8m; Services gross margin down 107bps (H1-25 up 80bps)"
-   },
-   {
-    "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Germany: “Germany delivered a robust underlying half-year performance.” while “adjusted operating profit declined by 13.3% in constant currency”, second straight H1 profit fall (H1-25 down 18.1%)"
+    "sev": "grey",
+    "type": "Went quiet",
+    "text": "Balance sheet / net funds: Oct-25 “We maintain a strong balance sheet with positive adjusted net funds”; Sep-26 “adjusted net funds of £308.7m” → no cash or net funds mention now",
+    "span": "Balance sheet line in Q3 TU Oct-23, Oct-24, Oct-25 → first gap"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Jul-26: “comfortably ahead of market expectations”, no figure → Sep-26: “significantly ahead of current market expectations and to be no less than £380m” vs consensus £340.9m; first numeric FY floor since Jan-26 (£270m for FY25)"
+    "text": "FY guide numeric: Oct-25 “we continue to expect full year adjusted operating profit in FY 2025 to be ahead of the prior year” → now “we now expect adjusted profit before tax for FY 2026 to be no less than £425m” (floor up from £380m at Sep-26; consensus £387.1m)"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Order backlog quantified: Oct-25 “The current backlog is ahead of both the position a year ago and at the end of the first half.” → now “of £12.6bn, versus £9.3bn at the end of June”",
+    "span": "First Q3 TU with a backlog figure (Oct-24 and Oct-25 words only)"
    }
   ]
  }
