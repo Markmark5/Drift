@@ -1,8 +1,8 @@
 {
  "ticker": "CGS",
- "v": "2026-10-21.166d",
+ "v": "2026-10-26.263c",
  "ccy": "GBX",
- "src": "Yahoo CGS.L weekly",
+ "src": "Yahoo CGS.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-21",
    285.0
+  ],
+  [
+   "2026-10-23",
+   275.0
   ]
  ],
  "marks": [
@@ -1244,32 +1248,47 @@
    "s": 0,
    "q": "However, with continued focus on productivity, cost control and the optimisation of the new foundry line, management anticipate the full year result to be in line with market expectations.",
    "file": "20260820_CGS_AGM-Statement.md"
+  },
+  {
+   "d": "2026-10-26",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "CUT",
+   "s": -3,
+   "q": "Consequently, whilst revenue expectations remain in line with market consensus*, with production arrears not yet resolved the Board are reducing its expectations* for adjusted profit before tax for FY27 to a level broadly consistent with the profit in the previous year (excluding the historical R&D tax credits).",
+   "file": "20261026_CGS_Trading-Update-and-Notice-of-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-20",
-  "doc": "AGM",
-  "file": "20260820_CGS_AGM-Statement.md",
-  "vs": "AGM Aug-25 · back to Aug-22 · FY R Jun-26",
+  "rns": "2026-10-26",
+  "doc": "H1 TU",
+  "file": "20261026_CGS_Trading-Update-and-Notice-of-Results.md",
+  "vs": "AGM Aug-26 · FY R Jun-26 · H1 TU Oct-23/Oct-22",
   "lines": [
+   {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "AGM Aug-26: “management anticipate the full year result to be in line with market expectations” → now “the Board are reducing its expectations* for adjusted profit before tax for FY27”, to roughly last year's profit (FY26 PBT £10.3m incl. £0.8m prior-year R&D credits) vs £12.9m consensus",
+    "span": "Profit guided in line at every Oct TU (Oct-22, Oct-23) and at AGM Aug-26 → first profit cut since Feb-25"
+   },
    {
     "sev": "amber",
     "type": "Number to words",
-    "text": "Forward schedules: FY R Jun-26 “currently suggest an increase of 5% - 10%” (AGM Aug-25 put demand at “10% to 15% below the normalised trend level”) → now “orders and forward schedules are improving”, no figure",
-    "span": "FY R Jun-26 → AGM Aug-26"
-   },
-   {
-    "sev": "amber",
-    "type": "New caution",
-    "text": "Jun-26 said “full power was restored on 24 May 2026” → now “the impact on operational efficiencies has continued which, in turn, has affected performance during June and July”; in-line guide kept behind “However”",
-    "span": "First flagged as hitting June-July at Aug-26"
+    "text": "FY R Jun-26: forward schedules “currently suggest an increase of 5% - 10%” → now “the strong forward order book in the second half of the year”, no percentage",
+    "span": "FY R Jun-26 → Oct-26"
    },
    {
     "sev": "grey",
-    "type": "Went quiet",
-    "text": "Commercial-vehicle share of revenue opened every AGM statement (70% Aug-22, 75% Aug-23, 80% Aug-24, “(75% of group revenue)” Aug-25) → not given now",
-    "span": "Given at 4 AGMs → first gap"
+    "type": "New caution",
+    "text": "First mention of production arrears: “with production arrears not yet resolved”; AGM Aug-26 had said the power issue “was resolved at the end of May”",
+    "span": "Not in any earlier CGS RNS"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Consensus figures given for the first time: “stood at revenue of £181.1m and adjusted profit before tax of £12.9m”",
+    "span": "No consensus footnote in any earlier CGS RNS"
    }
   ]
  }
