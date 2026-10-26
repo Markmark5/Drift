@@ -3900,8 +3900,8 @@
    "lights": "g-r",
    "rns_type": "FY26 YE-TU",
    "rns_date": "2026-08-17",
-   "build_date": "2026-09-01",
-   "spec_version": "v5.5",
+   "build_date": "2026-10-26",
+   "spec_version": "v5.8",
    "next_test": "FY26 results c.22 Oct 2026: a printed contractor number and headcount level, H2 contract margin ≥8.2%, an FY27 figure anchored to consensus",
    "url": "GATC.html",
    "grid": {
@@ -3946,10 +3946,11 @@
      },
      {
       "m": "PBT",
-      "gap": 32
+      "gap": 32.0
      }
     ]
-   }
+   },
+   "chart": "charts/GATC.json?v=2026-10-26.e9b4"
   },
   {
    "ticker": "TPK",
