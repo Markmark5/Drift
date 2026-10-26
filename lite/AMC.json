@@ -1,0 +1,43 @@
+{
+ "ticker": "AMC",
+ "v": "2026-10-26.7ec2",
+ "ccy": "GBX",
+ "src": "ShareScope weekly snapshots",
+ "adj": [],
+ "px": [
+  [
+   "2026-10-16",
+   193.46
+  ],
+  [
+   "2026-10-23",
+   180.4
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2026-10-26",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -1,
+   "q": "The first half margin reflects the greater concentration of the IGA impact in H1. As this effect moderates, we expect the margin to strengthen in H2, leaving us on track to deliver our full-year guidance.",
+   "file": "20261026_AMC_Half-year-Financial-Results.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-26",
+  "doc": "H1 R",
+  "file": "20261026_AMC_Half-year-Financial-Results.md",
+  "vs": "First results as a listed company · Admission 14-Oct-26 · Offer details 9-Oct-26 (no prior results RNS)",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Headline “Strong first half performance, on track to deliver FY'27 guidance” beside “underlying EBITDA margin at 48.0%, compared with 50.8% in the prior period” (−2.8pp), wider than the full-year guide “underlying EBITDA margins expected to moderate by up to c.2 percentage points relative to FY’26”; H2 margin recovery needed",
+    "span": "H1 FY27 vs H1 FY26"
+   }
+  ]
+ }
+}

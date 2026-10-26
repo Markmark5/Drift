@@ -1,8 +1,8 @@
 {
  "ticker": "KIST",
- "v": "2026-10-19.0984",
+ "v": "2026-10-26.6e60",
  "ccy": "GBX",
- "src": "Yahoo KIST.L weekly",
+ "src": "Yahoo KIST.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1048,6 +1048,10 @@
   [
    "2026-10-16",
    312.5
+  ],
+  [
+   "2026-10-23",
+   302.0
   ]
  ],
  "marks": [

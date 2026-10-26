@@ -1,8 +1,8 @@
 {
  "ticker": "VLX",
- "v": "2026-10-19.548f",
+ "v": "2026-10-26.d09f",
  "ccy": "GBX",
- "src": "Yahoo VLX.L weekly",
+ "src": "Yahoo VLX.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-19",
    620.0
+  ],
+  [
+   "2026-10-23",
+   532.0
   ]
  ],
  "marks": [

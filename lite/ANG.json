@@ -1,8 +1,8 @@
 {
  "ticker": "ANG",
- "v": "2026-10-19.b426",
+ "v": "2026-10-26.4bd5",
  "ccy": "GBX",
- "src": "Yahoo ANG.L weekly",
+ "src": "Yahoo ANG.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-19",
    54.145
+  ],
+  [
+   "2026-10-23",
+   54.5
   ]
  ],
  "marks": [

@@ -1,8 +1,8 @@
 {
  "ticker": "SQZ",
- "v": "2026-10-19.dea3",
+ "v": "2026-10-26.9d5a",
  "ccy": "GBX",
- "src": "Yahoo SQZ.L weekly",
+ "src": "Yahoo SQZ.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-19",
    275.024
+  ],
+  [
+   "2026-10-23",
+   256.2
   ]
  ],
  "marks": [

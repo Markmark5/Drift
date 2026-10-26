@@ -1,8 +1,8 @@
 {
  "ticker": "MUL",
- "v": "2026-10-19.993c",
+ "v": "2026-10-26.c837",
  "ccy": "GBX",
- "src": "Yahoo MUL.L weekly",
+ "src": "Yahoo MUL.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-19",
    244.0
+  ],
+  [
+   "2026-10-23",
+   238.0
   ]
  ],
  "marks": [

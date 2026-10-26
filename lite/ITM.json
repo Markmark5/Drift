@@ -1,8 +1,8 @@
 {
  "ticker": "ITM",
- "v": "2026-10-19.ff7f",
+ "v": "2026-10-26.cc92",
  "ccy": "GBX",
- "src": "Yahoo ITM.L weekly",
+ "src": "Yahoo ITM.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1048,6 +1048,10 @@
   [
    "2026-10-16",
    91.95
+  ],
+  [
+   "2026-10-23",
+   80.7
   ]
  ],
  "marks": [
@@ -1280,35 +1284,10 @@
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-19",
-  "doc": "FY R",
-  "file": "20261019_ITM_Preliminary-Results.md",
-  "vs": "FY R Aug-25 · back to Aug-23 · H1 R Jan-26 · guidance update Oct-26",
-  "lines": [
-   {
-    "sev": "amber",
-    "type": "Pushed out",
-    "text": "Prelims for the year to 30 April were out mid-August (17 Aug-23, 15 Aug-24, 14 Aug-25) → FY26 “will be announced on 19 October 2026”, with the FY26 EBITDA upgrade only given on 8 Oct-26, over five months after year end",
-    "span": "Aug-23, Aug-24, Aug-25 → first October prelims"
-   },
-   {
-    "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Backlog: Aug-25 “Record contracted firm year-end order backlog of £145.1m”, Jan-26 “Contract backlog to date of £152m” → Oct-26 “At £144.0m, contract backlog remained at a consistent level”, down £8m since January and flat year on year",
-    "span": "Aug-25 £145.1m · Jan-26 £152m · Oct-26 £144.0m"
-   },
-   {
-    "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Cash “at the top end of our upgraded guidance range” at £215.6m, although Oct-26 said “Revenue and cash guidance remain unchanged” (£170m-£175m) and the figure includes the £40.0m GBE equity investment",
-    "span": "Underlying c.£175.6m = top of the unchanged range"
-   },
-   {
-    "sev": "grey",
-    "type": "Skipped update",
-    "text": "June pre-results trading update with the year's expected figures given Jun-22, Jun-23 and Jun-24 → none in 2025 or 2026; FY26 outturn first signalled at the Oct-26 guidance update",
-    "span": "Jun-22, Jun-23, Jun-24 → gap 2025 and 2026"
-   }
-  ]
+  "rns": "2026-10-21",
+  "doc": "Block listing",
+  "file": "20261021_ITM_Admission-to-Trading.md",
+  "vs": "FY R 19-Oct-26 (previous RNS) · no earlier block listing RNS in the 5-year folder",
+  "lines": []
  }
 }

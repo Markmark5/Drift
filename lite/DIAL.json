@@ -1,8 +1,8 @@
 {
  "ticker": "DIAL",
- "v": "2026-10-19.5b44",
+ "v": "2026-10-26.d208",
  "ccy": "GBX",
- "src": "Yahoo DIAL.L weekly",
+ "src": "Yahoo DIAL.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1048,6 +1048,10 @@
   [
    "2026-10-16",
    30.5
+  ],
+  [
+   "2026-10-23",
+   33.5
   ]
  ],
  "marks": [

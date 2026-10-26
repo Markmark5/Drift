@@ -1,8 +1,8 @@
 {
  "ticker": "DSCV",
- "v": "2026-10-19.6a87",
+ "v": "2026-10-26.8bc3",
  "ccy": "GBX",
- "src": "Yahoo DSCV.L weekly",
+ "src": "Yahoo DSCV.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1048,6 +1048,10 @@
   [
    "2026-10-16",
    822.0
+  ],
+  [
+   "2026-10-23",
+   804.0
   ]
  ],
  "marks": [
