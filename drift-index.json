@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23",
+ "updated": "2026-10-26",
  "tickers": [
   {
    "ticker": "STAF",
@@ -2983,17 +2983,17 @@
    "company": "Computacenter plc",
    "kind": "ticker",
    "direction": "up",
-   "headline": "Record half delivered and the guide raised again: profit up 87%, order book £9.3bn, full year floored at no less than £380m.",
-   "trigger": "Green-shoot mirror, three of three: fourth consecutive raise with a floor 11.5% above consensus, language rising five prints, disclosure expanding to segment order books.",
+   "headline": "Floor raised again to no less than £425m, 10% above a consensus already up a third since April, as the order book jumps to £12.6bn.",
+   "trigger": "Green-shoot mirror, three of three: a fifth guide raise this year with the floor above the top of the analyst range, a third consecutive maximum language score, and the backlog quantified at a Q3 update for the first time.",
    "alert": true,
    "fired": 3,
    "fired_of": 3,
    "lights": "ggg",
-   "rns_type": "H1 R",
-   "rns_date": "2026-09-08",
-   "build_date": "2026-09-08",
-   "spec_version": "v5.4",
-   "next_test": "Q3 update, late October 2026: is the £380m floor lifted again, and does the order book keep growing after such heavy project completions?",
+   "rns_type": "Q3 TU",
+   "rns_date": "2026-10-26",
+   "build_date": "2026-10-26",
+   "spec_version": "v5.8",
+   "next_test": "Pre-close update, 28 January 2027: is the £425m floor met or raised, and did the record fourth quarter actually ship what the £12.6bn book promises?",
    "url": "CCC.html",
    "grid": {
     "labels": [
@@ -3004,7 +3004,6 @@
      "R5"
     ],
     "periods": [
-     "H1 22",
      "H2 22",
      "H1 23",
      "H2 23",
@@ -3012,23 +3011,24 @@
      "H2 24",
      "H1 25",
      "H2 25",
-     "H1 26"
+     "H1 26",
+     "Q3 26"
     ],
     "rows": [
-     "-rrrggrgg",
-     "--ggrgrgg",
-     "------ggg",
-     "--garaggg",
-     "---r-rggg"
+     "rrrggrggg",
+     "-ggrgrgg-",
+     "-----ggg-",
+     "-garaggga",
+     "--r-rggga"
     ],
-    "note": "Five ledger ranks, right-anchored on the H1-26 results column."
+    "note": "Five ledger ranks, right-anchored on the Q3-26 update column."
    },
    "prev": {
     "direction": "up",
     "fired": 3,
     "lights": "ggg",
-    "rns_date": "2026-07-09",
-    "rns_type": "H1 TU"
+    "rns_date": "2026-09-08",
+    "rns_type": "H1 R"
    },
    "trend": {
     "mode": "share",
@@ -3036,7 +3036,7 @@
     "rows": [
      {
       "m": "REV",
-      "gap": 12.8
+      "gap": 2.9
      },
      {
       "m": "EBITDA",
@@ -3044,10 +3044,11 @@
      },
      {
       "m": "PBT",
-      "gap": 8.7
+      "gap": 3.3
      }
     ]
-   }
+   },
+   "chart": "charts/CCC.json?v=2026-10-26.171c"
   },
   {
    "ticker": "CLX",
