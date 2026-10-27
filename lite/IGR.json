@@ -1,8 +1,8 @@
 {
  "ticker": "IGR",
- "v": "2026-10-21.3063",
+ "v": "2026-10-27.20c3",
  "ccy": "GBX",
- "src": "Yahoo IGR.L weekly",
+ "src": "Yahoo IGR.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-21",
    92.0
+  ],
+  [
+   "2026-10-23",
+   90.5
   ]
  ],
  "marks": [
@@ -1272,38 +1276,47 @@
    "s": 0,
    "q": "The Group guidance remains unchanged as it expects to deliver 0-5% revenue growth, adjusted operating margins of 4-5% and c.£5m annual free cash generation",
    "file": "20260616_IGR_Full-Year-Results.md"
+  },
+  {
+   "d": "2026-10-27",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is pleased to report that the Group has delivered a strong first-half performance and remains on track to deliver FY2027 results in line with market expectations*.",
+   "file": "20261027_IGR_Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-06-16",
-  "doc": "FY R",
-  "file": "20260616_IGR_Full-Year-Results.md",
-  "vs": "FY R Jul-25 · YE-TU Apr-26 · Q3 TU Feb-26",
+  "rns": "2026-10-27",
+  "doc": "H1 TU",
+  "file": "20261027_IGR_Trading-Update.md",
+  "vs": "H1 TU Oct-25 · FY R Jun-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Restated",
-    "text": "Presentation currency switched from US$ to £: Apr-26 “The Group expects to report FY2026 revenues of c$292 million” → Jun-26 “Continuing revenue was £217.9 million”; “GBP has been adopted as its presentation currency during the year, prior year has been restated to reflect this”",
-    "span": "All prior RNS and guidance ($270-280m revenue, cash in excess of $40m) in US$"
-   },
-   {
-    "sev": "amber",
-    "type": "Wording vs number",
-    "text": "“The Group delivered a strong performance in FY2026, exceeding management expectations” beside “adjusted operating profit was £9.6 million (FY2025: £16.0 million), with a margin of 4.4% (FY2025: 7.1%)”",
-    "span": "Decline was guided at Jul-25 (margin 3-4%)"
+    "type": "Went quiet",
+    "text": "Orderbook cover: Oct-25 “strong orderbook visibility at 91%”, Jun-26 “Orderbook remains robust at 78% of budgeted revenues (75% at this stage last year)” → Oct-26 gives no orderbook figure",
+    "span": "Given Oct-25, Jun-26 → first gap"
    },
    {
     "sev": "grey",
-    "type": "Restated",
-    "text": "Orderbook: Jul-25 “Orderbook remains robust at 87% of budgeted revenues” → Jun-26 “Orderbook remains robust at 78% of budgeted revenues (75% at this stage last year)”",
-    "span": "Comparator now 75%, not the 87% printed (Jul-25 results were six weeks later in the season)"
+    "type": "Number to words",
+    "text": "Jun-26 “The Group guidance remains unchanged as it expects to deliver 0-5% revenue growth, adjusted operating margins of 4-5% and c.£5m annual free cash generation” → Oct-26 “expects to deliver FY2027 results in line with guidance”, ranges and cash guide not restated (Oct-25 H1 TU restated “the previously guided range of $270-280 million”); consensus footnote given instead",
+    "span": "H1 TU Oct-25 → H1 TU Oct-26"
+   },
+   {
+    "sev": "grey",
+    "type": "New caution",
+    "text": "Medium-term plans under review by the new team: “work is progressing well to refine the Group's strategic priorities and medium-term growth plans. A comprehensive update will be provided within the Interim Results.”",
+    "span": "New CEO and CFO since Jun-26"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Jul-25 “While the Board does not recommend a dividend for FY2025” → Jun-26 “Proposed recommencement of final ordinary dividend of 1.0p per share”, buyback of up to 10%, and a new “c.£5m annual free cash generation” guide",
-    "span": "First dividend since FY2022"
+    "text": "H1 revenue: Oct-25 “revenue for the period is expected to be c.13% lower than the prior year” → Oct-26 “c.12% ahead of the prior period at c.£109 million, including c.8% organic growth”; adjusted operating profit “c.£5.7 million from £4.2 million”",
+    "span": "H1 TU Oct-25 → H1 TU Oct-26"
    }
   ]
  }

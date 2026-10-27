@@ -1,8 +1,8 @@
 {
  "ticker": "INF",
- "v": "2026-10-19.92cf",
+ "v": "2026-10-27.cac6",
  "ccy": "GBX",
- "src": "AlphaVantage INF.LON weekly",
+ "src": "AlphaVantage INF.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1056,6 +1056,10 @@
   [
    "2026-10-16",
    883.6
+  ],
+  [
+   "2026-10-23",
+   849.4
   ]
  ],
  "marks": [
@@ -1346,26 +1350,47 @@
    "s": 0,
    "q": "Informa has issued a separate Company Update this morning, which confirms current trading remains on track for full year expectations, announces the intention to separate its Taylor & Francis business to focus on its core B2B business and details the earnings enhancing acquisition of Clarion, further strengthening its position in B2B Live Events.",
    "file": "20261006_INF_Placing-Announcement.md"
+  },
+  {
+   "d": "2026-10-27",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -2,
+   "q": "Absent KSA, this would remain the case but, in light of the latest force majeure activity, assuming no further contribution from KSA in 2026, we continue to track to double-digit growth in underlying earnings (excluding the in-year dilution from the share issuance relating to the Clarion acquisition) but with Group underlying revenue growth now tracking to 3%±;",
+   "file": "20261027_INF_Nine-Month-Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-06",
-  "doc": "OPS",
-  "file": "20261006_INF_Placing-Announcement.md",
-  "vs": "H1 R Jul-26 · AGM TU Jun-26 · same-day Company Update Oct-26 (no earlier placing of this kind)",
+  "rns": "2026-10-27",
+  "doc": "Q3 TU",
+  "file": "20261027_INF_Nine-Month-Trading-Update.md",
+  "vs": "Q3 TU Nov-25 · Company Update Oct-26 (previous RNS) · H1 R Jul-26 · back to Nov-24",
   "lines": [
    {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "EPS guide redefined: Jul-26 “Earnings guidance (double-digit underlying growth in adjusted diluted EPS2)” → Oct-26 “double-digit growth in underlying earnings (excluding the in-year dilution from the share issuance relating to the Clarion acquisition)”",
+    "span": "Unqualified Mar-26, Jun-26, Jul-26, Oct-06 → carve-out Oct-27"
+   },
+   {
     "sev": "amber",
-    "type": "Target dropped",
-    "text": "Jul-26 H1 R: “2026 Share Buyback Programme increased to £350m from £250m” → the placing does not mention the buyback; the same-day Company Update says “Informa will pause its current share buyback programme in order to redirect capital to fund the transaction”",
-    "span": "Launched Jan-26 (£200m initial), raised Jul-26 (£350m) → paused Oct-26"
+    "type": "Wording vs number",
+    "text": "Headline “reaffirming full year guidance for double-digit underlying earnings growth2” while the revenue guide falls from “full year guidance for 6%± underlying revenue growth” (Oct-06) to “Group underlying revenue growth now tracking to 3%±”",
+    "span": "Revenue cut sits in the body, not the headline"
+   },
+   {
+    "sev": "amber",
+    "type": "Next-year view dropped",
+    "text": "Q3 TU Nov-25 “Recurring visibility into 2026 through subscriptions, pre-booked exhibitor revenues and forward booked contracts, with £1bn+ booked /committed”; Jul-26 “Forward booked revenues for H1 2027 are currently at $0.8bn+” → Oct-26 no forward bookings figure or underlying 2027 view, only Clarion joining for 2027",
+    "span": "Next-year momentum given at Q3 TU Nov-24 and Nov-25 → first Q3 TU without it"
    },
    {
     "sev": "grey",
-    "type": "Number to words",
-    "text": "Jul-26 H1 R: “The Group is committed to full year Group Revenue (6%± underlying growth) and Earnings guidance (double-digit underlying growth in adjusted diluted EPS2)” → placing: “confirms current trading remains on track for full year expectations”, no figures (the numbers sit in the same-day Company Update)",
-    "span": "Jul-26 → Oct-26"
+    "type": "New caution",
+    "text": "KSA force majeure named: “Recent escalation in KSA has led to further rescheduling”, with Cityscape Global moved to January 2027",
+    "span": "Middle East disruption flagged Jul-26; KSA force majeure first Oct-26"
    }
   ]
  }

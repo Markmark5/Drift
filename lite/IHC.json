@@ -1,8 +1,8 @@
 {
  "ticker": "IHC",
- "v": "2026-10-20.c84e",
+ "v": "2026-10-27.3b96",
  "ccy": "GBX",
- "src": "Yahoo IHC.L weekly",
+ "src": "Yahoo IHC.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-20",
    18.5
+  ],
+  [
+   "2026-10-23",
+   18.5
   ]
  ],
  "marks": [
@@ -1308,38 +1312,47 @@
    "s": 1,
    "q": "\"We enter the second half of the year with confidence, a strong orderbook and pipeline of opportunities and expect to close the financial year slightly ahead of market expectations.",
    "file": "20260908_IHC_Trading-update-for-six-months-ended-31-July-2026.md"
+  },
+  {
+   "d": "2026-10-27",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "RAISE",
+   "s": 1,
+   "q": "As a result, we now expect revenues for FY27 to be at least £43 million and for momentum to continue into FY28 and beyond.",
+   "file": "20261027_IHC_Half-year-Financial-Report.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-08",
-  "doc": "H1 TU",
-  "file": "20260908_IHC_Trading-update-for-six-months-ended-31-July-2026.md",
-  "vs": "H1 TU Aug-25 · back to Aug-23 · AGM Jul-26, Jun-26",
+  "rns": "2026-10-27",
+  "doc": "H1 R",
+  "file": "20261027_IHC_Half-year-Financial-Report.md",
+  "vs": "H1 R Oct-25 · H1 TU Sep-26 · FY R Jun-26",
   "lines": [
    {
-    "sev": "amber",
-    "type": "Target dropped",
-    "text": "Jun-26: savings and compensation to “contribute to reducing net debt by approximately 20% during FY27” → Sep-26 net debt “remained broadly stable at £5.2 million” with no mention of the 20% target",
-    "span": "Jun-26 → Sep-26"
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Oct-25: “underlines our confidence in meeting market expectations for the full year”; Sep-26: “expect to close the financial year slightly ahead of market expectations” → now revenue only, “we now expect revenues for FY27 to be at least £43 million”, no market-expectations or profit anchor for FY27",
+    "span": "Full-year market anchor at H1 R Oct-25, FY R Jun-26, H1 TU Sep-26 → first gap"
    },
    {
     "sev": "amber",
     "type": "Wording vs number",
-    "text": "Billed as “a positive trading update” with “strong underlying growth across key product areas”, beside headline “Revenues of £22.0 million (H1 FY26: £24.0 million)”, down 8%",
-    "span": "H1-26 vs H1-25"
+    "text": "Outlook claims “improving profitability and cash generation” beside “Gross margin of 41.9% (H1 FY26: 46.2%)” and “Adjusted EBITDA1 of £1.2 million (H1 FY26: £1.3 million)”",
+    "span": "Underlying H1 FY26 margin was 45.2% (Oct-25) → still lower"
    },
    {
     "sev": "amber",
-    "type": "Went quiet",
-    "text": "Margin: Aug-23 “expected to be over 48%”, Sep-24 “approximately 44.5%”, Aug-25 “Gross margins also recovered” and “a significant improvement in EBITDA” → Sep-26 no gross margin or EBITDA comment at all",
-    "span": "Margin in every H1 TU Aug-23 to Aug-25 → first gap"
+    "type": "Target dropped",
+    "text": "Jun-26: savings and compensation to “contribute to reducing net debt by approximately 20% during FY27” → Oct-26 net debt £5.2m “largely unchanged from £5.1 million”, 20% target not mentioned",
+    "span": "Jun-26 → Sep-26 → Oct-26, second print without it"
    },
    {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "New divisional split: “SLE product revenues of £12.7 million”, “Airon revenues increased by 40% to £1.6 million” and “MedTech distribution revenues increased by 7% to £7.6 million”, plus a full-year guide “slightly ahead of market expectations”",
-    "span": "Aug-25 gave total only; Neonatal/Infusion split at Aug-23, Sep-24"
+    "sev": "amber",
+    "type": "Pushed out",
+    "text": "Oct-25: “completing testing for FDA submission in H2 2026 and preparing for H1 2027 launch” → Oct-26: “FDA filing in the late 2027, with clearance in H1 of 2028”",
+    "span": "Moved at FY R Jun-26; held at Oct-26"
    }
   ]
  }

@@ -1,8 +1,8 @@
 {
  "ticker": "PNN",
- "v": "2026-10-19.b0e3",
+ "v": "2026-10-27.39e7",
  "ccy": "GBX",
- "src": "AlphaVantage PNN.LON weekly",
+ "src": "AlphaVantage PNN.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1056,6 +1056,10 @@
   [
    "2026-10-16",
    326.2
+  ],
+  [
+   "2026-10-23",
+   333.0
   ]
  ],
  "marks": [
@@ -1242,35 +1246,10 @@
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-07",
-  "doc": "H1 TU",
-  "file": "20261007_PNN_Rights-Issue.md",
-  "vs": "TS Sep-25 · FY R Jun-26 · back to Mar-26 TS, Jan-25 rights issue",
-  "lines": [
-   {
-    "sev": "red",
-    "type": "Target dropped",
-    "text": "K8 RoRE target (incl. outperformance): Sep-25 “We are on track to deliver our 7% RORE target”, Mar-26 “7% RORE targeted over K8” → Oct-26 no RoRE target; instead “efficiencies we had previously targeted in terms of regulatory outperformance will be reinvested into the business”",
-    "span": "Given Sep-25, Nov-25, Mar-26 → absent Jun-26 and Oct-26"
-   },
-   {
-    "sev": "amber",
-    "type": "Target dropped",
-    "text": "Dividend promise: Jan-25 “Pennon intends to grow this rebased dividend per share, in absolute terms, by CPIH inflation” to March 2030 → Oct-26 second rebase, “the implied underlying reduction in dividend per share for FY2026/2027 compared with FY2025/2026 is approximately 30%”",
-    "span": "Jan-25 → Oct-26"
-   },
-   {
-    "sev": "amber",
-    "type": "Target dropped",
-    "text": "EPA rating: Jun-25 “We have a plan to get to EPA 4 star” → Oct-26 “achieving our previously stated objective of a 4* EPA outcome by 2028 is now very challenging”",
-    "span": "Jun-25 → Oct-26"
-   },
-   {
-    "sev": "amber",
-    "type": "Skipped update",
-    "text": "Usual autumn trading statement (Sep-22, Oct-23, Sep-24, Sep-25 “On track against expectations in 2025/26”) not issued in 2026 — 16 Sep-26 RNS only announced a Strategic Update; the “Pennon Q1 Trading Update” listed for July 2026 in the Dec-25 calendar was also not issued",
-    "span": "Sep TS given 4 years running → first gap"
-   }
-  ]
+  "rns": "2026-10-27",
+  "doc": "OPS",
+  "file": "20261027_PNN_RESULTS-OF-RIGHTS-ISSUE.md",
+  "vs": "Results of Rights Issue Feb-25 · prev Rights Issue Oct-26",
+  "lines": []
  }
 }

@@ -1,8 +1,8 @@
 {
  "ticker": "SHOE",
- "v": "2026-10-21.0b1f",
+ "v": "2026-10-27.6452",
  "ccy": "GBX",
- "src": "Yahoo SHOE.L weekly",
+ "src": "Yahoo SHOE.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-21",
    76.5
+  ],
+  [
+   "2026-10-23",
+   76.5
   ]
  ],
  "marks": [
@@ -1297,26 +1301,47 @@
    "s": 0,
    "q": "Shoe Zone is pleased to announce that trading has continued positively throughout July and as a result of this, cash and equivalents as at 25 July 2026 stood at approximately £7.0m ahead of original budget. The Board continues to expect an adjusted loss before tax* of no greater than £1.0m for the financial year ending 3 October 2026.",
    "file": "20260811_SHOE_Trading-Update.md"
+  },
+  {
+   "d": "2026-10-27",
+   "doc": "YE-TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -2,
+   "q": "The start to the Autumn/Winter season has been slower than expected, impacting the last few weeks of the financial year FY 2026, and continuing into the new year FY 2027.",
+   "file": "20261027_SHOE_Full-Year-Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-11",
-  "doc": "Q3 TU",
-  "file": "20260811_SHOE_Trading-Update.md",
-  "vs": "TU Aug-25 · prev TU Jul-26",
+  "rns": "2026-10-27",
+  "doc": "YE-TU",
+  "file": "20261027_SHOE_Full-Year-Trading-Update.md",
+  "vs": "YE-TU Oct-25 · back to Oct-23/Oct-24 · prev TU Aug-26",
   "lines": [
    {
-    "sev": "grey",
-    "type": "Anchor softened",
-    "text": "Jul-26: “the Company achieved sales ahead of market expectations” → Aug-26 no market-expectations reference, only “trading has continued positively throughout July”",
-    "span": "Jul-26 → Aug-26"
+    "sev": "amber",
+    "type": "New caution",
+    "text": "Oct-25 outlook only “Management continue to be cautious about the near-term outlook, with trading conditions expected to remain subdued” → Oct-26 adds “The start to the Autumn/Winter season has been slower than expected, impacting the last few weeks of the financial year FY 2026, and continuing into the new year FY 2027”",
+    "span": "First flag of a slow start to the new year in a YE-TU"
    },
    {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Cash: Jul-26 “the Company's cash position has also improved” (no figure) → Aug-26 cash “stood at approximately £7.0m ahead of original budget”",
-    "span": "Aug-25 gave cash only vs last year, no figure"
+    "sev": "amber",
+    "type": "New caution",
+    "text": "Container costs: Oct-25 “Container prices started to fall after Chinese New Year” → Oct-26 “container prices increased due to issues at Chinese ports”, “which is expected to negatively impact product margin performance”",
+    "span": "Oct-25 → Oct-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Pushed out",
+    "text": "Store programme: Oct-25 “We are continuing our strategy to expand the number of new format stores through relocations and refits of existing High Street stores” → Oct-26 “but are limiting the capital expenditure to essential expenditure only”, refits “albeit at a slower pace”",
+    "span": "Oct-24, Oct-25 → Oct-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Went quiet",
+    "text": "Digital growth: Oct-23 “Digital revenue was £30.9m”, Oct-25 “Digital revenue up 2.3% year-on-year” → Oct-26 “Digital revenue was in line with last year”, no figure",
+    "span": "Figure given Oct-23, Oct-25 → gap Oct-26"
    }
   ]
  }

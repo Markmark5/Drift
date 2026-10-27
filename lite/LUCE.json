@@ -1,8 +1,8 @@
 {
  "ticker": "LUCE",
- "v": "2026-10-20.a037",
+ "v": "2026-10-27.5158",
  "ccy": "GBX",
- "src": "Yahoo LUCE.L weekly",
+ "src": "Yahoo LUCE.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-20",
    202.0
+  ],
+  [
+   "2026-10-23",
+   202.0
   ]
  ],
  "marks": [
@@ -1324,36 +1328,47 @@
    "s": 2,
    "q": "Demand Flexibility is delivering a recurring revenue stream which will grow with our EV charger base. The Board now expects Adjusted Operating Profit for 2026 to be ahead of market expectations.",
    "file": "20260922_LUCE_2026-Interim-Results.md"
+  },
+  {
+   "d": "2026-10-27",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board remains confident that full-year 2026 Adjusted Operating Profit1 will be delivered in line with market expectations, which increased following the announcement of the Group’s 2026 interim results five weeks ago",
+   "file": "20261027_LUCE_Q3-2026-Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-22",
-  "doc": "H1 R",
-  "file": "20260922_LUCE_2026-Interim-Results.md",
-  "vs": "H1 R Sep-25 · H1 TU Jul-26",
+  "rns": "2026-10-27",
+  "doc": "Q3 TU",
+  "file": "20261027_LUCE_Q3-2026-Trading-Update.md",
+  "vs": "Q3 TU Nov-25 · H1 R Sep-26 · H1 TU Jul-26",
   "lines": [
    {
-    "sev": "red",
-    "type": "Next-year view dropped",
-    "text": "Jul-26: “the Board expects Adjusted Operating Profit for 2027 to exceed current market expectations1” (headline “Outlook ahead of current market expectations for 2027”) → Sep-26 interim gives no 2027 view; the consensus footnote covers 2026 only",
-    "span": "FY27 view headlined 8 weeks earlier → dropped at the next print"
+    "sev": "amber",
+    "type": "Anchor softened",
+    "text": "Sep-26: “The Board now expects Adjusted Operating Profit for 2026 to be ahead of market expectations” (consensus £40.9m) → Oct-26 “in line with market expectations, which increased following the announcement of the Group’s 2026 interim results” (consensus £41.8m); implied profit guide held, “ahead” dropped",
+    "span": "H1 R Sep-26 → Q3 TU Oct-26"
    },
    {
     "sev": "amber",
-    "type": "New caution",
-    "text": "Demand Flexibility: Mar-26 to Jul-26 every guide carried “with the potential for further significant outperformance dependent on Demand Flexibility” → now dropped, and the interim flags changes “reducing recurring revenue per EV charger towards a sustainable level early in the second half of 2026”",
-    "span": "Upside clause in Mar-26, May-26, Jun-26, Jul-26 → first omission"
-   },
-   {
-    "sev": "amber",
-    "type": "Target dropped",
-    "text": "Low carbon revenue target: Sep-25 “continue to work towards £120m of such revenue by 2030” → now “continue to work towards £120m of such revenue”, no target date"
+    "type": "Wording vs number",
+    "text": "Core business growth: Sep-26 “revenue in our core business growing at 6.5% in the first half of the year” → Q3 “revenue growth of 3.4% in the Group’s core products”, beside “a healthy level of demand for the Group’s core products”",
+    "span": "H1 6.5% → Q3 3.4%"
    },
    {
     "sev": "grey",
-    "type": "Wording vs number",
-    "text": "“Strong momentum delivering 14.5% increase in Adjusted Operating Profit”, but adjusted free cash flow £(2.1)m vs £10.3m in H1 25, put down to “conscious inventory build in anticipation of a strong second half”; statutory operating profit flat at £11.6m"
+    "type": "Next-year view dropped",
+    "text": "Jul-26: “the Board expects Adjusted Operating Profit for 2027 to exceed current market expectations” → no 2027 view in Sep-26 or Oct-26; consensus footnote covers 2026 only",
+    "span": "Second print in a row without the FY27 view"
+   },
+   {
+    "sev": "grey",
+    "type": "Went quiet",
+    "text": "Q3-25 gave reported growth “Revenue up 19.5% in Q3 2025” and “Operating margin increased 40bps” → Q3-26 gives like-for-like growth only and margin in words: “Q3 profitability significantly ahead of the prior year”",
+    "span": "Q3 TU Nov-25 → Q3 TU Oct-26"
    }
   ]
  }

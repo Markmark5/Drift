@@ -1,8 +1,8 @@
 {
  "ticker": "ULTP",
- "v": "2026-10-21.6899",
+ "v": "2026-10-27.e278",
  "ccy": "GBX",
- "src": "Yahoo ULTP.L weekly",
+ "src": "Yahoo ULTP.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-21",
    47.7722
+  ],
+  [
+   "2026-10-23",
+   46.1
   ]
  ],
  "marks": [
@@ -1279,32 +1283,41 @@
    "s": -2,
    "q": "Looking ahead to FY27, whilst the Group continues to strengthen its commercial function, the Board expects the current backdrop of subdued consumer demand and geopolitical uncertainty to persist. As a result, while it is early in the financial year, the Board currently expects FY27 trading to be similar to FY26.",
    "file": "20260819_ULTP_Pre-Close-Trading-Update.md"
+  },
+  {
+   "d": "2026-10-27",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Current trading remains in line with market expectations. Whilst the current backdrop of subdued consumer demand and geopolitical uncertainty continues to persist, the Board is confident that the ongoing investment in the Group’s operational capabilities and commercial function will position the Group to maximise future growth opportunities.",
+   "file": "20261027_ULTP_Audited-Results-for-the-Year-Ended-31-July-2026.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-19",
-  "doc": "YE-TU",
-  "file": "20260819_ULTP_Pre-Close-Trading-Update.md",
-  "vs": "YE-TU Aug-25 · back to Aug-22 · Q3 TU May-26",
+  "rns": "2026-10-27",
+  "doc": "FY R",
+  "file": "20261027_ULTP_Audited-Results-for-the-Year-Ended-31-July-2026.md",
+  "vs": "FY R Oct-25 · YE-TU Aug-26 · H1 R Mar-26",
   "lines": [
    {
-    "sev": "red",
-    "type": "Anchor softened",
-    "text": "Last year: “Trading at the start of the current financial year is in line with market expectations.” → this year “the Board currently expects FY27 trading to be similar to FY26.”, no market anchor, against FY27 consensus EBITDA of £11.3m vs FY26 actual £10.0m",
-    "span": "New-year market anchor given Aug-22, Aug-23, Aug-24, Aug-25 → first gap in 4 years"
-   },
-   {
     "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Year-end leverage “marginally below the Group's targeted policy of 1.0x” while “The rolling 12-month average was 1.4x (FY25: 1.3x).”",
-    "span": "Rolling average first given Aug-25 at 1.3x → now worse"
+    "type": "New caution",
+    "text": "Commercial restructuring now flagged as a drag: “While this has inevitably created some disruption in the short term” → not mentioned in the Aug-26 pre-close or the Mar-26 interims",
+    "span": "First mention, Oct-26"
    },
    {
     "sev": "grey",
     "type": "Restated",
-    "text": "FY24 total revenue £155.5m in the Aug-25 pre-close table → £155.6m in the Aug-26 table; categories relabelled “3P clearance and white label” and “UP proprietary brands”",
-    "span": "Aug-25 → Aug-26"
+    "text": "FY25 cash conversion: Oct-25 “representing an 82% operating cash conversion” on £10.3m → Oct-26 review “representing an operating cash conversion of 130% (FY25: 77%)” on FY25 £9.6m, while the Oct-26 highlights still say “Operating cash conversion of 140% (FY25: 82%)”",
+    "span": "Oct-25 → Oct-26; highlights and review disagree"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Market anchor for FY27 back: Aug-26 “the Board currently expects FY27 trading to be similar to FY26” → Oct-26 “Current trading remains in line with market expectations”, with FY27 consensus EBITDA £10.1m (Aug-26 table: £11.3m)",
+    "span": "Anchor given at every FY R Oct-22 to Oct-25; gap at Aug-26 only"
    }
   ]
  }

@@ -1,8 +1,8 @@
 {
  "ticker": "SWG",
- "v": "2026-10-21.4611",
+ "v": "2026-10-27.dae5",
  "ccy": "GBX",
- "src": "Yahoo SWG.L weekly",
+ "src": "Yahoo SWG.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-21",
    71.5
+  ],
+  [
+   "2026-10-23",
+   71.0
   ]
  ],
  "marks": [
@@ -1298,38 +1302,47 @@
    "s": 1,
    "q": "As a result, revenue and adjusted EBITDA are now anticipated to be ahead of market expectations* with expected revenue of c.£42m, representing an annualised YoY increase of c.33% (FY25: £39.5m for 15-month period), and expected adjusted EBITDA of £2.5m, an annualised increase of 41% (FY25: £2.2m).",
    "file": "20260727_SWG_FY26-Trading-Update.md"
+  },
+  {
+   "d": "2026-10-27",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Strong financial foundation, combined with a growing customer base, a well-established reputation and the increasing imperative for organisations to invest in cybersecurity, positions Shearwater well to deliver FY27 results in line with market expectations.",
+   "file": "20261027_SWG_FY26-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-27",
-  "doc": "YE-TU",
-  "file": "20260727_SWG_FY26-Trading-Update.md",
-  "vs": "YE-TU Jul-25 · contract RNS Jul-26 · back to YE-TU Apr-24",
+  "rns": "2026-10-27",
+  "doc": "FY R",
+  "file": "20261027_SWG_FY26-Results.md",
+  "vs": "FY R Nov-25 · YE-TU Jul-26 · contract RNS Oct-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Next-year view dropped",
-    "text": "Last year: “provides confidence in the ongoing delivery of growth in both revenue and EBITDA in FY26” → this year FY27 only “The Board remains confident in the Group's prospects for the year ahead.”, no growth view",
-    "span": "Growth view for the next year given in YE-TU Apr-24 (“confidence in returning to growth during FY25”) and Jul-25 → first gap"
+    "type": "Pushed out",
+    "text": "Software: Nov-25 “with objective of returning Software segment of the business to growth in FY26” → Oct-26 Software “where revenue declined by 17% in the period”, now aiming to “position the Software division for a return to growth in FY27”",
+    "span": "FY26 target → FY27"
    },
    {
-    "sev": "amber",
+    "sev": "grey",
     "type": "Wording vs number",
-    "text": "Headline “ahead of market expectations” on EBITDA of £2.5m vs £2.4m consensus (c.4% beat); last year a c.10% beat (£2.2m vs £2.0m) was called “slightly ahead of market expectations”",
-    "span": "Revenue beat larger (c.£42m vs £35.5m) than the profit beat"
+    "text": "Headline “Strong organic growth and improved profitability” beside Services gross margin “which fell from 21.6% in FY25 to 18.7% in FY26”",
+    "span": "Group margin also fell FY24 → FY25 (28% → 24%)"
    },
    {
     "sev": "grey",
-    "type": "Went quiet",
-    "text": "Net cash vs consensus: Jul-01 footnote “£35.5m Revenue, £2.4m Adjusted EBITDA and £7.0m Net Cash” and cash “around 20% below market expectations” → Jul-27 footnote gives revenue and EBITDA only; net cash £5.6m shown without the comparison",
-    "span": "Jul-01 → Jul-27 2026"
+    "type": "Demoted",
+    "text": "Nov-25 highlights carried “Adjusted EPS of 3.0p per share” → Oct-26 highlights give no EPS; adjusted EPS only in note 8",
+    "span": "Nov-25 → Oct-26"
    },
    {
-    "sev": "grey",
-    "type": "Restated",
-    "text": "FY25 revenue: Jul-25 TU “expected Revenue of c.£41m” → FY26 TU comparative “FY25: £39.5m for 15-month period”",
-    "span": "Re-based by the revised revenue recognition policy in the Nov-25 results"
+    "sev": "green",
+    "type": "Back / new",
+    "text": "FY27 market anchor: Jul-26 “The Board remains confident in the Group's prospects for the year ahead.” → Oct-26 “positions Shearwater well to deliver FY27 results in line with market expectations”; Nov-25 gave only “growth in both revenue and EBITDA in FY26”",
+    "span": "First next-year market anchor in a FY R"
    }
   ]
  }

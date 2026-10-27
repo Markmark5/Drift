@@ -1,8 +1,8 @@
 {
  "ticker": "RCN",
- "v": "2026-10-19.6e6f",
+ "v": "2026-10-27.f5e9",
  "ccy": "GBX",
- "src": "Yahoo RCN.L weekly",
+ "src": "Yahoo RCN.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-19",
    88.5
+  ],
+  [
+   "2026-10-23",
+   86.6
   ]
  ],
  "marks": [
@@ -1237,38 +1241,47 @@
    "s": -1,
    "q": "Reported revenue in FY27 is expected to be stable against FY26, however, with the savings and efficiencies made across the Group, Adjusted EBITDA for FY27 is expected to be in line with current market expectations.",
    "file": "20260928_RCN_Final-Results.md"
+  },
+  {
+   "d": "2026-10-27",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is confident in delivering full-year FY27 Adjusted EBITDA of £18.4 million, in line with market expectations.",
+   "file": "20261027_RCN_H1-Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-28",
-  "doc": "FY R",
-  "file": "20260928_RCN_Final-Results.md",
-  "vs": "FY R Sep-25 · YE-TU Jun-26 · H1 R Dec-25",
+  "rns": "2026-10-27",
+  "doc": "H1 TU",
+  "file": "20261027_RCN_H1-Trading-Update.md",
+  "vs": "H1 TU Nov-25 · FY R Sep-26",
   "lines": [
-   {
-    "sev": "red",
-    "type": "Restated",
-    "text": "FY26 adjusted EBITDA: Jun-26 TU “c.£17.5 million, ahead of FY26 market expectations of £17.2 million” → Sep-26 final “Adjusted EBITDA of £17.4m (FY25: £18.8m) was in line with market expectations”, lower figure and “ahead” dropped to “in line”",
-    "span": "Jun-26 → Sep-26, same period"
-   },
-   {
-    "sev": "amber",
-    "type": "Pushed out",
-    "text": "FY27 revenue growth: Dec-25 “more ambitious revenue and earnings growth from FY27 and beyond” → Sep-26 “Reported revenue in FY27 is expected to be stable against FY26”",
-    "span": "Growth from FY27 promised Sep-25 and Dec-25 → now stable revenue"
-   },
    {
     "sev": "amber",
     "type": "Wording vs number",
-    "text": "New ARR KPI headlined as “Annual Recurring Revenue (‘ARR’) robust at £116.2m (FY25: £118.7m)”, a 2.1% fall; reported revenue £132.0m (FY25: £135.1m)",
-    "span": "ARR first disclosed Sep-26"
+    "text": "Sep-26: “Reported revenue in FY27 is expected to be stable against FY26” → Oct-26 H1 revenue “c.£63.7 million (H1 FY26: c.£66.8 million)”, down 4.6%, still called “in line with management expectations”; no full-year revenue view repeated",
+    "span": "Stable-revenue guide Sep-26 → first print after it"
+   },
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "H1 revenue explanation: Nov-25 “reflects the focus on selectively attracting and maintaining higher margin business” → Oct-26 adds “the impact of customer cancellations and the timing of new business conversion”",
+    "span": "H1 TU Nov-25 → H1 TU Oct-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Went quiet",
+    "text": "ARR: Sep-26 headline “Annual Recurring Revenue (‘ARR’) robust at £116.2m (FY25: £118.7m)” → Oct-26 footnote still defines ARR and Underlying ARR but the update gives no ARR figure",
+    "span": "Headline KPI Sep-26 → no number at the next print"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Next-year profit anchor: Sep-25 gave only “Stable revenue expectations for FY26” → Sep-26 “Adjusted EBITDA for FY27 is expected to be in line with current market expectations”",
-    "span": "Sep-25 revenue-only → Sep-26 EBITDA anchored to consensus"
+    "text": "Full-year profit guide re-quantified: Sep-26 “adjusted EBITDA is expected to be in line with current market expectations”, no figure; Nov-25 H1 TU gave no full-year view → Oct-26 “full-year FY27 Adjusted EBITDA of £18.4 million, in line with market expectations”",
+    "span": "First numeric FY EBITDA guide in an H1 TU"
    }
   ]
  }

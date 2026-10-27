@@ -1,8 +1,8 @@
 {
  "ticker": "REVB",
- "v": "2026-10-20.ead0",
+ "v": "2026-10-27.abea",
  "ccy": "GBX",
- "src": "Yahoo REVB.L weekly",
+ "src": "Yahoo REVB.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-20",
    4.5
+  ],
+  [
+   "2026-10-23",
+   4.5
   ]
  ],
  "marks": [
@@ -1308,38 +1312,35 @@
    "s": 2,
    "q": "The Company will provide greater detail in its interim results in October but at this stage the Board considers that the Group is trading comfortably ahead of market expectations.",
    "file": "20260917_REVB_Half-year-trading-update-&-Notice-of-results.md"
+  },
+  {
+   "d": "2026-10-27",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 1,
+   "q": "With a materially stronger gross margin, a lean cost base and a refreshed product pipeline, the Board remains confident that the Group is trading at the top end of the current range of market expectations* for the full year, which were upgraded following the Company’s trading update on 17 September 2026, and remains focused on delivering growth, improved profitability and cash generation beyond FY27.",
+   "file": "20261027_REVB_Half-year-Financial-Report.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-17",
-  "doc": "H1 TU",
-  "file": "20260917_REVB_Half-year-trading-update-&-Notice-of-results.md",
-  "vs": "H1 TU Oct-24 · FY R Jul-26 · back to H1 TU Sep-21",
+  "rns": "2026-10-27",
+  "doc": "H1 R",
+  "file": "20261027_REVB_Half-year-Financial-Report.md",
+  "vs": "H1 R Nov-25 · H1 TU Sep-26 (previous RNS) · FY R Jul-26",
   "lines": [
    {
-    "sev": "amber",
-    "type": "Number to words",
-    "text": "H1 revenue: Oct-24 “Total net sales in the first half of FY25 declined 20% to £72m (HY24: £90m)” → Sep-26 “revenues broadly in line with last year”, no figure",
-    "span": "H1 revenue given at H1 TU Sep-21 (£78m) and Oct-24 (£72m) → first H1 TU without it"
-   },
-   {
     "sev": "grey",
-    "type": "Went quiet",
-    "text": "Cash / net debt: Oct-24 “The Company had cash balances of £6.8m at 31 August 2024”; Jul-26 “net debt reduced to £24.7m” → no cash or net debt figure in the H1 TU",
-    "span": "Given at Aug-22 TU and Oct-24 H1 TU; interims due 27 Oct 2026"
-   },
-   {
-    "sev": "grey",
-    "type": "Number to words",
-    "text": "Gross margin: Jul-26 “from 32.2% in H1 FY2026 to 41.4% in H2 FY2026” → H1 FY27 only “a gross margin more than 10 percentage points higher”, no %",
-    "span": "FY R Jul-26 → H1 TU Sep-26"
+    "type": "Anchor softened",
+    "text": "Sep-26 “the Board considers that the Group is trading comfortably ahead of market expectations” → Oct-26 “trading at the top end of the current range of market expectations” (consensus upgraded in between), with near-term trading “Trading in September and October has been in line with the Board's expectations”",
+    "span": "Sep-26 → Oct-26"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Market anchor and a profit number are back: “The Group expects to report adjusted EBITDA of not less than £2m” for H1, and “trading comfortably ahead of market expectations”",
-    "span": "Last market-expectations anchor was Sep-22; FY R Jul-26 used “management expectations”"
+    "text": "Consensus now quantified: “adjusted EBITDA in the range of £6.0m to” £6.6m and revenue “in the range of £92.0 to £95.0 million”; net debt back after Sep-26 omitted it: “Net debt reduced by £4.5m year on year to £25.7m”",
+    "span": "No consensus figures at Nov-25 H1 R or Sep-26 TU"
    }
   ]
  }

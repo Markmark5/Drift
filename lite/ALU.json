@@ -1,8 +1,8 @@
 {
  "ticker": "ALU",
- "v": "2026-10-20.55e5",
+ "v": "2026-10-27.549f",
  "ccy": "GBX",
- "src": "Yahoo ALU.L weekly",
+ "src": "Yahoo ALU.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-20",
    231.0
+  ],
+  [
+   "2026-10-23",
+   231.0
   ]
  ],
  "marks": [
@@ -1235,38 +1239,47 @@
    "q": "We do not anticipate any meaningful near-term increase in UK construction activity levels. Despite this, we have made a positive start to FY27, with revenues for the first two months of FY27 5% higher year-on-year, and the August 2026 order book up 56% on the prior year.",
    "file": "20260915_ALU_Full-Year-Results.md",
    "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2026-10-27",
+   "doc": "AGM",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board remains confident of progress in FY27, in line with expectations, and in the Group’s ability to outperform its underlying markets and deliver significant shareholder value.",
+   "file": "20261027_ALU_AGM-Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-15",
-  "doc": "FY R",
-  "file": "20260915_ALU_Full-Year-Results.md",
-  "vs": "FY R Sep-25 · back to Sep-24 · YE-TU Jul-26",
+  "rns": "2026-10-27",
+  "doc": "AGM",
+  "file": "20261027_ALU_AGM-Trading-Update.md",
+  "vs": "AGM Oct-25 · back to Oct-23/Oct-24 · FY R Sep-26",
   "lines": [
-   {
-    "sev": "red",
-    "type": "Next-year view dropped",
-    "text": "Year-ahead growth view: Sep-24 “the Board is optimistic for another year of growth”, Sep-25 “Board remains optimistic for another successful year of growth” → Sep-26 FY27 only “The Board remains confident of improved FY27 margins, supported by restructuring benefits and operational improvements”, beside “We do not anticipate any meaningful near-term increase in UK construction activity levels.”",
-    "span": "Given Sep-24, Sep-25 → first gap"
-   },
-   {
-    "sev": "amber",
-    "type": "Pushed out",
-    "text": "Margin target: Sep-25 “medium term operating margin target range remains at 15-20%” → Sep-26 “achieving its medium-term target operating margin of 15-20% once market volumes recover” (FY26 margin 10.5%)",
-    "span": "Sep-25 → Sep-26"
-   },
-   {
-    "sev": "amber",
-    "type": "Went quiet",
-    "text": "Organic growth vs market: Sep-25 “FY25 organic revenue growth was 7.0%, well ahead of overall UK construction market growth” and “Six year revenue CAGR of 8.0%” → Sep-26 no organic growth rate, CPA comparison or CAGR; only “Excluding revenues from the CLK project, Group revenues increased by 0.4%”",
-    "span": "Organic rate given Sep-24, Sep-25 → first gap"
-   },
    {
     "sev": "grey",
     "type": "Target dropped",
-    "text": "ARP synergies: Sep-25 “expected to total an annualised £0.8m by the end of FY26” → Sep-26 no outturn against the £0.8m given",
-    "span": "Sep-25 → Sep-26"
+    "text": "Margin target: Oct-24 AGM “towards the medium term 15-20% target”, Sep-26 FY R “reaffirms its medium-term operating margin target range of 15-20%” → Oct-26 only “Margins have also improved year-on-year as expected”, no margin figure or target",
+    "span": "Oct-24, Sep-25, Sep-26 → Oct-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Q1 revenue quantified: Oct-23/Oct-24/Oct-25 AGMs gave no Q1 revenue figure → Oct-26 “Group revenues for Q1 FY27 were 10% ahead of Q1 FY26”, with a divisional split",
+    "span": "First quantified AGM revenue in 3 years"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Order book: Oct-25 “despite a healthy order book and a growing pipeline of opportunities” → Oct-26 “at the end of September 2026 stood 67% higher than twelve months ago”",
+    "span": "Oct-25 → Oct-26 (Sep-26 FY R: up 56%)"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Anchor: Oct-25 “the Board believes it prudent to adopt a cautious approach for the first half of FY25/26”, Sep-26 FY R no expectations anchor → Oct-26 “The Board remains confident of progress in FY27, in line with expectations”",
+    "span": "Oct-25, Sep-26 → Oct-26"
    }
   ]
  }

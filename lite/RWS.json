@@ -1,8 +1,8 @@
 {
  "ticker": "RWS",
- "v": "2026-10-21.ddcf",
+ "v": "2026-10-27.6411",
  "ccy": "GBX",
- "src": "Yahoo RWS.L weekly",
+ "src": "Yahoo RWS.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-21",
    155.5
+  ],
+  [
+   "2026-10-23",
+   142.4
   ]
  ],
  "marks": [
@@ -1282,38 +1286,47 @@
    "s": -1,
    "q": "The Group has made a good start to the second half and continues to trade in line with expectations for the full year. Current FX rates, after hedging, are expected to have a c.£2m adverse impact on full year PBT, alongside the anticipated £1m in-year impact from the Obviously acquisition which is expected to start contributing during FY27.",
    "file": "20260611_RWS_Half-year-Financial-Report.md"
+  },
+  {
+   "d": "2026-10-27",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group expects to deliver adjusted Profit before Tax (“PBT”)² in line with market expectations, c.9% ahead of prior year (even with the impact of the £1m loss from Obviously Group in the period) and an adjusted PBT margin² of c.9.4% (FY25: 8.8%).",
+   "file": "20261027_RWS_Trading-Statement.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-06-11",
-  "doc": "H1 R",
-  "file": "20260611_RWS_Half-year-Financial-Report.md",
-  "vs": "H1 R Jun-25 · H1 TU Apr-26 (previous outlook RNS) · FY R Dec-25",
+  "rns": "2026-10-27",
+  "doc": "YE-TU",
+  "file": "20261027_RWS_Trading-Statement.md",
+  "vs": "YE-TU Oct-25 · H1 R Jun-26 · FY R Dec-25 (FY26 guide)",
   "lines": [
    {
-    "sev": "red",
-    "type": "Number to words",
-    "text": "FY26 margin guide was “Moderate margin expansion, with gross margin expected to expand by c.150bps” (Dec-25) → now only “improving profitability”, while H1 “The gross margin of 41.6% was 1.7 percentage points lower than the prior year”",
-    "span": "Numeric at Dec-25 → words at Apr-26 and Jun-26"
-   },
-   {
-    "sev": "red",
-    "type": "Anchor softened",
-    "text": "Apr-26: “in line with market expectations and existing guidance” → Jun-26: “continue to trade in line with expectations for the full year”, no ‘market’, beside new PBT drags: “Current FX rates, after hedging, are expected to have a c.£2m adverse impact on full year PBT” plus £1m from Obviously",
-    "span": "Apr-26 → Jun-26"
+    "sev": "amber",
+    "type": "Target dropped",
+    "text": "FY26 guide Dec-25: “gross margin expected to expand by c.150bps”; H1 “The gross margin of 41.6% was 1.7 percentage points lower than the prior year” → year-end update gives no gross margin, only “an adjusted PBT margin² of c.9.4% (FY25: 8.8%)”",
+    "span": "Guided Dec-25 → silent at year end"
    },
    {
     "sev": "amber",
-    "type": "Went quiet",
-    "text": "SaaS share of licences, called “a core KPI” at FY25 (46%) and “The proportion of SaaS licences in the division grew to 43%” at H1-25 → no SaaS figure anywhere in the H1-26 report",
-    "span": "Given H1-25, FY25 → first gap"
+    "type": "Wording vs number",
+    "text": "“all three segments delivered revenues in line with our expectations” beside “Transform: mid-single digit OCC¹ revenue decline”, the weak end of the Dec-25 guide “Transform expected to deliver a low to mid-single digit decline”, with parts of the client portfolio rationalised",
+    "span": "Dec-25 guide → Oct-26 outturn"
    },
    {
     "sev": "grey",
-    "type": "Restated",
-    "text": "Retention metric redefined and moved out of the highlights: H1-25 “94% repeat services revenue (H1 FY24: 93%)” → H1-26 “109% net repeat revenue in services² (HY25: 97%)”, so HY25 now shows 97% not 94%; highlights say only “Maintained high levels of client retention and satisfaction.”",
-    "span": "H1-25, FY25 → H1-26"
+    "type": "Number to words",
+    "text": "Oct-25 YE-TU gave a figure: “adjusted PBT² of c.£60m” → Oct-26 gives no £ figure, only “c.9% ahead of prior year” and a margin",
+    "span": "YE-TU Oct-25 → YE-TU Oct-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Market anchor restored: Jun-26 “continues to trade in line with expectations for the full year” → Oct-26 “in line with market expectations, c.9% ahead of prior year”",
+    "span": "H1 R Jun-26 → YE-TU Oct-26"
    }
   ]
  }

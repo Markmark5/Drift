@@ -1,8 +1,8 @@
 {
  "ticker": "BTG",
- "v": "2026-10-20.7f3a",
+ "v": "2026-10-27.3052",
  "ccy": "GBX",
- "src": "Yahoo BTG.L weekly",
+ "src": "Yahoo BTG.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-20",
    109.5
+  ],
+  [
+   "2026-10-23",
+   111.5
   ]
  ],
  "marks": [
@@ -1328,28 +1332,16 @@
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-16",
-  "doc": "AGM",
-  "file": "20260916_BTG_AGM-Statement.md",
-  "vs": "AGM Sep-25 · back to Sep-23/Sep-24 · FY R Jul-26",
+  "rns": "2026-10-27",
+  "doc": "OPS",
+  "file": "20261027_BTG_Latest-Red-Flag-Alert-for-Q3-2026.md",
+  "vs": "Red Flag Alert Q3-25 (Oct-25) · prev Red Flag Q2-26 (Aug-26)",
   "lines": [
    {
-    "sev": "amber",
-    "type": "Number to words",
-    "text": "Q1 growth: Sep-23 and Sep-24 AGMs “reporting double digit growth in both revenue and adjusted profits” → Sep-26 “revenue and adjusted profits showing encouraging growth over the comparative period”, no rate",
-    "span": "Given Sep-23, Sep-24; absent Sep-25 → second year without the rate"
-   },
-   {
     "sev": "grey",
-    "type": "Pushed out",
-    "text": "Revenue target: Sep-25 AGM and Jul-26 FY R “medium-term revenue target of £200m” → Sep-26 “continued progress towards our revenue target of £200m”, time frame dropped",
-    "span": "Sep-25, Jul-26 → Sep-26"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Anchor: Jul-26 FY R “Expect to deliver a further year of growth in line with our expectations4” → Sep-26 “we remain confident of delivering market expectations* for the full year”, market wording back with consensus footnote (revenue £179.9m, adjusted PBT £26.7m)",
-    "span": "Jul-26 → Sep-26"
+    "type": "Demoted",
+    "text": "‘Critical’ distress led the release: Oct-25 “The number of businesses in 'critical' financial distress surged 78.0% year-on-year”, Aug-26 “the number of UK businesses in 'critical' financial distress increased by 9.0% year-on-year” → Oct-26 headline switched to ‘significant’ distress; critical moved to the fourth bullet: “‘Critical’ financial distress in Q3 2026 fell 20.7% year-on-year to 44,033 businesses”",
+    "span": "Research release, no group trading content; Oct-25, Aug-26 → Oct-26"
    }
   ]
  }

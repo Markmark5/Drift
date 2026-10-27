@@ -1,8 +1,8 @@
 {
  "ticker": "LBG",
- "v": "2026-10-21.8e4d",
+ "v": "2026-10-27.4d89",
  "ccy": "GBX",
- "src": "Yahoo LBG.L weekly",
+ "src": "Yahoo LBG.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1020,6 +1020,10 @@
   [
    "2026-10-21",
    37.1
+  ],
+  [
+   "2026-10-23",
+   35.5
   ]
  ],
  "marks": [
@@ -1193,38 +1197,35 @@
    "s": -3,
    "q": "While Direct continues to see a healthy pipeline and improving deal margins, the trends in Indirect have not stabilised as quickly as anticipated. As a result, the Board now expects FY26 revenue of £100m to £107m and Adjusted EBITDA in a range of £15m to £20m.",
    "file": "20260609_LBG_Half-year-results.md"
+  },
+  {
+   "d": "2026-10-27",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Revenue and profit in line with expectations: revenue is expected to be approximately £106.0m (FY25 £92.2m), up 16% at constant currency; on an organic basis, revenue grew by 8%1.",
+   "file": "20261027_LBG_Trading-Statement.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-06-09",
-  "doc": "H1 R",
-  "file": "20260609_LBG_Half-year-results.md",
-  "vs": "H1 R Jun-25 · H1 TU Apr-26",
+  "rns": "2026-10-27",
+  "doc": "YE-TU",
+  "file": "20261027_LBG_Trading-Statement.md",
+  "vs": "YE-TU Oct-25 · H1 R Jun-26 · Acquisition RNS Jun-26 (previous RNS)",
   "lines": [
    {
-    "sev": "red",
-    "type": "Anchor softened",
-    "text": "FY26 EBITDA: Apr-26 point guide “we expect Group FY26 EBITDA to be c.£22m” → Jun-26 “Adjusted EBITDA in a range of £15m to £20m”, with “the low end of the EBITDA range cited above reflects a continuation of the current monthly trend”",
-    "span": "Point estimate → £5m-wide range within 7 weeks"
-   },
-   {
     "sev": "amber",
-    "type": "Restated",
-    "text": "$1m clients: Jun-25 “including 17 clients with more than $1m annual revenues” → Jun-26 “We now have 16 clients delivering more than $1m in revenue annually (1H25: 12)”",
-    "span": "Same KPI, prior-year figure now shown as 12 not 17"
+    "type": "Wording vs number",
+    "text": "Headline “Performance in line with FY26 market expectations” beside “on an organic basis adjusted EBITDA declined 40%1”: organic EBITDA c.£15.0m (£16.5m less Uncovered £1.5m) sits at the floor of Jun-26 “Adjusted EBITDA in a range of £15m to £20m”",
+    "span": "Jun-26: low end = “a continuation of the current monthly trend”"
    },
    {
     "sev": "grey",
-    "type": "Demoted",
-    "text": "Jun-25 table led with Total Group Revenue 43.9 → Jun-26 led by “Adjusted Group Revenue1” 53.6 (constant currency), reported Total Group Revenue 52.4 shown below the Direct/Indirect split",
-    "span": "New adjusted measure first used Jun-26"
-   },
-   {
-    "sev": "grey",
-    "type": "Number to words",
-    "text": "Audience: Jun-25 “global audience up to 520m (FY24: 503m)” → Jun-26 “global audience5 of c.0.5bn”, no growth figure",
-    "span": "Apr-26 also “Global audience of c.0.5bn (FY25: 0.5bn)”"
+    "type": "Went quiet",
+    "text": "Cash conversion: Oct-25 YE-TU “with cash conversion of 90%2”; Jun-26 H1 R 63% → Oct-26 net debt only, no cash conversion figure",
+    "span": "Given at Jan-25, Jun-25, Oct-25, Feb-26, Jun-26 → gap Oct-26"
    }
   ]
  }
