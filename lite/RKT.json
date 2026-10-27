@@ -1,0 +1,1282 @@
+{
+ "ticker": "RKT",
+ "v": "2026-10-27.f338",
+ "ccy": "GBX",
+ "src": "AlphaVantage RKT.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-22",
+   5514.9998
+  ],
+  [
+   "2021-10-29",
+   5925.0
+  ],
+  [
+   "2021-11-05",
+   6030.0
+  ],
+  [
+   "2021-11-12",
+   6242.0002
+  ],
+  [
+   "2021-11-19",
+   6248.0002
+  ],
+  [
+   "2021-11-26",
+   6186.0
+  ],
+  [
+   "2021-12-03",
+   6185.0002
+  ],
+  [
+   "2021-12-10",
+   6170.0002
+  ],
+  [
+   "2021-12-17",
+   6230.0002
+  ],
+  [
+   "2021-12-24",
+   6273.9998
+  ],
+  [
+   "2021-12-31",
+   6342.0
+  ],
+  [
+   "2022-01-07",
+   6299.0002
+  ],
+  [
+   "2022-01-14",
+   6195.0
+  ],
+  [
+   "2022-01-21",
+   6444.0
+  ],
+  [
+   "2022-01-28",
+   6044.0002
+  ],
+  [
+   "2022-02-04",
+   5810.0002
+  ],
+  [
+   "2022-02-11",
+   5894.0002
+  ],
+  [
+   "2022-02-18",
+   6273.0
+  ],
+  [
+   "2022-02-25",
+   6329.0002
+  ],
+  [
+   "2022-03-04",
+   5780.0002
+  ],
+  [
+   "2022-03-11",
+   5675.0002
+  ],
+  [
+   "2022-03-18",
+   5888.0002
+  ],
+  [
+   "2022-03-25",
+   5450.0002
+  ],
+  [
+   "2022-04-01",
+   6009.9998
+  ],
+  [
+   "2022-04-08",
+   5958.0
+  ],
+  [
+   "2022-04-14",
+   6056.0002
+  ],
+  [
+   "2022-04-22",
+   6138.0
+  ],
+  [
+   "2022-04-29",
+   6240.0
+  ],
+  [
+   "2022-05-06",
+   6324.0
+  ],
+  [
+   "2022-05-13",
+   6458.0002
+  ],
+  [
+   "2022-05-20",
+   6242.0002
+  ],
+  [
+   "2022-05-27",
+   6117.9998
+  ],
+  [
+   "2022-06-01",
+   6180.0
+  ],
+  [
+   "2022-06-10",
+   6042.0
+  ],
+  [
+   "2022-06-17",
+   6018.0
+  ],
+  [
+   "2022-06-24",
+   6246.0
+  ],
+  [
+   "2022-07-01",
+   6228.0
+  ],
+  [
+   "2022-07-08",
+   6246.0
+  ],
+  [
+   "2022-07-15",
+   6422.0002
+  ],
+  [
+   "2022-07-22",
+   6267.9998
+  ],
+  [
+   "2022-07-29",
+   6645.9998
+  ],
+  [
+   "2022-08-05",
+   6609.9998
+  ],
+  [
+   "2022-08-12",
+   6507.9998
+  ],
+  [
+   "2022-08-19",
+   6674.0002
+  ],
+  [
+   "2022-08-26",
+   6579.9998
+  ],
+  [
+   "2022-09-02",
+   6399.9998
+  ],
+  [
+   "2022-09-09",
+   6567.9998
+  ],
+  [
+   "2022-09-16",
+   6260.0002
+  ],
+  [
+   "2022-09-23",
+   6000.0
+  ],
+  [
+   "2022-09-30",
+   5976.0
+  ],
+  [
+   "2022-10-07",
+   5910.0
+  ],
+  [
+   "2022-10-14",
+   5808.0
+  ],
+  [
+   "2022-10-21",
+   5934.0
+  ],
+  [
+   "2022-10-28",
+   5678.0002
+  ],
+  [
+   "2022-11-04",
+   5738.0002
+  ],
+  [
+   "2022-11-11",
+   5556.0
+  ],
+  [
+   "2022-11-18",
+   5811.9998
+  ],
+  [
+   "2022-11-25",
+   5900.0002
+  ],
+  [
+   "2022-12-02",
+   6038.0002
+  ],
+  [
+   "2022-12-09",
+   5840.0002
+  ],
+  [
+   "2022-12-16",
+   5736.0
+  ],
+  [
+   "2022-12-23",
+   5709.9998
+  ],
+  [
+   "2022-12-30",
+   5754.0
+  ],
+  [
+   "2023-01-06",
+   5862.0
+  ],
+  [
+   "2023-01-13",
+   6008.0002
+  ],
+  [
+   "2023-01-20",
+   5802.0
+  ],
+  [
+   "2023-01-27",
+   5583.9998
+  ],
+  [
+   "2023-02-03",
+   5805.9998
+  ],
+  [
+   "2023-02-10",
+   5672.0002
+  ],
+  [
+   "2023-02-17",
+   5775.9998
+  ],
+  [
+   "2023-02-24",
+   5814.0
+  ],
+  [
+   "2023-03-03",
+   5874.0
+  ],
+  [
+   "2023-03-10",
+   5750.0002
+  ],
+  [
+   "2023-03-17",
+   5810.0002
+  ],
+  [
+   "2023-03-24",
+   6104.0002
+  ],
+  [
+   "2023-03-31",
+   6158.0002
+  ],
+  [
+   "2023-04-06",
+   6230.0002
+  ],
+  [
+   "2023-04-14",
+   6285.9998
+  ],
+  [
+   "2023-04-21",
+   6471.9998
+  ],
+  [
+   "2023-04-28",
+   6429.9998
+  ],
+  [
+   "2023-05-05",
+   6434.0002
+  ],
+  [
+   "2023-05-12",
+   6489.9998
+  ],
+  [
+   "2023-05-19",
+   6501.9998
+  ],
+  [
+   "2023-05-26",
+   6416.0002
+  ],
+  [
+   "2023-06-02",
+   6308.0002
+  ],
+  [
+   "2023-06-09",
+   6033.9998
+  ],
+  [
+   "2023-06-16",
+   6069.9998
+  ],
+  [
+   "2023-06-23",
+   6081.9998
+  ],
+  [
+   "2023-06-30",
+   5912.0002
+  ],
+  [
+   "2023-07-07",
+   5742.0
+  ],
+  [
+   "2023-07-14",
+   5784.0
+  ],
+  [
+   "2023-07-21",
+   5934.0
+  ],
+  [
+   "2023-07-28",
+   5901.9998
+  ],
+  [
+   "2023-08-04",
+   5622.0
+  ],
+  [
+   "2023-08-11",
+   5778.0
+  ],
+  [
+   "2023-08-18",
+   5654.0002
+  ],
+  [
+   "2023-08-25",
+   5688.0
+  ],
+  [
+   "2023-09-01",
+   5709.9998
+  ],
+  [
+   "2023-09-08",
+   5805.9998
+  ],
+  [
+   "2023-09-15",
+   5762.0002
+  ],
+  [
+   "2023-09-22",
+   5877.9998
+  ],
+  [
+   "2023-09-29",
+   5793.9998
+  ],
+  [
+   "2023-10-06",
+   5727.9998
+  ],
+  [
+   "2023-10-13",
+   5853.9998
+  ],
+  [
+   "2023-10-20",
+   5942.0002
+  ],
+  [
+   "2023-10-27",
+   5451.9998
+  ],
+  [
+   "2023-11-03",
+   5412.0
+  ],
+  [
+   "2023-11-10",
+   5492.0002
+  ],
+  [
+   "2023-11-17",
+   5396.0002
+  ],
+  [
+   "2023-11-24",
+   5406.0
+  ],
+  [
+   "2023-12-01",
+   5415.9998
+  ],
+  [
+   "2023-12-08",
+   5394.0
+  ],
+  [
+   "2023-12-15",
+   5442.0
+  ],
+  [
+   "2023-12-22",
+   5442.0
+  ],
+  [
+   "2023-12-29",
+   5420.0002
+  ],
+  [
+   "2024-01-05",
+   5511.9998
+  ],
+  [
+   "2024-01-12",
+   5637.9998
+  ],
+  [
+   "2024-01-19",
+   5580.0
+  ],
+  [
+   "2024-01-26",
+   5658.0
+  ],
+  [
+   "2024-02-02",
+   5714.0002
+  ],
+  [
+   "2024-02-09",
+   5750.0002
+  ],
+  [
+   "2024-02-16",
+   5766.0
+  ],
+  [
+   "2024-02-23",
+   5822.0002
+  ],
+  [
+   "2024-03-01",
+   5144.0002
+  ],
+  [
+   "2024-03-08",
+   5163.9998
+  ],
+  [
+   "2024-03-15",
+   4485.9998
+  ],
+  [
+   "2024-03-22",
+   4406.0002
+  ],
+  [
+   "2024-03-28",
+   4512.0
+  ],
+  [
+   "2024-04-05",
+   4275.0
+  ],
+  [
+   "2024-04-12",
+   4200.0
+  ],
+  [
+   "2024-04-19",
+   4167.0
+  ],
+  [
+   "2024-04-26",
+   4422.9998
+  ],
+  [
+   "2024-05-03",
+   4476.0
+  ],
+  [
+   "2024-05-10",
+   4596.9998
+  ],
+  [
+   "2024-05-17",
+   4593.0
+  ],
+  [
+   "2024-05-24",
+   4412.0002
+  ],
+  [
+   "2024-05-31",
+   4452.0
+  ],
+  [
+   "2024-06-07",
+   4506.0
+  ],
+  [
+   "2024-06-14",
+   4392.9998
+  ],
+  [
+   "2024-06-21",
+   4428.0
+  ],
+  [
+   "2024-06-28",
+   4281.9998
+  ],
+  [
+   "2024-07-05",
+   4274.0002
+  ],
+  [
+   "2024-07-12",
+   4362.9998
+  ],
+  [
+   "2024-07-19",
+   4391.0002
+  ],
+  [
+   "2024-07-26",
+   4485.9998
+  ],
+  [
+   "2024-08-02",
+   4149.9998
+  ],
+  [
+   "2024-08-09",
+   4179.9998
+  ],
+  [
+   "2024-08-16",
+   4272.0
+  ],
+  [
+   "2024-08-23",
+   4314.0
+  ],
+  [
+   "2024-08-30",
+   4365.9998
+  ],
+  [
+   "2024-09-06",
+   4538.0002
+  ],
+  [
+   "2024-09-13",
+   4598.0002
+  ],
+  [
+   "2024-09-20",
+   4514.0002
+  ],
+  [
+   "2024-09-27",
+   4692.9998
+  ],
+  [
+   "2024-10-04",
+   4557.0
+  ],
+  [
+   "2024-10-11",
+   4626.0
+  ],
+  [
+   "2024-10-18",
+   4776.0
+  ],
+  [
+   "2024-10-25",
+   4848.9998
+  ],
+  [
+   "2024-11-01",
+   4994.0002
+  ],
+  [
+   "2024-11-08",
+   4766.0002
+  ],
+  [
+   "2024-11-15",
+   4764.9998
+  ],
+  [
+   "2024-11-22",
+   4847.0002
+  ],
+  [
+   "2024-11-29",
+   4860.0
+  ],
+  [
+   "2024-12-06",
+   4709.0002
+  ],
+  [
+   "2024-12-13",
+   4857.0
+  ],
+  [
+   "2024-12-20",
+   4808.0002
+  ],
+  [
+   "2024-12-24",
+   4815.9998
+  ],
+  [
+   "2024-12-27",
+   4827.9998
+  ],
+  [
+   "2025-01-03",
+   4869.0
+  ],
+  [
+   "2025-01-10",
+   4950.0
+  ],
+  [
+   "2025-01-17",
+   5013.9998
+  ],
+  [
+   "2025-01-24",
+   5072.0002
+  ],
+  [
+   "2025-01-31",
+   5330.0002
+  ],
+  [
+   "2025-02-07",
+   5253.9998
+  ],
+  [
+   "2025-02-14",
+   5216.0002
+  ],
+  [
+   "2025-02-21",
+   5262.0
+  ],
+  [
+   "2025-02-28",
+   5240.0002
+  ],
+  [
+   "2025-03-07",
+   5418.0
+  ],
+  [
+   "2025-03-14",
+   5133.9998
+  ],
+  [
+   "2025-03-21",
+   5193.9998
+  ],
+  [
+   "2025-03-28",
+   5232.0
+  ],
+  [
+   "2025-04-04",
+   5082.0
+  ],
+  [
+   "2025-04-11",
+   4766.0002
+  ],
+  [
+   "2025-04-17",
+   4910.0002
+  ],
+  [
+   "2025-04-25",
+   4632.9998
+  ],
+  [
+   "2025-05-02",
+   4976.0002
+  ],
+  [
+   "2025-05-09",
+   4875.9998
+  ],
+  [
+   "2025-05-16",
+   4850.0002
+  ],
+  [
+   "2025-05-23",
+   4929.0
+  ],
+  [
+   "2025-05-30",
+   5031.9998
+  ],
+  [
+   "2025-06-06",
+   5108.0002
+  ],
+  [
+   "2025-06-13",
+   5096.0002
+  ],
+  [
+   "2025-06-20",
+   5109.9998
+  ],
+  [
+   "2025-06-27",
+   4943.0002
+  ],
+  [
+   "2025-07-04",
+   5060.0002
+  ],
+  [
+   "2025-07-11",
+   5016.0
+  ],
+  [
+   "2025-07-18",
+   5012.0002
+  ],
+  [
+   "2025-07-25",
+   5583.9998
+  ],
+  [
+   "2025-08-01",
+   5570.0002
+  ],
+  [
+   "2025-08-08",
+   5433.9998
+  ],
+  [
+   "2025-08-15",
+   5457.9998
+  ],
+  [
+   "2025-08-22",
+   5595.9998
+  ],
+  [
+   "2025-08-29",
+   5529.9998
+  ],
+  [
+   "2025-09-05",
+   5709.9998
+  ],
+  [
+   "2025-09-12",
+   5769.9998
+  ],
+  [
+   "2025-09-19",
+   5700.0
+  ],
+  [
+   "2025-09-26",
+   5528.0002
+  ],
+  [
+   "2025-10-03",
+   5664.0
+  ],
+  [
+   "2025-10-10",
+   5766.0
+  ],
+  [
+   "2025-10-17",
+   5910.0
+  ],
+  [
+   "2025-10-24",
+   5888.0002
+  ],
+  [
+   "2025-10-31",
+   5816.0002
+  ],
+  [
+   "2025-11-07",
+   5859.9998
+  ],
+  [
+   "2025-11-14",
+   5850.0
+  ],
+  [
+   "2025-11-21",
+   5907.9998
+  ],
+  [
+   "2025-11-28",
+   5852.0002
+  ],
+  [
+   "2025-12-05",
+   5967.9998
+  ],
+  [
+   "2025-12-12",
+   6000.0
+  ],
+  [
+   "2025-12-19",
+   6080.0002
+  ],
+  [
+   "2025-12-24",
+   5978.0002
+  ],
+  [
+   "2026-01-02",
+   5982.0
+  ],
+  [
+   "2026-01-09",
+   6176.0002
+  ],
+  [
+   "2026-01-16",
+   6116.0002
+  ],
+  [
+   "2026-01-23",
+   6018.0
+  ],
+  [
+   "2026-01-30",
+   6092.0002
+  ],
+  [
+   "2026-02-06",
+   6400.0
+  ],
+  [
+   "2026-02-13",
+   6468.0
+  ],
+  [
+   "2026-02-20",
+   6416.0
+  ],
+  [
+   "2026-02-27",
+   6512.0
+  ],
+  [
+   "2026-03-06",
+   5580.0
+  ],
+  [
+   "2026-03-13",
+   5356.0
+  ],
+  [
+   "2026-03-20",
+   5096.0
+  ],
+  [
+   "2026-03-27",
+   5164.0
+  ],
+  [
+   "2026-04-02",
+   5188.0
+  ],
+  [
+   "2026-04-10",
+   5160.0
+  ],
+  [
+   "2026-04-17",
+   5180.0
+  ],
+  [
+   "2026-04-24",
+   4773.0
+  ],
+  [
+   "2026-05-01",
+   4713.0
+  ],
+  [
+   "2026-05-08",
+   4671.0
+  ],
+  [
+   "2026-05-15",
+   4597.0
+  ],
+  [
+   "2026-05-22",
+   4673.0
+  ],
+  [
+   "2026-05-29",
+   4591.0
+  ],
+  [
+   "2026-06-05",
+   4549.0
+  ],
+  [
+   "2026-06-12",
+   4638.0
+  ],
+  [
+   "2026-06-19",
+   4614.0
+  ],
+  [
+   "2026-06-26",
+   4931.0
+  ],
+  [
+   "2026-07-03",
+   5112.0
+  ],
+  [
+   "2026-07-10",
+   5018.0
+  ],
+  [
+   "2026-07-17",
+   5086.0
+  ],
+  [
+   "2026-07-24",
+   4950.0
+  ],
+  [
+   "2026-07-31",
+   5240.0
+  ],
+  [
+   "2026-08-07",
+   5306.0
+  ],
+  [
+   "2026-08-14",
+   5114.0
+  ],
+  [
+   "2026-08-21",
+   5142.0
+  ],
+  [
+   "2026-08-28",
+   5132.0
+  ],
+  [
+   "2026-09-04",
+   5114.0
+  ],
+  [
+   "2026-09-11",
+   5000.0
+  ],
+  [
+   "2026-09-18",
+   4928.0
+  ],
+  [
+   "2026-09-25",
+   4905.0
+  ],
+  [
+   "2026-10-02",
+   4925.0
+  ],
+  [
+   "2026-10-09",
+   5132.0
+  ],
+  [
+   "2026-10-16",
+   5584.0
+  ],
+  [
+   "2026-10-23",
+   5536.0
+  ],
+  [
+   "2026-10-26",
+   5484.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2022-02-17",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "We are therefore targeting both growth in LFL net revenue and an increase in adjusted operating margin in 2022, despite an unprecedented inflationary environment and ongoing uncertainties created by COVID.",
+   "file": "20220217_RKT_Reckitt-FY-2021-Results.md"
+  },
+  {
+   "d": "2022-04-29",
+   "doc": "Q1 R",
+   "fy": "FY22",
+   "g": "CUT",
+   "s": -1,
+   "q": "Following a strong start to the year, we now expect LFL net revenue growth towards the upper end of our guidance of +1-4%.  Despite significant cost inflation, we expect adjusted operating margins in-line with prior year and current market expectations.",
+   "file": "20220429_RKT_1st-Quarter-Results.md"
+  },
+  {
+   "d": "2022-07-27",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Following a strong H1 we are increasing our expectations for 2022.  We now expect LFL net revenue growth of +5 - 8% for 2022, and growth in adjusted operating margins.",
+   "file": "20220727_RKT_Half-year-Results.md"
+  },
+  {
+   "d": "2022-10-26",
+   "doc": "Q3 R",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Following a strong YTD performance, we reiterate our full year LFL net revenue targets, but narrow the range to +6% to +8% for 2022 (previously +5% to +8%).",
+   "file": "20221026_RKT_3rd-Quarter-Results.md"
+  },
+  {
+   "d": "2023-03-01",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "We expect adjusted operating margins to be in line with or slightly above 2022 levels when excluding the one-off benefit of circa 80bps in 2022 related to US Nutrition.",
+   "file": "20230301_RKT_Final-Results.md"
+  },
+  {
+   "d": "2023-04-26",
+   "doc": "Q1 TU",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 1,
+   "q": "We continue to expect more challenging competitive dynamics in our US Nutrition business in future quarters.  We therefore target Group LFL net revenue growth of +3% to +5% in 2023 (including the lapping of the US Nutrition impact in 2022).",
+   "file": "20230426_RKT_Q1-Trading-Statement.md"
+  },
+  {
+   "d": "2023-07-26",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "RAISE",
+   "s": 1,
+   "q": "We now expect adjusted operating margins to be slightly above 2022 levels (previously \"in line with or slightly above 2022 levels\") when excluding the one-off benefit of circa 80bps in 2022 related to US Nutrition.",
+   "file": "20230726_RKT_Half-year-Report.md"
+  },
+  {
+   "d": "2023-10-25",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -2,
+   "q": "In the medium-term, as set out in our strategic update, we target sustainable mid-single digit LFL net revenue growth and adjusted operating profit growth to exceed net revenue growth. (Previously, \"we expect adjusted operating profit to grow ahead of net revenue growth, achieving mid-20s margins by the mid-2020s\".)",
+   "file": "20231025_RKT_Q3-Trading-Statement.md"
+  },
+  {
+   "d": "2024-02-28",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "We are confident in the year ahead and expect LFL net revenue growth of +2% to +4% for the Group, with mid-single-digit growth for our Health and Hygiene portfolios.",
+   "file": "20240228_RKT_Final-Results.md"
+  },
+  {
+   "d": "2024-04-24",
+   "doc": "Q1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "We are on track to deliver our full year revenue and profit targets, led by mid-single-digit growth across our Health and Hygiene portfolios.",
+   "file": "20240424_RKT_1st-Quarter-Results.md"
+  },
+  {
+   "d": "2024-07-24",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -3,
+   "q": "Short-term disruption to our Nutrition business, which performed above expectations in H1, due to the Mount Vernon tornado has caused us to reduce our net revenue growth outlook for the year to +1% to +3%.",
+   "file": "20240724_RKT_Half-year-Report.md"
+  },
+  {
+   "d": "2024-10-23",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "We are on track to deliver our net revenue and profit targets for 2024, with increased investment across our more competitive categories and markets, improving market share performance across our Health and Hygiene portfolios, and a normalising market environment in US Nutrition.",
+   "file": "20241023_RKT_Reckitt-Q3-2024-Trading-Update.md"
+  },
+  {
+   "d": "2025-03-06",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "Overall for 2025, we expect Group LFL net revenue growth of +2% to +4%, with Essential Home and Mead Johnson Nutrition making this a little more second half weighted.",
+   "file": "20250306_RKT_Final-Results.md",
+   "gnote": "discounted: Essential Home exit"
+  },
+  {
+   "d": "2025-04-23",
+   "doc": "Q1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Our portfolio of high-growth, high-margin Powerbrands underpins our resilience, and we maintain our outlook for full year 2025 whilst recognising the more challenging macroeconomic outlook.",
+   "file": "20250423_RKT_Q1-Results-2025.md"
+  },
+  {
+   "d": "2025-07-24",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 1,
+   "q": "While there is still much work to do, the journey to fundamentally reshape Reckitt into a more efficient, world-class health and hygiene company is well underway and reflecting that we are upgrading our LFL net revenue guidance for 2025.",
+   "file": "20250724_RKT_RESULTS-FOR-THE-SIX-MONTHS-ENDED-30-JUNE-2025.md"
+  },
+  {
+   "d": "2025-10-22",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "With our sharpened operating structure, we are executing our plan and progressing our strategic objectives to be a world-class consumer health and hygiene company. We are pleased with our performance and we are confident in delivering our full year 2025 guidance.",
+   "file": "20251022_RKT_Reckitt-Q3-2025-Trading-Update.md"
+  },
+  {
+   "d": "2026-03-05",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "We reiterate our ambition to deliver long-term, sustainable EPS growth, acknowledging in 2026 the headwind from the dilution resulting from the divestment of Essential Home",
+   "file": "20260305_RKT_RESULTS-FOR-THE-YEAR-ENDED-31-DECEMBER-2025.md",
+   "gnote": "discounted: Essential Home divestment"
+  },
+  {
+   "d": "2026-04-22",
+   "doc": "Q1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "We maintain our expectation for Group adjusted operating profit margin for FY 2026, with the delivery of this weighted to H2.",
+   "file": "20260422_RKT_Q1-RESULTS-2026.md"
+  },
+  {
+   "d": "2026-07-29",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Our Fuel for Growth programme is reducing fixed costs, driving efficiency and providing us with greater capacity to invest. We are focused on delivering our plan for the second half of the year and reiterate our full year 2026 expectations.",
+   "file": "20260729_RKT_Results-for-the-Six-Months-Ended-30-June-2026.md"
+  },
+  {
+   "d": "2026-10-27",
+   "doc": "Q3 R",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -2,
+   "q": "We have adjusted our Core Reckitt full year like-for-like net revenue guidance to +3.5% to +4.5% growth. This reflects the Lysol disruption and category slowdown in China VMS in Q3 and positive demand for our seasonal cold & flu brands in early Q4.",
+   "file": "20261027_RKT_Q3-RESULTS-2026.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-27",
+  "doc": "Q3 R",
+  "file": "20261027_RKT_Q3-RESULTS-2026.md",
+  "vs": "Q3 TU Oct-25 · H1 R Jul-26 · back to Q1-26, FY-25, H1-25, Q3-24",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Target dropped",
+    "text": "EPS guide: Q3-25 “We expect to deliver another year of adjusted diluted EPS growth.” → Q3-26 no FY26 EPS growth guide, only an ambition “acknowledging in 2026 the headwind from the dilution resulting from the divestment of Essential Home”",
+    "span": "Given FY-24, H1-25, Q3-25 → absent since FY-25 results (Essential Home disposal)"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Medium-term “consistently deliver +4% to +5% LFL net revenue growth” reiterated while FY26 Core guide cut from “+4% to +5%” (H1-26) to “+3.5% to +4.5%”, with YTD Core LFL at +2.9%",
+    "span": "H1 Jul-26 → Q3 Oct-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Input-cost (oil) impact: Q1-26 “c.£130 million - £150 million gross impact on our input cost base in 2026” → H1-26 “we currently expect a reduced input cost impact in 2026” → Q3-26 no estimate, only “selective pricing actions to address higher input costs arising from the war in the Middle East”",
+    "span": "Q1-26, H1-26 → Q3-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Number to words",
+    "text": "Market share (Top CMUs): H1-26 “45% of Core Reckitt Top CMUs are holding or gaining share” → Q3-26 “We increased the percentage of Core Reckitt Top CMU’s holding or gaining market share” with no figure",
+    "span": "51% FY-25, 45% H1-26 → no number Q3-26"
+   }
+  ]
+ }
+}

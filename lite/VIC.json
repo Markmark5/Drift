@@ -1,8 +1,8 @@
 {
  "ticker": "VIC",
- "v": "2026-10-19.674e",
+ "v": "2026-10-27.17d7",
  "ccy": "GBX",
- "src": "Yahoo VIC.L weekly",
+ "src": "Yahoo VIC.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-19",
    88.4
+  ],
+  [
+   "2026-10-23",
+   87.0
   ]
  ],
  "marks": [

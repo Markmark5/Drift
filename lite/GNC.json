@@ -1,8 +1,8 @@
 {
  "ticker": "GNC",
- "v": "2026-10-19.7345",
+ "v": "2026-10-27.5a55",
  "ccy": "GBX",
- "src": "Yahoo GNC.L weekly",
+ "src": "Yahoo GNC.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-19",
    279.4
+  ],
+  [
+   "2026-10-23",
+   285.8
   ]
  ],
  "marks": [

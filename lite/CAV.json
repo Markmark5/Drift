@@ -1,8 +1,8 @@
 {
  "ticker": "CAV",
- "v": "2026-10-19.e50e",
+ "v": "2026-10-27.5b38",
  "ccy": "GBX",
- "src": "Yahoo CAV.L weekly",
+ "src": "Yahoo CAV.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-19",
    6.957
+  ],
+  [
+   "2026-10-23",
+   6.85
   ]
  ],
  "marks": [

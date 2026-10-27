@@ -1,8 +1,8 @@
 {
  "ticker": "AEP",
- "v": "2026-10-19.7538",
+ "v": "2026-10-27.06ce",
  "ccy": "GBX",
- "src": "Yahoo AEP.L weekly",
+ "src": "Yahoo AEP.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-19",
    176.0
+  ],
+  [
+   "2026-10-23",
+   163.4
   ]
  ],
  "marks": [
