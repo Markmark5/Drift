@@ -1,8 +1,8 @@
 {
  "ticker": "ULVR",
- "v": "2026-10-21.ab7a",
+ "v": "2026-10-28.1a33",
  "ccy": "GBX",
- "src": "Yahoo ULVR.L weekly",
+ "src": "Yahoo ULVR.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-21",
    4821.5
+  ],
+  [
+   "2026-10-23",
+   4975.5
   ]
  ],
  "marks": [
@@ -1226,38 +1230,47 @@
    "s": 1,
    "q": "We expect underlying sales growth for full year 2026 to be within our multi-year guidance range of 4% to 6%, with around 3% underlying volume growth.",
    "file": "20260728_ULVR_2026-First-Half-Results.md"
+  },
+  {
+   "d": "2026-10-28",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "We now expect at least 3% underlying volume growth for full year 2026 and underlying sales growth in the second half of around 5%.",
+   "file": "20261028_ULVR_Q3-2026-Trading-Statement.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-28",
-  "doc": "H1 R",
-  "file": "20260728_ULVR_2026-First-Half-Results.md",
-  "vs": "H1 R Jul-25 · Q1 TU Apr-26",
+  "rns": "2026-10-28",
+  "doc": "Q3 TU",
+  "file": "20261028_ULVR_Q3-2026-Trading-Statement.md",
+  "vs": "Q3 TU Oct-25 · H1 R Jul-26 · Q1 TU Apr-26 · Foods deal Mar-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Gross margin: H1-25 highlight “Strong gross margin of 45.7%” → H1-26 highlight “gross margin at 46.8% with competitive brand and marketing investment at 16.1%”, while the body says “Gross margin was 70bps lower at 46.8%”",
-    "span": "Decline shown only below the highlights"
+    "type": "Number to words",
+    "text": "McCormick deal timing: Mar-26, Apr-26 and Jul-26 “We expect completion by mid-2027 at the latest” → now no date, only “reinforcing our confidence in a timely closing”",
+    "span": "Date given in 3 RNS → first omission"
    },
    {
     "sev": "amber",
     "type": "New caution",
-    "text": "Foods: no shortfall flagged at Q1-26 → now “In the second quarter, growth was below our expectations reflecting softer conditions in developed markets and increased competition in US condiments”",
-    "span": "First below-expectations flag for a Business Group in the window"
+    "text": "Wellbeing: H1-26 “Wellbeing grew low-single digit, with improved growth in the second quarter” → now “Wellbeing declined in the third quarter, partly due to shipment timings for Amazon Prime Day, and is down (1.0)% year-to-date”",
+    "span": "Q3-25 strong double-digit → first decline flagged"
    },
    {
-    "sev": "grey",
-    "type": "Demoted",
-    "text": "Free cash flow: H1-25 highlight “Free cash flow €1.1 billion, reflecting lower operating profit, Ice Cream separation costs and higher working capital” → H1-26 highlights omit it; body only: “Free cash flow in the first half of 2026 was €1.5 billion”",
-    "span": "Highlight in H1-25 → body text in H1-26"
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Condiments: H1-26 “Growth is expected to improve in the second half led by innovation and commodity-driven price increases” → Q3 “Cooking Aids and Condiments were broadly flat”, Foods USG 0.1% (H1: 1.2%)",
+    "span": "Jul-26 → Oct-26"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "USG guide raised: Apr-26 “at the bottom end of our multi-year guidance range of 4% to 6%, with at least 2% underlying volume growth for the full year” → now “within our multi-year guidance range of 4% to 6%, with around 3% underlying volume growth”, plus a new H2 guide of “4% to 5%, led by pricing”",
-    "span": "Apr-26 → Jul-26"
+    "text": "Volume and H2 guide raised: Jul-26 “with around 3% underlying volume growth” and “We expect underlying sales growth in the second half of 4% to 5%, led by pricing” → now “We now expect at least 3% underlying volume growth for full year 2026 and underlying sales growth in the second half of around 5%.”",
+    "span": "Margin guide unchanged (modest improvement vs 20.0%)"
    }
   ]
  }

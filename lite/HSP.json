@@ -1,8 +1,8 @@
 {
  "ticker": "HSP",
- "v": "2026-10-21.ed9e",
+ "v": "2026-10-28.9c02",
  "ccy": "GBX",
- "src": "Yahoo HSP.L weekly",
+ "src": "Yahoo HSP.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-21",
    850.0
+  ],
+  [
+   "2026-10-23",
+   864.0
   ]
  ],
  "marks": [
@@ -1361,38 +1365,50 @@
    "s": -2,
    "q": "The Board expects the award of the contract will help underpin existing Group revenue and underlying profit before tax forecasts in the year ending 31 May 2027 and 31 May 2028, based on the planned phasing of the contract.",
    "file": "20261009_HSP_Engineering-project-award-at-Sizewell-C.md"
+  },
+  {
+   "d": "2026-10-22",
+   "doc": "OPS",
+   "fy": "FY29",
+   "g": "RAISE",
+   "s": 1,
+   "q": "For FY29, the Board would expect to report revenue and profit before tax moderately ahead of existing market expectations",
+   "file": "20261022_HSP_Major-contract-with-UK-Deposit-Return-Scheme.md"
+  },
+  {
+   "d": "2026-10-28",
+   "doc": "AGM",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board remains confident in the Group's prospects and expects to deliver results for the year ending 31 May 2027 in line with current market expectations.",
+   "file": "20261028_HSP_AGM-Statement-and-Notice-of-Interim-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-09",
-  "doc": "OPS",
-  "file": "20261009_HSP_Engineering-project-award-at-Sizewell-C.md",
-  "vs": "Contract award Mar-26 · prev RNS Sep-26 (DRS preferred bidder) · FY R Jul-26 · H1 R Jan-26",
+  "rns": "2026-10-28",
+  "doc": "AGM",
+  "file": "20261028_HSP_AGM-Statement-and-Notice-of-Interim-Results.md",
+  "vs": "AGM Oct-25 · back to AGM Oct-24 · prev RNS Oct-22 (Re.Group contract) · Oct-09 (Sizewell C)",
   "lines": [
-   {
-    "sev": "red",
-    "type": "Wording vs number",
-    "text": "FY27 PBT consensus: Mar-26 “underlying PBT of £23.5m”, then “upgrading market expectations* for Revenue and Profit before Tax for the year ending 31 May 2027 by 4% each” → Oct-26 “underlying PBT of £17.9m” (c.27% below the upgraded level), framed as “help underpin existing Group revenue and underlying profit before tax forecasts”",
-    "span": "FY27 raised Jan-26 (3% better) and Mar-26 (+4%); no RNS since announced a cut (Apr-26 TW update removed only the £1m FY27 instalment)"
-   },
    {
     "sev": "amber",
     "type": "Split withheld",
-    "text": "Consensus footnote: Mar-26 “revenue of £285.2m, underlying PBT of £23.5m, EPS of 50.5p and cash of £17.2m” → Oct-26 revenue and PBT only; EPS and cash dropped",
-    "span": "EPS in all 8 consensus footnotes Oct-25 to Jun-26; cash in 6 of them"
+    "text": "Divisional trading: Oct-25 “all three business units; Services, Hargreaves Land and HRMS, have performed in line with expectations throughout the first four months of the year”, with separate Land and HRMS paragraphs (“Trading at HRMS has remained stable despite the continued challenges with the German economy”) → Oct-26 group only, “with trading in line with the Board's expectations”; no Land or HRMS trading comment",
+    "span": "Unit-by-unit AGM statement Oct-24 and Oct-25 → first group-only AGM"
    },
    {
     "sev": "grey",
-    "type": "Went quiet",
-    "text": "Contract value: Mar-26 award “representing aggregate gross revenues of £10m” → Sizewell C award gives no value, only “expected to contribute revenues across FY27 to FY28”",
-    "span": "One prior headline figure (Mar-26)"
+    "type": "Anchor softened",
+    "text": "Current trading now “in line with the Board's expectations” (Oct-25: “in line with expectations”); full-year anchor kept: “expects to deliver results for the year ending 31 May 2027 in line with current market expectations”",
+    "span": "Full-year market anchor unchanged; FY27 consensus held (Oct-09 “revenue of £292.1 million and underlying PBT of £17.9m” → £292.1m, PBT £17.8m)"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "First FY28 consensus given: “revenue of £305.2 million and underlying PBT of £18.6 million”",
-    "span": "No FY28 figure in any earlier RNS"
+    "text": "Consensus footnote complete again: Oct-09 revenue and PBT only → now “EPS of 48.8p and cash of £26.3m” restored",
+    "span": "EPS and cash dropped Oct-09 → back Oct-26"
    }
   ]
  }

@@ -1,8 +1,8 @@
 {
  "ticker": "CCR",
- "v": "2026-10-20.ec58",
+ "v": "2026-10-28.b689",
  "ccy": "GBX",
- "src": "Yahoo CCR.L weekly",
+ "src": "Yahoo CCR.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-20",
    102.2
+  ],
+  [
+   "2026-10-23",
+   101.8
   ]
  ],
  "marks": [
@@ -1244,20 +1248,56 @@
    "s": 0,
    "q": "We remain on track to achieve full year operating profit in line with market expectations, albeit noting that the market conditions remain volatile and we have the important Christmas trading period ahead of us.",
    "file": "20260911_CCR_Acquisition-and-Trading-Update.md"
+  },
+  {
+   "d": "2026-09-24",
+   "doc": "OPS",
+   "fy": "FY30",
+   "g": "CUT",
+   "s": -2,
+   "q": "FY30 operating profit target of €85 million; and,",
+   "file": "20260924_CCR_Capital-Markets-Day.md"
+  },
+  {
+   "d": "2026-10-28",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "We remain on track to achieve full-year operating profit in line with market expectations, albeit noting that the market conditions remain volatile and we have the important Christmas trading period ahead of us.",
+   "file": "20261028_CCR_Interim-Results-for-6M-ended-31-August-2026.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-11",
-  "doc": "H1 TU",
-  "file": "20260911_CCR_Acquisition-and-Trading-Update.md",
-  "vs": "H1 TU Sep-25 · FY R May-26",
+  "rns": "2026-10-28",
+  "doc": "H1 R",
+  "file": "20261028_CCR_Interim-Results-for-6M-ended-31-August-2026.md",
+  "vs": "H1 R Oct-25 · CMD Sep-26 · back to Sep-24",
   "lines": [
+   {
+    "sev": "red",
+    "type": "Target dropped",
+    "text": "Medium-term operating profit target: May-25 “remain committed to achieving our target of €100m of Operating Profit over the medium term” → now operating profit target “of €85m in FY2030” (set at the Sep-26 CMD)",
+    "span": "€100m given Sep-24, Oct-24, May-25 → quiet Oct-25 to May-26 → reset lower"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Adjusted EBITDA: Oct-25 “Adjusted EBITDA up 2% to €58.1m and Operating Profit up 4% to €41.9m” → no EBITDA figure anywhere in the HY2027 interim",
+    "span": "In KPIs at Oct-24, Oct-25 interims and May-26 FY results → first gap"
+   },
    {
     "sev": "amber",
     "type": "Target dropped",
-    "text": "Capital return promise: Sep-25 “The Board remains committed to its previously disclosed distribution of €150m to shareholders over the three years to Financial Year 2027” and “To date we have distributed €84m to shareholders since the start of Financial Year 2025.” → Sep-26 no capital returns section, €150m and returns-to-date not mentioned (May-26 gave only “cumulative returns amount to €105m”)",
-    "span": "€150m restated Jun-24, Sep-24, May-25, Sep-25 → absent May-26 and Sep-26"
+    "text": "Capital returns: Oct-25 “The Board retains its previously stated intention to distribute €150m to Shareholders through a combination of dividends and share buybacks over the three fiscal years ending FY2027” → not mentioned in the FY2027 interim; May-26 said “cumulative returns amount to €105m”",
+    "span": "€150m given May-25, Oct-25 → silent May-26 and Oct-26, in its final year"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Dividend: Oct-25 “Interim dividend up 4% to 2.08c per share” → now “The interim dividend has been set at 2.00 cent per share (HY2026: 2.08 cent per share)” beside “It is the Board’s intention to pay a progressive ordinary dividend for the full-year”",
+    "span": "Second cut in a row after FY26 final 3.67c (FY2025: 4.13c)"
    }
   ]
  }

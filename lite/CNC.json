@@ -1,8 +1,8 @@
 {
  "ticker": "CNC",
- "v": "2026-10-21.1225",
+ "v": "2026-10-28.71e8",
  "ccy": "GBX",
- "src": "AlphaVantage CNC.LON weekly",
+ "src": "AlphaVantage CNC.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1060,6 +1060,10 @@
   [
    "2026-10-20",
    265.0
+  ],
+  [
+   "2026-10-23",
+   270.0
   ]
  ],
  "marks": [
@@ -1257,33 +1261,16 @@
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-07",
-  "doc": "H1 R",
-  "file": "20260907_CNC_Interim-Results.md",
-  "vs": "H1 R Sep-25 · TU Jul-26 · back to H1 R Sep-22",
+  "rns": "2026-10-28",
+  "doc": "OPS",
+  "file": "20261028_CNC_$7m-Production-Orders-from-US-Defence-Prime.md",
+  "vs": "Contract RNS Jul-26 ($9.4m) · Jun-26 (£17m) · Sep-25 ($5.25m design) · prev RNS H1 R Sep-26",
   "lines": [
    {
-    "sev": "amber",
-    "type": "New caution",
-    "text": "Gross margin held at c.51% in H1 (H1 2025: 51%) but now “there is expected to be a H2 2026 lowering of the gross margin percentage of the business in FY26”, so profit guided only “ahead” while revenue is “materially ahead”",
-    "span": "First margin-dilution flag; not in Jul-26 TU"
-   },
-   {
-    "sev": "grey",
-    "type": "Number to words",
-    "text": "Backlog: Sep-24 “Backlog remains strong at c.£24.4m” → Sep-25 “Backlog continues to grow steadily” → now “a substantially stronger backlog than at the same point last year”, no figure (order intake YTD of £68m given instead)",
-    "span": "Quantified Sep-22 (£20.3M), Sep-23 (£29M), Sep-24 → words since Sep-25"
-   },
-   {
     "sev": "green",
     "type": "Back / new",
-    "text": "Guide upgraded with a split: Jul-26 “at least deliver full year results for 2026 in line with current market expectations” → now “It is expected that revenue will be materially ahead and profit ahead”",
-    "span": "Consensus FY26 revenue £52m, PBT £8m"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Systems unit now profitable: £0.4m profit (H1 2025: £0.5m loss) and “Systems business gross margin improving, as expected” to 26.3% (H1 2025: 13.3%), first Systems margin figure"
+    "text": "Design-services customer moves into production: Jan-26 “A subsequent $1.0 million contract expansion has increased the total value to $6.2 million” → now “The total value of the programme with this customer is now $13.2m.”",
+    "span": "Sep-25 design contract → Jan-26 upsize → Oct-26 production orders; no trading statement (none in Sep-25 or Jul-26 contract RNS either)"
    }
   ]
  }

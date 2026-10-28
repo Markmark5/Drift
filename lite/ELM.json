@@ -1,8 +1,8 @@
 {
  "ticker": "ELM",
- "v": "2026-10-21.b6cd",
+ "v": "2026-10-28.e36f",
  "ccy": "GBX",
- "src": "Yahoo ELM.L weekly",
+ "src": "Yahoo ELM.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-21",
    184.0
+  ],
+  [
+   "2026-10-23",
+   182.0
   ]
  ],
  "marks": [
@@ -1288,26 +1292,47 @@
    "s": 0,
    "q": "While remaining vigilant about the potential impacts of the Middle East crisis on global demand, input costs and supply disruptions, following good progress in the first half, the Group remains confident of delivering full year performance in line with expectations1.",
    "file": "20260730_ELM_Half-year-results.md"
+  },
+  {
+   "d": "2026-10-28",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Elementis now expects FY26 adjusted operating profit of $133-135 million, slightly above its previous guidance and in line with the latest market expectations1.",
+   "file": "20261028_ELM_Third-Quarter-Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-30",
-  "doc": "H1 R",
-  "file": "20260730_ELM_Half-year-results.md",
-  "vs": "H1 R Jul-25 · Q1 TU Apr-26 · back to H1 R Aug-24",
+  "rns": "2026-10-28",
+  "doc": "Q3 TU",
+  "file": "20261028_ELM_Third-Quarter-Trading-Update.md",
+  "vs": "Q3 TU Oct-25 · back to Oct-24 · H1 R Jul-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Highlights frame net debt as down: “Net debt4 of $163.8m reduced from $185.4m since 31 December 2025”; the year-on-year rise sits in the financial review: “Net debt increased to $163.8m (H1 2025: $125.4m)”, leverage “increased to 1.1x” (H1 25: 0.9x)",
-    "span": "H1-25 highlight compared with the prior period end and showed a fall (“reduced by 36% since 31 December 2024”)"
+    "type": "Target dropped",
+    "text": "Cost-savings programme not mentioned: H1 “$0.5m net savings delivered” and “On-track to deliver total net savings of $4m by end of 2026” → no savings update this time",
+    "span": "Savings progress given at Q3 Oct-24, Q3 Oct-25, H1 Jul-26 → first Q3 gap"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Group adjusted operating margin: Q3 Oct-24 “adjusted operating margin was in line with the H1 2024 margin of 17%”, Q3 Oct-25 year-to-date margins consistent with H1 → now no margin comment (only the 23%+ medium-term target in the notes)",
+    "span": "Given at Oct-24, Oct-25 → first gap"
+   },
+   {
+    "sev": "grey",
+    "type": "Split withheld",
+    "text": "Quarter revenue: Q3 Oct-25 “up c.2% compared to the prior period” for the quarter → now only “Revenue for the nine months to 30 September 2026 increased by 7%”, no Q3-only figure",
+    "span": "Quarter growth given at Oct-23, Oct-24, Oct-25"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "New operating KPI in the interim: “On-Time, In-Full (OTIF) performance up from 83% at end 2025 to 88% at the end of June 2026”",
-    "span": "First given at FY R Mar-26 (76% → 83%); not quantified at H1-25"
+    "text": "Numeric profit guide: H1 “the Group remains confident of delivering full year performance in line with expectations” → now “Elementis now expects FY26 adjusted operating profit of $133-135 million”",
+    "span": "H1 R Jul-26 → Q3 TU Oct-26"
    }
   ]
  }

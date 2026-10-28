@@ -1,8 +1,8 @@
 {
  "ticker": "ITRK",
- "v": "2026-10-21.57d0",
+ "v": "2026-10-28.7823",
  "ccy": "GBX",
- "src": "Yahoo ITRK.L weekly",
+ "src": "Yahoo ITRK.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-21",
    5910.0
+  ],
+  [
+   "2026-10-23",
+   5920.0
   ]
  ],
  "marks": [
@@ -1063,27 +1067,23 @@
    "s": 0,
    "q": "Given our strong H1 performance, we continue to expect to deliver a strong performance in 2026 with mid-single digit LFL revenue growth at constant currency, continuing margin progression, strong earnings growth and strong free cash flow.",
    "file": "20260731_ITRK_Half-year-Financial-Report.md"
+  },
+  {
+   "d": "2026-10-28",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Our strong year to September performance underpins our confidence in delivering a strong performance in 2026, with mid-single digit LFL revenue growth at constant currency, continuous margin progression, strong earnings growth and a strong free cash flow.",
+   "file": "20261028_ITRK_Trading-Statement.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-31",
-  "doc": "H1 R",
-  "file": "20260731_ITRK_Half-year-Financial-Report.md",
-  "vs": "H1-25 comparatives in the same report (no earlier ITRK results RNS in folder)",
-  "lines": [
-   {
-    "sev": "amber",
-    "type": "Went quiet",
-    "text": "Interim dividend per share H1-25 57.3p → H1-26 none: “Intertek's Board of Directors is not, therefore, proposing an interim dividend”",
-    "span": "EQT Offer terms"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "FY26 net debt guide lowered to £800-£850m, “a reduction compared to our previous guidance of £930-£980m”",
-    "span": "strong H1 free cash flow, no interim dividend"
-   }
-  ]
+  "rns": "2026-10-28",
+  "doc": "Q3 TU",
+  "file": "20261028_ITRK_Trading-Statement.md",
+  "vs": "H1 R Jul-26 (no Q3 TS Oct-25 in folder)",
+  "lines": []
  }
 }

@@ -1,8 +1,8 @@
 {
  "ticker": "HTG",
- "v": "2026-10-21.8850",
+ "v": "2026-10-28.bcf2",
  "ccy": "GBX",
- "src": "Yahoo HTG.L weekly",
+ "src": "Yahoo HTG.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-21",
    409.0
+  ],
+  [
+   "2026-10-23",
+   389.5
   ]
  ],
  "marks": [
@@ -1342,38 +1346,47 @@
    "s": -2,
    "q": "The KOC tender process delay will have an impact of c.$10m on 2026 EBITDA, resulting in a revised 2026 EBITDA guidance range of $138-141m, slightly below previous guidance.",
    "file": "20260821_HTG_Results-for-the-six-months-ended-30-June-2026.md"
+  },
+  {
+   "d": "2026-10-28",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -2,
+   "q": "The ongoing conflict in the Middle East and some slowing of activity across other markets mean that the Group's anticipated EBITDA outturn is now likely to be in the range of $128-$133 million for the full year.",
+   "file": "20261028_HTG_Q3-2026-Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-21",
-  "doc": "H1 R",
-  "file": "20260821_HTG_Results-for-the-six-months-ended-30-June-2026.md",
-  "vs": "H1 TU Jul-26 · H1 R Aug-25 · Jan/Mar/Apr-26",
+  "rns": "2026-10-28",
+  "doc": "Q3 TU",
+  "file": "20261028_HTG_Q3-2026-Trading-Update.md",
+  "vs": "Q3 TU Oct-25 · back to Oct-22 · H1 TU Jul-26 · H1 R Aug-26",
   "lines": [
    {
     "sev": "red",
-    "type": "Anchor softened",
-    "text": "Jul-26: “Full-year EBITDA guidance of c.$145-$155 million remains in line with market expectations.” → Aug-26: “revised 2026 EBITDA guidance range of $138-141m, slightly below previous guidance”, no market-expectations anchor for 2026",
-    "span": "Market anchor in Jul-26 and Jul-25 H1 TUs → dropped five weeks after being reaffirmed"
-   },
-   {
-    "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Year-end cash: Jul-26 “Projected year-end total cash and bank position is unchanged at c.$60-$65 million” → Aug-26 “Projected year-end total cash and bank position is broadly unchanged at c.$50-$60m”",
-    "span": "Midpoint down c.$7.5m, described as broadly unchanged"
+    "type": "Next-year view dropped",
+    "text": "Aug-26 H1 R: “The Directors anticipate continued year-on-year growth into 2027 given Hunting's diversified portfolio.” (with 2027 EBITDA consensus footnote) → now no 2027 view, only “we remain confident of delivering on our strategic ambitions over the medium term”",
+    "span": "Given Aug-26 only; Q3 TU Oct-25 also carried no next-year view"
    },
    {
     "sev": "amber",
     "type": "Went quiet",
-    "text": "Tender pipeline: Jul-26 “The Group's tender pipeline remains robust at c.$1.0 billion.” → Aug-26 no tender pipeline figure (only an M&A “targeted pipeline of transactions”)",
-    "span": "Given Aug-25, Jan-26, Apr-26, Jul-26 → first gap in announcement text"
+    "text": "Order book: Oct-25 “c.$416.4 million sales order book at 30 September 2025.” and Jul-26 “Period-end sales order book of c.$387 million” → no order book figure this quarter",
+    "span": "Given in every Q3 TU Oct-22 to Oct-25 and H1 TU Jul-26 → first gap"
    },
    {
     "sev": "amber",
+    "type": "Number to words",
+    "text": "Cost savings: Jul-26 “$15 million p.a. of Group-wide cost savings on track for delivery between 2026 and 2027.” → now “The Group's cost reduction plan and restructuring continues”, no figure",
+    "span": "$15m quoted Mar-26, Apr-26, Jul-26, Aug-26"
+   },
+   {
+    "sev": "grey",
     "type": "Went quiet",
-    "text": "EBITDA margin guide: Jul-26 “with EBITDA margin guidance unchanged at c.13%-14%” → Aug-26 no margin guide; H1 margin 12% (H1 2025 13%)",
-    "span": "Headline outlook bullet in Jul-26 → absent Aug-26"
+    "text": "Liquidity: Oct-25 “Hunting retains c.$336.5 million of liquidity available to pursue growth opportunities” → no liquidity figure now",
+    "span": "Given in Q3 TU Oct-24 (c.$393m) and Oct-25"
    }
   ]
  }

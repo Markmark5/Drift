@@ -1,8 +1,8 @@
 {
  "ticker": "SFOR",
- "v": "2026-10-21.2ead",
+ "v": "2026-10-28.5dbb",
  "ccy": "GBX",
- "src": "Yahoo SFOR.L weekly",
+ "src": "Yahoo SFOR.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-21",
    49.3
+  ],
+  [
+   "2026-10-23",
+   48.75
   ]
  ],
  "marks": [
@@ -1378,37 +1382,41 @@
    "s": -1,
    "q": "2026 like-for-like net revenue now estimated to be down mid-single digits, with operational EBITDA remaining at current analyst consensus level of £85 million and operational EBITDA margin to increase by 140 basis points.",
    "file": "20260805_SFOR_Interim-Results-for-2026.md"
+  },
+  {
+   "d": "2026-10-28",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "The Company now expects 2026 like-for-like net revenue to be marginally below previous guidance at down high-single digits, with operational EBITDA remaining at current analyst consensus level of £85 million and operational EBITDA margin now expected to increase by at least 160 basis points to 13.7%.",
+   "file": "20261028_SFOR_Third-Quarter-Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-05",
-  "doc": "H1 R",
-  "file": "20260805_SFOR_Interim-Results-for-2026.md",
-  "vs": "H1 R Sep-25 · AGM Jun-26 · back to H1 R Sep-24 / FY R Mar-26",
+  "rns": "2026-10-28",
+  "doc": "Q3 TU",
+  "file": "20261028_SFOR_Third-Quarter-Trading-Update.md",
+  "vs": "Q3 TU Nov-25 · H1 R Aug-26 · AGM Jun-26",
   "lines": [
    {
-    "sev": "red",
-    "type": "Anchor softened",
-    "text": "Revenue guide: AGM Jun-26 “within the current consensus analyst range of £632-663 million, down low single digits” → H1-26 “now estimated to be down mid-single digits”, consensus range dropped from the revenue line",
-    "span": "Revenue tied to consensus at Mar-26, May-26, Jun-26 → first print without it"
-   },
-   {
     "sev": "amber",
-    "type": "New caution",
-    "text": "First named client headwind since Technology Services' key client cycled out: “The practice was further impacted by a scope reduction in BMW, primarily in EMEA”",
-    "span": "Not flagged at AGM Jun-26 or Q1 TU May-26"
-   },
-   {
-    "sev": "amber",
-    "type": "Went quiet",
-    "text": "Tech-client share of revenue: H1-24 “revenue from technology clients remained at 44%”, H1-25 “proportion of revenue from technology clients decreased slightly to 42%”, FY-25 “decreased to 41% in 2025” → H1-26 no figure, only “technology clients/hyperscalers” in words",
-    "span": "Given at H1-24, H1-25, FY-25 → first gap"
+    "type": "Wording vs number",
+    "text": "Net revenue guide called “marginally below previous guidance at down high-single digits”, but it has slid each print: AGM “down low single digits” → H1 “down mid-single digits” → now high-single digits; Q3 like-for-like net revenue −7.3%",
+    "span": "Jun-26 → Aug-26 → Oct-26: third step down this year"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Profit guide now numeric: AGM Jun-26 “Operational EBITDA margin is targeted to improve by at least 100 basis points” → H1-26 “operational EBITDA remaining at current analyst consensus level of £85 million”, margin +140bps; net debt target “lowered from £60 - £90 million to a range of £50 - £80 million”"
+    "text": "EPS guide quantified: H1 “adjusted basic earnings per share will be in excess of current analyst consensus” → now “in excess of current analyst consensus of 6.1p per share”",
+    "span": "H1 R Aug-26 → Q3 TU Oct-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Margin guide raised: H1 “operational EBITDA margin to increase by 140 basis points” → now “increase by at least 160 basis points to 13.7%”",
+    "span": "H1 R Aug-26 → Q3 TU Oct-26"
    }
   ]
  }

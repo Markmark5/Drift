@@ -1,8 +1,8 @@
 {
  "ticker": "AML",
- "v": "2026-10-21.0f17",
+ "v": "2026-10-28.157f",
  "ccy": "GBX",
- "src": "Yahoo AML.L weekly",
+ "src": "Yahoo AML.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-21",
    38.52
+  ],
+  [
+   "2026-10-23",
+   35.26
   ]
  ],
  "marks": [
@@ -1289,38 +1293,47 @@
    "s": 0,
    "q": "H1 2026 demonstrates that we are on track to deliver material financial improvement this year compared with 2025. Q2 2026 total wholesale volumes increased by 43% compared to the prior year period as our focus on smoothing production cadence materialised, with core retail volumes continuing to run ahead of supply.",
    "file": "20260729_AML_Interim-results-for-the-half-year-ended-30-June-26.md"
+  },
+  {
+   "d": "2026-10-28",
+   "doc": "Q3 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group continues to expect to deliver material improvement in FY 2026 financial performance driven by an enhanced product mix and benefits from the ongoing transformation programme and disciplined approach to operations",
+   "file": "20261028_AML_Results-for-Q3-and-9-months-ended-30-Sept-2026.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-29",
-  "doc": "H1 R",
-  "file": "20260729_AML_Interim-results-for-the-half-year-ended-30-June-26.md",
-  "vs": "H1 R Jul-25 · back to Jul-23/Jul-24 · Q1 Apr-26, financing RNS Jul-26",
+  "rns": "2026-10-28",
+  "doc": "Q3 R",
+  "file": "20261028_AML_Results-for-Q3-and-9-months-ended-30-Sept-2026.md",
+  "vs": "Q3 R Oct-25 · H1 R Jul-26 · back to Apr-25",
   "lines": [
-   {
-    "sev": "red",
-    "type": "Target dropped",
-    "text": "FY 2027/28 numeric targets: H1-25 “The Group's medium-term outlook for FY 2027/28 remains unchanged” incl. “Adjusted EBIT: c. £400 million” → H1-26 only “The Group expects to continue delivering year-on-year improved financial performance over the short-mid-term”, no numbers",
-    "span": "Listed in H1-23, H1-24, H1-25 → first interim without them (dropped at FY R Feb-26)"
-   },
    {
     "sev": "amber",
     "type": "Number to words",
-    "text": "Core order book: “the orderbook for core vehicles has remained broadly unchanged, extending for up to five months” (Feb-26) → now “the core orderbook remains stable”, no duration",
-    "span": "Up to five months given Feb-25, Apr-25, Jul-25, Oct-25, Feb-26 → missing Apr-26 and Jul-26"
+    "text": "Core orderbook: Oct-25 “the orderbook for core vehicles has remained unchanged, extending for up to five months” → now “with the core orderbook remaining stable”, no duration",
+    "span": "Up to five months given Apr-25, Jul-25, Oct-25, Feb-26 → words only since Apr-26"
    },
    {
     "sev": "amber",
-    "type": "Demoted",
-    "text": "Core ASP: H1-25 highlight “H1'25 Core ASP remained strong increasing 7% to £192k” → H1-26 off the highlights, in the body “H1 2026 core ASP decreased by 5% compared to the prior year period”",
-    "span": "Core ASP in interim highlights Jul-24, Jul-25 → dropped as it turned negative"
+    "type": "Wording vs number",
+    "text": "FY26 EBIT guide held: “Adjusted EBIT margin is expected to materially improve (FY 2025: (15.0)%), towards breakeven” while “Adjusted EBIT improved by 22% YTD 2026 to £(134)m” on revenue of £1,017m, a YTD margin of c.(13)%",
+    "span": "Unchanged since Feb-26; needs a large positive Q4"
    },
    {
     "sev": "grey",
     "type": "Wording vs number",
-    "text": "Headline “FY 2026 operational guidance unchanged” beside a raised finance cost guide: “a slight increase to the FY 2026 net finance cost guidance to c. £160m (previously c. £150m)”; reported liquidity £145m (Jun-25: £228m) before the Jul-26 £550m loan",
-    "span": "Net interest c. £150m at Feb-26 and Apr-26"
+    "text": "Liquidity: Jul-26 “enhances pro forma liquidity to c. £340m at the end of H1 2026” → now “supports total liquidity of c. £320m”; net debt up to £1,572m from £1,380m at Dec-25",
+    "span": "H1 R Jul-26 → Q3 R Oct-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Free cash flow added to the headline KPI table (absent at Q3 Oct-25 and H1 Jul-26): “Free cash outflow YTD 2026 of £225m materially improved compared to the prior year period (YTD 2025: £415m outflow)”",
+    "span": "New headline row at Oct-26"
    }
   ]
  }
