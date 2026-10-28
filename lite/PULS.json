@@ -1,8 +1,8 @@
 {
  "ticker": "PULS",
- "v": "2026-10-21.29ca",
+ "v": "2026-10-28.f55f",
  "ccy": "GBX",
- "src": "Yahoo PULS.L weekly",
+ "src": "Yahoo PULS.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-21",
    15.0
+  ],
+  [
+   "2026-10-23",
+   15.0
   ]
  ],
  "marks": [
@@ -1234,38 +1238,47 @@
    "s": 0,
    "q": "Given the momentum across the business, the Group continues to trade in line with the Board's expectations.",
    "file": "20260720_PULS_Interim-Results.md"
+  },
+  {
+   "d": "2026-10-28",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -3,
+   "q": "Financial performance: the Board estimates FY26 revenue of approximately £65m (FY25: £61.2m) and Adjusted EBITDA of approximately £10m (FY25: £10.4m).",
+   "file": "20261028_PULS_Trading-Update,-Fundraise-&-Capital-Access-Window.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-20",
-  "doc": "H1 R",
-  "file": "20260720_PULS_Interim-Results.md",
-  "vs": "H1 R Jul-25 · back to Jul-24 · YE-TU Feb-26 · FY R May-26",
+  "rns": "2026-10-28",
+  "doc": "YE-TU",
+  "file": "20261028_PULS_Trading-Update,-Fundraise-&-Capital-Access-Window.md",
+  "vs": "H1 R Jul-26 · YE-TU Feb-26 · FY R May-26 · back to Jan-24/Jan-25",
   "lines": [
    {
-    "sev": "amber",
-    "type": "Pushed out",
-    "text": "Net debt: Feb-26 “The Board expects sustainable ongoing cash generation going forwards”, net debt cut “from £5.6m at 30 November 2025 to £2.7m as at 19 February 2026” → now “Net debt at the period end was £6.0m (30 November 2025: £5.6m)” and “The Board expects the Group's strengthening cash generation to support a reduction in net debt over the second half.”",
-    "span": "Feb-26 → Jul-26"
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "H1 R Jul-26: “Given the momentum across the business, the Group continues to trade in line with the Board's expectations.” → now no expectations anchor at all; FY26 Adjusted EBITDA “approximately £10m (FY25: £10.4m)”, a down year after H1 +39%",
+    "span": "Expectations anchor in every TU/results since Jan-22 (YE-TU Jan-24, Jan-25, Feb-26) → first gap"
    },
    {
     "sev": "amber",
-    "type": "Wording vs number",
-    "text": "CEO: “with margins expanding as revenue growth meets a lower cost base” but “The Group delivered a gross margin of 65% (H1 2025: 69%)”; last year “The Group delivered a gross margin of 69% in the period (H1 2024: 72%)”",
-    "span": "H1 gross margin 75% → 72% → 69% → 65% (H1 23–H1 26)"
+    "type": "Target dropped",
+    "text": "H1 R Jul-26: “The Board expects the Group's strengthening cash generation to support a reduction in net debt over the second half.” → now net debt £6.4m (31 May: £6.0m) and “overall cash generation has been lower than anticipated”; £5.0m fundraise proposed",
+    "span": "Jul-26 → Oct-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "Gross margin: H1 R Jul-26 “The Group delivered a gross margin of 65% (H1 2025: 69%).” → now “Gross margin is lower year on year”, no figure",
+    "span": "Given at FY R May-26 (KPI table) and H1 R Jul-26"
    },
    {
     "sev": "amber",
     "type": "New caution",
-    "text": "First mention of mid-market weakness: “Demand in the mid-market, by contrast, was more muted.”",
-    "span": "Not in any earlier RNS"
-   },
-   {
-    "sev": "grey",
-    "type": "Wording vs number",
-    "text": "ARR headline now on reported basis: “increased ARR by £2.7 million” vs “(£1.2m1 on a constant currency basis)”, APAC “down £0.2m1 on a constant currency basis”; Jul-25 headline was constant currency: “The Group's ARR increased by £1.1m1 in the period”",
-    "span": "Jul-25 → Jul-26"
+    "text": "First mention of “higher third-party data costs” weighing on gross margin, alongside a billing-mix shift and “slower collections increasing debtor days”",
+    "span": "Not in any earlier PULS RNS"
    }
   ]
  }

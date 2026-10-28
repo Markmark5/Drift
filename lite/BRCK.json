@@ -1,8 +1,8 @@
 {
  "ticker": "BRCK",
- "v": "2026-10-20.c132",
+ "v": "2026-10-28.e91d",
  "ccy": "GBX",
- "src": "Yahoo BRCK.L weekly",
+ "src": "Yahoo BRCK.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-20",
    46.65
+  ],
+  [
+   "2026-10-23",
+   47.3
   ]
  ],
  "marks": [
@@ -1307,26 +1311,47 @@
    "s": 0,
    "q": "The trading environment in the first five months of our current financial year has been consistent with the outlook statement issued in July on publication of the Company’s FY2026 results when we commented that near-term market conditions remained challenging.",
    "file": "20260915_BRCK_AGM-Statement.md"
+  },
+  {
+   "d": "2026-10-28",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "CUT",
+   "s": -3,
+   "q": "Accordingly, the Board now expects the Company to deliver Adjusted EBITDA* for FY27 of approximately £45.0 million, compared with the current market consensus figure for Adjusted EBITDA of £50.3 million.",
+   "file": "20261028_BRCK_Half-Year-Trading-Update-and-Notice-of-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-15",
-  "doc": "AGM",
-  "file": "20260915_BRCK_AGM-Statement.md",
-  "vs": "AGM Sep-25 · FY R Jul-26 · back to AGM Sep-23/Sep-24",
+  "rns": "2026-10-28",
+  "doc": "H1 TU",
+  "file": "20261028_BRCK_Half-Year-Trading-Update-and-Notice-of-Results.md",
+  "vs": "H1 TU Oct-25 · AGM Sep-26 · FY R Jul-26 · H1 R Nov-25",
   "lines": [
    {
     "sev": "red",
-    "type": "Anchor softened",
-    "text": "Sep-25: “trading in the first five months of the current financial year ending 31 March 2026 has been in line with the Board's expectations” and “the Board's expectations for adjusted EBITDA(*) for the full year remain unchanged” → Sep-26: no statement that trading is in line, only “consistent with the outlook statement issued in July”, and “The Board’s expectations for the current financial year remain unchanged” with adjusted EBITDA no longer named",
-    "span": "In-line trading statement at AGM Sep-23, Sep-24, Sep-25 → first gap in 3 years"
+    "type": "Wording vs number",
+    "text": "Headline “During the Period the Group delivered a resilient performance, with H1 FY27 results in line with the Board’s expectations.” beside “H1 FY27 adjusted EBITDA* is expected to be approximately £25.5 million (H1 FY26: £27.2 million)” and FY27 EBITDA guide of c.£45.0m vs £50.3m consensus (c.11% below)",
+    "span": "AGM Sep-26: Board’s expectations unchanged → Oct-26 cut"
    },
    {
     "sev": "amber",
-    "type": "New caution",
-    "text": "Sep-25: “a slow pace of recovery in housing starts and RMI” → Sep-26: “broader macroeconomic conditions mean there is limited visibility in the timing of a recovery in new housebuilding starts”",
-    "span": "first “limited visibility” caution in the record"
+    "type": "Went quiet",
+    "text": "Contracting/Design & Install order book: Oct-25 “Contracting division continues to benefit from a multi-year order book and pipeline of more than £150 million in aggregate” → no order book or pipeline figure now",
+    "span": "Given at Oct-25 and Nov-25 (“A healthy order pipeline in the Contracting Division exceeding £150m”) → absent Jul-26 and Oct-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Split withheld",
+    "text": "Divisional H1 performance: Oct-25 “Our specialist teams across Bricks & Building Materials, Importing, and Distribution divisions have each delivered year on year growth in both revenue and EBITDA” → now only Design & Install and Jacksons described; no H1 statement on the Distribution division",
+    "span": "Two-division structure from Jul-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Restated",
+    "text": "H1 FY26 adjusted EBITDA: Oct-25 “approximately £28.0 million” (before SBP) → now “(H1 FY26: £27.2 million)” on the new basis that includes share-based payments",
+    "span": "SBP basis change flagged Nov-25 and Jul-26"
    }
   ]
  }
