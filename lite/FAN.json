@@ -1,14 +1,10 @@
 {
  "ticker": "FAN",
- "v": "2026-10-19.3bd9",
+ "v": "2026-10-28.f9f5",
  "ccy": "GBX",
- "src": "AlphaVantage FAN.LON weekly",
+ "src": "AlphaVantage FAN.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-15",
-   494.5
-  ],
   [
    "2021-10-22",
    495.0
@@ -1056,6 +1052,10 @@
   [
    "2026-10-16",
    637.0
+  ],
+  [
+   "2026-10-23",
+   616.0
   ]
  ],
  "marks": [

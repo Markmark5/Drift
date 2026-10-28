@@ -1,14 +1,10 @@
 {
  "ticker": "SDG",
- "v": "2026-10-19.3929",
+ "v": "2026-10-28.788f",
  "ccy": "GBX",
- "src": "AlphaVantage SDG.LON weekly",
+ "src": "AlphaVantage SDG.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-15",
-   203.0
-  ],
   [
    "2021-10-22",
    173.5
@@ -1056,6 +1052,10 @@
   [
    "2026-10-16",
    77.0
+  ],
+  [
+   "2026-10-23",
+   73.5
   ]
  ],
  "marks": [

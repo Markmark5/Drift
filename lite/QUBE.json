@@ -1,0 +1,417 @@
+{
+ "ticker": "QUBE",
+ "v": "2026-10-28.adb8",
+ "ccy": "GBX",
+ "src": "AlphaVantage QUBE.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2025-04-11",
+   23.5
+  ],
+  [
+   "2025-04-17",
+   25.5
+  ],
+  [
+   "2025-04-25",
+   28.0
+  ],
+  [
+   "2025-05-02",
+   27.5
+  ],
+  [
+   "2025-05-09",
+   26.5
+  ],
+  [
+   "2025-05-16",
+   25.0
+  ],
+  [
+   "2025-05-23",
+   24.0
+  ],
+  [
+   "2025-05-30",
+   24.0
+  ],
+  [
+   "2025-06-06",
+   24.5
+  ],
+  [
+   "2025-06-13",
+   23.0
+  ],
+  [
+   "2025-06-20",
+   26.0
+  ],
+  [
+   "2025-06-27",
+   25.5
+  ],
+  [
+   "2025-07-04",
+   25.0
+  ],
+  [
+   "2025-07-11",
+   22.75
+  ],
+  [
+   "2025-07-18",
+   23.0
+  ],
+  [
+   "2025-07-25",
+   23.5
+  ],
+  [
+   "2025-08-01",
+   22.5
+  ],
+  [
+   "2025-08-08",
+   21.5
+  ],
+  [
+   "2025-08-15",
+   21.0
+  ],
+  [
+   "2025-08-22",
+   21.0
+  ],
+  [
+   "2025-08-29",
+   19.5
+  ],
+  [
+   "2025-09-05",
+   16.25
+  ],
+  [
+   "2025-09-12",
+   18.5
+  ],
+  [
+   "2025-09-19",
+   20.5
+  ],
+  [
+   "2025-09-26",
+   23.575
+  ],
+  [
+   "2025-10-03",
+   22.5
+  ],
+  [
+   "2025-10-10",
+   22.0
+  ],
+  [
+   "2025-10-17",
+   21.0
+  ],
+  [
+   "2025-10-24",
+   21.5
+  ],
+  [
+   "2025-10-31",
+   21.5
+  ],
+  [
+   "2025-11-07",
+   21.5
+  ],
+  [
+   "2025-11-14",
+   21.5
+  ],
+  [
+   "2025-11-21",
+   21.5
+  ],
+  [
+   "2025-11-28",
+   20.0
+  ],
+  [
+   "2025-12-05",
+   21.0
+  ],
+  [
+   "2025-12-12",
+   22.5
+  ],
+  [
+   "2025-12-19",
+   22.5
+  ],
+  [
+   "2025-12-24",
+   23.0
+  ],
+  [
+   "2026-01-02",
+   23.0
+  ],
+  [
+   "2026-01-09",
+   24.0
+  ],
+  [
+   "2026-01-16",
+   25.0
+  ],
+  [
+   "2026-01-23",
+   24.0
+  ],
+  [
+   "2026-01-30",
+   26.0
+  ],
+  [
+   "2026-02-06",
+   24.5
+  ],
+  [
+   "2026-02-13",
+   25.0
+  ],
+  [
+   "2026-02-20",
+   25.0
+  ],
+  [
+   "2026-02-27",
+   25.0
+  ],
+  [
+   "2026-03-06",
+   24.25
+  ],
+  [
+   "2026-03-13",
+   24.0
+  ],
+  [
+   "2026-03-20",
+   23.0
+  ],
+  [
+   "2026-03-27",
+   22.5
+  ],
+  [
+   "2026-04-02",
+   22.0
+  ],
+  [
+   "2026-04-10",
+   21.5
+  ],
+  [
+   "2026-04-17",
+   22.0
+  ],
+  [
+   "2026-04-24",
+   22.5
+  ],
+  [
+   "2026-05-01",
+   24.0
+  ],
+  [
+   "2026-05-08",
+   24.0
+  ],
+  [
+   "2026-05-15",
+   25.0
+  ],
+  [
+   "2026-05-22",
+   23.0
+  ],
+  [
+   "2026-05-29",
+   23.0
+  ],
+  [
+   "2026-06-05",
+   21.5
+  ],
+  [
+   "2026-06-12",
+   21.0
+  ],
+  [
+   "2026-06-19",
+   21.5
+  ],
+  [
+   "2026-06-26",
+   21.0
+  ],
+  [
+   "2026-07-03",
+   21.0
+  ],
+  [
+   "2026-07-10",
+   21.0
+  ],
+  [
+   "2026-07-17",
+   21.0
+  ],
+  [
+   "2026-07-24",
+   21.0
+  ],
+  [
+   "2026-07-31",
+   20.0
+  ],
+  [
+   "2026-08-07",
+   21.0
+  ],
+  [
+   "2026-08-14",
+   20.0
+  ],
+  [
+   "2026-08-21",
+   21.25
+  ],
+  [
+   "2026-08-28",
+   20.0
+  ],
+  [
+   "2026-09-04",
+   20.5
+  ],
+  [
+   "2026-09-11",
+   19.5
+  ],
+  [
+   "2026-09-18",
+   19.75
+  ],
+  [
+   "2026-09-25",
+   19.75
+  ],
+  [
+   "2026-10-02",
+   19.6
+  ],
+  [
+   "2026-10-09",
+   19.0
+  ],
+  [
+   "2026-10-16",
+   19.5
+  ],
+  [
+   "2026-10-23",
+   19.5
+  ],
+  [
+   "2026-10-27",
+   19.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2025-10-31",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Company remains on track to sign four new commercial contracts in the financial year ending 30 April 2026 and looks forward to providing further updates as they materialise in the near future.",
+   "file": "20251031_QUBE_Final-results-for-the-year-ended-30-April-2025.md"
+  },
+  {
+   "d": "2025-12-02",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Looking ahead, Quantum Base expects to report revenue growth in FY26 and FY27 in line with current market expectations. The Board remains confident in the Company's strategic direction and its ability to deliver sustainable growth and long-term shareholder value.",
+   "file": "20251202_QUBE_Proposed-Fundraising.md"
+  },
+  {
+   "d": "2026-01-29",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Company remains on track to sign four commercial contracts in the current financial year, adding to the over one billion Q-IDs now in circulation.",
+   "file": "20260129_QUBE_Interim-Results.md"
+  },
+  {
+   "d": "2026-04-17",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -3,
+   "q": "Together, these two factors have led to a deferral of revenue from FY26 into FY27. Given this, the EBITDA loss for FY26 is expected to be greater than market expectations.",
+   "file": "20260417_QUBE_Trading-Update.md"
+  },
+  {
+   "d": "2026-10-28",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "CUT",
+   "s": -2,
+   "q": "The timing and value of new contracts remain difficult to forecast, particularly while customers undertake evaluation and adapt their production processes, and this reinforces the need for disciplined expenditure and active prioritisation.",
+   "file": "20261028_QUBE_Final-results-for-the-year-ended-30-April-2026.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-28",
+  "doc": "FY R",
+  "file": "20261028_QUBE_Final-results-for-the-year-ended-30-April-2026.md",
+  "vs": "FY R Oct-25 · TU Apr-26 · H1 R Jan-26 · Fundraise Dec-25",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Next-year view dropped",
+    "text": "Dec-25: “Looking ahead, Quantum Base expects to report revenue growth in FY26 and FY27 in line with current market expectations.” → FY R Oct-26 gives no FY27 number or anchor: “The timing and value of new contracts remain difficult to forecast”",
+    "span": "FY27 market anchor given Dec-25; not repeated at TU Apr-26 or FY R"
+   },
+   {
+    "sev": "red",
+    "type": "Target dropped",
+    "text": "Contract target: “on track to sign four commercial contracts in the current financial year” (Oct-25, Jan-26) → deferred to FY27 at Apr-26 TU → now “Pipeline conversion has, at present, not materialised to secured contracts”, no FY27 contract target",
+    "span": "Given Oct-25 FY R and Jan-26 H1 R"
+   },
+   {
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "Customer #2 contract value: “worth a total of £9.4 million” with ARR “from £175,000 in 2027” (Nov-25, Jan-26) → now “Secured a long-term agreement with Customer #2, a startup creating a global art registry”, no value or ARR",
+    "span": "Given Nov-25 and Jan-26 → first omission"
+   },
+   {
+    "sev": "grey",
+    "type": "Went quiet",
+    "text": "“Over 1 billion Q-IDs now in circulation” (FY R Oct-25 highlights, repeated Jan-26) → Q-IDs in circulation not mentioned in FY R Oct-26",
+    "span": "Given Oct-25, Jan-26"
+   }
+  ]
+ }
+}

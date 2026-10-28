@@ -1,0 +1,1273 @@
+{
+ "ticker": "RDT",
+ "v": "2026-10-28.e130",
+ "ccy": "GBX",
+ "src": "Yahoo RDT.L weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-10-29",
+   200.0
+  ],
+  [
+   "2021-11-05",
+   200.0
+  ],
+  [
+   "2021-11-12",
+   205.0
+  ],
+  [
+   "2021-11-19",
+   202.5
+  ],
+  [
+   "2021-11-26",
+   195.0
+  ],
+  [
+   "2021-12-03",
+   190.0
+  ],
+  [
+   "2021-12-10",
+   180.0
+  ],
+  [
+   "2021-12-17",
+   175.0
+  ],
+  [
+   "2021-12-24",
+   190.0
+  ],
+  [
+   "2021-12-31",
+   190.0
+  ],
+  [
+   "2022-01-07",
+   222.5
+  ],
+  [
+   "2022-01-14",
+   192.5
+  ],
+  [
+   "2022-01-21",
+   192.5
+  ],
+  [
+   "2022-01-28",
+   185.0
+  ],
+  [
+   "2022-02-04",
+   177.5
+  ],
+  [
+   "2022-02-11",
+   167.5
+  ],
+  [
+   "2022-02-18",
+   167.5
+  ],
+  [
+   "2022-02-25",
+   167.5
+  ],
+  [
+   "2022-03-04",
+   152.5
+  ],
+  [
+   "2022-03-11",
+   140.0
+  ],
+  [
+   "2022-03-18",
+   135.0
+  ],
+  [
+   "2022-03-25",
+   135.0
+  ],
+  [
+   "2022-04-01",
+   132.5
+  ],
+  [
+   "2022-04-08",
+   142.5
+  ],
+  [
+   "2022-04-15",
+   137.5
+  ],
+  [
+   "2022-04-22",
+   130.0
+  ],
+  [
+   "2022-04-29",
+   125.0
+  ],
+  [
+   "2022-05-06",
+   127.5
+  ],
+  [
+   "2022-05-13",
+   125.0
+  ],
+  [
+   "2022-05-20",
+   120.0
+  ],
+  [
+   "2022-05-27",
+   125.0
+  ],
+  [
+   "2022-06-03",
+   110.0
+  ],
+  [
+   "2022-06-10",
+   115.0
+  ],
+  [
+   "2022-06-17",
+   105.0
+  ],
+  [
+   "2022-06-24",
+   105.0
+  ],
+  [
+   "2022-07-01",
+   92.5
+  ],
+  [
+   "2022-07-08",
+   90.0
+  ],
+  [
+   "2022-07-15",
+   90.0
+  ],
+  [
+   "2022-07-22",
+   87.5
+  ],
+  [
+   "2022-07-29",
+   87.5
+  ],
+  [
+   "2022-08-05",
+   82.5
+  ],
+  [
+   "2022-08-12",
+   105.0
+  ],
+  [
+   "2022-08-19",
+   105.0
+  ],
+  [
+   "2022-08-26",
+   107.5
+  ],
+  [
+   "2022-09-02",
+   105.0
+  ],
+  [
+   "2022-09-09",
+   105.0
+  ],
+  [
+   "2022-09-16",
+   105.0
+  ],
+  [
+   "2022-09-23",
+   105.0
+  ],
+  [
+   "2022-09-30",
+   97.5
+  ],
+  [
+   "2022-10-07",
+   77.5
+  ],
+  [
+   "2022-10-14",
+   66.25
+  ],
+  [
+   "2022-10-21",
+   66.25
+  ],
+  [
+   "2022-10-28",
+   63.75
+  ],
+  [
+   "2022-11-04",
+   42.5
+  ],
+  [
+   "2022-11-11",
+   50.0
+  ],
+  [
+   "2022-11-18",
+   50.0
+  ],
+  [
+   "2022-11-25",
+   51.25
+  ],
+  [
+   "2022-12-02",
+   47.5
+  ],
+  [
+   "2022-12-09",
+   47.5
+  ],
+  [
+   "2022-12-16",
+   45.0
+  ],
+  [
+   "2022-12-23",
+   50.0
+  ],
+  [
+   "2022-12-30",
+   51.25
+  ],
+  [
+   "2023-01-06",
+   51.25
+  ],
+  [
+   "2023-01-13",
+   47.5
+  ],
+  [
+   "2023-01-20",
+   42.5
+  ],
+  [
+   "2023-01-27",
+   42.5
+  ],
+  [
+   "2023-02-03",
+   33.75
+  ],
+  [
+   "2023-02-10",
+   31.25
+  ],
+  [
+   "2023-02-17",
+   28.75
+  ],
+  [
+   "2023-02-24",
+   28.75
+  ],
+  [
+   "2023-03-03",
+   28.75
+  ],
+  [
+   "2023-03-10",
+   33.75
+  ],
+  [
+   "2023-03-17",
+   36.25
+  ],
+  [
+   "2023-03-24",
+   36.25
+  ],
+  [
+   "2023-03-31",
+   36.25
+  ],
+  [
+   "2023-04-07",
+   33.75
+  ],
+  [
+   "2023-04-14",
+   33.75
+  ],
+  [
+   "2023-04-21",
+   38.75
+  ],
+  [
+   "2023-04-28",
+   38.75
+  ],
+  [
+   "2023-05-05",
+   38.75
+  ],
+  [
+   "2023-05-12",
+   38.75
+  ],
+  [
+   "2023-05-19",
+   38.75
+  ],
+  [
+   "2023-05-26",
+   38.75
+  ],
+  [
+   "2023-06-02",
+   38.75
+  ],
+  [
+   "2023-06-09",
+   36.25
+  ],
+  [
+   "2023-06-16",
+   36.25
+  ],
+  [
+   "2023-06-23",
+   33.75
+  ],
+  [
+   "2023-06-30",
+   33.75
+  ],
+  [
+   "2023-07-07",
+   31.25
+  ],
+  [
+   "2023-07-14",
+   28.75
+  ],
+  [
+   "2023-07-21",
+   23.75
+  ],
+  [
+   "2023-07-28",
+   23.75
+  ],
+  [
+   "2023-08-04",
+   23.75
+  ],
+  [
+   "2023-08-11",
+   23.75
+  ],
+  [
+   "2023-08-18",
+   23.75
+  ],
+  [
+   "2023-08-25",
+   25.0
+  ],
+  [
+   "2023-09-01",
+   26.25
+  ],
+  [
+   "2023-09-08",
+   26.25
+  ],
+  [
+   "2023-09-15",
+   26.25
+  ],
+  [
+   "2023-09-22",
+   23.5
+  ],
+  [
+   "2023-09-29",
+   20.5
+  ],
+  [
+   "2023-10-06",
+   14.5
+  ],
+  [
+   "2023-10-13",
+   14.25
+  ],
+  [
+   "2023-10-20",
+   13.75
+  ],
+  [
+   "2023-10-27",
+   13.5
+  ],
+  [
+   "2023-11-03",
+   13.25
+  ],
+  [
+   "2023-11-10",
+   13.25
+  ],
+  [
+   "2023-11-17",
+   13.25
+  ],
+  [
+   "2023-11-24",
+   13.25
+  ],
+  [
+   "2023-12-01",
+   13.0
+  ],
+  [
+   "2023-12-08",
+   13.0
+  ],
+  [
+   "2023-12-15",
+   13.0
+  ],
+  [
+   "2023-12-22",
+   13.0
+  ],
+  [
+   "2023-12-29",
+   13.0
+  ],
+  [
+   "2024-01-05",
+   14.25
+  ],
+  [
+   "2024-01-12",
+   20.3
+  ],
+  [
+   "2024-01-19",
+   20.5
+  ],
+  [
+   "2024-01-26",
+   18.5
+  ],
+  [
+   "2024-02-02",
+   17.0
+  ],
+  [
+   "2024-02-09",
+   16.75
+  ],
+  [
+   "2024-02-16",
+   16.75
+  ],
+  [
+   "2024-02-23",
+   16.5
+  ],
+  [
+   "2024-03-01",
+   16.25
+  ],
+  [
+   "2024-03-08",
+   12.5
+  ],
+  [
+   "2024-03-15",
+   11.75
+  ],
+  [
+   "2024-03-22",
+   11.25
+  ],
+  [
+   "2024-03-29",
+   10.25
+  ],
+  [
+   "2024-04-05",
+   9.75
+  ],
+  [
+   "2024-04-12",
+   9.75
+  ],
+  [
+   "2024-04-19",
+   9.75
+  ],
+  [
+   "2024-04-26",
+   9.75
+  ],
+  [
+   "2024-05-03",
+   9.75
+  ],
+  [
+   "2024-05-10",
+   9.75
+  ],
+  [
+   "2024-05-17",
+   9.75
+  ],
+  [
+   "2024-05-24",
+   9.5
+  ],
+  [
+   "2024-05-31",
+   9.5
+  ],
+  [
+   "2024-06-07",
+   9.25
+  ],
+  [
+   "2024-06-14",
+   9.25
+  ],
+  [
+   "2024-06-21",
+   9.25
+  ],
+  [
+   "2024-06-28",
+   9.25
+  ],
+  [
+   "2024-07-05",
+   9.25
+  ],
+  [
+   "2024-07-12",
+   9.25
+  ],
+  [
+   "2024-07-19",
+   9.25
+  ],
+  [
+   "2024-07-26",
+   9.25
+  ],
+  [
+   "2024-08-02",
+   9.25
+  ],
+  [
+   "2024-08-09",
+   9.25
+  ],
+  [
+   "2024-08-16",
+   9.25
+  ],
+  [
+   "2024-08-23",
+   13.5
+  ],
+  [
+   "2024-08-30",
+   13.4
+  ],
+  [
+   "2024-09-06",
+   14.5
+  ],
+  [
+   "2024-09-13",
+   14.25
+  ],
+  [
+   "2024-09-20",
+   12.5
+  ],
+  [
+   "2024-09-27",
+   11.75
+  ],
+  [
+   "2024-10-04",
+   11.15
+  ],
+  [
+   "2024-10-11",
+   6.125
+  ],
+  [
+   "2024-10-18",
+   5.375
+  ],
+  [
+   "2024-10-25",
+   4.75
+  ],
+  [
+   "2024-11-01",
+   5.25
+  ],
+  [
+   "2024-11-08",
+   5.125
+  ],
+  [
+   "2024-11-15",
+   5.25
+  ],
+  [
+   "2024-11-22",
+   4.85
+  ],
+  [
+   "2024-11-29",
+   4.8
+  ],
+  [
+   "2024-12-06",
+   5.3
+  ],
+  [
+   "2024-12-13",
+   5.125
+  ],
+  [
+   "2024-12-20",
+   4.75
+  ],
+  [
+   "2024-12-27",
+   4.75
+  ],
+  [
+   "2025-01-03",
+   4.8
+  ],
+  [
+   "2025-01-10",
+   4.75
+  ],
+  [
+   "2025-01-17",
+   4.8
+  ],
+  [
+   "2025-01-24",
+   4.85
+  ],
+  [
+   "2025-01-31",
+   5.1
+  ],
+  [
+   "2025-02-07",
+   5.1
+  ],
+  [
+   "2025-02-14",
+   4.65
+  ],
+  [
+   "2025-02-21",
+   4.65
+  ],
+  [
+   "2025-02-28",
+   4.6
+  ],
+  [
+   "2025-03-07",
+   3.85
+  ],
+  [
+   "2025-03-14",
+   3.65
+  ],
+  [
+   "2025-03-21",
+   3.55
+  ],
+  [
+   "2025-03-28",
+   3.55
+  ],
+  [
+   "2025-04-04",
+   3.3
+  ],
+  [
+   "2025-04-11",
+   3.3
+  ],
+  [
+   "2025-04-18",
+   3.3
+  ],
+  [
+   "2025-04-25",
+   3.2
+  ],
+  [
+   "2025-05-02",
+   3.3
+  ],
+  [
+   "2025-05-09",
+   3.35
+  ],
+  [
+   "2025-05-16",
+   3.55
+  ],
+  [
+   "2025-05-23",
+   3.4
+  ],
+  [
+   "2025-05-30",
+   3.5
+  ],
+  [
+   "2025-06-06",
+   3.5
+  ],
+  [
+   "2025-06-13",
+   3.6
+  ],
+  [
+   "2025-06-20",
+   3.7
+  ],
+  [
+   "2025-06-27",
+   3.7
+  ],
+  [
+   "2025-07-04",
+   3.7
+  ],
+  [
+   "2025-07-11",
+   3.7
+  ],
+  [
+   "2025-07-18",
+   3.8
+  ],
+  [
+   "2025-07-25",
+   4.3
+  ],
+  [
+   "2025-08-01",
+   4.3
+  ],
+  [
+   "2025-08-08",
+   3.9
+  ],
+  [
+   "2025-08-15",
+   3.9
+  ],
+  [
+   "2025-08-22",
+   3.9
+  ],
+  [
+   "2025-08-29",
+   3.9
+  ],
+  [
+   "2025-09-05",
+   3.9
+  ],
+  [
+   "2025-09-12",
+   3.9
+  ],
+  [
+   "2025-09-19",
+   3.9
+  ],
+  [
+   "2025-09-26",
+   3.8
+  ],
+  [
+   "2025-10-03",
+   3.7
+  ],
+  [
+   "2025-10-10",
+   3.35
+  ],
+  [
+   "2025-10-17",
+   3.3
+  ],
+  [
+   "2025-10-24",
+   3.2
+  ],
+  [
+   "2025-10-31",
+   3.35
+  ],
+  [
+   "2025-11-07",
+   3.35
+  ],
+  [
+   "2025-11-14",
+   3.35
+  ],
+  [
+   "2025-11-21",
+   3.35
+  ],
+  [
+   "2025-11-28",
+   3.35
+  ],
+  [
+   "2025-12-05",
+   3.35
+  ],
+  [
+   "2025-12-12",
+   3.35
+  ],
+  [
+   "2025-12-19",
+   3.35
+  ],
+  [
+   "2025-12-26",
+   3.35
+  ],
+  [
+   "2026-01-02",
+   3.35
+  ],
+  [
+   "2026-01-09",
+   3.3
+  ],
+  [
+   "2026-01-16",
+   3.3
+  ],
+  [
+   "2026-01-23",
+   3.3
+  ],
+  [
+   "2026-01-30",
+   3.1
+  ],
+  [
+   "2026-02-06",
+   3.1
+  ],
+  [
+   "2026-02-13",
+   2.95
+  ],
+  [
+   "2026-02-20",
+   2.9
+  ],
+  [
+   "2026-02-27",
+   2.9
+  ],
+  [
+   "2026-03-06",
+   2.9
+  ],
+  [
+   "2026-03-13",
+   2.65
+  ],
+  [
+   "2026-03-20",
+   2.6
+  ],
+  [
+   "2026-03-27",
+   2.0
+  ],
+  [
+   "2026-04-03",
+   1.9
+  ],
+  [
+   "2026-04-10",
+   1.9
+  ],
+  [
+   "2026-04-17",
+   1.9
+  ],
+  [
+   "2026-04-24",
+   1.9
+  ],
+  [
+   "2026-05-01",
+   1.9
+  ],
+  [
+   "2026-05-08",
+   1.9
+  ],
+  [
+   "2026-05-15",
+   1.85
+  ],
+  [
+   "2026-05-22",
+   1.85
+  ],
+  [
+   "2026-05-29",
+   1.85
+  ],
+  [
+   "2026-06-05",
+   1.85
+  ],
+  [
+   "2026-06-12",
+   1.85
+  ],
+  [
+   "2026-06-19",
+   1.85
+  ],
+  [
+   "2026-06-26",
+   1.85
+  ],
+  [
+   "2026-07-03",
+   1.85
+  ],
+  [
+   "2026-07-10",
+   1.85
+  ],
+  [
+   "2026-07-17",
+   1.85
+  ],
+  [
+   "2026-07-24",
+   1.8
+  ],
+  [
+   "2026-07-31",
+   1.65
+  ],
+  [
+   "2026-08-07",
+   1.6
+  ],
+  [
+   "2026-08-14",
+   1.6
+  ],
+  [
+   "2026-08-21",
+   1.6
+  ],
+  [
+   "2026-08-28",
+   1.6
+  ],
+  [
+   "2026-09-04",
+   1.6
+  ],
+  [
+   "2026-09-11",
+   1.35
+  ],
+  [
+   "2026-09-18",
+   1.35
+  ],
+  [
+   "2026-09-25",
+   1.15
+  ],
+  [
+   "2026-10-02",
+   1.15
+  ],
+  [
+   "2026-10-09",
+   1.05
+  ],
+  [
+   "2026-10-16",
+   1.0
+  ],
+  [
+   "2026-10-23",
+   0.95
+  ],
+  [
+   "2026-10-28",
+   0.95
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2022-01-13",
+   "doc": "Q3 TU",
+   "fy": "FY22",
+   "g": "CUT",
+   "s": -3,
+   "q": "Whilst the Company will continue to work hard to secure further contracts before the end of the financial year, the challenges being faced, mean that the Board is taking a more conservative view on the outcome for the year ending 30 April 2022 and now expects revenue to be no less than £6.0m, with ARR to be at least £5.1m and a corresponding impact on EBITDA.",
+   "file": "20220113_RDT_Trading-Statement.md"
+  },
+  {
+   "d": "2022-01-31",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The combination of bringing together the customer and product as the central nervous system of our execution, and the relaunching of a new brand into the market we expect to give us a springboard into 2022 and beyond.",
+   "file": "20220131_RDT_Half-year-Report.md"
+  },
+  {
+   "d": "2022-06-29",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": -1,
+   "q": "Revenue for the year ended 30 April 2022 is expected be £5.9m (FY 21: £7.4m), in line with market expectations.",
+   "file": "20220629_RDT_Business-Update.md"
+  },
+  {
+   "d": "2022-10-31",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Accordingly, and with a good pipeline for the rest of the year, we remain on track to deliver increased revenue for the full year, in line with market expectations and look to the future with confidence.",
+   "file": "20221031_RDT_Final-Results.md"
+  },
+  {
+   "d": "2023-01-30",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 1,
+   "q": "As a result, the Group expects to achieve strong growth for the full year to 30 April 2023 and is on track to deliver trading in line with market expectations, with a year-on-year increase in revenue for continuing operations of 14%.",
+   "file": "20230130_RDT_Interim-Results.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2023-04-06",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "Accordingly, the Company expects to report an EBITDA loss for FY 2023 of £2.4m (2022: £3.9m loss) on an adjusted basis, and including the profit from the sale of the Company's discontinued operations, share-based payments and exceptional items the Company's EBITDA loss is expected to reduce to approximately £2.1m.",
+   "file": "20230406_RDT_Trading-Update.md"
+  },
+  {
+   "d": "2023-10-31",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "The Company remains on track to report results for 2024 in line with management expectations.",
+   "file": "20231031_RDT_Final-Results,-Annual-Report-and-Notice-of-AGM.md"
+  },
+  {
+   "d": "2024-01-25",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "With the opportunities with these significant partners coming to fruition, together with the continued expansion the Group is experiencing with existing customers, the Board continues to expect to report results for full year 2024 in line with management expectations.",
+   "file": "20240125_RDT_Interim-Results.md"
+  },
+  {
+   "d": "2024-01-25",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "With the opportunities with these significant partners coming to fruition, together with the continued expansion the Group is experiencing with existing customers, the Board continues to expect to report results for full year 2024 in line with management expectations.",
+   "file": "20240125_RDT_Replacement--Interim-Results.md"
+  },
+  {
+   "d": "2024-03-04",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -3,
+   "q": "Consequentially, the Company expects to report revenues for the year ending 30 April 2024 in the range of approximately £2.8m-£3.0m, with a corresponding adj. EBITDA loss of between approximately £2.6m-£2.8m.",
+   "file": "20240304_RDT_Trading-Update.md"
+  },
+  {
+   "d": "2024-08-21",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "RAISE",
+   "s": 1,
+   "q": "The Company expects to report adjusted* EBITDA loss for FY 2024 of £2.5m (FY 2023: £2.0m loss) and EBITDA loss of £3.3m (FY 2023: £2.4m loss), which is ahead of management expectations.",
+   "file": "20240821_RDT_Trading-Update.md"
+  },
+  {
+   "d": "2024-10-08",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board of Rosslyn confirmed in its trading update dated 21 August 2024 (the \"Trading Update\") that it expects to report revenue for FY 2024 in line with management's previously stated expectations of £2.9m (FY 2023: £3.0m) and annual recurring revenue (\"ARR\") of £2.3m (FY 2023: £2.4m), with the reduction reflecting the protracted timelines associated with contract negotiations for sizable new opportunities.",
+   "file": "20241008_RDT_Fundraise,-CLN-Conversion-&-Capital-Reorganisation.md"
+  },
+  {
+   "d": "2024-10-29",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "In the near term, the Group expects to achieve positive adj. EBITDA and cash generation on a monthly basis by the end of the current financial year - which will enable accelerated revenue growth in the medium term as the Group leverages the investment that has been made to substantially strengthen Rosslyn's offer.",
+   "file": "20241029_RDT_Final-Results-and-Publication-of-Annual-Report.md"
+  },
+  {
+   "d": "2025-01-30",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -2,
+   "q": "Whilst the Major New Client is expected to make a meaningful contribution to second-half revenue, meeting management's expectations for the year is sensitive to the successful deployment of the initial contract as well as the ability to expand into further departments and further co-development work within the Major New Client.",
+   "file": "20250130_RDT_Interim-Results.md"
+  },
+  {
+   "d": "2025-03-05",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -2,
+   "q": "As a result, some of the revenue that the Company had anticipated receiving from the Major New Client in the current financial year is now expected to be received in FY 2026.",
+   "file": "20250305_RDT_Trading-Update.md"
+  },
+  {
+   "d": "2025-06-19",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "In line with market expectations and the Company's last trading update that was announced on 5 March 2025, the Company expects to report revenue growth for FY 2025 of c. 14% to £3.3m (FY 2024: £2.9m) and a significant improvement in adjusted EBITDA loss to £1.7m (FY 2024: £2.5m loss).",
+   "file": "20250619_RDT_Trading-Update.md"
+  },
+  {
+   "d": "2025-10-21",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -3,
+   "q": "Further to the Company's trading update on 19 June 2025, Rosslyn now expects to report FY 2025 revenue of £3.0m (FY 2024: £2.9m) and adjusted EBITDA loss of £2.0m (FY 2024: £2.5m loss).",
+   "file": "20251021_RDT_Notice-of-Results-and-Trading-Update.md"
+  },
+  {
+   "d": "2025-10-27",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -2,
+   "q": "While meeting management's expectations for the year is sensitive to the timing of securing new contracts - including the rollout to other departments with the Major New Customer - and with the sales cycles for converting large enterprise opportunities often being protracted, the Board is pleased to note that trading was as anticipated for the first quarter of FY 2026 and the Group continues to have a strong pipeline.",
+   "file": "20251027_RDT_Final-Results-and-Publication-of-Annual-Report.md"
+  },
+  {
+   "d": "2026-01-28",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -2,
+   "q": "While the Board is pleased with the Group's progress with the rollout with its Major Client, in securing new contracts and in the adoption of AICE and its new AI tools, some of the pipeline that it had expected to convert in H2 2026 is now anticipated to be in the first half of the next financial year.",
+   "file": "20260128_RDT_Interim-Results.md"
+  },
+  {
+   "d": "2026-10-28",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Rosslyn has established a solid pipeline of new business, providing opportunities for both the short- and long-term, and as a result the Board remains confident in achieving current market expectations.",
+   "file": "20261028_RDT_Final-Results,-Annual-Report-&-AGM-Notice.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-28",
+  "doc": "FY R",
+  "file": "20261028_RDT_Final-Results,-Annual-Report-&-AGM-Notice.md",
+  "vs": "FY R Oct-25 · H1 R Jan-26 · Fundraise Mar-26 · back to FY R Oct-24",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Target dropped",
+    "text": "Cash-generation date gone: Jan-26 “the Group remains on track to become cash flow generative in FY 2027” → Mar-26 “monthly cash generation and profitability in FY 2028” → now no date, only “cash and cash equivalents at 30 April 2027 in line with market expectations”",
+    "span": "Dated cash-generative target given Aug-24, Oct-24, Mar-25, Jun-25, Jan-26, Mar-26 → first results without one"
+   },
+   {
+    "sev": "red",
+    "type": "Wording vs number",
+    "text": "FY26 ARR guide missed without an update: Jan-26 “a slight increase in year-on-year revenue and an increase in ARR of over 15%” → now “Revenue remained stable at £3.0m (2025: £3.0m)”, ARR “remained stable with prior year at £2.3m (2025: £2.3m)”",
+    "span": "No year-end trading update before results (issued Jun-22, Apr-23, Aug-24, Jun-25) → first skip in 4 years"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Pipeline: Oct-25 “Total pipeline as at 30 April 2025 was £4.1m” → now “Total pipeline as at 30 April 2026 was £3.6m”, beside “Rosslyn has established a solid pipeline of new business”",
+    "span": "Weighted pipeline £1.6m → £1.7m"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Market anchor back: Oct-25 “meeting management's expectations for the year is sensitive to the timing of securing new contracts” → now “the Board remains confident in achieving current market expectations”",
+    "span": "Market expectations last cited Jun-25"
+   }
+  ]
+ }
+}

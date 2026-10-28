@@ -1,18 +1,10 @@
 {
  "ticker": "MCON",
- "v": "2026-10-19.3a6f",
+ "v": "2026-10-28.dcfc",
  "ccy": "GBX",
- "src": "AlphaVantage MCON.LON weekly",
+ "src": "AlphaVantage MCON.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-13",
-   108.5
-  ],
-  [
-   "2021-10-20",
-   112.0
-  ],
   [
    "2021-10-25",
    116.0
@@ -964,6 +956,10 @@
   [
    "2026-10-16",
    83.0
+  ],
+  [
+   "2026-10-23",
+   78.0
   ]
  ],
  "marks": [

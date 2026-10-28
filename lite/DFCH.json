@@ -1,14 +1,10 @@
 {
  "ticker": "DFCH",
- "v": "2026-10-19.97eb",
+ "v": "2026-10-28.2563",
  "ccy": "GBX",
- "src": "AlphaVantage DFCH.LON weekly",
+ "src": "AlphaVantage DFCH.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-13",
-   58.0
-  ],
   [
    "2021-10-22",
    58.0
@@ -1124,6 +1120,10 @@
   [
    "2026-10-16",
    72.2
+  ],
+  [
+   "2026-10-23",
+   72.5
   ]
  ],
  "marks": [

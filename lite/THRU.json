@@ -1,14 +1,10 @@
 {
  "ticker": "THRU",
- "v": "2026-10-19.6073",
+ "v": "2026-10-28.6cb0",
  "ccy": "GBX",
- "src": "AlphaVantage THRU.LON weekly",
+ "src": "AlphaVantage THRU.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-15",
-   20.5
-  ],
   [
    "2021-10-22",
    19.7
@@ -1056,6 +1052,10 @@
   [
    "2026-10-16",
    2.1
+  ],
+  [
+   "2026-10-23",
+   1.9
   ]
  ],
  "marks": [
