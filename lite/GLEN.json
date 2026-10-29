@@ -1,8 +1,8 @@
 {
  "ticker": "GLEN",
- "v": "2026-10-21.eb3f",
+ "v": "2026-10-29.33e1",
  "ccy": "GBX",
- "src": "Yahoo GLEN.L weekly",
+ "src": "Yahoo GLEN.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-21",
    555.4
+  ],
+  [
+   "2026-10-23",
+   536.5
   ]
  ],
  "marks": [
@@ -1352,32 +1356,41 @@
    "s": 2,
    "q": "We now expect full-year 2026 Marketing Adj. EBIT to exceed $5bn.",
    "file": "20261002_GLEN_ASX-secondary-listing+updated-marketing-guidance.md"
+  },
+  {
+   "d": "2026-10-29",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "As communicated in our recent (October 2nd) Marketing guidance methodology update, we expect 2026 full-year Marketing Adjusted EBIT to exceed $5bn.",
+   "file": "20261029_GLEN_Third-Quarter-2026-Production-Report.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-02",
-  "doc": "Q3 TU",
-  "file": "20261002_GLEN_ASX-secondary-listing+updated-marketing-guidance.md",
-  "vs": "Q3 OPS Oct-25 · H1 R Aug-26 · H1 OPS Jul-26 · Q1 OPS Apr-26 · FY OPS Jan-26",
+  "rns": "2026-10-29",
+  "doc": "OPS",
+  "file": "20261029_GLEN_Third-Quarter-2026-Production-Report.md",
+  "vs": "Q3 OPS Oct-25 · back to Oct-24 · H1 OPS Jul-26, Oct-26 Marketing update",
   "lines": [
    {
     "sev": "amber",
-    "type": "Anchor softened",
-    "text": "Was a fixed long-term Marketing Adj. EBIT range: “recently upgraded (in July 2025) $2.3-3.5 billion p.a. long-term through the cycle guidance range” → now a floating matrix “which incorporates, via a matrix, the interplay between funding costs and Readily Marketable Inventories (RMI)”, applied from 2027",
-    "span": "Fixed range cited Jul-25, Oct-25, Jan-26, Feb-26, Apr-26 → floats with RMI and rates from 2027"
+    "type": "New caution",
+    "text": "Copper: Jul-26 holding the 810-870kt range despite Kidd “implies a like-for-like upgrade in the guidance mid-points for these two commodities” → Oct-26 Kidd now “contributing to the expected copper outcome towards the lower end of its range”; steelmaking coal (range already cut to 30-32mt in Jul-26) also guided to the lower end",
+    "span": "Range unchanged; position within range walked down for the growth line"
    },
    {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "H1 R Aug-26 gave only the half: “Marketing Adjusted EBIT of $3.3 billion, up 142%” → now a full-year floor: “We now expect full-year 2026 Marketing Adj. EBIT to exceed $5bn.”",
-    "span": "Aug-26 → Oct-26"
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Cobalt: Q3 OPS Oct-25 carried FY cobalt guidance (41-43kt, from 42-45kt) → no cobalt guide in the Oct-26 table; withdrawn in Jan-26 as “there is currently too much uncertainty to provide reliable 2026 FY cobalt production guidance”",
+    "span": "Guided at Oct-24 and Oct-25 Q3 reports → absent all 2026"
    },
    {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Long-term guide was “$2.3-3.5 billion p.a.” (mid c.$2.9bn) → now “the long-term Marketing Adj. EBIT guidance mid-point would be c.$3.5bn (range of c.$2.8bn to c.$4.2bn)”",
-    "span": "Jul-25 range → Oct-26 matrix at 30 Jun 2026 RMI"
+    "sev": "grey",
+    "type": "Number to words",
+    "text": "Ferrochrome: Q3 OPS Oct-25 “Attributable ferrochrome production of 436,000 tonnes” (894kt at Oct-24) → Oct-26 only “attributable ferrochrome production increased 29% quarter on quarter”, no tonnage; summary table now shows chrome ore instead",
+    "span": "Ferrochrome kt in Q3 totals Oct-24, Oct-25 → replaced by chrome ore since Q1 2026"
    }
   ]
  }

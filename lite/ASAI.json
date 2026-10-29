@@ -1,8 +1,8 @@
 {
  "ticker": "ASAI",
- "v": "2026-10-21.90f6",
+ "v": "2026-10-29.8f2d",
  "ccy": "GBX",
- "src": "Yahoo ASAI.L weekly",
+ "src": "Yahoo ASAI.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-21",
    250.0
+  ],
+  [
+   "2026-10-23",
+   246.0
   ]
  ],
  "marks": [
@@ -1234,38 +1238,47 @@
    "s": 0,
    "q": "Accordingly, the Board's expectation is that the underlying net profit for 2026 (which excludes the favourable India-related one-off items) will be in line or slightly ahead of the Board's understanding of the current market consensus for FY 2026 of USD 70.2m (as of the date of this announcement).",
    "file": "20260909_ASAI_H1-2026-Results.md"
+  },
+  {
+   "d": "2026-10-29",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "We are encouraged by the momentum in our business, remain confident in the outlook and opportunities for the Group and expect our portfolio to maintain solid growth throughout the remainder of the year.",
+   "file": "20261029_ASAI_Q3-2026-Business-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-09",
-  "doc": "H1 R",
-  "file": "20260909_ASAI_H1-2026-Results.md",
-  "vs": "H1 R Sep-25 · back to Sep-24 · Q2 BU Jul-26, Q1 BU Apr-26, FY R Apr-26",
+  "rns": "2026-10-29",
+  "doc": "Q3 TU",
+  "file": "20261029_ASAI_Q3-2026-Business-Update.md",
+  "vs": "Q3 BU Oct-25 · H1 R Sep-26 · Q2 BU Jul-26 · Q3 BU Oct-24, Q1 BU Apr-26",
   "lines": [
-   {
-    "sev": "red",
-    "type": "Anchor softened",
-    "text": "H1 25: net profit “to significantly exceed the current company compiled consensus for FY 2025 of USD 37.5m” → H1 26: underlying only, “in line or slightly ahead of the Board's understanding of the current market consensus for FY 2026 of USD 70.2m”",
-    "span": "Interims said exceed consensus at Sep-24 and Sep-25 → first in-line hedge"
-   },
-   {
-    "sev": "amber",
-    "type": "Pushed out",
-    "text": "Kenya core banking rollout: Q1 26 “preparations for the Kenya rollout later this year have moved into a more intensive phase” → H1 26 “rollout in Kenya which is planned for early 2027”",
-    "span": "Apr-26 → Sep-26"
-   },
    {
     "sev": "amber",
     "type": "New caution",
-    "text": "Digital lenders: FY 25 “Competition from pure digital lenders has not had a meaningful impact thus far” → H1 26 “competition has intensified in Kenya given the growing strength of digital lenders serving lower income clients”",
-    "span": "First flag; Kenya is a named growth driver"
+    "text": "PAR>30 2.0% (Sep-25) → 2.4% (Jun-26) → 2.9% (Sep-26); Q2 named only Uganda trade rules, now also “the country saw the impacts from the Ebola outbreak and a drought”, with a short-term reduction in the Uganda portfolio",
+    "span": "Ebola/drought first flagged Oct-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Q2: PAR “which remains industry-leading” → Q3: “industry-leading” dropped, CEO says “maintaining overall portfolio quality” beside PAR>30 up 0.5pt q/q (East Africa 2.9% → 4.6%)",
+    "span": "“industry-leading” used Apr-26, Jul-26, Sep-26 → first gap"
    },
    {
     "sev": "grey",
-    "type": "Restated",
-    "text": "Total funding at 30 June 2025: H1 25 “Total funding increased to USD 597.3m as at 30 June 2025” → H1 26 comparative “from USD 668.1m in H1 2025”",
-    "span": "Sep-25 → Sep-26, no reconciliation given"
+    "type": "Went quiet",
+    "text": "Digital transformation update gone: H1 R said “Preparations intensified for the rollout in Kenya which is planned for early 2027” → Q3 BU no mention of the core banking/digital rollout",
+    "span": "Digital rollout a highlight in Oct-25, Apr-26, Jul-26 business updates"
+   },
+   {
+    "sev": "grey",
+    "type": "Split withheld",
+    "text": "Country-level clients/branches/Gross OLP/PAR rows (Pakistan, Ghana, Uganda, etc.) in Q3-25 → regional totals only in Q3-26",
+    "span": "Country rows in Oct-24, Oct-25, Apr-26 → regional only since Jul-26"
    }
   ]
  }

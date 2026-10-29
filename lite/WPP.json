@@ -1,8 +1,8 @@
 {
  "ticker": "WPP",
- "v": "2026-10-21.3151",
+ "v": "2026-10-29.75f8",
  "ccy": "GBX",
- "src": "Yahoo WPP.L weekly",
+ "src": "Yahoo WPP.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-21",
    397.9
+  ],
+  [
+   "2026-10-23",
+   396.8
   ]
  ],
  "marks": [
@@ -1244,14 +1248,48 @@
    "q": "We continue to expect an improving LFL growth trajectory in the second half, with LFL revenue less pass-through costs overall down low to mid-single digits in H2, and expect FY headline operating margin to be in the range of 12% to 13%.",
    "file": "20260806_WPP_2026-Interim-Results.md",
    "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2026-10-29",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "We continue to expect LFL revenue less pass-through costs down low to mid-single digits in H2, with Q4 towards the better end of this range, and expect FY headline operating margin to be in the range of 12% to 13%.",
+   "file": "20261029_WPP_Third-Quarter-2026-Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-01",
-  "doc": "Notice",
-  "file": "20261001_WPP_Notification-of-Q3-2026-Trading-Update.md",
-  "vs": "Q3 TU notice Sep-25 · H1 R Aug-26",
-  "lines": []
+  "rns": "2026-10-29",
+  "doc": "Q3 TU",
+  "file": "20261029_WPP_Third-Quarter-2026-Trading-Update.md",
+  "vs": "Q3 TU Oct-25 · H1 R Aug-26 · back to Oct-24, Feb/Apr-26",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Split withheld",
+    "text": "Top-five-markets split: Q3 2025 table “Top five markets - revenue less pass-through costs” (USA, UK, Germany, China, India) → Q3 2026 regions reorganised into four, UK/Germany/China/India named in text, no US LFL figure",
+    "span": "Table in every print Oct-24 to Apr-26 → absent Aug-26 and Oct-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "WPP Open adoption: Q3 2025 “76,000 of our people (equivalent to over 90% of client-facing staff) using the platform actively on a monthly basis” → no user count in Q3 2026",
+    "span": "Given Feb-25, Apr-25, Aug-25, Oct-25, Feb-26 → absent Apr-26, Aug-26, Oct-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Number to words",
+    "text": "Cost savings status: H1 “We are on track to deliver £100m of in-year savings in 2026” → Q3 “We maintained progress on delivering our targeted cost savings” (the £100m target is still repeated in the Elevate28 targets box)",
+    "span": "Aug-26 → Oct-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "New Q4 steer inside the held H2 guide: H1 “expect LFL revenue less pass-through costs overall to decline low to mid-single digits in H2” → Q3 adds “with Q4 towards the better end of this range”; FY margin 12% to 13% unchanged",
+    "span": "Aug-26 → Oct-26"
+   }
+  ]
  }
 }

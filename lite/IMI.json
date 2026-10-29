@@ -1,8 +1,8 @@
 {
  "ticker": "IMI",
- "v": "2026-10-21.941c",
+ "v": "2026-10-29.0cb9",
  "ccy": "GBX",
- "src": "Yahoo IMI.L weekly",
+ "src": "Yahoo IMI.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-21",
    2926.0
+  ],
+  [
+   "2026-10-23",
+   2820.0
   ]
  ],
  "marks": [
@@ -1236,14 +1240,48 @@
    "q": "The strength of our first half performance gives us confidence in our outlook for 2026. We remain on track to deliver our sixth consecutive year of mid-single digit organic revenue growth.",
    "file": "20260731_IMI_Half-Year-Results.md",
    "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2026-10-29",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "We now expect full year adjusted basic earnings per share to be between 137p and 143p (previously between 136p and 142p). This principally reflects the additional contribution from Truflo Marine, the disposal of which is now expected to complete in the fourth quarter of 2026 (previously the third quarter), as well as stronger growth in Transport.",
+   "file": "20261029_IMI_Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-01",
-  "doc": "Admission to Trading",
-  "file": "20261001_IMI_Admission-to-Trading.md",
-  "vs": "Admission notices 10-Sep-26, 08-Sep-26, 07-Sep-26 · no same-type RNS a year earlier",
-  "lines": []
+  "rns": "2026-10-29",
+  "doc": "Q3 TU",
+  "file": "20261029_IMI_Trading-Update.md",
+  "vs": "Q3 TU Nov-25 · back to Nov-24 · H1 R Jul-26",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "EPS guide raise is mostly inorganic and one-off: “principally reflecting the additional contribution from Truflo Marine ahead of its disposal” (disposal slipped Q3 → Q4)",
+    "span": "H1 R Jul-26 guide 136p–142p assumed Truflo completion in Q3 → now 137p–143p"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Headline “Continued momentum in the third quarter against a strong comparator” vs “Third quarter organic revenue was 2% higher, against 12% organic growth in the third quarter of 2025”; Automation −3%, Process Automation revenue −6% in Q3",
+    "span": "Q3 TU Nov-25: +12% Q3 organic; H1 R Jul-26: +5% H1 organic"
+   },
+   {
+    "sev": "amber",
+    "type": "Anchor softened",
+    "text": "Middle East shipments: “Shipments to the Middle East were modestly ahead of the expectations set out at our Q1 trading update” → “Year to date, shipments to the Middle East are in line with the expectations set out at our first quarter trading update”",
+    "span": "H1 R Jul-26 → Q3 TU Oct-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "First early next-year assumptions at a Q3 TU: “For 2027, we currently expect a net interest charge of around £23m”, tax rate similar to 2026, shares ~231m",
+    "span": "None given at Q3 TU Nov-25 or Nov-24"
+   }
+  ]
  }
 }

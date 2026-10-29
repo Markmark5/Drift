@@ -1,8 +1,8 @@
 {
  "ticker": "ENSI",
- "v": "2026-10-19.4362",
+ "v": "2026-10-29.058b",
  "ccy": "GBX",
- "src": "AlphaVantage ENSI.LON weekly",
+ "src": "AlphaVantage ENSI.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -932,6 +932,10 @@
   [
    "2026-10-16",
    81.0
+  ],
+  [
+   "2026-10-23",
+   77.0
   ]
  ],
  "marks": [
