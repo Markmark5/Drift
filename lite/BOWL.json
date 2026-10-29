@@ -1,18 +1,10 @@
 {
  "ticker": "BOWL",
- "v": "2026-10-19.606a",
+ "v": "2026-10-29.cc9e",
  "ccy": "GBX",
- "src": "AlphaVantage BOWL.LON weekly",
+ "src": "AlphaVantage BOWL.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-15",
-   235.0
-  ],
-  [
-   "2021-10-22",
-   226.0
-  ],
   [
    "2021-10-29",
    237.5
@@ -1056,6 +1048,10 @@
   [
    "2026-10-16",
    267.0
+  ],
+  [
+   "2026-10-23",
+   274.0
   ]
  ],
  "marks": [

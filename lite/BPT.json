@@ -1,18 +1,10 @@
 {
  "ticker": "BPT",
- "v": "2026-10-19.5a3b",
+ "v": "2026-10-29.3b79",
  "ccy": "GBX",
- "src": "AlphaVantage BPT.LON weekly",
+ "src": "AlphaVantage BPT.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-15",
-   470.0
-  ],
-  [
-   "2021-10-22",
-   467.0
-  ],
   [
    "2021-10-29",
    496.0
@@ -1056,6 +1048,10 @@
   [
    "2026-10-16",
    404.2
+  ],
+  [
+   "2026-10-23",
+   386.0
   ]
  ],
  "marks": [

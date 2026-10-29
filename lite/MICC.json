@@ -1,0 +1,264 @@
+{
+ "ticker": "MICC",
+ "v": "2026-10-29.8b8d",
+ "ccy": "GBX",
+ "src": "AlphaVantage MICC.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2025-12-19",
+   1184.0
+  ],
+  [
+   "2025-12-24",
+   1167.5
+  ],
+  [
+   "2026-01-02",
+   1156.0
+  ],
+  [
+   "2026-01-09",
+   1130.0
+  ],
+  [
+   "2026-01-16",
+   1243.5
+  ],
+  [
+   "2026-01-23",
+   1231.0
+  ],
+  [
+   "2026-01-30",
+   1297.5
+  ],
+  [
+   "2026-02-06",
+   1413.0
+  ],
+  [
+   "2026-02-13",
+   1218.5
+  ],
+  [
+   "2026-02-20",
+   1229.5
+  ],
+  [
+   "2026-02-27",
+   1175.0
+  ],
+  [
+   "2026-03-06",
+   1138.5
+  ],
+  [
+   "2026-03-13",
+   1166.0
+  ],
+  [
+   "2026-03-20",
+   1115.0
+  ],
+  [
+   "2026-03-27",
+   1102.0
+  ],
+  [
+   "2026-04-02",
+   1077.0
+  ],
+  [
+   "2026-04-10",
+   1072.5
+  ],
+  [
+   "2026-04-17",
+   1074.5
+  ],
+  [
+   "2026-04-24",
+   977.0
+  ],
+  [
+   "2026-05-01",
+   1112.5
+  ],
+  [
+   "2026-05-08",
+   1087.0
+  ],
+  [
+   "2026-05-15",
+   1232.0
+  ],
+  [
+   "2026-05-22",
+   1199.5
+  ],
+  [
+   "2026-05-29",
+   1199.0
+  ],
+  [
+   "2026-06-05",
+   1281.0
+  ],
+  [
+   "2026-06-12",
+   1333.5
+  ],
+  [
+   "2026-06-19",
+   1232.5
+  ],
+  [
+   "2026-06-26",
+   1321.0
+  ],
+  [
+   "2026-07-03",
+   1404.0
+  ],
+  [
+   "2026-07-10",
+   1387.5
+  ],
+  [
+   "2026-07-17",
+   1399.5
+  ],
+  [
+   "2026-07-24",
+   1345.0
+  ],
+  [
+   "2026-07-31",
+   1383.0
+  ],
+  [
+   "2026-08-07",
+   1425.0
+  ],
+  [
+   "2026-08-14",
+   1452.5
+  ],
+  [
+   "2026-08-21",
+   1454.5
+  ],
+  [
+   "2026-08-28",
+   1487.0
+  ],
+  [
+   "2026-09-04",
+   1433.0
+  ],
+  [
+   "2026-09-11",
+   1450.0
+  ],
+  [
+   "2026-09-18",
+   1412.0
+  ],
+  [
+   "2026-09-25",
+   1424.5
+  ],
+  [
+   "2026-10-02",
+   1314.0
+  ],
+  [
+   "2026-10-09",
+   1299.5
+  ],
+  [
+   "2026-10-16",
+   1416.0
+  ],
+  [
+   "2026-10-23",
+   1424.0
+  ],
+  [
+   "2026-10-28",
+   1452.5
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2026-02-12",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "We expect the improvements in the year to be weighted more in the second half of 2026 due to the phasing of TSAs and commodity prices.",
+   "file": "20260212_MICC_2025-Full-Year-Results.md"
+  },
+  {
+   "d": "2026-04-30",
+   "doc": "Q1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "We expect organic sales growth for 2026 to be between 3% to 5% and an Adjusted EBITDA margin improvement of 40 to 60bps, on a comparable perimeter basis with 2025.",
+   "file": "20260430_MICC_Q1-2026-Trading-Update.md"
+  },
+  {
+   "d": "2026-07-30",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Looking ahead, while we’re clear-eyed on the wider external challenges, we are committed to our strategy, confident in our ability to execute, and reaffirm our full-year outlook.",
+   "file": "20260730_MICC_2026-Half-Year-Results.md"
+  },
+  {
+   "d": "2026-10-29",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 0,
+   "q": "We have upgraded our outlook for organic sales growth to approximately 5.5%, compared to our prior outlook of 3% to 5%.",
+   "file": "20261029_MICC_Q3-2026-Trading-Update.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-10-29",
+  "doc": "Q3 TU",
+  "file": "20261029_MICC_Q3-2026-Trading-Update.md",
+  "vs": "H1 R Jul-26 · Q1 TU Apr-26 · FY R Feb-26 (no Q3 a year earlier: listed Dec-25)",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "Not mentioned at Q1 or H1 → Q3: “There was some pre-buying ahead of the first deployment wave of our technology transformation in the UK and Ireland, Hungary and Romania.” Pull-forward into Q3 not quantified",
+    "span": "First flag; deployment starts Nov-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Wording vs number",
+    "text": "Europe & ANZ price growth Q1 −0.3% → Q3 −2.4% beside “strong performance”; explained as “Year-on-year pricing was lower mainly due to channel mix and phasing of promotional spend in the quarter compared to the previous year.”",
+    "span": "Q1-26 → Q3-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Weather was words at H1 (“supported by favourable weather towards the end of the period”) → now a number: “Extended summer in Europe aided growth by an estimated 2-3% during the quarter”",
+    "span": "H1-26 → Q3-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Productivity target timing: H1 “on track to deliver planned savings of €500 million in the medium term” → Q3 “remains on track to deliver planned cumulative savings of €500 million by 2028”",
+    "span": "H1-26 → Q3-26"
+   }
+  ]
+ }
+}

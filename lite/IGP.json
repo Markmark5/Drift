@@ -1,18 +1,10 @@
 {
  "ticker": "IGP",
- "v": "2026-10-19.4d4f",
+ "v": "2026-10-29.656d",
  "ccy": "GBX",
- "src": "AlphaVantage IGP.LON weekly",
+ "src": "AlphaVantage IGP.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-15",
-   82.0
-  ],
-  [
-   "2021-10-22",
-   85.5
-  ],
   [
    "2021-10-29",
    86.5
@@ -1056,6 +1048,10 @@
   [
    "2026-10-16",
    131.0
+  ],
+  [
+   "2026-10-23",
+   141.0
   ]
  ],
  "marks": [

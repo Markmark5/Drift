@@ -1,18 +1,10 @@
 {
  "ticker": "HSW",
- "v": "2026-10-19.fdea",
+ "v": "2026-10-29.4031",
  "ccy": "GBX",
- "src": "AlphaVantage HSW.LON weekly",
+ "src": "AlphaVantage HSW.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-15",
-   74.1
-  ],
-  [
-   "2021-10-22",
-   78.8
-  ],
   [
    "2021-10-29",
    72.0
@@ -1056,6 +1048,10 @@
   [
    "2026-10-16",
    84.8
+  ],
+  [
+   "2026-10-23",
+   83.4
   ]
  ],
  "marks": [

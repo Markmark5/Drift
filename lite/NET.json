@@ -1,18 +1,10 @@
 {
  "ticker": "NET",
- "v": "2026-10-19.5551",
+ "v": "2026-10-29.474a",
  "ccy": "GBX",
- "src": "AlphaVantage NET.LON weekly",
+ "src": "AlphaVantage NET.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-15",
-   83.0
-  ],
-  [
-   "2021-10-22",
-   83.5
-  ],
   [
    "2021-10-29",
    83.5
@@ -1056,6 +1048,10 @@
   [
    "2026-10-16",
    129.0
+  ],
+  [
+   "2026-10-23",
+   127.5
   ]
  ],
  "marks": [

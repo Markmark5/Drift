@@ -1,18 +1,10 @@
 {
  "ticker": "TSCO",
- "v": "2026-10-19.75db",
+ "v": "2026-10-29.bc4f",
  "ccy": "GBX",
- "src": "AlphaVantage TSCO.LON weekly",
+ "src": "AlphaVantage TSCO.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-15",
-   267.9
-  ],
-  [
-   "2021-10-22",
-   270.75
-  ],
   [
    "2021-10-29",
    269.9
@@ -1056,6 +1048,10 @@
   [
    "2026-10-16",
    535.0
+  ],
+  [
+   "2026-10-23",
+   544.6
   ]
  ],
  "marks": [

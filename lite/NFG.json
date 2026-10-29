@@ -1,18 +1,10 @@
 {
  "ticker": "NFG",
- "v": "2026-10-19.b0e4",
+ "v": "2026-10-29.30d7",
  "ccy": "GBX",
- "src": "AlphaVantage NFG.LON weekly",
+ "src": "AlphaVantage NFG.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-15",
-   1160.0
-  ],
-  [
-   "2021-10-22",
-   1205.0
-  ],
   [
    "2021-10-29",
    1235.0
@@ -1056,6 +1048,10 @@
   [
    "2026-10-16",
    330.0
+  ],
+  [
+   "2026-10-23",
+   323.0
   ]
  ],
  "marks": [
