@@ -231,12 +231,21 @@
     }
     var tips = [], hits = [];   /* hits: [x, y, tipIndex, radius] in viewBox units, for nearest-mark hover */
     var dots = '', arrows = '', r = S.r, aw = S.aw / 2, ah = S.aw * 0.95, starAt = null;
+    /* a mark newer than the last weekly close sits on the live tail (the point on or after its date) rather
+       than back on that close, so it lines up with the RNS Scorecard badge for the same day (1.9) */
+    var lastPxMs = t(px[px.length - 1][0]);
+    function tailPoint(iso) {
+      var md = t(iso);
+      if (!tail.length || md <= lastPxMs) return null;
+      for (var i = 0; i < tail.length; i++) if (t(tail[i][0]) >= md) return tail[i];
+      return tail[tail.length - 1];
+    }
     (d.marks || []).forEach(function (m, idx) {
-      var wi = weekIndex(m.d), wk = px[wi], cx = X(t(wk[0])), cy = Y(wk[1]);
+      var wi = weekIndex(m.d), tp = tailPoint(m.d), wk = tp || px[wi], cx = X(t(wk[0])), cy = Y(wk[1]);
       var gtxt = (m.g === 'flat' ? 'flat' : (m.g === 'RAISE' ? '▲ RAISE' : '▼ CUT')) + (m.gnote ? ' (' + m.gnote + ')' : '');
       var tipHtml = '<b>' + esc(fmtDate(m.d)) + ' · ' + esc(m.fy || '') + ' ' + esc(m.doc || '') + '</b><br>' +
         'Text ' + fmtScore(m.s) + ' · G ' + esc(gtxt) + '<br>' +
-        'Week close ' + esc(fmtPx(wk[1], ccy)) + ' (' + esc(fmtDate(wk[0], true)) + ')' +
+        (tp ? 'Latest price ' : 'Week close ') + esc(fmtPx(wk[1], ccy)) + ' (' + esc(fmtDate(wk[0], true)) + ')' +
         (m.q ? '<div style="margin-top:4px;opacity:.85;font-style:italic">“' + esc(m.q) + '”</div>' : '');
       var g = '<g class="dc-mk" data-i="' + idx + '" style="cursor:default">';
       var hit = '<circle cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="' + (r * 3).toFixed(1) + '" fill="transparent"/>';
@@ -471,5 +480,5 @@
   }
 
   root.DriftChart = { render: render, legend: legend, validate: validate, parseTail: parseTail,
-                      mountFromPage: mountFromPage, parseEps: parseEps, epsPanel: epsPanel, version: '1.8' };
+                      mountFromPage: mountFromPage, parseEps: parseEps, epsPanel: epsPanel, version: '1.9' };
 })(typeof window !== 'undefined' ? window : this);
