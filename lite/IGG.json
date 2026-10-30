@@ -1,14 +1,10 @@
 {
  "ticker": "IGG",
- "v": "2026-10-19.3fa8",
+ "v": "2026-10-30.5746",
  "ccy": "GBX",
- "src": "Yahoo IGG.L weekly",
+ "src": "Yahoo IGG.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-22",
-   819.5
-  ],
   [
    "2021-10-29",
    793.5
@@ -1052,6 +1048,10 @@
   [
    "2026-10-19",
    978.5
+  ],
+  [
+   "2026-10-23",
+   964.5
   ]
  ],
  "marks": [
@@ -1262,36 +1262,47 @@
    "q": "Reflecting lower OTC revenue retention in Q3 2026, the Board now expects 2026 Group total revenue growth to be in a mid-single-digit per cent range year-on-year.",
    "file": "20261002_IGG_Q3-trading-update.md",
    "gnote": "discounted: Underdog acquisition"
+  },
+  {
+   "d": "2026-10-22",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "2026 guidance (unchanged from IG’s Q3 trading update issued on 2 October 2026):",
+   "file": "20261022_IGG_Capital-Markets-Event.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-02",
-  "doc": "Q3 TU",
-  "file": "20261002_IGG_Q3-trading-update.md",
-  "vs": "Q1 TU Sep-25 · H1 R Jul-26 · H1 TU Jul-26 · AGM May-26",
+  "rns": "2026-10-22",
+  "doc": "OPS",
+  "file": "20261022_IGG_Capital-Markets-Event.md",
+  "vs": "Q3 TU Oct-26 · H1 R / H1 TU Jul-26 · AGM May-26 · Q1 TU Sep-25",
   "lines": [
    {
     "sev": "red",
     "type": "Anchor softened",
-    "text": "Jul-26: “IG expects full-year results in line with market expectations” with 2026 organic revenue growth of “10-15%” and EBITDA margins “in a mid-40s per cent range” → Oct-26 no market-expectations anchor at all; own guide now “2026 total revenue growth now expected to be in a mid-single-digit per cent range year-on-year” and EBITDA margin “in the low-40s per cent range”",
-    "span": "Market or consensus anchor at Sep-25, Dec-25, Mar-26, Jul-26 → gap Oct-26"
+    "text": "Jul-26: “expects full-year results in line with market expectations” → Oct-26 CMD: 2026 guide restated as own range only, no market-expectations or consensus anchor",
+    "span": "Anchor given Sep-25, Jul-08-26, Jul-30-26 → absent since the Oct-02 cut and again at CMD"
    },
    {
     "sev": "amber",
     "type": "Went quiet",
-    "text": "Net interest income: Sep-25 “net interest income is still expected to be approximately £100 million”; May/Jul-26 guide “£110-120 million” → Oct-26 gives no NII figure for Q3 and no full-year NII guide",
-    "span": "NII guided at Sep-25, Mar-26, May-26, Jul-26 → dropped Oct-26"
+    "text": "Net interest income guide: Jul-26 “net interest income of £110-120 million” → CMD 2026 guidance gives revenue growth and EBITDA margin only, no NII figure",
+    "span": "NII guide given Sep-25, May-26, Jul-08-26 → missing Oct-02 and Oct-22"
    },
    {
     "sev": "amber",
-    "type": "Went quiet",
-    "text": "Customer KPIs: Sep-25 promise “From Q1 FY26, active customers, first trades and funded customers will be disclosed every reporting period” → Oct-26 gives only growth rates (“organic first trades up over 25% year-on-year; organic active customers up around 17%”), no counts, no funded customers and no revenue-by-product table"
+    "type": "Number to words",
+    "text": "Capital framework: Jul-26 “regulatory capital maintained within 160-200% of minimum requirements” → CMD “commitment to an investment grade credit rating”, no solvency range",
+    "span": "160-200% range in framework Mar-26, Jul-26 → dropped at CMD (balance sheet refined)"
    },
    {
-    "sev": "amber",
+    "sev": "grey",
     "type": "Wording vs number",
-    "text": "“The underlying business remains strong.” beside Q3 total revenue “down approximately 14% year-on-year” and OTC net trading revenue “around 18% lower year-on-year”"
+    "text": "“OTC customer income grew by approximately 8%, highlighting the strength of the underlying business” beside OTC net trading revenue of £156.1m, down 18% YoY and 26% QoQ",
+    "span": "Group total revenue £240.5m, down 14% YoY, 21% QoQ"
    }
   ]
  }

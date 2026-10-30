@@ -1,18 +1,10 @@
 {
  "ticker": "CLBS",
- "v": "2026-10-19.4aa2",
+ "v": "2026-10-30.17d6",
  "ccy": "GBX",
- "src": "AlphaVantage CLBS.LON weekly",
+ "src": "AlphaVantage CLBS.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-15",
-   356.0
-  ],
-  [
-   "2021-10-22",
-   371.0
-  ],
   [
    "2021-10-29",
    380.0
@@ -1056,18 +1048,13 @@
   [
    "2026-10-16",
    53.0
+  ],
+  [
+   "2026-10-23",
+   52.0
   ]
  ],
  "marks": [
-  {
-   "d": "2021-10-19",
-   "doc": "H1 TU",
-   "fy": "FY22",
-   "g": "flat",
-   "s": 0,
-   "q": "The board remains confident in delivering a solid full year FY22, in line with management expectations.",
-   "file": "20211019_CLBS_Trading-Update,-CEO-succession-&-Notice-of-Results.md"
-  },
   {
    "d": "2021-12-01",
    "doc": "H1 R",

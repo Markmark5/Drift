@@ -1,18 +1,10 @@
 {
  "ticker": "TEP",
- "v": "2026-10-19.7a9d",
+ "v": "2026-10-30.3bf9",
  "ccy": "GBX",
- "src": "AlphaVantage TEP.LON weekly",
+ "src": "AlphaVantage TEP.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-15",
-   1228.0
-  ],
-  [
-   "2021-10-22",
-   1270.0
-  ],
   [
    "2021-10-29",
    1248.0
@@ -1056,6 +1048,10 @@
   [
    "2026-10-16",
    889.0
+  ],
+  [
+   "2026-10-23",
+   896.0
   ]
  ],
  "marks": [
