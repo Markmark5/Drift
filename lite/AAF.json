@@ -1,8 +1,8 @@
 {
  "ticker": "AAF",
- "v": "2026-10-23.7871",
+ "v": "2026-10-30.b9be",
  "ccy": "GBX",
- "src": "AlphaVantage AAF.LON weekly",
+ "src": "AlphaVantage AAF.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-16",
    285.2
+  ],
+  [
+   "2026-10-23",
+   280.0
   ]
  ],
  "marks": [
@@ -1235,26 +1239,48 @@
    "s": -1,
    "q": "Higher energy costs arising from recent geopolitical developments are expected to increase inflationary pressures and weigh on EBITDA margins in the near term, however, we will continue to focus on offsetting some of this impact over the year.",
    "file": "20260723_AAF_Q1-Results.md"
+  },
+  {
+   "d": "2026-10-30",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 1,
+   "q": "Despite rising fuel costs continuing to exert inflationary pressure on our cost base, we delivered a record underlying EBITDA margin of 50.4% in Q2’27 through a combination of operational discipline, ongoing cost efficiency programmes and continued scale benefits.",
+   "file": "20261030_AAF_Half-year-Report.md",
+   "gnote": "early signal: first step up in tone"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-23",
-  "doc": "OPS",
-  "file": "20260923_AAF_Airtel-Money-Intention-to-Float-Announcement.md",
-  "vs": "Q1 R Jul-26 · FY R May-26 · back to May-25, Oct-25, Jan-26",
+  "rns": "2026-10-30",
+  "doc": "H1 R",
+  "file": "20261030_AAF_Half-year-Report.md",
+  "vs": "H1 R Oct-25 · back to Oct-23 · Q1 R Jul-26 · FY R May-26",
   "lines": [
    {
+    "sev": "red",
+    "type": "Went quiet",
+    "text": "Capex guide: Oct-25 “Capex guidance for FY'26 has been increased to between $875m and $900m”; May-26 “Capex guidance for FY'27 is approximately $1.1bn” → Oct-26 “Capex of $657m during the period more than doubled”, full-year capex guide not restated",
+    "span": "H1 restated the full-year capex guide at Oct-23, Oct-24, Oct-25 → first H1 without it"
+   },
+   {
     "sev": "amber",
-    "type": "Pushed out",
-    "text": "Airtel Money IPO timing: May-25 “we anticipate a listing event in the first half of calendar year 2026”, Oct-25 “on course for a listing in the first half of 2026”, Jan-26 “We remain on track for the listing of Airtel Money in the first half of 2026” → May-26 “the intention of undertaking the IPO in the second half of 2026” → intention to float only on 23 Sep-26",
-    "span": "H1 2026 target given 3 times → slipped to H2 2026"
+    "type": "Target dropped",
+    "text": "Margin aim: Oct-25 “we'll continue to focus on further incremental margin improvements, subject to macroeconomic stability” → Oct-26 “margin performance will continue to be influenced by the macroeconomic environment, including its impact on fuel costs”, no improvement aim",
+    "span": "Jul-26 had flagged near-term margin pressure"
    },
    {
     "sev": "grey",
-    "type": "Split withheld",
-    "text": "No Airtel Money figures in the RNS itself (Jul-26 Q1 gave “Annualised TPV in excess of $245bn”); Sep-26 says the separate announcement covers “its current trading and outlook” and “is available on Airtel Money's website”",
-    "span": "Jul-26 → Sep-26"
+    "type": "Went quiet",
+    "text": "Debt localisation: Oct-25 “around 95% of our OpCo debt (excl. lease liabilities) now in local currency” → no local-currency debt share given in Oct-26",
+    "span": "Given at Oct-24 (89%) and Oct-25 (95%); absent since May-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Went quiet",
+    "text": "Population coverage: Oct-25 “overall population coverage reached 81.5%” → no coverage figure in Oct-26",
+    "span": "Given Jul-25, Oct-25, Jan-26; absent since May-26"
    }
   ]
  }

@@ -1,8 +1,8 @@
 {
  "ticker": "MHA",
- "v": "2026-10-21.5d3d",
+ "v": "2026-10-30.ddd8",
  "ccy": "GBX",
- "src": "Yahoo MHA.L weekly",
+ "src": "Yahoo MHA.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -324,6 +324,10 @@
   [
    "2026-10-21",
    140.0
+  ],
+  [
+   "2026-10-23",
+   140.5
   ]
  ],
  "marks": [
@@ -381,14 +385,42 @@
    "s": -1,
    "q": "The Board remains confident in the Group's prospects for FY27 and in delivering its medium-term ambition of annual revenues in excess of £500 million",
    "file": "20260721_MHA_Preliminary-Results.md"
+  },
+  {
+   "d": "2026-10-30",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "We remain confident of delivering a full-year performance in line with market expectations, and in our medium-term ambition of annual revenues in excess of £500 million.",
+   "file": "20261030_MHA_Trading-Update-and-Notice-of-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-24",
-  "doc": "FY R",
-  "file": "20260724_MHA_Confirmation-of-Full-Year-Results.md",
-  "vs": "Prelims 21-Jul-26 (no confirmation notice a year earlier)",
-  "lines": []
+  "rns": "2026-10-30",
+  "doc": "H1 TU",
+  "file": "20261030_MHA_Trading-Update-and-Notice-of-Results.md",
+  "vs": "H1 TU Oct-25 · FY R Jul-26",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Headline “Strong first-half performance” beside “Organic growth was 4%, against a strong comparative period” → FY26 was “organic growth of 6.4%”; H1 26 growth of 13% less 4.5% acquired implied ~8.5%",
+    "span": "H1 26 (~8.5% implied) → FY26 6.4% → H1 27 4%"
+   },
+   {
+    "sev": "grey",
+    "type": "Went quiet",
+    "text": "Last year: “The Group experienced strong growth across all service lines in H1 26” → this year no service-line growth statement, sector growth only",
+    "span": "Oct-25 H1 TU and Jul-26 FY R both claimed all service lines grew"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Organic growth now stated outright in the half-year update (Oct-25 gave only the acquisition split); recurring revenue “remaining at approximately 87% of total revenue” added to the H1 TU",
+    "span": "First H1 TU to quantify organic growth"
+   }
+  ]
  }
 }

@@ -1,8 +1,8 @@
 {
  "ticker": "BP.",
- "v": "2026-10-20.3b57",
+ "v": "2026-10-30.34e3",
  "ccy": "GBX",
- "src": "Yahoo BP.L weekly",
+ "src": "Yahoo BP.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1048,6 +1048,10 @@
   [
    "2026-10-16",
    614.1
+  ],
+  [
+   "2026-10-23",
+   611.9
   ]
  ],
  "marks": [
