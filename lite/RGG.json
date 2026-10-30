@@ -1,8 +1,8 @@
 {
  "ticker": "RGG",
- "v": "2026-10-19.6af9",
+ "v": "2026-10-30.62ea",
  "ccy": "GBX",
- "src": "Yahoo RGG.L weekly",
+ "src": "Yahoo RGG.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -256,6 +256,10 @@
   [
    "2026-10-19",
    100.78
+  ],
+  [
+   "2026-10-23",
+   102.0
   ]
  ],
  "marks": [
@@ -357,37 +361,47 @@
    "s": 3,
    "q": "The Board now expects for the Group to deliver revenue in excess of £19 million (previous guidance of in excess of £14 million) and net profit in excess of £9 million for FY2026 (previous guidance of in excess of £4 million) and is also encouraged by the outlook for FY2027.",
    "file": "20261001_RGG_Trading-Update.md"
+  },
+  {
+   "d": "2026-10-30",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "As we enter the final quarter of the year, our focus remains on converting strong demand into contracted business, maintaining a disciplined approach to claims management, managing costs and cash effectively, and ensuring our operational capabilities continue to scale alongside the growth of the business.",
+   "file": "20261030_RGG_Quarterly-Review.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-01",
+  "rns": "2026-10-30",
   "doc": "Q3 TU",
-  "file": "20261001_RGG_Trading-Update.md",
-  "vs": "Q3 TU Oct-25 · TU Sep-26 · Jul/Aug-26",
+  "file": "20261030_RGG_Quarterly-Review.md",
+  "vs": "Q3 review Oct-25 · Q1 TU Apr-26 · TU 1 Oct-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Target dropped",
-    "text": "Sep-26: “its target of 100,000 contracts by 2029 is becoming more of a reality” → Oct-26 no mention of the 100,000-contract target",
-    "span": "Cited Feb, Mar, Apr, Jun, Aug, Sep-26 → first gap"
+    "type": "Went quiet",
+    "text": "1 Oct-26: “revenue in excess of £19 million” and “net profit in excess of £9 million for FY2026”, plus FY2027 “encouraged by the outlook” → 30 Oct-26 no FY2026 or FY2027 guide restated, only “Whilst our trading progress has been well addressed in previous trading updates”",
+    "span": "Numeric FY26 guide given Sep and 1 Oct-26, expectations anchor in every 2026 trading print → not repeated in the Q3 review; not withdrawn"
    },
    {
     "sev": "amber",
+    "type": "Split withheld",
+    "text": "Quarter-only tables before: Q3-25 revenue “£752,100”, Q1-26 revenue “£882,428” with quarter contracts → now nine-month figures only, plus “£4.5 million generated in September alone”",
+    "span": "Quarter-alone revenue and contracts given Oct-25 and Apr-26 → first quarterly without them"
+   },
+   {
+    "sev": "grey",
     "type": "Went quiet",
-    "text": "Cash: Sep-26 “cash position solidifying to approximately £7.5 million at 31 August 2026” → Oct-26 no cash figure, only “disciplined approach to costs and cash management”",
-    "span": "Given Jul-26 (£2.4m), Aug-26, Sep-26"
+    "text": "Partner onboarding count: “adding a total of 52 new lettings agents” (Oct-25), “having onboarded 139 new lettings agents, charities, councils and universities in Q1” (Apr-26) → now only “welcoming three new strategic partners”",
+    "span": "Count given Oct-25, Apr-26 → missing Oct-26"
    },
    {
     "sev": "grey",
     "type": "Restated",
-    "text": "9m 2025 contracts: Q3 TU Oct-25 table “2,288” → Oct-26 “nine months ended 30 September 2025: 2,343”; 9m 2025 avg contract value £753 (Oct-25) → £734 in table, “£743” in text"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Numeric FY26 guide raised: “revenue in excess of £19 million (previous guidance of in excess of £14 million)” and “net profit in excess of £9 million for FY2026 (previous guidance of in excess of £4 million)”",
-    "span": "Targets first given Sep-26"
+    "text": "Nine months to Sep-25: contracts “2,288” and avg revenue per contract “£753” (Oct-25) → “2,343” contracts and avg contract value “£734” as the 2025 comparatives now",
+    "span": "Same period, different numbers; metric renamed from average revenue per tenant contract"
    }
   ]
  }

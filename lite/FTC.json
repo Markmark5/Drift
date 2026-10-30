@@ -1,8 +1,8 @@
 {
  "ticker": "FTC",
- "v": "2026-10-21.11a1",
+ "v": "2026-10-30.f24f",
  "ccy": "GBX",
- "src": "Yahoo FTC.L weekly",
+ "src": "Yahoo FTC.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-21",
    273.0
+  ],
+  [
+   "2026-10-23",
+   255.0
   ]
  ],
  "marks": [
@@ -1307,38 +1311,29 @@
    "s": -1,
    "q": "The year is expected to be H2 weighted, reflecting the transition between Gallium Arsenide (\"GaAs\") supply and the ramp-up of GaN production.",
    "file": "20260804_FTC_Full-year-results-for-the-year-ended-31-May-2026.md"
+  },
+  {
+   "d": "2026-10-30",
+   "doc": "AGM",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The contracted order book gives significant revenue cover for the current financial year, as well as increased visibility for outer years. This provides the Board with confidence in delivering in line with market expectations.",
+   "file": "20261030_FTC_AGM-Trading-Update-and-GEO-constellation-contract.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-04",
-  "doc": "FY R",
-  "file": "20260804_FTC_Full-year-results-for-the-year-ended-31-May-2026.md",
-  "vs": "FY R Jul-25 · YE-TU Jun-26 · H1 TU Dec-25 · H1 R Feb-26",
+  "rns": "2026-10-30",
+  "doc": "AGM",
+  "file": "20261030_FTC_AGM-Trading-Update-and-GEO-constellation-contract.md",
+  "vs": "AGM Oct-25 · FY R Aug-26 · YE-TU Jun-26 · SpaceX order Oct-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "New caution",
-    "text": "FY26 outlook (Jul-25): “strong position to meet market expectations for FY2026”, no phasing → FY27: “The year is expected to be H2 weighted”, citing the GaAs-to-GaN transition",
-    "span": "No H2-weighting flag in FY R Jul-25, Dec-25 TU or Feb-26 interims (which noted a “more balanced delivery profile”)"
-   },
-   {
-    "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Jun-26 TU: “adjusted EBITDA slightly ahead of market expectations” → finals: “marginally ahead of adjusted expectations at £11.3 million (FY2025: £17.0m)”; EBITDA down 34%, operating profit £4.0m vs £13.4m",
-    "span": "Jun-26 → Aug-26"
-   },
-   {
-    "sev": "grey",
-    "type": "Target dropped",
-    "text": "R&D spend KPI: Jul-25 “close the year just below target at 12%” → Aug-26 “we aim to control this R&D spend at around 13% of revenue” but “spend has temporarily increased to 17% (2025: 12%)”",
-    "span": "FY R Jul-25 → FY R Aug-26"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "FY R Jul-25 gave no order-cover figure (“robust order book”) → Aug-26 “approximately 90% coverage of current market expectations for FY2027 revenue”",
-    "span": "Cover first given Feb-26 (FY26) and Jun-26; new in a results statement"
+    "type": "Number to words",
+    "text": "Order book cover: Aug-26 “a strong order book providing approximately 90% coverage of current market expectations for FY2027 revenue” → now “significant revenue cover for the current financial year”, no percentage",
+    "span": "90% given Jun-26 and Aug-26"
    }
   ]
  }

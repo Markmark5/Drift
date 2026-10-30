@@ -1,8 +1,8 @@
 {
  "ticker": "AZN",
- "v": "2026-10-21.36c0",
+ "v": "2026-10-30.6e27",
  "ccy": "GBX",
- "src": "Yahoo AZN.L weekly",
+ "src": "Yahoo AZN.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,10 @@
   [
    "2026-10-21",
    12614.0
+  ],
+  [
+   "2026-10-23",
+   12980.0
   ]
  ],
  "marks": [
@@ -1234,14 +1238,48 @@
    "s": 0,
    "q": "AstraZeneca reconfirms Total Revenue and Core EPS guidance3 for FY 2026 at CER, based on the average foreign exchange rates through 2025.",
    "file": "20260727_AZN_Half-year-Financial-Report.md"
+  },
+  {
+   "d": "2026-10-30",
+   "doc": "Q3 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "AstraZeneca reconfirms Total Revenue and Core EPS guidance3 for FY 2026 at CER, based on the average foreign exchange rates through 2025.",
+   "file": "20261030_AZN_3rd-Quarter-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-01",
-  "doc": "OPS",
-  "file": "20261001_AZN_Admission-of-Further-Securities-to-Trading.md",
-  "vs": "Monthly admission notices Jun-26 to Sep-26 · H1 R Jul-26",
-  "lines": []
+  "rns": "2026-10-30",
+  "doc": "Q3 R",
+  "file": "20261030_AZN_3rd-Quarter-Results.md",
+  "vs": "Q3 R Nov-25 · H1 R Jul-26 · FY R Feb-26 · Q1 R Apr-26",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Restated",
+    "text": "FY 2026 capex guide: H1-26 “expects to increase expenditure on Property, plant and equipment and Software-related intangible assets by approximately a third” → Q3-26 “by a low-teens percentage”; 9M capex $2,284m vs $2,091m (+9%)",
+    "span": "“approximately a third” at FY-25 Feb-26, Q1-26 and H1-26 → first change"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Q3-25 highlight “Growth in Total Revenue across all major geographic regions” → not claimed in Q3-26; China 9M Total Revenue $5,430m, (3)% at CER",
+    "span": "In Q3-25 and FY-25 highlights → absent Q1-26, H1-26, Q3-26"
+   },
+   {
+    "sev": "grey",
+    "type": "New caution",
+    "text": "H1-26 headwinds “from Farxiga US loss of exclusivity and China volume-based procurement” → Q3-26 “headwinds from Farxiga and Brilinta loss of exclusivity and volume-based procurement in China”",
+    "span": "Brilinta named as a headline headwind for the first time"
+   },
+   {
+    "sev": "grey",
+    "type": "Number to words",
+    "text": "H1-26 headline “On track to deliver ambition of $80 billion in Total Revenue in 2030” → Q3-26 “on track to deliver our 2030 ambition”, no figure",
+    "span": "Quantified only at H1-26; Q3-25 and Q1-26 also unquantified"
+   }
+  ]
  }
 }
