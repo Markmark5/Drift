@@ -1,8 +1,8 @@
 {
  "ticker": "MRK",
- "v": "2026-10-19.c9ec",
+ "v": "2026-11-02.40da",
  "ccy": "GBX",
- "src": "Yahoo MRK.L weekly",
+ "src": "Yahoo MRK.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1044,6 +1044,14 @@
   [
    "2026-10-19",
    48.2
+  ],
+  [
+   "2026-10-23",
+   49.0
+  ],
+  [
+   "2026-10-30",
+   49.0
   ]
  ],
  "marks": [
