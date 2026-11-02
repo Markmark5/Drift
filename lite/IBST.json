@@ -1,8 +1,8 @@
 {
  "ticker": "IBST",
- "v": "2026-10-21.642a",
+ "v": "2026-11-02.1fb8",
  "ccy": "GBX",
- "src": "Yahoo IBST.L weekly",
+ "src": "Yahoo IBST.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-21",
    80.1225
+  ],
+  [
+   "2026-10-23",
+   79.6
+  ],
+  [
+   "2026-10-30",
+   83.05
   ]
  ],
  "marks": [
@@ -1290,37 +1298,45 @@
    "s": -2,
    "q": "The Group continues to expect to achieve a stronger adjusted EBITDA in H2 than H1, however with near-term conditions expected to remain challenging, the full year outturn will be around the lower end of current market expectations, and net debt and leverage expected to reduce.",
    "file": "20260805_IBST_Interim-Results.md"
+  },
+  {
+   "d": "2026-11-02",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -3,
+   "q": "The combined impact of lower sales and the additional fixed-cost absorption impact of reduced production, partially offset by cost reduction measures, means the Board now expects second-half performance to be materially below its previous expectations.",
+   "file": "20261102_IBST_Q3-Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-05",
-  "doc": "H1 R",
-  "file": "20260805_IBST_Interim-Results.md",
-  "vs": "H1 R Aug-25 · AGM May-26 · FY R Mar-26 · YE-TU Jan-26",
+  "rns": "2026-11-02",
+  "doc": "Q3 TU",
+  "file": "20261102_IBST_Q3-Trading-Update.md",
+  "vs": "Q3 TU Oct-25 · H1 R Aug-26",
   "lines": [
    {
     "sev": "red",
     "type": "Anchor softened",
-    "text": "Last year: “continues to expect adjusted EBITDA1 for the full year to be in the range of £77 million to £82 million” → now no own number, “the full year outturn will be around the lower end of current market expectations” (analysts’ range £59m–£68m in a footnote)",
-    "span": "Own EBITDA range given Jun-25 and Aug-25 → consensus-referenced since May-26"
+    "text": "H1 R Aug-26: “around the lower end of current market expectations”, footnoted “Company compiled analysts' range for 2026 adjusted EBITDA is £59m to £68m” → now “materially below its previous expectations”, “in the mid-£40 million range”, no consensus anchor or footnote",
+    "span": "Market-expectations anchor at AGM May-26 and H1 Aug-26 → dropped"
    },
    {
     "sev": "amber",
-    "type": "Pushed out",
-    "text": "Calcined clay: Jan-26 “preferred partner selection and commercial agreement expected to be finalised in H1 2026” → now “Following the expiry of exclusivity with one counterparty, discussions may broaden to include alternative partnership opportunities”",
-    "span": "H1 2026 deadline passed with no agreement"
+    "type": "Went quiet",
+    "text": "Year-end leverage guide: Q3 TU Oct-25 “covenanted leverage at year-end expected to be around 2 times”; H1 R Aug-26 “leverage towards 2 times at the end of 2026” → now no net debt or leverage figure, only “focus on cash generation and net debt reduction”",
+    "span": "Given Oct-25, Aug-26 → first gap"
    },
    {
     "sev": "amber",
-    "type": "Wording vs number",
-    "text": "“Financial highlights - a resilient performance against a challenging backdrop” beside adjusted EBITDA £26m (H1-25: £36m), down 28%, a statutory loss before tax of £27m and the interim dividend cut to 0.5p (1.5p)"
+    "type": "Number to words",
+    "text": "Land sales: H1 R Aug-26 “we have identified land sale opportunities of up to £50 million over the next three to five years” → now strategic land assets “will provide near term support to accelerate debt reduction”, no figure"
    },
    {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "New figure: “we have identified land sale opportunities of up to £50 million over the next three to five years”",
-    "span": "First quantified land-sale value"
+    "sev": "amber",
+    "type": "New caution",
+    "text": "First-time buyer scheme timing flagged as a drag for the first time: “the delay to its introduction until April 2027 is disappointing and has put additional pressure on near-term demand”"
    }
   ]
  }

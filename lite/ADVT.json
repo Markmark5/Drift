@@ -1,8 +1,8 @@
 {
  "ticker": "ADVT",
- "v": "2026-10-22.6f19",
+ "v": "2026-11-02.0048",
  "ccy": "GBX",
- "src": "AlphaVantage ADVT.LON weekly",
+ "src": "AlphaVantage ADVT.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -884,6 +884,14 @@
   [
    "2026-10-16",
    182.5
+  ],
+  [
+   "2026-10-23",
+   180.0
+  ],
+  [
+   "2026-10-30",
+   180.0
   ]
  ],
  "marks": [
@@ -1039,26 +1047,47 @@
    "s": 0,
    "q": "Adjusted EBITDA¹ is expected to be not less than £8.0 million, again representing double digit growth compared with the prior year. The improvement reflects revenue growth, continued operational efficiencies and disciplined cost management. Trading remains in line with management expectations.",
    "file": "20261012_ADVT_Half-Year-Trading-Update.md"
+  },
+  {
+   "d": "2026-11-02",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading in the second half to date remains in line with management expectations.",
+   "file": "20261102_ADVT_Results-for-six-months-ended-31-August-2026.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-12",
-  "doc": "H1 TU",
-  "file": "20261012_ADVT_Half-Year-Trading-Update.md",
-  "vs": "H1 TU Oct-25 · back to Sep-24 · FY R Jun-26",
+  "rns": "2026-11-02",
+  "doc": "H1 R",
+  "file": "20261102_ADVT_Results-for-six-months-ended-31-August-2026.md",
+  "vs": "H1 R Nov-25 · H1 TU Oct-26 · FY R Jun-26, Jun-25",
   "lines": [
    {
-    "sev": "grey",
-    "type": "Anchor softened",
-    "text": "Oct-25 H1 TU: “Trading remains in line with the Board's expectations.” → Oct-26: “Trading remains in line with management expectations.” Internal anchor either way; no market anchor in any H1 TU",
-    "span": "Management wording used since Nov-25 interims and Jun-26 results"
+    "sev": "amber",
+    "type": "Restated",
+    "text": "H1 FY26 operating profit: Nov-25 “Operating profit increased by 127.7% to £4.7m (2024: £2.1m)” → Nov-26 same half shown as £2.9m, “significantly increased to £8.2m (2025: £2.9m)”, now after a £2.6m M&C Saatchi fair-value gain; before fair value £5.5m vs £4.7m (+18%)",
+    "span": "Definition changed: fair-value movements moved into operating profit"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Organic growth split: Nov-25 “of which 10.1% represented organic growth” → Nov-26 revenue +13% with no organic split",
+    "span": "Given Jun-25 (“Proforma organic revenue growth of 17.8%”) and Nov-25 → absent Jun-26 and Nov-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Resource management SaaS revenue growth: Jun-26 “Resource management SaaS platform has delivered 74% year-on-year revenue growth” (Nov-25: 66%) → Nov-26 KPI redefined to ARR, “SaaS ARR increasing by £1.3m, or 34%, over the last 12 months”",
+    "span": "Revenue-growth KPI given Jun-25, Nov-25, Jun-26 → replaced"
    },
    {
     "sev": "grey",
-    "type": "Demoted",
-    "text": "Oct-25 descriptor “the business solutions, compliance, and human capital management sectors” → Oct-26 “the business solutions and compliance sectors”; human capital management no longer named in the opening line (still in Note to Editors)",
-    "span": "HCM named in descriptor at Oct-25 TU and Nov-25 interims"
+    "type": "Went quiet",
+    "text": "Centros Integra adoption: Nov-25 “72 organisations have adopted our Centros Integra solution” (Jun-26: 74%) → not mentioned in Nov-26",
+    "span": "Given Jun-25, Nov-25, Jun-26 → first gap"
    }
   ]
  }

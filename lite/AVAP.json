@@ -1,8 +1,8 @@
 {
  "ticker": "AVAP",
- "v": "2026-10-19.2cce",
+ "v": "2026-11-02.c00e",
  "ccy": "GBX",
- "src": "Yahoo AVAP.L weekly",
+ "src": "Yahoo AVAP.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-19",
    140.0
+  ],
+  [
+   "2026-10-23",
+   141.0
+  ],
+  [
+   "2026-10-30",
+   141.25
   ]
  ],
  "marks": [

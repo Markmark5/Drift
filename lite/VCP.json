@@ -1,8 +1,8 @@
 {
  "ticker": "VCP",
- "v": "2026-10-21.42b4",
+ "v": "2026-11-02.1bf4",
  "ccy": "GBX",
- "src": "Yahoo VCP.L weekly",
+ "src": "Yahoo VCP.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-21",
    43.0
+  ],
+  [
+   "2026-10-23",
+   40.65
+  ],
+  [
+   "2026-10-30",
+   38.45
   ]
  ],
  "marks": [
@@ -1318,38 +1326,45 @@
    "q": "The impact of the Middle East conflict on input prices, such as oil derivatives, natural gas, diesel and freight, remains a challenge as, whilst management actively seek to mitigate the impact with price increases and efficiency measures, this capability is not unlimited.",
    "file": "20260917_VCP_Trading-Update-and-Refinancing-Transaction-Update.md",
    "gnote": "discounted: refinancing"
+  },
+  {
+   "d": "2026-11-02",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -2,
+   "q": "Pricing and cost saving initiatives are mitigating the impact, but the Board notes the potential negative impact of higher input prices should they persist. Further guidance will be provided at the HY results.",
+   "file": "20261102_VCP_Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-17",
-  "doc": "Q1 TU",
-  "file": "20260917_VCP_Trading-Update-and-Refinancing-Transaction-Update.md",
-  "vs": "AGM Sep-26 · FY R Jul-26 · year earlier AGM Sep-25 / H1 TU Nov-25",
+  "rns": "2026-11-02",
+  "doc": "H1 TU",
+  "file": "20261102_VCP_Trading-Update.md",
+  "vs": "H1 TU Nov-25 · back to Oct-22, Oct-24 · Q1 TU Sep-26, FY R Jul-26",
   "lines": [
    {
     "sev": "red",
-    "type": "Went quiet",
-    "text": "FY27 EBITDA guide: Jul-26 results “we currently expect to deliver at least £115m EBITDA in FY2027” → this update gives no FY27 EBITDA figure, only YTD “EBITDA to the end of August, excluding Rugs' transitory losses, ahead of the prior year”",
-    "span": "Guide given Jul-26 (headline outlook); not repeated at the Sep-26 AGM or this update"
+    "type": "Pushed out",
+    "text": "FY R Jul-26: “we currently expect to deliver at least £115m EBITDA in FY2027” → now no FY27 number, “Further guidance will be provided at the HY results.”",
+    "span": "£115m floor not repeated at AGM Sep-26 or TU Sep-26 either; now explicitly deferred"
    },
    {
     "sev": "amber",
-    "type": "Split withheld",
-    "text": "Profit comparison now carved out: Jul-26 Q1 “profitability ahead of Q1 FY2026” on a group basis → now EBITDA ahead only “excluding Rugs' transitory losses”; no group EBITDA figure",
-    "span": "Jul-26 → Sep-26"
+    "type": "Number to words",
+    "text": "H1 EBITDA: Nov-25 “Underlying EBITDA improved to c.£53m for the half, compared to £50m in the prior year” → now no Group figure, only “EBITDA for H1 FY27 excluding Balta is expected to be slightly ahead of H1 FY26”",
+    "span": "Group H1 EBITDA figure given in H1 TU Oct-22, Oct-24, Nov-25 → first gap"
    },
    {
     "sev": "amber",
-    "type": "New caution",
-    "text": "Input-cost mitigation: Jul-26 “expected temporary margin dilution due to higher input prices from the Iran conflict” → now mitigation “capability is not unlimited”",
-    "span": "First time the company says its pricing offset has limits"
+    "type": "Wording vs number",
+    "text": "“The Group continues to take market share” beside Balta “divisional EBITDA being £3.8m behind the prior year” and input costs “masking much of the improvement”"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Property proceeds: Jul-26 £70m “will be executed through the balance of FY2027 and FY2028” → now “A total of £70m in net proceeds are being targeted in FY27”, with “approximately £26m have already been completed”",
-    "span": "Target brought forward and first completed figure given"
+    "text": "Organic growth quantified for the half: “approximately +5% and was approximately +7% excluding Balta” (Sep-26: c.4% YTD); new Balta figure “supported by €34 million of backorders”"
    }
   ]
  }

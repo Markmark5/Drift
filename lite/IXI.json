@@ -1,8 +1,8 @@
 {
  "ticker": "IXI",
- "v": "2026-10-22.d19b",
+ "v": "2026-11-02.c00d",
  "ccy": "GBX",
- "src": "AlphaVantage IXI.LON weekly",
+ "src": "AlphaVantage IXI.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1060,6 +1060,14 @@
   [
    "2026-10-19",
    7.75
+  ],
+  [
+   "2026-10-23",
+   9.75
+  ],
+  [
+   "2026-10-30",
+   11.75
   ]
  ],
  "marks": [
