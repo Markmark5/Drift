@@ -1,8 +1,8 @@
 {
  "ticker": "STX",
- "v": "2026-10-21.bff9",
+ "v": "2026-11-03.5d89",
  "ccy": "GBX",
- "src": "Yahoo STX.L weekly",
+ "src": "Yahoo STX.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-21",
    5.7
+  ],
+  [
+   "2026-10-23",
+   5.6
+  ],
+  [
+   "2026-10-30",
+   5.5
   ]
  ],
  "marks": [
@@ -1334,26 +1342,42 @@
    "s": 0,
    "q": "London, UK, August 20, 2026: Shield Therapeutics plc (LSE: STX), a commercial-stage pharmaceutical company specialising in iron deficiency, announces the release of its unaudited interim results for the six months ended 30 June 2026 and confirms that the Company remains on track for operating profitability in 2026.",
    "file": "20260820_STX_Interim-results-for-the-six-months-ended-30-Jun-26.md"
+  },
+  {
+   "d": "2026-11-03",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -3,
+   "q": "Following a review of Q3 performance and the outlook for the remainder of the year, the Company no longer expects the Group to achieve operating profitability for the year ending 31 December 2026, as previously guided.",
+   "file": "20261103_STX_Q3-2026-Trading-Update.md",
+   "gnote": "discounted: full US control of ACCRUFeR (Viatris transaction)"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-20",
-  "doc": "H1 R",
-  "file": "20260820_STX_Interim-results-for-the-six-months-ended-30-Jun-26.md",
-  "vs": "H1 R Aug/Sep-25 · Q2 TU Jul-26 · Q1 TU May-26",
+  "rns": "2026-11-03",
+  "doc": "Q3 TU",
+  "file": "20261103_STX_Q3-2026-Trading-Update.md",
+  "vs": "Q3 TU Oct-25 · H1 R Aug-26 · Q2/H1 TU Jul-26 · US control deal Aug-26",
   "lines": [
    {
-    "sev": "amber",
-    "type": "Wording vs number",
-    "text": "H1-25: ACCRUFeR® revenue “increasing 1.8x over H1 2024” → H1-26 “Continued growth and strong market results” beside ACCRUFeR® revenue “increasing 5% over H1 2025”, with average net selling price down to $199 (H1-25: $214)",
-    "span": "Q2-26 US product revenue $10.3M vs $12.8M (Q2 TU Jul-26)"
+    "sev": "red",
+    "type": "Target dropped",
+    "text": "H1 R Aug-26: “The Group remains on track for operating profitability in 2026.” → now “no longer expects the Group to achieve operating profitability for the year ending 31 December 2026”; single-digit US$m loss guided instead",
+    "span": "2026 operating profit guided Jan-26, Apr-26, Jul-26, Aug-26 → dropped 10 weeks after last reaffirmed; US control deal (Aug-26) had said it enhanced the expectation"
    },
    {
     "sev": "amber",
     "type": "Went quiet",
-    "text": "Consignment share: Q1-26 “c.26% of the total prescriptions were consignment-based prescriptions” → H1-26 interim gives no consignment figure",
-    "span": "Given in every update Feb-25 to May-26 → missing in Q2 TU Jul-26 and H1-26"
+    "text": "Prior-year comparatives: Q3-25 “ACCRUFeR® net revenue of $13.1m (Q2 2025: $12.8m and Q3 2024: $7.2m).” → now “US ACCRUFeR® net revenue rose 5% to $10.8M (Q2 2026: $10.3M).”, quarter-on-quarter only; year-on-year it is down c.18% and net price $237 → $217",
+    "span": "Year-ago comparatives given Q3-25 and Q2-26 → dropped"
+   },
+   {
+    "sev": "grey",
+    "type": "Wording vs number",
+    "text": "Cash $8.3M (30 Jun 26) → $6.8M, presented as “Cash of $6.8M at quarter end reflects continued investment in commercial growth initiatives alongside disciplined cost management.”",
+    "span": "Q2/H1 TU Jul-26 → Q3 TU Nov-26"
    }
   ]
  }

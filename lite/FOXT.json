@@ -1,8 +1,8 @@
 {
  "ticker": "FOXT",
- "v": "2026-10-21.6d7b",
+ "v": "2026-11-03.5466",
  "ccy": "GBX",
- "src": "Yahoo FOXT.L weekly",
+ "src": "Yahoo FOXT.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-21",
    38.05
+  ],
+  [
+   "2026-10-23",
+   37.05
+  ],
+  [
+   "2026-10-30",
+   37.45
   ]
  ],
  "marks": [
@@ -1302,10 +1310,17 @@
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-21",
-  "doc": "GM",
-  "file": "20261021_FOXT_General-Meeting-Results.md",
-  "vs": "AGM results update Nov-25 · acquisitions RNS Sep-26",
-  "lines": []
+  "rns": "2026-11-03",
+  "doc": "AGM",
+  "file": "20261103_FOXT_2026-Annual-General-Meeting-Results-Update.md",
+  "vs": "AGM results update Nov-25 · GM results Oct-26",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "Nov-25: “the significant votes against all the resolutions were attributable to the shareholders' policy positions, rather than matters specific to the Company.” → now 24.96% voted against the final dividend and “The Board has carefully considered this feedback as part of its ongoing review of the Company's capital allocation framework.”",
+    "span": "First company-specific dissent flagged; dividend not on last year's list"
+   }
+  ]
  }
 }
