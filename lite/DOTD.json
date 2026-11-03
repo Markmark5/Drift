@@ -1,6 +1,6 @@
 {
  "ticker": "DOTD",
- "v": "2026-11-03.bb06",
+ "v": "2026-11-03.674a",
  "ccy": "GBX",
  "src": "Yahoo DOTD.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1251,38 +1251,47 @@
    "s": 0,
    "q": "These initiatives underpin the Board's confidence in delivering FY27 market expectations and accelerating organic growth over the medium term.",
    "file": "20260728_DOTD_FY26-Trading-Update.md"
+  },
+  {
+   "d": "2026-11-03",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -1,
+   "q": "Trading in the first four months of FY27 has been in line with the Board's expectations, which include an acceleration in growth as the year progresses.",
+   "file": "20261103_DOTD_Full-Year-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-28",
-  "doc": "YE-TU",
-  "file": "20260728_DOTD_FY26-Trading-Update.md",
-  "vs": "YE-TU Jul-25 · H1 R Mar-26 · back to Jul-23",
+  "rns": "2026-11-03",
+  "doc": "FY R",
+  "file": "20261103_DOTD_Full-Year-Results.md",
+  "vs": "FY R Nov-25 · YE-TU Jul-26 · H1 R Mar-26 · FY R Nov-21 to Nov-24",
   "lines": [
    {
     "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Headline “Revenue, profit and cash in line with FY26 market expectations” but “Revenue was £90.9m” against footnoted consensus “revenue £92.3m” (c.1.5% short)",
-    "span": "Consensus was £92.8m (Jun-25) → £91.9m (Jan-26) → £92.3m (Jul-26)"
+    "type": "Target dropped",
+    "text": "North America medium-term target: Nov-25 “growth expected to track in the mid-teens over the medium term” → now no target; “Revenue in the core Dotdigital Marketing platform declined following the loss of three significant customers whose needs changed”",
+    "span": "Given Feb-25 and Nov-25; not repeated Mar-26 or now"
    },
    {
     "sev": "amber",
-    "type": "Went quiet",
-    "text": "ARPC: Jul-25 “increased by 8% on a constant currency and normalised basis to £1,923 per month” → no ARPC figure in the FY26 update",
-    "span": "Given at Jul-23, Jul-24, Jul-25 YE-TU and Jan/Mar-26 → first gap"
+    "type": "Demoted",
+    "text": "Functionality recurring revenue: Nov-25 highlight “increased by 12% on a constant currency basis to £35.5m (FY24: £31.6m)” → now only in the body as a percentage, no £ figure: “Functional recurring revenue increased 26% on a constant currency basis in FY26, including contributions from acquisitions.”",
+    "span": "£ figure in FY R highlights Nov-21 to Nov-25 → first gap in 5 years"
    },
    {
-    "sev": "amber",
-    "type": "Went quiet",
-    "text": "Dividend: Jul-25 “Intention to pay an increased final dividend in line with market expectations” → no dividend mention in the FY26 update",
-    "span": "Given at Jul-23, Jul-24, Jul-25 YE-TU → first gap in 3 years"
+    "sev": "grey",
+    "type": "Restated",
+    "text": "ARPC: Nov-25 “increased 8% on a constant-currency, normalised basis to £1,923 per month” → FY25 now restated on a recurring-only basis; platform ARPC “rose 6% to £1,943 (FY25: £1,829)”",
+    "span": "FY25 £1,923 → £1,829"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Next-year view: Jul-25 “leaving the Board confident in the Group's continued success” (no anchor) → now “the Board's confidence in delivering FY27 market expectations”",
-    "span": "No next-year anchor in Jul-24 or Jul-25 YE-TU"
+    "text": "Next-year consensus now quantified: Nov-25 footnote gave only the year just reported (“Consensus market expectations for the year to 30 June 2025 were”) → now “revenue £104.7m; adjusted EBITDA £32.8m; adjusted profit before tax £22.3m” for FY27",
+    "span": "Nov-25 and Jul-26 gave FY26/FY25 consensus only"
    }
   ]
  }
