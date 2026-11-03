@@ -1,8 +1,8 @@
 {
  "ticker": "TCAP",
- "v": "2026-10-21.cf0d",
+ "v": "2026-11-03.306f",
  "ccy": "GBX",
- "src": "Yahoo TCAP.L weekly",
+ "src": "Yahoo TCAP.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-21",
    319.0
+  ],
+  [
+   "2026-10-23",
+   318.4
+  ],
+  [
+   "2026-10-30",
+   324.8
   ]
  ],
  "marks": [
@@ -1203,33 +1211,22 @@
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-06",
-  "doc": "H1 R",
-  "file": "20260806_TCAP_Half-year-Financial-Report.md",
-  "vs": "H1 R Aug-25 · AGM May-26 · FY R Mar-26",
+  "rns": "2026-11-03",
+  "doc": "Q3 TU",
+  "file": "20261103_TCAP_Trading-Statement.md",
+  "vs": "Q3 TU Nov-25 · H1 R Aug-26 · back to Nov-24",
   "lines": [
    {
     "sev": "amber",
     "type": "Target dropped",
-    "text": "Surplus cash guide: H1 R Aug-25 “the Group anticipates it can organically generate surplus cash across 2026 and 2027 in excess of £200m” → FY R Mar-26 “we anticipate generating approximately £150m of surplus cash, available for investment in the business and returns to shareholders across 2026 and 2027” → H1 R Aug-26 no surplus-cash figure, only “return excess cash, not required for other purposes, via share buybacks”",
-    "span": "Given Aug-25 and Mar-26 → first gap"
+    "text": "Parameta US listing: Q3 TU Nov-25 “will continue to assess the appropriate timing for a potential minority US listing” and FY R Mar-26 “continues to review a potential minority listing of Parameta Solutions” → H1 R Aug-26 and Q3 TU Nov-26 no mention of a listing",
+    "span": "Given Aug-25, Nov-25, Mar-26 → absent Aug-26 and Nov-26"
    },
    {
     "sev": "grey",
     "type": "Went quiet",
-    "text": "Parameta ARR: H1 R Aug-25 highlights “subscription-based revenue at 98%, Annual Recurring Revenue4 grew 5%” → H1 R Aug-26 no ARR figure; only “subscription revenue representing 98 per cent of total revenue”",
-    "span": "H1-25 headline figure → absent H1-26"
-   },
-   {
-    "sev": "grey",
-    "type": "Demoted",
-    "text": "Divisional profit in highlights: H1 R Aug-25 “Parameta Solutions delivered £36m of adjusted EBIT (H1 2024: £38m7), while E&C contributed £27m (H1 2024: £32m7)” and Liquidnet EBIT → H1 R Aug-26 highlights give only Global Broking adjusted EBIT “to £159m (H1 2025: £131m)”"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "FY26 anchor re-quantified: AGM May-26 “The Board remains comfortable with the outlook for the remainder of the year at current FX rates” → H1 R Aug-26 “the Board expects to achieve adjusted EBIT in line with current market expectations*” with consensus footnote “The mean analyst consensus forecast for 2026 adjusted EBIT is £365m (range: £357m to £378m)”",
-    "span": "Mar-26 consensus £361m → Aug-26 £365m"
+    "text": "USD exposure: Q3 TU Nov-25 “Approximately 60% of Group revenues and 40% of Group costs are USD-denominated.” → Q3 TU Nov-26 outlook keeps “subject to foreign exchange movements” but gives no USD revenue/cost split",
+    "span": "In every trading statement Nov-24 to May-26 → absent Aug-26 and Nov-26"
    }
   ]
  }

@@ -1,8 +1,8 @@
 {
  "ticker": "IWG",
- "v": "2026-10-21.e879",
+ "v": "2026-11-03.f86f",
  "ccy": "GBX",
- "src": "Yahoo IWG.L weekly",
+ "src": "Yahoo IWG.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-21",
    184.2
+  ],
+  [
+   "2026-10-23",
+   186.4
+  ],
+  [
+   "2026-10-30",
+   191.5
   ]
  ],
  "marks": [
@@ -1270,32 +1278,47 @@
    "s": 0,
    "q": "Reiterating both 2026 and mid-term EBITDA guidance",
    "file": "20260811_IWG_H1-2026-Results-Announcement.md"
+  },
+  {
+   "d": "2026-11-03",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "2026 Adjusted EBITDA range tightened, expected to be above current consensus of $599m1 and net debt to remain at H1 2026 levels, resulting in net debt / Adjusted EBITDA at FY 2026 expected to be c.1.4-1.5x as previously guided",
+   "file": "20261103_IWG_THIRD-QUARTER-2026-TRADING-STATEMENT.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-11",
-  "doc": "H1 R",
-  "file": "20260811_IWG_H1-2026-Results-Announcement.md",
-  "vs": "H1 R Aug-25 · Q1 TS May-26 · FY R Mar-26",
+  "rns": "2026-11-03",
+  "doc": "Q3 TU",
+  "file": "20261103_IWG_THIRD-QUARTER-2026-TRADING-STATEMENT.md",
+  "vs": "Q3 TU Nov-25 · H1 R Aug-26",
   "lines": [
    {
     "sev": "amber",
     "type": "Number to words",
-    "text": "Cash-flow guide: H1-25 “Cashflow for FY 2025 expected to be up 40% to at least $140m” → H1-26 only “we expect cash flow performance in the second half of 2026 to be ahead of the prior year”, no full-year figure, with H1 cashflow before corporate activities $(55)m (H1-25: $51m)",
-    "span": "Numeric FY cash-flow guide Aug-25 → words Aug-26"
+    "text": "EBITDA guide: H1 “Adjusted 2026 EBITDA of $585m-$625m” → Q3 “2026 Adjusted EBITDA range of $585m-$625m tightened”, but the tightened range is not given",
+    "span": "H1 R Aug-26 → Q3 TU Nov-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Target dropped",
+    "text": "H1 cash-flow promise “we expect cash flow performance in the second half of 2026 to be ahead of the prior year” → not repeated; Q3 only says “robust cash generation during Q3 2026”",
+    "span": "H1 R Aug-26 → Q3 TU Nov-26"
    },
    {
     "sev": "amber",
     "type": "Wording vs number",
-    "text": "“Growth initiatives continuing to deliver expected results” and a reiterated “Adjusted 2026 EBITDA of $585m-$625m” (+10–18% on FY25's $531m) beside H1 adjusted EBITDA of $265m vs $262m (+1%) and operating profit $38m vs $68m",
-    "span": "Implies a heavy H2; H1-25 vs H1-26"
+    "text": "Company-owned RevPAR: H1 “RevPAR growth of 11% to $407” → Q3 2%, framed as “in line with our pricing strategy to drive revenue at the segment level”",
+    "span": "H1 R Aug-26 → Q3 TU Nov-26"
    },
    {
-    "sev": "grey",
-    "type": "New caution",
-    "text": "Net debt: H1-25 “Net debt to be roughly unchanged at the end of 2025 vs 31 December 2024” → H1-26 “leverage on a Net debt / EBITDA basis to finish 2026 slightly elevated compared to December 2025”; net debt $880m (H1-25: $754m)",
-    "span": "Flagged first at Q1 May-26, repeated Aug-26"
+    "sev": "green",
+    "type": "Back / new",
+    "text": "New consensus anchor and leverage figure: “expected to be above current consensus of $599m” and net debt / EBITDA “c.1.4-1.5x as previously guided” (H1 said only “slightly elevated compared to December 2025”)",
+    "span": "First consensus anchor in IWG Q3 TUs (Nov-25: “No change to adjusted EBITDA and net debt guidance”)"
    }
   ]
  }

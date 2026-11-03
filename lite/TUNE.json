@@ -1,8 +1,8 @@
 {
  "ticker": "TUNE",
- "v": "2026-10-20.32ff",
+ "v": "2026-11-03.2aac",
  "ccy": "GBX",
- "src": "Yahoo TUNE.L weekly",
+ "src": "Yahoo TUNE.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-20",
    231.0
+  ],
+  [
+   "2026-10-23",
+   227.5
+  ],
+  [
+   "2026-10-30",
+   225.0
   ]
  ],
  "marks": [
@@ -1290,20 +1298,35 @@
    "s": 0,
    "q": "The strong first half performance, healthy continuing underlying demand across the Group's portfolio and disciplined management of margins and costs provide the Board with confidence in the Group's prospects. The Board's expectations for the full year ending 28 February 2027 remain unchanged.",
    "file": "20260916_TUNE_Trading-Update.md"
+  },
+  {
+   "d": "2026-11-03",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "As previously indicated revenue and profitability are expected to be more heavily weighted towards the first half, whilst noting this impact our performance to date gives us confidence in meeting market expectations for the full year",
+   "file": "20261103_TUNE_Interim-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-16",
-  "doc": "H1 TU",
-  "file": "20260916_TUNE_Trading-Update.md",
-  "vs": "TU Sep-25 · AGM Aug-26 · back to TU Mar-25/Mar-26",
+  "rns": "2026-11-03",
+  "doc": "H1 R",
+  "file": "20261103_TUNE_Interim-Results.md",
+  "vs": "H1 R Nov-25 · back to Apr-25 · FY R Jun-26 · H1 TU Sep-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Number to words",
-    "text": "Half-year revenue in £: Mar-25 “Revenue for the first half is expected to be not less than £80 million”, Sep-25 “Revenue for the six months to 31 August 2025 is expected to be approximately £87 million”, Mar-26 “Group revenue is expected to be approximately £76 million” → Sep-26 only “The Group is expected to deliver 3% revenue growth, improved underlying operating profit”, no revenue or profit figure",
-    "span": "£ figure in every half-year TU Mar-25 to Mar-26 → first gap"
+    "type": "Split withheld",
+    "text": "Brand revenue split (Focusrite/Novation, ADAM Audio, Sequential) given in the Apr-25 and Nov-25 interims and the Jun-26 finals (Focusrite Novation £125.0m, ADAM £38.0m, Sequential £14.9m) → now only two divisions, segment reporting “focused on the Group's two strategic business segments”",
+    "span": "Brand split in Apr-25, Nov-25, Jun-26 → first interim without it"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Audio Reproduction order book was words in Nov-25 (“order book broadly consistent with the end of the prior year”) → now “book to bill ratio of 1.09 for the six months to August 2026” with order intake up 12%",
+    "span": "First book-to-bill figure in the record"
    }
   ]
  }

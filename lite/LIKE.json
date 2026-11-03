@@ -1,8 +1,8 @@
 {
  "ticker": "LIKE",
- "v": "2026-10-19.b70a",
+ "v": "2026-11-03.66b7",
  "ccy": "GBX",
- "src": "Yahoo LIKE.L weekly",
+ "src": "Yahoo LIKE.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-19",
    43.25
+  ],
+  [
+   "2026-10-23",
+   41.5
+  ],
+  [
+   "2026-10-30",
+   41.0
   ]
  ],
  "marks": [
@@ -1360,26 +1368,41 @@
    "s": 3,
    "q": "Reflecting the strength of trading in the first half and the continued acceleration in the third quarter, the Board now expects underlying profit before tax for the year ending 31 December 2026 to be materially ahead of current market expectations at not less than £5.0 million (FY25: £3.1 million).",
    "file": "20260928_LIKE_Interim-Results-for-the-six-months-to-30-June-2026.md"
+  },
+  {
+   "d": "2026-11-03",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 3,
+   "q": "The increased sales revenue combined with operational gearing and subsequent improved profitability provides the Board with confidence that the Group will be materially ahead of current market expectations for the financial year ending 31 December 2026 (“FY26”), with Profit Before Tax expected to be a minimum of £6 million.",
+   "file": "20261103_LIKE_Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-07",
-  "doc": "OPS",
-  "file": "20261007_LIKE_Strategic-Acquisition.md",
-  "vs": "H1 R 28-Sep-26 (previous RNS) · no acquisition RNS a year earlier; deal RNS Feb-25, Jul-26",
+  "rns": "2026-11-03",
+  "doc": "YE-TU",
+  "file": "20261103_LIKE_Trading-Update.md",
+  "vs": "YE-TU Dec-24 / Jan-26 · back to Dec-23 · H1 R Sep-26 · Oct-26",
   "lines": [
    {
     "sev": "amber",
     "type": "Split withheld",
-    "text": "£14.9m Headlam asset deal gives no revenue or profit for what is bought: “separate revenue and profit / loss figures attributable to them are not available”; financial impact deferred to the “full year trading update in January 2027”",
-    "span": "Only Headlam group H1 revenue (£188.8m) given"
+    "text": "Likewise Floors growth was quantified in each late-year update: Dec-24 “Sales revenue in Likewise Floors increased by 18.8% and year to date 15.3%.”, Jan-26 “Sales in Likewise Floors grew by 13.3%.” → now only Group growth, with growth “across all businesses”, no Likewise Floors figure",
+    "span": "Given Dec-23, Dec-24, Jan-26 → no figure in Sep-26 interim or this update"
    },
    {
     "sev": "grey",
-    "type": "Went quiet",
-    "text": "Current trading not restated: 28 Sep “materially ahead of current market expectations at not less than £5.0 million” → now only “not expected to make a material contribution to the Group's profitability in the remainder of the current financial year”",
-    "span": "Feb-25 and Jul-26 deal RNS carried a trading line"
+    "type": "Restated",
+    "text": "Profit floor basis changed: Sep-26 floor was on “underlying profit before tax for the year ending 31 December 2026” at “not less than £5.0 million” → now “Profit Before Tax expected to be a minimum of £6 million”, without the word underlying",
+    "span": "Sep-26 H1 R → Nov-26 TU"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Profit floor raised from “not less than £5.0 million” (Sep-26) → “a minimum of £6 million” (Nov-26), with October revenue up 36.7% and year to date up 22.8%",
+    "span": "Second raise in 5 weeks"
    }
   ]
  }

@@ -1,8 +1,8 @@
 {
  "ticker": "FRAN",
- "v": "2026-10-21.3098",
+ "v": "2026-11-03.4bf1",
  "ccy": "GBX",
- "src": "Yahoo FRAN.L weekly",
+ "src": "Yahoo FRAN.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-21",
    151.9551
+  ],
+  [
+   "2026-10-23",
+   154.0
+  ],
+  [
+   "2026-10-30",
+   155.0
   ]
  ],
  "marks": [
@@ -1298,38 +1306,47 @@
    "s": 0,
    "q": "In addition to the above, the actions we are taking underpins our confidence that our full year performance will be in line with market expectations7.",
    "file": "20260729_FRAN_Interim-Results.md"
+  },
+  {
+   "d": "2026-11-03",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The improved performance of the business through Q3 2026 and the momentum we are building across the Group continues to underpin our confidence that our full-year Adjusted EBITDA performance will be in line with market expectations1.",
+   "file": "20261103_FRAN_Q3-Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-29",
-  "doc": "H1 R",
-  "file": "20260729_FRAN_Interim-Results.md",
-  "vs": "H1 R Jul-25 · AGM/Q1 TU Apr-26 · FY R Mar-26 · YE-TU Jan-26",
+  "rns": "2026-11-03",
+  "doc": "Q3 TU",
+  "file": "20261103_FRAN_Q3-Trading-Update.md",
+  "vs": "Q3 TU Nov-25 · H1 R Jul-26 · back to Q3 Oct-23/Nov-24",
   "lines": [
-   {
-    "sev": "amber",
-    "type": "Target dropped",
-    "text": "£10m share buy-back: Jan-26 and Mar-26 “intention to launch a share buy-back programme of up to £10m” → Jul-26 no mention of it; only “continue purchasing our own shares into the Employee Benefit Trust (EBT) to cover share option dilution” (EBT buys £0.2m in H1)",
-    "span": "Announced Jan-26, repeated Mar-26 (and in the share premium circular) → first omission"
-   },
-   {
-    "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Headline “Return to stronger growth driven by strategic initiatives, and operational improvements”, but all the EBITDA growth came from Filta International (divisional EBITDA £3.6m → £5.0m, helped by “the elevated UCO price”); Pirtek, Water & Waste and B2C combined were flat at £16.2m (H1-25 £16.2m)",
-    "span": "H1-25 vs H1-26 divisional tables"
-   },
-   {
-    "sev": "grey",
-    "type": "Restated",
-    "text": "Same period, different number: H1-25 interim “System sales increased by 2.5% to £209.4m” → H1-26 says H1-25 was “restated to £214.9m from £209.4m” (Pirtek DLO operations added)",
-    "span": "Jul-25 → Jul-26"
-   },
    {
     "sev": "grey",
     "type": "Went quiet",
-    "text": "Debt-repayment date: Mar-25 and Jul-25 said outstanding debt substantially repaid “which we now expect to be in 2028” → Jul-26 gives no year for it",
-    "span": "Given Mar-25, Jul-25 → absent since Mar-26 FY results"
+    "text": "B2C division: Q3-25 “Trading in the B2C division remains stable despite the challenging franchise recruitment and retention environment.” → no B2C trading comment in Q3-26 (Group now framed around three core B2B brands)",
+    "span": "B2C commented on at Q3 Oct-23, Nov-24, Nov-25 → first gap"
+   },
+   {
+    "sev": "grey",
+    "type": "Pushed out",
+    "text": "Willow Pumps: H1 “deferral of Special Project work into H2 2026” → Q3 “previously announced deferral of certain projects to Q4 at Willow Pumps”, still not delivered in Q3",
+    "span": "H1 R Jul-26 → Q3 TU Nov-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Expectations footnote: H1 “£35.9m to £38.0m” → Q3 “£36.5m to £38.0m, with consensus of £37.0m” (floor up, consensus point given for the first time)",
+    "span": "H1 R Jul-26 → Q3 TU Nov-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Re-quantified: Q3-25 “Filta North America's core franchise business (excluding used cooking oil) experienced good growth in System sales.” → Q3-26 Group System sales “growing by 8.4%” with growth % for every division",
+    "span": "Q3 TU Nov-25 → Q3 TU Nov-26"
    }
   ]
  }

@@ -1,8 +1,8 @@
 {
  "ticker": "GATC",
- "v": "2026-10-23.1189",
+ "v": "2026-11-03.9444",
  "ccy": "GBX",
- "src": "AlphaVantage GATC.LON weekly",
+ "src": "AlphaVantage GATC.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-16",
    136.5
+  ],
+  [
+   "2026-10-23",
+   137.5
+  ],
+  [
+   "2026-10-30",
+   137.5
   ]
  ],
  "marks": [
@@ -1252,32 +1260,47 @@
    "s": -1,
    "q": "The Board expects to deliver further improvement in Profit before Tax in FY27.",
    "file": "20260817_GATC_Trading-Update.md"
+  },
+  {
+   "d": "2026-11-03",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board expects further growth in continuing underlying profit before tax in FY27, in line with current market expectations of £6.5m.",
+   "file": "20261103_GATC_Final-results-for-the-year-ended-31-July-2026.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-17",
-  "doc": "YE-TU",
-  "file": "20260817_GATC_Trading-Update.md",
-  "vs": "YE-TU Aug-25 · back to Aug-23 · May-26 TU",
+  "rns": "2026-11-03",
+  "doc": "FY R",
+  "file": "20261103_GATC_Final-results-for-the-year-ended-31-July-2026.md",
+  "vs": "FY R Oct-25 · YE-TU Aug-26 · back to Oct-24",
   "lines": [
    {
-    "sev": "red",
-    "type": "Next-year view dropped",
-    "text": "Last year: “in line with current market expectation of £4m underlying Profit before Tax for FY26” → this year: “The Board expects to deliver further improvement in Profit before Tax in FY27.” No number, no market-expectations anchor (no expectations wording anywhere in the RNS)",
-    "span": "Next-year market-expectations anchor given at Aug-24 (FY25) and Aug-25 (FY26, £4m) → first gap in 2 years"
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Permanent: YE-TU Aug-26 “Permanent fees were stable with LFL NFI down (3)% with Group permanent fees up 5% reflecting the contribution of Infosec.” → FY R Nov-26 highlights “Permanent business improved, with NFI up 4% YoY, reflecting a modest recovery despite challenging market conditions.” No LFL perm figure; the growth is the InfoSec acquisition",
+    "span": "LFL perm down 3% (Aug-26) → presented as recovery (Nov-26)"
    },
    {
     "sev": "amber",
-    "type": "Number to words",
-    "text": "Aug-25: “Gattaca Projects SoW NFI was down 25% YoY” → Aug-26: SoW “NFI continued to be subdued as expected”, no figure",
-    "span": "Projects/SoW % given in YE-TU Aug-23 (+56%), Aug-24 (+31%), Aug-25 (−25%) and Mar-26 interims (−8%) → first gap in 3 years"
+    "type": "Wording vs number",
+    "text": "SoW: highlights “business NFI contracted by 44% YoY, reflecting the timings of certain major client programmes” while the CEO review says Gattaca Projects “saw a 44% reduction in NFI as its largest defence sector client delayed or cancelled projects”",
+    "span": "SoW NFI −24% FY25 → −44% FY26"
    },
    {
     "sev": "grey",
-    "type": "Wording vs number",
-    "text": "“Permanent fees were stable with LFL NFI down (3)%”; Group perm growth is from the Infosec acquisition",
-    "span": "Aug-26 YE-TU"
+    "type": "Split withheld",
+    "text": "LFL by service line: YE-TU Aug-26 gave contract “LFL +14%” and perm “LFL NFI down (3)%” → FY R Nov-26 gives only the Group figure, LFL “NFI increased by 7%”, with no contract or perm LFL split",
+    "span": "Headline split Aug-26 → Group only Nov-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "FY27 anchor re-quantified: YE-TU Aug-26 “The Board expects to deliver further improvement in Profit before Tax in FY27.” → FY R Nov-26 “in line with current market expectations of £6.5m”",
+    "span": "FY26 delivered £6.1m vs “not less than £6.0 million” guide"
    }
   ]
  }

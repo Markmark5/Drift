@@ -1,8 +1,8 @@
 {
  "ticker": "DOTD",
- "v": "2026-10-21.881f",
+ "v": "2026-11-03.bb06",
  "ccy": "GBX",
- "src": "Yahoo DOTD.L weekly",
+ "src": "Yahoo DOTD.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-21",
    57.3
+  ],
+  [
+   "2026-10-23",
+   55.4
+  ],
+  [
+   "2026-10-30",
+   52.0
   ]
  ],
  "marks": [

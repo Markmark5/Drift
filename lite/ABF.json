@@ -1,8 +1,8 @@
 {
  "ticker": "ABF",
- "v": "2026-10-22.58e0",
+ "v": "2026-11-03.5fec",
  "ccy": "GBX",
- "src": "AlphaVantage ABF.LON weekly",
+ "src": "AlphaVantage ABF.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-16",
    1942.5
+  ],
+  [
+   "2026-10-23",
+   1932.0
+  ],
+  [
+   "2026-10-30",
+   1884.0
   ]
  ],
  "marks": [
@@ -1316,38 +1324,41 @@
    "s": -1,
    "q": "Group adjusted operating profit is expected to be broadly in line with our previous expectations. Adjusted earnings per share is expected to be ahead of our expectations.",
    "file": "20260910_ABF_Trading-Statement.md"
+  },
+  {
+   "d": "2026-11-03",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "CUT",
+   "s": -2,
+   "q": "In 2027, the Group is expected to deliver adjusted operating profit and adjusted EPS below 2026, mainly due to Sugar, as previously guided. We remain cautious on consumer sentiment and also the impact of inflation and higher energy costs on our businesses.",
+   "file": "20261103_ABF_Annual-Results-Announcement.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-10",
-  "doc": "YE-TU",
-  "file": "20260910_ABF_Trading-Statement.md",
-  "vs": "YE-TU Sep-25 · Q3 TU Jul-26 · back to Sep-24",
+  "rns": "2026-11-03",
+  "doc": "FY R",
+  "file": "20261103_ABF_Annual-Results-Announcement.md",
+  "vs": "FY R Nov-25 · YE-TU Sep-26 · back to Nov-22",
   "lines": [
    {
-    "sev": "amber",
+    "sev": "red",
     "type": "Anchor softened",
-    "text": "Jul-26: “We continue to expect Group adjusted operating profit and adjusted EPS in 2026 to be below last year” → now “Group adjusted operating profit is expected to be broadly in line with our previous expectations”; the year-on-year direction is no longer restated",
-    "span": "Below-last-year guide stated Jan-26, Apr-26, Jul-26"
+    "text": "FY27 Grocery guide trimmed: Sep-26 “Grocery adjusted operating profit expected to be slightly ahead of 2026” → now “In Grocery, adjusted operating profit is expected to be broadly in line with 2026, with sales growth in most brands and businesses offset by higher input costs”",
+    "span": "Changed within 8 weeks of the initial FY27 view; not flagged as a change"
    },
    {
     "sev": "amber",
-    "type": "Number to words",
-    "text": "Sep-25: “Primark's market share increased from 6.6% to 6.8%” (Sep-24: 6.5%) → now “Primark continued to gain market share in a market that declined in the period”, no figure",
-    "span": "UK share % given at Sep-24 and Sep-25 YE-TUs; words only at Jul-26 and now"
-   },
-   {
-    "sev": "amber",
-    "type": "Anchor softened",
-    "text": "FY26 Primark margin guide (Apr-26) “approximately 10%” had no carve-out → FY27 “approximately 10%” but “This does not include the impact of the expected dis-synergy costs as Primark moves towards de-merger readiness.”",
-    "span": "First exclusion attached to the Primark margin guide"
+    "type": "New caution",
+    "text": "Group direction: Nov-25 “In 2026, we expect the Group to deliver growth in adjusted operating profit and adjusted EPS” → now “In 2027, the Group is expected to deliver adjusted operating profit and adjusted EPS below 2026”; Sep-26 had said only “Our initial view for the 2027 financial year shows progress in most of our businesses, with the exception of Sugar”",
+    "span": "First FY R with a below-last-year Group guide since Nov-22"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Sep-25 next-year view was words only: “In 2026, we expect some improvement in Sugar profitability” → now a segment-by-segment FY27 view incl. “Sugar adjusted operating loss expected to be in the range of £70m to £170m”",
-    "span": "Sep-25 YE-TU gave a next-year view for Sugar only; Sep-24 numbered only Sugar and Primark margin"
+    "text": "Primark margin guide: Nov-25 words only, “Adjusted operating profit margin is expected to be slightly below last year” → now “Primark's adjusted operating margin is expected to be approximately 10% in 2027”, though excluding dis-synergy costs",
+    "span": "Number first given at Sep-26 YE-TU, carried into the FY R"
    }
   ]
  }

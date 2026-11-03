@@ -1,8 +1,8 @@
 {
  "ticker": "MWE",
- "v": "2026-10-21.ab13",
+ "v": "2026-11-03.3447",
  "ccy": "GBX",
- "src": "Yahoo MWE.L weekly",
+ "src": "Yahoo MWE.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-21",
    64.0
+  ],
+  [
+   "2026-10-23",
+   64.0
+  ],
+  [
+   "2026-10-30",
+   63.0
   ]
  ],
  "marks": [

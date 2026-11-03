@@ -1,8 +1,8 @@
 {
  "ticker": "SRT",
- "v": "2026-10-21.8572",
+ "v": "2026-11-03.e1a1",
  "ccy": "GBX",
- "src": "Yahoo SRT.L weekly",
+ "src": "Yahoo SRT.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-21",
    73.5
+  ],
+  [
+   "2026-10-23",
+   71.0
+  ],
+  [
+   "2026-10-30",
+   68.0
   ]
  ],
  "marks": [
