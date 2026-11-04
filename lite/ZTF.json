@@ -1,8 +1,8 @@
 {
  "ticker": "ZTF",
- "v": "2026-10-21.6583",
+ "v": "2026-11-04.264b",
  "ccy": "GBX",
- "src": "Yahoo ZTF.L weekly",
+ "src": "Yahoo ZTF.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-21",
    498.85
+  ],
+  [
+   "2026-10-23",
+   485.5
+  ],
+  [
+   "2026-10-30",
+   475.0
   ]
  ],
  "marks": [
@@ -1315,32 +1323,48 @@
    "s": 0,
    "q": "The Acquisition is expected to make a very modest contribution to Group revenue in the financial year ending 31 December 2026 and, accordingly, the Group’s full-year expectations remain unchanged.",
    "file": "20261013_ZTF_Acquisition-of-Verttec.md"
+  },
+  {
+   "d": "2026-11-04",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "Based on trading to date and the current order book, and subject to there being no material disruption to the Group’s key markets, the Board expects full-year adjusted profit before tax for the year ending 31 December 2026 to be in line with market expectations",
+   "gnote": "revenue anchor dropped; footwear below plan",
+   "file": "20261104_ZTF_Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-13",
-  "doc": "OPS",
-  "file": "20261013_ZTF_Acquisition-of-Verttec.md",
-  "vs": "Acquisition of OKC Nov-25 · H1 R Aug-26 · FY R Mar-26",
+  "rns": "2026-11-04",
+  "doc": "Q3 TU",
+  "file": "20261104_ZTF_Trading-Update.md",
+  "vs": "Q3 TU Nov-25 · back to Nov-24, Nov-23 · H1 R Aug-26 · Oct-26",
   "lines": [
    {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Revenue expectations dropped: Nov-25 “the Board expects revenue and adjusted profit before tax for 2025 to be in line with current market expectations” → Nov-26 “the Board expects full-year adjusted profit before tax”; Aug-26 footnote “revenue of £190.8m and adjusted profit before tax of £26.3m” → now “adjusted profit before tax of £26.3m” only",
+    "span": "Revenue in the anchor Nov-24, Nov-25, Aug-26 → first gap; YTD £137.1m leaves £53.7m for Q4 against £41.8m in Q3"
+   },
+   {
     "sev": "amber",
-    "type": "Pushed out",
-    "text": "Accretion timing: OKC Nov-25 “The Acquisition is expected to be earnings accretive in its first full year” → Verttec “to be earnings accretive from the second full year”",
-    "span": "Acquisition Nov-25 → Acquisition Oct-26"
+    "type": "New caution",
+    "text": "Footwear: Aug-26 “normalised as anticipated” → Nov-26 “with the reduction in Q3 greater than the Group had anticipated”; Q3 footwear £9.3m against £17.6m",
+    "span": "H1 down 23% → Q3 down 47%; first miss against its own plan"
    },
    {
-    "sev": "grey",
+    "sev": "amber",
     "type": "Went quiet",
-    "text": "Deal multiple: OKC “The total consideration represents a valuation multiple of 7x OKC's 2024 EBITDA (€5.3m)” → Verttec gives no multiple; consideration up to US$7.3m against “adjusted EBITDA of US$0.3m”",
-    "span": "Multiple given in OKC headline paragraph; one prior deal"
+    "text": "Year revenue view: Nov-25 “a continued expectation of delivering mid-single-digit growth for the year as a whole” and “good visibility of confirmed orders across most business units” → Nov-26 no revenue view for the year, only “the current order book”",
+    "span": "Revenue view and order visibility given Nov-23, Nov-24, Nov-25 → first gap"
    },
    {
     "sev": "grey",
-    "type": "Restated",
-    "text": "Target label: Verttec cites “medium-term targets of more than £300m in revenue and £60m in operating profit”, but Aug-26 gave “medium-term financial ambitions of revenue greater than £230m and operating profit greater than £40m by FY2029” and Mar-26 called £300m/£60m a “Longer-term ambition”",
-    "span": "FY R Mar-26, H1 R Aug-26 → Oct-26"
+    "type": "Anchor softened",
+    "text": "OKC: Aug-26 “is integrating well and ahead of plan” → Nov-26 “remains in line with plan”; Q3 contribution £6.2m after £14.8m in H1",
+    "span": "H1 R Aug-26 → Q3 TU Nov-26"
    }
   ]
  }

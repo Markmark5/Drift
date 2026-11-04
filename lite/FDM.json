@@ -1,8 +1,8 @@
 {
  "ticker": "FDM",
- "v": "2026-10-21.6548",
+ "v": "2026-11-04.cb09",
  "ccy": "GBX",
- "src": "Yahoo FDM.L weekly",
+ "src": "Yahoo FDM.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-21",
    109.99
+  ],
+  [
+   "2026-10-23",
+   104.8
+  ],
+  [
+   "2026-10-30",
+   105.2
   ]
  ],
  "marks": [
@@ -1262,38 +1270,42 @@
    "s": -1,
    "q": "Our markets remain uncertain, with macroeconomic and political instability continuing to impact our customers' investment decisions; it remains too early to judge whether this improvement will continue.",
    "file": "20260803_FDM_Half-year-Financial-Report.md"
+  },
+  {
+   "d": "2026-11-04",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 1,
+   "q": "Since then, the momentum in customer engagement has continued, and at 31 October 2026 the number of Consultants assigned to clients has increased to 2,070 (30 June 2026: 2,042; 31 October 2025: 2,003).",
+   "gnote": "early signal: first step up in tone",
+   "file": "20261104_FDM_Trading-Statement.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-03",
-  "doc": "H1 R",
-  "file": "20260803_FDM_Half-year-Financial-Report.md",
-  "vs": "H1 R Jul-25 · back to Jul-22 · AGM May-26",
+  "rns": "2026-11-04",
+  "doc": "Q3 TU",
+  "file": "20261104_FDM_Trading-Statement.md",
+  "vs": "Q3 TU Nov-25 · back to Nov-23 · H1 R Aug-26",
   "lines": [
-   {
-    "sev": "red",
-    "type": "Anchor softened",
-    "text": "Interims gave a full-year view: Jul-24 “The Board anticipates that the Group's financial performance for the full year will be in line with its current expectations.” → Aug-26 only H1: “the Group's first half performance was in line with the Board's expectations”, plus “it remains too early to judge whether this improvement will continue”; no FY26 view",
-    "span": "Full-year view at H1 Jul-22, Jul-23, Jul-24, Jul-25 → first gap in 4 years (Jan-26 had used market consensus range)"
-   },
    {
     "sev": "amber",
     "type": "Wording vs number",
-    "text": "“The modest pickup in trading activity which we began to see towards the end of 2025 continued through the first half of 2026” beside revenue £78.6m (H1-25 £97.3m, -19%; -2% vs H2-25) and adjusted PBT £5.5m (H1-25 £9.0m, -39%); UK consultants 839 vs 910 at YE-25",
-    "span": "H1 R Jul-25 → Aug-26"
-   },
-   {
-    "sev": "amber",
-    "type": "New caution",
-    "text": "Jul-25: “we have not changed the rating of any of our principal risks” → Aug-26 key-staff attrition “has increased marginally since the end of 2025” and AI business-model risk “currently higher than in recent years”",
-    "span": "H1 R Jul-25 → Aug-26"
+    "text": "“The Group has maintained its robust balance sheet” beside cash £31.9m at Oct-26 vs £40.1m at Oct-25 and £47.7m at Oct-24, before the £3.3m interim dividend, itself halved to 3.0p from 6.0p",
+    "span": "Q3 TU Nov-24 → Nov-25 → Nov-26"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Consultants assigned 2,042 vs 2,003 at YE-25 (Jul-25: 2,173, down 16% on YE-24) — “the first six-monthly increase in this metric since the market downturn in 2023”; coaching completions 609 (H1-25: 424)",
-    "span": "First half-on-half rise since 2023"
+    "text": "Full-year view back: Aug-26 only “the Group's first half performance was in line with the Board's expectations” and “too early to judge whether this improvement will continue” → Nov-26 “for the full year to 31 December 2026 will be in line with its expectations”",
+    "span": "H1 R Aug-26 → Q3 TU Nov-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Consultants assigned at 31 October: 5,014 (2022), 4,136 (2023), 2,906 (2024), 2,003 (2025) → “has increased to 2,070” (2026), up 3.3%",
+    "span": "First year-on-year rise in the October figures since Oct-22"
    }
   ]
  }

@@ -1,8 +1,8 @@
 {
  "ticker": "TRN",
- "v": "2026-10-20.d065",
+ "v": "2026-11-04.54c6",
  "ccy": "GBX",
- "src": "Yahoo TRN.L weekly",
+ "src": "Yahoo TRN.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-20",
    228.2
+  ],
+  [
+   "2026-10-23",
+   225.6
+  ],
+  [
+   "2026-10-30",
+   209.6
   ]
  ],
  "marks": [
@@ -1252,38 +1260,47 @@
    "s": 0,
    "q": "Trainline reconfirms its FY2027 guidance for Group net ticket sales of between £6.2 billion to £6.45 billion, Group Underlying Revenue2 of between £440 million to £455 million and Adjusted EBITDA as a % of net ticket sales at c.2.9%, with International Consumer expected to breakeven this year5.",
    "file": "20260911_TRN_TRADING-STATEMENT-AND-NOTICE-OF-HALF-YEAR-RESULTS.md"
+  },
+  {
+   "d": "2026-11-04",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Those strengths showed in the first half, despite multiple headwinds, and today we are reconfirming our full-year guidance.",
+   "file": "20261104_TRN_Results-for-the-six-months-ended-31-August-2026.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-11",
-  "doc": "H1 TU",
-  "file": "20260911_TRN_TRADING-STATEMENT-AND-NOTICE-OF-HALF-YEAR-RESULTS.md",
-  "vs": "H1 TU Sep-25 · FY R May-26 · back to H1 TU Sep-24",
+  "rns": "2026-11-04",
+  "doc": "H1 R",
+  "file": "20261104_TRN_Results-for-the-six-months-ended-31-August-2026.md",
+  "vs": "H1 R Nov-25 · H1 TU Sep-26 · FY R May-26 · back to H1 R Nov-23",
   "lines": [
    {
-    "sev": "red",
-    "type": "Anchor softened",
-    "text": "May-26 revenue guide: “We expect revenue of £440 to £455 million in FY2027” → now reconfirmed as “Group Underlying Revenue2 of between £440 million to £455 million”, a measure that “excludes any potential non-recurring revenue adjustments on statutory revenue” from the CMA investigation",
-    "span": "Revenue guided on a statutory basis May-23 to May-26 → first guide on an underlying basis"
+    "sev": "amber",
+    "type": "Demoted",
+    "text": "Adjusted free cash flow: Nov-25 summary table and highlights “Adjusted free cash flow of £79 million up 2%” → Nov-26 out of both, only in the review text: “Adjusted free cash flow17 was £45 million, down from £79 million in the prior year”",
+    "span": "In the summary table Nov-23, Nov-24, Nov-25, May-26 → first results without it, in a half when it fell 43%"
+   },
+   {
+    "sev": "amber",
+    "type": "Pushed out",
+    "text": "Italy carrier competition: Nov-25 “with SNCF set to launch long-distance services from early 2027” → May-26 “set to commence from late 2027” → Nov-26 “with SNCF now expected to launch domestic services connecting Turin to Naples and Turin to Venice from mid 2028”",
+    "span": "Second slip in 12 months; company says “moved back by approximately one year”"
    },
    {
     "sev": "amber",
     "type": "New caution",
-    "text": "CMA investigation into UK fee presentation flagged for the first time: “The investigation is at an early stage, and there are many variables involved in predicting the possible range of outcomes of the investigation and therefore to quantify any potential financial impact.”",
-    "span": "Not in FY R May-26 → first flag"
+    "text": "CMA: Sep-26 no figure, unable “to quantify any potential financial impact” → Nov-26 £3.7m provision and £4m exceptional, “it is more likely than not that an outflow may be required”, and “the regulatory environment is an area of heightened risk”",
+    "span": "First provision; added as a new significant judgement. Next CMA update January 2027"
    },
    {
     "sev": "amber",
-    "type": "Went quiet",
-    "text": "Sep-25: net ticket sales “tracking towards the upper end of Trainline's FY2026 guidance range for growth of between 6% to 9%” → Sep-26 gives no position within the FY2027 ranges, only “reconfirms its FY2027 guidance”",
-    "span": "Range position given at H1 TU Sep-24, Sep-25 → first gap"
-   },
-   {
-    "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Headline “Robust first half performance” beside Group net ticket sales “flat year-on-year” and Underlying Revenue “£233 million, 1% lower year-on-year”, International Consumer net ticket sales “down 4% year-on-year”",
-    "span": "Sep-25 used the same headline with net ticket sales +8%"
+    "type": "Number to words",
+    "text": "Foreign travel sales: Nov-25 “which were down 2%”, May-26 “up 5% year-on-year (-2% in H1)” → Nov-26 “net ticket sales were soft”, no figure. South-East France also: Nov-25 “34% Q2 growth” → Nov-26 “double-digit net ticket sales growth”",
+    "span": "Percentages given Nov-25 and May-26 → first gap"
    }
   ]
  }

@@ -1,8 +1,8 @@
 {
  "ticker": "WEIR",
- "v": "2026-10-21.375c",
+ "v": "2026-11-04.92f6",
  "ccy": "GBX",
- "src": "Yahoo WEIR.L weekly",
+ "src": "Yahoo WEIR.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-21",
    2542.0
+  ],
+  [
+   "2026-10-23",
+   2470.0
+  ],
+  [
+   "2026-10-30",
+   2636.0
   ]
  ],
  "marks": [
@@ -1234,38 +1242,48 @@
    "s": -1,
    "q": "We are therefore on track to deliver our £90m target in cumulative Performance Excellence savings and expect to sustain margins above 20% for the full year.",
    "file": "20260729_WEIR_Half-year-Financial-Report.md"
+  },
+  {
+   "d": "2026-11-04",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -2,
+   "q": "We are on track to deliver in line with current market expectations for growth in constant currency revenue and operating profit, with operating margins above 20% for the full year along with strong cash conversion.",
+   "file": "20261104_WEIR_Q3-Trading-Update.md",
+   "gnote": "withdrawn"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-29",
-  "doc": "H1 R",
-  "file": "20260729_WEIR_Half-year-Financial-Report.md",
-  "vs": "H1 R Jul-25 · Q1 TU Apr-26 · FY R Mar-26 · H1 R Jul-23/Jul-24",
+  "rns": "2026-11-04",
+  "doc": "Q3 TU",
+  "file": "20261104_WEIR_Q3-Trading-Update.md",
+  "vs": "Q3 TU Nov-25 · H1 R Jul-26 · back to Q3 TU Nov-22/23/24 · FY R Mar-26 / Q1 Apr-26",
   "lines": [
    {
     "sev": "red",
     "type": "Number to words",
-    "text": "Operating margin guide: FY R Mar-26 “mid-single-digit organic revenue growth and c.50bps of operating margin expansion in 2026” → H1 Jul-26 “expect to sustain margins above 20% for the full year”, no bps figure (H1 margin 18.8% vs 19.8%)",
-    "span": "Numeric margin guide at H1 Jul-23 (17%), Jul-24 (c.18%), Jul-25 (c.20%) → first H1 without one"
+    "text": "Free operating cash conversion guide: H1 Jul-26 “We expect full year free operating cash conversion of between 90% and 100%” → Q3 Nov-26 “along with strong cash conversion”, no figure (H1 was 41%)",
+    "span": "Numeric at every Q3 TU Nov-22 to Nov-25 and at Mar/Apr/Jul-26 → first Q3 without one"
+   },
+   {
+    "sev": "red",
+    "type": "Pushed out",
+    "text": "Leverage guide: Nov-25 “below 1.5x by year end 2026” → Jul-26 “We anticipate a return toward the top of our debt covenant range of 1.5x EBITDA by the end of 2026” → Nov-26 “we expect to land slightly above our normal operating range of 0.5 to 1.5 times net debt to EBITDA”, back in range only “over the course of 2027”",
+    "span": "Stepped back at each stage: below (Nov-25) → toward (Mar/Apr-26) → top of range (Jul-26) → above (Nov-26)"
    },
    {
     "sev": "amber",
-    "type": "Wording vs number",
-    "text": "“Revenue and operating margins in line with expected weighting” beside adjusted operating margin 18.8% (H1-25: 19.8%), adjusted PBT £196m (£213m), adjusted EPS 54.6p (58.9p) and free operating cash conversion 41% (62%)",
-    "span": "vs H1 R Jul-25"
-   },
-   {
-    "sev": "amber",
-    "type": "Anchor softened",
-    "text": "Leverage guide: “below 1.5x by year end 2026” (Jun-25, Nov-25, Dec-25, Mar-26) → “We anticipate a return toward the top of our debt covenant range of 1.5x EBITDA by the end of 2026”; net debt/EBITDA 2.2x (Dec-25 1.9x, Jun-25 2.0x)",
-    "span": "Softening began at FY R Mar-26 / Q1 Apr-26 (“toward our normal operating range”); now “top” of range"
+    "type": "Went quiet",
+    "text": "Organic revenue guide: H1 Jul-26 “we expect mid-single-digit organic revenue growth” → Q3 Nov-26 only “growth in constant currency revenue and operating profit”, which includes acquisitions; no organic revenue figure",
+    "span": "Given Mar-26, Jul-26"
    },
    {
     "sev": "amber",
     "type": "New caution",
-    "text": "First flagged in H1-26: “unusual demand patterns seen in Q1 and early Q2 created a shift in product mix relative to our planning assumptions complicating complex global production transfers”, plus “some customer payment delays reflecting heightened uncertainty”",
-    "span": "Not in Q1 TU Apr-26 or H1 R Jul-25"
+    "text": "Now named in the outlook: “prolonged conflict in the Middle East, international freight availability, and the pace of recovery from mine disruptions in Chile”, with Q4 carrying “our large aftermarket backlog”",
+    "span": "Q1 Apr-26 called them “temporary mine disruptions”; freight headwind not in any 2025-26 RNS before this"
    }
   ]
  }

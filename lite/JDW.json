@@ -1,6 +1,6 @@
 {
  "ticker": "JDW",
- "v": "2026-10-30.ef7f",
+ "v": "2026-11-04.add9",
  "ccy": "GBX",
  "src": "Yahoo JDW.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1052,6 +1052,10 @@
   [
    "2026-10-23",
    1019.0
+  ],
+  [
+   "2026-10-30",
+   1050.0
   ]
  ],
  "marks": [
@@ -1354,35 +1358,46 @@
    "q": "At this early stage, we continue to anticipate profit before tax and separately disclosed items in line with current market expectations1.",
    "file": "20261002_JDW_Preliminary-Results.md",
    "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2026-11-04",
+   "doc": "Q1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "There are still three quarters to go and profit forecasts are very dependent on the level of sales growth. We are comfortable with current market expectations1, once adjusted for the 53-week period.",
+   "file": "20261104_JDW_Trading-Update-Announcement.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-02",
-  "doc": "FY R",
-  "file": "20261002_JDW_Preliminary-Results.md",
-  "vs": "FY R Oct-25 · YE-TU Jul-26 · back to FY R Oct-24 / H1 R Mar-25",
+  "rns": "2026-11-04",
+  "doc": "Q1 TU",
+  "file": "20261104_JDW_Trading-Update-Announcement.md",
+  "vs": "Q1 TU Nov-25 · FY R Oct-26 · back to Q1 TU Nov-23/Nov-24",
   "lines": [
    {
     "sev": "amber",
+    "type": "Anchor softened",
+    "text": "FY R Oct-26 “we continue to anticipate profit before tax and separately disclosed items in line with current market expectations1” → Q1 Nov-26 “We are comfortable with current market expectations1, once adjusted for the 53-week period”, beside “profit forecasts are very dependent on the level of sales growth”",
+    "span": "Consensus footnote moved from £74 million to £76.4m (53 weeks) in a month; the extra week is not sized"
+   },
+   {
+    "sev": "amber",
+    "type": "Pushed out",
+    "text": "Openings: Oct-26 “There are plans to open approximately 15 managed pubs” and franchises “approximately 15 to 20” → Nov-26 six opened plus “there may be an additional 5-10 managed pub openings” (11-16), two opened plus “an additional 10-15 franchised openings” (12-17)",
+    "span": "Nov-25 plan of “a total of 15 pubs” ended FY26 at “Eight Wetherspoon managed pubs opened in the year”"
+   },
+   {
+    "sev": "grey",
     "type": "Wording vs number",
-    "text": "Highlights lead with “Free cash inflow per share 92.4p (2025: 47.3p)” at “+95.3%”, but the body says “The inflow of £100.1 million benefited from an increase in working capital of £33.5 million” and underlying free cash flow was “£66.6 million (2025: £72.6 million)”, i.e. down"
-   },
-   {
-    "sev": "amber",
-    "type": "Target dropped",
-    "text": "Mar-25 and Oct-25: “It is estimated that reinvestment will increase to 3.7% of sales” → Oct-26 no mention, while investment fell to “£26.3 million in existing pubs (2025: £62.5 million)”",
-    "span": "Given Mar-25, Oct-25 → absent Mar-26, Oct-26"
-   },
-   {
-    "sev": "amber",
-    "type": "Number to words",
-    "text": "Oct-25 sized the cost headwind: “cost increases of approximately £60 million per annum, and non-commodity energy costs will add £7 million” → Oct-26 only “Government-led tax and cost increases have weighed heavily on the hospitality industry in recent years”, no £ figure for FY27"
+    "text": "Oct-26 caveat “at least partially due to weather, which will inevitably revert to the norm” is gone: Nov-26 says “The company has had a good start to the financial year” while “LFL sales for the most recent five weeks were slightly lower at 7.5%” (first nine weeks 8.6%)"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Results guide was “reasonable outcome for the financial year” (Oct-23, Oct-25; Oct-24 near-identical) → Oct-26 anchors to “in line with current market expectations1” with consensus given as “£74 million”"
+    "text": "New figure at Q1: “Net debt at the end of the first quarter was £736 million (FY26 Q1: £756 million).”",
+    "span": "Not in Q1 TU Nov-23, Nov-24 or Nov-25"
    }
   ]
  }

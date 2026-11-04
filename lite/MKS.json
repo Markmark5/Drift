@@ -1,8 +1,8 @@
 {
  "ticker": "MKS",
- "v": "2026-10-21.b1b7",
+ "v": "2026-11-04.c6cd",
  "ccy": "GBX",
- "src": "AlphaVantage MKS.LON weekly",
+ "src": "AlphaVantage MKS.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1060,6 +1060,14 @@
   [
    "2026-10-20",
    420.8
+  ],
+  [
+   "2026-10-23",
+   422.4
+  ],
+  [
+   "2026-10-30",
+   404.0
   ]
  ],
  "marks": [
@@ -1207,14 +1215,48 @@
    "s": 0,
    "q": "Profit growth is expected to resume versus 2024/25. Food continues to drive volume growth through reinvestment in value, quality and innovation and increased new store openings.",
    "file": "20260520_MKS_Final-Results.md"
+  },
+  {
+   "d": "2026-11-04",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -1,
+   "q": "Cost growth including marketing was weighted towards the first half while structural cost savings are planned to build through the second half.",
+   "file": "20261104_MKS_Half-year-Financial-Report.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-01",
-  "doc": "OPS",
-  "file": "20261001_MKS_Admission-to-Trading.md",
-  "vs": "Admission to Trading Sep-26 · Aug-26 · Jul-26 (no Oct-25 equivalent)",
-  "lines": []
+  "rns": "2026-11-04",
+  "doc": "H1 R",
+  "file": "20261104_MKS_Half-year-Financial-Report.md",
+  "vs": "H1 R Nov-25 · back to Nov-24 · FY R May-26",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Target dropped",
+    "text": "May-26 FY27 guide “Profit growth is expected to resume versus 2024/25.” → Nov-26 not repeated: full-year profit now tied to market expectations (no figure) and only “For the full year, Food margins are expected to be ahead of 2024/25”; H1 adjusted PBT £403.2m vs £413.1m in 2024/25",
+    "span": "FY R May-26 → H1 R Nov-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Target dropped",
+    "text": "Cumulative cost target: Nov-24 “confident of achieving £500m of savings by FY28” → May-26 “Structural cost reduction of £600m is targeted between 2022/23 and 2027/28.” → Nov-26 no cumulative figure, only “over £120m of structural savings expected in full year”",
+    "span": "Stated Nov-24, Nov-25, May-26 → first gap"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Capex: May-26 “c.£650-£750m in line with previous forecasts” → Nov-26 approximately £750m, the top of that range, still described as “in line with previous guidance”; H1 capex in cash flow £501.0m (H1-25 £172.2m)",
+    "span": "FY R May-26 → H1 R Nov-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "Food market share: Nov-24 “Market share was up 30bps to 3.7%”, May-26 “market share grew 17bps to 4.1%” → Nov-26 “market share gains”, no share or bps figure for Food or Fashion",
+    "span": "Figures at Nov-24, Nov-25, May-26"
+   }
+  ]
  }
 }

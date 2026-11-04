@@ -1,8 +1,8 @@
 {
  "ticker": "SN.",
- "v": "2026-10-21.8f3a",
+ "v": "2026-11-04.c8ba",
  "ccy": "GBX",
- "src": "Yahoo SN.L weekly",
+ "src": "Yahoo SN.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-21",
    1081.0
+  ],
+  [
+   "2026-10-23",
+   1134.0
+  ],
+  [
+   "2026-10-30",
+   1121.0
   ]
  ],
  "marks": [
@@ -1243,14 +1251,48 @@
    "s": -2,
    "q": "Anticipated growth in full year revenue reduced from around 6% to around 4%; trading profit, free cash flow and adjusted ROIC guidance unchanged",
    "file": "20260804_SN_Half-Year-Report.md"
+  },
+  {
+   "d": "2026-11-04",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -3,
+   "q": "As a result of the lower revenue outlook, trading profit growth is now expected to be around 4% (previously “around 8%”), with around $1.25 billion of trading profit (previously “around $1.3 billion”) including marginal dilution from the Integrity acquisition",
+   "file": "20261104_SN._Smith+Nephew-Third-Quarter-2026-Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-18",
-  "doc": "Admission",
-  "file": "20260918_SN_Admission-to-Trading.md",
-  "vs": "Admission to Trading May-26 / Jun-26 · previous RNS Sep-26 tender pricing",
-  "lines": []
+  "rns": "2026-11-04",
+  "doc": "Q3 TU",
+  "file": "20261104_SN._Smith+Nephew-Third-Quarter-2026-Trading-Update.md",
+  "vs": "Q3 TU Nov-25 · H1 R Aug-26 · Q1 TU May-26",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Target dropped",
+    "text": "H2 revenue guide: Aug-26 “We expect second half revenue growth to be in the range of 5.0% to 5.5%” → Nov-26 no H2 range; Q3 came in at 3.4% and the year is now “Full year underlying revenue growth of around 3%”",
+    "span": "H2 range set Aug-26, dropped one quarter later"
+   },
+   {
+    "sev": "amber",
+    "type": "Demoted",
+    "text": "ROIC: May-26 and Aug-26 highlights carried “more than 10% adjusted ROIC” → Nov-26 highlights list revenue, trading profit and free cash flow only; the cut sits on the back page: “Adjusted Return on Invested Capital (ROIC) is expected to be around 9%”",
+    "span": "In the guidance highlights May-26, Aug-26 → body text only"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Efficiency savings: Aug-26 “taking total savings to around $200 million for the year” → Nov-26 no savings figure, only “enhancing operational efficiency”, though these savings were what held the profit guide in August",
+    "span": "$150m Mar-26, $200m Aug-26 → first gap"
+   },
+   {
+    "sev": "amber",
+    "type": "Pushed out",
+    "text": "US Hips: Aug-26 “a return to growth in US Hip Implants following increased CATALYSTEM set deployment” → Nov-26 “US Hip Implants revenue declined -1.0%” and “We expect US Hip performance to improve as we deploy additional CATALYSTEM sets”, no date",
+    "span": "Promised for H2 at Aug-26 → open-ended at Nov-26"
+   }
+  ]
  }
 }

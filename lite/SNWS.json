@@ -1,8 +1,8 @@
 {
  "ticker": "SNWS",
- "v": "2026-10-19.3810",
+ "v": "2026-11-04.bc16",
  "ccy": "GBX",
- "src": "Yahoo SNWS.L weekly",
+ "src": "Yahoo SNWS.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-19",
    80.0
+  ],
+  [
+   "2026-10-23",
+   81.6
+  ],
+  [
+   "2026-10-30",
+   82.0
   ]
  ],
  "marks": [
@@ -1252,32 +1260,48 @@
    "s": 2,
    "q": "I am pleased to report positive momentum across the business in FY2026, with results now expected to exceed market expectations, driven by a particularly strong performance in the second half of the year.",
    "file": "20260929_SNWS_Post-Year-End-Trading-Update.md"
+  },
+  {
+   "d": "2026-11-04",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "CUT",
+   "s": -2,
+   "q": "Whilst there will be a short-term impact on profitability for the business in FY2027, we anticipate the expansion will deliver incremental net profit from FY2028 and we will start to see the real benefits from FY2029 and beyond.",
+   "gnote": "discounted: Go National expansion",
+   "file": "20261104_SNWS_Preliminary-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-29",
-  "doc": "YE-TU",
-  "file": "20260929_SNWS_Post-Year-End-Trading-Update.md",
-  "vs": "YE-TU Sep-25 · back to Oct-24, Oct-23 · H1 R May-26 · Jun-26",
+  "rns": "2026-11-04",
+  "doc": "FY R",
+  "file": "20261104_SNWS_Preliminary-Results.md",
+  "vs": "FY R Nov-25 · back to Nov-24, Nov-22 · YE-TU Sep-26 · Jun-26 / Oct-26 contracts",
   "lines": [
    {
-    "sev": "amber",
-    "type": "Target dropped",
-    "text": "Efficiency savings: H1 May-26 “On track to deliver in excess of £4m of operational efficiencies in FY2026” → Sep-26 no mention of cost savings or efficiencies; Sep-25 had “delivering cost-savings in line with expectations”",
-    "span": "Cost savings reported at Oct-23, Oct-24, Sep-25 post-close → first gap"
+    "sev": "red",
+    "type": "Next-year view dropped",
+    "text": "Last year: “expects to deliver results in line with current market expectations” with footnote “consensus market expectation for FY2026 is adjusted operating profit of £36.7m” → this year “Trading in FY2027 has started positively”, no in-line statement, and the footnote gives FY2027 dividend only",
+    "span": "Next-year in-line statement at Nov-22, Nov-24, Nov-25 → first gap"
    },
    {
-    "sev": "grey",
-    "type": "Went quiet",
-    "text": "Dividend: Jun-26 “maintain ordinary dividend guidance for both FY2026 and FY2027 at or above the current consensus estimates being 5.2p per share” → Sep-26 no dividend or capital allocation line; Sep-25 said “the Board continues to consider investment in its core capabilities, potential adjacent market opportunities and further shareholder returns”",
-    "span": "Sep-25 → Sep-26"
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Payback: Jun-26 “accretive to earnings from FY2028 onwards” → Nov-26 “incremental net profit per annum of between £0m and £2m in FY2028, and between £12m and £18m from FY2029”",
+    "span": "Jun-26 → first numbers Nov-26; FY2028 could be nil"
+   },
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "Growth verticals: Nov-26 expansion “will result in a temporary hiatus on driving the new business pipeline within final mile and new categories”, first time flagged",
+    "span": "Not in Nov-25 or May-26"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Collectables quantified for the first time: “a record contribution from the Men's FIFA World Cup of over £3m”, set against consensus “Current adjusted operating profit market expectation for FY2026 is £37.2m.”",
-    "span": "Sep-25 “strong demand for collectables”, no figure → Sep-26 £3m"
+    "text": "Go National costs quantified: Jun-26 “Board expects to provide further guidance on the financial effects” → Nov-26 “implementation costs of between £21m and £27m” and “early-life transition costs between £7m and £9m in FY2027”",
+    "span": "Promised in the Jun-26 to Oct-26 contract RNS → delivered Nov-26"
    }
   ]
  }

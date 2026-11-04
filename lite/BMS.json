@@ -1,8 +1,8 @@
 {
  "ticker": "BMS",
- "v": "2026-10-19.d311",
+ "v": "2026-11-04.f8d6",
  "ccy": "GBX",
- "src": "Yahoo BMS.L weekly",
+ "src": "Yahoo BMS.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-19",
    244.88
+  ],
+  [
+   "2026-10-23",
+   243.0
+  ],
+  [
+   "2026-10-30",
+   232.0
   ]
  ],
  "marks": [
@@ -1334,32 +1342,47 @@
    "s": 0,
    "q": "The board remains confident that the Group will deliver in line with market expectations for the full year.",
    "file": "20260929_BMS_HY27-Trading-Update.md"
+  },
+  {
+   "d": "2026-11-04",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Our forward order book increased to $80.7m at the end of September and the board remains confident that the Group will deliver in line with market expectations for the full year.",
+   "file": "20261104_BMS_Unaudited-Half-Year-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-29",
-  "doc": "H1 TU",
-  "file": "20260929_BMS_HY27-Trading-Update.md",
-  "vs": "H1 TU Sep-25 · AGM Jul-26 · FY R May-26 · YE-TU Mar-26",
+  "rns": "2026-11-04",
+  "doc": "H1 R",
+  "file": "20261104_BMS_Unaudited-Half-Year-Results.md",
+  "vs": "H1 R Nov-25 · H1 TU Sep-26 · FY R May-26 · back to H1 R Nov-23",
   "lines": [
    {
     "sev": "amber",
-    "type": "Target dropped",
-    "text": "M&A goal: HY26 TU “the Group continues to evaluate potential acquisitions”; FY27 output set May-26 “Complete one complementary M&A transaction” → HY27 TU makes no mention of acquisitions",
-    "span": "M&A referenced Sep-25, Mar-26, May-26 → first TU without it"
+    "type": "Wording vs number",
+    "text": "Operating margin: “Excluding the impact of that new investment, the underlying operating margin increased to 10.0% from 8.8% in the prior year” → as reported £6.0m on £74.3m is 8.1%, down from 8.8% (£5.6m on £63.9m); the 8.1% is not stated",
+    "span": "Revenue +16%, underlying operating profit +7%; ex-investment margin is a new measure"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Forward order book: “a strong and expanding forward order book”, “increasing to $80.7m at 30 September 2026” → last year “$81.2m at 30 September 2025”, not shown as a comparison, so it is lower year on year",
+    "span": "30 Sep figure $85.8m Nov-24, $81.2m Nov-25, $80.7m Nov-26; 31 Aug flat at $73.6m vs $73.8m"
+   },
+   {
+    "sev": "amber",
+    "type": "Split withheld",
+    "text": "Desk revenue in £: Nov-25 “Revenue from Deep Sea Tankers in HY26 was £17.4m”, “Total revenue for Sale and Purchase in HY26 was £12.8m” → Nov-26 percentages only: “Revenue from Deep Sea Tankers in HY27 was 27% higher than in HY26”, “Total revenue for Corporate Finance in HY27 was 59% lower than in HY26”",
+    "span": "£ by desk at Nov-23, Nov-24, Nov-25 → first interim without it"
    },
    {
     "sev": "grey",
-    "type": "Split withheld",
-    "text": "Consensus footnote: HY26 profit consensus with range “£13.5m (£13.0m - £13.8m)” → HY27 profit consensus £14.2m with no range (revenue range still given)",
-    "span": "Range given Sep-25, Nov-25, Feb-26, Mar-26 → dropped Jul-26 and Sep-26"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Anchor: HY26 “the board's expectations for the full year remain unchanged” → HY27 “in line with market expectations for the full year”",
-    "span": "Board's anchor Sep-25 and Nov-25 → market anchor back since Feb-26"
+    "type": "Restated",
+    "text": "Forward order book at 31 August 2026: Sep-26 “Strong forward order book3 of $73.4m” → Nov-26 “Forward order book of $73.6m at 31 August 2026”",
+    "span": "Same date, $0.2m higher, no explanation"
    }
   ]
  }

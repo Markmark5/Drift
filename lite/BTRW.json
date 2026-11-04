@@ -1,8 +1,8 @@
 {
  "ticker": "BTRW",
- "v": "2026-10-20.6750",
+ "v": "2026-11-04.d998",
  "ccy": "GBX",
- "src": "Yahoo BTRW.L weekly",
+ "src": "Yahoo BTRW.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-20",
    321.2
+  ],
+  [
+   "2026-10-23",
+   322.0
+  ],
+  [
+   "2026-10-30",
+   319.7
   ]
  ],
  "marks": [
@@ -1163,36 +1171,47 @@
    "s": -1,
    "q": "FY27 guidance for total home completions adjusted to 17,500-17,900, from previous guidance at 17,700-18,200 (both including c. 600 JV completions), reflecting continued planning delays and a consequent reduction to expected sales outlet openings with c. 405 average sales outlets now anticipated, from c. 415 previously.",
    "file": "20260916_BTRW_Barratt-Redrow-Full-Year-2026-Results.md"
+  },
+  {
+   "d": "2026-11-04",
+   "doc": "AGM",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "For the current year our guidance remains unchanged. The market backdrop continues to be challenging with pressure on affordability for potential homebuyers.",
+   "file": "20261104_BTRW_AGM-Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-16",
-  "doc": "FY R",
-  "file": "20260916_BTRW_Barratt-Redrow-Full-Year-2026-Results.md",
-  "vs": "FY R Sep-25 · YE-TU Jul-26 · H1 R Feb-26",
+  "rns": "2026-11-04",
+  "doc": "AGM",
+  "file": "20261104_BTRW_AGM-Trading-Update.md",
+  "vs": "AGM Nov-25 · back to Oct-24 · FY R Sep-26",
   "lines": [
    {
     "sev": "red",
-    "type": "Pushed out",
-    "text": "FY27 outlets: Feb-26 “an average sales outlet position of between 425 and 435” → Jul-26 “revised estimate of c. 415” → Sep-26 “c. 405 average sales outlets now anticipated”, completions cut to 17,500-17,900 “reflecting continued planning delays”",
-    "span": "Second cut to the FY27 outlet guide in two RNS"
-   },
-   {
-    "sev": "amber",
     "type": "Target dropped",
-    "text": "Land: FY26 guide “Expect to replace plots utilised in the year” → Sep-26 “we approved 3,029 plots for purchase across 27 sites, compared to initial guidance of between 10,000 and 12,000 plots” (FY25: 22,530 approved); FY27 “6,000 - 8,000 plots subject to market conditions & land opportunities”"
+    "text": "Medium-term volume target: Nov-25 AGM “target sustainable growth over the medium term to reach 22,000 home completions per year” → Nov-26 AGM no medium-term target; new CEO: “I look forward to sharing more in due course”",
+    "span": "Stated Oct-24, Apr-25, Nov-25, Feb-26 → absent Apr-26, Jul-26, Sep-26, Nov-26"
    },
    {
     "sev": "amber",
-    "type": "New caution",
-    "text": "Build cost inflation: FY26 guide “c. 1-2% including estimated procurement-based cost synergies” → FY27 guide “c. 3-4% including procurement-based cost synergies of c. £14m”",
-    "span": "FY R Sep-25 → FY R Sep-26"
+    "type": "Number to words",
+    "text": "Nov-25 “remains unchanged at between 17,200 and 17,800 homes with around 40% of completions anticipated to be delivered in the first half” → Nov-26 Outlook only “For the current year our guidance remains unchanged.”; range and H1 split not restated, 17,700 mid-point in a footnote only",
+    "span": "AGM Nov-25 → AGM Nov-26; Sep-26 had 17,500 to 17,900 and c. 40% H1"
    },
    {
-    "sev": "grey",
-    "type": "Pushed out",
-    "text": "Synergies: Oct-24 “synergies expected to be realised fully within three years following Completion” → Sep-26 c. £19m of procurement synergies “will not be fully realised until the end of December 2027”; FY27 adds only c. £22m (£95m cumulative) against the £100m target"
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "“Our trading performance in the first 17 weeks of the financial year has been resilient” beside underlying private reservation rate 0.53 (FY26: 0.57), completions 3,223, down 12.1% (Nov-25: up 7.9%), and 56% forward sold (60%); 0.59 total rate relies on a 0.06 PRS contribution",
+    "span": "AGM Nov-25 → AGM Nov-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Synergy and land sections gone: Nov-25 “confirmed synergies now at £80m”, “26 planning applications for incremental sales outlets”, land bank c. 100,000 plots → Nov-26 no synergy or land bank figure, though Sep-26 left “the remaining £27m to be largely delivered in FY27”",
+    "span": "In AGM Oct-24 and Nov-25 → first gap"
    }
   ]
  }
