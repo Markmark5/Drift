@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "tickers": [
     {
       "ticker": "STAF",
@@ -3720,17 +3720,17 @@
       "company": "Diageo plc",
       "kind": "ticker",
       "direction": "watch",
-      "headline": "FY26 lands at the better end of a twice-cut guide; cash and margin now mending, but sales still shrink and FY27 sits off-page.",
-      "trigger": "Numbers & guide fired (G cuts Nov-25, Feb-26); Language fired (Nov-25 onward); Disclosure amber, not counted.",
-      "alert": true,
-      "fired": 2,
+      "headline": "First growth print in five quarters — +1.4% organic, price/mix positive — but EABL supplies most of it and North America still falls; guide held.",
+      "trigger": "Language fired (three prints ≤ −1 in trailing year); Numbers & guide amber (green-shoot discounted, EABL-flattered); Disclosure amber.",
+      "alert": false,
+      "fired": 1,
       "fired_of": 3,
-      "lights": "rra",
-      "rns_type": "FY R",
-      "rns_date": "2026-08-06",
-      "build_date": "2026-08-27",
-      "spec_version": "v5.4",
-      "next_test": "5 Nov 2026 — Q1 F27 TU: Q1 organic growth sign, price/mix sign, FY27 guide anchor restated",
+      "lights": "ara",
+      "rns_type": "Q1 TU",
+      "rns_date": "2026-11-05",
+      "build_date": "2026-11-05",
+      "spec_version": "v5.8",
+      "next_test": "Feb 2027 — H1 FY27 results: ex-EABL organic sign, NAM vs mid-single-digit-decline assumption, first savings print",
       "url": "DGE.html",
       "grid": {
         "labels": [
@@ -3741,7 +3741,6 @@
           "R5"
         ],
         "periods": [
-          "Q4 24",
           "Q1 25",
           "Q2 25",
           "Q3 25",
@@ -3749,17 +3748,36 @@
           "Q1 26",
           "Q2 26",
           "Q3 26",
-          "Q4 26"
+          "Q4 26",
+          "Q1 27"
         ],
         "rows": [
-          "-------r-",
-          "-grg-a-r-",
-          "grgrgrgrg",
-          "r-g-g-a-g",
-          "--r-r-r-g"
+          "------r-g",
+          "grg-a-r-a",
+          "rgrgrgrgg",
+          "-g-g-a-g-",
+          "-r-r-r-g-"
         ],
         "note": "Rank rows R1 price/mix, R2 organic net sales growth, R3 net sales sequential, R4 organic op profit (H1 on Q2 slot, FY on Q4 slot), R5 free cash flow (same mapping)."
-      }
+      },
+      "prev": {
+        "direction": "watch",
+        "fired": 2,
+        "lights": "rra",
+        "rns_date": "2026-08-06",
+        "rns_type": "FY R"
+      },
+      "trend": {
+        "mode": "share",
+        "cells": "a--",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": 1.1
+          }
+        ]
+      },
+      "chart": "charts/DGE.json?v=2026-11-05.6dd6"
     },
     {
       "ticker": "ECEL",
