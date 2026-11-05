@@ -1,8 +1,8 @@
 {
  "ticker": "TATE",
- "v": "2026-10-21.96c7",
+ "v": "2026-11-05.f110",
  "ccy": "GBX",
- "src": "AlphaVantage TATE.LON weekly",
+ "src": "AlphaVantage TATE.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1060,6 +1060,14 @@
   [
    "2026-10-20",
    566.0
+  ],
+  [
+   "2026-10-23",
+   563.0
+  ],
+  [
+   "2026-10-30",
+   564.0
   ]
  ],
  "marks": [
@@ -1071,14 +1079,49 @@
    "s": 0,
    "q": "The Tate & Lyle Directors have considered the Tate & Lyle Statement and confirm that, as at the date of this announcement, the Tate & Lyle Statement remains valid, has been properly compiled on the basis of the assumptions set out below and the basis of accounting used is consistent with Tate & Lyle's existing accounting policies.",
    "file": "20260608_TATE_Recommended-cash-acquisition-of-Tate-&-Lyle-PLC.md"
+  },
+  {
+   "d": "2026-11-05",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -1,
+   "q": "The extension of the conflict in the Middle East means that the impact has become more pronounced than originally anticipated and we intend to pass through cost inflation as we renew customer framework agreements for the 2027 calendar year",
+   "file": "20261105_TATE_Half-year-Financial-Report.md",
+   "gnote": "discounted: offer period (Ingredion)"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-06-08",
-  "doc": "FY R",
-  "file": "20260608_TATE_Recommended-cash-acquisition-of-Tate-&-Lyle-PLC.md",
-  "vs": "no earlier RNS in the record (first file in folder)",
-  "lines": []
+  "rns": "2026-11-05",
+  "doc": "H1 R",
+  "file": "20261105_TATE_Half-year-Financial-Report.md",
+  "vs": "H1 R Nov-25 · Q3 TU Feb-26 · FY R May-26 · Rule 2.7 Jun-26",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "Assumption behind the guide: May-26 “Our outlook currently assumes a limited impact from the conflict in the Middle East” → Nov-26 “the impact has become more pronounced than originally anticipated”, outlook maintained, with cost pass-through only “as we renew customer framework agreements for the 2027 calendar year”",
+    "span": "FY R May-26 → H1 R Nov-26; H1 EBITDA (8)%, EMEA (28)%"
+   },
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "Going concern: Nov-25 “no material uncertainties exist with respect to this assessment” → Nov-26 “there is a material uncertainty that may cast significant doubt on the Group’s ability to continue as a going concern”. Tied to the deal only: “There is no material uncertainty if the acquisition does not proceed.”",
+    "span": "First in the record; arises from the Ingredion change of control, auditor conclusion not modified"
+   },
+   {
+    "sev": "amber",
+    "type": "Target dropped",
+    "text": "Nov-25 “Targeting revenue synergies of up to US$70m by end of 2029 financial year.” and “Focus on deleveraging to below 2.0x net debt to EBITDA (currently 2.3x)” → Nov-26 neither target mentioned; cross-selling pipeline growth (“more than doubled in H2” at May-26) also gone",
+    "span": "Both given at Nov-25, May-26 → first gap, inside the Ingredion offer period"
+   },
+   {
+    "sev": "grey",
+    "type": "Wording vs number",
+    "text": "Leverage headline: Nov-25 “Net debt to EBITDA leverage7 at 2.3 times” (reported) → Nov-26 highlights lead with “2.3 times on a covenant basis6 (2025 – 2.4 times)”, which improves, while “Reported leverage at 2.4 times Net debt to EBITDA was slightly higher (2025 – 2.3 times).”",
+    "span": "Lead basis switched from reported to covenant"
+   }
+  ]
  }
 }

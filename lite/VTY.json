@@ -1,6 +1,6 @@
 {
  "ticker": "VTY",
- "v": "2026-10-27.6cb7",
+ "v": "2026-11-05.bfbe",
  "ccy": "GBX",
  "src": "Yahoo VTY.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1056,6 +1056,10 @@
   [
    "2026-10-23",
    248.4
+  ],
+  [
+   "2026-10-30",
+   256.8
   ]
  ],
  "marks": [
@@ -1346,38 +1350,47 @@
    "s": -3,
    "q": "Excluding the items above, we expect APBT to be in the region of £165m.",
    "file": "20260924_VTY_Half-year-results-for-the-period-ended-30-June-26.md"
+  },
+  {
+   "d": "2026-11-05",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -2,
+   "q": "Whilst market conditions continue to give rise to some timing uncertainty in Q4, we are making clear progress on the self-help initiatives that underpin both the FY26 guidance and medium-term strategy we set out in September.",
+   "file": "20261105_VTY_Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-24",
-  "doc": "H1 R",
-  "file": "20260924_VTY_Half-year-results-for-the-period-ended-30-June-26.md",
-  "vs": "H1 R Sep-25 · TU Jul-26 · AGM May-26 · H1 R Sep-24",
+  "rns": "2026-11-05",
+  "doc": "Q3 TU",
+  "file": "20261105_VTY_Trading-Update.md",
+  "vs": "Q3 TU Nov-25 · H1 R Sep-26 · H1 TU Jul-26 · back to Oct-23, Nov-24",
   "lines": [
    {
     "sev": "red",
-    "type": "Anchor softened",
-    "text": "Jul-26: “the Board expects that adjusted profit before tax for FY 2026 will be in line with the current market consensus” (£200m) → Sep-26: “Excluding the items above, we expect APBT to be in the region of £165m.”, no consensus reference anywhere in the RNS",
-    "span": "Consensus-anchored at May-26 (range of analysts' forecasts) and Jul-26 → dropped"
+    "type": "Number to words",
+    "text": "FY26 profit guide: Sep-26 “Excluding the items above, we expect APBT to be in the region of £165m.” → Nov-26 no figure, only “the FY26 guidance” beside “some timing uncertainty in Q4”",
+    "span": "Q3 update gave a profit figure Oct-23 (£410m) and Nov-24 (c. £300m); Nov-25 said expectations unchanged → neither now"
    },
    {
     "sev": "red",
-    "type": "Target dropped",
-    "text": "Year-end net cash: Jul-26 “continue to forecast a net cash position in excess of £100m at the end of 2026” → Sep-26 “broadly neutral cash position as at 31 December 2026, lower than previous guidance”",
-    "span": "Given at May-26 and Jul-26"
+    "type": "Next-year view dropped",
+    "text": "Sep-26 “we expect FY27 APBT to be c. £185m” and “targeting average daily net debt reduction to c. £500m in FY27” → Nov-26 no FY27 profit figure, debt only “the objective of reducing average daily net debt in FY27 and beyond”",
+    "span": "Both first given Sep-26, gone six weeks later"
+   },
+   {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Year-end debt: Jul-26 “We remain confident of achieving net cash in excess of £100m at year end” → Sep-26 “broadly neutral cash position” → Nov-26 “within the range of analysts’ expectations”, footnoted “£(7)m to £(130)m”; H2 average daily debt “below £650m in H2” → “second half of £750m” → “c. £800m”",
+    "span": "Own figure replaced by analysts' range; second step down since Jul-26"
    },
    {
     "sev": "amber",
-    "type": "Restated",
-    "text": "Forward order book redefined: Sep-25 “The Group's forward order book totals £4.3bn” → Sep-26 same date restated “(September 25: £3.7bn)”, now £3.3bn (Jul-26: “strong forward book of £3.9bn”)",
-    "span": "Sep-25 H1 R vs Sep-26 H1 R"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "First numeric next-year profit guide: “Subject to market conditions remaining broadly stable, we expect FY27 APBT to be c. £185m” (conditional)",
-    "span": "No next-year PBT figure in H1 R Sep-24 or Sep-25"
+    "type": "Went quiet",
+    "text": "Sales rate: Nov-25 “overall sales rate since 1 July is up 11%” at 0.81 → Nov-26 gives no sales rate; only order book “stands at £3.1bn”, no comparative (Sep-26 £3.3bn)",
+    "span": "Sales rate in Q3 update Oct-23, Nov-24, Nov-25 → first gap"
    }
   ]
  }

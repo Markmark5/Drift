@@ -1,6 +1,6 @@
 {
  "ticker": "SWG",
- "v": "2026-10-27.dae5",
+ "v": "2026-11-05.2e0c",
  "ccy": "GBX",
  "src": "Yahoo SWG.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1056,6 +1056,10 @@
   [
    "2026-10-23",
    71.0
+  ],
+  [
+   "2026-10-30",
+   65.0
   ]
  ],
  "marks": [
@@ -1311,39 +1315,23 @@
    "s": 0,
    "q": "Strong financial foundation, combined with a growing customer base, a well-established reputation and the increasing imperative for organisations to invest in cybersecurity, positions Shearwater well to deliver FY27 results in line with market expectations.",
    "file": "20261027_SWG_FY26-Results.md"
+  },
+  {
+   "d": "2026-11-05",
+   "doc": "OPS",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The agreement has a total value of approximately £9.2 million over three years, of which c.£ 3.0 million is expected to be recognised in FY27, supporting delivery of market expectations for the period",
+   "file": "20261105_SWG_Contract-expansion-with-major-UK-telco.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-27",
-  "doc": "FY R",
-  "file": "20261027_SWG_FY26-Results.md",
-  "vs": "FY R Nov-25 · YE-TU Jul-26 · contract RNS Oct-26",
-  "lines": [
-   {
-    "sev": "amber",
-    "type": "Pushed out",
-    "text": "Software: Nov-25 “with objective of returning Software segment of the business to growth in FY26” → Oct-26 Software “where revenue declined by 17% in the period”, now aiming to “position the Software division for a return to growth in FY27”",
-    "span": "FY26 target → FY27"
-   },
-   {
-    "sev": "grey",
-    "type": "Wording vs number",
-    "text": "Headline “Strong organic growth and improved profitability” beside Services gross margin “which fell from 21.6% in FY25 to 18.7% in FY26”",
-    "span": "Group margin also fell FY24 → FY25 (28% → 24%)"
-   },
-   {
-    "sev": "grey",
-    "type": "Demoted",
-    "text": "Nov-25 highlights carried “Adjusted EPS of 3.0p per share” → Oct-26 highlights give no EPS; adjusted EPS only in note 8",
-    "span": "Nov-25 → Oct-26"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "FY27 market anchor: Jul-26 “The Board remains confident in the Group's prospects for the year ahead.” → Oct-26 “positions Shearwater well to deliver FY27 results in line with market expectations”; Nov-25 gave only “growth in both revenue and EBITDA in FY26”",
-    "span": "First next-year market anchor in a FY R"
-   }
-  ]
+  "rns": "2026-11-05",
+  "doc": "OPS",
+  "file": "20261105_SWG_Contract-expansion-with-major-UK-telco.md",
+  "vs": "contract RNS Dec-25 · Feb-26 · Jul-26 · Oct-26 · FY R Oct-26",
+  "lines": []
  }
 }

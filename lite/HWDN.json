@@ -1,8 +1,8 @@
 {
  "ticker": "HWDN",
- "v": "2026-10-21.055e",
+ "v": "2026-11-05.97f2",
  "ccy": "GBX",
- "src": "Yahoo HWDN.L weekly",
+ "src": "Yahoo HWDN.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-21",
    788.5
+  ],
+  [
+   "2026-10-23",
+   791.0
+  ],
+  [
+   "2026-10-30",
+   805.5
   ]
  ],
  "marks": [
@@ -1244,32 +1252,47 @@
    "s": 0,
    "q": "Trading to date has been in line with our expectations. We are well prepared for Autumn peak trading and our full-year outlook is unchanged.",
    "file": "20260723_HWDN_Half-Year-Report.md"
+  },
+  {
+   "d": "2026-11-05",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "We remain on track with our outlook for 2026 and expect to deliver Group underlying profit before tax in line with current market expectations",
+   "file": "20261105_HWDN_Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-23",
-  "doc": "H1 R",
-  "file": "20260723_HWDN_Half-Year-Report.md",
-  "vs": "H1 R Jul-25 · FY R Feb-26 · TU Apr-26 · DIY Kitchens Jun-26",
+  "rns": "2026-11-05",
+  "doc": "Q3 TU",
+  "file": "20261105_HWDN_Trading-Update.md",
+  "vs": "Q3 TU Nov-25 · Nov-24 · back to Nov-22 · H1 R Jul-26 · Q1 TU Apr-26 · FY R Feb-26",
   "lines": [
    {
     "sev": "amber",
+    "type": "Anchor softened",
+    "text": "Consensus footnote: Feb-26 “an average of £354m, with a range of £345m to £383m” → Nov-26 “underlying profit before tax consensus, which is published on the Company’s website, is an average of £361m”, no range, and now includes DIY Kitchens from 23 June",
+    "span": "Up £7m with about six months of an acquired business added (2025 “EBIT of £37m”); range also given Nov-22, Nov-23, Nov-24"
+   },
+   {
+    "sev": "amber",
     "type": "Went quiet",
-    "text": "Market share: H1-25 highlight “Continued market share gains aided by ongoing investment in our strategic initiatives”; FY-25 “We gained market share” → H1-26 makes no claim of share gains in the period, only aims of “market share gains over the medium term”",
-    "span": "Claimed H1-25 and FY-25 → first half-year without it"
+    "text": "Same depot sales: Nov-25 “ahead by +1.4% on a same depot basis”; Jul-26 “On a same depot basis1 sales were up 2.0%” → Nov-26 replaced by a new measure, “Pro-forma sales growth is provided as additional comparative context”",
+    "span": "Same depot growth in every Q3 update Nov-22 to Nov-25, and Apr-26, Jul-26 → first gap"
    },
    {
     "sev": "amber",
     "type": "Wording vs number",
-    "text": "Profit headline moved to a new underlying basis: H1-25 table led with statutory “Profit before tax (PBT)” → H1-26 headline “underlying profit before tax of £122.2m was 4.3% ahead of the prior year”, while statutory “profit before tax of £115.8m (2025: £117.2m)” fell, “stated after £6.4m of acquisition costs”",
-    "span": "First use of an underlying PBT measure in the window"
+    "text": "Nov-25 headline “Strong trading momentum” → Nov-26 “Positive trading performance” and “We achieved record sales during TradeFest®”, beside reported “UK sales increased by 6.8% in Periods 7 to 11” but pro-forma “UK sales increased by 1.8% in periods 7 to 11 and were 2.4% ahead year to date”",
+    "span": "Peak-period pro-forma growth below the year-to-date rate; the gap to the reported figure is the DIY Kitchens acquisition"
    },
    {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "New cost metric: “Productivity and efficiency savings of £19m in the total cost base” now quantified in the highlights",
-    "span": "Not given in earlier RNS"
+    "sev": "grey",
+    "type": "Went quiet",
+    "text": "Price and volume: Nov-25 “with gains in both price and volume”; Jul-26 “supported by price and volume growth” → Nov-26 no comment on either, only “competitive pricing across all our kitchen and joinery categories”",
+    "span": "Stated Nov-25, Feb-26, Jul-26 → first gap"
    }
   ]
  }

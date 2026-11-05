@@ -1,8 +1,8 @@
 {
  "ticker": "TIME",
- "v": "2026-10-21.8a58",
+ "v": "2026-11-05.e0df",
  "ccy": "GBX",
- "src": "Yahoo TIME.L weekly",
+ "src": "Yahoo TIME.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-21",
    58.9
+  ],
+  [
+   "2026-10-23",
+   58.9
+  ],
+  [
+   "2026-10-30",
+   58.9
   ]
  ],
  "marks": [
@@ -1388,32 +1396,48 @@
    "s": 0,
    "q": "The Time Finance Directors have considered the Time Finance Profit Estimates and confirm that they remain valid as at the date of this announcement, have been properly compiled and the basis of the accounting used is consistent with the Time Finance Group's accounting policies.",
    "file": "20260817_TIME_Recommended-Cash-Acquisition-of-Time-Finance-plc.md"
+  },
+  {
+   "d": "2026-11-05",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "CUT",
+   "s": -1,
+   "q": "While the economic outlook continues to be influenced by geopolitical uncertainty, including the ongoing conflict in the Middle East, together with evolving fiscal and monetary policy, we remain confident in the resilience of our business model.",
+   "gnote": "discounted: offer period",
+   "file": "20261105_TIME_Final-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-17",
-  "doc": "OPS",
-  "file": "20260817_TIME_Recommended-Cash-Acquisition-of-Time-Finance-plc.md",
-  "vs": "YE-TU Jun-26 (previous RNS) · YE-TU Jun-24/Jun-25 · Nov-25/Jun-26 lending updates",
+  "rns": "2026-11-05",
+  "doc": "FY R",
+  "file": "20261105_TIME_Final-Results.md",
+  "vs": "FY R Sep-25 · Q1 TU Sep-25 · YE-TU Jun-26 · offer Aug-26",
   "lines": [
    {
     "sev": "red",
-    "type": "Anchor softened",
-    "text": "FY outturn was “revenue and profitability ahead of market expectations” (Jun-24) and again ahead in Jun-25 → FY26 profit estimates (PBTE £8.5m) repeated in the offer’s “Current trading” with no reference to market expectations; Jun-26 TU also silent",
-    "span": "Anchor given Jun-24, Jun-25 → absent Jun-26 and Aug-26"
+    "type": "Next-year view dropped",
+    "text": "Sep-25: “The Board confirms that it continues to expect the Group's trading for the current financial year ending 31 May 2026 to be at least in line with market expectations.” → Nov-26 no view of FY2026/27 and no market anchor, only “we remain confident in the resilience of our business model”",
+    "span": "Given at FY R Sep-22, Sep-23, Sep-24, Sep-25 → first gap; inside the Bentley Park offer period"
    },
    {
     "sev": "amber",
-    "type": "Target dropped",
-    "text": "Strategy target “targets the gross lending portfolio reaching £300m by 31 May 2028” (Nov-25), restated as “£300m plus lending book by 31 May 2028” (Jun-26) → not mentioned in the offer announcement",
-    "span": "Given Jan-25, Feb-25, Nov-25, Jun-26 → absent Aug-26"
+    "type": "New caution",
+    "text": "Sep-25: “The Asset Finance division also had a successful year” → Nov-26: “The Asset Finance division had a more challenging year” and “Increasing insolvencies provided some challenging recovery situations that continue to be worked through, and we have adjusted our credit policy accordingly”",
+    "span": "Jun-26 TU said only “arrears and write-offs remained well controlled”; first flag"
+   },
+   {
+    "sev": "amber",
+    "type": "Skipped update",
+    "text": "Jun-26: “The Company will also provide an update in respect of trading in Q1 of 2026/27 at that time.” and Aug-26: “Time Finance expects to publish its audited annual results for the year ended 31 May 2026 on 23 September 2026.” → results came 5 Nov with no Q1 update",
+    "span": "Q1 TU issued with results Sep-23, Sep-24, Sep-25 → none in the folder for 2026/27; results six weeks later than guided"
    },
    {
     "sev": "grey",
     "type": "Restated",
-    "text": "Loan book basis switched: “Gross lending-book up 15% to a record £250.9m at 31 May 2026” (Jun-26 TU) → offer cites an “unaudited net loan book of approximately £218 million” at 30 June 2026; no gross figure given",
-    "span": "Gross basis used in every lending update since 2022"
+    "text": "Jun-26 TU: “Gross lending-book up 15% to a record £250.9m at 31 May 2026 (31 May 2025: £217.4m)” and “Own-Book deal Origination up 26% to £122.0m (FY2024/25: £96.5)” → audited: “Lending book of £251.0m at 31 May 2026 (31 May 2025: £216.7m), an increase of 16%” and “Own-Book Deal Origination of £124.1m (FY2024/25: £96.6m), an increase of 29%”",
+    "span": "Comparator lowered, growth rates up one and three points"
    }
   ]
  }

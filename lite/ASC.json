@@ -1,8 +1,8 @@
 {
  "ticker": "ASC",
- "v": "2026-10-19.6a02",
+ "v": "2026-11-05.b52a",
  "ccy": "GBX",
- "src": "Yahoo ASC.L weekly",
+ "src": "Yahoo ASC.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-19",
    459.5
+  ],
+  [
+   "2026-10-23",
+   453.5
+  ],
+  [
+   "2026-10-30",
+   439.5
   ]
  ],
  "marks": [
@@ -1252,38 +1260,46 @@
    "s": 1,
    "q": "We are pleased to have delivered FY26 adjusted EBITDA in the upper half of our guided range, together with sequential improvement in quarterly GMV growth and gross margin above our 50% medium term target.",
    "file": "20260924_ASC_Pre-close-Trading-Update.md"
+  },
+  {
+   "d": "2026-11-05",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 1,
+   "q": "Reflecting the progress made during FY26 and the momentum with which we entered the new financial year, the Board remains confident in the Group's outlook and provides the following guidance for FY27:",
+   "file": "20261105_ASC_Final-results-for-the-52-weeks-to-30-August-2026.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-24",
-  "doc": "YE-TU",
-  "file": "20260924_ASC_Pre-close-Trading-Update.md",
-  "vs": "YE-TU Sep-25 · H1 R Apr-26 · back to Sep-22, Sep-24",
+  "rns": "2026-11-05",
+  "doc": "FY R",
+  "file": "20261105_ASC_Final-results-for-the-52-weeks-to-30-August-2026.md",
+  "vs": "FY R Nov-25 · YE-TU Sep-26 · back to Nov-24, Apr-25",
   "lines": [
    {
     "sev": "red",
-    "type": "Anchor softened",
-    "text": "Consensus anchor and next-year view dropped: Sep-25 “it remains confident in achieving FY26 adjusted EBITDA and FCF in line with consensus forecasts” with footnote “Company-compiled consensus for FY26 as of 26 September 2025 based on 12 contributors” → Sep-26 no consensus figure or footnote and no FY27 view",
-    "span": "Consensus footnote in the Sep-22, Sep-24 and Sep-25 updates → first gap"
-   },
-   {
-    "sev": "amber",
-    "type": "Wording vs number",
-    "text": "FCF missed the guide in a subordinate clause: Nov-25 guide “Broadly neutral free cash flow.” → Sep-26 net debt bullet “partially offset by slightly negative free cash flow (FCF)”; Sep-25 had headlined “Delivered a modest free cash inflow in FY25, ahead of broadly neutral guidance”",
-    "span": "FCF had its own highlight bullet in Sep-25"
-   },
-   {
-    "sev": "amber",
     "type": "Went quiet",
-    "text": "Revenue: Sep-25 reported “group revenue slightly below consensus estimates” → Sep-26 gives no revenue figure or growth rate, only GMV (“GMV for the full-year declined 5% YoY”)",
-    "span": "GMV made the primary top-line measure in Nov-25"
+    "text": "Gross margin guide: Nov-24 “at least 300 bps to more than 46%”, Nov-25 “at least 100bps to 48% to 50%” → FY27 guidance covers GMV, EBITDA, capex and FCF only; margin just “enhance gross margin over the medium term”",
+    "span": "Annual gross margin guide at Nov-24 and Nov-25 → first gap"
+   },
+   {
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "Mid-term margin target: Nov-25 “an adjusted EBITDA margin of c.8%” → Nov-26 “this will drive improvements in AEBITDA margin”, with “an updated medium-term financial framework” to come at a Capital Markets Event",
+    "span": "c.8% at Nov-24, Apr-25, Nov-25 → first gap; FY26 margin 7.6%"
+   },
+   {
+    "sev": "amber",
+    "type": "Demoted",
+    "text": "FCF: Nov-25 highlight “Free cash inflow: Delivered £14m FCF in FY25” → Nov-26 highlight bullets have no FCF line (net debt bullet credits “the disposal of two non-core assets for £115.5m”); “free cash flow was negative £16m” sits in the CEO review",
+    "span": "FCF in the highlights Nov-24 and Nov-25; missed the Nov-25 broadly neutral guide"
    },
    {
     "sev": "amber",
     "type": "Wording vs number",
-    "text": "“adjusted EBITDA in the upper half of our guided range” is footnoted: “Includes c.£3.9m of provision releases relating to updated dilapidation estimates for our Atlanta and Lichfield warehouses”",
-    "span": "Midpoint of £150-180m guide is £165m"
+    "text": "“Trading in the opening weeks of FY27 has been encouraging” with “Group GMV growth broadly flat YoY”, below Q4's “low-single-digit growth” and the FY27 guide “Low-single-digit GMV growth YoY”; cyber impact put at “c.2–4% of Group GMV”"
    }
   ]
  }

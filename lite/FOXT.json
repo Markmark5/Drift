@@ -1,6 +1,6 @@
 {
  "ticker": "FOXT",
- "v": "2026-11-03.5466",
+ "v": "2026-11-05.ef35",
  "ccy": "GBX",
  "src": "Yahoo FOXT.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1306,20 +1306,47 @@
    "s": 0,
    "q": "As guided in the trading update on 16 July, the Group expects full year 2026 adjusted operating profit to be in the range of £17m-£19m, with performance weighted towards H2.",
    "file": "20260730_FOXT_Interim-Results.md"
+  },
+  {
+   "d": "2026-11-05",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group is trading in line with management's expectations and expects full-year adjusted operating profit to be within the £17m to £19m range guided in July.",
+   "file": "20261105_FOXT_Q3-2026-Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-11-03",
-  "doc": "AGM",
-  "file": "20261103_FOXT_2026-Annual-General-Meeting-Results-Update.md",
-  "vs": "AGM results update Nov-25 · GM results Oct-26",
+  "rns": "2026-11-05",
+  "doc": "Q3 TU",
+  "file": "20261105_FOXT_Q3-2026-Trading-Update.md",
+  "vs": "Q3 TU Oct-25 · back to Oct-24 · H1 R Jul-26 · AGM update Nov-26",
   "lines": [
    {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Oct-25: “Market expectations for the full year adjusted operating profit is £23.7m, being the average of forecasts provided by analysts covering the Group.” → Nov-26: “The Group is trading in line with management's expectations” with no consensus figure or footnote",
+    "span": "Consensus named in Q3 TU Oct-23, Oct-24, Oct-25 → first gap in 3 years"
+   },
+   {
     "sev": "amber",
-    "type": "New caution",
-    "text": "Nov-25: “the significant votes against all the resolutions were attributable to the shareholders' policy positions, rather than matters specific to the Company.” → now 24.96% voted against the final dividend and “The Board has carefully considered this feedback as part of its ongoing review of the Company's capital allocation framework.”",
-    "span": "First company-specific dissent flagged; dividend not on last year's list"
+    "type": "Wording vs number",
+    "text": "Early terminations: Jul-26 “a £3.0m reversal of previously recognised, contractually due revenue” for May-June, “expected to stabilise over H2” → Nov-26 “early terminations eased throughout Q3 and October” beside “a £2.7m impact from elevated tenant-led early terminations” in Q3 alone",
+    "span": "Year to date now £5.7m; no Q4 figure given"
+   },
+   {
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "Lettings organic growth: Oct-25 “This was driven by £0.6m of like-for-like growth1” → Nov-26 “Before this impact, revenue was marginally ahead year-on-year, including £1.0m of incremental revenue from acquisitions.” No like-for-like figure",
+    "span": "Given Oct-25 and Apr-26; the Nov-26 figures imply c.£0.6m lower before acquisitions (£31.1m + £2.7m vs £33.4m, less £1.0m)"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Sales pipeline and Q4 view: Oct-24 “At the end of September, the under-offer pipeline was 23% higher than the prior year” and Oct-25 “Sales is likely to remain subdued for the rest of the year” → Nov-26 has no Outlook section, no under-offer pipeline and no Q4 Sales view",
+    "span": "Pipeline named at Q3 TU Oct-24, Oct-25 → absent now"
    }
   ]
  }

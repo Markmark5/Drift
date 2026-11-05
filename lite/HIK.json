@@ -1,8 +1,8 @@
 {
  "ticker": "HIK",
- "v": "2026-10-21.82a4",
+ "v": "2026-11-05.942d",
  "ccy": "GBX",
- "src": "Yahoo HIK.L weekly",
+ "src": "Yahoo HIK.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-21",
    1653.0
+  ],
+  [
+   "2026-10-23",
+   1694.0
+  ],
+  [
+   "2026-10-30",
+   1724.0
   ]
  ],
  "marks": [
@@ -1272,38 +1280,47 @@
    "s": 1,
    "q": "As a result of the strong first half performance, Branded revenue is now expected to grow at the top end of our previously communicated range of 6% to 8%, and core operating margin is expected to be around 25%.",
    "file": "20260806_HIK_Half-year-Financial-Report.md"
+  },
+  {
+   "d": "2026-11-05",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 0,
+   "q": "We are reiterating our outlook for 2026 Group revenue to grow in the range of 2% to 4% and we are narrowing our expected Group operating profit range to $740 million to $760 million, from the previous range of $720 million to $770 million.",
+   "file": "20261105_HIK_Trading-Statement.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-06",
-  "doc": "H1 R",
-  "file": "20260806_HIK_Half-year-Financial-Report.md",
-  "vs": "H1 R Aug-25 · Q1 TU Apr-26 · FY R Feb-26 · Q3 TU Nov-25 · May-25",
+  "rns": "2026-11-05",
+  "doc": "Q3 TU",
+  "file": "20261105_HIK_Trading-Statement.md",
+  "vs": "Q3 TU Nov-25 · H1 R Aug-26 · Q1 TU Apr-26 · FY R Feb-26",
   "lines": [
    {
     "sev": "red",
+    "type": "Wording vs number",
+    "text": "Headline “Hikma confirms full year 2026 Group guidance” and “Injectables is stabilising” beside a segment cut: Aug-26 “Injectables revenue is expected to grow in the low single digits” → Nov-26 “We now expect Injectables revenue to be broadly flat in 2026”",
+    "span": "Low single digits at Feb-26, Apr-26, Aug-26 → cut; Group profit top end also trimmed $770m → $760m"
+   },
+   {
+    "sev": "red",
     "type": "Target dropped",
-    "text": "Aug-25 interim carried medium-term guidance “Group core EBIT CAGR of 7% to 9% between 2024-2027” and “Group revenue of $5 billion by 2030” → Aug-26 interim gives no medium-term view; Feb-26 said “It has also led us to withdraw our medium-term Group guidance”",
-    "span": "Set May-25, repeated Aug-25, EBIT CAGR cut to 5–7% Nov-25, withdrawn Feb-26; absent Apr-26 and Aug-26"
+    "text": "Nov-25 “Our longer-term target for Group revenue to reach $5 billion by 2030 is unchanged.” → Nov-26 no medium-term or 2027 Group view; Feb-26 “withdraw our medium-term Group guidance”",
+    "span": "Medium-term section in Nov-25 update → none since Feb-26"
    },
    {
     "sev": "amber",
     "type": "Pushed out",
-    "text": "Bedford: Aug-25 “Upgrade of Bedford, Ohio Injectables facility on track” → Nov-25 “We now expect Bedford to be fully operational towards the end of 2027, with associated revenues accelerating in 2028” → Aug-26 “remain on track for commercial production in 2028”",
-    "span": "Aug-25 → Nov-25 → Feb-26 → Aug-26"
+    "text": "Tyzavan: Nov-25 “expect sales to accelerate on this important product into the year-end and beyond” → Aug-26 “we expect momentum to accelerate in the second half” → Nov-26 “gradual progress in Tyzavan® sales”",
+    "span": "Nov-25 → Apr-26 → Aug-26 → Nov-26"
    },
    {
     "sev": "amber",
-    "type": "Demoted",
-    "text": "Injectables regional growth split: Aug-25 highlights “Injectables revenue up 12% driven by good performances in Europe (up 26%), MENA (up 16%) and North America (up 8%)” → Aug-26 highlights only “Injectables revenue of $685 million, in line with H1 2025”; the US fall appears only in the financial review: “In the US, revenue declined 4%”",
-    "span": "Regional split in interim highlights Aug-25 → dropped from highlights Aug-26"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Branded guide lifted within range: Feb-26/Apr-26 “We continue to expect 2026 Branded revenue to grow in the range of 6% to 8%” → Aug-26 “Branded revenue is now expected to grow at the top end of our previously communicated range of 6% to 8%”",
-    "span": "Feb-26, Apr-26 → Aug-26"
+    "type": "Went quiet",
+    "text": "Bedford: Nov-25 “We now expect Bedford to be fully operational towards the end of 2027”, Aug-26 “remain on track for commercial production in 2028” → Nov-26 no mention of the site",
+    "span": "In Nov-25, Feb-26 and Aug-26 → first gap"
    }
   ]
  }

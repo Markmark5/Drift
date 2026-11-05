@@ -1,8 +1,8 @@
 {
  "ticker": "MGNS",
- "v": "2026-10-21.a9ff",
+ "v": "2026-11-05.0957",
  "ccy": "GBX",
- "src": "Yahoo MGNS.L weekly",
+ "src": "Yahoo MGNS.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-21",
    3892.0
+  ],
+  [
+   "2026-10-23",
+   3856.0
+  ],
+  [
+   "2026-10-30",
+   4072.0
   ]
  ],
  "marks": [
@@ -1270,14 +1278,48 @@
    "s": 0,
    "q": "Despite the challenging housing backdrop, the strength and breadth of our diverse operations, together with the visibility provided by our high-quality order book for the remainder of the year, we remain confident that our full year performance will be in line with our current expectations.",
    "file": "20260723_MGNS_RESULTS-FOR-THE-HALF-YEAR-(HY)-ENDED-30-JUNE-2026.md"
+  },
+  {
+   "d": "2026-11-05",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "strong trading momentum has continued and, together with strong visibility of secured orders through to the end of the year, the Group now anticipates that its full year results for 2026 will be slightly ahead of its previous expectations.",
+   "file": "20261105_MGNS_Trading-and-Outlook-for-2026.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-13",
-  "doc": "Admission",
-  "file": "20261013_MGNS_Admission-to-Trading.md",
-  "vs": "Admission Sep-26 · H1 R Jul-26",
-  "lines": []
+  "rns": "2026-11-05",
+  "doc": "Q3 TU",
+  "file": "20261105_MGNS_Trading-and-Outlook-for-2026.md",
+  "vs": "Q3 TU Oct-25 · Oct-24 · back to Nov-22 · H1 R Jul-26 · Q1 TU Apr-26",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Number to words",
+    "text": "Partnership Housing profit guide: Apr-26 “modest growth in comparison to the prior year (FY 2025: £42m)” → Jul-26 “slightly below the prior year” → Nov-26 “now expected to be below previous expectations”, no figure or prior-year marker",
+    "span": "Second step down in FY26, while average capital employed moved up to “between c.£550m and £580m”"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Group secured order book: Oct-25 “the total secured order book for the Group at 31st August 2025 was £12.2bn”; Jul-26 “High quality secured order book at £12.2bn” → Nov-26 no Group or divisional order book figure, only “strong visibility of secured orders”",
+    "span": "Given at Q3 updates Nov-22, Nov-23, Oct-24, Oct-25 → first gap"
+   },
+   {
+    "sev": "amber",
+    "type": "Pushed out",
+    "text": "Mixed Use project starts: Apr-26 “4 projects starting on site during the first quarter and a further 13 planned for the remainder of the year” → Jul-26 “5 projects successfully started on site in the first half of the year and a further 8 planned” → Nov-26 “seven projects commenced on site in the first nine months and a further three planned by year-end”",
+    "span": "FY26 starts 17 → 13 → 10; full-year result “a small loss” (Jul-26) → “a loss similar to prior year levels (FY 2025: (£5.3m))”"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Next-year view: Oct-25 gave no FY26 guide → Nov-26 “the Group remains confident that the outlook for 2027 will be in line with current expectations”",
+    "span": "Not given at Q3 updates Oct-24 or Oct-25"
+   }
+  ]
  }
 }

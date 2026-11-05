@@ -1,8 +1,8 @@
 {
  "ticker": "CRDA",
- "v": "2026-10-21.73a4",
+ "v": "2026-11-05.ec12",
  "ccy": "GBX",
- "src": "Yahoo CRDA.L weekly",
+ "src": "Yahoo CRDA.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-21",
    3633.0
+  ],
+  [
+   "2026-10-23",
+   3625.0
+  ],
+  [
+   "2026-10-30",
+   3613.0
   ]
  ],
  "marks": [
@@ -1225,32 +1233,47 @@
    "s": 0,
    "q": "Despite the ongoing macro uncertainty, our outlook for full year 2026 is unchanged and we remain on track to deliver our financial framework for full year 2028.",
    "file": "20260728_CRDA_Results-for-the-six-months-ended-30-June-2026.md"
+  },
+  {
+   "d": "2026-11-05",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Overall, our expectations for Group FY26 adjusted operating profit are unchanged and we are on track to deliver our financial framework for full year 2028.",
+   "file": "20261105_CRDA_Third-quarter-2026-sales-update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-28",
-  "doc": "H1 R",
-  "file": "20260728_CRDA_Results-for-the-six-months-ended-30-June-2026.md",
-  "vs": "H1 R Jul-25 · back to Jul-23 · FY R Feb-26 · Q1 Apr-26",
+  "rns": "2026-11-05",
+  "doc": "Q3 TU",
+  "file": "20261105_CRDA_Third-quarter-2026-sales-update.md",
+  "vs": "Q3 TU Oct-25 · back to Oct-23 · FY R Feb-26 · Q1 Apr-26 · H1 R Jul-26",
   "lines": [
    {
     "sev": "red",
     "type": "Anchor softened",
-    "text": "Jul-25: “we continue to expect to deliver Group adjusted profit before tax between £265m and £295m in full year 2025 at constant currency”; Feb-26: “Group full year 2026 adjusted operating profit in line with current market expectations1 at constant currency” → Jul-26: “Our expectations for Group full year 2026 adjusted operating profit are unchanged.” No figure, no market-expectations anchor or consensus footnote",
-    "span": "Numeric PBT range at H1 Jul-23, Jul-24, Jul-25; consensus anchor given Feb-26, gone Jul-26"
+    "text": "Q3 Oct-25: “We continue to expect to deliver £265m to £295m Group adjusted profit before tax at constant currency1.”; Feb-26: “Group full year 2026 adjusted operating profit in line with current market expectations1 at constant currency” → Q3 Nov-26: “our expectations for Group FY26 adjusted operating profit are unchanged”. No profit figure and no market-expectations wording",
+    "span": "Numeric PBT range at Q3 Oct-23, Nov-24, Oct-25 → first Q3 gap in 3 years"
    },
    {
     "sev": "amber",
-    "type": "Pushed out",
-    "text": "Jul-25: “Pharma +5% with continued biopharma growth and slow recovery in consumer health” → Jul-26: “Sales (17)% in Solutions, adversely impacted by project phasing; project revenues expected to improve in H2”",
-    "span": "Pharma +1% overall in H1-26; Solutions recovery moved to H2"
+    "type": "New caution",
+    "text": "Middle East: Apr-26 “did not have a material effect on our business in the first quarter”; Jul-26 “Limited impact from situation in the Middle East” → Nov-26 F&F “performance adversely impacted by Middle East-related disruption, and some interruptions to sales in China as we completed the transfer of production to a new facility”",
+    "span": "F&F growth +10% Q1 → +8% H1 → +4% Q3; China interruption first flagged Nov-26"
    },
    {
-    "sev": "grey",
-    "type": "Restated",
-    "text": "H1 free cash flow: Jul-25 “Free cash flow was £34.2m (H124: £122.7m).” → Jul-26 “Free cash flow improved to £38.3m (H125: £28.0m restated)”, definition revised to deduct exceptional cash costs",
-    "span": "Definition change first made at FY R Feb-26"
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "In-year cost savings: Jul-25 plan “2026: ~£35m cost savings”; Q3 Oct-25 “realise £25m of cost savings this year” → Q3 Nov-26 “further incremental cost savings expected in H226 and in 2027”, no figure for FY26",
+    "span": "Year target stated at Q3 Oct-25; £18m delivered in H1-26 but FY26 total not restated since Jul-25"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Consensus pointer: Feb-26 “Current market expectations based on company-compiled consensus available at Croda website.”, absent Apr-26 and Jul-26 → Nov-26 “Croda provides company-compiled consensus on its website here.”, though the guide is not tied to it",
+    "span": "Back after two documents without it"
    }
   ]
  }

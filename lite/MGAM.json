@@ -1,8 +1,8 @@
 {
  "ticker": "MGAM",
- "v": "2026-10-21.12be",
+ "v": "2026-11-05.ff59",
  "ccy": "GBX",
- "src": "Yahoo MGAM.L weekly",
+ "src": "Yahoo MGAM.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-21",
    265.0
+  ],
+  [
+   "2026-10-23",
+   249.5
+  ],
+  [
+   "2026-10-30",
+   265.0
   ]
  ],
  "marks": [
@@ -1253,38 +1261,47 @@
    "s": -1,
    "q": "Noting a foreign exchange headwind, we expect an adjusted operating profit* margin for the second half broadly in-line with that of the first, excluding the phasing benefit from the take-or-pay agreement.",
    "file": "20260806_MGAM_Half-year-Financial-Report.md"
+  },
+  {
+   "d": "2026-11-05",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "As a consequence of our strategic progress, operational improvements and continued momentum, we now expect adjusted operating profit for 2026 to be around the upper end of the range of analysts’ expectations.",
+   "file": "20261105_MGAM_Q3-Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-06",
-  "doc": "H1 R",
-  "file": "20260806_MGAM_Half-year-Financial-Report.md",
-  "vs": "H1 R Aug-25 · AGM TU May-26 · FY R Mar-26 · back to H1 Jul-22/Aug-23",
+  "rns": "2026-11-05",
+  "doc": "Q3 TU",
+  "file": "20261105_MGAM_Q3-Trading-Update.md",
+  "vs": "Q3 TU Oct-25 · Nov-24 · back to Nov-21 · H1 R Aug-26",
   "lines": [
    {
     "sev": "red",
-    "type": "Anchor softened",
-    "text": "H1 Aug-25: profit “now expected to be around the bottom of the consensus range”; FY R Mar-26: “our outlook for 2026 is in-line with current market expectations” → H1 Aug-26: only “Performance in the first half was in-line with our expectations”, no market or consensus anchor for FY26",
-    "span": "Analysts'/consensus anchor in H1 Jul-22, Aug-23, Aug-25 → dropped at H1 Aug-26"
-   },
-   {
-    "sev": "amber",
-    "type": "Number to words",
-    "text": "FY R Mar-26: FY26 “adjusted operating profit* margin at or around 10%” → H1 Aug-26: no full-year margin figure, only “an adjusted operating profit* margin for the second half broadly in-line with that of the first, excluding the phasing benefit from the take-or-pay agreement”",
-    "span": "Full-year margin guide given Oct-25, Mar-26 → reframed as H2 vs H1"
+    "type": "Went quiet",
+    "text": "Full-year revenue guide: Oct-25 “We now expect 2025 full year sales to be c.4% lower than the prior year”; Aug-26 “organic constant-currency* revenue growth of around 2% for the full-year” → Nov-26 no full-year revenue guide, only nine-month growth of 4.9%",
+    "span": "Given at every Q3 update Nov-21 to Oct-25 → first gap in 5 years; nine-month growth sits above the old guide"
    },
    {
     "sev": "amber",
     "type": "Went quiet",
-    "text": "Capex guide: H1 Aug-25 “Our medium term guidance for overall capital expenditure is now around £70 million in 2025, £55 million in 2026 and £60 million in 2027”; FY R Mar-26 “around £50-£55 million per annum over the next three years” → H1 Aug-26: no capex guidance, only H1 actual net capex",
-    "span": "Given Feb-25, Aug-25, Mar-26 → first gap"
+    "text": "Margin guide: Nov-24 “adjusted operating profit margin for the year of c.11.4%”; Oct-25 “adjusted operating profit margin of c.10%”; Aug-26 “an adjusted operating profit* margin for the second half broadly in-line with that of the first” → Nov-26 no margin figure, profit guided only against the analysts’ range",
+    "span": "Margin number in Q3 updates Nov-24, Oct-25 and in Mar-26, Aug-26 guidance → first gap"
    },
    {
-    "sev": "amber",
-    "type": "Pushed out",
-    "text": "Simplification savings: H1 Aug-25 “£27 million during 2026” → H1 Aug-26 “annualised run-rate benefits of £27 million by the end of 2026”",
-    "span": "In-year 2026 benefit → run-rate reached by year end"
+    "sev": "grey",
+    "type": "Split withheld",
+    "text": "Nine-month sales by segment: Nov-24 “By reporting segment, organic constant-currency sales performance for the nine months to September 2024” → Nov-26 Group figure only, with “Strong growth has continued in strategic areas including Aerospace and Energy whilst industrial end-markets have proved resilient”",
+    "span": "Split given Nov-21 to Nov-24 → absent Oct-25 and Nov-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Consensus anchor back: Aug-26 only “Performance in the first half was in-line with our expectations” → Nov-26 “around the upper end of the range of analysts’ expectations”, with the range printed: “adjusted operating profit in the range £100.0m to £105.0m”",
+    "span": "Analysts’ anchor dropped at H1 Aug-26 → restored, first FY26 range printed"
    }
   ]
  }

@@ -1,8 +1,8 @@
 {
  "ticker": "DGE",
- "v": "2026-10-21.60ff",
+ "v": "2026-11-05.d354",
  "ccy": "GBX",
- "src": "Yahoo DGE.L weekly",
+ "src": "Yahoo DGE.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-21",
    1746.0
+  ],
+  [
+   "2026-10-23",
+   1789.5
+  ],
+  [
+   "2026-10-30",
+   1701.5
   ]
  ],
  "marks": [
@@ -1217,38 +1225,47 @@
    "s": 0,
    "q": "Guidance is shared in the Capital Markets Day press release and presentations also published today.",
    "file": "20260806_DGE_Diageo-Preliminary-Results-2026.md"
+  },
+  {
+   "d": "2026-11-05",
+   "doc": "Q1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Overall, Q1 was in line with expectations, and we have reiterated our full year guidance.  We were pleased with the growth across LAC, EMEA, APAC and India.",
+   "file": "20261105_DGE_Diageo-issues-fiscal-27-Q1-trading-statement.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-06",
-  "doc": "FY R",
-  "file": "20260806_DGE_Diageo-Preliminary-Results-2026.md",
-  "vs": "FY R Aug-25 · Q3 TU May-26 · H1 R Feb-26 · Q1 TU Nov-25 · CMD release Aug-26",
+  "rns": "2026-11-05",
+  "doc": "Q1 TU",
+  "file": "20261105_DGE_Diageo-issues-fiscal-27-Q1-trading-statement.md",
+  "vs": "Q1 TU Nov-25 · FY R + CMD Aug-26 · Q3 TU May-26",
   "lines": [
    {
     "sev": "red",
-    "type": "Target dropped",
-    "text": "Free cash flow: Nov-25 “From fiscal 26, we expect free cash flow to increase from c.$3 billion per annum as business performance improves.” → FY27 guide (CMD release, same day) “Free cash flow of c.$2 billion after c.$800 million exceptional cash costs”",
-    "span": "c.$3bn p.a. growing promised May-25 and Nov-25, FCF guide reiterated Feb-26 and May-26 → first step down"
+    "type": "Anchor softened",
+    "text": "Free cash flow guide: Aug-26 “Free cash flow of c.$2 billion after c.$800 million exceptional cash costs related to the operating framework changes and c.$50 million exceptional cash costs related to the supply chain savings programme.” → Nov-26 adds a carve-out: “after c.$850 million exceptional costs related to operating framework changes and the supply chain savings programme; and excluding cash from EABL.” while stating “Fiscal 27 guidance unchanged from CMD.”",
+    "span": "Same c.$2bn, narrower basis; EABL exclusion not in the Aug-26 guide"
    },
    {
     "sev": "amber",
-    "type": "Target dropped",
-    "text": "Accelerate savings: May-26 “Accelerate programme on track to deliver c.$300m savings by end of fiscal 26.” (target “c.$625 million cost savings over the next 3 years” Nov-25) → FY26 results give no Accelerate savings delivered; replaced by “c.$850 million savings over 2 years, starting in fiscal 27.”",
-    "span": "Tracked Aug-25, Nov-25, Feb-26, May-26 → not reported Aug-26"
+    "type": "Number to words",
+    "text": "US Spirits: May-26 “US Spirits organic net sales declined 15.4%, weaker than depletions decline by c.5%.” → Nov-26 total US only, “In the US helped by a small phasing benefit organic net sales declined 3.7%”, and spirits in words: “a double-digit decline in Don Julio, Casamigos and Crown Royal”",
+    "span": "US Spirits % and depletions gap given May-25, Nov-25, May-26 → first gap; US beer % (Nov-25 “DBC USA net sales grew 9.2%”) also gone"
    },
    {
     "sev": "amber",
-    "type": "Went quiet",
-    "text": "Market share KPI: Aug-25 “Diageo grew or held total market share in 65%(4) of total net sales in measured markets, including in the US.” → no share-held figure in the FY26 results",
-    "span": "Given at H1 Feb-25 and FY Aug-25 → absent Feb-26 and Aug-26"
+    "type": "Split withheld",
+    "text": "Africa: Nov-25 “Organic net sales grew 8.9% due to high-single-digit growth in East Africa and strong growth in South, West and Central Africa (SWC).” → Nov-26 no Africa line; folded into “Europe, Middle East & Africa” at 2.4%, with EABL moved to Corporate",
+    "span": "Separate Europe and Africa lines to May-26 → merged in the new reporting structure; India now split out"
    },
    {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Medium-term guide: Feb-25 “Medium-term guidance has been removed” → Aug-26 CMD release “Mid-single-digit organic operating profit growth reflecting the benefit of savings and more favourable mix over the period.” (CAGR fiscal 27 to fiscal 29)",
-    "span": "Withdrawn Feb-25 → re-quantified Aug-26"
+    "sev": "amber",
+    "type": "New caution",
+    "text": "May-26 Europe growth “led by Guinness in Great Britain and Ireland” → Nov-26 “a low-single-digit decline in Great Britain and Ireland due to unusually hotter weather and competitive pressure”; also first mention of “The quality issue with Casamigos packaging”",
+    "span": "Both flagged for the first time in Nov-26"
    }
   ]
  }

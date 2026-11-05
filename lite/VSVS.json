@@ -1,8 +1,8 @@
 {
  "ticker": "VSVS",
- "v": "2026-10-21.392c",
+ "v": "2026-11-05.d167",
  "ccy": "GBX",
- "src": "Yahoo VSVS.L weekly",
+ "src": "Yahoo VSVS.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-21",
    458.6
+  ],
+  [
+   "2026-10-23",
+   445.2
+  ],
+  [
+   "2026-10-30",
+   474.0
   ]
  ],
  "marks": [
@@ -1261,30 +1269,47 @@
    "s": 0,
    "q": "We expect full-year trading profit to be slightly ahead of trading profit for FY25 on a constant currency basis.",
    "file": "20260730_VSVS_Half-year-Financial-Results.md"
+  },
+  {
+   "d": "2026-11-05",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -1,
+   "q": "Accordingly, our trading profit outturn for the full year 2026 is expected to be broadly in line with FY25 trading profit on a constant currency basis.",
+   "file": "20261105_VSVS_Trading-Statement.md",
+   "gnote": "discounted: RHI Magnesita possible offer"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-30",
-  "doc": "H1 R",
-  "file": "20260730_VSVS_Half-year-Financial-Results.md",
-  "vs": "H1 R Aug-25 · H1 TU Jul-26 · FY R Mar-26 · AGM May-26",
+  "rns": "2026-11-05",
+  "doc": "Q3 TU",
+  "file": "20261105_VSVS_Trading-Statement.md",
+  "vs": "Q3 TU Nov-25 · H1 R Jul-26 · H1 TU Jul-26 · back to Nov-23, Nov-24",
   "lines": [
    {
     "sev": "red",
     "type": "Anchor softened",
-    "text": "Mar-26 “we continue to expect to deliver profit growth in 2026 in line with expectations” → now “We expect full-year trading profit to be slightly ahead of trading profit for FY25”, no expectations anchor",
-    "span": "Expectations anchor at Mar-26 and May-26 → dropped since Jul-26 TU"
+    "text": "Jul-26 “we now expect full-year trading profit to be slightly ahead of trading profit for FY25” → Nov-26 “expected to be broadly in line with FY25 trading profit”, a lower guide not described as a change; “in line with our expectations” now covers Flow Control and Foundry only",
+    "span": "Group expectations anchor Mar-26 and May-26 → dropped Jul-26 → guide lower again"
    },
    {
     "sev": "amber",
-    "type": "Demoted",
-    "text": "Steel market share: H1-25 highlights “Overall market share gains in both Flow Control and Advanced Refractories” → H1-26 highlights silent on Steel share; body: “both Flow Control and Advanced Refractories lost market share overall”"
+    "type": "Pushed out",
+    "text": "North America operational issues: Jul-26 “are expected to be resolved by the end of the year” → Nov-26 “substantively resolved by the year end”, backlog “expected to be substantially eliminated by the year-end”"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Market share: Nov-24 “Continued market share gains in Flow Control and Foundry”, Nov-25 “Continued market share gains in both Steel and Foundry” → Nov-26 no mention; H1-26 had said “both Flow Control and Advanced Refractories lost market share overall”",
+    "span": "Share gains in the autumn update Nov-23, Nov-24, Nov-25 → first gap"
    },
    {
     "sev": "grey",
-    "type": "Restated",
-    "text": "FY26 capex guide: Mar-26 “Net cash capex in 2026 is expected to be c. £70m-75m” → now “FY26 net capex now expected to fall in the range £75-80m”"
+    "type": "Went quiet",
+    "text": "Medium-term view: Nov-25 “In the medium term, the market outlook is more positive” and Jul-26 “will continue in the second half and beyond” → Nov-26 no view past year end",
+    "span": "Inside the RHI Magnesita offer period"
    }
   ]
  }

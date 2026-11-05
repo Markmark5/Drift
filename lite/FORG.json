@@ -1,6 +1,6 @@
 {
  "ticker": "FORG",
- "v": "2026-10-21.fd56",
+ "v": "2026-11-05.8082",
  "ccy": "GBX",
  "src": "ShareScope weekly snapshots",
  "adj": [],
@@ -136,6 +136,14 @@
   [
    "2026-10-16",
    0.012
+  ],
+  [
+   "2026-10-23",
+   0.0125
+  ],
+  [
+   "2026-10-30",
+   0.013
   ]
  ],
  "marks": [
@@ -165,26 +173,47 @@
    "s": 0,
    "q": "Our objective for the remainder of the year is clear: maintain financial discipline, continue executing our exploration programmes and deploy capital into the opportunities we believe have the potential to materially increase the underlying value of the Company for shareholders.",
    "file": "20260828_FORG_Interim-Results.md"
+  },
+  {
+   "d": "2026-11-05",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Our ambition is to turn this exploration momentum into an accelerated route towards a maiden JORC Mineral Resource. The revised programme is designed to establish whether the geological and grade continuity support that next step.",
+   "file": "20261105_FORG_Outstanding-shallow-gold-results-at-Curley's.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-28",
-  "doc": "H1 R",
-  "file": "20260828_FORG_Interim-Results.md",
-  "vs": "FY R Jun-26 · Peak Hill assays Jul-26 (no H1 Aug-25 in record)",
+  "rns": "2026-11-05",
+  "doc": "OPS",
+  "file": "20261105_FORG_Outstanding-shallow-gold-results-at-Curley's.md",
+  "vs": "Drilling update Oct-26 · Mount Sholl Nov-26 · Phase I assays Jul-26 (no drilling results a year earlier)",
   "lines": [
    {
     "sev": "amber",
-    "type": "New caution",
-    "text": "FY results: funding reset “eliminating near term refinancing and funding risk” → H1: “there can be no certainty that such funding will be secured on acceptable terms, or at all”",
-    "span": "Jun-26 → Aug-26"
+    "type": "Pushed out",
+    "text": "Oct-26: “the Company expects to receive assay results for 56 Phase II holes by 25 October 2026” covering Curley’s “analysed for both gold and copper, and the initial 26 holes from Cathedral” → Nov-26 reports the 30 Curley’s holes for gold only; no Cathedral assays, no copper assays, no new date",
+    "span": "26 of the 56 holes still unreported 11 days after the date given"
    },
    {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Phase 2 now sized: “a planned total of approximately 130 shallow holes for approximately 8,700 metres of drilling over an expected 60-day campaign”",
-    "span": "Jul-26 assays gave timing only (August 2026)"
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Oct-26: “Phase II drilling remains on track to conclude by the end of November 2026.” and “approximately 142 holes for approximately 9,400 metres” → Nov-26: “Phase II continues, with the rig back on site this weekend.” c.55 new holes added, no programme total and no end date",
+    "span": "End-November given Sep-26, Oct-26; programme total given Aug-26, Sep-26, Oct-26 → both absent now"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "“These are outstanding exploration results for central Curley’s” sits beside “The wider-spaced drilling, including the northern area, did not provide significant gold intersections” — 18 of the 30 holes and 710m of the 1,406m drilled",
+    "span": "Best interval 7m at 2.32g/t; only the 12 close-spaced holes returned gold"
+   },
+   {
+    "sev": "grey",
+    "type": "Restated",
+    "text": "Jul-26: “Validated the Company's geological model” → Nov-26: “The interpretation of mineralisation has evolved from a northwest-southeast orientation, plunging/dipping to the northeast, to an east-west orientation plunging/dipping to the north.”",
+    "span": "Model revised after Phase II; northern holes now believed to have stopped too shallow"
    }
   ]
  }
