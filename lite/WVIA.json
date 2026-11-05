@@ -1,8 +1,8 @@
 {
  "ticker": "WVIA",
- "v": "2026-10-19.6ae4",
+ "v": "2026-11-05.ab11",
  "ccy": "GBX",
- "src": "Yahoo WVIA.L weekly",
+ "src": "Yahoo WVIA.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -208,6 +208,14 @@
   [
    "2026-10-19",
    275.0
+  ],
+  [
+   "2026-10-23",
+   270.0
+  ],
+  [
+   "2026-10-30",
+   297.5
   ]
  ],
  "marks": [

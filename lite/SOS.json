@@ -1,0 +1,1334 @@
+{
+ "ticker": "SOS",
+ "v": "2026-11-05.9ea4",
+ "ccy": "GBX",
+ "src": "AlphaVantage SOS.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-11-05",
+   28.4
+  ],
+  [
+   "2021-11-12",
+   32.0
+  ],
+  [
+   "2021-11-19",
+   33.75
+  ],
+  [
+   "2021-11-26",
+   31.5
+  ],
+  [
+   "2021-12-03",
+   33.0
+  ],
+  [
+   "2021-12-10",
+   32.25
+  ],
+  [
+   "2021-12-17",
+   28.5
+  ],
+  [
+   "2021-12-24",
+   30.25
+  ],
+  [
+   "2021-12-31",
+   30.0
+  ],
+  [
+   "2022-01-07",
+   32.25
+  ],
+  [
+   "2022-01-14",
+   30.5
+  ],
+  [
+   "2022-01-21",
+   28.5
+  ],
+  [
+   "2022-01-28",
+   26.0
+  ],
+  [
+   "2022-02-04",
+   27.5
+  ],
+  [
+   "2022-02-11",
+   27.5
+  ],
+  [
+   "2022-02-18",
+   27.0
+  ],
+  [
+   "2022-02-25",
+   25.25
+  ],
+  [
+   "2022-03-04",
+   23.5
+  ],
+  [
+   "2022-03-11",
+   22.75
+  ],
+  [
+   "2022-03-18",
+   24.75
+  ],
+  [
+   "2022-03-25",
+   25.5
+  ],
+  [
+   "2022-04-01",
+   25.25
+  ],
+  [
+   "2022-04-08",
+   30.5
+  ],
+  [
+   "2022-04-14",
+   28.5
+  ],
+  [
+   "2022-04-22",
+   28.25
+  ],
+  [
+   "2022-04-29",
+   25.75
+  ],
+  [
+   "2022-05-06",
+   24.5
+  ],
+  [
+   "2022-05-13",
+   23.0
+  ],
+  [
+   "2022-05-20",
+   23.25
+  ],
+  [
+   "2022-05-27",
+   22.5
+  ],
+  [
+   "2022-06-01",
+   22.75
+  ],
+  [
+   "2022-06-10",
+   21.5
+  ],
+  [
+   "2022-06-17",
+   20.0
+  ],
+  [
+   "2022-06-24",
+   19.25
+  ],
+  [
+   "2022-07-01",
+   18.5
+  ],
+  [
+   "2022-07-08",
+   18.5
+  ],
+  [
+   "2022-07-15",
+   20.5
+  ],
+  [
+   "2022-07-22",
+   19.0
+  ],
+  [
+   "2022-07-29",
+   21.25
+  ],
+  [
+   "2022-08-05",
+   22.5
+  ],
+  [
+   "2022-08-12",
+   21.25
+  ],
+  [
+   "2022-08-19",
+   20.0
+  ],
+  [
+   "2022-08-26",
+   19.5
+  ],
+  [
+   "2022-09-02",
+   17.5
+  ],
+  [
+   "2022-09-09",
+   17.0
+  ],
+  [
+   "2022-09-16",
+   16.5
+  ],
+  [
+   "2022-09-23",
+   16.5
+  ],
+  [
+   "2022-09-30",
+   14.5
+  ],
+  [
+   "2022-10-07",
+   14.5
+  ],
+  [
+   "2022-10-14",
+   14.5
+  ],
+  [
+   "2022-10-21",
+   17.0
+  ],
+  [
+   "2022-10-28",
+   18.75
+  ],
+  [
+   "2022-11-04",
+   18.25
+  ],
+  [
+   "2022-11-11",
+   19.625
+  ],
+  [
+   "2022-11-18",
+   21.75
+  ],
+  [
+   "2022-11-25",
+   21.0
+  ],
+  [
+   "2022-12-02",
+   21.0
+  ],
+  [
+   "2022-12-09",
+   22.0
+  ],
+  [
+   "2022-12-16",
+   23.0
+  ],
+  [
+   "2022-12-23",
+   21.5
+  ],
+  [
+   "2022-12-30",
+   20.25
+  ],
+  [
+   "2023-01-06",
+   22.0
+  ],
+  [
+   "2023-01-13",
+   21.0
+  ],
+  [
+   "2023-01-20",
+   21.0
+  ],
+  [
+   "2023-01-27",
+   25.0
+  ],
+  [
+   "2023-02-03",
+   27.0
+  ],
+  [
+   "2023-02-10",
+   24.25
+  ],
+  [
+   "2023-02-17",
+   23.5
+  ],
+  [
+   "2023-02-24",
+   23.5
+  ],
+  [
+   "2023-03-03",
+   24.5
+  ],
+  [
+   "2023-03-10",
+   22.75
+  ],
+  [
+   "2023-03-17",
+   22.75
+  ],
+  [
+   "2023-03-24",
+   22.0
+  ],
+  [
+   "2023-03-31",
+   23.5
+  ],
+  [
+   "2023-04-06",
+   23.75
+  ],
+  [
+   "2023-04-14",
+   25.5
+  ],
+  [
+   "2023-04-21",
+   26.0
+  ],
+  [
+   "2023-04-28",
+   26.75
+  ],
+  [
+   "2023-05-05",
+   25.5
+  ],
+  [
+   "2023-05-12",
+   24.0
+  ],
+  [
+   "2023-05-19",
+   25.0
+  ],
+  [
+   "2023-05-26",
+   23.0
+  ],
+  [
+   "2023-06-02",
+   25.0
+  ],
+  [
+   "2023-06-09",
+   22.75
+  ],
+  [
+   "2023-06-16",
+   25.0
+  ],
+  [
+   "2023-06-23",
+   24.25
+  ],
+  [
+   "2023-06-30",
+   24.5
+  ],
+  [
+   "2023-07-07",
+   25.5
+  ],
+  [
+   "2023-07-14",
+   23.25
+  ],
+  [
+   "2023-07-21",
+   24.0
+  ],
+  [
+   "2023-07-28",
+   23.75
+  ],
+  [
+   "2023-08-04",
+   23.5
+  ],
+  [
+   "2023-08-11",
+   22.75
+  ],
+  [
+   "2023-08-18",
+   23.25
+  ],
+  [
+   "2023-08-25",
+   22.6
+  ],
+  [
+   "2023-09-01",
+   23.5
+  ],
+  [
+   "2023-09-08",
+   22.75
+  ],
+  [
+   "2023-09-15",
+   23.75
+  ],
+  [
+   "2023-09-22",
+   22.5
+  ],
+  [
+   "2023-09-29",
+   22.5
+  ],
+  [
+   "2023-10-06",
+   20.25
+  ],
+  [
+   "2023-10-13",
+   18.75
+  ],
+  [
+   "2023-10-20",
+   11.25
+  ],
+  [
+   "2023-10-27",
+   12.0
+  ],
+  [
+   "2023-11-03",
+   12.75
+  ],
+  [
+   "2023-11-10",
+   12.75
+  ],
+  [
+   "2023-11-17",
+   14.5
+  ],
+  [
+   "2023-11-24",
+   14.25
+  ],
+  [
+   "2023-12-01",
+   14.25
+  ],
+  [
+   "2023-12-08",
+   14.25
+  ],
+  [
+   "2023-12-15",
+   15.8
+  ],
+  [
+   "2023-12-22",
+   15.5
+  ],
+  [
+   "2023-12-29",
+   15.5
+  ],
+  [
+   "2024-01-05",
+   14.75
+  ],
+  [
+   "2024-01-12",
+   14.75
+  ],
+  [
+   "2024-01-19",
+   14.75
+  ],
+  [
+   "2024-01-26",
+   14.25
+  ],
+  [
+   "2024-02-02",
+   15.0
+  ],
+  [
+   "2024-02-09",
+   14.75
+  ],
+  [
+   "2024-02-16",
+   14.5
+  ],
+  [
+   "2024-02-23",
+   13.5
+  ],
+  [
+   "2024-03-01",
+   12.25
+  ],
+  [
+   "2024-03-08",
+   12.25
+  ],
+  [
+   "2024-03-15",
+   12.0
+  ],
+  [
+   "2024-03-22",
+   12.0
+  ],
+  [
+   "2024-03-28",
+   13.0
+  ],
+  [
+   "2024-04-05",
+   13.5
+  ],
+  [
+   "2024-04-12",
+   13.75
+  ],
+  [
+   "2024-04-19",
+   12.25
+  ],
+  [
+   "2024-04-26",
+   12.25
+  ],
+  [
+   "2024-05-03",
+   12.0
+  ],
+  [
+   "2024-05-10",
+   12.0
+  ],
+  [
+   "2024-05-17",
+   12.0
+  ],
+  [
+   "2024-05-24",
+   12.0
+  ],
+  [
+   "2024-05-31",
+   11.25
+  ],
+  [
+   "2024-06-07",
+   11.25
+  ],
+  [
+   "2024-06-14",
+   11.25
+  ],
+  [
+   "2024-06-21",
+   11.125
+  ],
+  [
+   "2024-06-28",
+   11.0
+  ],
+  [
+   "2024-07-05",
+   11.0
+  ],
+  [
+   "2024-07-12",
+   11.0
+  ],
+  [
+   "2024-07-19",
+   10.25
+  ],
+  [
+   "2024-07-26",
+   9.5
+  ],
+  [
+   "2024-08-02",
+   8.25
+  ],
+  [
+   "2024-08-09",
+   8.75
+  ],
+  [
+   "2024-08-16",
+   8.75
+  ],
+  [
+   "2024-08-23",
+   9.0
+  ],
+  [
+   "2024-08-30",
+   9.75
+  ],
+  [
+   "2024-09-06",
+   9.75
+  ],
+  [
+   "2024-09-13",
+   9.75
+  ],
+  [
+   "2024-09-20",
+   10.75
+  ],
+  [
+   "2024-09-27",
+   10.5
+  ],
+  [
+   "2024-10-04",
+   10.5
+  ],
+  [
+   "2024-10-11",
+   10.75
+  ],
+  [
+   "2024-10-18",
+   10.75
+  ],
+  [
+   "2024-10-25",
+   10.0
+  ],
+  [
+   "2024-11-01",
+   9.75
+  ],
+  [
+   "2024-11-08",
+   9.5
+  ],
+  [
+   "2024-11-15",
+   9.25
+  ],
+  [
+   "2024-11-22",
+   8.75
+  ],
+  [
+   "2024-11-29",
+   9.1
+  ],
+  [
+   "2024-12-06",
+   9.1
+  ],
+  [
+   "2024-12-13",
+   8.75
+  ],
+  [
+   "2024-12-20",
+   8.25
+  ],
+  [
+   "2024-12-24",
+   8.25
+  ],
+  [
+   "2024-12-27",
+   8.25
+  ],
+  [
+   "2024-12-30",
+   8.25
+  ],
+  [
+   "2025-01-03",
+   8.5
+  ],
+  [
+   "2025-01-10",
+   6.25
+  ],
+  [
+   "2025-01-17",
+   6.85
+  ],
+  [
+   "2025-01-24",
+   6.6
+  ],
+  [
+   "2025-01-31",
+   6.6
+  ],
+  [
+   "2025-02-07",
+   6.7
+  ],
+  [
+   "2025-02-14",
+   6.7
+  ],
+  [
+   "2025-02-21",
+   6.0
+  ],
+  [
+   "2025-02-28",
+   5.5
+  ],
+  [
+   "2025-03-07",
+   6.0
+  ],
+  [
+   "2025-03-14",
+   7.0
+  ],
+  [
+   "2025-03-21",
+   7.75
+  ],
+  [
+   "2025-03-28",
+   7.75
+  ],
+  [
+   "2025-04-04",
+   6.75
+  ],
+  [
+   "2025-04-11",
+   6.5
+  ],
+  [
+   "2025-04-17",
+   6.0
+  ],
+  [
+   "2025-04-25",
+   6.0
+  ],
+  [
+   "2025-05-02",
+   6.0
+  ],
+  [
+   "2025-05-09",
+   7.25
+  ],
+  [
+   "2025-05-16",
+   8.75
+  ],
+  [
+   "2025-05-23",
+   9.0
+  ],
+  [
+   "2025-05-30",
+   9.0
+  ],
+  [
+   "2025-06-06",
+   8.75
+  ],
+  [
+   "2025-06-13",
+   8.75
+  ],
+  [
+   "2025-06-20",
+   8.5
+  ],
+  [
+   "2025-06-27",
+   8.25
+  ],
+  [
+   "2025-07-04",
+   8.25
+  ],
+  [
+   "2025-07-11",
+   8.0
+  ],
+  [
+   "2025-07-18",
+   5.75
+  ],
+  [
+   "2025-07-25",
+   5.75
+  ],
+  [
+   "2025-08-01",
+   6.0
+  ],
+  [
+   "2025-08-08",
+   5.25
+  ],
+  [
+   "2025-08-15",
+   5.25
+  ],
+  [
+   "2025-08-22",
+   5.5
+  ],
+  [
+   "2025-08-29",
+   5.5
+  ],
+  [
+   "2025-09-05",
+   5.5
+  ],
+  [
+   "2025-09-12",
+   5.0
+  ],
+  [
+   "2025-09-19",
+   4.75
+  ],
+  [
+   "2025-09-26",
+   5.5
+  ],
+  [
+   "2025-10-03",
+   5.5
+  ],
+  [
+   "2025-10-10",
+   5.25
+  ],
+  [
+   "2025-10-17",
+   6.0
+  ],
+  [
+   "2025-10-24",
+   7.5
+  ],
+  [
+   "2025-10-31",
+   6.55
+  ],
+  [
+   "2025-11-07",
+   6.4
+  ],
+  [
+   "2025-11-14",
+   6.25
+  ],
+  [
+   "2025-11-21",
+   6.45
+  ],
+  [
+   "2025-11-28",
+   6.75
+  ],
+  [
+   "2025-12-05",
+   7.25
+  ],
+  [
+   "2025-12-12",
+   7.75
+  ],
+  [
+   "2025-12-19",
+   7.125
+  ],
+  [
+   "2025-12-24",
+   7.5
+  ],
+  [
+   "2026-01-02",
+   7.75
+  ],
+  [
+   "2026-01-09",
+   8.0
+  ],
+  [
+   "2026-01-16",
+   7.5
+  ],
+  [
+   "2026-01-23",
+   7.5
+  ],
+  [
+   "2026-01-30",
+   7.25
+  ],
+  [
+   "2026-02-06",
+   7.25
+  ],
+  [
+   "2026-02-13",
+   7.0
+  ],
+  [
+   "2026-02-20",
+   7.25
+  ],
+  [
+   "2026-02-27",
+   7.25
+  ],
+  [
+   "2026-03-06",
+   7.0
+  ],
+  [
+   "2026-03-13",
+   7.0
+  ],
+  [
+   "2026-03-20",
+   6.5
+  ],
+  [
+   "2026-03-27",
+   6.25
+  ],
+  [
+   "2026-04-02",
+   6.25
+  ],
+  [
+   "2026-04-10",
+   6.5
+  ],
+  [
+   "2026-04-17",
+   8.25
+  ],
+  [
+   "2026-04-24",
+   8.25
+  ],
+  [
+   "2026-05-01",
+   8.25
+  ],
+  [
+   "2026-05-08",
+   8.9
+  ],
+  [
+   "2026-05-15",
+   8.75
+  ],
+  [
+   "2026-05-22",
+   9.25
+  ],
+  [
+   "2026-05-29",
+   10.75
+  ],
+  [
+   "2026-06-05",
+   10.75
+  ],
+  [
+   "2026-06-12",
+   11.0
+  ],
+  [
+   "2026-06-19",
+   11.0
+  ],
+  [
+   "2026-06-26",
+   10.5
+  ],
+  [
+   "2026-07-03",
+   11.0
+  ],
+  [
+   "2026-07-10",
+   11.25
+  ],
+  [
+   "2026-07-17",
+   11.5
+  ],
+  [
+   "2026-07-24",
+   12.0
+  ],
+  [
+   "2026-07-31",
+   13.5
+  ],
+  [
+   "2026-08-07",
+   13.0
+  ],
+  [
+   "2026-08-14",
+   12.75
+  ],
+  [
+   "2026-08-21",
+   13.0
+  ],
+  [
+   "2026-08-28",
+   13.25
+  ],
+  [
+   "2026-09-04",
+   13.25
+  ],
+  [
+   "2026-09-11",
+   13.75
+  ],
+  [
+   "2026-09-18",
+   13.7
+  ],
+  [
+   "2026-09-25",
+   12.75
+  ],
+  [
+   "2026-10-02",
+   12.75
+  ],
+  [
+   "2026-10-09",
+   10.75
+  ],
+  [
+   "2026-10-16",
+   10.25
+  ],
+  [
+   "2026-10-23",
+   10.25
+  ],
+  [
+   "2026-10-30",
+   10.25
+  ],
+  [
+   "2026-11-04",
+   10.0
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2021-11-30",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 2,
+   "q": "This has also positively impacted our EBITDA performance, meaning that we are trading ahead of market expectations for the full year.",
+   "file": "20211130_SOS_Half-Year-Results.md"
+  },
+  {
+   "d": "2022-01-06",
+   "doc": "Q3 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "As a result, the Board confirms that the Company continues to trade in line with recently upgraded market expectations* for the current financial year.",
+   "file": "20220106_SOS_Trading-Update.md"
+  },
+  {
+   "d": "2022-04-06",
+   "doc": "YE-TU",
+   "fy": "FY22",
+   "g": "RAISE",
+   "s": 2,
+   "q": "As a result of this successful trading period, the Board is pleased to announce that it now anticipates reporting revenue and EBITDA for the full year ended 31 March 2022 (\"FY22\") ahead of recently upgraded market expectations*.",
+   "file": "20220406_SOS_Trading-Update-and-New-Third-Party-Arrangements.md"
+  },
+  {
+   "d": "2022-07-12",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading in-line with market expectations* with strong performance on both own site and third-parties",
+   "file": "20220712_SOS_Final-Results.md"
+  },
+  {
+   "d": "2022-10-18",
+   "doc": "H1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "This gives the Board the confidence that the Group will continue to make progress and deliver profitable growth in line with full year market expectations.",
+   "file": "20221018_SOS_Half-Year-Trading-Update.md"
+  },
+  {
+   "d": "2022-12-13",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "Momentum has continued into the second half of the financial year with record sales months in October and November, trading in line with market expectations* for the full financial year.",
+   "file": "20221213_SOS_Half-Year-Results.md"
+  },
+  {
+   "d": "2023-01-10",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "As a result, the Board confirms that the Company continues to trade in line with market expectations* for the current financial year.",
+   "file": "20230110_SOS_Trading-Update.md"
+  },
+  {
+   "d": "2023-02-08",
+   "doc": "OPS",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "The positive momentum reported in the Q3 FY23 trading update has continued into the first few weeks of Q4 FY23, with trading continuing in line with the Board's expectations.",
+   "file": "20230208_SOS_Proposed-Placing-to-raise-a-minimum-of-£4-million.md"
+  },
+  {
+   "d": "2023-04-12",
+   "doc": "YE-TU",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -3,
+   "q": "FY23 PBT is, as a result, marginally below market consensus*, predominantly due to the bringing forward of people and recruitment costs.",
+   "file": "20230412_SOS_Trading-Update-&-Progress-on-Growth-Strategy.md"
+  },
+  {
+   "d": "2023-07-11",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "Current trading in line with market expectations reflecting strong performance on both own site and through third-party partners",
+   "file": "20230711_SOS_Final-Results.md"
+  },
+  {
+   "d": "2023-10-18",
+   "doc": "H1 TU",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -3,
+   "q": "The Company expects revenue to grow by 10% year on year for FY24 to £46.8m and to remain in profit during the transition.",
+   "file": "20231018_SOS_Trading-&-Strategic-Update.md"
+  },
+  {
+   "d": "2023-12-12",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "This performance and continued demand shows the strength of our unique product range in the key trading period before Christmas and, whilst acknowledging the challenges that remain in the wider economy, we are trading in line with market expectations for the full year.",
+   "file": "20231212_SOS_Half-Year-Results.md"
+  },
+  {
+   "d": "2024-01-10",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board confirms that the Company continues to trade in line with market expectations* for the current financial year and further expects the current momentum to be sustained over the final quarter.",
+   "file": "20240110_SOS_Trading-Update.md"
+  },
+  {
+   "d": "2024-04-16",
+   "doc": "YE-TU",
+   "fy": "FY24",
+   "g": "CUT",
+   "s": -2,
+   "q": "As a result of a substantial positive swing in PBT from H1 (£1.3m loss) to an expected profit of £1.1m in H2, FY24 will be broadly in line with market expectations* with a marginal loss of £0.2m expected to be reported for the year overall",
+   "file": "20240416_SOS_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2024-07-16",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -1,
+   "q": "The significant increase in gross margin to 63.4% means pre-tax profit levels are expected to remain in-line with expectations, despite lower revenues, which are now likely to be in-line with the prior year.",
+   "file": "20240716_SOS_Full-Year-Results-and-Trading-Update.md"
+  },
+  {
+   "d": "2024-10-22",
+   "doc": "H1 TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -1,
+   "q": "Due to our continued prioritisation of profitability at this stage of the Company's development, we are moderating our FY25 revenue expectation to £40m. Our FY25 profit expectations are, however, unchanged",
+   "file": "20241022_SOS_Trading-Update.md"
+  },
+  {
+   "d": "2024-11-26",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading in the second half of the financial year has been in line with full year market expectations.",
+   "file": "20241126_SOS_Half-Year-Results.md"
+  },
+  {
+   "d": "2025-01-13",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Overall trading remains in line with market expectations* for the current financial year, with January starting well and pleasing levels of full price sales, despite the well-publicised challenging macro-environment.",
+   "file": "20250113_SOS_Trading-Update-&-New-Store-Agreements.md"
+  },
+  {
+   "d": "2025-04-16",
+   "doc": "YE-TU",
+   "fy": "FY25",
+   "g": "CUT",
+   "s": -3,
+   "q": "PBT expected to be not less than £0.5m (FY24: loss of £0.3m), also a substantial positive swing from £0.7m pre-tax loss in H1 FY25",
+   "file": "20250416_SOS_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2025-07-15",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -3,
+   "q": "We continue to expect to grow revenue and profit in FY26, however, we are moderating our expectations for FY26 revenue growth to +18%, with a consequential impact on profit.",
+   "file": "20250715_SOS_Full-Year-Results-and-Trading-Update.md"
+  },
+  {
+   "d": "2025-10-14",
+   "doc": "H1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board reiterates its confidence in delivering market expectations for the current financial year with the foundations now in place for sustainable, profitable and cash-generative growth over the medium to long-term.",
+   "file": "20251014_SOS_Half-Year-Trading-Update.md"
+  },
+  {
+   "d": "2025-11-25",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Overall, trading is in line with market expectations reflecting the usual weighting to the second half where revenue is stronger and margins are higher.",
+   "file": "20251125_SOS_Half-Year-Results.md"
+  },
+  {
+   "d": "2026-01-13",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Q3 performance in line with management expectations and on track to meet market expectations for the full year*",
+   "file": "20260113_SOS_Trading-Update.md"
+  },
+  {
+   "d": "2026-04-14",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "Margin enhancement and profitability remained firm priorities, with meaningful and sustained margin improvement achieved across the year resulting in PBT being in line with market expectations.",
+   "file": "20260414_SOS_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2026-07-14",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The momentum we have taken into the new financial year is pleasing, and we remain on track to deliver full year market expectations.",
+   "file": "20260714_SOS_Full-Year-Results-and-Trading-Update.md"
+  },
+  {
+   "d": "2026-11-05",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The business typically achieves profitability in H2 each year and we expect this trend to continue and have every confidence of achieving market expectations for the full year.",
+   "file": "20261105_SOS_Half-Year-Results.md"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-11-05",
+  "doc": "H1 R",
+  "file": "20261105_SOS_Half-Year-Results.md",
+  "vs": "H1 R Nov-25 · FY R Jul-26 (previous RNS) · back to H1 R Nov-21",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Nov-25 footnote: “current market expectations for the year ending 31 March 2026 (as revised in July 2025) are revenues of £43.6 million and profit before tax of £0.4 million” → now “Trading is in line with FY27 full year market expectations”, no revenue or profit figure given",
+    "span": "Figures footnoted at every H1 R Nov-21 to Nov-25 and every FY R Jul-22 to Jul-25 → gone since FY R Jul-26, second print without"
+   },
+   {
+    "sev": "amber",
+    "type": "Target dropped",
+    "text": "Stores: Nov-25 “Both stores are expected to achieve breakeven in year two” and store costs of “£1.3m for H1 FY26” → Nov-26 no breakeven update and no H1 store cost or profit figure, only “improving the profitability of our store estate”",
+    "span": "Chelmsford and Marlow passed 12 months by Nov-25, so year two has now ended; FY R Jul-26 still sized the store drag at £0.9m"
+   },
+   {
+    "sev": "amber",
+    "type": "Skipped update",
+    "text": "Half-year trading update issued every October (18-Oct-22, 18-Oct-23, 22-Oct-24, 14-Oct-25) → none in Oct-26, so “The month of September was impacted by prolonged summer weather” first surfaced with these results on 5 Nov",
+    "span": "First gap in 4 years; results came earlier than usual (25-Nov-25, 26-Nov-24)"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "“Revenue continues to grow” and “The sales growth we reported for Q1 continued into Q2” → Q1 was £11.6m (+22%), so H1 of £20.8m implies Q2 of c.£9.2m against c.£9.2m last year (£18.7m less £9.5m), and “Own website revenue was flat year-on-year” after +28% at H1 FY26",
+    "span": "Q2 worked out from H1 and Q1 figures; not stated by the company"
+   }
+  ]
+ }
+}

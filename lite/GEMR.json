@@ -1,8 +1,8 @@
 {
  "ticker": "GEMR",
- "v": "2026-10-19.af09",
+ "v": "2026-11-05.e76d",
  "ccy": "GBX",
- "src": "Yahoo GEMR.L weekly",
+ "src": "Yahoo GEMR.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -976,6 +976,14 @@
   [
    "2026-10-19",
    0.35
+  ],
+  [
+   "2026-10-23",
+   0.35
+  ],
+  [
+   "2026-10-30",
+   0.4
   ]
  ],
  "marks": [
