@@ -1,8 +1,8 @@
 {
  "ticker": "REC",
- "v": "2026-10-22.37c5",
+ "v": "2026-11-06.6c04",
  "ccy": "GBX",
- "src": "Yahoo REC.L weekly",
+ "src": "Yahoo REC.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-22",
    46.5
+  ],
+  [
+   "2026-10-23",
+   47.5
+  ],
+  [
+   "2026-10-30",
+   47.0
   ]
  ],
  "marks": [
@@ -1324,37 +1332,47 @@
    "s": 0,
    "q": "Alongside this growth in AUM, we crystallised performance fees of £2.2 million in H1 FY27 (H1 FY26: £0.8 million). Performance across the Group remains in line with expectations for the full year.",
    "file": "20261022_REC_Second-Quarter-Trading-Update.md"
+  },
+  {
+   "d": "2026-11-06",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -1,
+   "q": "Record is well positioned to create sustainable long-term value for our clients and shareholders. Performance across the Group continues to support our expectations for the current financial year.",
+   "file": "20261106_REC_Interim-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-22",
-  "doc": "H1 TU",
-  "file": "20261022_REC_Second-Quarter-Trading-Update.md",
-  "vs": "Q2 TU Oct-25 · Q1 AUM Update Jul-26 · back to Jul-25/Jan-26/Apr-26",
+  "rns": "2026-11-06",
+  "doc": "H1 R",
+  "file": "20261106_REC_Interim-Results.md",
+  "vs": "H1 R Nov-25 · H1 TU Oct-26 · back to Nov-23/Nov-24 interims",
   "lines": [
+   {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Last interim Nov-25: “relative to market expectations”; Q1 Jul-26: “continues to support expectations for the current financial year” → now “continues to support our expectations for the current financial year”, no reference to the market",
+    "span": "“market expectations” in interims Nov-23 and Nov-25; “the Board's expectations” Nov-24; FY26 final results not in the folder"
+   },
+   {
+    "sev": "amber",
+    "type": "Restated",
+    "text": "30 Sep 2025 AUM by pillar: Nov-25 “AUM in our core Risk Management products increased by 12% during the period to $106.4 billion” and Private Markets $1.1bn → now Risk Management $89.2bn and Private Markets $18.3bn, as “Solutions for Asset Managers is now reported within the Private Markets pillar rather than Risk Management”",
+    "span": "The pillar called the greatest long-term opportunity grew about $17bn by reclassification"
+   },
+   {
+    "sev": "amber",
+    "type": "Target dropped",
+    "text": "Jun-25: “Sharia-compliant Deep Tier Supply Chain Finance fund with a target of $1 billion”; Nov-25: “We continue with our plans to launch” it, with Kore Potash financing also progressing → neither is mentioned now",
+    "span": "Final results Jun-25, interim Nov-25 → absent Nov-26 (also absent from all 2026 updates in the folder)"
+   },
    {
     "sev": "amber",
     "type": "Split withheld",
-    "text": "Oct-25: “The composition of and changes to AUM by product were as follows” (Passive Hedging, Dynamic Hedging, Solutions for Asset Managers, FX Alpha, EM Local Debt, Infrastructure…) → now “The composition of and changes to AUM by product pillar were as follows”, three pillars only",
-    "span": "Product table in every update to Apr-26 → pillar-only since the Jul-26 format change"
-   },
-   {
-    "sev": "amber",
-    "type": "Went quiet",
-    "text": "Average fee rate: “Average fee rates in the quarter remained broadly unchanged from the previous quarter.” → no fee-rate statement now",
-    "span": "Given Jul-25, Oct-25, Jan-26, Apr-26 → absent Jul-26 and Oct-26"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Last year’s Q2 gave no trading statement (“We will provide a further update with our interim results announcement”) → now “Performance across the Group remains in line with expectations for the full year.”",
-    "span": "Q2 Oct-25 vs Q2 Oct-26"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "New Private Markets figure since Jul-26: “undeployed commitments of $1.1 billion (30 June 2026: $1.2 billion)”, alongside H1 performance fees “of £2.2 million in H1 FY27 (H1 FY26: £0.8 million)”"
+    "text": "Nov-25 tables by product (Passive Hedging, Dynamic Hedging, Solutions for Asset Managers, FX Alpha…) and “The composition of AUM by underlying currency at 30 September 2025 is as follows” → now three pillars only and no currency split",
+    "span": "Base currency split given in interims Nov-24, Nov-25 → first interim without it"
    }
   ]
  }

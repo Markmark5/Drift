@@ -1,8 +1,8 @@
 {
  "ticker": "RMV",
- "v": "2026-10-21.141c",
+ "v": "2026-11-06.779d",
  "ccy": "GBX",
- "src": "Yahoo RMV.L weekly",
+ "src": "Yahoo RMV.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-21",
    544.8
+  ],
+  [
+   "2026-10-23",
+   559.6
+  ],
+  [
+   "2026-10-30",
+   512.0
   ]
  ],
  "marks": [
@@ -1207,14 +1215,48 @@
    "s": -2,
    "q": "For the full year, we expect revenue growth of 6% to 8%, a reduction on previous guidance of 8% to 10%, due entirely to lower development volumes in the New Homes market.",
    "file": "20260731_RMV_Half-year-Financial-Report.md"
+  },
+  {
+   "d": "2026-11-06",
+   "doc": "Q3 TU",
+   "fy": "FY27",
+   "g": "CUT",
+   "s": -2,
+   "q": "Revenue growth similar to 2026 as the current end-market dynamics are expected to continue into next year.  This reflects the full-year impact of fewer New Homes developments and a subdued Estate Agency market.",
+   "file": "20261106_RMV_Trading-Statement.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-05",
+  "rns": "2026-11-06",
   "doc": "Q3 TU",
-  "file": "20261005_RMV_Statement-re-Trading-Update.md",
-  "vs": "Notice of TU Oct-24 · Notice Apr-26 · H1 R Jul-26",
-  "lines": []
+  "file": "20261106_RMV_Trading-Statement.md",
+  "vs": "Q3 TU Nov-25 · back to Nov-24 · H1 R Jul-26 · AGM TU May-26",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Number to words",
+    "text": "Next-year revenue: Nov-25 “Revenue growth of 8-10%” for 2026 → Nov-26 for 2027 “Revenue growth similar to 2026”, no figure of its own (implies about 6-7%, below the 8% to 10% a year set for 2026-8)",
+    "span": "Nov-25 numbered the next year; Nov-24 gave words only"
+   },
+   {
+    "sev": "red",
+    "type": "Wording vs number",
+    "text": "Highlights say “Revenue and profit growth is in line with our previous guidance for 2026” and lead with the EPS upgrade → outlook list cuts ARPA to “ARPA growth of £100-£110 (previously £110-£120)”, a cut the highlights leave out, and profit moves to “at least 3%, within previous guidance of 3% to 5%”",
+    "span": "ARPA £110-£120 reiterated at Jul-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Target dropped",
+    "text": "Nov-25 set out “Investment stage guidance (2026-8)” and a 2030 ambition, with “sustained double-digit growth” → neither the 2026-8 table nor the 2030 ambition is mentioned in Nov-26",
+    "span": "Headline table Nov-25; also absent May-26 and Jul-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Current-year margin: Jul-26 “full-year underlying operating margin guidance of 67%” → Nov-26 gives no 2026 margin, only 2027 “with a margin of at least 67%”",
+    "span": "Current-year margin stated at Q3 TU Nov-24 (70%) and Nov-25 (70%) → first gap"
+   }
+  ]
  }
 }

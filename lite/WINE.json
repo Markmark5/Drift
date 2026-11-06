@@ -1,8 +1,8 @@
 {
  "ticker": "WINE",
- "v": "2026-10-21.d882",
+ "v": "2026-11-06.36a8",
  "ccy": "GBX",
- "src": "Yahoo WINE.L weekly",
+ "src": "Yahoo WINE.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-21",
    58.8
+  ],
+  [
+   "2026-10-23",
+   60.0
+  ],
+  [
+   "2026-10-30",
+   59.0
   ]
  ],
  "marks": [
@@ -1298,38 +1306,47 @@
    "s": 0,
    "q": "FY27 guidance provided today indicates progressive growth in adj. EBITDAeilac1 and continued cash generation despite the planned reduction in revenue base",
    "file": "20260723_WINE_Final-Results.md"
+  },
+  {
+   "d": "2026-11-06",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "For the financial year to date, trading has been in line with the Company’s communicated FY27 guidance (reiterated below), which indicates progressive growth in Adjusted EBITDAeilac1 and continued cash generation despite the expected reduction in revenue.",
+   "file": "20261106_WINE_Tender-Offer,-Trading-Update,-Notice-of-HY-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-23",
-  "doc": "FY R",
-  "file": "20260723_WINE_Final-Results.md",
-  "vs": "FY R Aug-25 · Pre-close TU Apr-26 · back to Strategic Plan Mar-25, H1 R Dec-25",
+  "rns": "2026-11-06",
+  "doc": "H1 TU",
+  "file": "20261106_WINE_Tender-Offer,-Trading-Update,-Notice-of-HY-Results.md",
+  "vs": "H1 TU Nov-25 · FY R Jul-26 · back to H1 R Dec-25",
   "lines": [
    {
     "sev": "amber",
-    "type": "Target dropped",
-    "text": "Revenue floor: Mar-25 Medium Term Guidance “Stabilising at £200-£225m by FY29” → Jul-26 no stabilisation level; FY27 revenue guide £158m to £175m and “member numbers and revenue will not yet have stabilised”",
-    "span": "Mar-25 plan (headline Medium Term Guidance table); FY26 revenue £199.1m already at the bottom of the band"
+    "type": "Number to words",
+    "text": "Acquisition break-even: Jul-26 “We expect to reach our target of 24 months in Q1 FY27.” → now “tracking in line with our 24-month target (HY26: 44 months; FY26: 42 months)”, no HY27 month figure",
+    "span": "Month figure printed Dec-25 (44) and Jul-26 (42); the comparatives are given here but the current number is not"
    },
    {
     "sev": "amber",
-    "type": "Pushed out",
-    "text": "Inventory cash: Aug-25 “Liquidation of excess inventory continuing as planned towards the Medium Term target of generating £40m of cash” → Jul-26 “leaving a further £34m of the original target, the majority of which will come through in FY29 and FY30.”",
-    "span": "Medium Term = 3-5 years (Dec-25); timing now named as FY29-FY30"
+    "type": "Restated",
+    "text": "Net cash guide basis: Nov-25 “Net cash guidance includes the £2m distribution via the share buyback programme in calendar year 2025” → now “FY27 net cash guidance is stated before the proposed tender offer and will be adjusted for it once completed.”",
+    "span": "£34m to £42m range unchanged but up to £5.7m now sits outside it; HY27 net cash £34.0m is at the bottom of the range"
    },
    {
     "sev": "grey",
-    "type": "Restated",
-    "text": "Cash target re-based: Aug-25 “reach in excess of £70m in net cash excluding lease liabilities over the Medium Term” → Jul-26 “generate more than £45m of cash by the end of FY30 (before distributions)”",
-    "span": "Mar-25 “Achieving £75m cash from the March 2025 balance sheet”; now excludes the opening cash"
+    "type": "New caution",
+    "text": "Capital return tied to peak: Jul-26 “Continued commitment to ongoing shareholder distributions, including ad hoc / significant distributions” → now £5.7m only “if trading is in line with or above the midpoint of the Net Cash expectation range”, about £4m “if trading is within the lower half of that Net Cash expectation range.”",
+    "span": "Tender minimum is £2m, with no trigger stated for that level; final size due 8 Dec 2026"
    },
    {
-    "sev": "grey",
-    "type": "Restated",
-    "text": "Medium-term EBITDA: Mar-25 “Reaching £10m-£15m annual EBITDA” → Jul-26 “tracking well towards the Medium-Term target of £9m to £14m”",
-    "span": "Step-down first seen Aug-25 (“exceed an annual £9m”); £1m lower than the Mar-25 plan"
+    "sev": "green",
+    "type": "Back / new",
+    "text": "KPIs added to the post-close update: Nov-25 gave “improvements in Adjusted EBITDA and margin”, no KPI figures → now “member retention3, which improved to 79% (HY26: 76%), and gross margin4, which increased by c.220bps to 21.7% (HY26: 19.5%)”",
+    "span": "Retention is now defined over “the 12 months to the period end”; Dec-25 defined it by financial year, so the 76% comparative may not be like for like"
    }
   ]
  }

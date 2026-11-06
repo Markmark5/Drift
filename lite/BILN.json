@@ -1,6 +1,6 @@
 {
  "ticker": "BILN",
- "v": "2026-11-03.63f4",
+ "v": "2026-11-06.eca1",
  "ccy": "GBX",
  "src": "Yahoo BILN.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1247,26 +1247,47 @@
    "s": 0,
    "q": "Whilst mindful of the continuing economic and competitive pressures within the wider construction market, the Board remains confident in the Group's prospects and expects results for the year ending 31 December 2026 to be in line with market expectations.",
    "file": "20260929_BILN_Interim-Results-and-Board-Change.md"
+  },
+  {
+   "d": "2026-11-06",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -3,
+   "q": "Following a review of current projects and their expected financial contribution in FY26, the Board now expects that the Group’s underlying profit before tax* for FY26 will be in the range of £4.0 million to £5.5 million, which is below current market expectations** (2025: £4.1 million).",
+   "file": "20261106_BILN_Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-29",
-  "doc": "H1 R",
-  "file": "20260929_BILN_Interim-Results-and-Board-Change.md",
-  "vs": "H1 R Sep-25 · Contract Wins Jul-26 · FY R Apr-26",
+  "rns": "2026-11-06",
+  "doc": "YE-TU",
+  "file": "20261106_BILN_Trading-Update.md",
+  "vs": "H1 R Sep-26 · TU Dec-24 (no TU in late 2025) · back to Nov-21 · Contract Wins Jul-26",
   "lines": [
    {
     "sev": "red",
     "type": "Next-year view dropped",
-    "text": "Sep-25 interim: “FY26 remains in line with market expectations”; Jul-26: “further confidence for delivering 2027 in line with market expectations” → Sep-26 interim gives no FY27 anchor, only “excellent visibility into 2027”",
-    "span": "Next-year view in interims at Sep-22 and Sep-25; given again Jul-26"
+    "text": "Jul-26: “further confidence for delivering 2027 in line with market expectations” → now only “confidence in Billington’s longer-term prospects”, no FY27 guide even though delayed profit moves into 2027",
+    "span": "Next-year view in TUs Nov-21, Dec-22, Dec-24 → not given"
    },
    {
     "sev": "amber",
-    "type": "Went quiet",
-    "text": "Productive hours: Sep-25 “H1 2025 productive hours increased by 5.4% compared to H1 2024” (also used in FY R Apr-26) → not mentioned at Sep-26 as revenue growth is now credited to “a return to higher average steel content”",
-    "span": "Given Sep-25 and Apr-26"
+    "type": "Pushed out",
+    "text": "Sep-26: “expect results for the full year to be in line with market expectations” → five weeks later a Tubecon bridge contract’s “contribution from this project is now expected to be recognised in 2027” and certain contract profits await “A final determination” after the year end",
+    "span": "Same cause at Nov-21 and Sep-25 → third profit slip on delays"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "“the matters giving rise to the revision are contract specific” and “performance across the wider Group remains positive”, yet the same RNS cites “the latest assessment of expected contributions across the Group’s wider contract portfolio” and the £4.0m to £5.5m range sits against £8.3m consensus (midpoint 43% lower)",
+    "span": "H1 underlying PBT £3.07m (Sep-26) implies H2 of only £0.9m to £2.4m"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Sep-26: “in line with market expectations”, no number → now a stated range and footnote: “consensus market expectations for the year ending 31 December 2026 were for adjusted or underlying profit before tax of £8.3m”",
+    "span": "First consensus figure in the RNS record"
    }
   ]
  }

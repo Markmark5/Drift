@@ -1,8 +1,8 @@
 {
  "ticker": "GLE",
- "v": "2026-10-20.bc6e",
+ "v": "2026-11-06.9e9c",
  "ccy": "GBX",
- "src": "Yahoo GLE.L weekly",
+ "src": "Yahoo GLE.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-20",
    282.0
+  ],
+  [
+   "2026-10-23",
+   279.0
+  ],
+  [
+   "2026-10-30",
+   286.5
   ]
  ],
  "marks": [
@@ -1317,38 +1325,47 @@
    "s": 0,
    "q": "Taken together, the Board expects the Group to deliver an overall result for FY2027 in line with current market expectations6.",
    "file": "20260915_GLE_Final-Results.md"
+  },
+  {
+   "d": "2026-11-06",
+   "doc": "AGM",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -2,
+   "q": "Given the likely timings of the introduction of YFH and its impact on Gleeson Homes’ sales, as well as the visibility around the timing of disposals in Gleeson Land, the Board anticipates that profits will be significantly weighted towards the second half of the year with delivery of market consensus1 for FY2027 reliant on further improvement in buyer confidence.",
+   "file": "20261106_GLE_AGM-Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-15",
-  "doc": "FY R",
-  "file": "20260915_GLE_Final-Results.md",
-  "vs": "FY R Sep-25 · back to Sep-24 · Jul-26 TS",
+  "rns": "2026-11-06",
+  "doc": "AGM",
+  "file": "20261106_GLE_AGM-Trading-Update.md",
+  "vs": "AGM Nov-25 · back to Nov-21 · FY R Sep-26",
   "lines": [
    {
-    "sev": "amber",
-    "type": "Target dropped",
-    "text": "Last year: “Group profitability could broadly triple and the Company would resume its position as the fastest growing listed housebuilder in the UK” and “target circa 20% of home sales from partnership sites” → this year only “accelerates our overall objective of delivering 3,000 new homes per annum”, no profit multiple, no partnership share",
-    "span": "Profit-tripling line given in FY R Sep-24 and Sep-25 → first gap"
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Sep-26: “the Board expects the Group to deliver an overall result for FY2027 in line with current market expectations6” → now “delivery of market consensus1 for FY2027 reliant on further improvement in buyer confidence”; the Board no longer says it expects it",
+    "span": "Consensus figure printed May, Jun, Jul, Sep-26 (£18.8m at Sep-26) → footnote back to a link only"
    },
    {
     "sev": "amber",
-    "type": "Target dropped",
-    "text": "Last year: “We expect FY2026 profitability to remain broadly flat compared to FY2025 with significant growth expected from FY2027.” → this year FY27 only “in line with current market expectations” (consensus £18.8m, below FY25 adjusted PBT of £21.9m) and costs “will slow the pace of margin recovery”",
-    "span": "FY R Sep-25 → Sep-26"
+    "type": "New caution",
+    "text": "Sep-26: no phasing given for FY27 → now “profits will be significantly weighted towards the second half of the year”, with “We anticipate a weaker first-half” and the YFH launch “likely to postpone demand in the intervening period and to increase cancellations”",
+    "span": "Last H2 flag Nov-24 (“more weighted to the second half than usual”) → first for FY27, and stronger wording"
    },
    {
     "sev": "amber",
     "type": "Pushed out",
-    "text": "Jul-26: “slightly fewer sites in FY2027 than previously planned” → now “slightly fewer sites in FY2027, and into FY2028, than previously planned”",
-    "span": "Site shortfall flagged Jun-25, Jul-25 (FY26), Jul-26 (FY27) → now FY28"
+    "text": "Large land sale, Sep-26: “We expect that this approval will be achieved in the first half of FY2027, with completion to occur shortly thereafter” → now “expected to take place over the next few months”, no half named",
+    "span": "Sale deferred from FY26 at Jun-26; H1 FY27 timing given Jun-26 and Sep-26"
    },
    {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Last year: FY26 “in line with its expectations5” with a link only → this year FY27 “in line with current market expectations6” with company-compiled consensus of £18.8m (range £17.0m to £20.0m) stated",
-    "span": "FY R Sep-25 → Sep-26"
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Site and land sale counts, last AGM: “Gleeson Homes is currently selling on 59 sites” and “having completed the sale of two small sites since the start of the financial year” → now no sales-site, site-opening or completed land sale number",
+    "span": "Sales sites at AGM Nov-21, Nov-22, Nov-24, Nov-25; land sales at Nov-21, Nov-22, Nov-23, Nov-25 → first AGM with neither"
    }
   ]
  }

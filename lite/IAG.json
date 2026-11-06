@@ -1,8 +1,8 @@
 {
  "ticker": "IAG",
- "v": "2026-10-21.b490",
+ "v": "2026-11-06.6c8e",
  "ccy": "GBX",
- "src": "Yahoo IAG.L weekly",
+ "src": "Yahoo IAG.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-21",
    413.9
+  ],
+  [
+   "2026-10-23",
+   409.1
+  ],
+  [
+   "2026-10-30",
+   410.1
   ]
  ],
  "marks": [
@@ -1245,38 +1253,47 @@
    "s": 0,
    "q": "We expect to deliver full year operating margin within our 12% to 15% target range; generate significant free cash flow; and maintain a strong and efficient balance sheet",
    "file": "20260731_IAG_IAG-Half-year-Financial-Report.md"
+  },
+  {
+   "d": "2026-11-06",
+   "doc": "Q3 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "We are on track to deliver a full year operating margin before exceptional items of at least 12%, within our through-the-cycle target range, and to deliver further returns to shareholders.",
+   "file": "20261106_IAG_IAG-3rd-Quarter-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-31",
-  "doc": "H1 R",
-  "file": "20260731_IAG_IAG-Half-year-Financial-Report.md",
-  "vs": "H1 R Aug-25 · Q1 R May-26 · FY R Feb-26",
+  "rns": "2026-11-06",
+  "doc": "Q3 R",
+  "file": "20261106_IAG_IAG-3rd-Quarter-Results.md",
+  "vs": "Q3 R Nov-25 · H1 R Jul-26 · Q1 R May-26",
   "lines": [
    {
     "sev": "red",
-    "type": "Number to words",
-    "text": "Free cash flow guide: FY R Feb-26 “Free cash flow after gross capex expected to be greater than €3 billion”, Q1 May-26 “for it to be less than the €3 billion guided at full year results in February” → now “Significant free cash flow generation”, no figure",
-    "span": "Numeric at Feb-26 and May-26 → first H1 without it after the cut"
+    "type": "Anchor softened",
+    "text": "FY26 margin guide: H1 Jul-26 “We expect to deliver full year operating margin within our 12% to 15% target range” → now a floor at the bottom of that range, “at least 12%”, while the headline says “full year operating margin guidance maintained”",
+    "span": "Range given Jul-26 → floor Nov-26; nine-month margin 13.5%"
    },
    {
     "sev": "amber",
-    "type": "Number to words",
-    "text": "IAG Loyalty: Q1 May-26 “Our capital-light Loyalty business grew its revenue by 10.0% and profit increased by 32.6% at a 20.1% margin” → H1 highlight now “IAG Loyalty continues to deliver high growth, high margin and excellent free cash flow”, no numbers",
-    "span": "Quantified in FY R Feb-26 and Q1 May-26 highlights"
+    "type": "Target dropped",
+    "text": "Fuel recovery: Q1 May-26 “We expect to recover around 60% of the higher fuel cost”, H1 Jul-26 “We continue to expect to recover around 60% of the higher fuel cost” → no recovery figure now, while the fuel guide rose from a top scenario of “€8.6 billion” to “€8.9 billion”",
+    "span": "Given May-26, Jul-26 → absent Nov-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "“On track to deliver another year of world-class operating margins, profits, free cash flow and shareholder returns” sits beside Q3 profit down: “decreased to €1,726 million (2025: €2,053 million)”, and a worse cost assumption: H1 “We expect non-fuel unit costs to be flat” → now “to increase by around 1%”",
+    "span": "Q3 R Nov-25 said “another year of growth in revenues, profit and shareholder returns”"
    },
    {
     "sev": "grey",
-    "type": "Number to words",
-    "text": "Excess cash return: FY R Feb-26 “Returning €1.5 billion of excess capital in the next 12 months”, Q1 May-26 “remaining €1 billion of excess cash returns through to the end of February 2027” → now “continue to execute our excess cash return”, amount and end-date not restated",
-    "span": "Feb-26, May-26 → Jul-26"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Profit guide re-quantified: Q1 May-26 “we expect our profit to be lower than originally anticipated at the beginning of the year”, no figure → now “We expect to deliver full year operating margin within our 12% to 15% target range”",
-    "span": "12–15% was a medium-term objective at H1 Aug-25; first time pinned to the current year"
+    "type": "Pushed out",
+    "text": "Aircraft deliveries: H1 Jul-26 “16 aircraft now expected to be delivered in 2026” → now “We now expect 12 aircraft to be delivered in 2026”, capex “around €3.4 billion” → “now expected to be €3.1 billion”",
+    "span": "Capex guide lower at each print: €3.6bn Feb-26, €3.5bn May-26, €3.4bn Jul-26, €3.1bn Nov-26"
    }
   ]
  }

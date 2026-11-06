@@ -1,6 +1,6 @@
 {
  "ticker": "LORD",
- "v": "2026-11-02.3dc8",
+ "v": "2026-11-06.b2e8",
  "ccy": "GBX",
  "src": "Yahoo LORD.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1265,38 +1265,47 @@
    "s": 0,
    "q": "Whilst full details of the recently announced UK government help to buy home scheme, and its potentially positive impacts on the Group's end markets, remain to be confirmed, the Board continues to expect the Group performance for the full year to be in line with market expectations.",
    "file": "20260930_LORD_Interim-Results.md"
+  },
+  {
+   "d": "2026-11-06",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -3,
+   "q": "market conditions in P&H have remained more challenging than previously anticipated, particularly at the start of the important winter heating season. As a result, the Board now anticipates that the Group’s Adjusted EBITDA1 for FY 2026 will be approximately £16 million.",
+   "file": "20261106_LORD_Trading-Update-&-Banking-Facility-Amendments.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-30",
-  "doc": "H1 R",
-  "file": "20260930_LORD_Interim-Results.md",
-  "vs": "H1 R Sep-25 · H1 TU Jul-26 · AGM Jun-26",
+  "rns": "2026-11-06",
+  "doc": "OPS",
+  "file": "20261106_LORD_Trading-Update-&-Banking-Facility-Amendments.md",
+  "vs": "TU Nov-25 · H1 R Sep-26 · H1 TU Jul-26 · back to YE-TU Jan-26",
   "lines": [
    {
     "sev": "red",
-    "type": "Number to words",
-    "text": "FY26 guide was “adjusted EBITDA for the full year will be £17m-£18m” (Jul-26) → now “the Board continues to expect the Group performance for the full year to be in line with market expectations”, no number",
-    "span": "Numeric range given two months earlier"
+    "type": "Went quiet",
+    "text": "Revenue guide: Jul-26 “the Board now expects full year revenue will be in the range of £475m-£495m” → now only “Adjusted EBITDA1 for FY 2026 will be approximately £16 million”, no revenue guide",
+    "span": "Revenue guided Nov-25 (£480m - £485m) and Jul-26; ten-month revenue is down 0.5% against FY25 of £473m, so the £475m floor looks at risk"
+   },
+   {
+    "sev": "red",
+    "type": "Pushed out",
+    "text": "Recovery timing: Sep-26 “We expect the recovery across our end markets to be more gradual than previously assumed.” → now “delaying the expected improvement in trading to later in FY 2027.”",
+    "span": "Jul-26 had “no indications of a significant market recovery in the second half of 2026”; no FY27 number given"
    },
    {
     "sev": "amber",
-    "type": "Demoted",
-    "text": "Divisional profit led H1-25 highlights: “divisional Adjusted EBITDA2 up 8.6% to £8.2m” for Merchanting → H1-26 divisional EBITDA only in the segment note (Merchanting £4.6m)",
-    "span": "H1-25 highlights → H1-26 notes"
+    "type": "Went quiet",
+    "text": "Net debt and liquidity: Sep-26 “Net debt at 30 June 2026 was £26.5 million” and “£32.4 million of available liquidity headroom” → now a section headed “Banking Facilities and Liquidity” with neither figure",
+    "span": "Given Jan-26, Jul-26 and Sep-26; the Nov-25 TU had none, but this update resets the covenants"
    },
    {
     "sev": "amber",
-    "type": "Restated",
-    "text": "H1-25 profit was “Group Adjusted EBITDA2 in line with pre-CHMM3 H1 2024 at £12.1m” → now shown as “Adjusted EBITDA1 before property gains of £8.4 million (H1 2025: £10.4 million)”",
-    "span": "Same period, new basis excluding property gains"
-   },
-   {
-    "sev": "grey",
-    "type": "Restated",
-    "text": "30 June 2026 net debt: “Net debt at the Period end was £29 million” (Jul-26 TU) → “Net debt3 of £26.5 million at 30 June 2026” (Sep-26)",
-    "span": "Same date, two months apart"
+    "type": "New caution",
+    "text": "Dividend lock: Sep-26 “intends to review distributions in light of trading performance, cash generation and progress in reducing net debt” → now “no dividends will be paid for so long as Group leverage remains above 3.5x bank calculated Adjusted EBITDA2”",
+    "span": "Covenants reset seven months after the Apr-26 refinancing; only the 3.0x level from 31 March 2028 is disclosed, not the thresholds before it"
    }
   ]
  }
