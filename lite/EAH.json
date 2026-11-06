@@ -1,8 +1,8 @@
 {
  "ticker": "EAH",
- "v": "2026-10-21.4bbb",
+ "v": "2026-11-06.59d1",
  "ccy": "GBX",
- "src": "Yahoo EAH.L weekly",
+ "src": "Yahoo EAH.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,14 @@
   [
    "2026-10-21",
    95.5
+  ],
+  [
+   "2026-10-23",
+   95.5
+  ],
+  [
+   "2026-10-30",
+   95.5
   ]
  ],
  "marks": [
@@ -1252,32 +1260,47 @@
    "s": 0,
    "q": "The Board is confident that the improved gross margin performance seen during FY2026 is sustainable, and that ECO will be able to deliver performance in FY2027 in-line with current market expectations for profitability.",
    "file": "20260715_EAH_Results-for-the-year-ended-31-March-2026.md"
+  },
+  {
+   "d": "2026-11-06",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "CUT",
+   "s": -2,
+   "q": "Gross margins are however expected to continue to increase, which combined with continued cost discipline, is expected to mitigate the impact of lower revenues.  Accordingly, the Board expects that adjusted EBITDA will be broadly in line with market consensus1.",
+   "file": "20261106_EAH_Trading-Update-and-Notice-of-Interim-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-15",
-  "doc": "FY R",
-  "file": "20260715_EAH_Results-for-the-year-ended-31-March-2026.md",
-  "vs": "FY R Jul-25 · H1 R Dec-25 · YE-TU Mar-26",
+  "rns": "2026-11-06",
+  "doc": "H1 TU",
+  "file": "20261106_EAH_Trading-Update-and-Notice-of-Interim-Results.md",
+  "vs": "H1 TU Sep-25 · FY R Jul-26 · back to Oct-24 · H1 R Dec-25 · YE-TU Mar-26",
   "lines": [
    {
-    "sev": "amber",
-    "type": "New caution",
-    "text": "Post-year-end China: Jul-25 “Revenue in USA and China out performing budgets” → now “trading and orders received have been in line with the prior year except in China where we have seen weaker performance driven by lower pork prices”",
-    "span": "Jul-25 → Jul-26"
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Jul-26: “in-line with current market expectations for profitability” → now adjusted EBITDA “broadly in line with market consensus” (£8.5m), with “a shortfall in group revenue compared to market consensus” (£89.6m)",
+    "span": "Plain in line at Sep-25, Dec-25 and Jul-26 → first “broadly in line” in the 5-year file record"
    },
    {
     "sev": "amber",
-    "type": "Pushed out",
-    "text": "ECOVAXXIN® MG: Dec-25 “first marketing approval in EU and US expected at the end of CY2027” → now “final regulatory submission anticipated in the first half of calendar year 2028”",
-    "span": "H1 R Dec-25 → FY R Jul-26"
+    "type": "Number to words",
+    "text": "China/Japan revenue: Sep-25 “the China/Japan segment (greater than 40% growth)” → now “a significant reduction in revenues from its China and Japan geographical segment”, no H1 figure or percentage",
+    "span": "Dec-25 gave £12.1m; only an implied c.£4m now, from £33m group revenue and 6% growth excluding China"
    },
    {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Next-year guide: Jul-25 outlook gave no FY26 anchor (“Trading continues to follow a seasonal pattern and remains second-half weighted”) → now “ECO will be able to deliver performance in FY2027 in-line with current market expectations for profitability”",
-    "span": "No next-year anchor in FY R Jul-23, Jul-24, Jul-25 → first time"
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "North America: Sep-25 “North America (greater than 25% growth)”, Jul-26 “US revenue outperformance offsetting reduced revenue in China” → now no North America or US trading comment, only “a strong performance in other regions”",
+    "span": "Named in Oct-24, Sep-25, Mar-26, Jul-26 → first gap"
+   },
+   {
+    "sev": "grey",
+    "type": "Skipped update",
+    "text": "H1 update came 1 Oct in 2024 and on 25 Sep in 2025 “ahead of its Annual General Meeting” → no update in the folder this year until 6 Nov, though Jul-26 said the AGM “is currently anticipated to be held in September”",
+    "span": "Oct-24, Sep-25 → about five weeks later than the usual timing"
    }
   ]
  }
