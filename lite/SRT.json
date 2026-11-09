@@ -1,6 +1,6 @@
 {
  "ticker": "SRT",
- "v": "2026-11-03.e1a1",
+ "v": "2026-11-09.46c2",
  "ccy": "GBX",
  "src": "Yahoo SRT.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1060,6 +1060,10 @@
   [
    "2026-10-30",
    68.0
+  ],
+  [
+   "2026-11-06",
+   67.5
   ]
  ],
  "marks": [
@@ -1272,38 +1276,47 @@
    "s": 0,
    "q": "Looking forward to the new financial year we are confident of existing market expectations which we expect to achieve through a combination of existing contract execution and commencement of new pending contracts and/or additional conversions from our growing £1.8bn pipeline may also occur during the period, however due to the challenge of precisely determining dates and timescales of new projects we will provide further market guidance once these become known.",
    "file": "20260723_SRT_FY2026-Trading-Update.md"
+  },
+  {
+   "d": "2026-11-09",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -1,
+   "q": "In the financial year ahead (FY27), we expect a similar pattern whereby H1 will be loss making due a heavy weighting of low margin infrastructure completions but balanced by higher margin SRT Tech Modules deliverables in H2.",
+   "file": "20261109_SRT_Final-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-23",
-  "doc": "YE-TU",
-  "file": "20260723_SRT_FY2026-Trading-Update.md",
-  "vs": "YE-TU Jul-25 · H1 R Mar-26 · Placing Apr-26",
+  "rns": "2026-11-09",
+  "doc": "FY R",
+  "file": "20261109_SRT_Final-Results.md",
+  "vs": "FY R Oct-25 · YE-TU Jul-26 · H1 R Mar-26",
   "lines": [
    {
-    "sev": "amber",
-    "type": "New caution",
-    "text": "Margin: no project-margin warning in Jul-25 or Mar-26 → now “Gross profit margin on one of our ongoing projects will be lower than expected in part due to increased costs arising from Middle East related supply chain disruptions”",
-    "span": "First flag of a project margin shortfall"
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "YE-TU Jul-26 on FY27: “we are confident of existing market expectations” → FY R Nov-26: “we entered FY2027 with confidence”, no reference to market expectations anywhere in the results",
+    "span": "Market-expectations anchor given at H1 R Mar-26 and YE-TU Jul-26 → dropped"
    },
    {
     "sev": "amber",
-    "type": "Went quiet",
-    "text": "Order book: Jul-25 “System contracts with an aggregate of £320m now active and being implemented”; Mar-26 “£350m active contract order book from five active sovereign customers” → this update gives no order book figure, only the “£1.8bn pipeline”",
-    "span": "Given Jul-25, Mar-26, Apr-26 → missing now"
+    "type": "New caution",
+    "text": "First flag of a loss-making half: FY27 “H1 will be loss making due a heavy weighting of low margin infrastructure completions”, profit carried by H2",
+    "span": "Not in FY R Oct-25 or any earlier results; H1 FY26 was profitable"
    },
    {
     "sev": "grey",
     "type": "Restated",
-    "text": "Cash headline redefined: Jul-25 table “Gross cash balance (excluding restricted cash)” £4.2m → now “Gross cash balance (including restricted cash)” £57m, with FY25 shown as £9.9m; unrestricted £30m only in a footnote",
-    "span": "Jul-25 → Jul-26"
+    "text": "FY26 revenue in YE-TU Jul-26 estimated at £116m → audited “46% increase in revenues to £114.1m” (PBT £10m estimate → £10.7m)",
+    "span": "YE-TU Jul-26 → FY R Nov-26"
    },
    {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Next-year anchor: Jul-25 gave no FY26 view beyond “Financial guidance reintroduced by Cavendish” → now FY27 “we are confident of existing market expectations”",
-    "span": "First explicit next-year expectations anchor in a YE-TU in the window"
+    "sev": "grey",
+    "type": "Went quiet",
+    "text": "Post-period cash: FY R Oct-25 headline “Balance at 30th September 2025 of £13.6m.” → no post year-end cash figure in FY R Nov-26",
+    "span": "FY R Oct-25 financial summary → absent"
    }
   ]
  }

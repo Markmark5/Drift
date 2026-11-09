@@ -1,8 +1,8 @@
 {
  "ticker": "SEE",
- "v": "2026-10-21.17dd",
+ "v": "2026-11-09.2560",
  "ccy": "GBX",
- "src": "Yahoo SEE.L weekly",
+ "src": "Yahoo SEE.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,18 @@
   [
    "2026-10-21",
    3.66
+  ],
+  [
+   "2026-10-23",
+   3.66
+  ],
+  [
+   "2026-10-30",
+   3.71
+  ],
+  [
+   "2026-11-06",
+   3.845
   ]
  ],
  "marks": [
@@ -1361,32 +1373,47 @@
    "s": 0,
    "q": "In the meantime, the Company continues to perform in line with expectations and with significant momentum.",
    "file": "20260923_SEE_Interim-extension-of-convertible-loan-notes.md"
+  },
+  {
+   "d": "2026-11-09",
+   "doc": "OPS",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "We expect this run rate to continue as OEMs build GSR-compliant vehicles at scale, underpinning the ongoing royalty revenue from our Automotive business.",
+   "file": "20261109_SEE_Q1-FY2027-Quarterly-KPIs.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-23",
+  "rns": "2026-11-09",
   "doc": "OPS",
-  "file": "20260923_SEE_Interim-extension-of-convertible-loan-notes.md",
-  "vs": "CLN update Jul-26 · prev FY TU Aug-26 · H1 R Mar-26",
+  "file": "20261109_SEE_Q1-FY2027-Quarterly-KPIs.md",
+  "vs": "Q1 KPIs Nov-25 · previous RNS Sep-26 · KPI docs Feb/May/Aug-26",
   "lines": [
+   {
+    "sev": "red",
+    "type": "Went quiet",
+    "text": "Financial guide in every recent KPI update: Nov-25 “We remain on track to achieve our cashflow break-even run rate target by the end of this calendar year.”, Feb-26 “We still expect to achieve positive adjusted EBITDA in Q3 and for the second half of FY2026”, Sep-26 “the Company continues to perform in line with expectations and with significant momentum” → now no EBITDA, cash or expectations statement for FY2027, only unit volumes",
+    "span": "Nov-25, Feb-26, May-26 KPIs and Sep-26 → first KPI update with no financial guide"
+   },
    {
     "sev": "amber",
     "type": "Pushed out",
-    "text": "Convertible note: Mar-26 “expects to complete the process by the end of FY2026” → Jul-26 “the process will go beyond the end of FY2026” → Sep-26 interim extension “for the period to 30 November 2026”",
-    "span": "Mar-26 → Jul-26 → Sep-26: third slip"
+    "text": "Convertible loan notes: Aug-26 “The Company has agreed indicative terms and is in an exclusive negotiation period to refinance” the notes “before its maturity on 4 October 2026” → Sep-26 “The interim extension is for the period to 30 November 2026.” → now “The Company is continuing work on a longer-term extension and refinancing options for the existing Convertible Loan Notes with Magna International Inc.”",
+    "span": "Aug-26 → Sep-26 → Nov-26, three weeks before the extended maturity"
    },
    {
     "sev": "amber",
-    "type": "Target dropped",
-    "text": "Aug-26 “in an exclusive negotiation period to refinance the Convertible Loan Note obligation before its maturity on 4 October 2026” → Sep-26 refinancing set aside, extension preferred “when compared to the presently proposed refinance debt package”",
-    "span": "Jul-26 “well ahead of the October maturity date” not met"
+    "type": "Wording vs number",
+    "text": "Highlights say “maintaining a structurally higher run rate” while production was “down 7% from the previous quarter’s record level” (1,963,046 vs 2,112,855) and Guardian unit sales fell to 1,058 from 3,058 in Q4 FY2026",
+    "span": "Q4 FY2026 → Q1 FY2027"
    },
    {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "FY27 anchor: Aug-26 only “remains focused on sustaining that momentum through FY2027” → Sep-26 “the Company continues to perform in line with expectations and with significant momentum” (no consensus figure)",
-    "span": "Aug-26 → Sep-26"
+    "sev": "grey",
+    "type": "Went quiet",
+    "text": "Royalty revenue: May-26 “Q3 FY2026 Automotive royalty revenue has exceeded total H1 FY2026 Automotive royalty revenue”, Aug-26 royalty revenue “increased by 135% to US$33.9m” → now only “underpinning the ongoing royalty revenue from our Automotive business”, no royalty figure or comparison",
+    "span": "May-26, Aug-26 → Nov-26"
    }
   ]
  }

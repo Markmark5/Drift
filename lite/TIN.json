@@ -1,6 +1,6 @@
 {
  "ticker": "TIN",
- "v": "2026-10-20.0e36",
+ "v": "2026-11-09.bcd2",
  "ccy": "GBX",
  "src": "ShareScope weekly snapshots",
  "adj": [],
@@ -136,6 +136,18 @@
   [
    "2026-10-16",
    102.0
+  ],
+  [
+   "2026-10-23",
+   70.0
+  ],
+  [
+   "2026-10-30",
+   68.5
+  ],
+  [
+   "2026-11-06",
+   62.0
   ]
  ],
  "marks": [
@@ -165,20 +177,50 @@
    "s": 0,
    "q": "The near-term priority remains to complete the project financing package for South Crofty, which is well advanced. Alongside that, dewatering continues towards the 400-level which is targeted to be reached in the first half of 2027, with shaft refurbishment and mine dewatering also scheduled for completion in that period.",
    "file": "20260924_TIN_Unaudited-interim-results-for-the-six-months-....md"
+  },
+  {
+   "d": "2026-10-12",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Refurbishment of NCK shaft continues, with the rate of progress increasing over recent months. Dewatering and shaft refurbishment are tracking to reach 400-level (approximately 730 metres below surface) in H1 2027.",
+   "file": "20261012_TIN_OPERATIONS-UPDATE-FOR-THE-SOUTH-CROFTY-TIN-PR....md"
+  },
+  {
+   "d": "2026-11-09",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Dewatering continued through the New Cook’s Kitchen (“NCK”) shaft, reaching more than 400 metres below surface by mid-October, with the rate of shaft refurbishment increasing; the 400-level (approximately 730 metres below surface) is targeted to be reached in H1 2027 as previously guided",
+   "file": "20261109_TIN_Q3-ACTIVITIES-UPDATE.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-14",
+  "rns": "2026-11-09",
   "doc": "OPS",
-  "file": "20261014_TIN_Capital-Access-Window-–-Trading-Halt.md",
-  "vs": "Fundraise RNS Jan-25 · OPS Oct-26 · H1 R Sep-26 · FY R Apr-26 · Q3 Nov-25",
+  "file": "20261109_TIN_Q3-ACTIVITIES-UPDATE.md",
+  "vs": "Q2 activities update Aug-26 · H1 R Sep-26 · placing May-26 · fundraise Oct-26",
   "lines": [
    {
     "sev": "amber",
+    "type": "Target dropped",
+    "text": "FID: May-26 “we expect to be fully funded and to announce the final investment decision for the South Crofty tin project this summer”; Aug-26 “ahead of a targeted final investment decision” → Q3 update makes no mention of FID or its timing, summer target passed",
+    "span": "FID named in Apr-26, May-26, Aug-26, Sep-26 → first gap"
+   },
+   {
+    "sev": "grey",
     "type": "Went quiet",
-    "text": "FID timing: Q3 Nov-25 “advance towards a formal final investment decision in 2026”, FY R Apr-26 “final investment decision currently targeted for 2026” → H1 R Sep-26 and this RNS give no FID date, only “to complete project financing and progress the development of the South Crofty tin mine towards first production in mid-2028”",
-    "span": "2026 FID given Nov-25, Apr-26 → no date since Sep-26; first-production guide mid-2028 unchanged"
+    "text": "Escrowed bond cash: Aug-26 “excluding the cash held in escrow of US$215.8 million” → now “excluding the cash held in escrow following the placement of the US$210 million senior secured bond”, no amount",
+    "span": "Amount given in Q2 update and H1 R (Sep-26)"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "New offtake: “a subscription by Glencore for US$15 million alongside a six-year offtake agreement for 100% of the tin concentrate produced at South Crofty”",
+    "span": "First offtake named in a quarterly update"
    }
   ]
  }

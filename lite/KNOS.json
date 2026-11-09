@@ -1,8 +1,8 @@
 {
  "ticker": "KNOS",
- "v": "2026-10-21.c7f4",
+ "v": "2026-11-09.6a6d",
  "ccy": "GBX",
- "src": "Yahoo KNOS.L weekly",
+ "src": "Yahoo KNOS.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,18 @@
   [
    "2026-10-21",
    1302.0
+  ],
+  [
+   "2026-10-23",
+   1314.0
+  ],
+  [
+   "2026-10-30",
+   1287.0
+  ],
+  [
+   "2026-11-06",
+   1254.0
   ]
  ],
  "marks": [
@@ -1253,26 +1265,47 @@
    "s": 2,
    "q": "As a consequence, the Board now anticipates delivering revenue and adjusted PBT for the year ending 31 March 2027 comfortably ahead of current market expectations*.",
    "file": "20260818_KNOS_Trading-Update.md"
+  },
+  {
+   "d": "2026-11-09",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Following the strong performance in FY26 and H1 27, we expect further growth in revenue and adjusted profit before tax in the second half of FY27, in line with current market expectations.",
+   "file": "20261109_KNOS_Interim-results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-18",
-  "doc": "H1 TU",
-  "file": "20260818_KNOS_Trading-Update.md",
-  "vs": "H1 TU Sep-25 · back to Sep-24 · FY R May-26 · YE-TU Apr-26",
+  "rns": "2026-11-09",
+  "doc": "H1 R",
+  "file": "20261109_KNOS_Interim-results.md",
+  "vs": "H1 R Nov-25 · H1 TU Aug-26 · FY R May-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Target dropped",
-    "text": "ARR targets: May-26 “on track to reach our ARR targets of £100 million by the end of 2026 and £200 million by the end of 2030” → Aug-26 TU has no ARR figure and does not mention either target (Sep-25 TU: “passing the $100m Annual Recurring Revenue milestone in July”)",
-    "span": "ARR in Sep-24 and Sep-25 TUs, Apr-26, May-26 → none now"
+    "type": "Pushed out",
+    "text": "Margin recovery: FY R May-26 “As we replace temporary contractors with full-time employees over the course of the year, we anticipate clear margin improvement” → now “we expect margins to normalise as we replace third parties with employed staff as revenue growth moderates”, no FY27 timing; contractors 8% of headcount (H1 26: 4%), Digital Services gross margin 31.9%",
+    "span": "Nov-25 said displace costs “during FY27”; May-26 “over the course of the year” → Nov-26 tied to growth moderating"
+   },
+   {
+    "sev": "amber",
+    "type": "Restated",
+    "text": "Bookings/backlog redefined for Digital Services (total contract value): H1 26 bookings was “bookings rising by 27% to £227.9 million” → now “Group bookings grew 27% to £402.3 million (H1 26: £317.0 million)”; H1 26 backlog £396.9m → £679.3m. Old-basis figures still given in the body (£304.7m bookings, £472.6m backlog)",
+    "span": "Nov-25 → Nov-26"
+   },
+   {
+    "sev": "grey",
+    "type": "New caution",
+    "text": "Defence: first mention that “the delayed publication of the Defence Investment Plan has slowed the pace of procurement”, though defence revenue rose 44% to £15.3m (now shown as a separate sector)",
+    "span": "Not in Nov-25 or May-26"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Profit anchor upgraded: Sep-25 “We are maintaining a prudent outlook and anticipate delivering Adjusted PBT in line with current consensus forecasts*.” → Aug-26 revenue and adjusted PBT “comfortably ahead of current market expectations*” (consensus £509.3m / £77.1m)",
-    "span": "Sep-24 and Sep-25 TUs: PBT in line → Aug-26 ahead"
+    "text": "AI revenue quantified at the half: Nov-25 only “AI-related revenue grew by 6% versus H1 25” → now “Revenues for AI and data-related projects increased 40% to £28.5 million”",
+    "span": "H1 Nov-25 % only → Nov-26 £ figure"
    }
   ]
  }

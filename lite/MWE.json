@@ -1,6 +1,6 @@
 {
  "ticker": "MWE",
- "v": "2026-11-03.3447",
+ "v": "2026-11-09.ee32",
  "ccy": "GBX",
  "src": "Yahoo MWE.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1060,6 +1060,10 @@
   [
    "2026-10-30",
    63.0
+  ],
+  [
+   "2026-11-06",
+   63.5
   ]
  ],
  "marks": [
@@ -1253,38 +1257,47 @@
    "s": -1,
    "q": "The Antenna division has been extremely successful in securing a series of new orders in total worth approximately $6 million with the vast majority due over the next 18 months; these contracts were won in April 2026, which will result in a second-half weighted revenue split this year.",
    "file": "20260817_MWE_Interim-results.md"
+  },
+  {
+   "d": "2026-11-09",
+   "doc": "Q3 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Each of our three divisions is on track to contribute to a good result for the year.",
+   "file": "20261109_MWE_Q3-2026-Financial-Results-and-Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-17",
-  "doc": "H1 R",
-  "file": "20260817_MWE_Interim-results.md",
-  "vs": "H1 R Aug-25 · back to Aug-24 · Q1 R May-26 · Q3 R Nov-25",
+  "rns": "2026-11-09",
+  "doc": "Q3 R",
+  "file": "20261109_MWE_Q3-2026-Financial-Results-and-Trading-Update.md",
+  "vs": "Q3 R Nov-25 · H1 R Aug-26 · previous RNS Oct/Nov-26 · FY R Mar-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "New caution",
-    "text": "First H2-weighting flag: Antenna contracts won in April “which will result in a second-half weighted revenue split this year” (H1-25: “providing excellent visibility for a successful year ahead”)",
-    "span": "No second-half weighting flagged in any earlier MWE RNS"
-   },
-   {
-    "sev": "amber",
     "type": "Wording vs number",
-    "text": "Antenna: H1-25 “with sales up by 23% during the period” → H1-26 “H1 revenues were 20% below the prior year comparison”, presented under “The Antenna division is well positioned following the award of a series of significant defence contracts in April 2026.”",
-    "span": "H1-25 +23% → H1-26 −20%"
+    "text": "MTI Summit headed “good performance” but “Revenue grew 12%, while a lower-margin sales mix meant operating profit was 12% below the same period in the prior year.” → was H1-26 “MTI Summit delivered another strong performance, with sales increasing 18% and operating profit rising 46% compared with H1 2025”, implying a sharp Q3 profit fall in the division",
+    "span": "H1-26 +46% → 9M-26 −12%"
    },
    {
     "sev": "amber",
     "type": "Demoted",
-    "text": "Operating cash flow: H1-25 headline “net cash provided by operating activities, up 66% to $2.5m” → H1-26 highlights say only “reflecting high cashflow conversion rate”; the cash flow statement shows 2,344 vs 2,533 ($k), down c.7%",
-    "span": "Headline at H1-25 and Q3-25 → not in H1-26 highlights"
+    "text": "Operating profit dropped from the highlights: Q3-25 “21% improvement in profit from operations to $4.2m”, H1-26 “21% increase in operating profit to US$3.0m” → now highlights lead with “Profit before tax up 10% to $4.3m”; profit from operations of $4,549k (+8%) only in the statements, implying Q3 alone of about $1.5m vs about $1.7m a year earlier",
+    "span": "Headline at Nov-25 and Aug-26 → not in highlights Nov-26"
+   },
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "First mention of a supply problem: “A delay in supplies from a major, long-term European supplier has softened revenue in recent months and created a substantial order backlog”",
+    "span": "Not in any earlier RNS"
    },
    {
     "sev": "grey",
-    "type": "Number to words",
-    "text": "5G backhaul: H1-25 “Sales of the 5G backhaul solution rose significantly by 40%” → H1-26 “E-band 5G backhaul solution sales in India have been slower compared to previous periods”, no figure",
-    "span": "Headline % at H1-25 → words only"
+    "type": "Went quiet",
+    "text": "Defence share of sales: Nov-25 “now accounting for 48% of total sales”, Mar-26 “the defence market being the major area of growth representing 49%” → not given at H1-26 or now",
+    "span": "Nov-25, Mar-26 → gap at Aug-26 and Nov-26"
    }
   ]
  }
