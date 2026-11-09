@@ -1,8 +1,8 @@
 {
  "ticker": "DSW",
- "v": "2026-10-21.d9a0",
+ "v": "2026-11-09.00c6",
  "ccy": "GBX",
- "src": "AlphaVantage DSW.LON weekly",
+ "src": "AlphaVantage DSW.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1020,6 +1020,18 @@
   [
    "2026-10-20",
    45.5
+  ],
+  [
+   "2026-10-23",
+   45.5
+  ],
+  [
+   "2026-10-30",
+   45.5
+  ],
+  [
+   "2026-11-06",
+   45.5
   ]
  ],
  "marks": [
@@ -1211,38 +1223,56 @@
    "s": 0,
    "q": "The Group is performing well and trading in line with Board expectations, with a growing pipeline of opportunities to further scale the platform.",
    "file": "20260728_DSW_Audited-Final-Results.md"
+  },
+  {
+   "d": "2026-11-09",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "We are encouraged by the resilience we continue to see across the Group and remain cautiously optimistic about delivering a full-year performance in line with market expectations.",
+   "file": "20261109_DSW_Half-Year-Trading-Update-and-Results-Notice.md"
+  },
+  {
+   "d": "2026-11-09",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "We are encouraged by the resilience we continue to see across the Group and remain cautiously optimistic about delivering a full-year performance in line with market expectations.",
+   "file": "20261109_DSW_Half-Year-Trading-Update-and-Notice-of-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-28",
-  "doc": "FY R",
-  "file": "20260728_DSW_Audited-Final-Results.md",
-  "vs": "FY R Jul-25 · back to Jul-23/Jul-24 · YE-TU May-26",
+  "rns": "2026-11-09",
+  "doc": "H1 TU",
+  "file": "20261109_DSW_Half-Year-Trading-Update-and-Notice-of-Results.md",
+  "vs": "H1 TU Nov-25 · FY R Jul-26 · back to H1 TU Nov-24",
   "lines": [
    {
     "sev": "amber",
-    "type": "Restated",
-    "text": "FY26 Adjusted PBT: May-26 TU “Adjusted Profit Before Tax of c.£1.4m” → results “Adjusted Profit before Tax decreased to £1.3m (FY25: £1.6m)”; net cash also “net cash of £0.2m at 31 March 2026” → “with net cash of £0.1m”",
-    "span": "Same period, May-26 → Jul-26"
+    "type": "Went quiet",
+    "text": "M&A share of income: Nov-25 “M&A as a percentage of Network revenue at 32% in the Period”, Jul-26 “which now accounts for only 31% of total income” → no M&A share given now, though H1 growth is credited to “strong M&A activity”",
+    "span": "Given at Nov-25 and Jul-26 → first gap"
    },
    {
     "sev": "amber",
-    "type": "Restated",
-    "text": "FY25 Adjusted PBT: Jul-25 “Adjusted Profit before Tax was almost tripled to £1.4m (FY24: £0.5m)” → now shown as £1.6m (1,572) after the definition was widened to add back “amortisation of intangible assets arising on acquisition”",
-    "span": "Jul-25 → Jul-26 (redefinition)"
-   },
-   {
-    "sev": "amber",
-    "type": "New caution",
-    "text": "Outlook “The Board looks forward to FY26 with optimism” → “The Board looks forward to FY27 with cautious optimism”",
-    "span": "Plain “optimism” in Jul-23, Jul-24 (CEO), Jul-25 → first qualifier"
+    "type": "Wording vs number",
+    "text": "Fee earners: Nov-25 “Fee Earners increased by 8 to 144 at 30 September 2025” → now “Fee Earners remained flat at 135 (31 March 2026: 135)”, down 9 year on year but compared only with March, under a “Strong trading” headline",
+    "span": "Sep-25 144 → Sep-26 135"
    },
    {
     "sev": "grey",
-    "type": "Demoted",
-    "text": "Network Revenue and Fee Earners were headline highlights (Jul-25 “Network Revenue4 increased by 62% to a record £25.8m”) → now only in the CEO review: “Network Revenue was £22.8m (FY25: £25.8m)” and fee earners “remained broadly stable at 135 (FY25: 136)”",
-    "span": "In highlights Jul-24, Jul-25 → dropped Jul-26"
+    "type": "Went quiet",
+    "text": "DR Solicitors headcount: Nov-25 “Number of Fee Earners using the DR Solicitors platform increased to 26 at the half year end”, Jul-26 “Consultant headcount increased by 48% to 31” → no DR consultant count now, only “20% organic growth in DR Solicitors”",
+    "span": "Given at Nov-25 and Jul-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Market anchor back: Nov-25 H1 TU only “in line with management expectations”, Jul-26 “trading in line with Board expectations” → now “remain cautiously optimistic about delivering a full-year performance in line with market expectations”",
+    "span": "First market-expectations anchor since May-26"
    }
   ]
  }
