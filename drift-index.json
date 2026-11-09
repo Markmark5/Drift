@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05",
+  "updated": "2026-11-09",
   "tickers": [
     {
       "ticker": "STAF",
@@ -2721,37 +2721,19 @@
       "ticker": "KNOS",
       "company": "Kainos Group",
       "kind": "ticker",
-      "direction": "up",
-      "headline": "Guide raised on revenue and profit together — a first in this record — while retention stays withheld and margin sits flat.",
-      "trigger": "Green-shoot mirror 2-of-3 (numbers & guide, language). Disclosure fires red against the call.",
-      "alert": true,
-      "fired": 3,
+      "direction": "watch",
+      "headline": "The numbers delivered everything August promised — revenue +37%, profit +30% — and the language, the retention score and the growth rate all stopped improving at once.",
+      "trigger": "Green-shoot 1-of-3 and deterioration 1-of-3 — mixed directions, no alert. Numbers & guide green, Disclosure red.",
+      "alert": false,
+      "fired": 2,
       "fired_of": 3,
-      "lights": "ggr",
-      "rns_type": "Trading Update",
-      "rns_date": "2026-08-18",
-      "build_date": "2026-08-18",
-      "spec_version": "5.3e",
-      "next_test": "H1 FY27 results, 9 Nov 2026 — first hard figures against this guide, the H1 margin, the contractor count, and whether retention returns as a number.",
+      "lights": "g-r",
+      "rns_type": "Interim results",
+      "rns_date": "2026-11-09",
+      "build_date": "2026-11-09",
+      "spec_version": "5.8",
+      "next_test": "Apr-27 YE-TU — contractors below 8% of headcount with the H2 FY27 margin recovery quantified; retention re-published as a number.",
       "url": "KNOS.html",
-      "trend": {
-        "mode": "growth",
-        "cells": "gg-",
-        "rows": [
-          {
-            "m": "REV",
-            "gap": 10.6
-          },
-          {
-            "m": "EBITDA",
-            "gap": 16.2
-          },
-          {
-            "m": "PBT",
-            "gap": null
-          }
-        ]
-      },
       "grid": {
         "labels": [
           "R1",
@@ -2772,14 +2754,40 @@
           "H1 27"
         ],
         "rows": [
-          "--rrrrgg-",
-          "-gagaggga",
-          "-ggggggg-",
+          "--rrrrggg",
+          "-gagagggg",
+          "-gggggggg",
           "-r-r-a-a-",
-          "--agarra-"
+          "--agarraa"
         ],
-        "note": "Ranks 1-5 at half grain; rightmost cell is the Aug-26 trading update, which quantifies nothing."
-      }
+        "note": "Ranks 1-5 at half grain, previous bookings/backlog methodology throughout; rightmost cell is the 9-Nov-26 interim results."
+      },
+      "prev": {
+        "direction": "up",
+        "fired": 3,
+        "lights": "ggr",
+        "rns_date": "2026-08-18",
+        "rns_type": "Trading Update"
+      },
+      "trend": {
+        "mode": "share",
+        "cells": "aa-",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": 1.1
+          },
+          {
+            "m": "EBITDA",
+            "gap": -0.9
+          },
+          {
+            "m": "PBT",
+            "gap": null
+          }
+        ]
+      },
+      "chart": "charts/KNOS.json?v=2026-11-09.d8dc"
     },
     {
       "ticker": "CHRT",
