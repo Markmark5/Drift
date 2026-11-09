@@ -1,22 +1,10 @@
 {
  "ticker": "GBG",
- "v": "2026-10-20.6055",
+ "v": "2026-11-09.bbda",
  "ccy": "GBX",
- "src": "AlphaVantage GBG.LON weekly",
+ "src": "AlphaVantage GBG.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-15",
-   920.5
-  ],
-  [
-   "2021-10-22",
-   914.5
-  ],
-  [
-   "2021-10-29",
-   886.5
-  ],
   [
    "2021-11-05",
    888.0
@@ -1060,18 +1048,21 @@
   [
    "2026-10-19",
    158.0
+  ],
+  [
+   "2026-10-23",
+   156.0
+  ],
+  [
+   "2026-10-30",
+   161.6
+  ],
+  [
+   "2026-11-06",
+   158.8
   ]
  ],
  "marks": [
-  {
-   "d": "2021-10-21",
-   "doc": "H1 TU",
-   "fy": "FY22",
-   "g": "flat",
-   "s": 0,
-   "q": "As a result, the Board can confirm that the outlook for the second half of FY22 remains in line with its expectations.",
-   "file": "20211021_GBG_Half-Year-Trading-Update.md"
-  },
   {
    "d": "2021-11-18",
    "doc": "Q3 TU",

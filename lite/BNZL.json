@@ -1,22 +1,10 @@
 {
  "ticker": "BNZL",
- "v": "2026-10-20.1fab",
+ "v": "2026-11-09.4dc7",
  "ccy": "GBX",
- "src": "AlphaVantage BNZL.LON weekly",
+ "src": "AlphaVantage BNZL.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-15",
-   2521.0
-  ],
-  [
-   "2021-10-22",
-   2585.0
-  ],
-  [
-   "2021-10-29",
-   2702.0
-  ],
   [
    "2021-11-05",
    2732.0
@@ -1060,18 +1048,21 @@
   [
    "2026-10-19",
    2810.0
+  ],
+  [
+   "2026-10-23",
+   2784.0
+  ],
+  [
+   "2026-10-30",
+   2850.0
+  ],
+  [
+   "2026-11-06",
+   2924.0
   ]
  ],
  "marks": [
-  {
-   "d": "2021-10-26",
-   "doc": "Q3 TU",
-   "fy": "FY21",
-   "g": "flat",
-   "s": 0,
-   "q": "Margin expectations for the year are unchanged, with adjusted operating margin expected to be only slightly ahead of historical levels.",
-   "file": "20211026_BNZL_Trading-Statement.md"
-  },
   {
    "d": "2021-12-15",
    "doc": "YE-TU",
