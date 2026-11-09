@@ -140,6 +140,10 @@ td.bs-col{background:#fcfbf8 !important}
 td.bs-col .val{font-weight:800}
 th.bs-col{font-weight:800}
 .hl{background:#fff6d9 !important}
+tr.nbrow td{background:#fbfaf7;color:var(--mute);font-size:11.5px;padding:5px 4px;border-top:1px dashed var(--line)}
+tr.nbrow td.lab{font-style:italic}
+tr.nbrow .nval{font-weight:600;font-size:12px;color:var(--mute)}
+tr.nbrow .nnote{font-size:10px;color:var(--muted);margin-left:4px}
 
 /* drawers — two tiers */
 details.d1{border:1px solid #c6c2b9;background:var(--paper);border-radius:10px;margin-top:16px;max-width:1500px}
@@ -403,7 +407,7 @@ table.mini thead th{background:#efedE7;font-size:10px;text-transform:uppercase;l
 <!-- §2 GRID -->
 <div class="sec-wrap">
  <h2 class="sec">§2 · Unified Forward Grid</h2>
- <p class="subnote">5 ranks = 5 grid blocks · 9 half columns, H1 FY23 → H1 FY27, full lookback. Bookings and backlog scored on the previous methodology throughout (ʳ at H1 27 — the new total-contract-value basis exists for three periods only). Click a period header to highlight every column of that type.</p>
+ <p class="subnote">5 ranks = 5 grid blocks · 9 half columns, H1 FY23 → H1 FY27, full lookback. Bookings and backlog scored on the previous methodology throughout (ʳ at H1 27); the new total-contract-value basis runs as a muted, unscored tracking row beneath each, filled at every future print so both series stay continuous. Click a period header to highlight every column of that type.</p>
  <div class="gridwrap">
   <table class="grid" id="fg">
    <colgroup><col class="lab"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"></colgroup>
@@ -428,6 +432,11 @@ table.mini thead th{background:#efedE7;font-size:10px;text-transform:uppercase;l
      <td><span class="val">227.9 (+27.0%)</span><span class="delta">🟢↗</span></td>
      <td><span class="val">277.4† (+36.7%)</span><span class="delta">🟢↗</span></td>
      <td class="bs-col"><span class="val">304.7ʳ (+33.7%)</span><span class="delta">🟢↗</span></td></tr>
+    <tr class="nbrow"><td class="lab">new basis (TCV) · unscored</td>
+     <td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td>
+     <td><span class="nval">317.0</span></td>
+     <td><span class="nval">277.9†</span></td>
+     <td class="bs-col"><span class="nval">402.3</span><span class="nnote">(+27%)</span></td></tr>
     <tr class="agg"><td class="lab">FY aggregate</td>
      <td colspan="2"><span class="aval">427.8</span><span class="anote">+22.3%</span></td>
      <td colspan="2"><span class="aval">424.5</span><span class="anote">−0.8%</span></td>
@@ -447,6 +456,11 @@ table.mini thead th{background:#efedE7;font-size:10px;text-transform:uppercase;l
      <td><span class="val">396.9</span><span class="delta">+28.7 (+7.8%) 🟢↗</span></td>
      <td><span class="val">433.9</span><span class="delta">+37.0 (+9.3%) 🟢↗</span></td>
      <td class="bs-col"><span class="val">472.6ʳ</span><span class="delta">+38.7 (+8.9%) 🟢↗</span></td></tr>
+    <tr class="nbrow"><td class="lab">new basis (TCV) · unscored</td>
+     <td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td>
+     <td><span class="nval">679.3</span></td>
+     <td><span class="nval">716.6</span></td>
+     <td class="bs-col"><span class="nval">853.0</span><span class="nnote">(+26%)</span></td></tr>
     <tr class="agg"><td class="lab">FY-end position</td>
      <td colspan="2"><span class="aval">322.9</span><span class="anote">+24.3%</span></td>
      <td colspan="2"><span class="aval">357.1</span><span class="anote">+10.6%</span></td>
@@ -569,7 +583,7 @@ table.mini thead th{background:#efedE7;font-size:10px;text-transform:uppercase;l
    "-r-r-a-a-",
    "--agarraa"
   ],
-  "note": "Ranks 1-5 at half grain, previous bookings/backlog methodology throughout; rightmost cell is the 9-Nov-26 interim results."
+  "note": "Ranks 1-5 at half grain, previous bookings/backlog methodology throughout (new TCV basis tracked unscored); rightmost cell is the 9-Nov-26 interim results."
  },
  "prev": {
   "direction": "up",
@@ -614,7 +628,7 @@ table.mini thead th{background:#efedE7;font-size:10px;text-transform:uppercase;l
      <p><b>Comparison basis per rank.</b> R1 flow → YEAR-ON-YEAR, banded Δrate as the score. R2/R3 snapshot → SEQUENTIAL at the six-monthly disclosure grain; YEAR-ON-YEAR on the aggregate row only. R4/R5 rate → the pp move YEAR-ON-YEAR, directly. Band ±2.0pp. All ranks render on the default H1/H2† spine; B.2a not invoked; no qualitative ladder.</p>
      <p><b>Display basis.</b> H-grain flow cells display YEAR-ON-YEAR; SEQUENTIAL is computed and retained here, never displayed: H1 27 vs H2 26† — revenue +14.4%, adjusted PBT +19.2%, bookings +9.8%, margin +0.62pp.</p>
      <p><b>Derivations †, workings once.</b> H2† = FY − H1 on exact £000s from the primary statements (bookings in £m as printed pre-FY26). Second routes: H2 FY25 bookings derived £202.9m = company-printed exact ✓; the H1 27 adjusted-PBT bridge from the segment note sums to +£9.712m against the printed change +£9.712m — exact ✓. H2 FY25 bookings are company-printed, not derived (no †). Zero-crossing guard: not fired; no ◊ or ‡ cells.</p>
-     <p><b>Restatements ʳ and basis.</b> (1) <b>Bookings/backlog methodology change at H1 27</b> — Digital Services moves from statements-of-work drawn to total contract value. Both bases printed for H1 27, FY26 and H1 26; no impact on Workday divisions or revenue recognition. The scored series stays on the previous basis (full-record continuity; old-basis FY26 ties to the approved grid exactly); splicing the new basis would manufacture a +97% backlog green on a definitional change. Both H1 27 cells carry ʳ. (2) DS sectoral revenues re-presented to split defence from public (footnote 4) — disclosure expansion, start 09-Nov-26; no group figure touched. (3) AI &amp; data H1 26 restated £15.3m → £20.4m (footnote 7) — later governs earlier; Drift cell corrected. (4) H1 26 cash-flow RDEC presentation restated (footnote 9) — outside all ranked series. (5) Davis Pier (Sep-25) now annualised; DS organic 54% vs 57% reported, group 36% organic vs 37%.</p>
+     <p><b>Restatements ʳ and basis.</b> (1) <b>Bookings/backlog methodology change at H1 27</b> — Digital Services moves from statements-of-work drawn to total contract value. Both bases printed for H1 27, FY26 and H1 26; no impact on Workday divisions or revenue recognition. The scored series stays on the previous basis (full-record continuity; old-basis FY26 ties to the approved grid exactly); splicing the new basis would manufacture a +97% backlog green on a definitional change. Both H1 27 cells carry ʳ. The new basis renders as an unscored tracking row beneath each scored row, transcription only — no emoji, no strip encoding, outside the 2-of-3 — filled wherever the company prints it (new-basis H2 26† bookings derived 595.0 − 317.0 = 277.9, both inputs printed on the new basis). Migration of the scored series to the new basis is a proposed ledger change once it carries at least four like-periods, never mid-run. If a future document stops printing the old basis, the scored cell records ❌ and that absence fires Drift condition 3. (2) DS sectoral revenues re-presented to split defence from public (footnote 4) — disclosure expansion, start 09-Nov-26; no group figure touched. (3) AI &amp; data H1 26 restated £15.3m → £20.4m (footnote 7) — later governs earlier; Drift cell corrected. (4) H1 26 cash-flow RDEC presentation restated (footnote 9) — outside all ranked series. (5) Davis Pier (Sep-25) now annualised; DS organic 54% vs 57% reported, group 36% organic vs 37%.</p>
      <p><b>Buy/Sell column.</b> ⭐ H1 R · Nov-26 — reviewed (ISRE 2410), unaudited. R4 outside cadence at H1 grain. Later-audited figures govern at FY27 results.</p>
     </div>
    </details>
@@ -1403,6 +1417,6 @@ table.mini thead th{background:#efedE7;font-size:10px;text-transform:uppercase;l
  }
 })();
 </script>
-<script type="application/json" id="drift-entry">{"ticker":"KNOS","company":"Kainos Group","kind":"ticker","direction":"watch","headline":"The numbers delivered everything August promised \u2014 revenue +37%, profit +30% \u2014 and the language, the retention score and the growth rate all stopped improving at once.","trigger":"Green-shoot 1-of-3 and deterioration 1-of-3 \u2014 mixed directions, no alert. Numbers & guide green, Disclosure red.","alert":false,"fired":2,"fired_of":3,"lights":"g-r","rns_type":"Interim results","rns_date":"2026-11-09","build_date":"2026-11-09","spec_version":"5.8","next_test":"Apr-27 YE-TU \u2014 contractors below 8% of headcount with the H2 FY27 margin recovery quantified; retention re-published as a number.","url":"KNOS.html","grid":{"labels":["R1","R2","R3","R4","R5"],"periods":["H1 23","H2 23","H1 24","H2 24","H1 25","H2 25","H1 26","H2 26","H1 27"],"rows":["--rrrrggg","-gagagggg","-gggggggg","-r-r-a-a-","--agarraa"],"note":"Ranks 1-5 at half grain, previous bookings/backlog methodology throughout; rightmost cell is the 9-Nov-26 interim results."},"prev":{"direction":"up","fired":3,"lights":"ggr","rns_date":"2026-08-18","rns_type":"Trading Update"},"trend":{"mode":"share","cells":"aa-","rows":[{"m":"REV","gap":1.1},{"m":"EBITDA","gap":-0.9},{"m":"PBT","gap":null}]},"chart":"charts/KNOS.json?v=2026-11-09.d8dc"}</script>
+<script type="application/json" id="drift-entry">{"ticker":"KNOS","company":"Kainos Group","kind":"ticker","direction":"watch","headline":"The numbers delivered everything August promised \u2014 revenue +37%, profit +30% \u2014 and the language, the retention score and the growth rate all stopped improving at once.","trigger":"Green-shoot 1-of-3 and deterioration 1-of-3 \u2014 mixed directions, no alert. Numbers & guide green, Disclosure red.","alert":false,"fired":2,"fired_of":3,"lights":"g-r","rns_type":"Interim results","rns_date":"2026-11-09","build_date":"2026-11-09","spec_version":"5.8","next_test":"Apr-27 YE-TU \u2014 contractors below 8% of headcount with the H2 FY27 margin recovery quantified; retention re-published as a number.","url":"KNOS.html","grid":{"labels":["R1","R2","R3","R4","R5"],"periods":["H1 23","H2 23","H1 24","H2 24","H1 25","H2 25","H1 26","H2 26","H1 27"],"rows":["--rrrrggg","-gagagggg","-gggggggg","-r-r-a-a-","--agarraa"],"note":"Ranks 1-5 at half grain, previous bookings/backlog methodology throughout (new TCV basis tracked unscored); rightmost cell is the 9-Nov-26 interim results."},"prev":{"direction":"up","fired":3,"lights":"ggr","rns_date":"2026-08-18","rns_type":"Trading Update"},"trend":{"mode":"share","cells":"aa-","rows":[{"m":"REV","gap":1.1},{"m":"EBITDA","gap":-0.9},{"m":"PBT","gap":null}]},"chart":"charts/KNOS.json?v=2026-11-09.d8dc"}</script>
 </body>
 </html>
