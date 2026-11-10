@@ -1,8 +1,8 @@
 {
  "ticker": "XPS",
- "v": "2026-10-22.91da",
+ "v": "2026-11-10.786b",
  "ccy": "GBX",
- "src": "Yahoo XPS.L weekly",
+ "src": "Yahoo XPS.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1048,6 +1048,18 @@
   [
    "2026-10-16",
    343.5
+  ],
+  [
+   "2026-10-23",
+   337.5
+  ],
+  [
+   "2026-10-30",
+   345.0
+  ],
+  [
+   "2026-11-06",
+   351.5
   ]
  ],
  "marks": [
@@ -1243,17 +1255,10 @@
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-15",
-  "doc": "H1 TU",
-  "file": "20261015_XPS_Post-close-trading-update.md",
-  "vs": "H1 TU Oct-25 · back to Oct-23 · FY R Jun-26",
-  "lines": [
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Jun-26 “we are confident of further growth in FY 2027 and beyond in line with the Board's expectations” → Oct-26 “the Board is confident of achieving full year results slightly ahead of its expectations”, on organic growth of 11% (Oct-25: 8%)",
-    "span": "First ahead call since Feb-25; Oct-25 H1 TU was in line"
-   }
-  ]
+  "rns": "2026-11-10",
+  "doc": "Notice",
+  "file": "20261110_XPS_Half-Year-Results-Presentation.md",
+  "vs": "H1 TU Oct-26 · Notice Oct-26 · FY results presentation May-26",
+  "lines": []
  }
 }

@@ -1,8 +1,8 @@
 {
  "ticker": "NXQ",
- "v": "2026-10-21.cda4",
+ "v": "2026-11-10.582a",
  "ccy": "GBX",
- "src": "Yahoo NXQ.L weekly",
+ "src": "Yahoo NXQ.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,18 @@
   [
    "2026-10-21",
    42.0
+  ],
+  [
+   "2026-10-23",
+   42.0
+  ],
+  [
+   "2026-10-30",
+   42.0
+  ],
+  [
+   "2026-11-06",
+   42.0
   ]
  ],
  "marks": [
@@ -1316,38 +1328,41 @@
    "s": -2,
    "q": "Order coverage of 83% at end August supporting this belief in the full year forecast with Densitron customer forecasted demand on a short lead time, and remaining Quixant forecast supported by having stock on hand.  Two significant orders are required in the Gaming business to secure the year end position.",
    "file": "20260909_NXQ_Interim-Results.md"
+  },
+  {
+   "d": "2026-11-10",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "Trading conditions remain consistent with previous guidance.  In line with the traditional trading pattern of Quixant, the last two months of the year have a significant impact on full year trading, and the full focus of the business is delivering a successful 2026 outturn.",
+   "file": "20261110_NXQ_Taiwan-property-sale-and-trading-update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-09",
-  "doc": "H1 R",
-  "file": "20260909_NXQ_Interim-Results.md",
-  "vs": "H1 R Sep-25 · H1 TU Jul-26 · FY R Mar-26",
+  "rns": "2026-11-10",
+  "doc": "Q3 TU",
+  "file": "20261110_NXQ_Taiwan-property-sale-and-trading-update.md",
+  "vs": "Q3 TU Oct-24 (none Oct/Nov-25) · YE-TU Dec-25 · H1 R Sep-26",
   "lines": [
    {
     "sev": "red",
-    "type": "New caution",
-    "text": "Last year: “order coverage has been secured to deliver 2025 full year revenue” → this year “Order coverage of 83% at end August” and “Two significant orders are required in the Gaming business to secure the year end position.”",
-    "span": "Full-year guide now rests on orders not yet won; first such caveat in the record"
-   },
-   {
-    "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Same words as H1-25, “The Group delivered a resilient performance, in line with Board expectations, notwithstanding challenging market conditions”, now beside an adjusted H1 loss before tax of $(4.0)m (H1 2025: $0.9m profit) and revenue down 34%",
-    "span": "H1 R Sep-25 → H1 R Sep-26"
+    "type": "Anchor softened",
+    "text": "Oct-24 “FY24 Group revenue is expected to be 10-12% below previous market expectations” and Sep-26 footnote “The current consensus forecasts for the year ended 31 December 2026 are $73.0m revenue, $2.8m adjusted EBITDA and $0.0m adjusted profit before tax.” → now “Trading conditions remain consistent with previous guidance.”, no expectations anchor or consensus footnote",
+    "span": "Consensus footnote at Oct-22, Oct-24, Dec-25, Sep-26 → first gap"
    },
    {
     "sev": "amber",
     "type": "Went quiet",
-    "text": "Signposts-to-success KPIs not updated: H1-25 gave “Nexteq new IP revenue grew to over $1m in the period” and a rising $1m-customer count; H1-26 gives neither figure",
-    "span": "Reported H1 R Sep-25, YE-TU Dec-25 and Jan-26 → absent Sep-26"
+    "text": "Sep-26: “Order coverage of 83% at end August” and “Two significant orders are required in the Gaming business to secure the year end position.” → no order coverage figure and no word on the two orders; now “the last two months of the year have a significant impact on full year trading”",
+    "span": "H1 R Sep-26 → TU Nov-26"
    },
    {
     "sev": "grey",
-    "type": "Target dropped",
-    "text": "FY R Mar-26: “the Company completed the acquisition of a new office in Taipei, Taiwan for total consideration of $15.5m” → now “the Board has decided not to proceed with the planned Taiwan office move”",
-    "span": "Mar-26 → Sep-26"
+    "type": "Number to words",
+    "text": "Sep-26: “The Taiwan property sale is expected to increase cash by over $3m and net cash by over $15m.” → now “a positive impact on both the cash and net cash position”, no net cash figure (cash inflow $3.7m given)",
+    "span": "H1 R Sep-26 → TU Nov-26"
    }
   ]
  }

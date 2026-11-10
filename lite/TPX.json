@@ -1,8 +1,8 @@
 {
  "ticker": "TPX",
- "v": "2026-10-23.8dc0",
+ "v": "2026-11-10.8cc7",
  "ccy": "GBX",
- "src": "Yahoo TPX.L weekly",
+ "src": "Yahoo TPX.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1048,6 +1048,18 @@
   [
    "2026-10-16",
    94.0
+  ],
+  [
+   "2026-10-23",
+   96.0
+  ],
+  [
+   "2026-10-30",
+   101.0
+  ],
+  [
+   "2026-11-06",
+   104.0
   ]
  ],
  "marks": [
@@ -1286,38 +1298,41 @@
    "s": 2,
    "q": "Given the strength of trading delivered in H1, together with the visibility afforded by contracted work as well as opportunities for the remainder of this financial year, the Board is providing the following update to FY27 guidance:",
    "file": "20261015_TPX_First-Half-Trading-Update.md"
+  },
+  {
+   "d": "2026-11-10",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "with current guidance for the year ended 31 March 2027 reaffirmed in line with the upgrade provided in our 15th October 2026 trading update",
+   "file": "20261110_TPX_Unaudited-Interim-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-15",
-  "doc": "H1 TU",
-  "file": "20261015_TPX_First-Half-Trading-Update.md",
-  "vs": "FY R Jun-26 · H1 R Dec-25 · Q3 TU Feb-26 · YE-TU Apr-26",
+  "rns": "2026-11-10",
+  "doc": "H1 R",
+  "file": "20261110_TPX_Unaudited-Interim-Results.md",
+  "vs": "H1 R Dec-25 · H1 TU Oct-26 · FY R Jun-26",
   "lines": [
    {
-    "sev": "amber",
-    "type": "Went quiet",
-    "text": "Jun-26: “£31m of new business won in the first two months of FY27” → Oct-26: no new-business total for H1 at all",
-    "span": "Wins figure given at Dec-25 (£31m), Feb-26 (£110m), Apr-26 (£122m), Jun-26 → first gap"
-   },
-   {
     "sev": "grey",
-    "type": "Target dropped",
-    "text": "Jun-26 FY27 outlook: “adjusted EBITDA margin improvement of c. 1% year on year” → not restated in Oct-26 (the new floors of £105m / £14m imply c.13%, above it)",
-    "span": "FY R Jun-26 → H1 TU Oct-26"
+    "type": "Wording vs number",
+    "text": "H1 beat the October floors (“Revenue of £57.9m”, adjusted EBITDA £8.0m vs “at least £57.0m” / “at least £7.5m”) but FY floors held at “revenue of at least £105m” and “adjusted EBITDA of at least £14m”, implying H2 ≥£47.1m / ≥£6.0m, below H1",
+    "span": "Floors unchanged since Oct-26 TU"
    },
    {
     "sev": "grey",
     "type": "Wording vs number",
-    "text": "“Trading momentum continues; guidance upgraded”, yet H1 “Revenue of at least £57.0m” and “Adjusted EBITDA* of at least £7.5m” against FY floors of £105m and £14m leave H2 at ≥£48m and ≥£6.5m, below H1",
-    "span": "Floors imply an H2 step-down"
+    "text": "“Gross margin remained in line with our normal range at 30.0% (H126: 31.0%)” — down 1 point year on year and below FY26’s “Gross margin improved to 31.6% (FY25: 28.6%)”",
+    "span": "Dec-25 31.0% → Jun-26 31.6% → Nov-26 30.0%"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Jun-26: “healthy double-digit revenue growth year on year” → Oct-26: “Revenue of at least £105m (previous guidance was for healthy double-digit revenue growth year-on-year)”, a first numeric FY27 revenue floor",
-    "span": "Words → number"
+    "text": "New-business total back after the October gap: “New business wins of £86m (H126: £31m)”",
+    "span": "Given Dec-25, Feb-26, Apr-26, Jun-26; absent Oct-26 TU"
    }
   ]
  }

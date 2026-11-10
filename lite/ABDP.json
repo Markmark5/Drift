@@ -1,8 +1,8 @@
 {
  "ticker": "ABDP",
- "v": "2026-10-22.7cd1",
+ "v": "2026-11-10.500c",
  "ccy": "GBX",
- "src": "AlphaVantage ABDP.LON weekly",
+ "src": "AlphaVantage ABDP.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,18 @@
   [
    "2026-10-16",
    839.0
+  ],
+  [
+   "2026-10-23",
+   807.0
+  ],
+  [
+   "2026-10-30",
+   815.0
+  ],
+  [
+   "2026-11-06",
+   775.0
   ]
  ],
  "marks": [
@@ -1252,37 +1264,47 @@
    "s": 0,
    "q": "Further to the update issued on 28 July 2026, the Board is pleased to confirm that the trading in the remainder of the final quarter was as anticipated and consequently performance for FY2026 is expected to be in line with the guidance provided at the time and current market expectations",
    "file": "20260917_ABDP_Pre-close-Trading-Update.md"
+  },
+  {
+   "d": "2026-11-10",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Whilst mindful that short-term macroeconomic disruption and challenging automotive market conditions have continued into FY 2027, the Board expects adjusted operating profit for FY 2027 to be in line with current expectations",
+   "file": "20261110_ABDP_Final-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-17",
-  "doc": "YE-TU",
-  "file": "20260917_ABDP_Pre-close-Trading-Update.md",
-  "vs": "YE-TU Sep-25 · back to Sep-22 · Jul-26 TU, Apr-26 H1",
+  "rns": "2026-11-10",
+  "doc": "FY R",
+  "file": "20261110_ABDP_Final-Results.md",
+  "vs": "FY R Nov-25 · YE-TU Sep-26 · H1 R Apr-26 · FY R Nov-24",
   "lines": [
    {
-    "sev": "amber",
-    "type": "Split withheld",
-    "text": "Sep-25: segment section “Strong growth in Testing Products and Testing Services” plus Simulation timing → Sep-26: no Testing Products / Testing Services / Simulation commentary, only Group revenue and margin",
-    "span": "Segment commentary in every pre-close Sep-22 to Sep-25 → first gap in 4 years"
+    "sev": "red",
+    "type": "Target dropped",
+    "text": "Medium-term plan: Nov-25 “Average organic growth of 10% per annum across core markets” and “Further sustained margin expansion to greater than 20%” → now no growth target and “we will seek to maintain margins at 20% and reinvest surplus margin into these areas”",
+    "span": "Targets stated Nov-24, Nov-25, Apr-26 → first omission"
    },
    {
     "sev": "amber",
-    "type": "Target dropped",
-    "text": "Sep-25: “the Board is confident of achieving its medium-term sustainable target margin of greater than 20%” → Sep-26: “in line with the Group's medium-term target of 20%”",
-    "span": "“greater than 20%” at Sep-25, Nov-25, Apr-26 → “at 20%” from Jul-26"
+    "type": "Number to words",
+    "text": "Order book cover: Nov-25 “This provides coverage of approximately a quarter of FY 2026 expected revenue”, Apr-26 “circa 70% coverage of expected full year revenue” → now “Year end order book of £31m (FY 2025: £32m) provides visibility into FY 2027”, no coverage figure",
+    "span": "Coverage % given Nov-25, Apr-26"
    },
    {
     "sev": "amber",
     "type": "Went quiet",
-    "text": "Sep-25: “The Group maintained its track record of strong operating cash conversion” → Sep-26: no cash conversion statement; net cash £24.5m (Sep-25: £41.4m) explained by acquisitions",
-    "span": "Stated in every pre-close Sep-22 to Sep-25 → first gap in 4 years; Jul-26 flagged higher year-end working capital"
+    "text": "Recurring revenue share: Nov-24 “The proportion of recurring revenue increased to 45% (2023: 40%)”, Nov-25 “The proportion of recurring revenue was maintained at 45% (2024: 45%)” → not mentioned in FY26 results",
+    "span": "Highlight in Nov-24 and Nov-25 → first gap"
    },
    {
     "sev": "grey",
-    "type": "Wording vs number",
-    "text": "Sep-25: £32m order book carried into FY 2026, with comparative (2024: £31m) → Sep-26: “The year end order book was £31m, which provides good coverage into the first half of FY2027”, lower and with no comparative"
+    "type": "Restated",
+    "text": "FY25 re-presented for VadoTech as discontinued: revenue £114.7m → £104.2m, adjusted operating profit £23.3m → £22.3m, adjusted diluted EPS 80.3p → 76.0p",
+    "span": "FY R Nov-25 vs FY R Nov-26 comparatives"
    }
   ]
  }

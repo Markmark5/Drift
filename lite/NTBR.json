@@ -1,8 +1,8 @@
 {
  "ticker": "NTBR",
- "v": "2026-10-21.78bd",
+ "v": "2026-11-10.2a40",
  "ccy": "GBX",
- "src": "Yahoo NTBR.L weekly",
+ "src": "Yahoo NTBR.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,18 @@
   [
    "2026-10-21",
    98.5
+  ],
+  [
+   "2026-10-23",
+   101.5
+  ],
+  [
+   "2026-10-30",
+   108.0
+  ],
+  [
+   "2026-11-06",
+   111.5
   ]
  ],
  "marks": [
@@ -1243,32 +1255,41 @@
    "s": -3,
    "q": "The latest expectations for FY27 are for underlying revenues to remain broadly consistent with the excellent underlying results in FY26 , notwithstanding our significant investments in both personnel and premises intended to generate further future opportunities and mitigate the negative effects of the present economic outlook.",
    "file": "20260716_NTBR_Preliminary-Results.md"
+  },
+  {
+   "d": "2026-11-10",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -1,
+   "q": "The full year outcome for FY27 is expected to be broadly in line with market expectations, after adjusting for the non-recurring operating profit referred to above.",
+   "file": "20261110_NTBR_Interim-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-16",
-  "doc": "FY R",
-  "file": "20260716_NTBR_Preliminary-Results.md",
-  "vs": "FY R Jul-25 · YE-TU May-26 · back to FY R Jul-23/Jul-24",
+  "rns": "2026-11-10",
+  "doc": "Tender",
+  "file": "20261110_NTBR_Proposed-Tender-Offer-and-Notice-of-GM.md",
+  "vs": "Tender Offer & TU Oct-23 · H1 R Nov-26 (same day) · FY R Jul-26",
   "lines": [
-   {
-    "sev": "red",
-    "type": "Anchor softened",
-    "text": "Next-year view moved off the profit line: Jul-25 “The latest expectations for FY26 are for operating profits to remain consistent with the excellent results in FY25” → Jul-26 “The latest expectations for FY27 are for underlying revenues to remain broadly consistent”, no profit view",
-    "span": "Profit-line view at FY R Jul-24 (c.£0.3m overhead hit) and Jul-25 → revenue only Jul-26"
-   },
    {
     "sev": "amber",
     "type": "New caution",
-    "text": "First flag of private-sector weakness and cost pressure: “A reduction in private sector opportunities and projects are more frequently being delayed or cancelled” and “Significantly increased costs from our supply chain”; Jul-25 cited only “a good balance of private and public sector clients”",
-    "span": "Jul-24, Jul-25 FY R → Jul-26"
+    "text": "First dividend caveat in a capital return: Oct-23 tender carried none → Nov-26 “There can be no guarantee however that the Company will continue to declare dividends in line with historic parameters or at all.”",
+    "span": "Tender Oct-23 → Tender Nov-26"
    },
    {
-    "sev": "amber",
-    "type": "Restated",
-    "text": "FY25 adjusted EPS: Jul-25 “Adjusted earnings per share* 20.1p” → Jul-26 comparative “Adjusted basic earnings per share* 22.7p (2025: 19.3p)”, flattering the reported 17.6% rise",
-    "span": "FY R Jul-25 → FY R Jul-26"
+    "sev": "grey",
+    "type": "Went quiet",
+    "text": "Oct-23 tender carried its own trading section: “The Board is pleased to reiterate this update and to state that trading in the period from 1 April 2023 to 31 August 2023 has been ahead of strong prior year results” → Nov-26 tender gives only “Assuming, inter alia, trading continues to be in line with management expectations”",
+    "span": "Same-day interims guide FY27 “broadly in line with market expectations”"
+   },
+   {
+    "sev": "grey",
+    "type": "New caution",
+    "text": "Oct-23: “The Group currently has no bank debt and had a net cash position at the last financial year end of £3.2 million” after the tender → Nov-26: “the Group would have net debt of approximately £4.7 million”",
+    "span": "Tender Oct-23 → Tender Nov-26 (£6.5m new facility)"
    }
   ]
  }

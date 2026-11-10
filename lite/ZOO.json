@@ -1,6 +1,6 @@
 {
  "ticker": "ZOO",
- "v": "2026-11-05.f799",
+ "v": "2026-11-10.ae5a",
  "ccy": "GBX",
  "src": "Yahoo ZOO.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1052,6 +1052,10 @@
   [
    "2026-10-30",
    12.75
+  ],
+  [
+   "2026-11-06",
+   14.75
   ]
  ],
  "marks": [
@@ -1290,38 +1294,47 @@
    "s": 0,
    "q": "As a result, the Board expects to deliver revenues for H1 FY27 of at least $23.0 million, an increase on both H1 FY26 and H2 FY26 and in line with management expectations.",
    "file": "20260929_ZOO_AGM-Statement.md"
+  },
+  {
+   "d": "2026-11-10",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is confident that the full year results will show a return to revenue growth and further profit progression in line with market expectations.",
+   "file": "20261110_ZOO_Interim-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-29",
-  "doc": "AGM",
-  "file": "20260929_ZOO_AGM-Statement.md",
-  "vs": "AGM Sep-25 · FY R Jul-26 · back to AGM Sep-23/Sep-24",
+  "rns": "2026-11-10",
+  "doc": "H1 R",
+  "file": "20261110_ZOO_Interim-Results.md",
+  "vs": "H1 R Nov-25 · AGM Sep-26 · FY R Jul-26",
   "lines": [
    {
-    "sev": "red",
-    "type": "Anchor softened",
-    "text": "Broker footnote dropped: AGM Sep-25 “The Group believes market consensus for FY26 to be revenue of $42.4 million” → AGM Sep-26 no consensus figure and no full-year anchor; H1 only “in line with management expectations”",
-    "span": "Consensus footnote given Feb-25, May-25, Sep-25, Nov-25, Apr-26 → absent Jul-26 and Sep-26"
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "“Current trading is positive and continuing the trend seen in H1.”, yet consensus of “revenue of $43.5 million, Adjusted EBITDA of $4.1 million” against H1 $23.6m / $3.5m implies H2 revenue c.$19.9m and EBITDA c.$0.6m; “H1 benefitting from certain one-off catalogue projects that we do not assume will repeat in H2.”",
+    "span": "Implied H2 step-down"
    },
    {
-    "sev": "amber",
-    "type": "Went quiet",
-    "text": "H1 EBITDA: AGM Sep-25 “H1 EBITDA is in line with management expectations”, AGM Sep-24 “the Board expects EBITDA profit in the first half” → AGM Sep-26 gives H1 revenue only",
-    "span": "H1 EBITDA comment at AGM Sep-22, Sep-23, Sep-24, Sep-25 → first gap"
+    "sev": "grey",
+    "type": "Restated",
+    "text": "Same period, two numbers: results table Adjusted EBITDA “$3.6 million” (“86.8%”) vs highlights “Adjusted EBITDA1 increased to $3.5 million (H1 FY26: $2.0 million).”; Cash EBITDA “$1.9 million” in the table vs “Cash EBITDA2 of $2.1 million (H1 FY26: $0.6 million)” in highlights",
+    "span": "Within the Nov-26 RNS"
    },
    {
-    "sev": "amber",
-    "type": "Target dropped",
-    "text": "FY R Jul-26 “gives the Board confidence in delivering a return to revenue growth and profit progression in FY27” → AGM has no FY27 full-year statement, only “seeks to translate improving activity levels into sustained revenue and profit growth”",
-    "span": "FY R Jul-26 → AGM Sep-26"
+    "sev": "grey",
+    "type": "Wording vs number",
+    "text": "Nov-25 “Improved gross margin percentage.” → Nov-26 “Maintained strong gross margin at 43% (H1 FY26: 45%)”, a 2-point fall",
+    "span": "H1 R Nov-25 → H1 R Nov-26"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "H1 revenue growth quantified: AGM Sep-25 “approximately $22 million, in line with H2 FY 25” → AGM Sep-26 “at least $23.0 million, an increase on both H1 FY26 and H2 FY26”",
-    "span": "AGM Sep-25 → AGM Sep-26"
+    "text": "Consensus anchor back: AGM Sep-26 H1 only “in line with management expectations” → “the Group believes market consensus for FY27 to be revenue of $43.5 million, Adjusted EBITDA of $4.1 million”",
+    "span": "Absent Jul-26 and Sep-26"
    }
   ]
  }

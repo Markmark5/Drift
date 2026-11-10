@@ -1,8 +1,8 @@
 {
  "ticker": "FCH",
- "v": "2026-10-21.c0ea",
+ "v": "2026-11-10.bb41",
  "ccy": "GBX",
- "src": "Yahoo FCH.L weekly",
+ "src": "Yahoo FCH.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,18 @@
   [
    "2026-10-21",
    201.0
+  ],
+  [
+   "2026-10-23",
+   202.0
+  ],
+  [
+   "2026-10-30",
+   212.5
+  ],
+  [
+   "2026-11-06",
+   201.0
   ]
  ],
  "marks": [
@@ -1234,26 +1246,47 @@
    "s": 2,
    "q": "As a result of our strong performance, we are upgrading our full year 2026 guidance to more than £255m in revenue and more than £40m in PBT.",
    "file": "20260908_FCH_Half-Year-2026-Results.md"
+  },
+  {
+   "d": "2026-11-10",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 2,
+   "q": "With two further months of trading in September and October, and November starting well, we are now in a position to upgrade expectations for FY26.",
+   "file": "20261110_FCH_Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-08",
-  "doc": "H1 R",
-  "file": "20260908_FCH_Half-Year-2026-Results.md",
-  "vs": "H1 R Sep-25 · H1 TU Jul-26 · FY R Mar-26",
+  "rns": "2026-11-10",
+  "doc": "Q3 TU",
+  "file": "20261110_FCH_Trading-Update.md",
+  "vs": "First November TU (no Nov-25 update) · H1 R Sep-26 · H1 TU Jul-26",
   "lines": [
    {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "PBT guide no longer in pounds: Sep-26 “more than £255m in revenue and more than £40m in PBT” → now “profit margins of c.16%” with no PBT figure (implies c.£44m on £275m)",
+    "span": "£ PBT guide given Mar-26, Jul-26, Sep-26 → first gap"
+   },
+   {
     "sev": "grey",
-    "type": "New caution",
-    "text": "FY29 view now carries a condition: “trending toward the upper end of our FY29 medium-term revenue guidance, assuming a stable macro environment” → Mar-26 set the FY29 targets with no macro caveat",
-    "span": "Mar-26 → Sep-26"
+    "type": "Went quiet",
+    "text": "Trading KPIs dropped: Jul-26 TU gave revenue, PBT, credit extended, AuM, originations and cash (“Overall credit extended for the half was £1.7 billion”) → now no operating figures, only the guide and buybacks",
+    "span": "Given Jan-26 and Jul-26 TUs"
+   },
+   {
+    "sev": "grey",
+    "type": "Target dropped",
+    "text": "FY29 view not mentioned: Sep-26 “trending toward the upper end of our FY29 medium-term revenue guidance” → no medium-term reference",
+    "span": "Sep-26 → Nov-26"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "FY26 guide raised: Jul-26 “at least £235 million revenue and at least £35 million profit before tax” → now “more than £255m in revenue and more than £40m in PBT”",
-    "span": "FY26 guide raised at Mar-26 and again Sep-26"
+    "text": "FY26 revenue guide raised: Sep-26 “more than £255m in revenue” → now “at least £275 million”",
+    "span": "Third FY26 upgrade (Mar-26, Sep-26, Nov-26)"
    }
   ]
  }

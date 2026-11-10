@@ -1,6 +1,6 @@
 {
  "ticker": "OXIG",
- "v": "2026-10-27.178a",
+ "v": "2026-11-10.06d2",
  "ccy": "GBX",
  "src": "Yahoo OXIG.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1056,6 +1056,14 @@
   [
    "2026-10-23",
    2558.0
+  ],
+  [
+   "2026-10-30",
+   2694.0
+  ],
+  [
+   "2026-11-06",
+   2368.0
   ]
  ],
  "marks": [
@@ -1247,32 +1255,47 @@
    "s": 0,
    "q": "The strength of order intake and resulting orderbook cover for H2 underpins the Group’s confidence in delivering full year results in line with market expectations[2].",
    "file": "20261013_OXIG_Interim-Trading-Update.md"
+  },
+  {
+   "d": "2026-11-10",
+   "doc": "H1 R",
+   "fy": "FY28",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Given the growth already seen in H1 in the order book for delivery in FY28 and the further growth anticipated in H2, we now expect FY28 revenue growth to be around 20%, assuming lead times remain as they are.",
+   "file": "20261110_OXIG_Half-Year-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-13",
-  "doc": "H1 TU",
-  "file": "20261013_OXIG_Interim-Trading-Update.md",
-  "vs": "H1 TU Oct-25 · back to Oct-23 · FY R Jun-26",
+  "rns": "2026-11-10",
+  "doc": "H1 R",
+  "file": "20261110_OXIG_Half-Year-Results.md",
+  "vs": "H1 R Nov-25 · H1 TU Oct-26 · FY R Jun-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Went quiet",
-    "text": "Oct-25: “We anticipate a further headwind of approximately £1m to operating profit in addition to earlier guidance of £4.5m.” → Oct-26 no FX update against June’s “approximately £3.2m FX headwind to adjusted operating profit (AOP) in FY27”",
-    "span": "FX profit headwind updated at Oct-24 and Oct-25 interim TUs → first gap"
+    "type": "Wording vs number",
+    "text": "Highlight “Academia intake grew 2.8% OCC despite ongoing softness in US life science academic research” (I&A) → body “Total academia order intake declined 16%, driven largely by US academia weakness which declined 35%.”",
+    "span": "Group academia figure only in the divisional review"
    },
    {
     "sev": "grey",
     "type": "Went quiet",
-    "text": "Oct-25: “Our half-year book-to-bill ratio is expected to be around 1.1 (1.0 H1 prior year).” → Oct-26 order growth % only, no book-to-bill ratio",
-    "span": "Given at Oct-23 (c.1.07) and Oct-25"
+    "text": "Group book-to-bill: Nov-25 “Book-to-bill at 1.1x”, Jun-26 “Book-to-bill of 1.067 provides momentum for FY27” → Nov-26 footnote still defines book-to-bill but no Group ratio, only “the book-to-bill ratio for total academic orders was just below 1.0” (orders £296.0m vs revenue £201.1m imply c.1.5)",
+    "span": "Given Nov-25, Jun-26 → first gap at a half-year"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Consensus footnote back: “Mean of Consensus estimates for FY27: Revenue £444.4m, Adjusted Operating Profit £81.0m.” — Oct-25 and Oct-24 interim TUs carried no consensus figure",
-    "span": "Last given at Oct-23 interim TU"
+    "text": "First numeric FY28 view: AT “we now expect FY28 revenue growth to be around 20%” with margin “within our target range of 12%-15%”",
+    "span": "Jun-26 only “revenue visibility in FY27 and into FY28”"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "FX profit guide back after the October gap: “the Group continues to expect a full-year headwind to adjusted operating profit of approximately £3.2m”, plus a new FY28 estimate of “c.£1.8m”",
+    "span": "Absent Oct-26 TU"
    }
   ]
  }

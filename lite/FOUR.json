@@ -1,8 +1,8 @@
 {
  "ticker": "FOUR",
- "v": "2026-10-21.8e79",
+ "v": "2026-11-10.955e",
  "ccy": "GBX",
- "src": "Yahoo FOUR.L weekly",
+ "src": "Yahoo FOUR.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,18 @@
   [
    "2026-10-21",
    4473.3691
+  ],
+  [
+   "2026-10-23",
+   4372.0
+  ],
+  [
+   "2026-10-30",
+   4496.0
+  ],
+  [
+   "2026-11-06",
+   4474.0
   ]
  ],
  "marks": [
@@ -1297,36 +1309,29 @@
    "s": 2,
    "q": "Based on the first half results and anticipated trading in the second half of the year, the Board expects that full year 2026 revenue and earnings will be above the current range of analysts' forecasts with Group revenue slightly above 2025 ($1.35bn), and adjusted profit before tax of approximately $130m.",
    "file": "20260805_FOUR_Half-year-Financial-Report.md"
+  },
+  {
+   "d": "2026-11-10",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is pleased to reaffirm the full year 2026 financial guidance provided within the Group’s interim results on 5 August 2026: Group revenue slightly above 2025 ($1.35bn) and adjusted profit before tax of approximately $130m.",
+   "file": "20261110_FOUR_Trading-Statement.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-05",
-  "doc": "H1 R",
-  "file": "20260805_FOUR_Half-year-Financial-Report.md",
-  "vs": "H1 R Aug-25 · back to Aug-24 · AGM May-26",
+  "rns": "2026-11-10",
+  "doc": "Q3 TU",
+  "file": "20261110_FOUR_Trading-Statement.md",
+  "vs": "Q3 TU Nov-25 · back to Nov-24 · H1 R Aug-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Guide is “above the current range of analysts' forecasts” but the number is “adjusted profit before tax of approximately $130m”, against 2025 PBT “not less than $149m”; H1 adjusted PBT down 12% to $64.8m (H1-25: $74.0m)",
-    "span": "Jan-26 → Aug-26"
-   },
-   {
-    "sev": "grey",
-    "type": "Demoted",
-    "text": "Free cash flow was a highlight bullet at H1-25: “Free cash flow of $74.6m generated in the period (H1 2024: $59.1m)” → now only in the Financial Review: “Free cash flow decreased by $25.3m to $49.3m (H1 2025: $74.6m)”"
-   },
-   {
-    "sev": "grey",
-    "type": "Demoted",
-    "text": "Profit guide moved from statutory to adjusted: H1-25 “full year Group revenue and profit before tax will remain within the current range” → now “adjusted profit before tax”, excluding adjusting items for uncertain tax treatment (H1 statutory PBT $59.6m vs adjusted $64.8m)",
-    "span": "First use of adjusted results"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Profit guide re-quantified: H1-25 gave no figure (“will remain within the current range of analysts' forecasts”) → now “adjusted profit before tax of approximately $130m”"
+    "type": "Anchor softened",
+    "text": "Same numbers, weaker position vs consensus: Aug-26 “the Board expects that full year 2026 revenue and earnings will be above the current range of analysts' forecasts” → now “These expectations are within the current range of analysts' forecasts” (revenue slightly above $1.35bn, adjusted PBT c.$130m unchanged)",
+    "span": "Nov-25 Q3 was “above the upper end of the current analyst forecast range”; Nov-24 was within"
    }
   ]
  }

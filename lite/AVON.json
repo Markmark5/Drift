@@ -1,6 +1,6 @@
 {
  "ticker": "AVON",
- "v": "2026-10-29.7bba",
+ "v": "2026-11-10.1ff3",
  "ccy": "GBX",
  "src": "AlphaVantage AVON.LON weekly + ShareScope snapshots",
  "adj": [],
@@ -1052,6 +1052,14 @@
   [
    "2026-10-23",
    2345.0
+  ],
+  [
+   "2026-10-30",
+   2505.0
+  ],
+  [
+   "2026-11-06",
+   2380.0
   ]
  ],
  "marks": [
@@ -1253,32 +1261,41 @@
    "s": 2,
    "q": "As a result, the Board now expects FY26 results to be ahead of current market expectations:",
    "file": "20261007_AVON_Strategy-Teach-in-and-FY26-Trading-Update.md"
+  },
+  {
+   "d": "2026-11-10",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "These expectations are in line with the medium-term targets outlined at our capital markets event in October 2026 of more than 5% annual revenue growth, adjusted operating profit margins of 16-18%, adjusted EPS growth of more than 10% per annum and >$175m of cumulative free cash flow generated over the next three years.",
+   "file": "20261110_AVON_Preliminary-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-07",
-  "doc": "YE-TU",
-  "file": "20261007_AVON_Strategy-Teach-in-and-FY26-Trading-Update.md",
-  "vs": "YE-TU Oct-23 (no YE-TU in 2024/25) · H1 R May-26 · FY R Nov-25",
+  "rns": "2026-11-10",
+  "doc": "FY R",
+  "file": "20261110_AVON_Preliminary-Results.md",
+  "vs": "FY R Nov-25 · YE-TU Oct-26 · H1 R May-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Number to words",
-    "text": "Order book — last YE-TU: “The order book as at 30 September 2023 showed growth of over 10% compared to the prior year” → now “with the order book rising significantly since the half year results”, no figure or growth rate",
-    "span": "Quantified Oct-23, Jan-24, Nov-25 ($263m), May-26 ($219.9m, down 11%)"
+    "type": "Split withheld",
+    "text": "Oct-26 margin “including the effect of some beneficial one-offs in the year” → full results still unquantified: “certain one-off benefits, including US tariff refunds and tax incentives”, inside a 17.2% margin that sits within the new FY27 16-18% guide",
+    "span": "YE-TU Oct-26 → FY R Nov-26"
    },
    {
     "sev": "amber",
     "type": "Wording vs number",
-    "text": "FY26 margin “comfortably above our guided 14-16% range” but “including the effect of some beneficial one-offs in the year”, with the one-offs not quantified",
-    "span": "Guide set Nov-25: “Adjusted operating profit margin within our target 14-16% range”"
+    "text": "Highlights “Improved productivity, scrap, on-time delivery and operational execution across the Group.” but “Scrap increased from 1.2% to 1.4% of revenue”; cumulative reduction Nov-25 “scrap has reduced by 62%” → now “slightly below the >60% target”",
+    "span": "FY R Nov-25 and H1 R May-26 (target met) → FY R Nov-26 (54%, missed)"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "New mid-term targets: “Adjusted operating margins of 16-18%” and “Annual EPS growth of greater than 10%”, replacing the 14-16% margin target met in FY26",
-    "span": "14-16% target quoted May-25, Nov-25, May-26"
+    "text": "Next-year cash guide quantified: Nov-25 “Cash conversion of over 80% before transformational costs” → Nov-26 “Free cash flow of approximately $50-60m” for FY27",
+    "span": "FY R Nov-25 → FY R Nov-26"
    }
   ]
  }

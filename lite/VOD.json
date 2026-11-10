@@ -1,8 +1,8 @@
 {
  "ticker": "VOD",
- "v": "2026-10-21.265d",
+ "v": "2026-11-10.ee06",
  "ccy": "GBX",
- "src": "Yahoo VOD.L weekly",
+ "src": "Yahoo VOD.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,18 @@
   [
    "2026-10-21",
    118.6
+  ],
+  [
+   "2026-10-23",
+   119.8
+  ],
+  [
+   "2026-10-30",
+   116.75
+  ],
+  [
+   "2026-11-06",
+   119.4
   ]
  ],
  "marks": [
@@ -1244,35 +1256,47 @@
    "s": 1,
    "q": "Our confidence in our clear and detailed execution plan means we are upgrading our target to £1 billion of annual savings by FY32 (previously £0.7 billion per annum by FY30).",
    "file": "20261008_VOD_VodafoneThree-Investor-Briefing.md"
+  },
+  {
+   "d": "2026-11-10",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "RAISE",
+   "s": 1,
+   "q": "We now upgrade our guidance for FY27, with Group Adjusted EBITDAaL expected to be €13.2 – €13.4 billion and Adjusted free cash flow expected to be €2.8 – €3.0 billion.",
+   "file": "20261110_VOD_Vodafone-Group-H1-FY27-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-08",
-  "doc": "OPS",
-  "file": "20261008_VOD_VodafoneThree-Investor-Briefing.md",
-  "vs": "No briefing a year earlier · Q1 TU Jul-26 · UK deal RNS May-26, Jun-25, Sep-24, Jun-23",
+  "rns": "2026-11-10",
+  "doc": "H1 R",
+  "file": "20261110_VOD_Vodafone-Group-H1-FY27-Results.md",
+  "vs": "H1 R Nov-25 · Q1 TU Jul-26 · UK briefing Oct-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Target dropped",
-    "text": "Group FCF accretion from the UK merger: Jun-25 “accretive to Vodafone's Adjusted free cash flow from FY29 onwards” → not mentioned now; replaced by a UK-only operating FCF target “Over 3x (versus FY25)”",
-    "span": "Given Jun-23, Sep-24, Jun-25 → absent May-26 and now"
+    "type": "Wording vs number",
+    "text": "Germany headline “reflecting good broadband growth in Consumer” → segment review “Our broadband customer base declined by 198,000 in H1” (Nov-25: “Our broadband customer base declined by 49,000 in H1”)",
+    "span": "H1 FY26 −49k → Q1 FY27 −98k → H1 FY27 −198k"
+   },
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "FY27 guide includes €1.1bn of Safaricom EBITDAaL, now footnoted “The transaction is subject to a legal challenge.”; the High Court declared it “null and void on 15 September 2026”, appeal pending",
+    "span": "Not flagged in Q1 TU Jul-26"
    },
    {
     "sev": "grey",
-    "type": "Restated",
-    "text": "Synergy basis: May-26 “£700 million annual cost and capital expenditure synergies by FY30” → now an “Annual cost saving target” of “£1 billion per annum by FY32 (£0.8 billion p.a. by FY30)”, no cost/capex split given"
+    "type": "Demoted",
+    "text": "Germany quarter split dropped from highlights: Nov-25 “Returned to growth in Q2 (+0.5%)” → Nov-26 highlight “Organic service revenue increased 0.4%” for H1, with Q2 back in decline “(Q1: 1.2%, Q2: -0.5%)” only in the segment review",
+    "span": "H1 R Nov-25 → H1 R Nov-26"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Synergy target raised: “previously £0.7 billion per annum by FY30” → “£1 billion of annual savings by FY32”, with the FY30 step lifted to £0.8bn"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "New UK targets: “Mid-to-high single digit Adjusted EBITDAaL growth (FY25-32 CAGR)” and return on capital “Exceeding cost of capital by FY32, materially above by FY34”"
+    "text": "FY27 guide raised again: July “€13.0 – €13.3 billion” EBITDAaL and “€2.6 – €2.9 billion” FCF → “€13.2 – €13.4 billion” and “€2.8 – €3.0 billion”",
+    "span": "Second upgrade of FY27 (May-26 → Jul-26 → Nov-26)"
    }
   ]
  }

@@ -1,6 +1,6 @@
 {
  "ticker": "FTC",
- "v": "2026-10-30.f24f",
+ "v": "2026-11-10.da1a",
  "ccy": "GBX",
  "src": "Yahoo FTC.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1056,6 +1056,14 @@
   [
    "2026-10-23",
    255.0
+  ],
+  [
+   "2026-10-30",
+   225.0
+  ],
+  [
+   "2026-11-06",
+   220.0
   ]
  ],
  "marks": [
@@ -1324,16 +1332,16 @@
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-30",
-  "doc": "AGM",
-  "file": "20261030_FTC_AGM-Trading-Update-and-GEO-constellation-contract.md",
-  "vs": "AGM Oct-25 · FY R Aug-26 · YE-TU Jun-26 · SpaceX order Oct-26",
+  "rns": "2026-11-10",
+  "doc": "OPS",
+  "file": "20261110_FTC_$3m-follow-on-pre-production-order-with-US-Company.md",
+  "vs": "Contract award Sep-26 · back to Mar-26 · AGM TU Oct-26",
   "lines": [
    {
-    "sev": "amber",
-    "type": "Number to words",
-    "text": "Order book cover: Aug-26 “a strong order book providing approximately 90% coverage of current market expectations for FY2027 revenue” → now “significant revenue cover for the current financial year”, no percentage",
-    "span": "90% given Jun-26 and Aug-26"
+    "sev": "grey",
+    "type": "Went quiet",
+    "text": "Earlier awards gave delivery and revenue timing: Sep-26 “The contract is expected to be completed in H1 FY2028, with revenue expected to be recognised across FY2027 and FY2028”, Mar-26 “The contract commences in March 2026 and is expected to complete in 2027” → this $3m order gives no completion or revenue-recognition timing",
+    "span": "Given in Mar-26 and Sep-26 awards → first award without it"
    }
   ]
  }

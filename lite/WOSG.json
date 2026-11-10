@@ -1,8 +1,8 @@
 {
  "ticker": "WOSG",
- "v": "2026-10-21.2d0d",
+ "v": "2026-11-10.444d",
  "ccy": "GBX",
- "src": "AlphaVantage WOSG.LON weekly",
+ "src": "AlphaVantage WOSG.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1060,6 +1060,18 @@
   [
    "2026-10-20",
    706.5
+  ],
+  [
+   "2026-10-23",
+   741.0
+  ],
+  [
+   "2026-10-30",
+   732.5
+  ],
+  [
+   "2026-11-06",
+   759.0
   ]
  ],
  "marks": [
@@ -1352,37 +1364,47 @@
    "s": 0,
    "q": "Performance during the 17 weeks to 30 August 2026 remained consistent with the positive trends reported at our FY26 results, leaving us well positioned to deliver on our FY27 guidance.",
    "file": "20260903_WOSG_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2026-11-10",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "RAISE",
+   "s": 1,
+   "q": "We now expect to deliver FY27 constant currency revenue growth of +7-10%, increased from 5-10%, and to deliver +60-80bps of EBIT margin expansion, increased from +40-80bps.",
+   "file": "20261110_WOSG_H1-FY27-Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-03",
-  "doc": "AGM",
-  "file": "20260903_WOSG_AGM-Trading-Update.md",
-  "vs": "AGM Sep-25 · FY R Jul-26 · back to AGM TU Sep-24",
+  "rns": "2026-11-10",
+  "doc": "H1 TU",
+  "file": "20261110_WOSG_H1-FY27-Trading-Update.md",
+  "vs": "H1 TU Nov-25 · AGM TU Sep-26 · FY TU May-26",
   "lines": [
    {
     "sev": "amber",
+    "type": "New caution",
+    "text": "H1 TU Nov-25 gave no H2 split → now “we would expect a lower level of revenue growth in the second half than in the first half, alongside more moderate EBIT margin expansion” (H1 revenue +15% vs FY guide +7-10%)",
+    "span": "First explicit H2 slowdown flag"
+   },
+   {
+    "sev": "amber",
     "type": "Went quiet",
-    "text": "Roberto Coin: Sep-25 AGM “Following the acquisition in May 2024, Roberto Coin Inc. is performing strongly.”; Sep-24 “the integration of Roberto Coin Inc. is progressing to plan” → Sep-26 AGM no comment beyond the boilerplate store list, after the Feb-26 “one-off items relating to Roberto Coin department store debtor provisions”",
-    "span": "Named at Sep-24 and Sep-25 AGMs → first gap"
+    "text": "Ecommerce growth: Nov-25 “Group ecommerce revenue is also showing good growth at +16% vs prior year”, May-26 “Group ecommerce revenue +21% vs prior year in constant currency” → no ecommerce figure this H1, only the definition footnote",
+    "span": "Given in every TU since 2022 → first gap"
    },
    {
     "sev": "grey",
-    "type": "Went quiet",
-    "text": "Registration of Interest lists: Sep-25 “Registration of Interest lists continue to grow in both markets.”; Sep-24 “particularly products on Registration of Interest lists, remains strong in both the UK and US markets, outstripping supply” → Sep-26 no mention; demand described only as “broad-based across our key luxury brands”",
-    "span": "Given at Sep-24, Sep-25 AGMs"
-   },
-   {
-    "sev": "grey",
-    "type": "Went quiet",
-    "text": "Old Bond Street flagship: Sep-25 “the flagship Rolex Boutique on Old Bond Street, London, which is exceeding our expectations” → Sep-26 no mention (still cited in Jul-26 FY R)",
-    "span": "Sep-25 AGM, Nov-25, Dec-25 → Sep-26 gap"
+    "type": "Restated",
+    "text": "Category split re-defined: H1 FY26 luxury watches £708m, jewellery £102m (Nov-25) → re-presented as £706m and £103m; “In FY27 the Group updated its Category definitions”",
+    "span": "H1 FY26 comparatives"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Guide restated in full, caveat gone: Sep-25 “We will provide a further update as to any potential impact on FY26 guidance, if any, once more information is available.” → Sep-26 reiterates the FY27 table, revenue “5 - 10% at constant currency” and margin “40 - 80bps expansion from FY26”, with no tariff caveat"
+    "text": "AGM Sep-26 guide “5 - 10% at constant currency” revenue, 40-80bps margin → now “FY27 guidance narrowed to +7-10% ccy revenue growth (from +5-10%) and +60-80bps EBIT margin expansion (from +40-80bps)”",
+    "span": "Floor raised on both lines"
    }
   ]
  }

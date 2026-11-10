@@ -1,8 +1,8 @@
 {
  "ticker": "DIA",
- "v": "2026-10-21.0fce",
+ "v": "2026-11-10.e3e2",
  "ccy": "GBX",
- "src": "AlphaVantage DIA.LON weekly",
+ "src": "AlphaVantage DIA.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1060,6 +1060,18 @@
   [
    "2026-10-20",
    528.0
+  ],
+  [
+   "2026-10-23",
+   528.0
+  ],
+  [
+   "2026-10-30",
+   570.0
+  ],
+  [
+   "2026-11-06",
+   530.0
   ]
  ],
  "marks": [
@@ -1297,38 +1309,35 @@
    "s": 3,
    "q": "Whilst there remains a significant proportion of the financial year still to be delivered, based on performance to date and the current outlook, the Board now believes the Group's adjusted profit before tax for the financial year ending 31 March 2027 is likely to be significantly ahead of its' previous expectations.",
    "file": "20260901_DIA_Trading-Statement.md"
+  },
+  {
+   "d": "2026-11-10",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "RAISE",
+   "s": 2,
+   "q": "The Board therefore believes the Group has the potential to significantly exceed current market expectations for net income for the full financial year.",
+   "file": "20261110_DIA_Half-year-Financial-Report.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-01",
-  "doc": "AGM",
-  "file": "20260901_DIA_Trading-Statement.md",
-  "vs": "AGM TU Sep-25 · Q1 TU Jul-26 · back to Oct-25/Jan-26/Jun-26",
+  "rns": "2026-11-10",
+  "doc": "H1 R",
+  "file": "20261110_DIA_Half-year-Financial-Report.md",
+  "vs": "H1 R Nov-25 · AGM TU Sep-26 · Q1 TU Jul-26 · FY R Jun-26",
   "lines": [
    {
-    "sev": "red",
-    "type": "Anchor softened",
-    "text": "Sep-25: “confident of meeting current market expectation1” with footnote “adjusted profit before tax of $5.7m” → now “significantly ahead of its' previous expectations”, with no market figure or broker footnote",
-    "span": "Market figure given Sep-25, Nov-25 (Investec $8.5m), Jan-26 ($8.6m EBITA) → absent Jul-26 and Sep-26"
-   },
-   {
     "sev": "amber",
-    "type": "Number to words",
-    "text": "Net debt: Sep-25 “approximately $13.0m on 31 August 2025”, Jan-26 “$10.3m on 31 December 2025” → now “continues to improve on its net cash position”, no figure",
-    "span": "Figure given Sep-25, Oct-25, Jan-26, Jun-26 ($1.9m) → words only Jul-26 and Sep-26"
-   },
-   {
-    "sev": "grey",
-    "type": "Wording vs number",
-    "text": "Return on sales: Jul-26 “has exceeded the newly issued, and upgraded, return on sales target of 15% plus in the first quarter” → now “is likely to meet the newly issued, and upgraded, return on sales target of 15% plus in the first half”",
-    "span": "Q1 TU Jul-26 → AGM TU Sep-26"
+    "type": "Went quiet",
+    "text": "Backlog: FY R Jun-26 “a backlog which has increased by over 25% on the previous year”, AGM Sep-26 “strong and growing backlog (which was well ahead of the prior year)” → no backlog figure or comment in the H1 report",
+    "span": "Cited Jun-26, Jul-26, Sep-26 → first gap"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "New Q2 sales read: “This rate of expected growth is now likely to continue in the second quarter of the year-to-date.” (Sep-25: sales “marginally down on the comparative prior period”)",
-    "span": "Sep-25 → Sep-26"
+    "text": "AGM Sep-26 anchored on the Board's own view, “is likely to be significantly ahead of its” previous expectations → now market-anchored with named broker figures: “has the potential to significantly exceed current market expectations for net income” (Investec PBT $17.3m, Singer $17.6m; H1 PBT already $14.2m)",
+    "span": "Market anchor last used Jan-26"
    }
   ]
  }

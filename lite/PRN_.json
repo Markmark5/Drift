@@ -1,8 +1,8 @@
 {
  "ticker": "PRN",
- "v": "2026-10-20.3ab3",
+ "v": "2026-11-10.f978",
  "ccy": "GBX",
- "src": "Yahoo PRN.L weekly",
+ "src": "Yahoo PRN.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -212,6 +212,18 @@
   [
    "2026-10-20",
    344.0
+  ],
+  [
+   "2026-10-23",
+   352.0
+  ],
+  [
+   "2026-10-30",
+   351.0
+  ],
+  [
+   "2026-11-06",
+   351.5
   ]
  ],
  "marks": [
@@ -251,38 +263,47 @@
    "s": 0,
    "q": "Princes remains well positioned for the remainder of the year and continues to trade in line with Management's expectations for FY26.",
    "file": "20260915_PRN_Interim-Results-for-the-six-months-ended-30-June.md"
+  },
+  {
+   "d": "2026-11-10",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group remains confident in delivering its full-year 2026 expectations, supported by resilient trading performance, continued commercial momentum and disciplined operational execution.",
+   "file": "20261110_PRN_Princes-Group-Q3-2026-Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-15",
-  "doc": "H1 R",
-  "file": "20260915_PRN_Interim-Results-for-the-six-months-ended-30-June.md",
-  "vs": "Q1 TU May-26 · FY R Mar-26 · Q3 TU Nov-25 (no prior-year interim: listed Nov-25)",
+  "rns": "2026-11-10",
+  "doc": "Q3 TU",
+  "file": "20261110_PRN_Princes-Group-Q3-2026-Trading-Update.md",
+  "vs": "Q3 TU Nov-25 · H1 R Sep-26 · Q1 TU May-26",
   "lines": [
    {
-    "sev": "red",
-    "type": "Target dropped",
-    "text": "Medium-term guide: Mar-26 “confirms its medium-term guidance of £3 billion+ revenue, +300 basis points of EBITDA margin expansion from FY2024 levels, and underlying FCF conversion of greater than 60%”, May-26 “continues to expect to progress in line with its medium-term objectives” → H1 no mention of medium-term guidance or objectives",
-    "span": "Given Nov-25, Mar-26, May-26 → first gap since listing"
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "“Underlying Free Cash Flow generation remained strong at £88.4 million for the period” — but H1 alone was “Underlying Free Cash Flow generation remained strong at £90.1 million”, so Q3 cash flow was slightly negative; 9M-25 was “Underlying Free Cash Flow to £136.5 million”",
+    "span": "Sep-26 → Nov-26"
    },
    {
     "sev": "amber",
     "type": "Wording vs number",
-    "text": "“Trading momentum strengthened during the second quarter, with performance ahead of Q1” beside H1 adj. EBITDA margin “unchanged at 7.9%” after Q1 “Adj. EBITDA margin expanding to 7.5% (Q1 2025: 6.8%)” — implied Q2 margin c.8.3% vs c.9.0% a year ago; May-26 “The Group expects further profitability improvement through FY 2026” not repeated",
-    "span": "Q1 TU May-26 → H1 R Sep-26"
+    "text": "“Adj. EBITDA margin stable at 7.7% vs. 7.9% in 2025” — margin down 20bps after May-26 “The Group expects further profitability improvement through FY 2026”; implied Q3 margin c.7.3% vs c.8% a year ago",
+    "span": "Q1 TU May-26 → Q3 TU Nov-26"
    },
    {
     "sev": "amber",
-    "type": "Pushed out",
-    "text": "M&A timing: May-26 “Management expects to complete at least one acquisition in the next couple of months” → Sep-26 “Management anticipates completing at least one transaction over the coming months, subject to the successful conclusion of negotiations”",
-    "span": "May-26 → Sep-26"
+    "type": "Target dropped",
+    "text": "Medium-term ambitions cut to one: Nov-25 listed “Organic revenue CAGR: >3%” and “Margin improvement >300 bps (EBITDA margin of 9%)” among five → now only the “medium-term adjusted EBITDA margin target of 9%”",
+    "span": "Five ambitions at Nov-25 → one at Nov-26"
    },
    {
-    "sev": "grey",
-    "type": "Restated",
-    "text": "Adjusted EBITDA redefined: “In line with the parent company reporting, Adjusted EBITDA has been updated in H1 2026 to align by including non-controlling interests.” (Q1 reported Oils “on a 50% basis”)",
-    "span": "Q1 TU May-26 → H1 R Sep-26"
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Margin target back after the H1 gap: Sep-26 no medium-term mention → now “progressing towards our medium-term adjusted EBITDA margin target of 9%”",
+    "span": "Gap at Sep-26 only"
    }
   ]
  }
