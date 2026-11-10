@@ -4907,17 +4907,17 @@
       "company": "TPXimpact",
       "kind": "ticker",
       "direction": "up",
-      "headline": "FY27 guide raised to ≥£14m EBITDA and ≥£105m revenue after H1 revenue +57% — but the floor implies H2 below H1.",
-      "trigger": "Green-shoot: conditions 1 and 2 converge; condition 3 fires red on disclosure",
+      "headline": "H1 beats its own three-week-old floors — revenue +60%, margin 13.9%, debt eliminated; ≥£105m and ≥£14m reconfirmed.",
+      "trigger": "Green-shoot: conditions 1 and 2 converge on hard prints; condition 3 fires red on disclosure",
       "alert": true,
       "fired": 3,
       "fired_of": 3,
       "lights": "ggr",
-      "rns_type": "H1 Trading Update",
-      "rns_date": "2026-10-15",
-      "build_date": "2026-10-15",
-      "spec_version": "v5.6",
-      "next_test": "10 Nov 2026 H1 results: does Q2 run at or above Q1, does the segment note explain +57% organically, and does the forward book get a £ figure?",
+      "rns_type": "H1 Results",
+      "rns_date": "2026-11-10",
+      "build_date": "2026-11-10",
+      "spec_version": "v5.8",
+      "next_test": "Q3 TU ~Feb-27: a floor raised above £105m, and a forward order book £ figure — the one number still dark.",
       "url": "TPX.html",
       "grid": {
         "labels": [
@@ -4939,9 +4939,9 @@
           "H1 27"
         ],
         "rows": [
-          "--g-r-x-x",
+          "--g-r-x-a",
           "--agagggg",
-          "xx--raxx-",
+          "xx--raxxg",
           "-rggaaagg",
           "----rrggg"
         ],
@@ -4951,8 +4951,8 @@
         "direction": "up",
         "fired": 3,
         "lights": "ggr",
-        "rns_date": "2026-06-16",
-        "rns_type": "FY Results"
+        "rns_date": "2026-10-15",
+        "rns_type": "H1 Trading Update"
       },
       "trend": {
         "mode": "share",
@@ -4960,18 +4960,19 @@
         "rows": [
           {
             "m": "REV",
-            "gap": 8.8
+            "gap": 6.7
           },
           {
             "m": "EBITDA",
-            "gap": 21.9
+            "gap": 16.9
           },
           {
             "m": "PBT",
             "gap": null
           }
         ]
-      }
+      },
+      "chart": "charts/TPX.json?v=2026-11-10.7e5d"
     },
     {
       "ticker": "BBSN",
