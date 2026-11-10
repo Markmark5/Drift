@@ -4835,17 +4835,17 @@
       "company": "Avon Technologies",
       "kind": "ticker",
       "direction": "up",
-      "headline": "Guide raised again: FY26 ahead of market expectations, growth c.12.5%, margin above 14–16% — but order books come in words, not numbers.",
-      "trigger": "2 of 3 fired, green-shoot mirror: guide RAISE on May-26 and Oct-26; language rising on two consecutive prints from 0 (0, +1, +3). Disclosure not fired.",
-      "alert": true,
-      "fired": 2,
+      "headline": "FY26 beat delivered on every line — margin 17.2%, net debt $33.7m; FY27 guided mid-single-digit with margin held at 16–18%.",
+      "trigger": "1 of 3 fired, green-shoot mirror: margin expanding (12.8% to 17.2%, printed) and Team Wendy book +41% sequential, with a LEAD metric. Language amber: May–Oct rise ended at +1. Disclosure not fired. No alert.",
+      "alert": false,
+      "fired": 1,
       "fired_of": 3,
-      "lights": "gg-",
-      "rns_type": "YE-TU",
-      "rns_date": "2026-10-07",
-      "build_date": "2026-10-07",
-      "spec_version": "5.6",
-      "next_test": "10 Nov 2026 — FY26 results: printed segment order books (above $111.9m and $108.0m), the size of the one-offs, and the FY27 guide.",
+      "lights": "ga-",
+      "rns_type": "FY R",
+      "rns_date": "2026-11-10",
+      "build_date": "2026-11-10",
+      "spec_version": "5.8",
+      "next_test": "Late Jan 2027 — AGM & Q1 update: FY27 guide held, Avon Protection order momentum, DHS-funded commercial recovery continuing.",
       "url": "AVON.html",
       "grid": {
         "labels": [
@@ -4868,31 +4868,39 @@
         ],
         "rows": [
           "-grggggaa",
-          "-gggaaara",
+          "-gggaaarg",
           "argaargag",
-          "grrggggga",
-          "---ggaaaa"
+          "grrgggggr",
+          "---ggaaag"
         ],
-        "note": "R1 AP order book · R2 TW order book · R3 TW production ladder · R4 AP revenue · R5 TW margin; half grain, rightmost = YE-TU Oct-26"
+        "note": "R1 AP order book · R2 TW order book · R3 TW production ladder · R4 AP revenue · R5 TW margin; half grain, rightmost = FY R Nov-26"
+      },
+      "prev": {
+        "direction": "up",
+        "fired": 2,
+        "lights": "gg-",
+        "rns_date": "2026-10-07",
+        "rns_type": "YE-TU"
       },
       "trend": {
         "mode": "growth",
-        "cells": "g--",
+        "cells": "ggg",
         "rows": [
           {
             "m": "REV",
-            "gap": 7.9
+            "gap": 4.8
           },
           {
             "m": "EBITDA",
-            "gap": null
+            "gap": 11.3
           },
           {
             "m": "PBT",
-            "gap": null
+            "gap": 14.2
           }
         ]
-      }
+      },
+      "chart": "charts/AVON.json?v=2026-11-10.c01b"
     },
     {
       "ticker": "TPX",
