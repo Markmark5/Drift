@@ -1654,16 +1654,17 @@
       "company": "ZOO Digital Group plc",
       "kind": "ticker",
       "direction": "watch",
-      "headline": "Restructuring delivered the profit; revenue must deliver the next leg, and the cost lever is now spent",
-      "trigger": "1 of 3 — Text fires green-shoot alone (lexicon rising four prints from below zero). Condition 1 fires in both directions simultaneously; Condition 3 watch only.",
+      "headline": "First profit in three and a half years on returning growth — but the half leaned on one-off work the company says won't repeat",
+      "trigger": "0 of 3 — all three lamps amber: Numbers & guide split both ways; the Sep-26 Language fire resolved one print later; Disclosure drops resumed, freelancer count withheld (unranked).",
       "alert": false,
-      "fired": 1,
+      "fired": 0,
       "fired_of": 3,
-      "rns_type": "FY Results",
-      "rns_date": "2026-07-30",
-      "build_date": "2026-08-06",
-      "spec_version": "v4.7",
-      "next_test": "Sep-26 AGM: does localisation's sequential turn hold and media services stabilise?",
+      "lights": "aaa",
+      "rns_type": "H1 R",
+      "rns_date": "2026-11-10",
+      "build_date": "2026-11-10",
+      "spec_version": "v5.8",
+      "next_test": "Apr-27 YE-TU: H2 revenue near $20m with the one-offs gone, the market anchor intact, and the dubbing pipeline converting into orders.",
       "url": "ZOO.html",
       "grid": {
         "labels": [
@@ -1674,25 +1675,51 @@
           "R5"
         ],
         "periods": [
-          "H2",
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1",
-          "H2"
+          "H1 23",
+          "H2 23",
+          "H1 24",
+          "H2 24",
+          "H1 25",
+          "H2 25",
+          "H1 26",
+          "H2 26",
+          "H1 27"
         ],
         "rows": [
-          "---rrggra",
-          "---rrggrr",
-          "-ggrrgggg",
-          "-agrrggga",
-          "rgggrrrrg"
+          "g-rrggrag",
+          "r-rrggrrr",
+          "g-rrggagg",
+          "agrrgggar",
+          "gggrrrrgr"
         ],
-        "note": "R1 localisation, R2 media services, R3 adj EBITDA, R4 gross margin, R5 net cash. Ranks 1-4 at half grain; R5 at H1/FY-end grain, so its cells align to the same columns but read Sep-21 through Mar-26."
-      }
+        "note": "R1 localisation, R2 media services, R3 adj EBITDA, R4 gross margin, R5 net cash (R5 at H1/FY-end dates, Sep-22 to Sep-26)."
+      },
+      "prev": {
+        "direction": "watch",
+        "fired": 1,
+        "lights": "ara",
+        "rns_date": "2026-09-29",
+        "rns_type": "AGM"
+      },
+      "trend": {
+        "mode": "share",
+        "cells": "a--",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": -0.2
+          },
+          {
+            "m": "EBITDA",
+            "gap": null
+          },
+          {
+            "m": "PBT",
+            "gap": null
+          }
+        ]
+      },
+      "chart": "charts/ZOO.json?v=2026-11-10.7df9"
     },
     {
       "ticker": "FOUR",
