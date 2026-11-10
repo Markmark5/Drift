@@ -1,22 +1,10 @@
 {
  "ticker": "TRI",
- "v": "2026-10-20.d431",
+ "v": "2026-11-10.ab5b",
  "ccy": "GBX",
- "src": "AlphaVantage TRI.LON weekly",
+ "src": "AlphaVantage TRI.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-15",
-   125.0
-  ],
-  [
-   "2021-10-22",
-   124.0
-  ],
-  [
-   "2021-10-29",
-   135.0
-  ],
   [
    "2021-11-05",
    140.0
@@ -1060,18 +1048,21 @@
   [
    "2026-10-19",
    86.0
+  ],
+  [
+   "2026-10-23",
+   81.2
+  ],
+  [
+   "2026-10-30",
+   84.0
+  ],
+  [
+   "2026-11-06",
+   83.4
   ]
  ],
  "marks": [
-  {
-   "d": "2021-10-21",
-   "doc": "H1 TU",
-   "fy": "FY22",
-   "g": "flat",
-   "s": 0,
-   "q": "Further to the update given to shareholders at the time of the AGM in July 2021, the Board is pleased to report that overall trading in the subsequent weeks has been in line with expectations at both revenue and profit levels.",
-   "file": "20211021_TRI_Trading-update-and-Notice-of-half-year-results.md"
-  },
   {
    "d": "2021-11-23",
    "doc": "H1 R",

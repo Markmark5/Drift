@@ -1,8 +1,8 @@
 {
  "ticker": "OPT",
- "v": "2026-10-20.6218",
+ "v": "2026-11-10.f8e7",
  "ccy": "GBX",
- "src": "AlphaVantage OPT.LON weekly",
+ "src": "AlphaVantage OPT.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -439,6 +439,18 @@
   ],
   [
    "2026-10-19",
+   246.0
+  ],
+  [
+   "2026-10-23",
+   243.5
+  ],
+  [
+   "2026-10-30",
+   243.5
+  ],
+  [
+   "2026-11-06",
    246.0
   ]
  ],
