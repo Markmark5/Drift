@@ -1,6 +1,6 @@
 {
  "ticker": "MOTR",
- "v": "2026-10-28.9762",
+ "v": "2026-11-11.f91a",
  "ccy": "GBX",
  "src": "AlphaVantage MOTR.LON weekly + ShareScope snapshots",
  "adj": [],
@@ -1056,6 +1056,14 @@
   [
    "2026-10-23",
    145.0
+  ],
+  [
+   "2026-10-30",
+   144.5
+  ],
+  [
+   "2026-11-06",
+   143.5
   ]
  ],
  "marks": [
@@ -1293,38 +1301,45 @@
    "s": 0,
    "q": "The Board remains confident in the outlook for FY27 and therefore continues to expect underlying profit before taxation for the full year to be in the range of £9.8m to £10.8m, in line with the recently upgraded market consensus.",
    "file": "20261009_MOTR_Half-Year-Trading-Update-&-Notice-of-Results.md"
+  },
+  {
+   "d": "2026-11-11",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "FY27 expectations remain unchanged, following September’s upgrade to market consensus. This is despite a backdrop of continued economic uncertainty, with increased inflation and interest rates.",
+   "file": "20261111_MOTR_Interims-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-09",
-  "doc": "H1 TU",
-  "file": "20261009_MOTR_Half-Year-Trading-Update-&-Notice-of-Results.md",
-  "vs": "H1 TU Oct-25 · back to Oct-24 · TU Sep-26, AGM Jul-26",
+  "rns": "2026-11-11",
+  "doc": "H1 R",
+  "file": "20261111_MOTR_Interims-Results.md",
+  "vs": "H1 R Nov-25 · H1 TU Oct-26 · back to H1 R Nov-24, TU Sep-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Anchor softened",
-    "text": "Guide redefined to an 'underlying' measure: Sep-26 “we now expect that PBT for FY27 will be in the range of £9.8m-£10.8m” → Oct-26 “continues to expect underlying profit before taxation for the full year to be in the range of £9.8m to £10.8m”; H1 also moves from reported PBT (Oct-25) to underlying PBT",
-    "span": "Reported PBT used at Oct-24, Oct-25, Apr-26, Sep-26"
+    "type": "Number to words",
+    "text": "Oct-26 H1 TU: “in the range of £9.8m to £10.8m, in line with the recently upgraded market consensus” → interims: “FY27 expectations remain unchanged, following September’s upgrade to market consensus”, no PBT figure",
+    "span": "PBT range given Sep-26 and Oct-26; anchor still market consensus"
    },
    {
     "sev": "amber",
-    "type": "Went quiet",
-    "text": "Period-end cash position dropped: Oct-24 “net cash at 30 September was £11.2m, in line with expectations”; Oct-25 “H1 FY26 ended with a small net debt position of £0.5m” → Oct-26 no net cash/debt figure (revenue figure also dropped)",
-    "span": "Given Oct-24 and Oct-25 → first gap"
-   },
-   {
-    "sev": "amber",
-    "type": "Wording vs number",
-    "text": "“Strong retail volume growth” headline while growth slows despite the new Leeds store: AGM Jul-26 Q1 “Retail volumes increased by 11.1% compared to the equivalent period in FY26” → H1 “Retail volume growth of 7.6% compared to H1 FY26” (Oct-25: 8.9%), implying a much slower Q2",
-    "span": "AGM Jul-26 → H1 TU Oct-26"
+    "type": "New caution",
+    "text": "Nov-25 interims: “We expect macroeconomic pressures to gradually ease” → Nov-26: “continued economic uncertainty, with increased inflation and interest rates”; Chair: “Motorpoint expects to continue to face less than robust market conditions for the foreseeable future”"
    },
    {
     "sev": "grey",
-    "type": "Restated",
-    "text": "Prior-year ROCE: Oct-25 “Return on Capital Employed (based on last 12 months) is expected to be c.58%” → Oct-26 “is expected to be c.80%, up from 59% in preceding period”",
-    "span": "H1 TU Oct-25 → H1 TU Oct-26"
+    "type": "Went quiet",
+    "text": "October profitability: Nov-24 “remained profitable in month”, Nov-25 “Delivered retail volume growth of 8.1% in October and good profitability” → Nov-26 “Delivered retail volume growth of 9.7% in October”, no profit comment",
+    "span": "Given at Nov-24, Nov-25 interims → first gap"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "New medium-term targets: “Sell more than 120,000 retail units with a majority being digitally influenced”, 30-35 stores, “Deliver EBITDA per retail unit in excess of £550 (H1 FY27: £460)” and “Achieve in excess of 100% ROCE (H1 FY27: 81.0%)”"
    }
   ]
  }

@@ -1,6 +1,6 @@
 {
  "ticker": "SOLI",
- "v": "2026-11-09.054e",
+ "v": "2026-11-11.38b5",
  "ccy": "GBX",
  "src": "Yahoo SOLI.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1302,38 +1302,35 @@
    "s": 1,
    "q": "The Group has had a good start to the new financial year with current trading in line with the Board's expectations, and we expect to exceed current market expectations for FY26/27.",
    "file": "20260629_SOLI_Final-Results,-Analyst-Briefing-&-Investor-Pres.md"
+  },
+  {
+   "d": "2026-11-11",
+   "doc": "OPS",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "This order further underpins our existing guidance for FY26/27 and FY27/28 and gives us increased confidence as we look forward to 2027.",
+   "file": "20261111_SOLI_$26.2-million-UK-MoD-Order-for-Project-CAIN.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-06-29",
-  "doc": "FY R",
-  "file": "20260629_SOLI_Final-Results,-Analyst-Briefing-&-Investor-Pres.md",
-  "vs": "FY R Jul-25 · TU Apr-26 · back to Nov-25/Dec-25 and Oct-21",
+  "rns": "2026-11-11",
+  "doc": "OPS",
+  "file": "20261111_SOLI_$26.2-million-UK-MoD-Order-for-Project-CAIN.md",
+  "vs": "CAIN order Oct-25 · FY R Jun-26 · H1 TUs Oct-22/Oct-23/Nov-24/Nov-25",
   "lines": [
    {
     "sev": "amber",
-    "type": "Target dropped",
-    "text": "Margin goal: Nov-25 “the Group's medium-term goal of exceeding 10.0% adjusted operating margins”, Dec-25 “positive step towards the mid-term goal of circa 10%” → now no margin target; FY27 “the Board anticipates operating margins will remain broadly stable”",
-    "span": "Given at Nov-25 and Dec-25 → absent Jun-26"
+    "type": "Skipped update",
+    "text": "Usual early-November H1 trading update not issued by 11 Nov; the only current statement is a contract RNS saying “This order further underpins our existing guidance for FY26/27 and FY27/28”, with no trading or order book figures",
+    "span": "H1 TU issued 26 Oct-22, 30 Oct-23, 6 Nov-24, 4 Nov-25 → none yet in 2026"
    },
    {
-    "sev": "amber",
-    "type": "New caution",
-    "text": "First mention: “delays to the publication of the UK Defence Investment Plan have created uncertainty around the timing of expected defence spending translating into contracted programmes”",
-    "span": "Not in Jul-25 FY R or Apr-26 TU"
-   },
-   {
-    "sev": "amber",
-    "type": "Number to words",
-    "text": "Order book delivery share: Jul-25 “Approximately 95% of the total orderbook is expected to be delivered in the current financial year.” → now “The majority of the current order book is expected to be delivered over the next 18 months”",
-    "span": "% given Oct-21, Sep-23, Oct-23, Nov-24, Apr-25, Jul-25, Nov-25 → words since Apr-26"
-   },
-   {
-    "sev": "grey",
-    "type": "Restated",
-    "text": "FY25 comparatives in the KPI table: ROCE 9.8% (Jul-25) → 8.7%; open order book at 31 May 2025 “was £101.6m” (Jul-25) → £103.4m, so the year-on-year order book now shows −1.0%",
-    "span": "Jul-25 FY R vs Jun-26 FY R highlights table"
+    "sev": "green",
+    "type": "Back / new",
+    "text": "FY R Jun-26 guided one year only: “we expect to exceed current market expectations for FY26/27” → now FY27/28 named for the first time: “underpins our existing guidance for FY26/27 and FY27/28”",
+    "span": "No FY27/28 reference in FY R Jun-26"
    }
   ]
  }

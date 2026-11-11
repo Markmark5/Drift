@@ -1,6 +1,6 @@
 {
  "ticker": "CGS",
- "v": "2026-10-26.263c",
+ "v": "2026-11-11.2a22",
  "ccy": "GBX",
  "src": "Yahoo CGS.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1056,6 +1056,14 @@
   [
    "2026-10-23",
    275.0
+  ],
+  [
+   "2026-10-30",
+   270.0
+  ],
+  [
+   "2026-11-06",
+   279.0
   ]
  ],
  "marks": [
@@ -1257,38 +1265,47 @@
    "s": -3,
    "q": "Consequently, whilst revenue expectations remain in line with market consensus*, with production arrears not yet resolved the Board are reducing its expectations* for adjusted profit before tax for FY27 to a level broadly consistent with the profit in the previous year (excluding the historical R&D tax credits).",
    "file": "20261026_CGS_Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2026-11-11",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Revenue for the six months ended 30 September 2026 was £85.9 million (2025 – £87.6 million) with profit before tax decreasing to £2.0 million (2025 – £5.0 million). Management anticipate the full year result to be in line with the recently revised market expectations*.",
+   "file": "20261111_CGS_Half-year-Financial-Report.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-26",
-  "doc": "H1 TU",
-  "file": "20261026_CGS_Trading-Update-and-Notice-of-Results.md",
-  "vs": "AGM Aug-26 · FY R Jun-26 · H1 TU Oct-23/Oct-22",
+  "rns": "2026-11-11",
+  "doc": "H1 R",
+  "file": "20261111_CGS_Half-year-Financial-Report.md",
+  "vs": "H1 R Nov-25 · prev TU Oct-26 · AGM Aug-26 · FY R Jun-26",
   "lines": [
    {
-    "sev": "red",
-    "type": "Anchor softened",
-    "text": "AGM Aug-26: “management anticipate the full year result to be in line with market expectations” → now “the Board are reducing its expectations* for adjusted profit before tax for FY27”, to roughly last year's profit (FY26 PBT £10.3m incl. £0.8m prior-year R&D credits) vs £12.9m consensus",
-    "span": "Profit guided in line at every Oct TU (Oct-22, Oct-23) and at AGM Aug-26 → first profit cut since Feb-25"
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Revenue guide: Oct-26 “whilst revenue expectations remain in line with market consensus*” with consensus “revenue of £181.1m and adjusted profit before tax of £12.9m” → now footnote gives only “adjusted profit before tax of £9.0 million”, no revenue view",
+    "span": "Oct-26 → Nov-26"
    },
    {
-    "sev": "amber",
-    "type": "Number to words",
-    "text": "FY R Jun-26: forward schedules “currently suggest an increase of 5% - 10%” → now “the strong forward order book in the second half of the year”, no percentage",
-    "span": "FY R Jun-26 → Oct-26"
+    "sev": "grey",
+    "type": "Wording vs number",
+    "text": "“The demand schedules for the remainder of this financial year continue to reflect the stronger market conditions that the heavy-truck OEMs have reported.” beside H1 PBT “£2.0 million (2025 – £5.0 million)” and foundry margin “0.3% compared to 4.6% in the prior period”",
+    "span": "H1-25 → H1-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Pushed out",
+    "text": "New foundry parts: Nov-25 “new parts specific to this facility going through their development phase” → now “others going through their development phase (albeit there have been some delays as a result of the power outage)”",
+    "span": "First delay flagged since commissioning"
    },
    {
     "sev": "grey",
     "type": "New caution",
-    "text": "First mention of production arrears: “with production arrears not yet resolved”; AGM Aug-26 had said the power issue “was resolved at the end of May”",
-    "span": "Not in any earlier CGS RNS"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Consensus figures given for the first time: “stood at revenue of £181.1m and adjusted profit before tax of £12.9m”",
-    "span": "No consensus footnote in any earlier CGS RNS"
+    "text": "Principal risks: “The equipment risk has been updated to include the risk of a power outage disrupting operations as well as the cited risk of equipment failure itself.”",
+    "span": "Not in Nov-25 risk paragraph"
    }
   ]
  }

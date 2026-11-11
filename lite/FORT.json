@@ -1,8 +1,8 @@
 {
  "ticker": "FORT",
- "v": "2026-10-21.d21f",
+ "v": "2026-11-11.866e",
  "ccy": "GBX",
- "src": "Yahoo FORT.L weekly",
+ "src": "Yahoo FORT.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,18 @@
   [
    "2026-10-21",
    158.8
+  ],
+  [
+   "2026-10-23",
+   157.4
+  ],
+  [
+   "2026-10-30",
+   165.0
+  ],
+  [
+   "2026-11-06",
+   167.4
   ]
  ],
  "marks": [
@@ -1290,38 +1302,41 @@
    "s": 0,
    "q": "We anticipate demand in H2 will be similar to that seen in H1, supporting the Board's expectations that the Group will deliver a full year result in line with consensus.",
    "file": "20260728_FORT_Six-months-ended-30-June-2026.md"
+  },
+  {
+   "d": "2026-11-11",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -3,
+   "q": "As a result, the Board now expects full-year adjusted EBITDA to be c.£50m, compared with company compiled consensus of £54.8m, and leverage to be c.1.9x.",
+   "file": "20261111_FORT_Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-28",
-  "doc": "H1 R",
-  "file": "20260728_FORT_Six-months-ended-30-June-2026.md",
-  "vs": "H1 R Jul-25 · prev AGM TU May-26 · FY R Mar-26 · YE-TU Jan-26",
+  "rns": "2026-11-11",
+  "doc": "Q3 TU",
+  "file": "20261111_FORT_Trading-Update.md",
+  "vs": "Q3 TU Nov-25 · back to Oct-23 · H1 R Jul-26",
   "lines": [
    {
-    "sev": "red",
-    "type": "Wording vs number",
-    "text": "Mar-26: “we currently expect our 2026 adjusted EBITDA to be slightly ahead of 2025” (2025: £61.6m) → Jul-26 headline “no change to FY expectations” while the footnote anchors FY26 to consensus of “£55.6m with a range of £53.1m to £57.6m”, c.10% below FY25",
-    "span": "Guide withdrawn to a “greater range of potential full year outcomes” at May-26 AGM TU"
+    "sev": "amber",
+    "type": "Target dropped",
+    "text": "H1 R Jul-26 (leverage 1.47x): “Both net debt before leases and leverage at the end of 2026 are expected to remain consistent with current levels” → now “leverage to be c.1.9x”, no net debt figure or direction",
+    "span": "Q3 TU Nov-25 also gave net debt direction (“year-end net debt before leases will be below H1”)"
    },
    {
     "sev": "amber",
     "type": "New caution",
-    "text": "First mention of political risk: “the additional uncertainty created by the recent leadership changes within Government and the policy changes this may herald”",
-    "span": "Not in any earlier RNS in the record"
+    "text": "H1 R Jul-26: “Markets are certainly challenging at present but looking beyond the current year, the Board remains confident” → now into 2027: “in the absence of meaningful improvement in volumes, profitability will remain constrained by the fixed cost base”",
+    "span": "First flag that profitability stays constrained beyond FY26"
    },
    {
     "sev": "grey",
-    "type": "Restated",
-    "text": "H1 25 statutory PBT: Jul-25 “Statutory profit before tax of £9.9m” → Jul-26 comparative “a 2025 profit of £8.4m”, revised for a change in accounting policy for carbon credits",
-    "span": "Adjusted H1 25 figures unchanged (EBITDA £29.9m, PBT £16.6m)"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Consensus now given with a range: Jan-26 footnote “adjusted EBITDA of £61.6m” (point only), May-26 no anchor → Jul-26 “£55.6m with a range of £53.1m to £57.6m”",
-    "span": "First consensus range in the record"
+    "type": "Went quiet",
+    "text": "Q3 TU Nov-25: “Construction at our Wilnecote factory is nearing completion” plus Desford and Accrington progress → no mention of Desford, Wilnecote or Accrington now",
+    "span": "Capacity-project update given in Q3 TUs Oct-23, Nov-24, Nov-25 → first gap in 3 years"
    }
   ]
  }

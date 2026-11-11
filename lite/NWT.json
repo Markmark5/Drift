@@ -1,8 +1,8 @@
 {
  "ticker": "NWT",
- "v": "2026-11-02.4cdd",
+ "v": "2026-11-11.ca53",
  "ccy": "GBX",
- "src": "Yahoo NWT.L weekly",
+ "src": "Yahoo NWT.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1048,6 +1048,10 @@
   [
    "2026-11-02",
    101.2431
+  ],
+  [
+   "2026-11-06",
+   100.5
   ]
  ],
  "marks": [
@@ -1126,38 +1130,39 @@
    "q": "It expects to report a year-on-year increase in revenue for the six months to 31 October 2026 (“H1 2027”) in its core Human Capital Management (\"HCM\") business.",
    "file": "20261102_NWT_Trading-Update.md",
    "gnote": "discounted: Safetell/Access Control disposals"
+  },
+  {
+   "d": "2026-11-11",
+   "doc": "AGM",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "HCM, our core business, traded in line with the Board’s expectations during the first half (“H1 2027”) with HCM’s unaudited revenue for H1 2027 up 5% to £8.3 million (H1 2026: £7.9 million).",
+   "file": "20261111_NWT_AGM-Statement.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-11-02",
-  "doc": "H1 TU",
-  "file": "20261102_NWT_Trading-Update.md",
-  "vs": "H1 TU Oct-25 · FY R Oct-26 · AGM Oct-25 · H1 R Jan-26",
+  "rns": "2026-11-11",
+  "doc": "AGM",
+  "file": "20261111_NWT_AGM-Statement.md",
+  "vs": "AGM Oct-25 · H1 TU 2-Nov-26 · FY R Oct-26 · H1 TU Oct-25",
   "lines": [
-   {
-    "sev": "red",
-    "type": "Went quiet",
-    "text": "H1 profit view: Oct-25 “strong revenue growth for the six months to 31 October 2025 (H1 2026), with a positive impact on profitability” → Nov-26 only “a year-on-year increase in revenue for the six months to 31 October 2026”, HCM only, no profit or EBITDA mention",
-    "span": "Profit direction given Oct-25 TU, Oct-25 AGM, Jan-26 H1 → first gap"
-   },
    {
     "sev": "amber",
     "type": "Went quiet",
-    "text": "Outlook statement: Oct-25 “we are excited by the current outlook”; Oct-26 “The outlook for HCM is positive.” → Nov-26 no outlook or full-year view at all",
-    "span": "Outlook line in every update Oct-25 to Oct-26"
+    "text": "H1 profit: Oct-25 TU “with a positive impact on profitability”, Oct-25 AGM “on track to deliver strong H1 results, marked by sales growth and improved profitability” → Nov-26 AGM gives HCM revenue only, no profit comment",
+    "span": "Profit flagged at Oct-25 TU and AGM; absent from Nov-26 TU and AGM"
    },
    {
     "sev": "amber",
     "type": "Wording vs number",
-    "text": "ARR: Oct-25 “up 36% year-on-year as of Sept 2025 to £3.8 million” → Nov-26 “has increased 13% year-on-year to £4.3 million in September 2026”, framed as “the success of GT Tablet” with 26% underlying",
-    "span": "Reported ARR growth 36% → 30% (Oct-25) → 8% (Apr-26) → 13%"
+    "text": "“We are confident in the outlook for the rest of the year” beside H1 HCM revenue “up 5% to £8.3 million”; FY26 “HCM revenues grew 27% to £19.5 million” and FY R base case “HCM revenue growth at a similar rate as achieved in FY26”"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "New product timing: GT1 lower cost clock — “we expect to launch this to the HCM market in 2027”; also largest clocks order ever with key customer",
-    "span": "First stated in Nov-26"
+    "text": "2-Nov-26 TU: “a year-on-year increase in revenue” → AGM quantifies H1 HCM revenue “up 5% to £8.3 million (H1 2026: £7.9 million)”"
    }
   ]
  }

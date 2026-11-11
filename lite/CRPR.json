@@ -1,6 +1,6 @@
 {
  "ticker": "CRPR",
- "v": "2026-11-09.1d23",
+ "v": "2026-11-11.d3d0",
  "ccy": "GBX",
  "src": "AlphaVantage CRPR.LON weekly + ShareScope snapshots",
  "adj": [],
@@ -1283,32 +1283,41 @@
    "s": 2,
    "q": "As a result of the performance delivered in the first half, together with the Board's current assessment of the outlook for the remainder of the financial year ending 27 March 2027, the Board now expects full-year Adjusted EBITDA to be approximately 10% to 20% ahead of current market expectations of £9.4 million.",
    "file": "20261020_CRPR_Trading-Update.md"
+  },
+  {
+   "d": "2026-11-11",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "As announced on 20 October 2026, the Board now expects full-year Group Adjusted EBITDA to be in the range £10.3-£11.3m, being 10-20% higher than previous market guidance and approximately 15-25% above FY26.",
+   "file": "20261111_CRPR_Interim-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-20",
-  "doc": "H1 TU",
-  "file": "20261020_CRPR_Trading-Update.md",
-  "vs": "H1 R Nov-25 · AGM Sep-26 · FY R Jul-26 · YE-TU Apr-26 · AGM Sep-25",
+  "rns": "2026-11-11",
+  "doc": "H1 R",
+  "file": "20261111_CRPR_Interim-Results.md",
+  "vs": "H1 R Nov-25 · TU Oct-26 · AGM Sep-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Split withheld",
-    "text": "Advanced Materials: Nov-25 H1 “Advanced Materials revenue grew 13.4% to £19.0m”; Sep-26 AGM “Advanced Materials revenue remains broadly in line with the same period in the prior year” → Oct-26 no AM figure or comment; upgrade put down “principally” to Paper & Packaging, after Jul-26 flagged an “expected short-term decline in Business Unit Revenues”",
-    "span": "AM line given in every TU since Jul-25 (Jul-25, Sep-25, Apr-26, Sep-26) → first TU without it"
+    "type": "New caution",
+    "text": "Paper & Packaging H1 growth helped by “a one-off inventory build by a major customer extending its distribution channels”; H2 expected to “return to more normal seasonally adjusted levels”",
+    "span": "First flagged; not in H1 R Nov-25 or TU Oct-26"
    },
    {
     "sev": "grey",
-    "type": "Went quiet",
-    "text": "Net debt: Sep-25 AGM “net debt of £10.3m as at 2 August 2025”, Nov-25 “Net debt at the period end of £10.5m”, Jul-26 “Net debt at the period end was £8.1m” → Sep-26 AGM and Oct-26 H1 TU give no net debt figure",
-    "span": "Given at Sep-25, Nov-25, Apr-26, Jul-26 → absent in last two updates (interims due Nov-26)"
+    "type": "Anchor softened",
+    "text": "TU Oct-26: “approximately 10% to 20% ahead of current market expectations of £9.4 million” → now “10-20% higher than previous market guidance”, £9.4m not restated; current trading “in line with the Board’s expectations” (AGM Sep-26: “in line with market expectations”)",
+    "span": "EBITDA range £10.3-£11.3m unchanged"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "FY27 guide quantified: Jul-26 “underpinning the Board's expectations for the full year”, Sep-26 “The Board expects full year trading to be in line with market expectations.” → Oct-26 “approximately 10% to 20% ahead of current market expectations of £9.4 million”, i.e. “£10.3 million to £11.3 million”",
-    "span": "First numeric FY27 Adjusted EBITDA range; consensus figure printed for the first time this year"
+    "text": "New H2 guides: “Advanced Materials revenue and Adjusted EBITDA in H2 FY27 are expected to be similar to H1 FY27” and “FY27 year-end net debt is expected to be above H1 FY27 but remain below the FY26 year-end level” (H1 R Nov-25: “The Board's expectations for the Group's year-end net debt position are unchanged”)",
+    "span": "H1 R Nov-25 → Nov-26"
    }
   ]
  }

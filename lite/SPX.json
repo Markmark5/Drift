@@ -1,8 +1,8 @@
 {
  "ticker": "SPX",
- "v": "2026-10-21.559b",
+ "v": "2026-11-11.0599",
  "ccy": "GBX",
- "src": "Yahoo SPX.L weekly",
+ "src": "Yahoo SPX.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,18 @@
   [
    "2026-10-21",
    7280.0
+  ],
+  [
+   "2026-10-23",
+   7230.0
+  ],
+  [
+   "2026-10-30",
+   7540.0
+  ],
+  [
+   "2026-11-06",
+   7350.0
   ]
  ],
  "marks": [
@@ -1244,32 +1256,41 @@
    "s": 0,
    "q": "Continuing momentum in end markets such as Semicon and Biopharm as well as strong orderbooks, underpin our expectations for second half revenue and profit growth and we are reiterating our full year guidance.",
    "file": "20260811_SPX_2026-Half-Year-Results.md"
+  },
+  {
+   "d": "2026-11-11",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "We continue to expect mid-single-digit organic growth in Group revenues and a Group adjusted operating profit margin higher than the 2025 margin of 20.0%.",
+   "file": "20261111_SPX_Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-11",
-  "doc": "H1 R",
-  "file": "20260811_SPX_2026-Half-Year-Results.md",
-  "vs": "H1 R Aug-25 · back to Aug-24 · prev TU May-26 · FY R Mar-26",
+  "rns": "2026-11-11",
+  "doc": "Q3 TU",
+  "file": "20261111_SPX_Trading-Update.md",
+  "vs": "Q3 TU Nov-25 · back to Nov-23 · prev H1 R Aug-26 · Q1 TU May-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Number to words",
-    "text": "Technical guidance: Aug-25 “We expect corporate costs to be approximately £40 million, net financing costs to be approximately £40 million and an effective tax rate of 27%.” → Aug-26 “We anticipate net financing costs, effective tax rate and cash conversion to be similar to 2025 levels.”",
-    "span": "Numeric at H1 Aug-24 (cash conversion ~75%) and Aug-25 (above 80%) → first H1 without figures"
+    "type": "Went quiet",
+    "text": "Profit growth guide: Aug-26 “with operating leverage driving growth in adjusted operating profit and EPS ahead of the organic growth in revenues” (Nov-25: “driving mid-single digit organic growth in adjusted operating profit”) → now only “a Group adjusted operating profit margin higher than the 2025 margin of 20.0%”",
+    "span": "Nov-25, Aug-26 → Nov-26; margin guide unchanged"
    },
    {
     "sev": "amber",
-    "type": "Target dropped",
-    "text": "STS margin: Mar-26 full-year guide was a slight organic improvement (results PDF) → Aug-26 “STS margin3 reflects phasing of shipments and investment in growth; full year broadly in line with 2025”",
-    "span": "Mar-26 → Aug-26; Group margin guide unchanged"
+    "type": "Went quiet",
+    "text": "IP (Industrial Production) figures: Nov-25 “full year forecasts have been revised down to 1.6%”; Aug-26 revenue guide “well ahead of IP” → Nov-26 no IP figure or IP comparison anywhere",
+    "span": "IP given at every update Nov-23, Nov-24, Nov-25, May-26 and Aug-26 → first gap"
    },
    {
-    "sev": "grey",
-    "type": "Wording vs number",
-    "text": "Cash conversion 61% → 54%: Aug-25 “Improved adjusted cash conversion of 61% reflects capital discipline and working capital efficiency” → Aug-26 “Adjusted cash conversion reflects usual seasonality and planned inventory builds”",
-    "span": "H1-25 → H1-26, down 700bps"
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Cash conversion: Aug-26 “We anticipate net financing costs, effective tax rate and cash conversion to be similar to 2025 levels.” → now “We expect cash conversion of around 90% for the full year.”",
+    "span": "Words at Aug-26 → number at Nov-26"
    }
   ]
  }
