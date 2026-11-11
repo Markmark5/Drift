@@ -1727,17 +1727,17 @@
       "company": "4imprint Group plc",
       "kind": "ticker",
       "direction": "watch",
-      "headline": "Guide restored above consensus at $130m, and the demand side turned first — the profit fall is an import-tax bill, not a broken business.",
-      "trigger": "Hard/G fired alone and on the lagging rank: seven consecutive red turns on adjusted profit before tax plus a first gross margin red discounted to a disclosed, bounded tariff event one period old. Language fired at Mar-26 and May-26 and reversed at this RNS; the FY25 Drift withhold was answered by re-quantification at finer grain. Disclosure fired the green-shoot mirror at this RNS on two limbs — dropped metric re-quantified at finer grain, dropped numeric guide resumed. Two conditions fired in opposite directions, so nothing converges and no alert follows.",
+      "headline": "Guide held at $130m as consensus caught up; new-customer decline narrowed again to −3%, but margins kept slipping through the autumn.",
+      "trigger": "Numbers & guide fired red on a continuing run — seven red turns on adjusted profit before tax and a first gross margin fall at H1-26. Disclosure fired the green-shoot mirror at Aug-26. Language is technically met on the Mar-26 and May-26 prints but discounted by the August reversal; Nov-26 scored 0. Two conditions fired in opposite directions, so nothing converges and no alert follows. G at this RNS: flat — the guide was reaffirmed and consensus rose to meet it.",
       "alert": false,
       "fired": 2,
       "fired_of": 3,
       "lights": "rag",
-      "rns_type": "H1 Results",
-      "rns_date": "2026-08-05",
-      "build_date": "2026-08-09",
-      "spec_version": "v5.1",
-      "next_test": "FY26 results, March 2027: a second consecutive gross margin fall on the same tariff explanation would exhaust the discount and turn the read down.",
+      "rns_type": "Trading Statement",
+      "rns_date": "2026-11-10",
+      "build_date": "2026-11-11",
+      "spec_version": "v5.8",
+      "next_test": "Jan 2027 year-end update: does profit print at or above $130m, and does 'not less than' floor language return?",
       "url": "FOUR.html",
       "grid": {
         "labels": [
@@ -1765,8 +1765,34 @@
           "ggarrraaa",
           "--rrrrrrr"
         ],
-        "note": "Rows are the five ledger ranks in rank order at half-year grain, right-anchored on the H1 results of 5 August 2026."
-      }
+        "note": "Rows are the five ledger ranks in rank order at half-year grain, right-anchored on H1-26, the latest scored half; the 10 Nov 2026 Buy/Sell trading statement carries no grid column."
+      },
+      "prev": {
+        "direction": "watch",
+        "fired": 2,
+        "lights": "rag",
+        "rns_date": "2026-08-05",
+        "rns_type": "H1 Results"
+      },
+      "trend": {
+        "mode": "share",
+        "cells": "a-g",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": 0.5
+          },
+          {
+            "m": "EBITDA",
+            "gap": null
+          },
+          {
+            "m": "PBT",
+            "gap": 2
+          }
+        ]
+      },
+      "chart": "charts/FOUR.json?v=2026-11-11.0d96"
     },
     {
       "ticker": "BOOM",
