@@ -1,6 +1,6 @@
 {
  "ticker": "CAV",
- "v": "2026-10-27.5b38",
+ "v": "2026-11-11.515d",
  "ccy": "GBX",
  "src": "Yahoo CAV.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1056,6 +1056,14 @@
   [
    "2026-10-23",
    6.85
+  ],
+  [
+   "2026-10-30",
+   6.85
+  ],
+  [
+   "2026-11-06",
+   6.3
   ]
  ],
  "marks": [
@@ -1248,38 +1256,47 @@
    "s": -2,
    "q": "Despite challenging conditions in the year to date, we are increasingly seeing good prospects being generated from several areas of targeted investment in the prior periods, including our business outside London.",
    "file": "20261013_CAV_Half-Year-Trading-Update.md"
+  },
+  {
+   "d": "2026-11-11",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -2,
+   "q": "Despite the slow start to the year with pressure on all businesses resulting from significant geopolitical and economic headwinds, we are increasingly seeing good prospects being generated from several areas of targeted investment in the prior periods.",
+   "file": "20261111_CAV_Interim-Results-and-Board-Change.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-13",
-  "doc": "H1 TU",
-  "file": "20261013_CAV_Half-Year-Trading-Update.md",
-  "vs": "H1 TU Oct-25 · back to Oct-24 · FY R Jun-26 · YE-TU Apr-26",
+  "rns": "2026-11-11",
+  "doc": "H1 R",
+  "file": "20261111_CAV_Interim-Results-and-Board-Change.md",
+  "vs": "H1 R Oct-25 · back to Nov-24 · H1 TU Oct-26",
   "lines": [
    {
-    "sev": "red",
-    "type": "Went quiet",
-    "text": "Profit line: Oct-25 “Our continued profitability demonstrates the broad appeal of our service offering and the efficiency of our platform” (Oct-24 “Our profitable first half”) → Oct-26 no profit or loss statement for H1, and the “Profitable first half” headline is gone",
-    "span": "Profitability stated in H1 TU Oct-24, Oct-25 and YE-TU Apr-25, Apr-26 → first gap"
-   },
-   {
     "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Oct-25 “Group revenue for the period is expected to be about £28.0m versus £27.5m in the same period last year” → Oct-26 “the Group revenue for the period is expected to be about £22.8m”, no prior-year comparator; about 19% lower",
-    "span": "Comparator given Oct-24 and Oct-25"
+    "type": "Restated",
+    "text": "Profit measure redefined: H1 R Oct-25 “Adjusted profit before tax is prior to share-based payments, share of associate profits and fair value gains and losses on long term investments” → now “Core profit before tax” excludes “share of associate losses, restructuring costs and fair value gains and losses on long term investments” (adjusting items £333k vs £36k)",
+    "span": "Core PBT £0.8m vs £2.0m; statutory loss before tax £0.5m"
    },
    {
     "sev": "amber",
     "type": "Went quiet",
-    "text": "Oct-25 “Cash balances of £19.8m at 30 September 2025 have increased 15% year-on-year” (Oct-24: £17.2m) → Oct-26 no cash figure",
-    "span": "Period-end cash given in H1 TU Oct-24 and Oct-25 → first gap"
+    "text": "Interim dividend: “The Board has declared an interim dividend of 0.3p per share in respect of the six months ended 30 September 2025” → now “The Board has decided not to declare an interim dividend in respect of the six months ended 30 September 2026”",
+    "span": "0.3p at Nov-24 and Oct-25 → first interim skipped since dividends resumed"
    },
    {
-    "sev": "amber",
-    "type": "New caution",
-    "text": "“as we have seen in the first half of the year, completion timetables, and therefore revenue visibility, remain difficult to predict”, against Oct-25 “the Group is well positioned to deliver an encouraging close to the financial year”",
-    "span": "First explicit revenue-visibility warning"
+    "sev": "grey",
+    "type": "Demoted",
+    "text": "Cash dropped from the highlights: Oct-25 “Cash balances at 30 September 2025 of £19.8m, an increase of 15% vs the same date last year” → now only in Capital Strength, “The cash balance of £10.6m at 30 September 2026 is lower at this point than at the same time last year (£19.8m)”",
+    "span": "Highlight at Nov-24, Oct-25; also in H1 TU Oct-24, Oct-25 but not Oct-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "New cost target: “Continued cost control will reduce annualised costs by more than £3m” (over £1m non-employee, about £2m employee) over the next six months",
+    "span": "Not given at Oct-25 or Oct-26 TU"
    }
   ]
  }
