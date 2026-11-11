@@ -471,19 +471,19 @@
       "ticker": "BILN",
       "company": "Billington Holdings Plc",
       "kind": "ticker",
-      "direction": "watch",
-      "headline": "Profit up 84% and “record” back on the order book — yet FY26 held at in-line, H1 banked a light share, and hours went quiet.",
-      "trigger": "2 of 3 lit, opposite directions — no alert: Numbers & guide green (revenue and steel content green two halves running, second printed); Disclosure red (Dec-25 year-end update skipped); Language unlit (in-line x3).",
-      "alert": false,
+      "direction": "down",
+      "headline": "FY26 guide cut 34–52% below the £8.3m consensus, five weeks after “in line” — one contract loss, one deferral, order book still record.",
+      "trigger": "2 of 3 lit, same direction — ALERT: Numbers & guide red (G CUT, £4.0–5.5m vs £8.3m); Language red (−3, “below current market expectations”); Disclosure amber (year-end update resumed, but as a forced warning).",
+      "alert": true,
       "fired": 2,
       "fired_of": 3,
-      "lights": "g-r",
-      "rns_type": "H1 R",
-      "rns_date": "2026-09-29",
-      "build_date": "2026-09-30",
-      "spec_version": "v5.6",
-      "next_test": "Dec 2026 — does a year-end update appear after last December's silence, and does 'in line' become 'ahead'? CMD 26 Nov first.",
-      "url": "BILN.html",
+      "lights": "rra",
+      "rns_type": "YE-TU",
+      "rns_date": "2026-11-06",
+      "build_date": "2026-11-11",
+      "spec_version": "v5.8",
+      "next_test": "CMD 26 Nov, then FY R Apr-27 — does the outturn reach the £5.5m top, and does an FY27 guide near £9.5m consensus survive?",
+      "url": "20261111_BILN_Drift_Tracker.html",
       "grid": {
         "labels": [
           "R1",
@@ -513,11 +513,11 @@
         "note": "R1 revenue, R2 steel content, R3 labour intensity (inverted), R4 underlying PBT, R5 steel-frames segment margin; half-year cells, rightmost = H1 FY26"
       },
       "prev": {
-        "direction": "down",
-        "fired": 3,
-        "lights": "rrr",
-        "rns_date": "2026-04-21",
-        "rns_type": "FY R"
+        "direction": "watch",
+        "fired": 2,
+        "lights": "g-r",
+        "rns_date": "2026-09-29",
+        "rns_type": "H1 R"
       },
       "trend": {
         "mode": "share",
@@ -536,7 +536,8 @@
             "gap": -2.3
           }
         ]
-      }
+      },
+      "chart": "charts/BILN.json?v=2026-11-11.8818"
     },
     {
       "ticker": "DSCV",
