@@ -1,0 +1,1293 @@
+{
+ "ticker": "ITV",
+ "v": "2026-11-11.1e25",
+ "ccy": "GBX",
+ "src": "AlphaVantage ITV.LON weekly",
+ "adj": [],
+ "px": [
+  [
+   "2021-11-05",
+   112.0
+  ],
+  [
+   "2021-11-12",
+   125.1
+  ],
+  [
+   "2021-11-19",
+   120.7
+  ],
+  [
+   "2021-11-26",
+   108.6
+  ],
+  [
+   "2021-12-03",
+   110.45
+  ],
+  [
+   "2021-12-10",
+   111.4
+  ],
+  [
+   "2021-12-17",
+   107.8
+  ],
+  [
+   "2021-12-24",
+   111.15
+  ],
+  [
+   "2021-12-31",
+   110.55
+  ],
+  [
+   "2022-01-07",
+   114.3
+  ],
+  [
+   "2022-01-14",
+   117.9
+  ],
+  [
+   "2022-01-21",
+   113.5
+  ],
+  [
+   "2022-01-28",
+   111.4
+  ],
+  [
+   "2022-02-04",
+   113.5
+  ],
+  [
+   "2022-02-11",
+   123.65
+  ],
+  [
+   "2022-02-18",
+   116.95
+  ],
+  [
+   "2022-02-25",
+   113.1
+  ],
+  [
+   "2022-03-04",
+   75.26
+  ],
+  [
+   "2022-03-11",
+   83.76
+  ],
+  [
+   "2022-03-18",
+   83.82
+  ],
+  [
+   "2022-03-25",
+   81.4
+  ],
+  [
+   "2022-04-01",
+   82.42
+  ],
+  [
+   "2022-04-08",
+   79.08
+  ],
+  [
+   "2022-04-14",
+   77.02
+  ],
+  [
+   "2022-04-22",
+   75.5
+  ],
+  [
+   "2022-04-29",
+   74.3
+  ],
+  [
+   "2022-05-06",
+   69.4
+  ],
+  [
+   "2022-05-13",
+   69.6
+  ],
+  [
+   "2022-05-20",
+   71.52
+  ],
+  [
+   "2022-05-27",
+   70.64
+  ],
+  [
+   "2022-06-01",
+   70.6
+  ],
+  [
+   "2022-06-10",
+   68.52
+  ],
+  [
+   "2022-06-17",
+   65.4
+  ],
+  [
+   "2022-06-24",
+   69.08
+  ],
+  [
+   "2022-07-01",
+   65.62
+  ],
+  [
+   "2022-07-08",
+   67.9
+  ],
+  [
+   "2022-07-15",
+   64.4
+  ],
+  [
+   "2022-07-22",
+   70.2
+  ],
+  [
+   "2022-07-29",
+   73.54
+  ],
+  [
+   "2022-08-05",
+   72.02
+  ],
+  [
+   "2022-08-12",
+   73.16
+  ],
+  [
+   "2022-08-19",
+   66.64
+  ],
+  [
+   "2022-08-26",
+   63.82
+  ],
+  [
+   "2022-09-02",
+   63.74
+  ],
+  [
+   "2022-09-09",
+   64.64
+  ],
+  [
+   "2022-09-16",
+   63.44
+  ],
+  [
+   "2022-09-23",
+   60.64
+  ],
+  [
+   "2022-09-30",
+   57.28
+  ],
+  [
+   "2022-10-07",
+   58.64
+  ],
+  [
+   "2022-10-14",
+   61.7
+  ],
+  [
+   "2022-10-21",
+   65.0
+  ],
+  [
+   "2022-10-28",
+   66.82
+  ],
+  [
+   "2022-11-04",
+   68.6
+  ],
+  [
+   "2022-11-11",
+   77.78
+  ],
+  [
+   "2022-11-18",
+   74.26
+  ],
+  [
+   "2022-11-25",
+   78.14
+  ],
+  [
+   "2022-12-02",
+   76.06
+  ],
+  [
+   "2022-12-09",
+   75.56
+  ],
+  [
+   "2022-12-16",
+   69.44
+  ],
+  [
+   "2022-12-23",
+   74.24
+  ],
+  [
+   "2022-12-30",
+   75.16
+  ],
+  [
+   "2023-01-06",
+   79.6
+  ],
+  [
+   "2023-01-13",
+   78.54
+  ],
+  [
+   "2023-01-20",
+   79.06
+  ],
+  [
+   "2023-01-27",
+   82.94
+  ],
+  [
+   "2023-02-03",
+   87.48
+  ],
+  [
+   "2023-02-10",
+   88.6
+  ],
+  [
+   "2023-02-17",
+   89.0
+  ],
+  [
+   "2023-02-24",
+   87.88
+  ],
+  [
+   "2023-03-03",
+   87.32
+  ],
+  [
+   "2023-03-10",
+   85.16
+  ],
+  [
+   "2023-03-17",
+   78.54
+  ],
+  [
+   "2023-03-24",
+   81.48
+  ],
+  [
+   "2023-03-31",
+   82.8
+  ],
+  [
+   "2023-04-06",
+   81.1
+  ],
+  [
+   "2023-04-14",
+   81.26
+  ],
+  [
+   "2023-04-21",
+   82.76
+  ],
+  [
+   "2023-04-28",
+   80.78
+  ],
+  [
+   "2023-05-05",
+   79.0
+  ],
+  [
+   "2023-05-12",
+   74.56
+  ],
+  [
+   "2023-05-19",
+   75.58
+  ],
+  [
+   "2023-05-26",
+   71.62
+  ],
+  [
+   "2023-06-02",
+   71.66
+  ],
+  [
+   "2023-06-09",
+   70.1
+  ],
+  [
+   "2023-06-16",
+   70.64
+  ],
+  [
+   "2023-06-23",
+   66.7
+  ],
+  [
+   "2023-06-30",
+   68.3
+  ],
+  [
+   "2023-07-07",
+   66.4
+  ],
+  [
+   "2023-07-14",
+   68.02
+  ],
+  [
+   "2023-07-21",
+   68.58
+  ],
+  [
+   "2023-07-28",
+   72.32
+  ],
+  [
+   "2023-08-04",
+   73.44
+  ],
+  [
+   "2023-08-11",
+   73.78
+  ],
+  [
+   "2023-08-18",
+   70.1
+  ],
+  [
+   "2023-08-25",
+   68.92
+  ],
+  [
+   "2023-09-01",
+   70.64
+  ],
+  [
+   "2023-09-08",
+   71.0
+  ],
+  [
+   "2023-09-15",
+   72.76
+  ],
+  [
+   "2023-09-22",
+   72.98
+  ],
+  [
+   "2023-09-29",
+   70.62
+  ],
+  [
+   "2023-10-06",
+   67.5
+  ],
+  [
+   "2023-10-13",
+   65.04
+  ],
+  [
+   "2023-10-20",
+   63.88
+  ],
+  [
+   "2023-10-27",
+   62.2
+  ],
+  [
+   "2023-11-03",
+   66.78
+  ],
+  [
+   "2023-11-10",
+   59.72
+  ],
+  [
+   "2023-11-17",
+   61.92
+  ],
+  [
+   "2023-11-24",
+   61.3
+  ],
+  [
+   "2023-12-01",
+   59.76
+  ],
+  [
+   "2023-12-08",
+   60.9
+  ],
+  [
+   "2023-12-15",
+   63.18
+  ],
+  [
+   "2023-12-22",
+   63.36
+  ],
+  [
+   "2023-12-29",
+   63.28
+  ],
+  [
+   "2024-01-05",
+   63.12
+  ],
+  [
+   "2024-01-12",
+   59.8
+  ],
+  [
+   "2024-01-19",
+   59.74
+  ],
+  [
+   "2024-01-26",
+   61.76
+  ],
+  [
+   "2024-02-02",
+   58.92
+  ],
+  [
+   "2024-02-09",
+   57.86
+  ],
+  [
+   "2024-02-16",
+   58.34
+  ],
+  [
+   "2024-02-23",
+   58.0
+  ],
+  [
+   "2024-03-01",
+   63.96
+  ],
+  [
+   "2024-03-08",
+   70.54
+  ],
+  [
+   "2024-03-15",
+   71.28
+  ],
+  [
+   "2024-03-22",
+   71.06
+  ],
+  [
+   "2024-03-28",
+   73.9
+  ],
+  [
+   "2024-04-05",
+   73.95
+  ],
+  [
+   "2024-04-12",
+   70.7
+  ],
+  [
+   "2024-04-19",
+   69.85
+  ],
+  [
+   "2024-04-26",
+   70.5
+  ],
+  [
+   "2024-05-03",
+   72.0
+  ],
+  [
+   "2024-05-10",
+   78.3
+  ],
+  [
+   "2024-05-17",
+   78.4
+  ],
+  [
+   "2024-05-24",
+   77.2
+  ],
+  [
+   "2024-05-31",
+   79.6
+  ],
+  [
+   "2024-06-07",
+   79.05
+  ],
+  [
+   "2024-06-14",
+   75.7
+  ],
+  [
+   "2024-06-21",
+   80.3
+  ],
+  [
+   "2024-06-28",
+   80.5
+  ],
+  [
+   "2024-07-05",
+   83.9
+  ],
+  [
+   "2024-07-12",
+   83.15
+  ],
+  [
+   "2024-07-19",
+   84.0
+  ],
+  [
+   "2024-07-26",
+   80.75
+  ],
+  [
+   "2024-08-02",
+   78.05
+  ],
+  [
+   "2024-08-09",
+   78.05
+  ],
+  [
+   "2024-08-16",
+   79.65
+  ],
+  [
+   "2024-08-23",
+   81.5
+  ],
+  [
+   "2024-08-30",
+   79.7
+  ],
+  [
+   "2024-09-06",
+   78.65
+  ],
+  [
+   "2024-09-13",
+   79.9
+  ],
+  [
+   "2024-09-20",
+   80.65
+  ],
+  [
+   "2024-09-27",
+   82.2
+  ],
+  [
+   "2024-10-04",
+   78.85
+  ],
+  [
+   "2024-10-11",
+   77.15
+  ],
+  [
+   "2024-10-18",
+   77.4
+  ],
+  [
+   "2024-10-25",
+   75.25
+  ],
+  [
+   "2024-11-01",
+   74.2
+  ],
+  [
+   "2024-11-08",
+   63.0
+  ],
+  [
+   "2024-11-15",
+   62.3
+  ],
+  [
+   "2024-11-22",
+   65.5
+  ],
+  [
+   "2024-11-29",
+   72.65
+  ],
+  [
+   "2024-12-06",
+   73.55
+  ],
+  [
+   "2024-12-13",
+   74.35
+  ],
+  [
+   "2024-12-20",
+   72.7
+  ],
+  [
+   "2024-12-24",
+   72.85
+  ],
+  [
+   "2024-12-27",
+   72.8
+  ],
+  [
+   "2025-01-03",
+   72.6
+  ],
+  [
+   "2025-01-10",
+   69.9
+  ],
+  [
+   "2025-01-17",
+   71.7
+  ],
+  [
+   "2025-01-24",
+   70.45
+  ],
+  [
+   "2025-01-31",
+   74.15
+  ],
+  [
+   "2025-02-07",
+   74.05
+  ],
+  [
+   "2025-02-14",
+   76.55
+  ],
+  [
+   "2025-02-21",
+   75.15
+  ],
+  [
+   "2025-02-28",
+   71.1
+  ],
+  [
+   "2025-03-07",
+   78.8
+  ],
+  [
+   "2025-03-14",
+   76.95
+  ],
+  [
+   "2025-03-21",
+   80.85
+  ],
+  [
+   "2025-03-28",
+   80.0
+  ],
+  [
+   "2025-04-04",
+   70.9
+  ],
+  [
+   "2025-04-11",
+   67.3
+  ],
+  [
+   "2025-04-17",
+   75.5
+  ],
+  [
+   "2025-04-25",
+   80.8
+  ],
+  [
+   "2025-05-02",
+   80.0
+  ],
+  [
+   "2025-05-09",
+   77.65
+  ],
+  [
+   "2025-05-16",
+   77.95
+  ],
+  [
+   "2025-05-23",
+   78.05
+  ],
+  [
+   "2025-05-30",
+   78.0
+  ],
+  [
+   "2025-06-06",
+   75.6
+  ],
+  [
+   "2025-06-13",
+   83.45
+  ],
+  [
+   "2025-06-20",
+   82.15
+  ],
+  [
+   "2025-06-27",
+   83.15
+  ],
+  [
+   "2025-07-04",
+   83.3
+  ],
+  [
+   "2025-07-11",
+   79.2
+  ],
+  [
+   "2025-07-18",
+   79.65
+  ],
+  [
+   "2025-07-25",
+   85.7
+  ],
+  [
+   "2025-08-01",
+   81.75
+  ],
+  [
+   "2025-08-08",
+   81.7
+  ],
+  [
+   "2025-08-15",
+   81.75
+  ],
+  [
+   "2025-08-22",
+   83.6
+  ],
+  [
+   "2025-08-29",
+   81.55
+  ],
+  [
+   "2025-09-05",
+   82.5
+  ],
+  [
+   "2025-09-12",
+   81.3
+  ],
+  [
+   "2025-09-19",
+   79.2
+  ],
+  [
+   "2025-09-26",
+   78.95
+  ],
+  [
+   "2025-10-03",
+   77.5
+  ],
+  [
+   "2025-10-10",
+   75.85
+  ],
+  [
+   "2025-10-17",
+   74.35
+  ],
+  [
+   "2025-10-24",
+   70.75
+  ],
+  [
+   "2025-10-31",
+   69.65
+  ],
+  [
+   "2025-11-07",
+   78.95
+  ],
+  [
+   "2025-11-14",
+   79.0
+  ],
+  [
+   "2025-11-21",
+   77.8
+  ],
+  [
+   "2025-11-28",
+   82.25
+  ],
+  [
+   "2025-12-05",
+   82.2
+  ],
+  [
+   "2025-12-12",
+   82.85
+  ],
+  [
+   "2025-12-19",
+   81.1
+  ],
+  [
+   "2025-12-24",
+   81.45
+  ],
+  [
+   "2026-01-02",
+   80.4
+  ],
+  [
+   "2026-01-09",
+   81.2
+  ],
+  [
+   "2026-01-16",
+   80.7
+  ],
+  [
+   "2026-01-23",
+   81.45
+  ],
+  [
+   "2026-01-30",
+   81.25
+  ],
+  [
+   "2026-02-06",
+   83.7
+  ],
+  [
+   "2026-02-13",
+   80.5
+  ],
+  [
+   "2026-02-20",
+   80.65
+  ],
+  [
+   "2026-02-27",
+   79.85
+  ],
+  [
+   "2026-03-06",
+   84.25
+  ],
+  [
+   "2026-03-13",
+   83.4
+  ],
+  [
+   "2026-03-20",
+   77.9
+  ],
+  [
+   "2026-03-27",
+   75.4
+  ],
+  [
+   "2026-04-02",
+   76.35
+  ],
+  [
+   "2026-04-10",
+   76.9
+  ],
+  [
+   "2026-04-17",
+   82.05
+  ],
+  [
+   "2026-04-24",
+   80.25
+  ],
+  [
+   "2026-05-01",
+   81.0
+  ],
+  [
+   "2026-05-08",
+   81.0
+  ],
+  [
+   "2026-05-15",
+   77.3
+  ],
+  [
+   "2026-05-22",
+   81.35
+  ],
+  [
+   "2026-05-29",
+   82.2
+  ],
+  [
+   "2026-06-05",
+   82.65
+  ],
+  [
+   "2026-06-12",
+   82.7
+  ],
+  [
+   "2026-06-19",
+   80.6
+  ],
+  [
+   "2026-06-26",
+   81.75
+  ],
+  [
+   "2026-07-03",
+   81.75
+  ],
+  [
+   "2026-07-10",
+   73.9
+  ],
+  [
+   "2026-07-17",
+   73.1
+  ],
+  [
+   "2026-07-24",
+   73.05
+  ],
+  [
+   "2026-07-31",
+   74.25
+  ],
+  [
+   "2026-08-07",
+   73.0
+  ],
+  [
+   "2026-08-14",
+   71.5
+  ],
+  [
+   "2026-08-21",
+   71.85
+  ],
+  [
+   "2026-08-28",
+   71.0
+  ],
+  [
+   "2026-09-04",
+   71.1
+  ],
+  [
+   "2026-09-11",
+   70.45
+  ],
+  [
+   "2026-09-18",
+   68.95
+  ],
+  [
+   "2026-09-25",
+   68.55
+  ],
+  [
+   "2026-10-02",
+   66.75
+  ],
+  [
+   "2026-10-09",
+   66.45
+  ],
+  [
+   "2026-10-16",
+   66.3
+  ],
+  [
+   "2026-10-23",
+   64.3
+  ],
+  [
+   "2026-10-30",
+   64.65
+  ],
+  [
+   "2026-11-06",
+   66.2
+  ],
+  [
+   "2026-11-10",
+   66.8
+  ]
+ ],
+ "marks": [
+  {
+   "d": "2022-03-03",
+   "doc": "FY R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "The demand for advertising has remained strong with Q1 expected to be up around 16%. April is expected to be up around 10%.",
+   "file": "20220303_ITV_Final-Results.md"
+  },
+  {
+   "d": "2022-05-11",
+   "doc": "Q1 TU",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 0,
+   "q": "As expected, advertising comparatives get much tougher in Q2 and Q3 against the Euro Football championships in 2021 and we are mindful of the macroeconomic and geopolitical uncertainty",
+   "file": "20220511_ITV_ITV-plc-Q1-Trading-Update.md"
+  },
+  {
+   "d": "2022-07-28",
+   "doc": "H1 R",
+   "fy": "FY22",
+   "g": "flat",
+   "s": 1,
+   "q": "ITV has recorded a strong performance across the business with both our Studios and Media & Entertainment divisions performing better in the first half than we expected at the beginning of the year.",
+   "file": "20220728_ITV_Half-year-Report.md"
+  },
+  {
+   "d": "2022-11-09",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 0,
+   "q": "With our strong position in a growing market, we expect ITV Studios to deliver revenue growth in excess of our 5% medium-term target in 2023",
+   "file": "20221109_ITV_Q3-Trading-Update.md"
+  },
+  {
+   "d": "2023-03-02",
+   "doc": "FY R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -2,
+   "q": "Nevertheless, the outlook for TAR is challenging given the current macroeconomic environment and TAR is expected to be down around 11% in Q1 compared to 2022 and down around 1% compared to 2019.",
+   "file": "20230302_ITV_Final-Results.md"
+  },
+  {
+   "d": "2023-05-11",
+   "doc": "Q1 TU",
+   "fy": "FY23",
+   "g": "flat",
+   "s": -1,
+   "q": "In 2023, we are on track to deliver mid-single digit revenue growth, ahead of the market, following record revenues in Q4 2022 and the phasing of deliveries within 2023 weighted to the second half",
+   "file": "20230511_ITV_ITV-plc-Q1-Trading-Update.md"
+  },
+  {
+   "d": "2023-07-27",
+   "doc": "H1 R",
+   "fy": "FY23",
+   "g": "flat",
+   "s": 1,
+   "q": "Looking forward we see a more encouraging outlook as advertisers build their campaigns around the large streaming and linear audiences expected to be drawn to the Women's World Cup, the Rugby World Cup and the eagerly anticipated return of Big Brother.",
+   "file": "20230727_ITV_Half-year-Report.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2023-11-08",
+   "doc": "Q3 TU",
+   "fy": "FY23",
+   "g": "CUT",
+   "s": -2,
+   "q": "Over the full year 2023, we expect to deliver around 3% growth in total Studios revenue, following 19% growth in 2022.",
+   "file": "20231108_ITV_ITV-plc-Q3-Trading-Update.md"
+  },
+  {
+   "d": "2024-03-07",
+   "doc": "FY R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 0,
+   "q": "This ensures that we are well placed to grow profits from here as we continue to drive material efficiencies, invest behind our strategic priorities and deliver returns to shareholders.",
+   "file": "20240307_ITV_ITV-plc-Full-Year-results-2023.md"
+  },
+  {
+   "d": "2024-05-09",
+   "doc": "Q1 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "Total ITV Studios revenue for FY24 is expected to be broadly flat with a strong pipeline of programmes heavily weighted to H2",
+   "file": "20240509_ITV_ITV-Q1-Trading-Statement.md"
+  },
+  {
+   "d": "2024-07-25",
+   "doc": "H1 R",
+   "fy": "FY24",
+   "g": "flat",
+   "s": 1,
+   "q": "We are confident of delivering increased adjusted EBITA this year, following the year of peak net investment in 2023, and are on track to deliver our 2026 KPI targets.",
+   "file": "20240725_ITV_Half-year-Report.md",
+   "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2024-11-07",
+   "doc": "Q3 TU",
+   "fy": "FY24",
+   "g": "flat",
+   "s": -1,
+   "q": "Total Studios revenue is expected to decline mid-single digits over the full year which is only marginally down year on year excluding the impact of the US actors' and writers' strikes",
+   "file": "20241107_ITV_ITV-plc-Q3-Trading-Update.md"
+  },
+  {
+   "d": "2025-03-06",
+   "doc": "FY R",
+   "fy": "FY25",
+   "g": "flat",
+   "s": -1,
+   "q": "As expected, the margin in 2025 will be lower than in 2024, but remain within our target range of 13 to 15%.",
+   "file": "20250306_ITV_ITV-plc-Full-Year-Results-2024.md"
+  },
+  {
+   "d": "2025-05-15",
+   "doc": "Q1 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 0,
+   "q": "Our Q1 performance was in line with our expectations, demonstrating the continued successful implementation of our strategic priorities.",
+   "file": "20250515_ITV_ITV-plc-Q1-Trading-Update.md"
+  },
+  {
+   "d": "2025-07-24",
+   "doc": "H1 R",
+   "fy": "FY25",
+   "g": "RAISE",
+   "s": 2,
+   "q": "While the economic environment remains uncertain, we now expect a better outturn for the full year 2025, driven by these cost efficiencies.",
+   "file": "20250724_ITV_ITV-plc-Half-Year-Results-to-30-June-2025.md"
+  },
+  {
+   "d": "2025-11-06",
+   "doc": "Q3 TU",
+   "fy": "FY25",
+   "g": "flat",
+   "s": 1,
+   "q": "Our performance for the 9 months to the end of September was better than market expectations, as we continue to successfully execute our More Than TV strategy.",
+   "file": "20251106_ITV_ITV-plc-Q3-Trading-Update.md"
+  },
+  {
+   "d": "2026-03-05",
+   "doc": "FY R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "Full-year adjusted EBITA margin is expected to be at the lower end of the 13% to 15% range, reflecting the revenue mix in the year.",
+   "file": "20260305_ITV_ITV-plc-Full-Year-Results-2025.md"
+  },
+  {
+   "d": "2026-05-14",
+   "doc": "Q1 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "ITV maintained good momentum in the first quarter of 2026, delivering results in line with market expectations.",
+   "file": "20260514_ITV_ITV-plc-Q1-Trading-Update.md"
+  },
+  {
+   "d": "2026-07-06",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Our expectations for the current year remain unchanged. As in previous years, Studios growth and margin are weighted towards H2.",
+   "file": "20260706_ITV_SALE-OF-ITV-M&E-BUSINESS-TO-SKY.md"
+  },
+  {
+   "d": "2026-07-31",
+   "doc": "H1 R",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "H1 2026 Group financial performance broadly in line with expectations",
+   "file": "20260731_ITV_ITV-plc-Interim-Results-to-30-June-2026.md",
+   "gnote": "discounted: sale of M&E to Sky"
+  },
+  {
+   "d": "2026-11-11",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -2,
+   "q": "However, due to the weaker demand for advertising, we expect TAR to be down around 5-10% in Q4 and down around 2-3% for the full year 2026 when compared to the same period in 2025.",
+   "file": "20261111_ITV_ITV-plc-Q3-Trading-Update.md",
+   "gnote": "discounted: sale of M&E to Sky"
+  }
+ ],
+ "lite": true,
+ "disc": {
+  "rns": "2026-11-11",
+  "doc": "Q3 TU",
+  "file": "20261111_ITV_ITV-plc-Q3-Trading-Update.md",
+  "vs": "Q3 TU Nov-25 · H1 R Jul-26 · back to Q3 TU Nov-24 · Jul-25/Mar-26/May-26",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Last year: “Our performance for the 9 months to the end of September was better than market expectations” and May-26 “delivering results in line with market expectations” → this year no group expectations anchor at all; only Studios “was in line with our expectations”",
+    "span": "Market anchor given Jul-25, Nov-25, Mar-26, May-26 → “broadly in line with expectations” Jul-26 → gone Nov-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Jul-26: “TAR for the nine months to the end of September is expected to be flat year-on-year” and Q3 “down around 5%” → now 9M TAR down 1% and Q3 TAR down 8%, described as “slightly below previous guidance”; FY26 TAR now down around 2-3%",
+    "span": "Jul-26 H1 R → Nov-26 Q3 TU"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Permanent cost savings: Jul-26 “We are on track to deliver £20 million of non-content cost savings across the full year.” → no update now; only the £30m of temporary Q4 savings is given",
+    "span": "Permanent-savings progress updated at Q3 Nov-24 and Nov-25 → first Q3 without it"
+   },
+   {
+    "sev": "grey",
+    "type": "Target dropped",
+    "text": "2026 targets: Nov-25 “We remain on track to deliver at least £750 million of digital revenues by 2026” and Studios “total organic revenue growth of 5% on average per annum from 2021 to 2026” → not mentioned in the target year; 9M digital revenue £461m",
+    "span": "Stated every print to Nov-25 → absent Mar-26, May-26, Jul-26, Nov-26"
+   }
+  ]
+ }
+}

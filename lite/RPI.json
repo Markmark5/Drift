@@ -1,8 +1,8 @@
 {
  "ticker": "RPI",
- "v": "2026-10-20.c366",
+ "v": "2026-11-11.4032",
  "ccy": "GBX",
- "src": "AlphaVantage RPI.LON weekly",
+ "src": "AlphaVantage RPI.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -500,6 +500,18 @@
   [
    "2026-10-19",
    580.5
+  ],
+  [
+   "2026-10-23",
+   560.5
+  ],
+  [
+   "2026-10-30",
+   582.0
+  ],
+  [
+   "2026-11-06",
+   486.8
   ]
  ],
  "marks": [

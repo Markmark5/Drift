@@ -1,22 +1,10 @@
 {
  "ticker": "OTB",
- "v": "2026-10-20.892a",
+ "v": "2026-11-11.4581",
  "ccy": "GBX",
- "src": "AlphaVantage OTB.LON weekly",
+ "src": "AlphaVantage OTB.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-15",
-   363.5
-  ],
-  [
-   "2021-10-22",
-   330.5
-  ],
-  [
-   "2021-10-29",
-   298.5
-  ],
   [
    "2021-11-05",
    307.0
@@ -1060,18 +1048,21 @@
   [
    "2026-10-19",
    172.6
+  ],
+  [
+   "2026-10-23",
+   170.2
+  ],
+  [
+   "2026-10-30",
+   176.4
+  ],
+  [
+   "2026-11-06",
+   175.8
   ]
  ],
  "marks": [
-  {
-   "d": "2021-10-27",
-   "doc": "YE-TU",
-   "fy": "FY22",
-   "g": "flat",
-   "s": 0,
-   "q": "Given the continued level of short term uncertainty, it would not be appropriate to provide any financial guidance for the 2022 financial year.",
-   "file": "20211027_OTB_Full-Year-Trading-Update-and-Notice-of-Results.md"
-  },
   {
    "d": "2021-12-09",
    "doc": "FY R",
