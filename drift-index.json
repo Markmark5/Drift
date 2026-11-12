@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "tickers": [
     {
       "ticker": "STAF",
@@ -3580,17 +3580,17 @@
       "company": "Volex plc",
       "kind": "ticker",
       "direction": "up",
-      "headline": "First-ever AGM RAISE: 4-month organic +28%, FY27 profit guided ahead of a $138.3m consensus — momentum extending, comparator effect now the base case.",
-      "trigger": "Condition 1 fired green (five accelerating R1 prints Apr-25 →, G-RAISE on the Buy/Sell AGM itself). Conditions 2 and 3 unfired. Single-condition green — no 2-of-3.",
+      "headline": "Record H1: organic +23.6%, margin 11.1% — but H2 revenue is guided flat and the profit view only held as consensus rose to meet it.",
+      "trigger": "Condition 1 fired green (R1 H1 organic 23.6%, +9.4pp; Consumer back to sequential growth; margin +1.3pp) — R3 Data Centre slip watch-flagged and context-discounted. Condition 2 technically met, not counted (Language +2 → +1 → 0 as consensus rose onto an unchanged view). Condition 3 unfired. Single-condition green — no 2-of-3.",
       "alert": false,
       "fired": 1,
       "fired_of": 3,
-      "lights": "g--",
-      "rns_type": "AGM",
-      "rns_date": "2026-08-25",
-      "build_date": "2026-08-27",
-      "spec_version": "v5.4",
-      "next_test": "~mid-Oct 2026 H1 FY27 TU: H1 organic print still double-digit as the comparator normalises; guidance held ahead of the raised $138.3m bar.",
+      "lights": "ga-",
+      "rns_type": "H1 R",
+      "rns_date": "2026-11-12",
+      "build_date": "2026-11-12",
+      "spec_version": "v5.8",
+      "next_test": "Jan 2027 Q3 TU: does 9M organic hold double digits, and does the profit view move back above consensus.",
       "url": "VLX.html",
       "grid": {
         "labels": [
@@ -3601,7 +3601,6 @@
           "R5"
         ],
         "periods": [
-          "H2 22",
           "H1 23",
           "H2 23",
           "H1 24",
@@ -3609,29 +3608,44 @@
           "H1 25",
           "H2 25",
           "H1 26",
-          "H2 26"
+          "H2 26",
+          "H1 27"
         ],
         "rows": [
-          "--rrrgggg",
-          "---raggrr",
-          "---rrrrgg",
-          "---aggrrg",
-          "-agagaaga"
+          "-rrrggggg",
+          "--raggrrg",
+          "--rrrrggr",
+          "--aggrrgg",
+          "agagaagag"
         ],
         "note": "R1 organic CC growth (H1/FY prints mapped to half slots) · R2 Consumer Electricals · R3 CIT/Data Centre · R4 underlying operating profit · R5 underlying operating margin"
       },
       "trend": {
         "mode": "share",
-        "cells": "---",
-        "rows": []
+        "cells": "ggg",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": 5.2
+          },
+          {
+            "m": "EBITDA",
+            "gap": 7.5
+          },
+          {
+            "m": "PBT",
+            "gap": 9.3
+          }
+        ]
       },
       "prev": {
         "direction": "up",
         "fired": 1,
         "lights": "g--",
-        "rns_date": "2026-06-25",
-        "rns_type": "FY R"
-      }
+        "rns_date": "2026-10-19",
+        "rns_type": "H1 TU"
+      },
+      "chart": "charts/VLX.json?v=2026-11-12.9e7a"
     },
     {
       "ticker": "RSW",

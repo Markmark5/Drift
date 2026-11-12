@@ -42,8 +42,20 @@ h2{margin:30px 0 14px}
 .bbulb{width:20px;height:20px;border-radius:50%;flex:0 0 20px;border:2px solid rgba(255,255,255,.25)}
 .bstrip .t{font-size:13px;color:#fff;font-weight:600}
 .bstrip .s{font-size:11px;color:#c9c6bd;margin-top:2px}
-.tw{flex:1;border-left:1px dashed #57544c;padding-left:16px;min-width:0}
-.tw .plab{font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#8d8981;font-weight:700}
+.tw{flex:1; border-left:1px dashed #57544c; padding-left:16px; min-width:0}
+.tw .plab{font-size:9.5px; letter-spacing:.14em; text-transform:uppercase;
+color:#8d8981; font-weight:700}
+.tw .dset{display:flex; gap:20px; margin-top:8px}
+.tw .dcell{text-align:center; width:88px}
+.tw .dnm{font-size:9px; letter-spacing:.1em; color:#8d8981; margin-bottom:2px}
+.tw .dfig{font-size:11px; font-weight:700; margin-top:2px}
+.tw .dtrend{font-size:9px; color:#c9c6bd; margin-top:2px}
+.tw .dfc{font-size:8.5px; color:#6d6a62}
+@media(max-width:760px){
+.tw{border-left:none;border-top:1px dashed #57544c;padding-left:0;padding-top:10px;margin-top:2px}
+.tw .dset{justify-content:space-between;gap:8px}
+.tw .dcell{width:32%}
+}
 details.guide{margin:14px 0;border:1px solid var(--line);border-radius:10px;overflow:hidden}
 details.guide>summary{background:#2b2a26;color:#fff;padding:8px 15px;cursor:pointer;list-style:none;font-family:'Caveat',"Comic Sans MS",cursive;font-weight:700;font-size:24px}
 details.guide>summary::-webkit-details-marker{display:none}
@@ -80,7 +92,7 @@ details.guide>summary .em{font-size:22px;margin-right:6px}
 table.grid{table-layout:fixed;width:100%;min-width:1000px;border-collapse:collapse;font-size:12.5px}
 table.grid th,table.grid td{border:1px solid var(--line);text-align:center;padding:7px 4px;vertical-align:top}
 table.grid col.lab{width:190px}
-table.grid col.per{width:calc((100% - 190px)/10)}
+table.grid col.per{width:calc((100% - 190px)/11)}
 .yband{background:#efedE7;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:700}
 th.phead{cursor:pointer;user-select:none;font-size:11.5px;background:var(--paper)}
 th.phead:hover{background:#eceae4}
@@ -103,6 +115,11 @@ td.bs-col{background:#fcfbf8 !important}
 td.bs-col .val{font-weight:800}
 th.bs-col{font-weight:800}
 .hl{background:#fff6d9 !important}
+/* §3 price overlay */
+.ovl{max-width:1100px;border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:16px 0 30px;background:#fff}
+.ovh{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;font-size:13px;font-weight:700;margin-bottom:8px}
+.ovleg{font-size:11px;font-weight:400;color:var(--mute)}
+.ovcap{font-size:11px;color:var(--mute);margin-top:6px}
 /* drawers */
 details.top{border:1px solid #c6c2b9;background:var(--paper);border-radius:10px;margin:16px 0}
 details.top>summary{font-size:14px;padding:13px;cursor:pointer;font-weight:600}
@@ -136,45 +153,74 @@ details.top>div{padding:0 12px 12px;font-size:12.5px;line-height:1.55}
   <div class="railgap"></div>
  </div>
  <div class="cbody">
-  <h1 class="chead">First-ever AGM RAISE: 4-month organic +28%, FY27 profit guided ahead of a $138.3m consensus — momentum extending, comparator effect now the base case.</h1>
-  <div class="pills"><span class="pill">AGM Statement · 25 Aug 2026</span><span class="pill">FY-end 31 Mar</span><span class="dot">·</span><span class="pill">B/S: clean, 0.8x</span></div>
+  <h1 class="chead">Record H1: organic +23.6%, margin 11.1% — but H2 revenue is guided flat and the profit view only held as consensus rose to meet it.</h1>
+  <div class="pills"><span class="pill">H1 Results · 12 Nov 2026</span><span class="pill">FY-end 31 Mar</span><span class="dot">·</span><span class="pill">B/S: net debt, 1.1x</span></div>
   <div class="lights">
-   <div class="lamp"><div class="ldate">Apr-25 →</div><div class="bulb b-g"></div><div class="lname">Numbers &amp; guide</div><div class="lreason">Four accelerating organic prints; Jan G-RAISE delivered 13% over consensus</div></div>
-   <div class="lamp off"><div class="bulb b-o"></div><div class="lname">Language</div><div class="lreason">Lexicon positive and stable; no rise from ≤0, no drop</div></div>
-   <div class="lamp off"><div class="bulb b-o"></div><div class="lname">Disclosure</div><div class="lreason">Nothing withheld; Data Centre share newly quantified — expansion, not Drift</div></div>
+   <div class="lamp"><div class="ldate">Apr-25 →</div><div class="bulb b-g"></div><div class="lname">Numbers &amp; guide</div><div class="lreason">Organic +23.6%, margin +1.3pts; Consumer back to growth</div></div>
+   <div class="lamp amb"><div class="ldate">Nov-26</div><div class="bulb b-a"></div><div class="lname">Language</div><div class="lreason">Second step down: +2, +1, now 0 as consensus caught up</div></div>
+   <div class="lamp off"><div class="bulb b-o"></div><div class="lname">Disclosure</div><div class="lreason">All ten rows quantified; first consensus footnote at H1 results</div></div>
    <div class="tally"><b>1/3</b><span>FIRED</span></div>
    <div class="bstrip" style="flex-basis:100%">
-    <div class="bsweep"><div class="bbulb b-g"></div><div><div class="t">clean · net debt falling, 0.8x</div><div class="s">Sweep sits outside the 2-of-3 count</div></div></div>
-    <div class="tw"><div class="plab">TREND WATCH · 4M% VS 3YR% · FC AUG-26</div>
-     <div style="font-size:11px;color:#c9c6bd;margin-top:10px">n/a — no 4M actuals: the AGM quantifies rates only, and no period-to-date $ reading exists in the record to carry forward. Block current (saved 24 Aug, 1 day pre-RNS).</div></div>
+    <div class="bsweep"><div class="bbulb b-g"></div><div><div class="t">clean · leverage 1.1x</div><div class="s">Sweep sits outside the 2-of-3 count</div></div></div>
+    <div class="tw"><div class="plab">TREND WATCH · H1% VS 3YR% · FC NOV-26</div>
+<div class="dset">
+<div class="dcell"><div class="dnm">REVENUE</div>
+<svg width="50" height="50" viewBox="0 0 42 42">
+<circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/>
+<circle cx="21" cy="21" r="15.915" fill="none" stroke="#21d05e" stroke-width="5"
+stroke-dasharray="50 100" transform="rotate(-90 21 21)" stroke-linecap="round"/>
+<line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/>
+</svg>
+<div class="dfig" style="color:#7bd88f">+5.2pp</div>
+<div class="dtrend">51.3 vs 46.1</div><div class="dfc">at H1 R</div></div>
+<div class="dcell"><div class="dnm">EBITDA</div>
+<svg width="50" height="50" viewBox="0 0 42 42">
+<circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/>
+<circle cx="21" cy="21" r="15.915" fill="none" stroke="#21d05e" stroke-width="5"
+stroke-dasharray="54 100" transform="rotate(-90 21 21)" stroke-linecap="round"/>
+<line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/>
+</svg>
+<div class="dfig" style="color:#7bd88f">+7.5pp</div>
+<div class="dtrend">51.6 vs 44.1</div><div class="dfc">at H1 R</div></div>
+<div class="dcell"><div class="dnm">PBT</div>
+<svg width="50" height="50" viewBox="0 0 42 42">
+<circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/>
+<circle cx="21" cy="21" r="15.915" fill="none" stroke="#21d05e" stroke-width="5"
+stroke-dasharray="58 100" transform="rotate(-90 21 21)" stroke-linecap="round"/>
+<line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/>
+</svg>
+<div class="dfig" style="color:#7bd88f">+9.3pp</div>
+<div class="dtrend">52.9 vs 43.6</div><div class="dfc">at H1 R</div></div>
+</div></div>
    </div>
-<div class="mvrow" style="flex-basis:100%">
- <span class="mvlab">Since last RNS</span>
- <span class="mvval">TURNING UP · 1/3 held</span>
- <span class="mvsince">measured from FY R · 25 Jun 2026</span>
-</div>
+   <div class="mvrow" style="flex-basis:100%">
+    <span class="mvlab">Since last RNS</span>
+    <span class="mvval">TURNING UP · 1/3 held —
+    <span class="mvarw dn">Language unlit → amber</span></span>
+    <span class="mvsince">measured from H1 TU · 19 Oct 2026</span>
+   </div>
   </div>
   <details class="guide"><summary><span class="em">💡</span>Idiot's guide to the company — What Volex plc actually does</summary>
    <div class="gbody">
-    <h4>What it is</h4><p>Volex makes the cables, cords and wiring bundles that carry power and data inside other companies' products — from kettle leads to the high-speed cables racked inside AI data centres. Roughly $1.24bn of yearly sales, 23 factories, ~12,500 people.</p>
-    <h4>Where it's based</h4><p>Headquartered in Basingstoke, UK; factories across 25 countries. Listed in London (moving from AIM to the Main Market on 24 Jul 2026). Led by Nat Rothschild (CEO), whose family interests are major shareholders.</p>
-    <h4>How it makes money</h4><p>Five customer markets: Complex Industrial Technology (biggest — includes Data Centre cables, ~$383m), Off-Highway (wiring for tractors, diggers, military vehicles, ~$279m), Consumer Electricals (power cords and appliance wiring, ~$242m), EV &amp; Electrification (charging cables, ~$182m) and Medical (cables inside scanners and surgical robots, ~$156m).</p>
+    <h4>What it is</h4><p>Volex makes the cables, cords and wiring bundles that carry power and data inside other companies' products — from kettle leads to the high-speed cables racked inside AI data centres. Roughly $1.24bn of yearly sales in FY26, 25 factories, ~13,000 people.</p>
+    <h4>Where it's based</h4><p>Headquartered in Basingstoke, UK; factories across 25 countries. Listed on the London Main Market since 24 Jul 2026 (previously AIM) and in the FTSE 250 since 21 Sep 2026. Led by Nat Rothschild (CEO), whose family interests are major shareholders.</p>
+    <h4>How it makes money</h4><p>Five customer markets: Complex Industrial Technology (biggest — Data Centre cables plus aerospace, defence and industrial kit, ~$383m in FY26), Off-Highway (wiring for tractors, diggers, military vehicles, ~$279m), Consumer Electricals (power cords and appliance wiring, ~$242m), EV &amp; Electrification (charging cables, ~$182m) and Medical (cables inside scanners and surgical robots, plus patient leads since July, ~$156m before KST).</p>
     <p><b>Who controls the price.</b> Blue-chip equipment makers; Volex is often the sole or one of few qualified suppliers, and it passes raw-material and tariff costs through — which protects profit but means copper prices wiggle the revenue line.</p>
-    <h4>What's changed recently</h4><p>Delivered its 2022 five-year plan a year early; set new targets of $2bn revenue at a 12% profit margin (Apr 2026); bought the rest of Kepler SignalTek for up to $89.4m (Jul 2026, Medical); launched a £40m share buyback; moving to the Main Market.</p>
-    <p class="vintage"><em>The bet, in one line: a serial guide-beater riding an AI-cabling boom — the question is what happens when the data-centre building spree pauses.</em></p>
-    <p class="vintage">Stable facts, as at 25 Jun 2026.</p>
+    <h4>What's changed recently</h4><p>Set new targets of $2bn revenue at a 12% profit margin (Apr 2026); bought the rest of Kepler SignalTek for up to $89.4m (Jul 2026, Medical); completed a £20m on-market buyback on 22 Oct 2026; moved to the Main Market; is merging its US factories into one Californian site, due to finish by March 2027.</p>
+    <p class="vintage"><em>The bet, in one line: a serial guide-beater whose AI-cabling boom has just stopped growing half on half — the question is whether defence, EV and patient leads can carry the next leg.</em></p>
+    <p class="vintage">Stable facts, as at 12 Nov 2026.</p>
    </div>
   </details>
   <div class="boxes">
-   <div class="box"><div class="lb">Current state</div><div class="hl2">Guiding ahead</div><p>4-month organic +28.0%, monthly run-rate 8% above H2 FY26; FY27 profit now guided ahead of the $138.3m consensus stated in the RNS.</p></div>
-   <div class="box"><div class="lb">Warning you get</div><div class="hl2">~4–6 months</div><p>The Q1 AGM organic print plus Consumer's half-year read led the FY24 turn by one-to-two prints; R1 currently +14.2% and accelerating.</p></div>
-   <div class="box"><div class="lb">Argues against</div><div class="hl2">Exhausted excuse</div><p>The Data Centre ramp is the stated driver a third consecutive period — exhausted as a surprise; comparatives normalise from here, and any wobble lands on a freshly raised guide.</p></div>
-   <div class="box"><div class="lb">Next test</div><div class="hl2">~mid-Oct 2026</div><p>H1 FY27 TU: whether the H1 organic print still lands double-digit as the comparator normalises, and whether guidance holds ahead of the raised $138.3m bar.</p></div>
+   <div class="box"><div class="lb">Current state</div><div class="hl2">Held, not raised</div><p>H1 $723.6m, uOP $80.6m. The FY profit view is unchanged at October's level; consensus has climbed to $153.9m to meet it.</p></div>
+   <div class="box"><div class="lb">Warning you get</div><div class="hl2">~4–6 months</div><p>Rank 1 still accelerating (23.6%, +9.4pp). The flat H2 revenue guide implies the slowdown shows up in the H2 print, not before.</p></div>
+   <div class="box"><div class="lb">Argues against</div><div class="hl2">Flat second half</div><p>Implied H2 profit ~$73m, below H1; Data Centre down 19% on H2 FY26; capex rising to ~5% of revenue.</p></div>
+   <div class="box"><div class="lb">Next test</div><div class="hl2">Jan 2027</div><p>Q3 trading update: does 9M organic hold double digits, and does the profit view move back above consensus.</p></div>
   </div>
   <ul class="cbul">
-   <li>The FY24 precedent: when destocking bit, the Q1 AGM rate (+6.5%) and Consumer's decline flagged it two prints before the profit line slowed — watch exactly those two again.</li>
-   <li>Post-year-end: KST acquisition ($74.7m cash, Medical, leverage → ~1.1x) plus £40m buyback plus Main Market move (24 Jul) — three structural events land between this RNS and today.</li>
-   <li>What flips it: an H1 organic print below ~8%, any walk-back from "ahead" to "in line" against the $138.3m bar, or Data Centre share of CIT falling. Format note: the AGM window stretched Q1→4 months this year — benign at +28%, re-check the year it is not.</li>
+   <li>The H2 guide implies FY revenue of ~$1,437m — the top of the $1,377–1,437m range — while profit only meets the middle. The gap is US dual running and new Asian sites; it is the line to watch flip.</li>
+   <li>Wedge widening: adjusting items and share awards $20.8m vs $10.6m a year ago; share-based pay $6.9m vs $2.6m — statutory operating profit $59.8m against $80.6m underlying.</li>
+   <li>Open items: the 25 Mar 2026 trading update is still missing from the record; the £20m buyback completed 22 Oct (£16.9m in H1), but April's "up to £40m" remains unreconciled.</li>
   </ul>
  </div>
 </div>
@@ -188,36 +234,36 @@ details.top>div{padding:0 12px 12px;font-size:12.5px;line-height:1.55}
 <tr><td class="lab">R4</td><td style="text-align:left">Underlying operating profit — the line the company guides</td><td>CONFIRM</td><td>H1/H2† · $m · Δrate ±2.0pp</td><td>COINCIDENT — moves with, never before</td><td style="text-align:left">The guided line itself; corroborates a lead</td></tr>
 <tr><td class="lab">R5</td><td style="text-align:left">Underlying operating margin — profit per dollar of sales, 9–10% target band</td><td>CONFIRM</td><td>H1/H2† · % · band ±0.5pp</td><td>COINCIDENT — held 9.0–10.2% through the FY24 turn</td><td style="text-align:left">Confirms mix; a break below 9.5% would be new information</td></tr>
 </table>
-<p style="font-size:12px;color:var(--mute)">WATCH (unscored, Drift rows): covenant leverage · net debt · cash conversion / underlying FCF · Medical revenue · EV &amp; Electrification revenue · Data Centre % of CIT. Rejected at backtest: EPS (duplicates PBT), EV revenue (coincident, extreme amplitude), Medical (misled at FY24). Turn inventory: FY24 destocking turn (down, Jul-23→Nov-23) · Apr-24 green-shoot turn · Medical/Consumer segment down-turns FY25–26 · G record 6 RAISEs, 0 CUTs.</p>
+<p style="font-size:12px;color:var(--mute)">WATCH (unscored, Drift rows): covenant leverage · net debt · cash conversion / underlying FCF · Medical revenue · EV &amp; Electrification revenue · Data Centre % of CIT. Rejected at backtest: EPS (duplicates PBT), EV revenue (coincident, extreme amplitude), Medical (misled at FY24). Turn inventory: FY24 destocking turn (down, Jul-23→Nov-23) · Apr-24 green-shoot turn · Medical/Consumer segment down-turns FY25–26 · G record 8 RAISEs, 0 CUTs. Proposed for the next build (not swapped mid-run): split R3 — CIT now blends a falling Data Centre with rising aerospace and defence (blend check); Data Centre $ is derivable as CIT × DC% at every results document from FY23.</p>
 </div></details>
 
 <h2>§2 · Unified grid</h2>
-<p style="font-size:11px;color:var(--mute)">⭐ Buy/Sell RNS is now the 25 Aug 2026 AGM, which prints a non-standard 4-month rate and therefore occupies no grid column; the rightmost scored column remains H2 26 from the FY26 results.</p>
-<div class="gridwrap"><table class="grid" id="grid2"><colgroup><col class="lab"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"></colgroup>
-<tr class="yband"><td></td><td colspan="2">FY22</td><td colspan="2">FY23</td><td colspan="2">FY24</td><td colspan="2">FY25</td><td colspan="2">FY26</td></tr>
-<tr><th class="lab"></th><th class="phead" data-p="H1">H1 22</th><th class="phead" data-p="H2">H2 22†</th><th class="phead" data-p="H1">H1 23</th><th class="phead" data-p="H2">H2 23†</th><th class="phead" data-p="H1">H1 24</th><th class="phead" data-p="H2">H2 24†</th><th class="phead" data-p="H1">H1 25</th><th class="phead" data-p="H2">H2 25†</th><th class="phead" data-p="H1">H1 26</th><th class="phead bs-col" data-p="H2">⭐ FY R · Jun-26<br>H2 26†</th></tr>
-<tr class="secbar"><td colspan="11">Rank 1 — Organic constant-currency revenue growth % <span class="nat">· arrow = speeding up or slowing vs same print last year, band 3 points · Q1 and 9M interim prints on the second row</span></td></tr><tr class="strip"><td class="lab">Period</td><td>H1</td><td>FY print</td><td>H1</td><td>FY print</td><td>H1</td><td>FY print</td><td>H1</td><td>FY print</td><td>H1</td><td>⭐ FY print</td></tr><tr class="vrow"><td class="lab">% · pp move vs same print last year</td><td><span class="val">—</span><span class="delta">first print</span></td><td><span class="val">19.4</span><span class="delta">FY22 print —</span></td><td><span class="val">14.3</span><span class="delta">H1 —</span></td><td><span class="val">11.4 (−8.0)</span><span class="delta">🔴↘ FY</span></td><td><span class="val">4.2 (−10.1)</span><span class="delta">🔴↘ H1</span></td><td><span class="val">6.9 (−4.5)</span><span class="delta">🔴↘ FY</span></td><td><span class="val">9.7 (+5.5)</span><span class="delta">🟢↗ H1</span></td><td><span class="val">11.1 (+4.2)</span><span class="delta">🟢↗ FY</span></td><td><span class="val">13.0 (+3.3)</span><span class="delta">🟢↗ H1</span></td><td class="bs-col"><span class="val">14.2 (+3.1)</span><span class="delta">🟢↗ FY</span></td></tr><tr class="vrow"><td class="lab">interim prints (Q1 · 9M)</td><td><span class="val">—</span><span class="delta">outside cadence</span></td><td><span class="val">—</span><span class="delta">outside cadence</span></td><td><span class="val">4.9</span><span class="delta">Q1 —</span></td><td><span class="val">—</span><span class="delta">outside cadence</span></td><td><span class="val">6.5 (+1.6)</span><span class="delta">🟡→ Q1</span></td><td><span class="val">—</span><span class="delta">outside cadence</span></td><td><span class="val">9.0 (+2.5)</span><span class="delta">🟡→ Q1</span></td><td><span class="val">9.6</span><span class="delta">9M —</span></td><td><span class="val">10.4 (+1.4)</span><span class="delta">🟡→ Q1</span></td><td class="bs-col"><span class="val">14.8 (+5.2)</span><span class="delta">🟢↗ 9M</span></td></tr><tr class="secbar"><td colspan="11">Rank 2 — Consumer Electricals revenue $m <span class="nat">· 🟢↗ growing faster than last year · 🟡→ about the same pace · 🔴↘ shrinking or clearly slowing</span></td></tr><tr class="strip"><td class="lab">Period</td><td>H1 22</td><td>H2 22†</td><td>H1 23</td><td>H2 23†</td><td>H1 24</td><td>H2 24†</td><td>H1 25</td><td>H2 25†</td><td>H1 26</td><td>H2 26†</td></tr><tr class="vrow"><td class="lab">$m · vs same period last year</td><td><span class="val">127.4</span><span class="delta">—</span></td><td><span class="val">135.0†</span><span class="delta">—</span></td><td><span class="val">138.2 (+8.5%)</span><span class="delta">—</span></td><td><span class="val">123.6†ʳ <span class='neg'>(−8.4%)</span></span><span class="delta">—</span></td><td><span class="val">122.8 <span class='neg'>(−11.1%)</span></span><span class="delta">🔴↘</span></td><td><span class="val">112.5† <span class='neg'>(−9.0%)</span></span><span class="delta">🟡→</span></td><td><span class="val">131.7 (+7.2%)</span><span class="delta">🟢↗</span></td><td><span class="val">125.3† (+11.4%)</span><span class="delta">🟢↗</span></td><td><span class="val">125.6 <span class='neg'>(−4.6%)</span></span><span class="delta">🔴↘</span></td><td class="bs-col"><span class="val">116.8† <span class='neg'>(−6.8%)</span></span><span class="delta">🔴↘</span></td></tr><tr class="agg"><td class="lab">FY aggregate</td><td colspan="2"><span class="aval">262.4</span><span class="anote"></span></td><td colspan="2"><span class="aval">261.8ʳ</span><span class="anote">−0.2%</span></td><td colspan="2"><span class="aval">235.3</span><span class="anote">−10.1%</span></td><td colspan="2"><span class="aval">257.0</span><span class="anote">+9.2%</span></td><td colspan="2"><span class="aval">242.4</span><span class="anote">−5.7%</span></td></tr><tr class="secbar"><td colspan="11">Rank 3 — Complex Industrial Technology revenue $m (Data Centre inside) <span class="nat">· 🟢↗ growing faster than last year · 🔴↘ clearly slowing — Data Centre % of this market: 21→42→48→63</span></td></tr><tr class="strip"><td class="lab">Period</td><td>H1 22</td><td>H2 22†</td><td>H1 23</td><td>H2 23†</td><td>H1 24</td><td>H2 24†</td><td>H1 25</td><td>H2 25†</td><td>H1 26</td><td>H2 26†</td></tr><tr class="vrow"><td class="lab">$m · vs same period last year</td><td><span class="val">58.1</span><span class="delta">—</span></td><td><span class="val">61.7†</span><span class="delta">—</span></td><td><span class="val">83.4ʳ (+43.5%)</span><span class="delta">—</span></td><td><span class="val">94.3†ʳ (+52.8%)</span><span class="delta">—</span></td><td><span class="val">100.6 (+35.0%ʳ)</span><span class="delta">🔴↘</span></td><td><span class="val">112.8† (+35.6%ʳ)</span><span class="delta">🔴↘</span></td><td><span class="val">104.7 (+4.1%)</span><span class="delta">🔴↘</span></td><td><span class="val">139.7† (+23.8%)</span><span class="delta">🔴↘</span></td><td><span class="val">155.5 (+48.5%)</span><span class="delta">🟢↗</span></td><td class="bs-col"><span class="val">227.4† (+62.8%)</span><span class="delta">🟢↗</span></td></tr><tr class="agg"><td class="lab">FY aggregate</td><td colspan="2"><span class="aval">119.8</span><span class="anote"></span></td><td colspan="2"><span class="aval">177.7ʳ</span><span class="anote"></span></td><td colspan="2"><span class="aval">213.4</span><span class="anote">+35.3%ʳ</span></td><td colspan="2"><span class="aval">244.4</span><span class="anote">+14.5%</span></td><td colspan="2"><span class="aval">382.9</span><span class="anote">+56.7%</span></td></tr><tr class="secbar"><td colspan="11">Rank 4 — Underlying operating profit $m <span class="nat">· the line the company guides · 🔴↘ growth clearly slowing, even while profit still rises</span></td></tr><tr class="strip"><td class="lab">Period</td><td>H1 22</td><td>H2 22†</td><td>H1 23</td><td>H2 23†</td><td>H1 24</td><td>H2 24†</td><td>H1 25</td><td>H2 25†</td><td>H1 26</td><td>H2 26†</td></tr><tr class="vrow"><td class="lab">$m · vs same period last year</td><td><span class="val">27.3</span><span class="delta">—</span></td><td><span class="val">28.9†</span><span class="delta">—</span></td><td><span class="val">32.1 (+17.6%)</span><span class="delta">—</span></td><td><span class="val">35.2† (+21.8%)</span><span class="delta">—</span></td><td><span class="val">37.4 (+16.5%)</span><span class="delta">🟡→</span></td><td><span class="val">52.3†ʳ (+48.6%)</span><span class="delta">🟢↗</span></td><td><span class="val">47.6 (+27.3%)</span><span class="delta">🟢↗</span></td><td><span class="val">58.6† (+12.0%)</span><span class="delta">🔴↘</span></td><td><span class="val">57.2 (+20.2%)</span><span class="delta">🔴↘ᶜ</span></td><td class="bs-col"><span class="val">70.1† (+19.6%)</span><span class="delta">🟢↗</span></td></tr><tr class="agg"><td class="lab">FY aggregate</td><td colspan="2"><span class="aval">56.2</span><span class="anote"></span></td><td colspan="2"><span class="aval">67.3</span><span class="anote">+19.8%</span></td><td colspan="2"><span class="aval">89.7</span><span class="anote">+33.3%ʳ</span></td><td colspan="2"><span class="aval">106.2</span><span class="anote">+18.4%</span></td><td colspan="2"><span class="aval">127.3</span><span class="anote">+19.9%</span></td></tr><tr class="secbar"><td colspan="11">Rank 5 — Underlying operating margin % <span class="nat">· arrow = up or down vs same period last year, band 0.5 points</span></td></tr><tr class="strip"><td class="lab">Period</td><td>H1 22</td><td>H2 22†</td><td>H1 23</td><td>H2 23†</td><td>H1 24</td><td>H2 24†</td><td>H1 25</td><td>H2 25†</td><td>H1 26</td><td>H2 26†</td></tr><tr class="vrow"><td class="lab">% · pp move vs same period last year</td><td><span class="val">9.3†</span><span class="delta">—</span></td><td><span class="val">9.0†</span><span class="delta">—</span></td><td><span class="val">9.0</span><span class="delta">🟡→ −0.3pp</span></td><td><span class="val">9.6†</span><span class="delta">🟢↗ +0.6pp</span></td><td><span class="val">9.4</span><span class="delta">🟡→ +0.4pp</span></td><td><span class="val">10.1†</span><span class="delta">🟢↗ +0.5pp</span></td><td><span class="val">9.2</span><span class="delta">🟡→ −0.2pp</span></td><td><span class="val">10.3†</span><span class="delta">🟡→ +0.2pp</span></td><td><span class="val">9.8</span><span class="delta">🟢↗ +0.6pp</span></td><td class="bs-col"><span class="val">10.6†</span><span class="delta">🟡→ +0.3pp</span></td></tr><tr class="agg"><td class="lab">FY margin</td><td colspan="2"><span class="aval">9.1</span></td><td colspan="2"><span class="aval">9.3</span></td><td colspan="2"><span class="aval">9.8</span></td><td colspan="2"><span class="aval">9.8</span></td><td colspan="2"><span class="aval">10.2</span></td></tr>
+<p style="font-size:11px;color:var(--mute)">⭐ Buy/Sell RNS is the 12 Nov 2026 H1 results. Column H1 27 now carries audited-format half-year figures for all five ranks; the 19 Oct TU floor (≥21.0) is replaced by the printed 23.6.</p>
+<div class="gridwrap"><table class="grid" id="grid2"><colgroup><col class="lab"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"></colgroup>
+<tr class="yband"><td></td><td colspan="2">FY22</td><td colspan="2">FY23</td><td colspan="2">FY24</td><td colspan="2">FY25</td><td colspan="2">FY26</td><td>FY27</td></tr>
+<tr><th class="lab"></th><th class="phead" data-p="H1">H1 22</th><th class="phead" data-p="H2">H2 22†</th><th class="phead" data-p="H1">H1 23</th><th class="phead" data-p="H2">H2 23†</th><th class="phead" data-p="H1">H1 24</th><th class="phead" data-p="H2">H2 24†</th><th class="phead" data-p="H1">H1 25</th><th class="phead" data-p="H2">H2 25†</th><th class="phead" data-p="H1">H1 26</th><th class="phead" data-p="H2">H2 26†</th><th class="phead bs-col" data-p="H1">⭐ H1 R · Nov-26<br>H1 27</th></tr>
+<tr class="secbar"><td colspan="12">Rank 1 — Organic constant-currency revenue growth % <span class="nat">· arrow = speeding up or slowing vs same print last year, band 3 points · Q1 and 9M interim prints on the second row</span></td></tr><tr class="strip"><td class="lab">Period</td><td>H1</td><td>FY print</td><td>H1</td><td>FY print</td><td>H1</td><td>FY print</td><td>H1</td><td>FY print</td><td>H1</td><td>FY print</td><td>⭐ H1 R</td></tr><tr class="vrow"><td class="lab">% · pp move vs same print last year</td><td><span class="val">—</span><span class="delta">first print</span></td><td><span class="val">19.4</span><span class="delta">FY22 print —</span></td><td><span class="val">14.3</span><span class="delta">H1 —</span></td><td><span class="val">11.4 (−8.0)</span><span class="delta">🔴↘ FY</span></td><td><span class="val">4.2 (−10.1)</span><span class="delta">🔴↘ H1</span></td><td><span class="val">6.9 (−4.5)</span><span class="delta">🔴↘ FY</span></td><td><span class="val">9.7 (+5.5)</span><span class="delta">🟢↗ H1</span></td><td><span class="val">11.1 (+4.2)</span><span class="delta">🟢↗ FY</span></td><td><span class="val">13.0 (+3.3)</span><span class="delta">🟢↗ H1</span></td><td><span class="val">14.2 (+3.1)</span><span class="delta">🟢↗ FY</span></td><td class="bs-col"><span class="val">23.6 (+9.4)</span><span class="delta">🟢↗ H1</span></td></tr><tr class="vrow"><td class="lab">interim prints (Q1 · 9M)</td><td><span class="val">—</span><span class="delta">outside cadence</span></td><td><span class="val">—</span><span class="delta">outside cadence</span></td><td><span class="val">4.9</span><span class="delta">Q1 —</span></td><td><span class="val">—</span><span class="delta">outside cadence</span></td><td><span class="val">6.5 (+1.6)</span><span class="delta">🟡→ Q1</span></td><td><span class="val">—</span><span class="delta">outside cadence</span></td><td><span class="val">9.0 (+2.5)</span><span class="delta">🟡→ Q1</span></td><td><span class="val">9.6</span><span class="delta">9M —</span></td><td><span class="val">10.4 (+1.4)</span><span class="delta">🟡→ Q1</span></td><td><span class="val">14.8 (+5.2)</span><span class="delta">🟢↗ 9M</span></td><td class="bs-col"><span class="val">—</span><span class="delta">outside cadence</span></td></tr><tr class="secbar"><td colspan="12">Rank 2 — Consumer Electricals revenue $m <span class="nat">· 🟢↗ growing faster than last year · 🟡→ about the same pace · 🔴↘ shrinking or clearly slowing</span></td></tr><tr class="strip"><td class="lab">Period</td><td>H1 22</td><td>H2 22†</td><td>H1 23</td><td>H2 23†</td><td>H1 24</td><td>H2 24†</td><td>H1 25</td><td>H2 25†</td><td>H1 26</td><td>H2 26†</td><td>H1</td></tr><tr class="vrow"><td class="lab">$m · vs same period last year</td><td><span class="val">127.4</span><span class="delta">—</span></td><td><span class="val">135.0†</span><span class="delta">—</span></td><td><span class="val">138.2 (+8.5%)</span><span class="delta">—</span></td><td><span class="val">123.6†ʳ <span class='neg'>(−8.4%)</span></span><span class="delta">—</span></td><td><span class="val">122.8 <span class='neg'>(−11.1%)</span></span><span class="delta">🔴↘</span></td><td><span class="val">112.5† <span class='neg'>(−9.0%)</span></span><span class="delta">🟡→</span></td><td><span class="val">131.7 (+7.2%)</span><span class="delta">🟢↗</span></td><td><span class="val">125.3† (+11.4%)</span><span class="delta">🟢↗</span></td><td><span class="val">125.6 <span class='neg'>(−4.6%)</span></span><span class="delta">🔴↘</span></td><td><span class="val">116.8† <span class='neg'>(−6.8%)</span></span><span class="delta">🔴↘</span></td><td class="bs-col"><span class="val">138.3 (+10.1%)</span><span class="delta">🟢↗</span></td></tr><tr class="agg"><td class="lab">FY aggregate</td><td colspan="2"><span class="aval">262.4</span><span class="anote"></span></td><td colspan="2"><span class="aval">261.8ʳ</span><span class="anote">−0.2%</span></td><td colspan="2"><span class="aval">235.3</span><span class="anote">−10.1%</span></td><td colspan="2"><span class="aval">257.0</span><span class="anote">+9.2%</span></td><td colspan="2"><span class="aval">242.4</span><span class="anote">−5.7%</span></td><td><span class="aval">—</span><span class="anote">in progress</span></td></tr><tr class="secbar"><td colspan="12">Rank 3 — Complex Industrial Technology revenue $m (Data Centre inside) <span class="nat">· 🟢↗ growing faster than last year · 🔴↘ clearly slowing — Data Centre % of this market: 21→42→48→63→58 (H1 27)</span></td></tr><tr class="strip"><td class="lab">Period</td><td>H1 22</td><td>H2 22†</td><td>H1 23</td><td>H2 23†</td><td>H1 24</td><td>H2 24†</td><td>H1 25</td><td>H2 25†</td><td>H1 26</td><td>H2 26†</td><td>H1</td></tr><tr class="vrow"><td class="lab">$m · vs same period last year</td><td><span class="val">58.1</span><span class="delta">—</span></td><td><span class="val">61.7†</span><span class="delta">—</span></td><td><span class="val">83.4ʳ (+43.5%)</span><span class="delta">—</span></td><td><span class="val">94.3†ʳ (+52.8%)</span><span class="delta">—</span></td><td><span class="val">100.6 (+35.0%ʳ)</span><span class="delta">🔴↘</span></td><td><span class="val">112.8† (+35.6%ʳ)</span><span class="delta">🔴↘</span></td><td><span class="val">104.7 (+4.1%)</span><span class="delta">🔴↘</span></td><td><span class="val">139.7† (+23.8%)</span><span class="delta">🔴↘</span></td><td><span class="val">155.5 (+48.5%)</span><span class="delta">🟢↗</span></td><td><span class="val">227.4† (+62.8%)</span><span class="delta">🟢↗</span></td><td class="bs-col"><span class="val">218.3 (+40.4%)</span><span class="delta">🔴↘</span></td></tr><tr class="agg"><td class="lab">FY aggregate</td><td colspan="2"><span class="aval">119.8</span><span class="anote"></span></td><td colspan="2"><span class="aval">177.7ʳ</span><span class="anote"></span></td><td colspan="2"><span class="aval">213.4</span><span class="anote">+35.3%ʳ</span></td><td colspan="2"><span class="aval">244.4</span><span class="anote">+14.5%</span></td><td colspan="2"><span class="aval">382.9</span><span class="anote">+56.7%</span></td><td><span class="aval">—</span><span class="anote">in progress</span></td></tr><tr class="secbar"><td colspan="12">Rank 4 — Underlying operating profit $m <span class="nat">· the line the company guides · 🔴↘ growth clearly slowing, even while profit still rises</span></td></tr><tr class="strip"><td class="lab">Period</td><td>H1 22</td><td>H2 22†</td><td>H1 23</td><td>H2 23†</td><td>H1 24</td><td>H2 24†</td><td>H1 25</td><td>H2 25†</td><td>H1 26</td><td>H2 26†</td><td>H1</td></tr><tr class="vrow"><td class="lab">$m · vs same period last year</td><td><span class="val">27.3</span><span class="delta">—</span></td><td><span class="val">28.9†</span><span class="delta">—</span></td><td><span class="val">32.1 (+17.6%)</span><span class="delta">—</span></td><td><span class="val">35.2† (+21.8%)</span><span class="delta">—</span></td><td><span class="val">37.4 (+16.5%)</span><span class="delta">🟡→</span></td><td><span class="val">52.3†ʳ (+48.6%)</span><span class="delta">🟢↗</span></td><td><span class="val">47.6 (+27.3%)</span><span class="delta">🟢↗</span></td><td><span class="val">58.6† (+12.0%)</span><span class="delta">🔴↘</span></td><td><span class="val">57.2 (+20.2%)</span><span class="delta">🔴↘ᶜ</span></td><td><span class="val">70.1† (+19.6%)</span><span class="delta">🟢↗</span></td><td class="bs-col"><span class="val">80.6 (+40.9%)</span><span class="delta">🟢↗</span></td></tr><tr class="agg"><td class="lab">FY aggregate</td><td colspan="2"><span class="aval">56.2</span><span class="anote"></span></td><td colspan="2"><span class="aval">67.3</span><span class="anote">+19.8%</span></td><td colspan="2"><span class="aval">89.7</span><span class="anote">+33.3%ʳ</span></td><td colspan="2"><span class="aval">106.2</span><span class="anote">+18.4%</span></td><td colspan="2"><span class="aval">127.3</span><span class="anote">+19.9%</span></td><td><span class="aval">—</span><span class="anote">in progress</span></td></tr><tr class="secbar"><td colspan="12">Rank 5 — Underlying operating margin % <span class="nat">· arrow = up or down vs same period last year, band 0.5 points</span></td></tr><tr class="strip"><td class="lab">Period</td><td>H1 22</td><td>H2 22†</td><td>H1 23</td><td>H2 23†</td><td>H1 24</td><td>H2 24†</td><td>H1 25</td><td>H2 25†</td><td>H1 26</td><td>H2 26†</td><td>H1</td></tr><tr class="vrow"><td class="lab">% · pp move vs same period last year</td><td><span class="val">9.3†</span><span class="delta">—</span></td><td><span class="val">9.0†</span><span class="delta">—</span></td><td><span class="val">9.0</span><span class="delta">🟡→ −0.3pp</span></td><td><span class="val">9.6†</span><span class="delta">🟢↗ +0.6pp</span></td><td><span class="val">9.4</span><span class="delta">🟡→ +0.4pp</span></td><td><span class="val">10.1†</span><span class="delta">🟢↗ +0.5pp</span></td><td><span class="val">9.2</span><span class="delta">🟡→ −0.2pp</span></td><td><span class="val">10.3†</span><span class="delta">🟡→ +0.2pp</span></td><td><span class="val">9.8</span><span class="delta">🟢↗ +0.6pp</span></td><td><span class="val">10.6†</span><span class="delta">🟡→ +0.3pp</span></td><td class="bs-col"><span class="val">11.1</span><span class="delta">🟢↗ +1.3pp</span></td></tr><tr class="agg"><td class="lab">FY margin</td><td colspan="2"><span class="aval">9.1</span></td><td colspan="2"><span class="aval">9.3</span></td><td colspan="2"><span class="aval">9.8</span></td><td colspan="2"><span class="aval">9.8</span></td><td colspan="2"><span class="aval">10.2</span></td><td><span class="aval">—</span><span class="anote">in progress</span></td></tr>
 </table></div>
 <details class="top"><summary>§2 workings</summary><div>
 <details class="sub"><summary>🔲 Card strip — wall preview &amp; index entry</summary><div>
-<table style="border-collapse:collapse;font-size:10px"><tr><td></td><td style="padding:1px 3px;color:#5f5c54">H2 22</td><td style="padding:1px 3px;color:#5f5c54">H1 23</td><td style="padding:1px 3px;color:#5f5c54">H2 23</td><td style="padding:1px 3px;color:#5f5c54">H1 24</td><td style="padding:1px 3px;color:#5f5c54">H2 24</td><td style="padding:1px 3px;color:#5f5c54">H1 25</td><td style="padding:1px 3px;color:#5f5c54">H2 25</td><td style="padding:1px 3px;color:#5f5c54">H1 26</td><td style="padding:1px 3px;color:#5f5c54">H2 26</td></tr><tr><td style="padding:1px 5px;font-weight:700">R1</td><td style="background:#e8e6e0;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#e8e6e0;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#d94436;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#d94436;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#d94436;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:2px solid #16150f"></td></tr><tr><td style="padding:1px 5px;font-weight:700">R2</td><td style="background:#e8e6e0;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#e8e6e0;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#e8e6e0;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#d94436;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#c98f16;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#d94436;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#d94436;width:26px;height:18px;border:2px solid #16150f"></td></tr><tr><td style="padding:1px 5px;font-weight:700">R3</td><td style="background:#e8e6e0;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#e8e6e0;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#e8e6e0;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#d94436;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#d94436;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#d94436;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#d94436;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:2px solid #16150f"></td></tr><tr><td style="padding:1px 5px;font-weight:700">R4</td><td style="background:#e8e6e0;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#e8e6e0;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#e8e6e0;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#c98f16;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#d94436;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#d94436;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:2px solid #16150f"></td></tr><tr><td style="padding:1px 5px;font-weight:700">R5</td><td style="background:#e8e6e0;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#c98f16;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#c98f16;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#c98f16;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#c98f16;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#c98f16;width:26px;height:18px;border:2px solid #16150f"></td></tr></table>
-<p style="font-size:11px;color:var(--mute)">Rows R1–R5 in rank order; rightmost cell (outlined) = ⭐ FY26 R Buy/Sell column. R1 encodes H1 prints in H1 slots and FY prints in H2 slots (Q1/9M interim prints not encoded — strip shows scores, not data).</p>
+<table style="border-collapse:collapse;font-size:10px"><tr><td></td><td style="padding:1px 3px;color:#5f5c54">H1 23</td><td style="padding:1px 3px;color:#5f5c54">H2 23</td><td style="padding:1px 3px;color:#5f5c54">H1 24</td><td style="padding:1px 3px;color:#5f5c54">H2 24</td><td style="padding:1px 3px;color:#5f5c54">H1 25</td><td style="padding:1px 3px;color:#5f5c54">H2 25</td><td style="padding:1px 3px;color:#5f5c54">H1 26</td><td style="padding:1px 3px;color:#5f5c54">H2 26</td><td style="padding:1px 3px;color:#5f5c54">H1 27</td></tr><tr><td style="padding:1px 5px;font-weight:700">R1</td><td style="background:#e8e6e0;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#d94436;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#d94436;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#d94436;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:2px solid #16150f"></td></tr><tr><td style="padding:1px 5px;font-weight:700">R2</td><td style="background:#e8e6e0;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#e8e6e0;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#d94436;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#c98f16;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#d94436;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#d94436;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:2px solid #16150f"></td></tr><tr><td style="padding:1px 5px;font-weight:700">R3</td><td style="background:#e8e6e0;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#e8e6e0;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#d94436;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#d94436;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#d94436;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#d94436;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#d94436;width:26px;height:18px;border:2px solid #16150f"></td></tr><tr><td style="padding:1px 5px;font-weight:700">R4</td><td style="background:#e8e6e0;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#e8e6e0;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#c98f16;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#d94436;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#d94436;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:2px solid #16150f"></td></tr><tr><td style="padding:1px 5px;font-weight:700">R5</td><td style="background:#c98f16;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#c98f16;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#c98f16;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#c98f16;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#c98f16;width:26px;height:18px;border:1px solid #fff"></td><td style="background:#2f9e5c;width:26px;height:18px;border:2px solid #16150f"></td></tr></table>
+<p style="font-size:11px;color:var(--mute)">Rows R1–R5 in rank order; rightmost cell (outlined) = ⭐ H1 27 from the 12 Nov 2026 H1 results. R1 encodes H1 prints in H1 slots and FY prints in H2 slots.</p>
 <pre style="font-size:10.5px;background:#f7f6f2;padding:8px;overflow-x:auto;user-select:all">{
  "ticker": "VLX",
  "company": "Volex plc",
  "kind": "ticker",
  "direction": "up",
- "headline": "Fourth straight organic acceleration; FY26 beat the January-raised consensus by 13% on profit; margins above target for the first time \u2014 momentum intact, concentration rising.",
- "trigger": "Condition 1 fired green (accelerating organic prints on R1/R3, margin above range, G-RAISE Jan-26 delivered). Conditions 2 and 3 unfired. Single-condition green \u2014 no 2-of-3.",
+ "headline": "Record H1: organic +23.6%, margin 11.1% — but H2 revenue is guided flat and the profit view only held as consensus rose to meet it.",
+ "trigger": "Condition 1 fired green (R1 H1 organic 23.6%, +9.4pp; Consumer back to sequential growth; margin +1.3pp) — R3 Data Centre slip watch-flagged and context-discounted. Condition 2 technically met, not counted (Language +2 → +1 → 0 as consensus rose onto an unchanged view). Condition 3 unfired. Single-condition green — no 2-of-3.",
  "alert": false,
  "fired": 1,
  "fired_of": 3,
- "lights": "g--",
- "rns_type": "FY R",
- "rns_date": "2026-06-25",
- "build_date": "2026-08-24",
- "spec_version": "v5.4",
- "next_test": "~6 Aug 2026 \u2014 FY27 AGM statement: Q1 organic print; anything with a single-digit handle after four quarters of 10%+ is the first genuine deceleration signal.",
+ "lights": "ga-",
+ "rns_type": "H1 R",
+ "rns_date": "2026-11-12",
+ "build_date": "2026-11-12",
+ "spec_version": "v5.8",
+ "next_test": "Jan 2027 Q3 TU: does 9M organic hold double digits, and does the profit view move back above consensus.",
  "url": "VLX.html",
  "grid": {
   "labels": [
@@ -228,7 +274,6 @@ details.top>div{padding:0 12px 12px;font-size:12.5px;line-height:1.55}
    "R5"
   ],
   "periods": [
-   "H2 22",
    "H1 23",
    "H2 23",
    "H1 24",
@@ -236,159 +281,142 @@ details.top>div{padding:0 12px 12px;font-size:12.5px;line-height:1.55}
    "H1 25",
    "H2 25",
    "H1 26",
-   "H2 26"
+   "H2 26",
+   "H1 27"
   ],
   "rows": [
-   "--rrrgggg",
-   "---raggrr",
-   "---rrrrgg",
-   "---aggrrg",
-   "-agagaaga"
+   "-rrrggggg",
+   "--raggrrg",
+   "--rrrrggr",
+   "--aggrrgg",
+   "agagaagag"
   ],
-  "note": "R1 organic CC growth (H1/FY prints mapped to half slots) \u00b7 R2 Consumer Electricals \u00b7 R3 CIT/Data Centre \u00b7 R4 underlying operating profit \u00b7 R5 underlying operating margin"
- }
+  "note": "R1 organic CC growth (H1/FY prints mapped to half slots) · R2 Consumer Electricals · R3 CIT/Data Centre · R4 underlying operating profit · R5 underlying operating margin"
+ },
+ "trend": {
+  "mode": "share",
+  "cells": "ggg",
+  "rows": [
+   {
+    "m": "REV",
+    "gap": 5.2
+   },
+   {
+    "m": "EBITDA",
+    "gap": 7.5
+   },
+   {
+    "m": "PBT",
+    "gap": 9.3
+   }
+  ]
+ },
+ "prev": {
+  "direction": "up",
+  "fired": 1,
+  "lights": "g--",
+  "rns_date": "2026-10-19",
+  "rns_type": "H1 TU"
+ },
+ "chart": "charts/VLX.json?v=2026-11-12.9e7a"
 }</pre>
 </div></details>
 <details class="sub"><summary>Notes — Ranks 1–5</summary><div>
-<p><b>R1.</b> Next print ~6 Aug 2026 (AGM Q1): below ~8% is the first genuine deceleration after four accelerating prints.</p>
+<p><b>R1.</b> H1 27 printed 23.6% (21.8% ex the ~$10m pull-forward), beating the TU floor by 2.6pp. The flat H2 guide implies a sharp step down in the FY print; below ~8% at the 9M print would be the first genuine deceleration.</p>
 <p><b>R2.</b> Back in decline both halves of FY26 (−4.6%, −6.8%) on Chinese competition in Europe — the canary is already chirping; new appliance-harness programmes are the offset to watch. Comp-flag: cells score reported-total YoY; the company's organic cc print can differ (H1 25: organic +7.5% vs reported +7.2%).</p>
-<p><b>R3.</b> H2 26 +62.8% laps in H2 FY27 — the Δrate will mechanically collapse even if levels hold; read the level and the Data Centre % together, not the arrow alone. Provenance: H1 22 printed 58.1 in its own report, 58.0 as the next year's comparative — printed governs, cell carries 58.1.</p>
+<p><b>R3.</b> H2 26 +62.8% laps in H2 FY27 — the Δrate will mechanically collapse even if levels hold; read the level and the Data Centre % together, not the arrow alone. Proposed for the next build: split R3 — Data Centre fell below H2 FY26 at the H1 27 TU while aerospace and defence grew, so the blend is starting to hide its own engine. Provenance: H1 22 printed 58.1 in its own report, 58.0 as the next year's comparative — printed governs, cell carries 58.1.</p>
 <p><b>R4.</b> H1 26's 🔴↘ is a comp-flag: the +27.3% H1 25 comparator was Murat-annualisation-flattered — annotated, not suppressed.</p>
 <p><b>R5.</b> 10.2% is above the old 9–10% band for the first time; the new 12% target makes margin direction a live signal, band ±0.5pp.</p>
 </div></details>
 <details class="sub"><summary>Turn methodology &amp; restatement basis</summary><div>
 <p><b>Comparison basis per rank:</b> R2/R3/R4 flows — cells display the year-on-year %; the score is the banded change in that rate (±2.0pp); the sequential comparison is computed and retained here, never displayed. R1/R5 rate metrics — the pp move year-on-year directly (bands ±3.0pp / ±0.5pp). All ranks render under the default H rule; no B.2a, no ladder, no zero-crossing guard fired.</p>
+<p><b>H1 27 column (12 Nov 2026 H1 R):</b> all ranks from primary statements — R1 note 14 organic table 23.6%; R2 and R3 note 14 end-market table (138.3, 218.3); R4 income statement 80.6; R5 derived 80.6/723.6 = 11.14% (D from S). R3 sequential −4.0% vs H2 26† 227.4; Data Centre 57.6% of CIT → $125.7m†, +47.0% YoY (ties to the company's 47.0% — second route), −19.2% vs H2 26† $155.7m. Superseded: </p>
+<p><b>H1 27 column (as at H1 TU):</b> from the 19 Oct 2026 H1 TU; the R1 cell is the company-printed floor "at least 21%", marked ≥, and the H1 results govern. R2–R5 were left blank pending H1 results. KST is consolidated from 14 Jul 2026 — first-time inclusion in Medical and group reported figures from H1 27 (~$11m in H1); organic % governs like-for-like.</p>
 <p><b>Units:</b> R1 % · R2 $m · R3 $m · R4 $m · R5 % — identical in section bar, row label and rendered values.</p>
 <p><b>Restatements (ʳ):</b> FY24 prelims restated FY23 comparatives for the new Off-Highway market: Consumer −$2.2m (261.8→259.6), CIT −$20.0m (177.7→157.7). H1 FY24 comparisons score against the restated basis where the company printed it (CIT H1 FY23 74.5, H2 FY23† 83.2); H2 23† cells carry ʳ because the restatement's half-split is not printed. Murat Ticaret first consolidated H2 FY24 — R4 H2 24 and its FY24 aggregate carry ʳ; organic % governs like-for-like reads. Later audited figures govern all "c."/floor estimates from TUs (e.g. Apr-25 "at least $1,060m" superseded by $1,086.5m). No missing documents; all periods US$, single basis.</p>
 <p><b>Derived cells (†):</b> every H2 = printed FY − printed H1; second route: H2 sums re-add to FY on every rank; R5 H2† cross-checks as R4†÷revenue†. Derived-only turns are watch-flags until printed corroboration (Q4† strength awaits the Aug-26 AGM print).</p>
 </div></details>
 </div></details>
 
-<h2>§2.0 · Current-state read — ⭐ FY26 R, 25 Jun 2026</h2>
+<h2>§2.0 · Current-state read — ⭐ H1 FY27 R (12 Nov 2026)</h2>
 <div class="s20">
 <div class="bridge">
-<div class="bhead">🍺 IDIOT'S GUIDE TO THE UNDERLYING OPERATING PROFIT BRIDGE — why profit went up ($106.2m → $127.3m)</div>
+<div class="bhead">🍺 IDIOT'S GUIDE TO THE UNDERLYING OPERATING PROFIT BRIDGE — why profit went up ($57.2m → $80.6m) <span style="float:right;font-size:16px">⭐ H1 R · 12 Nov 2026</span></div>
 <table>
-<tr style="background:#e9f5ee"><td class="blab">🖥️ The server-hall gold rush</td><td style="text-align:right;font-weight:700;color:#1e7a45">+~$12m est.</td><td>Tech giants are throwing up AI computing warehouses faster than electricians can wire them, and every rack needs Volex's high-speed cables — this business roughly doubled to ~$241m of sales.</td></tr>
-<tr style="background:#e9f5ee"><td class="blab">🚜 Tanks, tractors and diggers</td><td style="text-align:right;font-weight:700;color:#1e7a45">+~$5m est.</td><td>A one-off defence vehicle order plus American farm-and-construction kit pushed Off-Highway sales up 20% — profit rode along.</td></tr>
-<tr style="background:#e9f5ee"><td class="blab">⚙️ Squeezing the factories harder</td><td style="text-align:right;font-weight:700;color:#1e7a45">+~$6m est.</td><td>Better product recipe, shutting undersized sites and efficiency drives lifted profit-per-dollar-of-sales above 10 cents for the first time.</td></tr>
-<tr style="background:#fdecea"><td class="blab">🩺 Hospitals sitting on full cupboards</td><td style="text-align:right;font-weight:700;color:#b3261e">−~$2m est.</td><td>Medical customers bought less while they used up stockpiles, and European appliance makers faced cheap Chinese rivals — two of five markets shrank.</td></tr>
+<tr style="background:#e9f5ee"><td class="blab">🏭 Same roof, fuller shifts</td><td style="text-align:right;font-weight:700;color:#1e7a45">+150bp</td><td>$135.8m more sales poured through the same factories, so the rent and the machines got spread over far more boxes.</td></tr>
+<tr style="background:#e9f5ee"><td class="blab">🧲 Pricier cables in the van</td><td style="text-align:right;font-weight:700;color:#1e7a45">+120bp</td><td>More of what shipped was the fiddly, dear stuff — EV chargers, defence wiring and KST's patient leads, which earn more per sale.</td></tr>
+<tr style="background:#fdecea"><td class="blab">🇹🇷 The lira's bad hair day</td><td style="text-align:right;font-weight:700;color:#b3261e">−80bp</td><td>Turkish wages rose faster than the lira fell, and the dollar's swings shaved what foreign sales were worth.</td></tr>
+<tr style="background:#fdecea"><td class="blab">🏗️ Lights on, nobody ordering yet</td><td style="text-align:right;font-weight:700;color:#b3261e">−60bp</td><td>New sites in China, Indonesia and India are hiring before a single box ships — $4m of extra cost this half.</td></tr>
 </table>
-<div class="bcap">So in one sentence: an AI-driven cable boom, plus military and farm vehicles, comfortably out-muscled quiet hospitals and squeezed appliance-makers. Profit falls when: the data-centre buyers pause their building spree, or the Medical and Consumer slumps deepen faster than the boom grows. <i>(Profit-per-driver marked est. — the RNS quantifies revenue moves, not profit per driver.)</i></div>
+<div class="bcap">So in one sentence: busier factories and pricier products added 2.7 points of margin; wages, currency and new sites took back 1.4, leaving 11.1% — Volex's best half ever. Profit falls when: the second half pays to run two US factories at once during the Spokane-to-California move, the Asian sites keep hiring ahead of orders, and customers eat through the ~$10m they bought early. <i>(Contributions are the company's printed margin points; they net to +130bp, as printed.)</i></div>
 </div>
-<div class="bar"><div class="barhead">🌡️ CURRENT STATE — the read right now</div><div class="barin">
+<div class="bar"><div class="barhead">🌡️ CURRENT STATE — the read right now <span style="float:right;font-size:16px">⭐ H1 R · 12 Nov 2026</span></div><div class="barin">
 <b style="color:#1e7a45">🟢 TURNING UP</b>
 <ul>
-<li>FY26 revenue $1,242.6m, +14.4%, organic +14.2% — fourth consecutive accelerating organic print (25 Jun 2026).</li>
-<li>Delivered $127.3m uOP, 13% above the consensus the Jan-26 RAISE was set against.</li>
-<li>Q4† $339.9m was the strongest quarter of the year, +6.6% sequentially — derived, awaiting the Q1 FY27 print.</li>
-<li>Condition 1 fired green: 2+ 🟢↗ on R1 and R3, margin above target range, G-RAISE Jan-26.</li>
-<li>Margin 10.2% exceeds the 9–10% band for the first time; new 12% target set.</li>
-<li>⚠️ Data Centre is ~19% of group and supplied ~3/4 of FY26 growth — single-driver concentration, explanation two periods old.</li>
-<li>⚠️ Consumer (−7.8% organic) and Medical (−10.5%) both shrinking; Medical tariff headwind named and unresolved.</li>
-<li>⚠️ FY27 comparatives get brutal from H2: Data Centre lapped its doubling; Oct-25 already flagged deferred launches into FY2027.</li>
+<li>H1 revenue $723.6m, organic +23.6% — beat the TU's ≥21% floor by 2.6 points (12 Nov 2026).</li>
+<li>Margin 11.1%, up 1.3 points; uOP $80.6m, +40.9% — first half ever above 11%.</li>
+<li>Consumer Electricals $138.3m, +10.1% — Rank 2 green after two red halves.</li>
+<li>FY profit view "as upgraded… unchanged"; consensus rose to $153.9m — held, not raised.</li>
+<li>Language 0, second consecutive step down — amber: consensus rose onto an unchanged view.</li>
+<li>⚠️ H2 revenue guided ≈ H1 less ~$10m pull-forward; implied H2 profit ~$73m, below H1.</li>
+<li>⚠️ Margin "unlikely to be linear": US dual running and new Asian sites cost in H2.</li>
+<li>⚠️ Data Centre $125.7m†, down 19% on H2 FY26; CIT down 4% sequentially.</li>
 </ul>
 </div></div>
 </div>
 <details class="top"><summary>§2.0 workings</summary><div>
 <details class="sub"><summary>The four checks — workings behind the read</summary><div>
-<p>1. Sequential: H2 26 vs H1 26 — revenue 658.7 vs 583.9 (+12.8% half-on-half); uOP 70.1† vs 57.2 (+22.6%); margin 10.6†% vs 9.8%.</p>
-<p>2. Same-type vs last year: FY26 vs FY25 — revenue +14.4%, uOP +19.9%, margin +0.4pp, organic 14.2% vs 11.1%.</p>
-<p>3. Derivable sub-period: Q4† = 1,242.6 − 902.7 (9M, Jan-26 TU) = $339.9m; vs Q3† $318.8m sequential +6.6%; vs Q4 FY25† $297.1m +14.4% YoY. † watch-flag.</p>
-<p>4. Guide vs prior guide: Jan-26 guide "ahead of consensus" ($1,152.3m / $112.7m stated in that RNS); delivered $1,242.6m (+7.8%) and $127.3m (+13.0%). FY26 R itself: FY27 "strong and in line with the Board's expectations" — prelims never carry a market anchor (habit checked FY22–FY25), so G = flat. Driver-decomposition rule: "AI infrastructure" is now the stated driver two consecutive periods — one more and it is exhausted as an explanation.</p>
+<p>1. Sequential: revenue $723.6m vs H2 26† $658.7m (+9.9% reported; company +9.2% organic constant currency, vs the TU's ~7%). uOP $80.6m vs $70.1m† (+15.0%); margin 11.1% vs 10.6%†.</p>
+<p>2. Same-type vs last year (Nov-25 H1 R, re-read from source): organic 23.6% vs 13.0%; margin 11.1% vs 9.8%; both carry "Full-year expectations unchanged"-form wording. Drawer spot-check: Nov-25 H1 R verified.</p>
+<p>3. Derivable sub-periods: Q2 not derivable (no Q1 $ printed). TU floors beaten: ≥$710m → $723.6m (+1.9%); ≥21% → 23.6%. Watch-only ◊: the October Aug–Sep slowdown flag eases to ~2% below the May–Jul monthly pace ex KST and the pull-forward (rounded inputs — never scored).</p>
+<p>4. Guide vs prior guide: Oct-26 TU (re-read from source) "towards the upper end of current market expectations" against $150.4m ($145.9–153.3m); now "as upgraded at the October trading update, are unchanged" against $153.9m ($151.5–156.3m). G = flat — nothing moved against the company's own prior guide; consensus rose to meet it. The spec's "reconfirmation of upgraded expectations" clause was weighed and not applied, operator-accepted at the PAUSE. Guide arithmetic (not actuals): H2 revenue ≈ $723.6m − $10m = $713.6m → FY ~$1,437.2m, the top of the range; implied H2 uOP $153.9m − $80.6m = $73.3m (margin ~10.3%). Text re-read: 5 H1 R documents re-opened (Nov-21, Nov-22, Nov-23, Nov-24, Nov-25) — all scored 0.</p>
 </div></details>
-<details class="sub"><summary>Notes — §2.0</summary><div><p>KST consolidates into Medical from 14 Jul 2026 (basis change at H1 FY27: Medical organic % will govern like-for-like); £40m buyback reduces share count — EPS comparisons flattered from H1 FY27.</p></div></details>
+<details class="sub"><summary>Notes — §2.0</summary><div><p>Revenue is guided to the top of consensus while profit is guided to its middle — the second-half cost of dual running and new sites is the swing factor, and the first number that can move it is the Q3 TU's margin language.</p></div></details>
 <details class="sub"><summary>Balance-sheet sweep</summary><div>
-<p><b>Tier 1: none.</b> Net debt (before op leases) $121.5m, down from $127.4m; covenant leverage 0.8x vs 1.0x — falling two periods (green-shoot mirror). $500m facility to Jun-2029, $218.9m headroom + accordion; covenants leverage &lt;3.0x, interest cover &gt;3.0x; reverse stress at −39% revenue. Going-concern boilerplate, no material uncertainty. <b>Tier 2: none</b> — dividend raised (3.2p final). Watch: cash conversion 63.9% (FY25 67.2%) on Data Centre hub-model working capital; below flag threshold. <b>Wedge:</b> uOP $127.3m vs statutory $121.0m — $6.3m (5%), narrowed sharply from FY25's $23.3m — closing, renders nothing. Solvency grep: boilerplate only. Post-balance-sheet: KST $74.7m cash (pro-forma ~1.1x) + £40m buyback — verdict bullets.</p>
+<p><b>H1 27 R sweep:</b> Tier 1 none. Net debt (before op leases) $203.7m vs $121.5m at FY26 (+$82.2m) — the disclosed KST acquisition ($35.8m net cash, $9.0m completion bonuses, $18.1m tax and interest) and $22.7m buyback; one period of rise, explained. Covenant leverage 1.1x (limit 3.0x), interest cover 12.8x (limit 3.0x); $500m facility to Jun-2029, $273.9m undrawn. Going concern: base and 15%-revenue-fall downside both hold; reverse stress needs a 56.6% fall. Solvency grep: no material uncertainty, no emphasis of matter; interims unreviewed by auditors (habit).</p>
+<p><b>Tier 2:</b> one condition — inventory $324.5m (+38.9% YoY) and trade receivables $275.6m (+33.0%) outrunning revenue (+23.9%); KST adds $6.0m / $12.3m. One condition = note, not flag. Dividend raised (1.7p, +6.3%); share count down (buyback). Cash conversion 56.5% (33.4%).</p>
+<p><b>Wedge:</b> uOP $80.6m vs statutory $59.8m — $20.8m (25.8% of uOP) vs $10.6m (18.5%) in H1 26: widening, recurring part = share-based pay $6.9m (vs $2.6m) and acquired amortisation $6.4m (vs $4.8m). At PBT statutory ($75.4m) exceeds underlying ($69.4m) on the one-off $26.8m KST remeasurement gain.</p>
 </div></details>
 <details class="sub"><summary>Trend Watch workings</summary><div>
-<p>Datablock fetched from database.json; _meta.savedAt 24 Aug 2026 — 60 days after the 25 Jun 2026 Buy/Sell RNS, outside the ±14-day window → <b>stale → panel renders "no consensus data", no rows</b> (operator-confirmed at the PAUSE). Retained unused for the record: mode would be GROWTH; latest sub-period YoY — Revenue H2 +15.9% (658.7 vs 568.3, both from printed FY−H1, grid tie-out ✓), uPBT H2† +19.6% (59.9 vs 50.1, derived — watch-flag), EBITDA n/a (halves never printed by the company on its own basis; block splits not read per the norm rule). Block FY27 fc rev $1,337.6m — not consumed.</p>
+<p>Mode: SHARE (H1 R, part-year). Datablock savedAt 11 Nov 2026 07:36 — the day before the RNS: current, the pre-announcement consensus; FY1 revenue $1,411.1m ties to the RNS's own consensus statement. Norms = company's printed H1 share of FY, underlying basis, 3-year average.</p>
+<table class="grid" style="min-width:700px"><tr><th class="lab">Metric</th><th>Basis</th><th>Period actual</th><th>Prior-year</th><th>Norm (yrs)</th><th>FY1 fc (date)</th><th>Gap</th><th>Sources</th><th>Ranked?</th></tr>
+<tr><td class="lab">REVENUE</td><td>reported, incl KST</td><td>$723.6m = 51.3%</td><td>$583.9m</td><td>46.1% (FY24 43.5 · FY25 47.7 · FY26 47.0)</td><td>$1,411.1m (11 Nov 26)</td><td>+5.2pp 🟢</td><td>H1 R income statement; H1/FY R prints; datablock</td><td>N — this row is its only audit trail</td></tr>
+<tr><td class="lab">EBITDA</td><td>underlying</td><td>$99.4m = 51.6%</td><td>$73.6m</td><td>44.1% (46.8/111.6 · 61.3/134.7 · 73.6/163.8)</td><td>$192.6m (11 Nov 26)</td><td>+7.5pp 🟢</td><td>H1 R note 14; Nov-24, Nov-25 note 14; FY25, FY26 note 10</td><td>N — this row is its only audit trail</td></tr>
+<tr><td class="lab">PBT</td><td>underlying</td><td>$69.4m = 52.9%</td><td>$48.5m</td><td>43.6% (33.6/77.4 · 37.5/87.6 · 48.5/108.4)</td><td>$131.1m (11 Nov 26)</td><td>+9.3pp 🟢</td><td>H1 R income statement; Nov-23/24/25 and FY24/25/26 highlights tables</td><td>N — this row is its only audit trail</td></tr></table>
+<p>Sensitivities (not rendered): ex the $10m pull-forward the revenue gap is +4.5pp (still green). The block's own H1/H2 PBT rows sit on a statutory-style basis (H1 26 43.7 vs underlying 48.5) — never read, per the norm rule. Arcs: revenue 5.0pp row LEN 50; EBITDA 7.5pp row LEN 54; PBT nearest 10.0pp row LEN 58; all ROT −90.</p>
 </div></details>
 <details class="sub"><summary>Trigger detail &amp; audit record</summary><div>
-<p><b>Condition 1 (Numbers &amp; guide): FIRED, green-shoot.</b> Four consecutive accelerating R1 prints (FY25 +4.2pp, H1 26 +3.3pp, 9M +5.2pp, FY26 +3.1pp); 2+ consecutive 🟢↗ on R3 (H1 26 printed, H2 26 derived — not derived-only); margin expanding above range; G-RAISE Jan-26 subsequently delivered. Includes LEAD metrics + a G event — full weight, no discount. <b>Condition 2 (Language): not fired.</b> Scores ⚪/+1/+2 throughout; no rise from ≤0 (mirror needs a rise from zero or below), no print ≤ −1. <b>Condition 3 (Disclosure): not fired.</b> Nothing withheld; Q3 TU cadence and Data Centre % are expansions. <b>Count 1/3</b> — single-condition green = verdict note; no alert. Sweep clean (outside count). Corner date Apr-25 → : the accelerating run's earliest fire, continuing.</p>
+<p><b>Condition 1 (Numbers &amp; guide): FIRED, green-shoot.</b> R1 accelerating (23.6 vs 14.2, +9.4pp); R2 sequential growth resuming (138.3 vs 116.8†, YoY 🟢↗); R5 margin expanding +1.3pp. LEAD metrics — full weight. Conflict stated: R3 🔴↘ (Δrate −8.1pp) and down sequentially on a derived H2 — watch-flag, context-discounted (Data Centre non-repeat disclosed at FY R and H1 TU). Corner date Apr-25 → (continuing run). G flat. <b>Condition 2 (Language): technically met, not counted (amber).</b> Run +2 (Aug-26) → +1 (Oct-26) → 0 (Nov-26): two consecutive falls. Discounted: the step comes from consensus rising onto an unchanged, explicitly reaffirmed view, not from new hedging; the H1 R form has scored 0 at all five prior prints. Corner date Nov-26. <b>Condition 3 (Disclosure): not fired.</b> All ten rows quantified; consensus footnote first quantified at an H1 R (disclosure expansion, baseline from today). <b>Count 1/3</b> — no alert. Movement: up 1/3 → up 1/3 from H1 TU 2026-10-19, held; Language unlit → amber (g-- → ga-).</p>
+<p><b>Ledger review:</b> no new turn (guided line still rising). Proposed for the next build, unchanged: split R3 — Data Centre $ derivable as CIT × DC% (FY23 21.2%, FY24 41.7%, FY25 48.3%, H1 26 55.0%, FY26 63.0%, H1 27 57.6%).</p>
+<p><b>Open items:</b> 25 Mar 2026 trading update cited by the company is not in the project — a qualifying document the manifest lacks. Buyback: £20m programme completed 22 Oct 2026 (£16.9m / $22.7m in H1, £3.1m after); April's "up to £40m" unreconciled.</p>
 </div></details>
 </div></details>
 
 <h2>§3 · Text + G</h2>
-<div class="gridwrap"><table class="grid" id="text3" style="min-width:900px"><tr><th class="lab">Date</th><th>Doc</th><th>G</th><th>Verbatim forward-guidance phrase</th><th>Context</th><th>Score</th></tr><tr id="expbar"><td colspan="6" style="cursor:pointer;background:#efede7;text-align:left;font-size:11.5px" onclick="tog3()"><span id="explab">▸ Show 16 earlier prints — Nov-21 to Jan-26</span></td></tr><tr class="h3row" class="h3row" style="display:none"><td class="lab" data-rowtype="H1 R">Nov-21</td><td>FY22<br>H1 R</td><td>flat</td><td style="text-align:left">“reaffirming our outlook for the remainder of the year”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Supply-chain caveat noted; no numeric guide.</td><td>⚪ 0</td></tr><tr class="h3row" style="display:none;background:#fdf4e3"><td class="lab" data-rowtype="YE-TU">Apr-22</td><td>FY22<br>YE-TU</td><td>🟢 RAISE</td><td style="text-align:left">“revenues and underlying operating profits…ahead of consensus market expectations”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Floors given: rev >$605m, uOP >$55.0m — a floor is a sandbag.</td><td>🟢🟢 +2</td></tr><tr class="h3row" style="display:none;background:#fdf4e3"><td class="lab" data-rowtype="FY R">Jun-22</td><td>FY22<br>FY R</td><td>flat</td><td style="text-align:left">“results that are ahead of consensus market expectations”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Delivered $614.6m/$56.2m; new 5-yr plan $1.2bn by FY27 launched.</td><td>🟢 +1</td></tr><tr class="h3row" style="display:none;background:#fdf4e3"><td class="lab" data-rowtype="AGM">Aug-22</td><td>FY23<br>AGM</td><td>flat</td><td style="text-align:left">“strong, in line with management's expectations”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Q1 organic +4.9%; AGM habit is always “management's” — calibration, not a switch.</td><td>⚪ 0</td></tr><tr class="h3row" class="h3row" style="display:none"><td class="lab" data-rowtype="H1 R">Nov-22</td><td>FY23<br>H1 R</td><td>flat</td><td style="text-align:left">“underpins our confidence to reaffirm our outlook”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Organic +14.3%; margins held.</td><td>⚪ 0</td></tr><tr class="h3row" style="display:none;background:#fdf4e3"><td class="lab" data-rowtype="YE-TU">Apr-23</td><td>FY23<br>YE-TU</td><td>🟢 RAISE</td><td style="text-align:left">“revenue and underlying operating profit ahead of market expectations”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Floors ≥$710m / ≥$66m; Consumer “normalisation” named — the early warning that proved right.</td><td>🟢🟢 +2</td></tr><tr class="h3row" style="display:none;background:#fdf4e3"><td class="lab" data-rowtype="FY R">Jun-23</td><td>FY23<br>FY R</td><td>flat</td><td style="text-align:left">“strong start to the new financial year with high levels of customer demand”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Delivered $722.8m/$67.3m; prelims habit carries no market anchor.</td><td>🟢 +1</td></tr><tr class="h3row" style="display:none;background:#fdf4e3"><td class="lab" data-rowtype="AGM">Jul-23</td><td>FY24<br>AGM</td><td>flat</td><td style="text-align:left">“in line with management expectations”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Q1 organic +6.5% — deceleration visible; inventory normalisation named.</td><td>⚪ 0</td></tr><tr class="h3row" class="h3row" style="display:none"><td class="lab" data-rowtype="H1 TU">Oct-23</td><td>FY24<br>H1 TU</td><td>flat</td><td style="text-align:left">“on track to deliver full-year results in line with market expectations”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Cyber contained ($2m exceptional); organic only +4% — soft signal under an in-line anchor.</td><td>⚪ 0</td></tr><tr class="h3row" class="h3row" style="display:none"><td class="lab" data-rowtype="H1 R">Nov-23</td><td>FY24<br>H1 R</td><td>flat</td><td style="text-align:left">“confidence in the full year and progress towards five-year plan”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Organic +4.2%; EV −15.8%, Consumer −9.0% — the trough print.</td><td>⚪ 0</td></tr><tr class="h3row" style="display:none;background:#fdf4e3"><td class="lab" data-rowtype="YE-TU">Apr-24</td><td>FY24<br>YE-TU</td><td>🟢 RAISE</td><td style="text-align:left">“underlying operating profit…slightly ahead of analyst expectations”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Rev ≥$900m; destocking abating; H2 sequential +30% half-on-half.</td><td>🟢 +1</td></tr><tr class="h3row" class="h3row" style="display:none"><td class="lab" data-rowtype="FY R">Jun-24</td><td>FY24<br>FY R</td><td>flat</td><td style="text-align:left">“confident of making further progress in FY2025”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Delivered $912.8m/$89.7m.</td><td>🟢 +1</td></tr><tr class="h3row" style="display:none;background:#fdf4e3"><td class="lab" data-rowtype="AGM">Aug-24</td><td>FY25<br>AGM</td><td>flat</td><td style="text-align:left">“in line with management's expectations”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Q1 organic +9.0%; EV & Data Centre led.</td><td>⚪ 0</td></tr><tr class="h3row" class="h3row" style="display:none"><td class="lab" data-rowtype="H1 TU">Oct-24</td><td>FY25<br>H1 TU</td><td>flat</td><td style="text-align:left">“full year expectations unchanged”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Organic +9.7%; Türkiye inflation absorbed.</td><td>⚪ 0</td></tr><tr class="h3row" class="h3row" style="display:none"><td class="lab" data-rowtype="H1 R">Nov-24</td><td>FY25<br>H1 R</td><td>flat</td><td style="text-align:left">“full year expectations unchanged”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Margins in range; TT Electronics approach (later aborted) ran separately.</td><td>⚪ 0</td></tr><tr class="h3row" class="h3row" style="display:none"><td class="lab" data-rowtype="Q3 TU">Jan-25</td><td>FY25<br>Q3 TU</td><td>flat</td><td style="text-align:left">“expectations for the full year remain unchanged and are in line with market forecasts”</td><td style="text-align:left;font-size:11px;color:#5f5c54">First-ever Q3 TU (disclosure expansion); consensus stated $1,031.4m / $96.7m.</td><td>⚪ 0</td></tr><tr style="background:#fdf4e3"><td class="lab" data-rowtype="YE-TU">Apr-25</td><td>FY25<br>YE-TU</td><td>🟢 RAISE</td><td style="text-align:left">“operating profit of at least $100 million, well ahead of the top end of market estimates”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Rev ≥$1,060m; Q4 Data Centre acceleration named; tariff caution added.</td><td>🟢🟢 +2</td></tr><tr style="background:#fdf4e3"><td class="lab" data-rowtype="FY R">Jun-25</td><td>FY25<br>FY R</td><td>flat</td><td style="text-align:left">“Trading in FY2026 to date is very good…maintaining the momentum”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Delivered $1,086.5m/$106.2m.</td><td>🟢 +1</td></tr><tr style="background:#fdf4e3"><td class="lab" data-rowtype="AGM">Aug-25</td><td>FY26<br>AGM</td><td>flat</td><td style="text-align:left">“in line with management's expectations”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Q1 organic +10.4%.</td><td>⚪ 0</td></tr><tr><td class="lab" data-rowtype="H1 TU">Oct-25</td><td>FY26<br>H1 TU</td><td>flat</td><td style="text-align:left">“The Board's expectations for the full year remain unchanged”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Rev >$575m floor; H2 guided “broadly similar” to H1; programme deferrals into FY27 named.</td><td>⚪ 0</td></tr><tr><td class="lab" data-rowtype="H1 R">Nov-25</td><td>FY26<br>H1 R</td><td>flat</td><td style="text-align:left">“Full-year expectations unchanged”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Organic +13.0%; Data Centre +80%.</td><td>⚪ 0</td></tr><tr style="background:#fdf4e3"><td class="lab" data-rowtype="Q3 TU">Jan-26</td><td>FY26<br>Q3 TU</td><td>🟢 RAISE</td><td style="text-align:left">“confidence in delivering full year revenue ahead of current market consensus”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Consensus stated $1,152.3m / $112.7m; uOP expectations also raised; Medical/Consumer headwinds re-named.</td><td>🟢🟢 +2</td></tr><tr style="background:#fdf4e3"><td class="lab" data-rowtype="FY R">⭐ Jun-26</td><td>FY26<br>FY R</td><td>flat</td><td style="text-align:left">“Trading to date in FY2027 has been strong and in line with the Board's expectations”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Delivered 7.8% / 13.0% above the Jan consensus; new $2bn / 12% targets reiterated; prelims never carry a market anchor — not a switch.</td><td>🟢 +1</td></tr><tr  style="background:#fdf4e3"><td class="lab" data-rowtype="AGM">⭐ Aug-26</td><td>FY27<br>AGM</td><td>🟢 RAISE</td><td style="text-align:left">“very strong start…profit expected to be ahead of market expectations”</td><td style="text-align:left;font-size:11px;color:#5f5c54">4M organic +28.0%; first-ever AGM RAISE and first AGM consensus footnote ($1,338m / $138.3m uOP); reporting window changed Q1→4 months; company flags YoY normalisation ahead.</td><td>🟢🟢 +2</td></tr></table></div>
+<div class="gridwrap"><table class="grid" id="text3" style="min-width:900px"><tr><th class="lab">Date</th><th>Doc</th><th>G</th><th>Verbatim forward-guidance phrase</th><th>Context</th><th>Score</th></tr><tr id="expbar"><td colspan="6" style="cursor:pointer;background:#efede7;text-align:left;font-size:11.5px" onclick="tog3()"><span id="explab">▸ Show 17 earlier prints — Nov-21 to Apr-25</span></td></tr><tr class="h3row" style="display:none"><td class="lab" data-rowtype="H1 R">Nov-21</td><td>FY22<br>H1 R</td><td>flat</td><td style="text-align:left">“reaffirming our outlook for the remainder of the year”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Supply-chain caveat noted; no numeric guide.</td><td>⚪ 0</td></tr><tr class="h3row" style="display:none;background:#fdf4e3"><td class="lab" data-rowtype="YE-TU">Apr-22</td><td>FY22<br>YE-TU</td><td>🟢 RAISE</td><td style="text-align:left">“revenues and underlying operating profits…ahead of consensus market expectations”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Floors given: rev >$605m, uOP >$55.0m — a floor is a sandbag.</td><td>🟢🟢 +2</td></tr><tr class="h3row" style="display:none;background:#fdf4e3"><td class="lab" data-rowtype="FY R">Jun-22</td><td>FY22<br>FY R</td><td>flat</td><td style="text-align:left">“results that are ahead of consensus market expectations”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Delivered $614.6m/$56.2m; new 5-yr plan $1.2bn by FY27 launched.</td><td>🟢 +1</td></tr><tr class="h3row" style="display:none;background:#fdf4e3"><td class="lab" data-rowtype="AGM">Aug-22</td><td>FY23<br>AGM</td><td>flat</td><td style="text-align:left">“strong, in line with management's expectations”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Q1 organic +4.9%; AGM habit is always “management's” — calibration, not a switch.</td><td>⚪ 0</td></tr><tr class="h3row" style="display:none"><td class="lab" data-rowtype="H1 R">Nov-22</td><td>FY23<br>H1 R</td><td>flat</td><td style="text-align:left">“underpins our confidence to reaffirm our outlook”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Organic +14.3%; margins held.</td><td>⚪ 0</td></tr><tr class="h3row" style="display:none;background:#fdf4e3"><td class="lab" data-rowtype="YE-TU">Apr-23</td><td>FY23<br>YE-TU</td><td>🟢 RAISE</td><td style="text-align:left">“revenue and underlying operating profit ahead of market expectations”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Floors ≥$710m / ≥$66m; Consumer “normalisation” named — the early warning that proved right.</td><td>🟢🟢 +2</td></tr><tr class="h3row" style="display:none;background:#fdf4e3"><td class="lab" data-rowtype="FY R">Jun-23</td><td>FY23<br>FY R</td><td>flat</td><td style="text-align:left">“strong start to the new financial year with high levels of customer demand”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Delivered $722.8m/$67.3m; prelims habit carries no market anchor.</td><td>🟢 +1</td></tr><tr class="h3row" style="display:none;background:#fdf4e3"><td class="lab" data-rowtype="AGM">Jul-23</td><td>FY24<br>AGM</td><td>flat</td><td style="text-align:left">“in line with management expectations”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Q1 organic +6.5% — deceleration visible; inventory normalisation named.</td><td>⚪ 0</td></tr><tr class="h3row" style="display:none"><td class="lab" data-rowtype="H1 TU">Oct-23</td><td>FY24<br>H1 TU</td><td>flat</td><td style="text-align:left">“on track to deliver full-year results in line with market expectations”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Cyber contained ($2m exceptional); organic only +4% — soft signal under an in-line anchor.</td><td>⚪ 0</td></tr><tr class="h3row" style="display:none"><td class="lab" data-rowtype="H1 R">Nov-23</td><td>FY24<br>H1 R</td><td>flat</td><td style="text-align:left">“confidence in the full year and progress towards five-year plan”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Organic +4.2%; EV −15.8%, Consumer −9.0% — the trough print.</td><td>⚪ 0</td></tr><tr class="h3row" style="display:none;background:#fdf4e3"><td class="lab" data-rowtype="YE-TU">Apr-24</td><td>FY24<br>YE-TU</td><td>🟢 RAISE</td><td style="text-align:left">“underlying operating profit…slightly ahead of analyst expectations”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Rev ≥$900m; destocking abating; H2 sequential +30% half-on-half.</td><td>🟢 +1</td></tr><tr class="h3row" style="display:none"><td class="lab" data-rowtype="FY R">Jun-24</td><td>FY24<br>FY R</td><td>flat</td><td style="text-align:left">“confident of making further progress in FY2025”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Delivered $912.8m/$89.7m.</td><td>🟢 +1</td></tr><tr class="h3row" style="display:none;background:#fdf4e3"><td class="lab" data-rowtype="AGM">Aug-24</td><td>FY25<br>AGM</td><td>flat</td><td style="text-align:left">“in line with management's expectations”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Q1 organic +9.0%; EV & Data Centre led.</td><td>⚪ 0</td></tr><tr class="h3row" style="display:none"><td class="lab" data-rowtype="H1 TU">Oct-24</td><td>FY25<br>H1 TU</td><td>flat</td><td style="text-align:left">“full year expectations unchanged”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Organic +9.7%; Türkiye inflation absorbed.</td><td>⚪ 0</td></tr><tr class="h3row" style="display:none"><td class="lab" data-rowtype="H1 R">Nov-24</td><td>FY25<br>H1 R</td><td>flat</td><td style="text-align:left">“full year expectations unchanged”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Margins in range; TT Electronics approach (later aborted) ran separately.</td><td>⚪ 0</td></tr><tr class="h3row" style="display:none"><td class="lab" data-rowtype="Q3 TU">Jan-25</td><td>FY25<br>Q3 TU</td><td>flat</td><td style="text-align:left">“expectations for the full year remain unchanged and are in line with market forecasts”</td><td style="text-align:left;font-size:11px;color:#5f5c54">First-ever Q3 TU (disclosure expansion); consensus stated $1,031.4m / $96.7m.</td><td>⚪ 0</td></tr><tr class="h3row" style="display:none;background:#fdf4e3"><td class="lab" data-rowtype="YE-TU">Apr-25</td><td>FY25<br>YE-TU</td><td>🟢 RAISE</td><td style="text-align:left">“operating profit of at least $100 million, well ahead of the top end of market estimates”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Rev ≥$1,060m; Q4 Data Centre acceleration named; tariff caution added.</td><td>🟢🟢 +2</td></tr><tr style="background:#fdf4e3"><td class="lab" data-rowtype="FY R">Jun-25</td><td>FY25<br>FY R</td><td>flat</td><td style="text-align:left">“Trading in FY2026 to date is very good…maintaining the momentum”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Delivered $1,086.5m/$106.2m.</td><td>🟢 +1</td></tr><tr style="background:#fdf4e3"><td class="lab" data-rowtype="AGM">Aug-25</td><td>FY26<br>AGM</td><td>flat</td><td style="text-align:left">“in line with management's expectations”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Q1 organic +10.4%.</td><td>⚪ 0</td></tr><tr><td class="lab" data-rowtype="H1 TU">Oct-25</td><td>FY26<br>H1 TU</td><td>flat</td><td style="text-align:left">“The Board's expectations for the full year remain unchanged”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Rev >$575m floor; H2 guided “broadly similar” to H1; programme deferrals into FY27 named.</td><td>⚪ 0</td></tr><tr><td class="lab" data-rowtype="H1 R">Nov-25</td><td>FY26<br>H1 R</td><td>flat</td><td style="text-align:left">“Full-year expectations unchanged”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Organic +13.0%; Data Centre +80%.</td><td>⚪ 0</td></tr><tr style="background:#fdf4e3"><td class="lab" data-rowtype="Q3 TU">Jan-26</td><td>FY26<br>Q3 TU</td><td>🟢 RAISE</td><td style="text-align:left">“confidence in delivering full year revenue ahead of current market consensus”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Consensus stated $1,152.3m / $112.7m; uOP expectations also raised; Medical/Consumer headwinds re-named.</td><td>🟢🟢 +2</td></tr><tr style="background:#fdf4e3"><td class="lab" data-rowtype="FY R">Jun-26</td><td>FY26<br>FY R</td><td>flat</td><td style="text-align:left">“Trading to date in FY2027 has been strong and in line with the Board's expectations”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Delivered 7.8% / 13.0% above the Jan consensus; new $2bn / 12% targets reiterated; prelims never carry a market anchor — not a switch.</td><td>🟢 +1</td></tr><tr style="background:#fdf4e3"><td class="lab" data-rowtype="AGM">Aug-26</td><td>FY27<br>AGM</td><td>🟢 RAISE</td><td style="text-align:left">“As a result of the strength of trading in the opening months and the operating leverage inherent within the business model, the Board now expects FY2027 underlying operating profit to be ahead of current market expectations”</td><td style="text-align:left;font-size:11px;color:#5f5c54">4M organic +28.0%; first-ever AGM RAISE and first AGM consensus footnote ($1,338m / $138.3m uOP); reporting window changed Q1→4 months; company flags YoY normalisation ahead.</td><td>🟢🟢 +2</td></tr><tr style="background:#fdf4e3"><td class="lab" data-rowtype="H1 TU">Oct-26</td><td>FY27<br>H1 TU</td><td>🟢 RAISE</td><td style="text-align:left">“…with current trading conditions expected to continue across most end-markets. The Board expects FY2027 underlying operating profit to be towards the upper end of current market expectations”</td><td style="text-align:left;font-size:11px;color:#5f5c54">Consensus $150.4m ($145.9–153.3m) at 16 Oct, up from $138.3m at the AGM; H2 revenue guided broadly similar to H1 after ~$10m pulled forward; Data Centre below H2 FY26; market anchor kept. Wording steps down from “ahead of” — RAISE on the higher bar, operator-accepted.</td><td>🟢 +1</td></tr><tr style="background:#fdf4e3"><td class="lab" data-rowtype="H1 R">⭐ Nov-26</td><td>FY27<br>H1 R</td><td>flat</td><td style="text-align:left">“The second half has started well. The Board’s expectations for the full year, as upgraded at the October trading update, are unchanged. Second-half revenue is expected to be broadly in line with first-half revenue excluding the c.$10 million brought forward”</td><td style="text-align:left;font-size:11px;color:#5f5c54">First consensus footnote at an H1 R ($1,411.1m / $153.9m uOP). October guide held, but consensus has caught up — the view moved from upper end to mid. Beside it, a new H2 margin caution (“unlikely to be linear… dual running and ramp-up costs”). Organic 23.6% vs the ≥21% floor.</td><td>⚪ 0</td></tr></table></div>
 <details class="top"><summary>§3 workings</summary><div>
-<details class="sub"><summary>Notes — §3</summary><div><p>G record 6 RAISEs / 17 flats / 0 CUTs, every RAISE delivered — a Volex "in line" reads as a floor; the day an in-line arrives beside a named unresolved Data Centre headwind, the cap-at-0 rule bites.</p></div></details>
+<details class="sub"><summary>Notes — §3</summary><div><p>G record 8 RAISEs / 18 flats / 0 CUTs (one FY26 year-end TU missing from the record); language has now stepped down twice (+2 → +1 → 0) without the word “in line” — a third step at the Q3 TU, or a margin caution turning into a numbers cut, lights Language red.</p></div></details>
 <details class="sub"><summary>Guidance passages (trailing 12 months)</summary><div>
-<p><b>Oct-25 H1 TU:</b> "Revenues are expected to exceed $575 million with organic revenue growth for the period of at least 11%… The Group expects second-half revenues to be broadly similar to the first half, reflecting stable trading across most end-markets… A small number of new programme launches have been temporarily deferred… expected to be delivered in FY2027 and beyond… The Board's expectations for the full year remain unchanged."</p>
-<p><b>Nov-25 H1 R:</b> "Double digit organic growth with margins maintained at upper end of target range. Full-year expectations unchanged." Deferral caveat repeated verbatim in the EV section.</p>
 <p><b>Jan-26 Q3 TU:</b> "The strong momentum, and good visibility through to the financial year-end provides the Board with confidence in delivering full year revenue ahead of current market consensus. Underlying operating margins are projected to be sustained, also driving an increase in the Board's expectations for underlying operating profit for the full year." Consensus footnote: revenue $1,152.3m (range 1,145.1–1,167.4), uOP $112.7m (111.7–114.9), as at 19 Jan 2026.</p>
-<p><b>⭐ Jun-26 FY R:</b> "Trading to date in FY2027 has been strong and in line with the Board's expectations… The Board is confident that the Group is well positioned to deliver the medium term targets set out at the Capital Markets Day in April 2026, including revenues of $2 billion and a 12% underlying operating margin." <i>Editorial: no market-consensus reference anywhere in the document — consistent with all five prior prelims (absence note, verified against the whole document).</i></p>
-<p><b>⭐ Aug-26 AGM:</b> "As a result of the strength of trading in the opening months and the operating leverage inherent within the business model, the Board now expects FY2027 underlying operating profit to be ahead of current market expectations." Footnote: consensus (24 Aug, 5 of 7 analysts, post-KST) revenue $1,338m (1,327–1,347), uOP $138.3m (135.3–141.3). Also: "average monthly revenue in the first four months of the year running 8% higher than the monthly average for the second half of FY2026."</p>
+<p><b>Jun-26 FY R:</b> "Trading to date in FY2027 has been strong and in line with the Board's expectations… The Board is confident that the Group is well positioned to deliver the medium term targets set out at the Capital Markets Day in April 2026, including revenues of $2 billion and a 12% underlying operating margin." <i>Editorial: no market-consensus reference anywhere in the document — consistent with all five prior prelims (absence note, verified against the whole document).</i></p>
+<p><b>Aug-26 AGM:</b> "As a result of the strength of trading in the opening months and the operating leverage inherent within the business model, the Board now expects FY2027 underlying operating profit to be ahead of current market expectations." Footnote: consensus (24 Aug, 5 of 7 analysts, post-KST) revenue $1,338m (1,327–1,347), uOP $138.3m (135.3–141.3). Also: "average monthly revenue in the first four months of the year running 8% higher than the monthly average for the second half of FY2026."</p>
+
+<p><b>Oct-26 H1 TU (19 Oct 2026, Outlook):</b> "Second half revenues are expected to be broadly similar to the first half, after allowing for the revenue brought forward ahead of the US site consolidation, with current trading conditions expected to continue across most end-markets. The Board expects FY2027 underlying operating profit to be towards the upper end of current market expectations." Footnote: consensus at 16 Oct 2026 revenue $1,386.2m (1,371.0–1,437.2), uOP $150.4m (145.9–153.3). Also (Revenue section): "Data Centre revenues were well ahead of the prior-year comparator, although below the second half of FY2026."</p>
+<p><b>⭐ Nov-26 H1 R (12 Nov 2026, Outlook):</b> "The second half has started well. The Board’s expectations for the full year, as upgraded at the October trading update, are unchanged. We expect second-half revenue to be broadly in line with first-half revenue excluding the c.$10 million brought forward from the second half. Customers will draw down the buffer stock built in the first half ahead of the consolidation of our US manufacturing, and we expect this to be offset by a full six months’ contribution from KST." Definitions: "The Board of Volex considers that the current consensus market expectation for revenue is $1,411.1 million (with a range of $1,377.0 million to $1,437.2 million) and for underlying operating profit of $153.9 million (with a range of $151.5 million to $156.3 million)." Also (Investing in our business): "margin progression is unlikely to be linear. The second half will include additional dual running and ramp-up costs…"</p>
 </div></details>
 </div></details>
+
+<div class="ovl"><div class="ovh"><span>§3 overlay — share price vs Text + G prints</span><span class="ovleg" id="ovleg"></span></div><div data-drift-chart></div><div class="ovcap">Source: Alpha Vantage VLX.LON weekly closes, 2021-08-06 to 2026-11-11 · last close 567p (2026-11-11, week in progress) · adj none · 26 marks · chart.js v1.9. Display only: scores nothing, fires nothing.</div></div>
 
 <h2 id="drifth">§4 · Drift — what they've gone quiet about</h2>
-<p style="font-size:11.5px;color:var(--mute);max-width:1100px">Which numbers get shared, hedged, or dropped, document by document — going quiet is the signal. Full column run, always. Key: ✅ quantified · 🟡 qualitative only · ❌ withheld vs cadence · — outside cadence · ⊘ update not issued (none in this record). Column types: Q1TU·H1TU·H1R·Q3TU·YETU·FYR·AGM.</p>
-<div class="gridwrap"><table class="grid" id="drift" style="min-width:1300px"><tr><th class="lab">Metric</th><th class="phead" data-p="H1R" style="font-size:10px">Nov-21<br><small>H1 R</small></th><th class="phead" data-p="YETU" style="font-size:10px">Apr-22<br><small>YE-TU</small></th><th class="phead" data-p="FYR" style="font-size:10px">Jun-22<br><small>FY R</small></th><th class="phead" data-p="AGM" style="font-size:10px">Aug-22<br><small>AGM</small></th><th class="phead" data-p="H1R" style="font-size:10px">Nov-22<br><small>H1 R</small></th><th class="phead" data-p="YETU" style="font-size:10px">Apr-23<br><small>YE-TU</small></th><th class="phead" data-p="FYR" style="font-size:10px">Jun-23<br><small>FY R</small></th><th class="phead" data-p="AGM" style="font-size:10px">Jul-23<br><small>AGM</small></th><th class="phead" data-p="H1TU" style="font-size:10px">Oct-23<br><small>H1 TU</small></th><th class="phead" data-p="H1R" style="font-size:10px">Nov-23<br><small>H1 R</small></th><th class="phead" data-p="YETU" style="font-size:10px">Apr-24<br><small>YE-TU</small></th><th class="phead" data-p="FYR" style="font-size:10px">Jun-24<br><small>FY R</small></th><th class="phead" data-p="AGM" style="font-size:10px">Aug-24<br><small>AGM</small></th><th class="phead" data-p="H1TU" style="font-size:10px">Oct-24<br><small>H1 TU</small></th><th class="phead" data-p="H1R" style="font-size:10px">Nov-24<br><small>H1 R</small></th><th class="phead" data-p="Q3TU" style="font-size:10px">Jan-25<br><small>Q3 TU</small></th><th class="phead" data-p="YETU" style="font-size:10px">Apr-25<br><small>YE-TU</small></th><th class="phead" data-p="FYR" style="font-size:10px">Jun-25<br><small>FY R</small></th><th class="phead" data-p="AGM" style="font-size:10px">Aug-25<br><small>AGM</small></th><th class="phead" data-p="H1TU" style="font-size:10px">Oct-25<br><small>H1 TU</small></th><th class="phead" data-p="H1R" style="font-size:10px">Nov-25<br><small>H1 R</small></th><th class="phead" data-p="Q3TU" style="font-size:10px">Jan-26<br><small>Q3 TU</small></th><th class="phead" data-p="FYR" style="font-size:10px">Jun-26<br><small>FY R</small></th><th class="phead" data-p="AGM" style="font-size:10px">⭐ Aug-26<br><small>AGM</small></th></tr><tr><td class="lab">Group revenue $</td><td>—</td><td>✅</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>🟡</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>—</td></tr><tr><td class="lab">Organic growth %</td><td>—</td><td>🟡</td><td>✅</td><td>✅</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr><tr><td class="lab">uOP $</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>🟡</td><td>✅</td><td>🟡</td><td>✅</td><td>—</td><td>🟡</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>—</td><td>🟡</td><td>✅</td><td>🟡</td><td>✅</td><td>—</td></tr><tr><td class="lab">Margin</td><td>✅</td><td>🟡</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>🟡</td><td>🟡</td><td>✅</td><td>🟡</td><td>✅</td><td>—</td><td>🟡</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>—</td><td>🟡</td><td>✅</td><td>✅</td><td>✅</td><td>🟡</td></tr><tr><td class="lab">Segment revenue $</td><td>✅</td><td>🟡</td><td>✅</td><td>—</td><td>✅</td><td>🟡</td><td>✅</td><td>—</td><td>🟡</td><td>✅</td><td>🟡</td><td>✅</td><td>—</td><td>🟡</td><td>✅</td><td>🟡</td><td>🟡</td><td>✅</td><td>🟡</td><td>🟡</td><td>✅</td><td>🟡</td><td>✅</td><td>—</td></tr><tr><td class="lab">Segment organic %</td><td>🟡</td><td>🟡</td><td>✅</td><td>—</td><td>✅</td><td>🟡</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>🟡</td><td>✅</td><td>🟡</td></tr><tr><td class="lab">Net debt / leverage</td><td>✅</td><td>🟡</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>🟡</td><td>✅</td><td>✅</td><td>✅</td><td>—</td></tr><tr><td class="lab">Cash conv. / uFCF</td><td>✅</td><td>🟡</td><td>✅</td><td>—</td><td>✅</td><td>🟡</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>🟡</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>🟡</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>✅</td><td>—</td></tr><tr><td class="lab">Consensus footnote</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>—</td><td>—</td><td>—</td><td>✅</td><td>✅</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>✅</td></tr><tr><td class="lab">Data Centre % of CIT</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>🟡</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>🟡</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>🟡</td><td>✅</td><td>🟡</td></tr></table></div>
+<p style="font-size:11.5px;color:var(--mute);max-width:1100px">Which numbers get shared, hedged, or dropped, document by document — going quiet is the signal. Full column run, always. Key: ✅ quantified · 🟡 qualitative only · ❌ withheld vs cadence · — outside cadence · ⊘ update not issued (none in this record). Column types: Q1TU·H1TU·H1R·Q3TU·YETU·FYR·AGM. 26 manifest documents = 26 columns; one company-cited document (25 Mar 2026) is absent from the record.</p>
+<div class="gridwrap"><table class="grid" id="drift" style="min-width:1300px"><tr><th class="lab">Metric</th><th class="phead" data-p="H1R" style="font-size:10px">Nov-21<br><small>H1 R</small></th><th class="phead" data-p="YETU" style="font-size:10px">Apr-22<br><small>YE-TU</small></th><th class="phead" data-p="FYR" style="font-size:10px">Jun-22<br><small>FY R</small></th><th class="phead" data-p="AGM" style="font-size:10px">Aug-22<br><small>AGM</small></th><th class="phead" data-p="H1R" style="font-size:10px">Nov-22<br><small>H1 R</small></th><th class="phead" data-p="YETU" style="font-size:10px">Apr-23<br><small>YE-TU</small></th><th class="phead" data-p="FYR" style="font-size:10px">Jun-23<br><small>FY R</small></th><th class="phead" data-p="AGM" style="font-size:10px">Jul-23<br><small>AGM</small></th><th class="phead" data-p="H1TU" style="font-size:10px">Oct-23<br><small>H1 TU</small></th><th class="phead" data-p="H1R" style="font-size:10px">Nov-23<br><small>H1 R</small></th><th class="phead" data-p="YETU" style="font-size:10px">Apr-24<br><small>YE-TU</small></th><th class="phead" data-p="FYR" style="font-size:10px">Jun-24<br><small>FY R</small></th><th class="phead" data-p="AGM" style="font-size:10px">Aug-24<br><small>AGM</small></th><th class="phead" data-p="H1TU" style="font-size:10px">Oct-24<br><small>H1 TU</small></th><th class="phead" data-p="H1R" style="font-size:10px">Nov-24<br><small>H1 R</small></th><th class="phead" data-p="Q3TU" style="font-size:10px">Jan-25<br><small>Q3 TU</small></th><th class="phead" data-p="YETU" style="font-size:10px">Apr-25<br><small>YE-TU</small></th><th class="phead" data-p="FYR" style="font-size:10px">Jun-25<br><small>FY R</small></th><th class="phead" data-p="AGM" style="font-size:10px">Aug-25<br><small>AGM</small></th><th class="phead" data-p="H1TU" style="font-size:10px">Oct-25<br><small>H1 TU</small></th><th class="phead" data-p="H1R" style="font-size:10px">Nov-25<br><small>H1 R</small></th><th class="phead" data-p="Q3TU" style="font-size:10px">Jan-26<br><small>Q3 TU</small></th><th class="phead" data-p="FYR" style="font-size:10px">Jun-26<br><small>FY R</small></th><th class="phead" data-p="AGM" style="font-size:10px">Aug-26<br><small>AGM</small></th><th class="phead" data-p="H1TU" style="font-size:10px">Oct-26<br><small>H1 TU</small></th><th class="phead" data-p="H1R" style="font-size:10px">⭐ 12 Nov 26<br><small>H1 R</small></th></tr><tr><td class="lab">Group revenue $</td><td>—</td><td>✅</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>🟡</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>✅ ≥$710m</td><td>✅ $723.6m</td></tr><tr><td class="lab">Organic growth %</td><td>—</td><td>🟡</td><td>✅</td><td>✅</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅ ≥21%</td><td>✅ 23.6%</td></tr><tr><td class="lab">uOP $</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>🟡</td><td>✅</td><td>🟡</td><td>✅</td><td>—</td><td>🟡</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>—</td><td>🟡</td><td>✅</td><td>🟡</td><td>✅</td><td>—</td><td>🟡</td><td>✅ $80.6m</td></tr><tr><td class="lab">Margin</td><td>✅</td><td>🟡</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>🟡</td><td>🟡</td><td>✅</td><td>🟡</td><td>✅</td><td>—</td><td>🟡</td><td>✅</td><td>🟡</td><td>✅</td><td>✅</td><td>—</td><td>🟡</td><td>✅</td><td>✅</td><td>✅</td><td>🟡</td><td>🟡</td><td>✅ 11.1%</td></tr><tr><td class="lab">Segment revenue $</td><td>✅</td><td>🟡</td><td>✅</td><td>—</td><td>✅</td><td>🟡</td><td>✅</td><td>—</td><td>🟡</td><td>✅</td><td>🟡</td><td>✅</td><td>—</td><td>🟡</td><td>✅</td><td>🟡</td><td>🟡</td><td>✅</td><td>🟡</td><td>🟡</td><td>✅</td><td>🟡</td><td>✅</td><td>—</td><td>🟡</td><td>✅</td></tr><tr><td class="lab">Segment organic %</td><td>🟡</td><td>🟡</td><td>✅</td><td>—</td><td>✅</td><td>🟡</td><td>✅</td><td>—</td><td>🟡</td><td>✅</td><td>🟡</td><td>✅</td><td>🟡</td><td>🟡</td><td>✅</td><td>🟡</td><td>🟡</td><td>✅</td><td>🟡</td><td>🟡</td><td>✅</td><td>🟡</td><td>✅</td><td>🟡</td><td>🟡</td><td>✅</td></tr><tr><td class="lab">Net debt / leverage</td><td>✅</td><td>🟡</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>🟡</td><td>✅</td><td>✅</td><td>✅</td><td>—</td><td>✅ ≤1.2x</td><td>✅ 1.1x</td></tr><tr><td class="lab">Cash conv. / uFCF</td><td>✅</td><td>🟡</td><td>✅</td><td>—</td><td>✅</td><td>🟡</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>🟡</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>🟡</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>✅ 56.5%</td></tr><tr><td class="lab">Consensus footnote</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>—</td><td>—</td><td>—</td><td>✅</td><td>✅</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>✅</td><td>✅</td><td>✅</td></tr><tr><td class="lab">Data Centre % of CIT</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>🟡</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>🟡</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>—</td><td>—</td><td>✅</td><td>🟡</td><td>✅</td><td>🟡</td><td>🟡</td><td>✅ 57.6%</td></tr></table></div>
 <details class="top"><summary>§4 workings</summary><div>
-<details class="sub"><summary>Notes — §4</summary><div><p>⭐ Jun-26 column: nothing withheld or gone qualitative; Data Centre % of CIT now quantified at every recent document — a company volunteering its concentration number is a mild green shoot; watch for the quarter it stops. Audit corrections applied: uOP Nov-22 →✅; AGM margin cells and Jul-23/Oct-24 balance-sheet cells re-marked — (habit never established at those document types); Data Centre % Nov-24 →✅ (46% printed), Oct-25/Jan-26 →🟡 (qualitative only). ⭐ Aug-26 column: consensus footnote new at AGM (expansion); margin newly qualitative at AGM; reporting window Q1→4 months (format shift, logged).</p></div></details>
+<details class="sub"><summary>Notes — §4</summary><div><p>⭐ Nov-26 column: nothing withheld — all ten rows quantified; the consensus footnote is a first-ever print at an H1 R (Nov-24 and Nov-25 carried none) — a disclosure expansion, baseline from today; Data Centre organic % (47.0%) and organic ex Data Centre (19.5%) volunteered for the first time. Earlier: Oct-26 column: nothing withheld; leverage (≤1.2x) and the consensus footnote re-quantified at H1 TU after Oct-25 carried neither; KST contribution and sequential organic growth volunteered. Corrections this read: Segment organic % Oct-23, Aug-24, Oct-24, Apr-25, Aug-25, Oct-25 ✅→🟡 (those documents print a group organic rate, not segment rates; the scripted audit sweep matched the group figure). Manifest gap: a 25 Mar 2026 trading update cited by the company is not in the record. Earlier: Jun-26 column: nothing withheld or gone qualitative; Data Centre % of CIT now quantified at every recent document — a company volunteering its concentration number is a mild green shoot; watch for the quarter it stops. Audit corrections applied: uOP Nov-22 →✅; AGM margin cells and Jul-23/Oct-24 balance-sheet cells re-marked — (habit never established at those document types); Data Centre % Nov-24 →✅ (46% printed), Oct-25/Jan-26 →🟡 (qualitative only). ⭐ Aug-26 column: consensus footnote new at AGM (expansion); margin newly qualitative at AGM; reporting window Q1→4 months (format shift, logged).</p></div></details>
 </div></details>
 
-<script type="application/json" id="drift-entry">{
- "ticker": "VLX",
- "company": "Volex plc",
- "kind": "ticker",
- "direction": "up",
- "headline": "First-ever AGM RAISE: 4-month organic +28%, FY27 profit guided ahead of a $138.3m consensus \u2014 momentum extending, comparator effect now the base case.",
- "trigger": "Condition 1 fired green (five accelerating R1 prints Apr-25 \u2192, G-RAISE on the Buy/Sell AGM itself). Conditions 2 and 3 unfired. Single-condition green \u2014 no 2-of-3.",
- "alert": false,
- "fired": 1,
- "fired_of": 3,
- "lights": "g--",
- "rns_type": "AGM",
- "rns_date": "2026-08-25",
- "build_date": "2026-08-27",
- "spec_version": "v5.4",
- "next_test": "~mid-Oct 2026 H1 FY27 TU: H1 organic print still double-digit as the comparator normalises; guidance held ahead of the raised $138.3m bar.",
- "url": "VLX.html",
- "grid": {
-  "labels": [
-   "R1",
-   "R2",
-   "R3",
-   "R4",
-   "R5"
-  ],
-  "periods": [
-   "H2 22",
-   "H1 23",
-   "H2 23",
-   "H1 24",
-   "H2 24",
-   "H1 25",
-   "H2 25",
-   "H1 26",
-   "H2 26"
-  ],
-  "rows": [
-   "--rrrgggg",
-   "---raggrr",
-   "---rrrrgg",
-   "---aggrrg",
-   "-agagaaga"
-  ],
-  "note": "R1 organic CC growth (H1/FY prints mapped to half slots) \u00b7 R2 Consumer Electricals \u00b7 R3 CIT/Data Centre \u00b7 R4 underlying operating profit \u00b7 R5 underlying operating margin"
- },
- "trend": {
-  "mode": "share",
-  "cells": "---",
-  "rows": []
- },
- "prev": {
-  "direction": "up",
-  "fired": 1,
-  "lights": "g--",
-  "rns_date": "2026-06-25",
-  "rns_type": "FY R"
- }
-}</script>
 <script>
-function tog3(){var t=document.getElementById('text3');var rows=t.querySelectorAll('.h3row');var open=rows[0].style.display!=='none';rows.forEach(function(r){r.style.display=open?'none':'';});document.getElementById('explab').textContent=(open?'▸ Show':'▾ Hide')+' 16 earlier prints — Nov-21 to Jan-26';}
+function tog3(){var t=document.getElementById('text3');var rows=t.querySelectorAll('.h3row');var open=rows[0].style.display!=='none';rows.forEach(function(r){r.style.display=open?'none':'';});document.getElementById('explab').textContent=(open?'▸ Show':'▾ Hide')+' 17 earlier prints — Nov-21 to Apr-25';}
 function wire(tid){var t=document.getElementById(tid);if(!t)return;t.querySelectorAll('th.phead').forEach(function(h){h.addEventListener('click',function(){var p=h.getAttribute('data-p');var on=h.classList.contains('hl');
  t.querySelectorAll('th.phead').forEach(function(x){x.classList.remove('hl');});
  t.querySelectorAll('td.hl').forEach(function(x){x.classList.remove('hl');});
@@ -409,4 +437,565 @@ document.querySelectorAll('#text3 td.lab[data-rowtype]').forEach(function(c){c.s
  t.querySelectorAll('tr').forEach(function(r){r.style.outline='';var l=r.querySelector('td.lab[data-rowtype]');if(l&&l.getAttribute('data-rowtype')===rt){r.style.outline='2px solid #d94fa0';}});
 });});
 </script>
+<script>
+/* ==== DRIFT PRICE OVERLAY — chart.js — master copy (Drift repo) ====
+   Spec: "Drift price overlay — architecture note", 17 Oct 2026.
+   ONE renderer, two themes. Drift dashboards paste this file in verbatim
+   (light theme, frozen at build); Database and the wall load it live (dark).
+   Display only: it scores nothing and fires nothing.
+
+   API
+     DriftChart.render(el, data, {theme:'light'|'dark', size:'page'|'card'|'preview'|'modal', tail:[[iso,price],…], star:iso})
+     DriftChart.legend(theme)                  -> HTML string
+     DriftChart.validate(data)                 -> [] or list of error strings
+     DriftChart.parseTail(rows4, ticker, ccy, afterIso) -> [[iso,price],…] (dark theme only)
+     DriftChart.mountFromPage()                -> renders the dashboard panel from #drift-chart
+*/
+(function (root) {
+  'use strict';
+
+  var THEMES = {
+    light: { line: '#2f9e5c', fill: '#2f9e5c', fillOp: 0.08, pos: '#2546f0', neg: '#ff2d2d',
+             zeroFill: '#fff', zeroStroke: '#6b6860', outline: '#fff', grid: '#e4e1da',
+             axis: '#6b6860', adj: '#8d8981', tipBg: '#fff', tipFg: '#16150f', tipBorder: '#d8d5cf' },
+    dark:  { line: '#c9c6d8', fill: '#fff', fillOp: 0.04, pos: '#00d97e', neg: '#ff4757',
+             zeroFill: '#0a0a0f', zeroStroke: '#9a9ab5', outline: '#0a0a0f', grid: '#1e1e28',
+             axis: '#5a5a72', adj: '#3a3a50', tail: '#8a8aa0', tipBg: '#1a1a24', tipFg: '#f2f2f8',
+             tipBorder: '#3a3a50' }
+  };
+  /* geometry per size: viewBox W×H, padding, mark radius, arrow width, line width, font size */
+  var SIZES = {
+    page:    { W: 1100, H: 400, pl: 46, pr: 16, pt: 24, pb: 40, r: 8,   aw: 22, lw: 1.4, fs: 11 },
+    modal:   { W: 940,  H: 340, pl: 10, pr: 46, pt: 14, pb: 22, r: 6,   aw: 16, lw: 1.6, fs: 11 },
+    preview: { W: 360,  H: 110, pl: 4,  pr: 34, pt: 8,  pb: 14, r: 2.6, aw: 8,  lw: 1.1, fs: 8 },
+    card:    { W: 340,  H: 92,  pl: 4,  pr: 34, pt: 8,  pb: 14, r: 2.6, aw: 8,  lw: 1.1, fs: 8 }
+  };
+  var MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  var DAY = 86400000;
+
+  function t(iso) { return Date.parse(iso + 'T00:00:00Z'); }
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
+    return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function fmtDate(iso, short) { var p = iso.split('-');
+    return short ? (p[2] + ' ' + MON[+p[1] - 1]) : (p[2] + ' ' + MON[+p[1] - 1] + ' ' + p[0]); }
+  function fmtPx(v, ccy) {
+    if (ccy === 'USD') return '$' + v.toFixed(2);
+    var s = Math.abs(v) >= 100 ? v.toFixed(0) : (Math.round(v * 10) / 10).toString();
+    return s + 'p';
+  }
+  function fmtScore(s) { return s > 0 ? '+' + s : (s < 0 ? '−' + Math.abs(s) : '0'); }
+  function niceStep(max) {
+    var raw = max / 4, mag = Math.pow(10, Math.floor(Math.log10(raw))), steps = [1, 2, 2.5, 5, 10];
+    for (var i = 0; i < steps.length; i++) if (steps[i] * mag >= raw) return steps[i] * mag;
+    return 10 * mag;
+  }
+
+  /* ---------- validation (used by the upload panel) ---------- */
+  function validate(d) {
+    var e = [];
+    if (!d || typeof d !== 'object') return ['drift-chart is not an object'];
+    if (!d.ticker) e.push('ticker missing');
+    if (!d.v) e.push('v missing');
+    if (d.ccy !== 'GBX' && d.ccy !== 'USD') e.push('ccy must be GBX or USD');
+    if (!Array.isArray(d.px) || d.px.length < 2) { e.push('px must be an array of at least 2 weeks'); return e; }
+    for (var i = 0; i < d.px.length; i++) {
+      var p = d.px[i];
+      if (!Array.isArray(p) || !/^\d{4}-\d{2}-\d{2}$/.test(p[0]) || typeof p[1] !== 'number' || !isFinite(p[1])) {
+        e.push('px[' + i + '] is not [YYYY-MM-DD, number]'); return e; }
+      if (i && p[0] <= d.px[i - 1][0]) { e.push('px not in ascending date order at ' + p[0]); return e; }
+    }
+    var first = t(d.px[0][0]), last = t(d.px[d.px.length - 1][0]);
+    if (!Array.isArray(d.marks)) { e.push('marks must be an array'); return e; }
+    d.marks.forEach(function (m, i) {
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(m.d || '')) { e.push('marks[' + i + '] date invalid'); return; }
+      var md = t(m.d);
+      if (md < first - 7 * DAY || md > last + 7 * DAY)
+        e.push('mark ' + m.d + ' falls outside the price range (allowed up to 7 days after the last close)');
+      if (['RAISE', 'CUT', 'flat'].indexOf(m.g) < 0) e.push('mark ' + m.d + ' g must be RAISE, CUT or flat');
+      if (typeof m.s !== 'number' || m.s < -3 || m.s > 3 || Math.round(m.s) !== m.s) e.push('mark ' + m.d + ' s must be an integer −3..+3');
+    });
+    return e;
+  }
+
+  /* ---------- snapshot tail from Database uploadZone.rows4 (§7) ---------- */
+  function parseTail(rows4, ticker, ccy, afterIso) {
+    if (!Array.isArray(rows4)) return [];
+    var tk = String(ticker).toUpperCase(), out = {};
+    rows4.forEach(function (row) {
+      if (!row || !row.Date || !row.Snapshot) return;
+      var dp = String(row.Date).split('/');
+      if (dp.length !== 3) return;
+      var iso = dp[2] + '-' + ('0' + dp[1]).slice(-2) + '-' + ('0' + dp[0]).slice(-2);
+      if (afterIso && iso <= afterIso) return;
+      var recs = String(row.Snapshot).split(';');
+      for (var i = 0; i < recs.length; i++) {
+        var f = recs[i].split(',');
+        if ((f[0] || '').toUpperCase() !== tk) continue;
+        var raw = (f[6] || '').trim();            /* 7th field — never the last field */
+        if (!raw) break;
+        var v = null, m;
+        if ((m = raw.match(/^([\d.]+)p$/)))        { if (ccy === 'GBX') v = +m[1]; }
+        else if ((m = raw.match(/^([\d.]+)$/)))    { if (ccy === 'GBX') v = Math.round(+m[1] * 10000) / 100; }  /* pounds */
+        else if ((m = raw.match(/^([\d.]+)¢$/))) { if (ccy === 'USD') v = +m[1] / 100; } /* cents */
+        else if ((m = raw.match(/^\$([\d.]+)$/)))  { if (ccy === 'USD') v = +m[1]; }
+        if (v != null && isFinite(v) && v > 0) out[iso] = v;
+        break;
+      }
+    });
+    var tail = Object.keys(out).sort().map(function (k) { return [k, out[k]]; });
+    for (var j = 1; j < tail.length; j++) {
+      var a = tail[j - 1][1], b = tail[j][1];
+      if (b / a > 5 || a / b > 5) return [];       /* cliff check */
+    }
+    return tail;
+  }
+
+  /* ---------- shared tooltip ---------- */
+  var tipEl = null;
+  function tip(theme) {
+    if (!tipEl) {
+      tipEl = document.createElement('div');
+      tipEl.id = 'dc-tip';
+      tipEl.style.cssText = 'position:fixed;pointer-events:none;z-index:10000;display:none;max-width:300px;' +
+        'padding:7px 9px;border-radius:4px;font:11px/1.45 Inter,system-ui,sans-serif;box-shadow:0 6px 24px rgba(0,0,0,.35)';
+      document.body.appendChild(tipEl);
+    }
+    var T = THEMES[theme];
+    tipEl.style.background = T.tipBg; tipEl.style.color = T.tipFg; tipEl.style.border = '1px solid ' + T.tipBorder;
+    return tipEl;
+  }
+  function showTip(theme, html, ev) {
+    var el = tip(theme); el.innerHTML = html; el.style.display = 'block';
+    var x = ev.clientX + 14, y = ev.clientY + 14, w = el.offsetWidth, h = el.offsetHeight;
+    if (x + w > window.innerWidth - 8) x = ev.clientX - w - 14;
+    if (y + h > window.innerHeight - 8) y = ev.clientY - h - 14;
+    el.style.left = x + 'px'; el.style.top = y + 'px';
+  }
+  function hideTip() { if (tipEl) tipEl.style.display = 'none'; }
+
+  /* ---------- render ---------- */
+  function render(el, d, opt) {
+    opt = opt || {};
+    var theme = opt.theme === 'dark' ? 'dark' : 'light', T = THEMES[theme];
+    var size = SIZES[opt.size] ? opt.size : (theme === 'light' ? 'page' : 'preview'), S = SIZES[size];
+    var errs = validate(d);
+    if (errs.length) { el.innerHTML = '<div style="font:12px sans-serif;color:' + T.axis + ';padding:10px">no price data</div>'; return; }
+    var px = d.px, ccy = d.ccy;
+    var tail = theme === 'dark' && opt.tail && opt.tail.length ? opt.tail : [];
+    var all = px.concat(tail);
+    var x0 = t(px[0][0]), x1 = t(all[all.length - 1][0]);
+    var vals = all.map(function (p) { return p[1]; });
+    var vmin = Math.min.apply(null, vals), vmax = Math.max.apply(null, vals);
+    var lo, hi;
+    if (theme === 'light') { var st = niceStep(vmax); lo = 0; hi = Math.ceil(vmax / st) * st; }
+    else { var pad = (vmax - vmin) * 0.04 || 1; lo = vmin - pad; hi = vmax + pad; }
+    var LANE = (opt.scoreLane === 'top' || opt.scoreLane === 'bottom') && opt.scores && opt.scores.length ? opt.scoreLane : null;
+    var BR = size === 'modal' || size === 'page' ? 9 : 5.5, laneH = LANE ? BR * 2 + 10 : 0, pt0 = S.pt, pb0 = S.pb;
+    if (LANE) { S = Object.assign({}, S); if (LANE === 'top') S.pt += laneH; else S.pb += laneH; }
+    var W = S.W, H = S.H;
+    function X(ms) { return S.pl + (ms - x0) / ((x1 - x0) || 1) * (W - S.pl - S.pr); }
+    function Y(v) { return S.pt + (hi - v) / ((hi - lo) || 1) * (H - S.pt - S.pb); }
+    var base = H - S.pb, s = '';
+    s += '<svg viewBox="0 0 ' + W + ' ' + H + '" xmlns="http://www.w3.org/2000/svg" role="img" ' +
+         'aria-label="Weekly share price with Text and G markers" style="display:block;width:100%;height:auto">';
+
+    /* axes */
+    if (theme === 'light') {
+      for (var g = lo; g <= hi + 1e-9; g += niceStep(vmax)) {
+        s += '<line x1="' + S.pl + '" x2="' + (W - S.pr) + '" y1="' + Y(g).toFixed(1) + '" y2="' + Y(g).toFixed(1) + '" stroke="' + T.grid + '"/>';
+        s += '<text x="' + (S.pl - 8) + '" y="' + (Y(g) + 4).toFixed(1) + '" text-anchor="end" font-size="' + S.fs + '" fill="' + T.axis + '">' + esc(fmtPx(g, ccy)) + '</text>';
+      }
+    } else {
+      [[vmax], [vmin]].forEach(function (a) {
+        var y = Y(a[0]).toFixed(1);
+        s += '<line x1="' + S.pl + '" x2="' + (W - S.pr) + '" y1="' + y + '" y2="' + y + '" stroke="' + T.grid + '"/>';
+        s += '<text x="' + (W - S.pr + 4) + '" y="' + (+y + S.fs * 0.35).toFixed(1) + '" font-size="' + S.fs + '" fill="' + T.axis + '">' + esc(fmtPx(a[0], ccy)) + '</text>';
+      });
+    }
+    var y0 = new Date(x0).getUTCFullYear(), y1 = new Date(x1).getUTCFullYear();
+    if (x1 - x0 < 550 * DAY) {                       /* short record (e.g. snapshots only): month labels */
+      var step = size === 'modal' || size === 'page' ? 1 : 2, d0 = new Date(x0), mi = 0;
+      for (var mm = Date.UTC(d0.getUTCFullYear(), d0.getUTCMonth() + 1, 1); mm <= x1; mm = Date.UTC(new Date(mm).getUTCFullYear(), new Date(mm).getUTCMonth() + 1, 1)) {
+        if ((mi++) % step) continue;
+        var md_ = new Date(mm), mo = md_.getUTCMonth();
+        var ml = MON[mo] + (mo === 0 || mi === 1 ? " '" + String(md_.getUTCFullYear()).slice(2) : '');
+        s += '<text x="' + X(mm).toFixed(1) + '" y="' + (H - (theme === 'light' ? 18 : 2)) + '" text-anchor="middle" font-size="' + S.fs + '" fill="' + T.axis + '">' + ml + '</text>';
+      }
+      y1 = y0 - 1;                                   /* skip year labels */
+    }
+    for (var yr = y0; yr <= y1; yr++) {
+      var mid = Date.UTC(yr, 6, 1);                    /* label mid-year, tick at 1 Jan */
+      var jan = Date.UTC(yr, 0, 1);
+      if (jan >= x0 && jan <= x1 && theme === 'light')
+        s += '<line x1="' + X(jan).toFixed(1) + '" x2="' + X(jan).toFixed(1) + '" y1="' + base + '" y2="' + (base + 5) + '" stroke="' + T.adj + '"/>';
+      if (mid < x0 || mid > x1) continue;
+      var lab = theme === 'light' || size === 'modal' ? String(yr) : "'" + String(yr).slice(2);
+      s += '<text x="' + X(mid).toFixed(1) + '" y="' + (H - (theme === 'light' ? 18 : 2)) + '" text-anchor="middle" font-size="' + S.fs + '" fill="' + T.axis + '">' + lab + '</text>';
+    }
+
+    /* consolidation rule(s) */
+    (d.adj || []).forEach(function (a) {
+      var ax = X(t(a.before)).toFixed(1);
+      if (+ax < S.pl || +ax > W - S.pr) return;
+      var why = a.factor + ':1 consolidation — earlier closes ×' + a.factor;
+      s += '<g class="dc-adj" data-tip="' + esc(why) + '">';
+      s += '<line x1="' + ax + '" x2="' + ax + '" y1="' + S.pt + '" y2="' + base + '" stroke="' + T.adj + '" stroke-dasharray="4 4"' + (theme === 'dark' ? ' opacity=".7"' : '') + '/>';
+      s += '<rect x="' + (+ax - 5) + '" y="' + S.pt + '" width="10" height="' + (base - S.pt) + '" fill="transparent"/>';
+      if (theme === 'light') s += '<text x="' + (+ax + 5) + '" y="' + (S.pt + 12) + '" font-size="' + (S.fs - 1) + '" fill="' + T.axis + '">' + a.factor + ':1 consolidation</text>';
+      s += '</g>';
+    });
+
+    /* price area + line */
+    var pts = px.map(function (p) { return X(t(p[0])).toFixed(1) + ',' + Y(p[1]).toFixed(1); }).join(' ');
+    var fx0 = X(t(px[0][0])).toFixed(1), fx1 = X(t(px[px.length - 1][0])).toFixed(1);
+    s += '<polygon points="' + fx0 + ',' + base + ' ' + pts + ' ' + fx1 + ',' + base + '" fill="' + T.fill + '" fill-opacity="' + T.fillOp + '"/>';
+    s += '<polyline points="' + pts + '" fill="none" stroke="' + T.line + '" stroke-width="' + S.lw + '" stroke-linejoin="round"/>';
+
+    /* snapshot tail (dark only) */
+    if (tail.length) {
+      var lp = px[px.length - 1];
+      var tp = [lp].concat(tail).map(function (p) { return X(t(p[0])).toFixed(1) + ',' + Y(p[1]).toFixed(1); }).join(' ');
+      s += '<polyline points="' + tp + '" fill="none" stroke="' + T.tail + '" stroke-opacity=".7" stroke-width="' + S.lw + '" stroke-dasharray="3 3"/>';
+      if (size === 'modal') {
+        var tx = X(t(tail[0][0]));
+        s += '<line x1="' + tx.toFixed(1) + '" x2="' + tx.toFixed(1) + '" y1="' + S.pt + '" y2="' + base + '" stroke="' + T.grid + '"/>';
+        s += '<text x="' + (tx - 4).toFixed(1) + '" y="' + (base - 5) + '" text-anchor="end" font-size="' + (S.fs - 1) + '" fill="' + T.axis + '">ShareScope weekly snapshots \u2192</text>';
+      }
+    }
+
+    /* marks: each on the close of the week containing its RNS date */
+    function weekIndex(iso) {
+      var md = t(iso);
+      for (var i = 0; i < px.length; i++) if (t(px[i][0]) >= md) return i;
+      return px.length - 1;                         /* within 7 days after the last close */
+    }
+    var tips = [], hits = [];   /* hits: [x, y, tipIndex, radius] in viewBox units, for nearest-mark hover */
+    var dots = '', arrows = '', r = S.r, aw = S.aw / 2, ah = S.aw * 0.95, starAt = null;
+    /* a mark newer than the last weekly close sits on the live tail (the point on or after its date) rather
+       than back on that close, so it lines up with the RNS Scorecard badge for the same day (1.9) */
+    var lastPxMs = t(px[px.length - 1][0]);
+    function tailPoint(iso) {
+      var md = t(iso);
+      if (!tail.length || md <= lastPxMs) return null;
+      for (var i = 0; i < tail.length; i++) if (t(tail[i][0]) >= md) return tail[i];
+      return tail[tail.length - 1];
+    }
+    (d.marks || []).forEach(function (m, idx) {
+      var wi = weekIndex(m.d), tp = tailPoint(m.d), wk = tp || px[wi], cx = X(t(wk[0])), cy = Y(wk[1]);
+      var gtxt = (m.g === 'flat' ? 'flat' : (m.g === 'RAISE' ? '▲ RAISE' : '▼ CUT')) + (m.gnote ? ' (' + m.gnote + ')' : '');
+      var tipHtml = '<b>' + esc(fmtDate(m.d)) + ' · ' + esc(m.fy || '') + ' ' + esc(m.doc || '') + '</b><br>' +
+        'Text ' + fmtScore(m.s) + ' · G ' + esc(gtxt) + '<br>' +
+        (tp ? 'Latest price ' : 'Week close ') + esc(fmtPx(wk[1], ccy)) + ' (' + esc(fmtDate(wk[0], true)) + ')' +
+        (m.q ? '<div style="margin-top:4px;opacity:.85;font-style:italic">“' + esc(m.q) + '”</div>' : '');
+      var g = '<g class="dc-mk" data-i="' + idx + '" style="cursor:default">';
+      var hit = '<circle cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="' + (r * 3).toFixed(1) + '" fill="transparent"/>';
+      var sw = size === 'page' ? 1.8 : 1;
+      if (m.g === 'RAISE' || m.g === 'CUT') {
+        var c = m.g === 'RAISE' ? T.pos : T.neg, up = m.g === 'RAISE';
+        var tip_ = up ? (cy - ah * 0.6) : (cy + ah * 0.6), b = up ? (cy + ah * 0.4) : (cy - ah * 0.4);
+        arrows += g + '<polygon points="' + cx.toFixed(1) + ',' + tip_.toFixed(1) + ' ' + (cx - aw).toFixed(1) + ',' + b.toFixed(1) + ' ' +
+          (cx + aw).toFixed(1) + ',' + b.toFixed(1) + '" fill="' + c + '" stroke="' + T.outline + '" stroke-width="' + sw + '"/>' + hit + '</g>';
+      } else if (m.s === 0) {
+        dots += g + '<circle cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="' + (r * 0.88).toFixed(1) + '" fill="' + T.zeroFill +
+          '" stroke="' + T.zeroStroke + '" stroke-width="' + (size === 'page' ? 2.2 : 1.2) + '"/>' + hit + '</g>';
+      } else {
+        dots += g + '<circle cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="' + r + '" fill="' + (m.s > 0 ? T.pos : T.neg) +
+          '" stroke="' + T.outline + '" stroke-width="' + sw + '"/>' + hit + '</g>';
+      }
+      tips[idx] = tipHtml;
+      hits.push([cx, cy, idx, r]);
+      /* opt.star = ISO date of the latest RNS: a small star above that mark (Database popup) */
+      if (opt.star && m.d === opt.star) starAt = [cx, cy - (m.g === 'RAISE' ? ah * 0.6 : r) - 5];
+    });
+    /* RNS Scorecard badges (opt.scores = [{d, s, t}]): score in a band-coloured circle on the price
+       line at the RNS date, faint full-height guide, same scheme as Database's broker target chart.
+       Lifted clear of a Text/G mark in the same week; one newer than the last close pins to it, dashed. */
+    var badges = '', badgePts = [];
+    if (opt.scores && opt.scores.length) {
+      var markWk = {};
+      (d.marks || []).forEach(function (m) { markWk[weekIndex(m.d)] = 1; });
+      var lastMs = t(all[all.length - 1][0]);
+      var yAt = function (ms) {
+        for (var i = 0; i < all.length; i++) {
+          var ti = t(all[i][0]);
+          if (ti >= ms) {
+            if (!i) return all[0][1];
+            var tp = t(all[i - 1][0]), f = (ms - tp) / (ti - tp);
+            return all[i - 1][1] + (all[i][1] - all[i - 1][1]) * f;
+          }
+        }
+        return all[all.length - 1][1];
+      };
+      var R = BR, bfs = size === 'modal' || size === 'page' ? 8 : 5.5;
+      render._laneX = null;
+      opt.scores.slice().sort(function (a, b) { return a.d < b.d ? -1 : 1; }).forEach(function (b) {
+        if (!/^\d{4}-\d{2}-\d{2}/.test(b.d || '') || typeof b.s !== 'number') return;
+        var ms = t(b.d.slice(0, 10)); if (ms < x0) return;
+        var pinned = ms > lastMs + 3 * DAY, bx = X(Math.min(ms, lastMs)), by = Y(yAt(Math.min(ms, lastMs)));
+        var tx = bx, ty = by;                         /* true point on the price line */
+        if (LANE) {
+          bx = Math.max(bx, (render._laneX || -1e9) + 2 * R + 2); render._laneX = bx;
+          by = LANE === 'top' ? pt0 + R + 3 : base + 7 + R;
+        }
+        var wi = weekIndex(b.d.slice(0, 10));
+        if (!LANE) {
+          if (!tail.length || ms <= t(px[px.length - 1][0])) { if (markWk[wi]) by -= r + R + 3; }
+          by = Math.max(S.pt + R, Math.min(base - R, by));
+        }
+        var sc = Math.max(0, Math.min(100, Math.round(b.s)));
+        var col = sc >= 75 ? '#00c814' : sc >= 50 ? '#ffc400' : '#e02525';
+        var faint = sc >= 75 ? 'rgba(0,200,20,.18)' : sc >= 50 ? 'rgba(245,179,47,.18)' : 'rgba(224,37,37,.18)';
+        var ti_ = tips.length;
+        tips.push('<b>' + esc(fmtDate(b.d.slice(0, 10))) + ' · RNS Scorecard</b><br>Score <b style="color:' + col + '">' + sc +
+          '</b>/100' + (b.t ? ' · ' + esc(b.t) : '') + (pinned ? '<br><i>after the last weekly close</i>' : ''));
+        if (LANE) {
+          var ey = LANE === 'top' ? by + R : by - R;
+          badges += '<line x1="' + tx.toFixed(1) + '" x2="' + tx.toFixed(1) + '" y1="' + S.pt + '" y2="' + base + '" stroke="' + faint + '"/>';
+          badges += '<polyline points="' + bx.toFixed(1) + ',' + ey.toFixed(1) + ' ' + tx.toFixed(1) + ',' + (LANE === 'top' ? S.pt : base) + '" fill="none" stroke="' + col + '" stroke-opacity=".55" stroke-width="1"/>';
+          badges += '<circle cx="' + tx.toFixed(1) + '" cy="' + ty.toFixed(1) + '" r="' + (R * 0.28).toFixed(1) + '" fill="' + col + '"/>';
+        } else
+        badges += '<line x1="' + bx.toFixed(1) + '" x2="' + bx.toFixed(1) + '" y1="' + S.pt + '" y2="' + base + '" stroke="' + faint + '"/>';
+        badgePts.push([bx, by, R]);
+        hits.push([bx, by, ti_, R]);
+        badges += '<g class="dc-mk" data-i="' + ti_ + '"><circle cx="' + bx.toFixed(1) + '" cy="' + by.toFixed(1) + '" r="' + R + '" fill="' + col +
+          '" stroke="rgba(255,255,255,.85)" stroke-width="1"' + (pinned ? ' stroke-dasharray="2 2"' : '') + '/>' +
+          '<text x="' + bx.toFixed(1) + '" y="' + (by + bfs * 0.36).toFixed(1) + '" text-anchor="middle" font-size="' + bfs +
+          '" font-weight="700" fill="#0d0d16" font-family="Inter,system-ui,sans-serif">' + sc + '</text>' +
+          '<circle cx="' + bx.toFixed(1) + '" cy="' + by.toFixed(1) + '" r="' + (R * 2) + '" fill="transparent"/></g>';
+      });
+    }
+    s += badges + dots + arrows;                     /* arrows last: on top of a same-week dot */
+    if (starAt) s += '<text x="' + starAt[0].toFixed(1) + '" y="' + Math.max(S.pt + 4, starAt[1]).toFixed(1) +
+      '" text-anchor="middle" font-size="' + (size === 'modal' || size === 'page' ? 15 : 8) +
+      '" fill="#ffc400" stroke="' + T.outline + '" stroke-width=".6" style="pointer-events:none">★</text>';
+
+    /* no last-close dot: it sat on top of the newest marks and score badges (removed in 1.8) */
+    s += '</svg>';
+    el.innerHTML = s;
+    el._dcTips = tips;
+    el._dcHits = hits;
+
+    if (!el._dcBound) {
+      el._dcBound = true;
+      el.addEventListener('mousemove', function (ev) {
+        /* nearest mark wins: when marks sit close together, the one under the cursor is
+           the one whose centre is closest, not whichever invisible hit area was drawn last */
+        var svg = el.querySelector('svg'), best = null;
+        if (svg && el._dcHits && el._dcHits.length && svg.getScreenCTM()) {
+          var pt = svg.createSVGPoint(); pt.x = ev.clientX; pt.y = ev.clientY;
+          var p = pt.matrixTransform(svg.getScreenCTM().inverse()), bd = Infinity;
+          el._dcHits.forEach(function (h) {
+            var d = Math.sqrt((h[0] - p.x) * (h[0] - p.x) + (h[1] - p.y) * (h[1] - p.y));
+            if (d <= h[3] * 2.5 && d < bd) { bd = d; best = h; }
+          });
+        }
+        var ad = ev.target.closest && ev.target.closest('.dc-adj');
+        if (best) {
+          /* two prints in the same week share one point: show them together, oldest first */
+          var same = el._dcHits.filter(function (h) { return Math.abs(h[0] - best[0]) < 1.5 && Math.abs(h[1] - best[1]) < 1.5; });
+          showTip(el._dcTheme, same.map(function (h) { return el._dcTips[h[2]]; })
+            .join('<hr style="border:0;border-top:1px solid rgba(128,128,128,.35);margin:6px 0">'), ev);
+        }
+        else if (ad) showTip(el._dcTheme, esc(ad.getAttribute('data-tip')), ev);
+        else hideTip();
+      });
+      el.addEventListener('mouseleave', hideTip);
+    }
+    el._dcTheme = theme;
+  }
+
+  function legend(theme) {
+    var T = THEMES[theme === 'dark' ? 'dark' : 'light'];
+    var dot = function (c, ring) { return '<i style="display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:4px;vertical-align:0;' +
+      (ring ? 'border:1.5px solid ' + T.zeroStroke + ';background:' + T.zeroFill : 'background:' + c) + '"></i>'; };
+    return '<span class="dc-leg" style="display:inline-flex;gap:10px;flex-wrap:wrap;font-size:inherit">' +
+      '<span>' + dot(T.pos) + 'Text +</span><span>' + dot(T.neg) + 'Text −</span><span>' + dot(null, true) + '0</span>' +
+      '<span style="color:' + T.pos + '">▲ G raise</span><span style="color:' + T.neg + '">▼ G cut</span></span>';
+  }
+
+  function mountFromPage() {
+    var src = document.getElementById('drift-chart'), el = document.querySelector('[data-drift-chart]');
+    if (!src || !el) return;
+    try { render(el, JSON.parse(src.textContent), { theme: 'light', size: 'page' }); }
+    catch (e) { el.innerHTML = '<div style="padding:10px;color:#6b6860">no price data</div>'; }
+  }
+
+
+  /* ---------- EPS forecasts from rows4 (fields 2 and 3: FY1, FY2) ---------- */
+  function parseEps(rows4, ticker) {
+    var tk = String(ticker).toUpperCase(), out = {};
+    (rows4 || []).forEach(function (row) {
+      if (!row || !row.Date || !row.Snapshot) return;
+      var dp = String(row.Date).split('/'); if (dp.length !== 3) return;
+      var iso = dp[2] + '-' + ('0' + dp[1]).slice(-2) + '-' + ('0' + dp[0]).slice(-2);
+      var recs = String(row.Snapshot).split(';');
+      for (var i = 0; i < recs.length; i++) {
+        var f = recs[i].split(',');
+        if ((f[0] || '').toUpperCase() !== tk) continue;
+        var a = parseFloat(f[1]), b = parseFloat(f[2]);
+        out[iso] = [iso, isFinite(a) ? a : null, isFinite(b) ? b : null];
+        break;
+      }
+    });
+    return Object.keys(out).sort().map(function (k) { return out[k]; });
+  }
+  /* year-end roll: the new FY1 is within 12% of the old FY2 and has moved >15% from the old FY1 */
+  function epsYears(e, given) {
+    var R = given ? given.slice() : [];
+    for (var i = 1; !given && i < e.length; i++) {
+      var a = e[i - 1], b = e[i];
+      if (a[1] && a[2] && b[1] && Math.abs(b[1] - a[2]) / Math.abs(a[2]) < 0.12 && Math.abs(b[1] - a[1]) / Math.abs(a[1]) > 0.15) R.push(i);
+    }
+    var yrs = {}, ri = 0;
+    e.forEach(function (r, i) {
+      while (ri < R.length && R[ri] <= i) ri++;
+      if (r[1] != null) (yrs[ri] = yrs[ri] || []).push([r[0], r[1]]);
+      if (r[2] != null) (yrs[ri + 1] = yrs[ri + 1] || []).push([r[0], r[2]]);
+    });
+    return { rolls: R, cur: yrs[R.length] || [], nxt: yrs[R.length + 1] || [] };
+  }
+  /* EPS panel under a modal chart. opt.x0/x1 = the price chart's date range (ms) so the axes line up.
+     style 'lines': this year solid amber, next year dashed purple. style 'bars': one bar per week for this
+     year's forecast, coloured by the week's change (green up / red down / grey flat). */
+  function epsPanel(el, e, opt) {
+    opt = opt || {};
+    var S = SIZES[opt.size || 'modal'], W = S.W, H = opt.h || 130, pt = 14, pb = 16, A = '#ffb347', P = '#c07ef7';
+    if (!e || e.length < 2) { el.innerHTML = ''; return; }
+    var Y_ = epsYears(e, opt.rolls), cur = Y_.cur, nxt = opt.style === 'bars' ? [] : Y_.nxt;
+    if (cur.length < 2) { el.innerHTML = ''; return; }
+    var x0 = opt.x0, x1 = opt.x1;
+    function X(iso) { return S.pl + (t(iso) - x0) / ((x1 - x0) || 1) * (W - S.pl - S.pr); }
+    var v = cur.concat(nxt).map(function (p) { return p[1]; }), lo = Math.min.apply(null, v), hi = Math.max.apply(null, v);
+    var pad = (hi - lo) * 0.12 || Math.abs(hi) * 0.05 || 1; lo -= pad; hi += pad;
+    function Y(x) { return pt + (hi - x) / (hi - lo) * (H - pt - pb); }
+    var s = '<svg viewBox="0 0 ' + W + ' ' + H + '" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%;height:auto">';
+    s += '<line x1="' + S.pl + '" x2="' + (W - S.pr) + '" y1="0.5" y2="0.5" stroke="#1e1e28"/>';
+    s += '<text x="' + S.pl + '" y="10" font-size="9" letter-spacing=".08em" fill="#5a5a72">EPS FORECASTS</text>';
+    var labels = '';
+    function pctLab(ser) {
+      for (var i = 1; i < ser.length; i++) {
+        var ch = (ser[i][1] / ser[i - 1][1] - 1) * 100;
+        if (Math.abs(ch) >= 3 && isFinite(ch)) {
+          var x = X(ser[i][0]), y = Y(ser[i][1]);
+          labels += '<text x="' + x.toFixed(1) + '" y="' + (ch > 0 ? Math.max(pt + 8, y - 5) : y + 11).toFixed(1) + '" text-anchor="middle" font-size="9" fill="' +
+            (ch > 0 ? '#00d97e' : '#ff4757') + '">' + (ch > 0 ? '+' : '') + ch.toFixed(1) + '%</text>';
+        }
+      }
+    }
+    if (opt.style === 'bars') {
+      var bw = Math.max(2, Math.min(14, (W - S.pl - S.pr) / ((x1 - x0) / (7 * DAY)) * 0.7)), bot = H - pb;
+      cur.forEach(function (p, i) {
+        var ch = i ? p[1] - cur[i - 1][1] : 0, col = ch > 0 ? '#00d97e' : ch < 0 ? '#ff4757' : '#3a3a50', x = X(p[0]), y = Y(p[1]);
+        s += '<rect x="' + (x - bw / 2).toFixed(1) + '" y="' + y.toFixed(1) + '" width="' + bw.toFixed(1) + '" height="' + Math.max(1, bot - y).toFixed(1) + '" fill="' + col + '" rx="1"/>';
+      });
+    } else if (opt.style === 'area') {
+      /* Earnings Whispers-style forward-estimate step area, drawn in its own strip */
+      var step = function (ser) { var o = [];
+        ser.forEach(function (p, i) { var x = X(p[0]).toFixed(1), y = Y(p[1]).toFixed(1);
+          if (i) o.push(x + ',' + Y(ser[i - 1][1]).toFixed(1)); o.push(x + ',' + y); }); return o; };
+      var bot2 = H - pb, sc_ = step(cur);
+      s += '<polygon points="' + X(cur[0][0]).toFixed(1) + ',' + bot2 + ' ' + sc_.join(' ') + ' ' + X(cur[cur.length - 1][0]).toFixed(1) + ',' + bot2 +
+        '" fill="#d9a066" fill-opacity=".22"/>';
+      s += '<polyline points="' + sc_.join(' ') + '" fill="none" stroke="#d9a066" stroke-width="1.4"/>';
+      if (nxt.length > 1) s += '<polyline points="' + step(nxt).join(' ') + '" fill="none" stroke="' + P + '" stroke-width="1.1" stroke-dasharray="4 3"/>';
+      A = '#d9a066';
+    } else {
+      [[nxt, P, true], [cur, A, false]].forEach(function (z) {
+        if (z[0].length < 2) return;
+        s += '<polyline points="' + z[0].map(function (p) { return X(p[0]).toFixed(1) + ',' + Y(p[1]).toFixed(1); }).join(' ') +
+          '" fill="none" stroke="' + z[1] + '" stroke-width="' + (z[2] ? 1.2 : 1.6) + '"' + (z[2] ? ' stroke-dasharray="4 3"' : '') + '/>';
+      });
+    }
+    pctLab(cur);
+    Y_.rolls.forEach(function (i) {
+      var x = X(e[i][0]);
+      s += '<line x1="' + x.toFixed(1) + '" x2="' + x.toFixed(1) + '" y1="' + pt + '" y2="' + (H - pb) + '" stroke="#9a9ab5" stroke-dasharray="2 3" opacity=".5"/>' +
+        '<text x="' + (x + 4).toFixed(1) + '" y="' + (H - pb - 3) + '" font-size="9" fill="#9a9ab5">results · year rolled</text>';
+    });
+    var l1 = cur[cur.length - 1][1], l2 = nxt.length ? nxt[nxt.length - 1][1] : null, y1 = Y(l1), y2 = l2 != null ? Y(l2) : null;
+    if (y2 != null && Math.abs(y1 - y2) < 11) { if (y1 > y2) y1 = y2 + 11; else y2 = y1 + 11; }
+    labels += '<text x="' + (W - S.pr + 4) + '" y="' + (y1 + 3).toFixed(1) + '" font-size="10" fill="' + A + '">' + l1 + 'p</text>';
+    if (y2 != null) labels += '<text x="' + (W - S.pr + 4) + '" y="' + (y2 + 3).toFixed(1) + '" font-size="10" fill="' + P + '">' + l2 + 'p</text>';
+    el.innerHTML = s + labels + '</svg>';
+  }
+
+  root.DriftChart = { render: render, legend: legend, validate: validate, parseTail: parseTail,
+                      mountFromPage: mountFromPage, parseEps: parseEps, epsPanel: epsPanel, version: '1.9' };
+})(typeof window !== 'undefined' ? window : this);
+
+</script>
+<script>document.addEventListener("DOMContentLoaded",function(){DriftChart.mountFromPage();var l=document.getElementById("ovleg");if(l)l.innerHTML=DriftChart.legend("light");});</script>
+<script type="application/json" id="drift-chart">{"ticker":"VLX","v":"2026-11-12.9e7a","ccy":"GBX","src":"AlphaVantage VLX.LON weekly","adj":[],"px":[["2021-08-06",349.0],["2021-08-13",357.0],["2021-08-20",375.0],["2021-08-27",399.5],["2021-09-03",457.0],["2021-09-10",493.5],["2021-09-17",458.5],["2021-09-24",456.0],["2021-10-01",414.0],["2021-10-08",428.5],["2021-10-15",448.0],["2021-10-22",449.0],["2021-10-29",450.0],["2021-11-05",471.0],["2021-11-12",410.0],["2021-11-19",381.0],["2021-11-26",356.5],["2021-12-03",350.0],["2021-12-10",354.5],["2021-12-17",327.0],["2021-12-24",336.0],["2021-12-31",344.5],["2022-01-07",318.5],["2022-01-14",297.0],["2022-01-21",298.5],["2022-01-28",288.0],["2022-02-04",282.0],["2022-02-11",277.0],["2022-02-18",277.0],["2022-02-25",270.0],["2022-03-04",240.5],["2022-03-11",257.0],["2022-03-18",287.5],["2022-03-25",275.0],["2022-04-01",262.0],["2022-04-08",255.0],["2022-04-14",249.0],["2022-04-22",281.5],["2022-04-29",260.0],["2022-05-06",247.0],["2022-05-13",246.5],["2022-05-20",258.0],["2022-05-27",270.5],["2022-06-01",276.0],["2022-06-10",259.0],["2022-06-17",239.5],["2022-06-24",238.0],["2022-07-01",247.5],["2022-07-08",263.5],["2022-07-15",275.0],["2022-07-22",308.0],["2022-07-29",314.5],["2022-08-05",309.5],["2022-08-12",317.5],["2022-08-19",303.5],["2022-08-26",272.0],["2022-09-02",262.5],["2022-09-09",288.0],["2022-09-16",256.0],["2022-09-23",240.5],["2022-09-30",244.0],["2022-10-07",249.5],["2022-10-14",237.5],["2022-10-21",243.0],["2022-10-28",247.5],["2022-11-04",248.0],["2022-11-11",281.0],["2022-11-18",281.5],["2022-11-25",295.0],["2022-12-02",271.0],["2022-12-09",262.5],["2022-12-16",240.5],["2022-12-23",251.5],["2022-12-30",250.5],["2023-01-06",259.5],["2023-01-13",262.0],["2023-01-20",257.5],["2023-01-27",252.5],["2023-02-03",260.0],["2023-02-10",238.5],["2023-02-17",242.0],["2023-02-24",231.0],["2023-03-03",229.5],["2023-03-10",209.0],["2023-03-17",205.5],["2023-03-24",206.5],["2023-03-31",216.0],["2023-04-06",205.5],["2023-04-14",211.5],["2023-04-21",243.0],["2023-04-28",255.5],["2023-05-05",287.0],["2023-05-12",272.5],["2023-05-19",274.0],["2023-05-26",270.5],["2023-06-02",277.5],["2023-06-09",280.0],["2023-06-16",283.0],["2023-06-23",281.0],["2023-06-30",283.5],["2023-07-07",280.0],["2023-07-14",284.5],["2023-07-21",288.0],["2023-07-28",289.5],["2023-08-04",294.5],["2023-08-11",315.0],["2023-08-18",322.0],["2023-08-25",316.0],["2023-09-01",322.0],["2023-09-08",316.0],["2023-09-15",323.0],["2023-09-22",316.0],["2023-09-29",314.5],["2023-10-06",310.5],["2023-10-13",286.5],["2023-10-20",280.0],["2023-10-27",282.5],["2023-11-03",288.5],["2023-11-10",286.5],["2023-11-17",302.0],["2023-11-24",312.5],["2023-12-01",310.0],["2023-12-08",304.5],["2023-12-15",330.0],["2023-12-22",323.0],["2023-12-29",319.0],["2024-01-05",299.5],["2024-01-12",309.5],["2024-01-19",308.0],["2024-01-26",315.0],["2024-02-02",316.5],["2024-02-09",317.0],["2024-02-16",317.5],["2024-02-23",289.0],["2024-03-01",282.0],["2024-03-08",280.5],["2024-03-15",285.5],["2024-03-22",292.5],["2024-03-28",288.0],["2024-04-05",271.0],["2024-04-12",272.0],["2024-04-19",309.0],["2024-04-26",313.0],["2024-05-03",331.5],["2024-05-10",347.0],["2024-05-17",349.5],["2024-05-24",354.0],["2024-05-31",351.5],["2024-06-07",340.5],["2024-06-14",338.5],["2024-06-21",355.0],["2024-06-28",322.0],["2024-07-05",342.5],["2024-07-12",354.5],["2024-07-19",355.5],["2024-07-26",348.5],["2024-08-02",338.5],["2024-08-09",350.0],["2024-08-16",360.0],["2024-08-23",374.0],["2024-08-30",364.0],["2024-09-06",341.0],["2024-09-13",335.0],["2024-09-20",332.0],["2024-09-27",336.5],["2024-10-04",317.5],["2024-10-11",322.5],["2024-10-18",333.5],["2024-10-25",323.5],["2024-11-01",331.5],["2024-11-08",330.0],["2024-11-15",306.5],["2024-11-22",302.0],["2024-11-29",289.0],["2024-12-06",279.5],["2024-12-13",300.0],["2024-12-20",280.0],["2024-12-24",281.0],["2024-12-27",280.5],["2025-01-03",274.5],["2025-01-10",275.5],["2025-01-17",285.0],["2025-01-24",282.5],["2025-01-31",290.0],["2025-02-07",282.0],["2025-02-14",272.5],["2025-02-21",276.5],["2025-02-28",270.0],["2025-03-07",281.0],["2025-03-14",272.5],["2025-03-21",274.5],["2025-03-28",257.0],["2025-04-04",198.8],["2025-04-11",224.5],["2025-04-17",233.5],["2025-04-25",245.5],["2025-05-02",259.0],["2025-05-09",259.0],["2025-05-16",268.5],["2025-05-23",276.5],["2025-05-30",289.0],["2025-06-06",295.0],["2025-06-13",306.0],["2025-06-20",309.0],["2025-06-27",389.0],["2025-07-04",371.0],["2025-07-11",367.5],["2025-07-18",370.0],["2025-07-25",369.0],["2025-08-01",367.5],["2025-08-08",364.0],["2025-08-15",356.5],["2025-08-22",355.0],["2025-08-29",347.5],["2025-09-05",342.0],["2025-09-12",333.5],["2025-09-19",356.5],["2025-09-26",358.5],["2025-10-03",367.5],["2025-10-10",364.0],["2025-10-17",354.0],["2025-10-24",388.5],["2025-10-31",374.5],["2025-11-07",365.5],["2025-11-14",428.5],["2025-11-21",407.5],["2025-11-28",395.5],["2025-12-05",400.5],["2025-12-12",403.5],["2025-12-19",413.0],["2025-12-24",413.5],["2026-01-02",413.0],["2026-01-09",434.5],["2026-01-16",434.0],["2026-01-23",465.0],["2026-01-30",441.5],["2026-02-06",464.5],["2026-02-13",490.0],["2026-02-20",489.5],["2026-02-27",483.0],["2026-03-06",457.0],["2026-03-13",434.5],["2026-03-20",428.5],["2026-03-27",445.5],["2026-04-02",479.0],["2026-04-10",535.0],["2026-04-17",562.0],["2026-04-24",577.0],["2026-05-01",591.0],["2026-05-08",651.0],["2026-05-15",642.0],["2026-05-22",677.0],["2026-05-29",695.0],["2026-06-05",629.0],["2026-06-12",597.0],["2026-06-19",603.0],["2026-06-26",540.0],["2026-07-03",540.0],["2026-07-10",507.0],["2026-07-17",511.0],["2026-07-24",536.0],["2026-07-31",511.0],["2026-08-07",553.0],["2026-08-14",554.0],["2026-08-21",545.0],["2026-08-28",624.0],["2026-09-04",607.0],["2026-09-11",615.0],["2026-09-18",613.0],["2026-09-25",629.0],["2026-10-02",684.0],["2026-10-09",688.0],["2026-10-16",637.0],["2026-10-23",536.0],["2026-10-30",562.0],["2026-11-06",520.0],["2026-11-11",567.0]],"marks":[{"d":"2021-11-11","doc":"H1 R","fy":"FY22","g":"flat","s":0,"q":"reaffirming our outlook for the remainder of the year"},{"d":"2022-04-20","doc":"YE-TU","fy":"FY22","g":"RAISE","s":2,"q":"revenues and underlying operating profits…ahead of consensus market expectations"},{"d":"2022-06-23","doc":"FY R","fy":"FY22","g":"flat","s":1,"q":"results that are ahead of consensus market expectations"},{"d":"2022-08-19","doc":"AGM","fy":"FY23","g":"flat","s":0,"q":"strong, in line with management's expectations"},{"d":"2022-11-09","doc":"H1 R","fy":"FY23","g":"flat","s":0,"q":"underpins our confidence to reaffirm our outlook"},{"d":"2023-04-18","doc":"YE-TU","fy":"FY23","g":"RAISE","s":2,"q":"revenue and underlying operating profit ahead of market expectations"},{"d":"2023-06-22","doc":"FY R","fy":"FY23","g":"flat","s":1,"q":"strong start to the new financial year with high levels of customer demand"},{"d":"2023-07-27","doc":"AGM","fy":"FY24","g":"flat","s":0,"q":"in line with management expectations"},{"d":"2023-10-24","doc":"H1 TU","fy":"FY24","g":"flat","s":0,"q":"on track to deliver full-year results in line with market expectations"},{"d":"2023-11-23","doc":"H1 R","fy":"FY24","g":"flat","s":0,"q":"confidence in the full year and progress towards five-year plan"},{"d":"2024-04-18","doc":"YE-TU","fy":"FY24","g":"RAISE","s":1,"q":"underlying operating profit…slightly ahead of analyst expectations"},{"d":"2024-06-26","doc":"FY R","fy":"FY24","g":"flat","s":1,"q":"confident of making further progress in FY2025"},{"d":"2024-08-01","doc":"AGM","fy":"FY25","g":"flat","s":0,"q":"in line with management's expectations"},{"d":"2024-10-16","doc":"H1 TU","fy":"FY25","g":"flat","s":0,"q":"full year expectations unchanged"},{"d":"2024-11-15","doc":"H1 R","fy":"FY25","g":"flat","s":0,"q":"full year expectations unchanged"},{"d":"2025-01-27","doc":"Q3 TU","fy":"FY25","g":"flat","s":0,"q":"expectations for the full year remain unchanged and are in line with market forecasts"},{"d":"2025-04-07","doc":"YE-TU","fy":"FY25","g":"RAISE","s":2,"q":"operating profit of at least $100 million, well ahead of the top end of market estimates"},{"d":"2025-06-26","doc":"FY R","fy":"FY25","g":"flat","s":1,"q":"Trading in FY2026 to date is very good…maintaining the momentum"},{"d":"2025-08-07","doc":"AGM","fy":"FY26","g":"flat","s":0,"q":"in line with management's expectations"},{"d":"2025-10-16","doc":"H1 TU","fy":"FY26","g":"flat","s":0,"q":"The Board's expectations for the full year remain unchanged"},{"d":"2025-11-12","doc":"H1 R","fy":"FY26","g":"flat","s":0,"q":"Full-year expectations unchanged"},{"d":"2026-01-21","doc":"Q3 TU","fy":"FY26","g":"RAISE","s":2,"q":"confidence in delivering full year revenue ahead of current market consensus"},{"d":"2026-06-25","doc":"FY R","fy":"FY26","g":"flat","s":1,"q":"Trading to date in FY2027 has been strong and in line with the Board's expectations"},{"d":"2026-08-25","doc":"AGM","fy":"FY27","g":"RAISE","s":2,"q":"As a result of the strength of trading in the opening months and the operating leverage inherent within the business model, the Board now expects FY2027 underlying operating profit to be ahead of current market expectations"},{"d":"2026-10-19","doc":"H1 TU","fy":"FY27","g":"RAISE","s":1,"q":"…with current trading conditions expected to continue across most end-markets. The Board expects FY2027 underlying operating profit to be towards the upper end of current market expectations"},{"d":"2026-11-12","doc":"H1 R","fy":"FY27","g":"flat","s":0,"q":"The second half has started well. The Board’s expectations for the full year, as upgraded at the October trading update, are unchanged. Second-half revenue is expected to be broadly in line with first-half revenue excluding the c.$10 million brought forward"}]}</script>
+<script type="application/json" id="drift-entry">{
+ "ticker": "VLX",
+ "company": "Volex plc",
+ "kind": "ticker",
+ "direction": "up",
+ "headline": "Record H1: organic +23.6%, margin 11.1% — but H2 revenue is guided flat and the profit view only held as consensus rose to meet it.",
+ "trigger": "Condition 1 fired green (R1 H1 organic 23.6%, +9.4pp; Consumer back to sequential growth; margin +1.3pp) — R3 Data Centre slip watch-flagged and context-discounted. Condition 2 technically met, not counted (Language +2 → +1 → 0 as consensus rose onto an unchanged view). Condition 3 unfired. Single-condition green — no 2-of-3.",
+ "alert": false,
+ "fired": 1,
+ "fired_of": 3,
+ "lights": "ga-",
+ "rns_type": "H1 R",
+ "rns_date": "2026-11-12",
+ "build_date": "2026-11-12",
+ "spec_version": "v5.8",
+ "next_test": "Jan 2027 Q3 TU: does 9M organic hold double digits, and does the profit view move back above consensus.",
+ "url": "VLX.html",
+ "grid": {
+  "labels": [
+   "R1",
+   "R2",
+   "R3",
+   "R4",
+   "R5"
+  ],
+  "periods": [
+   "H1 23",
+   "H2 23",
+   "H1 24",
+   "H2 24",
+   "H1 25",
+   "H2 25",
+   "H1 26",
+   "H2 26",
+   "H1 27"
+  ],
+  "rows": [
+   "-rrrggggg",
+   "--raggrrg",
+   "--rrrrggr",
+   "--aggrrgg",
+   "agagaagag"
+  ],
+  "note": "R1 organic CC growth (H1/FY prints mapped to half slots) · R2 Consumer Electricals · R3 CIT/Data Centre · R4 underlying operating profit · R5 underlying operating margin"
+ },
+ "trend": {
+  "mode": "share",
+  "cells": "ggg",
+  "rows": [
+   {
+    "m": "REV",
+    "gap": 5.2
+   },
+   {
+    "m": "EBITDA",
+    "gap": 7.5
+   },
+   {
+    "m": "PBT",
+    "gap": 9.3
+   }
+  ]
+ },
+ "prev": {
+  "direction": "up",
+  "fired": 1,
+  "lights": "g--",
+  "rns_date": "2026-10-19",
+  "rns_type": "H1 TU"
+ },
+ "chart": "charts/VLX.json?v=2026-11-12.9e7a"
+}</script>
 </body></html>
