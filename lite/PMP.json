@@ -1,22 +1,10 @@
 {
  "ticker": "PMP",
- "v": "2026-10-20.8ed6",
+ "v": "2026-11-12.bee9",
  "ccy": "GBX",
- "src": "Yahoo PMP.L weekly",
+ "src": "Yahoo PMP.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-22",
-   680.0
-  ],
-  [
-   "2021-10-29",
-   680.0
-  ],
-  [
-   "2021-11-05",
-   680.0
-  ],
   [
    "2021-11-12",
    685.0
@@ -1052,18 +1040,21 @@
   [
    "2026-10-20",
    46.489
+  ],
+  [
+   "2026-10-23",
+   46.5
+  ],
+  [
+   "2026-10-30",
+   44.5
+  ],
+  [
+   "2026-11-06",
+   44.0
   ]
  ],
  "marks": [
-  {
-   "d": "2021-11-11",
-   "doc": "Q3 TU",
-   "fy": "FY21",
-   "g": "flat",
-   "s": -1,
-   "q": "However, we believe the challenges in global shipping and labour shortages will be short-term in nature and, with the strong trading, will not impact current consensus market expectations of profit for the current period or, in the longer term, our margins and ability to grow as a business.",
-   "file": "20211111_PMP_Trading-Update.md"
-  },
   {
    "d": "2022-01-12",
    "doc": "YE-TU",

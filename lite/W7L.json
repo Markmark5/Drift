@@ -1,22 +1,10 @@
 {
  "ticker": "W7L",
- "v": "2026-10-20.d8f2",
+ "v": "2026-11-12.c113",
  "ccy": "GBX",
- "src": "Yahoo W7L.L weekly",
+ "src": "Yahoo W7L.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-22",
-   162.5
-  ],
-  [
-   "2021-10-29",
-   152.5
-  ],
-  [
-   "2021-11-05",
-   165.0
-  ],
   [
    "2021-11-12",
    162.5
@@ -1052,18 +1040,21 @@
   [
    "2026-10-20",
    185.0
+  ],
+  [
+   "2026-10-23",
+   195.0
+  ],
+  [
+   "2026-10-30",
+   200.0
+  ],
+  [
+   "2026-11-06",
+   183.0
   ]
  ],
  "marks": [
-  {
-   "d": "2021-11-02",
-   "doc": "Q3 TU",
-   "fy": "FY21",
-   "g": "RAISE",
-   "s": 2,
-   "q": "Following a continuation of the improving trends seen in the first half of the year, and outlined in the Company's interim results announcement on 22 September 2021, the Company now expects its results for the year ending 31 December 2021 to be ahead of market expectations.",
-   "file": "20211102_W7L_Trading-Update.md"
-  },
   {
    "d": "2022-02-01",
    "doc": "YE-TU",

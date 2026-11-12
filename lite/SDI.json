@@ -1,22 +1,10 @@
 {
  "ticker": "SDI",
- "v": "2026-10-20.c785",
+ "v": "2026-11-12.0a01",
  "ccy": "GBX",
- "src": "Yahoo SDI.L weekly",
+ "src": "Yahoo SDI.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-22",
-   174.0
-  ],
-  [
-   "2021-10-29",
-   189.0
-  ],
-  [
-   "2021-11-05",
-   215.0
-  ],
   [
    "2021-11-12",
    211.0
@@ -1052,18 +1040,21 @@
   [
    "2026-10-20",
    96.0
+  ],
+  [
+   "2026-10-23",
+   95.5
+  ],
+  [
+   "2026-10-30",
+   95.0
+  ],
+  [
+   "2026-11-06",
+   95.4
   ]
  ],
  "marks": [
-  {
-   "d": "2021-11-04",
-   "doc": "H1 TU",
-   "fy": "FY22",
-   "g": "RAISE",
-   "s": 1,
-   "q": "Accordingly, the Board expects full year Adjusted2 Profit Before Tax to also be modestly above current market expectations at around £9.2m",
-   "file": "20211104_SDI_Trading-Update-and-Notice-of-Results.md"
-  },
   {
    "d": "2021-12-07",
    "doc": "H1 R",
