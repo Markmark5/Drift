@@ -1,6 +1,6 @@
 {
  "ticker": "VLX",
- "v": "2026-10-26.d09f",
+ "v": "2026-11-12.621c",
  "ccy": "GBX",
  "src": "Yahoo VLX.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1056,6 +1056,14 @@
   [
    "2026-10-23",
    532.0
+  ],
+  [
+   "2026-10-30",
+   590.0
+  ],
+  [
+   "2026-11-06",
+   524.0
   ]
  ],
  "marks": [
@@ -1301,38 +1309,47 @@
    "s": 1,
    "q": "The Board expects FY2027 underlying operating profit1 to be towards the upper end of current market expectations2.",
    "file": "20261019_VLX_Half-Year-Trading-Update.md"
+  },
+  {
+   "d": "2026-11-12",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The second half has started well. The Board’s expectations for the full year, as upgraded at the October trading update, are unchanged.",
+   "file": "20261112_VLX_Half-Year-Report.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-19",
-  "doc": "H1 TU",
-  "file": "20261019_VLX_Half-Year-Trading-Update.md",
-  "vs": "H1 TU Oct-25 · back to Oct-24 · AGM Aug-26",
+  "rns": "2026-11-12",
+  "doc": "H1 R",
+  "file": "20261112_VLX_Half-Year-Report.md",
+  "vs": "H1 R Nov-25 · back to Nov-24 · H1 TU Oct-26",
   "lines": [
    {
-    "sev": "amber",
-    "type": "Number to words",
-    "text": "H1 margin: Oct-25 “Operating profit margin for the first half is expected to remain within the upper half of the Board's through-cycle target range of 9-10%” → Oct-26 “First half underlying operating profit1 margin is expected to show progress towards the Group's medium term target of 12%”, no level or band",
-    "span": "Margin band given in H1 TU Oct-24 and Oct-25 → first gap"
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Oct-26 TU: FY27 profit “towards the upper end of current market expectations”; Nov-25 H1: “full-year market expectations” → now “The Board’s expectations for the full year, as upgraded at the October trading update, are unchanged”",
+    "span": "Consensus footnote still printed (UOP $153.9m vs $150.4m at Oct-26), so the market figure stays visible"
    },
    {
     "sev": "amber",
     "type": "New caution",
-    "text": "Data Centre: Aug-26 “Data Centre customer demand has been sustained at the elevated exit rate of FY2026” → Oct-26 “Data Centre revenues were well ahead of the prior-year comparator, although below the second half of FY2026”; next-generation ramp put at FY2028",
-    "span": "First sequential decline flagged in the lead growth market"
+    "text": "Was: no margin caveat in Nov-25 or Oct-26 → now “margin progression is unlikely to be linear”, with H2 carrying “additional dual running and ramp-up costs”",
+    "span": "First use of this caveat in the RNS record"
    },
    {
     "sev": "grey",
-    "type": "Wording vs number",
-    "text": "“Record first half revenue with growth in every end-market” includes about $11m from KST and revenue pulled forward from H2: “bringing forward approximately $10 million of revenue that would otherwise have been expected in the second half”. Sequential uplift slows from 8% (Aug-26, four months) to about 7% over H2 FY2026",
-    "span": "Aug-26 AGM → Oct-26 H1 TU"
+    "type": "Went quiet",
+    "text": "Working-capital guide: Nov-25 “total working capital is expected to remain broadly at current levels for the remainder of the year” → now no working-capital guide; H1 outflow $29.1m",
+    "span": "Given at Nov-24 and Nov-25 → first gap"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "FY27 profit pinned to the consensus range: Aug-26 “ahead of current market expectations” (consensus then $138.3m) → Oct-26 “towards the upper end of current market expectations” with consensus now $150.4m (range $145.9m to $153.3m)",
-    "span": "Second positive step in FY27"
+    "text": "New full-year capex guide: “expected capital expenditure of approximately 5% of revenue for the full year” (H1 3.3%); cash conversion now printed at 56.5% (H1 FY2026: 33.4%)",
+    "span": "Not given at Nov-25"
    }
   ]
  }

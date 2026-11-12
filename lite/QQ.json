@@ -1,8 +1,8 @@
 {
  "ticker": "QQ.",
- "v": "2026-10-21.b395",
+ "v": "2026-11-12.1e25",
  "ccy": "GBX",
- "src": "Yahoo QQ.L weekly",
+ "src": "Yahoo QQ.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,18 @@
   [
    "2026-10-21",
    483.0
+  ],
+  [
+   "2026-10-23",
+   486.0
+  ],
+  [
+   "2026-10-30",
+   538.5
+  ],
+  [
+   "2026-11-06",
+   525.0
   ]
  ],
  "marks": [
@@ -1316,26 +1328,47 @@
    "s": 0,
    "q": "For FY27, QinetiQ continues to expect 3-5% revenue growth, 11.0-11.5% underlying operating profit1 margin, 8-10% EPS growth and >90% cash conversion.",
    "file": "20260716_QQ_Q1-Trading-Update.md"
+  },
+  {
+   "d": "2026-11-12",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "We are confirming our guidance for the full year: revenue growth of 3% to 5%; an operating margin of 11.0% to 11.5%; EPS growth of 8% to 10%; and cash conversion above 90%.",
+   "file": "20261112_QQ._H1-double-digit-profit-growth-and-higher-margins.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-16",
-  "doc": "Q1 TU",
-  "file": "20260716_QQ_Q1-Trading-Update.md",
-  "vs": "Q1 TU Jul-25 · FY R May-26 · back to Q1 TU Jul-23/Jul-24",
+  "rns": "2026-11-12",
+  "doc": "H1 R",
+  "file": "20261112_QQ._H1-double-digit-profit-growth-and-higher-margins.md",
+  "vs": "H1 R Nov-25 · back to Nov-24 · FY R May-26 · Q1 TU Jul-26",
   "lines": [
    {
     "sev": "amber",
     "type": "Number to words",
-    "text": "Revenue cover: Jul-25 “beginning the year with good revenue cover of 75%” → Jul-26 only “strong revenue visibility, underpinned by a record opening order backlog”, no % given",
-    "span": "Quantified at Q1 Jul-23 (£1.3bn under contract), Jul-24 (73%), Jul-25 (75%) → first gap in 3 years"
+    "text": "Backlog: H1 FY26 highlight “Significant backlog of £4.8bn (funded and unfunded) and strong pipeline of £11bn gives good long-term visibility” → now highlight “Order backlog and long-term programmes provide good visibility of future revenue growth”, no figure; £4.4bn only in the CEO review",
+    "span": "£4.8bn headlined Nov-25 and May-26 → first unquantified backlog highlight"
+   },
+   {
+    "sev": "amber",
+    "type": "Demoted",
+    "text": "Revenue cover: H1 FY26 highlight “Revenue cover of 89% for the second half of FY26” → now lower and in the CFO review only: “approximately 84% (£1.7bn) of the Group’s FY27 expected revenue was under contract”",
+    "span": "Nov-25 89% → Nov-26 84%"
+   },
+   {
+    "sev": "amber",
+    "type": "Demoted",
+    "text": "Cash conversion: H1 highlights “good conversion at 85%” (Nov-25) and “Good cash conversion at 84%” (Nov-24) → now dropped from highlights; CFO review “We achieved solid underlying cash conversion of 64% (H1 FY26: 85%) in line with expectations.”",
+    "span": "Headlined Nov-24, Nov-25 → first H1 without it"
    },
    {
     "sev": "grey",
-    "type": "Number to words",
-    "text": "Order backlog: Jul-25 “record order backlog of c.£5bn” and May-26 £4.8bn → Jul-26 “a record opening order backlog”, no figure",
-    "span": "Jul-25 Q1 TU, May-26 FY R → Jul-26"
+    "type": "New caution",
+    "text": "Australia: “we expect trading conditions to remain challenging through the second half and into next year” — first caution reaching into FY28; not in FY R May-26 or Q1 TU Jul-26",
+    "span": "Jan-26 only mentioned “right-sizing of the Australia business”"
    }
   ]
  }

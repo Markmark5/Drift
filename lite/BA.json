@@ -1,8 +1,8 @@
 {
  "ticker": "BA.",
- "v": "2026-10-21.32aa",
+ "v": "2026-11-12.a3a5",
  "ccy": "GBX",
- "src": "Yahoo BA.L weekly",
+ "src": "Yahoo BA.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,18 @@
   [
    "2026-10-21",
    1933.0
+  ],
+  [
+   "2026-10-23",
+   1930.5
+  ],
+  [
+   "2026-10-30",
+   2070.0
+  ],
+  [
+   "2026-11-06",
+   1880.5
   ]
  ],
  "marks": [
@@ -1252,14 +1264,36 @@
    "s": 0,
    "q": "Our cumulative three-year free cash flow guidance for 2024 to 2026 has also been upgraded while the cumulative three-year free cash flow guidance for 2025 to 2027 and 2026 to 2028 remains unchanged.",
    "file": "20260730_BA_BAE-Systems-2026-Half-Year-Results.md"
+  },
+  {
+   "d": "2026-11-12",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "We now expect to deliver c.£3bn of free cash flow, including some benefit from customer advances received to date but excluding any material advances we may receive in the remainder of the year.",
+   "file": "20261112_BA._Trading-Statement.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-30",
-  "doc": "H1 R",
-  "file": "20260730_BA_Half-year-Financial-Report.md",
-  "vs": "H1 R Jul-25 · AGM TU May-26 · FY R Feb-26",
-  "lines": []
+  "rns": "2026-11-12",
+  "doc": "Q3 TU",
+  "file": "20261112_BA._Trading-Statement.md",
+  "vs": "Q3 TU Nov-25 · H1 R Jul-26",
+  "lines": [
+   {
+    "sev": "grey",
+    "type": "New caution",
+    "text": "Q3 TU Nov-25 named no sector drag (“Trading in the second half of the year is in line with expectations”) → now the trading paragraph flags “subdued growth and margins in our Maritime sector” (Type 26 first-in-class stage)",
+    "span": "H1 Jul-26 carried it only in the sector review (Maritime return on sales 6.1%, 2025 6.8%)"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "FY26 free cash flow guide raised again: H1 Jul-26 “>£2.0bn” → now “now expect to deliver c.£3bn of free cash flow, with some benefit from customer advances”",
+    "span": ">£1.3bn at Feb-26 → >£2.0bn Jul-26 → c.£3bn Nov-26"
+   }
+  ]
  }
 }
