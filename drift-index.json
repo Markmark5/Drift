@@ -2990,17 +2990,17 @@
       "company": "Galliford Try Holdings",
       "kind": "ticker",
       "direction": "up",
-      "headline": "Profit beat its own top-end guide, margin hit 3.5%, and the water-gap year closed with H2 growth back at +4.6%.",
-      "trigger": "Green-shoot fire on condition 1: margin expansion on printed figures plus a guide beat; conditions 2 and 3 unlit",
+      "headline": "First AGM in the record trading ahead — slightly ahead of the Board's expectations — after FY26 beat its own top end.",
+      "trigger": "Green-shoot fire on condition 1: printed margin run plus a G RAISE at the Nov-26 AGM; conditions 2 and 3 unlit",
       "alert": false,
       "fired": 1,
       "fired_of": 3,
       "lights": "g--",
-      "rns_type": "FY R",
-      "rns_date": "2026-09-17",
-      "build_date": "2026-09-17",
-      "spec_version": "5.4",
-      "next_test": "H1 FY27 trading update, Jan-27: do Building's delayed awards convert into FY27 revenue, and does the guide hold similar revenue growth with an expectations anchor?",
+      "rns_type": "AGM",
+      "rns_date": "2026-11-12",
+      "build_date": "2026-11-12",
+      "spec_version": "5.8",
+      "next_test": "H1 FY27 trading update, Jan-27: is \"ahead\" re-anchored to market expectations, and do Building's delayed public-sector awards convert into FY27 revenue?",
       "url": "GFRD.html",
       "trend": {
         "mode": "growth",
@@ -3046,8 +3046,16 @@
           "--rggrrrg",
           "-gaaagrgg"
         ],
-        "note": "Five ranks at half grain, right-anchored on the Sep-26 final results."
-      }
+        "note": "Five ranks at half grain, right-anchored on the Sep-26 final results; the Nov-26 AGM adds no grid period."
+      },
+      "prev": {
+        "direction": "up",
+        "fired": 1,
+        "lights": "g--",
+        "rns_date": "2026-09-17",
+        "rns_type": "FY R"
+      },
+      "chart": "charts/GFRD.json?v=2026-11-12.720c"
     },
     {
       "ticker": "CCC",
