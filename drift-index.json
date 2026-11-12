@@ -4571,18 +4571,18 @@
       "ticker": "KIE",
       "company": "Kier Group",
       "kind": "ticker",
-      "direction": "up",
-      "headline": "FY26 guided to top end in July, delivered in September with EPS 4% above consensus; FY27 re-raised — deceleration case closed.",
-      "trigger": "1 of 3 — Numbers & guide green: G RAISE Jul-26 (FY26 top end) and Sep-26 (FY27 top end); deceleration clause unfired",
+      "direction": "watch",
+      "headline": "Guide held at September's raised bar, but the order book dipped for the first time in 24 prints and secured revenue went unreported.",
+      "trigger": "1 of 3 — Disclosure red: secured-revenue % withheld after 23 quantified prints; Numbers & guide amber: first order-book dip, context-discounted",
       "alert": false,
       "fired": 1,
       "fired_of": 3,
-      "lights": "g--",
-      "rns_type": "FY R",
-      "rns_date": "2026-09-15",
-      "build_date": "2026-09-15",
-      "spec_version": "v5.5",
-      "next_test": "AGM TU mid-Nov 2026 — FY27 'top end' held or upgraded; FY28 secured off >70%; Hinchingbrooke into Construction order book",
+      "lights": "a-r",
+      "rns_type": "AGM TU",
+      "rns_date": "2026-11-12",
+      "build_date": "2026-11-12",
+      "spec_version": "v5.8",
+      "next_test": "H1 TU Jan 2027 — December order book above £11.7bn and FY27 secured % reported again",
       "url": "KIE.html",
       "grid": {
         "labels": [
@@ -4593,7 +4593,6 @@
           "R5"
         ],
         "periods": [
-          "H2 22",
           "H1 23",
           "H2 23",
           "H1 24",
@@ -4601,23 +4600,24 @@
           "H1 25",
           "H2 25",
           "H1 26",
-          "H2 26"
+          "H2 26",
+          "H1 27"
         ],
         "rows": [
-          "--agggagg",
-          "---ggggrg",
-          "---ggrrrg",
-          "--argrgaa",
-          "---grrrrg"
+          "-agggaggr",
+          "--ggggrgx",
+          "--ggrrrg-",
+          "-argrgaa-",
+          "--grrrrg-"
         ],
-        "note": "R1 Group order book · R2 secured-% vs same position LY · R3 Group revenue Δrate · R4 Construction order book · R5 Construction revenue Δrate"
+        "note": "R1 Group order book · R2 secured % vs same position LY · R3 Group revenue Δrate · R4 Construction order book · R5 Construction revenue Δrate; H1 27 open (snapshots only)"
       },
       "prev": {
-        "direction": "watch",
+        "direction": "up",
         "fired": 1,
-        "lights": "r--",
-        "rns_date": "2026-03-03",
-        "rns_type": "H1 R"
+        "lights": "g--",
+        "rns_date": "2026-09-15",
+        "rns_type": "FY R"
       },
       "trend": {
         "mode": "growth",
@@ -4625,7 +4625,7 @@
         "rows": [
           {
             "m": "REV",
-            "gap": 9.7
+            "gap": 6.1
           },
           {
             "m": "EBITDA",
@@ -4633,10 +4633,11 @@
           },
           {
             "m": "PBT",
-            "gap": 3.5
+            "gap": 0.3
           }
         ]
-      }
+      },
+      "chart": "charts/KIE.json?v=2026-11-12.1e90"
     },
     {
       "ticker": "IPX",
