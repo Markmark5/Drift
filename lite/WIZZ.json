@@ -1,8 +1,8 @@
 {
  "ticker": "WIZZ",
- "v": "2026-10-21.e1dc",
+ "v": "2026-11-12.c438",
  "ccy": "GBX",
- "src": "Yahoo WIZZ.L weekly",
+ "src": "Yahoo WIZZ.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,18 @@
   [
    "2026-10-21",
    1004.0
+  ],
+  [
+   "2026-10-23",
+   975.5
+  ],
+  [
+   "2026-10-30",
+   999.0
+  ],
+  [
+   "2026-11-06",
+   1038.0
   ]
  ],
  "marks": [
@@ -1298,38 +1310,41 @@
    "s": 1,
    "q": "No guidance for the full year 2027 was given at the Capital Markets Day, however, Wizz Air updated its guidance on RASK, stating that on the back of a stronger than expected summer revenue performance, Q2 RASK guidance was being changed to flat YoY, from “down low single digits” previously.",
    "file": "20261002_WIZZ_September-2026-Traffic-and-CO2-Emission-Statistics.md"
+  },
+  {
+   "d": "2026-11-12",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "In October, revenue per available seat kilometre was up around 5 per cent year-on-year, with ticket revenue per passenger up 7 per cent, even as our average sector became 5 per cent shorter.",
+   "file": "20261112_WIZZ_Half-Year-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-02",
-  "doc": "OPS",
-  "file": "20261002_WIZZ_September-2026-Traffic-and-CO2-Emission-Statistics.md",
-  "vs": "Sep-25 traffic RNS · Aug-26 traffic RNS · Q1 F27 results Aug-26",
+  "rns": "2026-11-12",
+  "doc": "H1 R",
+  "file": "20261112_WIZZ_Half-Year-Results.md",
+  "vs": "H1 R Nov-25 · Oct-26 traffic RNS (3 Nov) · CMD Sep-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "New caution",
-    "text": "Q1 F27 (Aug-26): “delivering high growth throughout H1 F27” → Oct-26: “reflecting geopolitical and fuel price volatilities, the company confirmed that it had trimmed its originally planned H2 capacity by 5%”",
-    "span": "First capacity trim of F27"
-   },
-   {
-    "sev": "grey",
-    "type": "Wording vs number",
-    "text": "Load factor: Sep-25 “a load factor of 92.8%, up 1 ppt compared to last year” → Sep-26 “92.0%, down 0.8ppts year-over-year, although this in part reflected a stronger pricing environment”",
-    "span": "Aug-26 was up 0.8ppt → Sep-26 down"
+    "type": "Split withheld",
+    "text": "H1 F26 outlook gave H2 and full-year lines, e.g. “Both F26 H2 and F26 full year RASK down low single digits percent YoY”, plus total and fuel CASK → H1 F27 gives Q3 only: “Q3 RASK up low single digits”, with no H2 or full-year RASK, total CASK or fuel CASK guide",
+    "span": "H2 + full-year guide at Nov-25 → Q3 + ex-fuel CASK only at Nov-26"
    },
    {
     "sev": "grey",
     "type": "Demoted",
-    "text": "CO2 intensity: Sep-25 text bullet “Wizz Air reported CO2 emissions of 49.8 grams per Revenue Passenger Kilometer (RPK) in September” → Sep-26 only in the table (49.0 g), no mention in the text",
-    "span": "In text Aug-25, Sep-25 → table only Jul/Aug/Sep-26"
+    "text": "H1 net profit: Nov-25 highlight “Net profit was €323.5 million, up 2.6 per cent year-over-year” → Nov-26 highlights lead with Q2 (“net profit up 7.4 per cent to €306.3 million”); “The net profit for the first half was €108.1 million” sits in the review only",
+    "span": "H1 operating profit down 39.8% YoY"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Q2 RASK: Aug-26 “Q2 RASK down low single digits (supported by stage length reduction)” → Oct-26 “Q2 RASK guidance was being changed to flat YoY”; new F30 targets incl. “an EBIT margin of 10%”",
-    "span": "Aug-26 → Oct-26 (CMD 17 Sep)"
+    "text": "Q3 view: Nov-25 booking curve “unit revenue (RASK) approximately down low single digits percentage-wise year on year” → Nov-26 “Q3 RASK up low single digits”; ex-fuel CASK flat, “an improvement against expectations of a low single digit increase”",
+    "span": "Q2 RASK beat the “flat” guide set at CMD Sep-26"
    }
   ]
  }

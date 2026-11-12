@@ -1,8 +1,8 @@
 {
  "ticker": "CHG",
- "v": "2026-10-21.c6ea",
+ "v": "2026-11-12.388a",
  "ccy": "GBX",
- "src": "AlphaVantage CHG.LON weekly",
+ "src": "AlphaVantage CHG.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1060,6 +1060,18 @@
   [
    "2026-10-20",
    534.5
+  ],
+  [
+   "2026-10-23",
+   533.5
+  ],
+  [
+   "2026-10-30",
+   569.0
+  ],
+  [
+   "2026-11-06",
+   533.0
   ]
  ],
  "marks": [
@@ -1269,38 +1281,47 @@
    "s": -1,
    "q": "As previously guided, operating profit is expected to be weighted c.70% to H2, reflecting scheduled programme deliveries, customer acceptance timing and the phasing of Sensors & Information contract activity and awards.",
    "file": "20260602_CHG_Interim-results.md"
+  },
+  {
+   "d": "2026-11-12",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -2,
+   "q": "However, Roke’s FY26 performance was below expectations due to delays in defence contract awards, principally from the UK Ministry of Defence (“UK MOD”) and sales of electronic warfare systems to international customers.",
+   "file": "20261112_CHG_Post-close-trading-update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-06-02",
-  "doc": "H1 R",
-  "file": "20260602_CHG_Interim-results.md",
-  "vs": "H1 R Jun-25 · back to Jun-24 · AGM Feb-26, FY R Dec-25",
+  "rns": "2026-11-12",
+  "doc": "YE-TU",
+  "file": "20261112_CHG_Post-close-trading-update.md",
+  "vs": "YE-TU Nov-25 · back to Oct/Nov-24, Nov-23 · H1 R Jun-26",
   "lines": [
    {
-    "sev": "amber",
-    "type": "Target dropped",
-    "text": "£1bn revenue ambition: H1-25 “The Group remains on track to achieve its ambition to increase the Group's annual revenue to c.£1bn by 2030.” (Dec-25: “remain committed to our ambition of doubling annual revenue to approximately £1 billion by 2030”) → H1-26 no £1bn figure, only “The Board also remains confident in the Group's previously stated medium and longer-term financial objectives.”",
-    "span": "Stated Jun-24, Dec-24, Jun-25, Dec-25 → absent Feb-26 AGM and Jun-26 interim"
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Nov-25: “FY25 adjusted operating profit in line with analyst expectations*” (Nov-24: “in-line with consensus expectations of £70.9m”) → Nov-26 no in-line statement, only “Subject to audit, FY26 underlying operating profit expected to be c.£79 million” against a stated consensus of £80.3m",
+    "span": "In-line anchor in every year-end update Nov-23, Oct-24, Nov-24, Nov-25 → first gap"
    },
    {
     "sev": "amber",
-    "type": "Split withheld",
-    "text": "Medium-term objectives: H1-25 itemised “targeting mid-single digit % growth in the near term, accelerating to low double digit % growth as new capacity comes online” plus S&I, C&E and “Group targeting mid-teen return on sales in the medium term” → H1-26 one line, no growth or margin targets listed",
-    "span": "H1-25 interim → H1-26 interim"
+    "type": "Went quiet",
+    "text": "Next-year order cover: Nov-25 “Countermeasures & Energetics having c.95% (31 October 2024: 97%) order cover of expected revenue” (Oct-24: “Countermeasures & Energetics having 95% (2023: 87%) order cover”) → Nov-26 no order-cover figure for FY27",
+    "span": "Given Oct-24, Nov-25 → first gap"
    },
    {
     "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Headline “H1 in-line and FY26 expectations unchanged” beside “Underlying operating profit was down 7.5% to £24.5m” (margin 10.3% vs 11.9%; operating cash conversion 42% vs 83%) and c.70% of profit now pushed to H2 (FY25 H2 share c.64%)",
-    "span": "H1-25 profit was up 8% → H1-26 down 7.5%"
+    "type": "Number to words",
+    "text": "Order intake: Nov-25 “order intake for the year was c.£781m (31 October 2024: £648m)” → Nov-26 no Group intake figure, only “Roke’s order intake reached record levels in FY26”",
+    "span": "Group intake quantified Oct-24, Nov-25"
    },
    {
-    "sev": "grey",
-    "type": "Demoted",
-    "text": "Group order intake: H1-25 highlight “Record H1 order intake of £488m” (H1-24: “Record H1 order intake of £345m”) → H1-26 highlights and Group overview give no Group intake figure; only segment intake (C&E £176m, S&I £110m) further down",
-    "span": "Headline at H1-24, H1-25 → dropped H1-26"
+    "sev": "amber",
+    "type": "New caution",
+    "text": "Kilgore restructuring: H1-26 “impairment charges relating to the retirement of legacy Countermeasure operations in Tennessee £6.7m” → Nov-26 “a non-cash impairment charge of c.£50 million alongside exceptional cash costs of c.£3.5 million”",
+    "span": "H1 R Jun-26 → YE-TU Nov-26"
    }
   ]
  }

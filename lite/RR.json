@@ -1,8 +1,8 @@
 {
  "ticker": "RR.",
- "v": "2026-10-21.106c",
+ "v": "2026-11-12.22c7",
  "ccy": "GBX",
- "src": "Yahoo RR.L weekly",
+ "src": "Yahoo RR.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,18 @@
   [
    "2026-10-21",
    1334.0
+  ],
+  [
+   "2026-10-23",
+   1259.6
+  ],
+  [
+   "2026-10-30",
+   1280.0
+  ],
+  [
+   "2026-11-06",
+   1239.6
   ]
  ],
  "marks": [
@@ -1234,38 +1246,47 @@
    "s": 2,
    "q": "Full year 2026 guidance raised; we now expect £4.7bn-£4.9bn underlying operating profit and £3.8bn-£4.0bn free cash flow",
    "file": "20260730_RR_2026-Half-Year-Results.md"
+  },
+  {
+   "d": "2026-11-12",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "We have continued to deliver strong operational, strategic and financial progress in the second half of 2026, giving us further confidence in our full year guidance of £4.7bn–£4.9bn of underlying operating profit and £3.8bn–£4.0bn of free cash flow.",
+   "file": "20261112_RR._Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-30",
-  "doc": "H1 R",
-  "file": "20260730_RR_2026-Half-Year-Results.md",
-  "vs": "H1 R Jul-25 · AGM TU Apr-26 · FY R Feb-26 · back to H1 R Aug-24",
+  "rns": "2026-11-12",
+  "doc": "Q3 TU",
+  "file": "20261112_RR._Trading-Update.md",
+  "vs": "Q3 TU Nov-25 · H1 R Jul-26 · AGM TU Apr-26",
   "lines": [
    {
     "sev": "amber",
     "type": "New caution",
-    "text": "Large EFH guide: Apr-26 AGM “For the full year 2026, we continue to expect large EFH at 115%-120% of 2019 levels” → now “we now expect large EFH towards the lower end of the range of 115%-120% of 2019 levels”",
-    "span": "First move to the low end of the 2026 range; OE deliveries and shop visit guides held"
-   },
-   {
-    "sev": "amber",
-    "type": "Number to words",
-    "text": "Civil LTSA balance growth guide: Feb-26 “broadly similar to the prior year (2025: £0.6bn)” → now “a lower Civil Aerospace net LTSA balance growth compared to 2025 (£572m)”, no figure; H1 “£86m compared to £472m in the prior period”",
-    "span": "Numeric anchor given at H1-24, H1-25 (“at the low end of the range of £0.8bn-£1.2bn”) and FY-25"
-   },
-   {
-    "sev": "amber",
-    "type": "Pushed out",
-    "text": "Power Systems governmental: “we now expect 20% OE revenue growth to 2030 (previously: 20% to the mid-term)”; mid-term targets are on a 2028 timeframe",
-    "span": "Same growth figure, horizon moved from 2028 to 2030"
+    "text": "Fuel-price capacity cuts named for the first time: “EFH in other regions have been temporarily impacted by fuel price related capacity reductions, which we expect to reverse when the fuel price falls.”",
+    "span": "No fuel-price reference in Nov-25 TU, Apr-26 AGM or Jul-26 H1"
    },
    {
     "sev": "amber",
     "type": "Wording vs number",
-    "text": "Defence: H1-25 “an order intake of £4.0bn and a book-to-bill ratio of 1.8x”, backlog “£18.8bn” → H1-26 “Demand remains high, with an order intake of £2.4bn and a book-to-bill ratio of 1.0x”, backlog “£17.5bn”, order cover “approaching 90%” (was “approaching 100%”)",
-    "span": "Civil large engine gross book-to-bill also 1.6x vs 2.9x"
+    "text": "Large EFH: Nov-25 “Large engine flying hours for the 10 months to 31 October 2025 grew by 8% year on year to 109% of 2019 levels.” → Nov-26 “grew by 4% year on year in the first 10 months of 2026 to 114% of 2019 levels”, still below the 115% floor of the range it says growth “supports”",
+    "span": "Growth halved year on year; guide held at the lower end"
+   },
+   {
+    "sev": "grey",
+    "type": "Number to words",
+    "text": "OE and shop visit guide: Jul-26 “We continue to expect 550-600 total OE deliveries and 1,480-1,550 total shop visits.” → Nov-26 “Our full year guidance for total OE deliveries remains unchanged.”, ranges not restated",
+    "span": "Jul-26 → Nov-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Power Systems now quantified in the TU: “Order intake in the first nine months of the year increased by 62% year on year, with the order backlog at the end of September standing at a record £8.6bn (H1 2026: £8.0bn).”",
+    "span": "Nov-25 TU gave no Power Systems figures"
    }
   ]
  }

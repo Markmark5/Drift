@@ -1,8 +1,8 @@
 {
  "ticker": "SMWH",
- "v": "2026-10-20.a938",
+ "v": "2026-11-12.e6dd",
  "ccy": "GBX",
- "src": "Yahoo SMWH.L weekly",
+ "src": "Yahoo SMWH.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,18 @@
   [
    "2026-10-20",
    425.8
+  ],
+  [
+   "2026-10-23",
+   422.6
+  ],
+  [
+   "2026-10-30",
+   432.6
+  ],
+  [
+   "2026-11-06",
+   439.0
   ]
  ],
  "marks": [
@@ -1325,32 +1337,47 @@
    "s": -1,
    "q": "Full year Headline Group profit before tax and non-underlying items expected to be c.£75m1. This reflects lower trading profit margins driven by increased promotional activity, a reduction in brand marketing and inflation headwinds, offset by central cost reductions and lower interest costs.",
    "file": "20260916_SMWH_Pre-close-Trading-Update.md"
+  },
+  {
+   "d": "2026-11-12",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "As a result, the Board currently expects full year Headline Group profit before tax and non-underlying items to be in line with current market expectations of £75m to £85m.",
+   "file": "20261112_SMWH_Preliminary-Results-Announcement.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-16",
-  "doc": "YE-TU",
-  "file": "20260916_SMWH_Pre-close-Trading-Update.md",
-  "vs": "YE-TU Sep-24 (no Sep-25 pre-close) · Q3 TU Jun-26 · H1 R Apr-26",
+  "rns": "2026-11-12",
+  "doc": "FY R",
+  "file": "20261112_SMWH_Preliminary-Results-Announcement.md",
+  "vs": "FY R Dec-25 · back to Nov-24 · YE-TU Sep-26, H1 R Apr-26",
   "lines": [
    {
-    "sev": "red",
-    "type": "Wording vs number",
-    "text": "Jun-26 guide “£75m - £90m” → Sep-26 headline “full year profits in line with expectations” beside “expected to be c.£75m”, the bottom of the range",
-    "span": "Jun-26 → Sep-26"
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "Divisional margin guide: Dec-25 “Headline trading profit margin2 in the UK is expected to be c.14-15%, North America c.7-8%, and c.5% in the Rest of the World.” → Nov-26 “UK flat at around 12%, with a slight improvement in North America and ROW”, no North America or ROW figure",
+    "span": "Divisional margins given Dec-25, Apr-26, Jun-26 → only UK quantified now"
    },
    {
     "sev": "amber",
     "type": "Target dropped",
-    "text": "Mar-25: “the Board aims to return to leverage within the target range of 0.75 -1.25x EBITDA by the end of August 2026”; Sep-24: “our targeted leverage range of 0.75x-1.25x” → Sep-26: “leverage around 2.0x in line with expectations”, target range not mentioned",
-    "span": "Sep-24, Mar-25 → Sep-26"
+    "text": "Dividend: Dec-25 “maintaining our dividend policy of 2.5x cover” → Nov-26 “The Board has not declared an interim or final dividend in respect of the year ended 31 August 2026.” and “We will review capital returns in the medium-term”",
+    "span": "Final dividend proposed at Nov-24 and Dec-25 prelims → none, policy not restated"
    },
    {
     "sev": "amber",
-    "type": "Split withheld",
-    "text": "Divisional margin assumptions: Apr-26 “Headline trading profit margin2 in the UK of c.13%-14%, North America c.7%, and c.4% in the Rest of the World”, Jun-26 North America “Headline trading profit margin of c.5%” → Sep-26 only “lower trading profit margins”, no divisional figures",
-    "span": "Dec-25, Apr-26, Jun-26 → Sep-26"
+    "type": "Pushed out",
+    "text": "Leverage: Dec-25 aim to “reduce our leverage2 position to below 2.0x” → Nov-26 “The Group is targeting leverage around 2.0 times in August 2027”",
+    "span": "Below 2.0x no longer stated; target moved to Aug-27 at around 2.0x"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Market anchor and new target: FY27 guide “to be in line with current market expectations of £75m to £85m” (Dec-25 gave only the Group’s own range) and a new North America goal, “the Group is targeting a trading margin of more than 8% over the medium-term”",
+    "span": "Dec-25 FY26 £100m-£115m own guide → Nov-26 FY27 £75m-£85m vs consensus"
    }
   ]
  }

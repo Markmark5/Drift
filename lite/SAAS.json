@@ -1,8 +1,8 @@
 {
  "ticker": "SAAS",
- "v": "2026-10-20.96ed",
+ "v": "2026-11-12.def1",
  "ccy": "GBX",
- "src": "Yahoo SAAS.L weekly",
+ "src": "Yahoo SAAS.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,18 @@
   [
    "2026-10-20",
    69.2
+  ],
+  [
+   "2026-10-23",
+   68.5
+  ],
+  [
+   "2026-10-30",
+   62.5
+  ],
+  [
+   "2026-11-06",
+   58.5
   ]
  ],
  "marks": [

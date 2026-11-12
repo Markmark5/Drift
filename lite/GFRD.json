@@ -1,8 +1,8 @@
 {
  "ticker": "GFRD",
- "v": "2026-10-20.996b",
+ "v": "2026-11-12.3faa",
  "ccy": "GBX",
- "src": "Yahoo GFRD.L weekly",
+ "src": "Yahoo GFRD.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,18 @@
   [
    "2026-10-20",
    686.0
+  ],
+  [
+   "2026-10-23",
+   667.0
+  ],
+  [
+   "2026-10-30",
+   707.0
+  ],
+  [
+   "2026-11-06",
+   688.0
   ]
  ],
  "marks": [
@@ -1297,38 +1309,29 @@
    "s": 0,
    "q": "The Group has performed in line with expectations since the period end and we are confident in delivering similar revenue growth, and further profitability and margin expansion in the current year as we continue with progress towards our 2030 Sustainable Growth targets.",
    "file": "20260917_GFRD_Final-Results.md"
+  },
+  {
+   "d": "2026-11-12",
+   "doc": "AGM",
+   "fy": "FY27",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Our strong operational performance has continued into the new financial year with trading slightly ahead of Board expectations and encouraging contract wins.",
+   "file": "20261112_GFRD_AGM-Statement.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-17",
-  "doc": "FY R",
-  "file": "20260917_GFRD_Final-Results.md",
-  "vs": "FY R Sep-25 · Jul-26 YE-TU · back to Oct-24",
+  "rns": "2026-11-12",
+  "doc": "AGM",
+  "file": "20261112_GFRD_AGM-Statement.md",
+  "vs": "AGM Nov-25 · FY R Sep-26 · AGMs back to Nov-22",
   "lines": [
    {
-    "sev": "red",
-    "type": "Anchor softened",
-    "text": "Current-year trading: Sep-25 “trading slightly ahead of expectations for 2026” → Sep-26 “The Group has performed in line with expectations since the period end”",
-    "span": "Sep-25 → Sep-26: ahead to in line"
-   },
-   {
-    "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Revenue secured: Sep-25 “92% and 75% of projected FY26 and FY27 revenue secured” → Sep-26 “Good visibility of future revenue with 90% and 62% of the current financial year and FY28 projected revenue secured”; Infrastructure order book £1,688m → £1,690m (+0.1%, was +9.2%)",
-    "span": "Two-year-out cover down 13 points"
-   },
-   {
-    "sev": "amber",
-    "type": "New caution",
-    "text": "Building: revenue “flattened by delays resulting from political uncertainty in the second half of the year”, with “some delayed public sector preferred bidder conversion, which moved some revenue into FY2027”",
-    "span": "Not flagged at Sep-25, Mar-26 or Jul-26"
-   },
-   {
-    "sev": "amber",
-    "type": "New caution",
-    "text": "Infrastructure: “divisional revenues are expected to moderate in FY27 following completion of major highways projects”; Highways order book £617m (Sep-25) → £519m",
-    "span": "First flag; Sep-25 guided flattening for FY26 only"
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Current trading: AGM Nov-25 “we are trading in line with the Board's full year expectations” and FY R Sep-26 “The Group has performed in line with expectations since the period end” → AGM Nov-26 “trading slightly ahead of Board expectations”",
+    "span": "In line at every AGM Nov-22 to Nov-25 → first AGM ‘ahead’"
    }
   ]
  }

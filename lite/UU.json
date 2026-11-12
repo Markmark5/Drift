@@ -1,6 +1,6 @@
 {
  "ticker": "UU.",
- "v": "2026-11-06.09a0",
+ "v": "2026-11-12.fdfb",
  "ccy": "GBX",
  "src": "Yahoo UU.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1052,6 +1052,10 @@
   [
    "2026-10-30",
    1523.0
+  ],
+  [
+   "2026-11-06",
+   1563.0
   ]
  ],
  "marks": [
@@ -1243,31 +1247,47 @@
    "s": 0,
    "q": "Our financial framework and guidance for 2026/27 remain unchanged, and we continue to target regulatory returns of 10-11% in AMP8.",
    "file": "20260925_UU_Trading-update---2026-Cost-Change-Draft-Decision.md"
+  },
+  {
+   "d": "2026-11-12",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -1,
+   "q": "Underlying net finance expense is expected to be higher year-on-year, due to inflation running higher for longer.",
+   "file": "20261112_UU._Half-year-Financial-Report.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-25",
-  "doc": "H1 TU",
-  "file": "20260925_UU_Trading-update---2026-Cost-Change-Draft-Decision.md",
-  "vs": "Cost Change Draft Decision Aug-26 · Prelims Apr-26 · TUs Feb-24, Jul-24, Jan-25 (no Sep-25 TU)",
+  "rns": "2026-11-12",
+  "doc": "H1 R",
+  "file": "20261112_UU._Half-year-Financial-Report.md",
+  "vs": "H1 R Nov-25 · Prelims Apr-26 · TU Sep-26",
   "lines": [
    {
-    "sev": "amber",
-    "type": "Pushed out",
-    "text": "Aug-26: Draft Decision “supports the substantial majority of UUW's first AMP81 submission” → Sep-26: response trimmed to £1,026m from the £1,068m submission, with “£191m1 of strategic infrastructure investment progressing through a gated mechanism”",
-    "span": "Re-opener total still guided at c.£2.5bn"
+    "sev": "red",
+    "type": "New caution",
+    "text": "Finance cost guide reversed: Apr-26 “Underlying net finance expense is expected to be lower year-on-year.” → Nov-26 “Underlying net finance expense is expected to be higher year-on-year, due to inflation running higher for longer.”",
+    "span": "First reversal of this guide line within a year since FY23; Sep-26 TU said guidance “remain unchanged”"
    },
    {
-    "sev": "grey",
+    "sev": "amber",
     "type": "Went quiet",
-    "text": "ODI line dropped from the trading update: Jan-25 “remain on track to deliver net ODI rewards higher than last year's £34.5m” → Sep-26 no ODI comment; the FY27 guide at prelims was “We are forecasting a customer ODI penalty for 2026/27, with year-on-year improvement.”",
-    "span": "ODI given in TUs Feb-24, Jul-24, Jan-25 → absent Sep-26"
+    "text": "EPS guide: H1 Nov-25 “we expect earnings per share in 2025/26 to be around 100 pence” (repeated Mar-26) → H1 Nov-26 gives no EPS figure for 2026/27",
+    "span": "Given Nov-25, Mar-26 → absent Apr-26, Nov-26"
    },
    {
     "sev": "grey",
     "type": "Restated",
-    "text": "Ofwat allowance: Aug-26 “allowances of c.£975 million” → Sep-26 table shows Draft Decision £958m, footnoted “Ofwat's Draft Decision restated for query process outcomes”"
+    "text": "Revenue guide, same £2.7bn–£2.8bn range: Apr-26 “This figure includes pass-through items of c.£110m” → Nov-26 “This figure excludes pass-through items of c.£110m”",
+    "span": "Apr-26 → Nov-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Capex: Apr-26 “Capex in 2026/27 is expected to be around £2 billion.” → Nov-26 “Capex in 2026/27 is expected to be more than £2 billion.”; ODI penalty for 2025/26 now “a £13m penalty, an improvement of £22m on the position reported in April”",
+    "span": "Apr-26 → Nov-26"
    }
   ]
  }

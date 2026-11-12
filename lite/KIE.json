@@ -1,8 +1,8 @@
 {
  "ticker": "KIE",
- "v": "2026-10-20.5ed3",
+ "v": "2026-11-12.e071",
  "ccy": "GBX",
- "src": "Yahoo KIE.L weekly",
+ "src": "Yahoo KIE.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,18 @@
   [
    "2026-10-20",
    302.0
+  ],
+  [
+   "2026-10-23",
+   299.8
+  ],
+  [
+   "2026-10-30",
+   313.4
+  ],
+  [
+   "2026-11-06",
+   307.2
   ]
  ],
  "marks": [
@@ -1289,38 +1301,41 @@
    "s": 1,
    "q": "In particular, we bring good momentum into the new financial year, with recent significant contract and framework awards, strong order book growth and an expanding pipeline. This gives us confidence, looking at FY27, that earnings will be at the top end of the Board’s prior expectations.",
    "file": "20260915_KIE_Results-for-the-year-ended-30-June-2026.md"
+  },
+  {
+   "d": "2026-11-12",
+   "doc": "AGM",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group has made a positive start to FY27, trading in line with expectations for the financial year and the enhanced medium-term financial targets outlined in September 2026.",
+   "file": "20261112_KIE_AGM-Trading-Statement.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-15",
-  "doc": "FY R",
-  "file": "20260915_KIE_Results-for-the-year-ended-30-June-2026.md",
-  "vs": "FY R Sep-25 · back to Sep-24 · YE-TU Jul-26",
+  "rns": "2026-11-12",
+  "doc": "AGM",
+  "file": "20261112_KIE_AGM-Trading-Statement.md",
+  "vs": "AGM Nov-25 · back to Nov-24 · FY R Sep-26",
   "lines": [
    {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "FY27: Sep-26 “This gives us confidence, looking at FY27, that earnings will be at the top end of the Board’s prior expectations.” → Nov-26 “We have made a positive start to FY27, trading in line with our expectations.”, top end not repeated",
+    "span": "Sep-26 → Nov-26"
+   },
+   {
     "sev": "amber",
-    "type": "Target dropped",
-    "text": "Property ROCE: Sep-25 “Increased investment in the Property segment: capital employed now £198m and on track to deliver ROCE target of 15% by FY28” → Sep-26 no ROCE target; “from FY27 there will be no investment in new Property developments”",
-    "span": "ROCE target given Sep-24, Sep-25 → dropped with the strategy change"
+    "type": "Went quiet",
+    "text": "Revenue secured: Nov-24 “c.95% of FY25 Group revenue is now estimated to be secured”, Nov-25 “94% of FY26 Group revenue is now estimated to be secured”, Sep-26 “>95% of expected FY27 revenue and >70% of FY28 revenue secured” → Nov-26 no secured-revenue figure",
+    "span": "Given at AGM updates Nov-24, Nov-25 and at FY R Sep-26 → first gap"
    },
    {
-    "sev": "grey",
-    "type": "Demoted",
-    "text": "Cash headline: Sep-25 highlights “Free cash flow of £155.4m (FY24: £185.9m), representing 125% operating cash conversion” → Sep-26 highlights “Operating free cash flow grew to £206m (FY25: £199m)”; free cash flow (£165.0m) now only in the financial review tables",
-    "span": "Sep-25 → Sep-26"
-   },
-   {
-    "sev": "grey",
-    "type": "Number to words",
-    "text": "Order book cover: Sep-25 “91% of expected FY26 revenue and c.70% of FY27 revenue secured” → Sep-26 “>95% of expected FY27 revenue and >70% of FY28 revenue secured1”, now floors measured against consensus revenue",
-    "span": "Sep-25 → Sep-26"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Next-year view raised and new targets: “This gives us confidence, looking at FY27, that earnings will be at the top end of the Board’s prior expectations.” plus new targets “Revenue: mid-single digit growth”, “average net cash of >£200m, by FY29” and “Adjusted EPS: double-digit growth”",
-    "span": "Jul-26 FY26 “top end of market expectations” → Sep-26 FY27 raised"
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Headline “contract wins support growth visibility” beside “the order book was slightly lower at £11.7bn (June 2026: £11.9bn)”; Nov-25 “The order book currently stands at c.£11.6bn (30 June 2025: £11.0bn)”",
+    "span": "Order book up at Nov-24 and Nov-25 AGMs → first fall since year end"
    }
   ]
  }

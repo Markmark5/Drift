@@ -1,8 +1,8 @@
 {
  "ticker": "PSN",
- "v": "2026-10-21.de33",
+ "v": "2026-11-12.0343",
  "ccy": "GBX",
- "src": "Yahoo PSN.L weekly",
+ "src": "Yahoo PSN.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,18 @@
   [
    "2026-10-21",
    1246.5
+  ],
+  [
+   "2026-10-23",
+   1262.0
+  ],
+  [
+   "2026-10-30",
+   1239.0
+  ],
+  [
+   "2026-11-06",
+   1302.5
   ]
  ],
  "marks": [
@@ -1288,38 +1300,45 @@
    "s": -2,
    "q": "While build cost inflation will create margin pressure in 2027, the management actions already underway, together with our strategy, support our unchanged medium-term ambition to build a larger, more resilient and more cash-generative business that delivers attractive returns and sustainable shareholder value.",
    "file": "20260806_PSN_Half-Year-Results.md"
+  },
+  {
+   "d": "2026-11-12",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "Given the strength of our actions to mitigate the increased cost pressures in the year, and assuming no further material change in market conditions, we remain on track to deliver our 2026 performance in line with market expectations1.",
+   "file": "20261112_PSN_Q3-Trading-Statement.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-01",
-  "doc": "OPS",
-  "file": "20261001_PSN_Admission-to-Trading.md",
-  "vs": "Admission to Trading carries no trading content (no Oct-25 equivalent) · so latest trading disclosure H1 R Aug-26 vs H1 R Aug-25 · FY R Mar-26 · AGM Apr-26",
+  "rns": "2026-11-12",
+  "doc": "Q3 TU",
+  "file": "20261112_PSN_Q3-Trading-Statement.md",
+  "vs": "Q3 TU Nov-25 · back to Nov-24 · H1 R Aug-26, FY R Mar-26",
   "lines": [
    {
-    "sev": "red",
-    "type": "Next-year view dropped",
-    "text": "Aug-25 H1: “we currently expect volume to grow to c.12,000 units in 2026 with operating margin progression similar to 2025 positioning us well for another year of good profit growth” → Aug-26 H1: no 2027 volume or profit view, only “External build cost inflation is expected to create margin pressure into 2027”",
-    "span": "Next-year view at Aug-24 and Aug-25 H1 → first H1 without one; Oct-26 RNS adds nothing"
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "Year-end cash guide: Nov-25 “We continue to anticipate a cash balance of between £0m and £200m at the end of the current financial year.” (Mar-26: “between £100m net debt and £100m net cash”) → Nov-26 “We anticipate year-end net debt/cash in line with previous guidance.”",
+    "span": "Range given Aug-25, Nov-25, Mar-26 → words only Aug-26, Nov-26"
    },
    {
     "sev": "amber",
-    "type": "Went quiet",
-    "text": "FY margin guide: Aug-25 “a housing operating margin of between 14.2% and 14.5%” → Aug-26 no 2026 margin guide, only “As expected, we saw a reduction in the underlying housing operating margin8 to 12.8% (2025: 13.1%)”",
-    "span": "Margin guide at Mar-24, Apr-24, Mar-25, Aug-25 → none at Mar-26, Apr-26, Aug-26"
-   },
-   {
-    "sev": "amber",
-    "type": "Went quiet",
-    "text": "Total forward order book: Aug-25 “Including Partnerships, our total current forward order book2 is up 9% at £1.86bn”, Mar-26 “Total forward sales as at 1 March have increased by 6% to £1.80bn” → Aug-26 private only, “our current private forward order book3 has grown by 5% to £1.31bn”",
-    "span": "Given Aug-25, Mar-26 → absent Aug-26; private growth slowed from 11% to 5%"
+    "type": "Wording vs number",
+    "text": "Headline “Market share gains and planning success support full-year growth” beside average sales outlets 263 (2025: 272, down 3%), land holdings c.81,300 (c.83,800) and total forward sales up 1% (Nov-25: up 15%)",
+    "span": "Nov-25 outlets +4%, forward sales +15% → Nov-26 outlets −3%, forward sales +1%"
    },
    {
     "sev": "grey",
-    "type": "Went quiet",
-    "text": "Outlets: Aug-25 highlight “Number of sales outlets at 30 June” 277 (+4%) → Aug-26 “Average number of sales outlets” 273 (2025: 272), no period-end count",
-    "span": "KPI redefined from period-end to average at Aug-26 H1"
+    "type": "Restated",
+    "text": "Delivery secured: Nov-25 “83% of this year's expected private delivery already exchanged or completed (2024: 85%)” → Nov-26 “77% of this year’s expected open market private delivery already exchanged or completed (2025: 77%)”: metric redefined and the 2025 comparator now 77%, not 83%"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Next-year view: H1-26 gave none for 2027 volumes → Nov-26 “Looking ahead to 2027, we expect to continue growing volumes” with 2027 consensus in the footnote, “full-year 2027 median consensus is 12,792 homes and underlying profit before tax of £460.5m” (Nov-25 footnote FY25 only)"
    }
   ]
  }

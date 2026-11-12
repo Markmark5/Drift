@@ -1,8 +1,8 @@
 {
  "ticker": "ALFA",
- "v": "2026-10-21.b409",
+ "v": "2026-11-12.3043",
  "ccy": "GBX",
- "src": "AlphaVantage ALFA.LON weekly",
+ "src": "AlphaVantage ALFA.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1060,6 +1060,18 @@
   [
    "2026-10-20",
    165.4
+  ],
+  [
+   "2026-10-23",
+   176.2
+  ],
+  [
+   "2026-10-30",
+   169.0
+  ],
+  [
+   "2026-11-06",
+   164.8
   ]
  ],
  "marks": [
@@ -1332,37 +1344,47 @@
    "s": 0,
    "q": "These delays mean that our delivery revenue expectations for the year are slightly reduced, but we expect this to be offset by improved software engineering revenues. Overall, we expect to meet expectations for the year.",
    "file": "20260903_ALFA_2026-Half-Year-Report.md"
+  },
+  {
+   "d": "2026-11-12",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 0,
+   "q": "Full year revenue is now anticipated to be close to expectations and full year profit is anticipated to be slightly ahead, owing to our disciplined cost control.",
+   "file": "20261112_ALFA_Q3-2026-Trading-update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-03",
-  "doc": "H1 R",
-  "file": "20260903_ALFA_2026-Half-Year-Report.md",
-  "vs": "H1 R Sep-25 · back to Sep-22 · H1 TU Jul-26, FY R Mar-26",
+  "rns": "2026-11-12",
+  "doc": "Q3 TU",
+  "file": "20261112_ALFA_Q3-2026-Trading-update.md",
+  "vs": "Q3 TU Nov-25 · back to Nov-24 · H1 R Sep-26, H1 TU Jul-26",
   "lines": [
    {
-    "sev": "amber",
-    "type": "New caution",
-    "text": "Jul-26 TU: “some customer implementation delays on projects”, full year unchanged → now “our delivery revenue expectations for the year are slightly reduced” and “The number of delays seems higher than we have historically seen and so we cannot rule out the possibility that the macro environment has had an impact.”",
-    "span": "First time contracting delays linked to macro; Sep-25 cited only currency and macro uncertainty"
-   },
-   {
-    "sev": "amber",
-    "type": "Went quiet",
-    "text": "Sep-25: “Special dividend of 5.0 pence per share (£14.8m) declared” → now “rather than declaring a special dividend at this time we will retain the cash within the business”",
-    "span": "Special dividend declared at every interim Sep-22, Aug-23, Sep-24, Sep-25 → first gap in 4 years"
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Revenue anchor: Sep-26 “Overall, we expect to meet expectations for the year.” → Nov-26 “Full year revenue is now anticipated to be close to expectations”, with only profit “slightly ahead”",
+    "span": "Sep-26 → Nov-26; Nov-25 held revenue expectations unchanged"
    },
    {
     "sev": "amber",
     "type": "Wording vs number",
-    "text": "Headline “Strong growth in ARR and TCV, demonstrating continued strategic progress” while operating profit fell 15% to £18.4m (H1 25: £21.6m) and gross margin to 60.2% (64.2%); Sep-25 highlighted a 35% operating margin, now profit is led by a new “Operating profit before severance costs and FX hedges” of £20.3m"
+    "text": "Q3 revenue growth: Nov-25 “Revenue of £31.7m for Q3 was up 12% on the third quarter of last year, or 14% at constant currency.” → Nov-26 Q3 revenue of £32.7m “was up 3% on the third quarter of last year”, Delivery “down 4% against Q3 2025”, beside “We remain confident for the full year.”",
+    "span": "Nov-25 → Nov-26"
    },
    {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "FY R Mar-26 gave only “strong Subscription revenue growth” → now “we will continue to achieve mid to high teens CAGR in Subscription revenues for the short-to-medium term”",
-    "span": "Last numeric subscription guide: FY R Mar-25 mid-teens for FY2025"
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Quarter vs expectations and constant currency: Nov-25 “This was in line with our expectations.” and “or 14% at constant currency”; Jul-26 “(5% at constant currency)” → Nov-26 no in-line statement for Q3 revenue and no constant-currency growth",
+    "span": "Constant-currency growth given in Nov-24, Apr-25, Jul-25, Nov-25, Jan-26, Apr-26, Jul-26 TUs → first gap"
+   },
+   {
+    "sev": "grey",
+    "type": "Went quiet",
+    "text": "Delivery count: Nov-24 “We had six customer deliveries in the quarter”, Nov-25 “In Q3 we completed 10 deliveries” → Nov-26 no go-live or delivery count for the quarter, only one upgrade since period end",
+    "span": "Given at Q3 Nov-24, Nov-25 → first gap"
    }
   ]
  }

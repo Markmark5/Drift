@@ -1,6 +1,6 @@
 {
  "ticker": "TBLD",
- "v": "2026-11-11.5bea",
+ "v": "2026-11-12.6b70",
  "ccy": "GBX",
  "src": "AlphaVantage TBLD.LON weekly + ShareScope snapshots",
  "adj": [],
@@ -1251,32 +1251,41 @@
    "s": 2,
    "q": "All considered, the Board remains confident the Company is on track to deliver full year results ahead of expectations.",
    "file": "20260924_TBLD_2026-half-year-results-ahead-of-expectations.md"
+  },
+  {
+   "d": "2026-11-12",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 2,
+   "q": "All things considered, the Board now expects the Company to deliver revenue of $54-56 million and adjusted EBITDA of $7-8 million for 2026, ahead of current market expectations.",
+   "file": "20261112_TBLD_Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-24",
-  "doc": "H1 R",
-  "file": "20260924_TBLD_2026-half-year-results-ahead-of-expectations.md",
-  "vs": "H1 R Sep-25 · AGM Jun-26 · FY R Mar-26",
+  "rns": "2026-11-12",
+  "doc": "YE-TU",
+  "file": "20261112_TBLD_Trading-Update.md",
+  "vs": "H1 R Sep-26 · AGM TU Jun-26 · Pre-close TU Feb-26 (no Nov-25 TU)",
   "lines": [
-   {
-    "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Headline “2026 half year results ahead of expectations” beside Adjusted EBITDA “of $3.2m (H1 2025: $4.2m), that also reflects higher spend on marketing for new launches” and “Gross profit of $9.8m (H1 2025: $10.4m)”",
-    "span": "H1-26 vs H1-25"
-   },
-   {
-    "sev": "amber",
-    "type": "Anchor softened",
-    "text": "Profit level dropped from the outlook: Sep-25 “ahead of expectations at Adj. EBITDA level” and “2025 started with a strong EBITDA performance” → Sep-26 “2026 started with a strong revenue performance”, full year “ahead of expectations” with no level named",
-    "span": "H1 R Sep-25 → H1 R Sep-26"
-   },
    {
     "sev": "grey",
     "type": "Went quiet",
-    "text": "Cash outlook: Sep-25 “it is anticipated to reduce towards the end of the year”, Jun-26 “Cash and cash equivalents are anticipated to reach a trough point in the summer of 2026” → Sep-26 cash reported only, no forward cash view",
-    "span": "Cash outlook given in H1-25, FY-25 and AGM-26"
+    "text": "Cash: Feb-26 “Cash and cash equivalents at the end of December 2025 of over $4 million”, Jun-26 “Cash and cash equivalents of mid-single digit millions at the end of May 2026” → Nov-26 only “Continued focus on cash generation coupled with disciplined investment”, no cash figure",
+    "span": "Cash figure in Feb-26, Jun-26 TUs and Sep-26 H1 → absent Nov-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Wording vs number",
+    "text": "Wishlists: Jun-26 “Kingmakers is now in the #5 Most Wishlisted Games on Steam” → Nov-26 “The positive momentum is also translating into strong performance in terms of wishlists” beside “Kingmakers is now #8 on Steam’s Most Wishlisted Games chart”",
+    "span": "#7 Feb-26 → #5 Jun-26 → #8 Nov-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "First numeric FY26 guide: Sep-26 “on track to deliver full year results ahead of expectations”, no figures → Nov-26 “revenue of $54-56 million and adjusted EBITDA of $7-8 million for 2026, ahead of current market expectations”",
+    "span": "EBITDA level named again after Sep-26 outlook dropped it"
    }
   ]
  }

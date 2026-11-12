@@ -1,8 +1,8 @@
 {
  "ticker": "SCT",
- "v": "2026-10-22.7473",
+ "v": "2026-11-12.ef46",
  "ccy": "GBX",
- "src": "Yahoo SCT.L weekly",
+ "src": "Yahoo SCT.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1048,6 +1048,18 @@
   [
    "2026-10-16",
    1700.0
+  ],
+  [
+   "2026-10-23",
+   1643.0
+  ],
+  [
+   "2026-10-30",
+   1691.0
+  ],
+  [
+   "2026-11-06",
+   1595.0
   ]
  ],
  "marks": [
@@ -1257,31 +1269,35 @@
    "s": 0,
    "q": "Looking ahead, and excluding the contribution from GDT, business momentum remains strong and the Board expects to deliver high single-digit underlying operating profit growth in FY2027, slightly ahead of gross profit growth, following very-strong two-year growth across FY2025 and FY2026.",
    "file": "20261014_SCT_Preliminary-Results.md"
+  },
+  {
+   "d": "2026-11-12",
+   "doc": "Q1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is pleased with the Q1 performance, while recognising it is early in the financial year. Accordingly, the Group’s outlook remains unchanged from that provided in our full year results announcement.",
+   "file": "20261112_SCT_Q1-2027-Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-14",
-  "doc": "FY R",
-  "file": "20261014_SCT_Preliminary-Results.md",
-  "vs": "FY R Oct-25 · YE-TU/GDT Sep-26 · back to FY R Oct-23, Oct-24",
+  "rns": "2026-11-12",
+  "doc": "Q1 TU",
+  "file": "20261112_SCT_Q1-2027-Trading-Update.md",
+  "vs": "Q1 TU Nov-25 · FY R Oct-26 · back to Nov-21",
   "lines": [
    {
-    "sev": "red",
-    "type": "Number to words",
-    "text": "Next-year gross profit: last year “the Board expects to deliver low double-digit gross profit growth and high single-digit underlying operating profit growth in FY2026” → FY27 gross profit only as “slightly ahead of gross profit growth”, no band; the “20 consecutive years of double-digit gross profit growth” line is not repeated",
-    "span": "Double-digit GP growth guided at FY R Oct-23, Oct-24, Oct-25 → first gap in 3 years"
-   },
-   {
-    "sev": "amber",
-    "type": "Went quiet",
-    "text": "Special dividend: Oct-25 “a further special dividend payment of 16.1p per share has been proposed” → none for FY26; excess capital now “returned to shareholders, subject to net debt leverage being within our target range”",
-    "span": "Special paid FY23 12.6p, FY24 20.9p, FY25 16.1p → first gap"
+    "sev": "grey",
+    "type": "New caution",
+    "text": "Nov-25: “The Board is pleased with progress to date, which is consistent with the outlook provided in our full year results announcement.” → now “The Board is pleased with the Q1 performance, while recognising it is early in the financial year.”",
+    "span": "No such caveat in Q1 TUs Nov-21 to Nov-25"
    },
    {
     "sev": "grey",
-    "type": "Split withheld",
-    "text": "GDT: Sep-26 “GDT is expected to deliver c.$240m gross profit at a year-on-year growth rate of c.30%” → results give no GDT figure and FY27 guide is “excluding the contribution from GDT”"
+    "type": "Number to words",
+    "text": "GDT completion timing: Oct-26 “The transaction is expected to close by the end of Q1 CY2027, subject to customary regulatory filings and approvals.” → now “The Group is making good progress towards completing the acquisition of GDT.”",
+    "span": "Acq RNS Sep-26, FY R Oct-26 → Q1 TU Nov-26"
    }
   ]
  }

@@ -1,8 +1,8 @@
 {
  "ticker": "BME",
- "v": "2026-10-21.0d07",
+ "v": "2026-11-12.01d8",
  "ccy": "GBX",
- "src": "AlphaVantage BME.LON weekly",
+ "src": "AlphaVantage BME.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1060,6 +1060,18 @@
   [
    "2026-10-20",
    279.2
+  ],
+  [
+   "2026-10-23",
+   275.2
+  ],
+  [
+   "2026-10-30",
+   272.6
+  ],
+  [
+   "2026-11-06",
+   283.8
   ]
  ],
  "marks": [
@@ -1287,14 +1299,43 @@
    "s": 0,
    "q": "Our B&M UK general merchandise trading margin continued the upward trend we communicated with FY26 results, which together with our ongoing focus on cost mitigation underscore our confidence in rebuilding Group profitability over time.",
    "file": "20260715_BME_Q1-FY27-Trading-Statement.md"
+  },
+  {
+   "d": "2026-11-12",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 1,
+   "q": "Taking into account year-to-date performance and current trading, we expect to deliver FY27 Group adjusted EBITDA (pre-IFRS 16) in a range of £450m - £500m (FY26: £459m) and Group adjusted PBT of £280m - £330m (FY26: £284m).",
+   "file": "20261112_BME_FY27-Interim-Results.md",
+   "gnote": "early signal: first step up in tone"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-02",
-  "doc": "Notice",
-  "file": "20260902_BME_Timing-of-FY27-Interim-Results.md",
-  "vs": "Interim timing notice Oct-24 · back to Nov-22/Sep-23 · prev RNS Aug-26/Jul-26",
-  "lines": []
+  "rns": "2026-11-12",
+  "doc": "H1 R",
+  "file": "20261112_BME_FY27-Interim-Results.md",
+  "vs": "H1 R Nov-25 · FY R Jun-26 · Q1 TU Jul-26",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Pushed out",
+    "text": "UK new stores: Jun-26 “For B&M UK, we expect an organic growth rate of circa 25-35 gross new stores annually” → now “We now expect 15-20 gross new UK stores in FY27, versus the 25-35 gross we previously guided to, reverting to 25-35 gross in FY28.”",
+    "span": "FY R Jun-26 → H1 R Nov-26; H1 had 2 net UK closures"
+   },
+   {
+    "sev": "amber",
+    "type": "Restated",
+    "text": "B&M UK H1 FY26 adjusted EBITDA: Nov-25 “decreased by 29.2% to £170m” → now comparator “(H1 FY26: £165m)”, a £5m cost move “relating to a previous incorrect allocation of certain costs in the prior half year report”; H1 FY27 UK now shown as “increased by +1.5% to £168m”",
+    "span": "H1 R Nov-25 → H1 R Nov-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "FY27 guide re-quantified: Jun-26 “The Group will provide adjusted PBT guidance with FY27 Interim results.” → now “Group adjusted PBT of £280m - £330m (FY26: £284m)” alongside an EBITDA range of £450m-£500m",
+    "span": "No FY27 number at FY R Jun-26 or Q1 TU Jul-26; new PBT metric delivered as promised"
+   }
+  ]
  }
 }

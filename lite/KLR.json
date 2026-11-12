@@ -1,8 +1,8 @@
 {
  "ticker": "KLR",
- "v": "2026-10-21.7322",
+ "v": "2026-11-12.9e5c",
  "ccy": "GBX",
- "src": "Yahoo KLR.L weekly",
+ "src": "Yahoo KLR.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,18 @@
   [
    "2026-10-21",
    3194.0
+  ],
+  [
+   "2026-10-23",
+   3064.0
+  ],
+  [
+   "2026-10-30",
+   3150.0
+  ],
+  [
+   "2026-11-06",
+   2998.0
   ]
  ],
  "marks": [
@@ -1280,26 +1292,54 @@
    "s": 0,
    "q": "We go into H2 with a robust order book that underpins future revenue and we expect to deliver a full year performance in line with the recently upgraded market expectations.",
    "file": "20260804_KLR_Interim-Results-for-the-half-year-ended-30-June-26.md"
+  },
+  {
+   "d": "2026-10-14",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group confirms that current trading remains in line with the Board’s expectations, as announced at the interim results on 4 August 2026.",
+   "file": "20261014_KLR_Capital-Markets-Day.md"
+  },
+  {
+   "d": "2026-11-12",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Keller has continued to trade well through the period, and the Group remains on track to deliver significant year-on-year revenue and profit growth for the full year, in line with market expectations1 that were materially upgraded following the strong performance in H1 2026.",
+   "file": "20261112_KLR_Trading-Statement.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-04",
-  "doc": "H1 R",
-  "file": "20260804_KLR_Interim-Results-for-the-half-year-ended-30-June-26.md",
-  "vs": "H1 R Aug-25 · back to Aug-24 · H1 TU Jul-26",
+  "rns": "2026-11-12",
+  "doc": "Q3 TU",
+  "file": "20261112_KLR_Trading-Statement.md",
+  "vs": "Q3 TU Nov-25 · back to Nov-24 · CMD Oct-26, H1 R Aug-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Went quiet",
-    "text": "ROCE: H1-25 highlight “Underlying ROCE at 26.7% (H1 2024: 28.4%)” → no ROCE figure anywhere in the H1-26 report",
-    "span": "In H1 highlights Aug-24 and Aug-25 → first gap"
+    "type": "New caution",
+    "text": "Nov-25: “Moretrench Industrial has continued to perform strongly” → Nov-26 names offsets for the first time in a TU: “continued weakness in the US residential market, deferred environmental remediation work at Moretrench and weakness in the UK business”",
+    "span": "Moretrench and UK weakness not flagged as headwinds Nov-25 or H1 R Aug-26"
    },
    {
-    "sev": "grey",
-    "type": "Demoted",
-    "text": "Safety KPI: H1-25 highlight “Accident Frequency Rate reduced to 0.04 with five lost time injuries” → now only in the body: “our Accident Frequency Rate (AFR) remained low at 0.05, compared with 0.04 during the same period last year”",
-    "span": "AFR worse year on year"
+    "sev": "amber",
+    "type": "Split withheld",
+    "text": "Divisional review: Nov-24 and Nov-25 each had separate paragraphs (“In North America”, “In the Europe and Middle East Division”, “In the Asia-Pacific Division”) → Nov-26 one combined line, no division-by-division commentary",
+    "span": "Given Nov-24, Nov-25 → first gap"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Order book: Nov-25 “our strong order book, maintained at record levels” (no figure) → Nov-26 “The order book remains at a record level of approximately £2.5 billion.” (H1-26: £1.9bn)"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Consensus footnote: Nov-25 FY only, “Analyst consensus underlying operating profit for 2025: £214m.” → Nov-26 table for 2026, 2027 and 2028 (operating profit 242 / 254 / 267), giving a next-year anchor"
    }
   ]
  }

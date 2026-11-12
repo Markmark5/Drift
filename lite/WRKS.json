@@ -1,8 +1,8 @@
 {
  "ticker": "WRKS",
- "v": "2026-10-21.e6e2",
+ "v": "2026-11-12.6fc3",
  "ccy": "GBX",
- "src": "AlphaVantage WRKS.LON weekly",
+ "src": "AlphaVantage WRKS.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1060,6 +1060,18 @@
   [
    "2026-10-20",
    95.0
+  ],
+  [
+   "2026-10-23",
+   95.0
+  ],
+  [
+   "2026-10-30",
+   100.0
+  ],
+  [
+   "2026-11-06",
+   105.5
   ]
  ],
  "marks": [
@@ -1296,32 +1308,35 @@
    "s": 2,
    "q": "Whilst mindful of continuing macroeconomic uncertainty and that the key Christmas trading period is still to come, reflecting the strong trading in the year to date the Board now expects FY27 pre-IFRS 16 Adjusted EBITDA to be at least £16.0m, ahead of its previous guidance and current market expectations1.",
    "file": "20260907_WRKS_AGM-Trading-Update.md"
+  },
+  {
+   "d": "2026-11-12",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "RAISE",
+   "s": 2,
+   "q": "As a result of the Group’s performance, the Board now expects pre-IFRS 16 Adjusted EBITDA for the current financial year to be ahead of market expectations3 and at least £17.0m.",
+   "file": "20261112_WRKS_Half-Year-Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-07",
-  "doc": "AGM",
-  "file": "20260907_WRKS_AGM-Trading-Update.md",
-  "vs": "AGM Sep-25 · FY R Jul-26 · FY TU May-26 · Mar-26 update",
+  "rns": "2026-11-12",
+  "doc": "H1 TU",
+  "file": "20261112_WRKS_Half-Year-Trading-Update.md",
+  "vs": "H1 TU Nov-25 · AGM Sep-26 · FY R Jul-26",
   "lines": [
    {
     "sev": "grey",
+    "type": "Restated",
+    "text": "H1 FY26 sales: Nov-25 “In H1 FY26 The Works delivered total sales of £123.8m” → now continuing-operations comparator “(H1 FY26: £117.0m)”, online excluded as a discontinued operation",
+    "span": "Online channel closed Mar-26; disclosed in footnote"
+   },
+   {
+    "sev": "grey",
     "type": "Target dropped",
-    "text": "FY30 goal: Jul-26 “on track to achieve our target of at least £22.5m EBITDA by FY30” (also in Mar-26 and May-26) → not mentioned in the AGM update",
-    "span": "Stated Mar-26, May-26, Jul-26 → first omission"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "FY27 guide: Jul-26 “maintaining its recently upgraded FY27 guidance for pre-IFRS 16Adjusted EBITDA of £15.0m” → now “at least £16.0m, ahead of its previous guidance and current market expectations”",
-    "span": "Second FY27 upgrade (Mar-26 £12.7m → £15.0m; Sep-26 → at least £16.0m)"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Year-to-date LFL: AGM Sep-25 “Like for like sales in the year-to-date continue to outperform the wider market”, no figure → AGM Sep-26 “a 10.4% increase in like-for-like sales”",
-    "span": "AGM Sep-25 words only → AGM Sep-26 quantified"
+    "text": "Store openings: Jul-26 “We also plan to open a further net ten new stores” in FY27 → no store-opening progress in this update; Nov-25 H1 TU said “We opened a net two new stores in H1”",
+    "span": "Target given May-26 and Jul-26; not mentioned Sep-26 or Nov-26"
    }
   ]
  }
