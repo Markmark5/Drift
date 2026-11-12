@@ -3438,17 +3438,17 @@
       "company": "Alfa Financial Software",
       "kind": "ticker",
       "direction": "watch",
-      "headline": "Two of three now fired: printed profit fell 15% and the language stays soft — but the order book, ARR and the held guide argue the damage is bounded.",
-      "trigger": "Numbers & guide fired Apr-26 · Sep-26 (context annotated); Language continuing Mar-26 →; Disclosure clean",
-      "alert": true,
+      "headline": "The November raise survives — profit guided \"slightly ahead\" on cost control — but revenue slips to \"close to expectations\" and the quarter fell sequentially.",
+      "trigger": "Numbers & guide green-fired Nov-26 (G RAISE); Language red Mar-26 · Sep-26; opposite directions — no alert",
+      "alert": false,
       "fired": 2,
       "fired_of": 3,
-      "lights": "rr-",
-      "rns_type": "H1 R",
-      "rns_date": "2026-09-03",
-      "build_date": "2026-09-03",
+      "lights": "gr-",
+      "rns_type": "Q3 TU",
+      "rns_date": "2026-11-12",
+      "build_date": "2026-11-12",
       "spec_version": "v5.4",
-      "next_test": "Nov 2026 Q3 TU — the habitual raise slot: a raise restores the pattern, 'in line' is a first-ever break; TCV ≥£240m; no repeat of 'delays'.",
+      "next_test": "Jan 2027 YE-TU — the Q4 outturn against the £36.4m ask, and whether \"close to expectations\" lands as in-line or a miss.",
       "url": "ALFA.html",
       "grid": {
         "labels": [
@@ -3459,7 +3459,6 @@
           "R5"
         ],
         "periods": [
-          "Q2 24",
           "Q3 24",
           "Q4 24",
           "Q1 25",
@@ -3467,14 +3466,15 @@
           "Q3 25",
           "Q4 25",
           "Q1 26",
-          "Q2 26"
+          "Q2 26",
+          "Q3 26"
         ],
         "rows": [
-          "aggargaag",
-          "agggaaara",
-          "araaaagaa",
-          "----a-r-r",
-          "r-g-g-r-r"
+          "ggargaaga",
+          "gggaaarar",
+          "raaaaagaa",
+          "---a-r-r-",
+          "-g-g-r-r-"
         ],
         "note": "Ranks 1-5 at grid grain; R4/R5 half-grain cells render at H-end quarters only"
       },
@@ -3484,7 +3484,7 @@
         "rows": [
           {
             "m": "REV",
-            "gap": -1.2
+            "gap": -1.7
           },
           {
             "m": "EBITDA",
@@ -3498,10 +3498,10 @@
       },
       "prev": {
         "direction": "watch",
-        "fired": 1,
-        "lights": "ar-",
-        "rns_date": "2026-07-30",
-        "rns_type": "H1 TU"
+        "fired": 2,
+        "lights": "rr-",
+        "rns_date": "2026-09-03",
+        "rns_type": "H1 R"
       }
     },
     {
