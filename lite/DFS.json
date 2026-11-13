@@ -1,6 +1,6 @@
 {
  "ticker": "DFS",
- "v": "2026-11-09.a83a",
+ "v": "2026-11-13.2d70",
  "ccy": "GBX",
  "src": "Yahoo DFS.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1265,38 +1265,46 @@
    "s": 0,
    "q": "Near-Term Expectations: While cautious on the broader macroeconomic backdrop and anticipating a subdued market environment, our operational execution and disciplined cost management position us to deliver moderate profit growth in FY27 in line with analyst consensus5.",
    "file": "20260924_DFS_Preliminary-Results.md"
+  },
+  {
+   "d": "2026-11-13",
+   "doc": "AGM",
+   "fy": "FY27",
+   "g": "CUT",
+   "s": -2,
+   "q": "Against a backdrop of fluctuating footfall, fragile consumer confidence, and the early stage of our financial year, full-year profit expectations naturally carry a wider range of potential outcomes.",
+   "file": "20261113_DFS_AGM-Trading-Statement.md",
+   "gnote": "withdrawn"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-24",
-  "doc": "FY R",
-  "file": "20260924_DFS_Preliminary-Results.md",
-  "vs": "FY R Sep-25 · YE-TU Jul-26 · H1 R Mar-26",
+  "rns": "2026-11-13",
+  "doc": "AGM",
+  "file": "20261113_DFS_AGM-Trading-Statement.md",
+  "vs": "AGM Nov-25 · back to Nov-22 · FY R Sep-26",
   "lines": [
    {
-    "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Headline says “meeting upgraded guidance” for uPBT(A) of £44.9m, below the £43-50m range midpoint and below the Mar-26 consensus of “£47.3m” the company had cited",
-    "span": "Jan-26 upgrade → Mar-26 reiterated → Jul-26 c.£45m → Sep-26 £44.9m"
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Sep-26: “moderate profit growth in FY27 in line with analyst consensus” (£48.0m footnote); Nov-25 AGM: “we remain comfortable with the range of consensus profit expectations” → now “full-year profit expectations naturally carry a wider range of potential outcomes”, no consensus footnote",
+    "span": "Profit anchor at Nov-22 and Nov-25 AGMs and every print since Nov-25 → first gap"
    },
    {
     "sev": "amber",
-    "type": "Wording vs number",
-    "text": "New two-year basis added to the headline table, “Order intake growth: Yo2Y1” +9.1%, as YoY order intake turned to (1.0%) with H2 “-4.4% year on year”; Sep-25 table showed YoY only",
-    "span": "FY R Sep-25 vs Sep-26"
+    "type": "Went quiet",
+    "text": "Order intake vs expectations: Nov-24 “order intake remaining in growth over the first 20 weeks of the period, inline with our expectations”; Nov-25 growth “in line with our expectations” → now no figure or expectations check for the latest seven weeks, only “upholstery market demand has softened further”",
+    "span": "Nov-24, Nov-25 AGMs → first gap"
    },
    {
     "sev": "grey",
-    "type": "Restated",
-    "text": "Market share source changed: Sep-25 “Proprietary Lloyds banking data covering 13 specialist upholstery retailers” → Sep-26 “Calendar year 2025 market share per Globaldata (August 2026)”",
-    "span": "FY R Sep-25 vs Sep-26"
+    "type": "Target dropped",
+    "text": "Sep-26 reaffirmed “medium term targets of £1.4bn revenue and 8% PBT margins” → not mentioned now; only “long term value for all shareholders”"
    },
    {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Dividend restored: Sep-25 “the Board has taken the decision not to recommend a FY25 dividend” → Sep-26 “3.0p total FY26 dividend”, with leverage 0.9x inside the 0.5x-1.0x target range",
-    "span": "FY R Sep-25 vs Sep-26"
+    "sev": "grey",
+    "type": "Went quiet",
+    "text": "Gross margin: Nov-25 AGM “driving improvements in gross margin”, Sep-26 58.1% → now only “taking proactive commercial actions to drive cash margins”"
    }
   ]
  }

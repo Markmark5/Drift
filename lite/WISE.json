@@ -1,8 +1,8 @@
 {
  "ticker": "WISE",
- "v": "2026-10-22.5697",
+ "v": "2026-11-13.7a60",
  "ccy": "GBX",
- "src": "AlphaVantage WISE.LON weekly",
+ "src": "AlphaVantage WISE.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,18 @@
   [
    "2026-10-16",
    833.2
+  ],
+  [
+   "2026-10-23",
+   825.4
+  ],
+  [
+   "2026-10-30",
+   820.6
+  ],
+  [
+   "2026-11-06",
+   825.2
   ]
  ],
  "marks": [
@@ -1325,32 +1337,41 @@
    "s": 1,
    "q": "Wise now expects FY27 net revenue growth to be in the upper half (17.5% - 20%) of our 15-20% medium-term target range on a constant currency basis",
    "file": "20261016_WISE_Q2-FY27-Trading-Statement.md"
+  },
+  {
+   "d": "2026-11-13",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Wise expects FY27 net revenue growth to be in the upper half (17.5-20%) of our 15-20% medium-term target range on a constant currency basis",
+   "file": "20261113_WISE_Wise-Group-plc-H1-FY27-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-16",
-  "doc": "H1 TU",
-  "file": "20261016_WISE_Q2-FY27-Trading-Statement.md",
-  "vs": "Q1 TU Jul-26 · FY R Jun-26 · H1 R Nov-25 (no Q2 TU issued Oct-25)",
+  "rns": "2026-11-13",
+  "doc": "H1 R",
+  "file": "20261113_WISE_Wise-Group-plc-H1-FY27-Results.md",
+  "vs": "H1 R Nov-25 · Q2 TU Oct-26 · FY R Jun-26 · Q1 TU Jul-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Jul-26: “around the middle of our 15-20% medium-term target range”, assuming “no material changes in central bank rates” → now “upper half (17.5% - 20%)”, and the guide “includes recent increases to interest rates made by central banks”; cross-border revenue growth slowed to 16% YoY (Q1: 22%)",
-    "span": "Raise partly rate-driven; net revenue growth 21% in Q2 vs 25% in Q1"
+    "type": "Target dropped",
+    "text": "Medium-term profit target: FY R Jun-26 “We are reiterating our medium term targets”, incl. “Income before tax margin of 15-20%, including 20% of interest income above the first 1% yield retained”; H1 Nov-25 “This remains at the top end of our medium-term guidance of 13-16%.” → H1 Nov-26 cites only “around the top of our 20-25% range”, the 15-20% medium-term IBT margin target not restated",
+    "span": "Medium-term margin target stated at H1 Nov-25 and FY Jun-26 → first H1 without it"
    },
    {
     "sev": "amber",
-    "type": "New caution",
-    "text": "FY27 IBT guide held at “around the top of our 20-25% range”, but H1 now “c.23%, including one-off expenses equivalent to c.2ppts” (incl. c.$15m dual-listing costs)",
-    "span": "No one-off costs mentioned in Jun-26 FY guide or Jul-26 Q1 → first flag"
+    "type": "Went quiet",
+    "text": "Wise Platform share of volume: H1 Nov-25 highlight “now representing c.5% of Wise's total cross-border volume” with “We continue to expect this to increase materially, to around 10% in the medium term” → H1 Nov-26 names partners only (“Increased Wise Platform partners with three silent launches including two large banks in North America”), no share figure or progress on the c.10% aim",
+    "span": "Headline figure at H1 Nov-25; also absent from FY R Jun-26"
    },
    {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Net revenue now also given on a constant currency basis (“21% growth YoY on a constant currency basis”) and an H1 IBT margin pre-guide added; Jul-26 Q1 gave constant currency growth for volume only",
-    "span": "Jul-26 → Oct-26"
+    "sev": "grey",
+    "type": "Wording vs number",
+    "text": "Headline “robust profitability” beside “Income before tax increased 9% YoY to $334.9 million, at a 23% margin” while net revenue grew 23%; H1 FY26 IBT $306.7m on $1,183.8m net revenue was c.26% margin (c.23% was pre-guided in Oct-26 incl. c.2ppts one-offs)",
+    "span": "H1 Nov-25 → H1 Nov-26"
    }
   ]
  }
