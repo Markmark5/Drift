@@ -1,22 +1,10 @@
 {
  "ticker": "SMIN",
- "v": "2026-10-20.f0f8",
+ "v": "2026-11-13.4887",
  "ccy": "GBX",
- "src": "Yahoo SMIN.L weekly",
+ "src": "Yahoo SMIN.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-22",
-   1422.5
-  ],
-  [
-   "2021-10-29",
-   1355.5
-  ],
-  [
-   "2021-11-05",
-   1435.0
-  ],
   [
    "2021-11-12",
    1480.0
@@ -1052,18 +1040,21 @@
   [
    "2026-10-20",
    2633.0
+  ],
+  [
+   "2026-10-23",
+   2622.0
+  ],
+  [
+   "2026-10-30",
+   2740.0
+  ],
+  [
+   "2026-11-06",
+   2615.0
   ]
  ],
  "marks": [
-  {
-   "d": "2021-11-11",
-   "doc": "Q1 TU",
-   "fy": "FY22",
-   "g": "flat",
-   "s": 0,
-   "q": "This supports our confidence in meeting our full year expectations of delivering underlying revenue growth for the Group of around 3%.",
-   "file": "20211111_SMIN_Smiths-Group-Q1-Trading-Statement.md"
-  },
   {
    "d": "2022-03-25",
    "doc": "H1 R",
