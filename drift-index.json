@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12",
+  "updated": "2026-11-16",
   "tickers": [
     {
       "ticker": "STAF",
@@ -759,17 +759,17 @@
       "company": "Solid State plc",
       "kind": "ticker",
       "direction": "up",
-      "headline": "FY26 beats consensus on revenue & profit; \"exceed\" FY27 guide issued; all three divisions grow; quality of earnings improving.",
-      "trigger": "2 of 3 green-shoot: Numbers & guide (G RAISE x2 Apr-26/Jun-26; rev + adj PBT growing both halves; margin expanding) + Language (two +2 prints from Nov-24 trough). Disclosure amber: first-day baselines (Power split, ex-NSPA book) technically met, not counted.",
+      "headline": "Third RAISE running: H1 beats the NSPA-loaded comparative, core up ~25%, order book £141.5m (+33%) — Board meeting upgraded FY27 expectations.",
+      "trigger": "2 of 3 green-shoot: Numbers & guide (G RAISE Apr-26, Jun-26, Nov-26 — Nov-26 reconfirms upgraded consensus £156.8m/£8.9m; order book +33% since March) + Language (rose twice from zero: Dec-25 0, Apr-26 +2, Jun-26 +3; Nov-26 ⚪ breaks the run, not the fire). Disclosure amber: consensus-table and margin baselines, not counted. R2/R4 H1 floors ◊ amber pending the 2-Dec H1 R.",
       "alert": true,
       "fired": 2,
       "fired_of": 3,
       "lights": "gga",
-      "rns_type": "FY Results",
-      "rns_date": "2026-06-29",
-      "build_date": "2026-09-21",
-      "spec_version": "v5.5",
-      "next_test": "H1 FY27 TU (Oct/Nov-26) & H1 R (Dec-26): OB >£90m ex-CAIN; margin toward 7%; CAIN follow-on order; guide tone.",
+      "rns_type": "H1 Trading Update",
+      "rns_date": "2026-11-16",
+      "build_date": "2026-11-16",
+      "spec_version": "v5.8",
+      "next_test": "H1 R (2 Dec 2026): adj operating margin vs 6.5%; working-capital swing; whether FY28 £161.5m/£9.9m survives memory-price inflation.",
       "url": "SOLI.html",
       "grid": {
         "labels": [
@@ -780,7 +780,6 @@
           "R5"
         ],
         "periods": [
-          "H2 22",
           "H1 23",
           "H2 23",
           "H1 24",
@@ -788,17 +787,44 @@
           "H1 25",
           "H2 25",
           "H1 26",
-          "H2 26"
+          "H2 26",
+          "H1 27"
         ],
         "rows": [
-          "-garragag",
-          "---rrrrgg",
-          "---a-r-a-",
-          "---rgrrgg",
-          "-rggagrag"
+          "garragagg",
+          "--rrrrgga",
+          "a-a-r-g--",
+          "--rgrrgga",
+          "rggagragg"
         ],
-        "note": "R1 order book & R5 net debt: sequential position scores at own print dates; R2 revenue & R4 adj PBT: banded YoY-rate scores; R3 adj op margin: H1-only cadence. Left cell padded (8-column record)."
-      }
+        "note": "R1 order book & R5 net debt: sequential position scores at own print dates; R2 revenue & R4 adj PBT: banded YoY-rate scores (H1 FY27 = TU floors, ◊ amber); R3 margin: H1-only cadence, band 1.0pp. Strip = newest 9 of a 10-column record."
+      },
+      "prev": {
+        "direction": "up",
+        "fired": 2,
+        "lights": "gga",
+        "rns_date": "2026-06-29",
+        "rns_type": "FY Results"
+      },
+      "trend": {
+        "mode": "share",
+        "cells": "g-g",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": 2.8
+          },
+          {
+            "m": "EBITDA",
+            "gap": null
+          },
+          {
+            "m": "PBT",
+            "gap": 4.9
+          }
+        ]
+      },
+      "chart": "charts/SOLI.json?v=2026-11-16.6e15"
     },
     {
       "ticker": "ALU",
