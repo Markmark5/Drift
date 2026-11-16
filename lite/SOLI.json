@@ -1,6 +1,6 @@
 {
  "ticker": "SOLI",
- "v": "2026-11-11.38b5",
+ "v": "2026-11-16.addc",
  "ccy": "GBX",
  "src": "Yahoo SOLI.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1056,6 +1056,10 @@
   [
    "2026-11-06",
    172.5
+  ],
+  [
+   "2026-11-13",
+   181.5
   ]
  ],
  "marks": [
@@ -1311,26 +1315,46 @@
    "s": 0,
    "q": "This order further underpins our existing guidance for FY26/27 and FY27/28 and gives us increased confidence as we look forward to 2027.",
    "file": "20261111_SOLI_$26.2-million-UK-MoD-Order-for-Project-CAIN.md"
+  },
+  {
+   "d": "2026-11-16",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "While mindful of the continuing geopolitical and macroeconomic uncertainties, the Board remains confident in meeting its expectations for the full year1.",
+   "file": "20261116_SOLI_Trading-Update,-Notice-of-Results-&-Presentations.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-11-11",
-  "doc": "OPS",
-  "file": "20261111_SOLI_$26.2-million-UK-MoD-Order-for-Project-CAIN.md",
-  "vs": "CAIN order Oct-25 · FY R Jun-26 · H1 TUs Oct-22/Oct-23/Nov-24/Nov-25",
+  "rns": "2026-11-16",
+  "doc": "H1 TU",
+  "file": "20261116_SOLI_Trading-Update,-Notice-of-Results-&-Presentations.md",
+  "vs": "H1 TU Nov-25 · prev RNS CAIN order 11 Nov-26 · FY R Jun-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Skipped update",
-    "text": "Usual early-November H1 trading update not issued by 11 Nov; the only current statement is a contract RNS saying “This order further underpins our existing guidance for FY26/27 and FY27/28”, with no trading or order book figures",
-    "span": "H1 TU issued 26 Oct-22, 30 Oct-23, 6 Nov-24, 4 Nov-25 → none yet in 2026"
+    "type": "Anchor softened",
+    "text": "Jun-26 FY R: “we expect to exceed current market expectations for FY26/27” → now “the Board remains confident in meeting its expectations for the full year” (consensus adj PBT FY26/27 £8.1m at Jun-26 → £8.9m now: the upgraded consensus is met, no longer beaten)",
+    "span": "Nov-25 headline was “trading in line with market expectations”; footnote still defines market expectations"
+   },
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "Net debt: Nov-24 TU “in line with net debt** expectations” → now “this may result in full year net debt increasing” (working-capital build in H2; ~£2.0m at 30 Sep 2026)",
+    "span": "First net-debt warning in an H1 TU"
+   },
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "Components: “The division has seen a small number of customer projects delayed or put on hold due to memory price inflation making them commercially unviable” — memory supply/price risk named for the first time",
+    "span": "Not in Nov-25 TU or Jun-26 FY R"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "FY R Jun-26 guided one year only: “we expect to exceed current market expectations for FY26/27” → now FY27/28 named for the first time: “underpins our existing guidance for FY26/27 and FY27/28”",
-    "span": "No FY27/28 reference in FY R Jun-26"
+    "text": "Consensus footnote widened: Nov-25 gave revenue and adjusted PBT only → now adds “Adj Op profit”, “Adj diluted EPS”, net debt and dividend for FY26/27 and FY27/28; open order book now £141.5m “up ~33% from 31 March 2026”"
    }
   ]
  }

@@ -1,8 +1,8 @@
 {
  "ticker": "HERC",
- "v": "2026-10-21.4583",
+ "v": "2026-11-16.da20",
  "ccy": "GBX",
- "src": "AlphaVantage HERC.LON weekly",
+ "src": "AlphaVantage HERC.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -992,6 +992,22 @@
   [
    "2026-10-20",
    34.0
+  ],
+  [
+   "2026-10-23",
+   38.0
+  ],
+  [
+   "2026-10-30",
+   35.5
+  ],
+  [
+   "2026-11-06",
+   34.5
+  ],
+  [
+   "2026-11-13",
+   33.5
   ]
  ],
  "marks": [

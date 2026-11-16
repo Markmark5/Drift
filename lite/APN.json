@@ -1,8 +1,8 @@
 {
  "ticker": "APN",
- "v": "2026-10-21.4b87",
+ "v": "2026-11-16.11d6",
  "ccy": "GBX",
- "src": "Yahoo APN.L weekly",
+ "src": "Yahoo APN.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -424,6 +424,22 @@
   [
    "2026-10-21",
    292.0
+  ],
+  [
+   "2026-10-23",
+   292.5
+  ],
+  [
+   "2026-10-30",
+   297.0
+  ],
+  [
+   "2026-11-06",
+   304.0
+  ],
+  [
+   "2026-11-13",
+   304.0
   ]
  ],
  "marks": [
@@ -516,38 +532,47 @@
    "s": 1,
    "q": "Building on the strong momentum achieved in FY26, the Group now expects total adjusted EBITDA for FY27 to grow year-on-year to approximately £49m (+13% year-on-year) and revenue to increase to approximately £205m, both ahead of current consensus market expectations2.",
    "file": "20260826_APN_FY26-Trading-Update.md"
+  },
+  {
+   "d": "2026-11-16",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Notwithstanding a strong Q1 FY27, given that the financial year is still at an early stage, the Board believes it is prudent to maintain current market expectations for FY27",
+   "file": "20261116_APN_Preliminary-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-26",
-  "doc": "YE-TU",
-  "file": "20260826_APN_FY26-Trading-Update.md",
-  "vs": "YE-TU Aug-25 · TU Jun-26 · back to Apr-25 H1 R",
+  "rns": "2026-11-16",
+  "doc": "FY R",
+  "file": "20261116_APN_Preliminary-Results.md",
+  "vs": "FY R Nov-25 · YE-TU Aug-26 · H1 R Mar-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "New caution",
-    "text": "Apr-25: “the Group does not expect the high whey protein prices to materially impact the Group's gross margin in FY25” → now “FY27 EBITDA margin is expected to decrease slightly from FY26 levels”, citing “significantly higher whey protein costs”",
-    "span": "First margin-down flag in the record"
+    "type": "Pushed out",
+    "text": "Dividend: Nov-25 “does not anticipate declaring a further dividend before FY27” → now “does not anticipate declaring a further dividend before FY28”",
+    "span": "FY27 timing given at Nov-25 and Mar-26 → first push-back"
    },
    {
     "sev": "amber",
-    "type": "Split withheld",
-    "text": "Jun-26: Nutrablend “contributing at least an additional $30m in revenue at high single digit EBITDA margin” in FY27 → FY27 guide given only as “total adjusted EBITDA”, no Nutrablend split; FY26 EBITDA stated ex-Nutrablend but revenue of £160m not",
-    "span": "Jun-26 → Aug-26"
+    "type": "Pushed out",
+    "text": "New distribution facility and head office: Nov-25 “in early FY27 we expect to be able to move into a new global distribution facility and head office” → now “Management expects the facility to be completed and operational during H2 FY27”",
+    "span": "FY R Nov-25 → FY R Nov-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "EBITDA margin %: Nov-25 “EBITDA margin of 29% for FY25 (FY24: 30%)”, Mar-26 “EBITDA margin of 28.9% during H1 FY26” → FY26 margin (c.26.8% implied) not stated; only “FY27 EBITDA margin to decrease slightly from FY26 levels”",
+    "span": "Stated at FY R Nov-25 and H1 R Mar-26 → absent now"
    },
    {
     "sev": "grey",
-    "type": "Anchor softened",
-    "text": "Aug-25: net cash “is also expected to be ahead of market expectations” (£18.5m, consensus £16.6m shown) → Aug-26: net cash £15.9m with no consensus comparison; net cash dropped from the consensus table",
-    "span": "YE-TU Aug-25 → Aug-26"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Aug-25 next-year view was revenue-only and qualitative (“to be ahead of current market expectations”) → now numeric FY27 guide: EBITDA “approximately £49m (+13% year-on-year)” and revenue “approximately £205m”",
-    "span": "First numeric next-year EBITDA guide"
+    "type": "Demoted",
+    "text": "Free cash flow conversion: Nov-25 highlight “Strong free cash flow conversion” of 72.4% → dropped from the highlight bullets now it is 33.5%, left in the KPI table only",
+    "span": "FY R Nov-25 → FY R Nov-26"
    }
   ]
  }

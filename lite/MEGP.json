@@ -1,8 +1,8 @@
 {
  "ticker": "MEGP",
- "v": "2026-10-21.194d",
+ "v": "2026-11-16.4532",
  "ccy": "GBX",
- "src": "Yahoo MEGP.L weekly",
+ "src": "Yahoo MEGP.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,22 @@
   [
    "2026-10-21",
    113.4
+  ],
+  [
+   "2026-10-23",
+   111.6
+  ],
+  [
+   "2026-10-30",
+   112.8
+  ],
+  [
+   "2026-11-06",
+   114.2
+  ],
+  [
+   "2026-11-13",
+   103.0
   ]
  ],
  "marks": [
@@ -1271,38 +1287,41 @@
    "s": 0,
    "q": "While mindful of geopolitical factors which may lead to a softening of trading patterns, ME Group remains on track to meet revised full year expectations and for FY 2026 profit before tax to be in the range of £69 million to £74 million.",
    "file": "20260713_MEGP_2026-Interim-Results.md"
+  },
+  {
+   "d": "2026-11-16",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -2,
+   "q": "The Board expects total revenue for FY 2026 to be not less than approximately £309 million and adjusted profit before tax2 to be not less than approximately £66 million.",
+   "file": "20261116_MEGP_Year-end-Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-13",
-  "doc": "H1 R",
-  "file": "20260713_MEGP_2026-Interim-Results.md",
-  "vs": "H1 R Jul-25 · back to Jul-24 · H1 TU Jun-26, FY R Mar-26",
+  "rns": "2026-11-16",
+  "doc": "YE-TU",
+  "file": "20261116_MEGP_Year-end-Trading-Update.md",
+  "vs": "YE-TU Nov-25 · back to Nov-23 · H1 TU Jun-26, H1 R Jul-26",
   "lines": [
    {
     "sev": "red",
     "type": "Anchor softened",
-    "text": "Last year: “remains on track to deliver FY 2025 profit performance in line with expectations, with another year of record profitability” → this year “revised full year expectations”, FY26 PBT £69m–£74m vs FY25 £78.2m; no record-profit claim",
-    "span": "Record-year claim at H1 R Jul-24 and Jul-25 → dropped after the Jun-26 cut"
-   },
-   {
-    "sev": "amber",
-    "type": "Restated",
-    "text": "H1 R Jul-25 reported “gross cash of £74.9 million and net cash2 of £36.2 million” → now restated: “The net cash balance was £20.1 million lower at £7.5 million (H1 2025: £27.6 million).”",
-    "span": "Follows restated FY24 cash figures in FY R Mar-26 (audit delay)"
+    "text": "Jul-26: “ME Group remains on track to meet revised full year expectations and for FY 2026 profit before tax to be in the range of £69 million to £74 million” → now “adjusted profit before tax2 to be not less than approximately £66 million”, below the range floor, with no reference to expectations or the range; the measure is now adjusted (“Adjusted profit before tax is reported profit before tax minus any impairment adjustments that may arise”)",
+    "span": "Guide set Jun-26, reaffirmed Jul-26 → first adjusted-PBT guide since 2022; no 'expectations' word in the RNS"
    },
    {
     "sev": "amber",
     "type": "Target dropped",
-    "text": "FY R Mar-26: “The Group continues to target the installation of 8,000 next-generation photobooths, cumulatively, by the end of the financial year 2027” → H1 R gives only 818 installed in France in H1, no target",
-    "span": "Next-gen photobooth target in highlights at H1 R Jul-25 (3,200 in 2025) and FY R Feb-25, Mar-26"
+    "text": "Jul-26: “remains on track to install c. 1,300 laundry machines in FY 2026” → now “installed 1,224 net new laundry machines”, the 1,300 target not mentioned",
+    "span": "Target stated Jun-26 and Jul-26"
    },
    {
-    "sev": "amber",
-    "type": "Wording vs number",
-    "text": "“The Group's predictable revenue streams and highly cash-generative business model support our long-term growth strategy” beside “the Group's cash generated from operations reduced by 18.9% to £38.7 million” and net cash £7.5m; interim dividend cut 6.5% to 3.60p",
-    "span": "H1 R Jul-26 vs Jul-25"
+    "sev": "grey",
+    "type": "Went quiet",
+    "text": "Nov-25: “The Group expects to report another year of record profitability” (Nov-24 “another year of record profit and financial performance”, Nov-23 “record financial performance for the year”) → no record claim and no group year-on-year profit change given; FY26 PBT floor £66m vs FY25 guide £76m–£79m",
+    "span": "Record claim in 3 straight YE-TUs → first gap"
    }
   ]
  }

@@ -1,8 +1,8 @@
 {
  "ticker": "GFTU",
- "v": "2026-10-21.86ec",
+ "v": "2026-11-16.61db",
  "ccy": "GBX",
- "src": "AlphaVantage GFTU.LON weekly",
+ "src": "AlphaVantage GFTU.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1060,6 +1060,22 @@
   [
    "2026-10-20",
    981.6
+  ],
+  [
+   "2026-10-23",
+   990.6
+  ],
+  [
+   "2026-10-30",
+   990.0
+  ],
+  [
+   "2026-11-06",
+   1049.6
+  ],
+  [
+   "2026-11-13",
+   1034.2
   ]
  ],
  "marks": [
@@ -1334,38 +1350,41 @@
    "s": 0,
    "q": "The Group remains on track to deliver full year adjusted operating profit of £190m - £200m recognising that the important Autumn trading season is still to come.",
    "file": "20260903_GFTU_Half-Year-Report.md"
+  },
+  {
+   "d": "2026-11-16",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group remains on track to deliver full‑year adjusted operating profit1 of £190m - £200m2.",
+   "file": "20261116_GFTU_Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-03",
-  "doc": "H1 R",
-  "file": "20260903_GFTU_Half-Year-Report.md",
-  "vs": "H1 R Sep-25 · TU Jul-26 · back to H1 R Aug-24",
+  "rns": "2026-11-16",
+  "doc": "Q3 TU",
+  "file": "20261116_GFTU_Trading-Update.md",
+  "vs": "Q3 TU Nov-25 · prev RNS H1 R Sep-26 · Jul-26 H1 TU",
   "lines": [
    {
     "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Cash conversion: H1-26 cites “strong cash conversion” while “Free cash flow of £70.7m (H1 2025: £78.0m) was generated in the period which represents a 72% conversion to cash of adjusted operating profit (H1 2025: 86%).” Net cash fell to £78.3m (H1-25: £245.8m) after acquisitions",
-    "span": "FCF conversion 86% (H1 Sep-25) → 72% (H1 Sep-26)"
+    "type": "New caution",
+    "text": "Energy costs flagged for the first time: “While energy costs have increased in recent months, the Group continues to take mitigating actions” — also “higher energy costs have weighed on demand” in Finland",
+    "span": "Not in Sep-26 H1 R, Jul-26 TU or Nov-25 TU"
    },
    {
     "sev": "grey",
     "type": "Split withheld",
-    "text": "Retail (Woodie's) segment no longer reported: H1-25 “Average daily like-for-like sales were up 7.6 per cent in the first half in comparison to prior year.” with Retail profit £19.2m and 13.9% margin → H1-26 only “modest growth in Woodie's against strong prior-year comparatives” inside the Island of Ireland segment; Manufacturing and Finland splits likewise folded into GB and Northern Europe",
-    "span": "Retail/Manufacturing segments given at H1 Aug-24, H1 Sep-25 → dropped with the geographic resegmentation (FY Mar-26)"
+    "text": "Nov-25 table gave Finland “(6.4%)”, Netherlands “+0.7%” and Retailing “+3.9%” separately → now one Northern Europe line “+1.4%”, Finland and Netherlands only “modest growth in both Finland and the Netherlands”; Woodie's folded into Island of Ireland",
+    "span": "Disclosed resegmentation into four geographies (since May-26)"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "FY guide re-quantified: H1-25 “We expect to deliver full year adjusted operating profit broadly in line with analysts' expectations”, no number → H1-26 “Full year adjusted operating profit guidance of £190m - £200m maintained” (consensus c.£194.2m)",
-    "span": "Range first given May-26, reaffirmed Jul-26 and Sep-26"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "New 2030 targets in the interim: adjusted EPS “compound annual growth rate exceeding 10%” over 2025-2030, plus cumulative FCF above £850m over 2026-2030 and ROCE of about 13%",
-    "span": "Not in H1 Sep-25; set at the June 2026 Capital Markets Event"
+    "text": "Q3 guide re-quantified: Nov-25 “in line with expectations3” → now “£190m - £200m2” with consensus footnote “circa £194.1m”",
+    "span": "Numeric range held since May-26 AGM"
    }
   ]
  }

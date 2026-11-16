@@ -1,8 +1,8 @@
 {
  "ticker": "TRD",
- "v": "2026-10-21.f85d",
+ "v": "2026-11-16.9667",
  "ccy": "GBX",
- "src": "Yahoo TRD.L weekly",
+ "src": "Yahoo TRD.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,22 @@
   [
    "2026-10-21",
    390.0
+  ],
+  [
+   "2026-10-23",
+   385.0
+  ],
+  [
+   "2026-10-30",
+   385.0
+  ],
+  [
+   "2026-11-06",
+   390.0
+  ],
+  [
+   "2026-11-13",
+   390.0
   ]
  ],
  "marks": [
@@ -1146,38 +1162,41 @@
    "q": "Secured work is at levels higher than previous years, and we continue to be enthusiastic about our prospects to win more work in our core and emerging markets.",
    "file": "20260622_TRD_Final-Results.md",
    "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2026-11-16",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Although the first half included periods of procurement delay and political uncertainty, the quality of our delivery, the strength of our client relationships, our growing pipeline and continued investment in innovation leave the Board optimistic about the Company's prospects.",
+   "file": "20261116_TRD_Half-year-Financial-Report.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-06-22",
-  "doc": "FY R",
-  "file": "20260622_TRD_Final-Results.md",
-  "vs": "FY R Jun-25 · H1 R Nov-25",
+  "rns": "2026-11-16",
+  "doc": "H1 R",
+  "file": "20261116_TRD_Half-year-Financial-Report.md",
+  "vs": "H1 R Nov-25 · FY R Jun-26 · back to H1 R Nov-24, FY R Jun-25",
   "lines": [
    {
     "sev": "amber",
-    "type": "Wording vs number",
-    "text": "“The Company delivered a very strong financial performance” beside gross margin 28.6% → 27.1% (H1 already 26.0%), profit after tax flat at £1.7m and basic EPS 9.93p → 9.92p",
-    "span": "FY R Jun-25 → FY R Jun-26"
-   },
-   {
-    "sev": "grey",
     "type": "Went quiet",
-    "text": "Period-end total headcount: “Headcount increased from 136 at the end of last year to 167 at the end of the period” (Jun-25), “Headcount rose to 181 staff” (Nov-25) → now only averages and consultants (170), no period-end total",
-    "span": "Given Jun-25, Nov-25 → gap at Jun-26"
+    "text": "Headcount: H1 last year “Headcount rose to 181 staff, reflecting strong customer demand.” → this half no headcount figure, replaced by “nearly 19,000 consultant days across 19 clients”",
+    "span": "Headcount given at H1 Nov-24 (133), FY Jun-25 (167), H1 Nov-25 (181), FY Jun-26 (avg 157) → first gap"
+   },
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "First flag of idle capacity: “These delays affected the timing of some project starts and led to a temporary increase in consultant bench levels.” (DESNZ and parts of FCDO named)",
+    "span": "Not in H1 Nov-25 or FY Jun-26, which stressed headcount growth to meet demand"
    },
    {
     "sev": "grey",
-    "type": "New caution",
-    "text": "Economy risk adds “the impact of the Middle East crisis” to the tariff wording of Jun-25, and going concern now cites “the impact of Governmental instability”",
-    "span": "First flagged Jun-26"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Forward order cover named for the first time: “Secured work is at levels higher than previous years” (Jun-25 said only “We have good visibility of future work for existing clients”)",
-    "span": "New at Jun-26"
+    "type": "Wording vs number",
+    "text": "“First-half trading has been encouraging” beside “Revenue increased to £12.41m (2025: £12.01m)”, about +3%, after last H1 “driving a revenue surge of nearly 16% compared to last year”; operating cash inflow £764k vs £1,137k",
+    "span": "H1 Nov-25 → H1 Nov-26"
    }
   ]
  }
