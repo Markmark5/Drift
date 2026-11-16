@@ -1,22 +1,10 @@
 {
  "ticker": "SYS",
- "v": "2026-10-20.dbd0",
+ "v": "2026-11-16.5250",
  "ccy": "GBX",
- "src": "Yahoo SYS.L weekly",
+ "src": "Yahoo SYS.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-22",
-   35.0
-  ],
-  [
-   "2021-10-29",
-   29.0
-  ],
-  [
-   "2021-11-05",
-   30.0
-  ],
   [
    "2021-11-12",
    30.5
@@ -1052,18 +1040,25 @@
   [
    "2026-10-20",
    36.055
+  ],
+  [
+   "2026-10-23",
+   36.5
+  ],
+  [
+   "2026-10-30",
+   35.5
+  ],
+  [
+   "2026-11-06",
+   35.5
+  ],
+  [
+   "2026-11-13",
+   35.0
   ]
  ],
  "marks": [
-  {
-   "d": "2021-10-29",
-   "doc": "H1 TU",
-   "fy": "FY22",
-   "g": "flat",
-   "s": 0,
-   "q": "The Board remains confident that adjusted EBITDA for the current financial year will be in line with its expectations.",
-   "file": "20211029_SYS_Trading-Update-and-Notice-of-Results.md"
-  },
   {
    "d": "2021-11-22",
    "doc": "H1 R",

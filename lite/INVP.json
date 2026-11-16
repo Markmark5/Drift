@@ -1,22 +1,10 @@
 {
  "ticker": "INVP",
- "v": "2026-10-20.6843",
+ "v": "2026-11-16.e7dd",
  "ccy": "GBX",
- "src": "Yahoo INVP.L weekly",
+ "src": "Yahoo INVP.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-22",
-   304.7648
-  ],
-  [
-   "2021-10-29",
-   311.0457
-  ],
-  [
-   "2021-11-05",
-   309.5458
-  ],
   [
    "2021-11-12",
    327.4511
@@ -1052,18 +1040,25 @@
   [
    "2026-10-20",
    596.0
+  ],
+  [
+   "2026-10-23",
+   592.0
+  ],
+  [
+   "2026-10-30",
+   617.5
+  ],
+  [
+   "2026-11-06",
+   615.0
+  ],
+  [
+   "2026-11-13",
+   643.5
   ]
  ],
  "marks": [
-  {
-   "d": "2021-11-08",
-   "doc": "H1 TU",
-   "fy": "FY22",
-   "g": "RAISE",
-   "s": 2,
-   "q": "We are pleased to advise that the guidance has been updated as follows:",
-   "file": "20211108_INVP_Update-on-pre-close-trading-statement.md"
-  },
   {
    "d": "2021-11-18",
    "doc": "H1 R",
