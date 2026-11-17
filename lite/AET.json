@@ -1,8 +1,8 @@
 {
  "ticker": "AET",
- "v": "2026-10-20.b408",
+ "v": "2026-11-17.8a78",
  "ccy": "GBX",
- "src": "Yahoo AET.L weekly",
+ "src": "Yahoo AET.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,22 @@
   [
    "2026-10-20",
    73.9
+  ],
+  [
+   "2026-10-23",
+   70.1
+  ],
+  [
+   "2026-10-30",
+   71.7
+  ],
+  [
+   "2026-11-06",
+   63.5
+  ],
+  [
+   "2026-11-13",
+   63.2
   ]
  ],
  "marks": [
@@ -1217,37 +1233,47 @@
    "s": -1,
    "q": "First oil from Pacassa SW is now expected in Q1 2027 following connection to the existing Pacassa production infrastructure.",
    "file": "20261012_AET_Operational-Update.md"
+  },
+  {
+   "d": "2026-11-17",
+   "doc": "Q3 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -1,
+   "q": "The revised sequence allows Impala-2 to progress while final preparations and equipment mobilisation for the Pacassa SW sidetrack are completed. First oil from Pacassa SW is expected at the end of Q1 2027 following connection to the existing Pacassa production infrastructure.",
+   "file": "20261117_AET_Operational-and-Financial-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-12",
-  "doc": "OPS",
-  "file": "20261012_AET_Operational-Update.md",
-  "vs": "OPS Aug-26 · H1 R Sep-26 · H1 TU Jul-26 · Q1 TU Apr-26",
+  "rns": "2026-11-17",
+  "doc": "Q3 TU",
+  "file": "20261117_AET_Operational-and-Financial-Update.md",
+  "vs": "Q3 TU Nov-25 · OPS Oct-26 · H1 R Sep-26 · TUs Feb/Apr/Jul-26",
   "lines": [
    {
-    "sev": "red",
+    "sev": "amber",
     "type": "Pushed out",
-    "text": "Pacassa SW first oil: Aug-26 “first oil from the well will be delivered in Q3 2026” → Oct-26 “First oil from Pacassa SW is now expected in Q1 2027”, after a sidetrack",
-    "span": "Q3 2026 at Aug-26 → no date at Sep-26 H1 R → Q1 2027"
+    "text": "Oct-26: “First oil from Pacassa SW is now expected in Q1 2027” and “Commencement of the Block 3/05 hydraulic workover programme planned for early 2027” → now “First oil from Pacassa SW is expected at the end of Q1 2027” and “Commencement of the Block 3/05 hydraulic workover programme planned for H1 2027”",
+    "span": "Pacassa SW first oil was Q3 2026 in Aug-26; workovers were late 2026/27 in Jul-26"
    },
    {
     "sev": "amber",
     "type": "Target dropped",
-    "text": "Funding: Apr-26 and Jul-26 the Sonangol-financed two-well programme was “not expected to impact the Company's 2026 cash capex” → Oct-26 “The joint venture partners have elected to fund Impala-2 directly rather than utilise the previously agreed carry mechanism”, cost cap cut to $60m gross; the 2026 cash capex line is not repeated",
-    "span": "Carry stated Apr-26, Jul-26, Sep-26"
+    "text": "Water injection: “targeting rates of ~100,000 bwpd in H2 2026” (Apr-26, Jul-26) → now “work continues to increase sustained rates towards ~100,000 bwpd”, no date; recent sustained rate ~65,000 bwpd",
+    "span": "H2 2026 date given Apr, Jul, Sep-26 → dropped with two months of H2 left"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Net production 6,368 bopd Jan–Oct 25 → 5,869 bopd Jan–Oct 26, beside “The multi-year redevelopment plan remains on track, underpinning increased reserves recovery and production growth.”",
+    "span": "Q3 TU Nov-25 vs Nov-26; drilling-related downtime named again"
    },
    {
     "sev": "grey",
     "type": "Went quiet",
-    "text": "Pacassa SW rate: Aug-26 headline “reservoir quality supports pre-drill estimate of 5000 bopd (gross)” → Oct-26 gives a rate only for Impala-2 (~4,000 bopd), none for Pacassa SW",
-    "span": "Aug-26 headline figure"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Dates back after Sep-26 gave none: Impala-2 “first oil expected in January 2027 at an initial gross production rate of approximately 4,000 bopd”; a trading update is now set for November 2026"
+    "text": "Opex and uptime: “Opex continues to track $23/bbl” (Nov-25), “approximately $23/bbl” (Sep-26) and “Asset uptime remained stable throughout the period” (Feb, Apr, Jul-26) → neither in Nov-26; no capex figure either (Feb-26 gave 2026 ~$163m gross)",
+    "span": "Opex/bbl in Jul-25, Nov-25, Sep-26; uptime in every TU since Jul-25 → first gap"
    }
   ]
  }

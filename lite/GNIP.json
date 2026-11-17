@@ -1,8 +1,8 @@
 {
  "ticker": "GNIP",
- "v": "2026-10-21.9bcd",
+ "v": "2026-11-17.074d",
  "ccy": "GBX",
- "src": "Yahoo GNIP.L weekly",
+ "src": "Yahoo GNIP.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -436,6 +436,22 @@
   [
    "2026-10-21",
    2.65
+  ],
+  [
+   "2026-10-23",
+   2.65
+  ],
+  [
+   "2026-10-30",
+   2.65
+  ],
+  [
+   "2026-11-06",
+   2.5
+  ],
+  [
+   "2026-11-13",
+   2.25
   ]
  ],
  "marks": [
@@ -520,32 +536,46 @@
    "s": 0,
    "q": "By internalising our technology stack and reducing third-party dependencies, we expect to improve product margins while gaining greater control over our development roadmap.",
    "file": "20260909_GNIP_Operational-update-&-investor-webinar.md"
+  },
+  {
+   "d": "2026-11-17",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board therefore remains confident the business will continue to trade in-line with management expectations for the remainder of 2026 and reduce cash burn by approximately 40% in 2027, as the businesses transitions onto a stronger foundation with significant levels of recurring revenue.",
+   "file": "20261117_GNIP_Commercial-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-09",
+  "rns": "2026-11-17",
   "doc": "OPS",
-  "file": "20260909_GNIP_Operational-update-&-investor-webinar.md",
-  "vs": "H1 R Aug-26 · Corporate Update Jun-26 · Ops Update Dec-25 · Commercial Update Sep-25",
+  "file": "20261117_GNIP_Commercial-Update.md",
+  "vs": "Trading Statement Nov-25 · Operational update Sep-26 · H1 R Aug-26 · Corporate Update Jun-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Target dropped",
-    "text": "SaaS platform: Jun-26 “remains on track for Q4 2026, targeting 60%+ gross margins and 90-95% automation by early 2027” → Sep-26 platform update gives no launch date and no margin or automation target, only “we expect to improve product margins”",
-    "span": "SaaS goal in Nov-25 and Jun-26 → not in Aug-26 H1 or Sep-26"
+    "type": "Went quiet",
+    "text": "Nov-25 update: “The Company has achieved revenues of $408K for the 10 months to 31 October, up from $126k in H1 2025.” and “Gross margin improved to 27%, compared to 18% in H1 2025.” → Nov-26 gives no revenue or gross margin figure, only “trade in-line with management expectations”",
+    "span": "Nov-25 TU → Nov-26; last numbers were H1-26 revenue $53k, gross margin 6%"
    },
    {
     "sev": "amber",
     "type": "Number to words",
-    "text": "Margin benefit of ending the Phosphorix agreement given only in words: “Improved margins - the Company will retain the full product margin previously shared under the Phosphorix agreement.” No fee saving quantified, against H1 “Gross margin of 6% (H1 FY25: 18%).”",
-    "span": "Aug-26 → Sep-26"
+    "text": "Gross margin target: Jun-26 “targeting 60%+ gross margins and 90-95% automation by early 2027” → now “demonstrate improved delivery margins”, no number",
+    "span": ">60% target given Sep-25 H1, Jun-26"
    },
    {
-    "sev": "amber",
-    "type": "Wording vs number",
-    "text": "“we are well positioned to scale our AI-enabled solutions more efficiently” with no cash figure, after H1 “Cash at period end of $410k.” beside “Adjusted EBITDA loss of $692k (H1 FY25: $561k).”",
-    "span": "Aug-26 → Sep-26"
+    "sev": "green",
+    "type": "Back / new",
+    "text": "New 2027 guide: “reduce cash burn by approximately 40% in 2027”, beside the company's first expectations anchor (“in-line with management expectations for the remainder of 2026”)",
+    "span": "No cash-burn or expectations guide in any earlier RNS"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "New pipeline figures: “a sales pipeline of approximately US$1.0 million*” and pilot accounts worth “around US$170,000 in aggregate*”, footnoted “Potential value is not contracted ARR or a revenue forecast.”"
    }
   ]
  }
