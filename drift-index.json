@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "tickers": [
     {
       "ticker": "STAF",
@@ -2945,17 +2945,17 @@
       "company": "Somero Enterprises",
       "kind": "ticker",
       "direction": "up",
-      "headline": "Guide raised again — FY26 to ~$95m — as H1 revenue grows 22% with every next-test criterion met; the raised guide still implies a shrinking H2.",
-      "trigger": "G RAISE ×2 (Jul-26, Sep-26) + Text +3 on consecutive prints; Drift unlit",
+      "headline": "Third guide raise in four months — FY26 to ~$100m / $20.5m — in the record's first unscheduled upgrade; a capital-deployment review is announced.",
+      "trigger": "G RAISE ×3 (Jul-26 →) + Text +3 three consecutive prints; Drift unlit",
       "alert": true,
       "fired": 2,
       "fired_of": 3,
       "lights": "gg-",
-      "rns_type": "Interim Results",
-      "rns_date": "2026-09-08",
-      "build_date": "2026-09-08",
-      "spec_version": "5.4",
-      "next_test": "YE-TU ~Jan 2027 — FY26 revenue ≥ $95m guide; H2 26 vs H2 25 $49.1m",
+      "rns_type": "Trading Update",
+      "rns_date": "2026-11-17",
+      "build_date": "2026-11-17",
+      "spec_version": "5.8",
+      "next_test": "YE-TU ~Jan 2027 — FY26 revenue ≥ ~$100m (H2 ≥ $51.3m); capital-deployment update due; standstill expires 31 Jan",
       "url": "SOM.html",
       "grid": {
         "labels": [
@@ -2966,7 +2966,6 @@
           "R5"
         ],
         "periods": [
-          "H1 22",
           "H2 22",
           "H1 23",
           "H2 23",
@@ -2974,16 +2973,17 @@
           "H2 24",
           "H1 25",
           "H2 25",
-          "H1 26"
+          "H1 26",
+          "H2 26"
         ],
         "rows": [
-          "grrggrrrg",
-          "ggrrgrrgg",
-          "aaaaraaaa",
-          "rggrrgrrg",
-          "--arrrrgg"
+          "rrggrrrg-",
+          "grrgrrgg-",
+          "aaaraaaa-",
+          "ggrrgrrg-",
+          "-arrrrgg-"
         ],
-        "note": "Ranks 1–5 turn emoji per H1/H2† sub-period; H1 26 = Buy/Sell interims (actuals)"
+        "note": "Ranks 1–5 turn emoji per H1/H2† sub-period; H2 26 = Buy/Sell TU (no per-metric content)"
       },
       "trend": {
         "mode": "share",
@@ -2991,11 +2991,11 @@
         "rows": [
           {
             "m": "REV",
-            "gap": 6.8
+            "gap": 4.3
           },
           {
             "m": "EBITDA",
-            "gap": 12
+            "gap": 8.9
           },
           {
             "m": "PBT",
@@ -3007,9 +3007,10 @@
         "direction": "up",
         "fired": 2,
         "lights": "gg-",
-        "rns_date": "2026-07-16",
-        "rns_type": "Trading Update"
-      }
+        "rns_date": "2026-09-08",
+        "rns_type": "Interim Results"
+      },
+      "chart": "charts/SOM.json?v=2026-11-17.2801"
     },
     {
       "ticker": "GFRD",
