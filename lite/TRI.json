@@ -1,6 +1,6 @@
 {
  "ticker": "TRI",
- "v": "2026-11-10.ab5b",
+ "v": "2026-11-17.3d48",
  "ccy": "GBX",
  "src": "AlphaVantage TRI.LON weekly + ShareScope snapshots",
  "adj": [],
@@ -1060,6 +1060,10 @@
   [
    "2026-11-06",
    83.4
+  ],
+  [
+   "2026-11-13",
+   87.0
   ]
  ],
  "marks": [
@@ -1324,37 +1328,46 @@
    "q": "The Board remains confident in delivering further margin improvement in H2 FY27, targeting double-digit EBIT margins in the period, ahead of our stated timeframe.",
    "file": "20261020_TRI_Trading-Update.md",
    "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2026-11-17",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "CUT",
+   "s": -3,
+   "q": "As a result of these factors, the Board has revised its outlook for the year and now expects FY27 revenue of between £200.0m and £205.0m, and underlying EBIT of between £14.0m and £14.5m*.",
+   "file": "20261117_TRI_Half-year-Financial-Report.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-20",
-  "doc": "H1 TU",
-  "file": "20261020_TRI_Trading-Update.md",
-  "vs": "H1 TU Oct-25 · AGM Sep-26 · back to Oct-23, Oct-24",
+  "rns": "2026-11-17",
+  "doc": "H1 R",
+  "file": "20261117_TRI_Half-year-Financial-Report.md",
+  "vs": "H1 R Nov-25 · H1 TU Oct-26 · FY R Jul-26",
   "lines": [
    {
-    "sev": "amber",
-    "type": "Went quiet",
-    "text": "Net debt: Oct-25 “Pre-IFRS 16 net debt increased modestly to £17.4m at 30 September 2025” (Oct-24 £15.8m, Oct-23 c.£28m) → Oct-26 no net debt figure, only “leverage remains below 1x”",
-    "span": "Given at Oct-23, Oct-24, Oct-25 → first gap in 3 years"
+    "sev": "red",
+    "type": "Target dropped",
+    "text": "Oct-26 “targeting double-digit EBIT margins in the period, ahead of our stated timeframe” for H2 FY27 → Nov-26 not mentioned, only “our medium-term underlying EBIT margin ambition of greater than 10%”; new EBIT guide of £14.0–14.5m implies H2 EBIT of c.£6.5–7.0m",
+    "span": "Oct-26 → Nov-26, four weeks"
    },
    {
     "sev": "amber",
-    "type": "Restated",
-    "text": "H1 FY26 EBIT margin: Oct-25 reported 6.3% (CER) → Oct-26 base “restated from 6.3% following the reclassification of Project Ignite from capital expenditure to separately disclosed items” to 6.6%, against which the 7.4% is “improved further by approximately 80 basis points”",
-    "span": "Gross margin 28.7%, flat on H1 FY26 after +144bps a year earlier"
+    "type": "Pushed out",
+    "text": "Top-line growth: Jul-26 “a particular focus this year of adding a return to profitable top-line growth” → Nov-26 “supports its expectation of a return to organic growth in FY28”",
+    "span": "FY27 → FY28"
+   },
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "Weakness spreads beyond auto: “which are now also impacting broader demand from a number of our non-automotive customers in North America”, plus household appliances hit “due to low-cost Chinese competition”",
+    "span": "First flagged Nov-26"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Margin target pulled forward: Oct-25 “achieving an underlying EBIT margin of greater than 10%” in the medium term → Oct-26 “targeting double-digit EBIT margins in the period, ahead of our stated timeframe” for H2 FY27"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Anchor firmed: Oct-25 “in line with the Board's expectations” → Oct-26 “Trading in the current financial year to date is in line with market expectations” with a consensus footnote (EBIT £18.2m)",
-    "span": "Consensus EBIT £18.6m at Sep-26 AGM → £18.2m Oct-26"
+    "text": "Net debt back after Oct-26 gave only “leverage remains below 1x”: “adjusted net debt reduced to £15.8m” (Nov-25 £17.4m)"
    }
   ]
  }

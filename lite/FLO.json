@@ -1,8 +1,8 @@
 {
  "ticker": "FLO",
- "v": "2026-10-20.b00f",
+ "v": "2026-11-17.0c26",
  "ccy": "GBX",
- "src": "Yahoo FLO.L weekly",
+ "src": "Yahoo FLO.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,22 @@
   [
    "2026-10-20",
    64.0
+  ],
+  [
+   "2026-10-23",
+   65.0
+  ],
+  [
+   "2026-10-30",
+   62.6
+  ],
+  [
+   "2026-11-06",
+   62.0
+  ],
+  [
+   "2026-11-13",
+   57.0
   ]
  ],
  "marks": [
@@ -1238,32 +1254,46 @@
    "s": 0,
    "q": "Despite the challenging macroeconomic environment, the Board remains confident in the Group's outlook for H2 2026 with a similar H2 EBITDA weighting to the prior year together with a significant reduction in net debt.",
    "file": "20260908_FLO_2026-Half-Year-Report.md"
+  },
+  {
+   "d": "2026-11-17",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -3,
+   "q": "The Group therefore now expects adjusted EBITDA for the year ending 31 December 2026 to be c.£8.5m. With lower EBITDA and higher working capital from revenue growth, H2 cash inflow will be lower than previously expected.",
+   "file": "20261117_FLO_Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-08",
-  "doc": "H1 R",
-  "file": "20260908_FLO_2026-Half-Year-Report.md",
-  "vs": "H1 R Sep-25 · H1 TU Jul-26 · FY R Mar-26",
+  "rns": "2026-11-17",
+  "doc": "Q3 TU",
+  "file": "20261117_FLO_Trading-Update.md",
+  "vs": "H1 R Sep-26 · H1 TU Jul-26 · no Nov-25 update · back to Jul-25/Sep-25/Jan-26",
   "lines": [
    {
-    "sev": "amber",
-    "type": "Pushed out",
-    "text": "Two bridge projects: H1-26 revenue below plan, “Activity on these projects, and related profit and cash contribution, is now expected to be more heavily weighted towards H2.”; Narrow Water now runs “in H2 26 and continuing into 2027”",
-    "span": "H1 TU Jul-26 first flagged → H1 R Sep-26"
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Sep-26 “The Group continues to trade in line with market expectations for the year ending 31 December 2026.” with footnote “Prior to this announcement consensus market forecast for FY 26 were revenue £138.1m and adjusted EBITDA £10.2m” → Nov-26 “now expects adjusted EBITDA for the year ending 31 December 2026 to be c.£8.5m” with no market expectations reference or consensus footnote",
+    "span": "Consensus footnote given Jul-25, Sep-25, Jan-26, Jul-26, Sep-26 → dropped Nov-26"
    },
    {
     "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Gross margin was a headline gain at H1-25, “Gross profit margin up 100bps to 39.2% against FY 24”, and is now “Gross profit margin at 37.0%, down by 220bps against FY 25”, next to CEO wording of “managing gross margins”",
-    "span": "H1-25 39.2% → H1-26 37.0%"
+    "type": "Pushed out",
+    "text": "Bridge projects: Sep-26 “weighting of the two bridge projects in H2” → Nov-26 contribution “will not now be fully recognised in this financial year”",
+    "span": "H1 TU Jul-26 → H1 R Sep-26 → Nov-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "Gross margin: Sep-26 “Gross profit margin at 37.0%, down by 220bps against FY 25” and “The Group expects an improvement in H2 gross margin” → Nov-26 “gross margin remains at around the H1 level”, no figure",
+    "span": "H1 R Sep-26 → Nov-26"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Anchor moved up: Sep-25 “the Group's performance is in line with the Board's full year expectations” → Sep-26 “The Group continues to trade in line with market expectations for the year ending 31 December 2026.”; new figure for acquisitions' exit run rate, “revenue of approximately £35m-£40m and EBITDA in excess of £3m”",
-    "span": "Board's expectations Jul-25, Sep-25, Mar-26 → market expectations Jul-26, Sep-26"
+    "text": "Net debt guide quantified: Sep-26 “Net debt is forecast to reduce significantly” → Nov-26 “Year-end net debt is expected to be c.£14.5m” (H1-26 £16.4m)"
    }
   ]
  }

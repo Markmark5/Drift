@@ -1,8 +1,8 @@
 {
  "ticker": "CML",
- "v": "2026-10-21.6608",
+ "v": "2026-11-17.8dc9",
  "ccy": "GBX",
- "src": "Yahoo CML.L weekly",
+ "src": "Yahoo CML.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,22 @@
   [
    "2026-10-21",
    300.0
+  ],
+  [
+   "2026-10-23",
+   300.0
+  ],
+  [
+   "2026-10-30",
+   295.0
+  ],
+  [
+   "2026-11-06",
+   295.0
+  ],
+  [
+   "2026-11-13",
+   290.0
   ]
  ],
  "marks": [
@@ -1256,32 +1272,47 @@
    "s": 1,
    "q": "This uplift has supported trading, with the opening months delivering revenue in line with, and order intake ahead of, our expectations. The Board remains confident in its growth strategy and a return to operational profitability now looks likely to be achieved earlier in the current financial year than previously expected.",
    "file": "20260811_CML_AGM-Statement.md"
+  },
+  {
+   "d": "2026-11-17",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "RAISE",
+   "s": 2,
+   "q": "The Group is on track to deliver continued improvements in trading in the second half, both sequentially and against the prior year, which is likely to result in a year end outcome ahead of current market expectations.",
+   "file": "20261117_CML_Half-Year-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-11",
-  "doc": "AGM",
-  "file": "20260811_CML_AGM-Statement.md",
-  "vs": "AGM Aug-25 · FY R Jun-26 (previous RNS) · back to AGM Aug-24",
+  "rns": "2026-11-17",
+  "doc": "H1 R",
+  "file": "20261117_CML_Half-Year-Results.md",
+  "vs": "H1 R Nov-25 · AGM Aug-26 (previous RNS) · back to H1 R Nov-24",
   "lines": [
    {
-    "sev": "red",
-    "type": "Anchor softened",
-    "text": "Full-year anchor gone: Aug-24 “on track to meet market expectations for the year as a whole” → Aug-25 “on track to meet management's expectations for the current financial year” → Aug-26 only the opening months, “delivering revenue in line with, and order intake ahead of, our expectations”, no statement on the full year",
-    "span": "Market Aug-24 → management's Aug-25 → no full-year anchor Aug-26"
+    "sev": "amber",
+    "type": "Target dropped",
+    "text": "Inventory: Nov-25 “the expectation is for inventory levels to reduce to a more normalised level over the next two years” → now inventories up to £5.41m (31 March 2026: £4.76m) as orders “have necessitated a return to ensuring security of supply”",
+    "span": "Nov-25 target → reversed Nov-26"
    },
    {
-    "sev": "amber",
-    "type": "Went quiet",
-    "text": "Full-year profit level: Aug-25 “marginally profitable performance, weighted towards the second half period” → Aug-26 gives no full-year profit level, only timing: “a return to operational profitability now looks likely to be achieved earlier in the current financial year than previously expected”",
-    "span": "Aug-25 → Aug-26"
+    "sev": "grey",
+    "type": "New caution",
+    "text": "“Industry-wide demand continues to drive longer IC packaging lead times”",
+    "span": "First lead-time flag since FY22 (Nov-21, Jul-22)"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Order intake now reported against expectations: “order intake ahead of, our expectations”, with operational profitability expected “earlier in the current financial year than previously expected”",
-    "span": "First order-intake-vs-expectations line in AGM statements Aug-22 to Aug-26"
+    "text": "Market anchor back: Nov-25 “in line with management's expectations” → now “a year end outcome ahead of current market expectations”",
+    "span": "Market Nov-24 → management's Nov-25 / “our expectations” Aug-26 → market Nov-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "New pipeline and backlog figures: “opportunity pipeline has a total lifetime value, measured on a prudent basis, exceeding £190 million” and “an order backlog now extending beyond the next two years”",
+    "span": "Pipeline unquantified in all earlier RNS"
    }
   ]
  }

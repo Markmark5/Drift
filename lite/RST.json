@@ -1,8 +1,8 @@
 {
  "ticker": "RST",
- "v": "2026-10-21.2936",
+ "v": "2026-11-17.edad",
  "ccy": "GBX",
- "src": "Yahoo RST.L weekly",
+ "src": "Yahoo RST.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,22 @@
   [
    "2026-10-21",
    307.2
+  ],
+  [
+   "2026-10-23",
+   307.0
+  ],
+  [
+   "2026-10-30",
+   315.0
+  ],
+  [
+   "2026-11-06",
+   305.5
+  ],
+  [
+   "2026-11-13",
+   298.0
   ]
  ],
  "marks": [
@@ -1280,38 +1296,41 @@
    "s": 0,
    "q": "With all divisions performing in line with or above our expectations, the Board remains confident that the Group will deliver adjusted profit before tax for the full year at least in line with market expectations.",
    "file": "20260728_RST_Half-year-2026-results.md"
+  },
+  {
+   "d": "2026-11-17",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group remains on track to deliver a strong performance in FY26, with full year adjusted profit before tax expected to be at least in line with analyst expectations.",
+   "file": "20261117_RST_Trading-update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-28",
-  "doc": "H1 R",
-  "file": "20260728_RST_Half-year-2026-results.md",
-  "vs": "H1 R Jul-25 · AGM May-26 · FY R Mar-26 · TU Dec-25",
+  "rns": "2026-11-17",
+  "doc": "Q3 TU",
+  "file": "20261117_RST_Trading-update.md",
+  "vs": "TU Dec-25 · back to Nov-24 · H1 R Jul-26",
   "lines": [
    {
     "sev": "red",
+    "type": "Next-year view dropped",
+    "text": "Last year’s TU: FY26 PBT “ahead of current market consensus for FY26” (Nov-24: “Accordingly, our expectations for FY25 are unchanged.”) → this TU gives no FY27 view, only FY26 “at least in line with consensus expectations”",
+    "span": "Given at Nov-24, Dec-25 → first gap in 2 years"
+   },
+   {
+    "sev": "amber",
     "type": "Target dropped",
-    "text": "Datashred margin guide: FY R Mar-26 “We are confident that the division will achieve operating margins of 15% or more in 2026” → H1 26 no 15% target anywhere; margin “largely unchanged at 10.6%” amid “the current challenging market conditions” (paper price)",
-    "span": "Divisional 15% target since Nov-23, restated Dec-25 and Mar-26 → first omission"
+    "text": "20% margin target: Dec-25 “continue to exceed the medium-term adjusted operating margin target of 20%”; Jul-26 “maintaining adjusted operating margins of at least 20%” → not mentioned in this TU",
+    "span": "Dec-25, Mar-26, Jul-26 → absent Nov-26"
    },
    {
     "sev": "amber",
     "type": "Number to words",
-    "text": "Information Management margin: H1 25 “Adjusted operating margin was flat at 28%.”, FY25 “Adjusted operating margin was 28.1%” → H1 26 “Adjusted operating margin was slightly lower year-on-year”, no figure (Datashred and Technology margins still given)",
-    "span": "Given at H1 25 and FY25"
-   },
-   {
-    "sev": "grey",
-    "type": "Restated",
-    "text": "H1 25 comparatives re-presented with Harrow Green discontinued (“comparatives also restated”): revenue £160.1m → £144.4m, adjusted PBT £18.0m → £18.1m, cash conversion 117% → 109%; H1 26 95%",
-    "span": "H1 R Jul-25 vs H1 R Jul-26"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Anchor firmer, margin target reset: AGM May-26 “in line with market expectations” → H1 26 “at least in line with market expectations”; new target “maintaining adjusted operating margins of at least 20%”",
-    "span": "AGM May-26 → H1 R Jul-26"
+    "text": "Technology margin: Dec-25 “progressing towards our medium-term target of 15% adjusted operating margin” → now “ongoing double-digit growth and double-digit profit margin during the period”, no 15% target",
+    "span": "Nov-24, Dec-25 TUs → Nov-26"
    }
   ]
  }

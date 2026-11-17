@@ -1,6 +1,6 @@
 {
  "ticker": "MERC",
- "v": "2026-11-10.e314",
+ "v": "2026-11-17.db47",
  "ccy": "GBX",
  "src": "AlphaVantage MERC.LON weekly + ShareScope snapshots",
  "adj": [],
@@ -1060,6 +1060,10 @@
   [
    "2026-11-06",
    30.5
+  ],
+  [
+   "2026-11-13",
+   29.5
   ]
  ],
  "marks": [
@@ -1228,22 +1232,10 @@
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-24",
-  "doc": "AGM",
-  "file": "20260924_MERC_AGM-Statement.md",
-  "vs": "AGM Sep-25 · FY R Jun-26 · Metro Bank facilities Jul-26 · back to Sep-24",
-  "lines": [
-   {
-    "sev": "amber",
-    "type": "Went quiet",
-    "text": "Debt-free / net cash: Sep-25 “We remain debt free and are maintaining an excellent cash position which is c.£35million currently” → Sep-26 “We have drawn £16.0million of our new £38.0million bank facilities and our gross cash balance is currently a robust c.£37million” — cash now quoted gross, no net figure (c.£21m net of drawings)",
-    "span": "Debt-free stated at Sep-24, Sep-25 AGMs → first AGM without it"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "New mandate quantified: “an initial £63.0million of new funds under management” under the British Business Bank East of England fund; first statement that “conversations with third parties are being held in respect of the potential divestiture of the direct investment portfolio”"
-   }
-  ]
+  "rns": "2026-11-17",
+  "doc": "OPS",
+  "file": "20261117_MERC_Warwick-Acoustics-increases-production.md",
+  "vs": "Warwick Acoustics update Jun-23 · Presentation notice Nov-26 · AGM Sep-26",
+  "lines": []
  }
 }

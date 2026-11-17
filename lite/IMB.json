@@ -1,6 +1,6 @@
 {
  "ticker": "IMB",
- "v": "2026-10-29.b332",
+ "v": "2026-11-17.c25b",
  "ccy": "GBX",
  "src": "AlphaVantage IMB.LON weekly + ShareScope snapshots",
  "adj": [],
@@ -1052,6 +1052,18 @@
   [
    "2026-10-23",
    2848.0
+  ],
+  [
+   "2026-10-30",
+   2904.0
+  ],
+  [
+   "2026-11-06",
+   3062.0
+  ],
+  [
+   "2026-11-13",
+   2917.0
   ]
  ],
  "marks": [
@@ -1244,38 +1256,47 @@
    "s": -1,
    "q": "Group adjusted operating profit growth is anticipated to be within our 3% to 5% range1. We expect to deliver high-single-digit adjusted earnings per share growth1 for the full year.",
    "file": "20261008_IMB_Trading-Update.md"
+  },
+  {
+   "d": "2026-11-17",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -2,
+   "q": "Headwinds caused by disruption to our supply chain in Ukraine, the result of an attack on our facilities, will have a short-term impact during the first half of FY27, whilst the benefits of pricing, transformation efficiencies and duty drawback in the US will be weighted to the second half.",
+   "file": "20261117_IMB_Final-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-08",
-  "doc": "YE-TU",
-  "file": "20261008_IMB_Trading-Update.md",
-  "vs": "YE-TU Oct-25 · back to Oct-22 · H1 R May-26 · H1 TU Apr-26",
+  "rns": "2026-11-17",
+  "doc": "FY R",
+  "file": "20261117_IMB_Final-Results.md",
+  "vs": "FY R Nov-25 · YE-TU Oct-26 (previous RNS) · H1 R May-26 · H1 TU Apr-26",
   "lines": [
    {
     "sev": "red",
-    "type": "Anchor softened",
-    "text": "Last year: “High-single-digit adjusted EPS growth in line with expectations” → this year “High-single-digit earnings per share growth1”, with no reference to expectations anywhere (guidance-only anchor)",
-    "span": "“in line with expectations” in YE-TU Oct-22, Oct-24, Oct-25 (absent Oct-23)"
-   },
-   {
-    "sev": "amber",
     "type": "Number to words",
-    "text": "Profit position in range: last year “Group adjusted operating profit growth at a similar rate to last year, in line with guidance” → now only “within our 3% to 5% range1”, no position",
-    "span": "Oct-24 “close to the middle of our mid-single digit range”; Oct-25 similar rate → first YE-TU without a position"
+    "text": "FY profit guide: last year “For FY26, Group adjusted operating profit is expected to grow in the 3% to 5% range” → now “Group adjusted operating profit is expected to grow at a similar level to FY26” (FY26 delivered 3.7%), no range",
+    "span": "3-5% range given Nov-25, Apr-26, Oct-26 → first guide without it"
    },
    {
     "sev": "amber",
-    "type": "Number to words",
-    "text": "NGP net revenue growth: last year “around the mid-point of a 12-14% range” → now just “double-digit net revenue growth1”",
-    "span": "Oct-24 “in the range of 20-30%”; Oct-25 12-14% → range dropped"
+    "type": "New caution",
+    "text": "First flag of “disruption to our supply chain in Ukraine, the result of an attack on our facilities”, with H2 weighting now “expected to be more pronounced than in FY26” (Nov-25: “In line with previous years, performance will be weighted to the second half of the year”)",
+    "span": "Ukraine not mentioned in Nov-25, Apr-26, May-26 or Oct-26"
    },
    {
     "sev": "amber",
-    "type": "Went quiet",
-    "text": "NGP operating losses: last year “NGP losses are expected to be broadly flat year on year” → not mentioned (Apr-26 said H1 “NGP adjusted operating losses are expected to be moderately higher”)",
-    "span": "Given at Oct-24 and Oct-25 YE-TUs"
+    "type": "Restated",
+    "text": "NGP folded into a new “Smokeless” category from FY27: FY26 “NGP adjusted operating loss of £63m” becomes “FY26 Smokeless category with £554 million net revenue and adjusted operating profit of £14 million” by adding the oral nicotine business",
+    "span": "NGP losses reported as a standalone line through FY26"
+   },
+   {
+    "sev": "grey",
+    "type": "New caution",
+    "text": "Free cash flow guide held at “at least £2.2 billion” after £2.6bn in FY26, with a new warning: “We expect FY27 to be a significant year for 2030 Strategy cash costs.”",
+    "span": "Nov-25 → Nov-26"
    }
   ]
  }

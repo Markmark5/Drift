@@ -1,6 +1,6 @@
 {
  "ticker": "G4M",
- "v": "2026-11-09.4212",
+ "v": "2026-11-17.36db",
  "ccy": "GBX",
  "src": "AlphaVantage G4M.LON weekly + ShareScope snapshots",
  "adj": [],
@@ -1060,6 +1060,10 @@
   [
    "2026-11-06",
    227.5
+  ],
+  [
+   "2026-11-13",
+   215.0
   ]
  ],
  "marks": [
@@ -1360,32 +1364,46 @@
    "s": 0,
    "q": "With this key part of the year still ahead, the Board continues to expect the Group's financial performance for the year ending 31 March 2027 to be in line with consensus market expectations.",
    "file": "20261020_G4M_Half-Year-Trading-Update.md"
+  },
+  {
+   "d": "2026-11-17",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "CUT",
+   "s": -3,
+   "q": "FY27 EBITDA now expected to be approximately £11.5m, significantly below current consensus market expectations",
+   "file": "20261117_G4M_Interim-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-20",
-  "doc": "H1 TU",
-  "file": "20261020_G4M_Half-Year-Trading-Update.md",
-  "vs": "H1 TU Oct-25 · AGM Sep-26 · back to H1 TU Oct-23/Oct-24",
+  "rns": "2026-11-17",
+  "doc": "H1 R",
+  "file": "20261117_G4M_Interim-Results.md",
+  "vs": "H1 R Nov-25 · H1 TU Oct-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Went quiet",
-    "text": "Net debt: Oct-24 “Net debt further reduced by £3.6m to £14.5m at 30 September 2024” → no net debt figure in the H1 TU Oct-25 or Oct-26 (Nov-25 interims: “Net bank debt of £16.0m was £1.6m higher than last year”), as warehouse capex begins",
-    "span": "Given Oct-23, Oct-24 → absent Oct-25 and Oct-26"
+    "type": "New caution",
+    "text": "Search traffic: Nov-25 “organic traffic share in the Period increased from 26% last year to 28% of total sessions” → Nov-26 “Lower paid-search traffic driving weaker trading, partly reflecting more prominent AI-generated results”; also new FX pressure from sterling’s “rapid appreciation against the euro”",
+    "span": "First mention of paid-search weakness in the record"
    },
    {
     "sev": "amber",
     "type": "Wording vs number",
-    "text": "“We are pleased to report further revenue and gross profit growth in the first half” beside “EBITDA expected to be £5.7m (FY26 H1: £6.5m; FY25 H1: £2.9m)”: H1 EBITDA down 12%; revenue growth +6% vs +31% a year earlier",
-    "span": "H1 TU Oct-25 → Oct-26"
+    "text": "Highlights open “Continued revenue growth across markets and brands against very strong prior-year comparatives” beside “FY27 Q3 revenue to date down 13% year on year” and H1 EBITDA £5.7m vs £6.9m",
+    "span": "H1 R Nov-25 → Nov-26"
    },
    {
     "sev": "grey",
-    "type": "Split withheld",
-    "text": "Quarterly growth: Oct-25 headline “Revenue growth accelerated from +27% in FY26 Q1 to +34% in FY26 Q2” → now H1 total only (+6%), no Q1/Q2 split, after AGM noted “sales growth moderated during July and August”",
-    "span": "Oct-25 → Oct-26"
+    "type": "Restated",
+    "text": "Website KPIs rebased: Nov-25 “Website sessions increased 23% from 28.4m to 34.8m” → Nov-26 “Website sessions in the Period decreased by 1% from 21.8m to 21.7m” (FY26 H1 now 21.8m, not 34.8m); repeat customers FY26 H1 was “The proportion of repeat customers fell slightly to 25.5%”, now shown as 39.2%",
+    "span": "Same period FY26 H1, new definitions"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Net debt back after absent from Oct-26 TU: “Net bank debt of £24.3m (30 September 2025: £16.0m), up £8.3m year on year”; Q3-to-date revenue now quantified (Nov-25 “Strong trading has continued in FY26 Q3 to date.”, no figure)"
    }
   ]
  }

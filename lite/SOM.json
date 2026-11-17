@@ -1,6 +1,6 @@
 {
  "ticker": "SOM",
- "v": "2026-11-09.7fa3",
+ "v": "2026-11-17.2338",
  "ccy": "GBX",
  "src": "AlphaVantage SOM.LON weekly + ShareScope snapshots",
  "adj": [],
@@ -1060,6 +1060,10 @@
   [
    "2026-11-06",
    298.0
+  ],
+  [
+   "2026-11-13",
+   290.0
   ]
  ],
  "marks": [
@@ -1306,38 +1310,47 @@
    "s": 2,
    "q": "Reflecting the strength of the first-half performance and momentum entering H2, the Board now expects FY 2026 revenue of approximately US$ 95m, with adjusted EBITDA of approximately US$19.5m and year-end net cash expected to be approximately US $29m, assuming the additional US$6m share repurchase authorization is fully executed prior to year end.",
    "file": "20260908_SOM_Interim-Results.md"
+  },
+  {
+   "d": "2026-11-17",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 2,
+   "q": "Our momentum from the first half has continued into the second, and with customers busy and good visibility over the final weeks of the year, we’re pleased to be raising our guidance again.",
+   "file": "20261117_SOM_Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-08",
-  "doc": "H1 R",
-  "file": "20260908_SOM_Interim-Results.md",
-  "vs": "H1 R Sep-25 · back to Aug-23 · Jul-26 TU",
+  "rns": "2026-11-17",
+  "doc": "Q3 TU",
+  "file": "20261117_SOM_Trading-Update.md",
+  "vs": "H1 R Sep-26 · H1 TU Jul-26 · YE-TU Jan-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Number to words",
-    "text": "New-product revenue: Sep-25 “were US$ 4.2m, up 36%” → Sep-26 recent launches “contributing meaningful revenue”, no figure",
-    "span": "Quantified at Aug-24 (“contribute US$ 3.1m in H1 2024 revenues”) and Sep-25 → first interim without a number"
+    "type": "Pushed out",
+    "text": "Buyback: Sep-26 net cash guide “assuming the additional US$6m share repurchase authorization is fully executed prior to year end” → now “assuming US$2.0m of the additional US$6.0m share repurchase authorization is executed prior to year-end”; ~US$4m of the US$5m net cash raise is the lower buyback assumption",
+    "span": "Sep-26 → Nov-26"
    },
    {
     "sev": "amber",
-    "type": "Restated",
-    "text": "H1 2025 comparatives changed: parts & service Sep-25 “Parts and service: US$ 8.5m (down 14%)” → Sep-26 “Aftermarket parts & service revenue increased to US$ 9.1m (2025: US$ 8.3m)”; North America new-customer share Sep-25 “15% of total H1 revenue in the region” → Sep-26 “28% of regional revenue (H1 2025: 19%)”",
-    "span": "Lower/higher bases flatter the H1 2026 growth and new-customer trend"
+    "type": "New caution",
+    "text": "Risk list adds politics: Sep-26 “including tariffs, elevated interest rates and immigration policy” → now “coupled with recent changes to the US political landscape”",
+    "span": "First mention in the record"
    },
    {
     "sev": "grey",
     "type": "Split withheld",
-    "text": "Rest of World split: Sep-25 “Latin America, which reported sales of US$ 0.5m” → Sep-26 “driven primarily by higher sales in Latin America”, no figure",
-    "span": "Named-country sales given at Aug-23, Aug-24, Sep-25 → first gap in 3 years"
+    "text": "Regional trading: Jul-26 TU “In Europe, trading was ahead of H1 2025” (Jan-26 TU gave Europe revenue “US$ 8.9m (2024: US$ 14.6m)”) → this TU has no regional split, only US data centers and private non-residential",
+    "span": "Jan-26, Jul-26 TUs → Nov-26"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "FY26 guide re-quantified: Jul-26 only “ahead of market expectations” (consensus $86.0m revenue) → Sep-26 “revenue for the full year now expected to be approximately US$ 95m, with adjusted EBITDA of approximately US$ 19.5m”",
-    "span": "Jan/Mar-26 guide was ‘broadly comparable to 2025’; Sep-26 adds net cash c. US$ 29m"
+    "text": "Guide raised again on all three lines: “Revenue of approximately US$100m (previous guidance: US$95m)”, “Adjusted EBITDA of approximately US$20.5m (previous guidance: US$19.5m)”",
+    "span": "Third FY26 raise (Jul-26, Sep-26, Nov-26)"
    }
   ]
  }

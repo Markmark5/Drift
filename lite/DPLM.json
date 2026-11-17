@@ -1,8 +1,8 @@
 {
  "ticker": "DPLM",
- "v": "2026-10-21.be4a",
+ "v": "2026-11-17.35fe",
  "ccy": "GBX",
- "src": "Yahoo DPLM.L weekly",
+ "src": "Yahoo DPLM.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,22 @@
   [
    "2026-10-21",
    7505.0
+  ],
+  [
+   "2026-10-23",
+   7260.0
+  ],
+  [
+   "2026-10-30",
+   7305.0
+  ],
+  [
+   "2026-11-06",
+   7000.0
+  ],
+  [
+   "2026-11-13",
+   7310.0
   ]
  ],
  "marks": [
@@ -1270,20 +1286,46 @@
    "s": 2,
    "q": "Operating profit growth of c.42%, representing a further c.7% upgrade to consensus1.",
    "file": "20260716_DPLM_Q3-Trading-Update.md"
+  },
+  {
+   "d": "2026-11-17",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The new year has started with great momentum and we expect another strong performance in FY27, ahead of our financial model.",
+   "file": "20261117_DPLM_Diploma-PLC-Full-Year-Results-2026.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-16",
-  "doc": "Q3 TU",
-  "file": "20260716_DPLM_Q3-Trading-Update.md",
-  "vs": "Q3 TU Jul-25 · H1 R May-26 · back to Q3 TU Jul-23/Jul-24",
+  "rns": "2026-11-17",
+  "doc": "FY R",
+  "file": "20261117_DPLM_Diploma-PLC-Full-Year-Results-2026.md",
+  "vs": "FY R Nov-25 · Q3 TU Jul-26 · back to FY R Nov-24 · H1 TU Mar-26, H1 R May-26",
   "lines": [
    {
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "Expectations/consensus anchor: Nov-25 headline “Very strong results - ahead of expectations. Great momentum”; Jul-26 “Operating profit growth of c.42%, representing a further c.7% upgrade to consensus” → Nov-26 headline “VERY STRONG EARNINGS GROWTH OF 45% AT 25% RETURNS” and FY27 guide framed only against “our financial model”, no expectations or consensus reference",
+    "span": "Consensus anchor at Mar-26, May-26, Jul-26 → first print without it; FY26 outturn (£487.1m) matched the Jul-26 c.42% guide"
+   },
+   {
     "sev": "amber",
-    "type": "Went quiet",
-    "text": "Reported revenue growth YTD: Jul-25 “Reported growth YTD of 12%: +4% from acquisitions, partly offset by FX.” → Jul-26 only organic growth (15%) given; no reported growth or FX effect, guidance now framed “(at constant currency)”",
-    "span": "Given at Q3 Jul-23 (21%), Jul-24 (13%), Jul-25 (12%) → first gap in 3 years"
+    "type": "Wording vs number",
+    "text": "Margin guide: Nov-25 “Maintaining operating margin at c.22.5%” → Nov-26 “Operating margin is expected to be strong at 25.5%, while also reflecting investment to support future growth and the impact of acquisitions.” against FY26 “Operating margin of 26.5%” — a 100bps step down described as strong",
+    "span": "First guide for a lower margin since FY24 (FY25 guide ca.21% vs 20.9%; FY26 held at 22.5%)"
+   },
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "Life Sciences: Nov-25 “Life Sciences +6% organic growth”; Jul-26 “Resilient performance in challenging Life Sciences markets.” → Nov-26 “Life Sciences (13% of Group revenue) +1% organic growth” and “Expect first half of FY27 to remain challenging.”",
+    "span": "First forward caution on a Sector into the new year; organic growth +6% FY25 → +4% H1 → +1% FY26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Total revenue guide: Nov-25 FY26 guide gave organic growth and “Acquisitions announced to date add +2% to reported growth”, no total → Nov-26 FY27 guide adds “Total revenue growth of 12%.”; reported growth (21%) back after the Jul-26 Q3 gave organic growth only"
    }
   ]
  }

@@ -1,8 +1,8 @@
 {
  "ticker": "IQE",
- "v": "2026-10-21.34ea",
+ "v": "2026-11-17.137b",
  "ccy": "GBX",
- "src": "AlphaVantage IQE.LON weekly",
+ "src": "AlphaVantage IQE.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1060,6 +1060,22 @@
   [
    "2026-10-20",
    39.35
+  ],
+  [
+   "2026-10-23",
+   36.0
+  ],
+  [
+   "2026-10-30",
+   39.0
+  ],
+  [
+   "2026-11-06",
+   28.35
+  ],
+  [
+   "2026-11-13",
+   32.75
   ]
  ],
  "marks": [
@@ -1297,26 +1313,35 @@
    "s": 0,
    "q": "IQE remains confident in achieving its FY 2026 guidance of revenue growth in excess of 30% year-on-year, resulting in low-teens £m adjusted EBITDA.",
    "file": "20260907_IQE_IQE-plc-H1-2026-Interim-Results.md"
+  },
+  {
+   "d": "2026-11-17",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 2,
+   "q": "As a result, IQE now expects revenue growth and adjusted EBITDA to be ahead of previously upgraded expectations, resulting in year-on-year revenue growth in excess of 40% and adjusted EBITDA in the mid-teens (£m).",
+   "file": "20261117_IQE_IQE-plc-Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-07",
-  "doc": "H1 R",
-  "file": "20260907_IQE_IQE-plc-H1-2026-Interim-Results.md",
-  "vs": "H1 R Sep-25 · TU Jul-26 · back to H1 R Sep-24",
+  "rns": "2026-11-17",
+  "doc": "Q3 TU",
+  "file": "20261117_IQE_IQE-plc-Trading-Update.md",
+  "vs": "H1 R Sep-26 (previous RNS) · TU Jul-26 · no Nov-25 TU (back to Q3 TU Nov-24)",
   "lines": [
    {
     "sev": "amber",
-    "type": "Restated",
-    "text": "H1 2025 comparatives changed: reported loss before tax £(23.5)m in the Sep-25 table → £(18.3)m now, adjusted loss before tax £(12.9)m → £(16.0)m; note says “The comparative results for the six months ended 30 June 2025 have been restated to reclassify the gain on disposal of foreign operations from reserves to the income statement”",
-    "span": "Adjusted comparative made worse, flattering the year-on-year improvement"
+    "type": "Wording vs number",
+    "text": "Cash flat despite “strong momentum”: Jul-26 “a cash position as at 30 June 2026 of £41.6m” → now “a current cash position of £41.5m”",
+    "span": "30 Jun-26 → mid-Nov-26"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "First FY27 view, in the going-concern base case only: “Revenue growth broadly consistent with current guidance and analyst consensus forecasts, including growth of at least 30% in both 2026 and 2027”",
-    "span": "No next-year figure at Sep-25 or Jul-26"
+    "text": "EBITDA guide re-quantified higher: Jul-26/Sep-26 “low-teens £m adjusted EBITDA” → now “adjusted EBITDA in the mid-teens (£m)”, revenue growth “in excess of 40%” (was 30%)",
+    "span": "Second upgrade of FY26 in four months"
    }
   ]
  }
