@@ -1082,17 +1082,17 @@
       "company": "CML Microsystems Plc",
       "kind": "ticker",
       "direction": "up",
-      "lights": "ggg",
-      "headline": "Profit is arriving earlier than guided and order intake is ahead — the first upgrade since 2022, with revenue only in line.",
-      "trigger": "green mirror 3-of-3 (live: G-column RAISE on latest RNS + language rising two prints from below zero + disclosure resumption); deterioration 3-of-3 all printed history",
+      "headline": "First profitable half in two years and a RAISE to “ahead of market expectations” — order backlog now beyond two years, margin still the laggard.",
+      "trigger": "green mirror 3-of-3 (G-column RAISE to market expectations on the latest RNS + language rising four prints from below zero + order book re-quantified and backlog/pipeline printed); deterioration 3-of-3 all printed history",
       "alert": true,
       "fired": 3,
       "fired_of": 3,
-      "rns_type": "AGM Statement",
-      "rns_date": "2026-08-11",
-      "build_date": "2026-08-09",
-      "spec_version": "v5.1",
-      "next_test": "FY27 H1 results (Nov-26): a pre-exceptional operating profit actually printed, and the gross margin it is earned at, off 59.7%.",
+      "lights": "ggg",
+      "rns_type": "H1 R",
+      "rns_date": "2026-11-17",
+      "build_date": "2026-11-17",
+      "spec_version": "v5.8",
+      "next_test": "Apr 2027 YE-TU: FY27 revenue at or above £23.9m with H2 gross margin above 64%, and GNSS still on a CY2028 production path.",
       "url": "CML.html",
       "grid": {
         "labels": [
@@ -1103,25 +1103,51 @@
           "R5"
         ],
         "periods": [
-          "H2",
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1",
-          "H2",
-          "H1",
-          "H2"
+          "H1 23",
+          "H2 23",
+          "H1 24",
+          "H2 24",
+          "H1 25",
+          "H2 25",
+          "H1 26",
+          "H2 26",
+          "H1 27"
         ],
         "rows": [
-          "-ggaxxagg",
-          "---ragrrg",
-          "-aaarrarr",
-          "-aaaarrrg",
-          "---arrrrr"
+          "ggaxxaggg",
+          "--ragrrgg",
+          "aaarrarrr",
+          "aaaarrrgg",
+          "--arrrrrg"
         ],
-        "note": "R1 order book/intake · R2 revenue · R3 gross margin · R4 inventory/revenue · R5 PfO pre-exceptional. Halves, oldest left; rightmost = FY26 H2 (Buy/Sell)."
-      }
+        "note": "R1 order book/intake · R2 revenue · R3 gross margin · R4 inventory/revenue · R5 PfO pre-exceptional. Halves, oldest left; rightmost = FY27 H1 (Buy/Sell)."
+      },
+      "prev": {
+        "direction": "up",
+        "fired": 3,
+        "lights": "ggg",
+        "rns_date": "2026-08-11",
+        "rns_type": "AGM Statement"
+      },
+      "trend": {
+        "mode": "share",
+        "cells": "ga-",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": 3
+          },
+          {
+            "m": "EBITDA",
+            "gap": -1.3
+          },
+          {
+            "m": "PBT",
+            "gap": null
+          }
+        ]
+      },
+      "chart": "charts/CML.json?v=2026-11-17.fefd"
     },
     {
       "ticker": "DATA",
