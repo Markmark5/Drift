@@ -1439,17 +1439,17 @@
       "company": "Fonix plc",
       "kind": "ticker",
       "direction": "up",
-      "headline": "FY26 audited: GP +12.9%, adj PBT +8.4%, cash rose into year-end — the beat confirmed on every line, and six markets now in play.",
-      "trigger": "2 of 3 green-shoot: Numbers & guide (H2 GP Δrate +16.4pp audited, G reconfirmed) + Disclosure (Jul-26 window fire stands)",
+      "headline": "FY27 opens in line with UK momentum strong — the +18% H2 exit rate now waits on January's first numbers.",
+      "trigger": "2 of 3 green-shoot: Numbers & guide (H2 GP Δrate +16.4pp audited, Jul-26 · Sep-26) + Disclosure (Jul-26 window fire stands)",
       "alert": true,
       "fired": 2,
       "fired_of": 3,
       "lights": "g-g",
-      "rns_type": "FY R",
-      "rns_date": "2026-09-22",
-      "build_date": "2026-09-22",
-      "spec_version": "v5.3b",
-      "next_test": "H1 FY27 TU Jan-27 — is the +18% H2 exit rate the new baseline; PayFlex volumes, Swiss ramp",
+      "rns_type": "AGM",
+      "rns_date": "2026-11-18",
+      "build_date": "2026-11-18",
+      "spec_version": "v5.8",
+      "next_test": "H1 FY27 TU Jan-27 — first FY27 numbers vs consensus revenue +4.8%, EBITDA +8.9%",
       "url": "FNX.html",
       "grid": {
         "labels": [
@@ -1480,30 +1480,18 @@
         "note": "Five ledger ranks, H1/H2 sub-periods, right-anchored on the FY26 FY TU."
       },
       "trend": {
-        "mode": "growth",
-        "cells": "ggg",
-        "rows": [
-          {
-            "m": "REV",
-            "gap": 8.8
-          },
-          {
-            "m": "EBITDA",
-            "gap": 5.7
-          },
-          {
-            "m": "PBT",
-            "gap": 8.4
-          }
-        ]
+        "mode": "share",
+        "cells": "---",
+        "rows": []
       },
       "prev": {
         "direction": "up",
         "fired": 2,
         "lights": "g-g",
-        "rns_date": "2026-07-23",
-        "rns_type": "FY TU"
-      }
+        "rns_date": "2026-09-22",
+        "rns_type": "FY R"
+      },
+      "chart": "charts/FNX.json?v=2026-11-18.57db"
     },
     {
       "ticker": "SAAS",
