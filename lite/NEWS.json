@@ -1,8 +1,8 @@
 {
  "ticker": "NEWS",
- "v": "2026-10-20.f24b",
+ "v": "2026-11-18.e2e5",
  "ccy": "GBX",
- "src": "Yahoo NEWS.L weekly",
+ "src": "Yahoo NEWS.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -184,6 +184,22 @@
   [
    "2026-10-20",
    28.5
+  ],
+  [
+   "2026-10-23",
+   28.5
+  ],
+  [
+   "2026-10-30",
+   28.5
+  ],
+  [
+   "2026-11-06",
+   28.5
+  ],
+  [
+   "2026-11-13",
+   28.5
   ]
  ],
  "marks": [
@@ -263,34 +279,22 @@
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-02",
+  "rns": "2026-11-16",
   "doc": "OPS",
-  "file": "20261002_NEWS_Pathos-FT's-Fastest-Growing-UK-Marketing-Company.md",
-  "vs": "H1 R Sep-26 · award RNS Mar-26 (listed Dec-25, no year-earlier document)",
+  "file": "20261116_NEWS_Acquisition-of-Entrepreneurs-on-Fire-Podcast.md",
+  "vs": "OPS Oct-26 (FT ranking) · H1 R Sep-26 · OPS May/Aug-26",
   "lines": [
    {
-    "sev": "amber",
-    "type": "Anchor softened",
-    "text": "Sep-26: “meeting, or being slightly ahead of, full year market expectations” → Oct-26: “meeting the upgraded full year market expectations”; on profit the EBITDA expectation is unchanged, so the “slightly ahead” is gone",
-    "span": "Sep-26 → Oct-26"
-   },
-   {
-    "sev": "amber",
-    "type": "Wording vs number",
-    "text": "“upgraded” expectations are revenue only: Sep-26 “Revenue of US$14.0 million and Adjusted EBITDA of US$4.0 million” → Oct-26 “Revenue of US$15.0 million and Adjusted EBITDA of US$4.0 million”, implied margin lower",
-    "span": "Sep-26 → Oct-26"
-   },
-   {
     "sev": "grey",
-    "type": "Next-year view dropped",
-    "text": "Sep-26 footnote carried “2027: Revenue of US$15.3 million” and a run-rate “over 75% of the current 2027 revenue market expectation” → Oct-26 footnote gives FY26 only",
-    "span": "Given once (Sep-26)"
+    "type": "Went quiet",
+    "text": "Oct-26: “the Pathos board remains confident in the Company meeting the upgraded full year market expectations*” with footnote “Market expectations for FY26: Revenue of US$15.0 million and Adjusted EBITDA of US$4.0 million.” → Nov-26 acquisition RNS: no FY26 expectations statement or consensus footnote",
+    "span": "FY26 anchor carried in May-26, Jul-26, Aug-26, Sep-26, Oct-26 → first price-sensitive RNS without it"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "FY26 revenue expectation raised from US$14.0m to “Revenue of US$15.0 million”",
-    "span": "Sep-26 → Oct-26"
+    "text": "New guide on the deal: “The Acquisition is expected to be both earnings* and free cashflow enhancing in the first full year post Completion, prior to the delivery of any synergies.” plus target figures “revenue of c.US$1.1 million and net profit of c.US$0.8m” (FY25, unaudited)",
+    "span": "First acquisition since IPO (Dec-25)"
    }
   ]
  }

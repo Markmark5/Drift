@@ -1,22 +1,10 @@
 {
  "ticker": "TPFG",
- "v": "2026-10-20.ec1b",
+ "v": "2026-11-18.7411",
  "ccy": "GBX",
- "src": "Yahoo TPFG.L weekly",
+ "src": "Yahoo TPFG.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-22",
-   298.0
-  ],
-  [
-   "2021-10-29",
-   302.0
-  ],
-  [
-   "2021-11-05",
-   300.0
-  ],
   [
    "2021-11-12",
    293.0
@@ -1052,18 +1040,25 @@
   [
    "2026-10-20",
    416.0
+  ],
+  [
+   "2026-10-23",
+   417.5
+  ],
+  [
+   "2026-10-30",
+   418.0
+  ],
+  [
+   "2026-11-06",
+   481.0
+  ],
+  [
+   "2026-11-13",
+   460.0
   ]
  ],
  "marks": [
-  {
-   "d": "2021-11-04",
-   "doc": "Q3 TU",
-   "fy": "FY21",
-   "g": "flat",
-   "s": 0,
-   "q": "Based on the above, the Directors are pleased to confirm the Group continues to trade in line with market expectations for the full year.",
-   "file": "20211104_TPFG_Update-ahead-of-presentation-at-Mello.md"
-  },
   {
    "d": "2022-02-01",
    "doc": "YE-TU",

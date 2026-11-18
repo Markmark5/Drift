@@ -1,22 +1,10 @@
 {
  "ticker": "FSJ",
- "v": "2026-10-20.a5a6",
+ "v": "2026-11-18.890f",
  "ccy": "GBX",
- "src": "Yahoo FSJ.L weekly",
+ "src": "Yahoo FSJ.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-22",
-   784.0
-  ],
-  [
-   "2021-10-29",
-   410.0
-  ],
-  [
-   "2021-11-05",
-   420.0
-  ],
   [
    "2021-11-12",
    394.5
@@ -1052,18 +1040,25 @@
   [
    "2026-10-20",
    443.0
+  ],
+  [
+   "2026-10-23",
+   443.0
+  ],
+  [
+   "2026-10-30",
+   465.0
+  ],
+  [
+   "2026-11-06",
+   458.0
+  ],
+  [
+   "2026-11-13",
+   425.0
   ]
  ],
  "marks": [
-  {
-   "d": "2021-10-25",
-   "doc": "Q3 TU",
-   "fy": "FY21",
-   "g": "CUT",
-   "s": -3,
-   "q": "The Board now anticipates Underlying Operating Profit for the full year, before separately disclosed items, to be in the range of £27m - £32m.",
-   "file": "20211025_FSJ_Trading-update.md"
-  },
   {
    "d": "2021-12-29",
    "doc": "OPS",

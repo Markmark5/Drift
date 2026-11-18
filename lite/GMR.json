@@ -1,22 +1,10 @@
 {
  "ticker": "GMR",
- "v": "2026-10-20.4751",
+ "v": "2026-11-18.09f1",
  "ccy": "GBX",
- "src": "Yahoo GMR.L weekly",
+ "src": "Yahoo GMR.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-22",
-   35.0
-  ],
-  [
-   "2021-10-29",
-   39.0
-  ],
-  [
-   "2021-11-05",
-   37.4
-  ],
   [
    "2021-11-12",
    36.4
@@ -1052,18 +1040,25 @@
   [
    "2026-10-20",
    30.0
+  ],
+  [
+   "2026-10-23",
+   30.1
+  ],
+  [
+   "2026-10-30",
+   30.6
+  ],
+  [
+   "2026-11-06",
+   29.1
+  ],
+  [
+   "2026-11-13",
+   30.5
   ]
  ],
  "marks": [
-  {
-   "d": "2021-11-02",
-   "doc": "Q3 TU",
-   "fy": "FY21",
-   "g": "flat",
-   "s": 0,
-   "q": "The Company continues to be encouraged by the performance of its games across its North American and European markets and remains confident of meeting its full year targets. During Q3 2021, content licensing revenue increased 35% year on year whilst the new licensing and games pipeline has also grown.",
-   "file": "20211102_GMR_Full-iGaming-Licence-in-Michigan-&-Trading-Update.md"
-  },
   {
    "d": "2022-01-26",
    "doc": "YE-TU",
