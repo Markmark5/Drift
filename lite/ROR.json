@@ -1,8 +1,8 @@
 {
  "ticker": "ROR",
- "v": "2026-10-21.77e5",
+ "v": "2026-11-18.32fb",
  "ccy": "GBX",
- "src": "Yahoo ROR.L weekly",
+ "src": "Yahoo ROR.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,22 @@
   [
    "2026-10-21",
    492.0
+  ],
+  [
+   "2026-10-23",
+   492.6
+  ],
+  [
+   "2026-10-30",
+   492.8
+  ],
+  [
+   "2026-11-06",
+   493.6
+  ],
+  [
+   "2026-11-13",
+   493.6
   ]
  ],
  "marks": [
@@ -1117,32 +1133,48 @@
    "s": 0,
    "q": "While recovery in Oil & Gas is now expected to be more gradual, with full year divisional revenue expected to be slightly lower year-on-year, we now anticipate stronger growth in CPI.",
    "file": "20260804_ROR_2026-interim-results.md"
+  },
+  {
+   "d": "2026-11-18",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -1,
+   "q": "Full year expectations for good growth in CPI and Water & Power remain unchanged and, despite more subdued conditions in Oil & Gas than previously anticipated due to disruption in the Middle East, the Group’s outlook is broadly unchanged and we continue to expect further progress on an OCC basis in 2026.",
+   "file": "20261118_ROR_Trading-update.md",
+   "gnote": "discounted: recommended cash acquisition by ABB"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-04",
-  "doc": "H1 R",
-  "file": "20260804_ROR_2026-interim-results.md",
-  "vs": "H1 R Aug-25 · Q1 TU May-26 · FY R Mar-26",
+  "rns": "2026-11-18",
+  "doc": "Q3 TU",
+  "file": "20261118_ROR_Trading-update.md",
+  "vs": "Q3 TU Nov-25 · H1 R Aug-26 · Q1 TU May-26",
   "lines": [
    {
     "sev": "red",
-    "type": "Pushed out",
-    "text": "Oil & Gas guide: May-26 “In Oil & Gas, we continue to expect a stable performance for the year with a greater H2 weighting.” → Aug-26 “we now expect a more gradual market recovery than previously anticipated, with full year divisional revenue expected to be slightly lower year-on-year”",
-    "span": "Stable guide given Mar-26 and May-26 → lowered at H1; Group outlook held"
+    "type": "Anchor softened",
+    "text": "Nov-25 “Rotork's full year expectations are unchanged”, Aug-26 “our 2026 Group outlook is unchanged” → now “the Group’s outlook is broadly unchanged”, with Oil & Gas “more subdued” than anticipated",
+    "span": "Unqualified “unchanged” at Nov-25, May-26, Aug-26 → first “broadly”"
    },
    {
     "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Headline “Growth+ execution drives resilient H1 performance” beside “Order intake of £371.8m declined slightly against a solid prior year” (−4.0% OCC), book-to-bill 1.01x (H1-25: 1.06x) and cash conversion 79% (H1-25: 89%)",
-    "span": "H1 R Aug-25 → H1 R Aug-26"
+    "type": "Went quiet",
+    "text": "Period trading vs expectations: “The Group's performance in the period was in line with management expectations.” (Nov-25, May-26) → no statement on period performance vs expectations",
+    "span": "Given in both prior trading updates → absent now"
    },
    {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "CPI guide raised: Mar/May-26 “continued good momentum in CPI” → Aug-26 “In CPI, we now anticipate a stronger performance for the full year”",
-    "span": "FY R Mar-26 · Q1 TU May-26 → H1 R Aug-26"
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "Order intake: Nov-25 “Group order intake was 6% higher year-on-year”, Aug-26 “4.0% lower on an OCC basis” → now “increased year-on-year by a mid single-digit percentage”",
+    "span": "Q3 TU Nov-25 vs Nov-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Split withheld",
+    "text": "Nov-25 Q3 TU had a “Divisional commentary” section (Oil & Gas, CPI, Water & Power paragraphs) → now one combined order-intake sentence, no divisional section",
+    "span": "Q3 TU Nov-25 vs Nov-26"
    }
   ]
  }
