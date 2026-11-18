@@ -1,6 +1,6 @@
 {
  "ticker": "PEEL",
- "v": "2026-10-30.783b",
+ "v": "2026-11-18.efe7",
  "ccy": "GBX",
  "src": "Yahoo PEEL.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1052,6 +1052,18 @@
   [
    "2026-10-23",
    89.5
+  ],
+  [
+   "2026-10-30",
+   89.5
+  ],
+  [
+   "2026-11-06",
+   89.0
+  ],
+  [
+   "2026-11-13",
+   89.5
   ]
  ],
  "marks": [
@@ -1307,36 +1319,47 @@
    "s": -1,
    "q": "Whilst risks remain around the timing and execution of transactions, the Group enters the second half with a solid pipeline of opportunities across a diverse range of transactions.",
    "file": "20261001_PEEL_Half-Year-Trading-Update.md"
+  },
+  {
+   "d": "2026-11-18",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board remains focused on executing the Group’s strategy while maintaining a disciplined approach to costs and investment and is confident of delivering a full-year outturn in line with market expectations.",
+   "file": "20261118_PEEL_Interim-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-01",
-  "doc": "H1 TU",
-  "file": "20261001_PEEL_Half-Year-Trading-Update.md",
-  "vs": "H1 TU Oct-25 · FY R Jun-26 · back to H1 TU Oct-23, Oct-24",
+  "rns": "2026-11-18",
+  "doc": "H1 R",
+  "file": "20261118_PEEL_Interim-Results.md",
+  "vs": "H1 R Dec-25 · H1 TU Oct-26",
   "lines": [
    {
-    "sev": "red",
-    "type": "Anchor softened",
-    "text": "Oct-24: “we expect full year performance to be in line with market expectations”; Oct-25: “we remain optimistic about our performance for the remainder of the year” → Oct-26 gives no full-year view at all, only “Whilst risks remain around the timing and execution of transactions”",
-    "span": "Market anchor at Oct-23, Oct-24 → softened Oct-25 → gone Oct-26"
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "“The Group delivered an encouraging H1 FY27 performance” beside “Group revenue was £63.2m (H1 FY26: £74.4m).” and adjusted PBT of £11.9m against £18.7m, a 36.4% fall",
+    "span": "H1 R Dec-25 → Nov-26"
    },
    {
     "sev": "amber",
-    "type": "Went quiet",
-    "text": "Year-on-year revenue comparison: Oct-23 “an increase of approximately 3.2% year on year”, Oct-24 “an increase of approximately 25% year on year”, Oct-25 “an increase of over 37% year-on-year” → Oct-26 “strong H1 FY27 revenues of approximately £62.5m” with no comparative (H1 FY26 was £73.8m, about −15%)",
-    "span": "Comparative given Oct-23, Oct-24, Oct-25 → first gap"
-   },
-   {
-    "sev": "amber",
-    "type": "Went quiet",
-    "text": "Profit view: Oct-25 “which we expect to be reflected in the profitability of the Group over this financial year” → Oct-26 says nothing on profit, costs or margin"
+    "type": "New caution",
+    "text": "Dec-25 outlook: Execution Services, “although down from the highs of the first half, has been robust” → Nov-26 “Trading conditions in Execution Services and Research & Distribution have, however, been more challenging.”",
+    "span": "First flag on ES and R&D trading in an outlook"
    },
    {
     "sev": "grey",
-    "type": "Split withheld",
-    "text": "Client and divisional detail: Oct-23 “now act as an adviser to 154 companies of which 38 are in the FTSE 350”; Oct-24 “We now act for 4 FTSE 100 companies and 42 FTSE 250 companies”; Oct-25 “Our FTSE 350 client base has grown by 78%” → Oct-26 no client counts, deal statistics or divisional revenue lines"
+    "type": "Number to words",
+    "text": "ECM market share: Dec-25 “the most active investment bank for all UK ECM transactions in H1 with a market share of approximately 17%” → Nov-26 “we have acted on more UK ECM transactions than any other investment bank”, no share figure; client split “five FTSE 100 companies and 52 FTSE 250 companies” → only “60 FTSE 350 companies”",
+    "span": "H1 R Dec-25 → Nov-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Full-year anchor back: Oct-26 trading update gave no full-year view → Nov-26 “is confident of delivering a full-year outturn in line with market expectations”",
+    "span": "Gone Oct-26 → back Nov-26"
    }
   ]
  }

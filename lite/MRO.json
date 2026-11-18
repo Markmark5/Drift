@@ -1,8 +1,8 @@
 {
  "ticker": "MRO",
- "v": "2026-10-21.de74",
+ "v": "2026-11-18.002f",
  "ccy": "GBX",
- "src": "Yahoo MRO.L weekly",
+ "src": "Yahoo MRO.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,22 @@
   [
    "2026-10-21",
    495.1
+  ],
+  [
+   "2026-10-23",
+   475.0
+  ],
+  [
+   "2026-10-30",
+   475.0
+  ],
+  [
+   "2026-11-06",
+   465.5
+  ],
+  [
+   "2026-11-13",
+   489.4
   ]
  ],
  "marks": [
@@ -1252,38 +1268,47 @@
    "s": -2,
    "q": "Excluding the impact of the Garden Grove incident, our guidance for the full year, which assumes an average exchange rate of 1 GBP = US$1.37, is unchanged.",
    "file": "20260731_MRO_Melrose-Half-year-Financial-Results.md"
+  },
+  {
+   "d": "2026-11-18",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "Excluding the impact of the Garden Grove incident, our guidance for the full year, which assumes an average exchange rate[1] of 1 GBP = US$1.37, is unchanged:",
+   "file": "20261118_MRO_Trading-update-–-guidance-for-full-year-unchanged.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-13",
-  "doc": "OPS",
-  "file": "20261013_MRO_Update-on-GKN-Aerospace's-Garden-Grove-Facility.md",
-  "vs": "Garden Grove update Aug-26 · H1 R Jul-26 · updates May-26",
+  "rns": "2026-11-18",
+  "doc": "Q3 TU",
+  "file": "20261118_MRO_Trading-update-–-guidance-for-full-year-unchanged.md",
+  "vs": "Q3 TU Nov-25 · back to Nov-24 · Garden Grove update Oct-26 · H1 R Jul-26",
   "lines": [
    {
     "sev": "amber",
     "type": "Pushed out",
-    "text": "Restart date: Aug-26 “GKN is targeting 28 September 2026 to resume full manufacturing operations” → now “Subject to obtaining approval from the relevant authorities, GKN continues to expect a phased return to full capacity during the fourth quarter”, no date; H1 R put the 50%-capacity cost at c.£6m a month",
-    "span": "Update Aug-26 → Update Oct-26"
+    "text": "Garden Grove return: Oct-26 “GKN continues to expect a phased return to full capacity during the fourth quarter” → Nov-26 “a phased return to normalised volume output during the first part of 2027”",
+    "span": "Update Oct-26 → Q3 TU Nov-26"
    },
    {
     "sev": "amber",
-    "type": "New caution",
-    "text": "First mention of litigation: “Separately, we are engaged in ongoing mediation discussions regarding the various pending civil class action lawsuits”, outside the up to $100m claims programme",
-    "span": "Not in May-26, Jul-26 or Aug-26 releases"
+    "type": "Wording vs number",
+    "text": "Headline “Trading update – guidance for the full year unchanged”, but the guide excludes Garden Grove; the new FY26E appendix puts the hit at £40-45m operating profit plus c.£73m claims programme, c.£18m fines and £30-35m H2 legal and other costs, vs H1 R “additional exceptional costs of c.£25 million to £30 million in the second half”",
+    "span": "H1 R Jul-26 → Q3 TU Nov-26"
    },
    {
     "sev": "grey",
     "type": "Went quiet",
-    "text": "Insurance still unquantified: “our associated insurance position remains under review”; no update to the Jul-26 £25-30m H2 exceptional cost estimate or the guidance that excludes Garden Grove",
-    "span": "Jul-26, Aug-26, Oct-26"
+    "text": "Profit vs prior year: Nov-25 “Adjusted operating profit was significantly higher than the comparative period and in line with our expectations.” → Nov-26 “Adjusted operating profit for the Period was in line with our expectations.”, no year-on-year direction",
+    "span": "Nov-24 “adjusted4 operating profit continues to grow on the prior year”, Nov-25 → first Q3 TU without it"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Costs now quantified: Aug-26 “potential civil enforcement penalties will be resolved separately” → now “civil enforcement penalties amounting to $15 million and claims received to date by emergency services and relevant authorities of $10 million”",
-    "span": "Update Aug-26 → Update Oct-26"
+    "text": "Garden Grove full-year cost now quantified: H1 R “We will provide an update on the total expected impact for the full year and potentially beyond in due course” → Nov-26 FY26E revenue (50-55), operating profit (40-45), total cash (70-80) £m",
+    "span": "H1 R Jul-26 → Q3 TU Nov-26"
    }
   ]
  }

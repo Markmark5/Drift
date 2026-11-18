@@ -1,8 +1,8 @@
 {
  "ticker": "CLI",
- "v": "2026-10-21.b2f0",
+ "v": "2026-11-18.9d0f",
  "ccy": "GBX",
- "src": "Yahoo CLI.L weekly",
+ "src": "Yahoo CLI.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,22 @@
   [
    "2026-10-21",
    45.8945
+  ],
+  [
+   "2026-10-23",
+   47.15
+  ],
+  [
+   "2026-10-30",
+   45.3
+  ],
+  [
+   "2026-11-06",
+   44.25
+  ],
+  [
+   "2026-11-13",
+   43.0
   ]
  ],
  "marks": [
@@ -1172,38 +1188,41 @@
    "s": -1,
    "q": "With near-term earnings under pressure, particularly from asset sales and the departure of our largest tenant, the Board now expects 2026 full year EPS to be in the range of 4.6 to 5.5 pence per share.",
    "file": "20260812_CLI_Half-Yearly-Results-Announcement-2026.md"
+  },
+  {
+   "d": "2026-11-18",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -2,
+   "q": "The shorter-term financial outlook has, however, been impacted by higher than anticipated interest rates, adverse FX movements and delayed lease commencement dates, and therefore the Board expects 2026 full year EPRA Earnings to be in the range of 3.6 to 4.6 pence per share.",
+   "file": "20261118_CLI_Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-12",
-  "doc": "H1 R",
-  "file": "20260812_CLI_Half-Yearly-Results-Announcement-2026.md",
-  "vs": "H1 R Aug-25 · TU Aug-26 · FY R Mar-26",
+  "rns": "2026-11-18",
+  "doc": "Q3 TU",
+  "file": "20261118_CLI_Trading-Update.md",
+  "vs": "Q3 TU Dec-25 · back to Nov-24 · H1 R Aug-26",
   "lines": [
    {
-    "sev": "red",
-    "type": "Anchor softened",
-    "text": "TU 4 Aug-26 set the FY26 EPS range beside “Current analyst consensus for 31 December 2026 EPS is 6.8 pence per share” → H1 repeats the 4.6–5.5p range with no consensus reference (midpoint c.26% below that figure)",
-    "span": "Consensus footnote given Aug-26 TU → dropped 8 days later"
-   },
-   {
     "sev": "amber",
-    "type": "Pushed out",
-    "text": "Dividend: H1-25 “Interim dividend of 1.30 pence per share” → H1-26 “no interim dividend will be paid”, distribution decision moved to the full-year results",
-    "span": "H1-24 2.60p → H1-25 1.30p → H1-26 nil"
-   },
-   {
-    "sev": "amber",
-    "type": "Target dropped",
-    "text": "Disposals: FY-25 results “We expect to dispose between £100 million and £150 million of assets during 2026” → now “expect to deliver around £100 million of disposals during the year”, the bottom of the range",
-    "span": "Mar-26 £100–150m → Aug-26 TU and H1 c.£100m"
+    "type": "Went quiet",
+    "text": "LTV: Nov-24 “LTV had fallen marginally to 49.6%”, Dec-25 “LTV had fallen further to 48.8%” → Nov-26 Q3 update gives no LTV at all (last stated 51.6% at 30 June 2026, against a 35–45% target)",
+    "span": "Given in Q3 TU Nov-24 and Dec-25 → first gap Nov-26"
    },
    {
     "sev": "amber",
     "type": "Wording vs number",
-    "text": "“Leasing markets remained stable across our regions” beside contracted rent secured of £5.7m (H1-25: £7.5m) and leases signed 8.9% below Dec-25 ERV (H1-25: 0.8% below)",
-    "span": "H1-25 vs H1-26"
+    "text": "“leasing activity strengthening” and “Occupier activity strengthened during the third quarter” beside nine-month rent secured down: “securing £9.0 million of annual rent, compared with 72 transactions securing £11.6 million during the same period in 2025”",
+    "span": "9M-25 £10.1m (Dec-25) → 9M-26 £9.0m"
+   },
+   {
+    "sev": "grey",
+    "type": "Went quiet",
+    "text": "Rent collection: Nov-24 “we had received 96% of Q4 contractual rents due” and Dec-25 “we had received 97% of Q4 contractual rents due” → Nov-26 no rent-collection figure; index-linked lease increases by country also dropped",
+    "span": "Given in Q3 TU Nov-24 and Dec-25 → first gap Nov-26"
    }
   ]
  }

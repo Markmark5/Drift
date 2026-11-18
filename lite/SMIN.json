@@ -1,6 +1,6 @@
 {
  "ticker": "SMIN",
- "v": "2026-11-13.4887",
+ "v": "2026-11-18.5fe3",
  "ccy": "GBX",
  "src": "Yahoo SMIN.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1052,6 +1052,10 @@
   [
    "2026-11-06",
    2615.0
+  ],
+  [
+   "2026-11-13",
+   2690.0
   ]
  ],
  "marks": [
@@ -1254,38 +1258,41 @@
    "s": -1,
    "q": "As we enter FY2027, underlying market conditions remain challenging, but our robust order book and business momentum underpins our expectation of organic revenue growth of ~4% and further increasing our operating margin into our medium-term target range.",
    "file": "20260922_SMIN_Smiths-Group-Plc-FY26-Results-Statement.md"
+  },
+  {
+   "d": "2026-11-18",
+   "doc": "Q1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Our order book position and growth initiatives underpin our expectation of full-year organic revenue growth of ~4%, accelerating, as expected, as the year progresses.",
+   "file": "20261118_SMIN_Q1-FY2027-Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-22",
-  "doc": "FY R",
-  "file": "20260922_SMIN_Smiths-Group-Plc-FY26-Results-Statement.md",
-  "vs": "FY R Sep-25 · back to Sep-24, Sep-23 · Q3 TU May-26 · H1 R Mar-26",
+  "rns": "2026-11-18",
+  "doc": "Q1 TU",
+  "file": "20261118_SMIN_Q1-FY2027-Trading-Update.md",
+  "vs": "Q1 TU Nov-25 · back to Nov-24 · FY R Sep-26",
   "lines": [
    {
-    "sev": "red",
-    "type": "Went quiet",
-    "text": "Revenue vs guidance: FY25 “We exceeded our twice-raised organic revenue growth guidance, delivering +8.9% growth” with a guidance-vs-outcome table → FY26 organic growth of +1.2%, below the May-26 guide “we are now expecting organic revenue growth of ~2%”, is not set against guidance; only profit is called “ahead of expectations”",
-    "span": "Outcome vs guidance given at Sep-23, Sep-24, Sep-25 → first gap in 3 years"
-   },
-   {
     "sev": "amber",
-    "type": "Went quiet",
-    "text": "John Crane order intake / book-to-bill: FY25 “a strong order intake performance in FY2025 resulting in a positive book to bill ratio” → FY26 gives no order intake or book-to-bill, only “supported by a robust order book”",
-    "span": "Order intake cited at Sep-24 and Sep-25"
-   },
-   {
-    "sev": "amber",
-    "type": "New caution",
-    "text": "Outlook now opens “As we enter FY2027, underlying market conditions remain challenging” and John Crane “is expected to see growth weighted to the second half of the year”; Sep-25 outlook cited “ongoing macro environment uncertainty” only",
-    "span": "Sep-25 → Sep-26"
+    "type": "Wording vs number",
+    "text": "Nov-25 Q1 organic growth of +3.5% was “in line with our overall expectations” → Nov-26 still headed “Q1 performance in line with expectations” and “We have made a solid start to the year” beside “a flat organic” revenue performance for the quarter",
+    "span": "Q1 organic growth Nov-24 +15.8%, Nov-25 +3.5%, Nov-26 flat"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Margin guide quantified: Sep-25 FY26 guide was “continuing margin expansion towards our medium-term targets” → FY27 “headline operating profit margin of ~21%”",
-    "span": "Sep-25 → Sep-26"
+    "text": "Divisional growth quantified: Nov-25 “John Crane posted marginal organic revenue decline” and “Flex-Tek recorded flat organic revenue” in words → Nov-26 “John Crane organic revenue declined (3.0)%.” and “Flex-Tek organic revenue grew +3.9%.”",
+    "span": "Q1 TU Nov-25 → Nov-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "John Crane order intake / book-to-bill back after going quiet in the Sep-26 results: “Order intake in the quarter was strong in all other regions outside the Middle East/Africa, resulting in an equally strong book to bill.” (still no ratio given)",
+    "span": "Quiet at FY R Sep-26 → back Nov-26"
    }
   ]
  }

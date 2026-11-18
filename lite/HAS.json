@@ -1,8 +1,8 @@
 {
  "ticker": "HAS",
- "v": "2026-10-21.b2ae",
+ "v": "2026-11-18.2329",
  "ccy": "GBX",
- "src": "Yahoo HAS.L weekly",
+ "src": "Yahoo HAS.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,22 @@
   [
    "2026-10-21",
    58.3
+  ],
+  [
+   "2026-10-23",
+   58.85
+  ],
+  [
+   "2026-10-30",
+   58.75
+  ],
+  [
+   "2026-11-06",
+   61.3
+  ],
+  [
+   "2026-11-13",
+   58.45
   ]
  ],
  "marks": [
@@ -1324,32 +1340,47 @@
    "s": 0,
    "q": "In line with our expectations, the decline in Group net fees eased to 3 % in Q1 driven by good Temp & Contracting growth in several of our countries.",
    "file": "20261012_HAS_First-Quarter-Trading-Statement.md"
+  },
+  {
+   "d": "2026-11-18",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "RAISE",
+   "s": 3,
+   "q": "We now expect pre-exceptional operating profit in the first half of FY27 will be at least £35m, materially above current consensus(1).",
+   "file": "20261118_HAS_Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-12",
-  "doc": "Q1 TU",
-  "file": "20261012_HAS_First-Quarter-Trading-Statement.md",
-  "vs": "Q1 TU Oct-25 · back to Oct-23 · FY R Aug-26 · Q4 TU Jul-26",
+  "rns": "2026-11-18",
+  "doc": "H1 TU",
+  "file": "20261118_HAS_Trading-Update_2.md",
+  "vs": "Q1 TU Oct-26 · H1 TU Jan-26 · no Nov-25 update",
   "lines": [
    {
     "sev": "amber",
     "type": "Went quiet",
-    "text": "Q1 profit read: Oct-25 “Group pre-exceptional operating profit was broadly stable YoY in Q1, including YoY increases in the UK&I and ANZ, and in line with our expectations.” → Oct-26 only net fees are said to be in line with expectations; no operating profit comment",
-    "span": "Q1 profit comment at Oct-23, Oct-24, Oct-25 → first gap in 3 years"
+    "text": "Group net fees: Oct-26 “In line with our expectations, the decline in Group net fees eased to 3 % in Q1” → Nov-26 no Group net fee growth figure; only Germany to “return to modest YoY like-for-like net fee growth in Q2 27” and other divisions “stable and in line with our expectations”",
+    "span": "Group LFL net fees given in every quarterly update → absent beside the profit upgrade"
    },
    {
-    "sev": "amber",
+    "sev": "grey",
     "type": "Went quiet",
-    "text": "Periodic cost base: Oct-24 “our current periodic cost base is slightly below £80m”, Oct-25 “our periodic cost base(1) has improved to c.£74m from c.£75m in Q4” → Oct-26 gives savings (c.£10m in Q1) but no cost base figure",
-    "span": "Given at Oct-24, Oct-25 → not given"
+    "text": "Net debt: Oct-26 “c.£ 4 5 m net debt (30 June 202 6 : £20.1 m net cash ) is in line with our expectations” → Nov-26 no net cash/debt figure",
+    "span": "Oct-26 → not given"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Market outlook: Oct-25 “we expect near term market conditions to remain challenging and, although we have limited forward visibility, we believe this is likely to persist through FY26.” → Oct-26 “expect stable market conditions in the near term with greater resilience in Temp & Contracting than in Perm.”",
-    "span": "First outlook without ‘challenging’ in the Q1 run since Oct-23"
+    "text": "H1 profit guide: Oct-26 gave no profit figure; Jan-26 guided H1 26 to c.£20m → Nov-26 “at least £35m, materially above current consensus(1)” vs consensus of £24.8m",
+    "span": "First H1 profit number before the January Q2 update"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Second-half view: “we typically deliver slightly stronger profitability in the second half and, at this stage, we would expect this to occur again in FY27.”",
+    "span": "Oct-26 had no FY27 profit comment"
    }
   ]
  }

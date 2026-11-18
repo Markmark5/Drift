@@ -1,8 +1,8 @@
 {
  "ticker": "SDY",
- "v": "2026-10-21.fee5",
+ "v": "2026-11-18.168b",
  "ccy": "GBX",
- "src": "Yahoo SDY.L weekly",
+ "src": "Yahoo SDY.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,22 @@
   [
    "2026-10-21",
    13.3
+  ],
+  [
+   "2026-10-23",
+   12.94
+  ],
+  [
+   "2026-10-30",
+   13.66
+  ],
+  [
+   "2026-11-06",
+   13.48
+  ],
+  [
+   "2026-11-13",
+   13.9
   ]
  ],
  "marks": [
@@ -1299,38 +1315,47 @@
    "s": -3,
    "q": "As a result, adjusted profit before tax for the full year is expected to be towards the lower end of range of current market consensus.",
    "file": "20260910_SDY_AGM-Statement.md"
+  },
+  {
+   "d": "2026-11-18",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -1,
+   "q": "While we expect current market conditions to persist, our expectations for FY2027 remain unchanged with the Board expecting a second half weighting to revenue and profits, with delivery of H2 FY2027 revenue dependent on continued ramp up of recent large contract wins.",
+   "file": "20261118_SDY_Half-Year-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-10",
-  "doc": "AGM",
-  "file": "20260910_SDY_AGM-Statement.md",
-  "vs": "AGM Sep-25 · FY R Jun-26 · AGM Sep-24",
+  "rns": "2026-11-18",
+  "doc": "H1 R",
+  "file": "20261118_SDY_Half-Year-Results.md",
+  "vs": "H1 R Nov-25 · AGM Sep-26 · FY R Jun-26",
   "lines": [
    {
     "sev": "red",
     "type": "Anchor softened",
-    "text": "Jun-26 “Speedy Hire reconfirms market guidance8 for FY2027” → Sep-26 “EBITDA to be broadly in line with market expectations” and PBT “towards the lower end of range of current market consensus”; the consensus anchor itself fell from “Revenue of £475.3m and adjusted EBITDA of £117.3m” to “Revenue of £459.0m, adjusted EBITDA of £111.6m”",
-    "span": "FY R Jun-26 → AGM Sep-26"
+    "text": "Sep-26 AGM: “adjusted profit before tax for the full year is expected to be towards the lower end of range of current market consensus”, with the consensus figures footnoted → Nov-26 only “our expectations for FY2027 remain unchanged”, no consensus reference and no PBT view",
+    "span": "Consensus anchor at FY R Jun-26 and AGM Sep-26 → dropped Nov-26"
    },
    {
     "sev": "amber",
-    "type": "New caution",
-    "text": "First flag on financing costs: “the Board also expects interest costs to be higher than market expectations”, with “leverage still running at the top end of the margin ratchet on the RCF”",
-    "span": "Not in AGM Sep-25 or FY R Jun-26"
-   },
-   {
-    "sev": "amber",
-    "type": "Number to words",
-    "text": "Profit momentum: Jun-26 “Adjusted EBITDA1 for the same period c.13% up on last year” → Sep-26 “Adjusted EBITDA and operating profit margins are improving”, no figure (revenue still quantified at 4.6%)",
-    "span": "FY R Jun-26 → AGM Sep-26"
+    "type": "Target dropped",
+    "text": "Deleveraging timetable: Nov-25 “Meaningful deleveraging is expected in the next 12-24 months to the middle of the target range of 1.0-2.0x”, Jun-26 “Meaningful deleveraging expected over 12-24 months, supported by strong cash generation.” → Nov-26 no timetable, leverage 3.2x “temporarily outside of the Group’s target range communicated within the FY2026 annual results”",
+    "span": "Given Nov-25 and Jun-26 → gone Nov-26"
    },
    {
     "sev": "amber",
     "type": "Went quiet",
-    "text": "ProService revenue target: Nov-25, Apr-26 and Jun-26 all restated it (Jun-26 “supporting unchanged expectations of £50-55m of annualised revenue”) → Sep-26 only “initial trading from our Commercial Agreement with ProService has been encouraging”, no £50-55m",
-    "span": "Given in 3 consecutive prints → first gap Sep-26"
+    "text": "ProService revenue target: Nov-25 and Jun-26 cited “£50-55m of annualised revenue” → Nov-26 only “Trading from our Commercial Agreement with ProService has been encouraging”, no figure, in FY2027, the year it was meant to land",
+    "span": "Given Nov-25, Apr-26, Jun-26 → gap Sep-26 and Nov-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Headline “Strong continuing focus on reducing debt and driving profit” beside net debt that “increased by £7.1m, from £159.0m at the beginning of the period, to £166.1m at 30 September 2026” (H1 FY2026: £118.9m) and an adjusted loss before tax",
+    "span": "H1 R Nov-25 → Nov-26"
    }
   ]
  }

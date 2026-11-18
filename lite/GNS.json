@@ -1,8 +1,8 @@
 {
  "ticker": "GNS",
- "v": "2026-10-21.de9c",
+ "v": "2026-11-18.e335",
  "ccy": "GBX",
- "src": "Yahoo GNS.L weekly",
+ "src": "Yahoo GNS.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,22 @@
   [
    "2026-10-21",
    2244.0
+  ],
+  [
+   "2026-10-23",
+   2240.0
+  ],
+  [
+   "2026-10-30",
+   2286.0
+  ],
+  [
+   "2026-11-06",
+   2390.0
+  ],
+  [
+   "2026-11-13",
+   2294.0
   ]
  ],
  "marks": [
@@ -1263,14 +1279,48 @@
    "s": -1,
    "q": "Group FY27 adjusted profit before tax is expected to be second half weighted, reflecting first half disease-related challenges in North American pork production, low pork prices in Brazil and subdued global dairy prices",
    "file": "20260910_GNS_Preliminary-Results.md"
+  },
+  {
+   "d": "2026-11-18",
+   "doc": "AGM",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Group FY27 adjusted profit before tax in constant currency is expected to be in line with current market expectations1 and second half weighted, as previously guided.",
+   "file": "20261118_GNS_AGM-Trading-Update-–-Solid-start-to-the-year.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-14",
-  "doc": "OPS",
-  "file": "20261014_GNS_Admission-to-Trading.md",
-  "vs": "Admission notice Sep-26 · FY R Sep-26",
-  "lines": []
+  "rns": "2026-11-18",
+  "doc": "AGM",
+  "file": "20261118_GNS_AGM-Trading-Update-–-Solid-start-to-the-year.md",
+  "vs": "AGM Nov-25 · back to Nov-24 · FY R Sep-26",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "New caution",
+    "text": "Currency headwind outside the guide: Nov-26 guide is “in constant currency” beside a new “£3m to £4m adverse currency impact for the year”, while the footnote consensus is actual currency (“is £91.0m to £94.5m with an average midpoint of £93.3m”); Nov-24 the headwind sat inside the guide: “This includes an expected currency headwind of £8m to £9m in the 2025 financial year”",
+    "span": "Sep-26 FX was a tailwind → first adverse FX call for FY27"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Growth anchor: Sep-26 FY27 guide “moderately higher than normalised7 FY26 adjusted PBT of £90.3m” → Nov-26 in line with consensus only, no growth reference",
+    "span": "FY R Sep-26 → AGM Nov-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "PIC regional growth: Nov-25 “PIC trading continued to be strong with every region achieving royalty revenue and adjusted operating profit growth” → Nov-26 “PIC has delivered resilient trading despite challenging end-markets for its customers”",
+    "span": "Given at Nov-24 and Nov-25 AGMs → first gap"
+   },
+   {
+    "sev": "grey",
+    "type": "Wording vs number",
+    "text": "ABS: Nov-25 “ABS adjusted operating profit2 has been slightly lower than expected due to phasing” → Nov-26 “ABS trading has been challenging as low global dairy prices continue to weigh on customer profitability”, with the year resting on H2: “Management expects a material improvement in the second half”",
+    "span": "Dairy flagged at FY R Sep-26 (“subdued global dairy prices”)"
+   }
+  ]
  }
 }

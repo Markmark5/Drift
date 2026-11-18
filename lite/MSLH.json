@@ -1,8 +1,8 @@
 {
  "ticker": "MSLH",
- "v": "2026-10-21.1402",
+ "v": "2026-11-18.c44e",
  "ccy": "GBX",
- "src": "Yahoo MSLH.L weekly",
+ "src": "Yahoo MSLH.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,22 @@
   [
    "2026-10-21",
    174.356
+  ],
+  [
+   "2026-10-23",
+   166.3
+  ],
+  [
+   "2026-10-30",
+   177.5
+  ],
+  [
+   "2026-11-06",
+   179.8
+  ],
+  [
+   "2026-11-13",
+   176.2
   ]
  ],
  "marks": [
@@ -1300,38 +1316,41 @@
    "s": 0,
    "q": "Trading in the first half, together with continued operational progress and financial discipline, supports the Board's expectations for FY26, which are unchanged.",
    "file": "20260810_MSLH_Half-year-results.md"
+  },
+  {
+   "d": "2026-11-18",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": -2,
+   "q": "Our outlook for full year profitability remains in line with market expectations, assuming no further deterioration in trading conditions.",
+   "file": "20261118_MSLH_Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-10",
-  "doc": "H1 R",
-  "file": "20260810_MSLH_Half-year-results.md",
-  "vs": "H1 R Aug-25 · prev AGM TU May-26 · FY R Mar-26",
+  "rns": "2026-11-18",
+  "doc": "Q3 TU",
+  "file": "20261118_MSLH_Trading-Update.md",
+  "vs": "Q3 TU Nov-25 · H1 R Aug-26 · AGM May-26",
   "lines": [
    {
     "sev": "amber",
     "type": "New caution",
-    "text": "Roofing: first quantified competitor threat, “net market capacity in concrete tiles increased by around 12% during the last twelve months”, with the business responding to “aggressive competitor activity”",
-    "span": "Not in Aug-25, Mar-26 or May-26"
+    "text": "Outlook now conditional: Aug-26 “supports the Board's expectations for FY26, which are unchanged” → now “in line with market expectations, assuming no further deterioration in trading conditions”, with “increasingly weak new housebuilding activity levels”",
+    "span": "Nov-25 Q3 TU unconditional: “our full year profit expectations remain unchanged”"
    },
    {
-    "sev": "grey",
-    "type": "Anchor softened",
-    "text": "Aug-25 footnote “Company guidance is for adjusted profit before tax for 2025 to be in the range of £42 million and £46 million.” → Aug-26 “FY26 profitability expectations unchanged” with no figure or consensus",
-    "span": "Range given Jul-25 to Nov-25 only, after the cut"
-   },
-   {
-    "sev": "grey",
+    "sev": "amber",
     "type": "Wording vs number",
-    "text": "Roofing margin 25.4% → 23.8%: Aug-25 “delivering a strong operating margin of 25.4 per cent” → Aug-26 “As expected, segment operating profit decreased by £1.7 million to £23.1 million”",
-    "span": "H1-25 → H1-26; Building Products margin also down 0.8pts"
+    "text": "Headline “Resilient trading” beside group revenue of £544m vs £548m a year earlier; four months to October flat and Building Products (4.1)%",
+    "span": "Nov-25: ten months +2%"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "New medium-term framing: “improved margins, cash generation and returns over the medium term, with a pathway to double operating profit”",
-    "span": "First appearance; ROCE target of around 15% kept"
+    "text": "Market anchor with figures back: Aug-26 “FY26 profitability expectations unchanged”, no figure → now “Company compiled analyst consensus for full year 2026 adjusted profit before tax is £49.7 million with a range of £48.0 million to £50.6 million.”",
+    "span": "First FY26 consensus figure; Board's expectations used at Mar-26, May-26, Aug-26"
    }
   ]
  }

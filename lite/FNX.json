@@ -1,6 +1,6 @@
 {
  "ticker": "FNX",
- "v": "2026-11-12.6678",
+ "v": "2026-11-18.8535",
  "ccy": "GBX",
  "src": "Yahoo FNX.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1052,6 +1052,10 @@
   [
    "2026-11-06",
    181.0
+  ],
+  [
+   "2026-11-13",
+   188.0
   ]
  ],
  "marks": [
@@ -1289,38 +1293,35 @@
    "s": 0,
    "q": "Fonix enters FY27 with real momentum, building on a return to double-digit growth in FY26 gross profit and adjusted EBITDA, ahead of expectations.",
    "file": "20260922_FNX_Final-Results.md"
+  },
+  {
+   "d": "2026-11-18",
+   "doc": "AGM",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Fonix has made a positive start to the financial year and is trading in line with management expectations.",
+   "file": "20261118_FNX_AGM-Statement.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-22",
-  "doc": "FY R",
-  "file": "20260922_FNX_Final-Results.md",
-  "vs": "FY R Sep-25 · YE-TU Jul-26 · back to FY R Sep-23 · H1 R Mar-26",
+  "rns": "2026-11-18",
+  "doc": "AGM",
+  "file": "20261118_FNX_AGM-Statement.md",
+  "vs": "AGM Nov-25 · FY R Sep-26 · back to AGM Nov-24",
   "lines": [
    {
     "sev": "amber",
     "type": "Went quiet",
-    "text": "Unique mobile users: Sep-25 “29m unique mobile user interactions during the year (FY24: 23m) with 100% uptime” → Sep-26 highlight “100% uptime and platform proven to scale reliably with increasing demand”, no user number",
-    "span": "Given at FY23 (18.9m), FY24 (23m), FY25 (29m) → first gap"
-   },
-   {
-    "sev": "amber",
-    "type": "Pushed out",
-    "text": "France launch: Mar-26 “launch targeted for early FY27” → Sep-26 “in France we expect to move beyond this year's connectivity work and into direct commercial engagement with broadcasters”, no launch date",
-    "span": "Date first dropped at Jul-26 TU"
-   },
-   {
-    "sev": "amber",
-    "type": "New caution",
-    "text": "Portugal: Mar-26 “Portugal continues to develop well” → Sep-26 “Whilst it's fair to say the market progress has taken longer than we'd anticipated” and “unlock the market constraints that have held back faster progress”",
-    "span": "First admission of delay"
+    "text": "Named markets: Nov-25 “The Company's services are now live and growing in Portugal” (Sep-26 also named Switzerland, France and a sixth market) → now only “the Group’s international and product expansion strategy continues to progress”, no market named",
+    "span": "Markets named at AGM Nov-24, Nov-25 → first gap"
    },
    {
     "sev": "grey",
-    "type": "Wording vs number",
-    "text": "International share: Sep-25 “Overseas markets now represent c.13% of gross profit, driven primarily by Ireland” → Sep-26 “Overseas markets now represent c.13% of gross profit” beside “international expansion is fast becoming a genuine growth engine”",
-    "span": "Overseas share flat year on year despite Portugal and Switzerland"
+    "type": "Went quiet",
+    "text": "Forward confidence: Nov-25 “The Board remains confident in the Company's continued growth potential.” and pipeline “Fonix also has a strong pipeline of broadcaster opportunities across all its target geographies and product areas.” → now neither, only “Momentum in the UK is strong”",
+    "span": "Confidence line at AGM Nov-24, Nov-25"
    }
   ]
  }

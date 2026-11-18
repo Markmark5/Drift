@@ -1,8 +1,8 @@
 {
  "ticker": "JET2",
- "v": "2026-10-21.c58d",
+ "v": "2026-11-18.a3ba",
  "ccy": "GBX",
- "src": "AlphaVantage JET2.LON weekly",
+ "src": "AlphaVantage JET2.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1060,6 +1060,22 @@
   [
    "2026-10-20",
    1431.0
+  ],
+  [
+   "2026-10-23",
+   1443.0
+  ],
+  [
+   "2026-10-30",
+   1418.0
+  ],
+  [
+   "2026-11-06",
+   1484.0
+  ],
+  [
+   "2026-11-13",
+   1516.0
   ]
  ],
  "marks": [
@@ -1278,37 +1294,48 @@
    "s": -1,
    "q": "We have been encouraged by the sustained level of demand for both our holiday products through the peak summer season which gives us confidence for the remainder of the financial year.",
    "file": "20260903_JET2_AGM-Statement-&-Intended-Move-to-the-Main-Market.md"
+  },
+  {
+   "d": "2026-11-18",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "CUT",
+   "s": -2,
+   "q": "While it remains premature to provide guidance for full year profitability given the proportion of the Winter season still to book and continued volatility in jet fuel prices for our remaining unhedged requirement, we will continue to take responsible action on seat capacity and operating costs in response to the external environment.",
+   "file": "20261118_JET2_Half-year-Financial-Report.md",
+   "gnote": "withdrawn"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-03",
-  "doc": "AGM",
-  "file": "20260903_JET2_AGM-Statement-&-Intended-Move-to-the-Main-Market.md",
-  "vs": "AGM Sep-25 · FY R Jul-26 · back to AGM Sep-22/23/24",
+  "rns": "2026-11-18",
+  "doc": "H1 R",
+  "file": "20261118_JET2_Half-year-Financial-Report.md",
+  "vs": "H1 R Nov-25 · AGM Sep-26 · back to H1 R Nov-22/23/24",
   "lines": [
    {
     "sev": "red",
     "type": "Anchor softened",
-    "text": "Last AGM: “we currently expect EBIT1 to be towards the lower end of the consensus range2” (footnoted £449m - £496m) → this AGM no profit or expectations reference for FY27, only “gives us confidence for the remainder of the financial year”",
-    "span": "AGM anchor given Sep-22, Sep-23, Sep-24, Sep-25 → first gap; also absent at Jul-26 FY R (Jul-25: “We are currently trading in line with market expectations‡”)"
+    "text": "Last H1: “we are currently on track to deliver in line with market expectations‡” (footnote consensus EBIT £453m) → this H1 “it remains premature to provide guidance for full year profitability”, no consensus footnote",
+    "span": "H1 anchor given Nov-22, Nov-23, Nov-24, Nov-25 → first gap; next update deferred to Q3 Feb-27"
+   },
+   {
+    "sev": "red",
+    "type": "Next-year view dropped",
+    "text": "Next summer bookings: Nov-25 “Bookings at this very early stage are in line with management expectations.” → Nov-26 Summer 2027 only “We will continue to review our Summer 2027 on-sale capacity”, no bookings view",
+    "span": "Given Nov-24 and Nov-25 → first gap"
    },
    {
     "sev": "amber",
-    "type": "Split withheld",
-    "text": "Package vs flight-only: Sep-25 “flown package holiday customers grew by 2%, with flight-only passengers rising by 17%”; Sep-24 “Booked to date Package Holiday customers are up by 8%, representing 70.2% of total departing passengers” → now one total, “booked-to-date passengers up 8.8% and growth across both package holiday and flight-only products”",
-    "span": "Split given Sep-24, Sep-25"
+    "type": "New caution",
+    "text": "Winter capacity: Sep-26 “on-sale seat capacity is 8.0% higher than Winter 2025/26 at 5.9m seats” → now “reducing capacity by 240,000 seats since early September” on “elevated unhedged jet fuel forward prices”; hedges now “continue to provide some protection” (Sep-26 “significant protection”)",
+    "span": "First capacity cut; fuel first named as a profit risk"
    },
    {
     "sev": "amber",
-    "type": "Number to words",
-    "text": "Winter forward bookings: Sep-24 “Winter 2024/25 forward bookings are encouraging with average load factor 0.8ppts ahead of Winter 2023/24 at the same point” → Sep-26 “Early indications show similar booking trends to Summer with passengers still booking closer to departure”, no load factor",
-    "span": "Numeric at Sep-23, Sep-24; none Sep-25, Sep-26"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Summer load factor re-quantified: Sep-25 gave no load factor → now “the combined booked average load factor to the end of August was 1.5ppts ahead of the prior year”"
+    "type": "Wording vs number",
+    "text": "Highlight “Resilient profit performance” beside “delivered Operating profit of £588.3m (2025: £715.2m)”, down 18%",
+    "span": "HY26 → HY27"
    }
   ]
  }

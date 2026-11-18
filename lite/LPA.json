@@ -1,8 +1,8 @@
 {
  "ticker": "LPA",
- "v": "2026-10-27.3de1",
+ "v": "2026-11-18.aa7b",
  "ccy": "GBX",
- "src": "AlphaVantage LPA.LON weekly",
+ "src": "AlphaVantage LPA.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1060,6 +1060,18 @@
   [
    "2026-10-26",
    82.0
+  ],
+  [
+   "2026-10-30",
+   82.0
+  ],
+  [
+   "2026-11-06",
+   82.5
+  ],
+  [
+   "2026-11-13",
+   83.5
   ]
  ],
  "marks": [

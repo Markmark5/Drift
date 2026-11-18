@@ -1,6 +1,6 @@
 {
  "ticker": "SUS",
- "v": "2026-11-04.f325",
+ "v": "2026-11-18.e772",
  "ccy": "GBX",
  "src": "Yahoo SUS.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1056,6 +1056,14 @@
   [
    "2026-10-30",
    1885.0
+  ],
+  [
+   "2026-11-06",
+   1900.0
+  ],
+  [
+   "2026-11-13",
+   1940.0
   ]
  ],
  "marks": [
@@ -1348,38 +1356,41 @@
    "s": -1,
    "q": "The economic and political backdrop remains uncertain, but S&U is well placed to navigate it. Current trends indicate our ability to do just that, to the benefit of our customers and shareholders.",
    "file": "20260929_SUS_Interim-Results-for-the-period-ended-5-August-2026.md"
+  },
+  {
+   "d": "2026-11-18",
+   "doc": "Q3 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -2,
+   "q": "The past quarter has seen a temporary uptick in early arrears, primarily related to our planned credit scorecard updates in late 2025 and potentially impacted by cost-of-living pressures from the Iran war.",
+   "file": "20261118_SUS_Trading-Statement.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-29",
-  "doc": "H1 R",
-  "file": "20260929_SUS_Interim-Results-for-the-period-ended-5-August-2026.md",
-  "vs": "H1 R Oct-25 · H1 TU Aug-26 · back to H1 R Oct-24",
+  "rns": "2026-11-18",
+  "doc": "Q3 TU",
+  "file": "20261118_SUS_Trading-Statement.md",
+  "vs": "Q3 TU Dec-25 · H1 R Sep-26 · back to Dec-22/Dec-24",
   "lines": [
    {
-    "sev": "amber",
+    "sev": "red",
     "type": "Anchor softened",
-    "text": "Full-year view: H1 Oct-25 “should be reflected in S&U's full year results” → H1 Sep-26 “The economic and political backdrop remains uncertain, but S&U is well placed to navigate it.”, no full-year statement, with H1 PBT flat at £15.7m (H1 2025: £15.6m)",
-    "span": "Oct-25 full-year line → Sep-26 none"
+    "text": "Q3 profit read: Dec-25 “Group profit at the end of the third quarter continues to beat budget.” → Nov-26 no profit-vs-budget statement; profits “will depend upon a number of internal and external factors”",
+    "span": "Dec-22 “in line with expectations”, Dec-25 “beat budget” → absent from Nov-26 full file; Sep-26 H1 R also had no full-year line"
    },
    {
     "sev": "amber",
     "type": "New caution",
-    "text": "Aspen: first mention of “heightened margin pressure on the quality deals it focuses upon”, Aspen PBT £4.0m (H1 2025: £5.0m), “just outside of budget”",
-    "span": "Oct-25 Aspen “a record and up 47%” → Sep-26 margin pressure"
-   },
-   {
-    "sev": "amber",
-    "type": "Demoted",
-    "text": "Finance costs: H1 Oct-25 highlights “Group net finance costs at £6.6m (H1 2024: £9.6m)” → dropped from Sep-26 highlights while net finance costs rose to £8.5m and borrowings to £285.1m",
-    "span": "In highlights Oct-24, Oct-25 → absent Sep-26"
+    "text": "Credit quality: Dec-25 “latest collection rates for November are at a record 93.4% of due” → Nov-26 “a temporary uptick in early arrears”, with bad debt over budget in October having “a small impact on short-term profits”",
+    "span": "First arrears flag since the 2024 FCA review"
    },
    {
     "sev": "grey",
     "type": "Went quiet",
-    "text": "Aspen ROCE: H1 Oct-25 “Aspen's ROCE of 12.3%, a record” plus book yield 14.9% → Sep-26 no Aspen ROCE or yield figure; only Advantage “Cost, yield and ROCE also remain on budget.”",
-    "span": "Given Oct-24, Oct-25 interims (and May-23, Jun-24 AGMs) → first gap"
+    "text": "Aspen receivables: Dec-25 “At the end of the period under review these are now c.£173m.” and Sep-26 £199.9m → Nov-26 no Aspen receivables figure, only an expected increase “by about 20% year on year” and deals “only reaching the same level as last year”",
+    "span": "Given Dec-24, Dec-25, Sep-26 → first gap"
    }
   ]
  }

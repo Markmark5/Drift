@@ -1,6 +1,6 @@
 {
  "ticker": "SYS",
- "v": "2026-11-16.5250",
+ "v": "2026-11-18.1cd9",
  "ccy": "GBX",
  "src": "Yahoo SYS.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1231,32 +1231,47 @@
    "s": 0,
    "q": "The Group’s trading trajectory since the start of the current financial year has continued in line with the exit run rate achieved in Q4 of FY26, with both sales growth and margins holding consistently. The Board remains confident that the Group will deliver full-year results in line with current market expectations.",
    "file": "20260917_SYS_AGM-Statement.md"
+  },
+  {
+   "d": "2026-11-18",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Trading in the second half has started positively and we remain on track to deliver results for FY27 in line with current market expectations.",
+   "file": "20261118_SYS_Half-year-Results-to-30-September-2026.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-17",
-  "doc": "AGM",
-  "file": "20260917_SYS_AGM-Statement.md",
-  "vs": "FY R Jul-26 · Aug-26 contract RNS · AGM Sep-25 (result only)",
+  "rns": "2026-11-18",
+  "doc": "H1 R",
+  "file": "20261118_SYS_Half-year-Results-to-30-September-2026.md",
+  "vs": "H1 R Dec-25 · AGM Sep-26 · FY R Jul-26",
   "lines": [
    {
-    "sev": "red",
-    "type": "Anchor softened",
-    "text": "FY27 guide: Jul-26 “The Board expects to exceed market expectations for FY27.” → Sep-26 “The Board remains confident that the Group will deliver full-year results in line with current market expectations.”",
-    "span": "Ten weeks later; no mention of forecasts having been raised"
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Managed IT Services: Dec-25 “Managed IT Services revenue has now stabilised and is positioned for a return to growth in FY27” → Nov-26 “Excluding Saxis, which contributed £0.4m, it was 1.0% lower, as three larger customers reduced the scope of their managed services contracts”",
+    "span": "H1 R Dec-25 → H1 R Nov-26; headline “positioned for growth”"
    },
    {
     "sev": "grey",
-    "type": "Number to words",
-    "text": "Trading figures: Jul-26 “Adjusted EBITDA for the full year increased 26% to £1.2m, ahead of market expectations, with £1.0m delivered during the second half and margin level maintained into the first quarter of the new year.” → Sep-26 “both sales growth and margins holding consistently”, no figures",
-    "span": "Jul-26 → Sep-26"
+    "type": "Wording vs number",
+    "text": "Cybersecurity share shown against the full year: “Cybersecurity accounted for 46.4% of revenue (FY26: 45%)”, while the same half a year earlier was “today comprising 47% of revenue in the Period”",
+    "span": "H1 R Dec-25 → H1 R Nov-26"
+   },
+   {
+    "sev": "grey",
+    "type": "New caution",
+    "text": "First admission an incentive target will be missed: 2024 PSP charge reversed “as the earnings per share target attached to those awards is no longer expected to be met”",
+    "span": "Not in Dec-25, Jul-26 or Sep-26"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "First AGM trading statement in the record (Sep-24 and Sep-25 issued only results of AGM), plus “appointment as an approved supplier on the UK Government's G-Cloud 15 framework” with a first contract secured",
-    "span": "New route to market"
+    "text": "New KPIs: “with organic revenue growth1 of 5.0%” (with a reconciliation) and “Average annual contract values grew 28% compared to the same period last year”",
+    "span": "Jul-26 gave H2 organic growth only"
    }
   ]
  }
