@@ -2022,17 +2022,17 @@
       "company": "SysGroup plc",
       "kind": "ticker",
       "direction": "up",
-      "headline": "Guide settles at in line with consensus now demanding 11% revenue growth - the July raise has been banked, not repeated.",
+      "headline": "Profit 4.8x and the first pre-tax profit in four years - but the recurring base shrank 1% without the acquisition.",
       "trigger": "2 of 3 green-shoot conditions converging",
       "alert": true,
       "fired": 2,
       "fired_of": 3,
       "lights": "g-g",
-      "rns_type": "AGM",
-      "rns_date": "2026-09-17",
-      "build_date": "2026-09-17",
-      "spec_version": "5.5",
-      "next_test": "H1 FY27 results, ~Dec-26 - does Managed IT Services gross margin stop falling, and does exceed come back?",
+      "rns_type": "H1 R",
+      "rns_date": "2026-11-18",
+      "build_date": "2026-11-18",
+      "spec_version": "5.8",
+      "next_test": "Year-end update ~Apr-27 - does organic managed services revenue stop shrinking, and does H2 deliver the GBP13.5m the forecast needs?",
       "url": "SYS.html",
       "grid": {
         "labels": [
@@ -2043,7 +2043,6 @@
           "R5"
         ],
         "periods": [
-          "H2 22",
           "H1 23",
           "H2 23",
           "H1 24",
@@ -2051,42 +2050,44 @@
           "H1 25",
           "H2 25",
           "H1 26",
-          "H2 26"
+          "H2 26",
+          "H1 27"
         ],
         "rows": [
-          "gggrragar",
-          "aggrrggrg",
-          "gggrrraga",
-          "ggrrragrg",
-          "grraragar"
+          "ggrragarg",
+          "ggrrggrga",
+          "ggrrragaa",
+          "grrragrgg",
+          "rraragara"
         ],
-        "note": "One row per ledger rank R1-R5 at half grain; rightmost cell is H2 FY26, the last scored half."
+        "note": "One row per ledger rank R1-R5 at half grain; rightmost cell is H1 FY27, the Buy/Sell half."
       },
       "prev": {
         "direction": "up",
         "fired": 2,
         "lights": "g-g",
-        "rns_date": "2026-07-08",
-        "rns_type": "FY R"
+        "rns_date": "2026-09-17",
+        "rns_type": "AGM"
       },
       "trend": {
-        "mode": "growth",
-        "cells": "gg-",
+        "mode": "share",
+        "cells": "ra-",
         "rows": [
           {
             "m": "REV",
-            "gap": 6.4
+            "gap": -2.7
           },
           {
             "m": "EBITDA",
-            "gap": 17.5
+            "gap": 1.1
           },
           {
             "m": "PBT",
             "gap": null
           }
         ]
-      }
+      },
+      "chart": "charts/SYS.json?v=2026-11-18.9235"
     },
     {
       "ticker": "BGO",

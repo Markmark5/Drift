@@ -14,7 +14,7 @@ details.top>summary::-webkit-details-marker{display:none}
 details.top>summary::before{content:"\25B8 ";color:var(--mute)}
 details.top[open]>summary::before{content:"\25BE "}
 details.top>div.tb{padding:0 13px 13px}
-details.sub{background:#fff;border:1px solid var(--line);border-radius:8px;margin-top:12px;padding:0}
+details.sub{background:#fff;border:1px solid var(--line);border-radius:8px;margin-top:12px}
 details.sub>summary{font-size:12.5px;padding:9px;cursor:pointer;font-weight:700;list-style:none}
 details.sub>summary::-webkit-details-marker{display:none}
 details.sub>summary::before{content:"\25B8 ";color:var(--mute)}
@@ -98,7 +98,7 @@ details.guide>summary .em{font-size:22px;margin-right:6px}
 .gbody h4{font-family:'Caveat',"Comic Sans MS",cursive;font-weight:700;font-size:22px;margin:12px 0 4px}
 .gbody h4:first-child{margin-top:0}
 .gbody .vintage{color:var(--muted);font-size:11px;margin-top:12px}
-.boxes{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 14px}
+.boxes{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
 .box{background:#f2f1ec;border-radius:0 0 10px 10px;border-top:3px solid var(--dir);padding:12px 15px 13px}
 .box .lb{font-size:13px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted)}
 .box .hl2{font-size:19px;font-weight:700;margin:3px 0 4px}
@@ -117,11 +117,12 @@ details.guide>summary .em{font-size:22px;margin-right:6px}
 @media(max-width:760px){.tw{border-left:none;border-top:1px dashed #57544c;padding-left:0;padding-top:10px;margin-top:2px}
 .tw .dset{justify-content:space-between;gap:8px}.tw .dcell{width:32%}}
 /* ==== §2.0 ==== */
-.dkbar{background:#2b2a26;color:#fff;padding:8px 15px;font-size:20px;line-height:1.3}
+.dkbar{background:#2b2a26;color:#fff;padding:8px 15px;font-size:20px;line-height:1.3;display:flex;align-items:baseline;gap:10px}
 .dkbar .em{font-size:22px}
+.dkbar .bsstamp{margin-left:auto;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-weight:400;font-size:11px;color:#c9c6bd;letter-spacing:.04em;white-space:nowrap}
 .flexrow{display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap;margin:16px 0}
 .bridge{flex:1 1 480px;border:1px solid var(--line);border-radius:10px;overflow:hidden}
-.brow{display:grid;grid-template-columns:190px 92px 1fr;border-top:1px solid var(--line);font-size:12.5px}
+.brow{display:grid;grid-template-columns:200px 92px 1fr;border-top:1px solid var(--line);font-size:12.5px}
 .brow>div{padding:9px 11px}
 .brow .bl{font-size:19px;line-height:1.25}
 .brow .bc{font-weight:700;text-align:right;white-space:nowrap}
@@ -133,12 +134,12 @@ details.guide>summary .em{font-size:22px;margin-right:6px}
 .cslead{font-weight:700;color:var(--green);margin:0 0 8px;font-size:13.5px}
 .csbar ul{margin:0;padding-left:19px;font-size:13px;line-height:1.5}
 .csbar li{margin-bottom:4px}
+/* ==== §3 / §4 ==== */
 table.ttab,table.dtab{border-collapse:collapse;font-size:12px;width:100%}
 table.ttab th,table.ttab td,table.dtab th,table.dtab td{border:1px solid var(--line);padding:7px 8px;vertical-align:top;text-align:center}
 table.ttab th,table.dtab th{background:var(--paper);font-size:11px}
-table.ttab td.ph{text-align:left;font-style:italic;color:#333}
-table.ttab td.ph .ctx{font-style:normal;color:var(--mute);font-size:11px}
-table.ttab td.ph .noq{display:none}
+table.ttab td.ph{text-align:left;font-style:italic;color:#333;width:27%}
+table.ttab td.cx{text-align:left;color:var(--mute);font-size:11px;line-height:1.5;width:38%}
 table.ttab td.dcol{cursor:pointer;white-space:nowrap;font-weight:700}
 table.ttab td.sc{white-space:nowrap}
 .dt2{font-weight:400;font-size:10.5px;color:var(--mute)}
@@ -148,14 +149,25 @@ th.dhead{cursor:pointer;white-space:nowrap;font-size:10.5px}
 th.dhead .sub{display:block;font-weight:400;color:var(--mute);font-size:9.5px}
 th.dhead:hover{background:#eceae4}
 .pinkhl{background:#fde9f0 !important}
+table.ttab.collapsed tr.earlier{display:none}
+tr.expander td{background:#fbfaf7;text-align:left;cursor:pointer;font-size:11.5px;font-weight:700;color:var(--mute);user-select:none}
+tr.expander td:hover{background:#f1efe9}
 .stripcell{display:inline-block;width:26px;height:26px;line-height:26px;text-align:center;font-size:11px;font-weight:700;border:1px solid var(--line);margin-right:2px;border-radius:3px}
 .s-g{background:#cfe9da}.s-a{background:#fbeccb}.s-r{background:#f7d4d0}.s-x{background:#e3e0da}.s-d{background:#f7f6f2;color:#bbb}
 .stripcell.bsc{outline:2px solid var(--ink);outline-offset:1px}
 pre.json{background:#fff;border:1px solid var(--line);border-radius:6px;padding:10px;font-size:11px;overflow-x:auto;white-space:pre-wrap;user-select:all}
+/* ==== §3 price overlay panel ==== */
+.pxpanel{border:1px solid var(--line);border-radius:10px;max-width:1100px;margin:16px 0;overflow:hidden}
+.pxhead{display:flex;align-items:baseline;gap:12px;padding:10px 14px;border-bottom:1px solid var(--line);background:var(--paper);flex-wrap:wrap}
+.pxhead .t{font-size:13px;font-weight:700}
+.pxhead .lg{margin-left:auto}
+.pxbody{padding:12px 14px 4px}
+.pxcap{padding:8px 14px 12px;font-size:11px;color:var(--mute);line-height:1.55}
 @media(max-width:760px){.boxes{grid-template-columns:1fr}.card{flex-direction:column}
 .rail{width:100%;flex-direction:row;padding:10px;align-items:center;gap:10px}
 .railtkr,.raillab,.railco{writing-mode:horizontal-tb;transform:none;max-height:none}
-.railgap{display:none}.bstrip{flex-direction:column}.bsweep{min-width:0;padding-right:0}}
+.railgap{display:none}.bstrip{flex-direction:column}.bsweep{min-width:0;padding-right:0}
+.brow{grid-template-columns:1fr}}
 </style></head><body><div class="card up">
  <div class="rail">
   <div class="badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
@@ -166,277 +178,774 @@ pre.json{background:#fff;border:1px solid var(--line);border-radius:6px;padding:
   <div class="railgap"></div>
  </div>
  <div class="cbody">
-  <h1 class="chead">Guide settles at &ldquo;in line&rdquo; with consensus now demanding 11% revenue growth &mdash; the July raise has been banked, not repeated.</h1>
+  <h1 class="chead">Profit 4.8&times; and the first pre-tax profit in four years &mdash; but the recurring base shrank 1% without the acquisition.</h1>
   <div class="pills">
-   <span class="pill">AGM Statement &middot; 17 Sep 2026</span>
+   <span class="pill">H1 Results &middot; 18 Nov 2026</span>
    <span class="pill">FY-end 31 Mar</span>
    <span class="dot">&middot;</span>
    <span class="pill">B/S: clean, net cash</span>
   </div>
   <div class="lights">
    <div class="lamp">
-    <div class="ldate">Apr-26 &middot; Jul-26</div>
+    <div class="ldate">Apr-26 &rarr;</div>
     <div class="bulb b-g"></div>
     <div class="lname">Numbers &amp; guide</div>
-    <div class="lreason">Guide raised twice; H2 gross profit +9.8% after two flat halves</div>
+    <div class="lreason">Rank 1 sequential growth resumed; EBITDA green two halves running</div>
    </div>
    <div class="lamp off">
     <div class="bulb b-o"></div>
     <div class="lname">Language</div>
-    <div class="lreason">Trail +2, +2, 0 &mdash; one fall, not two consecutive prints</div>
+    <div class="lreason">Trail +2, +2, 0, 0 &mdash; one fall, then flat</div>
    </div>
    <div class="lamp">
-    <div class="ldate">Jul-26</div>
+    <div class="ldate">Jul-26 &middot; Nov-26</div>
     <div class="bulb b-g"></div>
     <div class="lname">Disclosure</div>
-    <div class="lreason">Cash conversion re-quantified at 105% after three withholdings</div>
+    <div class="lreason">Cash conversion restored at H1 grain; FY26 half backfilled</div>
    </div>
    <div class="tally"><b>2/3</b><span>FIRED</span></div>
    <div class="bstrip" style="flex-basis:100%">
     <div class="bsweep">
      <div class="bbulb b-g"></div>
-     <div><div class="t">Clean &middot; net cash &pound;2.70m</div>
+     <div><div class="t">Clean &middot; net cash &pound;3.56m</div>
      <div class="s">Sweep sits outside the 2-of-3 count</div></div>
     </div>
-    <div class="tw"><div class="plab">Trend watch &middot; FY27 FC (SEP-26) VS H2 (Y-ON-Y) GROWTH</div><div class="dset"><div class="dcell"><div class="dnm">REVENUE</div><svg width="50" height="50" viewBox="0 0 42 42"><circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/><circle cx="21" cy="21" r="15.915" fill="none" stroke="#21d05e" stroke-width="5" stroke-dasharray="30 100" transform="rotate(-90 21 21)" stroke-linecap="round"/><line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/></svg><div class="dfig" style="color:#7bd88f">+6.4pp</div><div class="dtrend">&minus;2.2% &rarr; <b>+17.4%</b></div><div class="dfc">fc +11.0%</div></div><div class="dcell"><div class="dnm">EBITDA</div><svg width="50" height="50" viewBox="0 0 42 42"><circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/><circle cx="21" cy="21" r="15.915" fill="none" stroke="#21d05e" stroke-width="5" stroke-dasharray="54 100" transform="rotate(-90 21 21)" stroke-linecap="round"/><line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/></svg><div class="dfig" style="color:#7bd88f">+17.5pp</div><div class="dtrend">&minus;51.4% &rarr; <b>+93.7%</b></div><div class="dfc">fc +76.2%</div></div><div class="dcell"><div class="dnm">PBT</div><svg width="50" height="50" viewBox="0 0 42 42"><circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/><line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/></svg><div class="dfig" style="color:#6d6a62">n/a</div><div class="dtrend">adjusted PBT unprinted</div><div class="dfc">no same-basis comparator</div></div></div></div>
+    <div class="tw"><div class="plab">Trend watch &middot; H1% vs 3yr% &middot; fc Nov-26</div><div class="dset"><div class="dcell"><div class="dnm">REVENUE</div><svg width="50" height="50" viewBox="0 0 42 42"><circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/><circle cx="21" cy="21" r="15.915" fill="none" stroke="#ff3b30" stroke-width="5" stroke-dasharray="25 100" transform="rotate(-180 21 21)" stroke-linecap="round"/><line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/></svg><div class="dfig" style="color:#ff6b63">&minus;2.7pp</div><div class="dtrend">44.9 vs 47.6</div><div class="dfc">at H1 R</div></div><div class="dcell"><div class="dnm">EBITDA</div><svg width="50" height="50" viewBox="0 0 42 42"><circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/><circle cx="21" cy="21" r="15.915" fill="none" stroke="#d9c62f" stroke-width="5" stroke-dasharray="10 100" transform="rotate(-90 21 21)" stroke-linecap="round"/><line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/></svg><div class="dfig" style="color:#e8d44a">+1.1pp</div><div class="dtrend">48.7 vs 47.6</div><div class="dfc">at H1 R</div></div><div class="dcell"><div class="dnm">PBT</div><svg width="50" height="50" viewBox="0 0 42 42"><circle cx="21" cy="21" r="15.915" fill="none" stroke="#3f3c36" stroke-width="5"/><line x1="21" y1="2.5" x2="21" y2="7" stroke="#8d8981" stroke-width="1"/></svg><div class="dfig" style="color:#6d6a62">n/a</div><div class="dtrend">no same-basis comparator</div><div class="dfc"></div></div></div></div>
    </div>
    <div class="mvrow" style="flex-basis:100%">
     <span class="mvlab">Since last RNS</span>
     <span class="mvval">Turning up &middot; 2/3 held</span>
-    <span class="mvsince">measured from FY R &middot; 2026-07-08</span>
+    <span class="mvsince">measured from AGM &middot; 2026-09-17</span>
    </div>
   </div>
   <details class="guide">
    <summary><span class="em">&#128161;</span>Idiot&rsquo;s guide to the company &mdash; What SysGroup actually does</summary>
    <div class="gbody">
     <h4>What it is</h4>
-    <p>SysGroup is a managed IT services provider &mdash; an outsourced IT department for mid-sized British firms. Around 200 people. It runs customers&rsquo; systems, keeps them secure, and increasingly tells them what to buy in the first place.</p>
+    <p>SysGroup is a managed IT services provider &mdash; an outsourced IT department for mid-sized British firms. Fewer than 100 people now. It runs customers&rsquo; systems, keeps them secure, and increasingly tells them what to buy in the first place.</p>
     <h4>Where it&rsquo;s based</h4>
-    <p>AIM-listed, with offices in Edinburgh, London, Manchester and Newport. Liverpool was the head office from listing until 2026. Year-end 31 March.</p>
+    <p>AIM-listed, with offices in Edinburgh, London, Manchester, Pinewood and Newport. Liverpool was the head office from listing until 2026. Year-end 31 March.</p>
     <h4>How it makes money</h4>
-    <p><b>Managed IT Services</b> &mdash; roughly 83% of sales. Monthly contracts to host, run and defend a customer&rsquo;s systems, plus consulting and security advice. Sticky, and the company controls the price. Cybersecurity is now 45% of all group sales and is the part actually growing.</p>
-    <p><b>Value Added Resale</b> &mdash; the other 17%. Buying hardware and software licences from vendors and selling them on with installation. <b>Who controls the price.</b> The customer&rsquo;s procurement cycle controls the timing, so it swings wildly &mdash; up 33% one year, down 32% the next. It earns 34p per pound of sales against 49p on the contract side.</p>
+    <p><b>Managed IT Services</b> &mdash; around 86% of sales. Monthly contracts to host, run and defend a customer&rsquo;s systems, plus consulting, security advice and project work. Sticky, and the company sets the price. Cybersecurity is 46% of all group sales and is the part growing.</p>
+    <p><b>Value Added Resale</b> &mdash; the other 14%. Buying hardware and software licences from vendors and selling them on with installation. <b>Who controls the price.</b> The customer&rsquo;s buying cycle sets the timing, so it swings hard &mdash; one half it doubles, the next it halves. It earns 37p per pound of sales against 50p on the contract side.</p>
     <h4>What&rsquo;s changed recently</h4>
-    <p>Heejae Chae bought 14% of the company and became Executive Chairman in June 2023, replacing a nine-year CEO. He redirected the firm towards AI &mdash; both as something to sell and as a way to cut its own cost of answering support tickets. Two bad years followed. Bought Crossword Cybersecurity&rsquo;s consulting arm in late 2024 and Saxis in late 2025. The CFO stepped off the board in July 2026. Approved on the Government&rsquo;s G-Cloud 15 framework in September 2026.</p>
-    <p class="vintage"><em>The bet, in one line: buy it if AI genuinely lowers what it costs to serve a customer, so the same revenue drops more profit &mdash; avoid it if the security work replacing the old hosting simply earns less, in which case the margin keeps sliding whatever the revenue does.</em></p>
-    <p class="vintage">Stable facts, as at 17 September 2026.</p>
+    <p>Heejae Chae bought 14% of the company and became Executive Chairman in June 2023, replacing a nine-year CEO. He redirected the firm towards AI &mdash; both as something to sell and as a way to cut its own cost of answering support tickets. Two bad years followed, then a recovery. Bought Crossword Cybersecurity&rsquo;s consulting arm in late 2024 and Saxis in late 2025. Craig Ormesher was made permanent CFO in November 2026 after four months as interim. The bank facility now runs to April 2032.</p>
+    <p class="vintage"><em>The bet, in one line: buy it if AI genuinely lowers what it costs to serve a customer, so the same revenue drops more profit &mdash; avoid it if the contracts keep quietly shrinking and only bought-in revenue covers the gap.</em></p>
+    <p class="vintage">Stable facts, as at 18 November 2026.</p>
    </div>
   </details>
   <div class="boxes">
-   <div class="box"><div class="lb">Current state</div><div class="hl2">In line, unquantified</div>
-    <p>Trading held at the Q4 FY26 exit rate, sales growth and margins &ldquo;holding consistently&rdquo;. No figure in the document.</p></div>
+   <div class="box"><div class="lb">Current state</div><div class="hl2">4.8&times; profit, guide flat</div>
+    <p>Adjusted EBITDA &pound;1.0m against &pound;0.2m, margin 9.3% from 2.2%; FY27 guide reiterated in line for a second print.</p></div>
    <div class="box"><div class="lb">Warning you get</div><div class="hl2">4&ndash;9 months</div>
-    <p>Gross profit turned five months before the 2024 cut; managed services revenue four months before the 2026 raise. Both flat-to-falling now.</p></div>
-   <div class="box"><div class="lb">Argues against</div><div class="hl2">&ldquo;Exceed&rdquo; became &ldquo;in line&rdquo;</div>
-    <p>Ten weeks after guiding to beat FY27, the Board reiterates only in line &mdash; and recurring-base gross profit was still falling at the last hard print.</p></div>
-   <div class="box"><div class="lb">Next test</div><div class="hl2">~Dec-26</div>
-    <p>H1 FY27 results: does Managed IT Services gross margin stop falling after 52%, 52%, 49% &mdash; and does &ldquo;exceed&rdquo; come back?</p></div>
+    <p>Gross profit turned five months before the 2024 cut; managed services revenue four months before the 2026 raise. Rank 1 now green.</p></div>
+   <div class="box"><div class="lb">Argues against</div><div class="hl2">The base without Saxis</div>
+    <p>Managed services revenue fell 1.0% excluding the acquisition as three customers cut scope; the offset was project work, up 38.7%, not contracted income.</p></div>
+   <div class="box"><div class="lb">Next test</div><div class="hl2">~Apr-27</div>
+    <p>Year-end update: does organic managed services revenue stop shrinking, and does H2 deliver the &pound;13.5m the &pound;24.5m forecast still needs?</p></div>
   </div>
   <ul class="cbul">
-   <li>Consensus needs FY27 pre-tax profit of +&pound;1.5m against FY26&rsquo;s &pound;2.24m statutory loss &mdash; the entire adjusted-to-statutory wedge forecast to close in one year.</li>
-   <li>G-Cloud 15 approval plus a first contract under it: a new public-sector route to market, direct rather than through intermediaries. Noted, unquantified, never a grid row.</li>
-   <li>What flips it: a fourth consecutive fall in Managed IT Services gross margin at H1 FY27 breaks the AI cost-to-serve story the whole case rests on.</li>
+   <li><b>Last build&rsquo;s test, answered almost.</b> Managed IT Services gross margin at H1 grain has run 56.0% &rarr; 52.5% &rarr; 50.2% &rarr; 49.8%. It did not stop falling, but the fall went from &minus;2.3pp a year ago to &minus;0.4pp now &mdash; near-stabilisation, not stabilisation.</li>
+   <li><b>The overlay earns its place on its first build.</b> July&rsquo;s raise landed at the start of an 86% re-rating, 18p to 33.5p in three weeks, with the &minus;1 language of Jul-25 and Dec-25 clustered near the lows.</li>
+   <li><b>The count didn&rsquo;t move because the language didn&rsquo;t.</b> The numbers travelled a long way this half; the guide stayed in line. Three-of-three needs the Board to say something it has not yet said.</li>
   </ul>
  </div>
 </div><h2>&sect;1 &middot; Ledger &mdash; the five ranked metrics</h2>
-<details class="top"><summary>&sect;1 &mdash; the metric ledger, roles and calibration</summary><div class="tb"><table class="dtab"><thead><tr><th class="lab">Rank</th><th class="lab">Metric</th><th>Type</th><th>Grain</th><th>Role</th><th class="lab">Why it earned the rank</th></tr></thead><tbody>
-<tr><td class="lab">R1</td><td class="lab"><b>Managed IT Services gross profit</b></td><td>Flow</td><td>H1 / H2&dagger;</td><td>LEAD</td><td class="lab">Where AI cost savings and price erosion meet. Turned from &minus;11.0% to +0.4% two halves before the Apr-26 raise; went +0.2% to &minus;12.1% one half before the Dec-24 cut.</td></tr>
-<tr><td class="lab">R2</td><td class="lab"><b>Gross profit</b></td><td>Flow</td><td>H1 / H2&dagger;</td><td>LEAD</td><td class="lab">Went negative two halves before the Dec-24 cut while group revenue was still printing +13.8%.</td></tr>
-<tr><td class="lab">R3</td><td class="lab"><b>Managed IT Services revenue</b></td><td>Flow</td><td>H1 / H2&dagger;</td><td>LEAD</td><td class="lab">Only flow line reading green at Dec-25, four months before the raise. Flagged qualitatively nine months before.</td></tr>
-<tr><td class="lab">R4</td><td class="lab"><b>Adjusted EBITDA</b></td><td>Flow</td><td>H1 / H2&dagger;</td><td>CONFIRM</td><td class="lab">The guided line itself. Corroborates; never signals alone.</td></tr>
-<tr><td class="lab">R5</td><td class="lab"><b>Gross margin %</b></td><td>Rate metric</td><td>H1 / H2&dagger; &middot; band 1.5pp</td><td>CONFIRM</td><td class="lab">Four straight declines into the cut. Still falling in the Buy/Sell RNS.</td></tr>
+<details class="top"><summary>&sect;1 &mdash; the metric ledger, roles and calibration</summary><div class="tb">
+<table class="dtab"><thead><tr><th class="lab">Rank</th><th class="lab">Metric</th><th>Type</th><th>Unit</th><th>Grain</th><th>Role</th><th class="lab">Why it earned the rank</th></tr></thead><tbody>
+<tr><td class="lab">R1</td><td class="lab"><b>Managed IT Services gross profit</b></td><td>Flow</td><td>&pound;&rsquo;000</td><td>H1 / H2&dagger;</td><td>LEAD</td><td class="lab">Where AI cost savings and price erosion meet. Turned from &minus;11.0% to +0.4% two halves before the Apr-26 raise; went +0.2% to &minus;12.1% one half before the Dec-24 cut.</td></tr>
+<tr><td class="lab">R2</td><td class="lab"><b>Gross profit</b></td><td>Flow</td><td>&pound;&rsquo;000</td><td>H1 / H2&dagger;</td><td>LEAD</td><td class="lab">Went negative two halves before the Dec-24 cut while group revenue was still printing +13.8%.</td></tr>
+<tr><td class="lab">R3</td><td class="lab"><b>Managed IT Services revenue</b></td><td>Flow</td><td>&pound;&rsquo;000</td><td>H1 / H2&dagger;</td><td>LEAD</td><td class="lab">Only flow line reading green at Dec-25, four months before the raise. Flagged qualitatively nine months before.</td></tr>
+<tr><td class="lab">R4</td><td class="lab"><b>Adjusted EBITDA</b></td><td>Flow</td><td>&pound;&rsquo;000</td><td>H1 / H2&dagger;</td><td>CONFIRM</td><td class="lab">The guided line itself. Corroborates; never signals alone.</td></tr>
+<tr><td class="lab">R5</td><td class="lab"><b>Gross margin %</b></td><td>Rate metric</td><td>%</td><td>H1 / H2&dagger; &middot; band 1.5pp</td><td>CONFIRM</td><td class="lab">Four straight declines into the cut. Nearly stabilised at this print, &minus;0.5pp.</td></tr>
 </tbody></table>
 <details class="sub"><summary>Unscored WATCH metrics &mdash; and the one that got demoted</summary><div class="sb">
 <p><b>Group revenue &mdash; demoted, and this is the ledger&rsquo;s main finding.</b> The company&rsquo;s headline growth line misled at both documented turns. It printed +13.8% for H2 FY24, the half immediately before the December 2024 guidance cut, and &minus;12.0% for H2 FY25, immediately before the April 2026 raise. It is blended: a slow recurring base plus a violent resale component that swings between &minus;64% and +156%. Unscored.</p>
-<p><b>Adjusted operating expenses.</b> Led both turns cleanly with no misleading verdict anywhere &mdash; the best-calibrated metric in the record. It is not ranked because it is a cost line, and Appendix B&rsquo;s locked reader keys have no template for a metric where a falling number is good. Carried here instead, checked every run. It printed +17.2% for H2 FY24, five months before the cut, and flat-lined from H2 FY25, nine months before the raise. Management now says the cost base can carry growth without rising, so expect this line to go quiet.</p>
-<p><b>Also watched:</b> Value Added Resale revenue &middot; net cash and net debt (financing-driven, hit a record at the exact document that cut guidance) &middot; cash conversion &middot; Adjusted PBT &middot; Adjusted basic EPS &middot; managed services share of mix &middot; cybersecurity share of revenue &middot; annual contract value &middot; customer satisfaction and NPS &middot; headcount &middot; managed services downsell.</p>
+<p><b>Adjusted operating expenses.</b> Led both turns cleanly with no misleading verdict anywhere &mdash; the best-calibrated metric in the record. It is not ranked because it is a cost line and the reader keys have no template for a metric where a falling number is good. Carried here, checked every run. It fell 7.5% in H1 FY27 while revenue rose 10.7%, which is the whole MSP 3.0 claim in one comparison.</p>
+<p><b>Also watched:</b> Value Added Resale revenue &middot; organic revenue growth &middot; net cash and net debt &middot; cash conversion &middot; Adjusted PBT &middot; Adjusted basic EPS &middot; managed services share of mix &middot; cybersecurity share of revenue &middot; annual contract value &middot; customer satisfaction and NPS &middot; headcount &middot; managed services downsell.</p>
 </div></details>
 <details class="sub"><summary>Turn inventory &mdash; the calibration set</summary><div class="sb">
 <table class="dtab"><thead><tr><th>Date</th><th class="lab">Document</th><th class="lab">What changed</th></tr></thead><tbody>
-<tr><td>Nov-21</td><td class="lab">H1 R FY22</td><td class="lab">First revenue decline in the record, &minus;15.8%; guide held</td></tr>
-<tr><td>Jul-24</td><td class="lab">FY R FY24</td><td class="lab">First loss of scale; &pound;3.72m impairment; Adjusted PBT dropped; no forward guide issued at all</td></tr>
-<tr><td><b>Dec-24</b></td><td class="lab"><b>H1 R FY25</b></td><td class="lab"><b>&#128308; G CUT &mdash; first explicit guidance cut in the record</b></td></tr>
-<tr><td>Jul-25</td><td class="lab">FY R FY25</td><td class="lab">Cash conversion goes qualitative; guide flat off a down year; first green shoot flagged</td></tr>
-<tr><td><b>Apr-26</b></td><td class="lab"><b>YE-TU FY26</b></td><td class="lab"><b>&#128994; G RAISE &mdash; first raise in the record</b></td></tr>
-<tr><td>Jul-26</td><td class="lab">FY R FY26 &#11088;</td><td class="lab">Raise extended forward to FY27; cash conversion re-quantified</td></tr>
+<tr><td>Nov-21</td><td class="lab">FY22 H1 R</td><td class="lab">First revenue decline in the record, &minus;15.8%; guide held</td></tr>
+<tr><td>Jul-24</td><td class="lab">FY24 FY R</td><td class="lab">First loss of scale; &pound;3.72m impairment; Adjusted PBT dropped; no forward guide issued at all</td></tr>
+<tr><td><b>Dec-24</b></td><td class="lab"><b>FY25 H1 R</b></td><td class="lab"><b>&#128308; G CUT &mdash; first explicit guidance cut in the record</b></td></tr>
+<tr><td>Jul-25</td><td class="lab">FY25 FY R</td><td class="lab">Cash conversion goes qualitative; guide flat off a down year; first green shoot flagged</td></tr>
+<tr><td><b>Apr-26</b></td><td class="lab"><b>FY26 YE-TU</b></td><td class="lab"><b>&#128994; G RAISE &mdash; first raise in the record</b></td></tr>
+<tr><td>Jul-26</td><td class="lab">FY26 FY R</td><td class="lab">Raise extended forward to FY27; cash conversion re-quantified</td></tr>
 </tbody></table>
-<p style="margin-top:10px"><b>Guide credibility.</b> Scanning the G column against outturns: FY22 and FY23 guided in line and delivered in line; the FY25 cut proved accurate; FY26 guided in line at the half and delivered ahead. This company has never over-guided. But in its worst year it issued no forward guide at all rather than a bad one &mdash; so the tell for deterioration here is silence, not a bad number.</p>
+<p style="margin-top:10px"><b>No new turn at H1 FY27.</b> Not a G event, not a first decline, not a first loss, and the guided line turned up at H2 FY26 rather than here. The inventory stays at six, the measured lead stays 4&ndash;9 months, and no backtest was re-run. Recorded separately: the ledger behaved as designed &mdash; Rank 1 fired green in the half the guide held and statutory profit returned.</p>
+<p><b>Guide credibility.</b> Scanning the G column against outturns: FY22 and FY23 guided in line and delivered in line; the FY25 cut proved accurate; FY26 guided in line at the half and delivered ahead. This company has never over-guided. But in its worst year it issued no forward guide at all rather than a bad one &mdash; so the tell for deterioration here is silence, not a bad number.</p>
 </div></details>
-
-</div></details><h2>&sect;2 &middot; The grid &mdash; direction of travel, half by half</h2><div class="gridwrap"><table class="grid" id="g2">
-<colgroup><col class="lab"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"></colgroup>
-<tr class="yband"><td class="lab"></td><th colspan="1">FY22</th><th colspan="2">FY23</th><th colspan="2">FY24</th><th colspan="2">FY25</th><th colspan="2">FY26</th></tr>
-<tr><td class="lab"></td><th class="phead" data-p="H2">H2 FY22</th><th class="phead" data-p="H1">H1 FY23</th><th class="phead" data-p="H2">H2 FY23</th><th class="phead" data-p="H1">H1 FY24</th><th class="phead" data-p="H2">H2 FY24</th><th class="phead" data-p="H1">H1 FY25</th><th class="phead" data-p="H2">H2 FY25</th><th class="phead" data-p="H1">H1 FY26</th><th class="phead bs-col" data-p="H2">&#11088; FY R &middot; Jun-26</th></tr>
-<tr class="secbar"><td colspan="10">R1 &mdash; Managed IT Services gross profit <span class="nat">&middot; the recurring base&rsquo;s profit &middot; &#128994;&#8599; growing faster than last year &middot; &#128993;&rarr; about the same pace &middot; &#128308;&#8600; shrinking or clearly slowing</span></td></tr>
-<tr class="strip"><td class="lab">Period</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td></tr>
-<tr class="vrow"><td class="lab">&pound;’000 &middot; vs same period last year</td><td><span class="val">4,182&dagger; <span class="neg">(8.0%)</span></span><span class="delta">&#128308;&#8600;</span></td><td><span class="val">5,157 (+19.1%)</span><span class="delta">&#128994;&#8599;</span></td><td><span class="val">5,192&dagger;&#691; (+24.2%)</span><span class="delta">&#128994;&#8599;</span></td><td><span class="val">5,167 (+0.2%)</span><span class="delta">&#128308;&#8600;</span></td><td><span class="val">4,566&dagger; <span class="neg">(12.1%)</span></span><span class="delta">&#128308;&#8600;</span></td><td><span class="val">4,601 <span class="neg">(11.0%)</span></span><span class="delta">&#128993;&rarr;</span></td><td><span class="val">4,585&dagger; (+0.4%)</span><span class="delta">&#128994;&#8599;</span></td><td><span class="val">4,606 (+0.1%)</span><span class="delta">&#128993;&rarr;</span></td><td class="bs-col"><span class="val">4,411&dagger; <span class="neg">(3.8%)</span></span><span class="delta">&#128308;&#8600;</span></td></tr>
-<tr class="agg"><td class="lab">FY aggregate</td><td colspan="1"></td><td colspan="2"><span class="aval">10,349&#691;</span><span class="anote">+21.6%</span></td><td colspan="2"><span class="aval">9,733</span><span class="anote">&minus;6.0%</span></td><td colspan="2"><span class="aval">9,186</span><span class="anote">&minus;5.6%</span></td><td colspan="2"><span class="aval">9,017</span><span class="anote">&minus;1.8%</span></td></tr>
-<tr class="secbar"><td colspan="10">R2 &mdash; Gross profit <span class="nat">&middot; revenue after the cost of delivering it &middot; &#128994;&#8599; growing faster than last year &middot; &#128993;&rarr; about the same pace &middot; &#128308;&#8600; shrinking or clearly slowing</span></td></tr>
-<tr class="strip"><td class="lab">Period</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td></tr>
-<tr class="vrow"><td class="lab">&pound;’000 &middot; vs same period last year</td><td><span class="val">4,357&dagger; <span class="neg">(15.0%)</span></span><span class="delta">&#128993;&rarr;</span></td><td><span class="val">5,613 (+23.0%)</span><span class="delta">&#128994;&#8599;</span></td><td><span class="val">5,483&dagger;&#691; (+25.8%)</span><span class="delta">&#128994;&#8599;</span></td><td><span class="val">5,466 <span class="neg">(2.6%)</span></span><span class="delta">&#128308;&#8600;</span></td><td><span class="val">4,930&dagger; <span class="neg">(10.1%)</span></span><span class="delta">&#128308;&#8600;</span></td><td><span class="val">5,041 <span class="neg">(7.8%)</span></span><span class="delta">&#128994;&#8599;</span></td><td><span class="val">4,969&dagger; (+0.8%)</span><span class="delta">&#128994;&#8599;</span></td><td><span class="val">4,817 <span class="neg">(4.4%)</span></span><span class="delta">&#128308;&#8600;</span></td><td class="bs-col"><span class="val">5,456&dagger; (+9.8%)</span><span class="delta">&#128994;&#8599;</span></td></tr>
-<tr class="agg"><td class="lab">FY aggregate</td><td colspan="1"></td><td colspan="2"><span class="aval">11,096&#691;</span><span class="anote">+24.4%</span></td><td colspan="2"><span class="aval">10,396</span><span class="anote">&minus;6.3%</span></td><td colspan="2"><span class="aval">10,010</span><span class="anote">&minus;3.7%</span></td><td colspan="2"><span class="aval">10,273</span><span class="anote">+2.6%</span></td></tr>
-<tr class="secbar"><td colspan="10">R3 &mdash; Managed IT Services revenue <span class="nat">&middot; the contracted base &middot; &#128994;&#8599; growing faster than last year &middot; &#128993;&rarr; about the same pace &middot; &#128308;&#8600; shrinking or clearly slowing</span></td></tr>
-<tr class="strip"><td class="lab">Period</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td></tr>
-<tr class="vrow"><td class="lab">&pound;’000 &middot; vs same period last year</td><td><span class="val">6,349&dagger; <span class="neg">(7.7%)</span></span><span class="delta">&#128994;&#8599;</span></td><td><span class="val">8,543 (+31.5%)</span><span class="delta">&#128994;&#8599;</span></td><td><span class="val">8,898&dagger; (+40.1%)</span><span class="delta">&#128994;&#8599;</span></td><td><span class="val">9,223 (+8.0%)</span><span class="delta">&#128308;&#8600;</span></td><td><span class="val">9,369&dagger; (+5.3%)</span><span class="delta">&#128308;&#8600;</span></td><td><span class="val">8,766 <span class="neg">(5.0%)</span></span><span class="delta">&#128308;&#8600;</span></td><td><span class="val">8,930&dagger; <span class="neg">(4.7%)</span></span><span class="delta">&#128993;&rarr;</span></td><td><span class="val">9,168 (+4.6%)</span><span class="delta">&#128994;&#8599;</span></td><td class="bs-col"><span class="val">9,184&dagger; (+2.8%)</span><span class="delta">&#128993;&rarr;</span></td></tr>
-<tr class="agg"><td class="lab">FY aggregate</td><td colspan="1"></td><td colspan="2"><span class="aval">17,441</span><span class="anote">+35.8%</span></td><td colspan="2"><span class="aval">18,592</span><span class="anote">+6.6%</span></td><td colspan="2"><span class="aval">17,696</span><span class="anote">&minus;4.8%</span></td><td colspan="2"><span class="aval">18,352</span><span class="anote">+3.7%</span></td></tr>
-<tr class="secbar"><td colspan="10">R4 &mdash; Adjusted EBITDA <span class="nat">&middot; the profit line the company guides on &middot; &#128994;&#8599; growing faster than last year &middot; &#128993;&rarr; about the same pace &middot; &#128308;&#8600; shrinking or clearly slowing</span></td></tr>
-<tr class="strip"><td class="lab">Period</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td></tr>
-<tr class="vrow"><td class="lab">&pound;’000 &middot; vs same period last year</td><td><span class="val">1,473&dagger; <span class="neg">(2.3%)</span></span><span class="delta">&#128994;&#8599;</span></td><td><span class="val">1,678 (+24.9%)</span><span class="delta">&#128994;&#8599;</span></td><td><span class="val">1,650&dagger;&#691; (+12.0%)</span><span class="delta">&#128308;&#8600;</span></td><td><span class="val">1,569 <span class="neg">(6.5%)</span></span><span class="delta">&#128308;&#8600;</span></td><td><span class="val">439&dagger; <span class="neg">(73.4%)</span></span><span class="delta">&#128308;&#8600;</span></td><td><span class="val">440 <span class="neg">(72.0%)</span></span><span class="delta">&#128993;&rarr;</span></td><td><span class="val">505&dagger;&#691; (+15.0%)</span><span class="delta">&#128994;&#8599;</span></td><td><span class="val">214 <span class="neg">(51.4%)</span></span><span class="delta">&#128308;&#8600;</span></td><td class="bs-col"><span class="val">978&dagger; (+93.7%)</span><span class="delta">&#128994;&#8599;</span></td></tr>
-<tr class="agg"><td class="lab">FY aggregate</td><td colspan="1"></td><td colspan="2"><span class="aval">3,328&#691;</span><span class="anote">+18.1%</span></td><td colspan="2"><span class="aval">2,008</span><span class="anote">&minus;39.7%</span></td><td colspan="2"><span class="aval">945&#691;</span><span class="anote">&minus;52.9%</span></td><td colspan="2"><span class="aval">1,192</span><span class="anote">+26.1%</span></td></tr>
-<tr class="secbar"><td colspan="10">R5 &mdash; Gross margin % <span class="nat">&middot; pence kept per pound sold &middot; arrow = up or down versus the same period last year, band 1.5 points</span></td></tr>
-<tr class="strip"><td class="lab">Period</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td></tr>
-<tr class="vrow"><td class="lab">%</td><td><span class="val">60.8%&dagger;</span><span class="delta">&#128994;&#8599;</span></td><td><span class="val">49.6%</span><span class="delta">&#128308;&#8600;</span></td><td><span class="val">53.1%&dagger;&#691;</span><span class="delta">&#128308;&#8600;</span></td><td><span class="val">49.9%</span><span class="delta">&#128993;&rarr;</span></td><td><span class="val">42.0%&dagger;</span><span class="delta">&#128308;&#8600;</span></td><td><span class="val">49.6%</span><span class="delta">&#128993;&rarr;</span></td><td><span class="val">48.0%&dagger;</span><span class="delta">&#128994;&#8599;</span></td><td><span class="val">48.5%</span><span class="delta">&#128993;&rarr;</span></td><td class="bs-col"><span class="val">44.9%&dagger;</span><span class="delta">&#128308;&#8600;</span></td></tr>
-<tr class="agg"><td class="lab">FY aggregate</td><td colspan="1"></td><td colspan="2"><span class="aval">51.3%&#691;</span><span class="anote">&minus;9.2pp</span></td><td colspan="2"><span class="aval">45.8%</span><span class="anote">&minus;5.5pp</span></td><td colspan="2"><span class="aval">48.8%</span><span class="anote">+3.1pp</span></td><td colspan="2"><span class="aval">46.5%</span><span class="anote">&minus;2.3pp</span></td></tr>
-</table></div>
-<details class="top"><summary>&sect;2 workings &mdash; card strip, rank notes, methodology</summary><div class="tb"><details class="sub"><summary>&#128306; Card strip &mdash; wall preview &amp; index entry</summary><div class="sb">
-<div style="margin:6px 0 12px"><div style="margin-bottom:4px"><span style="display:inline-block;width:30px;font-weight:700;font-size:11px">R1</span><span class="stripcell s-g">g</span><span class="stripcell s-g">g</span><span class="stripcell s-g">g</span><span class="stripcell s-r">r</span><span class="stripcell s-r">r</span><span class="stripcell s-a">a</span><span class="stripcell s-g">g</span><span class="stripcell s-a">a</span><span class="stripcell s-r bsc">r</span></div><div style="margin-bottom:4px"><span style="display:inline-block;width:30px;font-weight:700;font-size:11px">R2</span><span class="stripcell s-a">a</span><span class="stripcell s-g">g</span><span class="stripcell s-g">g</span><span class="stripcell s-r">r</span><span class="stripcell s-r">r</span><span class="stripcell s-g">g</span><span class="stripcell s-g">g</span><span class="stripcell s-r">r</span><span class="stripcell s-g bsc">g</span></div><div style="margin-bottom:4px"><span style="display:inline-block;width:30px;font-weight:700;font-size:11px">R3</span><span class="stripcell s-g">g</span><span class="stripcell s-g">g</span><span class="stripcell s-g">g</span><span class="stripcell s-r">r</span><span class="stripcell s-r">r</span><span class="stripcell s-r">r</span><span class="stripcell s-a">a</span><span class="stripcell s-g">g</span><span class="stripcell s-a bsc">a</span></div><div style="margin-bottom:4px"><span style="display:inline-block;width:30px;font-weight:700;font-size:11px">R4</span><span class="stripcell s-g">g</span><span class="stripcell s-g">g</span><span class="stripcell s-r">r</span><span class="stripcell s-r">r</span><span class="stripcell s-r">r</span><span class="stripcell s-a">a</span><span class="stripcell s-g">g</span><span class="stripcell s-r">r</span><span class="stripcell s-g bsc">g</span></div><div style="margin-bottom:4px"><span style="display:inline-block;width:30px;font-weight:700;font-size:11px">R5</span><span class="stripcell s-g">g</span><span class="stripcell s-r">r</span><span class="stripcell s-r">r</span><span class="stripcell s-a">a</span><span class="stripcell s-r">r</span><span class="stripcell s-a">a</span><span class="stripcell s-g">g</span><span class="stripcell s-a">a</span><span class="stripcell s-r bsc">r</span></div></div>
-<p style="color:var(--mute)">Nine cells, rightmost outlined = the Buy/Sell column, H2 FY26. One row per ledger rank. Check each character against the value row directly above.</p>
+</div></details><h2>&sect;2 &middot; The grid &mdash; direction of travel, half by half</h2><div class="gridwrap"><table class="grid" id="g2"><colgroup><col class="lab"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"><col class="per"></colgroup><tr class="yband"><td class="lab"></td><th colspan="2">FY23</th><th colspan="2">FY24</th><th colspan="2">FY25</th><th colspan="2">FY26</th><th colspan="1">FY27</th></tr>
+<tr><td class="lab"></td><th class="phead" data-p="H1">H1 FY23</th><th class="phead" data-p="H2">H2 FY23</th><th class="phead" data-p="H1">H1 FY24</th><th class="phead" data-p="H2">H2 FY24</th><th class="phead" data-p="H1">H1 FY25</th><th class="phead" data-p="H2">H2 FY25</th><th class="phead" data-p="H1">H1 FY26</th><th class="phead" data-p="H2">H2 FY26</th><th class="phead bs-col" data-p="H1">&#11088; H1 R &middot; Nov-26</th></tr>
+<tr class="secbar"><td colspan="10">R1 &mdash; Managed IT Services gross profit &pound;&rsquo;000 <span class="nat">&middot; the recurring base&rsquo;s profit &middot; &#128994;&#8599; growing faster than last year &middot; &#128993;&rarr; about the same pace &middot; &#128308;&#8600; shrinking or clearly slowing</span></td></tr>
+<tr class="strip"><td class="lab">Period</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td></tr>
+<tr class="vrow"><td class="lab">&pound;&rsquo;000 &middot; vs same period last year</td><td><span class="val">5,157 (+19.1%)</span><span class="delta">&#128994;&#8599;</span></td><td><span class="val">5,192&dagger;&#691; (+24.2%)</span><span class="delta">&#128994;&#8599;</span></td><td><span class="val">5,167 (+0.2%)</span><span class="delta">&#128308;&#8600;</span></td><td><span class="val">4,566&dagger; <span class="neg">(12.1%)</span></span><span class="delta">&#128308;&#8600;</span></td><td><span class="val">4,601 <span class="neg">(11.0%)</span></span><span class="delta">&#128993;&rarr;</span></td><td><span class="val">4,585&dagger; (+0.4%)</span><span class="delta">&#128994;&#8599;</span></td><td><span class="val">4,606 (+0.1%)</span><span class="delta">&#128993;&rarr;</span></td><td><span class="val">4,411&dagger; <span class="neg">(3.8%)</span></span><span class="delta">&#128308;&#8600;</span></td><td class="bs-col"><span class="val">4,727 (+2.6%)</span><span class="delta">&#128994;&#8599;</span></td></tr>
+<tr class="agg"><td class="lab">FY aggregate</td><td colspan="2"><span class="aval">10,349&#691;</span><span class="anote">+21.6%</span></td><td colspan="2"><span class="aval">9,733</span><span class="anote">&minus;6.0%</span></td><td colspan="2"><span class="aval">9,186</span><span class="anote">&minus;5.6%</span></td><td colspan="2"><span class="aval">9,017</span><span class="anote">&minus;1.8%</span></td><td colspan="1"></td></tr>
+<tr class="secbar"><td colspan="10">R2 &mdash; Gross profit &pound;&rsquo;000 <span class="nat">&middot; revenue after the cost of delivering it &middot; &#128994;&#8599; growing faster than last year &middot; &#128993;&rarr; about the same pace &middot; &#128308;&#8600; shrinking or clearly slowing</span></td></tr>
+<tr class="strip"><td class="lab">Period</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td></tr>
+<tr class="vrow"><td class="lab">&pound;&rsquo;000 &middot; vs same period last year</td><td><span class="val">5,613 (+23.0%)</span><span class="delta">&#128994;&#8599;</span></td><td><span class="val">5,483&dagger;&#691; (+25.8%)</span><span class="delta">&#128994;&#8599;</span></td><td><span class="val">5,466 <span class="neg">(2.6%)</span></span><span class="delta">&#128308;&#8600;</span></td><td><span class="val">4,930&dagger; <span class="neg">(10.1%)</span></span><span class="delta">&#128308;&#8600;</span></td><td><span class="val">5,041 <span class="neg">(7.8%)</span></span><span class="delta">&#128994;&#8599;</span></td><td><span class="val">4,969&dagger; (+0.8%)</span><span class="delta">&#128994;&#8599;</span></td><td><span class="val">4,817 <span class="neg">(4.4%)</span></span><span class="delta">&#128308;&#8600;</span></td><td><span class="val">5,456&dagger; (+9.8%)</span><span class="delta">&#128994;&#8599;</span></td><td class="bs-col"><span class="val">5,279 (+9.6%)</span><span class="delta">&#128993;&rarr;</span></td></tr>
+<tr class="agg"><td class="lab">FY aggregate</td><td colspan="2"><span class="aval">11,096&#691;</span><span class="anote">+24.4%</span></td><td colspan="2"><span class="aval">10,396</span><span class="anote">&minus;6.3%</span></td><td colspan="2"><span class="aval">10,010</span><span class="anote">&minus;3.7%</span></td><td colspan="2"><span class="aval">10,273</span><span class="anote">+2.6%</span></td><td colspan="1"></td></tr>
+<tr class="secbar"><td colspan="10">R3 &mdash; Managed IT Services revenue &pound;&rsquo;000 <span class="nat">&middot; the contracted base &middot; &#128994;&#8599; growing faster than last year &middot; &#128993;&rarr; about the same pace &middot; &#128308;&#8600; shrinking or clearly slowing</span></td></tr>
+<tr class="strip"><td class="lab">Period</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td></tr>
+<tr class="vrow"><td class="lab">&pound;&rsquo;000 &middot; vs same period last year</td><td><span class="val">8,543 (+31.5%)</span><span class="delta">&#128994;&#8599;</span></td><td><span class="val">8,898&dagger; (+40.1%)</span><span class="delta">&#128994;&#8599;</span></td><td><span class="val">9,223 (+8.0%)</span><span class="delta">&#128308;&#8600;</span></td><td><span class="val">9,369&dagger; (+5.3%)</span><span class="delta">&#128308;&#8600;</span></td><td><span class="val">8,766 <span class="neg">(5.0%)</span></span><span class="delta">&#128308;&#8600;</span></td><td><span class="val">8,930&dagger; <span class="neg">(4.7%)</span></span><span class="delta">&#128993;&rarr;</span></td><td><span class="val">9,168 (+4.6%)</span><span class="delta">&#128994;&#8599;</span></td><td><span class="val">9,184&dagger; (+2.8%)</span><span class="delta">&#128993;&rarr;</span></td><td class="bs-col"><span class="val">9,500 (+3.6%)</span><span class="delta">&#128993;&rarr;</span></td></tr>
+<tr class="agg"><td class="lab">FY aggregate</td><td colspan="2"><span class="aval">17,441</span><span class="anote">+35.8%</span></td><td colspan="2"><span class="aval">18,592</span><span class="anote">+6.6%</span></td><td colspan="2"><span class="aval">17,696</span><span class="anote">&minus;4.8%</span></td><td colspan="2"><span class="aval">18,352</span><span class="anote">+3.7%</span></td><td colspan="1"></td></tr>
+<tr class="secbar"><td colspan="10">R4 &mdash; Adjusted EBITDA &pound;&rsquo;000 <span class="nat">&middot; the profit line the company guides on &middot; &#128994;&#8599; growing faster than last year &middot; &#128993;&rarr; about the same pace &middot; &#128308;&#8600; shrinking or clearly slowing</span></td></tr>
+<tr class="strip"><td class="lab">Period</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td></tr>
+<tr class="vrow"><td class="lab">&pound;&rsquo;000 &middot; vs same period last year</td><td><span class="val">1,678 (+24.9%)</span><span class="delta">&#128994;&#8599;</span></td><td><span class="val">1,650&dagger;&#691; (+12.0%)</span><span class="delta">&#128308;&#8600;</span></td><td><span class="val">1,569 <span class="neg">(6.5%)</span></span><span class="delta">&#128308;&#8600;</span></td><td><span class="val">439&dagger; <span class="neg">(73.4%)</span></span><span class="delta">&#128308;&#8600;</span></td><td><span class="val">440 <span class="neg">(72.0%)</span></span><span class="delta">&#128993;&rarr;</span></td><td><span class="val">505&dagger;&#691; (+15.0%)</span><span class="delta">&#128994;&#8599;</span></td><td><span class="val">214 <span class="neg">(51.4%)</span></span><span class="delta">&#128308;&#8600;</span></td><td><span class="val">978&dagger; (+93.7%)</span><span class="delta">&#128994;&#8599;</span></td><td class="bs-col"><span class="val">1,022 (+377.6%)</span><span class="delta">&#128994;&#8599;</span></td></tr>
+<tr class="agg"><td class="lab">FY aggregate</td><td colspan="2"><span class="aval">3,328&#691;</span><span class="anote">+18.1%</span></td><td colspan="2"><span class="aval">2,008</span><span class="anote">&minus;39.7%</span></td><td colspan="2"><span class="aval">945&#691;</span><span class="anote">&minus;52.9%</span></td><td colspan="2"><span class="aval">1,192</span><span class="anote">+26.1%</span></td><td colspan="1"></td></tr>
+<tr class="secbar"><td colspan="10">R5 &mdash; Gross margin % % <span class="nat">&middot; pence kept per pound sold &middot; arrow = up or down versus the same period last year, band 1.5 points</span></td></tr>
+<tr class="strip"><td class="lab">Period</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td><td>H2&dagger;</td><td>H1</td></tr>
+<tr class="vrow"><td class="lab">%</td><td><span class="val">49.6%</span><span class="delta">&#128308;&#8600;</span></td><td><span class="val">53.1%&dagger;&#691;</span><span class="delta">&#128308;&#8600;</span></td><td><span class="val">49.9%</span><span class="delta">&#128993;&rarr;</span></td><td><span class="val">42.0%&dagger;</span><span class="delta">&#128308;&#8600;</span></td><td><span class="val">49.6%</span><span class="delta">&#128993;&rarr;</span></td><td><span class="val">48.0%&dagger;</span><span class="delta">&#128994;&#8599;</span></td><td><span class="val">48.5%</span><span class="delta">&#128993;&rarr;</span></td><td><span class="val">44.9%&dagger;</span><span class="delta">&#128308;&#8600;</span></td><td class="bs-col"><span class="val">48.0%</span><span class="delta">&#128993;&rarr;</span></td></tr>
+<tr class="agg"><td class="lab">FY aggregate</td><td colspan="2"><span class="aval">51.3%&#691;</span><span class="anote">&minus;9.2pp</span></td><td colspan="2"><span class="aval">45.8%</span><span class="anote">&minus;5.5pp</span></td><td colspan="2"><span class="aval">48.8%</span><span class="anote">+3.1pp</span></td><td colspan="2"><span class="aval">46.5%</span><span class="anote">&minus;2.3pp</span></td><td colspan="1"></td></tr></table></div><details class="top"><summary>&sect;2 workings &mdash; card strip, rank notes, methodology</summary><div class="tb">
+<details class="sub"><summary>&#128306; Card strip &mdash; wall preview &amp; index entry</summary><div class="sb">
+<div style="margin:6px 0 12px"><div style="margin-bottom:4px"><span style="display:inline-block;width:30px;font-weight:700;font-size:11px">R1</span><span class="stripcell s-g">g</span><span class="stripcell s-g">g</span><span class="stripcell s-r">r</span><span class="stripcell s-r">r</span><span class="stripcell s-a">a</span><span class="stripcell s-g">g</span><span class="stripcell s-a">a</span><span class="stripcell s-r">r</span><span class="stripcell s-g bsc">g</span></div><div style="margin-bottom:4px"><span style="display:inline-block;width:30px;font-weight:700;font-size:11px">R2</span><span class="stripcell s-g">g</span><span class="stripcell s-g">g</span><span class="stripcell s-r">r</span><span class="stripcell s-r">r</span><span class="stripcell s-g">g</span><span class="stripcell s-g">g</span><span class="stripcell s-r">r</span><span class="stripcell s-g">g</span><span class="stripcell s-a bsc">a</span></div><div style="margin-bottom:4px"><span style="display:inline-block;width:30px;font-weight:700;font-size:11px">R3</span><span class="stripcell s-g">g</span><span class="stripcell s-g">g</span><span class="stripcell s-r">r</span><span class="stripcell s-r">r</span><span class="stripcell s-r">r</span><span class="stripcell s-a">a</span><span class="stripcell s-g">g</span><span class="stripcell s-a">a</span><span class="stripcell s-a bsc">a</span></div><div style="margin-bottom:4px"><span style="display:inline-block;width:30px;font-weight:700;font-size:11px">R4</span><span class="stripcell s-g">g</span><span class="stripcell s-r">r</span><span class="stripcell s-r">r</span><span class="stripcell s-r">r</span><span class="stripcell s-a">a</span><span class="stripcell s-g">g</span><span class="stripcell s-r">r</span><span class="stripcell s-g">g</span><span class="stripcell s-g bsc">g</span></div><div style="margin-bottom:4px"><span style="display:inline-block;width:30px;font-weight:700;font-size:11px">R5</span><span class="stripcell s-r">r</span><span class="stripcell s-r">r</span><span class="stripcell s-a">a</span><span class="stripcell s-r">r</span><span class="stripcell s-a">a</span><span class="stripcell s-g">g</span><span class="stripcell s-a">a</span><span class="stripcell s-r">r</span><span class="stripcell s-a bsc">a</span></div></div>
+<p style="color:var(--mute)">Nine cells, rightmost outlined = the Buy/Sell column, H1 FY27. One row per ledger rank. Check each character against the value row directly above.</p>
 <pre class="json">{
   "ticker": "SYS",
   "company": "SysGroup plc",
   "kind": "ticker",
   "direction": "up",
-  "headline": "Board guides FY27 to exceed expectations after a 26% profit rebound - but every pound of that growth came from low-margin resale.",
-  "trigger": "2 of 3 green-shoot conditions converging",
-  "alert": true,
-  "fired": 2,
-  "fired_of": 3,
-  "rns_type": "FY R",
-  "rns_date": "2026-07-08",
-  "build_date": "2026-08-05",
-  "spec_version": "4.8",
-  "next_test": "H1 FY27, around Dec-26 - does Managed IT Services gross margin stop falling?",
-  "url": "SYS.html",
-  "grid": {
-    "rows": ["gggrragar","aggrrggrg","gggrrraga","ggrrragrg","grraragar"],
-    "labels": ["R1","R2","R3","R4","R5"],
-    "periods": ["H2FY22","H1FY23","H2FY23","H1FY24","H2FY24","H1FY25","H2FY25","H1FY26","H2FY26"],
-    "note": "One row per ledger rank, R1-R5, at half grain; rightmost cell is the Buy/Sell column H2 FY26."
-  }
-}</pre>
-</div></details>
-<details class="sub"><summary>Notes &mdash; Ranks 1&ndash;5</summary><div class="sb">
-<p><b>R1 Managed IT Services gross profit.</b> Fires &#128308; in the Buy/Sell half while its own parent fires &#128994;. The gap is resale: Value Added Resale gross profit was &pound;1,045k against &pound;384k in H2 FY26, up &pound;661k, while the recurring base gave back &pound;174k.</p>
-<p><b>R2 Gross profit.</b> Green at +9.8%, but Saxis contributed &pound;1.1m of H2 revenue and its gross profit contribution is not disclosed. The company gives organic revenue and not organic gross profit, so the green cannot be split.</p>
-<p><b>R3 Managed IT Services revenue.</b> Second consecutive positive half, but decelerating &mdash; +4.6% then +2.8%. Watch whether H1 FY27 holds above zero.</p>
-<p><b>R4 Adjusted EBITDA.</b> H2 FY25 and the FY25 aggregate carry &#691;: the definition widened at FY25 to add back &pound;174k of share scheme set-up costs, nil in FY24. Like-for-like, H2 FY25 reads &minus;24.6% rather than +15.0%. The arrow is &#128994; on both bases. FY26 versus FY25 is like-for-like on both sides.</p>
-<p><b>R5 Gross margin %.</b> Company attributes the fall to cybersecurity carrying a lower margin than the hosting it replaces. That explanation has now run three periods and is the single thing the next results must settle.</p>
-</div></details>
-<details class="sub"><summary>Turn methodology &amp; restatement basis</summary><div class="sb">
-<p><b>Comparison basis.</b> R1&ndash;R4 are flow metrics on an H1/H2&dagger; spine, displaying the year-on-year move and scoring the banded change in that rate between adjacent half-columns, band &plusmn;2.0pp. R5 is a rate metric scoring the pp move against the same period a year earlier, band &plusmn;1.5pp stated for this ticker and not inherited from the flow band.</p>
-<p><b>Display basis.</b> Year-on-year renders in the cell; the sequential comparison is computed and retained here, never displayed. No pp values or rate labels appear in the grid &mdash; the emoji alone carries the score.</p>
-<p><b>Rule applied.</b> All five ranks render under the default H1/H2 rule. None is reduced-grain; H2 is derivable in every year of the record. No qualitative ladder. Router: H-reporter, Rule Set H. No trading update in the record has ever carried quarterly financials.</p>
-<p><b>Zero-crossing guard:</b> not fired. Lowest series value &pound;214k; no series crosses or approaches zero. Absolute bands held in reserve: R1 &pound;0.52m, R2 &pound;0.56m, R3 &pound;0.94m, R4 &pound;0.17m.</p>
-<p><b>Precision.</b> All ranked figures are &pound;&rsquo;000 from the face of the income statement or the segmental note. Provenance across 45 value cells: 16 primary-statement, 20 derived from two primary-statement figures, 9 derived ratios. No cell rests on narrative or a highlights table.</p>
-<p><b>FY23 restatement (&#691;).</b> The FY24 accounts restated FY23 cost of sales by +&pound;194k, moving FY23 gross profit from &pound;11,096k to &pound;10,902k, Managed IT Services gross profit from &pound;10,349k to &pound;10,155k and Adjusted EBITDA from &pound;3,328k to &pound;3,134k. H1 FY23 was never restated. The series therefore runs on the <b>as-first-printed</b> basis so that each derived half subtracts like from like; forcing the whole &pound;194k into H2 FY23 would be an invention. Sensitivity checked: H2 FY24 reads &minus;12.1% / &minus;10.1% / &minus;73.4% as printed, and &minus;8.6% / &minus;6.8% / &minus;69.8% restated. Every arrow is identical on both bases.</p>
-<p><b>Other basis notes.</b> Net cash included contingent consideration to FY22 and excludes it from H1 FY23 &mdash; no ranked metric uses it. Later audited figures govern earlier &ldquo;c.&rdquo; estimates from trading updates. Buy/Sell column shaded and bolded throughout.</p>
-<p><b>Second-route tie-outs.</b> R1 plus Value Added Resale gross profit equals group gross profit exactly at all six year-ends. H2 FY26 Adjusted EBITDA of &pound;978k ties to the company&rsquo;s &ldquo;&pound;1.0m delivered during the second half&rdquo;. H2 FY26 revenue at +17.4% ties to their +17.2%. R3&rsquo;s +&pound;656k and &minus;&pound;896k tie to their &ldquo;+&pound;0.7m compared to a decline of &pound;0.9m&rdquo;.</p>
-</div></details>
-
-</div></details><h2>&sect;2.0 &middot; The read right now</h2><details class="top"><summary>&sect;2.0 workings &mdash; the four checks, sweep, Trend Watch, audit record</summary><div class="tb"><details class="sub"><summary>The four checks &mdash; workings behind the read</summary><div class="sb">
-<p><b>1 &middot; Sequential, H2 FY26 against H1 FY26.</b> Revenue +22.3%, gross profit +13.3%, Adjusted EBITDA +357%, Managed IT Services revenue +0.2% &mdash; but Managed IT Services gross profit &minus;4.2% and gross margin &minus;3.6pp. The half improved on everything except the recurring base&rsquo;s profit and the margin.</p>
-<p><b>2 &middot; Same type versus last year, FY26 results against FY25 results.</b> Revenue +7.7%, gross profit +2.6%, Adjusted EBITDA +26.1%, Managed IT Services revenue +3.7%, Managed IT Services gross profit &minus;1.8%, gross margin &minus;2.3pp. Base effect: FY25 was the trough, the lowest Adjusted EBITDA in the record. FY26&rsquo;s &pound;1.19m remains 64% below FY23. A turn in direction, not a return to prior levels.</p>
-<p><b>3 &middot; Derivable sub-periods.</b> No quarterly figures are printed in any document, so Q4 is not derivable. H2 FY26 derived and cross-verified. Saxis contributed &pound;1.1m of H2 revenue, giving organic H2 growth of about 6.7% against the company&rsquo;s stated 7.0%. Saxis&rsquo;s gross profit contribution is not disclosed and it is described as predominantly resale, so organic gross profit cannot be computed and has not been estimated. Recorded but not scored: &ldquo;margin level maintained into the first quarter of the new year&rdquo;.</p>
-<p><b>4 &middot; Guidance against the prior guide.</b> July 2025 guided FY26 broadly in line with FY25, a flat guide off a down year. December 2025 reiterated in line and added a first-ever second-half weighting. April 2026 raised to ahead of market expectations. July 2026 extended the raise forward to exceed for FY27. A three-step upgrade in twelve months, the strongest guidance sequence in the record. No consensus datablock supplied, so the raise is unsized against broker numbers.</p>
-</div></details>
-<div class="flexrow">
-  <div class="bridge">
-    <div class="dkbar cav"><span class="em">&#127866;</span> IDIOT&rsquo;S GUIDE TO THE ADJUSTED EBITDA BRIDGE &mdash; why profit went up (&pound;0.95m &rarr; &pound;1.19m)</div>
-    <div class="brow bg-g"><div class="bl cav">&#128230; The box run</div><div class="bc c-g">+&pound;432k</div><div>Selling and fitting kit &mdash; storage arrays, licences, the physical stuff &mdash; came roaring back after two dead years. Thin money at 34p in the pound, but it&rsquo;s money.</div></div><div class="brow bg-r"><div class="bl cav">&#128257; The subscription slide</div><div class="bc c-r">&minus;&pound;169k</div><div>The contracts that bill every month earned &pound;169k less than last year. Customers mostly stayed; they&rsquo;ve just swapped fat old hosting for leaner security work.</div></div><div class="brow bg-a"><div class="bl cav">&#9878;&#65039; The wage bill that wouldn&rsquo;t budge</div><div class="bc c-a">&minus;&pound;16k</div><div>They stripped &pound;1.12m of cost out of the old business, then spent almost exactly that much running two firms they&rsquo;d just bought. Net movement for the year: sixteen grand.</div></div>
-    <div class="bcap"><b>So in one sentence:</b> profit rose &pound;247k because the kit-shifting side had a blowout year while the monthly contracts &mdash; the whole point of the company &mdash; quietly shrank, and the savings were swallowed by the acquisitions that produced them.<br><b>Profit falls when:</b> the kit orders dry up, and they swing &plusmn;100% here year to year &mdash; or the monthly contracts keep giving up more ground than security work can replace.</div>
-  </div>
-  <div class="bar">
-    <div class="dkbar cav"><span class="em">&#127777;&#65039;</span> CURRENT STATE &mdash; the read right now</div>
-    <div class="barin">
-      <p class="barlead">&#128994; TURNING UP</p>
-      <ul><li>H2 FY26 revenue +17.4%, Adjusted EBITDA +93.7% &mdash; best half in three years</li><li>Guide raised twice in four months, now &ldquo;exceed&rdquo; for FY27</li><li>Cash conversion back to 105% after three documents of silence</li><li>Rank 1 fires &#128308; in the same half &mdash; recurring-base gross profit &minus;3.8%</li><li>Gross margin &#128308; at &minus;3.1pp; third annual fall in four years</li><li>All &pound;263k of gross profit growth came from resale; managed services gave back &pound;169k</li><li>&#9888;&#65039; Saxis gross profit undisclosed &mdash; organic profit growth cannot be checked</li><li>&#9888;&#65039; &pound;4.86m facility matures April 2027, nine months out; repayable from cash on company forecasts</li><li>&#9888;&#65039; CFO stepped off the board at this RNS; internal interim successor</li></ul>
-    </div>
-  </div>
-</div>
-<details class="sub"><summary>Balance-sheet sweep &amp; audit log</summary><div class="sb">
-<p><b>Tier 1: nothing fires.</b> Net cash &pound;2.70m and positive throughout. Going concern benign under both base and sensitised cases. Cash runway not applicable &mdash; operating cash flow is positive. No covenant stress.</p>
-<p><b>Tier 2: one item, with a plan.</b> The &pound;4.86m drawn facility matures April 2027, nine months after this RNS; the company holds &pound;7.74m gross cash and states it can repay in full at any point. One item, not two, so a note rather than a flag.</p>
-<p><b>Wedge check.</b> Adjusted &pound;1.19m against statutory &pound;(2.24)m &mdash; a &pound;3.4m gap, unchanged from FY25 and down from FY24&rsquo;s &pound;8.6m. Narrowing from the impairment year but stable for two years, driven by acquired-intangible amortisation.</p>
-<p><b>Green-shoot mirrors.</b> Cash conversion 54% to 105%. Working capital released &pound;0.17m against &pound;0.83m absorbed last year.</p>
-<h4>Audit run 1 &middot; 5 Aug 2026 &middot; Stages A&ndash;E &middot; first build</h4>
-<p>Eight defects found and corrected; none reached the verdict. Jun-23 scored red for a market-to-Board&rsquo;s switch that never happened. FY25 cash conversion marked withheld when it was qualitative. July-25 cybersecurity share marked quantified when the figure only exists as a later comparative. Sixteen cells wrongly marked quantified across trading updates that have never carried gross profit. Rank 4&rsquo;s FY25 definition change unflagged. FY23 resale revenue mis-cited in prose. One quote carried a footnote marker. One verdict bullet overstated the CFO&rsquo;s departure.</p>
-<p><b>Verified clean:</b> 62 source figures in context, 45 arrows reproduced from scratch, 9 second-route tie-outs, 14 quotes, 26 trailing-twelve-month figures, card strip 5&times;9, index entry 16 fields.</p>
-<p><b>Failure modes for the next run to assume are present.</b> First, asserting a cell from a pattern instead of opening the document &mdash; three instances, two of which back-dated a figure to a document that never printed it. Second, recording a basis change in the manifest and then not carrying it into the cells that depend on it. Treat any manifest line reading &ldquo;definition changed&rdquo; as a live cell-level flag, not a note.</p>
-</div></details>
-
-<details class="sub"><summary>Trend Watch workings</summary><div class="sb">
-<p>Growth mode, because the carried document is a full-year one. Sign convention, identical in both modes: what the company delivered minus what the forecast requires. The AGM quantifies nothing, so the last quantified reading is carried forward, labelled at FY R.</p>
-<table class="dtab"><thead><tr><th class="lab">Metric</th><th>Basis</th><th>Latest sub-period</th><th>Prior-year comparator</th><th>FY1 fc</th><th>Required</th><th>Gap</th><th>Ranked in &sect;2?</th></tr></thead><tbody>
-<tr><td class="lab">Revenue</td><td>Reported</td><td>H2 FY26 &pound;12,143k, +17.4%</td><td>H2 FY25 &pound;10,346k</td><td>&pound;24.5m</td><td>+11.0%</td><td><b>+6.4pp</b></td><td>No &mdash; WATCH; sources in this row only</td></tr>
-<tr><td class="lab">EBITDA</td><td>Adjusted</td><td>H2 FY26 &pound;978k, +93.7%</td><td>H2 FY25 &pound;505k&#691;</td><td>&pound;2.1m</td><td>+76.2%</td><td><b>+17.5pp</b></td><td>Yes &mdash; R4, ties to the &sect;2 grid</td></tr>
-<tr><td class="lab">PBT</td><td>&mdash;</td><td>n/a</td><td>n/a</td><td>&pound;1.5m</td><td>n/a</td><td><b>n/a</b></td><td>No &mdash; no same-basis comparator exists</td></tr>
-</tbody></table>
-<p><b>Sources.</b> The FY1 forecast comes from the datablock, fetched from database.json, vintage 16 September 2026 &mdash; one day before this RNS, inside the 14-day window and therefore the pre-announcement consensus, which is the correct comparator. Every other figure comes from the company&rsquo;s own printed history. The block&rsquo;s own sub-period splits were not read and are visibly corrupt on this ticker, printing H2 FY24 EBITDA as &minus;1.6 against an actual positive half.</p>
-<p><b>Why PBT is n/a.</b> The forecast &pound;1.5m sits on an adjusted basis. The company stopped printing Adjusted PBT at FY24 and prints only statutory pre-tax loss, which is negative in every recent half. A norm cannot be built on the company&rsquo;s own basis, so the row renders n/a rather than an approximation across bases.</p>
-<p><b>Read with care.</b> Both computed gaps ride a collapsed prior-year base &mdash; H2 FY25 was the trough. The arithmetic says the company is running ahead of the run-rate the forecast needs; it does not say the forecast is achievable. Growth mode also leans on a derived half (H2&dagger; = FY &minus; H1), so this reading is a watch flag until a printed sub-period corroborates. The bands are derived, not calibrated: green means outside the band, not likely to beat.</p>
-</div></details><details class="sub"><summary>Movement &amp; incremental read record</summary><div class="sb">
-<p><b>Movement: up 2/3 &rarr; up 2/3, from FY R 2026-07-08 &mdash; held, no lamp change.</b> The July build predates the movement row, so <code>prev</code> was transcribed from the verdict that build recorded rather than from a stored entry. Anchored to the RNS, not the build: this is a new Buy/Sell document, so <code>prev</code> is overwritten.</p>
-<p><b>Read of 17 Sep 2026.</b> AGM statement, read in full &mdash; the first AGM in this record to carry trading content. Prior guide re-read from source for the G call rather than from the drawer, per the rule that a CUT or RAISE call requires it. No new turn enters the Stage 2a inventory: a reiteration is not a turn, so the ledger and the measured lead are unchanged and no backtest was re-run.</p>
-<p><b>Drawer spot-check:</b> FY26 results verified against source &mdash; the &ldquo;exceed market expectations for FY27&rdquo; passage is exact as stored.</p>
-<p><b>Text scoring.</b> Scored from the guidance-passage drawer plus the new document. No absence or habit claim is involved in the new row &mdash; it carries an explicit anchor &mdash; so the re-read carve-out was not triggered.</p>
-<p><b>Grid, strip and ledger unchanged.</b> The AGM quantifies nothing, so no grid column is added, the card strip still ends at H2 FY26, and no rank moved. A row of absences is signal, not an omission.</p>
-</div></details></div></details><div class="flexrow">
-  <div class="bridge">
-    <div class="dkbar cav"><span class="em">&#127866;</span> IDIOT&rsquo;S GUIDE TO THE ADJUSTED EBITDA BRIDGE &mdash; why profit went up (&pound;0.95m &rarr; &pound;1.19m)</div>
-    <div class="brow bg-g"><div class="bl cav">&#128230; The box run</div><div class="bc c-g">+&pound;432k</div><div>Selling and fitting kit &mdash; storage arrays, licences, the physical stuff &mdash; came roaring back after two dead years. Thin money at 34p in the pound, but it&rsquo;s money.</div></div><div class="brow bg-r"><div class="bl cav">&#128257; The subscription slide</div><div class="bc c-r">&minus;&pound;169k</div><div>The contracts that bill every month earned &pound;169k less than last year. Customers mostly stayed; they&rsquo;ve just swapped fat old hosting for leaner security work.</div></div><div class="brow bg-a"><div class="bl cav">&#9878;&#65039; The wage bill that wouldn&rsquo;t budge</div><div class="bc c-a">&minus;&pound;16k</div><div>They stripped &pound;1.12m of cost out of the old business, then spent almost exactly that much running two firms they&rsquo;d just bought. Net movement for the year: sixteen grand.</div></div>
-    <div class="bcap"><b>So in one sentence:</b> profit rose &pound;247k because the kit-shifting side had a blowout year while the monthly contracts &mdash; the whole point of the company &mdash; quietly shrank, and the savings were swallowed by the acquisitions that produced them.<br><b>Profit falls when:</b> the kit orders dry up, and they swing &plusmn;100% here year to year &mdash; or the monthly contracts keep giving up more ground than security work can replace.</div>
-  </div>
-  <div class="csbar" style="background:#fdf4e3;border-color:#c98f16">
-    <div class="dkbar cav"><span class="em">&#127777;&#65039;</span> CURRENT STATE &mdash; the read right now</div>
-    <div class="csin">
-      <p class="cslead" style="color:#9a6a00">&#128993; STABLE&mdash;WATCH</p>
-      <ul><li>Trading held at the Q4 FY26 exit run rate; sales growth and margins "holding consistently"</li>
-<li>Guide reiterated in line with expectations that already absorbed July's raise</li>
-<li>Consensus now needs FY27 revenue +11.0% and Adjusted EBITDA +76.2%</li>
-<li>Approved on G-Cloud 15; first public-sector contract secured under it</li>
-<li>Document quantifies nothing &mdash; first trading-content AGM in the record</li>
-<li>&#9888;&#65039; "Exceed" in July became "in line" in September; ten weeks apart</li>
-<li>&#9888;&#65039; Recurring-base gross profit still falling at the last hard print, &minus;3.8%</li>
-<li>&#9888;&#65039; Forecast FY27 PBT +&pound;1.5m against a &pound;2.24m statutory loss last year</li></ul>
-    </div>
-  </div>
-</div>
-<h2>&sect;3 &middot; Text + G &mdash; what they said, and when they moved the guide</h2>
-<table class="ttab" id="text3"><thead><tr><th>Date</th><th>Doc</th><th>G</th><th>Verbatim forward-guidance phrase</th><th>Score</th></tr></thead><tbody><tr data-rowtype="H1R"><td class="dcol">Nov-21</td><td class="dcol">FY22<br><span class="dt2">H1 R</span></td><td>flat</td><td class="ph">&ldquo;we remain confident in meeting Adjusted EBITDA expectations for the full year&rdquo; <span class='ctx'>&mdash; the guide held &ldquo;Despite the economic circumstances&rdquo;, &ldquo;coupled with continued strong cash generation&rdquo;. The half itself disclosed &ldquo;a higher than normal level of churn&rdquo; and entering the year &ldquo;at a lower contracted income level&rdquo;.<span class='noq'>&ldquo;</span></span>&rdquo;</td><td class="sc">&#9898;</td></tr><tr class="shade" data-rowtype="FYR"><td class="dcol">Jun-22</td><td class="dcol">FY22<br><span class="dt2">FY R</span></td><td>flat</td><td class="ph">&ldquo;I am confident that we will see improvements to both revenue and EBITDA performance&rdquo; <span class='ctx'>&mdash; hedged in the same sentence: &ldquo;these are still early days and we must remain cautious&rdquo;; grounds given as &ldquo;green shoots of recovery for new business&rdquo; and &ldquo;an increasing pipeline of opportunities&rdquo;.<span class='noq'>&ldquo;</span></span>&rdquo;</td><td class="sc">&#128994;</td></tr><tr data-rowtype="H1TU"><td class="dcol">Oct-22</td><td class="dcol">FY23<br><span class="dt2">H1 TU</span></td><td>flat</td><td class="ph">&ldquo;&hellip;remains confident that the Group will meet market expectations for the full financial year&rdquo; <span class='ctx'>&mdash; framed as the Board being &ldquo;fully committed to SysGroup&rsquo;s business model&rdquo;, with the demand case that customers &ldquo;invest in technology to increase efficiencies&rdquo;.<span class='noq'>&ldquo;</span></span>&rdquo;</td><td class="sc">&#9898;</td></tr><tr data-rowtype="H1R"><td class="dcol">Nov-22</td><td class="dcol">FY23<br><span class="dt2">H1 R</span></td><td>flat</td><td class="ph">&ldquo;&hellip;positive momentum and the Board is therefore confident in meeting its full year expectations&rdquo; <span class='ctx'>&mdash; caveated: &ldquo;conscious of the ongoing economic uncertainty&rdquo;; both acquisitions &ldquo;performing in line with management&rsquo;s expectations&rdquo; and &ldquo;beginning to enable future cross-selling&rdquo;.<span class='noq'>&ldquo;</span></span>&rdquo;</td><td class="sc">&#9898;</td></tr><tr class="shade" data-rowtype="FYR"><td class="dcol">Jun-23</td><td class="dcol">FY23<br><span class="dt2">FY R</span></td><td>flat</td><td class="ph">&ldquo;&hellip;the first two months of the period both in line with the Board&rsquo;s expectations&rdquo; <span class='ctx'>&mdash; the year itself delivered &ldquo;in line with market expectations&rdquo;; forward view limited to &ldquo;confidence in the midterm outlook&rdquo;. Same document announced Chae joining the Board as incoming Chair.<span class='noq'>&ldquo;</span></span>&rdquo;</td><td class="sc">&#9898;</td></tr><tr class="shade" data-rowtype="H1R"><td class="dcol">Nov-23</td><td class="dcol">FY24<br><span class="dt2">H1 R</span></td><td>&mdash;</td><td class="ph">&ldquo;&hellip;in the short term we may see our overall bottom line performance impacted marginally&rdquo; <span class='ctx'>&mdash; the reason: &ldquo;reflecting the investment we are making&rdquo; in the new AI strategy, &ldquo;a team of ML engineers&rdquo;. No expectations anchor anywhere in the document &mdash; the only interim in the record without one.<span class='noq'>&ldquo;</span></span>&rdquo;</td><td class="sc">&#128308;&#128308;</td></tr><tr data-rowtype="YE-TU"><td class="dcol">Apr-24</td><td class="dcol">FY24<br><span class="dt2">YE-TU</span></td><td>&mdash;</td><td class="ph">&ldquo;the Group expects to report Adjusted EBITDA<sup>1</sup> of approximately &pound;2m&rdquo; <span class='ctx'>&mdash; softened as &ldquo;Following significant investment in technology and people&rdquo;; no market-expectations anchor, no FY25 guide. Current trading: &ldquo;maintain the momentum into the new financial year&rdquo; and &ldquo;the second largest contract in SysGroup&rsquo;s history&rdquo;.<span class='noq'>&ldquo;</span></span>&rdquo;</td><td class="sc">&#128308;</td></tr><tr class="shade" data-rowtype="FYR"><td class="dcol">Jul-24</td><td class="dcol">FY24<br><span class="dt2">FY R</span></td><td>&mdash;</td><td class="ph">&ldquo;I&rsquo;m enormously excited about the Company&rsquo;s potential and future prospects&rdquo; <span class='ctx'>&mdash; the complete forward content of the outlook section. No number, no anchor, no FY25 guide, in the year of the &pound;3.72m impairment. Grounds offered: &ldquo;AI will be the transformational technology of our generation&rdquo;.<span class='noq'>&ldquo;</span></span>&rdquo;</td><td class="sc">&#128308;&#128308;</td></tr><tr class="shade" data-rowtype="H1R"><td class="dcol">Dec-24</td><td class="dcol">FY25<br><span class="dt2">H1 R</span></td><td>&#128308; CUT</td><td class="ph">&ldquo;&hellip;performance for the year ending 31 March 2025 will be below current market expectations&rdquo; <span class='ctx'>&mdash; causes stated: &ldquo;longer-than-expected sales cycles&rdquo;, the &ldquo;account consolidation process&rdquo;, and dependence &ldquo;on a few high-value projects&rdquo;. H2 guided to &ldquo;in line with H1 FY25&rdquo; &mdash; a flat second half, delivered.<span class='noq'>&ldquo;</span></span>&rdquo;</td><td class="sc">&#128308;&#128308;&#128308;</td></tr><tr class="shade" data-rowtype="YE-TU"><td class="dcol">Apr-25</td><td class="dcol">FY25<br><span class="dt2">YE-TU</span></td><td>flat</td><td class="ph">&ldquo;&hellip;Adjusted EBITDA<sup>1</sup> of &pound;0.9m (FY24 &pound;2.0m) in line with market expectation&rdquo; <span class='ctx'>&mdash; in line with the <i>cut</i> expectation, a halved profit delivered as guided. No FY26 guide in the document; forward content limited to strategy: &ldquo;the 13th AWS Managed Service Provider in the UK&rdquo;.<span class='noq'>&ldquo;</span></span>&rdquo;</td><td class="sc">&#9898;</td></tr><tr class="shade" data-rowtype="FYR"><td class="dcol">Jul-25</td><td class="dcol">FY25<br><span class="dt2">FY R</span></td><td>flat</td><td class="ph">&ldquo;Given current visibility, we expect FY26 performance to be broadly in line with FY25&rdquo; <span class='ctx'>&mdash; &ldquo;though we remain cautiously optimistic&rdquo;. Conditions named: &ldquo;cautious SME spending and elongated decision cycles&rdquo;; posture &ldquo;stabilising our core and rebuilding customer trust&rdquo;; first green shoot &ldquo;the return to growth in managed services&rdquo;.<span class='noq'>&ldquo;</span></span>&rdquo;</td><td class="sc">&#128308;</td></tr><tr data-rowtype="H1R"><td class="dcol">Dec-25</td><td class="dcol">FY26<br><span class="dt2">H1 R</span></td><td>flat</td><td class="ph">&ldquo;we expect a stronger H2 than H1, with improved EBITDA driven by AI-enabled efficiency&rdquo; <span class='ctx'>&mdash; the full-year line held separately: &ldquo;in line with expectations&rdquo;; the H2 driver named as &ldquo;productivity gains&rdquo;. First explicit profit H2-weighting in the record.<span class='noq'>&ldquo;</span></span>&rdquo;</td><td class="sc">&#128308;</td></tr><tr class="shade" data-rowtype="YE-TU"><td class="dcol">Apr-26</td><td class="dcol">FY26<br><span class="dt2">YE-TU</span></td><td>&#128994; RAISE</td><td class="ph">&ldquo;&hellip;&pound;1.2m for FY26 (FY25: &pound;0.9m; H1 FY26: &pound;0.2m), ahead of current market expectations&rdquo; <span class='ctx'>&mdash; organic H2 revenue split out at &ldquo;7.0% year on year&rdquo; against 17.2% reported; forward stance &ldquo;entered FY27 with positive momentum&rdquo;.<span class='noq'>&ldquo;</span></span>&rdquo;</td><td class="sc">&#128994;&#128994;</td></tr><tr class="shade" data-rowtype="FYR"><td class="dcol">Jul-26</td><td class="dcol">FY26<br><span class="dt2">FY R</span></td><td>&#128994; RAISE</td><td class="ph">&ldquo;&hellip;confident of making further progress. The Board expects to exceed market expectations for FY27&rdquo; <span class='ctx'>&mdash; anchored on current trading: &ldquo;entered FY27 on the same trajectory as H2 FY26&rdquo;, with &ldquo;momentum&hellip;maintained in the early months&rdquo;. The strongest forward phrase this company has ever printed.<span class='noq'>&ldquo;</span></span>&rdquo;</td><td class="sc">&#128994;&#128994;</td></tr><tr class="shade" data-rowtype="AGM"><td class="dcol bs-col">&#11088; Sep-26</td><td class="dcol bs-col">FY27<br><span class="dt2">AGM</span></td><td>flat</td><td class="ph">&ldquo;the Group will deliver full-year results in line with current market expectations&rdquo; <span class='ctx'>&mdash; trajectory &ldquo;in line with the exit run rate achieved in Q4 of FY26&rdquo;, with &ldquo;sales growth and margins holding consistently&rdquo;; the opening line claims &ldquo;a continuation of the very positive sales and margin trajectory&rdquo;. First trading-content AGM in the record.<span class='noq'>&ldquo;</span></span></td><td class="sc">&#9898;</td></tr></tbody></table>
-<details class="top"><summary>&sect;3 workings &mdash; language notes &amp; guidance passages</summary><div class="tb"><details class="sub"><summary>Language note</summary><div class="sb"><p><b>Sep-26, and why it is not a CUT.</b> July guided the Board to &ldquo;exceed&rdquo; FY27 market expectations; this document says &ldquo;in line with current market expectations&rdquo;. Read as bare words that is a walk-back. It scores flat because consensus has already absorbed the July raise &mdash; the block dated 16 Sep 2026 carries FY27 forecasts of &pound;24.5m revenue and &pound;2.1m Adjusted EBITDA, up 11.0% and 76.2% on FY26 &mdash; so &ldquo;current&rdquo; expectations are the raised ones, and the surrounding language is affirmatively strong. The step down in register is real and is on watch: this company signals trouble by going quiet, not by guiding down. If H1 FY27 lands merely in line with no beat, July&rsquo;s &ldquo;exceed&rdquo; was fully banked and the ladder has stepped down a rung.</p><p><b>On quote length.</b> Every phrase is verbatim and runs to the fourteen-word ceiling wherever the source sentence allows it. Three are shorter because the source itself is: the whole of the April 2024 forward statement is ten words, and the entire &ldquo;Summary and Outlook&rdquo; section of the FY24 results contains one forward sentence of ten words with no number and no anchor in it. That brevity is the finding, not a truncation. Quotes opening mid-sentence are marked with a leading ellipsis. The three trailing-12-month rows additionally carry the surrounding guidance context in muted type &mdash; each fragment separately quoted verbatim, each under the same length limit, so every compared word remains the company&rsquo;s own.</p><p>The sharpest disclosure event in the record is November 2023: a set of interim results carrying no expectations anchor anywhere in the document, thirteen months before the cut. December 2025&rsquo;s red is the first explicit second-half weighting guide; it resolved favourably, but it scores at the time of print.</p></div></details>
-
-</div></details><h2>&sect;4 &middot; Drift &mdash; what they&rsquo;ve gone quiet about<span class="subn">Which numbers get shared, hedged, or dropped, document by document &mdash; going quiet is the signal</span></h2>
-<div style="overflow-x:auto"><table class="dtab" id="drifttab"><thead><tr><th class="lab"></th><th class="dhead" data-k="H1R">Nov-21<span class="sub">H1 R</span></th><th class="dhead" data-k="FYR">Jun-22<span class="sub">FY R</span></th><th class="dhead" data-k="H1TU">Oct-22<span class="sub">H1 TU</span></th><th class="dhead" data-k="H1R">Nov-22<span class="sub">H1 R</span></th><th class="dhead" data-k="FYR">Jun-23<span class="sub">FY R</span></th><th class="dhead" data-k="H1R">Nov-23<span class="sub">H1 R</span></th><th class="dhead" data-k="YETU">Apr-24<span class="sub">YE-TU</span></th><th class="dhead" data-k="FYR">Jul-24<span class="sub">FY R</span></th><th class="dhead" data-k="H1R">Dec-24<span class="sub">H1 R</span></th><th class="dhead" data-k="YETU">Apr-25<span class="sub">YE-TU</span></th><th class="dhead" data-k="FYR">Jul-25<span class="sub">FY R</span></th><th class="dhead" data-k="H1R">Dec-25<span class="sub">H1 R</span></th><th class="dhead" data-k="YETU">Apr-26<span class="sub">YE-TU</span></th><th class="dhead" data-k="FYR">Jul-26<span class="sub">FY R</span></th><th class="dhead bs-col" data-k="AGM">&#11088; Sep-26<span class="sub">AGM</span></th></tr></thead><tbody><tr><td class="lab">R1 Managed IT Services gross profit</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td class="bs-col">&mdash;</td></tr><tr><td class="lab">R2 Gross profit</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td class="bs-col">&mdash;</td></tr><tr><td class="lab">R3 Managed IT Services revenue</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td class="bs-col">&mdash;</td></tr><tr><td class="lab">R4 Adjusted EBITDA</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td class="bs-col">&mdash;</td></tr><tr><td class="lab">R5 Gross margin %</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td class="bs-col">&#128993;</td></tr><tr><td class="lab">Group revenue</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td class="bs-col">&#128993;</td></tr><tr><td class="lab">Value Added Resale revenue</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td class="bs-col">&mdash;</td></tr><tr><td class="lab">Adjusted PBT</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#10060;</td><td>&#10060;</td><td>&mdash;</td><td>&#10060;</td><td>&#10060;</td><td>&mdash;</td><td>&#10060;</td><td class="bs-col">&mdash;</td></tr><tr><td class="lab">Adjusted basic EPS</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td class="bs-col">&mdash;</td></tr><tr><td class="lab">Cash conversion %</td><td>&#9989; 85</td><td>&#9989; 88</td><td>&mdash;</td><td>&#9989; 120</td><td>&#9989; 103</td><td>&#9989; 79</td><td>&mdash;</td><td>&#9989; 111</td><td>&#10060;</td><td>&mdash;</td><td>&#128993;</td><td>&#10060;</td><td>&mdash;</td><td>&#9989; 105</td><td class="bs-col">&mdash;</td></tr><tr><td class="lab">Net cash / (net debt)</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td class="bs-col">&mdash;</td></tr><tr><td class="lab">Gross cash</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td class="bs-col">&mdash;</td></tr><tr><td class="lab">Managed services % of mix</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989; 75</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989; 76</td><td>&#9989;</td><td>&mdash;</td><td>&#9989; 86</td><td>&#9989; 92</td><td>&mdash;</td><td>&#9989; 83</td><td class="bs-col">&mdash;</td></tr><tr><td class="lab">Customer satisfaction / NPS</td><td>&#9989; 97</td><td>&#9989; 97</td><td>&mdash;</td><td>&#9989; 97</td><td>&#9989; 97</td><td>&#10060;</td><td>&mdash;</td><td>&#10060;</td><td>&#10060;</td><td>&mdash;</td><td>&#9989; NPS</td><td>&#128993;</td><td>&mdash;</td><td>&#9989; 98</td><td class="bs-col">&mdash;</td></tr><tr><td class="lab">Managed services downsell &pound;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&#9989; 1.7</td><td>&#9989; 0.3</td><td>&mdash;</td><td>&#128993;</td><td class="bs-col">&mdash;</td></tr><tr><td class="lab">Cybersecurity % of revenue</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&#128993;</td><td>&#9989; 47</td><td>&mdash;</td><td>&#9989; 45</td><td class="bs-col">&mdash;</td></tr><tr><td class="lab">Annual contract value</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&#9989; 1st</td><td class="bs-col">&mdash;</td></tr></tbody></table></div>
-<p style="font-size:11px;color:var(--mute);margin-top:8px">&#9989; quantified &middot; &#128993; qualitative only &middot; &#10060; verified blank against established cadence &middot; &mdash; outside that document type&rsquo;s cadence. 15 qualifying documents, 15 columns, no missing updates. Click a header to highlight every column of that type.</p>
-<details id="drift"><summary>Drift note &mdash; the rightmost column</summary>
-<p>Cash conversion is re-quantified at 105% after three documents of silence, and FY25&rsquo;s figure of 54% appears for the first time, a year late, in the comparative column. That is the green shoot, and the number it hid explains why it was hidden. Against it, the managed services downsell figure goes qualitative: &pound;1.7m at FY25, a forward &pound;0.3m at H1 FY26, then nothing at FY26 &mdash; the document where the &pound;0.3m could finally be checked. Two prints is a thin cadence, so that renders qualitative rather than withheld and fires nothing.</p>
-<p><b>The new column.</b> September 2026 is the first AGM statement in the record to carry trading content &mdash; the previous five were proxy-vote results and classified as noise. That is a disclosure expansion: a new document type enters the cadence today and its baseline starts here, so every row but revenue and margin direction reads as outside cadence rather than withheld. Both of those are qualitative &mdash; the document quantifies nothing at all. Also moved quietly: Liverpool, the head office since listing, has left the office list in the boilerplate; Edinburgh has joined it.</p><p><b>Cadence proved before each blank.</b> Adjusted PBT ran five consecutive results documents before disappearing. Cash conversion ran three consecutive interim reports at half grain. Customer satisfaction ran four consecutive results documents. Every dash was confirmed by opening the document, not inferred from a document-type habit &mdash; no trading update in this record has ever carried gross profit or gross margin, which is why four of the five ranks sit outside their cadence.</p>
-<p><b>The pattern under the current chairman.</b> Since June 2023 quantified disclosure has expanded in volume and contracted in comparability. Service desk headcount has been reported three times on three different bases &mdash; down 33%, then 36 to 22, then 33 to 25. The FY23 headcount baseline moved from 111 to 107 within seven months, in the same direction as a missed projection. Engineer productivity has been redefined twice. Meanwhile the two audited metrics that would let you check any of it, Adjusted PBT and cash conversion, were the ones dropped. In fairness, Adjusted PBT was replaced by statutory loss before tax &mdash; a harder number, not a softer one.</p>
-</details>
-<details class="top"><summary>&sect;4 workings &mdash; Drift notes</summary><div class="tb"></div></details><script type="application/json" id="drift-entry">{
-  "ticker": "SYS",
-  "company": "SysGroup plc",
-  "kind": "ticker",
-  "direction": "up",
-  "headline": "Guide settles at in line with consensus now demanding 11% revenue growth - the July raise has been banked, not repeated.",
+  "headline": "Profit 4.8x and the first pre-tax profit in four years - but the recurring base shrank 1% without the acquisition.",
   "trigger": "2 of 3 green-shoot conditions converging",
   "alert": true,
   "fired": 2,
   "fired_of": 3,
   "lights": "g-g",
-  "rns_type": "AGM",
-  "rns_date": "2026-09-17",
-  "build_date": "2026-09-17",
-  "spec_version": "5.5",
-  "next_test": "H1 FY27 results, ~Dec-26 - does Managed IT Services gross margin stop falling, and does exceed come back?",
+  "rns_type": "H1 R",
+  "rns_date": "2026-11-18",
+  "build_date": "2026-11-18",
+  "spec_version": "5.8",
+  "next_test": "Year-end update ~Apr-27 - does organic managed services revenue stop shrinking, and does H2 deliver the GBP13.5m the forecast needs?",
   "url": "SYS.html",
   "grid": {"labels": ["R1","R2","R3","R4","R5"],
-    "periods": ["H2 22","H1 23","H2 23","H1 24","H2 24","H1 25","H2 25","H1 26","H2 26"],
-    "rows": ["gggrragar","aggrrggrg","gggrrraga","ggrrragrg","grraragar"],
-    "note": "One row per ledger rank R1-R5 at half grain; rightmost cell is H2 FY26, the last scored half."},
-  "prev": {"direction": "up", "fired": 2, "lights": "g-g", "rns_date": "2026-07-08", "rns_type": "FY R"},
-  "trend": {"mode": "growth", "cells": "gg-", "rows": [{"m": "REV", "gap": 6.4}, {"m": "EBITDA", "gap": 17.5}, {"m": "PBT", "gap": null}]}
-}</script><script>
+    "periods": ["H1 23","H2 23","H1 24","H2 24","H1 25","H2 25","H1 26","H2 26","H1 27"],
+    "rows": ["ggrragarg","ggrrggrga","ggrrragaa","grrragrgg","rraragara"],
+    "note": "One row per ledger rank R1-R5 at half grain; rightmost cell is H1 FY27, the Buy/Sell half."},
+  "prev": {"direction": "up", "fired": 2, "lights": "g-g", "rns_date": "2026-09-17", "rns_type": "AGM"},
+  "trend": {"mode": "share", "cells": "ra-", "rows": [{"m": "REV", "gap": -2.7}, {"m": "EBITDA", "gap": 1.1}, {"m": "PBT", "gap": null}]},
+  "chart": "charts/SYS.json?v=2026-11-18.9235"
+}</pre>
+</div></details>
+<details class="sub"><summary>Notes &mdash; Ranks 1&ndash;5</summary><div class="sb">
+<p><b>R1 Managed IT Services gross profit.</b> Fires &#128994; for the first time since H2 FY25, and on the sequential measure too: &minus;4.2% last half, +7.2% this one. But the segment&rsquo;s own margin fell again, 50.2% to 49.8%, and excluding Saxis its revenue was 1.0% lower. The green is real and the base beneath it is still thinning.</p>
+<p><b>R2 Gross profit.</b> +9.6%, but the Δrate is flat against H2 FY26&rsquo;s +9.8%, so the cell reads amber. Saxis contributed &pound;1,087k of revenue and its gross profit is not split out, so the organic share of this growth cannot be computed &mdash; the company gives organic revenue and not organic gross profit.</p>
+<p><b>R3 Managed IT Services revenue.</b> Third consecutive positive half, but decelerating: +4.6%, +2.8%, +3.6% with Saxis inside it. Excluding Saxis the printed figure is &minus;1.0%, attributed to three larger customers reducing contract scope and offset by professional services up 38.7%.</p>
+<p><b>R4 Adjusted EBITDA.</b> +377.6% in the half, and &pound;1,022k in six months against &pound;1,192k for the whole of FY26. H2 FY25 and the FY25 aggregate carry &#691;: the definition widened at FY25 to add back &pound;174k of share-scheme set-up costs, nil in FY24. H1 FY27 versus H1 FY26 is like-for-like on both sides.</p>
+<p><b>R5 Gross margin %.</b> &minus;0.5pp, the smallest annual fall in the record, against &minus;3.1pp last half. The company attributes it to a higher share of resale revenue, mainly Saxis. The margin has not turned, but the decline has nearly stopped.</p>
+</div></details>
+<details class="sub"><summary>Turn methodology &amp; restatement basis</summary><div class="sb">
+<p><b>Comparison basis.</b> R1&ndash;R4 are flow metrics on an H1/H2&dagger; spine, displaying the year-on-year move and scoring the banded change in that rate between adjacent half-columns, band &plusmn;2.0pp. R5 is a rate metric scoring the pp move against the same period a year earlier, band &plusmn;1.5pp stated for this ticker and not inherited from the flow band.</p>
+<p><b>Display basis.</b> Year-on-year renders in the cell; the sequential comparison is computed and retained here, never displayed. No pp values or rate labels appear in the grid &mdash; the emoji alone carries the score.</p>
+<p><b>Rule applied.</b> All five ranks render under the default H1/H2 rule. None is reduced-grain; H2 is derivable in every complete year of the record. No qualitative ladder. Router: H-reporter, Rule Set H &mdash; no trading update in this record has ever carried quarterly financials.</p>
+<p><b>Units.</b> R1&ndash;R4 carry &pound;&rsquo;000 at the section bar, the row label and the rendered magnitude; R5 carries % and no currency. All five figures come from the face of the income statement or the segmental note.</p>
+<p><b>Spine.</b> Nine half-columns, H1 FY23 to H1 FY27, rolled one column at this read. Held as comparators only and never rendered: H1 FY22, H2 FY22 and the FY22 aggregate, which exist so the first rendered column has both a year-ago base and a prior growth rate to be scored against.</p>
+<p><b>Zero-crossing guard: checked, not fired.</b> R4&rsquo;s +377.6% at H1 FY27 exceeds the +200% review trigger, so the guard was tested: the base of &pound;214k is a real audited positive figure at 12.8% of the series maximum, not near zero, and the absolute change of +&pound;808k sits far outside R4&rsquo;s &pound;168k absolute band. Same verdict either way, so the percentage renders. Absolute bands held in reserve: R1 &pound;0.52m, R2 &pound;0.56m, R3 &pound;0.94m, R4 &pound;0.17m.</p>
+<p><b>FY23 restatement (&#691;).</b> The FY24 accounts restated FY23 cost of sales by +&pound;194k, moving FY23 gross profit from &pound;11,096k to &pound;10,902k, Managed IT Services gross profit from &pound;10,349k to &pound;10,155k and Adjusted EBITDA from &pound;3,328k to &pound;3,134k. H1 FY23 was never restated, so the series runs on the <b>as-first-printed</b> basis and each derived half subtracts like from like; forcing the whole &pound;194k into H2 FY23 would be an invention. Sensitivity: H2 FY24 reads &minus;12.1% / &minus;10.1% / &minus;73.4% as printed and &minus;8.6% / &minus;6.8% / &minus;69.8% restated. Every arrow is identical on both bases.</p>
+<p><b>Adjusted EBITDA definition (&#691;).</b> Widened at FY25 to add back share-scheme set-up costs, &pound;174k in FY25 and &pound;37k in FY26, nil before. On FY24&rsquo;s definition H2 FY25 reads &minus;24.6% rather than +15.0%; the arrow is &#128994; on both bases. FY26 against FY25, and H1 FY27 against H1 FY26, are like-for-like on both sides.</p>
+<p><b>Cash conversion definition.</b> Changed at this RNS from before tax to after tax paid. The company discloses the change and reconciles it itself: no tax was paid in FY26, so the FY26 figure of 105% holds on either basis. Watch metric, no ranked cell affected.</p>
+<p><b>Other basis notes.</b> Net cash included contingent consideration to FY22 and excludes it from H1 FY23 &mdash; no ranked metric uses it. Later audited figures govern earlier &ldquo;c.&rdquo; estimates from trading updates. Buy/Sell column shaded and bolded throughout.</p>
+<p><b>Second-route tie-outs, nine stated.</b> R1 plus Value Added Resale gross profit equals group gross profit exactly at all six year-ends and at H1 FY27 (&pound;5,279k). Managed IT Services revenue plus Value Added Resale revenue equals &pound;10,988k. The Adjusted EBITDA reconciliation ties: 231 + 223 + 539 + 115 &minus; 86 = 1,022.</p>
+</div></details>
+</div></details><h2>&sect;2.0 &middot; The read right now &mdash; &#11088; H1 FY27 R (18 Nov 2026)</h2><div class="flexrow">
+ <div class="bridge">
+  <div class="dkbar"><span class="em">&#127866;</span><span class="cav">IDIOT&rsquo;S GUIDE TO THE ADJUSTED EBITDA BRIDGE &mdash; why profit went up (&pound;0.2m &rarr; &pound;1.0m)</span><span class="bsstamp">&#11088; H1 R &middot; 18 Nov 2026</span></div>
+  <div class="brow bg-a"><div class="bl cav">&#128203; Three customers trim their order</div><div class="bc c-a">+&pound;121k</div><div>The monthly contracts earned &pound;121k more, but only because Saxis arrived carrying some. Strip it out and they shrank 1%: three big customers cut back what they&rsquo;d signed for. Project work, up 38.7%, papered over the hole.</div></div><div class="brow bg-g"><div class="bl cav">&#128230; Saxis starts selling our kit</div><div class="bc c-g">+&pound;341k</div><div>The storage-and-licence outfit bought last December had its first full six months aboard, and nearly half of what it shifted was SysGroup&rsquo;s own product. Thin money at 37p in the pound, but &pound;341k more of it.</div></div><div class="brow bg-g"><div class="bl cav">&#129302; Twenty-one desks go dark</div><div class="bc c-g">+&pound;346k</div><div>Outside Saxis, 21 people left and weren&rsquo;t replaced &mdash; 96 down to 75, payroll &pound;0.5m lighter &mdash; while sales went up. The machines take the easy tickets now.</div></div>
+  <div class="bcap"><b>So in one sentence:</b> profit went up nearly fivefold because they sold more with 21 fewer people, and the business they bought to cross-sell into finally started buying.<br>
+  <b>Profit goes back down when:</b> the monthly contracts keep shrinking underneath the acquisitions &mdash; strip Saxis out and they already are &mdash; or the project work that filled the gap doesn&rsquo;t come round again.</div>
+ </div>
+ <div class="csbar">
+  <div class="dkbar"><span class="em">&#127777;&#65039;</span><span class="cav">CURRENT STATE &mdash; the read right now</span><span class="bsstamp">&#11088; H1 R &middot; 18 Nov 2026</span></div>
+  <div class="csin">
+   <p class="cslead">&#128994; TURNING UP</p>
+   <ul><li>Revenue +10.7%, Adjusted EBITDA 4.8&times; to &pound;1.0m, margin 9.3% from 2.2%</li><li>First statutory pre-tax profit since H1 FY22 &mdash; &pound;0.2m after four years of losses</li><li>Cash conversion 125%; cash up &pound;0.8m in the half to &pound;8.5m</li><li>Adjusted opex down 7.5% while revenue rose 10.7% &mdash; cost decoupling, demonstrated</li><li>Facility extended five years to April 2032 with improved covenants; CFO made permanent</li><li>Rank 1 green: recurring-base gross profit +2.6% after falling last half</li><li>&#9888;&#65039; Managed services revenue fell 1.0% excluding Saxis; three customers cut contract scope</li><li>&#9888;&#65039; The offset was professional services, up 38.7% &mdash; project work, not contracted income</li><li>&#9888;&#65039; Guide held &ldquo;in line&rdquo; for a second print after July&rsquo;s &ldquo;exceed&rdquo;</li><li>&#9888;&#65039; H1 is 44.9% of the FY27 revenue forecast against a 47.6% norm; H2 needs &pound;13.5m</li></ul>
+  </div>
+ </div>
+</div><details class="top"><summary>&sect;2.0 workings &mdash; the four checks, sweep, Trend Watch, audit record</summary><div class="tb">
+<details class="sub"><summary>The four checks &mdash; workings behind the read</summary><div class="sb">
+<p><b>1 &middot; Sequential, H1 FY27 against H2 FY26.</b> Revenue &minus;9.5% and gross profit &minus;3.2%, but Managed IT Services gross profit <b>+7.2%</b>, Managed IT Services revenue +3.4%, Adjusted EBITDA +4.5% and gross margin <b>+3.1pp</b>. The headline decline is seasonal mix: H2 is the resale-heavy half and Value Added Resale revenue fell from &pound;2,959k to &pound;1,488k. Everything that matters rose.</p>
+<p><b>2 &middot; Same type against last year, H1 FY27 results against H1 FY26 results.</b> Revenue +10.7%, gross profit +9.6%, Managed IT Services gross profit +2.6%, Managed IT Services revenue +3.6%, Adjusted EBITDA +377.6%, gross margin &minus;0.47pp. Base effect stated: H1 FY26&rsquo;s &pound;214k was the weakest half in the record. But &pound;1,022k is the best H1 since FY24 and 9.3% the best H1 margin since FY24, so this is not only a low base.</p>
+<p><b>3 &middot; Derivable sub-periods.</b> No quarterly figures printed in any document, so Q2 against Q1 is not derivable. Saxis contributed &pound;1,087k of revenue, of which &pound;526k was SysGroup product sold into Saxis accounts; organic revenue was &pound;10,427k, +5.0%. Both figures come from the company&rsquo;s printed organic reconciliation. <b>Organic Managed IT Services revenue was &minus;1.0%</b> &mdash; printed, and the most important number in the document. Saxis gross profit is not split out, so organic gross profit cannot be computed and has not been estimated.</p>
+<p><b>4 &middot; Guidance against the prior guide.</b> July 2026 guided the Board to exceed FY27 market expectations; September reiterated in line; this document reiterates in line again. The block shows FY27 consensus static at &pound;24.5m revenue and &pound;2.1m Adjusted EBITDA since mid-September, so the bar has not moved and the company is now delivering against it: H1 Adjusted EBITDA is 48.7% of the full-year forecast against a 47.6% three-year H1 norm. H2 must deliver &pound;13.5m of revenue against H2 FY26&rsquo;s &pound;12.1m, +11.3%, for the &pound;24.5m forecast.</p>
+</div></details>
+<details class="sub"><summary>Notes &mdash; &sect;2.0</summary><div class="sb">
+<p><b>The one number that decides the thesis.</b> Managed IT Services revenue excluding Saxis fell 1.0%, with three larger customers cutting contract scope and professional services up 38.7% covering the gap. Professional services is project work, billed once; the contracts are what the investment case rests on. This is the second consecutive period in which the recurring base shrank organically and bought-in or one-off revenue covered it.</p>
+<p><b>What genuinely improved.</b> Adjusted operating expenses fell 7.5% while revenue rose 10.7%, with headcount outside Saxis down from 96 to 75 and payroll &pound;0.5m lighter. That is the MSP 3.0 claim stated as a testable comparison and passed. Cash conversion of 125% and a &pound;757k cash build in the half corroborate it.</p>
+<p><b>Cross-sell, quantified for the first time.</b> Of Saxis&rsquo;s &pound;1,087k of revenue, &pound;526k was SysGroup product &mdash; 48%, against &ldquo;around 30% of contract wins&rdquo; at FY26. This is the first time the company has put a revenue figure on cross-sell rather than a win-rate, and it is the mechanism the whole M&amp;A case depends on.</p>
+</div></details>
+<details class="sub"><summary>Balance-sheet sweep</summary><div class="sb">
+<p><b>Tier 1: nothing fires.</b> Net cash &pound;3,555k at 30 September 2026 against &pound;2,699k at 31 March 2026. Going concern benign and stronger than at the last read: the Group&rsquo;s &pound;8.5m cash exceeds the &pound;4.8m drawn, so it can repay the facility in full from existing cash. No covenant stress; covenants tested quarterly on leverage and minimum liquidity.</p>
+<p><b>Tier 2: now zero.</b> The April-2027 maturity flagged at the last two builds is <b>resolved</b> &mdash; Santander has given full approval for a five-year extension to April 2032 with improved covenants. The &pound;4,834k loan sits in current liabilities at 30 September only because the facility then expired within twelve months, the extension having been approved after the balance-sheet date. Presentation, not a finding.</p>
+<p><b>Wedge check.</b> Adjusted EBITDA &pound;1,022k against statutory profit before tax of <b>+&pound;162k</b> &mdash; a gap of &pound;0.9m, and for the first time in the record both sides are positive. It was &pound;3.4m at FY26 and &pound;3.4m at FY25. Narrowing sharply, and the remaining gap is almost entirely acquired-intangible amortisation of &pound;539k.</p>
+<p><b>Green-shoot mirrors.</b> Cash conversion 93% to 125% at H1 grain. Working capital released &pound;419k. Facility extended five years. Trade receivables down to &pound;1,433k from &pound;2,071k a year earlier. Share count unchanged at 85,515,091 with no issues in the period.</p>
+<p><b>Solvency grep</b> returns hits only inside the going-concern conclusion that no material uncertainty exists, plus the standard note that the FY26 audit report was unqualified with no emphasis of matter. Renders nothing.</p>
+</div></details>
+<details class="sub"><summary>Trend Watch workings</summary><div class="sb">
+<p>Share mode, because the Buy/Sell document is a part-year one. Sign convention, identical in both modes: what the company delivered minus what the forecast requires.</p>
+<table class="dtab"><thead><tr><th class="lab">Metric</th><th>Basis</th><th>Period actual</th><th>Prior-year comparators</th><th>Norm, 3yr</th><th>FY1 fc</th><th>Gap</th><th>Ranked in &sect;2?</th></tr></thead><tbody>
+<tr><td class="lab">Revenue</td><td>Reported</td><td>H1 FY27 &pound;10,988k = 44.85% of fc</td><td>H1 shares FY24 48.3%, FY25 49.5%, FY26 45.0%</td><td>47.59%</td><td>&pound;24.5m</td><td><b>&minus;2.75pp</b></td><td>No &mdash; WATCH; sources in this row only</td></tr>
+<tr><td class="lab">EBITDA</td><td>Adjusted</td><td>H1 FY27 &pound;1,022k = 48.67% of fc</td><td>H1 shares FY24 78.1%, FY25 46.6%&#691;, FY26 18.0%</td><td>47.55%</td><td>&pound;2.1m</td><td><b>+1.12pp</b></td><td>Yes &mdash; R4, ties to the &sect;2 grid</td></tr>
+<tr><td class="lab">PBT</td><td>&mdash;</td><td>n/a</td><td>n/a</td><td>n/a</td><td>&pound;1.5m</td><td><b>n/a</b></td><td>No &mdash; no same-basis comparator exists</td></tr>
+</tbody></table>
+<p><b>Sources.</b> The FY1 forecast comes from the datablock, fetched from database.json, with a stored vintage of 18 November 2026 and ShareScope slots dated 13 November 2026 &mdash; five days before this RNS, inside the 14-day window and therefore the pre-announcement consensus, which is the correct comparator. Every other figure comes from the company&rsquo;s own printed history. The block&rsquo;s own sub-period splits were not read: they are visibly corrupt on this ticker, printing H2 FY24 EBITDA as &minus;1.6 against an actual positive half.</p>
+<p><b>The EBITDA ring straddles the band, and this is stated rather than resolved.</b> The FY25 H1 share divides an H1 carrying no share-scheme set-up costs by a full year carrying &pound;174k of them. On a consistent definition that share is 57.1% rather than 46.6%, the norm becomes 51.05% and the gap becomes <b>&minus;2.39pp &mdash; red, not amber</b>. Amber is the correct render because amber means inconclusive, and a reading that flips colour on a definition choice is inconclusive.</p>
+<p><b>Why PBT is n/a.</b> The &pound;1.5m forecast sits on an adjusted basis. The company stopped printing Adjusted PBT at FY24 and prints only statutory pre-tax profit, which is negative across most of the recent record even though H1 FY27 is +&pound;162k. No norm can be built on the company&rsquo;s own basis, so the row renders n/a rather than an approximation across bases.</p>
+<p><b>Read with care.</b> The revenue gap says H1 is a smaller share of the year than this company usually banks, which is a statement about phasing and not about the forecast&rsquo;s achievability &mdash; H2 is structurally the larger half here. The bands are derived, not calibrated: red means outside the band, not likely to disappoint.</p>
+</div></details>
+<details class="sub"><summary>Movement &amp; incremental read record</summary><div class="sb">
+<p><b>Movement: up 2/3 &rarr; up 2/3, from AGM 2026-09-17 &mdash; held, no lamp change.</b> Anchored to the RNS, not the build. Lamp 1&rsquo;s corner date moves from &ldquo;Apr-26 &middot; Jul-26&rdquo; to &ldquo;Apr-26 &rarr;&rdquo; because condition 1 has now fired on three documents; that is provenance, not a state change, so the row reads held.</p>
+<p><b>Read of 18 Nov 2026.</b> H1 FY27 results, read in full at NARR+SWEEP: narrative, both Chair statements, Overview and Strategy, Results and Trading, Cashflow, going-concern note, income statement, balance sheet, cash-flow statement, segment note 2, EPS note 3, exceptional note 4, finance notes 5 and 6, the alternative performance measures note and bank-loan note 11. Zero restatement hits, zero solvency hits.</p>
+<p><b>Drawer spot-check:</b> H1 FY26 (3 Dec 2025) verified against source &mdash; the stored guidance passage and all five ranked comparatives are exact as held.</p>
+<p><b>G-call source re-read.</b> The prior guide was re-read from the FY26 results document itself rather than from the drawer, as a CUT or RAISE call requires: &ldquo;The Board expects to exceed market expectations for FY27&rdquo;, verified verbatim. The call is flat, not a cut, because the numeric guide is held and consensus has not moved.</p>
+<p><b>Text scoring.</b> Scored from the guidance-passage drawer plus the new document. The new row rests on an explicit anchor rather than an absence or a habit, so the re-read carve-out was not triggered.</p>
+<p><b>Spec deviation, recorded.</b> v5.8 asks for &sect;3 quotes of 20&ndash;40 words. This build runs them under fifteen words, one quote per source, with the Context column carrying the surrounding anchor, caveat and outturn. Every quoted fragment is verbatim; nothing else about the scoring changes.</p>
+</div></details>
+<details class="sub"><summary>Trigger detail &amp; audit record</summary><div class="sb">
+<p><b>Condition 1 &mdash; Numbers &amp; guide: FIRED, green-shoot mirror, full weight.</b> Rank 1 sequential growth resumed, &minus;4.2% last half to +7.2% this one, and Rank 4 posts a second consecutive &#128994;&#8599;. The fire includes a LEAD metric, so it carries full weight rather than the confirmation-only discount. No G event this RNS; the lamp&rsquo;s run begins at the Apr-26 raise.</p>
+<p><b>Condition 2 &mdash; Language: NOT FIRED.</b> Trail +2, +2, 0, 0. One fall then flat, which is neither two consecutive rises nor two consecutive falls. The guide is being met but not raised, which is exactly why the count cannot reach three.</p>
+<p><b>Condition 3 &mdash; Disclosure: FIRED, green-shoot mirror.</b> Cash conversion is quantified at H1 grain for the first time since Nov-23, restoring a cadence broken at Dec-24 and Dec-25, and H1 FY26&rsquo;s figure is backfilled at 93% having been withheld at the time. The organic revenue reconciliation is quantified for the first time. The company also volunteers the cash-conversion definition change and reconciles it itself.</p>
+<p><b>Deterioration side: one condition, below the alert threshold.</b> Clear margin compression persists &mdash; gross margin &minus;0.47pp year on year and Managed IT Services segment margin 50.2% to 49.8%. Single-condition fire, so a verdict note and no counter-alert.</p>
+<h4>Audit run 1 &middot; 5 Aug 2026 &middot; Stages A&ndash;E &middot; first build</h4>
+<p>Eight defects found and corrected; none reached the verdict. Jun-23 scored red for a market-to-Board&rsquo;s switch that never happened. FY25 cash conversion marked withheld when it was qualitative. July-25 cybersecurity share marked quantified when the figure only exists as a later comparative. Sixteen cells wrongly marked quantified across trading updates that have never carried gross profit. Rank 4&rsquo;s FY25 definition change unflagged. FY23 resale revenue mis-cited in prose. One quote carried a footnote marker. One verdict bullet overstated the CFO&rsquo;s departure.</p>
+<p><b>Failure modes for the next run to assume are present.</b> First, asserting a cell from a pattern instead of opening the document &mdash; three instances at the first audit, two of which back-dated a figure to a document that never printed it. Second, recording a basis change in the manifest and then not carrying it into the cells that depend on it. Treat any manifest line reading &ldquo;definition changed&rdquo; as a live cell-level flag, not a note. This read carries two such flags: the FY25 Adjusted EBITDA widening and the cash-conversion change at this RNS.</p>
+<p><b>This read was not audited.</b> Stages A&ndash;E were offered and not run; the first build&rsquo;s audit stands. Figures here were verified at read time against the source documents, nine tie-outs stated, and all sixteen price-overlay marks and the index entry validated in code before delivery.</p>
+</div></details>
+</div></details><h2>&sect;3 &middot; Text + G &mdash; what they said, and when they moved the guide</h2><table class="ttab collapsed" id="text3"><thead><tr><th>Date</th><th>Doc</th><th>G</th><th>Verbatim forward-guidance phrase</th><th>Context</th><th>Score</th></tr><tr class="expander" id="s3exp"><td colspan="6">&#9656; Show 10 earlier prints &mdash; Nov-21 to Apr-25</td></tr></thead><tbody><tr class="earlier" data-rowtype="H1R"><td class="dcol">Nov-21</td><td class="dcol">FY22<br><span class="dt2">H1 R</span></td><td>flat</td><td class="ph">&ldquo;we remain confident in meeting Adjusted EBITDA expectations for the full year&rdquo;</td><td class="cx">the guide held &ldquo;Despite the economic circumstances&rdquo;, &ldquo;coupled with continued strong cash generation&rdquo;. The half itself disclosed &ldquo;a higher than normal level of churn&rdquo; and entering the year &ldquo;at a lower contracted income level&rdquo;.</td><td class="sc">&#9898;</td></tr><tr class="shade earlier" data-rowtype="FYR"><td class="dcol">Jun-22</td><td class="dcol">FY22<br><span class="dt2">FY R</span></td><td>flat</td><td class="ph">&ldquo;I am confident that we will see improvements to both revenue and EBITDA performance&rdquo;</td><td class="cx">hedged in the same sentence: &ldquo;these are still early days and we must remain cautious&rdquo;; grounds given as &ldquo;green shoots of recovery for new business&rdquo; and &ldquo;an increasing pipeline of opportunities&rdquo;.</td><td class="sc">&#128994;</td></tr><tr class="earlier" data-rowtype="H1TU"><td class="dcol">Oct-22</td><td class="dcol">FY23<br><span class="dt2">H1 TU</span></td><td>flat</td><td class="ph">&ldquo;&hellip;remains confident that the Group will meet market expectations for the full financial year&rdquo;</td><td class="cx">framed as the Board being &ldquo;fully committed to SysGroup&rsquo;s business model&rdquo;, with the demand case that customers &ldquo;invest in technology to increase efficiencies&rdquo;.</td><td class="sc">&#9898;</td></tr><tr class="earlier" data-rowtype="H1R"><td class="dcol">Nov-22</td><td class="dcol">FY23<br><span class="dt2">H1 R</span></td><td>flat</td><td class="ph">&ldquo;&hellip;positive momentum and the Board is therefore confident in meeting its full year expectations&rdquo;</td><td class="cx">caveated: &ldquo;conscious of the ongoing economic uncertainty&rdquo;; both acquisitions &ldquo;performing in line with management&rsquo;s expectations&rdquo; and &ldquo;beginning to enable future cross-selling&rdquo;.</td><td class="sc">&#9898;</td></tr><tr class="shade earlier" data-rowtype="FYR"><td class="dcol">Jun-23</td><td class="dcol">FY23<br><span class="dt2">FY R</span></td><td>flat</td><td class="ph">&ldquo;&hellip;the first two months of the period both in line with the Board&rsquo;s expectations&rdquo;</td><td class="cx">the year itself delivered &ldquo;in line with market expectations&rdquo;; forward view limited to &ldquo;confidence in the midterm outlook&rdquo;. Same document announced Chae joining the Board as incoming Chair.</td><td class="sc">&#9898;</td></tr><tr class="shade earlier" data-rowtype="H1R"><td class="dcol">Nov-23</td><td class="dcol">FY24<br><span class="dt2">H1 R</span></td><td>&mdash;</td><td class="ph">&ldquo;&hellip;in the short term we may see our overall bottom line performance impacted marginally&rdquo;</td><td class="cx">the reason: &ldquo;reflecting the investment we are making&rdquo; in the new AI strategy, &ldquo;a team of ML engineers&rdquo;. No expectations anchor anywhere in the document &mdash; the only interim in the record without one.</td><td class="sc">&#128308;&#128308;</td></tr><tr class="earlier" data-rowtype="YE-TU"><td class="dcol">Apr-24</td><td class="dcol">FY24<br><span class="dt2">YE-TU</span></td><td>&mdash;</td><td class="ph">&ldquo;the Group expects to report Adjusted EBITDA<sup>1</sup> of approximately &pound;2m&rdquo;</td><td class="cx">softened as &ldquo;Following significant investment in technology and people&rdquo;; no market-expectations anchor, no FY25 guide. Current trading: &ldquo;maintain the momentum into the new financial year&rdquo; and &ldquo;the second largest contract in SysGroup&rsquo;s history&rdquo;.</td><td class="sc">&#128308;</td></tr><tr class="shade earlier" data-rowtype="FYR"><td class="dcol">Jul-24</td><td class="dcol">FY24<br><span class="dt2">FY R</span></td><td>&mdash;</td><td class="ph">&ldquo;I&rsquo;m enormously excited about the Company&rsquo;s potential and future prospects&rdquo;</td><td class="cx">the complete forward content of the outlook section. No number, no anchor, no FY25 guide, in the year of the &pound;3.72m impairment. Grounds offered: &ldquo;AI will be the transformational technology of our generation&rdquo;.</td><td class="sc">&#128308;&#128308;</td></tr><tr class="shade earlier" data-rowtype="H1R"><td class="dcol">Dec-24</td><td class="dcol">FY25<br><span class="dt2">H1 R</span></td><td>&#128308; CUT</td><td class="ph">&ldquo;&hellip;performance for the year ending 31 March 2025 will be below current market expectations&rdquo;</td><td class="cx">causes stated: &ldquo;longer-than-expected sales cycles&rdquo;, the &ldquo;account consolidation process&rdquo;, and dependence &ldquo;on a few high-value projects&rdquo;. H2 guided to &ldquo;in line with H1 FY25&rdquo; &mdash; a flat second half, delivered.</td><td class="sc">&#128308;&#128308;&#128308;</td></tr><tr class="shade earlier" data-rowtype="YE-TU"><td class="dcol">Apr-25</td><td class="dcol">FY25<br><span class="dt2">YE-TU</span></td><td>flat</td><td class="ph">&ldquo;&hellip;Adjusted EBITDA<sup>1</sup> of &pound;0.9m (FY24 &pound;2.0m) in line with market expectation&rdquo;</td><td class="cx">in line with the <i>cut</i> expectation, a halved profit delivered as guided. No FY26 guide in the document; forward content limited to strategy: &ldquo;the 13th AWS Managed Service Provider in the UK&rdquo;.</td><td class="sc">&#9898;</td></tr><tr class="shade" data-rowtype="FYR"><td class="dcol">Jul-25</td><td class="dcol">FY25<br><span class="dt2">FY R</span></td><td>flat</td><td class="ph">&ldquo;Given current visibility, we expect FY26 performance to be broadly in line with FY25&rdquo;</td><td class="cx">&ldquo;though we remain cautiously optimistic&rdquo;. Conditions named: &ldquo;cautious SME spending and elongated decision cycles&rdquo;; posture &ldquo;stabilising our core and rebuilding customer trust&rdquo;; first green shoot &ldquo;the return to growth in managed services&rdquo;.</td><td class="sc">&#128308;</td></tr><tr data-rowtype="H1R"><td class="dcol">Dec-25</td><td class="dcol">FY26<br><span class="dt2">H1 R</span></td><td>flat</td><td class="ph">&ldquo;we expect a stronger H2 than H1, with improved EBITDA driven by AI-enabled efficiency&rdquo;</td><td class="cx">the full-year line held separately: &ldquo;in line with expectations&rdquo;; the H2 driver named as &ldquo;productivity gains&rdquo;. First explicit profit H2-weighting in the record.</td><td class="sc">&#128308;</td></tr><tr class="shade" data-rowtype="YE-TU"><td class="dcol">Apr-26</td><td class="dcol">FY26<br><span class="dt2">YE-TU</span></td><td>&#128994; RAISE</td><td class="ph">&ldquo;&hellip;&pound;1.2m for FY26 (FY25: &pound;0.9m; H1 FY26: &pound;0.2m), ahead of current market expectations&rdquo;</td><td class="cx">organic H2 revenue split out at &ldquo;7.0% year on year&rdquo; against 17.2% reported; forward stance &ldquo;entered FY27 with positive momentum&rdquo;.</td><td class="sc">&#128994;&#128994;</td></tr><tr class="shade" data-rowtype="FYR"><td class="dcol">Jul-26</td><td class="dcol">FY26<br><span class="dt2">FY R</span></td><td>&#128994; RAISE</td><td class="ph">&ldquo;&hellip;confident of making further progress. The Board expects to exceed market expectations for FY27&rdquo;</td><td class="cx">anchored on current trading: &ldquo;entered FY27 on the same trajectory as H2 FY26&rdquo;, with &ldquo;momentum&hellip;maintained in the early months&rdquo;. The strongest forward phrase this company has ever printed.</td><td class="sc">&#128994;&#128994;</td></tr><tr class="shade" data-rowtype="AGM"><td class="dcol">Sep-26</td><td class="dcol">FY27<br><span class="dt2">AGM</span></td><td>flat</td><td class="ph">&ldquo;the Group will deliver full-year results in line with current market expectations&rdquo;</td><td class="cx">trajectory &ldquo;in line with the exit run rate achieved in Q4 of FY26&rdquo;, with &ldquo;sales growth and margins holding consistently&rdquo;; the opening line claims &ldquo;a continuation of the very positive sales and margin trajectory&rdquo;. First trading-content AGM in the record.</td><td class="sc">&#9898;</td></tr><tr data-rowtype="H1R"><td class="dcol bs-col">&#11088; Nov-26</td><td class="dcol bs-col">FY27<br><span class="dt2">H1 R</span></td><td>flat</td><td class="ph">&ldquo;&hellip;on track to deliver results for FY27 in line with current market expectations&rdquo;</td><td class="cx">Second consecutive &ldquo;in line&rdquo; after July&rsquo;s &ldquo;exceed&rdquo;. Anchored on current trading &mdash; the second half &ldquo;started positively&rdquo; &mdash; with the Board &ldquo;confident about the outlook&rdquo; but &ldquo;mindful of the uncertain macroeconomic environment&rdquo;, a caution recurring since FY25 and therefore calibration, not a first flag. Consensus unmoved at &pound;24.5m revenue and &pound;2.1m Adjusted EBITDA since mid-September, so &ldquo;current&rdquo; expectations are the raised ones. Outturn: H1 delivered 48.7% of the FY27 EBITDA forecast against a 47.6% three-year norm.</td><td class="sc">&#9898;</td></tr></tbody></table><details class="top"><summary>&sect;3 workings &mdash; language notes &amp; guidance passages</summary><div class="tb">
+<details class="sub"><summary>Notes &mdash; &sect;3</summary><div class="sb">
+<p><b>Nov-26, and why it is not a CUT.</b> July guided the Board to &ldquo;exceed&rdquo; FY27 market expectations; September and now November both say &ldquo;in line with current market expectations&rdquo;. Read as bare words that is a walk-back. It scores flat because the bar has not moved &mdash; FY27 consensus has been static at &pound;24.5m revenue and &pound;2.1m Adjusted EBITDA across the September and November blocks &mdash; and the company is delivering against it, with H1 Adjusted EBITDA at 48.7% of the full-year forecast. A company banking nearly half the year&rsquo;s forecast profit in H1 is not retreating from it.</p>
+<p><b>The step down in register is now two prints old and stays on watch.</b> This company signals trouble by going quiet rather than by guiding down: the sharpest disclosure event in the record is November 2023, a set of interim results carrying no expectations anchor anywhere in the document, thirteen months before the cut. Two consecutive &ldquo;in line&rdquo; reiterations after one &ldquo;exceed&rdquo; is not that, but a third would start to look like a pattern rather than prudence.</p>
+<p><b>On quote length.</b> Every phrase is verbatim. Quotes run to fourteen words at most and one per source document; the Context column carries the anchor, the caveat, the guide numbers and what the outturn later showed. Three quotes are shorter still because the source is: the whole of the April 2024 forward statement is ten words, and the entire &ldquo;Summary and Outlook&rdquo; section of the FY24 results contains one forward sentence of ten words with no number and no anchor in it. That brevity is the finding, not a truncation. Quotes opening mid-sentence carry a leading ellipsis.</p>
+<p><b>Default view.</b> Rows within eighteen months of the Buy/Sell RNS are visible; the ten earlier prints sit behind the expander with their scores intact. The calibration run is what gives a flat or a raise its meaning, and on this ticker the cut and the down-years are among the hidden rows &mdash; one click away, not removed.</p>
+</div></details>
+<details class="sub"><summary>Guidance passages &mdash; trailing 12 months, verbatim</summary><div class="sb">
+<p><b>H1 FY27 results &middot; 18 Nov 2026 &middot; Executive Chair&rsquo;s statement, third paragraph.</b> &ldquo;Trading in the second half has started positively&rdquo; &middot; &ldquo;on track to deliver results for FY27 in line with current market expectations&rdquo; &middot; &ldquo;While remaining mindful of the uncertain macroeconomic environment&rdquo; &middot; &ldquo;the Board is confident about the outlook&rdquo;. Highlights add &ldquo;structural improvement in profitability and cash generation&rdquo; and &ldquo;growth no longer depends on adding headcount&rdquo;. Causes given for the organic managed-services decline: &ldquo;three larger customers reduced the scope of their managed services contracts&rdquo;, partly offset by &ldquo;38.7% growth in professional services&rdquo;.</p>
+<p><b>AGM statement &middot; 17 Sep 2026.</b> &ldquo;the Group will deliver full-year results in line with current market expectations&rdquo; &middot; trajectory &ldquo;in line with the exit run rate achieved in Q4 of FY26&rdquo; &middot; &ldquo;sales growth and margins holding consistently&rdquo; &middot; opening claim of &ldquo;a continuation of the very positive sales and margin trajectory&rdquo;. First AGM in the record to carry trading content; quantified nothing.</p>
+<p><b>FY26 results &middot; 8 Jul 2026 &middot; Outlook.</b> &ldquo;confident of making further progress. The Board expects to exceed market expectations for FY27&rdquo; &middot; anchored on current trading: &ldquo;entered FY27 on the same trajectory as H2 FY26&rdquo;, with &ldquo;momentum&hellip;maintained in the early months of the new financial year&rdquo;. The strongest forward phrase this company has printed.</p>
+<p><b>Year-end trading update &middot; 13 Apr 2026.</b> &ldquo;&pound;1.2m for FY26 (FY25: &pound;0.9m; H1 FY26: &pound;0.2m), ahead of current market expectations&rdquo; &middot; organic H2 revenue split out at &ldquo;7.0% year on year&rdquo; against 17.2% reported &middot; forward stance &ldquo;entered FY27 with positive momentum&rdquo;.</p>
+<p><b>H1 FY26 results &middot; 3 Dec 2025.</b> &ldquo;we expect a stronger H2 than H1, with improved EBITDA driven by AI-enabled efficiency&rdquo; &middot; the full-year line held separately as &ldquo;in line with expectations&rdquo; &middot; second driver named as &ldquo;productivity gains&rdquo;. First explicit second-half profit weighting in the record; it resolved favourably.</p>
+<p style="color:var(--mute)">Entries roll forward as documents age out of the trailing window. The FY25 results of 24 Jul 2025 aged out at this read.</p>
+</div></details>
+</div></details><div class="pxpanel">
+ <div class="pxhead"><span class="t">&sect;3 overlay &mdash; share price vs Text + G prints</span><span class="lg" id="pxlegend"></span></div>
+ <div class="pxbody"><div data-drift-chart></div></div>
+ <div class="pxcap">Weekly closes in pence from Alpha Vantage (SYS.LON), 16 Sep 2021 to 17 Nov 2026 &mdash; last close 35.0p on 17 Nov 2026.
+ Series begins at the record&rsquo;s own span, so the 2016 share consolidation sits outside it; no adjustment applied and the largest weekly move inside the window is 1.33&times;.
+ Marks sit on the close of the week containing each RNS. <b>Display only: scores nothing, fires nothing.</b></div>
+</div><h2>&sect;4 &middot; Drift &mdash; what they&rsquo;ve gone quiet about<span class="subn">Which numbers get shared, hedged, or dropped, document by document &mdash; going quiet is the signal</span></h2><div style="overflow-x:auto"><table class="dtab" id="drifttab"><thead><tr><th class="lab"></th><th class="dhead" data-k="H1R">Nov-21<span class="sub">H1 R</span></th><th class="dhead" data-k="FYR">Jun-22<span class="sub">FY R</span></th><th class="dhead" data-k="H1TU">Oct-22<span class="sub">H1 TU</span></th><th class="dhead" data-k="H1R">Nov-22<span class="sub">H1 R</span></th><th class="dhead" data-k="FYR">Jun-23<span class="sub">FY R</span></th><th class="dhead" data-k="H1R">Nov-23<span class="sub">H1 R</span></th><th class="dhead" data-k="YETU">Apr-24<span class="sub">YE-TU</span></th><th class="dhead" data-k="FYR">Jul-24<span class="sub">FY R</span></th><th class="dhead" data-k="H1R">Dec-24<span class="sub">H1 R</span></th><th class="dhead" data-k="YETU">Apr-25<span class="sub">YE-TU</span></th><th class="dhead" data-k="FYR">Jul-25<span class="sub">FY R</span></th><th class="dhead" data-k="H1R">Dec-25<span class="sub">H1 R</span></th><th class="dhead" data-k="YETU">Apr-26<span class="sub">YE-TU</span></th><th class="dhead" data-k="FYR">Jul-26<span class="sub">FY R</span></th><th class="dhead" data-k="AGM">Sep-26<span class="sub">AGM</span></th><th class="dhead bs-col" data-k="H1R">&#11088; Nov-26<span class="sub">H1 R</span></th></tr></thead><tbody><tr><td class="lab">R1 Managed IT Services gross profit</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&mdash;</td><td class="bs-col">&#9989;</td></tr><tr><td class="lab">R2 Gross profit</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&mdash;</td><td class="bs-col">&#9989;</td></tr><tr><td class="lab">R3 Managed IT Services revenue</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&mdash;</td><td class="bs-col">&#9989;</td></tr><tr><td class="lab">R4 Adjusted EBITDA</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td class="bs-col">&#9989;</td></tr><tr><td class="lab">R5 Gross margin %</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&mdash;</td><td class="bs-col">&#9989;</td></tr><tr><td class="lab">Group revenue</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#128993;</td><td class="bs-col">&#9989;</td></tr><tr><td class="lab">Value Added Resale revenue</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&mdash;</td><td class="bs-col">&#9989;</td></tr><tr><td class="lab">Organic revenue growth</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td class="bs-col">&#9989; recon</td></tr><tr><td class="lab">Adjusted PBT</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#10060;</td><td>&#10060;</td><td>&mdash;</td><td>&#10060;</td><td>&#10060;</td><td>&mdash;</td><td>&#10060;</td><td>&mdash;</td><td class="bs-col">&#10060;</td></tr><tr><td class="lab">Adjusted basic EPS</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989;</td><td>&mdash;</td><td class="bs-col">&#9989; 0.6p</td></tr><tr><td class="lab">Cash conversion %</td><td>&#9989; 85</td><td>&#9989; 88</td><td>&mdash;</td><td>&#9989; 120</td><td>&#9989; 103</td><td>&#9989; 79</td><td>&mdash;</td><td>&#9989; 111</td><td>&#10060;</td><td>&mdash;</td><td>&#128993;</td><td>&#10060;</td><td>&mdash;</td><td>&#9989; 105</td><td>&mdash;</td><td class="bs-col">&#9989; 125</td></tr><tr><td class="lab">Net cash / (net debt)</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td class="bs-col">&#9989;</td></tr><tr><td class="lab">Gross cash</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td><td class="bs-col">&#9989;</td></tr><tr><td class="lab">Managed services % of mix</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989; 75</td><td>&#9989;</td><td>&#9989;</td><td>&mdash;</td><td>&#9989; 76</td><td>&#9989;</td><td>&mdash;</td><td>&#9989; 86</td><td>&#9989; 92</td><td>&mdash;</td><td>&#9989; 83</td><td>&mdash;</td><td class="bs-col">&#9989; 87</td></tr><tr><td class="lab">Customer satisfaction / NPS</td><td>&#9989; 97</td><td>&#9989; 97</td><td>&mdash;</td><td>&#9989; 97</td><td>&#9989; 97</td><td>&#10060;</td><td>&mdash;</td><td>&#10060;</td><td>&#10060;</td><td>&mdash;</td><td>&#9989; 15</td><td>&#128993;</td><td>&mdash;</td><td>&#9989; 32</td><td>&mdash;</td><td class="bs-col">&#9989; 41</td></tr><tr><td class="lab">Managed services downsell &pound;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&#9989; 1.7</td><td>&#9989; 0.3</td><td>&mdash;</td><td>&#128993;</td><td>&mdash;</td><td class="bs-col">&#128993;</td></tr><tr><td class="lab">Cybersecurity % of revenue</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&#128993;</td><td>&#9989; 47</td><td>&mdash;</td><td>&#9989; 45</td><td>&mdash;</td><td class="bs-col">&#9989; 46</td></tr><tr><td class="lab">Annual contract value</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&#9989; 1st</td><td>&mdash;</td><td class="bs-col">&#9989; +28%</td></tr></tbody></table></div><p style="font-size:11px;color:var(--mute);margin-top:8px">&#9989; quantified &middot; &#128993; qualitative only &middot; &#10060; verified blank against established cadence &middot; &mdash; outside that document type&rsquo;s cadence. 16 qualifying documents, 16 columns, no missing updates. Click a header to highlight every column of that type.</p><details class="top"><summary>&sect;4 workings &mdash; Drift notes</summary><div class="tb">
+<details class="sub"><summary>Notes &mdash; &sect;4</summary><div class="sb">
+<p><b>The rightmost column: two green shoots and one substitution.</b> Cash conversion is quantified at H1 grain for the first time since November 2023, at 125%, restoring a cadence broken at Dec-24 and Dec-25 &mdash; and H1 FY26&rsquo;s figure is backfilled at 93%, a number withheld at the time it mattered. The organic revenue reconciliation is quantified for the first time, with a full bridge from reported to organic. The company also volunteers the cash-conversion definition change and reconciles it itself: the FY26 Annual Report defined it before tax, no tax was paid in FY26, so 105% holds on either basis. That is disclosure hygiene this company has not previously shown. Against it, the managed-services downsell figure stays qualitative for a second print, though the company now prints organic managed services revenue at &minus;1.0% and names the cause &mdash; a different and arguably better disclosure of the same problem.</p>
+<p><b>Cadence proved before each blank.</b> Adjusted PBT ran five consecutive results documents before disappearing and is still absent, with statutory pre-tax profit printed in its place &mdash; a harder number, not a softer one. Cash conversion ran three consecutive interim reports at half grain before the Dec-24 and Dec-25 blanks. Customer satisfaction ran four consecutive results documents. Every dash was confirmed by opening the document rather than inferred from a document-type habit: no trading update in this record has ever carried gross profit or gross margin, which is why four of the five ranks sit outside cadence at the four TU columns and both sit outside it at the AGM, which quantified nothing at all.</p>
+<p><b>The pattern under the current chairman, updated.</b> From June 2023 quantified disclosure expanded in volume and contracted in comparability: service desk headcount was reported three times on three different bases, the FY23 headcount baseline moved from 111 to 107 within seven months in the same direction as a missed projection, and engineer productivity was redefined twice, while the two audited metrics that would let you check any of it &mdash; Adjusted PBT and cash conversion &mdash; were the ones dropped. This read is the first clear break in that pattern: cash conversion is back at both grains, a prior withheld figure has been backfilled, a new reconciliation is printed, and a definition change is disclosed and reconciled rather than left for the reader to find.</p>
+</div></details>
+</div></details><script type="application/json" id="drift-chart">{"ticker":"SYS","v":"2026-11-18.9235","ccy":"GBX","src":"AlphaVantage SYS.LON weekly","adj":[],"px":[["2021-09-16",36.5],["2021-09-24",36.5],["2021-09-28",36.5],["2021-10-08",35.0],["2021-10-15",34.5],["2021-10-21",35.0],["2021-10-29",29.0],["2021-11-05",30.0],["2021-11-12",30.5],["2021-11-19",30.0],["2021-11-26",33.0],["2021-11-29",33.0],["2021-12-02",33.0],["2021-12-08",32.5],["2021-12-17",32.5],["2021-12-22",32.5],["2021-12-31",32.0],["2022-01-07",29.5],["2022-01-13",29.0],["2022-01-17",29.0],["2022-01-20",29.0],["2022-01-26",26.5],["2022-02-04",27.0],["2022-02-11",26.0],["2022-02-18",25.5],["2022-02-25",25.5],["2022-03-04",24.0],["2022-03-11",24.0],["2022-03-17",24.0],["2022-03-25",24.0],["2022-04-01",24.0],["2022-04-08",29.0],["2022-04-14",29.0],["2022-04-22",28.5],["2022-04-29",28.0],["2022-05-05",28.5],["2022-05-12",26.0],["2022-05-20",26.0],["2022-05-26",26.0],["2022-05-31",26.5],["2022-06-09",26.5],["2022-06-17",26.5],["2022-06-24",26.5],["2022-06-29",26.5],["2022-07-04",26.5],["2022-07-07",26.5],["2022-07-15",26.5],["2022-07-22",26.5],["2022-07-29",25.5],["2022-08-05",25.5],["2022-08-08",25.5],["2022-08-12",26.5],["2022-08-19",26.5],["2022-09-08",26.5],["2022-09-13",26.5],["2022-09-16",26.5],["2022-09-23",24.0],["2022-09-29",20.0],["2022-10-06",20.5],["2022-10-13",20.0],["2022-10-21",20.5],["2022-10-28",25.0],["2022-11-04",26.0],["2022-11-07",26.0],["2022-11-10",26.0],["2022-11-18",29.5],["2022-11-25",31.0],["2022-11-29",29.5],["2022-12-02",28.5],["2022-12-07",28.0],["2022-12-13",26.5],["2022-12-16",25.5],["2022-12-23",28.0],["2023-01-05",28.0],["2023-01-10",29.5],["2023-01-13",28.0],["2023-01-18",28.0],["2023-01-27",29.5],["2023-02-03",28.5],["2023-02-10",28.0],["2023-02-22",28.0],["2023-02-28",28.0],["2023-03-09",28.0],["2023-03-13",28.0],["2023-03-17",27.5],["2023-03-21",26.5],["2023-03-30",26.0],["2023-04-03",26.0],["2023-04-11",25.0],["2023-04-14",25.5],["2023-04-21",33.5],["2023-04-28",36.5],["2023-05-05",37.0],["2023-05-12",37.0],["2023-05-18",36.0],["2023-05-26",35.0],["2023-06-02",35.5],["2023-06-09",35.0],["2023-06-16",34.0],["2023-06-23",34.0],["2023-06-30",29.5],["2023-07-06",31.5],["2023-07-12",31.0],["2023-07-21",30.0],["2023-07-28",30.0],["2023-08-04",28.5],["2023-08-11",31.0],["2023-08-18",31.0],["2023-08-25",31.0],["2023-09-01",31.5],["2023-09-04",31.5],["2023-09-08",32.0],["2023-09-15",31.0],["2023-09-22",31.0],["2023-09-26",31.0],["2023-10-06",33.5],["2023-10-13",35.5],["2023-10-20",35.5],["2023-10-27",36.5],["2023-11-03",39.5],["2023-11-10",38.0],["2023-11-17",39.0],["2023-11-24",40.0],["2023-11-27",38.5],["2023-12-01",38.5],["2023-12-07",36.0],["2023-12-14",35.5],["2023-12-22",33.5],["2023-12-28",33.5],["2024-01-05",33.5],["2024-01-12",30.5],["2024-01-19",30.0],["2024-01-25",29.5],["2024-02-01",29.0],["2024-02-09",34.0],["2024-02-15",32.5],["2024-02-19",32.5],["2024-02-23",33.0],["2024-02-29",33.5],["2024-03-04",33.5],["2024-03-15",33.5],["2024-03-21",33.5],["2024-04-05",29.5],["2024-04-12",30.5],["2024-04-19",30.5],["2024-04-26",30.5],["2024-05-03",34.0],["2024-05-10",28.5],["2024-05-17",31.0],["2024-05-20",31.0],["2024-05-31",35.0],["2024-06-07",34.5],["2024-06-14",35.0],["2024-06-20",35.0],["2024-06-28",35.0],["2024-07-05",35.0],["2024-07-12",36.5],["2024-07-19",35.0],["2024-07-26",34.0],["2024-08-02",33.5],["2024-08-09",34.0],["2024-08-15",33.5],["2024-08-23",35.5],["2024-08-30",35.0],["2024-09-06",34.5],["2024-09-11",34.5],["2024-09-19",34.0],["2024-09-27",34.0],["2024-10-04",33.0],["2024-10-11",32.5],["2024-10-17",31.0],["2024-10-25",30.4],["2024-10-31",30.0],["2024-11-07",29.0],["2024-11-11",29.0],["2024-11-20",28.5],["2024-11-29",28.5],["2024-12-05",21.5],["2024-12-13",19.0],["2024-12-20",18.0],["2024-12-23",19.0],["2025-01-03",16.0],["2025-01-10",15.25],["2025-01-16",15.25],["2025-01-24",17.25],["2025-01-31",18.0],["2025-02-07",23.5],["2025-02-14",23.5],["2025-02-21",21.5],["2025-02-27",20.5],["2025-03-07",19.5],["2025-03-13",19.5],["2025-03-21",19.5],["2025-03-27",20.0],["2025-04-04",20.0],["2025-04-11",20.5],["2025-04-17",20.5],["2025-04-25",22.5],["2025-05-02",22.5],["2025-05-09",21.5],["2025-05-15",22.0],["2025-05-23",22.0],["2025-05-30",22.0],["2025-06-04",22.0],["2025-06-13",22.0],["2025-06-19",21.0],["2025-06-27",20.5],["2025-07-03",20.5],["2025-07-09",20.5],["2025-07-14",20.5],["2025-07-18",20.5],["2025-07-25",18.5],["2025-08-01",18.5],["2025-08-06",18.5],["2025-08-14",18.5],["2025-08-22",17.5],["2025-08-29",16.75],["2025-09-05",16.25],["2025-09-12",15.75],["2025-09-15",15.75],["2025-09-19",16.0],["2025-09-25",16.5],["2025-10-02",16.5],["2025-10-10",17.0],["2025-10-17",17.5],["2025-10-24",17.5],["2025-10-30",17.5],["2025-11-06",17.5],["2025-11-12",16.5],["2025-11-20",16.5],["2025-11-28",16.0],["2025-12-05",14.5],["2025-12-12",14.5],["2025-12-18",14.5],["2025-12-23",16.0],["2026-01-02",16.0],["2026-01-09",16.0],["2026-01-14",16.0],["2026-01-23",14.5],["2026-01-30",15.5],["2026-02-06",15.5],["2026-02-13",15.5],["2026-02-20",15.0],["2026-02-27",14.0],["2026-03-06",14.0],["2026-03-13",14.0],["2026-03-20",13.5],["2026-03-27",13.5],["2026-04-02",13.5],["2026-04-10",13.5],["2026-04-17",15.5],["2026-04-24",16.5],["2026-05-01",16.25],["2026-05-08",16.5],["2026-05-15",16.5],["2026-05-22",18.5],["2026-05-29",18.0],["2026-06-05",18.0],["2026-06-12",18.0],["2026-06-19",18.0],["2026-06-26",18.0],["2026-07-03",18.0],["2026-07-10",22.0],["2026-07-17",28.0],["2026-07-24",33.5],["2026-07-31",30.5],["2026-08-07",32.0],["2026-08-14",30.5],["2026-08-21",30.5],["2026-08-28",29.5],["2026-09-04",29.5],["2026-09-11",25.5],["2026-09-18",30.0],["2026-09-25",30.0],["2026-10-02",34.5],["2026-10-09",33.0],["2026-10-16",37.5],["2026-10-23",35.5],["2026-10-30",35.5],["2026-11-06",36.0],["2026-11-13",35.0],["2026-11-17",35.0]],"marks":[{"d":"2021-11-22","doc":"H1 R","fy":"FY22","g":"flat","s":0,"q":"we remain confident in meeting Adjusted EBITDA expectations for the full year"},{"d":"2022-06-20","doc":"FY R","fy":"FY22","g":"flat","s":1,"q":"I am confident that we will see improvements to both revenue and EBITDA performance"},{"d":"2022-10-26","doc":"H1 TU","fy":"FY23","g":"flat","s":0,"q":"remains confident that the Group will meet market expectations for the full financial year"},{"d":"2022-11-21","doc":"H1 R","fy":"FY23","g":"flat","s":0,"q":"positive momentum and the Board is therefore confident in meeting its full year expectations"},{"d":"2023-06-26","doc":"FY R","fy":"FY23","g":"flat","s":0,"q":"the first two months of the period both in line with the Board's expectations"},{"d":"2023-11-27","doc":"H1 R","fy":"FY24","g":"flat","s":-2,"q":"in the short term we may see our overall bottom line performance impacted marginally"},{"d":"2024-04-30","doc":"YE-TU","fy":"FY24","g":"flat","s":-1,"q":"the Group expects to report Adjusted EBITDA"},{"d":"2024-07-31","doc":"FY R","fy":"FY24","g":"flat","s":-2,"q":"I'm enormously excited about the Company's potential and future prospects"},{"d":"2024-12-03","doc":"H1 R","fy":"FY25","g":"CUT","s":-3,"q":"performance for the year ending 31 March 2025 will be below current market expectations"},{"d":"2025-04-29","doc":"YE-TU","fy":"FY25","g":"flat","s":0,"q":"in line with market expectation"},{"d":"2025-07-24","doc":"FY R","fy":"FY25","g":"flat","s":-1,"q":"Given current visibility, we expect FY26 performance to be broadly in line with FY25"},{"d":"2025-12-03","doc":"H1 R","fy":"FY26","g":"flat","s":-1,"q":"we expect a stronger H2 than H1, with improved EBITDA driven by AI-enabled efficiency"},{"d":"2026-04-13","doc":"YE-TU","fy":"FY26","g":"RAISE","s":2,"q":"ahead of current market expectations"},{"d":"2026-07-08","doc":"FY R","fy":"FY26","g":"RAISE","s":2,"q":"The Board expects to exceed market expectations for FY27"},{"d":"2026-09-17","doc":"AGM","fy":"FY27","g":"flat","s":0,"q":"the Group will deliver full-year results in line with current market expectations"},{"d":"2026-11-18","doc":"H1 R","fy":"FY27","g":"flat","s":0,"q":"on track to deliver results for FY27 in line with current market expectations"}]}</script><script type="application/json" id="drift-entry">{
+  "ticker": "SYS",
+  "company": "SysGroup plc",
+  "kind": "ticker",
+  "direction": "up",
+  "headline": "Profit 4.8x and the first pre-tax profit in four years - but the recurring base shrank 1% without the acquisition.",
+  "trigger": "2 of 3 green-shoot conditions converging",
+  "alert": true,
+  "fired": 2,
+  "fired_of": 3,
+  "lights": "g-g",
+  "rns_type": "H1 R",
+  "rns_date": "2026-11-18",
+  "build_date": "2026-11-18",
+  "spec_version": "5.8",
+  "next_test": "Year-end update ~Apr-27 - does organic managed services revenue stop shrinking, and does H2 deliver the GBP13.5m the forecast needs?",
+  "url": "SYS.html",
+  "grid": {"labels": ["R1","R2","R3","R4","R5"],
+    "periods": ["H1 23","H2 23","H1 24","H2 24","H1 25","H2 25","H1 26","H2 26","H1 27"],
+    "rows": ["ggrragarg","ggrrggrga","ggrrragaa","grrragrgg","rraragara"],
+    "note": "One row per ledger rank R1-R5 at half grain; rightmost cell is H1 FY27, the Buy/Sell half."},
+  "prev": {"direction": "up", "fired": 2, "lights": "g-g", "rns_date": "2026-09-17", "rns_type": "AGM"},
+  "trend": {"mode": "share", "cells": "ra-", "rows": [{"m": "REV", "gap": -2.7}, {"m": "EBITDA", "gap": 1.1}, {"m": "PBT", "gap": null}]},
+  "chart": "charts/SYS.json?v=2026-11-18.9235"
+}</script><script>/* ==== DRIFT PRICE OVERLAY — chart.js — master copy (Drift repo) ====
+   Spec: "Drift price overlay — architecture note", 17 Oct 2026.
+   ONE renderer, two themes. Drift dashboards paste this file in verbatim
+   (light theme, frozen at build); Database and the wall load it live (dark).
+   Display only: it scores nothing and fires nothing.
+
+   API
+     DriftChart.render(el, data, {theme:'light'|'dark', size:'page'|'card'|'preview'|'modal', tail:[[iso,price],…], star:iso})
+     DriftChart.legend(theme)                  -> HTML string
+     DriftChart.validate(data)                 -> [] or list of error strings
+     DriftChart.parseTail(rows4, ticker, ccy, afterIso) -> [[iso,price],…] (dark theme only)
+     DriftChart.mountFromPage()                -> renders the dashboard panel from #drift-chart
+*/
+(function (root) {
+  'use strict';
+
+  var THEMES = {
+    light: { line: '#2f9e5c', fill: '#2f9e5c', fillOp: 0.08, pos: '#2546f0', neg: '#ff2d2d',
+             zeroFill: '#fff', zeroStroke: '#6b6860', outline: '#fff', grid: '#e4e1da',
+             axis: '#6b6860', adj: '#8d8981', tipBg: '#fff', tipFg: '#16150f', tipBorder: '#d8d5cf' },
+    dark:  { line: '#c9c6d8', fill: '#fff', fillOp: 0.04, pos: '#00d97e', neg: '#ff4757',
+             zeroFill: '#0a0a0f', zeroStroke: '#9a9ab5', outline: '#0a0a0f', grid: '#1e1e28',
+             axis: '#5a5a72', adj: '#3a3a50', tail: '#8a8aa0', tipBg: '#1a1a24', tipFg: '#f2f2f8',
+             tipBorder: '#3a3a50' }
+  };
+  /* geometry per size: viewBox W×H, padding, mark radius, arrow width, line width, font size */
+  var SIZES = {
+    page:    { W: 1100, H: 400, pl: 46, pr: 16, pt: 24, pb: 40, r: 8,   aw: 22, lw: 1.4, fs: 11 },
+    modal:   { W: 940,  H: 340, pl: 10, pr: 46, pt: 14, pb: 22, r: 6,   aw: 16, lw: 1.6, fs: 11 },
+    preview: { W: 360,  H: 110, pl: 4,  pr: 34, pt: 8,  pb: 14, r: 2.6, aw: 8,  lw: 1.1, fs: 8 },
+    card:    { W: 340,  H: 92,  pl: 4,  pr: 34, pt: 8,  pb: 14, r: 2.6, aw: 8,  lw: 1.1, fs: 8 }
+  };
+  var MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  var DAY = 86400000;
+
+  function t(iso) { return Date.parse(iso + 'T00:00:00Z'); }
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
+    return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function fmtDate(iso, short) { var p = iso.split('-');
+    return short ? (p[2] + ' ' + MON[+p[1] - 1]) : (p[2] + ' ' + MON[+p[1] - 1] + ' ' + p[0]); }
+  function fmtPx(v, ccy) {
+    if (ccy === 'USD') return '$' + v.toFixed(2);
+    var s = Math.abs(v) >= 100 ? v.toFixed(0) : (Math.round(v * 10) / 10).toString();
+    return s + 'p';
+  }
+  function fmtScore(s) { return s > 0 ? '+' + s : (s < 0 ? '−' + Math.abs(s) : '0'); }
+  function niceStep(max) {
+    var raw = max / 4, mag = Math.pow(10, Math.floor(Math.log10(raw))), steps = [1, 2, 2.5, 5, 10];
+    for (var i = 0; i < steps.length; i++) if (steps[i] * mag >= raw) return steps[i] * mag;
+    return 10 * mag;
+  }
+
+  /* ---------- validation (used by the upload panel) ---------- */
+  function validate(d) {
+    var e = [];
+    if (!d || typeof d !== 'object') return ['drift-chart is not an object'];
+    if (!d.ticker) e.push('ticker missing');
+    if (!d.v) e.push('v missing');
+    if (d.ccy !== 'GBX' && d.ccy !== 'USD') e.push('ccy must be GBX or USD');
+    if (!Array.isArray(d.px) || d.px.length < 2) { e.push('px must be an array of at least 2 weeks'); return e; }
+    for (var i = 0; i < d.px.length; i++) {
+      var p = d.px[i];
+      if (!Array.isArray(p) || !/^\d{4}-\d{2}-\d{2}$/.test(p[0]) || typeof p[1] !== 'number' || !isFinite(p[1])) {
+        e.push('px[' + i + '] is not [YYYY-MM-DD, number]'); return e; }
+      if (i && p[0] <= d.px[i - 1][0]) { e.push('px not in ascending date order at ' + p[0]); return e; }
+    }
+    var first = t(d.px[0][0]), last = t(d.px[d.px.length - 1][0]);
+    if (!Array.isArray(d.marks)) { e.push('marks must be an array'); return e; }
+    d.marks.forEach(function (m, i) {
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(m.d || '')) { e.push('marks[' + i + '] date invalid'); return; }
+      var md = t(m.d);
+      if (md < first - 7 * DAY || md > last + 7 * DAY)
+        e.push('mark ' + m.d + ' falls outside the price range (allowed up to 7 days after the last close)');
+      if (['RAISE', 'CUT', 'flat'].indexOf(m.g) < 0) e.push('mark ' + m.d + ' g must be RAISE, CUT or flat');
+      if (typeof m.s !== 'number' || m.s < -3 || m.s > 3 || Math.round(m.s) !== m.s) e.push('mark ' + m.d + ' s must be an integer −3..+3');
+    });
+    return e;
+  }
+
+  /* ---------- snapshot tail from Database uploadZone.rows4 (§7) ---------- */
+  function parseTail(rows4, ticker, ccy, afterIso) {
+    if (!Array.isArray(rows4)) return [];
+    var tk = String(ticker).toUpperCase(), out = {};
+    rows4.forEach(function (row) {
+      if (!row || !row.Date || !row.Snapshot) return;
+      var dp = String(row.Date).split('/');
+      if (dp.length !== 3) return;
+      var iso = dp[2] + '-' + ('0' + dp[1]).slice(-2) + '-' + ('0' + dp[0]).slice(-2);
+      if (afterIso && iso <= afterIso) return;
+      var recs = String(row.Snapshot).split(';');
+      for (var i = 0; i < recs.length; i++) {
+        var f = recs[i].split(',');
+        if ((f[0] || '').toUpperCase() !== tk) continue;
+        var raw = (f[6] || '').trim();            /* 7th field — never the last field */
+        if (!raw) break;
+        var v = null, m;
+        if ((m = raw.match(/^([\d.]+)p$/)))        { if (ccy === 'GBX') v = +m[1]; }
+        else if ((m = raw.match(/^([\d.]+)$/)))    { if (ccy === 'GBX') v = Math.round(+m[1] * 10000) / 100; }  /* pounds */
+        else if ((m = raw.match(/^([\d.]+)¢$/))) { if (ccy === 'USD') v = +m[1] / 100; } /* cents */
+        else if ((m = raw.match(/^\$([\d.]+)$/)))  { if (ccy === 'USD') v = +m[1]; }
+        if (v != null && isFinite(v) && v > 0) out[iso] = v;
+        break;
+      }
+    });
+    var tail = Object.keys(out).sort().map(function (k) { return [k, out[k]]; });
+    for (var j = 1; j < tail.length; j++) {
+      var a = tail[j - 1][1], b = tail[j][1];
+      if (b / a > 5 || a / b > 5) return [];       /* cliff check */
+    }
+    return tail;
+  }
+
+  /* ---------- shared tooltip ---------- */
+  var tipEl = null;
+  function tip(theme) {
+    if (!tipEl) {
+      tipEl = document.createElement('div');
+      tipEl.id = 'dc-tip';
+      tipEl.style.cssText = 'position:fixed;pointer-events:none;z-index:10000;display:none;max-width:300px;' +
+        'padding:7px 9px;border-radius:4px;font:11px/1.45 Inter,system-ui,sans-serif;box-shadow:0 6px 24px rgba(0,0,0,.35)';
+      document.body.appendChild(tipEl);
+    }
+    var T = THEMES[theme];
+    tipEl.style.background = T.tipBg; tipEl.style.color = T.tipFg; tipEl.style.border = '1px solid ' + T.tipBorder;
+    return tipEl;
+  }
+  function showTip(theme, html, ev) {
+    var el = tip(theme); el.innerHTML = html; el.style.display = 'block';
+    var x = ev.clientX + 14, y = ev.clientY + 14, w = el.offsetWidth, h = el.offsetHeight;
+    if (x + w > window.innerWidth - 8) x = ev.clientX - w - 14;
+    if (y + h > window.innerHeight - 8) y = ev.clientY - h - 14;
+    el.style.left = x + 'px'; el.style.top = y + 'px';
+  }
+  function hideTip() { if (tipEl) tipEl.style.display = 'none'; }
+
+  /* ---------- render ---------- */
+  function render(el, d, opt) {
+    opt = opt || {};
+    var theme = opt.theme === 'dark' ? 'dark' : 'light', T = THEMES[theme];
+    var size = SIZES[opt.size] ? opt.size : (theme === 'light' ? 'page' : 'preview'), S = SIZES[size];
+    var errs = validate(d);
+    if (errs.length) { el.innerHTML = '<div style="font:12px sans-serif;color:' + T.axis + ';padding:10px">no price data</div>'; return; }
+    var px = d.px, ccy = d.ccy;
+    var tail = theme === 'dark' && opt.tail && opt.tail.length ? opt.tail : [];
+    var all = px.concat(tail);
+    var x0 = t(px[0][0]), x1 = t(all[all.length - 1][0]);
+    var vals = all.map(function (p) { return p[1]; });
+    var vmin = Math.min.apply(null, vals), vmax = Math.max.apply(null, vals);
+    var lo, hi;
+    if (theme === 'light') { var st = niceStep(vmax); lo = 0; hi = Math.ceil(vmax / st) * st; }
+    else { var pad = (vmax - vmin) * 0.04 || 1; lo = vmin - pad; hi = vmax + pad; }
+    var LANE = (opt.scoreLane === 'top' || opt.scoreLane === 'bottom') && opt.scores && opt.scores.length ? opt.scoreLane : null;
+    var BR = size === 'modal' || size === 'page' ? 9 : 5.5, laneH = LANE ? BR * 2 + 10 : 0, pt0 = S.pt, pb0 = S.pb;
+    if (LANE) { S = Object.assign({}, S); if (LANE === 'top') S.pt += laneH; else S.pb += laneH; }
+    var W = S.W, H = S.H;
+    function X(ms) { return S.pl + (ms - x0) / ((x1 - x0) || 1) * (W - S.pl - S.pr); }
+    function Y(v) { return S.pt + (hi - v) / ((hi - lo) || 1) * (H - S.pt - S.pb); }
+    var base = H - S.pb, s = '';
+    s += '<svg viewBox="0 0 ' + W + ' ' + H + '" xmlns="http://www.w3.org/2000/svg" role="img" ' +
+         'aria-label="Weekly share price with Text and G markers" style="display:block;width:100%;height:auto">';
+
+    /* axes */
+    if (theme === 'light') {
+      for (var g = lo; g <= hi + 1e-9; g += niceStep(vmax)) {
+        s += '<line x1="' + S.pl + '" x2="' + (W - S.pr) + '" y1="' + Y(g).toFixed(1) + '" y2="' + Y(g).toFixed(1) + '" stroke="' + T.grid + '"/>';
+        s += '<text x="' + (S.pl - 8) + '" y="' + (Y(g) + 4).toFixed(1) + '" text-anchor="end" font-size="' + S.fs + '" fill="' + T.axis + '">' + esc(fmtPx(g, ccy)) + '</text>';
+      }
+    } else {
+      [[vmax], [vmin]].forEach(function (a) {
+        var y = Y(a[0]).toFixed(1);
+        s += '<line x1="' + S.pl + '" x2="' + (W - S.pr) + '" y1="' + y + '" y2="' + y + '" stroke="' + T.grid + '"/>';
+        s += '<text x="' + (W - S.pr + 4) + '" y="' + (+y + S.fs * 0.35).toFixed(1) + '" font-size="' + S.fs + '" fill="' + T.axis + '">' + esc(fmtPx(a[0], ccy)) + '</text>';
+      });
+    }
+    var y0 = new Date(x0).getUTCFullYear(), y1 = new Date(x1).getUTCFullYear();
+    if (x1 - x0 < 550 * DAY) {                       /* short record (e.g. snapshots only): month labels */
+      var step = size === 'modal' || size === 'page' ? 1 : 2, d0 = new Date(x0), mi = 0;
+      for (var mm = Date.UTC(d0.getUTCFullYear(), d0.getUTCMonth() + 1, 1); mm <= x1; mm = Date.UTC(new Date(mm).getUTCFullYear(), new Date(mm).getUTCMonth() + 1, 1)) {
+        if ((mi++) % step) continue;
+        var md_ = new Date(mm), mo = md_.getUTCMonth();
+        var ml = MON[mo] + (mo === 0 || mi === 1 ? " '" + String(md_.getUTCFullYear()).slice(2) : '');
+        s += '<text x="' + X(mm).toFixed(1) + '" y="' + (H - (theme === 'light' ? 18 : 2)) + '" text-anchor="middle" font-size="' + S.fs + '" fill="' + T.axis + '">' + ml + '</text>';
+      }
+      y1 = y0 - 1;                                   /* skip year labels */
+    }
+    for (var yr = y0; yr <= y1; yr++) {
+      var mid = Date.UTC(yr, 6, 1);                    /* label mid-year, tick at 1 Jan */
+      var jan = Date.UTC(yr, 0, 1);
+      if (jan >= x0 && jan <= x1 && theme === 'light')
+        s += '<line x1="' + X(jan).toFixed(1) + '" x2="' + X(jan).toFixed(1) + '" y1="' + base + '" y2="' + (base + 5) + '" stroke="' + T.adj + '"/>';
+      if (mid < x0 || mid > x1) continue;
+      var lab = theme === 'light' || size === 'modal' ? String(yr) : "'" + String(yr).slice(2);
+      s += '<text x="' + X(mid).toFixed(1) + '" y="' + (H - (theme === 'light' ? 18 : 2)) + '" text-anchor="middle" font-size="' + S.fs + '" fill="' + T.axis + '">' + lab + '</text>';
+    }
+
+    /* consolidation rule(s) */
+    (d.adj || []).forEach(function (a) {
+      var ax = X(t(a.before)).toFixed(1);
+      if (+ax < S.pl || +ax > W - S.pr) return;
+      var why = a.factor + ':1 consolidation — earlier closes ×' + a.factor;
+      s += '<g class="dc-adj" data-tip="' + esc(why) + '">';
+      s += '<line x1="' + ax + '" x2="' + ax + '" y1="' + S.pt + '" y2="' + base + '" stroke="' + T.adj + '" stroke-dasharray="4 4"' + (theme === 'dark' ? ' opacity=".7"' : '') + '/>';
+      s += '<rect x="' + (+ax - 5) + '" y="' + S.pt + '" width="10" height="' + (base - S.pt) + '" fill="transparent"/>';
+      if (theme === 'light') s += '<text x="' + (+ax + 5) + '" y="' + (S.pt + 12) + '" font-size="' + (S.fs - 1) + '" fill="' + T.axis + '">' + a.factor + ':1 consolidation</text>';
+      s += '</g>';
+    });
+
+    /* price area + line */
+    var pts = px.map(function (p) { return X(t(p[0])).toFixed(1) + ',' + Y(p[1]).toFixed(1); }).join(' ');
+    var fx0 = X(t(px[0][0])).toFixed(1), fx1 = X(t(px[px.length - 1][0])).toFixed(1);
+    s += '<polygon points="' + fx0 + ',' + base + ' ' + pts + ' ' + fx1 + ',' + base + '" fill="' + T.fill + '" fill-opacity="' + T.fillOp + '"/>';
+    s += '<polyline points="' + pts + '" fill="none" stroke="' + T.line + '" stroke-width="' + S.lw + '" stroke-linejoin="round"/>';
+
+    /* snapshot tail (dark only) */
+    if (tail.length) {
+      var lp = px[px.length - 1];
+      var tp = [lp].concat(tail).map(function (p) { return X(t(p[0])).toFixed(1) + ',' + Y(p[1]).toFixed(1); }).join(' ');
+      s += '<polyline points="' + tp + '" fill="none" stroke="' + T.tail + '" stroke-opacity=".7" stroke-width="' + S.lw + '" stroke-dasharray="3 3"/>';
+      if (size === 'modal') {
+        var tx = X(t(tail[0][0]));
+        s += '<line x1="' + tx.toFixed(1) + '" x2="' + tx.toFixed(1) + '" y1="' + S.pt + '" y2="' + base + '" stroke="' + T.grid + '"/>';
+        s += '<text x="' + (tx - 4).toFixed(1) + '" y="' + (base - 5) + '" text-anchor="end" font-size="' + (S.fs - 1) + '" fill="' + T.axis + '">ShareScope weekly snapshots \u2192</text>';
+      }
+    }
+
+    /* marks: each on the close of the week containing its RNS date */
+    function weekIndex(iso) {
+      var md = t(iso);
+      for (var i = 0; i < px.length; i++) if (t(px[i][0]) >= md) return i;
+      return px.length - 1;                         /* within 7 days after the last close */
+    }
+    var tips = [], hits = [];   /* hits: [x, y, tipIndex, radius] in viewBox units, for nearest-mark hover */
+    var dots = '', arrows = '', r = S.r, aw = S.aw / 2, ah = S.aw * 0.95, starAt = null;
+    /* a mark newer than the last weekly close sits on the live tail (the point on or after its date) rather
+       than back on that close, so it lines up with the RNS Scorecard badge for the same day (1.9) */
+    var lastPxMs = t(px[px.length - 1][0]);
+    function tailPoint(iso) {
+      var md = t(iso);
+      if (!tail.length || md <= lastPxMs) return null;
+      for (var i = 0; i < tail.length; i++) if (t(tail[i][0]) >= md) return tail[i];
+      return tail[tail.length - 1];
+    }
+    (d.marks || []).forEach(function (m, idx) {
+      var wi = weekIndex(m.d), tp = tailPoint(m.d), wk = tp || px[wi], cx = X(t(wk[0])), cy = Y(wk[1]);
+      var gtxt = (m.g === 'flat' ? 'flat' : (m.g === 'RAISE' ? '▲ RAISE' : '▼ CUT')) + (m.gnote ? ' (' + m.gnote + ')' : '');
+      var tipHtml = '<b>' + esc(fmtDate(m.d)) + ' · ' + esc(m.fy || '') + ' ' + esc(m.doc || '') + '</b><br>' +
+        'Text ' + fmtScore(m.s) + ' · G ' + esc(gtxt) + '<br>' +
+        (tp ? 'Latest price ' : 'Week close ') + esc(fmtPx(wk[1], ccy)) + ' (' + esc(fmtDate(wk[0], true)) + ')' +
+        (m.q ? '<div style="margin-top:4px;opacity:.85;font-style:italic">“' + esc(m.q) + '”</div>' : '');
+      var g = '<g class="dc-mk" data-i="' + idx + '" style="cursor:default">';
+      var hit = '<circle cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="' + (r * 3).toFixed(1) + '" fill="transparent"/>';
+      var sw = size === 'page' ? 1.8 : 1;
+      if (m.g === 'RAISE' || m.g === 'CUT') {
+        var c = m.g === 'RAISE' ? T.pos : T.neg, up = m.g === 'RAISE';
+        var tip_ = up ? (cy - ah * 0.6) : (cy + ah * 0.6), b = up ? (cy + ah * 0.4) : (cy - ah * 0.4);
+        arrows += g + '<polygon points="' + cx.toFixed(1) + ',' + tip_.toFixed(1) + ' ' + (cx - aw).toFixed(1) + ',' + b.toFixed(1) + ' ' +
+          (cx + aw).toFixed(1) + ',' + b.toFixed(1) + '" fill="' + c + '" stroke="' + T.outline + '" stroke-width="' + sw + '"/>' + hit + '</g>';
+      } else if (m.s === 0) {
+        dots += g + '<circle cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="' + (r * 0.88).toFixed(1) + '" fill="' + T.zeroFill +
+          '" stroke="' + T.zeroStroke + '" stroke-width="' + (size === 'page' ? 2.2 : 1.2) + '"/>' + hit + '</g>';
+      } else {
+        dots += g + '<circle cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="' + r + '" fill="' + (m.s > 0 ? T.pos : T.neg) +
+          '" stroke="' + T.outline + '" stroke-width="' + sw + '"/>' + hit + '</g>';
+      }
+      tips[idx] = tipHtml;
+      hits.push([cx, cy, idx, r]);
+      /* opt.star = ISO date of the latest RNS: a small star above that mark (Database popup) */
+      if (opt.star && m.d === opt.star) starAt = [cx, cy - (m.g === 'RAISE' ? ah * 0.6 : r) - 5];
+    });
+    /* RNS Scorecard badges (opt.scores = [{d, s, t}]): score in a band-coloured circle on the price
+       line at the RNS date, faint full-height guide, same scheme as Database's broker target chart.
+       Lifted clear of a Text/G mark in the same week; one newer than the last close pins to it, dashed. */
+    var badges = '', badgePts = [];
+    if (opt.scores && opt.scores.length) {
+      var markWk = {};
+      (d.marks || []).forEach(function (m) { markWk[weekIndex(m.d)] = 1; });
+      var lastMs = t(all[all.length - 1][0]);
+      var yAt = function (ms) {
+        for (var i = 0; i < all.length; i++) {
+          var ti = t(all[i][0]);
+          if (ti >= ms) {
+            if (!i) return all[0][1];
+            var tp = t(all[i - 1][0]), f = (ms - tp) / (ti - tp);
+            return all[i - 1][1] + (all[i][1] - all[i - 1][1]) * f;
+          }
+        }
+        return all[all.length - 1][1];
+      };
+      var R = BR, bfs = size === 'modal' || size === 'page' ? 8 : 5.5;
+      render._laneX = null;
+      opt.scores.slice().sort(function (a, b) { return a.d < b.d ? -1 : 1; }).forEach(function (b) {
+        if (!/^\d{4}-\d{2}-\d{2}/.test(b.d || '') || typeof b.s !== 'number') return;
+        var ms = t(b.d.slice(0, 10)); if (ms < x0) return;
+        var pinned = ms > lastMs + 3 * DAY, bx = X(Math.min(ms, lastMs)), by = Y(yAt(Math.min(ms, lastMs)));
+        var tx = bx, ty = by;                         /* true point on the price line */
+        if (LANE) {
+          bx = Math.max(bx, (render._laneX || -1e9) + 2 * R + 2); render._laneX = bx;
+          by = LANE === 'top' ? pt0 + R + 3 : base + 7 + R;
+        }
+        var wi = weekIndex(b.d.slice(0, 10));
+        if (!LANE) {
+          if (!tail.length || ms <= t(px[px.length - 1][0])) { if (markWk[wi]) by -= r + R + 3; }
+          by = Math.max(S.pt + R, Math.min(base - R, by));
+        }
+        var sc = Math.max(0, Math.min(100, Math.round(b.s)));
+        var col = sc >= 75 ? '#00c814' : sc >= 50 ? '#ffc400' : '#e02525';
+        var faint = sc >= 75 ? 'rgba(0,200,20,.18)' : sc >= 50 ? 'rgba(245,179,47,.18)' : 'rgba(224,37,37,.18)';
+        var ti_ = tips.length;
+        tips.push('<b>' + esc(fmtDate(b.d.slice(0, 10))) + ' · RNS Scorecard</b><br>Score <b style="color:' + col + '">' + sc +
+          '</b>/100' + (b.t ? ' · ' + esc(b.t) : '') + (pinned ? '<br><i>after the last weekly close</i>' : ''));
+        if (LANE) {
+          var ey = LANE === 'top' ? by + R : by - R;
+          badges += '<line x1="' + tx.toFixed(1) + '" x2="' + tx.toFixed(1) + '" y1="' + S.pt + '" y2="' + base + '" stroke="' + faint + '"/>';
+          badges += '<polyline points="' + bx.toFixed(1) + ',' + ey.toFixed(1) + ' ' + tx.toFixed(1) + ',' + (LANE === 'top' ? S.pt : base) + '" fill="none" stroke="' + col + '" stroke-opacity=".55" stroke-width="1"/>';
+          badges += '<circle cx="' + tx.toFixed(1) + '" cy="' + ty.toFixed(1) + '" r="' + (R * 0.28).toFixed(1) + '" fill="' + col + '"/>';
+        } else
+        badges += '<line x1="' + bx.toFixed(1) + '" x2="' + bx.toFixed(1) + '" y1="' + S.pt + '" y2="' + base + '" stroke="' + faint + '"/>';
+        badgePts.push([bx, by, R]);
+        hits.push([bx, by, ti_, R]);
+        badges += '<g class="dc-mk" data-i="' + ti_ + '"><circle cx="' + bx.toFixed(1) + '" cy="' + by.toFixed(1) + '" r="' + R + '" fill="' + col +
+          '" stroke="rgba(255,255,255,.85)" stroke-width="1"' + (pinned ? ' stroke-dasharray="2 2"' : '') + '/>' +
+          '<text x="' + bx.toFixed(1) + '" y="' + (by + bfs * 0.36).toFixed(1) + '" text-anchor="middle" font-size="' + bfs +
+          '" font-weight="700" fill="#0d0d16" font-family="Inter,system-ui,sans-serif">' + sc + '</text>' +
+          '<circle cx="' + bx.toFixed(1) + '" cy="' + by.toFixed(1) + '" r="' + (R * 2) + '" fill="transparent"/></g>';
+      });
+    }
+    s += badges + dots + arrows;                     /* arrows last: on top of a same-week dot */
+    if (starAt) s += '<text x="' + starAt[0].toFixed(1) + '" y="' + Math.max(S.pt + 4, starAt[1]).toFixed(1) +
+      '" text-anchor="middle" font-size="' + (size === 'modal' || size === 'page' ? 15 : 8) +
+      '" fill="#ffc400" stroke="' + T.outline + '" stroke-width=".6" style="pointer-events:none">★</text>';
+
+    /* no last-close dot: it sat on top of the newest marks and score badges (removed in 1.8) */
+    s += '</svg>';
+    el.innerHTML = s;
+    el._dcTips = tips;
+    el._dcHits = hits;
+
+    if (!el._dcBound) {
+      el._dcBound = true;
+      el.addEventListener('mousemove', function (ev) {
+        /* nearest mark wins: when marks sit close together, the one under the cursor is
+           the one whose centre is closest, not whichever invisible hit area was drawn last */
+        var svg = el.querySelector('svg'), best = null;
+        if (svg && el._dcHits && el._dcHits.length && svg.getScreenCTM()) {
+          var pt = svg.createSVGPoint(); pt.x = ev.clientX; pt.y = ev.clientY;
+          var p = pt.matrixTransform(svg.getScreenCTM().inverse()), bd = Infinity;
+          el._dcHits.forEach(function (h) {
+            var d = Math.sqrt((h[0] - p.x) * (h[0] - p.x) + (h[1] - p.y) * (h[1] - p.y));
+            if (d <= h[3] * 2.5 && d < bd) { bd = d; best = h; }
+          });
+        }
+        var ad = ev.target.closest && ev.target.closest('.dc-adj');
+        if (best) {
+          /* two prints in the same week share one point: show them together, oldest first */
+          var same = el._dcHits.filter(function (h) { return Math.abs(h[0] - best[0]) < 1.5 && Math.abs(h[1] - best[1]) < 1.5; });
+          showTip(el._dcTheme, same.map(function (h) { return el._dcTips[h[2]]; })
+            .join('<hr style="border:0;border-top:1px solid rgba(128,128,128,.35);margin:6px 0">'), ev);
+        }
+        else if (ad) showTip(el._dcTheme, esc(ad.getAttribute('data-tip')), ev);
+        else hideTip();
+      });
+      el.addEventListener('mouseleave', hideTip);
+    }
+    el._dcTheme = theme;
+  }
+
+  function legend(theme) {
+    var T = THEMES[theme === 'dark' ? 'dark' : 'light'];
+    var dot = function (c, ring) { return '<i style="display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:4px;vertical-align:0;' +
+      (ring ? 'border:1.5px solid ' + T.zeroStroke + ';background:' + T.zeroFill : 'background:' + c) + '"></i>'; };
+    return '<span class="dc-leg" style="display:inline-flex;gap:10px;flex-wrap:wrap;font-size:inherit">' +
+      '<span>' + dot(T.pos) + 'Text +</span><span>' + dot(T.neg) + 'Text −</span><span>' + dot(null, true) + '0</span>' +
+      '<span style="color:' + T.pos + '">▲ G raise</span><span style="color:' + T.neg + '">▼ G cut</span></span>';
+  }
+
+  function mountFromPage() {
+    var src = document.getElementById('drift-chart'), el = document.querySelector('[data-drift-chart]');
+    if (!src || !el) return;
+    try { render(el, JSON.parse(src.textContent), { theme: 'light', size: 'page' }); }
+    catch (e) { el.innerHTML = '<div style="padding:10px;color:#6b6860">no price data</div>'; }
+  }
+
+
+  /* ---------- EPS forecasts from rows4 (fields 2 and 3: FY1, FY2) ---------- */
+  function parseEps(rows4, ticker) {
+    var tk = String(ticker).toUpperCase(), out = {};
+    (rows4 || []).forEach(function (row) {
+      if (!row || !row.Date || !row.Snapshot) return;
+      var dp = String(row.Date).split('/'); if (dp.length !== 3) return;
+      var iso = dp[2] + '-' + ('0' + dp[1]).slice(-2) + '-' + ('0' + dp[0]).slice(-2);
+      var recs = String(row.Snapshot).split(';');
+      for (var i = 0; i < recs.length; i++) {
+        var f = recs[i].split(',');
+        if ((f[0] || '').toUpperCase() !== tk) continue;
+        var a = parseFloat(f[1]), b = parseFloat(f[2]);
+        out[iso] = [iso, isFinite(a) ? a : null, isFinite(b) ? b : null];
+        break;
+      }
+    });
+    return Object.keys(out).sort().map(function (k) { return out[k]; });
+  }
+  /* year-end roll: the new FY1 is within 12% of the old FY2 and has moved >15% from the old FY1 */
+  function epsYears(e, given) {
+    var R = given ? given.slice() : [];
+    for (var i = 1; !given && i < e.length; i++) {
+      var a = e[i - 1], b = e[i];
+      if (a[1] && a[2] && b[1] && Math.abs(b[1] - a[2]) / Math.abs(a[2]) < 0.12 && Math.abs(b[1] - a[1]) / Math.abs(a[1]) > 0.15) R.push(i);
+    }
+    var yrs = {}, ri = 0;
+    e.forEach(function (r, i) {
+      while (ri < R.length && R[ri] <= i) ri++;
+      if (r[1] != null) (yrs[ri] = yrs[ri] || []).push([r[0], r[1]]);
+      if (r[2] != null) (yrs[ri + 1] = yrs[ri + 1] || []).push([r[0], r[2]]);
+    });
+    return { rolls: R, cur: yrs[R.length] || [], nxt: yrs[R.length + 1] || [] };
+  }
+  /* EPS panel under a modal chart. opt.x0/x1 = the price chart's date range (ms) so the axes line up.
+     style 'lines': this year solid amber, next year dashed purple. style 'bars': one bar per week for this
+     year's forecast, coloured by the week's change (green up / red down / grey flat). */
+  function epsPanel(el, e, opt) {
+    opt = opt || {};
+    var S = SIZES[opt.size || 'modal'], W = S.W, H = opt.h || 130, pt = 14, pb = 16, A = '#ffb347', P = '#c07ef7';
+    if (!e || e.length < 2) { el.innerHTML = ''; return; }
+    var Y_ = epsYears(e, opt.rolls), cur = Y_.cur, nxt = opt.style === 'bars' ? [] : Y_.nxt;
+    if (cur.length < 2) { el.innerHTML = ''; return; }
+    var x0 = opt.x0, x1 = opt.x1;
+    function X(iso) { return S.pl + (t(iso) - x0) / ((x1 - x0) || 1) * (W - S.pl - S.pr); }
+    var v = cur.concat(nxt).map(function (p) { return p[1]; }), lo = Math.min.apply(null, v), hi = Math.max.apply(null, v);
+    var pad = (hi - lo) * 0.12 || Math.abs(hi) * 0.05 || 1; lo -= pad; hi += pad;
+    function Y(x) { return pt + (hi - x) / (hi - lo) * (H - pt - pb); }
+    var s = '<svg viewBox="0 0 ' + W + ' ' + H + '" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%;height:auto">';
+    s += '<line x1="' + S.pl + '" x2="' + (W - S.pr) + '" y1="0.5" y2="0.5" stroke="#1e1e28"/>';
+    s += '<text x="' + S.pl + '" y="10" font-size="9" letter-spacing=".08em" fill="#5a5a72">EPS FORECASTS</text>';
+    var labels = '';
+    function pctLab(ser) {
+      for (var i = 1; i < ser.length; i++) {
+        var ch = (ser[i][1] / ser[i - 1][1] - 1) * 100;
+        if (Math.abs(ch) >= 3 && isFinite(ch)) {
+          var x = X(ser[i][0]), y = Y(ser[i][1]);
+          labels += '<text x="' + x.toFixed(1) + '" y="' + (ch > 0 ? Math.max(pt + 8, y - 5) : y + 11).toFixed(1) + '" text-anchor="middle" font-size="9" fill="' +
+            (ch > 0 ? '#00d97e' : '#ff4757') + '">' + (ch > 0 ? '+' : '') + ch.toFixed(1) + '%</text>';
+        }
+      }
+    }
+    if (opt.style === 'bars') {
+      var bw = Math.max(2, Math.min(14, (W - S.pl - S.pr) / ((x1 - x0) / (7 * DAY)) * 0.7)), bot = H - pb;
+      cur.forEach(function (p, i) {
+        var ch = i ? p[1] - cur[i - 1][1] : 0, col = ch > 0 ? '#00d97e' : ch < 0 ? '#ff4757' : '#3a3a50', x = X(p[0]), y = Y(p[1]);
+        s += '<rect x="' + (x - bw / 2).toFixed(1) + '" y="' + y.toFixed(1) + '" width="' + bw.toFixed(1) + '" height="' + Math.max(1, bot - y).toFixed(1) + '" fill="' + col + '" rx="1"/>';
+      });
+    } else if (opt.style === 'area') {
+      /* Earnings Whispers-style forward-estimate step area, drawn in its own strip */
+      var step = function (ser) { var o = [];
+        ser.forEach(function (p, i) { var x = X(p[0]).toFixed(1), y = Y(p[1]).toFixed(1);
+          if (i) o.push(x + ',' + Y(ser[i - 1][1]).toFixed(1)); o.push(x + ',' + y); }); return o; };
+      var bot2 = H - pb, sc_ = step(cur);
+      s += '<polygon points="' + X(cur[0][0]).toFixed(1) + ',' + bot2 + ' ' + sc_.join(' ') + ' ' + X(cur[cur.length - 1][0]).toFixed(1) + ',' + bot2 +
+        '" fill="#d9a066" fill-opacity=".22"/>';
+      s += '<polyline points="' + sc_.join(' ') + '" fill="none" stroke="#d9a066" stroke-width="1.4"/>';
+      if (nxt.length > 1) s += '<polyline points="' + step(nxt).join(' ') + '" fill="none" stroke="' + P + '" stroke-width="1.1" stroke-dasharray="4 3"/>';
+      A = '#d9a066';
+    } else {
+      [[nxt, P, true], [cur, A, false]].forEach(function (z) {
+        if (z[0].length < 2) return;
+        s += '<polyline points="' + z[0].map(function (p) { return X(p[0]).toFixed(1) + ',' + Y(p[1]).toFixed(1); }).join(' ') +
+          '" fill="none" stroke="' + z[1] + '" stroke-width="' + (z[2] ? 1.2 : 1.6) + '"' + (z[2] ? ' stroke-dasharray="4 3"' : '') + '/>';
+      });
+    }
+    pctLab(cur);
+    Y_.rolls.forEach(function (i) {
+      var x = X(e[i][0]);
+      s += '<line x1="' + x.toFixed(1) + '" x2="' + x.toFixed(1) + '" y1="' + pt + '" y2="' + (H - pb) + '" stroke="#9a9ab5" stroke-dasharray="2 3" opacity=".5"/>' +
+        '<text x="' + (x + 4).toFixed(1) + '" y="' + (H - pb - 3) + '" font-size="9" fill="#9a9ab5">results · year rolled</text>';
+    });
+    var l1 = cur[cur.length - 1][1], l2 = nxt.length ? nxt[nxt.length - 1][1] : null, y1 = Y(l1), y2 = l2 != null ? Y(l2) : null;
+    if (y2 != null && Math.abs(y1 - y2) < 11) { if (y1 > y2) y1 = y2 + 11; else y2 = y1 + 11; }
+    labels += '<text x="' + (W - S.pr + 4) + '" y="' + (y1 + 3).toFixed(1) + '" font-size="10" fill="' + A + '">' + l1 + 'p</text>';
+    if (y2 != null) labels += '<text x="' + (W - S.pr + 4) + '" y="' + (y2 + 3).toFixed(1) + '" font-size="10" fill="' + P + '">' + l2 + 'p</text>';
+    el.innerHTML = s + labels + '</svg>';
+  }
+
+  root.DriftChart = { render: render, legend: legend, validate: validate, parseTail: parseTail,
+                      mountFromPage: mountFromPage, parseEps: parseEps, epsPanel: epsPanel, version: '1.9' };
+})(typeof window !== 'undefined' ? window : this);
+</script><script>
 (function(){
  var g=document.getElementById('g2');
  if(g){g.querySelectorAll('th.phead').forEach(function(th){th.addEventListener('click',function(){
@@ -447,12 +956,21 @@ pre.json{background:#fff;border:1px solid var(--line);border-radius:6px;padding:
    g.querySelectorAll('tr').forEach(function(tr){if(tr.querySelector('[colspan]'))return;
      cols.forEach(function(c){if(tr.children[c])tr.children[c].classList.add('hl')})});
  })})}
- var t3=document.getElementById('text3');
+ var t3=document.getElementById('text3'), exp=document.getElementById('s3exp');
+ function openExp(){ if(t3) t3.classList.remove('collapsed');
+   if(exp) exp.firstChild.innerHTML=exp.firstChild.innerHTML.replace('\u25B8 Show','\u25BE Hide').replace('earlier prints','earlier prints'); }
+ if(exp){exp.addEventListener('click',function(){
+   var c=t3.classList.toggle('collapsed');
+   exp.firstChild.innerHTML = (c?'\u25B8 Show ':'\u25BE Hide ')+'10 earlier prints \u2014 Nov-21 to Apr-25';
+ })}
  if(t3){t3.querySelectorAll('td.dcol').forEach(function(td){td.addEventListener('click',function(){
    var rt=td.parentNode.getAttribute('data-rowtype'),on=td.parentNode.classList.contains('pinkhl');
    t3.querySelectorAll('.pinkhl').forEach(function(e){e.classList.remove('pinkhl')});
    if(on)return;
-   t3.querySelectorAll('tr[data-rowtype="'+rt+'"]').forEach(function(tr){tr.classList.add('pinkhl')});
+   var m=t3.querySelectorAll('tr[data-rowtype="'+rt+'"]'), hidden=false;
+   m.forEach(function(tr){tr.classList.add('pinkhl'); if(tr.classList.contains('earlier'))hidden=true;});
+   if(hidden && t3.classList.contains('collapsed')){ t3.classList.remove('collapsed');
+     if(exp) exp.firstChild.innerHTML='\u25BE Hide 10 earlier prints \u2014 Nov-21 to Apr-25'; }
  })})}
  var dt=document.getElementById('drifttab');
  if(dt){dt.querySelectorAll('th.dhead').forEach(function(th){th.addEventListener('click',function(){
@@ -462,4 +980,7 @@ pre.json{background:#fff;border:1px solid var(--line);border-radius:6px;padding:
    var cols=[];hr.querySelectorAll('th.dhead').forEach(function(h,i){if(h.getAttribute('data-k')===k){cols.push(i+1);h.classList.add('hl')}});
    dt.querySelectorAll('tbody tr').forEach(function(tr){cols.forEach(function(c){if(tr.children[c])tr.children[c].classList.add('hl')})});
  })})}
-})();</script></body></html>
+ try{ if(window.DriftChart){ DriftChart.mountFromPage();
+   var lg=document.getElementById('pxlegend'); if(lg) lg.innerHTML=DriftChart.legend('light'); } }catch(e){}
+})();
+</script></body></html>
