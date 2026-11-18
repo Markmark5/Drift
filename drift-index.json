@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "tickers": [
     {
       "ticker": "STAF",
@@ -3569,18 +3569,18 @@
       "ticker": "HAS",
       "company": "Hays plc",
       "kind": "ticker",
-      "direction": "watch",
-      "headline": "Fees improving to −3% and Perm −7%, but the first Q1 update in the record with no profit statement at all — the words broke before the numbers.",
-      "trigger": "2-of-3 fired, opposing directions: G-raise green-shoot vs Language deterioration; Disclosure amber (same absence, counted once)",
-      "alert": false,
+      "direction": "up",
+      "headline": "Unscheduled upgrade: H1 guided to at least £35m, 41% above consensus, five weeks after the profit-silent Q1 — the silence was an upgrade in waiting.",
+      "trigger": "2-of-3 fired, converging green: G RAISE (first numeric H1 floor) + profit guide re-quantified; Language amber (one rising print, mirror needs two)",
+      "alert": true,
       "fired": 2,
       "fired_of": 3,
-      "lights": "gra",
-      "rns_type": "Q1 TU",
-      "rns_date": "2026-10-12",
-      "build_date": "2026-10-12",
-      "spec_version": "v5.6",
-      "next_test": "14 Jan 2027 — Q2 27 TU: an H1 profit figure 'in line with consensus' restores the anchor; a second update without one is a withdrawal",
+      "lights": "gag",
+      "rns_type": "TU",
+      "rns_date": "2026-11-18",
+      "build_date": "2026-11-18",
+      "spec_version": "v5.8",
+      "next_test": "14 Jan 2027 — Q2 27 TU: Germany prints modest positive LFL and the ≥£35m H1 floor is held or raised; H1 results 26 Feb deliver the proof",
       "url": "HAS.html",
       "grid": {
         "labels": [
@@ -3611,11 +3611,11 @@
         "note": "Rows are ledger ranks R1-R5 at quarterly grain; R4 prints at half-ends only"
       },
       "prev": {
-        "direction": "up",
+        "direction": "watch",
         "fired": 2,
-        "lights": "gag",
-        "rns_date": "2026-08-20",
-        "rns_type": "FY R"
+        "lights": "gra",
+        "rns_date": "2026-10-12",
+        "rns_type": "Q1 TU"
       },
       "trend": {
         "mode": "share",
@@ -3623,7 +3623,7 @@
         "rows": [
           {
             "m": "REV",
-            "gap": 5.3
+            "gap": 5.6
           },
           {
             "m": "EBITDA",
@@ -3634,7 +3634,8 @@
             "gap": null
           }
         ]
-      }
+      },
+      "chart": "charts/HAS.json?v=2026-11-18.2b65"
     },
     {
       "ticker": "VLX",
