@@ -1,6 +1,6 @@
 {
  "ticker": "XPS",
- "v": "2026-11-10.786b",
+ "v": "2026-11-19.48a0",
  "ccy": "GBX",
  "src": "Yahoo XPS.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1060,6 +1060,10 @@
   [
    "2026-11-06",
    351.5
+  ],
+  [
+   "2026-11-13",
+   352.5
   ]
  ],
  "marks": [
@@ -1251,14 +1255,48 @@
    "s": 1,
    "q": "Strong revenue growth, coupled with continued disciplined cost management and delivery of operating efficiencies, means the Board is confident of achieving full year results slightly ahead of its expectations.",
    "file": "20261015_XPS_Post-close-trading-update.md"
+  },
+  {
+   "d": "2026-11-19",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is delighted with the Group’s performance in the first half of the year and is confident of achieving full year results in line with its recently upgraded expectations.",
+   "file": "20261119_XPS_Half-year-Report.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-11-10",
-  "doc": "Notice",
-  "file": "20261110_XPS_Half-Year-Results-Presentation.md",
-  "vs": "H1 TU Oct-26 · Notice Oct-26 · FY results presentation May-26",
-  "lines": []
+  "rns": "2026-11-19",
+  "doc": "H1 R",
+  "file": "20261119_XPS_Half-year-Report.md",
+  "vs": "H1 R Nov-25 · back to Nov-23 · FY R Jun-26 · H1 TU Oct-26",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "Target dropped",
+    "text": "Met Police go-live: FY R Jun-26 “recent appointment to the Metropolitan Police Pension Scheme which will go live in the latter part of FY 2027” → H1 R Nov-26 no mention of the Met Police contract",
+    "span": "Named in H1 R Nov-25 and FY R Jun-26 → first omission"
+   },
+   {
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "Members under administration: Nov-25 “circa 1.2 million at 30 September 2025, being a YoY increase of 14.0%” → Nov-26 “largely in line with the prior year”, no growth figure",
+    "span": "Membership growth % given Nov-25 → flat, stated in words"
+   },
+   {
+    "sev": "grey",
+    "type": "Split withheld",
+    "text": "Advisory split: Nov-25 “Investment Consulting has returned to growth with 4% increase in revenues year on year” → Nov-26 Advisory total only; FY R Jun-26 restated, “Management review the Advisory business as a whole”",
+    "span": "Actuarial/Investment split given Nov-23, Nov-24, Nov-25"
+   },
+   {
+    "sev": "grey",
+    "type": "Wording vs number",
+    "text": "Employee NPS: Nov-25 “net promoter score remains very positive at +32” → Nov-26 “net promoter score remains very positive and a long way above norms in professional services”, highlights show “(+26)”",
+    "span": "+31 Nov-23, +32 Nov-25 and Jun-26 → +26"
+   }
+  ]
  }
 }
