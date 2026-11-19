@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "tickers": [
     {
       "ticker": "STAF",
@@ -2236,17 +2236,17 @@
       "company": "Tracsis plc",
       "kind": "ticker",
       "direction": "watch",
-      "headline": "FY26 delivered at the consensus mean and Mistral cleared, but the derived second half went backwards.",
-      "trigger": "Numbers & guide fired green on the full year; derived H2 FY26 EBITDA fell 3.1%, a watch-flagged divergence until printed halves arrive.",
+      "headline": "First numeric guide in the record — an FY27 floor set above consensus — while recurring licence growth slows to 1%.",
+      "trigger": "Numbers & guide fired green — G RAISE: first numeric forward-year guide, FY27 floor £15.5m above the £15.4m consensus mean; derived H2 EBITDA decline watch-flagged beside it.",
       "alert": false,
       "fired": 1,
       "fired_of": 3,
       "lights": "g--",
-      "rns_type": "FY26 Trading Update",
-      "rns_date": "2026-08-24",
-      "build_date": "2026-08-24",
-      "spec_version": "5.1",
-      "next_test": "FY26 results, 19 November 2026 — whether the printed H2 confirms the derived 3.1% EBITDA decline.",
+      "rns_type": "FY R",
+      "rns_date": "2026-11-19",
+      "build_date": "2026-11-19",
+      "spec_version": "5.8",
+      "next_test": "FY27 H1 trading update, late February 2027 — whether the £15.5m floor survives first contact, and Mistral's first printed recurring figure.",
       "url": "TRCS.html",
       "grid": {
         "labels": [
@@ -2268,14 +2268,40 @@
           "H2 26"
         ],
         "rows": [
-          "ggarrggr-",
-          "-rg--agaa",
+          "ggarrggra",
+          "-rg--agar",
           "rrarrrgga",
           "-grrrgaga",
           "-garrrggr"
         ],
-        "note": "One row per ledger rank, rank order, right-anchored on H2 FY26."
-      }
+        "note": "One row per ledger rank, rank order, right-anchored on H2 FY26 (re-stamped from the audited FY26 results)."
+      },
+      "prev": {
+        "direction": "watch",
+        "fired": 1,
+        "lights": "g--",
+        "rns_date": "2026-08-24",
+        "rns_type": "FY26 Trading Update"
+      },
+      "trend": {
+        "mode": "growth",
+        "cells": "ar-",
+        "rows": [
+          {
+            "m": "REV",
+            "gap": -1.7
+          },
+          {
+            "m": "EBITDA",
+            "gap": -10.4
+          },
+          {
+            "m": "PBT",
+            "gap": null
+          }
+        ]
+      },
+      "chart": "charts/TRCS.json?v=2026-11-19.c0ce"
     },
     {
       "ticker": "LBG",
