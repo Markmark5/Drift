@@ -1,30 +1,10 @@
 {
  "ticker": "VNET",
- "v": "2026-10-21.5044",
+ "v": "2026-11-19.83f9",
  "ccy": "GBX",
- "src": "AlphaVantage VNET.LON weekly",
+ "src": "AlphaVantage VNET.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-15",
-   98.0
-  ],
-  [
-   "2021-10-22",
-   95.0
-  ],
-  [
-   "2021-10-29",
-   95.5
-  ],
-  [
-   "2021-11-05",
-   86.5
-  ],
-  [
-   "2021-11-12",
-   89.5
-  ],
   [
    "2021-11-19",
    84.5
@@ -1060,18 +1040,25 @@
   [
    "2026-10-20",
    67.5
+  ],
+  [
+   "2026-10-23",
+   69.5
+  ],
+  [
+   "2026-10-30",
+   68.5
+  ],
+  [
+   "2026-11-06",
+   68.5
+  ],
+  [
+   "2026-11-13",
+   68.5
   ]
  ],
  "marks": [
-  {
-   "d": "2021-10-27",
-   "doc": "H1 TU",
-   "fy": "FY22",
-   "g": "flat",
-   "s": 0,
-   "q": "We are pleased to confirm the strong recovery in the Group's revenues through H1, with turnover up 55% to £6.3m (H1 2020: £4.1m and H1 2019: £8.4m) and pleasingly slightly above our expectations for the first six months of the year given restrictions ran late into the period and our supply chain costs were marginally higher.",
-   "file": "20211027_VNET_Trading-Update-and-Notice-of-Results.md"
-  },
   {
    "d": "2021-12-07",
    "doc": "H1 R",
@@ -1327,28 +1314,22 @@
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-21",
-  "doc": "H1 TU",
-  "file": "20261021_VNET_Trading-Update,-Notice-of-Results-and-Dividend.md",
-  "vs": "H1 TU Nov-25 · back to Nov-24 · AGM Jul-26",
+  "rns": "2026-11-18",
+  "doc": "OPS",
+  "file": "20261118_VNET_Commercial-Update.md",
+  "vs": "H1 TU Oct-26 · USA contract win Feb-26 · contract renewal Jun-26",
   "lines": [
    {
-    "sev": "amber",
-    "type": "Anchor softened",
-    "text": "AGM Jul-26: Q1 “trading ahead of management's expectations” → now “The Board continues to anticipate full year results in line with its expectations.”, no “ahead” for H1",
-    "span": "Jul-26 AGM → Oct-26 H1 TU"
-   },
-   {
-    "sev": "amber",
+    "sev": "grey",
     "type": "Wording vs number",
-    "text": "Recurring revenue growth: AGM Q1 “recurring revenue being 5.8% ahead” → H1 “recurring revenue up 2.3% to £6.59m”, implying Q2 near flat, under a “Strong H1 Profit and Cash Growth” headline",
-    "span": "Q1 (Jul-26) → H1 (Oct-26)"
+    "text": "Recurring revenue share: H1 TU (21 Oct 2026) actual “representing approximately 84% of Group revenue” → this RNS repeats boilerplate “approximately 88% recurring revenue”",
+    "span": "88% also used in Jun-26 renewal RNS; latest reported figure is 84%"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Divisional split back: Nov-25 gave Group figures only → now “Hospitality revenue, including the USA, increased approximately 6.3% to £4.99m” and “In the United States, revenue increased by 60%”",
-    "span": "Divisional growth given Nov-24, absent Nov-25, back Oct-26"
+    "text": "US customer now named: Feb-26 “a large full-service restaurant company”, Oct-26 “a leading US hospitality group with an estate exceeding 2,000 locations” → now Darden, “approximately 100 Yard House restaurants in the United States”, rollout completed",
+    "span": "Feb-26 → Oct-26 → Nov-26"
    }
   ]
  }

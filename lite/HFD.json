@@ -1,30 +1,10 @@
 {
  "ticker": "HFD",
- "v": "2026-10-21.ad74",
+ "v": "2026-11-19.91b0",
  "ccy": "GBX",
- "src": "AlphaVantage HFD.LON weekly",
+ "src": "AlphaVantage HFD.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-15",
-   290.6
-  ],
-  [
-   "2021-10-22",
-   276.2
-  ],
-  [
-   "2021-10-29",
-   266.4
-  ],
-  [
-   "2021-11-05",
-   281.2
-  ],
-  [
-   "2021-11-12",
-   325.0
-  ],
   [
    "2021-11-19",
    340.0
@@ -1060,18 +1040,25 @@
   [
    "2026-10-20",
    278.0
+  ],
+  [
+   "2026-10-23",
+   255.5
+  ],
+  [
+   "2026-10-30",
+   260.5
+  ],
+  [
+   "2026-11-06",
+   256.5
+  ],
+  [
+   "2026-11-13",
+   252.0
   ]
  ],
  "marks": [
-  {
-   "d": "2021-11-10",
-   "doc": "H1 R",
-   "fy": "FY22",
-   "g": "RAISE",
-   "s": 2,
-   "q": "We have carried good sales momentum into H2 across our business, supported by the easing of supply chain disruption. This has enabled us to increase our FY22 underlying profit before tax guidance to between £80m and £90m.",
-   "file": "20211110_HFD_Interim-Results-Financial-Year-2022.md"
-  },
   {
    "d": "2022-01-13",
    "doc": "Q3 TU",
