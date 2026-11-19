@@ -1,6 +1,6 @@
 {
  "ticker": "JD.",
- "v": "2026-11-11.04bc",
+ "v": "2026-11-19.a77b",
  "ccy": "GBX",
  "src": "Yahoo JD.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1056,6 +1056,10 @@
   [
    "2026-11-06",
    96.8
+  ],
+  [
+   "2026-11-13",
+   94.8
   ]
  ],
  "marks": [
@@ -1310,38 +1314,41 @@
    "s": 0,
    "q": "As announced at our Q2 trading statement and reiterated today, we anticipate profit before tax and adjusting items of £700m to £800m in FY27.",
    "file": "20260923_JD_HALF-YEAR-RESULTS-202627.md"
+  },
+  {
+   "d": "2026-11-19",
+   "doc": "Q3 TU",
+   "fy": "FY27",
+   "g": "CUT",
+   "s": -1,
+   "q": "With three quarters of the year now complete, we are narrowing our FY27 profit before tax and adjusting items(2,3) guidance range to £700m to £750m (from £700m to £800m).",
+   "file": "20261119_JD._Q3-202627-TRADING-STATEMENT.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-23",
-  "doc": "H1 R",
-  "file": "20260923_JD_HALF-YEAR-RESULTS-202627.md",
-  "vs": "H1 R Sep-25 · Q2 TU Aug-26 · FY R May-26 · YE-TU Jan-26",
+  "rns": "2026-11-19",
+  "doc": "Q3 TU",
+  "file": "20261119_JD._Q3-202627-TRADING-STATEMENT.md",
+  "vs": "Q3 TU Nov-25 · H1 R Sep-26 · Q2 TU Aug-26",
   "lines": [
    {
-    "sev": "amber",
-    "type": "Target dropped",
-    "text": "Cost-benefit target: H1 R Sep-25 “we expect to see £20m+ of cost benefits related to technology and supply chain double-running costs across FY27 and FY28”, repeated at FY R May-26 → H1 R Sep-26 no figure, only “we are realising the benefits of automation within our Heerlen distribution centre”",
-    "span": "Given Sep-25, May-26 → first omission"
-   },
-   {
-    "sev": "amber",
-    "type": "Went quiet",
-    "text": "Market share: H1 R Sep-25 headline “Market share gains(1) in key growth markets of North America and Europe” and YE-TU Jan-26 “further market share gains” → H1 R Sep-26 no market share claim or Circana data anywhere in the release",
-    "span": "Sep-25, Jan-26 → gone Sep-26"
-   },
-   {
-    "sev": "amber",
+    "sev": "red",
     "type": "Wording vs number",
-    "text": "“In this environment we delivered a resilient HY performance” beside PBTAI £282m vs £351m a year earlier (-19.7%) and operating margin 5.0% vs 6.2%",
-    "span": "H1 R Sep-26 vs H1 R Sep-25"
+    "text": "Presented as a narrowing: “we are narrowing our FY27 profit before tax and adjusting items(2,3) guidance range to £700m to £750m (from £700m to £800m)” — the top end is cut by £50m and the midpoint falls from £750m to £725m, the second reduction after Aug-26 (£750m-£850m → £700m-£800m)",
+    "span": "FY R May-26 → Q2 TU Aug-26 → Q3 TU Nov-26"
    },
    {
-    "sev": "grey",
-    "type": "Restated",
-    "text": "HY26 gross margin: reported “Gross margin of 48.0%, 60bps lower YoY” (Sep-25) → now shown as “HY26 restated: 47.0%” after a £61m reclassification from operating costs to cost of sales (no profit impact); LFL also joined by a new “comparable sales” KPI that it is expected to replace",
-    "span": "Note 14, H1 R Sep-26"
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "Gross margin: Q3 Nov-25 “Q3 gross margin 30bps lower YoY excluding acquisitions (40bps lower YoY overall)” → Q3 Nov-26 only “Group gross margin % for Q3 in line with our expectations”, no bps figure",
+    "span": "Q3 Nov-25 number → Q2 Aug-26 and Q3 Nov-26 words"
+   },
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "First flag of unrest in the record: “Trading in October was affected by civil unrest, especially in France”",
+    "span": "No earlier RNS mentions unrest"
    }
   ]
  }

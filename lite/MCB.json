@@ -1,6 +1,6 @@
 {
  "ticker": "MCB",
- "v": "2026-11-17.5192",
+ "v": "2026-11-19.5f42",
  "ccy": "GBX",
  "src": "Yahoo MCB.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1329,38 +1329,47 @@
    "s": -2,
    "q": "At this stage, the Group expects margins to recover during the second quarter, subject to market developments of input costs.",
    "file": "20260915_MCB_Results-for-the-year-ended-30-June-2026.md"
+  },
+  {
+   "d": "2026-11-19",
+   "doc": "AGM",
+   "fy": "FY27",
+   "g": "CUT",
+   "s": -3,
+   "q": "Therefore, the Group currently expects full year FY27 adjusted EBITA to be between 20% and 25% below current analysts’ expectations*.",
+   "file": "20261119_MCB_AGM-Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-15",
-  "doc": "FY R",
-  "file": "20260915_MCB_Results-for-the-year-ended-30-June-2026.md",
-  "vs": "FY R Sep-25 · Jun-26 trading update · H1 R Feb-26",
+  "rns": "2026-11-19",
+  "doc": "AGM",
+  "file": "20261119_MCB_AGM-Trading-Update.md",
+  "vs": "AGM Nov-25 · back to Nov-24 · FY R Sep-26 · H1 R Feb-26",
   "lines": [
    {
     "sev": "red",
-    "type": "Next-year view dropped",
-    "text": "Jun-26: “the Group now expects FY26 and FY27 adjusted EBITA to be between 5 and 10% lower than current analysts' expectations” → Sep-26: no FY27 profit guide or analysts' anchor, only “the Group expects margins to recover during the second quarter, subject to market developments of input costs”",
-    "span": "FY27 number given Jun-26 → gone at FY R"
-   },
-   {
-    "sev": "amber",
-    "type": "Number to words",
-    "text": "Contract manufacturing volumes: FY25 “contract manufacturing volumes substantially up by 48.9%”, H1-26 “contract manufacturing volumes were up 1.4%” → FY26 “softer demand in contract manufacturing”, no Group figure; FY25's “now representing 13.6% of revenue” not updated",
-    "span": "Sep-25, Feb-26 → Sep-26"
-   },
-   {
-    "sev": "amber",
     "type": "Pushed out",
-    "text": "Feb-26: “Good momentum expected through the second half as healthy pipeline of contract wins set to launch” → Sep-26: “several of these launches were subsequently delayed into the next financial year”",
-    "span": "H1 R Feb-26 → FY R Sep-26"
+    "text": "Margin recovery: Sep-26 “the Group expects margins to recover during the second quarter, subject to market developments of input costs” → Nov-26 “recovery of margins towards previous levels will be during Q4 FY27 (previously Q2 FY27)”",
+    "span": "FY R Sep-26 → AGM Nov-26, two quarters later"
+   },
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "Service levels: Feb-26 “the underlying level remains the highest in six years”, Sep-26 “robust customer service levels of 92.0% for the year” → Nov-26 “a limited number of operational challenges has led to weaker service levels than normal”, no figure",
+    "span": "First service-level warning; said to be materially resolved"
    },
    {
     "sev": "grey",
-    "type": "Demoted",
-    "text": "Customer service level: FY25 highlight “averaging over 94% for the year - the highest in more than six years” → FY26 not in highlights; body only “robust customer service levels of 92.0% for the year”",
-    "span": "Sep-25 → Sep-26"
+    "type": "Went quiet",
+    "text": "Share buyback: Nov-25 AGM “The Board will therefore commence a £20m share buyback programme shortly”; Sep-26 “deploying £6.4 million in the year” → Nov-26 no buyback or shareholder-returns mention",
+    "span": "Reported Nov-25, Feb-26, Sep-26 → absent Nov-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "FY27 analysts' anchor re-quantified: Sep-26 no FY27 profit figure → Nov-26 “a Group-compiled consensus for adjusted EBITA for the year ending 30 June 2027 of £62.9m”, plus Q1 volumes “like-for-like volumes, excluding the Eurotab acquisition, are up c. 2%”",
+    "span": "Consensus footnote given Nov-24, Nov-25, Jun-26 → missing Sep-26 → back Nov-26"
    }
   ]
  }

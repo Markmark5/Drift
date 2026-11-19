@@ -1,8 +1,8 @@
 {
  "ticker": "MANO",
- "v": "2026-10-21.943d",
+ "v": "2026-11-19.785a",
  "ccy": "GBX",
- "src": "Yahoo MANO.L weekly",
+ "src": "Yahoo MANO.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,22 @@
   [
    "2026-10-21",
    38.0
+  ],
+  [
+   "2026-10-23",
+   38.0
+  ],
+  [
+   "2026-10-30",
+   38.0
+  ],
+  [
+   "2026-11-06",
+   33.0
+  ],
+  [
+   "2026-11-13",
+   30.0
   ]
  ],
  "marks": [
@@ -1263,38 +1279,47 @@
    "s": 0,
    "q": "Realised revenue1 grew by 23% in H1 to £17.4m (H1 262: £14.1m) – the highest realised revenue the Company has ever generated over a half year period – and underpins the Board’s confidence in achieving market consensus expectations for the full year of £30.6m realised revenue and adjusted realised profit before tax3 of £1.5m.",
    "file": "20261007_MANO_Half-Year-Trading-Update.md"
+  },
+  {
+   "d": "2026-11-19",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The strong start to H2 and the growth in realised revenue and adjusted realised PBT in H1 underpins the Board’s confidence in achieving market consensus expectations for the full year1 and achieving the medium-term targets to scale the business that were announced in June.",
+   "file": "20261119_MANO_Half-year-results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-07",
-  "doc": "H1 TU",
-  "file": "20261007_MANO_Half-Year-Trading-Update.md",
-  "vs": "H1 R Nov-25 · AGM Sep-26 (previous outlook RNS) · FY R Jun-26 · H1 TU Oct-23",
+  "rns": "2026-11-19",
+  "doc": "H1 R",
+  "file": "20261119_MANO_Half-year-results.md",
+  "vs": "H1 R Nov-25 · H1 TU Oct-26 · FY R Jun-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Number to words",
-    "text": "Debtor exposure: Jun-26 “the total net exposure to these debtors is £4.7m” and “The Board remains confident in substantial recovery of these balances” → Oct-26 only “Enforcement action against the two large debtors that didn’t pay as anticipated in FY26”, no amount and no recovery confidence",
-    "span": "Quantified Apr-26, Jun-26 → words Oct-26"
+    "type": "Demoted",
+    "text": "Case counts: H1-26 highlights “505 new case referrals in H1 FY26” and “146 new case investments” → H1-27 no counts; body only “the number of referrals and number of signed cases decreasing 5% and 12% year-on-year respectively”",
+    "span": "Headline counts Nov-25 → falls shown only as % in the CEO report Nov-26"
    },
    {
     "sev": "amber",
     "type": "Wording vs number",
-    "text": "“We performed strongly in the first half” beside “Gross cash receipts in the first half were £1.7m lower at £12.8m” and net debt up £2.1m to £13.6m",
-    "span": "H1-26 £14.5m → H1-27 £12.8m"
+    "text": "Market backdrop: Jun-26 “backdrop of an improving insolvency market” → Nov-26 “Insolvencies in England and Wales in the first 9 months of 2026 were 6% down on the same period in 2025”, CVLs (largest referral source) “reduced by 9%”",
+    "span": "Jun-26 → Nov-26"
    },
    {
     "sev": "grey",
-    "type": "Went quiet",
-    "text": "Case counts: H1-26 gave “505 new case referrals in H1 FY26” and “146 new case investments” (Oct-23 TU: “The total number of new case investments for H1 FY24 was 179”) → Oct-26 gives only the value of signed cases, no referral or new-investment counts",
-    "span": "Given Oct-23, Nov-24, Nov-25 → absent Oct-26"
+    "type": "Number to words",
+    "text": "Debtor exposure: Jun-26 “the total net exposure to these debtors is £4.7m” → Nov-26 “Enforcement action remains ongoing against two large debtors that didn’t pay as anticipated”, no amount and no recovery confidence",
+    "span": "Quantified Jun-26 → words Oct-26 and Nov-26"
    },
    {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Market anchor re-quantified: Sep-26 “in-line with the Board's expectations for FY27” → Oct-26 “underpins the Board’s confidence in achieving market consensus expectations for the full year of £30.6m realised revenue”, with PBT of £1.5m stated",
-    "span": "Board's Aug-26, Sep-26 → market consensus with figures Oct-26"
+    "sev": "grey",
+    "type": "Restated",
+    "text": "H1-26 comparatives restated for IFRS9 discounting: Nov-25 “Realised revenue was £14.0m” → Nov-26 “The reported realised revenue figure for H1 26 was £0.1m lower at £14.0m”, now shown as £14.1m, PBT £0.8m → £0.9m",
+    "span": "Same H1-26 period"
    }
   ]
  }

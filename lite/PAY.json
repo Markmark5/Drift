@@ -1,8 +1,8 @@
 {
  "ticker": "PAY",
- "v": "2026-10-21.93bb",
+ "v": "2026-11-19.9cdb",
  "ccy": "GBX",
- "src": "Yahoo PAY.L weekly",
+ "src": "Yahoo PAY.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,22 @@
   [
    "2026-10-21",
    722.5
+  ],
+  [
+   "2026-10-23",
+   715.0
+  ],
+  [
+   "2026-10-30",
+   720.0
+  ],
+  [
+   "2026-11-06",
+   740.5
+  ],
+  [
+   "2026-11-13",
+   777.5
   ]
  ],
  "marks": [
@@ -1317,38 +1333,56 @@
    "s": 0,
    "q": "With the business reorganisation largely complete, a solid first quarter performance delivered and a good trading rhythm established across the Group, we remain confident in making further progress in FY27 and meeting market expectations.",
    "file": "20260729_PAY_1st-Quarter-Results.md"
+  },
+  {
+   "d": "2026-09-29",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board remains confident in the Group’s outlook for FY27 and in meeting market expectations for the year. As previously indicated, performance is expected to be weighted towards the second half of the financial year",
+   "file": "20260929_PAY_Capital-Markets-Day-sets-out-growth-drivers-u....md"
+  },
+  {
+   "d": "2026-11-19",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "CUT",
+   "s": -1,
+   "q": "Consistent with previous guidance, performance is expected to be more heavily weighted towards the second half, and the Board remains confident that the Group will deliver a stronger second-half performance and an outcome broadly in line with market expectations for the year.",
+   "file": "20261119_PAY_Half-year-results-for-the-six-months-ended-30-September-2026.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-29",
-  "doc": "Q1 R",
-  "file": "20260729_PAY_1st-Quarter-Results.md",
-  "vs": "Q1 TU Aug-25 · back to Aug-24 · FY R Jun-26",
+  "rns": "2026-11-19",
+  "doc": "H1 R",
+  "file": "20261119_PAY_Half-year-results-for-the-six-months-ended-30-September-2026.md",
+  "vs": "H1 R Nov-25 · CMD Sep-26 · Q1 Jul-26 · FY R Jun-26",
   "lines": [
    {
     "sev": "red",
-    "type": "Target dropped",
-    "text": "FY R Jun-26: “a net revenue target growth rate of 5-8% per annum” → Q1 FY27 no mention of the 5-8% target (Group net revenue down 6.4% to £39.5m); objectives left to the Capital Markets Day, “where we will set out our simplified investment case”",
-    "span": "Three-year growth targets cited at Q1 Aug-25 and FY R Jun-26 → first Q1 without them"
-   },
-   {
-    "sev": "amber",
-    "type": "Went quiet",
-    "text": "Net corporate debt at quarter end: Aug-25 “The Group had net corporate debt of £109.6 million” → Jul-26 no net debt figure (last stated £132.5m at Mar-26)",
-    "span": "Given at Q1 Aug-24 (£81.2m) and Aug-25 → first gap"
-   },
-   {
-    "sev": "amber",
-    "type": "Went quiet",
-    "text": "Parcel volumes: Aug-25 “38.2 million parcel transactions” → Jul-26 no volume, only that “the parcel business continues to rebase”",
-    "span": "Given at Q1 Aug-24 (32.0m) and Aug-25 → first gap"
+    "type": "Anchor softened",
+    "text": "Q1 Jul-26: “on track to meet market expectations for FY27”; CMD Sep-26: “meeting market expectations for the year” → H1 Nov-26: “The Board continues to expect a full-year outcome broadly in line with market expectations”",
+    "span": "Back to the ‘broadly in line’ of H1 Nov-25 and YE-TU Mar-26 after two plain in-line prints"
    },
    {
     "sev": "amber",
     "type": "Wording vs number",
-    "text": "Headline “Solid Q1 performance with Group on track to meet market expectations for FY27” beside Group net revenue £39.5m vs £42.2m, down 6.4%, with three of four units lower",
-    "span": "Q1 Aug-25: net revenue +7.5%"
+    "text": "Headline “Resilient underlying H1 performance in line with expectations” beside “Underlying profit before tax of £22.3 million (H1 FY26: £25.7 million) decreased by £3.4 million (-13.2%)”; Parcels net revenue down 39.5%",
+    "span": "H1 Nov-26 vs H1 Nov-25"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Card processed value: H1 Nov-25 “Card processed value decreased by 4.4% overall to £3.4 billion” → H1 Nov-26 no total processed value, only per-merchant averages for the Handepay book",
+    "span": "Given H1 Nov-24, H1 Nov-25, FY Jun-26 → first gap"
+   },
+   {
+    "sev": "grey",
+    "type": "Target dropped",
+    "text": "£100m EBITDA objective: H1 Nov-25 “underlying EBITDA of £100 million in the current financial year – which remains a key financial objective the business is confident of reaching” → not mentioned in H1 Nov-26",
+    "span": "Given Aug-25, Nov-25; absent since Jan-26"
    }
   ]
  }

@@ -1,6 +1,6 @@
 {
  "ticker": "HLMA",
- "v": "2026-11-10.0ddb",
+ "v": "2026-11-19.f5b9",
  "ccy": "GBX",
  "src": "AlphaVantage HLMA.LON weekly + ShareScope snapshots",
  "adj": [],
@@ -1060,6 +1060,10 @@
   [
    "2026-11-06",
    3314.0
+  ],
+  [
+   "2026-11-13",
+   3514.0
   ]
  ],
  "marks": [
@@ -1242,26 +1246,29 @@
    "s": 1,
    "q": "Adjusted1 EBIT margin2 in the 2027 full year is now expected to be in the range of 23.5% to 24%.",
    "file": "20260924_HLMA_Trading-Update.md"
+  },
+  {
+   "d": "2026-11-19",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "While our companies continue to experience varied conditions in their end markets and economic and geopolitical uncertainty remains elevated, we continue to expect to deliver, for the year as a whole, low double-digit percentage organic7 constant currency revenue growth.",
+   "file": "20261119_HLMA_Half-Year-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-24",
-  "doc": "H1 TU",
-  "file": "20260924_HLMA_Trading-Update.md",
-  "vs": "H1 TU Sep-25 · YE-TU Mar-26 · back to Sep-22",
+  "rns": "2026-11-19",
+  "doc": "H1 R",
+  "file": "20261119_HLMA_Half-Year-Results.md",
+  "vs": "H1 R Nov-25 · H1 TU Sep-26",
   "lines": [
-   {
-    "sev": "grey",
-    "type": "Went quiet",
-    "text": "Cash conversion guide: Sep-25 “We expect full year cash conversion to be more in line with our KPI of 90%” and Mar-26 “We also expect our full year cash conversion to be in line with our KPI of 90%” → Sep-26 no cash conversion figure or guide",
-    "span": "Given in the last two TUs (Sep-25, Mar-26); not in Sep-23 or Sep-24"
-   },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Margin guide re-quantified as a range: was “around 22.7%” → now “in the range of 23.5% to 24%”, plus a new photonics figure, “photonics growth rate of approximately 30%”",
-    "span": "Sep-25 gave margin only as “modestly above the middle of our target range”"
+    "text": "Cash conversion guide back: Sep-26 TU no cash-conversion figure or guide → Nov-26 “We continue to expect full year adjusted1 cash conversion to be in line with our KPI of 90%”, with H1 at 85%",
+    "span": "Given Nov-25, Mar-26 → gap Sep-26 → back Nov-26"
    }
   ]
  }

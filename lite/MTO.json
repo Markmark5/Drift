@@ -1,8 +1,8 @@
 {
  "ticker": "MTO",
- "v": "2026-10-21.1864",
+ "v": "2026-11-19.8b39",
  "ccy": "GBX",
- "src": "Yahoo MTO.L weekly",
+ "src": "Yahoo MTO.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,22 @@
   [
    "2026-10-21",
    210.8
+  ],
+  [
+   "2026-10-23",
+   210.6
+  ],
+  [
+   "2026-10-30",
+   210.6
+  ],
+  [
+   "2026-11-06",
+   209.0
+  ],
+  [
+   "2026-11-13",
+   209.0
   ]
  ],
  "marks": [
@@ -1280,14 +1296,48 @@
    "s": 0,
    "q": "With continued momentum, favourable macro trends and a reputation for outstanding service (reflected in a Net Promoter Score of +64), Mitie has entered FY27 confident of delivering its FY25-FY27 Strategic Plan.",
    "file": "20260721_MTO_Recommended-Cash-Acquisition-of-Mitie-Group-plc.md"
+  },
+  {
+   "d": "2026-11-19",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "This is the final year of our FY25-FY27 Strategic Plan, and we expect to deliver all of the targets we set in October 2023, consolidating our leading positions across our three key pillars of growth: Facilities Management, Facilities Transformation and Facilities Compliance.",
+   "file": "20261119_MTO_H1-FY27-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-16",
-  "doc": "OPS",
-  "file": "20260916_MTO_Results-of-Shareholder-Meetings.md",
-  "vs": "Offer update Aug-26 · no Sep-25 equivalent · last trading RNS Q1 TU Jul-26",
-  "lines": []
+  "rns": "2026-11-19",
+  "doc": "H1 R",
+  "file": "20261119_MTO_H1-FY27-Results.md",
+  "vs": "H1 R Nov-25 · Q1 TU Jul-26 · FY R Jun-26",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Number to words",
+    "text": "H1 Nov-25: “Full year guidance reiterated for operating profit before Other items of at least £260m and free cash flow of at least £120m” → H1 Nov-26: “All FY25-FY27 strategic plan targets, set in October 2023, expected to be met”, no FY27 operating profit figure",
+    "span": "Numeric full-year guide at H1 Nov-23 and Nov-25; withheld during the OCS offer period"
+   },
+   {
+    "sev": "amber",
+    "type": "Skipped update",
+    "text": "No H1 pre-close trading update in Oct-26; October brought only regulatory-condition updates on the OCS offer",
+    "span": "H1 TU issued Oct-23, Oct-24, Oct-25 → first gap"
+   },
+   {
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "“Good momentum in sales, operating profit before Other items and cash generation” beside “Contract awards of £3.0bn total contract value (H1 FY26: £3.8bn)”; book to bill 141% → 100%, renewals 86% → 81%",
+    "span": "H1 Nov-26 vs H1 Nov-25"
+   },
+   {
+    "sev": "grey",
+    "type": "Wording vs number",
+    "text": "Free cash flow £105m (H1 FY26: £52m) is flattered: “H1 FY27 includes £43m contribution from the utilisation of a new receivables purchase facility”",
+    "span": "New facility in H1 FY27"
+   }
+  ]
  }
 }

@@ -1,6 +1,6 @@
 {
  "ticker": "MUL",
- "v": "2026-10-26.c837",
+ "v": "2026-11-19.0d8f",
  "ccy": "GBX",
  "src": "Yahoo MUL.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1056,6 +1056,18 @@
   [
    "2026-10-23",
    238.0
+  ],
+  [
+   "2026-10-30",
+   225.0
+  ],
+  [
+   "2026-11-06",
+   190.0
+  ],
+  [
+   "2026-11-13",
+   259.0
   ]
  ],
  "marks": [
@@ -1241,38 +1253,41 @@
    "s": 0,
    "q": "Mulberry Group plc (the “Group\" or \"Mulberry\"), the British lifestyle brand, is pleased to announce a strong trading performance for the 26 weeks ended 26 September 2026 (“H1” or the \"period\") in line with the Mulberry Board’s expectations.",
    "file": "20261019_MUL_Half-Year-Trading-Update.md"
+  },
+  {
+   "d": "2026-11-19",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "While remaining mindful of the challenging consumer environment, the Group enters the second half with a strong product pipeline, including the recently introduced Delilah family, new Oxblood and Vintage Oak colourways and further Mulberry by Christopher Kane activity.",
+   "file": "20261119_MUL_Half-Year-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-19",
-  "doc": "H1 TU",
-  "file": "20261019_MUL_Half-Year-Trading-Update.md",
-  "vs": "FY R Jul-26 (Q1 trading) · H1 R Nov-25 · no earlier H1 TU (Nov-21 to Nov-25 interims only)",
+  "rns": "2026-11-19",
+  "doc": "H1 R",
+  "file": "20261119_MUL_Half-Year-Results.md",
+  "vs": "H1 R Nov-25 · back to Nov-24 · prev H1 TU Oct-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Jul-26: “Group revenue for the 13 weeks to 27 June is 23% higher than the same period last year.” → Oct-26: “Continued sales growth momentum in H1 of 18.1% in Actual Currency”, implying Q2 growth of roughly 13%",
-    "span": "Q1 +23% → H1 +18%"
+    "type": "Anchor softened",
+    "text": "Board’s-expectations anchor dropped: H1 R Nov-25 “Trading in line with the Board's expectations.” and H1 TU Oct-26 “in line with the Mulberry Board’s expectations” → H1 R Nov-26 no expectations statement anywhere (only going-concern wording)",
+    "span": "Given Nov-25, Oct-26 → absent Nov-26"
    },
    {
     "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Home market slowing: Jul-26 “UK Retail & Digital sales are 17% higher than the same period last year and 16% higher on a like-for-like basis.” → Oct-26 H1 UK +10% sales, +9% LFL, implying low single-digit UK growth in Q2",
-    "span": "UK Q1 +17%/+16% LFL → H1 +10%/+9% LFL"
+    "type": "Went quiet",
+    "text": "Post-period trading: Nov-25 “Positive trading momentum continues, despite ongoing external headwinds and inflationary pressures for the sector.” → Nov-26 current trading section gives no trading since the period end, only “While remaining mindful of the challenging consumer environment, the Group enters the second half with a strong product pipeline”",
+    "span": "H1 R Nov-25 → H1 R Nov-26"
    },
    {
     "sev": "grey",
-    "type": "Went quiet",
-    "text": "No profit, loss or gross margin figure in the update: Jul-26 “Gross margin increased to 72% (2025: 67%)” → Oct-26 only “supporting gross margin performance”; H1 results due 19 November 2026",
-    "span": "First H1 trading update, so no same-type precedent"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "First pre-close H1 trading update in the record, with group, regional and LFL sales: “a strong trading performance for the 26 weeks ended 26 September 2026”, still “in line with the Mulberry Board’s expectations”",
-    "span": "Oct 2021–2025: no H1 update before November interims"
+    "type": "Restated",
+    "text": "Net debt redefined: Nov-25 net debt at 27 September 2025 “was £21.6m” including the “convertible loan note of £19.3m” → Nov-26 comparative shown as “(2025: £8.2m)”, now excluding the convertible and deducting supplier trade financing",
+    "span": "H1 R Nov-25 → H1 R Nov-26"
    }
   ]
  }

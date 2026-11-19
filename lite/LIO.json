@@ -1,8 +1,8 @@
 {
  "ticker": "LIO",
- "v": "2026-10-22.5702",
+ "v": "2026-11-19.4fcc",
  "ccy": "GBX",
- "src": "Yahoo LIO.L weekly",
+ "src": "Yahoo LIO.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,22 @@
   [
    "2026-10-22",
    280.0
+  ],
+  [
+   "2026-10-23",
+   280.0
+  ],
+  [
+   "2026-10-30",
+   280.0
+  ],
+  [
+   "2026-11-06",
+   285.0
+  ],
+  [
+   "2026-11-13",
+   288.5
   ]
  ],
  "marks": [
@@ -1318,37 +1334,47 @@
    "s": 0,
    "q": "We are encouraged by the improvement in investment performance over the past six months and the progress we are making in enhancing distribution, both internationally and in the UK.",
    "file": "20261021_LIO_Trading-Statement.md"
+  },
+  {
+   "d": "2026-11-19",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -2,
+   "q": "While the environment for active managers remains challenging, we are increasingly seeing the benefits of the work undertaken over the past few years through improving investment performance, a broader range of capabilities and growing opportunities with institutional investors.",
+   "file": "20261119_LIO_Half-year-Financial-Report.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-21",
-  "doc": "H1 TU",
-  "file": "20261021_LIO_Trading-Statement.md",
-  "vs": "Q2 TU Oct-25 · Q1 TU Jul-26 · back to Jul-25/Jan-26/Apr-26",
+  "rns": "2026-11-19",
+  "doc": "H1 R",
+  "file": "20261119_LIO_Half-year-Financial-Report.md",
+  "vs": "H1 R Nov-25 · TS Oct-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Jul-26: “Net outflows of £357 million in the Period” → now “Net outflows of £459 million in the Period”, while the CEO says outflows “were significantly lower than in the first half of the last financial year”",
-    "span": "Quarterly outflows up c.29% q/q; the upbeat line uses the half-year (c.£0.8bn vs c.£2.3bn) comparison"
+    "type": "Number to words",
+    "text": "Institutional mandates: H1 Nov-25 “Awarded two institutional mandates in aggregate of around £250 million” → H1 Nov-26 “four new mandates expected to fund in the next quarter”, no value given",
+    "span": "H1 Nov-25 vs H1 Nov-26"
    },
    {
     "sev": "amber",
-    "type": "Split withheld",
-    "text": "Apr-26: “Eight funds in the first or second quartile over 1 and 3 years” plus a full since-inception / 5y / 3y / 1y ranking table → now only “Twenty-eight funds and investment trusts in the first or second quartile over 3 years”",
-    "span": "Ranking table given Jul-25, Oct-25, Jan-26, Apr-26 → 3-year count only since Jul-26"
+    "type": "Wording vs number",
+    "text": "“we believe Liontrust is increasingly well positioned for our next phase of growth” beside “Adjusted profit before tax2 is £11.9 million (2025: £15.7 million), with an Adjusted Operating Margin2 of 20.1% (2025: 23.8%).”",
+    "span": "H1 Nov-26 vs H1 Nov-25"
    },
    {
     "sev": "grey",
-    "type": "Went quiet",
-    "text": "Jan-26: “Two mandate wins driving Institutional net inflows of £330 million in the Period.” and Apr-26 mandates “of over £500 million in aggregate” → now no mandate win named; Institutional net inflows (£209m) appear only in the flows table",
-    "span": "Headline bullet Jan-26, Apr-26; “recent mandate wins” Jul-26"
+    "type": "Restated",
+    "text": "Revenue Margin redefined: H1 Nov-25 “Gross Profit excluding performance fees, less cost of sales divided by the average AuMA” → H1 Nov-26 “Gross Profit excluding performance fees divided by the average AuMA”; margin 0.56% → 0.50%",
+    "span": "Definition changed between H1 Nov-25 and H1 Nov-26"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "New figure: Hawksmoor acquisition “will add around £1.9 billion in AuMA”, completion due by end December 2026"
+    "text": "Half-year net flows moved into the highlights: “Net outflows of £0.8 billion in the six months ended 30 September 2026 (2025: £2.3 billion).”",
+    "span": "H1 Nov-25 gave the half-year flow figure only in the body"
    }
   ]
  }

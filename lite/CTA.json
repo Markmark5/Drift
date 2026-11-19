@@ -1,6 +1,6 @@
 {
  "ticker": "CTA",
- "v": "2026-11-17.e979",
+ "v": "2026-11-19.a7ee",
  "ccy": "GBX",
  "src": "Yahoo CTA.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1259,37 +1259,41 @@
    "s": -3,
    "q": "As a result of the negotiations we now consider FY26 Adj PBT to be in a range between $4.9 million and $9.4 million, a range the Board will seek to narrow based on the progress and conclusion of these discussions.",
    "file": "20260916_CTA_Half-year-Report.md"
+  },
+  {
+   "d": "2026-11-19",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -3,
+   "q": "FY26 adjusted profit before tax (“Adjusted PBT”*) is expected to be approximately $0.3 million, against the $4.9 million to $9.4 million range given on 16 September 2026.",
+   "file": "20261119_CTA_Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-16",
-  "doc": "H1 R",
-  "file": "20260916_CTA_Half-year-Report.md",
-  "vs": "H1 R Sep-25 · H1 TU Aug-26 · FY R May-26",
+  "rns": "2026-11-19",
+  "doc": "YE-TU",
+  "file": "20261119_CTA_Trading-Update.md",
+  "vs": "H1 R Sep-26 · H1 TU Aug-26 · YE-TU Feb-26 (no November update a year earlier)",
   "lines": [
    {
     "sev": "red",
     "type": "Anchor softened",
-    "text": "Sep-25 interim: “on track to hit FY 25 market expectations for profitability” → Sep-26 interim: no market-expectations statement; FY26 adjusted PBT “in a range of $4.9 million to $9.4 million” against the footnoted consensus of $10.2 million",
-    "span": "Market anchor at H1 R Sep-24, Sep-25 → replaced by a $4.5m-wide range"
+    "text": "Sep-26: “market expectations for the year ended 31 December 2026 were for revenue of $123.5 million and adjusted profit before tax of $10.2 million” → Nov-26 gives only the revenue consensus (“slightly behind market expectations of $126.8 million”); no PBT consensus beside the new “approximately $0.3 million”",
+    "span": "PBT consensus footnoted Sep-26 → dropped"
    },
    {
     "sev": "amber",
-    "type": "Restated",
-    "text": "H1 26 revenue: Aug-26 “up 15% to $62.1m” → Sep-26 “we have reduced our H1 26 revenue previously announced by $0.4 million” to $61.7m; H1 25 comparatives also restated (adj. PBT $4.2m reported → $3.8m restated, adj. EBITDA $8.4m → $7.0m)",
-    "span": "Two restatements in one RNS"
+    "type": "New caution",
+    "text": "First flag of control failings: “The implementation of upgraded controls and processes has highlighted past control weaknesses”, which “identified overstated inventory of $1.0 million in our Mexico facility”",
+    "span": "Not mentioned in any earlier RNS in the record; CFO search still open"
    },
    {
     "sev": "amber",
-    "type": "Target dropped",
-    "text": "Net debt: Sep-25 “net debt is expected to reduce significantly by the end of 2026” → Sep-26 “Net debt is expected to increase at FY26 year end in comparison to FY25”; “The Board anticipates that net debt at year end will be higher than current market forecasts.”",
-    "span": "H1 net debt $12.2m vs $7.7m at Dec-25; key customer in Chapter 11, $4.5m invoice financing withdrawn"
-   },
-   {
-    "sev": "grey",
-    "type": "Wording vs number",
-    "text": "CEO opens with “Revenue grew strongly in H1 26 driven by market demand” while adj. PBT fell 57% to $1.6m and adj. EBITDA margin dropped to 7% (H1 25: 13% restated)"
+    "type": "Went quiet",
+    "text": "Contract wins: Feb-26 “a further 7 contracts in H225 with annualized revenue of approx. $10 million”, Sep-26 “six new contract wins in 2026 with annualised revenue of approx. $6.0 million” → Nov-26 no contract-win figure",
+    "span": "Given Feb-26, Sep-26 → first gap"
    }
   ]
  }

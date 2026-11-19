@@ -1,8 +1,8 @@
 {
  "ticker": "TRCS",
- "v": "2026-10-21.04d8",
+ "v": "2026-11-19.9822",
  "ccy": "GBX",
- "src": "Yahoo TRCS.L weekly",
+ "src": "Yahoo TRCS.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,22 @@
   [
    "2026-10-21",
    315.5
+  ],
+  [
+   "2026-10-23",
+   315.0
+  ],
+  [
+   "2026-10-30",
+   325.0
+  ],
+  [
+   "2026-11-06",
+   305.0
+  ],
+  [
+   "2026-11-13",
+   340.0
   ]
  ],
  "marks": [
@@ -1264,38 +1280,41 @@
    "s": 0,
    "q": "Group revenue is expected to be c.£85.5m (2025: £81.9m), with adjusted EBITDA* expected to be c.£13.5m (2025: £12.6m). In both cases, this includes the full-year contribution from the Events business that was sold on 31 July 2026, as previously announced.",
    "file": "20260824_TRCS_Trading-Update-and-Completion-of-Acquisition.md"
+  },
+  {
+   "d": "2026-11-19",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 1,
+   "q": "Supported by recurring revenues from a large installed base and an order book for delivery during the year, the Board is confident of delivering FY27 adjusted EBITDA of at least £15.5m, in line with market expectations1.",
+   "file": "20261119_TRCS_Final-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-24",
-  "doc": "YE-TU",
-  "file": "20260824_TRCS_Trading-Update-and-Completion-of-Acquisition.md",
-  "vs": "YE-TU Aug-25 · back to Aug-23 · Aug-03-26 / Jul-26 / Apr-26",
+  "rns": "2026-11-19",
+  "doc": "FY R",
+  "file": "20261119_TRCS_Final-Results.md",
+  "vs": "FY R Nov-25 · YE-TU Aug-26",
   "lines": [
    {
-    "sev": "red",
-    "type": "Next-year view dropped",
-    "text": "Last year: headline “FY26 expectations unchanged” with “modest growth in FY26 consistent with current market expectations” (consensus £13m EBITDA) → this year no FY27 view or consensus, only “well placed to benefit”",
-    "span": "Aug-25 YE-TU carried a headline next-year anchor; Aug-26 YE-TU has no outlook section"
+    "sev": "amber",
+    "type": "Split withheld",
+    "text": "Recurring licence revenue: Nov-25 highlight “Rail Technology & Services recurring licence revenue2 up 6% to £23.2m (FY24: £21.8m)” → Nov-26 highlight merges it into “recurring software licence3 and consumer-driven transactional4 revenues increased by 10%”; body shows licence revenue “£23.5m (FY25: £23.2m)”, +1%",
+    "span": "Separate headline figure Nov-25 → combined Nov-26"
    },
    {
     "sev": "amber",
-    "type": "Went quiet",
-    "text": "UK rail headwinds: Aug-25 “UK Rail market headwinds expected to persist throughout FY26” (CP7/RCM, procurement timelines) → no mention of CP7, RCM or headwinds now",
-    "span": "Named in Aug-25, Nov-25 and Apr-26 → absent Aug-26"
-   },
-   {
-    "sev": "grey",
-    "type": "Went quiet",
-    "text": "Cash: Aug-25 “Year-end cash stood at £23.4m (2024: £19.8m), reflecting healthy cash generation” → now “Year-end cash stood at £19.4m (2025: £23.4m)” with no cash-generation comment",
-    "span": "Aug-25 → Aug-26"
+    "type": "New caution",
+    "text": "Customer churn named for the first time: “Recurring software licence revenue increased by £0.3m, principally driven by price increases net of some lower seat-based renewals and some customer churn in RailHub”",
+    "span": "No churn mention in any earlier RNS"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Leverage: Jul-26 “On completion, the Group's net debt to adjusted EBITDA ratio is expected to be approximately 2.0x” → now “pro forma net debt to EBITDA 2 on completion is expected to be c.1.5x”",
-    "span": "After Events sale proceeds (3 Aug 2026)"
+    "text": "Next-year view back with a number: Aug-26 YE-TU had no FY27 view; Nov-25 only “in line with market expectations for the full year4” → Nov-26 “the Board is confident of delivering FY27 adjusted EBITDA of at least £15.5m”, consensus mean £15.4m",
+    "span": "First numeric floor for the coming year"
    }
   ]
  }

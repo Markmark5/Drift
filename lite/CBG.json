@@ -1,6 +1,6 @@
 {
  "ticker": "CBG",
- "v": "2026-11-04.255b",
+ "v": "2026-11-19.773f",
  "ccy": "GBX",
  "src": "Yahoo CBG.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1056,6 +1056,14 @@
   [
    "2026-10-30",
    396.4
+  ],
+  [
+   "2026-11-06",
+   400.4
+  ],
+  [
+   "2026-11-13",
+   399.4
   ]
  ],
  "marks": [
@@ -1284,38 +1292,47 @@
    "s": 1,
    "q": "Costs: We now expect adjusted operating expenses to be at the lower end of the £410-430 million range in the 2028 financial year",
    "file": "20260929_CBG_Preliminary-Results.md"
+  },
+  {
+   "d": "2026-11-19",
+   "doc": "Q1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -1,
+   "q": "Given the mix of business written in the quarter and the competitive deposit market, we anticipate a further modest decline in net interest margin for the remainder of FY 2027.",
+   "file": "20261119_CBG_Trading-Statement.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-29",
-  "doc": "FY R",
-  "file": "20260929_CBG_Preliminary-Results.md",
-  "vs": "FY R Sep-25 · Q3 TU May-26",
+  "rns": "2026-11-19",
+  "doc": "Q1 TU",
+  "file": "20261119_CBG_Trading-Statement.md",
+  "vs": "Q1 TU Nov-25 · FY R Sep-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Outlook opens “We enter the new financial year with confidence” while adjusted operating profit fell to “£120.3 million (2025: £144.3 million)” and RoTE to “5.5% (2025: 7.1%)”",
-    "span": "FY R Sep-25 → FY R Sep-26"
+    "type": "New caution",
+    "text": "NIM guide: Sep-26 “we expect the net interest margin to be slightly below FY 2026 reflecting a further c.0.1% impact from mix” → Nov-26 YTD 6.8% and “we anticipate a further modest decline in net interest margin for the remainder of FY 2027”, citing “the competitive deposit market” for the first time",
+    "span": "FY R Sep-26 → Q1 TU Nov-26"
    },
    {
     "sev": "amber",
-    "type": "New caution",
-    "text": "Loan book view was unconditional at Sep-25 (“mid to high single digit growth potential through the cycle”) → FY27 guide now “subject to market conditions”",
-    "span": "FY R Sep-25 → FY R Sep-26"
+    "type": "Wording vs number",
+    "text": "“We have maintained a robust net interest margin and resilient credit performance” beside NIM of 6.8% (FY26: 6.9%) and “The annualised bad debt ratio in the quarter was 1.1% (FY 2026: 1.0%)”",
+    "span": "Q1 TU Nov-26"
    },
    {
     "sev": "grey",
-    "type": "Anchor softened",
-    "text": "CET1 guide: Sep-25 “maintain our CET1 capital ratio above our medium-term target range of 12% to 13%” → now “operate within the medium-term target range of 12-13%”",
-    "span": "FY R Sep-25 → FY R Sep-26"
+    "type": "Went quiet",
+    "text": "Funding and liquidity: Nov-24 “Our funding base remained stable at £13.0 billion”, Nov-25 “Our funding base remained broadly stable at £12.6 billion” plus a 12-month average LCR → Nov-26 only “We maintained a strong funding, liquidity and capital position during the quarter”",
+    "span": "Given Q1 Nov-24, Nov-25 → absent Q3 May-26 and Q1 Nov-26"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Loan book growth quantified for FY27: “underlying loan book growth of 5-10%”; FY28 costs tightened to “at the lower end of the £410-430 million range”",
-    "span": "FY R Sep-25 words → FY R Sep-26 numbers"
+    "text": "FY27 costs: Sep-26 “We expect adjusted operating expenses of c.£430 million in FY 2027” → Nov-26 “now expect to deliver operating expenses for the 2027 financial year of less than £430 million”",
+    "span": "FY R Sep-26 → Q1 TU Nov-26"
    }
   ]
  }

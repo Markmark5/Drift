@@ -1,6 +1,6 @@
 {
  "ticker": "BTG",
- "v": "2026-10-27.3052",
+ "v": "2026-11-19.fc08",
  "ccy": "GBX",
  "src": "Yahoo BTG.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1056,6 +1056,18 @@
   [
    "2026-10-23",
    111.5
+  ],
+  [
+   "2026-10-30",
+   113.0
+  ],
+  [
+   "2026-11-06",
+   112.0
+  ],
+  [
+   "2026-11-13",
+   113.0
   ]
  ],
  "marks": [
@@ -1328,20 +1340,35 @@
    "s": 0,
    "q": "We have made a good start to the new financial year, with results for the first quarter to 31 July 2026 in line with our expectations and revenue and adjusted profits showing encouraging growth over the comparative period.",
    "file": "20260916_BTG_AGM-Statement.md"
+  },
+  {
+   "d": "2026-11-19",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "We are confident of delivering market expectations for the full year as we continue to build on our track record of profitable growth.",
+   "file": "20261119_BTG_Half-year-trading-update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-27",
-  "doc": "OPS",
-  "file": "20261027_BTG_Latest-Red-Flag-Alert-for-Q3-2026.md",
-  "vs": "Red Flag Alert Q3-25 (Oct-25) · prev Red Flag Q2-26 (Aug-26)",
+  "rns": "2026-11-19",
+  "doc": "H1 TU",
+  "file": "20261119_BTG_Half-year-trading-update.md",
+  "vs": "H1 TU Nov-25 · prev AGM Sep-26 / Acquisition Sep-26",
   "lines": [
    {
-    "sev": "grey",
-    "type": "Demoted",
-    "text": "‘Critical’ distress led the release: Oct-25 “The number of businesses in 'critical' financial distress surged 78.0% year-on-year”, Aug-26 “the number of UK businesses in 'critical' financial distress increased by 9.0% year-on-year” → Oct-26 headline switched to ‘significant’ distress; critical moved to the fourth bullet: “‘Critical’ financial distress in Q3 2026 fell 20.7% year-on-year to 44,033 businesses”",
-    "span": "Research release, no group trading content; Oct-25, Aug-26 → Oct-26"
+    "sev": "amber",
+    "type": "New caution",
+    "text": "Cash conversion: Nov-25 net debt of £5.7m explained only by “acquisition earn out payments of £3.8m, share buy-backs of £1.2m and dividends of £2.2m” → Nov-26 net debt £10.2m and a first working-capital caveat: “Cash conversion in the period also reflected increased working capital requirements from organic growth and longer lock-up periods on higher value cases.”",
+    "span": "H1 TU Nov-25 → H1 TU Nov-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Organic growth now quantified: Nov-25 “Revenue increased by c.7% and adjusted profit before tax increased by c.5%” → Nov-26 “Revenue increased by c.11% including c.7% organic growth”, with the consensus range narrowed to “£26.5m-£26.9m”",
+    "span": "H1 TU Nov-25 → H1 TU Nov-26"
    }
   ]
  }

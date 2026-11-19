@@ -1,6 +1,6 @@
 {
  "ticker": "MRK",
- "v": "2026-11-02.40da",
+ "v": "2026-11-19.96b8",
  "ccy": "GBX",
  "src": "Yahoo MRK.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1052,6 +1052,14 @@
   [
    "2026-10-30",
    49.0
+  ],
+  [
+   "2026-11-06",
+   48.5
+  ],
+  [
+   "2026-11-13",
+   48.5
   ]
  ],
  "marks": [
@@ -1279,38 +1287,35 @@
    "s": 1,
    "q": "As a result, the Board now expects full-year Adjusted EBITDA to be ahead of market expectations, at no less than £3.75 million for FY27.",
    "file": "20260930_MRK_Trading-update-&-Board-Changes.md"
+  },
+  {
+   "d": "2026-11-19",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group has continued its revenue and profitability growth in October, and management remains confident in the revised FY27 market expectations.",
+   "file": "20261119_MRK_Results-for-the-six-months-ended-30-September-2026.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-30",
-  "doc": "H1 TU",
-  "file": "20260930_MRK_Trading-update-&-Board-Changes.md",
-  "vs": "H1 TU Sep-25 · FY R Jun-26 · back to Oct-22/Oct-23 H1 TUs",
+  "rns": "2026-11-19",
+  "doc": "H1 R",
+  "file": "20261119_MRK_Results-for-the-six-months-ended-30-September-2026.md",
+  "vs": "H1 R Nov-25 · back to Nov-24 · prev H1 TU Sep-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Anchor softened",
-    "text": "Revenue: Jun-26 “We are targeting sustainable growth in both revenue and profitability in FY27” and “Current trading is in line with market expectations.” → now FY27 revenue “broadly in line with market expectations”, while EBITDA is “ahead”",
-    "span": "Jun-26 → Sep-26"
+    "type": "Demoted",
+    "text": "Cash dropped from the highlights: Nov-24 “Robust, debt-free balance sheet with closing net cash position of £6.7m”, Nov-25 “Debt-free balance sheet with closing net cash of £1.5m” → Nov-26 no cash highlight; financial review: “The Group closed the period in a net debt position of £0.8m versus net cash of £1.5m at H1-26 and £4.4m at FY26.”",
+    "span": "Highlight at Nov-24, Nov-25 → gone Nov-26"
    },
    {
-    "sev": "grey",
-    "type": "Went quiet",
-    "text": "First-half revenue figure: Oct-23 “Strong first half trading period with revenue growth of 24.8% to £53.9m (HY23 £43.1m)” → no H1 revenue or growth number in Sep-26 (also absent Sep-25)",
-    "span": "Given Oct-22, Oct-23 → second gap in a row"
-   },
-   {
-    "sev": "grey",
-    "type": "Went quiet",
-    "text": "Net cash: Oct-23 “closing the period with a further improved net cash position of £10.9m (HY23 £7.7m)”, Jun-26 “Group net cash of £4.4m” → no cash figure in Sep-26",
-    "span": "Given Oct-22, Oct-23, Jun-26"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "FY27 profit number: Jun-26 gave no FY27 figure → now “ahead of market expectations, at no less than £3.75 million for FY27”",
-    "span": "First numeric FY27 guide"
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "Revenue “down 1.9% YoY, a solid out-turn with progress continuing at pace” while “the combined MDA and CE markets grew by 0.4% versus prior year” and “Our core MDA market share reduced by 20bps”",
+    "span": "H1 R Nov-26"
    }
   ]
  }

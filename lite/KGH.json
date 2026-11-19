@@ -1,8 +1,8 @@
 {
  "ticker": "KGH",
- "v": "2026-10-21.0878",
+ "v": "2026-11-19.2601",
  "ccy": "GBX",
- "src": "Yahoo KGH.L weekly",
+ "src": "Yahoo KGH.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,22 @@
   [
    "2026-10-21",
    164.0
+  ],
+  [
+   "2026-10-23",
+   162.0
+  ],
+  [
+   "2026-10-30",
+   165.0
+  ],
+  [
+   "2026-11-06",
+   162.0
+  ],
+  [
+   "2026-11-13",
+   162.5
   ]
  ],
  "marks": [
@@ -1271,38 +1287,41 @@
    "s": -1,
    "q": "Having made a positive start to the current financial year, we look forward to delivering continued organic growth, complemented by our value enhancing acquisition strategy in the current year and beyond.",
    "file": "20260706_KGH_Full-Year-Results.md"
+  },
+  {
+   "d": "2026-11-19",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Organic revenue growth is c.1% and organic gross profit growth is c.7%, reflecting our continued focus on margin enhancement. Together these factors underpin the Group’s confidence in delivering full year profits in line with expectations.",
+   "file": "20261119_KGH_Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-06",
-  "doc": "FY R",
-  "file": "20260706_KGH_Full-Year-Results.md",
-  "vs": "FY R Sep-25 · back to Jul-23 · YE-TU May-26",
+  "rns": "2026-11-19",
+  "doc": "H1 TU",
+  "file": "20261119_KGH_Trading-Update.md",
+  "vs": "H1 TU Nov-25 · back to Nov-24 · FY R Jul-26 · YE-TU May-26",
   "lines": [
    {
-    "sev": "red",
-    "type": "Anchor softened",
-    "text": "Last year: “Trading at the start of the current year is encouraging and in line with expectations” → this year “Positive start to the year; look forward to delivering continued organic growth, complemented by value-enhancing acquisitions”, no expectations anchor anywhere in the RNS",
-    "span": "Expectations anchor in FY R outlook Jul-24 and Sep-25 → first gap"
-   },
-   {
     "sev": "amber",
-    "type": "Wording vs number",
-    "text": "CEO says “We also maintained strong underlying PBT margins” but “The underlying profit before tax margin in the year decreased to 16.0% compared to 17.3% in FY25”",
-    "span": "Sep-25 highlighted “a 40 bps increase in margin to 17.3%”"
+    "type": "Anchor softened",
+    "text": "Last year: “underpinning our confidence in delivering a full year performance in line with market expectations” → this year “underpin the Group’s confidence in delivering full year profits in line with expectations”, the word market dropped",
+    "span": "Market anchor in H1 TU Nov-24 and Nov-25; FY R Jul-26 had no anchor"
    },
    {
     "sev": "amber",
     "type": "Went quiet",
-    "text": "Gross margin: “Gross margin up 170 bps to 50.5% (FY24: 48.8%)” in Sep-25 highlights → no gross margin figure in the FY26 results",
-    "span": "Highlighted Jul-23, Jul-24, Sep-25 → first gap in 3 years"
+    "text": "Senior hires: Nov-25 “46 senior fee earners joining in the first half or due to start shortly (H1 FY25: 43)” → Nov-26 no count, only “our increasing ability to recruit senior fee earners”",
+    "span": "Count given H1 TU Nov-24 (23), Nov-25 (46) → first gap"
    },
    {
-    "sev": "amber",
-    "type": "Demoted",
-    "text": "Senior hires: Sep-25 highlight “Recruited 51 senior fee earners, 28% more than in FY24 (40)” → highlight now “Selective hiring of experienced professionals with strong client followings and networks”; the number, lower, sits in the CEO review: “we recruited 39 new senior recruits”",
-    "span": "Count highlighted Jul-24 (40), Sep-25 (51)"
+    "sev": "grey",
+    "type": "Wording vs number",
+    "text": "Headline “Strong H1 profit performance with enhanced margins” beside “Organic revenue growth is c.1%”; Nov-25 had “a return to organic growth, of c.3%” and May-26 “Double digit organic growth in the second half”",
+    "span": "H1 FY26 c.3% → H2 FY26 double digit → H1 FY27 c.1%"
    }
   ]
  }

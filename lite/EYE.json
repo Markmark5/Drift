@@ -1,6 +1,6 @@
 {
  "ticker": "EYE",
- "v": "2026-11-17.954b",
+ "v": "2026-11-19.40ee",
  "ccy": "GBX",
  "src": "Yahoo EYE.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1319,38 +1319,41 @@
    "s": 0,
    "q": "The Board remains confident in a return to double digit revenue and adjusted EBITDA growth in FY27, supporting further progress towards the Group’s medium-term ambitions of £100m revenue and an adjusted EBITDA margin of +30%",
    "file": "20260915_EYE_Final-Results-for-the-year-ended-30-June-2026.md"
+  },
+  {
+   "d": "2026-11-19",
+   "doc": "AGM",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group’s positive start to FY27 underpins the Board’s confidence in delivering FY27 results in line with market expectations, representing a return to double-digit growth in revenue and adjusted EBITDA.",
+   "file": "20261119_EYE_AGM-trading-statement.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-15",
-  "doc": "FY R",
-  "file": "20260915_EYE_Final-Results-for-the-year-ended-30-June-2026.md",
-  "vs": "FY R Sep-25 · FY26 TU Jul-26 · back to Sep-21",
+  "rns": "2026-11-19",
+  "doc": "AGM",
+  "file": "20261119_EYE_AGM-trading-statement.md",
+  "vs": "AGM Nov-25 · FY R Sep-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Pushed out",
-    "text": "OEM revenue timing: Sep-25 “On track for material revenue generation from FY27” and Jul-26 “be revenue generating in FY27” → now “be revenue generating in calendar year 2027”, with the word material dropped",
-    "span": "FY27 timing given Sep-25, Jan-26, Mar-26, Jul-26 → first slip to calendar 2027"
-   },
-   {
-    "sev": "amber",
-    "type": "New caution",
-    "text": "FY27 margin: new flag that investment in US sales and AI “will impact margin in H1 FY27”; no FY27 margin figure given beside it",
-    "span": "Not in Sep-25 FY R or Jul-26 TU → first time"
+    "type": "Went quiet",
+    "text": "Margin: Nov-25 AGM “The Board is confident in maintaining a double-digit adjusted EBITDA margin for FY26”; Sep-26 “which will impact margin in H1 FY27” → Nov-26 no FY27 margin comment, only the medium-term “adjusted EBITDA margin of over 30%”",
+    "span": "Margin view in Nov-25 AGM and Sep-26 FY R → absent Nov-26"
    },
    {
     "sev": "amber",
     "type": "Went quiet",
-    "text": "Current trading: last year “Trading in H1 FY26 has started well” → this year no FY27 trading-to-date statement anywhere in the RNS",
-    "span": "Current-year trading given in FY R Sep-21, Sep-22, Sep-23, Sep-25 → gap Sep-26"
+    "text": "OEM partnership: Nov-25 “anticipating first customer contracts within the next few months”; Sep-26 “estimated to deliver approximately £2m of ARR, and be revenue generating in calendar year 2027” → Nov-26 only “growing OEM and partner channel”, no OEM customers, ARR or timing",
+    "span": "Detailed Nov-25, Sep-26 → one phrase Nov-26"
    },
    {
-    "sev": "grey",
-    "type": "Restated",
-    "text": "FY25 comparatives ex-NRS: Jul-26 TU gave NRR 111% and SaaS revenue £31.3m (+26%) → FY R gives “(FY25: 109%)” and “(FY25 excluding NRS: £30.1m)”, lifting SaaS growth to +31%",
-    "span": "Same FY25 period, two months apart"
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Market anchor back: Sep-26 “The Board remains confident in a return to double digit revenue and adjusted EBITDA growth in FY27” → Nov-26 “delivering FY27 results in line with market expectations”",
+    "span": "No FY27 market anchor Sep-26 or Nov-25 AGM"
    }
   ]
  }

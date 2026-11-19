@@ -1,6 +1,6 @@
 {
  "ticker": "BAB",
- "v": "2026-11-16.0508",
+ "v": "2026-11-19.c1dd",
  "ccy": "GBX",
  "src": "Yahoo BAB.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1257,32 +1257,47 @@
    "s": 0,
    "q": "The Group has maintained good momentum into FY27, with trading in line and full year expectations unchanged.",
    "file": "20260916_BAB_AGM-trading-update.md"
+  },
+  {
+   "d": "2026-11-19",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "For FY27, our expectations for another year of good progress are unchanged, supported by strong revenue visibility, with around 90% revenue under contract at 1 October 2026",
+   "file": "20261119_BAB_Babcock-HY27-half-year-results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-16",
-  "doc": "AGM",
-  "file": "20260916_BAB_AGM-trading-update.md",
-  "vs": "AGM Sep-25 · FY R Jun-26 · back to AGM Sep-24 · YE-TU May-26",
+  "rns": "2026-11-19",
+  "doc": "H1 R",
+  "file": "20261119_BAB_Babcock-HY27-half-year-results.md",
+  "vs": "H1 R Nov-25 · AGM Sep-26 · FY R Jun-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Target dropped",
-    "text": "Indonesia AH140 licences: Jan-26 “Should the Indonesian Arrowhead licenses (see below) be delivered in year, this should provide upside to current expectations”, May-26 “to be delivered in early FY27” → Sep-26: Indonesia and the licences not mentioned",
-    "span": "Jan-26, May-26, Jun-26 → Sep-26"
+    "type": "Pushed out",
+    "text": "Gateway successor contract: Jun-26 MOD Letter of Intent “to finalise the multi-year replacement contract, Gateway, by October 2026” → Nov-26 “Expect to sign FMSP nuclear submarine and naval base support successor contract, ‘Gateway’, in November”",
+    "span": "Bridging agreement extended 30 Sep-26; Nuclear backlog down to £1.2bn pending signature"
    },
    {
     "sev": "amber",
-    "type": "Went quiet",
-    "text": "Five-month growth and margin read: Sep-24 “the Group has delivered good organic revenue growth”, Sep-25 “delivering organic revenue growth and underlying operating margin progress in line with the Board's expectations” → Sep-26 only “trading in line and full year expectations unchanged”",
-    "span": "AGM Sep-24, Sep-25 → first gap at Sep-26"
+    "type": "Number to words",
+    "text": "Current-year margin guide: Nov-25 “We expect to achieve an underlying operating margin of 8%” → Nov-26 “our expectations for another year of good progress are unchanged”, no FY27 margin figure",
+    "span": "FY26 8% figure carried Nov-25 and Jan-26; FY27 unquantified since Jun-26"
    },
    {
     "sev": "grey",
-    "type": "Split withheld",
-    "text": "Sector read-across: Sep-25 covered Nuclear, Aviation, Marine and “lower revenue in Land, due to lower activity in the Rail business” → Sep-26 only “Continued strong performance in Nuclear and Aviation”, Marine and Land not covered",
-    "span": "Sep-25 → Sep-26"
+    "type": "Wording vs number",
+    "text": "Headline “Strong foundations and growth momentum” beside “Contract backlog: £8.9 billion, reflecting long-term contract execution, significant H2 order intake expected” (HY26: £9.9bn)",
+    "span": "Backlog £9.9bn Nov-25 → £8.9bn Nov-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Indonesia licences back: “Post period-end, we completed the sale of two Arrowhead frigate licences that Indonesia had ordered under the Maritime Partnership Programme”",
+    "span": "Flagged Jan-26 and May-26, absent from AGM Sep-26 → delivered"
    }
   ]
  }

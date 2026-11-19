@@ -1,6 +1,6 @@
 {
  "ticker": "INVP",
- "v": "2026-11-16.e7dd",
+ "v": "2026-11-19.b781",
  "ccy": "GBX",
  "src": "Yahoo INVP.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1247,26 +1247,35 @@
    "s": 0,
    "q": "The Group is expected to deliver results in line with guidance provided in May 2026.",
    "file": "20260918_INVP_Pre-Close-Trading-Statement.md"
+  },
+  {
+   "d": "2026-11-19",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Group ROE is expected to be between 13.0% and 14.0% within the 13.0% to 17.0% target range, and ROTE to be between 14.8% and 15.8% within the target range of 14.0% to 18.0%.",
+   "file": "20261119_INVP_FY27-Interim-Results-30SEP26.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-18",
-  "doc": "H1 TU",
-  "file": "20260918_INVP_Pre-Close-Trading-Statement.md",
-  "vs": "H1 TU Sep-25 · FY R May-26 · back to Sep-24",
+  "rns": "2026-11-19",
+  "doc": "H1 R",
+  "file": "20261119_INVP_FY27-Interim-Results-30SEP26.md",
+  "vs": "H1 R Nov-25 · H1 TU Sep-26 · FY R May-26 · back to Nov-24",
   "lines": [
    {
-    "sev": "amber",
+    "sev": "red",
     "type": "Wording vs number",
-    "text": "UK ROTE: May-26 guide “UK & Other is expected to report ROTE between 12.5% and 13.5%, near the lower end of the target range of 13.0% to 17.0%.” → now “between 12.3% and 12.7%, near the lower end of the 12.5% to 13.5% guided range” — the whole range sits at or below the guide's floor",
-    "span": "Sep-25 UK ROTE “expected to be c.13%, within the medium-term target range of 13% to 17%”"
+    "text": "UK & Other: May-26 “UK & Other is expected to report ROTE between 12.5% and 13.5%, near the lower end of the target range of 13.0% to 17.0%” → Nov-26 “UK & Other is expected to report ROTE between 12.0% and 13.0%, near the lower end of the target range of 13.0% to 17.0%” — same words, range cut 50bps",
+    "span": "Group ROE range held at 13.0%–14.0%"
    },
    {
     "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Headline “Stable year to date financial performance” beside UK adjusted operating profit “between 2% and 6% behind the prior period” (Sep-25: “c.1% behind to c.6% ahead of the prior period”); UK Specialist Bank “between 3% and 7% behind the prior period”",
-    "span": "Group in line only because Southern Africa is up to 6% ahead in Rands"
+    "type": "Split withheld",
+    "text": "Credit loss guide by segment: Nov-25 “Southern Africa is expected to be around the lower end of the TTC range of 15bps to 35bps” and “The UK & Other credit loss ratio is expected to be around the upper end of the 50bps to 60bps previously guided range” → Nov-26 Group range only",
+    "span": "Segment guide in May-24, Nov-24, May-25, Nov-25 → dropped May-26 and Nov-26"
    }
   ]
  }
