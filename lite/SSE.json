@@ -1,6 +1,6 @@
 {
  "ticker": "SSE",
- "v": "2026-10-30.0bb9",
+ "v": "2026-11-20.1d36",
  "ccy": "GBX",
  "src": "Yahoo SSE.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1052,6 +1052,18 @@
   [
    "2026-10-23",
    2564.0
+  ],
+  [
+   "2026-10-30",
+   2647.0
+  ],
+  [
+   "2026-11-06",
+   2652.0
+  ],
+  [
+   "2026-11-13",
+   2689.0
   ]
  ],
  "marks": [
@@ -1308,20 +1320,41 @@
    "s": 0,
    "q": "For the full year, financial expectations for each Business Unit are unchanged and as usual, remain subject to weather, market conditions and plant availability, with the key winter months still to come.",
    "file": "20261001_SSE_Trading-Update.md"
+  },
+  {
+   "d": "2026-11-18",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "We therefore remain confident in delivering strong 2026/27 adjusted EPS of 168–193 pence, while reaffirming our 2029/30 adjusted EPS target of 225–250 pence.",
+   "file": "20261118_SSE_Interim-Report.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-01",
-  "doc": "H1 TU",
-  "file": "20261001_SSE_Trading-Update.md",
-  "vs": "H1 TU Oct-25 · Q1 TU Jul-26",
+  "rns": "2026-11-18",
+  "doc": "H1 R",
+  "file": "20261118_SSE_Interim-Report.md",
+  "vs": "H1 R Nov-25 · back to Nov-24 · FY R May-26 · H1 TU Oct-26",
   "lines": [
    {
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "Current-year net debt / EBITDA: Nov-25 interim “the net debt to EBITDA ratio expected to be within a 3.5 - 4.0x range” → now “with net debt expected to remain comfortably within the parameters for SSE’s strong investment-grade credit ratings”, no ratio (only the plan-wide below-4.5x cap)",
+    "span": "Ratio given at Nov-24 and Nov-25 interims → words since May-26"
+   },
+   {
     "sev": "grey",
-    "type": "Went quiet",
-    "text": "Networks investment £: Oct-25 “increase by ~60% to ~£1.1bn in the first half” and Jul-26 “A total of £0.9bn was invested” → Oct-26 only “an increase of around 70% in adjusted investment”, no £ figure for networks",
-    "span": "£ figure given Jul-25, Oct-25, Feb-26, Jul-26"
+    "type": "New caution",
+    "text": "Energy Customer Solutions FY27: Nov-25 “anticipated that the adjusted operating profit for these businesses will be at similar levels to 2025/26” → May-26 lower on wind income → now adds “lower customer numbers in GB” to the guide",
+    "span": "Nov-25 → May-26 → Nov-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Transmission build: Nov-25 “Four of these eleven major projects now consented and under construction” → now “Construction commenced in full or in part on all 11 major Transmission projects”",
+    "span": "H1 R Nov-25 → H1 R Nov-26"
    }
   ]
  }
