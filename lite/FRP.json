@@ -1,6 +1,6 @@
 {
  "ticker": "FRP",
- "v": "2026-11-10.aec7",
+ "v": "2026-11-20.1f86",
  "ccy": "GBX",
  "src": "AlphaVantage FRP.LON weekly + ShareScope snapshots",
  "adj": [],
@@ -1060,6 +1060,10 @@
   [
    "2026-11-06",
    123.5
+  ],
+  [
+   "2026-11-13",
+   122.0
   ]
  ],
  "marks": [
@@ -1324,20 +1328,45 @@
    "s": 0,
    "q": "Trading year-to-date continues to be in line with the Board's expectations. The integration of the businesses acquired during FY2026, including One Advisory Group and Arc & Co, has progressed as planned and all are performing in line with expectations.",
    "file": "20260924_FRP_AGM-Statement-and-Q1-FY2027-Dividend-Declaration.md"
+  },
+  {
+   "d": "2026-11-20",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Looking through to the rest of the financial year, there are encouraging enquiry levels across each of the Group’s service lines and the Board considers the Group is on track to meet current full year expectations.",
+   "file": "20261120_FRP_Half-Year-Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-24",
-  "doc": "AGM",
-  "file": "20260924_FRP_AGM-Statement-and-Q1-FY2027-Dividend-Declaration.md",
-  "vs": "AGM Sep-25 · FY R Jul-26 · back to AGM Sep-24",
+  "rns": "2026-11-20",
+  "doc": "H1 TU",
+  "file": "20261120_FRP_Half-Year-Trading-Update.md",
+  "vs": "H1 TU Nov-25 · back to Nov-24 · AGM Sep-26",
   "lines": [
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "Headcount: Nov-25 “The total number of colleagues rose 8% to 861 excluding consultants, an increase of 11% year-on-year.” → Nov-26 no headcount figure",
+    "span": "Given in H1 TU Nov-24 and Nov-25 → first gap"
+   },
+   {
+    "sev": "grey",
+    "type": "Wording vs number",
+    "text": "Net cash: Nov-25 “unaudited net cash balance as at 31 October 2025 of £16.5m” → Nov-26 “strong balance sheet with unaudited net cash of £15.5m”, lower y/y after a £5.6m EBT loan for share buybacks"
+   },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "AGM Sep-25 and Sep-24 gave no figures for the year just ended → Sep-26 quantifies it: “Revenue grew 16% to £177 million, of which 10% was organic” plus EBITDA, EPS, headcount and net cash",
-    "span": "Guide wording unchanged: “Trading year-to-date continues to be in line with the Board's expectations” (same anchor Sep-24, Sep-25, Sep-26)"
+    "text": "Anchor firmer: Nov-25 “assuming current activity levels continue, the Board remains confident of achieving full year expectations” → Nov-26 “on track to meet current full year expectations”, condition dropped",
+    "span": "Conditional form used Nov-24, Dec-24, Nov-25, Dec-25"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "Facilities: Nov-25 “an undrawn RCF of £10m” → Nov-26 refinanced with “£50m of committed borrowing facilities” plus £45m accordion"
    }
   ]
  }

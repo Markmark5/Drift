@@ -1,6 +1,6 @@
 {
  "ticker": "THRU",
- "v": "2026-10-28.6cb0",
+ "v": "2026-11-20.0b49",
  "ccy": "GBX",
  "src": "AlphaVantage THRU.LON weekly + ShareScope snapshots",
  "adj": [],
@@ -1056,6 +1056,18 @@
   [
    "2026-10-23",
    1.9
+  ],
+  [
+   "2026-10-30",
+   1.8
+  ],
+  [
+   "2026-11-06",
+   1.7
+  ],
+  [
+   "2026-11-13",
+   2.05
   ]
  ],
  "marks": [
@@ -1297,14 +1309,42 @@
    "s": 0,
    "q": "The Board remains confident that FY27 revenue will be in line with current market expectations, and believes the business is well positioned to deliver further growth into FY28, as we deliver against our strategy, expand our routes to market and capitalise on the increasing adoption of our technology.",
    "file": "20261012_THRU_FY27-H1-Trading-Update.md"
+  },
+  {
+   "d": "2026-11-20",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board therefore remains confident in achieving good full-year revenue growth and its unchanged FY27 revenue expectation of £8.0 million.",
+   "file": "20261120_THRU_Interim-Results.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-15",
-  "doc": "OPS",
-  "file": "20261015_THRU_Multiple-orders-received.md",
-  "vs": "Reach order RNSs Dec-25, Jun-26, Aug-26 · H1 TU Oct-26",
-  "lines": []
+  "rns": "2026-11-20",
+  "doc": "H1 R",
+  "file": "20261120_THRU_Interim-Results.md",
+  "vs": "H1 R Nov-25 · FY R Jun-26 · H1 TU Oct-26",
+  "lines": [
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "Funding: Jun-26 forecasts would “require no funding in excess of currently available facilities in the forthcoming 12-month period” → now “a requirement for additional short-term debt finance during the next six months”, not yet committed",
+    "span": "FY R Jun-26 → H1 R Nov-26; first debt need since the Jul-25 equity raise"
+   },
+   {
+    "sev": "amber",
+    "type": "New caution",
+    "text": "Supply chain: Jun-26 “selective component supply lead time increases and some component price inflation” → now “these limitations are expected to restrict the Group’s ability to materially exceed current expectations”, with undelivered orders slipping to FY28",
+    "span": "Cost issue in FY R Jun-26 → revenue cap in H1 R Nov-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "FY28 view now quantified: Oct-26 “well positioned to deliver further growth into FY28”, no number → now revenue “expected to grow to between £10 and £11 million in FY28, and therefore breakeven”",
+    "span": "First numeric FY28 guide (going-concern note)"
+   }
+  ]
  }
 }
