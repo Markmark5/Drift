@@ -1,30 +1,10 @@
 {
  "ticker": "CRST",
- "v": "2026-10-21.a62c",
+ "v": "2026-11-20.4d42",
  "ccy": "GBX",
- "src": "AlphaVantage CRST.LON weekly",
+ "src": "AlphaVantage CRST.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-15",
-   370.4
-  ],
-  [
-   "2021-10-22",
-   363.6
-  ],
-  [
-   "2021-10-29",
-   356.0
-  ],
-  [
-   "2021-11-05",
-   351.2
-  ],
-  [
-   "2021-11-12",
-   347.2
-  ],
   [
    "2021-11-19",
    350.0
@@ -1060,18 +1040,25 @@
   [
    "2026-10-20",
    62.3
+  ],
+  [
+   "2026-10-23",
+   64.2
+  ],
+  [
+   "2026-10-30",
+   63.5
+  ],
+  [
+   "2026-11-06",
+   65.8
+  ],
+  [
+   "2026-11-13",
+   63.6
   ]
  ],
  "marks": [
-  {
-   "d": "2021-11-18",
-   "doc": "YE-TU",
-   "fy": "FY21",
-   "g": "RAISE",
-   "s": 1,
-   "q": "FY21 Adjusted Profit Before Tax expected to be marginally ahead of consensus of £101.2m1 with the Longcross Film Studio contribution being more than anticipated",
-   "file": "20211118_CRST_Trading-Statement.md"
-  },
   {
    "d": "2022-01-19",
    "doc": "FY R",

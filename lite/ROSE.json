@@ -1,8 +1,8 @@
 {
  "ticker": "ROSE",
- "v": "2026-10-21.af20",
+ "v": "2026-11-20.d7ae",
  "ccy": "GBX",
- "src": "AlphaVantage ROSE.LON weekly",
+ "src": "AlphaVantage ROSE.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -472,6 +472,22 @@
   [
    "2026-10-20",
    306.0
+  ],
+  [
+   "2026-10-23",
+   304.0
+  ],
+  [
+   "2026-10-30",
+   322.0
+  ],
+  [
+   "2026-11-06",
+   316.0
+  ],
+  [
+   "2026-11-13",
+   334.0
   ]
  ],
  "marks": [

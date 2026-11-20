@@ -1,30 +1,10 @@
 {
  "ticker": "CLX",
- "v": "2026-10-21.35c5",
+ "v": "2026-11-20.600b",
  "ccy": "GBX",
- "src": "AlphaVantage CLX.LON weekly",
+ "src": "AlphaVantage CLX.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-15",
-   121.5
-  ],
-  [
-   "2021-10-22",
-   123.0
-  ],
-  [
-   "2021-10-29",
-   144.0
-  ],
-  [
-   "2021-11-05",
-   148.0
-  ],
-  [
-   "2021-11-12",
-   141.5
-  ],
   [
    "2021-11-19",
    134.0
@@ -1060,6 +1040,22 @@
   [
    "2026-10-20",
    52.0
+  ],
+  [
+   "2026-10-23",
+   51.0
+  ],
+  [
+   "2026-10-30",
+   58.0
+  ],
+  [
+   "2026-11-06",
+   56.0
+  ],
+  [
+   "2026-11-13",
+   55.0
   ]
  ],
  "marks": [
@@ -1260,33 +1256,23 @@
    "s": 0,
    "q": "Trading in the year to date has been in line with market expectations.",
    "file": "20260902_CLX_AGM-Statement.md"
+  },
+  {
+   "d": "2026-09-09",
+   "doc": "OPS",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The Company's trading performance in FY27 remains in line with market expectations, and no update on trading will be provided during the meeting.",
+   "file": "20260909_CLX_Capital-Markets-Day.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-02",
-  "doc": "AGM",
-  "file": "20260902_CLX_AGM-Statement.md",
-  "vs": "AGM Aug-25 · back to Aug-22 · FY R May-26 · YE-TU Apr-26",
-  "lines": [
-   {
-    "sev": "red",
-    "type": "Anchor softened",
-    "text": "Last year: “the Board anticipates that the Company's performance in FY26 will be in line with market expectations” → this year only “Trading in the year to date has been in line with market expectations”; for the FY27 full year just “the Board remains confident in the Group's prospects for FY27”",
-    "span": "Full-year in-line anchor at AGM Aug-22, Aug-23, Aug-24, Aug-25 → first year-to-date-only AGM; FY R May-26 also gave no FY27 anchor"
-   },
-   {
-    "sev": "amber",
-    "type": "Target dropped",
-    "text": "New-product revenue timing: “with anticipated revenue generation in late FY27” (SNE at Apr-26 TU, Sentry at May-26 FY R) → now “The opportunity funnel for the SNE network emulation product continues to grow” and Sentry engagement “continues to develop positively”, no timing",
-    "span": "Given Apr-26 and May-26 → not repeated Sep-26"
-   },
-   {
-    "sev": "amber",
-    "type": "New caution",
-    "text": "Telecoms: Aug-25 “the telecoms market has remained stable” → now “Our well-established telecoms business maintains its leadership position, albeit in anticipated lower growth markets”",
-    "span": "First “lower growth” flag for telecoms; FY R May-26 said long-term growth drivers “remain intact”"
-   }
-  ]
+  "rns": "2026-09-09",
+  "doc": "OPS",
+  "file": "20260909_CLX_Capital-Markets-Day.md",
+  "vs": "AGM Sep-26 (previous RNS) · no earlier Capital Markets Day RNS",
+  "lines": []
  }
 }

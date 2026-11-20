@@ -1,30 +1,10 @@
 {
  "ticker": "HFG",
- "v": "2026-10-21.21df",
+ "v": "2026-11-20.61c1",
  "ccy": "GBX",
- "src": "AlphaVantage HFG.LON weekly",
+ "src": "AlphaVantage HFG.LON weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-15",
-   1166.0
-  ],
-  [
-   "2021-10-22",
-   1180.0
-  ],
-  [
-   "2021-10-29",
-   1168.0
-  ],
-  [
-   "2021-11-05",
-   1202.0
-  ],
-  [
-   "2021-11-12",
-   1190.0
-  ],
   [
    "2021-11-19",
    1196.0
@@ -1060,18 +1040,25 @@
   [
    "2026-10-20",
    721.0
+  ],
+  [
+   "2026-10-23",
+   720.0
+  ],
+  [
+   "2026-10-30",
+   715.5
+  ],
+  [
+   "2026-11-06",
+   744.0
+  ],
+  [
+   "2026-11-13",
+   734.5
   ]
  ],
  "marks": [
-  {
-   "d": "2021-10-29",
-   "doc": "Q3 TU",
-   "fy": "FY21",
-   "g": "flat",
-   "s": 0,
-   "q": "During the period, the Group's trading has been in line with the Board's expectations. We have continued to grow the business, driven predominantly by the successful rollout of our growth strategy in Australia and Asia Pacific",
-   "file": "20211029_HFG_Trading-Update.md"
-  },
   {
    "d": "2022-01-13",
    "doc": "YE-TU",
