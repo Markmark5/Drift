@@ -1,6 +1,6 @@
 {
  "ticker": "ENSI",
- "v": "2026-11-23.879d",
+ "v": "2026-11-23.33d5",
  "ccy": "GBX",
  "src": "AlphaVantage ENSI.LON weekly + ShareScope snapshots",
  "adj": [],
@@ -948,6 +948,10 @@
   [
    "2026-11-13",
    66.5
+  ],
+  [
+   "2026-11-20",
+   71.0
   ]
  ],
  "marks": [
@@ -1265,6 +1269,15 @@
    "s": 0,
    "q": "We entered FY27 with around 80% of anticipated revenue already covered by existing contracts, supply agreements and customer orders. We are therefore pleased to re-confirm market guidance of £32 million to £34 million in revenues and EBITDA of £5.5 million to £6.5 million for the year ending 31 May 2027.",
    "file": "20261005_ENSI_Final-Results_2.md"
+  },
+  {
+   "d": "2026-11-23",
+   "doc": "OPS",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "In addition to the initial purchase order, the Contract would be expected to generate further significant NRE revenues from the second half of FY27 through FY28. FY27 revenue guidance of £32m to £34m remains unchanged.",
+   "file": "20261123_ENSI_US$80-Million-Design-&-Supply-Agreement.md"
   }
  ],
  "lite": true,

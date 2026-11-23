@@ -1,6 +1,6 @@
 {
  "ticker": "RTC",
- "v": "2026-11-23.8258",
+ "v": "2026-11-23.2ece",
  "ccy": "GBX",
  "src": "Yahoo RTC.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1068,6 +1068,10 @@
   [
    "2026-11-13",
    95.0
+  ],
+  [
+   "2026-11-20",
+   95.0
   ]
  ],
  "marks": [
@@ -1225,6 +1229,15 @@
    "s": -2,
    "q": "As we enter the second half of 2026, we believe these headwinds will continue to impact trading across the Group, including the following:",
    "file": "20260727_RTC_Interim-Results.md"
+  },
+  {
+   "d": "2026-11-23",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board of RTC Group Plc (AIM:RTC.L) is pleased to report that it expects trading in the six months to 31 December 2026 to be in line with that achieved in the first half of the financial year.",
+   "file": "20261123_RTC_Trading-Update-and-Notice-of-Results.md"
   }
  ],
  "lite": true,

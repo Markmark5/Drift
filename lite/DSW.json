@@ -1,6 +1,6 @@
 {
  "ticker": "DSW",
- "v": "2026-11-23.acc9",
+ "v": "2026-11-23.c468",
  "ccy": "GBX",
  "src": "AlphaVantage DSW.LON weekly + ShareScope snapshots",
  "adj": [],
@@ -1036,6 +1036,10 @@
   [
    "2026-11-13",
    47.5
+  ],
+  [
+   "2026-11-20",
+   47.4
   ]
  ],
  "marks": [
@@ -1245,6 +1249,15 @@
    "s": 0,
    "q": "We are encouraged by the resilience we continue to see across the Group and remain cautiously optimistic about delivering a full-year performance in line with market expectations.",
    "file": "20261109_DSW_Half-Year-Trading-Update-and-Notice-of-Results.md"
+  },
+  {
+   "d": "2026-11-23",
+   "doc": "H1 R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": -1,
+   "q": "The business continues to trade well and in line with management expectations, but the Board remains mindful of the well documented geopolitical and economic uncertainties",
+   "file": "20261123_DSW_Half-Year-Results.md"
   }
  ],
  "lite": true,

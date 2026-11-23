@@ -1,6 +1,6 @@
 {
  "ticker": "CER",
- "v": "2026-11-23.06ac",
+ "v": "2026-11-23.08e3",
  "ccy": "GBX",
  "src": "Yahoo CER.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1056,6 +1056,10 @@
   [
    "2026-11-13",
    936.0
+  ],
+  [
+   "2026-11-20",
+   870.0
   ]
  ],
  "marks": [
@@ -1292,6 +1296,15 @@
    "s": -3,
    "q": "While the second-half results will be significantly ahead of the first-half, it is now apparent to the Board that the year's outturn will be behind consensus market forecasts*. Revenue is now estimated to be in the range of £46m - £48m, with adjusted EBITDA margin in the range of 43% - 45%.",
    "file": "20260914_CER_Full-Year-Trading-Update.md"
+  },
+  {
+   "d": "2026-11-23",
+   "doc": "FY R",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "Looking ahead, we expect to make good progress and we will continue to invest in the business to support growth.",
+   "file": "20261123_CER_Final-Results.md"
   }
  ],
  "lite": true,

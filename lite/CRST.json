@@ -1,6 +1,6 @@
 {
  "ticker": "CRST",
- "v": "2026-11-23.1e37",
+ "v": "2026-11-23.2e92",
  "ccy": "GBX",
  "src": "AlphaVantage CRST.LON weekly + ShareScope snapshots",
  "adj": [],
@@ -1056,6 +1056,10 @@
   [
    "2026-11-13",
    63.6
+  ],
+  [
+   "2026-11-20",
+   63.7
   ]
  ],
  "marks": [
@@ -1276,6 +1280,15 @@
    "s": -3,
    "q": "Against this backdrop, the Group now expects full-year completions to be in the range 1,350 to 1,400 (previous guidance 1,400 to 1,500) and for EBIT to be a loss of around £10m (previous guidance for EBIT profit of £5m to £10m).",
    "file": "20260903_CRST_Trading-update.md"
+  },
+  {
+   "d": "2026-11-23",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -3,
+   "q": "As a result of the deteriorating market environment and the other elements that have negatively weighed on profitability, the Group now expects its Adjusted EBIT loss including associates for the year to be in the range of £30m to £40m.",
+   "file": "20261123_CRST_Trading-and-balance-sheet-update.md"
   }
  ],
  "lite": true,
