@@ -1,6 +1,6 @@
 {
  "ticker": "CRST",
- "v": "2026-11-20.4d42",
+ "v": "2026-11-23.1e37",
  "ccy": "GBX",
  "src": "AlphaVantage CRST.LON weekly + ShareScope snapshots",
  "adj": [],
@@ -1280,16 +1280,34 @@
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-30",
-  "doc": "Lender update",
-  "file": "20260930_CRST_Update-on-lender-discussions.md",
-  "vs": "Q3 TU Sep-26 · H1 R Jul-26 · May-26 results-date notice · no year-earlier equivalent",
+  "rns": "2026-11-23",
+  "doc": "YE-TU",
+  "file": "20261123_CRST_Trading-and-balance-sheet-update.md",
+  "vs": "YE-TU Nov-25 · Q3 TU Sep-26 · back to Nov-22/Nov-23/Nov-24",
   "lines": [
    {
+    "sev": "red",
+    "type": "New caution",
+    "text": "Nov-25: “near-term market conditions are expected to remain challenging” → now FY27 guide deferred to January but “expects to continue to trade with an Adjusted EBIT loss”",
+    "span": "First loss flagged for the next year in five YE-TUs (Nov-22 to Nov-26)"
+   },
+   {
     "sev": "amber",
-    "type": "Pushed out",
-    "text": "Covenant reset: May-26 “expected to conclude by mid-July 2026”; Jul-26 “the waiver of the interest cover covenant has been extended to 30 September 2026” → now “a further extension of the waiver has been agreed with the lenders until 30 November 2026”",
-    "span": "Third slip in the timetable: mid-Jul → 30 Sep → 30 Nov 2026"
+    "type": "Number to words",
+    "text": "Build cost inflation: Sep-26 “Build cost inflation remains in line with previous guidance of c.3-4%, mostly on materials.” → now “persistent build cost inflationary pressures”, no figure",
+    "span": "Sep-26 → Nov-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Target dropped",
+    "text": "Land sales: Sep-26 “continues to expect that one or two further transactions will be achieved in the remainder of the financial year” → now “the loss of a land sale that had been expected in the second half”",
+    "span": "Land receipts guide cut Apr-26 (c. £40m from £75m to £100m); Nov-25 gave c.£50m secured for the next year, none given now"
+   },
+   {
+    "sev": "grey",
+    "type": "Target dropped",
+    "text": "New house types: Sep-26 “our new house types remain on track to contribute from end of FY27” → not mentioned now",
+    "span": "Named in Jan-26, Jul-26, Sep-26"
    }
   ]
  }

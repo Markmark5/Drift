@@ -1,6 +1,6 @@
 {
  "ticker": "ENSI",
- "v": "2026-10-29.058b",
+ "v": "2026-11-23.879d",
  "ccy": "GBX",
  "src": "AlphaVantage ENSI.LON weekly + ShareScope snapshots",
  "adj": [],
@@ -936,6 +936,18 @@
   [
    "2026-10-23",
    77.0
+  ],
+  [
+   "2026-10-30",
+   82.0
+  ],
+  [
+   "2026-11-06",
+   73.0
+  ],
+  [
+   "2026-11-13",
+   66.5
   ]
  ],
  "marks": [
@@ -1257,34 +1269,22 @@
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-05",
-  "doc": "FY R",
-  "file": "20261005_ENSI_Final-Results.md",
-  "vs": "FY R Nov-25 · YE-TU Jun-26 · ABB Jul-26",
+  "rns": "2026-11-23",
+  "doc": "OPS",
+  "file": "20261123_ENSI_US$80-Million-Design-&-Supply-Agreement.md",
+  "vs": "Contract RNS Nov-25 · FY R Oct-26 · contract RNS Oct-26 · Mar-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Pushed out",
-    "text": "Nov-25 FY R: “A further five tape-outs are scheduled for completion before the end of FY 26” → Oct-26: “Two tape outs completed in FY26, three tape outs completed in FY27”",
-    "span": "FY26 → FY27 (Edge AI tape-out also slipped past year end, per Jun-26 TU)"
-   },
-   {
-    "sev": "amber",
-    "type": "Wording vs number",
-    "text": "“we generated record EBITDA of £5.9 million” beside “Gross margins in FY26 have decreased by five percentage points from 40% to 35%” (Nov-25: gross margin “improved from 36% to 40%”)",
-    "span": "FY25 → FY26"
-   },
-   {
-    "sev": "grey",
-    "type": "Restated",
-    "text": "Jun-26 TU: “anticipated EBITDA of £4.7m” → Oct-26 £5.9m, footnoted “Improved from previous expectations as a result of increased tax credit included within Other income”",
-    "span": "Same period, Jun-26 → Oct-26"
+    "type": "Split withheld",
+    "text": "FY R Oct-26: “re-confirm market guidance of £32 million to £34 million in revenues and EBITDA of £5.5 million to £6.5 million” → now “FY27 revenue guidance of £32m to £34m remains unchanged”, EBITDA guide not restated",
+    "span": "EBITDA range restated alongside revenue Jan-26, Mar-26 (contract RNS), Jun-26, Oct-26"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Nov-25: medium-term revenue ambition of £60m+, with “longer term (6 to 10 years), our order book and opportunities give us extended aspirations of £100m of revenues” → Oct-26 “medium term annual target of £100m” plus a new margin goal of “EBITDA margins towards our 30% target”",
-    "span": "New margin target; £100m moved from long to medium term"
+    "text": "Revenue cover: Oct-26 “around 80% of anticipated revenue already covered” → now “approximately 90% of anticipated FY27 revenues are covered by existing contracts, supply agreements and customer orders”",
+    "span": "Oct-26 FY R → Nov-26"
    }
   ]
  }

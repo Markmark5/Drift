@@ -1,6 +1,6 @@
 {
  "ticker": "CER",
- "v": "2026-11-17.e152",
+ "v": "2026-11-23.06ac",
  "ccy": "GBX",
  "src": "Yahoo CER.L weekly + ShareScope snapshots",
  "adj": [],
@@ -1296,34 +1296,34 @@
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-09-14",
-  "doc": "YE-TU",
-  "file": "20260914_CER_Full-Year-Trading-Update.md",
-  "vs": "YE-TU Oct-25 · back to Oct-22 · H1 R Jun-26",
+  "rns": "2026-11-23",
+  "doc": "FY R",
+  "file": "20261123_CER_Final-Results.md",
+  "vs": "FY R Nov-25 · back to Nov-24 · H1 R Jun-26 · YE-TU Sep-26",
   "lines": [
    {
     "sev": "red",
-    "type": "Next-year view dropped",
-    "text": "Jun-26: “remain confident of delivering consensus market expectations for the financial year and beyond”; Oct-25: “The Board therefore continues to view growth prospects very positively.” → Sep-26 no view on FY27 at all",
-    "span": "Forward view in every YE-TU Oct-22 to Oct-25 → first gap"
-   },
-   {
-    "sev": "red",
     "type": "Went quiet",
-    "text": "Adjusted PBT: Oct-25 “adjusted profit before tax is expected to be slightly ahead of the consensus market forecast of £20.5m” → Sep-26 no PBT figure or PBT consensus; guide switched to “adjusted EBITDA margin in the range of 43% - 45%”",
-    "span": "PBT vs consensus figure given Oct-22, Oct-23, Oct-24, Oct-25"
+    "text": "Adjusted PBT, the line the YE-TUs anchored consensus on: FY25 “Adjusted profit before tax rose by 10% to £21.8m” → FY26 no adjusted PBT figure; only statutory “profit before tax down to £19.5m”",
+    "span": "In highlights at Nov-24, Nov-25 and H1 Jun-26 → first gap"
    },
    {
     "sev": "amber",
-    "type": "Number to words",
-    "text": "Net cash: Oct-25 “net cash at the financial year-end increased to £34.4m” → Sep-26 “the balance sheet is very robust”, no figure",
-    "span": "Net cash figure in YE-TU Oct-21 to Oct-25"
+    "type": "Pushed out",
+    "text": "Ucom go-live: H1 Jun-26 “cutover is scheduled for the autumn” → now “expect our platform to go live in early 2027”",
+    "span": "Jun-26 → Nov-26"
    },
    {
     "sev": "amber",
-    "type": "New caution",
-    "text": "First flag of order slippage: “some anticipated new and existing customer orders have been delayed or deferred”; pipeline from Jun-26 “stands at a record level” → “the new customer pipeline remains healthy”",
-    "span": "Jun-26 → Sep-26"
+    "type": "Wording vs number",
+    "text": "“Back-order book strong at £67.0m” but down from H1 “Back-order book of £82.1m”, and the 12-month share fell: FY25 “We expect about 33% of the £47.4m contracted-but-not-yet-recognised sales will be recognised within 12 months” → now “about 25% of the £57.6m”",
+    "span": "Near-term cover c.£15.6m → c.£14.4m"
+   },
+   {
+    "sev": "grey",
+    "type": "Went quiet",
+    "text": "Recurring revenue (in the year) no longer given: FY25 “increased by 3% to £15.9m” → replaced by broader ARR incl. not-yet-live subscriptions, “Annualised recurring revenue at the year-end was up 26% to £28.4m (2025: £22.6m)”",
+    "span": "Given at Nov-24 (£15.5m), Nov-25 (£15.9m) → redefined"
    }
   ]
  }

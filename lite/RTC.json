@@ -1,8 +1,8 @@
 {
  "ticker": "RTC",
- "v": "2026-10-21.ccad",
+ "v": "2026-11-23.8258",
  "ccy": "GBX",
- "src": "Yahoo RTC.L weekly",
+ "src": "Yahoo RTC.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,22 @@
   [
    "2026-10-21",
    95.0
+  ],
+  [
+   "2026-10-23",
+   95.0
+  ],
+  [
+   "2026-10-30",
+   95.0
+  ],
+  [
+   "2026-11-06",
+   95.0
+  ],
+  [
+   "2026-11-13",
+   95.0
   ]
  ],
  "marks": [
@@ -1213,34 +1229,28 @@
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-07-27",
-  "doc": "H1 R",
-  "file": "20260727_RTC_Interim-Results.md",
-  "vs": "H1 R Jul-25 · AGM TU May-26 · FY R Mar-26",
+  "rns": "2026-11-23",
+  "doc": "YE-TU",
+  "file": "20261123_RTC_Trading-Update-and-Notice-of-Results.md",
+  "vs": "YE-TU Nov-25 · back to Nov-23/Nov-24 · H1 R Jul-26",
   "lines": [
    {
     "sev": "red",
-    "type": "Pushed out",
-    "text": "AGM May-26: intention to resume market guidance → now “we, like many other quoted companies, have decided to defer the resumption of formal market guidance until there is greater clarity”",
-    "span": "Promised May-26 → deferred Jul-26; no formal guide given in the 5-year record"
-   },
-   {
-    "sev": "amber",
-    "type": "Wording vs number",
-    "text": "H1-25 “Profit from operations maintained at £1.3m (2024: £1.3m)” → H1-26 “Solid profit from operations of £0.8m (2025: £1.3m) in line with revenue levels”, a 38% fall called solid",
-    "span": "H1 R Jul-25 → H1 R Jul-26"
+    "type": "Anchor softened",
+    "text": "Last year: full-year results “broadly in line with last year” → this year only H2 “in line with that achieved in the first half of the financial year”, no full-year comparison with 2025",
+    "span": "H1 26 profit from operations £0.8m vs £1.3m, so H2 = H1 implies a lower year"
    },
    {
     "sev": "amber",
     "type": "New caution",
-    "text": "First flag that infrastructure spend may slip to defence: “recent government decisions to reprioritise elements of planned infrastructure expenditure in favour of increased defence spending highlight the potential for programmes to be deferred or rescheduled”",
-    "span": "Not in H1 R Jul-25, FY R Mar-26 or AGM TU May-26"
+    "text": "Nov-25: “has many reasons to remain positive about its future prospects” → now “2027 could bring more and potentially greater uncertainty for the global recruitment sector”",
+    "span": "Next-year caution last seen Nov-24 (2025 budget cost pressures); none in Nov-25"
    },
    {
-    "sev": "grey",
-    "type": "Restated",
-    "text": "H1-25 operating cash flow: “Net cash inflow from operating activities increased to £3.3m (2024 £0.4m)” → comparative now “Net cash inflow from operating activities £0.9m (2025 £3.2m)”",
-    "span": "H1 R Jul-25 vs H1 R Jul-26"
+    "sev": "amber",
+    "type": "Wording vs number",
+    "text": "“Given this positive assessment against the most difficult of backdrops” beside H1 “Solid profit from operations of £0.8m (2025: £1.3m)”",
+    "span": "H1 R Jul-26 → Nov-26"
    }
   ]
  }

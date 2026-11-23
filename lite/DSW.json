@@ -1,6 +1,6 @@
 {
  "ticker": "DSW",
- "v": "2026-11-09.00c6",
+ "v": "2026-11-23.acc9",
  "ccy": "GBX",
  "src": "AlphaVantage DSW.LON weekly + ShareScope snapshots",
  "adj": [],
@@ -1032,6 +1032,10 @@
   [
    "2026-11-06",
    45.5
+  ],
+  [
+   "2026-11-13",
+   47.5
   ]
  ],
  "marks": [
@@ -1245,34 +1249,28 @@
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-11-09",
-  "doc": "H1 TU",
-  "file": "20261109_DSW_Half-Year-Trading-Update-and-Notice-of-Results.md",
-  "vs": "H1 TU Nov-25 · FY R Jul-26 · back to H1 TU Nov-24",
+  "rns": "2026-11-23",
+  "doc": "H1 R",
+  "file": "20261123_DSW_Half-Year-Results.md",
+  "vs": "H1 TU 9 Nov-26 · H1 R Nov-25 · back to H1 R Nov-24 · FY R Jul-26",
   "lines": [
    {
-    "sev": "amber",
-    "type": "Went quiet",
-    "text": "M&A share of income: Nov-25 “M&A as a percentage of Network revenue at 32% in the Period”, Jul-26 “which now accounts for only 31% of total income” → no M&A share given now, though H1 growth is credited to “strong M&A activity”",
-    "span": "Given at Nov-25 and Jul-26 → first gap"
+    "sev": "red",
+    "type": "Anchor softened",
+    "text": "H1 TU 9 Nov-26: “remain cautiously optimistic about delivering a full-year performance in line with market expectations” → H1 R two weeks later: only “in line with management expectations”, no full-year market anchor",
+    "span": "Market anchor given at Nov-26 TU → dropped in the results RNS"
    },
    {
     "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Fee earners: Nov-25 “Fee Earners increased by 8 to 144 at 30 September 2025” → now “Fee Earners remained flat at 135 (31 March 2026: 135)”, down 9 year on year but compared only with March, under a “Strong trading” headline",
-    "span": "Sep-25 144 → Sep-26 135"
+    "type": "Split withheld",
+    "text": "Fee Earners: Nov-25 “Fee Earners up 29% YoY to 144 at the Period end (H1 25: 112)” with “49 Partners across 24 businesses” and a Partners/Employees/Consultants table → now “Fee Earners remained flat at 135 (31 March 2026: 135)”, compared with March only (down from 144 a year ago); partner, business count and table gone",
+    "span": "YoY count and split given at H1 R Nov-24 and Nov-25 → first gap"
    },
    {
-    "sev": "grey",
-    "type": "Went quiet",
-    "text": "DR Solicitors headcount: Nov-25 “Number of Fee Earners using the DR Solicitors platform increased to 26 at the half year end”, Jul-26 “Consultant headcount increased by 48% to 31” → no DR consultant count now, only “20% organic growth in DR Solicitors”",
-    "span": "Given at Nov-25 and Jul-26"
-   },
-   {
-    "sev": "green",
-    "type": "Back / new",
-    "text": "Market anchor back: Nov-25 H1 TU only “in line with management expectations”, Jul-26 “trading in line with Board expectations” → now “remain cautiously optimistic about delivering a full-year performance in line with market expectations”",
-    "span": "First market-expectations anchor since May-26"
+    "sev": "amber",
+    "type": "Target dropped",
+    "text": "Dividend policy: Nov-25 “Intention to maintain progressive dividend policy” and Jul-26 “The Board is committed to a progressive dividend policy” → now “Interim dividend of 1.2p per share approved, in line with the prior year”, policy not mentioned",
+    "span": "Progressive policy stated at Nov-24, Jul-25, Nov-25, Jul-26 → first omission"
    }
   ]
  }
