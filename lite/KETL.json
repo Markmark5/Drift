@@ -1,8 +1,8 @@
 {
  "ticker": "KETL",
- "v": "2026-10-21.dd14",
+ "v": "2026-11-23.8125",
  "ccy": "GBX",
- "src": "Yahoo KETL.L weekly",
+ "src": "Yahoo KETL.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
   [
@@ -1052,6 +1052,26 @@
   [
    "2026-10-21",
    32.5
+  ],
+  [
+   "2026-10-23",
+   31.9
+  ],
+  [
+   "2026-10-30",
+   32.35
+  ],
+  [
+   "2026-11-06",
+   32.05
+  ],
+  [
+   "2026-11-13",
+   32.6
+  ],
+  [
+   "2026-11-20",
+   29.4
   ]
  ],
  "marks": [
@@ -1295,38 +1315,47 @@
    "q": "Whilst uncertainty surrounding the Middle East conflict continues to make the consumer demand and commodities outlook more difficult to predict, Strix has started FY27 with positive momentum.",
    "file": "20260804_KETL_Final-Results.md",
    "gnote": "early signal: first step up in tone"
+  },
+  {
+   "d": "2026-11-23",
+   "doc": "H1 TU",
+   "fy": "FY27",
+   "g": "flat",
+   "s": 0,
+   "q": "The Board is pleased with the performance in the six months to 30 September 2026 and expects FY27 results to be in line with market expectations, despite continued uncertainty in consumer confidence and ongoing macro headwinds.",
+   "file": "20261123_KETL_Business-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-04",
-  "doc": "FY R",
-  "file": "20260804_KETL_Final-Results.md",
-  "vs": "FY R Mar-24 (FY24 results not in folder) · TU May-26 · TUs Jan-25, Mar-26",
+  "rns": "2026-11-23",
+  "doc": "H1 TU",
+  "file": "20261123_KETL_Business-Update.md",
+  "vs": "H1 TU Nov-25 · FY R Aug-26 · YE-TU May-26 · TU Mar-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "New caution",
-    "text": "Market share loss admitted for the first time: Jan-25 “maintained its dominant market position and stable market share in the regulated and less regulated markets” → now “increasing competition from Chinese controls manufacturers has reduced the Group's regulated market share”",
-    "span": "Stable share claimed at Mar-24, Nov-24, Jan-25"
+    "type": "Number to words",
+    "text": "Net cash: Aug-26 “Net cash of £38.7m provides financial flexibility to invest and ability to return funds to shareholders.” → now only “given the Group’s cash position”, no figure",
+    "span": "Net debt/cash figure given Nov-25, Jan-26, Mar-26, Aug-26 → first update without it"
    },
    {
     "sev": "amber",
+    "type": "Went quiet",
+    "text": "H1 revenue: Nov-25 “the Group delivered revenue of £64.6m” for the six months to 30 September 2025, with “These figures are to be used as comparators for future reporting periods.” → now no H1 revenue figure, only “pleased with the performance in the six months to 30 September 2026”",
+    "span": "Comparator set Nov-25 → not used in the first comparable update"
+   },
+   {
+    "sev": "grey",
     "type": "Target dropped",
-    "text": "Dividend promise not mentioned: Mar-24 “A planned return to a sustainable dividend pay-out ratio of 30% of adjusted PAT will take place in 2025.” → no dividend declared or discussed in the PE26 results; capital is to be returned through other means",
-    "span": "Promised Mar-24 and Jun-24"
-   },
-   {
-    "sev": "amber",
-    "type": "Wording vs number",
-    "text": "“Entering FY27 with positive momentum, with Controls volumes stabilising against 2025.” beside PE26 adjusted PBT down 43.9% and “Looking ahead, Strix expects the Controls division's adjusted gross profit margin to remain under pressure”",
-    "span": "PE26 vs FY24"
+    "text": "Cost savings: Aug-26 “Already identified cost optimisation initiatives are expected to secure savings ahead of the previously reported £2.0m gross annualised target” → no mention of the savings programme now",
+    "span": "Target stated Mar-26, updated Aug-26"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "New balance-sheet figure after the Billi sale: “Net cash of £38.7m provides financial flexibility”, where every earlier RNS reported net debt and leverage (2.5x at Sep-25)",
-    "span": "Net debt reported at every print to Nov-25"
+    "text": "Expectations anchor back: Nov-25 “broadly in line with market expectations”, Aug-26 FY R gave no anchor for FY27 → now “expects FY27 results to be in line with market expectations” (qualitative, no FY27 number)",
+    "span": "First FY27 expectations anchor"
    }
   ]
  }
