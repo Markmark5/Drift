@@ -1,26 +1,10 @@
 {
  "ticker": "EMR",
- "v": "2026-10-21.32e2",
+ "v": "2026-11-23.ee90",
  "ccy": "GBX",
- "src": "Yahoo EMR.L weekly",
+ "src": "Yahoo EMR.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-22",
-   86.5
-  ],
-  [
-   "2021-10-29",
-   88.0
-  ],
-  [
-   "2021-11-05",
-   86.5
-  ],
-  [
-   "2021-11-12",
-   85.5
-  ],
   [
    "2021-11-19",
    85.5
@@ -1052,18 +1036,29 @@
   [
    "2026-10-21",
    31.5
+  ],
+  [
+   "2026-10-23",
+   31.5
+  ],
+  [
+   "2026-10-30",
+   34.0
+  ],
+  [
+   "2026-11-06",
+   34.0
+  ],
+  [
+   "2026-11-13",
+   34.0
+  ],
+  [
+   "2026-11-20",
+   34.0
   ]
  ],
  "marks": [
-  {
-   "d": "2021-10-26",
-   "doc": "Q3 TU",
-   "fy": "FY21",
-   "g": "RAISE",
-   "s": 2,
-   "q": "As a result, it is anticipated that the Group's full year net fee income will be in the range of £57m to £59m and adjusted profit before tax is expected to be in the range of £7.4m to £7.9m (9% to 16% above market consensus).",
-   "file": "20211026_EMR_Trading-Update.md"
-  },
   {
    "d": "2021-12-21",
    "doc": "YE-TU",
