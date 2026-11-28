@@ -1,30 +1,10 @@
 {
  "ticker": "BBY",
- "v": "2026-10-21.e97f",
+ "v": "2026-11-28.877c",
  "ccy": "GBX",
- "src": "Yahoo BBY.L weekly",
+ "src": "Yahoo BBY.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-22",
-   257.2
-  ],
-  [
-   "2021-10-29",
-   254.0
-  ],
-  [
-   "2021-11-05",
-   248.0
-  ],
-  [
-   "2021-11-12",
-   246.0
-  ],
-  [
-   "2021-11-19",
-   245.0
-  ],
   [
    "2021-11-26",
    235.6
@@ -1052,6 +1032,26 @@
   [
    "2026-10-21",
    845.0
+  ],
+  [
+   "2026-10-23",
+   825.0
+  ],
+  [
+   "2026-10-30",
+   865.0
+  ],
+  [
+   "2026-11-06",
+   846.0
+  ],
+  [
+   "2026-11-13",
+   892.5
+  ],
+  [
+   "2026-11-20",
+   865.5
   ]
  ],
  "marks": [
@@ -1235,38 +1235,41 @@
    "s": 1,
    "q": "Following a strong first half, underlying PFO from the earnings-based businesses is now expected to be slightly ahead of prior guidance, with low double digit percentage growth (March 2026 guidance: high single-digit growth).",
    "file": "20260812_BBY_BALFOUR-BEATTY-2026-HALF-YEAR-RESULTS.md"
+  },
+  {
+   "d": "2026-11-24",
+   "doc": "YE-TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "2026 PFO from continuing1 earnings-based businesses is expected to be 20 - 25% ahead of the prior year (FY2025: £257 million), with UK Construction, US Construction and Support Services all performing strongly in the second half of the year.",
+   "file": "20261124_BBY_BALFOUR-BEATTY-2026-TRADING-UPDATE.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-12",
-  "doc": "H1 R",
-  "file": "20260812_BBY_BALFOUR-BEATTY-2026-HALF-YEAR-RESULTS.md",
-  "vs": "H1 R Aug-25 · AGM May-26 · FY R Mar-26 · back to Aug-24",
+  "rns": "2026-11-24",
+  "doc": "YE-TU",
+  "file": "20261124_BBY_BALFOUR-BEATTY-2026-TRADING-UPDATE.md",
+  "vs": "YE-TU Dec-25 · H1 R Aug-26 · back to Dec-22",
   "lines": [
    {
     "sev": "amber",
     "type": "Went quiet",
-    "text": "Support Services full-year margin guide: Aug-25 “For full year 2025, Support Services is expected to deliver towards the top of its targeted PFO margin range of 6-8%.”; Mar-26 “PFO margin remaining above 8%” → Aug-26 no full-year margin guide or 6-8% target, H1 margin 9.1% with “Going forwards, profitability is expected to be more evenly weighted between the first and second half than in prior periods.”",
-    "span": "Full-year margin guide given at Aug-24, Aug-25, Dec-25, Mar-26 → first gap"
+    "text": "Order book: Dec-25 “Order book expected to grow by around 20% in 2025 (FY2024: £18.4 billion)”; H1 Aug-26 £22.9bn → Nov-26 no group or US order book figure, only order wins (“c$600 million of new orders booked in the second half to date”)",
+    "span": "Group order book given in every YE-TU Dec-22 to Dec-25 → first gap in 4 years"
    },
    {
     "sev": "grey",
-    "type": "Wording vs number",
-    "text": "Order book: Aug-25 “order book has grown by 6% (11% at CER) in the first half” → Aug-26 “Positive outlook underpinned by £22.9 billion order book (FY2025: £22.7 billion)”, under 1% growth; UK and US flat-to-down and “The Support Services order book was flat in the first half”",
-    "span": "May-26 AGM: order book in line with year-end"
-   },
-   {
-    "sev": "grey",
-    "type": "Went quiet",
-    "text": "Pipeline figure: Aug-25 highlight “A ten year, c.£20 billion, pipeline of work in addition to order book” → not repeated at Mar-26 or Aug-26",
-    "span": "One-off headline figure, Aug-25"
+    "type": "Restated",
+    "text": "Earnings-based PFO base: FY R Mar-26 “up 16% to £293 million” → Nov-26 “(FY2025: £257 million)” on a continuing basis excluding Gammon (sold Oct-26); 20-25% growth on £257m plus £19m Gammon ≈ 12-16% on the old £293m base vs H1’s low double-digit",
+    "span": "Base redefined after Gammon disposal"
    },
    {
     "sev": "green",
     "type": "Back / new",
-    "text": "Guide raised: Mar-26 “The Board expects a high single-digit percentage increase in PFO” → Aug-26 “slightly ahead of prior guidance, with low double digit percentage growth”; “Average net cash guidance increased by £200 million to a range of £1.5 - £1.7 billion”",
-    "span": "Mar-26 → Aug-26"
+    "text": "Support Services margin: Dec-25 “close to the top of its targeted range of 6-8%” → Nov-26 “PFO margin for the year of around 9%”",
+    "span": "Above the target range, now a point figure"
    }
   ]
  }

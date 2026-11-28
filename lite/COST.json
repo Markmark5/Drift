@@ -1,30 +1,10 @@
 {
  "ticker": "COST",
- "v": "2026-10-21.f973",
+ "v": "2026-11-28.09b3",
  "ccy": "GBX",
- "src": "Yahoo COST.L weekly",
+ "src": "Yahoo COST.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-22",
-   55.0
-  ],
-  [
-   "2021-10-29",
-   53.5
-  ],
-  [
-   "2021-11-05",
-   57.8
-  ],
-  [
-   "2021-11-12",
-   57.1
-  ],
-  [
-   "2021-11-19",
-   55.0
-  ],
   [
    "2021-11-26",
    51.0
@@ -1052,6 +1032,26 @@
   [
    "2026-10-21",
    251.81
+  ],
+  [
+   "2026-10-23",
+   248.5
+  ],
+  [
+   "2026-10-30",
+   258.0
+  ],
+  [
+   "2026-11-06",
+   249.5
+  ],
+  [
+   "2026-11-13",
+   259.5
+  ],
+  [
+   "2026-11-20",
+   251.5
   ]
  ],
  "marks": [
@@ -1253,14 +1253,48 @@
    "s": 0,
    "q": "We expect to remain highly cash generative and to deliver FY 26 revenue, adjusted operating profit and adjusted operating margin in line with the Board's expectations.",
    "file": "20260813_COST_Half-year-Financial-Results.md"
+  },
+  {
+   "d": "2026-11-19",
+   "doc": "OPS",
+   "fy": "FY26",
+   "g": "flat",
+   "s": 0,
+   "q": "The Group confirms that trading in FY 26 remains in line with market expectations4. No new material information on current trading will be disclosed at the CME today.",
+   "file": "20261119_COST_Capital-Markets-Event.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-10-09",
-  "doc": "AGM",
-  "file": "20261009_COST_Update-on-AGM-Political-Donations-Resolution-Vote.md",
-  "vs": "Previous RNS Oct-26 (Pagabo framework) · no same-type update Oct-25 · AGM TU May-26",
-  "lines": []
+  "rns": "2026-11-19",
+  "doc": "OPS",
+  "file": "20261119_COST_Capital-Markets-Event.md",
+  "vs": "H1 R Aug-26 · FY R Mar-26 · AGM May-26 (no CME a year earlier)",
+  "lines": [
+   {
+    "sev": "red",
+    "type": "Target dropped",
+    "text": "Margin ambition: “our ambition remains to deliver improving operating margins in excess of 5.0%” → new medium-term target “Operating margin2 4.5% - 5.0%”, so 5.0% is now the ceiling, not the floor",
+    "span": "“in excess of 5.0%” at FY R Mar-26 and H1 R Aug-26"
+   },
+   {
+    "sev": "amber",
+    "type": "Went quiet",
+    "text": "FY26 net cash guide: “approximately £170m” (H1 R Aug-26; “approximately £175m” at FY R and AGM) → no company figure, only consensus footnote “Net cash £175.4m”",
+    "span": "Given at Mar-26, May-26, Aug-26"
+   },
+   {
+    "sev": "grey",
+    "type": "Number to words",
+    "text": "Forward work: “maintained at record £7.0bn” (H1 R Aug-26) → “building on its record forward work position”, no figure",
+    "span": "£ figure at Mar-26, May-26 (“£7bn”), Aug-26; CME is not a results document"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "New medium-term targets “c.10% revenue CAGR” and “>10% operating profit” CAGR, net cash “4% - 6% of revenue”; buyback up to “£25m” for 2027 (FY26: £20m); anchor back to “in line with market expectations” from H1’s “in line with the Board's expectations”",
+    "span": "First quantified medium-term growth targets in the record"
+   }
+  ]
  }
 }

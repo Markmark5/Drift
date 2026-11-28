@@ -1,22 +1,10 @@
 {
  "ticker": "SRAD",
- "v": "2026-10-21.e2f1",
+ "v": "2026-11-28.ed26",
  "ccy": "GBX",
- "src": "Yahoo SRAD.L weekly",
+ "src": "Yahoo SRAD.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-11-05",
-   219.0
-  ],
-  [
-   "2021-11-12",
-   220.475
-  ],
-  [
-   "2021-11-19",
-   216.0
-  ],
   [
    "2021-11-26",
    215.0
@@ -1044,6 +1032,26 @@
   [
    "2026-10-21",
    145.0
+  ],
+  [
+   "2026-10-23",
+   145.0
+  ],
+  [
+   "2026-10-30",
+   153.0
+  ],
+  [
+   "2026-11-06",
+   158.0
+  ],
+  [
+   "2026-11-13",
+   162.0
+  ],
+  [
+   "2026-11-20",
+   153.0
   ]
  ],
  "marks": [
@@ -1245,32 +1253,47 @@
    "s": 0,
    "q": "Trading in the second half to date has been in line with our expectations and the outlook for the full year remains unchanged.",
    "file": "20260807_SRAD_Interim-Results.md"
+  },
+  {
+   "d": "2026-11-27",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "CUT",
+   "s": -3,
+   "q": "As a result, the Board now expects FY26 adjusted operating profit to be within a range of £28-29m1 with lower interest and tax charges reducing the impact on adjusted earnings.",
+   "file": "20261127_SRAD_Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-07",
-  "doc": "H1 R",
-  "file": "20260807_SRAD_Interim-Results.md",
-  "vs": "H1 R Aug-25 · prev AGM TU May-26 · FY R Mar-26",
+  "rns": "2026-11-27",
+  "doc": "Q3 TU",
+  "file": "20261127_SRAD_Trading-Update.md",
+  "vs": "Q3 TU Nov-25 · H1 R Aug-26",
   "lines": [
+   {
+    "sev": "red",
+    "type": "New caution",
+    "text": "Nov-25 TU and Aug-26 interims gave no next-year caution → now “Challenging market conditions are expected to persist during 2027.” and the Board “will provide further guidance at the time of the announcement of its full year results in March 2027”",
+    "span": "First 2027 warning; next-year guide deferred to Mar-27"
+   },
    {
     "sev": "amber",
     "type": "Wording vs number",
-    "text": "Headline “Operational delivery, profit growth and margin expansion” beside “Revenue declined 9.1% to £124.0 million due to a 14.6% decline in sales volumes during the period”; Aug-25 was “Revenue declined 4.6% to £136.5 million”",
-    "span": "H1-25 → H1-26: revenue decline doubled"
+    "text": "Aug-26: “Leverage at 30 June 2026 was 1.29x” “with further de-leveraging expected in the second half” → now “disciplined cash management is expected to deliver a year end leverage ratio” of c.1.3x, no H2 de-leveraging and up from 1.16x at Dec-25",
+    "span": "Aug-26 → Nov-26"
    },
    {
     "sev": "amber",
-    "type": "New caution",
-    "text": "Contribution per radiator £20.33 → £24.32, now guided back down: “Contribution per radiator is expected to move towards our sustainable medium-term target of >£21”",
-    "span": "First flag of a fall in the KPI; eight years of increases to FY25"
+    "type": "Went quiet",
+    "text": "Operating margin: Nov-25 “with positive operating margin growth year-on-year”; Aug-26 “Adjusted operating profit margin increased 1.8 ppts to 13.5%” → now no margin figure or margin statement",
+    "span": "Given at Nov-25 and Aug-26 → first gap"
    },
    {
-    "sev": "grey",
-    "type": "Restated",
-    "text": "Market share for 2024: Aug-25 “Industry leading market share at 19.9%” → Aug-26 “a combined 2025 share of 24.0%(1) (2024:  24.4%)” on a steel-panel-only basis",
-    "span": "KPI redefined; share now down year on year on the new basis"
+    "sev": "amber",
+    "type": "Number to words",
+    "text": "Contribution per radiator: Aug-26 “Contribution per radiator increased to £24.32 (2025: £20.33)” → now “strong contribution per radiator” “albeit with some reduction from the exceptional performance of H1 2026 (£24.32 per radiator)”, no 10-month figure",
+    "span": "Aug-26 → Nov-26"
    }
   ]
  }

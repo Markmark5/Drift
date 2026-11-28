@@ -1,30 +1,10 @@
 {
  "ticker": "HILS",
- "v": "2026-10-21.92c0",
+ "v": "2026-11-28.8a83",
  "ccy": "GBX",
- "src": "Yahoo HILS.L weekly",
+ "src": "Yahoo HILS.L weekly + ShareScope snapshots",
  "adj": [],
  "px": [
-  [
-   "2021-10-22",
-   1760.0
-  ],
-  [
-   "2021-10-29",
-   1834.0
-  ],
-  [
-   "2021-11-05",
-   1800.0
-  ],
-  [
-   "2021-11-12",
-   1830.0
-  ],
-  [
-   "2021-11-19",
-   1864.0
-  ],
   [
    "2021-11-26",
    1676.0
@@ -1052,18 +1032,29 @@
   [
    "2026-10-21",
    2965.0
+  ],
+  [
+   "2026-10-23",
+   2895.0
+  ],
+  [
+   "2026-10-30",
+   3040.0
+  ],
+  [
+   "2026-11-06",
+   2815.0
+  ],
+  [
+   "2026-11-13",
+   2910.0
+  ],
+  [
+   "2026-11-20",
+   2855.0
   ]
  ],
  "marks": [
-  {
-   "d": "2021-11-25",
-   "doc": "Q3 TU",
-   "fy": "FY21",
-   "g": "flat",
-   "s": 0,
-   "q": "Based on the trading performance to date, the Group remains on track to deliver full year 2021 underlying operating profit in line with analyst consensus expectations^.",
-   "file": "20211125_HILS_Trading-Update.md"
-  },
   {
    "d": "2022-03-10",
    "doc": "FY R",
@@ -1252,38 +1243,47 @@
    "s": 1,
    "q": "Given the strong first half performance, and with sustained momentum in our US businesses, underlying operating profit for FY26 is now expected to be modestly ahead of our previous expectations, with a small full year margin progression compared to the 2025 year.",
    "file": "20260812_HILS_Half-Year-Results.md"
+  },
+  {
+   "d": "2026-11-26",
+   "doc": "Q3 TU",
+   "fy": "FY26",
+   "g": "RAISE",
+   "s": 1,
+   "q": "Based on the continued positive trading performance, and not including the contribution from Southwest Galvanizing, the acquisition made last week, we now expect full year 2026 operating profit to be modestly above current analyst expectations*.",
+   "file": "20261126_HILS_Trading-Update.md"
   }
  ],
  "lite": true,
  "disc": {
-  "rns": "2026-08-12",
-  "doc": "H1 R",
-  "file": "20260812_HILS_Half-Year-Results.md",
-  "vs": "H1 R Aug-25 · AGM May-26 · back to H1 Aug-23/Aug-24",
+  "rns": "2026-11-26",
+  "doc": "Q3 TU",
+  "file": "20261126_HILS_Trading-Update.md",
+  "vs": "Q3 TU Nov-25 · back to Nov-24 · H1 R Aug-26 · Acq Nov-26",
   "lines": [
    {
     "sev": "amber",
-    "type": "Demoted",
-    "text": "Cash conversion: H1-25 highlight “Underlying cash conversion 85% (H1 2024: 83%)” → H1-26 dropped from the highlights; body says “Cash conversion of 50% was below the comparative period (2025: 85%)”",
-    "span": "Highlight at H1-24, H1-25 → body only H1-26"
+    "type": "Target dropped",
+    "text": "Full-year margin vs prior year: Nov-25 “we continue to expect to make progress in Group operating margin for the full year”; Aug-26 “with a small full year margin progression compared to the 2025 year” → now only “We expect operating margin progression in H2 compared to the first half.”, with the upgrade “driven by an increase in total constant currency revenue growth”",
+    "span": "FY y/y margin guide given Nov-25 and Aug-26 → dropped; H1-26 margin was flat at 17.0%"
    },
    {
     "sev": "amber",
-    "type": "Wording vs number",
-    "text": "Headline “Strong first half performance driven by double-digit US growth” beside statutory operating profit $76.5m vs $88.3m (−13%) and statutory margin 12.6% vs 15.7% (−310bps); underlying margin flat at 17.0%",
-    "span": "H1-25 vs H1-26"
-   },
-   {
-    "sev": "grey",
     "type": "Went quiet",
-    "text": "US order book: H1-25 “Continuing strong infrastructure demand in the US with record order books”, Nov-25 “Infrastructure demand in the US remains strong, reflected in ongoing order book growth” → H1-26 no Group or US order-book comment",
-    "span": "Aug-25, Nov-25 → not in H1-26"
+    "text": "Cash conversion: Nov-24 “cash conversion continues to be strong”, Nov-25 “Cash conversion continued to be strong.”; Aug-26 H1 at 50%, “expected to increase significantly during the second half of the year” → not mentioned in this update",
+    "span": "In the Nov-24 and Nov-25 TUs → first gap, just after a weak H1"
    },
    {
     "sev": "grey",
-    "type": "Anchor softened",
-    "text": "H1-25 footnote “The current company compiled analyst consensus expectation for FY25” → H1-26 raise is measured only against its own guide: “The Group's AGM statement released on 21 May 2026 indicated underlying operating profit for the 2026 year was expected to be around $212m”, no consensus figure",
-    "span": "Consensus footnote at H1-23, H1-24, H1-25 → own guide H1-26 (USD reporting switch)"
+    "type": "New caution",
+    "text": "Galvanizing margins: Aug-26 “Operating margins expanded by 110 bps to 25.6% (2025: 24.5%)” → now “operating margins for the division were slightly below the comparative prior year period”",
+    "span": "H1 R Aug-26 → Q3 TU Nov-26"
+   },
+   {
+    "sev": "green",
+    "type": "Back / new",
+    "text": "New full-year revenue guide: total constant currency revenue growth “now expected to be around 10% for the full year”",
+    "span": "No FY revenue figure in Nov-25 TU or Aug-26 outlook"
    }
   ]
  }
